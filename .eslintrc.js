@@ -13,13 +13,12 @@ module.exports = {
     },
   },
   rules: {
-    // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
-    // e.g. "@typescript-eslint/explicit-function-return-type": "off",
-    '@typescript-eslint/indent': 'off',
-    '@typescript-eslint/interface-name-prefix': 'on',
-    '@typescript-eslint/explicit-function-return-type': 'on',
-    '@typescript-eslint/no-explicit-any': 'off',
-    '@typescript-eslint/prefer-interface': 'off',
+    '@typescript-eslint/indent': 0,
+    '@typescript-eslint/interface-name-prefix': 1,
+    '@typescript-eslint/explicit-function-return-type': 1,
+    '@typescript-eslint/no-explicit-any': 0,
+    '@typescript-eslint/prefer-interface': 0,
+    'react/display-name': 0,
   },
   settings: {
     react: {
