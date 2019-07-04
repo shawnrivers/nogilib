@@ -1,3 +1,4 @@
-import React from "react"
+import React from 'react';
+import { Hello } from './hello';
 
-export default () => <div>Hello world!</div>
+export default Hello;
