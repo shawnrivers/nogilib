@@ -14,6 +14,6 @@ module.exports = {
         allExtensions: true, // defaults to false
       },
     },
-    'gatsby-plugin-resolve-src',
+    "gatsby-plugin-resolve-src",
   ],
 };

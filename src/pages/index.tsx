@@ -1,6 +1,6 @@
-import * as React from 'react';
-import { Hello } from 'components/Hello';
-import { Link } from 'gatsby';
+import * as React from "react";
+import { Hello } from "components/Hello";
+import { Link } from "gatsby";
 
 export default () => (
   <div>
