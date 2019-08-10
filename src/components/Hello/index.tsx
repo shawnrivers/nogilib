@@ -1,10 +1,10 @@
 import * as React from "react";
 import styles from "./Hello.module.css";
 
-interface IHelloProps {
+interface HelloProps {
   title: string;
 }
 
-export const Hello = ({ title }: IHelloProps) => (
+export const Hello = ({ title }: HelloProps) => (
   <p className={styles.paragraph}>Hello, {title}!</p>
 );

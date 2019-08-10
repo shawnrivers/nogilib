@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -19,6 +19,8 @@
     "gatsby": "^2.13.3",
     "gatsby-plugin-resolve-src": "^2.0.0",
     "gatsby-plugin-typescript": "^2.1.0",
+    "gatsby-source-filesystem": "^2.1.8",
+    "gatsby-transformer-json": "^2.2.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
