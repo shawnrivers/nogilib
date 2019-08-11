@@ -25,5 +25,6 @@ module.exports = {
         src: path.join(__dirname, "src"),
       },
     },
+    `gatsby-plugin-sass`,
   ],
 };
