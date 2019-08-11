@@ -13,6 +13,7 @@
     "type-check": "tsc",
     "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
     "lint:fix": "npm run lint --fix",
+    "stylelint": "stylelint '**/*.scss'  --fix",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
@@ -41,6 +42,9 @@
     "lint-staged": "^9.0.2",
     "prettier": "^1.18.2",
     "react-spring": "^8.0.27",
+    "stylelint": "^10.1.0",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-scss": "^3.9.3",
     "typescript": "^3.5.2"
   },
   "repository": {

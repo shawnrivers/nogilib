@@ -1,0 +1,43 @@
+.container {
+  position: relative;
+  box-shadow: 4px 4px 6px rgba(142, 142, 142, 0.2);
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  object-fit: cover;
+}
+
+%overlay-component {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.background {
+  @extend %overlay-component;
+  background-color: #424242;
+}
+
+.title {
+  @extend %overlay-component;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 20px;
+  color: #ffffff;
+  font-weight: 700;
+
+  h3 {
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+  }
+}
