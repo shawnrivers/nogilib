@@ -1,6 +1,7 @@
 import * as React from "react";
 import { graphql, Link } from "gatsby";
 import { Cd } from "components/organisms/Cd";
+import { Layout } from "components/templates/Layout";
 
 export const query = graphql`
   query($number: String!) {
@@ -27,7 +28,7 @@ interface SingleData {
 }
 
 const Single = (props: SingleData) => (
-  <div>
+  <Layout>
     <nav>
       <Link to="/cds">
         <button>Back</button>
@@ -36,7 +37,7 @@ const Single = (props: SingleData) => (
     <main>
       {props.data ? <Cd data={props.data.singlesJson} /> : <h1>Single Page</h1>}
     </main>
-  </div>
+  </Layout>
 );
 
 export default Single;

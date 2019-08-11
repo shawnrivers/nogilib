@@ -1,6 +1,7 @@
 import * as React from "react";
 import { graphql, Link } from "gatsby";
 import { Cd } from "components/organisms/Cd";
+import { Layout } from "components/templates/Layout";
 
 export const query = graphql`
   query($number: String!) {
@@ -27,7 +28,7 @@ interface AlbumData {
 }
 
 const Album = (props: AlbumData) => (
-  <div>
+  <Layout>
     <nav>
       <Link to="/cds">
         <button>Back</button>
@@ -36,7 +37,7 @@ const Album = (props: AlbumData) => (
     <main>
       {props.data ? <Cd data={props.data.albumsJson} /> : <h1>Album Page</h1>}
     </main>
-  </div>
+  </Layout>
 );
 
 export default Album;
