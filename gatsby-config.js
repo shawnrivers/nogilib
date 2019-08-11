@@ -1,8 +1,5 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
+/* eslint-disable */
+const path = require("path");
 
 module.exports = {
   plugins: [
@@ -19,7 +16,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./src/data/`,
+        path: path.join(__dirname, "src/data"),
+      },
+    },
+    {
+      resolve: `gatsby-plugin-root-import`,
+      options: {
+        src: path.join(__dirname, "src"),
       },
     },
   ],

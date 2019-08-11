@@ -1,6 +1,6 @@
 import * as React from "react";
 import { graphql, Link } from "gatsby";
-import { Cd } from "../../organisms/Cd";
+import { Cd } from "components/organisms/Cd";
 
 export const query = graphql`
   query($number: String!) {
