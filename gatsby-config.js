@@ -26,5 +26,11 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: path.join(__dirname, `src/layouts/index.tsx`),
+      },
+    },
   ],
 };
