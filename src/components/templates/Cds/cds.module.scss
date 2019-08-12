@@ -1,3 +1,18 @@
+.wrapper {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 200vw;
+}
+
+.page {
+  width: 100vw;
+}
+
 .grid {
   display: grid;
   justify-items: center;

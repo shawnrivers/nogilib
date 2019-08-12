@@ -2,7 +2,6 @@ import * as React from "react";
 import { graphql } from "gatsby";
 import { Cds } from "components/templates/Cds";
 import "styles/app.scss";
-import { Layout } from "components/templates/Layout";
 
 export const query = graphql`
   query CdsQuery {
@@ -59,10 +58,5 @@ interface CdsData {
 }
 
 export default (props: CdsData) => (
-  <Layout>
-    <Cds
-      singles={props.data.allSinglesJson}
-      albums={props.data.allAlbumsJson}
-    />
-  </Layout>
+  <Cds singles={props.data.allSinglesJson} albums={props.data.allAlbumsJson} />
 );
