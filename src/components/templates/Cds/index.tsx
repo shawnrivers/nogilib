@@ -36,17 +36,28 @@ export const Cds = (props: CdsProps) => {
   const singles = props.singles.edges;
   const albums = props.albums.edges;
 
-  const swipeIndex = React.useMemo(() => {
+  const pageIndex = React.useMemo(() => {
     const { page } = parse(props.query);
-
-    if (page === "albums") {
-      return "-100";
+    switch (page) {
+      case "albums":
+        return 1;
+      default:
+        return 0;
     }
-    return "0";
   }, [props.query]);
 
   const swipe = useSpring({
-    transform: `translateX(${swipeIndex}vw)`,
+    transform: `translateX(${-100 * pageIndex}vw)`,
+  });
+
+  const singlesFade = useSpring({
+    transform: `scale(${pageIndex === 0 ? 1 : 0.7})`,
+    opacity: pageIndex === 0 ? 1 : 0.3,
+  });
+
+  const albumsFade = useSpring({
+    transform: `scale(${pageIndex === 1 ? 1 : 0.7})`,
+    opacity: pageIndex === 1 ? 1 : 0.3,
   });
 
   return (
@@ -59,7 +70,7 @@ export const Cds = (props: CdsProps) => {
         </Layout>
       </nav>
       <animated.main className={styles.container} style={swipe}>
-        <div className={styles.page}>
+        <animated.div style={singlesFade} className={styles.page}>
           <Layout>
             <h1>Singles</h1>
             <div className={styles.grid}>
@@ -74,8 +85,8 @@ export const Cds = (props: CdsProps) => {
               ))}
             </div>
           </Layout>
-        </div>
-        <div className={styles.page}>
+        </animated.div>
+        <animated.div style={albumsFade} className={styles.page}>
           <Layout>
             <h1>Albums</h1>
             <div className={styles.grid}>
@@ -90,7 +101,7 @@ export const Cds = (props: CdsProps) => {
               ))}
             </div>
           </Layout>
-        </div>
+        </animated.div>
       </animated.main>
     </div>
   );
