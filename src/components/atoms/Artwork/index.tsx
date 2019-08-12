@@ -9,57 +9,32 @@ interface ArtworkProps {
 }
 
 export const Artwork = (props: ArtworkProps) => {
-  const [containerAnimationProps, setContainerAnimationProps] = useSpring(
-    () => ({
-      transform: `scale(1)`,
-    })
-  );
+  const [isMouseHovered, setMouseHover] = React.useState(false);
 
-  const [
-    titleBackgroundAnimationProps,
-    setTitleBackgroundAnimationProps,
-  ] = useSpring(() => ({
-    opacity: 0,
-  }));
+  const scale = useSpring({
+    transform: `scale(${isMouseHovered ? "1.1" : "1"})`,
+  });
 
-  const [titleAnimationProps, setTitleAnimationProps] = useSpring(() => ({
-    opacity: 0,
-  }));
+  const backgroundFade = useSpring({
+    opacity: isMouseHovered ? 0.7 : 0,
+  });
 
-  const handleMouseEnter = React.useCallback(() => {
-    setContainerAnimationProps({ transform: `scale(1.1)` });
-    setTitleBackgroundAnimationProps({ opacity: 0.7 });
-    setTitleAnimationProps({ opacity: 1 });
-  }, []);
-
-  const handleMouseLeave = React.useCallback(() => {
-    setContainerAnimationProps({ transform: `scale(1)` });
-    setTitleBackgroundAnimationProps({ opacity: 0 });
-    setTitleAnimationProps({ opacity: 0 });
-  }, []);
+  const titleFade = useSpring({
+    opacity: isMouseHovered ? 1 : 0,
+  });
 
   return (
     <animated.div
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      style={{ transform: containerAnimationProps.transform }}
+      onMouseEnter={() => setMouseHover(true)}
+      onMouseLeave={() => setMouseHover(false)}
+      style={scale}
       className={
         styles.container + `${props.className ? " " + props.className : ""}`
       }
     >
       <img src={props.src} alt={props.title} className={styles.image} />
-      <animated.div
-        style={{
-          opacity: titleBackgroundAnimationProps.opacity,
-        }}
-        className={styles.background}
-      />
-      <animated.div
-        style={{
-          opacity: titleAnimationProps.opacity,
-        }}
-        className={styles.title}
-      >
+      <animated.div style={backgroundFade} className={styles.background} />
+      <animated.div style={titleFade} className={styles.title}>
         <h3>{props.title}</h3>
       </animated.div>
     </animated.div>
