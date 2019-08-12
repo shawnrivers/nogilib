@@ -1,6 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import { Cds } from "components/templates/Cds";
+import { RouteComponentProps } from "@reach/router";
 import "styles/app.scss";
 
 export const query = graphql`
@@ -57,6 +58,12 @@ interface CdsData {
   };
 }
 
-export default (props: CdsData) => (
-  <Cds singles={props.data.allSinglesJson} albums={props.data.allAlbumsJson} />
-);
+export default (props: RouteComponentProps<CdsData>) => {
+  return props.data ? (
+    <Cds
+      query={props.location ? props.location.search : ""}
+      singles={props.data.allSinglesJson}
+      albums={props.data.allAlbumsJson}
+    />
+  ) : null;
+};

@@ -12,7 +12,7 @@ export const Artwork = (props: ArtworkProps) => {
   const [isMouseHovered, setMouseHover] = React.useState(false);
 
   const scale = useSpring({
-    transform: `scale(${isMouseHovered ? "1.1" : "1"})`,
+    transform: `scale(${isMouseHovered ? 1.1 : 1})`,
   });
 
   const backgroundFade = useSpring({
