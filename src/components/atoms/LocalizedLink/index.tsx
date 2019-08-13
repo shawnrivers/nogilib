@@ -13,7 +13,10 @@ interface LocalizedLinkProps {
 
 export const LocalizedLink = injectIntl(
   ({ to, children, intl: { locale }, className }: LocalizedLinkProps) => {
-    const path = locales[locale as Language].default ? to : `/${locale}${to}`;
+    const path = React.useMemo(
+      () => (locales[locale as Language].default ? to : `/${locale}${to}`),
+      [locale, to]
+    );
 
     return (
       <Link to={path} className={className}>

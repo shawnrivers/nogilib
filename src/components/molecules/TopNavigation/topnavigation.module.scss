@@ -23,7 +23,6 @@
 .items {
   @extend %heading-bold;
   display: flex;
-  margin-right: 32px;
 
   .item {
     &:not(:last-child) {
@@ -35,7 +34,11 @@
 .languages {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+
+  .button {
+    margin-right: 24px;
+  }
 }
 
 .options {

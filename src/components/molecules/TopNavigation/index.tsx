@@ -32,11 +32,14 @@ export const TopNavigation = ({
     return "";
   }, [location, locale]);
 
-  const currentLocalizedPaths = {
-    en: "/en" + rawPath,
-    ja: rawPath,
-    zh: "/zh" + rawPath,
-  };
+  const currentLocalizedPaths = React.useMemo(
+    () => ({
+      en: "/en" + rawPath,
+      ja: rawPath,
+      zh: "/zh" + rawPath,
+    }),
+    [rawPath]
+  );
 
   const [isLanguagesToggled, setLanguagesToggle] = React.useState(false);
 
@@ -73,6 +76,7 @@ export const TopNavigation = ({
             <NavigationItem
               type="button"
               handleClick={() => setLanguagesToggle(!isLanguagesToggled)}
+              className={styles.button}
             >
               <FormattedMessage {...({ id: "languages" } as any)} />
             </NavigationItem>

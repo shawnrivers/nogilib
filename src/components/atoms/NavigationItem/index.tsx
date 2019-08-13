@@ -25,16 +25,12 @@ export const NavigationItem = ({
     color: isMouseHovered ? "#ffffff" : "#595959",
   });
 
-  const mouseEventProps = {
-    onMouseEnter: () => setMouseHover(true),
-    onMouseLeave: () => setMouseHover(false),
-  };
-
   if (type === "link") {
     return to ? (
       <LocalizedLink to={to} className={className ? className : undefined}>
         <animated.div
-          {...mouseEventProps}
+          onMouseEnter={() => setMouseHover(true)}
+          onMouseLeave={() => setMouseHover(false)}
           style={fade}
           className={styles.container}
         >
@@ -43,7 +39,8 @@ export const NavigationItem = ({
       </LocalizedLink>
     ) : (
       <animated.span
-        {...mouseEventProps}
+        onMouseEnter={() => setMouseHover(true)}
+        onMouseLeave={() => setMouseHover(false)}
         style={fade}
         className={`${styles.container}${className ? " " + className : ""}`}
       >
@@ -54,7 +51,8 @@ export const NavigationItem = ({
 
   return handleClick ? (
     <animated.button
-      {...mouseEventProps}
+      onMouseEnter={() => setMouseHover(true)}
+      onMouseLeave={() => setMouseHover(false)}
       onClick={handleClick}
       style={fade}
       className={`${styles.container}${className ? " " + className : ""}`}
@@ -63,7 +61,8 @@ export const NavigationItem = ({
     </animated.button>
   ) : (
     <animated.span
-      {...mouseEventProps}
+      onMouseEnter={() => setMouseHover(true)}
+      onMouseLeave={() => setMouseHover(false)}
       style={fade}
       className={`${styles.container}${className ? " " + className : ""}`}
     >
