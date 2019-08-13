@@ -1,0 +1,60 @@
+@import "styles/typography.scss";
+@import "styles/colors.scss";
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  text-transform: uppercase;
+  color: $gray-1;
+
+  button {
+    text-transform: uppercase;
+  }
+}
+
+.title {
+  @extend %title-bold;
+}
+
+.items {
+  @extend %heading-bold;
+  display: flex;
+  margin-right: 32px;
+
+  .item {
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+}
+
+.languages {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.options {
+  position: absolute;
+  top: 40px;
+  padding: 16px;
+  background-color: $white;
+  box-shadow: 0px 6px 8px 2px rgba(142, 142, 142, 0.2);
+  z-index: 10;
+
+  ul {
+    text-align: center;
+
+    li {
+      @extend %sub-heading-regular;
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

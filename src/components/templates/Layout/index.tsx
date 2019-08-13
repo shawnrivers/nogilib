@@ -3,8 +3,11 @@ import styles from "./layout.module.scss";
 
 interface LayoutProps {
   children: React.ReactNode;
+  className?: string;
 }
 
-export const Layout = (props: LayoutProps) => (
-  <div className={styles.container}>{props.children}</div>
+export const Layout = ({ children, className }: LayoutProps) => (
+  <div className={`${styles.container}${className ? " " + className : ""}`}>
+    {children}
+  </div>
 );

@@ -1,4 +1,7 @@
 {
-  "singles": "Singles",
-  "albums": "Albums"
+  "singles": "singles",
+  "albums": "albums",
+  "music": "music",
+  "members": "members",
+  "languages": "lang"
 }

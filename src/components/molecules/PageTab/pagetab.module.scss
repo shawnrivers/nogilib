@@ -11,11 +11,12 @@
 .item {
   padding-bottom: 8px;
   margin: 4px;
-  color: $gray-2;
+  color: $gray-1;
   font-size: $size-sub-heading;
   font-weight: $weight-regular;
   line-height: $size-sub-heading;
   border-bottom-style: solid;
+  text-transform: capitalize;
 
   &:not(:last-child) {
     margin-right: 24px;

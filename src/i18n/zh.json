@@ -1,4 +1,7 @@
 {
   "singles": "单曲",
-  "albums": "专辑"
+  "albums": "专辑",
+  "music": "音乐",
+  "members": "成员",
+  "languages": "语言"
 }

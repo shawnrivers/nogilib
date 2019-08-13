@@ -3,7 +3,7 @@ import { animated, useTransition } from "react-spring";
 import { LocalizedLink } from "components/atoms/LocalizedLink";
 import { parse } from "query-string";
 import { Artwork } from "components/atoms/Artwork";
-import { PageTab, TabItem } from "components/atoms/PageTab";
+import { PageTab, TabItem } from "components/molecules/PageTab";
 import styles from "./cds.module.scss";
 
 interface CdsProps {
@@ -40,12 +40,10 @@ const pageTabItems: TabItem[] = [
   {
     link: "/cds/?page=singles",
     page: "singles",
-    name: "Singles",
   },
   {
     link: "/cds/?page=albums",
     page: "albums",
-    name: "Albums",
   },
 ];
 
@@ -82,7 +80,10 @@ export const Cds = (props: CdsProps) => {
   return (
     <div className={styles.wrapper}>
       <nav>
-        <PageTab items={pageTabItems} selectedItem={page as string} />
+        <PageTab
+          items={pageTabItems}
+          selectedItem={page ? (page as string) : "singles"}
+        />
       </nav>
       <main>
         {cdsTransition.map(({ item, key, props: transition }) => {

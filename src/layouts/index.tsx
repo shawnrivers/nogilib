@@ -6,21 +6,22 @@ import { Language } from "utils/constants";
 import en from "i18n/en.json";
 import ja from "i18n/ja.json";
 import zh from "i18n/zh.json";
+import { TopNavigation } from "components/molecules/TopNavigation";
 
 const messages = { en, ja, zh };
 
-interface PageLayoutProps {
+interface AppLayoutProps {
   children: React.ReactNode;
   pageContext: {
     locale: Language;
   };
 }
 
-const PageLayout = ({
+const AppLayout = ({
   children,
   location,
   pageContext,
-}: RouteComponentProps<PageLayoutProps>) => {
+}: RouteComponentProps<AppLayoutProps>) => {
   const pathName = React.useMemo(() => {
     if (location) {
       const { pathname } = location;
@@ -35,6 +36,7 @@ const PageLayout = ({
 
   return (
     <IntlProvider locale={locale} messages={messages[locale]}>
+      <TopNavigation locale={locale} location={location} />
       <Transition
         items={null}
         key={pathName}
@@ -52,4 +54,4 @@ const PageLayout = ({
   );
 };
 
-export default PageLayout;
+export default AppLayout;

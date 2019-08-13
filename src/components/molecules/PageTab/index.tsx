@@ -8,7 +8,6 @@ import styles from "./pagetab.module.scss";
 export type TabItem = {
   link: string;
   page: string;
-  name: string;
 };
 
 interface PageTabProps {
@@ -38,16 +37,12 @@ export const PageTab = ({ items, selectedItem }: PageTabProps) => {
 
           return (
             <animated.div
-              key={item.name}
+              key={item.page}
               style={animation}
               className={styles.item}
             >
               <LocalizedLink to={item.link}>
-                <FormattedMessage
-                  {...({
-                    id: item.page,
-                  } as any)}
-                />
+                <FormattedMessage {...({ id: item.page } as any)} />
               </LocalizedLink>
             </animated.div>
           );
