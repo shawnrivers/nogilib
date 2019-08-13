@@ -98,6 +98,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         context: {
           number,
           cdType,
+          locale: lang,
         },
       });
     }

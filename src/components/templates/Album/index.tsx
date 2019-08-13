@@ -1,5 +1,6 @@
 import * as React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
+import { LocalizedLink } from "components/atoms/LocalizedLink";
 import { Cd } from "components/organisms/Cd";
 import { Layout } from "components/templates/Layout";
 
@@ -30,9 +31,9 @@ interface AlbumData {
 const Album = (props: AlbumData) => (
   <Layout>
     <nav>
-      <Link to="/cds/?page=albums">
+      <LocalizedLink to="/cds/?page=albums">
         <button>Back</button>
-      </Link>
+      </LocalizedLink>
     </nav>
     <main>
       {props.data ? <Cd data={props.data.albumsJson} /> : <h1>Album Page</h1>}

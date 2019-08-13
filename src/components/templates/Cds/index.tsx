@@ -1,9 +1,8 @@
 import * as React from "react";
-import { animated, useSpring, useTransition } from "react-spring";
-import { Link } from "gatsby";
+import { animated, useTransition } from "react-spring";
+import { LocalizedLink } from "components/atoms/LocalizedLink";
 import { parse } from "query-string";
 import { Artwork } from "components/atoms/Artwork";
-import { Layout } from "components/templates/Layout";
 import { PageTab, TabItem } from "components/atoms/PageTab";
 import styles from "./cds.module.scss";
 
@@ -90,13 +89,13 @@ export const Cds = (props: CdsProps) => {
           return (
             <animated.div style={transition} key={key} className={styles.grid}>
               {item.cds.map(({ node }) => (
-                <Link
+                <LocalizedLink
                   to={`/${item.key}/${node.number}`}
                   key={node.number}
                   className={styles.artwork}
                 >
                   <Artwork images={node.artworks[0]} title={node.title} />
-                </Link>
+                </LocalizedLink>
               ))}
             </animated.div>
           );

@@ -1,10 +1,9 @@
 import * as React from "react";
-import { animated, useSpring, useSprings } from "react-spring";
-import { Link } from "gatsby";
+import { animated, useSprings } from "react-spring";
+import { LocalizedLink } from "components/atoms/LocalizedLink";
+import { FormattedMessage } from "react-intl";
 import { Layout } from "components/templates/Layout";
 import styles from "./pagetab.module.scss";
-
-const AnimatedTabItem = animated(Link);
 
 export type TabItem = {
   link: string;
@@ -36,15 +35,21 @@ export const PageTab = ({ items, selectedItem }: PageTabProps) => {
       <div className={styles.container}>
         {springs.map((animation, index) => {
           const item = items[index];
+
           return (
-            <AnimatedTabItem
-              to={item.link}
+            <animated.div
+              key={item.name}
               style={animation}
               className={styles.item}
-              key={item.name}
             >
-              {item.name}
-            </AnimatedTabItem>
+              <LocalizedLink to={item.link}>
+                <FormattedMessage
+                  {...({
+                    id: item.page,
+                  } as any)}
+                />
+              </LocalizedLink>
+            </animated.div>
           );
         })}
       </div>

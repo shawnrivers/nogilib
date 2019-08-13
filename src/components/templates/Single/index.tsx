@@ -1,5 +1,6 @@
 import * as React from "react";
-import { graphql, Link } from "gatsby";
+import { LocalizedLink } from "components/atoms/LocalizedLink";
+import { graphql } from "gatsby";
 import { Cd } from "components/organisms/Cd";
 import { Layout } from "components/templates/Layout";
 
@@ -30,9 +31,9 @@ interface SingleData {
 const Single = (props: SingleData) => (
   <Layout>
     <nav>
-      <Link to="/cds/?page=singles">
+      <LocalizedLink to="/cds/?page=singles">
         <button>Back</button>
-      </Link>
+      </LocalizedLink>
     </nav>
     <main>
       {props.data ? <Cd data={props.data.singlesJson} /> : <h1>Single Page</h1>}
