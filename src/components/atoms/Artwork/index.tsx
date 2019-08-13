@@ -1,5 +1,6 @@
 import * as React from "react";
 import { animated, useSpring } from "react-spring";
+import LazyLoad from "react-lazyload";
 import styles from "./artwork.module.scss";
 
 interface ArtworkProps {
@@ -32,7 +33,9 @@ export const Artwork = (props: ArtworkProps) => {
         styles.container + `${props.className ? " " + props.className : ""}`
       }
     >
-      <img src={props.src} alt={props.title} className={styles.image} />
+      <LazyLoad offset={100}>
+        <img src={props.src} alt={props.title} className={styles.image} />
+      </LazyLoad>
       <animated.div style={backgroundFade} className={styles.background} />
       <animated.div style={titleFade} className={styles.title}>
         <h3>{props.title}</h3>

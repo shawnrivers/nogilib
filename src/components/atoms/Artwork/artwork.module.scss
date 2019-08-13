@@ -1,3 +1,6 @@
+@import "styles/colors.scss";
+@import "styles/typography.scss";
+
 .container {
   position: relative;
   box-shadow: 4px 4px 6px rgba(142, 142, 142, 0.2);
@@ -21,7 +24,7 @@
 
 .background {
   @extend %overlay-component;
-  background-color: #424242;
+  background-color: $gray-1;
 }
 
 .title {
@@ -33,11 +36,10 @@
   box-sizing: border-box;
   padding: 20px;
   color: #ffffff;
-  font-weight: 700;
   overflow: hidden;
 
   h3 {
-    font-size: 18px;
+    @extend %heading-bold;
     text-align: center;
     margin: auto;
   }
