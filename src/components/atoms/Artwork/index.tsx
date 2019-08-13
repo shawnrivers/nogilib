@@ -4,12 +4,16 @@ import LazyLoad from "react-lazyload";
 import styles from "./artwork.module.scss";
 
 interface ArtworkProps {
-  src: string;
+  images: {
+    large: string;
+    medium: string;
+    small: string;
+  };
   title: string;
   className?: string;
 }
 
-export const Artwork = (props: ArtworkProps) => {
+export const Artwork = ({ images, title, className }: ArtworkProps) => {
   const [isMouseHovered, setMouseHover] = React.useState(false);
 
   const scale = useSpring({
@@ -29,16 +33,19 @@ export const Artwork = (props: ArtworkProps) => {
       onMouseEnter={() => setMouseHover(true)}
       onMouseLeave={() => setMouseHover(false)}
       style={scale}
-      className={
-        styles.container + `${props.className ? " " + props.className : ""}`
-      }
+      className={styles.container + `${className ? " " + className : ""}`}
     >
       <LazyLoad offset={100}>
-        <img src={props.src} alt={props.title} className={styles.image} />
+        <img
+          src={images.small}
+          srcSet={`${images.medium} 2x, ${images.large} 3x`}
+          alt={title}
+          className={styles.image}
+        />
       </LazyLoad>
       <animated.div style={backgroundFade} className={styles.background} />
       <animated.div style={titleFade} className={styles.title}>
-        <h3>{props.title}</h3>
+        <h3>{title}</h3>
       </animated.div>
     </animated.div>
   );

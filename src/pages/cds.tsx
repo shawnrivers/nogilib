@@ -12,7 +12,9 @@ export const query = graphql`
           title
           number
           artworks {
+            large
             medium
+            small
           }
         }
       }
@@ -23,7 +25,9 @@ export const query = graphql`
           title
           number
           artworks {
+            large
             medium
+            small
           }
         }
       }
@@ -39,7 +43,9 @@ interface CdsData {
           title: string;
           number: string;
           artworks: {
+            large: string;
             medium: string;
+            small: string;
           }[];
         };
       }[];
@@ -50,7 +56,9 @@ interface CdsData {
           title: string;
           number: string;
           artworks: {
+            large: string;
             medium: string;
+            small: string;
           }[];
         };
       }[];

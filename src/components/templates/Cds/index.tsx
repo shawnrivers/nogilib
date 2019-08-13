@@ -15,7 +15,9 @@ interface CdsProps {
         title: string;
         number: string;
         artworks: {
+          large: string;
           medium: string;
+          small: string;
         }[];
       };
     }[];
@@ -26,7 +28,9 @@ interface CdsProps {
         title: string;
         number: string;
         artworks: {
+          large: string;
           medium: string;
+          small: string;
         }[];
       };
     }[];
@@ -91,7 +95,7 @@ export const Cds = (props: CdsProps) => {
                   key={node.number}
                   className={styles.artwork}
                 >
-                  <Artwork src={node.artworks[0].medium} title={node.title} />
+                  <Artwork images={node.artworks[0]} title={node.title} />
                 </Link>
               ))}
             </animated.div>
