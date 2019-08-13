@@ -27,24 +27,16 @@
   }
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  width: 200vw;
-}
-
-.page {
-  width: 100vw;
-  transform-origin: top;
-}
-
 .grid {
   display: grid;
   justify-items: center;
   align-items: center;
   grid-row-gap: 24px;
   grid-column-gap: 24px;
-  margin-bottom: 24px;
+  padding: 24px;
+  max-width: 1168px;
+  margin: auto;
+  position: absolute;
 }
 
 .artwork {

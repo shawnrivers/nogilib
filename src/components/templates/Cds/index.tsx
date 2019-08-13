@@ -1,9 +1,10 @@
 import * as React from "react";
-import { animated, useSpring } from "react-spring";
+import { animated, useSpring, useTransition } from "react-spring";
 import { Link } from "gatsby";
 import { parse } from "query-string";
 import { Artwork } from "components/atoms/Artwork";
 import { Layout } from "components/templates/Layout";
+import { PageTab, TabItem } from "components/atoms/PageTab";
 import styles from "./cds.module.scss";
 
 interface CdsProps {
@@ -32,106 +33,71 @@ interface CdsProps {
   };
 }
 
-const AnimatedTabItem = animated(Link);
+const pageTabItems: TabItem[] = [
+  {
+    link: "/cds/?page=singles",
+    page: "singles",
+    name: "Singles",
+  },
+  {
+    link: "/cds/?page=albums",
+    page: "albums",
+    name: "Albums",
+  },
+];
 
 export const Cds = (props: CdsProps) => {
   const singles = props.singles.edges;
   const albums = props.albums.edges;
 
+  const { page } = React.useMemo(() => parse(props.query), [props.query]);
+
   const pageIndex = React.useMemo(() => {
-    const { page } = parse(props.query);
     switch (page) {
       case "albums":
         return 1;
       default:
         return 0;
     }
-  }, [props.query]);
+  }, [page]);
 
-  const swipe = useSpring({
-    transform: `translateX(${-100 * pageIndex}vw)`,
-  });
+  const transitionItems: {
+    cds: CdsProps["singles"]["edges"] | CdsProps["albums"]["edges"];
+    key: "singles" | "albums";
+  }[] = [{ cds: singles, key: "singles" }, { cds: albums, key: "albums" }];
 
-  const singlesTabFade = useSpring({
-    fontSize: pageIndex === 0 ? "20px" : "16px",
-    fontWeight: pageIndex === 0 ? 700 : 500,
-    borderBottomWidth: pageIndex === 0 ? "3px" : "0px",
-    borderBottomColor:
-      pageIndex === 0 ? "rgba(89,89,89,1)" : "rgba(89, 89, 89, 0)",
-  });
-
-  const albumsTabFade = useSpring({
-    fontSize: pageIndex === 1 ? "20px" : "16px",
-    fontWeight: pageIndex === 1 ? 700 : 500,
-    borderBottomWidth: pageIndex === 1 ? "3px" : "0px",
-    borderBottomColor:
-      pageIndex === 1 ? "rgba(89,89,89,1)" : "rgba(89, 89, 89, 0)",
-  });
-
-  const singlesFade = useSpring({
-    transform: `scale(${pageIndex === 0 ? 1 : 0.7})`,
-    opacity: pageIndex === 0 ? 1 : 0.3,
-  });
-
-  const albumsFade = useSpring({
-    transform: `scale(${pageIndex === 1 ? 1 : 0.7})`,
-    opacity: pageIndex === 1 ? 1 : 0.3,
-  });
+  const cdsTransition = useTransition(
+    transitionItems[pageIndex],
+    transitionItems => transitionItems.key,
+    {
+      from: { opacity: 0, transform: "translateY(200px)" },
+      enter: { opacity: 1, transform: "translateY(0)" },
+      leave: { opacity: 0, transform: "translateY(100px)" },
+    }
+  );
 
   return (
     <div className={styles.wrapper}>
       <nav>
-        <Layout>
-          <div className={styles.tabs}>
-            <AnimatedTabItem
-              to="/cds/?page=singles"
-              style={singlesTabFade}
-              className={styles.tabitem}
-            >
-              Singles
-            </AnimatedTabItem>
-            <AnimatedTabItem
-              to="/cds/?page=albums"
-              style={albumsTabFade}
-              className={styles.tabitem}
-            >
-              Albums
-            </AnimatedTabItem>
-          </div>
-        </Layout>
+        <PageTab items={pageTabItems} selectedItem={page as string} />
       </nav>
-      <animated.main className={styles.container} style={swipe}>
-        <animated.div style={singlesFade} className={styles.page}>
-          <Layout>
-            <div className={styles.grid}>
-              {singles.map(({ node }) => (
+      <main>
+        {cdsTransition.map(({ item, key, props: transition }) => {
+          return (
+            <animated.div style={transition} key={key} className={styles.grid}>
+              {item.cds.map(({ node }) => (
                 <Link
-                  to={`/single/${node.number}`}
+                  to={`/${item.key}/${node.number}`}
                   key={node.number}
                   className={styles.artwork}
                 >
                   <Artwork src={node.artworks[0].medium} title={node.title} />
                 </Link>
               ))}
-            </div>
-          </Layout>
-        </animated.div>
-        <animated.div style={albumsFade} className={styles.page}>
-          <Layout>
-            <div className={styles.grid}>
-              {albums.map(({ node }) => (
-                <Link
-                  to={`/album/${node.number}`}
-                  key={node.number}
-                  className={styles.artwork}
-                >
-                  <Artwork src={node.artworks[0].medium} title={node.title} />
-                </Link>
-              ))}
-            </div>
-          </Layout>
-        </animated.div>
-      </animated.main>
+            </animated.div>
+          );
+        })}
+      </main>
     </div>
   );
 };

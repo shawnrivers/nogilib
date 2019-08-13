@@ -11,7 +11,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node,
       name: "slug",
-      value: "/album/" + node.number,
+      value: "/albums/" + node.number,
     });
   }
 
@@ -20,7 +20,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node,
       name: "slug",
-      value: "/single/" + node.number,
+      value: "/singles/" + node.number,
     });
   }
 };
