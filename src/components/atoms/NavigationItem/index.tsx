@@ -1,7 +1,7 @@
 import * as React from "react";
 import styles from "./navigationitem.module.scss";
-import { animated, useSpring, config } from "react-spring";
 import { LocalizedLink } from "components/atoms/LocalizedLink";
+import { motion } from "framer-motion";
 
 interface NavigationItemProps {
   type: "link" | "button";
@@ -18,56 +18,40 @@ export const NavigationItem = ({
   handleClick,
   className,
 }: NavigationItemProps) => {
-  const [isMouseHovered, setMouseHover] = React.useState(false);
-
-  const fade = useSpring({
-    backgroundColor: isMouseHovered ? "rgba(89,89,89,1)" : "rgba(89,89,89,0)",
-    color: isMouseHovered ? "#ffffff" : "#595959",
-    config: config.gentle,
-  });
-
   if (type === "link") {
     return to ? (
       <LocalizedLink to={to} className={className ? className : undefined}>
-        <animated.div
-          onMouseEnter={() => setMouseHover(true)}
-          onMouseLeave={() => setMouseHover(false)}
-          style={fade}
+        <motion.div
+          whileHover={{ backgroundColor: "rgba(89,89,89)", color: "#ffffff" }}
           className={styles.container}
         >
           {children}
-        </animated.div>
+        </motion.div>
       </LocalizedLink>
     ) : (
-      <animated.span
-        onMouseEnter={() => setMouseHover(true)}
-        onMouseLeave={() => setMouseHover(false)}
-        style={fade}
+      <motion.span
+        whileHover={{ backgroundColor: "rgba(89,89,89)", color: "#ffffff" }}
         className={`${styles.container}${className ? " " + className : ""}`}
       >
         {children}
-      </animated.span>
+      </motion.span>
     );
   }
 
   return handleClick ? (
-    <animated.button
-      onMouseEnter={() => setMouseHover(true)}
-      onMouseLeave={() => setMouseHover(false)}
+    <motion.button
       onClick={handleClick}
-      style={fade}
+      whileHover={{ backgroundColor: "rgba(89,89,89)", color: "#ffffff" }}
       className={`${styles.container}${className ? " " + className : ""}`}
     >
       {children}
-    </animated.button>
+    </motion.button>
   ) : (
-    <animated.span
-      onMouseEnter={() => setMouseHover(true)}
-      onMouseLeave={() => setMouseHover(false)}
-      style={fade}
+    <motion.span
+      whileHover={{ backgroundColor: "rgba(89,89,89)", color: "#ffffff" }}
       className={`${styles.container}${className ? " " + className : ""}`}
     >
       {children}
-    </animated.span>
+    </motion.span>
   );
 };

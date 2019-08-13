@@ -1,5 +1,5 @@
 import * as React from "react";
-import { animated, useSprings, config } from "react-spring";
+import { motion } from "framer-motion";
 import { LocalizedLink } from "components/atoms/LocalizedLink";
 import { FormattedMessage } from "react-intl";
 import { Layout } from "components/templates/Layout";
@@ -10,44 +10,42 @@ export type TabItem = {
   page: string;
 };
 
+const variants = {
+  active: {
+    fontSize: "20px",
+    fontWeight: 700,
+    borderBottomWidth: "3px",
+    borderBottomColor: "rgba(89, 89, 89, 1)",
+  },
+  inactive: {
+    fontSize: "16px",
+    fontWeight: 500,
+    borderBottomWidth: "0px",
+    borderBottomColor: "rgba(89, 89, 89, 0)",
+  },
+};
+
 interface PageTabProps {
   items: TabItem[];
   selectedItem: string;
 }
 
 export const PageTab = ({ items, selectedItem }: PageTabProps) => {
-  const springs = useSprings(
-    items.length,
-    items.map(item => ({
-      fontSize: item.page === selectedItem ? "20px" : "16px",
-      fontWeight: item.page === selectedItem ? 700 : 500,
-      borderBottomWidth: item.page === selectedItem ? "3px" : "0px",
-      borderBottomColor:
-        item.page === selectedItem
-          ? "rgba(89, 89, 89, 1)"
-          : "rgba(89, 89, 89, 0)",
-      config: config.gentle,
-    }))
-  );
-
   return (
     <Layout>
       <div className={styles.container}>
-        {springs.map((animation, index) => {
-          const item = items[index];
-
-          return (
-            <animated.div
-              key={item.page}
-              style={animation}
-              className={styles.item}
-            >
-              <LocalizedLink to={item.link}>
-                <FormattedMessage {...({ id: item.page } as any)} />
-              </LocalizedLink>
-            </animated.div>
-          );
-        })}
+        {items.map(item => (
+          <motion.div
+            animate={item.page === selectedItem ? "active" : "inactive"}
+            variants={variants}
+            className={styles.item}
+            key={item.page}
+          >
+            <LocalizedLink to={item.link}>
+              <FormattedMessage {...({ id: item.page } as any)} />
+            </LocalizedLink>
+          </motion.div>
+        ))}
       </div>
     </Layout>
   );

@@ -3,12 +3,12 @@ import styles from "./topnavigation.module.scss";
 import { Layout } from "components/templates/Layout";
 import { useOnClickOutside } from "utils/hooks";
 import { FormattedMessage } from "react-intl";
-import { useTransition, animated } from "react-spring";
 import { RouteComponentProps } from "@reach/router";
 import { Language } from "utils/constants";
 import locales from "i18n/locales";
 import { NavigationItem } from "components/atoms/NavigationItem";
 import { OptionItem } from "components/atoms/OptionItem";
+import { AnimatePresence, motion } from "framer-motion";
 
 interface TopNavigationProps {
   locale: Language;
@@ -48,12 +48,6 @@ export const TopNavigation = ({
     setLanguagesToggle(false);
   });
 
-  const languagesOptionsTransition = useTransition(isLanguagesToggled, null, {
-    from: { opacity: 0, transform: "translateY(-20px)" },
-    enter: { opacity: 1, transform: "translateY(0)" },
-    leave: { opacity: 0, transform: "translateY(-20px)" },
-  });
-
   return (
     <nav>
       <Layout className={styles.navigation}>
@@ -80,37 +74,37 @@ export const TopNavigation = ({
             >
               <FormattedMessage {...({ id: "languages" } as any)} />
             </NavigationItem>
-            {languagesOptionsTransition.map(
-              ({ item, key, props: transition }) =>
-                item && (
-                  <animated.div
-                    className={styles.options}
-                    key={key}
-                    style={transition}
-                  >
-                    <ul>
-                      <OptionItem
-                        to={currentLocalizedPaths.en}
-                        handleClick={() => setLanguagesToggle(false)}
-                      >
-                        English
-                      </OptionItem>
-                      <OptionItem
-                        to={currentLocalizedPaths.ja}
-                        handleClick={() => setLanguagesToggle(false)}
-                      >
-                        日本語
-                      </OptionItem>
-                      <OptionItem
-                        to={currentLocalizedPaths.zh}
-                        handleClick={() => setLanguagesToggle(false)}
-                      >
-                        简体中文
-                      </OptionItem>
-                    </ul>
-                  </animated.div>
-                )
-            )}
+            <AnimatePresence>
+              {isLanguagesToggled && (
+                <motion.div
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  className={styles.options}
+                >
+                  <ul>
+                    <OptionItem
+                      to={currentLocalizedPaths.en}
+                      handleClick={() => setLanguagesToggle(false)}
+                    >
+                      English
+                    </OptionItem>
+                    <OptionItem
+                      to={currentLocalizedPaths.ja}
+                      handleClick={() => setLanguagesToggle(false)}
+                    >
+                      日本語
+                    </OptionItem>
+                    <OptionItem
+                      to={currentLocalizedPaths.zh}
+                      handleClick={() => setLanguagesToggle(false)}
+                    >
+                      简体中文
+                    </OptionItem>
+                  </ul>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
         </div>
       </Layout>

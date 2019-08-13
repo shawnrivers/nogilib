@@ -1,12 +1,13 @@
 import * as React from "react";
 import { RouteComponentProps } from "@reach/router";
-import { Transition } from "react-spring/renderprops";
+import { motion, AnimatePresence } from "framer-motion";
 import { IntlProvider } from "react-intl";
 import { Language } from "utils/constants";
 import en from "i18n/en.json";
 import ja from "i18n/ja.json";
 import zh from "i18n/zh.json";
 import { TopNavigation } from "components/molecules/TopNavigation";
+import styles from "./applayout.module.scss";
 
 const messages = { en, ja, zh };
 
@@ -36,20 +37,20 @@ const AppLayout = ({
 
   return (
     <IntlProvider locale={locale} messages={messages[locale]}>
-      <TopNavigation locale={locale} location={location} />
-      <Transition
-        items={null}
-        key={pathName}
-        from={{ opacity: 0 }}
-        enter={{ opacity: 1 }}
-        leave={{ opacity: 0 }}
-      >
-        {() => style => (
-          <main role="main" style={style}>
+      <AnimatePresence>
+        <div className={styles.container}>
+          <TopNavigation locale={locale} location={location} />
+          <motion.main
+            key={pathName}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className={styles.contents}
+          >
             {children}
-          </main>
-        )}
-      </Transition>
+          </motion.main>
+        </div>
+      </AnimatePresence>
     </IntlProvider>
   );
 };

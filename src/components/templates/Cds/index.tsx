@@ -1,10 +1,10 @@
 import * as React from "react";
-import { animated, useTransition } from "react-spring";
 import { LocalizedLink } from "components/atoms/LocalizedLink";
 import { parse } from "query-string";
 import { Artwork } from "components/atoms/Artwork";
 import { PageTab, TabItem } from "components/molecules/PageTab";
 import styles from "./cds.module.scss";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface CdsProps {
   query: string;
@@ -53,29 +53,11 @@ export const Cds = (props: CdsProps) => {
 
   const { page } = React.useMemo(() => parse(props.query), [props.query]);
 
-  const pageIndex = React.useMemo(() => {
-    switch (page) {
-      case "albums":
-        return 1;
-      default:
-        return 0;
-    }
-  }, [page]);
-
-  const transitionItems: {
-    cds: CdsProps["singles"]["edges"] | CdsProps["albums"]["edges"];
-    key: "singles" | "albums";
-  }[] = [{ cds: singles, key: "singles" }, { cds: albums, key: "albums" }];
-
-  const cdsTransition = useTransition(
-    transitionItems[pageIndex],
-    transitionItems => transitionItems.key,
-    {
-      from: { opacity: 0 },
-      enter: { opacity: 1 },
-      leave: { opacity: 0 },
-    }
-  );
+  const pageCds = React.useMemo(() => (page === "albums" ? albums : singles), [
+    page,
+    albums,
+    singles,
+  ]);
 
   return (
     <div className={styles.wrapper}>
@@ -86,21 +68,25 @@ export const Cds = (props: CdsProps) => {
         />
       </nav>
       <main>
-        {cdsTransition.map(({ item, key, props: transition }) => {
-          return (
-            <animated.div style={transition} key={key} className={styles.grid}>
-              {item.cds.map(({ node }) => (
-                <LocalizedLink
-                  to={`/${item.key}/${node.number}`}
-                  key={node.number}
-                  className={styles.artwork}
-                >
-                  <Artwork images={node.artworks[0]} title={node.title} />
-                </LocalizedLink>
-              ))}
-            </animated.div>
-          );
-        })}
+        <AnimatePresence>
+          <motion.div
+            key={page as string}
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 100 }}
+            className={styles.grid}
+          >
+            {pageCds.map(({ node }) => (
+              <LocalizedLink
+                to={`/${page}/${node.number}`}
+                key={node.number}
+                className={styles.artwork}
+              >
+                <Artwork images={node.artworks[0]} title={node.title} />
+              </LocalizedLink>
+            ))}
+          </motion.div>
+        </AnimatePresence>
       </main>
     </div>
   );

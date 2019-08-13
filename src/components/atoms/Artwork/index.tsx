@@ -1,7 +1,25 @@
 import * as React from "react";
-import { animated, useSpring } from "react-spring";
 import LazyLoad from "react-lazyload";
 import styles from "./artwork.module.scss";
+import { motion } from "framer-motion";
+
+const backgroundFade = {
+  isHovered: {
+    opacity: 0.7,
+  },
+  isNotHovered: {
+    opacity: 0,
+  },
+};
+
+const titleFade = {
+  isHovered: {
+    opacity: 1,
+  },
+  isNotHovered: {
+    opacity: 0,
+  },
+};
 
 interface ArtworkProps {
   images: {
@@ -14,25 +32,13 @@ interface ArtworkProps {
 }
 
 export const Artwork = ({ images, title, className }: ArtworkProps) => {
-  const [isMouseHovered, setMouseHover] = React.useState(false);
-
-  const scale = useSpring({
-    transform: `scale(${isMouseHovered ? 1.1 : 1})`,
-  });
-
-  const backgroundFade = useSpring({
-    opacity: isMouseHovered ? 0.7 : 0,
-  });
-
-  const titleFade = useSpring({
-    opacity: isMouseHovered ? 1 : 0,
-  });
+  const [isHovered, setHover] = React.useState(false);
 
   return (
-    <animated.div
-      onMouseEnter={() => setMouseHover(true)}
-      onMouseLeave={() => setMouseHover(false)}
-      style={scale}
+    <motion.div
+      onHoverStart={() => setHover(true)}
+      onHoverEnd={() => setHover(false)}
+      whileHover={{ scale: 1.1 }}
       className={styles.container + `${className ? " " + className : ""}`}
     >
       <LazyLoad offset={100}>
@@ -43,10 +49,18 @@ export const Artwork = ({ images, title, className }: ArtworkProps) => {
           className={styles.image}
         />
       </LazyLoad>
-      <animated.div style={backgroundFade} className={styles.background} />
-      <animated.div style={titleFade} className={styles.title}>
+      <motion.div
+        animate={isHovered ? "isHovered" : "isNotHovered"}
+        variants={backgroundFade}
+        className={styles.background}
+      />
+      <motion.div
+        animate={isHovered ? "isHovered" : "isNotHovered"}
+        variants={titleFade}
+        className={styles.title}
+      >
         <h3>{title}</h3>
-      </animated.div>
-    </animated.div>
+      </motion.div>
+    </motion.div>
   );
 };
