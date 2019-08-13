@@ -1,6 +1,6 @@
 import * as React from "react";
 import styles from "./navigationitem.module.scss";
-import { animated, useSpring } from "react-spring";
+import { animated, useSpring, config } from "react-spring";
 import { LocalizedLink } from "components/atoms/LocalizedLink";
 
 interface NavigationItemProps {
@@ -23,6 +23,7 @@ export const NavigationItem = ({
   const fade = useSpring({
     backgroundColor: isMouseHovered ? "rgba(89,89,89,1)" : "rgba(89,89,89,0)",
     color: isMouseHovered ? "#ffffff" : "#595959",
+    config: config.gentle,
   });
 
   if (type === "link") {

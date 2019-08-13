@@ -1,5 +1,5 @@
 import * as React from "react";
-import { animated, useSprings } from "react-spring";
+import { animated, useSprings, config } from "react-spring";
 import { LocalizedLink } from "components/atoms/LocalizedLink";
 import { FormattedMessage } from "react-intl";
 import { Layout } from "components/templates/Layout";
@@ -26,6 +26,7 @@ export const PageTab = ({ items, selectedItem }: PageTabProps) => {
         item.page === selectedItem
           ? "rgba(89, 89, 89, 1)"
           : "rgba(89, 89, 89, 0)",
+      config: config.gentle,
     }))
   );
 

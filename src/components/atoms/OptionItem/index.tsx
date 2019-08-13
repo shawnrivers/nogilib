@@ -1,7 +1,7 @@
 import * as React from "react";
 import styles from "./optionitem.module.scss";
 import { Link } from "gatsby";
-import { animated, useSpring } from "react-spring";
+import { animated, useSpring, config } from "react-spring";
 
 interface OptionItemProps {
   to: string;
@@ -17,6 +17,7 @@ export const OptionItem = ({ to, children, handleClick }: OptionItemProps) => {
     borderBottomColor: isMouseHovered
       ? "rgba(89, 89, 89, 1)"
       : "rgba(89, 89, 89, 0)",
+    config: config.gentle,
   });
 
   const liProps = React.useMemo(
