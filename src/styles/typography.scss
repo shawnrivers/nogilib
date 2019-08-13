@@ -1,0 +1,69 @@
+$weight-light: 300;
+$weight-regular: 500;
+$weight-bold: 700;
+
+$size-title: 20px;
+$size-heading: 18px;
+$size-sub-heading: 16px;
+$size-body: 14px;
+$size-caption: 12px;
+
+%title-bold {
+  font-size: $size-title;
+  font-weight: $weight-bold;
+}
+
+%heading-regular {
+  font-size: $size-heading;
+  font-weight: $weight-regular;
+}
+
+%heading-bold {
+  font-size: $size-heading;
+  font-weight: $weight-bold;
+}
+
+%sub-heading-regular {
+  font-size: $size-sub-heading;
+  font-weight: $weight-regular;
+}
+
+%sub-heading-bold {
+  font-size: $size-sub-heading;
+  font-weight: $weight-bold;
+}
+
+%sub-heading-light {
+  font-size: $size-sub-heading;
+  font-weight: $weight-light;
+}
+
+%body-regular {
+  font-size: $size-body;
+  font-weight: $weight-regular;
+}
+
+%body-bold {
+  font-size: $size-body;
+  font-weight: $weight-bold;
+}
+
+%body-light {
+  font-size: $size-body;
+  font-weight: $weight-light;
+}
+
+%caption-regular {
+  font-size: $size-caption;
+  font-weight: $weight-regular;
+}
+
+%caption-bold {
+  font-size: $size-caption;
+  font-weight: $weight-bold;
+}
+
+%caption-light {
+  font-size: $size-caption;
+  font-weight: $weight-light;
+}

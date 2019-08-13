@@ -30,7 +30,7 @@ interface AlbumData {
 const Album = (props: AlbumData) => (
   <Layout>
     <nav>
-      <Link to="/cds">
+      <Link to="/cds/?page=albums">
         <button>Back</button>
       </Link>
     </nav>

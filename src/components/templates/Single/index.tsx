@@ -30,7 +30,7 @@ interface SingleData {
 const Single = (props: SingleData) => (
   <Layout>
     <nav>
-      <Link to="/cds">
+      <Link to="/cds/?page=singles">
         <button>Back</button>
       </Link>
     </nav>
