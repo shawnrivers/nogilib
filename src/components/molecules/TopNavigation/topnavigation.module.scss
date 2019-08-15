@@ -1,6 +1,11 @@
 @import "styles/typography.scss";
 @import "styles/colors.scss";
 
+.container {
+  width: 100%;
+  box-shadow: 0px 2px 4px rgba(142, 142, 142, 0.2);
+}
+
 .navigation {
   display: flex;
   flex-direction: row;
@@ -97,11 +102,5 @@
   .icon {
     display: block;
     fill: #595959;
-  }
-}
-
-@media (max-width: 471px) {
-  .navigation {
-    box-shadow: 0px 2px 4px rgba(142, 142, 142, 0.2);
   }
 }

@@ -111,7 +111,7 @@ interface TopNavigationProps {
 
 export const TopNavigation = ({ locale, location }: TopNavigationProps) => {
   return (
-    <nav>
+    <nav className={styles.container}>
       <div className={styles.navigation}>
         <div className={styles.title}>Nogizaka Lib</div>
         <LanguageItem
