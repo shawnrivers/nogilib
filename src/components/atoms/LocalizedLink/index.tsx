@@ -9,19 +9,37 @@ interface LocalizedLinkProps {
   intl: any;
   children?: React.ReactNode;
   className?: string;
+  handleClick?(): void;
 }
 
 export const LocalizedLink = injectIntl(
-  ({ to, children, intl: { locale }, className }: LocalizedLinkProps) => {
+  ({
+    to,
+    children,
+    intl: { locale },
+    className,
+    handleClick,
+  }: LocalizedLinkProps) => {
     const path = React.useMemo(
       () => (locales[locale as Language].default ? to : `/${locale}${to}`),
       [locale, to]
     );
 
-    return (
-      <Link to={path} className={className}>
-        {children}
-      </Link>
+    const linkProps = React.useMemo(
+      () =>
+        handleClick
+          ? {
+              to: path,
+              className,
+              onClick: handleClick,
+            }
+          : {
+              to: path,
+              className,
+            },
+      [path, className, handleClick]
     );
+
+    return <Link {...linkProps}>{children}</Link>;
   }
 );
