@@ -40,6 +40,13 @@ const AppLayout = ({
 
   const locale = pageContext ? pageContext.locale : Language.En;
 
+  const backgroundClass = React.useMemo(() => {
+    if (pathName.includes("singles/") || pathName.includes("albums/")) {
+      return "bg1";
+    }
+    return "";
+  }, [pathName]);
+
   return (
     <IntlProvider locale={locale} messages={messages[locale]}>
       <AnimatePresence>
@@ -55,7 +62,9 @@ const AppLayout = ({
             exit="hidden"
             variants={layoutVariants}
             transition={{ duration: 0.3 }}
-            className={styles.contents}
+            className={`${styles.contents}${
+              backgroundClass !== "" ? " " + styles[backgroundClass] : ""
+            }`}
           >
             {children}
           </motion.main>

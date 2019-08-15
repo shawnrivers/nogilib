@@ -3,6 +3,8 @@ import { graphql } from "gatsby";
 import { LocalizedLink } from "components/atoms/LocalizedLink";
 import { Cd } from "components/organisms/Cd";
 import { Layout } from "components/atoms/Layout";
+import { ArrowBackIcon } from "components/atoms/icons/ArrowBackIcon";
+import styles from "./album.module.scss";
 
 export const query = graphql`
   query($number: String!) {
@@ -10,8 +12,19 @@ export const query = graphql`
       title
       number
       artworks {
+        large
         medium
       }
+      songs {
+        key
+        title
+        type
+        focusPerformers {
+          name
+          type
+        }
+      }
+      release
     }
   }
 `;
@@ -22,21 +35,43 @@ interface AlbumData {
       title: string;
       number: string;
       artworks: {
+        large: string;
         medium: string;
       }[];
+      songs: {
+        key: string;
+        title: string;
+        type: string;
+        focusPerformers: {
+          name: string[];
+          type: string;
+        };
+      }[];
+      release: string;
     };
   };
 }
 
-const Album = (props: AlbumData) => (
+const Album = ({ data }: AlbumData) => (
   <Layout>
     <nav>
       <LocalizedLink to="/cds/?page=albums">
-        <button>Back</button>
+        <ArrowBackIcon className={styles.back} />
       </LocalizedLink>
     </nav>
     <main>
-      {props.data ? <Cd data={props.data.albumsJson} /> : <h1>Album Page</h1>}
+      {data ? (
+        <Cd
+          type="album"
+          title={data.albumsJson.title}
+          number={data.albumsJson.number}
+          artworks={data.albumsJson.artworks}
+          songs={data.albumsJson.songs}
+          release={data.albumsJson.release}
+        />
+      ) : (
+        <h1>Album Page</h1>
+      )}
     </main>
   </Layout>
 );

@@ -1,9 +1,10 @@
 @import "styles/colors.scss";
 @import "styles/typography.scss";
+@import "styles/elevations.scss";
 
 .container {
+  @extend %elevation-2;
   position: relative;
-  box-shadow: 4px 4px 6px rgba(142, 142, 142, 0.2);
 }
 
 .image {
@@ -39,7 +40,8 @@
   overflow: hidden;
 
   h3 {
-    @extend %heading-bold;
+    font-size: $size-sub-heading-2;
+    font-weight: $weight-bold;
     text-align: center;
     margin: auto;
   }

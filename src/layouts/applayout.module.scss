@@ -5,4 +5,9 @@
 .contents {
   position: absolute;
   width: 100%;
+  min-height: 100vh;
+}
+
+.bg1 {
+  background: linear-gradient(to left top, #c3aac7, #80a7d5);
 }
