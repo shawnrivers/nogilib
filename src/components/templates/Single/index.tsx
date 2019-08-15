@@ -2,7 +2,7 @@ import * as React from "react";
 import { LocalizedLink } from "components/atoms/LocalizedLink";
 import { graphql } from "gatsby";
 import { Cd } from "components/organisms/Cd";
-import { Layout } from "components/templates/Layout";
+import { Layout } from "components/atoms/Layout";
 
 export const query = graphql`
   query($number: String!) {

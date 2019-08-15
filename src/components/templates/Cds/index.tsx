@@ -47,14 +47,15 @@ const pageTabItems: TabItem[] = [
   },
 ];
 
-const list = {
+const listVariants = {
   visible: {
     opacity: 1,
     transition: {
       when: "beforeChildren",
-      staggerChildren: 0.05,
+      staggerChildren: 0.03,
       delayChildren: 0.1,
       duration: 0.1,
+      delay: 0.1,
     },
   },
   hidden: {
@@ -64,11 +65,12 @@ const list = {
       staggerChildren: 0,
       delayChildren: 0,
       duration: 0.1,
+      delay: 0.1,
     },
   },
 };
 
-const item = {
+const itemVariants = {
   visible: { opacity: 1, y: 0 },
   hidden: { opacity: 0, y: 20 },
 };
@@ -87,25 +89,26 @@ export const Cds = (props: CdsProps) => {
 
   return (
     <div className={styles.wrapper}>
-      <nav>
+      <div>
         <PageTab
           items={pageTabItems}
           selectedItem={page ? (page as string) : "singles"}
+          className={styles.tabs}
         />
-      </nav>
-      <main>
+      </div>
+      <div>
         <AnimatePresence>
           <motion.div
             key={page as string}
             initial="hidden"
             animate="visible"
             exit="hidden"
-            variants={list}
+            variants={listVariants}
             className={styles.grid}
           >
             {pageCds.map(({ node }) => (
               <motion.div
-                variants={item}
+                variants={itemVariants}
                 key={page + node.number}
                 className={styles.artwork}
               >
@@ -116,7 +119,7 @@ export const Cds = (props: CdsProps) => {
             ))}
           </motion.div>
         </AnimatePresence>
-      </main>
+      </div>
     </div>
   );
 };

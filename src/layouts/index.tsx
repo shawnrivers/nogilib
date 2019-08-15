@@ -1,5 +1,5 @@
 import * as React from "react";
-import { RouteComponentProps } from "@reach/router";
+import { RouteComponentProps, WindowLocation } from "@reach/router";
 import { motion, AnimatePresence } from "framer-motion";
 import { IntlProvider } from "react-intl";
 import { Language } from "utils/constants";
@@ -39,13 +39,16 @@ const AppLayout = ({
     <IntlProvider locale={locale} messages={messages[locale]}>
       <AnimatePresence>
         <div className={styles.container}>
-          <TopNavigation locale={locale} location={location} />
+          <TopNavigation
+            locale={locale}
+            location={location as WindowLocation}
+          />
           <motion.main
             key={pathName}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.2 }}
             className={styles.contents}
           >
             {children}

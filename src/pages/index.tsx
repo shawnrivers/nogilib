@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import { Layout } from "components/templates/Layout";
+import { Layout } from "components/atoms/Layout";
 import "styles/app.scss";
 
 export default () => (

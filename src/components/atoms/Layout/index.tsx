@@ -7,7 +7,7 @@ interface LayoutProps {
 }
 
 export const Layout = ({ children, className }: LayoutProps) => (
-  <div className={`${styles.container}${className ? " " + className : ""}`}>
+  <div className={`${className ? className + " " : ""}${styles.container}`}>
     {children}
   </div>
 );

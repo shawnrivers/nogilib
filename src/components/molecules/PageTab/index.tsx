@@ -2,7 +2,7 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { LocalizedLink } from "components/atoms/LocalizedLink";
 import { FormattedMessage } from "react-intl";
-import { Layout } from "components/templates/Layout";
+import { Layout } from "components/atoms/Layout";
 import styles from "./pagetab.module.scss";
 
 export type TabItem = {
@@ -13,13 +13,11 @@ export type TabItem = {
 const variants = {
   active: {
     fontSize: "20px",
-    fontWeight: 700,
     borderBottomWidth: "3px",
     borderBottomColor: "rgba(89, 89, 89, 1)",
   },
   inactive: {
     fontSize: "16px",
-    fontWeight: 500,
     borderBottomWidth: "0px",
     borderBottomColor: "rgba(89, 89, 89, 0)",
   },
@@ -28,15 +26,18 @@ const variants = {
 interface PageTabProps {
   items: TabItem[];
   selectedItem: string;
+  className?: string;
 }
 
-export const PageTab = ({ items, selectedItem }: PageTabProps) => {
+export const PageTab = ({ items, selectedItem, className }: PageTabProps) => {
   return (
-    <Layout>
+    <Layout className={`${className ? className + " " : ""}`}>
       <div className={styles.container}>
         {items.map(item => (
           <motion.div
+            initial={false}
             animate={item.page === selectedItem ? "active" : "inactive"}
+            transition={{ duration: 0.08 }}
             variants={variants}
             className={styles.item}
             key={item.page}
