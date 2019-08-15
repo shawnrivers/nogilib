@@ -47,6 +47,32 @@ const pageTabItems: TabItem[] = [
   },
 ];
 
+const list = {
+  visible: {
+    opacity: 1,
+    transition: {
+      when: "beforeChildren",
+      staggerChildren: 0.05,
+      delayChildren: 0.1,
+      duration: 0.1,
+    },
+  },
+  hidden: {
+    opacity: 0,
+    transition: {
+      when: "beforeChildren",
+      staggerChildren: 0,
+      delayChildren: 0,
+      duration: 0.1,
+    },
+  },
+};
+
+const item = {
+  visible: { opacity: 1, y: 0 },
+  hidden: { opacity: 0, y: 20 },
+};
+
 export const Cds = (props: CdsProps) => {
   const singles = props.singles.edges;
   const albums = props.albums.edges;
@@ -71,19 +97,22 @@ export const Cds = (props: CdsProps) => {
         <AnimatePresence>
           <motion.div
             key={page as string}
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 100 }}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            variants={list}
             className={styles.grid}
           >
             {pageCds.map(({ node }) => (
-              <LocalizedLink
-                to={`/${page}/${node.number}`}
-                key={node.number}
+              <motion.div
+                variants={item}
+                key={page + node.number}
                 className={styles.artwork}
               >
-                <Artwork images={node.artworks[0]} title={node.title} />
-              </LocalizedLink>
+                <LocalizedLink to={`/${page}/${node.number}`}>
+                  <Artwork images={node.artworks[0]} title={node.title} />
+                </LocalizedLink>
+              </motion.div>
             ))}
           </motion.div>
         </AnimatePresence>

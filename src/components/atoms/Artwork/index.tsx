@@ -50,11 +50,13 @@ export const Artwork = ({ images, title, className }: ArtworkProps) => {
         />
       </LazyLoad>
       <motion.div
+        initial={false}
         animate={isHovered ? "isHovered" : "isNotHovered"}
         variants={backgroundFade}
         className={styles.background}
       />
       <motion.div
+        initial={false}
         animate={isHovered ? "isHovered" : "isNotHovered"}
         variants={titleFade}
         className={styles.title}
