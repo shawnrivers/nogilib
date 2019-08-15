@@ -45,7 +45,7 @@ export const PageTab = ({ items, selectedItem, className }: PageTabProps) => {
           <motion.div
             initial={false}
             animate={item.page === currentItem ? "active" : "inactive"}
-            transition={{ duration: 0.08 }}
+            transition={{ duration: 0.1, ease: "linear" }}
             variants={variants}
             className={styles.item}
             key={item.page}
