@@ -1,0 +1,66 @@
+@import "styles/colors.scss";
+@import "styles/typography.scss";
+@import "styles/elevations.scss";
+
+.container {
+  height: 100%;
+}
+
+.artwork {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.images {
+  @extend %elevation-3;
+  margin: 0 12px;
+  width: 256px;
+  overflow-x: hidden;
+}
+
+.images_container {
+  display: flex;
+  width: max-content;
+}
+
+.image {
+  width: 256px;
+  object-fit: cover;
+}
+
+.arrow {
+  fill: $white;
+  max-width: 24px;
+}
+
+.indicator {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+
+  button:not(:last-child) {
+    margin-right: 4px;
+  }
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+@media (max-width: 695px) {
+  .images {
+    max-width: 256px;
+    width: 48vw;
+  }
+
+  .image {
+    max-width: 256px;
+    max-height: 256px;
+    width: 48vw;
+    height: 48vw;
+  }
+}

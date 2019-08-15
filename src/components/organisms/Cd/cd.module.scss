@@ -29,16 +29,11 @@
 
 .artworks {
   margin: 12px 40px 40px 0;
-  height: 100%;
-
-  img {
-    @extend %elevation-2;
-    width: 256px;
-  }
 }
 
 .content {
   width: 100%;
+  margin-bottom: 64px;
 
   .section:not(:last-child) {
     margin-bottom: 40px;
@@ -80,13 +75,7 @@
   }
 
   .artworks {
-    text-align: center;
     margin: 24px 0 64px;
-
-    img {
-      max-width: 256px;
-      width: 100%;
-    }
   }
 }
 
