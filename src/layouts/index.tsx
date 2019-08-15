@@ -18,6 +18,11 @@ interface AppLayoutProps {
   };
 }
 
+const layoutVariants = {
+  visible: { opacity: 1, y: 0 },
+  hidden: { opacity: 0, y: 20 },
+};
+
 const AppLayout = ({
   children,
   location,
@@ -45,10 +50,11 @@ const AppLayout = ({
           />
           <motion.main
             key={pathName}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 20 }}
-            transition={{ duration: 0.2 }}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            variants={layoutVariants}
+            transition={{ duration: 0.3 }}
             className={styles.contents}
           >
             {children}

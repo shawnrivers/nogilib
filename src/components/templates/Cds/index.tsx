@@ -52,20 +52,14 @@ const listVariants = {
     opacity: 1,
     transition: {
       when: "beforeChildren",
-      staggerChildren: 0.03,
-      delayChildren: 0.1,
+      staggerChildren: 0.015,
       duration: 0.1,
-      delay: 0.1,
     },
   },
   hidden: {
     opacity: 0,
     transition: {
-      when: "beforeChildren",
-      staggerChildren: 0,
-      delayChildren: 0,
       duration: 0.1,
-      delay: 0.1,
     },
   },
 };
@@ -100,8 +94,6 @@ export const Cds = (props: CdsProps) => {
         <AnimatePresence>
           <motion.div
             key={page as string}
-            initial="hidden"
-            animate="visible"
             exit="hidden"
             variants={listVariants}
             className={styles.grid}

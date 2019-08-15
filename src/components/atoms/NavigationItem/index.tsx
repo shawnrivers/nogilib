@@ -41,7 +41,11 @@ export const NavigationItem = ({
   return handleClick ? (
     <motion.button
       onClick={handleClick}
-      whileHover={{ backgroundColor: "rgba(89,89,89)", color: "#ffffff" }}
+      whileHover={{
+        backgroundColor: "rgba(89,89,89)",
+        color: "#ffffff",
+        fill: "#ffffff",
+      }}
       className={`${styles.container}${className ? " " + className : ""}`}
     >
       {children}
