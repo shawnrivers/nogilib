@@ -56,6 +56,9 @@ const AppLayout = ({
     if (pathName.includes("singles/") || pathName.includes("albums/")) {
       return "bg1";
     }
+    if (pathName.includes("songs/")) {
+      return "bg2";
+    }
     return "";
   }, [pathName]);
 

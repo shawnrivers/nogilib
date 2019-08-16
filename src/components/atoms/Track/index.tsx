@@ -4,6 +4,7 @@ import { focusPerformersType, SongType } from "types/responseTypes";
 import { FormattedMessage } from "react-intl";
 import { Language } from "utils/constants";
 import { motion } from "framer-motion";
+import { LocalizedLink } from "components/atoms/LocalizedLink";
 
 const containerVariants = {
   hover: { backgroundColor: "#595959", transition: { duration: 0.2 } },
@@ -15,6 +16,7 @@ const textVariants = {
 
 interface TrackProps {
   number: number;
+  songKey: string;
   title: string;
   type: SongType;
   focusPerformers: {
@@ -52,6 +54,8 @@ export const Track = (props: TrackProps) => {
     return "";
   }, [props.focusPerformers, props.locale]);
 
+  console.log({ key: props.songKey });
+
   return (
     <motion.div
       whileHover="hover"
@@ -60,20 +64,22 @@ export const Track = (props: TrackProps) => {
         props.className ? " " + props.className : ""
       }`}
     >
-      <motion.span variants={textVariants} className={styles.number}>
-        {props.number}.
-      </motion.span>
-      <div className={styles.content}>
-        <motion.h3 variants={textVariants} className={styles.title}>
-          {props.title}
-        </motion.h3>
-        <motion.div variants={textVariants} className={styles.description}>
-          <span>
-            #<FormattedMessage {...({ id: props.type } as any)} />
-          </span>
-          <span>{focusPerformersText}</span>
-        </motion.div>
-      </div>
+      <LocalizedLink to={`/songs/${props.songKey}`}>
+        <motion.span variants={textVariants} className={styles.number}>
+          {props.number}.
+        </motion.span>
+        <div className={styles.content}>
+          <motion.h3 variants={textVariants} className={styles.title}>
+            {props.title}
+          </motion.h3>
+          <motion.div variants={textVariants} className={styles.description}>
+            <span>
+              #<FormattedMessage {...({ id: props.type } as any)} />
+            </span>
+            <span>{focusPerformersText}</span>
+          </motion.div>
+        </div>
+      </LocalizedLink>
     </motion.div>
   );
 };

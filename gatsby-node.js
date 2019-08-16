@@ -23,6 +23,15 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       value: slug + node.number,
     });
   }
+
+  if (node.internal.type === "SongsJson") {
+    const slug = createFilePath({ node, getNode, basePath: "pages" });
+    createNodeField({
+      node,
+      name: "slug",
+      value: slug + node.key,
+    });
+  }
 };
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
@@ -35,6 +44,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             fields {
               slug
             }
+            number
           }
         }
       }
@@ -49,13 +59,29 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             fields {
               slug
             }
+            number
           }
         }
       }
     }
   `);
 
-  if (albumsResult.errors || singlesResult.errors) {
+  const songsResult = await graphql(`
+    {
+      allSongsJson {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            key
+          }
+        }
+      }
+    }
+  `);
+
+  if (albumsResult.errors || singlesResult.errors || songsResult.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`);
     return;
   }
@@ -64,7 +90,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   albumsResult.data.allAlbumsJson.edges.forEach(({ node }) => {
     const cdType = node.fields.slug.split("/")[1];
-    const number = node.fields.slug.split("/")[2];
+    const number = node.number;
 
     for (const lang of localesKeys) {
       const localizedPath = locales[lang].default
@@ -85,7 +111,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   singlesResult.data.allSinglesJson.edges.forEach(({ node }) => {
     const cdType = node.fields.slug.split("/")[1];
-    const number = node.fields.slug.split("/")[2];
+    const number = node.number;
 
     for (const lang of localesKeys) {
       const localizedPath = locales[lang].default
@@ -98,6 +124,23 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         context: {
           number,
           cdType,
+          locale: lang,
+        },
+      });
+    }
+  });
+
+  songsResult.data.allSongsJson.edges.forEach(({ node }) => {
+    for (const lang of localesKeys) {
+      const localizedPath = locales[lang].default
+        ? node.fields.slug
+        : locales[lang].path + node.fields.slug;
+
+      createPage({
+        path: localizedPath,
+        component: path.resolve("./src/components/templates/Song/index.tsx"),
+        context: {
+          key: node.key,
           locale: lang,
         },
       });

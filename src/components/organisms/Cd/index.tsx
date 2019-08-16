@@ -106,6 +106,7 @@ export const Cd = injectIntl(
                 {songs.map((song, index) => (
                   <Track
                     key={song.key}
+                    songKey={song.key}
                     number={index + 1}
                     title={song.title}
                     type={song.type}
