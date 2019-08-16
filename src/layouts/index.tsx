@@ -19,8 +19,20 @@ interface AppLayoutProps {
 }
 
 const layoutVariants = {
-  visible: { opacity: 1, y: 0 },
-  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.2,
+    },
+  },
+  hidden: {
+    opacity: 0,
+    y: 20,
+    transition: {
+      duration: 0.15,
+    },
+  },
 };
 
 const AppLayout = ({
@@ -61,7 +73,6 @@ const AppLayout = ({
             animate="visible"
             exit="hidden"
             variants={layoutVariants}
-            transition={{ duration: 0.3 }}
             className={`${styles.contents}${
               backgroundClass !== "" ? " " + styles[backgroundClass] : ""
             }`}

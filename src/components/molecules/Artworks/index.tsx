@@ -28,31 +28,46 @@ export const Artworks = ({ artworks, title, className }: ArtworksProps) => {
     }
   }, [artworks, artworkIndex]);
 
+  const handleClickImage = React.useCallback(() => {
+    if (artworkIndex < artworks.length - 1) {
+      setArtworkIndex(artworkIndex + 1);
+    } else {
+      setArtworkIndex(0);
+    }
+  }, [artworks, artworkIndex]);
+
   return (
     <div className={`${styles.container}${className ? " " + className : ""}`}>
       <div className={styles.artwork}>
-        <button onClick={handleClickPreviousArtwork}>
+        <motion.button
+          whileHover={{ scale: 2, x: -8 }}
+          onClick={handleClickPreviousArtwork}
+        >
           <ArrowLeftIcon className={styles.arrow} />
-        </button>
-        <div className={styles.images}>
+        </motion.button>
+        <motion.div whileHover={{ scale: 1.07 }} className={styles.images}>
           {artworks.map((artwork, index) => (
             <motion.img
+              key={index}
               animate={
                 artworkIndex === index
                   ? { opacity: 1, scale: 1 }
                   : { opacity: 0, scale: 0.5 }
               }
-              key={index}
               src={artwork.medium}
               srcSet={`${artwork.large} 1.5x`}
               alt={title}
+              onClick={handleClickImage}
               className={styles.image}
             />
           ))}
-        </div>
-        <button onClick={handleClickNextArtwork}>
+        </motion.div>
+        <motion.button
+          whileHover={{ scale: 2, x: 8 }}
+          onClick={handleClickNextArtwork}
+        >
           <ArrowRightIcon className={styles.arrow} />
-        </button>
+        </motion.button>
       </div>
       <div className={styles.indicator}>
         {artworks.map((_, index) => (

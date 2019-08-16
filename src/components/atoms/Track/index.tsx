@@ -1,8 +1,17 @@
 import * as React from "react";
 import styles from "./track.module.scss";
 import { focusPerformersType, SongType } from "types/responseTypes";
-import { injectIntl, FormattedMessage } from "react-intl";
+import { FormattedMessage } from "react-intl";
 import { Language } from "utils/constants";
+import { motion } from "framer-motion";
+
+const containerVariants = {
+  hover: { backgroundColor: "#595959", transition: { duration: 0.2 } },
+};
+
+const textVariants = {
+  hover: { color: "#ffffff", transition: { duration: 0.2 } },
+};
 
 interface TrackProps {
   number: number;
@@ -44,21 +53,27 @@ export const Track = (props: TrackProps) => {
   }, [props.focusPerformers, props.locale]);
 
   return (
-    <div
+    <motion.div
+      whileHover="hover"
+      variants={containerVariants}
       className={`${styles.container} + ${
         props.className ? " " + props.className : ""
       }`}
     >
-      <span className={styles.number}>{props.number}.</span>
+      <motion.span variants={textVariants} className={styles.number}>
+        {props.number}.
+      </motion.span>
       <div className={styles.content}>
-        <h3 className={styles.title}>{props.title}</h3>
-        <div className={styles.description}>
+        <motion.h3 variants={textVariants} className={styles.title}>
+          {props.title}
+        </motion.h3>
+        <motion.div variants={textVariants} className={styles.description}>
           <span>
             #<FormattedMessage {...({ id: props.type } as any)} />
           </span>
           <span>{focusPerformersText}</span>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };

@@ -6,6 +6,7 @@ import { Layout } from "components/atoms/Layout";
 import { ArrowBackIcon } from "components/atoms/icons/ArrowBackIcon";
 import { focusPerformersType, SongType } from "types/responseTypes";
 import styles from "./single.module.scss";
+import { motion } from "framer-motion";
 
 export const query = graphql`
   query($number: String!) {
@@ -55,11 +56,11 @@ interface SingleData {
 
 const Single = ({ data }: SingleData) => (
   <Layout>
-    <div>
-      <LocalizedLink to="/cds/?page=singles">
+    <motion.div whileHover={{ x: -16 }}>
+      <LocalizedLink to="/cds/?page=singles" className={styles.link}>
         <ArrowBackIcon className={styles.back} />
       </LocalizedLink>
-    </div>
+    </motion.div>
     <div>
       {data ? (
         <Cd
