@@ -12,15 +12,15 @@ interface TrackProps {
     name: string[];
     type: focusPerformersType;
   };
-  intl: any;
+  locale: Language;
   className?: string;
 }
 
-export const Track = injectIntl((props: TrackProps) => {
+export const Track = (props: TrackProps) => {
   const focusPerformersText = React.useMemo(() => {
     const { focusPerformers } = props;
     let comma: string;
-    switch (props.intl.locale) {
+    switch (props.locale) {
       case Language.Zh:
         comma = "、";
         break;
@@ -41,7 +41,7 @@ export const Track = injectIntl((props: TrackProps) => {
       return focusPerformers.name.reduce((acc, curr) => acc + comma + curr);
     }
     return "";
-  }, []);
+  }, [props.focusPerformers, props.locale]);
 
   return (
     <div
@@ -61,4 +61,4 @@ export const Track = injectIntl((props: TrackProps) => {
       </div>
     </div>
   );
-});
+};

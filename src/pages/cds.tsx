@@ -67,9 +67,14 @@ interface CdsData {
 }
 
 export default (props: RouteComponentProps<CdsData>) => {
+  const query = React.useMemo(
+    () => (props.location ? props.location.search : ""),
+    [props.location]
+  );
+
   return props.data ? (
     <Cds
-      query={props.location ? props.location.search : ""}
+      query={query}
       singles={props.data.allSinglesJson}
       albums={props.data.allAlbumsJson}
     />

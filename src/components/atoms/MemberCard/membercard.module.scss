@@ -1,0 +1,36 @@
+@import "styles/colors.scss";
+@import "styles/typography.scss";
+@import "styles/elevations.scss";
+
+.container {
+  @extend %elevation-1-normal;
+  position: relative;
+  box-sizing: border-box;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  background-color: $white;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 160px;
+  transform-origin: center;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.name {
+  font-size: $size-caption;
+  font-weight: $weight-regular;
+  color: $gray-1;
+  text-align: center;
+  text-transform: capitalize;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}

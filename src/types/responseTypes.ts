@@ -19,3 +19,11 @@ export enum SongType {
   FourthGeneration = "fourth generation",
   Special = "special",
 }
+
+export enum JoinedGenerationType {
+  First = "first",
+  Second = "second",
+  Third = "third",
+  Fourth = "fourth",
+  Exchange = "exchange",
+}

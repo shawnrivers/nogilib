@@ -1,5 +1,4 @@
 import * as React from "react";
-import { motion } from "framer-motion";
 import { LocalizedLink } from "components/atoms/LocalizedLink";
 import { FormattedMessage } from "react-intl";
 import { Layout } from "components/atoms/Layout";
@@ -8,25 +7,6 @@ import styles from "./pagetab.module.scss";
 export type TabItem = {
   link: string;
   page: string;
-};
-
-const variants = {
-  active: {
-    fontSize: "20px",
-    borderBottomWidth: "3px",
-    borderBottomColor: "rgba(89, 89, 89, 1)",
-    transition: {
-      duration: 0.2,
-    },
-  },
-  inactive: {
-    fontSize: "16px",
-    borderBottomWidth: "0px",
-    borderBottomColor: "rgba(89, 89, 89, 0)",
-    transition: {
-      duration: 0.2,
-    },
-  },
 };
 
 interface PageTabProps {
@@ -42,11 +22,16 @@ export const PageTab = ({ items, selectedItem, className }: PageTabProps) => {
     <Layout className={`${className ? className + " " : ""}`}>
       <div className={styles.container}>
         {items.map(item => (
-          <motion.div
-            initial={false}
-            animate={item.page === currentItem ? "active" : "inactive"}
-            transition={{ duration: 0.1, ease: "linear" }}
-            variants={variants}
+          <div
+            style={
+              item.page === currentItem
+                ? {
+                    fontSize: "20px",
+                    borderBottomWidth: "3px",
+                    borderBottomColor: "rgba(89, 89, 89, 1)",
+                  }
+                : { fontSize: "16px", borderBottomWidth: "0px" }
+            }
             className={styles.item}
             key={item.page}
           >
@@ -56,7 +41,7 @@ export const PageTab = ({ items, selectedItem, className }: PageTabProps) => {
             >
               <FormattedMessage {...({ id: item.page } as any)} />
             </LocalizedLink>
-          </motion.div>
+          </div>
         ))}
       </div>
     </Layout>

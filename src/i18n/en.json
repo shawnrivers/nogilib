@@ -17,5 +17,10 @@
   "fourth generation": "4th. gen",
   "special": "special",
   "track": "track",
-  "release": "release"
+  "release": "release",
+  "first-gen": "1st. gen",
+  "second-gen": "2nd. gen",
+  "third-gen": "3rd. gen",
+  "fourth-gen": "4th. gen",
+  "graduated": "graduated"
 }

@@ -52,14 +52,15 @@ const listVariants = {
     opacity: 1,
     transition: {
       when: "beforeChildren",
-      staggerChildren: 0.015,
-      duration: 0.1,
+      staggerChildren: 0.02,
+      delayChildren: 0.2,
+      duration: 0.2,
     },
   },
   hidden: {
     opacity: 0,
     transition: {
-      duration: 0.1,
+      duration: 0.2,
     },
   },
 };
@@ -82,37 +83,32 @@ export const Cds = (props: CdsProps) => {
   ]);
 
   return (
-    <div className={styles.wrapper}>
-      <div>
-        <PageTab
-          items={pageTabItems}
-          selectedItem={page ? (page as string) : "singles"}
-          className={styles.tabs}
-        />
-      </div>
-      <div>
-        <AnimatePresence>
-          <motion.div
-            key={page as string}
-            exit="hidden"
-            variants={listVariants}
-            className={styles.grid}
-          >
-            {pageCds.map(({ node }) => (
-              <motion.div
-                exit="hidden"
-                variants={itemVariants}
-                key={page + node.number}
-                className={styles.artwork}
-              >
-                <LocalizedLink to={`/${page}/${node.number}`}>
-                  <Artwork images={node.artworks[0]} title={node.title} />
-                </LocalizedLink>
-              </motion.div>
-            ))}
-          </motion.div>
-        </AnimatePresence>
-      </div>
+    <div>
+      <PageTab
+        items={pageTabItems}
+        selectedItem={page ? (page as string) : "singles"}
+        className={styles.tabs}
+      />
+      <AnimatePresence>
+        <motion.div
+          key={page as string}
+          exit="hidden"
+          variants={listVariants}
+          className={styles.grid}
+        >
+          {pageCds.map(({ node }) => (
+            <motion.div
+              variants={itemVariants}
+              key={page + node.number}
+              className={styles.artwork}
+            >
+              <LocalizedLink to={`/${page}/${node.number}`}>
+                <Artwork images={node.artworks[0]} title={node.title} />
+              </LocalizedLink>
+            </motion.div>
+          ))}
+        </motion.div>
+      </AnimatePresence>
     </div>
   );
 };

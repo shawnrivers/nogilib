@@ -4,28 +4,9 @@ import styles from "./cd.module.scss";
 import { Track } from "components/atoms/Track";
 import { focusPerformersType, SongType } from "types/responseTypes";
 import { Artworks } from "components/molecules/Artworks";
-import { FormattedMessage, FormattedDate } from "react-intl";
+import { FormattedMessage, FormattedDate, injectIntl } from "react-intl";
 import { motion } from "framer-motion";
-
-interface CdProps {
-  type: "single" | "album";
-  title: string;
-  number: string;
-  artworks: {
-    large: string;
-    medium: string;
-  }[];
-  songs: {
-    key: string;
-    title: string;
-    type: SongType;
-    focusPerformers: {
-      name: string[];
-      type: focusPerformersType;
-    };
-  }[];
-  release: string;
-}
+import { Language } from "utils/constants";
 
 const containerVariants = {
   visible: {
@@ -78,62 +59,79 @@ const contentVariants = {
   },
 };
 
-export const Cd = ({
-  type,
-  title,
-  number,
-  artworks,
-  songs,
-  release,
-}: CdProps) => {
-  return (
-    <motion.div variants={containerVariants} className={styles.container}>
-      <motion.div variants={headingVariants} className={styles.heading}>
-        <h4 className={styles.number}>
-          {toCdNumber(number)} {type}
-        </h4>
-        <h1 className={styles.title}>{title}</h1>
-      </motion.div>
-      <motion.div
-        variants={contentContainerVariants}
-        className={styles.flexbox}
-      >
-        <motion.div variants={contentVariants} className={styles.artworks}>
-          <Artworks artworks={artworks} title={title} />
+interface CdProps {
+  type: "single" | "album";
+  title: string;
+  number: string;
+  artworks: {
+    large: string;
+    medium: string;
+  }[];
+  songs: {
+    key: string;
+    title: string;
+    type: SongType;
+    focusPerformers: {
+      name: string[];
+      type: focusPerformersType;
+    };
+  }[];
+  release: string;
+  intl: any;
+}
+
+export const Cd = injectIntl(
+  ({ type, title, number, artworks, songs, release, intl }: CdProps) => {
+    return (
+      <motion.div variants={containerVariants} className={styles.container}>
+        <motion.div variants={headingVariants} className={styles.heading}>
+          <h4 className={styles.number}>
+            {toCdNumber(number)} {type}
+          </h4>
+          <h1 className={styles.title}>{title}</h1>
         </motion.div>
-        <motion.div variants={contentVariants} className={styles.content}>
-          <section className={styles.section}>
-            <h2 className={styles.subheading}>
-              <FormattedMessage {...({ id: "track" } as any)} />
-            </h2>
-            <ul className={styles.tracklist}>
-              {songs.map((song, index) => (
-                <Track
-                  number={index + 1}
-                  key={song.key}
-                  title={song.title}
-                  type={song.type}
-                  focusPerformers={song.focusPerformers}
-                  className={styles.track}
+        <motion.div
+          variants={contentContainerVariants}
+          className={styles.flexbox}
+        >
+          <motion.div variants={contentVariants} className={styles.artworks}>
+            <Artworks artworks={artworks} title={title} />
+          </motion.div>
+          <motion.div variants={contentVariants} className={styles.content}>
+            <section className={styles.section}>
+              <h2 className={styles.subheading}>
+                <FormattedMessage {...({ id: "track" } as any)} />
+              </h2>
+              <ul className={styles.tracklist}>
+                {songs.map((song, index) => (
+                  <Track
+                    key={song.key}
+                    number={index + 1}
+                    title={song.title}
+                    type={song.type}
+                    focusPerformers={song.focusPerformers}
+                    locale={intl.locale as Language}
+                    className={styles.track}
+                  />
+                ))}
+              </ul>
+            </section>
+            <section className={styles.section}>
+              <h2 className={styles.subheading}>
+                <FormattedMessage {...({ id: "release" } as any)} />
+              </h2>
+              <p className={styles.body}>
+                <FormattedDate
+                  value={release}
+                  year="numeric"
+                  month="short"
+                  day="numeric"
                 />
-              ))}
-            </ul>
-          </section>
-          <section className={styles.section}>
-            <h2 className={styles.subheading}>
-              <FormattedMessage {...({ id: "release" } as any)} />
-            </h2>
-            <p className={styles.body}>
-              <FormattedDate
-                value={release}
-                year="numeric"
-                month="short"
-                day="numeric"
-              />
-            </p>
-          </section>
+              </p>
+            </section>
+          </motion.div>
         </motion.div>
       </motion.div>
-    </motion.div>
-  );
-};
+    );
+  }
+);
