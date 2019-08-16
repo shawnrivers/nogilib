@@ -3,6 +3,18 @@ import LazyLoad from "react-lazyload";
 import styles from "./membercard.module.scss";
 import { motion } from "framer-motion";
 
+const containerVariants = {
+  hover: {
+    scale: 1.08,
+    backgroundColor: "#e887a3",
+    transition: { duration: 0.3 },
+  },
+};
+
+const textVariants = {
+  hover: { color: "#ffffff", transition: { duration: 0.3 } },
+};
+
 interface MemberCardProps {
   image: {
     large: string;
@@ -14,7 +26,8 @@ interface MemberCardProps {
 export const MemberCard = ({ image, name }: MemberCardProps) => {
   return (
     <motion.div
-      whileHover={{ scale: 1.08, backgroundColor: "#d6d6d6" }}
+      whileHover="hover"
+      variants={containerVariants}
       className={styles.container}
     >
       <LazyLoad offset={100}>
@@ -25,9 +38,9 @@ export const MemberCard = ({ image, name }: MemberCardProps) => {
           className={styles.image}
         />
       </LazyLoad>
-      <div className={styles.name}>
+      <motion.div variants={textVariants} className={styles.name}>
         <span>{name}</span>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };

@@ -56,8 +56,8 @@ interface SingleData {
 
 const Single = ({ data }: SingleData) => (
   <Layout>
-    <motion.div whileHover={{ x: -16 }}>
-      <LocalizedLink to="/cds/?page=singles" className={styles.link}>
+    <motion.div whileHover={{ x: -7, scale: 1.5 }} className={styles.link}>
+      <LocalizedLink to="/cds/?page=singles">
         <ArrowBackIcon className={styles.back} />
       </LocalizedLink>
     </motion.div>
