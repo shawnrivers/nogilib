@@ -2,7 +2,10 @@ import * as React from "react";
 import { toCdNumber } from "utils/strings";
 import styles from "./cd.module.scss";
 import { Track } from "components/atoms/Track";
+import { focusPerformersType, SongType } from "types/responseTypes";
 import { Artworks } from "components/molecules/Artworks";
+import { FormattedMessage, FormattedDate } from "react-intl";
+import { motion } from "framer-motion";
 
 interface CdProps {
   type: "single" | "album";
@@ -15,14 +18,65 @@ interface CdProps {
   songs: {
     key: string;
     title: string;
-    type: string;
+    type: SongType;
     focusPerformers: {
       name: string[];
-      type: string;
+      type: focusPerformersType;
     };
   }[];
   release: string;
 }
+
+const containerVariants = {
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      when: "beforeChildren",
+    },
+  },
+  hidden: {
+    opacity: 0,
+    x: -20,
+  },
+};
+
+const headingVariants = {
+  visible: {
+    opacity: 1,
+    x: 0,
+  },
+  hidden: {
+    opacity: 0,
+    x: -20,
+  },
+};
+
+const contentContainerVariants = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      when: "beforeChildren",
+      staggerChildren: 0.2,
+    },
+  },
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+};
+
+const contentVariants = {
+  visible: {
+    opacity: 1,
+    y: 0,
+  },
+  hidden: {
+    opacity: 0,
+    y: -20,
+  },
+};
 
 export const Cd = ({
   type,
@@ -33,23 +87,26 @@ export const Cd = ({
   release,
 }: CdProps) => {
   return (
-    <div className={styles.container}>
-      <div className={styles.heading}>
+    <motion.div variants={containerVariants} className={styles.container}>
+      <motion.div variants={headingVariants} className={styles.heading}>
         <h4 className={styles.number}>
           {toCdNumber(number)} {type}
         </h4>
         <h1 className={styles.title}>{title}</h1>
-      </div>
-      <div className={styles.flexbox}>
-        <Artworks
-          artworks={artworks}
-          title={title}
-          className={styles.artworks}
-        />
-        <div className={styles.content}>
+      </motion.div>
+      <motion.div
+        variants={contentContainerVariants}
+        className={styles.flexbox}
+      >
+        <motion.div variants={contentVariants} className={styles.artworks}>
+          <Artworks artworks={artworks} title={title} />
+        </motion.div>
+        <motion.div variants={contentVariants} className={styles.content}>
           <section className={styles.section}>
-            <h2 className={styles.subheading}>Track</h2>
-            <div className={styles.tracklist}>
+            <h2 className={styles.subheading}>
+              <FormattedMessage {...({ id: "track" } as any)} />
+            </h2>
+            <ul className={styles.tracklist}>
               {songs.map((song, index) => (
                 <Track
                   number={index + 1}
@@ -60,14 +117,23 @@ export const Cd = ({
                   className={styles.track}
                 />
               ))}
-            </div>
+            </ul>
           </section>
           <section className={styles.section}>
-            <h2 className={styles.subheading}>Release</h2>
-            <p className={styles.body}>{release}</p>
+            <h2 className={styles.subheading}>
+              <FormattedMessage {...({ id: "release" } as any)} />
+            </h2>
+            <p className={styles.body}>
+              <FormattedDate
+                value={release}
+                year="numeric"
+                month="short"
+                day="numeric"
+              />
+            </p>
           </section>
-        </div>
-      </div>
-    </div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 };

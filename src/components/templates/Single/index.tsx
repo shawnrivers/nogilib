@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 import { Cd } from "components/organisms/Cd";
 import { Layout } from "components/atoms/Layout";
 import { ArrowBackIcon } from "components/atoms/icons/ArrowBackIcon";
+import { focusPerformersType, SongType } from "types/responseTypes";
 import styles from "./single.module.scss";
 
 export const query = graphql`
@@ -41,10 +42,10 @@ interface SingleData {
       songs: {
         key: string;
         title: string;
-        type: string;
+        type: SongType;
         focusPerformers: {
           name: string[];
-          type: string;
+          type: focusPerformersType;
         };
       }[];
       release: string;

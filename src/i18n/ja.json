@@ -3,5 +3,19 @@
   "albums": "アルバム",
   "music": "音楽",
   "members": "メンバー",
-  "languages": "言語"
+  "languages": "言語",
+  "none": "",
+  "title": "表題曲",
+  "coupling": "カップリング曲",
+  "lead": "リード曲",
+  "under": "アンダー曲",
+  "unit": "ユニット曲",
+  "solo": "ソロ曲",
+  "first generation": "1期生曲",
+  "second generation": "2期生曲",
+  "third generation": "3期生曲",
+  "fourth generation": "4期生曲",
+  "special": "special",
+  "track": "収録曲",
+  "release": "リリース日"
 }

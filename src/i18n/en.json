@@ -3,5 +3,19 @@
   "albums": "albums",
   "music": "music",
   "members": "members",
-  "languages": "lang"
+  "languages": "lang",
+  "none": "",
+  "title": "title",
+  "coupling": "couping",
+  "lead": "lead",
+  "under": "under",
+  "unit": "unit",
+  "solo": "solo",
+  "first generation": "1st. gen",
+  "second generation": "2nd. gen",
+  "third generation": "3rd. gen",
+  "fourth generation": "4th. gen",
+  "special": "special",
+  "track": "track",
+  "release": "release"
 }

@@ -53,6 +53,11 @@
   line-height: 16px;
   text-overflow: ellipsis;
   white-space: nowrap;
+  text-transform: capitalize;
+
+  span:not(:last-child) {
+    margin-right: 12px;
+  }
 }
 
 .type {

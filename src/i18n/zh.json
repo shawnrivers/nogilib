@@ -3,5 +3,18 @@
   "albums": "专辑",
   "music": "音乐",
   "members": "成员",
-  "languages": "语言"
+  "languages": "语言",
+  "title": "标题曲",
+  "coupling": "B面曲",
+  "lead": "主打曲",
+  "under": "Under曲",
+  "unit": "小队曲",
+  "solo": "独唱曲",
+  "first generation": "1期生曲",
+  "second generation": "2期生曲",
+  "third generation": "3期生曲",
+  "fourth generation": "4期生曲",
+  "special": "special",
+  "track": "收录曲",
+  "release": "发售日"
 }

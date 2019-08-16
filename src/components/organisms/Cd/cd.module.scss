@@ -15,6 +15,7 @@
   font-size: $size-sub-heading-2;
   font-weight: $weight-light;
   text-transform: uppercase;
+  margin-bottom: 4px;
 }
 
 .title {
@@ -43,7 +44,7 @@
 .subheading {
   font-size: $size-sub-heading;
   font-weight: $weight-bold;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   text-transform: uppercase;
 }
 
@@ -56,6 +57,7 @@
   display: grid;
   grid-row-gap: 12px;
   grid-column-gap: 12px;
+  margin-top: 24px;
 }
 
 @media (min-width: 588px) and (max-width: 695px) {
