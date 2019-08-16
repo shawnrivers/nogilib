@@ -17,17 +17,15 @@
   @extend %elevation-4;
   margin: 0 12px;
   width: 256px;
+  height: 256px;
   overflow-x: hidden;
-}
-
-.images_container {
-  display: flex;
-  width: max-content;
 }
 
 .image {
   width: 256px;
+  height: 256px;
   object-fit: cover;
+  position: absolute;
 }
 
 .arrow {
@@ -54,13 +52,21 @@
 @media (max-width: 695px) {
   .images {
     max-width: 256px;
-    width: 48vw;
+    width: 52vw;
+    max-height: 256px;
+    height: 52vw;
   }
 
   .image {
     max-width: 256px;
     max-height: 256px;
-    width: 48vw;
-    height: 48vw;
+    width: 52vw;
+    height: 52vw;
+  }
+}
+
+@media (max-width: 356px) {
+  .arrow {
+    width: 16px;
   }
 }
