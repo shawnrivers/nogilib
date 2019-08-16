@@ -27,10 +27,15 @@ export const PageTab = ({ items, selectedItem, className }: PageTabProps) => {
               item.page === currentItem
                 ? {
                     fontSize: "20px",
+                    fontWeight: 700,
                     borderBottomWidth: "3px",
                     borderBottomColor: "rgba(89, 89, 89, 1)",
                   }
-                : { fontSize: "16px", borderBottomWidth: "0px" }
+                : {
+                    fontSize: "16px",
+                    fontWeight: 500,
+                    borderBottomWidth: "0px",
+                  }
             }
             className={styles.item}
             key={item.page}
