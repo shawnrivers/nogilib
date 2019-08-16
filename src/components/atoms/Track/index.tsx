@@ -54,9 +54,7 @@ export const Track = (props: TrackProps) => {
     return "";
   }, [props.focusPerformers, props.locale]);
 
-  console.log({ key: props.songKey });
-
-  return (
+  return props.songKey !== "OVERTURE" ? (
     <motion.div
       whileHover="hover"
       variants={containerVariants}
@@ -81,5 +79,22 @@ export const Track = (props: TrackProps) => {
         </div>
       </LocalizedLink>
     </motion.div>
+  ) : (
+    <div
+      className={`${styles.container} + ${
+        props.className ? " " + props.className : ""
+      }`}
+    >
+      <span className={styles.number}>{props.number}.</span>
+      <div className={styles.content}>
+        <h3 className={styles.title}>{props.title}</h3>
+        <div className={styles.description}>
+          <span>
+            #<FormattedMessage {...({ id: props.type } as any)} />
+          </span>
+          <span>{focusPerformersText}</span>
+        </div>
+      </div>
+    </div>
   );
 };
