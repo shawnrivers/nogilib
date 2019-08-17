@@ -68,6 +68,8 @@ export const MemberCard = injectIntl(
       [highlightTextColor]
     );
 
+    // TODO: Kojiharu condition.
+
     return (
       <motion.div
         whileHover="hover"

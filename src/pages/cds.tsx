@@ -76,8 +76,6 @@ export default (props: RouteComponentProps<CdsData>) => {
     return "?page=singles";
   }, [props.location]);
 
-  console.log({ query, location: props.location });
-
   return props.data ? (
     <Cds
       query={query}

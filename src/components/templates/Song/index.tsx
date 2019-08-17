@@ -183,8 +183,6 @@ const Song = ({ data, location }: RouteComponentProps<SongData>) => {
     return "";
   }, []);
 
-  console.log({ backTo });
-
   if (data) {
     const song = data.songsJson;
 
@@ -307,17 +305,40 @@ const Song = ({ data, location }: RouteComponentProps<SongData>) => {
                       ) : (
                         <div className={styles.grid}>
                           {formation[0].map(memberName => {
-                            const member = membersObj[memberName];
-                            return (
-                              <MemberCard
-                                key={member.name}
-                                name={member.nameNotations}
-                                image={member.profileImage}
-                                isCenter={song.performers.center.includes(
-                                  member.name
-                                )}
-                              />
-                            );
+                            if (memberName !== "kojimaharuna") {
+                              const member = membersObj[memberName];
+                              return (
+                                <MemberCard
+                                  key={memberName}
+                                  name={member.nameNotations}
+                                  image={member.profileImage}
+                                  isCenter={song.performers.center.includes(
+                                    memberName
+                                  )}
+                                />
+                              );
+                            } else {
+                              return (
+                                <MemberCard
+                                  key={memberName}
+                                  name={{
+                                    lastName: "小嶋",
+                                    lastNameEn: "kojima",
+                                    firstName: "陽菜",
+                                    firstNameEn: "haruna",
+                                  }}
+                                  image={{
+                                    large:
+                                      "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/others/kojimaharuna_large.jpg",
+                                    small:
+                                      "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/others/kojimaharuna_small.jpg",
+                                  }}
+                                  isCenter={song.performers.center.includes(
+                                    memberName
+                                  )}
+                                />
+                              );
+                            }
                           })}
                         </div>
                       )}
