@@ -5,6 +5,15 @@
 .link {
   display: block;
   width: 60px;
+
+  button {
+    text-align: left;
+    width: 100%;
+  }
+
+  a {
+    display: block;
+  }
 }
 
 .back {
@@ -51,8 +60,7 @@
 }
 
 .artwork {
-  margin-right: 40px;
-  margin-top: 8px;
+  margin: 8px 40px 0 12px;
 
   img {
     @extend %elevation-4;
@@ -145,6 +153,7 @@
 .creatornames {
   font-size: $size-body;
   font-weight: $weight-bold;
+  line-height: 24px;
 }
 
 @media (min-width: 271px) and (max-width: 389px) {

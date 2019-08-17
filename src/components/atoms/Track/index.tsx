@@ -24,6 +24,10 @@ interface TrackProps {
     type: focusPerformersType;
   };
   locale: Language;
+  inPage: {
+    type: string;
+    number: string;
+  };
   className?: string;
 }
 
@@ -62,7 +66,9 @@ export const Track = (props: TrackProps) => {
         props.className ? " " + props.className : ""
       }`}
     >
-      <LocalizedLink to={`/songs/${props.songKey}`}>
+      <LocalizedLink
+        to={`/songs/${props.songKey}/?inType=${props.inPage.type}&inNumber=${props.inPage.number}`}
+      >
         <motion.span variants={textVariants} className={styles.number}>
           {props.number}.
         </motion.span>

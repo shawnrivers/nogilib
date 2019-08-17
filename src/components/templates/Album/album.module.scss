@@ -1,5 +1,14 @@
 @import "styles/colors.scss";
 
+.link {
+  display: block;
+  width: 60px;
+
+  a {
+    display: block;
+  }
+}
+
 .back {
   fill: $white;
   width: 32px;

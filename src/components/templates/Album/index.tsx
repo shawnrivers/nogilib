@@ -70,12 +70,12 @@ const navVariants = {
 
 const Album = ({ data }: AlbumData) => (
   <Layout>
-    <motion.nav initial="hidden" animate="visible" variants={navVariants}>
+    <motion.div whileHover={{ x: -7, scale: 1.5 }} className={styles.link}>
       <LocalizedLink to="/cds/?page=albums">
         <ArrowBackIcon className={styles.back} />
       </LocalizedLink>
-    </motion.nav>
-    <main>
+    </motion.div>
+    <div>
       {data ? (
         <Cd
           type="album"
@@ -88,7 +88,7 @@ const Album = ({ data }: AlbumData) => (
       ) : (
         <h1>Album Page</h1>
       )}
-    </main>
+    </div>
   </Layout>
 );
 
