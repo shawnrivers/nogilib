@@ -22,5 +22,13 @@
   "second-gen": "2期生",
   "third-gen": "3期生",
   "fourth-gen": "4期生",
-  "graduated": "卒業生"
+  "graduated": "卒業生",
+  "performers": "歌唱メンバー",
+  "creators": "クリエーター",
+  "single": "シングル",
+  "selected": "選抜",
+  "lyrics": "作詞",
+  "compose": "作曲",
+  "arrange": "編曲",
+  "direct": "MV"
 }

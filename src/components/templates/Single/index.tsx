@@ -1,5 +1,5 @@
 import * as React from "react";
-import { LocalizedLink } from "components/atoms/LocalizedLink";
+import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
 import { graphql } from "gatsby";
 import { Cd } from "components/organisms/Cd";
 import { Layout } from "components/atoms/Layout";

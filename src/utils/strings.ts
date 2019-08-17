@@ -1,4 +1,6 @@
-export const toCdNumber = (num: string) => {
+import { Language } from "utils/constants";
+
+export const toCdNumber = (num: string | number) => {
   const number = Number(num);
 
   if (number) {
@@ -18,4 +20,51 @@ export const toCdNumber = (num: string) => {
   }
 
   return "Under";
+};
+
+export const toNumberWithLocale = (
+  num: string,
+  language: string,
+  type?: "cd" | "row"
+) => {
+  let counter = {
+    ja: "",
+    zh: "",
+  };
+
+  switch (type) {
+    case "cd":
+      counter = {
+        ja: "枚",
+        zh: "张",
+      };
+      break;
+    case "row":
+      counter = {
+        ja: "列",
+        zh: "排",
+      };
+      break;
+    default:
+      counter = {
+        ja: "枚",
+        zh: "张",
+      };
+      break;
+  }
+
+  if (language === Language.En) {
+    return toCdNumber(num);
+  }
+
+  const number = Number(num);
+
+  if (number) {
+    if (language === Language.Ja) {
+      return num + counter + "目";
+    }
+    return "第" + num + counter;
+  }
+
+  return "under";
 };

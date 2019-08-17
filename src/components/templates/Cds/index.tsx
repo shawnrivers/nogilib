@@ -1,5 +1,5 @@
 import * as React from "react";
-import { LocalizedLink } from "components/atoms/LocalizedLink";
+import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
 import { parse } from "query-string";
 import { Artwork } from "components/atoms/Artwork";
 import { PageTab, TabItem } from "components/molecules/PageTab";

@@ -22,5 +22,13 @@
   "second-gen": "2nd. gen",
   "third-gen": "3rd. gen",
   "fourth-gen": "4th. gen",
-  "graduated": "graduated"
+  "graduated": "graduated",
+  "performers": "performers",
+  "creators": "creators",
+  "single": "single",
+  "selected": "selected",
+  "lyrics": "lyrics",
+  "compose": "compose",
+  "arrange": "arrange",
+  "direct": "MV"
 }

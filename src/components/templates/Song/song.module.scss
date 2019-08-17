@@ -1,4 +1,6 @@
 @import "styles/colors.scss";
+@import "styles/typography.scss";
+@import "styles/elevations.scss";
 
 .link {
   display: block;
@@ -9,4 +11,203 @@
   fill: $white;
   width: 32px;
   height: 32px;
+}
+
+.container {
+  margin-top: 12px;
+  color: $white;
+}
+
+.heading {
+  margin: 0 12px 40px;
+}
+
+.title {
+  font-size: $size-title;
+  font-weight: $weight-bold;
+  margin-bottom: 8px;
+}
+
+.tags {
+  font-size: $size-sub-heading-2;
+  font-weight: $weight-light;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+
+  span {
+    display: block;
+    margin-bottom: 4px;
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.artwork {
+  margin-right: 40px;
+  margin-top: 8px;
+
+  img {
+    @extend %elevation-4;
+    width: 256px;
+    height: 256px;
+    display: block;
+    border: 8px solid $white;
+    box-sizing: border-box;
+  }
+}
+
+.content {
+  width: 100%;
+  margin-bottom: 64px;
+
+  .section:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.subheading {
+  font-size: $size-sub-heading;
+  font-weight: $weight-bold;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.body {
+  font-size: $size-body;
+  font-weight: $weight-regular;
+}
+
+.caption {
+  font-size: $size-body;
+  font-weight: $weight-light;
+  text-transform: capitalize;
+}
+
+.formation {
+  margin-top: 24px;
+
+  .row:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.rowindex {
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+
+.grid {
+  display: grid;
+  justify-items: center;
+  align-items: flex-start;
+  grid-row-gap: 12px;
+  grid-column-gap: 12px;
+}
+
+.creatorscontainer {
+  margin-bottom: 20px;
+}
+
+.creators {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.creatorsitem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  max-width: 160px;
+
+  &:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+
+.creatorwork {
+  font-size: $size-caption;
+  font-weight: $weight-light;
+  line-height: 20px;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+.creatornames {
+  font-size: $size-body;
+  font-weight: $weight-bold;
+}
+
+@media (min-width: 271px) and (max-width: 389px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 390px) and (max-width: 507px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 508px) and (max-width: 694px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 695px) and (max-width: 827px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 828px) and (max-width: 945px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 946px) and (max-width: 1063px) {
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 1064px) {
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 695px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flexbox {
+    flex-direction: column;
+  }
+
+  .artwork {
+    margin: 24px 0 64px;
+
+    img {
+      max-width: 256px;
+      max-height: 256px;
+      width: 100%;
+      height: auto;
+      margin: auto;
+    }
+  }
 }

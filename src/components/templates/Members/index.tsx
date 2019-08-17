@@ -3,8 +3,6 @@ import styles from "./members.module.scss";
 import { JoinedGenerationType } from "types/responseTypes";
 import { PageTab, TabItem } from "components/molecules/PageTab";
 import { parse } from "query-string";
-import { injectIntl } from "react-intl";
-import { Language } from "utils/constants";
 import { MemberCard } from "components/atoms/MemberCard";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -58,7 +56,6 @@ interface MembersProps {
     fourth: MemberType[];
     graduated: MemberType[];
   };
-  intl: any;
 }
 
 const listVariants = {
@@ -84,7 +81,7 @@ const itemVariants = {
   hidden: { opacity: 0, y: 20 },
 };
 
-export const Members = injectIntl((props: MembersProps) => {
+export const Members = (props: MembersProps) => {
   const { page } = React.useMemo(() => parse(props.query), [props.query]);
 
   const pageMembers = React.useMemo(() => {
@@ -119,14 +116,16 @@ export const Members = injectIntl((props: MembersProps) => {
           className={styles.grid}
         >
           {pageMembers.map(({ name, profileImage, nameNotations }) => (
-            <motion.div key={name} variants={itemVariants}>
+            <motion.div
+              key={name}
+              variants={itemVariants}
+              className={styles.card}
+            >
               <MemberCard
                 image={profileImage}
-                name={
-                  props.intl.locale === Language.En
-                    ? nameNotations.lastNameEn + " " + nameNotations.firstNameEn
-                    : nameNotations.lastName + " " + nameNotations.firstName
-                }
+                name={nameNotations}
+                highlightBgColor="#e887a3"
+                highlightTextColor="#ffffff"
               />
             </motion.div>
           ))}
@@ -134,4 +133,4 @@ export const Members = injectIntl((props: MembersProps) => {
       </AnimatePresence>
     </div>
   );
-});
+};

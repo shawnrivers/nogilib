@@ -4,10 +4,10 @@ import { focusPerformersType, SongType } from "types/responseTypes";
 import { FormattedMessage } from "react-intl";
 import { Language } from "utils/constants";
 import { motion } from "framer-motion";
-import { LocalizedLink } from "components/atoms/LocalizedLink";
+import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
 
 const containerVariants = {
-  hover: { backgroundColor: "#595959", transition: { duration: 0.2 } },
+  hover: { backgroundColor: "#595959", transition: { duration: 0.3 } },
 };
 
 const textVariants = {

@@ -14,11 +14,17 @@
   background-color: $white;
 }
 
+.center {
+  background-color: $purple-1;
+  color: $white;
+}
+
 .image {
   display: block;
   width: 100%;
   height: auto;
   max-width: 160px;
+  min-width: 90px;
   transform-origin: center;
   object-fit: cover;
   margin-bottom: 8px;
@@ -31,6 +37,8 @@
   text-align: center;
   text-transform: capitalize;
   height: 100%;
+  max-height: 36px;
+  overflow: hidden;
   display: flex;
   align-items: center;
 }

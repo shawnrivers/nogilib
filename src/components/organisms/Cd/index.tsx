@@ -7,6 +7,7 @@ import { Artworks } from "components/molecules/Artworks";
 import { FormattedMessage, FormattedDate, injectIntl } from "react-intl";
 import { motion } from "framer-motion";
 import { Language } from "utils/constants";
+import { useScrollRestoration } from "utils/hooks";
 
 const containerVariants = {
   visible: {
@@ -82,6 +83,8 @@ interface CdProps {
 
 export const Cd = injectIntl(
   ({ type, title, number, artworks, songs, release, intl }: CdProps) => {
+    useScrollRestoration();
+
     return (
       <motion.div variants={containerVariants} className={styles.container}>
         <motion.div variants={headingVariants} className={styles.heading}>

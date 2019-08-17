@@ -20,6 +20,7 @@
   height: 256px;
   overflow-x: hidden;
   cursor: pointer;
+  border: 8px solid $white;
 }
 
 .image {
@@ -66,8 +67,11 @@
   }
 }
 
-@media (max-width: 356px) {
+@media (max-width: 380px) {
   .arrow {
-    width: 16px;
+    width: 20px;
+  }
+  .images {
+    margin: 0;
   }
 }

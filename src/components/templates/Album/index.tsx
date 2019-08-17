@@ -1,6 +1,6 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-import { LocalizedLink } from "components/atoms/LocalizedLink";
+import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
 import { Cd } from "components/organisms/Cd";
 import { Layout } from "components/atoms/Layout";
 import { ArrowBackIcon } from "components/atoms/icons/ArrowBackIcon";

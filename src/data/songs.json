@@ -3809,7 +3809,7 @@
       "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/B_small.jpg"
     },
     "musicVideo": "",
-    "type": "third generation",
+    "type": "coupling",
     "creators": {
       "lyrics": ["秋元康"],
       "compose": ["K-WONDER", "SAS3"],
@@ -3823,7 +3823,7 @@
       "unit": ""
     },
     "performersTag": {
-      "name": "third generation",
+      "name": "selected",
       "singleNumber": "18"
     },
     "formations": {

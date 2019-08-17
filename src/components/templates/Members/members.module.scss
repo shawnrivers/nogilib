@@ -16,6 +16,10 @@
   right: 0;
 }
 
+.card {
+  height: 100%;
+}
+
 @media (min-width: 208px) and (max-width: 379px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
