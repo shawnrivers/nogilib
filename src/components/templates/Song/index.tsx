@@ -159,6 +159,10 @@ interface SongData {
           large: string;
           small: string;
         };
+        singleImages: {
+          large: string;
+          small: string;
+        }[];
       }[];
     };
   };
@@ -194,10 +198,19 @@ const Song = ({ data, location }: RouteComponentProps<SongData>) => {
       [song.single, song.albums]
     );
 
-    const membersObj = React.useMemo(
-      () => arrayToObject(data.allMembersJson.nodes, "name"),
-      [data.allMembersJson.nodes]
-    );
+    const membersObj = React.useMemo(() => {
+      const singleNumber = Number(song.single.number);
+
+      let members = data.allMembersJson.nodes;
+
+      for (const member of members) {
+        if (song.single.number !== "") {
+          member.profileImage = member.singleImages[singleNumber - 1];
+        }
+      }
+
+      return arrayToObject(members, "name");
+    }, [data.allMembersJson.nodes, song.single.number]);
 
     const formation = React.useMemo(
       () =>
@@ -422,6 +435,10 @@ export const query = graphql`
           lastNameEn
         }
         profileImage {
+          large
+          small
+        }
+        singleImages {
           large
           small
         }
