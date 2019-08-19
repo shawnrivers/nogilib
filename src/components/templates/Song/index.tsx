@@ -4,17 +4,14 @@ import { Layout } from "components/atoms/Layout";
 import { ArrowBackIcon } from "components/atoms/icons/ArrowBackIcon";
 import { motion } from "framer-motion";
 import { graphql } from "gatsby";
-import { RouteComponentProps } from "@reach/router";
 import { SongType } from "types/responseTypes";
 import { toCdNumber } from "utils/strings";
-import { parse } from "query-string";
 import { FormattedMessage, injectIntl } from "react-intl";
 import { Language, KOJIHARU } from "utils/constants";
 import { LocalizedList } from "components/atoms/locales/LocalizedList";
 import { arrayToObject } from "utils/arrays";
 import { MemberCard } from "components/atoms/MemberCard";
 import { LocalizedNumber } from "components/atoms/locales/LocaleNumber";
-import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
 import { useScrollRestoration } from "utils/hooks";
 
 const containerVariants = {
@@ -188,22 +185,8 @@ interface SongData {
   };
 }
 
-const Song = ({ data, location }: RouteComponentProps<SongData>) => {
+const Song = ({ data }: SongData) => {
   useScrollRestoration();
-
-  const backTo = React.useMemo(() => {
-    if (location) {
-      const query = location.search;
-      const { inType, inNumber } = parse(query);
-
-      if (inType && inNumber) {
-        return `/${inType}/${inNumber}`;
-      }
-
-      return "";
-    }
-    return "";
-  }, []);
 
   if (data) {
     const song = data.songsJson;
@@ -246,19 +229,13 @@ const Song = ({ data, location }: RouteComponentProps<SongData>) => {
     return (
       <Layout>
         <motion.div whileHover={{ x: -7, scale: 1.5 }} className={styles.link}>
-          {backTo !== "" ? (
-            <LocalizedLink to={backTo}>
-              <ArrowBackIcon className={styles.back} />
-            </LocalizedLink>
-          ) : (
-            <button
-              onClick={() => {
-                window.history.back();
-              }}
-            >
-              <ArrowBackIcon className={styles.back} />
-            </button>
-          )}
+          <button
+            onClick={() => {
+              window.history.back();
+            }}
+          >
+            <ArrowBackIcon className={styles.back} />
+          </button>
         </motion.div>
         <div>
           {data ? (

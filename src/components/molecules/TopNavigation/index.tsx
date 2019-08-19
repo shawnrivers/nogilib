@@ -6,9 +6,11 @@ import { WindowLocation } from "@reach/router";
 import { Language } from "utils/constants";
 import locales from "i18n/locales";
 import { NavigationItem } from "components/atoms/NavigationItem";
+import { HomeIcon } from "components/atoms/icons/HomeIcon";
 import { OptionItem } from "components/atoms/OptionItem";
 import { AnimatePresence, motion } from "framer-motion";
 import { LanguageIcon } from "components/atoms/icons/LanguagesIcon";
+import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
 
 interface LanguageItemProps {
   type: "text" | "icon";
@@ -110,16 +112,34 @@ interface TopNavigationProps {
 }
 
 export const TopNavigation = ({ locale, location }: TopNavigationProps) => {
+  const shouldShowLanguagesButton = React.useMemo(() => {
+    const { pathname } = location;
+
+    return pathname.includes("/cds/") || pathname.includes("/allmembers");
+  }, [location.pathname]);
+
   return (
     <nav className={styles.container}>
       <div className={styles.navigation}>
-        <div className={styles.title}>Nogizaka Lib</div>
-        <LanguageItem
-          type="icon"
-          className={styles.icon}
-          locale={locale}
-          location={location}
-        />
+        <div className={styles.title}>
+          <LocalizedLink to="/cds/?page=singles">Nogizaka Lib</LocalizedLink>
+        </div>
+        {shouldShowLanguagesButton ? (
+          <LanguageItem
+            type="icon"
+            className={styles.icon}
+            locale={locale}
+            location={location}
+          />
+        ) : (
+          <NavigationItem
+            type="link"
+            to="/cds/?page=singles"
+            className={styles.home}
+          >
+            <HomeIcon />
+          </NavigationItem>
+        )}
         <div className={styles.items}>
           <NavigationItem
             type="link"
@@ -135,12 +155,14 @@ export const TopNavigation = ({ locale, location }: TopNavigationProps) => {
           >
             <FormattedMessage {...({ id: "members" } as any)} />
           </NavigationItem>
-          <LanguageItem
-            type="text"
-            className={styles.languages}
-            locale={locale}
-            location={location}
-          />
+          {shouldShowLanguagesButton ? (
+            <LanguageItem
+              type="text"
+              className={styles.languages}
+              locale={locale}
+              location={location}
+            />
+          ) : null}
         </div>
       </div>
     </nav>

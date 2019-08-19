@@ -125,10 +125,8 @@ interface MemberProps {
   };
 }
 
-const Member = ({ data, location }: RouteComponentProps<MemberProps>) => {
+const Member = ({ data }: MemberProps) => {
   useScrollRestoration();
-
-  console.log({ location });
 
   if (data) {
     const member = data.membersJson;

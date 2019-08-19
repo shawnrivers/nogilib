@@ -22,7 +22,11 @@ export const NavigationItem = ({
     return to ? (
       <LocalizedLink to={to} className={className ? className : undefined}>
         <motion.div
-          whileHover={{ backgroundColor: "rgba(89,89,89)", color: "#ffffff" }}
+          whileHover={{
+            backgroundColor: "rgba(89,89,89)",
+            color: "#ffffff",
+            fill: "#ffffff",
+          }}
           className={styles.container}
         >
           {children}
@@ -30,7 +34,11 @@ export const NavigationItem = ({
       </LocalizedLink>
     ) : (
       <motion.span
-        whileHover={{ backgroundColor: "rgba(89,89,89)", color: "#ffffff" }}
+        whileHover={{
+          backgroundColor: "rgba(89,89,89)",
+          color: "#ffffff",
+          fill: "#ffffff",
+        }}
         className={`${styles.container}${className ? " " + className : ""}`}
       >
         {children}
@@ -52,7 +60,11 @@ export const NavigationItem = ({
     </motion.button>
   ) : (
     <motion.span
-      whileHover={{ backgroundColor: "rgba(89,89,89)", color: "#ffffff" }}
+      whileHover={{
+        backgroundColor: "rgba(89,89,89)",
+        color: "#ffffff",
+        fill: "#ffffff",
+      }}
       className={`${styles.container}${className ? " " + className : ""}`}
     >
       {children}

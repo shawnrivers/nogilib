@@ -116,7 +116,6 @@ export const Cd = injectIntl(
                     type={song.type}
                     focusPerformers={song.focusPerformers}
                     locale={intl.locale as Language}
-                    inPage={{ type: type + "s", number }}
                     className={styles.track}
                   />
                 ))}

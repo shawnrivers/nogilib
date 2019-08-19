@@ -31,6 +31,11 @@
   font-weight: $weight-bold;
 }
 
+.home {
+  display: none;
+  fill: #595959;
+}
+
 .items {
   font-size: $size-body;
   font-weight: $weight-bold;
@@ -97,6 +102,10 @@
 
   .title {
     display: none;
+  }
+
+  .home {
+    display: block;
   }
 
   .languages {
