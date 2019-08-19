@@ -9,12 +9,13 @@ import { SongType } from "types/responseTypes";
 import { toCdNumber } from "utils/strings";
 import { parse } from "query-string";
 import { FormattedMessage, injectIntl } from "react-intl";
-import { Language } from "utils/constants";
+import { Language, KOJIHARU } from "utils/constants";
 import { LocalizedList } from "components/atoms/locales/LocalizedList";
 import { arrayToObject } from "utils/arrays";
 import { MemberCard } from "components/atoms/MemberCard";
 import { LocalizedNumber } from "components/atoms/locales/LocaleNumber";
 import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
+import { useScrollRestoration } from "utils/hooks";
 
 const containerVariants = {
   visible: {
@@ -111,6 +112,25 @@ const PerformersTag = injectIntl(
   }
 );
 
+const KojiharuCard = ({ isCenter }: { isCenter: boolean }) => (
+  <MemberCard
+    nameKey={KOJIHARU}
+    name={{
+      lastName: "小嶋",
+      lastNameEn: "kojima",
+      firstName: "陽菜",
+      firstNameEn: "haruna",
+    }}
+    image={{
+      large:
+        "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/others/kojimaharuna_large.jpg",
+      small:
+        "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/others/kojimaharuna_small.jpg",
+    }}
+    isCenter={isCenter}
+  />
+);
+
 interface SongData {
   data: {
     songsJson: {
@@ -169,6 +189,8 @@ interface SongData {
 }
 
 const Song = ({ data, location }: RouteComponentProps<SongData>) => {
+  useScrollRestoration();
+
   const backTo = React.useMemo(() => {
     if (location) {
       const query = location.search;
@@ -287,17 +309,29 @@ const Song = ({ data, location }: RouteComponentProps<SongData>) => {
                             </h4>
                             <div className={styles.grid}>
                               {row.map(memberName => {
-                                const member = membersObj[memberName];
-                                return (
-                                  <MemberCard
-                                    key={member.name}
-                                    name={member.nameNotations}
-                                    image={member.profileImage}
-                                    isCenter={song.performers.center.includes(
-                                      member.name
-                                    )}
-                                  />
-                                );
+                                if (memberName !== KOJIHARU) {
+                                  const member = membersObj[memberName];
+                                  return (
+                                    <MemberCard
+                                      key={member.name}
+                                      nameKey={memberName}
+                                      name={member.nameNotations}
+                                      image={member.profileImage}
+                                      isCenter={song.performers.center.includes(
+                                        member.name
+                                      )}
+                                    />
+                                  );
+                                } else {
+                                  return (
+                                    <KojiharuCard
+                                      key={memberName}
+                                      isCenter={song.performers.center.includes(
+                                        memberName
+                                      )}
+                                    />
+                                  );
+                                }
                               })}
                             </div>
                           </div>
@@ -305,11 +339,12 @@ const Song = ({ data, location }: RouteComponentProps<SongData>) => {
                       ) : (
                         <div className={styles.grid}>
                           {formation[0].map(memberName => {
-                            if (memberName !== "kojimaharuna") {
+                            if (memberName !== KOJIHARU) {
                               const member = membersObj[memberName];
                               return (
                                 <MemberCard
                                   key={memberName}
+                                  nameKey={memberName}
                                   name={member.nameNotations}
                                   image={member.profileImage}
                                   isCenter={song.performers.center.includes(
@@ -319,20 +354,8 @@ const Song = ({ data, location }: RouteComponentProps<SongData>) => {
                               );
                             } else {
                               return (
-                                <MemberCard
+                                <KojiharuCard
                                   key={memberName}
-                                  name={{
-                                    lastName: "小嶋",
-                                    lastNameEn: "kojima",
-                                    firstName: "陽菜",
-                                    firstNameEn: "haruna",
-                                  }}
-                                  image={{
-                                    large:
-                                      "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/others/kojimaharuna_large.jpg",
-                                    small:
-                                      "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/others/kojimaharuna_small.jpg",
-                                  }}
                                   isCenter={song.performers.center.includes(
                                     memberName
                                   )}
@@ -409,8 +432,6 @@ const Song = ({ data, location }: RouteComponentProps<SongData>) => {
   return null;
 };
 
-export default Song;
-
 export const query = graphql`
   query($key: String!) {
     songsJson(key: { eq: $key }) {
@@ -467,3 +488,5 @@ export const query = graphql`
     }
   }
 `;
+
+export default Song;

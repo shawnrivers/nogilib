@@ -2,6 +2,10 @@
 @import "styles/typography.scss";
 @import "styles/elevations.scss";
 
+.link {
+  height: 100%;
+}
+
 .container {
   @extend %elevation-1-normal;
   position: relative;

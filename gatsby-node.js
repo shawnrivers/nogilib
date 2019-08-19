@@ -32,6 +32,15 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       value: slug + node.key,
     });
   }
+
+  if (node.internal.type === "MembersJson") {
+    const slug = createFilePath({ node, getNode, basePath: "pages" });
+    createNodeField({
+      node,
+      name: "slug",
+      value: slug + node.name,
+    });
+  }
 };
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
@@ -81,7 +90,27 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     }
   `);
 
-  if (albumsResult.errors || singlesResult.errors || songsResult.errors) {
+  const membersResult = await graphql(`
+    {
+      allMembersJson {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            name
+          }
+        }
+      }
+    }
+  `);
+
+  if (
+    albumsResult.errors ||
+    singlesResult.errors ||
+    songsResult.errors ||
+    membersResult.errors
+  ) {
     reporter.panicOnBuild(`Error while running GraphQL query.`);
     return;
   }
@@ -141,6 +170,23 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         component: path.resolve("./src/components/templates/Song/index.tsx"),
         context: {
           key: node.key,
+          locale: lang,
+        },
+      });
+    }
+  });
+
+  membersResult.data.allMembersJson.edges.forEach(({ node }) => {
+    for (const lang of localesKeys) {
+      const localizedPath = locales[lang].default
+        ? node.fields.slug
+        : locales[lang].path + node.fields.slug;
+
+      createPage({
+        path: localizedPath,
+        component: path.resolve("./src/components/templates/Member/index.tsx"),
+        context: {
+          name: node.name,
           locale: lang,
         },
       });

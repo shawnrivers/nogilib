@@ -20,13 +20,24 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["渡邉俊彦"],
-      "arrange": ["渡邉俊彦", "早川博隆"],
-      "direct": ["関和亮"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "渡邉俊彦"
+      ],
+      "arrange": [
+        "渡邉俊彦",
+        "早川博隆"
+      ],
+      "direct": [
+        "関和亮"
+      ]
     },
     "performers": {
-      "center": ["nishinonanase"],
+      "center": [
+        "nishinonanase"
+      ],
       "fukujin": "row-1-2",
       "solo": "",
       "unit": ""
@@ -87,13 +98,23 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["ナスカ"],
-      "arrange": ["野中\"まさ\"雄一"],
-      "direct": ["中村太洸"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "ナスカ"
+      ],
+      "arrange": [
+        "野中\"まさ\"雄一"
+      ],
+      "direct": [
+        "中村太洸"
+      ]
     },
     "performers": {
-      "center": ["saitouasuka"],
+      "center": [
+        "saitouasuka"
+      ],
       "fukujin": "row-1-2",
       "solo": "",
       "unit": ""
@@ -154,13 +175,23 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["シライシ紗トリ"],
-      "arrange": ["シライシ紗トリ"],
-      "direct": ["池田一真"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "シライシ紗トリ"
+      ],
+      "arrange": [
+        "シライシ紗トリ"
+      ],
+      "direct": [
+        "池田一真"
+      ]
     },
     "performers": {
-      "center": ["shiraishimai"],
+      "center": [
+        "shiraishimai"
+      ],
       "fukujin": "row-1-2",
       "solo": "",
       "unit": ""
@@ -221,13 +252,26 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Akira Sunset", "京田誠一"],
-      "arrange": ["Akira Sunset", "京田誠一"],
-      "direct": ["高橋栄樹"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "京田誠一"
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "京田誠一"
+      ],
+      "direct": [
+        "高橋栄樹"
+      ]
     },
     "performers": {
-      "center": ["nishinonanase", "saitouasuka"],
+      "center": [
+        "nishinonanase",
+        "saitouasuka"
+      ],
       "fukujin": "row-1-2",
       "solo": "",
       "unit": ""
@@ -237,7 +281,12 @@
       "singleNumber": "19"
     },
     "formations": {
-      "firstRow": ["horimiona", "nishinonanase", "saitouasuka", "shiraishimai"],
+      "firstRow": [
+        "horimiona",
+        "nishinonanase",
+        "saitouasuka",
+        "shiraishimai"
+      ],
       "secondRow": [
         "wakatsukiyumi",
         "inouesayuri",
@@ -281,13 +330,24 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["谷村庸平"],
-      "arrange": ["谷村庸平"],
-      "direct": ["山岸聖太"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "谷村庸平"
+      ],
+      "arrange": [
+        "谷村庸平"
+      ],
+      "direct": [
+        "山岸聖太"
+      ]
     },
     "performers": {
-      "center": ["oozonomomoko", "yodayuuki"],
+      "center": [
+        "oozonomomoko",
+        "yodayuuki"
+      ],
       "fukujin": "row-1-2",
       "solo": "",
       "unit": ""
@@ -345,13 +405,24 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["すみだしんや"],
-      "arrange": ["APAZZI"],
-      "direct": ["丸山健志"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "すみだしんや"
+      ],
+      "arrange": [
+        "APAZZI"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
     },
     "performers": {
-      "center": ["nishinonanase", "shiraishimai"],
+      "center": [
+        "nishinonanase",
+        "shiraishimai"
+      ],
       "fukujin": "row-1-2",
       "solo": "",
       "unit": ""
@@ -412,13 +483,23 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["杉山勝彦"],
-      "arrange": ["若田部誠"],
-      "direct": ["柳沢翔"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "若田部誠"
+      ],
+      "direct": [
+        "柳沢翔"
+      ]
     },
     "performers": {
-      "center": ["hashimotonanami"],
+      "center": [
+        "hashimotonanami"
+      ],
       "fukujin": "row-1-2",
       "solo": "",
       "unit": ""
@@ -477,13 +558,23 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["福森秀敏"],
-      "arrange": ["APAZZI"],
-      "direct": ["丸山健志"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "福森秀敏"
+      ],
+      "arrange": [
+        "APAZZI"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
     },
     "performers": {
-      "center": ["saitouasuka"],
+      "center": [
+        "saitouasuka"
+      ],
       "fukujin": "row-1-2",
       "solo": "",
       "unit": ""
@@ -534,13 +625,25 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Akira Sunset", "APAZZI"],
-      "arrange": ["Akira Sunset", "APAZZI"],
-      "direct": ["山戸結希"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "APAZZI"
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "APAZZI"
+      ],
+      "direct": [
+        "山戸結希"
+      ]
     },
     "performers": {
-      "center": ["fukagawamai"],
+      "center": [
+        "fukagawamai"
+      ],
       "fukujin": "row-1-2",
       "solo": "",
       "unit": ""
@@ -597,13 +700,26 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Akira Sunset", "APAZZI"],
-      "arrange": ["Akira Sunset", "APAZZI"],
-      "direct": ["萩原健太郎"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "APAZZI"
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "APAZZI"
+      ],
+      "direct": [
+        "萩原健太郎"
+      ]
     },
     "performers": {
-      "center": ["shiraishimai", "nishinonanase"],
+      "center": [
+        "shiraishimai",
+        "nishinonanase"
+      ],
       "fukujin": "row-1-2",
       "solo": "",
       "unit": ""
@@ -613,7 +729,12 @@
       "singleNumber": "13"
     },
     "formations": {
-      "firstRow": ["etoumisa", "nishinonanase", "shiraishimai", "fukagawamai"],
+      "firstRow": [
+        "etoumisa",
+        "nishinonanase",
+        "shiraishimai",
+        "fukagawamai"
+      ],
       "secondRow": [
         "saitouasuka",
         "takayamakazumi",
@@ -654,13 +775,23 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["黒須克彦"],
-      "arrange": ["長田直之"],
-      "direct": ["三石直和"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "黒須克彦"
+      ],
+      "arrange": [
+        "長田直之"
+      ],
+      "direct": [
+        "三石直和"
+      ]
     },
     "performers": {
-      "center": ["ikomarina"],
+      "center": [
+        "ikomarina"
+      ],
       "fukujin": "row-1-2",
       "solo": "",
       "unit": ""
@@ -718,13 +849,23 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Hiroki Sagawa"],
-      "arrange": ["Hiroki Sagawa"],
-      "direct": ["井上強"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Hiroki Sagawa"
+      ],
+      "arrange": [
+        "Hiroki Sagawa"
+      ],
+      "direct": [
+        "井上強"
+      ]
     },
     "performers": {
-      "center": ["nishinonanase"],
+      "center": [
+        "nishinonanase"
+      ],
       "fukujin": "row-1-2",
       "solo": "",
       "unit": ""
@@ -782,13 +923,23 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["川浦正大"],
-      "arrange": ["百石元"],
-      "direct": ["内田けんじ"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "川浦正大"
+      ],
+      "arrange": [
+        "百石元"
+      ],
+      "direct": [
+        "内田けんじ"
+      ]
     },
     "performers": {
-      "center": ["ikutaerika"],
+      "center": [
+        "ikutaerika"
+      ],
       "fukujin": "row-1-2",
       "solo": "",
       "unit": ""
@@ -844,13 +995,23 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["井上トモノリ"],
-      "arrange": ["橋本幸太"],
-      "direct": ["丸山健志"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "井上トモノリ"
+      ],
+      "arrange": [
+        "橋本幸太"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
     },
     "performers": {
-      "center": ["nishinonanase"],
+      "center": [
+        "nishinonanase"
+      ],
       "fukujin": "row-1-2",
       "solo": "",
       "unit": ""
@@ -907,13 +1068,23 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Akira Sunset"],
-      "arrange": ["湯浅篤"],
-      "direct": ["柳沢翔"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset"
+      ],
+      "arrange": [
+        "湯浅篤"
+      ],
+      "direct": [
+        "柳沢翔"
+      ]
     },
     "performers": {
-      "center": ["nishinonanase"],
+      "center": [
+        "nishinonanase"
+      ],
       "fukujin": "row-1",
       "solo": "",
       "unit": ""
@@ -969,13 +1140,23 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["サイトウヨシヒロ"],
-      "arrange": ["若田部誠"],
-      "direct": ["江湖広二"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "サイトウヨシヒロ"
+      ],
+      "arrange": [
+        "若田部誠"
+      ],
+      "direct": [
+        "江湖広二"
+      ]
     },
     "performers": {
-      "center": ["horimiona"],
+      "center": [
+        "horimiona"
+      ],
       "fukujin": "row-1-2",
       "solo": "",
       "unit": ""
@@ -992,7 +1173,12 @@
         "hashimotonanami",
         "matsumurasayuri"
       ],
-      "secondRow": ["sakuraireika", "ikutaerika", "ikomarina", "wakatsukiyumi"],
+      "secondRow": [
+        "sakuraireika",
+        "ikutaerika",
+        "ikomarina",
+        "wakatsukiyumi"
+      ],
       "thirdRow": [
         "itoumarika",
         "etoumisa",
@@ -1027,13 +1213,23 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["後藤康二"],
-      "arrange": ["後藤康二"],
-      "direct": ["柳沢翔"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "後藤康二"
+      ],
+      "arrange": [
+        "後藤康二"
+      ],
+      "direct": [
+        "柳沢翔"
+      ]
     },
     "performers": {
-      "center": ["shiraishimai"],
+      "center": [
+        "shiraishimai"
+      ],
       "fukujin": "row-1-2",
       "solo": "",
       "unit": ""
@@ -1043,7 +1239,11 @@
       "singleNumber": "6"
     },
     "formations": {
-      "firstRow": ["matsumurasayuri", "shiraishimai", "hashimotonanami"],
+      "firstRow": [
+        "matsumurasayuri",
+        "shiraishimai",
+        "hashimotonanami"
+      ],
       "secondRow": [
         "sakuraireika",
         "ikutaerika",
@@ -1085,13 +1285,24 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["杉山勝彦"],
-      "arrange": ["杉山勝彦", "有木竜郎"],
-      "direct": ["山下敦弘"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "杉山勝彦",
+        "有木竜郎"
+      ],
+      "direct": [
+        "山下敦弘"
+      ]
     },
     "performers": {
-      "center": ["ikomarina"],
+      "center": [
+        "ikomarina"
+      ],
       "fukujin": "row-1-2",
       "solo": "",
       "unit": ""
@@ -1101,7 +1312,11 @@
       "singleNumber": "5"
     },
     "formations": {
-      "firstRow": ["ikutaerika", "ikomarina", "hoshinominami"],
+      "firstRow": [
+        "ikutaerika",
+        "ikomarina",
+        "hoshinominami"
+      ],
       "secondRow": [
         "sakuraireika",
         "hashimotonanami",
@@ -1143,13 +1358,23 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["杉山勝彦"],
-      "arrange": ["百石元"],
-      "direct": ["池田一真"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "百石元"
+      ],
+      "direct": [
+        "池田一真"
+      ]
     },
     "performers": {
-      "center": ["ikomarina"],
+      "center": [
+        "ikomarina"
+      ],
       "fukujin": "row-1-2",
       "solo": "",
       "unit": ""
@@ -1159,7 +1384,11 @@
       "singleNumber": "4"
     },
     "formations": {
-      "firstRow": ["ikutaerika", "ikomarina", "hoshinominami"],
+      "firstRow": [
+        "ikutaerika",
+        "ikomarina",
+        "hoshinominami"
+      ],
       "secondRow": [
         "shiraishimai",
         "hashimotonanami",
@@ -1201,13 +1430,26 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Shusui", "伊藤涼", "木村篤史", "ヒロイズム"],
-      "arrange": ["湯浅篤"],
-      "direct": ["中島哲也"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Shusui",
+        "伊藤涼",
+        "木村篤史",
+        "ヒロイズム"
+      ],
+      "arrange": [
+        "湯浅篤"
+      ],
+      "direct": [
+        "中島哲也"
+      ]
     },
     "performers": {
-      "center": ["ikomarina"],
+      "center": [
+        "ikomarina"
+      ],
       "fukujin": [
         "ikutaerika",
         "ikomarina",
@@ -1225,7 +1467,12 @@
       "singleNumber": "3"
     },
     "formations": {
-      "firstRow": ["ikutaerika", "ikomarina", "hoshinominami", "sakuraireika"],
+      "firstRow": [
+        "ikutaerika",
+        "ikomarina",
+        "hoshinominami",
+        "sakuraireika"
+      ],
       "secondRow": [
         "nakadakana",
         "hashimotonanami",
@@ -1266,13 +1513,23 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["小田切大"],
-      "arrange": ["TATOO"],
-      "direct": ["高橋栄樹"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "小田切大"
+      ],
+      "arrange": [
+        "TATOO"
+      ],
+      "direct": [
+        "高橋栄樹"
+      ]
     },
     "performers": {
-      "center": ["ikomarina"],
+      "center": [
+        "ikomarina"
+      ],
       "fukujin": "row-1-2",
       "solo": "",
       "unit": ""
@@ -1282,7 +1539,11 @@
       "singleNumber": "2"
     },
     "formations": {
-      "firstRow": ["sakuraireika", "ikomarina", "nakadakana"],
+      "firstRow": [
+        "sakuraireika",
+        "ikomarina",
+        "nakadakana"
+      ],
       "secondRow": [
         "hashimotonanami",
         "matsumurasayuri",
@@ -1324,13 +1585,23 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["黒須克彦"],
-      "arrange": ["湯浅篤"],
-      "direct": ["操上和美"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "黒須克彦"
+      ],
+      "arrange": [
+        "湯浅篤"
+      ],
+      "direct": [
+        "操上和美"
+      ]
     },
     "performers": {
-      "center": ["ikomarina"],
+      "center": [
+        "ikomarina"
+      ],
       "fukujin": "row-1-2",
       "solo": "",
       "unit": ""
@@ -1340,7 +1611,11 @@
       "singleNumber": "1"
     },
     "formations": {
-      "firstRow": ["ikutaerika", "ikomarina", "hoshinominami"],
+      "firstRow": [
+        "ikutaerika",
+        "ikomarina",
+        "hoshinominami"
+      ],
       "secondRow": [
         "hashimotonanami",
         "matsumurasayuri",
@@ -1382,13 +1657,25 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Akira Sunset", "野口大志"],
-      "arrange": ["Akira Sunset", "野口大志"],
-      "direct": ["今泉力哉"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "野口大志"
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "野口大志"
+      ],
+      "direct": [
+        "今泉力哉"
+      ]
     },
     "performers": {
-      "center": ["kitanohinako"],
+      "center": [
+        "kitanohinako"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -1446,13 +1733,23 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Hiroki"],
-      "arrange": ["Yasutaka.Ishio"],
-      "direct": ["月田茂"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Hiroki"
+      ],
+      "arrange": [
+        "Yasutaka.Ishio"
+      ],
+      "direct": [
+        "月田茂"
+      ]
     },
     "performers": {
-      "center": ["nakadakana"],
+      "center": [
+        "nakadakana"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -1462,7 +1759,11 @@
       "singleNumber": "21"
     },
     "formations": {
-      "firstRow": ["higuchihina", "nakadakana", "itouriria"],
+      "firstRow": [
+        "higuchihina",
+        "nakadakana",
+        "itouriria"
+      ],
       "secondRow": [
         "yamazakirena",
         "sakaguchitamami",
@@ -1506,13 +1807,23 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["古川貴浩"],
-      "arrange": ["古川貴浩"],
-      "direct": ["横堀光範"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "古川貴浩"
+      ],
+      "arrange": [
+        "古川貴浩"
+      ],
+      "direct": [
+        "横堀光範"
+      ]
     },
     "performers": {
-      "center": ["suzukiayane"],
+      "center": [
+        "suzukiayane"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -1577,13 +1888,24 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["藤田卓也"],
-      "arrange": ["藤田卓也"],
-      "direct": ["林希", "古屋蔵人"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "藤田卓也"
+      ],
+      "arrange": [
+        "藤田卓也"
+      ],
+      "direct": [
+        "林希",
+        "古屋蔵人"
+      ]
     },
     "performers": {
-      "center": ["higuchihina"],
+      "center": [
+        "higuchihina"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -1593,7 +1915,11 @@
       "singleNumber": "19"
     },
     "formations": {
-      "firstRow": ["watanabemiria", "higuchihina", "teradaranze"],
+      "firstRow": [
+        "watanabemiria",
+        "higuchihina",
+        "teradaranze"
+      ],
       "secondRow": [
         "noujouami",
         "suzukiayane",
@@ -1637,13 +1963,24 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["白土亨"],
-      "arrange": ["遠藤ナオキ"],
-      "direct": ["金森孝宏"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "白土亨"
+      ],
+      "arrange": [
+        "遠藤ナオキ"
+      ],
+      "direct": [
+        "金森孝宏"
+      ]
     },
     "performers": {
-      "center": ["nakamotohimeka", "kitanohinako"],
+      "center": [
+        "nakamotohimeka",
+        "kitanohinako"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -1705,13 +2042,25 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["泉佳伸", "三好翔太"],
-      "arrange": ["早川博隆", "三好翔太"],
-      "direct": ["多田卓也"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "泉佳伸",
+        "三好翔太"
+      ],
+      "arrange": [
+        "早川博隆",
+        "三好翔太"
+      ],
+      "direct": [
+        "多田卓也"
+      ]
     },
     "performers": {
-      "center": ["watanabemiria"],
+      "center": [
+        "watanabemiria"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -1721,8 +2070,17 @@
       "singleNumber": "17"
     },
     "formations": {
-      "firstRow": ["yamazakirena", "watanabemiria", "suzukiayane"],
-      "secondRow": ["saitouchiharu", "itoukarin", "noujouami", "sagaraiori"],
+      "firstRow": [
+        "yamazakirena",
+        "watanabemiria",
+        "suzukiayane"
+      ],
+      "secondRow": [
+        "saitouchiharu",
+        "itoukarin",
+        "noujouami",
+        "sagaraiori"
+      ],
       "thirdRow": [
         "kawagohina",
         "sasakikotoko",
@@ -1758,13 +2116,23 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Hiro Hoashi"],
-      "arrange": ["Hiro Hoashi"],
-      "direct": ["伊藤衆人"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Hiro Hoashi"
+      ],
+      "arrange": [
+        "Hiro Hoashi"
+      ],
+      "direct": [
+        "伊藤衆人"
+      ]
     },
     "performers": {
-      "center": ["teradaranze"],
+      "center": [
+        "teradaranze"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -1824,13 +2192,23 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["ツキダタダシ"],
-      "arrange": ["ツキダタダシ"],
-      "direct": ["山岸聖太"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "ツキダタダシ"
+      ],
+      "arrange": [
+        "ツキダタダシ"
+      ],
+      "direct": [
+        "山岸聖太"
+      ]
     },
     "performers": {
-      "center": ["higuchihina"],
+      "center": [
+        "higuchihina"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -1893,13 +2271,23 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["福田貴史"],
-      "arrange": ["福田貴史"],
-      "direct": ["池田千尋"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "福田貴史"
+      ],
+      "arrange": [
+        "福田貴史"
+      ],
+      "direct": [
+        "池田千尋"
+      ]
     },
     "performers": {
-      "center": ["nakamotohimeka"],
+      "center": [
+        "nakamotohimeka"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -1962,13 +2350,24 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["丸山真由子"],
-      "arrange": ["丸山真由子"],
-      "direct": ["井上強"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "丸山真由子"
+      ],
+      "arrange": [
+        "丸山真由子"
+      ],
+      "direct": [
+        "井上強"
+      ]
     },
     "performers": {
-      "center": ["horimiona", "nakamotohimeka"],
+      "center": [
+        "horimiona",
+        "nakamotohimeka"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -2033,13 +2432,25 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Akira Sunset", "ha-j"],
-      "arrange": ["Akira Sunset", "ha-j"],
-      "direct": ["山岸聖太"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "ha-j"
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "ha-j"
+      ],
+      "direct": [
+        "山岸聖太"
+      ]
     },
     "performers": {
-      "center": ["horimiona"],
+      "center": [
+        "horimiona"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -2101,13 +2512,25 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Akira Sunset", "ha-j"],
-      "arrange": ["Akira Sunset", "ha-j"],
-      "direct": ["山田篤宏"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "ha-j"
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "ha-j"
+      ],
+      "direct": [
+        "山田篤宏"
+      ]
     },
     "performers": {
-      "center": ["nakamotohimeka"],
+      "center": [
+        "nakamotohimeka"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -2117,8 +2540,17 @@
       "singleNumber": "11"
     },
     "formations": {
-      "firstRow": ["saitouyuuri", "nakamotohimeka", "inouesayuri"],
-      "secondRow": ["noujouami", "nagashimaseira", "nakadakana", "shinuchimai"],
+      "firstRow": [
+        "saitouyuuri",
+        "nakamotohimeka",
+        "inouesayuri"
+      ],
+      "secondRow": [
+        "noujouami",
+        "nagashimaseira",
+        "nakadakana",
+        "shinuchimai"
+      ],
       "thirdRow": [
         "kawamuramahiro",
         "kitanohinako",
@@ -2156,13 +2588,23 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["三輪智也"],
-      "arrange": ["京田誠一"],
-      "direct": ["湯浅弘章"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "三輪智也"
+      ],
+      "arrange": [
+        "京田誠一"
+      ],
+      "direct": [
+        "湯浅弘章"
+      ]
     },
     "performers": {
-      "center": ["inouesayuri"],
+      "center": [
+        "inouesayuri"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -2172,7 +2614,11 @@
       "singleNumber": "10"
     },
     "formations": {
-      "firstRow": ["saitouasuka", "inouesayuri", "itoumarika"],
+      "firstRow": [
+        "saitouasuka",
+        "inouesayuri",
+        "itoumarika"
+      ],
       "secondRow": [
         "nagashimaseira",
         "nakamotohimeka",
@@ -2215,13 +2661,23 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["長谷川湊"],
-      "arrange": ["Carlos K."],
-      "direct": ["近藤大介"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "長谷川湊"
+      ],
+      "arrange": [
+        "Carlos K."
+      ],
+      "direct": [
+        "近藤大介"
+      ]
     },
     "performers": {
-      "center": ["itoumarika"],
+      "center": [
+        "itoumarika"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -2277,13 +2733,23 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["田中俊亮"],
-      "arrange": ["鈴木裕明"],
-      "direct": ["久保茂昭"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "田中俊亮"
+      ],
+      "arrange": [
+        "鈴木裕明"
+      ],
+      "direct": [
+        "久保茂昭"
+      ]
     },
     "performers": {
-      "center": ["itoumarika"],
+      "center": [
+        "itoumarika"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -2340,13 +2806,23 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["古川貴浩"],
-      "arrange": ["古川貴浩"],
-      "direct": ["田所貴司"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "古川貴浩"
+      ],
+      "arrange": [
+        "古川貴浩"
+      ],
+      "direct": [
+        "田所貴司"
+      ]
     },
     "performers": {
-      "center": ["hoshinominami"],
+      "center": [
+        "hoshinominami"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -2356,7 +2832,11 @@
       "singleNumber": "7"
     },
     "formations": {
-      "firstRow": ["inouesayuri", "hoshinominami", "saitouyuuri"],
+      "firstRow": [
+        "inouesayuri",
+        "hoshinominami",
+        "saitouyuuri"
+      ],
       "secondRow": [
         "noujouami",
         "higuchihina",
@@ -2395,13 +2875,23 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["角野寿和"],
-      "arrange": ["野村陽一郎"],
-      "direct": ["池田一真"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "角野寿和"
+      ],
+      "arrange": [
+        "野村陽一郎"
+      ],
+      "direct": [
+        "池田一真"
+      ]
     },
     "performers": {
-      "center": ["saitouasuka"],
+      "center": [
+        "saitouasuka"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -2411,9 +2901,22 @@
       "singleNumber": "6"
     },
     "formations": {
-      "firstRow": ["higuchihina", "saitouasuka", "nakamotohimeka"],
-      "secondRow": ["noujouami", "etoumisa", "kawamuramahiro"],
-      "thirdRow": ["itounene", "nagashimaseira", "saitouchiharu", "ichikirena"],
+      "firstRow": [
+        "higuchihina",
+        "saitouasuka",
+        "nakamotohimeka"
+      ],
+      "secondRow": [
+        "noujouami",
+        "etoumisa",
+        "kawamuramahiro"
+      ],
+      "thirdRow": [
+        "itounene",
+        "nagashimaseira",
+        "saitouchiharu",
+        "ichikirena"
+      ],
       "fourthRow": [
         "yamatorina",
         "kawagohina",
@@ -2449,13 +2952,23 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["網本ナオノブ"],
-      "arrange": ["湯浅篤"],
-      "direct": ["山田篤宏"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "網本ナオノブ"
+      ],
+      "arrange": [
+        "湯浅篤"
+      ],
+      "direct": [
+        "山田篤宏"
+      ]
     },
     "performers": {
-      "center": ["saitouyuuri"],
+      "center": [
+        "saitouyuuri"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -2465,8 +2978,17 @@
       "singleNumber": "5"
     },
     "formations": {
-      "firstRow": ["itoumarika", "saitouyuuri", "saitouasuka"],
-      "secondRow": ["kawamuramahiro", "etoumisa", "noujouami", "ichikirena"],
+      "firstRow": [
+        "itoumarika",
+        "saitouyuuri",
+        "saitouasuka"
+      ],
+      "secondRow": [
+        "kawamuramahiro",
+        "etoumisa",
+        "noujouami",
+        "ichikirena"
+      ],
       "thirdRow": [
         "yamatorina",
         "wadamaaya",
@@ -2503,13 +3025,23 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["フジノタカフミ"],
-      "arrange": ["湯浅篤"],
-      "direct": ["柿本ケンサク"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "フジノタカフミ"
+      ],
+      "arrange": [
+        "湯浅篤"
+      ],
+      "direct": [
+        "柿本ケンサク"
+      ]
     },
     "performers": {
-      "center": ["nakadakana"],
+      "center": [
+        "nakadakana"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -2519,8 +3051,17 @@
       "singleNumber": "4"
     },
     "formations": {
-      "firstRow": ["saitouyuuri", "nakadakana", "etoumisa"],
-      "secondRow": ["itoumarika", "kawagohina", "higuchihina", "itounene"],
+      "firstRow": [
+        "saitouyuuri",
+        "nakadakana",
+        "etoumisa"
+      ],
+      "secondRow": [
+        "itoumarika",
+        "kawagohina",
+        "higuchihina",
+        "itounene"
+      ],
       "thirdRow": [
         "kawamuramahiro",
         "nakamotohimeka",
@@ -2562,13 +3103,23 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["内田智之"],
-      "arrange": ["TATOO"],
-      "direct": ["関和亮"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "内田智之"
+      ],
+      "arrange": [
+        "TATOO"
+      ],
+      "direct": [
+        "関和亮"
+      ]
     },
     "performers": {
-      "center": ["itounene"],
+      "center": [
+        "itounene"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -2578,8 +3129,16 @@
       "singleNumber": "3"
     },
     "formations": {
-      "firstRow": ["higuchihina", "itounene", "saitouasuka"],
-      "secondRow": ["etoumisa", "noujouami", "kawagohina"],
+      "firstRow": [
+        "higuchihina",
+        "itounene",
+        "saitouasuka"
+      ],
+      "secondRow": [
+        "etoumisa",
+        "noujouami",
+        "kawagohina"
+      ],
       "thirdRow": [
         "kawamuramahiro",
         "kashiwayukina",
@@ -2618,13 +3177,23 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Akira Sunset"],
-      "arrange": ["シライシ紗トリ"],
-      "direct": ["福居英晃"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset"
+      ],
+      "arrange": [
+        "シライシ紗トリ"
+      ],
+      "direct": [
+        "福居英晃"
+      ]
     },
     "performers": {
-      "center": ["itoumarika"],
+      "center": [
+        "itoumarika"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -2634,7 +3203,11 @@
       "singleNumber": "2"
     },
     "formations": {
-      "firstRow": ["fukagawamai", "itoumarika", "wakatsukiyumi"],
+      "firstRow": [
+        "fukagawamai",
+        "itoumarika",
+        "wakatsukiyumi"
+      ],
       "secondRow": [
         "kawagohina",
         "kawamuramahiro",
@@ -2678,13 +3251,21 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["小内喜文"],
-      "arrange": ["佐々木裕"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "小内喜文"
+      ],
+      "arrange": [
+        "佐々木裕"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["hatanakaseira"],
+      "center": [
+        "hatanakaseira"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -2740,13 +3321,23 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["CottON"],
-      "arrange": ["CottON"],
-      "direct": ["横堀光範"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "CottON"
+      ],
+      "arrange": [
+        "CottON"
+      ],
+      "direct": [
+        "横堀光範"
+      ]
     },
     "performers": {
-      "center": ["saitouasuka"],
+      "center": [
+        "saitouasuka"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -2800,10 +3391,18 @@
     "musicVideo": "",
     "type": "solo",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["若田部誠"],
-      "arrange": ["若田部誠"],
-      "direct": ["湯浅弘章"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "若田部誠"
+      ],
+      "arrange": [
+        "若田部誠"
+      ],
+      "direct": [
+        "湯浅弘章"
+      ]
     },
     "performers": {
       "center": [],
@@ -2816,7 +3415,9 @@
       "singleNumber": "22"
     },
     "formations": {
-      "firstRow": ["nishinonanase"],
+      "firstRow": [
+        "nishinonanase"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -2838,10 +3439,18 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["安部純"],
-      "arrange": ["安部純"],
-      "direct": ["荒船泰廣"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "安部純"
+      ],
+      "arrange": [
+        "安部純"
+      ],
+      "direct": [
+        "荒船泰廣"
+      ]
     },
     "performers": {
       "center": [],
@@ -2881,9 +3490,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["山本加津彦"],
-      "arrange": ["山本加津彦"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "山本加津彦"
+      ],
+      "arrange": [
+        "山本加津彦"
+      ],
       "direct": []
     },
     "performers": {
@@ -2897,7 +3512,11 @@
       "singleNumber": "22"
     },
     "formations": {
-      "firstRow": ["ikutaerika", "shiraishimai", "matsumurasayuri"],
+      "firstRow": [
+        "ikutaerika",
+        "shiraishimai",
+        "matsumurasayuri"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -2919,9 +3538,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["佐々木裕"],
-      "arrange": ["佐々木裕"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "佐々木裕"
+      ],
+      "arrange": [
+        "佐々木裕"
+      ],
       "direct": []
     },
     "performers": {
@@ -2962,13 +3587,24 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["FURUTA", "Dr.Lilcom"],
-      "arrange": ["Dr.Lilcom"],
-      "direct": ["伊藤衆人"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "FURUTA",
+        "Dr.Lilcom"
+      ],
+      "arrange": [
+        "Dr.Lilcom"
+      ],
+      "direct": [
+        "伊藤衆人"
+      ]
     },
     "performers": {
-      "center": ["umezawaminami"],
+      "center": [
+        "umezawaminami"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -3023,13 +3659,21 @@
     "musicVideo": "",
     "type": "third generation",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["ツキダタダシ"],
-      "arrange": ["ツキダタダシ"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "ツキダタダシ"
+      ],
+      "arrange": [
+        "ツキダタダシ"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["yamashitamizuki"],
+      "center": [
+        "yamashitamizuki"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -3073,10 +3717,18 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["シライシ紗トリ"],
-      "arrange": ["シライシ紗トリ"],
-      "direct": ["英勉"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "シライシ紗トリ"
+      ],
+      "arrange": [
+        "シライシ紗トリ"
+      ],
+      "direct": [
+        "英勉"
+      ]
     },
     "performers": {
       "center": [],
@@ -3089,7 +3741,10 @@
       "singleNumber": "21"
     },
     "formations": {
-      "firstRow": ["shiraishimai", "nishinonanase"],
+      "firstRow": [
+        "shiraishimai",
+        "nishinonanase"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -3111,10 +3766,18 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["山下孝之"],
-      "arrange": ["山下孝之"],
-      "direct": ["沖田修一"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "山下孝之"
+      ],
+      "arrange": [
+        "山下孝之"
+      ],
+      "direct": [
+        "沖田修一"
+      ]
     },
     "performers": {
       "center": [],
@@ -3127,7 +3790,11 @@
       "singleNumber": "21"
     },
     "formations": {
-      "firstRow": ["oozonomomoko", "saitouasuka", "yodayuuki"],
+      "firstRow": [
+        "oozonomomoko",
+        "saitouasuka",
+        "yodayuuki"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -3149,13 +3816,21 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["木下めろん"],
-      "arrange": ["木下めろん"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "木下めろん"
+      ],
+      "arrange": [
+        "木下めろん"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["saitouasuka"],
+      "center": [
+        "saitouasuka"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -3214,13 +3889,23 @@
     "musicVideo": "",
     "type": "first generation",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["古川貴浩"],
-      "arrange": ["古川貴浩"],
-      "direct": ["丸山健志"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "古川貴浩"
+      ],
+      "arrange": [
+        "古川貴浩"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
     },
     "performers": {
-      "center": ["ikomarina"],
+      "center": [
+        "ikomarina"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -3273,9 +3958,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["丸谷マナブ"],
-      "arrange": ["丸谷マナブ"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "丸谷マナブ"
+      ],
+      "arrange": [
+        "丸谷マナブ"
+      ],
       "direct": []
     },
     "performers": {
@@ -3289,7 +3980,11 @@
       "singleNumber": "20"
     },
     "formations": {
-      "firstRow": ["ikutaerika", "etoumisa", "sakuraireika"],
+      "firstRow": [
+        "ikutaerika",
+        "etoumisa",
+        "sakuraireika"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -3316,13 +4011,23 @@
     "musicVideo": "",
     "type": "second generation",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["SaSA"],
-      "arrange": ["SaSA"],
-      "direct": ["中村太洸"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "SaSA"
+      ],
+      "arrange": [
+        "SaSA"
+      ],
+      "direct": [
+        "中村太洸"
+      ]
     },
     "performers": {
-      "center": ["horimiona"],
+      "center": [
+        "horimiona"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -3370,13 +4075,25 @@
     "musicVideo": "",
     "type": "third generation",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["中山聡", "足立優"],
-      "arrange": ["中山聡", "足立優"],
-      "direct": ["伊藤衆人"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "中山聡",
+        "足立優"
+      ],
+      "arrange": [
+        "中山聡",
+        "足立優"
+      ],
+      "direct": [
+        "伊藤衆人"
+      ]
     },
     "performers": {
-      "center": ["iwamotorenka"],
+      "center": [
+        "iwamotorenka"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -3421,9 +4138,17 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Ryota Saito", "TomoLow"],
-      "arrange": ["Ryota Saito", "TomoLow"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Ryota Saito",
+        "TomoLow"
+      ],
+      "arrange": [
+        "Ryota Saito",
+        "TomoLow"
+      ],
       "direct": []
     },
     "performers": {
@@ -3464,13 +4189,26 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["大貫和紀", "河原レオ", "高木龍一"],
-      "arrange": ["大貫和紀", "河原レオ", "高木龍一"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "大貫和紀",
+        "河原レオ",
+        "高木龍一"
+      ],
+      "arrange": [
+        "大貫和紀",
+        "河原レオ",
+        "高木龍一"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["kuboshiori", "yamashitamizuki"],
+      "center": [
+        "kuboshiori",
+        "yamashitamizuki"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -3523,10 +4261,18 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["HRK"],
-      "arrange": ["原広明"],
-      "direct": ["中村太洸"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "HRK"
+      ],
+      "arrange": [
+        "原広明"
+      ],
+      "direct": [
+        "中村太洸"
+      ]
     },
     "performers": {
       "center": [],
@@ -3539,7 +4285,10 @@
       "singleNumber": "19"
     },
     "formations": {
-      "firstRow": ["akimotomanatsu", "shiraishimai"],
+      "firstRow": [
+        "akimotomanatsu",
+        "shiraishimai"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -3561,10 +4310,22 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["さいとうくにあき", "Akira Sunset", "京田誠一"],
-      "arrange": ["さいとうくにあき", "Akira Sunset", "京田誠一"],
-      "direct": ["伊藤衆人"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "さいとうくにあき",
+        "Akira Sunset",
+        "京田誠一"
+      ],
+      "arrange": [
+        "さいとうくにあき",
+        "Akira Sunset",
+        "京田誠一"
+      ],
+      "direct": [
+        "伊藤衆人"
+      ]
     },
     "performers": {
       "center": [],
@@ -3609,13 +4370,23 @@
     "musicVideo": "",
     "type": "third generation",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["石井伸昂"],
-      "arrange": ["石井伸昂"],
-      "direct": ["荒船泰廣"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "石井伸昂"
+      ],
+      "arrange": [
+        "石井伸昂"
+      ],
+      "direct": [
+        "荒船泰廣"
+      ]
     },
     "performers": {
-      "center": ["itouriria"],
+      "center": [
+        "itouriria"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -3659,10 +4430,18 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["新田目翔"],
-      "arrange": ["若田部誠"],
-      "direct": ["荒船泰廣"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "新田目翔"
+      ],
+      "arrange": [
+        "若田部誠"
+      ],
+      "direct": [
+        "荒船泰廣"
+      ]
     },
     "performers": {
       "center": [],
@@ -3675,7 +4454,10 @@
       "singleNumber": "19"
     },
     "formations": {
-      "firstRow": ["ikutaerika", "kuboshiori"],
+      "firstRow": [
+        "ikutaerika",
+        "kuboshiori"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -3697,13 +4479,24 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["小形誠"],
-      "arrange": ["高橋浩一郎"],
-      "direct": ["萩原健太郎"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "小形誠"
+      ],
+      "arrange": [
+        "高橋浩一郎"
+      ],
+      "direct": [
+        "萩原健太郎"
+      ]
     },
     "performers": {
-      "center": ["oozonomomoko", "yodayuuki"],
+      "center": [
+        "oozonomomoko",
+        "yodayuuki"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -3754,13 +4547,22 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["aokado"],
-      "arrange": ["aokado"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "aokado"
+      ],
+      "arrange": [
+        "aokado"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["akimotomanatsu", "matsumurasayuri"],
+      "center": [
+        "akimotomanatsu",
+        "matsumurasayuri"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -3811,13 +4613,22 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["K-WONDER", "SAS3"],
-      "arrange": ["遠藤ナオキ"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "K-WONDER",
+        "SAS3"
+      ],
+      "arrange": [
+        "遠藤ナオキ"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["takayamakazumi"],
+      "center": [
+        "takayamakazumi"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -3873,13 +4684,23 @@
     "musicVideo": "",
     "type": "second generation",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["SaSA"],
-      "arrange": ["SaSA"],
-      "direct": ["伊藤衆人"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "SaSA"
+      ],
+      "arrange": [
+        "SaSA"
+      ],
+      "direct": [
+        "伊藤衆人"
+      ]
     },
     "performers": {
-      "center": ["horimiona"],
+      "center": [
+        "horimiona"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -3889,14 +4710,23 @@
       "singleNumber": "18"
     },
     "formations": {
-      "firstRow": ["teradaranze", "horimiona", "kitanohinako"],
+      "firstRow": [
+        "teradaranze",
+        "horimiona",
+        "kitanohinako"
+      ],
       "secondRow": [
         "yamazakirena",
         "watanabemiria",
         "suzukiayane",
         "shinuchimai"
       ],
-      "thirdRow": ["itoujunna", "itoukarin", "sagaraiori", "sasakikotoko"],
+      "thirdRow": [
+        "itoujunna",
+        "itoukarin",
+        "sagaraiori",
+        "sasakikotoko"
+      ],
       "fourthRow": []
     }
   },
@@ -3921,13 +4751,24 @@
     "musicVideo": "",
     "type": "third generation",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["板垣祐介"],
-      "arrange": ["板垣祐介"],
-      "direct": ["福島真希"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "板垣祐介"
+      ],
+      "arrange": [
+        "板垣祐介"
+      ],
+      "direct": [
+        "福島真希"
+      ]
     },
     "performers": {
-      "center": ["kuboshiori", "yamashitamizuki"],
+      "center": [
+        "kuboshiori",
+        "yamashitamizuki"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -3979,9 +4820,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["片桐周太郎"],
-      "arrange": ["片桐周太郎"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "片桐周太郎"
+      ],
+      "arrange": [
+        "片桐周太郎"
+      ],
       "direct": []
     },
     "performers": {
@@ -4027,10 +4874,18 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["すみだしんや"],
-      "arrange": ["華原大輔"],
-      "direct": ["伊藤衆人"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "すみだしんや"
+      ],
+      "arrange": [
+        "華原大輔"
+      ],
+      "direct": [
+        "伊藤衆人"
+      ]
     },
     "performers": {
       "center": [],
@@ -4075,10 +4930,19 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["前迫潤哉", "Yasutaka.Ishio"],
-      "arrange": ["Yasutaka.Ishio"],
-      "direct": ["井上強"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "前迫潤哉",
+        "Yasutaka.Ishio"
+      ],
+      "arrange": [
+        "Yasutaka.Ishio"
+      ],
+      "direct": [
+        "井上強"
+      ]
     },
     "performers": {
       "center": [],
@@ -4091,7 +4955,11 @@
       "singleNumber": "17"
     },
     "formations": {
-      "firstRow": ["itoumarika", "saitouasuka", "nishinonanase"],
+      "firstRow": [
+        "itoumarika",
+        "saitouasuka",
+        "nishinonanase"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -4118,13 +4986,23 @@
     "musicVideo": "",
     "type": "third generation",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["丸谷マナブ"],
-      "arrange": ["丸谷マナブ"],
-      "direct": ["岡川太郎"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "丸谷マナブ"
+      ],
+      "arrange": [
+        "丸谷マナブ"
+      ],
+      "direct": [
+        "岡川太郎"
+      ]
     },
     "performers": {
-      "center": ["oozonomomoko"],
+      "center": [
+        "oozonomomoko"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -4134,7 +5012,11 @@
       "singleNumber": "17"
     },
     "formations": {
-      "firstRow": ["kuboshiori", "oozonomomoko", "yamashitamizuki"],
+      "firstRow": [
+        "kuboshiori",
+        "oozonomomoko",
+        "yamashitamizuki"
+      ],
       "secondRow": [
         "sakaguchitamami",
         "yodayuuki",
@@ -4172,9 +5054,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["小網準"],
-      "arrange": ["野中\"まさ\"雄一"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "小網準"
+      ],
+      "arrange": [
+        "野中\"まさ\"雄一"
+      ],
       "direct": []
     },
     "performers": {
@@ -4188,7 +5076,12 @@
       "singleNumber": "17"
     },
     "formations": {
-      "firstRow": ["ikomarina", "inouesayuri", "hoshinominami", "horimiona"],
+      "firstRow": [
+        "ikomarina",
+        "inouesayuri",
+        "hoshinominami",
+        "horimiona"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -4215,13 +5108,21 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["aokado"],
-      "arrange": ["aokado"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "aokado"
+      ],
+      "arrange": [
+        "aokado"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["hashimotonanami"],
+      "center": [
+        "hashimotonanami"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -4278,10 +5179,18 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["カワノミチオ"],
-      "arrange": ["カワノミチオ"],
-      "direct": ["山岸聖太"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "カワノミチオ"
+      ],
+      "arrange": [
+        "カワノミチオ"
+      ],
+      "direct": [
+        "山岸聖太"
+      ]
     },
     "performers": {
       "center": [],
@@ -4294,7 +5203,10 @@
       "singleNumber": "16"
     },
     "formations": {
-      "firstRow": ["saitouasuka", "horimiona"],
+      "firstRow": [
+        "saitouasuka",
+        "horimiona"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -4321,10 +5233,20 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Akira Sunset", "APAZZI"],
-      "arrange": ["Akira Sunset", "APAZZI"],
-      "direct": ["中村太洸"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "APAZZI"
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "APAZZI"
+      ],
+      "direct": [
+        "中村太洸"
+      ]
     },
     "performers": {
       "center": [],
@@ -4369,10 +5291,18 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Rizz"],
-      "arrange": ["山田竜平"],
-      "direct": ["東市篤憲"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Rizz"
+      ],
+      "arrange": [
+        "山田竜平"
+      ],
+      "direct": [
+        "東市篤憲"
+      ]
     },
     "performers": {
       "center": [],
@@ -4418,10 +5348,19 @@
     "musicVideo": "",
     "type": "solo",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["丸谷マナブ"],
-      "arrange": ["丸谷マナブ", "福田貴史"],
-      "direct": ["山岸聖太"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "丸谷マナブ"
+      ],
+      "arrange": [
+        "丸谷マナブ",
+        "福田貴史"
+      ],
+      "direct": [
+        "山岸聖太"
+      ]
     },
     "performers": {
       "center": [],
@@ -4434,7 +5373,9 @@
       "singleNumber": "16"
     },
     "formations": {
-      "firstRow": ["hashimotonanami"],
+      "firstRow": [
+        "hashimotonanami"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -4461,13 +5402,21 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Hiro Hoashi"],
-      "arrange": ["Hiro Hoashi"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Hiro Hoashi"
+      ],
+      "arrange": [
+        "Hiro Hoashi"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["saitouasuka"],
+      "center": [
+        "saitouasuka"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -4521,10 +5470,20 @@
     "musicVideo": "",
     "type": "solo",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Akira Sunset", "ha-j"],
-      "arrange": ["Akira Sunset", "ha-j"],
-      "direct": ["井上強"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "ha-j"
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "ha-j"
+      ],
+      "direct": [
+        "井上強"
+      ]
     },
     "performers": {
       "center": [],
@@ -4537,7 +5496,9 @@
       "singleNumber": "15"
     },
     "formations": {
-      "firstRow": ["shiraishimai"],
+      "firstRow": [
+        "shiraishimai"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -4564,10 +5525,18 @@
     "musicVideo": "",
     "type": "solo",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["NA.ZU.NA"],
-      "arrange": ["NA.ZU.NA"],
-      "direct": ["中村太洸"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "NA.ZU.NA"
+      ],
+      "arrange": [
+        "NA.ZU.NA"
+      ],
+      "direct": [
+        "中村太洸"
+      ]
     },
     "performers": {
       "center": [],
@@ -4580,7 +5549,9 @@
       "singleNumber": "15"
     },
     "formations": {
-      "firstRow": ["ikutaerika"],
+      "firstRow": [
+        "ikutaerika"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -4607,10 +5578,18 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Ruby"],
-      "arrange": ["あらケン"],
-      "direct": ["伊藤衆人"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Ruby"
+      ],
+      "arrange": [
+        "あらケン"
+      ],
+      "direct": [
+        "伊藤衆人"
+      ]
     },
     "performers": {
       "center": [],
@@ -4623,8 +5602,14 @@
       "singleNumber": "15"
     },
     "formations": {
-      "firstRow": ["matsumurasayuri"],
-      "secondRow": ["sasakikotoko", "itoukarin", "teradaranze"],
+      "firstRow": [
+        "matsumurasayuri"
+      ],
+      "secondRow": [
+        "sasakikotoko",
+        "itoukarin",
+        "teradaranze"
+      ],
       "thirdRow": [],
       "fourthRow": []
     }
@@ -4650,9 +5635,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["大橋莉子"],
-      "arrange": ["佐々木裕"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "大橋莉子"
+      ],
+      "arrange": [
+        "佐々木裕"
+      ],
       "direct": []
     },
     "performers": {
@@ -4666,7 +5657,10 @@
       "singleNumber": "15"
     },
     "formations": {
-      "firstRow": ["itoumarika", "inouesayuri"],
+      "firstRow": [
+        "itoumarika",
+        "inouesayuri"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -4693,13 +5687,21 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["ツキダタダシ"],
-      "arrange": ["ha-j"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "ツキダタダシ"
+      ],
+      "arrange": [
+        "ha-j"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["ikutaerika"],
+      "center": [
+        "ikutaerika"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -4738,10 +5740,20 @@
     "musicVideo": "",
     "type": "solo",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["大貫和紀", "河原レオ", "高木龍一"],
-      "arrange": ["Carlos K."],
-      "direct": ["真壁幸紀"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "大貫和紀",
+        "河原レオ",
+        "高木龍一"
+      ],
+      "arrange": [
+        "Carlos K."
+      ],
+      "direct": [
+        "真壁幸紀"
+      ]
     },
     "performers": {
       "center": [],
@@ -4754,7 +5766,9 @@
       "singleNumber": "14"
     },
     "formations": {
-      "firstRow": ["fukagawamai"],
+      "firstRow": [
+        "fukagawamai"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -4781,10 +5795,19 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["FURUTA", "Yasutaka Ishio"],
-      "arrange": ["重永亮介"],
-      "direct": ["番場秀一"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "FURUTA",
+        "Yasutaka Ishio"
+      ],
+      "arrange": [
+        "重永亮介"
+      ],
+      "direct": [
+        "番場秀一"
+      ]
     },
     "performers": {
       "center": [],
@@ -4797,7 +5820,11 @@
       "singleNumber": "14"
     },
     "formations": {
-      "firstRow": ["shiraishimai", "hashimotonanami", "matsumurasayuri"],
+      "firstRow": [
+        "shiraishimai",
+        "hashimotonanami",
+        "matsumurasayuri"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -4819,10 +5846,18 @@
     "musicVideo": "",
     "type": "solo",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Bush-I"],
-      "arrange": ["APAZZI"],
-      "direct": ["永田琴"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Bush-I"
+      ],
+      "arrange": [
+        "APAZZI"
+      ],
+      "direct": [
+        "永田琴"
+      ]
     },
     "performers": {
       "center": [],
@@ -4835,7 +5870,9 @@
       "singleNumber": "14"
     },
     "formations": {
-      "firstRow": ["nishinonanase"],
+      "firstRow": [
+        "nishinonanase"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -4862,13 +5899,22 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["HIROTOMO", "Dr.Lilcom"],
-      "arrange": ["APAZZI"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "HIROTOMO",
+        "Dr.Lilcom"
+      ],
+      "arrange": [
+        "APAZZI"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["hoshinominami"],
+      "center": [
+        "hoshinominami"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -4912,13 +5958,26 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Akira Sunset", "ha-j"],
-      "arrange": ["Akira Sunset", "ha-j"],
-      "direct": ["丸山健志"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "ha-j"
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "ha-j"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
     },
     "performers": {
-      "center": ["shiraishimai", "nishinonanase"],
+      "center": [
+        "shiraishimai",
+        "nishinonanase"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -4928,7 +5987,12 @@
       "singleNumber": "13"
     },
     "formations": {
-      "firstRow": ["etoumisa", "nishinonanase", "shiraishimai", "fukagawamai"],
+      "firstRow": [
+        "etoumisa",
+        "nishinonanase",
+        "shiraishimai",
+        "fukagawamai"
+      ],
       "secondRow": [
         "saitouasuka",
         "takayamakazumi",
@@ -4969,10 +6033,18 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["古川貴浩"],
-      "arrange": ["古川貴浩"],
-      "direct": ["湯浅弘章"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "古川貴浩"
+      ],
+      "arrange": [
+        "古川貴浩"
+      ],
+      "direct": [
+        "湯浅弘章"
+      ]
     },
     "performers": {
       "center": [],
@@ -5018,13 +6090,23 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["近藤圭一"],
-      "arrange": ["久下真音"],
-      "direct": ["丸山健志"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "近藤圭一"
+      ],
+      "arrange": [
+        "久下真音"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
     },
     "performers": {
-      "center": ["ikomarina"],
+      "center": [
+        "ikomarina"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -5080,13 +6162,23 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Akira Sunset", "Carlos K."],
-      "arrange": ["Akira Sunset", "Carlos K."],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "Carlos K."
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "Carlos K."
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["nishinonanase"],
+      "center": [
+        "nishinonanase"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -5126,9 +6218,15 @@
     "musicVideo": "",
     "type": "solo",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["丸谷マナブ"],
-      "arrange": ["野中\"まさ\"雄一"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "丸谷マナブ"
+      ],
+      "arrange": [
+        "野中\"まさ\"雄一"
+      ],
       "direct": []
     },
     "performers": {
@@ -5142,7 +6240,9 @@
       "singleNumber": "12"
     },
     "formations": {
-      "firstRow": ["nishinonanase"],
+      "firstRow": [
+        "nishinonanase"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -5164,10 +6264,18 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["渡辺拓也"],
-      "arrange": ["渡辺拓也"],
-      "direct": ["中村太洸"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "渡辺拓也"
+      ],
+      "arrange": [
+        "渡辺拓也"
+      ],
+      "direct": [
+        "中村太洸"
+      ]
     },
     "performers": {
       "center": [],
@@ -5212,10 +6320,20 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Akira Sunset"],
-      "arrange": ["Akira Sunset"],
-      "direct": ["月田茂", "山本篤彦", "柴谷麻以"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset"
+      ],
+      "arrange": [
+        "Akira Sunset"
+      ],
+      "direct": [
+        "月田茂",
+        "山本篤彦",
+        "柴谷麻以"
+      ]
     },
     "performers": {
       "center": [],
@@ -5228,7 +6346,10 @@
       "singleNumber": "12"
     },
     "formations": {
-      "firstRow": ["ikutaerika", "matsumurasayuri"],
+      "firstRow": [
+        "ikutaerika",
+        "matsumurasayuri"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -5255,13 +6376,24 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["杉山勝彦"],
-      "arrange": ["杉山勝彦", "有木竜郎"],
-      "direct": ["岡川太郎"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "杉山勝彦",
+        "有木竜郎"
+      ],
+      "direct": [
+        "岡川太郎"
+      ]
     },
     "performers": {
-      "center": ["ikomarina"],
+      "center": [
+        "ikomarina"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -5317,9 +6449,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["古川貴浩"],
-      "arrange": ["古川貴浩"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "古川貴浩"
+      ],
+      "arrange": [
+        "古川貴浩"
+      ],
       "direct": []
     },
     "performers": {
@@ -5333,7 +6471,10 @@
       "singleNumber": "12"
     },
     "formations": {
-      "firstRow": ["saitouasuka", "hoshinominami"],
+      "firstRow": [
+        "saitouasuka",
+        "hoshinominami"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -5360,13 +6501,26 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["SoichiroK", "Nozomu.S"],
-      "arrange": ["SoichiroK", "Nozomu.S"],
-      "direct": ["岡川太郎"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "SoichiroK",
+        "Nozomu.S"
+      ],
+      "arrange": [
+        "SoichiroK",
+        "Nozomu.S"
+      ],
+      "direct": [
+        "岡川太郎"
+      ]
     },
     "performers": {
-      "center": ["saitouasuka", "hoshinominami"],
+      "center": [
+        "saitouasuka",
+        "hoshinominami"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -5410,13 +6564,23 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["福田貴史"],
-      "arrange": ["TATOO"],
-      "direct": ["湯浅弘章"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "福田貴史"
+      ],
+      "arrange": [
+        "TATOO"
+      ],
+      "direct": [
+        "湯浅弘章"
+      ]
     },
     "performers": {
-      "center": ["shiraishimai"],
+      "center": [
+        "shiraishimai"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -5456,10 +6620,18 @@
     "musicVideo": "",
     "type": "solo",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["山田智和"],
-      "arrange": ["住谷翔平"],
-      "direct": ["山戸結希"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "山田智和"
+      ],
+      "arrange": [
+        "住谷翔平"
+      ],
+      "direct": [
+        "山戸結希"
+      ]
     },
     "performers": {
       "center": [],
@@ -5472,7 +6644,9 @@
       "singleNumber": "11"
     },
     "formations": {
-      "firstRow": ["nishinonanase"],
+      "firstRow": [
+        "nishinonanase"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -5494,13 +6668,21 @@
     "musicVideo": "",
     "type": "second generation",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["中土智博"],
-      "arrange": ["中土智博"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "中土智博"
+      ],
+      "arrange": [
+        "中土智博"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["teradaranze"],
+      "center": [
+        "teradaranze"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -5539,13 +6721,22 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Noda Akiko"],
-      "arrange": ["野中\"まさ\"雄一"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Noda Akiko"
+      ],
+      "arrange": [
+        "野中\"まさ\"雄一"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["nagashimaseira", "sakuraireika"],
+      "center": [
+        "nagashimaseira",
+        "sakuraireika"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -5586,13 +6777,23 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["中山英二"],
-      "arrange": ["田上陽一"],
-      "direct": ["丸山健志"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "中山英二"
+      ],
+      "arrange": [
+        "田上陽一"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
     },
     "performers": {
-      "center": ["ikutaerika"],
+      "center": [
+        "ikutaerika"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -5641,13 +6842,25 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Akira Sunset", "ZERO"],
-      "arrange": ["Akira Sunset", "ZERO"],
-      "direct": ["柳沢翔"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "ZERO"
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "ZERO"
+      ],
+      "direct": [
+        "柳沢翔"
+      ]
     },
     "performers": {
-      "center": ["ikutaerika"],
+      "center": [
+        "ikutaerika"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -5690,9 +6903,16 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["SoichiroK", "Nozomu.S"],
-      "arrange": ["Soulife"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "SoichiroK",
+        "Nozomu.S"
+      ],
+      "arrange": [
+        "Soulife"
+      ],
       "direct": []
     },
     "performers": {
@@ -5738,13 +6958,21 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["角野寿和"],
-      "arrange": ["京田誠一"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "角野寿和"
+      ],
+      "arrange": [
+        "京田誠一"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["nishinonanase"],
+      "center": [
+        "nishinonanase"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -5796,13 +7024,23 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Carlos K."],
-      "arrange": ["Carlos K."],
-      "direct": ["中村太洸"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Carlos K."
+      ],
+      "arrange": [
+        "Carlos K."
+      ],
+      "direct": [
+        "中村太洸"
+      ]
     },
     "performers": {
-      "center": ["shiraishimai"],
+      "center": [
+        "shiraishimai"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -5849,13 +7087,25 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Shusui", "ヒロイズム"],
-      "arrange": ["Shusui", "ヒロイズム"],
-      "direct": ["湯浅弘章"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Shusui",
+        "ヒロイズム"
+      ],
+      "arrange": [
+        "Shusui",
+        "ヒロイズム"
+      ],
+      "direct": [
+        "湯浅弘章"
+      ]
     },
     "performers": {
-      "center": ["nishinonanase"],
+      "center": [
+        "nishinonanase"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -5896,13 +7146,21 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["中土智博"],
-      "arrange": ["中土智博"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "中土智博"
+      ],
+      "arrange": [
+        "中土智博"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["nishinonanase"],
+      "center": [
+        "nishinonanase"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -5947,13 +7205,24 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["押田誠"],
-      "arrange": ["佐々木聡作", "押田誠"],
-      "direct": ["丸山健志"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "押田誠"
+      ],
+      "arrange": [
+        "佐々木聡作",
+        "押田誠"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
     },
     "performers": {
-      "center": ["nishinonanase"],
+      "center": [
+        "nishinonanase"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -6004,9 +7273,15 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["田中明仁"],
-      "arrange": ["TATOO"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "田中明仁"
+      ],
+      "arrange": [
+        "TATOO"
+      ],
       "direct": []
     },
     "performers": {
@@ -6063,10 +7338,18 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Soulife"],
-      "arrange": ["Soulife"],
-      "direct": ["池田一真"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Soulife"
+      ],
+      "arrange": [
+        "Soulife"
+      ],
+      "direct": [
+        "池田一真"
+      ]
     },
     "performers": {
       "center": [],
@@ -6079,7 +7362,10 @@
       "singleNumber": "8"
     },
     "formations": {
-      "firstRow": ["shiraishimai", "hashimotonanami"],
+      "firstRow": [
+        "shiraishimai",
+        "hashimotonanami"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -6106,13 +7392,23 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Akira Sunset", "C#"],
-      "arrange": ["Akira Sunset", "C#"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "C#"
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "C#"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["ikutaerika"],
+      "center": [
+        "ikutaerika"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -6153,13 +7449,23 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["古川貴浩"],
-      "arrange": ["古川貴浩"],
-      "direct": ["大久保拓朗"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "古川貴浩"
+      ],
+      "arrange": [
+        "古川貴浩"
+      ],
+      "direct": [
+        "大久保拓朗"
+      ]
     },
     "performers": {
-      "center": ["horimiona"],
+      "center": [
+        "horimiona"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -6176,7 +7482,12 @@
         "hashimotonanami",
         "matsumurasayuri"
       ],
-      "secondRow": ["sakuraireika", "ikutaerika", "ikomarina", "wakatsukiyumi"],
+      "secondRow": [
+        "sakuraireika",
+        "ikutaerika",
+        "ikomarina",
+        "wakatsukiyumi"
+      ],
       "thirdRow": [
         "itoumarika",
         "etoumisa",
@@ -6211,13 +7522,22 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["杉山勝彦"],
-      "arrange": ["杉山勝彦", "有木竜郎"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "杉山勝彦",
+        "有木竜郎"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["shiraishimai"],
+      "center": [
+        "shiraishimai"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -6260,13 +7580,23 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Akira Sunset"],
-      "arrange": ["Akira Sunset"],
-      "direct": ["丸山健志"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset"
+      ],
+      "arrange": [
+        "Akira Sunset"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
     },
     "performers": {
-      "center": ["horimiona"],
+      "center": [
+        "horimiona"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -6321,13 +7651,21 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["古川貴浩"],
-      "arrange": ["古川貴浩"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "古川貴浩"
+      ],
+      "arrange": [
+        "古川貴浩"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["hashimotonanami"],
+      "center": [
+        "hashimotonanami"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -6372,13 +7710,23 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["河原嶺旭"],
-      "arrange": ["百石元"],
-      "direct": ["丸山健志"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "河原嶺旭"
+      ],
+      "arrange": [
+        "百石元"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
     },
     "performers": {
-      "center": ["shiraishimai"],
+      "center": [
+        "shiraishimai"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -6388,7 +7736,11 @@
       "singleNumber": "6"
     },
     "formations": {
-      "firstRow": ["matsumurasayuri", "shiraishimai", "hashimotonanami"],
+      "firstRow": [
+        "matsumurasayuri",
+        "shiraishimai",
+        "hashimotonanami"
+      ],
       "secondRow": [
         "sakuraireika",
         "ikutaerika",
@@ -6425,9 +7777,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["南田健吾"],
-      "arrange": ["高梨康治"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "南田健吾"
+      ],
+      "arrange": [
+        "高梨康治"
+      ],
       "direct": []
     },
     "performers": {
@@ -6473,13 +7831,24 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Sugaya Bros.", "松村PONY"],
-      "arrange": ["Sugaya Bros."],
-      "direct": ["岡川太郎"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Sugaya Bros.",
+        "松村PONY"
+      ],
+      "arrange": [
+        "Sugaya Bros."
+      ],
+      "direct": [
+        "岡川太郎"
+      ]
     },
     "performers": {
-      "center": ["nishinonanase"],
+      "center": [
+        "nishinonanase"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -6519,9 +7888,15 @@
     "musicVideo": "",
     "type": "first generation",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["鐘撞行孝"],
-      "arrange": ["TATOO"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "鐘撞行孝"
+      ],
+      "arrange": [
+        "TATOO"
+      ],
       "direct": []
     },
     "performers": {
@@ -6595,13 +7970,24 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["岡本健介"],
-      "arrange": ["岡本健介"],
-      "direct": ["柳沢翔"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "岡本健介"
+      ],
+      "arrange": [
+        "岡本健介"
+      ],
+      "direct": [
+        "柳沢翔"
+      ]
     },
     "performers": {
-      "center": ["ikomarina", "hoshinominami"],
+      "center": [
+        "ikomarina",
+        "hoshinominami"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -6655,9 +8041,15 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["横健介"],
-      "arrange": ["重永亮介"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "横健介"
+      ],
+      "arrange": [
+        "重永亮介"
+      ],
       "direct": []
     },
     "performers": {
@@ -6710,10 +8102,18 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["中土智博"],
-      "arrange": ["中土智博"],
-      "direct": ["中村太洸"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "中土智博"
+      ],
+      "arrange": [
+        "中土智博"
+      ],
+      "direct": [
+        "中村太洸"
+      ]
     },
     "performers": {
       "center": [],
@@ -6754,13 +8154,24 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["中土智博"],
-      "arrange": ["中土智博"],
-      "direct": ["中村太洸"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "中土智博"
+      ],
+      "arrange": [
+        "中土智博"
+      ],
+      "direct": [
+        "中村太洸"
+      ]
     },
     "performers": {
-      "center": ["sakuraireika", "nishinonanase"],
+      "center": [
+        "sakuraireika",
+        "nishinonanase"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -6801,13 +8212,23 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["北室龍馬"],
-      "arrange": ["木村有希"],
-      "direct": ["丸山健志"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "北室龍馬"
+      ],
+      "arrange": [
+        "木村有希"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
     },
     "performers": {
-      "center": ["ikomarina"],
+      "center": [
+        "ikomarina"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -6817,7 +8238,11 @@
       "singleNumber": "4"
     },
     "formations": {
-      "firstRow": ["ikutaerika", "ikomarina", "hoshinominami"],
+      "firstRow": [
+        "ikutaerika",
+        "ikomarina",
+        "hoshinominami"
+      ],
       "secondRow": [
         "shiraishimai",
         "hashimotonanami",
@@ -6854,13 +8279,22 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["松田純一"],
-      "arrange": ["清水武仁"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "松田純一"
+      ],
+      "arrange": [
+        "清水武仁"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["takayamakazumi", "noujouami"],
+      "center": [
+        "takayamakazumi",
+        "noujouami"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -6901,10 +8335,18 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["大藤史"],
-      "arrange": ["京田誠一"],
-      "direct": ["岡川太郎"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "大藤史"
+      ],
+      "arrange": [
+        "京田誠一"
+      ],
+      "direct": [
+        "岡川太郎"
+      ]
     },
     "performers": {
       "center": [],
@@ -6917,7 +8359,11 @@
       "singleNumber": "4"
     },
     "formations": {
-      "firstRow": ["ikutaerika", "ikomarina", "hoshinominami"],
+      "firstRow": [
+        "ikutaerika",
+        "ikomarina",
+        "hoshinominami"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -6939,10 +8385,18 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["佐藤嘉風"],
-      "arrange": ["佐藤嘉風"],
-      "direct": ["丸山健志"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "佐藤嘉風"
+      ],
+      "arrange": [
+        "佐藤嘉風"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
     },
     "performers": {
       "center": [],
@@ -6955,7 +8409,10 @@
       "singleNumber": "4"
     },
     "formations": {
-      "firstRow": ["shiraishimai", "takayamakazumi"],
+      "firstRow": [
+        "shiraishimai",
+        "takayamakazumi"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -6982,13 +8439,23 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["山本加津彦"],
-      "arrange": ["湯浅篤"],
-      "direct": ["中村太洸"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "山本加津彦"
+      ],
+      "arrange": [
+        "湯浅篤"
+      ],
+      "direct": [
+        "中村太洸"
+      ]
     },
     "performers": {
-      "center": ["matsumurasayuri"],
+      "center": [
+        "matsumurasayuri"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -7028,13 +8495,24 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["キタムラタケシ", "田上陽一"],
-      "arrange": ["田上陽一"],
-      "direct": ["久保茂昭"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "キタムラタケシ",
+        "田上陽一"
+      ],
+      "arrange": [
+        "田上陽一"
+      ],
+      "direct": [
+        "久保茂昭"
+      ]
     },
     "performers": {
-      "center": ["ikomarina"],
+      "center": [
+        "ikomarina"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -7088,13 +8566,24 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Jam9", "ArmySlick"],
-      "arrange": ["シライシ紗トリ"],
-      "direct": ["丸山健志"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Jam9",
+        "ArmySlick"
+      ],
+      "arrange": [
+        "シライシ紗トリ"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
     },
     "performers": {
-      "center": ["ikomarina"],
+      "center": [
+        "ikomarina"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -7148,13 +8637,21 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Akira Sunset"],
-      "arrange": ["京田誠一"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset"
+      ],
+      "arrange": [
+        "京田誠一"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["saitouasuka"],
+      "center": [
+        "saitouasuka"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -7194,13 +8691,21 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["MIKOTO"],
-      "arrange": ["木之下慶行"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "MIKOTO"
+      ],
+      "arrange": [
+        "木之下慶行"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["ikomarina"],
+      "center": [
+        "ikomarina"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -7253,10 +8758,18 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["坂部大介"],
-      "arrange": ["中土智博"],
-      "direct": ["中村太洸"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "坂部大介"
+      ],
+      "arrange": [
+        "中土智博"
+      ],
+      "direct": [
+        "中村太洸"
+      ]
     },
     "performers": {
       "center": [],
@@ -7296,10 +8809,18 @@
     "musicVideo": "",
     "type": "solo",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["若田部誠"],
-      "arrange": ["若田部誠"],
-      "direct": ["丸山健志"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "若田部誠"
+      ],
+      "arrange": [
+        "若田部誠"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
     },
     "performers": {
       "center": [],
@@ -7312,7 +8833,9 @@
       "singleNumber": "2"
     },
     "formations": {
-      "firstRow": ["ikomarina"],
+      "firstRow": [
+        "ikomarina"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -7339,13 +8862,21 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["y@suo ohtani"],
-      "arrange": ["y@suo ohtani"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "y@suo ohtani"
+      ],
+      "arrange": [
+        "y@suo ohtani"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["ikomarina"],
+      "center": [
+        "ikomarina"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -7403,13 +8934,23 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["井手コウジ"],
-      "arrange": ["井手コウジ"],
-      "direct": ["南流石"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "井手コウジ"
+      ],
+      "arrange": [
+        "井手コウジ"
+      ],
+      "direct": [
+        "南流石"
+      ]
     },
     "performers": {
-      "center": ["ikomarina"],
+      "center": [
+        "ikomarina"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -7475,13 +9016,24 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["BOUNCEBACK", "MIKOTO"],
-      "arrange": ["野中雄一"],
-      "direct": ["久保茂昭"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "BOUNCEBACK",
+        "MIKOTO"
+      ],
+      "arrange": [
+        "野中雄一"
+      ],
+      "direct": [
+        "久保茂昭"
+      ]
     },
     "performers": {
-      "center": ["ikomarina"],
+      "center": [
+        "ikomarina"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -7539,13 +9091,24 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["蛯原ランス"],
-      "arrange": ["塩川満己"],
-      "direct": ["丸山健志"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "蛯原ランス"
+      ],
+      "arrange": [
+        "塩川満己"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
     },
     "performers": {
-      "center": ["ikomarina", "ikutaerika"],
+      "center": [
+        "ikomarina",
+        "ikutaerika"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -7598,13 +9161,21 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["太田美知彦"],
-      "arrange": ["太田美知彦"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "太田美知彦"
+      ],
+      "arrange": [
+        "太田美知彦"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["ikomarina"],
+      "center": [
+        "ikomarina"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -7662,9 +9233,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["宮坂聡彦"],
-      "arrange": ["佐々木裕"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "宮坂聡彦"
+      ],
+      "arrange": [
+        "佐々木裕"
+      ],
       "direct": []
     },
     "performers": {
@@ -7678,7 +9255,11 @@
       "singleNumber": "10"
     },
     "formations": {
-      "firstRow": ["etoumisa", "sakuraireika", "wakatsukiyumi"],
+      "firstRow": [
+        "etoumisa",
+        "sakuraireika",
+        "wakatsukiyumi"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -7705,9 +9286,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["伊勢佳史"],
-      "arrange": ["伊勢佳史"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "伊勢佳史"
+      ],
+      "arrange": [
+        "伊勢佳史"
+      ],
       "direct": []
     },
     "performers": {
@@ -7755,13 +9342,22 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["杉山勝彦"],
-      "arrange": ["杉山勝彦", "有木竜郎"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "杉山勝彦",
+        "有木竜郎"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["ikutaerika"],
+      "center": [
+        "ikutaerika"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -7815,9 +9411,15 @@
     "musicVideo": "",
     "type": "solo",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["近藤圭一"],
-      "arrange": ["樫原伸彦"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "近藤圭一"
+      ],
+      "arrange": [
+        "樫原伸彦"
+      ],
       "direct": []
     },
     "performers": {
@@ -7831,7 +9433,9 @@
       "singleNumber": "10"
     },
     "formations": {
-      "firstRow": ["ikutaerika"],
+      "firstRow": [
+        "ikutaerika"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -7858,13 +9462,22 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["須藤哲平", "長谷川湊"],
-      "arrange": ["佐々木裕"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "須藤哲平",
+        "長谷川湊"
+      ],
+      "arrange": [
+        "佐々木裕"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["kojimaharuna"],
+      "center": [
+        "kojimaharuna"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": "こじ坂46"
@@ -7918,9 +9531,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["片桐周太郎"],
-      "arrange": ["野中\"まさ\"雄一"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "片桐周太郎"
+      ],
+      "arrange": [
+        "野中\"まさ\"雄一"
+      ],
       "direct": []
     },
     "performers": {
@@ -7934,7 +9553,11 @@
       "singleNumber": "10"
     },
     "formations": {
-      "firstRow": ["saitouasuka", "hoshinominami", "horimiona"],
+      "firstRow": [
+        "saitouasuka",
+        "hoshinominami",
+        "horimiona"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -7965,13 +9588,21 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["山田智和"],
-      "arrange": ["住谷翔平"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "山田智和"
+      ],
+      "arrange": [
+        "住谷翔平"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["inouesayuri"],
+      "center": [
+        "inouesayuri"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -8033,9 +9664,16 @@
     "musicVideo": "",
     "type": "solo",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["杉山勝彦"],
-      "arrange": ["杉山勝彦", "有木竜郎"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "杉山勝彦",
+        "有木竜郎"
+      ],
       "direct": []
     },
     "performers": {
@@ -8049,7 +9687,9 @@
       "singleNumber": "10"
     },
     "formations": {
-      "firstRow": ["nishinonanase"],
+      "firstRow": [
+        "nishinonanase"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -8076,9 +9716,16 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["杉山勝彦"],
-      "arrange": ["杉山勝彦", "有木竜郎"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "杉山勝彦",
+        "有木竜郎"
+      ],
       "direct": []
     },
     "performers": {
@@ -8136,9 +9783,15 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["フジノタカフミ"],
-      "arrange": ["フジノタカフミ"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "フジノタカフミ"
+      ],
+      "arrange": [
+        "フジノタカフミ"
+      ],
       "direct": []
     },
     "performers": {
@@ -8200,9 +9853,16 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康", "本山清治"],
-      "compose": ["渡辺未来"],
-      "arrange": ["渡辺未来"],
+      "lyrics": [
+        "秋元康",
+        "本山清治"
+      ],
+      "compose": [
+        "渡辺未来"
+      ],
+      "arrange": [
+        "渡辺未来"
+      ],
       "direct": []
     },
     "performers": {
@@ -8253,9 +9913,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["DR QUEENBEE"],
-      "arrange": ["DR QUEENBEE"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "DR QUEENBEE"
+      ],
+      "arrange": [
+        "DR QUEENBEE"
+      ],
       "direct": []
     },
     "performers": {
@@ -8302,9 +9968,15 @@
     "musicVideo": "",
     "type": "solo",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["吉田博"],
-      "arrange": ["野中\"まさ\"雄一"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "吉田博"
+      ],
+      "arrange": [
+        "野中\"まさ\"雄一"
+      ],
       "direct": []
     },
     "performers": {
@@ -8318,7 +9990,9 @@
       "singleNumber": "14"
     },
     "formations": {
-      "firstRow": ["nishinonanase"],
+      "firstRow": [
+        "nishinonanase"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -8345,9 +10019,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["古川貴浩"],
-      "arrange": ["古川貴浩"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "古川貴浩"
+      ],
+      "arrange": [
+        "古川貴浩"
+      ],
       "direct": []
     },
     "performers": {
@@ -8361,7 +10041,11 @@
       "singleNumber": "14"
     },
     "formations": {
-      "firstRow": ["saitouasuka", "hoshinominami", "horimiona"],
+      "firstRow": [
+        "saitouasuka",
+        "hoshinominami",
+        "horimiona"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -8388,9 +10072,15 @@
     "musicVideo": "",
     "type": "solo",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["中谷あつこ"],
-      "arrange": ["田上陽一"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "中谷あつこ"
+      ],
+      "arrange": [
+        "田上陽一"
+      ],
       "direct": []
     },
     "performers": {
@@ -8404,7 +10094,9 @@
       "singleNumber": "14"
     },
     "formations": {
-      "firstRow": ["ikutaerika"],
+      "firstRow": [
+        "ikutaerika"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -8431,9 +10123,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["さいとうくにあき"],
-      "arrange": ["内田充"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "さいとうくにあき"
+      ],
+      "arrange": [
+        "内田充"
+      ],
       "direct": []
     },
     "performers": {
@@ -8447,7 +10145,10 @@
       "singleNumber": "14"
     },
     "formations": {
-      "firstRow": ["nakamotohimeka", "noujouami"],
+      "firstRow": [
+        "nakamotohimeka",
+        "noujouami"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -8474,9 +10175,15 @@
     "musicVideo": "",
     "type": "second generation",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["白須賀悟"],
-      "arrange": ["白須賀悟"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "白須賀悟"
+      ],
+      "arrange": [
+        "白須賀悟"
+      ],
       "direct": []
     },
     "performers": {
@@ -8529,9 +10236,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["サイトウリョースケ"],
-      "arrange": ["サイトウリョースケ"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "サイトウリョースケ"
+      ],
+      "arrange": [
+        "サイトウリョースケ"
+      ],
       "direct": []
     },
     "performers": {
@@ -8545,7 +10258,11 @@
       "singleNumber": "14"
     },
     "formations": {
-      "firstRow": ["ikomarina", "itoumarika", "inouesayuri"],
+      "firstRow": [
+        "ikomarina",
+        "itoumarika",
+        "inouesayuri"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -8572,9 +10289,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Amber"],
-      "arrange": ["若田部誠"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Amber"
+      ],
+      "arrange": [
+        "若田部誠"
+      ],
       "direct": []
     },
     "performers": {
@@ -8620,9 +10343,15 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["菅井達司"],
-      "arrange": ["菅井達司"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "菅井達司"
+      ],
+      "arrange": [
+        "菅井達司"
+      ],
       "direct": []
     },
     "performers": {
@@ -8689,9 +10418,16 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["中山聡", "足立優"],
-      "arrange": ["野中\"まさ\"雄一"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "中山聡",
+        "足立優"
+      ],
+      "arrange": [
+        "野中\"まさ\"雄一"
+      ],
       "direct": []
     },
     "performers": {
@@ -8745,9 +10481,15 @@
     "musicVideo": "",
     "type": "third generation",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["ミサマサカリヲ"],
-      "arrange": ["遠藤ナオキ"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "ミサマサカリヲ"
+      ],
+      "arrange": [
+        "遠藤ナオキ"
+      ],
       "direct": []
     },
     "performers": {
@@ -8801,9 +10543,15 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["石井亮輔"],
-      "arrange": ["APAZZI"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "石井亮輔"
+      ],
+      "arrange": [
+        "APAZZI"
+      ],
       "direct": []
     },
     "performers": {
@@ -8892,9 +10640,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["藤木テツ"],
-      "arrange": ["佐々木裕"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "藤木テツ"
+      ],
+      "arrange": [
+        "佐々木裕"
+      ],
       "direct": []
     },
     "performers": {
@@ -8908,7 +10662,11 @@
       "singleNumber": "17"
     },
     "formations": {
-      "firstRow": ["sakuraireika", "nishinonanase", "wakatsukiyumi"],
+      "firstRow": [
+        "sakuraireika",
+        "nishinonanase",
+        "wakatsukiyumi"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -8935,9 +10693,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["YASUSHI WATANABE"],
-      "arrange": ["YASUSHI WATANABE"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "YASUSHI WATANABE"
+      ],
+      "arrange": [
+        "YASUSHI WATANABE"
+      ],
       "direct": []
     },
     "performers": {
@@ -8951,7 +10715,11 @@
       "singleNumber": "17"
     },
     "formations": {
-      "firstRow": ["itoumarika", "inouesayuri", "nakamotohimeka"],
+      "firstRow": [
+        "itoumarika",
+        "inouesayuri",
+        "nakamotohimeka"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -8978,9 +10746,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["外山大輔"],
-      "arrange": ["APAZZI"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "外山大輔"
+      ],
+      "arrange": [
+        "APAZZI"
+      ],
       "direct": []
     },
     "performers": {
@@ -8994,7 +10768,11 @@
       "singleNumber": "17"
     },
     "formations": {
-      "firstRow": ["etoumisa", "saitouyuuri", "shinuchimai"],
+      "firstRow": [
+        "etoumisa",
+        "saitouyuuri",
+        "shinuchimai"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -9021,9 +10799,17 @@
     "musicVideo": "",
     "type": "solo",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["杉山勝彦"],
-      "arrange": ["杉山勝彦", "三谷秀甫", "谷地学"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "杉山勝彦",
+        "三谷秀甫",
+        "谷地学"
+      ],
       "direct": []
     },
     "performers": {
@@ -9037,7 +10823,9 @@
       "singleNumber": "17"
     },
     "formations": {
-      "firstRow": ["saitouasuka"],
+      "firstRow": [
+        "saitouasuka"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -9064,9 +10852,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["SaSA"],
-      "arrange": ["SaSA"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "SaSA"
+      ],
+      "arrange": [
+        "SaSA"
+      ],
       "direct": []
     },
     "performers": {
@@ -9080,7 +10874,11 @@
       "singleNumber": "17"
     },
     "formations": {
-      "firstRow": ["ikutaerika", "ikomarina", "hoshinominami"],
+      "firstRow": [
+        "ikutaerika",
+        "ikomarina",
+        "hoshinominami"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -9107,9 +10905,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["ハサミマン"],
-      "arrange": ["ハサミマン"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "ハサミマン"
+      ],
+      "arrange": [
+        "ハサミマン"
+      ],
       "direct": []
     },
     "performers": {
@@ -9123,7 +10927,11 @@
       "singleNumber": "17"
     },
     "formations": {
-      "firstRow": ["kitanohinako", "teradaranze", "horimiona"],
+      "firstRow": [
+        "kitanohinako",
+        "teradaranze",
+        "horimiona"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -9150,9 +10958,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Masayoshi Kawabata"],
-      "arrange": ["Masayoshi Kawabata"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Masayoshi Kawabata"
+      ],
+      "arrange": [
+        "Masayoshi Kawabata"
+      ],
       "direct": []
     },
     "performers": {
@@ -9166,7 +10980,10 @@
       "singleNumber": "17"
     },
     "formations": {
-      "firstRow": ["shiraishimai", "matsumurasayuri"],
+      "firstRow": [
+        "shiraishimai",
+        "matsumurasayuri"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -9193,9 +11010,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["早川博隆"],
-      "arrange": ["早川博隆"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "早川博隆"
+      ],
+      "arrange": [
+        "早川博隆"
+      ],
       "direct": []
     },
     "performers": {
@@ -9209,7 +11032,10 @@
       "singleNumber": "17"
     },
     "formations": {
-      "firstRow": ["akimotomanatsu", "takayamakazumi"],
+      "firstRow": [
+        "akimotomanatsu",
+        "takayamakazumi"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -9236,9 +11062,15 @@
     "musicVideo": "",
     "type": "solo",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["小松清人"],
-      "arrange": ["小松清人"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "小松清人"
+      ],
+      "arrange": [
+        "小松清人"
+      ],
       "direct": []
     },
     "performers": {
@@ -9252,7 +11084,9 @@
       "singleNumber": "19"
     },
     "formations": {
-      "firstRow": ["nakamotohimeka"],
+      "firstRow": [
+        "nakamotohimeka"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -9279,13 +11113,21 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["ツキダタダシ"],
-      "arrange": ["ツキダタダシ"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "ツキダタダシ"
+      ],
+      "arrange": [
+        "ツキダタダシ"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["suzukiayane"],
+      "center": [
+        "suzukiayane"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -9337,13 +11179,21 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["HRK"],
-      "arrange": ["APAZZI"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "HRK"
+      ],
+      "arrange": [
+        "APAZZI"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["teradaranze"],
+      "center": [
+        "teradaranze"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -9395,13 +11245,21 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["岩崎哲也"],
-      "arrange": ["関根佑樹"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "岩崎哲也"
+      ],
+      "arrange": [
+        "関根佑樹"
+      ],
       "direct": []
     },
     "performers": {
-      "center": ["higuchihina"],
+      "center": [
+        "higuchihina"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -9453,9 +11311,15 @@
     "musicVideo": "",
     "type": "lead",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["杉山勝彦"],
-      "arrange": ["野中\"まさ\"雄一"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "野中\"まさ\"雄一"
+      ],
       "direct": []
     },
     "performers": {
@@ -9515,9 +11379,16 @@
     "musicVideo": "",
     "type": "solo",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["杉山勝彦"],
-      "arrange": ["杉山勝彦", "有木竜郎"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "杉山勝彦",
+        "有木竜郎"
+      ],
       "direct": []
     },
     "performers": {
@@ -9531,7 +11402,9 @@
       "singleNumber": "22"
     },
     "formations": {
-      "firstRow": ["etoumisa"],
+      "firstRow": [
+        "etoumisa"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -9558,9 +11431,15 @@
     "musicVideo": "",
     "type": "fourth generation",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["山田智和"],
-      "arrange": ["住谷翔平"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "山田智和"
+      ],
+      "arrange": [
+        "住谷翔平"
+      ],
       "direct": []
     },
     "performers": {
@@ -9613,9 +11492,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Super Mahirock"],
-      "arrange": ["Huge M"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Super Mahirock"
+      ],
+      "arrange": [
+        "Huge M"
+      ],
       "direct": []
     },
     "performers": {
@@ -9662,9 +11547,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["庄司裕"],
-      "arrange": ["庄司裕"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "庄司裕"
+      ],
+      "arrange": [
+        "庄司裕"
+      ],
       "direct": []
     },
     "performers": {
@@ -9678,7 +11569,11 @@
       "singleNumber": "22"
     },
     "formations": {
-      "firstRow": ["ikutaerika", "kuboshiori", "sakuraireika"],
+      "firstRow": [
+        "ikutaerika",
+        "kuboshiori",
+        "sakuraireika"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -9705,9 +11600,17 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["浦島健太", "菊池博人"],
-      "arrange": ["浦島健太", "菊池博人"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "浦島健太",
+        "菊池博人"
+      ],
+      "arrange": [
+        "浦島健太",
+        "菊池博人"
+      ],
       "direct": []
     },
     "performers": {
@@ -9753,9 +11656,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["BASEMINT"],
-      "arrange": ["BASEMINT"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "BASEMINT"
+      ],
+      "arrange": [
+        "BASEMINT"
+      ],
       "direct": []
     },
     "performers": {
@@ -9769,7 +11678,11 @@
       "singleNumber": "22"
     },
     "formations": {
-      "firstRow": ["kitanohinako", "horimiona", "watanabemiria"],
+      "firstRow": [
+        "kitanohinako",
+        "horimiona",
+        "watanabemiria"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -9796,9 +11709,15 @@
     "musicVideo": "",
     "type": "special",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["渡辺剛"],
-      "arrange": ["渡辺剛"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "渡辺剛"
+      ],
+      "arrange": [
+        "渡辺剛"
+      ],
       "direct": []
     },
     "performers": {
@@ -9856,13 +11775,24 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Ryota Saito", "TETTA"],
-      "arrange": ["野中“まさ”雄一"],
-      "direct": ["池田一真"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Ryota Saito",
+        "TETTA"
+      ],
+      "arrange": [
+        "野中“まさ”雄一"
+      ],
+      "direct": [
+        "池田一真"
+      ]
     },
     "performers": {
-      "center": ["saitouasuka"],
+      "center": [
+        "saitouasuka"
+      ],
       "fukujin": "row-1-2",
       "solo": "",
       "unit": ""
@@ -9919,13 +11849,23 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["CHOCOLATE MIX"],
-      "arrange": ["CHOCOLATE MIX"],
-      "direct": ["maxilla"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "CHOCOLATE MIX"
+      ],
+      "arrange": [
+        "CHOCOLATE MIX"
+      ],
+      "direct": [
+        "maxilla"
+      ]
     },
     "performers": {
-      "center": ["teradaranze"],
+      "center": [
+        "teradaranze"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -9968,10 +11908,18 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["Akira Sunset, APAZZI"],
-      "arrange": ["Akira Sunset, APAZZI"],
-      "direct": ["伊藤衆人"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset, APAZZI"
+      ],
+      "arrange": [
+        "Akira Sunset, APAZZI"
+      ],
+      "direct": [
+        "伊藤衆人"
+      ]
     },
     "performers": {
       "center": [],
@@ -9984,7 +11932,10 @@
       "singleNumber": "23"
     },
     "formations": {
-      "firstRow": ["saitouasuka", "shiraishimai"],
+      "firstRow": [
+        "saitouasuka",
+        "shiraishimai"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -10006,9 +11957,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["山田智和"],
-      "arrange": ["APAZZI"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "山田智和"
+      ],
+      "arrange": [
+        "APAZZI"
+      ],
       "direct": []
     },
     "performers": {
@@ -10050,10 +12007,18 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["近藤圭一"],
-      "arrange": ["近藤圭一"],
-      "direct": ["泉田岳"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "近藤圭一"
+      ],
+      "arrange": [
+        "近藤圭一"
+      ],
+      "direct": [
+        "泉田岳"
+      ]
     },
     "performers": {
       "center": [],
@@ -10094,13 +12059,24 @@
     "musicVideo": "",
     "type": "fourth generation",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["杉山勝彦"],
-      "arrange": ["杉山勝彦", "谷地学"],
-      "direct": ["月田茂"]
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "杉山勝彦",
+        "谷地学"
+      ],
+      "direct": [
+        "月田茂"
+      ]
     },
     "performers": {
-      "center": ["endousakura"],
+      "center": [
+        "endousakura"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -10144,9 +12120,15 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
-      "compose": ["doubleglass"],
-      "arrange": ["doubleglass"],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "doubleglass"
+      ],
+      "arrange": [
+        "doubleglass"
+      ],
       "direct": []
     },
     "performers": {
@@ -10160,7 +12142,10 @@
       "singleNumber": "23"
     },
     "formations": {
-      "firstRow": ["ikutaerika", "matsumurasayuri"],
+      "firstRow": [
+        "ikutaerika",
+        "matsumurasayuri"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -10182,13 +12167,17 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": ["秋元康"],
+      "lyrics": [
+        "秋元康"
+      ],
       "compose": [],
       "arrange": [],
       "direct": []
     },
     "performers": {
-      "center": ["endousakura"],
+      "center": [
+        "endousakura"
+      ],
       "fukujin": "row-1-2",
       "solo": "",
       "unit": ""
@@ -10241,13 +12230,17 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
+      "lyrics": [
+        "秋元康"
+      ],
       "compose": [],
       "arrange": [],
       "direct": []
     },
     "performers": {
-      "center": ["saitouasuka"],
+      "center": [
+        "saitouasuka"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""
@@ -10304,7 +12297,9 @@
     "musicVideo": "",
     "type": "unit",
     "creators": {
-      "lyrics": ["秋元康"],
+      "lyrics": [
+        "秋元康"
+      ],
       "compose": [],
       "arrange": [],
       "direct": []
@@ -10320,7 +12315,11 @@
       "singleNumber": "24"
     },
     "formations": {
-      "firstRow": ["saitouasuka", "horimiona", "yamashitamizuki"],
+      "firstRow": [
+        "saitouasuka",
+        "horimiona",
+        "yamashitamizuki"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -10342,7 +12341,9 @@
     "musicVideo": "",
     "type": "fourth generation",
     "creators": {
-      "lyrics": ["秋元康"],
+      "lyrics": [
+        "秋元康"
+      ],
       "compose": [],
       "arrange": [],
       "direct": []
@@ -10392,7 +12393,9 @@
     "musicVideo": "",
     "type": "solo",
     "creators": {
-      "lyrics": ["秋元康"],
+      "lyrics": [
+        "秋元康"
+      ],
       "compose": [],
       "arrange": [],
       "direct": []
@@ -10408,7 +12411,9 @@
       "singleNumber": "24"
     },
     "formations": {
-      "firstRow": ["sakuraireika"],
+      "firstRow": [
+        "sakuraireika"
+      ],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []
@@ -10430,7 +12435,9 @@
     "musicVideo": "",
     "type": "under",
     "creators": {
-      "lyrics": ["秋元康"],
+      "lyrics": [
+        "秋元康"
+      ],
       "compose": [],
       "arrange": [],
       "direct": []
@@ -10485,13 +12492,17 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": ["秋元康"],
+      "lyrics": [
+        "秋元康"
+      ],
       "compose": [],
       "arrange": [],
       "direct": []
     },
     "performers": {
-      "center": ["endousakura"],
+      "center": [
+        "endousakura"
+      ],
       "fukujin": [],
       "solo": "",
       "unit": ""

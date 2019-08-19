@@ -1,0 +1,69 @@
+@import "styles/colors.scss";
+@import "styles/elevations.scss";
+@import "styles/typography.scss";
+
+.container {
+  display: flex;
+  font-size: $size-caption;
+  font-weight: $weight-regular;
+  max-width: 480px;
+  width: 100%;
+  height: 32px;
+}
+
+%counter-bar {
+  box-sizing: border-box;
+  border-style: solid;
+  border-radius: 0;
+}
+
+.under {
+  @extend %elevation-1;
+  box-sizing: border-box;
+  background-color: $white;
+  color: $gray-3;
+  line-height: 32px;
+  text-align: center;
+}
+
+.selectedcontainer {
+  @extend %counter-bar, %elevation-1;
+  display: flex;
+  border-width: 1px;
+  border-color: $white;
+  line-height: 28px;
+}
+
+%bar-portion {
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0;
+}
+
+.selected {
+  @extend %bar-portion;
+  z-index: 3;
+  border-color: $white;
+  background-color: $gray-3;
+  color: $white;
+  text-align: center;
+}
+
+.fukujin {
+  @extend %bar-portion;
+  z-index: 3;
+  border-color: $white;
+  background-color: $gray-1;
+  color: $white;
+  text-align: center;
+}
+
+.center {
+  @extend %bar-portion;
+  z-index: 4;
+  border-color: $white;
+  background-color: $pink-1;
+  color: $white;
+  text-align: center;
+}

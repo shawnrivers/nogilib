@@ -148,32 +148,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "skip",
-      "2": "skip",
-      "3": "skip",
-      "4": "fukujin",
-      "5": "fukujin",
-      "6": "selected",
-      "7": "selected",
-      "8": "selected",
-      "9": "fukujin",
-      "10": "fukujin",
-      "11": "fukujin",
-      "12": "fukujin",
-      "13": "fukujin",
-      "14": "fukujin",
-      "15": "fukujin",
-      "16": "fukujin",
-      "17": "fukujin",
-      "18": "fukujin",
-      "19": "selected",
-      "20": "fukujin",
-      "21": "fukujin",
-      "22": "fukujin",
-      "23": "fukujin",
-      "24": "selected"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "skip"
+      },
+      {
+        "singleNumber": "2",
+        "position": "skip"
+      },
+      {
+        "singleNumber": "3",
+        "position": "skip"
+      },
+      {
+        "singleNumber": "4",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "5",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "6",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "7",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "8",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "9",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "10",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "11",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "12",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "13",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "14",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "15",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "16",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "17",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "18",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "19",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "20",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "21",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "22",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "23",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "24",
+        "position": "selected"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 16,
@@ -344,32 +416,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "fukujin",
-      "2": "selected",
-      "3": "fukujin",
-      "4": "fukujin",
-      "5": "fukujin",
-      "6": "fukujin",
-      "7": "fukujin",
-      "8": "selected",
-      "9": "skip",
-      "10": "center",
-      "11": "fukujin",
-      "12": "fukujin",
-      "13": "fukujin",
-      "14": "fukujin",
-      "15": "fukujin",
-      "16": "fukujin",
-      "17": "fukujin",
-      "18": "fukujin",
-      "19": "fukujin",
-      "20": "fukujin",
-      "21": "fukujin",
-      "22": "fukujin",
-      "23": "fukujin",
-      "24": "fukujin"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "2",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "3",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "4",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "5",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "6",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "7",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "8",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "9",
+        "position": "skip"
+      },
+      {
+        "singleNumber": "10",
+        "position": "center"
+      },
+      {
+        "singleNumber": "11",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "12",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "13",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "14",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "15",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "16",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "17",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "18",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "19",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "20",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "21",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "22",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "23",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "24",
+        "position": "fukujin"
+      }
+    ],
     "positionsCounter": {
       "center": 1,
       "fukujin": 21,
@@ -527,32 +671,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "trainee",
-      "8": "trainee",
-      "9": "trainee",
-      "10": "under",
-      "11": "under",
-      "12": "under",
-      "13": "under",
-      "14": "under",
-      "15": "under",
-      "16": "under",
-      "17": "under",
-      "18": "under",
-      "19": "under",
-      "20": "under",
-      "21": "under",
-      "22": "under",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "8",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "9",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "10",
+        "position": "under"
+      },
+      {
+        "singleNumber": "11",
+        "position": "under"
+      },
+      {
+        "singleNumber": "12",
+        "position": "under"
+      },
+      {
+        "singleNumber": "13",
+        "position": "under"
+      },
+      {
+        "singleNumber": "14",
+        "position": "under"
+      },
+      {
+        "singleNumber": "15",
+        "position": "under"
+      },
+      {
+        "singleNumber": "16",
+        "position": "under"
+      },
+      {
+        "singleNumber": "17",
+        "position": "under"
+      },
+      {
+        "singleNumber": "18",
+        "position": "under"
+      },
+      {
+        "singleNumber": "19",
+        "position": "under"
+      },
+      {
+        "singleNumber": "20",
+        "position": "under"
+      },
+      {
+        "singleNumber": "21",
+        "position": "under"
+      },
+      {
+        "singleNumber": "22",
+        "position": "under"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -702,32 +918,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "trainee",
-      "8": "trainee",
-      "9": "trainee",
-      "10": "trainee",
-      "11": "trainee",
-      "12": "under",
-      "13": "under",
-      "14": "under",
-      "15": "under",
-      "16": "under",
-      "17": "under",
-      "18": "under",
-      "19": "under",
-      "20": "under",
-      "21": "under",
-      "22": "under",
-      "23": "under",
-      "24": "under"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "8",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "9",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "10",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "11",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "12",
+        "position": "under"
+      },
+      {
+        "singleNumber": "13",
+        "position": "under"
+      },
+      {
+        "singleNumber": "14",
+        "position": "under"
+      },
+      {
+        "singleNumber": "15",
+        "position": "under"
+      },
+      {
+        "singleNumber": "16",
+        "position": "under"
+      },
+      {
+        "singleNumber": "17",
+        "position": "under"
+      },
+      {
+        "singleNumber": "18",
+        "position": "under"
+      },
+      {
+        "singleNumber": "19",
+        "position": "under"
+      },
+      {
+        "singleNumber": "20",
+        "position": "under"
+      },
+      {
+        "singleNumber": "21",
+        "position": "under"
+      },
+      {
+        "singleNumber": "22",
+        "position": "under"
+      },
+      {
+        "singleNumber": "23",
+        "position": "under"
+      },
+      {
+        "singleNumber": "24",
+        "position": "under"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -868,32 +1156,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "trainee",
-      "18": "trainee",
-      "19": "trainee",
-      "20": "under",
-      "21": "under",
-      "22": "selected",
-      "23": "selected",
-      "24": "under"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "18",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "19",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "20",
+        "position": "under"
+      },
+      {
+        "singleNumber": "21",
+        "position": "under"
+      },
+      {
+        "singleNumber": "22",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "23",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "24",
+        "position": "under"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -1054,32 +1414,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "selected",
-      "2": "selected",
-      "3": "selected",
-      "4": "selected",
-      "5": "selected",
-      "6": "selected",
-      "7": "under",
-      "8": "under",
-      "9": "selected",
-      "10": "under",
-      "11": "under",
-      "12": "selected",
-      "13": "selected",
-      "14": "selected",
-      "15": "under",
-      "16": "selected",
-      "17": "selected",
-      "18": "selected",
-      "19": "fukujin",
-      "20": "selected",
-      "21": "selected",
-      "22": "selected",
-      "23": "selected",
-      "24": "skip"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "2",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "3",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "4",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "5",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "6",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "7",
+        "position": "under"
+      },
+      {
+        "singleNumber": "8",
+        "position": "under"
+      },
+      {
+        "singleNumber": "9",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "10",
+        "position": "under"
+      },
+      {
+        "singleNumber": "11",
+        "position": "under"
+      },
+      {
+        "singleNumber": "12",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "13",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "14",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "15",
+        "position": "under"
+      },
+      {
+        "singleNumber": "16",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "17",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "18",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "19",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "20",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "21",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "22",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "23",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "24",
+        "position": "skip"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 1,
@@ -1220,32 +1652,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "trainee",
-      "18": "trainee",
-      "19": "trainee",
-      "20": "under",
-      "21": "fukujin",
-      "22": "under",
-      "23": "selected",
-      "24": "under"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "18",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "19",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "20",
+        "position": "under"
+      },
+      {
+        "singleNumber": "21",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "22",
+        "position": "under"
+      },
+      {
+        "singleNumber": "23",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "24",
+        "position": "under"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 1,
@@ -1391,32 +1895,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "trainee",
-      "18": "trainee",
-      "19": "trainee",
-      "20": "under",
-      "21": "fukujin",
-      "22": "fukujin",
-      "23": "fukujin",
-      "24": "selected"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "18",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "19",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "20",
+        "position": "under"
+      },
+      {
+        "singleNumber": "21",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "22",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "23",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "24",
+        "position": "selected"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 3,
@@ -1583,32 +2159,104 @@
         "type": "unit"
       }
     ],
-    "positionsHistory": {
-      "1": "under",
-      "2": "under",
-      "3": "under",
-      "4": "under",
-      "5": "under",
-      "6": "under",
-      "7": "selected",
-      "8": "under",
-      "9": "selected",
-      "10": "selected",
-      "11": "selected",
-      "12": "selected",
-      "13": "fukujin",
-      "14": "fukujin",
-      "15": "fukujin",
-      "16": "fukujin",
-      "17": "fukujin",
-      "18": "fukujin",
-      "19": "fukujin",
-      "20": "fukujin",
-      "21": "fukujin",
-      "22": "fukujin",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "under"
+      },
+      {
+        "singleNumber": "2",
+        "position": "under"
+      },
+      {
+        "singleNumber": "3",
+        "position": "under"
+      },
+      {
+        "singleNumber": "4",
+        "position": "under"
+      },
+      {
+        "singleNumber": "5",
+        "position": "under"
+      },
+      {
+        "singleNumber": "6",
+        "position": "under"
+      },
+      {
+        "singleNumber": "7",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "8",
+        "position": "under"
+      },
+      {
+        "singleNumber": "9",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "10",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "11",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "12",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "13",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "14",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "15",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "16",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "17",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "18",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "19",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "20",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "21",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "22",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 10,
@@ -1754,32 +2402,104 @@
         "type": "unit"
       }
     ],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "trainee",
-      "18": "center",
-      "19": "trainee",
-      "20": "fukujin",
-      "21": "fukujin",
-      "22": "selected",
-      "23": "fukujin",
-      "24": "skip"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "18",
+        "position": "center"
+      },
+      {
+        "singleNumber": "19",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "20",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "21",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "22",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "23",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "24",
+        "position": "skip"
+      }
+    ],
     "positionsCounter": {
       "center": 1,
       "fukujin": 4,
@@ -1936,32 +2656,104 @@
         "type": "unit"
       }
     ],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "trainee",
-      "8": "selected",
-      "9": "under",
-      "10": "under",
-      "11": "under",
-      "12": "under",
-      "13": "under",
-      "14": "under",
-      "15": "selected",
-      "16": "selected",
-      "17": "selected",
-      "18": "under",
-      "19": "selected",
-      "20": "skip",
-      "21": "under",
-      "22": "under",
-      "23": "fukujin",
-      "24": "selected"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "8",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "9",
+        "position": "under"
+      },
+      {
+        "singleNumber": "10",
+        "position": "under"
+      },
+      {
+        "singleNumber": "11",
+        "position": "under"
+      },
+      {
+        "singleNumber": "12",
+        "position": "under"
+      },
+      {
+        "singleNumber": "13",
+        "position": "under"
+      },
+      {
+        "singleNumber": "14",
+        "position": "under"
+      },
+      {
+        "singleNumber": "15",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "16",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "17",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "18",
+        "position": "under"
+      },
+      {
+        "singleNumber": "19",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "20",
+        "position": "skip"
+      },
+      {
+        "singleNumber": "21",
+        "position": "under"
+      },
+      {
+        "singleNumber": "22",
+        "position": "under"
+      },
+      {
+        "singleNumber": "23",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "24",
+        "position": "selected"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 1,
@@ -2107,32 +2899,104 @@
         "type": "unit"
       }
     ],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "trainee",
-      "18": "trainee",
-      "19": "trainee",
-      "20": "fukujin",
-      "21": "skip",
-      "22": "under",
-      "23": "fukujin",
-      "24": "selected"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "18",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "19",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "20",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "21",
+        "position": "skip"
+      },
+      {
+        "singleNumber": "22",
+        "position": "under"
+      },
+      {
+        "singleNumber": "23",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "24",
+        "position": "selected"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 2,
@@ -2289,32 +3153,104 @@
         "type": "unit"
       }
     ],
-    "positionsHistory": {
-      "1": "selected",
-      "2": "under",
-      "3": "under",
-      "4": "selected",
-      "5": "under",
-      "6": "under",
-      "7": "selected",
-      "8": "under",
-      "9": "under",
-      "10": "under",
-      "11": "selected",
-      "12": "selected",
-      "13": "fukujin",
-      "14": "fukujin",
-      "15": "center",
-      "16": "fukujin",
-      "17": "fukujin",
-      "18": "fukujin",
-      "19": "center",
-      "20": "fukujin",
-      "21": "center",
-      "22": "fukujin",
-      "23": "center",
-      "24": "fukujin"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "2",
+        "position": "under"
+      },
+      {
+        "singleNumber": "3",
+        "position": "under"
+      },
+      {
+        "singleNumber": "4",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "5",
+        "position": "under"
+      },
+      {
+        "singleNumber": "6",
+        "position": "under"
+      },
+      {
+        "singleNumber": "7",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "8",
+        "position": "under"
+      },
+      {
+        "singleNumber": "9",
+        "position": "under"
+      },
+      {
+        "singleNumber": "10",
+        "position": "under"
+      },
+      {
+        "singleNumber": "11",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "12",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "13",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "14",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "15",
+        "position": "center"
+      },
+      {
+        "singleNumber": "16",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "17",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "18",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "19",
+        "position": "center"
+      },
+      {
+        "singleNumber": "20",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "21",
+        "position": "center"
+      },
+      {
+        "singleNumber": "22",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "23",
+        "position": "center"
+      },
+      {
+        "singleNumber": "24",
+        "position": "fukujin"
+      }
+    ],
     "positionsCounter": {
       "center": 4,
       "fukujin": 12,
@@ -2479,32 +3415,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "selected",
-      "2": "selected",
-      "3": "selected",
-      "4": "under",
-      "5": "under",
-      "6": "selected",
-      "7": "under",
-      "8": "under",
-      "9": "selected",
-      "10": "under",
-      "11": "under",
-      "12": "selected",
-      "13": "under",
-      "14": "under",
-      "15": "under",
-      "16": "under",
-      "17": "selected",
-      "18": "under",
-      "19": "selected",
-      "20": "under",
-      "21": "selected",
-      "22": "selected",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "2",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "3",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "4",
+        "position": "under"
+      },
+      {
+        "singleNumber": "5",
+        "position": "under"
+      },
+      {
+        "singleNumber": "6",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "7",
+        "position": "under"
+      },
+      {
+        "singleNumber": "8",
+        "position": "under"
+      },
+      {
+        "singleNumber": "9",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "10",
+        "position": "under"
+      },
+      {
+        "singleNumber": "11",
+        "position": "under"
+      },
+      {
+        "singleNumber": "12",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "13",
+        "position": "under"
+      },
+      {
+        "singleNumber": "14",
+        "position": "under"
+      },
+      {
+        "singleNumber": "15",
+        "position": "under"
+      },
+      {
+        "singleNumber": "16",
+        "position": "under"
+      },
+      {
+        "singleNumber": "17",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "18",
+        "position": "under"
+      },
+      {
+        "singleNumber": "19",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "20",
+        "position": "under"
+      },
+      {
+        "singleNumber": "21",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "22",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -2650,32 +3658,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "trainee",
-      "18": "trainee",
-      "19": "trainee",
-      "20": "under",
-      "21": "under",
-      "22": "under",
-      "23": "selected",
-      "24": "under"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "18",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "19",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "20",
+        "position": "under"
+      },
+      {
+        "singleNumber": "21",
+        "position": "under"
+      },
+      {
+        "singleNumber": "22",
+        "position": "under"
+      },
+      {
+        "singleNumber": "23",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "24",
+        "position": "under"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -2840,32 +3920,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "selected",
-      "2": "fukujin",
-      "3": "selected",
-      "4": "fukujin",
-      "5": "fukujin",
-      "6": "fukujin",
-      "7": "fukujin",
-      "8": "selected",
-      "9": "fukujin",
-      "10": "fukujin",
-      "11": "fukujin",
-      "12": "fukujin",
-      "13": "selected",
-      "14": "selected",
-      "15": "fukujin",
-      "16": "selected",
-      "17": "fukujin",
-      "18": "selected",
-      "19": "fukujin",
-      "20": "fukujin",
-      "21": "fukujin",
-      "22": "fukujin",
-      "23": "fukujin",
-      "24": "fukujin"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "2",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "3",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "4",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "5",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "6",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "7",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "8",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "9",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "10",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "11",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "12",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "13",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "14",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "15",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "16",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "17",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "18",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "19",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "20",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "21",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "22",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "23",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "24",
+        "position": "fukujin"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 17,
@@ -3011,32 +4163,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "trainee",
-      "8": "trainee",
-      "9": "trainee",
-      "10": "trainee",
-      "11": "trainee",
-      "12": "under",
-      "13": "under",
-      "14": "under",
-      "15": "under",
-      "16": "under",
-      "17": "under",
-      "18": "under",
-      "19": "under",
-      "20": "under",
-      "21": "under",
-      "22": "under",
-      "23": "under",
-      "24": "under"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "8",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "9",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "10",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "11",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "12",
+        "position": "under"
+      },
+      {
+        "singleNumber": "13",
+        "position": "under"
+      },
+      {
+        "singleNumber": "14",
+        "position": "under"
+      },
+      {
+        "singleNumber": "15",
+        "position": "under"
+      },
+      {
+        "singleNumber": "16",
+        "position": "under"
+      },
+      {
+        "singleNumber": "17",
+        "position": "under"
+      },
+      {
+        "singleNumber": "18",
+        "position": "under"
+      },
+      {
+        "singleNumber": "19",
+        "position": "under"
+      },
+      {
+        "singleNumber": "20",
+        "position": "under"
+      },
+      {
+        "singleNumber": "21",
+        "position": "under"
+      },
+      {
+        "singleNumber": "22",
+        "position": "under"
+      },
+      {
+        "singleNumber": "23",
+        "position": "under"
+      },
+      {
+        "singleNumber": "24",
+        "position": "under"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -3177,32 +4401,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "trainee",
-      "18": "trainee",
-      "19": "trainee",
-      "20": "under",
-      "21": "under",
-      "22": "selected",
-      "23": "selected",
-      "24": "under"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "18",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "19",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "20",
+        "position": "under"
+      },
+      {
+        "singleNumber": "21",
+        "position": "under"
+      },
+      {
+        "singleNumber": "22",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "23",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "24",
+        "position": "under"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -3379,32 +4675,104 @@
         "type": "unit"
       }
     ],
-    "positionsHistory": {
-      "1": "fukujin",
-      "2": "fukujin",
-      "3": "fukujin",
-      "4": "fukujin",
-      "5": "fukujin",
-      "6": "center",
-      "7": "fukujin",
-      "8": "fukujin",
-      "9": "fukujin",
-      "10": "fukujin",
-      "11": "fukujin",
-      "12": "fukujin",
-      "13": "center",
-      "14": "fukujin",
-      "15": "fukujin",
-      "16": "fukujin",
-      "17": "center",
-      "18": "fukujin",
-      "19": "fukujin",
-      "20": "center",
-      "21": "fukujin",
-      "22": "fukujin",
-      "23": "fukujin",
-      "24": "fukujin"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "2",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "3",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "4",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "5",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "6",
+        "position": "center"
+      },
+      {
+        "singleNumber": "7",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "8",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "9",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "10",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "11",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "12",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "13",
+        "position": "center"
+      },
+      {
+        "singleNumber": "14",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "15",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "16",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "17",
+        "position": "center"
+      },
+      {
+        "singleNumber": "18",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "19",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "20",
+        "position": "center"
+      },
+      {
+        "singleNumber": "21",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "22",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "23",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "24",
+        "position": "fukujin"
+      }
+    ],
     "positionsCounter": {
       "center": 4,
       "fukujin": 24,
@@ -3561,32 +4929,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "trainee",
-      "8": "under",
-      "9": "under",
-      "10": "under",
-      "11": "under",
-      "12": "selected",
-      "13": "under",
-      "14": "under",
-      "15": "under",
-      "16": "selected",
-      "17": "selected",
-      "18": "selected",
-      "19": "selected",
-      "20": "selected",
-      "21": "selected",
-      "22": "selected",
-      "23": "selected",
-      "24": "selected"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "8",
+        "position": "under"
+      },
+      {
+        "singleNumber": "9",
+        "position": "under"
+      },
+      {
+        "singleNumber": "10",
+        "position": "under"
+      },
+      {
+        "singleNumber": "11",
+        "position": "under"
+      },
+      {
+        "singleNumber": "12",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "13",
+        "position": "under"
+      },
+      {
+        "singleNumber": "14",
+        "position": "under"
+      },
+      {
+        "singleNumber": "15",
+        "position": "under"
+      },
+      {
+        "singleNumber": "16",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "17",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "18",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "19",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "20",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "21",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "22",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "23",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "24",
+        "position": "selected"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -3736,32 +5176,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "trainee",
-      "8": "trainee",
-      "9": "trainee",
-      "10": "trainee",
-      "11": "trainee",
-      "12": "under",
-      "13": "under",
-      "14": "under",
-      "15": "under",
-      "16": "under",
-      "17": "under",
-      "18": "under",
-      "19": "under",
-      "20": "under",
-      "21": "selected",
-      "22": "under",
-      "23": "selected",
-      "24": "under"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "8",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "9",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "10",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "11",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "12",
+        "position": "under"
+      },
+      {
+        "singleNumber": "13",
+        "position": "under"
+      },
+      {
+        "singleNumber": "14",
+        "position": "under"
+      },
+      {
+        "singleNumber": "15",
+        "position": "under"
+      },
+      {
+        "singleNumber": "16",
+        "position": "under"
+      },
+      {
+        "singleNumber": "17",
+        "position": "under"
+      },
+      {
+        "singleNumber": "18",
+        "position": "under"
+      },
+      {
+        "singleNumber": "19",
+        "position": "under"
+      },
+      {
+        "singleNumber": "20",
+        "position": "under"
+      },
+      {
+        "singleNumber": "21",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "22",
+        "position": "under"
+      },
+      {
+        "singleNumber": "23",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "24",
+        "position": "under"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -3932,32 +5444,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "fukujin",
-      "2": "fukujin",
-      "3": "selected",
-      "4": "selected",
-      "5": "selected",
-      "6": "fukujin",
-      "7": "selected",
-      "8": "selected",
-      "9": "selected",
-      "10": "selected",
-      "11": "selected",
-      "12": "fukujin",
-      "13": "fukujin",
-      "14": "fukujin",
-      "15": "fukujin",
-      "16": "fukujin",
-      "17": "fukujin",
-      "18": "fukujin",
-      "19": "selected",
-      "20": "selected",
-      "21": "selected",
-      "22": "selected",
-      "23": "fukujin",
-      "24": "selected"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "2",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "3",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "4",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "5",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "6",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "7",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "8",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "9",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "10",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "11",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "12",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "13",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "14",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "15",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "16",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "17",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "18",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "19",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "20",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "21",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "22",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "23",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "24",
+        "position": "selected"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 11,
@@ -4107,32 +5691,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "trainee",
-      "8": "trainee",
-      "9": "trainee",
-      "10": "trainee",
-      "11": "trainee",
-      "12": "under",
-      "13": "under",
-      "14": "under",
-      "15": "under",
-      "16": "under",
-      "17": "selected",
-      "18": "under",
-      "19": "under",
-      "20": "selected",
-      "21": "under",
-      "22": "under",
-      "23": "under",
-      "24": "under"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "8",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "9",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "10",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "11",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "12",
+        "position": "under"
+      },
+      {
+        "singleNumber": "13",
+        "position": "under"
+      },
+      {
+        "singleNumber": "14",
+        "position": "under"
+      },
+      {
+        "singleNumber": "15",
+        "position": "under"
+      },
+      {
+        "singleNumber": "16",
+        "position": "under"
+      },
+      {
+        "singleNumber": "17",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "18",
+        "position": "under"
+      },
+      {
+        "singleNumber": "19",
+        "position": "under"
+      },
+      {
+        "singleNumber": "20",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "21",
+        "position": "under"
+      },
+      {
+        "singleNumber": "22",
+        "position": "under"
+      },
+      {
+        "singleNumber": "23",
+        "position": "under"
+      },
+      {
+        "singleNumber": "24",
+        "position": "under"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -4286,32 +5942,104 @@
         "type": "unit"
       }
     ],
-    "positionsHistory": {
-      "1": "selected",
-      "2": "fukujin",
-      "3": "selected",
-      "4": "under",
-      "5": "selected",
-      "6": "selected",
-      "7": "under",
-      "8": "under",
-      "9": "under",
-      "10": "under",
-      "11": "under",
-      "12": "under",
-      "13": "under",
-      "14": "under",
-      "15": "under",
-      "16": "under",
-      "17": "selected",
-      "18": "under",
-      "19": "selected",
-      "20": "under",
-      "21": "under",
-      "22": "under",
-      "23": "under",
-      "24": "under"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "2",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "3",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "4",
+        "position": "under"
+      },
+      {
+        "singleNumber": "5",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "6",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "7",
+        "position": "under"
+      },
+      {
+        "singleNumber": "8",
+        "position": "under"
+      },
+      {
+        "singleNumber": "9",
+        "position": "under"
+      },
+      {
+        "singleNumber": "10",
+        "position": "under"
+      },
+      {
+        "singleNumber": "11",
+        "position": "under"
+      },
+      {
+        "singleNumber": "12",
+        "position": "under"
+      },
+      {
+        "singleNumber": "13",
+        "position": "under"
+      },
+      {
+        "singleNumber": "14",
+        "position": "under"
+      },
+      {
+        "singleNumber": "15",
+        "position": "under"
+      },
+      {
+        "singleNumber": "16",
+        "position": "under"
+      },
+      {
+        "singleNumber": "17",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "18",
+        "position": "under"
+      },
+      {
+        "singleNumber": "19",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "20",
+        "position": "under"
+      },
+      {
+        "singleNumber": "21",
+        "position": "under"
+      },
+      {
+        "singleNumber": "22",
+        "position": "under"
+      },
+      {
+        "singleNumber": "23",
+        "position": "under"
+      },
+      {
+        "singleNumber": "24",
+        "position": "under"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 1,
@@ -4452,32 +6180,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "trainee",
-      "18": "trainee",
-      "19": "trainee",
-      "20": "under",
-      "21": "under",
-      "22": "under",
-      "23": "under",
-      "24": "under"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "18",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "19",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "20",
+        "position": "under"
+      },
+      {
+        "singleNumber": "21",
+        "position": "under"
+      },
+      {
+        "singleNumber": "22",
+        "position": "under"
+      },
+      {
+        "singleNumber": "23",
+        "position": "under"
+      },
+      {
+        "singleNumber": "24",
+        "position": "under"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -4654,32 +6454,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "selected",
-      "2": "selected",
-      "3": "fukujin",
-      "4": "selected",
-      "5": "selected",
-      "6": "fukujin",
-      "7": "fukujin",
-      "8": "center",
-      "9": "center",
-      "10": "fukujin",
-      "11": "center",
-      "12": "fukujin",
-      "13": "center",
-      "14": "fukujin",
-      "15": "fukujin",
-      "16": "fukujin",
-      "17": "center",
-      "18": "fukujin",
-      "19": "center",
-      "20": "fukujin",
-      "21": "fukujin",
-      "22": "center",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "2",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "3",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "4",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "5",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "6",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "7",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "8",
+        "position": "center"
+      },
+      {
+        "singleNumber": "9",
+        "position": "center"
+      },
+      {
+        "singleNumber": "10",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "11",
+        "position": "center"
+      },
+      {
+        "singleNumber": "12",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "13",
+        "position": "center"
+      },
+      {
+        "singleNumber": "14",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "15",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "16",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "17",
+        "position": "center"
+      },
+      {
+        "singleNumber": "18",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "19",
+        "position": "center"
+      },
+      {
+        "singleNumber": "20",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "21",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "22",
+        "position": "center"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 7,
       "fukujin": 18,
@@ -4824,32 +6696,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "under",
-      "2": "under",
-      "3": "under",
-      "4": "under",
-      "5": "under",
-      "6": "under",
-      "7": "under",
-      "8": "selected",
-      "9": "under",
-      "10": "under",
-      "11": "under",
-      "12": "under",
-      "13": "under",
-      "14": "under",
-      "15": "under",
-      "16": "under",
-      "17": "selected",
-      "18": "under",
-      "19": "under",
-      "20": "selected",
-      "21": "under",
-      "22": "under",
-      "23": "under",
-      "24": "under"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "under"
+      },
+      {
+        "singleNumber": "2",
+        "position": "under"
+      },
+      {
+        "singleNumber": "3",
+        "position": "under"
+      },
+      {
+        "singleNumber": "4",
+        "position": "under"
+      },
+      {
+        "singleNumber": "5",
+        "position": "under"
+      },
+      {
+        "singleNumber": "6",
+        "position": "under"
+      },
+      {
+        "singleNumber": "7",
+        "position": "under"
+      },
+      {
+        "singleNumber": "8",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "9",
+        "position": "under"
+      },
+      {
+        "singleNumber": "10",
+        "position": "under"
+      },
+      {
+        "singleNumber": "11",
+        "position": "under"
+      },
+      {
+        "singleNumber": "12",
+        "position": "under"
+      },
+      {
+        "singleNumber": "13",
+        "position": "under"
+      },
+      {
+        "singleNumber": "14",
+        "position": "under"
+      },
+      {
+        "singleNumber": "15",
+        "position": "under"
+      },
+      {
+        "singleNumber": "16",
+        "position": "under"
+      },
+      {
+        "singleNumber": "17",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "18",
+        "position": "under"
+      },
+      {
+        "singleNumber": "19",
+        "position": "under"
+      },
+      {
+        "singleNumber": "20",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "21",
+        "position": "under"
+      },
+      {
+        "singleNumber": "22",
+        "position": "under"
+      },
+      {
+        "singleNumber": "23",
+        "position": "under"
+      },
+      {
+        "singleNumber": "24",
+        "position": "under"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -5006,32 +6950,104 @@
         "type": "unit"
       }
     ],
-    "positionsHistory": {
-      "1": "fukujin",
-      "2": "selected",
-      "3": "fukujin",
-      "4": "fukujin",
-      "5": "fukujin",
-      "6": "selected",
-      "7": "under",
-      "8": "under",
-      "9": "selected",
-      "10": "selected",
-      "11": "selected",
-      "12": "selected",
-      "13": "fukujin",
-      "14": "fukujin",
-      "15": "selected",
-      "16": "selected",
-      "17": "selected",
-      "18": "fukujin",
-      "19": "selected",
-      "20": "selected",
-      "21": "selected",
-      "22": "fukujin",
-      "23": "fukujin",
-      "24": "selected"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "2",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "3",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "4",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "5",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "6",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "7",
+        "position": "under"
+      },
+      {
+        "singleNumber": "8",
+        "position": "under"
+      },
+      {
+        "singleNumber": "9",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "10",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "11",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "12",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "13",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "14",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "15",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "16",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "17",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "18",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "19",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "20",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "21",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "22",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "23",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "24",
+        "position": "selected"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 9,
@@ -5192,32 +7208,104 @@
         "type": "unit"
       }
     ],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "center",
-      "8": "fukujin",
-      "9": "selected",
-      "10": "selected",
-      "11": "selected",
-      "12": "under",
-      "13": "under",
-      "14": "selected",
-      "15": "selected",
-      "16": "fukujin",
-      "17": "fukujin",
-      "18": "fukujin",
-      "19": "fukujin",
-      "20": "fukujin",
-      "21": "fukujin",
-      "22": "fukujin",
-      "23": "fukujin",
-      "24": "fukujin"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "center"
+      },
+      {
+        "singleNumber": "8",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "9",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "10",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "11",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "12",
+        "position": "under"
+      },
+      {
+        "singleNumber": "13",
+        "position": "under"
+      },
+      {
+        "singleNumber": "14",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "15",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "16",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "17",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "18",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "19",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "20",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "21",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "22",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "23",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "24",
+        "position": "fukujin"
+      }
+    ],
     "positionsCounter": {
       "center": 1,
       "fukujin": 11,
@@ -5390,32 +7478,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "fukujin",
-      "2": "fukujin",
-      "3": "fukujin",
-      "4": "fukujin",
-      "5": "fukujin",
-      "6": "fukujin",
-      "7": "fukujin",
-      "8": "selected",
-      "9": "fukujin",
-      "10": "fukujin",
-      "11": "selected",
-      "12": "selected",
-      "13": "selected",
-      "14": "selected",
-      "15": "fukujin",
-      "16": "fukujin",
-      "17": "fukujin",
-      "18": "fukujin",
-      "19": "fukujin",
-      "20": "fukujin",
-      "21": "fukujin",
-      "22": "fukujin",
-      "23": "fukujin",
-      "24": "fukujin"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "2",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "3",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "4",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "5",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "6",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "7",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "8",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "9",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "10",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "11",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "12",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "13",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "14",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "15",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "16",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "17",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "18",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "19",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "20",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "21",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "22",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "23",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "24",
+        "position": "fukujin"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 19,
@@ -5556,32 +7716,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "trainee",
-      "18": "trainee",
-      "19": "trainee",
-      "20": "under",
-      "21": "under",
-      "22": "under",
-      "23": "under",
-      "24": "under"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "18",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "19",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "20",
+        "position": "under"
+      },
+      {
+        "singleNumber": "21",
+        "position": "under"
+      },
+      {
+        "singleNumber": "22",
+        "position": "under"
+      },
+      {
+        "singleNumber": "23",
+        "position": "under"
+      },
+      {
+        "singleNumber": "24",
+        "position": "under"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -5726,32 +7958,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "trainee",
-      "8": "trainee",
-      "9": "trainee",
-      "10": "trainee",
-      "11": "trainee",
-      "12": "skip",
-      "13": "under",
-      "14": "under",
-      "15": "under",
-      "16": "under",
-      "17": "under",
-      "18": "under",
-      "19": "under",
-      "20": "under",
-      "21": "under",
-      "22": "under",
-      "23": "under",
-      "24": "under"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "8",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "9",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "10",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "11",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "12",
+        "position": "skip"
+      },
+      {
+        "singleNumber": "13",
+        "position": "under"
+      },
+      {
+        "singleNumber": "14",
+        "position": "under"
+      },
+      {
+        "singleNumber": "15",
+        "position": "under"
+      },
+      {
+        "singleNumber": "16",
+        "position": "under"
+      },
+      {
+        "singleNumber": "17",
+        "position": "under"
+      },
+      {
+        "singleNumber": "18",
+        "position": "under"
+      },
+      {
+        "singleNumber": "19",
+        "position": "under"
+      },
+      {
+        "singleNumber": "20",
+        "position": "under"
+      },
+      {
+        "singleNumber": "21",
+        "position": "under"
+      },
+      {
+        "singleNumber": "22",
+        "position": "under"
+      },
+      {
+        "singleNumber": "23",
+        "position": "under"
+      },
+      {
+        "singleNumber": "24",
+        "position": "under"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -5901,32 +8205,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "trainee",
-      "18": "trainee",
-      "19": "trainee",
-      "20": "fukujin",
-      "21": "fukujin",
-      "22": "fukujin",
-      "23": "skip",
-      "24": "fukujin"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "18",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "19",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "20",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "21",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "22",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "23",
+        "position": "skip"
+      },
+      {
+        "singleNumber": "24",
+        "position": "fukujin"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 4,
@@ -6067,32 +8443,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "trainee",
-      "18": "trainee",
-      "19": "trainee",
-      "20": "under",
-      "21": "under",
-      "22": "under",
-      "23": "under",
-      "24": "under"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "18",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "19",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "20",
+        "position": "under"
+      },
+      {
+        "singleNumber": "21",
+        "position": "under"
+      },
+      {
+        "singleNumber": "22",
+        "position": "under"
+      },
+      {
+        "singleNumber": "23",
+        "position": "under"
+      },
+      {
+        "singleNumber": "24",
+        "position": "under"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -6245,32 +8693,104 @@
         "type": "unit"
       }
     ],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "trainee",
-      "18": "center",
-      "19": "trainee",
-      "20": "fukujin",
-      "21": "fukujin",
-      "22": "fukujin",
-      "23": "fukujin",
-      "24": "fukujin"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "18",
+        "position": "center"
+      },
+      {
+        "singleNumber": "19",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "20",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "21",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "22",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "23",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "24",
+        "position": "fukujin"
+      }
+    ],
     "positionsCounter": {
       "center": 1,
       "fukujin": 6,
@@ -6420,32 +8940,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "trainee",
-      "8": "trainee",
-      "9": "trainee",
-      "10": "trainee",
-      "11": "trainee",
-      "12": "under",
-      "13": "under",
-      "14": "under",
-      "15": "under",
-      "16": "under",
-      "17": "under",
-      "18": "under",
-      "19": "under",
-      "20": "under",
-      "21": "under",
-      "22": "under",
-      "23": "selected",
-      "24": "under"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "8",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "9",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "10",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "11",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "12",
+        "position": "under"
+      },
+      {
+        "singleNumber": "13",
+        "position": "under"
+      },
+      {
+        "singleNumber": "14",
+        "position": "under"
+      },
+      {
+        "singleNumber": "15",
+        "position": "under"
+      },
+      {
+        "singleNumber": "16",
+        "position": "under"
+      },
+      {
+        "singleNumber": "17",
+        "position": "under"
+      },
+      {
+        "singleNumber": "18",
+        "position": "under"
+      },
+      {
+        "singleNumber": "19",
+        "position": "under"
+      },
+      {
+        "singleNumber": "20",
+        "position": "under"
+      },
+      {
+        "singleNumber": "21",
+        "position": "under"
+      },
+      {
+        "singleNumber": "22",
+        "position": "under"
+      },
+      {
+        "singleNumber": "23",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "24",
+        "position": "under"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -6595,32 +9187,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "under",
-      "2": "under",
-      "3": "under",
-      "4": "under",
-      "5": "under",
-      "6": "under",
-      "7": "under",
-      "8": "selected",
-      "9": "under",
-      "10": "under",
-      "11": "under",
-      "12": "under",
-      "13": "under",
-      "14": "under",
-      "15": "under",
-      "16": "under",
-      "17": "under",
-      "18": "under",
-      "19": "under",
-      "20": "under",
-      "21": "under",
-      "22": "under",
-      "23": "under",
-      "24": "under"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "under"
+      },
+      {
+        "singleNumber": "2",
+        "position": "under"
+      },
+      {
+        "singleNumber": "3",
+        "position": "under"
+      },
+      {
+        "singleNumber": "4",
+        "position": "under"
+      },
+      {
+        "singleNumber": "5",
+        "position": "under"
+      },
+      {
+        "singleNumber": "6",
+        "position": "under"
+      },
+      {
+        "singleNumber": "7",
+        "position": "under"
+      },
+      {
+        "singleNumber": "8",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "9",
+        "position": "under"
+      },
+      {
+        "singleNumber": "10",
+        "position": "under"
+      },
+      {
+        "singleNumber": "11",
+        "position": "under"
+      },
+      {
+        "singleNumber": "12",
+        "position": "under"
+      },
+      {
+        "singleNumber": "13",
+        "position": "under"
+      },
+      {
+        "singleNumber": "14",
+        "position": "under"
+      },
+      {
+        "singleNumber": "15",
+        "position": "under"
+      },
+      {
+        "singleNumber": "16",
+        "position": "under"
+      },
+      {
+        "singleNumber": "17",
+        "position": "under"
+      },
+      {
+        "singleNumber": "18",
+        "position": "under"
+      },
+      {
+        "singleNumber": "19",
+        "position": "under"
+      },
+      {
+        "singleNumber": "20",
+        "position": "under"
+      },
+      {
+        "singleNumber": "21",
+        "position": "under"
+      },
+      {
+        "singleNumber": "22",
+        "position": "under"
+      },
+      {
+        "singleNumber": "23",
+        "position": "under"
+      },
+      {
+        "singleNumber": "24",
+        "position": "under"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -6761,32 +9425,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "trainee",
-      "24": "center"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "24",
+        "position": "center"
+      }
+    ],
     "positionsCounter": {
       "center": 1,
       "fukujin": 1,
@@ -6927,32 +9663,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "trainee",
-      "24": "fukujin"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "24",
+        "position": "fukujin"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 1,
@@ -7093,32 +9901,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "trainee",
-      "24": "trainee"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "24",
+        "position": "trainee"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -7259,32 +10139,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "trainee",
-      "24": "trainee"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "24",
+        "position": "trainee"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -7425,32 +10377,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "trainee",
-      "24": "trainee"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "24",
+        "position": "trainee"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -7591,32 +10615,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "trainee",
-      "24": "trainee"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "24",
+        "position": "trainee"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -7757,32 +10853,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "trainee",
-      "24": "trainee"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "24",
+        "position": "trainee"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -7923,32 +11091,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "trainee",
-      "24": "trainee"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "24",
+        "position": "trainee"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -8089,32 +11329,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "trainee",
-      "24": "fukujin"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "24",
+        "position": "fukujin"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 1,
@@ -8255,32 +11567,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "trainee",
-      "24": "trainee"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "24",
+        "position": "trainee"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -8421,32 +11805,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "trainee",
-      "24": "trainee"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "24",
+        "position": "trainee"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -8604,32 +12060,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "under",
-      "2": "under",
-      "3": "under",
-      "4": "under",
-      "5": "under",
-      "6": "under",
-      "7": "selected",
-      "8": "under",
-      "9": "under",
-      "10": "under",
-      "11": "under",
-      "12": "under",
-      "13": "under",
-      "14": "under",
-      "15": "under",
-      "16": "under",
-      "17": "under",
-      "18": "under",
-      "19": "under",
-      "20": "under",
-      "21": "under",
-      "22": "under",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "under"
+      },
+      {
+        "singleNumber": "2",
+        "position": "under"
+      },
+      {
+        "singleNumber": "3",
+        "position": "under"
+      },
+      {
+        "singleNumber": "4",
+        "position": "under"
+      },
+      {
+        "singleNumber": "5",
+        "position": "under"
+      },
+      {
+        "singleNumber": "6",
+        "position": "under"
+      },
+      {
+        "singleNumber": "7",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "8",
+        "position": "under"
+      },
+      {
+        "singleNumber": "9",
+        "position": "under"
+      },
+      {
+        "singleNumber": "10",
+        "position": "under"
+      },
+      {
+        "singleNumber": "11",
+        "position": "under"
+      },
+      {
+        "singleNumber": "12",
+        "position": "under"
+      },
+      {
+        "singleNumber": "13",
+        "position": "under"
+      },
+      {
+        "singleNumber": "14",
+        "position": "under"
+      },
+      {
+        "singleNumber": "15",
+        "position": "under"
+      },
+      {
+        "singleNumber": "16",
+        "position": "under"
+      },
+      {
+        "singleNumber": "17",
+        "position": "under"
+      },
+      {
+        "singleNumber": "18",
+        "position": "under"
+      },
+      {
+        "singleNumber": "19",
+        "position": "under"
+      },
+      {
+        "singleNumber": "20",
+        "position": "under"
+      },
+      {
+        "singleNumber": "21",
+        "position": "under"
+      },
+      {
+        "singleNumber": "22",
+        "position": "under"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -8775,32 +12303,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "selected",
-      "2": "under",
-      "3": "under",
-      "4": "selected",
-      "5": "under",
-      "6": "under",
-      "7": "under",
-      "8": "under",
-      "9": "under",
-      "10": "under",
-      "11": "under",
-      "12": "under",
-      "13": "under",
-      "14": "under",
-      "15": "under",
-      "16": "under",
-      "17": "under",
-      "18": "under",
-      "19": "under",
-      "20": "under",
-      "21": "under",
-      "22": "none",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "2",
+        "position": "under"
+      },
+      {
+        "singleNumber": "3",
+        "position": "under"
+      },
+      {
+        "singleNumber": "4",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "5",
+        "position": "under"
+      },
+      {
+        "singleNumber": "6",
+        "position": "under"
+      },
+      {
+        "singleNumber": "7",
+        "position": "under"
+      },
+      {
+        "singleNumber": "8",
+        "position": "under"
+      },
+      {
+        "singleNumber": "9",
+        "position": "under"
+      },
+      {
+        "singleNumber": "10",
+        "position": "under"
+      },
+      {
+        "singleNumber": "11",
+        "position": "under"
+      },
+      {
+        "singleNumber": "12",
+        "position": "under"
+      },
+      {
+        "singleNumber": "13",
+        "position": "under"
+      },
+      {
+        "singleNumber": "14",
+        "position": "under"
+      },
+      {
+        "singleNumber": "15",
+        "position": "under"
+      },
+      {
+        "singleNumber": "16",
+        "position": "under"
+      },
+      {
+        "singleNumber": "17",
+        "position": "under"
+      },
+      {
+        "singleNumber": "18",
+        "position": "under"
+      },
+      {
+        "singleNumber": "19",
+        "position": "under"
+      },
+      {
+        "singleNumber": "20",
+        "position": "under"
+      },
+      {
+        "singleNumber": "21",
+        "position": "under"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -8965,32 +12565,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "under",
-      "2": "under",
-      "3": "selected",
-      "4": "selected",
-      "5": "selected",
-      "6": "selected",
-      "7": "fukujin",
-      "8": "selected",
-      "9": "fukujin",
-      "10": "selected",
-      "11": "fukujin",
-      "12": "fukujin",
-      "13": "selected",
-      "14": "selected",
-      "15": "selected",
-      "16": "fukujin",
-      "17": "fukujin",
-      "18": "selected",
-      "19": "fukujin",
-      "20": "selected",
-      "21": "selected",
-      "22": "fukujin",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "under"
+      },
+      {
+        "singleNumber": "2",
+        "position": "under"
+      },
+      {
+        "singleNumber": "3",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "4",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "5",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "6",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "7",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "8",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "9",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "10",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "11",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "12",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "13",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "14",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "15",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "16",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "17",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "18",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "19",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "20",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "21",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "22",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 8,
@@ -9136,32 +12808,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "under",
-      "2": "under",
-      "3": "under",
-      "4": "under",
-      "5": "under",
-      "6": "under",
-      "7": "under",
-      "8": "under",
-      "9": "under",
-      "10": "selected",
-      "11": "under",
-      "12": "under",
-      "13": "under",
-      "14": "under",
-      "15": "under",
-      "16": "under",
-      "17": "under",
-      "18": "under",
-      "19": "under",
-      "20": "under",
-      "21": "none",
-      "22": "none",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "under"
+      },
+      {
+        "singleNumber": "2",
+        "position": "under"
+      },
+      {
+        "singleNumber": "3",
+        "position": "under"
+      },
+      {
+        "singleNumber": "4",
+        "position": "under"
+      },
+      {
+        "singleNumber": "5",
+        "position": "under"
+      },
+      {
+        "singleNumber": "6",
+        "position": "under"
+      },
+      {
+        "singleNumber": "7",
+        "position": "under"
+      },
+      {
+        "singleNumber": "8",
+        "position": "under"
+      },
+      {
+        "singleNumber": "9",
+        "position": "under"
+      },
+      {
+        "singleNumber": "10",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "11",
+        "position": "under"
+      },
+      {
+        "singleNumber": "12",
+        "position": "under"
+      },
+      {
+        "singleNumber": "13",
+        "position": "under"
+      },
+      {
+        "singleNumber": "14",
+        "position": "under"
+      },
+      {
+        "singleNumber": "15",
+        "position": "under"
+      },
+      {
+        "singleNumber": "16",
+        "position": "under"
+      },
+      {
+        "singleNumber": "17",
+        "position": "under"
+      },
+      {
+        "singleNumber": "18",
+        "position": "under"
+      },
+      {
+        "singleNumber": "19",
+        "position": "under"
+      },
+      {
+        "singleNumber": "20",
+        "position": "under"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -9311,32 +13055,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "skip",
-      "8": "skip",
-      "9": "trainee",
-      "10": "trainee",
-      "11": "selected",
-      "12": "under",
-      "13": "under",
-      "14": "under",
-      "15": "under",
-      "16": "under",
-      "17": "under",
-      "18": "under",
-      "19": "under",
-      "20": "under",
-      "21": "none",
-      "22": "none",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "skip"
+      },
+      {
+        "singleNumber": "8",
+        "position": "skip"
+      },
+      {
+        "singleNumber": "9",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "10",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "11",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "12",
+        "position": "under"
+      },
+      {
+        "singleNumber": "13",
+        "position": "under"
+      },
+      {
+        "singleNumber": "14",
+        "position": "under"
+      },
+      {
+        "singleNumber": "15",
+        "position": "under"
+      },
+      {
+        "singleNumber": "16",
+        "position": "under"
+      },
+      {
+        "singleNumber": "17",
+        "position": "under"
+      },
+      {
+        "singleNumber": "18",
+        "position": "under"
+      },
+      {
+        "singleNumber": "19",
+        "position": "under"
+      },
+      {
+        "singleNumber": "20",
+        "position": "under"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -9497,32 +13313,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "center",
-      "2": "center",
-      "3": "center",
-      "4": "center",
-      "5": "center",
-      "6": "fukujin",
-      "7": "fukujin",
-      "8": "fukujin",
-      "9": "fukujin",
-      "10": "fukujin",
-      "11": "fukujin",
-      "12": "center",
-      "13": "selected",
-      "14": "selected",
-      "15": "selected",
-      "16": "selected",
-      "17": "fukujin",
-      "18": "selected",
-      "19": "selected",
-      "20": "fukujin",
-      "21": "none",
-      "22": "none",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "center"
+      },
+      {
+        "singleNumber": "2",
+        "position": "center"
+      },
+      {
+        "singleNumber": "3",
+        "position": "center"
+      },
+      {
+        "singleNumber": "4",
+        "position": "center"
+      },
+      {
+        "singleNumber": "5",
+        "position": "center"
+      },
+      {
+        "singleNumber": "6",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "7",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "8",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "9",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "10",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "11",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "12",
+        "position": "center"
+      },
+      {
+        "singleNumber": "13",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "14",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "15",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "16",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "17",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "18",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "19",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "20",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 6,
       "fukujin": 14,
@@ -9672,32 +13560,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "selected",
-      "2": "under",
-      "3": "under",
-      "4": "under",
-      "5": "under",
-      "6": "under",
-      "7": "under",
-      "8": "selected",
-      "9": "under",
-      "10": "under",
-      "11": "under",
-      "12": "under",
-      "13": "under",
-      "14": "none",
-      "15": "under",
-      "16": "under",
-      "17": "under",
-      "18": "under",
-      "19": "under",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "2",
+        "position": "under"
+      },
+      {
+        "singleNumber": "3",
+        "position": "under"
+      },
+      {
+        "singleNumber": "4",
+        "position": "under"
+      },
+      {
+        "singleNumber": "5",
+        "position": "under"
+      },
+      {
+        "singleNumber": "6",
+        "position": "under"
+      },
+      {
+        "singleNumber": "7",
+        "position": "under"
+      },
+      {
+        "singleNumber": "8",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "9",
+        "position": "under"
+      },
+      {
+        "singleNumber": "10",
+        "position": "under"
+      },
+      {
+        "singleNumber": "11",
+        "position": "under"
+      },
+      {
+        "singleNumber": "12",
+        "position": "under"
+      },
+      {
+        "singleNumber": "13",
+        "position": "under"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "under"
+      },
+      {
+        "singleNumber": "16",
+        "position": "under"
+      },
+      {
+        "singleNumber": "17",
+        "position": "under"
+      },
+      {
+        "singleNumber": "18",
+        "position": "under"
+      },
+      {
+        "singleNumber": "19",
+        "position": "under"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -9851,32 +13811,104 @@
         "type": "corp"
       }
     ],
-    "positionsHistory": {
-      "1": "under",
-      "2": "under",
-      "3": "selected",
-      "4": "under",
-      "5": "under",
-      "6": "selected",
-      "7": "selected",
-      "8": "under",
-      "9": "under",
-      "10": "under",
-      "11": "selected",
-      "12": "selected",
-      "13": "selected",
-      "14": "selected",
-      "15": "under",
-      "16": "selected",
-      "17": "selected",
-      "18": "selected",
-      "19": "fukujin",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "under"
+      },
+      {
+        "singleNumber": "2",
+        "position": "under"
+      },
+      {
+        "singleNumber": "3",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "4",
+        "position": "under"
+      },
+      {
+        "singleNumber": "5",
+        "position": "under"
+      },
+      {
+        "singleNumber": "6",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "7",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "8",
+        "position": "under"
+      },
+      {
+        "singleNumber": "9",
+        "position": "under"
+      },
+      {
+        "singleNumber": "10",
+        "position": "under"
+      },
+      {
+        "singleNumber": "11",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "12",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "13",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "14",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "15",
+        "position": "under"
+      },
+      {
+        "singleNumber": "16",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "17",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "18",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "19",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 1,
@@ -10022,32 +14054,104 @@
         "type": "unit"
       }
     ],
-    "positionsHistory": {
-      "1": "under",
-      "2": "under",
-      "3": "under",
-      "4": "under",
-      "5": "under",
-      "6": "under",
-      "7": "selected",
-      "8": "under",
-      "9": "under",
-      "10": "under",
-      "11": "under",
-      "12": "under",
-      "13": "under",
-      "14": "under",
-      "15": "selected",
-      "16": "selected",
-      "17": "skip",
-      "18": "under",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "under"
+      },
+      {
+        "singleNumber": "2",
+        "position": "under"
+      },
+      {
+        "singleNumber": "3",
+        "position": "under"
+      },
+      {
+        "singleNumber": "4",
+        "position": "under"
+      },
+      {
+        "singleNumber": "5",
+        "position": "under"
+      },
+      {
+        "singleNumber": "6",
+        "position": "under"
+      },
+      {
+        "singleNumber": "7",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "8",
+        "position": "under"
+      },
+      {
+        "singleNumber": "9",
+        "position": "under"
+      },
+      {
+        "singleNumber": "10",
+        "position": "under"
+      },
+      {
+        "singleNumber": "11",
+        "position": "under"
+      },
+      {
+        "singleNumber": "12",
+        "position": "under"
+      },
+      {
+        "singleNumber": "13",
+        "position": "under"
+      },
+      {
+        "singleNumber": "14",
+        "position": "under"
+      },
+      {
+        "singleNumber": "15",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "16",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "17",
+        "position": "skip"
+      },
+      {
+        "singleNumber": "18",
+        "position": "under"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -10201,32 +14305,104 @@
         "type": "unit"
       }
     ],
-    "positionsHistory": {
-      "1": "fukujin",
-      "2": "fukujin",
-      "3": "fukujin",
-      "4": "fukujin",
-      "5": "fukujin",
-      "6": "fukujin",
-      "7": "fukujin",
-      "8": "fukujin",
-      "9": "fukujin",
-      "10": "fukujin",
-      "11": "fukujin",
-      "12": "fukujin",
-      "13": "fukujin",
-      "14": "fukujin",
-      "15": "fukujin",
-      "16": "center",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "2",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "3",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "4",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "5",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "6",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "7",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "8",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "9",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "10",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "11",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "12",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "13",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "14",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "15",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "16",
+        "position": "center"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 1,
       "fukujin": 16,
@@ -10384,32 +14560,104 @@
       }
     ],
     "units": [],
-    "positionsHistory": {
-      "1": "under",
-      "2": "under",
-      "3": "selected",
-      "4": "selected",
-      "5": "selected",
-      "6": "selected",
-      "7": "selected",
-      "8": "selected",
-      "9": "fukujin",
-      "10": "fukujin",
-      "11": "fukujin",
-      "12": "fukujin",
-      "13": "fukujin",
-      "14": "center",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "under"
+      },
+      {
+        "singleNumber": "2",
+        "position": "under"
+      },
+      {
+        "singleNumber": "3",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "4",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "5",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "6",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "7",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "8",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "9",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "10",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "11",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "12",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "13",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "14",
+        "position": "center"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 1,
       "fukujin": 6,
@@ -10554,32 +14802,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "under",
-      "2": "under",
-      "3": "under",
-      "4": "under",
-      "5": "selected",
-      "6": "under",
-      "7": "under",
-      "8": "under",
-      "9": "under",
-      "10": "under",
-      "11": "under",
-      "12": "under",
-      "13": "under",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "under"
+      },
+      {
+        "singleNumber": "2",
+        "position": "under"
+      },
+      {
+        "singleNumber": "3",
+        "position": "under"
+      },
+      {
+        "singleNumber": "4",
+        "position": "under"
+      },
+      {
+        "singleNumber": "5",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "6",
+        "position": "under"
+      },
+      {
+        "singleNumber": "7",
+        "position": "under"
+      },
+      {
+        "singleNumber": "8",
+        "position": "under"
+      },
+      {
+        "singleNumber": "9",
+        "position": "under"
+      },
+      {
+        "singleNumber": "10",
+        "position": "under"
+      },
+      {
+        "singleNumber": "11",
+        "position": "under"
+      },
+      {
+        "singleNumber": "12",
+        "position": "under"
+      },
+      {
+        "singleNumber": "13",
+        "position": "under"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -10724,32 +15044,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "fukujin",
-      "10": "fukujin",
-      "11": "fukujin",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "10",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "11",
+        "position": "fukujin"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 3,
@@ -10894,32 +15286,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "under",
-      "2": "selected",
-      "3": "under",
-      "4": "under",
-      "5": "under",
-      "6": "under",
-      "7": "under",
-      "8": "under",
-      "9": "under",
-      "10": "under",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "under"
+      },
+      {
+        "singleNumber": "2",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "3",
+        "position": "under"
+      },
+      {
+        "singleNumber": "4",
+        "position": "under"
+      },
+      {
+        "singleNumber": "5",
+        "position": "under"
+      },
+      {
+        "singleNumber": "6",
+        "position": "under"
+      },
+      {
+        "singleNumber": "7",
+        "position": "under"
+      },
+      {
+        "singleNumber": "8",
+        "position": "under"
+      },
+      {
+        "singleNumber": "9",
+        "position": "under"
+      },
+      {
+        "singleNumber": "10",
+        "position": "under"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -11055,32 +15519,104 @@
     "sites": [],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "under",
-      "2": "under",
-      "3": "under",
-      "4": "under",
-      "5": "under",
-      "6": "under",
-      "7": "under",
-      "8": "under",
-      "9": "selected",
-      "10": "under",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "under"
+      },
+      {
+        "singleNumber": "2",
+        "position": "under"
+      },
+      {
+        "singleNumber": "3",
+        "position": "under"
+      },
+      {
+        "singleNumber": "4",
+        "position": "under"
+      },
+      {
+        "singleNumber": "5",
+        "position": "under"
+      },
+      {
+        "singleNumber": "6",
+        "position": "under"
+      },
+      {
+        "singleNumber": "7",
+        "position": "under"
+      },
+      {
+        "singleNumber": "8",
+        "position": "under"
+      },
+      {
+        "singleNumber": "9",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "10",
+        "position": "under"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -11225,32 +15761,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "under",
-      "2": "under",
-      "3": "under",
-      "4": "under",
-      "5": "selected",
-      "6": "under",
-      "7": "under",
-      "8": "under",
-      "9": "under",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "under"
+      },
+      {
+        "singleNumber": "2",
+        "position": "under"
+      },
+      {
+        "singleNumber": "3",
+        "position": "under"
+      },
+      {
+        "singleNumber": "4",
+        "position": "under"
+      },
+      {
+        "singleNumber": "5",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "6",
+        "position": "under"
+      },
+      {
+        "singleNumber": "7",
+        "position": "under"
+      },
+      {
+        "singleNumber": "8",
+        "position": "under"
+      },
+      {
+        "singleNumber": "9",
+        "position": "under"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -11386,32 +15994,104 @@
     "sites": [],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "trainee",
-      "8": "trainee",
-      "9": "trainee",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "8",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "9",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -11547,32 +16227,104 @@
     "sites": [],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "trainee",
-      "8": "trainee",
-      "9": "trainee",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "8",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "9",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -11713,32 +16465,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "selected",
-      "2": "selected",
-      "3": "selected",
-      "4": "selected",
-      "5": "under",
-      "6": "under",
-      "7": "skip",
-      "8": "under",
-      "9": "under",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "2",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "3",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "4",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "5",
+        "position": "under"
+      },
+      {
+        "singleNumber": "6",
+        "position": "under"
+      },
+      {
+        "singleNumber": "7",
+        "position": "skip"
+      },
+      {
+        "singleNumber": "8",
+        "position": "under"
+      },
+      {
+        "singleNumber": "9",
+        "position": "under"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -11874,32 +16698,104 @@
     "sites": [],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "none",
-      "2": "none",
-      "3": "none",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "trainee",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -12044,32 +16940,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "under",
-      "2": "selected",
-      "3": "under",
-      "4": "under",
-      "5": "under",
-      "6": "under",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "under"
+      },
+      {
+        "singleNumber": "2",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "3",
+        "position": "under"
+      },
+      {
+        "singleNumber": "4",
+        "position": "under"
+      },
+      {
+        "singleNumber": "5",
+        "position": "under"
+      },
+      {
+        "singleNumber": "6",
+        "position": "under"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -12214,32 +17182,104 @@
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "under",
-      "2": "under",
-      "3": "under",
-      "4": "under",
-      "5": "under",
-      "6": "under",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "under"
+      },
+      {
+        "singleNumber": "2",
+        "position": "under"
+      },
+      {
+        "singleNumber": "3",
+        "position": "under"
+      },
+      {
+        "singleNumber": "4",
+        "position": "under"
+      },
+      {
+        "singleNumber": "5",
+        "position": "under"
+      },
+      {
+        "singleNumber": "6",
+        "position": "under"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -12375,32 +17415,104 @@
     "sites": [],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "under",
-      "2": "under",
-      "3": "under",
-      "4": "under",
-      "5": "under",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "under"
+      },
+      {
+        "singleNumber": "2",
+        "position": "under"
+      },
+      {
+        "singleNumber": "3",
+        "position": "under"
+      },
+      {
+        "singleNumber": "4",
+        "position": "under"
+      },
+      {
+        "singleNumber": "5",
+        "position": "under"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
@@ -12539,38 +17651,110 @@
         "url": "https://twitter.com/scarf_iwase/"
       },
       {
-        "title": "けつばん",
+        "title": "Official",
         "url": "https://ketsuban.com/"
       }
     ],
     "photoAlbums": [],
     "units": [],
-    "positionsHistory": {
-      "1": "under",
-      "2": "selected",
-      "3": "under",
-      "4": "none",
-      "5": "none",
-      "6": "none",
-      "7": "none",
-      "8": "none",
-      "9": "none",
-      "10": "none",
-      "11": "none",
-      "12": "none",
-      "13": "none",
-      "14": "none",
-      "15": "none",
-      "16": "none",
-      "17": "none",
-      "18": "none",
-      "19": "none",
-      "20": "none",
-      "21": "none",
-      "22": "none",
-      "23": "none",
-      "24": "none"
-    },
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "under"
+      },
+      {
+        "singleNumber": "2",
+        "position": "selected"
+      },
+      {
+        "singleNumber": "3",
+        "position": "under"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      }
+    ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,

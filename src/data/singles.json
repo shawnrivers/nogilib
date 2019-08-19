@@ -36,7 +36,13 @@
         "number": 1,
         "title": "夜明けまで強がらなくてもいい",
         "key": "yoakemade",
-        "inCdType": ["A", "B", "C", "D", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
         "type": "title",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/A_large.jpg",
@@ -45,14 +51,22 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["遠藤さくら"]
+          "name": [
+            "遠藤さくら"
+          ]
         }
       },
       {
         "number": 2,
         "title": "僕のこと、知ってる?",
         "key": "bokunokoto",
-        "inCdType": ["A", "B", "C", "D", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/A_large.jpg",
@@ -61,14 +75,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["齋藤飛鳥"]
+          "name": [
+            "齋藤飛鳥"
+          ]
         }
       },
       {
         "number": 3,
         "title": "路面電車の街",
         "key": "romendensha",
-        "inCdType": ["A"],
+        "inCdType": [
+          "A"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/A_large.jpg",
@@ -77,14 +95,20 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["齋藤飛鳥", "堀未央奈", "山下美月"]
+          "name": [
+            "齋藤飛鳥",
+            "堀未央奈",
+            "山下美月"
+          ]
         }
       },
       {
         "number": 4,
         "title": "図書室の君へ",
         "key": "toshoshitsu",
-        "inCdType": ["B"],
+        "inCdType": [
+          "B"
+        ],
         "type": "fourth generation",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/B_large.jpg",
@@ -100,7 +124,9 @@
         "number": 5,
         "title": "時々 思い出してください",
         "key": "tokidokiomoidashite",
-        "inCdType": ["C"],
+        "inCdType": [
+          "C"
+        ],
         "type": "solo",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/C_large.jpg",
@@ -109,14 +135,18 @@
         },
         "focusPerformers": {
           "type": "solo",
-          "name": ["桜井玲香"]
+          "name": [
+            "桜井玲香"
+          ]
         }
       },
       {
         "number": 6,
         "title": "～Do my best～じゃ意味はない",
         "key": "domybest",
-        "inCdType": ["D"],
+        "inCdType": [
+          "D"
+        ],
         "type": "under",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/D_large.jpg",
@@ -132,7 +162,9 @@
         "number": 7,
         "title": "僕の思い込み",
         "key": "bokunoomoikomi",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/T_large.jpg",
@@ -141,7 +173,9 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["遠藤さくら"]
+          "name": [
+            "遠藤さくら"
+          ]
         }
       }
     ],
@@ -156,7 +190,10 @@
         "hayakawaseira",
         "yakubomio"
       ],
-      "skips": ["inouesayuri", "oozonomomoko"]
+      "skips": [
+        "inouesayuri",
+        "oozonomomoko"
+      ]
     }
   },
   {
@@ -196,7 +233,13 @@
         "number": 1,
         "title": "Sing Out!",
         "key": "singout",
-        "inCdType": ["A", "B", "C", "D", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
         "type": "title",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/A_large.jpg",
@@ -205,14 +248,22 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["齋藤飛鳥"]
+          "name": [
+            "齋藤飛鳥"
+          ]
         }
       },
       {
         "number": 2,
         "title": "滑走路",
         "key": "kassouro",
-        "inCdType": ["A", "B", "C", "D", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
         "type": "under",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/A_large.jpg",
@@ -221,14 +272,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["寺田蘭世"]
+          "name": [
+            "寺田蘭世"
+          ]
         }
       },
       {
         "number": 3,
         "title": "のような存在",
         "key": "noyounasonzai",
-        "inCdType": ["A"],
+        "inCdType": [
+          "A"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/A_large.jpg",
@@ -237,14 +292,19 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["齋藤飛鳥", "白石麻衣"]
+          "name": [
+            "齋藤飛鳥",
+            "白石麻衣"
+          ]
         }
       },
       {
         "number": 4,
         "title": "Am I Loving?",
         "key": "amiloving",
-        "inCdType": ["B"],
+        "inCdType": [
+          "B"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/B_large.jpg",
@@ -266,7 +326,9 @@
         "number": 5,
         "title": "平行線",
         "key": "heikousen",
-        "inCdType": ["C"],
+        "inCdType": [
+          "C"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/C_large.jpg",
@@ -275,14 +337,22 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["岩本蓮加", "大園桃子", "久保史緒里", "阪口珠美", "与田祐希"]
+          "name": [
+            "岩本蓮加",
+            "大園桃子",
+            "久保史緒里",
+            "阪口珠美",
+            "与田祐希"
+          ]
         }
       },
       {
         "number": 6,
         "title": "4番目の光",
         "key": "yonbanmenohikari",
-        "inCdType": ["D"],
+        "inCdType": [
+          "D"
+        ],
         "type": "fourth generation",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/D_large.jpg",
@@ -291,14 +361,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["遠藤さくら"]
+          "name": [
+            "遠藤さくら"
+          ]
         }
       },
       {
         "number": 7,
         "title": "曖昧",
         "key": "aimai",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/T_large.jpg",
@@ -307,7 +381,9 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["からあげ姉妹"]
+          "name": [
+            "からあげ姉妹"
+          ]
         }
       }
     ],
@@ -325,7 +401,9 @@
         "hayakawaseira",
         "yakubomio"
       ],
-      "skips": ["yamashitamizuki"]
+      "skips": [
+        "yamashitamizuki"
+      ]
     }
   },
   {
@@ -365,7 +443,13 @@
         "number": 1,
         "title": "帰り道は遠回りしたくなる",
         "key": "kaerimichi",
-        "inCdType": ["A", "B", "C", "D", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
         "type": "title",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/A_large.jpg",
@@ -374,14 +458,22 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["西野七瀬"]
+          "name": [
+            "西野七瀬"
+          ]
         }
       },
       {
         "number": 2,
         "title": "キャラバンは眠らない",
         "key": "caravan",
-        "inCdType": ["A", "B", "C", "D", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/A_large.jpg",
@@ -390,14 +482,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["齋藤飛鳥"]
+          "name": [
+            "齋藤飛鳥"
+          ]
         }
       },
       {
         "number": 3,
         "title": "つづく",
         "key": "tsuduku",
-        "inCdType": ["A"],
+        "inCdType": [
+          "A"
+        ],
         "type": "solo",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/A_large.jpg",
@@ -406,14 +502,18 @@
         },
         "focusPerformers": {
           "type": "solo",
-          "name": ["西野七瀬"]
+          "name": [
+            "西野七瀬"
+          ]
         }
       },
       {
         "number": 4,
         "title": "日常",
         "key": "nichijou",
-        "inCdType": ["B"],
+        "inCdType": [
+          "B"
+        ],
         "type": "under",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/B_large.jpg",
@@ -422,14 +522,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["北野日奈子"]
+          "name": [
+            "北野日奈子"
+          ]
         }
       },
       {
         "number": 5,
         "title": "告白の順番",
         "key": "kokuhakunojunban",
-        "inCdType": ["C"],
+        "inCdType": [
+          "C"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/C_large.jpg",
@@ -438,14 +542,18 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["女子校カルテット"]
+          "name": [
+            "女子校カルテット"
+          ]
         }
       },
       {
         "number": 6,
         "title": "ショパンの嘘つき",
         "key": "chopinnousotsuki",
-        "inCdType": ["D"],
+        "inCdType": [
+          "D"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/D_large.jpg",
@@ -454,14 +562,20 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["生田絵梨花", "白石麻衣", "松村沙友理"]
+          "name": [
+            "生田絵梨花",
+            "白石麻衣",
+            "松村沙友理"
+          ]
         }
       },
       {
         "number": 7,
         "title": "知りたいこと",
         "key": "shiritaikoto",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/T_large.jpg",
@@ -470,7 +584,12 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["齋藤飛鳥", "星野みなみ", "山下美月", "与田祐希"]
+          "name": [
+            "齋藤飛鳥",
+            "星野みなみ",
+            "山下美月",
+            "与田祐希"
+          ]
         }
       }
     ],
@@ -516,7 +635,13 @@
         "number": 1,
         "title": "ジコチューで行こう!",
         "key": "jikochu",
-        "inCdType": ["A", "B", "C", "D", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
         "type": "title",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/A_large.jpg",
@@ -525,14 +650,22 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["齋藤飛鳥"]
+          "name": [
+            "齋藤飛鳥"
+          ]
         }
       },
       {
         "number": 2,
         "title": "空扉",
         "key": "soratobira",
-        "inCdType": ["A", "B", "C", "D", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/A_large.jpg",
@@ -541,14 +674,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["梅澤美波"]
+          "name": [
+            "梅澤美波"
+          ]
         }
       },
       {
         "number": 3,
         "title": "三角の空き地",
         "key": "sankakunoakichi",
-        "inCdType": ["A"],
+        "inCdType": [
+          "A"
+        ],
         "type": "under",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/A_large.jpg",
@@ -557,14 +694,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["中田花奈"]
+          "name": [
+            "中田花奈"
+          ]
         }
       },
       {
         "number": 4,
         "title": "自分じゃない感じ",
         "key": "jibunjanaikanji",
-        "inCdType": ["B"],
+        "inCdType": [
+          "B"
+        ],
         "type": "third generation",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/B_large.jpg",
@@ -573,14 +714,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["山下美月"]
+          "name": [
+            "山下美月"
+          ]
         }
       },
       {
         "number": 5,
         "title": "心のモノローグ",
         "key": "kokoronomonolog",
-        "inCdType": ["C"],
+        "inCdType": [
+          "C"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/C_large.jpg",
@@ -589,14 +734,19 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["白石麻衣", "西野七瀬"]
+          "name": [
+            "白石麻衣",
+            "西野七瀬"
+          ]
         }
       },
       {
         "number": 6,
         "title": "地球が丸いなら",
         "key": "chikyuugamaruinara",
-        "inCdType": ["D"],
+        "inCdType": [
+          "D"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/D_large.jpg",
@@ -605,14 +755,20 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["大園桃子", "齋藤飛鳥", "与田祐希"]
+          "name": [
+            "大園桃子",
+            "齋藤飛鳥",
+            "与田祐希"
+          ]
         }
       },
       {
         "number": 7,
         "title": "あんなに好きだったのに...",
         "key": "annarisukidatta",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/T_large.jpg",
@@ -621,13 +777,17 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["齋藤飛鳥"]
+          "name": [
+            "齋藤飛鳥"
+          ]
         }
       }
     ],
     "behindPerformers": {
       "trainees": [],
-      "skips": ["kuboshiori"]
+      "skips": [
+        "kuboshiori"
+      ]
     }
   },
   {
@@ -667,7 +827,13 @@
         "number": 1,
         "title": "シンクロニシティ",
         "key": "synchronicity",
-        "inCdType": ["A", "B", "C", "D", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
         "type": "title",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/A_large.jpg",
@@ -676,14 +842,22 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["白石麻衣"]
+          "name": [
+            "白石麻衣"
+          ]
         }
       },
       {
         "number": 2,
         "title": "Against",
         "key": "against",
-        "inCdType": ["A", "B", "C", "D", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
         "type": "first generation",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/A_large.jpg",
@@ -692,14 +866,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["生駒里奈"]
+          "name": [
+            "生駒里奈"
+          ]
         }
       },
       {
         "number": 3,
         "title": "雲になればいい",
         "key": "kumoninarebaii",
-        "inCdType": ["A"],
+        "inCdType": [
+          "A"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/A_large.jpg",
@@ -708,14 +886,18 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["藤桜梨"]
+          "name": [
+            "藤桜梨"
+          ]
         }
       },
       {
         "number": 4,
         "title": "新しい世界",
         "key": "atarashiisekai",
-        "inCdType": ["B"],
+        "inCdType": [
+          "B"
+        ],
         "type": "under",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/B_large.jpg",
@@ -724,14 +906,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["鈴木絢音"]
+          "name": [
+            "鈴木絢音"
+          ]
         }
       },
       {
         "number": 5,
         "title": "スカウトマン",
         "key": "scoutman",
-        "inCdType": ["C"],
+        "inCdType": [
+          "C"
+        ],
         "type": "second generation",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/C_large.jpg",
@@ -740,14 +926,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["堀未央奈"]
+          "name": [
+            "堀未央奈"
+          ]
         }
       },
       {
         "number": 6,
         "title": "トキトキメキメキ",
         "key": "tokitokimekimeki",
-        "inCdType": ["D"],
+        "inCdType": [
+          "D"
+        ],
         "type": "third generation",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/D_large.jpg",
@@ -756,14 +946,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["岩本蓮加"]
+          "name": [
+            "岩本蓮加"
+          ]
         }
       },
       {
         "number": 7,
         "title": "言霊砲",
         "key": "kotodamahou",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/T_large.jpg",
@@ -772,13 +966,17 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["いもうと坂"]
+          "name": [
+            "いもうと坂"
+          ]
         }
       }
     ],
     "behindPerformers": {
       "trainees": [],
-      "skips": ["kitanohinako"]
+      "skips": [
+        "kitanohinako"
+      ]
     }
   },
   {
@@ -818,7 +1016,13 @@
         "number": 1,
         "title": "いつかできるから今日できる",
         "key": "itsukadekiru",
-        "inCdType": ["A", "B", "C", "D", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
         "type": "title",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/A_large.jpg",
@@ -827,14 +1031,23 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["西野七瀬", "齋藤飛鳥"]
+          "name": [
+            "西野七瀬",
+            "齋藤飛鳥"
+          ]
         }
       },
       {
         "number": 2,
         "title": "不眠症",
         "key": "fumenshou",
-        "inCdType": ["A", "B", "C", "D", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/A_large.jpg",
@@ -843,14 +1056,19 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["久保史緒里", "山下美月"]
+          "name": [
+            "久保史緒里",
+            "山下美月"
+          ]
         }
       },
       {
         "number": 3,
         "title": "まあいいか?",
         "key": "maaiika",
-        "inCdType": ["A"],
+        "inCdType": [
+          "A"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/A_large.jpg",
@@ -859,14 +1077,19 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["秋元真夏", "白石麻衣"]
+          "name": [
+            "秋元真夏",
+            "白石麻衣"
+          ]
         }
       },
       {
         "number": 4,
         "title": "失恋お掃除人",
         "key": "shirenosoujinin",
-        "inCdType": ["B"],
+        "inCdType": [
+          "B"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/B_large.jpg",
@@ -875,14 +1098,18 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["若様軍団"]
+          "name": [
+            "若様軍団"
+          ]
         }
       },
       {
         "number": 5,
         "title": "My rule",
         "key": "myrule",
-        "inCdType": ["C"],
+        "inCdType": [
+          "C"
+        ],
         "type": "under",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/C_large.jpg",
@@ -891,14 +1118,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["樋口日奈"]
+          "name": [
+            "樋口日奈"
+          ]
         }
       },
       {
         "number": 6,
         "title": "僕の衝動",
         "key": "bokunoshoudou",
-        "inCdType": ["D"],
+        "inCdType": [
+          "D"
+        ],
         "type": "third generation",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/D_large.jpg",
@@ -907,14 +1138,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["伊藤理々杏"]
+          "name": [
+            "伊藤理々杏"
+          ]
         }
       },
       {
         "number": 7,
         "title": "新しい花粉 〜ミュージカル「見知らぬ世界」より〜",
         "key": "atarashiikafun",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/T_large.jpg",
@@ -923,7 +1158,10 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["生田絵梨花", "久保史緒里"]
+          "name": [
+            "生田絵梨花",
+            "久保史緒里"
+          ]
         }
       }
     ],
@@ -982,7 +1220,13 @@
         "number": 1,
         "title": "逃げ水",
         "key": "nigemizu",
-        "inCdType": ["A", "B", "C", "D", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
         "type": "title",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/A_large.jpg",
@@ -991,14 +1235,23 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["大園桃子", "与田祐希"]
+          "name": [
+            "大園桃子",
+            "与田祐希"
+          ]
         }
       },
       {
         "number": 2,
         "title": "女は一人じゃ眠れない",
         "key": "onnahahitorija",
-        "inCdType": ["A", "B", "C", "D", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/A_large.jpg",
@@ -1007,14 +1260,19 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["大園桃子", "与田祐希"]
+          "name": [
+            "大園桃子",
+            "与田祐希"
+          ]
         }
       },
       {
         "number": 3,
         "title": "ひと夏の長さより…",
         "key": "hitonatsunonagasa",
-        "inCdType": ["A"],
+        "inCdType": [
+          "A"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/A_large.jpg",
@@ -1023,14 +1281,19 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["秋元真夏", "松村沙友理"]
+          "name": [
+            "秋元真夏",
+            "松村沙友理"
+          ]
         }
       },
       {
         "number": 4,
         "title": "泣いたっていいじゃないか?",
         "key": "naitatteiijanaika",
-        "inCdType": ["B"],
+        "inCdType": [
+          "B"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/B_large.jpg",
@@ -1039,14 +1302,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["高山一実"]
+          "name": [
+            "高山一実"
+          ]
         }
       },
       {
         "number": 5,
         "title": "アンダー",
         "key": "under",
-        "inCdType": ["C"],
+        "inCdType": [
+          "C"
+        ],
         "type": "under",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/C_large.jpg",
@@ -1055,14 +1322,19 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["中元日芽香", "北野日奈子"]
+          "name": [
+            "中元日芽香",
+            "北野日奈子"
+          ]
         }
       },
       {
         "number": 6,
         "title": "ライブ神",
         "key": "liveshin",
-        "inCdType": ["D"],
+        "inCdType": [
+          "D"
+        ],
         "type": "second generation",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/D_large.jpg",
@@ -1071,14 +1343,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["堀未央奈"]
+          "name": [
+            "堀未央奈"
+          ]
         }
       },
       {
         "number": 7,
         "title": "未来の答え",
         "key": "mirainokotae",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "third generation",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/T_large.jpg",
@@ -1087,7 +1363,10 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["久保史緒里", "山下美月"]
+          "name": [
+            "久保史緒里",
+            "山下美月"
+          ]
         }
       }
     ],
@@ -1146,7 +1425,13 @@
         "number": 1,
         "title": "インフルエンサー",
         "key": "influencer",
-        "inCdType": ["A", "B", "C", "D", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
         "type": "title",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/A_large.jpg",
@@ -1155,14 +1440,23 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["西野七瀬", "白石麻衣"]
+          "name": [
+            "西野七瀬",
+            "白石麻衣"
+          ]
         }
       },
       {
         "number": 2,
         "title": "人生を考えたくなる",
         "key": "jinseiwokangaetakunaru",
-        "inCdType": ["A", "B", "C", "D", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/A_large.jpg",
@@ -1171,14 +1465,18 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["女子校カルテット"]
+          "name": [
+            "女子校カルテット"
+          ]
         }
       },
       {
         "number": 3,
         "title": "意外BREAK",
         "key": "igaibreak",
-        "inCdType": ["A"],
+        "inCdType": [
+          "A"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/A_large.jpg",
@@ -1187,14 +1485,18 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["姉御坂"]
+          "name": [
+            "姉御坂"
+          ]
         }
       },
       {
         "number": 4,
         "title": "Another Ghost",
         "key": "anotherghost",
-        "inCdType": ["B"],
+        "inCdType": [
+          "B"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/B_large.jpg",
@@ -1203,14 +1505,18 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["ナスカ"]
+          "name": [
+            "ナスカ"
+          ]
         }
       },
       {
         "number": 5,
         "title": "風船は生きている",
         "key": "fusuenhaikiteiru",
-        "inCdType": ["C"],
+        "inCdType": [
+          "C"
+        ],
         "type": "under",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/C_large.jpg",
@@ -1219,14 +1525,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["渡辺みり愛"]
+          "name": [
+            "渡辺みり愛"
+          ]
         }
       },
       {
         "number": 6,
         "title": "三番目の風",
         "key": "sanbanmenokaze",
-        "inCdType": ["D"],
+        "inCdType": [
+          "D"
+        ],
         "type": "third generation",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/D_large.jpg",
@@ -1235,14 +1545,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["大園桃子"]
+          "name": [
+            "大園桃子"
+          ]
         }
       },
       {
         "number": 7,
         "title": "当たり障りのない話",
         "key": "atarisawarinonaihanashi",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/T_large.jpg",
@@ -1251,7 +1565,9 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["かすみ草"]
+          "name": [
+            "かすみ草"
+          ]
         }
       }
     ],
@@ -1270,7 +1586,9 @@
         "yoshidaayanochristie",
         "yodayuuki"
       ],
-      "skips": ["nakamotohimeka"]
+      "skips": [
+        "nakamotohimeka"
+      ]
     }
   },
   {
@@ -1310,7 +1628,13 @@
         "number": 1,
         "title": "サヨナラの意味",
         "key": "sayonaranoimi",
-        "inCdType": ["A", "B", "C", "D", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
         "type": "title",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/A_large.jpg",
@@ -1319,14 +1643,22 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["橋本奈々未"]
+          "name": [
+            "橋本奈々未"
+          ]
         }
       },
       {
         "number": 2,
         "title": "孤独な青空",
         "key": "kodokunaaozora",
-        "inCdType": ["A", "B", "C", "D", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/A_large.jpg",
@@ -1335,14 +1667,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["橋本奈々未"]
+          "name": [
+            "橋本奈々未"
+          ]
         }
       },
       {
         "number": 3,
         "title": "あの教室",
         "key": "anokyoushitsu",
-        "inCdType": ["A"],
+        "inCdType": [
+          "A"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/A_large.jpg",
@@ -1351,14 +1687,19 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["齋藤飛鳥", "堀未央奈"]
+          "name": [
+            "齋藤飛鳥",
+            "堀未央奈"
+          ]
         }
       },
       {
         "number": 4,
         "title": "ブランコ",
         "key": "bulanko",
-        "inCdType": ["B"],
+        "inCdType": [
+          "B"
+        ],
         "type": "under",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/B_large.jpg",
@@ -1367,14 +1708,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["寺田蘭世"]
+          "name": [
+            "寺田蘭世"
+          ]
         }
       },
       {
         "number": 5,
         "title": "2度目のキスから",
         "key": "nidomenokisskara",
-        "inCdType": ["C"],
+        "inCdType": [
+          "C"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/C_large.jpg",
@@ -1383,14 +1728,18 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["真夏さんリスペクト軍団"]
+          "name": [
+            "真夏さんリスペクト軍団"
+          ]
         }
       },
       {
         "number": 6,
         "title": "君に贈る花がない",
         "key": "kiminiokuruhanaganai",
-        "inCdType": ["D"],
+        "inCdType": [
+          "D"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/D_large.jpg",
@@ -1399,14 +1748,18 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["サンクエトワール"]
+          "name": [
+            "サンクエトワール"
+          ]
         }
       },
       {
         "number": 7,
         "title": "ないものねだり",
         "key": "naimononedari",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "solo",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/T_large.jpg",
@@ -1415,7 +1768,9 @@
         },
         "focusPerformers": {
           "type": "solo",
-          "name": ["橋本奈々未"]
+          "name": [
+            "橋本奈々未"
+          ]
         }
       }
     ],
@@ -1461,7 +1816,13 @@
         "number": 1,
         "title": "裸足でSummer",
         "key": "hadasummer",
-        "inCdType": ["A", "B", "C", "D", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
         "type": "title",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/A_large.jpg",
@@ -1470,14 +1831,22 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["齋藤飛鳥"]
+          "name": [
+            "齋藤飛鳥"
+          ]
         }
       },
       {
         "number": 2,
         "title": "僕だけの光",
         "key": "bokudakenohikari",
-        "inCdType": ["A", "B", "C", "D", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/A_large.jpg",
@@ -1486,14 +1855,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["齋藤飛鳥"]
+          "name": [
+            "齋藤飛鳥"
+          ]
         }
       },
       {
         "number": 3,
         "title": "オフショアガール",
         "key": "offshoregirl",
-        "inCdType": ["A"],
+        "inCdType": [
+          "A"
+        ],
         "type": "solo",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/A_large.jpg",
@@ -1502,14 +1875,18 @@
         },
         "focusPerformers": {
           "type": "solo",
-          "name": ["白石麻衣"]
+          "name": [
+            "白石麻衣"
+          ]
         }
       },
       {
         "number": 4,
         "title": "命の真実 ミュージカル「林檎売りとカメムシ」",
         "key": "inochinoshinjitsu",
-        "inCdType": ["B"],
+        "inCdType": [
+          "B"
+        ],
         "type": "solo",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/B_large.jpg",
@@ -1518,14 +1895,18 @@
         },
         "focusPerformers": {
           "type": "solo",
-          "name": ["生田絵梨花"]
+          "name": [
+            "生田絵梨花"
+          ]
         }
       },
       {
         "number": 5,
         "title": "白米様",
         "key": "hakumaisama",
-        "inCdType": ["C"],
+        "inCdType": [
+          "C"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/C_large.jpg",
@@ -1534,14 +1915,18 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["さゆりんご軍団"]
+          "name": [
+            "さゆりんご軍団"
+          ]
         }
       },
       {
         "number": 6,
         "title": "シークレットグラフィティー",
         "key": "secretgravity",
-        "inCdType": ["D"],
+        "inCdType": [
+          "D"
+        ],
         "type": "under",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/D_large.jpg",
@@ -1550,14 +1935,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["樋口日奈"]
+          "name": [
+            "樋口日奈"
+          ]
         }
       },
       {
         "number": 7,
         "title": "行くあてのない僕たち",
         "key": "ikuatenonaibokutachi",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/T_large.jpg",
@@ -1566,7 +1955,10 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["伊藤万理華", "井上小百合"]
+          "name": [
+            "伊藤万理華",
+            "井上小百合"
+          ]
         }
       }
     ],
@@ -1612,7 +2004,13 @@
         "number": 1,
         "title": "ハルジオンが咲く頃",
         "key": "harujion",
-        "inCdType": ["A", "B", "C", "D", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
         "type": "title",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/A_large.jpg",
@@ -1621,14 +2019,22 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["深川麻衣"]
+          "name": [
+            "深川麻衣"
+          ]
         }
       },
       {
         "number": 2,
         "title": "遥かなるブータン",
         "key": "harukanarubhutan",
-        "inCdType": ["A", "B", "C", "D", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/A_large.jpg",
@@ -1637,14 +2043,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["生田絵梨花"]
+          "name": [
+            "生田絵梨花"
+          ]
         }
       },
       {
         "number": 3,
         "title": "強がる蕾",
         "key": "tsuyogarutsubomi",
-        "inCdType": ["A"],
+        "inCdType": [
+          "A"
+        ],
         "type": "solo",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/A_large.jpg",
@@ -1653,14 +2063,18 @@
         },
         "focusPerformers": {
           "type": "solo",
-          "name": ["深川麻衣"]
+          "name": [
+            "深川麻衣"
+          ]
         }
       },
       {
         "number": 4,
         "title": "急斜面",
         "key": "kyuushamen",
-        "inCdType": ["B"],
+        "inCdType": [
+          "B"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/B_large.jpg",
@@ -1669,14 +2083,20 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["白石麻衣", "橋本奈々未", "松村沙友理"]
+          "name": [
+            "白石麻衣",
+            "橋本奈々未",
+            "松村沙友理"
+          ]
         }
       },
       {
         "number": 5,
         "title": "釣り堀",
         "key": "tsuribori",
-        "inCdType": ["C"],
+        "inCdType": [
+          "C"
+        ],
         "type": "solo",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/C_large.jpg",
@@ -1685,14 +2105,18 @@
         },
         "focusPerformers": {
           "type": "solo",
-          "name": ["西野七瀬"]
+          "name": [
+            "西野七瀬"
+          ]
         }
       },
       {
         "number": 6,
         "title": "不等号",
         "key": "futoogo",
-        "inCdType": ["D"],
+        "inCdType": [
+          "D"
+        ],
         "type": "under",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/D_large.jpg",
@@ -1701,14 +2125,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["中元日芽香"]
+          "name": [
+            "中元日芽香"
+          ]
         }
       },
       {
         "number": 7,
         "title": "憂鬱と風船ガム",
         "key": "yuuutsutofuusengamu",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/T_large.jpg",
@@ -1717,7 +2145,9 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["星野みなみ"]
+          "name": [
+            "星野みなみ"
+          ]
         }
       }
     ],
@@ -1758,7 +2188,12 @@
         "number": 1,
         "title": "今、話したい誰かがいる",
         "key": "imahana",
-        "inCdType": ["A", "B", "C", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T"
+        ],
         "type": "title",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/13/A_large.jpg",
@@ -1767,14 +2202,22 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["白石麻衣", "西野七瀬"]
+          "name": [
+            "白石麻衣",
+            "西野七瀬"
+          ]
         }
       },
       {
         "number": 2,
         "title": "嫉妬の権利",
         "key": "shittonokenri",
-        "inCdType": ["A", "B", "C", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T"
+        ],
         "type": "under",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/13/A_large.jpg",
@@ -1783,14 +2226,19 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["堀未央奈", "中元日芽香"]
+          "name": [
+            "堀未央奈",
+            "中元日芽香"
+          ]
         }
       },
       {
         "number": 3,
         "title": "ポピパッパパー",
         "key": "popipappappa",
-        "inCdType": ["A"],
+        "inCdType": [
+          "A"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/13/A_large.jpg",
@@ -1799,14 +2247,19 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["白石麻衣", "西野七瀬"]
+          "name": [
+            "白石麻衣",
+            "西野七瀬"
+          ]
         }
       },
       {
         "number": 4,
         "title": "大人への近道",
         "key": "otonahenochikamichi",
-        "inCdType": ["B"],
+        "inCdType": [
+          "B"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/13/B_large.jpg",
@@ -1815,14 +2268,18 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["サンクエトワール"]
+          "name": [
+            "サンクエトワール"
+          ]
         }
       },
       {
         "number": 5,
         "title": "悲しみの忘れ方",
         "key": "kanashiminowasurekata",
-        "inCdType": ["C"],
+        "inCdType": [
+          "C"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/13/C_large.jpg",
@@ -1831,14 +2288,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["生駒里奈"]
+          "name": [
+            "生駒里奈"
+          ]
         }
       },
       {
         "number": 6,
         "title": "隙間",
         "key": "sukima",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/13/T_large.jpg",
@@ -1847,7 +2308,9 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["西野七瀬"]
+          "name": [
+            "西野七瀬"
+          ]
         }
       }
     ],
@@ -1888,7 +2351,13 @@
         "number": 1,
         "title": "太陽ノック",
         "key": "taiyouknock",
-        "inCdType": ["A", "B", "C", "T", "L"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T",
+          "L"
+        ],
         "type": "title",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/A_large.jpg",
@@ -1897,14 +2366,22 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["生駒里奈"]
+          "name": [
+            "生駒里奈"
+          ]
         }
       },
       {
         "number": 2,
         "title": "もう少しの夢",
         "key": "mousukoshinoyume",
-        "inCdType": ["A", "B", "C", "T", "L"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T",
+          "L"
+        ],
         "type": "solo",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/A_large.jpg",
@@ -1913,14 +2390,18 @@
         },
         "focusPerformers": {
           "type": "solo",
-          "name": ["西野七瀬"]
+          "name": [
+            "西野七瀬"
+          ]
         }
       },
       {
         "number": 3,
         "title": "魚たちのLOVE SONG",
         "key": "sakanatachinolovesong",
-        "inCdType": ["A"],
+        "inCdType": [
+          "A"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/A_large.jpg",
@@ -1929,14 +2410,21 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["白石麻衣", "高山一実", "橋本奈々未", "深川麻衣"]
+          "name": [
+            "白石麻衣",
+            "高山一実",
+            "橋本奈々未",
+            "深川麻衣"
+          ]
         }
       },
       {
         "number": 4,
         "title": "無表情",
         "key": "muhyoujyou",
-        "inCdType": ["B"],
+        "inCdType": [
+          "B"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/B_large.jpg",
@@ -1945,14 +2433,18 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["からあげ姉妹"]
+          "name": [
+            "からあげ姉妹"
+          ]
         }
       },
       {
         "number": 5,
         "title": "別れ際、もっと好きになる",
         "key": "wakaregiwa",
-        "inCdType": ["C"],
+        "inCdType": [
+          "C"
+        ],
         "type": "under",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/C_large.jpg",
@@ -1961,14 +2453,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["堀未央奈"]
+          "name": [
+            "堀未央奈"
+          ]
         }
       },
       {
         "number": 6,
         "title": "羽根の記憶",
         "key": "hanenokioku",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/T_large.jpg",
@@ -1977,14 +2473,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["生駒里奈"]
+          "name": [
+            "生駒里奈"
+          ]
         }
       },
       {
         "number": 7,
         "title": "制服を脱いでサヨナラを…",
         "key": "seifukuwonuidesayonarawo",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/T_large.jpg",
@@ -1993,13 +2493,18 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["齋藤飛鳥", "星野みなみ"]
+          "name": [
+            "齋藤飛鳥",
+            "星野みなみ"
+          ]
         }
       }
     ],
     "behindPerformers": {
       "trainees": [],
-      "skips": ["yamazakirena"]
+      "skips": [
+        "yamazakirena"
+      ]
     }
   },
   {
@@ -2034,7 +2539,12 @@
         "number": 1,
         "title": "命は美しい",
         "key": "inochihautsukushii",
-        "inCdType": ["A", "B", "C", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T"
+        ],
         "type": "title",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/11/A_large.jpg",
@@ -2043,14 +2553,21 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["西野七瀬"]
+          "name": [
+            "西野七瀬"
+          ]
         }
       },
       {
         "number": 2,
         "title": "あらかじめ語られるロマンス",
         "key": "arakajimekatarareruromance",
-        "inCdType": ["A", "B", "C", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/11/A_large.jpg",
@@ -2059,14 +2576,19 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["齋藤飛鳥", "星野みなみ"]
+          "name": [
+            "齋藤飛鳥",
+            "星野みなみ"
+          ]
         }
       },
       {
         "number": 3,
         "title": "立ち直り中",
         "key": "tachinaorichuu",
-        "inCdType": ["A"],
+        "inCdType": [
+          "A"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/11/A_large.jpg",
@@ -2075,14 +2597,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["白石麻衣"]
+          "name": [
+            "白石麻衣"
+          ]
         }
       },
       {
         "number": 4,
         "title": "ごめんね ずっと…",
         "key": "gomennezutto",
-        "inCdType": ["B"],
+        "inCdType": [
+          "B"
+        ],
         "type": "solo",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/11/B_large.jpg",
@@ -2091,14 +2617,18 @@
         },
         "focusPerformers": {
           "type": "solo",
-          "name": ["西野七瀬"]
+          "name": [
+            "西野七瀬"
+          ]
         }
       },
       {
         "number": 5,
         "title": "君は僕と会わない方がよかったのかな",
         "key": "kimihabokuto",
-        "inCdType": ["C"],
+        "inCdType": [
+          "C"
+        ],
         "type": "under",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/11/C_large.jpg",
@@ -2107,14 +2637,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["中元日芽香"]
+          "name": [
+            "中元日芽香"
+          ]
         }
       },
       {
         "number": 6,
         "title": "ボーダー",
         "key": "border",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "second generation",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/11/T_large.jpg",
@@ -2123,7 +2657,9 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["寺田蘭世"]
+          "name": [
+            "寺田蘭世"
+          ]
         }
       }
     ],
@@ -2171,7 +2707,12 @@
         "number": 1,
         "title": "何度目の青空か?",
         "key": "nandomenoaozoraka",
-        "inCdType": ["A", "B", "C", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T"
+        ],
         "type": "title",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/10/A_large.jpg",
@@ -2180,14 +2721,21 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["生田絵梨花"]
+          "name": [
+            "生田絵梨花"
+          ]
         }
       },
       {
         "number": 2,
         "title": "遠回りの愛情",
         "key": "toomawarinoaijou",
-        "inCdType": ["A", "B", "C", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/10/A_large.jpg",
@@ -2196,14 +2744,19 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["永島聖羅", "桜井玲香"]
+          "name": [
+            "永島聖羅",
+            "桜井玲香"
+          ]
         }
       },
       {
         "number": 3,
         "title": "転がった鐘を鳴らせ!",
         "key": "korogattakanewonarase",
-        "inCdType": ["A"],
+        "inCdType": [
+          "A"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/10/A_large.jpg",
@@ -2212,14 +2765,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["生田絵梨花"]
+          "name": [
+            "生田絵梨花"
+          ]
         }
       },
       {
         "number": 4,
         "title": "私、起きる。",
         "key": "watashiokiru",
-        "inCdType": ["B"],
+        "inCdType": [
+          "B"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/10/B_large.jpg",
@@ -2228,14 +2785,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["生田絵梨花"]
+          "name": [
+            "生田絵梨花"
+          ]
         }
       },
       {
         "number": 5,
         "title": "あの日 僕は咄嗟に嘘をついた",
         "key": "anohibokuha",
-        "inCdType": ["C"],
+        "inCdType": [
+          "C"
+        ],
         "type": "under",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/10/C_large.jpg",
@@ -2244,14 +2805,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["井上小百合"]
+          "name": [
+            "井上小百合"
+          ]
         }
       },
       {
         "number": 6,
         "title": "Tender days",
         "key": "tendergays",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/10/T_large.jpg",
@@ -2319,7 +2884,12 @@
         "number": 1,
         "title": "夏のFree&Easy",
         "key": "natsunofreeeasy",
-        "inCdType": ["A", "B", "C", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T"
+        ],
         "type": "title",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/9/A_large.jpg",
@@ -2328,14 +2898,21 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["西野七瀬"]
+          "name": [
+            "西野七瀬"
+          ]
         }
       },
       {
         "number": 2,
         "title": "何もできずにそばにいる",
         "key": "nanimodekizunisobaniiru",
-        "inCdType": ["A", "B", "C", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/9/A_large.jpg",
@@ -2344,14 +2921,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["西野七瀬"]
+          "name": [
+            "西野七瀬"
+          ]
         }
       },
       {
         "number": 3,
         "title": "その先の出口!",
         "key": "sonosakinodeguchi",
-        "inCdType": ["A"],
+        "inCdType": [
+          "A"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/9/A_large.jpg",
@@ -2360,14 +2941,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["白石麻衣"]
+          "name": [
+            "白石麻衣"
+          ]
         }
       },
       {
         "number": 4,
         "title": "無口なライオン",
         "key": "mukuchinalion",
-        "inCdType": ["B"],
+        "inCdType": [
+          "B"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/9/B_large.jpg",
@@ -2376,14 +2961,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["西野七瀬"]
+          "name": [
+            "西野七瀬"
+          ]
         }
       },
       {
         "number": 5,
         "title": "ここにいる理由",
         "key": "kokoniiruriyuu",
-        "inCdType": ["C"],
+        "inCdType": [
+          "C"
+        ],
         "type": "under",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/9/C_large.jpg",
@@ -2392,14 +2981,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["伊藤万理華"]
+          "name": [
+            "伊藤万理華"
+          ]
         }
       },
       {
         "number": 6,
         "title": "僕が行かなきゃ誰が行くんだ?",
         "key": "bokugaikanakyadaregaikunda",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/9/T_large.jpg",
@@ -2408,7 +3001,9 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["西野七瀬"]
+          "name": [
+            "西野七瀬"
+          ]
         }
       }
     ],
@@ -2425,7 +3020,9 @@
         "yonetokukyouka",
         "yadarisako"
       ],
-      "skips": ["ikutaerika"]
+      "skips": [
+        "ikutaerika"
+      ]
     }
   },
   {
@@ -2460,7 +3057,12 @@
         "number": 1,
         "title": "気づいたら片想い",
         "key": "kiduitarakataomoi",
-        "inCdType": ["A", "B", "C", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T"
+        ],
         "type": "title",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/8/A_large.jpg",
@@ -2469,14 +3071,21 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["西野七瀬"]
+          "name": [
+            "西野七瀬"
+          ]
         }
       },
       {
         "number": 2,
         "title": "ロマンスのスタート",
         "key": "romancenostart",
-        "inCdType": ["A", "B", "C", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/8/A_large.jpg",
@@ -2485,14 +3094,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["西野七瀬"]
+          "name": [
+            "西野七瀬"
+          ]
         }
       },
       {
         "number": 3,
         "title": "吐息のメソッド",
         "key": "toikimethod",
-        "inCdType": ["A"],
+        "inCdType": [
+          "A"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/8/A_large.jpg",
@@ -2508,7 +3121,9 @@
         "number": 4,
         "title": "孤独兄弟",
         "key": "kodokukyoudai",
-        "inCdType": ["B"],
+        "inCdType": [
+          "B"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/8/B_large.jpg",
@@ -2517,14 +3132,18 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["孤独兄弟"]
+          "name": [
+            "孤独兄弟"
+          ]
         }
       },
       {
         "number": 5,
         "title": "生まれたままで",
         "key": "umaretamamade",
-        "inCdType": ["C"],
+        "inCdType": [
+          "C"
+        ],
         "type": "under",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/8/C_large.jpg",
@@ -2533,14 +3152,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["伊藤万理華"]
+          "name": [
+            "伊藤万理華"
+          ]
         }
       },
       {
         "number": 6,
         "title": "ダンケシェーン",
         "key": "dankeschan",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/8/T_large.jpg",
@@ -2549,7 +3172,9 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["生田絵梨花"]
+          "name": [
+            "生田絵梨花"
+          ]
         }
       }
     ],
@@ -2565,7 +3190,9 @@
         "yonetokukyouka",
         "yadarisako"
       ],
-      "skips": ["sagaraiori"]
+      "skips": [
+        "sagaraiori"
+      ]
     }
   },
   {
@@ -2600,7 +3227,12 @@
         "number": 1,
         "title": "バレッタ",
         "key": "valletta",
-        "inCdType": ["A", "B", "C", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T"
+        ],
         "type": "title",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/7/A_large.jpg",
@@ -2609,14 +3241,21 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["堀未央奈"]
+          "name": [
+            "堀未央奈"
+          ]
         }
       },
       {
         "number": 2,
         "title": "月の大きさ",
         "key": "tsukinoookisa",
-        "inCdType": ["A", "B", "C", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/7/A_large.jpg",
@@ -2625,14 +3264,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["堀未央奈"]
+          "name": [
+            "堀未央奈"
+          ]
         }
       },
       {
         "number": 3,
         "title": "私のために 誰かのために",
         "key": "watanotamenidarekanotameni",
-        "inCdType": ["A"],
+        "inCdType": [
+          "A"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/7/A_large.jpg",
@@ -2641,14 +3284,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["白石麻衣"]
+          "name": [
+            "白石麻衣"
+          ]
         }
       },
       {
         "number": 4,
         "title": "そんなバカな…",
         "key": "sonnabakana",
-        "inCdType": ["B"],
+        "inCdType": [
+          "B"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/7/B_large.jpg",
@@ -2657,14 +3304,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["堀未央奈"]
+          "name": [
+            "堀未央奈"
+          ]
         }
       },
       {
         "number": 5,
         "title": "初恋の人を今でも",
         "key": "hatsukoinohitowo",
-        "inCdType": ["C"],
+        "inCdType": [
+          "C"
+        ],
         "type": "under",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/7/C_large.jpg",
@@ -2673,14 +3324,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["星野みなみ"]
+          "name": [
+            "星野みなみ"
+          ]
         }
       },
       {
         "number": 6,
         "title": "やさしさとは",
         "key": "yasashisatoha",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/7/T_large.jpg",
@@ -2689,7 +3344,9 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["橋本奈々未"]
+          "name": [
+            "橋本奈々未"
+          ]
         }
       }
     ],
@@ -2708,7 +3365,10 @@
         "yadarisako",
         "nishikawananami"
       ],
-      "skips": ["ichikirena", "sagaraiori"]
+      "skips": [
+        "ichikirena",
+        "sagaraiori"
+      ]
     }
   },
   {
@@ -2743,7 +3403,12 @@
         "number": 1,
         "title": "ガールズルール",
         "key": "girlsrule",
-        "inCdType": ["A", "B", "C", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T"
+        ],
         "type": "title",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/6/A_large.jpg",
@@ -2752,14 +3417,21 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["白石麻衣"]
+          "name": [
+            "白石麻衣"
+          ]
         }
       },
       {
         "number": 2,
         "title": "世界で一番 孤独なLover",
         "key": "sekaideichibankodokuralover",
-        "inCdType": ["A", "B", "C", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/6/A_large.jpg",
@@ -2768,14 +3440,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["白石麻衣"]
+          "name": [
+            "白石麻衣"
+          ]
         }
       },
       {
         "number": 3,
         "title": "コウモリよ",
         "key": "koumoriyo",
-        "inCdType": ["A"],
+        "inCdType": [
+          "A"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/6/A_large.jpg",
@@ -2784,14 +3460,21 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["白石麻衣", "中元日芽香", "能條愛未", "若月佑美"]
+          "name": [
+            "白石麻衣",
+            "中元日芽香",
+            "能條愛未",
+            "若月佑美"
+          ]
         }
       },
       {
         "number": 4,
         "title": "扇風機",
         "key": "senpuuki",
-        "inCdType": ["B"],
+        "inCdType": [
+          "B"
+        ],
         "type": "under",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/6/B_large.jpg",
@@ -2800,14 +3483,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["齋藤飛鳥"]
+          "name": [
+            "齋藤飛鳥"
+          ]
         }
       },
       {
         "number": 5,
         "title": "他の星から",
         "key": "hokanohoshikara",
-        "inCdType": ["C"],
+        "inCdType": [
+          "C"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/6/C_large.jpg",
@@ -2816,14 +3503,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["西野七瀬"]
+          "name": [
+            "西野七瀬"
+          ]
         }
       },
       {
         "number": 6,
         "title": "人間という楽器",
         "key": "ningentoiugakki",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "first generation",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/6/T_large.jpg",
@@ -2873,7 +3564,12 @@
         "number": 1,
         "title": "君の名は希望",
         "key": "kiminonahakibou",
-        "inCdType": ["A", "B", "C", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T"
+        ],
         "type": "title",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/5/A_large.jpg",
@@ -2882,14 +3578,21 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["生駒里奈"]
+          "name": [
+            "生駒里奈"
+          ]
         }
       },
       {
         "number": 2,
         "title": "シャキイズム",
         "key": "shakism",
-        "inCdType": ["A", "B", "C", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/5/A_large.jpg",
@@ -2898,14 +3601,19 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["生駒里奈", "星野みなみ"]
+          "name": [
+            "生駒里奈",
+            "星野みなみ"
+          ]
         }
       },
       {
         "number": 3,
         "title": "ロマンティックいか焼き",
         "key": "romanticikayaki",
-        "inCdType": ["A"],
+        "inCdType": [
+          "A"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/5/A_large.jpg",
@@ -2921,7 +3629,9 @@
         "number": 4,
         "title": "13日の金曜日",
         "key": "13nichinokinyoubi",
-        "inCdType": ["B"],
+        "inCdType": [
+          "B"
+        ],
         "type": "under",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/5/B_large.jpg",
@@ -2930,14 +3640,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["斉藤優里"]
+          "name": [
+            "斉藤優里"
+          ]
         }
       },
       {
         "number": 5,
         "title": "でこぴん",
         "key": "dekopin",
-        "inCdType": ["C"],
+        "inCdType": [
+          "C"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/5/C_large.jpg",
@@ -2959,7 +3673,9 @@
         "number": 6,
         "title": "サイコキネシスの可能性",
         "key": "psychokinesesnokanousei",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/5/T_large.jpg",
@@ -2968,7 +3684,10 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["桜井玲香", "西野七瀬"]
+          "name": [
+            "桜井玲香",
+            "西野七瀬"
+          ]
         }
       }
     ],
@@ -3009,7 +3728,12 @@
         "number": 1,
         "title": "制服のマネキン",
         "key": "seifukunomannequin",
-        "inCdType": ["A", "B", "C", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T"
+        ],
         "type": "title",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/4/A_large.jpg",
@@ -3018,14 +3742,21 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["生駒里奈"]
+          "name": [
+            "生駒里奈"
+          ]
         }
       },
       {
         "number": 2,
         "title": "指望遠鏡",
         "key": "yubibouenkyou",
-        "inCdType": ["A", "B", "C", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/4/A_large.jpg",
@@ -3034,14 +3765,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["生駒里奈"]
+          "name": [
+            "生駒里奈"
+          ]
         }
       },
       {
         "number": 3,
         "title": "やさしさなら間に合ってる",
         "key": "yasashisanaramaniatteiru",
-        "inCdType": ["A"],
+        "inCdType": [
+          "A"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/4/A_large.jpg",
@@ -3050,14 +3785,19 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["高山一実", "能條愛未"]
+          "name": [
+            "高山一実",
+            "能條愛未"
+          ]
         }
       },
       {
         "number": 4,
         "title": "ここじゃないどこか",
         "key": "kokojanaidokoka",
-        "inCdType": ["B"],
+        "inCdType": [
+          "B"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/4/B_large.jpg",
@@ -3066,14 +3806,20 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["生田絵梨花", "生駒里奈", "星野みなみ"]
+          "name": [
+            "生田絵梨花",
+            "生駒里奈",
+            "星野みなみ"
+          ]
         }
       },
       {
         "number": 5,
         "title": "春のメロディー",
         "key": "harunomelody",
-        "inCdType": ["C"],
+        "inCdType": [
+          "C"
+        ],
         "type": "under",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/4/C_large.jpg",
@@ -3082,14 +3828,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["中田花奈"]
+          "name": [
+            "中田花奈"
+          ]
         }
       },
       {
         "number": 6,
         "title": "渋谷ブルース",
         "key": "shibuyablues",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/4/T_large.jpg",
@@ -3098,13 +3848,17 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["WHITE HIGH"]
+          "name": [
+            "WHITE HIGH"
+          ]
         }
       }
     ],
     "behindPerformers": {
       "trainees": [],
-      "skips": ["kashiwayukina"]
+      "skips": [
+        "kashiwayukina"
+      ]
     }
   },
   {
@@ -3139,7 +3893,12 @@
         "number": 1,
         "title": "走れ!Bicycle",
         "key": "hashirebicycle",
-        "inCdType": ["A", "B", "C", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T"
+        ],
         "type": "title",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/3/A_large.jpg",
@@ -3148,14 +3907,21 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["生駒里奈"]
+          "name": [
+            "生駒里奈"
+          ]
         }
       },
       {
         "number": 2,
         "title": "せっかちなかたつむり",
         "key": "sekkachinakatatsumuri",
-        "inCdType": ["A", "B", "C", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/3/A_large.jpg",
@@ -3164,14 +3930,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["松村沙友理"]
+          "name": [
+            "松村沙友理"
+          ]
         }
       },
       {
         "number": 3,
         "title": "涙がまだ悲しみだった頃",
         "key": "namidagamadakanashimi",
-        "inCdType": ["A"],
+        "inCdType": [
+          "A"
+        ],
         "type": "under",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/3/A_large.jpg",
@@ -3180,14 +3950,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["伊藤寧々"]
+          "name": [
+            "伊藤寧々"
+          ]
         }
       },
       {
         "number": 4,
         "title": "人はなぜ走るのか?",
         "key": "hitohanazehashirunoka",
-        "inCdType": ["B"],
+        "inCdType": [
+          "B"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/3/B_large.jpg",
@@ -3196,14 +3970,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["生駒里奈"]
+          "name": [
+            "生駒里奈"
+          ]
         }
       },
       {
         "number": 5,
         "title": "音が出ないギター",
         "key": "otogadenaiguitar",
-        "inCdType": ["C"],
+        "inCdType": [
+          "C"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/3/C_large.jpg",
@@ -3212,14 +3990,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["生駒里奈"]
+          "name": [
+            "生駒里奈"
+          ]
         }
       },
       {
         "number": 6,
         "title": "海流の島よ",
         "key": "kairyuunoshimayo",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/3/T_large.jpg",
@@ -3228,13 +4010,17 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["齋藤飛鳥"]
+          "name": [
+            "齋藤飛鳥"
+          ]
         }
       }
     ],
     "behindPerformers": {
       "trainees": [],
-      "skips": ["akimotomanatsu"]
+      "skips": [
+        "akimotomanatsu"
+      ]
     }
   },
   {
@@ -3269,7 +4055,12 @@
         "number": 1,
         "title": "おいでシャンプー",
         "key": "oideshampo",
-        "inCdType": ["A", "B", "C", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T"
+        ],
         "type": "title",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/2/A_large.jpg",
@@ -3278,14 +4069,21 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["生駒里奈"]
+          "name": [
+            "生駒里奈"
+          ]
         }
       },
       {
         "number": 2,
         "title": "心の薬",
         "key": "kokoronokusuri",
-        "inCdType": ["A", "B", "C", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/2/A_large.jpg",
@@ -3294,14 +4092,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["生駒里奈"]
+          "name": [
+            "生駒里奈"
+          ]
         }
       },
       {
         "number": 3,
         "title": "偶然を言い訳にして",
         "key": "guuzenwoiiwakenishite",
-        "inCdType": ["A"],
+        "inCdType": [
+          "A"
+        ],
         "type": "unit",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/2/A_large.jpg",
@@ -3310,14 +4112,21 @@
         },
         "focusPerformers": {
           "type": "unit",
-          "name": ["白石麻衣", "高山一実", "橋本奈々未", "松村沙友理"]
+          "name": [
+            "白石麻衣",
+            "高山一実",
+            "橋本奈々未",
+            "松村沙友理"
+          ]
         }
       },
       {
         "number": 4,
         "title": "水玉模様",
         "key": "mizutamamoyou",
-        "inCdType": ["B"],
+        "inCdType": [
+          "B"
+        ],
         "type": "solo",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/2/B_large.jpg",
@@ -3326,14 +4135,18 @@
         },
         "focusPerformers": {
           "type": "solo",
-          "name": ["生駒里奈"]
+          "name": [
+            "生駒里奈"
+          ]
         }
       },
       {
         "number": 5,
         "title": "狼に口笛を",
         "key": "ookaminikuchibuewo",
-        "inCdType": ["C"],
+        "inCdType": [
+          "C"
+        ],
         "type": "under",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/2/C_large.jpg",
@@ -3342,14 +4155,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["伊藤万理華"]
+          "name": [
+            "伊藤万理華"
+          ]
         }
       },
       {
         "number": 6,
         "title": "ハウス!",
         "key": "house",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/2/T_large.jpg",
@@ -3358,13 +4175,17 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["生駒里奈"]
+          "name": [
+            "生駒里奈"
+          ]
         }
       }
     ],
     "behindPerformers": {
       "trainees": [],
-      "skips": ["akimotomanatsu"]
+      "skips": [
+        "akimotomanatsu"
+      ]
     }
   },
   {
@@ -3399,7 +4220,12 @@
         "number": 1,
         "title": "ぐるぐるカーテン",
         "key": "gurugurucurtain",
-        "inCdType": ["A", "B", "C", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T"
+        ],
         "type": "title",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/1/A_large.jpg",
@@ -3408,14 +4234,21 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["生駒里奈"]
+          "name": [
+            "生駒里奈"
+          ]
         }
       },
       {
         "number": 2,
         "title": "左胸の勇気",
         "key": "hidarimunenoyuuki",
-        "inCdType": ["A", "B", "C", "T"],
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "T"
+        ],
         "type": "under",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/1/A_large.jpg",
@@ -3424,14 +4257,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["畠中清羅"]
+          "name": [
+            "畠中清羅"
+          ]
         }
       },
       {
         "number": 3,
         "title": "乃木坂の詩",
         "key": "nogizakanouta",
-        "inCdType": ["A"],
+        "inCdType": [
+          "A"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/1/A_large.jpg",
@@ -3440,14 +4277,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["生駒里奈"]
+          "name": [
+            "生駒里奈"
+          ]
         }
       },
       {
         "number": 4,
         "title": "会いたかったかもしれない",
         "key": "aitakattakamoshirenai",
-        "inCdType": ["B"],
+        "inCdType": [
+          "B"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/1/B_large.jpg",
@@ -3456,14 +4297,18 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["生駒里奈"]
+          "name": [
+            "生駒里奈"
+          ]
         }
       },
       {
         "number": 5,
         "title": "失いたくないから",
         "key": "ushinaitakunaikara",
-        "inCdType": ["C"],
+        "inCdType": [
+          "C"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/1/C_large.jpg",
@@ -3472,14 +4317,19 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["生駒里奈", "生田絵梨花"]
+          "name": [
+            "生駒里奈",
+            "生田絵梨花"
+          ]
         }
       },
       {
         "number": 6,
         "title": "白い雲にのって",
         "key": "shiroikumoninotte",
-        "inCdType": ["T"],
+        "inCdType": [
+          "T"
+        ],
         "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/1/T_large.jpg",
@@ -3488,13 +4338,17 @@
         },
         "focusPerformers": {
           "type": "center",
-          "name": ["生駒里奈"]
+          "name": [
+            "生駒里奈"
+          ]
         }
       }
     ],
     "behindPerformers": {
       "trainees": [],
-      "skips": ["akimotomanatsu"]
+      "skips": [
+        "akimotomanatsu"
+      ]
     }
   }
 ]

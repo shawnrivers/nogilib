@@ -15,7 +15,7 @@ export const LocalizedList = injectIntl(
         comma = "、";
         break;
       case Language.Ja:
-        comma = "・";
+        comma = "、";
         break;
       default:
         comma = ", ";

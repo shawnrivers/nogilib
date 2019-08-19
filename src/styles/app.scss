@@ -6,6 +6,7 @@ h5,
 h6,
 p,
 ul,
+ol,
 li {
   margin-block-start: 0;
   margin-block-end: 0;
@@ -28,6 +29,10 @@ a {
 ul {
   list-style-type: none;
   padding-inline-start: 0;
+}
+
+ol {
+  padding-inline-start: 24px;
 }
 
 button {

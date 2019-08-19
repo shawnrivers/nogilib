@@ -3,13 +3,15 @@ import LazyLoad from "react-lazyload";
 import styles from "./membercard.module.scss";
 import { motion } from "framer-motion";
 import { injectIntl } from "react-intl";
-import { Language } from "utils/constants";
+import { Language, KOJIHARU } from "utils/constants";
+import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
 
 interface MemberCardProps {
   image: {
     large: string;
     small: string;
   };
+  nameKey: string;
   name: {
     lastName: string;
     firstName: string;
@@ -25,6 +27,7 @@ interface MemberCardProps {
 export const MemberCard = injectIntl(
   ({
     image,
+    nameKey,
     name,
     intl: { locale },
     highlightBgColor,
@@ -68,33 +71,57 @@ export const MemberCard = injectIntl(
       [highlightTextColor]
     );
 
-    // TODO: Kojiharu condition.
-
-    return (
-      <motion.div
-        whileHover="hover"
-        variants={containerVariants}
-        transition={{ duration: 0.3 }}
-        style={isCenter ? { backgroundColor: "#af7dce" } : undefined}
-        className={styles.container}
-      >
-        <LazyLoad offset={100}>
-          <img
-            src={image.small}
-            srcSet={image.large + " 2x"}
-            alt={nameText}
-            className={styles.image}
-          />
-        </LazyLoad>
-        <motion.div
-          variants={textVariants}
-          transition={{ duration: 0.3 }}
-          style={isCenter ? { color: "#ffffff" } : undefined}
-          className={styles.name}
+    if (nameKey !== KOJIHARU) {
+      return (
+        <LocalizedLink to={`/members/${nameKey}`} className={styles.link}>
+          <motion.div
+            whileHover="hover"
+            variants={containerVariants}
+            transition={{ duration: 0.3 }}
+            style={isCenter ? { backgroundColor: "#e887a3" } : undefined}
+            className={styles.container}
+          >
+            <LazyLoad offset={100}>
+              <img
+                src={image.small}
+                srcSet={image.large + " 2x"}
+                alt={nameText}
+                className={styles.image}
+              />
+            </LazyLoad>
+            <motion.div
+              variants={textVariants}
+              transition={{ duration: 0.3 }}
+              style={isCenter ? { color: "#ffffff" } : undefined}
+              className={styles.name}
+            >
+              <span>{nameText}</span>
+            </motion.div>
+          </motion.div>
+        </LocalizedLink>
+      );
+    } else {
+      return (
+        <div
+          style={isCenter ? { backgroundColor: "#e887a3" } : undefined}
+          className={styles.container}
         >
-          <span>{nameText}</span>
-        </motion.div>
-      </motion.div>
-    );
+          <LazyLoad offset={100}>
+            <img
+              src={image.small}
+              srcSet={image.large + " 2x"}
+              alt={nameText}
+              className={styles.image}
+            />
+          </LazyLoad>
+          <div
+            style={isCenter ? { color: "#ffffff" } : undefined}
+            className={styles.name}
+          >
+            <span>{nameText}</span>
+          </div>
+        </div>
+      );
+    }
   }
 );

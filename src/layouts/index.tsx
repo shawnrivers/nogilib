@@ -53,11 +53,14 @@ const AppLayout = ({
   const locale = pageContext ? pageContext.locale : Language.En;
 
   const backgroundClass = React.useMemo(() => {
-    if (pathName.includes("singles/") || pathName.includes("albums/")) {
+    if (pathName.includes("/singles/") || pathName.includes("/albums/")) {
       return "bg1";
     }
-    if (pathName.includes("songs/")) {
+    if (pathName.includes("/songs/")) {
       return "bg2";
+    }
+    if (pathName.includes("/members/")) {
+      return "bg3";
     }
     return "";
   }, [pathName]);

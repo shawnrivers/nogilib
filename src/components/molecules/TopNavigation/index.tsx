@@ -130,7 +130,7 @@ export const TopNavigation = ({ locale, location }: TopNavigationProps) => {
           </NavigationItem>
           <NavigationItem
             type="link"
-            to="/members/?page=first-gen"
+            to="/allmembers/?page=first-gen"
             className={styles.members}
           >
             <FormattedMessage {...({ id: "members" } as any)} />

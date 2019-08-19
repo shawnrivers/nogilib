@@ -26,23 +26,23 @@ export type MemberType = {
 
 const pageTabItems: TabItem[] = [
   {
-    link: "/members/?page=first-gen",
+    link: "/allmembers/?page=first-gen",
     page: "first-gen",
   },
   {
-    link: "/members/?page=second-gen",
+    link: "/allmembers/?page=second-gen",
     page: "second-gen",
   },
   {
-    link: "/members/?page=third-gen",
+    link: "/allmembers/?page=third-gen",
     page: "third-gen",
   },
   {
-    link: "/members/?page=fourth-gen",
+    link: "/allmembers/?page=fourth-gen",
     page: "fourth-gen",
   },
   {
-    link: "/members/?page=graduated",
+    link: "/allmembers/?page=graduated",
     page: "graduated",
   },
 ];
@@ -123,6 +123,7 @@ export const Members = (props: MembersProps) => {
             >
               <MemberCard
                 image={profileImage}
+                nameKey={name}
                 name={nameNotations}
                 highlightBgColor="#e887a3"
                 highlightTextColor="#ffffff"
