@@ -7,6 +7,7 @@ interface NavigationItemProps {
   type: "link" | "button";
   children: React.ReactNode;
   to?: string;
+  label?: string;
   className?: string;
   handleClick?(): void;
 }
@@ -16,6 +17,7 @@ export const NavigationItem = ({
   children,
   to,
   handleClick,
+  label,
   className,
 }: NavigationItemProps) => {
   if (type === "link") {
@@ -54,6 +56,7 @@ export const NavigationItem = ({
         color: "#ffffff",
         fill: "#ffffff",
       }}
+      aria-label={label}
       className={`${styles.container}${className ? " " + className : ""}`}
     >
       {children}

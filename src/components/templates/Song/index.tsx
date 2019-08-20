@@ -233,6 +233,7 @@ const Song = ({ data }: SongData) => {
             onClick={() => {
               window.history.back();
             }}
+            aria-label="Go Back"
           >
             <ArrowBackIcon className={styles.back} />
           </button>

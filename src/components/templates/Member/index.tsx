@@ -196,6 +196,7 @@ const Member = ({ data }: MemberProps) => {
             onClick={() => {
               window.history.back();
             }}
+            aria-label="Go Back"
           >
             <ArrowBackIcon className={styles.back} />
           </button>

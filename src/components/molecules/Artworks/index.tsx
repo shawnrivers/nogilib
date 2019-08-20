@@ -42,6 +42,7 @@ export const Artworks = ({ artworks, title, className }: ArtworksProps) => {
         <motion.button
           whileHover={{ scale: 2, x: -8 }}
           onClick={handleClickPreviousArtwork}
+          aria-label="Previous Artwork"
         >
           <ArrowLeftIcon className={styles.arrow} />
         </motion.button>
@@ -65,13 +66,18 @@ export const Artworks = ({ artworks, title, className }: ArtworksProps) => {
         <motion.button
           whileHover={{ scale: 2, x: 8 }}
           onClick={handleClickNextArtwork}
+          aria-label="Next Artwork"
         >
           <ArrowRightIcon className={styles.arrow} />
         </motion.button>
       </div>
       <div className={styles.indicator}>
         {artworks.map((_, index) => (
-          <button key={index} onClick={() => setArtworkIndex(index)}>
+          <button
+            key={index}
+            onClick={() => setArtworkIndex(index)}
+            aria-label="Next Artwork"
+          >
             <div
               style={{
                 backgroundColor: index === artworkIndex ? "#757575" : "#ffffff",

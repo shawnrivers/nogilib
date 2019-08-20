@@ -60,6 +60,7 @@ const LanguageItem = ({
       <NavigationItem
         type="button"
         handleClick={() => setLanguagesToggle(!isLanguagesToggled)}
+        label="languages"
         className={styles.button}
       >
         {type === "text" ? (
@@ -137,6 +138,7 @@ export const TopNavigation = ({ locale, location }: TopNavigationProps) => {
           <NavigationItem
             type="link"
             to="/cds/?page=singles"
+            aria-label="Nogizaka Lib"
             className={styles.home}
           >
             <HomeIcon />
