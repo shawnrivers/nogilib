@@ -33,5 +33,18 @@ module.exports = {
         component: path.join(__dirname, `src/layouts/index.tsx`),
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Nogizaka Lib",
+        short_name: "Nogilib",
+        start_url: "/cds/?page=singles",
+        background_color: "#ffffff",
+        theme_color: "#af7dce",
+        display: "standalone",
+        icon: "src/assets/images/favicon-512.png",
+        crossOrigin: `use-credentials`,
+      },
+    },
   ],
 };
