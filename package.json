@@ -14,6 +14,7 @@
     "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
     "lint:fix": "npm run lint --fix",
     "stylelint": "stylelint '**/*.scss'  --fix",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
@@ -49,6 +50,7 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.2",
     "gatsby-plugin-root-import": "^2.0.5",
+    "gh-pages": "^2.1.1",
     "husky": "^3.0.0",
     "lint-staged": "^9.0.2",
     "prettier": "^1.18.2",
