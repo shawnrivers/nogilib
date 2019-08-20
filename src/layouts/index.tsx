@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Helmet } from "react-helmet";
 import { RouteComponentProps, WindowLocation } from "@reach/router";
 import { motion, AnimatePresence } from "framer-motion";
 import { IntlProvider } from "react-intl";
@@ -50,7 +51,7 @@ const AppLayout = ({
     return "";
   }, [location]);
 
-  const locale = pageContext ? pageContext.locale : Language.En;
+  const locale = pageContext ? pageContext.locale : Language.Ja;
 
   const backgroundClass = React.useMemo(() => {
     if (pathName.includes("/singles/") || pathName.includes("/albums/")) {
@@ -67,6 +68,13 @@ const AppLayout = ({
 
   return (
     <IntlProvider locale={locale} messages={messages[locale]}>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta name="description" content="Nogizaka Lib Redesign" />
+        <meta property="og:image" content="favicon-512.png" />
+        <title>Nogizaka Lib</title>
+        <html lang={locale} />
+      </Helmet>
       <AnimatePresence>
         <div className={styles.container}>
           <TopNavigation

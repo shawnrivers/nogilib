@@ -13,6 +13,8 @@ module.exports = {
     },
     `gatsby-plugin-resolve-src`,
     `gatsby-transformer-json`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -25,7 +27,6 @@ module.exports = {
         src: path.join(__dirname, "src"),
       },
     },
-    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-layout`,
       options: {
