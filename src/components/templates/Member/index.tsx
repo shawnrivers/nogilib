@@ -15,7 +15,6 @@ import {
 } from "utils/constants";
 import { PositionCounter } from "components/atoms/PositionCounter";
 import LazyLoad from "react-lazyload";
-import { RouteComponentProps } from "@reach/router";
 
 const containerVariants = {
   visible: {
@@ -155,6 +154,16 @@ const Member = ({ data }: MemberProps) => {
       [member.positionsHistory]
     );
 
+    const willShowPositionCounter = React.useMemo(
+      () =>
+        member.positionsCounter.center +
+          member.positionsCounter.fukujin +
+          member.positionsCounter.selected +
+          member.positionsCounter.under >
+        0,
+      [member.positionsCounter]
+    );
+
     const gallery = React.useMemo(() => {
       const list = member.singleImages
         .reverse()
@@ -281,7 +290,16 @@ const Member = ({ data }: MemberProps) => {
                       <span className={styles.infocontent}>
                         <FormattedMessage
                           {...({ id: "join: " + member.join } as any)}
-                        />
+                        />{" "}
+                        {member.graduation.isGraduated ? (
+                          <span>
+                            (
+                            <FormattedMessage
+                              {...({ id: "graduate" } as any)}
+                            />
+                            )
+                          </span>
+                        ) : null}
                       </span>
                     </div>
                     <div className={styles.infoitem}>
@@ -322,7 +340,7 @@ const Member = ({ data }: MemberProps) => {
                         <FormattedMessage {...({ id: "birthplace" } as any)} />
                       </span>
                       <span className={styles.infocontent}>
-                        {member.origin}
+                        <FormattedMessage {...({ id: member.origin } as any)} />
                       </span>
                     </div>
                     {units.length > 0 ? (
@@ -386,7 +404,7 @@ const Member = ({ data }: MemberProps) => {
                     </div>
                   </section>
                 ) : null}
-                {positionsHistory.length > 0 ? (
+                {willShowPositionCounter ? (
                   <section className={styles.section}>
                     <h2 className={styles.subheading}>
                       <FormattedMessage

@@ -122,7 +122,9 @@ export const TopNavigation = ({ locale, location }: TopNavigationProps) => {
     <nav className={styles.container}>
       <div className={styles.navigation}>
         <div className={styles.title}>
-          <LocalizedLink to="/cds/?page=singles">Nogizaka Lib</LocalizedLink>
+          <NavigationItem type="link" to="/cds/?page=singles">
+            Nogizaka Lib
+          </NavigationItem>
         </div>
         {shouldShowLanguagesButton ? (
           <LanguageItem
