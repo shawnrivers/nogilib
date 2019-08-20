@@ -5,7 +5,7 @@ import "styles/app.scss";
 
 export default () => (
   <Layout>
-    <h1>Top Page</h1>
-    <Link to="/cds/?page=singles">CDs</Link>
+    <h1>Page Not Found</h1>
+    <Link to="/cds/?page=singles">Go back</Link>
   </Layout>
 );
