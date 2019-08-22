@@ -53,19 +53,6 @@ const AppLayout = ({
 
   const locale = pageContext ? pageContext.locale : Language.Ja;
 
-  const backgroundClass = React.useMemo(() => {
-    if (pathName.includes("/singles/") || pathName.includes("/albums/")) {
-      return "bg1";
-    }
-    if (pathName.includes("/songs/")) {
-      return "bg2";
-    }
-    if (pathName.includes("/members/")) {
-      return "bg3";
-    }
-    return "";
-  }, [pathName]);
-
   return (
     <IntlProvider locale={locale} messages={messages[locale]}>
       <Helmet>
@@ -87,9 +74,7 @@ const AppLayout = ({
             animate="visible"
             exit="hidden"
             variants={layoutVariants}
-            className={`${styles.contents}${
-              backgroundClass !== "" ? " " + styles[backgroundClass] : ""
-            }`}
+            className={styles.contents}
           >
             {children}
           </motion.main>

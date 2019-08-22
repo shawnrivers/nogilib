@@ -17,3 +17,15 @@ $blue-2: #80a7d5;
 $blue-3: #418ee8;
 
 $yellow-1: #e8ad68;
+
+%bg-1 {
+  background: linear-gradient(to left top, $purple-2, $blue-1);
+}
+
+%bg-2 {
+  background: linear-gradient(to left top, $purple-2, $blue-3);
+}
+
+%bg-3 {
+  background: linear-gradient(to left top, $yellow-1, $pink-1);
+}

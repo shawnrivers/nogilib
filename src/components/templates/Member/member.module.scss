@@ -2,6 +2,10 @@
 @import "styles/typography.scss";
 @import "styles/elevations.scss";
 
+.background {
+  @extend %bg-3;
+}
+
 .link {
   display: block;
   width: 60px;

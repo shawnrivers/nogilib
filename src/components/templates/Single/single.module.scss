@@ -1,5 +1,9 @@
 @import "styles/colors.scss";
 
+.background {
+  @extend %bg-1;
+}
+
 .link {
   display: block;
   width: 60px;

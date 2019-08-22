@@ -54,22 +54,8 @@ interface AlbumData {
   };
 }
 
-const navVariants = {
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      delay: 0.1,
-    },
-  },
-  hidden: {
-    opacity: 0,
-    x: 20,
-  },
-};
-
 const Album = ({ data }: AlbumData) => (
-  <Layout>
+  <Layout className={styles.background}>
     <motion.div whileHover={{ x: -7, scale: 1.5 }} className={styles.link}>
       <LocalizedLink to="/cds/?page=albums">
         <ArrowBackIcon className={styles.back} />

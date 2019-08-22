@@ -227,7 +227,7 @@ const Song = ({ data }: SongData) => {
     );
 
     return (
-      <Layout>
+      <Layout className={styles.background}>
         <motion.div whileHover={{ x: -7, scale: 1.5 }} className={styles.link}>
           <button
             onClick={() => {
