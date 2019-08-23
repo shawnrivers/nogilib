@@ -2,6 +2,7 @@ import * as React from "react";
 import styles from "./navigationitem.module.scss";
 import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
 import { motion } from "framer-motion";
+import { classNames } from "utils/strings";
 
 interface NavigationItemProps {
   type: "link" | "button";
@@ -22,7 +23,7 @@ export const NavigationItem = ({
 }: NavigationItemProps) => {
   if (type === "link") {
     return to ? (
-      <LocalizedLink to={to} className={className ? className : undefined}>
+      <LocalizedLink to={to} className={className}>
         <motion.div
           whileHover={{
             backgroundColor: "rgba(89,89,89)",
@@ -41,7 +42,7 @@ export const NavigationItem = ({
           color: "#ffffff",
           fill: "#ffffff",
         }}
-        className={`${styles.container}${className ? " " + className : ""}`}
+        className={classNames(styles.container, className)}
       >
         {children}
       </motion.span>
@@ -57,7 +58,7 @@ export const NavigationItem = ({
         fill: "#ffffff",
       }}
       aria-label={label}
-      className={`${styles.container}${className ? " " + className : ""}`}
+      className={classNames(styles.container, className)}
     >
       {children}
     </motion.button>
@@ -68,7 +69,7 @@ export const NavigationItem = ({
         color: "#ffffff",
         fill: "#ffffff",
       }}
-      className={`${styles.container}${className ? " " + className : ""}`}
+      className={classNames(styles.container, className)}
     >
       {children}
     </motion.span>

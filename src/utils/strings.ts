@@ -1,6 +1,11 @@
 import { Language } from "utils/constants";
 
-export const toCdNumber = (num: string | number) => {
+export const classNames = (
+  ...classNames: (string | undefined)[]
+): string | undefined =>
+  classNames.reduce((acc, curr) => (curr ? acc + " " + curr : acc));
+
+export const toCdNumber = (num: string | number): string => {
   const number = Number(num);
 
   if (number) {
@@ -26,7 +31,7 @@ export const toNumberWithLocale = (
   num: string,
   language: string,
   type?: "cd" | "row"
-) => {
+): string => {
   let counter = {
     ja: "",
     zh: "",

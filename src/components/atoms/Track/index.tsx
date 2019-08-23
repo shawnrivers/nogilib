@@ -5,6 +5,7 @@ import { FormattedMessage } from "react-intl";
 import { Language } from "utils/constants";
 import { motion } from "framer-motion";
 import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
+import { classNames } from "utils/strings";
 
 const containerVariants = {
   hover: { backgroundColor: "#595959", transition: { duration: 0.3 } },
@@ -27,11 +28,18 @@ interface TrackProps {
   className?: string;
 }
 
-export const Track = (props: TrackProps) => {
+export const Track = ({
+  locale,
+  focusPerformers,
+  songKey,
+  number,
+  title,
+  type,
+  className,
+}: TrackProps) => {
   const focusPerformersText = React.useMemo(() => {
-    const { focusPerformers } = props;
     let comma: string;
-    switch (props.locale) {
+    switch (locale) {
       case Language.Zh:
         comma = "、";
         break;
@@ -52,27 +60,25 @@ export const Track = (props: TrackProps) => {
       return focusPerformers.name.reduce((acc, curr) => acc + comma + curr);
     }
     return "";
-  }, [props.focusPerformers, props.locale]);
+  }, [focusPerformers, locale]);
 
-  return props.songKey !== "OVERTURE" ? (
+  return songKey !== "OVERTURE" ? (
     <motion.div
       whileHover="hover"
       variants={containerVariants}
-      className={`${styles.container} + ${
-        props.className ? " " + props.className : ""
-      }`}
+      className={classNames(styles.container, className)}
     >
-      <LocalizedLink to={`/songs/${props.songKey}`}>
+      <LocalizedLink to={`/songs/${songKey}`}>
         <motion.span variants={textVariants} className={styles.number}>
-          {props.number}.
+          {number}.
         </motion.span>
         <div className={styles.content}>
           <motion.h3 variants={textVariants} className={styles.title}>
-            {props.title}
+            {title}
           </motion.h3>
           <motion.div variants={textVariants} className={styles.description}>
             <span>
-              #<FormattedMessage {...({ id: props.type } as any)} />
+              #<FormattedMessage {...({ id: type } as any)} />
             </span>
             <span>{focusPerformersText}</span>
           </motion.div>
@@ -80,17 +86,13 @@ export const Track = (props: TrackProps) => {
       </LocalizedLink>
     </motion.div>
   ) : (
-    <div
-      className={`${styles.container} + ${
-        props.className ? " " + props.className : ""
-      }`}
-    >
-      <span className={styles.number}>{props.number}.</span>
+    <div className={classNames(styles.container, className)}>
+      <span className={styles.number}>{number}.</span>
       <div className={styles.content}>
-        <h3 className={styles.title}>{props.title}</h3>
+        <h3 className={styles.title}>{title}</h3>
         <div className={styles.description}>
           <span>
-            #<FormattedMessage {...({ id: props.type } as any)} />
+            #<FormattedMessage {...({ id: type } as any)} />
           </span>
           <span>{focusPerformersText}</span>
         </div>

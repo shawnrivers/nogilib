@@ -3,6 +3,7 @@ import styles from "./artworks.module.scss";
 import { ArrowLeftIcon } from "components/atoms/icons/ArrowLeftIcon";
 import { ArrowRightIcon } from "components/atoms/icons/ArrowRightIcon";
 import { motion } from "framer-motion";
+import { classNames } from "utils/strings";
 
 interface ArtworksProps {
   artworks: {
@@ -37,7 +38,7 @@ export const Artworks = ({ artworks, title, className }: ArtworksProps) => {
   }, [artworks, artworkIndex]);
 
   return (
-    <div className={`${styles.container}${className ? " " + className : ""}`}>
+    <div className={classNames(styles.container, className)}>
       <div className={styles.artwork}>
         <motion.button
           whileHover={{ scale: 2, x: -8 }}

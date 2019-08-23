@@ -2,6 +2,7 @@ import * as React from "react";
 import LazyLoad from "react-lazyload";
 import styles from "./artwork.module.scss";
 import { motion } from "framer-motion";
+import { classNames } from "utils/strings";
 
 const backgroundFade = {
   isHovered: {
@@ -39,7 +40,7 @@ export const Artwork = ({ images, title, className }: ArtworkProps) => {
       onHoverStart={() => setHover(true)}
       onHoverEnd={() => setHover(false)}
       whileHover={{ scale: 1.1 }}
-      className={styles.container + `${className ? " " + className : ""}`}
+      className={classNames(styles.container, className)}
     >
       <LazyLoad offset={100}>
         <img

@@ -1,5 +1,6 @@
 import * as React from "react";
 import styles from "./layout.module.scss";
+import { classNames } from "utils/strings";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -7,7 +8,5 @@ interface LayoutProps {
 }
 
 export const Layout = ({ children, className }: LayoutProps) => (
-  <div className={`${className ? className + " " : ""}${styles.container}`}>
-    {children}
-  </div>
+  <div className={classNames(styles.container, className)}>{children}</div>
 );
