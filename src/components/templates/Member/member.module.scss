@@ -4,6 +4,7 @@
 
 .background {
   @extend %bg-3;
+  min-height: 100vh;
 }
 
 .link {
