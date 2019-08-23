@@ -39,7 +39,7 @@ module.exports = {
       options: {
         name: "Nogizaka Lib",
         short_name: "Nogilib",
-        start_url: "/nogizaka-lib-redesign/cds/?page=singles",
+        start_url: "/nogizaka-lib-redesign/cds/?page=singles/",
         background_color: "#ffffff",
         theme_color: "#af7dce",
         display: "standalone",
