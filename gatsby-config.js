@@ -47,5 +47,6 @@ module.exports = {
         crossOrigin: `use-credentials`,
       },
     },
+    `gatsby-plugin-remove-serviceworker`,
   ],
 };
