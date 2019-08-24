@@ -1,62 +1,10 @@
 import * as React from "react";
 import styles from "./members.module.scss";
-import { JoinedGenerationType } from "types/responseTypes";
+import { JoinedGenerationType, MembersType } from "types/responseTypes";
 import { PageTab, TabItem } from "components/molecules/PageTab";
-import { parse } from "query-string";
 import { MemberCard } from "components/atoms/MemberCard";
 import { AnimatePresence, motion } from "framer-motion";
-
-export type MemberType = {
-  name: string;
-  nameNotations: {
-    lastName: string;
-    firstName: string;
-    lastNameEn: string;
-    firstNameEn: string;
-  };
-  join: JoinedGenerationType;
-  graduation: {
-    isGraduated: boolean;
-  };
-  profileImage: {
-    large: string;
-    small: string;
-  };
-};
-
-const pageTabItems: TabItem[] = [
-  {
-    link: "/allmembers/?page=first-gen",
-    page: "first-gen",
-  },
-  {
-    link: "/allmembers/?page=second-gen",
-    page: "second-gen",
-  },
-  {
-    link: "/allmembers/?page=third-gen",
-    page: "third-gen",
-  },
-  {
-    link: "/allmembers/?page=fourth-gen",
-    page: "fourth-gen",
-  },
-  {
-    link: "/allmembers/?page=graduated",
-    page: "graduated",
-  },
-];
-
-interface MembersProps {
-  query: string;
-  members: {
-    first: MemberType[];
-    second: MemberType[];
-    third: MemberType[];
-    fourth: MemberType[];
-    graduated: MemberType[];
-  };
-}
+import { Links } from "utils/constants";
 
 const listVariants = {
   visible: {
@@ -81,41 +29,68 @@ const itemVariants = {
   hidden: { opacity: 0, y: 20 },
 };
 
-export const Members = (props: MembersProps) => {
-  const { page } = React.useMemo(() => parse(props.query), [props.query]);
+const pageTabItems: TabItem[] = [
+  {
+    link: Links.FirstGeneration,
+    page: MembersType.FirstGeneration,
+  },
+  {
+    link: Links.SecondGeneration,
+    page: MembersType.SecondGeneration,
+  },
+  {
+    link: Links.ThirdGeneration,
+    page: MembersType.ThirdGeneration,
+  },
+  {
+    link: Links.FourthGeneration,
+    page: MembersType.FourthGeneration,
+  },
+  {
+    link: Links.Graduated,
+    page: MembersType.Graduated,
+  },
+];
 
-  const pageMembers = React.useMemo(() => {
-    switch (page) {
-      case "first-gen":
-        return props.members.first;
-      case "second-gen":
-        return props.members.second;
-      case "third-gen":
-        return props.members.third;
-      case "fourth-gen":
-        return props.members.fourth;
-      case "graduated":
-        return props.members.graduated;
-      default:
-        return props.members.first;
-    }
-  }, [page, props.members]);
+export type MemberType = {
+  name: string;
+  nameNotations: {
+    lastName: string;
+    firstName: string;
+    lastNameEn: string;
+    firstNameEn: string;
+  };
+  join: JoinedGenerationType;
+  graduation: {
+    isGraduated: boolean;
+  };
+  profileImage: {
+    large: string;
+    small: string;
+  };
+};
 
+interface MembersProps {
+  page: MembersType;
+  members: MemberType[];
+}
+
+export const Members = ({ page, members }: MembersProps) => {
   return (
     <div>
       <PageTab
         items={pageTabItems}
-        selectedItem={page ? (page as string) : "first"}
+        selectedItem={page}
         className={styles.tabs}
       />
       <AnimatePresence>
         <motion.div
-          key={page as string}
+          key={page}
           exit="hidden"
           variants={listVariants}
           className={styles.grid}
         >
-          {pageMembers.map(({ name, profileImage, nameNotations }) => (
+          {members.map(({ name, profileImage, nameNotations }) => (
             <motion.div
               key={name}
               variants={itemVariants}

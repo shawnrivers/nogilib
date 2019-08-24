@@ -3,6 +3,14 @@ export enum CdType {
   Albums = "albums",
 }
 
+export enum MembersType {
+  FirstGeneration = "first-gen",
+  SecondGeneration = "second-gen",
+  ThirdGeneration = "third-gen",
+  FourthGeneration = "fourth-gen",
+  Graduated = "graduated",
+}
+
 export enum FocusPerformersType {
   Center = "center",
   Solo = "solo",

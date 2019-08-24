@@ -42,7 +42,7 @@ const pageTabItems: TabItem[] = [
 ];
 
 interface CdsProps {
-  page: string;
+  page: CdType;
   cds: {
     node: {
       title: string;

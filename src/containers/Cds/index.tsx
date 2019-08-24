@@ -64,7 +64,7 @@ interface CdsData {
     };
   };
   pageContext: {
-    cdType: string;
+    cdType: CdType;
     locale: string;
   };
 }

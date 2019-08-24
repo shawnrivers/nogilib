@@ -84,7 +84,7 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
   const shouldShowLanguagesButton = React.useMemo(() => {
     const { pathname } = location;
 
-    return pathname.includes("/cds/") || pathname.includes("/allmembers/");
+    return pathname.includes("/cds/") || pathname.includes("/members-list/");
   }, [location.pathname]);
 
   return (
@@ -117,7 +117,7 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
           </NavigationItem>
           <NavigationItem
             type="link"
-            to="/allmembers/?page=first-gen"
+            to={Links.FirstGeneration}
             className={styles.members}
           >
             <FormattedMessage {...({ id: "members" } as any)} />

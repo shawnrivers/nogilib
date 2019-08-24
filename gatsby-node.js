@@ -147,6 +147,48 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     }
   }
 
+  const membersPages = [
+    {
+      slug: "/members-list/first-gen",
+      type: "first-gen",
+    },
+    {
+      slug: "/members-list/second-gen",
+      type: "second-gen",
+    },
+    {
+      slug: "/members-list/third-gen",
+      type: "third-gen",
+    },
+    {
+      slug: "/members-list/fourth-gen",
+      type: "fourth-gen",
+    },
+    {
+      slug: "/members-list/graduated",
+      type: "graduated",
+    },
+  ];
+
+  for (const member of membersPages) {
+    for (const lang of localesKeys) {
+      const { slug, type } = member;
+
+      const localizedPath = locales[lang].default
+        ? slug
+        : locales[lang].path + slug;
+
+      createPage({
+        path: localizedPath,
+        component: path.resolve("./src/containers/Members/index.tsx"),
+        context: {
+          generation: type,
+          locale: lang,
+        },
+      });
+    }
+  }
+
   albumsResult.data.allAlbumsJson.edges.forEach(({ node }) => {
     const cdType = node.fields.slug.split("/")[1];
     const number = node.number;

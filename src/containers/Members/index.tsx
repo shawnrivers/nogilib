@@ -1,12 +1,10 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-import { RouteComponentProps } from "@reach/router";
-import { JoinedGenerationType } from "types/responseTypes";
 import { MemberType, Members } from "components/templates/Members";
-import "styles/app.scss";
+import { JoinedGenerationType, MembersType } from "types/responseTypes";
 
 export const query = graphql`
-  query MembersQuery {
+  query MembersContainerQuery {
     allMembersJson {
       nodes {
         name
@@ -29,16 +27,23 @@ export const query = graphql`
   }
 `;
 
-interface CdsData {
+interface MembersData {
   data: {
     allMembersJson: {
       nodes: MemberType[];
     };
   };
+  pageContext: {
+    generation: MembersType;
+    locale: string;
+  };
 }
 
-export default (props: RouteComponentProps<CdsData>) => {
-  const members = React.useMemo(() => {
+const MembersContainer = ({
+  data: { allMembersJson },
+  pageContext: { generation },
+}: MembersData) => {
+  const allMembers = React.useMemo(() => {
     let membersData: {
       first: MemberType[];
       second: MemberType[];
@@ -53,8 +58,8 @@ export default (props: RouteComponentProps<CdsData>) => {
       graduated: [],
     };
 
-    if (props.data && props.data.allMembersJson) {
-      const { nodes } = props.data.allMembersJson;
+    if (allMembersJson) {
+      const { nodes } = allMembersJson;
 
       membersData = {
         first: nodes.filter(
@@ -82,12 +87,28 @@ export default (props: RouteComponentProps<CdsData>) => {
     }
 
     return membersData;
-  }, [props.data]);
+  }, [allMembersJson]);
 
-  const query = React.useMemo(
-    () => (props.location ? props.location.search : ""),
-    [props.location]
-  );
+  const members = React.useMemo(() => {
+    switch (generation) {
+      case MembersType.FirstGeneration:
+        return allMembers.first;
+      case MembersType.SecondGeneration:
+        return allMembers.second;
+      case MembersType.ThirdGeneration:
+        return allMembers.third;
+      case MembersType.FourthGeneration:
+        return allMembers.fourth;
+      case MembersType.Graduated:
+        return allMembers.graduated;
+      default:
+        return allMembers.first;
+    }
+  }, [generation, allMembers]);
 
-  return props.data ? <Members query={query} members={members} /> : null;
+  return allMembersJson ? (
+    <Members page={generation} members={members} />
+  ) : null;
 };
+
+export default MembersContainer;
