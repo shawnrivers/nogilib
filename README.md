@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://shawnrivers.github.io/nogizaka-lib-redesign/zh/cds/singles">
+  <a href="https://shawnrivers.github.io/nogizaka-lib-redesign/cds/singles">
     <img alt="Gatsby" src="https://raw.githubusercontent.com/shawnrivers/nogizaka-lib-redesign/master/src/assets/images/favicon-512.png" width="60" />
   </a>
 </p>
@@ -7,9 +7,11 @@
   Nogizaka Lib
 </h1>
 
-This is a React web application aiming at showing the information about _[Nogizaka46](http://www.nogizaka46.com/)_ in a user-friendly way.
+_[App link](https://shawnrivers.github.io/nogizaka-lib-redesign/cds/singles)_
 
-_[App link](https://shawnrivers.github.io/nogizaka-lib-redesign/zh/cds/singles)_
+This is a Gatsby powered web application aiming at showing the information about _[Nogizaka46](http://www.nogizaka46.com/)_ in a user-friendly way.
+
+Currently support languages: _[Japanese](https://shawnrivers.github.io/nogizaka-lib-redesign/cds/singles)_ 🇯🇵, _[English](https://shawnrivers.github.io/nogizaka-lib-redesign/en/cds/singles)_ 🇬🇧 and _[Chinese](https://shawnrivers.github.io/nogizaka-lib-redesign/zh/cds/singles)_ 🇨🇳.
 
 ## 🚀 Set Up Dev Environment
 
