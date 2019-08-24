@@ -10,38 +10,36 @@
   max-width: 480px;
   width: 100%;
   height: 32px;
+  box-sizing: border-box;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0;
+  border-color: $white;
 }
 
 .under {
   box-sizing: border-box;
   background-color: $white;
   color: $gray-3;
-  line-height: 32px;
+  line-height: 28px;
   text-align: center;
 }
 
 .selectedcontainer {
   display: flex;
   line-height: 28px;
-}
 
-%bar-portion {
-  box-sizing: border-box;
-  border-width: 2px 1px;
-  border-style: solid;
-  border-radius: 0;
-
-  &:last-child {
-    border-width: 2px 2px 2px 1px;
-  }
-
-  &:first-child {
-    border-width: 2px 1px 2px 2px;
+  div {
+    &:not(:last-child) {
+      border-right-width: 2px;
+      border-right-style: solid;
+      border-radius: 0;
+      border-color: $white;
+    }
   }
 }
 
 .selected {
-  @extend %bar-portion;
   z-index: 3;
   border-color: $white;
   background-color: $gray-3;
@@ -50,7 +48,6 @@
 }
 
 .fukujin {
-  @extend %bar-portion;
   z-index: 3;
   border-color: $white;
   background-color: $gray-1;
@@ -59,7 +56,6 @@
 }
 
 .center {
-  @extend %bar-portion;
   z-index: 4;
   border-color: $white;
   background-color: $pink-1;
