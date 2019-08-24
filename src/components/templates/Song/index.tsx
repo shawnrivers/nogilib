@@ -291,7 +291,7 @@ export const Song = ({
               <div className={styles.creators}>
                 {creators.lyrics.length > 0 ? (
                   <div className={styles.creatorsitem}>
-                    <span className={styles.creatorwork}>
+                    <span className={styles.creatorjob}>
                       <FormattedMessage {...({ id: "lyrics" } as any)} />
                     </span>
                     <span className={styles.creatornames}>
@@ -301,7 +301,7 @@ export const Song = ({
                 ) : null}
                 {creators.compose.length > 0 ? (
                   <div className={styles.creatorsitem}>
-                    <span className={styles.creatorwork}>
+                    <span className={styles.creatorjob}>
                       <FormattedMessage {...({ id: "compose" } as any)} />
                     </span>
                     <span className={styles.creatornames}>
@@ -311,7 +311,7 @@ export const Song = ({
                 ) : null}
                 {creators.arrange.length > 0 ? (
                   <div className={styles.creatorsitem}>
-                    <span className={styles.creatorwork}>
+                    <span className={styles.creatorjob}>
                       <FormattedMessage {...({ id: "arrange" } as any)} />
                     </span>
                     <span className={styles.creatornames}>
@@ -321,7 +321,7 @@ export const Song = ({
                 ) : null}
                 {creators.direct.length > 0 ? (
                   <div className={styles.creatorsitem}>
-                    <span className={styles.creatorwork}>
+                    <span className={styles.creatorjob}>
                       <FormattedMessage {...({ id: "direct" } as any)} />
                     </span>
                     <span className={styles.creatornames}>

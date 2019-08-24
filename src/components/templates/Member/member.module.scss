@@ -352,7 +352,12 @@
   .infoitem {
     flex-direction: row;
     align-items: baseline;
+    margin-bottom: 4px;
     max-width: none;
+
+    &:not(:last-child) {
+      margin-right: 0;
+    }
   }
 
   .infotitle {

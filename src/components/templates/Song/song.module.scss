@@ -133,6 +133,7 @@
 .creators {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: flex-start;
 }
 
@@ -148,7 +149,7 @@
   }
 }
 
-.creatorwork {
+.creatorjob {
   font-size: $size-body;
   font-weight: $weight-light;
   line-height: 20px;
@@ -224,5 +225,26 @@
       height: auto;
       margin: auto;
     }
+  }
+}
+
+@media (max-width: 507px) {
+  .creators {
+    flex-direction: column;
+  }
+
+  .creatorsitem {
+    flex-direction: row;
+    align-items: baseline;
+    max-width: none;
+    margin-bottom: 4px;
+
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+
+  .creatorjob {
+    margin-right: 32px;
   }
 }
