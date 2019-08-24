@@ -22,3 +22,16 @@
     margin-right: 24px;
   }
 }
+
+.active {
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom-width: 3px;
+  border-bottom-color: #595959;
+}
+
+.inactive {
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom-width: 0px;
+}

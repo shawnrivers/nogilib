@@ -74,7 +74,10 @@ export const Cds = (props: CdsProps) => {
   const singles = props.singles.edges;
   const albums = props.albums.edges;
 
-  const { page } = React.useMemo(() => parse(props.query), [props.query]);
+  const page = React.useMemo(() => {
+    const page = parse(props.query).page;
+    return page ? page : "singles";
+  }, [props.query]);
 
   const pageCds = React.useMemo(() => (page === "albums" ? albums : singles), [
     page,
@@ -86,7 +89,7 @@ export const Cds = (props: CdsProps) => {
     <div>
       <PageTab
         items={pageTabItems}
-        selectedItem={page ? (page as string) : "singles"}
+        selectedItem={page as string}
         className={styles.tabs}
       />
       <AnimatePresence>
