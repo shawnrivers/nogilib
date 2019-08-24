@@ -64,23 +64,25 @@ interface CdsData {
     };
   };
   pageContext: {
-    cdType: CdType;
+    currentTab: CdType;
     locale: string;
   };
 }
 
 const CdsContainer = ({
   data: { allSinglesJson, allAlbumsJson },
-  pageContext: { cdType },
+  pageContext: { currentTab },
 }: CdsData) => {
   const cds = React.useMemo(
     () =>
-      cdType === CdType.Singles ? allSinglesJson.edges : allAlbumsJson.edges,
-    [cdType, allSinglesJson, allAlbumsJson]
+      currentTab === CdType.Singles
+        ? allSinglesJson.edges
+        : allAlbumsJson.edges,
+    [currentTab, allSinglesJson, allAlbumsJson]
   );
 
   return allSinglesJson !== undefined && allAlbumsJson !== undefined ? (
-    <Cds page={cdType} cds={cds} />
+    <Cds page={currentTab} cds={cds} />
   ) : null;
 };
 

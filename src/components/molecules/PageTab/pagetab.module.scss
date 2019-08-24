@@ -1,6 +1,10 @@
 @import "styles/typography.scss";
 @import "styles/colors.scss";
 
+.layout {
+  padding-bottom: 12px;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;

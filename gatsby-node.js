@@ -140,7 +140,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         path: localizedPath,
         component: path.resolve("./src/containers/Cds/index.tsx"),
         context: {
-          cdType: type,
+          currentTab: type,
           locale: lang,
         },
       });
@@ -182,7 +182,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         path: localizedPath,
         component: path.resolve("./src/containers/Members/index.tsx"),
         context: {
-          generation: type,
+          currentTab: type,
           locale: lang,
         },
       });

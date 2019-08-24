@@ -3,21 +3,16 @@ import { Helmet } from "react-helmet";
 import { RouteComponentProps, WindowLocation } from "@reach/router";
 import { motion, AnimatePresence } from "framer-motion";
 import { IntlProvider } from "react-intl";
-import { Language } from "utils/constants";
+import { Language, Links } from "utils/constants";
 import en from "i18n/en.json";
 import ja from "i18n/ja.json";
 import zh from "i18n/zh.json";
 import { TopNavigation } from "components/molecules/TopNavigation";
 import styles from "./applayout.module.scss";
+import { PageTab } from "components/molecules/PageTab";
+import { CdType, MembersType } from "types/responseTypes";
 
 const messages = { en, ja, zh };
-
-interface AppLayoutProps {
-  children: React.ReactNode;
-  pageContext: {
-    locale: Language;
-  };
-}
 
 const layoutVariants = {
   visible: {
@@ -36,6 +31,49 @@ const layoutVariants = {
   },
 };
 
+const pageTabItems = {
+  cds: [
+    {
+      link: Links.Singles,
+      page: CdType.Singles,
+    },
+    {
+      link: Links.Albums,
+      page: CdType.Albums,
+    },
+  ],
+  members: [
+    {
+      link: Links.FirstGeneration,
+      page: MembersType.FirstGeneration,
+    },
+    {
+      link: Links.SecondGeneration,
+      page: MembersType.SecondGeneration,
+    },
+    {
+      link: Links.ThirdGeneration,
+      page: MembersType.ThirdGeneration,
+    },
+    {
+      link: Links.FourthGeneration,
+      page: MembersType.FourthGeneration,
+    },
+    {
+      link: Links.Graduated,
+      page: MembersType.Graduated,
+    },
+  ],
+};
+
+interface AppLayoutProps {
+  children: React.ReactNode;
+  pageContext: {
+    locale: Language;
+    currentTab?: CdType | MembersType;
+  };
+}
+
 const AppLayout = ({
   children,
   location,
@@ -53,6 +91,64 @@ const AppLayout = ({
 
   const locale = pageContext ? pageContext.locale : Language.Ja;
 
+  const isCdsPage = React.useMemo(() => pathName.includes("/cds/"), [pathName]);
+  const isMembersPage = React.useMemo(
+    () => pathName.includes("/members-list/"),
+    [pathName]
+  );
+
+  const cdsPageTabs = React.useMemo(() => {
+    const items = [
+      {
+        link: Links.Singles,
+        page: CdType.Singles,
+      },
+      {
+        link: Links.Albums,
+        page: CdType.Albums,
+      },
+    ];
+
+    const selectedItem =
+      pageContext && pageContext.currentTab
+        ? pageContext.currentTab
+        : CdType.Singles;
+
+    return <PageTab items={items} selectedItem={selectedItem} />;
+  }, [pageContext]);
+
+  const membersPageTabs = React.useMemo(() => {
+    const items = [
+      {
+        link: Links.FirstGeneration,
+        page: MembersType.FirstGeneration,
+      },
+      {
+        link: Links.SecondGeneration,
+        page: MembersType.SecondGeneration,
+      },
+      {
+        link: Links.ThirdGeneration,
+        page: MembersType.ThirdGeneration,
+      },
+      {
+        link: Links.FourthGeneration,
+        page: MembersType.FourthGeneration,
+      },
+      {
+        link: Links.Graduated,
+        page: MembersType.Graduated,
+      },
+    ];
+
+    const selectedItem =
+      pageContext && pageContext.currentTab
+        ? pageContext.currentTab
+        : MembersType.FirstGeneration;
+
+    return <PageTab items={items} selectedItem={selectedItem} />;
+  }, [pageContext]);
+
   return (
     <IntlProvider locale={locale} messages={messages[locale]}>
       <Helmet>
@@ -68,6 +164,8 @@ const AppLayout = ({
             locale={locale}
             location={location as WindowLocation}
           />
+          {isCdsPage ? cdsPageTabs : null}
+          {isMembersPage ? membersPageTabs : null}
           <motion.main
             key={pathName}
             initial="hidden"

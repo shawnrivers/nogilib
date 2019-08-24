@@ -34,14 +34,14 @@ interface MembersData {
     };
   };
   pageContext: {
-    generation: MembersType;
+    currentTab: MembersType;
     locale: string;
   };
 }
 
 const MembersContainer = ({
   data: { allMembersJson },
-  pageContext: { generation },
+  pageContext: { currentTab },
 }: MembersData) => {
   const allMembers = React.useMemo(() => {
     let membersData: {
@@ -90,7 +90,7 @@ const MembersContainer = ({
   }, [allMembersJson]);
 
   const members = React.useMemo(() => {
-    switch (generation) {
+    switch (currentTab) {
       case MembersType.FirstGeneration:
         return allMembers.first;
       case MembersType.SecondGeneration:
@@ -104,10 +104,10 @@ const MembersContainer = ({
       default:
         return allMembers.first;
     }
-  }, [generation, allMembers]);
+  }, [currentTab, allMembers]);
 
   return allMembersJson ? (
-    <Members page={generation} members={members} />
+    <Members page={currentTab} members={members} />
   ) : null;
 };
 

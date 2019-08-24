@@ -20,7 +20,7 @@ export const PageTab = ({ items, selectedItem, className }: PageTabProps) => {
   const [currentItem, setCurrentItem] = React.useState(selectedItem);
 
   return (
-    <Layout className={className}>
+    <Layout className={classNames(styles.layout, className)}>
       <div className={styles.container}>
         {items.map(item => {
           return (
