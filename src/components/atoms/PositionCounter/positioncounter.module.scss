@@ -3,6 +3,7 @@
 @import "styles/typography.scss";
 
 .container {
+  @extend %elevation-1;
   display: flex;
   font-size: $size-caption;
   font-weight: $weight-regular;
@@ -11,14 +12,7 @@
   height: 32px;
 }
 
-%counter-bar {
-  box-sizing: border-box;
-  border-style: solid;
-  border-radius: 0;
-}
-
 .under {
-  @extend %elevation-1;
   box-sizing: border-box;
   background-color: $white;
   color: $gray-3;
@@ -27,18 +21,23 @@
 }
 
 .selectedcontainer {
-  @extend %counter-bar, %elevation-1;
   display: flex;
-  border-width: 1px;
-  border-color: $white;
   line-height: 28px;
 }
 
 %bar-portion {
   box-sizing: border-box;
-  border-width: 1px;
+  border-width: 2px 1px;
   border-style: solid;
   border-radius: 0;
+
+  &:first-child {
+    border-width: 2px 1px 2px 2px;
+  }
+
+  &:last-child {
+    border-width: 2px 2px 2px 1px;
+  }
 }
 
 .selected {

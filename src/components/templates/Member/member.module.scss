@@ -149,6 +149,7 @@
 .info {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: flex-start;
 }
 
@@ -340,5 +341,21 @@
       width: 100%;
       margin: auto;
     }
+  }
+}
+
+@media (max-width: 507px) {
+  .info {
+    flex-direction: column;
+  }
+
+  .infoitem {
+    flex-direction: row;
+    align-items: baseline;
+    max-width: none;
+  }
+
+  .infotitle {
+    margin-right: 32px;
   }
 }
