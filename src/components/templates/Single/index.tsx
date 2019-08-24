@@ -4,9 +4,10 @@ import { graphql } from "gatsby";
 import { Cd } from "components/organisms/Cd";
 import { Layout } from "components/atoms/Layout";
 import { ArrowBackIcon } from "components/atoms/icons/ArrowBackIcon";
-import { focusPerformersType, SongType } from "types/responseTypes";
+import { FocusPerformersType, SongType } from "types/responseTypes";
 import styles from "./single.module.scss";
 import { motion } from "framer-motion";
+import { Links } from "../../../utils/constants";
 
 export const query = graphql`
   query($number: String!) {
@@ -46,7 +47,7 @@ interface SingleData {
         type: SongType;
         focusPerformers: {
           name: string[];
-          type: focusPerformersType;
+          type: FocusPerformersType;
         };
       }[];
       release: string;
@@ -57,7 +58,7 @@ interface SingleData {
 const Single = ({ data }: SingleData) => (
   <Layout className={styles.background}>
     <motion.div whileHover={{ x: -7, scale: 1.5 }} className={styles.link}>
-      <LocalizedLink to="/cds/singles" label="Back">
+      <LocalizedLink to={Links.Singles} label="Back">
         <ArrowBackIcon className={styles.back} />
       </LocalizedLink>
     </motion.div>

@@ -1,9 +1,10 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import { Cds } from "../../components/templates/Cds";
+import { CdType } from "../../types/responseTypes";
 
 export const query = graphql`
-  query CdsContainerQuery {
+  query CdsQuery {
     allAlbumsJson {
       edges {
         node {
@@ -68,16 +69,19 @@ interface CdsData {
   };
 }
 
-const CdsTemp = ({ data, pageContext }: CdsData) => {
-  console.log({ data, pageContext });
+const CdsContainer = ({
+  data: { allSinglesJson, allAlbumsJson },
+  pageContext: { cdType },
+}: CdsData) => {
+  const cds = React.useMemo(
+    () =>
+      cdType === CdType.Singles ? allSinglesJson.edges : allAlbumsJson.edges,
+    [cdType, allSinglesJson, allAlbumsJson]
+  );
 
-  return data ? (
-    <Cds
-      page={pageContext.cdType}
-      singles={data.allSinglesJson}
-      albums={data.allAlbumsJson}
-    />
+  return allSinglesJson !== undefined && allAlbumsJson !== undefined ? (
+    <Cds page={cdType} cds={cds} />
   ) : null;
 };
 
-export default CdsTemp;
+export default CdsContainer;

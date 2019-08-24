@@ -1,6 +1,6 @@
 import * as React from "react";
 import styles from "./track.module.scss";
-import { focusPerformersType, SongType } from "types/responseTypes";
+import { FocusPerformersType, SongType } from "types/responseTypes";
 import { FormattedMessage } from "react-intl";
 import { Language } from "utils/constants";
 import { motion } from "framer-motion";
@@ -22,7 +22,7 @@ interface TrackProps {
   type: SongType;
   focusPerformers: {
     name: string[];
-    type: focusPerformersType;
+    type: FocusPerformersType;
   };
   locale: Language;
   className?: string;
@@ -52,7 +52,7 @@ export const Track = ({
     }
 
     if (focusPerformers.name.length > 0) {
-      if (focusPerformers.type === focusPerformersType.Center) {
+      if (focusPerformers.type === FocusPerformersType.Center) {
         return (
           "C: " + focusPerformers.name.reduce((acc, curr) => acc + comma + curr)
         );

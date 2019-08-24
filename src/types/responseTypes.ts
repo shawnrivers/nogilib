@@ -1,4 +1,9 @@
-export enum focusPerformersType {
+export enum CdType {
+  Singles = "singles",
+  Albums = "albums",
+}
+
+export enum FocusPerformersType {
   Center = "center",
   Solo = "solo",
   Unit = "unit",

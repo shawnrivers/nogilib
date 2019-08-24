@@ -3,7 +3,7 @@ import styles from "./topnavigation.module.scss";
 import { useOnClickOutside } from "utils/hooks";
 import { FormattedMessage } from "react-intl";
 import { WindowLocation } from "@reach/router";
-import { Language } from "utils/constants";
+import { Language, Links } from "utils/constants";
 import { NavigationItem } from "components/atoms/NavigationItem";
 import { HomeIcon } from "components/atoms/icons/HomeIcon";
 import { OptionItem } from "components/atoms/OptionItem";
@@ -50,19 +50,19 @@ const LanguageItem = ({ type, className }: LanguageItemProps) => {
           >
             <ul>
               <OptionItem
-                to="/en/cds/singles"
+                to={"/en" + Links.Singles}
                 handleClick={() => setLanguagesToggle(false)}
               >
                 English
               </OptionItem>
               <OptionItem
-                to="/cds/singles"
+                to={Links.Singles}
                 handleClick={() => setLanguagesToggle(false)}
               >
                 日本語
               </OptionItem>
               <OptionItem
-                to="/zh/cds/singles"
+                to={"/zh" + Links.Singles}
                 handleClick={() => setLanguagesToggle(false)}
               >
                 简体中文
@@ -91,7 +91,7 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
     <nav className={styles.container}>
       <div className={styles.navigation}>
         <div className={styles.title}>
-          <NavigationItem type="link" to="/cds/singles">
+          <NavigationItem type="link" to={Links.Singles}>
             Nogizaka Lib
           </NavigationItem>
         </div>
@@ -100,7 +100,7 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
         ) : (
           <NavigationItem
             type="link"
-            to="/cds/singles"
+            to={Links.Singles}
             label="Nogizaka Lib"
             className={styles.home}
           >
@@ -110,7 +110,7 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
         <div className={styles.items}>
           <NavigationItem
             type="link"
-            to="/cds/singles"
+            to={Links.Singles}
             className={styles.music}
           >
             <FormattedMessage {...({ id: "music" } as any)} />

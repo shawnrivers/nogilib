@@ -1,51 +1,11 @@
 import * as React from "react";
 import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
-import { parse } from "query-string";
 import { Artwork } from "components/atoms/Artwork";
 import { PageTab, TabItem } from "components/molecules/PageTab";
 import styles from "./cds.module.scss";
 import { motion, AnimatePresence } from "framer-motion";
-
-interface CdsProps {
-  page: string;
-  singles: {
-    edges: {
-      node: {
-        title: string;
-        number: string;
-        artworks: {
-          large: string;
-          medium: string;
-          small: string;
-        }[];
-      };
-    }[];
-  };
-  albums: {
-    edges: {
-      node: {
-        title: string;
-        number: string;
-        artworks: {
-          large: string;
-          medium: string;
-          small: string;
-        }[];
-      };
-    }[];
-  };
-}
-
-const pageTabItems: TabItem[] = [
-  {
-    link: "/cds/singles",
-    page: "singles",
-  },
-  {
-    link: "/cds/albums",
-    page: "albums",
-  },
-];
+import { CdType } from "../../../types/responseTypes";
+import { Links } from "../../../utils/constants";
 
 const listVariants = {
   visible: {
@@ -70,12 +30,33 @@ const itemVariants = {
   hidden: { opacity: 0, y: 20 },
 };
 
-export const Cds = ({ singles, albums, page }: CdsProps) => {
-  const pageCds = React.useMemo(
-    () => (page === "albums" ? albums.edges : singles.edges),
-    [page, albums.edges, singles.edges]
-  );
+const pageTabItems: TabItem[] = [
+  {
+    link: Links.Singles,
+    page: CdType.Singles,
+  },
+  {
+    link: Links.Albums,
+    page: CdType.Albums,
+  },
+];
 
+interface CdsProps {
+  page: string;
+  cds: {
+    node: {
+      title: string;
+      number: string;
+      artworks: {
+        large: string;
+        medium: string;
+        small: string;
+      }[];
+    };
+  }[];
+}
+
+export const Cds = ({ cds, page }: CdsProps) => {
   return (
     <div>
       <PageTab
@@ -90,7 +71,7 @@ export const Cds = ({ singles, albums, page }: CdsProps) => {
           variants={listVariants}
           className={styles.grid}
         >
-          {pageCds.map(({ node }) => (
+          {cds.map(({ node }) => (
             <motion.div
               variants={itemVariants}
               key={page + node.number}

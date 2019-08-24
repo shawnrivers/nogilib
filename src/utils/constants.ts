@@ -1,3 +1,8 @@
+export enum Links {
+  Singles = "/cds/singles",
+  Albums = "/cds/albums",
+}
+
 export enum Language {
   En = "en",
   Ja = "ja",

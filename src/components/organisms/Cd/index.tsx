@@ -2,7 +2,7 @@ import * as React from "react";
 import { toCdNumber } from "utils/strings";
 import styles from "./cd.module.scss";
 import { Track } from "components/atoms/Track";
-import { focusPerformersType, SongType } from "types/responseTypes";
+import { FocusPerformersType, SongType } from "types/responseTypes";
 import { Artworks } from "components/molecules/Artworks";
 import { FormattedMessage, FormattedDate, injectIntl } from "react-intl";
 import { motion } from "framer-motion";
@@ -74,7 +74,7 @@ interface CdProps {
     type: SongType;
     focusPerformers: {
       name: string[];
-      type: focusPerformersType;
+      type: FocusPerformersType;
     };
   }[];
   release: string;
