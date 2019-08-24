@@ -70,7 +70,7 @@ Currently support languages: _[Japanese](https://shawnrivers.github.io/nogizaka-
 
 3.  **`/src/components`**: The components structure based on _[Atomic Design](http://atomicdesign.bradfrost.com/chapter-2/)_.
 
-4.  **`/src/components`**: Each actual page with data processing and side effects.
+4.  **`/src/containers`**: Each actual page with data processing and side effects.
 
 5.  **`/src/data`**: Data used in this application.
 
