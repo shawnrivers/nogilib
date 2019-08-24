@@ -180,160 +180,162 @@ export const Song = ({
   useScrollRestoration();
 
   return (
-    <Layout className={styles.background}>
-      <motion.div whileHover={{ x: -7, scale: 1.5 }} className={styles.link}>
-        <button
-          onClick={() => {
-            window.history.back();
-          }}
-          aria-label="Go Back"
-        >
-          <ArrowBackIcon className={styles.back} />
-        </button>
-      </motion.div>
-      <motion.div variants={containerVariants} className={styles.container}>
-        <motion.div variants={headingVariants} className={styles.heading}>
-          <h1 className={styles.title}>{title}</h1>
-          <h4 className={styles.tags}>
-            <span>
-              #<FormattedMessage {...({ id: type } as any)} />
-            </span>
-            {songTags.map((tag, index) => (
-              <span key={index}>{tag}</span>
-            ))}
-          </h4>
+    <div className={styles.background}>
+      <Layout>
+        <motion.div whileHover={{ x: -7, scale: 1.5 }} className={styles.link}>
+          <button
+            onClick={() => {
+              window.history.back();
+            }}
+            aria-label="Go Back"
+          >
+            <ArrowBackIcon className={styles.back} />
+          </button>
         </motion.div>
-        <motion.div
-          variants={contentContainerVariants}
-          className={styles.flexbox}
-        >
-          <motion.div variants={contentVariants} className={styles.artwork}>
-            <img
-              src={artwork.medium}
-              srcSet={`${artwork.large} 1.5x`}
-              alt={title}
-            />
+        <motion.div variants={containerVariants} className={styles.container}>
+          <motion.div variants={headingVariants} className={styles.heading}>
+            <h1 className={styles.title}>{title}</h1>
+            <h4 className={styles.tags}>
+              <span>
+                #<FormattedMessage {...({ id: type } as any)} />
+              </span>
+              {songTags.map((tag, index) => (
+                <span key={index}>{tag}</span>
+              ))}
+            </h4>
           </motion.div>
-          <motion.div variants={contentVariants} className={styles.content}>
-            <section className={styles.section}>
-              <h2 className={styles.subheading}>
-                <FormattedMessage {...({ id: "performers" } as any)} />
-              </h2>
-              <PerformersTag
-                singleNumber={performersTag.singleNumber}
-                tagName={performersTag.name}
+          <motion.div
+            variants={contentContainerVariants}
+            className={styles.flexbox}
+          >
+            <motion.div variants={contentVariants} className={styles.artwork}>
+              <img
+                src={artwork.medium}
+                srcSet={`${artwork.large} 1.5x`}
+                alt={title}
               />
-              <div className={styles.formation}>
-                {formation.length > 1 ? (
-                  formation.map((row, index) => (
-                    <div key={index} className={styles.row}>
-                      <h4 className={styles.rowindex}>
-                        <LocalizedNumber num={index + 1} type="row" />
-                      </h4>
-                      <div className={styles.grid}>
-                        {row.map(memberName => {
-                          if (memberName !== KOJIHARU) {
-                            const member = members[memberName];
-                            return (
-                              <MemberCard
-                                key={member.name}
-                                nameKey={memberName}
-                                name={member.nameNotations}
-                                image={member.profileImage}
-                                isCenter={centers.includes(member.name)}
-                              />
-                            );
-                          } else {
-                            return (
-                              <KojiharuCard
-                                key={memberName}
-                                isCenter={centers.includes(memberName)}
-                              />
-                            );
-                          }
-                        })}
+            </motion.div>
+            <motion.div variants={contentVariants} className={styles.content}>
+              <section className={styles.section}>
+                <h2 className={styles.subheading}>
+                  <FormattedMessage {...({ id: "performers" } as any)} />
+                </h2>
+                <PerformersTag
+                  singleNumber={performersTag.singleNumber}
+                  tagName={performersTag.name}
+                />
+                <div className={styles.formation}>
+                  {formation.length > 1 ? (
+                    formation.map((row, index) => (
+                      <div key={index} className={styles.row}>
+                        <h4 className={styles.rowindex}>
+                          <LocalizedNumber num={index + 1} type="row" />
+                        </h4>
+                        <div className={styles.grid}>
+                          {row.map(memberName => {
+                            if (memberName !== KOJIHARU) {
+                              const member = members[memberName];
+                              return (
+                                <MemberCard
+                                  key={member.name}
+                                  nameKey={memberName}
+                                  name={member.nameNotations}
+                                  image={member.profileImage}
+                                  isCenter={centers.includes(member.name)}
+                                />
+                              );
+                            } else {
+                              return (
+                                <KojiharuCard
+                                  key={memberName}
+                                  isCenter={centers.includes(memberName)}
+                                />
+                              );
+                            }
+                          })}
+                        </div>
                       </div>
+                    ))
+                  ) : (
+                    <div className={styles.grid}>
+                      {formation[0].map(memberName => {
+                        if (memberName !== KOJIHARU) {
+                          const member = members[memberName];
+                          return (
+                            <MemberCard
+                              key={memberName}
+                              nameKey={memberName}
+                              name={member.nameNotations}
+                              image={member.profileImage}
+                              isCenter={centers.includes(memberName)}
+                            />
+                          );
+                        } else {
+                          return (
+                            <KojiharuCard
+                              key={memberName}
+                              isCenter={centers.includes(memberName)}
+                            />
+                          );
+                        }
+                      })}
                     </div>
-                  ))
-                ) : (
-                  <div className={styles.grid}>
-                    {formation[0].map(memberName => {
-                      if (memberName !== KOJIHARU) {
-                        const member = members[memberName];
-                        return (
-                          <MemberCard
-                            key={memberName}
-                            nameKey={memberName}
-                            name={member.nameNotations}
-                            image={member.profileImage}
-                            isCenter={centers.includes(memberName)}
-                          />
-                        );
-                      } else {
-                        return (
-                          <KojiharuCard
-                            key={memberName}
-                            isCenter={centers.includes(memberName)}
-                          />
-                        );
-                      }
-                    })}
-                  </div>
-                )}
-              </div>
-            </section>
-            <section className={styles.section}>
-              <h2
-                className={styles.subheading + " " + styles.creatorscontainer}
-              >
-                <FormattedMessage {...({ id: "creators" } as any)} />
-              </h2>
-              <div className={styles.creators}>
-                {creators.lyrics.length > 0 ? (
-                  <div className={styles.creatorsitem}>
-                    <span className={styles.creatorjob}>
-                      <FormattedMessage {...({ id: "lyrics" } as any)} />
-                    </span>
-                    <span className={styles.creatornames}>
-                      <LocalizedList list={creators.lyrics} />
-                    </span>
-                  </div>
-                ) : null}
-                {creators.compose.length > 0 ? (
-                  <div className={styles.creatorsitem}>
-                    <span className={styles.creatorjob}>
-                      <FormattedMessage {...({ id: "compose" } as any)} />
-                    </span>
-                    <span className={styles.creatornames}>
-                      <LocalizedList list={creators.compose} />
-                    </span>
-                  </div>
-                ) : null}
-                {creators.arrange.length > 0 ? (
-                  <div className={styles.creatorsitem}>
-                    <span className={styles.creatorjob}>
-                      <FormattedMessage {...({ id: "arrange" } as any)} />
-                    </span>
-                    <span className={styles.creatornames}>
-                      <LocalizedList list={creators.arrange} />
-                    </span>
-                  </div>
-                ) : null}
-                {creators.direct.length > 0 ? (
-                  <div className={styles.creatorsitem}>
-                    <span className={styles.creatorjob}>
-                      <FormattedMessage {...({ id: "direct" } as any)} />
-                    </span>
-                    <span className={styles.creatornames}>
-                      <LocalizedList list={creators.direct} />
-                    </span>
-                  </div>
-                ) : null}
-              </div>
-            </section>
+                  )}
+                </div>
+              </section>
+              <section className={styles.section}>
+                <h2
+                  className={styles.subheading + " " + styles.creatorscontainer}
+                >
+                  <FormattedMessage {...({ id: "creators" } as any)} />
+                </h2>
+                <div className={styles.creators}>
+                  {creators.lyrics.length > 0 ? (
+                    <div className={styles.creatorsitem}>
+                      <span className={styles.creatorjob}>
+                        <FormattedMessage {...({ id: "lyrics" } as any)} />
+                      </span>
+                      <span className={styles.creatornames}>
+                        <LocalizedList list={creators.lyrics} />
+                      </span>
+                    </div>
+                  ) : null}
+                  {creators.compose.length > 0 ? (
+                    <div className={styles.creatorsitem}>
+                      <span className={styles.creatorjob}>
+                        <FormattedMessage {...({ id: "compose" } as any)} />
+                      </span>
+                      <span className={styles.creatornames}>
+                        <LocalizedList list={creators.compose} />
+                      </span>
+                    </div>
+                  ) : null}
+                  {creators.arrange.length > 0 ? (
+                    <div className={styles.creatorsitem}>
+                      <span className={styles.creatorjob}>
+                        <FormattedMessage {...({ id: "arrange" } as any)} />
+                      </span>
+                      <span className={styles.creatornames}>
+                        <LocalizedList list={creators.arrange} />
+                      </span>
+                    </div>
+                  ) : null}
+                  {creators.direct.length > 0 ? (
+                    <div className={styles.creatorsitem}>
+                      <span className={styles.creatorjob}>
+                        <FormattedMessage {...({ id: "direct" } as any)} />
+                      </span>
+                      <span className={styles.creatornames}>
+                        <LocalizedList list={creators.direct} />
+                      </span>
+                    </div>
+                  ) : null}
+                </div>
+              </section>
+            </motion.div>
           </motion.div>
         </motion.div>
-      </motion.div>
-    </Layout>
+      </Layout>
+    </div>
   );
 };

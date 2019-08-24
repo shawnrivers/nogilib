@@ -1,7 +1,7 @@
 import * as React from "react";
 import styles from "./track.module.scss";
 import { FocusPerformersType, SongType } from "types/responseTypes";
-import { FormattedMessage } from "react-intl";
+import { FormattedMessage, injectIntl } from "react-intl";
 import { Language } from "utils/constants";
 import { motion } from "framer-motion";
 import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
@@ -24,79 +24,82 @@ interface TrackProps {
     name: string[];
     type: FocusPerformersType;
   };
-  locale: Language;
+  intl: any;
   className?: string;
 }
 
-export const Track = ({
-  locale,
-  focusPerformers,
-  songKey,
-  number,
-  title,
-  type,
-  className,
-}: TrackProps) => {
-  const focusPerformersText = React.useMemo(() => {
-    let comma: string;
-    switch (locale) {
-      case Language.Zh:
-        comma = "、";
-        break;
-      case Language.Ja:
-        comma = "・";
-        break;
-      default:
-        comma = ", ";
-        break;
-    }
-
-    if (focusPerformers.name.length > 0) {
-      if (focusPerformers.type === FocusPerformersType.Center) {
-        return (
-          "C: " + focusPerformers.name.reduce((acc, curr) => acc + comma + curr)
-        );
+export const Track = injectIntl(
+  ({
+    intl: { locale },
+    focusPerformers,
+    songKey,
+    number,
+    title,
+    type,
+    className,
+  }: TrackProps) => {
+    const focusPerformersText = React.useMemo(() => {
+      let comma: string;
+      switch (locale) {
+        case Language.Zh:
+          comma = "、";
+          break;
+        case Language.Ja:
+          comma = "・";
+          break;
+        default:
+          comma = ", ";
+          break;
       }
-      return focusPerformers.name.reduce((acc, curr) => acc + comma + curr);
-    }
-    return "";
-  }, [focusPerformers, locale]);
 
-  return songKey !== "OVERTURE" ? (
-    <motion.div
-      whileHover="hover"
-      variants={containerVariants}
-      className={classNames(styles.container, className)}
-    >
-      <LocalizedLink to={`/songs/${songKey}`}>
-        <motion.span variants={textVariants} className={styles.number}>
-          {number}.
-        </motion.span>
+      if (focusPerformers.name.length > 0) {
+        if (focusPerformers.type === FocusPerformersType.Center) {
+          return (
+            "C: " +
+            focusPerformers.name.reduce((acc, curr) => acc + comma + curr)
+          );
+        }
+        return focusPerformers.name.reduce((acc, curr) => acc + comma + curr);
+      }
+      return "";
+    }, [focusPerformers, locale]);
+
+    return songKey !== "OVERTURE" ? (
+      <motion.div
+        whileHover="hover"
+        variants={containerVariants}
+        className={classNames(styles.container, className)}
+      >
+        <LocalizedLink to={`/songs/${songKey}`}>
+          <motion.span variants={textVariants} className={styles.number}>
+            {number}.
+          </motion.span>
+          <div className={styles.content}>
+            <motion.h3 variants={textVariants} className={styles.title}>
+              {title}
+            </motion.h3>
+            <motion.div variants={textVariants} className={styles.description}>
+              <span>
+                #<FormattedMessage {...({ id: type } as any)} />
+              </span>
+              <span>{focusPerformersText}</span>
+            </motion.div>
+          </div>
+        </LocalizedLink>
+      </motion.div>
+    ) : (
+      <div className={classNames(styles.container, className)}>
+        <span className={styles.number}>{number}.</span>
         <div className={styles.content}>
-          <motion.h3 variants={textVariants} className={styles.title}>
-            {title}
-          </motion.h3>
-          <motion.div variants={textVariants} className={styles.description}>
+          <h3 className={styles.title}>{title}</h3>
+          <div className={styles.description}>
             <span>
               #<FormattedMessage {...({ id: type } as any)} />
             </span>
             <span>{focusPerformersText}</span>
-          </motion.div>
-        </div>
-      </LocalizedLink>
-    </motion.div>
-  ) : (
-    <div className={classNames(styles.container, className)}>
-      <span className={styles.number}>{number}.</span>
-      <div className={styles.content}>
-        <h3 className={styles.title}>{title}</h3>
-        <div className={styles.description}>
-          <span>
-            #<FormattedMessage {...({ id: type } as any)} />
-          </span>
-          <span>{focusPerformersText}</span>
+          </div>
         </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+);

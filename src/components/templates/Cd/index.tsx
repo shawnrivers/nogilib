@@ -4,7 +4,7 @@ import styles from "./cd.module.scss";
 import { Track } from "components/atoms/Track";
 import { FocusPerformersType, SongType, CdType } from "types/responseTypes";
 import { Artworks } from "components/molecules/Artworks";
-import { FormattedMessage, FormattedDate, injectIntl } from "react-intl";
+import { FormattedMessage, FormattedDate } from "react-intl";
 import { motion } from "framer-motion";
 import { Language, Links } from "utils/constants";
 import { useScrollRestoration } from "utils/hooks";
@@ -81,15 +81,21 @@ interface CdProps {
     };
   }[];
   release: string;
-  intl: any;
 }
 
-export const Cd = injectIntl(
-  ({ type, title, number, artworks, songs, release, intl }: CdProps) => {
-    useScrollRestoration();
+export const Cd = ({
+  type,
+  title,
+  number,
+  artworks,
+  songs,
+  release,
+}: CdProps) => {
+  useScrollRestoration();
 
-    return (
-      <Layout className={styles.background}>
+  return (
+    <div className={styles.background}>
+      <Layout>
         <motion.div whileHover={{ x: -7, scale: 1.5 }} className={styles.link}>
           <LocalizedLink
             to={type === CdType.Singles ? Links.Singles : Links.Albums}
@@ -126,7 +132,6 @@ export const Cd = injectIntl(
                         title={song.title}
                         type={song.type}
                         focusPerformers={song.focusPerformers}
-                        locale={intl.locale as Language}
                       />
                     </li>
                   ))}
@@ -149,6 +154,6 @@ export const Cd = injectIntl(
           </motion.div>
         </motion.div>
       </Layout>
-    );
-  }
-);
+    </div>
+  );
+};
