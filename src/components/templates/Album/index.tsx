@@ -7,7 +7,7 @@ import { ArrowBackIcon } from "components/atoms/icons/ArrowBackIcon";
 import { FocusPerformersType, SongType } from "types/responseTypes";
 import styles from "./album.module.scss";
 import { motion } from "framer-motion";
-import { Links } from "../../../utils/constants";
+import { Links } from "utils/constants";
 
 export const query = graphql`
   query($number: String!) {

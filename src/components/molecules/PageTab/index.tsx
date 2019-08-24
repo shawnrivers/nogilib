@@ -3,7 +3,7 @@ import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
 import { FormattedMessage } from "react-intl";
 import { Layout } from "components/atoms/Layout";
 import styles from "./pagetab.module.scss";
-import { classNames } from "../../../utils/strings";
+import { classNames } from "utils/strings";
 
 export type TabItem = {
   link: string;

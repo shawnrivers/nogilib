@@ -4,8 +4,8 @@ import { Artwork } from "components/atoms/Artwork";
 import { PageTab, TabItem } from "components/molecules/PageTab";
 import styles from "./cds.module.scss";
 import { motion, AnimatePresence } from "framer-motion";
-import { CdType } from "../../../types/responseTypes";
-import { Links } from "../../../utils/constants";
+import { Links } from "utils/constants";
+import { CdType } from "types/responseTypes";
 
 const listVariants = {
   visible: {

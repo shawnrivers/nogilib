@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link } from "gatsby";
 import { Layout } from "components/atoms/Layout";
 import "styles/app.scss";
-import { Links } from "../utils/constants";
+import { Links } from "utils/constants";
 
 export default () => (
   <Layout>
