@@ -6,6 +6,6 @@ import "styles/app.scss";
 export default () => (
   <Layout>
     <h1>Page Not Found</h1>
-    <Link to="/cds/?page=singles">Go back</Link>
+    <Link to="/cds/singles">Go back</Link>
   </Layout>
 );

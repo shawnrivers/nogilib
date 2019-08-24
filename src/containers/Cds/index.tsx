@@ -1,11 +1,9 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-import { Cds } from "components/templates/Cds";
-import { RouteComponentProps } from "@reach/router";
-import "styles/app.scss";
+import { Cds } from "../../components/templates/Cds";
 
 export const query = graphql`
-  query CdsQuery {
+  query CdsContainerQuery {
     allAlbumsJson {
       edges {
         node {
@@ -64,23 +62,22 @@ interface CdsData {
       }[];
     };
   };
+  pageContext: {
+    cdType: string;
+    locale: string;
+  };
 }
 
-export default (props: RouteComponentProps<CdsData>) => {
-  const query = React.useMemo(() => {
-    if (props.location) {
-      if (props.location.search !== "") {
-        return props.location.search;
-      }
-    }
-    return "?page=singles";
-  }, [props.location]);
+const CdsTemp = ({ data, pageContext }: CdsData) => {
+  console.log({ data, pageContext });
 
-  return props.data ? (
+  return data ? (
     <Cds
-      query={query}
-      singles={props.data.allSinglesJson}
-      albums={props.data.allAlbumsJson}
+      page={pageContext.cdType}
+      singles={data.allSinglesJson}
+      albums={data.allAlbumsJson}
     />
   ) : null;
 };
+
+export default CdsTemp;

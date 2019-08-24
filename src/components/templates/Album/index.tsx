@@ -57,7 +57,7 @@ interface AlbumData {
 const Album = ({ data }: AlbumData) => (
   <Layout className={styles.background}>
     <motion.div whileHover={{ x: -7, scale: 1.5 }} className={styles.link}>
-      <LocalizedLink to="/cds/?page=albums" label="Back">
+      <LocalizedLink to="/cds/albums" label="Back">
         <ArrowBackIcon className={styles.back} />
       </LocalizedLink>
     </motion.div>

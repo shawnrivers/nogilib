@@ -50,19 +50,19 @@ const LanguageItem = ({ type, className }: LanguageItemProps) => {
           >
             <ul>
               <OptionItem
-                to="/en/cds/?page=singles"
+                to="/en/cds/singles"
                 handleClick={() => setLanguagesToggle(false)}
               >
                 English
               </OptionItem>
               <OptionItem
-                to="/cds/?page=singles"
+                to="/cds/singles"
                 handleClick={() => setLanguagesToggle(false)}
               >
                 日本語
               </OptionItem>
               <OptionItem
-                to="/zh/cds/?page=singles"
+                to="/zh/cds/singles"
                 handleClick={() => setLanguagesToggle(false)}
               >
                 简体中文
@@ -91,7 +91,7 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
     <nav className={styles.container}>
       <div className={styles.navigation}>
         <div className={styles.title}>
-          <NavigationItem type="link" to="/cds/?page=singles">
+          <NavigationItem type="link" to="/cds/singles">
             Nogizaka Lib
           </NavigationItem>
         </div>
@@ -100,7 +100,7 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
         ) : (
           <NavigationItem
             type="link"
-            to="/cds/?page=singles"
+            to="/cds/singles"
             label="Nogizaka Lib"
             className={styles.home}
           >
@@ -110,7 +110,7 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
         <div className={styles.items}>
           <NavigationItem
             type="link"
-            to="/cds/?page=singles"
+            to="/cds/singles"
             className={styles.music}
           >
             <FormattedMessage {...({ id: "music" } as any)} />

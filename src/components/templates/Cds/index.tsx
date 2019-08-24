@@ -7,7 +7,7 @@ import styles from "./cds.module.scss";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface CdsProps {
-  query: string;
+  page: string;
   singles: {
     edges: {
       node: {
@@ -38,11 +38,11 @@ interface CdsProps {
 
 const pageTabItems: TabItem[] = [
   {
-    link: "/cds/?page=singles",
+    link: "/cds/singles",
     page: "singles",
   },
   {
-    link: "/cds/?page=albums",
+    link: "/cds/albums",
     page: "albums",
   },
 ];
@@ -70,31 +70,22 @@ const itemVariants = {
   hidden: { opacity: 0, y: 20 },
 };
 
-export const Cds = (props: CdsProps) => {
-  const singles = props.singles.edges;
-  const albums = props.albums.edges;
-
-  const page = React.useMemo(() => {
-    const page = parse(props.query).page;
-    return page ? page : "singles";
-  }, [props.query]);
-
-  const pageCds = React.useMemo(() => (page === "albums" ? albums : singles), [
-    page,
-    albums,
-    singles,
-  ]);
+export const Cds = ({ singles, albums, page }: CdsProps) => {
+  const pageCds = React.useMemo(
+    () => (page === "albums" ? albums.edges : singles.edges),
+    [page, albums.edges, singles.edges]
+  );
 
   return (
     <div>
       <PageTab
         items={pageTabItems}
-        selectedItem={page as string}
+        selectedItem={page}
         className={styles.tabs}
       />
       <AnimatePresence>
         <motion.div
-          key={page as string}
+          key={page}
           exit="hidden"
           variants={listVariants}
           className={styles.grid}

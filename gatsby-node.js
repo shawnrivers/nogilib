@@ -117,6 +117,36 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const localesKeys = Object.keys(locales);
 
+  const cdsPages = [
+    {
+      slug: "/cds/singles",
+      type: "singles",
+    },
+    {
+      slug: "/cds/albums",
+      type: "albums",
+    },
+  ];
+
+  for (const cd of cdsPages) {
+    for (const lang of localesKeys) {
+      const { slug, type } = cd;
+
+      const localizedPath = locales[lang].default
+        ? slug
+        : locales[lang].path + slug;
+
+      createPage({
+        path: localizedPath,
+        component: path.resolve("./src/containers/Cds/index.tsx"),
+        context: {
+          cdType: type,
+          locale: lang,
+        },
+      });
+    }
+  }
+
   albumsResult.data.allAlbumsJson.edges.forEach(({ node }) => {
     const cdType = node.fields.slug.split("/")[1];
     const number = node.number;

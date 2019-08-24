@@ -8,7 +8,6 @@ import { FormattedMessage, FormattedDate, injectIntl } from "react-intl";
 import { motion } from "framer-motion";
 import { Language } from "utils/constants";
 import { useScrollRestoration } from "utils/hooks";
-import { string } from "prop-types";
 
 const containerVariants = {
   visible: {

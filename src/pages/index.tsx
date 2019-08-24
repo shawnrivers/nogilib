@@ -6,6 +6,6 @@ import "styles/app.scss";
 export default () => (
   <Layout>
     <h1>Top Page</h1>
-    <Link to="/cds/?page=singles">CDs</Link>
+    <Link to="/cds/singles">CDs</Link>
   </Layout>
 );
