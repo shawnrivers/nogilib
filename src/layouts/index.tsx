@@ -26,44 +26,9 @@ const layoutVariants = {
     opacity: 0,
     y: 20,
     transition: {
-      duration: 0.15,
+      duration: 0.2,
     },
   },
-};
-
-const pageTabItems = {
-  cds: [
-    {
-      link: Links.Singles,
-      page: CdType.Singles,
-    },
-    {
-      link: Links.Albums,
-      page: CdType.Albums,
-    },
-  ],
-  members: [
-    {
-      link: Links.FirstGeneration,
-      page: MembersType.FirstGeneration,
-    },
-    {
-      link: Links.SecondGeneration,
-      page: MembersType.SecondGeneration,
-    },
-    {
-      link: Links.ThirdGeneration,
-      page: MembersType.ThirdGeneration,
-    },
-    {
-      link: Links.FourthGeneration,
-      page: MembersType.FourthGeneration,
-    },
-    {
-      link: Links.Graduated,
-      page: MembersType.Graduated,
-    },
-  ],
 };
 
 interface AppLayoutProps {

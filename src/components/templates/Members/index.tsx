@@ -9,15 +9,14 @@ const listVariants = {
     opacity: 1,
     transition: {
       when: "beforeChildren",
-      staggerChildren: 0.03,
-      delayChildren: 0.2,
-      duration: 0.2,
+      staggerChildren: 0.04,
+      duration: 0.1,
     },
   },
   hidden: {
     opacity: 0,
     transition: {
-      duration: 0.2,
+      duration: 0.1,
     },
   },
 };

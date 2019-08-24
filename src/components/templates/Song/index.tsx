@@ -8,7 +8,7 @@ import { FormattedMessage, injectIntl } from "react-intl";
 import { Language, KOJIHARU } from "utils/constants";
 import { LocalizedList } from "components/atoms/locales/LocalizedList";
 import { MemberCard } from "components/atoms/MemberCard";
-import { LocalizedNumber } from "components/atoms/locales/LocaleNumber";
+import { LocalizedNumber } from "components/atoms/locales/LocalizedNumber";
 import { useScrollRestoration } from "utils/hooks";
 
 const containerVariants = {
