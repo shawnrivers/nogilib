@@ -55,9 +55,13 @@
 
 .tracklist {
   display: grid;
-  grid-row-gap: 12px;
-  grid-column-gap: 12px;
   margin-top: 24px;
+}
+
+.track {
+  display: block;
+  overflow: hidden;
+  padding: 12px;
 }
 
 @media (min-width: 588px) and (max-width: 695px) {

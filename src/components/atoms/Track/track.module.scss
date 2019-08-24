@@ -4,8 +4,6 @@
 
 .container {
   @extend %elevation-2;
-  display: block;
-  overflow: hidden;
   height: 88px;
   background-color: $white;
 }
@@ -49,7 +47,7 @@
   font-weight: $weight-regular;
   overflow: hidden;
   height: 16px;
-  color: $gray-3;
+  color: $gray-2;
   line-height: 16px;
   text-overflow: ellipsis;
   white-space: nowrap;

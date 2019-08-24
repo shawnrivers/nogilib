@@ -101,7 +101,7 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
           <NavigationItem
             type="link"
             to="/cds/?page=singles"
-            aria-label="Nogizaka Lib"
+            label="Nogizaka Lib"
             className={styles.home}
           >
             <HomeIcon />

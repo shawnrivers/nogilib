@@ -9,6 +9,7 @@ interface LocalizedLinkProps {
   intl: any;
   children?: React.ReactNode;
   className?: string;
+  label?: string;
   handleClick?(): void;
 }
 
@@ -18,6 +19,7 @@ export const LocalizedLink = injectIntl(
     children,
     intl: { locale },
     className,
+    label,
     handleClick,
   }: LocalizedLinkProps) => {
     const path = React.useMemo(
@@ -40,6 +42,10 @@ export const LocalizedLink = injectIntl(
       [path, className, handleClick]
     );
 
-    return <Link {...linkProps}>{children}</Link>;
+    return (
+      <Link {...linkProps} aria-label={label}>
+        {children}
+      </Link>
+    );
   }
 );

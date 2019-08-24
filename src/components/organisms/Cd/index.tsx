@@ -108,16 +108,16 @@ export const Cd = injectIntl(
               </h2>
               <ul className={styles.tracklist}>
                 {songs.map((song, index) => (
-                  <Track
-                    key={song.key}
-                    songKey={song.key}
-                    number={index + 1}
-                    title={song.title}
-                    type={song.type}
-                    focusPerformers={song.focusPerformers}
-                    locale={intl.locale as Language}
-                    className={styles.track}
-                  />
+                  <li key={song.key} className={styles.track}>
+                    <Track
+                      songKey={song.key}
+                      number={index + 1}
+                      title={song.title}
+                      type={song.type}
+                      focusPerformers={song.focusPerformers}
+                      locale={intl.locale as Language}
+                    />
+                  </li>
                 ))}
               </ul>
             </section>
