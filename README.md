@@ -1,97 +1,93 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  <a href="https://shawnrivers.github.io/nogizaka-lib-redesign/zh/cds/singles">
+    <img alt="Gatsby" src="https://raw.githubusercontent.com/shawnrivers/nogizaka-lib-redesign/master/src/assets/images/favicon-512.png" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby's hello-world starter
+  Nogizaka Lib
 </h1>
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+This is a React web application aiming at showing the information about _[Nogizaka46](http://www.nogizaka46.com/)_ in a user-friendly way.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+_[App link](https://shawnrivers.github.io/nogizaka-lib-redesign/zh/cds/singles)_
 
-## 🚀 Quick start
+## 🚀 Set Up Dev Environment
 
-1.  **Create a Gatsby site.**
-
-    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
+1.  **Install necessary packages.**
 
     ```sh
-    # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
+    npm install
     ```
 
-1.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
+2.  **Start the dev server.**
 
     ```sh
-    cd my-hello-world-starter/
-    gatsby develop
+    npm run dev
+    ```
+    Your site is now running at `http://localhost:8000`.
+
+3.  **Build the product.**
+
+    ```sh
+    npm run build
+    npm run serve
     ```
 
-1.  **Open the source code and start editing!**
-
-    Your site is now running at `http://localhost:8000`!
+    Your build result is now running at `http://localhost:9000`.
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+## 📚 Technologies
+
+- Static Page Generator: `Gatsby`
+- JavaScript: `TypeScript`
+- CSS: `Sass`, `CSS modules`
+- Animation: `framer-motion`
 
 ## 🧐 What's inside?
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
-
     .
-    ├── node_modules
     ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
+    ├──── assets
+    ├──── components
+    ├──── containers
+    ├──── data
+    ├──── i18n
+    ├──── layouts
+    ├──── pages
+    ├──── styles
+    ├──── types
+    ├──── utils
     ├── gatsby-config.js
     ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+1.  **`/src`**: All _"source code"_ comes here.
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+2.  **`/src/assets`**: This folder has images like favicons.
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+3.  **`/src/components`**: The components structure based on _[Atomic Design](http://atomicdesign.bradfrost.com/chapter-2/)_.
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+4.  **`/src/components`**: Each actual page with data processing and side effects.
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+5.  **`/src/data`**: Data used in this application.
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+6.  **`/src/i18n`**: Internationalization and localization related files.
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+7.  **`/src/layouts`**: Universal part across all pages.
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+8.  **`/src/pages`**: Entry `index` and `404` page.
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+9.  **`/src/styles`**: `Sass` variables and templates
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+10. **`/src/types`**: Global state type definitions.
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+11. **`/src/utils`**: Common methods used across the app.
 
-## 🎓 Learning Gatsby
+12. **`gatsby-config.js`**: This is the main configuration file.
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+13. **`gatsby-node.js`**: This file holds pages creating customization settings.
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+##  Data
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+Profile images and CD artworks © 乃木坂 LLC.
