@@ -256,7 +256,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: localizedPath,
-        component: path.resolve("./src/components/templates/Member/index.tsx"),
+        component: path.resolve("./src/containers/Member/index.tsx"),
         context: {
           name: node.name,
           locale: lang,
