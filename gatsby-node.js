@@ -200,7 +200,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: localizedPath,
-        component: path.resolve("./src/components/templates/Album/index.tsx"),
+        component: path.resolve("./src/containers/Album/index.tsx"),
         context: {
           number,
           cdType,
@@ -221,7 +221,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: localizedPath,
-        component: path.resolve("./src/components/templates/Single/index.tsx"),
+        component: path.resolve("./src/containers/Single/index.tsx"),
         context: {
           number,
           cdType,

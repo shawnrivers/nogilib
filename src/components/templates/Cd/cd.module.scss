@@ -2,6 +2,26 @@
 @import "styles/typography.scss";
 @import "styles/elevations.scss";
 
+.background {
+  @extend %bg-1;
+  min-height: 100vh;
+}
+
+.link {
+  display: block;
+  width: 60px;
+
+  a {
+    display: block;
+  }
+}
+
+.back {
+  fill: $white;
+  width: 32px;
+  height: 32px;
+}
+
 .container {
   margin: 12px 24px 0;
   color: $white;
