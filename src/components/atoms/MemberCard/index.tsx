@@ -82,12 +82,16 @@ export const MemberCard = injectIntl(
             className={styles.container}
           >
             <LazyLoad offset={100}>
-              <img
-                src={image.small}
-                srcSet={image.large + " 2x"}
-                alt={nameText}
-                className={styles.image}
-              />
+              <div className={styles.imagecontainer}>
+                <div className={styles.wrapper}>
+                  <img
+                    src={image.small}
+                    srcSet={image.large + " 2x"}
+                    alt={nameText}
+                    className={styles.image}
+                  />
+                </div>
+              </div>
             </LazyLoad>
             <motion.div
               variants={textVariants}

@@ -5,6 +5,17 @@
 .container {
   @extend %elevation-2;
   position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: $gray-4;
 }
 
 .image {

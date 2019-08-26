@@ -236,20 +236,22 @@ export const Song = ({
                             if (memberName !== KOJIHARU) {
                               const member = members[memberName];
                               return (
-                                <MemberCard
-                                  key={member.name}
-                                  nameKey={memberName}
-                                  name={member.nameNotations}
-                                  image={member.profileImage}
-                                  isCenter={centers.includes(member.name)}
-                                />
+                                <div className={styles.card} key={member.name}>
+                                  <MemberCard
+                                    nameKey={memberName}
+                                    name={member.nameNotations}
+                                    image={member.profileImage}
+                                    isCenter={centers.includes(member.name)}
+                                  />
+                                </div>
                               );
                             } else {
                               return (
-                                <KojiharuCard
-                                  key={memberName}
-                                  isCenter={centers.includes(memberName)}
-                                />
+                                <div className={styles.card} key={memberName}>
+                                  <KojiharuCard
+                                    isCenter={centers.includes(memberName)}
+                                  />
+                                </div>
                               );
                             }
                           })}
@@ -262,20 +264,22 @@ export const Song = ({
                         if (memberName !== KOJIHARU) {
                           const member = members[memberName];
                           return (
-                            <MemberCard
-                              key={memberName}
-                              nameKey={memberName}
-                              name={member.nameNotations}
-                              image={member.profileImage}
-                              isCenter={centers.includes(memberName)}
-                            />
+                            <div className={styles.card} key={member.name}>
+                              <MemberCard
+                                nameKey={member.name}
+                                name={member.nameNotations}
+                                image={member.profileImage}
+                                isCenter={centers.includes(memberName)}
+                              />
+                            </div>
                           );
                         } else {
                           return (
-                            <KojiharuCard
-                              key={memberName}
-                              isCenter={centers.includes(memberName)}
-                            />
+                            <div className={styles.card} key={memberName}>
+                              <KojiharuCard
+                                isCenter={centers.includes(memberName)}
+                              />
+                            </div>
                           );
                         }
                       })}

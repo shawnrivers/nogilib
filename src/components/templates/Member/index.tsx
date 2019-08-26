@@ -391,14 +391,16 @@ export const Member = ({
                           className={styles.galleryimagecontainer}
                           key={index}
                         >
-                          <LazyLoad offset={100}>
-                            <img
-                              src={profileImage.small}
-                              srcSet={profileImage.large + " 2x"}
-                              alt={name}
-                              className={styles.galleryimage}
-                            />
-                          </LazyLoad>
+                          <div className={styles.wrapper}>
+                            <LazyLoad offset={100}>
+                              <img
+                                src={profileImage.small}
+                                srcSet={profileImage.large + " 2x"}
+                                alt={name}
+                                className={styles.galleryimage}
+                              />
+                            </LazyLoad>
+                          </div>
                         </div>
                       ))}
                     </div>

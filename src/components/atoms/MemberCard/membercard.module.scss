@@ -23,15 +23,29 @@
   color: $white;
 }
 
+.imagecontainer {
+  position: relative;
+  max-width: 160px;
+  min-width: 90px;
+  width: 100%;
+  margin-bottom: 8px;
+  padding-top: 121%;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: $gray-4;
+}
+
 .image {
   display: block;
   width: 100%;
-  height: auto;
-  max-width: 160px;
-  min-width: 90px;
   transform-origin: center;
   object-fit: cover;
-  margin-bottom: 8px;
 }
 
 .name {

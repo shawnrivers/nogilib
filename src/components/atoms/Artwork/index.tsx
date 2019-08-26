@@ -42,28 +42,30 @@ export const Artwork = ({ images, title, className }: ArtworkProps) => {
       whileHover={{ scale: 1.1 }}
       className={classNames(styles.container, className)}
     >
-      <LazyLoad offset={100}>
-        <img
-          src={images.small}
-          srcSet={`${images.medium} 2x, ${images.large} 3x`}
-          alt={title}
-          className={styles.image}
+      <div className={styles.wrapper}>
+        <LazyLoad offset={100}>
+          <img
+            src={images.small}
+            srcSet={`${images.medium} 2x, ${images.large} 3x`}
+            alt={title}
+            className={styles.image}
+          />
+        </LazyLoad>
+        <motion.div
+          initial={false}
+          animate={isHovered ? "isHovered" : "isNotHovered"}
+          variants={backgroundFade}
+          className={styles.background}
         />
-      </LazyLoad>
-      <motion.div
-        initial={false}
-        animate={isHovered ? "isHovered" : "isNotHovered"}
-        variants={backgroundFade}
-        className={styles.background}
-      />
-      <motion.div
-        initial={false}
-        animate={isHovered ? "isHovered" : "isNotHovered"}
-        variants={titleFade}
-        className={styles.title}
-      >
-        <h3>{title}</h3>
-      </motion.div>
+        <motion.div
+          initial={false}
+          animate={isHovered ? "isHovered" : "isNotHovered"}
+          variants={titleFade}
+          className={styles.title}
+        >
+          <h3>{title}</h3>
+        </motion.div>
+      </div>
     </motion.div>
   );
 };

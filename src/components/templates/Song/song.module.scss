@@ -124,6 +124,11 @@
   align-items: flex-start;
   grid-row-gap: 12px;
   grid-column-gap: 12px;
+
+  .card {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .creatorscontainer {
