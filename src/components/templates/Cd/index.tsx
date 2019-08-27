@@ -141,7 +141,7 @@ export const Cd = ({
                 <h2 className={styles.subheading}>
                   <FormattedMessage {...({ id: "release" } as any)} />
                 </h2>
-                <p className={styles.body}>
+                <p className={styles.release}>
                   <FormattedDate
                     value={release}
                     year="numeric"

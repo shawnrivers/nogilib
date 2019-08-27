@@ -200,7 +200,7 @@ export const Member = ({
                     <h2 className={styles.subheading}>
                       <FormattedMessage {...({ id: "websites" } as any)} />
                     </h2>
-                    <div className={styles.body + " " + styles.websites}>
+                    <div className={styles.websites}>
                       {sites.map(site => (
                         <motion.a
                           key={site.title}

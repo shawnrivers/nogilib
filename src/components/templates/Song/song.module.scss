@@ -114,6 +114,8 @@
 }
 
 .rowindex {
+  font-size: $size-sub-heading-2;
+  font-weight: $weight-bold;
   margin-bottom: 12px;
   text-transform: capitalize;
 }
@@ -156,15 +158,15 @@
 
 .creatorjob {
   font-size: $size-body;
-  font-weight: $weight-light;
-  line-height: 20px;
+  font-weight: $weight-bold;
+  line-height: 24px;
   margin-bottom: 8px;
   text-transform: capitalize;
 }
 
 .creatornames {
   font-size: $size-body;
-  font-weight: $weight-bold;
+  font-weight: $weight-light;
   line-height: 24px;
 }
 

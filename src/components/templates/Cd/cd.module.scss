@@ -68,11 +68,6 @@
   text-transform: uppercase;
 }
 
-.body {
-  font-size: $size-body;
-  font-weight: $weight-regular;
-}
-
 .tracklist {
   display: grid;
   margin-top: 24px;
@@ -82,6 +77,11 @@
   display: block;
   overflow: hidden;
   padding: 12px;
+}
+
+.release {
+  font-size: $size-body;
+  font-weight: $weight-light;
 }
 
 @media (min-width: 588px) and (max-width: 695px) {

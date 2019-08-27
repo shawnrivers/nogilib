@@ -96,11 +96,6 @@
   text-transform: uppercase;
 }
 
-.body {
-  font-size: $size-body;
-  font-weight: $weight-regular;
-}
-
 .caption {
   font-size: $size-body;
   font-weight: $weight-light;
@@ -109,6 +104,8 @@
 
 .websites {
   a {
+    font-size: $size-body;
+    font-weight: $weight-light;
     text-decoration: underline;
 
     &:not(:last-child) {
@@ -170,15 +167,15 @@
 
 .infotitle {
   font-size: $size-body;
-  font-weight: $weight-light;
-  line-height: 20px;
+  font-weight: $weight-bold;
+  line-height: 24px;
   margin-bottom: 8px;
   text-transform: capitalize;
 }
 
 .infocontent {
   font-size: $size-body;
-  font-weight: $weight-bold;
+  font-weight: $weight-light;
   line-height: 24px;
   text-transform: capitalize;
 }
@@ -200,8 +197,9 @@
       margin-bottom: 8px;
     }
 
-    span:not(:last-child) {
+    span:first-child {
       margin-right: 8px;
+      font-weight: $weight-light;
     }
   }
 }
@@ -221,7 +219,7 @@
 
 .positionnumber {
   font-size: $size-caption;
-  font-weight: $weight-regular;
+  font-weight: $weight-light;
   margin-bottom: 4px;
 }
 
