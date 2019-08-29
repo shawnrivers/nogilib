@@ -26,7 +26,7 @@
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
     "gatsby-plugin-resolve-src": "^2.0.0",
     "gatsby-plugin-sass": "^2.1.12",
-    "gatsby-plugin-typescript": "^2.1.0",
+    "gatsby-plugin-typescript": "^2.1.5",
     "gatsby-source-filesystem": "^2.1.8",
     "gatsby-transformer-json": "^2.2.2",
     "node-sass": "^4.12.0",
