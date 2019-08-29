@@ -118,8 +118,24 @@ const AppLayout = ({
     <IntlProvider locale={locale} messages={messages[locale]}>
       <Helmet>
         <meta charSet="utf-8" />
-        <meta name="description" content="Nogizaka Lib Redesign" />
-        <meta property="og:image" content="favicon-512.png" />
+        <meta name="title" content="Nogizaka Lib" />
+        <meta
+          name="description"
+          content="Nogizaka Lib Redesign is a Gatsby powered web application aiming at showing the information about Nogizaka46 in a user-friendly way."
+        />
+        <meta
+          name="url"
+          content="https://shawnrivers.github.io/nogizaka-lib-redesign/cds/singles"
+        />
+        <meta name="og:title" content="Nogizaka Lib" />
+        <meta
+          name="og:description"
+          content="Nogizaka Lib Redesign is a Gatsby powered web application aiming at showing the information about Nogizaka46 in a user-friendly way."
+        />
+        <meta
+          property="og:image"
+          content="https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/design/nogizakalib-preview.jpg"
+        />
         <title>Nogizaka Lib</title>
         <html lang={locale} />
       </Helmet>
