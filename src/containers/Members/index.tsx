@@ -17,6 +17,7 @@ export const query = graphql`
         join
         graduation {
           isGraduated
+          graduatedDate
         }
         profileImage {
           large
@@ -30,7 +31,24 @@ export const query = graphql`
 interface MembersData {
   data: {
     allMembersJson: {
-      nodes: MemberType[];
+      nodes: {
+        name: string;
+        nameNotations: {
+          lastName: string;
+          firstName: string;
+          lastNameEn: string;
+          firstNameEn: string;
+        };
+        join: JoinedGenerationType;
+        graduation: {
+          isGraduated: boolean;
+          graduatedDate: string;
+        };
+        profileImage: {
+          large: string;
+          small: string;
+        };
+      }[];
     };
   };
   pageContext: {
@@ -82,7 +100,13 @@ const MembersContainer = ({
             member.join === JoinedGenerationType.Fourth &&
             !member.graduation.isGraduated
         ),
-        graduated: nodes.filter(member => member.graduation.isGraduated),
+        graduated: nodes
+          .filter(member => member.graduation.isGraduated)
+          .sort(
+            (memberA, memberB) =>
+              new Date(memberB.graduation.graduatedDate).getTime() -
+              new Date(memberA.graduation.graduatedDate).getTime()
+          ),
       };
     }
 
