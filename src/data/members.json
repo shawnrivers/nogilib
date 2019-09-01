@@ -4025,8 +4025,8 @@
       "under": 0
     },
     "graduation": {
-      "isGraduated": false,
-      "graduatedDate": ""
+      "isGraduated": true,
+      "graduatedDate": "2019-09-01"
     }
   },
   {
