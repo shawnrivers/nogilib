@@ -113,7 +113,7 @@ export const Cd = ({
           </motion.div>
           <motion.div
             variants={contentContainerVariants}
-            className={styles.flexbox}
+            className={styles.flexBox}
           >
             <motion.div variants={contentVariants} className={styles.artworks}>
               <Artworks artworks={artworks} title={title} />
@@ -123,7 +123,7 @@ export const Cd = ({
                 <h2 className={styles.subheading}>
                   <FormattedMessage {...({ id: "track" } as any)} />
                 </h2>
-                <ul className={styles.tracklist}>
+                <ul className={styles.trackList}>
                   {songs.map((song, index) => (
                     <li key={song.key} className={styles.track}>
                       <Track

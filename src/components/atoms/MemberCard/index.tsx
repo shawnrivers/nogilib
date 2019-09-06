@@ -82,7 +82,7 @@ export const MemberCard = injectIntl(
             className={styles.container}
           >
             <LazyLoad offset={100}>
-              <div className={styles.imagecontainer}>
+              <div className={styles.imageContainer}>
                 <div className={styles.wrapper}>
                   <img
                     src={image.small}

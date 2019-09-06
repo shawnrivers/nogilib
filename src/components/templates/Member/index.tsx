@@ -162,18 +162,18 @@ export const Member = ({
             </motion.div>
             <motion.div
               variants={contentContainerVariants}
-              className={styles.flexbox}
+              className={styles.flexBox}
             >
               <motion.div
                 variants={contentVariants}
-                className={styles.profileimage}
+                className={styles.profileImage}
               >
                 <img
                   src={profileImage.small}
                   srcSet={`${profileImage.large} 2x`}
                   alt={name}
                 />
-                <div className={styles.stickcolors}>
+                <div className={styles.stickColors}>
                   <span
                     style={{
                       backgroundColor:
@@ -216,16 +216,16 @@ export const Member = ({
                 ) : null}
                 <section className={styles.section + " " + styles.profile}>
                   <h2
-                    className={styles.subheading + " " + styles.infocontainer}
+                    className={styles.subheading + " " + styles.infoContainer}
                   >
                     <FormattedMessage {...({ id: "profile" } as any)} />
                   </h2>
                   <div className={styles.info}>
-                    <div className={styles.infoitem}>
-                      <span className={styles.infotitle}>
+                    <div className={styles.infoItem}>
+                      <span className={styles.infoTitle}>
                         <FormattedMessage {...({ id: "join" } as any)} />
                       </span>
-                      <span className={styles.infocontent}>
+                      <span className={styles.infoContent}>
                         <FormattedMessage
                           {...({ id: "join: " + join } as any)}
                         />{" "}
@@ -240,11 +240,11 @@ export const Member = ({
                         ) : null}
                       </span>
                     </div>
-                    <div className={styles.infoitem}>
-                      <span className={styles.infotitle}>
+                    <div className={styles.infoItem}>
+                      <span className={styles.infoTitle}>
                         <FormattedMessage {...({ id: "birthday" } as any)} />
                       </span>
-                      <span className={styles.infocontent}>
+                      <span className={styles.infoContent}>
                         <FormattedDate
                           value={birthday}
                           year="numeric"
@@ -253,48 +253,48 @@ export const Member = ({
                         />
                       </span>
                     </div>
-                    <div className={styles.infoitem}>
-                      <span className={styles.infotitle}>
+                    <div className={styles.infoItem}>
+                      <span className={styles.infoTitle}>
                         <FormattedMessage {...({ id: "height" } as any)} />
                       </span>
                       <span
-                        className={styles.infocontent + " " + styles.height}
+                        className={styles.infoContent + " " + styles.height}
                       >
                         {height} cm
                       </span>
                     </div>
-                    <div className={styles.infoitem}>
-                      <span className={styles.infotitle}>
+                    <div className={styles.infoItem}>
+                      <span className={styles.infoTitle}>
                         <FormattedMessage {...({ id: "blood type" } as any)} />
                       </span>
-                      <span className={styles.infocontent}>
+                      <span className={styles.infoContent}>
                         <FormattedMessage {...({ id: bloodType } as any)} />
                       </span>
                     </div>
-                    <div className={styles.infoitem}>
-                      <span className={styles.infotitle}>
+                    <div className={styles.infoItem}>
+                      <span className={styles.infoTitle}>
                         <FormattedMessage {...({ id: "birthplace" } as any)} />
                       </span>
-                      <span className={styles.infocontent}>
+                      <span className={styles.infoContent}>
                         <FormattedMessage {...({ id: origin } as any)} />
                       </span>
                     </div>
                     {units.length > 0 ? (
-                      <div className={styles.infoitem}>
-                        <span className={styles.infotitle}>
+                      <div className={styles.infoItem}>
+                        <span className={styles.infoTitle}>
                           <FormattedMessage {...({ id: "units" } as any)} />
                         </span>
-                        <span className={styles.infocontent}>
+                        <span className={styles.infoContent}>
                           <LocalizedList list={units} />
                         </span>
                       </div>
                     ) : null}
                     {corps.length > 0 ? (
-                      <div className={styles.infoitem}>
-                        <span className={styles.infotitle}>
+                      <div className={styles.infoItem}>
+                        <span className={styles.infoTitle}>
                           <FormattedMessage {...({ id: "corps" } as any)} />
                         </span>
-                        <span className={styles.infocontent}>
+                        <span className={styles.infoContent}>
                           <LocalizedList list={corps} />
                         </span>
                       </div>
@@ -304,16 +304,13 @@ export const Member = ({
                 {photoAlbums.length > 0 ? (
                   <section className={styles.section}>
                     <h2
-                      className={styles.subheading + " " + styles.infocontainer}
+                      className={styles.subheading + " " + styles.infoContainer}
                     >
                       <FormattedMessage {...({ id: "photo albums" } as any)} />
                     </h2>
-                    <ol className={styles.photoalbums}>
-                      {photoAlbums.map((photoAlbum, index) => (
-                        <li key={photoAlbum.title}>
-                          <span>{index + 1}.</span>
-                          <span>{photoAlbum.title}</span>
-                        </li>
+                    <ol className={styles.photoAlbums}>
+                      {photoAlbums.map(photoAlbum => (
+                        <li key={photoAlbum.title}>{photoAlbum.title}</li>
                       ))}
                     </ol>
                   </section>
@@ -329,9 +326,9 @@ export const Member = ({
                       {positionsHistory.map(position => (
                         <div
                           key={position.singleNumber}
-                          className={styles.positionrecord}
+                          className={styles.positionRecord}
                         >
-                          <span className={styles.positionnumber}>
+                          <span className={styles.positionNumber}>
                             {position.singleNumber}
                           </span>
                           <PositionBadge position={position.position} />
@@ -351,19 +348,19 @@ export const Member = ({
                       <div className={styles.indicators}>
                         <div className={styles.indicator}>
                           <PositionBadge position={PositionType.Center} />
-                          <span className={styles.indicatorcaption}>
+                          <span className={styles.indicatorCaption}>
                             <FormattedMessage {...({ id: "center" } as any)} />
                           </span>
                         </div>
                         <div className={styles.indicator}>
                           <PositionBadge position={PositionType.Fukujin} />
-                          <span className={styles.indicatorcaption}>
+                          <span className={styles.indicatorCaption}>
                             <FormattedMessage {...({ id: "fukujin" } as any)} />
                           </span>
                         </div>
                         <div className={styles.indicator}>
                           <PositionBadge position={PositionType.Selected} />
-                          <span className={styles.indicatorcaption}>
+                          <span className={styles.indicatorCaption}>
                             <FormattedMessage
                               {...({ id: "selected" } as any)}
                             />
@@ -371,7 +368,7 @@ export const Member = ({
                         </div>
                         <div className={styles.indicator}>
                           <PositionBadge position={PositionType.Under} />
-                          <span className={styles.indicatorcaption}>
+                          <span className={styles.indicatorCaption}>
                             <FormattedMessage {...({ id: "under" } as any)} />
                           </span>
                         </div>
@@ -388,7 +385,7 @@ export const Member = ({
                     <div className={styles.gallery}>
                       {gallery.map((profileImage, index) => (
                         <div
-                          className={styles.galleryimagecontainer}
+                          className={styles.galleryImageContainer}
                           key={index}
                         >
                           <div className={styles.wrapper}>
@@ -397,7 +394,7 @@ export const Member = ({
                                 src={profileImage.small}
                                 srcSet={profileImage.large + " 2x"}
                                 alt={name}
-                                className={styles.galleryimage}
+                                className={styles.galleryImage}
                               />
                             </LazyLoad>
                           </div>

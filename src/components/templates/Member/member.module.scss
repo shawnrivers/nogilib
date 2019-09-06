@@ -60,12 +60,12 @@
   }
 }
 
-.flexbox {
+.flex-box {
   display: flex;
   flex-direction: row;
 }
 
-.profileimage {
+.profile-image {
   margin: 8px 40px 0 12px;
 
   img {
@@ -118,7 +118,7 @@
   margin-bottom: 36px !important;
 }
 
-.stickcolors {
+.stick-colors {
   width: 100%;
   text-align: center;
   display: flex;
@@ -142,7 +142,7 @@
   }
 }
 
-.infocontainer {
+.info-container {
   margin-bottom: 20px;
 }
 
@@ -153,7 +153,7 @@
   justify-content: flex-start;
 }
 
-.infoitem {
+.info-item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -165,7 +165,7 @@
   }
 }
 
-.infotitle {
+.info-title {
   font-size: $size-body;
   font-weight: $weight-bold;
   line-height: 24px;
@@ -173,7 +173,7 @@
   text-transform: capitalize;
 }
 
-.infocontent {
+.info-content {
   font-size: $size-body;
   font-weight: $weight-light;
   line-height: 24px;
@@ -184,14 +184,14 @@
   text-transform: none;
 }
 
-.photoalbums {
+.photo-albums {
   font-size: $size-body;
   font-weight: $weight-regular;
-  padding-inline-start: 0;
-  list-style-type: none;
+  padding-left: 22px;
 
   li {
     line-height: 20px;
+    padding-left: 4px;
 
     &:not(:last-child) {
       margin-bottom: 8px;
@@ -210,14 +210,14 @@
   justify-content: flex-start;
 }
 
-.positionrecord {
+.position-record {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 6px 12px 6px 0;
 }
 
-.positionnumber {
+.position-number {
   font-size: $size-caption;
   font-weight: $weight-light;
   margin-bottom: 4px;
@@ -239,7 +239,7 @@
   margin: 6px 12px 6px 0;
 }
 
-.indicatorcaption {
+.indicator-caption {
   font-size: $size-caption;
   font-weight: $weight-regular;
   line-height: 24px;
@@ -255,7 +255,7 @@
   grid-column-gap: 12px;
 }
 
-.galleryimagecontainer {
+.gallery-image-container {
   @extend %elevation-1-normal;
   position: relative;
   box-sizing: border-box;
@@ -276,7 +276,7 @@
   }
 }
 
-.galleryimage {
+.gallery-image {
   display: block;
   width: 100%;
   height: 100%;
@@ -332,7 +332,7 @@
     flex-direction: column;
   }
 
-  .flexbox {
+  .flex-box {
     flex-direction: column;
   }
 
@@ -340,7 +340,7 @@
     margin-bottom: 24px;
   }
 
-  .profileimage {
+  .profile-image {
     margin: 0 0 24px;
 
     img {
@@ -356,7 +356,7 @@
     flex-direction: column;
   }
 
-  .infoitem {
+  .info-item {
     flex-direction: row;
     align-items: baseline;
     margin-bottom: 4px;
@@ -367,7 +367,7 @@
     }
   }
 
-  .infotitle {
+  .info-title {
     margin-right: 32px;
   }
 }

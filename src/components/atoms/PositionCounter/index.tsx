@@ -12,7 +12,7 @@ export const PositionCounter = (props: PositionCounterProps) => (
   <div className={styles.container}>
     {props.selected !== 0 ? (
       <div
-        className={styles.selectedcontainer}
+        className={styles.selectedContainer}
         style={{
           width: `${(props.selected / (props.under + props.selected)) * 100}%`,
         }}

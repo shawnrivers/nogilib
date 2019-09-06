@@ -206,7 +206,7 @@ export const Song = ({
           </motion.div>
           <motion.div
             variants={contentContainerVariants}
-            className={styles.flexbox}
+            className={styles.flexBox}
           >
             <motion.div variants={contentVariants} className={styles.artwork}>
               <img
@@ -228,7 +228,7 @@ export const Song = ({
                   {formation.length > 1 ? (
                     formation.map((row, index) => (
                       <div key={index} className={styles.row}>
-                        <h4 className={styles.rowindex}>
+                        <h4 className={styles.rowIndex}>
                           <LocalizedNumber num={index + 1} type="row" />
                         </h4>
                         <div className={styles.grid}>
@@ -289,47 +289,47 @@ export const Song = ({
               </section>
               <section className={styles.section}>
                 <h2
-                  className={styles.subheading + " " + styles.creatorscontainer}
+                  className={styles.subheading + " " + styles.creatorsContainer}
                 >
                   <FormattedMessage {...({ id: "creators" } as any)} />
                 </h2>
                 <div className={styles.creators}>
                   {creators.lyrics.length > 0 ? (
-                    <div className={styles.creatorsitem}>
-                      <span className={styles.creatorjob}>
+                    <div className={styles.creatorsItem}>
+                      <span className={styles.creatorWork}>
                         <FormattedMessage {...({ id: "lyrics" } as any)} />
                       </span>
-                      <span className={styles.creatornames}>
+                      <span className={styles.creatorNames}>
                         <LocalizedList list={creators.lyrics} />
                       </span>
                     </div>
                   ) : null}
                   {creators.compose.length > 0 ? (
-                    <div className={styles.creatorsitem}>
-                      <span className={styles.creatorjob}>
+                    <div className={styles.creatorsItem}>
+                      <span className={styles.creatorWork}>
                         <FormattedMessage {...({ id: "compose" } as any)} />
                       </span>
-                      <span className={styles.creatornames}>
+                      <span className={styles.creatorNames}>
                         <LocalizedList list={creators.compose} />
                       </span>
                     </div>
                   ) : null}
                   {creators.arrange.length > 0 ? (
-                    <div className={styles.creatorsitem}>
-                      <span className={styles.creatorjob}>
+                    <div className={styles.creatorsItem}>
+                      <span className={styles.creatorWork}>
                         <FormattedMessage {...({ id: "arrange" } as any)} />
                       </span>
-                      <span className={styles.creatornames}>
+                      <span className={styles.creatorNames}>
                         <LocalizedList list={creators.arrange} />
                       </span>
                     </div>
                   ) : null}
                   {creators.direct.length > 0 ? (
-                    <div className={styles.creatorsitem}>
-                      <span className={styles.creatorjob}>
+                    <div className={styles.creatorsItem}>
+                      <span className={styles.creatorWork}>
                         <FormattedMessage {...({ id: "direct" } as any)} />
                       </span>
-                      <span className={styles.creatornames}>
+                      <span className={styles.creatorNames}>
                         <LocalizedList list={creators.direct} />
                       </span>
                     </div>

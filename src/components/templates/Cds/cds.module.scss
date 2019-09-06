@@ -1,20 +1,6 @@
 @import "styles/typography.scss";
 @import "styles/colors.scss";
 
-.tabitem {
-  padding-bottom: 8px;
-  margin: 4px;
-  color: $gray-2;
-  font-size: $size-sub-heading;
-  font-weight: $weight-regular;
-  line-height: $size-sub-heading;
-  border-bottom-style: solid;
-
-  &:not(:last-child) {
-    margin-right: 24px;
-  }
-}
-
 .grid {
   display: grid;
   justify-items: center;

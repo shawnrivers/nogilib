@@ -43,7 +43,7 @@
   font-weight: $weight-bold;
 }
 
-.flexbox {
+.flex-box {
   display: flex;
   flex-direction: row;
 }
@@ -68,7 +68,7 @@
   text-transform: uppercase;
 }
 
-.tracklist {
+.track-list {
   display: grid;
   margin-top: 24px;
 }
@@ -85,7 +85,7 @@
 }
 
 @media (min-width: 588px) and (max-width: 695px) {
-  .tracklist {
+  .track-list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -96,7 +96,7 @@
     flex-direction: column;
   }
 
-  .flexbox {
+  .flex-box {
     flex-direction: column;
   }
 
@@ -106,13 +106,13 @@
 }
 
 @media (min-width: 696px) and (max-width: 919px) {
-  .tracklist {
+  .track-list {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
 @media (min-width: 920px) {
-  .tracklist {
+  .track-list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
