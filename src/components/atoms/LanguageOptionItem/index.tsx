@@ -1,14 +1,18 @@
 import * as React from "react";
-import styles from "./optionitem.module.scss";
+import styles from "./languageoptionitem.module.scss";
 import { Link } from "gatsby";
 
-interface OptionItemProps {
+interface LanguageOptionItemProps {
   to: string;
   children: React.ReactNode;
   handleClick?(): void;
 }
 
-export const OptionItem = ({ to, children, handleClick }: OptionItemProps) => {
+export const LanguageOptionItem = ({
+  to,
+  children,
+  handleClick,
+}: LanguageOptionItemProps) => {
   const liProps = handleClick
     ? {
         onClick: handleClick,

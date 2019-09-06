@@ -6,7 +6,7 @@ import { WindowLocation } from "@reach/router";
 import { Language, Links } from "utils/constants";
 import { NavigationItem } from "components/atoms/NavigationItem";
 import { HomeIcon } from "components/atoms/icons/HomeIcon";
-import { OptionItem } from "components/atoms/OptionItem";
+import { LanguageOptionItem } from "components/atoms/LanguageOptionItem";
 import { AnimatePresence, motion } from "framer-motion";
 import { LanguageIcon } from "components/atoms/icons/LanguagesIcon";
 
@@ -49,24 +49,24 @@ const LanguageItem = ({ type, className }: LanguageItemProps) => {
             className={styles.options}
           >
             <ul>
-              <OptionItem
+              <LanguageOptionItem
                 to={"/en" + Links.Singles}
                 handleClick={() => setLanguagesToggle(false)}
               >
                 English
-              </OptionItem>
-              <OptionItem
+              </LanguageOptionItem>
+              <LanguageOptionItem
                 to={Links.Singles}
                 handleClick={() => setLanguagesToggle(false)}
               >
                 日本語
-              </OptionItem>
-              <OptionItem
+              </LanguageOptionItem>
+              <LanguageOptionItem
                 to={"/zh" + Links.Singles}
                 handleClick={() => setLanguagesToggle(false)}
               >
                 简体中文
-              </OptionItem>
+              </LanguageOptionItem>
             </ul>
           </motion.div>
         )}
