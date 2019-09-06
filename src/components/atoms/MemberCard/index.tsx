@@ -1,5 +1,4 @@
 import * as React from "react";
-import LazyLoad from "react-lazyload";
 import styles from "./membercard.module.scss";
 import { motion } from "framer-motion";
 import { injectIntl } from "react-intl";
@@ -109,14 +108,16 @@ export const MemberCard = injectIntl(
           style={isCenter ? { backgroundColor: "#e887a3" } : undefined}
           className={styles.container}
         >
-          <LazyLoad offset={100}>
-            <img
-              src={image.small}
-              srcSet={image.large + " 2x"}
-              alt={nameText}
-              className={styles.image}
-            />
-          </LazyLoad>
+          <div className={styles.imageContainer}>
+            <div className={styles.wrapper}>
+              <LazyImage
+                src={image.small}
+                srcSet={image.large + " 2x"}
+                alt={nameText}
+                className={styles.image}
+              />
+            </div>
+          </div>
           <div
             style={isCenter ? { color: "#ffffff" } : undefined}
             className={styles.name}

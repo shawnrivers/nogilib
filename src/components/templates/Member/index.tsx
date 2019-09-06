@@ -13,7 +13,6 @@ import {
   GlowStickColorType,
 } from "utils/constants";
 import { PositionCounter } from "components/atoms/PositionCounter";
-import LazyLoad from "react-lazyload";
 import { LazyImage } from "components/atoms/LazyImage";
 
 const containerVariants = {
