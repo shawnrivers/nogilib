@@ -1,6 +1,6 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-import { SongType, FocusPerformersType, CdType } from "types/responseTypes";
+import { CdType, FocusPerformersType, SongType } from "types/responseTypes";
 import { Cd } from "components/templates/Cd";
 
 export const query = graphql`

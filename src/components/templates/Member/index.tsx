@@ -1,16 +1,16 @@
 import * as React from "react";
+import { motion } from "framer-motion";
+import { FormattedDate, FormattedMessage } from "react-intl";
 import styles from "./member.module.scss";
 import { Layout } from "components/atoms/Layout";
-import { motion } from "framer-motion";
 import { ArrowBackIcon } from "components/atoms/icons/ArrowBackIcon";
 import { useScrollRestoration } from "utils/hooks";
-import { FormattedMessage, FormattedDate } from "react-intl";
 import { LocalizedList } from "components/atoms/locales/LocalizedList";
 import { PositionBadge } from "components/atoms/PositionBadge";
 import {
-  PositionType,
   GLOW_STICK_COLORS,
   GlowStickColorType,
+  PositionType,
 } from "utils/constants";
 import { PositionCounter } from "components/atoms/PositionCounter";
 import { LazyImage } from "components/atoms/LazyImage";

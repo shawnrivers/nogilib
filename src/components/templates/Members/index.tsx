@@ -1,8 +1,8 @@
 import * as React from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import styles from "./members.module.scss";
 import { JoinedGenerationType, MembersType } from "types/responseTypes";
 import { MemberCard } from "components/atoms/MemberCard";
-import { AnimatePresence, motion } from "framer-motion";
 
 const listVariants = {
   visible: {

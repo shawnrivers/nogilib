@@ -1,14 +1,14 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import { RouteComponentProps, WindowLocation } from "@reach/router";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { IntlProvider } from "react-intl";
+import styles from "./applayout.module.scss";
 import { Language, Links } from "utils/constants";
 import en from "i18n/en.json";
 import ja from "i18n/ja.json";
 import zh from "i18n/zh.json";
 import { TopNavigation } from "components/molecules/TopNavigation";
-import styles from "./applayout.module.scss";
 import { PageTab } from "components/molecules/PageTab";
 import { CdType, MembersType } from "types/responseTypes";
 

@@ -1,8 +1,8 @@
 import * as React from "react";
-import styles from "./membercard.module.scss";
 import { motion } from "framer-motion";
 import { injectIntl } from "react-intl";
-import { Language, KOJIHARU } from "utils/constants";
+import styles from "./membercard.module.scss";
+import { KOJIHARU, Language } from "utils/constants";
 import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
 import { LazyImage } from "components/atoms/LazyImage";
 

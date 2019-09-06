@@ -1,8 +1,8 @@
 import * as React from "react";
-import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
 import { FormattedMessage } from "react-intl";
-import { Layout } from "components/atoms/Layout";
 import styles from "./pagetab.module.scss";
+import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
+import { Layout } from "components/atoms/Layout";
 import { classNames } from "utils/strings";
 
 export type TabItem = {

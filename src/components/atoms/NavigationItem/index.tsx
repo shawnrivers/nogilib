@@ -1,7 +1,7 @@
 import * as React from "react";
+import { motion } from "framer-motion";
 import styles from "./navigationitem.module.scss";
 import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
-import { motion } from "framer-motion";
 import { classNames } from "utils/strings";
 
 interface NavigationItemProps {

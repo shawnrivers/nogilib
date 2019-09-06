@@ -1,11 +1,11 @@
 import * as React from "react";
-import { toCdNumber } from "utils/strings";
-import styles from "./cd.module.scss";
-import { Track } from "components/atoms/Track";
-import { FocusPerformersType, SongType, CdType } from "types/responseTypes";
-import { Artworks } from "components/molecules/Artworks";
-import { FormattedMessage, FormattedDate } from "react-intl";
+import { FormattedDate, FormattedMessage } from "react-intl";
 import { motion } from "framer-motion";
+import styles from "./cd.module.scss";
+import { toCdNumber } from "utils/strings";
+import { Track } from "components/atoms/Track";
+import { CdType, FocusPerformersType, SongType } from "types/responseTypes";
+import { Artworks } from "components/molecules/Artworks";
 import { Links } from "utils/constants";
 import { useScrollRestoration } from "utils/hooks";
 import { Layout } from "components/atoms/Layout";

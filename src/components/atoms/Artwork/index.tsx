@@ -1,6 +1,6 @@
 import * as React from "react";
-import styles from "./artwork.module.scss";
 import { motion } from "framer-motion";
+import styles from "./artwork.module.scss";
 import { classNames } from "utils/strings";
 import { LazyImage } from "components/atoms/LazyImage";
 

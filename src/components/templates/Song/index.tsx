@@ -1,16 +1,15 @@
 import * as React from "react";
+import { motion } from "framer-motion";
+import { FormattedMessage, injectIntl } from "react-intl";
 import styles from "./song.module.scss";
 import { Layout } from "components/atoms/Layout";
 import { ArrowBackIcon } from "components/atoms/icons/ArrowBackIcon";
-import { motion } from "framer-motion";
 import { SongType } from "types/responseTypes";
-import { FormattedMessage, injectIntl } from "react-intl";
-import { Language, KOJIHARU } from "utils/constants";
+import { KOJIHARU, Language } from "utils/constants";
 import { LocalizedList } from "components/atoms/locales/LocalizedList";
 import { MemberCard } from "components/atoms/MemberCard";
 import { LocalizedNumber } from "components/atoms/locales/LocalizedNumber";
 import { useScrollRestoration } from "utils/hooks";
-import { LazyImage } from "components/atoms/LazyImage";
 
 const containerVariants = {
   visible: {

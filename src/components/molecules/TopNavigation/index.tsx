@@ -1,13 +1,13 @@
 import * as React from "react";
-import styles from "./topnavigation.module.scss";
-import { useOnClickOutside } from "utils/hooks";
 import { FormattedMessage } from "react-intl";
 import { WindowLocation } from "@reach/router";
+import { AnimatePresence, motion } from "framer-motion";
+import styles from "./topnavigation.module.scss";
+import { useOnClickOutside } from "utils/hooks";
 import { Language, Links } from "utils/constants";
 import { NavigationItem } from "components/atoms/NavigationItem";
 import { HomeIcon } from "components/atoms/icons/HomeIcon";
 import { LanguageOptionItem } from "components/atoms/LanguageOptionItem";
-import { AnimatePresence, motion } from "framer-motion";
 import { LanguageIcon } from "components/atoms/icons/LanguagesIcon";
 import { classNames } from "utils/strings";
 

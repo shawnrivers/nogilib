@@ -1,9 +1,9 @@
 import * as React from "react";
+import { FormattedMessage, injectIntl } from "react-intl";
+import { motion } from "framer-motion";
 import styles from "./track.module.scss";
 import { FocusPerformersType, SongType } from "types/responseTypes";
-import { FormattedMessage, injectIntl } from "react-intl";
 import { Language } from "utils/constants";
-import { motion } from "framer-motion";
 import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
 import { classNames } from "utils/strings";
 

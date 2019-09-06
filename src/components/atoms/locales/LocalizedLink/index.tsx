@@ -1,7 +1,7 @@
 import * as React from "react";
-import locales from "i18n/locales";
 import { Link } from "gatsby";
 import { injectIntl } from "react-intl";
+import locales from "i18n/locales";
 import { Language } from "utils/constants";
 import { getUrlWithTrailingComma } from "utils/strings";
 

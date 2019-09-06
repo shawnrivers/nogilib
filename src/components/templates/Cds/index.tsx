@@ -1,8 +1,8 @@
 import * as React from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import styles from "./cds.module.scss";
 import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
 import { Artwork } from "components/atoms/Artwork";
-import styles from "./cds.module.scss";
-import { motion, AnimatePresence } from "framer-motion";
 import { CdType } from "types/responseTypes";
 
 const listVariants = {

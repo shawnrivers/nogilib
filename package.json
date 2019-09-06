@@ -12,8 +12,8 @@
     "serve": "gatsby serve",
     "type-check": "tsc",
     "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
-    "lint:fix": "npm run lint --fix",
-    "stylelint": "stylelint '**/*.scss'  --fix",
+    "lint:fix": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --fix",
+    "stylelint": "stylelint '**/*.scss' --fix",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
@@ -47,6 +47,7 @@
     "@typescript-eslint/parser": "^1.11.0",
     "eslint": "^6.0.1",
     "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.2",
     "eslint-plugin-react-hooks": "^2.0.1",

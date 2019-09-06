@@ -1,6 +1,6 @@
 import * as React from "react";
-import styles from "./languageoptionitem.module.scss";
 import { Link } from "gatsby";
+import styles from "./languageoptionitem.module.scss";
 import { getUrlWithTrailingComma } from "utils/strings";
 
 interface LanguageOptionItemProps {
