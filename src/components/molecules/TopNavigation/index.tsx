@@ -9,6 +9,7 @@ import { HomeIcon } from "components/atoms/icons/HomeIcon";
 import { LanguageOptionItem } from "components/atoms/LanguageOptionItem";
 import { AnimatePresence, motion } from "framer-motion";
 import { LanguageIcon } from "components/atoms/icons/LanguagesIcon";
+import { classNames } from "utils/strings";
 
 interface LanguageItemProps {
   type: "text" | "icon";
@@ -29,7 +30,6 @@ const LanguageItem = ({ type, className }: LanguageItemProps) => {
         type="button"
         handleClick={() => setLanguagesToggle(!isLanguagesToggled)}
         label="languages"
-        className={styles.button}
       >
         {type === "text" ? (
           <FormattedMessage {...({ id: "languages" } as any)} />
@@ -90,41 +90,40 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
   return (
     <nav className={styles.container}>
       <div className={styles.navigation}>
-        <div className={styles.title}>
-          <NavigationItem type="link" to={Links.Singles}>
+        <div className={styles.leftItems}>
+          <NavigationItem
+            type="link"
+            to={Links.Singles}
+            className={classNames(styles.homeText, styles.item)}
+          >
             Nogizaka Lib
           </NavigationItem>
-        </div>
-        {shouldShowLanguagesButton ? (
-          <LanguageItem type="icon" className={styles.icon} />
-        ) : (
           <NavigationItem
             type="link"
             to={Links.Singles}
             label="Nogizaka Lib"
-            className={styles.home}
+            className={classNames(styles.homeIcon, styles.item)}
           >
             <HomeIcon />
           </NavigationItem>
-        )}
-        <div className={styles.items}>
+          {shouldShowLanguagesButton ? (
+            <>
+              <LanguageItem type="icon" className={styles.languagesIcon} />
+              <LanguageItem type="text" className={styles.languagesText} />
+            </>
+          ) : null}
+        </div>
+        <div className={styles.rightItems}>
           <NavigationItem
             type="link"
             to={Links.Singles}
-            className={styles.music}
+            className={styles.item}
           >
             <FormattedMessage {...({ id: "music" } as any)} />
           </NavigationItem>
-          <NavigationItem
-            type="link"
-            to={Links.FirstGeneration}
-            className={styles.members}
-          >
+          <NavigationItem type="link" to={Links.FirstGeneration}>
             <FormattedMessage {...({ id: "members" } as any)} />
           </NavigationItem>
-          {shouldShowLanguagesButton ? (
-            <LanguageItem type="text" className={styles.languages} />
-          ) : null}
         </div>
       </div>
     </nav>
