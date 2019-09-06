@@ -6,7 +6,7 @@ import { FocusPerformersType, SongType, CdType } from "types/responseTypes";
 import { Artworks } from "components/molecules/Artworks";
 import { FormattedMessage, FormattedDate } from "react-intl";
 import { motion } from "framer-motion";
-import { Language, Links } from "utils/constants";
+import { Links } from "utils/constants";
 import { useScrollRestoration } from "utils/hooks";
 import { Layout } from "components/atoms/Layout";
 import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
