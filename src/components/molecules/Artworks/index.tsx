@@ -4,7 +4,6 @@ import { ArrowLeftIcon } from "components/atoms/icons/ArrowLeftIcon";
 import { ArrowRightIcon } from "components/atoms/icons/ArrowRightIcon";
 import { motion } from "framer-motion";
 import { classNames } from "utils/strings";
-import { LazyImage } from "components/atoms/LazyImage";
 
 interface ArtworksProps {
   artworks: {
@@ -59,8 +58,7 @@ export const Artworks = ({ artworks, title, className }: ArtworksProps) => {
               }
               onClick={handleClickImage}
             >
-              <LazyImage
-                notLazy
+              <img
                 src={artwork.medium}
                 srcSet={`${artwork.large} 1.5x`}
                 alt={title}

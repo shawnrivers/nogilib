@@ -211,8 +211,7 @@ export const Song = ({
           >
             <motion.div variants={contentVariants} className={styles.artwork}>
               <div className={styles.artworkImageWrapper}>
-                <LazyImage
-                  notLazy
+                <img
                   src={artwork.medium}
                   srcSet={`${artwork.large} 1.5x`}
                   alt={title}
