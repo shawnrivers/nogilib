@@ -27,7 +27,7 @@ export const Artworks = ({ artworks, title, className }: ArtworksProps) => {
     if (artworkIndex > 0) {
       setArtworkIndex(artworkIndex - 1);
     }
-  }, [artworks, artworkIndex]);
+  }, [artworkIndex]);
 
   const handleClickImage = React.useCallback(() => {
     if (artworkIndex < artworks.length - 1) {

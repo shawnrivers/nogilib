@@ -39,7 +39,7 @@ export const MemberCard = injectIntl(
         locale === Language.En
           ? name.lastNameEn + " " + name.firstNameEn
           : name.lastName + " " + name.firstName,
-      []
+      [locale, name]
     );
 
     const containerVariants = React.useMemo(

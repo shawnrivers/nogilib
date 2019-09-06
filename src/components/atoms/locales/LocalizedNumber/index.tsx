@@ -20,7 +20,7 @@ export const LocalizedNumber = injectIntl(
         default:
           return locale === Language.Ja ? "枚" : "张";
       }
-    }, [type]);
+    }, [type, locale]);
 
     if (locale === Language.En) {
       return type !== "cd" ? (

@@ -85,7 +85,7 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
     const { pathname } = location;
 
     return pathname.includes("/cds/") || pathname.includes("/members-list/");
-  }, [location.pathname]);
+  }, [location]);
 
   return (
     <nav className={styles.container}>
