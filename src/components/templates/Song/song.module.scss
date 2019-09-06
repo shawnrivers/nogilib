@@ -23,13 +23,13 @@
 
 .back {
   fill: $white;
-  width: 32px;
   height: 32px;
+  width: 32px;
 }
 
 .container {
-  margin-top: 12px;
   color: $white;
+  margin-top: 12px;
 }
 
 .heading {
@@ -43,12 +43,12 @@
 }
 
 .tags {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
   font-size: $size-sub-heading-2;
   font-weight: $weight-light;
   text-transform: uppercase;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
 
   span {
     display: block;
@@ -71,21 +71,21 @@
 
 .artwork-image-wrapper {
   @extend %elevation-4;
-  width: 256px;
-  height: 256px;
   background-color: $white;
   border: 8px solid $white;
   box-sizing: border-box;
+  height: 256px;
+  width: 256px;
 
   img {
-    width: 100%;
     display: block;
+    width: 100%;
   }
 }
 
 .content {
-  width: 100%;
   margin-bottom: 64px;
+  width: 100%;
 
   .section:not(:last-child) {
     margin-bottom: 40px;
@@ -126,15 +126,15 @@
 }
 
 .grid {
-  display: grid;
-  justify-items: center;
   align-items: flex-start;
-  grid-row-gap: 12px;
+  display: grid;
   grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  justify-items: center;
 
   .card {
-    width: 100%;
     height: 100%;
+    width: 100%;
   }
 }
 
@@ -144,15 +144,15 @@
 
 .creators {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
 }
 
 .creators-item {
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   margin-bottom: 12px;
   max-width: 160px;
 
@@ -232,11 +232,11 @@
   }
 
   .artwork-image-wrapper {
-    max-width: 256px;
-    max-height: 256px;
-    width: 100%;
     height: auto;
     margin: auto;
+    max-height: 256px;
+    max-width: 256px;
+    width: 100%;
   }
 }
 
@@ -246,10 +246,10 @@
   }
 
   .creators-item {
-    flex-direction: row;
     align-items: baseline;
-    max-width: none;
+    flex-direction: row;
     margin-bottom: 4px;
+    max-width: none;
 
     &:not(:last-child) {
       margin-right: 0;

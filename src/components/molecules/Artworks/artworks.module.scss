@@ -7,28 +7,28 @@
 }
 
 .artwork {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   margin: auto;
 }
 
 .images {
   @extend %elevation-4;
-  margin: 0 12px;
-  width: 256px;
-  height: 256px;
-  overflow-x: hidden;
-  cursor: pointer;
-  border: 8px solid $white;
   background-color: $white;
+  border: 8px solid $white;
+  cursor: pointer;
+  height: 256px;
+  margin: 0 12px;
+  overflow-x: hidden;
+  width: 256px;
 }
 
 .image {
-  width: 256px;
   height: 256px;
   object-fit: cover;
   position: absolute;
+  width: 256px;
 }
 
 .arrow {
@@ -47,24 +47,24 @@
 }
 
 .dot {
-  width: 12px;
-  height: 12px;
   border-radius: 50%;
+  height: 12px;
+  width: 12px;
 }
 
 @media (max-width: 695px) {
   .images {
+    height: 52vw;
+    max-height: 256px;
     max-width: 256px;
     width: 52vw;
-    max-height: 256px;
-    height: 52vw;
   }
 
   .image {
-    max-width: 256px;
-    max-height: 256px;
-    width: 52vw;
     height: 52vw;
+    max-height: 256px;
+    max-width: 256px;
+    width: 52vw;
   }
 }
 

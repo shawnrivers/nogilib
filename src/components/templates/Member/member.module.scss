@@ -23,13 +23,13 @@
 
 .back {
   fill: $white;
-  width: 32px;
   height: 32px;
+  width: 32px;
 }
 
 .container {
-  margin-top: 12px;
   color: $white;
+  margin-top: 12px;
 }
 
 .heading {
@@ -43,16 +43,16 @@
 }
 
 .tags {
+  display: flex;
+  flex-wrap: wrap;
   font-size: $size-sub-heading-2;
   font-weight: $weight-light;
   text-transform: capitalize;
-  display: flex;
-  flex-wrap: wrap;
 
   span {
     display: block;
-    margin-bottom: 4px;
     line-height: 24px;
+    margin-bottom: 4px;
 
     &:not(:last-child) {
       margin-right: 8px;
@@ -71,24 +71,24 @@
 
 .profile-image-wrapper {
   @extend %elevation-4;
-  width: 180px;
-  height: 220px;
+  background-color: $white;
   border: 4px solid $white;
   box-sizing: border-box;
-  background-color: $white;
+  height: 220px;
   margin: auto;
+  width: 180px;
 
   img {
-    object-fit: cover;
     display: block;
-    width: 100%;
     height: 100%;
+    object-fit: cover;
+    width: 100%;
   }
 }
 
 .content {
-  width: 100%;
   margin-bottom: 64px;
+  width: 100%;
 
   .section:not(:last-child) {
     margin-bottom: 48px;
@@ -125,23 +125,23 @@
 }
 
 .stick-colors {
-  width: 100%;
-  text-align: center;
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   margin-top: 16px;
+  text-align: center;
+  width: 100%;
 }
 
 .stick {
   @extend %elevation-1;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  border-width: 2px;
-  border-style: solid;
   border-color: $white;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
   display: block;
+  height: 16px;
+  width: 16px;
 
   &:first-child {
     margin-right: 8px;
@@ -154,15 +154,15 @@
 
 .info {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
 }
 
 .info-item {
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   margin-bottom: 12px;
   max-width: 160px;
 
@@ -204,8 +204,8 @@
     }
 
     span:first-child {
-      margin-right: 8px;
       font-weight: $weight-light;
+      margin-right: 8px;
     }
   }
 }
@@ -217,9 +217,9 @@
 }
 
 .position-record {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 6px 12px 6px 0;
 }
 
@@ -230,17 +230,17 @@
 }
 
 .indicators {
-  display: flex;
   align-items: center;
-  justify-content: flex-start;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   margin-bottom: 8px;
 }
 
 .indicator {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   margin: 6px 12px 6px 0;
 }
@@ -254,40 +254,40 @@
 }
 
 .gallery {
-  display: grid;
-  justify-items: center;
   align-items: flex-start;
-  grid-row-gap: 12px;
+  display: grid;
   grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  justify-items: center;
 }
 
 .gallery-image-container {
   @extend %elevation-1-normal;
-  position: relative;
   box-sizing: border-box;
   height: 100%;
-  width: 100%;
   max-width: 160px;
   min-width: 90px;
   padding-top: 121%;
+  position: relative;
+  width: 100%;
 
   .wrapper {
-    position: absolute;
-    padding: 4px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
     background-color: $white;
+    bottom: 0;
+    left: 0;
+    padding: 4px;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }
 
 .gallery-image {
   display: block;
-  width: 100%;
   height: 100%;
-  transform-origin: center;
   object-fit: cover;
+  transform-origin: center;
+  width: 100%;
 }
 
 @media (min-width: 271px) and (max-width: 389px) {
@@ -350,9 +350,9 @@
     margin: 0 0 24px;
 
     img {
+      margin: auto;
       max-width: 180px;
       width: 100%;
-      margin: auto;
     }
   }
 }
@@ -363,8 +363,8 @@
   }
 
   .info-item {
-    flex-direction: row;
     align-items: baseline;
+    flex-direction: row;
     margin-bottom: 4px;
     max-width: none;
 

@@ -6,20 +6,20 @@
 }
 
 .container {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
 }
 
 .item {
-  padding-bottom: 4px;
-  margin: 4px;
+  border-bottom-style: solid;
   color: $gray-1;
   font-size: $size-sub-heading;
   font-weight: $weight-regular;
   line-height: $size-sub-heading;
-  border-bottom-style: solid;
+  margin: 4px;
+  padding-bottom: 4px;
   text-transform: capitalize;
 
   &:not(:last-child) {
@@ -28,14 +28,14 @@
 }
 
 .active {
+  border-bottom-color: #595959;
+  border-bottom-width: 3px;
   font-size: 20px;
   font-weight: 700;
-  border-bottom-width: 3px;
-  border-bottom-color: #595959;
 }
 
 .inactive {
+  border-bottom-width: 0px;
   font-size: 16px;
   font-weight: 500;
-  border-bottom-width: 0px;
 }

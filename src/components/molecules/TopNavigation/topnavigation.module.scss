@@ -2,32 +2,32 @@
 @import "styles/colors.scss";
 
 .container {
-  width: 100%;
   box-shadow: 0px 2px 4px rgba(142, 142, 142, 0.2);
+  width: 100%;
 }
 
 .navigation {
+  align-items: center;
+  background-color: $white;
+  box-sizing: border-box;
+  color: $gray-1;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  height: 56px;
-  box-sizing: border-box;
-  text-transform: uppercase;
-  color: $gray-1;
-  background-color: $white;
-  padding: 12px 24px;
-  margin: auto;
-  max-width: 1168px;
   font-size: $size-body;
   font-weight: $weight-bold;
+  height: 56px;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1168px;
+  padding: 12px 24px;
+  text-transform: uppercase;
 }
 
 .left-items,
 .right-items {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .item {
@@ -43,15 +43,15 @@
   fill: #595959;
 
   svg {
-    width: 24px;
     height: 24px;
+    width: 24px;
   }
 }
 
 .languages-text {
-  position: relative;
   display: flex;
   justify-content: center;
+  position: relative;
 
   button {
     text-transform: uppercase;
@@ -59,23 +59,23 @@
 }
 
 .languages-icon {
-  position: relative;
   display: none;
   justify-content: center;
+  position: relative;
 
   svg {
-    width: 20px;
     height: 20px;
     margin-top: 2px;
+    width: 20px;
   }
 }
 
 .options {
-  position: absolute;
-  top: 54px;
-  padding: 16px;
   background-color: $white;
   box-shadow: 0px 2px 8px 2px rgba(142, 142, 142, 0.2);
+  padding: 16px;
+  position: absolute;
+  top: 54px;
   z-index: 10;
 
   ul {

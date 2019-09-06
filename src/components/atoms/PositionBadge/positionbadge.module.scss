@@ -3,59 +3,59 @@
 @import "styles/typography.scss";
 
 .container {
-  width: 28px;
   height: 28px;
+  width: 28px;
 }
 
 %badge {
   @extend %elevation-1;
-  display: block;
   border-radius: 50%;
+  display: block;
 }
 
 .position {
   @extend %badge;
-  width: 24px;
-  height: 24px;
-  border-width: 2px;
   border-style: solid;
+  border-width: 2px;
+  height: 24px;
   line-height: 24px;
   text-align: center;
+  width: 24px;
 }
 
 .center {
-  border-color: $white;
   background-color: $pink-1;
+  border-color: $white;
   color: $white;
   font-weight: $weight-bold;
 }
 
 .fukujin {
-  border-color: $white;
   background-color: $gray-1;
+  border-color: $white;
   color: $white;
   font-weight: $weight-regular;
 }
 
 .selected {
-  border-color: $white;
   background-color: $gray-3;
+  border-color: $white;
   color: $white;
   font-weight: $weight-regular;
 }
 
 .under {
-  border-color: $gray-3;
   background-color: $white;
+  border-color: $gray-3;
   color: $gray-3;
   font-weight: $weight-regular;
 }
 
 .none {
   @extend %badge;
-  width: 12px;
-  height: 3px;
-  margin: 11px 8px;
   background-color: $white;
   border-radius: 0;
+  height: 3px;
+  margin: 11px 8px;
+  width: 12px;
 }

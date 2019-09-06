@@ -4,54 +4,54 @@
 
 .container {
   @extend %elevation-2;
-  height: 88px;
   background-color: $white;
+  height: 88px;
 }
 
 .number {
+  align-items: center;
+  color: $gray-2;
+  display: flex;
+  float: left;
   font-size: $size-sub-heading-2;
   font-weight: $weight-light;
-  display: flex;
-  width: 24px;
   height: 100%;
-  align-items: center;
   justify-content: center;
   margin-left: 12px;
-  color: $gray-2;
-  float: left;
+  width: 24px;
 }
 
 .content {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  height: 88px;
   justify-content: center;
   overflow: hidden;
-  height: 88px;
-  box-sizing: border-box;
   padding: 12px;
 }
 
 .title {
+  color: $gray-1;
   font-size: $size-sub-heading-2;
   font-weight: $weight-bold;
-  overflow: hidden;
-  max-height: 40px;
-  margin-bottom: 8px;
-  color: $gray-1;
   line-height: 20px;
+  margin-bottom: 8px;
+  max-height: 40px;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .description {
+  color: $gray-2;
   font-size: $size-caption;
   font-weight: $weight-light;
-  overflow: hidden;
   height: 16px;
-  color: $gray-2;
   line-height: 16px;
+  overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
   text-transform: capitalize;
+  white-space: nowrap;
 
   span:not(:last-child) {
     margin-right: 12px;

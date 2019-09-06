@@ -8,14 +8,14 @@
 
 .container {
   @extend %elevation-1-normal;
-  position: relative;
+  align-items: center;
+  background-color: $white;
   box-sizing: border-box;
-  padding: 8px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   height: 100%;
-  background-color: $white;
+  padding: 8px;
+  position: relative;
 }
 
 .center {
@@ -24,40 +24,40 @@
 }
 
 .image-container {
-  position: relative;
+  margin-bottom: 8px;
   max-width: 160px;
   min-width: 90px;
-  width: 100%;
-  margin-bottom: 8px;
   padding-top: 120%;
+  position: relative;
+  width: 100%;
 }
 
 .wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   background-color: $gray-4;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .image {
   display: block;
-  width: 100%;
   height: 100%;
-  transform-origin: center;
   object-fit: cover;
+  transform-origin: center;
+  width: 100%;
 }
 
 .name {
+  align-items: center;
+  color: $gray-1;
+  display: flex;
   font-size: $size-caption;
   font-weight: $weight-regular;
-  color: $gray-1;
-  text-align: center;
-  text-transform: capitalize;
   height: 100%;
   max-height: 36px;
   overflow: hidden;
-  display: flex;
-  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
 }

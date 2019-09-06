@@ -18,13 +18,13 @@
 
 .back {
   fill: $white;
-  width: 32px;
   height: 32px;
+  width: 32px;
 }
 
 .container {
-  margin: 12px 24px 0;
   color: $white;
+  margin: 12px 24px 0;
 }
 
 .heading {
@@ -34,8 +34,8 @@
 .number {
   font-size: $size-sub-heading-2;
   font-weight: $weight-light;
-  text-transform: uppercase;
   margin-bottom: 4px;
+  text-transform: uppercase;
 }
 
 .title {
@@ -53,8 +53,8 @@
 }
 
 .content {
-  width: 100%;
   margin-bottom: 64px;
+  width: 100%;
 
   .section:not(:last-child) {
     margin-bottom: 40px;

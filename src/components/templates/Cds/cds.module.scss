@@ -2,24 +2,24 @@
 @import "styles/colors.scss";
 
 .grid {
-  display: grid;
-  justify-items: center;
   align-items: center;
-  grid-row-gap: 24px;
+  display: grid;
   grid-column-gap: 24px;
-  padding: 24px;
-  max-width: 1168px;
-  margin: auto;
-  position: absolute;
+  grid-row-gap: 24px;
+  justify-items: center;
   left: 0;
+  margin: auto;
+  max-width: 1168px;
+  padding: 24px;
+  position: absolute;
   right: 0;
 }
 
 .artwork {
-  max-width: 200px;
-  max-height: 200px;
-  width: 100%;
   display: block;
+  max-height: 200px;
+  max-width: 200px;
+  width: 100%;
 }
 
 @media (min-width: 248px) and (max-width: 471px) {

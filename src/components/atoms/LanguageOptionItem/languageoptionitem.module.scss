@@ -2,8 +2,8 @@
 @import "styles/typography.scss";
 
 .text {
+  color: $gray-2;
   font-size: $size-caption;
   font-weight: $weight-regular;
-  color: $gray-2;
   padding-bottom: 4px;
 }
