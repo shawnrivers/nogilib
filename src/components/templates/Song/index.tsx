@@ -10,6 +10,7 @@ import { LocalizedList } from "components/atoms/locales/LocalizedList";
 import { MemberCard } from "components/atoms/MemberCard";
 import { LocalizedNumber } from "components/atoms/locales/LocalizedNumber";
 import { useScrollRestoration } from "utils/hooks";
+import { LazyImage } from "components/atoms/LazyImage";
 
 const containerVariants = {
   visible: {
@@ -209,11 +210,14 @@ export const Song = ({
             className={styles.flexBox}
           >
             <motion.div variants={contentVariants} className={styles.artwork}>
-              <img
-                src={artwork.medium}
-                srcSet={`${artwork.large} 1.5x`}
-                alt={title}
-              />
+              <div className={styles.artworkImageWrapper}>
+                <LazyImage
+                  notLazy
+                  src={artwork.medium}
+                  srcSet={`${artwork.large} 1.5x`}
+                  alt={title}
+                />
+              </div>
             </motion.div>
             <motion.div variants={contentVariants} className={styles.content}>
               <section className={styles.section}>

@@ -1,8 +1,8 @@
 import * as React from "react";
-import LazyLoad from "react-lazyload";
 import styles from "./artwork.module.scss";
 import { motion } from "framer-motion";
 import { classNames } from "utils/strings";
+import { LazyImage } from "components/atoms/LazyImage";
 
 const backgroundFade = {
   isHovered: {
@@ -43,14 +43,12 @@ export const Artwork = ({ images, title, className }: ArtworkProps) => {
       className={classNames(styles.container, className)}
     >
       <div className={styles.wrapper}>
-        <LazyLoad offset={100}>
-          <img
-            src={images.small}
-            srcSet={`${images.medium} 2x, ${images.large} 3x`}
-            alt={title}
-            className={styles.image}
-          />
-        </LazyLoad>
+        <LazyImage
+          src={images.small}
+          srcSet={`${images.medium} 2x, ${images.large} 3x`}
+          alt={title}
+          className={styles.image}
+        />
         <motion.div
           initial={false}
           animate={isHovered ? "isHovered" : "isNotHovered"}

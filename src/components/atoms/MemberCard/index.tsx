@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { injectIntl } from "react-intl";
 import { Language, KOJIHARU } from "utils/constants";
 import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
+import { LazyImage } from "components/atoms/LazyImage";
 
 interface MemberCardProps {
   image: {
@@ -81,18 +82,16 @@ export const MemberCard = injectIntl(
             style={isCenter ? { backgroundColor: "#e887a3" } : undefined}
             className={styles.container}
           >
-            <LazyLoad offset={100}>
-              <div className={styles.imageContainer}>
-                <div className={styles.wrapper}>
-                  <img
-                    src={image.small}
-                    srcSet={image.large + " 2x"}
-                    alt={nameText}
-                    className={styles.image}
-                  />
-                </div>
+            <div className={styles.imageContainer}>
+              <div className={styles.wrapper}>
+                <LazyImage
+                  src={image.small}
+                  srcSet={image.large + " 2x"}
+                  alt={nameText}
+                  className={styles.image}
+                />
               </div>
-            </LazyLoad>
+            </div>
             <motion.div
               variants={textVariants}
               transition={{ duration: 0.3 }}

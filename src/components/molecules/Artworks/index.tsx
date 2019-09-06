@@ -4,6 +4,7 @@ import { ArrowLeftIcon } from "components/atoms/icons/ArrowLeftIcon";
 import { ArrowRightIcon } from "components/atoms/icons/ArrowRightIcon";
 import { motion } from "framer-motion";
 import { classNames } from "utils/strings";
+import { LazyImage } from "components/atoms/LazyImage";
 
 interface ArtworksProps {
   artworks: {
@@ -49,19 +50,23 @@ export const Artworks = ({ artworks, title, className }: ArtworksProps) => {
         </motion.button>
         <motion.div whileHover={{ scale: 1.07 }} className={styles.images}>
           {artworks.map((artwork, index) => (
-            <motion.img
+            <motion.div
               key={index}
               animate={
                 artworkIndex === index
                   ? { opacity: 1, scale: 1 }
                   : { opacity: 0, scale: 0.5 }
               }
-              src={artwork.medium}
-              srcSet={`${artwork.large} 1.5x`}
-              alt={title}
               onClick={handleClickImage}
-              className={styles.image}
-            />
+            >
+              <LazyImage
+                notLazy
+                src={artwork.medium}
+                srcSet={`${artwork.large} 1.5x`}
+                alt={title}
+                className={styles.image}
+              />
+            </motion.div>
           ))}
         </motion.div>
         <motion.button

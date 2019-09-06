@@ -67,14 +67,19 @@
 
 .artwork {
   margin: 8px 40px 0 12px;
+}
+
+.artwork-image-wrapper {
+  @extend %elevation-4;
+  width: 256px;
+  height: 256px;
+  background-color: $white;
+  border: 8px solid $white;
+  box-sizing: border-box;
 
   img {
-    @extend %elevation-4;
-    width: 256px;
-    height: 256px;
+    width: 100%;
     display: block;
-    border: 8px solid $white;
-    box-sizing: border-box;
   }
 }
 
@@ -224,14 +229,14 @@
 
   .artwork {
     margin: 24px 0 64px;
+  }
 
-    img {
-      max-width: 256px;
-      max-height: 256px;
-      width: 100%;
-      height: auto;
-      margin: auto;
-    }
+  .artwork-image-wrapper {
+    max-width: 256px;
+    max-height: 256px;
+    width: 100%;
+    height: auto;
+    margin: auto;
   }
 }
 

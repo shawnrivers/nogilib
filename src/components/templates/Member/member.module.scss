@@ -65,18 +65,24 @@
   flex-direction: row;
 }
 
-.profile-image {
+.profile-image-container {
   margin: 8px 40px 0 12px;
+}
+
+.profile-image-wrapper {
+  @extend %elevation-4;
+  width: 180px;
+  height: 220px;
+  border: 4px solid $white;
+  box-sizing: border-box;
+  background-color: $white;
+  margin: auto;
 
   img {
-    @extend %elevation-4;
-    width: 180px;
-    height: 220px;
     object-fit: cover;
     display: block;
-    border: 4px solid $white;
-    box-sizing: border-box;
-    background-color: $gray-4;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -340,7 +346,7 @@
     margin-bottom: 24px;
   }
 
-  .profile-image {
+  .profile-image-container {
     margin: 0 0 24px;
 
     img {

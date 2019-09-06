@@ -14,6 +14,7 @@ import {
 } from "utils/constants";
 import { PositionCounter } from "components/atoms/PositionCounter";
 import LazyLoad from "react-lazyload";
+import { LazyImage } from "components/atoms/LazyImage";
 
 const containerVariants = {
   visible: {
@@ -166,13 +167,16 @@ export const Member = ({
             >
               <motion.div
                 variants={contentVariants}
-                className={styles.profileImage}
+                className={styles.profileImageContainer}
               >
-                <img
-                  src={profileImage.small}
-                  srcSet={`${profileImage.large} 2x`}
-                  alt={name}
-                />
+                <div className={styles.profileImageWrapper}>
+                  <LazyImage
+                    notLazy
+                    src={profileImage.small}
+                    srcSet={`${profileImage.large} 2x`}
+                    alt={name}
+                  />
+                </div>
                 <div className={styles.stickColors}>
                   <span
                     style={{
@@ -389,14 +393,12 @@ export const Member = ({
                           key={index}
                         >
                           <div className={styles.wrapper}>
-                            <LazyLoad offset={100}>
-                              <img
-                                src={profileImage.small}
-                                srcSet={profileImage.large + " 2x"}
-                                alt={name}
-                                className={styles.galleryImage}
-                              />
-                            </LazyLoad>
+                            <LazyImage
+                              src={profileImage.small}
+                              srcSet={profileImage.large + " 2x"}
+                              alt={name}
+                              className={styles.galleryImage}
+                            />
                           </div>
                         </div>
                       ))}
