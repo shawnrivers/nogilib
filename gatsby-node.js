@@ -11,7 +11,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node,
       name: "slug",
-      value: slug + node.number,
+      value: slug + node.number + "/",
     });
   }
 
@@ -20,7 +20,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node,
       name: "slug",
-      value: slug + node.number,
+      value: slug + node.number + "/",
     });
   }
 
@@ -29,7 +29,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node,
       name: "slug",
-      value: slug + node.key,
+      value: slug + node.key + "/",
     });
   }
 
@@ -38,7 +38,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node,
       name: "slug",
-      value: slug + node.name,
+      value: slug + node.name + "/",
     });
   }
 };
@@ -119,11 +119,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const cdsPages = [
     {
-      slug: "/cds/singles",
+      slug: "/cds/singles/",
       type: "singles",
     },
     {
-      slug: "/cds/albums",
+      slug: "/cds/albums/",
       type: "albums",
     },
   ];
@@ -149,23 +149,23 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const membersPages = [
     {
-      slug: "/members-list/first-gen",
+      slug: "/members-list/first-gen/",
       type: "first-gen",
     },
     {
-      slug: "/members-list/second-gen",
+      slug: "/members-list/second-gen/",
       type: "second-gen",
     },
     {
-      slug: "/members-list/third-gen",
+      slug: "/members-list/third-gen/",
       type: "third-gen",
     },
     {
-      slug: "/members-list/fourth-gen",
+      slug: "/members-list/fourth-gen/",
       type: "fourth-gen",
     },
     {
-      slug: "/members-list/graduated",
+      slug: "/members-list/graduated/",
       type: "graduated",
     },
   ];

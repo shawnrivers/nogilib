@@ -3,6 +3,7 @@ import locales from "i18n/locales";
 import { Link } from "gatsby";
 import { injectIntl } from "react-intl";
 import { Language } from "utils/constants";
+import { getUrlWithTrailingComma } from "utils/strings";
 
 interface LocalizedLinkProps {
   to: string;
@@ -31,12 +32,12 @@ export const LocalizedLink = injectIntl(
       () =>
         handleClick
           ? {
-              to: path,
+              to: getUrlWithTrailingComma(path),
               className,
               onClick: handleClick,
             }
           : {
-              to: path,
+              to: getUrlWithTrailingComma(path),
               className,
             },
       [path, className, handleClick]

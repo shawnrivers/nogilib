@@ -1,5 +1,8 @@
 import { Language } from "utils/constants";
 
+export const getUrlWithTrailingComma = (url: string): string =>
+  url.slice(-1) !== "/" ? url + "/" : url;
+
 export const classNames = (
   ...classNames: (string | undefined)[]
 ): string | undefined =>
