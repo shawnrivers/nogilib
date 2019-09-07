@@ -1,5 +1,4 @@
 import * as React from "react";
-import { FormattedMessage } from "react-intl";
 import { WindowLocation } from "@reach/router";
 import { AnimatePresence, motion } from "framer-motion";
 import styles from "./topnavigation.module.scss";
@@ -10,6 +9,7 @@ import { HomeIcon } from "components/atoms/icons/HomeIcon";
 import { LanguageOptionItem } from "components/atoms/LanguageOptionItem";
 import { LanguageIcon } from "components/atoms/icons/LanguagesIcon";
 import { classNames } from "utils/strings";
+import { Message } from "components/atoms/Message";
 
 interface LanguageItemProps {
   type: "text" | "icon";
@@ -31,11 +31,7 @@ const LanguageItem = ({ type, className }: LanguageItemProps) => {
         handleClick={() => setLanguagesToggle(!isLanguagesToggled)}
         label="languages"
       >
-        {type === "text" ? (
-          <FormattedMessage {...({ id: "languages" } as any)} />
-        ) : (
-          <LanguageIcon />
-        )}
+        {type === "text" ? <Message text="languages" /> : <LanguageIcon />}
       </NavigationItem>
       <AnimatePresence>
         {isLanguagesToggled && (
@@ -119,10 +115,10 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
             to={Links.Singles}
             className={styles.item}
           >
-            <FormattedMessage {...({ id: "music" } as any)} />
+            <Message text="music" />
           </NavigationItem>
           <NavigationItem type="link" to={Links.FirstGeneration}>
-            <FormattedMessage {...({ id: "members" } as any)} />
+            <Message text="members" />
           </NavigationItem>
         </div>
       </div>

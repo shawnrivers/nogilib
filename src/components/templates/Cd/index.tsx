@@ -1,5 +1,5 @@
 import * as React from "react";
-import { FormattedDate, FormattedMessage } from "react-intl";
+import { FormattedDate } from "react-intl";
 import { motion } from "framer-motion";
 import styles from "./cd.module.scss";
 import { toCdNumber } from "utils/strings";
@@ -11,6 +11,7 @@ import { useScrollRestoration } from "utils/hooks";
 import { Layout } from "components/atoms/Layout";
 import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
 import { ArrowBackIcon } from "components/atoms/icons/ArrowBackIcon";
+import { Message } from "components/atoms/Message";
 
 const containerVariants = {
   visible: {
@@ -121,7 +122,7 @@ export const Cd = ({
             <motion.div variants={contentVariants} className={styles.content}>
               <section className={styles.section}>
                 <h2 className={styles.subheading}>
-                  <FormattedMessage {...({ id: "track" } as any)} />
+                  <Message text="track" />
                 </h2>
                 <ul className={styles.trackList}>
                   {songs.map((song, index) => (
@@ -139,7 +140,7 @@ export const Cd = ({
               </section>
               <section className={styles.section}>
                 <h2 className={styles.subheading}>
-                  <FormattedMessage {...({ id: "release" } as any)} />
+                  <Message text="release" />
                 </h2>
                 <p className={styles.release}>
                   <FormattedDate

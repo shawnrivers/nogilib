@@ -1,6 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-import { FormattedMessage, injectIntl } from "react-intl";
+import { injectIntl } from "react-intl";
 import styles from "./song.module.scss";
 import { Layout } from "components/atoms/Layout";
 import { ArrowBackIcon } from "components/atoms/icons/ArrowBackIcon";
@@ -10,6 +10,7 @@ import { LocalizedList } from "components/atoms/locales/LocalizedList";
 import { MemberCard } from "components/atoms/MemberCard";
 import { LocalizedNumber } from "components/atoms/locales/LocalizedNumber";
 import { useScrollRestoration } from "utils/hooks";
+import { Message } from "components/atoms/Message";
 
 const containerVariants = {
   visible: {
@@ -79,7 +80,7 @@ const PerformersTag = injectIntl(
     if (tagName.includes("generation")) {
       return (
         <p className={styles.caption}>
-          #<FormattedMessage {...({ id: tagName } as any)} />
+          #<Message text={tagName} />
         </p>
       );
     }
@@ -88,16 +89,15 @@ const PerformersTag = injectIntl(
       return locale === Language.En ? (
         <p className={styles.caption}>
           #<LocalizedNumber num={singleNumber} type="cd" />{" "}
-          <FormattedMessage {...({ id: "single" } as any)} />{" "}
-          <FormattedMessage {...({ id: tagName } as any)} />{" "}
-          <FormattedMessage {...({ id: "members" } as any)} />
+          <Message text="single" /> <Message text={tagName} />{" "}
+          <Message text="members" />
         </p>
       ) : (
         <p className={styles.caption}>
           #<LocalizedNumber num={singleNumber} type="cd" />
-          <FormattedMessage {...({ id: "single" } as any)} />
-          <FormattedMessage {...({ id: tagName } as any)} />
-          <FormattedMessage {...({ id: "members" } as any)} />
+          <Message text="single" />
+          <Message text={tagName} />
+          <Message text="members" />
         </p>
       );
     }
@@ -197,7 +197,7 @@ export const Song = ({
             <h1 className={styles.title}>{title}</h1>
             <h4 className={styles.tags}>
               <span>
-                #<FormattedMessage {...({ id: type } as any)} />
+                #<Message text={type} />
               </span>
               {songTags.map((tag, index) => (
                 <span key={index}>{tag}</span>
@@ -220,7 +220,7 @@ export const Song = ({
             <motion.div variants={contentVariants} className={styles.content}>
               <section className={styles.section}>
                 <h2 className={styles.subheading}>
-                  <FormattedMessage {...({ id: "performers" } as any)} />
+                  <Message text="performers" />
                 </h2>
                 <PerformersTag
                   singleNumber={performersTag.singleNumber}
@@ -293,13 +293,13 @@ export const Song = ({
                 <h2
                   className={styles.subheading + " " + styles.creatorsContainer}
                 >
-                  <FormattedMessage {...({ id: "creators" } as any)} />
+                  <Message text="creators" />
                 </h2>
                 <div className={styles.creators}>
                   {creators.lyrics.length > 0 ? (
                     <div className={styles.creatorsItem}>
                       <span className={styles.creatorWork}>
-                        <FormattedMessage {...({ id: "lyrics" } as any)} />
+                        <Message text="lyrics" />
                       </span>
                       <span className={styles.creatorNames}>
                         <LocalizedList list={creators.lyrics} />
@@ -309,7 +309,7 @@ export const Song = ({
                   {creators.compose.length > 0 ? (
                     <div className={styles.creatorsItem}>
                       <span className={styles.creatorWork}>
-                        <FormattedMessage {...({ id: "compose" } as any)} />
+                        <Message text="compose" />
                       </span>
                       <span className={styles.creatorNames}>
                         <LocalizedList list={creators.compose} />
@@ -319,7 +319,7 @@ export const Song = ({
                   {creators.arrange.length > 0 ? (
                     <div className={styles.creatorsItem}>
                       <span className={styles.creatorWork}>
-                        <FormattedMessage {...({ id: "arrange" } as any)} />
+                        <Message text="arrange" />
                       </span>
                       <span className={styles.creatorNames}>
                         <LocalizedList list={creators.arrange} />
@@ -329,7 +329,7 @@ export const Song = ({
                   {creators.direct.length > 0 ? (
                     <div className={styles.creatorsItem}>
                       <span className={styles.creatorWork}>
-                        <FormattedMessage {...({ id: "direct" } as any)} />
+                        <Message text="direct" />
                       </span>
                       <span className={styles.creatorNames}>
                         <LocalizedList list={creators.direct} />

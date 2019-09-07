@@ -1,11 +1,12 @@
 import * as React from "react";
-import { FormattedMessage, injectIntl } from "react-intl";
+import { injectIntl } from "react-intl";
 import { motion } from "framer-motion";
 import styles from "./track.module.scss";
 import { FocusPerformersType, SongType } from "types/responseTypes";
 import { Language } from "utils/constants";
 import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
 import { classNames } from "utils/strings";
+import { Message } from "components/atoms/Message";
 
 const containerVariants = {
   hover: { backgroundColor: "#595959", transition: { duration: 0.3 } },
@@ -80,7 +81,7 @@ export const Track = injectIntl(
             </motion.h3>
             <motion.div variants={textVariants} className={styles.description}>
               <span>
-                #<FormattedMessage {...({ id: type } as any)} />
+                #<Message text={type} />
               </span>
               <span>{focusPerformersText}</span>
             </motion.div>
@@ -94,7 +95,7 @@ export const Track = injectIntl(
           <h3 className={styles.title}>{title}</h3>
           <div className={styles.description}>
             <span>
-              #<FormattedMessage {...({ id: type } as any)} />
+              #<Message text={type} />
             </span>
             <span>{focusPerformersText}</span>
           </div>

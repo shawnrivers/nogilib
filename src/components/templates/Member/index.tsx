@@ -1,6 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-import { FormattedDate, FormattedMessage } from "react-intl";
+import { FormattedDate } from "react-intl";
 import styles from "./member.module.scss";
 import { Layout } from "components/atoms/Layout";
 import { ArrowBackIcon } from "components/atoms/icons/ArrowBackIcon";
@@ -14,6 +14,7 @@ import {
 } from "utils/constants";
 import { PositionCounter } from "components/atoms/PositionCounter";
 import { LazyImage } from "components/atoms/LazyImage";
+import { Message } from "components/atoms/Message";
 
 const containerVariants = {
   visible: {
@@ -201,7 +202,7 @@ export const Member = ({
                 {sites.length > 0 ? (
                   <section className={styles.section}>
                     <h2 className={styles.subheading}>
-                      <FormattedMessage {...({ id: "websites" } as any)} />
+                      <Message text="websites" />
                     </h2>
                     <div className={styles.websites}>
                       {sites.map(site => (
@@ -211,7 +212,7 @@ export const Member = ({
                           target="_blank"
                           rel="noopener"
                         >
-                          <FormattedMessage {...({ id: site.title } as any)} />
+                          <Message text={site.title} />
                         </motion.a>
                       ))}
                     </div>
@@ -221,31 +222,26 @@ export const Member = ({
                   <h2
                     className={styles.subheading + " " + styles.infoContainer}
                   >
-                    <FormattedMessage {...({ id: "profile" } as any)} />
+                    <Message text="profile" />
                   </h2>
                   <div className={styles.info}>
                     <div className={styles.infoItem}>
                       <span className={styles.infoTitle}>
-                        <FormattedMessage {...({ id: "join" } as any)} />
+                        <Message text="join" />
                       </span>
                       <span className={styles.infoContent}>
-                        <FormattedMessage
-                          {...({ id: "join: " + join } as any)}
-                        />{" "}
+                        <Message text={"join: " + join} />{" "}
                         {graduation.isGraduated ? (
                           <span>
                             (
-                            <FormattedMessage
-                              {...({ id: "graduate" } as any)}
-                            />
-                            )
+                            <Message text="graduate" />)
                           </span>
                         ) : null}
                       </span>
                     </div>
                     <div className={styles.infoItem}>
                       <span className={styles.infoTitle}>
-                        <FormattedMessage {...({ id: "birthday" } as any)} />
+                        <Message text="birthday" />
                       </span>
                       <span className={styles.infoContent}>
                         <FormattedDate
@@ -258,7 +254,7 @@ export const Member = ({
                     </div>
                     <div className={styles.infoItem}>
                       <span className={styles.infoTitle}>
-                        <FormattedMessage {...({ id: "height" } as any)} />
+                        <Message text="height" />
                       </span>
                       <span
                         className={styles.infoContent + " " + styles.height}
@@ -268,24 +264,24 @@ export const Member = ({
                     </div>
                     <div className={styles.infoItem}>
                       <span className={styles.infoTitle}>
-                        <FormattedMessage {...({ id: "blood type" } as any)} />
+                        <Message text="blood type" />
                       </span>
                       <span className={styles.infoContent}>
-                        <FormattedMessage {...({ id: bloodType } as any)} />
+                        <Message text={bloodType} />
                       </span>
                     </div>
                     <div className={styles.infoItem}>
                       <span className={styles.infoTitle}>
-                        <FormattedMessage {...({ id: "birthplace" } as any)} />
+                        <Message text="birthplace" />
                       </span>
                       <span className={styles.infoContent}>
-                        <FormattedMessage {...({ id: origin } as any)} />
+                        <Message text={origin} />
                       </span>
                     </div>
                     {units.length > 0 ? (
                       <div className={styles.infoItem}>
                         <span className={styles.infoTitle}>
-                          <FormattedMessage {...({ id: "units" } as any)} />
+                          <Message text="units" />
                         </span>
                         <span className={styles.infoContent}>
                           <LocalizedList list={units} />
@@ -295,7 +291,7 @@ export const Member = ({
                     {corps.length > 0 ? (
                       <div className={styles.infoItem}>
                         <span className={styles.infoTitle}>
-                          <FormattedMessage {...({ id: "corps" } as any)} />
+                          <Message text="corps" />
                         </span>
                         <span className={styles.infoContent}>
                           <LocalizedList list={corps} />
@@ -309,7 +305,7 @@ export const Member = ({
                     <h2
                       className={styles.subheading + " " + styles.infoContainer}
                     >
-                      <FormattedMessage {...({ id: "photo albums" } as any)} />
+                      <Message text="photo albums" />
                     </h2>
                     <ol className={styles.photoAlbums}>
                       {photoAlbums.map(photoAlbum => (
@@ -321,9 +317,7 @@ export const Member = ({
                 {positionsHistory.length > 0 ? (
                   <section className={styles.section}>
                     <h2 className={styles.subheading}>
-                      <FormattedMessage
-                        {...({ id: "position history" } as any)}
-                      />
+                      <Message text="position history" />
                     </h2>
                     <div className={styles.history}>
                       {positionsHistory.map(position => (
@@ -343,36 +337,32 @@ export const Member = ({
                 {shouldShowPositionCounter ? (
                   <section className={styles.section}>
                     <h2 className={styles.subheading}>
-                      <FormattedMessage
-                        {...({ id: "position counter" } as any)}
-                      />
+                      <Message text="position counter" />
                     </h2>
                     <div className={styles.counter}>
                       <div className={styles.indicators}>
                         <div className={styles.indicator}>
                           <PositionBadge position={PositionType.Center} />
                           <span className={styles.indicatorCaption}>
-                            <FormattedMessage {...({ id: "center" } as any)} />
+                            <Message text="center" />
                           </span>
                         </div>
                         <div className={styles.indicator}>
                           <PositionBadge position={PositionType.Fukujin} />
                           <span className={styles.indicatorCaption}>
-                            <FormattedMessage {...({ id: "fukujin" } as any)} />
+                            <Message text="fukujin" />
                           </span>
                         </div>
                         <div className={styles.indicator}>
                           <PositionBadge position={PositionType.Selected} />
                           <span className={styles.indicatorCaption}>
-                            <FormattedMessage
-                              {...({ id: "selected" } as any)}
-                            />
+                            <Message text="selected" />
                           </span>
                         </div>
                         <div className={styles.indicator}>
                           <PositionBadge position={PositionType.Under} />
                           <span className={styles.indicatorCaption}>
-                            <FormattedMessage {...({ id: "under" } as any)} />
+                            <Message text="under" />
                           </span>
                         </div>
                       </div>
@@ -383,7 +373,7 @@ export const Member = ({
                 {gallery.length > 0 ? (
                   <section className={styles.section}>
                     <h2 className={styles.subheading}>
-                      <FormattedMessage {...({ id: "gallery" } as any)} />
+                      <Message text="gallery" />
                     </h2>
                     <div className={styles.gallery}>
                       {gallery.map((profileImage, index) => (

@@ -1,9 +1,9 @@
 import * as React from "react";
-import { FormattedMessage } from "react-intl";
 import styles from "./pagetab.module.scss";
 import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
 import { Layout } from "components/atoms/Layout";
 import { classNames } from "utils/strings";
+import { Message } from "components/atoms/Message";
 
 export type TabItem = {
   link: string;
@@ -35,7 +35,7 @@ export const PageTab = ({ items, selectedItem, className }: PageTabProps) => {
                 to={item.link}
                 handleClick={() => setCurrentItem(item.page)}
               >
-                <FormattedMessage {...({ id: item.page } as any)} />
+                <Message text={item.page} />
               </LocalizedLink>
             </div>
           );
