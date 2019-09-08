@@ -13,6 +13,7 @@ interface LazyImageProps {
   srcSet?: string;
   notLazy?: boolean;
   className?: string;
+  placeholder?: React.ReactNode;
 }
 
 export const LazyImage = ({
@@ -21,6 +22,7 @@ export const LazyImage = ({
   srcSet,
   notLazy,
   className,
+  placeholder,
 }: LazyImageProps) => {
   const [isImageLoaded, setImageLoad] = React.useState(false);
 
@@ -35,7 +37,7 @@ export const LazyImage = ({
       className={className}
     />
   ) : (
-    <LazyLoad offset={100}>
+    <LazyLoad offset={100} placeholder={placeholder}>
       <motion.img
         src={src}
         srcSet={srcSet}
