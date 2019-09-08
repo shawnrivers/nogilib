@@ -1,10 +1,11 @@
 import * as React from "react";
+import { Link } from "gatsby";
+import { motion } from "framer-motion";
+import styles from "./starting.module.scss";
 import { Layout } from "components/atoms/Layout";
-import "styles/app.scss";
 import { Links } from "utils/constants";
 import { Message } from "components/atoms/Message";
 import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
-import { Link } from "gatsby";
 import { getUrlWithTrailingComma } from "utils/strings";
 import favicon128 from "assets/images/favicon-128.png";
 import favicon256 from "assets/images/favicon-256.png";
@@ -29,9 +30,7 @@ import memberPcLarge from "assets/images/screenshots/member-pc-large.jpg";
 import memberPcSmall from "assets/images/screenshots/member-pc-small.jpg";
 import memberSpLarge from "assets/images/screenshots/member-sp-large.jpg";
 import memberSpSmall from "assets/images/screenshots/member-sp-small.jpg";
-import styles from "./starting.module.scss";
 import { LazyImage } from "components/atoms/LazyImage";
-import { motion } from "framer-motion";
 
 export const Starting = () => {
   return (
@@ -99,8 +98,7 @@ export const Starting = () => {
             <div className={styles.sectionItems}>
               <div className={styles.sectionItem}>
                 <LazyImage
-                  src={cdListPcSmall}
-                  srcSet={`${cdListPcLarge} 2x`}
+                  src={cdListPcLarge}
                   alt="CD List"
                   className={styles.cdsScreenshotLarge}
                 />
@@ -124,8 +122,7 @@ export const Starting = () => {
               </div>
               <div className={styles.sectionItem}>
                 <LazyImage
-                  src={cdPcSmall}
-                  srcSet={`${cdPcLarge} 2x`}
+                  src={cdPcLarge}
                   alt="CD List"
                   className={styles.cdsScreenshotLarge}
                 />
@@ -152,8 +149,7 @@ export const Starting = () => {
               </div>
               <div className={styles.sectionItem}>
                 <LazyImage
-                  src={songPcSmall}
-                  srcSet={`${songPcLarge} 2x`}
+                  src={songPcLarge}
                   alt="CD List"
                   className={styles.cdsScreenshotLarge}
                 />
@@ -213,16 +209,14 @@ export const Starting = () => {
                   </p>
                 </section>
                 <LazyImage
-                  src={memberListPcSmall}
-                  srcSet={`${memberListPcLarge} 2x`}
+                  src={memberListPcLarge}
                   alt="CD List"
                   className={styles.membersScreenshotLarge}
                 />
               </div>
               <div className={styles.sectionItem}>
                 <LazyImage
-                  src={memberSpSmall}
-                  srcSet={`${memberSpLarge} 2x`}
+                  src={memberSpLarge}
                   alt="CD List"
                   className={styles.membersScreenshotSmall}
                 />
@@ -250,8 +244,7 @@ export const Starting = () => {
                   </p>
                 </section>
                 <LazyImage
-                  src={memberPcSmall}
-                  srcSet={`${memberPcLarge} 2x`}
+                  src={memberPcLarge}
                   alt="CD List"
                   className={styles.membersScreenshotLarge}
                 />
@@ -275,7 +268,7 @@ export const Starting = () => {
             >
               Yuxiao He
             </a>
-            . Some rights resereved.
+            . Some rights reserved.
           </p>
           <p className={styles.text}>
             Member images and CD artworks ©{" "}
