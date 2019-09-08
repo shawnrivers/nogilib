@@ -107,19 +107,18 @@
 }
 
 .text-link {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
   color: $pink-1;
-  font-size: $size-body;
-  font-weight: $weight-regular;
-  padding-bottom: 1px;
+  display: inline-block;
+  padding: 1px;
+  text-decoration: underline;
+}
 
-  &:hover {
-    background-color: $pink-1;
-    border-bottom-color: $white;
-    color: $white;
-    transition: ease-in-out 0.2s;
-  }
+.subtitle-link {
+  border-bottom: $gray-2 solid 2px;
+  box-sizing: border-box;
+  color: $gray-1;
+  display: inline-block;
+  padding: 2px;
 }
 
 .cds-section {

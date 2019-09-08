@@ -89,14 +89,14 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
         <div className={styles.leftItems}>
           <NavigationItem
             type="link"
-            to={Links.Singles}
+            to="/"
             className={classNames(styles.homeText, styles.item)}
           >
             Nogizaka Lib
           </NavigationItem>
           <NavigationItem
             type="link"
-            to={Links.Singles}
+            to="/"
             label="Nogizaka Lib"
             className={classNames(styles.homeIcon, styles.item)}
           >

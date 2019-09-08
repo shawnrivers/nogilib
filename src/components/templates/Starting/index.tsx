@@ -6,7 +6,7 @@ import { Layout } from "components/atoms/Layout";
 import { Links } from "utils/constants";
 import { Message } from "components/atoms/Message";
 import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
-import { getUrlWithTrailingComma } from "utils/strings";
+import { getUrlWithTrailingComma, classNames } from "utils/strings";
 import favicon128 from "assets/images/favicon-128.png";
 import favicon256 from "assets/images/favicon-256.png";
 import favicon512 from "assets/images/favicon-512.png";
@@ -62,30 +62,58 @@ export const Starting = () => {
           <h2 className={styles.subtitle}>
             <Message text="supported languages" />
           </h2>
-          <p className={styles.languages}>
-            <Link
-              to={getUrlWithTrailingComma("/en")}
-              className={styles.textLink}
-            >
-              ENGLISH
+          <p className={classNames(styles.languages, styles.text)}>
+            <Link to={getUrlWithTrailingComma("/en")}>
+              <motion.span
+                whileHover={{
+                  backgroundColor: "#e887a3",
+                  color: "#ffffff",
+                  borderBottomColor: "#ffffff",
+                }}
+                className={styles.textLink}
+              >
+                ENGLISH
+              </motion.span>
             </Link>
-            <Link to={getUrlWithTrailingComma("/")} className={styles.textLink}>
-              日本語
+            <Link to={getUrlWithTrailingComma("/")}>
+              <motion.span
+                whileHover={{
+                  backgroundColor: "#e887a3",
+                  color: "#ffffff",
+                }}
+                className={styles.textLink}
+              >
+                日本語
+              </motion.span>
             </Link>
-            <Link
-              to={getUrlWithTrailingComma("/zh")}
-              className={styles.textLink}
-            >
-              简体中文
+            <Link to={getUrlWithTrailingComma("/zh")}>
+              <motion.span
+                whileHover={{
+                  backgroundColor: "#e887a3",
+                  color: "#ffffff",
+                  borderBottomColor: "#ffffff",
+                }}
+                className={styles.textLink}
+              >
+                简体中文
+              </motion.span>
             </Link>
           </p>
         </Layout>
       </section>
       <section className={styles.cdsSection}>
         <Layout>
-          <h2 className={styles.subtitle}>
-            <Message text="Feature - CDs & Songs" />
-          </h2>
+          <LocalizedLink to={Links.Singles}>
+            <motion.h2
+              whileHover={{
+                backgroundColor: "#595959",
+                color: "#ffffff",
+              }}
+              className={classNames(styles.subtitle, styles.subtitleLink)}
+            >
+              <Message text="Feature - Music" />
+            </motion.h2>
+          </LocalizedLink>
         </Layout>
         <div className={styles.cdsSectionContainer}>
           <Layout>
@@ -177,9 +205,17 @@ export const Starting = () => {
       </section>
       <section className={styles.membersSection}>
         <Layout>
-          <h2 className={styles.subtitle}>
-            <Message text="Feature - Members" />
-          </h2>
+          <LocalizedLink to={Links.FirstGeneration}>
+            <motion.h2
+              whileHover={{
+                backgroundColor: "#595959",
+                color: "#ffffff",
+              }}
+              className={classNames(styles.subtitle, styles.subtitleLink)}
+            >
+              <Message text="Feature - Members" />
+            </motion.h2>
+          </LocalizedLink>
         </Layout>
         <div className={styles.membersSectionContainer}>
           <Layout>
@@ -260,7 +296,15 @@ export const Starting = () => {
               rel="noopener noreferrer"
               className={styles.textLink}
             >
-              Yuxiao He
+              <motion.span
+                whileHover={{
+                  backgroundColor: "#e887a3",
+                  color: "#ffffff",
+                }}
+                className={styles.textLink}
+              >
+                Yuxiao He
+              </motion.span>
             </a>
             . Some rights reserved.
           </p>
@@ -270,9 +314,16 @@ export const Starting = () => {
               href="http://www.nogizaka46.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.textLink}
             >
-              乃木坂46LLC
+              <motion.span
+                whileHover={{
+                  backgroundColor: "#e887a3",
+                  color: "#ffffff",
+                }}
+                className={styles.textLink}
+              >
+                乃木坂46LLC
+              </motion.span>
             </a>
             .
           </p>
@@ -289,7 +340,15 @@ export const Starting = () => {
             rel="noopener noreferrer"
             className={styles.textLink}
           >
-            shawnrivers/nogizaka-lib-redesign
+            <motion.span
+              whileHover={{
+                backgroundColor: "#e887a3",
+                color: "#ffffff",
+              }}
+              className={styles.textLink}
+            >
+              shawnrivers/nogizaka-lib-redesign
+            </motion.span>
           </a>
         </Layout>
       </section>
