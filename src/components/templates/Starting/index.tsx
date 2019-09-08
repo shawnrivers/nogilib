@@ -11,25 +11,19 @@ import favicon128 from "assets/images/favicon-128.png";
 import favicon256 from "assets/images/favicon-256.png";
 import favicon512 from "assets/images/favicon-512.png";
 import cdListPcLarge from "assets/images/screenshots/cd_list-pc-large.jpg";
-import cdListPcSmall from "assets/images/screenshots/cd_list-pc-small.jpg";
 import cdListSpLarge from "assets/images/screenshots/cd_list-sp-large.jpg";
 import cdListSpSmall from "assets/images/screenshots/cd_list-sp-small.jpg";
 import cdPcLarge from "assets/images/screenshots/cd-pc-large.jpg";
-import cdPcSmall from "assets/images/screenshots/cd-pc-small.jpg";
 import cdSpLarge from "assets/images/screenshots/cd-sp-large.jpg";
 import cdSpSmall from "assets/images/screenshots/cd-sp-small.jpg";
 import songPcLarge from "assets/images/screenshots/song-pc-large.jpg";
-import songPcSmall from "assets/images/screenshots/song-pc-small.jpg";
 import songSpLarge from "assets/images/screenshots/song-sp-large.jpg";
 import songSpSmall from "assets/images/screenshots/song-sp-small.jpg";
 import memberListPcLarge from "assets/images/screenshots/member_list-pc-large.jpg";
-import memberListPcSmall from "assets/images/screenshots/member_list-pc-small.jpg";
 import memberListSpLarge from "assets/images/screenshots/member_list-sp-large.jpg";
 import memberListSpSmall from "assets/images/screenshots/member_list-sp-small.jpg";
 import memberPcLarge from "assets/images/screenshots/member-pc-large.jpg";
-import memberPcSmall from "assets/images/screenshots/member-pc-small.jpg";
 import memberSpLarge from "assets/images/screenshots/member-sp-large.jpg";
-import memberSpSmall from "assets/images/screenshots/member-sp-small.jpg";
 import { LazyImage } from "components/atoms/LazyImage";
 
 export const Starting = () => {
