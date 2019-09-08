@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://shawnrivers.github.io/nogizaka-lib-redesign/cds/singles/">
+  <a href="https://shawnrivers.github.io/nogizaka-lib-redesign/">
     <img alt="Gatsby" src="https://raw.githubusercontent.com/shawnrivers/nogizaka-lib-redesign/master/src/assets/images/favicon-512.png" width="60" />
   </a>
 </p>
@@ -7,11 +7,11 @@
   Nogizaka Lib
 </h1>
 
-_[App link](https://shawnrivers.github.io/nogizaka-lib-redesign/cds/singles/)_
+_[App link](https://shawnrivers.github.io/nogizaka-lib-redesign/)_
 
 This is a Gatsby powered web application aiming at showing the information about _[Nogizaka46](http://www.nogizaka46.com/)_ in a user-friendly way.
 
-Current supported languages: _[Japanese](https://shawnrivers.github.io/nogizaka-lib-redesign/cds/singles/)_ 🇯🇵, _[English](https://shawnrivers.github.io/nogizaka-lib-redesign/en/cds/singles/)_ 🇬🇧 and _[Chinese](https://shawnrivers.github.io/nogizaka-lib-redesign/zh/cds/singles/)_ 🇨🇳.
+Current supported languages: _[Japanese](https://shawnrivers.github.io/nogizaka-lib-redesign/)_ 🇯🇵, _[English](https://shawnrivers.github.io/nogizaka-lib-redesign/en/)_ 🇬🇧 and _[Chinese](https://shawnrivers.github.io/nogizaka-lib-redesign/zh/)_ 🇨🇳.
 
 ## 🚀 Set Up Dev Environment
 
