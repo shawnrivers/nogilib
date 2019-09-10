@@ -42,11 +42,14 @@ export const Starting = () => {
             <p className={styles.text}>
               <Message text="This is a web application aiming at showing the information about Nogizaka46 in a user-friendly way." />
             </p>
-            <motion.div whileHover={{ scale: 1.1 }} className={styles.appLink}>
-              <LocalizedLink to={Links.Singles}>
+            <LocalizedLink to={Links.Singles}>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                className={styles.appLink}
+              >
                 <Message text="go to app" />
-              </LocalizedLink>
-            </motion.div>
+              </motion.div>
+            </LocalizedLink>
           </section>
           <div className={styles.faviconLarge}>
             <img
