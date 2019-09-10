@@ -170,8 +170,7 @@ export const Member = ({
                 className={styles.profileImageContainer}
               >
                 <div className={styles.profileImageWrapper}>
-                  <LazyImage
-                    notLazy
+                  <img
                     src={profileImage.small}
                     srcSet={`${profileImage.large} 2x`}
                     alt={name}
