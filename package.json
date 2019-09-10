@@ -21,7 +21,7 @@
     "framer-motion": "^1.6.7",
     "gatsby": "^2.15.9",
     "gatsby-plugin-layout": "^1.1.6",
-    "gatsby-plugin-manifest": "^2.2.14",
+    "gatsby-plugin-manifest": "^2.2.16",
     "gatsby-plugin-react-helmet": "^3.1.7",
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
     "gatsby-plugin-resolve-src": "^2.0.0",
