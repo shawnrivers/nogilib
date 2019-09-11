@@ -51,7 +51,16 @@ module.exports = {
       resolve: "gatsby-plugin-lunr",
       options: {
         languages: [{ name: "en" }, { name: "ja" }],
-        fields: [{ name: "name", store: true }],
+        fields: [
+          { name: "name", store: true, attributes: { boost: 20 } },
+          { name: "title", store: true },
+          { name: "number", store: true },
+          { name: "key", store: true },
+          { name: "artwork", store: true },
+          { name: "profileImage", store: true },
+          { name: "nameNotations", store: true },
+          { name: "type", store: true },
+        ],
         resolvers: {
           AlbumsJson: {
             name: node => node.title,
