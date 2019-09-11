@@ -1,40 +1,10 @@
 import * as React from "react";
 import { Layout } from "components/atoms/Layout";
+import { SearchResultCard } from "components/atoms/SearchResultCard";
+import { toCdNumber } from "utils/strings";
 
-type AlbumDoc = {
-  title: string;
-  number: string;
-  artwork: {
-    large: string;
-    medium: string;
-    small: string;
-  };
-  type: "albums";
-};
-
-type SingleDoc = {
-  title: string;
-  number: string;
-  artwork: {
-    large: string;
-    medium: string;
-    small: string;
-  };
-  type: "singles";
-};
-
-type SongDoc = {
-  title: string;
-  key: string;
-  artwork: {
-    large: string;
-    medium: string;
-    small: string;
-  };
-  type: "songs";
-};
-
-type MemberDoc = {
+export type MemberResult = {
+  name: string;
   nameNotations: {
     lastName: string;
     firstName: string;
@@ -47,50 +17,129 @@ type MemberDoc = {
     large: string;
     small: string;
   };
-  type: "members";
 };
 
-type SearchDoc = {
-  id: string;
-  name: string;
-} & (AlbumDoc | SingleDoc | SongDoc | MemberDoc);
+export type SingleResult = {
+  title: string;
+  number: string;
+  artwork: {
+    large: string;
+    medium: string;
+    small: string;
+  };
+};
 
-export const Search = () => {
-  const [query, setQuery] = React.useState("");
-  const [result, setResult] = React.useState<SearchDoc[]>([]);
+export type AlbumResult = {
+  title: string;
+  number: string;
+  artwork: {
+    large: string;
+    medium: string;
+    small: string;
+  };
+};
 
-  const lunr = React.useMemo(
-    () => (window as typeof window & { __LUNR__: any }).__LUNR__.ja,
-    []
-  );
+export type SongResult = {
+  title: string;
+  key: string;
+  artwork: {
+    large: string;
+    medium: string;
+    small: string;
+  };
+};
 
-  const search = React.useCallback(
-    (event: React.FormEvent<HTMLInputElement>) => {
-      const inputQuery = event.currentTarget.value;
-      setQuery(inputQuery);
+interface SearchProps {
+  query: string;
+  search(event: React.FormEvent<HTMLInputElement>): void;
+  results: {
+    members: MemberResult[];
+    singles: SingleResult[];
+    albums: AlbumResult[];
+    songs: SongResult[];
+  };
+}
 
-      const searchResult =
-        inputQuery !== ""
-          ? lunr.index
-              .search(`*${inputQuery}*`, { extend: true })
-              .map(({ ref }: any) => lunr.store[ref])
-          : [];
-
-      setResult(searchResult);
-    },
-    [lunr]
-  );
-
+export const Search = ({ query, search, results }: SearchProps) => {
   return (
     <Layout>
       <h1>Search</h1>
       <input type="text" value={query} onChange={search} />
-      {result ? (
-        <ul>
-          {result.map(page => (
-            <li key={page.name}>{page.name}</li>
-          ))}
-        </ul>
+      {results.members.length > 0 ? (
+        <div>
+          <h2>members</h2>
+          <ul>
+            {results.members.map(result => (
+              <li key={result.name}>
+                <SearchResultCard
+                  imgSrc={result.profileImage.small}
+                  imgSrcSet={`${result.profileImage.large} 2x`}
+                  title={
+                    result.nameNotations.lastName +
+                    " " +
+                    result.nameNotations.firstName
+                  }
+                  caption={
+                    result.nameNotations.lastNameEn +
+                    " " +
+                    result.nameNotations.firstNameEn
+                  }
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+      {results.singles.length > 0 ? (
+        <div>
+          <h2>Singles</h2>
+          <ul>
+            {results.singles.map(result => (
+              <li key={result.title}>
+                <SearchResultCard
+                  imgSrc={result.artwork.small}
+                  imgSrcSet={`${result.artwork.medium} 2x, ${result.artwork.large} 3x`}
+                  title={result.title}
+                  caption={toCdNumber(result.number) + " single"}
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+      {results.albums.length > 0 ? (
+        <div>
+          <h2>Albums</h2>
+          <ul>
+            {results.albums.map(result => (
+              <li key={result.title}>
+                <SearchResultCard
+                  imgSrc={result.artwork.small}
+                  imgSrcSet={`${result.artwork.medium} 2x, ${result.artwork.large} 3x`}
+                  title={result.title}
+                  caption={toCdNumber(result.number) + " album"}
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+      {results.songs.length > 0 ? (
+        <div>
+          <h2>Songs</h2>
+          <ul>
+            {results.songs.map(result => (
+              <li key={result.title}>
+                <SearchResultCard
+                  imgSrc={result.artwork.small}
+                  imgSrcSet={`${result.artwork.medium} 2x, ${result.artwork.large} 3x`}
+                  title={result.title}
+                  caption={result.key}
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
       ) : null}
     </Layout>
   );

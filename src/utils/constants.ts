@@ -14,6 +14,13 @@ export enum Language {
   Zh = "zh",
 }
 
+export enum SearchResultType {
+  Members = "members",
+  Singles = "singles",
+  Albums = "albums",
+  Songs = "songs",
+}
+
 export const KOJIHARU = "kojimaharuna";
 
 export enum PositionType {
