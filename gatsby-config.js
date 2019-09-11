@@ -5,37 +5,37 @@ module.exports = {
   pathPrefix: "/nogizaka-lib-redesign",
   plugins: [
     {
-      resolve: `gatsby-plugin-typescript`,
+      resolve: "gatsby-plugin-typescript",
       options: {
         isTSX: true,
-        jsxPragma: `React`,
+        jsxPragma: "React",
         allExtensions: true,
       },
     },
-    `gatsby-plugin-resolve-src`,
-    `gatsby-transformer-json`,
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-resolve-src",
+    "gatsby-transformer-json",
+    "gatsby-plugin-sass",
+    "gatsby-plugin-react-helmet",
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
         path: path.join(__dirname, "src/data"),
       },
     },
     {
-      resolve: `gatsby-plugin-root-import`,
+      resolve: "gatsby-plugin-root-import",
       options: {
         src: path.join(__dirname, "src"),
       },
     },
     {
-      resolve: `gatsby-plugin-layout`,
+      resolve: "gatsby-plugin-layout",
       options: {
-        component: path.join(__dirname, `src/layouts/index.tsx`),
+        component: path.join(__dirname, "src/layouts/index.tsx"),
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-plugin-manifest",
       options: {
         name: "Nogizaka Lib",
         short_name: "Nogilib",
@@ -44,9 +44,52 @@ module.exports = {
         theme_color: "#af7dce",
         display: "standalone",
         icon: "src/assets/images/favicon-512.png",
-        crossOrigin: `use-credentials`,
+        crossOrigin: "use-credentials",
       },
     },
-    `gatsby-plugin-remove-serviceworker`,
+    {
+      resolve: "gatsby-plugin-lunr",
+      options: {
+        languages: [{ name: "en" }, { name: "ja" }],
+        fields: [{ name: "name", store: true }],
+        resolvers: {
+          AlbumsJson: {
+            name: node => node.title,
+            title: node => node.title,
+            number: node => node.number,
+            artwork: node => node.artworks[0],
+            type: () => "albums",
+          },
+          SinglesJson: {
+            name: node => node.title,
+            title: node => node.title,
+            number: node => node.number,
+            artwork: node => node.artworks[0],
+            type: () => "singles",
+          },
+          SongsJson: {
+            name: node => node.title + " " + node.key,
+            title: node => node.title,
+            key: node => node.key,
+            artwork: node => node.artwork,
+            type: () => "songs",
+          },
+          MembersJson: {
+            name: node =>
+              node.nameNotations.lastName +
+              node.nameNotations.firstName +
+              " " +
+              node.nameNotations.lastNameFurigana +
+              node.nameNotations.firstNameFurigana +
+              " " +
+              node.name,
+            nameNotations: node => node.nameNotations,
+            profileImage: node => node.profileImage,
+            type: () => "members",
+          },
+        },
+      },
+    },
+    "gatsby-plugin-remove-serviceworker",
   ],
 };
