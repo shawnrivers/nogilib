@@ -4,7 +4,7 @@ import { MemberType, Members } from "components/templates/Members";
 import { JoinedGenerationType, MembersType } from "types/responseTypes";
 
 export const query = graphql`
-  query MembersContainerQuery {
+  query MembersQuery {
     allMembersJson {
       nodes {
         name
