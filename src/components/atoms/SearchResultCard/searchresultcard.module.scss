@@ -1,0 +1,58 @@
+@import "styles/elevations.scss";
+@import "styles/colors.scss";
+@import "styles/typography.scss";
+
+.container {
+  @extend %elevation-2-normal;
+  align-items: center;
+  background-color: $white;
+  display: flex;
+  height: 120px;
+  padding: 4px;
+}
+
+.image {
+  height: 120px;
+  margin-right: 24px;
+  object-fit: cover;
+  object-position: 50% 0;
+  width: 120px;
+}
+
+.image-placeholder {
+  background-color: $white;
+  height: 120px;
+  margin-right: 24px;
+  width: 120px;
+}
+
+.text {
+  overflow: hidden;
+}
+
+.title {
+  color: $gray-1;
+  font-size: $size-sub-heading;
+  font-weight: $weight-bold;
+  line-height: 30px;
+  margin-bottom: 16px;
+  max-height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.caption {
+  color: $gray-2;
+  font-size: $size-body;
+  font-weight: $weight-light;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+  white-space: nowrap;
+
+  span:not(:last-child) {
+    margin-right: 12px;
+  }
+}
