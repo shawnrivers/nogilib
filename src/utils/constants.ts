@@ -6,6 +6,8 @@ export enum Links {
   ThirdGeneration = "/members-list/third-gen",
   FourthGeneration = "/members-list/fourth-gen",
   Graduated = "/members-list/graduated",
+  About = "/",
+  Search = "/search",
 }
 
 export enum Language {

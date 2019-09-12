@@ -23,14 +23,14 @@ export const NavigationItem = ({
 }: NavigationItemProps) => {
   if (type === "link") {
     return to ? (
-      <LocalizedLink to={to} className={className} label={label}>
+      <LocalizedLink to={to} label={label}>
         <motion.div
           whileHover={{
             backgroundColor: "rgba(89,89,89)",
             color: "#ffffff",
             fill: "#ffffff",
           }}
-          className={styles.container}
+          className={classNames(styles.container, className)}
         >
           {children}
         </motion.div>

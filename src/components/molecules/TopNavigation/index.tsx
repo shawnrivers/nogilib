@@ -5,11 +5,14 @@ import styles from "./topnavigation.module.scss";
 import { useOnClickOutside } from "utils/hooks";
 import { Language, Links } from "utils/constants";
 import { NavigationItem } from "components/atoms/NavigationItem";
-import { HomeIcon } from "components/atoms/icons/HomeIcon";
 import { LanguageOptionItem } from "components/atoms/LanguageOptionItem";
 import { LanguageIcon } from "components/atoms/icons/LanguagesIcon";
 import { classNames } from "utils/strings";
 import { Message } from "components/atoms/Message";
+import { MusicIcon } from "components/atoms/icons/MusicIcon";
+import { MoreIcon } from "components/atoms/icons/MoreIcon";
+import { MembersIcon } from "components/atoms/icons/MembersIcon";
+import { SearchIcon } from "components/atoms/icons/SearchIcon";
 
 interface LanguageItemProps {
   type: "text" | "icon";
@@ -85,31 +88,50 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
 
   return (
     <nav className={styles.container}>
-      <div className={styles.navigation}>
+      <div className={styles.navigationSmall}>
+        <NavigationItem
+          type="link"
+          to={Links.About}
+          className={styles.iconTextItem}
+        >
+          <MoreIcon className={styles.icon} />
+          <span className={styles.iconText}>
+            <Message text="more" />
+          </span>
+        </NavigationItem>
+        <NavigationItem
+          type="link"
+          to={Links.Singles}
+          className={styles.iconTextItem}
+        >
+          <MusicIcon className={styles.icon} />
+          <span className={styles.iconText}>
+            <Message text="music" />
+          </span>
+        </NavigationItem>
+        <NavigationItem
+          type="link"
+          to={Links.FirstGeneration}
+          className={styles.iconTextItem}
+        >
+          <MembersIcon className={styles.icon} />
+          <span className={styles.iconText}>
+            <Message text="members" />
+          </span>
+        </NavigationItem>
+        <NavigationItem
+          type="link"
+          to={Links.Search}
+          className={styles.iconTextItem}
+        >
+          <SearchIcon className={styles.icon} />
+          <span className={styles.iconText}>
+            <Message text="search" />
+          </span>
+        </NavigationItem>
+      </div>
+      <div className={styles.navigationLarge}>
         <div className={styles.leftItems}>
-          <NavigationItem
-            type="link"
-            to="/"
-            className={classNames(styles.homeText, styles.item)}
-          >
-            Nogizaka Lib
-          </NavigationItem>
-          <NavigationItem
-            type="link"
-            to="/"
-            label="Nogizaka Lib"
-            className={classNames(styles.homeIcon, styles.item)}
-          >
-            <HomeIcon />
-          </NavigationItem>
-          {shouldShowLanguagesButton ? (
-            <>
-              <LanguageItem type="icon" className={styles.languagesIcon} />
-              <LanguageItem type="text" className={styles.languagesText} />
-            </>
-          ) : null}
-        </div>
-        <div className={styles.rightItems}>
           <NavigationItem
             type="link"
             to={Links.Singles}
@@ -117,8 +139,26 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
           >
             <Message text="music" />
           </NavigationItem>
-          <NavigationItem type="link" to={Links.FirstGeneration}>
+          <NavigationItem
+            type="link"
+            to={Links.FirstGeneration}
+            className={styles.item}
+          >
             <Message text="members" />
+          </NavigationItem>
+          <NavigationItem type="link" to={Links.Search} className={styles.item}>
+            <Message text="search" />
+          </NavigationItem>
+        </div>
+        <div className={styles.rightItems}>
+          {shouldShowLanguagesButton ? (
+            <LanguageItem
+              type="text"
+              className={classNames(styles.languagesText, styles.item)}
+            />
+          ) : null}
+          <NavigationItem type="link" to={Links.About} className={styles.item}>
+            <Message text="about" />
           </NavigationItem>
         </div>
       </div>
