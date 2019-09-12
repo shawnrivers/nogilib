@@ -22,7 +22,9 @@
 .navigation-small {
   @extend %navigation;
   height: 64px;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 448px;
   padding: 0 24px;
   text-transform: capitalize;
 
