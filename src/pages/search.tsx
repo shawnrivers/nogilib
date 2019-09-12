@@ -86,7 +86,7 @@ export const SearchContainer = () => {
   const [isSearching, setIsSearching] = React.useState(false);
 
   const lunr = React.useMemo(
-    () => (window as typeof window & { __LUNR__: any }).__LUNR__.ja,
+    () => (typeof window !== "undefined" ? (window as any).__LUNR__.ja : null),
     []
   );
 
