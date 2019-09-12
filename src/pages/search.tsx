@@ -9,10 +9,12 @@ import {
 } from "components/templates/Search";
 import { SearchResultType } from "utils/constants";
 import { SongType } from "types/responseTypes";
+import { useScrollRestoration } from "utils/hooks";
 
 export type MemberDoc = {
   id: string;
   name: string;
+  nameKey: string;
   nameNotations: {
     lastName: string;
     firstName: string;
@@ -81,6 +83,8 @@ export type SearchDoc = AlbumDoc | SingleDoc | SongDoc | MemberDoc;
 let timeout: NodeJS.Timeout;
 
 export const SearchContainer = () => {
+  useScrollRestoration();
+
   const [query, setQuery] = React.useState("");
   const [results, setResults] = React.useState<SearchDoc[]>([]);
   const [isSearching, setIsSearching] = React.useState(false);
@@ -126,8 +130,10 @@ export const SearchContainer = () => {
         case SearchResultType.Members:
           members.push({
             name: result.name,
+            nameKey: result.nameKey,
             nameNotations: result.nameNotations,
             profileImage: result.profileImage,
+            type: result.type,
           });
           break;
         case SearchResultType.Singles:
@@ -135,6 +141,7 @@ export const SearchContainer = () => {
             title: result.title,
             number: result.number,
             artwork: result.artwork,
+            type: result.type,
           });
           break;
         case SearchResultType.Albums:
@@ -142,6 +149,7 @@ export const SearchContainer = () => {
             title: result.title,
             number: result.number,
             artwork: result.artwork,
+            type: result.type,
           });
           break;
         case SearchResultType.Songs:
@@ -152,6 +160,7 @@ export const SearchContainer = () => {
             songType: result.songType,
             single: result.single,
             album: result.album,
+            type: result.type,
           });
           break;
         default:

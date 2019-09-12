@@ -7,9 +7,11 @@ import { toCdNumber } from "utils/strings";
 import { SearchIcon } from "components/atoms/icons/SearchIcon";
 import { SongType } from "types/responseTypes";
 import { Message } from "components/atoms/Message";
+import { SearchResultType } from "utils/constants";
 
 export type MemberResult = {
   name: string;
+  nameKey: string;
   nameNotations: {
     lastName: string;
     firstName: string;
@@ -22,6 +24,7 @@ export type MemberResult = {
     large: string;
     small: string;
   };
+  type: SearchResultType.Members;
 };
 
 export type SingleResult = {
@@ -32,6 +35,7 @@ export type SingleResult = {
     medium: string;
     small: string;
   };
+  type: SearchResultType.Singles;
 };
 
 export type AlbumResult = {
@@ -42,6 +46,7 @@ export type AlbumResult = {
     medium: string;
     small: string;
   };
+  type: SearchResultType.Albums;
 };
 
 export type SongResult = {
@@ -61,6 +66,7 @@ export type SongResult = {
     number: string;
     title: string;
   };
+  type: SearchResultType.Songs;
 };
 
 interface SearchProps {
@@ -116,6 +122,7 @@ export const Search = injectIntl(
               {results.members.map(result => (
                 <li key={result.name} className={styles.resultCard}>
                   <SearchResultCard
+                    to={`/${result.type}/${result.nameKey}`}
                     imgSrc={result.profileImage.small}
                     imgSrcSet={`${result.profileImage.large} 2x`}
                     title={
@@ -141,6 +148,7 @@ export const Search = injectIntl(
               {results.singles.map(result => (
                 <li key={result.title} className={styles.resultCard}>
                   <SearchResultCard
+                    to={`/${result.type}/${result.number}`}
                     imgSrc={result.artwork.small}
                     imgSrcSet={`${result.artwork.medium} 2x, ${result.artwork.large} 3x`}
                     title={result.title}
@@ -158,6 +166,7 @@ export const Search = injectIntl(
               {results.albums.map(result => (
                 <li key={result.title} className={styles.resultCard}>
                   <SearchResultCard
+                    to={`/${result.type}/${result.number}`}
                     imgSrc={result.artwork.small}
                     imgSrcSet={`${result.artwork.medium} 2x, ${result.artwork.large} 3x`}
                     title={result.title}
@@ -175,6 +184,7 @@ export const Search = injectIntl(
               {results.songs.map(result => (
                 <li key={result.title} className={styles.resultCard}>
                   <SearchResultCard
+                    to={`/${result.type}/${result.key}`}
                     imgSrc={result.artwork.small}
                     imgSrcSet={`${result.artwork.medium} 2x, ${result.artwork.large} 3x`}
                     title={result.title}

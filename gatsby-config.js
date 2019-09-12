@@ -56,6 +56,7 @@ module.exports = {
           { name: "title", store: true },
           { name: "number", store: true },
           { name: "key", store: true },
+          { name: "nameKey", store: true },
           { name: "artwork", store: true },
           { name: "profileImage", store: true },
           { name: "nameNotations", store: true },
@@ -74,6 +75,7 @@ module.exports = {
               node.nameNotations.firstNameFurigana +
               " " +
               node.name,
+            nameKey: node => node.name,
             nameNotations: node => node.nameNotations,
             profileImage: node => node.profileImage,
             type: () => "members",
