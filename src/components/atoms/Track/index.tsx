@@ -3,9 +3,8 @@ import { injectIntl } from "react-intl";
 import { motion } from "framer-motion";
 import styles from "./track.module.scss";
 import { FocusPerformersType, SongType } from "types/responseTypes";
-import { Language } from "utils/constants";
 import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
-import { classNames } from "utils/strings";
+import { classNames, getFocusPerformersText } from "utils/strings";
 import { Message } from "components/atoms/Message";
 
 const containerVariants = {
@@ -39,31 +38,10 @@ export const Track = injectIntl(
     type,
     className,
   }: TrackProps) => {
-    const focusPerformersText = React.useMemo(() => {
-      let comma: string;
-      switch (locale) {
-        case Language.Zh:
-          comma = "、";
-          break;
-        case Language.Ja:
-          comma = "・";
-          break;
-        default:
-          comma = ", ";
-          break;
-      }
-
-      if (focusPerformers.name.length > 0) {
-        if (focusPerformers.type === FocusPerformersType.Center) {
-          return (
-            "C: " +
-            focusPerformers.name.reduce((acc, curr) => acc + comma + curr)
-          );
-        }
-        return focusPerformers.name.reduce((acc, curr) => acc + comma + curr);
-      }
-      return "";
-    }, [focusPerformers, locale]);
+    const focusPerformersText = React.useMemo(
+      () => getFocusPerformersText(focusPerformers, locale),
+      [focusPerformers, locale]
+    );
 
     return songKey !== "OVERTURE" ? (
       <motion.div
