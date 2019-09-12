@@ -1,6 +1,7 @@
 import * as React from "react";
 import styles from "./searchresultcard.module.scss";
 import { LazyImage } from "components/atoms/LazyImage";
+import { classNames } from "utils/strings";
 
 interface SearchResultCardProps {
   imgSrc: string;
@@ -8,6 +9,7 @@ interface SearchResultCardProps {
   title: string;
   caption: string;
   secondCaption?: string;
+  className?: string;
 }
 
 export const SearchResultCard = ({
@@ -16,17 +18,19 @@ export const SearchResultCard = ({
   title,
   caption,
   secondCaption,
+  className,
 }: SearchResultCardProps) => {
   return (
-    <div className={styles.container}>
-      <LazyImage
-        notLazy
-        src={imgSrc}
-        srcSet={imgSrcSet}
-        alt={title}
-        className={styles.image}
-        placeholder={<div className={styles.imagePlaceholder} />}
-      />
+    <div className={classNames(styles.container, className)}>
+      <div className={styles.imagePlaceholder}>
+        <LazyImage
+          notLazy
+          src={imgSrc}
+          srcSet={imgSrcSet}
+          alt={title}
+          className={styles.image}
+        />
+      </div>
       <div className={styles.text}>
         <h3 className={styles.title}>{title}</h3>
         <p className={styles.caption}>

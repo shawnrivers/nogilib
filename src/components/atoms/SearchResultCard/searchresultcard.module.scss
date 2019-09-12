@@ -7,23 +7,22 @@
   align-items: center;
   background-color: $white;
   display: flex;
-  height: 120px;
+  height: 100px;
   padding: 4px;
 }
 
 .image {
-  height: 120px;
-  margin-right: 24px;
+  height: 100px;
   object-fit: cover;
   object-position: 50% 0;
-  width: 120px;
+  width: 100px;
 }
 
 .image-placeholder {
   background-color: $white;
-  height: 120px;
+  height: 100px;
   margin-right: 24px;
-  width: 120px;
+  width: 100px;
 }
 
 .text {
@@ -32,21 +31,21 @@
 
 .title {
   color: $gray-1;
-  font-size: $size-sub-heading;
+  font-size: $size-sub-heading-3;
   font-weight: $weight-bold;
-  line-height: 30px;
-  margin-bottom: 16px;
-  max-height: 60px;
+  line-height: 20px;
+  margin-bottom: 8px;
+  max-height: 40px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .caption {
   color: $gray-2;
-  font-size: $size-body;
+  font-size: $size-caption;
   font-weight: $weight-light;
-  height: 20px;
-  line-height: 20px;
+  height: 16px;
+  line-height: 16px;
   overflow: hidden;
   text-overflow: ellipsis;
   text-transform: capitalize;
