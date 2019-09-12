@@ -1,7 +1,12 @@
 import * as React from "react";
+import { injectIntl } from "react-intl";
+import styles from "./search.module.scss";
 import { Layout } from "components/atoms/Layout";
 import { SearchResultCard } from "components/atoms/SearchResultCard";
 import { toCdNumber } from "utils/strings";
+import { SearchIcon } from "components/atoms/icons/SearchIcon";
+import { SongType } from "types/responseTypes";
+import { Message } from "components/atoms/Message";
 
 export type MemberResult = {
   name: string;
@@ -47,6 +52,15 @@ export type SongResult = {
     medium: string;
     small: string;
   };
+  songType: SongType;
+  single: {
+    number: string;
+    title: string;
+  };
+  album: {
+    number: string;
+    title: string;
+  };
 };
 
 interface SearchProps {
@@ -58,89 +72,127 @@ interface SearchProps {
     albums: AlbumResult[];
     songs: SongResult[];
   };
+  isSearching: boolean;
+  intl: any;
 }
 
-export const Search = ({ query, search, results }: SearchProps) => {
-  return (
-    <Layout>
-      <h1>Search</h1>
-      <input type="text" value={query} onChange={search} />
-      {results.members.length > 0 ? (
-        <div>
-          <h2>members</h2>
-          <ul>
-            {results.members.map(result => (
-              <li key={result.name}>
-                <SearchResultCard
-                  imgSrc={result.profileImage.small}
-                  imgSrcSet={`${result.profileImage.large} 2x`}
-                  title={
-                    result.nameNotations.lastName +
-                    " " +
-                    result.nameNotations.firstName
-                  }
-                  caption={
-                    result.nameNotations.lastNameEn +
-                    " " +
-                    result.nameNotations.firstNameEn
-                  }
-                />
-              </li>
-            ))}
-          </ul>
+export const Search = injectIntl(
+  ({ query, search, results, isSearching, intl }: SearchProps) => {
+    const hasNoResult = React.useMemo(
+      () =>
+        results.members.length +
+          results.singles.length +
+          results.albums.length +
+          results.songs.length ===
+          0 &&
+        query !== "" &&
+        !isSearching,
+      [results, query, isSearching]
+    );
+
+    return (
+      <Layout>
+        <div className={styles.search}>
+          <SearchIcon className={styles.searchIcon} />
+          <input
+            type="text"
+            value={query}
+            onChange={search}
+            placeholder={intl.formatMessage({
+              id: "Song title, member name, etc.",
+            })}
+            className={styles.input}
+          />
         </div>
-      ) : null}
-      {results.singles.length > 0 ? (
-        <div>
-          <h2>Singles</h2>
-          <ul>
-            {results.singles.map(result => (
-              <li key={result.title}>
-                <SearchResultCard
-                  imgSrc={result.artwork.small}
-                  imgSrcSet={`${result.artwork.medium} 2x, ${result.artwork.large} 3x`}
-                  title={result.title}
-                  caption={toCdNumber(result.number) + " single"}
-                />
-              </li>
-            ))}
-          </ul>
-        </div>
-      ) : null}
-      {results.albums.length > 0 ? (
-        <div>
-          <h2>Albums</h2>
-          <ul>
-            {results.albums.map(result => (
-              <li key={result.title}>
-                <SearchResultCard
-                  imgSrc={result.artwork.small}
-                  imgSrcSet={`${result.artwork.medium} 2x, ${result.artwork.large} 3x`}
-                  title={result.title}
-                  caption={toCdNumber(result.number) + " album"}
-                />
-              </li>
-            ))}
-          </ul>
-        </div>
-      ) : null}
-      {results.songs.length > 0 ? (
-        <div>
-          <h2>Songs</h2>
-          <ul>
-            {results.songs.map(result => (
-              <li key={result.title}>
-                <SearchResultCard
-                  imgSrc={result.artwork.small}
-                  imgSrcSet={`${result.artwork.medium} 2x, ${result.artwork.large} 3x`}
-                  title={result.title}
-                  caption={result.key}
-                />
-              </li>
-            ))}
-          </ul>
-        </div>
-      ) : null}
-    </Layout>
-  );
-};
+        {hasNoResult ? (
+          <p className={styles.noResult}>
+            <Message text="no result" />
+          </p>
+        ) : null}
+        {results.members.length > 0 ? (
+          <div className={styles.category}>
+            <h2 className={styles.categoryTitle}>members</h2>
+            <ul className={styles.resultCardList}>
+              {results.members.map(result => (
+                <li key={result.name} className={styles.resultCard}>
+                  <SearchResultCard
+                    imgSrc={result.profileImage.small}
+                    imgSrcSet={`${result.profileImage.large} 2x`}
+                    title={
+                      result.nameNotations.lastName +
+                      " " +
+                      result.nameNotations.firstName
+                    }
+                    caption={
+                      result.nameNotations.lastNameEn +
+                      " " +
+                      result.nameNotations.firstNameEn
+                    }
+                  />
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
+        {results.singles.length > 0 ? (
+          <div className={styles.category}>
+            <h2 className={styles.categoryTitle}>Singles</h2>
+            <ul className={styles.resultCardList}>
+              {results.singles.map(result => (
+                <li key={result.title} className={styles.resultCard}>
+                  <SearchResultCard
+                    imgSrc={result.artwork.small}
+                    imgSrcSet={`${result.artwork.medium} 2x, ${result.artwork.large} 3x`}
+                    title={result.title}
+                    caption={toCdNumber(result.number) + " single"}
+                  />
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
+        {results.albums.length > 0 ? (
+          <div className={styles.category}>
+            <h2 className={styles.categoryTitle}>Albums</h2>
+            <ul className={styles.resultCardList}>
+              {results.albums.map(result => (
+                <li key={result.title} className={styles.resultCard}>
+                  <SearchResultCard
+                    imgSrc={result.artwork.small}
+                    imgSrcSet={`${result.artwork.medium} 2x, ${result.artwork.large} 3x`}
+                    title={result.title}
+                    caption={toCdNumber(result.number) + " album"}
+                  />
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
+        {results.songs.length > 0 ? (
+          <div className={styles.category}>
+            <h2 className={styles.categoryTitle}>Songs</h2>
+            <ul className={styles.resultCardList}>
+              {results.songs.map(result => (
+                <li key={result.title} className={styles.resultCard}>
+                  <SearchResultCard
+                    imgSrc={result.artwork.small}
+                    imgSrcSet={`${result.artwork.medium} 2x, ${result.artwork.large} 3x`}
+                    title={result.title}
+                    caption={`#${intl.formatMessage({
+                      id: result.songType,
+                    })}`}
+                    secondCaption={
+                      result.single.number !== ""
+                        ? `#${toCdNumber(result.single.number)} single`
+                        : `#${toCdNumber(result.album.number)} album`
+                    }
+                  />
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
+      </Layout>
+    );
+  }
+);

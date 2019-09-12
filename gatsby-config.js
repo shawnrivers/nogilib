@@ -59,9 +59,25 @@ module.exports = {
           { name: "artwork", store: true },
           { name: "profileImage", store: true },
           { name: "nameNotations", store: true },
+          { name: "songType", store: true },
+          { name: "single", store: true },
+          { name: "album", store: true },
           { name: "type", store: true },
         ],
         resolvers: {
+          MembersJson: {
+            name: node =>
+              node.nameNotations.lastName +
+              node.nameNotations.firstName +
+              " " +
+              node.nameNotations.lastNameFurigana +
+              node.nameNotations.firstNameFurigana +
+              " " +
+              node.name,
+            nameNotations: node => node.nameNotations,
+            profileImage: node => node.profileImage,
+            type: () => "members",
+          },
           AlbumsJson: {
             name: node => node.title,
             title: node => node.title,
@@ -81,20 +97,10 @@ module.exports = {
             title: node => node.title,
             key: node => node.key,
             artwork: node => node.artwork,
+            songType: node => node.type,
+            single: node => node.single,
+            album: node => node.albums[0],
             type: () => "songs",
-          },
-          MembersJson: {
-            name: node =>
-              node.nameNotations.lastName +
-              node.nameNotations.firstName +
-              " " +
-              node.nameNotations.lastNameFurigana +
-              node.nameNotations.firstNameFurigana +
-              " " +
-              node.name,
-            nameNotations: node => node.nameNotations,
-            profileImage: node => node.profileImage,
-            type: () => "members",
           },
         },
       },

@@ -8,6 +8,7 @@ import {
   SongResult,
 } from "components/templates/Search";
 import { SearchResultType } from "utils/constants";
+import { SongType } from "types/responseTypes";
 
 export type MemberDoc = {
   id: string;
@@ -63,6 +64,15 @@ export type SongDoc = {
     medium: string;
     small: string;
   };
+  songType: SongType;
+  single: {
+    number: string;
+    title: string;
+  };
+  album: {
+    number: string;
+    title: string;
+  };
   type: SearchResultType.Songs;
 };
 
@@ -73,6 +83,7 @@ let timeout: NodeJS.Timeout;
 export const SearchContainer = () => {
   const [query, setQuery] = React.useState("");
   const [results, setResults] = React.useState<SearchDoc[]>([]);
+  const [isSearching, setIsSearching] = React.useState(false);
 
   const lunr = React.useMemo(
     () => (window as typeof window & { __LUNR__: any }).__LUNR__.ja,
@@ -83,6 +94,8 @@ export const SearchContainer = () => {
     (event: React.FormEvent<HTMLInputElement>) => {
       const inputQuery = event.currentTarget.value;
       setQuery(inputQuery);
+
+      setIsSearching(true);
 
       clearTimeout(timeout);
 
@@ -95,6 +108,8 @@ export const SearchContainer = () => {
             : [];
 
         setResults(searchResult);
+
+        setIsSearching(false);
       }, 1000);
     },
     [lunr]
@@ -134,6 +149,9 @@ export const SearchContainer = () => {
             title: result.title,
             key: result.key,
             artwork: result.artwork,
+            songType: result.songType,
+            single: result.single,
+            album: result.album,
           });
           break;
         default:
@@ -150,7 +168,14 @@ export const SearchContainer = () => {
     forceCheck();
   }, [results]);
 
-  return <Search query={query} search={search} results={convertedResults} />;
+  return (
+    <Search
+      query={query}
+      search={search}
+      results={convertedResults}
+      isSearching={isSearching}
+    />
+  );
 };
 
 export default () => <SearchContainer />;

@@ -1,0 +1,62 @@
+@import "styles/colors.scss";
+@import "styles/typography.scss";
+
+.search {
+  align-items: center;
+  display: flex;
+  margin: auto;
+  margin-bottom: 32px;
+  max-width: 300px;
+  widows: 100%;
+}
+
+.input {
+  border: none;
+  border-bottom: 2px solid $gray-3;
+  color: $gray-1;
+  font-size: $size-body;
+  font-weight: $weight-regular;
+  width: 100%;
+
+  &::placeholder {
+    color: $gray-3;
+  }
+}
+
+.search-icon {
+  margin-right: 4px;
+}
+
+.no-result {
+  color: $gray-1;
+  font-size: $size-sub-heading-3;
+  font-weight: $weight-bold;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.category {
+  margin-bottom: 32px;
+}
+
+.category-title {
+  color: $gray-1;
+  font-size: $size-sub-heading-2;
+  font-weight: $weight-bold;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+
+.result-card-list {
+  display: grid;
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+
+  @media (min-width: 700px) and (max-width: 1031px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1032px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
