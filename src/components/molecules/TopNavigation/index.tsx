@@ -83,11 +83,20 @@ interface TopNavigationProps {
 export const TopNavigation = ({ location }: TopNavigationProps) => {
   const [isSideBarOpened, toggleSideBar] = React.useState(false);
 
-  const shouldShowLanguagesButton = React.useMemo(() => {
-    const { pathname } = location;
+  const isInMusicPage = React.useMemo(
+    () => location.pathname.includes("/cds/"),
+    [location.pathname]
+  );
 
-    return pathname.includes("/cds/") || pathname.includes("/members-list/");
-  }, [location]);
+  const isInMembersPage = React.useMemo(
+    () => location.pathname.includes("/members-list/"),
+    [location.pathname]
+  );
+
+  const isInSearchPage = React.useMemo(
+    () => location.pathname.includes("/search/"),
+    [location.pathname]
+  );
 
   return (
     <>
@@ -109,7 +118,11 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
           <NavigationItem
             type="link"
             to={Links.Singles}
-            className={styles.iconTextItem}
+            className={
+              isInMusicPage
+                ? styles.iconTextItemHighlighted
+                : styles.iconTextItem
+            }
           >
             <MusicIcon className={styles.icon} />
             <span className={styles.iconText}>
@@ -119,7 +132,11 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
           <NavigationItem
             type="link"
             to={Links.FirstGeneration}
-            className={styles.iconTextItem}
+            className={
+              isInMembersPage
+                ? styles.iconTextItemHighlighted
+                : styles.iconTextItem
+            }
           >
             <MembersIcon className={styles.icon} />
             <span className={styles.iconText}>
@@ -129,7 +146,11 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
           <NavigationItem
             type="link"
             to={Links.Search}
-            className={styles.iconTextItem}
+            className={
+              isInSearchPage
+                ? styles.iconTextItemHighlighted
+                : styles.iconTextItem
+            }
           >
             <SearchIcon className={styles.icon} />
             <span className={styles.iconText}>
@@ -162,7 +183,7 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
             </NavigationItem>
           </div>
           <div className={styles.rightItems}>
-            {shouldShowLanguagesButton ? (
+            {isInMusicPage || isInMembersPage ? (
               <LanguageItem
                 type="text"
                 className={classNames(styles.languagesText, styles.item)}
