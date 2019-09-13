@@ -1,5 +1,15 @@
 @import "styles/colors.scss";
 @import "styles/typography.scss";
+@import "styles/spacing.scss";
+
+.container {
+  margin-bottom: 12px 24px $page-margin-bottom-without-navigation-bar;
+  padding-bottom: 0;
+
+  @media (max-width: 599px) {
+    margin-bottom: $page-margin-bottom-with-navigation-bar;
+  }
+}
 
 .search {
   align-items: center;

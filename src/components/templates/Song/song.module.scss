@@ -1,6 +1,15 @@
 @import "styles/colors.scss";
 @import "styles/typography.scss";
 @import "styles/elevations.scss";
+@import "styles/spacing.scss";
+
+.page {
+  padding-bottom: 12px 24px $page-margin-bottom-without-navigation-bar;
+
+  @media (max-width: 599px) {
+    padding-bottom: $page-margin-bottom-with-navigation-bar;
+  }
+}
 
 .background {
   @extend %bg-2;
@@ -84,7 +93,6 @@
 }
 
 .content {
-  margin-bottom: 64px;
   width: 100%;
 
   .section:not(:last-child) {

@@ -181,7 +181,7 @@ export const Song = ({
 
   return (
     <div className={styles.background}>
-      <Layout>
+      <Layout className={styles.page}>
         <motion.div whileHover={{ x: -7, scale: 1.5 }} className={styles.link}>
           <button
             onClick={() => {

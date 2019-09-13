@@ -1,6 +1,7 @@
 @import "styles/typography.scss";
 @import "styles/colors.scss";
 @import "styles/elevations.scss";
+@import "styles/spacing.scss";
 
 %section {
   text-align: left;
@@ -11,7 +12,11 @@
 }
 
 .container {
-  margin-bottom: 64px;
+  margin-bottom: $page-margin-bottom-without-navigation-bar;
+
+  @media (max-width: 599px) {
+    margin-bottom: $page-margin-bottom-with-navigation-bar;
+  }
 }
 
 .title-section {

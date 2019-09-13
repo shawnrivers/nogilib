@@ -43,7 +43,7 @@ export const Search = injectIntl(
     );
 
     return (
-      <Layout>
+      <Layout className={styles.container}>
         <div className={styles.search}>
           <SearchIcon className={styles.searchIcon} />
           <div className={styles.inputContainer}>

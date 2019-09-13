@@ -1,5 +1,6 @@
 @import "styles/typography.scss";
 @import "styles/colors.scss";
+@import "styles/spacing.scss";
 
 .grid {
   align-items: center;
@@ -9,10 +10,15 @@
   justify-items: center;
   left: 0;
   margin: auto;
+  margin-bottom: $page-margin-bottom-without-navigation-bar;
   max-width: 1168px;
   padding: 24px;
   position: absolute;
   right: 0;
+
+  @media (max-width: 599px) {
+    margin-bottom: $page-margin-bottom-with-navigation-bar;
+  }
 }
 
 .artwork {
