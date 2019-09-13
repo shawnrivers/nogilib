@@ -1,15 +1,11 @@
 import * as React from "react";
 import { forceCheck } from "react-lazyload";
-import {
-  Search,
-  MemberResult,
-  SingleResult,
-  AlbumResult,
-  SongResult,
-} from "components/templates/Search";
+import { injectIntl } from "react-intl";
+import { Search, SearchResult } from "components/templates/Search";
 import { SearchResultType } from "utils/constants";
 import { SongType } from "types/responseTypes";
 import { useScrollRestoration } from "utils/hooks";
+import { toCdNumber } from "utils/strings";
 
 export type MemberDoc = {
   id: string;
@@ -82,7 +78,7 @@ export type SearchDoc = AlbumDoc | SingleDoc | SongDoc | MemberDoc;
 
 let timeout: NodeJS.Timeout;
 
-export const SearchContainer = () => {
+export const SearchContainer = injectIntl(({ intl }: { intl: any }) => {
   useScrollRestoration();
 
   const [query, setQuery] = React.useState("");
@@ -120,47 +116,53 @@ export const SearchContainer = () => {
   );
 
   const convertedResults = React.useMemo(() => {
-    let members: MemberResult[] = [];
-    let singles: SingleResult[] = [];
-    let albums: AlbumResult[] = [];
-    let songs: SongResult[] = [];
+    let members: SearchResult[] = [];
+    let singles: SearchResult[] = [];
+    let albums: SearchResult[] = [];
+    let songs: SearchResult[] = [];
 
     for (const result of results) {
       switch (result.type) {
         case SearchResultType.Members:
           members.push({
-            name: result.name,
-            nameKey: result.nameKey,
-            nameNotations: result.nameNotations,
-            profileImage: result.profileImage,
-            type: result.type,
+            to: `/${result.type}/${result.nameKey}`,
+            imgSrc: result.profileImage.small,
+            imgSrcSet: `${result.profileImage.large} 2x`,
+            heading: `${result.nameNotations.lastName} ${result.nameNotations.firstName}`,
+            caption: `${result.nameNotations.lastNameEn} ${result.nameNotations.firstNameEn}`,
           });
           break;
         case SearchResultType.Singles:
           singles.push({
-            title: result.title,
-            number: result.number,
-            artwork: result.artwork,
-            type: result.type,
+            to: `/${result.type}/${result.number}`,
+            imgSrc: result.artwork.small,
+            imgSrcSet: `${result.artwork.medium} 2x, ${result.artwork.large} 3x`,
+            heading: result.title,
+            caption: `${toCdNumber(result.number)} single`,
           });
           break;
         case SearchResultType.Albums:
           albums.push({
-            title: result.title,
-            number: result.number,
-            artwork: result.artwork,
-            type: result.type,
+            to: `/${result.type}/${result.number}`,
+            imgSrc: result.artwork.small,
+            imgSrcSet: `${result.artwork.medium} 2x, ${result.artwork.large} 3x`,
+            heading: result.title,
+            caption: `${toCdNumber(result.number)} album`,
           });
           break;
         case SearchResultType.Songs:
           songs.push({
-            title: result.title,
-            key: result.key,
-            artwork: result.artwork,
-            songType: result.songType,
-            single: result.single,
-            album: result.album,
-            type: result.type,
+            to: `/${result.type}/${result.key}`,
+            imgSrc: result.artwork.small,
+            imgSrcSet: `${result.artwork.medium} 2x, ${result.artwork.large} 3x`,
+            heading: result.title,
+            caption: `#${intl.formatMessage({
+              id: result.songType,
+            })}`,
+            secondCaption:
+              result.single.number !== ""
+                ? `#${toCdNumber(result.single.number)} single`
+                : `#${toCdNumber(result.album.number)} album`,
           });
           break;
         default:
@@ -169,7 +171,7 @@ export const SearchContainer = () => {
     }
 
     return { members, singles, albums, songs };
-  }, [results]);
+  }, [results, intl]);
 
   console.log({ query, results });
 
@@ -185,6 +187,6 @@ export const SearchContainer = () => {
       isSearching={isSearching}
     />
   );
-};
+});
 
 export default () => <SearchContainer />;

@@ -41,27 +41,5 @@
 }
 
 .category {
-  margin-bottom: 32px;
-}
-
-.category-title {
-  color: $gray-1;
-  font-size: $size-sub-heading-2;
-  font-weight: $weight-bold;
-  margin-bottom: 12px;
-  text-transform: capitalize;
-}
-
-.result-card-list {
-  display: grid;
-  grid-column-gap: 12px;
-  grid-row-gap: 12px;
-
-  @media (min-width: 700px) and (max-width: 1031px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (min-width: 1032px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  margin-bottom: 40px;
 }
