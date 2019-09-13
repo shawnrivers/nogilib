@@ -100,15 +100,17 @@ export const Search = injectIntl(
       <Layout>
         <div className={styles.search}>
           <SearchIcon className={styles.searchIcon} />
-          <input
-            type="text"
-            value={query}
-            onChange={search}
-            placeholder={intl.formatMessage({
-              id: "Song title, member name, etc.",
-            })}
-            className={styles.input}
-          />
+          <div className={styles.inputContainer}>
+            <input
+              type="text"
+              value={query}
+              onChange={search}
+              placeholder={intl.formatMessage({
+                id: "Song title, member name, etc.",
+              })}
+              className={styles.input}
+            />
+          </div>
         </div>
         {hasNoResult ? (
           <p className={styles.noResult}>

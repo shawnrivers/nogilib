@@ -10,9 +10,13 @@
   widows: 100%;
 }
 
+.input-container {
+  border-bottom: 2px solid $gray-3;
+  width: 100%;
+}
+
 .input {
   border: none;
-  border-bottom: 2px solid $gray-3;
   color: $gray-1;
   font-size: $size-body;
   font-weight: $weight-regular;
