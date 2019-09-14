@@ -90,4 +90,4 @@ Current supported languages: _[Japanese](https://shawnrivers.github.io/nogizaka-
 
 ## Data
 
-Profile images and CD artworks © 乃木坂 LLC.
+Profile images and CD artworks © [乃木46LLC](https://www.nogizaka46.com/).
