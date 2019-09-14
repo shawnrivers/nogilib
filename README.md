@@ -18,21 +18,21 @@ Current supported languages: _[Japanese](https://shawnrivers.github.io/nogizaka-
 1.  **Install necessary packages.**
 
     ```sh
-    npm install
+    yarn install
     ```
 
 2.  **Start the dev server.**
 
     ```sh
-    npm run dev
+    yarn dev
     ```
     Your site is now running at `http://localhost:8000`.
 
 3.  **Build the product.**
 
     ```sh
-    npm run build
-    npm run serve
+    yarn build
+    yarn serve
     ```
 
     Your build result is now running at `http://localhost:9000`.
