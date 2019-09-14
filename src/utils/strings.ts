@@ -1,7 +1,7 @@
 import { Language } from "utils/constants";
 import { FocusPerformersType } from "types/responseTypes";
 
-export const getUrlWithTrailingComma = (url: string): string =>
+export const getUrlWithTrailingSlash = (url: string): string =>
   url.slice(-1) !== "/" ? url + "/" : url;
 
 export const classNames = (

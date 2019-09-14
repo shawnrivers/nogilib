@@ -6,7 +6,7 @@ import { Layout } from "components/atoms/Layout";
 import { Links } from "utils/constants";
 import { Message } from "components/atoms/Message";
 import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
-import { getUrlWithTrailingComma, classNames } from "utils/strings";
+import { getUrlWithTrailingSlash, classNames } from "utils/strings";
 import favicon128 from "assets/images/favicon-128.png";
 import favicon256 from "assets/images/favicon-256.png";
 import favicon512 from "assets/images/favicon-512.png";
@@ -66,7 +66,7 @@ export const Starting = () => {
             <Message text="supported languages" />
           </h2>
           <p className={classNames(styles.languages, styles.text)}>
-            <Link to={getUrlWithTrailingComma("/en")}>
+            <Link to={getUrlWithTrailingSlash("/en")}>
               <motion.span
                 whileHover={{
                   backgroundColor: "#e887a3",
@@ -78,7 +78,7 @@ export const Starting = () => {
                 ENGLISH
               </motion.span>
             </Link>
-            <Link to={getUrlWithTrailingComma("/")}>
+            <Link to={getUrlWithTrailingSlash("/")}>
               <motion.span
                 whileHover={{
                   backgroundColor: "#e887a3",
@@ -89,7 +89,7 @@ export const Starting = () => {
                 日本語
               </motion.span>
             </Link>
-            <Link to={getUrlWithTrailingComma("/zh")}>
+            <Link to={getUrlWithTrailingSlash("/zh")}>
               <motion.span
                 whileHover={{
                   backgroundColor: "#e887a3",

@@ -173,8 +173,6 @@ export const SearchContainer = injectIntl(({ intl }: { intl: any }) => {
     return { members, singles, albums, songs };
   }, [results, intl]);
 
-  console.log({ query, results });
-
   React.useEffect(() => {
     forceCheck();
   }, [results]);

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import styles from "./languageoptionitem.module.scss";
-import { getUrlWithTrailingComma } from "utils/strings";
+import { getUrlWithTrailingSlash } from "utils/strings";
 
 interface LanguageOptionItemProps {
   to: string;
@@ -22,7 +22,7 @@ export const LanguageOptionItem = ({
 
   return (
     <li {...liProps}>
-      <Link to={getUrlWithTrailingComma(to)}>
+      <Link to={getUrlWithTrailingSlash(to)}>
         <span className={styles.text}>{children}</span>
       </Link>
     </li>

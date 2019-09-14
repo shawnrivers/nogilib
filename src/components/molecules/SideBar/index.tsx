@@ -5,7 +5,7 @@ import styles from "./sidebar.module.scss";
 import { CloseIcon } from "components/atoms/icons/CloseIcon";
 import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
 import { Links } from "utils/constants";
-import { getUrlWithTrailingComma } from "utils/strings";
+import { getUrlWithTrailingSlash } from "utils/strings";
 import { Message } from "components/atoms/Message";
 
 const backgroundFade = {
@@ -76,7 +76,7 @@ export const SideBar = ({ open, handleClose }: SideBarProps) => {
         <div className={styles.languages}>
           <span className={styles.language}>
             <Link
-              to={getUrlWithTrailingComma("/en" + Links.Singles)}
+              to={getUrlWithTrailingSlash("/en" + Links.Singles)}
               onClick={() => handleClose()}
             >
               EN
@@ -84,7 +84,7 @@ export const SideBar = ({ open, handleClose }: SideBarProps) => {
           </span>
           <span className={styles.language}>
             <Link
-              to={getUrlWithTrailingComma(Links.Singles)}
+              to={getUrlWithTrailingSlash(Links.Singles)}
               onClick={() => handleClose()}
             >
               日
@@ -92,7 +92,7 @@ export const SideBar = ({ open, handleClose }: SideBarProps) => {
           </span>
           <span className={styles.language}>
             <Link
-              to={getUrlWithTrailingComma("/zh" + Links.Singles)}
+              to={getUrlWithTrailingSlash("/zh" + Links.Singles)}
               onClick={() => handleClose()}
             >
               简
