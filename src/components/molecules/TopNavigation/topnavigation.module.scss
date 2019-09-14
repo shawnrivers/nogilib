@@ -28,7 +28,6 @@
   @extend %navigation;
   bottom: -1px;
   box-shadow: 0px -6px 9px rgba(142, 142, 142, 0.2);
-  height: 64px;
   justify-content: space-between;
   margin: auto;
   padding: 0 24px;
@@ -71,13 +70,18 @@
   font-size: $size-caption;
 }
 
-.icon-text-item {
+%icon-text-item-template {
   align-items: center;
-  color: $gray-1;
   display: flex;
-  fill: $gray-1;
   flex-direction: column;
+  height: 64px !important;
   justify-content: center;
+}
+
+.icon-text-item {
+  @extend %icon-text-item-template;
+  color: $gray-1;
+  fill: $gray-1;
 
   .icon-text {
     font-weight: $weight-regular;
@@ -85,12 +89,9 @@
 }
 
 .icon-text-item-highlighted {
-  align-items: center;
+  @extend %icon-text-item-template;
   color: $pink-1;
-  display: flex;
   fill: $pink-1;
-  flex-direction: column;
-  justify-content: center;
 
   .icon-text {
     font-weight: $weight-bold;
