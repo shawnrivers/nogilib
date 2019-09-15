@@ -183,12 +183,10 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
             </NavigationItem>
           </div>
           <div className={styles.rightItems}>
-            {isInMusicPage || isInMembersPage ? (
-              <LanguageItem
-                type="text"
-                className={classNames(styles.languagesText, styles.item)}
-              />
-            ) : null}
+            <LanguageItem
+              type="text"
+              className={classNames(styles.languagesText, styles.item)}
+            />
             <NavigationItem
               type="link"
               to={Links.About}
