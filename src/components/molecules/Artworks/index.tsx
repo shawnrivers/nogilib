@@ -17,23 +17,19 @@ interface ArtworksProps {
 export const Artworks = ({ artworks, title, className }: ArtworksProps) => {
   const [artworkIndex, setArtworkIndex] = React.useState(0);
 
-  const handleClickNextArtwork = React.useCallback(() => {
-    if (artworkIndex < artworks.length - 1) {
-      setArtworkIndex(artworkIndex + 1);
-    }
-  }, [artworks, artworkIndex]);
-
-  const handleClickPreviousArtwork = React.useCallback(() => {
-    if (artworkIndex > 0) {
-      setArtworkIndex(artworkIndex - 1);
-    }
-  }, [artworkIndex]);
-
-  const handleClickImage = React.useCallback(() => {
+  const handleClickNext = React.useCallback(() => {
     if (artworkIndex < artworks.length - 1) {
       setArtworkIndex(artworkIndex + 1);
     } else {
       setArtworkIndex(0);
+    }
+  }, [artworks, artworkIndex]);
+
+  const handleClickPrevious = React.useCallback(() => {
+    if (artworkIndex > 0) {
+      setArtworkIndex(artworkIndex - 1);
+    } else {
+      setArtworkIndex(artworks.length - 1);
     }
   }, [artworks, artworkIndex]);
 
@@ -42,34 +38,31 @@ export const Artworks = ({ artworks, title, className }: ArtworksProps) => {
       <div className={styles.artwork}>
         <motion.button
           whileHover={{ scale: 2, x: -8 }}
-          onClick={handleClickPreviousArtwork}
+          onClick={handleClickPrevious}
           aria-label="Previous Artwork"
         >
           <ArrowLeftIcon className={styles.arrow} />
         </motion.button>
         <motion.div whileHover={{ scale: 1.07 }} className={styles.images}>
           {artworks.map((artwork, index) => (
-            <motion.div
+            <motion.img
               key={index}
               animate={
                 artworkIndex === index
                   ? { opacity: 1, scale: 1 }
                   : { opacity: 0, scale: 0.5 }
               }
-              onClick={handleClickImage}
-            >
-              <img
-                src={artwork.medium}
-                srcSet={`${artwork.large} 1.5x`}
-                alt={title}
-                className={styles.image}
-              />
-            </motion.div>
+              onClick={handleClickNext}
+              src={artwork.medium}
+              srcSet={`${artwork.large} 1.5x`}
+              alt={title}
+              className={styles.image}
+            />
           ))}
         </motion.div>
         <motion.button
           whileHover={{ scale: 2, x: 8 }}
-          onClick={handleClickNextArtwork}
+          onClick={handleClickNext}
           aria-label="Next Artwork"
         >
           <ArrowRightIcon className={styles.arrow} />
