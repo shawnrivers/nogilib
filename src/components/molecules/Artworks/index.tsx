@@ -50,7 +50,7 @@ export const Artworks = ({ artworks, title, className }: ArtworksProps) => {
               animate={
                 artworkIndex === index
                   ? { opacity: 1, scale: 1 }
-                  : { opacity: 0, scale: 0.5 }
+                  : { opacity: 0, scale: 0 }
               }
               onClick={handleClickNext}
               src={artwork.medium}
