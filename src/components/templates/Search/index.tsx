@@ -1,5 +1,6 @@
 import * as React from "react";
 import { injectIntl } from "react-intl";
+import { motion } from "framer-motion";
 import styles from "./search.module.scss";
 import { Layout } from "components/atoms/Layout";
 import { SearchIcon } from "components/atoms/icons/SearchIcon";
@@ -42,21 +43,30 @@ export const Search = injectIntl(
       [results, query, isSearching]
     );
 
+    const [isInputFocused, setInputFocus] = React.useState(false);
+
     return (
       <Layout className={styles.container}>
         <div className={styles.search}>
           <SearchIcon className={styles.searchIcon} />
-          <div className={styles.inputContainer}>
+          <motion.div
+            animate={{
+              borderBottomColor: isInputFocused ? "#595959" : "#d6d6d6",
+            }}
+            className={styles.inputContainer}
+          >
             <input
               type="text"
               value={query}
               onChange={search}
+              onFocus={() => setInputFocus(true)}
+              onBlur={() => setInputFocus(false)}
               placeholder={intl.formatMessage({
                 id: "Song title, member name, etc.",
               })}
               className={styles.input}
             />
-          </div>
+          </motion.div>
         </div>
         {hasNoResult ? (
           <p className={styles.noResult}>

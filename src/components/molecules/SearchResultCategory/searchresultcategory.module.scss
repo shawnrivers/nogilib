@@ -19,7 +19,12 @@
   color: $gray-1;
   font-size: $size-caption;
   font-weight: $weight-light;
+  text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .result-card-list {

@@ -1,8 +1,16 @@
 import * as React from "react";
+import { motion } from "framer-motion";
 import styles from "./searchresultcard.module.scss";
 import { LazyImage } from "components/atoms/LazyImage";
 import { classNames } from "utils/strings";
 import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
+
+const backgroundHover = {
+  hover: {
+    backgroundColor: "#757575",
+    scale: 1.05,
+  },
+};
 
 interface SearchResultCardProps {
   to: string;
@@ -23,9 +31,17 @@ export const SearchResultCard = ({
   secondCaption,
   className,
 }: SearchResultCardProps) => {
+  const [isHovered, setHover] = React.useState(false);
+
   return (
     <LocalizedLink to={to}>
-      <div className={classNames(styles.container, className)}>
+      <motion.div
+        whileHover="hover"
+        variants={backgroundHover}
+        onHoverStart={() => setHover(true)}
+        onHoverEnd={() => setHover(false)}
+        className={classNames(styles.container, className)}
+      >
         <div className={styles.imagePlaceholder}>
           <LazyImage
             notLazy
@@ -36,13 +52,21 @@ export const SearchResultCard = ({
           />
         </div>
         <div className={styles.text}>
-          <h3 className={styles.title}>{title}</h3>
-          <p className={styles.caption}>
+          <motion.h3
+            animate={{ color: isHovered ? "#ffffff" : "#595959" }}
+            className={styles.title}
+          >
+            {title}
+          </motion.h3>
+          <motion.p
+            animate={{ color: isHovered ? "#ffffff" : "#757575" }}
+            className={styles.caption}
+          >
             <span>{caption}</span>
             {secondCaption ? <span>{secondCaption}</span> : null}
-          </p>
+          </motion.p>
         </div>
-      </div>
+      </motion.div>
     </LocalizedLink>
   );
 };
