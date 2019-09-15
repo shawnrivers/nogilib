@@ -125,13 +125,15 @@ const AppLayout = ({
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="title" content="Nogizaka Lib" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:creator" content="@yuxiao_he" />
         <meta
           name="description"
           content="Nogizaka Lib Redesign is a Gatsby powered web application aiming at showing the information about Nogizaka46 in a user-friendly way."
         />
         <meta
           name="url"
-          content="https://shawnrivers.github.io/nogizaka-lib-redesign/cds/singles"
+          content="https://shawnrivers.github.io/nogizaka-lib-redesign/"
         />
         <meta name="og:title" content="Nogizaka Lib" />
         <meta
