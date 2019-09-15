@@ -129,7 +129,7 @@ const AppLayout = ({
         <meta name="twitter:creator" content="@yuxiao_he" />
         <meta
           name="description"
-          content="Nogizaka Lib Redesign is a Gatsby powered web application aiming at showing the information about Nogizaka46 in a user-friendly way."
+          content="Nogizaka Lib is a Gatsby powered web application aiming at showing the information about Nogizaka46 in a user-friendly way."
         />
         <meta
           name="url"
@@ -138,7 +138,7 @@ const AppLayout = ({
         <meta name="og:title" content="Nogizaka Lib" />
         <meta
           name="og:description"
-          content="Nogizaka Lib Redesign is a Gatsby powered web application aiming at showing the information about Nogizaka46 in a user-friendly way."
+          content="Nogizaka Lib is a Gatsby powered web application aiming at showing the information about Nogizaka46 in a user-friendly way."
         />
         <meta
           property="og:image"
