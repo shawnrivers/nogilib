@@ -110,7 +110,7 @@ export const SearchContainer = injectIntl(({ intl }: { intl: any }) => {
         setResults(searchResult);
 
         setIsSearching(false);
-      }, 1000);
+      }, 300);
     },
     [lunr]
   );
