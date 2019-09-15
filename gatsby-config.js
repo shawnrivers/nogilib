@@ -41,7 +41,7 @@ module.exports = {
         short_name: "Nogilib",
         start_url: "/nogizaka-lib-redesign/cds/singles/",
         background_color: "#ffffff",
-        theme_color: "#af7dce",
+        theme_color: "#e887a3",
         display: "standalone",
         icon: "src/assets/images/favicon-512.png",
         crossOrigin: "use-credentials",
