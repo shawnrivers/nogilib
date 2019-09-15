@@ -17,8 +17,6 @@ interface PageTabProps {
 }
 
 export const PageTab = ({ items, selectedItem, className }: PageTabProps) => {
-  console.log({ items, selectedItem });
-
   return (
     <Layout className={classNames(styles.layout, className)}>
       <div className={styles.container}>
