@@ -62,6 +62,14 @@
 }
 
 .item {
+  background-color: $white;
+  color: $gray-1;
+  margin-right: 12px;
+}
+
+.item-highlighted {
+  background-color: $gray-1 !important;
+  color: $white !important;
   margin-right: 12px;
 }
 

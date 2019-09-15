@@ -163,21 +163,21 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
             <NavigationItem
               type="link"
               to={Links.Singles}
-              className={styles.item}
+              className={isInMusicPage ? styles.itemHighlighted : styles.item}
             >
               <Message text="music" />
             </NavigationItem>
             <NavigationItem
               type="link"
               to={Links.FirstGeneration}
-              className={styles.item}
+              className={isInMembersPage ? styles.itemHighlighted : styles.item}
             >
               <Message text="members" />
             </NavigationItem>
             <NavigationItem
               type="link"
               to={Links.Search}
-              className={styles.item}
+              className={isInSearchPage ? styles.itemHighlighted : styles.item}
             >
               <Message text="search" />
             </NavigationItem>
