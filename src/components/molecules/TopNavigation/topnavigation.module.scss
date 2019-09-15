@@ -33,7 +33,6 @@
   padding: 0 24px;
   padding-bottom: env(safe-area-inset-bottom);
   position: fixed;
-  text-transform: capitalize;
   width: 100%;
   z-index: 10;
 
@@ -68,6 +67,7 @@
 
 .icon-text {
   font-size: $size-caption;
+  text-transform: capitalize;
 }
 
 %icon-text-item-template {
