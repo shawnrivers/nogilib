@@ -17,7 +17,7 @@ interface PageTabProps {
 }
 
 export const PageTab = ({ items, selectedItem, className }: PageTabProps) => {
-  const [currentItem, setCurrentItem] = React.useState(selectedItem);
+  console.log({ items, selectedItem });
 
   return (
     <Layout className={classNames(styles.layout, className)}>
@@ -27,14 +27,11 @@ export const PageTab = ({ items, selectedItem, className }: PageTabProps) => {
             <div
               className={classNames(
                 styles.item,
-                item.page === currentItem ? styles.active : styles.inactive
+                item.page === selectedItem ? styles.active : styles.inactive
               )}
               key={item.page}
             >
-              <LocalizedLink
-                to={item.link}
-                handleClick={() => setCurrentItem(item.page)}
-              >
+              <LocalizedLink to={item.link}>
                 <Message text={item.page} />
               </LocalizedLink>
             </div>

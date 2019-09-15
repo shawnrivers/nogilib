@@ -79,7 +79,10 @@ const AppLayout = ({
         ? pageContext.currentTab
         : CdType.Singles;
 
-    return <PageTab items={items} selectedItem={selectedItem} />;
+    return {
+      items,
+      selectedItem,
+    };
   }, [pageContext]);
 
   const membersPageTabs = React.useMemo(() => {
@@ -111,7 +114,10 @@ const AppLayout = ({
         ? pageContext.currentTab
         : MembersType.FirstGeneration;
 
-    return <PageTab items={items} selectedItem={selectedItem} />;
+    return {
+      items,
+      selectedItem,
+    };
   }, [pageContext]);
 
   return (
@@ -145,8 +151,18 @@ const AppLayout = ({
             locale={locale}
             location={location as WindowLocation}
           />
-          {isCdsPage ? cdsPageTabs : null}
-          {isMembersPage ? membersPageTabs : null}
+          {isCdsPage ? (
+            <PageTab
+              items={cdsPageTabs.items}
+              selectedItem={cdsPageTabs.selectedItem}
+            />
+          ) : null}
+          {isMembersPage ? (
+            <PageTab
+              items={membersPageTabs.items}
+              selectedItem={membersPageTabs.selectedItem}
+            />
+          ) : null}
           <motion.main
             key={pathName}
             initial="hidden"
