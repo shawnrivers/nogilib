@@ -100,6 +100,7 @@
   "supported languages": "supported languages",
   "Feature - Music": "Feature - Music",
   "Feature - Members": "Feature - Members",
+  "Feature - Search": "Feature - Search",
   "CD List": "CD List",
   "CD List page shows released a grid of CD cards (singles and albums).": "CD List page shows released a grid of CD cards (singles and albums).",
   "By tapping/clicking on any CD card, it will navigate to the corresponding CD page.": "By tapping/clicking on any CD card, it will navigate to the corresponding CD page.",
@@ -122,6 +123,8 @@
   "Position History shows the records of members positions in each single.": "Position History shows the records of members positions in each single.",
   "Position Counter shows how many times she has been in each position.": "Position Counter shows how many times she has been in each position.",
   "Gallery shows the member’s profile images from her first single to the latest one.": "Gallery shows the member’s profile images from her first single to the latest one.",
+  "By typing CD/song title or member name in the top input area, you can search for CDs and members.": "By typing CD/song title or member name in the top input area, you can search for CDs and members.",
+  "The search results will be displayed below the input area.": "The search results will be displayed below the input area.",
   "copyright": "copyright",
   "source code": "source code"
 }

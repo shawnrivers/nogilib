@@ -24,6 +24,10 @@ import memberListSpLarge from "assets/images/screenshots/member_list-sp-large.jp
 import memberListSpSmall from "assets/images/screenshots/member_list-sp-small.jpg";
 import memberPcLarge from "assets/images/screenshots/member-pc-large.jpg";
 import memberSpLarge from "assets/images/screenshots/member-sp-large.jpg";
+import memberSpSmall from "assets/images/screenshots/member-sp-small.jpg";
+import searchPcLarge from "assets/images/screenshots/search-pc-large.jpg";
+import searchSpLarge from "assets/images/screenshots/search-sp-large.jpg";
+import searchSpSmall from "assets/images/screenshots/search-sp-small.jpg";
 import { LazyImage } from "components/atoms/LazyImage";
 
 export const Starting = () => {
@@ -148,13 +152,13 @@ export const Starting = () => {
               <div className={styles.sectionItem}>
                 <LazyImage
                   src={cdPcLarge}
-                  alt="CD List"
+                  alt="CD"
                   className={styles.cdsScreenshotLarge}
                 />
                 <LazyImage
                   src={cdSpSmall}
                   srcSet={`${cdSpLarge} 2x`}
-                  alt="CD List"
+                  alt="CD"
                   className={styles.cdsScreenshotSmall}
                 />
                 <section className={styles.sectionItemText}>
@@ -175,13 +179,13 @@ export const Starting = () => {
               <div className={styles.sectionItem}>
                 <LazyImage
                   src={songPcLarge}
-                  alt="CD List"
+                  alt="Song"
                   className={styles.cdsScreenshotLarge}
                 />
                 <LazyImage
                   src={songSpSmall}
                   srcSet={`${songSpLarge} 2x`}
-                  alt="CD List"
+                  alt="Song"
                   className={styles.cdsScreenshotSmall}
                 />
                 <section className={styles.sectionItemText}>
@@ -227,7 +231,7 @@ export const Starting = () => {
                 <LazyImage
                   src={memberListSpSmall}
                   srcSet={`${memberListSpLarge} 2x`}
-                  alt="CD List"
+                  alt="Member List"
                   className={styles.membersScreenshotSmall}
                 />
                 <section className={styles.sectionItemText}>
@@ -243,14 +247,15 @@ export const Starting = () => {
                 </section>
                 <LazyImage
                   src={memberListPcLarge}
-                  alt="CD List"
+                  alt="Member List"
                   className={styles.membersScreenshotLarge}
                 />
               </div>
               <div className={styles.sectionItem}>
                 <LazyImage
                   src={memberSpLarge}
-                  alt="CD List"
+                  srcSet={`${memberSpSmall} 2x`}
+                  alt="Member"
                   className={styles.membersScreenshotSmall}
                 />
                 <section className={styles.sectionItemText}>
@@ -278,9 +283,54 @@ export const Starting = () => {
                 </section>
                 <LazyImage
                   src={memberPcLarge}
-                  alt="CD List"
+                  alt="Member"
                   className={styles.membersScreenshotLarge}
                 />
+              </div>
+            </div>
+          </Layout>
+        </div>
+      </section>
+      <section className={styles.searchSection}>
+        <Layout>
+          <LocalizedLink to={Links.Search}>
+            <motion.h2
+              whileHover={{
+                backgroundColor: "#595959",
+                color: "#ffffff",
+              }}
+              className={classNames(styles.subtitle, styles.subtitleLink)}
+            >
+              <Message text="Feature - Search" />
+            </motion.h2>
+          </LocalizedLink>
+        </Layout>
+        <div className={styles.searchSectionContainer}>
+          <Layout>
+            <div className={styles.sectionItems}>
+              <div className={styles.sectionItem}>
+                <LazyImage
+                  src={searchPcLarge}
+                  alt="Search"
+                  className={styles.searchScreenshotLarge}
+                />
+                <LazyImage
+                  src={searchSpSmall}
+                  srcSet={`${searchSpLarge} 2x`}
+                  alt="Search"
+                  className={styles.searchScreenshotSmall}
+                />
+                <section className={styles.sectionItemTextNoBg}>
+                  <h3>
+                    <Message text="search" />
+                  </h3>
+                  <p>
+                    <Message text="By typing CD/song title or member name in the top input area, you can search for CDs and members." />
+                  </p>
+                  <p>
+                    <Message text="The search results will be displayed below the input area." />
+                  </p>
+                </section>
               </div>
             </div>
           </Layout>

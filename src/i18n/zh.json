@@ -99,6 +99,7 @@
   "supported languages": "支持语言",
   "Feature - Music": "功能：音乐",
   "Feature - Members": "功能：成员",
+  "Feature - Search": "功能：搜索",
   "CD List": "CD 列表",
   "CD List page shows released a grid of CD cards (singles and albums).": "CD 列表界面会显示出至今为止已经发布的所有 CD（单曲和专辑）卡片的网格列表。",
   "By tapping/clicking on any CD card, it will navigate to the corresponding CD page.": "轻触或点击 CD 卡片会移动到相应的 CD 列表界面。",
@@ -121,6 +122,8 @@
   "Position History shows the records of members positions in each single.": "站位记录会表示出成员加入至今的单曲标题曲的站位记录。",
   "Position Counter shows how many times she has been in each position.": "站位次数会表示出成员经历过的站位的次数。",
   "Gallery shows the member’s profile images from her first single to the latest one.": "官方照片为成员加入至今的官方照片的一览。",
+  "By typing CD/song title or member name in the top input area, you can search for CDs and members.": "在画面上方的输入区域中输入 CD 或歌曲的标题，或者成员的名字。",
+  "The search results will be displayed below the input area.": "搜索结果会在输入区域的下方显示出来。",
   "copyright": "版权",
   "source code": "源代码"
 }

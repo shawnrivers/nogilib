@@ -100,6 +100,7 @@
   "supported languages": "サポート言語",
   "Feature - Music": "機能：音楽",
   "Feature - Members": "機能：メンバー",
+  "Feature - Search": "機能：検索",
   "CD List": "CD リスト",
   "CD List page shows released a grid of CD cards (singles and albums).": "CD リストページは CD（シングルとアルバム）カードのグリッドを表示する。",
   "By tapping/clicking on any CD card, it will navigate to the corresponding CD page.": "任意の CD カードをタップ・クリックすると、それと対応する CD ページに遷移できる。",
@@ -122,6 +123,8 @@
   "Position History shows the records of members positions in each single.": "ポジション履歴では、加入から今までのシングルの表題曲の立ち位置が表示される。",
   "Position Counter shows how many times she has been in each position.": "ポジション回数では、上記のそれぞれの立ち位置にいた回数かが集計されて表示される。",
   "Gallery shows the member’s profile images from her first single to the latest one.": "アーティスト写真では、メンバーの今までのシングルごとのアーティスト写真が表示される。",
+  "By typing CD/song title or member name in the top input area, you can search for CDs and members.": "画面上部の入力フォームに、検索したい CD や楽曲のタイトル、またはメンバーの名前を入力する。",
+  "The search results will be displayed below the input area.": "検索結果は入力フォームの下部に表示される。",
   "copyright": "著作権",
   "source code": "ソースコード"
 }
