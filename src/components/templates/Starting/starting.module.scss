@@ -236,21 +236,30 @@
   }
 }
 
-.cds-screenshot-large,
-.search-screenshot-large {
+.cds-screenshot-large {
   @extend %screenshot-large;
   margin-right: 24px;
 }
 
 .cds-screenshot-small,
-.members-screenshot-small,
-.search-screenshot-small {
+.members-screenshot-small {
   @extend %screenshot-small;
 }
 
 .members-screenshot-large {
   @extend %screenshot-large;
   margin-left: 24px;
+}
+
+.search-screenshot-large {
+  @extend %screenshot-large;
+  border-color: $gray-3;
+  margin-right: 24px;
+}
+
+.search-screenshot-small {
+  @extend %screenshot-small;
+  border-color: $gray-3;
 }
 
 .members-section {

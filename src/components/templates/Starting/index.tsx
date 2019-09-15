@@ -2,6 +2,7 @@ import * as React from "react";
 import { Link } from "gatsby";
 import { motion } from "framer-motion";
 import styles from "./starting.module.scss";
+import cdListPc from "assets/images/screenshots/cd_list-pc.jpg";
 import { Layout } from "components/atoms/Layout";
 import { Links } from "utils/constants";
 import { Message } from "components/atoms/Message";
@@ -10,22 +11,21 @@ import { getUrlWithTrailingSlash, classNames } from "utils/strings";
 import favicon128 from "assets/images/favicon-128.png";
 import favicon256 from "assets/images/favicon-256.png";
 import favicon512 from "assets/images/favicon-512.png";
-import cdListPcLarge from "assets/images/screenshots/cd_list-pc-large.jpg";
 import cdListSpLarge from "assets/images/screenshots/cd_list-sp-large.jpg";
 import cdListSpSmall from "assets/images/screenshots/cd_list-sp-small.jpg";
-import cdPcLarge from "assets/images/screenshots/cd-pc-large.jpg";
+import cdPc from "assets/images/screenshots/cd-pc.jpg";
 import cdSpLarge from "assets/images/screenshots/cd-sp-large.jpg";
 import cdSpSmall from "assets/images/screenshots/cd-sp-small.jpg";
-import songPcLarge from "assets/images/screenshots/song-pc-large.jpg";
+import songPc from "assets/images/screenshots/song-pc.jpg";
 import songSpLarge from "assets/images/screenshots/song-sp-large.jpg";
 import songSpSmall from "assets/images/screenshots/song-sp-small.jpg";
-import memberListPcLarge from "assets/images/screenshots/member_list-pc-large.jpg";
+import memberListPc from "assets/images/screenshots/member_list-pc.jpg";
 import memberListSpLarge from "assets/images/screenshots/member_list-sp-large.jpg";
 import memberListSpSmall from "assets/images/screenshots/member_list-sp-small.jpg";
-import memberPcLarge from "assets/images/screenshots/member-pc-large.jpg";
+import memberPc from "assets/images/screenshots/member-pc.jpg";
 import memberSpLarge from "assets/images/screenshots/member-sp-large.jpg";
 import memberSpSmall from "assets/images/screenshots/member-sp-small.jpg";
-import searchPcLarge from "assets/images/screenshots/search-pc-large.jpg";
+import searchPc from "assets/images/screenshots/search-pc.jpg";
 import searchSpLarge from "assets/images/screenshots/search-sp-large.jpg";
 import searchSpSmall from "assets/images/screenshots/search-sp-small.jpg";
 import { LazyImage } from "components/atoms/LazyImage";
@@ -127,7 +127,7 @@ export const Starting = () => {
             <div className={styles.sectionItems}>
               <div className={styles.sectionItem}>
                 <LazyImage
-                  src={cdListPcLarge}
+                  src={cdListPc}
                   alt="CD List"
                   className={styles.cdsScreenshotLarge}
                 />
@@ -151,7 +151,7 @@ export const Starting = () => {
               </div>
               <div className={styles.sectionItem}>
                 <LazyImage
-                  src={cdPcLarge}
+                  src={cdPc}
                   alt="CD"
                   className={styles.cdsScreenshotLarge}
                 />
@@ -178,7 +178,7 @@ export const Starting = () => {
               </div>
               <div className={styles.sectionItem}>
                 <LazyImage
-                  src={songPcLarge}
+                  src={songPc}
                   alt="Song"
                   className={styles.cdsScreenshotLarge}
                 />
@@ -246,7 +246,7 @@ export const Starting = () => {
                   </p>
                 </section>
                 <LazyImage
-                  src={memberListPcLarge}
+                  src={memberListPc}
                   alt="Member List"
                   className={styles.membersScreenshotLarge}
                 />
@@ -282,7 +282,7 @@ export const Starting = () => {
                   </p>
                 </section>
                 <LazyImage
-                  src={memberPcLarge}
+                  src={memberPc}
                   alt="Member"
                   className={styles.membersScreenshotLarge}
                 />
@@ -310,7 +310,7 @@ export const Starting = () => {
             <div className={styles.sectionItems}>
               <div className={styles.sectionItem}>
                 <LazyImage
-                  src={searchPcLarge}
+                  src={searchPc}
                   alt="Search"
                   className={styles.searchScreenshotLarge}
                 />
