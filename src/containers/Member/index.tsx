@@ -174,6 +174,7 @@ const MemberContainer = ({ data: { membersJson } }: MemberData) => {
 
   const gallery = React.useMemo(() => {
     const list = membersJson.singleImages
+      .slice()
       .reverse()
       .filter(image => image.large !== "");
 
