@@ -122,12 +122,16 @@
     "origin": "埼玉県",
     "sites": [
       {
-        "title": "Nogizaka46",
-        "url": "https://www.nogizaka46.com/member/detail/akimotomanatsu.php"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/manatsu.akimoto/"
       },
       {
         "title": "755",
         "url": "https://7gogo.jp/akimoto-manatsu"
+      },
+      {
+        "title": "Profile",
+        "url": "https://www.nogizaka46.com/member/detail/akimotomanatsu.php"
       }
     ],
     "photoAlbums": [
@@ -380,12 +384,16 @@
     "origin": "Düsseldorf, Germany",
     "sites": [
       {
-        "title": "Nogizaka46",
-        "url": "https://www.nogizaka46.com/member/detail/ikutaerika.php"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/erika.ikuta/"
       },
       {
         "title": "755",
         "url": "https://7gogo.jp/ikuta-erika"
+      },
+      {
+        "title": "Profile",
+        "url": "https://www.nogizaka46.com/member/detail/ikutaerika.php"
       }
     ],
     "photoAlbums": [
@@ -652,10 +660,6 @@
         "url": "https://www.instagram.com/karin___ito/"
       },
       {
-        "title": "Nogizaka46",
-        "url": "https://www.nogizaka46.com/member/detail/itoukarin.php"
-      },
-      {
         "title": "755",
         "url": "https://7gogo.jp/itou-karin"
       }
@@ -903,12 +907,16 @@
     "origin": "神奈川県",
     "sites": [
       {
-        "title": "Nogizaka46",
-        "url": "https://www.nogizaka46.com/member/detail/itoujunna.php"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/junna.itou/"
       },
       {
         "title": "755",
         "url": "https://7gogo.jp/itou-junna"
+      },
+      {
+        "title": "Profile",
+        "url": "https://www.nogizaka46.com/member/detail/itoujunna.php"
       }
     ],
     "photoAlbums": [],
@@ -1150,7 +1158,11 @@
     "origin": "沖縄県",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/riria.itou/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/itouriria.php"
       }
     ],
@@ -1388,12 +1400,16 @@
     "origin": "埼玉県",
     "sites": [
       {
-        "title": "Nogizaka46",
-        "url": "https://www.nogizaka46.com/member/detail/inouesayuri.php"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/sayuri.inoue/"
       },
       {
         "title": "755",
         "url": "https://7gogo.jp/inoue-sayuri"
+      },
+      {
+        "title": "Profile",
+        "url": "https://www.nogizaka46.com/member/detail/inouesayuri.php"
       }
     ],
     "photoAlbums": [
@@ -1646,7 +1662,11 @@
     "origin": "東京都",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/renka.iwamoto/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/iwamotorenka.php"
       }
     ],
@@ -1884,7 +1904,11 @@
     "origin": "神奈川県",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/minami.umezawa/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/umezawaminami.php"
       }
     ],
@@ -2391,7 +2415,11 @@
     "origin": "鹿児島県",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/momoko.oozono/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/oozonomomoko.php"
       }
     ],
@@ -2634,12 +2662,16 @@
     "origin": "北海道",
     "sites": [
       {
-        "title": "Nogizaka46",
-        "url": "https://www.nogizaka46.com/member/detail/kitanohinako.php"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/hinako.kitano/"
       },
       {
         "title": "755",
         "url": "https://7gogo.jp/kitano-hinako"
+      },
+      {
+        "title": "Profile",
+        "url": "https://www.nogizaka46.com/member/detail/kitanohinako.php"
       }
     ],
     "photoAlbums": [
@@ -2888,7 +2920,11 @@
     "origin": "宮城県",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/shiori.kubo/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/kuboshiori.php"
       }
     ],
@@ -3131,12 +3167,16 @@
     "origin": "東京都",
     "sites": [
       {
-        "title": "Nogizaka46",
-        "url": "https://www.nogizaka46.com/member/detail/saitouasuka.php"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/asuka.saito/"
       },
       {
         "title": "755",
         "url": "https://7gogo.jp/saito-asuka"
+      },
+      {
+        "title": "Profile",
+        "url": "https://www.nogizaka46.com/member/detail/saitouasuka.php"
       }
     ],
     "photoAlbums": [
@@ -3389,12 +3429,12 @@
         "url": "https://www.instagram.com/yuuri_3ito/"
       },
       {
-        "title": "Nogizaka46",
-        "url": "https://www.nogizaka46.com/member/detail/saitouyuuri.php"
-      },
-      {
         "title": "755",
         "url": "https://7gogo.jp/MM1u8Yp3Dv6C"
+      },
+      {
+        "title": "Profile",
+        "url": "https://www.nogizaka46.com/member/detail/saitouyuuri.php"
       }
     ],
     "photoAlbums": [
@@ -3647,7 +3687,11 @@
     "origin": "東京都",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/tamami.sakaguchi/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/sakaguchitamami.php"
       }
     ],
@@ -3890,12 +3934,16 @@
     "origin": "神奈川県",
     "sites": [
       {
-        "title": "Nogizaka46",
-        "url": "https://www.nogizaka46.com/member/detail/sakuraireika.php"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/reika.sakurai/"
       },
       {
         "title": "755",
         "url": "https://7gogo.jp/sakurai-reika"
+      },
+      {
+        "title": "Profile",
+        "url": "https://www.nogizaka46.com/member/detail/sakuraireika.php"
       }
     ],
     "photoAlbums": [
@@ -4152,7 +4200,11 @@
     "origin": "埼玉県",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/kotoko.sasaki/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/sasakikotoko.php"
       }
     ],
@@ -4395,7 +4447,11 @@
     "origin": "愛知県",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/kaede.satou/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/satoukaede.php"
       }
     ],
@@ -4633,12 +4689,16 @@
     "origin": "群馬県",
     "sites": [
       {
-        "title": "Nogizaka46",
-        "url": "https://www.nogizaka46.com/member/detail/shiraishimai.php"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/mai.shiraishi/"
       },
       {
         "title": "755",
         "url": "https://7gogo.jp/shiraishi-mai"
+      },
+      {
+        "title": "Profile",
+        "url": "https://www.nogizaka46.com/member/detail/shiraishimai.php"
       }
     ],
     "photoAlbums": [
@@ -4907,12 +4967,16 @@
     "origin": "埼玉県",
     "sites": [
       {
-        "title": "Nogizaka46",
-        "url": "https://www.nogizaka46.com/member/detail/shinuchimai.php"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/mai.shinuchi/"
       },
       {
         "title": "755",
         "url": "https://7gogo.jp/shinuchi-mai"
+      },
+      {
+        "title": "Profile",
+        "url": "https://www.nogizaka46.com/member/detail/shinuchimai.php"
       }
     ],
     "photoAlbums": [
@@ -5161,12 +5225,16 @@
     "origin": "秋田県",
     "sites": [
       {
-        "title": "Nogizaka46",
-        "url": "https://www.nogizaka46.com/member/detail/suzukiayane.php"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/ayane.suzuki/"
       },
       {
         "title": "755",
         "url": "https://7gogo.jp/suzuki-ayane"
+      },
+      {
+        "title": "Profile",
+        "url": "https://www.nogizaka46.com/member/detail/suzukiayane.php"
       }
     ],
     "photoAlbums": [],
@@ -5408,12 +5476,16 @@
     "origin": "千葉県",
     "sites": [
       {
-        "title": "Nogizaka46",
-        "url": "https://www.nogizaka46.com/member/detail/takayamakazumi.php"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/kazumi.takayama/"
       },
       {
         "title": "755",
         "url": "https://7gogo.jp/takayama-kazumi"
+      },
+      {
+        "title": "Profile",
+        "url": "https://www.nogizaka46.com/member/detail/takayamakazumi.php"
       }
     ],
     "photoAlbums": [
@@ -5676,7 +5748,11 @@
     "origin": "東京都",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/ranze.terada/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/teradaranze.php"
       }
     ],
@@ -5923,12 +5999,16 @@
     "origin": "埼玉県",
     "sites": [
       {
-        "title": "Nogizaka46",
-        "url": "https://www.nogizaka46.com/member/detail/nakadakana.php"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/kana.nakada/"
       },
       {
         "title": "755",
         "url": "https://7gogo.jp/nakada-kana"
+      },
+      {
+        "title": "Profile",
+        "url": "https://www.nogizaka46.com/member/detail/nakadakana.php"
       }
     ],
     "photoAlbums": [],
@@ -6174,7 +6254,11 @@
     "origin": "東京都",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/reno.nakamura/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/nakamurareno.php"
       }
     ],
@@ -6686,12 +6770,16 @@
     "origin": "東京都",
     "sites": [
       {
-        "title": "Nogizaka46",
-        "url": "https://www.nogizaka46.com/member/detail/higuchihina.php"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/hina.higuchi/"
       },
       {
         "title": "755",
         "url": "https://7gogo.jp/higuchi-hina"
+      },
+      {
+        "title": "Profile",
+        "url": "https://www.nogizaka46.com/member/detail/higuchihina.php"
       }
     ],
     "photoAlbums": [],
@@ -6928,12 +7016,16 @@
     "origin": "千葉県",
     "sites": [
       {
-        "title": "Nogizaka46",
-        "url": "https://www.nogizaka46.com/member/detail/hoshinominami.php"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/minami.hoshino/"
       },
       {
         "title": "755",
         "url": "https://7gogo.jp/hoshino-minami"
+      },
+      {
+        "title": "Profile",
+        "url": "https://www.nogizaka46.com/member/detail/hoshinominami.php"
       }
     ],
     "photoAlbums": [
@@ -7182,12 +7274,16 @@
     "origin": "岐阜県",
     "sites": [
       {
-        "title": "Nogizaka46",
-        "url": "https://www.nogizaka46.com/member/detail/horimiona.php"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/miona.hori/"
       },
       {
         "title": "755",
         "url": "https://7gogo.jp/hori-miona"
+      },
+      {
+        "title": "Profile",
+        "url": "https://www.nogizaka46.com/member/detail/horimiona.php"
       }
     ],
     "photoAlbums": [
@@ -7440,8 +7536,8 @@
     "origin": "大阪府",
     "sites": [
       {
-        "title": "Nogizaka46",
-        "url": "https://www.nogizaka46.com/member/detail/matsumurasayuri.php"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/sayuri.matsumura/"
       },
       {
         "title": "Instagram",
@@ -7450,6 +7546,10 @@
       {
         "title": "755",
         "url": "https://7gogo.jp/matsumura-sayuri"
+      },
+      {
+        "title": "Profile",
+        "url": "https://www.nogizaka46.com/member/detail/matsumurasayuri.php"
       }
     ],
     "photoAlbums": [
@@ -7710,7 +7810,11 @@
     "origin": "東京都",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/hazuki.mukai/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/mukaihazuki.php"
       }
     ],
@@ -7948,12 +8052,16 @@
     "origin": "東京都",
     "sites": [
       {
-        "title": "Nogizaka46",
-        "url": "https://www.nogizaka46.com/member/detail/yamazakirena.php"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/rena.yamazaki/"
       },
       {
         "title": "755",
         "url": "https://7gogo.jp/yamazaki-rena"
+      },
+      {
+        "title": "Profile",
+        "url": "https://www.nogizaka46.com/member/detail/yamazakirena.php"
       }
     ],
     "photoAlbums": [],
@@ -8190,7 +8298,11 @@
     "origin": "東京都",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/mizuki.yamashita/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/yamashitamizuki.php"
       }
     ],
@@ -8437,7 +8549,11 @@
     "origin": "大分県",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/ayanochristie.yoshida/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/yoshidaayanochristie.php"
       }
     ],
@@ -8675,7 +8791,11 @@
     "origin": "福岡県",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/yuuki.yoda/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/yodayuuki.php"
       }
     ],
@@ -8925,12 +9045,16 @@
     "origin": "東京都",
     "sites": [
       {
-        "title": "Nogizaka46",
-        "url": "https://www.nogizaka46.com/member/detail/watanabemiria.php"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/miria.watanabe/"
       },
       {
         "title": "755",
         "url": "https://7gogo.jp/watanabe-miria"
+      },
+      {
+        "title": "Profile",
+        "url": "https://www.nogizaka46.com/member/detail/watanabemiria.php"
       }
     ],
     "photoAlbums": [],
@@ -9172,12 +9296,16 @@
     "origin": "広島県",
     "sites": [
       {
-        "title": "Nogizaka46",
-        "url": "https://www.nogizaka46.com/member/detail/wadamaaya.php"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/maaya.wada/"
       },
       {
         "title": "755",
         "url": "https://7gogo.jp/wada-maaya"
+      },
+      {
+        "title": "Profile",
+        "url": "https://www.nogizaka46.com/member/detail/wadamaaya.php"
       }
     ],
     "photoAlbums": [],
@@ -9419,7 +9547,11 @@
     "origin": "愛知県",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Fourth Gen Blog",
+        "url": "https://blog.nogizaka46.com/fourth/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/endousakura.php"
       }
     ],
@@ -9657,7 +9789,11 @@
     "origin": "栃木県",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Fourth Gen Blog",
+        "url": "https://blog.nogizaka46.com/fourth/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/kakiharuka.php"
       }
     ],
@@ -9895,7 +10031,11 @@
     "origin": "岡山県",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Fourth Gen Blog",
+        "url": "https://blog.nogizaka46.com/fourth/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/kakehashisayaka.php"
       }
     ],
@@ -10133,7 +10273,11 @@
     "origin": "北海道",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Fourth Gen Blog",
+        "url": "https://blog.nogizaka46.com/fourth/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/kanagawasaya.php"
       }
     ],
@@ -10371,7 +10515,11 @@
     "origin": "California, US",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Fourth Gen Blog",
+        "url": "https://blog.nogizaka46.com/fourth/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/kitagawayuri.php"
       }
     ],
@@ -10609,7 +10757,11 @@
     "origin": "千葉県",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Fourth Gen Blog",
+        "url": "https://blog.nogizaka46.com/fourth/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/shibatayuna.php"
       }
     ],
@@ -10847,7 +10999,11 @@
     "origin": "埼玉県",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Fourth Gen Blog",
+        "url": "https://blog.nogizaka46.com/fourth/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/seimiyarei.php"
       }
     ],
@@ -11085,7 +11241,11 @@
     "origin": "埼玉県",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Fourth Gen Blog",
+        "url": "https://blog.nogizaka46.com/fourth/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/tamuramayu.php"
       }
     ],
@@ -11323,7 +11483,11 @@
     "origin": "愛知県",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Fourth Gen Blog",
+        "url": "https://blog.nogizaka46.com/fourth/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/tsutsuiayame.php"
       }
     ],
@@ -11561,7 +11725,11 @@
     "origin": "大阪府",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Fourth Gen Blog",
+        "url": "https://blog.nogizaka46.com/fourth/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/hayakawaseira.php"
       }
     ],
@@ -11799,7 +11967,11 @@
     "origin": "東京都",
     "sites": [
       {
-        "title": "Nogizaka46",
+        "title": "Fourth Gen Blog",
+        "url": "https://blog.nogizaka46.com/fourth/"
+      },
+      {
+        "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/yakubomio.php"
       }
     ],
@@ -12038,7 +12210,7 @@
     "sites": [
       {
         "title": "Official",
-        "url": "http://kawagopro.com/index.html"
+        "url": "https://kawagopro.com/"
       },
       {
         "title": "Instagram",
