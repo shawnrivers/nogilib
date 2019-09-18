@@ -27,7 +27,7 @@
     "gatsby-plugin-resolve-src": "^2.0.0",
     "gatsby-plugin-sass": "^2.1.14",
     "gatsby-plugin-typescript": "^2.1.7",
-    "gatsby-source-filesystem": "^2.1.22",
+    "gatsby-source-filesystem": "^2.1.24",
     "gatsby-transformer-json": "^2.2.7",
     "node-sass": "^4.12.0",
     "query-string": "^6.8.3",
