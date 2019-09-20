@@ -59,7 +59,7 @@
     "prettier": "^1.18.2",
     "prettier-stylelint": "^0.4.2",
     "stylelint": "^10.1.0",
-    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-config-recommended": "^3.0.0",
     "stylelint-order": "^3.0.1",
     "stylelint-scss": "^3.10.1",
     "typescript": "^3.6.2"
