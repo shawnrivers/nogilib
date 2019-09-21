@@ -4,9 +4,28 @@ import styles from "./navigationitem.module.scss";
 import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
 import { classNames } from "utils/strings";
 
+const fade = {
+  hovered: {
+    backgroundColor: "#595959",
+    color: "#ffffff",
+    fill: "#ffffff",
+  },
+  current: {
+    backgroundColor: "#ffffff",
+    color: "#e887a3",
+    fill: "#e887a3",
+  },
+  normal: {
+    backgroundColor: "#ffffff",
+    color: "#595959",
+    fill: "#595959",
+  },
+};
+
 interface NavigationItemProps {
   type: "link" | "button";
   children: React.ReactNode;
+  isCurrentTab?: boolean;
   to?: string;
   label?: string;
   className?: string;
@@ -16,20 +35,30 @@ interface NavigationItemProps {
 export const NavigationItem = ({
   type,
   children,
+  isCurrentTab,
   to,
   handleClick,
   label,
   className,
 }: NavigationItemProps) => {
+  const [isHovered, setIsHovered] = React.useState(false);
+  const isCurrent = React.useMemo(() => (isCurrentTab ? isCurrentTab : false), [
+    isCurrentTab,
+  ]);
+
+  const animate = React.useMemo(
+    () => (isCurrent ? "current" : isHovered ? "hovered" : "normal"),
+    [isHovered, isCurrent]
+  );
+
   if (type === "link") {
     return to ? (
       <LocalizedLink to={to} label={label}>
         <motion.div
-          whileHover={{
-            backgroundColor: "rgba(89,89,89)",
-            color: "#ffffff",
-            fill: "#ffffff",
-          }}
+          onHoverStart={() => setIsHovered(true)}
+          onHoverEnd={() => setIsHovered(false)}
+          animate={animate}
+          variants={fade}
           className={classNames(styles.container, className)}
         >
           {children}
@@ -37,11 +66,10 @@ export const NavigationItem = ({
       </LocalizedLink>
     ) : (
       <motion.span
-        whileHover={{
-          backgroundColor: "rgba(89,89,89)",
-          color: "#ffffff",
-          fill: "#ffffff",
-        }}
+        onHoverStart={() => setIsHovered(true)}
+        onHoverEnd={() => setIsHovered(false)}
+        animate={animate}
+        variants={fade}
         className={classNames(styles.container, className)}
       >
         {children}
@@ -52,11 +80,10 @@ export const NavigationItem = ({
   return handleClick ? (
     <motion.button
       onClick={handleClick}
-      whileHover={{
-        backgroundColor: "rgba(89,89,89)",
-        color: "#ffffff",
-        fill: "#ffffff",
-      }}
+      onHoverStart={() => setIsHovered(true)}
+      onHoverEnd={() => setIsHovered(false)}
+      animate={animate}
+      variants={fade}
       aria-label={label}
       className={classNames(styles.container, className)}
     >
@@ -64,11 +91,10 @@ export const NavigationItem = ({
     </motion.button>
   ) : (
     <motion.span
-      whileHover={{
-        backgroundColor: "rgba(89,89,89)",
-        color: "#ffffff",
-        fill: "#ffffff",
-      }}
+      onHoverStart={() => setIsHovered(true)}
+      onHoverEnd={() => setIsHovered(false)}
+      animate={animate}
+      variants={fade}
       className={classNames(styles.container, className)}
     >
       {children}

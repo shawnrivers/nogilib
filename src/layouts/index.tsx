@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import { RouteComponentProps, WindowLocation } from "@reach/router";
+import { RouteComponentProps } from "@reach/router";
 import { AnimatePresence, motion } from "framer-motion";
 import { IntlProvider } from "react-intl";
 import styles from "./applayout.module.scss";
@@ -149,10 +149,7 @@ const AppLayout = ({
       </Helmet>
       <AnimatePresence>
         <div className={styles.container}>
-          <TopNavigation
-            locale={locale}
-            location={location as WindowLocation}
-          />
+          <TopNavigation pathName={pathName} />
           {isCdsPage ? (
             <PageTab
               items={cdsPageTabs.items}

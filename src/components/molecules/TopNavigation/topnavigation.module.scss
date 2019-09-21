@@ -67,12 +67,6 @@
   margin-right: 12px;
 }
 
-.item-highlighted {
-  background-color: $gray-1 !important;
-  color: $white !important;
-  margin-right: 12px;
-}
-
 .icon-text {
   font-size: $size-caption;
   text-transform: capitalize;
@@ -93,16 +87,6 @@
 
   .icon-text {
     font-weight: $weight-regular;
-  }
-}
-
-.icon-text-item-highlighted {
-  @extend %icon-text-item-template;
-  color: $pink-1;
-  fill: $pink-1;
-
-  .icon-text {
-    font-weight: $weight-bold;
   }
 }
 

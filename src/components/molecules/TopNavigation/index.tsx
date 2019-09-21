@@ -1,9 +1,8 @@
 import * as React from "react";
-import { WindowLocation } from "@reach/router";
 import { AnimatePresence, motion } from "framer-motion";
 import styles from "./topnavigation.module.scss";
 import { useOnClickOutside } from "utils/hooks";
-import { Language, Links } from "utils/constants";
+import { Links } from "utils/constants";
 import { NavigationItem } from "components/atoms/NavigationItem";
 import { LanguageOptionItem } from "components/atoms/LanguageOptionItem";
 import { LanguageIcon } from "components/atoms/icons/LanguagesIcon";
@@ -76,27 +75,24 @@ const LanguageItem = ({ type, className }: LanguageItemProps) => {
 };
 
 interface TopNavigationProps {
-  locale: Language;
-  location: WindowLocation;
+  pathName: string;
 }
 
-export const TopNavigation = ({ location }: TopNavigationProps) => {
+export const TopNavigation = ({ pathName }: TopNavigationProps) => {
   const [isSideBarOpened, toggleSideBar] = React.useState(false);
 
-  const isInMusicPage = React.useMemo(
-    () => location.pathname.includes("/cds/"),
-    [location.pathname]
-  );
+  const isInMusicPage = React.useMemo(() => pathName.includes("/cds"), [
+    pathName,
+  ]);
 
   const isInMembersPage = React.useMemo(
-    () => location.pathname.includes("/members-list/"),
-    [location.pathname]
+    () => pathName.includes("/members-list"),
+    [pathName]
   );
 
-  const isInSearchPage = React.useMemo(
-    () => location.pathname.includes("/search/"),
-    [location.pathname]
-  );
+  const isInSearchPage = React.useMemo(() => pathName.includes("/search"), [
+    pathName,
+  ]);
 
   return (
     <>
@@ -118,11 +114,8 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
           <NavigationItem
             type="link"
             to={Links.Singles}
-            className={
-              isInMusicPage
-                ? styles.iconTextItemHighlighted
-                : styles.iconTextItem
-            }
+            isCurrentTab={isInMusicPage}
+            className={styles.iconTextItem}
           >
             <MusicIcon className={styles.icon} />
             <span className={styles.iconText}>
@@ -132,11 +125,8 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
           <NavigationItem
             type="link"
             to={Links.FirstGeneration}
-            className={
-              isInMembersPage
-                ? styles.iconTextItemHighlighted
-                : styles.iconTextItem
-            }
+            isCurrentTab={isInMembersPage}
+            className={styles.iconTextItem}
           >
             <MembersIcon className={styles.icon} />
             <span className={styles.iconText}>
@@ -146,11 +136,8 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
           <NavigationItem
             type="link"
             to={Links.Search}
-            className={
-              isInSearchPage
-                ? styles.iconTextItemHighlighted
-                : styles.iconTextItem
-            }
+            isCurrentTab={isInSearchPage}
+            className={styles.iconTextItem}
           >
             <SearchIcon className={styles.icon} />
             <span className={styles.iconText}>
@@ -163,21 +150,24 @@ export const TopNavigation = ({ location }: TopNavigationProps) => {
             <NavigationItem
               type="link"
               to={Links.Singles}
-              className={isInMusicPage ? styles.itemHighlighted : styles.item}
+              isCurrentTab={isInMusicPage}
+              className={styles.item}
             >
               <Message text="music" />
             </NavigationItem>
             <NavigationItem
               type="link"
               to={Links.FirstGeneration}
-              className={isInMembersPage ? styles.itemHighlighted : styles.item}
+              isCurrentTab={isInMembersPage}
+              className={styles.item}
             >
               <Message text="members" />
             </NavigationItem>
             <NavigationItem
               type="link"
               to={Links.Search}
-              className={isInSearchPage ? styles.itemHighlighted : styles.item}
+              isCurrentTab={isInSearchPage}
+              className={styles.item}
             >
               <Message text="search" />
             </NavigationItem>
