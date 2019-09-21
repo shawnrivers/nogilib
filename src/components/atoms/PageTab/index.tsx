@@ -46,6 +46,7 @@ export const PageTab = ({ text, to, isSelected, className }: PageTabProps) => {
       onHoverEnd={() => setIsHovered(false)}
       animate={isSelected ? "selected" : isHovered ? "hovered" : "normal"}
       variants={fade}
+      transition={{ ease: "easeInOut", duration: 0.2 }}
       className={className}
     >
       <LocalizedLink to={to}>
