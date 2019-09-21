@@ -43,7 +43,7 @@ export const SideBar = ({ open, handleClose }: SideBarProps) => {
         className={styles.sideBar}
       >
         <div className={styles.closeIconContainer}>
-          <button onClick={() => handleClose()}>
+          <button aria-label="Close" onClick={() => handleClose()}>
             <CloseIcon className={styles.closeIcon} />
           </button>
         </div>
