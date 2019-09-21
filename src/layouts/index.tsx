@@ -9,7 +9,7 @@ import en from "i18n/en.json";
 import ja from "i18n/ja.json";
 import zh from "i18n/zh.json";
 import { TopNavigation } from "components/molecules/TopNavigation";
-import { PageTab } from "components/molecules/PageTab";
+import { PageTabs } from "components/molecules/PageTabs";
 import { CdType, MembersType } from "types/responseTypes";
 
 const messages = { en, ja, zh };
@@ -151,13 +151,13 @@ const AppLayout = ({
         <div className={styles.container}>
           <TopNavigation pathName={pathName} />
           {isCdsPage ? (
-            <PageTab
+            <PageTabs
               items={cdsPageTabs.items}
               selectedItem={cdsPageTabs.selectedItem}
             />
           ) : null}
           {isMembersPage ? (
-            <PageTab
+            <PageTabs
               items={membersPageTabs.items}
               selectedItem={membersPageTabs.selectedItem}
             />
