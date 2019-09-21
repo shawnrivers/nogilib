@@ -91,6 +91,7 @@
     display: block;
     height: 100%;
     object-fit: cover;
+    object-position: top;
     width: 100%;
   }
 }
@@ -284,6 +285,7 @@
   display: block;
   height: 100%;
   object-fit: cover;
+  object-position: top;
   transform-origin: center;
   width: 100%;
 }
