@@ -10,14 +10,14 @@
   justify-items: center;
   left: 0;
   margin: auto;
-  margin-bottom: $page-margin-bottom-without-navigation-bar;
   max-width: 1168px;
   padding: 24px;
+  padding-bottom: $page-margin-bottom-without-navigation-bar;
   position: absolute;
   right: 0;
 
   @media (max-width: 599px) {
-    margin-bottom: $page-margin-bottom-with-navigation-bar;
+    padding-bottom: $page-margin-bottom-with-navigation-bar;
   }
 }
 
