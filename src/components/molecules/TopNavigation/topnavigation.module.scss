@@ -30,8 +30,7 @@
   box-shadow: 0px -6px 9px rgba(142, 142, 142, 0.2);
   justify-content: space-between;
   margin: auto;
-  padding: 0 24px;
-  padding-bottom: env(safe-area-inset-bottom);
+  padding: 0 24px env(safe-area-inset-bottom);
   position: fixed;
   width: 100%;
   z-index: 10;
