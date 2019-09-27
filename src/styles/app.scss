@@ -1,3 +1,5 @@
+@import "styles/colors.scss";
+
 h1,
 h2,
 h3,
@@ -15,6 +17,7 @@ li {
 }
 
 body {
+  background-color: $white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Helvetica Neue", Arial, sans-serif;
   margin: 0;
