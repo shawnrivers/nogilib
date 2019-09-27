@@ -149,10 +149,7 @@ const AppLayout = ({
           content="https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/design/nogizakalib-preview.jpg"
         />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta
-          name="apple-mobile-web-app-status-bar-style"
-          content="black-translucent"
-        />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <title>Nogizaka Lib</title>
         <html lang={locale} />
       </Helmet>

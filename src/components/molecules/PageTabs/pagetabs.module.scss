@@ -2,14 +2,14 @@
 @import "styles/colors.scss";
 
 .layout {
-  padding-bottom: 12px;
+  padding-bottom: 0 !important;
+  padding-top: calc(24px + env(safe-area-inset-top)) !important;
 }
 
 .container {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  height: 30px;
   justify-content: center;
 }
 
