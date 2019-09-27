@@ -4,7 +4,7 @@
 @import "styles/spacing.scss";
 
 .page {
-  padding: 12px 24px $page-margin-bottom-without-navigation-bar;
+  padding: 24px 24px $page-margin-bottom-without-navigation-bar;
 
   @media (max-width: 599px) {
     padding-bottom: $page-margin-bottom-with-navigation-bar;
