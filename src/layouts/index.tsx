@@ -144,6 +144,10 @@ const AppLayout = ({
           property="og:image"
           content="https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/design/nogizakalib-preview.jpg"
         />
+        <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content="default"
+        ></meta>
         <title>Nogizaka Lib</title>
         <html lang={locale} />
       </Helmet>
