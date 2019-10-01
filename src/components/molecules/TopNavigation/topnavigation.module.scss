@@ -5,7 +5,7 @@
 .container {
   color: $gray-1;
   font-size: $size-body;
-  font-weight: $weight-bold;
+  font-weight: $weight-regular;
 }
 
 %navigation {
@@ -93,10 +93,6 @@
   @extend %icon-text-item-template;
   color: $gray-1;
   fill: $gray-1;
-
-  .icon-text {
-    font-weight: $weight-regular;
-  }
 }
 
 .icon {
