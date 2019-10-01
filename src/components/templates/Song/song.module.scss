@@ -10,6 +10,10 @@
   @media (max-width: 599px) {
     padding-bottom: $page-margin-bottom-with-navigation-bar;
   }
+
+  @media (min-width: 600px) {
+    margin-top: $page-margin-top-with-navigation-bar;
+  }
 }
 
 .background {
@@ -180,7 +184,7 @@
 
 .creator-names {
   font-size: $size-body;
-  font-weight: $weight-light;
+  font-weight: $weight-regular;
   line-height: 24px;
 }
 

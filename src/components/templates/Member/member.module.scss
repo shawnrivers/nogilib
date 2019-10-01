@@ -10,6 +10,10 @@
   @media (max-width: 599px) {
     padding-bottom: $page-margin-bottom-with-navigation-bar;
   }
+
+  @media (min-width: 600px) {
+    margin-top: $page-margin-top-with-navigation-bar;
+  }
 }
 
 .background {

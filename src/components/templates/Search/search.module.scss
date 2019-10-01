@@ -3,12 +3,16 @@
 @import "styles/spacing.scss";
 
 .container {
-  margin-bottom: 12px 24px $page-margin-bottom-without-navigation-bar;
+  margin-bottom: $page-margin-bottom-without-navigation-bar !important;
   padding-bottom: 0 !important;
   padding-top: calc(24px + env(safe-area-inset-top)) !important;
 
   @media (max-width: 599px) {
-    margin-bottom: $page-margin-bottom-with-navigation-bar;
+    margin-bottom: $page-margin-bottom-with-navigation-bar !important;
+  }
+
+  @media (min-width: 600px) {
+    margin-top: $page-margin-top-with-navigation-bar !important;
   }
 }
 

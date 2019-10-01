@@ -10,6 +10,10 @@
   @media (max-width: 599px) {
     padding-bottom: $page-margin-bottom-with-navigation-bar;
   }
+
+  @media (min-width: 600px) {
+    margin-top: $page-margin-top-with-navigation-bar;
+  }
 }
 
 .background {
@@ -90,7 +94,7 @@
 
 .release {
   font-size: $size-body;
-  font-weight: $weight-light;
+  font-weight: $weight-regular;
 }
 
 @media (min-width: 588px) and (max-width: 695px) {

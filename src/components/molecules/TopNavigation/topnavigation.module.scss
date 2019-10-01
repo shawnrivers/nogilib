@@ -3,15 +3,9 @@
 @import "styles/elevations.scss";
 
 .container {
-  box-shadow: 0px 2px 4px rgba(142, 142, 142, 0.2);
   color: $gray-1;
   font-size: $size-body;
-  font-weight: $weight-bold;
-  width: 100%;
-
-  @media (max-width: 599px) {
-    box-shadow: none;
-  }
+  font-weight: $weight-regular;
 }
 
 %navigation {
@@ -24,15 +18,12 @@
   max-width: 1168px;
 }
 
-.navigation-small {
-  @extend %navigation;
+.navigation-small-container {
+  background-color: $white;
   bottom: -1px;
   box-shadow: 0px -6px 9px rgba(142, 142, 142, 0.2);
-  justify-content: space-between;
-  margin: auto;
-  padding: 0 24px env(safe-area-inset-bottom);
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 10;
 
   @media (min-width: 600px) {
@@ -40,18 +31,37 @@
   }
 }
 
+.navigation-small {
+  @extend %navigation;
+  box-shadow: 0px -6px 9px rgba(142, 142, 142, 0.2);
+  justify-content: space-between;
+  margin: auto;
+  padding: 0 24px env(safe-area-inset-bottom);
+  width: 100%;
+}
+
+.navigation-large-container {
+  background-color: $white;
+  box-shadow: 0px 6px 9px rgba(142, 142, 142, 0.2);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+
+  @media (max-width: 599px) {
+    display: none;
+  }
+}
+
 .navigation-large {
+  @extend %navigation;
   align-items: center;
   box-sizing: border-box;
   height: 56px;
   justify-content: space-between;
   padding: 12px 24px;
   text-transform: uppercase;
-  @extend %navigation;
-
-  @media (max-width: 599px) {
-    display: none;
-  }
+  width: 100%;
 }
 
 .left-items,
@@ -83,10 +93,6 @@
   @extend %icon-text-item-template;
   color: $gray-1;
   fill: $gray-1;
-
-  .icon-text {
-    font-weight: $weight-regular;
-  }
 }
 
 .icon {
