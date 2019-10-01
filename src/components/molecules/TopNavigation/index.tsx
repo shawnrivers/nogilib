@@ -95,8 +95,8 @@ export const TopNavigation = ({ pathName }: TopNavigationProps) => {
   ]);
 
   return (
-    <>
-      <nav className={styles.container}>
+    <nav className={styles.container}>
+      <div className={styles.navigationSmallContainer}>
         <div className={styles.navigationSmall}>
           <NavigationItem
             type="button"
@@ -145,6 +145,8 @@ export const TopNavigation = ({ pathName }: TopNavigationProps) => {
             </span>
           </NavigationItem>
         </div>
+      </div>
+      <div className={styles.navigationLargeContainer}>
         <div className={styles.navigationLarge}>
           <div className={styles.leftItems}>
             <NavigationItem
@@ -186,13 +188,13 @@ export const TopNavigation = ({ pathName }: TopNavigationProps) => {
             </NavigationItem>
           </div>
         </div>
-      </nav>
+      </div>
       <SideBar
         open={isSideBarOpened}
         handleClose={() => {
           toggleSideBar(false);
         }}
       />
-    </>
+    </nav>
   );
 };
