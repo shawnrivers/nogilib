@@ -7,7 +7,7 @@
   padding-top: calc(24px + env(safe-area-inset-top)) !important;
 
   @media (min-width: 600px) {
-    margin-top: $page-margin-top-with-navigation-bar !important;
+    margin-top: $top-spacing-with-navigation-bar !important;
   }
 }
 

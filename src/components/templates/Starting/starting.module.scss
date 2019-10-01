@@ -12,14 +12,14 @@
 }
 
 .container {
-  margin-bottom: $page-margin-bottom-without-navigation-bar;
+  margin-bottom: $bottom-spacing-without-navigation-bar;
 
   @media (max-width: 599px) {
-    margin-bottom: $page-margin-bottom-with-navigation-bar;
+    margin-bottom: $bottom-spacing-with-navigation-bar;
   }
 
   @media (min-width: 600px) {
-    margin-top: $page-margin-top-with-navigation-bar;
+    margin-top: $top-spacing-with-navigation-bar;
   }
 }
 

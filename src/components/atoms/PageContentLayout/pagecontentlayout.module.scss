@@ -1,0 +1,29 @@
+@import "styles/spacing.scss";
+
+$top-spacing: calc(
+  #{$top-spacing-with-navigation-bar} + env(safe-area-inset-top)
+);
+
+%min-template {
+  box-sizing: border-box;
+  margin: auto;
+  max-width: 1168px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.sides-only {
+  @extend %min-template;
+}
+
+.top {
+  @extend %min-template;
+  padding-top: $top-spacing;
+}
+
+.container {
+  box-sizing: border-box;
+  margin: auto;
+  max-width: 1168px;
+  padding: 24px;
+}

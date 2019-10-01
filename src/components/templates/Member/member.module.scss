@@ -5,14 +5,14 @@
 
 .page {
   padding: calc(24px + env(safe-area-inset-top)) 24px
-    $page-margin-bottom-without-navigation-bar;
+    $bottom-spacing-without-navigation-bar;
 
   @media (max-width: 599px) {
-    padding-bottom: $page-margin-bottom-with-navigation-bar;
+    padding-bottom: $bottom-spacing-with-navigation-bar;
   }
 
   @media (min-width: 600px) {
-    margin-top: $page-margin-top-with-navigation-bar;
+    margin-top: $top-spacing-with-navigation-bar;
   }
 }
 
