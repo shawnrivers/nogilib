@@ -1,9 +1,14 @@
 @import "styles/typography.scss";
 @import "styles/colors.scss";
+@import "styles/spacing.scss";
 
 .layout {
   padding-bottom: 0 !important;
   padding-top: calc(24px + env(safe-area-inset-top)) !important;
+
+  @media (min-width: 600px) {
+    margin-top: $page-margin-top-with-navigation-bar !important;
+  }
 }
 
 .container {
