@@ -95,106 +95,108 @@ export const TopNavigation = ({ pathName }: TopNavigationProps) => {
   ]);
 
   return (
-    <nav className={styles.container}>
-      <div className={styles.navigationSmallContainer}>
-        <div className={styles.navigationSmall}>
-          <NavigationItem
-            type="button"
-            to={Links.About}
-            handleClick={() => {
-              toggleSideBar(true);
-            }}
-            className={styles.iconTextItem}
-          >
-            <MoreIcon className={styles.icon} />
-            <span className={styles.iconText}>
-              <Message text="more" />
-            </span>
-          </NavigationItem>
-          <NavigationItem
-            type="link"
-            to={Links.Singles}
-            isCurrentTab={isInMusicPage}
-            className={styles.iconTextItem}
-          >
-            <MusicIcon className={styles.icon} />
-            <span className={styles.iconText}>
-              <Message text="music" />
-            </span>
-          </NavigationItem>
-          <NavigationItem
-            type="link"
-            to={Links.FirstGeneration}
-            isCurrentTab={isInMembersPage}
-            className={styles.iconTextItem}
-          >
-            <MembersIcon className={styles.icon} />
-            <span className={styles.iconText}>
-              <Message text="members" />
-            </span>
-          </NavigationItem>
-          <NavigationItem
-            type="link"
-            to={Links.Search}
-            isCurrentTab={isInSearchPage}
-            className={styles.iconTextItem}
-          >
-            <SearchIcon className={styles.icon} />
-            <span className={styles.iconText}>
-              <Message text="search" />
-            </span>
-          </NavigationItem>
-        </div>
-      </div>
-      <div className={styles.navigationLargeContainer}>
-        <div className={styles.navigationLarge}>
-          <div className={styles.leftItems}>
+    <>
+      <nav className={styles.container}>
+        <div className={styles.navigationSmallContainer}>
+          <div className={styles.navigationSmall}>
+            <NavigationItem
+              type="button"
+              to={Links.About}
+              handleClick={() => {
+                toggleSideBar(true);
+              }}
+              className={styles.iconTextItem}
+            >
+              <MoreIcon className={styles.icon} />
+              <span className={styles.iconText}>
+                <Message text="more" />
+              </span>
+            </NavigationItem>
             <NavigationItem
               type="link"
               to={Links.Singles}
               isCurrentTab={isInMusicPage}
-              className={styles.item}
+              className={styles.iconTextItem}
             >
-              <Message text="music" />
+              <MusicIcon className={styles.icon} />
+              <span className={styles.iconText}>
+                <Message text="music" />
+              </span>
             </NavigationItem>
             <NavigationItem
               type="link"
               to={Links.FirstGeneration}
               isCurrentTab={isInMembersPage}
-              className={styles.item}
+              className={styles.iconTextItem}
             >
-              <Message text="members" />
+              <MembersIcon className={styles.icon} />
+              <span className={styles.iconText}>
+                <Message text="members" />
+              </span>
             </NavigationItem>
             <NavigationItem
               type="link"
               to={Links.Search}
               isCurrentTab={isInSearchPage}
-              className={styles.item}
+              className={styles.iconTextItem}
             >
-              <Message text="search" />
-            </NavigationItem>
-          </div>
-          <div className={styles.rightItems}>
-            <LanguageItem
-              type="text"
-              className={classNames(styles.languagesText, styles.item)}
-            />
-            <NavigationItem
-              type="link"
-              to={Links.About}
-              className={styles.item}
-            >
-              <Message text="about" />
+              <SearchIcon className={styles.icon} />
+              <span className={styles.iconText}>
+                <Message text="search" />
+              </span>
             </NavigationItem>
           </div>
         </div>
-      </div>
+        <div className={styles.navigationLargeContainer}>
+          <div className={styles.navigationLarge}>
+            <div className={styles.leftItems}>
+              <NavigationItem
+                type="link"
+                to={Links.Singles}
+                isCurrentTab={isInMusicPage}
+                className={styles.item}
+              >
+                <Message text="music" />
+              </NavigationItem>
+              <NavigationItem
+                type="link"
+                to={Links.FirstGeneration}
+                isCurrentTab={isInMembersPage}
+                className={styles.item}
+              >
+                <Message text="members" />
+              </NavigationItem>
+              <NavigationItem
+                type="link"
+                to={Links.Search}
+                isCurrentTab={isInSearchPage}
+                className={styles.item}
+              >
+                <Message text="search" />
+              </NavigationItem>
+            </div>
+            <div className={styles.rightItems}>
+              <LanguageItem
+                type="text"
+                className={classNames(styles.languagesText, styles.item)}
+              />
+              <NavigationItem
+                type="link"
+                to={Links.About}
+                className={styles.item}
+              >
+                <Message text="about" />
+              </NavigationItem>
+            </div>
+          </div>
+        </div>
+      </nav>
       <SideBar
         open={isSideBarOpened}
         handleClose={() => {
           toggleSideBar(false);
         }}
       />
-    </nav>
+    </>
   );
 };
