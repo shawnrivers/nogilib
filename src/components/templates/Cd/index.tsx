@@ -8,7 +8,7 @@ import { CdType, FocusPerformersType, SongType } from "types/responseTypes";
 import { Artworks } from "components/molecules/Artworks";
 import { Links } from "utils/constants";
 import { useScrollRestoration } from "utils/hooks";
-import { Layout } from "components/atoms/Layout";
+import { PageContentLayout } from "components/atoms/PageContentLayout";
 import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
 import { ArrowBackIcon } from "components/atoms/icons/ArrowBackIcon";
 import { Message } from "components/atoms/Message";
@@ -96,7 +96,7 @@ export const Cd = ({
 
   return (
     <div className={styles.background}>
-      <Layout className={styles.page}>
+      <PageContentLayout>
         <motion.div whileHover={{ x: -7, scale: 1.5 }} className={styles.link}>
           <LocalizedLink
             to={type === CdType.Singles ? Links.Singles : Links.Albums}
@@ -154,7 +154,7 @@ export const Cd = ({
             </motion.div>
           </motion.div>
         </motion.div>
-      </Layout>
+      </PageContentLayout>
     </div>
   );
 };

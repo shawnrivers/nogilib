@@ -2,20 +2,6 @@
 @import "styles/typography.scss";
 @import "styles/spacing.scss";
 
-.container {
-  margin-bottom: $bottom-spacing-without-navigation-bar !important;
-  padding-bottom: 0 !important;
-  padding-top: calc(24px + env(safe-area-inset-top)) !important;
-
-  @media (max-width: 599px) {
-    margin-bottom: $bottom-spacing-with-navigation-bar !important;
-  }
-
-  @media (min-width: 600px) {
-    margin-top: $top-spacing-with-navigation-bar !important;
-  }
-}
-
 .search {
   align-items: center;
   display: flex;

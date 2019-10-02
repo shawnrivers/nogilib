@@ -2,7 +2,7 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { FormattedDate } from "react-intl";
 import styles from "./member.module.scss";
-import { Layout } from "components/atoms/Layout";
+import { PageContentLayout } from "components/atoms/PageContentLayout";
 import { ArrowBackIcon } from "components/atoms/icons/ArrowBackIcon";
 import { useScrollRestoration } from "utils/hooks";
 import { LocalizedList } from "components/atoms/locales/LocalizedList";
@@ -140,7 +140,7 @@ export const Member = ({
 
   return (
     <div className={styles.background}>
-      <Layout className={styles.page}>
+      <PageContentLayout>
         <motion.div whileHover={{ x: -7, scale: 1.5 }} className={styles.link}>
           <button
             onClick={() => {
@@ -397,7 +397,7 @@ export const Member = ({
             </motion.div>
           </motion.div>
         </div>
-      </Layout>
+      </PageContentLayout>
     </div>
   );
 };

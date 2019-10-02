@@ -2,7 +2,7 @@ import * as React from "react";
 import { injectIntl } from "react-intl";
 import { motion } from "framer-motion";
 import styles from "./search.module.scss";
-import { Layout } from "components/atoms/Layout";
+import { PageContentLayout } from "components/atoms/PageContentLayout";
 import { SearchIcon } from "components/atoms/icons/SearchIcon";
 import { Message } from "components/atoms/Message";
 import { SearchResultCategory } from "components/molecules/SearchResultCategory";
@@ -46,7 +46,7 @@ export const Search = injectIntl(
     const [isInputFocused, setInputFocus] = React.useState(false);
 
     return (
-      <Layout className={styles.container}>
+      <PageContentLayout>
         <div className={styles.search}>
           <SearchIcon className={styles.searchIcon} />
           <motion.div
@@ -89,7 +89,7 @@ export const Search = injectIntl(
           className={styles.category}
         />
         <SearchResultCategory title="songs" results={results.songs} />
-      </Layout>
+      </PageContentLayout>
     );
   }
 );

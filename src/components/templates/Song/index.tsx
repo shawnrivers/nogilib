@@ -2,7 +2,7 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { injectIntl } from "react-intl";
 import styles from "./song.module.scss";
-import { Layout } from "components/atoms/Layout";
+import { PageContentLayout } from "components/atoms/PageContentLayout";
 import { ArrowBackIcon } from "components/atoms/icons/ArrowBackIcon";
 import { SongType } from "types/responseTypes";
 import { KOJIHARU, Language } from "utils/constants";
@@ -181,7 +181,7 @@ export const Song = ({
 
   return (
     <div className={styles.background}>
-      <Layout className={styles.page}>
+      <PageContentLayout>
         <motion.div whileHover={{ x: -7, scale: 1.5 }} className={styles.link}>
           <button
             onClick={() => {
@@ -341,7 +341,7 @@ export const Song = ({
             </motion.div>
           </motion.div>
         </motion.div>
-      </Layout>
+      </PageContentLayout>
     </div>
   );
 };
