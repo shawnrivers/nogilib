@@ -1,7 +1,6 @@
 import * as React from "react";
 import styles from "./pagetabs.module.scss";
-import { Layout } from "components/atoms/Layout";
-import { classNames } from "utils/strings";
+import { PageContentLayout } from "components/atoms/PageContentLayout";
 import { PageTab } from "components/atoms/PageTab";
 
 export type TabItem = {
@@ -17,7 +16,7 @@ interface PageTabsProps {
 
 export const PageTabs = ({ items, selectedItem, className }: PageTabsProps) => {
   return (
-    <Layout className={classNames(styles.layout, className)}>
+    <PageContentLayout type="top" className={className}>
       <ul className={styles.container}>
         {items.map(item => (
           <PageTab
@@ -29,6 +28,6 @@ export const PageTabs = ({ items, selectedItem, className }: PageTabsProps) => {
           />
         ))}
       </ul>
-    </Layout>
+    </PageContentLayout>
   );
 };

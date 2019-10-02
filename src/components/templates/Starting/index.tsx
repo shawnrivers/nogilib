@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import { motion } from "framer-motion";
 import styles from "./starting.module.scss";
 import cdListPc from "assets/images/screenshots/cd_list-pc.jpg";
-import { Layout } from "components/atoms/Layout";
+import { PageContentLayout } from "components/atoms/PageContentLayout";
 import { Links } from "utils/constants";
 import { Message } from "components/atoms/Message";
 import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
@@ -32,8 +32,8 @@ import { LazyImage } from "components/atoms/LazyImage";
 
 export const Starting = () => {
   return (
-    <article className={styles.container}>
-      <Layout>
+    <article>
+      <PageContentLayout type="top">
         <div className={styles.titleSection}>
           <img
             src={favicon128}
@@ -63,9 +63,7 @@ export const Starting = () => {
             />
           </div>
         </div>
-      </Layout>
-      <section className={styles.languagesSection}>
-        <Layout>
+        <section className={styles.languagesSection}>
           <h2 className={styles.subtitle}>
             <Message text="supported languages" />
           </h2>
@@ -106,10 +104,10 @@ export const Starting = () => {
               </motion.span>
             </Link>
           </p>
-        </Layout>
-      </section>
+        </section>
+      </PageContentLayout>
       <section className={styles.cdsSection}>
-        <Layout>
+        <PageContentLayout type="sidesOnly" className={styles.cdsSectionHeader}>
           <LocalizedLink to={Links.Singles}>
             <motion.h2
               whileHover={{
@@ -121,9 +119,9 @@ export const Starting = () => {
               <Message text="Feature - Music" />
             </motion.h2>
           </LocalizedLink>
-        </Layout>
+        </PageContentLayout>
         <div className={styles.cdsSectionContainer}>
-          <Layout>
+          <PageContentLayout type="sidesOnly">
             <div className={styles.sectionItems}>
               <div className={styles.sectionItem}>
                 <LazyImage
@@ -207,11 +205,14 @@ export const Starting = () => {
                 </section>
               </div>
             </div>
-          </Layout>
+          </PageContentLayout>
         </div>
       </section>
       <section className={styles.membersSection}>
-        <Layout>
+        <PageContentLayout
+          type="sidesOnly"
+          className={styles.membersSectionHeader}
+        >
           <LocalizedLink to={Links.FirstGeneration}>
             <motion.h2
               whileHover={{
@@ -223,9 +224,9 @@ export const Starting = () => {
               <Message text="Feature - Members" />
             </motion.h2>
           </LocalizedLink>
-        </Layout>
-        <div className={styles.membersSectionContainer}>
-          <Layout>
+        </PageContentLayout>
+        <div className={styles.cdsSectionContainer}>
+          <PageContentLayout type="sidesOnly">
             <div className={styles.sectionItems}>
               <div className={styles.sectionItem}>
                 <LazyImage
@@ -288,11 +289,14 @@ export const Starting = () => {
                 />
               </div>
             </div>
-          </Layout>
+          </PageContentLayout>
         </div>
       </section>
       <section className={styles.searchSection}>
-        <Layout>
+        <PageContentLayout
+          type="sidesOnly"
+          className={styles.searchSectionHeader}
+        >
           <LocalizedLink to={Links.Search}>
             <motion.h2
               whileHover={{
@@ -304,40 +308,41 @@ export const Starting = () => {
               <Message text="Feature - Search" />
             </motion.h2>
           </LocalizedLink>
-        </Layout>
-        <div className={styles.searchSectionContainer}>
-          <Layout>
-            <div className={styles.sectionItems}>
-              <div className={styles.sectionItem}>
-                <LazyImage
-                  src={searchPc}
-                  alt="Search"
-                  className={styles.searchScreenshotLarge}
-                />
-                <LazyImage
-                  src={searchSpSmall}
-                  srcSet={`${searchSpLarge} 2x`}
-                  alt="Search"
-                  className={styles.searchScreenshotSmall}
-                />
-                <section className={styles.sectionItemTextNoBg}>
-                  <h3>
-                    <Message text="search" />
-                  </h3>
-                  <p>
-                    <Message text="By typing CD/song title or member name in the top input area, you can search for CDs and members." />
-                  </p>
-                  <p>
-                    <Message text="The search results will be displayed below the input area." />
-                  </p>
-                </section>
-              </div>
+        </PageContentLayout>
+        <PageContentLayout
+          type="sidesOnly"
+          className={styles.searchSectionContainer}
+        >
+          <div className={styles.sectionItems}>
+            <div className={styles.sectionItem}>
+              <LazyImage
+                src={searchPc}
+                alt="Search"
+                className={styles.searchScreenshotLarge}
+              />
+              <LazyImage
+                src={searchSpSmall}
+                srcSet={`${searchSpLarge} 2x`}
+                alt="Search"
+                className={styles.searchScreenshotSmall}
+              />
+              <section className={styles.sectionItemTextNoBg}>
+                <h3>
+                  <Message text="search" />
+                </h3>
+                <p>
+                  <Message text="By typing CD/song title or member name in the top input area, you can search for CDs and members." />
+                </p>
+                <p>
+                  <Message text="The search results will be displayed below the input area." />
+                </p>
+              </section>
             </div>
-          </Layout>
-        </div>
+          </div>
+        </PageContentLayout>
       </section>
       <section className={styles.copyrightSection}>
-        <Layout>
+        <PageContentLayout type="sidesOnly">
           <h2 className={styles.subtitle}>
             <Message text="copyright" />
           </h2>
@@ -380,10 +385,10 @@ export const Starting = () => {
             </a>
             .
           </p>
-        </Layout>
+        </PageContentLayout>
       </section>
       <section className={styles.sourceCodeSection}>
-        <Layout>
+        <PageContentLayout type="bottom">
           <h2 className={styles.subtitle}>
             <Message text="source code" />
           </h2>
@@ -403,7 +408,7 @@ export const Starting = () => {
               shawnrivers/nogizaka-lib-redesign
             </motion.span>
           </a>
-        </Layout>
+        </PageContentLayout>
       </section>
     </article>
   );

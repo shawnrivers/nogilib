@@ -10,12 +10,12 @@
   margin: auto;
   max-width: 1168px;
   padding: 24px;
-  padding-bottom: $page-margin-bottom-without-navigation-bar;
+  padding-bottom: $bottom-spacing-without-navigation-bar;
   position: absolute;
   right: 0;
 
   @media (max-width: 599px) {
-    padding-bottom: $page-margin-bottom-with-navigation-bar;
+    padding-bottom: $bottom-spacing-with-navigation-bar;
   }
 }
 
