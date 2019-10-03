@@ -1,7 +1,7 @@
 {
   "name": "nogizaka-lib-redesign",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "A Gatsby powered web application aiming at showing the information about Nogizaka46 in a user-friendly way",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -14,8 +14,7 @@
     "lint:fix": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --fix",
     "stylelint": "stylelint '**/*.scss'",
     "stylelint:fix": "stylelint '**/*.scss' --fix",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -m 'chore: update [skip ci]'",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -m 'chore: update [skip ci]'"
   },
   "dependencies": {
     "framer-motion": "^1.6.8",
