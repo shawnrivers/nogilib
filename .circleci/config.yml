@@ -4,9 +4,6 @@ jobs:
     docker:
       - image: circleci/node:12.9.1
     working_directory: ~/repo
-    branches:
-      ignore:
-        - gh-pages
     steps:
       - restore_cache:
           name: Restore Yarn Package Cache
@@ -30,3 +27,30 @@ jobs:
           key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache/yarn
+  deploy:
+    docker:
+      - image: circleci/node:12.9.1
+    working_directory: ~/repo
+    steps:
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            - yarn-packages-{{ checksum "yarn.lock" }}
+      - checkout
+      - run:
+          name: Install Dependencies
+          command: yarn install
+      - run:
+          name: Deploy
+          command: yarn deploy
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
