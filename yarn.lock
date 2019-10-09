@@ -5175,12 +5175,12 @@ gatsby-page-utils@^0.0.24:
     micromatch "^3.1.10"
     slash "^3.0.0"
 
-gatsby-plugin-layout@^1.1.10:
-  version "1.1.10"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-layout/-/gatsby-plugin-layout-1.1.10.tgz#be1f22dbe831470634ed39d6bb22ab2a2226fa05"
-  integrity sha512-FUvwZyH7YN1L1LUXQiUbqy/YfU7iC4ZfZZ5jD8btCO3yD2h3s6C1c8V35l7Yte9MAVBNGa+0ztKsqLLKKw1g7g==
+gatsby-plugin-layout@^1.1.11:
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-layout/-/gatsby-plugin-layout-1.1.11.tgz#474e41ad6be0072ec495e14d0693240045f5c980"
+  integrity sha512-d6tNgjubefD5Q9Z3XESGW+yGl9E8EpE+Hf7cmXeRZ5g8DVA1D+9eltITEWGknL7brl5MEzlCgH9k+NT2z9z+BQ==
   dependencies:
-    "@babel/runtime" "^7.6.2"
+    "@babel/runtime" "^7.6.3"
 
 gatsby-plugin-lunr@^1.5.2:
   version "1.5.2"
