@@ -6,24 +6,18 @@ import { Message } from "components/atoms/Message";
 const fade = {
   hovered: {
     color: "#595959",
-    fontSize: "16px",
-    lineHeight: "20px",
     fontWeight: 700,
     borderBottomColor: "rgba(89,89,89,1)",
     borderBottomWidth: "3px",
   },
   selected: {
     color: "#e887a3",
-    fontSize: "20px",
-    lineHeight: "24px",
     fontWeight: 700,
     borderBottomColor: "rgba(89,89,89,0)",
     borderBottomWidth: "0px",
   },
   normal: {
     color: "#595959",
-    fontSize: "16px",
-    lineHeight: "20px",
     fontWeight: 500,
     borderBottomColor: "rgba(89,89,89,0)",
     borderBottomWidth: "0px",
