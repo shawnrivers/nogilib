@@ -17,7 +17,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -m 'chore: update [skip ci]'"
   },
   "dependencies": {
-    "framer-motion": "^1.6.10",
+    "framer-motion": "^1.6.12",
     "gatsby": "^2.15.34",
     "gatsby-plugin-layout": "^1.1.11",
     "gatsby-plugin-lunr": "^1.5.2",
