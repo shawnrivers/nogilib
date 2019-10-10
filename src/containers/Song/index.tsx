@@ -131,18 +131,18 @@ const SongContainer = ({ data: { songsJson, allMembersJson } }: SongData) => {
   );
 
   const members = React.useMemo(() => {
-    const singleNumber = Number(songsJson.single.number);
-
     let membersArray = allMembersJson.nodes;
 
+    const singleNumber = songsJson.performersTag.singleNumber;
+
     for (const member of membersArray) {
-      if (songsJson.single.number !== "") {
-        member.profileImage = member.singleImages[singleNumber - 1];
+      if (singleNumber !== "") {
+        member.profileImage = member.singleImages[Number(singleNumber) - 1];
       }
     }
 
     return arrayToObject(membersArray, "name");
-  }, [allMembersJson.nodes, songsJson.single.number]);
+  }, [allMembersJson.nodes, songsJson.performersTag.singleNumber]);
 
   const formation = React.useMemo(
     () =>
