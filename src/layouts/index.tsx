@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import { RouteComponentProps } from "@reach/router";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { IntlProvider } from "react-intl";
 import styles from "./applayout.module.scss";
 import { Language, Links } from "utils/constants";
@@ -153,33 +153,30 @@ const AppLayout = ({
         <title>Nogizaka Lib</title>
         <html lang={locale} />
       </Helmet>
-      <AnimatePresence>
-        <div className={styles.container}>
-          <TopNavigation pathName={pathName} />
-          {isCdsPage ? (
-            <PageTabs
-              items={cdsPageTabs.items}
-              selectedItem={cdsPageTabs.selectedItem}
-            />
-          ) : null}
-          {isMembersPage ? (
-            <PageTabs
-              items={membersPageTabs.items}
-              selectedItem={membersPageTabs.selectedItem}
-            />
-          ) : null}
-          <motion.main
-            key={pathName}
-            initial="hidden"
-            animate="visible"
-            exit="hidden"
-            variants={layoutVariants}
-            className={styles.contents}
-          >
-            {children}
-          </motion.main>
-        </div>
-      </AnimatePresence>
+      <div className={styles.container}>
+        <TopNavigation pathName={pathName} />
+        {isCdsPage ? (
+          <PageTabs
+            items={cdsPageTabs.items}
+            selectedItem={cdsPageTabs.selectedItem}
+          />
+        ) : null}
+        {isMembersPage ? (
+          <PageTabs
+            items={membersPageTabs.items}
+            selectedItem={membersPageTabs.selectedItem}
+          />
+        ) : null}
+        <motion.main
+          key={pathName}
+          initial="hidden"
+          animate="visible"
+          variants={layoutVariants}
+          className={styles.contents}
+        >
+          {children}
+        </motion.main>
+      </div>
     </IntlProvider>
   );
 };
