@@ -9,7 +9,7 @@ const listVariants = {
     opacity: 1,
     transition: {
       when: "beforeChildren",
-      staggerChildren: 0.04,
+      staggerChildren: 0.03,
       duration: 0.1,
     },
   },
