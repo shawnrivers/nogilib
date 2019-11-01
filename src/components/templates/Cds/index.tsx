@@ -1,5 +1,5 @@
 import * as React from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import styles from "./cds.module.scss";
 import { LocalizedLink } from "components/atoms/locales/LocalizedLink";
 import { Artwork } from "components/atoms/Artwork";
@@ -44,25 +44,23 @@ interface CdsProps {
 
 export const Cds = ({ cds, page }: CdsProps) => {
   return (
-    <AnimatePresence>
-      <motion.div
-        key={page}
-        exit="hidden"
-        variants={listVariants}
-        className={styles.grid}
-      >
-        {cds.map(({ node }) => (
-          <motion.div
-            variants={itemVariants}
-            key={page + node.number}
-            className={styles.artwork}
-          >
-            <LocalizedLink to={`/${page}/${node.number}`}>
-              <Artwork images={node.artworks[0]} title={node.title} />
-            </LocalizedLink>
-          </motion.div>
-        ))}
-      </motion.div>
-    </AnimatePresence>
+    <motion.div
+      key={page}
+      exit="hidden"
+      variants={listVariants}
+      className={styles.grid}
+    >
+      {cds.map(({ node }) => (
+        <motion.div
+          variants={itemVariants}
+          key={page + node.number}
+          className={styles.artwork}
+        >
+          <LocalizedLink to={`/${page}/${node.number}`}>
+            <Artwork images={node.artworks[0]} title={node.title} />
+          </LocalizedLink>
+        </motion.div>
+      ))}
+    </motion.div>
   );
 };
