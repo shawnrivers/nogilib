@@ -1,5 +1,5 @@
 import * as React from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import styles from "./members.module.scss";
 import { JoinedGenerationType, MembersType } from "types/responseTypes";
 import { MemberCard } from "components/atoms/MemberCard";
@@ -9,7 +9,7 @@ const listVariants = {
     opacity: 1,
     transition: {
       when: "beforeChildren",
-      staggerChildren: 0.04,
+      staggerChildren: 0.03,
       duration: 0.1,
     },
   },
@@ -51,29 +51,23 @@ interface MembersProps {
 
 export const Members = ({ page, members }: MembersProps) => {
   return (
-    <AnimatePresence>
-      <motion.div
-        key={page}
-        exit="hidden"
-        variants={listVariants}
-        className={styles.grid}
-      >
-        {members.map(({ name, profileImage, nameNotations }) => (
-          <motion.div
-            key={name}
-            variants={itemVariants}
-            className={styles.card}
-          >
-            <MemberCard
-              image={profileImage}
-              nameKey={name}
-              name={nameNotations}
-              highlightBgColor="#e887a3"
-              highlightTextColor="#ffffff"
-            />
-          </motion.div>
-        ))}
-      </motion.div>
-    </AnimatePresence>
+    <motion.div
+      key={page}
+      exit="hidden"
+      variants={listVariants}
+      className={styles.grid}
+    >
+      {members.map(({ name, profileImage, nameNotations }) => (
+        <motion.div key={name} variants={itemVariants} className={styles.card}>
+          <MemberCard
+            image={profileImage}
+            nameKey={name}
+            name={nameNotations}
+            highlightBgColor="#e887a3"
+            highlightTextColor="#ffffff"
+          />
+        </motion.div>
+      ))}
+    </motion.div>
   );
 };
