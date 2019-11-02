@@ -5230,10 +5230,10 @@ gatsby-page-utils@^0.0.25:
     micromatch "^3.1.10"
     slash "^3.0.0"
 
-gatsby-plugin-layout@^1.1.11:
-  version "1.1.11"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-layout/-/gatsby-plugin-layout-1.1.11.tgz#474e41ad6be0072ec495e14d0693240045f5c980"
-  integrity sha512-d6tNgjubefD5Q9Z3XESGW+yGl9E8EpE+Hf7cmXeRZ5g8DVA1D+9eltITEWGknL7brl5MEzlCgH9k+NT2z9z+BQ==
+gatsby-plugin-layout@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-layout/-/gatsby-plugin-layout-1.1.13.tgz#334e2192c5a4e8e802706eadee99e5906528df1f"
+  integrity sha512-/UqHYq4/ODFXH/LHG1PoAJfRbZcE2EGN1ozf502P0W9/AvFBjnXbOr8aD7UXtgE0iO+jZtVr+I0uHbqQnBTmpA==
   dependencies:
     "@babel/runtime" "^7.6.3"
 
