@@ -23,7 +23,7 @@
     "gatsby-plugin-lunr": "^1.5.2",
     "gatsby-plugin-manifest": "^2.2.21",
     "gatsby-plugin-offline": "^3.0.18",
-    "gatsby-plugin-react-helmet": "^3.1.11",
+    "gatsby-plugin-react-helmet": "^3.1.13",
     "gatsby-plugin-resolve-src": "^2.0.0",
     "gatsby-plugin-sass": "^2.1.20",
     "gatsby-plugin-typescript": "^2.1.15",
