@@ -15,6 +15,7 @@ import {
 import { PositionCounter } from "components/atoms/PositionCounter";
 import { LazyImage } from "components/atoms/LazyImage";
 import { Message } from "components/atoms/Message";
+import { classNames } from "utils/strings";
 
 const containerVariants = {
   visible: {
@@ -265,7 +266,12 @@ export const Member = ({
                       <span className={styles.infoTitle}>
                         <Message text="blood type" />
                       </span>
-                      <span className={styles.infoContent}>
+                      <span
+                        className={classNames(
+                          styles.infoContent,
+                          styles.bloodType
+                        )}
+                      >
                         <Message text={bloodType} />
                       </span>
                     </div>
