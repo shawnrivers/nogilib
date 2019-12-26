@@ -1,5 +1,5 @@
 {
-  "name": "nogizaka-lib-redesign",
+  "name": "nogizaka-lib",
   "private": true,
   "description": "A Gatsby powered web application aiming at showing the information about Nogizaka46 in a user-friendly way",
   "version": "0.1.0",
