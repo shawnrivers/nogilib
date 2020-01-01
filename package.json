@@ -38,7 +38,7 @@
     "react-lazyload": "^2.6.5"
   },
   "devDependencies": {
-    "@types/node": "^12.12.14",
+    "@types/node": "^13.1.2",
     "@types/react": "^16.9.15",
     "@types/react-dom": "^16.9.4",
     "@types/react-helmet": "^5.0.14",
