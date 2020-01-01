@@ -5293,7 +5293,7 @@ gatsby-cli@^2.8.16:
     ink "^2.5.0"
     ink-spinner "^3.0.1"
 
-gatsby-core-utils@^1.0.21, gatsby-core-utils@^1.0.22, gatsby-core-utils@^1.0.25:
+gatsby-core-utils@^1.0.22, gatsby-core-utils@^1.0.25:
   version "1.0.25"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.0.25.tgz#8cc8e76a79063c43ac06d9b72100b7c6f1fb5b60"
   integrity sha512-Pz5xueweH9qv5TIW7wwlTxI/CbyzkiE5xvgLicbHbU+InH+lCNt4VuvGP1gQcIRuHMCIbuVKSiVCC7jnxEbtrA==
@@ -5347,15 +5347,15 @@ gatsby-plugin-lunr@^1.5.2:
     lunr "^2.3.6"
     lunr-languages "^1.1.0"
 
-gatsby-plugin-manifest@^2.2.30:
-  version "2.2.30"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.30.tgz#6fef1c34fe1624a60b51b87374f66c063a857e11"
-  integrity sha512-g+QFA6HB9iKCI10Dl51BazMg+ke+DVm+bxMaItBxJD0w8JKByYprMjkz/iPXdYI6YI0zpLl2myCztOn6ngR1Og==
+gatsby-plugin-manifest@^2.2.34:
+  version "2.2.34"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.34.tgz#578ad8ef689f06564097649a941744ace25d4b27"
+  integrity sha512-Jo6fXZpJ/QSejrSj9BTfRNikVDjx9FuuKzT4w7il8I6qKtnM4z/lYOIMxRWkAdlK7dj+fpUlbTeClWjhlKRWAQ==
   dependencies:
-    "@babel/runtime" "^7.7.4"
-    gatsby-core-utils "^1.0.21"
+    "@babel/runtime" "^7.7.6"
+    gatsby-core-utils "^1.0.25"
     semver "^5.7.1"
-    sharp "^0.23.3"
+    sharp "^0.23.4"
 
 gatsby-plugin-offline@^3.0.30:
   version "3.0.30"
@@ -11426,10 +11426,10 @@ shallowequal@^1.0.1, shallowequal@^1.1.0:
   resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
   integrity sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==
 
-sharp@^0.23.3:
-  version "0.23.3"
-  resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.23.3.tgz#549770a4c671b9bd221f00639452a3eb803a0ed1"
-  integrity sha512-pjT4zyviQteXMC1Z8USIiSwQFQbZTlU5J59/UoygE25hh+sSb7PSYI/MZ2MCB1COtxWQuoUAaG3TYIOLon26Mg==
+sharp@^0.23.4:
+  version "0.23.4"
+  resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.23.4.tgz#ca36067cb6ff7067fa6c77b01651cb9a890f8eb3"
+  integrity sha512-fJMagt6cT0UDy9XCsgyLi0eiwWWhQRxbwGmqQT6sY8Av4s0SVsT/deg8fobBQCTDU5iXRgz0rAeXoE2LBZ8g+Q==
   dependencies:
     color "^3.1.2"
     detect-libc "^1.0.3"
