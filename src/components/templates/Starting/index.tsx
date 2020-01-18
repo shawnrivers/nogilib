@@ -347,7 +347,7 @@ export const Starting = () => {
             <Message text="copyright" />
           </h2>
           <p className={styles.text}>
-            © 2019{" "}
+            © 2019 - 2020{" "}
             <a
               href="https://shawnrivers.github.io/"
               target="_blank"
