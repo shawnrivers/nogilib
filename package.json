@@ -19,7 +19,7 @@
   "dependencies": {
     "framer-motion": "^1.7.0",
     "gatsby": "^2.18.17",
-    "gatsby-plugin-layout": "^1.1.18",
+    "gatsby-plugin-layout": "^1.1.21",
     "gatsby-plugin-lunr": "^1.5.2",
     "gatsby-plugin-manifest": "^2.2.34",
     "gatsby-plugin-offline": "^3.0.30",
