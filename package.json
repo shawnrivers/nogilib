@@ -54,7 +54,7 @@
     "eslint-plugin-react-hooks": "^2.3.0",
     "gatsby-plugin-root-import": "^2.0.5",
     "gh-pages": "^2.1.1",
-    "husky": "^3.1.0",
+    "husky": "^4.2.1",
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
     "prettier-stylelint": "^0.4.2",
