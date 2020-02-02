@@ -289,55 +289,63 @@ export const Song = ({
                   )}
                 </div>
               </section>
-              <section className={styles.section}>
-                <h2
-                  className={styles.subheading + " " + styles.creatorsContainer}
-                >
-                  <Message text="creators" />
-                </h2>
-                <div className={styles.creators}>
-                  {creators.lyrics.length > 0 ? (
-                    <div className={styles.creatorsItem}>
-                      <span className={styles.creatorWork}>
-                        <Message text="lyrics" />
-                      </span>
-                      <span className={styles.creatorNames}>
-                        <LocalizedList list={creators.lyrics} />
-                      </span>
-                    </div>
-                  ) : null}
-                  {creators.compose.length > 0 ? (
-                    <div className={styles.creatorsItem}>
-                      <span className={styles.creatorWork}>
-                        <Message text="compose" />
-                      </span>
-                      <span className={styles.creatorNames}>
-                        <LocalizedList list={creators.compose} />
-                      </span>
-                    </div>
-                  ) : null}
-                  {creators.arrange.length > 0 ? (
-                    <div className={styles.creatorsItem}>
-                      <span className={styles.creatorWork}>
-                        <Message text="arrange" />
-                      </span>
-                      <span className={styles.creatorNames}>
-                        <LocalizedList list={creators.arrange} />
-                      </span>
-                    </div>
-                  ) : null}
-                  {creators.direct.length > 0 ? (
-                    <div className={styles.creatorsItem}>
-                      <span className={styles.creatorWork}>
-                        <Message text="direct" />
-                      </span>
-                      <span className={styles.creatorNames}>
-                        <LocalizedList list={creators.direct} />
-                      </span>
-                    </div>
-                  ) : null}
-                </div>
-              </section>
+              {creators.lyrics.length +
+                creators.compose.length +
+                creators.arrange.length +
+                creators.direct.length >
+              0 ? (
+                <section className={styles.section}>
+                  <h2
+                    className={
+                      styles.subheading + " " + styles.creatorsContainer
+                    }
+                  >
+                    <Message text="creators" />
+                  </h2>
+                  <div className={styles.creators}>
+                    {creators.lyrics.length > 0 ? (
+                      <div className={styles.creatorsItem}>
+                        <span className={styles.creatorWork}>
+                          <Message text="lyrics" />
+                        </span>
+                        <span className={styles.creatorNames}>
+                          <LocalizedList list={creators.lyrics} />
+                        </span>
+                      </div>
+                    ) : null}
+                    {creators.compose.length > 0 ? (
+                      <div className={styles.creatorsItem}>
+                        <span className={styles.creatorWork}>
+                          <Message text="compose" />
+                        </span>
+                        <span className={styles.creatorNames}>
+                          <LocalizedList list={creators.compose} />
+                        </span>
+                      </div>
+                    ) : null}
+                    {creators.arrange.length > 0 ? (
+                      <div className={styles.creatorsItem}>
+                        <span className={styles.creatorWork}>
+                          <Message text="arrange" />
+                        </span>
+                        <span className={styles.creatorNames}>
+                          <LocalizedList list={creators.arrange} />
+                        </span>
+                      </div>
+                    ) : null}
+                    {creators.direct.length > 0 ? (
+                      <div className={styles.creatorsItem}>
+                        <span className={styles.creatorWork}>
+                          <Message text="direct" />
+                        </span>
+                        <span className={styles.creatorNames}>
+                          <LocalizedList list={creators.direct} />
+                        </span>
+                      </div>
+                    ) : null}
+                  </div>
+                </section>
+              ) : null}
             </motion.div>
           </motion.div>
         </motion.div>
