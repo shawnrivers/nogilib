@@ -1,5 +1,100 @@
 [
   {
+    "title": "タイトル未定",
+    "number": "25",
+    "release": "2020-03-25",
+    "artworks": [
+      {
+        "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_large.png",
+        "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_medium.png",
+        "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_small.png"
+      },
+      {
+        "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_large.png",
+        "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_medium.png",
+        "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_small.png"
+      },
+      {
+        "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_large.png",
+        "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_medium.png",
+        "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_small.png"
+      },
+      {
+        "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_large.png",
+        "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_medium.png",
+        "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_small.png"
+      },
+      {
+        "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_large.png",
+        "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_medium.png",
+        "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_small.png"
+      }
+    ],
+    "shopping": [],
+    "songs": [
+      {
+        "number": 1,
+        "title": "タイトル未定",
+        "key": "untitle",
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
+        "type": "title",
+        "artwork": {
+          "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_large.png",
+          "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_medium.png",
+          "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_small.png"
+        },
+        "focusPerformers": {
+          "type": "center",
+          "name": [
+            "白石麻衣"
+          ]
+        }
+      },
+      {
+        "number": 2,
+        "title": "タイトル未定（アンダー曲）",
+        "key": "untitleunder",
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
+        "type": "under",
+        "artwork": {
+          "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_large.png",
+          "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_medium.png",
+          "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_small.png"
+        },
+        "focusPerformers": {
+          "type": "center",
+          "name": []
+        }
+      }
+    ],
+    "behindPerformers": {
+      "trainees": [
+        "kakehashisayaka",
+        "kanagawasaya",
+        "kitagawayuri",
+        "shibatayuna",
+        "seimiyarei",
+        "tamuramayu",
+        "hayakawaseira",
+        "yakubomio",
+        "tsutsuiayame"
+      ],
+      "skips": []
+    }
+  },
+  {
     "title": "夜明けまで強がらなくてもいい",
     "number": "24",
     "release": "2019-09-04",
