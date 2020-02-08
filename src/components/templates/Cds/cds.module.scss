@@ -19,6 +19,22 @@
   @media (max-width: 599px) {
     padding-bottom: $bottom-spacing-with-navigation-bar;
   }
+
+  @media (min-width: 248px) and (max-width: 471px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 472px) and (max-width: 695px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: 696px) and (max-width: 919px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: 920px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 .artwork {
@@ -26,28 +42,4 @@
   max-height: 200px;
   max-width: 200px;
   width: 100%;
-}
-
-@media (min-width: 248px) and (max-width: 471px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 472px) and (max-width: 695px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 696px) and (max-width: 919px) {
-  .grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (min-width: 920px) {
-  .grid {
-    grid-template-columns: repeat(5, 1fr);
-  }
 }
