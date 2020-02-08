@@ -17,45 +17,33 @@
   @media (max-width: 599px) {
     padding-bottom: $bottom-spacing-with-navigation-bar;
   }
+
+  @media (min-width: 208px) and (max-width: 379px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 380px) and (max-width: 551px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: 552px) and (max-width: 723px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: 724px) and (max-width: 895px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  @media (min-width: 896px) and (max-width: 1067px) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  @media (min-width: 1068px) {
+    grid-template-columns: repeat(7, 1fr);
+  }
 }
 
 .card {
   height: 100%;
   width: 100%;
-}
-
-@media (min-width: 208px) and (max-width: 379px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 380px) and (max-width: 551px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 552px) and (max-width: 723px) {
-  .grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (min-width: 724px) and (max-width: 895px) {
-  .grid {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-
-@media (min-width: 896px) and (max-width: 1067px) {
-  .grid {
-    grid-template-columns: repeat(6, 1fr);
-  }
-}
-
-@media (min-width: 1068px) {
-  .grid {
-    grid-template-columns: repeat(7, 1fr);
-  }
 }
