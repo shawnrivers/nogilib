@@ -12524,6 +12524,1236 @@
     }
   },
   {
+    "name": "kuromiharuka",
+    "nameNotations": {
+      "lastName": "黒見",
+      "firstName": "明香",
+      "lastNameFurigana": "くろみ",
+      "firstNameFurigana": "はるか",
+      "lastNameEn": "kuromi",
+      "firstNameEn": "haruka"
+    },
+    "glowStickColor": {
+      "left": "",
+      "right": ""
+    },
+    "profileImage": {
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/kuromiharuka_large.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/kuromiharuka_small.jpg"
+    },
+    "singleImages": [
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/kuromiharuka_large.jpg",
+        "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/kuromiharuka_small.jpg"
+      },
+      {
+        "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/kuromiharuka_large.jpg",
+        "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/kuromiharuka_small.jpg"
+      }
+    ],
+    "join": "fourth",
+    "birthday": "2004-01-19",
+    "height": 162,
+    "bloodType": "o",
+    "origin": "東京都",
+    "sites": [
+      {
+        "title": "Profile",
+        "url": "https://sakamichi-kenshusei.com/s/sk01/artist/4"
+      }
+    ],
+    "photoAlbums": [],
+    "units": [],
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      },
+      {
+        "singleNumber": "25",
+        "position": "none"
+      }
+    ],
+    "positionsCounter": {
+      "center": 0,
+      "fukujin": 0,
+      "selected": 0,
+      "under": 0
+    },
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    }
+  },
+  {
+    "name": "satourika",
+    "nameNotations": {
+      "lastName": "佐藤",
+      "firstName": "璃果",
+      "lastNameFurigana": "さとう",
+      "firstNameFurigana": "りか",
+      "lastNameEn": "satou",
+      "firstNameEn": "rika"
+    },
+    "glowStickColor": {
+      "left": "",
+      "right": ""
+    },
+    "profileImage": {
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/satourika_large.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/satourika_small.jpg"
+    },
+    "singleImages": [
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/satourika_large.jpg",
+        "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/satourika_small.jpg"
+      },
+      {
+        "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/satourika_large.jpg",
+        "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/satourika_small.jpg"
+      }
+    ],
+    "join": "fourth",
+    "birthday": "2001-08-09",
+    "height": 158,
+    "bloodType": "b",
+    "origin": "岩手県",
+    "sites": [
+      {
+        "title": "Profile",
+        "url": "https://sakamichi-kenshusei.com/s/sk01/artist/6"
+      }
+    ],
+    "photoAlbums": [],
+    "units": [],
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      },
+      {
+        "singleNumber": "25",
+        "position": "none"
+      }
+    ],
+    "positionsCounter": {
+      "center": 0,
+      "fukujin": 0,
+      "selected": 0,
+      "under": 0
+    },
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    }
+  },
+  {
+    "name": "hayashiruna",
+    "nameNotations": {
+      "lastName": "林",
+      "firstName": "瑠奈",
+      "lastNameFurigana": "はやし",
+      "firstNameFurigana": "るな",
+      "lastNameEn": "hayashi",
+      "firstNameEn": "runa"
+    },
+    "glowStickColor": {
+      "left": "",
+      "right": ""
+    },
+    "profileImage": {
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/hayashiruna_large.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/hayashiruna_small.jpg"
+    },
+    "singleImages": [
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/hayashiruna_large.jpg",
+        "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/hayashiruna_small.jpg"
+      },
+      {
+        "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/hayashiruna_large.jpg",
+        "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/hayashiruna_small.jpg"
+      }
+    ],
+    "join": "fourth",
+    "birthday": "2003-10-02",
+    "height": 163,
+    "bloodType": "o",
+    "origin": "神奈川県",
+    "sites": [
+      {
+        "title": "Profile",
+        "url": "https://sakamichi-kenshusei.com/s/sk01/artist/8"
+      }
+    ],
+    "photoAlbums": [],
+    "units": [],
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      },
+      {
+        "singleNumber": "25",
+        "position": "none"
+      }
+    ],
+    "positionsCounter": {
+      "center": 0,
+      "fukujin": 0,
+      "selected": 0,
+      "under": 0
+    },
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    }
+  },
+  {
+    "name": "matsuomiyu",
+    "nameNotations": {
+      "lastName": "松尾",
+      "firstName": "美佑",
+      "lastNameFurigana": "まつお",
+      "firstNameFurigana": "みゆ",
+      "lastNameEn": "matsuo",
+      "firstNameEn": "miyu"
+    },
+    "glowStickColor": {
+      "left": "",
+      "right": ""
+    },
+    "profileImage": {
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/matsuomiyu_large.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/matsuomiyu_small.jpg"
+    },
+    "singleImages": [
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/matsuomiyu_large.jpg",
+        "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/matsuomiyu_small.jpg"
+      },
+      {
+        "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/matsuomiyu_large.jpg",
+        "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/matsuomiyu_small.jpg"
+      }
+    ],
+    "join": "fourth",
+    "birthday": "2004-01-03",
+    "height": 165,
+    "bloodType": "o",
+    "origin": "千葉県",
+    "sites": [
+      {
+        "title": "Profile",
+        "url": "https://sakamichi-kenshusei.com/s/sk01/artist/10"
+      }
+    ],
+    "photoAlbums": [],
+    "units": [],
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      },
+      {
+        "singleNumber": "25",
+        "position": "none"
+      }
+    ],
+    "positionsCounter": {
+      "center": 0,
+      "fukujin": 0,
+      "selected": 0,
+      "under": 0
+    },
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    }
+  },
+  {
+    "name": "yumikinao",
+    "nameNotations": {
+      "lastName": "弓木",
+      "firstName": "奈於",
+      "lastNameFurigana": "ゆみき",
+      "firstNameFurigana": "なお",
+      "lastNameEn": "yumiki",
+      "firstNameEn": "nao"
+    },
+    "glowStickColor": {
+      "left": "",
+      "right": ""
+    },
+    "profileImage": {
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/yumikinao_large.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/yumikinao_small.jpg"
+    },
+    "singleImages": [
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "",
+        "small": ""
+      },
+      {
+        "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/yumikinao_large.jpg",
+        "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/yumikinao_small.jpg"
+      },
+      {
+        "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/yumikinao_large.jpg",
+        "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/24/yumikinao_small.jpg"
+      }
+    ],
+    "join": "fourth",
+    "birthday": "1999-02-03",
+    "height": 165,
+    "bloodType": "a",
+    "origin": "京都府",
+    "sites": [
+      {
+        "title": "Profile",
+        "url": "https://sakamichi-kenshusei.com/s/sk01/artist/10"
+      }
+    ],
+    "photoAlbums": [],
+    "units": [],
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      },
+      {
+        "singleNumber": "25",
+        "position": "none"
+      }
+    ],
+    "positionsCounter": {
+      "center": 0,
+      "fukujin": 0,
+      "selected": 0,
+      "under": 0
+    },
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    }
+  },
+  {
     "name": "kawagohina",
     "nameNotations": {
       "lastName": "川後",
