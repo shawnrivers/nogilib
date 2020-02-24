@@ -12588,10 +12588,10 @@
     }
   },
   {
-    "title": "タイトル未定",
-    "key": "untitle",
+    "title": "しあわせの保護色",
+    "key": "hogoshoku",
     "single": {
-      "title": "タイトル未定",
+      "title": "しあわせの保護色",
       "number": "25"
     },
     "albums": [],
@@ -12656,7 +12656,7 @@
     "title": "タイトル未定（アンダー曲）",
     "key": "untitleunder",
     "single": {
-      "title": "タイトル未定",
+      "title": "しあわせの保護色",
       "number": "25"
     },
     "albums": [],
