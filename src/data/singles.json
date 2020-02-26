@@ -58,8 +58,8 @@
       },
       {
         "number": 2,
-        "title": "タイトル未定（アンダー曲）",
-        "key": "untitleunder",
+        "title": "サヨナラ Stay with me",
+        "key": "staywithme",
         "inCdType": [
           "A",
           "B",
@@ -67,7 +67,99 @@
           "D",
           "T"
         ],
-        "type": "under",
+        "type": "coupling",
+        "artwork": {
+          "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_large.png",
+          "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_medium.png",
+          "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_small.png"
+        },
+        "focusPerformers": {
+          "type": "center",
+          "name": []
+        }
+      },
+      {
+        "number": 3,
+        "title": "じゃあね。",
+        "key": "jaane",
+        "inCdType": [
+          "A"
+        ],
+        "type": "solo",
+        "artwork": {
+          "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_large.png",
+          "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_medium.png",
+          "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_small.png"
+        },
+        "focusPerformers": {
+          "type": "solo",
+          "name": [
+            "白石麻衣"
+          ]
+        }
+      },
+      {
+        "number": 4,
+        "title": "アナスターシャ",
+        "key": "anastasia",
+        "inCdType": [
+          "B"
+        ],
+        "type": "second generation",
+        "artwork": {
+          "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_large.png",
+          "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_medium.png",
+          "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_small.png"
+        },
+        "focusPerformers": {
+          "type": "center",
+          "name": []
+        }
+      },
+      {
+        "number": 5,
+        "title": "毎日がBrand new day",
+        "key": "brandnewday",
+        "inCdType": [
+          "C"
+        ],
+        "type": "third generation",
+        "artwork": {
+          "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_large.png",
+          "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_medium.png",
+          "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_small.png"
+        },
+        "focusPerformers": {
+          "type": "center",
+          "name": []
+        }
+      },
+      {
+        "number": 6,
+        "title": "I see…",
+        "key": "isee",
+        "inCdType": [
+          "D"
+        ],
+        "type": "fourth generation",
+        "artwork": {
+          "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_large.png",
+          "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_medium.png",
+          "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_small.png"
+        },
+        "focusPerformers": {
+          "type": "center",
+          "name": []
+        }
+      },
+      {
+        "number": 7,
+        "title": "ファンタスティック三色パン",
+        "key": "fantastic",
+        "inCdType": [
+          "T"
+        ],
+        "type": "coupling",
         "artwork": {
           "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_large.png",
           "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_medium.png",
@@ -78,6 +170,20 @@
           "name": []
         }
       }
+    ],
+    "underMembers": [
+      "itoujunna",
+      "itouriria",
+      "sakaguchitamami",
+      "sasakikotoko",
+      "satoukaede",
+      "suzukiayane",
+      "teradaranze",
+      "nakamurareno",
+      "mukaihazuki",
+      "yamazakirena",
+      "yoshidaayanochristie",
+      "watanabemiria"
     ],
     "behindPerformers": {
       "trainees": [
@@ -277,6 +383,24 @@
           ]
         }
       }
+    ],
+    "underMembers": [
+      "itoujunna",
+      "itouriria",
+      "iwamotorenka",
+      "sakaguchitamami",
+      "sasakikotoko",
+      "satoukaede",
+      "suzukiayane",
+      "teradaranze",
+      "nakadakana",
+      "nakamurareno",
+      "higuchihina",
+      "mukaihazuki",
+      "yamazakirena",
+      "yoshidaayanochristie",
+      "watanabemiria",
+      "wadamaaya"
     ],
     "behindPerformers": {
       "trainees": [
@@ -486,6 +610,18 @@
         }
       }
     ],
+    "underMembers": [
+      "itoujunna",
+      "sasakikotoko",
+      "teradaranze",
+      "nakadakana",
+      "nakamurareno",
+      "higuchihina",
+      "mukaihazuki",
+      "yamazakirena",
+      "yoshidaayanochristie",
+      "wadamaaya"
+    ],
     "behindPerformers": {
       "trainees": [
         "endousakura",
@@ -692,6 +828,26 @@
         }
       }
     ],
+    "underMembers": [
+      "suzukiayane",
+      "higuchihina",
+      "kitanohinako",
+      "teradaranze",
+      "iwamotorenka",
+      "sakaguchitamami",
+      "yamazakirena",
+      "kuboshiori",
+      "nakadakana",
+      "watanabemiria",
+      "mukaihazuki",
+      "itoujunna",
+      "wadamaaya",
+      "nakamurareno",
+      "kawagohina",
+      "itoukarin",
+      "sasakikotoko",
+      "yoshidaayanochristie"
+    ],
     "behindPerformers": {
       "trainees": [],
       "skips": []
@@ -882,6 +1038,26 @@
         }
       }
     ],
+    "underMembers": [
+      "higuchihina",
+      "nakadakana",
+      "itouriria",
+      "yamazakirena",
+      "sakaguchitamami",
+      "kitanohinako",
+      "teradaranze",
+      "watanabemiria",
+      "satoukaede",
+      "yoshidaayanochristie",
+      "wadamaaya",
+      "kawagohina",
+      "noujouami",
+      "nakamurareno",
+      "itoukarin",
+      "sasakikotoko",
+      "mukaihazuki",
+      "itoujunna"
+    ],
     "behindPerformers": {
       "trainees": [],
       "skips": [
@@ -1070,6 +1246,29 @@
           ]
         }
       }
+    ],
+    "underMembers": [
+      "umezawaminami",
+      "watanabemiria",
+      "nakadakana",
+      "suzukiayane",
+      "saitouyuuri",
+      "yamazakirena",
+      "itouriria",
+      "mukaihazuki",
+      "itoukarin",
+      "iwamotorenka",
+      "itoujunna",
+      "sakaguchitamami",
+      "saitouchiharu",
+      "satoukaede",
+      "noujouami",
+      "kawagohina",
+      "yoshidaayanochristie",
+      "sasakikotoko",
+      "nakamurareno",
+      "wadamaaya",
+      "sagaraiori"
     ],
     "behindPerformers": {
       "trainees": [],
@@ -1263,6 +1462,22 @@
           ]
         }
       }
+    ],
+    "underMembers": [
+      "watanabemiria",
+      "higuchihina",
+      "teradaranze",
+      "noujouami",
+      "suzukiayane",
+      "yamazakirena",
+      "saitouchiharu",
+      "sagaraiori",
+      "sasakikotoko",
+      "itoukarin",
+      "kawagohina",
+      "kawamuramahiro",
+      "wadamaaya",
+      "itoujunna"
     ],
     "behindPerformers": {
       "trainees": [
@@ -1469,20 +1684,38 @@
         }
       }
     ],
+    "underMembers": [
+      "higuchihina",
+      "watanabemiria",
+      "nakamotohimeka",
+      "kitanohinako",
+      "teradaranze",
+      "saitouyuuri",
+      "nakadakana",
+      "yamazakirena",
+      "suzukiayane",
+      "itoukarin",
+      "itoujunna",
+      "saitouchiharu",
+      "noujouami",
+      "sagaraiori",
+      "kawagohina",
+      "kawamuramahiro",
+      "sasakikotoko",
+      "wadamaaya"
+    ],
     "behindPerformers": {
       "trainees": [
         "itouriria",
         "iwamotorenka",
         "umezawaminami",
-        "oozonomomoko",
         "kuboshiori",
         "sakaguchitamami",
         "satoukaede",
         "nakamurareno",
         "mukaihazuki",
         "yamashitamizuki",
-        "yoshidaayanochristie",
-        "yodayuuki"
+        "yoshidaayanochristie"
       ],
       "skips": []
     }
@@ -1669,6 +1902,20 @@
           ]
         }
       }
+    ],
+    "underMembers": [
+      "yamazakirena",
+      "watanabemiria",
+      "suzukiayane",
+      "saitouchiharu",
+      "itoukarin",
+      "noujouami",
+      "sagaraiori",
+      "kawagohina",
+      "sasakikotoko",
+      "wadamaaya",
+      "itoujunna",
+      "kawamuramahiro"
     ],
     "behindPerformers": {
       "trainees": [
@@ -1873,6 +2120,24 @@
         }
       }
     ],
+    "underMembers": [
+      "kawamuramahiro",
+      "higuchihina",
+      "teradaranze",
+      "nakadakana",
+      "noujouami",
+      "saitouyuuri",
+      "yamazakirena",
+      "watanabemiria",
+      "suzukiayane",
+      "saitouchiharu",
+      "itoujunna",
+      "wadamaaya",
+      "itoukarin",
+      "kawagohina",
+      "sasakikotoko",
+      "sagaraiori"
+    ],
     "behindPerformers": {
       "trainees": [],
       "skips": []
@@ -2060,6 +2325,27 @@
           ]
         }
       }
+    ],
+    "underMembers": [
+      "teradaranze",
+      "itoumarika",
+      "higuchihina",
+      "inouesayuri",
+      "watanabemiria",
+      "saitouchiharu",
+      "saitouyuuri",
+      "shinuchimai",
+      "nakadakana",
+      "noujouami",
+      "kawamuramahiro",
+      "yamazakirena",
+      "itoujunna",
+      "kawagohina",
+      "suzukiayane",
+      "wadamaaya",
+      "sagaraiori",
+      "sasakikotoko",
+      "itoukarin"
     ],
     "behindPerformers": {
       "trainees": [],
@@ -2250,6 +2536,27 @@
         }
       }
     ],
+    "underMembers": [
+      "saitouyuuri",
+      "teradaranze",
+      "nakamotohimeka",
+      "kitanohinako",
+      "higuchihina",
+      "itoukarin",
+      "kawagohina",
+      "nakadakana",
+      "shinuchimai",
+      "noujouami",
+      "saitouchiharu",
+      "watanabemiria",
+      "suzukiayane",
+      "yamazakirena",
+      "sasakikotoko",
+      "sagaraiori",
+      "kawagohina",
+      "wadamaaya",
+      "itoujunna"
+    ],
     "behindPerformers": {
       "trainees": [],
       "skips": []
@@ -2412,6 +2719,29 @@
           ]
         }
       }
+    ],
+    "underMembers": [
+      "kitanohinako",
+      "horimiona",
+      "nakamotohimeka",
+      "teradaranze",
+      "nakadakana",
+      "shinuchimai",
+      "kawamuramahiro",
+      "nagashimaseira",
+      "noujouami",
+      "higuchihina",
+      "saitouchiharu",
+      "saitouyuuri",
+      "kawagohina",
+      "watanabemiria",
+      "yamazakirena",
+      "sasakikotoko",
+      "sagaraiori",
+      "itoujunna",
+      "suzukiayane",
+      "itoukarin",
+      "wadamaaya"
     ],
     "behindPerformers": {
       "trainees": [],
@@ -2599,6 +2929,26 @@
         }
       }
     ],
+    "underMembers": [
+      "kawamuramahiro",
+      "kitanohinako",
+      "horimiona",
+      "nakamotohimeka",
+      "nakadakana",
+      "sagaraiori",
+      "kawagohina",
+      "nagashimaseira",
+      "noujouami",
+      "saitouchiharu",
+      "wadamaaya",
+      "sasakikotoko",
+      "teradaranze",
+      "itoukarin",
+      "watanabemiria",
+      "suzukiayane",
+      "itoujunna",
+      "higuchihina"
+    ],
     "behindPerformers": {
       "trainees": [],
       "skips": [
@@ -2761,6 +3111,22 @@
           ]
         }
       }
+    ],
+    "underMembers": [
+      "saitouyuuri",
+      "nakamotohimeka",
+      "inouesayuri",
+      "noujouami",
+      "nagashimaseira",
+      "nakadakana",
+      "shinuchimai",
+      "kawamuramahiro",
+      "kitanohinako",
+      "kawagohina",
+      "higuchihina",
+      "itoukarin",
+      "wadamaaya",
+      "saitouchiharu"
     ],
     "behindPerformers": {
       "trainees": [
@@ -2938,6 +3304,25 @@
         }
       }
     ],
+    "underMembers": [
+      "saitouasuka",
+      "inouesayuri",
+      "itoumarika",
+      "nagashimaseira",
+      "nakamotohimeka",
+      "saitouyuuri",
+      "nakadakana",
+      "noujouami",
+      "kawamuramahiro",
+      "wadamaaya",
+      "higuchihina",
+      "itoukarin",
+      "kawagohina",
+      "hatanakaseira",
+      "kitanohinako",
+      "yamatorina",
+      "shinuchimai"
+    ],
     "behindPerformers": {
       "trainees": [
         "itoujunna",
@@ -3105,6 +3490,24 @@
           ]
         }
       }
+    ],
+    "underMembers": [
+      "kawagohina",
+      "saitouasuka",
+      "itoumarika",
+      "higuchihina",
+      "wadamaaya",
+      "nagashimaseira",
+      "nakadakana",
+      "noujouami",
+      "nakamotohimeka",
+      "kawamuramahiro",
+      "saitouchiharu",
+      "kitanohinako",
+      "hatanakaseira",
+      "itounene",
+      "ichikirena",
+      "shinuchimai"
     ],
     "behindPerformers": {
       "trainees": [
@@ -3277,6 +3680,25 @@
         }
       }
     ],
+    "underMembers": [
+      "inouesayuri",
+      "saitouasuka",
+      "itoumarika",
+      "hoshinominami",
+      "saitouyuuri",
+      "nagashimaseira",
+      "nakadakana",
+      "etoumisa",
+      "kawagohina",
+      "nakamotohimeka",
+      "saitouchiharu",
+      "itounene",
+      "ichikirena",
+      "shinuchimai",
+      "hatanakaseira",
+      "yamatorina",
+      "noujouami"
+    ],
     "behindPerformers": {
       "trainees": [
         "itoukarin",
@@ -3448,6 +3870,21 @@
           ]
         }
       }
+    ],
+    "underMembers": [
+      "inouesayuri",
+      "hoshinominami",
+      "saitouyuuri",
+      "noujouami",
+      "higuchihina",
+      "nakadakana",
+      "nagashimaseira",
+      "kawamuramahiro",
+      "saitouchiharu",
+      "hatanakaseira",
+      "yamatorina",
+      "itounene",
+      "wadamaaya"
     ],
     "behindPerformers": {
       "trainees": [
@@ -3626,6 +4063,24 @@
         }
       }
     ],
+    "underMembers": [
+      "higuchihina",
+      "saitouasuka",
+      "nakamotohimeka",
+      "noujouami",
+      "etoumisa",
+      "kawamuramahiro",
+      "itounene",
+      "nagashimaseira",
+      "saitouchiharu",
+      "ichikirena",
+      "yamatorina",
+      "kawagohina",
+      "wadamaaya",
+      "kashiwayukina",
+      "hatanakaseira",
+      "miyazawaseira"
+    ],
     "behindPerformers": {
       "trainees": [],
       "skips": []
@@ -3790,6 +4245,25 @@
         }
       }
     ],
+    "underMembers": [
+      "itoumarika",
+      "saitouyuuri",
+      "saitouasuka",
+      "kawamuramahiro",
+      "etoumisa",
+      "noujouami",
+      "ichikirena",
+      "yamatorina",
+      "wadamaaya",
+      "nakamotohimeka",
+      "saitouchiharu",
+      "kashiwayukina",
+      "andoumikumo",
+      "hatanakaseira",
+      "higuchihina",
+      "kawagohina",
+      "miyazawaseira"
+    ],
     "behindPerformers": {
       "trainees": [],
       "skips": []
@@ -3953,6 +4427,24 @@
         }
       }
     ],
+    "underMembers": [
+      "saitouyuuri",
+      "nakadakana",
+      "etoumisa",
+      "itoumarika",
+      "kawagohina",
+      "higuchihina",
+      "itounene",
+      "kawamuramahiro",
+      "nakamotohimeka",
+      "hatanakaseira",
+      "nagashimaseira",
+      "miyazawaseira",
+      "yamatorina",
+      "andoumikumo",
+      "wadamaaya",
+      "saitouchiharu"
+    ],
     "behindPerformers": {
       "trainees": [],
       "skips": [
@@ -4114,6 +4606,25 @@
           ]
         }
       }
+    ],
+    "underMembers": [
+      "higuchihina",
+      "itounene",
+      "saitouasuka",
+      "etoumisa",
+      "noujouami",
+      "kawagohina",
+      "kawamuramahiro",
+      "kashiwayukina",
+      "yamatorina",
+      "nagashimaseira",
+      "miyazawaseira",
+      "andoumikumo",
+      "hatanakaseira",
+      "iwaseyumiko",
+      "wadamaaya",
+      "nakamotohimeka",
+      "saitouchiharu"
     ],
     "behindPerformers": {
       "trainees": [],
@@ -4280,6 +4791,25 @@
         }
       }
     ],
+    "underMembers": [
+      "fukagawamai",
+      "itoumarika",
+      "wakatsukiyumi",
+      "kawagohina",
+      "kawamuramahiro",
+      "saitouchiharu",
+      "nagashimaseira",
+      "etoumisa",
+      "itounene",
+      "saitouasuka",
+      "nakamotohimeka",
+      "higuchihina",
+      "kashiwayukina",
+      "andoumikumo",
+      "yamatorina",
+      "noujouami",
+      "wadamaaya"
+    ],
     "behindPerformers": {
       "trainees": [],
       "skips": [
@@ -4442,6 +4972,25 @@
           ]
         }
       }
+    ],
+    "underMembers": [
+      "andoumikumo",
+      "iwaseyumiko",
+      "itounene",
+      "hatanakaseira",
+      "itoumarika",
+      "wadamaaya",
+      "nakamotohimeka",
+      "saitouchiharu",
+      "yamatorina",
+      "nagashimaseira",
+      "higuchihina",
+      "kawagohina",
+      "wakatsukiyumi",
+      "kashiwayukina",
+      "etoumisa",
+      "fukagawamai",
+      "miyazawaseira"
     ],
     "behindPerformers": {
       "trainees": [],
