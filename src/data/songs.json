@@ -3065,7 +3065,6 @@
       "thirdRow": [
         "kawamuramahiro",
         "nakamotohimeka",
-        "kashiwayukina",
         "hatanakaseira",
         "nagashimaseira"
       ],
@@ -12653,8 +12652,8 @@
     }
   },
   {
-    "title": "タイトル未定（アンダー曲）",
-    "key": "untitleunder",
+    "title": "サヨナラ Stay with me",
+    "key": "staywithme",
     "single": {
       "title": "しあわせの保護色",
       "number": "25"
@@ -12666,7 +12665,7 @@
       "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_small.png"
     },
     "musicVideo": "",
-    "type": "under",
+    "type": "coupling",
     "creators": {
       "lyrics": [],
       "compose": [],
@@ -12680,23 +12679,252 @@
       "unit": ""
     },
     "performersTag": {
-      "name": "under",
+      "name": "",
+      "singleNumber": "25"
+    },
+    "formations": {
+      "firstRow": [
+        "akimotomanatsu",
+        "ikutaerika",
+        "saitouasuka",
+        "matsumurasayuri",
+        "kuboshiori",
+        "yodayuuki",
+        "endousakura",
+        "kakiharuka"
+      ],
+      "secondRow": [],
+      "thirdRow": [],
+      "fourthRow": []
+    }
+  },
+  {
+    "title": "じゃあね。",
+    "key": "jaane",
+    "single": {
+      "title": "しあわせの保護色",
+      "number": "25"
+    },
+    "albums": [],
+    "artwork": {
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_large.png",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_medium.png",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_small.png"
+    },
+    "musicVideo": "",
+    "type": "solo",
+    "creators": {
+      "lyrics": [
+        "白石麻衣"
+      ],
+      "compose": [],
+      "arrange": [],
+      "direct": []
+    },
+    "performers": {
+      "center": [],
+      "fukujin": [],
+      "solo": "",
+      "unit": ""
+    },
+    "performersTag": {
+      "name": "",
+      "singleNumber": "25"
+    },
+    "formations": {
+      "firstRow": [
+        "shiraishimai"
+      ],
+      "secondRow": [],
+      "thirdRow": [],
+      "fourthRow": []
+    }
+  },
+  {
+    "title": "アナスターシャ",
+    "key": "anastasia",
+    "single": {
+      "title": "しあわせの保護色",
+      "number": "25"
+    },
+    "albums": [],
+    "artwork": {
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_large.png",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_medium.png",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_small.png"
+    },
+    "musicVideo": "",
+    "type": "second generation",
+    "creators": {
+      "lyrics": [],
+      "compose": [],
+      "arrange": [],
+      "direct": []
+    },
+    "performers": {
+      "center": [],
+      "fukujin": [],
+      "solo": "",
+      "unit": ""
+    },
+    "performersTag": {
+      "name": "second generation",
       "singleNumber": "25"
     },
     "formations": {
       "firstRow": [
         "itoujunna",
-        "itouriria",
-        "sakaguchitamami",
+        "kitanohinako",
         "sasakikotoko",
-        "satoukaede",
+        "shinuchimai",
         "suzukiayane",
         "teradaranze",
+        "horimiona",
+        "yamazakirena",
+        "watanabemiria"
+      ],
+      "secondRow": [],
+      "thirdRow": [],
+      "fourthRow": []
+    }
+  },
+  {
+    "title": "毎日がBrand new day",
+    "key": "brandnewday",
+    "single": {
+      "title": "しあわせの保護色",
+      "number": "25"
+    },
+    "albums": [],
+    "artwork": {
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_large.png",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_medium.png",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_small.png"
+    },
+    "musicVideo": "",
+    "type": "third generation",
+    "creators": {
+      "lyrics": [],
+      "compose": [],
+      "arrange": [],
+      "direct": []
+    },
+    "performers": {
+      "center": [],
+      "fukujin": [],
+      "solo": "",
+      "unit": ""
+    },
+    "performersTag": {
+      "name": "third generation",
+      "singleNumber": "25"
+    },
+    "formations": {
+      "firstRow": [
+        "itouriria",
+        "iwamotorenka",
+        "umezawaminami",
+        "oozonomomoko",
+        "kuboshiori",
+        "sakaguchitamami",
+        "satoukaede",
         "nakamurareno",
         "mukaihazuki",
-        "yamazakirena",
+        "yamashitamizuki",
         "yoshidaayanochristie",
-        "watanabemiria"
+        "yodayuuki"
+      ],
+      "secondRow": [],
+      "thirdRow": [],
+      "fourthRow": []
+    }
+  },
+  {
+    "title": "I see…",
+    "key": "isee",
+    "single": {
+      "title": "しあわせの保護色",
+      "number": "25"
+    },
+    "albums": [],
+    "artwork": {
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_large.png",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_medium.png",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_small.png"
+    },
+    "musicVideo": "",
+    "type": "fourth generation",
+    "creators": {
+      "lyrics": [],
+      "compose": [],
+      "arrange": [],
+      "direct": []
+    },
+    "performers": {
+      "center": [],
+      "fukujin": [],
+      "solo": "",
+      "unit": ""
+    },
+    "performersTag": {
+      "name": "fourth generation",
+      "singleNumber": "25"
+    },
+    "formations": {
+      "firstRow": [
+        "endousakura",
+        "kakiharuka",
+        "kakehashisayaka",
+        "kanagawasaya",
+        "kitagawayuri",
+        "shibatayuna",
+        "seimiyarei",
+        "tamuramayu",
+        "tsutsuiayame",
+        "hayakawaseira",
+        "yakubomio"
+      ],
+      "secondRow": [],
+      "thirdRow": [],
+      "fourthRow": []
+    }
+  },
+  {
+    "title": "ファンタスティック三色パン",
+    "key": "fantastic",
+    "single": {
+      "title": "しあわせの保護色",
+      "number": "25"
+    },
+    "albums": [],
+    "artwork": {
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_large.png",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_medium.png",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/artwork_no_image_small.png"
+    },
+    "musicVideo": "",
+    "type": "coupling",
+    "creators": {
+      "lyrics": [],
+      "compose": [],
+      "arrange": [],
+      "direct": []
+    },
+    "performers": {
+      "center": [],
+      "fukujin": [],
+      "solo": "",
+      "unit": ""
+    },
+    "performersTag": {
+      "name": "",
+      "singleNumber": "25"
+    },
+    "formations": {
+      "firstRow": [
+        "saitouasuka",
+        "umezawaminami",
+        "yamashitamizuki"
       ],
       "secondRow": [],
       "thirdRow": [],

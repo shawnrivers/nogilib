@@ -17164,8 +17164,8 @@
         "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/4/hatanakaseira_small.jpg"
       },
       {
-        "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/4/hatanakaseira_large.jpg",
-        "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/4/hatanakaseira_small.jpg"
+        "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/5/hatanakaseira_large.jpg",
+        "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/5/hatanakaseira_small.jpg"
       },
       {
         "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/6/hatanakaseira_large.jpg",
@@ -19244,7 +19244,7 @@
       },
       {
         "singleNumber": "4",
-        "position": "under"
+        "position": "skip"
       },
       {
         "singleNumber": "5",
@@ -19335,7 +19335,7 @@
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 6
+      "under": 5
     },
     "graduation": {
       "isGraduated": true,
