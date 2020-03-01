@@ -53,7 +53,7 @@
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^2.3.0",
     "gatsby-plugin-root-import": "^2.0.5",
-    "gh-pages": "^2.1.1",
+    "gh-pages": "^2.2.0",
     "husky": "^4.2.1",
     "lint-staged": "^10.0.7",
     "prettier": "^1.19.1",
