@@ -55,7 +55,7 @@
     "gatsby-plugin-root-import": "^2.0.5",
     "gh-pages": "^2.2.0",
     "husky": "^4.2.1",
-    "lint-staged": "^10.0.7",
+    "lint-staged": "^10.0.8",
     "prettier": "^1.19.1",
     "prettier-stylelint": "^0.4.2",
     "stylelint": "^12.0.0",
