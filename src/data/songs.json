@@ -12602,10 +12602,18 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": [],
-      "compose": [],
-      "arrange": [],
-      "direct": []
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "MASANORI URA"
+      ],
+      "arrange": [
+        "武藤星児"
+      ],
+      "direct": [
+        "池田一真"
+      ]
     },
     "performers": {
       "center": [
@@ -12667,9 +12675,15 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": [],
-      "compose": [],
-      "arrange": [],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "シライシ紗トリ"
+      ],
+      "arrange": [
+        "シライシ紗トリ"
+      ],
       "direct": []
     },
     "performers": {
@@ -12717,9 +12731,16 @@
       "lyrics": [
         "白石麻衣"
       ],
-      "compose": [],
-      "arrange": [],
-      "direct": []
+      "compose": [
+        "浦島健太",
+        "H.Shing"
+      ],
+      "arrange": [
+        "菊池博人"
+      ],
+      "direct": [
+        "湯浅弘章"
+      ]
     },
     "performers": {
       "center": [],
@@ -12756,10 +12777,18 @@
     "musicVideo": "",
     "type": "second generation",
     "creators": {
-      "lyrics": [],
-      "compose": [],
-      "arrange": [],
-      "direct": []
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "中村泰輔"
+      ],
+      "arrange": [
+        "中村泰輔"
+      ],
+      "direct": [
+        "伊藤衆人"
+      ]
     },
     "performers": {
       "center": [],
@@ -12804,10 +12833,18 @@
     "musicVideo": "",
     "type": "third generation",
     "creators": {
-      "lyrics": [],
-      "compose": [],
-      "arrange": [],
-      "direct": []
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "APAZZI"
+      ],
+      "arrange": [
+        "APAZZI"
+      ],
+      "direct": [
+        "横堀光範"
+      ]
     },
     "performers": {
       "center": [],
@@ -12855,10 +12892,18 @@
     "musicVideo": "",
     "type": "fourth generation",
     "creators": {
-      "lyrics": [],
-      "compose": [],
-      "arrange": [],
-      "direct": []
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "youth case"
+      ],
+      "arrange": [
+        "佐々木博史"
+      ],
+      "direct": [
+        "神谷雄貴"
+      ]
     },
     "performers": {
       "center": [],
@@ -12905,9 +12950,15 @@
     "musicVideo": "",
     "type": "coupling",
     "creators": {
-      "lyrics": [],
-      "compose": [],
-      "arrange": [],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "ジンツチハシ"
+      ],
+      "arrange": [
+        "ジンツチハシ"
+      ],
       "direct": []
     },
     "performers": {
