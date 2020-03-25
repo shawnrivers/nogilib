@@ -30,7 +30,23 @@ import searchSpLarge from "assets/images/screenshots/search-sp-large.jpg";
 import searchSpSmall from "assets/images/screenshots/search-sp-small.jpg";
 import { LazyImage } from "components/atoms/LazyImage";
 
+const TextLink = (props: { children: React.ReactNode }) => (
+  <motion.span
+    whileHover={{
+      backgroundColor: "#e887a3",
+      color: "#ffffff",
+    }}
+    className={styles.textLink}
+  >
+    {props.children}
+  </motion.span>
+);
+
 export const Starting = () => {
+  const handleUpdateApp = React.useCallback(() => {
+    window.location.reload();
+  }, []);
+
   return (
     <article>
       <PageContentLayout type="top">
@@ -46,14 +62,21 @@ export const Starting = () => {
             <p className={styles.text}>
               <Message text="This is a web application aiming at showing the information about Nogizaka46 in a user-friendly way." />
             </p>
-            <LocalizedLink to={Links.Singles}>
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                className={styles.appLink}
-              >
-                <Message text="go to app" />
-              </motion.div>
-            </LocalizedLink>
+            <div className={styles.appButtons}>
+              <LocalizedLink to={Links.Singles}>
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className={styles.appLink}
+                >
+                  <Message text="go to app" />
+                </motion.div>
+              </LocalizedLink>
+              <button onClick={handleUpdateApp} className={styles.updateButton}>
+                <TextLink>
+                  <Message text="update the app" />
+                </TextLink>
+              </button>
+            </div>
           </section>
           <div className={styles.faviconLarge}>
             <img
@@ -69,39 +92,13 @@ export const Starting = () => {
           </h2>
           <p className={classNames(styles.languages, styles.text)}>
             <Link to={getUrlWithTrailingSlash("/en")}>
-              <motion.span
-                whileHover={{
-                  backgroundColor: "#e887a3",
-                  color: "#ffffff",
-                  borderBottomColor: "#ffffff",
-                }}
-                className={styles.textLink}
-              >
-                ENGLISH
-              </motion.span>
+              <TextLink>ENGLISH</TextLink>
             </Link>
             <Link to={getUrlWithTrailingSlash("/")}>
-              <motion.span
-                whileHover={{
-                  backgroundColor: "#e887a3",
-                  color: "#ffffff",
-                }}
-                className={styles.textLink}
-              >
-                日本語
-              </motion.span>
+              <TextLink>日本語</TextLink>
             </Link>
             <Link to={getUrlWithTrailingSlash("/zh")}>
-              <motion.span
-                whileHover={{
-                  backgroundColor: "#e887a3",
-                  color: "#ffffff",
-                  borderBottomColor: "#ffffff",
-                }}
-                className={styles.textLink}
-              >
-                简体中文
-              </motion.span>
+              <TextLink>简体中文</TextLink>
             </Link>
           </p>
         </section>
