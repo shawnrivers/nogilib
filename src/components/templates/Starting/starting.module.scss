@@ -78,6 +78,17 @@
   line-height: 20px;
 }
 
+.app-buttons {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+
+  @media (max-width: 480px) {
+    align-items: center;
+  }
+}
+
 .app-link {
   @extend %elevation-1-normal;
   background-color: $pink-1;
@@ -85,9 +96,12 @@
   display: inline-block;
   font-size: $size-sub-heading-3;
   font-weight: $weight-bold;
-  margin-top: 32px;
   padding: 8px 12px;
   text-transform: uppercase;
+}
+
+.update-button {
+  margin-top: 16px;
 }
 
 .favicon-small {
@@ -131,6 +145,7 @@
   display: inline-block;
   padding: 1px;
   text-decoration: underline;
+  text-transform: capitalize;
 }
 
 .subtitle-link {
