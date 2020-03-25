@@ -29,8 +29,9 @@ export const PositionCounter = (props: PositionCounterProps) => (
           <div
             className={styles.fukujin}
             style={{
-              width: `${((props.fukujin - props.center) / props.selected) *
-                100}%`,
+              width: `${
+                ((props.fukujin - props.center) / props.selected) * 100
+              }%`,
             }}
           >
             {props.fukujin - props.center}
@@ -40,8 +41,9 @@ export const PositionCounter = (props: PositionCounterProps) => (
           <div
             className={styles.selected}
             style={{
-              width: `${((props.selected - props.fukujin) / props.selected) *
-                100}%`,
+              width: `${
+                ((props.selected - props.fukujin) / props.selected) * 100
+              }%`,
             }}
           >
             {props.selected - props.fukujin}
