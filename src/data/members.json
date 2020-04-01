@@ -4486,8 +4486,8 @@
       "under": 14
     },
     "graduation": {
-      "isGraduated": false,
-      "graduatedDate": ""
+      "isGraduated": true,
+      "graduatedDate": "2020-03-31"
     }
   },
   {
@@ -16489,7 +16489,7 @@
     "sites": [
       {
         "title": "Official",
-        "url": "http://www.tencarat.co.jp/fukagawamai/"
+        "url": "https://fukagawamai.com/"
       },
       {
         "title": "Instagram",
