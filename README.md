@@ -18,21 +18,22 @@ Current supported languages: _[Japanese](https://shawnrivers.github.io/nogizaka-
 1.  **Install necessary packages.**
 
     ```sh
-    yarn install
+    npm install
     ```
 
 2.  **Start the dev server.**
 
     ```sh
-    yarn dev
+    npm run dev
     ```
+
     Your site is now running at `http://localhost:8000`.
 
 3.  **Build the product.**
 
     ```sh
-    yarn build
-    yarn serve
+    npm run build
+    npm run serve
     ```
 
     Your build result is now running at `http://localhost:9000`.
@@ -60,7 +61,6 @@ Current supported languages: _[Japanese](https://shawnrivers.github.io/nogizaka-
     ├──── utils
     ├── gatsby-config.js
     ├── gatsby-node.js
-
 
 1.  **`/src`**: All _"source code"_ comes here.
 
@@ -90,4 +90,4 @@ Current supported languages: _[Japanese](https://shawnrivers.github.io/nogizaka-
 
 ## Data
 
-Profile images and CD artworks © [乃木46LLC](https://www.nogizaka46.com/).
+Profile images and CD artworks © [乃木 46LLC](https://www.nogizaka46.com/).
