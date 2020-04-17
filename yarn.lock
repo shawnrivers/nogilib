@@ -2337,7 +2337,7 @@ babel-plugin-macros@^2.8.0:
     cosmiconfig "^6.0.0"
     resolve "^1.12.0"
 
-babel-plugin-remove-graphql-queries@^2.8.1, babel-plugin-remove-graphql-queries@^2.8.2:
+babel-plugin-remove-graphql-queries@^2.8.2:
   version "2.8.2"
   resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-2.8.2.tgz#a2968ea62e2e39ceaabf95157d915dfee77ee36e"
   integrity sha512-zzsJdkeE4zoozow1NECllMYed5yQGVSLt532kWec7G4mWCzZaFTz/E5TM4c3/RbBs32qyFkXi7ahRsB2DbW3hQ==
@@ -5844,10 +5844,10 @@ gatsby-page-utils@^0.1.2:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-layout@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-layout/-/gatsby-plugin-layout-1.2.2.tgz#33cfbbaa339434de1c17a02076c3d04fb6523d97"
-  integrity sha512-hH45JqckD6M2kz7NmyRtQKvHjhMBZDOz7x/Hj4kRqSgMwpIkp0TFdzcqfuV89agr8131VGJ/W6S943ifyNj9vw==
+gatsby-plugin-layout@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-layout/-/gatsby-plugin-layout-1.2.3.tgz#dea7b9091f6c44ac9de2f6b5798efd13fa6d72b1"
+  integrity sha512-rrOytAB1IKA8uO4CJPj9QFxBIJqWZuzkWXqlhYmWEgeRpHRFNKmf5D0ErukpA72XcccE2XPbRyfr4bYfJemkTg==
   dependencies:
     "@babel/runtime" "^7.8.7"
 
