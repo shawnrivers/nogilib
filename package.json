@@ -18,6 +18,26 @@
     "predeploy": "yarn generate-data && gatsby build --prefix-paths",
     "deploy": "gh-pages -d public -m 'chore: update [skip ci]'"
   },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "tsc",
+      "eslint --fix"
+    ],
+    "*.scss": [
+      "prettier --write",
+      "stylelint --fix"
+    ],
+    "./src/server/**/*.ts": [
+      "yarn generate-data"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": [
+        "lint-staged"
+      ]
+    }
+  },
   "dependencies": {
     "framer-motion": "^1.10.3",
     "gatsby": "^2.20.27",
