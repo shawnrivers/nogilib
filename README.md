@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://shawnrivers.github.io/nogizaka-lib-redesign/">
-    <img alt="Gatsby" src="https://raw.githubusercontent.com/shawnrivers/nogizaka-lib-redesign/master/src/assets/images/favicon-512.png" width="60" />
+    <img alt="Gatsby" src="https://raw.githubusercontent.com/shawnrivers/nogizaka-lib-redesign/master/src/assets/images/favicon-512.png" width="128" />
   </a>
 </p>
 <h1 align="center">
