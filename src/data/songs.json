@@ -13,9 +13,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/22/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/22/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/22/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -91,9 +91,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/21/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/21/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/21/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -168,9 +168,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/20/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/20/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/20/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -245,9 +245,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/19/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/19/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/19/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -323,9 +323,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/18/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/18/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/18/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -398,9 +398,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/17/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/17/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/17/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -476,9 +476,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/16/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/16/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/16/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -551,9 +551,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/15/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/15/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/15/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -618,9 +618,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/14/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/14/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/14/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -693,9 +693,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/13/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/13/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/13/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/13/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/13/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/13/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -768,9 +768,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/12/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/12/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/12/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -842,9 +842,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/11/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/11/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/11/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/11/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/11/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/11/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -916,9 +916,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/10/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/10/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/10/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/10/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/10/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/10/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -988,9 +988,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/9/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/9/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/9/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/9/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/9/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/9/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -1061,9 +1061,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/8/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/8/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/8/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/8/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/8/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/8/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -1133,9 +1133,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/7/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/7/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/7/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/7/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/7/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/7/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -1206,9 +1206,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/6/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/6/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/6/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/6/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/6/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/6/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -1278,9 +1278,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/5/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/5/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/5/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/5/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/5/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/5/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -1351,9 +1351,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/4/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/4/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/4/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/4/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/4/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/4/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -1423,9 +1423,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/3/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/3/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/3/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/3/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/3/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/3/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -1506,9 +1506,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/2/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/2/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/2/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/2/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/2/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/2/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -1578,9 +1578,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/1/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/1/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/1/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/1/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/1/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/1/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -1650,9 +1650,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/22/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/22/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/22/B_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -1726,9 +1726,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/21/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/21/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/21/A_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -1800,9 +1800,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/20/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/20/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/20/B_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -1881,9 +1881,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/19/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/19/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/19/C_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -1956,9 +1956,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/18/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/18/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/18/C_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -2035,9 +2035,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/17/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/17/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/17/C_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -2109,9 +2109,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/16/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/16/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/16/B_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -2185,9 +2185,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/D_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/D_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/D_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/15/D_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/15/D_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/15/D_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -2264,9 +2264,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/D_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/D_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/D_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/14/D_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/14/D_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/14/D_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -2343,9 +2343,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/13/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/13/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/13/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/13/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/13/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/13/A_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -2425,9 +2425,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/12/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/12/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/12/C_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -2505,9 +2505,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/11/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/11/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/11/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/11/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/11/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/11/C_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -2581,9 +2581,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/10/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/10/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/10/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/10/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/10/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/10/C_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -2654,9 +2654,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/9/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/9/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/9/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/9/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/9/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/9/C_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -2726,9 +2726,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/8/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/8/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/8/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/8/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/8/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/8/C_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -2799,9 +2799,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/7/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/7/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/7/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/7/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/7/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/7/C_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -2868,9 +2868,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/6/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/6/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/6/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/6/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/6/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/6/B_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -2945,9 +2945,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/5/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/5/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/5/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/5/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/5/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/5/B_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -3018,9 +3018,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/4/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/4/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/4/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/4/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/4/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/4/C_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -3095,9 +3095,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/3/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/3/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/3/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/3/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/3/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/3/A_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -3169,9 +3169,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/2/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/2/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/2/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/2/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/2/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/2/C_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -3243,9 +3243,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/1/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/1/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/1/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/1/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/1/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/1/A_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -3313,9 +3313,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/22/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/22/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/22/A_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -3383,9 +3383,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/22/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/22/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/22/A_small.jpg"
     },
     "musicVideo": "",
     "type": "solo",
@@ -3431,9 +3431,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/22/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/22/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/22/C_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -3482,9 +3482,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/D_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/D_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/D_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/22/D_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/22/D_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/22/D_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -3530,9 +3530,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/22/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/22/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/22/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/22/T_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -3579,9 +3579,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/21/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/21/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/21/A_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -3651,9 +3651,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/21/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/21/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/21/B_small.jpg"
     },
     "musicVideo": "",
     "type": "third generation",
@@ -3709,9 +3709,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/21/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/21/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/21/C_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -3758,9 +3758,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/D_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/D_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/D_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/21/D_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/21/D_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/21/D_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -3808,9 +3808,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/21/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/21/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/21/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/21/T_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -3881,9 +3881,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/20/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/20/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/20/A_small.jpg"
     },
     "musicVideo": "",
     "type": "first generation",
@@ -3950,9 +3950,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/20/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/20/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/20/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -4003,9 +4003,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/20/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/20/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/20/C_small.jpg"
     },
     "musicVideo": "",
     "type": "second generation",
@@ -4067,9 +4067,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/D_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/D_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/D_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/20/D_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/20/D_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/20/D_small.jpg"
     },
     "musicVideo": "",
     "type": "third generation",
@@ -4130,9 +4130,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/20/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/20/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/20/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/20/T_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -4181,9 +4181,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/19/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/19/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/19/A_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -4253,9 +4253,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/19/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/19/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/19/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -4302,9 +4302,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/19/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/19/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/19/B_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -4362,9 +4362,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/D_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/D_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/D_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/19/D_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/19/D_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/19/D_small.jpg"
     },
     "musicVideo": "",
     "type": "third generation",
@@ -4422,9 +4422,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/19/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/19/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/19/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/19/T_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -4471,9 +4471,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/18/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/18/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/18/A_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -4539,9 +4539,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/18/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/18/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/18/A_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -4605,9 +4605,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/18/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/18/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/18/B_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -4676,9 +4676,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/D_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/D_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/D_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/18/D_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/18/D_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/18/D_small.jpg"
     },
     "musicVideo": "",
     "type": "second generation",
@@ -4743,9 +4743,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/18/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/18/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/18/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/18/T_small.jpg"
     },
     "musicVideo": "",
     "type": "third generation",
@@ -4812,9 +4812,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/17/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/17/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/17/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -4866,9 +4866,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/17/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/17/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/17/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -4922,9 +4922,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/17/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/17/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/17/B_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -4978,9 +4978,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/D_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/D_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/D_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/17/D_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/17/D_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/17/D_small.jpg"
     },
     "musicVideo": "",
     "type": "third generation",
@@ -5046,9 +5046,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/17/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/17/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/17/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/17/T_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -5100,9 +5100,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/16/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/16/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/16/A_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -5171,9 +5171,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/16/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/16/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/16/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -5225,9 +5225,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/16/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/16/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/16/C_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -5283,9 +5283,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/D_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/D_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/D_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/16/D_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/16/D_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/16/D_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -5340,9 +5340,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/16/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/16/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/16/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/16/T_small.jpg"
     },
     "musicVideo": "",
     "type": "solo",
@@ -5394,9 +5394,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/15/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/15/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/15/A_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -5462,9 +5462,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/15/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/15/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/15/A_small.jpg"
     },
     "musicVideo": "",
     "type": "solo",
@@ -5517,9 +5517,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/15/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/15/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/15/B_small.jpg"
     },
     "musicVideo": "",
     "type": "solo",
@@ -5570,9 +5570,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/15/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/15/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/15/C_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -5627,9 +5627,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/15/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/15/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/15/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/15/T_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -5679,9 +5679,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/14/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/14/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/14/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -5732,9 +5732,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/14/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/14/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/14/A_small.jpg"
     },
     "musicVideo": "",
     "type": "solo",
@@ -5787,9 +5787,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/14/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/14/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/14/B_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -5838,9 +5838,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/14/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/14/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/14/C_small.jpg"
     },
     "musicVideo": "",
     "type": "solo",
@@ -5891,9 +5891,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/14/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/14/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/14/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/14/T_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -5950,9 +5950,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/13/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/13/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/13/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/13/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/13/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/13/A_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -6025,9 +6025,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/13/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/13/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/13/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/13/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/13/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/13/B_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -6082,9 +6082,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/13/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/13/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/13/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/13/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/13/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/13/C_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -6154,9 +6154,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/13/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/13/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/13/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/13/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/13/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/13/T_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -6210,9 +6210,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/12/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/12/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/12/A_small.jpg"
     },
     "musicVideo": "",
     "type": "solo",
@@ -6256,9 +6256,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/12/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/12/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/12/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -6312,9 +6312,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/12/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/12/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/12/B_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -6368,9 +6368,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/12/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/12/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/12/T_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -6441,9 +6441,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/12/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/12/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/12/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/12/T_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -6493,9 +6493,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/11/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/11/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/11/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/11/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/11/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/11/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -6556,9 +6556,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/11/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/11/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/11/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/11/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/11/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/11/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -6612,9 +6612,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/11/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/11/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/11/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/11/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/11/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/11/B_small.jpg"
     },
     "musicVideo": "",
     "type": "solo",
@@ -6660,9 +6660,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/11/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/11/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/11/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/11/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/11/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/11/T_small.jpg"
     },
     "musicVideo": "",
     "type": "second generation",
@@ -6713,9 +6713,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/10/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/10/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/10/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/10/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/10/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/10/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -6769,9 +6769,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/10/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/10/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/10/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/10/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/10/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/10/A_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -6834,9 +6834,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/10/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/10/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/10/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/10/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/10/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/10/B_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -6895,9 +6895,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/10/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/10/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/10/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/10/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/10/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/10/T_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -6950,9 +6950,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/9/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/9/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/9/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/9/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/9/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/9/A_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -7016,9 +7016,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/9/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/9/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/9/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/9/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/9/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/9/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -7079,9 +7079,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/9/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/9/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/9/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/9/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/9/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/9/B_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -7138,9 +7138,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/9/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/9/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/9/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/9/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/9/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/9/T_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -7197,9 +7197,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/8/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/8/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/8/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/8/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/8/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/8/A_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -7265,9 +7265,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/8/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/8/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/8/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/8/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/8/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/8/A_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -7330,9 +7330,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/8/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/8/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/8/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/8/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/8/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/8/B_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -7384,9 +7384,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/8/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/8/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/8/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/8/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/8/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/8/T_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -7441,9 +7441,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/7/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/7/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/7/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/7/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/7/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/7/A_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -7514,9 +7514,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/7/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/7/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/7/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/7/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/7/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/7/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -7572,9 +7572,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/7/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/7/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/7/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/7/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/7/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/7/B_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -7643,9 +7643,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/7/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/7/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/7/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/7/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/7/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/7/T_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -7702,9 +7702,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/6/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/6/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/6/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/6/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/6/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/6/A_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -7769,9 +7769,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/6/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/6/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/6/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/6/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/6/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/6/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -7823,9 +7823,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/6/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/6/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/6/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/6/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/6/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/6/C_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -7880,9 +7880,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/6/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/6/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/6/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/6/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/6/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/6/T_small.jpg"
     },
     "musicVideo": "",
     "type": "first generation",
@@ -7962,9 +7962,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/5/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/5/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/5/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/5/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/5/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/5/A_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -8033,9 +8033,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/5/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/5/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/5/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/5/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/5/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/5/A_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -8094,9 +8094,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/5/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/5/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/5/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/5/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/5/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/5/C_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -8146,9 +8146,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/5/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/5/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/5/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/5/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/5/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/5/T_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -8204,9 +8204,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/4/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/4/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/4/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/4/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/4/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/4/A_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -8271,9 +8271,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/4/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/4/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/4/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/4/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/4/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/4/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -8327,9 +8327,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/4/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/4/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/4/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/4/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/4/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/4/B_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -8377,9 +8377,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/4/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/4/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/4/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/4/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/4/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/4/T_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -8431,9 +8431,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/3/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/3/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/3/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/3/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/3/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/3/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -8487,9 +8487,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/3/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/3/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/3/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/3/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/3/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/3/B_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -8558,9 +8558,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/3/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/3/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/3/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/3/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/3/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/3/C_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -8629,9 +8629,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/3/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/3/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/3/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/3/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/3/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/3/T_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -8683,9 +8683,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/2/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/2/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/2/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/2/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/2/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/2/A_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -8750,9 +8750,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/2/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/2/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/2/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/2/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/2/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/2/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -8801,9 +8801,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/2/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/2/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/2/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/2/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/2/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/2/B_small.jpg"
     },
     "musicVideo": "",
     "type": "solo",
@@ -8854,9 +8854,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/2/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/2/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/2/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/2/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/2/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/2/T_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -8926,9 +8926,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/1/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/1/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/1/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/1/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/1/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/1/A_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -9008,9 +9008,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/1/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/1/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/1/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/1/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/1/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/1/B_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -9083,9 +9083,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/1/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/1/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/1/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/1/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/1/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/1/C_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -9153,9 +9153,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/1/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/1/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/1/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/1/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/1/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/1/T_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -9225,9 +9225,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/1/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/1/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/1/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/1/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/1/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/1/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -9278,9 +9278,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/1/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/1/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/1/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/1/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/1/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/1/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -9334,9 +9334,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/1/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/1/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/1/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/1/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/1/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/1/A_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -9403,9 +9403,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/1/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/1/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/1/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/1/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/1/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/1/A_small.jpg"
     },
     "musicVideo": "",
     "type": "solo",
@@ -9454,9 +9454,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/1/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/1/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/1/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/1/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/1/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/1/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -9523,9 +9523,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/1/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/1/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/1/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/1/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/1/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/1/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -9580,9 +9580,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/1/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/1/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/1/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/1/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/1/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/1/A_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -9656,9 +9656,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/1/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/1/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/1/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/1/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/1/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/1/A_small.jpg"
     },
     "musicVideo": "",
     "type": "solo",
@@ -9708,9 +9708,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/A_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -9775,9 +9775,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/A_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -9845,9 +9845,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/A_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -9905,9 +9905,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -9960,9 +9960,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/A_small.jpg"
     },
     "musicVideo": "",
     "type": "solo",
@@ -10011,9 +10011,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/B_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -10064,9 +10064,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/B_small.jpg"
     },
     "musicVideo": "",
     "type": "solo",
@@ -10115,9 +10115,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/C_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -10167,9 +10167,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/C_small.jpg"
     },
     "musicVideo": "",
     "type": "second generation",
@@ -10228,9 +10228,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/D_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/D_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/D_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/D_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/D_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/D_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -10281,9 +10281,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/D_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/D_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/2/D_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/D_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/D_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/2/D_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -10335,9 +10335,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/L_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/L_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/L_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/L_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/L_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/L_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -10410,9 +10410,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/L_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/L_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/L_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/L_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/L_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/L_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -10473,9 +10473,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/L_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/L_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/L_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/L_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/L_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/L_small.jpg"
     },
     "musicVideo": "",
     "type": "third generation",
@@ -10535,9 +10535,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/L_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/L_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/L_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/L_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/L_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/L_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -10632,9 +10632,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -10685,9 +10685,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -10738,9 +10738,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -10791,9 +10791,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/B_small.jpg"
     },
     "musicVideo": "",
     "type": "solo",
@@ -10844,9 +10844,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/B_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -10897,9 +10897,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/B_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -10950,9 +10950,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/T_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -11002,9 +11002,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/3/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/3/T_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -11054,9 +11054,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/U/L2_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/U/L2_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/U/L2_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/U/L2_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/U/L2_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/U/L2_small.jpg"
     },
     "musicVideo": "",
     "type": "solo",
@@ -11105,9 +11105,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/U/L2_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/U/L2_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/U/L2_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/U/L2_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/U/L2_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/U/L2_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -11171,9 +11171,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/U/L2_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/U/L2_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/U/L2_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/U/L2_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/U/L2_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/U/L2_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -11237,9 +11237,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/U/L2_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/U/L2_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/U/L2_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/U/L2_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/U/L2_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/U/L2_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -11303,9 +11303,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/4/L_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/4/L_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/4/L_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/4/L_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/4/L_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/4/L_small.jpg"
     },
     "musicVideo": "",
     "type": "lead",
@@ -11371,9 +11371,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/4/L_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/4/L_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/4/L_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/4/L_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/4/L_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/4/L_small.jpg"
     },
     "musicVideo": "",
     "type": "solo",
@@ -11423,9 +11423,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/4/L_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/4/L_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/4/L_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/4/L_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/4/L_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/4/L_small.jpg"
     },
     "musicVideo": "",
     "type": "fourth generation",
@@ -11484,9 +11484,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/4/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/4/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/4/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/4/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/4/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/4/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -11539,9 +11539,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/4/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/4/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/4/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/4/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/4/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/4/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -11592,9 +11592,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/4/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/4/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/4/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/4/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/4/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/4/B_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -11648,9 +11648,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/4/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/4/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/4/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/4/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/4/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/4/B_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -11701,9 +11701,9 @@
       }
     ],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/4/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/4/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/albums/4/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/4/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/4/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/albums/4/T_small.jpg"
     },
     "musicVideo": "",
     "type": "special",
@@ -11767,9 +11767,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/23/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/23/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/23/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -11841,9 +11841,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/23/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/23/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/23/A_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -11900,9 +11900,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/23/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/23/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/23/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -11951,9 +11951,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/23/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/23/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/23/B_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -12001,9 +12001,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/23/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/23/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/23/C_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -12053,9 +12053,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/D_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/D_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/D_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/23/D_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/23/D_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/23/D_small.jpg"
     },
     "musicVideo": "",
     "type": "fourth generation",
@@ -12114,9 +12114,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/23/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/23/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/23/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/23/T_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -12161,9 +12161,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/24/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/24/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/24/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -12230,9 +12230,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/24/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/24/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/24/A_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -12301,9 +12301,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/24/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/24/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/24/A_small.jpg"
     },
     "musicVideo": "",
     "type": "unit",
@@ -12352,9 +12352,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/24/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/24/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/24/B_small.jpg"
     },
     "musicVideo": "",
     "type": "fourth generation",
@@ -12412,9 +12412,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/24/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/24/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/24/C_small.jpg"
     },
     "musicVideo": "",
     "type": "solo",
@@ -12461,9 +12461,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/D_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/D_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/D_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/24/D_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/24/D_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/24/D_small.jpg"
     },
     "musicVideo": "",
     "type": "under",
@@ -12528,9 +12528,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/24/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/24/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/24/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/24/T_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -12595,9 +12595,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/25/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/25/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/25/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/25/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/25/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/25/A_small.jpg"
     },
     "musicVideo": "",
     "type": "title",
@@ -12668,9 +12668,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/25/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/25/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/25/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/25/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/25/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/25/A_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",
@@ -12721,9 +12721,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/25/A_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/25/A_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/25/A_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/25/A_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/25/A_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/25/A_small.jpg"
     },
     "musicVideo": "",
     "type": "solo",
@@ -12770,9 +12770,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/25/B_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/25/B_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/25/B_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/25/B_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/25/B_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/25/B_small.jpg"
     },
     "musicVideo": "",
     "type": "second generation",
@@ -12826,9 +12826,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/25/C_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/25/C_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/25/C_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/25/C_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/25/C_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/25/C_small.jpg"
     },
     "musicVideo": "",
     "type": "third generation",
@@ -12885,9 +12885,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/25/D_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/25/D_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/25/D_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/25/D_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/25/D_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/25/D_small.jpg"
     },
     "musicVideo": "",
     "type": "fourth generation",
@@ -12943,9 +12943,9 @@
     },
     "albums": [],
     "artwork": {
-      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/25/T_large.jpg",
-      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/25/T_medium.jpg",
-      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/artworks/singles/25/T_small.jpg"
+      "large": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/25/T_large.jpg",
+      "medium": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/25/T_medium.jpg",
+      "small": "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/server/images/artworks/singles/25/T_small.jpg"
     },
     "musicVideo": "",
     "type": "coupling",

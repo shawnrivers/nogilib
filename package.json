@@ -7,11 +7,12 @@
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
-    "format": "prettier --write src/**/*.{ts,tsx}",
     "serve": "gatsby serve",
     "type-check": "tsc",
+    "generate-data": "tsc -p tsconfig-server.json && node dist/app.js",
     "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
     "lint:fix": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --fix",
+    "format": "prettier --write src/**/*.{ts,tsx}",
     "stylelint": "stylelint '**/*.scss'",
     "stylelint:fix": "stylelint '**/*.scss' --fix",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -m 'chore: update [skip ci]'"
