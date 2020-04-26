@@ -1,0 +1,59 @@
+@import "client/styles/spacing.scss";
+
+$padding-top-with-navbar: calc(
+  #{$top-spacing-with-navigation-bar} + env(safe-area-inset-top)
+);
+$padding-top-without-navbar: $top-spacing-without-navigation-bar;
+
+$padding-bottom-with-navbar: calc(
+  #{$bottom-spacing-with-navigation-bar} + env(safe-area-inset-bottom)
+);
+$padding-bottom-without-navbar: $bottom-spacing-without-navigation-bar;
+
+%min-template {
+  box-sizing: border-box;
+  margin: auto;
+  max-width: 1168px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.sides-only {
+  @extend %min-template;
+}
+
+.top {
+  @extend %min-template;
+  padding-top: $padding-top-without-navbar;
+
+  @media (min-width: 600px) {
+    padding-top: $padding-top-with-navbar;
+  }
+}
+
+.bottom {
+  @extend %min-template;
+  padding-bottom: $padding-bottom-with-navbar;
+
+  @media (min-width: 600px) {
+    padding-bottom: $padding-bottom-without-navbar;
+  }
+}
+
+.full {
+  @extend %min-template;
+  padding-bottom: $padding-bottom-with-navbar;
+  padding-top: $padding-top-without-navbar;
+
+  @media (min-width: 600px) {
+    padding-bottom: $padding-bottom-without-navbar;
+    padding-top: $padding-top-with-navbar;
+  }
+}
+
+.container {
+  box-sizing: border-box;
+  margin: auto;
+  max-width: 1168px;
+  padding: 24px;
+}

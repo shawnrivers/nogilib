@@ -1,0 +1,60 @@
+@import "client/styles/colors.scss";
+@import "client/styles/typography.scss";
+@import "client/styles/elevations.scss";
+
+.container {
+  @extend %elevation-2;
+  padding-top: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.wrapper {
+  background-color: $gray-4;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.image {
+  background-color: $white;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: center;
+  width: 100%;
+}
+
+%overlay-component {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.background {
+  @extend %overlay-component;
+  background-color: $gray-1;
+}
+
+.title {
+  @extend %overlay-component;
+  align-items: center;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  padding: 20px;
+
+  h3 {
+    font-size: $size-sub-heading-3;
+    font-weight: $weight-bold;
+    margin: auto;
+    text-align: center;
+  }
+}

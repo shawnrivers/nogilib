@@ -1,9 +1,9 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import { PageContentLayout } from "components/atoms/PageContentLayout";
-import "styles/app.scss";
-import { Links } from "utils/constants";
-import { getUrlWithTrailingSlash } from "utils/strings";
+import { PageContentLayout } from "client/components/atoms/PageContentLayout";
+import "client/styles/app.scss";
+import { getUrlWithTrailingSlash } from "client/utils/strings";
+import { Links } from "client/utils/constants";
 
 export default () => (
   <PageContentLayout>

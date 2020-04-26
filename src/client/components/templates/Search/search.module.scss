@@ -1,0 +1,46 @@
+@import "client/styles/colors.scss";
+@import "client/styles/typography.scss";
+@import "client/styles/spacing.scss";
+
+.search {
+  align-items: center;
+  display: flex;
+  margin: auto;
+  margin-bottom: 32px;
+  max-width: 300px;
+  widows: 100%;
+}
+
+.input-container {
+  border-bottom: 2px solid $gray-3;
+  width: 100%;
+}
+
+.input {
+  border: none;
+  color: $gray-1;
+  font-size: $size-body;
+  font-weight: $weight-regular;
+  width: 100%;
+
+  &::placeholder {
+    color: $gray-3;
+  }
+}
+
+.search-icon {
+  fill: $gray-1;
+  margin-right: 4px;
+}
+
+.no-result {
+  color: $gray-1;
+  font-size: $size-sub-heading-3;
+  font-weight: $weight-bold;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.category {
+  margin-bottom: 40px;
+}
