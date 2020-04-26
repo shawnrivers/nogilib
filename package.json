@@ -19,16 +19,19 @@
     "deploy": "gh-pages -d public -m 'chore: update [skip ci]'"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
+    "src/client/**/*.{ts,tsx}": [
       "tsc",
       "eslint --fix"
     ],
-    "*.scss": [
-      "prettier --write",
-      "stylelint --fix"
+    "src/pages/**/*.{ts,tsx}": [
+      "tsc",
+      "eslint --fix"
     ],
-    "./src/server/**/*.ts": [
+    "src/server/**/*.ts": [
       "yarn generate-data"
+    ],
+    "*.scss": [
+      "stylelint --fix"
     ]
   },
   "husky": {
