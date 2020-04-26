@@ -76,7 +76,7 @@ export enum PositionType {
 }
 
 export const DATA_SOURCE_PATH =
-  "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/";
+  "https://raw.githubusercontent.com/shawnrivers/nogizaka-lib-redesign/master/";
 
 export const OVERTURE = "OVERTURE";
 
