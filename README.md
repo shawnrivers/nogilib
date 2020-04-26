@@ -91,3 +91,5 @@ Current supported languages: _[Japanese](https://shawnrivers.github.io/nogizaka-
 ## Data
 
 Profile images and CD artworks © [乃木坂46LLC](https://www.nogizaka46.com/).
+
+Most information in this project is from [Nogizaka46 official website](https://www.nogizaka46.com/) and [Wikipedia](https://ja.wikipedia.org/wiki/乃木坂46).
