@@ -11,7 +11,7 @@ import {
 } from "../utils/constants";
 import { arrayToObject } from "../utils/arrays";
 
-const PROFILE_IMAGES_PATH = "src/server/images/members";
+const PROFILE_IMAGES_PATH = "src/assets/images/members";
 
 export const initializeMembers = (rawMembers: RawMember[]): ResultMembers => {
   const initializeMember = (rawMember: RawMember): ResultMember => ({

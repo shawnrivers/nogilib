@@ -32,11 +32,11 @@ const convertArtworks = (
   );
 
   const noImageLargePath =
-    "src/server/images/artworks/artwork_no_image_large.png";
+    "src/assets/images/artworks/artwork_no_image_large.png";
   const noImageMediumPath =
-    "src/server/images/artworks/artwork_no_image_medium.png";
+    "src/assets/images/artworks/artwork_no_image_medium.png";
   const noImageSmallPath =
-    "src/server/images/artworks/artwork_no_image_small.png";
+    "src/assets/images/artworks/artwork_no_image_small.png";
 
   for (const key of Object.keys(initialArtworks)) {
     if (rawCd.hasArtworks) {
@@ -72,8 +72,8 @@ const convertArtworks = (
   return initialArtworks;
 };
 
-const SINGLE_ARTWORK_BASE_PATH = "src/server/images/artworks/singles/";
-const ALBUM_ARTWORK_BASE_PATH = "src/server/images/artworks/albums/";
+const SINGLE_ARTWORK_BASE_PATH = "src/assets/images/artworks/singles/";
+const ALBUM_ARTWORK_BASE_PATH = "src/assets/images/artworks/albums/";
 
 const convertCdSongs = (rawCdSongs: RawCdSong[]): ResultCdSong[] => {
   const initializeCdSong = (rawCdSong: RawCdSong): ResultCdSong => ({

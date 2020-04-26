@@ -15,7 +15,8 @@
     "format": "prettier --write src/**/*.{ts,tsx}",
     "stylelint": "stylelint '**/*.scss'",
     "stylelint:fix": "stylelint '**/*.scss' --fix",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -m 'chore: update [skip ci]'"
+    "predeploy": "yarn generate-data && gatsby build --prefix-paths",
+    "deploy": "gh-pages -d public -m 'chore: update [skip ci]'"
   },
   "dependencies": {
     "framer-motion": "^1.10.3",
@@ -30,6 +31,7 @@
     "gatsby-plugin-typescript": "^2.3.3",
     "gatsby-source-filesystem": "^2.2.4",
     "gatsby-transformer-json": "^2.3.3",
+    "node": "^14.0.0",
     "node-sass": "^4.13.1",
     "query-string": "^6.12.1",
     "react": "^16.13.1",
