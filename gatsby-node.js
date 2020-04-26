@@ -1,7 +1,7 @@
 /* eslint-disable */
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const path = require(`path`);
-const locales = require(`./src/i18n/locales`);
+const locales = require(`./src/client/i18n/locales`);
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
@@ -138,7 +138,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: localizedPath,
-        component: path.resolve("./src/containers/Cds/index.tsx"),
+        component: path.resolve("./src/client/containers/Cds/index.tsx"),
         context: {
           currentTab: type,
           locale: lang,
@@ -180,7 +180,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: localizedPath,
-        component: path.resolve("./src/containers/Members/index.tsx"),
+        component: path.resolve("./src/client/containers/Members/index.tsx"),
         context: {
           currentTab: type,
           locale: lang,
@@ -200,7 +200,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: localizedPath,
-        component: path.resolve("./src/containers/Album/index.tsx"),
+        component: path.resolve("./src/client/containers/Album/index.tsx"),
         context: {
           number,
           cdType,
@@ -221,7 +221,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: localizedPath,
-        component: path.resolve("./src/containers/Single/index.tsx"),
+        component: path.resolve("./src/client/containers/Single/index.tsx"),
         context: {
           number,
           cdType,
@@ -239,7 +239,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: localizedPath,
-        component: path.resolve("./src/containers/Song/index.tsx"),
+        component: path.resolve("./src/client/containers/Song/index.tsx"),
         context: {
           key: node.key,
           locale: lang,
@@ -256,7 +256,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: localizedPath,
-        component: path.resolve("./src/containers/Member/index.tsx"),
+        component: path.resolve("./src/client/containers/Member/index.tsx"),
         context: {
           name: node.name,
           locale: lang,

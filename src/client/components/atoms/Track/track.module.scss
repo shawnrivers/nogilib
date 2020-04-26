@@ -1,0 +1,63 @@
+@import "client/styles/colors.scss";
+@import "client/styles/typography.scss";
+@import "client/styles/elevations.scss";
+
+.container {
+  @extend %elevation-2;
+  background-color: $white;
+  height: 88px;
+}
+
+.number {
+  align-items: center;
+  color: $gray-2;
+  display: flex;
+  float: left;
+  font-size: $size-sub-heading-3;
+  font-weight: $weight-light;
+  height: 100%;
+  justify-content: center;
+  margin-left: 12px;
+  width: 24px;
+}
+
+.content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 88px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 12px;
+}
+
+.title {
+  color: $gray-1;
+  font-size: $size-sub-heading-3;
+  font-weight: $weight-bold;
+  line-height: 20px;
+  margin-bottom: 8px;
+  max-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.description {
+  color: $gray-2;
+  font-size: $size-caption;
+  font-weight: $weight-light;
+  height: 16px;
+  line-height: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+  white-space: nowrap;
+
+  span:not(:last-child) {
+    margin-right: 12px;
+  }
+}
+
+.type {
+  margin-right: 8px;
+}

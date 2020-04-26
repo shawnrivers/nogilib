@@ -1,0 +1,42 @@
+@import "client/styles/colors.scss";
+@import "client/styles/typography.scss";
+
+.header {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  color: $gray-1;
+  font-size: $size-sub-heading-2;
+  font-weight: $weight-bold;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+
+.more-toggle {
+  color: $gray-1;
+  font-size: $size-caption;
+  font-weight: $weight-light;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.result-card-list {
+  display: grid;
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+
+  @media (min-width: 700px) and (max-width: 1031px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1032px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

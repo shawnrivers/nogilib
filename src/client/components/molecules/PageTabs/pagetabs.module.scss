@@ -1,0 +1,25 @@
+@import "client/styles/typography.scss";
+@import "client/styles/colors.scss";
+@import "client/styles/spacing.scss";
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  border-bottom: 0px solid rgba(89, 89, 89, 0);
+  box-sizing: border-box;
+  font-size: $size-sub-heading-3;
+  height: 30px;
+  line-height: 22px;
+  margin: 4px;
+  padding-bottom: 4px;
+  text-transform: capitalize;
+
+  &:not(:last-child) {
+    margin-right: 24px;
+  }
+}

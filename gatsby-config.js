@@ -31,7 +31,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-layout",
       options: {
-        component: path.join(__dirname, "src/layouts/index.tsx"),
+        component: path.join(__dirname, "src/client/layouts/index.tsx"),
       },
     },
     {

@@ -1,0 +1,11 @@
+@import "client/styles/colors.scss";
+
+.container {
+  position: relative;
+}
+
+.contents {
+  min-height: 100vh;
+  position: absolute;
+  width: 100%;
+}

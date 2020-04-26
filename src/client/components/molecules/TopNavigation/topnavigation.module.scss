@@ -1,0 +1,154 @@
+@import "client/styles/typography.scss";
+@import "client/styles/colors.scss";
+@import "client/styles/elevations.scss";
+
+.container {
+  color: $gray-1;
+  font-size: $size-body;
+  font-weight: $weight-regular;
+}
+
+%navigation {
+  background-color: $white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: auto;
+  max-width: 1168px;
+}
+
+.navigation-small-container {
+  background-color: $white;
+  bottom: -1px;
+  box-shadow: 0px -6px 9px rgba(142, 142, 142, 0.2);
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+
+  @media (min-width: 600px) {
+    display: none;
+  }
+}
+
+.navigation-small {
+  @extend %navigation;
+  box-shadow: 0px -6px 9px rgba(142, 142, 142, 0.2);
+  justify-content: space-between;
+  margin: auto;
+  padding: 0 24px env(safe-area-inset-bottom);
+  width: 100%;
+}
+
+.navigation-large-container {
+  background-color: $white;
+  box-shadow: 0px 6px 9px rgba(142, 142, 142, 0.2);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+
+  @media (max-width: 599px) {
+    display: none;
+  }
+}
+
+.navigation-large {
+  @extend %navigation;
+  align-items: center;
+  box-sizing: border-box;
+  height: 56px;
+  justify-content: space-between;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.left-items,
+.right-items {
+  align-items: center;
+  display: flex;
+}
+
+.item {
+  background-color: $white;
+  color: $gray-1;
+  margin-right: 12px;
+}
+
+.icon-text {
+  font-size: $size-caption;
+  text-transform: capitalize;
+}
+
+%icon-text-item-template {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 64px !important;
+  justify-content: center;
+}
+
+.icon-text-item {
+  @extend %icon-text-item-template;
+  color: $gray-1;
+  fill: $gray-1;
+}
+
+.icon {
+  margin-bottom: 2px;
+}
+
+.home-icon {
+  display: none;
+  fill: $gray-1;
+
+  svg {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.languages-text {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  button {
+    text-transform: uppercase;
+  }
+}
+
+.languages-icon {
+  display: none;
+  justify-content: center;
+  position: relative;
+
+  svg {
+    height: 20px;
+    margin-top: 2px;
+    width: 20px;
+  }
+}
+
+.options {
+  background-color: $white;
+  box-shadow: 0px 2px 8px 2px rgba(142, 142, 142, 0.2);
+  padding: 16px;
+  position: absolute;
+  top: 54px;
+  z-index: 10;
+
+  ul {
+    text-align: center;
+
+    li {
+      font-size: $size-sub-heading-3;
+      font-weight: $weight-regular;
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
