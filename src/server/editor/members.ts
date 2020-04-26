@@ -320,8 +320,8 @@ const inouesayuri: RawMember = {
     },
   ],
   graduation: {
-    isGraduated: false,
-    graduatedDate: "",
+    isGraduated: true,
+    graduatedDate: "2020-04-27",
   },
 };
 
