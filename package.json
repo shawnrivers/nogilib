@@ -25,7 +25,7 @@
     "gatsby-plugin-offline": "^3.1.4",
     "gatsby-plugin-react-helmet": "^3.2.4",
     "gatsby-plugin-resolve-src": "^2.0.0",
-    "gatsby-plugin-sass": "^2.2.3",
+    "gatsby-plugin-sass": "^2.2.4",
     "gatsby-plugin-typescript": "^2.3.3",
     "gatsby-source-filesystem": "^2.2.4",
     "gatsby-transformer-json": "^2.3.3",
