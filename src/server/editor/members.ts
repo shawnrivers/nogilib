@@ -1708,6 +1708,10 @@ const wakatsukiyumi: RawMember = {
       url: "https://wakatsukiyumi.jp/",
     },
     {
+      title: SocialMedia.Twitter,
+      url: "https://twitter.com/WAKA_Y_official/",
+    },
+    {
       title: SocialMedia.Instagram,
       url: "https://www.instagram.com/yumi_wakatsuki_official/",
     },
