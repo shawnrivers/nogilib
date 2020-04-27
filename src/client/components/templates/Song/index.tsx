@@ -8,9 +8,9 @@ import { LocalizedList } from "client/components/atoms/locales/LocalizedList";
 import { MemberCard } from "client/components/atoms/MemberCard";
 import { LocalizedNumber } from "client/components/atoms/locales/LocalizedNumber";
 import { useScrollRestoration } from "client/utils/hooks";
-import { SongType } from "client/types/responseTypes";
 import { Message } from "client/components/atoms/Message";
 import { KOJIHARU, Language } from "client/utils/constants";
+import { SongType } from "server/utils/constants";
 
 const containerVariants = {
   visible: {

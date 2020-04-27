@@ -17,6 +17,16 @@ export type RawCdSong = {
   inCdType: CdType[];
 };
 
+export type RawCd = {
+  title: string;
+  number: string;
+  release: string;
+  hasArtworks: boolean;
+  artworkTypes: CdType[];
+  shopping: Site[];
+  songs: RawCdSong[];
+};
+
 export type ResultCdSong = {
   number: number;
   title: string;
@@ -30,16 +40,6 @@ export type ResultCdSong = {
   };
 };
 
-export type RawCd = {
-  title: string;
-  number: string;
-  release: string;
-  hasArtworks: boolean;
-  artworkTypes: CdType[];
-  shopping: Site[];
-  songs: RawCdSong[];
-};
-
 export type ResultCd = {
   title: string;
   number: string;
@@ -49,6 +49,10 @@ export type ResultCd = {
   };
   shopping: Site[];
   songs: ResultCdSong[];
+};
+
+export type CdResponse = Omit<ResultCd, "artworks"> & {
+  artworks: CdArtwork[];
 };
 
 export type ResultCdForSingleTemp = ResultCd & {

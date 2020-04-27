@@ -1,7 +1,8 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import { MemberType, Members } from "client/components/templates/Members";
-import { JoinedGenerationType, MembersType } from "client/types/responseTypes";
+import { MembersTabType } from "client/types/tab";
+import { JoinedGenerationType } from "server/utils/constants";
 
 export const query = graphql`
   query MembersQuery {
@@ -52,7 +53,7 @@ interface MembersData {
     };
   };
   pageContext: {
-    currentTab: MembersType;
+    currentTab: MembersTabType;
     locale: string;
   };
 }
@@ -115,15 +116,15 @@ const MembersContainer = ({
 
   const members = React.useMemo(() => {
     switch (currentTab) {
-      case MembersType.FirstGeneration:
+      case MembersTabType.FirstGeneration:
         return allMembers.first;
-      case MembersType.SecondGeneration:
+      case MembersTabType.SecondGeneration:
         return allMembers.second;
-      case MembersType.ThirdGeneration:
+      case MembersTabType.ThirdGeneration:
         return allMembers.third;
-      case MembersType.FourthGeneration:
+      case MembersTabType.FourthGeneration:
         return allMembers.fourth;
-      case MembersType.Graduated:
+      case MembersTabType.Graduated:
         return allMembers.graduated;
       default:
         return allMembers.first;

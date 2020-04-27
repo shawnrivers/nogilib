@@ -2,8 +2,8 @@ import * as React from "react";
 import { graphql } from "gatsby";
 import { Song } from "client/components/templates/Song";
 import { arrayToObject } from "client/utils/arrays";
-import { SongType } from "client/types/responseTypes";
 import { toCdNumber } from "client/utils/strings";
+import { SongType } from "server/utils/constants";
 
 export const query = graphql`
   query($key: String!) {

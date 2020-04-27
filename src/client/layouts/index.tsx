@@ -9,7 +9,7 @@ import { PageTabs } from "client/components/molecules/PageTabs";
 import en from "client/i18n/en.json";
 import ja from "client/i18n/ja.json";
 import zh from "client/i18n/zh.json";
-import { CdType, MembersType } from "client/types/responseTypes";
+import { CdTabType, MembersTabType } from "client/types/tab";
 import "client/styles/app.scss";
 import { Language, Links } from "client/utils/constants";
 
@@ -36,7 +36,7 @@ interface AppLayoutProps {
   children: React.ReactNode;
   pageContext: {
     locale: Language;
-    currentTab?: CdType | MembersType;
+    currentTab?: CdTabType | MembersTabType;
   };
 }
 
@@ -67,18 +67,18 @@ const AppLayout = ({
     const items = [
       {
         link: Links.Singles,
-        page: CdType.Singles,
+        page: CdTabType.Singles,
       },
       {
         link: Links.Albums,
-        page: CdType.Albums,
+        page: CdTabType.Albums,
       },
     ];
 
     const selectedItem =
       pageContext && pageContext.currentTab
         ? pageContext.currentTab
-        : CdType.Singles;
+        : CdTabType.Singles;
 
     return {
       items,
@@ -90,30 +90,30 @@ const AppLayout = ({
     const items = [
       {
         link: Links.FirstGeneration,
-        page: MembersType.FirstGeneration,
+        page: MembersTabType.FirstGeneration,
       },
       {
         link: Links.SecondGeneration,
-        page: MembersType.SecondGeneration,
+        page: MembersTabType.SecondGeneration,
       },
       {
         link: Links.ThirdGeneration,
-        page: MembersType.ThirdGeneration,
+        page: MembersTabType.ThirdGeneration,
       },
       {
         link: Links.FourthGeneration,
-        page: MembersType.FourthGeneration,
+        page: MembersTabType.FourthGeneration,
       },
       {
         link: Links.Graduated,
-        page: MembersType.Graduated,
+        page: MembersTabType.Graduated,
       },
     ];
 
     const selectedItem =
       pageContext && pageContext.currentTab
         ? pageContext.currentTab
-        : MembersType.FirstGeneration;
+        : MembersTabType.FirstGeneration;
 
     return {
       items,

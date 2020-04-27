@@ -1,11 +1,8 @@
-import * as React from "react";
 import { graphql } from "gatsby";
+import * as React from "react";
 import { Cd } from "client/components/templates/Cd";
-import {
-  CdType,
-  FocusPerformersType,
-  SongType,
-} from "client/types/responseTypes";
+import { CdTabType } from "client/types/tab";
+import { FocusPerformersType, SongType } from "server/utils/constants";
 
 export const query = graphql`
   query($number: String!) {
@@ -52,7 +49,7 @@ interface AlbumJson {
     };
   };
   pageContext: {
-    cdType: CdType;
+    cdType: CdTabType;
     number: string;
     locale: string;
   };
@@ -61,7 +58,7 @@ interface AlbumJson {
 const AlbumContainer = ({ data: { albumsJson } }: AlbumJson) => {
   return albumsJson ? (
     <Cd
-      type={CdType.Albums}
+      type={CdTabType.Albums}
       title={albumsJson.title}
       number={albumsJson.number}
       artworks={albumsJson.artworks}

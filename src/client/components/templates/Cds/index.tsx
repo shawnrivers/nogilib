@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import styles from "./cds.module.scss";
 import { Artwork } from "client/components/atoms/Artwork";
 import { LocalizedLink } from "client/components/atoms/locales/LocalizedLink";
-import { CdType } from "client/types/responseTypes";
+import { CdTabType } from "client/types/tab";
 
 const listVariants = {
   visible: {
@@ -27,8 +27,8 @@ const itemVariants = {
   hidden: { opacity: 0, y: 20 },
 };
 
-interface CdsProps {
-  page: CdType;
+type CdsProps = {
+  page: CdTabType;
   cds: {
     node: {
       title: string;
@@ -40,7 +40,7 @@ interface CdsProps {
       }[];
     };
   }[];
-}
+};
 
 export const Cds = ({ cds, page }: CdsProps) => {
   return (

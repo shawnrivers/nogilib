@@ -57,7 +57,7 @@ export enum FocusPerformersType {
   None = "",
 }
 
-export enum JoinedGeneration {
+export enum JoinedGenerationType {
   First = "first",
   Second = "second",
   Third = "third",

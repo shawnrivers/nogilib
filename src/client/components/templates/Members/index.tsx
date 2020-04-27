@@ -1,8 +1,9 @@
-import * as React from "react";
 import { motion } from "framer-motion";
+import * as React from "react";
 import styles from "./members.module.scss";
-import { JoinedGenerationType, MembersType } from "client/types/responseTypes";
 import { MemberCard } from "client/components/atoms/MemberCard";
+import { MembersTabType } from "client/types/tab";
+import { JoinedGenerationType } from "server/utils/constants";
 
 const listVariants = {
   visible: {
@@ -45,7 +46,7 @@ export type MemberType = {
 };
 
 interface MembersProps {
-  page: MembersType;
+  page: MembersTabType;
   members: MemberType[];
 }
 

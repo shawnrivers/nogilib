@@ -1,12 +1,12 @@
-import * as React from "react";
-import "client/styles/app.scss";
-import { forceCheck } from "react-lazyload";
-import { injectIntl } from "react-intl";
 import { Search, SearchResult } from "client/components/templates/Search";
-import { useScrollRestoration } from "client/utils/hooks";
-import { SongType } from "client/types/responseTypes";
-import { toCdNumber } from "client/utils/strings";
+import "client/styles/app.scss";
 import { SearchResultType } from "client/utils/constants";
+import { useScrollRestoration } from "client/utils/hooks";
+import { toCdNumber } from "client/utils/strings";
+import * as React from "react";
+import { injectIntl } from "react-intl";
+import { forceCheck } from "react-lazyload";
+import { SongType } from "server/utils/constants";
 
 export type MemberDoc = {
   id: string;

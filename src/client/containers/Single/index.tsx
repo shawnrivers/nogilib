@@ -1,11 +1,8 @@
-import * as React from "react";
 import { graphql } from "gatsby";
+import * as React from "react";
 import { Cd } from "client/components/templates/Cd";
-import {
-  CdType,
-  FocusPerformersType,
-  SongType,
-} from "client/types/responseTypes";
+import { CdTabType } from "client/types/tab";
+import { CdArtwork, CdResponse, ResultCdSong } from "server/models/commons";
 
 export const query = graphql`
   query($number: String!) {
@@ -32,27 +29,13 @@ export const query = graphql`
 
 interface SingleData {
   data: {
-    singlesJson: {
-      title: string;
-      number: string;
-      artworks: {
-        large: string;
-        medium: string;
-      }[];
-      songs: {
-        key: string;
-        title: string;
-        type: SongType;
-        focusPerformers: {
-          name: string[];
-          type: FocusPerformersType;
-        };
-      }[];
-      release: string;
+    singlesJson: Pick<CdResponse, "title" | "number" | "release"> & {
+      artworks: Omit<CdArtwork, "small">[];
+      songs: Pick<ResultCdSong, "key" | "title" | "type" | "focusPerformers">[];
     };
   };
   pageContext: {
-    cdType: CdType;
+    cdType: CdTabType;
     number: string;
     locale: string;
   };
@@ -61,7 +44,7 @@ interface SingleData {
 const SingleContainer = ({ data: { singlesJson } }: SingleData) => {
   return singlesJson ? (
     <Cd
-      type={CdType.Singles}
+      type={CdTabType.Singles}
       title={singlesJson.title}
       number={singlesJson.number}
       artworks={singlesJson.artworks}
