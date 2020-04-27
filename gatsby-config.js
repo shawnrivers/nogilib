@@ -16,6 +16,14 @@ module.exports = {
     "gatsby-transformer-json",
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: path.join(__dirname, "src/assets/images"),
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
