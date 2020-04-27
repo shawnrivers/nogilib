@@ -1835,8 +1835,8 @@ const endousakura: RawMember = {
   origin: Birthplace.Aichi,
   sites: [
     {
-      title: SocialMedia.FourthGenBlog,
-      url: "https://blog.nogizaka46.com/fourth/",
+      title: SocialMedia.OfficialBlog,
+      url: "https://blog.nogizaka46.com/sakura.endou/",
     },
     {
       title: SocialMedia.Profile,
@@ -1871,8 +1871,8 @@ const kakiharuka: RawMember = {
   origin: Birthplace.Tochigi,
   sites: [
     {
-      title: SocialMedia.FourthGenBlog,
-      url: "https://blog.nogizaka46.com/fourth/",
+      title: SocialMedia.OfficialBlog,
+      url: "https://blog.nogizaka46.com/haruka.kaki/",
     },
     {
       title: SocialMedia.Profile,
@@ -1907,8 +1907,8 @@ const kakehashisayaka: RawMember = {
   origin: Birthplace.Okayama,
   sites: [
     {
-      title: SocialMedia.FourthGenBlog,
-      url: "https://blog.nogizaka46.com/fourth/",
+      title: SocialMedia.OfficialBlog,
+      url: "https://blog.nogizaka46.com/sayaka.kakehashi/",
     },
     {
       title: SocialMedia.Profile,
@@ -1943,8 +1943,8 @@ const kanagawasaya: RawMember = {
   origin: Birthplace.Hokkaido,
   sites: [
     {
-      title: SocialMedia.FourthGenBlog,
-      url: "https://blog.nogizaka46.com/fourth/",
+      title: SocialMedia.OfficialBlog,
+      url: "https://blog.nogizaka46.com/saya.kanagawa/",
     },
     {
       title: SocialMedia.Profile,
@@ -1979,8 +1979,8 @@ const kitagawayuri: RawMember = {
   origin: Birthplace.California,
   sites: [
     {
-      title: SocialMedia.FourthGenBlog,
-      url: "https://blog.nogizaka46.com/fourth/",
+      title: SocialMedia.OfficialBlog,
+      url: "https://blog.nogizaka46.com/yuri.kitagawa/",
     },
     {
       title: SocialMedia.Profile,
@@ -2015,8 +2015,8 @@ const shibatayuna: RawMember = {
   origin: Birthplace.Chiba,
   sites: [
     {
-      title: SocialMedia.FourthGenBlog,
-      url: "https://blog.nogizaka46.com/fourth/",
+      title: SocialMedia.OfficialBlog,
+      url: "https://blog.nogizaka46.com/yuna.shibata/",
     },
     {
       title: SocialMedia.Profile,
@@ -2051,8 +2051,8 @@ const seimiyarei: RawMember = {
   origin: Birthplace.Saitama,
   sites: [
     {
-      title: SocialMedia.FourthGenBlog,
-      url: "https://blog.nogizaka46.com/fourth/",
+      title: SocialMedia.OfficialBlog,
+      url: "https://blog.nogizaka46.com/rei.seimiya/",
     },
     {
       title: SocialMedia.Profile,
@@ -2087,8 +2087,8 @@ const tamuramayu: RawMember = {
   origin: Birthplace.Saitama,
   sites: [
     {
-      title: SocialMedia.FourthGenBlog,
-      url: "https://blog.nogizaka46.com/fourth/",
+      title: SocialMedia.OfficialBlog,
+      url: "https://blog.nogizaka46.com/mayu.tamura/",
     },
     {
       title: SocialMedia.Profile,
@@ -2123,8 +2123,8 @@ const tsutsuiayame: RawMember = {
   origin: Birthplace.Aichi,
   sites: [
     {
-      title: SocialMedia.FourthGenBlog,
-      url: "https://blog.nogizaka46.com/fourth/",
+      title: SocialMedia.OfficialBlog,
+      url: "https://blog.nogizaka46.com/ayame.tsutsui/",
     },
     {
       title: SocialMedia.Profile,
@@ -2159,8 +2159,8 @@ const hayakawaseira: RawMember = {
   origin: Birthplace.Osaka,
   sites: [
     {
-      title: SocialMedia.FourthGenBlog,
-      url: "https://blog.nogizaka46.com/fourth/",
+      title: SocialMedia.OfficialBlog,
+      url: "https://blog.nogizaka46.com/seira.hayakawa/",
     },
     {
       title: SocialMedia.Profile,
@@ -2195,8 +2195,8 @@ const yakubomio: RawMember = {
   origin: Birthplace.Tokyo,
   sites: [
     {
-      title: SocialMedia.FourthGenBlog,
-      url: "https://blog.nogizaka46.com/fourth/",
+      title: SocialMedia.OfficialBlog,
+      url: "https://blog.nogizaka46.com/mio.yakubo/",
     },
     {
       title: SocialMedia.Profile,
@@ -2231,6 +2231,10 @@ const kuromiharuka: RawMember = {
   origin: Birthplace.Tokyo,
   sites: [
     {
+      title: SocialMedia.FourthGenBlog,
+      url: "https://blog.nogizaka46.com/newfourth/",
+    },
+    {
       title: SocialMedia.Profile,
       url: "https://www.nogizaka46.com/member/detail/kuromiharuka.php",
     },
@@ -2262,6 +2266,10 @@ const satourika: RawMember = {
   bloodType: BloodType.B,
   origin: Birthplace.Iwate,
   sites: [
+    {
+      title: SocialMedia.FourthGenBlog,
+      url: "https://blog.nogizaka46.com/newfourth/",
+    },
     {
       title: SocialMedia.Profile,
       url: "https://www.nogizaka46.com/member/detail/satourika.php",
@@ -2295,6 +2303,10 @@ const hayashiruna: RawMember = {
   origin: Birthplace.Kanagawa,
   sites: [
     {
+      title: SocialMedia.FourthGenBlog,
+      url: "https://blog.nogizaka46.com/newfourth/",
+    },
+    {
       title: SocialMedia.Profile,
       url: "https://www.nogizaka46.com/member/detail/hayashiruna.php",
     },
@@ -2327,6 +2339,10 @@ const matsuomiyu: RawMember = {
   origin: Birthplace.Chiba,
   sites: [
     {
+      title: SocialMedia.FourthGenBlog,
+      url: "https://blog.nogizaka46.com/newfourth/",
+    },
+    {
       title: SocialMedia.Profile,
       url: "https://www.nogizaka46.com/member/detail/mastuomiyu.php",
     },
@@ -2358,6 +2374,10 @@ const yumikinao: RawMember = {
   bloodType: BloodType.A,
   origin: Birthplace.Kyoto,
   sites: [
+    {
+      title: SocialMedia.FourthGenBlog,
+      url: "https://blog.nogizaka46.com/newfourth/",
+    },
     {
       title: SocialMedia.Profile,
       url: "https://www.nogizaka46.com/member/detail/yumikinao.php",

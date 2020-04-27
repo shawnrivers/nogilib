@@ -9904,8 +9904,8 @@
     "origin": "愛知県",
     "sites": [
       {
-        "title": "Fourth Gen Blog",
-        "url": "https://blog.nogizaka46.com/fourth/"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/sakura.endou/"
       },
       {
         "title": "Profile",
@@ -10154,8 +10154,8 @@
     "origin": "栃木県",
     "sites": [
       {
-        "title": "Fourth Gen Blog",
-        "url": "https://blog.nogizaka46.com/fourth/"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/haruka.kaki/"
       },
       {
         "title": "Profile",
@@ -10404,8 +10404,8 @@
     "origin": "岡山県",
     "sites": [
       {
-        "title": "Fourth Gen Blog",
-        "url": "https://blog.nogizaka46.com/fourth/"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/sayaka.kakehashi/"
       },
       {
         "title": "Profile",
@@ -10654,8 +10654,8 @@
     "origin": "北海道",
     "sites": [
       {
-        "title": "Fourth Gen Blog",
-        "url": "https://blog.nogizaka46.com/fourth/"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/saya.kanagawa/"
       },
       {
         "title": "Profile",
@@ -10904,8 +10904,8 @@
     "origin": "California, US",
     "sites": [
       {
-        "title": "Fourth Gen Blog",
-        "url": "https://blog.nogizaka46.com/fourth/"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/yuri.kitagawa/"
       },
       {
         "title": "Profile",
@@ -11154,8 +11154,8 @@
     "origin": "千葉県",
     "sites": [
       {
-        "title": "Fourth Gen Blog",
-        "url": "https://blog.nogizaka46.com/fourth/"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/yuna.shibata/"
       },
       {
         "title": "Profile",
@@ -11404,8 +11404,8 @@
     "origin": "埼玉県",
     "sites": [
       {
-        "title": "Fourth Gen Blog",
-        "url": "https://blog.nogizaka46.com/fourth/"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/rei.seimiya/"
       },
       {
         "title": "Profile",
@@ -11654,8 +11654,8 @@
     "origin": "埼玉県",
     "sites": [
       {
-        "title": "Fourth Gen Blog",
-        "url": "https://blog.nogizaka46.com/fourth/"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/mayu.tamura/"
       },
       {
         "title": "Profile",
@@ -11904,8 +11904,8 @@
     "origin": "愛知県",
     "sites": [
       {
-        "title": "Fourth Gen Blog",
-        "url": "https://blog.nogizaka46.com/fourth/"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/ayame.tsutsui/"
       },
       {
         "title": "Profile",
@@ -12154,8 +12154,8 @@
     "origin": "大阪府",
     "sites": [
       {
-        "title": "Fourth Gen Blog",
-        "url": "https://blog.nogizaka46.com/fourth/"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/seira.hayakawa/"
       },
       {
         "title": "Profile",
@@ -12404,8 +12404,8 @@
     "origin": "東京都",
     "sites": [
       {
-        "title": "Fourth Gen Blog",
-        "url": "https://blog.nogizaka46.com/fourth/"
+        "title": "Official Blog",
+        "url": "https://blog.nogizaka46.com/mio.yakubo/"
       },
       {
         "title": "Profile",
@@ -12654,6 +12654,10 @@
     "origin": "東京都",
     "sites": [
       {
+        "title": "Fourth Gen Blog",
+        "url": "https://blog.nogizaka46.com/newfourth/"
+      },
+      {
         "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/kuromiharuka.php"
       }
@@ -12899,6 +12903,10 @@
     "bloodType": "b",
     "origin": "岩手県",
     "sites": [
+      {
+        "title": "Fourth Gen Blog",
+        "url": "https://blog.nogizaka46.com/newfourth/"
+      },
       {
         "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/satourika.php"
@@ -13146,6 +13154,10 @@
     "origin": "神奈川県",
     "sites": [
       {
+        "title": "Fourth Gen Blog",
+        "url": "https://blog.nogizaka46.com/newfourth/"
+      },
+      {
         "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/hayashiruna.php"
       }
@@ -13392,6 +13404,10 @@
     "origin": "千葉県",
     "sites": [
       {
+        "title": "Fourth Gen Blog",
+        "url": "https://blog.nogizaka46.com/newfourth/"
+      },
+      {
         "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/mastuomiyu.php"
       }
@@ -13637,6 +13653,10 @@
     "bloodType": "a",
     "origin": "京都府",
     "sites": [
+      {
+        "title": "Fourth Gen Blog",
+        "url": "https://blog.nogizaka46.com/newfourth/"
+      },
       {
         "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/yumikinao.php"
