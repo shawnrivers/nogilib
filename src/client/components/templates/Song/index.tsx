@@ -1,16 +1,17 @@
-import * as React from "react";
 import { motion } from "framer-motion";
+import * as React from "react";
 import { injectIntl } from "react-intl";
 import styles from "./song.module.scss";
-import { PageContentLayout } from "client/components/atoms/PageContentLayout";
 import { ArrowBackIcon } from "client/components/atoms/icons/ArrowBackIcon";
+import { Image } from "client/components/atoms/Image";
 import { LocalizedList } from "client/components/atoms/locales/LocalizedList";
-import { MemberCard } from "client/components/atoms/MemberCard";
 import { LocalizedNumber } from "client/components/atoms/locales/LocalizedNumber";
-import { useScrollRestoration } from "client/utils/hooks";
-import { SongType } from "client/types/responseTypes";
+import { MemberCard } from "client/components/atoms/MemberCard";
 import { Message } from "client/components/atoms/Message";
-import { KOJIHARU, Language } from "client/utils/constants";
+import { PageContentLayout } from "client/components/atoms/PageContentLayout";
+import { KOJIHARU, KOJIHARU_IMAGE, Language } from "client/utils/constants";
+import { useScrollRestoration } from "client/utils/hooks";
+import { SongType } from "server/utils/constants";
 
 const containerVariants = {
   visible: {
@@ -115,12 +116,7 @@ const KojiharuCard = ({ isCenter }: { isCenter: boolean }) => (
       firstName: "陽菜",
       firstNameEn: "haruna",
     }}
-    image={{
-      large:
-        "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/others/kojimaharuna_large.jpg",
-      small:
-        "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/others/kojimaharuna_small.jpg",
-    }}
+    image={KOJIHARU_IMAGE}
     isCenter={isCenter}
   />
 );
@@ -133,24 +129,15 @@ type SongPerformerType = {
     lastNameEn: string;
     firstNameEn: string;
   };
-  profileImage: {
-    large: string;
-    small: string;
-  };
-  singleImages: {
-    large: string;
-    small: string;
-  }[];
+  profileImage: string;
+  singleImages: string[];
 };
 
 interface SongProps {
   title: string;
   songTags: string[];
   type: SongType;
-  artwork: {
-    large: string;
-    medium: string;
-  };
+  artwork: string;
   performersTag: {
     singleNumber: string;
     name: string;
@@ -210,11 +197,7 @@ export const Song = ({
           >
             <motion.div variants={contentVariants} className={styles.artwork}>
               <div className={styles.artworkImageWrapper}>
-                <img
-                  src={artwork.medium}
-                  srcSet={`${artwork.large} 1.5x`}
-                  alt={title}
-                />
+                <Image src={artwork} alt={title} />
               </div>
             </motion.div>
             <motion.div variants={contentVariants} className={styles.content}>

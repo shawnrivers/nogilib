@@ -1,11 +1,11 @@
+import { motion } from "framer-motion";
 import * as React from "react";
 import { injectIntl } from "react-intl";
-import { motion } from "framer-motion";
 import styles from "./track.module.scss";
-import { FocusPerformersType, SongType } from "client/types/responseTypes";
-import { Message } from "client/components/atoms/Message";
 import { LocalizedLink } from "client/components/atoms/locales/LocalizedLink";
+import { Message } from "client/components/atoms/Message";
 import { classNames, getFocusPerformersText } from "client/utils/strings";
+import { FocusPerformersType, SongType } from "server/utils/constants";
 
 const containerVariants = {
   hover: { backgroundColor: "#595959", transition: { duration: 0.3 } },

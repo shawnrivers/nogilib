@@ -7,15 +7,12 @@ import { Artworks } from "client/components/molecules/Artworks";
 import { useScrollRestoration } from "client/utils/hooks";
 import { PageContentLayout } from "client/components/atoms/PageContentLayout";
 import { ArrowBackIcon } from "client/components/atoms/icons/ArrowBackIcon";
-import {
-  CdType,
-  FocusPerformersType,
-  SongType,
-} from "client/types/responseTypes";
+import { CdTabType } from "client/types/tabs";
 import { Message } from "client/components/atoms/Message";
 import { LocalizedLink } from "client/components/atoms/locales/LocalizedLink";
 import { Links } from "client/utils/constants";
 import { toCdNumber } from "client/utils/strings";
+import { SongType, FocusPerformersType } from "server/utils/constants";
 
 const containerVariants = {
   visible: {
@@ -69,13 +66,10 @@ const contentVariants = {
 };
 
 interface CdProps {
-  type: CdType;
+  type: CdTabType;
   title: string;
   number: string;
-  artworks: {
-    large: string;
-    medium: string;
-  }[];
+  artworks: string[];
   songs: {
     key: string;
     title: string;
@@ -103,7 +97,7 @@ export const Cd = ({
       <PageContentLayout>
         <motion.div whileHover={{ x: -7, scale: 1.5 }} className={styles.link}>
           <LocalizedLink
-            to={type === CdType.Singles ? Links.Singles : Links.Albums}
+            to={type === CdTabType.Singles ? Links.Singles : Links.Albums}
             label="Back"
           >
             <ArrowBackIcon className={styles.back} />

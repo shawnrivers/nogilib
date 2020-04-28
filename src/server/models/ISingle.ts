@@ -1,5 +1,5 @@
 import { MemberName } from "../editor/constants/names";
-import { RawCd, ResultCd } from "./commons";
+import { RawCd, ResultCd, CdResponse } from "./commons";
 
 type BehindPerformers = {
   trainees: MemberName[];
@@ -19,3 +19,10 @@ export type ResultSingle = ResultCd & {
 export type ResultSingles = {
   [title: string]: ResultSingle;
 };
+
+export type SingleResponse = CdResponse & {
+  underMembers: MemberName[];
+  behindPerformers: BehindPerformers;
+};
+
+export type SinglesResponse = SingleResponse[];

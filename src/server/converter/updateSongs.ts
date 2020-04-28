@@ -11,11 +11,7 @@ export const initializeSongs = (rawSongs: RawSong[]): ResultSongs => {
     key: Songs[rawSong.title].key,
     single: { title: "", number: "" },
     albums: [],
-    artwork: {
-      large: "",
-      medium: "",
-      small: "",
-    },
+    artwork: "",
     musicVideo: rawSong.musicVideo,
     type: rawSong.type,
     creators: rawSong.creators,

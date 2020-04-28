@@ -42,11 +42,7 @@ export type ResultSong = {
     title: string;
     number: string;
   }[];
-  artwork: {
-    large: string;
-    medium: string;
-    small: string;
-  };
+  artwork: string;
   musicVideo: string;
   type: SongType;
   creators: Creators;

@@ -10,7 +10,6 @@ import { SearchResultCategory } from "client/components/molecules/SearchResultCa
 export type SearchResult = {
   to: string;
   imgSrc: string;
-  imgSrcSet: string;
   heading: string;
   caption: string;
   secondCaption?: string;

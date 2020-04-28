@@ -1,7 +1,8 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import { Cds } from "client/components/templates/Cds";
-import { CdType } from "client/types/responseTypes";
+import { CdTabType } from "client/types/tabs";
+import { CdResponse } from "server/models/commons";
 
 export const query = graphql`
   query CdsQuery {
@@ -10,11 +11,7 @@ export const query = graphql`
         node {
           title
           number
-          artworks {
-            large
-            medium
-            small
-          }
+          artworks
         }
       }
     }
@@ -23,51 +20,31 @@ export const query = graphql`
         node {
           title
           number
-          artworks {
-            large
-            medium
-            small
-          }
+          artworks
         }
       }
     }
   }
 `;
 
-interface CdsData {
+type CdsData = {
   data: {
     allSinglesJson: {
       edges: {
-        node: {
-          title: string;
-          number: string;
-          artworks: {
-            large: string;
-            medium: string;
-            small: string;
-          }[];
-        };
+        node: Pick<CdResponse, "number" | "artworks" | "title">;
       }[];
     };
     allAlbumsJson: {
       edges: {
-        node: {
-          title: string;
-          number: string;
-          artworks: {
-            large: string;
-            medium: string;
-            small: string;
-          }[];
-        };
+        node: Pick<CdResponse, "number" | "artworks" | "title">;
       }[];
     };
   };
   pageContext: {
-    currentTab: CdType;
+    currentTab: CdTabType;
     locale: string;
   };
-}
+};
 
 const CdsContainer = ({
   data: { allSinglesJson, allAlbumsJson },
@@ -75,7 +52,7 @@ const CdsContainer = ({
 }: CdsData) => {
   const cds = React.useMemo(
     () =>
-      currentTab === CdType.Singles
+      currentTab === CdTabType.Singles
         ? allSinglesJson.edges
         : allAlbumsJson.edges,
     [currentTab, allSinglesJson, allAlbumsJson]

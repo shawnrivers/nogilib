@@ -1,7 +1,7 @@
-import * as React from "react";
 import { graphql } from "gatsby";
+import * as React from "react";
 import { Member } from "client/components/templates/Member";
-import { GlowStickColorType, PositionType } from "client/utils/constants";
+import { ResultMember } from "server/models/IMember";
 
 export const query = graphql`
   query($name: String!) {
@@ -35,10 +35,7 @@ export const query = graphql`
         left
         right
       }
-      profileImage {
-        large
-        small
-      }
+      profileImage
       photoAlbums {
         title
       }
@@ -52,68 +49,14 @@ export const query = graphql`
         selected
         under
       }
-      singleImages {
-        large
-        small
-      }
+      singleImages
     }
   }
 `;
 
 interface MemberData {
   data: {
-    membersJson: {
-      name: string;
-      nameNotations: {
-        firstName: string;
-        firstNameEn: string;
-        firstNameFurigana: string;
-        lastName: string;
-        lastNameEn: string;
-        lastNameFurigana: string;
-      };
-      sites: {
-        title: string;
-        url: string;
-      }[];
-      join: string;
-      graduation: {
-        isGraduated: boolean;
-      };
-      birthday: string;
-      height: number;
-      bloodType: string;
-      origin: string;
-      units: {
-        name: string;
-        type: string;
-      }[];
-      glowStickColor: {
-        left: GlowStickColorType;
-        right: GlowStickColorType;
-      };
-      profileImage: {
-        large: string;
-        small: string;
-      };
-      photoAlbums: {
-        title: string;
-      }[];
-      positionsHistory: {
-        position: PositionType;
-        singleNumber: string;
-      }[];
-      positionsCounter: {
-        center: number;
-        fukujin: number;
-        selected: number;
-        under: number;
-      };
-      singleImages: {
-        large: string;
-        small: string;
-      }[];
-    };
+    membersJson: ResultMember;
   };
 }
 
@@ -176,15 +119,15 @@ const MemberContainer = ({ data: { membersJson } }: MemberData) => {
     const list = membersJson.singleImages
       .slice()
       .reverse()
-      .filter(image => image.large !== "");
+      .filter(image => image !== "");
 
-    let uniqueList = [];
+    let uniqueList: string[] = [];
 
     for (const item of list) {
       let isSeen = false;
 
       for (const seenItem of uniqueList) {
-        if (seenItem.large === item.large) {
+        if (seenItem === item) {
           isSeen = true;
           break;
         }

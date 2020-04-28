@@ -6,12 +6,7 @@ import { ResultMembers } from "../models/IMember";
 import { RawSingle, ResultSingle, ResultSingles } from "../models/ISingle";
 import { ResultSongs } from "../models/ISong";
 import { arrayToObject } from "../utils/arrays";
-import {
-  DATA_SOURCE_PATH,
-  FocusPerformersType,
-  OVERTURE,
-  SongType,
-} from "../utils/constants";
+import { FocusPerformersType, OVERTURE, SongType } from "../utils/constants";
 import { convertPerformerNames } from "../utils/strings";
 
 const convertArtworks = (
@@ -31,49 +26,30 @@ const convertArtworks = (
     }))
   );
 
-  const noImageLargePath =
-    "src/assets/images/artworks/artwork_no_image_large.png";
-  const noImageMediumPath =
-    "src/assets/images/artworks/artwork_no_image_medium.png";
-  const noImageSmallPath =
-    "src/assets/images/artworks/artwork_no_image_small.png";
+  const noImageSrc = "artworks/artwork_no_image.png";
 
   for (const key of Object.keys(initialArtworks)) {
     if (rawCd.hasArtworks) {
-      const largeImagePath =
-        artworkImagesPath + rawCd.number.toString() + "/" + key + "_large.jpg";
-      const mediumImagePath =
-        artworkImagesPath + rawCd.number.toString() + "/" + key + "_medium.jpg";
-      const smallImagePath =
-        artworkImagesPath + rawCd.number.toString() + "/" + key + "_small.jpg";
+      const imageSrc =
+        artworkImagesPath + rawCd.number.toString() + "/" + key + ".jpg";
 
-      if (fs.existsSync(largeImagePath)) {
-        initialArtworks[key].large = DATA_SOURCE_PATH + largeImagePath;
+      const localFilePath = "./src/assets/images/" + imageSrc;
+
+      if (fs.existsSync(localFilePath)) {
+        initialArtworks[key] = imageSrc;
       } else {
-        initialArtworks[key].large = DATA_SOURCE_PATH + noImageLargePath;
-      }
-      if (fs.existsSync(mediumImagePath)) {
-        initialArtworks[key].medium = DATA_SOURCE_PATH + mediumImagePath;
-      } else {
-        initialArtworks[key].medium = DATA_SOURCE_PATH + noImageMediumPath;
-      }
-      if (fs.existsSync(smallImagePath)) {
-        initialArtworks[key].small = DATA_SOURCE_PATH + smallImagePath;
-      } else {
-        initialArtworks[key].small = DATA_SOURCE_PATH + noImageSmallPath;
+        initialArtworks[key] = noImageSrc;
       }
     } else {
-      initialArtworks[key].large = DATA_SOURCE_PATH + noImageLargePath;
-      initialArtworks[key].medium = DATA_SOURCE_PATH + noImageMediumPath;
-      initialArtworks[key].small = DATA_SOURCE_PATH + noImageSmallPath;
+      initialArtworks[key] = noImageSrc;
     }
   }
 
   return initialArtworks;
 };
 
-const SINGLE_ARTWORK_BASE_PATH = "src/assets/images/artworks/singles/";
-const ALBUM_ARTWORK_BASE_PATH = "src/assets/images/artworks/albums/";
+const SINGLE_ARTWORK_BASE_PATH = "artworks/singles/";
+const ALBUM_ARTWORK_BASE_PATH = "artworks/albums/";
 
 const convertCdSongs = (rawCdSongs: RawCdSong[]): ResultCdSong[] => {
   const initializeCdSong = (rawCdSong: RawCdSong): ResultCdSong => ({
@@ -82,11 +58,7 @@ const convertCdSongs = (rawCdSongs: RawCdSong[]): ResultCdSong[] => {
     key: Songs[rawCdSong.title].key,
     inCdType: rawCdSong.inCdType,
     type: SongType.None,
-    artwork: {
-      large: "",
-      medium: "",
-      small: "",
-    },
+    artwork: "",
     focusPerformers: {
       type: FocusPerformersType.None,
       name: [],

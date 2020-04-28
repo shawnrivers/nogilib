@@ -1,8 +1,9 @@
-import * as React from "react";
 import { motion } from "framer-motion";
+import * as React from "react";
 import styles from "./members.module.scss";
-import { JoinedGenerationType, MembersType } from "client/types/responseTypes";
 import { MemberCard } from "client/components/atoms/MemberCard";
+import { MembersTabType } from "client/types/tabs";
+import { JoinedGenerationType } from "server/utils/constants";
 
 const listVariants = {
   visible: {
@@ -37,15 +38,13 @@ export type MemberType = {
   join: JoinedGenerationType;
   graduation: {
     isGraduated: boolean;
+    graduatedDate: string;
   };
-  profileImage: {
-    large: string;
-    small: string;
-  };
+  profileImage: string;
 };
 
 interface MembersProps {
-  page: MembersType;
+  page: MembersTabType;
   members: MemberType[];
 }
 

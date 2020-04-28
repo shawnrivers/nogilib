@@ -1,7 +1,9 @@
-import * as React from "react";
 import { graphql } from "gatsby";
-import { MemberType, Members } from "client/components/templates/Members";
-import { JoinedGenerationType, MembersType } from "client/types/responseTypes";
+import * as React from "react";
+import { Members, MemberType } from "client/components/templates/Members";
+import { MembersTabType } from "client/types/tabs";
+import { ResultMember } from "server/models/IMember";
+import { JoinedGenerationType } from "server/utils/constants";
 
 export const query = graphql`
   query MembersQuery {
@@ -19,10 +21,7 @@ export const query = graphql`
           isGraduated
           graduatedDate
         }
-        profileImage {
-          large
-          small
-        }
+        profileImage
       }
     }
   }
@@ -31,28 +30,19 @@ export const query = graphql`
 interface MembersData {
   data: {
     allMembersJson: {
-      nodes: {
-        name: string;
-        nameNotations: {
-          lastName: string;
-          firstName: string;
-          lastNameEn: string;
-          firstNameEn: string;
-        };
-        join: JoinedGenerationType;
-        graduation: {
-          isGraduated: boolean;
-          graduatedDate: string;
-        };
-        profileImage: {
-          large: string;
-          small: string;
-        };
-      }[];
+      nodes: (Pick<
+        ResultMember,
+        "name" | "join" | "graduation" | "profileImage"
+      > & {
+        nameNotations: Pick<
+          ResultMember["nameNotations"],
+          "lastName" | "firstName" | "lastNameEn" | "firstNameEn"
+        >;
+      })[];
     };
   };
   pageContext: {
-    currentTab: MembersType;
+    currentTab: MembersTabType;
     locale: string;
   };
 }
@@ -115,15 +105,15 @@ const MembersContainer = ({
 
   const members = React.useMemo(() => {
     switch (currentTab) {
-      case MembersType.FirstGeneration:
+      case MembersTabType.FirstGeneration:
         return allMembers.first;
-      case MembersType.SecondGeneration:
+      case MembersTabType.SecondGeneration:
         return allMembers.second;
-      case MembersType.ThirdGeneration:
+      case MembersTabType.ThirdGeneration:
         return allMembers.third;
-      case MembersType.FourthGeneration:
+      case MembersTabType.FourthGeneration:
         return allMembers.fourth;
-      case MembersType.Graduated:
+      case MembersTabType.Graduated:
         return allMembers.graduated;
       default:
         return allMembers.first;

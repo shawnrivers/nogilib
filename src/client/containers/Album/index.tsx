@@ -1,21 +1,16 @@
-import * as React from "react";
 import { graphql } from "gatsby";
+import * as React from "react";
 import { Cd } from "client/components/templates/Cd";
-import {
-  CdType,
-  FocusPerformersType,
-  SongType,
-} from "client/types/responseTypes";
+import { CdTabType } from "client/types/tabs";
+import { ResultCdSong } from "server/models/commons";
+import { AlbumResponse } from "server/models/IAlbum";
 
 export const query = graphql`
   query($number: String!) {
     albumsJson(number: { eq: $number }) {
       title
       number
-      artworks {
-        large
-        medium
-      }
+      artworks
       songs {
         key
         title
@@ -32,27 +27,15 @@ export const query = graphql`
 
 interface AlbumJson {
   data: {
-    albumsJson: {
-      title: string;
-      number: string;
-      artworks: {
-        large: string;
-        medium: string;
-      }[];
-      songs: {
-        key: string;
-        title: string;
-        type: SongType;
-        focusPerformers: {
-          name: string[];
-          type: FocusPerformersType;
-        };
-      }[];
-      release: string;
+    albumsJson: Pick<
+      AlbumResponse,
+      "title" | "number" | "artworks" | "release"
+    > & {
+      songs: Pick<ResultCdSong, "key" | "title" | "type" | "focusPerformers">[];
     };
   };
   pageContext: {
-    cdType: CdType;
+    cdType: CdTabType;
     number: string;
     locale: string;
   };
@@ -61,7 +44,7 @@ interface AlbumJson {
 const AlbumContainer = ({ data: { albumsJson } }: AlbumJson) => {
   return albumsJson ? (
     <Cd
-      type={CdType.Albums}
+      type={CdTabType.Albums}
       title={albumsJson.title}
       number={albumsJson.number}
       artworks={albumsJson.artworks}

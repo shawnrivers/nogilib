@@ -2,7 +2,7 @@ import { MemberName } from "../editor/constants/names";
 import {
   BloodType,
   GlowStickColorType,
-  JoinedGeneration,
+  JoinedGenerationType,
   PhotoAlbumType,
   PositionType,
   UnitType,
@@ -30,11 +30,6 @@ type PhotoAlbum = {
   shopping: Site[];
 };
 
-type MemberProfileImage = {
-  large: string;
-  small: string;
-};
-
 type Graduation = {
   isGraduated: boolean;
   graduatedDate: string;
@@ -44,7 +39,7 @@ export type RawMember = {
   name: MemberName;
   nameNotations: NameNotations;
   glowStickColor: GlowStickColor;
-  join: JoinedGeneration;
+  join: JoinedGenerationType;
   birthday: string;
   height: number;
   bloodType: BloodType;
@@ -58,9 +53,9 @@ export type ResultMember = {
   name: MemberName;
   nameNotations: NameNotations;
   glowStickColor: GlowStickColor;
-  profileImage: MemberProfileImage;
-  singleImages: MemberProfileImage[];
-  join: JoinedGeneration;
+  profileImage: string;
+  singleImages: string[];
+  join: JoinedGenerationType;
   birthday: string;
   height: number;
   bloodType: BloodType;

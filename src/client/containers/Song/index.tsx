@@ -1,23 +1,23 @@
-import * as React from "react";
 import { graphql } from "gatsby";
+import * as React from "react";
 import { Song } from "client/components/templates/Song";
 import { arrayToObject } from "client/utils/arrays";
-import { SongType } from "client/types/responseTypes";
 import { toCdNumber } from "client/utils/strings";
+import { ResultMember } from "server/models/IMember";
+import { ResultSong } from "server/models/ISong";
 
 export const query = graphql`
   query($key: String!) {
     songsJson(key: { eq: $key }) {
       title
       type
-      artwork {
-        large
-        medium
-      }
+      artwork
       single {
+        title
         number
       }
       albums {
+        title
         number
       }
       performersTag {
@@ -46,17 +46,13 @@ export const query = graphql`
         nameNotations {
           firstName
           firstNameEn
+          firstNameFurigana
+          lastNameFurigana
           lastName
           lastNameEn
         }
-        profileImage {
-          large
-          small
-        }
-        singleImages {
-          large
-          small
-        }
+        profileImage
+        singleImages
       }
     }
   }
@@ -64,57 +60,23 @@ export const query = graphql`
 
 interface SongData {
   data: {
-    songsJson: {
-      title: string;
-      type: SongType;
-      artwork: {
-        large: string;
-        medium: string;
-      };
-      single: {
-        number: string;
-      };
-      albums: {
-        number: string;
-      }[];
-      performersTag: {
-        singleNumber: string;
-        name: string;
-      };
-      performers: {
-        center: string[];
-      };
-      formations: {
-        firstRow: string[];
-        fourthRow: string[];
-        secondRow: string[];
-        thirdRow: string[];
-      };
-      creators: {
-        arrange: string[];
-        compose: string[];
-        direct: string[];
-        lyrics: string[];
-      };
-    };
+    songsJson: Pick<
+      ResultSong,
+      | "title"
+      | "type"
+      | "artwork"
+      | "single"
+      | "albums"
+      | "performersTag"
+      | "formations"
+      | "creators"
+      | "performers"
+    >;
     allMembersJson: {
-      nodes: {
-        name: string;
-        nameNotations: {
-          lastName: string;
-          firstName: string;
-          lastNameEn: string;
-          firstNameEn: string;
-        };
-        profileImage: {
-          large: string;
-          small: string;
-        };
-        singleImages: {
-          large: string;
-          small: string;
-        }[];
-      }[];
+      nodes: Pick<
+        ResultMember,
+        "name" | "profileImage" | "singleImages" | "nameNotations"
+      >[];
     };
   };
 }

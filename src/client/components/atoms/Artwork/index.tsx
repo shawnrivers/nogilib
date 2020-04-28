@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import * as React from "react";
 import styles from "./artwork.module.scss";
 import { classNames } from "client/utils/strings";
-import { LazyImage } from "client/components/atoms/LazyImage";
+import { Image } from "client/components/atoms/Image";
 
 const backgroundFade = {
   isHovered: {
@@ -22,17 +22,17 @@ const titleFade = {
   },
 };
 
-interface ArtworkProps {
-  images: {
-    large: string;
-    medium: string;
-    small: string;
-  };
+type ArtworkProps = {
+  imageSrc: string;
   title: string;
   className?: string;
-}
+};
 
-export const Artwork = ({ images, title, className }: ArtworkProps) => {
+export const Artwork: React.FC<ArtworkProps> = ({
+  imageSrc,
+  title,
+  className,
+}) => {
   const [isHovered, setHover] = React.useState(false);
 
   return (
@@ -43,10 +43,10 @@ export const Artwork = ({ images, title, className }: ArtworkProps) => {
       className={classNames(styles.container, className)}
     >
       <div className={styles.wrapper}>
-        <LazyImage
-          src={images.small}
-          srcSet={`${images.medium} 2x, ${images.large} 3x`}
-          alt={title}
+        <Image
+          src={imageSrc}
+          alt="しあわせの保護色"
+          objectFit="cover"
           className={styles.image}
         />
         <motion.div
