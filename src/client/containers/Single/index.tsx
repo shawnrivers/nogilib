@@ -2,17 +2,14 @@ import { graphql } from "gatsby";
 import * as React from "react";
 import { Cd } from "client/components/templates/Cd";
 import { CdTabType } from "client/types/tabs";
-import { CdArtwork, CdResponse, ResultCdSong } from "server/models/commons";
+import { CdResponse, ResultCdSong } from "server/models/commons";
 
 export const query = graphql`
   query($number: String!) {
     singlesJson(number: { eq: $number }) {
       title
       number
-      artworks {
-        large
-        medium
-      }
+      artworks
       songs {
         key
         title
@@ -29,8 +26,10 @@ export const query = graphql`
 
 interface SingleData {
   data: {
-    singlesJson: Pick<CdResponse, "title" | "number" | "release"> & {
-      artworks: Omit<CdArtwork, "small">[];
+    singlesJson: Pick<
+      CdResponse,
+      "title" | "number" | "release" | "artworks"
+    > & {
       songs: Pick<ResultCdSong, "key" | "title" | "type" | "focusPerformers">[];
     };
   };

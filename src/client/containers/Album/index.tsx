@@ -9,10 +9,7 @@ export const query = graphql`
     albumsJson(number: { eq: $number }) {
       title
       number
-      artworks {
-        large
-        medium
-      }
+      artworks
       songs {
         key
         title

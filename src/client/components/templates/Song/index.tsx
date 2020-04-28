@@ -11,6 +11,7 @@ import { useScrollRestoration } from "client/utils/hooks";
 import { Message } from "client/components/atoms/Message";
 import { KOJIHARU, Language } from "client/utils/constants";
 import { SongType } from "server/utils/constants";
+import { Image } from "client/components/atoms/Image";
 
 const containerVariants = {
   visible: {
@@ -147,10 +148,7 @@ interface SongProps {
   title: string;
   songTags: string[];
   type: SongType;
-  artwork: {
-    large: string;
-    medium: string;
-  };
+  artwork: string;
   performersTag: {
     singleNumber: string;
     name: string;
@@ -210,11 +208,7 @@ export const Song = ({
           >
             <motion.div variants={contentVariants} className={styles.artwork}>
               <div className={styles.artworkImageWrapper}>
-                <img
-                  src={artwork.medium}
-                  srcSet={`${artwork.large} 1.5x`}
-                  alt={title}
-                />
+                <Image src={artwork} alt={title} />
               </div>
             </motion.div>
             <motion.div variants={contentVariants} className={styles.content}>

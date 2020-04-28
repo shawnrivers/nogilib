@@ -11,11 +11,7 @@ export const query = graphql`
         node {
           title
           number
-          artworks {
-            large
-            medium
-            small
-          }
+          artworks
         }
       }
     }
@@ -24,11 +20,7 @@ export const query = graphql`
         node {
           title
           number
-          artworks {
-            large
-            medium
-            small
-          }
+          artworks
         }
       }
     }

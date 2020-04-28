@@ -10,10 +10,7 @@ export const query = graphql`
     songsJson(key: { eq: $key }) {
       title
       type
-      artwork {
-        large
-        medium
-      }
+      artwork
       single {
         number
       }
@@ -67,10 +64,7 @@ interface SongData {
     songsJson: {
       title: string;
       type: SongType;
-      artwork: {
-        large: string;
-        medium: string;
-      };
+      artwork: string;
       single: {
         number: string;
       };

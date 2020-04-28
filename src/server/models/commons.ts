@@ -5,11 +5,7 @@ export type Site = {
   url: string;
 };
 
-export type CdArtwork = {
-  large: string;
-  medium: string;
-  small: string;
-};
+export type CdArtwork = string;
 
 export type RawCdSong = {
   number: number;
@@ -45,7 +41,7 @@ export type ResultCd = {
   number: string;
   release: string;
   artworks: {
-    [type: string]: CdArtwork;
+    [type: string]: string;
   };
   shopping: Site[];
   songs: ResultCdSong[];

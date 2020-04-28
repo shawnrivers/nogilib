@@ -4,12 +4,10 @@ import styles from "./artworks.module.scss";
 import { ArrowLeftIcon } from "client/components/atoms/icons/ArrowLeftIcon";
 import { ArrowRightIcon } from "client/components/atoms/icons/ArrowRightIcon";
 import { classNames } from "client/utils/strings";
+import { Image } from "client/components/atoms/Image";
 
 interface ArtworksProps {
-  artworks: {
-    large: string;
-    medium: string;
-  }[];
+  artworks: string[];
   title: string;
   className?: string;
 }
@@ -45,7 +43,7 @@ export const Artworks = ({ artworks, title, className }: ArtworksProps) => {
         </motion.button>
         <motion.div whileHover={{ scale: 1.07 }} className={styles.images}>
           {artworks.map((artwork, index) => (
-            <motion.img
+            <motion.div
               key={index}
               animate={
                 artworkIndex === index
@@ -53,11 +51,10 @@ export const Artworks = ({ artworks, title, className }: ArtworksProps) => {
                   : { opacity: 0, scale: 0 }
               }
               onClick={handleClickNext}
-              src={artwork.medium}
-              srcSet={`${artwork.large} 1.5x`}
-              alt={title}
               className={styles.image}
-            />
+            >
+              <Image src={artwork} alt={title} />
+            </motion.div>
           ))}
         </motion.div>
         <motion.button

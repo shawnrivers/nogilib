@@ -33,11 +33,7 @@ type CdsProps = {
     node: {
       title: string;
       number: string;
-      artworks: {
-        large: string;
-        medium: string;
-        small: string;
-      }[];
+      artworks: string[];
     };
   }[];
 };
@@ -57,7 +53,7 @@ export const Cds = ({ cds, page }: CdsProps) => {
           className={styles.artwork}
         >
           <LocalizedLink to={`/${page}/${node.number}`}>
-            <Artwork images={node.artworks[0]} title={node.title} />
+            <Artwork imageSrc={node.artworks[0]} title={node.title} />
           </LocalizedLink>
         </motion.div>
       ))}

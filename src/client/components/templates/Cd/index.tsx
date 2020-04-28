@@ -69,10 +69,7 @@ interface CdProps {
   type: CdTabType;
   title: string;
   number: string;
-  artworks: {
-    large: string;
-    medium: string;
-  }[];
+  artworks: string[];
   songs: {
     key: string;
     title: string;
