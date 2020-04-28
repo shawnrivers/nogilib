@@ -7,7 +7,7 @@ import { Artworks } from "client/components/molecules/Artworks";
 import { useScrollRestoration } from "client/utils/hooks";
 import { PageContentLayout } from "client/components/atoms/PageContentLayout";
 import { ArrowBackIcon } from "client/components/atoms/icons/ArrowBackIcon";
-import { CdTabType } from "client/types/tab";
+import { CdTabType } from "client/types/tabs";
 import { Message } from "client/components/atoms/Message";
 import { LocalizedLink } from "client/components/atoms/locales/LocalizedLink";
 import { Links } from "client/utils/constants";

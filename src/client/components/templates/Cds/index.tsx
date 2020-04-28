@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import styles from "./cds.module.scss";
 import { Artwork } from "client/components/atoms/Artwork";
 import { LocalizedLink } from "client/components/atoms/locales/LocalizedLink";
-import { CdTabType } from "client/types/tab";
+import { CdTabType } from "client/types/tabs";
 
 const listVariants = {
   visible: {

@@ -9,7 +9,7 @@ import { PageTabs } from "client/components/molecules/PageTabs";
 import en from "client/i18n/en.json";
 import ja from "client/i18n/ja.json";
 import zh from "client/i18n/zh.json";
-import { CdTabType, MembersTabType } from "client/types/tab";
+import { CdTabType, MembersTabType } from "client/types/tabs";
 import "client/styles/app.scss";
 import { Language, Links } from "client/utils/constants";
 

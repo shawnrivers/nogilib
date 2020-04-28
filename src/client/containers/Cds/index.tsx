@@ -1,7 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import { Cds } from "client/components/templates/Cds";
-import { CdTabType } from "client/types/tab";
+import { CdTabType } from "client/types/tabs";
 import { CdResponse } from "server/models/commons";
 
 export const query = graphql`

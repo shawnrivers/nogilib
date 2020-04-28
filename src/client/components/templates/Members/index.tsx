@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import * as React from "react";
 import styles from "./members.module.scss";
 import { MemberCard } from "client/components/atoms/MemberCard";
-import { MembersTabType } from "client/types/tab";
+import { MembersTabType } from "client/types/tabs";
 import { JoinedGenerationType } from "server/utils/constants";
 
 const listVariants = {

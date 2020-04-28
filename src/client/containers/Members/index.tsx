@@ -1,7 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import { MemberType, Members } from "client/components/templates/Members";
-import { MembersTabType } from "client/types/tab";
+import { MembersTabType } from "client/types/tabs";
 import { JoinedGenerationType } from "server/utils/constants";
 
 export const query = graphql`
