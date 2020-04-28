@@ -145,7 +145,7 @@ export const recordProfileImages = (
 ) => {
   for (const member of Object.values(members)) {
     for (let i = 0; i < singleCount; i++) {
-      const profileImageSrc = `members/${i + 1}/${member.name}_large.jpg`;
+      const profileImageSrc = `members/${i + 1}/${member.name}.jpg`;
 
       let singleImage = "";
 
@@ -158,10 +158,10 @@ export const recordProfileImages = (
       member.singleImages.push(singleImage);
     }
 
-    const graduatedProfileImagePath = `members/graduated/${member.name}_large.jpg`;
+    const graduatedProfileImagePath = `members/graduated/${member.name}.jpg`;
 
     if (member.singleImages[singleCount - 1] === "") {
-      member.profileImage = "members/member_no_image_large.png";
+      member.profileImage = "members/member_no_image.png";
     } else {
       if (
         member.graduation.isGraduated &&

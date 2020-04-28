@@ -24,6 +24,7 @@ export enum SearchResultType {
 }
 
 export const KOJIHARU = "kojimaharuna";
+export const KOJIHARU_IMAGE = "members/others/kojimaharuna.jpg";
 
 export enum PositionType {
   Center = "center",

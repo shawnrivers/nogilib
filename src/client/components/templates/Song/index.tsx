@@ -1,17 +1,17 @@
-import * as React from "react";
 import { motion } from "framer-motion";
+import * as React from "react";
 import { injectIntl } from "react-intl";
 import styles from "./song.module.scss";
-import { PageContentLayout } from "client/components/atoms/PageContentLayout";
 import { ArrowBackIcon } from "client/components/atoms/icons/ArrowBackIcon";
-import { LocalizedList } from "client/components/atoms/locales/LocalizedList";
-import { MemberCard } from "client/components/atoms/MemberCard";
-import { LocalizedNumber } from "client/components/atoms/locales/LocalizedNumber";
-import { useScrollRestoration } from "client/utils/hooks";
-import { Message } from "client/components/atoms/Message";
-import { KOJIHARU, Language } from "client/utils/constants";
-import { SongType } from "server/utils/constants";
 import { Image } from "client/components/atoms/Image";
+import { LocalizedList } from "client/components/atoms/locales/LocalizedList";
+import { LocalizedNumber } from "client/components/atoms/locales/LocalizedNumber";
+import { MemberCard } from "client/components/atoms/MemberCard";
+import { Message } from "client/components/atoms/Message";
+import { PageContentLayout } from "client/components/atoms/PageContentLayout";
+import { KOJIHARU, KOJIHARU_IMAGE, Language } from "client/utils/constants";
+import { useScrollRestoration } from "client/utils/hooks";
+import { SongType } from "server/utils/constants";
 
 const containerVariants = {
   visible: {
@@ -116,7 +116,7 @@ const KojiharuCard = ({ isCenter }: { isCenter: boolean }) => (
       firstName: "陽菜",
       firstNameEn: "haruna",
     }}
-    image="members/others/kojimaharuna_large.jpg"
+    image={KOJIHARU_IMAGE}
     isCenter={isCenter}
   />
 );
