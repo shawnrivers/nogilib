@@ -30,11 +30,6 @@ type PhotoAlbum = {
   shopping: Site[];
 };
 
-type MemberProfileImage = {
-  large: string;
-  small: string;
-};
-
 type Graduation = {
   isGraduated: boolean;
   graduatedDate: string;
@@ -58,8 +53,8 @@ export type ResultMember = {
   name: MemberName;
   nameNotations: NameNotations;
   glowStickColor: GlowStickColor;
-  profileImage: MemberProfileImage;
-  singleImages: MemberProfileImage[];
+  profileImage: string;
+  singleImages: string[];
   join: JoinedGenerationType;
   birthday: string;
   height: number;

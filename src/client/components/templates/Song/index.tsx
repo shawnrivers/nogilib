@@ -116,12 +116,7 @@ const KojiharuCard = ({ isCenter }: { isCenter: boolean }) => (
       firstName: "陽菜",
       firstNameEn: "haruna",
     }}
-    image={{
-      large:
-        "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/others/kojimaharuna_large.jpg",
-      small:
-        "https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/others/kojimaharuna_small.jpg",
-    }}
+    image="https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/others/kojimaharuna_large.jpg"
     isCenter={isCenter}
   />
 );
@@ -134,14 +129,8 @@ type SongPerformerType = {
     lastNameEn: string;
     firstNameEn: string;
   };
-  profileImage: {
-    large: string;
-    small: string;
-  };
-  singleImages: {
-    large: string;
-    small: string;
-  }[];
+  profileImage: string;
+  singleImages: string[];
 };
 
 interface SongProps {

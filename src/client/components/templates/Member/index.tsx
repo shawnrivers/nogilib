@@ -1,21 +1,21 @@
-import * as React from "react";
 import { motion } from "framer-motion";
+import * as React from "react";
 import { FormattedDate } from "react-intl";
 import styles from "./member.module.scss";
-import { PageContentLayout } from "client/components/atoms/PageContentLayout";
 import { ArrowBackIcon } from "client/components/atoms/icons/ArrowBackIcon";
-import { useScrollRestoration } from "client/utils/hooks";
+import { Image } from "client/components/atoms/Image";
 import { LocalizedList } from "client/components/atoms/locales/LocalizedList";
+import { Message } from "client/components/atoms/Message";
+import { PageContentLayout } from "client/components/atoms/PageContentLayout";
 import { PositionBadge } from "client/components/atoms/PositionBadge";
 import { PositionCounter } from "client/components/atoms/PositionCounter";
-import { Message } from "client/components/atoms/Message";
-import { LazyImage } from "client/components/atoms/LazyImage";
-import { classNames } from "client/utils/strings";
 import {
-  GLOW_STICK_COLORS,
   GlowStickColorType,
+  GLOW_STICK_COLORS,
   PositionType,
 } from "client/utils/constants";
+import { useScrollRestoration } from "client/utils/hooks";
+import { classNames } from "client/utils/strings";
 
 const containerVariants = {
   visible: {
@@ -75,10 +75,7 @@ interface MemberProps {
     en: string;
     furigana: string;
   };
-  profileImage: {
-    large: string;
-    small: string;
-  };
+  profileImage: string;
   sites: {
     title: string;
     url: string;
@@ -111,10 +108,7 @@ interface MemberProps {
     selected: number;
     under: number;
   };
-  gallery: {
-    large: string;
-    small: string;
-  }[];
+  gallery: string[];
 }
 
 export const Member = ({
@@ -171,11 +165,7 @@ export const Member = ({
                 className={styles.profileImageContainer}
               >
                 <div className={styles.profileImageWrapper}>
-                  <img
-                    src={profileImage.small}
-                    srcSet={`${profileImage.large} 2x`}
-                    alt={name}
-                  />
+                  <Image src={profileImage} alt={name} />
                 </div>
                 <div className={styles.stickColors}>
                   <span
@@ -387,9 +377,8 @@ export const Member = ({
                           key={index}
                         >
                           <div className={styles.wrapper}>
-                            <LazyImage
-                              src={profileImage.small}
-                              srcSet={profileImage.large + " 2x"}
+                            <Image
+                              src={profileImage}
                               alt={name}
                               className={styles.galleryImage}
                             />

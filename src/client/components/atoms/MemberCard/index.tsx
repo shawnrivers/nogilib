@@ -1,16 +1,13 @@
-import * as React from "react";
 import { motion } from "framer-motion";
+import * as React from "react";
 import { injectIntl } from "react-intl";
 import styles from "./membercard.module.scss";
 import { KOJIHARU, Language } from "client/utils/constants";
 import { LocalizedLink } from "client/components/atoms/locales/LocalizedLink";
-import { LazyImage } from "client/components/atoms/LazyImage";
+import { Image } from "client/components/atoms/Image";
 
 interface MemberCardProps {
-  image: {
-    large: string;
-    small: string;
-  };
+  image: string;
   nameKey: string;
   name: {
     lastName: string;
@@ -83,12 +80,7 @@ export const MemberCard = injectIntl(
           >
             <div className={styles.imageContainer}>
               <div className={styles.wrapper}>
-                <LazyImage
-                  src={image.small}
-                  srcSet={image.large + " 2x"}
-                  alt={nameText}
-                  className={styles.image}
-                />
+                <Image src={image} alt={nameText} className={styles.image} />
               </div>
             </div>
             <motion.div
@@ -110,9 +102,8 @@ export const MemberCard = injectIntl(
         >
           <div className={styles.imageContainer}>
             <div className={styles.wrapper}>
-              <LazyImage
-                src={image.small}
-                srcSet={image.large + " 2x"}
+              <Image
+                src={"members/graduated/nakamotohimeka_large.jpg"}
                 alt={nameText}
                 className={styles.image}
               />

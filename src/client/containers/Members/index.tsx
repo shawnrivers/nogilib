@@ -1,7 +1,8 @@
-import * as React from "react";
 import { graphql } from "gatsby";
-import { MemberType, Members } from "client/components/templates/Members";
+import * as React from "react";
+import { Members, MemberType } from "client/components/templates/Members";
 import { MembersTabType } from "client/types/tabs";
+import { ResultMember } from "server/models/IMember";
 import { JoinedGenerationType } from "server/utils/constants";
 
 export const query = graphql`
@@ -20,10 +21,7 @@ export const query = graphql`
           isGraduated
           graduatedDate
         }
-        profileImage {
-          large
-          small
-        }
+        profileImage
       }
     }
   }
@@ -32,24 +30,15 @@ export const query = graphql`
 interface MembersData {
   data: {
     allMembersJson: {
-      nodes: {
-        name: string;
-        nameNotations: {
-          lastName: string;
-          firstName: string;
-          lastNameEn: string;
-          firstNameEn: string;
-        };
-        join: JoinedGenerationType;
-        graduation: {
-          isGraduated: boolean;
-          graduatedDate: string;
-        };
-        profileImage: {
-          large: string;
-          small: string;
-        };
-      }[];
+      nodes: (Pick<
+        ResultMember,
+        "name" | "join" | "graduation" | "profileImage"
+      > & {
+        nameNotations: Pick<
+          ResultMember["nameNotations"],
+          "lastName" | "firstName" | "lastNameEn" | "firstNameEn"
+        >;
+      })[];
     };
   };
   pageContext: {

@@ -1,27 +1,17 @@
 import * as fs from "fs";
-import { ResultMembers, RawMember, ResultMember } from "../models/IMember";
+import { RawMember, ResultMember, ResultMembers } from "../models/IMember";
 import { ResultSingles } from "../models/ISingle";
 import { ResultSongs } from "../models/ISong";
 import { ResultUnits } from "../models/IUnit";
-import {
-  FukujinType,
-  DATA_SOURCE_PATH,
-  PositionType,
-  SongType,
-} from "../utils/constants";
 import { arrayToObject } from "../utils/arrays";
-
-const PROFILE_IMAGES_PATH = "src/assets/images/members";
+import { FukujinType, PositionType, SongType } from "../utils/constants";
 
 export const initializeMembers = (rawMembers: RawMember[]): ResultMembers => {
   const initializeMember = (rawMember: RawMember): ResultMember => ({
     name: rawMember.name,
     nameNotations: rawMember.nameNotations,
     glowStickColor: rawMember.glowStickColor,
-    profileImage: {
-      large: "",
-      small: "",
-    },
+    profileImage: "",
     singleImages: [],
     join: rawMember.join,
     birthday: rawMember.birthday,
@@ -155,71 +145,34 @@ export const recordProfileImages = (
 ) => {
   for (const member of Object.values(members)) {
     for (let i = 0; i < singleCount; i++) {
-      const profileImageLargePath = `${PROFILE_IMAGES_PATH}/${i + 1}/${
-        member.name
-      }_large.jpg`;
-      const profileImageSmallPath = `${PROFILE_IMAGES_PATH}/${i + 1}/${
-        member.name
-      }_small.jpg`;
+      const profileImageSrc = `members/${i + 1}/${member.name}_large.jpg`;
 
-      let singleImage = {
-        large: "",
-        small: "",
-      };
+      let singleImage = "";
 
-      if (fs.existsSync(profileImageLargePath)) {
-        singleImage.large = DATA_SOURCE_PATH + profileImageLargePath;
+      if (fs.existsSync("./src/assets/images/" + profileImageSrc)) {
+        singleImage = profileImageSrc;
       } else if (i > 1) {
-        singleImage.large = member.singleImages[i - 1].large;
-      }
-
-      if (fs.existsSync(profileImageSmallPath)) {
-        singleImage.small = DATA_SOURCE_PATH + profileImageSmallPath;
-      } else if (i > 1) {
-        singleImage.small = member.singleImages[i - 1].small;
+        singleImage = member.singleImages[i - 1];
       }
 
       member.singleImages.push(singleImage);
     }
 
-    const graduatedProfileImagePath = {
-      large: `${PROFILE_IMAGES_PATH}/graduated/${member.name}_large.jpg`,
-      small: `${PROFILE_IMAGES_PATH}/graduated/${member.name}_small.jpg`,
-    };
+    const graduatedProfileImagePath = `members/graduated/${member.name}_large.jpg`;
 
-    if (
-      member.singleImages[singleCount - 1].large === "" &&
-      member.singleImages[singleCount - 1].small === ""
-    ) {
-      member.profileImage = {
-        large:
-          DATA_SOURCE_PATH + PROFILE_IMAGES_PATH + "/member_no_image_large.png",
-        small:
-          DATA_SOURCE_PATH +
-          PROFILE_IMAGES_PATH +
-          "/member_no_image_medium.png",
-      };
+    if (member.singleImages[singleCount - 1] === "") {
+      member.profileImage = "members/member_no_image_large.png";
     } else {
       if (
         member.graduation.isGraduated &&
-        fs.existsSync(graduatedProfileImagePath.large) &&
-        fs.existsSync(graduatedProfileImagePath.small)
+        fs.existsSync("./src/assets/images/" + graduatedProfileImagePath)
       ) {
-        member.profileImage = {
-          large: DATA_SOURCE_PATH + graduatedProfileImagePath.large,
-          small: DATA_SOURCE_PATH + graduatedProfileImagePath.small,
-        };
+        member.profileImage = graduatedProfileImagePath;
       } else {
-        member.profileImage = {
-          large:
-            member.singleImages[singleCount - 1].large !== ""
-              ? member.singleImages[singleCount - 1].large
-              : member.singleImages[singleCount - 1].large,
-          small:
-            member.singleImages[singleCount - 1].small !== ""
-              ? member.singleImages[singleCount - 1].small
-              : member.singleImages[singleCount - 1].large,
-        };
+        member.profileImage =
+          member.singleImages[singleCount - 1] !== ""
+            ? member.singleImages[singleCount - 1]
+            : member.singleImages[singleCount - 1];
       }
     }
   }

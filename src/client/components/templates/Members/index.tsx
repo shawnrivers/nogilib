@@ -38,11 +38,9 @@ export type MemberType = {
   join: JoinedGenerationType;
   graduation: {
     isGraduated: boolean;
+    graduatedDate: string;
   };
-  profileImage: {
-    large: string;
-    small: string;
-  };
+  profileImage: string;
 };
 
 interface MembersProps {
