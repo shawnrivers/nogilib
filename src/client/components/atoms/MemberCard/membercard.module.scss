@@ -27,6 +27,7 @@
   margin-bottom: 8px;
   max-width: 160px;
   min-width: 90px;
+  overflow: hidden;
   padding-top: 120%;
   position: relative;
   width: 100%;
@@ -42,12 +43,7 @@
 }
 
 .image {
-  display: block;
   height: 100%;
-  object-fit: cover;
-  object-position: top;
-  transform-origin: center;
-  width: 100%;
 }
 
 .name {

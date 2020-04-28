@@ -43,16 +43,10 @@ export const Artwork: React.FC<ArtworkProps> = ({
       className={classNames(styles.container, className)}
     >
       <div className={styles.wrapper}>
-        {/* <LazyImage
-          src={images.small}
-          srcSet={`${images.medium} 2x, ${images.large} 3x`}
-          alt={title}
-          className={styles.image}
-        /> */}
         <Image
-          // src="artworks/singles/25/A_large.jpg"
           src={imageSrc}
           alt="しあわせの保護色"
+          objectFit="cover"
           className={styles.image}
         />
         <motion.div

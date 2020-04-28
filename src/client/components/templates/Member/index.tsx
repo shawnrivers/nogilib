@@ -165,7 +165,13 @@ export const Member = ({
                 className={styles.profileImageContainer}
               >
                 <div className={styles.profileImageWrapper}>
-                  <Image src={profileImage} alt={name} />
+                  <Image
+                    src={profileImage}
+                    alt={name}
+                    objectFit="cover"
+                    objectPosition="top"
+                    className={styles.profileImage}
+                  />
                 </div>
                 <div className={styles.stickColors}>
                   <span
@@ -380,6 +386,8 @@ export const Member = ({
                             <Image
                               src={profileImage}
                               alt={name}
+                              objectFit="cover"
+                              objectPosition="top"
                               className={styles.galleryImage}
                             />
                           </div>

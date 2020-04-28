@@ -1,6 +1,6 @@
-import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import Img, { GatsbyImageProps } from "gatsby-image";
+import Img from "gatsby-image/withIEPolyfill";
+import React from "react";
 
 type DataType = {
   allFile: {
@@ -23,7 +23,7 @@ type DataType = {
 
 type ImageProps = {
   src: string;
-} & GatsbyImageProps;
+} & React.ComponentProps<typeof Img>;
 
 export const Image: React.FC<ImageProps> = ({ src, ...props }) => {
   const data: DataType = useStaticQuery(graphql`

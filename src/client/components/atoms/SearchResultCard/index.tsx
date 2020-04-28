@@ -41,7 +41,13 @@ export const SearchResultCard = ({
         className={classNames(styles.container, className)}
       >
         <div className={styles.imagePlaceholder}>
-          <Image src={imgSrc} alt={title} className={styles.image} />
+          <Image
+            src={imgSrc}
+            alt={title}
+            objectFit="cover"
+            objectPosition="50% 0"
+            className={styles.image}
+          />
         </div>
         <div className={styles.text}>
           <motion.h3

@@ -116,7 +116,7 @@ const KojiharuCard = ({ isCenter }: { isCenter: boolean }) => (
       firstName: "陽菜",
       firstNameEn: "haruna",
     }}
-    image="https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/members/others/kojimaharuna_large.jpg"
+    image="members/others/kojimaharuna_large.jpg"
     isCenter={isCenter}
   />
 );

@@ -80,7 +80,13 @@ export const MemberCard = injectIntl(
           >
             <div className={styles.imageContainer}>
               <div className={styles.wrapper}>
-                <Image src={image} alt={nameText} className={styles.image} />
+                <Image
+                  src={image}
+                  alt={nameText}
+                  objectFit="cover"
+                  objectPosition="top"
+                  className={styles.image}
+                />
               </div>
             </div>
             <motion.div
@@ -103,8 +109,10 @@ export const MemberCard = injectIntl(
           <div className={styles.imageContainer}>
             <div className={styles.wrapper}>
               <Image
-                src={"members/graduated/nakamotohimeka_large.jpg"}
+                src={image}
                 alt={nameText}
+                objectFit="cover"
+                objectPosition="top"
                 className={styles.image}
               />
             </div>
