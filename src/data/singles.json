@@ -4,11 +4,11 @@
     "number": "25",
     "release": "2020-03-25",
     "artworks": [
-      "artworks/singles/25/A_large.jpg",
-      "artworks/singles/25/B_large.jpg",
-      "artworks/singles/25/C_large.jpg",
-      "artworks/singles/25/D_large.jpg",
-      "artworks/singles/25/T_large.jpg"
+      "artworks/singles/25/A.jpg",
+      "artworks/singles/25/B.jpg",
+      "artworks/singles/25/C.jpg",
+      "artworks/singles/25/D.jpg",
+      "artworks/singles/25/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -24,7 +24,7 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/25/A_large.jpg",
+        "artwork": "artworks/singles/25/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -44,7 +44,7 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/25/A_large.jpg",
+        "artwork": "artworks/singles/25/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": []
@@ -58,7 +58,7 @@
           "A"
         ],
         "type": "solo",
-        "artwork": "artworks/singles/25/A_large.jpg",
+        "artwork": "artworks/singles/25/A.jpg",
         "focusPerformers": {
           "type": "solo",
           "name": [
@@ -74,7 +74,7 @@
           "B"
         ],
         "type": "second generation",
-        "artwork": "artworks/singles/25/B_large.jpg",
+        "artwork": "artworks/singles/25/B.jpg",
         "focusPerformers": {
           "type": "center",
           "name": []
@@ -88,7 +88,7 @@
           "C"
         ],
         "type": "third generation",
-        "artwork": "artworks/singles/25/C_large.jpg",
+        "artwork": "artworks/singles/25/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": []
@@ -102,7 +102,7 @@
           "D"
         ],
         "type": "fourth generation",
-        "artwork": "artworks/singles/25/D_large.jpg",
+        "artwork": "artworks/singles/25/D.jpg",
         "focusPerformers": {
           "type": "center",
           "name": []
@@ -116,7 +116,7 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/25/T_large.jpg",
+        "artwork": "artworks/singles/25/T.jpg",
         "focusPerformers": {
           "type": "center",
           "name": []
@@ -157,11 +157,11 @@
     "number": "24",
     "release": "2019-09-04",
     "artworks": [
-      "artworks/singles/24/A_large.jpg",
-      "artworks/singles/24/B_large.jpg",
-      "artworks/singles/24/C_large.jpg",
-      "artworks/singles/24/D_large.jpg",
-      "artworks/singles/24/T_large.jpg"
+      "artworks/singles/24/A.jpg",
+      "artworks/singles/24/B.jpg",
+      "artworks/singles/24/C.jpg",
+      "artworks/singles/24/D.jpg",
+      "artworks/singles/24/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -177,7 +177,7 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/24/A_large.jpg",
+        "artwork": "artworks/singles/24/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -197,7 +197,7 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/24/A_large.jpg",
+        "artwork": "artworks/singles/24/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -213,7 +213,7 @@
           "A"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/24/A_large.jpg",
+        "artwork": "artworks/singles/24/A.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -231,7 +231,7 @@
           "B"
         ],
         "type": "fourth generation",
-        "artwork": "artworks/singles/24/B_large.jpg",
+        "artwork": "artworks/singles/24/B.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -247,7 +247,7 @@
           "C"
         ],
         "type": "solo",
-        "artwork": "artworks/singles/24/C_large.jpg",
+        "artwork": "artworks/singles/24/C.jpg",
         "focusPerformers": {
           "type": "solo",
           "name": [
@@ -263,7 +263,7 @@
           "D"
         ],
         "type": "under",
-        "artwork": "artworks/singles/24/D_large.jpg",
+        "artwork": "artworks/singles/24/D.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -279,7 +279,7 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/24/T_large.jpg",
+        "artwork": "artworks/singles/24/T.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -328,11 +328,11 @@
     "number": "23",
     "release": "2019-05-29",
     "artworks": [
-      "artworks/singles/23/A_large.jpg",
-      "artworks/singles/23/B_large.jpg",
-      "artworks/singles/23/C_large.jpg",
-      "artworks/singles/23/D_large.jpg",
-      "artworks/singles/23/T_large.jpg"
+      "artworks/singles/23/A.jpg",
+      "artworks/singles/23/B.jpg",
+      "artworks/singles/23/C.jpg",
+      "artworks/singles/23/D.jpg",
+      "artworks/singles/23/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -348,7 +348,7 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/23/A_large.jpg",
+        "artwork": "artworks/singles/23/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -368,7 +368,7 @@
           "T"
         ],
         "type": "under",
-        "artwork": "artworks/singles/23/A_large.jpg",
+        "artwork": "artworks/singles/23/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -384,7 +384,7 @@
           "A"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/23/A_large.jpg",
+        "artwork": "artworks/singles/23/A.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -401,7 +401,7 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/23/B_large.jpg",
+        "artwork": "artworks/singles/23/B.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -421,7 +421,7 @@
           "C"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/23/C_large.jpg",
+        "artwork": "artworks/singles/23/C.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -441,7 +441,7 @@
           "D"
         ],
         "type": "fourth generation",
-        "artwork": "artworks/singles/23/D_large.jpg",
+        "artwork": "artworks/singles/23/D.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -457,7 +457,7 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/23/T_large.jpg",
+        "artwork": "artworks/singles/23/T.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -502,11 +502,11 @@
     "number": "22",
     "release": "2018-11-14",
     "artworks": [
-      "artworks/singles/22/A_large.jpg",
-      "artworks/singles/22/B_large.jpg",
-      "artworks/singles/22/C_large.jpg",
-      "artworks/singles/22/D_large.jpg",
-      "artworks/singles/22/T_large.jpg"
+      "artworks/singles/22/A.jpg",
+      "artworks/singles/22/B.jpg",
+      "artworks/singles/22/C.jpg",
+      "artworks/singles/22/D.jpg",
+      "artworks/singles/22/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -522,7 +522,7 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/22/A_large.jpg",
+        "artwork": "artworks/singles/22/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -542,7 +542,7 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/22/A_large.jpg",
+        "artwork": "artworks/singles/22/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -558,7 +558,7 @@
           "A"
         ],
         "type": "solo",
-        "artwork": "artworks/singles/22/A_large.jpg",
+        "artwork": "artworks/singles/22/A.jpg",
         "focusPerformers": {
           "type": "solo",
           "name": [
@@ -574,7 +574,7 @@
           "B"
         ],
         "type": "under",
-        "artwork": "artworks/singles/22/B_large.jpg",
+        "artwork": "artworks/singles/22/B.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -590,7 +590,7 @@
           "C"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/22/C_large.jpg",
+        "artwork": "artworks/singles/22/C.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -606,7 +606,7 @@
           "D"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/22/D_large.jpg",
+        "artwork": "artworks/singles/22/D.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -624,7 +624,7 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/22/T_large.jpg",
+        "artwork": "artworks/singles/22/T.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -666,11 +666,11 @@
     "number": "21",
     "release": "2018-08-08",
     "artworks": [
-      "artworks/singles/21/A_large.jpg",
-      "artworks/singles/21/B_large.jpg",
-      "artworks/singles/21/C_large.jpg",
-      "artworks/singles/21/D_large.jpg",
-      "artworks/singles/21/T_large.jpg"
+      "artworks/singles/21/A.jpg",
+      "artworks/singles/21/B.jpg",
+      "artworks/singles/21/C.jpg",
+      "artworks/singles/21/D.jpg",
+      "artworks/singles/21/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -686,7 +686,7 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/21/A_large.jpg",
+        "artwork": "artworks/singles/21/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -706,7 +706,7 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/21/A_large.jpg",
+        "artwork": "artworks/singles/21/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -722,7 +722,7 @@
           "A"
         ],
         "type": "under",
-        "artwork": "artworks/singles/21/A_large.jpg",
+        "artwork": "artworks/singles/21/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -738,7 +738,7 @@
           "B"
         ],
         "type": "third generation",
-        "artwork": "artworks/singles/21/B_large.jpg",
+        "artwork": "artworks/singles/21/B.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -754,7 +754,7 @@
           "C"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/21/C_large.jpg",
+        "artwork": "artworks/singles/21/C.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -771,7 +771,7 @@
           "D"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/21/D_large.jpg",
+        "artwork": "artworks/singles/21/D.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -789,7 +789,7 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/21/T_large.jpg",
+        "artwork": "artworks/singles/21/T.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -830,11 +830,11 @@
     "number": "20",
     "release": "2018-04-25",
     "artworks": [
-      "artworks/singles/20/A_large.jpg",
-      "artworks/singles/20/B_large.jpg",
-      "artworks/singles/20/C_large.jpg",
-      "artworks/singles/20/D_large.jpg",
-      "artworks/singles/20/T_large.jpg"
+      "artworks/singles/20/A.jpg",
+      "artworks/singles/20/B.jpg",
+      "artworks/singles/20/C.jpg",
+      "artworks/singles/20/D.jpg",
+      "artworks/singles/20/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -850,7 +850,7 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/20/A_large.jpg",
+        "artwork": "artworks/singles/20/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -870,7 +870,7 @@
           "T"
         ],
         "type": "first generation",
-        "artwork": "artworks/singles/20/A_large.jpg",
+        "artwork": "artworks/singles/20/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -886,7 +886,7 @@
           "A"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/20/A_large.jpg",
+        "artwork": "artworks/singles/20/A.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -902,7 +902,7 @@
           "B"
         ],
         "type": "under",
-        "artwork": "artworks/singles/20/B_large.jpg",
+        "artwork": "artworks/singles/20/B.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -918,7 +918,7 @@
           "C"
         ],
         "type": "second generation",
-        "artwork": "artworks/singles/20/C_large.jpg",
+        "artwork": "artworks/singles/20/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -934,7 +934,7 @@
           "D"
         ],
         "type": "third generation",
-        "artwork": "artworks/singles/20/D_large.jpg",
+        "artwork": "artworks/singles/20/D.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -950,7 +950,7 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/20/T_large.jpg",
+        "artwork": "artworks/singles/20/T.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -994,11 +994,11 @@
     "number": "19",
     "release": "2017-10-11",
     "artworks": [
-      "artworks/singles/19/A_large.jpg",
-      "artworks/singles/19/B_large.jpg",
-      "artworks/singles/19/C_large.jpg",
-      "artworks/singles/19/D_large.jpg",
-      "artworks/singles/19/T_large.jpg"
+      "artworks/singles/19/A.jpg",
+      "artworks/singles/19/B.jpg",
+      "artworks/singles/19/C.jpg",
+      "artworks/singles/19/D.jpg",
+      "artworks/singles/19/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -1014,7 +1014,7 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/19/A_large.jpg",
+        "artwork": "artworks/singles/19/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1035,7 +1035,7 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/19/A_large.jpg",
+        "artwork": "artworks/singles/19/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1052,7 +1052,7 @@
           "A"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/19/A_large.jpg",
+        "artwork": "artworks/singles/19/A.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1069,7 +1069,7 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/19/B_large.jpg",
+        "artwork": "artworks/singles/19/B.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1085,7 +1085,7 @@
           "C"
         ],
         "type": "under",
-        "artwork": "artworks/singles/19/C_large.jpg",
+        "artwork": "artworks/singles/19/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1101,7 +1101,7 @@
           "D"
         ],
         "type": "third generation",
-        "artwork": "artworks/singles/19/D_large.jpg",
+        "artwork": "artworks/singles/19/D.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1117,7 +1117,7 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/19/T_large.jpg",
+        "artwork": "artworks/singles/19/T.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1166,11 +1166,11 @@
     "number": "18",
     "release": "2017-08-09",
     "artworks": [
-      "artworks/singles/18/A_large.jpg",
-      "artworks/singles/18/B_large.jpg",
-      "artworks/singles/18/C_large.jpg",
-      "artworks/singles/18/D_large.jpg",
-      "artworks/singles/18/T_large.jpg"
+      "artworks/singles/18/A.jpg",
+      "artworks/singles/18/B.jpg",
+      "artworks/singles/18/C.jpg",
+      "artworks/singles/18/D.jpg",
+      "artworks/singles/18/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -1186,7 +1186,7 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/18/A_large.jpg",
+        "artwork": "artworks/singles/18/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1207,7 +1207,7 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/18/A_large.jpg",
+        "artwork": "artworks/singles/18/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1224,7 +1224,7 @@
           "A"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/18/A_large.jpg",
+        "artwork": "artworks/singles/18/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1241,7 +1241,7 @@
           "B"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/18/B_large.jpg",
+        "artwork": "artworks/singles/18/B.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1257,7 +1257,7 @@
           "C"
         ],
         "type": "under",
-        "artwork": "artworks/singles/18/C_large.jpg",
+        "artwork": "artworks/singles/18/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1274,7 +1274,7 @@
           "D"
         ],
         "type": "second generation",
-        "artwork": "artworks/singles/18/D_large.jpg",
+        "artwork": "artworks/singles/18/D.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1290,7 +1290,7 @@
           "T"
         ],
         "type": "third generation",
-        "artwork": "artworks/singles/18/T_large.jpg",
+        "artwork": "artworks/singles/18/T.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1341,11 +1341,11 @@
     "number": "17",
     "release": "2017-03-22",
     "artworks": [
-      "artworks/singles/17/A_large.jpg",
-      "artworks/singles/17/B_large.jpg",
-      "artworks/singles/17/C_large.jpg",
-      "artworks/singles/17/D_large.jpg",
-      "artworks/singles/17/T_large.jpg"
+      "artworks/singles/17/A.jpg",
+      "artworks/singles/17/B.jpg",
+      "artworks/singles/17/C.jpg",
+      "artworks/singles/17/D.jpg",
+      "artworks/singles/17/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -1361,7 +1361,7 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/17/A_large.jpg",
+        "artwork": "artworks/singles/17/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1382,7 +1382,7 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/17/A_large.jpg",
+        "artwork": "artworks/singles/17/A.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1398,7 +1398,7 @@
           "A"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/17/A_large.jpg",
+        "artwork": "artworks/singles/17/A.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1414,7 +1414,7 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/17/B_large.jpg",
+        "artwork": "artworks/singles/17/B.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1430,7 +1430,7 @@
           "C"
         ],
         "type": "under",
-        "artwork": "artworks/singles/17/C_large.jpg",
+        "artwork": "artworks/singles/17/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1446,7 +1446,7 @@
           "D"
         ],
         "type": "third generation",
-        "artwork": "artworks/singles/17/D_large.jpg",
+        "artwork": "artworks/singles/17/D.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1462,7 +1462,7 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/17/T_large.jpg",
+        "artwork": "artworks/singles/17/T.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1510,11 +1510,11 @@
     "number": "16",
     "release": "2016-11-09",
     "artworks": [
-      "artworks/singles/16/A_large.jpg",
-      "artworks/singles/16/B_large.jpg",
-      "artworks/singles/16/C_large.jpg",
-      "artworks/singles/16/D_large.jpg",
-      "artworks/singles/16/T_large.jpg"
+      "artworks/singles/16/A.jpg",
+      "artworks/singles/16/B.jpg",
+      "artworks/singles/16/C.jpg",
+      "artworks/singles/16/D.jpg",
+      "artworks/singles/16/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -1530,7 +1530,7 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/16/A_large.jpg",
+        "artwork": "artworks/singles/16/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1550,7 +1550,7 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/16/A_large.jpg",
+        "artwork": "artworks/singles/16/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1566,7 +1566,7 @@
           "A"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/16/A_large.jpg",
+        "artwork": "artworks/singles/16/A.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1583,7 +1583,7 @@
           "B"
         ],
         "type": "under",
-        "artwork": "artworks/singles/16/B_large.jpg",
+        "artwork": "artworks/singles/16/B.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1599,7 +1599,7 @@
           "C"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/16/C_large.jpg",
+        "artwork": "artworks/singles/16/C.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1615,7 +1615,7 @@
           "D"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/16/D_large.jpg",
+        "artwork": "artworks/singles/16/D.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1631,7 +1631,7 @@
           "T"
         ],
         "type": "solo",
-        "artwork": "artworks/singles/16/T_large.jpg",
+        "artwork": "artworks/singles/16/T.jpg",
         "focusPerformers": {
           "type": "solo",
           "name": [
@@ -1668,11 +1668,11 @@
     "number": "15",
     "release": "2016-07-27",
     "artworks": [
-      "artworks/singles/15/A_large.jpg",
-      "artworks/singles/15/B_large.jpg",
-      "artworks/singles/15/C_large.jpg",
-      "artworks/singles/15/D_large.jpg",
-      "artworks/singles/15/T_large.jpg"
+      "artworks/singles/15/A.jpg",
+      "artworks/singles/15/B.jpg",
+      "artworks/singles/15/C.jpg",
+      "artworks/singles/15/D.jpg",
+      "artworks/singles/15/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -1688,7 +1688,7 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/15/A_large.jpg",
+        "artwork": "artworks/singles/15/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1708,7 +1708,7 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/15/A_large.jpg",
+        "artwork": "artworks/singles/15/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1724,7 +1724,7 @@
           "A"
         ],
         "type": "solo",
-        "artwork": "artworks/singles/15/A_large.jpg",
+        "artwork": "artworks/singles/15/A.jpg",
         "focusPerformers": {
           "type": "solo",
           "name": [
@@ -1740,7 +1740,7 @@
           "B"
         ],
         "type": "solo",
-        "artwork": "artworks/singles/15/B_large.jpg",
+        "artwork": "artworks/singles/15/B.jpg",
         "focusPerformers": {
           "type": "solo",
           "name": [
@@ -1756,7 +1756,7 @@
           "C"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/15/C_large.jpg",
+        "artwork": "artworks/singles/15/C.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1772,7 +1772,7 @@
           "D"
         ],
         "type": "under",
-        "artwork": "artworks/singles/15/D_large.jpg",
+        "artwork": "artworks/singles/15/D.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1788,7 +1788,7 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/15/T_large.jpg",
+        "artwork": "artworks/singles/15/T.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1829,11 +1829,11 @@
     "number": "14",
     "release": "2016-03-23",
     "artworks": [
-      "artworks/singles/14/A_large.jpg",
-      "artworks/singles/14/B_large.jpg",
-      "artworks/singles/14/C_large.jpg",
-      "artworks/singles/14/D_large.jpg",
-      "artworks/singles/14/T_large.jpg"
+      "artworks/singles/14/A.jpg",
+      "artworks/singles/14/B.jpg",
+      "artworks/singles/14/C.jpg",
+      "artworks/singles/14/D.jpg",
+      "artworks/singles/14/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -1849,7 +1849,7 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/14/A_large.jpg",
+        "artwork": "artworks/singles/14/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1869,7 +1869,7 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/14/A_large.jpg",
+        "artwork": "artworks/singles/14/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1885,7 +1885,7 @@
           "A"
         ],
         "type": "solo",
-        "artwork": "artworks/singles/14/A_large.jpg",
+        "artwork": "artworks/singles/14/A.jpg",
         "focusPerformers": {
           "type": "solo",
           "name": [
@@ -1901,7 +1901,7 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/14/B_large.jpg",
+        "artwork": "artworks/singles/14/B.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1919,7 +1919,7 @@
           "C"
         ],
         "type": "solo",
-        "artwork": "artworks/singles/14/C_large.jpg",
+        "artwork": "artworks/singles/14/C.jpg",
         "focusPerformers": {
           "type": "solo",
           "name": [
@@ -1935,7 +1935,7 @@
           "D"
         ],
         "type": "under",
-        "artwork": "artworks/singles/14/D_large.jpg",
+        "artwork": "artworks/singles/14/D.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1951,7 +1951,7 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/14/T_large.jpg",
+        "artwork": "artworks/singles/14/T.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1991,10 +1991,10 @@
     "number": "13",
     "release": "2015-10-28",
     "artworks": [
-      "artworks/singles/13/A_large.jpg",
-      "artworks/singles/13/B_large.jpg",
-      "artworks/singles/13/C_large.jpg",
-      "artworks/singles/13/T_large.jpg"
+      "artworks/singles/13/A.jpg",
+      "artworks/singles/13/B.jpg",
+      "artworks/singles/13/C.jpg",
+      "artworks/singles/13/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -2009,7 +2009,7 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/13/A_large.jpg",
+        "artwork": "artworks/singles/13/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2029,7 +2029,7 @@
           "T"
         ],
         "type": "under",
-        "artwork": "artworks/singles/13/A_large.jpg",
+        "artwork": "artworks/singles/13/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2046,7 +2046,7 @@
           "A"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/13/A_large.jpg",
+        "artwork": "artworks/singles/13/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2063,7 +2063,7 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/13/B_large.jpg",
+        "artwork": "artworks/singles/13/B.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -2079,7 +2079,7 @@
           "C"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/13/C_large.jpg",
+        "artwork": "artworks/singles/13/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2095,7 +2095,7 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/13/T_large.jpg",
+        "artwork": "artworks/singles/13/T.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2137,10 +2137,10 @@
     "number": "12",
     "release": "2015-07-22",
     "artworks": [
-      "artworks/singles/12/A_large.jpg",
-      "artworks/singles/12/B_large.jpg",
-      "artworks/singles/12/C_large.jpg",
-      "artworks/singles/12/T_large.jpg"
+      "artworks/singles/12/A.jpg",
+      "artworks/singles/12/B.jpg",
+      "artworks/singles/12/C.jpg",
+      "artworks/singles/12/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -2156,7 +2156,7 @@
           "L"
         ],
         "type": "title",
-        "artwork": "artworks/singles/12/A_large.jpg",
+        "artwork": "artworks/singles/12/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2176,7 +2176,7 @@
           "L"
         ],
         "type": "solo",
-        "artwork": "artworks/singles/12/A_large.jpg",
+        "artwork": "artworks/singles/12/A.jpg",
         "focusPerformers": {
           "type": "solo",
           "name": [
@@ -2192,7 +2192,7 @@
           "A"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/12/A_large.jpg",
+        "artwork": "artworks/singles/12/A.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -2211,7 +2211,7 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/12/B_large.jpg",
+        "artwork": "artworks/singles/12/B.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -2227,7 +2227,7 @@
           "C"
         ],
         "type": "under",
-        "artwork": "artworks/singles/12/C_large.jpg",
+        "artwork": "artworks/singles/12/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2243,7 +2243,7 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/12/T_large.jpg",
+        "artwork": "artworks/singles/12/T.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2259,7 +2259,7 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/12/T_large.jpg",
+        "artwork": "artworks/singles/12/T.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -2301,10 +2301,10 @@
     "number": "11",
     "release": "2015-03-18",
     "artworks": [
-      "artworks/singles/11/A_large.jpg",
-      "artworks/singles/11/B_large.jpg",
-      "artworks/singles/11/C_large.jpg",
-      "artworks/singles/11/T_large.jpg"
+      "artworks/singles/11/A.jpg",
+      "artworks/singles/11/B.jpg",
+      "artworks/singles/11/C.jpg",
+      "artworks/singles/11/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -2319,7 +2319,7 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/11/A_large.jpg",
+        "artwork": "artworks/singles/11/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2338,7 +2338,7 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/11/A_large.jpg",
+        "artwork": "artworks/singles/11/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2355,7 +2355,7 @@
           "A"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/11/A_large.jpg",
+        "artwork": "artworks/singles/11/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2371,7 +2371,7 @@
           "B"
         ],
         "type": "solo",
-        "artwork": "artworks/singles/11/B_large.jpg",
+        "artwork": "artworks/singles/11/B.jpg",
         "focusPerformers": {
           "type": "solo",
           "name": [
@@ -2387,7 +2387,7 @@
           "C"
         ],
         "type": "under",
-        "artwork": "artworks/singles/11/C_large.jpg",
+        "artwork": "artworks/singles/11/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2403,7 +2403,7 @@
           "T"
         ],
         "type": "second generation",
-        "artwork": "artworks/singles/11/T_large.jpg",
+        "artwork": "artworks/singles/11/T.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2445,10 +2445,10 @@
     "number": "10",
     "release": "2014-10-08",
     "artworks": [
-      "artworks/singles/10/A_large.jpg",
-      "artworks/singles/10/B_large.jpg",
-      "artworks/singles/10/C_large.jpg",
-      "artworks/singles/10/T_large.jpg"
+      "artworks/singles/10/A.jpg",
+      "artworks/singles/10/B.jpg",
+      "artworks/singles/10/C.jpg",
+      "artworks/singles/10/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -2463,7 +2463,7 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/10/A_large.jpg",
+        "artwork": "artworks/singles/10/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2482,7 +2482,7 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/10/A_large.jpg",
+        "artwork": "artworks/singles/10/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2499,7 +2499,7 @@
           "A"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/10/A_large.jpg",
+        "artwork": "artworks/singles/10/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2515,7 +2515,7 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/10/B_large.jpg",
+        "artwork": "artworks/singles/10/B.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2531,7 +2531,7 @@
           "C"
         ],
         "type": "under",
-        "artwork": "artworks/singles/10/C_large.jpg",
+        "artwork": "artworks/singles/10/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2547,7 +2547,7 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/10/T_large.jpg",
+        "artwork": "artworks/singles/10/T.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -2601,10 +2601,10 @@
     "number": "9",
     "release": "2014-07-09",
     "artworks": [
-      "artworks/singles/9/A_large.jpg",
-      "artworks/singles/9/B_large.jpg",
-      "artworks/singles/9/C_large.jpg",
-      "artworks/singles/9/T_large.jpg"
+      "artworks/singles/9/A.jpg",
+      "artworks/singles/9/B.jpg",
+      "artworks/singles/9/C.jpg",
+      "artworks/singles/9/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -2619,7 +2619,7 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/9/A_large.jpg",
+        "artwork": "artworks/singles/9/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2638,7 +2638,7 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/9/A_large.jpg",
+        "artwork": "artworks/singles/9/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2654,7 +2654,7 @@
           "A"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/9/A_large.jpg",
+        "artwork": "artworks/singles/9/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2670,7 +2670,7 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/9/B_large.jpg",
+        "artwork": "artworks/singles/9/B.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2686,7 +2686,7 @@
           "C"
         ],
         "type": "under",
-        "artwork": "artworks/singles/9/C_large.jpg",
+        "artwork": "artworks/singles/9/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2702,7 +2702,7 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/9/T_large.jpg",
+        "artwork": "artworks/singles/9/T.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2752,10 +2752,10 @@
     "number": "8",
     "release": "2014-04-02",
     "artworks": [
-      "artworks/singles/8/A_large.jpg",
-      "artworks/singles/8/B_large.jpg",
-      "artworks/singles/8/C_large.jpg",
-      "artworks/singles/8/T_large.jpg"
+      "artworks/singles/8/A.jpg",
+      "artworks/singles/8/B.jpg",
+      "artworks/singles/8/C.jpg",
+      "artworks/singles/8/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -2770,7 +2770,7 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/8/A_large.jpg",
+        "artwork": "artworks/singles/8/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2789,7 +2789,7 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/8/A_large.jpg",
+        "artwork": "artworks/singles/8/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2805,7 +2805,7 @@
           "A"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/8/A_large.jpg",
+        "artwork": "artworks/singles/8/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": []
@@ -2819,7 +2819,7 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/8/B_large.jpg",
+        "artwork": "artworks/singles/8/B.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -2835,7 +2835,7 @@
           "C"
         ],
         "type": "under",
-        "artwork": "artworks/singles/8/C_large.jpg",
+        "artwork": "artworks/singles/8/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2851,7 +2851,7 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/8/T_large.jpg",
+        "artwork": "artworks/singles/8/T.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2901,10 +2901,10 @@
     "number": "7",
     "release": "2013-11-27",
     "artworks": [
-      "artworks/singles/7/A_large.jpg",
-      "artworks/singles/7/B_large.jpg",
-      "artworks/singles/7/C_large.jpg",
-      "artworks/singles/7/T_large.jpg"
+      "artworks/singles/7/A.jpg",
+      "artworks/singles/7/B.jpg",
+      "artworks/singles/7/C.jpg",
+      "artworks/singles/7/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -2919,7 +2919,7 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/7/A_large.jpg",
+        "artwork": "artworks/singles/7/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2938,7 +2938,7 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/7/A_large.jpg",
+        "artwork": "artworks/singles/7/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2954,7 +2954,7 @@
           "A"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/7/A_large.jpg",
+        "artwork": "artworks/singles/7/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2970,7 +2970,7 @@
           "B"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/7/B_large.jpg",
+        "artwork": "artworks/singles/7/B.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2986,7 +2986,7 @@
           "C"
         ],
         "type": "under",
-        "artwork": "artworks/singles/7/C_large.jpg",
+        "artwork": "artworks/singles/7/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3002,7 +3002,7 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/7/T_large.jpg",
+        "artwork": "artworks/singles/7/T.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3052,10 +3052,10 @@
     "number": "6",
     "release": "2013-07-03",
     "artworks": [
-      "artworks/singles/6/A_large.jpg",
-      "artworks/singles/6/B_large.jpg",
-      "artworks/singles/6/C_large.jpg",
-      "artworks/singles/6/T_large.jpg"
+      "artworks/singles/6/A.jpg",
+      "artworks/singles/6/B.jpg",
+      "artworks/singles/6/C.jpg",
+      "artworks/singles/6/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -3070,7 +3070,7 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/6/A_large.jpg",
+        "artwork": "artworks/singles/6/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3089,7 +3089,7 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/6/A_large.jpg",
+        "artwork": "artworks/singles/6/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3105,7 +3105,7 @@
           "A"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/6/A_large.jpg",
+        "artwork": "artworks/singles/6/A.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -3124,7 +3124,7 @@
           "B"
         ],
         "type": "under",
-        "artwork": "artworks/singles/6/B_large.jpg",
+        "artwork": "artworks/singles/6/B.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3140,7 +3140,7 @@
           "C"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/6/C_large.jpg",
+        "artwork": "artworks/singles/6/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3156,7 +3156,7 @@
           "T"
         ],
         "type": "first generation",
-        "artwork": "artworks/singles/6/T_large.jpg",
+        "artwork": "artworks/singles/6/T.jpg",
         "focusPerformers": {
           "type": "center",
           "name": []
@@ -3191,10 +3191,10 @@
     "number": "5",
     "release": "2013-03-31",
     "artworks": [
-      "artworks/singles/5/A_large.jpg",
-      "artworks/singles/5/B_large.jpg",
-      "artworks/singles/5/C_large.jpg",
-      "artworks/singles/5/T_large.jpg"
+      "artworks/singles/5/A.jpg",
+      "artworks/singles/5/B.jpg",
+      "artworks/singles/5/C.jpg",
+      "artworks/singles/5/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -3209,7 +3209,7 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/5/A_large.jpg",
+        "artwork": "artworks/singles/5/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3228,7 +3228,7 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/5/A_large.jpg",
+        "artwork": "artworks/singles/5/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3245,7 +3245,7 @@
           "A"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/5/A_large.jpg",
+        "artwork": "artworks/singles/5/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": []
@@ -3259,7 +3259,7 @@
           "B"
         ],
         "type": "under",
-        "artwork": "artworks/singles/5/B_large.jpg",
+        "artwork": "artworks/singles/5/B.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3275,7 +3275,7 @@
           "C"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/5/C_large.jpg",
+        "artwork": "artworks/singles/5/C.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -3295,7 +3295,7 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/5/T_large.jpg",
+        "artwork": "artworks/singles/5/T.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3334,10 +3334,10 @@
     "number": "4",
     "release": "2012-12-19",
     "artworks": [
-      "artworks/singles/4/A_large.jpg",
-      "artworks/singles/4/B_large.jpg",
-      "artworks/singles/4/C_large.jpg",
-      "artworks/singles/4/T_large.jpg"
+      "artworks/singles/4/A.jpg",
+      "artworks/singles/4/B.jpg",
+      "artworks/singles/4/C.jpg",
+      "artworks/singles/4/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -3352,7 +3352,7 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/4/A_large.jpg",
+        "artwork": "artworks/singles/4/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3371,7 +3371,7 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/4/A_large.jpg",
+        "artwork": "artworks/singles/4/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3387,7 +3387,7 @@
           "A"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/4/A_large.jpg",
+        "artwork": "artworks/singles/4/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3404,7 +3404,7 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/4/B_large.jpg",
+        "artwork": "artworks/singles/4/B.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -3422,7 +3422,7 @@
           "C"
         ],
         "type": "under",
-        "artwork": "artworks/singles/4/C_large.jpg",
+        "artwork": "artworks/singles/4/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3438,7 +3438,7 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/4/T_large.jpg",
+        "artwork": "artworks/singles/4/T.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -3477,10 +3477,10 @@
     "number": "3",
     "release": "2012-08-22",
     "artworks": [
-      "artworks/singles/3/A_large.jpg",
-      "artworks/singles/3/B_large.jpg",
-      "artworks/singles/3/C_large.jpg",
-      "artworks/singles/3/T_large.jpg"
+      "artworks/singles/3/A.jpg",
+      "artworks/singles/3/B.jpg",
+      "artworks/singles/3/C.jpg",
+      "artworks/singles/3/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -3495,7 +3495,7 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/3/A_large.jpg",
+        "artwork": "artworks/singles/3/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3514,7 +3514,7 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/3/A_large.jpg",
+        "artwork": "artworks/singles/3/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3530,7 +3530,7 @@
           "A"
         ],
         "type": "under",
-        "artwork": "artworks/singles/3/A_large.jpg",
+        "artwork": "artworks/singles/3/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3546,7 +3546,7 @@
           "B"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/3/B_large.jpg",
+        "artwork": "artworks/singles/3/B.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3562,7 +3562,7 @@
           "C"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/3/C_large.jpg",
+        "artwork": "artworks/singles/3/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3578,7 +3578,7 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/3/T_large.jpg",
+        "artwork": "artworks/singles/3/T.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3618,10 +3618,10 @@
     "number": "2",
     "release": "2012-05-02",
     "artworks": [
-      "artworks/singles/2/A_large.jpg",
-      "artworks/singles/2/B_large.jpg",
-      "artworks/singles/2/C_large.jpg",
-      "artworks/singles/2/T_large.jpg"
+      "artworks/singles/2/A.jpg",
+      "artworks/singles/2/B.jpg",
+      "artworks/singles/2/C.jpg",
+      "artworks/singles/2/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -3636,7 +3636,7 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/2/A_large.jpg",
+        "artwork": "artworks/singles/2/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3655,7 +3655,7 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/2/A_large.jpg",
+        "artwork": "artworks/singles/2/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3671,7 +3671,7 @@
           "A"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/2/A_large.jpg",
+        "artwork": "artworks/singles/2/A.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -3690,7 +3690,7 @@
           "B"
         ],
         "type": "solo",
-        "artwork": "artworks/singles/2/B_large.jpg",
+        "artwork": "artworks/singles/2/B.jpg",
         "focusPerformers": {
           "type": "solo",
           "name": [
@@ -3706,7 +3706,7 @@
           "C"
         ],
         "type": "under",
-        "artwork": "artworks/singles/2/C_large.jpg",
+        "artwork": "artworks/singles/2/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3722,7 +3722,7 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/2/T_large.jpg",
+        "artwork": "artworks/singles/2/T.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3762,10 +3762,10 @@
     "number": "1",
     "release": "2012-02-22",
     "artworks": [
-      "artworks/singles/1/A_large.jpg",
-      "artworks/singles/1/B_large.jpg",
-      "artworks/singles/1/C_large.jpg",
-      "artworks/singles/1/T_large.jpg"
+      "artworks/singles/1/A.jpg",
+      "artworks/singles/1/B.jpg",
+      "artworks/singles/1/C.jpg",
+      "artworks/singles/1/T.jpg"
     ],
     "shopping": [],
     "songs": [
@@ -3780,7 +3780,7 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/1/A_large.jpg",
+        "artwork": "artworks/singles/1/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3799,7 +3799,7 @@
           "T"
         ],
         "type": "under",
-        "artwork": "artworks/singles/1/A_large.jpg",
+        "artwork": "artworks/singles/1/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3815,7 +3815,7 @@
           "A"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/1/A_large.jpg",
+        "artwork": "artworks/singles/1/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3831,7 +3831,7 @@
           "B"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/1/B_large.jpg",
+        "artwork": "artworks/singles/1/B.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3847,7 +3847,7 @@
           "C"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/1/C_large.jpg",
+        "artwork": "artworks/singles/1/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -3864,7 +3864,7 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/1/T_large.jpg",
+        "artwork": "artworks/singles/1/T.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [

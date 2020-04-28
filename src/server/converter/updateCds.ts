@@ -6,12 +6,7 @@ import { ResultMembers } from "../models/IMember";
 import { RawSingle, ResultSingle, ResultSingles } from "../models/ISingle";
 import { ResultSongs } from "../models/ISong";
 import { arrayToObject } from "../utils/arrays";
-import {
-  DATA_SOURCE_PATH,
-  FocusPerformersType,
-  OVERTURE,
-  SongType,
-} from "../utils/constants";
+import { FocusPerformersType, OVERTURE, SongType } from "../utils/constants";
 import { convertPerformerNames } from "../utils/strings";
 
 const convertArtworks = (
@@ -31,12 +26,12 @@ const convertArtworks = (
     }))
   );
 
-  const noImageSrc = "artworks/artwork_no_image_large.png";
+  const noImageSrc = "artworks/artwork_no_image.png";
 
   for (const key of Object.keys(initialArtworks)) {
     if (rawCd.hasArtworks) {
       const imageSrc =
-        artworkImagesPath + rawCd.number.toString() + "/" + key + "_large.jpg";
+        artworkImagesPath + rawCd.number.toString() + "/" + key + ".jpg";
 
       const localFilePath = "./src/assets/images/" + imageSrc;
 
