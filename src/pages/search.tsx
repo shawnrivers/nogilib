@@ -20,10 +20,7 @@ export type MemberDoc = {
     lastNameFurigana: string;
     firstNameFurigana: string;
   };
-  profileImage: {
-    large: string;
-    small: string;
-  };
+  profileImage: string;
   type: SearchResultType.Members;
 };
 
@@ -32,11 +29,7 @@ export type SingleDoc = {
   name: string;
   title: string;
   number: string;
-  artwork: {
-    large: string;
-    medium: string;
-    small: string;
-  };
+  artwork: string;
   type: SearchResultType.Singles;
 };
 
@@ -45,11 +38,7 @@ export type AlbumDoc = {
   name: string;
   title: string;
   number: string;
-  artwork: {
-    large: string;
-    medium: string;
-    small: string;
-  };
+  artwork: string;
   type: SearchResultType.Albums;
 };
 
@@ -58,11 +47,7 @@ export type SongDoc = {
   name: string;
   title: string;
   key: string;
-  artwork: {
-    large: string;
-    medium: string;
-    small: string;
-  };
+  artwork: string;
   songType: SongType;
   single: {
     number: string;
@@ -127,8 +112,7 @@ export const SearchContainer = injectIntl(({ intl }: { intl: any }) => {
         case SearchResultType.Members:
           members.push({
             to: `/${result.type}/${result.nameKey}`,
-            imgSrc: result.profileImage.small,
-            imgSrcSet: `${result.profileImage.large} 2x`,
+            imgSrc: result.profileImage,
             heading: `${result.nameNotations.lastName} ${result.nameNotations.firstName}`,
             caption: `${result.nameNotations.lastNameEn} ${result.nameNotations.firstNameEn}`,
           });
@@ -136,8 +120,7 @@ export const SearchContainer = injectIntl(({ intl }: { intl: any }) => {
         case SearchResultType.Singles:
           singles.push({
             to: `/${result.type}/${result.number}`,
-            imgSrc: result.artwork.small,
-            imgSrcSet: `${result.artwork.medium} 2x, ${result.artwork.large} 3x`,
+            imgSrc: result.artwork,
             heading: result.title,
             caption: `${toCdNumber(result.number)} single`,
           });
@@ -145,8 +128,7 @@ export const SearchContainer = injectIntl(({ intl }: { intl: any }) => {
         case SearchResultType.Albums:
           albums.push({
             to: `/${result.type}/${result.number}`,
-            imgSrc: result.artwork.small,
-            imgSrcSet: `${result.artwork.medium} 2x, ${result.artwork.large} 3x`,
+            imgSrc: result.artwork,
             heading: result.title,
             caption: `${toCdNumber(result.number)} album`,
           });
@@ -154,8 +136,7 @@ export const SearchContainer = injectIntl(({ intl }: { intl: any }) => {
         case SearchResultType.Songs:
           songs.push({
             to: `/${result.type}/${result.key}`,
-            imgSrc: result.artwork.small,
-            imgSrcSet: `${result.artwork.medium} 2x, ${result.artwork.large} 3x`,
+            imgSrc: result.artwork,
             heading: result.title,
             caption: `#${intl.formatMessage({
               id: result.songType,

@@ -1,8 +1,8 @@
-import * as React from "react";
 import { motion } from "framer-motion";
+import * as React from "react";
 import styles from "./searchresultcard.module.scss";
+import { Image } from "client/components/atoms/Image";
 import { LocalizedLink } from "client/components/atoms/locales/LocalizedLink";
-import { LazyImage } from "client/components/atoms/LazyImage";
 import { classNames } from "client/utils/strings";
 
 const backgroundHover = {
@@ -15,7 +15,6 @@ const backgroundHover = {
 interface SearchResultCardProps {
   to: string;
   imgSrc: string;
-  imgSrcSet: string;
   title: string;
   caption: string;
   secondCaption?: string;
@@ -25,7 +24,6 @@ interface SearchResultCardProps {
 export const SearchResultCard = ({
   to,
   imgSrc,
-  imgSrcSet,
   title,
   caption,
   secondCaption,
@@ -43,13 +41,7 @@ export const SearchResultCard = ({
         className={classNames(styles.container, className)}
       >
         <div className={styles.imagePlaceholder}>
-          <LazyImage
-            notLazy
-            src={imgSrc}
-            srcSet={imgSrcSet}
-            alt={title}
-            className={styles.image}
-          />
+          <Image src={imgSrc} alt={title} className={styles.image} />
         </div>
         <div className={styles.text}>
           <motion.h3

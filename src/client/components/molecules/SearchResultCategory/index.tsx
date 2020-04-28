@@ -8,7 +8,6 @@ interface SearchResultCategoryProps {
   results: {
     to: string;
     imgSrc: string;
-    imgSrcSet: string;
     heading: string;
     caption: string;
     secondCaption?: string;
@@ -53,7 +52,6 @@ export const SearchResultCategory = ({
             <SearchResultCard
               to={result.to}
               imgSrc={result.imgSrc}
-              imgSrcSet={result.imgSrcSet}
               title={result.heading}
               caption={result.caption}
               secondCaption={result.secondCaption}
@@ -66,7 +64,6 @@ export const SearchResultCategory = ({
                 <SearchResultCard
                   to={result.to}
                   imgSrc={result.imgSrc}
-                  imgSrcSet={result.imgSrcSet}
                   title={result.heading}
                   caption={result.caption}
                   secondCaption={result.secondCaption}
