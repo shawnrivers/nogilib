@@ -45,7 +45,7 @@ export const Artwork: React.FC<ArtworkProps> = ({
       <div className={styles.wrapper}>
         <Image
           src={imageSrc}
-          alt="しあわせの保護色"
+          alt={title}
           objectFit="cover"
           className={styles.image}
         />
