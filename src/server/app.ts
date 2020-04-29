@@ -11,6 +11,7 @@ import { Albums } from "server/actors/Albums/class";
 import { arrayToObject } from "server/utils/arrays";
 import { Singles } from "server/actors/Singles/class";
 import { Songs } from "server/actors/Songs/class";
+import { Members } from "server/actors/Members/class";
 
 // Initialize raw data to result data type.
 
@@ -22,6 +23,7 @@ const songs = UpdateSongs.initializeSongs(rawSongs);
 const songsConverter = new Songs();
 const albumsConverter = new Albums();
 const singlesConverter = new Singles();
+const membersConverter = new Members();
 const unitsConverter = new Units();
 
 // Process the raw data.
@@ -53,7 +55,7 @@ UpdateCds.flatArtworksToArray(albums);
 // Form all property pairs into an array.
 
 // const songsArray = Object.values(songs);
-const membersArray = Object.values(members);
+// const membersArray = Object.values(members);
 // const singlesArray = Object.values(singles);
 // const albumsArray = Object.values(albums);
 // const unitsArray = Object.values(units);
@@ -63,7 +65,6 @@ const songsArray = songsConverter.convertSongs({
   albumsRawArray: albumsConverter.rawArray,
   albumsRawObj: albumsConverter.rawObject,
 });
-const unitsArray = unitsConverter.convertUnits({ songsArray: rawSongs });
 const albumsArray = albumsConverter.convertAlbums({
   songsRawObj: arrayToObject(rawSongs, "title"),
   membersRawObj: arrayToObject(rawMembers, "name"),
@@ -72,7 +73,12 @@ const singlesArray = singlesConverter.convertSingles({
   songsRawObj: arrayToObject(rawSongs, "title"),
   membersRawObj: arrayToObject(rawMembers, "name"),
 });
-
+const membersArray = membersConverter.convertMembers({
+  unitsRawArray: unitsConverter.rawArray,
+  singlesRawArray: singlesConverter.rawArray,
+  songsRawObj: songsConverter.rawObject,
+});
+const unitsArray = unitsConverter.convertUnits({ songsArray: rawSongs });
 console.log("Data processing finished.\n");
 
 // Store the processed data into several JSON files.

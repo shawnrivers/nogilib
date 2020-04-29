@@ -2,7 +2,7 @@ import { SinglesRawArray, SinglesRawObj } from "server/actors/Singles/models";
 import { SongResult, SongRaw } from "server/actors/Songs/models";
 import { AlbumsRawArray, AlbumsRawObj } from "server/actors/Albums/models";
 import * as CdConverter from "server/actors/Cds/converters";
-import { NO_IMAGE_SRC } from "server/editor/constants/paths";
+import { NO_ARTWORK_IMAGE_SRC } from "server/editor/constants/paths";
 import { SongType } from "server/utils/constants";
 
 type ConvertSongSingle = (params: {
@@ -106,7 +106,7 @@ export const convertSongArtwork: ConvertSongArtwork = ({
     }
   }
 
-  return NO_IMAGE_SRC;
+  return NO_ARTWORK_IMAGE_SRC;
 };
 
 export const convertSongType = (type: SongRaw["type"]): SongResult["type"] =>
