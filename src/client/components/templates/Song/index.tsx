@@ -197,7 +197,13 @@ export const Song = ({
           >
             <motion.div variants={contentVariants} className={styles.artwork}>
               <div className={styles.artworkImageWrapper}>
-                <Image src={artwork} alt={title} />
+                <Image
+                  src={artwork}
+                  alt={title}
+                  objectFit="cover"
+                  objectPosition="center"
+                  className={styles.artworkImage}
+                />
               </div>
             </motion.div>
             <motion.div variants={contentVariants} className={styles.content}>

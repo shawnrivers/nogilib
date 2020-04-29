@@ -24,11 +24,14 @@
   width: 256px;
 }
 
-.image {
-  height: 256px;
-  object-fit: cover;
+.image-wrapper {
+  overflow: hidden;
   position: absolute;
   transform-origin: center;
+}
+
+.image {
+  height: 256px;
   width: 256px;
 }
 

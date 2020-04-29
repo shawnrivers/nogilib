@@ -51,9 +51,15 @@ export const Artworks = ({ artworks, title, className }: ArtworksProps) => {
                   : { opacity: 0, scale: 0 }
               }
               onClick={handleClickNext}
-              className={styles.image}
+              className={styles.imageWrapper}
             >
-              <Image src={artwork} alt={title} />
+              <Image
+                src={artwork}
+                alt={title}
+                objectFit="cover"
+                objectPosition="center"
+                className={styles.image}
+              />
             </motion.div>
           ))}
         </motion.div>
