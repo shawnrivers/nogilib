@@ -13,22 +13,22 @@ const units = new Units();
 
 const songsArray = songs.convertSongs({
   singlesRawArray: singles.rawArray,
-  singlesRawObj: singles.rawObject,
+  singlesRawObject: singles.rawObject,
   albumsRawArray: albums.rawArray,
-  albumsRawObj: albums.rawObject,
+  albumsRawObject: albums.rawObject,
 });
 const albumsArray = albums.convertAlbums({
-  songsRawObj: songs.rawObject,
-  membersRawObj: members.rawObject,
+  songsRawObject: songs.rawObject,
+  membersRawObject: members.rawObject,
 });
 const singlesArray = singles.convertSingles({
-  songsRawObj: songs.rawObject,
-  membersRawObj: members.rawObject,
+  songsRawObject: songs.rawObject,
+  membersRawObject: members.rawObject,
 });
 const membersArray = members.convertMembers({
   unitsRawArray: units.rawArray,
   singlesRawArray: singles.rawArray,
-  songsRawObj: songs.rawObject,
+  songsRawObject: songs.rawObject,
 });
 const unitsArray = units.convertUnits({
   songsRawArray: songs.rawArray,

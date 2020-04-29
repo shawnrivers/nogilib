@@ -14,8 +14,8 @@ import {
 import { convertPerformerNames } from "server/utils/strings";
 import { SONGS } from "server/editor/constants/titles";
 import { NO_ARTWORK_IMAGE_SRC } from "server/editor/constants/paths";
-import { SongsRawObj } from "server/actors/Songs/models";
-import { MembersRawObj } from "server/actors/Members/models";
+import { SongsRawObject } from "server/actors/Songs/models";
+import { MembersRawObject } from "server/actors/Members/models";
 
 type ConvertCdArtwork = (params: {
   cdHasArtworks: CdRaw["hasArtworks"];
@@ -77,41 +77,41 @@ export const convertCdArtworks: ConvertCdArtworks = ({
 
 type ConvertCdSongType = (params: {
   cdSongTitle: CdSongRaw["title"];
-  songsRawObj: SongsRawObj;
+  songsRawObject: SongsRawObject;
 }) => CdSongResult["type"];
 
 export const convertCdSongType: ConvertCdSongType = ({
   cdSongTitle,
-  songsRawObj,
+  songsRawObject,
 }) => {
   if (cdSongTitle === OVERTURE) {
     return SongType.Coupling;
   }
 
-  if (songsRawObj[cdSongTitle].type.includes(SongType.Selected)) {
+  if (songsRawObject[cdSongTitle].type.includes(SongType.Selected)) {
     return SongType.Coupling;
   }
 
-  return songsRawObj[cdSongTitle].type;
+  return songsRawObject[cdSongTitle].type;
 };
 
 type ConvertCdSongFocusPerformers = (params: {
   cdSongTitle: CdSongRaw["title"];
-  songsRawObj: SongsRawObj;
-  membersRawObj: MembersRawObj;
+  songsRawObject: SongsRawObject;
+  membersRawObject: MembersRawObject;
 }) => CdSongResult["focusPerformers"];
 
 export const convertCdSongFocusPerformers: ConvertCdSongFocusPerformers = ({
   cdSongTitle,
-  songsRawObj,
-  membersRawObj,
+  songsRawObject,
+  membersRawObject,
 }) => {
   let focusPerformersResult: CdSongResult["focusPerformers"] = {
     type: FocusPerformersType.None,
     name: [],
   };
 
-  const song = songsRawObj[cdSongTitle];
+  const song = songsRawObject[cdSongTitle];
 
   if (cdSongTitle !== OVERTURE) {
     if (
@@ -129,7 +129,7 @@ export const convertCdSongFocusPerformers: ConvertCdSongFocusPerformers = ({
       if (song.performers.center !== null) {
         focusPerformersResult = {
           type: FocusPerformersType.Center,
-          name: convertPerformerNames(song.performers.center, membersRawObj),
+          name: convertPerformerNames(song.performers.center, membersRawObject),
         };
       } else {
         focusPerformersResult = {
@@ -140,7 +140,7 @@ export const convertCdSongFocusPerformers: ConvertCdSongFocusPerformers = ({
     } else if (song.type === SongType.Solo) {
       focusPerformersResult = {
         type: FocusPerformersType.Solo,
-        name: convertPerformerNames(song.formations.firstRow, membersRawObj),
+        name: convertPerformerNames(song.formations.firstRow, membersRawObject),
       };
     } else if (song.type === SongType.Unit) {
       if (song.performers.unit !== "") {
@@ -151,7 +151,7 @@ export const convertCdSongFocusPerformers: ConvertCdSongFocusPerformers = ({
       } else if (song.performers.center.length > 0) {
         focusPerformersResult = {
           type: FocusPerformersType.Center,
-          name: convertPerformerNames(song.performers.center, membersRawObj),
+          name: convertPerformerNames(song.performers.center, membersRawObject),
         };
       } else {
         focusPerformersResult = {
@@ -163,7 +163,7 @@ export const convertCdSongFocusPerformers: ConvertCdSongFocusPerformers = ({
               ...song.formations.thirdRow,
               ...song.formations.fourthRow,
             ],
-            membersRawObj
+            membersRawObject
           ),
         };
       }
@@ -171,7 +171,7 @@ export const convertCdSongFocusPerformers: ConvertCdSongFocusPerformers = ({
       if (song.performers.center.length > 0) {
         focusPerformersResult = {
           type: FocusPerformersType.None,
-          name: convertPerformerNames(song.performers.center, membersRawObj),
+          name: convertPerformerNames(song.performers.center, membersRawObject),
         };
       } else {
         focusPerformersResult = {
@@ -187,14 +187,14 @@ export const convertCdSongFocusPerformers: ConvertCdSongFocusPerformers = ({
 
 type ConvertCdSongs = (params: {
   cdSongsRaw: CdRaw["songs"];
-  songsRawObj: SongsRawObj;
-  membersRawObj: MembersRawObj;
+  songsRawObject: SongsRawObject;
+  membersRawObject: MembersRawObject;
 }) => CdResult["songs"];
 
 export const convertCdSongs: ConvertCdSongs = ({
   cdSongsRaw,
-  songsRawObj,
-  membersRawObj,
+  songsRawObject,
+  membersRawObject,
 }) => {
   return cdSongsRaw.map(cdSongRaw => {
     const { number, title, inCdType } = cdSongRaw;
@@ -206,12 +206,12 @@ export const convertCdSongs: ConvertCdSongs = ({
       inCdType,
       type: convertCdSongType({
         cdSongTitle: title,
-        songsRawObj,
+        songsRawObject,
       }),
       focusPerformers: convertCdSongFocusPerformers({
         cdSongTitle: title,
-        songsRawObj,
-        membersRawObj,
+        songsRawObject,
+        membersRawObject,
       }),
     };
   });

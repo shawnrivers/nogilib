@@ -11,7 +11,7 @@ export type UnitResult = UnitRaw & {
   songs: string[];
 };
 
-export type UnitsRawObj = {
+export type UnitsRawObject = {
   [key: string]: UnitRaw;
 };
 export type UnitsRawArray = UnitRaw[];

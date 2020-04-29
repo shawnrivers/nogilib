@@ -1,6 +1,6 @@
 import {
   MembersRawArray,
-  MembersRawObj,
+  MembersRawObject,
   MembersResultArray,
   MemberResult,
   MemberRaw,
@@ -10,16 +10,16 @@ import { arrayToObject } from "server/utils/arrays";
 import * as MemberConverters from "server/actors/Members/converters";
 import { UnitsRawArray } from "server/actors/Units/models";
 import { SinglesRawArray } from "server/actors/Singles/models";
-import { SongsRawObj } from "server/actors/Songs/models";
+import { SongsRawObject } from "server/actors/Songs/models";
 
 export class Members {
   private rawDataArray: MembersRawArray;
-  private rawDataObj: MembersRawObj;
+  private rawDataObject: MembersRawObject;
   private resultData: MembersResultArray;
 
   public constructor() {
     this.rawDataArray = rawMembers;
-    this.rawDataObj = arrayToObject(rawMembers, "name");
+    this.rawDataObject = arrayToObject(rawMembers, "name");
     this.resultData = [];
   }
 
@@ -27,8 +27,8 @@ export class Members {
     return this.rawDataArray;
   }
 
-  public get rawObject(): MembersRawObj {
-    return this.rawDataObj;
+  public get rawObject(): MembersRawObject {
+    return this.rawDataObject;
   }
 
   public get result(): MembersResultArray {
@@ -38,11 +38,11 @@ export class Members {
   public convertMembers({
     unitsRawArray,
     singlesRawArray,
-    songsRawObj,
+    songsRawObject,
   }: {
     unitsRawArray: UnitsRawArray;
     singlesRawArray: SinglesRawArray;
-    songsRawObj: SongsRawObj;
+    songsRawObject: SongsRawObject;
   }): MembersResultArray {
     const membersResult = [];
 
@@ -52,7 +52,7 @@ export class Members {
           memberRaw,
           unitsRawArray,
           singlesRawArray,
-          songsRawObj,
+          songsRawObject,
         })
       );
     }
@@ -65,12 +65,12 @@ export class Members {
     memberRaw,
     unitsRawArray,
     singlesRawArray,
-    songsRawObj,
+    songsRawObject,
   }: {
     memberRaw: MemberRaw;
     unitsRawArray: UnitsRawArray;
     singlesRawArray: SinglesRawArray;
-    songsRawObj: SongsRawObj;
+    songsRawObject: SongsRawObject;
   }): MemberResult {
     const singleImages = MemberConverters.convertMemberSingleImages({
       memberName: memberRaw.name,
@@ -80,7 +80,7 @@ export class Members {
     const positionsHistory = MemberConverters.convertMemberPositionsHistory({
       memberName: memberRaw.name,
       singlesRawArray,
-      songsRawObj,
+      songsRawObject,
     });
 
     return {

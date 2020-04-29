@@ -1,25 +1,28 @@
 import { arrayToObject } from "client/utils/arrays";
-import { SinglesRawArray, SinglesRawObj } from "server/actors/Singles/models";
+import {
+  SinglesRawArray,
+  SinglesRawObject,
+} from "server/actors/Singles/models";
 import * as SongConverters from "server/actors/Songs/converters";
 import {
   SongRaw,
   SongResult,
   SongsRawArray,
-  SongsRawObj,
+  SongsRawObject,
   SongsResultArray,
 } from "server/actors/Songs/models";
 import { SONGS } from "server/editor/constants/titles";
 import { rawSongs } from "server/editor/songs";
-import { AlbumsRawArray, AlbumsRawObj } from "server/actors/Albums/models";
+import { AlbumsRawArray, AlbumsRawObject } from "server/actors/Albums/models";
 
 export class Songs {
   private rawDataArray: SongsRawArray;
-  private rawDataObj: SongsRawObj;
+  private rawDataObject: SongsRawObject;
   private resultData: SongsResultArray;
 
   public constructor() {
     this.rawDataArray = rawSongs;
-    this.rawDataObj = arrayToObject(rawSongs, "title");
+    this.rawDataObject = arrayToObject(rawSongs, "title");
     this.resultData = [];
   }
 
@@ -27,8 +30,8 @@ export class Songs {
     return this.rawDataArray;
   }
 
-  public get rawObject(): SongsRawObj {
-    return this.rawDataObj;
+  public get rawObject(): SongsRawObject {
+    return this.rawDataObject;
   }
 
   public get result(): SongsResultArray {
@@ -38,13 +41,13 @@ export class Songs {
   public convertSongs({
     singlesRawArray,
     albumsRawArray,
-    singlesRawObj,
-    albumsRawObj,
+    singlesRawObject,
+    albumsRawObject,
   }: {
     singlesRawArray: SinglesRawArray;
     albumsRawArray: AlbumsRawArray;
-    singlesRawObj: SinglesRawObj;
-    albumsRawObj: AlbumsRawObj;
+    singlesRawObject: SinglesRawObject;
+    albumsRawObject: AlbumsRawObject;
   }): SongsResultArray {
     const songsResult = [];
 
@@ -54,8 +57,8 @@ export class Songs {
           songRaw,
           singlesRawArray,
           albumsRawArray,
-          singlesRawObj,
-          albumsRawObj,
+          singlesRawObject,
+          albumsRawObject,
         })
       );
     }
@@ -68,14 +71,14 @@ export class Songs {
     songRaw,
     singlesRawArray,
     albumsRawArray,
-    singlesRawObj,
-    albumsRawObj,
+    singlesRawObject,
+    albumsRawObject,
   }: {
     songRaw: SongRaw;
     singlesRawArray: SinglesRawArray;
     albumsRawArray: AlbumsRawArray;
-    singlesRawObj: SinglesRawObj;
-    albumsRawObj: AlbumsRawObj;
+    singlesRawObject: SinglesRawObject;
+    albumsRawObject: AlbumsRawObject;
   }): SongResult {
     const songSingleResult = SongConverters.convertSongSingle({
       songTitle: songRaw.title,
@@ -96,8 +99,8 @@ export class Songs {
         songTitle: songRaw.title,
         songSingleResult,
         songAlbumsResult,
-        singlesRawObj,
-        albumsRawObj,
+        singlesRawObject,
+        albumsRawObject,
       }),
       musicVideo: songRaw.musicVideo,
       type: SongConverters.convertSongType(songRaw.type),
@@ -108,7 +111,7 @@ export class Songs {
         songSingleResult,
         songAlbumsResult,
         songPerformers: songRaw.performers,
-        albumsRawObj,
+        albumsRawObject,
       }),
       formations: songRaw.formations,
     };

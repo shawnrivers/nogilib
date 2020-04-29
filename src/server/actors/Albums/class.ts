@@ -2,23 +2,23 @@ import {
   AlbumRaw,
   AlbumResult,
   AlbumsRawArray,
-  AlbumsRawObj,
+  AlbumsRawObject,
   AlbumsResultArray,
 } from "server/actors/Albums/models";
 import * as CdConverters from "server/actors/Cds/converters";
 import { rawAlbums } from "server/editor/albums";
 import { arrayToObject } from "server/utils/arrays";
-import { SongsRawObj } from "server/actors/Songs/models";
-import { MembersRawObj } from "server/actors/Members/models";
+import { SongsRawObject } from "server/actors/Songs/models";
+import { MembersRawObject } from "server/actors/Members/models";
 
 export class Albums {
   private rawDataArray: AlbumsRawArray;
-  private rawDataObj: AlbumsRawObj;
+  private rawDataObject: AlbumsRawObject;
   private resultData: AlbumsResultArray;
 
   public constructor() {
     this.rawDataArray = rawAlbums;
-    this.rawDataObj = arrayToObject(rawAlbums, "title");
+    this.rawDataObject = arrayToObject(rawAlbums, "title");
     this.resultData = [];
   }
 
@@ -26,8 +26,8 @@ export class Albums {
     return this.rawDataArray;
   }
 
-  public get rawObject(): AlbumsRawObj {
-    return this.rawDataObj;
+  public get rawObject(): AlbumsRawObject {
+    return this.rawDataObject;
   }
 
   public get result(): AlbumsResultArray {
@@ -35,17 +35,17 @@ export class Albums {
   }
 
   public convertAlbums({
-    songsRawObj,
-    membersRawObj,
+    songsRawObject,
+    membersRawObject,
   }: {
-    songsRawObj: SongsRawObj;
-    membersRawObj: MembersRawObj;
+    songsRawObject: SongsRawObject;
+    membersRawObject: MembersRawObject;
   }): AlbumsResultArray {
     const albumsResult = [];
 
     for (const albumRaw of this.rawDataArray) {
       albumsResult.push(
-        this.convertAlbum({ albumRaw, songsRawObj, membersRawObj })
+        this.convertAlbum({ albumRaw, songsRawObject, membersRawObject })
       );
     }
 
@@ -55,12 +55,12 @@ export class Albums {
 
   private convertAlbum({
     albumRaw,
-    songsRawObj,
-    membersRawObj,
+    songsRawObject,
+    membersRawObject,
   }: {
     albumRaw: AlbumRaw;
-    songsRawObj: SongsRawObj;
-    membersRawObj: MembersRawObj;
+    songsRawObject: SongsRawObject;
+    membersRawObject: MembersRawObject;
   }): AlbumResult {
     return {
       title: albumRaw.title,
@@ -75,8 +75,8 @@ export class Albums {
       }),
       songs: CdConverters.convertCdSongs({
         cdSongsRaw: albumRaw.songs,
-        songsRawObj,
-        membersRawObj,
+        songsRawObject,
+        membersRawObject,
       }),
       previousSingleNumber: albumRaw.previousSingleNumber,
     };

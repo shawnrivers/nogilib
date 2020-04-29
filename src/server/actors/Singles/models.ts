@@ -18,5 +18,5 @@ export type SingleResult = CdResult & {
 };
 
 export type SinglesRawArray = SingleRaw[];
-export type SinglesRawObj = { [key: string]: SingleRaw };
+export type SinglesRawObject = { [key: string]: SingleRaw };
 export type SinglesResultArray = SingleResult[];

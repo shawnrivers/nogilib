@@ -2,7 +2,7 @@ import * as fs from "fs";
 import { MemberResult, MemberRaw } from "server/actors/Members/models";
 import { UnitsRawArray } from "server/actors/Units/models";
 import { SinglesRawArray } from "server/actors/Singles/models";
-import { SongsRawObj } from "server/actors/Songs/models";
+import { SongsRawObject } from "server/actors/Songs/models";
 import { PositionType, SongType, FukujinType } from "server/utils/constants";
 
 type ConvertMemberProfileImage = (params: {
@@ -97,13 +97,13 @@ export const convertMemberUnits: ConvertMemberUnits = ({
 type ConvertMemberPositionsHistory = (params: {
   memberName: MemberRaw["name"];
   singlesRawArray: SinglesRawArray;
-  songsRawObj: SongsRawObj;
+  songsRawObject: SongsRawObject;
 }) => MemberResult["positionsHistory"];
 
 export const convertMemberPositionsHistory: ConvertMemberPositionsHistory = ({
   memberName,
   singlesRawArray,
-  songsRawObj,
+  songsRawObject,
 }) => {
   const memberPositionHistoryResult = [];
 
@@ -119,7 +119,7 @@ export const convertMemberPositionsHistory: ConvertMemberPositionsHistory = ({
       singlePosition = PositionType.Under;
     } else {
       for (const singleSong of single.songs) {
-        const song = songsRawObj[singleSong.title];
+        const song = songsRawObject[singleSong.title];
 
         // Calculate center, fukujin, selected.
         if (song.type === SongType.Title) {

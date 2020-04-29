@@ -2,7 +2,7 @@ import {
   UnitRaw,
   UnitResult,
   UnitsRawArray,
-  UnitsRawObj,
+  UnitsRawObject,
   UnitsResultArray,
 } from "server/actors/Units/models";
 import { rawUnits } from "server/editor/units";
@@ -12,12 +12,12 @@ import { SongsRawArray } from "server/actors/Songs/models";
 
 export class Units {
   private rawDataArray: UnitsRawArray;
-  private rawDataObj: UnitsRawObj;
+  private rawDataObject: UnitsRawObject;
   private resultData: UnitsResultArray;
 
   public constructor() {
     this.rawDataArray = rawUnits;
-    this.rawDataObj = arrayToObject(rawUnits, "name");
+    this.rawDataObject = arrayToObject(rawUnits, "name");
     this.resultData = [];
   }
 
@@ -25,8 +25,8 @@ export class Units {
     return this.rawDataArray;
   }
 
-  public get rawObject(): UnitsRawObj {
-    return this.rawDataObj;
+  public get rawObject(): UnitsRawObject {
+    return this.rawDataObject;
   }
 
   public get result(): UnitsResultArray {

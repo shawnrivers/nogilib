@@ -1,6 +1,9 @@
-import { SinglesRawArray, SinglesRawObj } from "server/actors/Singles/models";
+import {
+  SinglesRawArray,
+  SinglesRawObject,
+} from "server/actors/Singles/models";
 import { SongResult, SongRaw } from "server/actors/Songs/models";
-import { AlbumsRawArray, AlbumsRawObj } from "server/actors/Albums/models";
+import { AlbumsRawArray, AlbumsRawObject } from "server/actors/Albums/models";
 import * as CdConverter from "server/actors/Cds/converters";
 import { NO_ARTWORK_IMAGE_SRC } from "server/editor/constants/paths";
 import { SongType } from "server/utils/constants";
@@ -65,19 +68,19 @@ type ConvertSongArtwork = (params: {
   songTitle: SongRaw["title"];
   songSingleResult: SongResult["single"];
   songAlbumsResult: SongResult["albums"];
-  singlesRawObj: SinglesRawObj;
-  albumsRawObj: AlbumsRawObj;
+  singlesRawObject: SinglesRawObject;
+  albumsRawObject: AlbumsRawObject;
 }) => SongResult["artwork"];
 
 export const convertSongArtwork: ConvertSongArtwork = ({
   songTitle,
   songSingleResult,
   songAlbumsResult,
-  singlesRawObj,
-  albumsRawObj,
+  singlesRawObject,
+  albumsRawObject,
 }) => {
   if (songSingleResult.title !== "") {
-    const single = singlesRawObj[songSingleResult.title];
+    const single = singlesRawObject[songSingleResult.title];
 
     for (const singleSong of single.songs) {
       if (singleSong.title === songTitle) {
@@ -92,7 +95,7 @@ export const convertSongArtwork: ConvertSongArtwork = ({
   }
 
   if (songAlbumsResult.length > 0) {
-    const album = albumsRawObj[songAlbumsResult[0].title];
+    const album = albumsRawObject[songAlbumsResult[0].title];
 
     for (const albumSong of album.songs) {
       if (albumSong.title === songTitle) {
@@ -117,7 +120,7 @@ type ConvertSongPerformersTag = (params: {
   songSingleResult: SongResult["single"];
   songAlbumsResult: SongResult["albums"];
   songPerformers: SongRaw["performers"];
-  albumsRawObj: AlbumsRawObj;
+  albumsRawObject: AlbumsRawObject;
 }) => SongResult["performersTag"];
 
 export const convertSongPerformersTag: ConvertSongPerformersTag = ({
@@ -125,14 +128,15 @@ export const convertSongPerformersTag: ConvertSongPerformersTag = ({
   songSingleResult,
   songAlbumsResult,
   songPerformers,
-  albumsRawObj,
+  albumsRawObject,
 }) => {
   let singleNumber = "";
 
   if (songSingleResult.number !== "") {
     singleNumber = songSingleResult.number;
   } else if (songAlbumsResult.length > 0) {
-    singleNumber = albumsRawObj[songAlbumsResult[0].title].previousSingleNumber;
+    singleNumber =
+      albumsRawObject[songAlbumsResult[0].title].previousSingleNumber;
   }
 
   if (songType === SongType.Unit) {
