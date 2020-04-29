@@ -37,7 +37,7 @@ export const convertSongAlbums: ConvertSongAlbums = ({
   songTitle,
   albumsRawArray,
 }) => {
-  let songAlbumsWithRelease: (SongResult["albums"][0] & {
+  const songAlbumsWithRelease: (SongResult["albums"][0] & {
     release: string;
   })[] = [];
 

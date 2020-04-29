@@ -57,7 +57,7 @@ export const convertCdArtworks: ConvertCdArtworks = ({
   cdNumber,
   cdKind,
 }) => {
-  let artworksResult: CdResult["artworks"] = [];
+  const artworksResult: CdResult["artworks"] = [];
 
   for (const cdArtworkType of cdArtworkTypes) {
     artworksResult.push(
