@@ -1,5 +1,5 @@
 import { Language } from "client/utils/constants";
-import { FocusPerformersType } from "server/utils/constants";
+import { FocusPerformersType } from "server/constants/commons";
 
 export const getUrlWithTrailingSlash = (url: string): string =>
   url.slice(-1) !== "/" ? url + "/" : url;

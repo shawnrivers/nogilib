@@ -7,7 +7,7 @@ import {
   Birthplace,
   SocialMedia,
   PhotoAlbumType,
-} from "server/utils/constants";
+} from "server/constants/commons";
 
 const akimotomanatsu: MemberRaw = {
   name: MemberName.AkimotoManatsu,

@@ -1,6 +1,6 @@
 import { SongRaw, SongsRawArray } from "server/actors/Songs/models";
-import { SONGS } from "server/constants/titles";
-import { SongType, FukujinType } from "server/utils/constants";
+import { SONGS } from "server/constants/songs";
+import { SongType, FukujinType } from "server/constants/commons";
 import { MemberName } from "server/constants/names";
 
 // SINGLE SONGS

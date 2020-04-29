@@ -1,6 +1,6 @@
 import { UnitRaw, UnitsRawArray } from "server/actors/Units/models";
 import { MemberName } from "server/constants/names";
-import { UnitType } from "server/utils/constants";
+import { UnitType } from "server/constants/commons";
 
 const whiteHigh: UnitRaw = {
   name: "WHITE HIGH",

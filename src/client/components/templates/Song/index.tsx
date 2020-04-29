@@ -11,7 +11,7 @@ import { Message } from "client/components/atoms/Message";
 import { PageContentLayout } from "client/components/atoms/PageContentLayout";
 import { KOJIHARU, KOJIHARU_IMAGE, Language } from "client/utils/constants";
 import { useScrollRestoration } from "client/utils/hooks";
-import { SongType } from "server/utils/constants";
+import { SongType } from "server/constants/commons";
 
 const containerVariants = {
   visible: {

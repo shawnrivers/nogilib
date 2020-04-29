@@ -1,4 +1,4 @@
-import { MemberName } from "../constants/names";
+import { MemberName } from "../editor/constants/names";
 import { UnitType } from "../constants/commons";
 
 export type RawUnit = {

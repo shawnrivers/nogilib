@@ -1,4 +1,4 @@
-import { CdType, FocusPerformersType, SongType } from "../utils/constants";
+import { CdType, FocusPerformersType, SongType } from "../constants/commons";
 
 export type Site = {
   title: string;

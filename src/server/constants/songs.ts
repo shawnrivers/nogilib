@@ -834,3 +834,5 @@ export const SONGS: {
     key: "OVERTURE",
   }
 };
+
+export const OVERTURE = "OVERTURE";

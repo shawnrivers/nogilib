@@ -1,5 +1,5 @@
 import { MemberName } from "server/constants/names";
-import { FukujinType, SongType } from "server/utils/constants";
+import { FukujinType, SongType } from "server/constants/commons";
 
 export type SongRaw = {
   title: string;

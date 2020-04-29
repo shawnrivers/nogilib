@@ -1,5 +1,5 @@
 import { MemberName } from "server/constants/names";
-import { UnitType } from "server/utils/constants";
+import { UnitType } from "server/constants/commons";
 
 export type UnitRaw = {
   name: string;

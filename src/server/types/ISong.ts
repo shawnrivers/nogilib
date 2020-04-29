@@ -1,5 +1,5 @@
 import { MemberName } from "../constants/names";
-import { FukujinType, SongType } from "../utils/constants";
+import { FukujinType, SongType } from "../constants/commons";
 
 type Creators = {
   lyrics: string[];

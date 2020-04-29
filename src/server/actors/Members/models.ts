@@ -6,7 +6,7 @@ import {
   PhotoAlbumType,
   UnitType,
   PositionType,
-} from "server/utils/constants";
+} from "server/constants/commons";
 import { Site } from "server/types/commons";
 
 export type MemberRaw = {

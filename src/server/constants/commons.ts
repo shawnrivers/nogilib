@@ -75,11 +75,6 @@ export enum PositionType {
   None = "none",
 }
 
-export const DATA_SOURCE_PATH =
-  "https://raw.githubusercontent.com/shawnrivers/nogizaka-lib-redesign/master/";
-
-export const OVERTURE = "OVERTURE";
-
 export enum GlowStickColorType {
   Red = "red",
   Yellow = "yellow",

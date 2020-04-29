@@ -1,6 +1,6 @@
 import { AlbumRaw, AlbumsRawArray } from "server/actors/Albums/models";
-import { CdType } from "server/utils/constants";
-import { SONGS } from "server/constants/titles";
+import { CdType } from "server/constants/commons";
+import { SONGS } from "server/constants/songs";
 
 const imagaomoideninarumade: AlbumRaw = {
   title: "今が思い出になるまで",

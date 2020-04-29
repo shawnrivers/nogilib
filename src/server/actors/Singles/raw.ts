@@ -1,6 +1,6 @@
 import { SingleRaw, SinglesRawArray } from "server/actors/Singles/models";
-import { CdType } from "server/utils/constants";
-import { SONGS } from "server/constants/titles";
+import { CdType } from "server/constants/commons";
+import { SONGS } from "server/constants/songs";
 import { MemberName } from "server/constants/names";
 
 const hogoshoku: SingleRaw = {
