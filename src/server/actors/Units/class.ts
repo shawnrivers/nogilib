@@ -1,23 +1,13 @@
-import { MemberName } from "server/editor/constants/names";
-import { UnitType, SongType } from "server/utils/constants";
+import {
+  UnitRaw,
+  UnitResult,
+  UnitsRawArray,
+  UnitsRawObj,
+  UnitsResultArray,
+} from "server/actors/Units/models";
 import { rawUnits } from "server/editor/units";
 import { arrayToObject } from "server/utils/arrays";
-
-type UnitRaw = {
-  name: string;
-  members: MemberName[];
-  type: UnitType;
-  description: string;
-};
-type UnitResult = UnitRaw & {
-  songs: string[];
-};
-
-export type UnitsRawObj = {
-  [key: string]: UnitRaw;
-};
-export type UnitsRawArray = UnitRaw[];
-export type UnitsResultArray = UnitResult[];
+import * as UnitConverters from "server/actors/Units/converters";
 
 export class Units {
   private rawDataArray: UnitsRawArray;
@@ -66,25 +56,10 @@ export class Units {
       members: unitRaw.members,
       type: unitRaw.type,
       description: unitRaw.description,
-      songs: this.convertUnitSongs({ songsArray, unitName: unitRaw.name }),
+      songs: UnitConverters.convertUnitSongs({
+        songsArray,
+        unitName: unitRaw.name,
+      }),
     };
-  }
-
-  private convertUnitSongs({
-    unitName,
-    songsArray,
-  }: {
-    unitName: string;
-    songsArray: any[];
-  }): UnitResult["songs"] {
-    let unitSongs: string[] = [];
-
-    for (const song of songsArray) {
-      if (song.type === SongType.Unit && song.performers.unit === unitName) {
-        unitSongs.push(song.title);
-      }
-    }
-
-    return unitSongs;
   }
 }

@@ -4,7 +4,7 @@ import { ResultSingles } from "../models/ISingle";
 import { ResultSongs } from "../models/ISong";
 import { arrayToObject } from "../utils/arrays";
 import { FukujinType, PositionType, SongType } from "../utils/constants";
-import { UnitsRawArray } from "server/actors/Units/class";
+import { UnitsRawArray } from "server/actors/Units/models";
 
 export const initializeMembers = (rawMembers: RawMember[]): ResultMembers => {
   const initializeMember = (rawMember: RawMember): ResultMember => ({
