@@ -2,9 +2,9 @@ import * as fs from "fs";
 import { RawMember, ResultMember, ResultMembers } from "../models/IMember";
 import { ResultSingles } from "../models/ISingle";
 import { ResultSongs } from "../models/ISong";
-import { ResultUnits } from "../models/IUnit";
 import { arrayToObject } from "../utils/arrays";
 import { FukujinType, PositionType, SongType } from "../utils/constants";
+import { UnitsRawArray } from "server/actors/Units/class";
 
 export const initializeMembers = (rawMembers: RawMember[]): ResultMembers => {
   const initializeMember = (rawMember: RawMember): ResultMember => ({
@@ -36,11 +36,11 @@ export const initializeMembers = (rawMembers: RawMember[]): ResultMembers => {
   return arrayToObject(initializedArray, "name");
 };
 
-export const recordUnits = (members: ResultMembers, units: ResultUnits) => {
+export const recordUnits = (members: ResultMembers, units: UnitsRawArray) => {
   for (const member of Object.values(members)) {
     member.units = [];
 
-    for (const unit of Object.values(units)) {
+    for (const unit of units) {
       if (unit.members.includes(member.name)) {
         member.units.push({
           name: unit.name,

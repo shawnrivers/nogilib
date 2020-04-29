@@ -1,18 +1,15 @@
 import * as fs from "fs";
+import * as UpdateCds from "./converter/updateCds";
 import * as UpdateMembers from "./converter/updateMembers";
 import * as UpdateSongs from "./converter/updateSongs";
-import * as UpdateUnits from "./converter/updateUnits";
-import * as UpdateCds from "./converter/updateCds";
 import { rawAlbums } from "./editor/albums";
 import { rawMembers } from "./editor/members";
 import { rawSingles } from "./editor/singles";
 import { rawSongs } from "./editor/songs";
-import { rawUnits } from "./editor/units";
 import { UnitsConverter } from "server/actors/Units/class";
 
 // Initialize raw data to result data type.
 
-const units = UpdateUnits.initializeUnits(rawUnits);
 const albums = UpdateCds.initializeAlbums(rawAlbums);
 const singles = UpdateCds.initializeSingles(rawSingles);
 const members = UpdateMembers.initializeMembers(rawMembers);
@@ -25,7 +22,7 @@ const unitsConverter = new UnitsConverter(rawSongs);
 UpdateCds.recordCdSongTypeFromSongs(singles, songs);
 UpdateCds.recordCdSongTypeFromSongs(albums, songs);
 
-UpdateMembers.recordUnits(members, units);
+UpdateMembers.recordUnits(members, unitsConverter.getRawArray());
 UpdateMembers.recordPositions(members, singles, songs);
 UpdateMembers.recordProfileImages(members, Object.keys(singles).length);
 
@@ -41,7 +38,7 @@ UpdateCds.recordCdSongArtworks(albums, songs);
 
 UpdateSongs.recordPerformersTags(songs, albums);
 
-UpdateUnits.recordUnitSongs(units, songs);
+// UpdateUnits.recordUnitSongs(units, songs);
 
 UpdateCds.flatArtworksToArray(singles);
 UpdateCds.flatArtworksToArray(albums);

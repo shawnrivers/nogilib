@@ -39,10 +39,12 @@ export class UnitsConverter {
     });
   }
 
-  public getRaw(
-    type: "array" | "object" = "array"
-  ): UnitsRawArray | UnitsRawObj {
-    return type === "array" ? this.rawDataArray : this.rawDataObj;
+  public getRawArray(): UnitsRawArray {
+    return this.rawDataArray;
+  }
+
+  public getRawObject(): UnitsRawObj {
+    return this.rawDataObj;
   }
 
   public getResult(): UnitsResultArray {
