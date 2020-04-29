@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build:
+  lint:
     docker:
       - image: circleci/node:12.9.1
     working_directory: ~/repo
@@ -14,8 +14,11 @@ jobs:
           name: Install Dependencies
           command: yarn install
       - run:
-          name: typecheck
-          command: yarn type-check
+          name: type-check:client
+          command: yarn type-check:client
+      - run:
+          name: type-check:server
+          command: yarn type-check:server
       - run:
           name: stylelint
           command: yarn stylelint
@@ -27,19 +30,12 @@ jobs:
           key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache/yarn
-  deploy:
+  build-deploy:
     docker:
       - image: circleci/node:12.9.1
     working_directory: ~/repo
     steps:
       - checkout
-      - restore_cache:
-          name: Restore Yarn Package Cache
-          keys:
-            - yarn-packages-{{ checksum "yarn.lock" }}
-      - run:
-          name: Install Dependencies
-          command: yarn install
       - run:
           name: Set up GitHub user name
           command: git config user.name $GITHUB_NAME
@@ -51,12 +47,12 @@ jobs:
           command: yarn deploy
 workflows:
   version: 2
-  build-deploy:
+  deploy:
     jobs:
-      - build
-      - deploy:
+      - lint
+      - build-deploy:
           requires:
-            - build
+            - lint
           filters:
             branches:
               only: master
