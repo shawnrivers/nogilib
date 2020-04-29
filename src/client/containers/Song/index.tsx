@@ -3,8 +3,8 @@ import * as React from "react";
 import { Song } from "client/components/templates/Song";
 import { arrayToObject } from "client/utils/arrays";
 import { toCdNumber } from "client/utils/strings";
-import { ResultMember } from "server/models/IMember";
-import { ResultSong } from "server/models/ISong";
+import { SongResult } from "server/actors/Songs/models";
+import { MemberResult } from "server/actors/Members/models";
 
 export const query = graphql`
   query($key: String!) {
@@ -61,7 +61,7 @@ export const query = graphql`
 interface SongData {
   data: {
     songsJson: Pick<
-      ResultSong,
+      SongResult,
       | "title"
       | "type"
       | "artwork"
@@ -74,7 +74,7 @@ interface SongData {
     >;
     allMembersJson: {
       nodes: Pick<
-        ResultMember,
+        MemberResult,
         "name" | "profileImage" | "singleImages" | "nameNotations"
       >[];
     };

@@ -2,8 +2,7 @@ import { graphql } from "gatsby";
 import * as React from "react";
 import { Cd } from "client/components/templates/Cd";
 import { CdTabType } from "client/types/tabs";
-import { ResultCdSong } from "server/types/commons";
-import { AlbumResponse } from "server/types/IAlbum";
+import { AlbumResult } from "server/actors/Albums/models";
 
 export const query = graphql`
   query($number: String!) {
@@ -28,10 +27,13 @@ export const query = graphql`
 interface AlbumJson {
   data: {
     albumsJson: Pick<
-      AlbumResponse,
+      AlbumResult,
       "title" | "number" | "artworks" | "release"
     > & {
-      songs: Pick<ResultCdSong, "key" | "title" | "type" | "focusPerformers">[];
+      songs: Pick<
+        AlbumResult["songs"][0],
+        "key" | "title" | "type" | "focusPerformers"
+      >[];
     };
   };
   pageContext: {

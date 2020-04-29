@@ -2,7 +2,7 @@ import * as React from "react";
 import { graphql } from "gatsby";
 import { Cds } from "client/components/templates/Cds";
 import { CdTabType } from "client/types/tabs";
-import { CdResponse } from "server/types/commons";
+import { CdResult } from "server/actors/Cds/models";
 
 export const query = graphql`
   query CdsQuery {
@@ -31,12 +31,12 @@ type CdsData = {
   data: {
     allSinglesJson: {
       edges: {
-        node: Pick<CdResponse, "number" | "artworks" | "title">;
+        node: Pick<CdResult, "number" | "artworks" | "title">;
       }[];
     };
     allAlbumsJson: {
       edges: {
-        node: Pick<CdResponse, "number" | "artworks" | "title">;
+        node: Pick<CdResult, "number" | "artworks" | "title">;
       }[];
     };
   };

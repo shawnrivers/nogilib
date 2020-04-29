@@ -6,7 +6,7 @@ import { toCdNumber } from "client/utils/strings";
 import * as React from "react";
 import { injectIntl } from "react-intl";
 import { forceCheck } from "react-lazyload";
-import { SongType } from "server/utils/constants";
+import { SongType } from "server/constants/commons";
 
 export type MemberDoc = {
   id: string;
