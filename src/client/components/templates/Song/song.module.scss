@@ -77,11 +77,11 @@
   box-sizing: border-box;
   height: 256px;
   width: 256px;
+}
 
-  img {
-    display: block;
-    width: 100%;
-  }
+.artwork-image {
+  height: 100%;
+  width: 100%;
 }
 
 .content {
@@ -232,11 +232,11 @@
   }
 
   .artwork-image-wrapper {
-    height: auto;
+    height: 80vw;
     margin: auto;
     max-height: 256px;
     max-width: 256px;
-    width: 100%;
+    width: 80vw;
   }
 }
 
