@@ -8,7 +8,7 @@ import { LocalizedLink } from "client/components/atoms/locales/LocalizedLink";
 import { LazyImage } from "client/components/atoms/LazyImage";
 import cdListPc from "assets/images/screenshots/cd_list-pc.jpg";
 import { Links } from "client/utils/constants";
-import { getUrlWithTrailingSlash, classNames } from "client/utils/strings";
+import { getUrlWithTrailingSlash, classNames } from "utils/strings";
 import favicon128 from "assets/images/favicon-128.png";
 import favicon256 from "assets/images/favicon-256.png";
 import favicon512 from "assets/images/favicon-512.png";

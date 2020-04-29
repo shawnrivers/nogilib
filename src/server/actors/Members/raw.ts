@@ -1,12 +1,12 @@
 import { MemberRaw, MembersRawArray } from "server/actors/Members/models";
 import { MemberName } from "server/constants/names";
-import { GlowStickColorType } from "client/utils/constants";
 import {
   JoinedGenerationType,
   BloodType,
   Birthplace,
   SocialMedia,
   PhotoAlbumType,
+  GlowStickColorType,
 } from "server/constants/commons";
 
 const akimotomanatsu: MemberRaw = {

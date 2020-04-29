@@ -7,7 +7,7 @@ import {
 } from "server/actors/Albums/models";
 import * as CdConverters from "server/actors/Cds/converters";
 import { rawAlbums } from "server/actors/Albums/raw";
-import { arrayToObject } from "server/utils/arrays";
+import { arrayToObject } from "utils/arrays";
 import { SongsRawObject } from "server/actors/Songs/models";
 import { MembersRawObject } from "server/actors/Members/models";
 

@@ -5,7 +5,7 @@ import styles from "./sidebar.module.scss";
 import { CloseIcon } from "client/components/atoms/icons/CloseIcon";
 import { Message } from "client/components/atoms/Message";
 import { LocalizedLink } from "client/components/atoms/locales/LocalizedLink";
-import { getUrlWithTrailingSlash } from "client/utils/strings";
+import { getUrlWithTrailingSlash } from "utils/strings";
 import { Links } from "client/utils/constants";
 
 const backgroundFade = {

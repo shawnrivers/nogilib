@@ -23,34 +23,6 @@ export enum SearchResultType {
   Songs = "songs",
 }
 
-export const KOJIHARU = "kojimaharuna";
-export const KOJIHARU_IMAGE = "members/others/kojimaharuna.jpg";
-
-export enum PositionType {
-  Center = "center",
-  Fukujin = "fukujin",
-  Selected = "selected",
-  Under = "under",
-  Trainee = "trainee",
-  Skip = "skip",
-  None = "none",
-}
-
-export enum GlowStickColorType {
-  Red = "red",
-  Yellow = "yellow",
-  White = "white",
-  Blue = "blue",
-  Green = "green",
-  Purple = "purple",
-  Black = "black",
-  Pink = "pink",
-  Orange = "orange",
-  LightBlue = "light blue",
-  YellowGreen = "yellow green",
-  None = "",
-}
-
 export const GLOW_STICK_COLORS = {
   red: "#fb9090",
   yellow: "#f7dd7f",

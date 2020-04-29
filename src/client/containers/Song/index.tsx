@@ -1,10 +1,10 @@
 import { graphql } from "gatsby";
 import * as React from "react";
 import { Song } from "client/components/templates/Song";
-import { arrayToObject } from "client/utils/arrays";
-import { toCdNumber } from "client/utils/strings";
+import { toCdNumber } from "utils/strings";
 import { SongResult } from "server/actors/Songs/models";
 import { MemberResult } from "server/actors/Members/models";
+import { arrayToObject } from "utils/arrays";
 
 export const query = graphql`
   query($key: String!) {

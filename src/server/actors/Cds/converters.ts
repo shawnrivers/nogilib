@@ -10,11 +10,21 @@ import {
   SongType,
   FocusPerformersType,
 } from "server/constants/commons";
-import { convertPerformerNames } from "server/utils/strings";
 import { SONGS, OVERTURE } from "server/constants/songs";
 import { NO_ARTWORK_IMAGE_SRC } from "server/constants/paths";
 import { SongsRawObject } from "server/actors/Songs/models";
 import { MembersRawObject } from "server/actors/Members/models";
+import { MemberName } from "server/constants/names";
+
+export const convertPerformerNames = (
+  memberNames: MemberName[],
+  membersRawObject: MembersRawObject
+): string[] => {
+  return memberNames.map(name => {
+    const { lastName, firstName } = membersRawObject[name].nameNotations;
+    return lastName + firstName;
+  });
+};
 
 type ConvertCdArtwork = (params: {
   cdHasArtworks: CdRaw["hasArtworks"];

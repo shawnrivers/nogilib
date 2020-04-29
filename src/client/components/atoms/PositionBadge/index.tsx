@@ -1,6 +1,6 @@
 import * as React from "react";
 import styles from "./positionbadge.module.scss";
-import { PositionType } from "client/utils/constants";
+import { PositionType } from "server/constants/commons";
 
 interface PositionBadgeProps {
   position: PositionType;

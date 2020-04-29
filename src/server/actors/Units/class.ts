@@ -6,7 +6,7 @@ import {
   UnitsResultArray,
 } from "server/actors/Units/models";
 import { rawUnits } from "server/actors/Units/raw";
-import { arrayToObject } from "server/utils/arrays";
+import { arrayToObject } from "utils/arrays";
 import * as UnitConverters from "server/actors/Units/converters";
 import { SongsRawArray } from "server/actors/Songs/models";
 

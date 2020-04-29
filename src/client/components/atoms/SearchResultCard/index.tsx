@@ -3,7 +3,7 @@ import * as React from "react";
 import styles from "./searchresultcard.module.scss";
 import { Image } from "client/components/atoms/Image";
 import { LocalizedLink } from "client/components/atoms/locales/LocalizedLink";
-import { classNames } from "client/utils/strings";
+import { classNames } from "utils/strings";
 
 const backgroundHover = {
   hover: {

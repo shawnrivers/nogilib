@@ -1,7 +1,7 @@
 import * as React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import styles from "./topnavigation.module.scss";
-import { useOnClickOutside } from "client/utils/hooks";
+import { useOnClickOutside } from "client/hooks/useOnClickOutside";
 import { NavigationItem } from "client/components/atoms/NavigationItem";
 import { LanguageOptionItem } from "client/components/atoms/LanguageOptionItem";
 import { LanguageIcon } from "client/components/atoms/icons/LanguagesIcon";
@@ -11,7 +11,7 @@ import { MembersIcon } from "client/components/atoms/icons/MembersIcon";
 import { SearchIcon } from "client/components/atoms/icons/SearchIcon";
 import { SideBar } from "client/components/molecules/SideBar";
 import { Message } from "client/components/atoms/Message";
-import { classNames } from "client/utils/strings";
+import { classNames } from "utils/strings";
 import { Links } from "client/utils/constants";
 
 interface LanguageItemProps {

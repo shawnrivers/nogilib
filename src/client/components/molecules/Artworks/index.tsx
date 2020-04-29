@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import styles from "./artworks.module.scss";
 import { ArrowLeftIcon } from "client/components/atoms/icons/ArrowLeftIcon";
 import { ArrowRightIcon } from "client/components/atoms/icons/ArrowRightIcon";
-import { classNames } from "client/utils/strings";
+import { classNames } from "utils/strings";
 import { Image } from "client/components/atoms/Image";
 
 interface ArtworksProps {

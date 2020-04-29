@@ -1,4 +1,3 @@
-import { arrayToObject } from "client/utils/arrays";
 import {
   SinglesRawArray,
   SinglesRawObject,
@@ -14,6 +13,7 @@ import {
 import { SONGS } from "server/constants/songs";
 import { rawSongs } from "server/actors/Songs/raw";
 import { AlbumsRawArray, AlbumsRawObject } from "server/actors/Albums/models";
+import { arrayToObject } from "utils/arrays";
 
 export class Songs {
   private rawDataArray: SongsRawArray;

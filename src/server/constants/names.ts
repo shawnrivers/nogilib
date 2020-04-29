@@ -78,3 +78,5 @@ export enum MemberName {
   IwaseYumiko = "iwaseyumiko",
   KojimaHaruna = "kojimaharuna",
 }
+
+export const KOJIHARU_NAME = "kojimaharuna";

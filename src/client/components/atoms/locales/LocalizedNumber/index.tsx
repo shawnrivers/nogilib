@@ -1,7 +1,7 @@
 import * as React from "react";
 import { injectIntl } from "react-intl";
 import { Language } from "client/utils/constants";
-import { toCdNumber } from "client/utils/strings";
+import { toCdNumber } from "utils/strings";
 
 interface LocalizedNumberProps {
   num: string | number;

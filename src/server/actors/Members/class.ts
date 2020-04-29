@@ -6,7 +6,7 @@ import {
   MemberRaw,
 } from "server/actors/Members/models";
 import { rawMembers } from "server/actors/Members/raw";
-import { arrayToObject } from "server/utils/arrays";
+import { arrayToObject } from "utils/arrays";
 import * as MemberConverters from "server/actors/Members/converters";
 import { UnitsRawArray } from "server/actors/Units/models";
 import { SinglesRawArray } from "server/actors/Singles/models";
