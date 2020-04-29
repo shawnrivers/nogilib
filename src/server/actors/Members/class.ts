@@ -44,7 +44,7 @@ export class Members {
     singlesRawArray: SinglesRawArray;
     songsRawObj: SongsRawObj;
   }): MembersResultArray {
-    let membersResult: MembersResultArray = [];
+    const membersResult = [];
 
     for (const memberRaw of this.rawDataArray) {
       membersResult.push(

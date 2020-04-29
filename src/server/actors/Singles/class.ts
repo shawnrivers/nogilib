@@ -8,6 +8,8 @@ import {
 import { arrayToObject } from "client/utils/arrays";
 import { rawSingles } from "server/editor/singles";
 import * as CdConverters from "server/actors/Cds/converters";
+import { SongsRawObj } from "server/actors/Songs/models";
+import { MembersRawObj } from "server/actors/Members/models";
 
 export class Singles {
   private rawDataArray: SinglesRawArray;
@@ -36,10 +38,10 @@ export class Singles {
     songsRawObj,
     membersRawObj,
   }: {
-    songsRawObj: { [key: string]: any };
-    membersRawObj: { [key: string]: any };
+    songsRawObj: SongsRawObj;
+    membersRawObj: MembersRawObj;
   }): SinglesResultArray {
-    let singlesResult: SinglesResultArray = [];
+    const singlesResult = [];
 
     for (const singleRaw of this.rawDataArray) {
       singlesResult.push(
@@ -57,8 +59,8 @@ export class Singles {
     membersRawObj,
   }: {
     singleRaw: SingleRaw;
-    songsRawObj: { [key: string]: any };
-    membersRawObj: { [key: string]: any };
+    songsRawObj: SongsRawObj;
+    membersRawObj: MembersRawObj;
   }): SingleResult {
     return {
       title: singleRaw.title,

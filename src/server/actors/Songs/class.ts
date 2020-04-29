@@ -46,7 +46,7 @@ export class Songs {
     singlesRawObj: SinglesRawObj;
     albumsRawObj: AlbumsRawObj;
   }): SongsResultArray {
-    let songsResult: SongsResultArray = [];
+    const songsResult = [];
 
     for (const songRaw of this.rawDataArray) {
       songsResult.push(

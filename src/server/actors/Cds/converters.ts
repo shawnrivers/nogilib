@@ -14,6 +14,8 @@ import {
 import { convertPerformerNames } from "server/utils/strings";
 import { SONGS } from "server/editor/constants/titles";
 import { NO_ARTWORK_IMAGE_SRC } from "server/editor/constants/paths";
+import { SongsRawObj } from "server/actors/Songs/models";
+import { MembersRawObj } from "server/actors/Members/models";
 
 type ConvertCdArtwork = (params: {
   cdHasArtworks: CdRaw["hasArtworks"];
@@ -75,7 +77,7 @@ export const convertCdArtworks: ConvertCdArtworks = ({
 
 type ConvertCdSongType = (params: {
   cdSongTitle: CdSongRaw["title"];
-  songsRawObj: { [key: string]: any };
+  songsRawObj: SongsRawObj;
 }) => CdSongResult["type"];
 
 export const convertCdSongType: ConvertCdSongType = ({
@@ -95,8 +97,8 @@ export const convertCdSongType: ConvertCdSongType = ({
 
 type ConvertCdSongFocusPerformers = (params: {
   cdSongTitle: CdSongRaw["title"];
-  songsRawObj: { [key: string]: any };
-  membersRawObj: { [key: string]: any };
+  songsRawObj: SongsRawObj;
+  membersRawObj: MembersRawObj;
 }) => CdSongResult["focusPerformers"];
 
 export const convertCdSongFocusPerformers: ConvertCdSongFocusPerformers = ({
@@ -185,8 +187,8 @@ export const convertCdSongFocusPerformers: ConvertCdSongFocusPerformers = ({
 
 type ConvertCdSongs = (params: {
   cdSongsRaw: CdRaw["songs"];
-  songsRawObj: { [key: string]: any };
-  membersRawObj: { [key: string]: any };
+  songsRawObj: SongsRawObj;
+  membersRawObj: MembersRawObj;
 }) => CdResult["songs"];
 
 export const convertCdSongs: ConvertCdSongs = ({

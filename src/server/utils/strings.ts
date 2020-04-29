@@ -1,9 +1,9 @@
 import { MemberName } from "../editor/constants/names";
-import { ResultMembers } from "../models/IMember";
+import { MembersRawObj } from "server/actors/Members/models";
 
 export const convertPerformerNames = (
   names: MemberName[],
-  members: ResultMembers
+  members: MembersRawObj
 ): string[] => {
   return names.map(name => {
     const { lastName, firstName } = members[name].nameNotations;

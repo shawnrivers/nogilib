@@ -1,92 +1,45 @@
 import * as fs from "fs";
-import * as UpdateCds from "./converter/updateCds";
-import * as UpdateMembers from "./converter/updateMembers";
-import * as UpdateSongs from "./converter/updateSongs";
-import { rawAlbums } from "./editor/albums";
-import { rawMembers } from "./editor/members";
-import { rawSingles } from "./editor/singles";
-import { rawSongs } from "./editor/songs";
-import { Units } from "server/actors/Units/class";
 import { Albums } from "server/actors/Albums/class";
-import { arrayToObject } from "server/utils/arrays";
+import { Members } from "server/actors/Members/class";
 import { Singles } from "server/actors/Singles/class";
 import { Songs } from "server/actors/Songs/class";
-import { Members } from "server/actors/Members/class";
+import { Units } from "server/actors/Units/class";
 
-// Initialize raw data to result data type.
+const songs = new Songs();
+const albums = new Albums();
+const singles = new Singles();
+const members = new Members();
+const units = new Units();
 
-const albums = UpdateCds.initializeAlbums(rawAlbums);
-const singles = UpdateCds.initializeSingles(rawSingles);
-const members = UpdateMembers.initializeMembers(rawMembers);
-const songs = UpdateSongs.initializeSongs(rawSongs);
-
-const songsConverter = new Songs();
-const albumsConverter = new Albums();
-const singlesConverter = new Singles();
-const membersConverter = new Members();
-const unitsConverter = new Units();
-
-// Process the raw data.
-
-UpdateCds.recordCdSongTypeFromSongs(singles, songs);
-UpdateCds.recordCdSongTypeFromSongs(albums, songs);
-
-UpdateMembers.recordUnits(members, unitsConverter.rawArray);
-UpdateMembers.recordPositions(members, singles, songs);
-UpdateMembers.recordProfileImages(members, Object.keys(singles).length);
-
-UpdateCds.recordCdFocusPerformersFromSongs(singles, songs, members);
-UpdateCds.recordCdFocusPerformersFromSongs(albums, songs, members);
-
-UpdateSongs.recordSongSingle(songs, singles);
-UpdateSongs.recordSongAlbums(songs, albums);
-UpdateSongs.recordArtworks(songs, singles, albums);
-
-UpdateCds.recordCdSongArtworks(singles, songs);
-UpdateCds.recordCdSongArtworks(albums, songs);
-
-UpdateSongs.recordPerformersTags(songs, albums);
-
-// UpdateUnits.recordUnitSongs(units, songs);
-
-UpdateCds.flatArtworksToArray(singles);
-UpdateCds.flatArtworksToArray(albums);
-
-// Form all property pairs into an array.
-
-// const songsArray = Object.values(songs);
-// const membersArray = Object.values(members);
-// const singlesArray = Object.values(singles);
-// const albumsArray = Object.values(albums);
-// const unitsArray = Object.values(units);
-const songsArray = songsConverter.convertSongs({
-  singlesRawArray: singlesConverter.rawArray,
-  singlesRawObj: singlesConverter.rawObject,
-  albumsRawArray: albumsConverter.rawArray,
-  albumsRawObj: albumsConverter.rawObject,
+const songsArray = songs.convertSongs({
+  singlesRawArray: singles.rawArray,
+  singlesRawObj: singles.rawObject,
+  albumsRawArray: albums.rawArray,
+  albumsRawObj: albums.rawObject,
 });
-const albumsArray = albumsConverter.convertAlbums({
-  songsRawObj: arrayToObject(rawSongs, "title"),
-  membersRawObj: arrayToObject(rawMembers, "name"),
+const albumsArray = albums.convertAlbums({
+  songsRawObj: songs.rawObject,
+  membersRawObj: members.rawObject,
 });
-const singlesArray = singlesConverter.convertSingles({
-  songsRawObj: arrayToObject(rawSongs, "title"),
-  membersRawObj: arrayToObject(rawMembers, "name"),
+const singlesArray = singles.convertSingles({
+  songsRawObj: songs.rawObject,
+  membersRawObj: members.rawObject,
 });
-const membersArray = membersConverter.convertMembers({
-  unitsRawArray: unitsConverter.rawArray,
-  singlesRawArray: singlesConverter.rawArray,
-  songsRawObj: songsConverter.rawObject,
+const membersArray = members.convertMembers({
+  unitsRawArray: units.rawArray,
+  singlesRawArray: singles.rawArray,
+  songsRawObj: songs.rawObject,
 });
-const unitsArray = unitsConverter.convertUnits({ songsArray: rawSongs });
-console.log("Data processing finished.\n");
+const unitsArray = units.convertUnits({
+  songsRawArray: songs.rawArray,
+});
 
 // Store the processed data into several JSON files.
 
 const writeFile = (path: string, data: any[]) => {
   fs.writeFile(path, JSON.stringify(data, null, 2), err => {
     if (err) {
-      console.log(err);
+      console.warn(err);
     } else {
       console.log(`JSON saved in: ${path}`);
     }

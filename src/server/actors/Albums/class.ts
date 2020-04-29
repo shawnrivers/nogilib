@@ -8,6 +8,8 @@ import {
 import * as CdConverters from "server/actors/Cds/converters";
 import { rawAlbums } from "server/editor/albums";
 import { arrayToObject } from "server/utils/arrays";
+import { SongsRawObj } from "server/actors/Songs/models";
+import { MembersRawObj } from "server/actors/Members/models";
 
 export class Albums {
   private rawDataArray: AlbumsRawArray;
@@ -36,10 +38,10 @@ export class Albums {
     songsRawObj,
     membersRawObj,
   }: {
-    songsRawObj: { [key: string]: any };
-    membersRawObj: { [key: string]: any };
+    songsRawObj: SongsRawObj;
+    membersRawObj: MembersRawObj;
   }): AlbumsResultArray {
-    let albumsResult: AlbumsResultArray = [];
+    const albumsResult = [];
 
     for (const albumRaw of this.rawDataArray) {
       albumsResult.push(
@@ -57,8 +59,8 @@ export class Albums {
     membersRawObj,
   }: {
     albumRaw: AlbumRaw;
-    songsRawObj: { [key: string]: any };
-    membersRawObj: { [key: string]: any };
+    songsRawObj: SongsRawObj;
+    membersRawObj: MembersRawObj;
   }): AlbumResult {
     return {
       title: albumRaw.title,

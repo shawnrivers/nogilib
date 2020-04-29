@@ -8,6 +8,7 @@ import {
 import { rawUnits } from "server/editor/units";
 import { arrayToObject } from "server/utils/arrays";
 import * as UnitConverters from "server/actors/Units/converters";
+import { SongsRawArray } from "server/actors/Songs/models";
 
 export class Units {
   private rawDataArray: UnitsRawArray;
@@ -32,11 +33,15 @@ export class Units {
     return this.resultData;
   }
 
-  public convertUnits({ songsArray }: { songsArray: any[] }): UnitsResultArray {
-    let unitsResult: UnitsResultArray = [];
+  public convertUnits({
+    songsRawArray,
+  }: {
+    songsRawArray: SongsRawArray;
+  }): UnitsResultArray {
+    const unitsResult = [];
 
     for (const unitRaw of this.rawDataArray) {
-      unitsResult.push(this.convertUnit({ unitRaw, songsArray }));
+      unitsResult.push(this.convertUnit({ unitRaw, songsRawArray }));
     }
 
     this.resultData = unitsResult;
@@ -46,10 +51,10 @@ export class Units {
 
   private convertUnit({
     unitRaw,
-    songsArray,
+    songsRawArray,
   }: {
     unitRaw: UnitRaw;
-    songsArray: any[];
+    songsRawArray: SongsRawArray;
   }): UnitResult {
     return {
       name: unitRaw.name,
@@ -57,7 +62,7 @@ export class Units {
       type: unitRaw.type,
       description: unitRaw.description,
       songs: UnitConverters.convertUnitSongs({
-        songsArray,
+        songsRawArray,
         unitName: unitRaw.name,
       }),
     };
