@@ -1,4 +1,4 @@
-import { MemberName } from "../editor/constants/names";
+import { MemberName } from "../constants/names";
 import { RawCd, ResultCd, CdResponse } from "./commons";
 
 type BehindPerformers = {

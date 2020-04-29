@@ -1,8 +1,8 @@
-import { RawAlbum } from "../models/IAlbum";
-import { CdType } from "../utils/constants";
-import { SONGS } from "./constants/titles";
+import { AlbumRaw, AlbumsRawArray } from "server/actors/Albums/models";
+import { CdType } from "server/utils/constants";
+import { SONGS } from "server/constants/titles";
 
-const imagaomoideninarumade: RawAlbum = {
+const imagaomoideninarumade: AlbumRaw = {
   title: "今が思い出になるまで",
   number: "4",
   release: "2019-04-17",
@@ -149,7 +149,7 @@ const imagaomoideninarumade: RawAlbum = {
   ],
 };
 
-const bokudakenokimi: RawAlbum = {
+const bokudakenokimi: AlbumRaw = {
   title: "僕だけの君〜Under Super Best〜",
   number: "U",
   release: "2018-01-10",
@@ -291,7 +291,7 @@ const bokudakenokimi: RawAlbum = {
   ],
 };
 
-const umaretekara: RawAlbum = {
+const umaretekara: AlbumRaw = {
   title: "生まれてから初めて見た夢",
   number: "3",
   release: "2017-05-24",
@@ -468,7 +468,7 @@ const umaretekara: RawAlbum = {
   ],
 };
 
-const sorezorenoisu: RawAlbum = {
+const sorezorenoisu: AlbumRaw = {
   title: "それぞれの椅子",
   number: "2",
   release: "2016-05-25",
@@ -660,7 +660,7 @@ const sorezorenoisu: RawAlbum = {
   ],
 };
 
-const tomeinairo: RawAlbum = {
+const tomeinairo: AlbumRaw = {
   title: "透明な色",
   number: "1",
   release: "2015-01-27",
@@ -817,7 +817,7 @@ const tomeinairo: RawAlbum = {
   ],
 };
 
-export const rawAlbums: RawAlbum[] = [
+export const rawAlbums: AlbumsRawArray = [
   imagaomoideninarumade,
   bokudakenokimi,
   umaretekara,

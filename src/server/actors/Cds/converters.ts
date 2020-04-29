@@ -12,8 +12,8 @@ import {
   FocusPerformersType,
 } from "server/utils/constants";
 import { convertPerformerNames } from "server/utils/strings";
-import { SONGS } from "server/editor/constants/titles";
-import { NO_ARTWORK_IMAGE_SRC } from "server/editor/constants/paths";
+import { SONGS } from "server/constants/titles";
+import { NO_ARTWORK_IMAGE_SRC } from "server/constants/paths";
 import { SongsRawObject } from "server/actors/Songs/models";
 import { MembersRawObject } from "server/actors/Members/models";
 

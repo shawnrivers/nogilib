@@ -1,4 +1,4 @@
-import { Site } from "server/models/commons";
+import { Site } from "server/types/commons";
 import { CdType, FocusPerformersType, SongType } from "server/utils/constants";
 
 export type CdSongRaw = {

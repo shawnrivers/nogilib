@@ -2,7 +2,7 @@ import * as React from "react";
 import { graphql } from "gatsby";
 import { Cds } from "client/components/templates/Cds";
 import { CdTabType } from "client/types/tabs";
-import { CdResponse } from "server/models/commons";
+import { CdResponse } from "server/types/commons";
 
 export const query = graphql`
   query CdsQuery {

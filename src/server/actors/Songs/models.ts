@@ -1,4 +1,4 @@
-import { MemberName } from "server/editor/constants/names";
+import { MemberName } from "server/constants/names";
 import { FukujinType, SongType } from "server/utils/constants";
 
 export type SongRaw = {

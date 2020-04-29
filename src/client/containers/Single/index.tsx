@@ -2,7 +2,7 @@ import { graphql } from "gatsby";
 import * as React from "react";
 import { Cd } from "client/components/templates/Cd";
 import { CdTabType } from "client/types/tabs";
-import { CdResponse, ResultCdSong } from "server/models/commons";
+import { CdResponse, ResultCdSong } from "server/types/commons";
 
 export const query = graphql`
   query($number: String!) {

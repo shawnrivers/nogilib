@@ -1,4 +1,4 @@
-import { MemberName } from "../editor/constants/names";
+import { MemberName } from "../constants/names";
 import { FukujinType, SongType } from "../utils/constants";
 
 type Creators = {

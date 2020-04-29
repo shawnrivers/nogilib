@@ -1,9 +1,9 @@
-import { RawSingle } from "../models/ISingle";
-import { CdType } from "../utils/constants";
-import { MemberName } from "./constants/names";
-import { SONGS } from "./constants/titles";
+import { SingleRaw, SinglesRawArray } from "server/actors/Singles/models";
+import { CdType } from "server/utils/constants";
+import { SONGS } from "server/constants/titles";
+import { MemberName } from "server/constants/names";
 
-const hogoshoku: RawSingle = {
+const hogoshoku: SingleRaw = {
   title: "しあわせの保護色",
   number: "25",
   release: "2020-03-25",
@@ -77,7 +77,7 @@ const hogoshoku: RawSingle = {
   },
 };
 
-const yoakemade: RawSingle = {
+const yoakemade: SingleRaw = {
   title: "夜明けまで強がらなくてもいい",
   number: "24",
   release: "2019-09-04",
@@ -154,7 +154,7 @@ const yoakemade: RawSingle = {
   },
 };
 
-const singout: RawSingle = {
+const singout: SingleRaw = {
   title: "Sing Out!",
   number: "23",
   release: "2019-05-29",
@@ -228,7 +228,7 @@ const singout: RawSingle = {
   },
 };
 
-const kaerimichi: RawSingle = {
+const kaerimichi: SingleRaw = {
   title: "帰り道は遠回りしたくなる",
   number: "22",
   release: "2018-11-14",
@@ -298,7 +298,7 @@ const kaerimichi: RawSingle = {
   },
 };
 
-const jikochu: RawSingle = {
+const jikochu: SingleRaw = {
   title: "ジコチューで行こう!",
   number: "21",
   release: "2018-08-08",
@@ -368,7 +368,7 @@ const jikochu: RawSingle = {
   },
 };
 
-const syncronicity: RawSingle = {
+const syncronicity: SingleRaw = {
   title: "シンクロニシティ",
   number: "20",
   release: "2018-04-25",
@@ -441,7 +441,7 @@ const syncronicity: RawSingle = {
   },
 };
 
-const itsukadekirukara: RawSingle = {
+const itsukadekirukara: SingleRaw = {
   title: "いつかできるから今日できる",
   number: "19",
   release: "2017-10-11",
@@ -520,7 +520,7 @@ const itsukadekirukara: RawSingle = {
   },
 };
 
-const nigemizu: RawSingle = {
+const nigemizu: SingleRaw = {
   title: "逃げ水",
   number: "18",
   release: "2017-08-09",
@@ -601,7 +601,7 @@ const nigemizu: RawSingle = {
   },
 };
 
-const influencer: RawSingle = {
+const influencer: SingleRaw = {
   title: "インフルエンサー",
   number: "17",
   release: "2017-03-22",
@@ -678,7 +678,7 @@ const influencer: RawSingle = {
   },
 };
 
-const sayonaranoimi: RawSingle = {
+const sayonaranoimi: SingleRaw = {
   title: "サヨナラの意味",
   number: "16",
   release: "2016-11-09",
@@ -746,7 +746,7 @@ const sayonaranoimi: RawSingle = {
   },
 };
 
-const hadashidesummer: RawSingle = {
+const hadashidesummer: SingleRaw = {
   title: "裸足でSummer",
   number: "15",
   release: "2016-07-27",
@@ -817,7 +817,7 @@ const hadashidesummer: RawSingle = {
   },
 };
 
-const harujion: RawSingle = {
+const harujion: SingleRaw = {
   title: "ハルジオンが咲く頃",
   number: "14",
   release: "2016-03-23",
@@ -888,7 +888,7 @@ const harujion: RawSingle = {
   },
 };
 
-const hanashitaidarekagairu: RawSingle = {
+const hanashitaidarekagairu: SingleRaw = {
   title: "今、話したい誰かがいる",
   number: "13",
   release: "2015-10-28",
@@ -956,7 +956,7 @@ const hanashitaidarekagairu: RawSingle = {
   },
 };
 
-const taiyoknock: RawSingle = {
+const taiyoknock: SingleRaw = {
   title: "太陽ノック",
   number: "12",
   release: "2015-07-22",
@@ -1026,7 +1026,7 @@ const taiyoknock: RawSingle = {
   },
 };
 
-const inochihautsukushii: RawSingle = {
+const inochihautsukushii: SingleRaw = {
   title: "命は美しい",
   number: "11",
   release: "2015-03-18",
@@ -1094,7 +1094,7 @@ const inochihautsukushii: RawSingle = {
   },
 };
 
-const nandomenoaozoraka: RawSingle = {
+const nandomenoaozoraka: SingleRaw = {
   title: "何度目の青空か?",
   number: "10",
   release: "2014-10-08",
@@ -1166,7 +1166,7 @@ const nandomenoaozoraka: RawSingle = {
   },
 };
 
-const natsunofreeandeasy: RawSingle = {
+const natsunofreeandeasy: SingleRaw = {
   title: "夏のFree&Easy",
   number: "9",
   release: "2014-07-09",
@@ -1240,7 +1240,7 @@ const natsunofreeandeasy: RawSingle = {
   },
 };
 
-const kizuitarakataomoi: RawSingle = {
+const kizuitarakataomoi: SingleRaw = {
   title: "気づいたら片想い",
   number: "8",
   release: "2014-04-02",
@@ -1314,7 +1314,7 @@ const kizuitarakataomoi: RawSingle = {
   },
 };
 
-const valletta: RawSingle = {
+const valletta: SingleRaw = {
   title: "バレッタ",
   number: "7",
   release: "2013-11-27",
@@ -1387,7 +1387,7 @@ const valletta: RawSingle = {
   },
 };
 
-const girlsrule: RawSingle = {
+const girlsrule: SingleRaw = {
   title: "ガールズルール",
   number: "6",
   release: "2013-07-03",
@@ -1450,7 +1450,7 @@ const girlsrule: RawSingle = {
   },
 };
 
-const kiminonahakibo: RawSingle = {
+const kiminonahakibo: SingleRaw = {
   title: "君の名は希望",
   number: "5",
   release: "2013-03-31",
@@ -1514,7 +1514,7 @@ const kiminonahakibo: RawSingle = {
   },
 };
 
-const seifukunomannequin: RawSingle = {
+const seifukunomannequin: SingleRaw = {
   title: "制服のマネキン",
   number: "4",
   release: "2012-12-19",
@@ -1577,7 +1577,7 @@ const seifukunomannequin: RawSingle = {
   },
 };
 
-const hashirebicycle: RawSingle = {
+const hashirebicycle: SingleRaw = {
   title: "走れ!Bicycle",
   number: "3",
   release: "2012-08-22",
@@ -1641,7 +1641,7 @@ const hashirebicycle: RawSingle = {
   },
 };
 
-const oideshampoo: RawSingle = {
+const oideshampoo: SingleRaw = {
   title: "おいでシャンプー",
   number: "2",
   release: "2012-05-02",
@@ -1705,7 +1705,7 @@ const oideshampoo: RawSingle = {
   },
 };
 
-const gurugurucurtain: RawSingle = {
+const gurugurucurtain: SingleRaw = {
   title: "ぐるぐるカーテン",
   number: "1",
   release: "2012-02-22",
@@ -1769,7 +1769,7 @@ const gurugurucurtain: RawSingle = {
   },
 };
 
-export const rawSingles: RawSingle[] = [
+export const rawSingles: SinglesRawArray = [
   hogoshoku,
   yoakemade,
   singout,

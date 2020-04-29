@@ -1,4 +1,4 @@
-import { MemberName } from "../editor/constants/names";
+import { MemberName } from "../constants/names";
 import { MembersRawObject } from "server/actors/Members/models";
 
 export const convertPerformerNames = (

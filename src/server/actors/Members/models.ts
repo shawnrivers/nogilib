@@ -1,4 +1,4 @@
-import { MemberName } from "server/editor/constants/names";
+import { MemberName } from "server/constants/names";
 import {
   JoinedGenerationType,
   BloodType,
@@ -7,7 +7,7 @@ import {
   UnitType,
   PositionType,
 } from "server/utils/constants";
-import { Site } from "server/models/commons";
+import { Site } from "server/types/commons";
 
 export type MemberRaw = {
   name: MemberName;

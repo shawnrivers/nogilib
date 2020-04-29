@@ -11,8 +11,8 @@ import {
   SongsRawObject,
   SongsResultArray,
 } from "server/actors/Songs/models";
-import { SONGS } from "server/editor/constants/titles";
-import { rawSongs } from "server/editor/songs";
+import { SONGS } from "server/constants/titles";
+import { rawSongs } from "server/actors/Songs/raw";
 import { AlbumsRawArray, AlbumsRawObject } from "server/actors/Albums/models";
 
 export class Songs {

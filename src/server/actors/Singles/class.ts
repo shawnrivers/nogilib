@@ -6,7 +6,7 @@ import {
   SingleRaw,
 } from "server/actors/Singles/models";
 import { arrayToObject } from "client/utils/arrays";
-import { rawSingles } from "server/editor/singles";
+import { rawSingles } from "server/actors/Singles/raw";
 import * as CdConverters from "server/actors/Cds/converters";
 import { SongsRawObject } from "server/actors/Songs/models";
 import { MembersRawObject } from "server/actors/Members/models";

@@ -1,12 +1,12 @@
-import { RawSong } from "../models/ISong";
-import { FukujinType, SongType } from "../utils/constants";
-import { MemberName } from "./constants/names";
-import { SONGS } from "./constants/titles";
+import { SongRaw, SongsRawArray } from "server/actors/Songs/models";
+import { SONGS } from "server/constants/titles";
+import { SongType, FukujinType } from "server/utils/constants";
+import { MemberName } from "server/constants/names";
 
 // SINGLE SONGS
 
 // 25th single
-const hogoshoku: RawSong = {
+const hogoshoku: SongRaw = {
   title: SONGS["しあわせの保護色"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -55,7 +55,7 @@ const hogoshoku: RawSong = {
   },
 };
 
-const staywithme: RawSong = {
+const staywithme: SongRaw = {
   title: SONGS["サヨナラ Stay with me"].title,
   musicVideo: "",
   type: SongType.Coupling,
@@ -88,7 +88,7 @@ const staywithme: RawSong = {
   },
 };
 
-const jaane: RawSong = {
+const jaane: SongRaw = {
   title: SONGS["じゃあね。"].title,
   musicVideo: "",
   type: SongType.Solo,
@@ -112,7 +112,7 @@ const jaane: RawSong = {
   },
 };
 
-const anastasia: RawSong = {
+const anastasia: SongRaw = {
   title: SONGS["アナスターシャ"].title,
   musicVideo: "",
   type: SongType.SecondGeneration,
@@ -146,7 +146,7 @@ const anastasia: RawSong = {
   },
 };
 
-const brandnewday: RawSong = {
+const brandnewday: SongRaw = {
   title: SONGS["毎日がBrand new day"].title,
   musicVideo: "",
   type: SongType.ThirdGeneration,
@@ -183,7 +183,7 @@ const brandnewday: RawSong = {
   },
 };
 
-const isee: RawSong = {
+const isee: SongRaw = {
   title: SONGS["I see…"].title,
   musicVideo: "",
   type: SongType.FourthGeneration,
@@ -219,7 +219,7 @@ const isee: RawSong = {
   },
 };
 
-const fantastic: RawSong = {
+const fantastic: SongRaw = {
   title: SONGS["ファンタスティック三色パン"].title,
   musicVideo: "",
   type: SongType.Coupling,
@@ -249,7 +249,7 @@ const fantastic: RawSong = {
 
 // 24th single
 
-const yoakemade: RawSong = {
+const yoakemade: SongRaw = {
   title: SONGS["夜明けまで強がらなくてもいい"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -294,7 +294,7 @@ const yoakemade: RawSong = {
   },
 };
 
-const bokunokoto: RawSong = {
+const bokunokoto: SongRaw = {
   title: SONGS["僕のこと、知ってる?"].title,
   musicVideo: "",
   type: SongType.Coupling,
@@ -343,7 +343,7 @@ const bokunokoto: RawSong = {
   },
 };
 
-const romendensha: RawSong = {
+const romendensha: SongRaw = {
   title: SONGS["路面電車の街"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -371,7 +371,7 @@ const romendensha: RawSong = {
   },
 };
 
-const toshoshitsu: RawSong = {
+const toshoshitsu: SongRaw = {
   title: SONGS["図書室の君へ"].title,
   musicVideo: "",
   type: SongType.FourthGeneration,
@@ -407,7 +407,7 @@ const toshoshitsu: RawSong = {
   },
 };
 
-const tokidokiomoidashite: RawSong = {
+const tokidokiomoidashite: SongRaw = {
   title: SONGS["時々 思い出してください"].title,
   musicVideo: "",
   type: SongType.Solo,
@@ -431,7 +431,7 @@ const tokidokiomoidashite: RawSong = {
   },
 };
 
-const domybest: RawSong = {
+const domybest: SongRaw = {
   title: SONGS["～Do my best～じゃ意味はない"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -472,7 +472,7 @@ const domybest: RawSong = {
   },
 };
 
-const bokunoomoikomi: RawSong = {
+const bokunoomoikomi: SongRaw = {
   title: SONGS["僕の思い込み"].title,
   musicVideo: "",
   type: SongType.Coupling,
@@ -519,7 +519,7 @@ const bokunoomoikomi: RawSong = {
 
 // 23rd single
 
-const singout: RawSong = {
+const singout: SongRaw = {
   title: SONGS["Sing Out!"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -568,7 +568,7 @@ const singout: RawSong = {
   },
 };
 
-const kassouro: RawSong = {
+const kassouro: SongRaw = {
   title: SONGS["滑走路"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -603,7 +603,7 @@ const kassouro: RawSong = {
   },
 };
 
-const noyounasonzai: RawSong = {
+const noyounasonzai: SongRaw = {
   title: SONGS["のような存在"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -627,7 +627,7 @@ const noyounasonzai: RawSong = {
   },
 };
 
-const amiloving: RawSong = {
+const amiloving: SongRaw = {
   title: SONGS["Am I Loving?"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -657,7 +657,7 @@ const amiloving: RawSong = {
   },
 };
 
-const heikousen: RawSong = {
+const heikousen: SongRaw = {
   title: SONGS["平行線"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -687,7 +687,7 @@ const heikousen: RawSong = {
   },
 };
 
-const yonbanmenohikari: RawSong = {
+const yonbanmenohikari: SongRaw = {
   title: SONGS["4番目の光"].title,
   musicVideo: "",
   type: SongType.FourthGeneration,
@@ -723,7 +723,7 @@ const yonbanmenohikari: RawSong = {
   },
 };
 
-const aimai: RawSong = {
+const aimai: SongRaw = {
   title: SONGS["曖昧"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -749,7 +749,7 @@ const aimai: RawSong = {
 
 // 22nd single
 
-const songKaerimichi: RawSong = {
+const songKaerimichi: SongRaw = {
   title: SONGS["帰り道は遠回りしたくなる"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -797,7 +797,7 @@ const songKaerimichi: RawSong = {
   },
 };
 
-const songNichijo: RawSong = {
+const songNichijo: SongRaw = {
   title: SONGS["日常"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -842,7 +842,7 @@ const songNichijo: RawSong = {
   },
 };
 
-const songKyaraban: RawSong = {
+const songKyaraban: SongRaw = {
   title: SONGS["キャラバンは眠らない"].title,
   musicVideo: "",
   type: SongType.Coupling,
@@ -883,7 +883,7 @@ const songKyaraban: RawSong = {
   },
 };
 
-const songTsuduku: RawSong = {
+const songTsuduku: SongRaw = {
   title: SONGS["つづく"].title,
   musicVideo: "",
   type: SongType.Solo,
@@ -907,7 +907,7 @@ const songTsuduku: RawSong = {
   },
 };
 
-const songKokuhakunojunban: RawSong = {
+const songKokuhakunojunban: SongRaw = {
   title: SONGS["告白の順番"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -936,7 +936,7 @@ const songKokuhakunojunban: RawSong = {
   },
 };
 
-const songChopinnousotsuki: RawSong = {
+const songChopinnousotsuki: SongRaw = {
   title: SONGS["ショパンの嘘つき"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -964,7 +964,7 @@ const songChopinnousotsuki: RawSong = {
   },
 };
 
-const songShiritaikoto: RawSong = {
+const songShiritaikoto: SongRaw = {
   title: SONGS["知りたいこと"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -995,7 +995,7 @@ const songShiritaikoto: RawSong = {
 
 // 21st single
 
-const songJikochu: RawSong = {
+const songJikochu: SongRaw = {
   title: SONGS["ジコチューで行こう!"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -1043,7 +1043,7 @@ const songJikochu: RawSong = {
   },
 };
 
-const songSankakunoakichi: RawSong = {
+const songSankakunoakichi: SongRaw = {
   title: SONGS["三角の空き地"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -1088,7 +1088,7 @@ const songSankakunoakichi: RawSong = {
   },
 };
 
-const songSoratobira: RawSong = {
+const songSoratobira: SongRaw = {
   title: SONGS["空扉"].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -1130,7 +1130,7 @@ const songSoratobira: RawSong = {
   },
 };
 
-const songJibunjanaikanji: RawSong = {
+const songJibunjanaikanji: SongRaw = {
   title: SONGS["自分じゃない感じ"].title,
   musicVideo: "",
   type: SongType.ThirdGeneration,
@@ -1166,7 +1166,7 @@ const songJibunjanaikanji: RawSong = {
   },
 };
 
-const songKokoronomonologue: RawSong = {
+const songKokoronomonologue: SongRaw = {
   title: SONGS["心のモノローグ"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -1190,7 +1190,7 @@ const songKokoronomonologue: RawSong = {
   },
 };
 
-const songChikyugamaruinara: RawSong = {
+const songChikyugamaruinara: SongRaw = {
   title: SONGS["地球が丸いなら"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -1218,7 +1218,7 @@ const songChikyugamaruinara: RawSong = {
   },
 };
 
-const songAnnanisukidattanoni: RawSong = {
+const songAnnanisukidattanoni: SongRaw = {
   title: SONGS["あんなに好きだったのに..."].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -1266,7 +1266,7 @@ const songAnnanisukidattanoni: RawSong = {
 
 // 20th single
 
-const songSyncronicity: RawSong = {
+const songSyncronicity: SongRaw = {
   title: SONGS["シンクロニシティ"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -1314,7 +1314,7 @@ const songSyncronicity: RawSong = {
   },
 };
 
-const songAtarashiisekai: RawSong = {
+const songAtarashiisekai: SongRaw = {
   title: SONGS["新しい世界"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -1362,7 +1362,7 @@ const songAtarashiisekai: RawSong = {
   },
 };
 
-const songAgainst: RawSong = {
+const songAgainst: SongRaw = {
   title: SONGS["Against"].title,
   musicVideo: "",
   type: SongType.FirstGeneration,
@@ -1407,7 +1407,7 @@ const songAgainst: RawSong = {
   },
 };
 
-const songKumoninarebaii: RawSong = {
+const songKumoninarebaii: SongRaw = {
   title: SONGS["雲になればいい"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -1435,7 +1435,7 @@ const songKumoninarebaii: RawSong = {
   },
 };
 
-const songScoutman: RawSong = {
+const songScoutman: SongRaw = {
   title: SONGS["スカウトマン"].title,
   musicVideo: "",
   type: SongType.SecondGeneration,
@@ -1470,7 +1470,7 @@ const songScoutman: RawSong = {
   },
 };
 
-const songTokitokimekimeki: RawSong = {
+const songTokitokimekimeki: SongRaw = {
   title: SONGS["トキトキメキメキ"].title,
   musicVideo: "",
   type: SongType.ThirdGeneration,
@@ -1507,7 +1507,7 @@ const songTokitokimekimeki: RawSong = {
   },
 };
 
-const songKotodamaho: RawSong = {
+const songKotodamaho: SongRaw = {
   title: SONGS["言霊砲"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -1538,7 +1538,7 @@ const songKotodamaho: RawSong = {
 
 // 19th single
 
-const songItsukadekirukara: RawSong = {
+const songItsukadekirukara: SongRaw = {
   title: SONGS["いつかできるから今日できる"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -1584,7 +1584,7 @@ const songItsukadekirukara: RawSong = {
   },
 };
 
-const songMyrule: RawSong = {
+const songMyrule: SongRaw = {
   title: SONGS["My rule"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -1625,7 +1625,7 @@ const songMyrule: RawSong = {
   },
 };
 
-const songFumensho: RawSong = {
+const songFumensho: SongRaw = {
   title: SONGS["不眠症"].title,
   musicVideo: "",
   type: SongType.Coupling,
@@ -1670,7 +1670,7 @@ const songFumensho: RawSong = {
   },
 };
 
-const songMaaiika: RawSong = {
+const songMaaiika: SongRaw = {
   title: SONGS["まあいいか?"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -1694,7 +1694,7 @@ const songMaaiika: RawSong = {
   },
 };
 
-const songShitsurenosojinin: RawSong = {
+const songShitsurenosojinin: SongRaw = {
   title: SONGS["失恋お掃除人"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -1723,7 +1723,7 @@ const songShitsurenosojinin: RawSong = {
   },
 };
 
-const songBokunoshodo: RawSong = {
+const songBokunoshodo: SongRaw = {
   title: SONGS["僕の衝動"].title,
   musicVideo: "",
   type: SongType.ThirdGeneration,
@@ -1759,7 +1759,7 @@ const songBokunoshodo: RawSong = {
   },
 };
 
-const songAtarashiikafun: RawSong = {
+const songAtarashiikafun: SongRaw = {
   title: SONGS["新しい花粉 〜ミュージカル「見知らぬ世界」より〜"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -1785,7 +1785,7 @@ const songAtarashiikafun: RawSong = {
 
 // 18th single
 
-const songNigemizu: RawSong = {
+const songNigemizu: SongRaw = {
   title: SONGS["逃げ水"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -1830,7 +1830,7 @@ const songNigemizu: RawSong = {
   },
 };
 
-const songUnder: RawSong = {
+const songUnder: SongRaw = {
   title: SONGS["アンダー"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -1875,7 +1875,7 @@ const songUnder: RawSong = {
   },
 };
 
-const songOnnahahitorija: RawSong = {
+const songOnnahahitorija: SongRaw = {
   title: SONGS["女は一人じゃ眠れない"].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -1918,7 +1918,7 @@ const songOnnahahitorija: RawSong = {
   },
 };
 
-const songHitonatsu: RawSong = {
+const songHitonatsu: SongRaw = {
   title: SONGS["ひと夏の長さより…"].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -1961,7 +1961,7 @@ const songHitonatsu: RawSong = {
   },
 };
 
-const songLiveshin: RawSong = {
+const songLiveshin: SongRaw = {
   title: SONGS["ライブ神"].title,
   musicVideo: "",
   type: SongType.SecondGeneration,
@@ -1999,7 +1999,7 @@ const songLiveshin: RawSong = {
   },
 };
 
-const songMirainokotae: RawSong = {
+const songMirainokotae: SongRaw = {
   title: SONGS["未来の答え"].title,
   musicVideo: "",
   type: SongType.ThirdGeneration,
@@ -2038,7 +2038,7 @@ const songMirainokotae: RawSong = {
   },
 };
 
-const songNaitatteii: RawSong = {
+const songNaitatteii: SongRaw = {
   title: SONGS["泣いたっていいじゃないか?"].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -2083,7 +2083,7 @@ const songNaitatteii: RawSong = {
 
 // 17th single
 
-const songInfluencer: RawSong = {
+const songInfluencer: SongRaw = {
   title: SONGS["インフルエンサー"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -2131,7 +2131,7 @@ const songInfluencer: RawSong = {
   },
 };
 
-const songFusenhaikiteiru: RawSong = {
+const songFusenhaikiteiru: SongRaw = {
   title: SONGS["風船は生きている"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -2170,7 +2170,7 @@ const songFusenhaikiteiru: RawSong = {
   },
 };
 
-const songJinseiwokangae: RawSong = {
+const songJinseiwokangae: SongRaw = {
   title: SONGS["人生を考えたくなる"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -2199,7 +2199,7 @@ const songJinseiwokangae: RawSong = {
   },
 };
 
-const songIgaibreak: RawSong = {
+const songIgaibreak: SongRaw = {
   title: SONGS["意外BREAK"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -2228,7 +2228,7 @@ const songIgaibreak: RawSong = {
   },
 };
 
-const songAnotherghost: RawSong = {
+const songAnotherghost: SongRaw = {
   title: SONGS["Another Ghost"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -2256,7 +2256,7 @@ const songAnotherghost: RawSong = {
   },
 };
 
-const songSanbanmenokaze: RawSong = {
+const songSanbanmenokaze: SongRaw = {
   title: SONGS["三番目の風"].title,
   musicVideo: "",
   type: SongType.ThirdGeneration,
@@ -2295,7 +2295,7 @@ const songSanbanmenokaze: RawSong = {
   },
 };
 
-const songAtarisawarinonai: RawSong = {
+const songAtarisawarinonai: SongRaw = {
   title: SONGS["当たり障りのない話"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -2326,7 +2326,7 @@ const songAtarisawarinonai: RawSong = {
 
 // 16th single
 
-const songSayonaranoimi: RawSong = {
+const songSayonaranoimi: SongRaw = {
   title: SONGS["サヨナラの意味"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -2372,7 +2372,7 @@ const songSayonaranoimi: RawSong = {
   },
 };
 
-const songBulanko: RawSong = {
+const songBulanko: SongRaw = {
   title: SONGS["ブランコ"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -2415,7 +2415,7 @@ const songBulanko: RawSong = {
   },
 };
 
-const songKodokunaaozora: RawSong = {
+const songKodokunaaozora: SongRaw = {
   title: SONGS["孤独な青空"].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -2459,7 +2459,7 @@ const songKodokunaaozora: RawSong = {
   },
 };
 
-const songAnokyoshitsu: RawSong = {
+const songAnokyoshitsu: SongRaw = {
   title: SONGS["あの教室"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -2483,7 +2483,7 @@ const songAnokyoshitsu: RawSong = {
   },
 };
 
-const songNidomenokisukara: RawSong = {
+const songNidomenokisukara: SongRaw = {
   title: SONGS["2度目のキスから"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -2512,7 +2512,7 @@ const songNidomenokisukara: RawSong = {
   },
 };
 
-const songKiminiokuruhana: RawSong = {
+const songKiminiokuruhana: SongRaw = {
   title: SONGS["君に贈る花がない"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -2542,7 +2542,7 @@ const songKiminiokuruhana: RawSong = {
   },
 };
 
-const songNaimononetari: RawSong = {
+const songNaimononetari: SongRaw = {
   title: SONGS["ないものねだり"].title,
   musicVideo: "",
   type: SongType.Solo,
@@ -2568,7 +2568,7 @@ const songNaimononetari: RawSong = {
 
 // 15th single
 
-const songHadashidesummer: RawSong = {
+const songHadashidesummer: SongRaw = {
   title: SONGS["裸足でSummer"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -2611,7 +2611,7 @@ const songHadashidesummer: RawSong = {
   },
 };
 
-const songSecretGravity: RawSong = {
+const songSecretGravity: SongRaw = {
   title: SONGS["シークレットグラフィティー"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -2657,7 +2657,7 @@ const songSecretGravity: RawSong = {
   },
 };
 
-const songBokudakenohikari: RawSong = {
+const songBokudakenohikari: SongRaw = {
   title: SONGS["僕だけの光"].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -2698,7 +2698,7 @@ const songBokudakenohikari: RawSong = {
   },
 };
 
-const songOffshoregirl: RawSong = {
+const songOffshoregirl: SongRaw = {
   title: SONGS["オフショアガール"].title,
   musicVideo: "",
   type: SongType.Solo,
@@ -2722,7 +2722,7 @@ const songOffshoregirl: RawSong = {
   },
 };
 
-const songInochinoshinjitsu: RawSong = {
+const songInochinoshinjitsu: SongRaw = {
   title: SONGS["命の真実 ミュージカル「林檎売りとカメムシ」"].title,
   musicVideo: "",
   type: SongType.Solo,
@@ -2746,7 +2746,7 @@ const songInochinoshinjitsu: RawSong = {
   },
 };
 
-const songHakumaisama: RawSong = {
+const songHakumaisama: SongRaw = {
   title: SONGS["白米様"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -2774,7 +2774,7 @@ const songHakumaisama: RawSong = {
   },
 };
 
-const songIkuatenonaibokutachi: RawSong = {
+const songIkuatenonaibokutachi: SongRaw = {
   title: SONGS["行くあてのない僕たち"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -2800,7 +2800,7 @@ const songIkuatenonaibokutachi: RawSong = {
 
 // 14th single
 
-const songHarujion: RawSong = {
+const songHarujion: SongRaw = {
   title: SONGS["ハルジオンが咲く頃"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -2844,7 +2844,7 @@ const songHarujion: RawSong = {
   },
 };
 
-const songFutogo: RawSong = {
+const songFutogo: SongRaw = {
   title: SONGS["不等号"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -2890,7 +2890,7 @@ const songFutogo: RawSong = {
   },
 };
 
-const songHarukanarubhutan: RawSong = {
+const songHarukanarubhutan: SongRaw = {
   title: SONGS["遥かなるブータン"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -2921,7 +2921,7 @@ const songHarukanarubhutan: RawSong = {
   },
 };
 
-const songTsuyogarutsubomi: RawSong = {
+const songTsuyogarutsubomi: SongRaw = {
   title: SONGS["強がる蕾"].title,
   musicVideo: "",
   type: SongType.Solo,
@@ -2945,7 +2945,7 @@ const songTsuyogarutsubomi: RawSong = {
   },
 };
 
-const songKyushamen: RawSong = {
+const songKyushamen: SongRaw = {
   title: SONGS["急斜面"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -2973,7 +2973,7 @@ const songKyushamen: RawSong = {
   },
 };
 
-const songTsuribori: RawSong = {
+const songTsuribori: SongRaw = {
   title: SONGS["釣り堀"].title,
   musicVideo: "",
   type: SongType.Solo,
@@ -2997,7 +2997,7 @@ const songTsuribori: RawSong = {
   },
 };
 
-const songYuutsutofusengamu: RawSong = {
+const songYuutsutofusengamu: SongRaw = {
   title: SONGS["憂鬱と風船ガム"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -3030,7 +3030,7 @@ const songYuutsutofusengamu: RawSong = {
 
 // 13th single
 
-const songHanashitaidarekagairu: RawSong = {
+const songHanashitaidarekagairu: SongRaw = {
   title: SONGS["今、話したい誰かがいる"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -3073,7 +3073,7 @@ const songHanashitaidarekagairu: RawSong = {
   },
 };
 
-const songShittonokenri: RawSong = {
+const songShittonokenri: SongRaw = {
   title: SONGS["嫉妬の権利"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -3121,7 +3121,7 @@ const songShittonokenri: RawSong = {
   },
 };
 
-const songPopipappapa: RawSong = {
+const songPopipappapa: SongRaw = {
   title: SONGS["ポピパッパパー"].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -3164,7 +3164,7 @@ const songPopipappapa: RawSong = {
   },
 };
 
-const songOtonahenochikamichi: RawSong = {
+const songOtonahenochikamichi: SongRaw = {
   title: SONGS["大人への近道"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -3194,7 +3194,7 @@ const songOtonahenochikamichi: RawSong = {
   },
 };
 
-const songKanashiminowasurekata: RawSong = {
+const songKanashiminowasurekata: SongRaw = {
   title: SONGS["悲しみの忘れ方"].title,
   musicVideo: "",
   type: SongType.Selected12,
@@ -3237,7 +3237,7 @@ const songKanashiminowasurekata: RawSong = {
   },
 };
 
-const songSukima: RawSong = {
+const songSukima: SongRaw = {
   title: SONGS["隙間"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -3271,7 +3271,7 @@ const songSukima: RawSong = {
 
 // 12th single
 
-const songTaiyoknock: RawSong = {
+const songTaiyoknock: SongRaw = {
   title: SONGS["太陽ノック"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -3316,7 +3316,7 @@ const songTaiyoknock: RawSong = {
   },
 };
 
-const songWakaregiwa: RawSong = {
+const songWakaregiwa: SongRaw = {
   title: SONGS["別れ際、もっと好きになる"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -3361,7 +3361,7 @@ const songWakaregiwa: RawSong = {
   },
 };
 
-const songMosukoshinoyumewo: RawSong = {
+const songMosukoshinoyumewo: SongRaw = {
   title: SONGS["もう少しの夢"].title,
   musicVideo: "",
   type: SongType.Solo,
@@ -3385,7 +3385,7 @@ const songMosukoshinoyumewo: RawSong = {
   },
 };
 
-const songSakanatachinolovesong: RawSong = {
+const songSakanatachinolovesong: SongRaw = {
   title: SONGS["魚たちのLOVE SONG"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -3414,7 +3414,7 @@ const songSakanatachinolovesong: RawSong = {
   },
 };
 
-const songMuhyojo: RawSong = {
+const songMuhyojo: SongRaw = {
   title: SONGS["無表情"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -3438,7 +3438,7 @@ const songMuhyojo: RawSong = {
   },
 };
 
-const songHanenokioku: RawSong = {
+const songHanenokioku: SongRaw = {
   title: SONGS["羽根の記憶"].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -3481,7 +3481,7 @@ const songHanenokioku: RawSong = {
   },
 };
 
-const songSeifukuwonuide: RawSong = {
+const songSeifukuwonuide: SongRaw = {
   title: SONGS["制服を脱いでサヨナラを…"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -3507,7 +3507,7 @@ const songSeifukuwonuide: RawSong = {
 
 // 11th single
 
-const songInochihautsukushii: RawSong = {
+const songInochihautsukushii: SongRaw = {
   title: SONGS["命は美しい"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -3552,7 +3552,7 @@ const songInochihautsukushii: RawSong = {
   },
 };
 
-const songKimihabokuto: RawSong = {
+const songKimihabokuto: SongRaw = {
   title: SONGS["君は僕と会わない方がよかったのかな"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -3593,7 +3593,7 @@ const songKimihabokuto: RawSong = {
   },
 };
 
-const songArakajimeromance: RawSong = {
+const songArakajimeromance: SongRaw = {
   title: SONGS["あらかじめ語られるロマンス"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -3624,7 +3624,7 @@ const songArakajimeromance: RawSong = {
   },
 };
 
-const songTachinaorichu: RawSong = {
+const songTachinaorichu: SongRaw = {
   title: SONGS["立ち直り中"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -3656,7 +3656,7 @@ const songTachinaorichu: RawSong = {
   },
 };
 
-const songGomennezutto: RawSong = {
+const songGomennezutto: SongRaw = {
   title: SONGS["ごめんね ずっと…"].title,
   musicVideo: "",
   type: SongType.Solo,
@@ -3680,7 +3680,7 @@ const songGomennezutto: RawSong = {
   },
 };
 
-const songBorder: RawSong = {
+const songBorder: SongRaw = {
   title: SONGS["ボーダー"].title,
   musicVideo: "",
   type: SongType.SecondGeneration,
@@ -3713,7 +3713,7 @@ const songBorder: RawSong = {
 
 // 10th single
 
-const songNandomenoaozoraka: RawSong = {
+const songNandomenoaozoraka: SongRaw = {
   title: SONGS["何度目の青空か?"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -3756,7 +3756,7 @@ const songNandomenoaozoraka: RawSong = {
   },
 };
 
-const songAnohibokuha: RawSong = {
+const songAnohibokuha: SongRaw = {
   title: SONGS["あの日 僕は咄嗟に嘘をついた"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -3800,7 +3800,7 @@ const songAnohibokuha: RawSong = {
   },
 };
 
-const songTomawarinoaijo: RawSong = {
+const songTomawarinoaijo: SongRaw = {
   title: SONGS["遠回りの愛情"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -3833,7 +3833,7 @@ const songTomawarinoaijo: RawSong = {
   },
 };
 
-const songKorogattakanewonarase: RawSong = {
+const songKorogattakanewonarase: SongRaw = {
   title: SONGS["転がった鐘を鳴らせ!"].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -3874,7 +3874,7 @@ const songKorogattakanewonarase: RawSong = {
   },
 };
 
-const songWatashiokiru: RawSong = {
+const songWatashiokiru: SongRaw = {
   title: SONGS["私、起きる。"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -3909,7 +3909,7 @@ const songWatashiokiru: RawSong = {
   },
 };
 
-const songTenderdays: RawSong = {
+const songTenderdays: SongRaw = {
   title: SONGS["Tender days"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -3945,7 +3945,7 @@ const songTenderdays: RawSong = {
 
 // 9th single
 
-const songNatsunofreeandeasy: RawSong = {
+const songNatsunofreeandeasy: SongRaw = {
   title: SONGS["夏のFree&Easy"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -3989,7 +3989,7 @@ const songNatsunofreeandeasy: RawSong = {
   },
 };
 
-const songKokoniiruriyu: RawSong = {
+const songKokoniiruriyu: SongRaw = {
   title: SONGS["ここにいる理由"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -4032,7 +4032,7 @@ const songKokoniiruriyu: RawSong = {
   },
 };
 
-const songNanimodekizuni: RawSong = {
+const songNanimodekizuni: SongRaw = {
   title: SONGS["何もできずにそばにいる"].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -4076,7 +4076,7 @@ const songNanimodekizuni: RawSong = {
   },
 };
 
-const songSonosakinodeguchi: RawSong = {
+const songSonosakinodeguchi: SongRaw = {
   title: SONGS["その先の出口!"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -4110,7 +4110,7 @@ const songSonosakinodeguchi: RawSong = {
   },
 };
 
-const songMukuchinalion: RawSong = {
+const songMukuchinalion: SongRaw = {
   title: SONGS["無口なライオン"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -4143,7 +4143,7 @@ const songMukuchinalion: RawSong = {
   },
 };
 
-const songBokugaikanakya: RawSong = {
+const songBokugaikanakya: SongRaw = {
   title: SONGS["僕が行かなきゃ誰が行くんだ?"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -4177,7 +4177,7 @@ const songBokugaikanakya: RawSong = {
 
 // 8th single
 
-const songKizuitarakataomoi: RawSong = {
+const songKizuitarakataomoi: SongRaw = {
   title: SONGS["気づいたら片想い"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -4220,7 +4220,7 @@ const songKizuitarakataomoi: RawSong = {
   },
 };
 
-const songUmaretamamade: RawSong = {
+const songUmaretamamade: SongRaw = {
   title: SONGS["生まれたままで"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -4264,7 +4264,7 @@ const songUmaretamamade: RawSong = {
   },
 };
 
-const songRomancenostart: RawSong = {
+const songRomancenostart: SongRaw = {
   title: SONGS["ロマンスのスタート"].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -4307,7 +4307,7 @@ const songRomancenostart: RawSong = {
   },
 };
 
-const songToikimethod: RawSong = {
+const songToikimethod: SongRaw = {
   title: SONGS["吐息のメソッド"].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -4352,7 +4352,7 @@ const songToikimethod: RawSong = {
   },
 };
 
-const songKodokukyodai: RawSong = {
+const songKodokukyodai: SongRaw = {
   title: SONGS["孤独兄弟"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -4376,7 +4376,7 @@ const songKodokukyodai: RawSong = {
   },
 };
 
-const songDankeschon: RawSong = {
+const songDankeschon: SongRaw = {
   title: SONGS["ダンケシェーン"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -4411,7 +4411,7 @@ const songDankeschon: RawSong = {
 
 // 7th single
 
-const songValletta: RawSong = {
+const songValletta: SongRaw = {
   title: SONGS["バレッタ"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -4455,7 +4455,7 @@ const songValletta: RawSong = {
   },
 };
 
-const songHatsukoinohito: RawSong = {
+const songHatsukoinohito: SongRaw = {
   title: SONGS["初恋の人を今でも"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -4495,7 +4495,7 @@ const songHatsukoinohito: RawSong = {
   },
 };
 
-const songTsukinookisa: RawSong = {
+const songTsukinookisa: SongRaw = {
   title: SONGS["月の大きさ"].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -4539,7 +4539,7 @@ const songTsukinookisa: RawSong = {
   },
 };
 
-const songWatashinotameni: RawSong = {
+const songWatashinotameni: SongRaw = {
   title: SONGS["私のために 誰かのために"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -4569,7 +4569,7 @@ const songWatashinotameni: RawSong = {
   },
 };
 
-const songSonnabakana: RawSong = {
+const songSonnabakana: SongRaw = {
   title: SONGS["そんなバカな…"].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -4616,7 +4616,7 @@ const songSonnabakana: RawSong = {
   },
 };
 
-const songYasashisatoha: RawSong = {
+const songYasashisatoha: SongRaw = {
   title: SONGS["やさしさとは"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -4650,7 +4650,7 @@ const songYasashisatoha: RawSong = {
 
 // 6th single
 
-const songGirlsrule: RawSong = {
+const songGirlsrule: SongRaw = {
   title: SONGS["ガールズルール"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -4693,7 +4693,7 @@ const songGirlsrule: RawSong = {
   },
 };
 
-const songSenpuki: RawSong = {
+const songSenpuki: SongRaw = {
   title: SONGS["扇風機"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -4737,7 +4737,7 @@ const songSenpuki: RawSong = {
   },
 };
 
-const songSekaideichiban: RawSong = {
+const songSekaideichiban: SongRaw = {
   title: SONGS["世界で一番 孤独なLover"].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -4780,7 +4780,7 @@ const songSekaideichiban: RawSong = {
   },
 };
 
-const songKomoriyo: RawSong = {
+const songKomoriyo: SongRaw = {
   title: SONGS["コウモリよ"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -4809,7 +4809,7 @@ const songKomoriyo: RawSong = {
   },
 };
 
-const songHokanohoshikara: RawSong = {
+const songHokanohoshikara: SongRaw = {
   title: SONGS["他の星から"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -4841,7 +4841,7 @@ const songHokanohoshikara: RawSong = {
   },
 };
 
-const sonNingentoiugaki: RawSong = {
+const sonNingentoiugaki: SongRaw = {
   title: SONGS["人間という楽器"].title,
   musicVideo: "",
   type: SongType.FirstGeneration,
@@ -4900,7 +4900,7 @@ const sonNingentoiugaki: RawSong = {
 
 // 5th single
 
-const songKiminonahakibo: RawSong = {
+const songKiminonahakibo: SongRaw = {
   title: SONGS["君の名は希望"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -4943,7 +4943,7 @@ const songKiminonahakibo: RawSong = {
   },
 };
 
-const songjusannichinokiyobi: RawSong = {
+const songjusannichinokiyobi: SongRaw = {
   title: SONGS["13日の金曜日"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -4987,7 +4987,7 @@ const songjusannichinokiyobi: RawSong = {
   },
 };
 
-const songShakism: RawSong = {
+const songShakism: SongRaw = {
   title: SONGS["シャキイズム"].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -5028,7 +5028,7 @@ const songShakism: RawSong = {
   },
 };
 
-const songRomanticIkayaki: RawSong = {
+const songRomanticIkayaki: SongRaw = {
   title: SONGS["ロマンティックいか焼き"].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -5069,7 +5069,7 @@ const songRomanticIkayaki: RawSong = {
   },
 };
 
-const songDekopin: RawSong = {
+const songDekopin: SongRaw = {
   title: SONGS["でこぴん"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -5099,7 +5099,7 @@ const songDekopin: RawSong = {
   },
 };
 
-const songPsychokineses: RawSong = {
+const songPsychokineses: SongRaw = {
   title: SONGS["サイコキネシスの可能性"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -5134,7 +5134,7 @@ const songPsychokineses: RawSong = {
 
 // 4th single
 
-const songSeifukunomannequin: RawSong = {
+const songSeifukunomannequin: SongRaw = {
   title: SONGS["制服のマネキン"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -5177,7 +5177,7 @@ const songSeifukunomannequin: RawSong = {
   },
 };
 
-const songHarunomelody: RawSong = {
+const songHarunomelody: SongRaw = {
   title: SONGS["春のメロディー"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -5221,7 +5221,7 @@ const songHarunomelody: RawSong = {
   },
 };
 
-const songYubiboenkyo: RawSong = {
+const songYubiboenkyo: SongRaw = {
   title: SONGS["指望遠鏡"].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -5264,7 +5264,7 @@ const songYubiboenkyo: RawSong = {
   },
 };
 
-const songYasashisanaramaniatteru: RawSong = {
+const songYasashisanaramaniatteru: SongRaw = {
   title: SONGS["やさしさなら間に合ってる"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -5297,7 +5297,7 @@ const songYasashisanaramaniatteru: RawSong = {
   },
 };
 
-const songKokojanaidokoka: RawSong = {
+const songKokojanaidokoka: SongRaw = {
   title: SONGS["ここじゃないどこか"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -5325,7 +5325,7 @@ const songKokojanaidokoka: RawSong = {
   },
 };
 
-const songShibuyablues: RawSong = {
+const songShibuyablues: SongRaw = {
   title: SONGS["渋谷ブルース"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -5351,7 +5351,7 @@ const songShibuyablues: RawSong = {
 
 // 3rd single
 
-const songHashirebicycle: RawSong = {
+const songHashirebicycle: SongRaw = {
   title: SONGS["走れ!Bicycle"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -5402,7 +5402,7 @@ const songHashirebicycle: RawSong = {
   },
 };
 
-const songNamidagamada: RawSong = {
+const songNamidagamada: SongRaw = {
   title: SONGS["涙がまだ悲しみだった頃"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -5447,7 +5447,7 @@ const songNamidagamada: RawSong = {
   },
 };
 
-const songSekkachinakatatsumuri: RawSong = {
+const songSekkachinakatatsumuri: SongRaw = {
   title: SONGS["せっかちなかたつむり"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -5479,7 +5479,7 @@ const songSekkachinakatatsumuri: RawSong = {
   },
 };
 
-const songHitohanazehashirunoka: RawSong = {
+const songHitohanazehashirunoka: SongRaw = {
   title: SONGS["人はなぜ走るのか?"].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -5525,7 +5525,7 @@ const songHitohanazehashirunoka: RawSong = {
   },
 };
 
-const songOtogadenaiguitar: RawSong = {
+const songOtogadenaiguitar: SongRaw = {
   title: SONGS["音が出ないギター"].title,
   musicVideo: "",
   type: SongType.Coupling,
@@ -5571,7 +5571,7 @@ const songOtogadenaiguitar: RawSong = {
   },
 };
 
-const songKairyunoshimayo: RawSong = {
+const songKairyunoshimayo: SongRaw = {
   title: SONGS["海流の島よ"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -5605,7 +5605,7 @@ const songKairyunoshimayo: RawSong = {
 
 // 2nd single
 
-const songOideshampoo: RawSong = {
+const songOideshampoo: SongRaw = {
   title: SONGS["おいでシャンプー"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -5648,7 +5648,7 @@ const songOideshampoo: RawSong = {
   },
 };
 
-const songOkaminikuchibuewo: RawSong = {
+const songOkaminikuchibuewo: SongRaw = {
   title: SONGS["狼に口笛を"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -5693,7 +5693,7 @@ const songOkaminikuchibuewo: RawSong = {
   },
 };
 
-const songKokoronokusuri: RawSong = {
+const songKokoronokusuri: SongRaw = {
   title: SONGS["心の薬"].title,
   musicVideo: "",
   type: SongType.Coupling,
@@ -5738,7 +5738,7 @@ const songKokoronokusuri: RawSong = {
   },
 };
 
-const songGuzenwoiiwakenishite: RawSong = {
+const songGuzenwoiiwakenishite: SongRaw = {
   title: SONGS["偶然を言い訳にして"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -5767,7 +5767,7 @@ const songGuzenwoiiwakenishite: RawSong = {
   },
 };
 
-const songMizutamamoyo: RawSong = {
+const songMizutamamoyo: SongRaw = {
   title: SONGS["水玉模様"].title,
   musicVideo: "",
   type: SongType.Solo,
@@ -5791,7 +5791,7 @@ const songMizutamamoyo: RawSong = {
   },
 };
 
-const songHouse: RawSong = {
+const songHouse: SongRaw = {
   title: SONGS["ハウス!"].title,
   musicVideo: "",
   type: SongType.Coupling,
@@ -5838,7 +5838,7 @@ const songHouse: RawSong = {
 
 // 1st single
 
-const songGurugurucurtain: RawSong = {
+const songGurugurucurtain: SongRaw = {
   title: SONGS["ぐるぐるカーテン"].title,
   musicVideo: "",
   type: SongType.Title,
@@ -5881,7 +5881,7 @@ const songGurugurucurtain: RawSong = {
   },
 };
 
-const songHidarimurenoyuki: RawSong = {
+const songHidarimurenoyuki: SongRaw = {
   title: SONGS["左胸の勇気"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -5924,7 +5924,7 @@ const songHidarimurenoyuki: RawSong = {
   },
 };
 
-const songNogizakanouta: RawSong = {
+const songNogizakanouta: SongRaw = {
   title: SONGS["乃木坂の詩"].title,
   musicVideo: "",
   type: SongType.Coupling,
@@ -5982,7 +5982,7 @@ const songNogizakanouta: RawSong = {
   },
 };
 
-const songAitakattakamoshirenai: RawSong = {
+const songAitakattakamoshirenai: SongRaw = {
   title: SONGS["会いたかったかもしれない"].title,
   musicVideo: "",
   type: SongType.Coupling,
@@ -6027,7 +6027,7 @@ const songAitakattakamoshirenai: RawSong = {
   },
 };
 
-const songUshinaitakunaikara: RawSong = {
+const songUshinaitakunaikara: SongRaw = {
   title: SONGS["失いたくないから"].title,
   musicVideo: "",
   type: SongType.Coupling,
@@ -6072,7 +6072,7 @@ const songUshinaitakunaikara: RawSong = {
   },
 };
 
-const songShiroikumoninotte: RawSong = {
+const songShiroikumoninotte: SongRaw = {
   title: SONGS["白い雲にのって"].title,
   musicVideo: "",
   type: SongType.Coupling,
@@ -6124,7 +6124,7 @@ const songShiroikumoninotte: RawSong = {
 
 // 5th album songs
 
-const arigachinarenai: RawSong = {
+const arigachinarenai: SongRaw = {
   title: SONGS["ありがちな恋愛"].title,
   musicVideo: "",
   type: SongType.Lead,
@@ -6167,7 +6167,7 @@ const arigachinarenai: RawSong = {
   },
 };
 
-const songMoshikimigainakereba: RawSong = {
+const songMoshikimigainakereba: SongRaw = {
   title: SONGS["もし君がいなければ"].title,
   musicVideo: "",
   type: SongType.Solo,
@@ -6191,7 +6191,7 @@ const songMoshikimigainakereba: RawSong = {
   },
 };
 
-const songKissnoshuriken: RawSong = {
+const songKissnoshuriken: SongRaw = {
   title: SONGS["キスの手裏剣"].title,
   musicVideo: "",
   type: SongType.FourthGeneration,
@@ -6227,7 +6227,7 @@ const songKissnoshuriken: RawSong = {
   },
 };
 
-const songHoozue: RawSong = {
+const songHoozue: SongRaw = {
   title: SONGS["頬杖をついては眠れない"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -6257,7 +6257,7 @@ const songHoozue: RawSong = {
   },
 };
 
-const songPocchito: RawSong = {
+const songPocchito: SongRaw = {
   title: SONGS["ぼっち党"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -6285,7 +6285,7 @@ const songPocchito: RawSong = {
   },
 };
 
-const songSayuringoboshuchu: RawSong = {
+const songSayuringoboshuchu: SongRaw = {
   title: SONGS["さゆりんご募集中"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -6314,7 +6314,7 @@ const songSayuringoboshuchu: RawSong = {
   },
 };
 
-const songGorugonzora: RawSong = {
+const songGorugonzora: SongRaw = {
   title: SONGS["ゴルゴンゾーラ"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -6342,7 +6342,7 @@ const songGorugonzora: RawSong = {
   },
 };
 
-const songZambi: RawSong = {
+const songZambi: SongRaw = {
   title: SONGS["もうすぐ～ザンビ伝説～"].title,
   musicVideo: "",
   type: SongType.Special,
@@ -6390,7 +6390,7 @@ const songZambi: RawSong = {
 
 // 4th album songs
 
-const songJibunnokoto: RawSong = {
+const songJibunnokoto: SongRaw = {
   title: SONGS["自分のこと"].title,
   musicVideo: "",
   type: SongType.Solo,
@@ -6414,7 +6414,7 @@ const songJibunnokoto: RawSong = {
   },
 };
 
-const songUnuborebeach: RawSong = {
+const songUnuborebeach: SongRaw = {
   title: SONGS["自惚れビーチ"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -6453,7 +6453,7 @@ const songUnuborebeach: RawSong = {
   },
 };
 
-const songSonohito: RawSong = {
+const songSonohito: SongRaw = {
   title: SONGS["その女"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -6492,7 +6492,7 @@ const songSonohito: RawSong = {
   },
 };
 
-const songDareyorisobaniitai: RawSong = {
+const songDareyorisobaniitai: SongRaw = {
   title: SONGS["誰よりそばにいたい"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -6533,7 +6533,7 @@ const songDareyorisobaniitai: RawSong = {
 
 // 3rd album songs
 
-const songSkydiving: RawSong = {
+const songSkydiving: SongRaw = {
   title: SONGS["スカイダイビング"].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -6579,7 +6579,7 @@ const songSkydiving: RawSong = {
   },
 };
 
-const songKimigaaoidekureta: RawSong = {
+const songKimigaaoidekureta: SongRaw = {
   title: SONGS["君が扇いでくれた"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -6616,7 +6616,7 @@ const songKimigaaoidekureta: RawSong = {
   },
 };
 
-const songOmoidefirst: RawSong = {
+const songOmoidefirst: SongRaw = {
   title: SONGS["思い出ファースト"].title,
   musicVideo: "",
   type: SongType.ThirdGeneration,
@@ -6653,7 +6653,7 @@ const songOmoidefirst: RawSong = {
   },
 };
 
-const songSetteiondo: RawSong = {
+const songSetteiondo: SongRaw = {
   title: SONGS["設定温度"].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -6725,7 +6725,7 @@ const songSetteiondo: RawSong = {
   },
 };
 
-const songRewindanohi: RawSong = {
+const songRewindanohi: SongRaw = {
   title: SONGS["Rewindあの日"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -6753,7 +6753,7 @@ const songRewindanohi: RawSong = {
   },
 };
 
-const songGomensmoothie: RawSong = {
+const songGomensmoothie: SongRaw = {
   title: SONGS["ごめんね、スムージー"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -6781,7 +6781,7 @@ const songGomensmoothie: RawSong = {
   },
 };
 
-const songMinikuiwatashi: RawSong = {
+const songMinikuiwatashi: SongRaw = {
   title: SONGS["醜い私"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -6809,7 +6809,7 @@ const songMinikuiwatashi: RawSong = {
   },
 };
 
-const songKataikaranoyoni: RawSong = {
+const songKataikaranoyoni: SongRaw = {
   title: SONGS["硬い殻のように抱きしめたい"].title,
   musicVideo: "",
   type: SongType.Solo,
@@ -6833,7 +6833,7 @@ const songKataikaranoyoni: RawSong = {
   },
 };
 
-const songMangetsugakieta: RawSong = {
+const songMangetsugakieta: SongRaw = {
   title: SONGS["満月が消えた"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -6861,7 +6861,7 @@ const songMangetsugakieta: RawSong = {
   },
 };
 
-const songWatabokori: RawSong = {
+const songWatabokori: SongRaw = {
   title: SONGS["ワタボコリ"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -6889,7 +6889,7 @@ const songWatabokori: RawSong = {
   },
 };
 
-const songRyuseidiscotic: RawSong = {
+const songRyuseidiscotic: SongRaw = {
   title: SONGS["流星ディスコティック"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -6913,7 +6913,7 @@ const songRyuseidiscotic: RawSong = {
   },
 };
 
-const songBokyakutobigaku: RawSong = {
+const songBokyakutobigaku: SongRaw = {
   title: SONGS["忘却と美学"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -6939,7 +6939,7 @@ const songBokyakutobigaku: RawSong = {
 
 // 2nd album songs
 
-const songKikkake: RawSong = {
+const songKikkake: SongRaw = {
   title: SONGS["きっかけ"].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -6980,7 +6980,7 @@ const songKikkake: RawSong = {
   },
 };
 
-const songTaiyonikudokarete: RawSong = {
+const songTaiyonikudokarete: SongRaw = {
   title: SONGS["太陽に口説かれて"].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -7021,7 +7021,7 @@ const songTaiyonikudokarete: RawSong = {
   },
 };
 
-const songYokubonoReincarnation: RawSong = {
+const songYokubonoReincarnation: SongRaw = {
   title: SONGS["欲望のリインカーネーション"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -7055,7 +7055,7 @@ const songYokubonoReincarnation: RawSong = {
   },
 };
 
-const songKukikan: RawSong = {
+const songKukikan: SongRaw = {
   title: SONGS["空気感"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -7085,7 +7085,7 @@ const songKukikan: RawSong = {
   },
 };
 
-const songKogoseikibo: RawSong = {
+const songKogoseikibo: SongRaw = {
   title: SONGS["光合成希望"].title,
   musicVideo: "",
   type: SongType.Solo,
@@ -7109,7 +7109,7 @@ const songKogoseikibo: RawSong = {
   },
 };
 
-const songThreefoldchoice: RawSong = {
+const songThreefoldchoice: SongRaw = {
   title: SONGS["Threefold choice"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -7137,7 +7137,7 @@ const songThreefoldchoice: RawSong = {
   },
 };
 
-const songTeitaionnokisu: RawSong = {
+const songTeitaionnokisu: SongRaw = {
   title: SONGS["低体温のキス"].title,
   musicVideo: "",
   type: SongType.Solo,
@@ -7161,7 +7161,7 @@ const songTeitaionnokisu: RawSong = {
   },
 };
 
-const songShitsurenshitara: RawSong = {
+const songShitsurenshitara: SongRaw = {
   title: SONGS["失恋したら、顔を洗え!"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -7185,7 +7185,7 @@ const songShitsurenshitara: RawSong = {
   },
 };
 
-const songKakigorinokataomoi: RawSong = {
+const songKakigorinokataomoi: SongRaw = {
   title: SONGS["かき氷の片想い"].title,
   musicVideo: "",
   type: SongType.SecondGeneration,
@@ -7221,7 +7221,7 @@ const songKakigorinokataomoi: RawSong = {
   },
 };
 
-const songKanjorokugosen: RawSong = {
+const songKanjorokugosen: SongRaw = {
   title: SONGS["環状六号線"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -7249,7 +7249,7 @@ const songKanjorokugosen: RawSong = {
   },
 };
 
-const songKuchiyakusoku: RawSong = {
+const songKuchiyakusoku: SongRaw = {
   title: SONGS["口約束"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -7280,7 +7280,7 @@ const songKuchiyakusoku: RawSong = {
 
 // 1st album songs
 
-const songDarekahamikata: RawSong = {
+const songDarekahamikata: SongRaw = {
   title: SONGS["誰かは味方"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -7308,7 +7308,7 @@ const songDarekahamikata: RawSong = {
   },
 };
 
-const songKakumeinouma: RawSong = {
+const songKakumeinouma: SongRaw = {
   title: SONGS["革命の馬"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -7339,7 +7339,7 @@ const songKakumeinouma: RawSong = {
   },
 };
 
-const songBokugairubasho: RawSong = {
+const songBokugairubasho: SongRaw = {
   title: SONGS["僕がいる場所"].title,
   musicVideo: "",
   type: SongType.Selected,
@@ -7380,7 +7380,7 @@ const songBokugairubasho: RawSong = {
   },
 };
 
-const songAnatanotamenihikitai: RawSong = {
+const songAnatanotamenihikitai: SongRaw = {
   title: SONGS["あなたのために弾きたい"].title,
   musicVideo: "",
   type: SongType.Solo,
@@ -7404,7 +7404,7 @@ const songAnatanotamenihikitai: RawSong = {
   },
 };
 
-const songKeishasuru: RawSong = {
+const songKeishasuru: SongRaw = {
   title: SONGS["傾斜する"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -7445,7 +7445,7 @@ const songKeishasuru: RawSong = {
   },
 };
 
-const songNazonorakugaki: RawSong = {
+const songNazonorakugaki: SongRaw = {
   title: SONGS["なぞの落書き"].title,
   musicVideo: "",
   type: SongType.Unit,
@@ -7473,7 +7473,7 @@ const songNazonorakugaki: RawSong = {
   },
 };
 
-const songJiyunokanata: RawSong = {
+const songJiyunokanata: SongRaw = {
   title: SONGS["自由の彼方"].title,
   musicVideo: "",
   type: SongType.Under,
@@ -7522,7 +7522,7 @@ const songJiyunokanata: RawSong = {
   },
 };
 
-const songHitoriyogari: RawSong = {
+const songHitoriyogari: SongRaw = {
   title: SONGS["ひとりよがり"].title,
   musicVideo: "",
   type: SongType.Solo,
@@ -7546,7 +7546,7 @@ const songHitoriyogari: RawSong = {
   },
 };
 
-export const rawSongs: RawSong[] = [
+export const rawSongs: SongsRawArray = [
   songKaerimichi,
   songJikochu,
   songSyncronicity,

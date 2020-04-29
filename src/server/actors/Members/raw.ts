@@ -1,15 +1,15 @@
-import { RawMember } from "../models/IMember";
+import { MemberRaw, MembersRawArray } from "server/actors/Members/models";
+import { MemberName } from "server/constants/names";
+import { GlowStickColorType } from "client/utils/constants";
 import {
-  BloodType,
-  GlowStickColorType,
-  PhotoAlbumType,
-  SocialMedia,
-  Birthplace,
   JoinedGenerationType,
-} from "../utils/constants";
-import { MemberName } from "./constants/names";
+  BloodType,
+  Birthplace,
+  SocialMedia,
+  PhotoAlbumType,
+} from "server/utils/constants";
 
-const akimotomanatsu: RawMember = {
+const akimotomanatsu: MemberRaw = {
   name: MemberName.AkimotoManatsu,
   nameNotations: {
     lastName: "秋元",
@@ -62,7 +62,7 @@ const akimotomanatsu: RawMember = {
   },
 };
 
-const ikutaerika: RawMember = {
+const ikutaerika: MemberRaw = {
   name: MemberName.IkutaErika,
   nameNotations: {
     lastName: "生田",
@@ -115,7 +115,7 @@ const ikutaerika: RawMember = {
   },
 };
 
-const ikomarina: RawMember = {
+const ikomarina: MemberRaw = {
   name: MemberName.IkomaRina,
   nameNotations: {
     lastName: "生駒",
@@ -162,7 +162,7 @@ const ikomarina: RawMember = {
   },
 };
 
-const itoukarin: RawMember = {
+const itoukarin: MemberRaw = {
   name: MemberName.ItouKarin,
   nameNotations: {
     lastName: "伊藤",
@@ -202,7 +202,7 @@ const itoukarin: RawMember = {
   },
 };
 
-const itoujunna: RawMember = {
+const itoujunna: MemberRaw = {
   name: MemberName.ItouJunna,
   nameNotations: {
     lastName: "伊藤",
@@ -242,7 +242,7 @@ const itoujunna: RawMember = {
   },
 };
 
-const itouriria: RawMember = {
+const itouriria: MemberRaw = {
   name: MemberName.ItouRiria,
   nameNotations: {
     lastName: "伊藤",
@@ -278,7 +278,7 @@ const itouriria: RawMember = {
   },
 };
 
-const inouesayuri: RawMember = {
+const inouesayuri: MemberRaw = {
   name: MemberName.InoueSayuri,
   nameNotations: {
     lastName: "井上",
@@ -325,7 +325,7 @@ const inouesayuri: RawMember = {
   },
 };
 
-const iwamotorenka: RawMember = {
+const iwamotorenka: MemberRaw = {
   name: MemberName.IwamotoRenka,
   nameNotations: {
     lastName: "岩本",
@@ -361,7 +361,7 @@ const iwamotorenka: RawMember = {
   },
 };
 
-const umezawaminami: RawMember = {
+const umezawaminami: MemberRaw = {
   name: MemberName.UmezawaMinami,
   nameNotations: {
     lastName: "梅澤",
@@ -397,7 +397,7 @@ const umezawaminami: RawMember = {
   },
 };
 
-const etoumisa: RawMember = {
+const etoumisa: MemberRaw = {
   name: MemberName.EtouMisa,
   nameNotations: {
     lastName: "衛藤",
@@ -460,7 +460,7 @@ const etoumisa: RawMember = {
   },
 };
 
-const oozonomomoko: RawMember = {
+const oozonomomoko: MemberRaw = {
   name: MemberName.OozonoMomoko,
   nameNotations: {
     lastName: "大園",
@@ -496,7 +496,7 @@ const oozonomomoko: RawMember = {
   },
 };
 
-const kawagohina: RawMember = {
+const kawagohina: MemberRaw = {
   name: MemberName.KawagoHina,
   nameNotations: {
     lastName: "川後",
@@ -536,7 +536,7 @@ const kawagohina: RawMember = {
   },
 };
 
-const kitanohinako: RawMember = {
+const kitanohinako: MemberRaw = {
   name: MemberName.KitanoHinako,
   nameNotations: {
     lastName: "北野",
@@ -583,7 +583,7 @@ const kitanohinako: RawMember = {
   },
 };
 
-const kuboshiori: RawMember = {
+const kuboshiori: MemberRaw = {
   name: MemberName.KuboShiori,
   nameNotations: {
     lastName: "久保",
@@ -619,7 +619,7 @@ const kuboshiori: RawMember = {
   },
 };
 
-const saitouasuka: RawMember = {
+const saitouasuka: MemberRaw = {
   name: MemberName.SaitouAsuka,
   nameNotations: {
     lastName: "齋藤",
@@ -666,7 +666,7 @@ const saitouasuka: RawMember = {
   },
 };
 
-const saitouyuuri: RawMember = {
+const saitouyuuri: MemberRaw = {
   name: MemberName.SaitouYuuri,
   nameNotations: {
     lastName: "斉藤",
@@ -713,7 +713,7 @@ const saitouyuuri: RawMember = {
   },
 };
 
-const sakaguchitamami: RawMember = {
+const sakaguchitamami: MemberRaw = {
   name: MemberName.SakaguchiTamami,
   nameNotations: {
     lastName: "阪口",
@@ -749,7 +749,7 @@ const sakaguchitamami: RawMember = {
   },
 };
 
-const sakuraireika: RawMember = {
+const sakuraireika: MemberRaw = {
   name: MemberName.SakuraiReika,
   nameNotations: {
     lastName: "桜井",
@@ -802,7 +802,7 @@ const sakuraireika: RawMember = {
   },
 };
 
-const sasakikotoko: RawMember = {
+const sasakikotoko: MemberRaw = {
   name: MemberName.SasakiKotoko,
   nameNotations: {
     lastName: "佐々木",
@@ -838,7 +838,7 @@ const sasakikotoko: RawMember = {
   },
 };
 
-const satoukaede: RawMember = {
+const satoukaede: MemberRaw = {
   name: MemberName.SatouKaede,
   nameNotations: {
     lastName: "佐藤",
@@ -874,7 +874,7 @@ const satoukaede: RawMember = {
   },
 };
 
-const shiraishimai: RawMember = {
+const shiraishimai: MemberRaw = {
   name: MemberName.ShiraishiMai,
   nameNotations: {
     lastName: "白石",
@@ -933,7 +933,7 @@ const shiraishimai: RawMember = {
   },
 };
 
-const shinuchimai: RawMember = {
+const shinuchimai: MemberRaw = {
   name: MemberName.ShinuchiMai,
   nameNotations: {
     lastName: "新内",
@@ -980,7 +980,7 @@ const shinuchimai: RawMember = {
   },
 };
 
-const suzukiayane: RawMember = {
+const suzukiayane: MemberRaw = {
   name: MemberName.SuzukiAyane,
   nameNotations: {
     lastName: "鈴木",
@@ -1020,7 +1020,7 @@ const suzukiayane: RawMember = {
   },
 };
 
-const takayamakazumi: RawMember = {
+const takayamakazumi: MemberRaw = {
   name: MemberName.TakayamaKazumi,
   nameNotations: {
     lastName: "高山",
@@ -1077,7 +1077,7 @@ const takayamakazumi: RawMember = {
   },
 };
 
-const teradaranze: RawMember = {
+const teradaranze: MemberRaw = {
   name: MemberName.TeradaRanze,
   nameNotations: {
     lastName: "寺田",
@@ -1113,7 +1113,7 @@ const teradaranze: RawMember = {
   },
 };
 
-const nakadakana: RawMember = {
+const nakadakana: MemberRaw = {
   name: MemberName.NakadaKana,
   nameNotations: {
     lastName: "中田",
@@ -1153,7 +1153,7 @@ const nakadakana: RawMember = {
   },
 };
 
-const nakamurareno: RawMember = {
+const nakamurareno: MemberRaw = {
   name: MemberName.NakamuraReno,
   nameNotations: {
     lastName: "中村",
@@ -1189,7 +1189,7 @@ const nakamurareno: RawMember = {
   },
 };
 
-const nishinonanase: RawMember = {
+const nishinonanase: MemberRaw = {
   name: MemberName.NishinoNanase,
   nameNotations: {
     lastName: "西野",
@@ -1252,7 +1252,7 @@ const nishinonanase: RawMember = {
   },
 };
 
-const noujouami: RawMember = {
+const noujouami: MemberRaw = {
   name: MemberName.NoujouAmi,
   nameNotations: {
     lastName: "能條",
@@ -1288,7 +1288,7 @@ const noujouami: RawMember = {
   },
 };
 
-const higuchihina: RawMember = {
+const higuchihina: MemberRaw = {
   name: MemberName.HiguchiHina,
   nameNotations: {
     lastName: "樋口",
@@ -1328,7 +1328,7 @@ const higuchihina: RawMember = {
   },
 };
 
-const hoshinominami: RawMember = {
+const hoshinominami: MemberRaw = {
   name: MemberName.HoshinoMinami,
   nameNotations: {
     lastName: "星野",
@@ -1375,7 +1375,7 @@ const hoshinominami: RawMember = {
   },
 };
 
-const horimiona: RawMember = {
+const horimiona: MemberRaw = {
   name: MemberName.HoriMiona,
   nameNotations: {
     lastName: "堀",
@@ -1428,7 +1428,7 @@ const horimiona: RawMember = {
   },
 };
 
-const matsumurasayuri: RawMember = {
+const matsumurasayuri: MemberRaw = {
   name: MemberName.MatsumuraSayuri,
   nameNotations: {
     lastName: "松村",
@@ -1479,7 +1479,7 @@ const matsumurasayuri: RawMember = {
   },
 };
 
-const mukaihazuki: RawMember = {
+const mukaihazuki: MemberRaw = {
   name: MemberName.MukaiHazuki,
   nameNotations: {
     lastName: "向井",
@@ -1515,7 +1515,7 @@ const mukaihazuki: RawMember = {
   },
 };
 
-const yamazakirena: RawMember = {
+const yamazakirena: MemberRaw = {
   name: MemberName.YamazakiRena,
   nameNotations: {
     lastName: "山崎",
@@ -1555,7 +1555,7 @@ const yamazakirena: RawMember = {
   },
 };
 
-const yamashitamizuki: RawMember = {
+const yamashitamizuki: MemberRaw = {
   name: MemberName.YamashitaMizuki,
   nameNotations: {
     lastName: "山下",
@@ -1598,7 +1598,7 @@ const yamashitamizuki: RawMember = {
   },
 };
 
-const yoshidaayanochristie: RawMember = {
+const yoshidaayanochristie: MemberRaw = {
   name: MemberName.YoshidaAyanoChristie,
   nameNotations: {
     lastName: "吉田",
@@ -1634,7 +1634,7 @@ const yoshidaayanochristie: RawMember = {
   },
 };
 
-const yodayuuki: RawMember = {
+const yodayuuki: MemberRaw = {
   name: MemberName.YodaYuuki,
   nameNotations: {
     lastName: "与田",
@@ -1683,7 +1683,7 @@ const yodayuuki: RawMember = {
   },
 };
 
-const wakatsukiyumi: RawMember = {
+const wakatsukiyumi: MemberRaw = {
   name: MemberName.WakatsukiYumi,
   nameNotations: {
     lastName: "若月",
@@ -1734,7 +1734,7 @@ const wakatsukiyumi: RawMember = {
   },
 };
 
-const watanabemiria: RawMember = {
+const watanabemiria: MemberRaw = {
   name: MemberName.WatanabeMiria,
   nameNotations: {
     lastName: "渡辺",
@@ -1774,7 +1774,7 @@ const watanabemiria: RawMember = {
   },
 };
 
-const wadamaaya: RawMember = {
+const wadamaaya: MemberRaw = {
   name: MemberName.WadaMaaya,
   nameNotations: {
     lastName: "和田",
@@ -1814,7 +1814,7 @@ const wadamaaya: RawMember = {
   },
 };
 
-const endousakura: RawMember = {
+const endousakura: MemberRaw = {
   name: MemberName.EndouSakura,
   nameNotations: {
     lastName: "遠藤",
@@ -1850,7 +1850,7 @@ const endousakura: RawMember = {
   },
 };
 
-const kakiharuka: RawMember = {
+const kakiharuka: MemberRaw = {
   name: MemberName.KakiHaruka,
   nameNotations: {
     lastName: "賀喜",
@@ -1886,7 +1886,7 @@ const kakiharuka: RawMember = {
   },
 };
 
-const kakehashisayaka: RawMember = {
+const kakehashisayaka: MemberRaw = {
   name: MemberName.KakehashiSayaka,
   nameNotations: {
     lastName: "掛橋",
@@ -1922,7 +1922,7 @@ const kakehashisayaka: RawMember = {
   },
 };
 
-const kanagawasaya: RawMember = {
+const kanagawasaya: MemberRaw = {
   name: MemberName.KanagawaSaya,
   nameNotations: {
     lastName: "金川",
@@ -1958,7 +1958,7 @@ const kanagawasaya: RawMember = {
   },
 };
 
-const kitagawayuri: RawMember = {
+const kitagawayuri: MemberRaw = {
   name: MemberName.KitagawaYuri,
   nameNotations: {
     lastName: "北川",
@@ -1994,7 +1994,7 @@ const kitagawayuri: RawMember = {
   },
 };
 
-const shibatayuna: RawMember = {
+const shibatayuna: MemberRaw = {
   name: MemberName.ShibataYuna,
   nameNotations: {
     lastName: "柴田",
@@ -2030,7 +2030,7 @@ const shibatayuna: RawMember = {
   },
 };
 
-const seimiyarei: RawMember = {
+const seimiyarei: MemberRaw = {
   name: MemberName.SeimiyaRei,
   nameNotations: {
     lastName: "清宮",
@@ -2066,7 +2066,7 @@ const seimiyarei: RawMember = {
   },
 };
 
-const tamuramayu: RawMember = {
+const tamuramayu: MemberRaw = {
   name: MemberName.TamuraMayu,
   nameNotations: {
     lastName: "田村",
@@ -2102,7 +2102,7 @@ const tamuramayu: RawMember = {
   },
 };
 
-const tsutsuiayame: RawMember = {
+const tsutsuiayame: MemberRaw = {
   name: MemberName.TsutsuiAyame,
   nameNotations: {
     lastName: "筒井",
@@ -2138,7 +2138,7 @@ const tsutsuiayame: RawMember = {
   },
 };
 
-const hayakawaseira: RawMember = {
+const hayakawaseira: MemberRaw = {
   name: MemberName.HayakawaSeira,
   nameNotations: {
     lastName: "早川",
@@ -2174,7 +2174,7 @@ const hayakawaseira: RawMember = {
   },
 };
 
-const yakubomio: RawMember = {
+const yakubomio: MemberRaw = {
   name: MemberName.YakuboMio,
   nameNotations: {
     lastName: "矢久保",
@@ -2210,7 +2210,7 @@ const yakubomio: RawMember = {
   },
 };
 
-const kuromiharuka: RawMember = {
+const kuromiharuka: MemberRaw = {
   name: MemberName.KuromiHaruka,
   nameNotations: {
     lastName: "黒見",
@@ -2246,7 +2246,7 @@ const kuromiharuka: RawMember = {
   },
 };
 
-const satourika: RawMember = {
+const satourika: MemberRaw = {
   name: MemberName.SatouRika,
   nameNotations: {
     lastName: "佐藤",
@@ -2282,7 +2282,7 @@ const satourika: RawMember = {
   },
 };
 
-const hayashiruna: RawMember = {
+const hayashiruna: MemberRaw = {
   name: MemberName.HayashiRuna,
   nameNotations: {
     lastName: "林",
@@ -2318,7 +2318,7 @@ const hayashiruna: RawMember = {
   },
 };
 
-const matsuomiyu: RawMember = {
+const matsuomiyu: MemberRaw = {
   name: MemberName.MatsuoMiyu,
   nameNotations: {
     lastName: "松尾",
@@ -2354,7 +2354,7 @@ const matsuomiyu: RawMember = {
   },
 };
 
-const yumikinao: RawMember = {
+const yumikinao: MemberRaw = {
   name: MemberName.YumikiNao,
   nameNotations: {
     lastName: "弓木",
@@ -2390,7 +2390,7 @@ const yumikinao: RawMember = {
   },
 };
 
-const sagaraiori: RawMember = {
+const sagaraiori: MemberRaw = {
   name: MemberName.SagaraIori,
   nameNotations: {
     lastName: "相楽",
@@ -2430,7 +2430,7 @@ const sagaraiori: RawMember = {
   },
 };
 
-const saitouchiharu: RawMember = {
+const saitouchiharu: MemberRaw = {
   name: MemberName.SaitouChiharu,
   nameNotations: {
     lastName: "斎藤",
@@ -2466,7 +2466,7 @@ const saitouchiharu: RawMember = {
   },
 };
 
-const kawamuramahiro: RawMember = {
+const kawamuramahiro: MemberRaw = {
   name: MemberName.KawamuraMahiro,
   nameNotations: {
     lastName: "川村",
@@ -2502,7 +2502,7 @@ const kawamuramahiro: RawMember = {
   },
 };
 
-const nakamotohimeka: RawMember = {
+const nakamotohimeka: MemberRaw = {
   name: MemberName.NakamotoHimeka,
   nameNotations: {
     lastName: "中元",
@@ -2538,7 +2538,7 @@ const nakamotohimeka: RawMember = {
   },
 };
 
-const itoumarika: RawMember = {
+const itoumarika: MemberRaw = {
   name: MemberName.ItouMarika,
   nameNotations: {
     lastName: "伊藤",
@@ -2578,7 +2578,7 @@ const itoumarika: RawMember = {
   },
 };
 
-const hashimotonanami: RawMember = {
+const hashimotonanami: MemberRaw = {
   name: MemberName.HashimotoNanami,
   nameNotations: {
     lastName: "橋本",
@@ -2618,7 +2618,7 @@ const hashimotonanami: RawMember = {
   },
 };
 
-const fukagawamai: RawMember = {
+const fukagawamai: MemberRaw = {
   name: MemberName.FukagawaMai,
   nameNotations: {
     lastName: "深川",
@@ -2667,7 +2667,7 @@ const fukagawamai: RawMember = {
   },
 };
 
-const nagashimaseira: RawMember = {
+const nagashimaseira: MemberRaw = {
   name: MemberName.NagashimaSeira,
   nameNotations: {
     lastName: "永島",
@@ -2707,7 +2707,7 @@ const nagashimaseira: RawMember = {
   },
 };
 
-const matsuirena: RawMember = {
+const matsuirena: MemberRaw = {
   name: MemberName.MatsuiRena,
   nameNotations: {
     lastName: "松井",
@@ -2747,7 +2747,7 @@ const matsuirena: RawMember = {
   },
 };
 
-const hatanakaseira: RawMember = {
+const hatanakaseira: MemberRaw = {
   name: MemberName.HatanakaSeira,
   nameNotations: {
     lastName: "畠中",
@@ -2783,7 +2783,7 @@ const hatanakaseira: RawMember = {
   },
 };
 
-const yamatorina: RawMember = {
+const yamatorina: MemberRaw = {
   name: MemberName.YamatoRina,
   nameNotations: {
     lastName: "大和",
@@ -2810,7 +2810,7 @@ const yamatorina: RawMember = {
   },
 };
 
-const itounene: RawMember = {
+const itounene: MemberRaw = {
   name: MemberName.ItouNene,
   nameNotations: {
     lastName: "伊藤",
@@ -2846,7 +2846,7 @@ const itounene: RawMember = {
   },
 };
 
-const yonetokukyouka: RawMember = {
+const yonetokukyouka: MemberRaw = {
   name: MemberName.YonetokuKyouka,
   nameNotations: {
     lastName: "米徳",
@@ -2873,7 +2873,7 @@ const yonetokukyouka: RawMember = {
   },
 };
 
-const yadarisako: RawMember = {
+const yadarisako: MemberRaw = {
   name: MemberName.YadaRisako,
   nameNotations: {
     lastName: "矢田",
@@ -2900,7 +2900,7 @@ const yadarisako: RawMember = {
   },
 };
 
-const ichikirena: RawMember = {
+const ichikirena: MemberRaw = {
   name: MemberName.IchikiRena,
   nameNotations: {
     lastName: "市來",
@@ -2932,7 +2932,7 @@ const ichikirena: RawMember = {
   },
 };
 
-const nishikawananami: RawMember = {
+const nishikawananami: MemberRaw = {
   name: MemberName.NishikawaNanami,
   nameNotations: {
     lastName: "西川",
@@ -2959,7 +2959,7 @@ const nishikawananami: RawMember = {
   },
 };
 
-const miyazawaseira: RawMember = {
+const miyazawaseira: MemberRaw = {
   name: MemberName.MiyazawaSeira,
   nameNotations: {
     lastName: "宮澤",
@@ -2999,7 +2999,7 @@ const miyazawaseira: RawMember = {
   },
 };
 
-const kashiwayukina: RawMember = {
+const kashiwayukina: MemberRaw = {
   name: MemberName.KashiwaYukina,
   nameNotations: {
     lastName: "柏",
@@ -3035,7 +3035,7 @@ const kashiwayukina: RawMember = {
   },
 };
 
-const andoumikumo: RawMember = {
+const andoumikumo: MemberRaw = {
   name: MemberName.AndouMikumo,
   nameNotations: {
     lastName: "安藤",
@@ -3062,7 +3062,7 @@ const andoumikumo: RawMember = {
   },
 };
 
-const iwaseyumiko: RawMember = {
+const iwaseyumiko: MemberRaw = {
   name: MemberName.IwaseYumiko,
   nameNotations: {
     lastName: "岩瀬",
@@ -3098,7 +3098,7 @@ const iwaseyumiko: RawMember = {
   },
 };
 
-export const rawMembers: RawMember[] = [
+export const rawMembers: MembersRawArray = [
   akimotomanatsu,
   ikutaerika,
   itoukarin,

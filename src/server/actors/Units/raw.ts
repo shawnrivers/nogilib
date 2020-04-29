@@ -1,8 +1,8 @@
-import { RawUnit } from "../models/IUnit";
-import { UnitType } from "../utils/constants";
-import { MemberName } from "./constants/names";
+import { UnitRaw, UnitsRawArray } from "server/actors/Units/models";
+import { MemberName } from "server/constants/names";
+import { UnitType } from "server/utils/constants";
 
-const whiteHigh: RawUnit = {
+const whiteHigh: UnitRaw = {
   name: "WHITE HIGH",
   members: [MemberName.ShiraishiMai, MemberName.TakayamaKazumi],
   type: UnitType.Unit,
@@ -10,21 +10,21 @@ const whiteHigh: RawUnit = {
     "白石の「白」、高山の「高」をそれぞれ英語表記にした「WHITE」「HIGH」の組み合わせ",
 };
 
-const kodokukyoudai: RawUnit = {
+const kodokukyoudai: UnitRaw = {
   name: "孤独兄弟",
   members: [MemberName.ShiraishiMai, MemberName.HashimotoNanami],
   type: UnitType.Unit,
   description: "",
 };
 
-const karaageshimai: RawUnit = {
+const karaageshimai: UnitRaw = {
   name: "からあげ姉妹",
   members: [MemberName.IkutaErika, MemberName.MatsumuraSayuri],
   type: UnitType.Unit,
   description: "",
 };
 
-const cinqEtoiles: RawUnit = {
+const cinqEtoiles: UnitRaw = {
   name: "サンクエトワール",
   members: [
     MemberName.KitanoHinako,
@@ -38,7 +38,7 @@ const cinqEtoiles: RawUnit = {
     "13thシングルのアンダーメンバーより選抜。「サンクエトワール」とはフランス語で「五つ星」という意味",
 };
 
-const joshikouQuartet: RawUnit = {
+const joshikouQuartet: UnitRaw = {
   name: "女子校カルテット",
   members: [
     MemberName.AkimotoManatsu,
@@ -50,7 +50,7 @@ const joshikouQuartet: RawUnit = {
   description: "女子高に通っていたメンバーで結成",
 };
 
-const aneosaka: RawUnit = {
+const aneosaka: UnitRaw = {
   name: "姉御坂",
   members: [
     MemberName.EtouMisa,
@@ -62,7 +62,7 @@ const aneosaka: RawUnit = {
   description: "グループ1期生年長メンバーで結成",
 };
 
-const nasuka: RawUnit = {
+const nasuka: UnitRaw = {
   name: "ナスカ",
   members: [
     MemberName.ItouMarika,
@@ -73,7 +73,7 @@ const nasuka: RawUnit = {
   description: "ナナセの「ナ」、アスカの「ス」、マリカの「カ」の組み合わせ",
 };
 
-const kasumigusa: RawUnit = {
+const kasumigusa: UnitRaw = {
   name: "かすみ草",
   members: [
     MemberName.IkomaRina,
@@ -86,7 +86,7 @@ const kasumigusa: RawUnit = {
     "かすみ草の花言葉は「名脇役」。主役を影で支える力のあるメンバーという意味が込められている",
 };
 
-const dontWorry: RawUnit = {
+const dontWorry: UnitRaw = {
   name: "藤桜梨",
   members: [
     MemberName.IkutaErika,
@@ -97,7 +97,7 @@ const dontWorry: RawUnit = {
   description: "ドンウォーリー",
 };
 
-const imoutozaka: RawUnit = {
+const imoutozaka: UnitRaw = {
   name: "いもうと坂",
   members: [
     MemberName.OozonoMomoko,
@@ -109,7 +109,7 @@ const imoutozaka: RawUnit = {
   description: "",
 };
 
-const sayuringoGundan: RawUnit = {
+const sayuringoGundan: UnitRaw = {
   name: "さゆりんご軍団",
   members: [
     MemberName.MatsumuraSayuri,
@@ -121,7 +121,7 @@ const sayuringoGundan: RawUnit = {
   description: "",
 };
 
-const manatsusanRespectGundan: RawUnit = {
+const manatsusanRespectGundan: UnitRaw = {
   name: "真夏さんリスペクト軍団",
   members: [
     MemberName.AkimotoManatsu,
@@ -133,7 +133,7 @@ const manatsusanRespectGundan: RawUnit = {
   description: "",
 };
 
-const wakasamaGundan: RawUnit = {
+const wakasamaGundan: UnitRaw = {
   name: "若様軍団",
   members: [
     MemberName.WakatsukiYumi,
@@ -145,7 +145,7 @@ const wakasamaGundan: RawUnit = {
   description: "4名に共通する一文字「美」から若月が3期生を結集",
 };
 
-const inumen: RawUnit = {
+const inumen: UnitRaw = {
   name: "犬メン",
   members: [
     MemberName.SakuraiReika,
@@ -161,7 +161,7 @@ const inumen: RawUnit = {
   description: "舞台『すべての犬は天国へ行く』出演メンバーで構成",
 };
 
-const suika: RawUnit = {
+const suika: UnitRaw = {
   name: "スイカ",
   members: [
     MemberName.ItouKarin,
@@ -174,7 +174,7 @@ const suika: RawUnit = {
   description: "",
 };
 
-const tulip: RawUnit = {
+const tulip: UnitRaw = {
   name: "チューリップ",
   members: [
     MemberName.NoujouAmi,
@@ -189,7 +189,7 @@ const tulip: RawUnit = {
   description: "母体は「チームD (ディズニー好き)」 (和田を除くメンバー)",
 };
 
-export const rawUnits: RawUnit[] = [
+export const rawUnits: UnitsRawArray = [
   whiteHigh,
   kodokukyoudai,
   karaageshimai,
