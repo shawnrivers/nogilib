@@ -9,6 +9,7 @@ import { rawSongs } from "./editor/songs";
 import { Units } from "server/actors/Units/class";
 import { Albums } from "server/actors/Albums/class";
 import { arrayToObject } from "server/utils/arrays";
+import { Singles } from "server/actors/Singles/class";
 
 // Initialize raw data to result data type.
 
@@ -19,6 +20,7 @@ const songs = UpdateSongs.initializeSongs(rawSongs);
 
 const unitsConverter = new Units();
 const albumsConverter = new Albums();
+const singlesConverter = new Singles();
 
 // Process the raw data.
 
@@ -50,11 +52,15 @@ UpdateCds.flatArtworksToArray(albums);
 
 const songsArray = Object.values(songs);
 const membersArray = Object.values(members);
-const singlesArray = Object.values(singles);
+// const singlesArray = Object.values(singles);
 // const albumsArray = Object.values(albums);
 // const unitsArray = Object.values(units);
 const unitsArray = unitsConverter.convertUnits({ songsArray: rawSongs });
 const albumsArray = albumsConverter.convertAlbums({
+  songsRawObj: arrayToObject(rawSongs, "title"),
+  membersRawObj: arrayToObject(rawMembers, "name"),
+});
+const singlesArray = singlesConverter.convertSingles({
   songsRawObj: arrayToObject(rawSongs, "title"),
   membersRawObj: arrayToObject(rawMembers, "name"),
 });

@@ -65,7 +65,7 @@ export class Albums {
       number: albumRaw.number,
       release: albumRaw.release,
       shopping: albumRaw.shopping,
-      artworks: CdConverters.convertAlbumArtworks({
+      artworks: CdConverters.convertCdArtworks({
         cdArtworkTypes: albumRaw.artworkTypes,
         cdHasArtworks: albumRaw.hasArtworks,
         cdNumber: albumRaw.number,

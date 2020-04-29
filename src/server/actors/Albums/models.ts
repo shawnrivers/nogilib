@@ -8,7 +8,5 @@ export type AlbumResult = CdResult & {
 };
 
 export type AlbumsRawArray = AlbumRaw[];
-export type AlbumsRawObj = {
-  [key: string]: AlbumRaw;
-};
+export type AlbumsRawObj = { [key: string]: AlbumRaw };
 export type AlbumsResultArray = AlbumResult[];

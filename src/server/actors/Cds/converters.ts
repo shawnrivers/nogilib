@@ -51,7 +51,7 @@ type ConvertCdArtworks = (props: {
   cdKind: "album" | "single";
 }) => CdResult["artworks"];
 
-export const convertAlbumArtworks: ConvertCdArtworks = ({
+export const convertCdArtworks: ConvertCdArtworks = ({
   cdArtworkTypes,
   cdHasArtworks,
   cdNumber,
