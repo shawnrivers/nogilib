@@ -9,60 +9,47 @@ type UnitRaw = {
   type: UnitType;
   description: string;
 };
-
-type UnitResult = {
-  name: string;
-  members: MemberName[];
-  type: UnitType;
+type UnitResult = UnitRaw & {
   songs: string[];
-  description: string;
 };
 
 export type UnitsRawObj = {
   [key: string]: UnitRaw;
 };
 export type UnitsRawArray = UnitRaw[];
-
 export type UnitsResultArray = UnitResult[];
 
-export class UnitsConverter {
-  private rawDataObj: UnitsRawObj;
+export class Units {
   private rawDataArray: UnitsRawArray;
+  private rawDataObj: UnitsRawObj;
   private resultData: UnitsResultArray;
 
-  public constructor(songsArray: any[]) {
-    this.rawDataObj = arrayToObject(rawUnits, "name");
+  public constructor() {
     this.rawDataArray = rawUnits;
-    this.resultData = this.convertUnits({
-      unitsRawArray: this.rawDataArray,
-      songsArray,
-    });
+    this.rawDataObj = arrayToObject(rawUnits, "name");
+    this.resultData = [];
   }
 
-  public getRawArray(): UnitsRawArray {
+  public get rawArray(): UnitsRawArray {
     return this.rawDataArray;
   }
 
-  public getRawObject(): UnitsRawObj {
+  public get rawObject(): UnitsRawObj {
     return this.rawDataObj;
   }
 
-  public getResult(): UnitsResultArray {
+  public get result(): UnitsResultArray {
     return this.resultData;
   }
 
-  private convertUnits({
-    unitsRawArray,
-    songsArray,
-  }: {
-    unitsRawArray: UnitsRawArray;
-    songsArray: any[];
-  }): UnitsResultArray {
+  public convertUnits({ songsArray }: { songsArray: any[] }): UnitsResultArray {
     let unitsResult: UnitsResultArray = [];
 
-    for (const unitRaw of unitsRawArray) {
+    for (const unitRaw of this.rawDataArray) {
       unitsResult.push(this.convertUnit({ unitRaw, songsArray }));
     }
+
+    this.resultData = unitsResult;
 
     return unitsResult;
   }
@@ -89,7 +76,7 @@ export class UnitsConverter {
   }: {
     unitName: string;
     songsArray: any[];
-  }): string[] {
+  }): UnitResult["songs"] {
     let unitSongs: string[] = [];
 
     for (const song of songsArray) {
