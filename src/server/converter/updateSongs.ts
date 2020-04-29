@@ -1,4 +1,4 @@
-import { Songs } from "../editor/constants/titles";
+import { SONGS } from "../editor/constants/titles";
 import { ResultAlbums } from "../models/IAlbum";
 import { ResultSingles } from "../models/ISingle";
 import { RawSong, ResultSong, ResultSongs } from "../models/ISong";
@@ -8,7 +8,7 @@ import { SongType } from "../utils/constants";
 export const initializeSongs = (rawSongs: RawSong[]): ResultSongs => {
   const initializeSong = (rawSong: RawSong): ResultSong => ({
     title: rawSong.title,
-    key: Songs[rawSong.title].key,
+    key: SONGS[rawSong.title].key,
     single: { title: "", number: "" },
     albums: [],
     artwork: "",

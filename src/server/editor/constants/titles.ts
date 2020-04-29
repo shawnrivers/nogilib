@@ -1,5 +1,5 @@
 // prettier-ignore
-export const Songs: {
+export const SONGS: {
   [title: string]: {
     title: string;
     key: string;

@@ -1,5 +1,5 @@
 import * as fs from "fs";
-import { Songs } from "../editor/constants/titles";
+import { SONGS } from "../editor/constants/titles";
 import { CdArtwork, RawCdSong, ResultCdSong } from "../models/commons";
 import { RawAlbum, ResultAlbum, ResultAlbums } from "../models/IAlbum";
 import { ResultMembers } from "../models/IMember";
@@ -55,7 +55,7 @@ const convertCdSongs = (rawCdSongs: RawCdSong[]): ResultCdSong[] => {
   const initializeCdSong = (rawCdSong: RawCdSong): ResultCdSong => ({
     number: rawCdSong.number,
     title: rawCdSong.title,
-    key: Songs[rawCdSong.title].key,
+    key: SONGS[rawCdSong.title].key,
     inCdType: rawCdSong.inCdType,
     type: SongType.None,
     artwork: "",

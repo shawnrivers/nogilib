@@ -1,7 +1,7 @@
 import { RawSingle } from "../models/ISingle";
 import { CdType } from "../utils/constants";
 import { MemberName } from "./constants/names";
-import { Songs } from "./constants/titles";
+import { SONGS } from "./constants/titles";
 
 const hogoshoku: RawSingle = {
   title: "しあわせの保護色",
@@ -13,37 +13,37 @@ const hogoshoku: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["しあわせの保護色"].title,
+      title: SONGS["しあわせの保護色"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],
     },
     {
       number: 2,
-      title: Songs["サヨナラ Stay with me"].title,
+      title: SONGS["サヨナラ Stay with me"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],
     },
     {
       number: 3,
-      title: Songs["じゃあね。"].title,
+      title: SONGS["じゃあね。"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["アナスターシャ"].title,
+      title: SONGS["アナスターシャ"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["毎日がBrand new day"].title,
+      title: SONGS["毎日がBrand new day"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["I see…"].title,
+      title: SONGS["I see…"].title,
       inCdType: [CdType.D],
     },
     {
       number: 7,
-      title: Songs["ファンタスティック三色パン"].title,
+      title: SONGS["ファンタスティック三色パン"].title,
       inCdType: [CdType.T],
     },
   ],
@@ -87,37 +87,37 @@ const yoakemade: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["夜明けまで強がらなくてもいい"].title,
+      title: SONGS["夜明けまで強がらなくてもいい"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],
     },
     {
       number: 2,
-      title: Songs["僕のこと、知ってる?"].title,
+      title: SONGS["僕のこと、知ってる?"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],
     },
     {
       number: 3,
-      title: Songs["路面電車の街"].title,
+      title: SONGS["路面電車の街"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["図書室の君へ"].title,
+      title: SONGS["図書室の君へ"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["時々 思い出してください"].title,
+      title: SONGS["時々 思い出してください"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["～Do my best～じゃ意味はない"].title,
+      title: SONGS["～Do my best～じゃ意味はない"].title,
       inCdType: [CdType.D],
     },
     {
       number: 7,
-      title: Songs["僕の思い込み"].title,
+      title: SONGS["僕の思い込み"].title,
       inCdType: [CdType.T],
     },
   ],
@@ -164,37 +164,37 @@ const singout: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["Sing Out!"].title,
+      title: SONGS["Sing Out!"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],
     },
     {
       number: 2,
-      title: Songs["滑走路"].title,
+      title: SONGS["滑走路"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],
     },
     {
       number: 3,
-      title: Songs["のような存在"].title,
+      title: SONGS["のような存在"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["Am I Loving?"].title,
+      title: SONGS["Am I Loving?"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["平行線"].title,
+      title: SONGS["平行線"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["4番目の光"].title,
+      title: SONGS["4番目の光"].title,
       inCdType: [CdType.D],
     },
     {
       number: 7,
-      title: Songs["曖昧"].title,
+      title: SONGS["曖昧"].title,
       inCdType: [CdType.T],
     },
   ],
@@ -238,37 +238,37 @@ const kaerimichi: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["帰り道は遠回りしたくなる"].title,
+      title: SONGS["帰り道は遠回りしたくなる"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],
     },
     {
       number: 2,
-      title: Songs["キャラバンは眠らない"].title,
+      title: SONGS["キャラバンは眠らない"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],
     },
     {
       number: 3,
-      title: Songs["つづく"].title,
+      title: SONGS["つづく"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["日常"].title,
+      title: SONGS["日常"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["告白の順番"].title,
+      title: SONGS["告白の順番"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["ショパンの嘘つき"].title,
+      title: SONGS["ショパンの嘘つき"].title,
       inCdType: [CdType.D],
     },
     {
       number: 7,
-      title: Songs["知りたいこと"].title,
+      title: SONGS["知りたいこと"].title,
       inCdType: [CdType.T],
     },
   ],
@@ -308,37 +308,37 @@ const jikochu: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["ジコチューで行こう!"].title,
+      title: SONGS["ジコチューで行こう!"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],
     },
     {
       number: 2,
-      title: Songs["空扉"].title,
+      title: SONGS["空扉"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],
     },
     {
       number: 3,
-      title: Songs["三角の空き地"].title,
+      title: SONGS["三角の空き地"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["自分じゃない感じ"].title,
+      title: SONGS["自分じゃない感じ"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["心のモノローグ"].title,
+      title: SONGS["心のモノローグ"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["地球が丸いなら"].title,
+      title: SONGS["地球が丸いなら"].title,
       inCdType: [CdType.D],
     },
     {
       number: 7,
-      title: Songs["あんなに好きだったのに..."].title,
+      title: SONGS["あんなに好きだったのに..."].title,
       inCdType: [CdType.T],
     },
   ],
@@ -378,37 +378,37 @@ const syncronicity: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["シンクロニシティ"].title,
+      title: SONGS["シンクロニシティ"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],
     },
     {
       number: 2,
-      title: Songs["Against"].title,
+      title: SONGS["Against"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],
     },
     {
       number: 3,
-      title: Songs["雲になればいい"].title,
+      title: SONGS["雲になればいい"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["新しい世界"].title,
+      title: SONGS["新しい世界"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["スカウトマン"].title,
+      title: SONGS["スカウトマン"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["トキトキメキメキ"].title,
+      title: SONGS["トキトキメキメキ"].title,
       inCdType: [CdType.D],
     },
     {
       number: 7,
-      title: Songs["言霊砲"].title,
+      title: SONGS["言霊砲"].title,
       inCdType: [CdType.T],
     },
   ],
@@ -451,37 +451,37 @@ const itsukadekirukara: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["いつかできるから今日できる"].title,
+      title: SONGS["いつかできるから今日できる"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],
     },
     {
       number: 2,
-      title: Songs["不眠症"].title,
+      title: SONGS["不眠症"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],
     },
     {
       number: 3,
-      title: Songs["まあいいか?"].title,
+      title: SONGS["まあいいか?"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["失恋お掃除人"].title,
+      title: SONGS["失恋お掃除人"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["My rule"].title,
+      title: SONGS["My rule"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["僕の衝動"].title,
+      title: SONGS["僕の衝動"].title,
       inCdType: [CdType.D],
     },
     {
       number: 7,
-      title: Songs["新しい花粉 〜ミュージカル「見知らぬ世界」より〜"].title,
+      title: SONGS["新しい花粉 〜ミュージカル「見知らぬ世界」より〜"].title,
       inCdType: [CdType.T],
     },
   ],
@@ -530,37 +530,37 @@ const nigemizu: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["逃げ水"].title,
+      title: SONGS["逃げ水"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],
     },
     {
       number: 2,
-      title: Songs["女は一人じゃ眠れない"].title,
+      title: SONGS["女は一人じゃ眠れない"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],
     },
     {
       number: 3,
-      title: Songs["ひと夏の長さより…"].title,
+      title: SONGS["ひと夏の長さより…"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["泣いたっていいじゃないか?"].title,
+      title: SONGS["泣いたっていいじゃないか?"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["アンダー"].title,
+      title: SONGS["アンダー"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["ライブ神"].title,
+      title: SONGS["ライブ神"].title,
       inCdType: [CdType.D],
     },
     {
       number: 7,
-      title: Songs["未来の答え"].title,
+      title: SONGS["未来の答え"].title,
       inCdType: [CdType.T],
     },
   ],
@@ -611,37 +611,37 @@ const influencer: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["インフルエンサー"].title,
+      title: SONGS["インフルエンサー"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],
     },
     {
       number: 2,
-      title: Songs["人生を考えたくなる"].title,
+      title: SONGS["人生を考えたくなる"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],
     },
     {
       number: 3,
-      title: Songs["意外BREAK"].title,
+      title: SONGS["意外BREAK"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["Another Ghost"].title,
+      title: SONGS["Another Ghost"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["風船は生きている"].title,
+      title: SONGS["風船は生きている"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["三番目の風"].title,
+      title: SONGS["三番目の風"].title,
       inCdType: [CdType.D],
     },
     {
       number: 7,
-      title: Songs["当たり障りのない話"].title,
+      title: SONGS["当たり障りのない話"].title,
       inCdType: [CdType.T],
     },
   ],
@@ -688,37 +688,37 @@ const sayonaranoimi: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["サヨナラの意味"].title,
+      title: SONGS["サヨナラの意味"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],
     },
     {
       number: 2,
-      title: Songs["孤独な青空"].title,
+      title: SONGS["孤独な青空"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],
     },
     {
       number: 3,
-      title: Songs["あの教室"].title,
+      title: SONGS["あの教室"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["ブランコ"].title,
+      title: SONGS["ブランコ"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["2度目のキスから"].title,
+      title: SONGS["2度目のキスから"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["君に贈る花がない"].title,
+      title: SONGS["君に贈る花がない"].title,
       inCdType: [CdType.D],
     },
     {
       number: 7,
-      title: Songs["ないものねだり"].title,
+      title: SONGS["ないものねだり"].title,
       inCdType: [CdType.T],
     },
   ],
@@ -756,37 +756,37 @@ const hadashidesummer: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["裸足でSummer"].title,
+      title: SONGS["裸足でSummer"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],
     },
     {
       number: 2,
-      title: Songs["僕だけの光"].title,
+      title: SONGS["僕だけの光"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],
     },
     {
       number: 3,
-      title: Songs["オフショアガール"].title,
+      title: SONGS["オフショアガール"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["命の真実 ミュージカル「林檎売りとカメムシ」"].title,
+      title: SONGS["命の真実 ミュージカル「林檎売りとカメムシ」"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["白米様"].title,
+      title: SONGS["白米様"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["シークレットグラフィティー"].title,
+      title: SONGS["シークレットグラフィティー"].title,
       inCdType: [CdType.D],
     },
     {
       number: 7,
-      title: Songs["行くあてのない僕たち"].title,
+      title: SONGS["行くあてのない僕たち"].title,
       inCdType: [CdType.T],
     },
   ],
@@ -827,37 +827,37 @@ const harujion: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["ハルジオンが咲く頃"].title,
+      title: SONGS["ハルジオンが咲く頃"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],
     },
     {
       number: 2,
-      title: Songs["遥かなるブータン"].title,
+      title: SONGS["遥かなるブータン"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],
     },
     {
       number: 3,
-      title: Songs["強がる蕾"].title,
+      title: SONGS["強がる蕾"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["急斜面"].title,
+      title: SONGS["急斜面"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["釣り堀"].title,
+      title: SONGS["釣り堀"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["不等号"].title,
+      title: SONGS["不等号"].title,
       inCdType: [CdType.D],
     },
     {
       number: 7,
-      title: Songs["憂鬱と風船ガム"].title,
+      title: SONGS["憂鬱と風船ガム"].title,
       inCdType: [CdType.T],
     },
   ],
@@ -898,32 +898,32 @@ const hanashitaidarekagairu: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["今、話したい誰かがいる"].title,
+      title: SONGS["今、話したい誰かがいる"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T],
     },
     {
       number: 2,
-      title: Songs["嫉妬の権利"].title,
+      title: SONGS["嫉妬の権利"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T],
     },
     {
       number: 3,
-      title: Songs["ポピパッパパー"].title,
+      title: SONGS["ポピパッパパー"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["大人への近道"].title,
+      title: SONGS["大人への近道"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["悲しみの忘れ方"].title,
+      title: SONGS["悲しみの忘れ方"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["隙間"].title,
+      title: SONGS["隙間"].title,
       inCdType: [CdType.T],
     },
   ],
@@ -966,37 +966,37 @@ const taiyoknock: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["太陽ノック"].title,
+      title: SONGS["太陽ノック"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T, CdType.L],
     },
     {
       number: 2,
-      title: Songs["もう少しの夢"].title,
+      title: SONGS["もう少しの夢"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T, CdType.L],
     },
     {
       number: 3,
-      title: Songs["魚たちのLOVE SONG"].title,
+      title: SONGS["魚たちのLOVE SONG"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["無表情"].title,
+      title: SONGS["無表情"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["別れ際、もっと好きになる"].title,
+      title: SONGS["別れ際、もっと好きになる"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["羽根の記憶"].title,
+      title: SONGS["羽根の記憶"].title,
       inCdType: [CdType.T],
     },
     {
       number: 7,
-      title: Songs["制服を脱いでサヨナラを…"].title,
+      title: SONGS["制服を脱いでサヨナラを…"].title,
       inCdType: [CdType.T],
     },
   ],
@@ -1036,32 +1036,32 @@ const inochihautsukushii: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["命は美しい"].title,
+      title: SONGS["命は美しい"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T],
     },
     {
       number: 2,
-      title: Songs["あらかじめ語られるロマンス"].title,
+      title: SONGS["あらかじめ語られるロマンス"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T],
     },
     {
       number: 3,
-      title: Songs["立ち直り中"].title,
+      title: SONGS["立ち直り中"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["ごめんね ずっと…"].title,
+      title: SONGS["ごめんね ずっと…"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["君は僕と会わない方がよかったのかな"].title,
+      title: SONGS["君は僕と会わない方がよかったのかな"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["ボーダー"].title,
+      title: SONGS["ボーダー"].title,
       inCdType: [CdType.T],
     },
   ],
@@ -1104,32 +1104,32 @@ const nandomenoaozoraka: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["何度目の青空か?"].title,
+      title: SONGS["何度目の青空か?"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T],
     },
     {
       number: 2,
-      title: Songs["遠回りの愛情"].title,
+      title: SONGS["遠回りの愛情"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T],
     },
     {
       number: 3,
-      title: Songs["転がった鐘を鳴らせ!"].title,
+      title: SONGS["転がった鐘を鳴らせ!"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["私、起きる。"].title,
+      title: SONGS["私、起きる。"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["あの日 僕は咄嗟に嘘をついた"].title,
+      title: SONGS["あの日 僕は咄嗟に嘘をついた"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["Tender days"].title,
+      title: SONGS["Tender days"].title,
       inCdType: [CdType.T],
     },
   ],
@@ -1176,32 +1176,32 @@ const natsunofreeandeasy: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["夏のFree&Easy"].title,
+      title: SONGS["夏のFree&Easy"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T],
     },
     {
       number: 2,
-      title: Songs["何もできずにそばにいる"].title,
+      title: SONGS["何もできずにそばにいる"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T],
     },
     {
       number: 3,
-      title: Songs["その先の出口!"].title,
+      title: SONGS["その先の出口!"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["無口なライオン"].title,
+      title: SONGS["無口なライオン"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["ここにいる理由"].title,
+      title: SONGS["ここにいる理由"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["僕が行かなきゃ誰が行くんだ?"].title,
+      title: SONGS["僕が行かなきゃ誰が行くんだ?"].title,
       inCdType: [CdType.T],
     },
   ],
@@ -1250,32 +1250,32 @@ const kizuitarakataomoi: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["気づいたら片想い"].title,
+      title: SONGS["気づいたら片想い"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T],
     },
     {
       number: 2,
-      title: Songs["ロマンスのスタート"].title,
+      title: SONGS["ロマンスのスタート"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T],
     },
     {
       number: 3,
-      title: Songs["吐息のメソッド"].title,
+      title: SONGS["吐息のメソッド"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["孤独兄弟"].title,
+      title: SONGS["孤独兄弟"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["生まれたままで"].title,
+      title: SONGS["生まれたままで"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["ダンケシェーン"].title,
+      title: SONGS["ダンケシェーン"].title,
       inCdType: [CdType.T],
     },
   ],
@@ -1324,32 +1324,32 @@ const valletta: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["バレッタ"].title,
+      title: SONGS["バレッタ"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T],
     },
     {
       number: 2,
-      title: Songs["月の大きさ"].title,
+      title: SONGS["月の大きさ"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T],
     },
     {
       number: 3,
-      title: Songs["私のために 誰かのために"].title,
+      title: SONGS["私のために 誰かのために"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["そんなバカな…"].title,
+      title: SONGS["そんなバカな…"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["初恋の人を今でも"].title,
+      title: SONGS["初恋の人を今でも"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["やさしさとは"].title,
+      title: SONGS["やさしさとは"].title,
       inCdType: [CdType.T],
     },
   ],
@@ -1397,32 +1397,32 @@ const girlsrule: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["ガールズルール"].title,
+      title: SONGS["ガールズルール"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T],
     },
     {
       number: 2,
-      title: Songs["世界で一番 孤独なLover"].title,
+      title: SONGS["世界で一番 孤独なLover"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T],
     },
     {
       number: 3,
-      title: Songs["コウモリよ"].title,
+      title: SONGS["コウモリよ"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["扇風機"].title,
+      title: SONGS["扇風機"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["他の星から"].title,
+      title: SONGS["他の星から"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["人間という楽器"].title,
+      title: SONGS["人間という楽器"].title,
       inCdType: [CdType.T],
     },
   ],
@@ -1460,32 +1460,32 @@ const kiminonahakibo: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["君の名は希望"].title,
+      title: SONGS["君の名は希望"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T],
     },
     {
       number: 2,
-      title: Songs["シャキイズム"].title,
+      title: SONGS["シャキイズム"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T],
     },
     {
       number: 3,
-      title: Songs["ロマンティックいか焼き"].title,
+      title: SONGS["ロマンティックいか焼き"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["13日の金曜日"].title,
+      title: SONGS["13日の金曜日"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["でこぴん"].title,
+      title: SONGS["でこぴん"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["サイコキネシスの可能性"].title,
+      title: SONGS["サイコキネシスの可能性"].title,
       inCdType: [CdType.T],
     },
   ],
@@ -1524,32 +1524,32 @@ const seifukunomannequin: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["制服のマネキン"].title,
+      title: SONGS["制服のマネキン"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T],
     },
     {
       number: 2,
-      title: Songs["指望遠鏡"].title,
+      title: SONGS["指望遠鏡"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T],
     },
     {
       number: 3,
-      title: Songs["やさしさなら間に合ってる"].title,
+      title: SONGS["やさしさなら間に合ってる"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["ここじゃないどこか"].title,
+      title: SONGS["ここじゃないどこか"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["春のメロディー"].title,
+      title: SONGS["春のメロディー"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["渋谷ブルース"].title,
+      title: SONGS["渋谷ブルース"].title,
       inCdType: [CdType.T],
     },
   ],
@@ -1587,32 +1587,32 @@ const hashirebicycle: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["走れ!Bicycle"].title,
+      title: SONGS["走れ!Bicycle"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T],
     },
     {
       number: 2,
-      title: Songs["せっかちなかたつむり"].title,
+      title: SONGS["せっかちなかたつむり"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T],
     },
     {
       number: 3,
-      title: Songs["涙がまだ悲しみだった頃"].title,
+      title: SONGS["涙がまだ悲しみだった頃"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["人はなぜ走るのか?"].title,
+      title: SONGS["人はなぜ走るのか?"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["音が出ないギター"].title,
+      title: SONGS["音が出ないギター"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["海流の島よ"].title,
+      title: SONGS["海流の島よ"].title,
       inCdType: [CdType.T],
     },
   ],
@@ -1651,32 +1651,32 @@ const oideshampoo: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["おいでシャンプー"].title,
+      title: SONGS["おいでシャンプー"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T],
     },
     {
       number: 2,
-      title: Songs["心の薬"].title,
+      title: SONGS["心の薬"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T],
     },
     {
       number: 3,
-      title: Songs["偶然を言い訳にして"].title,
+      title: SONGS["偶然を言い訳にして"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["水玉模様"].title,
+      title: SONGS["水玉模様"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["狼に口笛を"].title,
+      title: SONGS["狼に口笛を"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["ハウス!"].title,
+      title: SONGS["ハウス!"].title,
       inCdType: [CdType.T],
     },
   ],
@@ -1715,32 +1715,32 @@ const gurugurucurtain: RawSingle = {
   songs: [
     {
       number: 1,
-      title: Songs["ぐるぐるカーテン"].title,
+      title: SONGS["ぐるぐるカーテン"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T],
     },
     {
       number: 2,
-      title: Songs["左胸の勇気"].title,
+      title: SONGS["左胸の勇気"].title,
       inCdType: [CdType.A, CdType.B, CdType.C, CdType.T],
     },
     {
       number: 3,
-      title: Songs["乃木坂の詩"].title,
+      title: SONGS["乃木坂の詩"].title,
       inCdType: [CdType.A],
     },
     {
       number: 4,
-      title: Songs["会いたかったかもしれない"].title,
+      title: SONGS["会いたかったかもしれない"].title,
       inCdType: [CdType.B],
     },
     {
       number: 5,
-      title: Songs["失いたくないから"].title,
+      title: SONGS["失いたくないから"].title,
       inCdType: [CdType.C],
     },
     {
       number: 6,
-      title: Songs["白い雲にのって"].title,
+      title: SONGS["白い雲にのって"].title,
       inCdType: [CdType.T],
     },
   ],

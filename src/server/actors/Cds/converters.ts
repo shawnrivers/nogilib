@@ -12,7 +12,7 @@ import {
   FocusPerformersType,
 } from "server/utils/constants";
 import { convertPerformerNames } from "server/utils/strings";
-import { Songs } from "server/editor/constants/titles";
+import { SONGS } from "server/editor/constants/titles";
 
 type ConvertCdArtwork = (props: {
   cdHasArtworks: CdRaw["hasArtworks"];
@@ -200,7 +200,7 @@ export const convertCdSongs: ConvertCdSongs = ({
     return {
       number,
       title,
-      key: Songs[title].key,
+      key: SONGS[title].key,
       inCdType,
       type: convertCdSongType({
         cdSongTitle: title,
