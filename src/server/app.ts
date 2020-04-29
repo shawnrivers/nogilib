@@ -8,6 +8,7 @@ import { rawMembers } from "./editor/members";
 import { rawSingles } from "./editor/singles";
 import { rawSongs } from "./editor/songs";
 import { rawUnits } from "./editor/units";
+import { UnitsConverter } from "server/actors/Units/class";
 
 // Initialize raw data to result data type.
 
@@ -16,6 +17,8 @@ const albums = UpdateCds.initializeAlbums(rawAlbums);
 const singles = UpdateCds.initializeSingles(rawSingles);
 const members = UpdateMembers.initializeMembers(rawMembers);
 const songs = UpdateSongs.initializeSongs(rawSongs);
+
+const unitsConverter = new UnitsConverter(rawSongs);
 
 // Process the raw data.
 
@@ -49,7 +52,8 @@ const songsArray = Object.values(songs);
 const membersArray = Object.values(members);
 const singlesArray = Object.values(singles);
 const albumsArray = Object.values(albums);
-const unitsArray = Object.values(units);
+// const unitsArray = Object.values(units);
+const unitsArray = unitsConverter.getResult();
 
 console.log("Data processing finished.\n");
 

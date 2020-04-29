@@ -6,10 +6,10 @@
       "takayamakazumi"
     ],
     "type": "unit",
+    "description": "白石の「白」、高山の「高」をそれぞれ英語表記にした「WHITE」「HIGH」の組み合わせ",
     "songs": [
       "渋谷ブルース"
-    ],
-    "description": "白石の「白」、高山の「高」をそれぞれ英語表記にした「WHITE」「HIGH」の組み合わせ"
+    ]
   },
   {
     "name": "孤独兄弟",
@@ -18,10 +18,10 @@
       "hashimotonanami"
     ],
     "type": "unit",
+    "description": "",
     "songs": [
       "孤独兄弟"
-    ],
-    "description": ""
+    ]
   },
   {
     "name": "からあげ姉妹",
@@ -30,11 +30,11 @@
       "matsumurasayuri"
     ],
     "type": "unit",
+    "description": "",
     "songs": [
       "無表情",
       "曖昧"
-    ],
-    "description": ""
+    ]
   },
   {
     "name": "サンクエトワール",
@@ -46,11 +46,11 @@
       "horimiona"
     ],
     "type": "unit",
+    "description": "13thシングルのアンダーメンバーより選抜。「サンクエトワール」とはフランス語で「五つ星」という意味",
     "songs": [
       "君に贈る花がない",
       "大人への近道"
-    ],
-    "description": "13thシングルのアンダーメンバーより選抜。「サンクエトワール」とはフランス語で「五つ星」という意味"
+    ]
   },
   {
     "name": "女子校カルテット",
@@ -61,12 +61,12 @@
       "wakatsukiyumi"
     ],
     "type": "unit",
+    "description": "女子高に通っていたメンバーで結成",
     "songs": [
       "告白の順番",
       "人生を考えたくなる",
       "口約束"
-    ],
-    "description": "女子高に通っていたメンバーで結成"
+    ]
   },
   {
     "name": "姉御坂",
@@ -77,10 +77,10 @@
       "matsumurasayuri"
     ],
     "type": "unit",
+    "description": "グループ1期生年長メンバーで結成",
     "songs": [
       "意外BREAK"
-    ],
-    "description": "グループ1期生年長メンバーで結成"
+    ]
   },
   {
     "name": "ナスカ",
@@ -90,10 +90,10 @@
       "nishinonanase"
     ],
     "type": "unit",
+    "description": "ナナセの「ナ」、アスカの「ス」、マリカの「カ」の組み合わせ",
     "songs": [
       "Another Ghost"
-    ],
-    "description": "ナナセの「ナ」、アスカの「ス」、マリカの「カ」の組み合わせ"
+    ]
   },
   {
     "name": "かすみ草",
@@ -104,10 +104,10 @@
       "horimiona"
     ],
     "type": "unit",
+    "description": "かすみ草の花言葉は「名脇役」。主役を影で支える力のあるメンバーという意味が込められている",
     "songs": [
       "当たり障りのない話"
-    ],
-    "description": "かすみ草の花言葉は「名脇役」。主役を影で支える力のあるメンバーという意味が込められている"
+    ]
   },
   {
     "name": "藤桜梨",
@@ -117,10 +117,10 @@
       "sakuraireika"
     ],
     "type": "unit",
+    "description": "ドンウォーリー",
     "songs": [
       "雲になればいい"
-    ],
-    "description": "ドンウォーリー"
+    ]
   },
   {
     "name": "いもうと坂",
@@ -131,10 +131,10 @@
       "yodayuuki"
     ],
     "type": "unit",
+    "description": "",
     "songs": [
       "言霊砲"
-    ],
-    "description": ""
+    ]
   },
   {
     "name": "さゆりんご軍団",
@@ -145,11 +145,11 @@
       "teradaranze"
     ],
     "type": "corp",
+    "description": "",
     "songs": [
       "白米様",
       "さゆりんご募集中"
-    ],
-    "description": ""
+    ]
   },
   {
     "name": "真夏さんリスペクト軍団",
@@ -160,10 +160,10 @@
       "watanabemiria"
     ],
     "type": "corp",
+    "description": "",
     "songs": [
       "2度目のキスから"
-    ],
-    "description": ""
+    ]
   },
   {
     "name": "若様軍団",
@@ -174,10 +174,10 @@
       "yamashitamizuki"
     ],
     "type": "corp",
+    "description": "4名に共通する一文字「美」から若月が3期生を結集",
     "songs": [
       "失恋お掃除人"
-    ],
-    "description": "4名に共通する一文字「美」から若月が3期生を結集"
+    ]
   },
   {
     "name": "犬メン",
@@ -192,10 +192,10 @@
       "wakatsukiyumi"
     ],
     "type": "corp",
+    "description": "舞台『すべての犬は天国へ行く』出演メンバーで構成",
     "songs": [
       "環状六号線"
-    ],
-    "description": "舞台『すべての犬は天国へ行く』出演メンバーで構成"
+    ]
   },
   {
     "name": "スイカ",
@@ -207,8 +207,8 @@
       "nishinonanase"
     ],
     "type": "corp",
-    "songs": [],
-    "description": ""
+    "description": "",
+    "songs": []
   },
   {
     "name": "チューリップ",
@@ -222,7 +222,7 @@
       "wadamaaya"
     ],
     "type": "corp",
-    "songs": [],
-    "description": "母体は「チームD (ディズニー好き)」 (和田を除くメンバー)"
+    "description": "母体は「チームD (ディズニー好き)」 (和田を除くメンバー)",
+    "songs": []
   }
 ]
