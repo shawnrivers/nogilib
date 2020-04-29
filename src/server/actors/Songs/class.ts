@@ -1,14 +1,16 @@
 import { arrayToObject } from "client/utils/arrays";
-import { rawSongs } from "server/editor/songs";
+import { SinglesRawArray, SinglesRawObj } from "server/actors/Singles/models";
+import * as SongConverters from "server/actors/Songs/converters";
 import {
+  SongRaw,
+  SongResult,
   SongsRawArray,
   SongsRawObj,
   SongsResultArray,
-  SongResult,
-  SongRaw,
 } from "server/actors/Songs/models";
 import { SONGS } from "server/editor/constants/titles";
-import * as SongConverters from "server/actors/Songs/converters";
+import { rawSongs } from "server/editor/songs";
+import { AlbumsRawArray, AlbumsRawObj } from "server/actors/Albums/models";
 
 export class Songs {
   private rawDataArray: SongsRawArray;
@@ -33,29 +35,81 @@ export class Songs {
     return this.resultData;
   }
 
-  public convertSongs(): SongsResultArray {
+  public convertSongs({
+    singlesRawArray,
+    albumsRawArray,
+    singlesRawObj,
+    albumsRawObj,
+  }: {
+    singlesRawArray: SinglesRawArray;
+    albumsRawArray: AlbumsRawArray;
+    singlesRawObj: SinglesRawObj;
+    albumsRawObj: AlbumsRawObj;
+  }): SongsResultArray {
     let songsResult: SongsResultArray = [];
 
     for (const songRaw of this.rawDataArray) {
-      songsResult.push(this.convertSong({ songRaw }));
+      songsResult.push(
+        this.convertSong({
+          songRaw,
+          singlesRawArray,
+          albumsRawArray,
+          singlesRawObj,
+          albumsRawObj,
+        })
+      );
     }
 
     this.resultData = songsResult;
     return songsResult;
   }
 
-  private convertSong({ songRaw }: { songRaw: SongRaw }): SongResult {
+  private convertSong({
+    songRaw,
+    singlesRawArray,
+    albumsRawArray,
+    singlesRawObj,
+    albumsRawObj,
+  }: {
+    songRaw: SongRaw;
+    singlesRawArray: SinglesRawArray;
+    albumsRawArray: AlbumsRawArray;
+    singlesRawObj: SinglesRawObj;
+    albumsRawObj: AlbumsRawObj;
+  }): SongResult {
+    const songSingleResult = SongConverters.convertSongSingle({
+      songTitle: songRaw.title,
+      singlesRawArray,
+    });
+
+    const songAlbumsResult = SongConverters.convertSongAlbums({
+      songTitle: songRaw.title,
+      albumsRawArray,
+    });
+
     return {
       title: songRaw.title,
       key: SONGS[songRaw.title].key,
-      single: SongConverters.convertSongSingle(),
-      albums: SongConverters.convertSongAlbums(),
-      artwork: SongConverters.convertSongArtwork(),
+      single: songSingleResult,
+      albums: songAlbumsResult,
+      artwork: SongConverters.convertSongArtwork({
+        songTitle: songRaw.title,
+        songSingleResult,
+        songAlbumsResult,
+        singlesRawObj,
+        albumsRawObj,
+      }),
       musicVideo: songRaw.musicVideo,
-      type: songRaw.type,
+      type: SongConverters.convertSongType(songRaw.type),
       creators: songRaw.creators,
       performers: songRaw.performers,
-      performersTag: SongConverters.convertSongPerformersTag(),
+      performersTag: SongConverters.convertSongPerformersTag({
+        songType: songRaw.type,
+        songSingleResult,
+        songAlbumsResult,
+        songPerformers: songRaw.performers,
+        albumsRawObj,
+      }),
       formations: songRaw.formations,
     };
   }

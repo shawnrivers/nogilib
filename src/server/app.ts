@@ -10,6 +10,7 @@ import { Units } from "server/actors/Units/class";
 import { Albums } from "server/actors/Albums/class";
 import { arrayToObject } from "server/utils/arrays";
 import { Singles } from "server/actors/Singles/class";
+import { Songs } from "server/actors/Songs/class";
 
 // Initialize raw data to result data type.
 
@@ -18,9 +19,10 @@ const singles = UpdateCds.initializeSingles(rawSingles);
 const members = UpdateMembers.initializeMembers(rawMembers);
 const songs = UpdateSongs.initializeSongs(rawSongs);
 
-const unitsConverter = new Units();
+const songsConverter = new Songs();
 const albumsConverter = new Albums();
 const singlesConverter = new Singles();
+const unitsConverter = new Units();
 
 // Process the raw data.
 
@@ -50,11 +52,17 @@ UpdateCds.flatArtworksToArray(albums);
 
 // Form all property pairs into an array.
 
-const songsArray = Object.values(songs);
+// const songsArray = Object.values(songs);
 const membersArray = Object.values(members);
 // const singlesArray = Object.values(singles);
 // const albumsArray = Object.values(albums);
 // const unitsArray = Object.values(units);
+const songsArray = songsConverter.convertSongs({
+  singlesRawArray: singlesConverter.rawArray,
+  singlesRawObj: singlesConverter.rawObject,
+  albumsRawArray: albumsConverter.rawArray,
+  albumsRawObj: albumsConverter.rawObject,
+});
 const unitsArray = unitsConverter.convertUnits({ songsArray: rawSongs });
 const albumsArray = albumsConverter.convertAlbums({
   songsRawObj: arrayToObject(rawSongs, "title"),

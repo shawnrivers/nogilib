@@ -13,6 +13,7 @@ import {
 } from "server/utils/constants";
 import { convertPerformerNames } from "server/utils/strings";
 import { SONGS } from "server/editor/constants/titles";
+import { NO_IMAGE_SRC } from "server/editor/constants/paths";
 
 type ConvertCdArtwork = (params: {
   cdHasArtworks: CdRaw["hasArtworks"];
@@ -27,12 +28,11 @@ export const convertCdArtwork: ConvertCdArtwork = ({
   cdArtworkType,
   cdKind,
 }) => {
-  const noImageSrc = "artworks/artwork_no_image.png";
   const imageSrcBasePath =
     cdKind === "album" ? "artworks/albums" : "artworks/singles";
 
   if (!cdHasArtworks) {
-    return noImageSrc;
+    return NO_IMAGE_SRC;
   }
 
   const imageSrc = `${imageSrcBasePath}/${cdNumber}/${cdArtworkType}.jpg`;
@@ -41,7 +41,7 @@ export const convertCdArtwork: ConvertCdArtwork = ({
     return imageSrc;
   }
 
-  return noImageSrc;
+  return NO_IMAGE_SRC;
 };
 
 type ConvertCdArtworks = (params: {

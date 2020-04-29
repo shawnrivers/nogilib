@@ -1,34 +1,28 @@
 import { MemberName } from "server/editor/constants/names";
 import { FukujinType, SongType } from "server/utils/constants";
 
-export type Creators = {
-  lyrics: string[];
-  compose: string[];
-  arrange: string[];
-  direct: string[];
-};
-
-export type Performers = {
-  center: MemberName[];
-  fukujin: FukujinType | MemberName[];
-  solo: MemberName | "";
-  unit: string;
-};
-
-export type Formations = {
-  firstRow: MemberName[];
-  secondRow: MemberName[];
-  thirdRow: MemberName[];
-  fourthRow: MemberName[];
-};
-
 export type SongRaw = {
   title: string;
   musicVideo: string;
   type: SongType;
-  creators: Creators;
-  performers: Performers;
-  formations: Formations;
+  creators: {
+    lyrics: string[];
+    compose: string[];
+    arrange: string[];
+    direct: string[];
+  };
+  performers: {
+    center: MemberName[];
+    fukujin: FukujinType | MemberName[];
+    solo: MemberName | "";
+    unit: string;
+  };
+  formations: {
+    firstRow: MemberName[];
+    secondRow: MemberName[];
+    thirdRow: MemberName[];
+    fourthRow: MemberName[];
+  };
 };
 
 export type SongResult = SongRaw & {
