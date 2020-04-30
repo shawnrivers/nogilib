@@ -3098,7 +3098,7 @@ const iwaseyumiko: MemberRaw = {
   },
 };
 
-export const rawMembers: MembersRawArray = [
+export const membersRawArray: MembersRawArray = [
   akimotomanatsu,
   ikutaerika,
   itoukarin,

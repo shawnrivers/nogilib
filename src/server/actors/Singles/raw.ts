@@ -1769,7 +1769,7 @@ const gurugurucurtain: SingleRaw = {
   },
 };
 
-export const rawSingles: SinglesRawArray = [
+export const singlesRawArray: SinglesRawArray = [
   hogoshoku,
   yoakemade,
   singout,

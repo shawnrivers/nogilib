@@ -4,33 +4,38 @@ import { Members } from "server/actors/Members/class";
 import { Singles } from "server/actors/Singles/class";
 import { Songs } from "server/actors/Songs/class";
 import { Units } from "server/actors/Units/class";
+import { songsRawArray } from "server/actors/Songs/raw";
+import { unitsRawArray } from "server/actors/Units/raw";
+import { albumsRawArray } from "server/actors/Albums/raw";
+import { singlesRawArray } from "server/actors/Singles/raw";
+import { membersRawArray } from "server/actors/Members/raw";
 
-const songs = new Songs();
-const albums = new Albums();
-const singles = new Singles();
-const members = new Members();
-const units = new Units();
+const songs = new Songs(songsRawArray);
+const albums = new Albums(albumsRawArray);
+const singles = new Singles(singlesRawArray);
+const members = new Members(membersRawArray);
+const units = new Units(unitsRawArray);
 
-const songsArray = songs.convertSongs({
+const songsResultArray = songs.convertSongs({
   singlesRawArray: singles.rawArray,
   singlesRawObject: singles.rawObject,
   albumsRawArray: albums.rawArray,
   albumsRawObject: albums.rawObject,
 });
-const albumsArray = albums.convertAlbums({
+const albumsResultArray = albums.convertAlbums({
   songsRawObject: songs.rawObject,
   membersRawObject: members.rawObject,
 });
-const singlesArray = singles.convertSingles({
+const singlesResultArray = singles.convertSingles({
   songsRawObject: songs.rawObject,
   membersRawObject: members.rawObject,
 });
-const membersArray = members.convertMembers({
+const membersResultArray = members.convertMembers({
   unitsRawArray: units.rawArray,
   singlesRawArray: singles.rawArray,
   songsRawObject: songs.rawObject,
 });
-const unitsArray = units.convertUnits({
+const unitsResultArray = units.convertUnits({
   songsRawArray: songs.rawArray,
 });
 
@@ -48,8 +53,8 @@ const writeFile = (path: string, data: any[]) => {
 
 // Write data in this project.
 
-writeFile("./src/data/members.json", membersArray);
-writeFile("./src/data/singles.json", singlesArray);
-writeFile("./src/data/albums.json", albumsArray);
-writeFile("./src/data/songs.json", songsArray);
-writeFile("./src/data/units.json", unitsArray);
+writeFile("./src/data/members.json", membersResultArray);
+writeFile("./src/data/singles.json", singlesResultArray);
+writeFile("./src/data/albums.json", albumsResultArray);
+writeFile("./src/data/songs.json", songsResultArray);
+writeFile("./src/data/units.json", unitsResultArray);

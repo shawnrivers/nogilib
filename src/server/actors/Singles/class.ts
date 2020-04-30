@@ -1,14 +1,13 @@
+import * as CdConverters from "server/actors/Cds/converters";
+import { MembersRawObject } from "server/actors/Members/models";
 import {
+  SingleRaw,
+  SingleResult,
   SinglesRawArray,
   SinglesRawObject,
   SinglesResultArray,
-  SingleResult,
-  SingleRaw,
 } from "server/actors/Singles/models";
-import { rawSingles } from "server/actors/Singles/raw";
-import * as CdConverters from "server/actors/Cds/converters";
 import { SongsRawObject } from "server/actors/Songs/models";
-import { MembersRawObject } from "server/actors/Members/models";
 import { arrayToObject } from "utils/arrays";
 
 export class Singles {
@@ -16,9 +15,9 @@ export class Singles {
   private rawDataObject: SinglesRawObject;
   private resultData: SinglesResultArray;
 
-  public constructor() {
-    this.rawDataArray = rawSingles;
-    this.rawDataObject = arrayToObject(rawSingles, "title");
+  public constructor(singlesRawArray: SinglesRawArray) {
+    this.rawDataArray = singlesRawArray;
+    this.rawDataObject = arrayToObject(singlesRawArray, "title");
     this.resultData = [];
   }
 

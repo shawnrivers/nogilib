@@ -1,25 +1,24 @@
+import * as MemberConverters from "server/actors/Members/converters";
 import {
+  MemberRaw,
+  MemberResult,
   MembersRawArray,
   MembersRawObject,
   MembersResultArray,
-  MemberResult,
-  MemberRaw,
 } from "server/actors/Members/models";
-import { rawMembers } from "server/actors/Members/raw";
-import { arrayToObject } from "utils/arrays";
-import * as MemberConverters from "server/actors/Members/converters";
-import { UnitsRawArray } from "server/actors/Units/models";
 import { SinglesRawArray } from "server/actors/Singles/models";
 import { SongsRawObject } from "server/actors/Songs/models";
+import { UnitsRawArray } from "server/actors/Units/models";
+import { arrayToObject } from "utils/arrays";
 
 export class Members {
   private rawDataArray: MembersRawArray;
   private rawDataObject: MembersRawObject;
   private resultData: MembersResultArray;
 
-  public constructor() {
-    this.rawDataArray = rawMembers;
-    this.rawDataObject = arrayToObject(rawMembers, "name");
+  public constructor(membersRawArray: MembersRawArray) {
+    this.rawDataArray = membersRawArray;
+    this.rawDataObject = arrayToObject(membersRawArray, "name");
     this.resultData = [];
   }
 

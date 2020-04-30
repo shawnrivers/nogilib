@@ -189,7 +189,7 @@ const tulip: UnitRaw = {
   description: "母体は「チームD (ディズニー好き)」 (和田を除くメンバー)",
 };
 
-export const rawUnits: UnitsRawArray = [
+export const unitsRawArray: UnitsRawArray = [
   whiteHigh,
   kodokukyoudai,
   karaageshimai,

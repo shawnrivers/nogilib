@@ -6,7 +6,6 @@ import {
   AlbumsResultArray,
 } from "server/actors/Albums/models";
 import * as CdConverters from "server/actors/Cds/converters";
-import { rawAlbums } from "server/actors/Albums/raw";
 import { arrayToObject } from "utils/arrays";
 import { SongsRawObject } from "server/actors/Songs/models";
 import { MembersRawObject } from "server/actors/Members/models";
@@ -16,9 +15,9 @@ export class Albums {
   private rawDataObject: AlbumsRawObject;
   private resultData: AlbumsResultArray;
 
-  public constructor() {
-    this.rawDataArray = rawAlbums;
-    this.rawDataObject = arrayToObject(rawAlbums, "title");
+  public constructor(albumsRawArray: AlbumsRawArray) {
+    this.rawDataArray = albumsRawArray;
+    this.rawDataObject = arrayToObject(albumsRawArray, "title");
     this.resultData = [];
   }
 

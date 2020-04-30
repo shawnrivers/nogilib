@@ -7546,7 +7546,7 @@ const songHitoriyogari: SongRaw = {
   },
 };
 
-export const rawSongs: SongsRawArray = [
+export const songsRawArray: SongsRawArray = [
   songKaerimichi,
   songJikochu,
   songSyncronicity,

@@ -11,7 +11,6 @@ import {
   SongsResultArray,
 } from "server/actors/Songs/models";
 import { SONGS } from "server/constants/songs";
-import { rawSongs } from "server/actors/Songs/raw";
 import { AlbumsRawArray, AlbumsRawObject } from "server/actors/Albums/models";
 import { arrayToObject } from "utils/arrays";
 
@@ -20,9 +19,9 @@ export class Songs {
   private rawDataObject: SongsRawObject;
   private resultData: SongsResultArray;
 
-  public constructor() {
-    this.rawDataArray = rawSongs;
-    this.rawDataObject = arrayToObject(rawSongs, "title");
+  public constructor(songsRawArray: SongsRawArray) {
+    this.rawDataArray = songsRawArray;
+    this.rawDataObject = arrayToObject(songsRawArray, "title");
     this.resultData = [];
   }
 

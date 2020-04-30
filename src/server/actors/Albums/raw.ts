@@ -817,7 +817,7 @@ const tomeinairo: AlbumRaw = {
   ],
 };
 
-export const rawAlbums: AlbumsRawArray = [
+export const albumsRawArray: AlbumsRawArray = [
   imagaomoideninarumade,
   bokudakenokimi,
   umaretekara,
