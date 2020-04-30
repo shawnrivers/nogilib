@@ -1,12 +1,11 @@
-import { Search, SearchResult } from "client/components/templates/Search";
-import "client/styles/app.scss";
-import { SearchResultType } from "client/utils/constants";
-import { toCdNumber } from "utils/strings";
 import * as React from "react";
 import { injectIntl } from "react-intl";
-import { forceCheck } from "react-lazyload";
-import { SongType } from "server/constants/commons";
+import { Search, SearchResult } from "client/components/templates/Search";
 import { useScrollRestoration } from "client/hooks/useScrollRestoration";
+import "client/styles/app.scss";
+import { SearchResultType } from "client/utils/constants";
+import { SongType } from "server/constants/commons";
+import { toCdNumber } from "utils/strings";
 
 export type MemberDoc = {
   id: string;
@@ -154,10 +153,6 @@ export const SearchContainer = injectIntl(({ intl }: { intl: any }) => {
 
     return { members, singles, albums, songs };
   }, [results, intl]);
-
-  React.useEffect(() => {
-    forceCheck();
-  }, [results]);
 
   return (
     <Search
