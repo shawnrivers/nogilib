@@ -14,11 +14,8 @@ jobs:
           name: Install Dependencies
           command: yarn install
       - run:
-          name: type-check:client
-          command: yarn type-check:client
-      - run:
-          name: type-check:server
-          command: yarn type-check:server
+          name: type-check
+          command: yarn type-check
       - run:
           name: stylelint
           command: yarn stylelint
