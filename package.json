@@ -8,7 +8,7 @@
     "build": "gatsby build",
     "dev": "gatsby develop",
     "serve": "gatsby serve",
-    "type-check:client": "tsc -b tsconfig.json",
+    "type-check": "tsc",
     "type-check:server": "tsc -b tsconfig-server.json",
     "generate-data": "NODE_PATH=./src ts-node --project tsconfig-server.json src/server/app.ts",
     "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
