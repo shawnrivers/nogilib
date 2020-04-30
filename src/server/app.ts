@@ -1,9 +1,9 @@
 import * as fs from "fs";
-import { Albums } from "server/actors/Albums/class";
-import { Members } from "server/actors/Members/class";
-import { Singles } from "server/actors/Singles/class";
-import { Songs } from "server/actors/Songs/class";
-import { Units } from "server/actors/Units/class";
+import { Albums } from "server/actors/Albums";
+import { Members } from "server/actors/Members";
+import { Singles } from "server/actors/Singles";
+import { Songs } from "server/actors/Songs";
+import { Units } from "server/actors/Units";
 import { songsRawArray } from "server/actors/Songs/raw";
 import { unitsRawArray } from "server/actors/Units/raw";
 import { albumsRawArray } from "server/actors/Albums/raw";
