@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import * as React from "react";
 import styles from "./artwork.module.scss";
-import { classNames } from "client/utils/strings";
+import { classNames } from "utils/strings";
 import { Image } from "client/components/atoms/Image";
 
 const backgroundFade = {

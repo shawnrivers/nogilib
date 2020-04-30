@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import { injectIntl } from "react-intl";
 import locales from "client/i18n/locales";
 import { Language } from "client/utils/constants";
-import { getUrlWithTrailingSlash } from "client/utils/strings";
+import { getUrlWithTrailingSlash } from "utils/strings";
 
 interface LocalizedLinkProps {
   to: string;

@@ -1,6 +1,6 @@
 import * as React from "react";
 import styles from "./pagecontentlayout.module.scss";
-import { classNames } from "client/utils/strings";
+import { classNames } from "utils/strings";
 
 interface LayoutProps {
   children: React.ReactNode;

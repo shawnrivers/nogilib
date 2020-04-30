@@ -1,7 +1,7 @@
 import { graphql } from "gatsby";
 import * as React from "react";
 import { Member } from "client/components/templates/Member";
-import { ResultMember } from "server/models/IMember";
+import { MemberResult } from "server/actors/Members/models";
 
 export const query = graphql`
   query($name: String!) {
@@ -56,7 +56,7 @@ export const query = graphql`
 
 interface MemberData {
   data: {
-    membersJson: ResultMember;
+    membersJson: MemberResult;
   };
 }
 

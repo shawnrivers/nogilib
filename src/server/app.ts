@@ -1,64 +1,50 @@
 import * as fs from "fs";
-import * as UpdateMembers from "./converter/updateMembers";
-import * as UpdateSongs from "./converter/updateSongs";
-import * as UpdateUnits from "./converter/updateUnits";
-import * as UpdateCds from "./converter/updateCds";
-import { rawAlbums } from "./editor/albums";
-import { rawMembers } from "./editor/members";
-import { rawSingles } from "./editor/singles";
-import { rawSongs } from "./editor/songs";
-import { rawUnits } from "./editor/units";
+import { Albums } from "server/actors/Albums/class";
+import { Members } from "server/actors/Members/class";
+import { Singles } from "server/actors/Singles/class";
+import { Songs } from "server/actors/Songs/class";
+import { Units } from "server/actors/Units/class";
+import { songsRawArray } from "server/actors/Songs/raw";
+import { unitsRawArray } from "server/actors/Units/raw";
+import { albumsRawArray } from "server/actors/Albums/raw";
+import { singlesRawArray } from "server/actors/Singles/raw";
+import { membersRawArray } from "server/actors/Members/raw";
 
-// Initialize raw data to result data type.
+const songs = new Songs(songsRawArray);
+const albums = new Albums(albumsRawArray);
+const singles = new Singles(singlesRawArray);
+const members = new Members(membersRawArray);
+const units = new Units(unitsRawArray);
 
-const units = UpdateUnits.initializeUnits(rawUnits);
-const albums = UpdateCds.initializeAlbums(rawAlbums);
-const singles = UpdateCds.initializeSingles(rawSingles);
-const members = UpdateMembers.initializeMembers(rawMembers);
-const songs = UpdateSongs.initializeSongs(rawSongs);
-
-// Process the raw data.
-
-UpdateCds.recordCdSongTypeFromSongs(singles, songs);
-UpdateCds.recordCdSongTypeFromSongs(albums, songs);
-
-UpdateMembers.recordUnits(members, units);
-UpdateMembers.recordPositions(members, singles, songs);
-UpdateMembers.recordProfileImages(members, Object.keys(singles).length);
-
-UpdateCds.recordCdFocusPerformersFromSongs(singles, songs, members);
-UpdateCds.recordCdFocusPerformersFromSongs(albums, songs, members);
-
-UpdateSongs.recordSongSingle(songs, singles);
-UpdateSongs.recordSongAlbums(songs, albums);
-UpdateSongs.recordArtworks(songs, singles, albums);
-
-UpdateCds.recordCdSongArtworks(singles, songs);
-UpdateCds.recordCdSongArtworks(albums, songs);
-
-UpdateSongs.recordPerformersTags(songs, albums);
-
-UpdateUnits.recordUnitSongs(units, songs);
-
-UpdateCds.flatArtworksToArray(singles);
-UpdateCds.flatArtworksToArray(albums);
-
-// Form all property pairs into an array.
-
-const songsArray = Object.values(songs);
-const membersArray = Object.values(members);
-const singlesArray = Object.values(singles);
-const albumsArray = Object.values(albums);
-const unitsArray = Object.values(units);
-
-console.log("Data processing finished.\n");
+const songsResultArray = songs.convertSongs({
+  singlesRawArray: singles.rawArray,
+  singlesRawObject: singles.rawObject,
+  albumsRawArray: albums.rawArray,
+  albumsRawObject: albums.rawObject,
+});
+const albumsResultArray = albums.convertAlbums({
+  songsRawObject: songs.rawObject,
+  membersRawObject: members.rawObject,
+});
+const singlesResultArray = singles.convertSingles({
+  songsRawObject: songs.rawObject,
+  membersRawObject: members.rawObject,
+});
+const membersResultArray = members.convertMembers({
+  unitsRawArray: units.rawArray,
+  singlesRawArray: singles.rawArray,
+  songsRawObject: songs.rawObject,
+});
+const unitsResultArray = units.convertUnits({
+  songsRawArray: songs.rawArray,
+});
 
 // Store the processed data into several JSON files.
 
 const writeFile = (path: string, data: any[]) => {
   fs.writeFile(path, JSON.stringify(data, null, 2), err => {
     if (err) {
-      console.log(err);
+      console.warn(err);
     } else {
       console.log(`JSON saved in: ${path}`);
     }
@@ -67,8 +53,8 @@ const writeFile = (path: string, data: any[]) => {
 
 // Write data in this project.
 
-writeFile("./src/data/members.json", membersArray);
-writeFile("./src/data/singles.json", singlesArray);
-writeFile("./src/data/albums.json", albumsArray);
-writeFile("./src/data/songs.json", songsArray);
-writeFile("./src/data/units.json", unitsArray);
+writeFile("./src/data/members.json", membersResultArray);
+writeFile("./src/data/singles.json", singlesResultArray);
+writeFile("./src/data/albums.json", albumsResultArray);
+writeFile("./src/data/songs.json", songsResultArray);
+writeFile("./src/data/units.json", unitsResultArray);

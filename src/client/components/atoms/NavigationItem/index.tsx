@@ -2,7 +2,7 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import styles from "./navigationitem.module.scss";
 import { LocalizedLink } from "client/components/atoms/locales/LocalizedLink";
-import { classNames } from "client/utils/strings";
+import { classNames } from "utils/strings";
 
 const fade = {
   hovered: {

@@ -4,15 +4,15 @@ import { motion } from "framer-motion";
 import styles from "./cd.module.scss";
 import { Track } from "client/components/atoms/Track";
 import { Artworks } from "client/components/molecules/Artworks";
-import { useScrollRestoration } from "client/utils/hooks";
+import { useScrollRestoration } from "client/hooks/useScrollRestoration";
 import { PageContentLayout } from "client/components/atoms/PageContentLayout";
 import { ArrowBackIcon } from "client/components/atoms/icons/ArrowBackIcon";
 import { CdTabType } from "client/types/tabs";
 import { Message } from "client/components/atoms/Message";
 import { LocalizedLink } from "client/components/atoms/locales/LocalizedLink";
 import { Links } from "client/utils/constants";
-import { toCdNumber } from "client/utils/strings";
-import { SongType, FocusPerformersType } from "server/utils/constants";
+import { toCdNumber } from "utils/strings";
+import { SongType, FocusPerformersType } from "server/constants/commons";
 
 const containerVariants = {
   visible: {

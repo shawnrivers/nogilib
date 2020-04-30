@@ -9,9 +9,11 @@ import { LocalizedNumber } from "client/components/atoms/locales/LocalizedNumber
 import { MemberCard } from "client/components/atoms/MemberCard";
 import { Message } from "client/components/atoms/Message";
 import { PageContentLayout } from "client/components/atoms/PageContentLayout";
-import { KOJIHARU, KOJIHARU_IMAGE, Language } from "client/utils/constants";
-import { useScrollRestoration } from "client/utils/hooks";
-import { SongType } from "server/utils/constants";
+import { Language } from "client/utils/constants";
+import { useScrollRestoration } from "client/hooks/useScrollRestoration";
+import { SongType } from "server/constants/commons";
+import { KOJIHARU_NAME } from "server/constants/names";
+import { KOJIHARU_IMAGE_SRC } from "server/constants/paths";
 
 const containerVariants = {
   visible: {
@@ -109,14 +111,14 @@ const PerformersTag = injectIntl(
 
 const KojiharuCard = ({ isCenter }: { isCenter: boolean }) => (
   <MemberCard
-    nameKey={KOJIHARU}
+    nameKey={KOJIHARU_NAME}
     name={{
       lastName: "小嶋",
       lastNameEn: "kojima",
       firstName: "陽菜",
       firstNameEn: "haruna",
     }}
-    image={KOJIHARU_IMAGE}
+    image={KOJIHARU_IMAGE_SRC}
     isCenter={isCenter}
   />
 );
@@ -224,7 +226,7 @@ export const Song = ({
                         </h4>
                         <div className={styles.grid}>
                           {row.map(memberName => {
-                            if (memberName !== KOJIHARU) {
+                            if (memberName !== KOJIHARU_NAME) {
                               const member = members[memberName];
                               return (
                                 <div className={styles.card} key={member.name}>
@@ -252,7 +254,7 @@ export const Song = ({
                   ) : (
                     <div className={styles.grid}>
                       {formation[0].map(memberName => {
-                        if (memberName !== KOJIHARU) {
+                        if (memberName !== KOJIHARU_NAME) {
                           const member = members[memberName];
                           return (
                             <div className={styles.card} key={member.name}>

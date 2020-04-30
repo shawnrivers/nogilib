@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import styles from "./languageoptionitem.module.scss";
-import { getUrlWithTrailingSlash } from "client/utils/strings";
+import { getUrlWithTrailingSlash } from "utils/strings";
 
 interface LanguageOptionItemProps {
   to: string;

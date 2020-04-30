@@ -2,8 +2,8 @@ import { graphql } from "gatsby";
 import * as React from "react";
 import { Members, MemberType } from "client/components/templates/Members";
 import { MembersTabType } from "client/types/tabs";
-import { ResultMember } from "server/models/IMember";
-import { JoinedGenerationType } from "server/utils/constants";
+import { JoinedGenerationType } from "server/constants/commons";
+import { MemberResult } from "server/actors/Members/models";
 
 export const query = graphql`
   query MembersQuery {
@@ -31,11 +31,11 @@ interface MembersData {
   data: {
     allMembersJson: {
       nodes: (Pick<
-        ResultMember,
+        MemberResult,
         "name" | "join" | "graduation" | "profileImage"
       > & {
         nameNotations: Pick<
-          ResultMember["nameNotations"],
+          MemberResult["nameNotations"],
           "lastName" | "firstName" | "lastNameEn" | "firstNameEn"
         >;
       })[];

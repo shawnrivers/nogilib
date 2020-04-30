@@ -2,7 +2,7 @@ import { graphql } from "gatsby";
 import * as React from "react";
 import { Cd } from "client/components/templates/Cd";
 import { CdTabType } from "client/types/tabs";
-import { CdResponse, ResultCdSong } from "server/models/commons";
+import { SingleResult } from "server/actors/Singles/models";
 
 export const query = graphql`
   query($number: String!) {
@@ -27,10 +27,13 @@ export const query = graphql`
 interface SingleData {
   data: {
     singlesJson: Pick<
-      CdResponse,
+      SingleResult,
       "title" | "number" | "release" | "artworks"
     > & {
-      songs: Pick<ResultCdSong, "key" | "title" | "type" | "focusPerformers">[];
+      songs: Pick<
+        SingleResult["songs"][0],
+        "key" | "title" | "type" | "focusPerformers"
+      >[];
     };
   };
   pageContext: {

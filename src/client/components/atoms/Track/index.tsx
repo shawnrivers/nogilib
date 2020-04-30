@@ -4,8 +4,8 @@ import { injectIntl } from "react-intl";
 import styles from "./track.module.scss";
 import { LocalizedLink } from "client/components/atoms/locales/LocalizedLink";
 import { Message } from "client/components/atoms/Message";
-import { classNames, getFocusPerformersText } from "client/utils/strings";
-import { FocusPerformersType, SongType } from "server/utils/constants";
+import { classNames, getFocusPerformersText } from "utils/strings";
+import { FocusPerformersType, SongType } from "server/constants/commons";
 
 const containerVariants = {
   hover: { backgroundColor: "#595959", transition: { duration: 0.3 } },

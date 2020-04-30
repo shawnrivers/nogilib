@@ -10,7 +10,7 @@
     "serve": "gatsby serve",
     "type-check:client": "tsc -b tsconfig.json",
     "type-check:server": "tsc -b tsconfig-server.json",
-    "generate-data": "tsc -p tsconfig-server.json && node dist/app.js",
+    "generate-data": "NODE_PATH=./src ts-node --project tsconfig-server.json src/server/app.ts",
     "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
     "lint:fix": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --fix",
     "format": "prettier --write src/**/*.{ts,tsx}",
@@ -90,6 +90,7 @@
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-order": "^4.0.0",
     "stylelint-scss": "^3.17.1",
+    "ts-node": "^8.9.1",
     "typescript": "^3.8.3"
   }
 }

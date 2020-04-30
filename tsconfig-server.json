@@ -10,7 +10,8 @@
     "removeComments": true,
     "allowJs": true,
     "lib": ["es6", "dom", "es2017"],
-    "baseUrl": "src/server"
+    "baseUrl": "src"
   },
-  "include": ["src/server"]
+  "include": ["src"],
+  "exclude": ["src/client", "src/pages"]
 }

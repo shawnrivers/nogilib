@@ -3,14 +3,13 @@
     "title": "今が思い出になるまで",
     "number": "4",
     "release": "2019-04-17",
-    "previousSingleNumber": "22",
+    "shopping": [],
     "artworks": [
       "artworks/albums/4/L.jpg",
       "artworks/albums/4/A.jpg",
       "artworks/albums/4/B.jpg",
       "artworks/albums/4/T.jpg"
     ],
-    "shopping": [],
     "songs": [
       {
         "number": 1,
@@ -23,7 +22,6 @@
           "T"
         ],
         "type": "lead",
-        "artwork": "artworks/albums/4/L.jpg",
         "focusPerformers": {
           "type": "center",
           "name": []
@@ -40,7 +38,6 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/18/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -60,7 +57,6 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/19/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -80,7 +76,6 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/20/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -99,7 +94,6 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/21/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -118,7 +112,6 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/22/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -137,7 +130,6 @@
           "T"
         ],
         "type": "under",
-        "artwork": "artworks/singles/18/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -157,7 +149,6 @@
           "T"
         ],
         "type": "under",
-        "artwork": "artworks/singles/19/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -176,7 +167,6 @@
           "T"
         ],
         "type": "under",
-        "artwork": "artworks/singles/20/B.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -195,7 +185,6 @@
           "T"
         ],
         "type": "under",
-        "artwork": "artworks/singles/21/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -214,7 +203,6 @@
           "T"
         ],
         "type": "under",
-        "artwork": "artworks/singles/22/B.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -230,7 +218,6 @@
           "L"
         ],
         "type": "solo",
-        "artwork": "artworks/albums/4/L.jpg",
         "focusPerformers": {
           "type": "solo",
           "name": [
@@ -246,7 +233,6 @@
           "L"
         ],
         "type": "fourth generation",
-        "artwork": "artworks/albums/4/L.jpg",
         "focusPerformers": {
           "type": "center",
           "name": []
@@ -260,7 +246,6 @@
           "L"
         ],
         "type": "first generation",
-        "artwork": "artworks/singles/20/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -276,7 +261,6 @@
           "L"
         ],
         "type": "solo",
-        "artwork": "artworks/singles/22/A.jpg",
         "focusPerformers": {
           "type": "solo",
           "name": [
@@ -292,7 +276,6 @@
           "A"
         ],
         "type": "unit",
-        "artwork": "artworks/albums/4/A.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -312,7 +295,6 @@
           "A"
         ],
         "type": "unit",
-        "artwork": "artworks/albums/4/A.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -330,7 +312,6 @@
           "A"
         ],
         "type": "third generation",
-        "artwork": "artworks/singles/19/D.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -346,7 +327,6 @@
           "A"
         ],
         "type": "second generation",
-        "artwork": "artworks/singles/20/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -362,7 +342,6 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/albums/4/B.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -378,7 +357,6 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/albums/4/B.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -396,7 +374,6 @@
           "B"
         ],
         "type": "third generation",
-        "artwork": "artworks/singles/20/D.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -412,7 +389,6 @@
           "B"
         ],
         "type": "third generation",
-        "artwork": "artworks/singles/18/T.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -429,7 +405,6 @@
           "T"
         ],
         "type": "special",
-        "artwork": "artworks/albums/4/T.jpg",
         "focusPerformers": {
           "type": "",
           "name": []
@@ -443,7 +418,6 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/22/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -459,7 +433,6 @@
           "T"
         ],
         "type": "second generation",
-        "artwork": "artworks/singles/18/D.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -475,7 +448,6 @@
           "T"
         ],
         "type": "third generation",
-        "artwork": "artworks/singles/21/B.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -483,19 +455,19 @@
           ]
         }
       }
-    ]
+    ],
+    "previousSingleNumber": "22"
   },
   {
     "title": "僕だけの君〜Under Super Best〜",
     "number": "U",
     "release": "2018-01-10",
-    "previousSingleNumber": "19",
+    "shopping": [],
     "artworks": [
       "artworks/albums/U/L1.jpg",
       "artworks/albums/U/L2.jpg",
       "artworks/albums/U/T.jpg"
     ],
-    "shopping": [],
     "songs": [
       {
         "number": 1,
@@ -505,7 +477,6 @@
           "L1"
         ],
         "type": "under",
-        "artwork": "artworks/singles/1/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -521,7 +492,6 @@
           "L1"
         ],
         "type": "under",
-        "artwork": "artworks/singles/2/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -537,7 +507,6 @@
           "L1"
         ],
         "type": "under",
-        "artwork": "artworks/singles/3/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -553,7 +522,6 @@
           "L1"
         ],
         "type": "under",
-        "artwork": "artworks/singles/4/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -569,7 +537,6 @@
           "L1"
         ],
         "type": "under",
-        "artwork": "artworks/singles/5/B.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -585,7 +552,6 @@
           "L1"
         ],
         "type": "under",
-        "artwork": "artworks/singles/6/B.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -601,7 +567,6 @@
           "L1"
         ],
         "type": "under",
-        "artwork": "artworks/singles/7/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -617,7 +582,6 @@
           "L1"
         ],
         "type": "under",
-        "artwork": "artworks/singles/8/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -633,7 +597,6 @@
           "L1"
         ],
         "type": "under",
-        "artwork": "artworks/singles/9/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -649,7 +612,6 @@
           "L1"
         ],
         "type": "under",
-        "artwork": "artworks/singles/10/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -665,7 +627,6 @@
           "L1"
         ],
         "type": "under",
-        "artwork": "artworks/singles/11/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -681,7 +642,6 @@
           "L1"
         ],
         "type": "under",
-        "artwork": "artworks/singles/12/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -697,7 +657,6 @@
           "L1"
         ],
         "type": "under",
-        "artwork": "artworks/singles/13/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -714,7 +673,6 @@
           "L1"
         ],
         "type": "under",
-        "artwork": "artworks/singles/14/D.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -730,7 +688,6 @@
           "L1"
         ],
         "type": "under",
-        "artwork": "artworks/singles/15/D.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -746,7 +703,6 @@
           "L2"
         ],
         "type": "under",
-        "artwork": "artworks/singles/16/B.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -762,7 +718,6 @@
           "L2"
         ],
         "type": "under",
-        "artwork": "artworks/singles/17/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -778,7 +733,6 @@
           "L2"
         ],
         "type": "under",
-        "artwork": "artworks/singles/18/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -795,7 +749,6 @@
           "L2"
         ],
         "type": "under",
-        "artwork": "artworks/singles/19/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -811,7 +764,6 @@
           "L2"
         ],
         "type": "under",
-        "artwork": "artworks/albums/1/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -827,7 +779,6 @@
           "L2"
         ],
         "type": "under",
-        "artwork": "artworks/albums/2/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": []
@@ -841,7 +792,6 @@
           "L2"
         ],
         "type": "under",
-        "artwork": "artworks/albums/3/L.jpg",
         "focusPerformers": {
           "type": "center",
           "name": []
@@ -855,7 +805,6 @@
           "L2"
         ],
         "type": "solo",
-        "artwork": "artworks/albums/U/L2.jpg",
         "focusPerformers": {
           "type": "solo",
           "name": [
@@ -871,7 +820,6 @@
           "L2"
         ],
         "type": "under",
-        "artwork": "artworks/albums/U/L2.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -887,7 +835,6 @@
           "L2"
         ],
         "type": "under",
-        "artwork": "artworks/albums/U/L2.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -903,7 +850,6 @@
           "L2"
         ],
         "type": "under",
-        "artwork": "artworks/albums/U/L2.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -911,20 +857,20 @@
           ]
         }
       }
-    ]
+    ],
+    "previousSingleNumber": "19"
   },
   {
     "title": "生まれてから初めて見た夢",
     "number": "3",
     "release": "2017-05-24",
-    "previousSingleNumber": "17",
+    "shopping": [],
     "artworks": [
       "artworks/albums/3/A.jpg",
       "artworks/albums/3/B.jpg",
       "artworks/albums/3/L.jpg",
       "artworks/albums/3/T.jpg"
     ],
-    "shopping": [],
     "songs": [
       {
         "number": 1,
@@ -937,7 +883,6 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/15/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -956,7 +901,6 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/16/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -975,7 +919,6 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/17/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -995,7 +938,6 @@
           "T"
         ],
         "type": "under",
-        "artwork": "artworks/singles/15/D.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1014,7 +956,6 @@
           "T"
         ],
         "type": "under",
-        "artwork": "artworks/singles/16/B.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1033,7 +974,6 @@
           "T"
         ],
         "type": "under",
-        "artwork": "artworks/singles/17/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1052,7 +992,6 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/albums/3/L.jpg",
         "focusPerformers": {
           "type": "center",
           "name": []
@@ -1069,7 +1008,6 @@
           "T"
         ],
         "type": "third generation",
-        "artwork": "artworks/singles/17/D.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1085,7 +1023,6 @@
           "L"
         ],
         "type": "under",
-        "artwork": "artworks/albums/3/L.jpg",
         "focusPerformers": {
           "type": "center",
           "name": []
@@ -1099,7 +1036,6 @@
           "L"
         ],
         "type": "third generation",
-        "artwork": "artworks/albums/3/L.jpg",
         "focusPerformers": {
           "type": "center",
           "name": []
@@ -1113,7 +1049,6 @@
           "L"
         ],
         "type": "coupling",
-        "artwork": "artworks/albums/3/L.jpg",
         "focusPerformers": {
           "type": "center",
           "name": []
@@ -1127,7 +1062,6 @@
           "L"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/16/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1143,7 +1077,6 @@
           "L"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/15/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1159,7 +1092,6 @@
           "L"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/17/A.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1175,7 +1107,6 @@
           "L"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/17/A.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1191,7 +1122,6 @@
           "A"
         ],
         "type": "unit",
-        "artwork": "artworks/albums/3/A.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1209,7 +1139,6 @@
           "A"
         ],
         "type": "unit",
-        "artwork": "artworks/albums/3/A.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1227,7 +1156,6 @@
           "A"
         ],
         "type": "unit",
-        "artwork": "artworks/albums/3/A.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1245,7 +1173,6 @@
           "A"
         ],
         "type": "solo",
-        "artwork": "artworks/singles/15/A.jpg",
         "focusPerformers": {
           "type": "solo",
           "name": [
@@ -1261,7 +1188,6 @@
           "A"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/16/D.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1277,7 +1203,6 @@
           "A"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/15/C.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1293,7 +1218,6 @@
           "B"
         ],
         "type": "solo",
-        "artwork": "artworks/albums/3/B.jpg",
         "focusPerformers": {
           "type": "solo",
           "name": [
@@ -1309,7 +1233,6 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/albums/3/B.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1327,7 +1250,6 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/albums/3/B.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1345,7 +1267,6 @@
           "B"
         ],
         "type": "solo",
-        "artwork": "artworks/singles/16/T.jpg",
         "focusPerformers": {
           "type": "solo",
           "name": [
@@ -1361,7 +1282,6 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/17/B.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1377,7 +1297,6 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/16/A.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1394,7 +1313,6 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/albums/3/T.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1411,7 +1329,6 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/albums/3/T.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1428,7 +1345,6 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/16/C.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1444,7 +1360,6 @@
           "T"
         ],
         "type": "solo",
-        "artwork": "artworks/singles/15/B.jpg",
         "focusPerformers": {
           "type": "solo",
           "name": [
@@ -1460,7 +1375,6 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/15/T.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1477,7 +1391,6 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/17/T.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1485,13 +1398,14 @@
           ]
         }
       }
-    ]
+    ],
+    "previousSingleNumber": "17"
   },
   {
     "title": "それぞれの椅子",
     "number": "2",
     "release": "2016-05-25",
-    "previousSingleNumber": "14",
+    "shopping": [],
     "artworks": [
       "artworks/albums/2/A.jpg",
       "artworks/albums/2/B.jpg",
@@ -1499,7 +1413,6 @@
       "artworks/albums/2/D.jpg",
       "artworks/albums/2/T.jpg"
     ],
-    "shopping": [],
     "songs": [
       {
         "number": 1,
@@ -1513,7 +1426,6 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/11/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1533,7 +1445,6 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/12/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1553,7 +1464,6 @@
           "T"
         ],
         "type": "title",
-        "artwork": "artworks/singles/13/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1574,7 +1484,6 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/albums/2/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": []
@@ -1592,7 +1501,6 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/albums/2/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": []
@@ -1610,7 +1518,6 @@
           "T"
         ],
         "type": "under",
-        "artwork": "artworks/albums/2/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": []
@@ -1628,7 +1535,6 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/13/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1645,7 +1551,6 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/albums/2/A.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1666,7 +1571,6 @@
           "T"
         ],
         "type": "solo",
-        "artwork": "artworks/albums/2/A.jpg",
         "focusPerformers": {
           "type": "solo",
           "name": [
@@ -1683,7 +1587,6 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/12/B.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1700,7 +1603,6 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/11/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1718,7 +1620,6 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/13/T.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1735,7 +1636,6 @@
           "T"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/14/B.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1754,7 +1654,6 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/12/T.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1774,7 +1673,6 @@
           "T"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/1/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1790,7 +1688,6 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/albums/2/B.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1808,7 +1705,6 @@
           "B"
         ],
         "type": "solo",
-        "artwork": "artworks/albums/2/B.jpg",
         "focusPerformers": {
           "type": "solo",
           "name": [
@@ -1824,7 +1720,6 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/14/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1840,7 +1735,6 @@
           "B"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/13/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1857,7 +1751,6 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/12/T.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1874,7 +1767,6 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/14/T.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1890,7 +1782,6 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/11/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1906,7 +1797,6 @@
           "C"
         ],
         "type": "unit",
-        "artwork": "artworks/albums/2/C.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1922,7 +1812,6 @@
           "C"
         ],
         "type": "second generation",
-        "artwork": "artworks/albums/2/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": []
@@ -1936,7 +1825,6 @@
           "C"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/13/B.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -1952,7 +1840,6 @@
           "C"
         ],
         "type": "under",
-        "artwork": "artworks/singles/11/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1968,7 +1855,6 @@
           "C"
         ],
         "type": "under",
-        "artwork": "artworks/singles/12/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -1984,7 +1870,6 @@
           "C"
         ],
         "type": "under",
-        "artwork": "artworks/singles/13/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2001,7 +1886,6 @@
           "C"
         ],
         "type": "under",
-        "artwork": "artworks/singles/14/D.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2017,7 +1901,6 @@
           "D"
         ],
         "type": "unit",
-        "artwork": "artworks/albums/2/D.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -2033,7 +1916,6 @@
           "D"
         ],
         "type": "unit",
-        "artwork": "artworks/albums/2/D.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -2049,7 +1931,6 @@
           "D"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/5/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": []
@@ -2063,7 +1944,6 @@
           "D"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/2/T.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2079,7 +1959,6 @@
           "D"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/7/B.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2095,7 +1974,6 @@
           "D"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/5/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2112,7 +1990,6 @@
           "D"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/8/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2120,19 +1997,19 @@
           ]
         }
       }
-    ]
+    ],
+    "previousSingleNumber": "14"
   },
   {
     "title": "透明な色",
     "number": "1",
     "release": "2015-01-27",
-    "previousSingleNumber": "10",
+    "shopping": [],
     "artworks": [
       "artworks/albums/1/A.jpg",
       "artworks/albums/1/B.jpg",
       "artworks/albums/1/C.jpg"
     ],
-    "shopping": [],
     "songs": [
       {
         "number": 1,
@@ -2144,7 +2021,6 @@
           "C"
         ],
         "type": "coupling",
-        "artwork": "artworks/albums/1/A.jpg",
         "focusPerformers": {
           "type": "",
           "name": []
@@ -2160,7 +2036,6 @@
           "C"
         ],
         "type": "title",
-        "artwork": "artworks/singles/1/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2178,7 +2053,6 @@
           "C"
         ],
         "type": "title",
-        "artwork": "artworks/singles/2/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2196,7 +2070,6 @@
           "C"
         ],
         "type": "title",
-        "artwork": "artworks/singles/3/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2214,7 +2087,6 @@
           "C"
         ],
         "type": "title",
-        "artwork": "artworks/singles/4/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2232,7 +2104,6 @@
           "C"
         ],
         "type": "title",
-        "artwork": "artworks/singles/5/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2250,7 +2121,6 @@
           "C"
         ],
         "type": "title",
-        "artwork": "artworks/singles/6/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2268,7 +2138,6 @@
           "C"
         ],
         "type": "title",
-        "artwork": "artworks/singles/7/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2286,7 +2155,6 @@
           "C"
         ],
         "type": "title",
-        "artwork": "artworks/singles/8/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2304,7 +2172,6 @@
           "C"
         ],
         "type": "title",
-        "artwork": "artworks/singles/9/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2322,7 +2189,6 @@
           "C"
         ],
         "type": "title",
-        "artwork": "artworks/singles/10/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2340,7 +2206,6 @@
           "C"
         ],
         "type": "unit",
-        "artwork": "artworks/albums/1/A.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -2360,7 +2225,6 @@
           "C"
         ],
         "type": "unit",
-        "artwork": "artworks/albums/1/A.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -2383,7 +2247,6 @@
           "C"
         ],
         "type": "coupling",
-        "artwork": "artworks/albums/1/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2401,7 +2264,6 @@
           "C"
         ],
         "type": "solo",
-        "artwork": "artworks/albums/1/A.jpg",
         "focusPerformers": {
           "type": "solo",
           "name": [
@@ -2418,7 +2280,6 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/6/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2435,7 +2296,6 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/7/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2452,7 +2312,6 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/3/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2469,7 +2328,6 @@
           "B"
         ],
         "type": "under",
-        "artwork": "artworks/singles/3/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2486,7 +2344,6 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/9/B.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2503,7 +2360,6 @@
           "B"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/6/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2520,7 +2376,6 @@
           "B"
         ],
         "type": "under",
-        "artwork": "artworks/singles/10/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2537,7 +2392,6 @@
           "B"
         ],
         "type": "under",
-        "artwork": "artworks/singles/5/B.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2554,7 +2408,6 @@
           "B"
         ],
         "type": "coupling",
-        "artwork": "artworks/singles/1/C.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2572,7 +2425,6 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/singles/8/T.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2589,7 +2441,6 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/albums/1/A.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -2606,7 +2457,6 @@
           "B"
         ],
         "type": "unit",
-        "artwork": "artworks/albums/1/A.jpg",
         "focusPerformers": {
           "type": "unit",
           "name": [
@@ -2625,7 +2475,6 @@
           "B"
         ],
         "type": "under",
-        "artwork": "artworks/albums/1/A.jpg",
         "focusPerformers": {
           "type": "center",
           "name": [
@@ -2642,7 +2491,6 @@
           "B"
         ],
         "type": "solo",
-        "artwork": "artworks/albums/1/A.jpg",
         "focusPerformers": {
           "type": "solo",
           "name": [
@@ -2650,6 +2498,7 @@
           ]
         }
       }
-    ]
+    ],
+    "previousSingleNumber": "10"
   }
 ]
