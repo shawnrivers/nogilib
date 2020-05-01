@@ -299,16 +299,12 @@ const inouesayuri: MemberRaw = {
   origin: Birthplace.Saitama,
   sites: [
     {
-      title: SocialMedia.OfficialBlog,
-      url: "https://blog.nogizaka46.com/sayuri.inoue/",
+      title: SocialMedia.Twitter,
+      url: "https://twitter.com/syr_1214",
     },
     {
       title: SocialMedia.Profile,
-      url: "https://www.nogizaka46.com/member/detail/inouesayuri.php",
-    },
-    {
-      title: SocialMedia.Nanagogo,
-      url: "https://7gogo.jp/inoue-sayuri",
+      url: "http://www.siscompany.com/02manage/49inoue/",
     },
   ],
   photoAlbums: [
