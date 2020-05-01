@@ -1701,7 +1701,7 @@ const wakatsukiyumi: MemberRaw = {
   sites: [
     {
       title: SocialMedia.Official,
-      url: "https://wakatsukiyumi.jp/",
+      url: "http://yumiwakatsuki.com/",
     },
     {
       title: SocialMedia.Twitter,
