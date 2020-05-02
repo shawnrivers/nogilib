@@ -10608,12 +10608,16 @@
     "origin": "秋田県",
     "sites": [
       {
-        "title": "Official",
-        "url": "https://ikomarina.com/"
-      },
-      {
         "title": "Instagram",
         "url": "https://www.instagram.com/ikomarina_1229/"
+      },
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/ikomarina_staff"
+      },
+      {
+        "title": "Official",
+        "url": "https://ikomarina.com/"
       },
       {
         "title": "Profile",
@@ -10802,10 +10806,6 @@
       {
         "title": "Instagram",
         "url": "https://www.instagram.com/mahiro_kawamura_official/"
-      },
-      {
-        "title": "Twitter",
-        "url": "https://twitter.com/Rotty_Rotty23"
       }
     ],
     "photoAlbums": [],

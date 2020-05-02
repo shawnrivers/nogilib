@@ -136,12 +136,16 @@ const ikomarina: MemberRaw = {
   origin: Birthplace.Akita,
   sites: [
     {
-      title: SocialMedia.Official,
-      url: "https://ikomarina.com/",
-    },
-    {
       title: SocialMedia.Instagram,
       url: "https://www.instagram.com/ikomarina_1229/",
+    },
+    {
+      title: SocialMedia.Twitter,
+      url: "https://twitter.com/ikomarina_staff",
+    },
+    {
+      title: SocialMedia.Official,
+      url: "https://ikomarina.com/",
     },
     {
       title: SocialMedia.Profile,
@@ -2485,10 +2489,6 @@ const kawamuramahiro: MemberRaw = {
     {
       title: SocialMedia.Instagram,
       url: "https://www.instagram.com/mahiro_kawamura_official/",
-    },
-    {
-      title: SocialMedia.Twitter,
-      url: "https://twitter.com/Rotty_Rotty23",
     },
   ],
   photoAlbums: [],
