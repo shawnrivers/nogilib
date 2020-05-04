@@ -1416,8 +1416,8 @@ const horimiona: MemberRaw = {
       shopping: [],
     },
     {
-      title: "タイトル未定",
-      release: "2020-01-01",
+      title: "いつかの待ち合わせ場所",
+      release: "2020-05-27",
       type: PhotoAlbumType.PhotoAlbum,
       shopping: [],
     },
