@@ -33,7 +33,7 @@ export type MemberRaw = {
     title: string;
     release: string;
     type: PhotoAlbumType;
-    shopping: Site[];
+    sites: Site[];
   }[];
   graduation: {
     isGraduated: boolean;
