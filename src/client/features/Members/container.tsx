@@ -1,6 +1,6 @@
 import { graphql } from "gatsby";
 import * as React from "react";
-import { Members, MemberType } from "client/components/templates/Members";
+import { Members, MemberType } from "client/features/Members/template";
 import { MembersTabType } from "client/types/tabs";
 import { JoinedGenerationType } from "server/constants/commons";
 import { MemberResult } from "server/actors/Members/models";

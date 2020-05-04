@@ -1,6 +1,6 @@
 import { graphql } from "gatsby";
 import * as React from "react";
-import { Member } from "client/components/templates/Member";
+import { Member } from "client/features/Member/template";
 import { MemberResult } from "server/actors/Members/models";
 
 export const query = graphql`

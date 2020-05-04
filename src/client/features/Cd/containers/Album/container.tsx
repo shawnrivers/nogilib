@@ -1,6 +1,6 @@
 import { graphql } from "gatsby";
 import * as React from "react";
-import { Cd } from "client/components/templates/Cd";
+import { Cd } from "client/features/Cd/template";
 import { CdTabType } from "client/types/tabs";
 import { AlbumResult } from "server/actors/Albums/models";
 

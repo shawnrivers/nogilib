@@ -138,7 +138,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: localizedPath,
-        component: path.resolve("./src/client/containers/Cds/index.tsx"),
+        component: path.resolve("./src/client/features/Cds/container.tsx"),
         context: {
           currentTab: type,
           locale: lang,
@@ -180,7 +180,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: localizedPath,
-        component: path.resolve("./src/client/containers/Members/index.tsx"),
+        component: path.resolve("./src/client/features/Members/container.tsx"),
         context: {
           currentTab: type,
           locale: lang,
@@ -200,7 +200,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: localizedPath,
-        component: path.resolve("./src/client/containers/Album/index.tsx"),
+        component: path.resolve(
+          "./src/client/features/Cd/containers/Album/container.tsx"
+        ),
         context: {
           number,
           cdType,
@@ -221,7 +223,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: localizedPath,
-        component: path.resolve("./src/client/containers/Single/index.tsx"),
+        component: path.resolve(
+          "./src/client/features/Cd/containers/Single/container.tsx"
+        ),
         context: {
           number,
           cdType,
@@ -239,7 +243,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: localizedPath,
-        component: path.resolve("./src/client/containers/Song/index.tsx"),
+        component: path.resolve("./src/client/features/Song/container.tsx"),
         context: {
           key: node.key,
           locale: lang,
@@ -256,7 +260,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: localizedPath,
-        component: path.resolve("./src/client/containers/Member/index.tsx"),
+        component: path.resolve("./src/client/features/Member/container.tsx"),
         context: {
           name: node.name,
           locale: lang,

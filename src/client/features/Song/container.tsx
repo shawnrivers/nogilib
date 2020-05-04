@@ -1,6 +1,6 @@
 import { graphql } from "gatsby";
 import * as React from "react";
-import { Song } from "client/components/templates/Song";
+import { Song } from "client/features/Song/template";
 import { toCdNumber } from "utils/strings";
 import { SongResult } from "server/actors/Songs/models";
 import { MemberResult } from "server/actors/Members/models";

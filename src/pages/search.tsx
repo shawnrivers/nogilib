@@ -1,6 +1,6 @@
 import * as React from "react";
 import { injectIntl } from "react-intl";
-import { Search, SearchResult } from "client/components/templates/Search";
+import { Search, SearchResult } from "client/features/Search/template";
 import { useScrollRestoration } from "client/hooks/useScrollRestoration";
 import "client/styles/app.scss";
 import { SearchResultType } from "client/utils/constants";

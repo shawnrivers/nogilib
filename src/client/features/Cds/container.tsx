@@ -1,6 +1,6 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-import { Cds } from "client/components/templates/Cds";
+import { Cds } from "client/features/Cds/template";
 import { CdTabType } from "client/types/tabs";
 import { CdResult } from "server/actors/Cds/models";
 

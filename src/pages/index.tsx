@@ -1,5 +1,5 @@
 import * as React from "react";
 import "client/styles/app.scss";
-import { Starting } from "client/components/templates/Starting";
+import { Starting } from "client/features/Starting/template";
 
 export default () => <Starting />;
