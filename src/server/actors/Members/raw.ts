@@ -823,12 +823,8 @@ const sasakikotoko: MemberRaw = {
   origin: Birthplace.Saitama,
   sites: [
     {
-      title: SocialMedia.OfficialBlog,
-      url: "https://blog.nogizaka46.com/kotoko.sasaki/",
-    },
-    {
-      title: SocialMedia.Profile,
-      url: "https://www.nogizaka46.com/member/detail/sasakikotoko.php",
+      title: SocialMedia.Instagram,
+      url: "https://www.instagram.com/sasaki_kotoko828/",
     },
   ],
   photoAlbums: [],
@@ -2489,6 +2485,10 @@ const kawamuramahiro: MemberRaw = {
     {
       title: SocialMedia.Instagram,
       url: "https://www.instagram.com/mahiro_kawamura_official/",
+    },
+    {
+      title: SocialMedia.Twitter,
+      url: "https://twitter.com/mahiro_chan0723",
     },
   ],
   photoAlbums: [],
