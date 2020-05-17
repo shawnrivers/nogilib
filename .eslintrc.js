@@ -2,9 +2,10 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   extends: [
     "eslint:recommended",
+    "prettier",
+    "prettier/react",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
@@ -28,7 +29,7 @@ module.exports = {
     "react/display-name": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "react/prop-types": 'off',
+    "react/prop-types": "off",
     "import/order": "warn",
     "no-console": "warn",
   },
@@ -44,5 +45,6 @@ module.exports = {
   },
   env: {
     browser: true,
+    node: true,
   },
 };
