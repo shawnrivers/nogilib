@@ -6268,10 +6268,10 @@ gatsby-graphiql-explorer@^0.4.1:
   dependencies:
     "@babel/runtime" "^7.9.6"
 
-gatsby-image@^2.4.3:
-  version "2.4.3"
-  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-2.4.3.tgz#7fbc957382bfab39ab0e7b9e12c063cea6c0d4c6"
-  integrity sha512-CosuTTnGJ6iw04YwT9AvGo4b1AcAajDNviCj/4zh8j4R8sWOtmEXxFOCRwyq9cGoquDikVY9jRby2KUe0QPKeA==
+gatsby-image@^2.4.4:
+  version "2.4.4"
+  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-2.4.4.tgz#ef8166310d3767fd6f622405fc326ecfd1582f63"
+  integrity sha512-4OA6NM1Uk+DQ/YXFApsgCN34tJPA3GVdhwNbWUSExNnXSfpz3WdlBdoOQT+oKthW2js/mSv0PrCn9pzX4+QT9g==
   dependencies:
     "@babel/runtime" "^7.9.6"
     object-fit-images "^3.2.4"
@@ -11550,7 +11550,7 @@ postcss-value-parser@^3.0.0, postcss-value-parser@^3.2.3, postcss-value-parser@^
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-3.3.1.tgz#9ff822547e2893213cf1c30efa51ac5fd1ba8281"
   integrity sha512-pISE66AbVkp4fDQ7VHBwRNXzAAKJjw4Vw7nWI/+Q3vuly7SNfgYXvm6i5IgFylHGK5sP/xHAbB7N49OS4gWNyQ==
 
-postcss-value-parser@^4.0.2, postcss-value-parser@^4.0.3, postcss-value-parser@^4.1.0:
+postcss-value-parser@^4.0.2, postcss-value-parser@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-4.1.0.tgz#443f6a20ced6481a2bda4fa8532a6e55d789a2cb"
   integrity sha512-97DXOFbQJhk71ne5/Mt6cOu6yxsSfM0QGQyl0L25Gca4yGWEGJaig7l7gbCX623VqTBNGLRLaVUCnNkcedlRSQ==
@@ -11575,15 +11575,6 @@ postcss@^6.0.1, postcss@^6.0.14, postcss@^6.0.17, postcss@^6.0.23, postcss@^6.0.
     supports-color "^5.4.0"
 
 postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.17, postcss@^7.0.2, postcss@^7.0.21, postcss@^7.0.26, postcss@^7.0.27, postcss@^7.0.30, postcss@^7.0.7:
-  version "7.0.30"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.30.tgz#cc9378beffe46a02cbc4506a0477d05fcea9a8e2"
-  integrity sha512-nu/0m+NtIzoubO+xdAlwZl/u5S5vi/y6BCsoL8D+8IxsD3XvBS8X4YEADNIVXKVuQvduiucnRv+vPIqj56EGMQ==
-  dependencies:
-    chalk "^2.4.2"
-    source-map "^0.6.1"
-    supports-color "^6.1.0"
-
-postcss@^7.0.30:
   version "7.0.30"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.30.tgz#cc9378beffe46a02cbc4506a0477d05fcea9a8e2"
   integrity sha512-nu/0m+NtIzoubO+xdAlwZl/u5S5vi/y6BCsoL8D+8IxsD3XvBS8X4YEADNIVXKVuQvduiucnRv+vPIqj56EGMQ==
