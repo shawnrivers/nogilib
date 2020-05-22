@@ -12045,10 +12045,10 @@ react-hot-loader@^4.12.21:
     shallowequal "^1.1.0"
     source-map "^0.7.3"
 
-react-intl@^4.5.7:
-  version "4.5.7"
-  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-4.5.7.tgz#1b248f74369721fc430ddca1a353dc9fd50c4f47"
-  integrity sha512-ueBr9kUWyC0fmCj32PDiLNvMmDz53c/S4hYHw1c4R+psiFRdJJYpLBPotH3/lEJfo/OAk51uADvf6nDRebGUHA==
+react-intl@^4.5.8:
+  version "4.5.8"
+  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-4.5.8.tgz#c4cdaa390daca2fdd36436581852c0c6a3486a6c"
+  integrity sha512-QQU1el749E3iF5DVOnkAimwu4FnJrPfFm8IU8GKh79x4mn7lhuU5eK3L874/mxUKAEIyPelvSi/+B7a4pNlEuA==
   dependencies:
     "@formatjs/intl-displaynames" "^1.2.10"
     "@formatjs/intl-listformat" "^1.4.8"
