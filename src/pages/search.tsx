@@ -52,10 +52,12 @@ export type SongDoc = {
     number: string;
     title: string;
   };
-  album: {
-    number: string;
-    title: string;
-  };
+  album:
+    | {
+        number: string;
+        title: string;
+      }
+    | undefined;
   type: SearchResultType.Songs;
 };
 
@@ -107,47 +109,53 @@ export const SearchContainer = injectIntl(({ intl }: { intl: any }) => {
     let songs: SearchResult[] = [];
 
     for (const result of results) {
-      switch (result.type) {
-        case SearchResultType.Members:
-          members.push({
-            to: `/${result.type}/${result.nameKey}`,
-            imgSrc: result.profileImage,
-            heading: `${result.nameNotations.lastName} ${result.nameNotations.firstName}`,
-            caption: `${result.nameNotations.lastNameEn} ${result.nameNotations.firstNameEn}`,
-          });
-          break;
-        case SearchResultType.Singles:
-          singles.push({
-            to: `/${result.type}/${result.number}`,
-            imgSrc: result.artwork,
-            heading: result.title,
-            caption: `${toCdNumber(result.number)} single`,
-          });
-          break;
-        case SearchResultType.Albums:
-          albums.push({
-            to: `/${result.type}/${result.number}`,
-            imgSrc: result.artwork,
-            heading: result.title,
-            caption: `${toCdNumber(result.number)} album`,
-          });
-          break;
-        case SearchResultType.Songs:
-          songs.push({
-            to: `/${result.type}/${result.key}`,
-            imgSrc: result.artwork,
-            heading: result.title,
-            caption: `#${intl.formatMessage({
-              id: result.songType,
-            })}`,
-            secondCaption:
-              result.single.number !== ""
-                ? `#${toCdNumber(result.single.number)} single`
-                : `#${toCdNumber(result.album.number)} album`,
-          });
-          break;
-        default:
-          break;
+      if (result.type === SearchResultType.Members) {
+        members.push({
+          to: `/${result.type}/${result.nameKey}`,
+          imgSrc: result.profileImage,
+          heading: `${result.nameNotations.lastName} ${result.nameNotations.firstName}`,
+          caption: `${result.nameNotations.lastNameEn} ${result.nameNotations.firstNameEn}`,
+        });
+      }
+
+      if (result.type === SearchResultType.Singles) {
+        singles.push({
+          to: `/${result.type}/${result.number}`,
+          imgSrc: result.artwork,
+          heading: result.title,
+          caption: `${toCdNumber(result.number)} single`,
+        });
+      }
+
+      if (result.type === SearchResultType.Albums) {
+        albums.push({
+          to: `/${result.type}/${result.number}`,
+          imgSrc: result.artwork,
+          heading: result.title,
+          caption: `${toCdNumber(result.number)} album`,
+        });
+      }
+
+      if (result.type === SearchResultType.Songs) {
+        let secondCaption = "";
+
+        if (result.single.number !== "") {
+          secondCaption = `#${toCdNumber(result.single.number)} single`;
+        } else {
+          if (result.album !== undefined) {
+            secondCaption = `#${toCdNumber(result.album.number)} album`;
+          }
+        }
+
+        songs.push({
+          to: `/${result.type}/${result.key}`,
+          imgSrc: result.artwork,
+          heading: result.title,
+          caption: `#${intl.formatMessage({
+            id: result.songType,
+          })}`,
+          secondCaption,
+        });
       }
     }
 
