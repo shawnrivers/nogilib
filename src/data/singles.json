@@ -2434,7 +2434,7 @@
       {
         "number": 6,
         "title": "Tender days",
-        "key": "tendergays",
+        "key": "tenderdays",
         "inCdType": [
           "T"
         ],

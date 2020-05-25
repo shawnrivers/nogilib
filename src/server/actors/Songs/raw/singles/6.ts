@@ -1,0 +1,200 @@
+import { SongRaw } from "server/actors/Songs/models";
+import { createSongRaw } from "server/actors/Songs/raw/creator";
+import { FukujinType, SongType } from "server/constants/commons";
+import { MemberName } from "server/constants/names";
+import { SongTitle } from "server/constants/songs";
+
+export const SIXTH_SINGLE_SONGS: SongRaw[] = [
+  createSongRaw({
+    title: SongTitle.GirlsRule,
+    type: SongType.Title,
+    creators: {
+      lyrics: ["秋元康"],
+      compose: ["後藤康二"],
+      arrange: ["後藤康二"],
+      direct: ["柳沢翔"],
+    },
+    center: [MemberName.ShiraishiMai],
+    fukujin: FukujinType.RowOneTwo,
+    formations: {
+      firstRow: [
+        MemberName.MatsumuraSayuri,
+        MemberName.ShiraishiMai,
+        MemberName.HashimotoNanami,
+      ],
+      secondRow: [
+        MemberName.SakuraiReika,
+        MemberName.IkutaErika,
+        MemberName.IkomaRina,
+        MemberName.NishinoNanase,
+        MemberName.TakayamaKazumi,
+      ],
+      thirdRow: [
+        MemberName.ItouMarika,
+        MemberName.InoueSayuri,
+        MemberName.NakadaKana,
+        MemberName.WakatsukiYumi,
+        MemberName.HoshinoMinami,
+        MemberName.AkimotoManatsu,
+        MemberName.FukagawaMai,
+        MemberName.SaitouYuuri,
+      ],
+    },
+  }),
+  createSongRaw({
+    title: SongTitle.Senpuuki,
+    type: SongType.Under,
+    creators: {
+      lyrics: ["秋元康"],
+      compose: ["角野寿和"],
+      arrange: ["野村陽一郎"],
+      direct: ["池田一真"],
+    },
+    center: [MemberName.SaitouAsuka],
+    formations: {
+      firstRow: [
+        MemberName.HiguchiHina,
+        MemberName.SaitouAsuka,
+        MemberName.NakamotoHimeka,
+      ],
+      secondRow: [
+        MemberName.NoujouAmi,
+        MemberName.EtouMisa,
+        MemberName.KawamuraMahiro,
+      ],
+      thirdRow: [
+        MemberName.ItouNene,
+        MemberName.NagashimaSeira,
+        MemberName.SaitouChiharu,
+        MemberName.IchikiRena,
+      ],
+      fourthRow: [
+        MemberName.YamatoRina,
+        MemberName.KawagoHina,
+        MemberName.WadaMaaya,
+        MemberName.KashiwaYukina,
+        MemberName.HatanakaSeira,
+        MemberName.MiyazawaSeira,
+      ],
+    },
+  }),
+  createSongRaw({
+    title: SongTitle.SekaideichibanKodokuraLover,
+    type: SongType.Selected,
+    creators: {
+      lyrics: ["秋元康"],
+      compose: ["河原嶺旭"],
+      arrange: ["百石元"],
+      direct: ["丸山健志"],
+    },
+    center: [MemberName.ShiraishiMai],
+    formations: {
+      firstRow: [
+        MemberName.MatsumuraSayuri,
+        MemberName.ShiraishiMai,
+        MemberName.HashimotoNanami,
+      ],
+      secondRow: [
+        MemberName.SakuraiReika,
+        MemberName.IkutaErika,
+        MemberName.IkomaRina,
+        MemberName.NishinoNanase,
+        MemberName.TakayamaKazumi,
+      ],
+      thirdRow: [
+        MemberName.ItouMarika,
+        MemberName.InoueSayuri,
+        MemberName.NakadaKana,
+        MemberName.WakatsukiYumi,
+        MemberName.HoshinoMinami,
+        MemberName.AkimotoManatsu,
+        MemberName.FukagawaMai,
+        MemberName.SaitouYuuri,
+      ],
+    },
+  }),
+  createSongRaw({
+    title: SongTitle.Koumoriyo,
+    type: SongType.Unit,
+    creators: {
+      lyrics: ["秋元康"],
+      compose: ["南田健吾"],
+      arrange: ["高梨康治"],
+    },
+    formations: {
+      firstRow: [
+        MemberName.ShiraishiMai,
+        MemberName.NakamotoHimeka,
+        MemberName.NoujouAmi,
+        MemberName.WakatsukiYumi,
+      ],
+    },
+  }),
+  createSongRaw({
+    title: SongTitle.Hokanohoshikara,
+    type: SongType.Unit,
+    creators: {
+      lyrics: ["秋元康"],
+      compose: ["Sugaya Bros.", "松村PONY"],
+      arrange: ["Sugaya Bros."],
+      direct: ["岡川太郎"],
+    },
+    center: [MemberName.NishinoNanase],
+    formations: {
+      firstRow: [
+        MemberName.ItouMarika,
+        MemberName.InoueSayuri,
+        MemberName.SaitouYuuri,
+        MemberName.SakuraiReika,
+        MemberName.NakadaKana,
+        MemberName.NishinoNanase,
+        MemberName.WakatsukiYumi,
+      ],
+    },
+  }),
+  createSongRaw({
+    title: SongTitle.Ningentoiugakki,
+    type: SongType.FirstGeneration,
+    creators: {
+      lyrics: ["秋元康"],
+      compose: ["鐘撞行孝"],
+      arrange: ["TATOO"],
+    },
+    formations: {
+      firstRow: [
+        MemberName.AkimotoManatsu,
+        MemberName.IkutaErika,
+        MemberName.IkomaRina,
+        MemberName.IchikiRena,
+        MemberName.ItouNene,
+        MemberName.ItouMarika,
+        MemberName.InoueSayuri,
+        MemberName.EtouMisa,
+        MemberName.KashiwaYukina,
+        MemberName.KawagoHina,
+        MemberName.KawamuraMahiro,
+        MemberName.SaitouAsuka,
+        MemberName.SaitouChiharu,
+        MemberName.SaitouYuuri,
+        MemberName.SakuraiReika,
+        MemberName.ShiraishiMai,
+        MemberName.TakayamaKazumi,
+        MemberName.NakadaKana,
+        MemberName.NakamotoHimeka,
+        MemberName.NagashimaSeira,
+        MemberName.NishinoNanase,
+        MemberName.NoujouAmi,
+        MemberName.HashimotoNanami,
+        MemberName.HatanakaSeira,
+        MemberName.HiguchiHina,
+        MemberName.FukagawaMai,
+        MemberName.HoshinoMinami,
+        MemberName.MatsumuraSayuri,
+        MemberName.MiyazawaSeira,
+        MemberName.YamatoRina,
+        MemberName.WakatsukiYumi,
+        MemberName.WadaMaaya,
+      ],
+    },
+  }),
+];
