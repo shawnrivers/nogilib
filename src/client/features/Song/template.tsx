@@ -209,77 +209,82 @@ export const Song = ({
               </div>
             </motion.div>
             <motion.div variants={contentVariants} className={styles.content}>
-              <section className={styles.section}>
-                <h2 className={styles.subheading}>
-                  <Message text="performers" />
-                </h2>
-                <PerformersTag
-                  singleNumber={performersTag.singleNumber}
-                  tagName={performersTag.name}
-                />
-                <div className={styles.formation}>
-                  {formation.length > 1 ? (
-                    formation.map((row, index) => (
-                      <div key={index} className={styles.row}>
-                        <h4 className={styles.rowIndex}>
-                          <LocalizedNumber num={index + 1} type="row" />
-                        </h4>
-                        <div className={styles.grid}>
-                          {row.map(memberName => {
-                            if (memberName !== KOJIHARU_NAME) {
-                              const member = members[memberName];
-                              return (
-                                <div className={styles.card} key={member.name}>
-                                  <MemberCard
-                                    nameKey={memberName}
-                                    name={member.nameNotations}
-                                    image={member.profileImage}
-                                    isCenter={centers.includes(member.name)}
-                                  />
-                                </div>
-                              );
-                            } else {
-                              return (
-                                <div className={styles.card} key={memberName}>
-                                  <KojiharuCard
-                                    isCenter={centers.includes(memberName)}
-                                  />
-                                </div>
-                              );
-                            }
-                          })}
+              {formation.length > 0 ? (
+                <section className={styles.section}>
+                  <h2 className={styles.subheading}>
+                    <Message text="performers" />
+                  </h2>
+                  <PerformersTag
+                    singleNumber={performersTag.singleNumber}
+                    tagName={performersTag.name}
+                  />
+                  <div className={styles.formation}>
+                    {formation.length > 1 ? (
+                      formation.map((row, index) => (
+                        <div key={index} className={styles.row}>
+                          <h4 className={styles.rowIndex}>
+                            <LocalizedNumber num={index + 1} type="row" />
+                          </h4>
+                          <div className={styles.grid}>
+                            {row.map(memberName => {
+                              if (memberName !== KOJIHARU_NAME) {
+                                const member = members[memberName];
+                                return (
+                                  <div
+                                    className={styles.card}
+                                    key={member.name}
+                                  >
+                                    <MemberCard
+                                      nameKey={memberName}
+                                      name={member.nameNotations}
+                                      image={member.profileImage}
+                                      isCenter={centers.includes(member.name)}
+                                    />
+                                  </div>
+                                );
+                              } else {
+                                return (
+                                  <div className={styles.card} key={memberName}>
+                                    <KojiharuCard
+                                      isCenter={centers.includes(memberName)}
+                                    />
+                                  </div>
+                                );
+                              }
+                            })}
+                          </div>
                         </div>
+                      ))
+                    ) : (
+                      <div className={styles.grid}>
+                        {formation[0].map(memberName => {
+                          if (memberName !== KOJIHARU_NAME) {
+                            const member = members[memberName];
+                            return (
+                              <div className={styles.card} key={member.name}>
+                                <MemberCard
+                                  nameKey={member.name}
+                                  name={member.nameNotations}
+                                  image={member.profileImage}
+                                  isCenter={centers.includes(memberName)}
+                                />
+                              </div>
+                            );
+                          } else {
+                            return (
+                              <div className={styles.card} key={memberName}>
+                                <KojiharuCard
+                                  isCenter={centers.includes(memberName)}
+                                />
+                              </div>
+                            );
+                          }
+                        })}
                       </div>
-                    ))
-                  ) : (
-                    <div className={styles.grid}>
-                      {formation[0].map(memberName => {
-                        if (memberName !== KOJIHARU_NAME) {
-                          const member = members[memberName];
-                          return (
-                            <div className={styles.card} key={member.name}>
-                              <MemberCard
-                                nameKey={member.name}
-                                name={member.nameNotations}
-                                image={member.profileImage}
-                                isCenter={centers.includes(memberName)}
-                              />
-                            </div>
-                          );
-                        } else {
-                          return (
-                            <div className={styles.card} key={memberName}>
-                              <KojiharuCard
-                                isCenter={centers.includes(memberName)}
-                              />
-                            </div>
-                          );
-                        }
-                      })}
-                    </div>
-                  )}
-                </div>
-              </section>
+                    )}
+                  </div>
+                </section>
+              ) : null}
               {creators.lyrics.length +
                 creators.compose.length +
                 creators.arrange.length +
