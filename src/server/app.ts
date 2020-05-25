@@ -2,13 +2,13 @@ import * as fs from "fs";
 import { Albums } from "server/actors/Albums";
 import { albumsRawArray } from "server/actors/Albums/raw";
 import { Members } from "server/actors/Members";
+import { membersRawArray } from "server/actors/Members/raw";
 import { Singles } from "server/actors/Singles";
+import { singlesRawArray } from "server/actors/Singles/raw";
 import { Songs } from "server/actors/Songs";
 import { songsRawArray } from "server/actors/Songs/raw";
 import { Units } from "server/actors/Units";
 import { unitsRawArray } from "server/actors/Units/raw";
-import { membersRawArray } from "server/actors/Members/raw";
-import { singlesRawArray } from "server/actors/Singles/raw";
 
 const songs = new Songs(songsRawArray);
 const albums = new Albums(albumsRawArray);
