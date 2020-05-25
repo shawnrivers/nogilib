@@ -2,99 +2,99 @@ import { arrayToObject } from "utils/arrays";
 
 export enum SongTitle {
   Sekainorinjinyo = "世界中の隣人よ",
-  Hogoshoku = "しあわせの保護色",
-  Staywithme = "サヨナラ Stay with me",
+  Shiawasenohogoshoku = "しあわせの保護色",
+  SayonaraStayWithMe = "サヨナラ Stay with me",
   Jaane = "じゃあね。",
   Anastasia = "アナスターシャ",
-  Brandnewday = "毎日がBrand new day",
-  Isee = "I see…",
-  Fantastic = "ファンタスティック三色パン",
+  MainichigaBrandNewDay = "毎日がBrand new day",
+  ISee = "I see…",
+  FantasticSanshokupan = "ファンタスティック三色パン",
   Bokunoomoikomi = "僕の思い込み",
-  Domybest = "～Do my best～じゃ意味はない",
-  Tokidokiomoidashite = "時々 思い出してください",
-  Toshoshitsu = "図書室の君へ",
-  Romendensha = "路面電車の街",
-  Bokunokoto = "僕のこと、知ってる?",
-  Yoakemade = "夜明けまで強がらなくてもいい",
-  Singout = "Sing Out!",
+  DoMyBestJaimiganai = "～Do my best～じゃ意味はない",
+  Tokidokiomoidashitekudasai = "時々 思い出してください",
+  Toshoshitsunokimihe = "図書室の君へ",
+  Romendenshanomachi = "路面電車の街",
+  Bokunokotoshitteru = "僕のこと、知ってる?",
+  Yoakemadetsuyogaranakutemoii = "夜明けまで強がらなくてもいい",
+  SingOut = "Sing Out!",
   Kassouro = "滑走路",
   Noyounasonzai = "のような存在",
-  Amiloving = "Am I Loving?",
+  AmILoving = "Am I Loving?",
   Heikousen = "平行線",
   Yonbanmenohikari = "4番目の光",
   Aimai = "曖昧",
-  Kaerimichi = "帰り道は遠回りしたくなる",
-  Jikochu = "ジコチューで行こう!",
+  Kaerimichihatoomawarishitakunaru = "帰り道は遠回りしたくなる",
+  Jikochudeikou = "ジコチューで行こう!",
   Synchronicity = "シンクロニシティ",
-  Itsukadekiru = "いつかできるから今日できる",
+  Itsukadekirukarakyoudekiru = "いつかできるから今日できる",
   Nigemizu = "逃げ水",
   Influencer = "インフルエンサー",
   Sayonaranoimi = "サヨナラの意味",
-  Hadasummer = "裸足でSummer",
-  Harujion = "ハルジオンが咲く頃",
-  Imahana = "今、話したい誰かがいる",
-  Taiyouknock = "太陽ノック",
+  HadashideSummer = "裸足でSummer",
+  Harujiongasakugoro = "ハルジオンが咲く頃",
+  ImaHanashitaidarekagairu = "今、話したい誰かがいる",
+  TaiyouKnock = "太陽ノック",
   Inochihautsukushii = "命は美しい",
   Nandomenoaozoraka = "何度目の青空か?",
-  Natsunofreeeasy = "夏のFree&Easy",
+  NatsunoFreeAndEasy = "夏のFree&Easy",
   Kiduitarakataomoi = "気づいたら片想い",
   Valletta = "バレッタ",
-  Girlsrule = "ガールズルール",
+  GirlsRule = "ガールズルール",
   Kiminonahakibou = "君の名は希望",
-  Seifukunomannequin = "制服のマネキン",
-  Hashirebicycle = "走れ!Bicycle",
+  SeifukunoMannequin = "制服のマネキン",
+  HashireBicycle = "走れ!Bicycle",
   Oideshampo = "おいでシャンプー",
-  Gurugurucurtain = "ぐるぐるカーテン",
+  GuruguruCurtain = "ぐるぐるカーテン",
   Nichijou = "日常",
   Sankakunoakichi = "三角の空き地",
   Atarashiisekai = "新しい世界",
-  Myrule = "My rule",
+  MyRule = "My rule",
   Under = "アンダー",
   Fusuenhaikiteiru = "風船は生きている",
   Bulanko = "ブランコ",
-  Secretgravity = "シークレットグラフィティー",
+  SecretGravity = "シークレットグラフィティー",
   Futoogo = "不等号",
   Shittonokenri = "嫉妬の権利",
-  Wakaregiwa = "別れ際、もっと好きになる",
-  Kimihabokuto = "君は僕と会わない方がよかったのかな",
-  Anohibokuha = "あの日 僕は咄嗟に嘘をついた",
+  WakaregiwaMottosukininaru = "別れ際、もっと好きになる",
+  Kimihabokutotoawanaihougayokattanokana = "君は僕と会わない方がよかったのかな",
+  Anohibokuhausowotsuita = "あの日 僕は咄嗟に嘘をついた",
   Kokoniiruriyuu = "ここにいる理由",
   Umaretamamade = "生まれたままで",
-  Hatsukoinohitowo = "初恋の人を今でも",
+  Hatsukoinohitowoimademo = "初恋の人を今でも",
   Senpuuki = "扇風機",
-  Jyusannichinokinyoubi = "13日の金曜日",
-  Harunomelody = "春のメロディー",
-  Namidagamadakanashimi = "涙がまだ悲しみだった頃",
+  Jyuusannichinokinyoubi = "13日の金曜日",
+  HarunoMelody = "春のメロディー",
+  Namidagamadakanashimidattakoro = "涙がまだ悲しみだった頃",
   Ookaminikuchibuewo = "狼に口笛を",
   Hidarimunenoyuuki = "左胸の勇気",
-  Caravan = "キャラバンは眠らない",
+  CaravanHanemuranai = "キャラバンは眠らない",
   Tsuduku = "つづく",
   Kokuhakunojunban = "告白の順番",
-  Chopinnousotsuki = "ショパンの嘘つき",
+  ChopinNousotsuki = "ショパンの嘘つき",
   Shiritaikoto = "知りたいこと",
   Soratobira = "空扉",
   Jibunjanaikanji = "自分じゃない感じ",
-  Kokoronomonolog = "心のモノローグ",
+  KokoronoMonolog = "心のモノローグ",
   Chikyuugamaruinara = "地球が丸いなら",
-  Annarisukidatta = "あんなに好きだったのに...",
+  Annanisukidattanoni = "あんなに好きだったのに...",
   Against = "Against",
   Kumoninarebaii = "雲になればいい",
-  Scoutman = "スカウトマン",
+  ScoutMan = "スカウトマン",
   Tokitokimekimeki = "トキトキメキメキ",
   Kotodamahou = "言霊砲",
   Fumenshou = "不眠症",
   Maaiika = "まあいいか?",
-  Shirenosoujinin = "失恋お掃除人",
+  Shitsurenosoujinin = "失恋お掃除人",
   Bokunoshoudou = "僕の衝動",
   Atarashiikafun = "新しい花粉 〜ミュージカル「見知らぬ世界」より〜",
-  Onnahahitorija = "女は一人じゃ眠れない",
-  Hitonatsunonagasa = "ひと夏の長さより…",
+  Onnahahitorijanemurenai = "女は一人じゃ眠れない",
+  Hitonatsunonagasayori = "ひと夏の長さより…",
   Naitatteiijanaika = "泣いたっていいじゃないか?",
-  Liveshin = "ライブ神",
+  LiveShin = "ライブ神",
   Mirainokotae = "未来の答え",
   Jinseiwokangaetakunaru = "人生を考えたくなる",
-  Igaibreak = "意外BREAK",
-  Anotherghost = "Another Ghost",
+  IgaiBreak = "意外BREAK",
+  AnotherGhost = "Another Ghost",
   Sanbanmenokaze = "三番目の風",
   Atarisawarinonaihanashi = "当たり障りのない話",
   Kodokunaaozora = "孤独な青空",
@@ -103,11 +103,11 @@ export enum SongTitle {
   Kiminiokuruhanaganai = "君に贈る花がない",
   Naimononedari = "ないものねだり",
   Bokudakenohikari = "僕だけの光",
-  Offshoregirl = "オフショアガール",
+  OffshoreGirl = "オフショアガール",
   Inochinoshinjitsu = "命の真実 ミュージカル「林檎売りとカメムシ」",
   Hakumaisama = "白米様",
   Ikuatenonaibokutachi = "行くあてのない僕たち",
-  Harukanarubhutan = "遥かなるブータン",
+  HarukanaruBhutan = "遥かなるブータン",
   Tsuyogarutsubomi = "強がる蕾",
   Kyuushamen = "急斜面",
   Tsuribori = "釣り堀",
@@ -117,45 +117,45 @@ export enum SongTitle {
   Kanashiminowasurekata = "悲しみの忘れ方",
   Sukima = "隙間",
   Mousukoshinoyume = "もう少しの夢",
-  Sakanatachinolovesong = "魚たちのLOVE SONG",
+  SakanatachinoLoveSong = "魚たちのLOVE SONG",
   Muhyoujyou = "無表情",
   Hanenokioku = "羽根の記憶",
   Seifukuwonuidesayonarawo = "制服を脱いでサヨナラを…",
-  Arakajimekatarareruromance = "あらかじめ語られるロマンス",
+  ArakajimekatarareruRomance = "あらかじめ語られるロマンス",
   Tachinaorichuu = "立ち直り中",
-  Gomennezutto = "ごめんね ずっと…",
+  GomenneZutto = "ごめんね ずっと…",
   Border = "ボーダー",
   Toomawarinoaijou = "遠回りの愛情",
   Korogattakanewonarase = "転がった鐘を鳴らせ!",
   Watashiokiru = "私、起きる。",
-  Tendergays = "Tender days",
+  TenderDays = "Tender days",
   Nanimodekizunisobaniiru = "何もできずにそばにいる",
   Sonosakinodeguchi = "その先の出口!",
-  Mukuchinalion = "無口なライオン",
+  MukuchinaLion = "無口なライオン",
   Bokugaikanakyadaregaikunda = "僕が行かなきゃ誰が行くんだ?",
-  Romancenostart = "ロマンスのスタート",
-  Toikimethod = "吐息のメソッド",
+  RomanceNoStart = "ロマンスのスタート",
+  ToikiMethod = "吐息のメソッド",
   Kodokukyoudai = "孤独兄弟",
   Dankeschan = "ダンケシェーン",
   Tsukinoookisa = "月の大きさ",
-  Watanotamenidarekanotameni = "私のために 誰かのために",
+  WatashinotameniDarekanotameni = "私のために 誰かのために",
   Sonnabakana = "そんなバカな…",
   Yasashisatoha = "やさしさとは",
-  Sekaideichibankodokuralover = "世界で一番 孤独なLover",
+  SekaideichibanKodokuraLover = "世界で一番 孤独なLover",
   Koumoriyo = "コウモリよ",
   Hokanohoshikara = "他の星から",
   Ningentoiugakki = "人間という楽器",
   Shakism = "シャキイズム",
-  Romanticikayaki = "ロマンティックいか焼き",
+  RomanticIkayaki = "ロマンティックいか焼き",
   Dekopin = "でこぴん",
-  Psychokinesesnokanousei = "サイコキネシスの可能性",
+  PsychokinesesNokanousei = "サイコキネシスの可能性",
   Yubibouenkyou = "指望遠鏡",
   Yasashisanaramaniatteiru = "やさしさなら間に合ってる",
   Kokojanaidokoka = "ここじゃないどこか",
-  Shibuyablues = "渋谷ブルース",
+  ShibuyaBlues = "渋谷ブルース",
   Sekkachinakatatsumuri = "せっかちなかたつむり",
   Hitohanazehashirunoka = "人はなぜ走るのか?",
-  Otogadenaiguitar = "音が出ないギター",
+  OtogadenaiGuitar = "音が出ないギター",
   Kairyuunoshimayo = "海流の島よ",
   Kokoronokusuri = "心の薬",
   Guuzenwoiiwakenishite = "偶然を言い訳にして",
@@ -165,7 +165,7 @@ export enum SongTitle {
   Aitakattakamoshirenai = "会いたかったかもしれない",
   Ushinaitakunaikara = "失いたくないから",
   Shiroikumoninotte = "白い雲にのって",
-  Darekanomikata = "誰かは味方",
+  Darekahamikata = "誰かは味方",
   Kakumeinouma = "革命の馬",
   Bokugairubasho = "僕がいる場所",
   Anatanotamenihikitai = "あなたのために弾きたい",
@@ -175,40 +175,40 @@ export enum SongTitle {
   Hitoriyogari = "ひとりよがり",
   Kikkake = "きっかけ",
   Taiyounikudokarete = "太陽に口説かれて",
-  Yokuboureincarnation = "欲望のリインカーネーション",
+  YokubouReincarnation = "欲望のリインカーネーション",
   Kuukikann = "空気感",
   Kougouseikibou = "光合成希望",
-  Threefoldchoice = "Threefold choice",
-  Teitaionnokiss = "低体温のキス",
-  Shitsurenshitarakaowoarae = "失恋したら、顔を洗え!",
+  ThreefoldChoice = "Threefold choice",
+  TeitaionnoKiss = "低体温のキス",
+  ShitsurenshitaraKaowoarae = "失恋したら、顔を洗え!",
   Kakigoorinokataomoi = "かき氷の片想い",
   Kanjyourokugousen = "環状六号線",
   Kuchiyakusoku = "口約束",
   Skydiving = "スカイダイビング",
   Kimigaaoidekureta = "君が扇いでくれた",
-  Omoidefirst = "思い出ファースト",
+  OmoideFirst = "思い出ファースト",
   Setteiondo = "設定温度",
-  Rewindanohi = "Rewindあの日",
-  Gomennesmoothie = "ごめんね、スムージー",
+  RewindAnohi = "Rewindあの日",
+  GomenneSmoothie = "ごめんね、スムージー",
   Minikuiwatashi = "醜い私",
-  Karaikaranoyounidakishimetai = "硬い殻のように抱きしめたい",
+  Kataikaranoyounidakishimetai = "硬い殻のように抱きしめたい",
   Mangetsugakieta = "満月が消えた",
   Watabokori = "ワタボコリ",
-  Ryuuseidiscotic = "流星ディスコティック",
+  RyuuseiDiscotic = "流星ディスコティック",
   Boukyakutobigaku = "忘却と美学",
   Jibunnokoto = "自分のこと",
-  Unuborebeach = "自惚れビーチ",
+  UnuboreBeach = "自惚れビーチ",
   Sonohito = "その女",
   Dareyorimosobaniitai = "誰よりそばにいたい",
   Arigachinarenai = "ありがちな恋愛",
   Moshikimigainakereba = "もし君がいなければ",
-  Kissnoshuriken = "キスの手裏剣",
+  KissNoshuriken = "キスの手裏剣",
   Hoozuewotsuitehanemurenai = "頬杖をついては眠れない",
   Bocchitou = "ぼっち党",
   Sayuringoboshuuchuu = "さゆりんご募集中",
   Gorugonzora = "ゴルゴンゾーラ",
-  Mousuguzambidensetsu = "もうすぐ～ザンビ伝説～",
-  OVERTURE = "OVERTURE",
+  MousuguZambidensetsu = "もうすぐ～ザンビ伝説～",
+  Overture = "OVERTURE",
 }
 
 export const SongsTitleKeyArray: {
@@ -220,11 +220,11 @@ export const SongsTitleKeyArray: {
     key: "sekainorinjinyo",
   },
   {
-    title: SongTitle.Hogoshoku,
+    title: SongTitle.Shiawasenohogoshoku,
     key: "hogoshoku",
   },
   {
-    title: SongTitle.Staywithme,
+    title: SongTitle.SayonaraStayWithMe,
     key: "staywithme",
   },
   {
@@ -236,15 +236,15 @@ export const SongsTitleKeyArray: {
     key: "anastasia",
   },
   {
-    title: SongTitle.Brandnewday,
+    title: SongTitle.MainichigaBrandNewDay,
     key: "brandnewday",
   },
   {
-    title: SongTitle.Isee,
+    title: SongTitle.ISee,
     key: "isee",
   },
   {
-    title: SongTitle.Fantastic,
+    title: SongTitle.FantasticSanshokupan,
     key: "fantastic",
   },
   {
@@ -252,31 +252,31 @@ export const SongsTitleKeyArray: {
     key: "bokunoomoikomi",
   },
   {
-    title: SongTitle.Domybest,
+    title: SongTitle.DoMyBestJaimiganai,
     key: "domybest",
   },
   {
-    title: SongTitle.Tokidokiomoidashite,
+    title: SongTitle.Tokidokiomoidashitekudasai,
     key: "tokidokiomoidashite",
   },
   {
-    title: SongTitle.Toshoshitsu,
+    title: SongTitle.Toshoshitsunokimihe,
     key: "toshoshitsu",
   },
   {
-    title: SongTitle.Romendensha,
+    title: SongTitle.Romendenshanomachi,
     key: "romendensha",
   },
   {
-    title: SongTitle.Bokunokoto,
+    title: SongTitle.Bokunokotoshitteru,
     key: "bokunokoto",
   },
   {
-    title: SongTitle.Yoakemade,
+    title: SongTitle.Yoakemadetsuyogaranakutemoii,
     key: "yoakemade",
   },
   {
-    title: SongTitle.Singout,
+    title: SongTitle.SingOut,
     key: "singout",
   },
   {
@@ -288,7 +288,7 @@ export const SongsTitleKeyArray: {
     key: "noyounasonzai",
   },
   {
-    title: SongTitle.Amiloving,
+    title: SongTitle.AmILoving,
     key: "amiloving",
   },
   {
@@ -304,11 +304,11 @@ export const SongsTitleKeyArray: {
     key: "aimai",
   },
   {
-    title: SongTitle.Kaerimichi,
+    title: SongTitle.Kaerimichihatoomawarishitakunaru,
     key: "kaerimichi",
   },
   {
-    title: SongTitle.Jikochu,
+    title: SongTitle.Jikochudeikou,
     key: "jikochu",
   },
   {
@@ -316,7 +316,7 @@ export const SongsTitleKeyArray: {
     key: "synchronicity",
   },
   {
-    title: SongTitle.Itsukadekiru,
+    title: SongTitle.Itsukadekirukarakyoudekiru,
     key: "itsukadekiru",
   },
   {
@@ -332,19 +332,19 @@ export const SongsTitleKeyArray: {
     key: "sayonaranoimi",
   },
   {
-    title: SongTitle.Hadasummer,
+    title: SongTitle.HadashideSummer,
     key: "hadasummer",
   },
   {
-    title: SongTitle.Harujion,
+    title: SongTitle.Harujiongasakugoro,
     key: "harujion",
   },
   {
-    title: SongTitle.Imahana,
+    title: SongTitle.ImaHanashitaidarekagairu,
     key: "imahana",
   },
   {
-    title: SongTitle.Taiyouknock,
+    title: SongTitle.TaiyouKnock,
     key: "taiyouknock",
   },
   {
@@ -356,7 +356,7 @@ export const SongsTitleKeyArray: {
     key: "nandomenoaozoraka",
   },
   {
-    title: SongTitle.Natsunofreeeasy,
+    title: SongTitle.NatsunoFreeAndEasy,
     key: "natsunofreeeasy",
   },
   {
@@ -368,7 +368,7 @@ export const SongsTitleKeyArray: {
     key: "valletta",
   },
   {
-    title: SongTitle.Girlsrule,
+    title: SongTitle.GirlsRule,
     key: "girlsrule",
   },
   {
@@ -376,11 +376,11 @@ export const SongsTitleKeyArray: {
     key: "kiminonahakibou",
   },
   {
-    title: SongTitle.Seifukunomannequin,
+    title: SongTitle.SeifukunoMannequin,
     key: "seifukunomannequin",
   },
   {
-    title: SongTitle.Hashirebicycle,
+    title: SongTitle.HashireBicycle,
     key: "hashirebicycle",
   },
   {
@@ -388,7 +388,7 @@ export const SongsTitleKeyArray: {
     key: "oideshampo",
   },
   {
-    title: SongTitle.Gurugurucurtain,
+    title: SongTitle.GuruguruCurtain,
     key: "gurugurucurtain",
   },
   {
@@ -404,7 +404,7 @@ export const SongsTitleKeyArray: {
     key: "atarashiisekai",
   },
   {
-    title: SongTitle.Myrule,
+    title: SongTitle.MyRule,
     key: "myrule",
   },
   {
@@ -420,7 +420,7 @@ export const SongsTitleKeyArray: {
     key: "bulanko",
   },
   {
-    title: SongTitle.Secretgravity,
+    title: SongTitle.SecretGravity,
     key: "secretgravity",
   },
   {
@@ -432,15 +432,15 @@ export const SongsTitleKeyArray: {
     key: "shittonokenri",
   },
   {
-    title: SongTitle.Wakaregiwa,
+    title: SongTitle.WakaregiwaMottosukininaru,
     key: "wakaregiwa",
   },
   {
-    title: SongTitle.Kimihabokuto,
+    title: SongTitle.Kimihabokutotoawanaihougayokattanokana,
     key: "kimihabokuto",
   },
   {
-    title: SongTitle.Anohibokuha,
+    title: SongTitle.Anohibokuhausowotsuita,
     key: "anohibokuha",
   },
   {
@@ -452,7 +452,7 @@ export const SongsTitleKeyArray: {
     key: "umaretamamade",
   },
   {
-    title: SongTitle.Hatsukoinohitowo,
+    title: SongTitle.Hatsukoinohitowoimademo,
     key: "hatsukoinohitowo",
   },
   {
@@ -460,15 +460,15 @@ export const SongsTitleKeyArray: {
     key: "senpuuki",
   },
   {
-    title: SongTitle.Jyusannichinokinyoubi,
+    title: SongTitle.Jyuusannichinokinyoubi,
     key: "13nichinokinyoubi",
   },
   {
-    title: SongTitle.Harunomelody,
+    title: SongTitle.HarunoMelody,
     key: "harunomelody",
   },
   {
-    title: SongTitle.Namidagamadakanashimi,
+    title: SongTitle.Namidagamadakanashimidattakoro,
     key: "namidagamadakanashimi",
   },
   {
@@ -480,7 +480,7 @@ export const SongsTitleKeyArray: {
     key: "hidarimunenoyuuki",
   },
   {
-    title: SongTitle.Caravan,
+    title: SongTitle.CaravanHanemuranai,
     key: "caravan",
   },
   {
@@ -492,7 +492,7 @@ export const SongsTitleKeyArray: {
     key: "kokuhakunojunban",
   },
   {
-    title: SongTitle.Chopinnousotsuki,
+    title: SongTitle.ChopinNousotsuki,
     key: "chopinnousotsuki",
   },
   {
@@ -508,7 +508,7 @@ export const SongsTitleKeyArray: {
     key: "jibunjanaikanji",
   },
   {
-    title: SongTitle.Kokoronomonolog,
+    title: SongTitle.KokoronoMonolog,
     key: "kokoronomonolog",
   },
   {
@@ -516,7 +516,7 @@ export const SongsTitleKeyArray: {
     key: "chikyuugamaruinara",
   },
   {
-    title: SongTitle.Annarisukidatta,
+    title: SongTitle.Annanisukidattanoni,
     key: "annarisukidatta",
   },
   {
@@ -528,7 +528,7 @@ export const SongsTitleKeyArray: {
     key: "kumoninarebaii",
   },
   {
-    title: SongTitle.Scoutman,
+    title: SongTitle.ScoutMan,
     key: "scoutman",
   },
   {
@@ -548,7 +548,7 @@ export const SongsTitleKeyArray: {
     key: "maaiika",
   },
   {
-    title: SongTitle.Shirenosoujinin,
+    title: SongTitle.Shitsurenosoujinin,
     key: "shirenosoujinin",
   },
   {
@@ -560,11 +560,11 @@ export const SongsTitleKeyArray: {
     key: "atarashiikafun",
   },
   {
-    title: SongTitle.Onnahahitorija,
+    title: SongTitle.Onnahahitorijanemurenai,
     key: "onnahahitorija",
   },
   {
-    title: SongTitle.Hitonatsunonagasa,
+    title: SongTitle.Hitonatsunonagasayori,
     key: "hitonatsunonagasa",
   },
   {
@@ -572,7 +572,7 @@ export const SongsTitleKeyArray: {
     key: "naitatteiijanaika",
   },
   {
-    title: SongTitle.Liveshin,
+    title: SongTitle.LiveShin,
     key: "liveshin",
   },
   {
@@ -584,11 +584,11 @@ export const SongsTitleKeyArray: {
     key: "jinseiwokangaetakunaru",
   },
   {
-    title: SongTitle.Igaibreak,
+    title: SongTitle.IgaiBreak,
     key: "igaibreak",
   },
   {
-    title: SongTitle.Anotherghost,
+    title: SongTitle.AnotherGhost,
     key: "anotherghost",
   },
   {
@@ -624,7 +624,7 @@ export const SongsTitleKeyArray: {
     key: "bokudakenohikari",
   },
   {
-    title: SongTitle.Offshoregirl,
+    title: SongTitle.OffshoreGirl,
     key: "offshoregirl",
   },
   {
@@ -640,7 +640,7 @@ export const SongsTitleKeyArray: {
     key: "ikuatenonaibokutachi",
   },
   {
-    title: SongTitle.Harukanarubhutan,
+    title: SongTitle.HarukanaruBhutan,
     key: "harukanarubhutan",
   },
   {
@@ -680,7 +680,7 @@ export const SongsTitleKeyArray: {
     key: "mousukoshinoyume",
   },
   {
-    title: SongTitle.Sakanatachinolovesong,
+    title: SongTitle.SakanatachinoLoveSong,
     key: "sakanatachinolovesong",
   },
   {
@@ -696,7 +696,7 @@ export const SongsTitleKeyArray: {
     key: "seifukuwonuidesayonarawo",
   },
   {
-    title: SongTitle.Arakajimekatarareruromance,
+    title: SongTitle.ArakajimekatarareruRomance,
     key: "arakajimekatarareruromance",
   },
   {
@@ -704,7 +704,7 @@ export const SongsTitleKeyArray: {
     key: "tachinaorichuu",
   },
   {
-    title: SongTitle.Gomennezutto,
+    title: SongTitle.GomenneZutto,
     key: "gomennezutto",
   },
   {
@@ -724,8 +724,8 @@ export const SongsTitleKeyArray: {
     key: "watashiokiru",
   },
   {
-    title: SongTitle.Tendergays,
-    key: "tendergays",
+    title: SongTitle.TenderDays,
+    key: "tenderdays",
   },
   {
     title: SongTitle.Nanimodekizunisobaniiru,
@@ -736,7 +736,7 @@ export const SongsTitleKeyArray: {
     key: "sonosakinodeguchi",
   },
   {
-    title: SongTitle.Mukuchinalion,
+    title: SongTitle.MukuchinaLion,
     key: "mukuchinalion",
   },
   {
@@ -744,11 +744,11 @@ export const SongsTitleKeyArray: {
     key: "bokugaikanakyadaregaikunda",
   },
   {
-    title: SongTitle.Romancenostart,
+    title: SongTitle.RomanceNoStart,
     key: "romancenostart",
   },
   {
-    title: SongTitle.Toikimethod,
+    title: SongTitle.ToikiMethod,
     key: "toikimethod",
   },
   {
@@ -764,7 +764,7 @@ export const SongsTitleKeyArray: {
     key: "tsukinoookisa",
   },
   {
-    title: SongTitle.Watanotamenidarekanotameni,
+    title: SongTitle.WatashinotameniDarekanotameni,
     key: "watanotamenidarekanotameni",
   },
   {
@@ -776,7 +776,7 @@ export const SongsTitleKeyArray: {
     key: "yasashisatoha",
   },
   {
-    title: SongTitle.Sekaideichibankodokuralover,
+    title: SongTitle.SekaideichibanKodokuraLover,
     key: "sekaideichibankodokuralover",
   },
   {
@@ -796,7 +796,7 @@ export const SongsTitleKeyArray: {
     key: "shakism",
   },
   {
-    title: SongTitle.Romanticikayaki,
+    title: SongTitle.RomanticIkayaki,
     key: "romanticikayaki",
   },
   {
@@ -804,7 +804,7 @@ export const SongsTitleKeyArray: {
     key: "dekopin",
   },
   {
-    title: SongTitle.Psychokinesesnokanousei,
+    title: SongTitle.PsychokinesesNokanousei,
     key: "psychokinesesnokanousei",
   },
   {
@@ -820,7 +820,7 @@ export const SongsTitleKeyArray: {
     key: "kokojanaidokoka",
   },
   {
-    title: SongTitle.Shibuyablues,
+    title: SongTitle.ShibuyaBlues,
     key: "shibuyablues",
   },
   {
@@ -832,7 +832,7 @@ export const SongsTitleKeyArray: {
     key: "hitohanazehashirunoka",
   },
   {
-    title: SongTitle.Otogadenaiguitar,
+    title: SongTitle.OtogadenaiGuitar,
     key: "otogadenaiguitar",
   },
   {
@@ -872,8 +872,8 @@ export const SongsTitleKeyArray: {
     key: "shiroikumoninotte",
   },
   {
-    title: SongTitle.Darekanomikata,
-    key: "darekanomikata",
+    title: SongTitle.Darekahamikata,
+    key: "darekahamikata",
   },
   {
     title: SongTitle.Kakumeinouma,
@@ -912,7 +912,7 @@ export const SongsTitleKeyArray: {
     key: "taiyounikudokarete",
   },
   {
-    title: SongTitle.Yokuboureincarnation,
+    title: SongTitle.YokubouReincarnation,
     key: "yokuboureincarnation",
   },
   {
@@ -924,15 +924,15 @@ export const SongsTitleKeyArray: {
     key: "kougouseikibou",
   },
   {
-    title: SongTitle.Threefoldchoice,
+    title: SongTitle.ThreefoldChoice,
     key: "threefoldchoice",
   },
   {
-    title: SongTitle.Teitaionnokiss,
+    title: SongTitle.TeitaionnoKiss,
     key: "teitaionnokiss",
   },
   {
-    title: SongTitle.Shitsurenshitarakaowoarae,
+    title: SongTitle.ShitsurenshitaraKaowoarae,
     key: "shitsurenshitarakaowoarae",
   },
   {
@@ -956,7 +956,7 @@ export const SongsTitleKeyArray: {
     key: "kimigaaoidekureta",
   },
   {
-    title: SongTitle.Omoidefirst,
+    title: SongTitle.OmoideFirst,
     key: "omoidefirst",
   },
   {
@@ -964,11 +964,11 @@ export const SongsTitleKeyArray: {
     key: "setteiondo",
   },
   {
-    title: SongTitle.Rewindanohi,
+    title: SongTitle.RewindAnohi,
     key: "Rewindanohi",
   },
   {
-    title: SongTitle.Gomennesmoothie,
+    title: SongTitle.GomenneSmoothie,
     key: "gomennesmoothie",
   },
   {
@@ -976,8 +976,8 @@ export const SongsTitleKeyArray: {
     key: "minikuiwatashi",
   },
   {
-    title: SongTitle.Karaikaranoyounidakishimetai,
-    key: "karaikaranoyounidakishimetai",
+    title: SongTitle.Kataikaranoyounidakishimetai,
+    key: "kataikaranoyounidakishimetai",
   },
   {
     title: SongTitle.Mangetsugakieta,
@@ -988,7 +988,7 @@ export const SongsTitleKeyArray: {
     key: "watabokori",
   },
   {
-    title: SongTitle.Ryuuseidiscotic,
+    title: SongTitle.RyuuseiDiscotic,
     key: "ryuuseidiscotic",
   },
   {
@@ -1000,7 +1000,7 @@ export const SongsTitleKeyArray: {
     key: "jibunnokoto",
   },
   {
-    title: SongTitle.Unuborebeach,
+    title: SongTitle.UnuboreBeach,
     key: "unuborebeach",
   },
   {
@@ -1020,7 +1020,7 @@ export const SongsTitleKeyArray: {
     key: "moshikimigainakereba",
   },
   {
-    title: SongTitle.Kissnoshuriken,
+    title: SongTitle.KissNoshuriken,
     key: "kissnoshuriken",
   },
   {
@@ -1040,11 +1040,11 @@ export const SongsTitleKeyArray: {
     key: "gorugonzora",
   },
   {
-    title: SongTitle.Mousuguzambidensetsu,
+    title: SongTitle.MousuguZambidensetsu,
     key: "mousuguzambidensetsu",
   },
   {
-    title: SongTitle.OVERTURE,
+    title: SongTitle.Overture,
     key: "OVERTURE",
   },
 ];
