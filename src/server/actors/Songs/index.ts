@@ -1,7 +1,7 @@
 import {
   SinglesRawArray,
   SinglesRawObject,
-} from "server/actors/Singles/models";
+} from "server/actors/Cds/Singles/models";
 import * as SongConverters from "server/actors/Songs/converters";
 import {
   SongRaw,
@@ -11,7 +11,10 @@ import {
   SongsResultArray,
 } from "server/actors/Songs/models";
 import { SONGS } from "server/constants/songs";
-import { AlbumsRawArray, AlbumsRawObject } from "server/actors/Albums/models";
+import {
+  AlbumsRawArray,
+  AlbumsRawObject,
+} from "server/actors/Cds/Albums/models";
 import { arrayToObject } from "utils/arrays";
 
 export class Songs {

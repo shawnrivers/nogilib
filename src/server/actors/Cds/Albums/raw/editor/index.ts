@@ -1,5 +1,5 @@
-import { AlbumRaw } from "server/actors/Albums/models";
-import { createAlbumRaw } from "server/actors/Albums/raw/creator";
+import { AlbumRaw } from "server/actors/Cds/Albums/models";
+import { createAlbumRaw } from "server/actors/Cds/Albums/raw/creator";
 import { CdType } from "server/constants/commons";
 import { SONGS } from "server/constants/songs";
 import { AlbumTitle } from "server/constants/cds";

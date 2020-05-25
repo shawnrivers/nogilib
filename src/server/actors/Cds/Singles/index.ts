@@ -6,7 +6,7 @@ import {
   SinglesRawArray,
   SinglesRawObject,
   SinglesResultArray,
-} from "server/actors/Singles/models";
+} from "server/actors/Cds/Singles/models";
 import { SongsRawObject } from "server/actors/Songs/models";
 import { arrayToObject } from "utils/arrays";
 

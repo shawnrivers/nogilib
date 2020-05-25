@@ -4,7 +4,7 @@ import {
   AlbumsRawArray,
   AlbumsRawObject,
   AlbumsResultArray,
-} from "server/actors/Albums/models";
+} from "server/actors/Cds/Albums/models";
 import * as CdConverters from "server/actors/Cds/converters";
 import { arrayToObject } from "utils/arrays";
 import { SongsRawObject } from "server/actors/Songs/models";

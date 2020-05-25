@@ -1,5 +1,5 @@
-import { SingleRaw } from "server/actors/Singles/models";
-import { createSingleRaw } from "server/actors/Singles/raw/creator";
+import { SingleRaw } from "server/actors/Cds/Singles/models";
+import { createSingleRaw } from "server/actors/Cds/Singles/raw/creator";
 import { CdType } from "server/constants/commons";
 import { SONGS } from "server/constants/songs";
 import { MemberName } from "server/constants/names";

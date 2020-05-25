@@ -1,7 +1,7 @@
 import * as fs from "fs";
 import { MemberResult, MemberRaw } from "server/actors/Members/models";
 import { UnitsRawArray } from "server/actors/Units/models";
-import { SinglesRawArray } from "server/actors/Singles/models";
+import { SinglesRawArray } from "server/actors/Cds/Singles/models";
 import { SongsRawObject } from "server/actors/Songs/models";
 import { PositionType, SongType, FukujinType } from "server/constants/commons";
 
