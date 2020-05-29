@@ -83,7 +83,7 @@
     "gatsby-plugin-root-import": "^2.0.5",
     "gh-pages": "^2.2.0",
     "husky": "^4.2.5",
-    "lint-staged": "^10.2.6",
+    "lint-staged": "^10.2.7",
     "prettier": "^2.0.5",
     "prettier-stylelint": "^0.4.2",
     "stylelint": "^13.5.0",
