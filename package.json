@@ -88,7 +88,7 @@
     "prettier-stylelint": "^0.4.2",
     "stylelint": "^13.5.0",
     "stylelint-config-recommended": "^3.0.0",
-    "stylelint-order": "^4.0.0",
+    "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.17.2",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.3"
