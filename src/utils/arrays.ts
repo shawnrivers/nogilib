@@ -1,10 +1,20 @@
-export const arrayToObject = <T>(
+export function arrayToObject<T, K extends keyof T>(
   array: T[],
-  keyField: keyof T
-): { [key: string]: T } =>
-  Object.assign({}, ...array.map(item => ({ [String(item[keyField])]: item })));
+  keyField: K
+): Record<
+  T[K] extends string | number | symbol ? T[K] : string | number | symbol,
+  T
+> {
+  return Object.assign(
+    {},
+    ...array.map(item => {
+      const key = String(item[keyField]);
 
-export const sortByDate = <T>(
+      return { [key]: item };
+    })
+  );
+}
+
   array: T[],
   keyField: keyof T,
   order: "asc" | "desc"
