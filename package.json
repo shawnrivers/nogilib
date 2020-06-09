@@ -54,7 +54,7 @@
     "gatsby-plugin-sharp": "^2.6.10",
     "gatsby-plugin-typescript": "^2.4.4",
     "gatsby-source-filesystem": "^2.3.10",
-    "gatsby-transformer-json": "^2.4.4",
+    "gatsby-transformer-json": "^2.4.5",
     "gatsby-transformer-sharp": "^2.5.4",
     "node": "^14.4.0",
     "node-sass": "^4.14.1",
