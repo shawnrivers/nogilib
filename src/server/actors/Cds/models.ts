@@ -4,10 +4,11 @@ import {
   SongType,
 } from "server/constants/commons";
 import { Site } from "server/types/commons";
+import { SongTitle } from "server/constants/songs";
 
 export type CdSongRaw = {
   number: number;
-  title: string;
+  title: SongTitle;
   inCdType: CdType[];
 };
 export type CdSongResult = CdSongRaw & {

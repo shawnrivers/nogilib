@@ -1,9 +1,12 @@
 import {
   SinglesRawArray,
   SinglesRawObject,
-} from "server/actors/Singles/models";
+} from "server/actors/Cds/Singles/models";
 import { SongResult, SongRaw } from "server/actors/Songs/models";
-import { AlbumsRawArray, AlbumsRawObject } from "server/actors/Albums/models";
+import {
+  AlbumsRawArray,
+  AlbumsRawObject,
+} from "server/actors/Cds/Albums/models";
 import * as CdConverter from "server/actors/Cds/converters";
 import { NO_ARTWORK_IMAGE_SRC } from "server/constants/paths";
 import { SongType } from "server/constants/commons";

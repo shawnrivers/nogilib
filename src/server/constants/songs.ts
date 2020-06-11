@@ -1,838 +1,1054 @@
-// prettier-ignore
-export const SONGS: {
-  [title: string]: {
-    title: string;
-    key: string;
-  };
-} = {
-  "しあわせの保護色": {
-    title: "しあわせの保護色",
+import { arrayToObject } from "utils/arrays";
+
+export enum SongTitle {
+  Sekainorinjinyo = "世界中の隣人よ",
+  Shiawasenohogoshoku = "しあわせの保護色",
+  SayonaraStayWithMe = "サヨナラ Stay with me",
+  Jaane = "じゃあね。",
+  Anastasia = "アナスターシャ",
+  MainichigaBrandNewDay = "毎日がBrand new day",
+  ISee = "I see…",
+  FantasticSanshokupan = "ファンタスティック三色パン",
+  Bokunoomoikomi = "僕の思い込み",
+  DoMyBestJaimiganai = "～Do my best～じゃ意味はない",
+  Tokidokiomoidashitekudasai = "時々 思い出してください",
+  Toshoshitsunokimihe = "図書室の君へ",
+  Romendenshanomachi = "路面電車の街",
+  Bokunokotoshitteru = "僕のこと、知ってる?",
+  Yoakemadetsuyogaranakutemoii = "夜明けまで強がらなくてもいい",
+  SingOut = "Sing Out!",
+  Kassouro = "滑走路",
+  Noyounasonzai = "のような存在",
+  AmILoving = "Am I Loving?",
+  Heikousen = "平行線",
+  Yonbanmenohikari = "4番目の光",
+  Aimai = "曖昧",
+  Kaerimichihatoomawarishitakunaru = "帰り道は遠回りしたくなる",
+  Jikochudeikou = "ジコチューで行こう!",
+  Synchronicity = "シンクロニシティ",
+  Itsukadekirukarakyoudekiru = "いつかできるから今日できる",
+  Nigemizu = "逃げ水",
+  Influencer = "インフルエンサー",
+  Sayonaranoimi = "サヨナラの意味",
+  HadashideSummer = "裸足でSummer",
+  Harujiongasakugoro = "ハルジオンが咲く頃",
+  ImaHanashitaidarekagairu = "今、話したい誰かがいる",
+  TaiyouKnock = "太陽ノック",
+  Inochihautsukushii = "命は美しい",
+  Nandomenoaozoraka = "何度目の青空か?",
+  NatsunoFreeAndEasy = "夏のFree&Easy",
+  Kiduitarakataomoi = "気づいたら片想い",
+  Valletta = "バレッタ",
+  GirlsRule = "ガールズルール",
+  Kiminonahakibou = "君の名は希望",
+  SeifukunoMannequin = "制服のマネキン",
+  HashireBicycle = "走れ!Bicycle",
+  Oideshampo = "おいでシャンプー",
+  GuruguruCurtain = "ぐるぐるカーテン",
+  Nichijou = "日常",
+  Sankakunoakichi = "三角の空き地",
+  Atarashiisekai = "新しい世界",
+  MyRule = "My rule",
+  Under = "アンダー",
+  Fusuenhaikiteiru = "風船は生きている",
+  Bulanko = "ブランコ",
+  SecretGravity = "シークレットグラフィティー",
+  Futoogo = "不等号",
+  Shittonokenri = "嫉妬の権利",
+  WakaregiwaMottosukininaru = "別れ際、もっと好きになる",
+  Kimihabokutotoawanaihougayokattanokana = "君は僕と会わない方がよかったのかな",
+  Anohibokuhausowotsuita = "あの日 僕は咄嗟に嘘をついた",
+  Kokoniiruriyuu = "ここにいる理由",
+  Umaretamamade = "生まれたままで",
+  Hatsukoinohitowoimademo = "初恋の人を今でも",
+  Senpuuki = "扇風機",
+  Jyuusannichinokinyoubi = "13日の金曜日",
+  HarunoMelody = "春のメロディー",
+  Namidagamadakanashimidattakoro = "涙がまだ悲しみだった頃",
+  Ookaminikuchibuewo = "狼に口笛を",
+  Hidarimunenoyuuki = "左胸の勇気",
+  CaravanHanemuranai = "キャラバンは眠らない",
+  Tsuduku = "つづく",
+  Kokuhakunojunban = "告白の順番",
+  ChopinNousotsuki = "ショパンの嘘つき",
+  Shiritaikoto = "知りたいこと",
+  Soratobira = "空扉",
+  Jibunjanaikanji = "自分じゃない感じ",
+  KokoronoMonolog = "心のモノローグ",
+  Chikyuugamaruinara = "地球が丸いなら",
+  Annanisukidattanoni = "あんなに好きだったのに...",
+  Against = "Against",
+  Kumoninarebaii = "雲になればいい",
+  ScoutMan = "スカウトマン",
+  Tokitokimekimeki = "トキトキメキメキ",
+  Kotodamahou = "言霊砲",
+  Fumenshou = "不眠症",
+  Maaiika = "まあいいか?",
+  Shitsurenosoujinin = "失恋お掃除人",
+  Bokunoshoudou = "僕の衝動",
+  Atarashiikafun = "新しい花粉 〜ミュージカル「見知らぬ世界」より〜",
+  Onnahahitorijanemurenai = "女は一人じゃ眠れない",
+  Hitonatsunonagasayori = "ひと夏の長さより…",
+  Naitatteiijanaika = "泣いたっていいじゃないか?",
+  LiveShin = "ライブ神",
+  Mirainokotae = "未来の答え",
+  Jinseiwokangaetakunaru = "人生を考えたくなる",
+  IgaiBreak = "意外BREAK",
+  AnotherGhost = "Another Ghost",
+  Sanbanmenokaze = "三番目の風",
+  Atarisawarinonaihanashi = "当たり障りのない話",
+  Kodokunaaozora = "孤独な青空",
+  Anokyoushitsu = "あの教室",
+  Nidomenokisskara = "2度目のキスから",
+  Kiminiokuruhanaganai = "君に贈る花がない",
+  Naimononedari = "ないものねだり",
+  Bokudakenohikari = "僕だけの光",
+  OffshoreGirl = "オフショアガール",
+  Inochinoshinjitsu = "命の真実 ミュージカル「林檎売りとカメムシ」",
+  Hakumaisama = "白米様",
+  Ikuatenonaibokutachi = "行くあてのない僕たち",
+  HarukanaruBhutan = "遥かなるブータン",
+  Tsuyogarutsubomi = "強がる蕾",
+  Kyuushamen = "急斜面",
+  Tsuribori = "釣り堀",
+  Yuuutsutofuusengamu = "憂鬱と風船ガム",
+  Popipappappa = "ポピパッパパー",
+  Otonahenochikamichi = "大人への近道",
+  Kanashiminowasurekata = "悲しみの忘れ方",
+  Sukima = "隙間",
+  Mousukoshinoyume = "もう少しの夢",
+  SakanatachinoLoveSong = "魚たちのLOVE SONG",
+  Muhyoujyou = "無表情",
+  Hanenokioku = "羽根の記憶",
+  Seifukuwonuidesayonarawo = "制服を脱いでサヨナラを…",
+  ArakajimekatarareruRomance = "あらかじめ語られるロマンス",
+  Tachinaorichuu = "立ち直り中",
+  GomenneZutto = "ごめんね ずっと…",
+  Border = "ボーダー",
+  Toomawarinoaijou = "遠回りの愛情",
+  Korogattakanewonarase = "転がった鐘を鳴らせ!",
+  Watashiokiru = "私、起きる。",
+  TenderDays = "Tender days",
+  Nanimodekizunisobaniiru = "何もできずにそばにいる",
+  Sonosakinodeguchi = "その先の出口!",
+  MukuchinaLion = "無口なライオン",
+  Bokugaikanakyadaregaikunda = "僕が行かなきゃ誰が行くんだ?",
+  RomanceNoStart = "ロマンスのスタート",
+  ToikiMethod = "吐息のメソッド",
+  Kodokukyoudai = "孤独兄弟",
+  Dankeschan = "ダンケシェーン",
+  Tsukinoookisa = "月の大きさ",
+  WatashinotameniDarekanotameni = "私のために 誰かのために",
+  Sonnabakana = "そんなバカな…",
+  Yasashisatoha = "やさしさとは",
+  SekaideichibanKodokuraLover = "世界で一番 孤独なLover",
+  Koumoriyo = "コウモリよ",
+  Hokanohoshikara = "他の星から",
+  Ningentoiugakki = "人間という楽器",
+  Shakism = "シャキイズム",
+  RomanticIkayaki = "ロマンティックいか焼き",
+  Dekopin = "でこぴん",
+  PsychokinesesNokanousei = "サイコキネシスの可能性",
+  Yubibouenkyou = "指望遠鏡",
+  Yasashisanaramaniatteiru = "やさしさなら間に合ってる",
+  Kokojanaidokoka = "ここじゃないどこか",
+  ShibuyaBlues = "渋谷ブルース",
+  Sekkachinakatatsumuri = "せっかちなかたつむり",
+  Hitohanazehashirunoka = "人はなぜ走るのか?",
+  OtogadenaiGuitar = "音が出ないギター",
+  Kairyuunoshimayo = "海流の島よ",
+  Kokoronokusuri = "心の薬",
+  Guuzenwoiiwakenishite = "偶然を言い訳にして",
+  Mizutamamoyou = "水玉模様",
+  House = "ハウス!",
+  Nogizakanouta = "乃木坂の詩",
+  Aitakattakamoshirenai = "会いたかったかもしれない",
+  Ushinaitakunaikara = "失いたくないから",
+  Shiroikumoninotte = "白い雲にのって",
+  Darekahamikata = "誰かは味方",
+  Kakumeinouma = "革命の馬",
+  Bokugairubasho = "僕がいる場所",
+  Anatanotamenihikitai = "あなたのために弾きたい",
+  Keishasuru = "傾斜する",
+  Nazonorakugaki = "なぞの落書き",
+  Jiyuunokanata = "自由の彼方",
+  Hitoriyogari = "ひとりよがり",
+  Kikkake = "きっかけ",
+  Taiyounikudokarete = "太陽に口説かれて",
+  YokubouReincarnation = "欲望のリインカーネーション",
+  Kuukikann = "空気感",
+  Kougouseikibou = "光合成希望",
+  ThreefoldChoice = "Threefold choice",
+  TeitaionnoKiss = "低体温のキス",
+  ShitsurenshitaraKaowoarae = "失恋したら、顔を洗え!",
+  Kakigoorinokataomoi = "かき氷の片想い",
+  Kanjyourokugousen = "環状六号線",
+  Kuchiyakusoku = "口約束",
+  Skydiving = "スカイダイビング",
+  Kimigaaoidekureta = "君が扇いでくれた",
+  OmoideFirst = "思い出ファースト",
+  Setteiondo = "設定温度",
+  RewindAnohi = "Rewindあの日",
+  GomenneSmoothie = "ごめんね、スムージー",
+  Minikuiwatashi = "醜い私",
+  Kataikaranoyounidakishimetai = "硬い殻のように抱きしめたい",
+  Mangetsugakieta = "満月が消えた",
+  Watabokori = "ワタボコリ",
+  RyuuseiDiscotic = "流星ディスコティック",
+  Boukyakutobigaku = "忘却と美学",
+  Jibunnokoto = "自分のこと",
+  UnuboreBeach = "自惚れビーチ",
+  Sonohito = "その女",
+  Dareyorimosobaniitai = "誰よりそばにいたい",
+  Arigachinarenai = "ありがちな恋愛",
+  Moshikimigainakereba = "もし君がいなければ",
+  KissNoshuriken = "キスの手裏剣",
+  Hoozuewotsuitehanemurenai = "頬杖をついては眠れない",
+  Bocchitou = "ぼっち党",
+  Sayuringoboshuuchuu = "さゆりんご募集中",
+  Gorugonzora = "ゴルゴンゾーラ",
+  MousuguZambidensetsu = "もうすぐ～ザンビ伝説～",
+  Overture = "OVERTURE",
+}
+
+export const SongsTitleKeyArray: {
+  title: SongTitle;
+  key: string;
+}[] = [
+  {
+    title: SongTitle.Sekainorinjinyo,
+    key: "sekainorinjinyo",
+  },
+  {
+    title: SongTitle.Shiawasenohogoshoku,
     key: "hogoshoku",
   },
-  "サヨナラ Stay with me": {
-    title: "サヨナラ Stay with me",
+  {
+    title: SongTitle.SayonaraStayWithMe,
     key: "staywithme",
   },
-  "じゃあね。": {
-    title: "じゃあね。",
+  {
+    title: SongTitle.Jaane,
     key: "jaane",
   },
-  "アナスターシャ": {
-    title: "アナスターシャ",
+  {
+    title: SongTitle.Anastasia,
     key: "anastasia",
   },
-  "毎日がBrand new day": {
-    title: "毎日がBrand new day",
+  {
+    title: SongTitle.MainichigaBrandNewDay,
     key: "brandnewday",
   },
-  "I see…": {
-    title: "I see…",
+  {
+    title: SongTitle.ISee,
     key: "isee",
   },
-  "ファンタスティック三色パン": {
-    title: "ファンタスティック三色パン",
+  {
+    title: SongTitle.FantasticSanshokupan,
     key: "fantastic",
   },
-  "僕の思い込み": {
-    title: "僕の思い込み",
+  {
+    title: SongTitle.Bokunoomoikomi,
     key: "bokunoomoikomi",
   },
-  "～Do my best～じゃ意味はない": {
-    title: "～Do my best～じゃ意味はない",
+  {
+    title: SongTitle.DoMyBestJaimiganai,
     key: "domybest",
   },
-  "時々 思い出してください": {
-    title: "時々 思い出してください",
+  {
+    title: SongTitle.Tokidokiomoidashitekudasai,
     key: "tokidokiomoidashite",
   },
-  "図書室の君へ": {
-    title: "図書室の君へ",
+  {
+    title: SongTitle.Toshoshitsunokimihe,
     key: "toshoshitsu",
   },
-  "路面電車の街": {
-    title: "路面電車の街",
+  {
+    title: SongTitle.Romendenshanomachi,
     key: "romendensha",
   },
-  "僕のこと、知ってる?": {
-    title: "僕のこと、知ってる?",
+  {
+    title: SongTitle.Bokunokotoshitteru,
     key: "bokunokoto",
   },
-  "夜明けまで強がらなくてもいい": {
-    title: "夜明けまで強がらなくてもいい",
+  {
+    title: SongTitle.Yoakemadetsuyogaranakutemoii,
     key: "yoakemade",
   },
-  "Sing Out!": {
-    title: "Sing Out!",
+  {
+    title: SongTitle.SingOut,
     key: "singout",
   },
-  "滑走路": {
-    title: "滑走路",
+  {
+    title: SongTitle.Kassouro,
     key: "kassouro",
   },
-  "のような存在": {
-    title: "のような存在",
+  {
+    title: SongTitle.Noyounasonzai,
     key: "noyounasonzai",
   },
-  "Am I Loving?": {
-    title: "Am I Loving?",
+  {
+    title: SongTitle.AmILoving,
     key: "amiloving",
   },
-  "平行線": {
-    title: "平行線",
+  {
+    title: SongTitle.Heikousen,
     key: "heikousen",
   },
-  "4番目の光": {
-    title: "4番目の光",
+  {
+    title: SongTitle.Yonbanmenohikari,
     key: "yonbanmenohikari",
   },
-  "曖昧": {
-    title: "曖昧",
+  {
+    title: SongTitle.Aimai,
     key: "aimai",
   },
-  "帰り道は遠回りしたくなる": {
-    title: "帰り道は遠回りしたくなる",
+  {
+    title: SongTitle.Kaerimichihatoomawarishitakunaru,
     key: "kaerimichi",
   },
-  "ジコチューで行こう!": {
-    title: "ジコチューで行こう!",
+  {
+    title: SongTitle.Jikochudeikou,
     key: "jikochu",
   },
-  "シンクロニシティ": {
-    title: "シンクロニシティ",
+  {
+    title: SongTitle.Synchronicity,
     key: "synchronicity",
   },
-  "いつかできるから今日できる": {
-    title: "いつかできるから今日できる",
+  {
+    title: SongTitle.Itsukadekirukarakyoudekiru,
     key: "itsukadekiru",
   },
-  "逃げ水": {
-    title: "逃げ水",
+  {
+    title: SongTitle.Nigemizu,
     key: "nigemizu",
   },
-  "インフルエンサー": {
-    title: "インフルエンサー",
+  {
+    title: SongTitle.Influencer,
     key: "influencer",
   },
-  "サヨナラの意味": {
-    title: "サヨナラの意味",
+  {
+    title: SongTitle.Sayonaranoimi,
     key: "sayonaranoimi",
   },
-  "裸足でSummer": {
-    title: "裸足でSummer",
+  {
+    title: SongTitle.HadashideSummer,
     key: "hadasummer",
   },
-  "ハルジオンが咲く頃": {
-    title: "ハルジオンが咲く頃",
+  {
+    title: SongTitle.Harujiongasakugoro,
     key: "harujion",
   },
-  "今、話したい誰かがいる": {
-    title: "今、話したい誰かがいる",
+  {
+    title: SongTitle.ImaHanashitaidarekagairu,
     key: "imahana",
   },
-  "太陽ノック": {
-    title: "太陽ノック",
+  {
+    title: SongTitle.TaiyouKnock,
     key: "taiyouknock",
   },
-  "命は美しい": {
-    title: "命は美しい",
+  {
+    title: SongTitle.Inochihautsukushii,
     key: "inochihautsukushii",
   },
-  "何度目の青空か?": {
-    title: "何度目の青空か?",
+  {
+    title: SongTitle.Nandomenoaozoraka,
     key: "nandomenoaozoraka",
   },
-  "夏のFree&Easy": {
-    title: "夏のFree&Easy",
+  {
+    title: SongTitle.NatsunoFreeAndEasy,
     key: "natsunofreeeasy",
   },
-  "気づいたら片想い": {
-    title: "気づいたら片想い",
+  {
+    title: SongTitle.Kiduitarakataomoi,
     key: "kiduitarakataomoi",
   },
-  "バレッタ": {
-    title: "バレッタ",
+  {
+    title: SongTitle.Valletta,
     key: "valletta",
   },
-  "ガールズルール": {
-    title: "ガールズルール",
+  {
+    title: SongTitle.GirlsRule,
     key: "girlsrule",
   },
-  "君の名は希望": {
-    title: "君の名は希望",
+  {
+    title: SongTitle.Kiminonahakibou,
     key: "kiminonahakibou",
   },
-  "制服のマネキン": {
-    title: "制服のマネキン",
+  {
+    title: SongTitle.SeifukunoMannequin,
     key: "seifukunomannequin",
   },
-  "走れ!Bicycle": {
-    title: "走れ!Bicycle",
+  {
+    title: SongTitle.HashireBicycle,
     key: "hashirebicycle",
   },
-  "おいでシャンプー": {
-    title: "おいでシャンプー",
+  {
+    title: SongTitle.Oideshampo,
     key: "oideshampo",
   },
-  "ぐるぐるカーテン": {
-    title: "ぐるぐるカーテン",
+  {
+    title: SongTitle.GuruguruCurtain,
     key: "gurugurucurtain",
   },
-  "日常": {
-    title: "日常",
+  {
+    title: SongTitle.Nichijou,
     key: "nichijou",
   },
-  "三角の空き地": {
-    title: "三角の空き地",
+  {
+    title: SongTitle.Sankakunoakichi,
     key: "sankakunoakichi",
   },
-  "新しい世界": {
-    title: "新しい世界",
+  {
+    title: SongTitle.Atarashiisekai,
     key: "atarashiisekai",
   },
-  "My rule": {
-    title: "My rule",
+  {
+    title: SongTitle.MyRule,
     key: "myrule",
   },
-  "アンダー": {
-    title: "アンダー",
+  {
+    title: SongTitle.Under,
     key: "under",
   },
-  "風船は生きている": {
-    title: "風船は生きている",
+  {
+    title: SongTitle.Fusuenhaikiteiru,
     key: "fusuenhaikiteiru",
   },
-  "ブランコ": {
-    title: "ブランコ",
+  {
+    title: SongTitle.Bulanko,
     key: "bulanko",
   },
-  "シークレットグラフィティー": {
-    title: "シークレットグラフィティー",
+  {
+    title: SongTitle.SecretGravity,
     key: "secretgravity",
   },
-  "不等号": {
-    title: "不等号",
+  {
+    title: SongTitle.Futoogo,
     key: "futoogo",
   },
-  "嫉妬の権利": {
-    title: "嫉妬の権利",
+  {
+    title: SongTitle.Shittonokenri,
     key: "shittonokenri",
   },
-  "別れ際、もっと好きになる": {
-    title: "別れ際、もっと好きになる",
+  {
+    title: SongTitle.WakaregiwaMottosukininaru,
     key: "wakaregiwa",
   },
-  "君は僕と会わない方がよかったのかな": {
-    title: "君は僕と会わない方がよかったのかな",
+  {
+    title: SongTitle.Kimihabokutotoawanaihougayokattanokana,
     key: "kimihabokuto",
   },
-  "あの日 僕は咄嗟に嘘をついた": {
-    title: "あの日 僕は咄嗟に嘘をついた",
+  {
+    title: SongTitle.Anohibokuhausowotsuita,
     key: "anohibokuha",
   },
-  "ここにいる理由": {
-    title: "ここにいる理由",
+  {
+    title: SongTitle.Kokoniiruriyuu,
     key: "kokoniiruriyuu",
   },
-  "生まれたままで": {
-    title: "生まれたままで",
+  {
+    title: SongTitle.Umaretamamade,
     key: "umaretamamade",
   },
-  "初恋の人を今でも": {
-    title: "初恋の人を今でも",
+  {
+    title: SongTitle.Hatsukoinohitowoimademo,
     key: "hatsukoinohitowo",
   },
-  "扇風機": {
-    title: "扇風機",
+  {
+    title: SongTitle.Senpuuki,
     key: "senpuuki",
   },
-  "13日の金曜日": {
-    title: "13日の金曜日",
+  {
+    title: SongTitle.Jyuusannichinokinyoubi,
     key: "13nichinokinyoubi",
   },
-  "春のメロディー": {
-    title: "春のメロディー",
+  {
+    title: SongTitle.HarunoMelody,
     key: "harunomelody",
   },
-  "涙がまだ悲しみだった頃": {
-    title: "涙がまだ悲しみだった頃",
+  {
+    title: SongTitle.Namidagamadakanashimidattakoro,
     key: "namidagamadakanashimi",
   },
-  "狼に口笛を": {
-    title: "狼に口笛を",
+  {
+    title: SongTitle.Ookaminikuchibuewo,
     key: "ookaminikuchibuewo",
   },
-  "左胸の勇気": {
-    title: "左胸の勇気",
+  {
+    title: SongTitle.Hidarimunenoyuuki,
     key: "hidarimunenoyuuki",
   },
-  "キャラバンは眠らない": {
-    title: "キャラバンは眠らない",
+  {
+    title: SongTitle.CaravanHanemuranai,
     key: "caravan",
   },
-  "つづく": {
-    title: "つづく",
+  {
+    title: SongTitle.Tsuduku,
     key: "tsuduku",
   },
-  "告白の順番": {
-    title: "告白の順番",
+  {
+    title: SongTitle.Kokuhakunojunban,
     key: "kokuhakunojunban",
   },
-  "ショパンの嘘つき": {
-    title: "ショパンの嘘つき",
+  {
+    title: SongTitle.ChopinNousotsuki,
     key: "chopinnousotsuki",
   },
-  "知りたいこと": {
-    title: "知りたいこと",
+  {
+    title: SongTitle.Shiritaikoto,
     key: "shiritaikoto",
   },
-  "空扉": {
-    title: "空扉",
+  {
+    title: SongTitle.Soratobira,
     key: "soratobira",
   },
-  "自分じゃない感じ": {
-    title: "自分じゃない感じ",
+  {
+    title: SongTitle.Jibunjanaikanji,
     key: "jibunjanaikanji",
   },
-  "心のモノローグ": {
-    title: "心のモノローグ",
+  {
+    title: SongTitle.KokoronoMonolog,
     key: "kokoronomonolog",
   },
-  "地球が丸いなら": {
-    title: "地球が丸いなら",
+  {
+    title: SongTitle.Chikyuugamaruinara,
     key: "chikyuugamaruinara",
   },
-  "あんなに好きだったのに...": {
-    title: "あんなに好きだったのに...",
+  {
+    title: SongTitle.Annanisukidattanoni,
     key: "annarisukidatta",
   },
-  "Against": {
-    title: "Against",
+  {
+    title: SongTitle.Against,
     key: "against",
   },
-  "雲になればいい": {
-    title: "雲になればいい",
+  {
+    title: SongTitle.Kumoninarebaii,
     key: "kumoninarebaii",
   },
-  "スカウトマン": {
-    title: "スカウトマン",
+  {
+    title: SongTitle.ScoutMan,
     key: "scoutman",
   },
-  "トキトキメキメキ": {
-    title: "トキトキメキメキ",
+  {
+    title: SongTitle.Tokitokimekimeki,
     key: "tokitokimekimeki",
   },
-  "言霊砲": {
-    title: "言霊砲",
+  {
+    title: SongTitle.Kotodamahou,
     key: "kotodamahou",
   },
-  "不眠症": {
-    title: "不眠症",
+  {
+    title: SongTitle.Fumenshou,
     key: "fumenshou",
   },
-  "まあいいか?": {
-    title: "まあいいか?",
+  {
+    title: SongTitle.Maaiika,
     key: "maaiika",
   },
-  "失恋お掃除人": {
-    title: "失恋お掃除人",
+  {
+    title: SongTitle.Shitsurenosoujinin,
     key: "shirenosoujinin",
   },
-  "僕の衝動": {
-    title: "僕の衝動",
+  {
+    title: SongTitle.Bokunoshoudou,
     key: "bokunoshoudou",
   },
-  "新しい花粉 〜ミュージカル「見知らぬ世界」より〜": {
-    title: "新しい花粉 〜ミュージカル「見知らぬ世界」より〜",
+  {
+    title: SongTitle.Atarashiikafun,
     key: "atarashiikafun",
   },
-  "女は一人じゃ眠れない": {
-    title: "女は一人じゃ眠れない",
+  {
+    title: SongTitle.Onnahahitorijanemurenai,
     key: "onnahahitorija",
   },
-  "ひと夏の長さより…": {
-    title: "ひと夏の長さより…",
+  {
+    title: SongTitle.Hitonatsunonagasayori,
     key: "hitonatsunonagasa",
   },
-  "泣いたっていいじゃないか?": {
-    title: "泣いたっていいじゃないか?",
+  {
+    title: SongTitle.Naitatteiijanaika,
     key: "naitatteiijanaika",
   },
-  "ライブ神": {
-    title: "ライブ神",
+  {
+    title: SongTitle.LiveShin,
     key: "liveshin",
   },
-  "未来の答え": {
-    title: "未来の答え",
+  {
+    title: SongTitle.Mirainokotae,
     key: "mirainokotae",
   },
-  "人生を考えたくなる": {
-    title: "人生を考えたくなる",
+  {
+    title: SongTitle.Jinseiwokangaetakunaru,
     key: "jinseiwokangaetakunaru",
   },
-  "意外BREAK": {
-    title: "意外BREAK",
+  {
+    title: SongTitle.IgaiBreak,
     key: "igaibreak",
   },
-  "Another Ghost": {
-    title: "Another Ghost",
+  {
+    title: SongTitle.AnotherGhost,
     key: "anotherghost",
   },
-  "三番目の風": {
-    title: "三番目の風",
+  {
+    title: SongTitle.Sanbanmenokaze,
     key: "sanbanmenokaze",
   },
-  "当たり障りのない話": {
-    title: "当たり障りのない話",
+  {
+    title: SongTitle.Atarisawarinonaihanashi,
     key: "atarisawarinonaihanashi",
   },
-  "孤独な青空": {
-    title: "孤独な青空",
+  {
+    title: SongTitle.Kodokunaaozora,
     key: "kodokunaaozora",
   },
-  "あの教室": {
-    title: "あの教室",
+  {
+    title: SongTitle.Anokyoushitsu,
     key: "anokyoushitsu",
   },
-  "2度目のキスから": {
-    title: "2度目のキスから",
+  {
+    title: SongTitle.Nidomenokisskara,
     key: "nidomenokisskara",
   },
-  "君に贈る花がない": {
-    title: "君に贈る花がない",
+  {
+    title: SongTitle.Kiminiokuruhanaganai,
     key: "kiminiokuruhanaganai",
   },
-  "ないものねだり": {
-    title: "ないものねだり",
+  {
+    title: SongTitle.Naimononedari,
     key: "naimononedari",
   },
-  "僕だけの光": {
-    title: "僕だけの光",
+  {
+    title: SongTitle.Bokudakenohikari,
     key: "bokudakenohikari",
   },
-  "オフショアガール": {
-    title: "オフショアガール",
+  {
+    title: SongTitle.OffshoreGirl,
     key: "offshoregirl",
   },
-  "命の真実 ミュージカル「林檎売りとカメムシ」": {
-    title: "命の真実 ミュージカル「林檎売りとカメムシ」",
+  {
+    title: SongTitle.Inochinoshinjitsu,
     key: "inochinoshinjitsu",
   },
-  "白米様": {
-    title: "白米様",
+  {
+    title: SongTitle.Hakumaisama,
     key: "hakumaisama",
   },
-  "行くあてのない僕たち": {
-    title: "行くあてのない僕たち",
+  {
+    title: SongTitle.Ikuatenonaibokutachi,
     key: "ikuatenonaibokutachi",
   },
-  "遥かなるブータン": {
-    title: "遥かなるブータン",
+  {
+    title: SongTitle.HarukanaruBhutan,
     key: "harukanarubhutan",
   },
-  "強がる蕾": {
-    title: "強がる蕾",
+  {
+    title: SongTitle.Tsuyogarutsubomi,
     key: "tsuyogarutsubomi",
   },
-  "急斜面": {
-    title: "急斜面",
+  {
+    title: SongTitle.Kyuushamen,
     key: "kyuushamen",
   },
-  "釣り堀": {
-    title: "釣り堀",
+  {
+    title: SongTitle.Tsuribori,
     key: "tsuribori",
   },
-  "憂鬱と風船ガム": {
-    title: "憂鬱と風船ガム",
+  {
+    title: SongTitle.Yuuutsutofuusengamu,
     key: "yuuutsutofuusengamu",
   },
-  "ポピパッパパー": {
-    title: "ポピパッパパー",
+  {
+    title: SongTitle.Popipappappa,
     key: "popipappappa",
   },
-  "大人への近道": {
-    title: "大人への近道",
+  {
+    title: SongTitle.Otonahenochikamichi,
     key: "otonahenochikamichi",
   },
-  "悲しみの忘れ方": {
-    title: "悲しみの忘れ方",
+  {
+    title: SongTitle.Kanashiminowasurekata,
     key: "kanashiminowasurekata",
   },
-  "隙間": {
-    title: "隙間",
+  {
+    title: SongTitle.Sukima,
     key: "sukima",
   },
-  "もう少しの夢": {
-    title: "もう少しの夢",
+  {
+    title: SongTitle.Mousukoshinoyume,
     key: "mousukoshinoyume",
   },
-  "魚たちのLOVE SONG": {
-    title: "魚たちのLOVE SONG",
+  {
+    title: SongTitle.SakanatachinoLoveSong,
     key: "sakanatachinolovesong",
   },
-  "無表情": {
-    title: "無表情",
+  {
+    title: SongTitle.Muhyoujyou,
     key: "muhyoujyou",
   },
-  "羽根の記憶": {
-    title: "羽根の記憶",
+  {
+    title: SongTitle.Hanenokioku,
     key: "hanenokioku",
   },
-  "制服を脱いでサヨナラを…": {
-    title: "制服を脱いでサヨナラを…",
+  {
+    title: SongTitle.Seifukuwonuidesayonarawo,
     key: "seifukuwonuidesayonarawo",
   },
-  "あらかじめ語られるロマンス": {
-    title: "あらかじめ語られるロマンス",
+  {
+    title: SongTitle.ArakajimekatarareruRomance,
     key: "arakajimekatarareruromance",
   },
-  "立ち直り中": {
-    title: "立ち直り中",
+  {
+    title: SongTitle.Tachinaorichuu,
     key: "tachinaorichuu",
   },
-  "ごめんね ずっと…": {
-    title: "ごめんね ずっと…",
+  {
+    title: SongTitle.GomenneZutto,
     key: "gomennezutto",
   },
-  "ボーダー": {
-    title: "ボーダー",
+  {
+    title: SongTitle.Border,
     key: "border",
   },
-  "遠回りの愛情": {
-    title: "遠回りの愛情",
+  {
+    title: SongTitle.Toomawarinoaijou,
     key: "toomawarinoaijou",
   },
-  "転がった鐘を鳴らせ!": {
-    title: "転がった鐘を鳴らせ!",
+  {
+    title: SongTitle.Korogattakanewonarase,
     key: "korogattakanewonarase",
   },
-  "私、起きる。": {
-    title: "私、起きる。",
+  {
+    title: SongTitle.Watashiokiru,
     key: "watashiokiru",
   },
-  "Tender days": {
-    title: "Tender days",
-    key: "tendergays",
+  {
+    title: SongTitle.TenderDays,
+    key: "tenderdays",
   },
-  "何もできずにそばにいる": {
-    title: "何もできずにそばにいる",
+  {
+    title: SongTitle.Nanimodekizunisobaniiru,
     key: "nanimodekizunisobaniiru",
   },
-  "その先の出口!": {
-    title: "その先の出口!",
+  {
+    title: SongTitle.Sonosakinodeguchi,
     key: "sonosakinodeguchi",
   },
-  "無口なライオン": {
-    title: "無口なライオン",
+  {
+    title: SongTitle.MukuchinaLion,
     key: "mukuchinalion",
   },
-  "僕が行かなきゃ誰が行くんだ?": {
-    title: "僕が行かなきゃ誰が行くんだ?",
+  {
+    title: SongTitle.Bokugaikanakyadaregaikunda,
     key: "bokugaikanakyadaregaikunda",
   },
-  "ロマンスのスタート": {
-    title: "ロマンスのスタート",
+  {
+    title: SongTitle.RomanceNoStart,
     key: "romancenostart",
   },
-  "吐息のメソッド": {
-    title: "吐息のメソッド",
+  {
+    title: SongTitle.ToikiMethod,
     key: "toikimethod",
   },
-  "孤独兄弟": {
-    title: "孤独兄弟",
+  {
+    title: SongTitle.Kodokukyoudai,
     key: "kodokukyoudai",
   },
-  "ダンケシェーン": {
-    title: "ダンケシェーン",
+  {
+    title: SongTitle.Dankeschan,
     key: "dankeschan",
   },
-  "月の大きさ": {
-    title: "月の大きさ",
+  {
+    title: SongTitle.Tsukinoookisa,
     key: "tsukinoookisa",
   },
-  "私のために 誰かのために": {
-    title: "私のために 誰かのために",
+  {
+    title: SongTitle.WatashinotameniDarekanotameni,
     key: "watanotamenidarekanotameni",
   },
-  "そんなバカな…": {
-    title: "そんなバカな…",
+  {
+    title: SongTitle.Sonnabakana,
     key: "sonnabakana",
   },
-  "やさしさとは": {
-    title: "やさしさとは",
+  {
+    title: SongTitle.Yasashisatoha,
     key: "yasashisatoha",
   },
-  "世界で一番 孤独なLover": {
-    title: "世界で一番 孤独なLover",
+  {
+    title: SongTitle.SekaideichibanKodokuraLover,
     key: "sekaideichibankodokuralover",
   },
-  "コウモリよ": {
-    title: "コウモリよ",
+  {
+    title: SongTitle.Koumoriyo,
     key: "koumoriyo",
   },
-  "他の星から": {
-    title: "他の星から",
+  {
+    title: SongTitle.Hokanohoshikara,
     key: "hokanohoshikara",
   },
-  "人間という楽器": {
-    title: "人間という楽器",
+  {
+    title: SongTitle.Ningentoiugakki,
     key: "ningentoiugakki",
   },
-  "シャキイズム": {
-    title: "シャキイズム",
+  {
+    title: SongTitle.Shakism,
     key: "shakism",
   },
-  "ロマンティックいか焼き": {
-    title: "ロマンティックいか焼き",
+  {
+    title: SongTitle.RomanticIkayaki,
     key: "romanticikayaki",
   },
-  "でこぴん": {
-    title: "でこぴん",
+  {
+    title: SongTitle.Dekopin,
     key: "dekopin",
   },
-  "サイコキネシスの可能性": {
-    title: "サイコキネシスの可能性",
+  {
+    title: SongTitle.PsychokinesesNokanousei,
     key: "psychokinesesnokanousei",
   },
-  "指望遠鏡": {
-    title: "指望遠鏡",
+  {
+    title: SongTitle.Yubibouenkyou,
     key: "yubibouenkyou",
   },
-  "やさしさなら間に合ってる": {
-    title: "やさしさなら間に合ってる",
+  {
+    title: SongTitle.Yasashisanaramaniatteiru,
     key: "yasashisanaramaniatteiru",
   },
-  "ここじゃないどこか": {
-    title: "ここじゃないどこか",
+  {
+    title: SongTitle.Kokojanaidokoka,
     key: "kokojanaidokoka",
   },
-  "渋谷ブルース": {
-    title: "渋谷ブルース",
+  {
+    title: SongTitle.ShibuyaBlues,
     key: "shibuyablues",
   },
-  "せっかちなかたつむり": {
-    title: "せっかちなかたつむり",
+  {
+    title: SongTitle.Sekkachinakatatsumuri,
     key: "sekkachinakatatsumuri",
   },
-  "人はなぜ走るのか?": {
-    title: "人はなぜ走るのか?",
+  {
+    title: SongTitle.Hitohanazehashirunoka,
     key: "hitohanazehashirunoka",
   },
-  "音が出ないギター": {
-    title: "音が出ないギター",
+  {
+    title: SongTitle.OtogadenaiGuitar,
     key: "otogadenaiguitar",
   },
-  "海流の島よ": {
-    title: "海流の島よ",
+  {
+    title: SongTitle.Kairyuunoshimayo,
     key: "kairyuunoshimayo",
   },
-  "心の薬": {
-    title: "心の薬",
+  {
+    title: SongTitle.Kokoronokusuri,
     key: "kokoronokusuri",
   },
-  "偶然を言い訳にして": {
-    title: "偶然を言い訳にして",
+  {
+    title: SongTitle.Guuzenwoiiwakenishite,
     key: "guuzenwoiiwakenishite",
   },
-  "水玉模様": {
-    title: "水玉模様",
+  {
+    title: SongTitle.Mizutamamoyou,
     key: "mizutamamoyou",
   },
-  "ハウス!": {
-    title: "ハウス!",
+  {
+    title: SongTitle.House,
     key: "house",
   },
-  "乃木坂の詩": {
-    title: "乃木坂の詩",
+  {
+    title: SongTitle.Nogizakanouta,
     key: "nogizakanouta",
   },
-  "会いたかったかもしれない": {
-    title: "会いたかったかもしれない",
+  {
+    title: SongTitle.Aitakattakamoshirenai,
     key: "aitakattakamoshirenai",
   },
-  "失いたくないから": {
-    title: "失いたくないから",
+  {
+    title: SongTitle.Ushinaitakunaikara,
     key: "ushinaitakunaikara",
   },
-  "白い雲にのって": {
-    title: "白い雲にのって",
+  {
+    title: SongTitle.Shiroikumoninotte,
     key: "shiroikumoninotte",
   },
-  "誰かは味方": {
-    title: "誰かは味方",
-    key: "darekanomikata",
+  {
+    title: SongTitle.Darekahamikata,
+    key: "darekahamikata",
   },
-  "革命の馬": {
-    title: "革命の馬",
+  {
+    title: SongTitle.Kakumeinouma,
     key: "kakumeinouma",
   },
-  "僕がいる場所": {
-    title: "僕がいる場所",
+  {
+    title: SongTitle.Bokugairubasho,
     key: "bokugairubasho",
   },
-  "あなたのために弾きたい": {
-    title: "あなたのために弾きたい",
+  {
+    title: SongTitle.Anatanotamenihikitai,
     key: "anatanotamenihikitai",
   },
-  "傾斜する": {
-    title: "傾斜する",
+  {
+    title: SongTitle.Keishasuru,
     key: "keishasuru",
   },
-  "なぞの落書き": {
-    title: "なぞの落書き",
+  {
+    title: SongTitle.Nazonorakugaki,
     key: "nazonorakugaki",
   },
-  "自由の彼方": {
-    title: "自由の彼方",
+  {
+    title: SongTitle.Jiyuunokanata,
     key: "jiyuunokanata",
   },
-  "ひとりよがり": {
-    title: "ひとりよがり",
+  {
+    title: SongTitle.Hitoriyogari,
     key: "hitoriyogari",
   },
-  "きっかけ": {
-    title: "きっかけ",
+  {
+    title: SongTitle.Kikkake,
     key: "kikkake",
   },
-  "太陽に口説かれて": {
-    title: "太陽に口説かれて",
+  {
+    title: SongTitle.Taiyounikudokarete,
     key: "taiyounikudokarete",
   },
-  "欲望のリインカーネーション": {
-    title: "欲望のリインカーネーション",
+  {
+    title: SongTitle.YokubouReincarnation,
     key: "yokuboureincarnation",
   },
-  "空気感": {
-    title: "空気感",
+  {
+    title: SongTitle.Kuukikann,
     key: "kuukikann",
   },
-  "光合成希望": {
-    title: "光合成希望",
+  {
+    title: SongTitle.Kougouseikibou,
     key: "kougouseikibou",
   },
-  "Threefold choice": {
-    title: "Threefold choice",
+  {
+    title: SongTitle.ThreefoldChoice,
     key: "threefoldchoice",
   },
-  "低体温のキス": {
-    title: "低体温のキス",
+  {
+    title: SongTitle.TeitaionnoKiss,
     key: "teitaionnokiss",
   },
-  "失恋したら、顔を洗え!": {
-    title: "失恋したら、顔を洗え!",
+  {
+    title: SongTitle.ShitsurenshitaraKaowoarae,
     key: "shitsurenshitarakaowoarae",
   },
-  "かき氷の片想い": {
-    title: "かき氷の片想い",
+  {
+    title: SongTitle.Kakigoorinokataomoi,
     key: "kakigoorinokataomoi",
   },
-  "環状六号線": {
-    title: "環状六号線",
+  {
+    title: SongTitle.Kanjyourokugousen,
     key: "kanjyourokugousen",
   },
-  "口約束": {
-    title: "口約束",
+  {
+    title: SongTitle.Kuchiyakusoku,
     key: "kuchiyakusoku",
   },
-  "スカイダイビング": {
-    title: "スカイダイビング",
+  {
+    title: SongTitle.Skydiving,
     key: "skydiving",
   },
-  "君が扇いでくれた": {
-    title: "君が扇いでくれた",
+  {
+    title: SongTitle.Kimigaaoidekureta,
     key: "kimigaaoidekureta",
   },
-  "思い出ファースト": {
-    title: "思い出ファースト",
+  {
+    title: SongTitle.OmoideFirst,
     key: "omoidefirst",
   },
-  "設定温度": {
-    title: "設定温度",
+  {
+    title: SongTitle.Setteiondo,
     key: "setteiondo",
   },
-  "Rewindあの日": {
-    title: "Rewindあの日",
+  {
+    title: SongTitle.RewindAnohi,
     key: "Rewindanohi",
   },
-  "ごめんね、スムージー": {
-    title: "ごめんね、スムージー",
+  {
+    title: SongTitle.GomenneSmoothie,
     key: "gomennesmoothie",
   },
-  "醜い私": {
-    title: "醜い私",
+  {
+    title: SongTitle.Minikuiwatashi,
     key: "minikuiwatashi",
   },
-  "硬い殻のように抱きしめたい": {
-    title: "硬い殻のように抱きしめたい",
-    key: "karaikaranoyounidakishimetai",
+  {
+    title: SongTitle.Kataikaranoyounidakishimetai,
+    key: "kataikaranoyounidakishimetai",
   },
-  "満月が消えた": {
-    title: "満月が消えた",
+  {
+    title: SongTitle.Mangetsugakieta,
     key: "mangetsugakieta",
   },
-  "ワタボコリ": {
-    title: "ワタボコリ",
+  {
+    title: SongTitle.Watabokori,
     key: "watabokori",
   },
-  "流星ディスコティック": {
-    title: "流星ディスコティック",
+  {
+    title: SongTitle.RyuuseiDiscotic,
     key: "ryuuseidiscotic",
   },
-  "忘却と美学": {
-    title: "忘却と美学",
+  {
+    title: SongTitle.Boukyakutobigaku,
     key: "boukyakutobigaku",
   },
-  "自分のこと": {
-    title: "自分のこと",
+  {
+    title: SongTitle.Jibunnokoto,
     key: "jibunnokoto",
   },
-  "自惚れビーチ": {
-    title: "自惚れビーチ",
+  {
+    title: SongTitle.UnuboreBeach,
     key: "unuborebeach",
   },
-  "その女": {
-    title: "その女",
+  {
+    title: SongTitle.Sonohito,
     key: "sonohito",
   },
-  "誰よりそばにいたい": {
-    title: "誰よりそばにいたい",
+  {
+    title: SongTitle.Dareyorimosobaniitai,
     key: "dareyorimosobaniitai",
   },
-  "ありがちな恋愛": {
-    title: "ありがちな恋愛",
+  {
+    title: SongTitle.Arigachinarenai,
     key: "arigachinarenai",
   },
-  "もし君がいなければ": {
-    title: "もし君がいなければ",
+  {
+    title: SongTitle.Moshikimigainakereba,
     key: "moshikimigainakereba",
   },
-  "キスの手裏剣": {
-    title: "キスの手裏剣",
+  {
+    title: SongTitle.KissNoshuriken,
     key: "kissnoshuriken",
   },
-  "頬杖をついては眠れない": {
-    title: "頬杖をついては眠れない",
+  {
+    title: SongTitle.Hoozuewotsuitehanemurenai,
     key: "hoozuewotsuitehanemurenai",
   },
-  "ぼっち党": {
-    title: "ぼっち党",
+  {
+    title: SongTitle.Bocchitou,
     key: "bocchitou",
   },
-  "さゆりんご募集中": {
-    title: "さゆりんご募集中",
+  {
+    title: SongTitle.Sayuringoboshuuchuu,
     key: "sayuringoboshuuchuu",
   },
-  "ゴルゴンゾーラ": {
-    title: "ゴルゴンゾーラ",
+  {
+    title: SongTitle.Gorugonzora,
     key: "gorugonzora",
   },
-  "もうすぐ～ザンビ伝説～": {
-    title: "もうすぐ～ザンビ伝説～",
+  {
+    title: SongTitle.MousuguZambidensetsu,
     key: "mousuguzambidensetsu",
   },
-  "OVERTURE": {
-    title: "OVERTURE",
+  {
+    title: SongTitle.Overture,
     key: "OVERTURE",
-  }
-};
+  },
+];
+
+export const SONGS = arrayToObject(SongsTitleKeyArray, "title");
 
 export const OVERTURE = "OVERTURE";

@@ -1,0 +1,30 @@
+@import "client/styles/typography.scss";
+@import "client/styles/colors.scss";
+@import "client/styles/spacing.scss";
+
+.grid {
+  align-items: center;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  justify-content: center;
+  justify-items: center;
+  left: 0;
+  margin: auto;
+  max-width: 1168px;
+  padding: 24px;
+  padding-bottom: $bottom-spacing-without-navigation-bar;
+  position: absolute;
+  right: 0;
+
+  @media (max-width: 599px) {
+    padding-bottom: $bottom-spacing-with-navigation-bar;
+  }
+}
+
+.artwork {
+  display: block;
+  max-height: 200px;
+  max-width: 200px;
+  width: 100%;
+}
