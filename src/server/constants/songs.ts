@@ -1050,5 +1050,3 @@ export const SongsTitleKeyArray: {
 ];
 
 export const SONGS = arrayToObject(SongsTitleKeyArray, "title");
-
-export const OVERTURE = "OVERTURE";

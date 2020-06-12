@@ -9,7 +9,7 @@ import {
 } from "server/actors/Cds/Albums/models";
 import * as CdConverter from "server/actors/Cds/converters";
 import { NO_ARTWORK_IMAGE_SRC } from "server/constants/paths";
-import { SongType } from "server/constants/commons";
+import { SongType, CdKind } from "server/constants/commons";
 
 type ConvertSongSingle = (params: {
   songTitle: SongRaw["title"];
@@ -91,7 +91,7 @@ export const convertSongArtwork: ConvertSongArtwork = ({
           cdArtworkType: singleSong.inCdType[0],
           cdHasArtworks: single.hasArtworks,
           cdNumber: single.number,
-          cdKind: "single",
+          cdKind: CdKind.Single,
         });
       }
     }
@@ -106,7 +106,7 @@ export const convertSongArtwork: ConvertSongArtwork = ({
           cdArtworkType: albumSong.inCdType[0],
           cdHasArtworks: album.hasArtworks,
           cdNumber: album.number,
-          cdKind: "album",
+          cdKind: CdKind.Album,
         });
       }
     }

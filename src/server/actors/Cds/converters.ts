@@ -9,8 +9,9 @@ import {
   CdType,
   SongType,
   FocusPerformersType,
+  CdKind,
 } from "server/constants/commons";
-import { SONGS, OVERTURE } from "server/constants/songs";
+import { SONGS, SongTitle } from "server/constants/songs";
 import { NO_ARTWORK_IMAGE_SRC } from "server/constants/paths";
 import { SongsRawObject } from "server/actors/Songs/models";
 import { MembersRawObject } from "server/actors/Members/models";
@@ -30,7 +31,7 @@ type ConvertCdArtwork = (params: {
   cdHasArtworks: CdRaw["hasArtworks"];
   cdNumber: CdRaw["number"];
   cdArtworkType: CdType;
-  cdKind: "album" | "single";
+  cdKind: CdKind;
 }) => string;
 
 export const convertCdArtwork: ConvertCdArtwork = ({
@@ -40,7 +41,7 @@ export const convertCdArtwork: ConvertCdArtwork = ({
   cdKind,
 }) => {
   const imageSrcBasePath =
-    cdKind === "album" ? "artworks/albums" : "artworks/singles";
+    cdKind === CdKind.Album ? "artworks/albums" : "artworks/singles";
 
   if (!cdHasArtworks) {
     return NO_ARTWORK_IMAGE_SRC;
@@ -59,7 +60,7 @@ type ConvertCdArtworks = (params: {
   cdArtworkTypes: CdRaw["artworkTypes"];
   cdHasArtworks: CdRaw["hasArtworks"];
   cdNumber: CdRaw["number"];
-  cdKind: "album" | "single";
+  cdKind: CdKind;
 }) => CdResult["artworks"];
 
 export const convertCdArtworks: ConvertCdArtworks = ({
@@ -93,7 +94,7 @@ export const convertCdSongType: ConvertCdSongType = ({
   cdSongTitle,
   songsRawObject,
 }) => {
-  if (cdSongTitle === OVERTURE) {
+  if (cdSongTitle === SongTitle.Overture) {
     return SongType.Coupling;
   }
 
@@ -122,7 +123,7 @@ export const convertCdSongFocusPerformers: ConvertCdSongFocusPerformers = ({
 
   const song = songsRawObject[cdSongTitle];
 
-  if (cdSongTitle !== OVERTURE) {
+  if (cdSongTitle !== SongTitle.Overture) {
     if (
       song.type === SongType.Title ||
       song.type === SongType.Under ||

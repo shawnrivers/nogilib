@@ -9,6 +9,7 @@ import {
 } from "server/actors/Cds/Singles/models";
 import { SongsRawObject } from "server/actors/Songs/models";
 import { arrayToObject } from "utils/arrays";
+import { CdKind } from "server/constants/commons";
 
 export class Singles {
   private rawDataArray: SinglesRawArray;
@@ -70,7 +71,7 @@ export class Singles {
         cdArtworkTypes: singleRaw.artworkTypes,
         cdHasArtworks: singleRaw.hasArtworks,
         cdNumber: singleRaw.number,
-        cdKind: "single",
+        cdKind: CdKind.Single,
       }),
       songs: CdConverters.convertCdSongs({
         cdSongsRaw: singleRaw.songs,

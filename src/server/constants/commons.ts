@@ -26,6 +26,11 @@ export enum CdType {
   L2 = "L2",
 }
 
+export enum CdKind {
+  Album = "album",
+  Single = "single",
+}
+
 export enum BloodType {
   A = "a",
   B = "b",
