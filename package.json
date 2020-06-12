@@ -67,7 +67,7 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-intl": "^4.6.9",
-    "react-lazyload": "^2.6.7"
+    "react-lazyload": "^2.6.8"
   },
   "devDependencies": {
     "@types/node": "^14.0.13",
