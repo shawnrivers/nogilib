@@ -1,9 +1,9 @@
 import { SingleRaw } from "server/actors/Cds/Singles/models";
 import { createSingleRaw } from "server/actors/Cds/Singles/raw/creator";
-import { SINGLES } from "server/constants/cds";
+import { SINGLES } from "server/actors/Cds/Singles/constants/singleTitles";
 import { CdType } from "server/constants/commons";
-import { MemberNameKey } from "server/actors/Songs/constants";
-import { SONGS } from "server/constants/songs";
+import { MemberNameKey } from "server/actors/Members/constants/memberNames";
+import { SONGS } from "server/actors/Songs/constants/songTitles";
 
 export const SIXTEENTH_SINGLE: SingleRaw = createSingleRaw({
   title: SINGLES["サヨナラの意味"].title,

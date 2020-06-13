@@ -1,38 +1,5 @@
 import { arrayToObject } from "utils/arrays";
-
-export enum AlbumTitle {
-  Imagaomoideninarumade = "今が思い出になるまで",
-  BokudakenokimiUnderBestAlbum = "僕だけの君〜Under Super Best〜",
-  Umaretekarahajimetemitayume = "生まれてから初めて見た夢",
-  Sorezorenoisu = "それぞれの椅子",
-  Toumeinairo = "透明な色",
-}
-
-export const AlbumsTitleKeyArray: {
-  title: AlbumTitle;
-  key: string;
-}[] = [
-  {
-    title: AlbumTitle.Imagaomoideninarumade,
-    key: "imagaomoideninarumade",
-  },
-  {
-    title: AlbumTitle.BokudakenokimiUnderBestAlbum,
-    key: "bokudakenokimiunderbestalbum",
-  },
-  {
-    title: AlbumTitle.Umaretekarahajimetemitayume,
-    key: "umaretekarahajimetemitayume",
-  },
-  {
-    title: AlbumTitle.Sorezorenoisu,
-    key: "sorezorenoisu",
-  },
-  {
-    title: AlbumTitle.Toumeinairo,
-    key: "toumeinairo",
-  },
-];
+import { TitleKeyArray } from "server/types/commons";
 
 export enum SingleTitle {
   Shiawasenohogoshoku = "しあわせの保護色",
@@ -62,10 +29,7 @@ export enum SingleTitle {
   GuruguruCurtain = "ぐるぐるカーテン",
 }
 
-export const SinglesTitleKeyArray: {
-  title: SingleTitle;
-  key: string;
-}[] = [
+export const SinglesTitleKeyArray: TitleKeyArray<SingleTitle> = [
   {
     title: SingleTitle.Shiawasenohogoshoku,
     key: "hogoshoku",
@@ -169,4 +133,3 @@ export const SinglesTitleKeyArray: {
 ];
 
 export const SINGLES = arrayToObject(SinglesTitleKeyArray, "title");
-export const ALBUMS = arrayToObject(AlbumsTitleKeyArray, "title");

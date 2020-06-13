@@ -1,8 +1,8 @@
 import { AlbumRaw } from "server/actors/Cds/Albums/models";
 import { createAlbumRaw } from "server/actors/Cds/Albums/raw/creator";
-import { ALBUMS } from "server/constants/cds";
+import { ALBUMS } from "server/actors/Cds/Albums/constants/albumTitles";
 import { CdType } from "server/constants/commons";
-import { SONGS } from "server/constants/songs";
+import { SONGS } from "server/actors/Songs/constants/songTitles";
 
 export const SECOND_ALBUM: AlbumRaw = createAlbumRaw({
   title: ALBUMS["それぞれの椅子"].title,

@@ -11,11 +11,11 @@ import {
   FocusPerformersType,
   CdKind,
 } from "server/constants/commons";
-import { SONGS, SongTitle } from "server/constants/songs";
+import { SONGS, SongTitle } from "server/actors/Songs/constants/songTitles";
 import { NO_ARTWORK_IMAGE_SRC } from "server/constants/paths";
 import { SongsRawObject } from "server/actors/Songs/models";
 import { MembersRawObject } from "server/actors/Members/models";
-import { MemberNameKey } from "server/actors/Songs/constants";
+import { MemberNameKey } from "server/actors/Members/constants/memberNames";
 
 export const convertPerformerNames = (
   memberNames: MemberNameKey[],

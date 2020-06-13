@@ -1,5 +1,5 @@
 import { CdRaw, CdResult } from "server/actors/Cds/models";
-import { MemberNameKey } from "server/actors/Songs/constants";
+import { MemberNameKey } from "server/actors/Members/constants/memberNames";
 
 export type SingleRaw = CdRaw & {
   underMembers: MemberNameKey[];

@@ -1,5 +1,5 @@
 import { AlbumRaw } from "server/actors/Cds/Albums/models";
-import { AlbumTitle } from "server/constants/cds";
+import { AlbumTitle } from "server/actors/Cds/Albums/constants/albumTitles";
 
 type CreateAlbumRawParams = {
   title: AlbumTitle;

@@ -4,7 +4,7 @@ import {
   SongType,
 } from "server/constants/commons";
 import { Site } from "server/types/commons";
-import { SongTitle } from "server/constants/songs";
+import { SongTitle } from "server/actors/Songs/constants/songTitles";
 
 export type CdSongRaw = {
   number: number;

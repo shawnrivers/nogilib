@@ -1,8 +1,8 @@
 import { AlbumRaw } from "server/actors/Cds/Albums/models";
 import { createAlbumRaw } from "server/actors/Cds/Albums/raw/creator";
-import { ALBUMS } from "server/constants/cds";
 import { CdType } from "server/constants/commons";
-import { SONGS } from "server/constants/songs";
+import { SONGS } from "server/actors/Songs/constants/songTitles";
+import { ALBUMS } from "server/actors/Cds/Albums/constants/albumTitles";
 
 export const FIRST_ALBUM: AlbumRaw = createAlbumRaw({
   title: ALBUMS["透明な色"].title,

@@ -8,7 +8,7 @@ import {
   PhotoAlbumType,
   SocialMedia,
 } from "server/constants/commons";
-import { MemberNameKey } from "server/actors/Songs/constants";
+import { MemberNameKey } from "server/actors/Members/constants/memberNames";
 
 export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({

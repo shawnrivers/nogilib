@@ -1,8 +1,8 @@
 import { SongRaw } from "server/actors/Songs/models";
 import { SongType } from "server/constants/commons";
-import { SONGS } from "server/constants/songs";
+import { SONGS } from "server/actors/Songs/constants/songTitles";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { MemberNameKey } from "server/actors/Songs/constants";
+import { MemberNameKey } from "server/actors/Members/constants/memberNames";
 
 export const OTHER_SONGS: SongRaw[] = [
   createSongRaw({

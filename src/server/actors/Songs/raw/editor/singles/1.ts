@@ -1,8 +1,8 @@
-import { MemberNameKey } from "server/actors/Songs/constants";
+import { MemberNameKey } from "server/actors/Members/constants/memberNames";
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { FukujinType, SongType } from "server/constants/commons";
-import { SONGS } from "server/constants/songs";
+import { SONGS } from "server/actors/Songs/constants/songTitles";
 
 export const FIRST_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({

@@ -1,4 +1,5 @@
 import { arrayToObject } from "utils/arrays";
+import { TitleKeyArray } from "server/types/commons";
 
 export enum SongTitle {
   Sekainorinjinyo = "世界中の隣人よ",
@@ -211,10 +212,7 @@ export enum SongTitle {
   Overture = "OVERTURE",
 }
 
-export const SongsTitleKeyArray: {
-  title: SongTitle;
-  key: string;
-}[] = [
+export const SongsTitleKeyArray: TitleKeyArray<SongTitle> = [
   {
     title: SongTitle.Sekainorinjinyo,
     key: "sekainorinjinyo",

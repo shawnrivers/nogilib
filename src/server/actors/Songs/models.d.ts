@@ -1,6 +1,6 @@
-import { MemberNameKey } from "server/actors/Songs/constants";
+import { MemberNameKey } from "server/actors/Members/constants/memberNames";
 import { FukujinType, SongType } from "server/constants/commons";
-import { SongTitle } from "server/constants/songs";
+import { SongTitle } from "server/actors/Songs/constants/songTitles";
 
 export type SongRaw = {
   title: SongTitle;

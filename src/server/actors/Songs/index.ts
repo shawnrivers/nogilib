@@ -10,7 +10,7 @@ import {
   SongsRawObject,
   SongsResultArray,
 } from "server/actors/Songs/models";
-import { SONGS } from "server/constants/songs";
+import { SONGS } from "server/actors/Songs/constants/songTitles";
 import {
   AlbumsRawArray,
   AlbumsRawObject,

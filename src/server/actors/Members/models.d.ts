@@ -1,4 +1,4 @@
-import { MemberNameKey } from "server/actors/Songs/constants";
+import { MemberNameKey } from "server/actors/Members/constants/memberNames";
 import {
   JoinedGenerationType,
   BloodType,
