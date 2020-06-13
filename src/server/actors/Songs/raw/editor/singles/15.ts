@@ -1,12 +1,12 @@
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { FukujinType, SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { SONGS } from "server/constants/songs";
 
 export const FIFTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.HadashideSummer,
+    title: SONGS["裸足でSummer"].title,
     type: SongType.Title,
     creators: {
       lyrics: ["秋元康"],
@@ -42,7 +42,7 @@ export const FIFTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.SecretGravity,
+    title: SONGS["シークレットグラフィティー"].title,
     type: SongType.Under,
     creators: {
       lyrics: ["秋元康"],
@@ -80,7 +80,7 @@ export const FIFTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Bokudakenohikari,
+    title: SONGS["僕だけの光"].title,
     type: SongType.Selected,
     creators: {
       lyrics: ["秋元康"],
@@ -110,7 +110,7 @@ export const FIFTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.OffshoreGirl,
+    title: SONGS["オフショアガール"].title,
     type: SongType.Solo,
     creators: {
       lyrics: ["秋元康"],
@@ -121,7 +121,7 @@ export const FIFTEENTH_SINGLE_SONGS: SongRaw[] = [
     solo: MemberNameKey.ShiraishiMai,
   }),
   createSongRaw({
-    title: SongTitle.Inochinoshinjitsu,
+    title: SONGS["命の真実 ミュージカル「林檎売りとカメムシ」"].title,
     type: SongType.Solo,
     creators: {
       lyrics: ["秋元康"],
@@ -132,7 +132,7 @@ export const FIFTEENTH_SINGLE_SONGS: SongRaw[] = [
     solo: MemberNameKey.IkutaErika,
   }),
   createSongRaw({
-    title: SongTitle.Hakumaisama,
+    title: SONGS["白米様"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -151,7 +151,7 @@ export const FIFTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Ikuatenonaibokutachi,
+    title: SONGS["行くあてのない僕たち"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],

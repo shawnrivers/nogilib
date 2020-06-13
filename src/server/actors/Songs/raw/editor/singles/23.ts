@@ -1,12 +1,12 @@
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { FukujinType, SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { MemberNameKey } from "server/actors/Songs/constants";
+import { SONGS } from "server/constants/songs";
 
 export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.SingOut,
+    title: SONGS["Sing Out!"].title,
     type: SongType.Title,
     creators: {
       lyrics: ["秋元康"],
@@ -48,7 +48,7 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Kassouro,
+    title: SONGS["滑走路"].title,
     type: SongType.Under,
     creators: {
       lyrics: ["秋元康"],
@@ -73,7 +73,7 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Noyounasonzai,
+    title: SONGS["のような存在"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -86,7 +86,7 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.AmILoving,
+    title: SONGS["Am I Loving?"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -105,7 +105,7 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Heikousen,
+    title: SONGS["平行線"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -124,7 +124,7 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Yonbanmenohikari,
+    title: SONGS["4番目の光"].title,
     type: SongType.FourthGeneration,
     creators: {
       lyrics: ["秋元康"],
@@ -150,7 +150,7 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Aimai,
+    title: SONGS["曖昧"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],

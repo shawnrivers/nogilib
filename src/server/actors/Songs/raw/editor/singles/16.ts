@@ -1,12 +1,12 @@
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { FukujinType, SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { MemberNameKey } from "server/actors/Songs/constants";
+import { SONGS } from "server/constants/songs";
 
 export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.Sayonaranoimi,
+    title: SONGS["サヨナラの意味"].title,
     type: SongType.Title,
     creators: {
       lyrics: ["秋元康"],
@@ -45,7 +45,7 @@ export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Bulanko,
+    title: SONGS["ブランコ"].title,
     type: SongType.Under,
     creators: {
       lyrics: ["秋元康"],
@@ -80,7 +80,7 @@ export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Kodokunaaozora,
+    title: SONGS["孤独な青空"].title,
     type: SongType.Selected,
     creators: {
       lyrics: ["秋元康"],
@@ -113,7 +113,7 @@ export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Anokyoushitsu,
+    title: SONGS["あの教室"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -126,7 +126,7 @@ export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Nidomenokisskara,
+    title: SONGS["2度目のキスから"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -145,7 +145,7 @@ export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Kiminiokuruhanaganai,
+    title: SONGS["君に贈る花がない"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -165,7 +165,7 @@ export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Naimononedari,
+    title: SONGS["ないものねだり"].title,
     type: SongType.Solo,
     creators: {
       lyrics: ["秋元康"],

@@ -1,11 +1,11 @@
 import { AlbumRaw } from "server/actors/Cds/Albums/models";
 import { createAlbumRaw } from "server/actors/Cds/Albums/raw/creator";
-import { AlbumTitle } from "server/constants/cds";
+import { ALBUMS } from "server/constants/cds";
 import { CdType } from "server/constants/commons";
 import { SONGS } from "server/constants/songs";
 
 export const FIRST_ALBUM: AlbumRaw = createAlbumRaw({
-  title: AlbumTitle.Toumeinairo,
+  title: ALBUMS["透明な色"].title,
   number: "1",
   release: "2015-01-27",
   previousSingle: "10",

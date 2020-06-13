@@ -1,4 +1,4 @@
-import { MemberNameKey } from "server/constants/names";
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { FukujinType, SongType } from "server/constants/commons";
 import { SongTitle } from "server/constants/songs";
 

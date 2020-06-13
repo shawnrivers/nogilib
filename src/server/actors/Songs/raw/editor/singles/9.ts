@@ -1,12 +1,12 @@
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { FukujinType, SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { SONGS } from "server/constants/songs";
 
 export const NINTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.NatsunoFreeAndEasy,
+    title: SONGS["夏のFree&Easy"].title,
     type: SongType.Title,
     creators: {
       lyrics: ["秋元康"],
@@ -43,7 +43,7 @@ export const NINTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Kokoniiruriyuu,
+    title: SONGS["ここにいる理由"].title,
     type: SongType.Under,
     creators: {
       lyrics: ["秋元康"],
@@ -78,7 +78,7 @@ export const NINTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Nanimodekizunisobaniiru,
+    title: SONGS["何もできずにそばにいる"].title,
     type: SongType.Selected,
     creators: {
       lyrics: ["秋元康"],
@@ -113,7 +113,7 @@ export const NINTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Sonosakinodeguchi,
+    title: SONGS["その先の出口!"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -137,7 +137,7 @@ export const NINTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.MukuchinaLion,
+    title: SONGS["無口なライオン"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -160,7 +160,7 @@ export const NINTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Bokugaikanakyadaregaikunda,
+    title: SONGS["僕が行かなきゃ誰が行くんだ?"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],

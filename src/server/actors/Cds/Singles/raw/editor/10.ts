@@ -1,12 +1,12 @@
 import { SingleRaw } from "server/actors/Cds/Singles/models";
 import { createSingleRaw } from "server/actors/Cds/Singles/raw/creator";
-import { SingleTitle } from "server/constants/cds";
+import { SINGLES } from "server/constants/cds";
 import { CdType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { SONGS } from "server/constants/songs";
 
 export const TENTH_SINGLE: SingleRaw = createSingleRaw({
-  title: SingleTitle.Nandomenoaozoraka,
+  title: SINGLES["何度目の青空か?"].title,
   number: "10",
   release: "2014-10-08",
   cdTypes: [CdType.A, CdType.B, CdType.C, CdType.T],

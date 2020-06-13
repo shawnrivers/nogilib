@@ -1,12 +1,12 @@
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { SONGS } from "server/constants/songs";
 
 export const THIRD_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.HashireBicycle,
+    title: SONGS["走れ!Bicycle"].title,
     type: SongType.Title,
     creators: {
       lyrics: ["秋元康"],
@@ -50,7 +50,7 @@ export const THIRD_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Namidagamadakanashimidattakoro,
+    title: SONGS["涙がまだ悲しみだった頃"].title,
     type: SongType.Under,
     creators: {
       lyrics: ["秋元康"],
@@ -88,7 +88,7 @@ export const THIRD_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Sekkachinakatatsumuri,
+    title: SONGS["せっかちなかたつむり"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -110,7 +110,7 @@ export const THIRD_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Hitohanazehashirunoka,
+    title: SONGS["人はなぜ走るのか?"].title,
     type: SongType.Selected,
     creators: {
       lyrics: ["秋元康"],
@@ -146,7 +146,7 @@ export const THIRD_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.OtogadenaiGuitar,
+    title: SONGS["音が出ないギター"].title,
     type: SongType.Coupling,
     creators: {
       lyrics: ["秋元康"],
@@ -182,7 +182,7 @@ export const THIRD_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Kairyuunoshimayo,
+    title: SONGS["海流の島よ"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],

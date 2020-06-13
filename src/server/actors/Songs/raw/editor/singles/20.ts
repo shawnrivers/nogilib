@@ -1,12 +1,12 @@
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { FukujinType, SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { MemberNameKey } from "server/actors/Songs/constants";
+import { SONGS } from "server/constants/songs";
 
 export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.Synchronicity,
+    title: SONGS["シンクロニシティ"].title,
     type: SongType.Title,
     creators: {
       lyrics: ["秋元康"],
@@ -47,7 +47,7 @@ export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Atarashiisekai,
+    title: SONGS["新しい世界"].title,
     type: SongType.Under,
     creators: {
       lyrics: ["秋元康"],
@@ -87,7 +87,7 @@ export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Against,
+    title: SONGS["Against"].title,
     type: SongType.FirstGeneration,
     creators: {
       lyrics: ["秋元康"],
@@ -122,7 +122,7 @@ export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Kumoninarebaii,
+    title: SONGS["雲になればいい"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -139,7 +139,7 @@ export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.ScoutMan,
+    title: SONGS["スカウトマン"].title,
     type: SongType.SecondGeneration,
     creators: {
       lyrics: ["秋元康"],
@@ -164,7 +164,7 @@ export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Tokitokimekimeki,
+    title: SONGS["トキトキメキメキ"].title,
     type: SongType.ThirdGeneration,
     creators: {
       lyrics: ["秋元康"],
@@ -191,7 +191,7 @@ export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Kotodamahou,
+    title: SONGS["言霊砲"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],

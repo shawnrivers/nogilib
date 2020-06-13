@@ -1,12 +1,12 @@
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { FukujinType, SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { MemberNameKey } from "server/actors/Songs/constants";
+import { SongTitle, SONGS } from "server/constants/songs";
 
 export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.Shiawasenohogoshoku,
+    title: SONGS["しあわせの保護色"].title,
     type: SongType.Title,
     creators: {
       lyrics: ["秋元康"],
@@ -48,7 +48,7 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.SayonaraStayWithMe,
+    title: SONGS["サヨナラ Stay with me"].title,
     type: SongType.Coupling,
     creators: {
       lyrics: ["秋元康"],
@@ -69,7 +69,7 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Jaane,
+    title: SONGS["じゃあね。"].title,
     type: SongType.Solo,
     creators: {
       lyrics: ["白石麻衣"],
@@ -103,7 +103,7 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.MainichigaBrandNewDay,
+    title: SONGS["毎日がBrand new day"].title,
     type: SongType.ThirdGeneration,
     creators: {
       lyrics: ["秋元康"],
@@ -129,7 +129,7 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.ISee,
+    title: SONGS["I see…"].title,
     type: SongType.FourthGeneration,
     creators: {
       lyrics: ["秋元康"],
@@ -154,7 +154,7 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.FantasticSanshokupan,
+    title: SONGS["ファンタスティック三色パン"].title,
     type: SongType.Coupling,
     creators: {
       lyrics: ["秋元康"],

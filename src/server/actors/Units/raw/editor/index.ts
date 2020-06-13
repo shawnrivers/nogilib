@@ -1,6 +1,6 @@
 import { UnitRaw } from "server/actors/Units/models";
 import { createUnitRaw } from "server/actors/Units/raw/creator";
-import { MemberNameKey } from "server/constants/names";
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { UnitType } from "server/constants/commons";
 
 export const UNITS: UnitRaw[] = [

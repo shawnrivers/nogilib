@@ -1,12 +1,12 @@
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { FukujinType, SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { SONGS } from "server/constants/songs";
 
 export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.TaiyouKnock,
+    title: SONGS["太陽ノック"].title,
     type: SongType.Title,
     creators: {
       lyrics: ["秋元康"],
@@ -44,7 +44,7 @@ export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.WakaregiwaMottosukininaru,
+    title: SONGS["別れ際、もっと好きになる"].title,
     type: SongType.Under,
     creators: {
       lyrics: ["秋元康"],
@@ -81,7 +81,7 @@ export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Mousukoshinoyume,
+    title: SONGS["もう少しの夢"].title,
     type: SongType.Solo,
     creators: {
       lyrics: ["秋元康"],
@@ -91,7 +91,7 @@ export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
     solo: MemberNameKey.NishinoNanase,
   }),
   createSongRaw({
-    title: SongTitle.SakanatachinoLoveSong,
+    title: SONGS["魚たちのLOVE SONG"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -109,7 +109,7 @@ export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Muhyoujyou,
+    title: SONGS["無表情"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -123,7 +123,7 @@ export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Hanenokioku,
+    title: SONGS["羽根の記憶"].title,
     type: SongType.Selected,
     creators: {
       lyrics: ["秋元康"],
@@ -156,7 +156,7 @@ export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Seifukuwonuidesayonarawo,
+    title: SONGS["制服を脱いでサヨナラを…"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],

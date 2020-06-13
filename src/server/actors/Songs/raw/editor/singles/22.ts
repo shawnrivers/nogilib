@@ -1,12 +1,12 @@
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { FukujinType, SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { MemberNameKey } from "server/actors/Songs/constants";
+import { SONGS } from "server/constants/songs";
 
 export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.Kaerimichihatoomawarishitakunaru,
+    title: SONGS["帰り道は遠回りしたくなる"].title,
     type: SongType.Title,
     creators: {
       lyrics: ["秋元康"],
@@ -47,7 +47,7 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Nichijou,
+    title: SONGS["日常"].title,
     type: SongType.Under,
     creators: {
       lyrics: ["秋元康"],
@@ -84,7 +84,7 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.CaravanHanemuranai,
+    title: SONGS["キャラバンは眠らない"].title,
     type: SongType.Coupling,
     creators: {
       lyrics: ["秋元康"],
@@ -115,7 +115,7 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Tsuduku,
+    title: SONGS["つづく"].title,
     type: SongType.Solo,
     creators: {
       lyrics: ["秋元康"],
@@ -126,7 +126,7 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
     solo: MemberNameKey.NishinoNanase,
   }),
   createSongRaw({
-    title: SongTitle.Kokuhakunojunban,
+    title: SONGS["告白の順番"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -145,7 +145,7 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.ChopinNousotsuki,
+    title: SONGS["ショパンの嘘つき"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -161,7 +161,7 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Shiritaikoto,
+    title: SONGS["知りたいこと"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],

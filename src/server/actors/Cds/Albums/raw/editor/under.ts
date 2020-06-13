@@ -1,11 +1,11 @@
 import { AlbumRaw } from "server/actors/Cds/Albums/models";
 import { createAlbumRaw } from "server/actors/Cds/Albums/raw/creator";
-import { AlbumTitle } from "server/constants/cds";
+import { ALBUMS } from "server/constants/cds";
 import { CdType } from "server/constants/commons";
 import { SONGS } from "server/constants/songs";
 
 export const UNDER_ALBUM: AlbumRaw = createAlbumRaw({
-  title: AlbumTitle.BokudakenokimiUnderBestAlbum,
+  title: ALBUMS["僕だけの君〜Under Super Best〜"].title,
   number: "U",
   release: "2018-01-10",
   previousSingle: "19",

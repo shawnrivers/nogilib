@@ -1,12 +1,12 @@
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { FukujinType, SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { MemberNameKey } from "server/actors/Songs/constants";
+import { SONGS } from "server/constants/songs";
 
 export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.Influencer,
+    title: SONGS["インフルエンサー"].title,
     type: SongType.Title,
     creators: {
       lyrics: ["秋元康"],
@@ -47,7 +47,7 @@ export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Fusuenhaikiteiru,
+    title: SONGS["風船は生きている"].title,
     type: SongType.Under,
     creators: {
       lyrics: ["秋元康"],
@@ -78,7 +78,7 @@ export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Jinseiwokangaetakunaru,
+    title: SONGS["人生を考えたくなる"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -96,7 +96,7 @@ export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.IgaiBreak,
+    title: SONGS["意外BREAK"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -115,7 +115,7 @@ export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.AnotherGhost,
+    title: SONGS["Another Ghost"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -133,7 +133,7 @@ export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Sanbanmenokaze,
+    title: SONGS["三番目の風"].title,
     type: SongType.ThirdGeneration,
     creators: {
       lyrics: ["秋元康"],
@@ -165,7 +165,7 @@ export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Atarisawarinonaihanashi,
+    title: SONGS["当たり障りのない話"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],

@@ -1,12 +1,12 @@
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { FukujinType, SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { SONGS } from "server/constants/songs";
 
 export const EIGHTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.Kiduitarakataomoi,
+    title: SONGS["気づいたら片想い"].title,
     type: SongType.Title,
     creators: {
       lyrics: ["秋元康"],
@@ -42,7 +42,7 @@ export const EIGHTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Umaretamamade,
+    title: SONGS["生まれたままで"].title,
     type: SongType.Under,
     creators: {
       lyrics: ["秋元康"],
@@ -78,7 +78,7 @@ export const EIGHTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.RomanceNoStart,
+    title: SONGS["ロマンスのスタート"].title,
     type: SongType.Selected,
     creators: {
       lyrics: ["秋元康"],
@@ -113,7 +113,7 @@ export const EIGHTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.ToikiMethod,
+    title: SONGS["吐息のメソッド"].title,
     type: SongType.Selected,
     creators: {
       lyrics: ["秋元康"],
@@ -146,7 +146,7 @@ export const EIGHTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Kodokukyoudai,
+    title: SONGS["孤独兄弟"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -160,7 +160,7 @@ export const EIGHTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Dankeschan,
+    title: SONGS["ダンケシェーン"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],

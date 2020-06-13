@@ -1,12 +1,12 @@
 import { SingleRaw } from "server/actors/Cds/Singles/models";
 import { createSingleRaw } from "server/actors/Cds/Singles/raw/creator";
-import { SingleTitle } from "server/constants/cds";
+import { SINGLES } from "server/constants/cds";
 import { CdType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { SONGS } from "server/constants/songs";
 
 export const SECOND_SINGLE: SingleRaw = createSingleRaw({
-  title: SingleTitle.Oideshampo,
+  title: SINGLES["おいでシャンプー"].title,
   number: "2",
   release: "2012-05-02",
   cdTypes: [CdType.A, CdType.B, CdType.C, CdType.T],

@@ -15,7 +15,7 @@ import { SONGS, SongTitle } from "server/constants/songs";
 import { NO_ARTWORK_IMAGE_SRC } from "server/constants/paths";
 import { SongsRawObject } from "server/actors/Songs/models";
 import { MembersRawObject } from "server/actors/Members/models";
-import { MemberNameKey } from "server/constants/names";
+import { MemberNameKey } from "server/actors/Songs/constants";
 
 export const convertPerformerNames = (
   memberNames: MemberNameKey[],

@@ -1,11 +1,11 @@
 import { AlbumRaw } from "server/actors/Cds/Albums/models";
 import { createAlbumRaw } from "server/actors/Cds/Albums/raw/creator";
-import { AlbumTitle } from "server/constants/cds";
+import { ALBUMS } from "server/constants/cds";
 import { CdType } from "server/constants/commons";
 import { SONGS } from "server/constants/songs";
 
 export const FOURTH_ALBUM: AlbumRaw = createAlbumRaw({
-  title: AlbumTitle.Imagaomoideninarumade,
+  title: ALBUMS["今が思い出になるまで"].title,
   number: "4",
   release: "2019-04-17",
   previousSingle: "22",

@@ -1,12 +1,12 @@
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { SONGS } from "server/constants/songs";
 
 export const FIRST_ALBUM_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.Darekahamikata,
+    title: SONGS["誰かは味方"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -22,7 +22,7 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Kakumeinouma,
+    title: SONGS["革命の馬"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -41,7 +41,7 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Bokugairubasho,
+    title: SONGS["僕がいる場所"].title,
     type: SongType.Selected,
     creators: {
       lyrics: ["秋元康"],
@@ -71,7 +71,7 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Anatanotamenihikitai,
+    title: SONGS["あなたのために弾きたい"].title,
     type: SongType.Solo,
     creators: {
       lyrics: ["秋元康"],
@@ -81,7 +81,7 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
     solo: MemberNameKey.IkutaErika,
   }),
   createSongRaw({
-    title: SongTitle.Keishasuru,
+    title: SONGS["傾斜する"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -112,7 +112,7 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Nazonorakugaki,
+    title: SONGS["なぞの落書き"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -128,7 +128,7 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Jiyuunokanata,
+    title: SONGS["自由の彼方"].title,
     type: SongType.Under,
     creators: {
       lyrics: ["秋元康"],
@@ -166,7 +166,7 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Hitoriyogari,
+    title: SONGS["ひとりよがり"].title,
     type: SongType.Solo,
     creators: {
       lyrics: ["秋元康"],

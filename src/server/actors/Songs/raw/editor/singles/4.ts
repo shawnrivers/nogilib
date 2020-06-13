@@ -1,12 +1,12 @@
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { FukujinType, SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { SONGS } from "server/constants/songs";
 
 export const FOURTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.SeifukunoMannequin,
+    title: SONGS["制服のマネキン"].title,
     type: SongType.Title,
     creators: {
       lyrics: ["秋元康"],
@@ -42,7 +42,7 @@ export const FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.HarunoMelody,
+    title: SONGS["春のメロディー"].title,
     type: SongType.Under,
     creators: {
       lyrics: ["秋元康"],
@@ -79,7 +79,7 @@ export const FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Yubibouenkyou,
+    title: SONGS["指望遠鏡"].title,
     type: SongType.Selected,
     creators: {
       lyrics: ["秋元康"],
@@ -114,7 +114,7 @@ export const FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Yasashisanaramaniatteiru,
+    title: SONGS["やさしさなら間に合ってる"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -136,7 +136,7 @@ export const FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Kokojanaidokoka,
+    title: SONGS["ここじゃないどこか"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -153,7 +153,7 @@ export const FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.ShibuyaBlues,
+    title: SONGS["渋谷ブルース"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],

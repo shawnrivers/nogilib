@@ -1,12 +1,12 @@
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { SONGS } from "server/constants/songs";
 
 export const THIRD_ALBUM_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.Skydiving,
+    title: SONGS["スカイダイビング"].title,
     type: SongType.Selected,
     creators: {
       lyrics: ["秋元康"],
@@ -40,7 +40,7 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Kimigaaoidekureta,
+    title: SONGS["君が扇いでくれた"].title,
     type: SongType.Under,
     creators: {
       lyrics: ["秋元康"],
@@ -65,7 +65,7 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.OmoideFirst,
+    title: SONGS["思い出ファースト"].title,
     type: SongType.ThirdGeneration,
     creators: {
       lyrics: ["秋元康"],
@@ -90,7 +90,7 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Setteiondo,
+    title: SONGS["設定温度"].title,
     type: SongType.Selected,
     creators: {
       lyrics: ["秋元康"],
@@ -152,7 +152,7 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.RewindAnohi,
+    title: SONGS["Rewindあの日"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -168,7 +168,7 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.GomenneSmoothie,
+    title: SONGS["ごめんね、スムージー"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -184,7 +184,7 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Minikuiwatashi,
+    title: SONGS["醜い私"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -200,7 +200,7 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Kataikaranoyounidakishimetai,
+    title: SONGS["硬い殻のように抱きしめたい"].title,
     type: SongType.Solo,
     creators: {
       lyrics: ["秋元康"],
@@ -210,7 +210,7 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
     solo: MemberNameKey.SaitouAsuka,
   }),
   createSongRaw({
-    title: SongTitle.Mangetsugakieta,
+    title: SONGS["満月が消えた"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -226,7 +226,7 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Watabokori,
+    title: SONGS["ワタボコリ"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -242,7 +242,7 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.RyuuseiDiscotic,
+    title: SONGS["流星ディスコティック"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -254,7 +254,7 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Boukyakutobigaku,
+    title: SONGS["忘却と美学"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],

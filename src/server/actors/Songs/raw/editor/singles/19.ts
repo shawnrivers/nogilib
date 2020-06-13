@@ -1,12 +1,12 @@
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { FukujinType, SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { MemberNameKey } from "server/actors/Songs/constants";
+import { SONGS } from "server/constants/songs";
 
 export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.Itsukadekirukarakyoudekiru,
+    title: SONGS["いつかできるから今日できる"].title,
     type: SongType.Title,
     creators: {
       lyrics: ["秋元康"],
@@ -45,7 +45,7 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.MyRule,
+    title: SONGS["My rule"].title,
     type: SongType.Under,
     creators: {
       lyrics: ["秋元康"],
@@ -78,7 +78,7 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Fumenshou,
+    title: SONGS["不眠症"].title,
     type: SongType.Coupling,
     creators: {
       lyrics: ["秋元康"],
@@ -112,7 +112,7 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Maaiika,
+    title: SONGS["まあいいか?"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -125,7 +125,7 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Shitsurenosoujinin,
+    title: SONGS["失恋お掃除人"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -144,7 +144,7 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Bokunoshoudou,
+    title: SONGS["僕の衝動"].title,
     type: SongType.ThirdGeneration,
     creators: {
       lyrics: ["秋元康"],
@@ -170,7 +170,7 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Atarashiikafun,
+    title: SONGS["新しい花粉 〜ミュージカル「見知らぬ世界」より〜"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],

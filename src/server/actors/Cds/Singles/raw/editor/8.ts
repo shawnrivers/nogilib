@@ -1,12 +1,12 @@
 import { SingleRaw } from "server/actors/Cds/Singles/models";
 import { createSingleRaw } from "server/actors/Cds/Singles/raw/creator";
-import { SingleTitle } from "server/constants/cds";
+import { SINGLES } from "server/constants/cds";
 import { CdType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { SONGS } from "server/constants/songs";
 
 export const EIGHTH_SINGLE: SingleRaw = createSingleRaw({
-  title: SingleTitle.Kiduitarakataomoi,
+  title: SINGLES["気づいたら片想い"].title,
   number: "8",
   release: "2014-04-02",
   cdTypes: [CdType.A, CdType.B, CdType.C, CdType.T],

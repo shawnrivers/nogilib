@@ -1,12 +1,12 @@
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { FukujinType, SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { SONGS } from "server/constants/songs";
 
 export const FIRST_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.GuruguruCurtain,
+    title: SONGS["ぐるぐるカーテン"].title,
     type: SongType.Title,
     creators: {
       lyrics: ["秋元康"],
@@ -42,7 +42,7 @@ export const FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Hidarimunenoyuuki,
+    title: SONGS["左胸の勇気"].title,
     type: SongType.Under,
     creators: {
       lyrics: ["秋元康"],
@@ -75,7 +75,7 @@ export const FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Nogizakanouta,
+    title: SONGS["乃木坂の詩"].title,
     type: SongType.Coupling,
     creators: {
       lyrics: ["秋元康"],
@@ -123,7 +123,7 @@ export const FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Aitakattakamoshirenai,
+    title: SONGS["会いたかったかもしれない"].title,
     type: SongType.Coupling,
     creators: {
       lyrics: ["秋元康"],
@@ -158,7 +158,7 @@ export const FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Ushinaitakunaikara,
+    title: SONGS["失いたくないから"].title,
     type: SongType.Coupling,
     creators: {
       lyrics: ["秋元康"],
@@ -193,7 +193,7 @@ export const FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Shiroikumoninotte,
+    title: SONGS["白い雲にのって"].title,
     type: SongType.Coupling,
     creators: {
       lyrics: ["秋元康"],

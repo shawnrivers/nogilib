@@ -1,12 +1,12 @@
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { FukujinType, SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { SONGS } from "server/constants/songs";
 
 export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.ImaHanashitaidarekagairu,
+    title: SONGS["今、話したい誰かがいる"].title,
     type: SongType.Title,
     creators: {
       lyrics: ["秋元康"],
@@ -42,7 +42,7 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Shittonokenri,
+    title: SONGS["嫉妬の権利"].title,
     type: SongType.Under,
     creators: {
       lyrics: ["秋元康"],
@@ -82,7 +82,7 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Popipappappa,
+    title: SONGS["ポピパッパパー"].title,
     type: SongType.Selected,
     creators: {
       lyrics: ["秋元康"],
@@ -117,7 +117,7 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Otonahenochikamichi,
+    title: SONGS["大人への近道"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -137,7 +137,7 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Kanashiminowasurekata,
+    title: SONGS["悲しみの忘れ方"].title,
     type: SongType.Selected12,
     creators: {
       lyrics: ["秋元康"],
@@ -170,7 +170,7 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Sukima,
+    title: SONGS["隙間"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],

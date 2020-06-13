@@ -1,12 +1,12 @@
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { FukujinType, SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { SONGS } from "server/constants/songs";
 
 export const FIFTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.Kiminonahakibou,
+    title: SONGS["君の名は希望"].title,
     type: SongType.Title,
     creators: {
       lyrics: ["秋元康"],
@@ -42,7 +42,7 @@ export const FIFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Jyuusannichinokinyoubi,
+    title: SONGS["13日の金曜日"].title,
     type: SongType.Under,
     creators: {
       lyrics: ["秋元康"],
@@ -78,7 +78,7 @@ export const FIFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Shakism,
+    title: SONGS["シャキイズム"].title,
     type: SongType.Selected,
     creators: {
       lyrics: ["秋元康"],
@@ -109,7 +109,7 @@ export const FIFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.RomanticIkayaki,
+    title: SONGS["ロマンティックいか焼き"].title,
     type: SongType.Selected,
     creators: {
       lyrics: ["秋元康"],
@@ -138,7 +138,7 @@ export const FIFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Dekopin,
+    title: SONGS["でこぴん"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -157,7 +157,7 @@ export const FIFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.PsychokinesesNokanousei,
+    title: SONGS["サイコキネシスの可能性"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],

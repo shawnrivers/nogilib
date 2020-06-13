@@ -7,7 +7,7 @@ import {
   JoinedGenerationType,
   SocialMedia,
 } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
+import { MemberNameKey } from "server/actors/Songs/constants";
 
 export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({

@@ -1,11 +1,11 @@
 import { AlbumRaw } from "server/actors/Cds/Albums/models";
 import { createAlbumRaw } from "server/actors/Cds/Albums/raw/creator";
-import { AlbumTitle } from "server/constants/cds";
+import { ALBUMS } from "server/constants/cds";
 import { CdType } from "server/constants/commons";
 import { SONGS } from "server/constants/songs";
 
 export const THIRD_ALBUM: AlbumRaw = createAlbumRaw({
-  title: AlbumTitle.Umaretekarahajimetemitayume,
+  title: ALBUMS["生まれてから初めて見た夢"].title,
   number: "3",
   release: "2017-05-24",
   previousSingle: "17",

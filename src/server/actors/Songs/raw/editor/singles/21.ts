@@ -1,12 +1,12 @@
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { FukujinType, SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { MemberNameKey } from "server/actors/Songs/constants";
+import { SONGS } from "server/constants/songs";
 
 export const TWENTY_FIRST_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.Jikochudeikou,
+    title: SONGS["ジコチューで行こう!"].title,
     type: SongType.Title,
     creators: {
       lyrics: ["秋元康"],
@@ -47,7 +47,7 @@ export const TWENTY_FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Sankakunoakichi,
+    title: SONGS["三角の空き地"].title,
     type: SongType.Under,
     creators: {
       lyrics: ["秋元康"],
@@ -84,7 +84,7 @@ export const TWENTY_FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Soratobira,
+    title: SONGS["空扉"].title,
     type: SongType.Selected,
     creators: {
       lyrics: ["秋元康"],
@@ -116,7 +116,7 @@ export const TWENTY_FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Jibunjanaikanji,
+    title: SONGS["自分じゃない感じ"].title,
     type: SongType.ThirdGeneration,
     creators: {
       lyrics: ["秋元康"],
@@ -141,7 +141,7 @@ export const TWENTY_FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.KokoronoMonolog,
+    title: SONGS["心のモノローグ"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -154,7 +154,7 @@ export const TWENTY_FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Chikyuugamaruinara,
+    title: SONGS["地球が丸いなら"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -171,7 +171,7 @@ export const TWENTY_FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Annanisukidattanoni,
+    title: SONGS["あんなに好きだったのに..."].title,
     type: SongType.Selected,
     creators: {
       lyrics: ["秋元康"],

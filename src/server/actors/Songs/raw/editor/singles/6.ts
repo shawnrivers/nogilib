@@ -1,12 +1,12 @@
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { FukujinType, SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { SONGS } from "server/constants/songs";
 
 export const SIXTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.GirlsRule,
+    title: SONGS["ガールズルール"].title,
     type: SongType.Title,
     creators: {
       lyrics: ["秋元康"],
@@ -42,7 +42,7 @@ export const SIXTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Senpuuki,
+    title: SONGS["扇風機"].title,
     type: SongType.Under,
     creators: {
       lyrics: ["秋元康"],
@@ -79,7 +79,7 @@ export const SIXTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.SekaideichibanKodokuraLover,
+    title: SONGS["世界で一番 孤独なLover"].title,
     type: SongType.Selected,
     creators: {
       lyrics: ["秋元康"],
@@ -114,7 +114,7 @@ export const SIXTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Koumoriyo,
+    title: SONGS["コウモリよ"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -131,7 +131,7 @@ export const SIXTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Hokanohoshikara,
+    title: SONGS["他の星から"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -153,7 +153,7 @@ export const SIXTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Ningentoiugakki,
+    title: SONGS["人間という楽器"].title,
     type: SongType.FirstGeneration,
     creators: {
       lyrics: ["秋元康"],

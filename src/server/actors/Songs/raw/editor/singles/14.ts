@@ -1,12 +1,12 @@
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { FukujinType, SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { SONGS } from "server/constants/songs";
 
 export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.Harujiongasakugoro,
+    title: SONGS["ハルジオンが咲く頃"].title,
     type: SongType.Title,
     creators: {
       lyrics: ["秋元康"],
@@ -43,7 +43,7 @@ export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Futoogo,
+    title: SONGS["不等号"].title,
     type: SongType.Under,
     creators: {
       lyrics: ["秋元康"],
@@ -81,7 +81,7 @@ export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.HarukanaruBhutan,
+    title: SONGS["遥かなるブータン"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -101,7 +101,7 @@ export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Tsuyogarutsubomi,
+    title: SONGS["強がる蕾"].title,
     type: SongType.Solo,
     creators: {
       lyrics: ["秋元康"],
@@ -112,7 +112,7 @@ export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
     solo: MemberNameKey.FukagawaMai,
   }),
   createSongRaw({
-    title: SongTitle.Kyuushamen,
+    title: SONGS["急斜面"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -129,7 +129,7 @@ export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Tsuribori,
+    title: SONGS["釣り堀"].title,
     type: SongType.Solo,
     creators: {
       lyrics: ["秋元康"],
@@ -140,7 +140,7 @@ export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
     solo: MemberNameKey.NishinoNanase,
   }),
   createSongRaw({
-    title: SongTitle.Yuuutsutofuusengamu,
+    title: SONGS["憂鬱と風船ガム"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],

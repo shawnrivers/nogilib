@@ -1,12 +1,12 @@
 import { SingleRaw } from "server/actors/Cds/Singles/models";
 import { createSingleRaw } from "server/actors/Cds/Singles/raw/creator";
-import { SingleTitle } from "server/constants/cds";
+import { SINGLES } from "server/constants/cds";
 import { CdType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { SONGS } from "server/constants/songs";
 
 export const TWENTY_THIRD_SINGLE: SingleRaw = createSingleRaw({
-  title: SingleTitle.SingOut,
+  title: SINGLES["Sing Out!"].title,
   number: "23",
   release: "2019-05-29",
   cdTypes: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],

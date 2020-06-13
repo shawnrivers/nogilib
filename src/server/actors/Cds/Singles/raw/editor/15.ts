@@ -1,12 +1,12 @@
 import { SingleRaw } from "server/actors/Cds/Singles/models";
 import { createSingleRaw } from "server/actors/Cds/Singles/raw/creator";
-import { SingleTitle } from "server/constants/cds";
+import { SINGLES } from "server/constants/cds";
 import { CdType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { SONGS } from "server/constants/songs";
 
 export const FIFTEENTH_SINGLE: SingleRaw = createSingleRaw({
-  title: SingleTitle.HadashideSummer,
+  title: SINGLES["裸足でSummer"].title,
   number: "15",
   release: "2016-07-27",
   cdTypes: [CdType.A, CdType.B, CdType.C, CdType.D, CdType.T],

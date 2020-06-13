@@ -1,12 +1,12 @@
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { FukujinType, SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { SONGS } from "server/constants/songs";
 
 export const TENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.Nandomenoaozoraka,
+    title: SONGS["何度目の青空か?"].title,
     type: SongType.Title,
     creators: {
       lyrics: ["秋元康"],
@@ -42,7 +42,7 @@ export const TENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Anohibokuhausowotsuita,
+    title: SONGS["あの日 僕は咄嗟に嘘をついた"].title,
     type: SongType.Under,
     creators: {
       lyrics: ["秋元康"],
@@ -78,7 +78,7 @@ export const TENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Toomawarinoaijou,
+    title: SONGS["遠回りの愛情"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -100,7 +100,7 @@ export const TENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Korogattakanewonarase,
+    title: SONGS["転がった鐘を鳴らせ!"].title,
     type: SongType.Selected,
     creators: {
       lyrics: ["秋元康"],
@@ -131,7 +131,7 @@ export const TENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Watashiokiru,
+    title: SONGS["私、起きる。"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -156,7 +156,7 @@ export const TENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.TenderDays,
+    title: SONGS["Tender days"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],

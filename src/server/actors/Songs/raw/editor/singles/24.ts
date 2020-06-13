@@ -1,12 +1,12 @@
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { FukujinType, SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { MemberNameKey } from "server/actors/Songs/constants";
+import { SONGS } from "server/constants/songs";
 
 export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.Yoakemadetsuyogaranakutemoii,
+    title: SONGS["夜明けまで強がらなくてもいい"].title,
     type: SongType.Title,
     creators: {
       lyrics: ["秋元康"],
@@ -44,7 +44,7 @@ export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Bokunokotoshitteru,
+    title: SONGS["僕のこと、知ってる?"].title,
     type: SongType.Coupling,
     creators: {
       lyrics: ["秋元康"],
@@ -84,7 +84,7 @@ export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Romendenshanomachi,
+    title: SONGS["路面電車の街"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -101,7 +101,7 @@ export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Toshoshitsunokimihe,
+    title: SONGS["図書室の君へ"].title,
     type: SongType.FourthGeneration,
     creators: {
       lyrics: ["秋元康"],
@@ -127,7 +127,7 @@ export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Tokidokiomoidashitekudasai,
+    title: SONGS["時々 思い出してください"].title,
     type: SongType.Solo,
     creators: {
       lyrics: ["秋元康"],
@@ -139,7 +139,7 @@ export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
   }),
 
   createSongRaw({
-    title: SongTitle.DoMyBestJaimiganai,
+    title: SONGS["～Do my best～じゃ意味はない"].title,
     type: SongType.Under,
     creators: {
       lyrics: ["秋元康"],
@@ -170,7 +170,7 @@ export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Bokunoomoikomi,
+    title: SONGS["僕の思い込み"].title,
     type: SongType.Coupling,
     creators: {
       lyrics: ["秋元康"],

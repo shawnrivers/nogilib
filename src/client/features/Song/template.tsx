@@ -12,7 +12,7 @@ import { Language } from "client/utils/constants";
 import { useScrollRestoration } from "client/hooks/useScrollRestoration";
 import { SongType } from "server/constants/commons";
 import { KOJIHARU_IMAGE_SRC } from "server/constants/paths";
-import { MemberNameKey } from "server/constants/names";
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { MemberCard } from "client/components/atoms/MemberCard";
 
 const containerVariants = {

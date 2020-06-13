@@ -1,12 +1,12 @@
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { FukujinType, SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { MemberNameKey } from "server/actors/Songs/constants";
+import { SONGS } from "server/constants/songs";
 
 export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.Nigemizu,
+    title: SONGS["逃げ水"].title,
     type: SongType.Title,
     creators: {
       lyrics: ["秋元康"],
@@ -44,7 +44,7 @@ export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Under,
+    title: SONGS["アンダー"].title,
     type: SongType.Under,
     creators: {
       lyrics: ["秋元康"],
@@ -81,7 +81,7 @@ export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Onnahahitorijanemurenai,
+    title: SONGS["女は一人じゃ眠れない"].title,
     type: SongType.Selected,
     creators: {
       lyrics: ["秋元康"],
@@ -114,7 +114,7 @@ export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Hitonatsunonagasayori,
+    title: SONGS["ひと夏の長さより…"].title,
     type: SongType.Selected,
     creators: {
       lyrics: ["秋元康"],
@@ -146,7 +146,7 @@ export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.LiveShin,
+    title: SONGS["ライブ神"].title,
     type: SongType.SecondGeneration,
     creators: {
       lyrics: ["秋元康"],
@@ -177,7 +177,7 @@ export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
 
   createSongRaw({
-    title: SongTitle.Mirainokotae,
+    title: SONGS["未来の答え"].title,
     type: SongType.ThirdGeneration,
     creators: {
       lyrics: ["秋元康"],
@@ -209,7 +209,7 @@ export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
 
   createSongRaw({
-    title: SongTitle.Naitatteiijanaika,
+    title: SONGS["泣いたっていいじゃないか?"].title,
     type: SongType.Selected,
     creators: {
       lyrics: ["秋元康"],

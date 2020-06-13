@@ -1,4 +1,4 @@
-import { MemberNameKey } from "server/constants/names";
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { UnitType } from "server/constants/commons";
 
 export type UnitRaw = {

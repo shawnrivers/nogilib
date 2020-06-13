@@ -1,12 +1,12 @@
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { FukujinType, SongType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
-import { SongTitle } from "server/constants/songs";
+import { SONGS } from "server/constants/songs";
 
 export const ELEVENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SongTitle.Inochihautsukushii,
+    title: SONGS["命は美しい"].title,
     type: SongType.Title,
     creators: {
       lyrics: ["秋元康"],
@@ -44,7 +44,7 @@ export const ELEVENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Kimihabokutotoawanaihougayokattanokana,
+    title: SONGS["君は僕と会わない方がよかったのかな"].title,
     type: SongType.Under,
     creators: {
       lyrics: ["秋元康"],
@@ -77,7 +77,7 @@ export const ELEVENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.ArakajimekatarareruRomance,
+    title: SONGS["あらかじめ語られるロマンス"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -98,7 +98,7 @@ export const ELEVENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.Tachinaorichuu,
+    title: SONGS["立ち直り中"].title,
     type: SongType.Unit,
     creators: {
       lyrics: ["秋元康"],
@@ -120,7 +120,7 @@ export const ELEVENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SongTitle.GomenneZutto,
+    title: SONGS["ごめんね ずっと…"].title,
     type: SongType.Solo,
     creators: {
       lyrics: ["秋元康"],
@@ -131,7 +131,7 @@ export const ELEVENTH_SINGLE_SONGS: SongRaw[] = [
     solo: MemberNameKey.NishinoNanase,
   }),
   createSongRaw({
-    title: SongTitle.Border,
+    title: SONGS["ボーダー"].title,
     type: SongType.SecondGeneration,
     creators: {
       lyrics: ["秋元康"],

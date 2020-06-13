@@ -1,12 +1,12 @@
 import { SingleRaw } from "server/actors/Cds/Singles/models";
 import { createSingleRaw } from "server/actors/Cds/Singles/raw/creator";
-import { SingleTitle } from "server/constants/cds";
+import { SINGLES } from "server/constants/cds";
 import { CdType } from "server/constants/commons";
-import { MemberNameKey } from "server/constants/names";
+import { MemberNameKey } from "server/actors/Songs/constants";
 import { SONGS } from "server/constants/songs";
 
 export const ELEVENTH_SINGLE: SingleRaw = createSingleRaw({
-  title: SingleTitle.Inochihautsukushii,
+  title: SINGLES["命は美しい"].title,
   number: "11",
   release: "2015-03-18",
   cdTypes: [CdType.A, CdType.B, CdType.C, CdType.T],

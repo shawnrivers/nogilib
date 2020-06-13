@@ -5,7 +5,7 @@ import styles from "./membercard.module.scss";
 import { Language } from "client/utils/constants";
 import { LocalizedLink } from "client/components/atoms/locales/LocalizedLink";
 import { Image } from "client/components/atoms/Image";
-import { MemberNameKey } from "server/constants/names";
+import { MemberNameKey } from "server/actors/Songs/constants";
 
 interface MemberCardProps {
   image: string;
