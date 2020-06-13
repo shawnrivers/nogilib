@@ -1,3 +1,5 @@
+import { arrayToObject } from "utils/arrays";
+
 export enum AlbumTitle {
   Imagaomoideninarumade = "今が思い出になるまで",
   BokudakenokimiUnderBestAlbum = "僕だけの君〜Under Super Best〜",
@@ -165,3 +167,6 @@ export const SinglesTitleKeyArray: {
     key: "gurugurucurtain",
   },
 ];
+
+export const SINGLES = arrayToObject(SinglesTitleKeyArray, "title");
+export const ALBUMS = arrayToObject(AlbumsTitleKeyArray, "title");
