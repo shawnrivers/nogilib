@@ -6,14 +6,14 @@ import { ArrowBackIcon } from "client/components/atoms/icons/ArrowBackIcon";
 import { Image } from "client/components/atoms/Image";
 import { LocalizedList } from "client/components/atoms/locales/LocalizedList";
 import { LocalizedNumber } from "client/components/atoms/locales/LocalizedNumber";
-import { MemberCard } from "client/components/atoms/MemberCard";
 import { Message } from "client/components/atoms/Message";
 import { PageContentLayout } from "client/components/atoms/PageContentLayout";
 import { Language } from "client/utils/constants";
 import { useScrollRestoration } from "client/hooks/useScrollRestoration";
 import { SongType } from "server/constants/commons";
-import { KOJIHARU_NAME } from "server/constants/names";
 import { KOJIHARU_IMAGE_SRC } from "server/constants/paths";
+import { MemberName } from "server/constants/names";
+import { MemberCard } from "client/components/atoms/MemberCard";
 
 const containerVariants = {
   visible: {
@@ -111,7 +111,7 @@ const PerformersTag = injectIntl(
 
 const KojiharuCard = ({ isCenter }: { isCenter: boolean }) => (
   <MemberCard
-    nameKey={KOJIHARU_NAME}
+    nameKey={MemberName.KojimaHaruna}
     name={{
       lastName: "小嶋",
       lastNameEn: "kojima",
@@ -227,7 +227,7 @@ export const Song = ({
                           </h4>
                           <div className={styles.grid}>
                             {row.map(memberName => {
-                              if (memberName !== KOJIHARU_NAME) {
+                              if (memberName !== MemberName.KojimaHaruna) {
                                 const member = members[memberName];
                                 return (
                                   <div
@@ -258,7 +258,7 @@ export const Song = ({
                     ) : (
                       <div className={styles.grid}>
                         {formation[0].map(memberName => {
-                          if (memberName !== KOJIHARU_NAME) {
+                          if (memberName !== MemberName.KojimaHaruna) {
                             const member = members[memberName];
                             return (
                               <div className={styles.card} key={member.name}>
