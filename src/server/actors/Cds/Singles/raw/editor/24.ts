@@ -2,7 +2,7 @@ import { SingleRaw } from "server/actors/Cds/Singles/models";
 import { createSingleRaw } from "server/actors/Cds/Singles/raw/creator";
 import { SingleTitle } from "server/constants/cds";
 import { CdType } from "server/constants/commons";
-import { MemberName } from "server/constants/names";
+import { MemberNameKey } from "server/constants/names";
 import { SONGS } from "server/constants/songs";
 
 export const TWENTY_FOURTH_SINGLE: SingleRaw = createSingleRaw({
@@ -41,32 +41,32 @@ export const TWENTY_FOURTH_SINGLE: SingleRaw = createSingleRaw({
     },
   ],
   underMembers: [
-    MemberName.ItouJunna,
-    MemberName.ItouRiria,
-    MemberName.IwamotoRenka,
-    MemberName.SakaguchiTamami,
-    MemberName.SasakiKotoko,
-    MemberName.SatouKaede,
-    MemberName.SuzukiAyane,
-    MemberName.TeradaRanze,
-    MemberName.NakadaKana,
-    MemberName.NakamuraReno,
-    MemberName.HiguchiHina,
-    MemberName.MukaiHazuki,
-    MemberName.YamazakiRena,
-    MemberName.YoshidaAyanoChristie,
-    MemberName.WatanabeMiria,
-    MemberName.WadaMaaya,
+    MemberNameKey.ItouJunna,
+    MemberNameKey.ItouRiria,
+    MemberNameKey.IwamotoRenka,
+    MemberNameKey.SakaguchiTamami,
+    MemberNameKey.SasakiKotoko,
+    MemberNameKey.SatouKaede,
+    MemberNameKey.SuzukiAyane,
+    MemberNameKey.TeradaRanze,
+    MemberNameKey.NakadaKana,
+    MemberNameKey.NakamuraReno,
+    MemberNameKey.HiguchiHina,
+    MemberNameKey.MukaiHazuki,
+    MemberNameKey.YamazakiRena,
+    MemberNameKey.YoshidaAyanoChristie,
+    MemberNameKey.WatanabeMiria,
+    MemberNameKey.WadaMaaya,
   ],
   trainees: [
-    MemberName.KakehashiSayaka,
-    MemberName.KanagawaSaya,
-    MemberName.KitagawaYuri,
-    MemberName.ShibataYuna,
-    MemberName.SeimiyaRei,
-    MemberName.TamuraMayu,
-    MemberName.HayakawaSeira,
-    MemberName.YakuboMio,
+    MemberNameKey.KakehashiSayaka,
+    MemberNameKey.KanagawaSaya,
+    MemberNameKey.KitagawaYuri,
+    MemberNameKey.ShibataYuna,
+    MemberNameKey.SeimiyaRei,
+    MemberNameKey.TamuraMayu,
+    MemberNameKey.HayakawaSeira,
+    MemberNameKey.YakuboMio,
   ],
-  skips: [MemberName.InoueSayuri, MemberName.OozonoMomoko],
+  skips: [MemberNameKey.InoueSayuri, MemberNameKey.OozonoMomoko],
 });

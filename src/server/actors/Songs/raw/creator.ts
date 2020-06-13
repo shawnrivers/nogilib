@@ -1,6 +1,6 @@
 import { SongRaw } from "server/actors/Songs/models";
 import { SongType } from "server/constants/commons";
-import { MemberName } from "server/constants/names";
+import { MemberNameKey } from "server/constants/names";
 
 type SongRawCreatorCreators = {
   lyrics?: string[];
@@ -10,10 +10,10 @@ type SongRawCreatorCreators = {
 };
 
 type SongRawCreatorFormation = {
-  firstRow: MemberName[];
-  secondRow?: MemberName[];
-  thirdRow?: MemberName[];
-  fourthRow?: MemberName[];
+  firstRow: MemberNameKey[];
+  secondRow?: MemberNameKey[];
+  thirdRow?: MemberNameKey[];
+  fourthRow?: MemberNameKey[];
 };
 
 type SongRawCreatorParams = {
@@ -35,7 +35,7 @@ type SongRawCreatorParams = {
     }
   | {
       type: SongType.Solo;
-      solo: MemberName;
+      solo: MemberNameKey;
     }
   | {
       type: Exclude<

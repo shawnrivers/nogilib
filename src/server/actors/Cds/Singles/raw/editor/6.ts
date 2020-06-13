@@ -2,7 +2,7 @@ import { SingleRaw } from "server/actors/Cds/Singles/models";
 import { createSingleRaw } from "server/actors/Cds/Singles/raw/creator";
 import { SingleTitle } from "server/constants/cds";
 import { CdType } from "server/constants/commons";
-import { MemberName } from "server/constants/names";
+import { MemberNameKey } from "server/constants/names";
 import { SONGS } from "server/constants/songs";
 
 export const SIXTH_SINGLE: SingleRaw = createSingleRaw({
@@ -37,21 +37,21 @@ export const SIXTH_SINGLE: SingleRaw = createSingleRaw({
     },
   ],
   underMembers: [
-    MemberName.HiguchiHina,
-    MemberName.SaitouAsuka,
-    MemberName.NakamotoHimeka,
-    MemberName.NoujouAmi,
-    MemberName.EtouMisa,
-    MemberName.KawamuraMahiro,
-    MemberName.ItouNene,
-    MemberName.NagashimaSeira,
-    MemberName.SaitouChiharu,
-    MemberName.IchikiRena,
-    MemberName.YamatoRina,
-    MemberName.KawagoHina,
-    MemberName.WadaMaaya,
-    MemberName.KashiwaYukina,
-    MemberName.HatanakaSeira,
-    MemberName.MiyazawaSeira,
+    MemberNameKey.HiguchiHina,
+    MemberNameKey.SaitouAsuka,
+    MemberNameKey.NakamotoHimeka,
+    MemberNameKey.NoujouAmi,
+    MemberNameKey.EtouMisa,
+    MemberNameKey.KawamuraMahiro,
+    MemberNameKey.ItouNene,
+    MemberNameKey.NagashimaSeira,
+    MemberNameKey.SaitouChiharu,
+    MemberNameKey.IchikiRena,
+    MemberNameKey.YamatoRina,
+    MemberNameKey.KawagoHina,
+    MemberNameKey.WadaMaaya,
+    MemberNameKey.KashiwaYukina,
+    MemberNameKey.HatanakaSeira,
+    MemberNameKey.MiyazawaSeira,
   ],
 });

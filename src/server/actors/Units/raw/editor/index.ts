@@ -1,34 +1,34 @@
 import { UnitRaw } from "server/actors/Units/models";
 import { createUnitRaw } from "server/actors/Units/raw/creator";
-import { MemberName } from "server/constants/names";
+import { MemberNameKey } from "server/constants/names";
 import { UnitType } from "server/constants/commons";
 
 export const UNITS: UnitRaw[] = [
   createUnitRaw({
     name: "WHITE HIGH",
-    members: [MemberName.ShiraishiMai, MemberName.TakayamaKazumi],
+    members: [MemberNameKey.ShiraishiMai, MemberNameKey.TakayamaKazumi],
     type: UnitType.Unit,
     description:
       "白石の「白」、高山の「高」をそれぞれ英語表記にした「WHITE」「HIGH」の組み合わせ",
   }),
   createUnitRaw({
     name: "孤独兄弟",
-    members: [MemberName.ShiraishiMai, MemberName.HashimotoNanami],
+    members: [MemberNameKey.ShiraishiMai, MemberNameKey.HashimotoNanami],
     type: UnitType.Unit,
   }),
   createUnitRaw({
     name: "からあげ姉妹",
-    members: [MemberName.IkutaErika, MemberName.MatsumuraSayuri],
+    members: [MemberNameKey.IkutaErika, MemberNameKey.MatsumuraSayuri],
     type: UnitType.Unit,
   }),
   createUnitRaw({
     name: "サンクエトワール",
     members: [
-      MemberName.KitanoHinako,
-      MemberName.TeradaRanze,
-      MemberName.NakadaKana,
-      MemberName.NakamotoHimeka,
-      MemberName.HoriMiona,
+      MemberNameKey.KitanoHinako,
+      MemberNameKey.TeradaRanze,
+      MemberNameKey.NakadaKana,
+      MemberNameKey.NakamotoHimeka,
+      MemberNameKey.HoriMiona,
     ],
     type: UnitType.Unit,
     description:
@@ -37,10 +37,10 @@ export const UNITS: UnitRaw[] = [
   createUnitRaw({
     name: "女子校カルテット",
     members: [
-      MemberName.AkimotoManatsu,
-      MemberName.SakuraiReika,
-      MemberName.NakadaKana,
-      MemberName.WakatsukiYumi,
+      MemberNameKey.AkimotoManatsu,
+      MemberNameKey.SakuraiReika,
+      MemberNameKey.NakadaKana,
+      MemberNameKey.WakatsukiYumi,
     ],
     type: UnitType.Unit,
     description: "女子高に通っていたメンバーで結成",
@@ -48,10 +48,10 @@ export const UNITS: UnitRaw[] = [
   createUnitRaw({
     name: "姉御坂",
     members: [
-      MemberName.EtouMisa,
-      MemberName.ShiraishiMai,
-      MemberName.TakayamaKazumi,
-      MemberName.MatsumuraSayuri,
+      MemberNameKey.EtouMisa,
+      MemberNameKey.ShiraishiMai,
+      MemberNameKey.TakayamaKazumi,
+      MemberNameKey.MatsumuraSayuri,
     ],
     type: UnitType.Unit,
     description: "グループ1期生年長メンバーで結成",
@@ -59,9 +59,9 @@ export const UNITS: UnitRaw[] = [
   createUnitRaw({
     name: "ナスカ",
     members: [
-      MemberName.ItouMarika,
-      MemberName.SaitouAsuka,
-      MemberName.NishinoNanase,
+      MemberNameKey.ItouMarika,
+      MemberNameKey.SaitouAsuka,
+      MemberNameKey.NishinoNanase,
     ],
     type: UnitType.Unit,
     description: "ナナセの「ナ」、アスカの「ス」、マリカの「カ」の組み合わせ",
@@ -69,10 +69,10 @@ export const UNITS: UnitRaw[] = [
   createUnitRaw({
     name: "かすみ草",
     members: [
-      MemberName.IkomaRina,
-      MemberName.InoueSayuri,
-      MemberName.HoshinoMinami,
-      MemberName.HoriMiona,
+      MemberNameKey.IkomaRina,
+      MemberNameKey.InoueSayuri,
+      MemberNameKey.HoshinoMinami,
+      MemberNameKey.HoriMiona,
     ],
     type: UnitType.Unit,
     description:
@@ -81,9 +81,9 @@ export const UNITS: UnitRaw[] = [
   createUnitRaw({
     name: "藤桜梨",
     members: [
-      MemberName.IkutaErika,
-      MemberName.EtouMisa,
-      MemberName.SakuraiReika,
+      MemberNameKey.IkutaErika,
+      MemberNameKey.EtouMisa,
+      MemberNameKey.SakuraiReika,
     ],
     type: UnitType.Unit,
     description: "ドンウォーリー",
@@ -91,40 +91,40 @@ export const UNITS: UnitRaw[] = [
   createUnitRaw({
     name: "いもうと坂",
     members: [
-      MemberName.OozonoMomoko,
-      MemberName.KuboShiori,
-      MemberName.YamashitaMizuki,
-      MemberName.YodaYuuki,
+      MemberNameKey.OozonoMomoko,
+      MemberNameKey.KuboShiori,
+      MemberNameKey.YamashitaMizuki,
+      MemberNameKey.YodaYuuki,
     ],
     type: UnitType.Unit,
   }),
   createUnitRaw({
     name: "さゆりんご軍団",
     members: [
-      MemberName.MatsumuraSayuri,
-      MemberName.ItouKarin,
-      MemberName.SasakiKotoko,
-      MemberName.TeradaRanze,
+      MemberNameKey.MatsumuraSayuri,
+      MemberNameKey.ItouKarin,
+      MemberNameKey.SasakiKotoko,
+      MemberNameKey.TeradaRanze,
     ],
     type: UnitType.Corp,
   }),
   createUnitRaw({
     name: "真夏さんリスペクト軍団",
     members: [
-      MemberName.AkimotoManatsu,
-      MemberName.SagaraIori,
-      MemberName.SuzukiAyane,
-      MemberName.WatanabeMiria,
+      MemberNameKey.AkimotoManatsu,
+      MemberNameKey.SagaraIori,
+      MemberNameKey.SuzukiAyane,
+      MemberNameKey.WatanabeMiria,
     ],
     type: UnitType.Corp,
   }),
   createUnitRaw({
     name: "若様軍団",
     members: [
-      MemberName.WakatsukiYumi,
-      MemberName.UmezawaMinami,
-      MemberName.SakaguchiTamami,
-      MemberName.YamashitaMizuki,
+      MemberNameKey.WakatsukiYumi,
+      MemberNameKey.UmezawaMinami,
+      MemberNameKey.SakaguchiTamami,
+      MemberNameKey.YamashitaMizuki,
     ],
     type: UnitType.Corp,
     description: "4名に共通する一文字「美」から若月が3期生を結集",
@@ -132,14 +132,14 @@ export const UNITS: UnitRaw[] = [
   createUnitRaw({
     name: "犬メン",
     members: [
-      MemberName.SakuraiReika,
-      MemberName.IkomaRina,
-      MemberName.ItouMarika,
-      MemberName.InoueSayuri,
-      MemberName.SaitouYuuri,
-      MemberName.ShinuchiMai,
-      MemberName.MatsumuraSayuri,
-      MemberName.WakatsukiYumi,
+      MemberNameKey.SakuraiReika,
+      MemberNameKey.IkomaRina,
+      MemberNameKey.ItouMarika,
+      MemberNameKey.InoueSayuri,
+      MemberNameKey.SaitouYuuri,
+      MemberNameKey.ShinuchiMai,
+      MemberNameKey.MatsumuraSayuri,
+      MemberNameKey.WakatsukiYumi,
     ],
     type: UnitType.Corp,
     description: "舞台『すべての犬は天国へ行く』出演メンバーで構成",
@@ -147,24 +147,24 @@ export const UNITS: UnitRaw[] = [
   createUnitRaw({
     name: "スイカ",
     members: [
-      MemberName.ItouKarin,
-      MemberName.ItouJunna,
-      MemberName.KawagoHina,
-      MemberName.SaitouYuuri,
-      MemberName.NishinoNanase,
+      MemberNameKey.ItouKarin,
+      MemberNameKey.ItouJunna,
+      MemberNameKey.KawagoHina,
+      MemberNameKey.SaitouYuuri,
+      MemberNameKey.NishinoNanase,
     ],
     type: UnitType.Corp,
   }),
   createUnitRaw({
     name: "チューリップ",
     members: [
-      MemberName.NoujouAmi,
-      MemberName.IkutaErika,
-      MemberName.KawagoHina,
-      MemberName.KawamuraMahiro,
-      MemberName.SaitouChiharu,
-      MemberName.TakayamaKazumi,
-      MemberName.WadaMaaya,
+      MemberNameKey.NoujouAmi,
+      MemberNameKey.IkutaErika,
+      MemberNameKey.KawagoHina,
+      MemberNameKey.KawamuraMahiro,
+      MemberNameKey.SaitouChiharu,
+      MemberNameKey.TakayamaKazumi,
+      MemberNameKey.WadaMaaya,
     ],
     type: UnitType.Corp,
     description: "母体は「チームD (ディズニー好き)」 (和田を除くメンバー)",

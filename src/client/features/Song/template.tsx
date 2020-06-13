@@ -12,7 +12,7 @@ import { Language } from "client/utils/constants";
 import { useScrollRestoration } from "client/hooks/useScrollRestoration";
 import { SongType } from "server/constants/commons";
 import { KOJIHARU_IMAGE_SRC } from "server/constants/paths";
-import { MemberName } from "server/constants/names";
+import { MemberNameKey } from "server/constants/names";
 import { MemberCard } from "client/components/atoms/MemberCard";
 
 const containerVariants = {
@@ -111,7 +111,7 @@ const PerformersTag = injectIntl(
 
 const KojiharuCard = ({ isCenter }: { isCenter: boolean }) => (
   <MemberCard
-    nameKey={MemberName.KojimaHaruna}
+    nameKey={MemberNameKey.KojimaHaruna}
     name={{
       lastName: "小嶋",
       lastNameEn: "kojima",
@@ -227,7 +227,7 @@ export const Song = ({
                           </h4>
                           <div className={styles.grid}>
                             {row.map(memberName => {
-                              if (memberName !== MemberName.KojimaHaruna) {
+                              if (memberName !== MemberNameKey.KojimaHaruna) {
                                 const member = members[memberName];
                                 return (
                                   <div
@@ -258,7 +258,7 @@ export const Song = ({
                     ) : (
                       <div className={styles.grid}>
                         {formation[0].map(memberName => {
-                          if (memberName !== MemberName.KojimaHaruna) {
+                          if (memberName !== MemberNameKey.KojimaHaruna) {
                             const member = members[memberName];
                             return (
                               <div className={styles.card} key={member.name}>

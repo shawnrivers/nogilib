@@ -2,7 +2,7 @@ import { SingleRaw } from "server/actors/Cds/Singles/models";
 import { createSingleRaw } from "server/actors/Cds/Singles/raw/creator";
 import { SingleTitle } from "server/constants/cds";
 import { CdType } from "server/constants/commons";
-import { MemberName } from "server/constants/names";
+import { MemberNameKey } from "server/constants/names";
 import { SONGS } from "server/constants/songs";
 
 export const TWENTY_SECOND_SINGLE: SingleRaw = createSingleRaw({
@@ -41,23 +41,23 @@ export const TWENTY_SECOND_SINGLE: SingleRaw = createSingleRaw({
     },
   ],
   underMembers: [
-    MemberName.SuzukiAyane,
-    MemberName.HiguchiHina,
-    MemberName.KitanoHinako,
-    MemberName.TeradaRanze,
-    MemberName.IwamotoRenka,
-    MemberName.SakaguchiTamami,
-    MemberName.YamazakiRena,
-    MemberName.KuboShiori,
-    MemberName.NakadaKana,
-    MemberName.WatanabeMiria,
-    MemberName.MukaiHazuki,
-    MemberName.ItouJunna,
-    MemberName.WadaMaaya,
-    MemberName.NakamuraReno,
-    MemberName.KawagoHina,
-    MemberName.ItouKarin,
-    MemberName.SasakiKotoko,
-    MemberName.YoshidaAyanoChristie,
+    MemberNameKey.SuzukiAyane,
+    MemberNameKey.HiguchiHina,
+    MemberNameKey.KitanoHinako,
+    MemberNameKey.TeradaRanze,
+    MemberNameKey.IwamotoRenka,
+    MemberNameKey.SakaguchiTamami,
+    MemberNameKey.YamazakiRena,
+    MemberNameKey.KuboShiori,
+    MemberNameKey.NakadaKana,
+    MemberNameKey.WatanabeMiria,
+    MemberNameKey.MukaiHazuki,
+    MemberNameKey.ItouJunna,
+    MemberNameKey.WadaMaaya,
+    MemberNameKey.NakamuraReno,
+    MemberNameKey.KawagoHina,
+    MemberNameKey.ItouKarin,
+    MemberNameKey.SasakiKotoko,
+    MemberNameKey.YoshidaAyanoChristie,
   ],
 });

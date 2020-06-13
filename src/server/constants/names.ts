@@ -1,4 +1,4 @@
-export enum MemberName {
+export enum MemberNameKey {
   AkimotoManatsu = "akimotomanatsu",
   IkutaErika = "ikutaerika",
   ItouKarin = "itoukarin",

@@ -1,4 +1,4 @@
-import { MemberName } from "server/constants/names";
+import { MemberNameKey } from "server/constants/names";
 import { FukujinType, SongType } from "server/constants/commons";
 import { SongTitle } from "server/constants/songs";
 
@@ -13,16 +13,16 @@ export type SongRaw = {
     direct: string[];
   };
   performers: {
-    center: MemberName[];
-    fukujin: FukujinType | MemberName[];
-    solo: MemberName | "";
+    center: MemberNameKey[];
+    fukujin: FukujinType | MemberNameKey[];
+    solo: MemberNameKey | "";
     unit: string;
   };
   formations: {
-    firstRow: MemberName[];
-    secondRow: MemberName[];
-    thirdRow: MemberName[];
-    fourthRow: MemberName[];
+    firstRow: MemberNameKey[];
+    secondRow: MemberNameKey[];
+    thirdRow: MemberNameKey[];
+    fourthRow: MemberNameKey[];
   };
 };
 

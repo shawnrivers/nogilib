@@ -1,9 +1,9 @@
-import { MemberName } from "server/constants/names";
+import { MemberNameKey } from "server/constants/names";
 import { UnitType } from "server/constants/commons";
 
 export type UnitRaw = {
   name: string;
-  members: MemberName[];
+  members: MemberNameKey[];
   type: UnitType;
   description: string;
 };

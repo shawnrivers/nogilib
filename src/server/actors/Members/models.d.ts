@@ -1,4 +1,4 @@
-import { MemberName } from "server/constants/names";
+import { MemberNameKey } from "server/constants/names";
 import {
   JoinedGenerationType,
   BloodType,
@@ -10,7 +10,7 @@ import {
 import { Site } from "server/types/commons";
 
 export type MemberRaw = {
-  name: MemberName;
+  name: MemberNameKey;
   nameNotations: {
     firstName: string;
     lastName: string;

@@ -5,7 +5,7 @@ import styles from "./membercard.module.scss";
 import { Language } from "client/utils/constants";
 import { LocalizedLink } from "client/components/atoms/locales/LocalizedLink";
 import { Image } from "client/components/atoms/Image";
-import { MemberName } from "server/constants/names";
+import { MemberNameKey } from "server/constants/names";
 
 interface MemberCardProps {
   image: string;
@@ -69,7 +69,7 @@ export const MemberCard = injectIntl(
       [highlightTextColor]
     );
 
-    if (nameKey !== MemberName.KojimaHaruna) {
+    if (nameKey !== MemberNameKey.KojimaHaruna) {
       return (
         <LocalizedLink to={`/members/${nameKey}`} className={styles.link}>
           <motion.div

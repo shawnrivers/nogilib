@@ -7,11 +7,11 @@ import {
   JoinedGenerationType,
   SocialMedia,
 } from "server/constants/commons";
-import { MemberName } from "server/constants/names";
+import { MemberNameKey } from "server/constants/names";
 
 export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
-    name: MemberName.EndouSakura,
+    name: MemberNameKey.EndouSakura,
     nameNotations: ["遠藤", "さくら", "えんどう", "さくら", "endo", "sakura"],
     glowStickColor: [GlowStickColorType.White, GlowStickColorType.Pink],
     join: JoinedGenerationType.Fourth,
@@ -31,7 +31,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.KakiHaruka,
+    name: MemberNameKey.KakiHaruka,
     nameNotations: ["賀喜", "遥香", "かき", "はるか", "kaki", "haruka"],
     glowStickColor: [GlowStickColorType.Green, GlowStickColorType.Orange],
     join: JoinedGenerationType.Fourth,
@@ -51,7 +51,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.KakehashiSayaka,
+    name: MemberNameKey.KakehashiSayaka,
     nameNotations: [
       "掛橋",
       "沙耶香",
@@ -78,7 +78,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.KanagawaSaya,
+    name: MemberNameKey.KanagawaSaya,
     nameNotations: ["金川", "紗耶", "かながわ", "さや", "kanagawa", "saya"],
     glowStickColor: [GlowStickColorType.Red, GlowStickColorType.LightBlue],
     join: JoinedGenerationType.Fourth,
@@ -98,7 +98,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.KitagawaYuri,
+    name: MemberNameKey.KitagawaYuri,
     nameNotations: ["北川", "悠理", "きたがわ", "ゆり", "kitagawa", "yuri"],
     glowStickColor: [GlowStickColorType.Orange, GlowStickColorType.LightBlue],
     join: JoinedGenerationType.Fourth,
@@ -118,7 +118,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.ShibataYuna,
+    name: MemberNameKey.ShibataYuna,
     nameNotations: ["柴田", "柚菜", "しばた", "ゆな", "shibata", "yuna"],
     glowStickColor: [GlowStickColorType.Blue, GlowStickColorType.YellowGreen],
     join: JoinedGenerationType.Fourth,
@@ -138,7 +138,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.SeimiyaRei,
+    name: MemberNameKey.SeimiyaRei,
     nameNotations: ["清宮", "レイ", "せいみや", "れい", "seimiya", "rei"],
     glowStickColor: [GlowStickColorType.Orange, GlowStickColorType.Orange],
     join: JoinedGenerationType.Fourth,
@@ -158,7 +158,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.TamuraMayu,
+    name: MemberNameKey.TamuraMayu,
     nameNotations: ["田村", "真佑", "たむら", "まゆ", "tamura", "mayu"],
     glowStickColor: [GlowStickColorType.LightBlue, GlowStickColorType.Purple],
     join: JoinedGenerationType.Fourth,
@@ -178,7 +178,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.TsutsuiAyame,
+    name: MemberNameKey.TsutsuiAyame,
     nameNotations: ["筒井", "あやめ", "つつい", "あやめ", "tsutsui", "ayame"],
     glowStickColor: [GlowStickColorType.Purple, GlowStickColorType.Purple],
     join: JoinedGenerationType.Fourth,
@@ -198,7 +198,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.HayakawaSeira,
+    name: MemberNameKey.HayakawaSeira,
     nameNotations: ["早川", "聖来", "はやかわ", "せいら", "hayakawa", "seira"],
     glowStickColor: [GlowStickColorType.Blue, GlowStickColorType.Blue],
     join: JoinedGenerationType.Fourth,
@@ -218,7 +218,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.YakuboMio,
+    name: MemberNameKey.YakuboMio,
     nameNotations: ["矢久保", "美緒", "やくぼ", "みお", "yakubo", "mio"],
     glowStickColor: [GlowStickColorType.Yellow, GlowStickColorType.Pink],
     join: JoinedGenerationType.Fourth,
@@ -238,7 +238,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.KuromiHaruka,
+    name: MemberNameKey.KuromiHaruka,
     nameNotations: ["黒見", "明香", "くろみ", "はるか", "kuromi", "haruka"],
     glowStickColor: [GlowStickColorType.None, GlowStickColorType.None],
     join: JoinedGenerationType.Fourth,
@@ -258,7 +258,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.SatouRika,
+    name: MemberNameKey.SatouRika,
     nameNotations: ["佐藤", "璃果", "さとう", "りか", "satou", "rika"],
     glowStickColor: [GlowStickColorType.None, GlowStickColorType.None],
     join: JoinedGenerationType.Fourth,
@@ -278,7 +278,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.HayashiRuna,
+    name: MemberNameKey.HayashiRuna,
     nameNotations: ["林", "瑠奈", "はやし", "るな", "hayashi", "runa"],
     glowStickColor: [GlowStickColorType.None, GlowStickColorType.None],
     join: JoinedGenerationType.Fourth,
@@ -298,7 +298,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.MatsuoMiyu,
+    name: MemberNameKey.MatsuoMiyu,
     nameNotations: ["松尾", "美佑", "まつお", "みゆ", "matsuo", "miyu"],
     glowStickColor: [GlowStickColorType.None, GlowStickColorType.None],
     join: JoinedGenerationType.Fourth,
@@ -318,7 +318,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.YumikiNao,
+    name: MemberNameKey.YumikiNao,
     nameNotations: ["弓木", "奈於", "ゆみき", "なお", "yumiki", "nao"],
     glowStickColor: [GlowStickColorType.None, GlowStickColorType.None],
     join: JoinedGenerationType.Fourth,

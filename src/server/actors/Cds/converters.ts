@@ -15,10 +15,10 @@ import { SONGS, SongTitle } from "server/constants/songs";
 import { NO_ARTWORK_IMAGE_SRC } from "server/constants/paths";
 import { SongsRawObject } from "server/actors/Songs/models";
 import { MembersRawObject } from "server/actors/Members/models";
-import { MemberName } from "server/constants/names";
+import { MemberNameKey } from "server/constants/names";
 
 export const convertPerformerNames = (
-  memberNames: MemberName[],
+  memberNames: MemberNameKey[],
   membersRawObject: MembersRawObject
 ): string[] => {
   return memberNames.map(name => {

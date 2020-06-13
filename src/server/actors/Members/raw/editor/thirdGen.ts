@@ -8,11 +8,11 @@ import {
   PhotoAlbumType,
   SocialMedia,
 } from "server/constants/commons";
-import { MemberName } from "server/constants/names";
+import { MemberNameKey } from "server/constants/names";
 
 export const THIRD_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
-    name: MemberName.ItouRiria,
+    name: MemberNameKey.ItouRiria,
     nameNotations: ["伊藤", "理々杏", "いとう", "りりあ", "ito", "riria"],
     glowStickColor: [GlowStickColorType.Purple, GlowStickColorType.Red],
     join: JoinedGenerationType.Third,
@@ -32,7 +32,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.IwamotoRenka,
+    name: MemberNameKey.IwamotoRenka,
     nameNotations: ["岩本", "蓮加", "いわもと", "れんか", "iwamoto", "renka"],
     glowStickColor: [GlowStickColorType.Red, GlowStickColorType.Pink],
     join: JoinedGenerationType.Third,
@@ -52,7 +52,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.UmezawaMinami,
+    name: MemberNameKey.UmezawaMinami,
     nameNotations: ["梅澤", "美波", "うめざわ", "みなみ", "umezakwa", "minami"],
     glowStickColor: [GlowStickColorType.Blue, GlowStickColorType.LightBlue],
     join: JoinedGenerationType.Third,
@@ -72,7 +72,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.OozonoMomoko,
+    name: MemberNameKey.OozonoMomoko,
     nameNotations: ["大園", "桃子", "おおぞの", "ももこ", "ozono", "momoko"],
     glowStickColor: [GlowStickColorType.Pink, GlowStickColorType.Green],
     join: JoinedGenerationType.Third,
@@ -92,7 +92,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.KuboShiori,
+    name: MemberNameKey.KuboShiori,
     nameNotations: ["久保", "史緒里", "くぼ", "しおり", "kubo", "shiori"],
     glowStickColor: [GlowStickColorType.LightBlue, GlowStickColorType.Yellow],
     join: JoinedGenerationType.Third,
@@ -112,7 +112,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.SakaguchiTamami,
+    name: MemberNameKey.SakaguchiTamami,
     nameNotations: [
       "阪口",
       "珠美",
@@ -139,7 +139,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.SatouKaede,
+    name: MemberNameKey.SatouKaede,
     nameNotations: ["佐藤", "楓", "さとう", "かえで", "sato", "kaede"],
     glowStickColor: [GlowStickColorType.Red, GlowStickColorType.Red],
     join: JoinedGenerationType.Third,
@@ -159,7 +159,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.NakamuraReno,
+    name: MemberNameKey.NakamuraReno,
     nameNotations: ["中村", "麗乃", "なかむら", "れの", "nakamura", "reno"],
     glowStickColor: [GlowStickColorType.Blue, GlowStickColorType.White],
     join: JoinedGenerationType.Third,
@@ -179,7 +179,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.MukaiHazuki,
+    name: MemberNameKey.MukaiHazuki,
     nameNotations: ["向井", "葉月", "むかい", "はづき", "mukai", "hazuki"],
     glowStickColor: [GlowStickColorType.Yellow, GlowStickColorType.Yellow],
     join: JoinedGenerationType.Third,
@@ -199,7 +199,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.YamashitaMizuki,
+    name: MemberNameKey.YamashitaMizuki,
     nameNotations: [
       "山下",
       "美月",
@@ -233,7 +233,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.YoshidaAyanoChristie,
+    name: MemberNameKey.YoshidaAyanoChristie,
     nameNotations: [
       "吉田",
       "綾乃クリスティー",
@@ -261,7 +261,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
-    name: MemberName.YodaYuuki,
+    name: MemberNameKey.YodaYuuki,
     nameNotations: ["与田", "祐希", "よだ", "ゆうき", "yoda", "yuki"],
     glowStickColor: [GlowStickColorType.Red, GlowStickColorType.Green],
     join: JoinedGenerationType.Third,

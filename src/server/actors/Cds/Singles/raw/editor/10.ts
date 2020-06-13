@@ -2,7 +2,7 @@ import { SingleRaw } from "server/actors/Cds/Singles/models";
 import { createSingleRaw } from "server/actors/Cds/Singles/raw/creator";
 import { SingleTitle } from "server/constants/cds";
 import { CdType } from "server/constants/commons";
-import { MemberName } from "server/constants/names";
+import { MemberNameKey } from "server/constants/names";
 import { SONGS } from "server/constants/songs";
 
 export const TENTH_SINGLE: SingleRaw = createSingleRaw({
@@ -37,31 +37,31 @@ export const TENTH_SINGLE: SingleRaw = createSingleRaw({
     },
   ],
   underMembers: [
-    MemberName.SaitouAsuka,
-    MemberName.InoueSayuri,
-    MemberName.ItouMarika,
-    MemberName.NagashimaSeira,
-    MemberName.NakamotoHimeka,
-    MemberName.SaitouYuuri,
-    MemberName.NakadaKana,
-    MemberName.NoujouAmi,
-    MemberName.KawamuraMahiro,
-    MemberName.WadaMaaya,
-    MemberName.HiguchiHina,
-    MemberName.ItouKarin,
-    MemberName.KawagoHina,
-    MemberName.HatanakaSeira,
-    MemberName.KitanoHinako,
-    MemberName.YamatoRina,
-    MemberName.ShinuchiMai,
+    MemberNameKey.SaitouAsuka,
+    MemberNameKey.InoueSayuri,
+    MemberNameKey.ItouMarika,
+    MemberNameKey.NagashimaSeira,
+    MemberNameKey.NakamotoHimeka,
+    MemberNameKey.SaitouYuuri,
+    MemberNameKey.NakadaKana,
+    MemberNameKey.NoujouAmi,
+    MemberNameKey.KawamuraMahiro,
+    MemberNameKey.WadaMaaya,
+    MemberNameKey.HiguchiHina,
+    MemberNameKey.ItouKarin,
+    MemberNameKey.KawagoHina,
+    MemberNameKey.HatanakaSeira,
+    MemberNameKey.KitanoHinako,
+    MemberNameKey.YamatoRina,
+    MemberNameKey.ShinuchiMai,
   ],
   trainees: [
-    MemberName.ItouJunna,
-    MemberName.SagaraIori,
-    MemberName.SasakiKotoko,
-    MemberName.SuzukiAyane,
-    MemberName.TeradaRanze,
-    MemberName.YamazakiRena,
-    MemberName.WatanabeMiria,
+    MemberNameKey.ItouJunna,
+    MemberNameKey.SagaraIori,
+    MemberNameKey.SasakiKotoko,
+    MemberNameKey.SuzukiAyane,
+    MemberNameKey.TeradaRanze,
+    MemberNameKey.YamazakiRena,
+    MemberNameKey.WatanabeMiria,
   ],
 });

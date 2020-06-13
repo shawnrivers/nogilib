@@ -1,19 +1,19 @@
 import { CdRaw, CdResult } from "server/actors/Cds/models";
-import { MemberName } from "server/constants/names";
+import { MemberNameKey } from "server/constants/names";
 
 export type SingleRaw = CdRaw & {
-  underMembers: MemberName[];
+  underMembers: MemberNameKey[];
   behindPerformers: {
-    trainees: MemberName[];
-    skips: MemberName[];
+    trainees: MemberNameKey[];
+    skips: MemberNameKey[];
   };
 };
 
 export type SingleResult = CdResult & {
-  underMembers: MemberName[];
+  underMembers: MemberNameKey[];
   behindPerformers: {
-    trainees: MemberName[];
-    skips: MemberName[];
+    trainees: MemberNameKey[];
+    skips: MemberNameKey[];
   };
 };
 
