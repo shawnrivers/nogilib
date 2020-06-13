@@ -10,9 +10,10 @@ import { PageContentLayout } from "client/components/atoms/PageContentLayout";
 import { PositionBadge } from "client/components/atoms/PositionBadge";
 import { PositionCounter } from "client/components/atoms/PositionCounter";
 import { useScrollRestoration } from "client/hooks/useScrollRestoration";
-import { GlowStickColorType, PositionType } from "server/constants/commons";
 import { GLOW_STICK_COLORS } from "client/utils/constants";
 import { classNames } from "utils/strings";
+import { GlowStickColorType } from "server/actors/Members/constants/glowStickColor";
+import { PositionType } from "server/actors/Members/constants/position";
 
 const containerVariants = {
   visible: {

@@ -12,7 +12,8 @@ import { Message } from "client/components/atoms/Message";
 import { LocalizedLink } from "client/components/atoms/locales/LocalizedLink";
 import { Links } from "client/utils/constants";
 import { toCdNumber } from "utils/strings";
-import { SongType, FocusPerformersType } from "server/constants/commons";
+import { SongType } from "server/actors/Songs/constants/songType";
+import { FocusPerformersType } from "server/actors/Cds/constants/focusPerformers";
 
 const containerVariants = {
   visible: {
