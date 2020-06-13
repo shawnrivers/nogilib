@@ -3,6 +3,7 @@ import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { SongType } from "server/actors/Songs/constants/songType";
 import { SONGS } from "server/actors/Songs/constants/songTitle";
+import { UNIT_NAMES } from "server/actors/Units/constants/unitName";
 
 export const FOURTH_ALBUM_SONGS: SongRaw[] = [
   createSongRaw({
@@ -113,7 +114,7 @@ export const FOURTH_ALBUM_SONGS: SongRaw[] = [
       compose: ["浦島健太", "菊池博人"],
       arrange: ["浦島健太", "菊池博人"],
     },
-    unit: "さゆりんご軍団",
+    unit: UNIT_NAMES["さゆりんご軍団"].name,
     formations: {
       firstRow: [
         MemberNameKey.MatsumuraSayuri,

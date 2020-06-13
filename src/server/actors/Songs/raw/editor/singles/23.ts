@@ -4,6 +4,7 @@ import { SongType } from "server/actors/Songs/constants/songType";
 import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
 import { MemberNameKey } from "server/actors/Members/constants/memberName";
 import { SONGS } from "server/actors/Songs/constants/songTitle";
+import { UNIT_NAMES } from "server/actors/Units/constants/unitName";
 
 export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
@@ -158,7 +159,7 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
       compose: ["doubleglass"],
       arrange: ["doubleglass"],
     },
-    unit: "からあげ姉妹",
+    unit: UNIT_NAMES["からあげ姉妹"].name,
     formations: {
       firstRow: [MemberNameKey.IkutaErika, MemberNameKey.MatsumuraSayuri],
     },

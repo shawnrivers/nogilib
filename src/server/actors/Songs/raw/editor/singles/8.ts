@@ -4,6 +4,7 @@ import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { SongType } from "server/actors/Songs/constants/songType";
 import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
 import { SONGS } from "server/actors/Songs/constants/songTitle";
+import { UNIT_NAMES } from "server/actors/Units/constants/unitName";
 
 export const EIGHTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
@@ -155,7 +156,7 @@ export const EIGHTH_SINGLE_SONGS: SongRaw[] = [
       arrange: ["Soulife"],
       direct: ["池田一真"],
     },
-    unit: "孤独兄弟",
+    unit: UNIT_NAMES["孤独兄弟"].name,
     formations: {
       firstRow: [MemberNameKey.ShiraishiMai, MemberNameKey.HashimotoNanami],
     },

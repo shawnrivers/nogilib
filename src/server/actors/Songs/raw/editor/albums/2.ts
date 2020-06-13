@@ -3,6 +3,7 @@ import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { SongType } from "server/actors/Songs/constants/songType";
 import { SONGS } from "server/actors/Songs/constants/songTitle";
+import { UNIT_NAMES } from "server/actors/Units/constants/unitName";
 
 export const SECOND_ALBUM_SONGS: SongRaw[] = [
   createSongRaw({
@@ -147,7 +148,7 @@ export const SECOND_ALBUM_SONGS: SongRaw[] = [
       compose: ["さいとうくにあき"],
       arrange: ["内田充"],
     },
-    unit: "乃木團",
+    unit: UNIT_NAMES["乃木團"].name,
     formations: {
       firstRow: [MemberNameKey.NakamotoHimeka, MemberNameKey.NoujouAmi],
     },
@@ -184,7 +185,7 @@ export const SECOND_ALBUM_SONGS: SongRaw[] = [
       compose: ["サイトウリョースケ"],
       arrange: ["サイトウリョースケ"],
     },
-    unit: "犬メン",
+    unit: UNIT_NAMES["犬メン"].name,
     formations: {
       firstRow: [
         MemberNameKey.IkomaRina,
@@ -201,7 +202,7 @@ export const SECOND_ALBUM_SONGS: SongRaw[] = [
       compose: ["Amber"],
       arrange: ["若田部誠"],
     },
-    unit: "女子校カルテット",
+    unit: UNIT_NAMES["女子校カルテット"].name,
     formations: {
       firstRow: [
         MemberNameKey.AkimotoManatsu,

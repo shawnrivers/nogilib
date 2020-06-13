@@ -3,6 +3,7 @@ import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { SongType } from "server/actors/Songs/constants/songType";
 import { SONGS } from "server/actors/Songs/constants/songTitle";
+import { UNIT_NAMES } from "server/actors/Units/constants/unitName";
 
 export const FIRST_ALBUM_SONGS: SongRaw[] = [
   createSongRaw({
@@ -89,7 +90,7 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
       arrange: ["佐々木裕"],
     },
     center: [MemberNameKey.KojimaHaruna],
-    unit: "こじ坂46",
+    unit: UNIT_NAMES["こじ坂46"].name,
     formations: {
       firstRow: [
         MemberNameKey.KojimaHaruna,

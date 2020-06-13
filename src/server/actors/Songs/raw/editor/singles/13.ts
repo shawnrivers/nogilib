@@ -4,6 +4,7 @@ import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { SongType } from "server/actors/Songs/constants/songType";
 import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
 import { SONGS } from "server/actors/Songs/constants/songTitle";
+import { UNIT_NAMES } from "server/actors/Units/constants/unitName";
 
 export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
@@ -126,7 +127,7 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
       arrange: ["古川貴浩"],
       direct: ["湯浅弘章"],
     },
-    unit: "サンクエトワール",
+    unit: UNIT_NAMES["サンクエトワール"].name,
     formations: {
       firstRow: [
         MemberNameKey.KitanoHinako,

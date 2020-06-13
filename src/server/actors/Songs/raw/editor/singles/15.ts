@@ -4,6 +4,7 @@ import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { SongType } from "server/actors/Songs/constants/songType";
 import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
 import { SONGS } from "server/actors/Songs/constants/songTitle";
+import { UNIT_NAMES } from "server/actors/Units/constants/unitName";
 
 export const FIFTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
@@ -141,7 +142,7 @@ export const FIFTEENTH_SINGLE_SONGS: SongRaw[] = [
       arrange: ["あらケン"],
       direct: ["伊藤衆人"],
     },
-    unit: "さゆりんご軍団",
+    unit: UNIT_NAMES["さゆりんご軍団"].name,
     formations: {
       firstRow: [MemberNameKey.MatsumuraSayuri],
       secondRow: [

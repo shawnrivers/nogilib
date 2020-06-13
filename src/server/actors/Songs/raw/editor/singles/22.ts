@@ -4,6 +4,7 @@ import { SongType } from "server/actors/Songs/constants/songType";
 import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
 import { MemberNameKey } from "server/actors/Members/constants/memberName";
 import { SONGS } from "server/actors/Songs/constants/songTitle";
+import { UNIT_NAMES } from "server/actors/Units/constants/unitName";
 
 export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
@@ -135,7 +136,7 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
       arrange: ["安部純"],
       direct: ["荒船泰廣"],
     },
-    unit: "女子校カルテット",
+    unit: UNIT_NAMES["女子校カルテット"].name,
     formations: {
       firstRow: [
         MemberNameKey.AkimotoManatsu,

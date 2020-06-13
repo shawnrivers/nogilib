@@ -4,6 +4,7 @@ import { createSongRaw } from "server/actors/Songs/raw/creator";
 import { SongType } from "server/actors/Songs/constants/songType";
 import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
 import { SONGS } from "server/actors/Songs/constants/songTitle";
+import { UNIT_NAMES } from "server/actors/Units/constants/unitName";
 
 export const FOURTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
@@ -162,7 +163,7 @@ export const FOURTH_SINGLE_SONGS: SongRaw[] = [
       arrange: ["佐藤嘉風"],
       direct: ["丸山健志"],
     },
-    unit: "WHITE HIGH",
+    unit: UNIT_NAMES["WHITE HIGH"].name,
     formations: {
       firstRow: [MemberNameKey.ShiraishiMai, MemberNameKey.TakayamaKazumi],
     },

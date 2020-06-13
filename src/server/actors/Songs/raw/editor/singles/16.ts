@@ -4,6 +4,7 @@ import { SongType } from "server/actors/Songs/constants/songType";
 import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
 import { MemberNameKey } from "server/actors/Members/constants/memberName";
 import { SONGS } from "server/actors/Songs/constants/songTitle";
+import { UNIT_NAMES } from "server/actors/Units/constants/unitName";
 
 export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
@@ -135,7 +136,7 @@ export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
       arrange: ["Akira Sunset", "APAZZI"],
       direct: ["中村太洸"],
     },
-    unit: "真夏さんリスペクト軍団",
+    unit: UNIT_NAMES["真夏さんリスペクト軍団"].name,
     formations: {
       firstRow: [
         MemberNameKey.AkimotoManatsu,
@@ -154,7 +155,7 @@ export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
       arrange: ["山田竜平"],
       direct: ["東市篤憲"],
     },
-    unit: "サンクエトワール",
+    unit: UNIT_NAMES["サンクエトワール"].name,
     formations: {
       firstRow: [
         MemberNameKey.KitanoHinako,
