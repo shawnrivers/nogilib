@@ -4,7 +4,7 @@ import { Search, SearchResult } from "client/features/Search/template";
 import { useScrollRestoration } from "client/hooks/useScrollRestoration";
 import "client/styles/app.scss";
 import { SearchResultType } from "client/utils/constants";
-import { SongType } from "server/constants/commons";
+import { SongType } from "server/actors/Songs/constants/songType";
 import { toCdNumber } from "utils/strings";
 
 export type MemberDoc = {

@@ -5,17 +5,15 @@ import {
   CdSongResult,
   CdResult,
 } from "server/actors/Cds/models";
-import {
-  CdType,
-  SongType,
-  FocusPerformersType,
-  CdKind,
-} from "server/constants/commons";
-import { SONGS, SongTitle } from "server/actors/Songs/constants/songTitles";
+import { SONGS, SongTitle } from "server/actors/Songs/constants/songTitle";
 import { NO_ARTWORK_IMAGE_SRC } from "server/constants/paths";
 import { SongsRawObject } from "server/actors/Songs/models";
 import { MembersRawObject } from "server/actors/Members/models";
-import { MemberNameKey } from "server/actors/Members/constants/memberNames";
+import { MemberNameKey } from "server/actors/Members/constants/memberName";
+import { FocusPerformersType } from "server/actors/Cds/constants/focusPerformers";
+import { CdType } from "server/actors/Cds/constants/cdType";
+import { CdKind } from "server/actors/Cds/constants/cdKind";
+import { SongType } from "server/actors/Songs/constants/songType";
 
 export const convertPerformerNames = (
   memberNames: MemberNameKey[],

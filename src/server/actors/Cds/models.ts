@@ -1,10 +1,8 @@
-import {
-  CdType,
-  FocusPerformersType,
-  SongType,
-} from "server/constants/commons";
 import { Site } from "server/types/commons";
-import { SongTitle } from "server/actors/Songs/constants/songTitles";
+import { SongTitle } from "server/actors/Songs/constants/songTitle";
+import { FocusPerformersType } from "server/actors/Cds/constants/focusPerformers";
+import { CdType } from "server/actors/Cds/constants/cdType";
+import { SongType } from "server/actors/Songs/constants/songType";
 
 export type CdSongRaw = {
   number: number;

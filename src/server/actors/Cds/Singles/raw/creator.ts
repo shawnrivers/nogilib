@@ -1,5 +1,5 @@
 import { SingleRaw } from "server/actors/Cds/Singles/models";
-import { SingleTitle } from "server/actors/Cds/Singles/constants/singleTitles";
+import { SingleTitle } from "server/actors/Cds/Singles/constants/singleTitle";
 
 type CreateSingleRawParams = {
   title: SingleTitle;

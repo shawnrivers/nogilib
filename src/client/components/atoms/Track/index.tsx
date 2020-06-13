@@ -4,16 +4,10 @@ import { injectIntl } from "react-intl";
 import styles from "./track.module.scss";
 import { LocalizedLink } from "client/components/atoms/locales/LocalizedLink";
 import { Message } from "client/components/atoms/Message";
-import { classNames, getFocusPerformersText } from "utils/strings";
-import { FocusPerformersType, SongType } from "server/constants/commons";
-
-const containerVariants = {
-  hover: { backgroundColor: "#595959", transition: { duration: 0.3 } },
-};
-
-const textVariants = {
-  hover: { color: "#ffffff", transition: { duration: 0.2 } },
-};
+import { classNames } from "utils/strings";
+import { SongType } from "server/actors/Songs/constants/songType";
+import { Language } from "client/utils/constants";
+import { FocusPerformersType } from "server/actors/Cds/constants/focusPerformers";
 
 interface TrackProps {
   number: number;
@@ -82,3 +76,42 @@ export const Track = injectIntl(
     );
   }
 );
+
+const containerVariants = {
+  hover: { backgroundColor: "#595959", transition: { duration: 0.3 } },
+};
+
+const textVariants = {
+  hover: { color: "#ffffff", transition: { duration: 0.2 } },
+};
+
+function getFocusPerformersText(
+  focusPerformers: {
+    name: string[];
+    type: FocusPerformersType;
+  },
+  locale: string
+): string {
+  let comma: string;
+  switch (locale) {
+    case Language.Zh:
+      comma = "、";
+      break;
+    case Language.Ja:
+      comma = "・";
+      break;
+    default:
+      comma = ", ";
+      break;
+  }
+
+  if (focusPerformers.name.length > 0) {
+    if (focusPerformers.type === FocusPerformersType.Center) {
+      return (
+        "C: " + focusPerformers.name.reduce((acc, curr) => acc + comma + curr)
+      );
+    }
+    return focusPerformers.name.reduce((acc, curr) => acc + comma + curr);
+  }
+  return "";
+}

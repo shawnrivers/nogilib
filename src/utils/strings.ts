@@ -1,5 +1,4 @@
 import { Language } from "client/utils/constants";
-import { FocusPerformersType } from "server/constants/commons";
 
 export const getUrlWithTrailingSlash = (url: string): string =>
   url.slice(-1) !== "/" ? url + "/" : url;
@@ -76,35 +75,4 @@ export const toNumberWithLocale = (
   }
 
   return "under";
-};
-
-export const getFocusPerformersText = (
-  focusPerformers: {
-    name: string[];
-    type: FocusPerformersType;
-  },
-  locale: string
-): string => {
-  let comma: string;
-  switch (locale) {
-    case Language.Zh:
-      comma = "、";
-      break;
-    case Language.Ja:
-      comma = "・";
-      break;
-    default:
-      comma = ", ";
-      break;
-  }
-
-  if (focusPerformers.name.length > 0) {
-    if (focusPerformers.type === FocusPerformersType.Center) {
-      return (
-        "C: " + focusPerformers.name.reduce((acc, curr) => acc + comma + curr)
-      );
-    }
-    return focusPerformers.name.reduce((acc, curr) => acc + comma + curr);
-  }
-  return "";
 };

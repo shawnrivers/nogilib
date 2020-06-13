@@ -1,6 +1,6 @@
 import { SongsRawArray } from "server/actors/Songs/models";
 import { UnitRaw, UnitResult } from "server/actors/Units/models";
-import { SongType } from "server/constants/commons";
+import { SongType } from "server/actors/Songs/constants/songType";
 
 type ConvertUnitSongs = (params: {
   unitName: UnitRaw["name"];

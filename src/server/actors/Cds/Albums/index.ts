@@ -9,7 +9,7 @@ import * as CdConverters from "server/actors/Cds/converters";
 import { arrayToObject } from "utils/arrays";
 import { SongsRawObject } from "server/actors/Songs/models";
 import { MembersRawObject } from "server/actors/Members/models";
-import { CdKind } from "server/constants/commons";
+import { CdKind } from "server/actors/Cds/constants/cdKind";
 
 export class Albums {
   private rawDataArray: AlbumsRawArray;

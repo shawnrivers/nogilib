@@ -10,9 +10,9 @@ import { Message } from "client/components/atoms/Message";
 import { PageContentLayout } from "client/components/atoms/PageContentLayout";
 import { Language } from "client/utils/constants";
 import { useScrollRestoration } from "client/hooks/useScrollRestoration";
-import { SongType } from "server/constants/commons";
+import { SongType } from "server/actors/Songs/constants/songType";
 import { KOJIHARU_IMAGE_SRC } from "server/constants/paths";
-import { MemberNameKey } from "server/actors/Members/constants/memberNames";
+import { MemberNameKey } from "server/actors/Members/constants/memberName";
 import { MemberCard } from "client/components/atoms/MemberCard";
 
 const containerVariants = {

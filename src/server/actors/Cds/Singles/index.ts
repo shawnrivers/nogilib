@@ -9,7 +9,7 @@ import {
 } from "server/actors/Cds/Singles/models";
 import { SongsRawObject } from "server/actors/Songs/models";
 import { arrayToObject } from "utils/arrays";
-import { CdKind } from "server/constants/commons";
+import { CdKind } from "server/actors/Cds/constants/cdKind";
 
 export class Singles {
   private rawDataArray: SinglesRawArray;

@@ -3,7 +3,9 @@ import { MemberResult, MemberRaw } from "server/actors/Members/models";
 import { UnitsRawArray } from "server/actors/Units/models";
 import { SinglesRawArray } from "server/actors/Cds/Singles/models";
 import { SongsRawObject } from "server/actors/Songs/models";
-import { PositionType, SongType, FukujinType } from "server/constants/commons";
+import { SongType } from "server/actors/Songs/constants/songType";
+import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
+import { PositionType } from "server/actors/Members/constants/position";
 
 type ConvertMemberProfileImage = (params: {
   memberName: MemberRaw["name"];

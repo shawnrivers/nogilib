@@ -1,7 +1,7 @@
 import { UnitRaw } from "server/actors/Units/models";
 import { createUnitRaw } from "server/actors/Units/raw/creator";
-import { MemberNameKey } from "server/actors/Members/constants/memberNames";
-import { UnitType } from "server/constants/commons";
+import { MemberNameKey } from "server/actors/Members/constants/memberName";
+import { UnitType } from "server/actors/Units/constants/unitType";
 
 export const UNITS: UnitRaw[] = [
   createUnitRaw({

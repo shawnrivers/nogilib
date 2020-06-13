@@ -9,7 +9,8 @@ import {
 } from "server/actors/Cds/Albums/models";
 import * as CdConverter from "server/actors/Cds/converters";
 import { NO_ARTWORK_IMAGE_SRC } from "server/constants/paths";
-import { SongType, CdKind } from "server/constants/commons";
+import { CdKind } from "server/actors/Cds/constants/cdKind";
+import { SongType } from "server/actors/Songs/constants/songType";
 
 type ConvertSongSingle = (params: {
   songTitle: SongRaw["title"];

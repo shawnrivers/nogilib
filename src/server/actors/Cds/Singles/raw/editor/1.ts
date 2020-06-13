@@ -1,9 +1,9 @@
 import { SingleRaw } from "server/actors/Cds/Singles/models";
 import { createSingleRaw } from "server/actors/Cds/Singles/raw/creator";
-import { SINGLES } from "server/actors/Cds/Singles/constants/singleTitles";
-import { CdType } from "server/constants/commons";
-import { MemberNameKey } from "server/actors/Members/constants/memberNames";
-import { SONGS } from "server/actors/Songs/constants/songTitles";
+import { SINGLES } from "server/actors/Cds/Singles/constants/singleTitle";
+import { CdType } from "server/actors/Cds/constants/cdType";
+import { MemberNameKey } from "server/actors/Members/constants/memberName";
+import { SONGS } from "server/actors/Songs/constants/songTitle";
 
 export const FIRST_SINGLE: SingleRaw = createSingleRaw({
   title: SINGLES["ぐるぐるカーテン"].title,

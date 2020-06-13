@@ -1,13 +1,11 @@
+import { Birthplace } from "server/actors/Members/constants/birthplace";
+import { BloodType } from "server/actors/Members/constants/bloodType";
+import { GlowStickColorType } from "server/actors/Members/constants/glowStickColor";
+import { JoinedGenerationType } from "server/actors/Members/constants/joinedGeneration";
+import { MemberNameKey } from "server/actors/Members/constants/memberName";
+import { SocialMedia } from "server/actors/Members/constants/socialMedia";
 import { MemberRaw } from "server/actors/Members/models";
 import { createMemberRaw } from "server/actors/Members/raw/creator";
-import {
-  Birthplace,
-  BloodType,
-  GlowStickColorType,
-  JoinedGenerationType,
-  SocialMedia,
-} from "server/constants/commons";
-import { MemberNameKey } from "server/actors/Members/constants/memberNames";
 
 export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({

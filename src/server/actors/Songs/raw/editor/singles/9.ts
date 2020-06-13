@@ -1,8 +1,9 @@
-import { MemberNameKey } from "server/actors/Members/constants/memberNames";
+import { MemberNameKey } from "server/actors/Members/constants/memberName";
 import { SongRaw } from "server/actors/Songs/models";
 import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { FukujinType, SongType } from "server/constants/commons";
-import { SONGS } from "server/actors/Songs/constants/songTitles";
+import { SONGS } from "server/actors/Songs/constants/songTitle";
+import { SongType } from "server/actors/Songs/constants/songType";
+import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
 
 export const NINTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({

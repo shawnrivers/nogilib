@@ -1,0 +1,16 @@
+export enum SongType {
+  None = "none",
+  Title = "title",
+  Coupling = "coupling",
+  Selected = "selected",
+  Selected12 = "selected-12",
+  Lead = "lead",
+  Under = "under",
+  Unit = "unit",
+  Solo = "solo",
+  FirstGeneration = "first generation",
+  SecondGeneration = "second generation",
+  ThirdGeneration = "third generation",
+  FourthGeneration = "fourth generation",
+  Special = "special",
+}

@@ -1,12 +1,10 @@
-import { MemberNameKey } from "server/actors/Members/constants/memberNames";
-import {
-  JoinedGenerationType,
-  BloodType,
-  GlowStickColorType,
-  PhotoAlbumType,
-  UnitType,
-  PositionType,
-} from "server/constants/commons";
+import { BloodType } from "server/actors/Members/constants/bloodType";
+import { GlowStickColorType } from "server/actors/Members/constants/glowStickColor";
+import { JoinedGenerationType } from "server/actors/Members/constants/joinedGeneration";
+import { MemberNameKey } from "server/actors/Members/constants/memberName";
+import { PhotoAlbumType } from "server/actors/Members/constants/photoAlbum";
+import { PositionType } from "server/actors/Members/constants/position";
+import { UnitType } from "server/actors/Units/constants/unitType";
 import { Site } from "server/types/commons";
 
 export type MemberRaw = {
