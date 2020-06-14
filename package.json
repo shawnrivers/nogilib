@@ -19,7 +19,9 @@
     "stylelint": "stylelint '**/*.scss'",
     "stylelint:fix": "stylelint '**/*.scss' --fix",
     "predeploy": "yarn generate-data && gatsby build --prefix-paths",
-    "deploy": "gh-pages -d public -m 'chore: update [skip ci]'"
+    "deploy": "gh-pages -d public -m 'chore: update [skip ci]'",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "lint-staged": {
     "src/client/**/*.{ts,tsx}": [
@@ -72,6 +74,10 @@
     "react-lazyload": "^2.6.7"
   },
   "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-typescript": "^7.10.1",
+    "@types/jest": "^26.0.0",
     "@types/node": "^14.0.13",
     "@types/react": "^16.9.36",
     "@types/react-dom": "^16.9.8",
@@ -79,6 +85,7 @@
     "@types/react-lazyload": "^2.6.0",
     "@typescript-eslint/eslint-plugin": "^1.11.0",
     "@typescript-eslint/parser": "^1.11.0",
+    "babel-jest": "^26.0.1",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.21.2",
@@ -88,6 +95,7 @@
     "gatsby-plugin-root-import": "^2.0.5",
     "gh-pages": "^3.0.0",
     "husky": "^4.2.5",
+    "jest": "^26.0.1",
     "lint-staged": "^10.2.9",
     "prettier": "^2.0.5",
     "prettier-stylelint": "^0.4.2",
@@ -95,6 +103,7 @@
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.17.2",
+    "ts-jest": "^26.1.0",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.5"
   }
