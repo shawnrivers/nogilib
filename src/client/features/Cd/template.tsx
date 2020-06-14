@@ -66,7 +66,7 @@ const contentVariants = {
   },
 };
 
-interface CdProps {
+export type CdProps = {
   type: CdTabType;
   title: string;
   number: string;
@@ -75,22 +75,23 @@ interface CdProps {
     key: string;
     title: string;
     type: SongType;
+    hasDetails: boolean;
     focusPerformers: {
       name: string[];
       type: FocusPerformersType;
     };
   }[];
   release: string;
-}
+};
 
-export const Cd = ({
+export const Cd: React.FC<CdProps> = ({
   type,
   title,
   number,
   artworks,
   songs,
   release,
-}: CdProps) => {
+}) => {
   useScrollRestoration();
 
   return (
@@ -132,6 +133,7 @@ export const Cd = ({
                         title={song.title}
                         type={song.type}
                         focusPerformers={song.focusPerformers}
+                        isLink={song.hasDetails}
                       />
                     </li>
                   ))}

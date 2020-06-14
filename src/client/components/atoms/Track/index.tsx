@@ -8,7 +8,6 @@ import { classNames } from "utils/strings";
 import { SongType } from "server/actors/Songs/constants/songType";
 import { Language } from "client/utils/constants";
 import { FocusPerformersType } from "server/actors/Cds/constants/focusPerformers";
-import { SONGS } from "server/actors/Songs/constants/songTitle";
 
 const containerVariants = {
   hover: { backgroundColor: "#595959", transition: { duration: 0.3 } },
@@ -60,6 +59,7 @@ type TrackProps = {
   };
   intl: any;
   className?: string;
+  isLink?: boolean;
 };
 
 export const Track = injectIntl(
@@ -71,13 +71,14 @@ export const Track = injectIntl(
     title,
     type,
     className,
+    isLink = false,
   }: TrackProps) => {
     const focusPerformersText = React.useMemo(
       () => getFocusPerformersText(focusPerformers, locale),
       [focusPerformers, locale]
     );
 
-    return songKey !== SONGS["OVERTURE"].key ? (
+    return isLink ? (
       <motion.div
         whileHover="hover"
         variants={containerVariants}
