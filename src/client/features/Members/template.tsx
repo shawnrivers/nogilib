@@ -27,28 +27,26 @@ const itemVariants = {
   hidden: { opacity: 0, y: 20 },
 };
 
-export type MemberType = {
-  name: string;
-  nameNotations: {
-    lastName: string;
-    firstName: string;
-    lastNameEn: string;
-    firstNameEn: string;
-  };
-  join: JoinedGenerationType;
-  graduation: {
-    isGraduated: boolean;
-    graduatedDate: string;
-  };
-  profileImage: string;
+export type MembersProps = {
+  page: MembersTabType;
+  members: {
+    name: string;
+    nameNotations: {
+      lastName: string;
+      firstName: string;
+      lastNameEn: string;
+      firstNameEn: string;
+    };
+    join: JoinedGenerationType;
+    graduation: {
+      isGraduated: boolean;
+      graduatedDate: string;
+    };
+    profileImage: string;
+  }[];
 };
 
-interface MembersProps {
-  page: MembersTabType;
-  members: MemberType[];
-}
-
-export const Members = ({ page, members }: MembersProps) => {
+export const Members: React.FC<MembersProps> = ({ page, members }) => {
   return (
     <motion.div
       key={page}

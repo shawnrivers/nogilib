@@ -26,7 +26,6 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/prefer-interface": "off",
     "@typescript-eslint/no-unused-vars": "error",
-    "@typescript-eslint/no-use-before-define": "off",
     "react/display-name": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",

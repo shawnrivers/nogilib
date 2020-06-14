@@ -1,31 +1,9 @@
 import { graphql } from "gatsby";
 import * as React from "react";
-import { Members, MemberType } from "client/features/Members/template";
+import { Members, MembersProps } from "client/features/Members/template";
 import { MembersTabType } from "client/types/tabs";
 import { MemberResult } from "server/actors/Members/models";
 import { JoinedGenerationType } from "server/actors/Members/constants/joinedGeneration";
-
-export const query = graphql`
-  query MembersQuery {
-    allMembersJson {
-      nodes {
-        name
-        nameNotations {
-          lastName
-          firstName
-          lastNameEn
-          firstNameEn
-        }
-        join
-        graduation {
-          isGraduated
-          graduatedDate
-        }
-        profileImage
-      }
-    }
-  }
-`;
 
 interface MembersData {
   data: {
@@ -47,17 +25,17 @@ interface MembersData {
   };
 }
 
-const MembersContainer = ({
+const MembersContainer: React.FC<MembersData> = ({
   data: { allMembersJson },
   pageContext: { currentTab },
-}: MembersData) => {
+}) => {
   const allMembers = React.useMemo(() => {
     let membersData: {
-      first: MemberType[];
-      second: MemberType[];
-      third: MemberType[];
-      fourth: MemberType[];
-      graduated: MemberType[];
+      first: MembersProps["members"];
+      second: MembersProps["members"];
+      third: MembersProps["members"];
+      fourth: MembersProps["members"];
+      graduated: MembersProps["members"];
     } = {
       first: [],
       second: [],
@@ -124,5 +102,27 @@ const MembersContainer = ({
     <Members page={currentTab} members={members} />
   ) : null;
 };
+
+export const query = graphql`
+  query MembersQuery {
+    allMembersJson {
+      nodes {
+        name
+        nameNotations {
+          lastName
+          firstName
+          lastNameEn
+          firstNameEn
+        }
+        join
+        graduation {
+          isGraduated
+          graduatedDate
+        }
+        profileImage
+      }
+    }
+  }
+`;
 
 export default MembersContainer;

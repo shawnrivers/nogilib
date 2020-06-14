@@ -8,8 +8,48 @@ import { classNames } from "utils/strings";
 import { SongType } from "server/actors/Songs/constants/songType";
 import { Language } from "client/utils/constants";
 import { FocusPerformersType } from "server/actors/Cds/constants/focusPerformers";
+import { SONGS } from "server/actors/Songs/constants/songTitle";
 
-interface TrackProps {
+const containerVariants = {
+  hover: { backgroundColor: "#595959", transition: { duration: 0.3 } },
+};
+
+const textVariants = {
+  hover: { color: "#ffffff", transition: { duration: 0.2 } },
+};
+
+const getFocusPerformersText = (
+  focusPerformers: {
+    name: string[];
+    type: FocusPerformersType;
+  },
+  locale: string
+): string => {
+  let comma: string;
+  switch (locale) {
+    case Language.Zh:
+      comma = "、";
+      break;
+    case Language.Ja:
+      comma = "・";
+      break;
+    default:
+      comma = ", ";
+      break;
+  }
+
+  if (focusPerformers.name.length > 0) {
+    if (focusPerformers.type === FocusPerformersType.Center) {
+      return (
+        "C: " + focusPerformers.name.reduce((acc, curr) => acc + comma + curr)
+      );
+    }
+    return focusPerformers.name.reduce((acc, curr) => acc + comma + curr);
+  }
+  return "";
+};
+
+type TrackProps = {
   number: number;
   songKey: string;
   title: string;
@@ -20,7 +60,7 @@ interface TrackProps {
   };
   intl: any;
   className?: string;
-}
+};
 
 export const Track = injectIntl(
   ({
@@ -37,7 +77,7 @@ export const Track = injectIntl(
       [focusPerformers, locale]
     );
 
-    return songKey !== "OVERTURE" ? (
+    return songKey !== SONGS["OVERTURE"].key ? (
       <motion.div
         whileHover="hover"
         variants={containerVariants}
@@ -76,42 +116,3 @@ export const Track = injectIntl(
     );
   }
 );
-
-const containerVariants = {
-  hover: { backgroundColor: "#595959", transition: { duration: 0.3 } },
-};
-
-const textVariants = {
-  hover: { color: "#ffffff", transition: { duration: 0.2 } },
-};
-
-function getFocusPerformersText(
-  focusPerformers: {
-    name: string[];
-    type: FocusPerformersType;
-  },
-  locale: string
-): string {
-  let comma: string;
-  switch (locale) {
-    case Language.Zh:
-      comma = "、";
-      break;
-    case Language.Ja:
-      comma = "・";
-      break;
-    default:
-      comma = ", ";
-      break;
-  }
-
-  if (focusPerformers.name.length > 0) {
-    if (focusPerformers.type === FocusPerformersType.Center) {
-      return (
-        "C: " + focusPerformers.name.reduce((acc, curr) => acc + comma + curr)
-      );
-    }
-    return focusPerformers.name.reduce((acc, curr) => acc + comma + curr);
-  }
-  return "";
-}
