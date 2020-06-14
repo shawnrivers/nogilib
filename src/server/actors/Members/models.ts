@@ -58,5 +58,5 @@ export type MemberResult = MemberRaw & {
 };
 
 export type MembersRawArray = MemberRaw[];
-export type MembersRawObject = { [key: string]: MemberRaw };
+export type MembersRawObject = Record<MemberNameKey, MemberRaw>;
 export type MembersResultArray = MemberResult[];

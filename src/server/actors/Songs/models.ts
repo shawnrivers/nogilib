@@ -45,5 +45,5 @@ export type SongResult = SongRaw & {
 };
 
 export type SongsRawArray = SongRaw[];
-export type SongsRawObject = { [key: string]: SongRaw };
+export type SongsRawObject = Record<SongTitle, SongRaw>;
 export type SongsResultArray = SongResult[];

@@ -15,7 +15,7 @@ import { CdType } from "server/actors/Cds/constants/cdType";
 import { CdKind } from "server/actors/Cds/constants/cdKind";
 import { SongType } from "server/actors/Songs/constants/songType";
 
-export const convertPerformerNames = (
+const convertPerformerNames = (
   memberNames: MemberNameKey[],
   membersRawObject: MembersRawObject
 ): string[] => {
