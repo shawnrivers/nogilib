@@ -11,7 +11,7 @@ module.exports = {
     "plugin:import/warnings",
     "plugin:import/typescript",
   ],
-  plugins: ["react-hooks"],
+  plugins: ["react-hooks", "import"],
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: "module",
@@ -40,6 +40,14 @@ module.exports = {
     "import/resolver": {
       node: {
         paths: ["src"],
+        extensions: [".tsx", ".ts"],
+      },
+      alias: {
+        map: [
+          ["client", "./src/client"],
+          ["storybook", "./.storybook/libs"],
+        ],
+        extensions: [".tsx"],
       },
     },
   },

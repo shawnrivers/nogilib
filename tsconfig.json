@@ -14,7 +14,13 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
-    "baseUrl": "src"
+    "sourceMap": true,
+    "baseUrl": "src",
+    "rootDirs": ["src", "stories"],
+    "paths": {
+      "client/*": ["./client/*"],
+      "storybook/*": ["../.storybook/libs/*"]
+    }
   },
-  "include": ["src"]
+  "include": ["src/client/**/*"]
 }
