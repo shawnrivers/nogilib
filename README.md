@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://shawnrivers.github.io/nogizaka-lib-redesign/">
+  <a href="https://shawnrivers.github.io/nogizaka-lib-redesign/cds/singles/">
     <img alt="Gatsby" src="https://raw.githubusercontent.com/shawnrivers/nogizaka-lib-redesign/master/src/assets/images/favicon-512.png" width="128" />
   </a>
 </p>
@@ -7,11 +7,15 @@
   Nogizaka Lib
 </h1>
 
-_[App link](https://shawnrivers.github.io/nogizaka-lib-redesign/)_
+**[App link](https://shawnrivers.github.io/nogizaka-lib-redesign/cds/singles/)**
 
-This is a Gatsby powered web application aiming at showing the information about _[Nogizaka46](http://www.nogizaka46.com/)_ in a user-friendly way.
+**Nogizaka Lib** (**Nogilib**) is a web application for showing the information about [Nogizaka46](http://www.nogizaka46.com/) in a user-friendly way.
 
-Current supported languages: _[Japanese](https://shawnrivers.github.io/nogizaka-lib-redesign/)_ 🇯🇵, _[English](https://shawnrivers.github.io/nogizaka-lib-redesign/en/)_ 🇬🇧 and _[Chinese](https://shawnrivers.github.io/nogizaka-lib-redesign/zh/)_ 🇨🇳.
+## Multi-language Support
+
+- [Japanese](https://shawnrivers.github.io/nogizaka-lib-redesign/cds/singles/) 🇯🇵
+- [English](https://shawnrivers.github.io/nogizaka-lib-redesign/en/cds/singles/) 🇬🇧
+- [Chinese](https://shawnrivers.github.io/nogizaka-lib-redesign/zh/cds/singles/) 🇨🇳
 
 ## 🚀 Set Up Dev Environment
 
@@ -21,7 +25,15 @@ Current supported languages: _[Japanese](https://shawnrivers.github.io/nogizaka-
     yarn install
     ```
 
-2.  **Start the dev server.**
+2.  **(Optional) Generate the latest data.**
+
+    ```sh
+    yarn generate-data
+    ```
+
+    Data will be generated in `src/data`.
+
+3.  **Start the dev server.**
 
     ```sh
     yarn dev
@@ -29,7 +41,7 @@ Current supported languages: _[Japanese](https://shawnrivers.github.io/nogizaka-
 
     Your site is now running at `http://localhost:8000`.
 
-3.  **Build the product.**
+4.  **Build the product.**
 
     ```sh
     yarn build
@@ -40,56 +52,38 @@ Current supported languages: _[Japanese](https://shawnrivers.github.io/nogizaka-
 
 ## 📚 Technologies
 
-- Static Page Generator: `Gatsby`
-- JavaScript: `TypeScript`
-- CSS: `Sass`, `CSS modules`
+- Framework: `Gatsby`
+- Language: `TypeScript`
+- CSS preprocessor: `Sass`
 - Animation: `framer-motion`
 
-## 🧐 What's inside?
+## 🧐 Directories
 
     .
     ├── src
     ├──── assets
-    ├──── components
-    ├──── containers
     ├──── data
-    ├──── i18n
-    ├──── layouts
+    ├──── server
+    ├──── client
     ├──── pages
-    ├──── styles
-    ├──── types
     ├──── utils
-    ├── gatsby-config.js
-    ├── gatsby-node.js
 
-1.  **`/src`**: All _"source code"_ comes here.
+- **`src/assets`**
+  - Images in the app
+- **`src/data`**
+  - Data to statically generate the app
+- **`src/server`**
+  - Codes for generating data
+  - Data will be generated in `src/data`
+- **`src/client`**
+  - Client side codes
+- **`src/pages`**
+  - Gatsby pages
+- **`src/utils`**
+  - Utility methods used across the whole app
 
-2.  **`/src/assets`**: This folder has images like favicons.
+## Data Source
 
-3.  **`/src/components`**: The components structure based on _[Atomic Design](http://atomicdesign.bradfrost.com/chapter-2/)_.
-
-4.  **`/src/containers`**: Each actual page with data processing and side effects.
-
-5.  **`/src/data`**: Data used in this application.
-
-6.  **`/src/i18n`**: Internationalization and localization related files.
-
-7.  **`/src/layouts`**: Universal part across all pages.
-
-8.  **`/src/pages`**: Entry `index` and `404` page.
-
-9.  **`/src/styles`**: `Sass` variables and templates
-
-10. **`/src/types`**: Global state type definitions.
-
-11. **`/src/utils`**: Common methods used across the app.
-
-12. **`gatsby-config.js`**: This is the main configuration file.
-
-13. **`gatsby-node.js`**: This file holds pages creating customization settings.
-
-## Data
-
-Profile images and CD artworks © [乃木坂46LLC](https://www.nogizaka46.com/).
+Profile images and CD artworks © [乃木坂 46LLC](https://www.nogizaka46.com/).
 
 Most information in this project is from [Nogizaka46 official website](https://www.nogizaka46.com/) and [Wikipedia](https://ja.wikipedia.org/wiki/乃木坂46).
