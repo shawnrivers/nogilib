@@ -1,5 +1,5 @@
 import { useTheme as emotionUseTheme } from "emotion-theming";
-import { GlobalColor, globalColors } from "./colors";
+import { GlobalColor, GLOBAL_COLORS } from "./colors";
 
 export type ThemeColors = {
   primary: {
@@ -116,7 +116,7 @@ const {
   white,
   red0,
   red1,
-} = globalColors;
+} = GLOBAL_COLORS;
 
 const commonStyles: Pick<Theme, "typography" | "spacing"> = {
   typography,
@@ -144,7 +144,7 @@ const lightTheme: Theme = {
         inverse: gray0,
       },
     },
-    global: globalColors,
+    global: GLOBAL_COLORS,
   },
   ...commonStyles,
 };
@@ -170,7 +170,7 @@ const darkTheme: Theme = {
         inverse: white,
       },
     },
-    global: globalColors,
+    global: GLOBAL_COLORS,
   },
   ...commonStyles,
 };
