@@ -17,7 +17,7 @@ export const All: React.FC = () => {
         margin: 24px;
       `}
     >
-      <GlobalNavigation />;
+      <GlobalNavigation />
     </div>
   );
 };

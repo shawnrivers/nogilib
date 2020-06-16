@@ -78,6 +78,7 @@
     "react-lazyload": "^2.6.7"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-knobs": "^5.3.19",
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/react": "^5.3.19",
@@ -90,6 +91,7 @@
     "@typescript-eslint/eslint-plugin": "^1.11.0",
     "@typescript-eslint/parser": "^1.11.0",
     "babel-loader": "^8.1.0",
+    "babel-preset-react-app": "^9.1.2",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-import-resolver-alias": "^1.1.2",
