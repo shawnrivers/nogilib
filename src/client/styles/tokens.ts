@@ -1,5 +1,6 @@
-import { useTheme as emotionUseTheme } from "emotion-theming";
-import { GlobalColor, GLOBAL_COLORS } from "./colors";
+import { useTheme as emotionUseTheme } from 'emotion-theming';
+import { GLOBAL_COLORS } from './colors';
+import { TYPOGRAPHY } from 'client/styles/typography';
 
 export type ThemeColors = {
   primary: {
@@ -20,26 +21,9 @@ export type ThemeColors = {
   };
 };
 
-export type BackgroundColor = keyof ThemeColors["background"];
+export type BackgroundColor = keyof ThemeColors['background'];
 
-type TypographyStyles = {
-  fontSize: string;
-  fontWeight: "normal" | "bold";
-};
-
-type ThemeTypography = {
-  h1: TypographyStyles;
-  h2: TypographyStyles;
-  h3: TypographyStyles;
-  h4: TypographyStyles;
-  body1: TypographyStyles;
-  body2: TypographyStyles;
-  caption: TypographyStyles;
-};
-
-export type TypographyVariant = keyof ThemeTypography;
-
-export type ThemeKey = "light" | "dark";
+export type ThemeKey = 'light' | 'dark';
 
 export type ThemeSpacing = {
   none: string;
@@ -55,55 +39,22 @@ export type ThemeSpacing = {
 export type Theme = {
   colors: {
     theme: ThemeColors;
-    global: {
-      [key in GlobalColor]: string;
-    };
+    global: typeof GLOBAL_COLORS;
   };
-  typography: ThemeTypography;
+  typography: typeof TYPOGRAPHY;
   spacing: ThemeSpacing;
   key: ThemeKey;
 };
 
-const typography: ThemeTypography = {
-  h1: {
-    fontSize: "3rem",
-    fontWeight: "bold",
-  },
-  h2: {
-    fontSize: "2rem",
-    fontWeight: "bold",
-  },
-  h3: {
-    fontSize: "1.5rem",
-    fontWeight: "bold",
-  },
-  h4: {
-    fontSize: "1.25rem",
-    fontWeight: "bold",
-  },
-  body1: {
-    fontSize: "1rem",
-    fontWeight: "normal",
-  },
-  body2: {
-    fontSize: "0.9rem",
-    fontWeight: "normal",
-  },
-  caption: {
-    fontSize: "0.75rem",
-    fontWeight: "normal",
-  },
-};
-
 export const spacing: ThemeSpacing = {
-  none: "0rem",
-  xxs: "0.25rem",
-  xs: "0.5rem",
-  s: "1rem",
-  m: "1.5rem",
-  l: "2rem",
-  xl: "3rem",
-  xxl: "4rem",
+  none: '0rem',
+  xxs: '0.25rem',
+  xs: '0.5rem',
+  s: '1rem',
+  m: '1.5rem',
+  l: '2rem',
+  xl: '3rem',
+  xxl: '4rem',
 };
 
 const {
@@ -118,13 +69,13 @@ const {
   red1,
 } = GLOBAL_COLORS;
 
-const commonStyles: Pick<Theme, "typography" | "spacing"> = {
-  typography,
+const commonStyles: Pick<Theme, 'typography' | 'spacing'> = {
+  typography: TYPOGRAPHY,
   spacing,
 };
 
 const lightTheme: Theme = {
-  key: "light",
+  key: 'light',
   colors: {
     theme: {
       primary: {
@@ -150,7 +101,7 @@ const lightTheme: Theme = {
 };
 
 const darkTheme: Theme = {
-  key: "dark",
+  key: 'dark',
   colors: {
     theme: {
       primary: {
