@@ -16,6 +16,7 @@ const variantMapping: Record<TypographyKey, React.ElementType> = {
   body2: 'p',
   body3: 'p',
   caption: 'p',
+  button: 'span',
 };
 
 type TypographyProps = React.HTMLAttributes<HTMLElement> & {

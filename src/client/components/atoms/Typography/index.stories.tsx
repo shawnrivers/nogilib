@@ -38,6 +38,7 @@ export const All: React.FC = () => {
         <Typography variant="body2">Body 2</Typography>
         <Typography variant="body3">Body 3</Typography>
         <Typography variant="caption">Caption</Typography>
+        <Typography variant="button">Button</Typography>
       </div>
       <div
         css={css`
@@ -58,6 +59,7 @@ export const All: React.FC = () => {
         <Typography variant="body2">本文 2</Typography>
         <Typography variant="body3">本文 3</Typography>
         <Typography variant="caption">キャプション</Typography>
+        <Typography variant="button">ボタン</Typography>
       </div>
       <div
         css={css`
@@ -78,6 +80,7 @@ export const All: React.FC = () => {
         <Typography variant="body2">正文 2</Typography>
         <Typography variant="body3">正文 3</Typography>
         <Typography variant="caption">脚注</Typography>
+        <Typography variant="button">按键</Typography>
       </div>
     </div>
   );

@@ -1,40 +1,40 @@
-import * as React from "react";
-import { Link } from "gatsby";
-import { motion } from "framer-motion";
-import styles from "./starting.module.scss";
-import { PageContentLayout } from "client/components/atoms/PageContentLayout";
-import { Message } from "client/components/atoms/Message";
-import { LocalizedLink } from "client/components/atoms/locales/LocalizedLink";
-import { LazyImage } from "client/components/atoms/LazyImage";
-import cdListPc from "assets/images/screenshots/cd_list-pc.jpg";
-import { Links } from "client/utils/constants";
-import { getUrlWithTrailingSlash, classNames } from "utils/strings";
-import favicon128 from "assets/images/favicon-128.png";
-import favicon256 from "assets/images/favicon-256.png";
-import favicon512 from "assets/images/favicon-512.png";
-import cdListSpLarge from "assets/images/screenshots/cd_list-sp-large.jpg";
-import cdListSpSmall from "assets/images/screenshots/cd_list-sp-small.jpg";
-import cdPc from "assets/images/screenshots/cd-pc.jpg";
-import cdSpLarge from "assets/images/screenshots/cd-sp-large.jpg";
-import cdSpSmall from "assets/images/screenshots/cd-sp-small.jpg";
-import songPc from "assets/images/screenshots/song-pc.jpg";
-import songSpLarge from "assets/images/screenshots/song-sp-large.jpg";
-import songSpSmall from "assets/images/screenshots/song-sp-small.jpg";
-import memberListPc from "assets/images/screenshots/member_list-pc.jpg";
-import memberListSpLarge from "assets/images/screenshots/member_list-sp-large.jpg";
-import memberListSpSmall from "assets/images/screenshots/member_list-sp-small.jpg";
-import memberPc from "assets/images/screenshots/member-pc.jpg";
-import memberSpLarge from "assets/images/screenshots/member-sp-large.jpg";
-import memberSpSmall from "assets/images/screenshots/member-sp-small.jpg";
-import searchPc from "assets/images/screenshots/search-pc.jpg";
-import searchSpLarge from "assets/images/screenshots/search-sp-large.jpg";
-import searchSpSmall from "assets/images/screenshots/search-sp-small.jpg";
+import * as React from 'react';
+import { Link } from 'gatsby';
+import { motion } from 'framer-motion';
+import styles from './starting.module.scss';
+import { PageContentLayout } from 'client/components/atoms/PageContentLayout';
+import { Message } from 'client/components/atoms/Message';
+import { LocalizedLink } from 'client/components/atoms/locales/LocalizedLink';
+import { LazyImage } from 'client/components/atoms/LazyImage';
+import cdListPc from 'assets/images/screenshots/cd_list-pc.jpg';
+import { Links } from 'client/utils/constants';
+import { getUrlWithTrailingSlash, classNames } from 'utils/strings';
+import favicon128 from 'assets/images/favicon-128.png';
+import favicon256 from 'assets/images/favicon-256.png';
+import favicon512 from 'assets/images/favicon-512.png';
+import cdListSpLarge from 'assets/images/screenshots/cd_list-sp-large.jpg';
+import cdListSpSmall from 'assets/images/screenshots/cd_list-sp-small.jpg';
+import cdPc from 'assets/images/screenshots/cd-pc.jpg';
+import cdSpLarge from 'assets/images/screenshots/cd-sp-large.jpg';
+import cdSpSmall from 'assets/images/screenshots/cd-sp-small.jpg';
+import songPc from 'assets/images/screenshots/song-pc.jpg';
+import songSpLarge from 'assets/images/screenshots/song-sp-large.jpg';
+import songSpSmall from 'assets/images/screenshots/song-sp-small.jpg';
+import memberListPc from 'assets/images/screenshots/member_list-pc.jpg';
+import memberListSpLarge from 'assets/images/screenshots/member_list-sp-large.jpg';
+import memberListSpSmall from 'assets/images/screenshots/member_list-sp-small.jpg';
+import memberPc from 'assets/images/screenshots/member-pc.jpg';
+import memberSpLarge from 'assets/images/screenshots/member-sp-large.jpg';
+import memberSpSmall from 'assets/images/screenshots/member-sp-small.jpg';
+import searchPc from 'assets/images/screenshots/search-pc.jpg';
+import searchSpLarge from 'assets/images/screenshots/search-sp-large.jpg';
+import searchSpSmall from 'assets/images/screenshots/search-sp-small.jpg';
 
 const TextLink = (props: { children: React.ReactNode }) => (
   <motion.span
     whileHover={{
-      backgroundColor: "#e887a3",
-      color: "#ffffff",
+      backgroundColor: '#e887a3',
+      color: '#ffffff',
     }}
     className={styles.textLink}
   >
@@ -91,13 +91,13 @@ export const Starting = () => {
             <Message text="supported languages" />
           </h2>
           <p className={classNames(styles.languages, styles.text)}>
-            <Link to={getUrlWithTrailingSlash("/en")}>
+            <Link to={getUrlWithTrailingSlash('/en')}>
               <TextLink>ENGLISH</TextLink>
             </Link>
-            <Link to={getUrlWithTrailingSlash("/")}>
+            <Link to={getUrlWithTrailingSlash('/')}>
               <TextLink>日本語</TextLink>
             </Link>
-            <Link to={getUrlWithTrailingSlash("/zh")}>
+            <Link to={getUrlWithTrailingSlash('/zh')}>
               <TextLink>简体中文</TextLink>
             </Link>
           </p>
@@ -108,8 +108,8 @@ export const Starting = () => {
           <LocalizedLink to={Links.Singles}>
             <motion.h2
               whileHover={{
-                backgroundColor: "#595959",
-                color: "#ffffff",
+                backgroundColor: '#595959',
+                color: '#ffffff',
               }}
               className={classNames(styles.subtitle, styles.subtitleLink)}
             >
@@ -213,8 +213,8 @@ export const Starting = () => {
           <LocalizedLink to={Links.FirstGeneration}>
             <motion.h2
               whileHover={{
-                backgroundColor: "#595959",
-                color: "#ffffff",
+                backgroundColor: '#595959',
+                color: '#ffffff',
               }}
               className={classNames(styles.subtitle, styles.subtitleLink)}
             >
@@ -297,8 +297,8 @@ export const Starting = () => {
           <LocalizedLink to={Links.Search}>
             <motion.h2
               whileHover={{
-                backgroundColor: "#595959",
-                color: "#ffffff",
+                backgroundColor: '#595959',
+                color: '#ffffff',
               }}
               className={classNames(styles.subtitle, styles.subtitleLink)}
             >
@@ -344,7 +344,7 @@ export const Starting = () => {
             <Message text="copyright" />
           </h2>
           <p className={styles.text}>
-            © 2019 - 2020{" "}
+            © 2019 - 2020{' '}
             <a
               href="https://shawnrivers.github.io/"
               target="_blank"
@@ -353,8 +353,8 @@ export const Starting = () => {
             >
               <motion.span
                 whileHover={{
-                  backgroundColor: "#e887a3",
-                  color: "#ffffff",
+                  backgroundColor: '#e887a3',
+                  color: '#ffffff',
                 }}
                 className={styles.textLink}
               >
@@ -364,7 +364,7 @@ export const Starting = () => {
             . Some rights reserved.
           </p>
           <p className={styles.text}>
-            Member images and CD artworks ©{" "}
+            Member images and CD artworks ©{' '}
             <a
               href="http://www.nogizaka46.com/"
               target="_blank"
@@ -372,8 +372,8 @@ export const Starting = () => {
             >
               <motion.span
                 whileHover={{
-                  backgroundColor: "#e887a3",
-                  color: "#ffffff",
+                  backgroundColor: '#e887a3',
+                  color: '#ffffff',
                 }}
                 className={styles.textLink}
               >
@@ -397,8 +397,8 @@ export const Starting = () => {
           >
             <motion.span
               whileHover={{
-                backgroundColor: "#e887a3",
-                color: "#ffffff",
+                backgroundColor: '#e887a3',
+                color: '#ffffff',
               }}
               className={styles.textLink}
             >

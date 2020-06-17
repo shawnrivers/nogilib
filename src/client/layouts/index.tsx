@@ -1,17 +1,19 @@
-import * as React from "react";
-import { Helmet } from "react-helmet";
-import { RouteComponentProps } from "@reach/router";
-import { motion } from "framer-motion";
-import { IntlProvider } from "react-intl";
-import styles from "./applayout.module.scss";
-import { TopNavigation } from "client/components/molecules/TopNavigation";
-import { PageTabs } from "client/components/molecules/PageTabs";
-import en from "client/i18n/en.json";
-import ja from "client/i18n/ja.json";
-import zh from "client/i18n/zh.json";
-import { CdTabType, MembersTabType } from "client/types/tabs";
-import "client/styles/app.scss";
-import { Language, Links } from "client/utils/constants";
+import * as React from 'react';
+import { Helmet } from 'react-helmet';
+import { RouteComponentProps } from '@reach/router';
+import { motion } from 'framer-motion';
+import { IntlProvider } from 'react-intl';
+import { ThemeProvider } from 'emotion-theming';
+import styles from './applayout.module.scss';
+import { TopNavigation } from 'client/components/molecules/TopNavigation';
+import { PageTabs } from 'client/components/molecules/PageTabs';
+import en from 'client/i18n/en.json';
+import ja from 'client/i18n/ja.json';
+import zh from 'client/i18n/zh.json';
+import { CdTabType, MembersTabType } from 'client/types/tabs';
+import 'client/styles/app.scss';
+import { Language, Links } from 'client/utils/constants';
+import { ThemeKey, themes } from 'client/styles/tokens';
 
 const messages = { en, ja, zh };
 
@@ -45,21 +47,24 @@ const AppLayout = ({
   location,
   pageContext,
 }: RouteComponentProps<AppLayoutProps>) => {
+  const [themeKey] = React.useState<ThemeKey>('light');
+  const theme = React.useMemo(() => themes[themeKey], [themeKey]);
+
   const pathName = React.useMemo(() => {
     if (location) {
       const { pathname } = location;
-      return pathname[pathname.length - 1] === "/"
+      return pathname[pathname.length - 1] === '/'
         ? pathname.slice(0, -1)
         : pathname;
     }
-    return "";
+    return '';
   }, [location]);
 
   const locale = pageContext ? pageContext.locale : Language.Ja;
 
-  const isCdsPage = React.useMemo(() => pathName.includes("/cds/"), [pathName]);
+  const isCdsPage = React.useMemo(() => pathName.includes('/cds/'), [pathName]);
   const isMembersPage = React.useMemo(
-    () => pathName.includes("/members-list/"),
+    () => pathName.includes('/members-list/'),
     [pathName]
   );
 
@@ -154,30 +159,32 @@ const AppLayout = ({
         <title>Nogizaka Lib</title>
         <html lang={locale} />
       </Helmet>
-      <div className={styles.container}>
-        <TopNavigation pathName={pathName} />
-        {isCdsPage ? (
-          <PageTabs
-            items={cdsPageTabs.items}
-            selectedItem={cdsPageTabs.selectedItem}
-          />
-        ) : null}
-        {isMembersPage ? (
-          <PageTabs
-            items={membersPageTabs.items}
-            selectedItem={membersPageTabs.selectedItem}
-          />
-        ) : null}
-        <motion.main
-          key={pathName}
-          initial="hidden"
-          animate="visible"
-          variants={layoutVariants}
-          className={styles.contents}
-        >
-          {children}
-        </motion.main>
-      </div>
+      <ThemeProvider theme={theme}>
+        <div className={styles.container}>
+          <TopNavigation pathName={pathName} />
+          {isCdsPage ? (
+            <PageTabs
+              items={cdsPageTabs.items}
+              selectedItem={cdsPageTabs.selectedItem}
+            />
+          ) : null}
+          {isMembersPage ? (
+            <PageTabs
+              items={membersPageTabs.items}
+              selectedItem={membersPageTabs.selectedItem}
+            />
+          ) : null}
+          <motion.main
+            key={pathName}
+            initial="hidden"
+            animate="visible"
+            variants={layoutVariants}
+            className={styles.contents}
+          >
+            {children}
+          </motion.main>
+        </div>
+      </ThemeProvider>
     </IntlProvider>
   );
 };
