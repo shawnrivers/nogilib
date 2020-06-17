@@ -44,10 +44,11 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-google-fonts',
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        fonts: ['playfair display:700'],
-        display: 'swap',
+        google: {
+          families: ['Playfair Display:400,700'],
+        },
       },
     },
     {
