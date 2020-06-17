@@ -1,3 +1,17 @@
+export type TypographyStyle = {
+  fontSize: string;
+  fontWeight: 400 | 700;
+  fontFamily: string;
+};
+
+const serif = {
+  fontFamily: 'Playfair Display, Times, Times New Roman, Georgia, serif',
+};
+
+const sansSerif = {
+  fontFamily: 'Verdana, Arial, Helvetica, sans-serif',
+};
+
 export type TypographyKey =
   | 'h1'
   | 'h2'
@@ -8,51 +22,63 @@ export type TypographyKey =
   | 'body1'
   | 'body2'
   | 'body3'
-  | 'caption';
-export type TypographyStyle = {
-  fontSize: string;
-  fontWeight: string;
-};
+  | 'caption'
+  | 'button';
 
 export const TYPOGRAPHY: Record<TypographyKey, TypographyStyle> = {
   h1: {
     fontSize: '4rem',
-    fontWeight: 'bold',
+    fontWeight: 700,
+    ...serif,
   },
   h2: {
     fontSize: '3rem',
-    fontWeight: 'bold',
+    fontWeight: 700,
+    ...serif,
   },
   h3: {
     fontSize: '2.5rem',
-    fontWeight: 'bold',
+    fontWeight: 700,
+    ...serif,
   },
   h4: {
     fontSize: '2rem',
-    fontWeight: 'bold',
+    fontWeight: 700,
+    ...serif,
   },
   h5: {
     fontSize: '1.5rem',
-    fontWeight: 'bold',
+    fontWeight: 700,
+    ...serif,
   },
   h6: {
     fontSize: '1.25rem',
-    fontWeight: 'bold',
+    fontWeight: 700,
+    ...serif,
   },
   body1: {
     fontSize: '1rem',
-    fontWeight: 'normal',
+    fontWeight: 400,
+    ...sansSerif,
   },
   body2: {
     fontSize: '0.875rem',
-    fontWeight: 'normal',
+    fontWeight: 400,
+    ...sansSerif,
   },
   body3: {
     fontSize: '0.75rem',
-    fontWeight: 'normal',
+    fontWeight: 400,
+    ...sansSerif,
   },
   caption: {
     fontSize: '0.625rem',
-    fontWeight: 'normal',
+    fontWeight: 400,
+    ...sansSerif,
+  },
+  button: {
+    fontSize: '1rem',
+    fontWeight: 700,
+    ...sansSerif,
   },
 };
