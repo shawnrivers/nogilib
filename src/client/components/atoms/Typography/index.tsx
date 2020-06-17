@@ -12,6 +12,7 @@ const variantMapping: Record<TypographyKey, React.ElementType> = {
   h4: 'h4',
   h5: 'h5',
   h6: 'h6',
+  h7: 'h6',
   body1: 'p',
   body2: 'p',
   body3: 'p',

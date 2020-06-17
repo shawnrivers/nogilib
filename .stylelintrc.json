@@ -7,7 +7,7 @@
   "rules": {
     "at-rule-no-unknown": null,
     "scss/at-rule-no-unknown": true,
-    "order/properties-alphabetical-order": true,
+    "order/properties-alphabetical-order": null,
     "order/order": ["custom-properties", "declarations"]
   }
 }

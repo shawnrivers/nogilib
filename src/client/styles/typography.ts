@@ -19,6 +19,7 @@ export type TypographyKey =
   | 'h4'
   | 'h5'
   | 'h6'
+  | 'h7'
   | 'body1'
   | 'body2'
   | 'body3'
@@ -54,6 +55,11 @@ export const TYPOGRAPHY: Record<TypographyKey, TypographyStyle> = {
   h6: {
     fontSize: '1.25rem',
     fontWeight: 700,
+    ...serif,
+  },
+  h7: {
+    fontSize: '1rem',
+    fontWeight: 400,
     ...serif,
   },
   body1: {

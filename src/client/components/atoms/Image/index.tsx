@@ -1,6 +1,6 @@
-import { graphql, useStaticQuery } from "gatsby";
-import Img from "gatsby-image/withIEPolyfill";
-import React from "react";
+import { graphql, useStaticQuery } from 'gatsby';
+import Img from 'gatsby-image/withIEPolyfill';
+import React from 'react';
 
 type DataType = {
   allFile: {
