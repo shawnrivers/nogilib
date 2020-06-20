@@ -143,6 +143,12 @@ const Discography: React.FC = () => {
             <Typography variant="body1">Sing Out!</Typography>
             <Typography variant="body2">Center: 齋藤飛鳥</Typography>
           </div>
+          <div>
+            <ArtworkImage src="artworks/singles/22/A.jpg" alt="22" />
+            <Typography variant="h4">22nd.</Typography>
+            <Typography variant="body1">帰り道は遠回りしたくなる</Typography>
+            <Typography variant="body2">Center: 西野七瀬</Typography>
+          </div>
         </div>
       </Main>
     </Container>

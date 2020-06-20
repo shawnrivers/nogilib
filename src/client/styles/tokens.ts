@@ -1,6 +1,7 @@
 import { useTheme as emotionUseTheme } from 'emotion-theming';
 import { GLOBAL_COLORS } from './colors';
 import { TYPOGRAPHY } from 'client/styles/typography';
+import { SPACING } from 'client/styles/spacing';
 
 export type ThemeColors = {
   primary: {
@@ -25,36 +26,14 @@ export type BackgroundColor = keyof ThemeColors['background'];
 
 export type ThemeKey = 'light' | 'dark';
 
-export type ThemeSpacing = {
-  none: string;
-  xxs: string;
-  xs: string;
-  s: string;
-  m: string;
-  l: string;
-  xl: string;
-  xxl: string;
-};
-
 export type Theme = {
   colors: {
     theme: ThemeColors;
     global: typeof GLOBAL_COLORS;
   };
   typography: typeof TYPOGRAPHY;
-  spacing: ThemeSpacing;
+  spacing: typeof SPACING;
   key: ThemeKey;
-};
-
-export const spacing: ThemeSpacing = {
-  none: '0rem',
-  xxs: '0.25rem',
-  xs: '0.5rem',
-  s: '1rem',
-  m: '1.5rem',
-  l: '2rem',
-  xl: '3rem',
-  xxl: '4rem',
 };
 
 const {
@@ -71,7 +50,7 @@ const {
 
 const commonStyles: Pick<Theme, 'typography' | 'spacing'> = {
   typography: TYPOGRAPHY,
-  spacing,
+  spacing: SPACING,
 };
 
 const lightTheme: Theme = {

@@ -21,6 +21,5 @@
       "client/*": ["./client/*"],
       "storybook/*": ["../.storybook/libs/*"]
     }
-  },
-  "include": ["src/client/**/*", "src/pages/**/*"]
+  }
 }

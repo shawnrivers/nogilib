@@ -1,9 +1,3 @@
-export type TypographyStyle = {
-  fontSize: string;
-  fontWeight: 400 | 700;
-  fontFamily: string;
-};
-
 const serif = {
   fontFamily: 'Playfair Display, Times, Times New Roman, Georgia, serif',
 };
@@ -12,21 +6,7 @@ const sansSerif = {
   fontFamily: 'Verdana, Arial, Helvetica, sans-serif',
 };
 
-export type TypographyKey =
-  | 'h1'
-  | 'h2'
-  | 'h3'
-  | 'h4'
-  | 'h5'
-  | 'h6'
-  | 'h7'
-  | 'body1'
-  | 'body2'
-  | 'body3'
-  | 'caption'
-  | 'button';
-
-export const TYPOGRAPHY: Record<TypographyKey, TypographyStyle> = {
+export const TYPOGRAPHY = {
   h1: {
     fontSize: '4rem',
     fontWeight: 700,
@@ -88,3 +68,5 @@ export const TYPOGRAPHY: Record<TypographyKey, TypographyStyle> = {
     ...sansSerif,
   },
 };
+
+export type TypographyKey = keyof typeof TYPOGRAPHY;
