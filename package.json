@@ -55,7 +55,7 @@
     "gatsby-plugin-react-helmet": "^3.3.5",
     "gatsby-plugin-resolve-src": "^2.1.0",
     "gatsby-plugin-sass": "^2.3.4",
-    "gatsby-plugin-sharp": "^2.6.12",
+    "gatsby-plugin-sharp": "^2.6.13",
     "gatsby-plugin-typescript": "^2.4.7",
     "gatsby-source-filesystem": "^2.3.12",
     "gatsby-transformer-json": "^2.4.5",
