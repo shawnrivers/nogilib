@@ -59,7 +59,7 @@
     "gatsby-plugin-typescript": "^2.4.10",
     "gatsby-source-filesystem": "^2.3.14",
     "gatsby-transformer-json": "^2.4.9",
-    "gatsby-transformer-sharp": "^2.5.7",
+    "gatsby-transformer-sharp": "^2.5.9",
     "node": "^14.4.0",
     "node-sass": "^4.14.1",
     "query-string": "^6.13.1",
