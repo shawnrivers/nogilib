@@ -6704,10 +6704,10 @@ gatsby-plugin-root-import@^2.0.5:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-root-import/-/gatsby-plugin-root-import-2.0.5.tgz#04e520dc661d67f49aa7950f11b7c780fd2fdbd3"
   integrity sha512-/yA6rFjfjiFb8D6nCjfFrrGqYQMkOt4J3u2o6s7VYEF/zpA5dw2C9ENJ5fDKkJSCbbwLiEIGVMMee3vMEip2zA==
 
-gatsby-plugin-sass@^2.3.9:
-  version "2.3.9"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-2.3.9.tgz#8895e176271690d663c0f86c0ca65f9579dc81a2"
-  integrity sha512-ZuAvxLybEU6s/f/g8NeioYXaqb+KORUNdQFlfIJ/WXIlgq1Gx7YHpB40yl82zUUtYNhxLlVHRtb9M8dRi/kZQg==
+gatsby-plugin-sass@^2.3.10:
+  version "2.3.10"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-2.3.10.tgz#a6aec4a218318c613cf09de8defa42300283f6b9"
+  integrity sha512-ZF/+SNMogv6C+UksTLGCwQxeA5224fmp1ojJ/wOkmwMM83HClQ5wwcs0utQZmIOCAszEn+wi2wul1Tyiyh4YBg==
   dependencies:
     "@babel/runtime" "^7.10.3"
     sass-loader "^7.3.1"
