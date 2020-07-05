@@ -42,3 +42,42 @@ export const GLOBAL_COLORS = {
 };
 
 export type GlobalColorKey = keyof typeof GLOBAL_COLORS;
+
+export type ThemeColors = {
+  primary: {
+    standard: string;
+    variant: string;
+  };
+  secondary: {
+    standard: string;
+    variant: string;
+  };
+  background: {
+    standard: string;
+    variant: string;
+  };
+  surface: {
+    standard: string;
+    variant: string;
+  };
+  onPrimary: {
+    standard: string;
+    variant: string;
+  };
+  onSecondary: {
+    standard: string;
+    variant: string;
+  };
+  onBackground: {
+    standard: string;
+    variant: string;
+  };
+  onSurface: {
+    standard: string;
+    variant: string;
+  };
+};
+
+export type ThemeKey = 'light' | 'dark';
+
+export type Themes = Record<ThemeKey, ThemeColors>;
