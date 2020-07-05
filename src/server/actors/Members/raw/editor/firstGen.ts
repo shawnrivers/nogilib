@@ -60,6 +60,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: "https://blog.nogizaka46.com/erika.ikuta/",
       },
       {
+        title: SocialMedia.Instagram,
+        url: "https://www.instagram.com/ikutaerika.official/",
+      },
+      {
         title: SocialMedia.Profile,
         url: "https://www.nogizaka46.com/member/detail/ikutaerika.php",
       },
