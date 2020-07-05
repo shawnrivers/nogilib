@@ -49,19 +49,21 @@ type QueryResult = {
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: minmax(min-content, 200px) minmax(min-content, 1fr) minmax(
+  grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 800px) minmax(
       max-content,
-      140px
+      1fr
     );
   grid-template-rows: auto;
   grid-template-areas:
     'navigation header settings'
     'main main main';
+  grid-gap: 16px;
   margin-top: 64px;
 `;
 
 const Navigation = styled.nav`
   grid-area: navigation;
+  justify-self: end;
 `;
 
 const Header = styled.header`
@@ -70,10 +72,28 @@ const Header = styled.header`
 
 const Settings = styled.div`
   grid-area: settings;
+  justify-self: start;
 `;
 
 const Main = styled.main`
   grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const CdGroupContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 240px);
+  grid-template-rows: auto;
+  grid-template-areas: 'featured featured featured';
+  grid-gap: 40px;
+  justify-content: center;
+  max-width: 800px;
+`;
+
+const FeaturedCdContainer = styled.div`
+  grid-area: featured;
 `;
 
 const FeatureCd: React.FC<{
@@ -91,16 +111,24 @@ const FeatureCd: React.FC<{
     <ArtworkImage
       src={props.artwork}
       alt={props.number}
-      width={300}
-      height={300}
+      width={360}
+      height={360}
     />
     <div
       css={css`
         display: flex;
         flex-direction: column;
+        justify-content: center;
       `}
     >
-      <Typography variant="h1" element="h4">
+      <Typography
+        variant="h1"
+        element="h4"
+        css={css`
+          line-height: 1;
+          margin-bottom: 1.5ex;
+        `}
+      >
         {toCdNumber(props.number)} <br /> Single
       </Typography>
       <div>
@@ -121,7 +149,12 @@ const NormalCd: React.FC<{
   focusPerformers: FocusPerformers;
 }> = props => (
   <div>
-    <ArtworkImage src={props.artwork} alt={props.number} />
+    <ArtworkImage
+      src={props.artwork}
+      alt={props.number}
+      width={240}
+      height={240}
+    />
     <Typography variant="h4">{toCdNumber(props.number)}</Typography>
     <Typography variant="body1">{props.title}</Typography>
     <Typography variant="body2">
@@ -142,8 +175,8 @@ const ArtworkImage: React.FC<{
     objectFit="cover"
     objectPosition="top"
     css={css`
-      width: ${props.width ?? 200}px;
-      height: ${props.height ?? 200}px;
+      width: ${props.width ?? 240}px;
+      height: ${props.height ?? 240}px;
     `}
   />
 );
@@ -241,29 +274,16 @@ const Discography: React.FC<QueryResult> = props => {
                 >
                   {cdGroup.year}
                 </Typography>
-                <div
-                  css={css`
-                    display: grid;
-                    grid-template-columns: repeat(3, 200px);
-                    grid-template-rows: auto;
-                    grid-template-areas: 'featured featured featured';
-                    grid-gap: 24px;
-                    justify-content: center;
-                  `}
-                >
-                  <div
-                    css={css`
-                      grid-area: featured;
-                    `}
-                  >
-                    <FeatureCd
-                      artwork={featuredCd.artworks[0]}
-                      number={featuredCd.number}
-                      title={featuredCd.title}
-                      focusPerformers={featuredCd.songs[0].focusPerformers}
-                      release={featuredCd.release}
-                    />
-                  </div>
+                <FeaturedCdContainer>
+                  <FeatureCd
+                    artwork={featuredCd.artworks[0]}
+                    number={featuredCd.number}
+                    title={featuredCd.title}
+                    focusPerformers={featuredCd.songs[0].focusPerformers}
+                    release={featuredCd.release}
+                  />
+                </FeaturedCdContainer>
+                <CdGroupContainer>
                   {restCds.map(cd => (
                     <NormalCd
                       key={cd.number}
@@ -273,7 +293,7 @@ const Discography: React.FC<QueryResult> = props => {
                       focusPerformers={cd.songs[0].focusPerformers}
                     />
                   ))}
-                </div>
+                </CdGroupContainer>
               </div>
             );
           }
@@ -288,15 +308,7 @@ const Discography: React.FC<QueryResult> = props => {
               >
                 {cdGroup.year}
               </Typography>
-              <div
-                css={css`
-                  display: grid;
-                  grid-template-columns: repeat(3, 200px);
-                  grid-template-rows: auto;
-                  grid-gap: 24px;
-                  justify-content: center;
-                `}
-              >
+              <CdGroupContainer>
                 {cdGroup.cds.map(cd => (
                   <NormalCd
                     key={cd.number}
@@ -306,7 +318,7 @@ const Discography: React.FC<QueryResult> = props => {
                     focusPerformers={cd.songs[0].focusPerformers}
                   />
                 ))}
-              </div>
+              </CdGroupContainer>
             </div>
           );
         })}
