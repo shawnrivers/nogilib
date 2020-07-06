@@ -1,8 +1,7 @@
-import * as CdConverters from 'server/actors/Cds/converters';
+import * as CdConverters from 'server/actors/Discography/converters';
 import { MembersRawObject } from 'server/actors/Members/models';
 import { SongsRawObject } from 'server/actors/Songs/models';
 import { arrayToObject } from 'utils/arrays';
-import { CdKind } from 'server/actors/Cds/constants/cdKind';
 import {
   DiscographyRawArray,
   DiscographyRawObject,
@@ -72,7 +71,7 @@ export class Discography {
         cdArtworkTypes: cdRaw.artworkTypes,
         cdHasArtworks: cdRaw.hasArtworks,
         cdNumber: cdRaw.number,
-        cdKind: CdKind.Single,
+        cdKind: cdRaw.type,
       }),
       songs: CdConverters.convertCdSongs({
         cdSongsRaw: cdRaw.songs,

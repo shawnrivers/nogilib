@@ -1,14 +1,17 @@
+import { CdKind } from 'server/actors/Cds/constants/cdKind';
+import { CdType } from 'server/actors/Cds/constants/cdType';
+import { FocusPerformersType } from 'server/actors/Cds/constants/focusPerformers';
+import {
+  convertCdArtwork,
+  convertCdSongFocusPerformers,
+  convertCdSongType,
+} from 'server/actors/Cds/converters';
 import { Members } from 'server/actors/Members';
 import { membersRawArray } from 'server/actors/Members/raw';
 import { Songs } from 'server/actors/Songs';
 import { SongTitle } from 'server/actors/Songs/constants/songTitle';
 import { SongType } from 'server/actors/Songs/constants/songType';
 import { songsRawArray } from 'server/actors/Songs/raw';
-import {
-  convertCdArtwork,
-  convertCdSongType,
-  convertCdSongFocusPerformers,
-} from 'server/actors/Discography/converters';
 
 const songsRawObject = new Songs(songsRawArray).rawObject;
 const membersRawObject = new Members(membersRawArray).rawObject;
@@ -19,26 +22,10 @@ describe('convertCdArtwork', () => {
       convertCdArtwork({
         cdHasArtworks: true,
         cdNumber: '25',
-        cdArtworkType: 'A',
-        cdKind: 'single',
+        cdArtworkType: CdType.A,
+        cdKind: CdKind.Single,
       })
     ).toEqual('artworks/singles/25/A.jpg');
-    expect(
-      convertCdArtwork({
-        cdHasArtworks: true,
-        cdNumber: '4',
-        cdArtworkType: 'A',
-        cdKind: 'album',
-      })
-    ).toEqual('artworks/albums/4/A.jpg');
-    expect(
-      convertCdArtwork({
-        cdHasArtworks: true,
-        cdNumber: '1',
-        cdArtworkType: 'T',
-        cdKind: 'other',
-      })
-    ).toEqual('artworks/others/1/T.jpg');
   });
 
   test('should return no artwork image path when cdHasArtworks flag is false', () => {
@@ -46,16 +33,16 @@ describe('convertCdArtwork', () => {
       convertCdArtwork({
         cdHasArtworks: false,
         cdNumber: '100',
-        cdArtworkType: 'A',
-        cdKind: 'single',
+        cdArtworkType: CdType.A,
+        cdKind: CdKind.Single,
       })
     ).toEqual('artworks/artwork_no_image.png');
     expect(
       convertCdArtwork({
         cdHasArtworks: false,
         cdNumber: '25',
-        cdArtworkType: 'A',
-        cdKind: 'single',
+        cdArtworkType: CdType.A,
+        cdKind: CdKind.Single,
       })
     ).toEqual('artworks/artwork_no_image.png');
   });
@@ -65,8 +52,8 @@ describe('convertCdArtwork', () => {
       convertCdArtwork({
         cdHasArtworks: true,
         cdNumber: '100',
-        cdArtworkType: 'A',
-        cdKind: 'single',
+        cdArtworkType: CdType.A,
+        cdKind: CdKind.Single,
       })
     ).toEqual('artworks/artwork_no_image.png');
   });
@@ -117,7 +104,7 @@ describe('convertCdSongFocusPerformers', () => {
         membersRawObject,
       })
     ).toEqual({
-      type: '',
+      type: FocusPerformersType.None,
       name: [],
     });
   });
@@ -130,7 +117,7 @@ describe('convertCdSongFocusPerformers', () => {
         membersRawObject,
       })
     ).toEqual({
-      type: 'solo',
+      type: FocusPerformersType.Solo,
       name: ['白石麻衣'],
     });
   });
@@ -143,7 +130,7 @@ describe('convertCdSongFocusPerformers', () => {
         membersRawObject,
       })
     ).toEqual({
-      type: 'unit',
+      type: FocusPerformersType.Unit,
       name: ['さゆりんご軍団'],
     });
   });
@@ -156,7 +143,7 @@ describe('convertCdSongFocusPerformers', () => {
         membersRawObject,
       })
     ).toEqual({
-      type: 'unit',
+      type: FocusPerformersType.Unit,
       name: ['生田絵梨花', '生駒里奈', '星野みなみ'],
     });
 
@@ -167,7 +154,7 @@ describe('convertCdSongFocusPerformers', () => {
         membersRawObject,
       })
     ).toEqual({
-      type: 'center',
+      type: FocusPerformersType.Center,
       name: ['松村沙友理'],
     });
   });
@@ -180,7 +167,7 @@ describe('convertCdSongFocusPerformers', () => {
         membersRawObject,
       })
     ).toEqual({
-      type: 'center',
+      type: FocusPerformersType.Center,
       name: ['西野七瀬', '白石麻衣'],
     });
 
@@ -191,7 +178,7 @@ describe('convertCdSongFocusPerformers', () => {
         membersRawObject,
       })
     ).toEqual({
-      type: 'center',
+      type: FocusPerformersType.Center,
       name: ['齋藤飛鳥'],
     });
 
@@ -202,7 +189,7 @@ describe('convertCdSongFocusPerformers', () => {
         membersRawObject,
       })
     ).toEqual({
-      type: 'center',
+      type: FocusPerformersType.Center,
       name: ['大園桃子'],
     });
   });

@@ -1,163 +1,167 @@
 import { arrayToObject } from 'utils/arrays';
 import { TitleKeyArray } from 'server/types/commons';
 
-export enum CdTitle {
-  Sekaichuunorinjinyo = '世界中の隣人よ',
-  Shiawasenohogoshoku = 'しあわせの保護色',
-  Yoakemadetsuyogaranakutemoii = '夜明けまで強がらなくてもいい',
-  SingOut = 'Sing Out!',
-  Kaerimichihatoomawarishitakunaru = '帰り道は遠回りしたくなる',
-  Jikochudeikou = 'ジコチューで行こう!',
-  Synchronicity = 'シンクロニシティ',
-  Itsukadekirukarakyoudekiru = 'いつかできるから今日できる',
-  Nigemizu = '逃げ水',
-  Influencer = 'インフルエンサー',
-  Sayonaranoimi = 'サヨナラの意味',
-  HadashideSummer = '裸足でSummer',
-  Harujiongasakugoro = 'ハルジオンが咲く頃',
-  ImaHanashitaidarekagairu = '今、話したい誰かがいる',
-  TaiyouKnock = '太陽ノック',
-  Inochihautsukushii = '命は美しい',
-  Nandomenoaozoraka = '何度目の青空か?',
-  NatsunoFreeAndEasy = '夏のFree&Easy',
-  Kiduitarakataomoi = '気づいたら片想い',
-  Valletta = 'バレッタ',
-  GirlsRule = 'ガールズルール',
-  Kiminonahakibou = '君の名は希望',
-  SeifukunoMannequin = '制服のマネキン',
-  HashireBicycle = '走れ!Bicycle',
-  Oideshampo = 'おいでシャンプー',
-  GuruguruCurtain = 'ぐるぐるカーテン',
-  Imagaomoideninarumade = '今が思い出になるまで',
-  BokudakenokimiUnderBestAlbum = '僕だけの君〜Under Super Best〜',
-  Umaretekarahajimetemitayume = '生まれてから初めて見た夢',
-  Sorezorenoisu = 'それぞれの椅子',
-  Toumeinairo = '透明な色',
-}
+export type SingleTitle =
+  | 'しあわせの保護色'
+  | '夜明けまで強がらなくてもいい'
+  | 'Sing Out!'
+  | '帰り道は遠回りしたくなる'
+  | 'ジコチューで行こう!'
+  | 'シンクロニシティ'
+  | 'いつかできるから今日できる'
+  | '逃げ水'
+  | 'インフルエンサー'
+  | 'サヨナラの意味'
+  | '裸足でSummer'
+  | 'ハルジオンが咲く頃'
+  | '今、話したい誰かがいる'
+  | '太陽ノック'
+  | '命は美しい'
+  | '何度目の青空か?'
+  | '夏のFree&Easy'
+  | '気づいたら片想い'
+  | 'バレッタ'
+  | 'ガールズルール'
+  | '君の名は希望'
+  | '制服のマネキン'
+  | '走れ!Bicycle'
+  | 'おいでシャンプー'
+  | 'ぐるぐるカーテン';
+
+export type AlbumTitle =
+  | '今が思い出になるまで'
+  | '僕だけの君〜Under Super Best〜'
+  | '生まれてから初めて見た夢'
+  | 'それぞれの椅子'
+  | '透明な色';
+
+export type OtherCdTitle = '世界中の隣人よ';
+
+export type CdTitle = SingleTitle | AlbumTitle | OtherCdTitle;
 
 export const CdTitleKeyArray: TitleKeyArray<CdTitle> = [
   {
-    title: CdTitle.Sekaichuunorinjinyo,
+    title: '世界中の隣人よ',
     key: 'sekaichuunorinjinyo',
   },
   {
-    title: CdTitle.Shiawasenohogoshoku,
+    title: 'しあわせの保護色',
     key: 'hogoshoku',
   },
   {
-    title: CdTitle.Yoakemadetsuyogaranakutemoii,
+    title: '夜明けまで強がらなくてもいい',
     key: 'yoakemade',
   },
   {
-    title: CdTitle.SingOut,
+    title: 'Sing Out!',
     key: 'singout',
   },
   {
-    title: CdTitle.Kaerimichihatoomawarishitakunaru,
+    title: '帰り道は遠回りしたくなる',
     key: 'kaerimichi',
   },
   {
-    title: CdTitle.Jikochudeikou,
+    title: 'ジコチューで行こう!',
     key: 'jikochu',
   },
   {
-    title: CdTitle.Synchronicity,
+    title: 'シンクロニシティ',
     key: 'synchronicity',
   },
   {
-    title: CdTitle.Itsukadekirukarakyoudekiru,
+    title: 'いつかできるから今日できる',
     key: 'itsukadekiru',
   },
   {
-    title: CdTitle.Nigemizu,
+    title: '逃げ水',
     key: 'nigemizu',
   },
   {
-    title: CdTitle.Influencer,
+    title: 'インフルエンサー',
     key: 'influencer',
   },
   {
-    title: CdTitle.Sayonaranoimi,
+    title: 'サヨナラの意味',
     key: 'sayonaranoimi',
   },
   {
-    title: CdTitle.HadashideSummer,
+    title: '裸足でSummer',
     key: 'hadasummer',
   },
   {
-    title: CdTitle.Harujiongasakugoro,
+    title: 'ハルジオンが咲く頃',
     key: 'harujion',
   },
   {
-    title: CdTitle.ImaHanashitaidarekagairu,
+    title: '今、話したい誰かがいる',
     key: 'imahana',
   },
   {
-    title: CdTitle.TaiyouKnock,
+    title: '太陽ノック',
     key: 'taiyouknock',
   },
   {
-    title: CdTitle.Inochihautsukushii,
+    title: '命は美しい',
     key: 'inochihautsukushii',
   },
   {
-    title: CdTitle.Nandomenoaozoraka,
+    title: '何度目の青空か?',
     key: 'nandomenoaozoraka',
   },
   {
-    title: CdTitle.NatsunoFreeAndEasy,
+    title: '夏のFree&Easy',
     key: 'natsunofreeeasy',
   },
   {
-    title: CdTitle.Kiduitarakataomoi,
+    title: '気づいたら片想い',
     key: 'kiduitarakataomoi',
   },
   {
-    title: CdTitle.Valletta,
+    title: 'バレッタ',
     key: 'valletta',
   },
   {
-    title: CdTitle.GirlsRule,
+    title: 'ガールズルール',
     key: 'girlsrule',
   },
   {
-    title: CdTitle.Kiminonahakibou,
+    title: '君の名は希望',
     key: 'kiminonahakibou',
   },
   {
-    title: CdTitle.SeifukunoMannequin,
+    title: '制服のマネキン',
     key: 'seifukunomannequin',
   },
   {
-    title: CdTitle.HashireBicycle,
+    title: '走れ!Bicycle',
     key: 'hashirebicycle',
   },
   {
-    title: CdTitle.Oideshampo,
+    title: 'おいでシャンプー',
     key: 'oideshampo',
   },
   {
-    title: CdTitle.GuruguruCurtain,
+    title: 'ぐるぐるカーテン',
     key: 'gurugurucurtain',
   },
   {
-    title: CdTitle.Imagaomoideninarumade,
+    title: '今が思い出になるまで',
     key: 'imagaomoideninarumade',
   },
   {
-    title: CdTitle.BokudakenokimiUnderBestAlbum,
+    title: '僕だけの君〜Under Super Best〜',
     key: 'bokudakenokimiunderbestalbum',
   },
   {
-    title: CdTitle.Umaretekarahajimetemitayume,
+    title: '生まれてから初めて見た夢',
     key: 'umaretekarahajimetemitayume',
   },
   {
-    title: CdTitle.Sorezorenoisu,
+    title: 'それぞれの椅子',
     key: 'sorezorenoisu',
   },
   {
-    title: CdTitle.Toumeinairo,
+    title: '透明な色',
     key: 'toumeinairo',
   },
 ];
