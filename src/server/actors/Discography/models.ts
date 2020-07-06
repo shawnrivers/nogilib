@@ -2,10 +2,11 @@ import { Site } from 'server/types/commons';
 import { SongTitle } from 'server/actors/Songs/constants/songTitle';
 import { SongType } from 'server/actors/Songs/constants/songType';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-
-export type FocusPerformersType = 'center' | 'solo' | 'unit' | '';
-
-export type CdType = 'A' | 'B' | 'C' | 'D' | 'T' | 'L' | 'L1' | 'L2';
+import {
+  CdTitle,
+  CdType,
+  FocusPerformersType,
+} from 'server/actors/Discography/types';
 
 export type CdSongRaw = {
   number: number;
@@ -24,7 +25,7 @@ export type CdSongResult = CdSongRaw & {
 
 // TODO: Rename to CdRaw
 export type DiscographyRaw = {
-  title: string;
+  title: CdTitle;
   type: 'single' | 'album' | 'other';
   number: string;
   release: string;

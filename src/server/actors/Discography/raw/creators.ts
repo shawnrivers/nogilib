@@ -3,7 +3,7 @@ import {
   SingleTitle,
   AlbumTitle,
   OtherCdTitle,
-} from 'server/actors/Discography/constants/cdTitle';
+} from 'server/actors/Discography/types';
 
 export const createSingleRaw = (params: {
   title: SingleTitle;

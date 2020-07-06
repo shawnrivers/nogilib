@@ -7,11 +7,11 @@ import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { SongType } from 'server/actors/Songs/constants/songType';
 import {
   DiscographyRaw,
-  CdType,
   DiscographyResult,
   CdSongResult,
   CdSongRaw,
 } from 'server/actors/Discography/models';
+import { CdType } from 'server/actors/Discography/types';
 
 const convertPerformerNames = (
   memberNames: MemberNameKey[],

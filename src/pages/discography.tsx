@@ -169,7 +169,7 @@ const NormalCd: React.FC<{
       {toCdNumber(props.number)} {props.type}
     </Typography>
     <Typography variant="body1">{props.title}</Typography>
-    {props.focusPerformers.name.length > 0 ? (
+    {props.type === 'single' && props.focusPerformers.name.length > 0 ? (
       <Typography variant="body2">
         {props.focusPerformers.type}: {props.focusPerformers.name}
       </Typography>
@@ -263,18 +263,19 @@ const groupCdsByYear = (cds: QueryResultCds): CdGroupByYear[] => {
 };
 
 const Discography: React.FC<QueryResult> = props => {
+  const discographyData = props.data.allDiscographyJson.nodes;
+
   const singlesData = React.useMemo(
-    () =>
-      props.data.allDiscographyJson.nodes.filter(cd => cd.type === 'single'),
-    [props.data]
+    () => discographyData.filter(cd => cd.type === 'single'),
+    [discographyData]
   );
   const albumsData = React.useMemo(
-    () => props.data.allDiscographyJson.nodes.filter(cd => cd.type === 'album'),
-    [props.data]
+    () => discographyData.filter(cd => cd.type === 'album'),
+    [discographyData]
   );
   const otherCdsData = React.useMemo(
-    () => props.data.allDiscographyJson.nodes.filter(cd => cd.type === 'other'),
-    [props.data]
+    () => discographyData.filter(cd => cd.type === 'other'),
+    [discographyData]
   );
   const allCdGroupsByYear = React.useMemo(
     () => groupCdsByYear([...singlesData, ...albumsData, ...otherCdsData]),
