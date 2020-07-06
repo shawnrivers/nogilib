@@ -3,24 +3,27 @@ import { GLOBAL_COLORS } from './colors';
 import { TYPOGRAPHY } from 'client/styles/typography';
 import { SPACING } from 'client/styles/spacing';
 
-export type ThemeColors = {
-  primary: {
-    standard: string;
-    variant0: string;
-    variant1: string;
-    variant2: string;
-    inverse: string;
-  };
-  secondary: {
-    standard: string;
-    variant0: string;
-  };
-  background: {
-    standard: string;
-    variant0: string;
-    inverse: string;
-  };
+export type ThemeColorVariants = {
+  standard: string;
+  variant0: string;
+  variant1: string;
 };
+
+export type ThemeColorsForeground = {
+  onPrimary: ThemeColorVariants;
+  onSecondary: ThemeColorVariants;
+  onBackground: ThemeColorVariants;
+  onSurface: ThemeColorVariants;
+};
+
+export type ThemeColorsBackground = {
+  primary: ThemeColorVariants;
+  secondary: ThemeColorVariants;
+  background: ThemeColorVariants;
+  surface: ThemeColorVariants;
+};
+
+export type ThemeColors = ThemeColorsBackground & ThemeColorsForeground;
 
 export type BackgroundColor = keyof ThemeColors['background'];
 
@@ -37,15 +40,20 @@ export type Theme = {
 };
 
 const {
-  gray0,
   gray1,
-  gray2,
   gray3,
   gray4,
-  gray5,
+  gray6,
+  gray8,
   white,
-  red0,
-  red1,
+  purpleDull0,
+  purpleDull1,
+  purpleDull2,
+  purpleDull3,
+  purpleDull4,
+  yellow0,
+  yellow1,
+  yellow2,
 } = GLOBAL_COLORS;
 
 const commonStyles: Pick<Theme, 'typography' | 'spacing'> = {
@@ -58,20 +66,44 @@ const lightTheme: Theme = {
   colors: {
     theme: {
       primary: {
-        standard: gray0,
-        variant0: gray1,
-        variant1: gray2,
-        variant2: gray3,
-        inverse: white,
+        standard: purpleDull0,
+        variant0: purpleDull1,
+        variant1: purpleDull2,
       },
       secondary: {
-        standard: red0,
-        variant0: red1,
+        standard: yellow0,
+        variant0: yellow1,
+        variant1: yellow2,
       },
       background: {
         standard: white,
-        variant0: gray5,
-        inverse: gray0,
+        variant0: gray1,
+        variant1: gray3,
+      },
+      surface: {
+        standard: white,
+        variant0: gray1,
+        variant1: gray3,
+      },
+      onPrimary: {
+        standard: gray8,
+        variant0: gray6,
+        variant1: gray4,
+      },
+      onSecondary: {
+        standard: gray8,
+        variant0: gray6,
+        variant1: gray4,
+      },
+      onBackground: {
+        standard: gray8,
+        variant0: gray6,
+        variant1: gray4,
+      },
+      onSurface: {
+        standard: gray8,
+        variant0: gray6,
+        variant1: gray4,
       },
     },
     global: GLOBAL_COLORS,
@@ -84,20 +116,44 @@ const darkTheme: Theme = {
   colors: {
     theme: {
       primary: {
-        standard: white,
-        variant0: gray5,
-        variant1: gray4,
-        variant2: gray2,
-        inverse: gray0,
+        standard: purpleDull4,
+        variant0: purpleDull3,
+        variant1: purpleDull2,
       },
       secondary: {
-        standard: red0,
-        variant0: red1,
+        standard: yellow0,
+        variant0: yellow1,
+        variant1: yellow2,
       },
       background: {
-        standard: gray0,
+        standard: gray8,
+        variant0: gray6,
+        variant1: gray4,
+      },
+      surface: {
+        standard: gray8,
+        variant0: gray6,
+        variant1: gray4,
+      },
+      onPrimary: {
+        standard: white,
         variant0: gray1,
-        inverse: white,
+        variant1: gray3,
+      },
+      onSecondary: {
+        standard: gray8,
+        variant0: gray6,
+        variant1: gray4,
+      },
+      onBackground: {
+        standard: white,
+        variant0: gray1,
+        variant1: gray3,
+      },
+      onSurface: {
+        standard: gray8,
+        variant0: gray6,
+        variant1: gray4,
       },
     },
     global: GLOBAL_COLORS,
