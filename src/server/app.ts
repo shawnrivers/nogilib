@@ -20,10 +20,12 @@ const units = new Units(unitsRawArray);
 const discography = new Discography(discographyRawArray);
 
 const songsResultArray = songs.convertSongs({
-  singlesRawArray: singles.rawArray,
-  singlesRawObject: singles.rawObject,
-  albumsRawArray: albums.rawArray,
-  albumsRawObject: albums.rawObject,
+  singlesRawArray: discography.getSinglesRawArray(),
+  singlesRawObject: discography.getSinglesRawObject(),
+  albumsRawArray: discography.getAlbumsRawArray(),
+  albumsRawObject: discography.getAlbumsRawObject(),
+  otherCdsRawArray: discography.getOtherCdsRawArray(),
+  otherCdsRawObject: discography.getOtherCdsRawObject(),
 });
 const albumsResultArray = albums.convertAlbums({
   songsRawObject: songs.rawObject,
@@ -35,7 +37,7 @@ const singlesResultArray = singles.convertSingles({
 });
 const membersResultArray = members.convertMembers({
   unitsRawArray: units.rawArray,
-  singlesRawArray: singles.rawArray,
+  singlesRawArray: discography.getSinglesRawArray(),
   songsRawObject: songs.rawObject,
 });
 const unitsResultArray = units.convertUnits({
@@ -46,8 +48,6 @@ const discographyResultArray = discography.convertDiscography({
   membersRawObject: members.rawObject,
 });
 
-// Store the processed data into several JSON files.
-
 const writeFile = (path: string, data: any[]) => {
   fs.writeFile(path, JSON.stringify(data, null, 2), err => {
     if (err) {
@@ -57,8 +57,6 @@ const writeFile = (path: string, data: any[]) => {
     }
   });
 };
-
-// Write data in this project.
 
 writeFile('./src/data/members.json', membersResultArray);
 writeFile('./src/data/singles.json', singlesResultArray);

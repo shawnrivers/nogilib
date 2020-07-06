@@ -1,18 +1,18 @@
-import * as fs from "fs";
-import { MemberResult, MemberRaw } from "server/actors/Members/models";
-import { UnitsRawArray } from "server/actors/Units/models";
-import { SinglesRawArray } from "server/actors/Cds/Singles/models";
-import { SongsRawObject } from "server/actors/Songs/models";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
-import { PositionType } from "server/actors/Members/constants/position";
+import * as fs from 'fs';
+import { MemberResult, MemberRaw } from 'server/actors/Members/models';
+import { UnitsRawArray } from 'server/actors/Units/models';
+import { SongsRawObject } from 'server/actors/Songs/models';
+import { SongType } from 'server/actors/Songs/constants/songType';
+import { FukujinType } from 'server/actors/Cds/Singles/constants/fukujinType';
+import { PositionType } from 'server/actors/Members/constants/position';
+import { DiscographyRawArray } from 'server/actors/Discography/models';
 
 type ConvertMemberProfileImage = (params: {
-  memberName: MemberRaw["name"];
+  memberName: MemberRaw['name'];
   numberOfSingles: number;
-  memberSingleImages: MemberResult["singleImages"];
-  isMemberGraduated: MemberRaw["graduation"]["isGraduated"];
-}) => MemberResult["profileImage"];
+  memberSingleImages: MemberResult['singleImages'];
+  isMemberGraduated: MemberRaw['graduation']['isGraduated'];
+}) => MemberResult['profileImage'];
 
 export const convertMemberProfileImage: ConvertMemberProfileImage = ({
   memberName,
@@ -20,22 +20,22 @@ export const convertMemberProfileImage: ConvertMemberProfileImage = ({
   memberSingleImages,
   isMemberGraduated,
 }) => {
-  let memberProfileImageResult = "";
+  let memberProfileImageResult = '';
 
   const graduatedProfileImagePath = `members/graduated/${memberName}.jpg`;
 
   for (let i = 0; i < numberOfSingles; i++) {
-    if (memberSingleImages[numberOfSingles - 1] === "") {
-      memberProfileImageResult = "members/member_no_image.png";
+    if (memberSingleImages[numberOfSingles - 1] === '') {
+      memberProfileImageResult = 'members/member_no_image.png';
     } else {
       if (
         isMemberGraduated &&
-        fs.existsSync("./src/assets/images/" + graduatedProfileImagePath)
+        fs.existsSync('./src/assets/images/' + graduatedProfileImagePath)
       ) {
         memberProfileImageResult = graduatedProfileImagePath;
       } else {
         memberProfileImageResult =
-          memberSingleImages[numberOfSingles - 1] !== ""
+          memberSingleImages[numberOfSingles - 1] !== ''
             ? memberSingleImages[numberOfSingles - 1]
             : memberSingleImages[numberOfSingles - 1];
       }
@@ -46,9 +46,9 @@ export const convertMemberProfileImage: ConvertMemberProfileImage = ({
 };
 
 type ConvertMemberSingleImages = (params: {
-  memberName: MemberRaw["name"];
+  memberName: MemberRaw['name'];
   numberOfSingles: number;
-}) => MemberResult["singleImages"];
+}) => MemberResult['singleImages'];
 
 export const convertMemberSingleImages: ConvertMemberSingleImages = ({
   memberName,
@@ -59,9 +59,9 @@ export const convertMemberSingleImages: ConvertMemberSingleImages = ({
   for (let i = 0; i < numberOfSingles; i++) {
     const profileImageSrc = `members/${i + 1}/${memberName}.jpg`;
 
-    let singleImage = "";
+    let singleImage = '';
 
-    if (fs.existsSync("./src/assets/images/" + profileImageSrc)) {
+    if (fs.existsSync('./src/assets/images/' + profileImageSrc)) {
       singleImage = profileImageSrc;
     } else if (i > 1) {
       singleImage = memberSingleImagesResult[i - 1];
@@ -74,9 +74,9 @@ export const convertMemberSingleImages: ConvertMemberSingleImages = ({
 };
 
 type ConvertMemberUnits = (params: {
-  memberName: MemberRaw["name"];
+  memberName: MemberRaw['name'];
   unitsRawArray: UnitsRawArray;
-}) => MemberResult["units"];
+}) => MemberResult['units'];
 
 export const convertMemberUnits: ConvertMemberUnits = ({
   memberName,
@@ -97,10 +97,10 @@ export const convertMemberUnits: ConvertMemberUnits = ({
 };
 
 type ConvertMemberPositionsHistory = (params: {
-  memberName: MemberRaw["name"];
-  singlesRawArray: SinglesRawArray;
+  memberName: MemberRaw['name'];
+  singlesRawArray: DiscographyRawArray;
   songsRawObject: SongsRawObject;
-}) => MemberResult["positionsHistory"];
+}) => MemberResult['positionsHistory'];
 
 export const convertMemberPositionsHistory: ConvertMemberPositionsHistory = ({
   memberName,
@@ -173,8 +173,8 @@ export const convertMemberPositionsHistory: ConvertMemberPositionsHistory = ({
 };
 
 type ConvertMemberPositionsCounter = (
-  positionsHistory: MemberResult["positionsHistory"]
-) => MemberResult["positionsCounter"];
+  positionsHistory: MemberResult['positionsHistory']
+) => MemberResult['positionsCounter'];
 
 export const convertMemberPositionsCounter: ConvertMemberPositionsCounter = positionsHistory => {
   let center = 0;

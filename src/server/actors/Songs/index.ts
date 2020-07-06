@@ -1,21 +1,18 @@
-import {
-  SinglesRawArray,
-  SinglesRawObject,
-} from "server/actors/Cds/Singles/models";
-import * as SongConverters from "server/actors/Songs/converters";
+import * as SongConverters from 'server/actors/Songs/converters';
 import {
   SongRaw,
   SongResult,
   SongsRawArray,
   SongsRawObject,
   SongsResultArray,
-} from "server/actors/Songs/models";
-import { SONGS } from "server/actors/Songs/constants/songTitle";
+} from 'server/actors/Songs/models';
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
+
+import { arrayToObject } from 'utils/arrays';
 import {
-  AlbumsRawArray,
-  AlbumsRawObject,
-} from "server/actors/Cds/Albums/models";
-import { arrayToObject } from "utils/arrays";
+  DiscographyRawArray,
+  DiscographyRawObject,
+} from 'server/actors/Discography/models';
 
 export class Songs {
   private rawDataArray: SongsRawArray;
@@ -24,7 +21,7 @@ export class Songs {
 
   public constructor(songsRawArray: SongsRawArray) {
     this.rawDataArray = songsRawArray;
-    this.rawDataObject = arrayToObject(songsRawArray, "title");
+    this.rawDataObject = arrayToObject(songsRawArray, 'title');
     this.resultData = [];
   }
 
@@ -40,17 +37,23 @@ export class Songs {
     return this.resultData;
   }
 
-  public convertSongs({
-    singlesRawArray,
-    albumsRawArray,
-    singlesRawObject,
-    albumsRawObject,
-  }: {
-    singlesRawArray: SinglesRawArray;
-    albumsRawArray: AlbumsRawArray;
-    singlesRawObject: SinglesRawObject;
-    albumsRawObject: AlbumsRawObject;
+  public convertSongs(params: {
+    singlesRawArray: DiscographyRawArray;
+    singlesRawObject: DiscographyRawObject;
+    albumsRawArray: DiscographyRawArray;
+    albumsRawObject: DiscographyRawObject;
+    otherCdsRawArray: DiscographyRawArray;
+    otherCdsRawObject: DiscographyRawObject;
   }): SongsResultArray {
+    const {
+      singlesRawArray,
+      albumsRawArray,
+      singlesRawObject,
+      albumsRawObject,
+      otherCdsRawArray,
+      otherCdsRawObject,
+    } = params;
+
     const songsResult = [];
 
     for (const songRaw of this.rawDataArray) {
@@ -61,6 +64,8 @@ export class Songs {
           albumsRawArray,
           singlesRawObject,
           albumsRawObject,
+          otherCdsRawArray,
+          otherCdsRawObject,
         })
       );
     }
@@ -69,27 +74,36 @@ export class Songs {
     return songsResult;
   }
 
-  private convertSong({
-    songRaw,
-    singlesRawArray,
-    albumsRawArray,
-    singlesRawObject,
-    albumsRawObject,
-  }: {
+  private convertSong(params: {
     songRaw: SongRaw;
-    singlesRawArray: SinglesRawArray;
-    albumsRawArray: AlbumsRawArray;
-    singlesRawObject: SinglesRawObject;
-    albumsRawObject: AlbumsRawObject;
+    singlesRawArray: DiscographyRawArray;
+    singlesRawObject: DiscographyRawObject;
+    albumsRawArray: DiscographyRawArray;
+    albumsRawObject: DiscographyRawObject;
+    otherCdsRawArray: DiscographyRawArray;
+    otherCdsRawObject: DiscographyRawObject;
   }): SongResult {
+    const {
+      songRaw,
+      singlesRawArray,
+      albumsRawArray,
+      singlesRawObject,
+      albumsRawObject,
+      otherCdsRawArray,
+      otherCdsRawObject,
+    } = params;
+
     const songSingleResult = SongConverters.convertSongSingle({
       songTitle: songRaw.title,
       singlesRawArray,
     });
-
     const songAlbumsResult = SongConverters.convertSongAlbums({
       songTitle: songRaw.title,
       albumsRawArray,
+    });
+    const songOtherCdsResult = SongConverters.convertSongOtherCds({
+      songTitle: songRaw.title,
+      otherCdsRawArray,
     });
 
     return {
@@ -97,12 +111,15 @@ export class Songs {
       key: SONGS[songRaw.title].key,
       single: songSingleResult,
       albums: songAlbumsResult,
+      otherCds: songOtherCdsResult,
       artwork: SongConverters.convertSongArtwork({
         songTitle: songRaw.title,
         songSingleResult,
         songAlbumsResult,
+        songOtherCdsResult,
         singlesRawObject,
         albumsRawObject,
+        otherCdsRawObject,
       }),
       musicVideo: songRaw.musicVideo,
       type: SongConverters.convertSongType(songRaw.type),

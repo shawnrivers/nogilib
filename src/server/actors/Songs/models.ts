@@ -1,7 +1,7 @@
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
-import { SongTitle } from "server/actors/Songs/constants/songTitle";
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { SongType } from 'server/actors/Songs/constants/songType';
+import { FukujinType } from 'server/actors/Cds/Singles/constants/fukujinType';
+import { SongTitle } from 'server/actors/Songs/constants/songTitle';
 
 export type SongRaw = {
   title: SongTitle;
@@ -16,7 +16,7 @@ export type SongRaw = {
   performers: {
     center: MemberNameKey[];
     fukujin: FukujinType | MemberNameKey[];
-    solo: MemberNameKey | "";
+    solo: MemberNameKey | '';
     unit: string;
   };
   formations: {
@@ -27,16 +27,16 @@ export type SongRaw = {
   };
 };
 
+type InCd = {
+  title: string;
+  number: string;
+};
+
 export type SongResult = SongRaw & {
   key: string;
-  single: {
-    title: string;
-    number: string;
-  };
-  albums: {
-    title: string;
-    number: string;
-  }[];
+  single: InCd;
+  albums: InCd[];
+  otherCds: InCd[];
   artwork: string;
   performersTag: {
     name: string;
