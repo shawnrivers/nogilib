@@ -24,10 +24,18 @@ type TypographyProps = React.HTMLAttributes<HTMLElement> & {
   variant: TypographyKey;
   element?: React.ElementType;
   color?: GlobalColorKey;
+  bold?: boolean;
 };
 
 export const Typography: React.FC<TypographyProps> = props => {
-  const { variant, element, color = 'gray8', children, ...restProps } = props;
+  const {
+    variant,
+    element,
+    color = 'gray8',
+    bold,
+    children,
+    ...restProps
+  } = props;
   const theme = useTheme();
   const Element = element ?? variantMapping[variant];
 
@@ -37,6 +45,7 @@ export const Typography: React.FC<TypographyProps> = props => {
         theme.typography[variant],
         css`
           color: ${theme.colors.global[color]};
+          font-weight: ${bold ? 700 : undefined};
         `,
       ]}
       {...restProps}

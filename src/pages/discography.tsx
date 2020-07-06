@@ -119,6 +119,7 @@ const FeatureCd: React.FC<{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-left: 32px;
       `}
     >
       <Typography
@@ -180,6 +181,35 @@ const ArtworkImage: React.FC<{
     `}
   />
 );
+
+const TextSideDivider = styled.div`
+  width: 128px;
+  border-top: 2px solid currentColor;
+  margin-top: 1.5ex;
+`;
+
+const TextDivider: React.FC<{ text: string | number }> = props => {
+  return (
+    <Typography
+      variant="h3"
+      css={css`
+        display: flex;
+        justify-content: center;
+        margin: 2ex 0;
+      `}
+    >
+      <TextSideDivider />
+      <div
+        css={css`
+          margin: 0 1em;
+        `}
+      >
+        {props.text}
+      </div>
+      <TextSideDivider />
+    </Typography>
+  );
+};
 
 type CdGroupByYear = {
   year: number;
@@ -266,14 +296,7 @@ const Discography: React.FC<QueryResult> = props => {
 
             return (
               <div key={cdGroup.year}>
-                <Typography
-                  variant="h3"
-                  css={css`
-                    text-align: center;
-                  `}
-                >
-                  {cdGroup.year}
-                </Typography>
+                <TextDivider text={cdGroup.year} />
                 <FeaturedCdContainer>
                   <FeatureCd
                     artwork={featuredCd.artworks[0]}
@@ -300,14 +323,7 @@ const Discography: React.FC<QueryResult> = props => {
 
           return (
             <div key={cdGroup.year}>
-              <Typography
-                variant="h3"
-                css={css`
-                  text-align: center;
-                `}
-              >
-                {cdGroup.year}
-              </Typography>
+              <TextDivider text={cdGroup.year} />
               <CdGroupContainer>
                 {cdGroup.cds.map(cd => (
                   <NormalCd
