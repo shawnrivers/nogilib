@@ -40,18 +40,38 @@ export const TYPOGRAPHY = {
     fontFamily: serifFontFamily,
   },
   body1: {
-    fontSize: '1rem',
+    fontSize: '1.25rem',
     fontWeight: 400,
     fontFamily: sansSerifFontFamily,
   },
   body2: {
-    fontSize: '0.875rem',
+    fontSize: '1rem',
     fontWeight: 400,
     fontFamily: sansSerifFontFamily,
   },
   body3: {
+    fontSize: '0.875rem',
+    fontWeight: 400,
+    fontFamily: sansSerifFontFamily,
+  },
+  body4: {
     fontSize: '0.75rem',
     fontWeight: 400,
+    fontFamily: sansSerifFontFamily,
+  },
+  em1: {
+    fontSize: '1.25rem',
+    fontWeight: 700,
+    fontFamily: sansSerifFontFamily,
+  },
+  em2: {
+    fontSize: '1rem',
+    fontWeight: 700,
+    fontFamily: sansSerifFontFamily,
+  },
+  em3: {
+    fontSize: '0.875rem',
+    fontWeight: 700,
     fontFamily: sansSerifFontFamily,
   },
   caption: {

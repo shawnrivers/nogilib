@@ -1,15 +1,16 @@
 /**@jsx jsx */
 import { css, jsx } from '@emotion/core';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import { useLocation } from '@reach/router';
 import * as queryString from 'query-string';
 import * as React from 'react';
 import styled from '@emotion/styled';
 import { Image } from 'client/components/atoms/Image';
 import { Typography } from 'client/components/atoms/Typography';
-import { toCdNumber } from 'utils/strings';
+import { toCdNumber, commaTextArray } from 'utils/strings';
 import { DiscographyResult } from 'server/actors/Discography/models';
 import { sortByDate } from 'utils/arrays';
+import { useTheme } from 'client/styles/tokens';
 
 export const query = graphql`
   query DiscographyQuery {
@@ -69,6 +70,7 @@ const Container = styled.div`
 const Navigation = styled.nav`
   grid-area: navigation;
   justify-self: end;
+  padding-top: 2ex;
 `;
 
 const Header = styled.header`
@@ -78,6 +80,7 @@ const Header = styled.header`
 const Settings = styled.div`
   grid-area: settings;
   justify-self: start;
+  padding-top: 2ex;
 `;
 
 const Main = styled.main`
@@ -119,19 +122,23 @@ const FeatureCd: React.FC<{
       alt={props.number}
       width={360}
       height={360}
+      css={css`
+        margin-right: 32px;
+      `}
     />
     <div
       css={css`
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 32px;
       `}
     >
       <Typography
         variant="h1"
         element="h4"
+        textColor={{ on: 'onBackground', variant: 'variant1' }}
         css={css`
+          text-transform: capitalize;
           line-height: 1;
           margin-bottom: 1.5ex;
         `}
@@ -139,13 +146,26 @@ const FeatureCd: React.FC<{
         {toCdNumber(props.number)} <br /> {props.type}
       </Typography>
       <div>
-        <Typography variant="h5">{props.title}</Typography>
+        <Typography variant="h4" element="p">
+          {props.title}
+        </Typography>
         {props.focusPerformers.name.length > 0 ? (
-          <Typography variant="body1">
-            {props.focusPerformers.type}: {props.focusPerformers.name}
+          <Typography
+            variant="body1"
+            css={css`
+              text-transform: capitalize;
+            `}
+          >
+            {props.focusPerformers.type}:{' '}
+            {commaTextArray(props.focusPerformers.name)}
           </Typography>
         ) : null}
-        <Typography variant="body1">発売日：{props.release}</Typography>
+        <Typography
+          variant="body1"
+          textColor={{ on: 'onBackground', variant: 'variant1' }}
+        >
+          発売日：{props.release}
+        </Typography>
       </div>
     </div>
   </div>
@@ -164,14 +184,38 @@ const NormalCd: React.FC<{
       alt={props.number}
       width={240}
       height={240}
+      css={css`
+        margin-bottom: 8px;
+      `}
     />
-    <Typography variant="h4">
+    <Typography
+      variant="h4"
+      textColor={{ on: 'onBackground', variant: 'variant1' }}
+      css={css`
+        text-transform: capitalize;
+        margin-bottom: 0.5ex;
+      `}
+    >
       {toCdNumber(props.number)} {props.type}
     </Typography>
-    <Typography variant="body1">{props.title}</Typography>
+    <Typography
+      variant="em1"
+      css={css`
+        margin-bottom: 0.5ex;
+      `}
+    >
+      {props.title}
+    </Typography>
     {props.type === 'single' && props.focusPerformers.name.length > 0 ? (
-      <Typography variant="body2">
-        {props.focusPerformers.type}: {props.focusPerformers.name}
+      <Typography
+        variant="body3"
+        textColor={{ on: 'onBackground', variant: 'variant1' }}
+        css={css`
+          text-transform: capitalize;
+        `}
+      >
+        {props.focusPerformers.type}:{' '}
+        {commaTextArray(props.focusPerformers.name)}
       </Typography>
     ) : null}
   </div>
@@ -182,36 +226,45 @@ const ArtworkImage: React.FC<{
   alt: string;
   width?: number;
   height?: number;
-}> = props => (
-  <Image
-    src={props.src}
-    alt={props.alt}
-    objectFit="cover"
-    objectPosition="top"
-    css={css`
-      width: ${props.width ?? 240}px;
-      height: ${props.height ?? 240}px;
-    `}
-  />
-);
+}> = props => {
+  const { src, alt, width, height, ...restProps } = props;
+
+  return (
+    <Image
+      src={src}
+      alt={alt}
+      objectFit="cover"
+      objectPosition="top"
+      css={css`
+        width: ${width ?? 240}px;
+        height: ${height ?? 240}px;
+      `}
+      {...restProps}
+    />
+  );
+};
 
 const TextSideDivider = styled.div`
   width: 128px;
-  border-top: 2px solid currentColor;
+  border-top: 2px solid ${props => props.color};
   margin-top: 1.5ex;
 `;
 
 const TextDivider: React.FC<{ text: string | number }> = props => {
+  const theme = useTheme();
+  const dividerLineColor = theme.colors.theme.onBackground.variant1;
+
   return (
     <Typography
       variant="h3"
+      textColor={{ on: 'onBackground', variant: 'standard' }}
       css={css`
         display: flex;
         justify-content: center;
         margin: 2ex 0;
       `}
     >
-      <TextSideDivider />
+      <TextSideDivider color={dividerLineColor} />
       <div
         css={css`
           margin: 0 1em;
@@ -219,7 +272,7 @@ const TextDivider: React.FC<{ text: string | number }> = props => {
       >
         {props.text}
       </div>
-      <TextSideDivider />
+      <TextSideDivider color={dividerLineColor} />
     </Typography>
   );
 };
@@ -263,6 +316,7 @@ const groupCdsByYear = (cds: QueryResultCds): CdGroupByYear[] => {
 };
 
 const Discography: React.FC<QueryResult> = props => {
+  const theme = useTheme();
   const discographyData = props.data.allDiscographyJson.nodes;
 
   const singlesData = React.useMemo(
@@ -324,20 +378,44 @@ const Discography: React.FC<QueryResult> = props => {
   return (
     <Container>
       <Navigation>
-        <ul>
-          <Typography variant="h6" element="li">
-            DISCOGRAPHY
-          </Typography>
-          <Typography variant="h6" element="li">
-            MEMBERS
-          </Typography>
-          <Typography variant="h6" element="li">
-            SEARCH
-          </Typography>
+        <ul
+          css={css`
+            & > *:not(:last-child) {
+              margin-bottom: 2ex;
+            }
+          `}
+        >
+          <li>
+            <Link to="/discography">
+              <Typography variant="h6" element="li">
+                DISCOGRAPHY
+              </Typography>
+            </Link>
+          </li>
+          <li>
+            <Link to="/members-list/first-gen">
+              <Typography variant="h6" element="li">
+                MEMBERS
+              </Typography>
+            </Link>
+          </li>
+          <li>
+            <Link to="/search">
+              <Typography variant="h6" element="li">
+                SEARCH
+              </Typography>
+            </Link>
+          </li>
         </ul>
       </Navigation>
       <Settings>
-        <Typography variant="h7" element="div">
+        <Typography
+          variant="h7"
+          element="div"
+          css={css`
+            margin-bottom: 2ex;
+          `}
+        >
           Light / Dark
         </Typography>
         <Typography variant="h7" element="div">
@@ -348,12 +426,48 @@ const Discography: React.FC<QueryResult> = props => {
         <Typography
           variant="h1"
           css={css`
-            overflow-wrap: break-word;
+            margin-bottom: 0.5ex;
           `}
         >
           DISCOGRAPHY
         </Typography>
-        <Typography variant="h2">Singles / Albums</Typography>
+        <Typography
+          variant="h2"
+          textColor={{ on: 'onBackground', variant: 'variant1' }}
+        >
+          <Link
+            to="/discography"
+            css={css`
+              color: ${filter !== 'singles' && filter !== 'albums'
+                ? theme.colors.theme.onBackground.standard
+                : theme.colors.theme.onBackground.variant1};
+            `}
+          >
+            All
+          </Link>{' '}
+          /{' '}
+          <Link
+            to="/discography?filter=singles"
+            css={css`
+              color: ${filter === 'singles'
+                ? theme.colors.theme.onBackground.standard
+                : theme.colors.theme.onBackground.variant1};
+            `}
+          >
+            Singles
+          </Link>{' '}
+          /{' '}
+          <Link
+            to="/discography?filter=albums"
+            css={css`
+              color: ${filter === 'albums'
+                ? theme.colors.theme.onBackground.standard
+                : theme.colors.theme.onBackground.variant1};
+            `}
+          >
+            Albums
+          </Link>
+        </Typography>
       </Header>
       <Main>
         {cdGroupsByYear.map((cdGroup, i) => {

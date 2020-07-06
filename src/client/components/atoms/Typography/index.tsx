@@ -1,9 +1,12 @@
 /**@jsx jsx */
-import { jsx, css } from '@emotion/core';
+import { css, jsx } from '@emotion/core';
 import * as React from 'react';
+import {
+  ThemeColorVariants,
+  useTheme,
+  ThemeColorsForeground,
+} from 'client/styles/tokens';
 import { TypographyKey } from 'client/styles/typography';
-import { GlobalColorKey } from 'client/styles/colors';
-import { useTheme } from 'client/styles/tokens';
 
 const variantMapping: Record<TypographyKey, React.ElementType> = {
   h1: 'h1',
@@ -16,6 +19,10 @@ const variantMapping: Record<TypographyKey, React.ElementType> = {
   body1: 'p',
   body2: 'p',
   body3: 'p',
+  body4: 'p',
+  em1: 'p',
+  em2: 'p',
+  em3: 'p',
   caption: 'p',
   button: 'span',
 };
@@ -23,15 +30,21 @@ const variantMapping: Record<TypographyKey, React.ElementType> = {
 type TypographyProps = React.HTMLAttributes<HTMLElement> & {
   variant: TypographyKey;
   element?: React.ElementType;
-  color?: GlobalColorKey;
   bold?: boolean;
+  textColor?: {
+    on: keyof ThemeColorsForeground;
+    variant: keyof ThemeColorVariants;
+  };
 };
 
 export const Typography: React.FC<TypographyProps> = props => {
   const {
     variant,
     element,
-    color = 'gray8',
+    textColor = {
+      on: 'onBackground',
+      variant: 'standard',
+    },
     bold,
     children,
     ...restProps
@@ -44,7 +57,7 @@ export const Typography: React.FC<TypographyProps> = props => {
       css={[
         theme.typography[variant],
         css`
-          color: ${theme.colors.global[color]};
+          color: ${theme.colors.theme[textColor.on][textColor.variant]};
           font-weight: ${bold ? 700 : undefined};
         `,
       ]}
