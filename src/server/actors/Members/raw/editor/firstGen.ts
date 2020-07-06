@@ -137,6 +137,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: "https://twitter.com/syr_1214",
       },
       {
+        title: SocialMedia.YouTube,
+        url: "https://www.youtube.com/channel/UCmVJtdqSRFSsJb5hjHL4QKg",
+      },
+      {
         title: SocialMedia.Profile,
         url: "http://www.siscompany.com/02manage/49inoue/",
       },
@@ -208,16 +212,20 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Nagasaki,
     sites: [
       {
-        title: SocialMedia.Official,
-        url: "https://kawagopro.com/",
-      },
-      {
         title: SocialMedia.Instagram,
         url: "https://www.instagram.com/kawagohina3/",
       },
       {
         title: SocialMedia.Twitter,
         url: "https://twitter.com/kawagohina3",
+      },
+      {
+        title: SocialMedia.YouTube,
+        url: "https://www.youtube.com/channel/UCygUvA0j15FpHp6kv2IuQYA",
+      },
+      {
+        title: SocialMedia.Official,
+        url: "https://kawagopro.com/",
       },
     ],
     graduatedDate: "2018-12-20",
@@ -879,6 +887,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: SocialMedia.Twitter,
         url: "https://twitter.com/seira_hatanaka",
+      },
+      {
+        title: SocialMedia.YouTube,
+        url: "https://www.youtube.com/channel/UCC4iZzCZMJBVxghrzwvMp8w",
       },
     ],
     graduatedDate: "2015-04-04",
