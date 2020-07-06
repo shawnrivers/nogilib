@@ -1,7 +1,7 @@
 const serifFontFamily =
   'Playfair Display, Times, Times New Roman, Georgia, serif';
 
-const sansSerifFontFamily = 'Verdana, Arial, Helvetica, sans-serif';
+const sansSerifFontFamily = 'Helvetica, Verdana, Arial, sans-serif';
 
 export const TYPOGRAPHY = {
   h1: {
