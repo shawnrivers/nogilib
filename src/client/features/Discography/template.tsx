@@ -50,6 +50,9 @@ export type CdGroupByYear = {
 export type DiscographyType = {
   currentGroup: 'singles' | 'albums' | 'all';
   cdGroupsByYear: CdGroupByYear[];
+  onClickLightTheme(): void;
+  onClickDarkTheme(): void;
+  onClickAutoTheme(): void;
 };
 
 export const Discography: React.FC<DiscographyType> = props => {
@@ -57,7 +60,11 @@ export const Discography: React.FC<DiscographyType> = props => {
   const theme = useTheme();
 
   return (
-    <Container>
+    <Container
+      css={css`
+        background-color: ${theme.colors.theme.background.standard};
+      `}
+    >
       <Navigation>
         <ul
           css={css`
@@ -97,7 +104,9 @@ export const Discography: React.FC<DiscographyType> = props => {
             margin-bottom: 2ex;
           `}
         >
-          Light / Dark
+          <button onClick={props.onClickLightTheme}>Light</button> /{' '}
+          <button onClick={props.onClickDarkTheme}>Dark</button> /{' '}
+          <button onClick={props.onClickAutoTheme}>Auto</button>
         </Typography>
         <Typography variant="h7" element="div">
           EN / 日 / 中

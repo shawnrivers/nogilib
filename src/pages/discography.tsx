@@ -10,6 +10,7 @@ import {
   DiscographyType,
 } from 'client/features/Discography/template';
 import { FocusPerformers } from 'server/actors/Discography/types';
+import { LOCAL_STORAGE_THEME_KEY } from 'client/utils/constants';
 
 export const query = graphql`
   query DiscographyQuery {
@@ -86,8 +87,26 @@ const DiscographyContainer: React.FC<QueryResult> = props => {
       ? albumGroupsByYear
       : allCdGroupsByYear;
 
+  const handleSwitchToLightTheme = React.useCallback(() => {
+    localStorage.setItem(LOCAL_STORAGE_THEME_KEY, 'light');
+  }, []);
+
+  const handleSwitchToDarkTheme = React.useCallback(() => {
+    localStorage.setItem(LOCAL_STORAGE_THEME_KEY, 'dark');
+  }, []);
+
+  const handleSwitchToAutoTheme = React.useCallback(() => {
+    localStorage.setItem(LOCAL_STORAGE_THEME_KEY, 'auto');
+  }, []);
+
   return (
-    <Discography currentGroup={currentGroup} cdGroupsByYear={cdGroupsByYear} />
+    <Discography
+      currentGroup={currentGroup}
+      cdGroupsByYear={cdGroupsByYear}
+      onClickLightTheme={handleSwitchToLightTheme}
+      onClickDarkTheme={handleSwitchToDarkTheme}
+      onClickAutoTheme={handleSwitchToAutoTheme}
+    />
   );
 };
 
