@@ -5,7 +5,7 @@ import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import {
   CdTitle,
   CdType,
-  FocusPerformersType,
+  FocusPerformers,
 } from 'server/actors/Discography/types';
 
 export type CdSongRaw = {
@@ -17,10 +17,7 @@ export type CdSongRaw = {
 export type CdSongResult = CdSongRaw & {
   key: string;
   type: SongType;
-  focusPerformers: {
-    type: FocusPerformersType;
-    name: string[];
-  };
+  focusPerformers: FocusPerformers;
 };
 
 // TODO: Rename to CdRaw
