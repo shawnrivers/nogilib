@@ -6,4 +6,5 @@ export enum SocialMedia {
   Profile = "Profile",
   Official = "Official",
   Nanagogo = "755",
+  YouTube = "YouTube",
 }
