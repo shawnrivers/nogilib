@@ -6,39 +6,39 @@ const locales = require(`./src/client/i18n/locales`);
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
 
-  if (node.internal.type === "AlbumsJson") {
-    const slug = createFilePath({ node, getNode, basePath: "pages" });
+  if (node.internal.type === 'AlbumsJson') {
+    const slug = createFilePath({ node, getNode, basePath: 'pages' });
     createNodeField({
       node,
-      name: "slug",
-      value: slug + node.number + "/",
+      name: 'slug',
+      value: slug + node.number + '/',
     });
   }
 
-  if (node.internal.type === "SinglesJson") {
-    const slug = createFilePath({ node, getNode, basePath: "pages" });
+  if (node.internal.type === 'SinglesJson') {
+    const slug = createFilePath({ node, getNode, basePath: 'pages' });
     createNodeField({
       node,
-      name: "slug",
-      value: slug + node.number + "/",
+      name: 'slug',
+      value: slug + node.number + '/',
     });
   }
 
-  if (node.internal.type === "SongsJson") {
-    const slug = createFilePath({ node, getNode, basePath: "pages" });
+  if (node.internal.type === 'SongsJson') {
+    const slug = createFilePath({ node, getNode, basePath: 'pages' });
     createNodeField({
       node,
-      name: "slug",
-      value: slug + node.key + "/",
+      name: 'slug',
+      value: slug + node.key + '/',
     });
   }
 
-  if (node.internal.type === "MembersJson") {
-    const slug = createFilePath({ node, getNode, basePath: "pages" });
+  if (node.internal.type === 'MembersJson') {
+    const slug = createFilePath({ node, getNode, basePath: 'pages' });
     createNodeField({
       node,
-      name: "slug",
-      value: slug + node.name + "/",
+      name: 'slug',
+      value: slug + node.name + '/',
     });
   }
 };
@@ -119,18 +119,18 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const cdsPages = [
     {
-      slug: "/cds/singles/",
-      type: "singles",
+      slug: '/cds/singles/',
+      type: 'singles',
     },
     {
-      slug: "/cds/albums/",
-      type: "albums",
+      slug: '/cds/albums/',
+      type: 'albums',
     },
   ];
 
-  for (const cd of cdsPages) {
+  for (const cdsPage of cdsPages) {
     for (const lang of localesKeys) {
-      const { slug, type } = cd;
+      const { slug, type } = cdsPage;
 
       const localizedPath = locales[lang].default
         ? slug
@@ -138,7 +138,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: localizedPath,
-        component: path.resolve("./src/client/features/Cds/container.tsx"),
+        component: path.resolve('./src/client/features/Cds/container.tsx'),
         context: {
           currentTab: type,
           locale: lang,
@@ -149,30 +149,30 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const membersPages = [
     {
-      slug: "/members-list/first-gen/",
-      type: "first-gen",
+      slug: '/members-list/first-gen/',
+      type: 'first-gen',
     },
     {
-      slug: "/members-list/second-gen/",
-      type: "second-gen",
+      slug: '/members-list/second-gen/',
+      type: 'second-gen',
     },
     {
-      slug: "/members-list/third-gen/",
-      type: "third-gen",
+      slug: '/members-list/third-gen/',
+      type: 'third-gen',
     },
     {
-      slug: "/members-list/fourth-gen/",
-      type: "fourth-gen",
+      slug: '/members-list/fourth-gen/',
+      type: 'fourth-gen',
     },
     {
-      slug: "/members-list/graduated/",
-      type: "graduated",
+      slug: '/members-list/graduated/',
+      type: 'graduated',
     },
   ];
 
-  for (const member of membersPages) {
+  for (const generationPage of membersPages) {
     for (const lang of localesKeys) {
-      const { slug, type } = member;
+      const { slug, type } = generationPage;
 
       const localizedPath = locales[lang].default
         ? slug
@@ -180,7 +180,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: localizedPath,
-        component: path.resolve("./src/client/features/Members/container.tsx"),
+        component: path.resolve('./src/client/features/Members/container.tsx'),
         context: {
           currentTab: type,
           locale: lang,
@@ -190,7 +190,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   albumsResult.data.allAlbumsJson.edges.forEach(({ node }) => {
-    const cdType = node.fields.slug.split("/")[1];
+    const cdType = node.fields.slug.split('/')[1];
     const number = node.number;
 
     for (const lang of localesKeys) {
@@ -201,7 +201,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       createPage({
         path: localizedPath,
         component: path.resolve(
-          "./src/client/features/Cd/containers/Album/container.tsx"
+          './src/client/features/Cd/containers/Album/container.tsx'
         ),
         context: {
           number,
@@ -213,7 +213,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   });
 
   singlesResult.data.allSinglesJson.edges.forEach(({ node }) => {
-    const cdType = node.fields.slug.split("/")[1];
+    const cdType = node.fields.slug.split('/')[1];
     const number = node.number;
 
     for (const lang of localesKeys) {
@@ -224,7 +224,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       createPage({
         path: localizedPath,
         component: path.resolve(
-          "./src/client/features/Cd/containers/Single/container.tsx"
+          './src/client/features/Cd/containers/Single/container.tsx'
         ),
         context: {
           number,
@@ -243,7 +243,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: localizedPath,
-        component: path.resolve("./src/client/features/Song/container.tsx"),
+        component: path.resolve('./src/client/features/Song/container.tsx'),
         context: {
           key: node.key,
           locale: lang,
@@ -260,7 +260,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: localizedPath,
-        component: path.resolve("./src/client/features/Member/container.tsx"),
+        component: path.resolve('./src/client/features/Member/container.tsx'),
         context: {
           name: node.name,
           locale: lang,

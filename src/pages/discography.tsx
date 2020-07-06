@@ -1,6 +1,8 @@
 /**@jsx jsx */
 import { css, jsx } from '@emotion/core';
 import { graphql } from 'gatsby';
+import { useLocation } from '@reach/router';
+import * as queryString from 'query-string';
 import * as React from 'react';
 import styled from '@emotion/styled';
 import { Image } from 'client/components/atoms/Image';
@@ -11,6 +13,20 @@ import { toCdNumber } from 'utils/strings';
 export const query = graphql`
   query SinglesQuery {
     allSinglesJson {
+      nodes {
+        title
+        number
+        artworks
+        release
+        songs {
+          focusPerformers {
+            name
+            type
+          }
+        }
+      }
+    }
+    allAlbumsJson {
       nodes {
         title
         number
@@ -42,6 +58,9 @@ type QueryResultCds = {
 type QueryResult = {
   data: {
     allSinglesJson: {
+      nodes: QueryResultCds;
+    };
+    allAlbumsJson: {
       nodes: QueryResultCds;
     };
   };
@@ -247,13 +266,37 @@ const groupCdsByYear = (cds: QueryResultCds): CdGroupByYear[] => {
 };
 
 const Discography: React.FC<QueryResult> = props => {
-  const {
-    data: {
-      allSinglesJson: { nodes },
-    },
-  } = props;
+  const singlesData = props.data.allSinglesJson.nodes;
+  const albumsData = props.data.allAlbumsJson.nodes;
+  const allCdGroupsByYear = React.useMemo(
+    () => groupCdsByYear([...singlesData, ...albumsData]),
+    [singlesData, albumsData]
+  );
+  const singleGroupsByYear = React.useMemo(() => groupCdsByYear(singlesData), [
+    singlesData,
+  ]);
+  const albumGroupsByYear = React.useMemo(() => groupCdsByYear(albumsData), [
+    albumsData,
+  ]);
 
-  const cdGroupsByYear = groupCdsByYear(nodes);
+  const location = useLocation();
+  const { filter } = queryString.parse(location.search);
+
+  const cdGroupsByYear = React.useMemo(() => {
+    if (filter === 'singles') {
+      return singleGroupsByYear;
+    }
+
+    if (filter === 'albums') {
+      return albumGroupsByYear;
+    }
+
+    if (filter === 'all') {
+      return allCdGroupsByYear;
+    }
+
+    return allCdGroupsByYear;
+  }, [filter, allCdGroupsByYear, singleGroupsByYear, albumGroupsByYear]);
 
   return (
     <Container>
