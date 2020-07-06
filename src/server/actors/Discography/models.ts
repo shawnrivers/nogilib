@@ -3,6 +3,7 @@ import { SongTitle } from 'server/actors/Songs/constants/songTitle';
 import { FocusPerformersType } from 'server/actors/Cds/constants/focusPerformers';
 import { CdType } from 'server/actors/Cds/constants/cdType';
 import { SongType } from 'server/actors/Songs/constants/songType';
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 
 export type CdSongRaw = {
   number: number;
@@ -18,19 +19,39 @@ export type CdSongResult = CdSongRaw & {
   };
 };
 
-export type CdRaw = {
+// TODO: Rename to CdRaw
+export type DiscographyRaw = {
   title: string;
+  type: 'single' | 'album' | 'other';
   number: string;
   release: string;
   hasArtworks: boolean;
   artworkTypes: CdType[];
   shopping: Site[];
   songs: CdSongRaw[];
+  underMembers: MemberNameKey[];
+  behindPerformers: {
+    trainees: MemberNameKey[];
+    skips: MemberNameKey[];
+  };
+  previousSingleNumber: string;
 };
-export type CdResult = Pick<
-  CdRaw,
-  'title' | 'number' | 'release' | 'shopping'
+
+// TODO: Rename to CdResult
+export type DiscographyResult = Pick<
+  DiscographyRaw,
+  | 'title'
+  | 'type'
+  | 'number'
+  | 'release'
+  | 'shopping'
+  | 'underMembers'
+  | 'behindPerformers'
+  | 'previousSingleNumber'
 > & {
   artworks: string[];
   songs: CdSongResult[];
 };
+export type DiscographyRawArray = DiscographyRaw[];
+export type DiscographyRawObject = Record<string, DiscographyRaw>;
+export type DiscographyResultArray = DiscographyResult[];
