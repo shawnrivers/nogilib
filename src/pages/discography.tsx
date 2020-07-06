@@ -7,28 +7,16 @@ import * as React from 'react';
 import styled from '@emotion/styled';
 import { Image } from 'client/components/atoms/Image';
 import { Typography } from 'client/components/atoms/Typography';
-import { CdResult } from 'server/actors/Cds/models';
 import { toCdNumber } from 'utils/strings';
+import { DiscographyResult } from 'server/actors/Discography/models';
+import { sortByDate } from 'utils/arrays';
 
 export const query = graphql`
-  query SinglesQuery {
-    allSinglesJson {
+  query DiscographyQuery {
+    allDiscographyJson {
       nodes {
         title
-        number
-        artworks
-        release
-        songs {
-          focusPerformers {
-            name
-            type
-          }
-        }
-      }
-    }
-    allAlbumsJson {
-      nodes {
-        title
+        type
         number
         artworks
         release
@@ -43,13 +31,14 @@ export const query = graphql`
   }
 `;
 
-type FocusPerformers = CdResult['songs'][0]['focusPerformers'];
+type FocusPerformers = DiscographyResult['songs'][0]['focusPerformers'];
 
 type QueryResultCds = {
-  title: CdResult['title'];
-  number: CdResult['number'];
-  artworks: CdResult['artworks'];
-  release: CdResult['release'];
+  title: DiscographyResult['title'];
+  type: DiscographyResult['type'];
+  number: DiscographyResult['number'];
+  artworks: DiscographyResult['artworks'];
+  release: DiscographyResult['release'];
   songs: {
     focusPerformers: FocusPerformers;
   }[];
@@ -57,10 +46,7 @@ type QueryResultCds = {
 
 type QueryResult = {
   data: {
-    allSinglesJson: {
-      nodes: QueryResultCds;
-    };
-    allAlbumsJson: {
+    allDiscographyJson: {
       nodes: QueryResultCds;
     };
   };
@@ -117,8 +103,9 @@ const FeaturedCdContainer = styled.div`
 
 const FeatureCd: React.FC<{
   artwork: string;
-  number: string;
   title: string;
+  number: string;
+  type: string;
   focusPerformers: FocusPerformers;
   release: string;
 }> = props => (
@@ -149,13 +136,15 @@ const FeatureCd: React.FC<{
           margin-bottom: 1.5ex;
         `}
       >
-        {toCdNumber(props.number)} <br /> Single
+        {toCdNumber(props.number)} <br /> {props.type}
       </Typography>
       <div>
         <Typography variant="h5">{props.title}</Typography>
-        <Typography variant="body1">
-          {props.focusPerformers.type}: {props.focusPerformers.name}
-        </Typography>
+        {props.focusPerformers.name.length > 0 ? (
+          <Typography variant="body1">
+            {props.focusPerformers.type}: {props.focusPerformers.name}
+          </Typography>
+        ) : null}
         <Typography variant="body1">発売日：{props.release}</Typography>
       </div>
     </div>
@@ -164,8 +153,9 @@ const FeatureCd: React.FC<{
 
 const NormalCd: React.FC<{
   artwork: string;
-  number: string;
   title: string;
+  number: string;
+  type: string;
   focusPerformers: FocusPerformers;
 }> = props => (
   <div>
@@ -175,11 +165,15 @@ const NormalCd: React.FC<{
       width={240}
       height={240}
     />
-    <Typography variant="h4">{toCdNumber(props.number)}</Typography>
-    <Typography variant="body1">{props.title}</Typography>
-    <Typography variant="body2">
-      {props.focusPerformers.type}: {props.focusPerformers.name}
+    <Typography variant="h4">
+      {toCdNumber(props.number)} {props.type}
     </Typography>
+    <Typography variant="body1">{props.title}</Typography>
+    {props.focusPerformers.name.length > 0 ? (
+      <Typography variant="body2">
+        {props.focusPerformers.type}: {props.focusPerformers.name}
+      </Typography>
+    ) : null}
   </div>
 );
 
@@ -262,15 +256,29 @@ const groupCdsByYear = (cds: QueryResultCds): CdGroupByYear[] => {
     }
   }
 
-  return cdGroupsByYear;
+  return cdGroupsByYear.map(cdGroup => ({
+    ...cdGroup,
+    cds: sortByDate(cdGroup.cds, 'release', 'desc'),
+  }));
 };
 
 const Discography: React.FC<QueryResult> = props => {
-  const singlesData = props.data.allSinglesJson.nodes;
-  const albumsData = props.data.allAlbumsJson.nodes;
+  const singlesData = React.useMemo(
+    () =>
+      props.data.allDiscographyJson.nodes.filter(cd => cd.type === 'single'),
+    [props.data]
+  );
+  const albumsData = React.useMemo(
+    () => props.data.allDiscographyJson.nodes.filter(cd => cd.type === 'album'),
+    [props.data]
+  );
+  const otherCdsData = React.useMemo(
+    () => props.data.allDiscographyJson.nodes.filter(cd => cd.type === 'other'),
+    [props.data]
+  );
   const allCdGroupsByYear = React.useMemo(
-    () => groupCdsByYear([...singlesData, ...albumsData]),
-    [singlesData, albumsData]
+    () => groupCdsByYear([...singlesData, ...albumsData, ...otherCdsData]),
+    [singlesData, albumsData, otherCdsData]
   );
   const singleGroupsByYear = React.useMemo(() => groupCdsByYear(singlesData), [
     singlesData,
@@ -278,6 +286,10 @@ const Discography: React.FC<QueryResult> = props => {
   const albumGroupsByYear = React.useMemo(() => groupCdsByYear(albumsData), [
     albumsData,
   ]);
+  const otherCdGroupsByYear = React.useMemo(
+    () => groupCdsByYear(otherCdsData),
+    [otherCdsData]
+  );
 
   const location = useLocation();
   const { filter } = queryString.parse(location.search);
@@ -291,12 +303,22 @@ const Discography: React.FC<QueryResult> = props => {
       return albumGroupsByYear;
     }
 
+    if (filter === 'others') {
+      return otherCdGroupsByYear;
+    }
+
     if (filter === 'all') {
       return allCdGroupsByYear;
     }
 
     return allCdGroupsByYear;
-  }, [filter, allCdGroupsByYear, singleGroupsByYear, albumGroupsByYear]);
+  }, [
+    filter,
+    allCdGroupsByYear,
+    singleGroupsByYear,
+    albumGroupsByYear,
+    otherCdGroupsByYear,
+  ]);
 
   return (
     <Container>
@@ -340,22 +362,24 @@ const Discography: React.FC<QueryResult> = props => {
             return (
               <div key={cdGroup.year}>
                 <TextDivider text={cdGroup.year} />
-                <FeaturedCdContainer>
-                  <FeatureCd
-                    artwork={featuredCd.artworks[0]}
-                    number={featuredCd.number}
-                    title={featuredCd.title}
-                    focusPerformers={featuredCd.songs[0].focusPerformers}
-                    release={featuredCd.release}
-                  />
-                </FeaturedCdContainer>
                 <CdGroupContainer>
+                  <FeaturedCdContainer>
+                    <FeatureCd
+                      artwork={featuredCd.artworks[0]}
+                      title={featuredCd.title}
+                      number={featuredCd.number}
+                      type={featuredCd.type}
+                      focusPerformers={featuredCd.songs[0].focusPerformers}
+                      release={featuredCd.release}
+                    />
+                  </FeaturedCdContainer>
                   {restCds.map(cd => (
                     <NormalCd
                       key={cd.number}
                       artwork={cd.artworks[0]}
-                      number={cd.number}
                       title={cd.title}
+                      number={cd.number}
+                      type={cd.type}
                       focusPerformers={cd.songs[0].focusPerformers}
                     />
                   ))}
@@ -373,6 +397,7 @@ const Discography: React.FC<QueryResult> = props => {
                     key={cd.number}
                     artwork={cd.artworks[0]}
                     number={cd.number}
+                    type={cd.type}
                     title={cd.title}
                     focusPerformers={cd.songs[0].focusPerformers}
                   />
