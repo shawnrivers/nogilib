@@ -18,6 +18,8 @@ import {
   LOCAL_STORAGE_THEME_KEY,
 } from 'client/utils/constants';
 import { ThemeKey, themes } from 'client/styles/tokens';
+import { useDarkModeMediaQuery } from 'client/hooks/useDarkModeMediaQuery';
+import { ThemeMode } from 'client/types/themeMode';
 
 const messages = { en, ja, zh };
 
@@ -51,40 +53,21 @@ const AppLayout = ({
   location,
   pageContext,
 }: RouteComponentProps<AppLayoutProps>) => {
-  const themeMode = localStorage.getItem(LOCAL_STORAGE_THEME_KEY);
+  const themeMode = localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as ThemeMode;
   const defaultThemeKey = themeMode === 'light' ? 'light' : 'dark';
   const [themeKey, setThemeKey] = React.useState<ThemeKey>(defaultThemeKey);
   const theme = React.useMemo(() => themes[themeKey], [themeKey]);
 
   // TODO: Use useContext and useReducer to handle re-render after changing the theme key.
-  React.useLayoutEffect(() => {
-    function handleDarkModeQueryChange(event: MediaQueryListEvent) {
-      setThemeKey(event.matches ? 'dark' : 'light');
-    }
-    const darkModeMediaQuery = window.matchMedia(
-      '(prefers-color-scheme: dark)'
-    );
-
-    if (themeMode === null || themeMode === 'auto') {
-      if (darkModeMediaQuery.media === 'not all') {
-        setThemeKey(defaultThemeKey);
-      } else {
-        if (darkModeMediaQuery.matches) {
-          setThemeKey('dark');
-        } else {
-          setThemeKey('light');
-        }
-      }
-
-      if (themeMode === 'auto') {
-        darkModeMediaQuery.addListener(handleDarkModeQueryChange);
-      }
-    }
-
-    return () => {
-      darkModeMediaQuery.removeListener(handleDarkModeQueryChange);
-    };
-  }, [defaultThemeKey, themeMode]);
+  useDarkModeMediaQuery({
+    themeMode,
+    onDarkMode: () => {
+      setThemeKey('dark');
+    },
+    onLightMode: () => {
+      setThemeKey('dark');
+    },
+  });
 
   const pathName = React.useMemo(() => {
     if (location) {
