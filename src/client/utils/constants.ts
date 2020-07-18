@@ -37,4 +37,4 @@ export const GLOW_STICK_COLORS = {
   'yellow green': '#d2ff87',
 };
 
-export const LOCAL_STORAGE_THEME_KEY = 'themeKey';
+export const LOCAL_STORAGE_THEME_MODE_KEY = 'themeMode';

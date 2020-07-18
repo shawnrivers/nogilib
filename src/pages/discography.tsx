@@ -10,7 +10,7 @@ import {
   DiscographyType,
 } from 'client/features/Discography/template';
 import { FocusPerformers } from 'server/actors/Discography/types';
-import { LOCAL_STORAGE_THEME_KEY } from 'client/utils/constants';
+import { Context } from 'client/store/app/context';
 
 export const query = graphql`
   query DiscographyQuery {
@@ -87,25 +87,25 @@ const DiscographyContainer: React.FC<QueryResult> = props => {
       ? albumGroupsByYear
       : allCdGroupsByYear;
 
-  const handleSwitchToLightTheme = React.useCallback(() => {
-    localStorage.setItem(LOCAL_STORAGE_THEME_KEY, 'light');
-  }, []);
+  const { setTheme } = React.useContext(Context);
 
-  const handleSwitchToDarkTheme = React.useCallback(() => {
-    localStorage.setItem(LOCAL_STORAGE_THEME_KEY, 'dark');
-  }, []);
-
-  const handleSwitchToAutoTheme = React.useCallback(() => {
-    localStorage.setItem(LOCAL_STORAGE_THEME_KEY, 'auto');
-  }, []);
+  const handleClickLightTheme = React.useCallback(() => {
+    setTheme('light');
+  }, [setTheme]);
+  const handleClickDarkTheme = React.useCallback(() => {
+    setTheme('dark');
+  }, [setTheme]);
+  const handleClickAutoTheme = React.useCallback(() => {
+    setTheme('auto');
+  }, [setTheme]);
 
   return (
     <Discography
       currentGroup={currentGroup}
       cdGroupsByYear={cdGroupsByYear}
-      onClickLightTheme={handleSwitchToLightTheme}
-      onClickDarkTheme={handleSwitchToDarkTheme}
-      onClickAutoTheme={handleSwitchToAutoTheme}
+      onClickLightTheme={handleClickLightTheme}
+      onClickDarkTheme={handleClickDarkTheme}
+      onClickAutoTheme={handleClickAutoTheme}
     />
   );
 };

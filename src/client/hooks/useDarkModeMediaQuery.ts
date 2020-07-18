@@ -1,44 +1,36 @@
 import * as React from 'react';
-import { ThemeMode } from 'client/types/themeMode';
+import { Context } from 'client/store/app/context';
 
-type UseDarkModeMediaQueryParams = {
-  themeMode: ThemeMode;
-  onDarkMode(): void;
-  onLightMode(): void;
-};
+export const useDarkModeMediaQuery = () => {
+  const { themeMode, setThemeKey } = React.useContext(Context);
 
-export const useDarkModeMediaQuery = (params: UseDarkModeMediaQueryParams) => {
   React.useEffect(() => {
-    const { themeMode, onLightMode, onDarkMode } = params;
-
     const darkModeMediaQuery = window.matchMedia(
       '(prefers-color-scheme: dark)'
     );
-    function handleDarkModeQueryChange(event: MediaQueryListEvent) {
-      if (event.matches) {
-        onDarkMode();
-      } else {
-        onLightMode();
-      }
-    }
 
-    if (themeMode === null || themeMode === 'auto') {
+    // Change theme when system settings have been changed
+    const handleDarkModeQueryChange = (event: MediaQueryListEvent) => {
+      if (event.matches) {
+        setThemeKey('dark');
+      } else {
+        setThemeKey('light');
+      }
+    };
+
+    // Auto change theme based on system settings
+    if (themeMode === 'auto') {
       if (darkModeMediaQuery.media === 'not all') {
-        onLightMode();
+        setThemeKey('light');
       } else {
         if (darkModeMediaQuery.matches) {
-          onDarkMode();
+          setThemeKey('dark');
         } else {
-          onLightMode();
+          setThemeKey('light');
         }
       }
 
-      if (themeMode === 'auto') {
-        darkModeMediaQuery.addEventListener(
-          'change',
-          handleDarkModeQueryChange
-        );
-      }
+      darkModeMediaQuery.addEventListener('change', handleDarkModeQueryChange);
     }
 
     return () => {
@@ -47,5 +39,5 @@ export const useDarkModeMediaQuery = (params: UseDarkModeMediaQueryParams) => {
         handleDarkModeQueryChange
       );
     };
-  }, [params]);
+  }, [themeMode, setThemeKey]);
 };
