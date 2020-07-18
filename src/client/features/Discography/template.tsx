@@ -17,6 +17,7 @@ import {
   Main,
 } from 'client/components/templates/Page';
 import { FocusPerformers } from 'server/actors/Discography/types';
+import { Context } from 'client/store/app/context';
 
 const CdGroupContainer = styled.div`
   display: grid;
@@ -31,6 +32,69 @@ const CdGroupContainer = styled.div`
 const FeaturedCdContainer = styled.div`
   grid-area: featured;
 `;
+
+const LanguageControllers: React.FC<
+  React.HTMLAttributes<HTMLDivElement> & {
+    onClickLightTheme(): void;
+    onClickDarkTheme(): void;
+    onClickAutoTheme(): void;
+  }
+> = props => {
+  const {
+    onClickLightTheme,
+    onClickDarkTheme,
+    onClickAutoTheme,
+    ...restProps
+  } = props;
+
+  const { themeMode } = React.useContext(Context);
+
+  return (
+    <div {...restProps}>
+      <Typography
+        variant="h7"
+        element="button"
+        textColor={{
+          on: 'onBackground',
+          variant: themeMode === 'light' ? 'standard' : 'variant1',
+        }}
+        onClick={onClickLightTheme}
+      >
+        Light
+      </Typography>
+      <Typography variant="h7" element="span">
+        {' '}
+        /{' '}
+      </Typography>
+      <Typography
+        variant="h7"
+        element="button"
+        textColor={{
+          on: 'onBackground',
+          variant: themeMode === 'dark' ? 'standard' : 'variant1',
+        }}
+        onClick={onClickDarkTheme}
+      >
+        Dark
+      </Typography>
+      <Typography variant="h7" element="span">
+        {' '}
+        /{' '}
+      </Typography>
+      <Typography
+        variant="h7"
+        element="button"
+        textColor={{
+          on: 'onBackground',
+          variant: themeMode === 'auto' ? 'standard' : 'variant1',
+        }}
+        onClick={onClickAutoTheme}
+      >
+        Auto
+      </Typography>
+    </div>
+  );
+};
 
 export type CdGroupByYear = {
   year: number;
@@ -97,17 +161,14 @@ export const Discography: React.FC<DiscographyType> = props => {
         </ul>
       </Navigation>
       <Settings>
-        <Typography
-          variant="h7"
-          element="div"
+        <LanguageControllers
+          onClickLightTheme={props.onClickLightTheme}
+          onClickDarkTheme={props.onClickDarkTheme}
+          onClickAutoTheme={props.onClickAutoTheme}
           css={css`
             margin-bottom: 2ex;
           `}
-        >
-          <button onClick={props.onClickLightTheme}>Light</button> /{' '}
-          <button onClick={props.onClickDarkTheme}>Dark</button> /{' '}
-          <button onClick={props.onClickAutoTheme}>Auto</button>
-        </Typography>
+        />
         <Typography variant="h7" element="div">
           EN / 日 / 中
         </Typography>
