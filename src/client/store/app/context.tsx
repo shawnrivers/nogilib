@@ -1,8 +1,11 @@
 import * as React from 'react';
-import { ActionType, initialState, reducer } from 'client/store/app/reducer';
+import { ActionType, getInitialState, reducer } from 'client/store/app/reducer';
 import { ThemeMode } from 'client/types/themeMode';
 import { ThemeKey } from 'client/styles/colors';
 import { LOCAL_STORAGE_THEME_MODE_KEY } from 'client/utils/constants';
+
+const getLocalStorageTheme = () =>
+  localStorage.getItem(LOCAL_STORAGE_THEME_MODE_KEY) as ThemeMode | null;
 
 type Context = {
   themeMode: ThemeMode;
@@ -13,15 +16,18 @@ type Context = {
 };
 
 export const Context = React.createContext<Context>({
-  themeMode: initialState.themeMode,
-  themeKey: initialState.themeKey,
+  themeMode: 'auto',
+  themeKey: 'light',
   setThemeMode: () => null,
   setThemeKey: () => null,
   setTheme: () => null,
 });
 
 export const ContextProvider: React.FC = props => {
-  const [state, dispatch] = React.useReducer(reducer, initialState);
+  const [state, dispatch] = React.useReducer(
+    reducer,
+    getInitialState(getLocalStorageTheme())
+  );
 
   const setThemeMode = React.useCallback(
     (themeMode: ThemeMode) => {

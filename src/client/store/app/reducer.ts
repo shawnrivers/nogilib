@@ -1,20 +1,17 @@
 import { ThemeKey } from 'client/styles/colors';
 import { ThemeMode } from 'client/types/themeMode';
-import { LOCAL_STORAGE_THEME_MODE_KEY } from 'client/utils/constants';
 
 type State = {
   themeMode: ThemeMode;
   themeKey: ThemeKey;
 };
 
-const localStorageTheme = localStorage.getItem(LOCAL_STORAGE_THEME_MODE_KEY) as
-  | ThemeMode
-  | undefined;
-
-export const initialState: State = {
+export const getInitialState = (
+  localStorageTheme: ThemeMode | null
+): State => ({
   themeMode: localStorageTheme ?? 'auto',
   themeKey: localStorageTheme === 'dark' ? 'dark' : 'light',
-};
+});
 
 export enum ActionType {
   SET_THEME_MODE = 'SET_THEME_MODE',
