@@ -1,31 +1,7 @@
 import { useTheme as emotionUseTheme } from 'emotion-theming';
-import { GLOBAL_COLORS } from './colors';
+import { GLOBAL_COLORS, ThemeColors } from './colors';
 import { TYPOGRAPHY } from 'client/styles/typography';
 import { SPACING } from 'client/styles/spacing';
-
-export type ThemeColorVariants = {
-  standard: string;
-  variant0: string;
-  variant1: string;
-};
-
-export type ThemeColorsForeground = {
-  onPrimary: ThemeColorVariants;
-  onSecondary: ThemeColorVariants;
-  onBackground: ThemeColorVariants;
-  onSurface: ThemeColorVariants;
-};
-
-export type ThemeColorsBackground = {
-  primary: ThemeColorVariants;
-  secondary: ThemeColorVariants;
-  background: ThemeColorVariants;
-  surface: ThemeColorVariants;
-};
-
-export type ThemeColors = ThemeColorsBackground & ThemeColorsForeground;
-
-export type BackgroundColor = keyof ThemeColors['background'];
 
 export type ThemeKey = 'light' | 'dark';
 

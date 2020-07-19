@@ -43,41 +43,43 @@ export const GLOBAL_COLORS = {
 
 export type GlobalColorKey = keyof typeof GLOBAL_COLORS;
 
-export type ThemeColors = {
-  primary: {
-    standard: string;
-    variant: string;
-  };
-  secondary: {
-    standard: string;
-    variant: string;
-  };
-  background: {
-    standard: string;
-    variant: string;
-  };
-  surface: {
-    standard: string;
-    variant: string;
-  };
-  onPrimary: {
-    standard: string;
-    variant: string;
-  };
-  onSecondary: {
-    standard: string;
-    variant: string;
-  };
-  onBackground: {
-    standard: string;
-    variant: string;
-  };
-  onSurface: {
-    standard: string;
-    variant: string;
-  };
+export type ThemeColorVariants = {
+  standard: string;
+  variant0: string;
+  variant1: string;
 };
+
+export type ThemeColorsForeground = {
+  onPrimary: ThemeColorVariants;
+  onSecondary: ThemeColorVariants;
+  onBackground: ThemeColorVariants;
+  onSurface: ThemeColorVariants;
+};
+
+export type ThemeColorsBackground = {
+  primary: ThemeColorVariants;
+  secondary: ThemeColorVariants;
+  background: ThemeColorVariants;
+  surface: ThemeColorVariants;
+};
+
+export type ThemeColors = ThemeColorsBackground & ThemeColorsForeground;
+
+export type BackgroundColor = keyof ThemeColors['background'];
 
 export type ThemeKey = 'light' | 'dark';
 
-export type Themes = Record<ThemeKey, ThemeColors>;
+export const mapForegroundToBackground = (
+  foregroundKey: keyof ThemeColorsForeground
+): keyof ThemeColorsBackground => {
+  switch (foregroundKey) {
+    case 'onPrimary':
+      return 'primary';
+    case 'onSecondary':
+      return 'secondary';
+    case 'onBackground':
+      return 'background';
+    case 'onSurface':
+      return 'surface';
+  }
+};

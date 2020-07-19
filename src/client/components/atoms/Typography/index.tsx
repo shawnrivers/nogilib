@@ -1,12 +1,12 @@
 /**@jsx jsx */
 import { css, jsx } from '@emotion/core';
 import * as React from 'react';
-import {
-  ThemeColorVariants,
-  useTheme,
-  ThemeColorsForeground,
-} from 'client/styles/tokens';
+import { useTheme } from 'client/styles/tokens';
 import { TypographyKey } from 'client/styles/typography';
+import {
+  ThemeColorsForeground,
+  ThemeColorVariants,
+} from 'client/styles/colors';
 
 const variantMapping: Record<TypographyKey, React.ElementType> = {
   h1: 'h1',
@@ -27,7 +27,7 @@ const variantMapping: Record<TypographyKey, React.ElementType> = {
   button: 'span',
 };
 
-type TypographyProps = React.HTMLAttributes<HTMLElement> & {
+export type TypographyProps = React.HTMLAttributes<HTMLElement> & {
   variant: TypographyKey;
   element?: React.ElementType;
   bold?: boolean;

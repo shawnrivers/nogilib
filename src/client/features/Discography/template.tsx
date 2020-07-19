@@ -18,6 +18,8 @@ import {
 } from 'client/components/templates/Page';
 import { FocusPerformers } from 'server/actors/Discography/types';
 import { Context } from 'client/store/app/context';
+import { TextSwitchButton } from 'client/components/atoms/buttons/TextSwitchButton';
+import { TextSwitchLink } from 'client/components/atoms/buttons/TextSwitchLink';
 
 const CdGroupContainer = styled.div`
   display: grid;
@@ -51,47 +53,38 @@ const LanguageControllers: React.FC<
 
   return (
     <div {...restProps}>
-      <Typography
+      <TextSwitchButton
         variant="h7"
-        element="button"
-        textColor={{
-          on: 'onBackground',
-          variant: themeMode === 'light' ? 'standard' : 'variant1',
-        }}
+        textOn="onBackground"
+        isSwitchedOn={themeMode === 'light'}
         onClick={onClickLightTheme}
       >
         Light
-      </Typography>
+      </TextSwitchButton>
       <Typography variant="h7" element="span">
         {' '}
         /{' '}
       </Typography>
-      <Typography
+      <TextSwitchButton
         variant="h7"
-        element="button"
-        textColor={{
-          on: 'onBackground',
-          variant: themeMode === 'dark' ? 'standard' : 'variant1',
-        }}
+        textOn="onBackground"
+        isSwitchedOn={themeMode === 'dark'}
         onClick={onClickDarkTheme}
       >
         Dark
-      </Typography>
+      </TextSwitchButton>
       <Typography variant="h7" element="span">
         {' '}
         /{' '}
       </Typography>
-      <Typography
+      <TextSwitchButton
         variant="h7"
-        element="button"
-        textColor={{
-          on: 'onBackground',
-          variant: themeMode === 'auto' ? 'standard' : 'variant1',
-        }}
+        textOn="onBackground"
+        isSwitchedOn={themeMode === 'auto'}
         onClick={onClickAutoTheme}
       >
         Auto
-      </Typography>
+      </TextSwitchButton>
     </div>
   );
 };
@@ -139,21 +132,21 @@ export const Discography: React.FC<DiscographyType> = props => {
         >
           <li>
             <Link to="/discography">
-              <Typography variant="h6" element="li">
+              <Typography variant="h6" element="span">
                 DISCOGRAPHY
               </Typography>
             </Link>
           </li>
           <li>
             <Link to="/members-list/first-gen">
-              <Typography variant="h6" element="li">
+              <Typography variant="h6" element="span">
                 MEMBERS
               </Typography>
             </Link>
           </li>
           <li>
             <Link to="/search">
-              <Typography variant="h6" element="li">
+              <Typography variant="h6" element="span">
                 SEARCH
               </Typography>
             </Link>
@@ -182,43 +175,37 @@ export const Discography: React.FC<DiscographyType> = props => {
         >
           DISCOGRAPHY
         </Typography>
-        <Typography
-          variant="h2"
-          textColor={{ on: 'onBackground', variant: 'variant1' }}
-        >
-          <Link
+        <div>
+          <TextSwitchLink
+            variant="h2"
             to="/discography"
-            css={css`
-              color: ${currentGroup === 'all'
-                ? theme.colors.theme.onBackground.standard
-                : theme.colors.theme.onBackground.variant1};
-            `}
+            isSwitchedOn={currentGroup === 'all'}
           >
             All
-          </Link>{' '}
-          /{' '}
-          <Link
+          </TextSwitchLink>
+          <Typography variant="h2" element="span">
+            {' '}
+            /{' '}
+          </Typography>
+          <TextSwitchLink
+            variant="h2"
             to="/discography?filter=singles"
-            css={css`
-              color: ${currentGroup === 'singles'
-                ? theme.colors.theme.onBackground.standard
-                : theme.colors.theme.onBackground.variant1};
-            `}
+            isSwitchedOn={currentGroup === 'singles'}
           >
             Singles
-          </Link>{' '}
-          /{' '}
-          <Link
+          </TextSwitchLink>
+          <Typography variant="h2" element="span">
+            {' '}
+            /{' '}
+          </Typography>
+          <TextSwitchLink
+            variant="h2"
             to="/discography?filter=albums"
-            css={css`
-              color: ${currentGroup === 'albums'
-                ? theme.colors.theme.onBackground.standard
-                : theme.colors.theme.onBackground.variant1};
-            `}
+            isSwitchedOn={currentGroup === 'albums'}
           >
             Albums
-          </Link>
-        </Typography>
+          </TextSwitchLink>
+        </div>
       </Header>
       <Main>
         {cdGroupsByYear.map((cdGroup, i) => {
