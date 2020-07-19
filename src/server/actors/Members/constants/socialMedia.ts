@@ -7,4 +7,5 @@ export enum SocialMedia {
   Official = "Official",
   Nanagogo = "755",
   YouTube = "YouTube",
+  OnlineSalon = "Online Salon",
 }

@@ -613,16 +613,20 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Shizuoka,
     sites: [
       {
-        title: SocialMedia.Official,
-        url: "http://yumiwakatsuki.com/",
+        title: SocialMedia.Instagram,
+        url: "https://www.instagram.com/yumi_wakatsuki_official/",
       },
       {
         title: SocialMedia.Twitter,
         url: "https://twitter.com/WAKA_Y_official/",
       },
       {
-        title: SocialMedia.Instagram,
-        url: "https://www.instagram.com/yumi_wakatsuki_official/",
+        title: SocialMedia.Official,
+        url: "https://yumiwakatsuki.com/",
+      },
+      {
+        title: SocialMedia.OnlineSalon,
+        url: "https://lounge.dmm.com/detail/2711/",
       },
       {
         title: SocialMedia.Profile,

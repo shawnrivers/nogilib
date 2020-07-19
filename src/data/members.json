@@ -3371,16 +3371,20 @@
     "origin": "静岡県",
     "sites": [
       {
-        "title": "Official",
-        "url": "http://yumiwakatsuki.com/"
+        "title": "Instagram",
+        "url": "https://www.instagram.com/yumi_wakatsuki_official/"
       },
       {
         "title": "Twitter",
         "url": "https://twitter.com/WAKA_Y_official/"
       },
       {
-        "title": "Instagram",
-        "url": "https://www.instagram.com/yumi_wakatsuki_official/"
+        "title": "Official",
+        "url": "https://yumiwakatsuki.com/"
+      },
+      {
+        "title": "Online Salon",
+        "url": "https://lounge.dmm.com/detail/2711/"
       },
       {
         "title": "Profile",
