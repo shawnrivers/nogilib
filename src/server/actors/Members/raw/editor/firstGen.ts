@@ -104,6 +104,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: "https://twitter.com/ikomarina_staff",
       },
       {
+        title: SocialMedia.YouTube,
+        url: "https://www.youtube.com/channel/UCKfIRa0Zhs6HQ33a_L6Tc5Q/",
+      },
+      {
         title: SocialMedia.Official,
         url: "https://ikomarina.com/",
       },
