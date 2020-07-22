@@ -51,6 +51,39 @@ type QueryResult = {
   };
 };
 
+const groupCdsByYear = (cds: QueryResultCds): CdGroupByYear[] => {
+  const cdsWithYear = cds
+    .map(cd => ({
+      ...cd,
+      year: new Date(cd.release).getFullYear(),
+    }))
+    .sort((cdA, cdB) => cdB.year - cdA.year);
+
+  const cdGroupsByYear: CdGroupByYear[] = [];
+
+  for (const cd of cdsWithYear) {
+    if (cdGroupsByYear.length === 0) {
+      cdGroupsByYear.push({ year: cd.year, cds: [cd] });
+    } else {
+      for (let i = 0; i < cdGroupsByYear.length; i++) {
+        const cdGroup = cdGroupsByYear[i];
+        if (cdGroup.year === cd.year) {
+          cdGroup.cds.push(cd);
+          break;
+        } else if (i === cdGroupsByYear.length - 1) {
+          cdGroupsByYear.push({ year: cd.year, cds: [cd] });
+          break;
+        }
+      }
+    }
+  }
+
+  return cdGroupsByYear.map(cdGroup => ({
+    ...cdGroup,
+    cds: sortByDate(cdGroup.cds, 'release', 'desc'),
+  }));
+};
+
 const DiscographyContainer: React.FC<QueryResult> = props => {
   const discographyData = props.data.allDiscographyJson.nodes;
   const singlesData = React.useMemo(
@@ -109,38 +142,5 @@ const DiscographyContainer: React.FC<QueryResult> = props => {
     />
   );
 };
-
-function groupCdsByYear(cds: QueryResultCds): CdGroupByYear[] {
-  const cdsWithYear = cds
-    .map(cd => ({
-      ...cd,
-      year: new Date(cd.release).getFullYear(),
-    }))
-    .sort((cdA, cdB) => cdB.year - cdA.year);
-
-  const cdGroupsByYear: CdGroupByYear[] = [];
-
-  for (const cd of cdsWithYear) {
-    if (cdGroupsByYear.length === 0) {
-      cdGroupsByYear.push({ year: cd.year, cds: [cd] });
-    } else {
-      for (let i = 0; i < cdGroupsByYear.length; i++) {
-        const cdGroup = cdGroupsByYear[i];
-        if (cdGroup.year === cd.year) {
-          cdGroup.cds.push(cd);
-          break;
-        } else if (i === cdGroupsByYear.length - 1) {
-          cdGroupsByYear.push({ year: cd.year, cds: [cd] });
-          break;
-        }
-      }
-    }
-  }
-
-  return cdGroupsByYear.map(cdGroup => ({
-    ...cdGroup,
-    cds: sortByDate(cdGroup.cds, 'release', 'desc'),
-  }));
-}
 
 export default DiscographyContainer;

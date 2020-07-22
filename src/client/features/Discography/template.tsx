@@ -6,7 +6,6 @@ import styled from '@emotion/styled';
 import { DiscographyResult } from 'server/actors/Discography/models';
 import { Typography } from 'client/components/atoms/Typography';
 import { useTheme } from 'client/styles/tokens';
-import { FeatureCd } from 'client/features/Discography/components/molecules/FeaturedCd';
 import { NormalCd } from 'client/features/Discography/components/molecules/NormalCd';
 import { TextDivider } from 'client/features/Discography/components/atoms/TextDivider';
 import {
@@ -25,14 +24,10 @@ const CdGroupContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, 240px);
   grid-template-rows: auto;
-  grid-template-areas: 'featured featured featured';
   grid-gap: 40px;
   justify-content: center;
   max-width: 800px;
-`;
-
-const FeaturedCdContainer = styled.div`
-  grid-area: featured;
+  margin: auto;
 `;
 
 const LanguageControllers: React.FC<
@@ -171,6 +166,7 @@ export const Discography: React.FC<DiscographyType> = props => {
           variant="h1"
           css={css`
             margin-bottom: 0.5ex;
+            word-break: break-word;
           `}
         >
           DISCOGRAPHY
@@ -208,57 +204,23 @@ export const Discography: React.FC<DiscographyType> = props => {
         </div>
       </Header>
       <Main>
-        {cdGroupsByYear.map((cdGroup, i) => {
-          if (i === 0) {
-            const [featuredCd, ...restCds] = cdGroup.cds;
-
-            return (
-              <div key={cdGroup.year}>
-                <TextDivider text={cdGroup.year} />
-                <CdGroupContainer>
-                  <FeaturedCdContainer>
-                    <FeatureCd
-                      artwork={featuredCd.artworks[0]}
-                      title={featuredCd.title}
-                      number={featuredCd.number}
-                      type={featuredCd.type}
-                      focusPerformers={featuredCd.songs[0].focusPerformers}
-                      release={featuredCd.release}
-                    />
-                  </FeaturedCdContainer>
-                  {restCds.map(cd => (
-                    <NormalCd
-                      key={cd.number}
-                      artwork={cd.artworks[0]}
-                      title={cd.title}
-                      number={cd.number}
-                      type={cd.type}
-                      focusPerformers={cd.songs[0].focusPerformers}
-                    />
-                  ))}
-                </CdGroupContainer>
-              </div>
-            );
-          }
-
-          return (
-            <div key={cdGroup.year}>
-              <TextDivider text={cdGroup.year} />
-              <CdGroupContainer>
-                {cdGroup.cds.map(cd => (
-                  <NormalCd
-                    key={cd.number}
-                    artwork={cd.artworks[0]}
-                    number={cd.number}
-                    type={cd.type}
-                    title={cd.title}
-                    focusPerformers={cd.songs[0].focusPerformers}
-                  />
-                ))}
-              </CdGroupContainer>
-            </div>
-          );
-        })}
+        {cdGroupsByYear.map(cdGroup => (
+          <div key={cdGroup.year}>
+            <TextDivider text={cdGroup.year} />
+            <CdGroupContainer>
+              {cdGroup.cds.map(cd => (
+                <NormalCd
+                  key={cd.number}
+                  artwork={cd.artworks[0]}
+                  number={cd.number}
+                  type={cd.type}
+                  title={cd.title}
+                  focusPerformers={cd.songs[0].focusPerformers}
+                />
+              ))}
+            </CdGroupContainer>
+          </div>
+        ))}
       </Main>
     </Container>
   );
