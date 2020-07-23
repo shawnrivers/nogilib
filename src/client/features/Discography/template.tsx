@@ -19,6 +19,7 @@ import { TextSwitchButtonGroup } from 'client/components/molecules/buttonGroups/
 import { ThemeMode } from 'client/types/themeMode';
 import { Language } from 'client/types/language';
 import { TextSwitchLinkGroup } from 'client/components/molecules/buttonGroups/TextSwitchLinkGroup';
+import { Message } from 'client/components/atoms/Message';
 
 export type CdGroupByYear = {
   year: number;
@@ -169,6 +170,7 @@ export const Discography: React.FC<DiscographyType> = props => {
           css={css`
             margin-bottom: 0.3em;
             word-break: break-word;
+            line-height: 1;
           `}
         >
           DISCOGRAPHY
@@ -178,21 +180,24 @@ export const Discography: React.FC<DiscographyType> = props => {
           textOn="onBackground"
           links={[
             {
-              text: 'All',
+              text: <Message text="all" />,
               isSwitchedOn: currentGroup === 'all',
               to: '/discography',
             },
             {
-              text: 'Singles',
+              text: <Message text="singles" />,
               isSwitchedOn: currentGroup === 'singles',
               to: '/discography?filter=singles',
             },
             {
-              text: 'Albums',
+              text: <Message text="albums" />,
               isSwitchedOn: currentGroup === 'albums',
               to: '/discography?filter=albums',
             },
           ]}
+          css={css`
+            text-transform: capitalize;
+          `}
         />
       </Header>
       <Main>

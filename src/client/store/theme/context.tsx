@@ -2,12 +2,12 @@
 import { jsx, css } from '@emotion/core';
 import * as React from 'react';
 import { ThemeProvider as EmotionThemeProvider } from 'emotion-theming';
-import { Context } from 'client/store/app/context';
 import { themes } from 'client/styles/tokens';
 import { useDarkModeMediaQuery } from 'client/hooks/useDarkModeMediaQuery';
+import { useAppContext } from 'client/hooks/useAppContext';
 
 export const ThemeProvider: React.FC = props => {
-  const { themeKey } = React.useContext(Context);
+  const { themeKey } = useAppContext();
 
   useDarkModeMediaQuery();
 

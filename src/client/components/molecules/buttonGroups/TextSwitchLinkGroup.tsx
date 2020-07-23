@@ -10,7 +10,7 @@ type TextSwitchLinkGroupProps = Pick<
   'variant' | 'textOn'
 > & {
   links: (Pick<TextSwitchLinkProps, 'isSwitchedOn' | 'to'> & {
-    text: string;
+    text: React.ReactNode;
   })[];
 } & React.HTMLAttributes<HTMLDivElement>;
 
@@ -22,7 +22,7 @@ export const TextSwitchLinkGroup: React.FC<TextSwitchLinkGroupProps> = props => 
       {links.map((link, index) =>
         index === links.length - 1 ? (
           <TextSwitchLink
-            key={link.text}
+            key={index}
             variant={variant}
             textOn={textOn}
             isSwitchedOn={link.isSwitchedOn}
@@ -31,9 +31,8 @@ export const TextSwitchLinkGroup: React.FC<TextSwitchLinkGroupProps> = props => 
             {link.text}
           </TextSwitchLink>
         ) : (
-          <>
+          <React.Fragment key={index}>
             <TextSwitchLink
-              key={link.text}
               variant={variant}
               textOn={textOn}
               isSwitchedOn={link.isSwitchedOn}
@@ -52,7 +51,7 @@ export const TextSwitchLinkGroup: React.FC<TextSwitchLinkGroupProps> = props => 
               {' '}
               /{' '}
             </Typography>
-          </>
+          </React.Fragment>
         )
       )}
     </div>

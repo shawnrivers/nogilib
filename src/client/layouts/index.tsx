@@ -2,20 +2,15 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { RouteComponentProps } from '@reach/router';
 import { motion } from 'framer-motion';
-import { IntlProvider } from 'react-intl';
 import styles from './applayout.module.scss';
 import { TopNavigation } from 'client/components/molecules/TopNavigation';
 import { PageTabs } from 'client/components/molecules/PageTabs';
-import en from 'client/i18n/en.json';
-import ja from 'client/i18n/ja.json';
-import zh from 'client/i18n/zh.json';
 import { CdTabType, MembersTabType } from 'client/types/tabs';
 import 'client/styles/app.scss';
 import { Language, Links } from 'client/utils/constants';
 import { ContextProvider } from 'client/store/app/context';
 import { ThemeProvider } from 'client/store/theme/context';
-
-const messages = { en, ja, zh };
+import { LanguageProvider } from 'client/store/language/contenxt';
 
 const layoutVariants = {
   visible: {
@@ -125,7 +120,7 @@ const AppLayout = ({
 
   return (
     <ContextProvider>
-      <IntlProvider locale={locale} messages={messages[locale]}>
+      <LanguageProvider>
         <Helmet>
           <meta charSet="utf-8" />
           <meta
@@ -186,7 +181,7 @@ const AppLayout = ({
             </motion.main>
           </div>
         </ThemeProvider>
-      </IntlProvider>
+      </LanguageProvider>
     </ContextProvider>
   );
 };

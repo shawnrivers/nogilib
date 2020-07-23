@@ -10,7 +10,7 @@ type TextSwitchButtonGroupProps = Pick<
   'variant' | 'textOn'
 > & {
   buttons: (Pick<TextSwitchButtonProps, 'isSwitchedOn' | 'onClick'> & {
-    text: string;
+    text: React.ReactNode;
   })[];
 } & React.HTMLAttributes<HTMLDivElement>;
 
@@ -22,7 +22,7 @@ export const TextSwitchButtonGroup: React.FC<TextSwitchButtonGroupProps> = props
       {buttons.map((button, index) =>
         index === buttons.length - 1 ? (
           <TextSwitchButton
-            key={button.text}
+            key={index}
             variant={variant}
             textOn={textOn}
             isSwitchedOn={button.isSwitchedOn}
@@ -31,9 +31,8 @@ export const TextSwitchButtonGroup: React.FC<TextSwitchButtonGroupProps> = props
             {button.text}
           </TextSwitchButton>
         ) : (
-          <>
+          <React.Fragment key={index}>
             <TextSwitchButton
-              key={button.text}
               variant={variant}
               textOn={textOn}
               isSwitchedOn={button.isSwitchedOn}
@@ -52,7 +51,7 @@ export const TextSwitchButtonGroup: React.FC<TextSwitchButtonGroupProps> = props
               {' '}
               /{' '}
             </Typography>
-          </>
+          </React.Fragment>
         )
       )}
     </div>

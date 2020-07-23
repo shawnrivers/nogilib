@@ -23,7 +23,7 @@ export const Container = styled.div`
 export const Navigation = styled.nav`
   grid-area: navigation;
   justify-self: end;
-  padding-top: 2ex;
+  padding-top: 1ex;
 
   @media screen and (max-width: 54em) {
     display: none;
@@ -38,7 +38,7 @@ export const Header = styled.header`
 export const Settings = styled.div`
   grid-area: settings;
   justify-self: start;
-  padding-top: 2ex;
+  padding-top: 1ex;
 
   @media screen and (max-width: 54em) {
     display: none;
