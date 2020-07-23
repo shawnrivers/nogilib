@@ -17,8 +17,6 @@ export const NormalCd: React.FC<{
     <ArtworkImage
       src={props.artwork}
       alt={props.number}
-      width={240}
-      height={240}
       css={css`
         margin-bottom: 8px;
       `}

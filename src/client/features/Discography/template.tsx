@@ -2,7 +2,6 @@
 import { css, jsx } from '@emotion/core';
 import { Link } from 'gatsby';
 import * as React from 'react';
-import styled from '@emotion/styled';
 import { DiscographyResult } from 'server/actors/Discography/models';
 import { Typography } from 'client/components/atoms/Typography';
 import { useTheme } from 'client/styles/tokens';
@@ -19,16 +18,6 @@ import { FocusPerformers } from 'server/actors/Discography/types';
 import { Context } from 'client/store/app/context';
 import { TextSwitchButton } from 'client/components/atoms/buttons/TextSwitchButton';
 import { TextSwitchLink } from 'client/components/atoms/buttons/TextSwitchLink';
-
-const CdGroupContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 240px);
-  grid-template-rows: auto;
-  grid-gap: 40px;
-  justify-content: center;
-  max-width: 800px;
-  margin: auto;
-`;
 
 const LanguageControllers: React.FC<
   React.HTMLAttributes<HTMLDivElement> & {
@@ -207,7 +196,17 @@ export const Discography: React.FC<DiscographyType> = props => {
         {cdGroupsByYear.map(cdGroup => (
           <div key={cdGroup.year}>
             <TextDivider text={cdGroup.year} />
-            <CdGroupContainer>
+            <div
+              css={css`
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+                grid-template-rows: auto;
+                grid-gap: 40px;
+                justify-content: center;
+                max-width: 800px;
+                margin: auto;
+              `}
+            >
               {cdGroup.cds.map(cd => (
                 <NormalCd
                   key={cd.number}
@@ -218,7 +217,7 @@ export const Discography: React.FC<DiscographyType> = props => {
                   focusPerformers={cd.songs[0].focusPerformers}
                 />
               ))}
-            </CdGroupContainer>
+            </div>
           </div>
         ))}
       </Main>
