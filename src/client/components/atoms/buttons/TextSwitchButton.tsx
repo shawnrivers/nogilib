@@ -11,7 +11,10 @@ import {
   ThemeColorsForeground,
 } from 'client/styles/colors';
 
-type TextSwitchButtonProps = Omit<TypographyProps, 'element' | 'textColor'> & {
+export type TextSwitchButtonProps = Omit<
+  TypographyProps,
+  'element' | 'textColor'
+> & {
   isSwitchedOn: boolean;
   textOn?: keyof ThemeColorsForeground;
 };

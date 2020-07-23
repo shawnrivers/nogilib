@@ -12,7 +12,10 @@ import {
   ThemeColorsForeground,
 } from 'client/styles/colors';
 
-type TextSwitchLinkProps = Omit<TypographyProps, 'element' | 'textColor'> & {
+export type TextSwitchLinkProps = Omit<
+  TypographyProps,
+  'element' | 'textColor'
+> & {
   to: string;
   isSwitchedOn: boolean;
   textOn?: keyof ThemeColorsForeground;
