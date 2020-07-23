@@ -15,63 +15,10 @@ import {
   Main,
 } from 'client/components/templates/Page';
 import { FocusPerformers } from 'server/actors/Discography/types';
-import { Context } from 'client/store/app/context';
-import { TextSwitchButton } from 'client/components/atoms/buttons/TextSwitchButton';
-import { TextSwitchLink } from 'client/components/atoms/buttons/TextSwitchLink';
-
-const LanguageControllers: React.FC<
-  React.HTMLAttributes<HTMLDivElement> & {
-    onClickLightTheme(): void;
-    onClickDarkTheme(): void;
-    onClickAutoTheme(): void;
-  }
-> = props => {
-  const {
-    onClickLightTheme,
-    onClickDarkTheme,
-    onClickAutoTheme,
-    ...restProps
-  } = props;
-
-  const { themeMode } = React.useContext(Context);
-
-  return (
-    <div {...restProps}>
-      <TextSwitchButton
-        variant="h7"
-        textOn="onBackground"
-        isSwitchedOn={themeMode === 'light'}
-        onClick={onClickLightTheme}
-      >
-        Light
-      </TextSwitchButton>
-      <Typography variant="h7" element="span">
-        {' '}
-        /{' '}
-      </Typography>
-      <TextSwitchButton
-        variant="h7"
-        textOn="onBackground"
-        isSwitchedOn={themeMode === 'dark'}
-        onClick={onClickDarkTheme}
-      >
-        Dark
-      </TextSwitchButton>
-      <Typography variant="h7" element="span">
-        {' '}
-        /{' '}
-      </Typography>
-      <TextSwitchButton
-        variant="h7"
-        textOn="onBackground"
-        isSwitchedOn={themeMode === 'auto'}
-        onClick={onClickAutoTheme}
-      >
-        Auto
-      </TextSwitchButton>
-    </div>
-  );
-};
+import { TextSwitchButtonGroup } from 'client/components/molecules/buttonGroups/TextSwitchButtonGroup';
+import { ThemeMode } from 'client/types/themeMode';
+import { Language } from 'client/types/language';
+import { TextSwitchLinkGroup } from 'client/components/molecules/buttonGroups/TextSwitchLinkGroup';
 
 export type CdGroupByYear = {
   year: number;
@@ -91,14 +38,46 @@ export type CdGroupByYear = {
 export type DiscographyType = {
   currentGroup: 'singles' | 'albums' | 'all';
   cdGroupsByYear: CdGroupByYear[];
-  onClickLightTheme(): void;
-  onClickDarkTheme(): void;
-  onClickAutoTheme(): void;
+  themeMode: ThemeMode;
+  language: Language;
+  onSwitchTheme(themeMode: ThemeMode): void;
+  onSwitchLanguage(language: Language): void;
 };
 
 export const Discography: React.FC<DiscographyType> = props => {
-  const { currentGroup, cdGroupsByYear } = props;
+  const {
+    currentGroup,
+    cdGroupsByYear,
+    themeMode,
+    language,
+    onSwitchTheme,
+    onSwitchLanguage,
+  } = props;
   const theme = useTheme();
+
+  const handleClickLightTheme = React.useCallback(() => {
+    onSwitchTheme('light');
+  }, [onSwitchTheme]);
+
+  const handleClickDarkTheme = React.useCallback(() => {
+    onSwitchTheme('dark');
+  }, [onSwitchTheme]);
+
+  const handleClickAutoTheme = React.useCallback(() => {
+    onSwitchTheme('auto');
+  }, [onSwitchTheme]);
+
+  const handleClickEnglish = React.useCallback(() => {
+    onSwitchLanguage('en');
+  }, [onSwitchLanguage]);
+
+  const handleClickJapanese = React.useCallback(() => {
+    onSwitchLanguage('ja');
+  }, [onSwitchLanguage]);
+
+  const handleClickChinese = React.useCallback(() => {
+    onSwitchLanguage('zh');
+  }, [onSwitchLanguage]);
 
   return (
     <Container
@@ -110,7 +89,7 @@ export const Discography: React.FC<DiscographyType> = props => {
         <ul
           css={css`
             & > *:not(:last-child) {
-              margin-bottom: 2ex;
+              margin-bottom: 1em;
             }
           `}
         >
@@ -138,59 +117,83 @@ export const Discography: React.FC<DiscographyType> = props => {
         </ul>
       </Navigation>
       <Settings>
-        <LanguageControllers
-          onClickLightTheme={props.onClickLightTheme}
-          onClickDarkTheme={props.onClickDarkTheme}
-          onClickAutoTheme={props.onClickAutoTheme}
+        <TextSwitchButtonGroup
+          variant="h7"
+          textOn="onBackground"
+          buttons={[
+            {
+              text: 'Light',
+              isSwitchedOn: themeMode === 'light',
+              onClick: handleClickLightTheme,
+            },
+            {
+              text: 'Dark',
+              isSwitchedOn: themeMode === 'dark',
+              onClick: handleClickDarkTheme,
+            },
+            {
+              text: 'Auto',
+              isSwitchedOn: themeMode === 'auto',
+              onClick: handleClickAutoTheme,
+            },
+          ]}
           css={css`
-            margin-bottom: 2ex;
+            margin-bottom: 1em;
           `}
         />
-        <Typography variant="h7" element="div">
-          EN / 日 / 中
-        </Typography>
+        <TextSwitchButtonGroup
+          variant="h7"
+          textOn="onBackground"
+          buttons={[
+            {
+              text: 'EN',
+              isSwitchedOn: language === 'en',
+              onClick: handleClickEnglish,
+            },
+            {
+              text: '日',
+              isSwitchedOn: language === 'ja',
+              onClick: handleClickJapanese,
+            },
+            {
+              text: '中',
+              isSwitchedOn: language === 'zh',
+              onClick: handleClickChinese,
+            },
+          ]}
+        />
       </Settings>
       <Header>
         <Typography
           variant="h1"
           css={css`
-            margin-bottom: 0.5ex;
+            margin-bottom: 0.3em;
             word-break: break-word;
           `}
         >
           DISCOGRAPHY
         </Typography>
-        <div>
-          <TextSwitchLink
-            variant="h2"
-            to="/discography"
-            isSwitchedOn={currentGroup === 'all'}
-          >
-            All
-          </TextSwitchLink>
-          <Typography variant="h2" element="span">
-            {' '}
-            /{' '}
-          </Typography>
-          <TextSwitchLink
-            variant="h2"
-            to="/discography?filter=singles"
-            isSwitchedOn={currentGroup === 'singles'}
-          >
-            Singles
-          </TextSwitchLink>
-          <Typography variant="h2" element="span">
-            {' '}
-            /{' '}
-          </Typography>
-          <TextSwitchLink
-            variant="h2"
-            to="/discography?filter=albums"
-            isSwitchedOn={currentGroup === 'albums'}
-          >
-            Albums
-          </TextSwitchLink>
-        </div>
+        <TextSwitchLinkGroup
+          variant="h2"
+          textOn="onBackground"
+          links={[
+            {
+              text: 'All',
+              isSwitchedOn: currentGroup === 'all',
+              to: '/discography',
+            },
+            {
+              text: 'Singles',
+              isSwitchedOn: currentGroup === 'singles',
+              to: '/discography?filter=singles',
+            },
+            {
+              text: 'Albums',
+              isSwitchedOn: currentGroup === 'albums',
+              to: '/discography?filter=albums',
+            },
+          ]}
+        />
       </Header>
       <Main>
         {cdGroupsByYear.map(cdGroup => (

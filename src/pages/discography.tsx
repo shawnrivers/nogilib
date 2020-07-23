@@ -120,25 +120,18 @@ const DiscographyContainer: React.FC<QueryResult> = props => {
       ? albumGroupsByYear
       : allCdGroupsByYear;
 
-  const { setTheme } = React.useContext(Context);
-
-  const handleClickLightTheme = React.useCallback(() => {
-    setTheme('light');
-  }, [setTheme]);
-  const handleClickDarkTheme = React.useCallback(() => {
-    setTheme('dark');
-  }, [setTheme]);
-  const handleClickAutoTheme = React.useCallback(() => {
-    setTheme('auto');
-  }, [setTheme]);
+  const { themeMode, language, setTheme, setLanguage } = React.useContext(
+    Context
+  );
 
   return (
     <Discography
       currentGroup={currentGroup}
       cdGroupsByYear={cdGroupsByYear}
-      onClickLightTheme={handleClickLightTheme}
-      onClickDarkTheme={handleClickDarkTheme}
-      onClickAutoTheme={handleClickAutoTheme}
+      themeMode={themeMode}
+      language={language}
+      onSwitchTheme={setTheme}
+      onSwitchLanguage={setLanguage}
     />
   );
 };

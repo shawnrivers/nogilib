@@ -13,7 +13,7 @@ export const Container = styled.div`
   grid-gap: 16px;
   padding: 64px 32px;
 
-  @media screen and (max-width: 60em) {
+  @media screen and (max-width: 54em) {
     grid-template-areas:
       'header header header'
       'main main main';
@@ -25,7 +25,7 @@ export const Navigation = styled.nav`
   justify-self: end;
   padding-top: 2ex;
 
-  @media screen and (max-width: 60em) {
+  @media screen and (max-width: 54em) {
     display: none;
   }
 `;
@@ -40,7 +40,7 @@ export const Settings = styled.div`
   justify-self: start;
   padding-top: 2ex;
 
-  @media screen and (max-width: 60em) {
+  @media screen and (max-width: 54em) {
     display: none;
   }
 `;
