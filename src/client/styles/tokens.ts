@@ -1,139 +1,41 @@
 import { useTheme as emotionUseTheme } from 'emotion-theming';
-import { GLOBAL_COLORS, ThemeColors } from './colors';
+import {
+  ColorTheme,
+  DARK_COLOR_THEME,
+  LIGHT_COLOR_THEME,
+  ThemeKey,
+} from './colors';
 import { TYPOGRAPHY } from 'client/styles/typography';
 import { SPACING } from 'client/styles/spacing';
-
-export type ThemeKey = 'light' | 'dark';
+import { BORDER_RADIUS } from 'client/styles/borderRadius';
+import { ELEVATION_DARK, ELEVATION_LIGHT } from 'client/styles/elevation';
 
 export type Theme = {
-  colors: {
-    theme: ThemeColors;
-    global: typeof GLOBAL_COLORS;
-  };
+  key: ThemeKey;
+  colors: ColorTheme;
   typography: typeof TYPOGRAPHY;
   spacing: typeof SPACING;
-  key: ThemeKey;
+  borderRadius: typeof BORDER_RADIUS;
+  elevation: typeof ELEVATION_DARK;
 };
 
-const {
-  gray1,
-  gray3,
-  gray4,
-  gray6,
-  gray8,
-  white,
-  purpleDull0,
-  purpleDull1,
-  purpleDull2,
-  purpleDull3,
-  purpleDull4,
-  yellow0,
-  yellow1,
-  yellow2,
-} = GLOBAL_COLORS;
-
-const commonStyles: Pick<Theme, 'typography' | 'spacing'> = {
+const commonStyles: Omit<Theme, 'key' | 'colors' | 'elevation'> = {
   typography: TYPOGRAPHY,
   spacing: SPACING,
+  borderRadius: BORDER_RADIUS,
 };
 
 const lightTheme: Theme = {
   key: 'light',
-  colors: {
-    theme: {
-      primary: {
-        standard: purpleDull0,
-        variant0: purpleDull1,
-        variant1: purpleDull2,
-      },
-      secondary: {
-        standard: yellow0,
-        variant0: yellow1,
-        variant1: yellow2,
-      },
-      background: {
-        standard: white,
-        variant0: gray1,
-        variant1: gray3,
-      },
-      surface: {
-        standard: white,
-        variant0: gray1,
-        variant1: gray3,
-      },
-      onPrimary: {
-        standard: gray8,
-        variant0: gray6,
-        variant1: gray4,
-      },
-      onSecondary: {
-        standard: gray8,
-        variant0: gray6,
-        variant1: gray4,
-      },
-      onBackground: {
-        standard: gray8,
-        variant0: gray6,
-        variant1: gray4,
-      },
-      onSurface: {
-        standard: gray8,
-        variant0: gray6,
-        variant1: gray4,
-      },
-    },
-    global: GLOBAL_COLORS,
-  },
+  colors: LIGHT_COLOR_THEME,
+  elevation: ELEVATION_LIGHT,
   ...commonStyles,
 };
 
 const darkTheme: Theme = {
   key: 'dark',
-  colors: {
-    theme: {
-      primary: {
-        standard: purpleDull4,
-        variant0: purpleDull3,
-        variant1: purpleDull2,
-      },
-      secondary: {
-        standard: yellow0,
-        variant0: yellow1,
-        variant1: yellow2,
-      },
-      background: {
-        standard: gray8,
-        variant0: gray6,
-        variant1: gray4,
-      },
-      surface: {
-        standard: gray8,
-        variant0: gray6,
-        variant1: gray4,
-      },
-      onPrimary: {
-        standard: white,
-        variant0: gray1,
-        variant1: gray3,
-      },
-      onSecondary: {
-        standard: gray8,
-        variant0: gray6,
-        variant1: gray4,
-      },
-      onBackground: {
-        standard: white,
-        variant0: gray1,
-        variant1: gray3,
-      },
-      onSurface: {
-        standard: gray8,
-        variant0: gray6,
-        variant1: gray4,
-      },
-    },
-    global: GLOBAL_COLORS,
-  },
+  colors: DARK_COLOR_THEME,
+  elevation: ELEVATION_DARK,
   ...commonStyles,
 };
 

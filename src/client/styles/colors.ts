@@ -83,3 +83,100 @@ export const mapForegroundToBackground = (
       return 'surface';
   }
 };
+
+export type ColorTheme = {
+  theme: ThemeColors;
+  global: typeof GLOBAL_COLORS;
+};
+
+export const LIGHT_COLOR_THEME: ColorTheme = {
+  theme: {
+    primary: {
+      standard: GLOBAL_COLORS.purpleDull0,
+      variant0: GLOBAL_COLORS.purpleDull1,
+      variant1: GLOBAL_COLORS.purpleDull2,
+    },
+    secondary: {
+      standard: GLOBAL_COLORS.yellow0,
+      variant0: GLOBAL_COLORS.yellow1,
+      variant1: GLOBAL_COLORS.yellow2,
+    },
+    background: {
+      standard: GLOBAL_COLORS.white,
+      variant0: GLOBAL_COLORS.gray1,
+      variant1: GLOBAL_COLORS.gray3,
+    },
+    surface: {
+      standard: GLOBAL_COLORS.white,
+      variant0: GLOBAL_COLORS.gray1,
+      variant1: GLOBAL_COLORS.gray3,
+    },
+    onPrimary: {
+      standard: GLOBAL_COLORS.gray8,
+      variant0: GLOBAL_COLORS.gray6,
+      variant1: GLOBAL_COLORS.gray4,
+    },
+    onSecondary: {
+      standard: GLOBAL_COLORS.gray8,
+      variant0: GLOBAL_COLORS.gray6,
+      variant1: GLOBAL_COLORS.gray4,
+    },
+    onBackground: {
+      standard: GLOBAL_COLORS.gray8,
+      variant0: GLOBAL_COLORS.gray6,
+      variant1: GLOBAL_COLORS.gray4,
+    },
+    onSurface: {
+      standard: GLOBAL_COLORS.gray8,
+      variant0: GLOBAL_COLORS.gray6,
+      variant1: GLOBAL_COLORS.gray4,
+    },
+  },
+  global: GLOBAL_COLORS,
+};
+
+export const DARK_COLOR_THEME: ColorTheme = {
+  theme: {
+    primary: {
+      standard: GLOBAL_COLORS.purpleDull4,
+      variant0: GLOBAL_COLORS.purpleDull3,
+      variant1: GLOBAL_COLORS.purpleDull2,
+    },
+    secondary: {
+      standard: GLOBAL_COLORS.yellow0,
+      variant0: GLOBAL_COLORS.yellow1,
+      variant1: GLOBAL_COLORS.yellow2,
+    },
+    background: {
+      standard: GLOBAL_COLORS.gray8,
+      variant0: GLOBAL_COLORS.gray6,
+      variant1: GLOBAL_COLORS.gray4,
+    },
+    surface: {
+      standard: GLOBAL_COLORS.gray8,
+      variant0: GLOBAL_COLORS.gray6,
+      variant1: GLOBAL_COLORS.gray4,
+    },
+    onPrimary: {
+      standard: GLOBAL_COLORS.white,
+      variant0: GLOBAL_COLORS.gray1,
+      variant1: GLOBAL_COLORS.gray3,
+    },
+    onSecondary: {
+      standard: GLOBAL_COLORS.gray8,
+      variant0: GLOBAL_COLORS.gray6,
+      variant1: GLOBAL_COLORS.gray4,
+    },
+    onBackground: {
+      standard: GLOBAL_COLORS.white,
+      variant0: GLOBAL_COLORS.gray1,
+      variant1: GLOBAL_COLORS.gray3,
+    },
+    onSurface: {
+      standard: GLOBAL_COLORS.gray8,
+      variant0: GLOBAL_COLORS.gray6,
+      variant1: GLOBAL_COLORS.gray4,
+    },
+  },
+  global: GLOBAL_COLORS,
+};

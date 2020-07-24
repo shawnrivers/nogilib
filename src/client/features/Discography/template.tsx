@@ -5,7 +5,6 @@ import * as React from 'react';
 import { DiscographyResult } from 'server/actors/Discography/models';
 import { Typography } from 'client/components/atoms/Typography';
 import { useTheme } from 'client/styles/tokens';
-import { NormalCd } from 'client/features/Discography/components/molecules/NormalCd';
 import { TextDivider } from 'client/features/Discography/components/atoms/TextDivider';
 import {
   Container,
@@ -15,11 +14,12 @@ import {
   Main,
 } from 'client/components/templates/Page';
 import { FocusPerformers } from 'server/actors/Discography/types';
-import { TextSwitchButtonGroup } from 'client/components/molecules/buttonGroups/TextSwitchButtonGroup';
+import { TextSwitchButtonGroup } from 'client/components/molecules/buttonGroup/TextSwitchButtonGroup';
 import { ThemeMode } from 'client/types/themeMode';
 import { Language } from 'client/types/language';
-import { TextSwitchLinkGroup } from 'client/components/molecules/buttonGroups/TextSwitchLinkGroup';
+import { TextSwitchLinkGroup } from 'client/components/molecules/buttonGroup/TextSwitchLinkGroup';
 import { Message } from 'client/components/atoms/Message';
+import { ArtworkCard } from 'client/components/molecules/card/ArtworkCard';
 
 export type CdGroupByYear = {
   year: number;
@@ -216,13 +216,16 @@ export const Discography: React.FC<DiscographyType> = props => {
               `}
             >
               {cdGroup.cds.map(cd => (
-                <NormalCd
+                <ArtworkCard
                   key={cd.number}
                   artwork={cd.artworks[0]}
                   number={cd.number}
                   type={cd.type}
                   title={cd.title}
                   focusPerformers={cd.songs[0].focusPerformers}
+                  elevation={3}
+                  surfaceColor="standard"
+                  borderRadius="m"
                 />
               ))}
             </div>

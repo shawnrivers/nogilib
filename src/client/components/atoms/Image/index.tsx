@@ -19,7 +19,7 @@ type DataType = {
   };
 };
 
-type ImageProps = {
+export type ImageProps = {
   src: string;
 } & React.ComponentProps<typeof Img>;
 

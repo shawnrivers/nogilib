@@ -116,7 +116,7 @@ const AMBIENT_SHADOW: Record<ElevationKey, string> = {
   24: '0px 9px 46px 8px',
 };
 
-export const ELEVATION: Record<
+export const ELEVATION_DARK: Record<
   ElevationKey,
   { boxShadow: string; whiteOverlayTransparency: string }
 > = {
@@ -219,5 +219,111 @@ export const ELEVATION: Record<
   24: {
     boxShadow: `${UMBRA_SHADOW[24]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[24]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[24]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.16)',
+  },
+};
+
+export const ELEVATION_LIGHT: Record<
+  ElevationKey,
+  { boxShadow: string; whiteOverlayTransparency: string }
+> = {
+  0: {
+    boxShadow: `${UMBRA_SHADOW[0]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[0]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[0]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
+  },
+  1: {
+    boxShadow: `${UMBRA_SHADOW[1]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[1]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[1]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
+  },
+  2: {
+    boxShadow: `${UMBRA_SHADOW[2]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[2]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[2]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
+  },
+  3: {
+    boxShadow: `${UMBRA_SHADOW[3]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[3]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[3]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
+  },
+  4: {
+    boxShadow: `${UMBRA_SHADOW[4]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[4]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[4]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
+  },
+  5: {
+    boxShadow: `${UMBRA_SHADOW[5]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[5]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[5]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
+  },
+  6: {
+    boxShadow: `${UMBRA_SHADOW[6]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[6]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[6]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
+  },
+  7: {
+    boxShadow: `${UMBRA_SHADOW[7]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[7]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[7]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
+  },
+  8: {
+    boxShadow: `${UMBRA_SHADOW[8]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[8]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[8]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
+  },
+  9: {
+    boxShadow: `${UMBRA_SHADOW[9]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[9]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[9]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
+  },
+  10: {
+    boxShadow: `${UMBRA_SHADOW[10]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[10]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[10]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
+  },
+  11: {
+    boxShadow: `${UMBRA_SHADOW[11]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[11]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[11]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
+  },
+  12: {
+    boxShadow: `${UMBRA_SHADOW[12]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[12]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[12]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
+  },
+  13: {
+    boxShadow: `${UMBRA_SHADOW[13]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[13]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[13]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
+  },
+  14: {
+    boxShadow: `${UMBRA_SHADOW[14]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[14]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[14]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
+  },
+  15: {
+    boxShadow: `${UMBRA_SHADOW[15]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[15]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[15]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
+  },
+  16: {
+    boxShadow: `${UMBRA_SHADOW[16]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[16]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[16]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
+  },
+  17: {
+    boxShadow: `${UMBRA_SHADOW[17]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[17]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[17]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
+  },
+  18: {
+    boxShadow: `${UMBRA_SHADOW[18]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[18]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[18]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
+  },
+  19: {
+    boxShadow: `${UMBRA_SHADOW[19]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[19]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[19]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
+  },
+  20: {
+    boxShadow: `${UMBRA_SHADOW[20]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[20]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[20]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
+  },
+  21: {
+    boxShadow: `${UMBRA_SHADOW[21]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[21]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[21]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
+  },
+  22: {
+    boxShadow: `${UMBRA_SHADOW[22]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[22]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[22]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
+  },
+  23: {
+    boxShadow: `${UMBRA_SHADOW[23]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[23]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[23]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
+  },
+  24: {
+    boxShadow: `${UMBRA_SHADOW[24]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[24]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[24]} ${AMBIENT_COLOR}`,
+    whiteOverlayTransparency: 'none',
   },
 };

@@ -1,13 +1,14 @@
 /**@jsx jsx */
 import { css, jsx } from '@emotion/core';
 import * as React from 'react';
-import { Image } from 'client/components/atoms/Image';
+import { Image, ImageProps } from 'client/components/atoms/Image';
 import { useTheme } from 'client/styles/tokens';
 
-export const ArtworkImage: React.FC<{
+type ArtworkProps = ImageProps & {
   src: string;
-  alt: string;
-}> = props => {
+};
+
+const Artwork: React.FC<ArtworkProps> = props => {
   const { src, alt, ...restProps } = props;
   const theme = useTheme();
 
@@ -15,18 +16,20 @@ export const ArtworkImage: React.FC<{
     <div
       css={css`
         padding-top: 100%;
-        position: relative;
         width: 100%;
+        position: relative;
+        border-radius: ${theme.borderRadius.m};
+        overflow: hidden;
       `}
     >
       <div
         css={css`
           background-color: ${theme.colors.theme.surface.variant0};
-          bottom: 0;
-          left: 0;
-          position: absolute;
-          right: 0;
           top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          position: absolute;
         `}
       >
         <Image
@@ -35,14 +38,50 @@ export const ArtworkImage: React.FC<{
           objectFit="cover"
           objectPosition="top"
           css={css`
-            background-color: ${theme.colors.global.white};
             display: block;
+            width: 100%;
             height: 100%;
             transform-origin: center;
-            width: 100%;
           `}
           {...restProps}
         />
+      </div>
+    </div>
+  );
+};
+
+export const ArtworkImage: React.FC<ArtworkProps> = props => {
+  const { src, alt, ...restProps } = props;
+
+  return (
+    <div
+      css={css`
+        position: relative;
+        padding-top: 100%;
+      `}
+    >
+      <div
+        css={css`
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          filter: blur(4px);
+        `}
+      >
+        <Artwork src={src} alt={alt} {...restProps} />
+      </div>
+      <div
+        css={css`
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        `}
+      >
+        <Artwork src={src} alt={alt} {...restProps} />
       </div>
     </div>
   );
