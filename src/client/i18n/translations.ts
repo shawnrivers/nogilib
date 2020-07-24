@@ -1,0 +1,721 @@
+const translations = {
+  '755': {
+    en: '755',
+    ja: '755',
+    zh: '755',
+  },
+  singles: {
+    en: 'singles',
+    ja: 'シングル',
+    zh: '单曲',
+  },
+  albums: {
+    en: 'albums',
+    ja: 'アルバム',
+    zh: '专辑',
+  },
+  music: {
+    en: 'music',
+    ja: '音楽',
+    zh: '音乐',
+  },
+  songs: {
+    en: 'songs',
+    ja: '楽曲',
+    zh: '歌曲',
+  },
+  members: {
+    en: 'members',
+    ja: 'メンバー',
+    zh: '成员',
+  },
+  search: {
+    en: 'search',
+    ja: '検索',
+    zh: '搜索',
+  },
+  more: {
+    en: 'more',
+    ja: 'その他',
+    zh: '其他',
+  },
+  about: {
+    en: 'about',
+    ja: 'このアプリについて',
+    zh: '关于',
+  },
+  languages: {
+    en: 'lang',
+    ja: '言語',
+    zh: '语言',
+  },
+  none: {
+    en: '',
+    ja: '',
+    zh: '',
+  },
+  title: {
+    en: 'title',
+    ja: '表題曲',
+    zh: '标题曲',
+  },
+  coupling: {
+    en: 'couping',
+    ja: 'カップリング曲',
+    zh: 'B面',
+  },
+  lead: {
+    en: 'lead',
+    ja: 'リード曲',
+    zh: '主打曲',
+  },
+  under: {
+    en: 'under',
+    ja: 'アンダー',
+    zh: 'Under',
+  },
+  unit: {
+    en: 'unit',
+    ja: 'ユニット',
+    zh: '小队',
+  },
+  solo: {
+    en: 'solo',
+    ja: 'ソロ曲',
+    zh: '独唱',
+  },
+  'first generation': {
+    en: '1st. gen',
+    ja: '1期生',
+    zh: '1期生',
+  },
+  'second generation': {
+    en: '2nd. gen',
+    ja: '2期生',
+    zh: '2期生',
+  },
+  'third generation': {
+    en: '3rd. gen',
+    ja: '3期生',
+    zh: '3期生',
+  },
+  'fourth generation': {
+    en: '4th. gen',
+    ja: '4期生',
+    zh: '4期生',
+  },
+  special: {
+    en: 'special',
+    ja: 'special',
+    zh: 'special',
+  },
+  track: {
+    en: 'track',
+    ja: '収録曲',
+    zh: '收录曲',
+  },
+  release: {
+    en: 'release',
+    ja: 'リリース日',
+    zh: '发售日',
+  },
+  'first-gen': {
+    en: '1st. gen',
+    ja: '1期生',
+    zh: '1期生',
+  },
+  'second-gen': {
+    en: '2nd. gen',
+    ja: '2期生',
+    zh: '2期生',
+  },
+  'third-gen': {
+    en: '3rd. gen',
+    ja: '3期生',
+    zh: '3期生',
+  },
+  'fourth-gen': {
+    en: '4th. gen',
+    ja: '4期生',
+    zh: '4期生',
+  },
+  graduated: {
+    en: 'graduated',
+    ja: '卒業生',
+    zh: '毕业生',
+  },
+  graduate: {
+    en: 'graduated',
+    ja: '卒業',
+    zh: '毕业',
+  },
+  performers: {
+    en: 'performers',
+    ja: '歌唱メンバー',
+    zh: '表演成员',
+  },
+  creators: {
+    en: 'creators',
+    ja: 'クリエーター',
+    zh: '创作人员',
+  },
+  single: {
+    en: 'single',
+    ja: 'シングル',
+    zh: '单曲',
+  },
+  selected: {
+    en: 'selected',
+    ja: '選抜',
+    zh: '选拔',
+  },
+  lyrics: {
+    en: 'lyrics',
+    ja: '作詞',
+    zh: '作词',
+  },
+  compose: {
+    en: 'compose',
+    ja: '作曲',
+    zh: '作曲',
+  },
+  arrange: {
+    en: 'arrange',
+    ja: '編曲',
+    zh: '编曲',
+  },
+  direct: {
+    en: 'MV',
+    ja: 'MV',
+    zh: 'MV',
+  },
+  websites: {
+    en: 'websites',
+    ja: 'ウェブサイト',
+    zh: '网站',
+  },
+  Nogizaka46: {
+    en: 'Nogizaka46',
+    ja: '乃木坂46',
+    zh: '乃木坂46',
+  },
+  'Official Blog': {
+    en: 'Official Blog',
+    ja: '公式ブログ',
+    zh: '官方博客',
+  },
+  'Fourth Gen Blog': {
+    en: 'Fourth Gen Blog',
+    ja: '4期生ブログ',
+    zh: '4期生博客',
+  },
+  Profile: {
+    en: 'Profile',
+    ja: 'プロフィール',
+    zh: '成员介绍',
+  },
+  Official: {
+    en: 'Official',
+    ja: '公式サイト',
+    zh: '官方网站',
+  },
+  Instagram: {
+    en: 'Instagram',
+    ja: 'Instagram',
+    zh: 'Instagram',
+  },
+  Twitter: {
+    en: 'Twitter',
+    ja: 'Twitter',
+    zh: 'Twitter',
+  },
+  テレビ朝日: {
+    en: 'TV Asahi',
+    ja: 'テレビ朝日',
+    zh: '朝日电视台',
+  },
+  日本テレビ: {
+    en: 'Nippon TV',
+    ja: '日本テレビ',
+    zh: '日本电视台',
+  },
+  Ameba: {
+    en: 'Ameba',
+    ja: 'Ameba',
+    zh: 'Ameba',
+  },
+  profile: {
+    en: 'profile',
+    ja: 'プロフィール',
+    zh: '简要',
+  },
+  join: {
+    en: 'join',
+    ja: '加入期',
+    zh: '加入期',
+  },
+  'join: first': {
+    en: '1st. generation',
+    ja: '1期生',
+    zh: '1期生',
+  },
+  'join: second': {
+    en: '2nd. generation',
+    ja: '2期生',
+    zh: '2期生',
+  },
+  'join: third': {
+    en: '3rd. generation',
+    ja: '3期生',
+    zh: '3期生',
+  },
+  'join: fourth': {
+    en: '4th. generation',
+    ja: '4期生',
+    zh: '4期生',
+  },
+  'join: exchange': {
+    en: 'exchange',
+    ja: '交換留学生',
+    zh: '交换留学生',
+  },
+  birthday: {
+    en: 'birthday',
+    ja: '誕生日',
+    zh: '生日',
+  },
+  height: {
+    en: 'height',
+    ja: '身長',
+    zh: '身高',
+  },
+  'blood type': {
+    en: 'blood type',
+    ja: '血液型',
+    zh: '血型',
+  },
+  unknown: {
+    en: 'unknown',
+    ja: '不明',
+    zh: '不明',
+  },
+  a: {
+    en: 'a',
+    ja: 'a',
+    zh: 'a',
+  },
+  b: {
+    en: 'b',
+    ja: 'b',
+    zh: 'b',
+  },
+  ab: {
+    en: 'ab',
+    ja: 'ab',
+    zh: 'ab',
+  },
+  o: {
+    en: 'o',
+    ja: 'o',
+    zh: 'o',
+  },
+  birthplace: {
+    en: 'birthplace',
+    ja: '出身地',
+    zh: '出生地',
+  },
+  units: {
+    en: 'units',
+    ja: 'ユニット',
+    zh: '小队',
+  },
+  corps: {
+    en: 'corps',
+    ja: '軍団',
+    zh: '军团',
+  },
+  'photo albums': {
+    en: 'photo albums',
+    ja: '写真集',
+    zh: '照片集',
+  },
+  'position history': {
+    en: 'position history',
+    ja: 'ポジション履歴',
+    zh: '站位记录',
+  },
+  'position counter': {
+    en: 'position counter',
+    ja: 'ポジション回数',
+    zh: '站位次数',
+  },
+  center: {
+    en: 'center',
+    ja: 'センター',
+    zh: '中心',
+  },
+  fukujin: {
+    en: 'fukujin',
+    ja: '福神',
+    zh: '福神',
+  },
+  gallery: {
+    en: 'gallery',
+    ja: 'アーティスト写真',
+    zh: '官方照片',
+  },
+  'show all': {
+    en: 'show all',
+    ja: 'すべて表示',
+    zh: '查看全部',
+  },
+  'show less': {
+    en: 'show less',
+    ja: '3つまで表示',
+    zh: '只显示3个结果',
+  },
+  東京都: {
+    en: 'Tokyo',
+    ja: '東京都',
+    zh: '东京都',
+  },
+  埼玉県: {
+    en: 'Saitama',
+    ja: '埼玉県',
+    zh: '埼玉县',
+  },
+  神奈川県: {
+    en: 'Kanagawa',
+    ja: '神奈川県',
+    zh: '神奈川县',
+  },
+  大分県: {
+    en: 'Ōita',
+    ja: '大分県',
+    zh: '大分县',
+  },
+  沖縄県: {
+    en: 'Okinawa',
+    ja: '沖縄県',
+    zh: '冲绳县',
+  },
+  鹿児島県: {
+    en: 'Kagoshima',
+    ja: '鹿児島県',
+    zh: '鹿儿岛县',
+  },
+  北海道: {
+    en: 'Hokkaido',
+    ja: '北海道',
+    zh: '北海道',
+  },
+  宮城県: {
+    en: 'Miyagi',
+    ja: '宮城県',
+    zh: '宮城县',
+  },
+  愛知県: {
+    en: 'Aichi',
+    ja: '愛知県',
+    zh: '爱知县',
+  },
+  群馬県: {
+    en: 'Gunma',
+    ja: '群馬県',
+    zh: '群马县',
+  },
+  秋田県: {
+    en: 'Akita',
+    ja: '秋田県',
+    zh: '秋田县',
+  },
+  千葉県: {
+    en: 'Chiba',
+    ja: '千葉県',
+    zh: '千叶县',
+  },
+  大阪府: {
+    en: 'Osaka',
+    ja: '大阪府',
+    zh: '大阪府',
+  },
+  岐阜県: {
+    en: 'Gifu',
+    ja: '岐阜県',
+    zh: '岐阜县',
+  },
+  福岡県: {
+    en: 'Fukuoka',
+    ja: '福岡県',
+    zh: '福冈县',
+  },
+  広島県: {
+    en: 'Hiroshima',
+    ja: '広島県',
+    zh: '广岛县',
+  },
+  栃木県: {
+    en: 'Tochigi',
+    ja: '栃木県',
+    zh: '栃木县',
+  },
+  岡山県: {
+    en: 'Okayama',
+    ja: '岡山県',
+    zh: '冈山县',
+  },
+  長崎県: {
+    en: 'Nagasaki',
+    ja: '長崎県',
+    zh: '长崎县',
+  },
+  静岡県: {
+    en: 'Shizuoka',
+    ja: '静岡県',
+    zh: '静冈县',
+  },
+  岩手県: {
+    en: 'Iwate',
+    ja: '岩手県',
+    zh: '岩手县',
+  },
+  京都府: {
+    en: 'Kyoto',
+    ja: '京都府',
+    zh: '京都府',
+  },
+  'California, US': {
+    en: 'California, US',
+    ja: 'アメリカ カリフォルニア州',
+    zh: '美国 加利福尼亚州',
+  },
+  'Düsseldorf, Germany': {
+    en: 'Düsseldorf, Germany',
+    ja: 'ドイツ デュッセルドルフ',
+    zh: '德国 杜塞尔多夫',
+  },
+  'Song title, member name, etc.': {
+    en: 'Song title, member name, etc.',
+    ja: '楽曲タイトル、メンバー名前など',
+    zh: '歌曲名、成员名字等等',
+  },
+  'no result': {
+    en: 'no result',
+    ja: '結果がみ見つかりませんでした',
+    zh: '找不到搜索结果',
+  },
+  'This is a web application aiming at showing the information about Nogizaka46 in a user-friendly way.': {
+    en:
+      'This is a web application aiming at showing the information about Nogizaka46 in a user-friendly way.',
+    ja:
+      'これは乃木坂46の情報をわかりやすく提示するウェブアプリケーションである。',
+    zh: '这是一个简洁明了地显示乃木坂46的信息的网页应用。',
+  },
+  'go to app': {
+    en: 'go to app',
+    ja: 'アプリケーションへ',
+    zh: '前往应用',
+  },
+  'supported languages': {
+    en: 'supported languages',
+    ja: 'サポート言語',
+    zh: '支持语言',
+  },
+  'Feature - Music': {
+    en: 'Feature - Music',
+    ja: '機能：音楽',
+    zh: '功能：音乐',
+  },
+  'Feature - Members': {
+    en: 'Feature - Members',
+    ja: '機能：メンバー',
+    zh: '功能：成员',
+  },
+  'Feature - Search': {
+    en: 'Feature - Search',
+    ja: '機能：検索',
+    zh: '功能：搜索',
+  },
+  'CD List': {
+    en: 'CD List',
+    ja: 'CD リスト',
+    zh: 'CD 列表',
+  },
+  'CD List page shows released a grid of CD cards (singles and albums).': {
+    en: 'CD List page shows released a grid of CD cards (singles and albums).',
+    ja:
+      'CD リストページは CD（シングルとアルバム）カードのグリッドを表示する。',
+    zh:
+      'CD 列表界面会显示出至今为止已经发布的所有 CD（单曲和专辑）卡片的网格列表。',
+  },
+  'By tapping/clicking on any CD card, it will navigate to the corresponding CD page.': {
+    en:
+      'By tapping/clicking on any CD card, it will navigate to the corresponding CD page.',
+    ja:
+      '任意の CD カードをタップ・クリックすると、それと対応する CD ページに遷移できる。',
+    zh: '轻触或点击 CD 卡片会移动到相应的 CD 列表界面。',
+  },
+  CD: {
+    en: 'CD',
+    ja: 'CD',
+    zh: 'CD',
+  },
+  'CD Page shows detailed information about each CD.': {
+    en: 'CD Page shows detailed information about each CD.',
+    ja: 'CD ページは CD の詳細情報を表示する。',
+    zh: 'CD 界面会显示出这张 CD 的详细信息。',
+  },
+  'The artwork part on the top is tappable/clickable so that you can see artworks in different types of this CD.': {
+    en:
+      'The artwork part on the top is tappable/clickable so that you can see artworks in different types of this CD.',
+    ja:
+      'ジャケット写真（以下「ジャケ写」と略す）をタップ・クリックすると CD の他のタイプのジャケ写を閲覧することができる。',
+    zh: '轻触或者点击 CD 封面可以切换至这张 CD 的其他封面图像。',
+  },
+  'A list of cards of songs included in this CD will also be displayed here. By tapping/clicking on any card, it will lead you to the Song Page.': {
+    en:
+      'A list of cards of songs included in this CD will also be displayed here. By tapping/clicking on any card, it will lead you to the Song Page.',
+    ja:
+      '収録曲のカードのリストがジャケ写の下に表示される。任意の収録曲カードをタップ・クリックすると、それと対応する楽曲ページに遷移できる。',
+    zh:
+      '收录于该 CD 中的歌曲一览也会显示在这个界面中。轻触或点击歌曲卡片会移动到相应的歌曲界面。',
+  },
+  Song: {
+    en: 'Song',
+    ja: '楽曲',
+    zh: '歌曲',
+  },
+  'Song Page shows detailed information about each song.': {
+    en: 'Song Page shows detailed information about each song.',
+    ja: '楽曲ページは楽曲の詳細情報を表示する。',
+    zh: '歌曲界面会显示出这首歌曲的详细信息。',
+  },
+  'The artwork part shows the artwork of the song’s CD.': {
+    en: 'The artwork part shows the artwork of the song’s CD.',
+    ja:
+      'ジャケ写部分では、この楽曲が収録されている CD のジャケ写が表示される。',
+    zh: '封面图像为这首歌曲所在的 CD 的封面图像。',
+  },
+  'A list of cards of members who perform this song will be displayed here. By tapping/clicking on any card, it will lead you to the corresponding Member Page.': {
+    en:
+      'A list of cards of members who perform this song will be displayed here. By tapping/clicking on any card, it will lead you to the corresponding Member Page.',
+    ja:
+      '楽曲の歌唱メンバー及びそのフォーメーションもこの画面に表示される。任意のメンバーカードをタップ・クリックすると、それと対応するメンバーページに遷移できる。',
+    zh:
+      '这首歌曲的表演成员的一览也会显示在这个界面中。轻触或点击成员卡片会移动到相应的成员界面。',
+  },
+  'Below the performers is the information about creators like songwriters and MV directors.': {
+    en:
+      'Below the performers is the information about creators like songwriters and MV directors.',
+    ja:
+      '歌唱メンバーの次に、作詞や MV 監督などのクリエイターの情報が表示される。',
+    zh:
+      '在表演成员一览的下方将会显示该歌曲的创作人员一览（例如，作词、作曲）。',
+  },
+  'Member List': {
+    en: 'Member List',
+    ja: 'メンバーリスト',
+    zh: '成员列表',
+  },
+  'Member List Page shows a grid of member cards (1st. gen to 4th. gen, graduated).': {
+    en:
+      'Member List Page shows a grid of member cards (1st. gen to 4th. gen, graduated).',
+    ja:
+      'メンバーリストページは、メンバーカードのグリッドを表示する（1期生から4期生、卒業生）。',
+    zh: '成员列表界面会显示出一个所有成员（1期生到4期生、毕业生）的网格列表。',
+  },
+  'By tapping/clicking on any member card, it will navigate to the corresponding Member page.': {
+    en:
+      'By tapping/clicking on any member card, it will navigate to the corresponding Member page.',
+    ja:
+      '任意のメンバーカードをタップ・クリックすると、それと対応するメンバーページに遷移できる。',
+    zh: '轻触或点击成员卡片会移动到相应的成员列表界面。',
+  },
+  Member: {
+    en: 'Member',
+    ja: 'メンバー',
+    zh: '成员',
+  },
+  'Member page shows detailed information about each member.': {
+    en: 'Member page shows detailed information about each member.',
+    ja: 'メンバーページはメンバーの詳細情報を表示する。',
+    zh: '成员界面会显示出这名成员的详细信息。',
+  },
+  'The badges below the profile image show the member’s glow stick colors.': {
+    en:
+      'The badges below the profile image show the member’s glow stick colors.',
+    ja: 'プロフィール写真の下のバッチはメンバーのサイリウムカラーを表す。',
+    zh: '成员照片下的圆点表示这名成员的荧光棒颜色。',
+  },
+  'Member’s profile (e.g. name, sites / social networks, birthday, birthplace, etc.) is showed.': {
+    en:
+      'Member’s profile (e.g. name, sites / social networks, birthday, birthplace, etc.) is showed.',
+    ja:
+      'メンバーの名前・サイト・SNS アカウント・誕生日・出身地などのプロフィール情報が表示される',
+    zh: '成员的姓名、网站、生日、出生地等的信息也会显示在这个界面中。',
+  },
+  'Position History shows the records of members positions in each single.': {
+    en:
+      'Position History shows the records of members positions in each single.',
+    ja:
+      'ポジション履歴では、加入から今までのシングルの表題曲の立ち位置が表示される。',
+    zh: '站位记录会表示出成员加入至今的单曲标题曲的站位记录。',
+  },
+  'Position Counter shows how many times she has been in each position.': {
+    en: 'Position Counter shows how many times she has been in each position.',
+    ja:
+      'ポジション回数では、上記のそれぞれの立ち位置にいた回数かが集計されて表示される。',
+    zh: '站位次数会表示出成员经历过的站位的次数。',
+  },
+  'Gallery shows the member’s profile images from her first single to the latest one.': {
+    en:
+      'Gallery shows the member’s profile images from her first single to the latest one.',
+    ja:
+      'アーティスト写真では、メンバーの今までのシングルごとのアーティスト写真が表示される。',
+    zh: '官方照片为成员加入至今的官方照片的一览。',
+  },
+  'By typing CD/song title or member name in the top input area, you can search for CDs and members.': {
+    en:
+      'By typing CD/song title or member name in the top input area, you can search for CDs and members.',
+    ja:
+      '画面上部の入力フォームに、検索したい CD や楽曲のタイトル、またはメンバーの名前を入力する。',
+    zh: '在画面上方的输入区域中输入 CD 或歌曲的标题，或者成员的名字。',
+  },
+  'The search results will be displayed below the input area.': {
+    en: 'The search results will be displayed below the input area.',
+    ja: '検索結果は入力フォームの下部に表示される。',
+    zh: '搜索结果会在输入区域的下方显示出来。',
+  },
+  copyright: {
+    en: 'copyright',
+    ja: '著作権',
+    zh: '版权',
+  },
+  'source code': {
+    en: 'source code',
+    ja: 'ソースコード',
+    zh: '源代码',
+  },
+  'update the app': {
+    en: 'update the app',
+    ja: 'アプリを更新する',
+    zh: '更新应用',
+  },
+  'Online Salon': {
+    en: 'Online Salon',
+    ja: 'オンラインサロン',
+    zh: '线上社区',
+  },
+};
+
+const en: Record<keyof typeof translations, string> = {} as any;
+const ja: Record<keyof typeof translations, string> = {} as any;
+const zh: Record<keyof typeof translations, string> = {} as any;
+
+for (const [key, value] of Object.entries(translations)) {
+  Object.assign(en, { [key]: value.en });
+  Object.assign(ja, { [key]: value.ja });
+  Object.assign(zh, { [key]: value.zh });
+}
+
+export const messages = { en, ja, zh };
