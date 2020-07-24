@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Helmet } from 'react-helmet';
 import { RouteComponentProps } from '@reach/router';
 import { motion } from 'framer-motion';
 import styles from './applayout.module.scss';
@@ -11,6 +10,7 @@ import { Language, Links } from 'client/utils/constants';
 import { ContextProvider } from 'client/store/app/context';
 import { ThemeProvider } from 'client/store/theme/context';
 import { LanguageProvider } from 'client/store/language/contenxt';
+import { Helmet } from 'client/layouts/Helmet';
 
 const layoutVariants = {
   visible: {
@@ -51,8 +51,6 @@ const AppLayout = ({
     }
     return '';
   }, [location]);
-
-  const locale = pageContext ? pageContext.locale : Language.Ja;
 
   const isCdsPage = React.useMemo(() => pathName.includes('/cds/'), [pathName]);
   const isMembersPage = React.useMemo(
@@ -121,40 +119,7 @@ const AppLayout = ({
   return (
     <ContextProvider>
       <LanguageProvider>
-        <Helmet>
-          <meta charSet="utf-8" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, viewport-fit=cover"
-          />
-          <meta name="title" content="Nogizaka Lib" />
-          <meta name="twitter:card" content="summary" />
-          <meta name="twitter:creator" content="@yuxiao_he" />
-          <meta
-            name="description"
-            content="Nogizaka Lib is a Gatsby powered web application aiming at showing the information about Nogizaka46 in a user-friendly way."
-          />
-          <meta
-            name="url"
-            content="https://shawnrivers.github.io/nogizaka-lib-redesign/"
-          />
-          <meta name="og:title" content="Nogizaka Lib" />
-          <meta
-            name="og:description"
-            content="Nogizaka Lib is a Gatsby powered web application aiming at showing the information about Nogizaka46 in a user-friendly way."
-          />
-          <meta
-            property="og:image"
-            content="https://raw.githubusercontent.com/shawnrivers/nogizaka-data/master/src/images/design/nogizakalib-preview.jpg"
-          />
-          <meta name="apple-mobile-web-app-capable" content="yes" />
-          <meta
-            name="apple-mobile-web-app-status-bar-style"
-            content="default"
-          />
-          <title>Nogizaka Lib</title>
-          <html lang={locale} />
-        </Helmet>
+        <Helmet />
         <ThemeProvider>
           <div className={styles.container}>
             <TopNavigation pathName={pathName} />
