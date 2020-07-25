@@ -173,9 +173,9 @@ export const DARK_COLOR_THEME: ColorTheme = {
       variant1: GLOBAL_COLORS.gray3,
     },
     onSurface: {
-      standard: GLOBAL_COLORS.gray8,
-      variant0: GLOBAL_COLORS.gray6,
-      variant1: GLOBAL_COLORS.gray4,
+      standard: GLOBAL_COLORS.white,
+      variant0: GLOBAL_COLORS.gray1,
+      variant1: GLOBAL_COLORS.gray3,
     },
   },
   global: GLOBAL_COLORS,

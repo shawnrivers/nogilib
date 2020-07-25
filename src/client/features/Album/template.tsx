@@ -3,19 +3,15 @@ import { jsx, css } from '@emotion/core';
 import * as React from 'react';
 import { Typography } from 'client/components/atoms/Typography';
 import { Header, Main } from 'client/components/templates/Page';
-import { QueryResultAlbum } from 'client/features/Album/container';
 import { useAppTheme } from 'client/styles/tokens';
 import { toCdNumber } from 'utils/strings';
 import { Message } from 'client/components/atoms/Message';
 import { GridArtworkImage } from 'client/components/atoms/image/GirdArtworkImage';
 import { TextDivider } from 'client/features/Discography/components/atoms/TextDivider';
-
-type AlbumPageProps = {
-  album: QueryResultAlbum;
-};
+import { AlbumPageProps } from 'client/features/Album/container';
+import { Card } from 'client/components/atoms/card/Card';
 
 export const AlbumPage: React.FC<AlbumPageProps> = props => {
-  const { album } = props;
   const theme = useAppTheme();
 
   return (
@@ -25,10 +21,10 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
           variant="h4"
           textColor={{ on: 'onBackground', variant: 'variant0' }}
         >
-          {toCdNumber(album.number)} {album.type}
+          {toCdNumber(props.number)} {props.type}
         </Typography>
         <Typography variant="h2" element="h1">
-          {album.title}
+          {props.title}
         </Typography>
         <Typography
           variant="body1"
@@ -37,25 +33,81 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
             text-transform: capitalize;
           `}
         >
-          <Message text="release" />: {album.release}
+          <Message text="release" />: {props.release}
         </Typography>
       </Header>
       <Main>
-        <TextDivider text={<Message text="artworks" />} />
         <div
           css={css`
-            display: grid;
-            grid-template-columns: repeat(auto-fill, 240px);
-            grid-gap: ${theme.spacing.m};
-            justify-content: center;
-            overflow-x: auto;
+            max-width: 60em;
+            margin: auto;
           `}
         >
-          {album.artworks.map((artwork, i) => (
-            <GridArtworkImage key={i} src={artwork.url} alt={String(i + 1)} />
-          ))}
+          <TextDivider text={<Message text="tracks" />} />
+          <div
+            css={css`
+              display: grid;
+              grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+              grid-gap: ${theme.spacing.m};
+              justify-content: center;
+            `}
+          >
+            {props.tracks.map((track, i) => (
+              <Card key={String(i + 1)} borderRadius="m" padding="xs">
+                <div
+                  css={css`
+                    display: grid;
+                    grid-template-columns: 90px auto;
+                    grid-template-rows: auto;
+                    grid-gap: ${theme.spacing.m};
+                    padding: ${theme.spacing.xs};
+                    overflow: hidden;
+                  `}
+                >
+                  <GridArtworkImage
+                    src={track.artwork}
+                    alt={track.inCdType[0]}
+                    glow
+                  />
+                  <div
+                    css={css`
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: space-evenly;
+                      flex-wrap: nowrap;
+                      overflow: hidden;
+                    `}
+                  >
+                    <Typography variant="h7" element="p" bold ellipsis>
+                      {track.title}
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      textColor={{ on: 'onSurface', variant: 'variant1' }}
+                      ellipsis
+                    >
+                      #{track.type}
+                    </Typography>
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
+          <TextDivider text={<Message text="artworks" />} />
+          <div
+            css={css`
+              display: grid;
+              grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+              grid-template-rows: auto;
+              grid-gap: ${theme.spacing.m};
+              justify-content: center;
+            `}
+          >
+            {props.artworks.map((artwork, i) => (
+              <GridArtworkImage key={i} src={artwork.url} alt={String(i + 1)} />
+            ))}
+          </div>
         </div>
-        <TextDivider text={<Message text="tracks" />} />
       </Main>
     </React.Fragment>
   );

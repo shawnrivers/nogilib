@@ -12,6 +12,12 @@ import {
   ThemeColorVariants,
 } from 'client/styles/colors';
 
+const textEllipsisStyles = css`
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+`;
+
 const variantMapping: Record<TypographyKey, React.ElementType> = {
   h1: 'h1',
   h2: 'h2',
@@ -55,6 +61,7 @@ export type TypographyProps = React.HTMLAttributes<HTMLElement> & {
   element?: React.ElementType;
   bold?: boolean;
   fontFamily?: FontFamily;
+  ellipsis?: boolean;
   textColor?: {
     on: keyof ThemeColorsForeground;
     variant: keyof ThemeColorVariants;
@@ -66,6 +73,7 @@ export const Typography: React.FC<TypographyProps> = props => {
     variant,
     element,
     fontFamily,
+    ellipsis = false,
     textColor = {
       on: 'onBackground',
       variant: 'standard',
@@ -81,19 +89,24 @@ export const Typography: React.FC<TypographyProps> = props => {
       ? FONT_FAMILY[fontFamily]
       : FONT_FAMILY[defaultFontFamilyMapping[variant]];
   const color = theme.colors.theme[textColor.on][textColor.variant];
+  const styles = React.useMemo(() => {
+    const stylesResult = [
+      theme.typography[variant],
+      css`
+        color: ${color};
+        font-weight: ${bold ? 700 : undefined};
+        font-family: ${fontFamilyValue};
+      `,
+    ];
+    if (ellipsis) {
+      stylesResult.push(textEllipsisStyles);
+    }
+
+    return stylesResult;
+  }, [bold, color, fontFamilyValue, ellipsis, theme.typography, variant]);
 
   return (
-    <Element
-      css={[
-        theme.typography[variant],
-        css`
-          color: ${color};
-          font-weight: ${bold ? 700 : undefined};
-          font-family: ${fontFamilyValue};
-        `,
-      ]}
-      {...restProps}
-    >
+    <Element css={styles} {...restProps}>
       {children}
     </Element>
   );

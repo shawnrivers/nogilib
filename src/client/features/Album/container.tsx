@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
 import { DiscographyResult } from 'server/actors/Discography/models';
-import { FocusPerformers } from 'server/actors/Discography/types';
 import { AlbumPage } from 'client/features/Album/template';
 
 export const query = graphql`
@@ -17,6 +16,9 @@ export const query = graphql`
       }
       release
       songs {
+        title
+        type
+        inCdType
         focusPerformers {
           name
           type
@@ -26,7 +28,7 @@ export const query = graphql`
   }
 `;
 
-export type QueryResultAlbum = {
+type QueryResultAlbum = {
   title: DiscographyResult['title'];
   key: DiscographyResult['key'];
   type: DiscographyResult['type'];
@@ -34,7 +36,10 @@ export type QueryResultAlbum = {
   artworks: DiscographyResult['artworks'];
   release: DiscographyResult['release'];
   songs: {
-    focusPerformers: FocusPerformers;
+    title: DiscographyResult['songs'][0]['title'];
+    type: DiscographyResult['songs'][0]['type'];
+    inCdType: DiscographyResult['songs'][0]['inCdType'];
+    focusPerformers: DiscographyResult['songs'][0]['focusPerformers'];
   }[];
 };
 
@@ -44,8 +49,47 @@ type QueryResult = {
   };
 };
 
+export type AlbumPageProps = {
+  title: DiscographyResult['title'];
+  key: DiscographyResult['key'];
+  type: DiscographyResult['type'];
+  number: DiscographyResult['number'];
+  artworks: DiscographyResult['artworks'];
+  release: DiscographyResult['release'];
+  tracks: {
+    title: DiscographyResult['songs'][0]['title'];
+    type: DiscographyResult['songs'][0]['type'];
+    inCdType: DiscographyResult['songs'][0]['inCdType'];
+    focusPerformers: DiscographyResult['songs'][0]['focusPerformers'];
+    artwork: string;
+  }[];
+};
+
 const AlbumPageContainer: React.FC<QueryResult> = props => {
-  return <AlbumPage album={props.data.discographyJson} />;
+  const albumData = props.data.discographyJson;
+
+  const tracks = React.useMemo(
+    () =>
+      albumData.songs.map(song => ({
+        ...song,
+        artwork:
+          albumData.artworks.find(artwork => artwork.type === song.inCdType[0])
+            ?.url ?? albumData.artworks[0].url,
+      })),
+    [albumData]
+  );
+
+  return (
+    <AlbumPage
+      title={albumData.title}
+      key={albumData.key}
+      type={albumData.type}
+      number={albumData.number}
+      artworks={albumData.artworks}
+      release={albumData.release}
+      tracks={tracks}
+    />
+  );
 };
 
 export default AlbumPageContainer;

@@ -33,12 +33,10 @@ export const ArtworkCard: React.FC<
       </Typography>
       <Typography
         variant="em2"
+        ellipsis
         css={css`
           margin-top: 0.5em;
           line-height: 1.2;
-          overflow-x: hidden;
-          white-space: nowrap;
-          text-overflow: ellipsis;
           text-align: center;
         `}
       >
