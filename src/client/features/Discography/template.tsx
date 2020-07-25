@@ -1,25 +1,14 @@
 /**@jsx jsx */
 import { css, jsx } from '@emotion/core';
-import { Link } from 'gatsby';
 import * as React from 'react';
-import { DiscographyResult } from 'server/actors/Discography/models';
-import { Typography } from 'client/components/atoms/Typography';
-import { useTheme } from 'client/styles/tokens';
-import { TextDivider } from 'client/features/Discography/components/atoms/TextDivider';
-import {
-  Container,
-  Navigation,
-  Settings,
-  Header,
-  Main,
-} from 'client/components/templates/Page';
-import { FocusPerformers } from 'server/actors/Discography/types';
-import { TextSwitchButtonGroup } from 'client/components/molecules/buttonGroup/TextSwitchButtonGroup';
-import { ThemeMode } from 'client/types/themeMode';
-import { Language } from 'client/types/language';
-import { TextSwitchLinkGroup } from 'client/components/molecules/buttonGroup/TextSwitchLinkGroup';
 import { Message } from 'client/components/atoms/Message';
+import { Typography } from 'client/components/atoms/Typography';
+import { TextSwitchLinkGroup } from 'client/components/molecules/buttonGroup/TextSwitchLinkGroup';
 import { ArtworkCard } from 'client/components/molecules/card/ArtworkCard';
+import { Header, Main } from 'client/components/templates/Page';
+import { TextDivider } from 'client/features/Discography/components/atoms/TextDivider';
+import { DiscographyResult } from 'server/actors/Discography/models';
+import { FocusPerformers } from 'server/actors/Discography/types';
 
 export type CdGroupByYear = {
   year: number;
@@ -39,131 +28,13 @@ export type CdGroupByYear = {
 export type DiscographyType = {
   currentGroup: 'singles' | 'albums' | 'all';
   cdGroupsByYear: CdGroupByYear[];
-  themeMode: ThemeMode;
-  language: Language;
-  onSwitchTheme(themeMode: ThemeMode): void;
-  onSwitchLanguage(language: Language): void;
 };
 
 export const Discography: React.FC<DiscographyType> = props => {
-  const {
-    currentGroup,
-    cdGroupsByYear,
-    themeMode,
-    language,
-    onSwitchTheme,
-    onSwitchLanguage,
-  } = props;
-  const theme = useTheme();
-
-  const handleClickLightTheme = React.useCallback(() => {
-    onSwitchTheme('light');
-  }, [onSwitchTheme]);
-
-  const handleClickDarkTheme = React.useCallback(() => {
-    onSwitchTheme('dark');
-  }, [onSwitchTheme]);
-
-  const handleClickAutoTheme = React.useCallback(() => {
-    onSwitchTheme('auto');
-  }, [onSwitchTheme]);
-
-  const handleClickEnglish = React.useCallback(() => {
-    onSwitchLanguage('en');
-  }, [onSwitchLanguage]);
-
-  const handleClickJapanese = React.useCallback(() => {
-    onSwitchLanguage('ja');
-  }, [onSwitchLanguage]);
-
-  const handleClickChinese = React.useCallback(() => {
-    onSwitchLanguage('zh');
-  }, [onSwitchLanguage]);
+  const { currentGroup, cdGroupsByYear } = props;
 
   return (
-    <Container
-      css={css`
-        background-color: ${theme.colors.theme.background.standard};
-      `}
-    >
-      <Navigation>
-        <ul
-          css={css`
-            & > *:not(:last-child) {
-              margin-bottom: 1em;
-            }
-          `}
-        >
-          <li>
-            <Link to="/discography">
-              <Typography variant="h6" element="span">
-                DISCOGRAPHY
-              </Typography>
-            </Link>
-          </li>
-          <li>
-            <Link to="/members-list/first-gen">
-              <Typography variant="h6" element="span">
-                MEMBERS
-              </Typography>
-            </Link>
-          </li>
-          <li>
-            <Link to="/search">
-              <Typography variant="h6" element="span">
-                SEARCH
-              </Typography>
-            </Link>
-          </li>
-        </ul>
-      </Navigation>
-      <Settings>
-        <TextSwitchButtonGroup
-          variant="h7"
-          textOn="onBackground"
-          buttons={[
-            {
-              text: 'Light',
-              isSwitchedOn: themeMode === 'light',
-              onClick: handleClickLightTheme,
-            },
-            {
-              text: 'Dark',
-              isSwitchedOn: themeMode === 'dark',
-              onClick: handleClickDarkTheme,
-            },
-            {
-              text: 'Auto',
-              isSwitchedOn: themeMode === 'auto',
-              onClick: handleClickAutoTheme,
-            },
-          ]}
-          css={css`
-            margin-bottom: 1em;
-          `}
-        />
-        <TextSwitchButtonGroup
-          variant="h7"
-          textOn="onBackground"
-          buttons={[
-            {
-              text: 'EN',
-              isSwitchedOn: language === 'en',
-              onClick: handleClickEnglish,
-            },
-            {
-              text: '日',
-              isSwitchedOn: language === 'ja',
-              onClick: handleClickJapanese,
-            },
-            {
-              text: '中',
-              isSwitchedOn: language === 'zh',
-              onClick: handleClickChinese,
-            },
-          ]}
-        />
-      </Settings>
+    <React.Fragment>
       <Header>
         <Typography
           variant="h1"
@@ -222,16 +93,16 @@ export const Discography: React.FC<DiscographyType> = props => {
                   number={cd.number}
                   type={cd.type}
                   title={cd.title}
-                  focusPerformers={cd.songs[0].focusPerformers}
                   elevation={3}
                   surfaceColor="standard"
                   borderRadius="m"
+                  padding="m"
                 />
               ))}
             </div>
           </div>
         ))}
       </Main>
-    </Container>
+    </React.Fragment>
   );
 };

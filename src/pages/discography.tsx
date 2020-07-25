@@ -10,7 +10,6 @@ import {
   DiscographyType,
 } from 'client/features/Discography/template';
 import { FocusPerformers } from 'server/actors/Discography/types';
-import { Context } from 'client/store/app/context';
 
 export const query = graphql`
   query DiscographyQuery {
@@ -120,19 +119,8 @@ const DiscographyContainer: React.FC<QueryResult> = props => {
       ? albumGroupsByYear
       : allCdGroupsByYear;
 
-  const { themeMode, language, setTheme, setLanguage } = React.useContext(
-    Context
-  );
-
   return (
-    <Discography
-      currentGroup={currentGroup}
-      cdGroupsByYear={cdGroupsByYear}
-      themeMode={themeMode}
-      language={language}
-      onSwitchTheme={setTheme}
-      onSwitchLanguage={setLanguage}
-    />
+    <Discography currentGroup={currentGroup} cdGroupsByYear={cdGroupsByYear} />
   );
 };
 

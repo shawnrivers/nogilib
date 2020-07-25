@@ -5,11 +5,13 @@ import { useTheme } from 'client/styles/tokens';
 import { BorderRadiusKey } from 'client/styles/borderRadius';
 import { ElevationKey } from 'client/styles/elevation';
 import { ThemeColorVariants } from 'client/styles/colors';
+import { SpacingKey } from 'client/styles/spacing';
 
 export type CardProps = React.HTMLAttributes<HTMLDivElement> & {
   borderRadius?: BorderRadiusKey;
   elevation?: ElevationKey;
   surfaceColor?: keyof ThemeColorVariants;
+  padding?: SpacingKey;
 };
 
 export const Card: React.FC<CardProps> = props => {
@@ -18,6 +20,7 @@ export const Card: React.FC<CardProps> = props => {
     borderRadius = 'l',
     elevation = 4,
     surfaceColor = 'standard',
+    padding = 'm',
     ...restProps
   } = props;
 
@@ -45,7 +48,7 @@ export const Card: React.FC<CardProps> = props => {
       >
         <div
           css={css`
-            padding: ${theme.spacing.m};
+            padding: ${theme.spacing[padding]};
           `}
         >
           {children}

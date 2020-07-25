@@ -34,7 +34,7 @@ export const Context = React.createContext<Context>({
   setLanguage: () => null,
 });
 
-export const ContextProvider: React.FC = props => {
+export const AppContextProvider: React.FC = props => {
   const [state, dispatch] = React.useReducer(
     reducer,
     getInitialState(getLocalStorageTheme(), getLocalStorageLanguage())
