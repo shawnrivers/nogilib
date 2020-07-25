@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import * as React from 'react';
 import styles from './searchresultcard.module.scss';
-import { BaseImage } from 'client/components/atoms/image/BaseImage';
+import { GatsbyImage } from 'client/components/atoms/image/GatsbyImage';
 import { LocalizedLink } from 'client/components/atoms/locales/LocalizedLink';
 import { classNames } from 'utils/strings';
 
@@ -41,7 +41,7 @@ export const SearchResultCard = ({
         className={classNames(styles.container, className)}
       >
         <div className={styles.imagePlaceholder}>
-          <BaseImage
+          <GatsbyImage
             src={imgSrc}
             alt={title}
             objectFit="cover"

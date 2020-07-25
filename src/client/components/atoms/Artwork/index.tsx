@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import * as React from 'react';
 import styles from './artwork.module.scss';
 import { classNames } from 'utils/strings';
-import { BaseImage } from 'client/components/atoms/image/BaseImage';
+import { GatsbyImage } from 'client/components/atoms/image/GatsbyImage';
 
 const backgroundFade = {
   isHovered: {
@@ -43,7 +43,7 @@ export const Artwork: React.FC<ArtworkProps> = ({
       className={classNames(styles.container, className)}
     >
       <div className={styles.wrapper}>
-        <BaseImage
+        <GatsbyImage
           src={imageSrc}
           alt={title}
           objectFit="cover"

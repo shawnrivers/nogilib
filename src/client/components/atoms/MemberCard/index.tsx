@@ -4,7 +4,7 @@ import { injectIntl } from 'react-intl';
 import styles from './membercard.module.scss';
 import { Language } from 'client/utils/constants';
 import { LocalizedLink } from 'client/components/atoms/locales/LocalizedLink';
-import { BaseImage } from 'client/components/atoms/image/BaseImage';
+import { GatsbyImage } from 'client/components/atoms/image/GatsbyImage';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 
 interface MemberCardProps {
@@ -81,7 +81,7 @@ export const MemberCard = injectIntl(
           >
             <div className={styles.imageContainer}>
               <div className={styles.wrapper}>
-                <BaseImage
+                <GatsbyImage
                   src={image}
                   alt={nameText}
                   objectFit="cover"
@@ -109,7 +109,7 @@ export const MemberCard = injectIntl(
         >
           <div className={styles.imageContainer}>
             <div className={styles.wrapper}>
-              <BaseImage
+              <GatsbyImage
                 src={image}
                 alt={nameText}
                 objectFit="cover"

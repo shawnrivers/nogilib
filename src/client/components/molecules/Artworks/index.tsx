@@ -4,7 +4,7 @@ import styles from './artworks.module.scss';
 import { ArrowLeftIcon } from 'client/components/atoms/icons/ArrowLeftIcon';
 import { ArrowRightIcon } from 'client/components/atoms/icons/ArrowRightIcon';
 import { classNames } from 'utils/strings';
-import { BaseImage } from 'client/components/atoms/image/BaseImage';
+import { GatsbyImage } from 'client/components/atoms/image/GatsbyImage';
 
 interface ArtworksProps {
   artworks: string[];
@@ -53,7 +53,7 @@ export const Artworks = ({ artworks, title, className }: ArtworksProps) => {
               onClick={handleClickNext}
               className={styles.imageWrapper}
             >
-              <BaseImage
+              <GatsbyImage
                 src={artwork}
                 alt={title}
                 objectFit="cover"

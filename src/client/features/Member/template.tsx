@@ -3,7 +3,7 @@ import * as React from 'react';
 import { FormattedDate } from 'react-intl';
 import styles from './member.module.scss';
 import { ArrowBackIcon } from 'client/components/atoms/icons/ArrowBackIcon';
-import { BaseImage } from 'client/components/atoms/image/BaseImage';
+import { GatsbyImage } from 'client/components/atoms/image/GatsbyImage';
 import { LocalizedList } from 'client/components/atoms/locales/LocalizedList';
 import { Message } from 'client/components/atoms/Message';
 import { PageContentLayout } from 'client/components/atoms/PageContentLayout';
@@ -163,7 +163,7 @@ export const Member = ({
                 className={styles.profileImageContainer}
               >
                 <div className={styles.profileImageWrapper}>
-                  <BaseImage
+                  <GatsbyImage
                     src={profileImage}
                     alt={name}
                     objectFit="cover"
@@ -381,7 +381,7 @@ export const Member = ({
                           key={index}
                         >
                           <div className={styles.wrapper}>
-                            <BaseImage
+                            <GatsbyImage
                               src={profileImage}
                               alt={name}
                               objectFit="cover"

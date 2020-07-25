@@ -3,7 +3,7 @@ import * as React from 'react';
 import { injectIntl } from 'react-intl';
 import styles from './song.module.scss';
 import { ArrowBackIcon } from 'client/components/atoms/icons/ArrowBackIcon';
-import { BaseImage } from 'client/components/atoms/image/BaseImage';
+import { GatsbyImage } from 'client/components/atoms/image/GatsbyImage';
 import { LocalizedList } from 'client/components/atoms/locales/LocalizedList';
 import { LocalizedNumber } from 'client/components/atoms/locales/LocalizedNumber';
 import { Message } from 'client/components/atoms/Message';
@@ -199,7 +199,7 @@ export const Song = ({
           >
             <motion.div variants={contentVariants} className={styles.artwork}>
               <div className={styles.artworkImageWrapper}>
-                <BaseImage
+                <GatsbyImage
                   src={artwork}
                   alt={title}
                   objectFit="cover"
