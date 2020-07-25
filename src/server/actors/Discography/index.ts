@@ -103,6 +103,7 @@ export class Discography {
   }): DiscographyResult {
     return {
       title: cdRaw.title,
+      key: cdRaw.key,
       type: cdRaw.type,
       number: cdRaw.number,
       release: cdRaw.release,

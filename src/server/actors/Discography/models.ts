@@ -23,6 +23,7 @@ export type CdSongResult = CdSongRaw & {
 // TODO: Rename to CdRaw
 export type DiscographyRaw = {
   title: CdTitle;
+  key: string;
   type: 'single' | 'album' | 'other';
   number: string;
   release: string;
@@ -42,6 +43,7 @@ export type DiscographyRaw = {
 export type DiscographyResult = Pick<
   DiscographyRaw,
   | 'title'
+  | 'key'
   | 'type'
   | 'number'
   | 'release'

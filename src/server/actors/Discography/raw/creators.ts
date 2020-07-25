@@ -1,3 +1,4 @@
+import { CDS } from 'server/actors/Discography/constants/cdTitle';
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import {
   SingleTitle,
@@ -18,6 +19,7 @@ export const createSingleRaw = (params: {
 }): DiscographyRaw => {
   return {
     title: params.title,
+    key: CDS[params.title].key,
     type: 'single',
     number: params.number,
     release: params.release,
@@ -50,6 +52,7 @@ export const createAlbumRaw = (params: {
 }): DiscographyRaw => {
   return {
     title: params.title,
+    key: CDS[params.title].key,
     type: 'album',
     number: params.number,
     release: params.release,
@@ -82,6 +85,7 @@ export const createOtherCdRaw = (params: {
 }): DiscographyRaw => {
   return {
     title: params.title,
+    key: CDS[params.title].key,
     type: 'other',
     number: params.number,
     release: params.release,
