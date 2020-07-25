@@ -26,6 +26,7 @@ export const ArtworkCard: React.FC<
         css={css`
           text-transform: capitalize;
           margin-top: 0.5em;
+          text-align: center;
         `}
       >
         {toCdNumber(number)} {type}
@@ -38,6 +39,7 @@ export const ArtworkCard: React.FC<
           overflow-x: hidden;
           white-space: nowrap;
           text-overflow: ellipsis;
+          text-align: center;
         `}
       >
         {title}

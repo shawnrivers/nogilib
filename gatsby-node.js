@@ -41,6 +41,15 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       value: slug + node.name + '/',
     });
   }
+
+  if (node.internal.type === 'DiscographyJson') {
+    const slug = createFilePath({ node, getNode, basePath: 'pages' });
+    createNodeField({
+      node,
+      name: 'slug',
+      value: slug + node.key + '/',
+    });
+  }
 };
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
@@ -105,11 +114,25 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     }
   `);
 
+  const discographyResult = await graphql(`
+    {
+      allDiscographyJson {
+        nodes {
+          fields {
+            slug
+          }
+          key
+        }
+      }
+    }
+  `);
+
   if (
     albumsResult.errors ||
     singlesResult.errors ||
     songsResult.errors ||
-    membersResult.errors
+    membersResult.errors ||
+    discographyResult.errors
   ) {
     reporter.panicOnBuild(`Error while running GraphQL query.`);
     return;
@@ -267,6 +290,16 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         },
       });
     }
+  });
+
+  discographyResult.data.allDiscographyJson.nodes.forEach(node => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve('./src/client/features/Album/container.tsx'),
+      context: {
+        key: node.key,
+      },
+    });
   });
 };
 

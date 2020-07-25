@@ -53,19 +53,19 @@ const Settings = styled.div`
 `;
 
 const NavigationAndSettings: React.FC = () => {
-  const { themeMode, language, setThemeMode, setLanguage } = useAppContext();
+  const { themeMode, language, setTheme, setLanguage } = useAppContext();
 
   const handleClickLightTheme = React.useCallback(() => {
-    setThemeMode('light');
-  }, [setThemeMode]);
+    setTheme('light');
+  }, [setTheme]);
 
   const handleClickDarkTheme = React.useCallback(() => {
-    setThemeMode('dark');
-  }, [setThemeMode]);
+    setTheme('dark');
+  }, [setTheme]);
 
   const handleClickAutoTheme = React.useCallback(() => {
-    setThemeMode('auto');
-  }, [setThemeMode]);
+    setTheme('auto');
+  }, [setTheme]);
 
   const handleClickEnglish = React.useCallback(() => {
     setLanguage('en');

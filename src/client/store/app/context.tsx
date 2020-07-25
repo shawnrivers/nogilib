@@ -18,7 +18,6 @@ type Context = {
   themeMode: ThemeMode;
   themeKey: ThemeKey;
   language: Language;
-  setThemeMode(themeMode: ThemeMode): void;
   setThemeKey(themeKey: ThemeKey): void;
   setTheme(themeMode: ThemeMode): void;
   setLanguage(language: Language): void;
@@ -28,7 +27,6 @@ export const Context = React.createContext<Context>({
   themeMode: 'auto',
   themeKey: 'light',
   language: 'ja',
-  setThemeMode: () => null,
   setThemeKey: () => null,
   setTheme: () => null,
   setLanguage: () => null,
@@ -94,7 +92,6 @@ export const AppContextProvider: React.FC = props => {
         themeMode: state.themeMode,
         themeKey: state.themeKey,
         language: state.language,
-        setThemeMode,
         setThemeKey,
         setTheme,
         setLanguage,
