@@ -81,7 +81,7 @@ export const Discography: React.FC<DiscographyType> = props => {
                 <ArtworkCard
                   key={cd.key}
                   to={getAlbumUrl(cd.key)}
-                  artwork={cd.artworks[0]}
+                  artwork={cd.artworks[0].url}
                   number={cd.number}
                   type={cd.type}
                   title={cd.title}

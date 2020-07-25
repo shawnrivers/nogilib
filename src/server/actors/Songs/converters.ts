@@ -5,7 +5,6 @@ import {
   DiscographyRawArray,
   DiscographyRawObject,
 } from 'server/actors/Discography/models';
-import { convertCdArtwork } from 'server/actors/Discography/raw/creators';
 
 type ConvertSongSingle = (params: {
   songTitle: SongRaw['title'];
@@ -118,12 +117,11 @@ export const convertSongArtwork: ConvertSongArtwork = ({
 
     for (const singleSong of single.songs) {
       if (singleSong.title === songTitle) {
-        return convertCdArtwork({
-          cdArtworkType: singleSong.inCdType[0],
-          cdHasArtworks: single.hasArtworks,
-          cdNumber: single.number,
-          cdKind: 'single',
-        });
+        return (
+          single.artworks.find(
+            artwork => artwork.type === singleSong.inCdType[0]
+          )?.url ?? NO_ARTWORK_IMAGE_SRC
+        );
       }
     }
   }
@@ -133,12 +131,10 @@ export const convertSongArtwork: ConvertSongArtwork = ({
 
     for (const albumSong of album.songs) {
       if (albumSong.title === songTitle) {
-        return convertCdArtwork({
-          cdArtworkType: albumSong.inCdType[0],
-          cdHasArtworks: album.hasArtworks,
-          cdNumber: album.number,
-          cdKind: 'album',
-        });
+        return (
+          album.artworks.find(artwork => artwork.type === albumSong.inCdType[0])
+            ?.url ?? NO_ARTWORK_IMAGE_SRC
+        );
       }
     }
   }
@@ -148,12 +144,11 @@ export const convertSongArtwork: ConvertSongArtwork = ({
 
     for (const otherCdSong of otherCd.songs) {
       if (otherCdSong.title === songTitle) {
-        return convertCdArtwork({
-          cdArtworkType: otherCdSong.inCdType[0],
-          cdHasArtworks: otherCd.hasArtworks,
-          cdNumber: otherCd.number,
-          cdKind: 'other',
-        });
+        return (
+          otherCd.artworks.find(
+            artwork => artwork.type === otherCdSong.inCdType[0]
+          )?.url ?? NO_ARTWORK_IMAGE_SRC
+        );
       }
     }
   }

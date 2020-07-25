@@ -37,7 +37,10 @@ export type DiscographyRaw = {
     skips: MemberNameKey[];
   };
   previousSingleNumber: string;
-  artworks: string[];
+  artworks: {
+    url: string;
+    type: CdType;
+  }[];
 };
 
 // TODO: Rename to CdResult

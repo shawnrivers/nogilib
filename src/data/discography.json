@@ -7,11 +7,26 @@
     "release": "2020-03-25",
     "shopping": [],
     "artworks": [
-      "artworks/singles/25/A.jpg",
-      "artworks/singles/25/B.jpg",
-      "artworks/singles/25/C.jpg",
-      "artworks/singles/25/D.jpg",
-      "artworks/singles/25/T.jpg"
+      {
+        "url": "artworks/singles/25/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/25/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/25/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/25/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "artworks/singles/25/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -156,11 +171,26 @@
     "release": "2019-09-04",
     "shopping": [],
     "artworks": [
-      "artworks/singles/24/A.jpg",
-      "artworks/singles/24/B.jpg",
-      "artworks/singles/24/C.jpg",
-      "artworks/singles/24/D.jpg",
-      "artworks/singles/24/T.jpg"
+      {
+        "url": "artworks/singles/24/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/24/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/24/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/24/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "artworks/singles/24/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -323,11 +353,26 @@
     "release": "2019-05-29",
     "shopping": [],
     "artworks": [
-      "artworks/singles/23/A.jpg",
-      "artworks/singles/23/B.jpg",
-      "artworks/singles/23/C.jpg",
-      "artworks/singles/23/D.jpg",
-      "artworks/singles/23/T.jpg"
+      {
+        "url": "artworks/singles/23/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/23/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/23/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/23/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "artworks/singles/23/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -493,11 +538,26 @@
     "release": "2018-11-14",
     "shopping": [],
     "artworks": [
-      "artworks/singles/22/A.jpg",
-      "artworks/singles/22/B.jpg",
-      "artworks/singles/22/C.jpg",
-      "artworks/singles/22/D.jpg",
-      "artworks/singles/22/T.jpg"
+      {
+        "url": "artworks/singles/22/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/22/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/22/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/22/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "artworks/singles/22/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -653,11 +713,26 @@
     "release": "2018-08-08",
     "shopping": [],
     "artworks": [
-      "artworks/singles/21/A.jpg",
-      "artworks/singles/21/B.jpg",
-      "artworks/singles/21/C.jpg",
-      "artworks/singles/21/D.jpg",
-      "artworks/singles/21/T.jpg"
+      {
+        "url": "artworks/singles/21/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/21/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/21/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/21/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "artworks/singles/21/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -813,11 +888,26 @@
     "release": "2018-04-25",
     "shopping": [],
     "artworks": [
-      "artworks/singles/20/A.jpg",
-      "artworks/singles/20/B.jpg",
-      "artworks/singles/20/C.jpg",
-      "artworks/singles/20/D.jpg",
-      "artworks/singles/20/T.jpg"
+      {
+        "url": "artworks/singles/20/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/20/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/20/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/20/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "artworks/singles/20/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -973,11 +1063,26 @@
     "release": "2017-10-11",
     "shopping": [],
     "artworks": [
-      "artworks/singles/19/A.jpg",
-      "artworks/singles/19/B.jpg",
-      "artworks/singles/19/C.jpg",
-      "artworks/singles/19/D.jpg",
-      "artworks/singles/19/T.jpg"
+      {
+        "url": "artworks/singles/19/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/19/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/19/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/19/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "artworks/singles/19/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -1141,11 +1246,26 @@
     "release": "2017-08-09",
     "shopping": [],
     "artworks": [
-      "artworks/singles/18/A.jpg",
-      "artworks/singles/18/B.jpg",
-      "artworks/singles/18/C.jpg",
-      "artworks/singles/18/D.jpg",
-      "artworks/singles/18/T.jpg"
+      {
+        "url": "artworks/singles/18/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/18/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/18/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/18/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "artworks/singles/18/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -1312,11 +1432,26 @@
     "release": "2017-03-22",
     "shopping": [],
     "artworks": [
-      "artworks/singles/17/A.jpg",
-      "artworks/singles/17/B.jpg",
-      "artworks/singles/17/C.jpg",
-      "artworks/singles/17/D.jpg",
-      "artworks/singles/17/T.jpg"
+      {
+        "url": "artworks/singles/17/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/17/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/17/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/17/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "artworks/singles/17/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -1477,11 +1612,26 @@
     "release": "2016-11-09",
     "shopping": [],
     "artworks": [
-      "artworks/singles/16/A.jpg",
-      "artworks/singles/16/B.jpg",
-      "artworks/singles/16/C.jpg",
-      "artworks/singles/16/D.jpg",
-      "artworks/singles/16/T.jpg"
+      {
+        "url": "artworks/singles/16/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/16/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/16/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/16/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "artworks/singles/16/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -1631,11 +1781,26 @@
     "release": "2016-07-27",
     "shopping": [],
     "artworks": [
-      "artworks/singles/15/A.jpg",
-      "artworks/singles/15/B.jpg",
-      "artworks/singles/15/C.jpg",
-      "artworks/singles/15/D.jpg",
-      "artworks/singles/15/T.jpg"
+      {
+        "url": "artworks/singles/15/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/15/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/15/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/15/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "artworks/singles/15/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -1788,11 +1953,26 @@
     "release": "2016-03-23",
     "shopping": [],
     "artworks": [
-      "artworks/singles/14/A.jpg",
-      "artworks/singles/14/B.jpg",
-      "artworks/singles/14/C.jpg",
-      "artworks/singles/14/D.jpg",
-      "artworks/singles/14/T.jpg"
+      {
+        "url": "artworks/singles/14/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/14/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/14/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/14/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "artworks/singles/14/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -1946,10 +2126,22 @@
     "release": "2015-10-28",
     "shopping": [],
     "artworks": [
-      "artworks/singles/13/A.jpg",
-      "artworks/singles/13/B.jpg",
-      "artworks/singles/13/C.jpg",
-      "artworks/singles/13/T.jpg"
+      {
+        "url": "artworks/singles/13/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/13/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/13/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/13/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -2089,10 +2281,22 @@
     "release": "2015-07-22",
     "shopping": [],
     "artworks": [
-      "artworks/singles/12/A.jpg",
-      "artworks/singles/12/B.jpg",
-      "artworks/singles/12/C.jpg",
-      "artworks/singles/12/T.jpg"
+      {
+        "url": "artworks/singles/12/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/12/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/12/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/12/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -2249,10 +2453,22 @@
     "release": "2015-03-18",
     "shopping": [],
     "artworks": [
-      "artworks/singles/11/A.jpg",
-      "artworks/singles/11/B.jpg",
-      "artworks/singles/11/C.jpg",
-      "artworks/singles/11/T.jpg"
+      {
+        "url": "artworks/singles/11/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/11/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/11/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/11/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -2390,10 +2606,22 @@
     "release": "2014-10-08",
     "shopping": [],
     "artworks": [
-      "artworks/singles/10/A.jpg",
-      "artworks/singles/10/B.jpg",
-      "artworks/singles/10/C.jpg",
-      "artworks/singles/10/T.jpg"
+      {
+        "url": "artworks/singles/10/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/10/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/10/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/10/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -2543,10 +2771,22 @@
     "release": "2014-07-09",
     "shopping": [],
     "artworks": [
-      "artworks/singles/9/A.jpg",
-      "artworks/singles/9/B.jpg",
-      "artworks/singles/9/C.jpg",
-      "artworks/singles/9/T.jpg"
+      {
+        "url": "artworks/singles/9/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/9/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/9/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/9/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -2691,10 +2931,22 @@
     "release": "2014-04-02",
     "shopping": [],
     "artworks": [
-      "artworks/singles/8/A.jpg",
-      "artworks/singles/8/B.jpg",
-      "artworks/singles/8/C.jpg",
-      "artworks/singles/8/T.jpg"
+      {
+        "url": "artworks/singles/8/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/8/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/8/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/8/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -2837,10 +3089,22 @@
     "release": "2013-11-27",
     "shopping": [],
     "artworks": [
-      "artworks/singles/7/A.jpg",
-      "artworks/singles/7/B.jpg",
-      "artworks/singles/7/C.jpg",
-      "artworks/singles/7/T.jpg"
+      {
+        "url": "artworks/singles/7/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/7/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/7/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/7/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -2985,10 +3249,22 @@
     "release": "2013-07-03",
     "shopping": [],
     "artworks": [
-      "artworks/singles/6/A.jpg",
-      "artworks/singles/6/B.jpg",
-      "artworks/singles/6/C.jpg",
-      "artworks/singles/6/T.jpg"
+      {
+        "url": "artworks/singles/6/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/6/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/6/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/6/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -3121,10 +3397,22 @@
     "release": "2013-03-31",
     "shopping": [],
     "artworks": [
-      "artworks/singles/5/A.jpg",
-      "artworks/singles/5/B.jpg",
-      "artworks/singles/5/C.jpg",
-      "artworks/singles/5/T.jpg"
+      {
+        "url": "artworks/singles/5/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/5/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/5/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/5/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -3261,10 +3549,22 @@
     "release": "2012-12-19",
     "shopping": [],
     "artworks": [
-      "artworks/singles/4/A.jpg",
-      "artworks/singles/4/B.jpg",
-      "artworks/singles/4/C.jpg",
-      "artworks/singles/4/T.jpg"
+      {
+        "url": "artworks/singles/4/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/4/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/4/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/4/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -3401,10 +3701,22 @@
     "release": "2012-08-22",
     "shopping": [],
     "artworks": [
-      "artworks/singles/3/A.jpg",
-      "artworks/singles/3/B.jpg",
-      "artworks/singles/3/C.jpg",
-      "artworks/singles/3/T.jpg"
+      {
+        "url": "artworks/singles/3/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/3/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/3/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/3/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -3539,10 +3851,22 @@
     "release": "2012-05-02",
     "shopping": [],
     "artworks": [
-      "artworks/singles/2/A.jpg",
-      "artworks/singles/2/B.jpg",
-      "artworks/singles/2/C.jpg",
-      "artworks/singles/2/T.jpg"
+      {
+        "url": "artworks/singles/2/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/2/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/2/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/2/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -3680,10 +4004,22 @@
     "release": "2012-02-22",
     "shopping": [],
     "artworks": [
-      "artworks/singles/1/A.jpg",
-      "artworks/singles/1/B.jpg",
-      "artworks/singles/1/C.jpg",
-      "artworks/singles/1/T.jpg"
+      {
+        "url": "artworks/singles/1/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/singles/1/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/singles/1/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/singles/1/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -3819,10 +4155,22 @@
     "release": "2019-04-17",
     "shopping": [],
     "artworks": [
-      "artworks/albums/4/L.jpg",
-      "artworks/albums/4/A.jpg",
-      "artworks/albums/4/B.jpg",
-      "artworks/albums/4/T.jpg"
+      {
+        "url": "artworks/albums/4/L.jpg",
+        "type": "L"
+      },
+      {
+        "url": "artworks/albums/4/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/albums/4/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/albums/4/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -4285,9 +4633,18 @@
     "release": "2018-01-10",
     "shopping": [],
     "artworks": [
-      "artworks/albums/U/L1.jpg",
-      "artworks/albums/U/L2.jpg",
-      "artworks/albums/U/T.jpg"
+      {
+        "url": "artworks/albums/U/L1.jpg",
+        "type": "L1"
+      },
+      {
+        "url": "artworks/albums/U/L2.jpg",
+        "type": "L2"
+      },
+      {
+        "url": "artworks/albums/U/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -4694,10 +5051,22 @@
     "release": "2017-05-24",
     "shopping": [],
     "artworks": [
-      "artworks/albums/3/A.jpg",
-      "artworks/albums/3/B.jpg",
-      "artworks/albums/3/L.jpg",
-      "artworks/albums/3/T.jpg"
+      {
+        "url": "artworks/albums/3/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/albums/3/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/albums/3/L.jpg",
+        "type": "L"
+      },
+      {
+        "url": "artworks/albums/3/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -5242,11 +5611,26 @@
     "release": "2016-05-25",
     "shopping": [],
     "artworks": [
-      "artworks/albums/2/A.jpg",
-      "artworks/albums/2/B.jpg",
-      "artworks/albums/2/C.jpg",
-      "artworks/albums/2/D.jpg",
-      "artworks/albums/2/T.jpg"
+      {
+        "url": "artworks/albums/2/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/albums/2/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/albums/2/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "artworks/albums/2/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "artworks/albums/2/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {
@@ -5848,9 +6232,18 @@
     "release": "2015-01-27",
     "shopping": [],
     "artworks": [
-      "artworks/albums/1/A.jpg",
-      "artworks/albums/1/B.jpg",
-      "artworks/albums/1/C.jpg"
+      {
+        "url": "artworks/albums/1/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "artworks/albums/1/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "artworks/albums/1/C.jpg",
+        "type": "C"
+      }
     ],
     "songs": [
       {
@@ -6356,7 +6749,10 @@
     "release": "2020-06-17",
     "shopping": [],
     "artworks": [
-      "artworks/others/1/T.jpg"
+      {
+        "url": "artworks/others/1/T.jpg",
+        "type": "T"
+      }
     ],
     "songs": [
       {

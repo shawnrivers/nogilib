@@ -10,7 +10,7 @@ import {
 } from 'server/actors/Discography/types';
 import { NO_ARTWORK_IMAGE_SRC } from 'server/constants/paths';
 
-export const convertCdArtwork = ({
+const convertCdArtwork = ({
   cdHasArtworks,
   cdNumber,
   cdArtworkType,
@@ -51,7 +51,7 @@ export const convertCdArtwork = ({
   return NO_ARTWORK_IMAGE_SRC;
 };
 
-export const convertCdArtworks = ({
+const convertCdArtworks = ({
   cdArtworkTypes,
   cdHasArtworks,
   cdNumber,
@@ -65,14 +65,15 @@ export const convertCdArtworks = ({
   const artworksResult = [];
 
   for (const cdArtworkType of cdArtworkTypes) {
-    artworksResult.push(
-      convertCdArtwork({
+    artworksResult.push({
+      url: convertCdArtwork({
         cdHasArtworks,
         cdNumber,
         cdArtworkType,
         cdKind,
-      })
-    );
+      }),
+      type: cdArtworkType,
+    });
   }
 
   return artworksResult;

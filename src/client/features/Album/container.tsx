@@ -11,7 +11,10 @@ export const query = graphql`
       key
       type
       number
-      artworks
+      artworks {
+        url
+        type
+      }
       release
       songs {
         focusPerformers {

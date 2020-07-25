@@ -52,7 +52,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
           `}
         >
           {album.artworks.map((artwork, i) => (
-            <GridArtworkImage key={i} src={artwork} alt={String(i + 1)} />
+            <GridArtworkImage key={i} src={artwork.url} alt={String(i + 1)} />
           ))}
         </div>
         <TextDivider text={<Message text="tracks" />} />
