@@ -1,11 +1,11 @@
 import { SongResult, SongRaw } from 'server/actors/Songs/models';
-import * as DiscographyConverter from 'server/actors/Discography/converters';
 import { NO_ARTWORK_IMAGE_SRC } from 'server/constants/paths';
 import { SongType } from 'server/actors/Songs/constants/songType';
 import {
   DiscographyRawArray,
   DiscographyRawObject,
 } from 'server/actors/Discography/models';
+import { convertCdArtwork } from 'server/actors/Discography/raw/creators';
 
 type ConvertSongSingle = (params: {
   songTitle: SongRaw['title'];
@@ -118,7 +118,7 @@ export const convertSongArtwork: ConvertSongArtwork = ({
 
     for (const singleSong of single.songs) {
       if (singleSong.title === songTitle) {
-        return DiscographyConverter.convertCdArtwork({
+        return convertCdArtwork({
           cdArtworkType: singleSong.inCdType[0],
           cdHasArtworks: single.hasArtworks,
           cdNumber: single.number,
@@ -133,7 +133,7 @@ export const convertSongArtwork: ConvertSongArtwork = ({
 
     for (const albumSong of album.songs) {
       if (albumSong.title === songTitle) {
-        return DiscographyConverter.convertCdArtwork({
+        return convertCdArtwork({
           cdArtworkType: albumSong.inCdType[0],
           cdHasArtworks: album.hasArtworks,
           cdNumber: album.number,
@@ -148,7 +148,7 @@ export const convertSongArtwork: ConvertSongArtwork = ({
 
     for (const otherCdSong of otherCd.songs) {
       if (otherCdSong.title === songTitle) {
-        return DiscographyConverter.convertCdArtwork({
+        return convertCdArtwork({
           cdArtworkType: otherCdSong.inCdType[0],
           cdHasArtworks: otherCd.hasArtworks,
           cdNumber: otherCd.number,

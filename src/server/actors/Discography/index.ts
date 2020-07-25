@@ -108,12 +108,7 @@ export class Discography {
       number: cdRaw.number,
       release: cdRaw.release,
       shopping: cdRaw.shopping,
-      artworks: CdConverters.convertCdArtworks({
-        cdArtworkTypes: cdRaw.artworkTypes,
-        cdHasArtworks: cdRaw.hasArtworks,
-        cdNumber: cdRaw.number,
-        cdKind: cdRaw.type,
-      }),
+      artworks: cdRaw.artworks,
       songs: CdConverters.convertCdSongs({
         cdSongsRaw: cdRaw.songs,
         songsRawObject,

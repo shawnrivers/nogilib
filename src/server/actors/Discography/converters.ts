@@ -1,6 +1,4 @@
-import * as fs from 'fs';
 import { SONGS, SongTitle } from 'server/actors/Songs/constants/songTitle';
-import { NO_ARTWORK_IMAGE_SRC } from 'server/constants/paths';
 import { SongsRawObject } from 'server/actors/Songs/models';
 import { MembersRawObject } from 'server/actors/Members/models';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
@@ -11,7 +9,6 @@ import {
   CdSongResult,
   CdSongRaw,
 } from 'server/actors/Discography/models';
-import { CdType } from 'server/actors/Discography/types';
 
 const convertPerformerNames = (
   memberNames: MemberNameKey[],
@@ -21,78 +18,6 @@ const convertPerformerNames = (
     const { lastName, firstName } = membersRawObject[name].nameNotations;
     return lastName + firstName;
   });
-};
-
-type ConvertCdArtwork = (params: {
-  cdHasArtworks: DiscographyRaw['hasArtworks'];
-  cdNumber: DiscographyRaw['number'];
-  cdArtworkType: CdType;
-  cdKind: DiscographyRaw['type'];
-}) => string;
-
-export const convertCdArtwork: ConvertCdArtwork = ({
-  cdHasArtworks,
-  cdNumber,
-  cdArtworkType,
-  cdKind,
-}) => {
-  let imageSrcBasePath = '';
-
-  switch (cdKind) {
-    case 'single':
-      imageSrcBasePath = 'artworks/singles';
-      break;
-    case 'album':
-      imageSrcBasePath = 'artworks/albums';
-      break;
-    case 'other':
-      imageSrcBasePath = 'artworks/others';
-      break;
-    default:
-      imageSrcBasePath = '';
-      break;
-  }
-
-  if (!cdHasArtworks) {
-    return NO_ARTWORK_IMAGE_SRC;
-  }
-
-  const imageSrc = `${imageSrcBasePath}/${cdNumber}/${cdArtworkType}.jpg`;
-
-  if (fs.existsSync('./src/assets/images/' + imageSrc)) {
-    return imageSrc;
-  }
-
-  return NO_ARTWORK_IMAGE_SRC;
-};
-
-type ConvertCdArtworks = (params: {
-  cdArtworkTypes: DiscographyRaw['artworkTypes'];
-  cdHasArtworks: DiscographyRaw['hasArtworks'];
-  cdNumber: DiscographyRaw['number'];
-  cdKind: DiscographyRaw['type'];
-}) => DiscographyResult['artworks'];
-
-export const convertCdArtworks: ConvertCdArtworks = ({
-  cdArtworkTypes,
-  cdHasArtworks,
-  cdNumber,
-  cdKind,
-}) => {
-  const artworksResult = [];
-
-  for (const cdArtworkType of cdArtworkTypes) {
-    artworksResult.push(
-      convertCdArtwork({
-        cdHasArtworks,
-        cdNumber,
-        cdArtworkType,
-        cdKind,
-      })
-    );
-  }
-
-  return artworksResult;
 };
 
 type ConvertCdSongType = (params: {

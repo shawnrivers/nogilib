@@ -37,6 +37,7 @@ export type DiscographyRaw = {
     skips: MemberNameKey[];
   };
   previousSingleNumber: string;
+  artworks: string[];
 };
 
 // TODO: Rename to CdResult
@@ -51,8 +52,8 @@ export type DiscographyResult = Pick<
   | 'underMembers'
   | 'behindPerformers'
   | 'previousSingleNumber'
+  | 'artworks'
 > & {
-  artworks: string[];
   songs: CdSongResult[];
 };
 export type DiscographyRawArray = DiscographyRaw[];

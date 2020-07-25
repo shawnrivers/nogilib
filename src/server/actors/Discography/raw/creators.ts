@@ -1,10 +1,140 @@
+import * as fs from 'fs';
 import { CDS } from 'server/actors/Discography/constants/cdTitle';
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import {
   SingleTitle,
   AlbumTitle,
   OtherCdTitle,
+  CdType,
+  CdTitle,
 } from 'server/actors/Discography/types';
+import { NO_ARTWORK_IMAGE_SRC } from 'server/constants/paths';
+
+export const convertCdArtwork = ({
+  cdHasArtworks,
+  cdNumber,
+  cdArtworkType,
+  cdKind,
+}: {
+  cdHasArtworks: DiscographyRaw['hasArtworks'];
+  cdNumber: DiscographyRaw['number'];
+  cdArtworkType: CdType;
+  cdKind: DiscographyRaw['type'];
+}): string => {
+  let imageSrcBasePath = '';
+
+  switch (cdKind) {
+    case 'single':
+      imageSrcBasePath = 'artworks/singles';
+      break;
+    case 'album':
+      imageSrcBasePath = 'artworks/albums';
+      break;
+    case 'other':
+      imageSrcBasePath = 'artworks/others';
+      break;
+    default:
+      imageSrcBasePath = '';
+      break;
+  }
+
+  if (!cdHasArtworks) {
+    return NO_ARTWORK_IMAGE_SRC;
+  }
+
+  const imageSrc = `${imageSrcBasePath}/${cdNumber}/${cdArtworkType}.jpg`;
+
+  if (fs.existsSync('./src/assets/images/' + imageSrc)) {
+    return imageSrc;
+  }
+
+  return NO_ARTWORK_IMAGE_SRC;
+};
+
+export const convertCdArtworks = ({
+  cdArtworkTypes,
+  cdHasArtworks,
+  cdNumber,
+  cdKind,
+}: {
+  cdArtworkTypes: DiscographyRaw['artworkTypes'];
+  cdHasArtworks: DiscographyRaw['hasArtworks'];
+  cdNumber: DiscographyRaw['number'];
+  cdKind: DiscographyRaw['type'];
+}): DiscographyRaw['artworks'] => {
+  const artworksResult = [];
+
+  for (const cdArtworkType of cdArtworkTypes) {
+    artworksResult.push(
+      convertCdArtwork({
+        cdHasArtworks,
+        cdNumber,
+        cdArtworkType,
+        cdKind,
+      })
+    );
+  }
+
+  return artworksResult;
+};
+
+const createCdRaw = ({
+  title,
+  number,
+  release,
+  cdTypes,
+  shopping,
+  songs,
+  type,
+  underMembers,
+  trainees,
+  skips,
+  previousSingleNumber,
+}: {
+  title: CdTitle;
+  number: DiscographyRaw['number'];
+  release: DiscographyRaw['release'];
+  cdTypes?: DiscographyRaw['artworkTypes'];
+  shopping?: DiscographyRaw['shopping'];
+  songs: Omit<DiscographyRaw['songs'][0], 'number'>[];
+  type: DiscographyRaw['type'];
+  underMembers?: DiscographyRaw['underMembers'];
+  trainees?: DiscographyRaw['behindPerformers']['trainees'];
+  skips?: DiscographyRaw['behindPerformers']['skips'];
+  previousSingleNumber: DiscographyRaw['previousSingleNumber'];
+}): DiscographyRaw => {
+  const hasArtworks =
+    cdTypes !== undefined && cdTypes.length > 0 ? true : false;
+  const artworkTypes = cdTypes ?? [];
+
+  return {
+    title,
+    key: CDS[title].key,
+    type,
+    number,
+    release,
+    hasArtworks,
+    artworkTypes,
+    artworks: convertCdArtworks({
+      cdArtworkTypes: artworkTypes,
+      cdHasArtworks: hasArtworks,
+      cdNumber: number,
+      cdKind: type,
+    }),
+    shopping: shopping ?? [],
+    songs: songs.map((song, index) => ({
+      number: index + 1,
+      title: song.title,
+      inCdType: song.inCdType,
+    })),
+    underMembers: underMembers ?? [],
+    behindPerformers: {
+      trainees: trainees ?? [],
+      skips: skips ?? [],
+    },
+    previousSingleNumber,
+  };
+};
 
 export const createSingleRaw = (params: {
   title: SingleTitle;
@@ -17,28 +147,19 @@ export const createSingleRaw = (params: {
   trainees?: DiscographyRaw['behindPerformers']['trainees'];
   skips?: DiscographyRaw['behindPerformers']['skips'];
 }): DiscographyRaw => {
-  return {
+  return createCdRaw({
     title: params.title,
-    key: CDS[params.title].key,
     type: 'single',
     number: params.number,
+    cdTypes: params.cdTypes,
     release: params.release,
-    hasArtworks:
-      params.cdTypes !== undefined && params.cdTypes.length > 0 ? true : false,
-    artworkTypes: params.cdTypes ?? [],
-    shopping: params.shopping ?? [],
-    songs: params.songs.map((song, index) => ({
-      number: index + 1,
-      title: song.title,
-      inCdType: song.inCdType,
-    })),
-    underMembers: params.underMembers ?? [],
-    behindPerformers: {
-      trainees: params.trainees ?? [],
-      skips: params.skips ?? [],
-    },
+    shopping: params.shopping,
+    songs: params.songs,
+    underMembers: params.underMembers,
+    trainees: params.trainees,
+    skips: params.skips,
     previousSingleNumber: params.number,
-  };
+  });
 };
 
 export const createAlbumRaw = (params: {
@@ -50,28 +171,16 @@ export const createAlbumRaw = (params: {
   shopping?: DiscographyRaw['shopping'];
   songs: Omit<DiscographyRaw['songs'][0], 'number'>[];
 }): DiscographyRaw => {
-  return {
+  return createCdRaw({
     title: params.title,
-    key: CDS[params.title].key,
     type: 'album',
     number: params.number,
+    cdTypes: params.cdTypes,
     release: params.release,
-    hasArtworks:
-      params.cdTypes !== undefined && params.cdTypes.length > 0 ? true : false,
-    artworkTypes: params.cdTypes ?? [],
-    shopping: params.shopping ?? [],
-    songs: params.songs.map((song, index) => ({
-      number: index + 1,
-      title: song.title,
-      inCdType: song.inCdType,
-    })),
-    underMembers: [],
-    behindPerformers: {
-      trainees: [],
-      skips: [],
-    },
+    shopping: params.shopping,
+    songs: params.songs,
     previousSingleNumber: params.previousSingle,
-  };
+  });
 };
 
 export const createOtherCdRaw = (params: {
@@ -83,26 +192,14 @@ export const createOtherCdRaw = (params: {
   shopping?: DiscographyRaw['shopping'];
   songs: Omit<DiscographyRaw['songs'][0], 'number'>[];
 }): DiscographyRaw => {
-  return {
+  return createCdRaw({
     title: params.title,
-    key: CDS[params.title].key,
     type: 'other',
     number: params.number,
+    cdTypes: params.cdTypes,
     release: params.release,
-    hasArtworks:
-      params.cdTypes !== undefined && params.cdTypes.length > 0 ? true : false,
-    artworkTypes: params.cdTypes ?? [],
-    shopping: params.shopping ?? [],
-    songs: params.songs.map((song, index) => ({
-      number: index + 1,
-      title: song.title,
-      inCdType: song.inCdType,
-    })),
-    underMembers: [],
-    behindPerformers: {
-      trainees: [],
-      skips: [],
-    },
+    shopping: params.shopping,
+    songs: params.songs,
     previousSingleNumber: params.previousSingle,
-  };
+  });
 };
