@@ -2,17 +2,24 @@ import { Site } from 'server/types/commons';
 import { SongTitle } from 'server/actors/Songs/constants/songTitle';
 import { SongType } from 'server/actors/Songs/constants/songType';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import {
-  CdTitle,
-  CdType,
-  FocusPerformers,
-} from 'server/actors/Discography/types';
+import { CdTitle, CdType } from 'server/actors/Discography/types';
+import { UnitName } from 'server/actors/Units/constants/unitName';
 
 export type CdSongRaw = {
   number: number;
   title: SongTitle;
   inCdType: CdType[];
 };
+
+export type FocusPerformers =
+  | {
+      type: 'center' | 'solo' | '';
+      members: MemberNameKey[];
+    }
+  | {
+      type: 'unit';
+      members: (MemberNameKey | UnitName)[];
+    };
 
 export type CdSongResult = CdSongRaw & {
   key: string;

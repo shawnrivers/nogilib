@@ -10,7 +10,7 @@ import {
 } from 'client/features/MembersNew/template';
 
 export const query = graphql`
-  query NewMembersQuery {
+  query {
     allMembersJson {
       nodes {
         name

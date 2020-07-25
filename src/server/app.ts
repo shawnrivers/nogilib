@@ -45,7 +45,6 @@ const unitsResultArray = units.convertUnits({
 });
 const discographyResultArray = discography.convertDiscography({
   songsRawObject: songs.rawObject,
-  membersRawObject: members.rawObject,
 });
 
 const writeFile = (path: string, data: any[]) => {

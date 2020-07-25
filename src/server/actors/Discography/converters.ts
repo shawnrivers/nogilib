@@ -1,7 +1,5 @@
 import { SONGS, SongTitle } from 'server/actors/Songs/constants/songTitle';
 import { SongsRawObject } from 'server/actors/Songs/models';
-import { MembersRawObject } from 'server/actors/Members/models';
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { SongType } from 'server/actors/Songs/constants/songType';
 import {
   DiscographyRaw,
@@ -9,16 +7,6 @@ import {
   CdSongResult,
   CdSongRaw,
 } from 'server/actors/Discography/models';
-
-const convertPerformerNames = (
-  memberNames: MemberNameKey[],
-  membersRawObject: MembersRawObject
-): string[] => {
-  return memberNames.map(name => {
-    const { lastName, firstName } = membersRawObject[name].nameNotations;
-    return lastName + firstName;
-  });
-};
 
 type ConvertCdSongType = (params: {
   cdSongTitle: CdSongRaw['title'];
@@ -43,17 +31,15 @@ export const convertCdSongType: ConvertCdSongType = ({
 type ConvertCdSongFocusPerformers = (params: {
   cdSongTitle: CdSongRaw['title'];
   songsRawObject: SongsRawObject;
-  membersRawObject: MembersRawObject;
 }) => CdSongResult['focusPerformers'];
 
 export const convertCdSongFocusPerformers: ConvertCdSongFocusPerformers = ({
   cdSongTitle,
   songsRawObject,
-  membersRawObject,
 }) => {
   let focusPerformersResult: CdSongResult['focusPerformers'] = {
     type: '',
-    name: [],
+    members: [],
   };
 
   const song = songsRawObject[cdSongTitle];
@@ -74,54 +60,51 @@ export const convertCdSongFocusPerformers: ConvertCdSongFocusPerformers = ({
       if (song.performers.center !== null) {
         focusPerformersResult = {
           type: 'center',
-          name: convertPerformerNames(song.performers.center, membersRawObject),
+          members: song.performers.center,
         };
       } else {
         focusPerformersResult = {
           type: '',
-          name: [],
+          members: [],
         };
       }
     } else if (song.type === SongType.Solo) {
       focusPerformersResult = {
         type: 'solo',
-        name: convertPerformerNames(song.formations.firstRow, membersRawObject),
+        members: song.formations.firstRow,
       };
     } else if (song.type === SongType.Unit) {
       if (song.performers.unit !== '') {
         focusPerformersResult = {
           type: 'unit',
-          name: [song.performers.unit],
+          members: [song.performers.unit],
         };
       } else if (song.performers.center.length > 0) {
         focusPerformersResult = {
           type: 'center',
-          name: convertPerformerNames(song.performers.center, membersRawObject),
+          members: song.performers.center,
         };
       } else {
         focusPerformersResult = {
           type: 'unit',
-          name: convertPerformerNames(
-            [
-              ...song.formations.firstRow,
-              ...song.formations.secondRow,
-              ...song.formations.thirdRow,
-              ...song.formations.fourthRow,
-            ],
-            membersRawObject
-          ),
+          members: [
+            ...song.formations.firstRow,
+            ...song.formations.secondRow,
+            ...song.formations.thirdRow,
+            ...song.formations.fourthRow,
+          ],
         };
       }
     } else if (song.type === SongType.None) {
       if (song.performers.center.length > 0) {
         focusPerformersResult = {
           type: '',
-          name: convertPerformerNames(song.performers.center, membersRawObject),
+          members: song.performers.center,
         };
       } else {
         focusPerformersResult = {
           type: '',
-          name: [],
+          members: [],
         };
       }
     }
@@ -133,13 +116,11 @@ export const convertCdSongFocusPerformers: ConvertCdSongFocusPerformers = ({
 type ConvertCdSongs = (params: {
   cdSongsRaw: DiscographyRaw['songs'];
   songsRawObject: SongsRawObject;
-  membersRawObject: MembersRawObject;
 }) => DiscographyResult['songs'];
 
 export const convertCdSongs: ConvertCdSongs = ({
   cdSongsRaw,
   songsRawObject,
-  membersRawObject,
 }) => {
   return cdSongsRaw.map(cdSongRaw => {
     const { number, title, inCdType } = cdSongRaw;
@@ -156,7 +137,6 @@ export const convertCdSongs: ConvertCdSongs = ({
       focusPerformers: convertCdSongFocusPerformers({
         cdSongTitle: title,
         songsRawObject,
-        membersRawObject,
       }),
     };
   });

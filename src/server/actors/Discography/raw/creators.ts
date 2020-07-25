@@ -10,7 +10,7 @@ import {
 } from 'server/actors/Discography/types';
 import { NO_ARTWORK_IMAGE_SRC } from 'server/constants/paths';
 
-const convertCdArtwork = ({
+export const convertCdArtwork = ({
   cdHasArtworks,
   cdNumber,
   cdArtworkType,

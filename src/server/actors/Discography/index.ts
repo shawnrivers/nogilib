@@ -1,5 +1,4 @@
 import * as CdConverters from 'server/actors/Discography/converters';
-import { MembersRawObject } from 'server/actors/Members/models';
 import { SongsRawObject } from 'server/actors/Songs/models';
 import { arrayToObject } from 'utils/arrays';
 import {
@@ -75,17 +74,13 @@ export class Discography {
 
   public convertDiscography({
     songsRawObject,
-    membersRawObject,
   }: {
     songsRawObject: SongsRawObject;
-    membersRawObject: MembersRawObject;
   }): DiscographyResultArray {
     const discographyResult = [];
 
     for (const cdRaw of this.rawDataArray) {
-      discographyResult.push(
-        this.convertCd({ cdRaw, songsRawObject, membersRawObject })
-      );
+      discographyResult.push(this.convertCd({ cdRaw, songsRawObject }));
     }
 
     this.resultData = discographyResult;
@@ -95,11 +90,9 @@ export class Discography {
   private convertCd({
     cdRaw,
     songsRawObject,
-    membersRawObject,
   }: {
     cdRaw: DiscographyRaw;
     songsRawObject: SongsRawObject;
-    membersRawObject: MembersRawObject;
   }): DiscographyResult {
     return {
       title: cdRaw.title,
@@ -112,7 +105,6 @@ export class Discography {
       songs: CdConverters.convertCdSongs({
         cdSongsRaw: cdRaw.songs,
         songsRawObject,
-        membersRawObject,
       }),
       underMembers: cdRaw.underMembers,
       behindPerformers: cdRaw.behindPerformers,

@@ -5,72 +5,11 @@ import { SongTitle } from 'server/actors/Songs/constants/songTitle';
 import { SongType } from 'server/actors/Songs/constants/songType';
 import { songsRawArray } from 'server/actors/Songs/raw';
 import {
-  convertCdArtwork,
   convertCdSongType,
   convertCdSongFocusPerformers,
 } from 'server/actors/Discography/converters';
 
 const songsRawObject = new Songs(songsRawArray).rawObject;
-const membersRawObject = new Members(membersRawArray).rawObject;
-
-describe('convertCdArtwork', () => {
-  test('should return correspond image path when image exists in the file system', () => {
-    expect(
-      convertCdArtwork({
-        cdHasArtworks: true,
-        cdNumber: '25',
-        cdArtworkType: 'A',
-        cdKind: 'single',
-      })
-    ).toEqual('artworks/singles/25/A.jpg');
-    expect(
-      convertCdArtwork({
-        cdHasArtworks: true,
-        cdNumber: '4',
-        cdArtworkType: 'A',
-        cdKind: 'album',
-      })
-    ).toEqual('artworks/albums/4/A.jpg');
-    expect(
-      convertCdArtwork({
-        cdHasArtworks: true,
-        cdNumber: '1',
-        cdArtworkType: 'T',
-        cdKind: 'other',
-      })
-    ).toEqual('artworks/others/1/T.jpg');
-  });
-
-  test('should return no artwork image path when cdHasArtworks flag is false', () => {
-    expect(
-      convertCdArtwork({
-        cdHasArtworks: false,
-        cdNumber: '100',
-        cdArtworkType: 'A',
-        cdKind: 'single',
-      })
-    ).toEqual('artworks/artwork_no_image.png');
-    expect(
-      convertCdArtwork({
-        cdHasArtworks: false,
-        cdNumber: '25',
-        cdArtworkType: 'A',
-        cdKind: 'single',
-      })
-    ).toEqual('artworks/artwork_no_image.png');
-  });
-
-  test("should return no artwork image path when image doesn't exist in the file system", () => {
-    expect(
-      convertCdArtwork({
-        cdHasArtworks: true,
-        cdNumber: '100',
-        cdArtworkType: 'A',
-        cdKind: 'single',
-      })
-    ).toEqual('artworks/artwork_no_image.png');
-  });
-});
 
 describe('convertCdSongType', () => {
   test("should return 'coupling' when cd song title is 'OVERTURE'", () => {
@@ -114,11 +53,10 @@ describe('convertCdSongFocusPerformers', () => {
       convertCdSongFocusPerformers({
         cdSongTitle: SongTitle.Overture,
         songsRawObject,
-        membersRawObject,
       })
     ).toEqual({
       type: '',
-      name: [],
+      members: [],
     });
   });
 
@@ -127,11 +65,10 @@ describe('convertCdSongFocusPerformers', () => {
       convertCdSongFocusPerformers({
         cdSongTitle: songsRawObject['じゃあね。'].title,
         songsRawObject,
-        membersRawObject,
       })
     ).toEqual({
       type: 'solo',
-      name: ['白石麻衣'],
+      members: ['shiraishimai'],
     });
   });
 
@@ -140,11 +77,10 @@ describe('convertCdSongFocusPerformers', () => {
       convertCdSongFocusPerformers({
         cdSongTitle: songsRawObject['白米様'].title,
         songsRawObject,
-        membersRawObject,
       })
     ).toEqual({
       type: 'unit',
-      name: ['さゆりんご軍団'],
+      members: ['さゆりんご軍団'],
     });
   });
 
@@ -153,22 +89,20 @@ describe('convertCdSongFocusPerformers', () => {
       convertCdSongFocusPerformers({
         cdSongTitle: songsRawObject['ここじゃないどこか'].title,
         songsRawObject,
-        membersRawObject,
       })
     ).toEqual({
       type: 'unit',
-      name: ['生田絵梨花', '生駒里奈', '星野みなみ'],
+      members: ['ikutaerika', 'ikomarina', 'hoshinominami'],
     });
 
     expect(
       convertCdSongFocusPerformers({
         cdSongTitle: songsRawObject['せっかちなかたつむり'].title,
         songsRawObject,
-        membersRawObject,
       })
     ).toEqual({
       type: 'center',
-      name: ['松村沙友理'],
+      members: ['matsumurasayuri'],
     });
   });
 
@@ -177,33 +111,30 @@ describe('convertCdSongFocusPerformers', () => {
       convertCdSongFocusPerformers({
         cdSongTitle: songsRawObject['インフルエンサー'].title,
         songsRawObject,
-        membersRawObject,
       })
     ).toEqual({
       type: 'center',
-      name: ['西野七瀬', '白石麻衣'],
+      members: ['nishinonanase', 'shiraishimai'],
     });
 
     expect(
       convertCdSongFocusPerformers({
         cdSongTitle: songsRawObject['裸足でSummer'].title,
         songsRawObject,
-        membersRawObject,
       })
     ).toEqual({
       type: 'center',
-      name: ['齋藤飛鳥'],
+      members: ['saitouasuka'],
     });
 
     expect(
       convertCdSongFocusPerformers({
         cdSongTitle: songsRawObject['三番目の風'].title,
         songsRawObject,
-        membersRawObject,
       })
     ).toEqual({
       type: 'center',
-      name: ['大園桃子'],
+      members: ['oozonomomoko'],
     });
   });
 });

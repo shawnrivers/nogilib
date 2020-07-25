@@ -38,9 +38,4 @@ export type CdTitle = SingleTitle | AlbumTitle | OtherCdTitle;
 
 export type FocusPerformersType = 'center' | 'solo' | 'unit' | '';
 
-export type FocusPerformers = {
-  type: FocusPerformersType;
-  name: string[];
-};
-
 export type CdType = 'A' | 'B' | 'C' | 'D' | 'T' | 'L' | 'L1' | 'L2';

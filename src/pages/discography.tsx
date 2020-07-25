@@ -8,10 +8,9 @@ import {
   Discography,
   DiscographyType,
 } from 'client/features/Discography/template';
-import { FocusPerformers } from 'server/actors/Discography/types';
 
 export const query = graphql`
-  query DiscographyQuery {
+  query {
     allDiscographyJson {
       nodes {
         title
@@ -23,12 +22,6 @@ export const query = graphql`
           type
         }
         release
-        songs {
-          focusPerformers {
-            name
-            type
-          }
-        }
       }
     }
   }
@@ -41,9 +34,6 @@ type QueryResultDiscography = {
   number: DiscographyResult['number'];
   artworks: DiscographyResult['artworks'];
   release: DiscographyResult['release'];
-  songs: {
-    focusPerformers: FocusPerformers;
-  }[];
 };
 
 type QueryResult = {

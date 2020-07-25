@@ -10,6 +10,7 @@ import { GridArtworkImage } from 'client/components/atoms/image/GirdArtworkImage
 import { TextDivider } from 'client/features/Discography/components/atoms/TextDivider';
 import { AlbumPageProps } from 'client/features/Album/container';
 import { Card } from 'client/components/atoms/card/Card';
+import { MemberCard } from 'client/components/molecules/card/MemberCard';
 
 export const AlbumPage: React.FC<AlbumPageProps> = props => {
   const theme = useAppTheme();
@@ -93,6 +94,35 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
               </Card>
             ))}
           </div>
+          {props.centers.length > 0 ? (
+            <React.Fragment>
+              <TextDivider text={<Message text="centers" />} />
+              <div
+                css={css`
+                  display: grid;
+                  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+                  grid-template-rows: auto;
+                  grid-gap: ${theme.spacing.m};
+                  justify-content: center;
+                `}
+              >
+                {props.centers.map(member => (
+                  <MemberCard
+                    key={member.name}
+                    profileImage={member.profileImage}
+                    name={
+                      member.nameNotations.lastName +
+                      member.nameNotations.firstName
+                    }
+                    elevation={3}
+                    surfaceColor="standard"
+                    borderRadius="m"
+                    padding="m"
+                  />
+                ))}
+              </div>
+            </React.Fragment>
+          ) : null}
           <TextDivider text={<Message text="artworks" />} />
           <div
             css={css`
