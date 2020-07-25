@@ -1,7 +1,7 @@
 /**@jsx jsx */
 import { css, jsx } from '@emotion/core';
 import * as React from 'react';
-import { ArtworkImage } from 'client/features/Discography/components/atoms/ArtworkImage';
+import { ArtworkImage } from 'client/components/atoms/image/ArtworkImage';
 import { Typography } from 'client/components/atoms/Typography';
 import { toCdNumber } from 'utils/strings';
 import { FocusPerformers } from 'server/actors/Discography/types';

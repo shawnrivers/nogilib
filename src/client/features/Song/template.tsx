@@ -1,26 +1,26 @@
-import { motion } from "framer-motion";
-import * as React from "react";
-import { injectIntl } from "react-intl";
-import styles from "./song.module.scss";
-import { ArrowBackIcon } from "client/components/atoms/icons/ArrowBackIcon";
-import { Image } from "client/components/atoms/Image";
-import { LocalizedList } from "client/components/atoms/locales/LocalizedList";
-import { LocalizedNumber } from "client/components/atoms/locales/LocalizedNumber";
-import { Message } from "client/components/atoms/Message";
-import { PageContentLayout } from "client/components/atoms/PageContentLayout";
-import { Language } from "client/utils/constants";
-import { useScrollRestoration } from "client/hooks/useScrollRestoration";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { KOJIHARU_IMAGE_SRC } from "server/constants/paths";
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
-import { MemberCard } from "client/components/atoms/MemberCard";
+import { motion } from 'framer-motion';
+import * as React from 'react';
+import { injectIntl } from 'react-intl';
+import styles from './song.module.scss';
+import { ArrowBackIcon } from 'client/components/atoms/icons/ArrowBackIcon';
+import { BaseImage } from 'client/components/atoms/image/BaseImage';
+import { LocalizedList } from 'client/components/atoms/locales/LocalizedList';
+import { LocalizedNumber } from 'client/components/atoms/locales/LocalizedNumber';
+import { Message } from 'client/components/atoms/Message';
+import { PageContentLayout } from 'client/components/atoms/PageContentLayout';
+import { Language } from 'client/utils/constants';
+import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
+import { SongType } from 'server/actors/Songs/constants/songType';
+import { KOJIHARU_IMAGE_SRC } from 'server/constants/paths';
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { MemberCard } from 'client/components/atoms/MemberCard';
 
 const containerVariants = {
   visible: {
     opacity: 1,
     x: 0,
     transition: {
-      when: "beforeChildren",
+      when: 'beforeChildren',
     },
   },
   hidden: {
@@ -45,7 +45,7 @@ const contentContainerVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      when: "beforeChildren",
+      when: 'beforeChildren',
       staggerChildren: 0.2,
     },
   },
@@ -76,11 +76,11 @@ const PerformersTag = injectIntl(
     tagName: string;
     intl: any;
   }) => {
-    if (tagName === "") {
+    if (tagName === '') {
       return null;
     }
 
-    if (tagName.includes("generation")) {
+    if (tagName.includes('generation')) {
       return (
         <p className={styles.caption}>
           #<Message text={tagName} />
@@ -88,11 +88,11 @@ const PerformersTag = injectIntl(
       );
     }
 
-    if (tagName === "selected" || tagName === "under") {
+    if (tagName === 'selected' || tagName === 'under') {
       return locale === Language.En ? (
         <p className={styles.caption}>
-          #<LocalizedNumber num={singleNumber} type="cd" />{" "}
-          <Message text="single" /> <Message text={tagName} />{" "}
+          #<LocalizedNumber num={singleNumber} type="cd" />{' '}
+          <Message text="single" /> <Message text={tagName} />{' '}
           <Message text="members" />
         </p>
       ) : (
@@ -113,10 +113,10 @@ const KojiharuCard = ({ isCenter }: { isCenter: boolean }) => (
   <MemberCard
     nameKey={MemberNameKey.KojimaHaruna}
     name={{
-      lastName: "小嶋",
-      lastNameEn: "kojima",
-      firstName: "陽菜",
-      firstNameEn: "haruna",
+      lastName: '小嶋',
+      lastNameEn: 'kojima',
+      firstName: '陽菜',
+      firstNameEn: 'haruna',
     }}
     image={KOJIHARU_IMAGE_SRC}
     isCenter={isCenter}
@@ -199,7 +199,7 @@ export const Song = ({
           >
             <motion.div variants={contentVariants} className={styles.artwork}>
               <div className={styles.artworkImageWrapper}>
-                <Image
+                <BaseImage
                   src={artwork}
                   alt={title}
                   objectFit="cover"
@@ -293,7 +293,7 @@ export const Song = ({
                 <section className={styles.section}>
                   <h2
                     className={
-                      styles.subheading + " " + styles.creatorsContainer
+                      styles.subheading + ' ' + styles.creatorsContainer
                     }
                   >
                     <Message text="creators" />

@@ -19,11 +19,11 @@ type DataType = {
   };
 };
 
-export type ImageProps = {
+export type BaseImageProps = {
   src: string;
 } & React.ComponentProps<typeof Img>;
 
-export const Image: React.FC<ImageProps> = ({ src, ...props }) => {
+export const BaseImage: React.FC<BaseImageProps> = ({ src, ...props }) => {
   const data: DataType = useStaticQuery(graphql`
     query {
       allFile(filter: { internal: { mediaType: { regex: "images/" } } }) {

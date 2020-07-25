@@ -1,10 +1,10 @@
-import * as React from "react";
-import { motion } from "framer-motion";
-import styles from "./artworks.module.scss";
-import { ArrowLeftIcon } from "client/components/atoms/icons/ArrowLeftIcon";
-import { ArrowRightIcon } from "client/components/atoms/icons/ArrowRightIcon";
-import { classNames } from "utils/strings";
-import { Image } from "client/components/atoms/Image";
+import * as React from 'react';
+import { motion } from 'framer-motion';
+import styles from './artworks.module.scss';
+import { ArrowLeftIcon } from 'client/components/atoms/icons/ArrowLeftIcon';
+import { ArrowRightIcon } from 'client/components/atoms/icons/ArrowRightIcon';
+import { classNames } from 'utils/strings';
+import { BaseImage } from 'client/components/atoms/image/BaseImage';
 
 interface ArtworksProps {
   artworks: string[];
@@ -53,7 +53,7 @@ export const Artworks = ({ artworks, title, className }: ArtworksProps) => {
               onClick={handleClickNext}
               className={styles.imageWrapper}
             >
-              <Image
+              <BaseImage
                 src={artwork}
                 alt={title}
                 objectFit="cover"
@@ -80,7 +80,7 @@ export const Artworks = ({ artworks, title, className }: ArtworksProps) => {
           >
             <div
               style={{
-                backgroundColor: index === artworkIndex ? "#757575" : "#ffffff",
+                backgroundColor: index === artworkIndex ? '#757575' : '#ffffff',
               }}
               className={styles.dot}
             />

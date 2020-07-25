@@ -97,7 +97,7 @@ const NavigationAndSettings: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link to="/members-list/first-gen">
+            <Link to="/members">
               <Typography variant="h6" element="span">
                 MEMBERS
               </Typography>

@@ -1,13 +1,13 @@
-import { motion } from "framer-motion";
-import * as React from "react";
-import styles from "./searchresultcard.module.scss";
-import { Image } from "client/components/atoms/Image";
-import { LocalizedLink } from "client/components/atoms/locales/LocalizedLink";
-import { classNames } from "utils/strings";
+import { motion } from 'framer-motion';
+import * as React from 'react';
+import styles from './searchresultcard.module.scss';
+import { BaseImage } from 'client/components/atoms/image/BaseImage';
+import { LocalizedLink } from 'client/components/atoms/locales/LocalizedLink';
+import { classNames } from 'utils/strings';
 
 const backgroundHover = {
   hover: {
-    backgroundColor: "#757575",
+    backgroundColor: '#757575',
     scale: 1.05,
   },
 };
@@ -41,7 +41,7 @@ export const SearchResultCard = ({
         className={classNames(styles.container, className)}
       >
         <div className={styles.imagePlaceholder}>
-          <Image
+          <BaseImage
             src={imgSrc}
             alt={title}
             objectFit="cover"
@@ -51,13 +51,13 @@ export const SearchResultCard = ({
         </div>
         <div className={styles.text}>
           <motion.h3
-            animate={{ color: isHovered ? "#ffffff" : "#595959" }}
+            animate={{ color: isHovered ? '#ffffff' : '#595959' }}
             className={styles.title}
           >
             {title}
           </motion.h3>
           <motion.p
-            animate={{ color: isHovered ? "#ffffff" : "#757575" }}
+            animate={{ color: isHovered ? '#ffffff' : '#757575' }}
             className={styles.caption}
           >
             <span>{caption}</span>

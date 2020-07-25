@@ -1,10 +1,13 @@
 /**@jsx jsx */
 import { css, jsx } from '@emotion/core';
 import * as React from 'react';
-import { Image, ImageProps } from 'client/components/atoms/Image';
+import {
+  BaseImage,
+  BaseImageProps,
+} from 'client/components/atoms/image/BaseImage';
 import { useTheme } from 'client/styles/tokens';
 
-type ArtworkProps = ImageProps & {
+type ArtworkProps = BaseImageProps & {
   src: string;
 };
 
@@ -15,8 +18,8 @@ const Artwork: React.FC<ArtworkProps> = props => {
   return (
     <div
       css={css`
-        padding-top: 100%;
         width: 100%;
+        height: 100%;
         position: relative;
         border-radius: ${theme.borderRadius.m};
         overflow: hidden;
@@ -26,13 +29,13 @@ const Artwork: React.FC<ArtworkProps> = props => {
         css={css`
           background-color: ${theme.colors.theme.surface.variant0};
           top: 0;
+          right: 0;
+          bottom: 0;
           left: 0;
-          width: 100%;
-          height: 100%;
           position: absolute;
         `}
       >
-        <Image
+        <BaseImage
           src={src}
           alt={alt}
           objectFit="cover"
@@ -64,9 +67,9 @@ export const ArtworkImage: React.FC<ArtworkProps> = props => {
         css={css`
           position: absolute;
           top: 0;
+          right: 0;
+          bottom: 0;
           left: 0;
-          width: 100%;
-          height: 100%;
           filter: blur(4px);
         `}
       >
@@ -76,9 +79,9 @@ export const ArtworkImage: React.FC<ArtworkProps> = props => {
         css={css`
           position: absolute;
           top: 0;
+          right: 0;
+          bottom: 0;
           left: 0;
-          width: 100%;
-          height: 100%;
         `}
       >
         <Artwork src={src} alt={alt} {...restProps} />

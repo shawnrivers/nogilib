@@ -9,6 +9,7 @@ import { Header, Main } from 'client/components/templates/Page';
 import { TextDivider } from 'client/features/Discography/components/atoms/TextDivider';
 import { DiscographyResult } from 'server/actors/Discography/models';
 import { FocusPerformers } from 'server/actors/Discography/types';
+import { useTheme } from 'client/styles/tokens';
 
 export type CdGroupByYear = {
   year: number;
@@ -32,6 +33,7 @@ export type DiscographyType = {
 
 export const Discography: React.FC<DiscographyType> = props => {
   const { currentGroup, cdGroupsByYear } = props;
+  const theme = useTheme();
 
   return (
     <React.Fragment>
@@ -80,7 +82,7 @@ export const Discography: React.FC<DiscographyType> = props => {
                 display: grid;
                 grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
                 grid-template-rows: auto;
-                grid-gap: 40px;
+                grid-gap: ${theme.spacing.xl};
                 justify-content: center;
                 max-width: 800px;
                 margin: auto;

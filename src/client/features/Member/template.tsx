@@ -1,26 +1,26 @@
-import { motion } from "framer-motion";
-import * as React from "react";
-import { FormattedDate } from "react-intl";
-import styles from "./member.module.scss";
-import { ArrowBackIcon } from "client/components/atoms/icons/ArrowBackIcon";
-import { Image } from "client/components/atoms/Image";
-import { LocalizedList } from "client/components/atoms/locales/LocalizedList";
-import { Message } from "client/components/atoms/Message";
-import { PageContentLayout } from "client/components/atoms/PageContentLayout";
-import { PositionBadge } from "client/components/atoms/PositionBadge";
-import { PositionCounter } from "client/components/atoms/PositionCounter";
-import { useScrollRestoration } from "client/hooks/useScrollRestoration";
-import { GLOW_STICK_COLORS } from "client/utils/constants";
-import { classNames } from "utils/strings";
-import { GlowStickColorType } from "server/actors/Members/constants/glowStickColor";
-import { PositionType } from "server/actors/Members/constants/position";
+import { motion } from 'framer-motion';
+import * as React from 'react';
+import { FormattedDate } from 'react-intl';
+import styles from './member.module.scss';
+import { ArrowBackIcon } from 'client/components/atoms/icons/ArrowBackIcon';
+import { BaseImage } from 'client/components/atoms/image/BaseImage';
+import { LocalizedList } from 'client/components/atoms/locales/LocalizedList';
+import { Message } from 'client/components/atoms/Message';
+import { PageContentLayout } from 'client/components/atoms/PageContentLayout';
+import { PositionBadge } from 'client/components/atoms/PositionBadge';
+import { PositionCounter } from 'client/components/atoms/PositionCounter';
+import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
+import { GLOW_STICK_COLORS } from 'client/utils/constants';
+import { classNames } from 'utils/strings';
+import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
+import { PositionType } from 'server/actors/Members/constants/position';
 
 const containerVariants = {
   visible: {
     opacity: 1,
     x: 0,
     transition: {
-      when: "beforeChildren",
+      when: 'beforeChildren',
     },
   },
   hidden: {
@@ -45,7 +45,7 @@ const contentContainerVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      when: "beforeChildren",
+      when: 'beforeChildren',
       staggerChildren: 0.2,
     },
   },
@@ -163,7 +163,7 @@ export const Member = ({
                 className={styles.profileImageContainer}
               >
                 <div className={styles.profileImageWrapper}>
-                  <Image
+                  <BaseImage
                     src={profileImage}
                     alt={name}
                     objectFit="cover"
@@ -177,7 +177,7 @@ export const Member = ({
                       backgroundColor:
                         glowStickColor.left !== GlowStickColorType.None
                           ? GLOW_STICK_COLORS[glowStickColor.left]
-                          : "#ffffff",
+                          : '#ffffff',
                     }}
                     className={styles.stick}
                   />
@@ -186,7 +186,7 @@ export const Member = ({
                       backgroundColor:
                         glowStickColor.right !== GlowStickColorType.None
                           ? GLOW_STICK_COLORS[glowStickColor.right]
-                          : "#ffffff",
+                          : '#ffffff',
                     }}
                     className={styles.stick}
                   />
@@ -212,9 +212,9 @@ export const Member = ({
                     </div>
                   </section>
                 ) : null}
-                <section className={styles.section + " " + styles.profile}>
+                <section className={styles.section + ' ' + styles.profile}>
                   <h2
-                    className={styles.subheading + " " + styles.infoContainer}
+                    className={styles.subheading + ' ' + styles.infoContainer}
                   >
                     <Message text="profile" />
                   </h2>
@@ -224,7 +224,7 @@ export const Member = ({
                         <Message text="join" />
                       </span>
                       <span className={styles.infoContent}>
-                        <Message text={"join: " + join} />{" "}
+                        <Message text={'join: ' + join} />{' '}
                         {graduation.isGraduated ? (
                           <span>
                             (
@@ -251,7 +251,7 @@ export const Member = ({
                         <Message text="height" />
                       </span>
                       <span
-                        className={styles.infoContent + " " + styles.height}
+                        className={styles.infoContent + ' ' + styles.height}
                       >
                         {height} cm
                       </span>
@@ -302,7 +302,7 @@ export const Member = ({
                 {photoAlbums.length > 0 ? (
                   <section className={styles.section}>
                     <h2
-                      className={styles.subheading + " " + styles.infoContainer}
+                      className={styles.subheading + ' ' + styles.infoContainer}
                     >
                       <Message text="photo albums" />
                     </h2>
@@ -381,7 +381,7 @@ export const Member = ({
                           key={index}
                         >
                           <div className={styles.wrapper}>
-                            <Image
+                            <BaseImage
                               src={profileImage}
                               alt={name}
                               objectFit="cover"

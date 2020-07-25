@@ -1,8 +1,8 @@
-import { motion } from "framer-motion";
-import * as React from "react";
-import styles from "./artwork.module.scss";
-import { classNames } from "utils/strings";
-import { Image } from "client/components/atoms/Image";
+import { motion } from 'framer-motion';
+import * as React from 'react';
+import styles from './artwork.module.scss';
+import { classNames } from 'utils/strings';
+import { BaseImage } from 'client/components/atoms/image/BaseImage';
 
 const backgroundFade = {
   isHovered: {
@@ -43,7 +43,7 @@ export const Artwork: React.FC<ArtworkProps> = ({
       className={classNames(styles.container, className)}
     >
       <div className={styles.wrapper}>
-        <Image
+        <BaseImage
           src={imageSrc}
           alt={title}
           objectFit="cover"
@@ -51,13 +51,13 @@ export const Artwork: React.FC<ArtworkProps> = ({
         />
         <motion.div
           initial={false}
-          animate={isHovered ? "isHovered" : "isNotHovered"}
+          animate={isHovered ? 'isHovered' : 'isNotHovered'}
           variants={backgroundFade}
           className={styles.background}
         />
         <motion.div
           initial={false}
-          animate={isHovered ? "isHovered" : "isNotHovered"}
+          animate={isHovered ? 'isHovered' : 'isNotHovered'}
           variants={titleFade}
           className={styles.title}
         >

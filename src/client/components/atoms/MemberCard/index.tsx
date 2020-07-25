@@ -1,11 +1,11 @@
-import { motion } from "framer-motion";
-import * as React from "react";
-import { injectIntl } from "react-intl";
-import styles from "./membercard.module.scss";
-import { Language } from "client/utils/constants";
-import { LocalizedLink } from "client/components/atoms/locales/LocalizedLink";
-import { Image } from "client/components/atoms/Image";
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
+import { motion } from 'framer-motion';
+import * as React from 'react';
+import { injectIntl } from 'react-intl';
+import styles from './membercard.module.scss';
+import { Language } from 'client/utils/constants';
+import { LocalizedLink } from 'client/components/atoms/locales/LocalizedLink';
+import { BaseImage } from 'client/components/atoms/image/BaseImage';
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 
 interface MemberCardProps {
   image: string;
@@ -35,8 +35,8 @@ export const MemberCard = injectIntl(
     const nameText = React.useMemo(
       () =>
         locale === Language.En
-          ? name.lastNameEn + " " + name.firstNameEn
-          : name.lastName + " " + name.firstName,
+          ? name.lastNameEn + ' ' + name.firstNameEn
+          : name.lastName + ' ' + name.firstName,
       [locale, name]
     );
 
@@ -76,12 +76,12 @@ export const MemberCard = injectIntl(
             whileHover="hover"
             variants={containerVariants}
             transition={{ duration: 0.3 }}
-            style={isCenter ? { backgroundColor: "#e887a3" } : undefined}
+            style={isCenter ? { backgroundColor: '#e887a3' } : undefined}
             className={styles.container}
           >
             <div className={styles.imageContainer}>
               <div className={styles.wrapper}>
-                <Image
+                <BaseImage
                   src={image}
                   alt={nameText}
                   objectFit="cover"
@@ -93,7 +93,7 @@ export const MemberCard = injectIntl(
             <motion.div
               variants={textVariants}
               transition={{ duration: 0.3 }}
-              style={isCenter ? { color: "#ffffff" } : undefined}
+              style={isCenter ? { color: '#ffffff' } : undefined}
               className={styles.name}
             >
               <span>{nameText}</span>
@@ -104,12 +104,12 @@ export const MemberCard = injectIntl(
     } else {
       return (
         <div
-          style={isCenter ? { backgroundColor: "#e887a3" } : undefined}
+          style={isCenter ? { backgroundColor: '#e887a3' } : undefined}
           className={styles.container}
         >
           <div className={styles.imageContainer}>
             <div className={styles.wrapper}>
-              <Image
+              <BaseImage
                 src={image}
                 alt={nameText}
                 objectFit="cover"
@@ -119,7 +119,7 @@ export const MemberCard = injectIntl(
             </div>
           </div>
           <div
-            style={isCenter ? { color: "#ffffff" } : undefined}
+            style={isCenter ? { color: '#ffffff' } : undefined}
             className={styles.name}
           >
             <span>{nameText}</span>
