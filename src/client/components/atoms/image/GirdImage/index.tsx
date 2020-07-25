@@ -5,7 +5,7 @@ import {
   GatsbyImage,
   GatsbyImageProps,
 } from 'client/components/atoms/image/GatsbyImage';
-import { useTheme } from 'client/styles/tokens';
+import { useAppTheme } from 'client/styles/tokens';
 import { BorderRadiusKey } from 'client/styles/borderRadius';
 
 type ImageProps = GatsbyImageProps & {
@@ -14,7 +14,7 @@ type ImageProps = GatsbyImageProps & {
 
 const Image: React.FC<ImageProps> = props => {
   const { src, alt, borderRadius = 'm', ...restProps } = props;
-  const theme = useTheme();
+  const theme = useAppTheme();
 
   return (
     <div
@@ -56,19 +56,32 @@ const Image: React.FC<ImageProps> = props => {
 
 export type BaseImageProps = ImageProps & {
   ratio?: number;
+  fixedSize?: boolean;
   glow?: boolean;
 };
 
-export const BaseImage: React.FC<BaseImageProps> = props => {
-  const { src, alt, ratio = 1, glow = false, ...restProps } = props;
+export const GridImage: React.FC<BaseImageProps> = props => {
+  const {
+    src,
+    alt,
+    ratio = 1,
+    fixedSize = false,
+    glow = false,
+    className,
+    ...restProps
+  } = props;
 
-  return (
-    <div
-      css={css`
+  const containerStyles = !fixedSize
+    ? css`
         position: relative;
         padding-top: ${ratio * 100}%;
-      `}
-    >
+      `
+    : css`
+        position: relative;
+      `;
+
+  return (
+    <div css={containerStyles} className={className as string}>
       {glow ? (
         <div
           css={css`

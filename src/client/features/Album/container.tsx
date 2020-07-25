@@ -2,8 +2,7 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 import { DiscographyResult } from 'server/actors/Discography/models';
 import { FocusPerformers } from 'server/actors/Discography/types';
-import { Header } from 'client/components/templates/Page';
-import { Typography } from 'client/components/atoms/Typography';
+import { AlbumPage } from 'client/features/Album/template';
 
 export const query = graphql`
   query($key: String!) {
@@ -24,7 +23,7 @@ export const query = graphql`
   }
 `;
 
-type QueryResultAlbum = {
+export type QueryResultAlbum = {
   title: DiscographyResult['title'];
   key: DiscographyResult['key'];
   type: DiscographyResult['type'];
@@ -42,14 +41,8 @@ type QueryResult = {
   };
 };
 
-const AlbumContainer: React.FC<QueryResult> = props => {
-  return (
-    <React.Fragment>
-      <Header>
-        <Typography variant="h1">{props.data.discographyJson.title}</Typography>
-      </Header>
-    </React.Fragment>
-  );
+const AlbumPageContainer: React.FC<QueryResult> = props => {
+  return <AlbumPage album={props.data.discographyJson} />;
 };
 
-export default AlbumContainer;
+export default AlbumPageContainer;

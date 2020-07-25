@@ -7,7 +7,7 @@ import { TextSwitchLinkGroup } from 'client/components/molecules/buttonGroup/Tex
 import { ArtworkCard } from 'client/components/molecules/card/ArtworkCard';
 import { Header, Main } from 'client/components/templates/Page';
 import { TextDivider } from 'client/features/Discography/components/atoms/TextDivider';
-import { useTheme } from 'client/styles/tokens';
+import { useAppTheme } from 'client/styles/tokens';
 import {
   DiscographyUrlFilter,
   getAlbumUrl,
@@ -22,7 +22,7 @@ export type DiscographyType = {
 
 export const Discography: React.FC<DiscographyType> = props => {
   const { currentFilter, cdGroupsByYear } = props;
-  const theme = useTheme();
+  const theme = useAppTheme();
 
   return (
     <React.Fragment>

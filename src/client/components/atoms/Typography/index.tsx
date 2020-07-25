@@ -1,7 +1,7 @@
 /**@jsx jsx */
 import { css, jsx } from '@emotion/core';
 import * as React from 'react';
-import { useTheme } from 'client/styles/tokens';
+import { useAppTheme } from 'client/styles/tokens';
 import {
   FontFamily,
   FONT_FAMILY,
@@ -74,7 +74,7 @@ export const Typography: React.FC<TypographyProps> = props => {
     children,
     ...restProps
   } = props;
-  const theme = useTheme();
+  const theme = useAppTheme();
   const Element = element ?? variantMapping[variant];
   const fontFamilyValue =
     fontFamily !== undefined

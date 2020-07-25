@@ -8,7 +8,7 @@ import { Header, Main } from 'client/components/templates/Page';
 import { TextDivider } from 'client/features/Discography/components/atoms/TextDivider';
 import { MemberResult } from 'server/actors/Members/models';
 import { MemberCard } from 'client/components/molecules/card/MemberCard';
-import { useTheme } from 'client/styles/tokens';
+import { useAppTheme } from 'client/styles/tokens';
 import { getMembersUrl, MembersUrlFilter } from 'client/utils/urls';
 
 export type MemberGroupByYear = {
@@ -32,7 +32,7 @@ export type MembersProps = {
 
 export const Members: React.FC<MembersProps> = props => {
   const { currentFilter, memberGroupsByJoin } = props;
-  const theme = useTheme();
+  const theme = useAppTheme();
 
   return (
     <React.Fragment>

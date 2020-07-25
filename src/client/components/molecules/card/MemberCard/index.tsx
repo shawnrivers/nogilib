@@ -3,7 +3,7 @@ import { css, jsx } from '@emotion/core';
 import * as React from 'react';
 import { Typography } from 'client/components/atoms/Typography';
 import { Card, CardProps } from 'client/components/atoms/card/Card';
-import { MemberImage } from 'client/components/atoms/image/MemberImage';
+import { GridMemberImage } from 'client/components/atoms/image/GridMemberImage';
 
 export const MemberCard: React.FC<
   CardProps & {
@@ -14,7 +14,7 @@ export const MemberCard: React.FC<
   const { profileImage, name, ...cardProps } = props;
   return (
     <Card {...cardProps}>
-      <MemberImage src={profileImage} alt={name} />
+      <GridMemberImage src={profileImage} alt={name} />
       <Typography
         variant="em1"
         css={css`

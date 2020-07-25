@@ -5,7 +5,7 @@ import React from 'react';
 import { Typography } from 'client/components/atoms/Typography';
 import { TextSwitchButtonGroup } from 'client/components/molecules/buttonGroup/TextSwitchButtonGroup';
 import { useAppContext } from 'client/hooks/useAppContext';
-import { Theme, useTheme } from 'client/styles/tokens';
+import { Theme, useAppTheme } from 'client/styles/tokens';
 
 const BREAK_POINT = '54em';
 
@@ -19,7 +19,7 @@ const Container = styled.div<StyledComponentWithThemeProps>`
       max-content,
       1fr
     );
-  grid-template-rows: auto;
+  grid-template-rows: max-content auto;
   grid-template-areas:
     'navigation header settings'
     'main main main';
@@ -172,7 +172,7 @@ export const Main = styled.main`
 `;
 
 export const Page: React.FC = props => {
-  const theme = useTheme();
+  const theme = useAppTheme();
 
   return (
     <Container

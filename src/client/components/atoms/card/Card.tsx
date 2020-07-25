@@ -2,7 +2,7 @@
 import { css, jsx } from '@emotion/core';
 import * as React from 'react';
 import { Link } from 'gatsby';
-import { useTheme } from 'client/styles/tokens';
+import { useAppTheme } from 'client/styles/tokens';
 import { BorderRadiusKey } from 'client/styles/borderRadius';
 import { ElevationKey } from 'client/styles/elevation';
 import { ThemeColorVariants } from 'client/styles/colors';
@@ -25,7 +25,7 @@ export const CardContent: React.FC<CardContentProps> = props => {
     ...restProps
   } = props;
 
-  const theme = useTheme();
+  const theme = useAppTheme();
 
   return (
     <div

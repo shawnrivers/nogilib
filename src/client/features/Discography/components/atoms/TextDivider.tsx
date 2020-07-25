@@ -2,7 +2,7 @@
 import { css, jsx } from '@emotion/core';
 import * as React from 'react';
 import styled from '@emotion/styled';
-import { useTheme } from 'client/styles/tokens';
+import { useAppTheme } from 'client/styles/tokens';
 import { Typography } from 'client/components/atoms/Typography';
 
 const TextSideDivider = styled.div`
@@ -12,8 +12,8 @@ const TextSideDivider = styled.div`
   margin-top: 12px;
 `;
 
-export const TextDivider: React.FC<{ text: string | number }> = props => {
-  const theme = useTheme();
+export const TextDivider: React.FC<{ text: React.ReactNode }> = props => {
+  const theme = useAppTheme();
   const dividerLineColor = theme.colors.theme.onBackground.variant1;
 
   return (

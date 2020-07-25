@@ -5,7 +5,7 @@ import {
   Typography,
   TypographyProps,
 } from 'client/components/atoms/Typography';
-import { useTheme } from 'client/styles/tokens';
+import { useAppTheme } from 'client/styles/tokens';
 import {
   mapForegroundToBackground,
   ThemeColorsForeground,
@@ -29,7 +29,7 @@ export const TextSwitchButton: React.FC<TextSwitchButtonProps> = props => {
     ...restProps
   } = props;
 
-  const theme = useTheme();
+  const theme = useAppTheme();
   const backgroundColorKey = mapForegroundToBackground(textOn);
 
   return (

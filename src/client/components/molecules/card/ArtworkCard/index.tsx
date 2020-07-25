@@ -1,7 +1,7 @@
 /**@jsx jsx */
 import { css, jsx } from '@emotion/core';
 import * as React from 'react';
-import { ArtworkImage } from 'client/components/atoms/image/ArtworkImage';
+import { GridArtworkImage } from 'client/components/atoms/image/GirdArtworkImage';
 import { Typography } from 'client/components/atoms/Typography';
 import { toCdNumber } from 'utils/strings';
 import { FocusPerformers } from 'server/actors/Discography/types';
@@ -19,7 +19,7 @@ export const ArtworkCard: React.FC<
   const { artwork, title, number, type, ...cardProps } = props;
   return (
     <Card {...cardProps}>
-      <ArtworkImage src={artwork} alt={number} />
+      <GridArtworkImage src={artwork} alt={number} />
       <Typography
         variant="h6"
         textColor={{ on: 'onBackground', variant: 'variant1' }}
