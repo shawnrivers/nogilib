@@ -9,6 +9,7 @@ import { TextDivider } from 'client/features/Discography/components/atoms/TextDi
 import { MemberResult } from 'server/actors/Members/models';
 import { MemberCard } from 'client/components/molecules/card/MemberCard';
 import { useTheme } from 'client/styles/tokens';
+import { getMembersUrl, MembersUrlFilter } from 'client/utils/urls';
 
 export type MemberGroupByYear = {
   join: MemberResult['join'];
@@ -25,16 +26,12 @@ export type MemberGroupByYear = {
 };
 
 export type MembersProps = {
-  currentGroup: 'current' | 'graduated' | 'all';
+  currentFilter: MembersUrlFilter;
   memberGroupsByJoin: MemberGroupByYear[];
 };
 
-export const MEMBERS_PAGE_FILTER_ALL = 'all';
-export const MEMBERS_PAGE_FILTER_CURRENT = 'current';
-export const MEMBERS_PAGE_FILTER_GRADUATED = 'graduated';
-
 export const Members: React.FC<MembersProps> = props => {
-  const { currentGroup, memberGroupsByJoin } = props;
+  const { currentFilter, memberGroupsByJoin } = props;
   const theme = useTheme();
 
   return (
@@ -56,19 +53,19 @@ export const Members: React.FC<MembersProps> = props => {
           textOn="onBackground"
           links={[
             {
-              text: <Message text={MEMBERS_PAGE_FILTER_ALL} />,
-              isSwitchedOn: currentGroup === MEMBERS_PAGE_FILTER_ALL,
-              to: '/members',
+              text: <Message text="all" />,
+              isSwitchedOn: currentFilter === 'all',
+              to: getMembersUrl(),
             },
             {
-              text: <Message text={MEMBERS_PAGE_FILTER_CURRENT} />,
-              isSwitchedOn: currentGroup === MEMBERS_PAGE_FILTER_CURRENT,
-              to: `/members?filter=${MEMBERS_PAGE_FILTER_CURRENT}`,
+              text: <Message text="current" />,
+              isSwitchedOn: currentFilter === 'current',
+              to: getMembersUrl('current'),
             },
             {
-              text: <Message text={MEMBERS_PAGE_FILTER_GRADUATED} />,
-              isSwitchedOn: currentGroup === MEMBERS_PAGE_FILTER_GRADUATED,
-              to: `/members?filter=${MEMBERS_PAGE_FILTER_GRADUATED}`,
+              text: <Message text="graduated" />,
+              isSwitchedOn: currentFilter === 'graduated',
+              to: getMembersUrl('graduated'),
             },
           ]}
           css={css`

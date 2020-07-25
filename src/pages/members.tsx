@@ -7,9 +7,6 @@ import {
   MemberGroupByYear,
   Members,
   MembersProps,
-  MEMBERS_PAGE_FILTER_ALL,
-  MEMBERS_PAGE_FILTER_CURRENT,
-  MEMBERS_PAGE_FILTER_GRADUATED,
 } from 'client/features/MembersNew/template';
 
 export const query = graphql`
@@ -104,22 +101,22 @@ const MembersContainer: React.FC<QueryResult> = props => {
 
   const location = useLocation();
   const { filter } = queryString.parse(location.search);
-  const currentGroup: MembersProps['currentGroup'] =
-    filter === MEMBERS_PAGE_FILTER_CURRENT
-      ? MEMBERS_PAGE_FILTER_CURRENT
-      : filter === MEMBERS_PAGE_FILTER_GRADUATED
-      ? MEMBERS_PAGE_FILTER_GRADUATED
-      : MEMBERS_PAGE_FILTER_ALL;
+  const currentFilter: MembersProps['currentFilter'] =
+    filter === 'current'
+      ? 'current'
+      : filter === 'graduated'
+      ? 'graduated'
+      : 'all';
   const memberGroupsByJoin: MembersProps['memberGroupsByJoin'] =
-    filter === MEMBERS_PAGE_FILTER_CURRENT
+    filter === 'current'
       ? currentMemberGroupByJoin
-      : filter === MEMBERS_PAGE_FILTER_GRADUATED
+      : filter === 'graduated'
       ? graduatedMemberGroupByJoin
       : allMemberGroupByJoin;
 
   return (
     <Members
-      currentGroup={currentGroup}
+      currentFilter={currentFilter}
       memberGroupsByJoin={memberGroupsByJoin}
     />
   );

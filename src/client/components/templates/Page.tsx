@@ -178,6 +178,7 @@ export const Page: React.FC = props => {
     <Container
       css={css`
         background-color: ${theme.colors.theme.background.standard};
+        min-height: 100vh;
       `}
     >
       <NavigationAndSettings />

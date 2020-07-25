@@ -5,7 +5,6 @@ import * as React from 'react';
 import { DiscographyResult } from 'server/actors/Discography/models';
 import { sortByDate } from 'utils/arrays';
 import {
-  CdGroupByYear,
   Discography,
   DiscographyType,
 } from 'client/features/Discography/template';
@@ -16,6 +15,7 @@ export const query = graphql`
     allDiscographyJson {
       nodes {
         title
+        key
         type
         number
         artworks
@@ -31,8 +31,9 @@ export const query = graphql`
   }
 `;
 
-type QueryResultCds = {
+type QueryResultDiscography = {
   title: DiscographyResult['title'];
+  key: DiscographyResult['key'];
   type: DiscographyResult['type'];
   number: DiscographyResult['number'];
   artworks: DiscographyResult['artworks'];
@@ -40,17 +41,24 @@ type QueryResultCds = {
   songs: {
     focusPerformers: FocusPerformers;
   }[];
-}[];
+};
 
 type QueryResult = {
   data: {
     allDiscographyJson: {
-      nodes: QueryResultCds;
+      nodes: QueryResultDiscography[];
     };
   };
 };
 
-const groupCdsByYear = (cds: QueryResultCds): CdGroupByYear[] => {
+export type CdGroupByYear = {
+  year: number;
+  cds: (QueryResultDiscography & {
+    year: number;
+  })[];
+};
+
+const groupCdsByYear = (cds: QueryResultDiscography[]): CdGroupByYear[] => {
   const cdsWithYear = cds
     .map(cd => ({
       ...cd,
@@ -110,7 +118,7 @@ const DiscographyContainer: React.FC<QueryResult> = props => {
 
   const location = useLocation();
   const { filter } = queryString.parse(location.search);
-  const currentGroup: DiscographyType['currentGroup'] =
+  const currentFilter: DiscographyType['currentFilter'] =
     filter === 'singles' ? 'singles' : filter === 'albums' ? 'albums' : 'all';
   const cdGroupsByYear: DiscographyType['cdGroupsByYear'] =
     filter === 'singles'
@@ -120,7 +128,10 @@ const DiscographyContainer: React.FC<QueryResult> = props => {
       : allCdGroupsByYear;
 
   return (
-    <Discography currentGroup={currentGroup} cdGroupsByYear={cdGroupsByYear} />
+    <Discography
+      currentFilter={currentFilter}
+      cdGroupsByYear={cdGroupsByYear}
+    />
   );
 };
 

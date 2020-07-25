@@ -1,20 +1,21 @@
 /**@jsx jsx */
 import { css, jsx } from '@emotion/core';
 import * as React from 'react';
+import { Link } from 'gatsby';
 import { useTheme } from 'client/styles/tokens';
 import { BorderRadiusKey } from 'client/styles/borderRadius';
 import { ElevationKey } from 'client/styles/elevation';
 import { ThemeColorVariants } from 'client/styles/colors';
 import { SpacingKey } from 'client/styles/spacing';
 
-export type CardProps = React.HTMLAttributes<HTMLDivElement> & {
+type CardContentProps = React.HTMLAttributes<HTMLDivElement> & {
   borderRadius?: BorderRadiusKey;
   elevation?: ElevationKey;
   surfaceColor?: keyof ThemeColorVariants;
   padding?: SpacingKey;
 };
 
-export const Card: React.FC<CardProps> = props => {
+export const CardContent: React.FC<CardContentProps> = props => {
   const {
     children,
     borderRadius = 'l',
@@ -55,5 +56,21 @@ export const Card: React.FC<CardProps> = props => {
         </div>
       </div>
     </div>
+  );
+};
+
+export type CardProps = CardContentProps & {
+  to?: string;
+};
+
+export const Card: React.FC<CardProps> = props => {
+  const { to, children, ...restProps } = props;
+
+  return to ? (
+    <Link to={to}>
+      <CardContent {...restProps}>{children}</CardContent>
+    </Link>
+  ) : (
+    <CardContent {...restProps}>{children}</CardContent>
   );
 };

@@ -7,32 +7,21 @@ import { TextSwitchLinkGroup } from 'client/components/molecules/buttonGroup/Tex
 import { ArtworkCard } from 'client/components/molecules/card/ArtworkCard';
 import { Header, Main } from 'client/components/templates/Page';
 import { TextDivider } from 'client/features/Discography/components/atoms/TextDivider';
-import { DiscographyResult } from 'server/actors/Discography/models';
-import { FocusPerformers } from 'server/actors/Discography/types';
 import { useTheme } from 'client/styles/tokens';
-
-export type CdGroupByYear = {
-  year: number;
-  cds: {
-    title: DiscographyResult['title'];
-    type: DiscographyResult['type'];
-    number: DiscographyResult['number'];
-    artworks: DiscographyResult['artworks'];
-    release: DiscographyResult['release'];
-    songs: {
-      focusPerformers: FocusPerformers;
-    }[];
-    year: number;
-  }[];
-};
+import {
+  DiscographyUrlFilter,
+  getAlbumUrl,
+  getDiscographyUrl,
+} from 'client/utils/urls';
+import { CdGroupByYear } from 'pages/discography';
 
 export type DiscographyType = {
-  currentGroup: 'singles' | 'albums' | 'all';
+  currentFilter: DiscographyUrlFilter;
   cdGroupsByYear: CdGroupByYear[];
 };
 
 export const Discography: React.FC<DiscographyType> = props => {
-  const { currentGroup, cdGroupsByYear } = props;
+  const { currentFilter, cdGroupsByYear } = props;
   const theme = useTheme();
 
   return (
@@ -54,18 +43,18 @@ export const Discography: React.FC<DiscographyType> = props => {
           links={[
             {
               text: <Message text="all" />,
-              isSwitchedOn: currentGroup === 'all',
-              to: '/discography',
+              isSwitchedOn: currentFilter === 'all',
+              to: getDiscographyUrl(),
             },
             {
               text: <Message text="singles" />,
-              isSwitchedOn: currentGroup === 'singles',
-              to: '/discography?filter=singles',
+              isSwitchedOn: currentFilter === 'singles',
+              to: getDiscographyUrl('singles'),
             },
             {
               text: <Message text="albums" />,
-              isSwitchedOn: currentGroup === 'albums',
-              to: '/discography?filter=albums',
+              isSwitchedOn: currentFilter === 'albums',
+              to: getDiscographyUrl('albums'),
             },
           ]}
           css={css`
@@ -90,7 +79,8 @@ export const Discography: React.FC<DiscographyType> = props => {
             >
               {cdGroup.cds.map(cd => (
                 <ArtworkCard
-                  key={cd.number}
+                  key={cd.key}
+                  to={getAlbumUrl(cd.key)}
                   artwork={cd.artworks[0]}
                   number={cd.number}
                   type={cd.type}
