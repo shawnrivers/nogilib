@@ -1,12 +1,13 @@
+/**@jsx jsx */
+import { jsx, css } from '@emotion/core';
 import * as React from 'react';
 import { injectIntl } from 'react-intl';
-import { motion } from 'framer-motion';
-import styles from './search.module.scss';
 import { SearchIcon } from 'client/components/atoms/icons/SearchIcon';
 import { Message } from 'client/components/atoms/Message';
 import { SearchResultCategory } from 'client/components/molecules/SearchResultCategory';
 import { Typography } from 'client/components/atoms/Typography';
 import { Header, Main, MainContent } from 'client/components/templates/Page';
+import { useAppTheme } from 'client/styles/tokens';
 
 export type SearchResult = {
   to: string;
@@ -43,7 +44,7 @@ export const Search = injectIntl(
       [results, query, isSearching]
     );
 
-    const [isInputFocused, setInputFocus] = React.useState(false);
+    const theme = useAppTheme();
 
     return (
       <React.Fragment>
@@ -54,46 +55,100 @@ export const Search = injectIntl(
         </Header>
         <Main>
           <MainContent>
-            <SearchIcon className={styles.searchIcon} />
-            <motion.div
-              animate={{
-                borderBottomColor: isInputFocused ? '#595959' : '#d6d6d6',
-              }}
-              className={styles.inputContainer}
+            <div
+              css={css`
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                max-width: 30em;
+                margin: auto;
+              `}
             >
-              <input
-                type="text"
-                value={query}
-                onChange={search}
-                onFocus={() => setInputFocus(true)}
-                onBlur={() => setInputFocus(false)}
-                placeholder={intl.formatMessage({
-                  id: 'Song title, member name, etc.',
-                })}
-                className={styles.input}
+              <SearchIcon
+                css={css`
+                  fill: ${theme.colors.theme.onBackground.standard};
+                `}
               />
-            </motion.div>
+              <Typography
+                variant="body1"
+                element="div"
+                css={css`
+                  width: 100%;
+                  margin-left: 0.5em;
+                `}
+              >
+                <input
+                  type="text"
+                  value={query}
+                  onChange={search}
+                  placeholder={intl.formatMessage({
+                    id: 'Song title, member name, etc.',
+                  })}
+                  css={css`
+                    width: 100%;
+                    border-width: 2px;
+                    border-style: solid;
+                    border-color: ${theme.colors.theme.onBackground.variant1};
+                    border-radius: ${theme.borderRadius.xl};
+                    padding: ${theme.spacing.s};
+                    transition: border-color 0.2s linear;
+                    box-sizing: border-box;
+                    color: inherit;
+                    font-size: inherit;
+                    font-family: inherit;
+                    font-weight: inherit;
+
+                    &::placeholder {
+                      color: ${theme.colors.theme.onBackground.variant1};
+                    }
+
+                    &:focus {
+                      border-color: ${theme.colors.theme.onBackground.standard};
+                    }
+                  `}
+                />
+              </Typography>
+            </div>
             {hasNoResult ? (
-              <p className={styles.noResult}>
+              <Typography
+                variant="em1"
+                css={css`
+                  text-align: center;
+                  text-transform: capitalize;
+                  margin-top: 2em;
+                `}
+              >
                 <Message text="no result" />
-              </p>
+              </Typography>
             ) : null}
             <SearchResultCategory
               title="members"
               results={results.members}
-              className={styles.category}
+              css={css`
+                margin-top: 2rem;
+              `}
             />
             <SearchResultCategory
               title="singles"
               results={results.singles}
-              className={styles.category}
+              css={css`
+                margin-top: 2rem;
+              `}
             />
             <SearchResultCategory
               title="albums"
               results={results.albums}
-              className={styles.category}
+              css={css`
+                margin-top: 2rem;
+              `}
             />
-            <SearchResultCategory title="songs" results={results.songs} />
+            <SearchResultCategory
+              title="songs"
+              results={results.songs}
+              css={css`
+                margin-top: 2rem;
+              `}
+            />
           </MainContent>
         </Main>
       </React.Fragment>

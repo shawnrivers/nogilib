@@ -62,6 +62,16 @@ export const ThemeProvider: React.FC = props => {
             outline: inherit;
             padding: 0;
           }
+
+          input {
+            margin: 0;
+            border: 0;
+            padding: 0;
+            display: inline-block;
+            vertical-align: middle;
+            white-space: normal;
+            background: none;
+          }
         `}
       />
       <div

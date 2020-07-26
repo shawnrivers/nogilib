@@ -69,7 +69,6 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
                   <GridArtworkImage
                     src={track.artwork}
                     alt={track.inCdType[0]}
-                    glow
                   />
                   <div
                     css={css`

@@ -1,70 +1,57 @@
-import { motion } from 'framer-motion';
+/**@jsx jsx */
+import { jsx, css } from '@emotion/core';
 import * as React from 'react';
-import { Link } from 'gatsby';
-import styles from './searchresultcard.module.scss';
-import { GatsbyImage } from 'client/components/atoms/image/GatsbyImage';
-import { classNames } from 'utils/strings';
+import { Card, CardProps } from 'client/components/atoms/card/Card';
+import { useAppTheme } from 'client/styles/tokens';
+import { GridImage } from 'client/components/atoms/image/GirdImage';
+import { Typography } from 'client/components/atoms/Typography';
 
-const backgroundHover = {
-  hover: {
-    backgroundColor: '#757575',
-    scale: 1.05,
-  },
-};
-
-interface SearchResultCardProps {
+type SearchResultCardProps = {
   to: string;
   imgSrc: string;
   title: string;
   caption: string;
   secondCaption?: string;
-  className?: string;
-}
+} & CardProps;
 
-export const SearchResultCard = ({
-  to,
-  imgSrc,
-  title,
-  caption,
-  secondCaption,
-  className,
-}: SearchResultCardProps) => {
-  const [isHovered, setHover] = React.useState(false);
+export const SearchResultCard: React.FC<SearchResultCardProps> = props => {
+  const { to, imgSrc, title, caption, secondCaption, ...cardProps } = props;
+  const theme = useAppTheme();
 
   return (
-    <Link to={to}>
-      <motion.div
-        whileHover="hover"
-        variants={backgroundHover}
-        onHoverStart={() => setHover(true)}
-        onHoverEnd={() => setHover(false)}
-        className={classNames(styles.container, className)}
+    <Card to={to} borderRadius="m" padding="xs" {...cardProps}>
+      <div
+        css={css`
+          display: grid;
+          grid-template-columns: 100px auto;
+          grid-template-rows: auto;
+          grid-gap: ${theme.spacing.m};
+          padding: ${theme.spacing.xs};
+          overflow: hidden;
+        `}
       >
-        <div className={styles.imagePlaceholder}>
-          <GatsbyImage
-            src={imgSrc}
-            alt={title}
-            objectFit="cover"
-            objectPosition="50% 0"
-            className={styles.image}
-          />
-        </div>
-        <div className={styles.text}>
-          <motion.h3
-            animate={{ color: isHovered ? '#ffffff' : '#595959' }}
-            className={styles.title}
-          >
+        <GridImage src={imgSrc} alt={title} glow />
+        <div
+          css={css`
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            flex-wrap: nowrap;
+            overflow: hidden;
+          `}
+        >
+          <Typography variant="h7" element="p" bold ellipsis>
             {title}
-          </motion.h3>
-          <motion.p
-            animate={{ color: isHovered ? '#ffffff' : '#757575' }}
-            className={styles.caption}
+          </Typography>
+          <Typography
+            variant="body2"
+            textColor={{ on: 'onSurface', variant: 'variant1' }}
+            ellipsis
           >
-            <span>{caption}</span>
-            {secondCaption ? <span>{secondCaption}</span> : null}
-          </motion.p>
+            {caption} {secondCaption ?? null}
+          </Typography>
         </div>
-      </motion.div>
-    </Link>
+      </div>
+    </Card>
   );
 };
