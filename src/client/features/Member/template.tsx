@@ -1,70 +1,20 @@
-import { motion } from 'framer-motion';
+/**@jsx jsx */
+import { jsx, css } from '@emotion/core';
 import * as React from 'react';
 import { FormattedDate } from 'react-intl';
-import styles from './member.module.scss';
-import { ArrowBackIcon } from 'client/components/atoms/icons/ArrowBackIcon';
-import { GatsbyImage } from 'client/components/atoms/image/GatsbyImage';
 import { LocalizedList } from 'client/components/atoms/locales/LocalizedList';
 import { Message } from 'client/components/atoms/Message';
-import { PageContentLayout } from 'client/components/atoms/PageContentLayout';
 import { PositionBadge } from 'client/components/atoms/PositionBadge';
 import { PositionCounter } from 'client/components/atoms/PositionCounter';
 import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
-import { GLOW_STICK_COLORS } from 'client/utils/constants';
-import { classNames } from 'utils/strings';
 import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
 import { PositionType } from 'server/actors/Members/constants/position';
-
-const containerVariants = {
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      when: 'beforeChildren',
-    },
-  },
-  hidden: {
-    opacity: 0,
-    x: -20,
-  },
-};
-
-const headingVariants = {
-  visible: {
-    opacity: 1,
-    x: 0,
-  },
-  hidden: {
-    opacity: 0,
-    x: -20,
-  },
-};
-
-const contentContainerVariants = {
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      when: 'beforeChildren',
-      staggerChildren: 0.2,
-    },
-  },
-  hidden: {
-    opacity: 0,
-    y: 20,
-  },
-};
-
-const contentVariants = {
-  visible: {
-    opacity: 1,
-    y: 0,
-  },
-  hidden: {
-    opacity: 0,
-    y: -20,
-  },
-};
+import { Header, Main, MainContent } from 'client/components/templates/Page';
+import { Typography } from 'client/components/atoms/Typography';
+import { useAppContext } from 'client/hooks/useAppContext';
+import { TextDivider } from 'client/features/Discography/components/atoms/TextDivider';
+import { useAppTheme } from 'client/styles/tokens';
+import { GridMemberImage } from 'client/components/atoms/image/GridMemberImage';
 
 interface MemberProps {
   name: string;
@@ -113,7 +63,6 @@ export const Member = ({
   name,
   names,
   profileImage,
-  glowStickColor,
   sites,
   join,
   graduation,
@@ -130,275 +79,382 @@ export const Member = ({
   gallery,
 }: MemberProps) => {
   useScrollRestoration();
+  const { language } = useAppContext();
+  const theme = useAppTheme();
 
   return (
-    <div className={styles.background}>
-      <PageContentLayout>
-        <motion.div whileHover={{ x: -7, scale: 1.5 }} className={styles.link}>
-          <button
-            onClick={() => {
-              window.history.back();
-            }}
-            aria-label="Go Back"
+    <React.Fragment>
+      <Header
+        css={css`
+          text-transform: capitalize;
+        `}
+      >
+        <Typography variant="h2" element="h1">
+          {language !== 'en' ? names.ja : names.en}
+        </Typography>
+        <Typography
+          variant="body1"
+          css={css`
+            vertical-align: center;
+          `}
+        >
+          {language === 'ja'
+            ? names.furigana
+            : language === 'zh'
+            ? names.en
+            : names.ja}
+        </Typography>
+      </Header>
+      <Main>
+        <MainContent>
+          <TextDivider text={<Message text="profile" />} />
+          <div
+            css={css`
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: center;
+
+              & > * {
+                margin: ${theme.spacing.s};
+              }
+            `}
           >
-            <ArrowBackIcon className={styles.back} />
-          </button>
-        </motion.div>
-        <div>
-          <motion.div variants={containerVariants} className={styles.container}>
-            <motion.div variants={headingVariants} className={styles.heading}>
-              <h1 className={styles.title}>{names.ja}</h1>
-              <h4 className={styles.tags}>
-                <span>{names.en}</span>
-                <span>|</span>
-                <span>{names.furigana}</span>
-              </h4>
-            </motion.div>
-            <motion.div
-              variants={contentContainerVariants}
-              className={styles.flexBox}
+            <GridMemberImage
+              src={profileImage}
+              alt={name}
+              fixedSize
+              css={css`
+                width: 180px;
+                height: 220px;
+              `}
+            />
+            <div
+              css={css`
+                display: grid;
+                grid-template-columns: max-content auto;
+                grid-template-rows: auto;
+                grid-gap: ${theme.spacing.s};
+                margin-top: 0.5em;
+                align-items: center;
+                text-transform: capitalize;
+              `}
             >
-              <motion.div
-                variants={contentVariants}
-                className={styles.profileImageContainer}
+              <Typography variant="h7" element="span">
+                <Message text="join" />
+              </Typography>
+              <Typography variant="h7" element="span">
+                <Message text={'join: ' + join} />{' '}
+                {graduation.isGraduated ? <Message text="graduate" /> : null}
+              </Typography>
+              <Typography variant="h7" element="span">
+                <Message text="birthday" />
+              </Typography>
+              <Typography variant="h7" element="span">
+                <FormattedDate
+                  value={birthday}
+                  year="numeric"
+                  month="short"
+                  day="numeric"
+                />
+              </Typography>
+              <Typography variant="h7" element="span">
+                <Message text="height" />
+              </Typography>
+              <Typography
+                variant="h7"
+                element="span"
+                css={css`
+                  text-transform: lowercase;
+                `}
               >
-                <div className={styles.profileImageWrapper}>
-                  <GatsbyImage
-                    src={profileImage}
-                    alt={name}
-                    objectFit="cover"
-                    objectPosition="top"
-                    className={styles.profileImage}
-                  />
-                </div>
-                <div className={styles.stickColors}>
-                  <span
-                    style={{
-                      backgroundColor:
-                        glowStickColor.left !== GlowStickColorType.None
-                          ? GLOW_STICK_COLORS[glowStickColor.left]
-                          : '#ffffff',
-                    }}
-                    className={styles.stick}
-                  />
-                  <span
-                    style={{
-                      backgroundColor:
-                        glowStickColor.right !== GlowStickColorType.None
-                          ? GLOW_STICK_COLORS[glowStickColor.right]
-                          : '#ffffff',
-                    }}
-                    className={styles.stick}
-                  />
-                </div>
-              </motion.div>
-              <motion.div variants={contentVariants} className={styles.content}>
-                {sites.length > 0 ? (
-                  <section className={styles.section}>
-                    <h2 className={styles.subheading}>
-                      <Message text="websites" />
-                    </h2>
-                    <div className={styles.websites}>
-                      {sites.map(site => (
-                        <motion.a
-                          key={site.title}
-                          href={site.url}
-                          target="_blank"
-                          rel="noopener"
-                        >
-                          <Message text={site.title} />
-                        </motion.a>
-                      ))}
-                    </div>
-                  </section>
-                ) : null}
-                <section className={styles.section + ' ' + styles.profile}>
-                  <h2
-                    className={styles.subheading + ' ' + styles.infoContainer}
+                {height}cm
+              </Typography>
+              <Typography variant="h7" element="span">
+                <Message text="blood type" />
+              </Typography>
+              <Typography variant="h7" element="span">
+                <Message text={bloodType} />
+              </Typography>
+              <Typography variant="h7" element="span">
+                <Message text="birthplace" />
+              </Typography>
+              <Typography variant="h7" element="span">
+                <Message text={origin} />
+              </Typography>
+              {units.length > 0 ? (
+                <React.Fragment>
+                  <Typography variant="h7" element="span">
+                    <Message text="units" />
+                  </Typography>
+                  <Typography variant="h7" element="span">
+                    <LocalizedList list={units} />
+                  </Typography>
+                </React.Fragment>
+              ) : null}
+              {corps.length > 0 ? (
+                <React.Fragment>
+                  <Typography variant="h7" element="span">
+                    <Message text="corps" />
+                  </Typography>
+                  <Typography variant="h7" element="span">
+                    <LocalizedList list={corps} />
+                  </Typography>
+                </React.Fragment>
+              ) : null}
+            </div>
+          </div>
+          {sites.length > 0 ? (
+            <React.Fragment>
+              <Typography
+                variant="h4"
+                element="h3"
+                css={css`
+                  margin: 0.5em 0;
+                  text-align: center;
+                `}
+              >
+                <Message text="websites" />
+              </Typography>
+              <div
+                css={css`
+                  display: flex;
+                  justify-content: center;
+                  align-items: baseline;
+                `}
+              >
+                {sites.map(site => (
+                  <Typography
+                    key={site.title}
+                    element="span"
+                    variant="body2"
+                    css={css`
+                      &:not(:first-child) {
+                        margin-left: 1em;
+                      }
+                    `}
                   >
-                    <Message text="profile" />
-                  </h2>
-                  <div className={styles.info}>
-                    <div className={styles.infoItem}>
-                      <span className={styles.infoTitle}>
-                        <Message text="join" />
-                      </span>
-                      <span className={styles.infoContent}>
-                        <Message text={'join: ' + join} />{' '}
-                        {graduation.isGraduated ? (
-                          <span>
-                            (
-                            <Message text="graduate" />)
-                          </span>
-                        ) : null}
-                      </span>
-                    </div>
-                    <div className={styles.infoItem}>
-                      <span className={styles.infoTitle}>
-                        <Message text="birthday" />
-                      </span>
-                      <span className={styles.infoContent}>
-                        <FormattedDate
-                          value={birthday}
-                          year="numeric"
-                          month="short"
-                          day="numeric"
-                        />
-                      </span>
-                    </div>
-                    <div className={styles.infoItem}>
-                      <span className={styles.infoTitle}>
-                        <Message text="height" />
-                      </span>
-                      <span
-                        className={styles.infoContent + ' ' + styles.height}
-                      >
-                        {height} cm
-                      </span>
-                    </div>
-                    <div className={styles.infoItem}>
-                      <span className={styles.infoTitle}>
-                        <Message text="blood type" />
-                      </span>
-                      <span
-                        className={classNames(
-                          styles.infoContent,
-                          styles.bloodType
-                        )}
-                      >
-                        <Message text={bloodType} />
-                      </span>
-                    </div>
-                    <div className={styles.infoItem}>
-                      <span className={styles.infoTitle}>
-                        <Message text="birthplace" />
-                      </span>
-                      <span className={styles.infoContent}>
-                        <Message text={origin} />
-                      </span>
-                    </div>
-                    {units.length > 0 ? (
-                      <div className={styles.infoItem}>
-                        <span className={styles.infoTitle}>
-                          <Message text="units" />
-                        </span>
-                        <span className={styles.infoContent}>
-                          <LocalizedList list={units} />
-                        </span>
-                      </div>
-                    ) : null}
-                    {corps.length > 0 ? (
-                      <div className={styles.infoItem}>
-                        <span className={styles.infoTitle}>
-                          <Message text="corps" />
-                        </span>
-                        <span className={styles.infoContent}>
-                          <LocalizedList list={corps} />
-                        </span>
-                      </div>
-                    ) : null}
-                  </div>
-                </section>
-                {photoAlbums.length > 0 ? (
-                  <section className={styles.section}>
-                    <h2
-                      className={styles.subheading + ' ' + styles.infoContainer}
+                    <a
+                      href={site.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      <Message text="photo albums" />
-                    </h2>
-                    <ol className={styles.photoAlbums}>
-                      {photoAlbums.map(photoAlbum => (
-                        <li key={photoAlbum.title}>{photoAlbum.title}</li>
-                      ))}
-                    </ol>
-                  </section>
-                ) : null}
-                {positionsHistory.length > 0 ? (
-                  <section className={styles.section}>
-                    <h2 className={styles.subheading}>
-                      <Message text="position history" />
-                    </h2>
-                    <div className={styles.history}>
-                      {positionsHistory.map(position => (
-                        <div
-                          key={position.singleNumber}
-                          className={styles.positionRecord}
-                        >
-                          <span className={styles.positionNumber}>
-                            {position.singleNumber}
-                          </span>
-                          <PositionBadge position={position.position} />
-                        </div>
-                      ))}
+                      <Message text={site.title} />
+                    </a>
+                  </Typography>
+                ))}
+              </div>
+            </React.Fragment>
+          ) : null}
+          {photoAlbums.length > 0 ? (
+            <React.Fragment>
+              <Typography
+                variant="h4"
+                element="h3"
+                css={css`
+                  margin: 0.5em 0;
+                  text-align: center;
+                `}
+              >
+                <Message text="photo albums" />
+              </Typography>
+              <div
+                css={css`
+                  display: flex;
+                  justify-content: center;
+                `}
+              >
+                {photoAlbums.map(photoAlbum => (
+                  <Typography
+                    key={photoAlbum.title}
+                    variant="body2"
+                    element="span"
+                  >
+                    『{photoAlbum.title}』
+                  </Typography>
+                ))}
+              </div>
+            </React.Fragment>
+          ) : null}
+          {positionsHistory.length > 0 ? (
+            <React.Fragment>
+              <TextDivider text={<Message text="position history" />} />
+              <div
+                css={css`
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                `}
+              >
+                {positionsHistory.map(position => (
+                  <div
+                    key={position.singleNumber}
+                    css={css`
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      margin: ${theme.spacing.xxs};
+                    `}
+                  >
+                    <Typography
+                      variant="body2"
+                      element="span"
+                      textColor={{
+                        on: 'onBackground',
+                        variant: 'variant0',
+                      }}
+                      css={css`
+                        margin-bottom: 0.3em;
+                      `}
+                    >
+                      {position.singleNumber}
+                    </Typography>
+                    <PositionBadge position={position.position} />
+                  </div>
+                ))}
+              </div>
+              {shouldShowPositionCounter ? (
+                <React.Fragment>
+                  <div
+                    css={css`
+                      margin-top: 1em;
+
+                      & > * {
+                        margin: auto;
+                      }
+                    `}
+                  >
+                    <PositionCounter {...positionsCounter} />
+                  </div>
+                  <div
+                    css={css`
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: center;
+                      margin-top: 1em;
+                    `}
+                  >
+                    <div
+                      css={css`
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 0.3em;
+                      `}
+                    >
+                      <PositionBadge position={PositionType.Center} />
+                      <Typography
+                        variant="body3"
+                        element="span"
+                        textColor={{
+                          on: 'onBackground',
+                          variant: 'variant0',
+                        }}
+                        css={css`
+                          text-transform: capitalize;
+                          margin-top: 0.3em;
+                        `}
+                      >
+                        <Message text="center" />
+                      </Typography>
                     </div>
-                  </section>
-                ) : null}
-                {shouldShowPositionCounter ? (
-                  <section className={styles.section}>
-                    <h2 className={styles.subheading}>
-                      <Message text="position counter" />
-                    </h2>
-                    <div className={styles.counter}>
-                      <div className={styles.indicators}>
-                        <div className={styles.indicator}>
-                          <PositionBadge position={PositionType.Center} />
-                          <span className={styles.indicatorCaption}>
-                            <Message text="center" />
-                          </span>
-                        </div>
-                        <div className={styles.indicator}>
-                          <PositionBadge position={PositionType.Fukujin} />
-                          <span className={styles.indicatorCaption}>
-                            <Message text="fukujin" />
-                          </span>
-                        </div>
-                        <div className={styles.indicator}>
-                          <PositionBadge position={PositionType.Selected} />
-                          <span className={styles.indicatorCaption}>
-                            <Message text="selected" />
-                          </span>
-                        </div>
-                        <div className={styles.indicator}>
-                          <PositionBadge position={PositionType.Under} />
-                          <span className={styles.indicatorCaption}>
-                            <Message text="under" />
-                          </span>
-                        </div>
-                      </div>
-                      <PositionCounter {...positionsCounter} />
+                    <div
+                      css={css`
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 0.3em;
+                      `}
+                    >
+                      <PositionBadge position={PositionType.Fukujin} />
+                      <Typography
+                        variant="body3"
+                        element="span"
+                        textColor={{
+                          on: 'onBackground',
+                          variant: 'variant0',
+                        }}
+                        css={css`
+                          text-transform: capitalize;
+                          margin-top: 0.3em;
+                        `}
+                      >
+                        <Message text="fukujin" />
+                      </Typography>
                     </div>
-                  </section>
-                ) : null}
-                {gallery.length > 0 ? (
-                  <section className={styles.section}>
-                    <h2 className={styles.subheading}>
-                      <Message text="gallery" />
-                    </h2>
-                    <div className={styles.gallery}>
-                      {gallery.map((profileImage, index) => (
-                        <div
-                          className={styles.galleryImageContainer}
-                          key={index}
-                        >
-                          <div className={styles.wrapper}>
-                            <GatsbyImage
-                              src={profileImage}
-                              alt={name}
-                              objectFit="cover"
-                              objectPosition="top"
-                              className={styles.galleryImage}
-                            />
-                          </div>
-                        </div>
-                      ))}
+                    <div
+                      css={css`
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 0.3em;
+                      `}
+                    >
+                      <PositionBadge position={PositionType.Selected} />
+                      <Typography
+                        variant="body3"
+                        element="span"
+                        textColor={{
+                          on: 'onBackground',
+                          variant: 'variant0',
+                        }}
+                        css={css`
+                          text-transform: capitalize;
+                          margin-top: 0.3em;
+                        `}
+                      >
+                        <Message text="selected" />
+                      </Typography>
                     </div>
-                  </section>
-                ) : null}
-              </motion.div>
-            </motion.div>
-          </motion.div>
-        </div>
-      </PageContentLayout>
-    </div>
+                    <div
+                      css={css`
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 0.3em;
+                      `}
+                    >
+                      <PositionBadge position={PositionType.Under} />
+                      <Typography
+                        variant="body3"
+                        element="span"
+                        textColor={{
+                          on: 'onBackground',
+                          variant: 'variant0',
+                        }}
+                        css={css`
+                          text-transform: capitalize;
+                          margin-top: 0.3em;
+                        `}
+                      >
+                        <Message text="under" />
+                      </Typography>
+                    </div>
+                  </div>
+                </React.Fragment>
+              ) : null}
+            </React.Fragment>
+          ) : null}
+          {gallery.length > 0 ? (
+            <React.Fragment>
+              <TextDivider text={<Message text="gallery" />} />
+              <div
+                css={css`
+                  display: grid;
+                  grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+                  grid-template-rows: auto;
+                  grid-gap: ${theme.spacing.m};
+                  justify-content: center;
+                `}
+              >
+                {gallery.map((profileImage, index) => (
+                  <GridMemberImage src={profileImage} key={index} alt={name} />
+                ))}
+              </div>
+            </React.Fragment>
+          ) : null}
+        </MainContent>
+      </Main>
+    </React.Fragment>
   );
 };

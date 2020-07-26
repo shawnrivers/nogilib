@@ -18,6 +18,7 @@ import { Theme, useAppTheme } from 'client/styles/tokens';
 import { GridArtworkImage } from 'client/components/atoms/image/GirdArtworkImage';
 import { TextDivider } from 'client/features/Discography/components/atoms/TextDivider';
 import { MemberCard } from 'client/components/molecules/card/MemberCard';
+import { getMemberUrl } from 'client/utils/urls';
 
 type StyledComponentWithThemeProps = {
   theme: Theme;
@@ -173,59 +174,58 @@ export const Song: React.FC<SongProps> = ({
               creators.arrange.length +
               creators.direct.length >
             0 ? (
-              <section>
-                <div
-                  css={css`
-                    display: grid;
-                    grid-template-columns: max-content auto;
-                    grid-template-rows: auto;
-                    grid-gap: ${theme.spacing.m};
-                    margin-top: 0.5em;
-                    align-items: center;
-                  `}
-                >
-                  {creators.lyrics.length > 0 ? (
-                    <React.Fragment>
-                      <Typography variant="h7" element="span">
-                        <Message text="lyrics" />
-                      </Typography>
-                      <Typography variant="h7" element="span">
-                        <LocalizedList list={creators.lyrics} />
-                      </Typography>
-                    </React.Fragment>
-                  ) : null}
-                  {creators.compose.length > 0 ? (
-                    <React.Fragment>
-                      <Typography variant="h7" element="span">
-                        <Message text="compose" />
-                      </Typography>
-                      <Typography variant="h7" element="span">
-                        <LocalizedList list={creators.compose} />
-                      </Typography>
-                    </React.Fragment>
-                  ) : null}
-                  {creators.arrange.length > 0 ? (
-                    <React.Fragment>
-                      <Typography variant="h7" element="span">
-                        <Message text="arrange" />
-                      </Typography>
-                      <Typography variant="h7" element="span">
-                        <LocalizedList list={creators.arrange} />
-                      </Typography>
-                    </React.Fragment>
-                  ) : null}
-                  {creators.direct.length > 0 ? (
-                    <React.Fragment>
-                      <Typography variant="h7" element="span">
-                        <Message text="direct" />
-                      </Typography>
-                      <Typography variant="h7" element="span">
-                        <LocalizedList list={creators.direct} />
-                      </Typography>
-                    </React.Fragment>
-                  ) : null}
-                </div>
-              </section>
+              <div
+                css={css`
+                  display: grid;
+                  grid-template-columns: max-content auto;
+                  grid-template-rows: auto;
+                  grid-gap: ${theme.spacing.m};
+                  margin-top: 0.5em;
+                  align-items: center;
+                  text-transform: capitalize;
+                `}
+              >
+                {creators.lyrics.length > 0 ? (
+                  <React.Fragment>
+                    <Typography variant="h7" element="span">
+                      <Message text="lyrics" />
+                    </Typography>
+                    <Typography variant="h7" element="span">
+                      <LocalizedList list={creators.lyrics} />
+                    </Typography>
+                  </React.Fragment>
+                ) : null}
+                {creators.compose.length > 0 ? (
+                  <React.Fragment>
+                    <Typography variant="h7" element="span">
+                      <Message text="compose" />
+                    </Typography>
+                    <Typography variant="h7" element="span">
+                      <LocalizedList list={creators.compose} />
+                    </Typography>
+                  </React.Fragment>
+                ) : null}
+                {creators.arrange.length > 0 ? (
+                  <React.Fragment>
+                    <Typography variant="h7" element="span">
+                      <Message text="arrange" />
+                    </Typography>
+                    <Typography variant="h7" element="span">
+                      <LocalizedList list={creators.arrange} />
+                    </Typography>
+                  </React.Fragment>
+                ) : null}
+                {creators.direct.length > 0 ? (
+                  <React.Fragment>
+                    <Typography variant="h7" element="span">
+                      <Message text="direct" />
+                    </Typography>
+                    <Typography variant="h7" element="span">
+                      <LocalizedList list={creators.direct} />
+                    </Typography>
+                  </React.Fragment>
+                ) : null}
+              </div>
             ) : null}
           </div>
           <TextDivider text={<Message text="performers" />} />
@@ -268,6 +268,7 @@ export const Song: React.FC<SongProps> = ({
                                     member.nameNotations.firstName
                                   }
                                   profileImage={member.profileImage}
+                                  to={getMemberUrl(member.name)}
                                   textSize="em2"
                                   borderRadius="s"
                                   padding="s"
@@ -300,6 +301,7 @@ export const Song: React.FC<SongProps> = ({
                                 member.nameNotations.firstName
                               }
                               profileImage={member.profileImage}
+                              to={getMemberUrl(member.name)}
                               textSize="em2"
                               borderRadius="s"
                               padding="s"

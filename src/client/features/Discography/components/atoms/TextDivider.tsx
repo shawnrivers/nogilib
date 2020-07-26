@@ -31,6 +31,7 @@ export const TextDivider: React.FC<{ text: React.ReactNode }> = props => {
         textColor={{ on: 'onBackground', variant: 'standard' }}
         css={css`
           margin: 0 1em;
+          text-align: center;
         `}
       >
         {props.text}

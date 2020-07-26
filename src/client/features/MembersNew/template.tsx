@@ -9,7 +9,11 @@ import { TextDivider } from 'client/features/Discography/components/atoms/TextDi
 import { MemberResult } from 'server/actors/Members/models';
 import { MemberCard } from 'client/components/molecules/card/MemberCard';
 import { useAppTheme } from 'client/styles/tokens';
-import { getMembersUrl, MembersUrlFilter } from 'client/utils/urls';
+import {
+  getMembersUrl,
+  getMemberUrl,
+  MembersUrlFilter,
+} from 'client/utils/urls';
 
 export type MemberGroupByYear = {
   join: MemberResult['join'];
@@ -96,7 +100,7 @@ export const MembersPage: React.FC<MembersPageProps> = props => {
                     member.nameNotations.lastName +
                     member.nameNotations.firstName
                   }
-                  elevation={3}
+                  to={getMemberUrl(member.name)}
                   surfaceColor="standard"
                   borderRadius="m"
                   padding="m"

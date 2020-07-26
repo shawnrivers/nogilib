@@ -11,3 +11,5 @@ export const getSongUrl = (sonTitleKey: string): string =>
 export type MembersUrlFilter = 'all' | 'current' | 'graduated';
 export const getMembersUrl = (filter?: MembersUrlFilter): string =>
   filter ? `/members?filter=${filter}` : '/members';
+
+export const getMemberUrl = (memberName: string) => `/members/${memberName}`;
