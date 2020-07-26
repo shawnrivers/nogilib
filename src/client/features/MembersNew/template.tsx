@@ -25,12 +25,12 @@ export type MemberGroupByYear = {
   }[];
 };
 
-export type MembersProps = {
+export type MembersPageProps = {
   currentFilter: MembersUrlFilter;
   memberGroupsByJoin: MemberGroupByYear[];
 };
 
-export const Members: React.FC<MembersProps> = props => {
+export const MembersPage: React.FC<MembersPageProps> = props => {
   const { currentFilter, memberGroupsByJoin } = props;
   const theme = useAppTheme();
 
@@ -84,7 +84,7 @@ export const Members: React.FC<MembersProps> = props => {
                 grid-template-rows: auto;
                 grid-gap: ${theme.spacing.m};
                 justify-content: center;
-                max-width: 800px;
+                max-width: 60rem;
                 margin: auto;
               `}
             >

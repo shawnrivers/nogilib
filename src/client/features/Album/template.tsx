@@ -40,7 +40,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
       <Main>
         <div
           css={css`
-            max-width: 60em;
+            max-width: 60rem;
             margin: auto;
           `}
         >
@@ -96,7 +96,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
           </div>
           {props.centers.length > 0 ? (
             <React.Fragment>
-              <TextDivider text={<Message text="centers" />} />
+              <TextDivider text={<Message text="center" />} />
               <div
                 css={css`
                   display: grid;

@@ -15,12 +15,12 @@ import {
 } from 'client/utils/urls';
 import { CdGroupByYear } from 'pages/discography';
 
-export type DiscographyType = {
+export type DiscographyPageProps = {
   currentFilter: DiscographyUrlFilter;
   cdGroupsByYear: CdGroupByYear[];
 };
 
-export const Discography: React.FC<DiscographyType> = props => {
+export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
   const { currentFilter, cdGroupsByYear } = props;
   const theme = useAppTheme();
 
@@ -73,7 +73,7 @@ export const Discography: React.FC<DiscographyType> = props => {
                 grid-template-rows: auto;
                 grid-gap: ${theme.spacing.xl};
                 justify-content: center;
-                max-width: 800px;
+                max-width: 60rem;
                 margin: auto;
               `}
             >

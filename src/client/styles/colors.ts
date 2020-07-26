@@ -113,8 +113,8 @@ export const LIGHT_COLOR_THEME: ColorTheme = {
     },
     onPrimary: {
       standard: GLOBAL_COLORS.gray8,
-      variant0: GLOBAL_COLORS.gray6,
-      variant1: GLOBAL_COLORS.gray4,
+      variant0: GLOBAL_COLORS.gray5,
+      variant1: GLOBAL_COLORS.gray3,
     },
     onSecondary: {
       standard: GLOBAL_COLORS.gray8,
@@ -123,13 +123,13 @@ export const LIGHT_COLOR_THEME: ColorTheme = {
     },
     onBackground: {
       standard: GLOBAL_COLORS.gray8,
-      variant0: GLOBAL_COLORS.gray6,
-      variant1: GLOBAL_COLORS.gray4,
+      variant0: GLOBAL_COLORS.gray5,
+      variant1: GLOBAL_COLORS.gray3,
     },
     onSurface: {
       standard: GLOBAL_COLORS.gray8,
-      variant0: GLOBAL_COLORS.gray6,
-      variant1: GLOBAL_COLORS.gray4,
+      variant0: GLOBAL_COLORS.gray5,
+      variant1: GLOBAL_COLORS.gray3,
     },
   },
   global: GLOBAL_COLORS,

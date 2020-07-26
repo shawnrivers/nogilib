@@ -5,8 +5,8 @@ import * as queryString from 'query-string';
 import { MemberResult } from 'server/actors/Members/models';
 import {
   MemberGroupByYear,
-  Members,
-  MembersProps,
+  MembersPage,
+  MembersPageProps,
 } from 'client/features/MembersNew/template';
 
 export const query = graphql`
@@ -101,13 +101,13 @@ const MembersContainer: React.FC<QueryResult> = props => {
 
   const location = useLocation();
   const { filter } = queryString.parse(location.search);
-  const currentFilter: MembersProps['currentFilter'] =
+  const currentFilter: MembersPageProps['currentFilter'] =
     filter === 'current'
       ? 'current'
       : filter === 'graduated'
       ? 'graduated'
       : 'all';
-  const memberGroupsByJoin: MembersProps['memberGroupsByJoin'] =
+  const memberGroupsByJoin: MembersPageProps['memberGroupsByJoin'] =
     filter === 'current'
       ? currentMemberGroupByJoin
       : filter === 'graduated'
@@ -115,7 +115,7 @@ const MembersContainer: React.FC<QueryResult> = props => {
       : allMemberGroupByJoin;
 
   return (
-    <Members
+    <MembersPage
       currentFilter={currentFilter}
       memberGroupsByJoin={memberGroupsByJoin}
     />

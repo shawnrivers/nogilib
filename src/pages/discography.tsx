@@ -5,8 +5,8 @@ import * as React from 'react';
 import { DiscographyResult } from 'server/actors/Discography/models';
 import { sortByDate } from 'utils/arrays';
 import {
-  Discography,
-  DiscographyType,
+  DiscographyPage,
+  DiscographyPageProps,
 } from 'client/features/Discography/template';
 
 export const query = graphql`
@@ -111,9 +111,9 @@ const DiscographyContainer: React.FC<QueryResult> = props => {
 
   const location = useLocation();
   const { filter } = queryString.parse(location.search);
-  const currentFilter: DiscographyType['currentFilter'] =
+  const currentFilter: DiscographyPageProps['currentFilter'] =
     filter === 'singles' ? 'singles' : filter === 'albums' ? 'albums' : 'all';
-  const cdGroupsByYear: DiscographyType['cdGroupsByYear'] =
+  const cdGroupsByYear: DiscographyPageProps['cdGroupsByYear'] =
     filter === 'singles'
       ? singleGroupsByYear
       : filter === 'albums'
@@ -121,7 +121,7 @@ const DiscographyContainer: React.FC<QueryResult> = props => {
       : allCdGroupsByYear;
 
   return (
-    <Discography
+    <DiscographyPage
       currentFilter={currentFilter}
       cdGroupsByYear={cdGroupsByYear}
     />
