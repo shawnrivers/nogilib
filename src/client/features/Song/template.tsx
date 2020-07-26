@@ -1,70 +1,36 @@
-import { motion } from 'framer-motion';
+/**@jsx jsx */
+import { jsx, css } from '@emotion/core';
+import styled from '@emotion/styled';
 import * as React from 'react';
 import { injectIntl } from 'react-intl';
-import styles from './song.module.scss';
-import { ArrowBackIcon } from 'client/components/atoms/icons/ArrowBackIcon';
-import { GatsbyImage } from 'client/components/atoms/image/GatsbyImage';
 import { LocalizedList } from 'client/components/atoms/locales/LocalizedList';
 import { LocalizedNumber } from 'client/components/atoms/locales/LocalizedNumber';
 import { Message } from 'client/components/atoms/Message';
-import { PageContentLayout } from 'client/components/atoms/PageContentLayout';
 import { Language } from 'client/utils/constants';
 import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
 import { SongType } from 'server/actors/Songs/constants/songType';
 import { KOJIHARU_IMAGE_SRC } from 'server/constants/paths';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { MemberCard } from 'client/components/atoms/MemberCard';
+import { Header, Main, MainContent } from 'client/components/templates/Page';
+import { Typography } from 'client/components/atoms/Typography';
+import { Hashtag } from 'client/components/atoms/Hashtag';
+import { Theme, useAppTheme } from 'client/styles/tokens';
+import { GridArtworkImage } from 'client/components/atoms/image/GirdArtworkImage';
+import { TextDivider } from 'client/features/Discography/components/atoms/TextDivider';
+import { MemberCard } from 'client/components/molecules/card/MemberCard';
 
-const containerVariants = {
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      when: 'beforeChildren',
-    },
-  },
-  hidden: {
-    opacity: 0,
-    x: -20,
-  },
+type StyledComponentWithThemeProps = {
+  theme: Theme;
 };
 
-const headingVariants = {
-  visible: {
-    opacity: 1,
-    x: 0,
-  },
-  hidden: {
-    opacity: 0,
-    x: -20,
-  },
-};
-
-const contentContainerVariants = {
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      when: 'beforeChildren',
-      staggerChildren: 0.2,
-    },
-  },
-  hidden: {
-    opacity: 0,
-    y: 20,
-  },
-};
-
-const contentVariants = {
-  visible: {
-    opacity: 1,
-    y: 0,
-  },
-  hidden: {
-    opacity: 0,
-    y: -20,
-  },
-};
+const RowContainer = styled.div<StyledComponentWithThemeProps>`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: ${props => props.theme.spacing.s};
+  justify-content: center;
+  margin-top: 1em;
+`;
 
 const PerformersTag = injectIntl(
   ({
@@ -82,45 +48,31 @@ const PerformersTag = injectIntl(
 
     if (tagName.includes('generation')) {
       return (
-        <p className={styles.caption}>
-          #<Message text={tagName} />
-        </p>
+        <Hashtag>
+          <Message text={tagName} />
+        </Hashtag>
       );
     }
 
     if (tagName === 'selected' || tagName === 'under') {
       return locale === Language.En ? (
-        <p className={styles.caption}>
-          #<LocalizedNumber num={singleNumber} type="cd" />{' '}
+        <Hashtag>
+          <LocalizedNumber num={singleNumber} type="cd" />{' '}
           <Message text="single" /> <Message text={tagName} />{' '}
           <Message text="members" />
-        </p>
+        </Hashtag>
       ) : (
-        <p className={styles.caption}>
-          #<LocalizedNumber num={singleNumber} type="cd" />
+        <Hashtag>
+          <LocalizedNumber num={singleNumber} type="cd" />
           <Message text="single" />
           <Message text={tagName} />
           <Message text="members" />
-        </p>
+        </Hashtag>
       );
     }
 
-    return <p className={styles.caption}>#{tagName}</p>;
+    return <Hashtag>{tagName}</Hashtag>;
   }
-);
-
-const KojiharuCard = ({ isCenter }: { isCenter: boolean }) => (
-  <MemberCard
-    nameKey={MemberNameKey.KojimaHaruna}
-    name={{
-      lastName: '小嶋',
-      lastNameEn: 'kojima',
-      firstName: '陽菜',
-      firstNameEn: 'haruna',
-    }}
-    image={KOJIHARU_IMAGE_SRC}
-    isCenter={isCenter}
-  />
 );
 
 type SongPerformerType = {
@@ -155,7 +107,7 @@ interface SongProps {
   };
 }
 
-export const Song = ({
+export const Song: React.FC<SongProps> = ({
   title,
   type,
   songTags,
@@ -163,189 +115,216 @@ export const Song = ({
   performersTag,
   formation,
   members,
-  centers,
   creators,
-}: SongProps) => {
+}) => {
   useScrollRestoration();
+  const theme = useAppTheme();
 
   return (
-    <div className={styles.background}>
-      <PageContentLayout>
-        <motion.div whileHover={{ x: -7, scale: 1.5 }} className={styles.link}>
-          <button
-            onClick={() => {
-              window.history.back();
-            }}
-            aria-label="Go Back"
+    <React.Fragment>
+      <Header>
+        <Typography variant="h2" element="h1">
+          {title}
+        </Typography>
+        <Typography
+          variant="body1"
+          css={css`
+            margin-top: 0.5em;
+
+            & > *:not(:first-child) {
+              margin-left: 0.4em;
+            }
+          `}
+        >
+          <Hashtag>
+            <Message text={type} />
+          </Hashtag>
+          {songTags.map((tag, index) => (
+            <Hashtag key={index}>{tag}</Hashtag>
+          ))}
+        </Typography>
+      </Header>
+      <Main>
+        <MainContent>
+          <TextDivider text={<Message text="info" />} />
+          <div
+            css={css`
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: center;
+
+              & > * {
+                margin: ${theme.spacing.s};
+              }
+            `}
           >
-            <ArrowBackIcon className={styles.back} />
-          </button>
-        </motion.div>
-        <motion.div variants={containerVariants} className={styles.container}>
-          <motion.div variants={headingVariants} className={styles.heading}>
-            <h1 className={styles.title}>{title}</h1>
-            <h4 className={styles.tags}>
-              <span>
-                #<Message text={type} />
-              </span>
-              {songTags.map((tag, index) => (
-                <span key={index}>{tag}</span>
-              ))}
-            </h4>
-          </motion.div>
-          <motion.div
-            variants={contentContainerVariants}
-            className={styles.flexBox}
-          >
-            <motion.div variants={contentVariants} className={styles.artwork}>
-              <div className={styles.artworkImageWrapper}>
-                <GatsbyImage
-                  src={artwork}
-                  alt={title}
-                  objectFit="cover"
-                  objectPosition="center"
-                  className={styles.artworkImage}
-                />
-              </div>
-            </motion.div>
-            <motion.div variants={contentVariants} className={styles.content}>
-              {formation.length > 0 ? (
-                <section className={styles.section}>
-                  <h2 className={styles.subheading}>
-                    <Message text="performers" />
-                  </h2>
+            <GridArtworkImage
+              src={artwork}
+              alt={title}
+              fixedSize
+              css={css`
+                width: 200px;
+                height: 200px;
+              `}
+            />
+            {creators.lyrics.length +
+              creators.compose.length +
+              creators.arrange.length +
+              creators.direct.length >
+            0 ? (
+              <section>
+                <div
+                  css={css`
+                    display: grid;
+                    grid-template-columns: max-content auto;
+                    grid-template-rows: auto;
+                    grid-gap: ${theme.spacing.m};
+                    margin-top: 0.5em;
+                    align-items: center;
+                  `}
+                >
+                  {creators.lyrics.length > 0 ? (
+                    <React.Fragment>
+                      <Typography variant="h7" element="span">
+                        <Message text="lyrics" />
+                      </Typography>
+                      <Typography variant="h7" element="span">
+                        <LocalizedList list={creators.lyrics} />
+                      </Typography>
+                    </React.Fragment>
+                  ) : null}
+                  {creators.compose.length > 0 ? (
+                    <React.Fragment>
+                      <Typography variant="h7" element="span">
+                        <Message text="compose" />
+                      </Typography>
+                      <Typography variant="h7" element="span">
+                        <LocalizedList list={creators.compose} />
+                      </Typography>
+                    </React.Fragment>
+                  ) : null}
+                  {creators.arrange.length > 0 ? (
+                    <React.Fragment>
+                      <Typography variant="h7" element="span">
+                        <Message text="arrange" />
+                      </Typography>
+                      <Typography variant="h7" element="span">
+                        <LocalizedList list={creators.arrange} />
+                      </Typography>
+                    </React.Fragment>
+                  ) : null}
+                  {creators.direct.length > 0 ? (
+                    <React.Fragment>
+                      <Typography variant="h7" element="span">
+                        <Message text="direct" />
+                      </Typography>
+                      <Typography variant="h7" element="span">
+                        <LocalizedList list={creators.direct} />
+                      </Typography>
+                    </React.Fragment>
+                  ) : null}
+                </div>
+              </section>
+            ) : null}
+          </div>
+          <TextDivider text={<Message text="performers" />} />
+          <div>
+            {formation.length > 0 ? (
+              <section>
+                <div
+                  css={css`
+                    display: flex;
+                    justify-content: center;
+                  `}
+                >
                   <PerformersTag
                     singleNumber={performersTag.singleNumber}
                     tagName={performersTag.name}
                   />
-                  <div className={styles.formation}>
-                    {formation.length > 1 ? (
-                      formation.map((row, index) => (
-                        <div key={index} className={styles.row}>
-                          <h4 className={styles.rowIndex}>
-                            <LocalizedNumber num={index + 1} type="row" />
-                          </h4>
-                          <div className={styles.grid}>
-                            {row.map(memberName => {
-                              if (memberName !== MemberNameKey.KojimaHaruna) {
-                                const member = members[memberName];
-                                return (
-                                  <div
-                                    className={styles.card}
-                                    key={member.name}
-                                  >
-                                    <MemberCard
-                                      nameKey={memberName}
-                                      name={member.nameNotations}
-                                      image={member.profileImage}
-                                      isCenter={centers.includes(member.name)}
-                                    />
-                                  </div>
-                                );
-                              } else {
-                                return (
-                                  <div className={styles.card} key={memberName}>
-                                    <KojiharuCard
-                                      isCenter={centers.includes(memberName)}
-                                    />
-                                  </div>
-                                );
-                              }
-                            })}
-                          </div>
-                        </div>
-                      ))
-                    ) : (
-                      <div className={styles.grid}>
-                        {formation[0].map(memberName => {
-                          if (memberName !== MemberNameKey.KojimaHaruna) {
-                            const member = members[memberName];
-                            return (
-                              <div className={styles.card} key={member.name}>
+                </div>
+                <div>
+                  {formation.length > 1 ? (
+                    formation.map((row, index) => (
+                      <div key={index}>
+                        <Typography
+                          variant="h5"
+                          element="h4"
+                          css={css`
+                            margin-top: 1em;
+                          `}
+                        >
+                          <LocalizedNumber num={index + 1} type="row" />
+                        </Typography>
+                        <RowContainer>
+                          {row.map(memberName => {
+                            if (memberName !== MemberNameKey.KojimaHaruna) {
+                              const member = members[memberName];
+
+                              return (
                                 <MemberCard
-                                  nameKey={member.name}
-                                  name={member.nameNotations}
-                                  image={member.profileImage}
-                                  isCenter={centers.includes(memberName)}
+                                  name={
+                                    member.nameNotations.lastName +
+                                    member.nameNotations.firstName
+                                  }
+                                  profileImage={member.profileImage}
+                                  textSize="em2"
+                                  borderRadius="s"
+                                  padding="s"
                                 />
-                              </div>
-                            );
-                          } else {
-                            return (
-                              <div className={styles.card} key={memberName}>
-                                <KojiharuCard
-                                  isCenter={centers.includes(memberName)}
+                              );
+                            } else {
+                              return (
+                                <MemberCard
+                                  name={'小嶋陽菜'}
+                                  profileImage={KOJIHARU_IMAGE_SRC}
+                                  textSize="em2"
+                                  borderRadius="s"
+                                  padding="s"
                                 />
-                              </div>
-                            );
-                          }
-                        })}
+                              );
+                            }
+                          })}
+                        </RowContainer>
                       </div>
-                    )}
-                  </div>
-                </section>
-              ) : null}
-              {creators.lyrics.length +
-                creators.compose.length +
-                creators.arrange.length +
-                creators.direct.length >
-              0 ? (
-                <section className={styles.section}>
-                  <h2
-                    className={
-                      styles.subheading + ' ' + styles.creatorsContainer
-                    }
-                  >
-                    <Message text="creators" />
-                  </h2>
-                  <div className={styles.creators}>
-                    {creators.lyrics.length > 0 ? (
-                      <div className={styles.creatorsItem}>
-                        <span className={styles.creatorWork}>
-                          <Message text="lyrics" />
-                        </span>
-                        <span className={styles.creatorNames}>
-                          <LocalizedList list={creators.lyrics} />
-                        </span>
-                      </div>
-                    ) : null}
-                    {creators.compose.length > 0 ? (
-                      <div className={styles.creatorsItem}>
-                        <span className={styles.creatorWork}>
-                          <Message text="compose" />
-                        </span>
-                        <span className={styles.creatorNames}>
-                          <LocalizedList list={creators.compose} />
-                        </span>
-                      </div>
-                    ) : null}
-                    {creators.arrange.length > 0 ? (
-                      <div className={styles.creatorsItem}>
-                        <span className={styles.creatorWork}>
-                          <Message text="arrange" />
-                        </span>
-                        <span className={styles.creatorNames}>
-                          <LocalizedList list={creators.arrange} />
-                        </span>
-                      </div>
-                    ) : null}
-                    {creators.direct.length > 0 ? (
-                      <div className={styles.creatorsItem}>
-                        <span className={styles.creatorWork}>
-                          <Message text="direct" />
-                        </span>
-                        <span className={styles.creatorNames}>
-                          <LocalizedList list={creators.direct} />
-                        </span>
-                      </div>
-                    ) : null}
-                  </div>
-                </section>
-              ) : null}
-            </motion.div>
-          </motion.div>
-        </motion.div>
-      </PageContentLayout>
-    </div>
+                    ))
+                  ) : (
+                    <RowContainer>
+                      {formation[0].map(memberName => {
+                        if (memberName !== MemberNameKey.KojimaHaruna) {
+                          const member = members[memberName];
+                          return (
+                            <MemberCard
+                              name={
+                                member.nameNotations.lastName +
+                                member.nameNotations.firstName
+                              }
+                              profileImage={member.profileImage}
+                              textSize="em2"
+                              borderRadius="s"
+                              padding="s"
+                            />
+                          );
+                        } else {
+                          return (
+                            <MemberCard
+                              name={'小嶋陽菜'}
+                              profileImage={KOJIHARU_IMAGE_SRC}
+                              textSize="em2"
+                              borderRadius="s"
+                              padding="s"
+                            />
+                          );
+                        }
+                      })}
+                    </RowContainer>
+                  )}
+                </div>
+              </section>
+            ) : null}
+          </div>
+        </MainContent>
+      </Main>
+    </React.Fragment>
   );
 };

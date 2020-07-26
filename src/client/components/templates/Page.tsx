@@ -170,6 +170,10 @@ export const Header = styled.header`
 export const Main = styled.main`
   grid-area: main;
 `;
+export const MainContent = styled.div`
+  max-width: 60rem;
+  margin: auto;
+`;
 
 export const Page: React.FC = props => {
   const theme = useAppTheme();

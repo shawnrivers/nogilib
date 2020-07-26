@@ -19,6 +19,7 @@ export const query = graphql`
       release
       songs {
         title
+        key
         type
         inCdType
         focusPerformers {
@@ -52,6 +53,7 @@ type QueryResultAlbum = {
   release: DiscographyResult['release'];
   songs: {
     title: DiscographyResult['songs'][0]['title'];
+    key: DiscographyResult['songs'][0]['key'];
     type: DiscographyResult['songs'][0]['type'];
     inCdType: DiscographyResult['songs'][0]['inCdType'];
     focusPerformers: DiscographyResult['songs'][0]['focusPerformers'];
@@ -85,6 +87,7 @@ export type AlbumPageProps = {
   release: DiscographyResult['release'];
   tracks: {
     title: DiscographyResult['songs'][0]['title'];
+    key: DiscographyResult['songs'][0]['key'];
     type: DiscographyResult['songs'][0]['type'];
     inCdType: DiscographyResult['songs'][0]['inCdType'];
     focusPerformers: DiscographyResult['songs'][0]['focusPerformers'];

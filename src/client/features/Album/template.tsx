@@ -2,7 +2,7 @@
 import { jsx, css } from '@emotion/core';
 import * as React from 'react';
 import { Typography } from 'client/components/atoms/Typography';
-import { Header, Main } from 'client/components/templates/Page';
+import { Header, Main, MainContent } from 'client/components/templates/Page';
 import { useAppTheme } from 'client/styles/tokens';
 import { toCdNumber } from 'utils/strings';
 import { Message } from 'client/components/atoms/Message';
@@ -11,6 +11,7 @@ import { TextDivider } from 'client/features/Discography/components/atoms/TextDi
 import { AlbumPageProps } from 'client/features/Album/container';
 import { Card } from 'client/components/atoms/card/Card';
 import { MemberCard } from 'client/components/molecules/card/MemberCard';
+import { getSongUrl } from 'client/utils/urls';
 
 export const AlbumPage: React.FC<AlbumPageProps> = props => {
   const theme = useAppTheme();
@@ -38,12 +39,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
         </Typography>
       </Header>
       <Main>
-        <div
-          css={css`
-            max-width: 60rem;
-            margin: auto;
-          `}
-        >
+        <MainContent>
           <TextDivider text={<Message text="tracks" />} />
           <div
             css={css`
@@ -53,8 +49,13 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
               justify-content: center;
             `}
           >
-            {props.tracks.map((track, i) => (
-              <Card key={String(i + 1)} borderRadius="m" padding="xs">
+            {props.tracks.map(track => (
+              <Card
+                key={track.key}
+                borderRadius="m"
+                padding="xs"
+                to={getSongUrl(track.key)}
+              >
                 <div
                   css={css`
                     display: grid;
@@ -137,7 +138,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
               <GridArtworkImage key={i} src={artwork.url} alt={String(i + 1)} />
             ))}
           </div>
-        </div>
+        </MainContent>
       </Main>
     </React.Fragment>
   );
