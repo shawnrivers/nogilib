@@ -221,6 +221,7 @@ export const MemberPage = ({
                   display: flex;
                   justify-content: center;
                   align-items: baseline;
+                  flex-wrap: wrap;
                 `}
               >
                 {sites.map(site => (
@@ -262,6 +263,8 @@ export const MemberPage = ({
                 css={css`
                   display: flex;
                   justify-content: center;
+                  align-items: baseline;
+                  flex-wrap: wrap;
                 `}
               >
                 {photoAlbums.map(photoAlbum => (
