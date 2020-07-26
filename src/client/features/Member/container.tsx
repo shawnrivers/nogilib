@@ -1,7 +1,7 @@
-import { graphql } from "gatsby";
-import * as React from "react";
-import { Member } from "client/features/Member/template";
-import { MemberResult } from "server/actors/Members/models";
+import { graphql } from 'gatsby';
+import * as React from 'react';
+import { MemberPage } from 'client/features/Member/template';
+import { MemberResult } from 'server/actors/Members/models';
 
 export const query = graphql`
   query($name: String!) {
@@ -60,20 +60,20 @@ interface MemberData {
   };
 }
 
-const MemberContainer = ({ data: { membersJson } }: MemberData) => {
+const MemberPageContainer = ({ data: { membersJson } }: MemberData) => {
   const names = React.useMemo(
     () => ({
       ja:
         membersJson.nameNotations.lastName +
-        " " +
+        ' ' +
         membersJson.nameNotations.firstName,
       en:
         membersJson.nameNotations.lastNameEn +
-        " " +
+        ' ' +
         membersJson.nameNotations.firstNameEn,
       furigana:
         membersJson.nameNotations.lastNameFurigana +
-        " " +
+        ' ' +
         membersJson.nameNotations.firstNameFurigana,
     }),
     [membersJson.nameNotations]
@@ -84,7 +84,7 @@ const MemberContainer = ({ data: { membersJson } }: MemberData) => {
     let corps = [];
 
     for (const unit of membersJson.units) {
-      if (unit.type === "unit") {
+      if (unit.type === 'unit') {
         units.push(unit.name);
       } else {
         corps.push(unit.name);
@@ -100,7 +100,7 @@ const MemberContainer = ({ data: { membersJson } }: MemberData) => {
   const positionsHistory = React.useMemo(
     () =>
       membersJson.positionsHistory.filter(
-        history => history.position !== "none"
+        history => history.position !== 'none'
       ),
     [membersJson.positionsHistory]
   );
@@ -119,7 +119,7 @@ const MemberContainer = ({ data: { membersJson } }: MemberData) => {
     const list = membersJson.singleImages
       .slice()
       .reverse()
-      .filter(image => image !== "");
+      .filter(image => image !== '');
 
     let uniqueList: string[] = [];
 
@@ -142,7 +142,7 @@ const MemberContainer = ({ data: { membersJson } }: MemberData) => {
   }, [membersJson.singleImages]);
 
   return membersJson ? (
-    <Member
+    <MemberPage
       name={membersJson.name}
       names={names}
       profileImage={membersJson.profileImage}
@@ -165,4 +165,4 @@ const MemberContainer = ({ data: { membersJson } }: MemberData) => {
   ) : null;
 };
 
-export default MemberContainer;
+export default MemberPageContainer;

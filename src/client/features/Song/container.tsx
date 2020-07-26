@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
-import { Song } from 'client/features/Song/template';
+import { SongPage } from 'client/features/Song/template';
 import { toCdNumber } from 'utils/strings';
 import { SongResult } from 'server/actors/Songs/models';
 import { MemberResult } from 'server/actors/Members/models';
@@ -81,7 +81,9 @@ interface SongData {
   };
 }
 
-const SongContainer = ({ data: { songsJson, allMembersJson } }: SongData) => {
+const SongPageContainer = ({
+  data: { songsJson, allMembersJson },
+}: SongData) => {
   const songTags = React.useMemo(
     () => [
       ...[songsJson.single]
@@ -118,7 +120,7 @@ const SongContainer = ({ data: { songsJson, allMembersJson } }: SongData) => {
   );
 
   return songsJson ? (
-    <Song
+    <SongPage
       title={songsJson.title}
       songTags={songTags}
       type={songsJson.type}
@@ -132,4 +134,4 @@ const SongContainer = ({ data: { songsJson, allMembersJson } }: SongData) => {
   ) : null;
 };
 
-export default SongContainer;
+export default SongPageContainer;

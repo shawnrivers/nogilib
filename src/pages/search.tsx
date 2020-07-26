@@ -64,7 +64,7 @@ export type SearchDoc = AlbumDoc | SingleDoc | SongDoc | MemberDoc;
 
 let timeout: NodeJS.Timeout;
 
-export const SearchContainer = injectIntl(({ intl }: { intl: any }) => {
+export const SearchPageContainer = injectIntl(({ intl }: { intl: any }) => {
   useScrollRestoration();
 
   const [query, setQuery] = React.useState('');
@@ -171,4 +171,4 @@ export const SearchContainer = injectIntl(({ intl }: { intl: any }) => {
   );
 });
 
-export default () => <SearchContainer />;
+export default SearchPageContainer;

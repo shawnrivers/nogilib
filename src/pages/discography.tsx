@@ -84,7 +84,7 @@ const groupCdsByYear = (cds: QueryResultDiscography[]): CdGroupByYear[] => {
   }));
 };
 
-const DiscographyContainer: React.FC<QueryResult> = props => {
+const DiscographyPageContainer: React.FC<QueryResult> = props => {
   const discographyData = props.data.allDiscographyJson.nodes;
   const singlesData = React.useMemo(
     () => discographyData.filter(cd => cd.type === 'single'),
@@ -128,4 +128,4 @@ const DiscographyContainer: React.FC<QueryResult> = props => {
   );
 };
 
-export default DiscographyContainer;
+export default DiscographyPageContainer;

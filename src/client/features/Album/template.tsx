@@ -11,7 +11,7 @@ import { TextDivider } from 'client/components/atoms/TextDivider';
 import { AlbumPageProps } from 'client/features/Album/container';
 import { Card } from 'client/components/atoms/card/Card';
 import { MemberCard } from 'client/components/molecules/card/MemberCard';
-import { getSongUrl } from 'client/utils/urls';
+import { getMemberUrl, getSongUrl } from 'client/utils/urls';
 
 export const AlbumPage: React.FC<AlbumPageProps> = props => {
   const theme = useAppTheme();
@@ -115,6 +115,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
                       member.nameNotations.lastName +
                       member.nameNotations.firstName
                     }
+                    to={getMemberUrl(member.name)}
                     elevation={3}
                     surfaceColor="standard"
                     borderRadius="m"

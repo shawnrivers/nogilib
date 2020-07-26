@@ -16,7 +16,7 @@ import { TextDivider } from 'client/components/atoms/TextDivider';
 import { useAppTheme } from 'client/styles/tokens';
 import { GridMemberImage } from 'client/components/atoms/image/GridMemberImage';
 
-interface MemberProps {
+interface MemberPageProps {
   name: string;
   names: {
     ja: string;
@@ -59,7 +59,7 @@ interface MemberProps {
   gallery: string[];
 }
 
-export const Member = ({
+export const MemberPage = ({
   name,
   names,
   profileImage,
@@ -77,7 +77,7 @@ export const Member = ({
   positionsHistory,
   positionsCounter,
   gallery,
-}: MemberProps) => {
+}: MemberPageProps) => {
   useScrollRestoration();
   const { language } = useAppContext();
   const theme = useAppTheme();

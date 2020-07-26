@@ -76,7 +76,7 @@ const groupMembersByJoin = (
   return memberGroupByJoin;
 };
 
-const MembersContainer: React.FC<QueryResult> = props => {
+const MembersPageContainer: React.FC<QueryResult> = props => {
   const membersData = props.data.allMembersJson.nodes;
   const currentMembersData = React.useMemo(
     () => membersData.filter(member => !member.graduation.isGraduated),
@@ -122,4 +122,4 @@ const MembersContainer: React.FC<QueryResult> = props => {
   );
 };
 
-export default MembersContainer;
+export default MembersPageContainer;

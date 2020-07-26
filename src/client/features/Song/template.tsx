@@ -88,7 +88,7 @@ type SongPerformerType = {
   singleImages: string[];
 };
 
-interface SongProps {
+interface SongPageProps {
   title: string;
   songTags: string[];
   type: SongType;
@@ -108,7 +108,7 @@ interface SongProps {
   };
 }
 
-export const Song: React.FC<SongProps> = ({
+export const SongPage: React.FC<SongPageProps> = ({
   title,
   type,
   songTags,
