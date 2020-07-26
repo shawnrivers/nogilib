@@ -6,7 +6,7 @@ import { Typography } from 'client/components/atoms/Typography';
 import { TextSwitchLinkGroup } from 'client/components/molecules/buttonGroup/TextSwitchLinkGroup';
 import { ArtworkCard } from 'client/components/molecules/card/ArtworkCard';
 import { Header, Main } from 'client/components/templates/Page';
-import { TextDivider } from 'client/features/Discography/components/atoms/TextDivider';
+import { TextDivider } from 'client/components/atoms/TextDivider';
 import { useAppTheme } from 'client/styles/tokens';
 import {
   DiscographyUrlFilter,

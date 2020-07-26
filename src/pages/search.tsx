@@ -1,11 +1,10 @@
-import * as React from "react";
-import { injectIntl } from "react-intl";
-import { Search, SearchResult } from "client/features/Search/template";
-import { useScrollRestoration } from "client/hooks/useScrollRestoration";
-import "client/styles/app.scss";
-import { SearchResultType } from "client/utils/constants";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { toCdNumber } from "utils/strings";
+import * as React from 'react';
+import { injectIntl } from 'react-intl';
+import { Search, SearchResult } from 'client/features/Search/template';
+import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
+import { SearchResultType } from 'client/utils/constants';
+import { SongType } from 'server/actors/Songs/constants/songType';
+import { toCdNumber } from 'utils/strings';
 
 export type MemberDoc = {
   id: string;
@@ -68,12 +67,12 @@ let timeout: NodeJS.Timeout;
 export const SearchContainer = injectIntl(({ intl }: { intl: any }) => {
   useScrollRestoration();
 
-  const [query, setQuery] = React.useState("");
+  const [query, setQuery] = React.useState('');
   const [results, setResults] = React.useState<SearchDoc[]>([]);
   const [isSearching, setIsSearching] = React.useState(false);
 
   const lunr = React.useMemo(
-    () => (typeof window !== "undefined" ? (window as any).__LUNR__.ja : null),
+    () => (typeof window !== 'undefined' ? (window as any).__LUNR__.ja : null),
     []
   );
 
@@ -88,7 +87,7 @@ export const SearchContainer = injectIntl(({ intl }: { intl: any }) => {
 
       timeout = setTimeout(() => {
         const searchResult =
-          inputQuery !== ""
+          inputQuery !== ''
             ? lunr.index
                 .search(`name:*${inputQuery}*`, { extend: true })
                 .map(({ ref }: any) => lunr.store[ref])
@@ -137,9 +136,9 @@ export const SearchContainer = injectIntl(({ intl }: { intl: any }) => {
       }
 
       if (result.type === SearchResultType.Songs) {
-        let secondCaption = "";
+        let secondCaption = '';
 
-        if (result.single.number !== "") {
+        if (result.single.number !== '') {
           secondCaption = `#${toCdNumber(result.single.number)} single`;
         } else {
           if (result.album !== undefined) {

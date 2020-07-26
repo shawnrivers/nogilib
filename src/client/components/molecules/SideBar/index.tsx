@@ -1,12 +1,11 @@
-import * as React from "react";
-import { motion } from "framer-motion";
-import { Link } from "gatsby";
-import styles from "./sidebar.module.scss";
-import { CloseIcon } from "client/components/atoms/icons/CloseIcon";
-import { Message } from "client/components/atoms/Message";
-import { LocalizedLink } from "client/components/atoms/locales/LocalizedLink";
-import { getUrlWithTrailingSlash } from "utils/strings";
-import { Links } from "client/utils/constants";
+import * as React from 'react';
+import { motion } from 'framer-motion';
+import { Link } from 'gatsby';
+import styles from './sidebar.module.scss';
+import { CloseIcon } from 'client/components/atoms/icons/CloseIcon';
+import { Message } from 'client/components/atoms/Message';
+import { getUrlWithTrailingSlash } from 'utils/strings';
+import { Links } from 'client/utils/constants';
 
 const backgroundFade = {
   opened: { opacity: 1, transition: { duration: 0.2 } },
@@ -14,8 +13,8 @@ const backgroundFade = {
 };
 
 const sideBarFade = {
-  opened: { x: "0", transition: { duration: 0.2 } },
-  closed: { x: "-102vw", transition: { duration: 0.2 } },
+  opened: { x: '0', transition: { duration: 0.2 } },
+  closed: { x: '-102vw', transition: { duration: 0.2 } },
 };
 
 interface SideBarProps {
@@ -27,18 +26,18 @@ export const SideBar = ({ open, handleClose }: SideBarProps) => {
   return (
     <>
       <motion.div
-        animate={open ? "opened" : "closed"}
+        animate={open ? 'opened' : 'closed'}
         variants={backgroundFade}
         className={styles.background}
       />
       <motion.div
-        animate={open ? "opened" : "closed"}
+        animate={open ? 'opened' : 'closed'}
         variants={sideBarFade}
         onClick={() => handleClose()}
         className={styles.invisibleBackground}
       />
       <motion.div
-        animate={open ? "opened" : "closed"}
+        animate={open ? 'opened' : 'closed'}
         variants={sideBarFade}
         className={styles.sideBar}
       >
@@ -49,34 +48,31 @@ export const SideBar = ({ open, handleClose }: SideBarProps) => {
         </div>
         <div className={styles.pages}>
           <p className={styles.page}>
-            <LocalizedLink to={Links.Singles} handleClick={() => handleClose()}>
+            <Link to={Links.Singles} onClick={() => handleClose()}>
               <Message text="music" />
-            </LocalizedLink>
+            </Link>
           </p>
           <p className={styles.page}>
-            <LocalizedLink
-              to={Links.FirstGeneration}
-              handleClick={() => handleClose()}
-            >
+            <Link to={Links.FirstGeneration} onClick={() => handleClose()}>
               <Message text="members" />
-            </LocalizedLink>
+            </Link>
           </p>
           <p className={styles.page}>
-            <LocalizedLink to={Links.Search} handleClick={() => handleClose()}>
+            <Link to={Links.Search} onClick={() => handleClose()}>
               <Message text="search" />
-            </LocalizedLink>
+            </Link>
           </p>
           <hr className={styles.divider} />
           <p className={styles.page}>
-            <LocalizedLink to={Links.About} handleClick={() => handleClose()}>
+            <Link to={Links.About} onClick={() => handleClose()}>
               <Message text="about" />
-            </LocalizedLink>
+            </Link>
           </p>
         </div>
         <div className={styles.languages}>
           <span className={styles.language}>
             <Link
-              to={getUrlWithTrailingSlash("/en" + Links.Singles)}
+              to={getUrlWithTrailingSlash('/en' + Links.Singles)}
               onClick={() => handleClose()}
             >
               EN
@@ -92,7 +88,7 @@ export const SideBar = ({ open, handleClose }: SideBarProps) => {
           </span>
           <span className={styles.language}>
             <Link
-              to={getUrlWithTrailingSlash("/zh" + Links.Singles)}
+              to={getUrlWithTrailingSlash('/zh' + Links.Singles)}
               onClick={() => handleClose()}
             >
               简

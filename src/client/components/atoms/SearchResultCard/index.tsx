@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import * as React from 'react';
+import { Link } from 'gatsby';
 import styles from './searchresultcard.module.scss';
 import { GatsbyImage } from 'client/components/atoms/image/GatsbyImage';
-import { LocalizedLink } from 'client/components/atoms/locales/LocalizedLink';
 import { classNames } from 'utils/strings';
 
 const backgroundHover = {
@@ -32,7 +32,7 @@ export const SearchResultCard = ({
   const [isHovered, setHover] = React.useState(false);
 
   return (
-    <LocalizedLink to={to}>
+    <Link to={to}>
       <motion.div
         whileHover="hover"
         variants={backgroundHover}
@@ -65,6 +65,6 @@ export const SearchResultCard = ({
           </motion.p>
         </div>
       </motion.div>
-    </LocalizedLink>
+    </Link>
   );
 };

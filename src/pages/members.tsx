@@ -7,7 +7,7 @@ import {
   MemberGroupByYear,
   MembersPage,
   MembersPageProps,
-} from 'client/features/MembersNew/template';
+} from 'client/features/Members/template';
 
 export const query = graphql`
   query {

@@ -16,7 +16,7 @@ import { Typography } from 'client/components/atoms/Typography';
 import { Hashtag } from 'client/components/atoms/Hashtag';
 import { Theme, useAppTheme } from 'client/styles/tokens';
 import { GridArtworkImage } from 'client/components/atoms/image/GirdArtworkImage';
-import { TextDivider } from 'client/features/Discography/components/atoms/TextDivider';
+import { TextDivider } from 'client/components/atoms/TextDivider';
 import { MemberCard } from 'client/components/molecules/card/MemberCard';
 import { getMemberUrl } from 'client/utils/urls';
 

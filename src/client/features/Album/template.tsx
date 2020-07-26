@@ -7,7 +7,7 @@ import { useAppTheme } from 'client/styles/tokens';
 import { toCdNumber } from 'utils/strings';
 import { Message } from 'client/components/atoms/Message';
 import { GridArtworkImage } from 'client/components/atoms/image/GirdArtworkImage';
-import { TextDivider } from 'client/features/Discography/components/atoms/TextDivider';
+import { TextDivider } from 'client/components/atoms/TextDivider';
 import { AlbumPageProps } from 'client/features/Album/container';
 import { Card } from 'client/components/atoms/card/Card';
 import { MemberCard } from 'client/components/molecules/card/MemberCard';

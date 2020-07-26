@@ -1,13 +1,19 @@
-import * as React from "react";
-import { Link } from "gatsby";
-import { PageContentLayout } from "client/components/atoms/PageContentLayout";
-import "client/styles/app.scss";
-import { Links } from "client/utils/constants";
-import { getUrlWithTrailingSlash } from "utils/strings";
+import * as React from 'react';
+import { Typography } from 'client/components/atoms/Typography';
+import { Message } from 'client/components/atoms/Message';
+import { Header, Main, MainContent } from 'client/components/templates/Page';
 
 export default () => (
-  <PageContentLayout>
-    <h1>Page Not Found</h1>
-    <Link to={getUrlWithTrailingSlash(Links.Singles)}>Go back</Link>
-  </PageContentLayout>
+  <React.Fragment>
+    <Header>
+      <Typography variant="h2" element="h1">
+        <Message text="page not found" />
+      </Typography>
+    </Header>
+    <Main>
+      <MainContent>
+        <Typography variant="body1">Please enter the right URL</Typography>
+      </MainContent>
+    </Main>
+  </React.Fragment>
 );

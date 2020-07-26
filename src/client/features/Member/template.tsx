@@ -12,7 +12,7 @@ import { PositionType } from 'server/actors/Members/constants/position';
 import { Header, Main, MainContent } from 'client/components/templates/Page';
 import { Typography } from 'client/components/atoms/Typography';
 import { useAppContext } from 'client/hooks/useAppContext';
-import { TextDivider } from 'client/features/Discography/components/atoms/TextDivider';
+import { TextDivider } from 'client/components/atoms/TextDivider';
 import { useAppTheme } from 'client/styles/tokens';
 import { GridMemberImage } from 'client/components/atoms/image/GridMemberImage';
 
