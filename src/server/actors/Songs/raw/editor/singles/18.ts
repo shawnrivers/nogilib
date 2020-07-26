@@ -1,22 +1,21 @@
-import { SongRaw } from "server/actors/Songs/models";
-import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
-import { SONGS } from "server/actors/Songs/constants/songTitle";
+import { SongRaw } from 'server/actors/Songs/models';
+import { createSongRaw } from 'server/actors/Songs/raw/creator';
+import { SongType } from 'server/actors/Songs/constants/songType';
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS["逃げ水"].title,
+    title: SONGS['逃げ水'].title,
     type: SongType.Title,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["谷村庸平"],
-      arrange: ["谷村庸平"],
-      direct: ["山岸聖太"],
+      lyrics: ['秋元康'],
+      compose: ['谷村庸平'],
+      arrange: ['谷村庸平'],
+      direct: ['山岸聖太'],
     },
     center: [MemberNameKey.OozonoMomoko, MemberNameKey.YodaYuuki],
-    fukujin: FukujinType.RowOneTwo,
+    fukujin: 'row-1-2',
     formations: {
       firstRow: [
         MemberNameKey.SaitouAsuka,
@@ -45,13 +44,13 @@ export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["アンダー"].title,
+    title: SONGS['アンダー'].title,
     type: SongType.Under,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["白土亨"],
-      arrange: ["遠藤ナオキ"],
-      direct: ["金森孝宏"],
+      lyrics: ['秋元康'],
+      compose: ['白土亨'],
+      arrange: ['遠藤ナオキ'],
+      direct: ['金森孝宏'],
     },
     center: [MemberNameKey.NakamotoHimeka, MemberNameKey.KitanoHinako],
     formations: {
@@ -82,13 +81,13 @@ export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["女は一人じゃ眠れない"].title,
+    title: SONGS['女は一人じゃ眠れない'].title,
     type: SongType.Selected,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["小形誠"],
-      arrange: ["高橋浩一郎"],
-      direct: ["萩原健太郎"],
+      lyrics: ['秋元康'],
+      compose: ['小形誠'],
+      arrange: ['高橋浩一郎'],
+      direct: ['萩原健太郎'],
     },
     center: [MemberNameKey.OozonoMomoko, MemberNameKey.YodaYuuki],
     formations: {
@@ -115,12 +114,12 @@ export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["ひと夏の長さより…"].title,
+    title: SONGS['ひと夏の長さより…'].title,
     type: SongType.Selected,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["aokado"],
-      arrange: ["aokado"],
+      lyrics: ['秋元康'],
+      compose: ['aokado'],
+      arrange: ['aokado'],
     },
     center: [MemberNameKey.AkimotoManatsu, MemberNameKey.MatsumuraSayuri],
     formations: {
@@ -147,13 +146,13 @@ export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["ライブ神"].title,
+    title: SONGS['ライブ神'].title,
     type: SongType.SecondGeneration,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["SaSA"],
-      arrange: ["SaSA"],
-      direct: ["伊藤衆人"],
+      lyrics: ['秋元康'],
+      compose: ['SaSA'],
+      arrange: ['SaSA'],
+      direct: ['伊藤衆人'],
     },
     center: [MemberNameKey.HoriMiona],
     formations: {
@@ -178,13 +177,13 @@ export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
 
   createSongRaw({
-    title: SONGS["未来の答え"].title,
+    title: SONGS['未来の答え'].title,
     type: SongType.ThirdGeneration,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["板垣祐介"],
-      arrange: ["板垣祐介"],
-      direct: ["福島真希"],
+      lyrics: ['秋元康'],
+      compose: ['板垣祐介'],
+      arrange: ['板垣祐介'],
+      direct: ['福島真希'],
     },
     center: [MemberNameKey.KuboShiori, MemberNameKey.YamashitaMizuki],
     formations: {
@@ -210,12 +209,12 @@ export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
 
   createSongRaw({
-    title: SONGS["泣いたっていいじゃないか?"].title,
+    title: SONGS['泣いたっていいじゃないか?'].title,
     type: SongType.Selected,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["K-WONDER", "SAS3"],
-      arrange: ["遠藤ナオキ"],
+      lyrics: ['秋元康'],
+      compose: ['K-WONDER', 'SAS3'],
+      arrange: ['遠藤ナオキ'],
     },
     center: [MemberNameKey.TakayamaKazumi],
     formations: {

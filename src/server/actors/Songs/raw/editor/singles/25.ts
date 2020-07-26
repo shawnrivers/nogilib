@@ -1,22 +1,22 @@
-import { SongRaw } from "server/actors/Songs/models";
-import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
-import { SongTitle, SONGS } from "server/actors/Songs/constants/songTitle";
+import { SongRaw } from 'server/actors/Songs/models';
+import { createSongRaw } from 'server/actors/Songs/raw/creator';
+import { SongType } from 'server/actors/Songs/constants/songType';
+
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { SongTitle, SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS["しあわせの保護色"].title,
+    title: SONGS['しあわせの保護色'].title,
     type: SongType.Title,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["MASANORI URA"],
-      arrange: ["武藤星児"],
-      direct: ["池田一真"],
+      lyrics: ['秋元康'],
+      compose: ['MASANORI URA'],
+      arrange: ['武藤星児'],
+      direct: ['池田一真'],
     },
     center: [MemberNameKey.ShiraishiMai],
-    fukujin: FukujinType.RowOneTwo,
+    fukujin: 'row-1-2',
     formations: {
       firstRow: [
         MemberNameKey.SaitouAsuka,
@@ -49,12 +49,12 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["サヨナラ Stay with me"].title,
+    title: SONGS['サヨナラ Stay with me'].title,
     type: SongType.Coupling,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["シライシ紗トリ"],
-      arrange: ["シライシ紗トリ"],
+      lyrics: ['秋元康'],
+      compose: ['シライシ紗トリ'],
+      arrange: ['シライシ紗トリ'],
     },
     formations: {
       firstRow: [
@@ -70,13 +70,13 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["じゃあね。"].title,
+    title: SONGS['じゃあね。'].title,
     type: SongType.Solo,
     creators: {
-      lyrics: ["白石麻衣"],
-      compose: ["浦島健太", "H.Shing"],
-      arrange: ["菊池博人"],
-      direct: ["湯浅弘章"],
+      lyrics: ['白石麻衣'],
+      compose: ['浦島健太', 'H.Shing'],
+      arrange: ['菊池博人'],
+      direct: ['湯浅弘章'],
     },
     solo: MemberNameKey.ShiraishiMai,
   }),
@@ -84,10 +84,10 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
     title: SongTitle.Anastasia,
     type: SongType.SecondGeneration,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["中村泰輔"],
-      arrange: ["中村泰輔"],
-      direct: ["伊藤衆人"],
+      lyrics: ['秋元康'],
+      compose: ['中村泰輔'],
+      arrange: ['中村泰輔'],
+      direct: ['伊藤衆人'],
     },
     formations: {
       firstRow: [
@@ -104,13 +104,13 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["毎日がBrand new day"].title,
+    title: SONGS['毎日がBrand new day'].title,
     type: SongType.ThirdGeneration,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["APAZZI"],
-      arrange: ["APAZZI"],
-      direct: ["横堀光範"],
+      lyrics: ['秋元康'],
+      compose: ['APAZZI'],
+      arrange: ['APAZZI'],
+      direct: ['横堀光範'],
     },
     formations: {
       firstRow: [
@@ -130,13 +130,13 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["I see…"].title,
+    title: SONGS['I see…'].title,
     type: SongType.FourthGeneration,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["youth case"],
-      arrange: ["佐々木博史"],
-      direct: ["神谷雄貴"],
+      lyrics: ['秋元康'],
+      compose: ['youth case'],
+      arrange: ['佐々木博史'],
+      direct: ['神谷雄貴'],
     },
     formations: {
       firstRow: [
@@ -155,12 +155,12 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["ファンタスティック三色パン"].title,
+    title: SONGS['ファンタスティック三色パン'].title,
     type: SongType.Coupling,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["ジンツチハシ"],
-      arrange: ["ジンツチハシ"],
+      lyrics: ['秋元康'],
+      compose: ['ジンツチハシ'],
+      arrange: ['ジンツチハシ'],
     },
     formations: {
       firstRow: [

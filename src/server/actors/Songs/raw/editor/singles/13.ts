@@ -1,23 +1,22 @@
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
-import { SongRaw } from "server/actors/Songs/models";
-import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
-import { SONGS } from "server/actors/Songs/constants/songTitle";
-import { UNIT_NAMES } from "server/actors/Units/constants/unitName";
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { SongRaw } from 'server/actors/Songs/models';
+import { createSongRaw } from 'server/actors/Songs/raw/creator';
+import { SongType } from 'server/actors/Songs/constants/songType';
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
+import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
 
 export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS["今、話したい誰かがいる"].title,
+    title: SONGS['今、話したい誰かがいる'].title,
     type: SongType.Title,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Akira Sunset", "APAZZI"],
-      arrange: ["Akira Sunset", "APAZZI"],
-      direct: ["萩原健太郎"],
+      lyrics: ['秋元康'],
+      compose: ['Akira Sunset', 'APAZZI'],
+      arrange: ['Akira Sunset', 'APAZZI'],
+      direct: ['萩原健太郎'],
     },
     center: [MemberNameKey.ShiraishiMai, MemberNameKey.NishinoNanase],
-    fukujin: FukujinType.RowOneTwo,
+    fukujin: 'row-1-2',
     formations: {
       firstRow: [
         MemberNameKey.EtouMisa,
@@ -44,13 +43,13 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["嫉妬の権利"].title,
+    title: SONGS['嫉妬の権利'].title,
     type: SongType.Under,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["丸山真由子"],
-      arrange: ["丸山真由子"],
-      direct: ["井上強"],
+      lyrics: ['秋元康'],
+      compose: ['丸山真由子'],
+      arrange: ['丸山真由子'],
+      direct: ['井上強'],
     },
     center: [MemberNameKey.HoriMiona, MemberNameKey.NakamotoHimeka],
     formations: {
@@ -84,13 +83,13 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["ポピパッパパー"].title,
+    title: SONGS['ポピパッパパー'].title,
     type: SongType.Selected,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Akira Sunset", "ha-j"],
-      arrange: ["Akira Sunset", "ha-j"],
-      direct: ["丸山健志"],
+      lyrics: ['秋元康'],
+      compose: ['Akira Sunset', 'ha-j'],
+      arrange: ['Akira Sunset', 'ha-j'],
+      direct: ['丸山健志'],
     },
     center: [MemberNameKey.ShiraishiMai, MemberNameKey.NishinoNanase],
     formations: {
@@ -119,15 +118,15 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["大人への近道"].title,
+    title: SONGS['大人への近道'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["古川貴浩"],
-      arrange: ["古川貴浩"],
-      direct: ["湯浅弘章"],
+      lyrics: ['秋元康'],
+      compose: ['古川貴浩'],
+      arrange: ['古川貴浩'],
+      direct: ['湯浅弘章'],
     },
-    unit: UNIT_NAMES["サンクエトワール"].name,
+    unit: UNIT_NAMES['サンクエトワール'].name,
     formations: {
       firstRow: [
         MemberNameKey.KitanoHinako,
@@ -139,13 +138,13 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["悲しみの忘れ方"].title,
+    title: SONGS['悲しみの忘れ方'].title,
     type: SongType.Selected12,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["近藤圭一"],
-      arrange: ["久下真音"],
-      direct: ["丸山健志"],
+      lyrics: ['秋元康'],
+      compose: ['近藤圭一'],
+      arrange: ['久下真音'],
+      direct: ['丸山健志'],
     },
     center: [MemberNameKey.IkomaRina],
     formations: {
@@ -172,12 +171,12 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["隙間"].title,
+    title: SONGS['隙間'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Akira Sunset", "Carlos K."],
-      arrange: ["Akira Sunset", "Carlos K."],
+      lyrics: ['秋元康'],
+      compose: ['Akira Sunset', 'Carlos K.'],
+      arrange: ['Akira Sunset', 'Carlos K.'],
     },
     center: [MemberNameKey.NishinoNanase],
     formations: {

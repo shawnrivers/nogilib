@@ -1,11 +1,8 @@
-import { CdKind } from 'server/actors/Cds/constants/cdKind';
-import { CdType } from 'server/actors/Cds/constants/cdType';
-import { FocusPerformersType } from 'server/actors/Cds/constants/focusPerformers';
 import {
-  convertCdArtwork,
   convertCdSongFocusPerformers,
   convertCdSongType,
-} from 'server/actors/Cds/converters';
+} from 'server/actors/Discography/converters';
+import { convertCdArtwork } from 'server/actors/Discography/raw/creators';
 import { Members } from 'server/actors/Members';
 import { membersRawArray } from 'server/actors/Members/raw';
 import { Songs } from 'server/actors/Songs';
@@ -22,8 +19,8 @@ describe('convertCdArtwork', () => {
       convertCdArtwork({
         cdHasArtworks: true,
         cdNumber: '25',
-        cdArtworkType: CdType.A,
-        cdKind: CdKind.Single,
+        cdArtworkType: 'A',
+        cdKind: 'single',
       })
     ).toEqual('artworks/singles/25/A.jpg');
   });
@@ -33,16 +30,16 @@ describe('convertCdArtwork', () => {
       convertCdArtwork({
         cdHasArtworks: false,
         cdNumber: '100',
-        cdArtworkType: CdType.A,
-        cdKind: CdKind.Single,
+        cdArtworkType: 'A',
+        cdKind: 'single',
       })
     ).toEqual('artworks/artwork_no_image.png');
     expect(
       convertCdArtwork({
         cdHasArtworks: false,
         cdNumber: '25',
-        cdArtworkType: CdType.A,
-        cdKind: CdKind.Single,
+        cdArtworkType: 'A',
+        cdKind: 'single',
       })
     ).toEqual('artworks/artwork_no_image.png');
   });
@@ -52,8 +49,8 @@ describe('convertCdArtwork', () => {
       convertCdArtwork({
         cdHasArtworks: true,
         cdNumber: '100',
-        cdArtworkType: CdType.A,
-        cdKind: CdKind.Single,
+        cdArtworkType: 'A',
+        cdKind: 'single',
       })
     ).toEqual('artworks/artwork_no_image.png');
   });
@@ -101,11 +98,10 @@ describe('convertCdSongFocusPerformers', () => {
       convertCdSongFocusPerformers({
         cdSongTitle: SongTitle.Overture,
         songsRawObject,
-        membersRawObject,
       })
     ).toEqual({
-      type: FocusPerformersType.None,
-      name: [],
+      type: '',
+      members: [],
     });
   });
 
@@ -114,11 +110,10 @@ describe('convertCdSongFocusPerformers', () => {
       convertCdSongFocusPerformers({
         cdSongTitle: songsRawObject['じゃあね。'].title,
         songsRawObject,
-        membersRawObject,
       })
     ).toEqual({
-      type: FocusPerformersType.Solo,
-      name: ['白石麻衣'],
+      type: 'solo',
+      members: ['shiraishimai'],
     });
   });
 
@@ -127,11 +122,10 @@ describe('convertCdSongFocusPerformers', () => {
       convertCdSongFocusPerformers({
         cdSongTitle: songsRawObject['白米様'].title,
         songsRawObject,
-        membersRawObject,
       })
     ).toEqual({
-      type: FocusPerformersType.Unit,
-      name: ['さゆりんご軍団'],
+      type: 'unit',
+      members: ['さゆりんご軍団'],
     });
   });
 
@@ -140,22 +134,20 @@ describe('convertCdSongFocusPerformers', () => {
       convertCdSongFocusPerformers({
         cdSongTitle: songsRawObject['ここじゃないどこか'].title,
         songsRawObject,
-        membersRawObject,
       })
     ).toEqual({
-      type: FocusPerformersType.Unit,
-      name: ['生田絵梨花', '生駒里奈', '星野みなみ'],
+      type: 'unit',
+      members: ['ikutaerika', 'ikomarina', 'hoshinominami'],
     });
 
     expect(
       convertCdSongFocusPerformers({
         cdSongTitle: songsRawObject['せっかちなかたつむり'].title,
         songsRawObject,
-        membersRawObject,
       })
     ).toEqual({
-      type: FocusPerformersType.Center,
-      name: ['松村沙友理'],
+      type: 'center',
+      members: ['matsumurasayuri'],
     });
   });
 
@@ -164,33 +156,30 @@ describe('convertCdSongFocusPerformers', () => {
       convertCdSongFocusPerformers({
         cdSongTitle: songsRawObject['インフルエンサー'].title,
         songsRawObject,
-        membersRawObject,
       })
     ).toEqual({
-      type: FocusPerformersType.Center,
-      name: ['西野七瀬', '白石麻衣'],
+      type: 'center',
+      members: ['nishinonanase', 'shiraishimai'],
     });
 
     expect(
       convertCdSongFocusPerformers({
         cdSongTitle: songsRawObject['裸足でSummer'].title,
         songsRawObject,
-        membersRawObject,
       })
     ).toEqual({
-      type: FocusPerformersType.Center,
-      name: ['齋藤飛鳥'],
+      type: 'center',
+      members: ['saitouasuka'],
     });
 
     expect(
       convertCdSongFocusPerformers({
         cdSongTitle: songsRawObject['三番目の風'].title,
         songsRawObject,
-        membersRawObject,
       })
     ).toEqual({
-      type: FocusPerformersType.Center,
-      name: ['大園桃子'],
+      type: 'center',
+      members: ['oozonomomoko'],
     });
   });
 });

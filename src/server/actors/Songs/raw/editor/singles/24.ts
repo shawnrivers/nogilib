@@ -1,22 +1,22 @@
-import { SongRaw } from "server/actors/Songs/models";
-import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
-import { SONGS } from "server/actors/Songs/constants/songTitle";
+import { SongRaw } from 'server/actors/Songs/models';
+import { createSongRaw } from 'server/actors/Songs/raw/creator';
+import { SongType } from 'server/actors/Songs/constants/songType';
+
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS["夜明けまで強がらなくてもいい"].title,
+    title: SONGS['夜明けまで強がらなくてもいい'].title,
     type: SongType.Title,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["山田裕介"],
-      arrange: ["APAZZI"],
-      direct: ["丸山健志"],
+      lyrics: ['秋元康'],
+      compose: ['山田裕介'],
+      arrange: ['APAZZI'],
+      direct: ['丸山健志'],
     },
     center: [MemberNameKey.EndouSakura],
-    fukujin: FukujinType.RowOneTwo,
+    fukujin: 'row-1-2',
     formations: {
       firstRow: [
         MemberNameKey.HoriMiona,
@@ -45,12 +45,12 @@ export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["僕のこと、知ってる?"].title,
+    title: SONGS['僕のこと、知ってる?'].title,
     type: SongType.Coupling,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["中村泰輔"],
-      arrange: ["中村泰輔"],
+      lyrics: ['秋元康'],
+      compose: ['中村泰輔'],
+      arrange: ['中村泰輔'],
     },
     center: [MemberNameKey.SaitouAsuka],
     formations: {
@@ -85,13 +85,13 @@ export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["路面電車の街"].title,
+    title: SONGS['路面電車の街'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["杉山勝彦"],
-      arrange: ["杉山勝彦", "谷地学"],
-      direct: ["山岸聖太"],
+      lyrics: ['秋元康'],
+      compose: ['杉山勝彦'],
+      arrange: ['杉山勝彦', '谷地学'],
+      direct: ['山岸聖太'],
     },
     formations: {
       firstRow: [
@@ -102,13 +102,13 @@ export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["図書室の君へ"].title,
+    title: SONGS['図書室の君へ'].title,
     type: SongType.FourthGeneration,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["杉山勝彦"],
-      arrange: ["若田部誠"],
-      direct: ["伊藤衆人"],
+      lyrics: ['秋元康'],
+      compose: ['杉山勝彦'],
+      arrange: ['若田部誠'],
+      direct: ['伊藤衆人'],
     },
     center: [MemberNameKey.KakehashiSayaka],
     formations: {
@@ -128,25 +128,25 @@ export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["時々 思い出してください"].title,
+    title: SONGS['時々 思い出してください'].title,
     type: SongType.Solo,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["杉山勝彦"],
-      arrange: ["杉山勝彦", "谷地学"],
-      direct: ["頃安祐良"],
+      lyrics: ['秋元康'],
+      compose: ['杉山勝彦'],
+      arrange: ['杉山勝彦', '谷地学'],
+      direct: ['頃安祐良'],
     },
     solo: MemberNameKey.SakuraiReika,
   }),
 
   createSongRaw({
-    title: SONGS["～Do my best～じゃ意味はない"].title,
+    title: SONGS['～Do my best～じゃ意味はない'].title,
     type: SongType.Under,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["浦島健太", "APAZZI"],
-      arrange: ["浦島健太", "APAZZI"],
-      direct: ["maxilla"],
+      lyrics: ['秋元康'],
+      compose: ['浦島健太', 'APAZZI'],
+      arrange: ['浦島健太', 'APAZZI'],
+      direct: ['maxilla'],
     },
     center: [MemberNameKey.IwamotoRenka],
     formations: {
@@ -171,12 +171,12 @@ export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["僕の思い込み"].title,
+    title: SONGS['僕の思い込み'].title,
     type: SongType.Coupling,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["杉山勝彦"],
-      arrange: ["野中“まさ”雄一"],
+      lyrics: ['秋元康'],
+      compose: ['杉山勝彦'],
+      arrange: ['野中“まさ”雄一'],
     },
     center: [MemberNameKey.EndouSakura],
     formations: {

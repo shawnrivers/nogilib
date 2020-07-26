@@ -1,6 +1,5 @@
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { SongType } from 'server/actors/Songs/constants/songType';
-import { FukujinType } from 'server/actors/Cds/Singles/constants/fukujinType';
 import { SongTitle } from 'server/actors/Songs/constants/songTitle';
 import { UnitName } from 'server/actors/Units/constants/unitName';
 
@@ -16,7 +15,7 @@ export type SongRaw = {
   };
   performers: {
     center: MemberNameKey[];
-    fukujin: FukujinType | MemberNameKey[];
+    fukujin: 'row-1' | 'row-1-2' | MemberNameKey[];
     solo: MemberNameKey | '';
     unit: UnitName | '';
   };

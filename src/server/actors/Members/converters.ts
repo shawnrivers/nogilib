@@ -3,7 +3,6 @@ import { MemberResult, MemberRaw } from 'server/actors/Members/models';
 import { UnitsRawArray } from 'server/actors/Units/models';
 import { SongsRawObject } from 'server/actors/Songs/models';
 import { SongType } from 'server/actors/Songs/constants/songType';
-import { FukujinType } from 'server/actors/Cds/Singles/constants/fukujinType';
 import { PositionType } from 'server/actors/Members/constants/position';
 import { DiscographyRawArray } from 'server/actors/Discography/models';
 
@@ -130,13 +129,13 @@ export const convertMemberPositionsHistory: ConvertMemberPositionsHistory = ({
             // Check Center
             singlePosition = PositionType.Center;
           } else if (
-            song.performers.fukujin === FukujinType.RowOne &&
+            song.performers.fukujin === 'row-1' &&
             song.formations.firstRow.includes(memberName)
           ) {
             // Check Fukujin (first row case)
             singlePosition = PositionType.Fukujin;
           } else if (
-            song.performers.fukujin === FukujinType.RowOneTwo &&
+            song.performers.fukujin === 'row-1-2' &&
             (song.formations.firstRow.includes(memberName) ||
               song.formations.secondRow.includes(memberName))
           ) {

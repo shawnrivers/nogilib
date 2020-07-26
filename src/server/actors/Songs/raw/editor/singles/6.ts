@@ -1,22 +1,22 @@
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
-import { SongRaw } from "server/actors/Songs/models";
-import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
-import { SONGS } from "server/actors/Songs/constants/songTitle";
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { SongRaw } from 'server/actors/Songs/models';
+import { createSongRaw } from 'server/actors/Songs/raw/creator';
+import { SongType } from 'server/actors/Songs/constants/songType';
+
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const SIXTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS["ガールズルール"].title,
+    title: SONGS['ガールズルール'].title,
     type: SongType.Title,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["後藤康二"],
-      arrange: ["後藤康二"],
-      direct: ["柳沢翔"],
+      lyrics: ['秋元康'],
+      compose: ['後藤康二'],
+      arrange: ['後藤康二'],
+      direct: ['柳沢翔'],
     },
     center: [MemberNameKey.ShiraishiMai],
-    fukujin: FukujinType.RowOneTwo,
+    fukujin: 'row-1-2',
     formations: {
       firstRow: [
         MemberNameKey.MatsumuraSayuri,
@@ -43,13 +43,13 @@ export const SIXTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["扇風機"].title,
+    title: SONGS['扇風機'].title,
     type: SongType.Under,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["角野寿和"],
-      arrange: ["野村陽一郎"],
-      direct: ["池田一真"],
+      lyrics: ['秋元康'],
+      compose: ['角野寿和'],
+      arrange: ['野村陽一郎'],
+      direct: ['池田一真'],
     },
     center: [MemberNameKey.SaitouAsuka],
     formations: {
@@ -80,13 +80,13 @@ export const SIXTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["世界で一番 孤独なLover"].title,
+    title: SONGS['世界で一番 孤独なLover'].title,
     type: SongType.Selected,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["河原嶺旭"],
-      arrange: ["百石元"],
-      direct: ["丸山健志"],
+      lyrics: ['秋元康'],
+      compose: ['河原嶺旭'],
+      arrange: ['百石元'],
+      direct: ['丸山健志'],
     },
     center: [MemberNameKey.ShiraishiMai],
     formations: {
@@ -115,12 +115,12 @@ export const SIXTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["コウモリよ"].title,
+    title: SONGS['コウモリよ'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["南田健吾"],
-      arrange: ["高梨康治"],
+      lyrics: ['秋元康'],
+      compose: ['南田健吾'],
+      arrange: ['高梨康治'],
     },
     formations: {
       firstRow: [
@@ -132,13 +132,13 @@ export const SIXTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["他の星から"].title,
+    title: SONGS['他の星から'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Sugaya Bros.", "松村PONY"],
-      arrange: ["Sugaya Bros."],
-      direct: ["岡川太郎"],
+      lyrics: ['秋元康'],
+      compose: ['Sugaya Bros.', '松村PONY'],
+      arrange: ['Sugaya Bros.'],
+      direct: ['岡川太郎'],
     },
     center: [MemberNameKey.NishinoNanase],
     formations: {
@@ -154,12 +154,12 @@ export const SIXTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["人間という楽器"].title,
+    title: SONGS['人間という楽器'].title,
     type: SongType.FirstGeneration,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["鐘撞行孝"],
-      arrange: ["TATOO"],
+      lyrics: ['秋元康'],
+      compose: ['鐘撞行孝'],
+      arrange: ['TATOO'],
     },
     formations: {
       firstRow: [

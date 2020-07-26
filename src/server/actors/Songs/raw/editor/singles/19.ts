@@ -1,23 +1,23 @@
-import { SongRaw } from "server/actors/Songs/models";
-import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
-import { SONGS } from "server/actors/Songs/constants/songTitle";
-import { UNIT_NAMES } from "server/actors/Units/constants/unitName";
+import { SongRaw } from 'server/actors/Songs/models';
+import { createSongRaw } from 'server/actors/Songs/raw/creator';
+import { SongType } from 'server/actors/Songs/constants/songType';
+
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
+import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
 
 export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS["いつかできるから今日できる"].title,
+    title: SONGS['いつかできるから今日できる'].title,
     type: SongType.Title,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Akira Sunset", "京田誠一"],
-      arrange: ["Akira Sunset", "京田誠一"],
-      direct: ["高橋栄樹"],
+      lyrics: ['秋元康'],
+      compose: ['Akira Sunset', '京田誠一'],
+      arrange: ['Akira Sunset', '京田誠一'],
+      direct: ['高橋栄樹'],
     },
     center: [MemberNameKey.NishinoNanase, MemberNameKey.SaitouAsuka],
-    fukujin: FukujinType.RowOneTwo,
+    fukujin: 'row-1-2',
     formations: {
       firstRow: [
         MemberNameKey.HoriMiona,
@@ -47,13 +47,13 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["My rule"].title,
+    title: SONGS['My rule'].title,
     type: SongType.Under,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["藤田卓也"],
-      arrange: ["藤田卓也"],
-      direct: ["林希", "古屋蔵人"],
+      lyrics: ['秋元康'],
+      compose: ['藤田卓也'],
+      arrange: ['藤田卓也'],
+      direct: ['林希', '古屋蔵人'],
     },
     center: [MemberNameKey.HiguchiHina],
     formations: {
@@ -80,12 +80,12 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["不眠症"].title,
+    title: SONGS['不眠症'].title,
     type: SongType.Coupling,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["大貫和紀", "河原レオ", "高木龍一"],
-      arrange: ["大貫和紀", "河原レオ", "高木龍一"],
+      lyrics: ['秋元康'],
+      compose: ['大貫和紀', '河原レオ', '高木龍一'],
+      arrange: ['大貫和紀', '河原レオ', '高木龍一'],
     },
     center: [MemberNameKey.KuboShiori, MemberNameKey.YamashitaMizuki],
     formations: {
@@ -114,28 +114,28 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["まあいいか?"].title,
+    title: SONGS['まあいいか?'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["HRK"],
-      arrange: ["原広明"],
-      direct: ["中村太洸"],
+      lyrics: ['秋元康'],
+      compose: ['HRK'],
+      arrange: ['原広明'],
+      direct: ['中村太洸'],
     },
     formations: {
       firstRow: [MemberNameKey.AkimotoManatsu, MemberNameKey.ShiraishiMai],
     },
   }),
   createSongRaw({
-    title: SONGS["失恋お掃除人"].title,
+    title: SONGS['失恋お掃除人'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["さいとうくにあき", "Akira Sunset", "京田誠一"],
-      arrange: ["さいとうくにあき", "Akira Sunset", "京田誠一"],
-      direct: ["伊藤衆人"],
+      lyrics: ['秋元康'],
+      compose: ['さいとうくにあき', 'Akira Sunset', '京田誠一'],
+      arrange: ['さいとうくにあき', 'Akira Sunset', '京田誠一'],
+      direct: ['伊藤衆人'],
     },
-    unit: UNIT_NAMES["若様軍団"].name,
+    unit: UNIT_NAMES['若様軍団'].name,
     formations: {
       firstRow: [
         MemberNameKey.UmezawaMinami,
@@ -146,13 +146,13 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["僕の衝動"].title,
+    title: SONGS['僕の衝動'].title,
     type: SongType.ThirdGeneration,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["石井伸昂"],
-      arrange: ["石井伸昂"],
-      direct: ["荒船泰廣"],
+      lyrics: ['秋元康'],
+      compose: ['石井伸昂'],
+      arrange: ['石井伸昂'],
+      direct: ['荒船泰廣'],
     },
     center: [MemberNameKey.ItouRiria],
     formations: {
@@ -172,13 +172,13 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["新しい花粉 〜ミュージカル「見知らぬ世界」より〜"].title,
+    title: SONGS['新しい花粉 〜ミュージカル「見知らぬ世界」より〜'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["新田目翔"],
-      arrange: ["若田部誠"],
-      direct: ["荒船泰廣"],
+      lyrics: ['秋元康'],
+      compose: ['新田目翔'],
+      arrange: ['若田部誠'],
+      direct: ['荒船泰廣'],
     },
     formations: {
       firstRow: [MemberNameKey.IkutaErika, MemberNameKey.KuboShiori],

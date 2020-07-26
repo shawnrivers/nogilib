@@ -1,23 +1,23 @@
-import { SongRaw } from "server/actors/Songs/models";
-import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
-import { SONGS } from "server/actors/Songs/constants/songTitle";
-import { UNIT_NAMES } from "server/actors/Units/constants/unitName";
+import { SongRaw } from 'server/actors/Songs/models';
+import { createSongRaw } from 'server/actors/Songs/raw/creator';
+import { SongType } from 'server/actors/Songs/constants/songType';
+
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
+import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
 
 export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS["サヨナラの意味"].title,
+    title: SONGS['サヨナラの意味'].title,
     type: SongType.Title,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["杉山勝彦"],
-      arrange: ["若田部誠"],
-      direct: ["柳沢翔"],
+      lyrics: ['秋元康'],
+      compose: ['杉山勝彦'],
+      arrange: ['若田部誠'],
+      direct: ['柳沢翔'],
     },
     center: [MemberNameKey.HashimotoNanami],
-    fukujin: FukujinType.RowOneTwo,
+    fukujin: 'row-1-2',
     formations: {
       firstRow: [
         MemberNameKey.TakayamaKazumi,
@@ -47,13 +47,13 @@ export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["ブランコ"].title,
+    title: SONGS['ブランコ'].title,
     type: SongType.Under,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Hiro Hoashi"],
-      arrange: ["Hiro Hoashi"],
-      direct: ["伊藤衆人"],
+      lyrics: ['秋元康'],
+      compose: ['Hiro Hoashi'],
+      arrange: ['Hiro Hoashi'],
+      direct: ['伊藤衆人'],
     },
     center: [MemberNameKey.TeradaRanze],
     formations: {
@@ -82,12 +82,12 @@ export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["孤独な青空"].title,
+    title: SONGS['孤独な青空'].title,
     type: SongType.Selected,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["aokado"],
-      arrange: ["aokado"],
+      lyrics: ['秋元康'],
+      compose: ['aokado'],
+      arrange: ['aokado'],
     },
     center: [MemberNameKey.HashimotoNanami],
     formations: {
@@ -115,28 +115,28 @@ export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["あの教室"].title,
+    title: SONGS['あの教室'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["カワノミチオ"],
-      arrange: ["カワノミチオ"],
-      direct: ["山岸聖太"],
+      lyrics: ['秋元康'],
+      compose: ['カワノミチオ'],
+      arrange: ['カワノミチオ'],
+      direct: ['山岸聖太'],
     },
     formations: {
       firstRow: [MemberNameKey.SaitouAsuka, MemberNameKey.HoriMiona],
     },
   }),
   createSongRaw({
-    title: SONGS["2度目のキスから"].title,
+    title: SONGS['2度目のキスから'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Akira Sunset", "APAZZI"],
-      arrange: ["Akira Sunset", "APAZZI"],
-      direct: ["中村太洸"],
+      lyrics: ['秋元康'],
+      compose: ['Akira Sunset', 'APAZZI'],
+      arrange: ['Akira Sunset', 'APAZZI'],
+      direct: ['中村太洸'],
     },
-    unit: UNIT_NAMES["真夏さんリスペクト軍団"].name,
+    unit: UNIT_NAMES['真夏さんリスペクト軍団'].name,
     formations: {
       firstRow: [
         MemberNameKey.AkimotoManatsu,
@@ -147,15 +147,15 @@ export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["君に贈る花がない"].title,
+    title: SONGS['君に贈る花がない'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Rizz"],
-      arrange: ["山田竜平"],
-      direct: ["東市篤憲"],
+      lyrics: ['秋元康'],
+      compose: ['Rizz'],
+      arrange: ['山田竜平'],
+      direct: ['東市篤憲'],
     },
-    unit: UNIT_NAMES["サンクエトワール"].name,
+    unit: UNIT_NAMES['サンクエトワール'].name,
     formations: {
       firstRow: [
         MemberNameKey.KitanoHinako,
@@ -167,13 +167,13 @@ export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["ないものねだり"].title,
+    title: SONGS['ないものねだり'].title,
     type: SongType.Solo,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["丸谷マナブ"],
-      arrange: ["丸谷マナブ", "福田貴史"],
-      direct: ["山岸聖太"],
+      lyrics: ['秋元康'],
+      compose: ['丸谷マナブ'],
+      arrange: ['丸谷マナブ', '福田貴史'],
+      direct: ['山岸聖太'],
     },
     solo: MemberNameKey.HashimotoNanami,
   }),
