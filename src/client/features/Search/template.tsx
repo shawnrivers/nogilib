@@ -4,7 +4,7 @@ import * as React from 'react';
 import { injectIntl } from 'react-intl';
 import { SearchIcon } from 'client/components/atoms/icons/SearchIcon';
 import { Message } from 'client/components/atoms/Message';
-import { SearchResultCategory } from 'client/components/molecules/SearchResultCategory';
+import { SearchResultCategory } from 'client/features/Search/components/molecules/SearchResultCategory';
 import { Typography } from 'client/components/atoms/Typography';
 import { Header, Main, MainContent } from 'client/components/templates/Page';
 import { useAppTheme } from 'client/styles/tokens';
@@ -22,8 +22,7 @@ interface SearchProps {
   search(event: React.FormEvent<HTMLInputElement>): void;
   results: {
     members: SearchResult[];
-    singles: SearchResult[];
-    albums: SearchResult[];
+    cds: SearchResult[];
     songs: SearchResult[];
   };
   isSearching: boolean;
@@ -34,10 +33,7 @@ export const Search = injectIntl(
   ({ query, search, results, isSearching, intl }: SearchProps) => {
     const hasNoResult = React.useMemo(
       () =>
-        results.members.length +
-          results.singles.length +
-          results.albums.length +
-          results.songs.length ===
+        results.members.length + results.cds.length + results.songs.length ===
           0 &&
         query !== '' &&
         !isSearching,
@@ -129,15 +125,8 @@ export const Search = injectIntl(
               `}
             />
             <SearchResultCategory
-              title="singles"
-              results={results.singles}
-              css={css`
-                margin-top: 2rem;
-              `}
-            />
-            <SearchResultCategory
-              title="albums"
-              results={results.albums}
+              title="cds"
+              results={results.cds}
               css={css`
                 margin-top: 2rem;
               `}

@@ -2,65 +2,48 @@ import * as React from 'react';
 import { injectIntl } from 'react-intl';
 import { Search, SearchResult } from 'client/features/Search/template';
 import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
-import { SearchResultType } from 'client/utils/constants';
-import { SongType } from 'server/actors/Songs/constants/songType';
 import { toCdNumber } from 'utils/strings';
+import { getAlbumUrl, getMemberUrl, getSongUrl } from 'client/utils/urls';
+import { MemberResult } from 'server/actors/Members/models';
+import { DiscographyResult } from 'server/actors/Discography/models';
+import { SongResult } from 'server/actors/Songs/models';
 
 export type MemberDoc = {
-  id: string;
-  name: string;
-  nameKey: string;
-  nameNotations: {
-    lastName: string;
-    firstName: string;
-    lastNameEn: string;
-    firstNameEn: string;
-    lastNameFurigana: string;
-    firstNameFurigana: string;
-  };
-  profileImage: string;
-  type: SearchResultType.Members;
+  key: MemberResult['name'];
+  nameNotations: MemberResult['nameNotations'];
+  profileImage: MemberResult['profileImage'];
 };
 
-export type SingleDoc = {
-  id: string;
-  name: string;
-  title: string;
-  number: string;
-  artwork: string;
-  type: SearchResultType.Singles;
-};
-
-export type AlbumDoc = {
-  id: string;
-  name: string;
-  title: string;
-  number: string;
-  artwork: string;
-  type: SearchResultType.Albums;
+export type CdDoc = {
+  title: DiscographyResult['title'];
+  key: DiscographyResult['key'];
+  number: DiscographyResult['number'];
+  artwork: DiscographyResult['artworks'][0];
 };
 
 export type SongDoc = {
-  id: string;
-  name: string;
-  title: string;
-  key: string;
-  artwork: string;
-  songType: SongType;
-  single: {
-    number: string;
-    title: string;
-  };
-  album:
-    | {
-        number: string;
-        title: string;
-      }
-    | undefined;
-  type: SearchResultType.Songs;
+  title: SongResult['title'];
+  key: SongResult['key'];
+  artwork: SongResult['artwork'];
+  songType: SongResult['type'];
+  single: SongResult['single'];
+  album: SongResult['albums'][0] | undefined;
 };
 
-export type SearchDoc = AlbumDoc | SingleDoc | SongDoc | MemberDoc;
+export type SearchDoc = (
+  | (CdDoc & {
+      type: 'cds';
+    })
+  | (SongDoc & {
+      type: 'songs';
+    })
+  | (MemberDoc & {
+      type: 'members';
+    })
+) & {
+  id: string;
+  name: string;
+};
 
 let timeout: NodeJS.Timeout;
 
@@ -103,39 +86,30 @@ export const SearchPageContainer = injectIntl(({ intl }: { intl: any }) => {
 
   const convertedResults = React.useMemo(() => {
     let members: SearchResult[] = [];
-    let singles: SearchResult[] = [];
+    let cds: SearchResult[] = [];
     let albums: SearchResult[] = [];
     let songs: SearchResult[] = [];
 
     for (const result of results) {
-      if (result.type === SearchResultType.Members) {
+      if (result.type === 'members') {
         members.push({
-          to: `/${result.type}/${result.nameKey}`,
+          to: getMemberUrl(result.key),
           imgSrc: result.profileImage,
           heading: `${result.nameNotations.lastName} ${result.nameNotations.firstName}`,
           caption: `${result.nameNotations.lastNameEn} ${result.nameNotations.firstNameEn}`,
         });
       }
 
-      if (result.type === SearchResultType.Singles) {
-        singles.push({
-          to: `/${result.type}/${result.number}`,
-          imgSrc: result.artwork,
+      if (result.type === 'cds') {
+        cds.push({
+          to: getAlbumUrl(result.key),
+          imgSrc: result.artwork.url,
           heading: result.title,
-          caption: `${toCdNumber(result.number)} single`,
+          caption: `${toCdNumber(result.number)} ${result.type}`,
         });
       }
 
-      if (result.type === SearchResultType.Albums) {
-        albums.push({
-          to: `/${result.type}/${result.number}`,
-          imgSrc: result.artwork,
-          heading: result.title,
-          caption: `${toCdNumber(result.number)} album`,
-        });
-      }
-
-      if (result.type === SearchResultType.Songs) {
+      if (result.type === 'songs') {
         let secondCaption = '';
 
         if (result.single.number !== '') {
@@ -147,7 +121,7 @@ export const SearchPageContainer = injectIntl(({ intl }: { intl: any }) => {
         }
 
         songs.push({
-          to: `/${result.type}/${result.key}`,
+          to: getSongUrl(result.key),
           imgSrc: result.artwork,
           heading: result.title,
           caption: `#${intl.formatMessage({
@@ -158,7 +132,7 @@ export const SearchPageContainer = injectIntl(({ intl }: { intl: any }) => {
       }
     }
 
-    return { members, singles, albums, songs };
+    return { members, cds, albums, songs };
   }, [results, intl]);
 
   return (

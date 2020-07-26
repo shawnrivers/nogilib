@@ -1,7 +1,7 @@
 /**@jsx jsx */
 import { jsx, css } from '@emotion/core';
 import * as React from 'react';
-import { SearchResultCard } from 'client/components/atoms/SearchResultCard';
+import { SearchResultCard } from 'client/features/Search/components/molecules/SearchResultCard';
 import { Message } from 'client/components/atoms/Message';
 import { Typography } from 'client/components/atoms/Typography';
 import { useAppTheme } from 'client/styles/tokens';

@@ -92,24 +92,18 @@ module.exports = {
               node.nameNotations.firstNameFurigana +
               ' ' +
               node.name,
-            nameKey: node => node.name,
+            key: node => node.name,
             nameNotations: node => node.nameNotations,
             profileImage: node => node.profileImage,
             type: () => 'members',
           },
-          AlbumsJson: {
-            name: node => node.title,
+          DiscographyJson: {
+            name: node => node.title + ' ' + node.key,
             title: node => node.title,
+            key: node => node.key,
             number: node => node.number,
             artwork: node => node.artworks[0],
-            type: () => 'albums',
-          },
-          SinglesJson: {
-            name: node => node.title,
-            title: node => node.title,
-            number: node => node.number,
-            artwork: node => node.artworks[0],
-            type: () => 'singles',
+            type: () => 'cds',
           },
           SongsJson: {
             name: node => node.title + ' ' + node.key,
