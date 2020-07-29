@@ -19,6 +19,7 @@ export type CdDoc = {
   key: DiscographyResult['key'];
   number: DiscographyResult['number'];
   artwork: DiscographyResult['artworks'][0];
+  cdType: DiscographyResult['type'];
 };
 
 export type SongDoc = {
@@ -105,7 +106,7 @@ export const SearchPageContainer = injectIntl(({ intl }: { intl: any }) => {
           to: getAlbumUrl(result.key),
           imgSrc: result.artwork.url,
           heading: result.title,
-          caption: `${toCdNumber(result.number)} ${result.type}`,
+          caption: `${toCdNumber(result.number)} ${result.cdType}`,
         });
       }
 

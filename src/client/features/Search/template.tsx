@@ -125,7 +125,7 @@ export const Search = injectIntl(
               `}
             />
             <SearchResultCategory
-              title="cds"
+              title="CDs"
               results={results.cds}
               css={css`
                 margin-top: 2rem;

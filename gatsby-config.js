@@ -81,6 +81,7 @@ module.exports = {
           { name: 'single', store: true },
           { name: 'album', store: true },
           { name: 'type', store: true },
+          { name: 'cdType', store: true },
         ],
         resolvers: {
           MembersJson: {
@@ -103,6 +104,7 @@ module.exports = {
             key: node => node.key,
             number: node => node.number,
             artwork: node => node.artworks[0],
+            cdType: node => node.type,
             type: () => 'cds',
           },
           SongsJson: {
