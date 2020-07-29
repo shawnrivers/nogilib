@@ -101,7 +101,7 @@ const SongPageContainer = ({
 
     for (const member of membersArray) {
       if (singleNumber !== '') {
-        member.profileImage = member.singleImages[Number(singleNumber) - 1];
+        member.profileImage = member.singleImages[parseInt(singleNumber) - 1];
       }
     }
 

@@ -182,12 +182,17 @@ export const SongPage: React.FC<SongPageProps> = ({
                   grid-gap: ${theme.spacing.m};
                   margin-top: 0.5em;
                   align-items: center;
-                  text-transform: capitalize;
                 `}
               >
                 {creators.lyrics.length > 0 ? (
                   <React.Fragment>
-                    <Typography variant="h7" element="span">
+                    <Typography
+                      variant="h7"
+                      element="span"
+                      css={css`
+                        text-transform: capitalize;
+                      `}
+                    >
                       <Message text="lyrics" />
                     </Typography>
                     <Typography variant="h7" element="span">
@@ -197,7 +202,13 @@ export const SongPage: React.FC<SongPageProps> = ({
                 ) : null}
                 {creators.compose.length > 0 ? (
                   <React.Fragment>
-                    <Typography variant="h7" element="span">
+                    <Typography
+                      variant="h7"
+                      element="span"
+                      css={css`
+                        text-transform: capitalize;
+                      `}
+                    >
                       <Message text="compose" />
                     </Typography>
                     <Typography variant="h7" element="span">
@@ -207,7 +218,13 @@ export const SongPage: React.FC<SongPageProps> = ({
                 ) : null}
                 {creators.arrange.length > 0 ? (
                   <React.Fragment>
-                    <Typography variant="h7" element="span">
+                    <Typography
+                      variant="h7"
+                      element="span"
+                      css={css`
+                        text-transform: capitalize;
+                      `}
+                    >
                       <Message text="arrange" />
                     </Typography>
                     <Typography variant="h7" element="span">
@@ -217,7 +234,13 @@ export const SongPage: React.FC<SongPageProps> = ({
                 ) : null}
                 {creators.direct.length > 0 ? (
                   <React.Fragment>
-                    <Typography variant="h7" element="span">
+                    <Typography
+                      variant="h7"
+                      element="span"
+                      css={css`
+                        text-transform: capitalize;
+                      `}
+                    >
                       <Message text="direct" />
                     </Typography>
                     <Typography variant="h7" element="span">
@@ -238,10 +261,13 @@ export const SongPage: React.FC<SongPageProps> = ({
                     justify-content: center;
                   `}
                 >
-                  <PerformersTag
-                    singleNumber={performersTag.singleNumber}
-                    tagName={performersTag.name}
-                  />
+                  {performersTag.singleNumber !== '' &&
+                  performersTag.name !== '' ? (
+                    <PerformersTag
+                      singleNumber={performersTag.singleNumber}
+                      tagName={performersTag.name}
+                    />
+                  ) : null}
                 </div>
                 <div>
                   {formation.length > 1 ? (

@@ -12,6 +12,7 @@ export const query = graphql`
       key
       type
       number
+      previousSingleNumber
       artworks {
         url
         type
@@ -49,6 +50,7 @@ type QueryResultAlbum = {
   key: DiscographyResult['key'];
   type: DiscographyResult['type'];
   number: DiscographyResult['number'];
+  previousSingleNumber: DiscographyResult['previousSingleNumber'];
   artworks: DiscographyResult['artworks'];
   release: DiscographyResult['release'];
   songs: {
@@ -133,10 +135,11 @@ const AlbumPageContainer: React.FC<QueryResult> = props => {
         .map(member => ({
           name: member.name,
           nameNotations: member.nameNotations,
-          profileImage: member.singleImages[parseInt(albumData.number) - 1],
+          profileImage:
+            member.singleImages[parseInt(albumData.previousSingleNumber) - 1],
         }));
     }
-  }, [albumData.number, albumData.songs, membersObject]);
+  }, [albumData.previousSingleNumber, albumData.songs, membersObject]);
 
   return (
     <AlbumPage
