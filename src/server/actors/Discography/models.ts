@@ -2,7 +2,7 @@ import { Site } from 'server/types/commons';
 import { SongTitle } from 'server/actors/Songs/constants/songTitle';
 import { SongType } from 'server/actors/Songs/constants/songType';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { CdTitle, CdType } from 'server/actors/Discography/types';
+import { CdTitle, CdType, OtherCdKind } from 'server/actors/Discography/types';
 import { UnitName } from 'server/actors/Units/constants/unitName';
 
 export type CdSongRaw = {
@@ -31,7 +31,7 @@ export type CdSongResult = CdSongRaw & {
 export type DiscographyRaw = {
   title: CdTitle;
   key: string;
-  type: 'single' | 'album' | 'digital';
+  type: 'single' | 'album' | OtherCdKind;
   number: string;
   release: string;
   hasArtworks: boolean;

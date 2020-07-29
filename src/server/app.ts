@@ -18,7 +18,7 @@ const songsResultArray = songs.convertSongs({
   singlesRawObject: discography.getSinglesRawObject(),
   albumsRawArray: discography.getAlbumsRawArray(),
   albumsRawObject: discography.getAlbumsRawObject(),
-  otherCdsRawArray: discography.getDigitalCdsRawArray(),
+  otherCdsRawArray: discography.getOtherCdsRawArray(),
   otherCdsRawObject: discography.getOtherCdsRawObject(),
 });
 const membersResultArray = members.convertMembers({

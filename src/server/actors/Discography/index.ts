@@ -16,7 +16,7 @@ export class Discography {
   private singlesRawObject: DiscographyRawObject;
   private albumsRawArray: DiscographyRawArray;
   private albumsRawObject: DiscographyRawObject;
-  private digitalCdsRawArray: DiscographyRawArray;
+  private otherCdsRawArray: DiscographyRawArray;
   private otherCdsRawObject: DiscographyRawObject;
   private resultData: DiscographyResultArray;
 
@@ -29,10 +29,10 @@ export class Discography {
     this.singlesRawObject = arrayToObject(this.singlesRawArray, 'title');
     this.albumsRawArray = discographyRawArray.filter(cd => cd.type === 'album');
     this.albumsRawObject = arrayToObject(this.albumsRawArray, 'title');
-    this.digitalCdsRawArray = discographyRawArray.filter(
-      cd => cd.type === 'digital'
+    this.otherCdsRawArray = discographyRawArray.filter(
+      cd => cd.type !== 'single' && cd.type !== 'album'
     );
-    this.otherCdsRawObject = arrayToObject(this.digitalCdsRawArray, 'title');
+    this.otherCdsRawObject = arrayToObject(this.otherCdsRawArray, 'title');
     this.resultData = [];
   }
 
@@ -60,8 +60,8 @@ export class Discography {
     return this.albumsRawObject;
   }
 
-  public getDigitalCdsRawArray(): DiscographyRawArray {
-    return this.digitalCdsRawArray;
+  public getOtherCdsRawArray(): DiscographyRawArray {
+    return this.otherCdsRawArray;
   }
 
   public getOtherCdsRawObject(): DiscographyRawObject {

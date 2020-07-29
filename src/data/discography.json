@@ -6774,6 +6774,43 @@
       "trainees": [],
       "skips": []
     },
-    "previousSingleNumber": "24"
+    "previousSingleNumber": "25"
+  },
+  {
+    "title": "Route 246",
+    "key": "route246",
+    "type": "digital",
+    "number": "2",
+    "release": "2020-07-24",
+    "shopping": [],
+    "artworks": [
+      {
+        "url": "artworks/digital/2/T.jpg",
+        "type": "T"
+      }
+    ],
+    "songs": [
+      {
+        "number": 1,
+        "title": "Route 246",
+        "key": "route246",
+        "inCdType": [
+          "T"
+        ],
+        "type": "title",
+        "focusPerformers": {
+          "type": "center",
+          "members": [
+            "saitouasuka"
+          ]
+        }
+      }
+    ],
+    "underMembers": [],
+    "behindPerformers": {
+      "trainees": [],
+      "skips": []
+    },
+    "previousSingleNumber": "25"
   }
 ]

@@ -7,6 +7,7 @@ import {
   OtherCdTitle,
   CdType,
   CdTitle,
+  OtherCdKind,
 } from 'server/actors/Discography/types';
 import { NO_ARTWORK_IMAGE_SRC } from 'server/constants/paths';
 
@@ -187,12 +188,12 @@ export const createAlbumRaw = (params: {
 export const createOtherCdRaw = (params: {
   title: OtherCdTitle;
   number: DiscographyRaw['number'];
+  type: OtherCdKind;
   release: DiscographyRaw['release'];
   previousSingle: DiscographyRaw['previousSingleNumber'];
   cdTypes?: DiscographyRaw['artworkTypes'];
   shopping?: DiscographyRaw['shopping'];
   songs: Omit<DiscographyRaw['songs'][0], 'number'>[];
-  type: 'digital';
 }): DiscographyRaw => {
   return createCdRaw({
     title: params.title,

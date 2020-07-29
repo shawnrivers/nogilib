@@ -19,7 +19,7 @@ const singlesRawArray = discography.getSinglesRawArray();
 const singlesRawObject = discography.getSinglesRawObject();
 const albumsRawArray = discography.getAlbumsRawArray();
 const albumsRawObject = discography.getAlbumsRawObject();
-const otherCdsRawArray = discography.getDigitalCdsRawArray();
+const otherCdsRawArray = discography.getOtherCdsRawArray();
 const otherCdsRawObject = discography.getOtherCdsRawObject();
 
 describe('convertSongSingle', () => {
@@ -128,7 +128,7 @@ describe('convertSongArtwork', () => {
         albumsRawObject,
         otherCdsRawObject,
       })
-    ).toEqual('artworks/others/1/T.jpg');
+    ).toEqual('artworks/digital/1/T.jpg');
   });
 
   test('should return no image artwork when no single nor albums and other CDs matched', () => {

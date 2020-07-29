@@ -12469,5 +12469,76 @@
       "thirdRow": [],
       "fourthRow": []
     }
+  },
+  {
+    "title": "Route 246",
+    "key": "route246",
+    "single": {
+      "title": "",
+      "number": ""
+    },
+    "albums": [],
+    "otherCds": [
+      {
+        "title": "Route 246",
+        "number": "2"
+      }
+    ],
+    "artwork": "artworks/digital/2/T.jpg",
+    "musicVideo": "",
+    "type": "title",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "小室哲哉"
+      ],
+      "arrange": [
+        "小室哲哉"
+      ],
+      "direct": [
+        "maxilla"
+      ]
+    },
+    "performers": {
+      "center": [
+        "saitouasuka"
+      ],
+      "fukujin": "row-1-2",
+      "solo": "",
+      "unit": ""
+    },
+    "performersTag": {
+      "name": "selected",
+      "singleNumber": ""
+    },
+    "formations": {
+      "firstRow": [
+        "yodayuuki",
+        "ikutaerika",
+        "saitouasuka",
+        "endousakura",
+        "kakiharuka"
+      ],
+      "secondRow": [
+        "umezawaminami",
+        "horimiona",
+        "yamashitamizuki",
+        "kuboshiori",
+        "akimotomanatsu",
+        "matsumurasayuri"
+      ],
+      "thirdRow": [
+        "shinuchimai",
+        "kitanohinako",
+        "oozonomomoko",
+        "tsutsuiayame",
+        "hoshinominami",
+        "iwamotorenka",
+        "takayamakazumi"
+      ],
+      "fourthRow": []
+    }
   }
 ]

@@ -32,10 +32,12 @@ export type AlbumTitle =
   | 'それぞれの椅子'
   | '透明な色';
 
-export type OtherCdTitle = '世界中の隣人よ';
+export type OtherCdTitle = '世界中の隣人よ' | 'Route 246';
 
 export type CdTitle = SingleTitle | AlbumTitle | OtherCdTitle;
 
 export type FocusPerformersType = 'center' | 'solo' | 'unit' | '';
 
 export type CdType = 'A' | 'B' | 'C' | 'D' | 'T' | 'L' | 'L1' | 'L2';
+
+export type OtherCdKind = 'digital';

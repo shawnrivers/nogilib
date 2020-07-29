@@ -23,9 +23,9 @@ describe('convertCdArtwork', () => {
         cdHasArtworks: true,
         cdNumber: '1',
         cdArtworkType: 'T',
-        cdKind: 'other',
+        cdKind: 'digital',
       })
-    ).toEqual('artworks/others/1/T.jpg');
+    ).toEqual('artworks/digital/1/T.jpg');
   });
 
   test('should return no artwork image path when cdHasArtworks flag is false', () => {

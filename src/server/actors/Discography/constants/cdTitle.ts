@@ -4,6 +4,10 @@ import { CdTitle } from 'server/actors/Discography/types';
 
 export const CdTitleKeyArray: TitleKeyArray<CdTitle> = [
   {
+    title: 'Route 246',
+    key: 'route246',
+  },
+  {
     title: '世界中の隣人よ',
     key: 'sekaichuunorinjinyo',
   },
