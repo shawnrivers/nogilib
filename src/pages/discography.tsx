@@ -94,13 +94,13 @@ const DiscographyPageContainer: React.FC<QueryResult> = props => {
     () => discographyData.filter(cd => cd.type === 'album'),
     [discographyData]
   );
-  const otherCdsData = React.useMemo(
-    () => discographyData.filter(cd => cd.type === 'other'),
+  const digitalCdsData = React.useMemo(
+    () => discographyData.filter(cd => cd.type === 'digital'),
     [discographyData]
   );
   const allCdGroupsByYear = React.useMemo(
-    () => groupCdsByYear([...singlesData, ...albumsData, ...otherCdsData]),
-    [singlesData, albumsData, otherCdsData]
+    () => groupCdsByYear([...singlesData, ...albumsData, ...digitalCdsData]),
+    [singlesData, albumsData, digitalCdsData]
   );
   const singleGroupsByYear = React.useMemo(() => groupCdsByYear(singlesData), [
     singlesData,

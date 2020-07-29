@@ -19,7 +19,7 @@ const singlesRawArray = discography.getSinglesRawArray();
 const singlesRawObject = discography.getSinglesRawObject();
 const albumsRawArray = discography.getAlbumsRawArray();
 const albumsRawObject = discography.getAlbumsRawObject();
-const otherCdsRawArray = discography.getOtherCdsRawArray();
+const otherCdsRawArray = discography.getDigitalCdsRawArray();
 const otherCdsRawObject = discography.getOtherCdsRawObject();
 
 describe('convertSongSingle', () => {

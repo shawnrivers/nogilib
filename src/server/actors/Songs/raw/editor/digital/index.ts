@@ -1,18 +1,18 @@
-import { SongRaw } from "server/actors/Songs/models";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { SONGS } from "server/actors/Songs/constants/songTitle";
-import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
+import { SongRaw } from 'server/actors/Songs/models';
+import { SongType } from 'server/actors/Songs/constants/songType';
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
+import { createSongRaw } from 'server/actors/Songs/raw/creator';
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 
-export const OTHER_SONGS: SongRaw[] = [
+export const DIGITAL_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS["世界中の隣人よ"].title,
+    title: SONGS['世界中の隣人よ'].title,
     type: SongType.Special,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["taka"],
-      arrange: ["taka"],
-      direct: ["横堀光範"],
+      lyrics: ['秋元康'],
+      compose: ['taka'],
+      arrange: ['taka'],
+      direct: ['横堀光範'],
     },
     formations: {
       firstRow: [

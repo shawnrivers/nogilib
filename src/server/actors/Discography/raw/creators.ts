@@ -30,8 +30,8 @@ export const convertCdArtwork = ({
     case 'album':
       imageSrcBasePath = 'artworks/albums';
       break;
-    case 'other':
-      imageSrcBasePath = 'artworks/others';
+    case 'digital':
+      imageSrcBasePath = 'artworks/digital';
       break;
     default:
       imageSrcBasePath = '';
@@ -192,10 +192,11 @@ export const createOtherCdRaw = (params: {
   cdTypes?: DiscographyRaw['artworkTypes'];
   shopping?: DiscographyRaw['shopping'];
   songs: Omit<DiscographyRaw['songs'][0], 'number'>[];
+  type: 'digital';
 }): DiscographyRaw => {
   return createCdRaw({
     title: params.title,
-    type: 'other',
+    type: params.type,
     number: params.number,
     cdTypes: params.cdTypes,
     release: params.release,

@@ -31,7 +31,7 @@ export type CdSongResult = CdSongRaw & {
 export type DiscographyRaw = {
   title: CdTitle;
   key: string;
-  type: 'single' | 'album' | 'other';
+  type: 'single' | 'album' | 'digital';
   number: string;
   release: string;
   hasArtworks: boolean;

@@ -6744,13 +6744,13 @@
   {
     "title": "世界中の隣人よ",
     "key": "sekaichuunorinjinyo",
-    "type": "other",
+    "type": "digital",
     "number": "1",
     "release": "2020-06-17",
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/others/1/T.jpg",
+        "url": "artworks/digital/1/T.jpg",
         "type": "T"
       }
     ],
