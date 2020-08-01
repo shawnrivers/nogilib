@@ -12,21 +12,21 @@ export const Helmet: React.FC = () => {
         name="viewport"
         content="width=device-width, initial-scale=1, viewport-fit=cover"
       />
-      <meta name="title" content="Nogizaka Lib" />
+      <meta name="title" content="NOGILIB" />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:creator" content="@yuxiao_he" />
       <meta
         name="description"
-        content="Nogizaka Lib is a Gatsby powered web application aiming at showing the information about Nogizaka46 in a user-friendly way."
+        content="NOGILIB is a Gatsby powered web application aiming at showing the information about Nogizaka46 in a user-friendly way."
       />
       <meta
         name="url"
         content="https://shawnrivers.github.io/nogizaka-lib-redesign/"
       />
-      <meta name="og:title" content="Nogizaka Lib" />
+      <meta name="og:title" content="NOGILIB" />
       <meta
         name="og:description"
-        content="Nogizaka Lib is a Gatsby powered web application aiming at showing the information about Nogizaka46 in a user-friendly way."
+        content="NOGILIB is a Gatsby powered web application aiming at showing the information about Nogizaka46 in a user-friendly way."
       />
       <meta
         property="og:image"
@@ -34,7 +34,7 @@ export const Helmet: React.FC = () => {
       />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-      <title>Nogizaka Lib</title>
+      <title>NOGILIB</title>
       <html lang={language} />
     </ReactHelmet>
   );

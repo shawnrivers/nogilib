@@ -226,7 +226,7 @@ const NavigationBar: React.FC<{
         >
           <Link to={getDiscographyUrl()}>
             <Typography variant="h6" element="span">
-              Nogizaka Lib
+              NOGILIB
             </Typography>
           </Link>
           <Typography variant="h6" element="span">
