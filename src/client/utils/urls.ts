@@ -13,3 +13,5 @@ export const getMembersUrl = (filter?: MembersUrlFilter): string =>
   filter ? `/members?filter=${filter}` : '/members';
 
 export const getMemberUrl = (memberName: string) => `/members/${memberName}`;
+
+export const getSearchUrl = () => '/search';

@@ -42,12 +42,9 @@ export const GLOBAL_COLORS = {
 };
 
 export type GlobalColorKey = keyof typeof GLOBAL_COLORS;
+export type ThemeColorKey = 'standard' | 'variant0' | 'variant1';
 
-export type ThemeColorVariants = {
-  standard: string;
-  variant0: string;
-  variant1: string;
-};
+export type ThemeColorVariants = Record<ThemeColorKey, string>;
 
 export type ThemeColorsForeground = {
   onPrimary: ThemeColorVariants;

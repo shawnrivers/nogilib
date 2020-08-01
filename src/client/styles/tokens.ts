@@ -13,6 +13,7 @@ import {
   ELEVATION_DARK,
   ELEVATION_LIGHT,
 } from 'client/styles/elevation';
+import { BREAK_POINTS } from 'client/styles/breakPoints';
 
 export type Theme = {
   key: ThemeKey;
@@ -21,12 +22,14 @@ export type Theme = {
   spacing: typeof SPACING;
   borderRadius: typeof BORDER_RADIUS;
   elevation: Elevation;
+  breakPoints: typeof BREAK_POINTS;
 };
 
 const commonStyles: Omit<Theme, 'key' | 'colors' | 'elevation'> = {
   typography: TYPOGRAPHY,
   spacing: SPACING,
   borderRadius: BORDER_RADIUS,
+  breakPoints: BREAK_POINTS,
 };
 
 const lightTheme: Theme = {
