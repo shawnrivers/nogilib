@@ -14,6 +14,7 @@ import {
   ELEVATION_LIGHT,
 } from 'client/styles/elevation';
 import { BREAK_POINTS } from 'client/styles/breakPoints';
+import { SIZES } from 'client/styles/sizes';
 
 export type Theme = {
   key: ThemeKey;
@@ -23,13 +24,15 @@ export type Theme = {
   borderRadius: typeof BORDER_RADIUS;
   elevation: Elevation;
   breakPoints: typeof BREAK_POINTS;
+  sizes: typeof SIZES;
 };
 
-const commonStyles: Omit<Theme, 'key' | 'colors' | 'elevation'> = {
+export const commonStyles: Omit<Theme, 'key' | 'colors' | 'elevation'> = {
   typography: TYPOGRAPHY,
   spacing: SPACING,
   borderRadius: BORDER_RADIUS,
   breakPoints: BREAK_POINTS,
+  sizes: SIZES,
 };
 
 const lightTheme: Theme = {

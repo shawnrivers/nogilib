@@ -3,4 +3,4 @@ export const BREAK_POINTS = {
   sp: '36em',
 };
 
-export type BorderRadiusKey = keyof typeof BREAK_POINTS;
+export type BreakPointsKey = keyof typeof BREAK_POINTS;
