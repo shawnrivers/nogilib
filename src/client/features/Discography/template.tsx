@@ -7,7 +7,7 @@ import { TextSwitchLinkGroup } from 'client/components/molecules/buttonGroup/Tex
 import { ArtworkCard } from 'client/components/molecules/card/ArtworkCard';
 import { PageContent } from 'client/components/templates/Page';
 import { TextDivider } from 'client/components/atoms/TextDivider';
-import { useAppTheme } from 'client/styles/tokens';
+import { commonStyles } from 'client/styles/tokens';
 import {
   DiscographyUrlFilter,
   getAlbumUrl,
@@ -22,7 +22,6 @@ export type DiscographyPageProps = {
 
 export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
   const { currentFilter, cdGroupsByYear } = props;
-  const theme = useAppTheme();
 
   return (
     <PageContent
@@ -72,9 +71,9 @@ export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
             <div
               css={css`
                 display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
                 grid-template-rows: auto;
-                grid-gap: ${theme.spacing.xl};
+                grid-gap: ${commonStyles.spacing.m};
                 justify-content: center;
                 max-width: 60rem;
                 margin: auto;

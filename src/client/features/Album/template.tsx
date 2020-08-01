@@ -3,7 +3,7 @@ import { jsx, css } from '@emotion/core';
 import * as React from 'react';
 import { Typography } from 'client/components/atoms/Typography';
 import { PageContent } from 'client/components/templates/Page';
-import { useAppTheme } from 'client/styles/tokens';
+import { commonStyles } from 'client/styles/tokens';
 import { toCdNumber } from 'utils/strings';
 import { Message } from 'client/components/atoms/Message';
 import { GridArtworkImage } from 'client/components/atoms/image/GirdArtworkImage';
@@ -14,8 +14,6 @@ import { MemberCard } from 'client/components/molecules/card/MemberCard';
 import { getMemberUrl, getSongUrl } from 'client/utils/urls';
 
 export const AlbumPage: React.FC<AlbumPageProps> = props => {
-  const theme = useAppTheme();
-
   return (
     <PageContent
       header={
@@ -47,7 +45,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
           css={css`
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            grid-gap: ${theme.spacing.m};
+            grid-gap: ${commonStyles.spacing.m};
             justify-content: center;
           `}
         >
@@ -63,8 +61,8 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
                   display: grid;
                   grid-template-columns: 90px auto;
                   grid-template-rows: auto;
-                  grid-gap: ${theme.spacing.m};
-                  padding: ${theme.spacing.xs};
+                  grid-gap: ${commonStyles.spacing.m};
+                  padding: ${commonStyles.spacing.xs};
                   overflow: hidden;
                 `}
               >
@@ -99,9 +97,9 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
             <div
               css={css`
                 display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
                 grid-template-rows: auto;
-                grid-gap: ${theme.spacing.m};
+                grid-gap: ${commonStyles.spacing.s};
                 justify-content: center;
               `}
             >
@@ -129,7 +127,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
             grid-template-rows: auto;
-            grid-gap: ${theme.spacing.m};
+            grid-gap: ${commonStyles.spacing.m};
             justify-content: center;
           `}
         >

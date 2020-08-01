@@ -21,7 +21,7 @@ export const ArtworkCard: React.FC<
     <Card {...cardProps}>
       <GridArtworkImage src={artwork} alt={number} />
       <Typography
-        variant="h6"
+        variant="h7"
         textColor={{ on: 'onBackground', variant: 'variant1' }}
         css={css`
           text-transform: capitalize;

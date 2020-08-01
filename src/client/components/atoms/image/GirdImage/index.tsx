@@ -5,7 +5,7 @@ import {
   GatsbyImage,
   GatsbyImageProps,
 } from 'client/components/atoms/image/GatsbyImage';
-import { useAppTheme } from 'client/styles/tokens';
+import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import { BorderRadiusKey } from 'client/styles/borderRadius';
 
 type ImageProps = GatsbyImageProps & {
@@ -13,7 +13,7 @@ type ImageProps = GatsbyImageProps & {
 };
 
 const Image: React.FC<ImageProps> = props => {
-  const { src, alt, borderRadius = 'm', ...restProps } = props;
+  const { src, alt, borderRadius = 's', ...restProps } = props;
   const theme = useAppTheme();
 
   return (
@@ -22,7 +22,7 @@ const Image: React.FC<ImageProps> = props => {
         width: 100%;
         height: 100%;
         position: relative;
-        border-radius: ${theme.borderRadius[borderRadius]};
+        border-radius: ${commonStyles.borderRadius[borderRadius]};
         overflow: hidden;
       `}
     >
