@@ -8,7 +8,11 @@ import {
 import { TYPOGRAPHY } from 'client/styles/typography';
 import { SPACING } from 'client/styles/spacing';
 import { BORDER_RADIUS } from 'client/styles/borderRadius';
-import { ELEVATION_DARK, ELEVATION_LIGHT } from 'client/styles/elevation';
+import {
+  Elevation,
+  ELEVATION_DARK,
+  ELEVATION_LIGHT,
+} from 'client/styles/elevation';
 
 export type Theme = {
   key: ThemeKey;
@@ -16,7 +20,7 @@ export type Theme = {
   typography: typeof TYPOGRAPHY;
   spacing: typeof SPACING;
   borderRadius: typeof BORDER_RADIUS;
-  elevation: typeof ELEVATION_DARK;
+  elevation: Elevation;
 };
 
 const commonStyles: Omit<Theme, 'key' | 'colors' | 'elevation'> = {

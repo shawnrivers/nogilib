@@ -116,10 +116,12 @@ const AMBIENT_SHADOW: Record<ElevationKey, string> = {
   24: '0px 9px 46px 8px',
 };
 
-export const ELEVATION_DARK: Record<
+export type Elevation = Record<
   ElevationKey,
   { boxShadow: string; whiteOverlayTransparency: string }
-> = {
+>;
+
+export const ELEVATION_DARK: Elevation = {
   0: {
     boxShadow: `${UMBRA_SHADOW[0]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[0]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[0]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0)',
@@ -222,10 +224,7 @@ export const ELEVATION_DARK: Record<
   },
 };
 
-export const ELEVATION_LIGHT: Record<
-  ElevationKey,
-  { boxShadow: string; whiteOverlayTransparency: string }
-> = {
+export const ELEVATION_LIGHT: Elevation = {
   0: {
     boxShadow: `${UMBRA_SHADOW[0]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[0]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[0]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
