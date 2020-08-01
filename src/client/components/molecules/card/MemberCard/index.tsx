@@ -15,9 +15,16 @@ export const MemberCard: React.FC<
     textSize?: TypographyProps['variant'];
   }
 > = props => {
-  const { profileImage, name, textSize = 'em1', ...cardProps } = props;
+  const {
+    profileImage,
+    name,
+    textSize = 'em2',
+    borderRadius = 's',
+    padding = 's',
+    ...cardProps
+  } = props;
   return (
-    <Card {...cardProps}>
+    <Card borderRadius={borderRadius} padding={padding} {...cardProps}>
       <GridMemberImage src={profileImage} alt={name} />
       <Typography
         variant={textSize}
