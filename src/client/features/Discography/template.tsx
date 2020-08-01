@@ -5,7 +5,7 @@ import { Message } from 'client/components/atoms/Message';
 import { Typography } from 'client/components/atoms/Typography';
 import { TextSwitchLinkGroup } from 'client/components/molecules/buttonGroup/TextSwitchLinkGroup';
 import { ArtworkCard } from 'client/components/molecules/card/ArtworkCard';
-import { Header, Main } from 'client/components/templates/Page';
+import { PageContent } from 'client/components/templates/Page';
 import { TextDivider } from 'client/components/atoms/TextDivider';
 import { useAppTheme } from 'client/styles/tokens';
 import {
@@ -25,44 +25,47 @@ export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
   const theme = useAppTheme();
 
   return (
-    <React.Fragment>
-      <Header>
-        <Typography
-          variant="h1"
-          css={css`
-            margin-bottom: 0.3em;
-            word-break: break-word;
-            line-height: 1;
-          `}
-        >
-          DISCOGRAPHY
-        </Typography>
-        <TextSwitchLinkGroup
-          variant="h2"
-          textOn="onBackground"
-          links={[
-            {
-              text: <Message text="all" />,
-              isSwitchedOn: currentFilter === 'all',
-              to: getDiscographyUrl(),
-            },
-            {
-              text: <Message text="singles" />,
-              isSwitchedOn: currentFilter === 'singles',
-              to: getDiscographyUrl('singles'),
-            },
-            {
-              text: <Message text="albums" />,
-              isSwitchedOn: currentFilter === 'albums',
-              to: getDiscographyUrl('albums'),
-            },
-          ]}
-          css={css`
-            text-transform: capitalize;
-          `}
-        />
-      </Header>
-      <Main>
+    <PageContent
+      header={
+        <React.Fragment>
+          <Typography
+            variant="h1"
+            css={css`
+              margin-bottom: 0.3em;
+              word-break: break-word;
+              line-height: 1;
+            `}
+          >
+            DISCOGRAPHY
+          </Typography>
+          <TextSwitchLinkGroup
+            variant="h2"
+            textOn="onBackground"
+            links={[
+              {
+                text: <Message text="all" />,
+                isSwitchedOn: currentFilter === 'all',
+                to: getDiscographyUrl(),
+              },
+              {
+                text: <Message text="singles" />,
+                isSwitchedOn: currentFilter === 'singles',
+                to: getDiscographyUrl('singles'),
+              },
+              {
+                text: <Message text="albums" />,
+                isSwitchedOn: currentFilter === 'albums',
+                to: getDiscographyUrl('albums'),
+              },
+            ]}
+            css={css`
+              text-transform: capitalize;
+            `}
+          />
+        </React.Fragment>
+      }
+    >
+      <React.Fragment>
         {cdGroupsByYear.map(cdGroup => (
           <div key={cdGroup.year}>
             <TextDivider text={cdGroup.year} />
@@ -94,7 +97,7 @@ export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
             </div>
           </div>
         ))}
-      </Main>
-    </React.Fragment>
+      </React.Fragment>
+    </PageContent>
   );
 };

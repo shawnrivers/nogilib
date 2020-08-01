@@ -1,5 +1,4 @@
 import { css } from '@emotion/core';
-import styled from '@emotion/styled';
 import { Link } from 'gatsby';
 import * as React from 'react';
 import { Typography } from 'client/components/atoms/Typography';
@@ -257,18 +256,6 @@ const NavigationBar: React.FC<{
     </Surface>
   );
 };
-
-export const Header = styled.header`
-  grid-area: header;
-  justify-self: start;
-`;
-export const Main = styled.main`
-  grid-area: main;
-`;
-export const MainContent = styled.div`
-  max-width: 60rem;
-  margin: auto;
-`;
 
 export const PageContent: React.FC<{
   header?: React.ReactNode;
