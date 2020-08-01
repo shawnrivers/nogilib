@@ -4,7 +4,7 @@ import * as React from 'react';
 import { GridArtworkImage } from 'client/components/atoms/image/GirdArtworkImage';
 import { Typography } from 'client/components/atoms/Typography';
 import { toCdNumber } from 'utils/strings';
-import { Card, CardProps } from 'client/components/atoms/card/Card';
+import { Card, CardProps } from 'client/components/atoms/Card';
 import { FocusPerformers } from 'server/actors/Discography/models';
 
 export const ArtworkCard: React.FC<

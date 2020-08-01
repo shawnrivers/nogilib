@@ -1,7 +1,7 @@
 /**@jsx jsx */
 import { jsx, css } from '@emotion/core';
 import * as React from 'react';
-import { Card, CardProps } from 'client/components/atoms/card/Card';
+import { Card, CardProps } from 'client/components/atoms/Card';
 import { useAppTheme } from 'client/styles/tokens';
 import { GridImage } from 'client/components/atoms/image/GirdImage';
 import { Typography } from 'client/components/atoms/Typography';

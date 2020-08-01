@@ -25,7 +25,6 @@ export const Surface: React.FC<SurfaceProps> = props => {
     <div
       css={css`
         position: relative;
-        overflow: hidden;
         background-color: ${theme.colors.theme.surface[backgroundColor]};
         color: ${theme.colors.theme.onSurface[foregroundColor]};
         box-shadow: ${theme.elevation[elevation].boxShadow};

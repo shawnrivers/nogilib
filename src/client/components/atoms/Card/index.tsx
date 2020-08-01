@@ -32,6 +32,7 @@ export const CardContent: React.FC<CardContentProps> = props => {
       elevation={elevation}
       css={css`
         border-radius: ${theme.borderRadius[borderRadius]};
+        overflow: hidden;
       `}
       {...restProps}
     >
