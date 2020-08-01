@@ -12,19 +12,19 @@ export type FontFamily = 'serif' | 'sans';
 
 export const TYPOGRAPHY = {
   h1: {
-    fontSize: '4rem',
-    fontWeight: 700,
-  },
-  h2: {
-    fontSize: '3rem',
-    fontWeight: 700,
-  },
-  h3: {
     fontSize: '2.5rem',
     fontWeight: 700,
   },
-  h4: {
+  h2: {
+    fontSize: '2.25rem',
+    fontWeight: 700,
+  },
+  h3: {
     fontSize: '2rem',
+    fontWeight: 700,
+  },
+  h4: {
+    fontSize: '1.75rem',
     fontWeight: 700,
   },
   h5: {
