@@ -1,11 +1,14 @@
-import { ThemeProvider } from 'emotion-theming';
-import * as React from 'react';
-import { themes } from 'client/styles/tokens';
+/**@jsx jsx */
+import { jsx, css } from '@emotion/core';
+import { ThemeProvider } from 'client/store/theme/context';
+import { AppContextProvider } from 'client/store/app/context';
 
 export const ThemeDecorator = () => {
   return (Story: any) => (
-    <ThemeProvider theme={themes.light}>
-      <Story />
-    </ThemeProvider>
+    <AppContextProvider>
+      <ThemeProvider>
+        <Story />
+      </ThemeProvider>
+    </AppContextProvider>
   );
 };

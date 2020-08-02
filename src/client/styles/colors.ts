@@ -81,6 +81,21 @@ export const mapForegroundToBackground = (
   }
 };
 
+export const mapBackgroundToForeground = (
+  backgroundKey: keyof ThemeColorsBackground
+): keyof ThemeColorsForeground => {
+  switch (backgroundKey) {
+    case 'primary':
+      return 'onPrimary';
+    case 'secondary':
+      return 'onSecondary';
+    case 'background':
+      return 'onBackground';
+    case 'surface':
+      return 'onSurface';
+  }
+};
+
 export type ColorTheme = {
   theme: ThemeColors;
   global: typeof GLOBAL_COLORS;
@@ -89,9 +104,9 @@ export type ColorTheme = {
 export const LIGHT_COLOR_THEME: ColorTheme = {
   theme: {
     primary: {
-      standard: GLOBAL_COLORS.purpleDull0,
-      variant0: GLOBAL_COLORS.purpleDull1,
-      variant1: GLOBAL_COLORS.purpleDull2,
+      standard: GLOBAL_COLORS.purple1,
+      variant0: GLOBAL_COLORS.purple2,
+      variant1: GLOBAL_COLORS.purple3,
     },
     secondary: {
       standard: GLOBAL_COLORS.yellow0,
@@ -109,8 +124,8 @@ export const LIGHT_COLOR_THEME: ColorTheme = {
       variant1: GLOBAL_COLORS.gray3,
     },
     onPrimary: {
-      standard: GLOBAL_COLORS.gray8,
-      variant0: GLOBAL_COLORS.gray5,
+      standard: GLOBAL_COLORS.white,
+      variant0: GLOBAL_COLORS.gray1,
       variant1: GLOBAL_COLORS.gray3,
     },
     onSecondary: {
@@ -135,9 +150,9 @@ export const LIGHT_COLOR_THEME: ColorTheme = {
 export const DARK_COLOR_THEME: ColorTheme = {
   theme: {
     primary: {
-      standard: GLOBAL_COLORS.purpleDull4,
-      variant0: GLOBAL_COLORS.purpleDull3,
-      variant1: GLOBAL_COLORS.purpleDull2,
+      standard: GLOBAL_COLORS.purple1,
+      variant0: GLOBAL_COLORS.purple2,
+      variant1: GLOBAL_COLORS.purple3,
     },
     secondary: {
       standard: GLOBAL_COLORS.yellow0,

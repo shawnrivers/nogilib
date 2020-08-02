@@ -16,7 +16,7 @@ export const Surface: React.FC<SurfaceProps> = props => {
   const {
     foregroundColor = 'standard',
     backgroundColor = 'standard',
-    elevation = componentElevationKey.surface,
+    elevation = componentElevationKey.background,
     children,
     ...divProps
   } = props;

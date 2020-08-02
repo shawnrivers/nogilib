@@ -2,8 +2,7 @@
 import { jsx, css } from '@emotion/core';
 import * as React from 'react';
 import { LocalizedList } from 'client/components/atoms/locales/LocalizedList';
-import { PositionBadge } from 'client/components/atoms/PositionBadge';
-import { PositionCounter } from 'client/components/atoms/PositionCounter';
+import { PositionBadge } from 'client/features/Member/components/PositionBadge';
 import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
 import { PositionType } from 'server/actors/Members/constants/position';
 import { PageContent } from 'client/components/templates/Page';
@@ -15,6 +14,7 @@ import { GridMemberImage } from 'client/components/atoms/image/GridMemberImage';
 import { useTranslations } from 'client/hooks/useTranslations';
 import { MemberPageProps } from 'client/features/Member/container';
 import { useIntl } from 'client/hooks/useIntl';
+import { PositionCounter } from 'client/features/Member/components/PositionCounter';
 
 export const MemberPage: React.FC<MemberPageProps> = props => {
   const {

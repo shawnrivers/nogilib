@@ -19,7 +19,7 @@ export const CardContent: React.FC<CardContentProps> = props => {
   const {
     children,
     borderRadius = 'l',
-    elevation = componentElevationKey.cardOnSurface,
+    elevation = componentElevationKey.componentOnBackground,
     surfaceColor = 'standard',
     padding = 'm',
     ...restProps
