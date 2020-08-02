@@ -112,7 +112,8 @@ export const useSidebar = () => {
           variants={sideBarFade}
           css={css`
             background-color: ${theme.colors.theme.secondary.variant0};
-            box-shadow: ${theme.elevation[8].boxShadow};
+            box-shadow: ${theme.elevation[componentElevationKey.sidebar]
+              .boxShadow};
             z-index: ${theme.elevation[componentElevationKey.sidebar].zIndex};
             width: 70vw;
             height: 100vh;

@@ -2,7 +2,6 @@ import { css } from '@emotion/core';
 import { Link } from 'gatsby';
 import * as React from 'react';
 import { Typography } from 'client/components/atoms/Typography';
-// import { TextSwitchButtonGroup } from 'client/components/molecules/buttonGroup/TextSwitchButtonGroup';
 import { useAppContext } from 'client/hooks/useAppContext';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import {
@@ -113,84 +112,83 @@ const Settings: React.FC = () => {
         <SettingsIcon fill={theme.colors.theme.onSurface.standard} />
       </button>
       {isDropdownVisible && (
-        <div
+        <Card
+          elevation={componentElevationKey.dropdown}
+          borderRadius="s"
           css={css`
             position: absolute;
             top: calc(${commonStyles.sizes.navigationBarHeight} - 8px);
-            z-index: ${theme.elevation[componentElevationKey.dropdown].zIndex};
             min-width: 160px;
           `}
         >
-          <Card elevation={12} borderRadius="s">
-            <Typography variant="body1" element="p">
-              Languages
-            </Typography>
-            <ul
-              css={css`
-                margin-top: ${commonStyles.spacing.xs};
+          <Typography variant="body1" element="p">
+            Languages
+          </Typography>
+          <ul
+            css={css`
+              margin-top: ${commonStyles.spacing.xs};
 
-                & > *:not(:first-child) {
-                  margin-top: 0.2em;
-                }
-              `}
+              & > *:not(:first-child) {
+                margin-top: 0.2em;
+              }
+            `}
+          >
+            <SelectionItem
+              isSelected={language === 'en'}
+              onClick={handleClickEnglish}
             >
-              <SelectionItem
-                isSelected={language === 'en'}
-                onClick={handleClickEnglish}
-              >
-                English
-              </SelectionItem>
-              <SelectionItem
-                isSelected={language === 'ja'}
-                onClick={handleClickJapanese}
-              >
-                日本語
-              </SelectionItem>
-              <SelectionItem
-                isSelected={language === 'zh'}
-                onClick={handleClickChinese}
-              >
-                简体中文
-              </SelectionItem>
-            </ul>
-            <hr
-              css={css`
-                margin: ${commonStyles.spacing.s} 0;
-              `}
-            />
-            <Typography variant="body1" element="p">
-              Color Theme
-            </Typography>
-            <ul
-              css={css`
-                margin-top: ${commonStyles.spacing.xs};
+              English
+            </SelectionItem>
+            <SelectionItem
+              isSelected={language === 'ja'}
+              onClick={handleClickJapanese}
+            >
+              日本語
+            </SelectionItem>
+            <SelectionItem
+              isSelected={language === 'zh'}
+              onClick={handleClickChinese}
+            >
+              简体中文
+            </SelectionItem>
+          </ul>
+          <hr
+            css={css`
+              margin: ${commonStyles.spacing.s} 0;
+            `}
+          />
+          <Typography variant="body1" element="p">
+            Color Theme
+          </Typography>
+          <ul
+            css={css`
+              margin-top: ${commonStyles.spacing.xs};
 
-                & > *:not(:first-child) {
-                  margin-top: 0.2em;
-                }
-              `}
+              & > *:not(:first-child) {
+                margin-top: 0.2em;
+              }
+            `}
+          >
+            <SelectionItem
+              isSelected={themeMode === 'dark'}
+              onClick={handleClickDarkTheme}
             >
-              <SelectionItem
-                isSelected={themeMode === 'dark'}
-                onClick={handleClickDarkTheme}
-              >
-                Dark
-              </SelectionItem>
-              <SelectionItem
-                isSelected={themeMode === 'light'}
-                onClick={handleClickLightTheme}
-              >
-                Light
-              </SelectionItem>
-              <SelectionItem
-                isSelected={themeMode === 'auto'}
-                onClick={handleClickAutoTheme}
-              >
-                Auto
-              </SelectionItem>
-            </ul>
-          </Card>
-        </div>
+              Dark
+            </SelectionItem>
+            <SelectionItem
+              isSelected={themeMode === 'light'}
+              onClick={handleClickLightTheme}
+            >
+              Light
+            </SelectionItem>
+            <SelectionItem
+              isSelected={themeMode === 'auto'}
+              onClick={handleClickAutoTheme}
+            >
+              Auto
+            </SelectionItem>
+          </ul>
+        </Card>
       )}
     </div>
   );
@@ -199,19 +197,16 @@ const Settings: React.FC = () => {
 const NavigationBar: React.FC<{
   toggleSidebar: () => void;
 }> = props => {
-  const theme = useAppTheme();
-
   return (
     <Surface
       backgroundColor="standard"
       foregroundColor="standard"
-      elevation={10}
+      elevation={componentElevationKey.navigationBar}
       css={css`
         width: 100vw;
         height: ${commonStyles.sizes.navigationBarHeight};
         position: fixed;
         top: 0;
-        z-index: ${theme.elevation[componentElevationKey.navigationBar].zIndex};
       `}
     >
       <div

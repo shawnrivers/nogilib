@@ -2,7 +2,7 @@
 import { jsx, css } from '@emotion/core';
 import * as React from 'react';
 import { ThemeColorVariants } from 'client/styles/colors';
-import { ElevationKey } from 'client/styles/elevation';
+import { componentElevationKey, ElevationKey } from 'client/styles/elevation';
 import { useAppTheme } from 'client/styles/tokens';
 
 export type SurfaceProps = React.HTMLAttributes<HTMLDivElement> & {
@@ -16,7 +16,7 @@ export const Surface: React.FC<SurfaceProps> = props => {
   const {
     foregroundColor = 'standard',
     backgroundColor = 'standard',
-    elevation = 4,
+    elevation = componentElevationKey.surface,
     children,
     ...divProps
   } = props;
@@ -28,6 +28,7 @@ export const Surface: React.FC<SurfaceProps> = props => {
         background-color: ${theme.colors.theme.surface[backgroundColor]};
         color: ${theme.colors.theme.onSurface[foregroundColor]};
         box-shadow: ${theme.elevation[elevation].boxShadow};
+        z-index: ${theme.elevation[elevation].zIndex};
       `}
       {...divProps}
     >

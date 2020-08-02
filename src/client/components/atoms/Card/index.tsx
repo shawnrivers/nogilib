@@ -7,6 +7,7 @@ import { BorderRadiusKey } from 'client/styles/borderRadius';
 import { ThemeColorVariants } from 'client/styles/colors';
 import { SpacingKey } from 'client/styles/spacing';
 import { Surface, SurfaceProps } from 'client/components/atoms/Surface';
+import { componentElevationKey } from 'client/styles/elevation';
 
 type CardContentProps = SurfaceProps & {
   borderRadius?: BorderRadiusKey;
@@ -18,7 +19,7 @@ export const CardContent: React.FC<CardContentProps> = props => {
   const {
     children,
     borderRadius = 'l',
-    elevation = 4,
+    elevation = componentElevationKey.cardOnSurface,
     surfaceColor = 'standard',
     padding = 'm',
     ...restProps

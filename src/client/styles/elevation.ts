@@ -29,9 +29,10 @@ export type ElevationKey =
   | 24;
 
 export const componentElevationKey: Record<
-  'navigationBar' | 'sidebar' | 'dropdown' | 'cardOnSurface',
+  'navigationBar' | 'sidebar' | 'dropdown' | 'cardOnSurface' | 'surface',
   ElevationKey
 > = {
+  surface: 0,
   cardOnSurface: 4,
   navigationBar: 12,
   dropdown: 16,

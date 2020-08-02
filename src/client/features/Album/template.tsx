@@ -112,7 +112,6 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
                     member.nameNotations.firstName
                   }
                   to={getMemberUrl(member.name)}
-                  elevation={3}
                   surfaceColor="standard"
                   borderRadius="m"
                   padding="m"
