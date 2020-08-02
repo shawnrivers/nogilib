@@ -1,4 +1,4 @@
-import { Language } from 'client/utils/constants';
+import { Language } from 'client/types/language';
 
 export const getUrlWithTrailingSlash = (url: string): string =>
   url.slice(-1) !== '/' ? url + '/' : url;
@@ -32,7 +32,7 @@ export const toCdNumber = (num: string | number): string => {
 
 export const toNumberWithLocale = (
   num: string,
-  language: string,
+  language: Language,
   type?: 'cd' | 'row'
 ): string => {
   let counter = {
@@ -61,14 +61,14 @@ export const toNumberWithLocale = (
       break;
   }
 
-  if (language === Language.En) {
+  if (language === 'en') {
     return toCdNumber(num);
   }
 
   const number = Number(num);
 
   if (number) {
-    if (language === Language.Ja) {
+    if (language === 'ja') {
       return num + counter + '目';
     }
     return '第' + num + counter;

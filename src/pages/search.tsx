@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { injectIntl } from 'react-intl';
 import { Search, SearchResult } from 'client/features/Search/template';
 import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
 import { toCdNumber } from 'utils/strings';
@@ -7,6 +6,7 @@ import { getAlbumUrl, getMemberUrl, getSongUrl } from 'client/utils/urls';
 import { MemberResult } from 'server/actors/Members/models';
 import { DiscographyResult } from 'server/actors/Discography/models';
 import { SongResult } from 'server/actors/Songs/models';
+import { useTranslations } from 'client/hooks/useTranslations';
 
 export type MemberDoc = {
   key: MemberResult['name'];
@@ -48,12 +48,14 @@ export type SearchDoc = (
 
 let timeout: NodeJS.Timeout;
 
-export const SearchPageContainer = injectIntl(({ intl }: { intl: any }) => {
+export const SearchPageContainer: React.FC = () => {
   useScrollRestoration();
 
   const [query, setQuery] = React.useState('');
   const [results, setResults] = React.useState<SearchDoc[]>([]);
   const [isSearching, setIsSearching] = React.useState(false);
+
+  const { getTranslation } = useTranslations();
 
   const lunr = React.useMemo(
     () => (typeof window !== 'undefined' ? (window as any).__LUNR__.ja : null),
@@ -125,16 +127,14 @@ export const SearchPageContainer = injectIntl(({ intl }: { intl: any }) => {
           to: getSongUrl(result.key),
           imgSrc: result.artwork,
           heading: result.title,
-          caption: `#${intl.formatMessage({
-            id: result.songType,
-          })}`,
+          caption: `#${getTranslation(result.songType as any)}`,
           secondCaption,
         });
       }
     }
 
     return { members, cds, albums, songs };
-  }, [results, intl]);
+  }, [getTranslation, results]);
 
   return (
     <Search
@@ -144,6 +144,6 @@ export const SearchPageContainer = injectIntl(({ intl }: { intl: any }) => {
       isSearching={isSearching}
     />
   );
-});
+};
 
 export default SearchPageContainer;

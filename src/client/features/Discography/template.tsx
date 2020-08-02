@@ -1,7 +1,6 @@
 /**@jsx jsx */
 import { css, jsx } from '@emotion/core';
 import * as React from 'react';
-import { Message } from 'client/components/atoms/Message';
 import { TextSwitchLinkGroup } from 'client/components/molecules/buttonGroup/TextSwitchLinkGroup';
 import { ArtworkCard } from 'client/components/molecules/card/ArtworkCard';
 import { PageContent } from 'client/components/templates/Page';
@@ -13,6 +12,7 @@ import {
   getDiscographyUrl,
 } from 'client/utils/urls';
 import { CdGroupByYear } from 'pages/discography';
+import { useTranslations } from 'client/hooks/useTranslations';
 
 export type DiscographyPageProps = {
   currentFilter: DiscographyUrlFilter;
@@ -21,6 +21,7 @@ export type DiscographyPageProps = {
 
 export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
   const { currentFilter, cdGroupsByYear } = props;
+  const { Translation } = useTranslations();
 
   return (
     <PageContent title="discography">
@@ -30,17 +31,17 @@ export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
           textOn="onBackground"
           links={[
             {
-              text: <Message text="all" />,
+              text: <Translation text="all" />,
               isSwitchedOn: currentFilter === 'all',
               to: getDiscographyUrl(),
             },
             {
-              text: <Message text="singles" />,
+              text: <Translation text="singles" />,
               isSwitchedOn: currentFilter === 'singles',
               to: getDiscographyUrl('singles'),
             },
             {
-              text: <Message text="albums" />,
+              text: <Translation text="albums" />,
               isSwitchedOn: currentFilter === 'albums',
               to: getDiscographyUrl('albums'),
             },

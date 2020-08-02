@@ -1,7 +1,6 @@
 /**@jsx jsx */
 import { css, jsx } from '@emotion/core';
 import * as React from 'react';
-import { Message } from 'client/components/atoms/Message';
 import { TextSwitchLinkGroup } from 'client/components/molecules/buttonGroup/TextSwitchLinkGroup';
 import { PageContent } from 'client/components/templates/Page';
 import { TextDivider } from 'client/components/atoms/dividers/TextDivider';
@@ -13,6 +12,7 @@ import {
   getMemberUrl,
   MembersUrlFilter,
 } from 'client/utils/urls';
+import { useTranslations } from 'client/hooks/useTranslations';
 
 export type MemberGroupByYear = {
   join: MemberResult['join'];
@@ -35,6 +35,7 @@ export type MembersPageProps = {
 
 export const MembersPage: React.FC<MembersPageProps> = props => {
   const { currentFilter, memberGroupsByJoin } = props;
+  const { Translation } = useTranslations();
 
   return (
     <PageContent title="members">
@@ -44,17 +45,17 @@ export const MembersPage: React.FC<MembersPageProps> = props => {
           textOn="onBackground"
           links={[
             {
-              text: <Message text="all" />,
+              text: <Translation text="all" />,
               isSwitchedOn: currentFilter === 'all',
               to: getMembersUrl(),
             },
             {
-              text: <Message text="current" />,
+              text: <Translation text="current" />,
               isSwitchedOn: currentFilter === 'current',
               to: getMembersUrl('current'),
             },
             {
-              text: <Message text="graduated" />,
+              text: <Translation text="graduated" />,
               isSwitchedOn: currentFilter === 'graduated',
               to: getMembersUrl('graduated'),
             },

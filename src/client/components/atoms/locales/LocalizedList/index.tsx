@@ -1,27 +1,15 @@
-import * as React from "react";
-import { injectIntl } from "react-intl";
-import { Language } from "client/utils/constants";
+import * as React from 'react';
+import { useAppContext } from 'client/hooks/useAppContext';
 
-interface LocalizedListProps {
+export const LocalizedList: React.FC<{
   list: string[];
-  intl: any;
-}
+}> = props => {
+  const { language } = useAppContext();
 
-export const LocalizedList = injectIntl(
-  ({ list, intl: { locale } }: LocalizedListProps) => {
-    let comma: string;
-    switch (locale) {
-      case Language.Zh:
-        comma = "、";
-        break;
-      case Language.Ja:
-        comma = "、";
-        break;
-      default:
-        comma = ", ";
-        break;
-    }
-
-    return <>{list.join(comma)}</>;
+  let comma = ', ';
+  if (language === 'ja' || language === 'zh') {
+    comma = '、';
   }
-);
+
+  return <>{props.list.join(comma)}</>;
+};

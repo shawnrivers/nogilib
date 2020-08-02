@@ -5,15 +5,17 @@ import { Typography } from 'client/components/atoms/Typography';
 import { PageContent } from 'client/components/templates/Page';
 import { commonStyles } from 'client/styles/tokens';
 import { toCdNumber } from 'utils/strings';
-import { Message } from 'client/components/atoms/Message';
 import { GridArtworkImage } from 'client/components/atoms/image/GirdArtworkImage';
 import { TextDivider } from 'client/components/atoms/dividers/TextDivider';
 import { AlbumPageProps } from 'client/features/Album/container';
 import { Card } from 'client/components/atoms/Card';
 import { MemberCard } from 'client/components/molecules/card/MemberCard';
 import { getMemberUrl, getSongUrl } from 'client/utils/urls';
+import { useTranslations } from 'client/hooks/useTranslations';
 
 export const AlbumPage: React.FC<AlbumPageProps> = props => {
+  const { Translation } = useTranslations();
+
   return (
     <PageContent
       title={props.title}
@@ -28,9 +30,9 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
             text-transform: capitalize;
           `}
         >
-          <Message text="release" />: {props.release}
+          <Translation text="release" />: {props.release}
         </Typography>
-        <TextDivider text={<Message text="tracks" />} />
+        <TextDivider text={<Translation text="tracks" />} />
         <div
           css={css`
             display: grid;
@@ -83,7 +85,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
         </div>
         {props.centers.length > 0 ? (
           <React.Fragment>
-            <TextDivider text={<Message text="center" />} />
+            <TextDivider text={<Translation text="center" />} />
             <div
               css={css`
                 display: grid;
@@ -110,7 +112,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
             </div>
           </React.Fragment>
         ) : null}
-        <TextDivider text={<Message text="artworks" />} />
+        <TextDivider text={<Translation text="artworks" />} />
         <div
           css={css`
             display: grid;

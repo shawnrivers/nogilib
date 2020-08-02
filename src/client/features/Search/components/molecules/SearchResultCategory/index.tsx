@@ -2,14 +2,14 @@
 import { jsx, css } from '@emotion/core';
 import * as React from 'react';
 import { SearchResultCard } from 'client/features/Search/components/molecules/SearchResultCard';
-import { Message } from 'client/components/atoms/Message';
 import { Typography } from 'client/components/atoms/Typography';
 import { useAppTheme } from 'client/styles/tokens';
+import { useTranslations } from 'client/hooks/useTranslations';
 
 const DEFAULT_RESULT_COUNT = 4;
 
 interface SearchResultCategoryProps {
-  title: string;
+  title: 'members' | 'cds' | 'songs';
   results: {
     to: string;
     imgSrc: string;
@@ -22,6 +22,7 @@ interface SearchResultCategoryProps {
 export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props => {
   const { title, results, ...restProps } = props;
   const theme = useAppTheme();
+  const { Translation } = useTranslations();
   const [showMore, toggleShowMore] = React.useState(false);
 
   return results.length > 0 ? (
@@ -40,7 +41,7 @@ export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props =
             text-transform: capitalize;
           `}
         >
-          <Message text={title} />
+          <Translation text={title} />
         </Typography>
       </div>
       <ul
@@ -97,7 +98,7 @@ export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props =
               }
             `}
           >
-            <Message text={showMore ? 'show less' : 'show all'} />
+            <Translation text={showMore ? 'show less' : 'show all'} />
           </Typography>
         ) : null}
       </ul>

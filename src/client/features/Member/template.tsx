@@ -1,13 +1,10 @@
 /**@jsx jsx */
 import { jsx, css } from '@emotion/core';
 import * as React from 'react';
-import { FormattedDate } from 'react-intl';
 import { LocalizedList } from 'client/components/atoms/locales/LocalizedList';
-import { Message } from 'client/components/atoms/Message';
 import { PositionBadge } from 'client/components/atoms/PositionBadge';
 import { PositionCounter } from 'client/components/atoms/PositionCounter';
 import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
-import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
 import { PositionType } from 'server/actors/Members/constants/position';
 import { PageContent } from 'client/components/templates/Page';
 import { Typography } from 'client/components/atoms/Typography';
@@ -15,72 +12,36 @@ import { useAppContext } from 'client/hooks/useAppContext';
 import { TextDivider } from 'client/components/atoms/dividers/TextDivider';
 import { useAppTheme } from 'client/styles/tokens';
 import { GridMemberImage } from 'client/components/atoms/image/GridMemberImage';
+import { useTranslations } from 'client/hooks/useTranslations';
+import { MemberPageProps } from 'client/features/Member/container';
+import { useIntl } from 'client/hooks/useIntl';
 
-interface MemberPageProps {
-  name: string;
-  names: {
-    ja: string;
-    en: string;
-    furigana: string;
-  };
-  profileImage: string;
-  sites: {
-    title: string;
-    url: string;
-  }[];
-  join: string;
-  graduation: {
-    isGraduated: boolean;
-  };
-  birthday: string;
-  height: number;
-  bloodType: string;
-  origin: string;
-  units: string[];
-  corps: string[];
-  glowStickColor: {
-    left: GlowStickColorType;
-    right: GlowStickColorType;
-  };
-  photoAlbums: {
-    title: string;
-  }[];
-  positionsHistory: {
-    position: PositionType;
-    singleNumber: string;
-  }[];
-  shouldShowPositionCounter: boolean;
-  positionsCounter: {
-    center: number;
-    fukujin: number;
-    selected: number;
-    under: number;
-  };
-  gallery: string[];
-}
-
-export const MemberPage = ({
-  name,
-  names,
-  profileImage,
-  sites,
-  join,
-  graduation,
-  birthday,
-  height,
-  bloodType,
-  origin,
-  units,
-  corps,
-  photoAlbums,
-  shouldShowPositionCounter,
-  positionsHistory,
-  positionsCounter,
-  gallery,
-}: MemberPageProps) => {
-  useScrollRestoration();
+export const MemberPage: React.FC<MemberPageProps> = props => {
+  const {
+    name,
+    names,
+    profileImage,
+    sites,
+    join,
+    graduation,
+    birthday,
+    height,
+    bloodType,
+    origin,
+    units,
+    corps,
+    photoAlbums,
+    shouldShowPositionCounter,
+    positionsHistory,
+    positionsCounter,
+    gallery,
+  } = props;
   const { language } = useAppContext();
+  const { Translation } = useTranslations();
   const theme = useAppTheme();
+  const { formatDate } = useIntl();
+
+  useScrollRestoration();
 
   return (
     <PageContent title={language !== 'en' ? names.ja : names.en} showBackButton>
@@ -97,7 +58,7 @@ export const MemberPage = ({
             ? names.en
             : names.ja}
         </Typography>
-        <TextDivider text={<Message text="profile" />} />
+        <TextDivider text={<Translation text="profile" />} />
         <div
           css={css`
             display: flex;
@@ -131,25 +92,20 @@ export const MemberPage = ({
             `}
           >
             <Typography variant="h7" element="span">
-              <Message text="join" />
+              <Translation text="join" />
             </Typography>
             <Typography variant="h7" element="span">
-              <Message text={'join: ' + join} />{' '}
-              {graduation.isGraduated ? <Message text="graduate" /> : null}
+              <Translation text={('join: ' + join) as any} />{' '}
+              {graduation.isGraduated ? <Translation text="graduate" /> : null}
             </Typography>
             <Typography variant="h7" element="span">
-              <Message text="birthday" />
+              <Translation text="birthday" />
             </Typography>
             <Typography variant="h7" element="span">
-              <FormattedDate
-                value={birthday}
-                year="numeric"
-                month="short"
-                day="numeric"
-              />
+              {formatDate(birthday)}
             </Typography>
             <Typography variant="h7" element="span">
-              <Message text="height" />
+              <Translation text="height" />
             </Typography>
             <Typography
               variant="h7"
@@ -161,21 +117,21 @@ export const MemberPage = ({
               {height}cm
             </Typography>
             <Typography variant="h7" element="span">
-              <Message text="blood type" />
+              <Translation text="blood type" />
             </Typography>
             <Typography variant="h7" element="span">
-              <Message text={bloodType} />
+              {bloodType}
             </Typography>
             <Typography variant="h7" element="span">
-              <Message text="birthplace" />
+              <Translation text="birthplace" />
             </Typography>
             <Typography variant="h7" element="span">
-              <Message text={origin} />
+              <Translation text={origin as any} />
             </Typography>
             {units.length > 0 ? (
               <React.Fragment>
                 <Typography variant="h7" element="span">
-                  <Message text="units" />
+                  <Translation text="units" />
                 </Typography>
                 <Typography variant="h7" element="span">
                   <LocalizedList list={units} />
@@ -185,7 +141,7 @@ export const MemberPage = ({
             {corps.length > 0 ? (
               <React.Fragment>
                 <Typography variant="h7" element="span">
-                  <Message text="corps" />
+                  <Translation text="corps" />
                 </Typography>
                 <Typography variant="h7" element="span">
                   <LocalizedList list={corps} />
@@ -204,7 +160,7 @@ export const MemberPage = ({
                 text-align: center;
               `}
             >
-              <Message text="websites" />
+              <Translation text="websites" />
             </Typography>
             <div
               css={css`
@@ -226,7 +182,7 @@ export const MemberPage = ({
                   `}
                 >
                   <a href={site.url} target="_blank" rel="noopener noreferrer">
-                    <Message text={site.title} />
+                    <Translation text={site.title as any} />
                   </a>
                 </Typography>
               ))}
@@ -243,7 +199,7 @@ export const MemberPage = ({
                 text-align: center;
               `}
             >
-              <Message text="photo albums" />
+              <Translation text="photo albums" />
             </Typography>
             <div
               css={css`
@@ -267,7 +223,7 @@ export const MemberPage = ({
         ) : null}
         {positionsHistory.length > 0 ? (
           <React.Fragment>
-            <TextDivider text={<Message text="position history" />} />
+            <TextDivider text={<Translation text="position history" />} />
             <div
               css={css`
                 display: flex;
@@ -344,7 +300,7 @@ export const MemberPage = ({
                         margin-top: 0.3em;
                       `}
                     >
-                      <Message text="center" />
+                      <Translation text="center" />
                     </Typography>
                   </div>
                   <div
@@ -368,7 +324,7 @@ export const MemberPage = ({
                         margin-top: 0.3em;
                       `}
                     >
-                      <Message text="fukujin" />
+                      <Translation text="fukujin" />
                     </Typography>
                   </div>
                   <div
@@ -392,7 +348,7 @@ export const MemberPage = ({
                         margin-top: 0.3em;
                       `}
                     >
-                      <Message text="selected" />
+                      <Translation text="selected" />
                     </Typography>
                   </div>
                   <div
@@ -416,7 +372,7 @@ export const MemberPage = ({
                         margin-top: 0.3em;
                       `}
                     >
-                      <Message text="under" />
+                      <Translation text="under" />
                     </Typography>
                   </div>
                 </div>
@@ -426,7 +382,7 @@ export const MemberPage = ({
         ) : null}
         {gallery.length > 0 ? (
           <React.Fragment>
-            <TextDivider text={<Message text="gallery" />} />
+            <TextDivider text={<Translation text="gallery" />} />
             <div
               css={css`
                 display: grid;

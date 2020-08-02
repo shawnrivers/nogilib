@@ -60,7 +60,34 @@ interface MemberData {
   };
 }
 
-const MemberPageContainer = ({ data: { membersJson } }: MemberData) => {
+export type MemberPageProps = {
+  name: MemberResult['name'];
+  names: {
+    ja: string;
+    en: string;
+    furigana: string;
+  };
+  profileImage: MemberResult['profileImage'];
+  sites: MemberResult['sites'];
+  join: MemberResult['join'];
+  graduation: Pick<MemberResult['graduation'], 'isGraduated'>;
+  birthday: MemberResult['birthday'];
+  height: MemberResult['height'];
+  bloodType: MemberResult['bloodType'];
+  origin: MemberResult['origin'];
+  units: string[];
+  corps: string[];
+  glowStickColor: MemberResult['glowStickColor'];
+  photoAlbums: MemberResult['photoAlbums'];
+  positionsHistory: MemberResult['positionsHistory'];
+  shouldShowPositionCounter: boolean;
+  positionsCounter: MemberResult['positionsCounter'];
+  gallery: string[];
+};
+
+const MemberPageContainer: React.FC<MemberData> = ({
+  data: { membersJson },
+}) => {
   const names = React.useMemo(
     () => ({
       ja:

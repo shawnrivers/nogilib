@@ -1,4 +1,4 @@
-const translations = {
+const dictionary = {
   '755': {
     en: '755',
     ja: '755',
@@ -111,6 +111,11 @@ const translations = {
   },
   track: {
     en: 'track',
+    ja: '収録曲',
+    zh: '收录曲',
+  },
+  tracks: {
+    en: 'tracks',
     ja: '収録曲',
     zh: '收录曲',
   },
@@ -367,12 +372,12 @@ const translations = {
   'show all': {
     en: 'show all',
     ja: 'すべて表示',
-    zh: '查看全部',
+    zh: '查看全部结果',
   },
   'show less': {
     en: 'show less',
-    ja: '3つまで表示',
-    zh: '只显示3个结果',
+    ja: '少なく表示',
+    zh: '查看部分结果',
   },
   東京都: {
     en: 'Tokyo',
@@ -706,13 +711,55 @@ const translations = {
     ja: 'オンラインサロン',
     zh: '线上社区',
   },
+  all: {
+    en: 'all',
+    ja: 'すべて',
+    zh: '全部',
+  },
+  artwork: {
+    en: 'artwork',
+    ja: 'ジャケット写真',
+    zh: '唱片封面',
+  },
+  artworks: {
+    en: 'artworks',
+    ja: 'ジャケット写真',
+    zh: '唱片封面',
+  },
+  discography: {
+    en: 'discography',
+    ja: 'ディスコグラフィ',
+    zh: '唱片',
+  },
+  current: {
+    en: 'current',
+    ja: '現役',
+    zh: '现役',
+  },
+  cd: {
+    en: 'cd',
+    ja: 'cd',
+    zh: '唱片',
+  },
+  cds: {
+    en: 'cds',
+    ja: 'cds',
+    zh: '唱片',
+  },
+  info: {
+    en: 'info',
+    ja: 'info',
+    zh: '简介',
+  },
 };
 
-const en: Record<keyof typeof translations, string> = {} as any;
-const ja: Record<keyof typeof translations, string> = {} as any;
-const zh: Record<keyof typeof translations, string> = {} as any;
+export type DictionaryKey = keyof typeof dictionary;
 
-for (const [key, value] of Object.entries(translations)) {
+const en: Record<DictionaryKey, string> = {} as any;
+const ja: Record<DictionaryKey, string> = {} as any;
+const zh: Record<DictionaryKey, string> = {} as any;
+
+for (const [key, value] of Object.entries(dictionary)) {
   Object.assign(en, { [key]: value.en });
   Object.assign(ja, { [key]: value.ja });
   Object.assign(zh, { [key]: value.zh });

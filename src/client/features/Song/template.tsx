@@ -2,11 +2,8 @@
 import { jsx, css } from '@emotion/core';
 import styled from '@emotion/styled';
 import * as React from 'react';
-import { injectIntl } from 'react-intl';
 import { LocalizedList } from 'client/components/atoms/locales/LocalizedList';
 import { LocalizedNumber } from 'client/components/atoms/locales/LocalizedNumber';
-import { Message } from 'client/components/atoms/Message';
-import { Language } from 'client/utils/constants';
 import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
 import { SongType } from 'server/actors/Songs/constants/songType';
 import { KOJIHARU_IMAGE_SRC } from 'server/constants/paths';
@@ -19,6 +16,8 @@ import { GridArtworkImage } from 'client/components/atoms/image/GirdArtworkImage
 import { TextDivider } from 'client/components/atoms/dividers/TextDivider';
 import { MemberCard } from 'client/components/molecules/card/MemberCard';
 import { getMemberUrl } from 'client/utils/urls';
+import { useTranslations } from 'client/hooks/useTranslations';
+import { useAppContext } from 'client/hooks/useAppContext';
 
 type StyledComponentWithThemeProps = {
   theme: Theme;
@@ -33,48 +32,45 @@ const RowContainer = styled.div<StyledComponentWithThemeProps>`
   margin-top: 1em;
 `;
 
-const PerformersTag = injectIntl(
-  ({
-    singleNumber,
-    tagName,
-    intl: { locale },
-  }: {
-    singleNumber: string;
-    tagName: string;
-    intl: any;
-  }) => {
-    if (tagName === '') {
-      return null;
-    }
+const PerformersTag: React.FC<{
+  singleNumber: string;
+  tagName: string;
+}> = props => {
+  const { singleNumber, tagName } = props;
+  const { Translation } = useTranslations();
+  const { language } = useAppContext();
 
-    if (tagName.includes('generation')) {
-      return (
-        <Hashtag>
-          <Message text={tagName} />
-        </Hashtag>
-      );
-    }
-
-    if (tagName === 'selected' || tagName === 'under') {
-      return locale === Language.En ? (
-        <Hashtag>
-          <LocalizedNumber num={singleNumber} type="cd" />{' '}
-          <Message text="single" /> <Message text={tagName} />{' '}
-          <Message text="members" />
-        </Hashtag>
-      ) : (
-        <Hashtag>
-          <LocalizedNumber num={singleNumber} type="cd" />
-          <Message text="single" />
-          <Message text={tagName} />
-          <Message text="members" />
-        </Hashtag>
-      );
-    }
-
-    return <Hashtag>{tagName}</Hashtag>;
+  if (tagName === '') {
+    return null;
   }
-);
+
+  if (tagName.includes('generation')) {
+    return (
+      <Hashtag>
+        <Translation text={tagName as any} />
+      </Hashtag>
+    );
+  }
+
+  if (tagName === 'selected' || tagName === 'under') {
+    return language === 'en' ? (
+      <Hashtag>
+        <LocalizedNumber num={singleNumber} type="cd" />{' '}
+        <Translation text="single" /> <Translation text={tagName} />{' '}
+        <Translation text="members" />
+      </Hashtag>
+    ) : (
+      <Hashtag>
+        <LocalizedNumber num={singleNumber} type="cd" />
+        <Translation text="single" />
+        <Translation text={tagName} />
+        <Translation text="members" />
+      </Hashtag>
+    );
+  }
+
+  return <Hashtag>{tagName}</Hashtag>;
+};
 
 type SongPerformerType = {
   name: string;
@@ -120,6 +116,7 @@ export const SongPage: React.FC<SongPageProps> = ({
 }) => {
   useScrollRestoration();
   const theme = useAppTheme();
+  const { Translation } = useTranslations();
 
   return (
     <PageContent title={title} showBackButton>
@@ -135,13 +132,13 @@ export const SongPage: React.FC<SongPageProps> = ({
           `}
         >
           <Hashtag>
-            <Message text={type} />
+            <Translation text={type as any} />
           </Hashtag>
           {songTags.map((tag, index) => (
             <Hashtag key={index}>{tag}</Hashtag>
           ))}
         </Typography>
-        <TextDivider text={<Message text="info" />} />
+        <TextDivider text={<Translation text="info" />} />
         <div
           css={css`
             display: flex;
@@ -187,7 +184,7 @@ export const SongPage: React.FC<SongPageProps> = ({
                       text-transform: capitalize;
                     `}
                   >
-                    <Message text="lyrics" />
+                    <Translation text="lyrics" />
                   </Typography>
                   <Typography variant="h7" element="span">
                     <LocalizedList list={creators.lyrics} />
@@ -203,7 +200,7 @@ export const SongPage: React.FC<SongPageProps> = ({
                       text-transform: capitalize;
                     `}
                   >
-                    <Message text="compose" />
+                    <Translation text="compose" />
                   </Typography>
                   <Typography variant="h7" element="span">
                     <LocalizedList list={creators.compose} />
@@ -219,7 +216,7 @@ export const SongPage: React.FC<SongPageProps> = ({
                       text-transform: capitalize;
                     `}
                   >
-                    <Message text="arrange" />
+                    <Translation text="arrange" />
                   </Typography>
                   <Typography variant="h7" element="span">
                     <LocalizedList list={creators.arrange} />
@@ -235,7 +232,7 @@ export const SongPage: React.FC<SongPageProps> = ({
                       text-transform: capitalize;
                     `}
                   >
-                    <Message text="direct" />
+                    <Translation text="direct" />
                   </Typography>
                   <Typography variant="h7" element="span">
                     <LocalizedList list={creators.direct} />
@@ -245,7 +242,7 @@ export const SongPage: React.FC<SongPageProps> = ({
             </div>
           ) : null}
         </div>
-        <TextDivider text={<Message text="performers" />} />
+        <TextDivider text={<Translation text="performers" />} />
         <div>
           {formation.length > 0 ? (
             <section>
