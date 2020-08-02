@@ -125,17 +125,28 @@ export const SongPage: React.FC<SongPageProps> = ({
           variant="body1"
           css={css`
             margin-top: 0.5em;
-
-            & > *:not(:first-child) {
-              margin-left: 0.4em;
-            }
           `}
         >
-          <Hashtag>
+          <Hashtag
+            css={css`
+              &:not(:first-of-type) {
+                margin-left: 0.4em;
+              }
+            `}
+          >
             <Translation text={type as any} />
           </Hashtag>
           {songTags.map((tag, index) => (
-            <Hashtag key={index}>{tag}</Hashtag>
+            <Hashtag
+              key={index}
+              css={css`
+                &:not(:first-of-type) {
+                  margin-left: 0.4em;
+                }
+              `}
+            >
+              {tag}
+            </Hashtag>
           ))}
         </Typography>
         <TextDivider text={<Translation text="info" />} />
@@ -280,6 +291,7 @@ export const SongPage: React.FC<SongPageProps> = ({
 
                             return (
                               <MemberCard
+                                key={member.name}
                                 name={
                                   member.nameNotations.lastName +
                                   member.nameNotations.firstName
@@ -294,6 +306,7 @@ export const SongPage: React.FC<SongPageProps> = ({
                           } else {
                             return (
                               <MemberCard
+                                key={'小嶋陽菜'}
                                 name={'小嶋陽菜'}
                                 profileImage={KOJIHARU_IMAGE_SRC}
                                 textSize="em2"
@@ -313,6 +326,7 @@ export const SongPage: React.FC<SongPageProps> = ({
                         const member = members[memberName];
                         return (
                           <MemberCard
+                            key={member.name}
                             name={
                               member.nameNotations.lastName +
                               member.nameNotations.firstName
@@ -327,6 +341,7 @@ export const SongPage: React.FC<SongPageProps> = ({
                       } else {
                         return (
                           <MemberCard
+                            key={'小嶋陽菜'}
                             name={'小嶋陽菜'}
                             profileImage={KOJIHARU_IMAGE_SRC}
                             textSize="em2"

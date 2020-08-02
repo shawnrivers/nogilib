@@ -27,7 +27,13 @@ const SelectionItem: React.FC<
   const { onClick, isSelected, children, ...buttonProps } = props;
 
   return (
-    <li>
+    <li
+      css={css`
+        &:not(:first-of-type) {
+          margin-top: 0.2em;
+        }
+      `}
+    >
       <button
         onClick={onClick}
         disabled={isSelected}
@@ -128,10 +134,6 @@ const Settings: React.FC = () => {
           <ul
             css={css`
               margin-top: ${commonStyles.spacing.xs};
-
-              & > *:not(:first-child) {
-                margin-top: 0.2em;
-              }
             `}
           >
             <SelectionItem
@@ -165,10 +167,6 @@ const Settings: React.FC = () => {
           <ul
             css={css`
               margin-top: ${commonStyles.spacing.xs};
-
-              & > *:not(:first-child) {
-                margin-top: 0.2em;
-              }
             `}
           >
             <SelectionItem

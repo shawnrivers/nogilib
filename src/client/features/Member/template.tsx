@@ -44,12 +44,17 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
   useScrollRestoration();
 
   return (
-    <PageContent title={language !== 'en' ? names.ja : names.en} showBackButton>
+    <PageContent
+      title={language !== 'en' ? names.ja : names.en}
+      titleTextTransform="capitalize"
+      showBackButton
+    >
       <React.Fragment>
         <Typography
           variant="body1"
           css={css`
             vertical-align: center;
+            text-transform: capitalize;
           `}
         >
           {language === 'ja'
@@ -176,7 +181,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                   element="span"
                   variant="body2"
                   css={css`
-                    &:not(:first-child) {
+                    &:not(:first-of-type) {
                       margin-left: 1em;
                     }
                   `}
