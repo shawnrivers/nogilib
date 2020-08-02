@@ -18,7 +18,7 @@ type HorizontalCardProps = CardProps & {
 
 export const HorizontalCard: React.FC<HorizontalCardProps> = props => {
   return (
-    <Card borderRadius="m" padding="xs" to={props.to}>
+    <Card borderRadius="s" padding="xxs" to={props.to}>
       <div
         css={css`
           display: grid;

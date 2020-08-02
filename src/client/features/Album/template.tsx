@@ -76,9 +76,9 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
                     member.nameNotations.firstName
                   }
                   to={getMemberUrl(member.name)}
-                  surfaceColor="standard"
-                  borderRadius="m"
-                  padding="m"
+                  textSize="em2"
+                  borderRadius="s"
+                  padding="s"
                 />
               ))}
             </div>

@@ -72,9 +72,8 @@ export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
                   number={cd.number}
                   type={cd.type}
                   title={cd.title}
-                  surfaceColor="standard"
-                  borderRadius="m"
-                  padding="m"
+                  borderRadius="s"
+                  padding="s"
                 />
               ))}
             </div>
