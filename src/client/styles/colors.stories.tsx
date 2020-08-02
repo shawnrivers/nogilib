@@ -36,7 +36,7 @@ export const All: React.FC = () => {
       Dark: 'dark',
       Light: 'light',
     },
-    'light'
+    'dark'
   );
 
   React.useEffect(() => setThemeKey(themeKey), [themeKey, setThemeKey]);

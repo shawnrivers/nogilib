@@ -26,7 +26,7 @@ export const POSITION_STYLES: Record<
   fukujin: {
     text: 'F',
     backgroundColor: 'secondary',
-    backgroundColorVariant: 'variant0',
+    backgroundColorVariant: 'variant1',
     foregroundColor: 'onSecondary',
     textColorVariant: 'standard',
     bold: true,

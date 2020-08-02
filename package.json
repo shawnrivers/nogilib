@@ -16,8 +16,6 @@
     "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
     "lint:fix": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --fix",
     "format": "prettier 'src/**/*.{ts,tsx}' --write",
-    "stylelint": "stylelint '**/*.scss'",
-    "stylelint:fix": "stylelint '**/*.scss' --fix",
     "predeploy": "yarn generate-data && gatsby build --prefix-paths",
     "deploy": "gh-pages -d public -m 'chore: update [skip ci]'",
     "test": "jest",
@@ -38,9 +36,6 @@
       "prettier --write",
       "eslint --fix",
       "yarn generate-data"
-    ],
-    "*.scss": [
-      "stylelint --fix"
     ]
   },
   "husky": {
@@ -64,7 +59,6 @@
     "gatsby-plugin-offline": "^3.2.9",
     "gatsby-plugin-react-helmet": "^3.3.4",
     "gatsby-plugin-resolve-src": "^2.1.0",
-    "gatsby-plugin-sass": "^2.3.4",
     "gatsby-plugin-sharp": "^2.6.11",
     "gatsby-plugin-typescript": "^2.4.4",
     "gatsby-plugin-web-font-loader": "^1.0.4",
@@ -72,7 +66,6 @@
     "gatsby-transformer-json": "^2.4.5",
     "gatsby-transformer-sharp": "^2.5.5",
     "node": "^14.4.0",
-    "node-sass": "^4.14.1",
     "query-string": "^6.13.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -108,11 +101,6 @@
     "jest": "^26.0.1",
     "lint-staged": "^10.2.9",
     "prettier": "^2.0.5",
-    "prettier-stylelint": "^0.4.2",
-    "stylelint": "^13.6.0",
-    "stylelint-config-recommended": "^3.0.0",
-    "stylelint-order": "^4.1.0",
-    "stylelint-scss": "^3.17.2",
     "ts-jest": "^26.1.0",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.5"

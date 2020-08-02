@@ -2,7 +2,7 @@
 import { jsx, css } from '@emotion/core';
 import * as React from 'react';
 import { SearchIcon } from 'client/components/atoms/icons/SearchIcon';
-import { SearchResultCategory } from 'client/features/Search/components/molecules/SearchResultCategory';
+import { SearchResultCategory } from 'client/features/Search/components/SearchResultCategory';
 import { Typography } from 'client/components/atoms/Typography';
 import { PageContent } from 'client/components/templates/Page';
 import { useAppTheme } from 'client/styles/tokens';
