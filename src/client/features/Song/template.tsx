@@ -16,7 +16,7 @@ import { Typography } from 'client/components/atoms/Typography';
 import { Hashtag } from 'client/components/atoms/Hashtag';
 import { Theme, useAppTheme } from 'client/styles/tokens';
 import { GridArtworkImage } from 'client/components/atoms/image/GirdArtworkImage';
-import { TextDivider } from 'client/components/atoms/TextDivider';
+import { TextDivider } from 'client/components/atoms/dividers/TextDivider';
 import { MemberCard } from 'client/components/molecules/card/MemberCard';
 import { getMemberUrl } from 'client/utils/urls';
 
@@ -122,33 +122,25 @@ export const SongPage: React.FC<SongPageProps> = ({
   const theme = useAppTheme();
 
   return (
-    <PageContent
-      header={
-        <React.Fragment>
-          <Typography variant="h2" element="h1">
-            {title}
-          </Typography>
-          <Typography
-            variant="body1"
-            css={css`
-              margin-top: 0.5em;
-
-              & > *:not(:first-child) {
-                margin-left: 0.4em;
-              }
-            `}
-          >
-            <Hashtag>
-              <Message text={type} />
-            </Hashtag>
-            {songTags.map((tag, index) => (
-              <Hashtag key={index}>{tag}</Hashtag>
-            ))}
-          </Typography>
-        </React.Fragment>
-      }
-    >
+    <PageContent title={title} showBackButton>
       <React.Fragment>
+        <Typography
+          variant="body1"
+          css={css`
+            margin-top: 0.5em;
+
+            & > *:not(:first-child) {
+              margin-left: 0.4em;
+            }
+          `}
+        >
+          <Hashtag>
+            <Message text={type} />
+          </Hashtag>
+          {songTags.map((tag, index) => (
+            <Hashtag key={index}>{tag}</Hashtag>
+          ))}
+        </Typography>
         <TextDivider text={<Message text="info" />} />
         <div
           css={css`

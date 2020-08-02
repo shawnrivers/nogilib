@@ -2,11 +2,10 @@
 import { css, jsx } from '@emotion/core';
 import * as React from 'react';
 import { Message } from 'client/components/atoms/Message';
-import { Typography } from 'client/components/atoms/Typography';
 import { TextSwitchLinkGroup } from 'client/components/molecules/buttonGroup/TextSwitchLinkGroup';
 import { ArtworkCard } from 'client/components/molecules/card/ArtworkCard';
 import { PageContent } from 'client/components/templates/Page';
-import { TextDivider } from 'client/components/atoms/TextDivider';
+import { TextDivider } from 'client/components/atoms/dividers/TextDivider';
 import { commonStyles } from 'client/styles/tokens';
 import {
   DiscographyUrlFilter,
@@ -24,47 +23,32 @@ export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
   const { currentFilter, cdGroupsByYear } = props;
 
   return (
-    <PageContent
-      header={
-        <React.Fragment>
-          <Typography
-            variant="h1"
-            css={css`
-              margin-bottom: 0.3em;
-              word-break: break-word;
-              line-height: 1;
-            `}
-          >
-            DISCOGRAPHY
-          </Typography>
-          <TextSwitchLinkGroup
-            variant="h2"
-            textOn="onBackground"
-            links={[
-              {
-                text: <Message text="all" />,
-                isSwitchedOn: currentFilter === 'all',
-                to: getDiscographyUrl(),
-              },
-              {
-                text: <Message text="singles" />,
-                isSwitchedOn: currentFilter === 'singles',
-                to: getDiscographyUrl('singles'),
-              },
-              {
-                text: <Message text="albums" />,
-                isSwitchedOn: currentFilter === 'albums',
-                to: getDiscographyUrl('albums'),
-              },
-            ]}
-            css={css`
-              text-transform: capitalize;
-            `}
-          />
-        </React.Fragment>
-      }
-    >
+    <PageContent title="discography">
       <React.Fragment>
+        <TextSwitchLinkGroup
+          variant="h2"
+          textOn="onBackground"
+          links={[
+            {
+              text: <Message text="all" />,
+              isSwitchedOn: currentFilter === 'all',
+              to: getDiscographyUrl(),
+            },
+            {
+              text: <Message text="singles" />,
+              isSwitchedOn: currentFilter === 'singles',
+              to: getDiscographyUrl('singles'),
+            },
+            {
+              text: <Message text="albums" />,
+              isSwitchedOn: currentFilter === 'albums',
+              to: getDiscographyUrl('albums'),
+            },
+          ]}
+          css={css`
+            text-transform: capitalize;
+          `}
+        />
         {cdGroupsByYear.map(cdGroup => (
           <div key={cdGroup.year}>
             <TextDivider text={cdGroup.year} />

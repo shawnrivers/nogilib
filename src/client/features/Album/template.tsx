@@ -7,7 +7,7 @@ import { commonStyles } from 'client/styles/tokens';
 import { toCdNumber } from 'utils/strings';
 import { Message } from 'client/components/atoms/Message';
 import { GridArtworkImage } from 'client/components/atoms/image/GirdArtworkImage';
-import { TextDivider } from 'client/components/atoms/TextDivider';
+import { TextDivider } from 'client/components/atoms/dividers/TextDivider';
 import { AlbumPageProps } from 'client/features/Album/container';
 import { Card } from 'client/components/atoms/Card';
 import { MemberCard } from 'client/components/molecules/card/MemberCard';
@@ -16,30 +16,20 @@ import { getMemberUrl, getSongUrl } from 'client/utils/urls';
 export const AlbumPage: React.FC<AlbumPageProps> = props => {
   return (
     <PageContent
-      header={
-        <React.Fragment>
-          <Typography
-            variant="h4"
-            textColor={{ on: 'onBackground', variant: 'variant0' }}
-          >
-            {toCdNumber(props.number)} {props.type}
-          </Typography>
-          <Typography variant="h2" element="h1">
-            {props.title}
-          </Typography>
-          <Typography
-            variant="body1"
-            css={css`
-              margin-top: 0.4em;
-              text-transform: capitalize;
-            `}
-          >
-            <Message text="release" />: {props.release}
-          </Typography>
-        </React.Fragment>
-      }
+      title={props.title}
+      subtitle={`${toCdNumber(props.number)} ${props.type}`}
+      showBackButton
     >
       <React.Fragment>
+        <Typography
+          variant="body1"
+          css={css`
+            margin-top: 0.4em;
+            text-transform: capitalize;
+          `}
+        >
+          <Message text="release" />: {props.release}
+        </Typography>
         <TextDivider text={<Message text="tracks" />} />
         <div
           css={css`

@@ -43,15 +43,7 @@ export const Search = injectIntl(
     const theme = useAppTheme();
 
     return (
-      <PageContent
-        header={
-          <React.Fragment>
-            <Typography variant="h2" element="h1">
-              <Message text="search" />
-            </Typography>
-          </React.Fragment>
-        }
-      >
+      <PageContent title="search">
         <React.Fragment>
           <div
             css={css`

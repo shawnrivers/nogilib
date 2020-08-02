@@ -12,7 +12,7 @@ import { PositionType } from 'server/actors/Members/constants/position';
 import { PageContent } from 'client/components/templates/Page';
 import { Typography } from 'client/components/atoms/Typography';
 import { useAppContext } from 'client/hooks/useAppContext';
-import { TextDivider } from 'client/components/atoms/TextDivider';
+import { TextDivider } from 'client/components/atoms/dividers/TextDivider';
 import { useAppTheme } from 'client/styles/tokens';
 import { GridMemberImage } from 'client/components/atoms/image/GridMemberImage';
 
@@ -83,28 +83,20 @@ export const MemberPage = ({
   const theme = useAppTheme();
 
   return (
-    <PageContent
-      header={
-        <React.Fragment>
-          <Typography variant="h2" element="h1">
-            {language !== 'en' ? names.ja : names.en}
-          </Typography>
-          <Typography
-            variant="body1"
-            css={css`
-              vertical-align: center;
-            `}
-          >
-            {language === 'ja'
-              ? names.furigana
-              : language === 'zh'
-              ? names.en
-              : names.ja}
-          </Typography>
-        </React.Fragment>
-      }
-    >
+    <PageContent title={language !== 'en' ? names.ja : names.en} showBackButton>
       <React.Fragment>
+        <Typography
+          variant="body1"
+          css={css`
+            vertical-align: center;
+          `}
+        >
+          {language === 'ja'
+            ? names.furigana
+            : language === 'zh'
+            ? names.en
+            : names.ja}
+        </Typography>
         <TextDivider text={<Message text="profile" />} />
         <div
           css={css`

@@ -4,7 +4,7 @@ import * as React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'gatsby';
 import { CloseIcon } from 'client/components/atoms/icons/CloseIcon';
-import { useAppTheme } from 'client/styles/tokens';
+import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import {
   Typography,
   TypographyProps,
@@ -15,6 +15,7 @@ import {
   getSearchUrl,
 } from 'client/utils/urls';
 import { componentElevationKey } from 'client/styles/elevation';
+import { Divider } from 'client/components/atoms/dividers/Divider';
 
 const backgroundFade = {
   opened: { opacity: 1, transition: { duration: 0.2 } },
@@ -52,20 +53,6 @@ const NavigationItem: React.FC<
         {children}
       </Link>
     </Typography>
-  );
-};
-
-const Divider: React.FC = () => {
-  const theme = useAppTheme();
-
-  return (
-    <hr
-      css={css`
-        border: 1px solid ${theme.colors.theme.onSecondary.variant0};
-        margin: ${theme.spacing.l} auto;
-        width: 24px;
-      `}
-    />
   );
 };
 
@@ -152,7 +139,16 @@ export const useSidebar = () => {
                 Search
               </NavigationItem>
             </ul>
-            <Divider />
+            <Divider
+              lineColor={{
+                on: 'onSecondary',
+                variant: 'variant0',
+              }}
+              css={css`
+                margin: ${commonStyles.spacing.l} auto;
+                width: 24px;
+              `}
+            />
           </div>
         </motion.div>
       </>

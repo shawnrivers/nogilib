@@ -2,10 +2,9 @@
 import { css, jsx } from '@emotion/core';
 import * as React from 'react';
 import { Message } from 'client/components/atoms/Message';
-import { Typography } from 'client/components/atoms/Typography';
 import { TextSwitchLinkGroup } from 'client/components/molecules/buttonGroup/TextSwitchLinkGroup';
 import { PageContent } from 'client/components/templates/Page';
-import { TextDivider } from 'client/components/atoms/TextDivider';
+import { TextDivider } from 'client/components/atoms/dividers/TextDivider';
 import { MemberResult } from 'server/actors/Members/models';
 import { MemberCard } from 'client/components/molecules/card/MemberCard';
 import { commonStyles } from 'client/styles/tokens';
@@ -38,48 +37,32 @@ export const MembersPage: React.FC<MembersPageProps> = props => {
   const { currentFilter, memberGroupsByJoin } = props;
 
   return (
-    <PageContent
-      header={
-        <React.Fragment>
-          <Typography
-            variant="h1"
-            css={css`
-              margin-bottom: 0.3em;
-              word-break: break-word;
-              line-height: 1;
-              text-transform: uppercase;
-            `}
-          >
-            members
-          </Typography>
-          <TextSwitchLinkGroup
-            variant="h2"
-            textOn="onBackground"
-            links={[
-              {
-                text: <Message text="all" />,
-                isSwitchedOn: currentFilter === 'all',
-                to: getMembersUrl(),
-              },
-              {
-                text: <Message text="current" />,
-                isSwitchedOn: currentFilter === 'current',
-                to: getMembersUrl('current'),
-              },
-              {
-                text: <Message text="graduated" />,
-                isSwitchedOn: currentFilter === 'graduated',
-                to: getMembersUrl('graduated'),
-              },
-            ]}
-            css={css`
-              text-transform: capitalize;
-            `}
-          />
-        </React.Fragment>
-      }
-    >
+    <PageContent title="members">
       <React.Fragment>
+        <TextSwitchLinkGroup
+          variant="h2"
+          textOn="onBackground"
+          links={[
+            {
+              text: <Message text="all" />,
+              isSwitchedOn: currentFilter === 'all',
+              to: getMembersUrl(),
+            },
+            {
+              text: <Message text="current" />,
+              isSwitchedOn: currentFilter === 'current',
+              to: getMembersUrl('current'),
+            },
+            {
+              text: <Message text="graduated" />,
+              isSwitchedOn: currentFilter === 'graduated',
+              to: getMembersUrl('graduated'),
+            },
+          ]}
+          css={css`
+            text-transform: capitalize;
+          `}
+        />
         {memberGroupsByJoin.map(member => (
           <div key={member.join}>
             <TextDivider text={member.join} />
