@@ -1,10 +1,10 @@
 /**@jsx jsx */
 import { jsx, css } from '@emotion/core';
 import * as React from 'react';
-import { SearchResultCard } from 'client/features/Search/components/SearchResultCard';
 import { Typography } from 'client/components/atoms/Typography';
 import { useAppTheme } from 'client/styles/tokens';
 import { useTranslations } from 'client/hooks/useTranslations';
+import { HorizontalCard } from 'client/components/molecules/card/HorizontalCard';
 
 const DEFAULT_RESULT_COUNT = 4;
 
@@ -14,8 +14,7 @@ interface SearchResultCategoryProps {
     to: string;
     imgSrc: string;
     heading: string;
-    caption: string;
-    secondCaption?: string;
+    captions: string[];
   }[];
 }
 
@@ -55,24 +54,22 @@ export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props =
       >
         {results.slice(0, DEFAULT_RESULT_COUNT).map(result => (
           <li key={result.heading}>
-            <SearchResultCard
+            <HorizontalCard
               to={result.to}
-              imgSrc={result.imgSrc}
+              image={{ src: result.imgSrc, alt: result.heading }}
               title={result.heading}
-              caption={result.caption}
-              secondCaption={result.secondCaption}
+              tags={result.captions}
             />
           </li>
         ))}
         {showMore
           ? results.slice(DEFAULT_RESULT_COUNT, results.length).map(result => (
               <li key={result.heading}>
-                <SearchResultCard
+                <HorizontalCard
                   to={result.to}
-                  imgSrc={result.imgSrc}
+                  image={{ src: result.imgSrc, alt: result.heading }}
                   title={result.heading}
-                  caption={result.caption}
-                  secondCaption={result.secondCaption}
+                  tags={result.captions}
                 />
               </li>
             ))

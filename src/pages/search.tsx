@@ -99,7 +99,9 @@ export const SearchPageContainer: React.FC = () => {
           to: getMemberUrl(result.key),
           imgSrc: result.profileImage,
           heading: `${result.nameNotations.lastName} ${result.nameNotations.firstName}`,
-          caption: `${result.nameNotations.lastNameEn} ${result.nameNotations.firstNameEn}`,
+          captions: [
+            `${result.nameNotations.lastNameEn} ${result.nameNotations.firstNameEn}`,
+          ],
         });
       }
 
@@ -108,18 +110,18 @@ export const SearchPageContainer: React.FC = () => {
           to: getAlbumUrl(result.key),
           imgSrc: result.artwork.url,
           heading: result.title,
-          caption: `${toCdNumber(result.number)} ${result.cdType}`,
+          captions: [`${toCdNumber(result.number)} ${result.cdType}`],
         });
       }
 
       if (result.type === 'songs') {
-        let secondCaption = '';
+        const captions = [`${getTranslation(result.songType as any)}`];
 
         if (result.single.number !== '') {
-          secondCaption = `#${toCdNumber(result.single.number)} single`;
+          captions.push(`${toCdNumber(result.single.number)} single`);
         } else {
           if (result.album !== undefined) {
-            secondCaption = `#${toCdNumber(result.album.number)} album`;
+            captions.push(`${toCdNumber(result.album.number)} album`);
           }
         }
 
@@ -127,8 +129,7 @@ export const SearchPageContainer: React.FC = () => {
           to: getSongUrl(result.key),
           imgSrc: result.artwork,
           heading: result.title,
-          caption: `#${getTranslation(result.songType as any)}`,
-          secondCaption,
+          captions,
         });
       }
     }

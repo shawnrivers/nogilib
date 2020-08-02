@@ -8,10 +8,10 @@ import { toCdNumber } from 'utils/strings';
 import { GridArtworkImage } from 'client/components/atoms/image/GirdArtworkImage';
 import { TextDivider } from 'client/components/atoms/dividers/TextDivider';
 import { AlbumPageProps } from 'client/features/Album/container';
-import { Card } from 'client/components/atoms/Card';
 import { MemberCard } from 'client/components/molecules/card/MemberCard';
 import { getMemberUrl, getSongUrl } from 'client/utils/urls';
 import { useTranslations } from 'client/hooks/useTranslations';
+import { HorizontalCard } from 'client/components/molecules/card/HorizontalCard';
 
 export const AlbumPage: React.FC<AlbumPageProps> = props => {
   const { Translation } = useTranslations();
@@ -33,7 +33,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
           <Translation text="release" />: {props.release}
         </Typography>
         <TextDivider text={<Translation text="tracks" />} />
-        <div
+        <ul
           css={css`
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -42,47 +42,19 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
           `}
         >
           {props.tracks.map(track => (
-            <Card
-              key={track.key}
-              borderRadius="m"
-              padding="xs"
-              to={getSongUrl(track.key)}
-            >
-              <div
-                css={css`
-                  display: grid;
-                  grid-template-columns: 90px auto;
-                  grid-template-rows: auto;
-                  grid-gap: ${commonStyles.spacing.m};
-                  padding: ${commonStyles.spacing.xs};
-                  overflow: hidden;
-                `}
-              >
-                <GridArtworkImage src={track.artwork} alt={track.inCdType[0]} />
-                <div
-                  css={css`
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-evenly;
-                    flex-wrap: nowrap;
-                    overflow: hidden;
-                  `}
-                >
-                  <Typography variant="h7" element="p" bold ellipsis>
-                    {track.title}
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    textColor={{ on: 'onSurface', variant: 'variant1' }}
-                    ellipsis
-                  >
-                    #{track.type}
-                  </Typography>
-                </div>
-              </div>
-            </Card>
+            <li key={track.key}>
+              <HorizontalCard
+                to={getSongUrl(track.key)}
+                image={{
+                  src: track.artwork,
+                  alt: track.inCdType[0],
+                }}
+                title={track.title}
+                tags={[track.type]}
+              />
+            </li>
           ))}
-        </div>
+        </ul>
         {props.centers.length > 0 ? (
           <React.Fragment>
             <TextDivider text={<Translation text="center" />} />

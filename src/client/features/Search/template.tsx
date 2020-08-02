@@ -12,8 +12,7 @@ export type SearchResult = {
   to: string;
   imgSrc: string;
   heading: string;
-  caption: string;
-  secondCaption?: string;
+  captions: string[];
 };
 
 interface SearchProps {
