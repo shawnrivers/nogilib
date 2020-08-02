@@ -28,6 +28,16 @@ export type ElevationKey =
   | 23
   | 24;
 
+export const componentElevationKey: Record<
+  'navigationBar' | 'sidebar' | 'dropdown' | 'cardOnSurface',
+  ElevationKey
+> = {
+  cardOnSurface: 4,
+  navigationBar: 12,
+  dropdown: 16,
+  sidebar: 20,
+};
+
 const UMBRA_COLOR = 'rgba(0, 0, 0, 0.2)';
 const PENUMBRA_COLOR = 'rgba(0, 0, 0, 0.14)';
 const AMBIENT_COLOR = 'rgba(0, 0, 0, 0.12)';
@@ -118,109 +128,134 @@ const AMBIENT_SHADOW: Record<ElevationKey, string> = {
 
 export type Elevation = Record<
   ElevationKey,
-  { boxShadow: string; whiteOverlayTransparency: string }
+  { boxShadow: string; whiteOverlayTransparency: string; zIndex: number }
 >;
 
 export const ELEVATION_DARK: Elevation = {
   0: {
     boxShadow: `${UMBRA_SHADOW[0]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[0]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[0]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0)',
+    zIndex: 0,
   },
   1: {
     boxShadow: `${UMBRA_SHADOW[1]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[1]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[1]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.05)',
+    zIndex: 10,
   },
   2: {
     boxShadow: `${UMBRA_SHADOW[2]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[2]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[2]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.07)',
+    zIndex: 20,
   },
   3: {
     boxShadow: `${UMBRA_SHADOW[3]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[3]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[3]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.08)',
+    zIndex: 30,
   },
   4: {
     boxShadow: `${UMBRA_SHADOW[4]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[4]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[4]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.09)',
+    zIndex: 40,
   },
   5: {
     boxShadow: `${UMBRA_SHADOW[5]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[5]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[5]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.1)',
+    zIndex: 50,
   },
   6: {
     boxShadow: `${UMBRA_SHADOW[6]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[6]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[6]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.11)',
+    zIndex: 60,
   },
   7: {
     boxShadow: `${UMBRA_SHADOW[7]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[7]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[7]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.11)',
+    zIndex: 70,
   },
   8: {
     boxShadow: `${UMBRA_SHADOW[8]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[8]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[8]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.12)',
+    zIndex: 80,
   },
   9: {
     boxShadow: `${UMBRA_SHADOW[9]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[9]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[9]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.12)',
+    zIndex: 90,
   },
   10: {
     boxShadow: `${UMBRA_SHADOW[10]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[10]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[10]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.13)',
+    zIndex: 100,
   },
   11: {
     boxShadow: `${UMBRA_SHADOW[11]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[11]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[11]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.13)',
+    zIndex: 110,
   },
   12: {
     boxShadow: `${UMBRA_SHADOW[12]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[12]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[12]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.14)',
+    zIndex: 120,
   },
   13: {
     boxShadow: `${UMBRA_SHADOW[13]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[13]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[13]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.14)',
+    zIndex: 130,
   },
   14: {
     boxShadow: `${UMBRA_SHADOW[14]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[14]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[14]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.14)',
+    zIndex: 140,
   },
   15: {
     boxShadow: `${UMBRA_SHADOW[15]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[15]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[15]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.14)',
+    zIndex: 150,
   },
   16: {
     boxShadow: `${UMBRA_SHADOW[16]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[16]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[16]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.15)',
+    zIndex: 160,
   },
   17: {
     boxShadow: `${UMBRA_SHADOW[17]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[17]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[17]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.15)',
+    zIndex: 170,
   },
   18: {
     boxShadow: `${UMBRA_SHADOW[18]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[18]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[18]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.15)',
+    zIndex: 180,
   },
   19: {
     boxShadow: `${UMBRA_SHADOW[19]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[19]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[19]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.15)',
+    zIndex: 190,
   },
   20: {
     boxShadow: `${UMBRA_SHADOW[20]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[20]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[20]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.15)',
+    zIndex: 200,
   },
   21: {
     boxShadow: `${UMBRA_SHADOW[21]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[21]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[21]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.15)',
+    zIndex: 210,
   },
   22: {
     boxShadow: `${UMBRA_SHADOW[22]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[22]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[22]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.15)',
+    zIndex: 220,
   },
   23: {
     boxShadow: `${UMBRA_SHADOW[23]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[23]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[23]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.15)',
+    zIndex: 230,
   },
   24: {
     boxShadow: `${UMBRA_SHADOW[24]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[24]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[24]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'rgba(255, 255, 255, 0.16)',
+    zIndex: 240,
   },
 };
 
@@ -228,101 +263,126 @@ export const ELEVATION_LIGHT: Elevation = {
   0: {
     boxShadow: `${UMBRA_SHADOW[0]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[0]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[0]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 0,
   },
   1: {
     boxShadow: `${UMBRA_SHADOW[1]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[1]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[1]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 10,
   },
   2: {
     boxShadow: `${UMBRA_SHADOW[2]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[2]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[2]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 20,
   },
   3: {
     boxShadow: `${UMBRA_SHADOW[3]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[3]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[3]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 30,
   },
   4: {
     boxShadow: `${UMBRA_SHADOW[4]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[4]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[4]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 40,
   },
   5: {
     boxShadow: `${UMBRA_SHADOW[5]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[5]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[5]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 50,
   },
   6: {
     boxShadow: `${UMBRA_SHADOW[6]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[6]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[6]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 60,
   },
   7: {
     boxShadow: `${UMBRA_SHADOW[7]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[7]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[7]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 70,
   },
   8: {
     boxShadow: `${UMBRA_SHADOW[8]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[8]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[8]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 80,
   },
   9: {
     boxShadow: `${UMBRA_SHADOW[9]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[9]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[9]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 90,
   },
   10: {
     boxShadow: `${UMBRA_SHADOW[10]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[10]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[10]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 100,
   },
   11: {
     boxShadow: `${UMBRA_SHADOW[11]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[11]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[11]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 110,
   },
   12: {
     boxShadow: `${UMBRA_SHADOW[12]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[12]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[12]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 120,
   },
   13: {
     boxShadow: `${UMBRA_SHADOW[13]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[13]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[13]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 130,
   },
   14: {
     boxShadow: `${UMBRA_SHADOW[14]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[14]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[14]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 140,
   },
   15: {
     boxShadow: `${UMBRA_SHADOW[15]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[15]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[15]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 150,
   },
   16: {
     boxShadow: `${UMBRA_SHADOW[16]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[16]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[16]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 160,
   },
   17: {
     boxShadow: `${UMBRA_SHADOW[17]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[17]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[17]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 170,
   },
   18: {
     boxShadow: `${UMBRA_SHADOW[18]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[18]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[18]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 180,
   },
   19: {
     boxShadow: `${UMBRA_SHADOW[19]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[19]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[19]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 190,
   },
   20: {
     boxShadow: `${UMBRA_SHADOW[20]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[20]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[20]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 200,
   },
   21: {
     boxShadow: `${UMBRA_SHADOW[21]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[21]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[21]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 210,
   },
   22: {
     boxShadow: `${UMBRA_SHADOW[22]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[22]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[22]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 220,
   },
   23: {
     boxShadow: `${UMBRA_SHADOW[23]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[23]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[23]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 230,
   },
   24: {
     boxShadow: `${UMBRA_SHADOW[24]} ${UMBRA_COLOR}, ${PENUMBRA_SHADOW[24]} ${PENUMBRA_COLOR}, ${AMBIENT_SHADOW[24]} ${AMBIENT_COLOR}`,
     whiteOverlayTransparency: 'none',
+    zIndex: 240,
   },
 };

@@ -14,6 +14,7 @@ import {
   getMembersUrl,
   getSearchUrl,
 } from 'client/utils/urls';
+import { componentElevationKey } from 'client/styles/elevation';
 
 const backgroundFade = {
   opened: { opacity: 1, transition: { duration: 0.2 } },
@@ -92,7 +93,7 @@ export const useSidebar = () => {
             pointer-events: none;
             position: fixed;
             width: 100vw;
-            z-index: 22;
+            z-index: ${theme.elevation[componentElevationKey.sidebar].zIndex};
           `}
         />
         <motion.div
@@ -103,7 +104,7 @@ export const useSidebar = () => {
             height: 100vh;
             position: fixed;
             width: 100vw;
-            z-index: 22;
+            z-index: ${theme.elevation[componentElevationKey.sidebar].zIndex};
           `}
         />
         <motion.div
@@ -112,7 +113,7 @@ export const useSidebar = () => {
           css={css`
             background-color: ${theme.colors.theme.secondary.variant0};
             box-shadow: ${theme.elevation[8].boxShadow};
-            z-index: 22;
+            z-index: ${theme.elevation[componentElevationKey.sidebar].zIndex};
             width: 70vw;
             height: 100vh;
             max-width: 400px;

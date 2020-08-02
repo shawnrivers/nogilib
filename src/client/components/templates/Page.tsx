@@ -17,6 +17,7 @@ import { useOnClickOutside } from 'client/hooks/useOnClickOutside';
 import { Card } from 'client/components/atoms/Card';
 import { RadioCheckIcon } from 'client/components/atoms/icons/RadioCheckIcon';
 import { useSidebar } from 'client/hooks/useSidebar';
+import { componentElevationKey } from 'client/styles/elevation';
 
 const SelectionItem: React.FC<
   {
@@ -116,7 +117,7 @@ const Settings: React.FC = () => {
           css={css`
             position: absolute;
             top: calc(${commonStyles.sizes.navigationBarHeight} - 8px);
-            z-index: 10;
+            z-index: ${theme.elevation[componentElevationKey.dropdown].zIndex};
             min-width: 160px;
           `}
         >
@@ -127,6 +128,10 @@ const Settings: React.FC = () => {
             <ul
               css={css`
                 margin-top: ${commonStyles.spacing.xs};
+
+                & > *:not(:first-child) {
+                  margin-top: 0.2em;
+                }
               `}
             >
               <SelectionItem
@@ -159,6 +164,10 @@ const Settings: React.FC = () => {
             <ul
               css={css`
                 margin-top: ${commonStyles.spacing.xs};
+
+                & > *:not(:first-child) {
+                  margin-top: 0.2em;
+                }
               `}
             >
               <SelectionItem
@@ -190,6 +199,8 @@ const Settings: React.FC = () => {
 const NavigationBar: React.FC<{
   toggleSidebar: () => void;
 }> = props => {
+  const theme = useAppTheme();
+
   return (
     <Surface
       backgroundColor="standard"
@@ -200,7 +211,7 @@ const NavigationBar: React.FC<{
         height: ${commonStyles.sizes.navigationBarHeight};
         position: fixed;
         top: 0;
-        z-index: 20;
+        z-index: ${theme.elevation[componentElevationKey.navigationBar].zIndex};
       `}
     >
       <div
