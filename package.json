@@ -60,7 +60,7 @@
     "gatsby-source-filesystem": "^2.3.23",
     "gatsby-transformer-json": "^2.4.11",
     "gatsby-transformer-sharp": "^2.5.12",
-    "node": "^14.5.0",
+    "node": "^14.7.0",
     "node-sass": "^4.14.1",
     "query-string": "^6.13.1",
     "react": "^16.13.1",
