@@ -15,7 +15,7 @@ import { useTranslations } from 'client/hooks/useTranslations';
 import { MemberPageProps } from 'client/features/Member/container';
 import { useIntl } from 'client/hooks/useIntl';
 import { PositionCounter } from 'client/features/Member/components/PositionCounter';
-import { TextLink } from 'client/components/atoms/links/TextLink';
+import { TextLink } from 'client/components/molecules/links/TextLink';
 
 export const MemberPage: React.FC<MemberPageProps> = props => {
   const {
@@ -97,24 +97,45 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
               text-transform: capitalize;
             `}
           >
-            <Typography variant="h7" element="span">
+            <Typography
+              variant="body2"
+              element="span"
+              textColor={{ on: 'onBackground', variant: 'standard' }}
+            >
               <Translation text="join" />
             </Typography>
-            <Typography variant="h7" element="span">
+            <Typography
+              variant="body2"
+              element="span"
+              textColor={{ on: 'onBackground', variant: 'variant0' }}
+            >
               <Translation text={('join: ' + join) as any} />{' '}
               {graduation.isGraduated ? <Translation text="graduate" /> : null}
             </Typography>
-            <Typography variant="h7" element="span">
+            <Typography
+              variant="body2"
+              element="span"
+              textColor={{ on: 'onBackground', variant: 'standard' }}
+            >
               <Translation text="birthday" />
             </Typography>
-            <Typography variant="h7" element="span">
+            <Typography
+              variant="body2"
+              element="span"
+              textColor={{ on: 'onBackground', variant: 'variant0' }}
+            >
               {formatDate(birthday)}
             </Typography>
-            <Typography variant="h7" element="span">
+            <Typography
+              variant="body2"
+              element="span"
+              textColor={{ on: 'onBackground', variant: 'standard' }}
+            >
               <Translation text="height" />
             </Typography>
             <Typography
-              variant="h7"
+              variant="body2"
+              textColor={{ on: 'onBackground', variant: 'variant0' }}
               element="span"
               css={css`
                 text-transform: lowercase;
@@ -122,34 +143,66 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
             >
               {height}cm
             </Typography>
-            <Typography variant="h7" element="span">
+            <Typography
+              variant="body2"
+              element="span"
+              textColor={{ on: 'onBackground', variant: 'standard' }}
+            >
               <Translation text="blood type" />
             </Typography>
-            <Typography variant="h7" element="span">
+            <Typography
+              variant="body2"
+              element="span"
+              textColor={{ on: 'onBackground', variant: 'variant0' }}
+            >
               {bloodType}
             </Typography>
-            <Typography variant="h7" element="span">
+            <Typography
+              variant="body2"
+              element="span"
+              textColor={{ on: 'onBackground', variant: 'standard' }}
+            >
               <Translation text="birthplace" />
             </Typography>
-            <Typography variant="h7" element="span">
+            <Typography
+              variant="body2"
+              element="span"
+              textColor={{ on: 'onBackground', variant: 'variant0' }}
+            >
               <Translation text={origin as any} />
             </Typography>
             {units.length > 0 ? (
               <React.Fragment>
-                <Typography variant="h7" element="span">
+                <Typography
+                  variant="body2"
+                  element="span"
+                  textColor={{ on: 'onBackground', variant: 'standard' }}
+                >
                   <Translation text="units" />
                 </Typography>
-                <Typography variant="h7" element="span">
+                <Typography
+                  variant="body2"
+                  element="span"
+                  textColor={{ on: 'onBackground', variant: 'variant0' }}
+                >
                   <LocalizedList list={units} />
                 </Typography>
               </React.Fragment>
             ) : null}
             {corps.length > 0 ? (
               <React.Fragment>
-                <Typography variant="h7" element="span">
+                <Typography
+                  variant="body2"
+                  element="span"
+                  textColor={{ on: 'onBackground', variant: 'standard' }}
+                >
                   <Translation text="corps" />
                 </Typography>
-                <Typography variant="h7" element="span">
+                <Typography
+                  variant="body2"
+                  element="span"
+                  textColor={{ on: 'onBackground', variant: 'variant0' }}
+                >
                   <LocalizedList list={corps} />
                 </Typography>
               </React.Fragment>
@@ -180,8 +233,8 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                 <TextLink
                   key={site.title}
                   element="a"
-                  to="site.url"
-                  variant="body2"
+                  to={site.url}
+                  typographyVariant="body2"
                   css={css`
                     &:not(:first-of-type) {
                       margin-left: 1em;

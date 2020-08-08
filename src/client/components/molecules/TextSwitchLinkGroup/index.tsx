@@ -3,7 +3,7 @@ import { Typography } from 'client/components/atoms/Typography';
 import {
   TextSwitchLink,
   TextSwitchLinkProps,
-} from 'client/components/atoms/buttons/TextSwitchLink';
+} from 'client/components/molecules/links/TextSwitchLink';
 
 type TextSwitchLinkGroupProps = Pick<
   TextSwitchLinkProps,

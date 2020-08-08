@@ -11,6 +11,7 @@ import {
   getMembersUrl,
   getSearchUrl,
 } from 'client/utils/urls';
+import { TextLink } from 'client/components/molecules/links/TextLink';
 
 const HomePage: React.FC = () => {
   const theme = useAppTheme();
@@ -85,24 +86,18 @@ const HomePage: React.FC = () => {
         >
           Author
         </Typography>
-        <a
-          href="https://twitter.com/yuxiao_he"
+        <TextLink
+          to="https://twitter.com/yuxiao_he"
+          element="a"
+          typographyVariant="body2"
+          textColor={{ on: 'onBackground', variant: 'variant0' }}
           css={css`
             text-align: center;
             margin-top: ${commonStyles.spacing.s};
           `}
         >
-          <Typography
-            variant="body2"
-            element="span"
-            textColor={{
-              on: 'onBackground',
-              variant: 'variant0',
-            }}
-          >
-            Yuxiao He (Usho Ka)
-          </Typography>
-        </a>
+          Yuxiao He (Usho Ka)
+        </TextLink>
       </div>
     </PageContent>
   );

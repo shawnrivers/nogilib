@@ -1,7 +1,7 @@
 /**@jsx jsx */
 import { css, jsx } from '@emotion/core';
 import * as React from 'react';
-import { TextSwitchLinkGroup } from 'client/components/molecules/buttonGroup/TextSwitchLinkGroup';
+import { TextSwitchLinkGroup } from 'client/components/molecules/TextSwitchLinkGroup';
 import { ArtworkCard } from 'client/components/molecules/card/ArtworkCard';
 import { PageContent } from 'client/components/templates/Page';
 import { TextDivider } from 'client/components/atoms/dividers/TextDivider';

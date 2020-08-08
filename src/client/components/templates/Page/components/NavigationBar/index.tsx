@@ -1,6 +1,5 @@
 /**@jsx jsx */
 import { jsx, css } from '@emotion/core';
-import { Link } from 'gatsby';
 import * as React from 'react';
 import { Card } from 'client/components/atoms/Card';
 import { MenuIcon } from 'client/components/atoms/icons/MenuIcon';
@@ -18,6 +17,7 @@ import {
   getSearchUrl,
 } from 'client/utils/urls';
 import { Divider } from 'client/components/atoms/dividers/Divider';
+import { TextLink } from 'client/components/molecules/links/TextLink';
 
 const SelectionItem: React.FC<
   {
@@ -226,35 +226,52 @@ export const NavigationBar: React.FC<{
           css={css`
             display: flex;
             align-items: center;
-
-            & > *:not(:last-child) {
-              margin-right: 1em;
-            }
           `}
         >
-          <Link to={getDiscographyUrl()}>
-            <Typography variant="h6" element="span">
-              NOGILIB
-            </Typography>
-          </Link>
-          <Typography variant="h6" element="span">
+          <TextLink
+            element="Link"
+            to={getDiscographyUrl()}
+            typographyVariant="h6"
+            showUnderline={false}
+          >
+            NOGILIB
+          </TextLink>
+          <Typography
+            variant="h6"
+            element="span"
+            css={css`
+              margin: 0 ${commonStyles.spacing.xs};
+            `}
+          >
             |
           </Typography>
-          <Link to={getDiscographyUrl()} className="large">
-            <Typography variant="h6" element="span">
-              Discography
-            </Typography>
-          </Link>
-          <Link to={getMembersUrl()} className="large">
-            <Typography variant="h6" element="span">
-              Members
-            </Typography>
-          </Link>
-          <Link to={getSearchUrl()} className="large">
-            <Typography variant="h6" element="span">
-              Search
-            </Typography>
-          </Link>
+          <TextLink
+            element="Link"
+            to={getDiscographyUrl()}
+            typographyVariant="h6"
+            showUnderline={false}
+            className="large"
+          >
+            Discography
+          </TextLink>
+          <TextLink
+            element="Link"
+            to={getMembersUrl()}
+            typographyVariant="h6"
+            showUnderline={false}
+            className="large"
+          >
+            Members
+          </TextLink>
+          <TextLink
+            element="Link"
+            to={getSearchUrl()}
+            typographyVariant="h6"
+            showUnderline={false}
+            className="large"
+          >
+            Search
+          </TextLink>
           <button className="small" onClick={props.toggleSidebar}>
             <MenuIcon fill={theme.colors.theme.onSurface.standard} />
           </button>
