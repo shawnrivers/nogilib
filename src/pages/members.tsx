@@ -101,18 +101,35 @@ const MembersPageContainer: React.FC<QueryResult> = props => {
 
   const location = useLocation();
   const { filter } = queryString.parse(location.search);
-  const currentFilter: MembersPageProps['currentFilter'] =
-    filter === 'current'
-      ? 'current'
-      : filter === 'graduated'
-      ? 'graduated'
-      : 'all';
-  const memberGroupsByJoin: MembersPageProps['memberGroupsByJoin'] =
-    filter === 'current'
-      ? currentMemberGroupByJoin
-      : filter === 'graduated'
-      ? graduatedMemberGroupByJoin
-      : allMemberGroupByJoin;
+  const currentFilter: MembersPageProps['currentFilter'] = React.useMemo(() => {
+    switch (filter) {
+      case 'current':
+        return 'current';
+      case 'graduated':
+        return 'graduated';
+      case 'all':
+        return 'all';
+      default:
+        return 'current';
+    }
+  }, [filter]);
+  const memberGroupsByJoin: MembersPageProps['memberGroupsByJoin'] = React.useMemo(() => {
+    switch (filter) {
+      case 'current':
+        return currentMemberGroupByJoin;
+      case 'graduated':
+        return graduatedMemberGroupByJoin;
+      case 'all':
+        return allMemberGroupByJoin;
+      default:
+        return currentMemberGroupByJoin;
+    }
+  }, [
+    filter,
+    currentMemberGroupByJoin,
+    graduatedMemberGroupByJoin,
+    allMemberGroupByJoin,
+  ]);
 
   return (
     <MembersPage

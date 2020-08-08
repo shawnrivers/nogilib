@@ -87,7 +87,10 @@ const groupCdsByYear = (cds: QueryResultDiscography[]): CdGroupByYear[] => {
 const DiscographyPageContainer: React.FC<QueryResult> = props => {
   const discographyData = props.data.allDiscographyJson.nodes;
   const singlesData = React.useMemo(
-    () => discographyData.filter(cd => cd.type === 'single'),
+    () =>
+      discographyData.filter(
+        cd => cd.type === 'single' || cd.type === 'digital'
+      ),
     [discographyData]
   );
   const albumsData = React.useMemo(
@@ -96,7 +99,10 @@ const DiscographyPageContainer: React.FC<QueryResult> = props => {
   );
   const otherCdsData = React.useMemo(
     () =>
-      discographyData.filter(cd => cd.type !== 'single' && cd.type !== 'album'),
+      discographyData.filter(
+        cd =>
+          cd.type !== 'single' && cd.type !== 'album' && cd.type !== 'digital'
+      ),
     [discographyData]
   );
   const allCdGroupsByYear = React.useMemo(
@@ -112,14 +118,30 @@ const DiscographyPageContainer: React.FC<QueryResult> = props => {
 
   const location = useLocation();
   const { filter } = queryString.parse(location.search);
-  const currentFilter: DiscographyPageProps['currentFilter'] =
-    filter === 'singles' ? 'singles' : filter === 'albums' ? 'albums' : 'all';
-  const cdGroupsByYear: DiscographyPageProps['cdGroupsByYear'] =
-    filter === 'singles'
-      ? singleGroupsByYear
-      : filter === 'albums'
-      ? albumGroupsByYear
-      : allCdGroupsByYear;
+  const currentFilter: DiscographyPageProps['currentFilter'] = React.useMemo(() => {
+    switch (filter) {
+      case 'singles':
+        return 'singles';
+      case 'albums':
+        return 'albums';
+      case 'all':
+        return 'all';
+      default:
+        return 'singles';
+    }
+  }, [filter]);
+  const cdGroupsByYear: DiscographyPageProps['cdGroupsByYear'] = React.useMemo(() => {
+    switch (filter) {
+      case 'singles':
+        return singleGroupsByYear;
+      case 'albums':
+        return albumGroupsByYear;
+      case 'all':
+        return allCdGroupsByYear;
+      default:
+        return singleGroupsByYear;
+    }
+  }, [filter, singleGroupsByYear, albumGroupsByYear, allCdGroupsByYear]);
 
   return (
     <DiscographyPage

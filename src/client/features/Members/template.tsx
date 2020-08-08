@@ -45,11 +45,6 @@ export const MembersPage: React.FC<MembersPageProps> = props => {
           textOn="onBackground"
           links={[
             {
-              text: <Translation text="all" />,
-              isSwitchedOn: currentFilter === 'all',
-              to: getMembersUrl(),
-            },
-            {
               text: <Translation text="current" />,
               isSwitchedOn: currentFilter === 'current',
               to: getMembersUrl('current'),
@@ -58,6 +53,11 @@ export const MembersPage: React.FC<MembersPageProps> = props => {
               text: <Translation text="graduated" />,
               isSwitchedOn: currentFilter === 'graduated',
               to: getMembersUrl('graduated'),
+            },
+            {
+              text: <Translation text="all" />,
+              isSwitchedOn: currentFilter === 'all',
+              to: getMembersUrl('all'),
             },
           ]}
           css={css`

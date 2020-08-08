@@ -31,11 +31,6 @@ export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
           textOn="onBackground"
           links={[
             {
-              text: <Translation text="all" />,
-              isSwitchedOn: currentFilter === 'all',
-              to: getDiscographyUrl(),
-            },
-            {
               text: <Translation text="singles" />,
               isSwitchedOn: currentFilter === 'singles',
               to: getDiscographyUrl('singles'),
@@ -44,6 +39,11 @@ export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
               text: <Translation text="albums" />,
               isSwitchedOn: currentFilter === 'albums',
               to: getDiscographyUrl('albums'),
+            },
+            {
+              text: <Translation text="all" />,
+              isSwitchedOn: currentFilter === 'all',
+              to: getDiscographyUrl('all'),
             },
           ]}
           css={css`
