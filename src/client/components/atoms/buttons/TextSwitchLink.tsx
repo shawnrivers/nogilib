@@ -45,6 +45,7 @@ export const TextSwitchLink: React.FC<TextSwitchLinkProps> = props => {
           text-decoration-style: solid;
           text-decoration-color: ${theme.colors.theme[backgroundColorKey]
             .standard};
+          text-underline-position: under;
           transition: all 0.25s ease-in-out;
         }
 

@@ -15,6 +15,7 @@ import { useTranslations } from 'client/hooks/useTranslations';
 import { MemberPageProps } from 'client/features/Member/container';
 import { useIntl } from 'client/hooks/useIntl';
 import { PositionCounter } from 'client/features/Member/components/PositionCounter';
+import { TextLink } from 'client/components/atoms/links/TextLink';
 
 export const MemberPage: React.FC<MemberPageProps> = props => {
   const {
@@ -176,9 +177,10 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
               `}
             >
               {sites.map(site => (
-                <Typography
+                <TextLink
                   key={site.title}
-                  element="span"
+                  element="a"
+                  to="site.url"
                   variant="body2"
                   css={css`
                     &:not(:first-of-type) {
@@ -186,10 +188,8 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                     }
                   `}
                 >
-                  <a href={site.url} target="_blank" rel="noopener noreferrer">
-                    <Translation text={site.title as any} />
-                  </a>
-                </Typography>
+                  <Translation text={site.title as any} />
+                </TextLink>
               ))}
             </div>
           </React.Fragment>

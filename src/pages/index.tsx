@@ -5,7 +5,7 @@ import { PageContent } from 'client/components/templates/Page';
 import { Typography } from 'client/components/atoms/Typography';
 import { GatsbyImage } from 'client/components/atoms/image/GatsbyImage';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
-import { TextLink } from 'client/components/atoms/buttons/TextLink';
+import { TextCard } from 'client/components/molecules/card/TextCard';
 import {
   getDiscographyUrl,
   getMembersUrl,
@@ -71,9 +71,9 @@ const HomePage: React.FC = () => {
             margin-top: ${commonStyles.spacing.m};
           `}
         >
-          <TextLink to={getDiscographyUrl()} text="Discography" />
-          <TextLink to={getMembersUrl()} text="Members" />
-          <TextLink to={getSearchUrl()} text="Search" />
+          <TextCard to={getDiscographyUrl()} text="Discography" />
+          <TextCard to={getMembersUrl()} text="Members" />
+          <TextCard to={getSearchUrl()} text="Search" />
         </div>
         <Typography
           variant="h3"
