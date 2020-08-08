@@ -1,0 +1,50 @@
+/**@jsx jsx */
+import { jsx, css } from '@emotion/core';
+import * as React from 'react';
+import { ThemeColorKey, ThemeColorsBackground } from 'client/styles/colors';
+import { commonStyles, useAppTheme } from 'client/styles/tokens';
+import { SpacingKey } from 'client/styles/spacing';
+
+export type BaseButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
+  backgroundType?: keyof ThemeColorsBackground;
+  backgroundColorVariant?: ThemeColorKey;
+  horizontalPadding?: SpacingKey;
+  verticalPadding?: SpacingKey;
+};
+
+export const BaseButton: React.FC<BaseButtonProps> = props => {
+  const {
+    backgroundType = 'background',
+    horizontalPadding = 'xxs',
+    verticalPadding = 'xxs',
+    backgroundColorVariant = 'variant0',
+    children,
+    ...buttonProps
+  } = props;
+
+  const theme = useAppTheme();
+
+  return (
+    <button
+      css={css`
+        padding: ${commonStyles.spacing[verticalPadding]}
+          ${commonStyles.spacing[horizontalPadding]};
+        border-radius: ${commonStyles.borderRadius.xs};
+        transition: background-color 0.3s ease-out;
+
+        &:hover {
+          background-color: ${theme.colors.theme[backgroundType][
+            backgroundColorVariant
+          ]};
+        }
+
+        &:focus {
+          outline: auto;
+        }
+      `}
+      {...buttonProps}
+    >
+      {children}
+    </button>
+  );
+};

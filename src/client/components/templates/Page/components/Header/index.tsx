@@ -4,6 +4,7 @@ import * as React from 'react';
 import { ArrowBackIcon } from 'client/components/atoms/icons/ArrowBack';
 import { Typography } from 'client/components/atoms/Typography';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
+import { BaseButton } from 'client/components/atoms/BaseButton';
 
 export type HeaderProps = {
   title?: string;
@@ -36,13 +37,13 @@ export const Header: React.FC<HeaderProps> = props => {
             align-items: flex-end;
           `}
         >
-          <button onClick={handleGoBack}>
+          <BaseButton onClick={handleGoBack}>
             <ArrowBackIcon
               width={32}
               height={32}
               fill={theme.colors.theme.onBackground.standard}
             />
-          </button>
+          </BaseButton>
           {subtitle !== undefined && (
             <Typography
               variant="h4"

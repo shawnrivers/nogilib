@@ -4,7 +4,7 @@ import * as React from 'react';
 import { Typography } from 'client/components/atoms/Typography';
 import { useAppTheme } from 'client/styles/tokens';
 import { useTranslations } from 'client/hooks/useTranslations';
-import { HorizontalCard } from 'client/components/molecules/card/HorizontalCard';
+import { HorizontalCard } from 'client/components/molecules/cards/HorizontalCard';
 
 const DEFAULT_RESULT_COUNT = 4;
 

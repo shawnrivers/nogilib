@@ -5,13 +5,13 @@ import { Typography } from 'client/components/atoms/Typography';
 import { PageContent } from 'client/components/templates/Page';
 import { commonStyles } from 'client/styles/tokens';
 import { toCdNumber } from 'utils/strings';
-import { GridArtworkImage } from 'client/components/atoms/image/GirdArtworkImage';
-import { TextDivider } from 'client/components/atoms/dividers/TextDivider';
+import { GridArtworkImage } from 'client/components/atoms/images/GirdArtworkImage';
+import { TextDivider } from 'client/components/molecules/TextDivider';
 import { AlbumPageProps } from 'client/features/Album/container';
-import { MemberCard } from 'client/components/molecules/card/MemberCard';
+import { MemberCard } from 'client/components/molecules/cards/MemberCard';
 import { getMemberUrl, getSongUrl } from 'client/utils/urls';
 import { useTranslations } from 'client/hooks/useTranslations';
-import { HorizontalCard } from 'client/components/molecules/card/HorizontalCard';
+import { HorizontalCard } from 'client/components/molecules/cards/HorizontalCard';
 
 export const AlbumPage: React.FC<AlbumPageProps> = props => {
   const { Translation } = useTranslations();

@@ -2,20 +2,20 @@
 import { jsx, css } from '@emotion/core';
 import * as React from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'gatsby';
 import { CloseIcon } from 'client/components/atoms/icons/CloseIcon';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
-import {
-  Typography,
-  TypographyProps,
-} from 'client/components/atoms/Typography';
 import {
   getDiscographyUrl,
   getMembersUrl,
   getSearchUrl,
 } from 'client/utils/urls';
 import { componentElevationKey } from 'client/styles/elevation';
-import { Divider } from 'client/components/atoms/dividers/Divider';
+import { Divider } from 'client/components/atoms/Divider';
+import { BaseButton } from 'client/components/atoms/BaseButton';
+import {
+  TextLink,
+  TextLinkProps,
+} from 'client/components/molecules/links/TextLink';
 
 const backgroundFade = {
   opened: { opacity: 1, transition: { duration: 0.2 } },
@@ -27,32 +27,29 @@ const sideBarFade = {
   closed: { x: '-102vw', transition: { duration: 0.2 } },
 };
 
-const NavigationItem: React.FC<
-  Omit<TypographyProps, 'variant'> & {
-    onClick: () => void;
-    to: string;
-  }
-> = props => {
-  const { to, onClick, children, ...typographyProps } = props;
+const NavigationItem: React.FC<Omit<TextLinkProps, 'element'>> = props => {
+  const { to, children, onClick, ...restProps } = props;
 
   return (
-    <Typography
-      variant="h6"
-      element="li"
-      textColor={{
-        on: 'onSecondary',
-        variant: 'standard',
-      }}
-      css={css`
-        margin-top: 1em;
-        text-transform: uppercase;
-      `}
-      {...typographyProps}
-    >
-      <Link to={to} onClick={onClick}>
+    <li>
+      <TextLink
+        to={to}
+        element="Link"
+        typographyVariant="h6"
+        textColor={{ on: 'onSecondary', variant: 'standard' }}
+        backgroundType="primary"
+        backgroundColorVariant="standard"
+        showUnderline={false}
+        onClick={onClick}
+        css={css`
+          margin-top: 1em;
+          text-transform: uppercase;
+        `}
+        {...restProps}
+      >
         {children}
-      </Link>
-    </Typography>
+      </TextLink>
+    </li>
   );
 };
 
@@ -113,15 +110,17 @@ export const useSidebar = () => {
             transform: translateX(-102vw);
           `}
         >
-          <button
+          <BaseButton
             aria-label="close"
             onClick={closeSidebar}
+            backgroundType="primary"
+            backgroundColorVariant="standard"
             css={css`
               margin: ${theme.spacing.m};
             `}
           >
             <CloseIcon fill={theme.colors.theme.onSecondary.standard} />
-          </button>
+          </BaseButton>
           <div
             css={css`
               text-align: center;

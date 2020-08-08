@@ -6,7 +6,7 @@ import {
   TypographyProps,
 } from 'client/components/atoms/Typography';
 import { Card, CardProps } from 'client/components/atoms/Card';
-import { GridMemberImage } from 'client/components/atoms/image/GridMemberImage';
+import { GridMemberImage } from 'client/components/atoms/images/GridMemberImage';
 
 export const MemberCard: React.FC<
   CardProps & {

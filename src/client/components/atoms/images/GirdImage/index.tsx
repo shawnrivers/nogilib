@@ -4,7 +4,7 @@ import * as React from 'react';
 import {
   GatsbyImage,
   GatsbyImageProps,
-} from 'client/components/atoms/image/GatsbyImage';
+} from 'client/components/atoms/images/GatsbyImage';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import { BorderRadiusKey } from 'client/styles/borderRadius';
 

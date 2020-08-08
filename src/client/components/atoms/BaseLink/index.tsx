@@ -4,8 +4,8 @@ import { Link } from 'gatsby';
 import * as React from 'react';
 import {
   mapBackgroundToForeground,
+  ThemeColorKey,
   ThemeColorsBackground,
-  ThemeColorVariants,
 } from 'client/styles/colors';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
 
@@ -13,8 +13,9 @@ export type BaseLinkProps = {
   element: 'a' | 'Link';
   to: string;
   showUnderline?: boolean;
-  underlineColorVariant?: keyof ThemeColorVariants;
+  underlineColorVariant?: ThemeColorKey;
   backgroundType?: keyof ThemeColorsBackground;
+  backgroundColorVariant?: ThemeColorKey;
   disabled?: boolean;
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
@@ -25,6 +26,7 @@ export const BaseLink: React.FC<BaseLinkProps> = props => {
     showUnderline = true,
     underlineColorVariant = 'variant0',
     backgroundType = 'background',
+    backgroundColorVariant = 'variant0',
     disabled = false,
     children,
     ...restProps
@@ -54,14 +56,22 @@ export const BaseLink: React.FC<BaseLinkProps> = props => {
       ][underlineColorVariant]};
 
       &:hover {
-        background-color: ${theme.colors.theme[backgroundType].variant0};
+        background-color: ${theme.colors.theme[backgroundType][
+          backgroundColorVariant
+        ]};
       }
 
       &:focus {
         outline: auto;
       }
     `,
-    [backgroundType, showUnderline, theme.colors.theme, underlineColorVariant]
+    [
+      backgroundColorVariant,
+      backgroundType,
+      showUnderline,
+      theme.colors.theme,
+      underlineColorVariant,
+    ]
   );
 
   return disabled ? (

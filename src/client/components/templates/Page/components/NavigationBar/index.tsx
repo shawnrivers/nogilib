@@ -16,8 +16,9 @@ import {
   getMembersUrl,
   getSearchUrl,
 } from 'client/utils/urls';
-import { Divider } from 'client/components/atoms/dividers/Divider';
+import { Divider } from 'client/components/atoms/Divider';
 import { TextLink } from 'client/components/molecules/links/TextLink';
+import { BaseButton } from 'client/components/atoms/BaseButton';
 
 const SelectionItem: React.FC<
   {
@@ -27,14 +28,8 @@ const SelectionItem: React.FC<
   const { onClick, isSelected, children, ...buttonProps } = props;
 
   return (
-    <li
-      css={css`
-        &:not(:first-of-type) {
-          margin-top: 0.2em;
-        }
-      `}
-    >
-      <button
+    <li>
+      <BaseButton
         onClick={onClick}
         disabled={isSelected}
         css={css`
@@ -62,7 +57,7 @@ const SelectionItem: React.FC<
         >
           {children}
         </Typography>
-      </button>
+      </BaseButton>
     </li>
   );
 };
@@ -115,9 +110,9 @@ const Settings: React.FC = () => {
         align-items: flex-end;
       `}
     >
-      <button onClick={switchDropdown}>
+      <BaseButton onClick={switchDropdown}>
         <SettingsIcon fill={theme.colors.theme.onSurface.standard} />
-      </button>
+      </BaseButton>
       {isDropdownVisible && (
         <Card
           elevation={componentElevationKey.dropdown}
@@ -272,9 +267,15 @@ export const NavigationBar: React.FC<{
           >
             Search
           </TextLink>
-          <button className="small" onClick={props.toggleSidebar}>
+          <BaseButton
+            className="small"
+            onClick={props.toggleSidebar}
+            css={css`
+              margin-left: ${commonStyles.spacing.xxs};
+            `}
+          >
             <MenuIcon fill={theme.colors.theme.onSurface.standard} />
-          </button>
+          </BaseButton>
         </div>
         <Settings />
       </div>

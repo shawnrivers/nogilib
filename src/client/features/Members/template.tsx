@@ -3,9 +3,9 @@ import { css, jsx } from '@emotion/core';
 import * as React from 'react';
 import { TextSwitchLinkGroup } from 'client/components/molecules/TextSwitchLinkGroup';
 import { PageContent } from 'client/components/templates/Page';
-import { TextDivider } from 'client/components/atoms/dividers/TextDivider';
+import { TextDivider } from 'client/components/molecules/TextDivider';
 import { MemberResult } from 'server/actors/Members/models';
-import { MemberCard } from 'client/components/molecules/card/MemberCard';
+import { MemberCard } from 'client/components/molecules/cards/MemberCard';
 import { commonStyles } from 'client/styles/tokens';
 import {
   getMembersUrl,

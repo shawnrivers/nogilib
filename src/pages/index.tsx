@@ -3,9 +3,9 @@ import { jsx, css } from '@emotion/core';
 import * as React from 'react';
 import { PageContent } from 'client/components/templates/Page';
 import { Typography } from 'client/components/atoms/Typography';
-import { GatsbyImage } from 'client/components/atoms/image/GatsbyImage';
+import { GatsbyImage } from 'client/components/atoms/images/GatsbyImage';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
-import { TextCard } from 'client/components/molecules/card/TextCard';
+import { TextCard } from 'client/components/molecules/cards/TextCard';
 import {
   getDiscographyUrl,
   getMembersUrl,

@@ -3,7 +3,7 @@ import { jsx, css } from '@emotion/core';
 import * as React from 'react';
 import { Card, CardProps } from 'client/components/atoms/Card';
 import { commonStyles } from 'client/styles/tokens';
-import { GridImage } from 'client/components/atoms/image/GirdImage';
+import { GridImage } from 'client/components/atoms/images/GirdImage';
 import { Hashtag } from 'client/components/atoms/Hashtag';
 import { Typography } from 'client/components/atoms/Typography';
 

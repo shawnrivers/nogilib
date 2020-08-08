@@ -3,13 +3,9 @@ import {
   Typography,
   TypographyProps,
 } from 'client/components/atoms/Typography';
-import { mapForegroundToBackground } from 'client/styles/colors';
-import {
-  BaseLink,
-  BaseLinkProps,
-} from 'client/components/atoms/links/BaseLink';
+import { BaseLink, BaseLinkProps } from 'client/components/atoms/BaseLink';
 
-type TextLinkProps = BaseLinkProps &
+export type TextLinkProps = BaseLinkProps &
   Omit<TypographyProps, 'variant' | 'element'> & {
     typographyVariant?: TypographyProps['variant'];
   };
@@ -21,6 +17,8 @@ export const TextLink: React.FC<TextLinkProps> = props => {
     typographyVariant = 'body1',
     showUnderline,
     textColor = { on: 'onBackground', variant: 'standard' },
+    backgroundType,
+    backgroundColorVariant,
     children,
     className,
     disabled,
@@ -34,7 +32,8 @@ export const TextLink: React.FC<TextLinkProps> = props => {
       to={to}
       showUnderline={showUnderline}
       underlineColorVariant={textColor.variant}
-      backgroundType={mapForegroundToBackground(textColor.on)}
+      backgroundType={backgroundType}
+      backgroundColorVariant={backgroundColorVariant}
       className={className}
       onClick={onClick}
       disabled={disabled}
