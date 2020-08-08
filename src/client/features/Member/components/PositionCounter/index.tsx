@@ -59,7 +59,6 @@ export const PositionCounter: React.FC<PositionCounterProps> = props => {
                 POSITION_STYLES.center.foregroundColor
               ][POSITION_STYLES.center.textColorVariant]};
               text-align: center;
-              z-index: 4;
               width: ${(center / (under + selected)) * 100}%;
               min-width: max-content;
             `}
@@ -90,7 +89,6 @@ export const PositionCounter: React.FC<PositionCounterProps> = props => {
                 POSITION_STYLES.fukujin.foregroundColor
               ][POSITION_STYLES.fukujin.textColorVariant]};
               text-align: center;
-              z-index: 3;
               width: ${((fukujin - center) / (under + selected)) * 100}%;
               min-width: max-content;
             `}
@@ -121,7 +119,6 @@ export const PositionCounter: React.FC<PositionCounterProps> = props => {
                 POSITION_STYLES.selected.foregroundColor
               ][POSITION_STYLES.selected.textColorVariant]};
               text-align: center;
-              z-index: 3;
               width: ${((selected - fukujin) / (under + selected)) * 100}%;
               min-width: max-content;
             `}
@@ -153,7 +150,6 @@ export const PositionCounter: React.FC<PositionCounterProps> = props => {
               ][POSITION_STYLES.under.textColorVariant]};
               text-align: center;
               line-height: 28px;
-              z-index: 4;
               width: ${(under / (under + selected)) * 100}%;
               min-width: max-content;
             `}

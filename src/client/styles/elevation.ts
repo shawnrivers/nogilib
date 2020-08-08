@@ -37,10 +37,10 @@ export const componentElevationKey: Record<
   ElevationKey
 > = {
   background: 0,
-  componentOnBackground: 4,
-  navigationBar: 12,
-  dropdown: 16,
-  sidebar: 20,
+  componentOnBackground: 3,
+  navigationBar: 6,
+  dropdown: 8,
+  sidebar: 10,
 };
 
 const UMBRA_COLOR = 'rgba(0, 0, 0, 0.2)';
