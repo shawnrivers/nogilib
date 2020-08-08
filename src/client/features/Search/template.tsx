@@ -5,7 +5,7 @@ import { SearchIcon } from 'client/components/atoms/icons/SearchIcon';
 import { SearchResultCategory } from 'client/features/Search/components/SearchResultCategory';
 import { Typography } from 'client/components/atoms/Typography';
 import { PageContent } from 'client/components/templates/Page';
-import { useAppTheme } from 'client/styles/tokens';
+import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import { useTranslations } from 'client/hooks/useTranslations';
 
 export type SearchResult = {
@@ -43,7 +43,11 @@ export const Search: React.FC<SearchProps> = props => {
 
   return (
     <PageContent title="search">
-      <React.Fragment>
+      <div
+        css={css`
+          margin-top: ${commonStyles.spacing.xl};
+        `}
+      >
         <div
           css={css`
             display: flex;
@@ -129,7 +133,7 @@ export const Search: React.FC<SearchProps> = props => {
             margin-top: 2rem;
           `}
         />
-      </React.Fragment>
+      </div>
     </PageContent>
   );
 };
