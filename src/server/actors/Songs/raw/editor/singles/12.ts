@@ -1,23 +1,22 @@
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
-import { SongRaw } from "server/actors/Songs/models";
-import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
-import { SONGS } from "server/actors/Songs/constants/songTitle";
-import { UNIT_NAMES } from "server/actors/Units/constants/unitName";
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { SongRaw } from 'server/actors/Songs/models';
+import { createSongRaw } from 'server/actors/Songs/raw/creator';
+import { SongType } from 'server/actors/Songs/constants/songType';
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
+import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
 
 export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS["太陽ノック"].title,
+    title: SONGS['太陽ノック'].title,
     type: SongType.Title,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["黒須克彦"],
-      arrange: ["長田直之"],
-      direct: ["三石直和"],
+      lyrics: ['秋元康'],
+      compose: ['黒須克彦'],
+      arrange: ['長田直之'],
+      direct: ['三石直和'],
     },
     center: [MemberNameKey.IkomaRina],
-    fukujin: FukujinType.RowOneTwo,
+    fukujin: 'row-1-2',
     formations: {
       firstRow: [
         MemberNameKey.ShiraishiMai,
@@ -46,13 +45,13 @@ export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["別れ際、もっと好きになる"].title,
+    title: SONGS['別れ際、もっと好きになる'].title,
     type: SongType.Under,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Akira Sunset", "ha-j"],
-      arrange: ["Akira Sunset", "ha-j"],
-      direct: ["山岸聖太"],
+      lyrics: ['秋元康'],
+      compose: ['Akira Sunset', 'ha-j'],
+      arrange: ['Akira Sunset', 'ha-j'],
+      direct: ['山岸聖太'],
     },
     center: [MemberNameKey.HoriMiona],
     formations: {
@@ -83,23 +82,23 @@ export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["もう少しの夢"].title,
+    title: SONGS['もう少しの夢'].title,
     type: SongType.Solo,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["丸谷マナブ"],
+      lyrics: ['秋元康'],
+      compose: ['丸谷マナブ'],
       arrange: ['野中"まさ"雄一'],
     },
     solo: MemberNameKey.NishinoNanase,
   }),
   createSongRaw({
-    title: SONGS["魚たちのLOVE SONG"].title,
+    title: SONGS['魚たちのLOVE SONG'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["渡辺拓也"],
-      arrange: ["渡辺拓也"],
-      direct: ["中村太洸"],
+      lyrics: ['秋元康'],
+      compose: ['渡辺拓也'],
+      arrange: ['渡辺拓也'],
+      direct: ['中村太洸'],
     },
     formations: {
       firstRow: [
@@ -111,27 +110,27 @@ export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["無表情"].title,
+    title: SONGS['無表情'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Akira Sunset"],
-      arrange: ["Akira Sunset"],
-      direct: ["月田茂", "山本篤彦", "柴谷麻以"],
+      lyrics: ['秋元康'],
+      compose: ['Akira Sunset'],
+      arrange: ['Akira Sunset'],
+      direct: ['月田茂', '山本篤彦', '柴谷麻以'],
     },
-    unit: UNIT_NAMES["からあげ姉妹"].name,
+    unit: UNIT_NAMES['からあげ姉妹'].name,
     formations: {
       firstRow: [MemberNameKey.IkutaErika, MemberNameKey.MatsumuraSayuri],
     },
   }),
   createSongRaw({
-    title: SONGS["羽根の記憶"].title,
+    title: SONGS['羽根の記憶'].title,
     type: SongType.Selected,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["杉山勝彦"],
-      arrange: ["杉山勝彦", "有木竜郎"],
-      direct: ["岡川太郎"],
+      lyrics: ['秋元康'],
+      compose: ['杉山勝彦'],
+      arrange: ['杉山勝彦', '有木竜郎'],
+      direct: ['岡川太郎'],
     },
     center: [MemberNameKey.IkomaRina],
     formations: {
@@ -158,12 +157,12 @@ export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["制服を脱いでサヨナラを…"].title,
+    title: SONGS['制服を脱いでサヨナラを…'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["古川貴浩"],
-      arrange: ["古川貴浩"],
+      lyrics: ['秋元康'],
+      compose: ['古川貴浩'],
+      arrange: ['古川貴浩'],
     },
     formations: {
       firstRow: [MemberNameKey.SaitouAsuka, MemberNameKey.HoshinoMinami],

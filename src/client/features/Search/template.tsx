@@ -1,18 +1,18 @@
-import * as React from "react";
-import { injectIntl } from "react-intl";
-import { motion } from "framer-motion";
-import styles from "./search.module.scss";
-import { PageContentLayout } from "client/components/atoms/PageContentLayout";
-import { SearchIcon } from "client/components/atoms/icons/SearchIcon";
-import { Message } from "client/components/atoms/Message";
-import { SearchResultCategory } from "client/components/molecules/SearchResultCategory";
+/**@jsx jsx */
+import { jsx, css } from '@emotion/core';
+import * as React from 'react';
+import { SearchIcon } from 'client/components/atoms/icons/SearchIcon';
+import { SearchResultCategory } from 'client/features/Search/components/SearchResultCategory';
+import { Typography } from 'client/components/atoms/Typography';
+import { PageContent } from 'client/components/templates/Page';
+import { commonStyles, useAppTheme } from 'client/styles/tokens';
+import { useTranslations } from 'client/hooks/useTranslations';
 
 export type SearchResult = {
   to: string;
   imgSrc: string;
   heading: string;
-  caption: string;
-  secondCaption?: string;
+  captions: string[];
 };
 
 interface SearchProps {
@@ -20,75 +20,120 @@ interface SearchProps {
   search(event: React.FormEvent<HTMLInputElement>): void;
   results: {
     members: SearchResult[];
-    singles: SearchResult[];
-    albums: SearchResult[];
+    cds: SearchResult[];
     songs: SearchResult[];
   };
   isSearching: boolean;
-  intl: any;
 }
 
-export const Search = injectIntl(
-  ({ query, search, results, isSearching, intl }: SearchProps) => {
-    const hasNoResult = React.useMemo(
-      () =>
-        results.members.length +
-          results.singles.length +
-          results.albums.length +
-          results.songs.length ===
-          0 &&
-        query !== "" &&
-        !isSearching,
-      [results, query, isSearching]
-    );
+export const Search: React.FC<SearchProps> = props => {
+  const { query, search, results, isSearching } = props;
 
-    const [isInputFocused, setInputFocus] = React.useState(false);
+  const hasNoResult = React.useMemo(
+    () =>
+      results.members.length + results.cds.length + results.songs.length ===
+        0 &&
+      query !== '' &&
+      !isSearching,
+    [results, query, isSearching]
+  );
 
-    return (
-      <PageContentLayout>
-        <div className={styles.search}>
-          <SearchIcon className={styles.searchIcon} />
-          <motion.div
-            animate={{
-              borderBottomColor: isInputFocused ? "#595959" : "#d6d6d6",
-            }}
-            className={styles.inputContainer}
+  const theme = useAppTheme();
+  const { Translation, getTranslation } = useTranslations();
+
+  return (
+    <PageContent title="search">
+      <div
+        css={css`
+          margin-top: ${commonStyles.spacing.xl};
+        `}
+      >
+        <div
+          css={css`
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 30em;
+            margin: auto;
+          `}
+        >
+          <SearchIcon
+            css={css`
+              fill: ${theme.colors.theme.onBackground.standard};
+            `}
+          />
+          <Typography
+            variant="body1"
+            element="div"
+            css={css`
+              width: 100%;
+              margin-left: 0.5em;
+            `}
           >
             <input
               type="text"
               value={query}
               onChange={search}
-              onFocus={() => setInputFocus(true)}
-              onBlur={() => setInputFocus(false)}
-              placeholder={intl.formatMessage({
-                id: "Song title, member name, etc.",
-              })}
-              className={styles.input}
+              placeholder={getTranslation('Song title, member name, etc.')}
+              css={css`
+                width: 100%;
+                border-width: 2px;
+                border-style: solid;
+                border-color: ${theme.colors.theme.onBackground.variant1};
+                border-radius: ${theme.borderRadius.xl};
+                padding: ${theme.spacing.s};
+                transition: border-color 0.2s linear;
+                box-sizing: border-box;
+                color: inherit;
+                font-size: inherit;
+                font-family: inherit;
+                font-weight: inherit;
+
+                &::placeholder {
+                  color: ${theme.colors.theme.onBackground.variant1};
+                }
+
+                &:focus {
+                  border-color: ${theme.colors.theme.onBackground.standard};
+                }
+              `}
             />
-          </motion.div>
+          </Typography>
         </div>
         {hasNoResult ? (
-          <p className={styles.noResult}>
-            <Message text="no result" />
-          </p>
+          <Typography
+            variant="em1"
+            css={css`
+              text-align: center;
+              text-transform: capitalize;
+              margin-top: 2em;
+            `}
+          >
+            <Translation text="no result" />
+          </Typography>
         ) : null}
         <SearchResultCategory
           title="members"
           results={results.members}
-          className={styles.category}
+          css={css`
+            margin-top: 2rem;
+          `}
         />
         <SearchResultCategory
-          title="singles"
-          results={results.singles}
-          className={styles.category}
+          title="cds"
+          results={results.cds}
+          css={css`
+            margin-top: 2rem;
+          `}
         />
         <SearchResultCategory
-          title="albums"
-          results={results.albums}
-          className={styles.category}
+          title="songs"
+          results={results.songs}
+          css={css`
+            margin-top: 2rem;
+          `}
         />
-        <SearchResultCategory title="songs" results={results.songs} />
-      </PageContentLayout>
-    );
-  }
-);
+      </div>
+    </PageContent>
+  );
+};

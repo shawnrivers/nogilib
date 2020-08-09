@@ -1,23 +1,22 @@
-import { SongRaw } from "server/actors/Songs/models";
-import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
-import { SONGS } from "server/actors/Songs/constants/songTitle";
-import { UNIT_NAMES } from "server/actors/Units/constants/unitName";
+import { SongRaw } from 'server/actors/Songs/models';
+import { createSongRaw } from 'server/actors/Songs/raw/creator';
+import { SongType } from 'server/actors/Songs/constants/songType';
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
+import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
 
 export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS["帰り道は遠回りしたくなる"].title,
+    title: SONGS['帰り道は遠回りしたくなる'].title,
     type: SongType.Title,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["渡邉俊彦"],
-      arrange: ["渡邉俊彦", "早川博隆"],
-      direct: ["関和亮"],
+      lyrics: ['秋元康'],
+      compose: ['渡邉俊彦'],
+      arrange: ['渡邉俊彦', '早川博隆'],
+      direct: ['関和亮'],
     },
     center: [MemberNameKey.NishinoNanase],
-    fukujin: FukujinType.RowOneTwo,
+    fukujin: 'row-1-2',
     formations: {
       firstRow: [
         MemberNameKey.UmezawaMinami,
@@ -49,13 +48,13 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["日常"].title,
+    title: SONGS['日常'].title,
     type: SongType.Under,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Akira Sunset", "野口大志"],
-      arrange: ["Akira Sunset", "野口大志"],
-      direct: ["今泉力哉"],
+      lyrics: ['秋元康'],
+      compose: ['Akira Sunset', '野口大志'],
+      arrange: ['Akira Sunset', '野口大志'],
+      direct: ['今泉力哉'],
     },
     center: [MemberNameKey.KitanoHinako],
     formations: {
@@ -86,13 +85,13 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["キャラバンは眠らない"].title,
+    title: SONGS['キャラバンは眠らない'].title,
     type: SongType.Coupling,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["CottON"],
-      arrange: ["CottON"],
-      direct: ["横堀光範"],
+      lyrics: ['秋元康'],
+      compose: ['CottON'],
+      arrange: ['CottON'],
+      direct: ['横堀光範'],
     },
     center: [MemberNameKey.SaitouAsuka],
     formations: {
@@ -117,26 +116,26 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["つづく"].title,
+    title: SONGS['つづく'].title,
     type: SongType.Solo,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["若田部誠"],
-      arrange: ["若田部誠"],
-      direct: ["湯浅弘章"],
+      lyrics: ['秋元康'],
+      compose: ['若田部誠'],
+      arrange: ['若田部誠'],
+      direct: ['湯浅弘章'],
     },
     solo: MemberNameKey.NishinoNanase,
   }),
   createSongRaw({
-    title: SONGS["告白の順番"].title,
+    title: SONGS['告白の順番'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["安部純"],
-      arrange: ["安部純"],
-      direct: ["荒船泰廣"],
+      lyrics: ['秋元康'],
+      compose: ['安部純'],
+      arrange: ['安部純'],
+      direct: ['荒船泰廣'],
     },
-    unit: UNIT_NAMES["女子校カルテット"].name,
+    unit: UNIT_NAMES['女子校カルテット'].name,
     formations: {
       firstRow: [
         MemberNameKey.AkimotoManatsu,
@@ -147,12 +146,12 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["ショパンの嘘つき"].title,
+    title: SONGS['ショパンの嘘つき'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["山本加津彦"],
-      arrange: ["山本加津彦"],
+      lyrics: ['秋元康'],
+      compose: ['山本加津彦'],
+      arrange: ['山本加津彦'],
     },
     formations: {
       firstRow: [
@@ -163,12 +162,12 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["知りたいこと"].title,
+    title: SONGS['知りたいこと'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["佐々木裕"],
-      arrange: ["佐々木裕"],
+      lyrics: ['秋元康'],
+      compose: ['佐々木裕'],
+      arrange: ['佐々木裕'],
     },
     formations: {
       firstRow: [

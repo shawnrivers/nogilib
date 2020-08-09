@@ -1,79 +1,67 @@
-import * as React from "react";
-import { injectIntl } from "react-intl";
-import { Search, SearchResult } from "client/features/Search/template";
-import { useScrollRestoration } from "client/hooks/useScrollRestoration";
-import "client/styles/app.scss";
-import { SearchResultType } from "client/utils/constants";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { toCdNumber } from "utils/strings";
+import * as React from 'react';
+import { Search, SearchResult } from 'client/features/Search/template';
+import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
+import { toCdNumber } from 'utils/strings';
+import { getAlbumUrl, getMemberUrl, getSongUrl } from 'client/utils/urls';
+import { MemberResult } from 'server/actors/Members/models';
+import { DiscographyResult } from 'server/actors/Discography/models';
+import { SongResult } from 'server/actors/Songs/models';
+import { useTranslations } from 'client/hooks/useTranslations';
+import { useAppContext } from 'client/hooks/useAppContext';
 
 export type MemberDoc = {
-  id: string;
-  name: string;
-  nameKey: string;
-  nameNotations: {
-    lastName: string;
-    firstName: string;
-    lastNameEn: string;
-    firstNameEn: string;
-    lastNameFurigana: string;
-    firstNameFurigana: string;
-  };
-  profileImage: string;
-  type: SearchResultType.Members;
+  key: MemberResult['name'];
+  nameNotations: MemberResult['nameNotations'];
+  profileImage: MemberResult['profileImage'];
+  join: MemberResult['join'];
 };
 
-export type SingleDoc = {
-  id: string;
-  name: string;
-  title: string;
-  number: string;
-  artwork: string;
-  type: SearchResultType.Singles;
-};
-
-export type AlbumDoc = {
-  id: string;
-  name: string;
-  title: string;
-  number: string;
-  artwork: string;
-  type: SearchResultType.Albums;
+export type CdDoc = {
+  title: DiscographyResult['title'];
+  key: DiscographyResult['key'];
+  number: DiscographyResult['number'];
+  artwork: DiscographyResult['artworks'][0];
+  cdType: DiscographyResult['type'];
 };
 
 export type SongDoc = {
-  id: string;
-  name: string;
-  title: string;
-  key: string;
-  artwork: string;
-  songType: SongType;
-  single: {
-    number: string;
-    title: string;
-  };
-  album:
-    | {
-        number: string;
-        title: string;
-      }
-    | undefined;
-  type: SearchResultType.Songs;
+  title: SongResult['title'];
+  key: SongResult['key'];
+  artwork: SongResult['artwork'];
+  songType: SongResult['type'];
+  single: SongResult['single'];
+  album: SongResult['albums'][0] | undefined;
 };
 
-export type SearchDoc = AlbumDoc | SingleDoc | SongDoc | MemberDoc;
+export type SearchDoc = (
+  | (CdDoc & {
+      type: 'cds';
+    })
+  | (SongDoc & {
+      type: 'songs';
+    })
+  | (MemberDoc & {
+      type: 'members';
+    })
+) & {
+  id: string;
+  name: string;
+};
 
 let timeout: NodeJS.Timeout;
 
-export const SearchContainer = injectIntl(({ intl }: { intl: any }) => {
+export const SearchPageContainer: React.FC = () => {
   useScrollRestoration();
 
-  const [query, setQuery] = React.useState("");
+  const [query, setQuery] = React.useState('');
   const [results, setResults] = React.useState<SearchDoc[]>([]);
   const [isSearching, setIsSearching] = React.useState(false);
 
+  const { language } = useAppContext();
+  const { getTranslation } = useTranslations();
+
   const lunr = React.useMemo(
-    () => (typeof window !== "undefined" ? (window as any).__LUNR__.ja : null),
+    () => (typeof window !== 'undefined' ? (window as any).__LUNR__.ja : null),
     []
   );
 
@@ -88,7 +76,7 @@ export const SearchContainer = injectIntl(({ intl }: { intl: any }) => {
 
       timeout = setTimeout(() => {
         const searchResult =
-          inputQuery !== ""
+          inputQuery !== ''
             ? lunr.index
                 .search(`name:*${inputQuery}*`, { extend: true })
                 .map(({ ref }: any) => lunr.store[ref])
@@ -104,63 +92,56 @@ export const SearchContainer = injectIntl(({ intl }: { intl: any }) => {
 
   const convertedResults = React.useMemo(() => {
     let members: SearchResult[] = [];
-    let singles: SearchResult[] = [];
+    let cds: SearchResult[] = [];
     let albums: SearchResult[] = [];
     let songs: SearchResult[] = [];
 
     for (const result of results) {
-      if (result.type === SearchResultType.Members) {
+      if (result.type === 'members') {
+        const memberName =
+          language === 'en'
+            ? `${result.nameNotations.lastNameEn} ${result.nameNotations.firstNameEn}`
+            : `${result.nameNotations.lastName}${result.nameNotations.firstName}`;
+
         members.push({
-          to: `/${result.type}/${result.nameKey}`,
+          to: getMemberUrl(result.key),
           imgSrc: result.profileImage,
-          heading: `${result.nameNotations.lastName} ${result.nameNotations.firstName}`,
-          caption: `${result.nameNotations.lastNameEn} ${result.nameNotations.firstNameEn}`,
+          heading: memberName,
+          captions: [getTranslation(`${result.join} generation` as any)],
         });
       }
 
-      if (result.type === SearchResultType.Singles) {
-        singles.push({
-          to: `/${result.type}/${result.number}`,
-          imgSrc: result.artwork,
+      if (result.type === 'cds') {
+        cds.push({
+          to: getAlbumUrl(result.key),
+          imgSrc: result.artwork.url,
           heading: result.title,
-          caption: `${toCdNumber(result.number)} single`,
+          captions: [`${toCdNumber(result.number)} ${result.cdType}`],
         });
       }
 
-      if (result.type === SearchResultType.Albums) {
-        albums.push({
-          to: `/${result.type}/${result.number}`,
-          imgSrc: result.artwork,
-          heading: result.title,
-          caption: `${toCdNumber(result.number)} album`,
-        });
-      }
+      if (result.type === 'songs') {
+        const captions = [`${getTranslation(result.songType as any)}`];
 
-      if (result.type === SearchResultType.Songs) {
-        let secondCaption = "";
-
-        if (result.single.number !== "") {
-          secondCaption = `#${toCdNumber(result.single.number)} single`;
+        if (result.single.number !== '') {
+          captions.push(`${toCdNumber(result.single.number)} single`);
         } else {
           if (result.album !== undefined) {
-            secondCaption = `#${toCdNumber(result.album.number)} album`;
+            captions.push(`${toCdNumber(result.album.number)} album`);
           }
         }
 
         songs.push({
-          to: `/${result.type}/${result.key}`,
+          to: getSongUrl(result.key),
           imgSrc: result.artwork,
           heading: result.title,
-          caption: `#${intl.formatMessage({
-            id: result.songType,
-          })}`,
-          secondCaption,
+          captions,
         });
       }
     }
 
-    return { members, singles, albums, songs };
-  }, [results, intl]);
+    return { members, cds, albums, songs };
+  }, [getTranslation, results, language]);
 
   return (
     <Search
@@ -170,6 +151,6 @@ export const SearchContainer = injectIntl(({ intl }: { intl: any }) => {
       isSearching={isSearching}
     />
   );
-});
+};
 
-export default () => <SearchContainer />;
+export default SearchPageContainer;

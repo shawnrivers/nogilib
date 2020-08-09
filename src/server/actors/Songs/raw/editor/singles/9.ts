@@ -1,22 +1,21 @@
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
-import { SongRaw } from "server/actors/Songs/models";
-import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { SONGS } from "server/actors/Songs/constants/songTitle";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { SongRaw } from 'server/actors/Songs/models';
+import { createSongRaw } from 'server/actors/Songs/raw/creator';
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
+import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const NINTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS["夏のFree&Easy"].title,
+    title: SONGS['夏のFree&Easy'].title,
     type: SongType.Title,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["井上トモノリ"],
-      arrange: ["橋本幸太"],
-      direct: ["丸山健志"],
+      lyrics: ['秋元康'],
+      compose: ['井上トモノリ'],
+      arrange: ['橋本幸太'],
+      direct: ['丸山健志'],
     },
     center: [MemberNameKey.NishinoNanase],
-    fukujin: FukujinType.RowOneTwo,
+    fukujin: 'row-1-2',
     formations: {
       firstRow: [
         MemberNameKey.MatsuiRena,
@@ -44,13 +43,13 @@ export const NINTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["ここにいる理由"].title,
+    title: SONGS['ここにいる理由'].title,
     type: SongType.Under,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["長谷川湊"],
-      arrange: ["Carlos K."],
-      direct: ["近藤大介"],
+      lyrics: ['秋元康'],
+      compose: ['長谷川湊'],
+      arrange: ['Carlos K.'],
+      direct: ['近藤大介'],
     },
     center: [MemberNameKey.ItouMarika],
     formations: {
@@ -79,12 +78,12 @@ export const NINTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["何もできずにそばにいる"].title,
+    title: SONGS['何もできずにそばにいる'].title,
     type: SongType.Selected,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["角野寿和"],
-      arrange: ["京田誠一"],
+      lyrics: ['秋元康'],
+      compose: ['角野寿和'],
+      arrange: ['京田誠一'],
     },
     center: [MemberNameKey.NishinoNanase],
     formations: {
@@ -114,13 +113,13 @@ export const NINTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["その先の出口!"].title,
+    title: SONGS['その先の出口!'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Carlos K."],
-      arrange: ["Carlos K."],
-      direct: ["中村太洸"],
+      lyrics: ['秋元康'],
+      compose: ['Carlos K.'],
+      arrange: ['Carlos K.'],
+      direct: ['中村太洸'],
     },
     center: [MemberNameKey.ShiraishiMai],
     formations: {
@@ -138,13 +137,13 @@ export const NINTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["無口なライオン"].title,
+    title: SONGS['無口なライオン'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Shusui", "ヒロイズム"],
-      arrange: ["Shusui", "ヒロイズム"],
-      direct: ["湯浅弘章"],
+      lyrics: ['秋元康'],
+      compose: ['Shusui', 'ヒロイズム'],
+      arrange: ['Shusui', 'ヒロイズム'],
+      direct: ['湯浅弘章'],
     },
     center: [MemberNameKey.NishinoNanase],
     formations: {
@@ -161,12 +160,12 @@ export const NINTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["僕が行かなきゃ誰が行くんだ?"].title,
+    title: SONGS['僕が行かなきゃ誰が行くんだ?'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["中土智博"],
-      arrange: ["中土智博"],
+      lyrics: ['秋元康'],
+      compose: ['中土智博'],
+      arrange: ['中土智博'],
     },
     center: [MemberNameKey.NishinoNanase],
     formations: {

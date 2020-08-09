@@ -1,23 +1,22 @@
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
-import { SongRaw } from "server/actors/Songs/models";
-import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
-import { SONGS } from "server/actors/Songs/constants/songTitle";
-import { UNIT_NAMES } from "server/actors/Units/constants/unitName";
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { SongRaw } from 'server/actors/Songs/models';
+import { createSongRaw } from 'server/actors/Songs/raw/creator';
+import { SongType } from 'server/actors/Songs/constants/songType';
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
+import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
 
 export const FOURTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS["制服のマネキン"].title,
+    title: SONGS['制服のマネキン'].title,
     type: SongType.Title,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["杉山勝彦"],
-      arrange: ["百石元"],
-      direct: ["池田一真"],
+      lyrics: ['秋元康'],
+      compose: ['杉山勝彦'],
+      arrange: ['百石元'],
+      direct: ['池田一真'],
     },
     center: [MemberNameKey.IkomaRina],
-    fukujin: FukujinType.RowOneTwo,
+    fukujin: 'row-1-2',
     formations: {
       firstRow: [
         MemberNameKey.IkutaErika,
@@ -44,13 +43,13 @@ export const FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["春のメロディー"].title,
+    title: SONGS['春のメロディー'].title,
     type: SongType.Under,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["フジノタカフミ"],
-      arrange: ["湯浅篤"],
-      direct: ["柿本ケンサク"],
+      lyrics: ['秋元康'],
+      compose: ['フジノタカフミ'],
+      arrange: ['湯浅篤'],
+      direct: ['柿本ケンサク'],
     },
     center: [MemberNameKey.NakadaKana],
     formations: {
@@ -81,13 +80,13 @@ export const FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["指望遠鏡"].title,
+    title: SONGS['指望遠鏡'].title,
     type: SongType.Selected,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["北室龍馬"],
-      arrange: ["木村有希"],
-      direct: ["丸山健志"],
+      lyrics: ['秋元康'],
+      compose: ['北室龍馬'],
+      arrange: ['木村有希'],
+      direct: ['丸山健志'],
     },
     center: [MemberNameKey.IkomaRina],
     formations: {
@@ -116,12 +115,12 @@ export const FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["やさしさなら間に合ってる"].title,
+    title: SONGS['やさしさなら間に合ってる'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["松田純一"],
-      arrange: ["清水武仁"],
+      lyrics: ['秋元康'],
+      compose: ['松田純一'],
+      arrange: ['清水武仁'],
     },
     center: [MemberNameKey.TakayamaKazumi, MemberNameKey.NoujouAmi],
     formations: {
@@ -138,13 +137,13 @@ export const FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["ここじゃないどこか"].title,
+    title: SONGS['ここじゃないどこか'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["大藤史"],
-      arrange: ["京田誠一"],
-      direct: ["岡川太郎"],
+      lyrics: ['秋元康'],
+      compose: ['大藤史'],
+      arrange: ['京田誠一'],
+      direct: ['岡川太郎'],
     },
     formations: {
       firstRow: [
@@ -155,15 +154,15 @@ export const FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["渋谷ブルース"].title,
+    title: SONGS['渋谷ブルース'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["佐藤嘉風"],
-      arrange: ["佐藤嘉風"],
-      direct: ["丸山健志"],
+      lyrics: ['秋元康'],
+      compose: ['佐藤嘉風'],
+      arrange: ['佐藤嘉風'],
+      direct: ['丸山健志'],
     },
-    unit: UNIT_NAMES["WHITE HIGH"].name,
+    unit: UNIT_NAMES['WHITE HIGH'].name,
     formations: {
       firstRow: [MemberNameKey.ShiraishiMai, MemberNameKey.TakayamaKazumi],
     },

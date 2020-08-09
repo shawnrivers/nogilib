@@ -1,22 +1,21 @@
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
-import { SongRaw } from "server/actors/Songs/models";
-import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
-import { SONGS } from "server/actors/Songs/constants/songTitle";
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { SongRaw } from 'server/actors/Songs/models';
+import { createSongRaw } from 'server/actors/Songs/raw/creator';
+import { SongType } from 'server/actors/Songs/constants/songType';
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS["ハルジオンが咲く頃"].title,
+    title: SONGS['ハルジオンが咲く頃'].title,
     type: SongType.Title,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Akira Sunset", "APAZZI"],
-      arrange: ["Akira Sunset", "APAZZI"],
-      direct: ["山戸結希"],
+      lyrics: ['秋元康'],
+      compose: ['Akira Sunset', 'APAZZI'],
+      arrange: ['Akira Sunset', 'APAZZI'],
+      direct: ['山戸結希'],
     },
     center: [MemberNameKey.FukagawaMai],
-    fukujin: FukujinType.RowOneTwo,
+    fukujin: 'row-1-2',
     formations: {
       firstRow: [
         MemberNameKey.HashimotoNanami,
@@ -44,13 +43,13 @@ export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["不等号"].title,
+    title: SONGS['不等号'].title,
     type: SongType.Under,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["福田貴史"],
-      arrange: ["福田貴史"],
-      direct: ["池田千尋"],
+      lyrics: ['秋元康'],
+      compose: ['福田貴史'],
+      arrange: ['福田貴史'],
+      direct: ['池田千尋'],
     },
     center: [MemberNameKey.NakamotoHimeka],
     formations: {
@@ -82,12 +81,12 @@ export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["遥かなるブータン"].title,
+    title: SONGS['遥かなるブータン'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["ツキダタダシ"],
-      arrange: ["ha-j"],
+      lyrics: ['秋元康'],
+      compose: ['ツキダタダシ'],
+      arrange: ['ha-j'],
     },
     center: [MemberNameKey.IkutaErika],
     formations: {
@@ -102,24 +101,24 @@ export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["強がる蕾"].title,
+    title: SONGS['強がる蕾'].title,
     type: SongType.Solo,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["大貫和紀", "河原レオ", "高木龍一"],
-      arrange: ["Carlos K."],
-      direct: ["真壁幸紀"],
+      lyrics: ['秋元康'],
+      compose: ['大貫和紀', '河原レオ', '高木龍一'],
+      arrange: ['Carlos K.'],
+      direct: ['真壁幸紀'],
     },
     solo: MemberNameKey.FukagawaMai,
   }),
   createSongRaw({
-    title: SONGS["急斜面"].title,
+    title: SONGS['急斜面'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["FURUTA", "Yasutaka Ishio"],
-      arrange: ["重永亮介"],
-      direct: ["番場秀一"],
+      lyrics: ['秋元康'],
+      compose: ['FURUTA', 'Yasutaka Ishio'],
+      arrange: ['重永亮介'],
+      direct: ['番場秀一'],
     },
     formations: {
       firstRow: [
@@ -130,23 +129,23 @@ export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["釣り堀"].title,
+    title: SONGS['釣り堀'].title,
     type: SongType.Solo,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Bush-I"],
-      arrange: ["APAZZI"],
-      direct: ["永田琴"],
+      lyrics: ['秋元康'],
+      compose: ['Bush-I'],
+      arrange: ['APAZZI'],
+      direct: ['永田琴'],
     },
     solo: MemberNameKey.NishinoNanase,
   }),
   createSongRaw({
-    title: SONGS["憂鬱と風船ガム"].title,
+    title: SONGS['憂鬱と風船ガム'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["HIROTOMO", "Dr.Lilcom"],
-      arrange: ["APAZZI"],
+      lyrics: ['秋元康'],
+      compose: ['HIROTOMO', 'Dr.Lilcom'],
+      arrange: ['APAZZI'],
     },
     center: [MemberNameKey.HoshinoMinami],
     formations: {

@@ -1,22 +1,21 @@
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
-import { SongRaw } from "server/actors/Songs/models";
-import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
-import { SONGS } from "server/actors/Songs/constants/songTitle";
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { SongRaw } from 'server/actors/Songs/models';
+import { createSongRaw } from 'server/actors/Songs/raw/creator';
+import { SongType } from 'server/actors/Songs/constants/songType';
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const SEVENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS["バレッタ"].title,
+    title: SONGS['バレッタ'].title,
     type: SongType.Title,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["サイトウヨシヒロ"],
-      arrange: ["若田部誠"],
-      direct: ["江湖広二"],
+      lyrics: ['秋元康'],
+      compose: ['サイトウヨシヒロ'],
+      arrange: ['若田部誠'],
+      direct: ['江湖広二'],
     },
     center: [MemberNameKey.HoriMiona],
-    fukujin: FukujinType.RowOneTwo,
+    fukujin: 'row-1-2',
     formations: {
       firstRow: [
         MemberNameKey.NishinoNanase,
@@ -44,13 +43,13 @@ export const SEVENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["初恋の人を今でも"].title,
+    title: SONGS['初恋の人を今でも'].title,
     type: SongType.Under,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["古川貴浩"],
-      arrange: ["古川貴浩"],
-      direct: ["田所貴司"],
+      lyrics: ['秋元康'],
+      compose: ['古川貴浩'],
+      arrange: ['古川貴浩'],
+      direct: ['田所貴司'],
     },
     center: [MemberNameKey.HoshinoMinami],
     formations: {
@@ -76,13 +75,13 @@ export const SEVENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["月の大きさ"].title,
+    title: SONGS['月の大きさ'].title,
     type: SongType.Selected,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["古川貴浩"],
-      arrange: ["古川貴浩"],
-      direct: ["大久保拓朗"],
+      lyrics: ['秋元康'],
+      compose: ['古川貴浩'],
+      arrange: ['古川貴浩'],
+      direct: ['大久保拓朗'],
     },
     center: [MemberNameKey.HoriMiona],
     formations: {
@@ -112,12 +111,12 @@ export const SEVENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["私のために 誰かのために"].title,
+    title: SONGS['私のために 誰かのために'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["杉山勝彦"],
-      arrange: ["杉山勝彦", "有木竜郎"],
+      lyrics: ['秋元康'],
+      compose: ['杉山勝彦'],
+      arrange: ['杉山勝彦', '有木竜郎'],
     },
     center: [MemberNameKey.ShiraishiMai],
     formations: {
@@ -131,13 +130,13 @@ export const SEVENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["そんなバカな…"].title,
+    title: SONGS['そんなバカな…'].title,
     type: SongType.Selected,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Akira Sunset"],
-      arrange: ["Akira Sunset"],
-      direct: ["丸山健志"],
+      lyrics: ['秋元康'],
+      compose: ['Akira Sunset'],
+      arrange: ['Akira Sunset'],
+      direct: ['丸山健志'],
     },
     center: [MemberNameKey.HoriMiona],
     formations: {
@@ -168,12 +167,12 @@ export const SEVENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["やさしさとは"].title,
+    title: SONGS['やさしさとは'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["古川貴浩"],
-      arrange: ["古川貴浩"],
+      lyrics: ['秋元康'],
+      compose: ['古川貴浩'],
+      arrange: ['古川貴浩'],
     },
     center: [MemberNameKey.HashimotoNanami],
     formations: {

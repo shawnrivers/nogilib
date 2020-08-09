@@ -1,23 +1,22 @@
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
-import { SongRaw } from "server/actors/Songs/models";
-import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
-import { SONGS } from "server/actors/Songs/constants/songTitle";
-import { UNIT_NAMES } from "server/actors/Units/constants/unitName";
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { SongRaw } from 'server/actors/Songs/models';
+import { createSongRaw } from 'server/actors/Songs/raw/creator';
+import { SongType } from 'server/actors/Songs/constants/songType';
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
+import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
 
 export const EIGHTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS["気づいたら片想い"].title,
+    title: SONGS['気づいたら片想い'].title,
     type: SongType.Title,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Akira Sunset"],
-      arrange: ["湯浅篤"],
-      direct: ["柳沢翔"],
+      lyrics: ['秋元康'],
+      compose: ['Akira Sunset'],
+      arrange: ['湯浅篤'],
+      direct: ['柳沢翔'],
     },
     center: [MemberNameKey.NishinoNanase],
-    fukujin: FukujinType.RowOne,
+    fukujin: 'row-1',
     formations: {
       firstRow: [
         MemberNameKey.HoriMiona,
@@ -44,13 +43,13 @@ export const EIGHTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["生まれたままで"].title,
+    title: SONGS['生まれたままで'].title,
     type: SongType.Under,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["田中俊亮"],
-      arrange: ["鈴木裕明"],
-      direct: ["久保茂昭"],
+      lyrics: ['秋元康'],
+      compose: ['田中俊亮'],
+      arrange: ['鈴木裕明'],
+      direct: ['久保茂昭'],
     },
     center: [MemberNameKey.ItouMarika],
     formations: {
@@ -80,13 +79,13 @@ export const EIGHTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["ロマンスのスタート"].title,
+    title: SONGS['ロマンスのスタート'].title,
     type: SongType.Selected,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["押田誠"],
-      arrange: ["佐々木聡作", "押田誠"],
-      direct: ["丸山健志"],
+      lyrics: ['秋元康'],
+      compose: ['押田誠'],
+      arrange: ['佐々木聡作', '押田誠'],
+      direct: ['丸山健志'],
     },
     center: [MemberNameKey.NishinoNanase],
     formations: {
@@ -115,12 +114,12 @@ export const EIGHTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["吐息のメソッド"].title,
+    title: SONGS['吐息のメソッド'].title,
     type: SongType.Selected,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["田中明仁"],
-      arrange: ["TATOO"],
+      lyrics: ['秋元康'],
+      compose: ['田中明仁'],
+      arrange: ['TATOO'],
     },
     formations: {
       firstRow: [
@@ -148,26 +147,26 @@ export const EIGHTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["孤独兄弟"].title,
+    title: SONGS['孤独兄弟'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Soulife"],
-      arrange: ["Soulife"],
-      direct: ["池田一真"],
+      lyrics: ['秋元康'],
+      compose: ['Soulife'],
+      arrange: ['Soulife'],
+      direct: ['池田一真'],
     },
-    unit: UNIT_NAMES["孤独兄弟"].name,
+    unit: UNIT_NAMES['孤独兄弟'].name,
     formations: {
       firstRow: [MemberNameKey.ShiraishiMai, MemberNameKey.HashimotoNanami],
     },
   }),
   createSongRaw({
-    title: SONGS["ダンケシェーン"].title,
+    title: SONGS['ダンケシェーン'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Akira Sunset", "C#"],
-      arrange: ["Akira Sunset", "C#"],
+      lyrics: ['秋元康'],
+      compose: ['Akira Sunset', 'C#'],
+      arrange: ['Akira Sunset', 'C#'],
     },
     center: [MemberNameKey.IkutaErika],
     formations: {

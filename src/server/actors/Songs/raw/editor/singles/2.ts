@@ -1,22 +1,21 @@
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
-import { SongRaw } from "server/actors/Songs/models";
-import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
-import { SONGS } from "server/actors/Songs/constants/songTitle";
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { SongRaw } from 'server/actors/Songs/models';
+import { createSongRaw } from 'server/actors/Songs/raw/creator';
+import { SongType } from 'server/actors/Songs/constants/songType';
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const SECOND_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS["おいでシャンプー"].title,
+    title: SONGS['おいでシャンプー'].title,
     type: SongType.Title,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["小田切大"],
-      arrange: ["TATOO"],
-      direct: ["高橋栄樹"],
+      lyrics: ['秋元康'],
+      compose: ['小田切大'],
+      arrange: ['TATOO'],
+      direct: ['高橋栄樹'],
     },
     center: [MemberNameKey.IkomaRina],
-    fukujin: FukujinType.RowOneTwo,
+    fukujin: 'row-1-2',
     formations: {
       firstRow: [
         MemberNameKey.SakuraiReika,
@@ -43,13 +42,13 @@ export const SECOND_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["狼に口笛を"].title,
+    title: SONGS['狼に口笛を'].title,
     type: SongType.Under,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Akira Sunset"],
-      arrange: ["シライシ紗トリ"],
-      direct: ["福居英晃"],
+      lyrics: ['秋元康'],
+      compose: ['Akira Sunset'],
+      arrange: ['シライシ紗トリ'],
+      direct: ['福居英晃'],
     },
     center: [MemberNameKey.ItouMarika],
     formations: {
@@ -81,12 +80,12 @@ export const SECOND_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["心の薬"].title,
+    title: SONGS['心の薬'].title,
     type: SongType.Coupling,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["MIKOTO"],
-      arrange: ["木之下慶行"],
+      lyrics: ['秋元康'],
+      compose: ['MIKOTO'],
+      arrange: ['木之下慶行'],
     },
     center: [MemberNameKey.IkomaRina],
     formations: {
@@ -115,13 +114,13 @@ export const SECOND_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["偶然を言い訳にして"].title,
+    title: SONGS['偶然を言い訳にして'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["坂部大介"],
-      arrange: ["中土智博"],
-      direct: ["中村太洸"],
+      lyrics: ['秋元康'],
+      compose: ['坂部大介'],
+      arrange: ['中土智博'],
+      direct: ['中村太洸'],
     },
     formations: {
       firstRow: [
@@ -133,23 +132,23 @@ export const SECOND_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["水玉模様"].title,
+    title: SONGS['水玉模様'].title,
     type: SongType.Solo,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["若田部誠"],
-      arrange: ["若田部誠"],
-      direct: ["丸山健志"],
+      lyrics: ['秋元康'],
+      compose: ['若田部誠'],
+      arrange: ['若田部誠'],
+      direct: ['丸山健志'],
     },
     solo: MemberNameKey.IkomaRina,
   }),
   createSongRaw({
-    title: SONGS["ハウス!"].title,
+    title: SONGS['ハウス!'].title,
     type: SongType.Coupling,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["y@suo ohtani"],
-      arrange: ["y@suo ohtani"],
+      lyrics: ['秋元康'],
+      compose: ['y@suo ohtani'],
+      arrange: ['y@suo ohtani'],
     },
     center: [MemberNameKey.IkomaRina],
     formations: {

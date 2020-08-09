@@ -1,23 +1,23 @@
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
-import { SongRaw } from "server/actors/Songs/models";
-import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
-import { SONGS } from "server/actors/Songs/constants/songTitle";
-import { UNIT_NAMES } from "server/actors/Units/constants/unitName";
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { SongRaw } from 'server/actors/Songs/models';
+import { createSongRaw } from 'server/actors/Songs/raw/creator';
+import { SongType } from 'server/actors/Songs/constants/songType';
+
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
+import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
 
 export const FIFTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS["裸足でSummer"].title,
+    title: SONGS['裸足でSummer'].title,
     type: SongType.Title,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["福森秀敏"],
-      arrange: ["APAZZI"],
-      direct: ["丸山健志"],
+      lyrics: ['秋元康'],
+      compose: ['福森秀敏'],
+      arrange: ['APAZZI'],
+      direct: ['丸山健志'],
     },
     center: [MemberNameKey.SaitouAsuka],
-    fukujin: FukujinType.RowOneTwo,
+    fukujin: 'row-1-2',
     formations: {
       firstRow: [
         MemberNameKey.HashimotoNanami,
@@ -44,13 +44,13 @@ export const FIFTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["シークレットグラフィティー"].title,
+    title: SONGS['シークレットグラフィティー'].title,
     type: SongType.Under,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["ツキダタダシ"],
-      arrange: ["ツキダタダシ"],
-      direct: ["山岸聖太"],
+      lyrics: ['秋元康'],
+      compose: ['ツキダタダシ'],
+      arrange: ['ツキダタダシ'],
+      direct: ['山岸聖太'],
     },
     center: [MemberNameKey.HiguchiHina],
     formations: {
@@ -82,12 +82,12 @@ export const FIFTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["僕だけの光"].title,
+    title: SONGS['僕だけの光'].title,
     type: SongType.Selected,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Hiro Hoashi"],
-      arrange: ["Hiro Hoashi"],
+      lyrics: ['秋元康'],
+      compose: ['Hiro Hoashi'],
+      arrange: ['Hiro Hoashi'],
     },
     center: [MemberNameKey.SaitouAsuka],
     formations: {
@@ -112,37 +112,37 @@ export const FIFTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["オフショアガール"].title,
+    title: SONGS['オフショアガール'].title,
     type: SongType.Solo,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Akira Sunset", "ha-j"],
-      arrange: ["Akira Sunset", "ha-j"],
-      direct: ["井上強"],
+      lyrics: ['秋元康'],
+      compose: ['Akira Sunset', 'ha-j'],
+      arrange: ['Akira Sunset', 'ha-j'],
+      direct: ['井上強'],
     },
     solo: MemberNameKey.ShiraishiMai,
   }),
   createSongRaw({
-    title: SONGS["命の真実 ミュージカル「林檎売りとカメムシ」"].title,
+    title: SONGS['命の真実 ミュージカル「林檎売りとカメムシ」'].title,
     type: SongType.Solo,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["NA.ZU.NA"],
-      arrange: ["NA.ZU.NA"],
-      direct: ["中村太洸"],
+      lyrics: ['秋元康'],
+      compose: ['NA.ZU.NA'],
+      arrange: ['NA.ZU.NA'],
+      direct: ['中村太洸'],
     },
     solo: MemberNameKey.IkutaErika,
   }),
   createSongRaw({
-    title: SONGS["白米様"].title,
+    title: SONGS['白米様'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Ruby"],
-      arrange: ["あらケン"],
-      direct: ["伊藤衆人"],
+      lyrics: ['秋元康'],
+      compose: ['Ruby'],
+      arrange: ['あらケン'],
+      direct: ['伊藤衆人'],
     },
-    unit: UNIT_NAMES["さゆりんご軍団"].name,
+    unit: UNIT_NAMES['さゆりんご軍団'].name,
     formations: {
       firstRow: [MemberNameKey.MatsumuraSayuri],
       secondRow: [
@@ -153,12 +153,12 @@ export const FIFTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["行くあてのない僕たち"].title,
+    title: SONGS['行くあてのない僕たち'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["大橋莉子"],
-      arrange: ["佐々木裕"],
+      lyrics: ['秋元康'],
+      compose: ['大橋莉子'],
+      arrange: ['佐々木裕'],
     },
     formations: {
       firstRow: [MemberNameKey.ItouMarika, MemberNameKey.InoueSayuri],

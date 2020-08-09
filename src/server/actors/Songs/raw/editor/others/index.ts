@@ -1,18 +1,18 @@
-import { SongRaw } from "server/actors/Songs/models";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { SONGS } from "server/actors/Songs/constants/songTitle";
-import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
+import { SongRaw } from 'server/actors/Songs/models';
+import { SongType } from 'server/actors/Songs/constants/songType';
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
+import { createSongRaw } from 'server/actors/Songs/raw/creator';
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 
 export const OTHER_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS["世界中の隣人よ"].title,
+    title: SONGS['世界中の隣人よ'].title,
     type: SongType.Special,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["taka"],
-      arrange: ["taka"],
-      direct: ["横堀光範"],
+      lyrics: ['秋元康'],
+      compose: ['taka'],
+      arrange: ['taka'],
+      direct: ['横堀光範'],
     },
     formations: {
       firstRow: [
@@ -75,5 +75,43 @@ export const OTHER_SONGS: SongRaw[] = [
         MemberNameKey.WakatsukiYumi,
       ],
     },
+  }),
+  createSongRaw({
+    title: SONGS['Route 246'].title,
+    type: SongType.Title,
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['小室哲哉'],
+      arrange: ['小室哲哉'],
+      direct: ['maxilla'],
+    },
+    formations: {
+      firstRow: [
+        MemberNameKey.YodaYuuki,
+        MemberNameKey.IkutaErika,
+        MemberNameKey.SaitouAsuka,
+        MemberNameKey.EndouSakura,
+        MemberNameKey.KakiHaruka,
+      ],
+      secondRow: [
+        MemberNameKey.UmezawaMinami,
+        MemberNameKey.HoriMiona,
+        MemberNameKey.YamashitaMizuki,
+        MemberNameKey.KuboShiori,
+        MemberNameKey.AkimotoManatsu,
+        MemberNameKey.MatsumuraSayuri,
+      ],
+      thirdRow: [
+        MemberNameKey.ShinuchiMai,
+        MemberNameKey.KitanoHinako,
+        MemberNameKey.OozonoMomoko,
+        MemberNameKey.TsutsuiAyame,
+        MemberNameKey.HoshinoMinami,
+        MemberNameKey.IwamotoRenka,
+        MemberNameKey.TakayamaKazumi,
+      ],
+    },
+    center: [MemberNameKey.SaitouAsuka],
+    fukujin: 'row-1-2',
   }),
 ];

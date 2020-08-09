@@ -1,22 +1,22 @@
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
-import { SongRaw } from "server/actors/Songs/models";
-import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
-import { SONGS } from "server/actors/Songs/constants/songTitle";
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { SongRaw } from 'server/actors/Songs/models';
+import { createSongRaw } from 'server/actors/Songs/raw/creator';
+import { SongType } from 'server/actors/Songs/constants/songType';
+
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const ELEVENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS["命は美しい"].title,
+    title: SONGS['命は美しい'].title,
     type: SongType.Title,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Hiroki Sagawa"],
-      arrange: ["Hiroki Sagawa"],
-      direct: ["井上強"],
+      lyrics: ['秋元康'],
+      compose: ['Hiroki Sagawa'],
+      arrange: ['Hiroki Sagawa'],
+      direct: ['井上強'],
     },
     center: [MemberNameKey.NishinoNanase],
-    fukujin: FukujinType.RowOneTwo,
+    fukujin: 'row-1-2',
     formations: {
       firstRow: [
         MemberNameKey.MatsuiRena,
@@ -45,13 +45,13 @@ export const ELEVENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["君は僕と会わない方がよかったのかな"].title,
+    title: SONGS['君は僕と会わない方がよかったのかな'].title,
     type: SongType.Under,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Akira Sunset", "ha-j"],
-      arrange: ["Akira Sunset", "ha-j"],
-      direct: ["山田篤宏"],
+      lyrics: ['秋元康'],
+      compose: ['Akira Sunset', 'ha-j'],
+      arrange: ['Akira Sunset', 'ha-j'],
+      direct: ['山田篤宏'],
     },
     center: [MemberNameKey.NakamotoHimeka],
     formations: {
@@ -78,13 +78,13 @@ export const ELEVENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["あらかじめ語られるロマンス"].title,
+    title: SONGS['あらかじめ語られるロマンス'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["SoichiroK", "Nozomu.S"],
-      arrange: ["SoichiroK", "Nozomu.S"],
-      direct: ["岡川太郎"],
+      lyrics: ['秋元康'],
+      compose: ['SoichiroK', 'Nozomu.S'],
+      arrange: ['SoichiroK', 'Nozomu.S'],
+      direct: ['岡川太郎'],
     },
     center: [MemberNameKey.SaitouAsuka, MemberNameKey.HoshinoMinami],
     formations: {
@@ -99,13 +99,13 @@ export const ELEVENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["立ち直り中"].title,
+    title: SONGS['立ち直り中'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["福田貴史"],
-      arrange: ["TATOO"],
-      direct: ["湯浅弘章"],
+      lyrics: ['秋元康'],
+      compose: ['福田貴史'],
+      arrange: ['TATOO'],
+      direct: ['湯浅弘章'],
     },
     center: [MemberNameKey.ShiraishiMai],
     formations: {
@@ -121,23 +121,23 @@ export const ELEVENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["ごめんね ずっと…"].title,
+    title: SONGS['ごめんね ずっと…'].title,
     type: SongType.Solo,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["山田智和"],
-      arrange: ["住谷翔平"],
-      direct: ["山戸結希"],
+      lyrics: ['秋元康'],
+      compose: ['山田智和'],
+      arrange: ['住谷翔平'],
+      direct: ['山戸結希'],
     },
     solo: MemberNameKey.NishinoNanase,
   }),
   createSongRaw({
-    title: SONGS["ボーダー"].title,
+    title: SONGS['ボーダー'].title,
     type: SongType.SecondGeneration,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["中土智博"],
-      arrange: ["中土智博"],
+      lyrics: ['秋元康'],
+      compose: ['中土智博'],
+      arrange: ['中土智博'],
     },
     center: [MemberNameKey.TeradaRanze],
     formations: {

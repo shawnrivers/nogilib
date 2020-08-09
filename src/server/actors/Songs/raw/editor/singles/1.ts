@@ -1,22 +1,21 @@
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
-import { SongRaw } from "server/actors/Songs/models";
-import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
-import { SONGS } from "server/actors/Songs/constants/songTitle";
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { SongRaw } from 'server/actors/Songs/models';
+import { createSongRaw } from 'server/actors/Songs/raw/creator';
+import { SongType } from 'server/actors/Songs/constants/songType';
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const FIRST_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS["ぐるぐるカーテン"].title,
+    title: SONGS['ぐるぐるカーテン'].title,
     type: SongType.Title,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["黒須克彦"],
-      arrange: ["湯浅篤"],
-      direct: ["操上和美"],
+      lyrics: ['秋元康'],
+      compose: ['黒須克彦'],
+      arrange: ['湯浅篤'],
+      direct: ['操上和美'],
     },
     center: [MemberNameKey.IkomaRina],
-    fukujin: FukujinType.RowOneTwo,
+    fukujin: 'row-1-2',
     formations: {
       firstRow: [
         MemberNameKey.IkutaErika,
@@ -43,12 +42,12 @@ export const FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["左胸の勇気"].title,
+    title: SONGS['左胸の勇気'].title,
     type: SongType.Under,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["小内喜文"],
-      arrange: ["佐々木裕"],
+      lyrics: ['秋元康'],
+      compose: ['小内喜文'],
+      arrange: ['佐々木裕'],
     },
     center: [MemberNameKey.HatanakaSeira],
     formations: {
@@ -76,13 +75,13 @@ export const FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["乃木坂の詩"].title,
+    title: SONGS['乃木坂の詩'].title,
     type: SongType.Coupling,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["井手コウジ"],
-      arrange: ["井手コウジ"],
-      direct: ["南流石"],
+      lyrics: ['秋元康'],
+      compose: ['井手コウジ'],
+      arrange: ['井手コウジ'],
+      direct: ['南流石'],
     },
     center: [MemberNameKey.IkomaRina],
     formations: {
@@ -124,13 +123,13 @@ export const FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["会いたかったかもしれない"].title,
+    title: SONGS['会いたかったかもしれない'].title,
     type: SongType.Coupling,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["BOUNCEBACK", "MIKOTO"],
-      arrange: ["野中雄一"],
-      direct: ["久保茂昭"],
+      lyrics: ['秋元康'],
+      compose: ['BOUNCEBACK', 'MIKOTO'],
+      arrange: ['野中雄一'],
+      direct: ['久保茂昭'],
     },
     center: [MemberNameKey.IkomaRina],
     formations: {
@@ -159,13 +158,13 @@ export const FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["失いたくないから"].title,
+    title: SONGS['失いたくないから'].title,
     type: SongType.Coupling,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["蛯原ランス"],
-      arrange: ["塩川満己"],
-      direct: ["丸山健志"],
+      lyrics: ['秋元康'],
+      compose: ['蛯原ランス'],
+      arrange: ['塩川満己'],
+      direct: ['丸山健志'],
     },
     center: [MemberNameKey.IkomaRina, MemberNameKey.IkutaErika],
     formations: {
@@ -194,12 +193,12 @@ export const FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["白い雲にのって"].title,
+    title: SONGS['白い雲にのって'].title,
     type: SongType.Coupling,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["太田美知彦"],
-      arrange: ["太田美知彦"],
+      lyrics: ['秋元康'],
+      compose: ['太田美知彦'],
+      arrange: ['太田美知彦'],
     },
     center: [MemberNameKey.IkomaRina],
     formations: {

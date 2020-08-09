@@ -1,22 +1,22 @@
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
-import { SongRaw } from "server/actors/Songs/models";
-import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { FukujinType } from "server/actors/Cds/Singles/constants/fukujinType";
-import { SONGS } from "server/actors/Songs/constants/songTitle";
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { SongRaw } from 'server/actors/Songs/models';
+import { createSongRaw } from 'server/actors/Songs/raw/creator';
+import { SongType } from 'server/actors/Songs/constants/songType';
+
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const TENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS["何度目の青空か?"].title,
+    title: SONGS['何度目の青空か?'].title,
     type: SongType.Title,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["川浦正大"],
-      arrange: ["百石元"],
-      direct: ["内田けんじ"],
+      lyrics: ['秋元康'],
+      compose: ['川浦正大'],
+      arrange: ['百石元'],
+      direct: ['内田けんじ'],
     },
     center: [MemberNameKey.IkutaErika],
-    fukujin: FukujinType.RowOneTwo,
+    fukujin: 'row-1-2',
     formations: {
       firstRow: [
         MemberNameKey.MatsuiRena,
@@ -43,13 +43,13 @@ export const TENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["あの日 僕は咄嗟に嘘をついた"].title,
+    title: SONGS['あの日 僕は咄嗟に嘘をついた'].title,
     type: SongType.Under,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["三輪智也"],
-      arrange: ["京田誠一"],
-      direct: ["湯浅弘章"],
+      lyrics: ['秋元康'],
+      compose: ['三輪智也'],
+      arrange: ['京田誠一'],
+      direct: ['湯浅弘章'],
     },
     center: [MemberNameKey.InoueSayuri],
     formations: {
@@ -79,11 +79,11 @@ export const TENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["遠回りの愛情"].title,
+    title: SONGS['遠回りの愛情'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Noda Akiko"],
+      lyrics: ['秋元康'],
+      compose: ['Noda Akiko'],
       arrange: ['野中"まさ"雄一'],
     },
     center: [MemberNameKey.NagashimaSeira, MemberNameKey.SakuraiReika],
@@ -101,13 +101,13 @@ export const TENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["転がった鐘を鳴らせ!"].title,
+    title: SONGS['転がった鐘を鳴らせ!'].title,
     type: SongType.Selected,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["中山英二"],
-      arrange: ["田上陽一"],
-      direct: ["丸山健志"],
+      lyrics: ['秋元康'],
+      compose: ['中山英二'],
+      arrange: ['田上陽一'],
+      direct: ['丸山健志'],
     },
     center: [MemberNameKey.IkutaErika],
     formations: {
@@ -132,13 +132,13 @@ export const TENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["私、起きる。"].title,
+    title: SONGS['私、起きる。'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["Akira Sunset", "ZERO"],
-      arrange: ["Akira Sunset", "ZERO"],
-      direct: ["柳沢翔"],
+      lyrics: ['秋元康'],
+      compose: ['Akira Sunset', 'ZERO'],
+      arrange: ['Akira Sunset', 'ZERO'],
+      direct: ['柳沢翔'],
     },
     center: [MemberNameKey.IkutaErika],
     formations: {
@@ -157,12 +157,12 @@ export const TENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["Tender days"].title,
+    title: SONGS['Tender days'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["SoichiroK", "Nozomu.S"],
-      arrange: ["Soulife"],
+      lyrics: ['秋元康'],
+      compose: ['SoichiroK', 'Nozomu.S'],
+      arrange: ['Soulife'],
     },
     formations: {
       firstRow: [
