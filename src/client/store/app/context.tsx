@@ -9,10 +9,10 @@ import {
 import { Language } from 'client/types/language';
 
 const getLocalStorageTheme = () =>
-  localStorage.getItem(LOCAL_STORAGE_THEME_MODE_KEY) as ThemeMode | null;
+  localStorage?.getItem(LOCAL_STORAGE_THEME_MODE_KEY) as ThemeMode | null;
 
 const getLocalStorageLanguage = () =>
-  localStorage.getItem(LOCAL_STORAGE_LANGUAGE) as Language | null;
+  localStorage?.getItem(LOCAL_STORAGE_LANGUAGE) as Language | null;
 
 type Context = {
   themeMode: ThemeMode;
@@ -67,7 +67,7 @@ export const AppContextProvider: React.FC = props => {
         },
       });
 
-      localStorage.setItem(LOCAL_STORAGE_LANGUAGE, language);
+      localStorage?.setItem(LOCAL_STORAGE_LANGUAGE, language);
     },
     [dispatch]
   );
@@ -77,10 +77,10 @@ export const AppContextProvider: React.FC = props => {
       if (themeMode === 'light' || themeMode === 'dark') {
         setThemeKey(themeMode);
         setThemeMode(themeMode);
-        localStorage.setItem(LOCAL_STORAGE_THEME_MODE_KEY, themeMode);
+        localStorage?.setItem(LOCAL_STORAGE_THEME_MODE_KEY, themeMode);
       } else {
         setThemeMode('auto');
-        localStorage.setItem(LOCAL_STORAGE_THEME_MODE_KEY, 'auto');
+        localStorage?.setItem(LOCAL_STORAGE_THEME_MODE_KEY, 'auto');
       }
     },
     [setThemeKey, setThemeMode]
