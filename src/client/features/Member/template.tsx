@@ -17,6 +17,26 @@ import { useIntl } from 'client/hooks/useIntl';
 import { PositionCounter } from 'client/features/Member/components/PositionCounter';
 import { TextLink } from 'client/components/molecules/links/TextLink';
 
+const InfoItemLabel: React.FC = props => (
+  <Typography
+    variant="body2"
+    element="span"
+    textColor={{ on: 'onBackground', variant: 'standard' }}
+  >
+    {props.children}
+  </Typography>
+);
+
+const InfoItemValue: React.FC = props => (
+  <Typography
+    variant="body2"
+    element="span"
+    textColor={{ on: 'onBackground', variant: 'variant0' }}
+  >
+    {props.children}
+  </Typography>
+);
+
 export const MemberPage: React.FC<MemberPageProps> = props => {
   const {
     name,
@@ -104,114 +124,49 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
               text-transform: capitalize;
             `}
           >
-            <Typography
-              variant="body2"
-              element="span"
-              textColor={{ on: 'onBackground', variant: 'standard' }}
-            >
+            <InfoItemLabel>
               <Translation text="join" />
-            </Typography>
-            <Typography
-              variant="body2"
-              element="span"
-              textColor={{ on: 'onBackground', variant: 'variant0' }}
-            >
+            </InfoItemLabel>
+            <InfoItemValue>
               <Translation text={('join: ' + join) as any} />{' '}
               {graduation.isGraduated ? <Translation text="graduate" /> : null}
-            </Typography>
-            <Typography
-              variant="body2"
-              element="span"
-              textColor={{ on: 'onBackground', variant: 'standard' }}
-            >
+            </InfoItemValue>
+            <InfoItemLabel>
               <Translation text="birthday" />
-            </Typography>
-            <Typography
-              variant="body2"
-              element="span"
-              textColor={{ on: 'onBackground', variant: 'variant0' }}
-            >
-              {formatDate(birthday)}
-            </Typography>
-            <Typography
-              variant="body2"
-              element="span"
-              textColor={{ on: 'onBackground', variant: 'standard' }}
-            >
+            </InfoItemLabel>
+            <InfoItemValue>{formatDate(birthday)}</InfoItemValue>
+            <InfoItemLabel>
               <Translation text="height" />
-            </Typography>
-            <Typography
-              variant="body2"
-              textColor={{ on: 'onBackground', variant: 'variant0' }}
-              element="span"
-              css={css`
-                text-transform: lowercase;
-              `}
-            >
-              {height}cm
-            </Typography>
-            <Typography
-              variant="body2"
-              element="span"
-              textColor={{ on: 'onBackground', variant: 'standard' }}
-            >
+            </InfoItemLabel>
+            <InfoItemValue>{height}cm</InfoItemValue>
+            <InfoItemLabel>
               <Translation text="blood type" />
-            </Typography>
-            <Typography
-              variant="body2"
-              element="span"
-              textColor={{ on: 'onBackground', variant: 'variant0' }}
-            >
-              {bloodType}
-            </Typography>
-            <Typography
-              variant="body2"
-              element="span"
-              textColor={{ on: 'onBackground', variant: 'standard' }}
-            >
+            </InfoItemLabel>
+            <InfoItemValue>{bloodType}</InfoItemValue>
+            <InfoItemLabel>
               <Translation text="birthplace" />
-            </Typography>
-            <Typography
-              variant="body2"
-              element="span"
-              textColor={{ on: 'onBackground', variant: 'variant0' }}
-            >
+            </InfoItemLabel>
+            <InfoItemValue>
               <Translation text={origin as any} />
-            </Typography>
+            </InfoItemValue>
             {units.length > 0 ? (
               <React.Fragment>
-                <Typography
-                  variant="body2"
-                  element="span"
-                  textColor={{ on: 'onBackground', variant: 'standard' }}
-                >
+                <InfoItemLabel>
                   <Translation text="units" />
-                </Typography>
-                <Typography
-                  variant="body2"
-                  element="span"
-                  textColor={{ on: 'onBackground', variant: 'variant0' }}
-                >
+                </InfoItemLabel>
+                <InfoItemValue>
                   <LocalizedList list={units} />
-                </Typography>
+                </InfoItemValue>
               </React.Fragment>
             ) : null}
             {corps.length > 0 ? (
               <React.Fragment>
-                <Typography
-                  variant="body2"
-                  element="span"
-                  textColor={{ on: 'onBackground', variant: 'standard' }}
-                >
+                <InfoItemLabel>
                   <Translation text="corps" />
-                </Typography>
-                <Typography
-                  variant="body2"
-                  element="span"
-                  textColor={{ on: 'onBackground', variant: 'variant0' }}
-                >
+                </InfoItemLabel>
+                <InfoItemValue>
                   <LocalizedList list={corps} />
-                </Typography>
+                </InfoItemValue>
               </React.Fragment>
             ) : null}
           </div>
@@ -224,6 +179,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
               css={css`
                 margin: 0.5em 0;
                 text-align: center;
+                text-transform: capitalize;
               `}
             >
               <Translation text="websites" />
@@ -266,6 +222,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
               css={css`
                 margin: 0.5em 0;
                 text-align: center;
+                text-transform: capitalize;
               `}
             >
               <Translation text="photo albums" />
@@ -371,6 +328,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                       css={css`
                         text-transform: capitalize;
                         margin-top: 0.3em;
+                        line-height: 1;
                       `}
                     >
                       <Translation text="center" />
@@ -395,6 +353,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                       css={css`
                         text-transform: capitalize;
                         margin-top: 0.3em;
+                        line-height: 1;
                       `}
                     >
                       <Translation text="fukujin" />
@@ -419,6 +378,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                       css={css`
                         text-transform: capitalize;
                         margin-top: 0.3em;
+                        line-height: 1;
                       `}
                     >
                       <Translation text="selected" />
@@ -443,6 +403,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                       css={css`
                         text-transform: capitalize;
                         margin-top: 0.3em;
+                        line-height: 1;
                       `}
                     >
                       <Translation text="under" />
