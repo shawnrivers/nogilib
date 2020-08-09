@@ -65,6 +65,7 @@ export const Header: React.FC<HeaderProps> = props => {
           css={css`
             margin-top: 0.2em;
             text-transform: ${titleTextTransform ?? 'initial'};
+            text-align: center;
           `}
         >
           {title}

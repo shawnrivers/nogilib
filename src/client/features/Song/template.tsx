@@ -121,10 +121,12 @@ export const SongPage: React.FC<SongPageProps> = ({
   return (
     <PageContent title={title} showBackButton>
       <React.Fragment>
-        <Typography
-          variant="body1"
+        <div
           css={css`
-            margin-top: 0.5em;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 0.8em;
           `}
         >
           <Hashtag
@@ -148,7 +150,7 @@ export const SongPage: React.FC<SongPageProps> = ({
               {tag}
             </Hashtag>
           ))}
-        </Typography>
+        </div>
         <TextDivider text={<Translation text="info" />} />
         <div
           css={css`
@@ -165,6 +167,7 @@ export const SongPage: React.FC<SongPageProps> = ({
           <GridArtworkImage
             src={artwork}
             alt={title}
+            glow
             fixedSize
             css={css`
               width: 200px;

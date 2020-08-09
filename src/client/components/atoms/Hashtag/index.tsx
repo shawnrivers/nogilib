@@ -14,7 +14,7 @@ export const Hashtag: React.FC<{
 }> = props => {
   const theme = useAppTheme();
   const {
-    textColor = { on: 'onBackground', variant: 'standard' },
+    textColor = { on: 'onBackground', variant: 'variant0' },
     spacing = 'xs',
     children,
     ...restProps

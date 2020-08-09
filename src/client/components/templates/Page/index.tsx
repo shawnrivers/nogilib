@@ -6,7 +6,7 @@ import {
   HeaderProps,
 } from 'client/components/templates/Page/components/Header';
 import { NavigationBar } from 'client/components/templates/Page/components/NavigationBar';
-import { Sidebar } from 'client/hooks/useSidebar';
+import { Sidebar } from 'client/components/templates/Page/components/Sidebar';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
 
 export const PageContent: React.FC<HeaderProps> = props => {

@@ -54,13 +54,13 @@ const Image: React.FC<ImageProps> = props => {
   );
 };
 
-export type BaseImageProps = ImageProps & {
+export type GridImageProps = ImageProps & {
   ratio?: number;
   fixedSize?: boolean;
   glow?: boolean;
 };
 
-export const GridImage: React.FC<BaseImageProps> = props => {
+export const GridImage: React.FC<GridImageProps> = props => {
   const {
     src,
     alt,

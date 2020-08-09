@@ -39,6 +39,7 @@ export const BaseLink: React.FC<BaseLinkProps> = props => {
       display: inline-block;
       padding: ${commonStyles.spacing.xxs} ${commonStyles.spacing.xs};
       border-radius: ${commonStyles.borderRadius.xs};
+      background: none;
     `,
     []
   );

@@ -29,7 +29,7 @@ export const HorizontalCard: React.FC<HorizontalCardProps> = props => {
           overflow: hidden;
         `}
       >
-        <GridImage src={props.image.src} alt={props.image.alt} glow />
+        <GridImage src={props.image.src} alt={props.image.alt} />
         <div
           css={css`
             display: flex;

@@ -5,16 +5,18 @@ import { Typography } from 'client/components/atoms/Typography';
 import { PageContent } from 'client/components/templates/Page';
 import { commonStyles } from 'client/styles/tokens';
 import { toCdNumber } from 'utils/strings';
-import { GridArtworkImage } from 'client/components/atoms/images/GirdArtworkImage';
 import { TextDivider } from 'client/components/molecules/TextDivider';
 import { AlbumPageProps } from 'client/features/Album/container';
 import { MemberCard } from 'client/components/molecules/cards/MemberCard';
 import { getMemberUrl, getSongUrl } from 'client/utils/urls';
 import { useTranslations } from 'client/hooks/useTranslations';
 import { HorizontalCard } from 'client/components/molecules/cards/HorizontalCard';
+import { useIntl } from 'client/hooks/useIntl';
+import { GridImage } from 'client/components/atoms/images/GirdImage';
 
 export const AlbumPage: React.FC<AlbumPageProps> = props => {
   const { Translation } = useTranslations();
+  const { formatDate } = useIntl();
 
   return (
     <PageContent
@@ -25,12 +27,17 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
       <React.Fragment>
         <Typography
           variant="body1"
+          textColor={{
+            on: 'onBackground',
+            variant: 'variant0',
+          }}
           css={css`
-            margin-top: 0.4em;
+            margin-top: 0.8em;
             text-transform: capitalize;
+            text-align: center;
           `}
         >
-          <Translation text="release" />: {props.release}
+          <Translation text="release" />: {formatDate(props.release)}
         </Typography>
         <TextDivider text={<Translation text="tracks" />} />
         <ul
@@ -60,10 +67,8 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
             <TextDivider text={<Translation text="center" />} />
             <div
               css={css`
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-                grid-template-rows: auto;
-                grid-gap: ${commonStyles.spacing.s};
+                display: flex;
+                flex-wrap: wrap;
                 justify-content: center;
               `}
             >
@@ -79,6 +84,9 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
                   textSize="em2"
                   borderRadius="s"
                   padding="s"
+                  css={css`
+                    width: 160px;
+                  `}
                 />
               ))}
             </div>
@@ -87,15 +95,24 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
         <TextDivider text={<Translation text="artworks" />} />
         <div
           css={css`
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-            grid-template-rows: auto;
-            grid-gap: ${commonStyles.spacing.m};
+            display: flex;
+            flex-wrap: wrap;
             justify-content: center;
           `}
         >
           {props.artworks.map((artwork, i) => (
-            <GridArtworkImage key={i} src={artwork.url} alt={String(i + 1)} />
+            <GridImage
+              key={i}
+              src={artwork.url}
+              alt={String(i + 1)}
+              glow
+              fixedSize
+              css={css`
+                width: 160px;
+                height: 160px;
+                margin: ${commonStyles.spacing.s};
+              `}
+            />
           ))}
         </div>
       </React.Fragment>

@@ -61,6 +61,9 @@ export const MembersPage: React.FC<MembersPageProps> = props => {
             },
           ]}
           css={css`
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
             text-transform: capitalize;
           `}
         />

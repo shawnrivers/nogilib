@@ -31,6 +31,7 @@ export const BaseButton: React.FC<BaseButtonProps> = props => {
           ${commonStyles.spacing[horizontalPadding]};
         border-radius: ${commonStyles.borderRadius.xs};
         transition: background-color 0.3s ease-out;
+        background: none;
 
         &:hover {
           background-color: ${theme.colors.theme[backgroundType][

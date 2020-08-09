@@ -47,6 +47,9 @@ export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
             },
           ]}
           css={css`
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
             text-transform: capitalize;
           `}
         />

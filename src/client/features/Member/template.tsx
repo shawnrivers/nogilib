@@ -53,9 +53,15 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
       <React.Fragment>
         <Typography
           variant="body1"
+          textColor={{
+            on: 'onBackground',
+            variant: 'variant0',
+          }}
           css={css`
             vertical-align: center;
             text-transform: capitalize;
+            text-align-last: center;
+            margin-top: 0.3em;
           `}
         >
           {language === 'ja'
@@ -81,6 +87,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
             src={profileImage}
             alt={name}
             fixedSize
+            glow
             css={css`
               width: 180px;
               height: 220px;
@@ -235,6 +242,10 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                   element="a"
                   to={site.url}
                   typographyVariant="body2"
+                  textColor={{
+                    on: 'onBackground',
+                    variant: 'variant0',
+                  }}
                   css={css`
                     &:not(:first-of-type) {
                       margin-left: 1em;
@@ -272,6 +283,10 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                   key={photoAlbum.title}
                   variant="body2"
                   element="span"
+                  textColor={{
+                    on: 'onBackground',
+                    variant: 'variant0',
+                  }}
                 >
                   『{photoAlbum.title}』
                 </Typography>
@@ -451,7 +466,12 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
               `}
             >
               {gallery.map((profileImage, index) => (
-                <GridMemberImage src={profileImage} key={index} alt={name} />
+                <GridMemberImage
+                  src={profileImage}
+                  key={index}
+                  alt={name}
+                  glow
+                />
               ))}
             </div>
           </React.Fragment>
