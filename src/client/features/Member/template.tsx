@@ -16,6 +16,8 @@ import { MemberPageProps } from 'client/features/Member/container';
 import { useIntl } from 'client/hooks/useIntl';
 import { PositionCounter } from 'client/features/Member/components/PositionCounter';
 import { TextLink } from 'client/components/molecules/links/TextLink';
+import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
+import { GlowStickBadge } from 'client/features/Member/components/GlowStickBadge';
 
 const InfoItemLabel: React.FC = props => (
   <Typography
@@ -55,6 +57,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
     shouldShowPositionCounter,
     positionsHistory,
     positionsCounter,
+    glowStickColor,
     gallery,
   } = props;
   const { language } = useAppContext();
@@ -149,7 +152,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
             <InfoItemValue>
               <Translation text={origin as any} />
             </InfoItemValue>
-            {units.length > 0 ? (
+            {units.length > 0 && (
               <React.Fragment>
                 <InfoItemLabel>
                   <Translation text="units" />
@@ -158,8 +161,8 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                   <LocalizedList list={units} />
                 </InfoItemValue>
               </React.Fragment>
-            ) : null}
-            {corps.length > 0 ? (
+            )}
+            {corps.length > 0 && (
               <React.Fragment>
                 <InfoItemLabel>
                   <Translation text="corps" />
@@ -168,7 +171,30 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                   <LocalizedList list={corps} />
                 </InfoItemValue>
               </React.Fragment>
-            ) : null}
+            )}
+            {glowStickColor.left !== GlowStickColorType.None && (
+              <React.Fragment>
+                <InfoItemLabel>
+                  <Translation text="glow stick" />
+                </InfoItemLabel>
+                <div
+                  css={css`
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                  `}
+                >
+                  <GlowStickBadge
+                    color={glowStickColor.left}
+                    size={14}
+                    css={css`
+                      margin-right: ${commonStyles.spacing.xxs};
+                    `}
+                  />
+                  <GlowStickBadge color={glowStickColor.right} size={14} />
+                </div>
+              </React.Fragment>
+            )}
           </div>
         </div>
         {sites.length > 0 ? (
@@ -202,11 +228,6 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                     on: 'onBackground',
                     variant: 'variant0',
                   }}
-                  css={css`
-                    &:not(:first-of-type) {
-                      margin-left: 1em;
-                    }
-                  `}
                 >
                   <Translation text={site.title as any} />
                 </TextLink>

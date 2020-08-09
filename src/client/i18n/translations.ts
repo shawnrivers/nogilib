@@ -591,6 +591,11 @@ const dictionary = {
     ja: '自動',
     zh: '自动',
   },
+  'glow stick': {
+    en: 'glow stick',
+    ja: 'サイリューム',
+    zh: '荧光棒',
+  },
 };
 
 export type DictionaryKey = keyof typeof dictionary;

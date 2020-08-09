@@ -23,19 +23,5 @@ export enum SearchResultType {
   Songs = 'songs',
 }
 
-export const GLOW_STICK_COLORS = {
-  red: '#fb9090',
-  yellow: '#f7dd7f',
-  white: '#ffffff',
-  blue: '#7fbaf7',
-  green: '#a3ffaa',
-  purple: '#dc9af7',
-  black: '#595959',
-  pink: '#ff90d4',
-  orange: '#ffba75',
-  'light blue': '#4bded7',
-  'yellow green': '#d2ff87',
-};
-
 export const LOCAL_STORAGE_THEME_MODE_KEY = 'themeMode';
 export const LOCAL_STORAGE_LANGUAGE = 'language';

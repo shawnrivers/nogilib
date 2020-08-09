@@ -55,7 +55,7 @@ const groupMembersByJoin = (
   members: QueryResultMember[]
 ): MemberGroupByYear[] => {
   const memberGroupByJoin: MemberGroupByYear[] = [];
-  const membersSortedByJoin = sortByJoin(members, 'join', 'asc');
+  const membersSortedByJoin = sortByJoin(members, 'asc');
 
   for (const member of membersSortedByJoin) {
     if (memberGroupByJoin.length === 0) {

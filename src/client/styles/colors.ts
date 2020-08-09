@@ -1,3 +1,5 @@
+import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
+
 export const GLOBAL_COLORS = {
   white: '#FFFFFF',
   gray0: '#E5E5E5',
@@ -39,6 +41,21 @@ export const GLOBAL_COLORS = {
   yellowDull2: '#A49C84',
   yellowDull3: '#787059',
   yellowDull4: '#585241',
+};
+
+export const GLOW_STICK_COLORS: Record<GlowStickColorType, string> = {
+  red: '#fb9090',
+  yellow: '#f7dd7f',
+  white: '#ffffff',
+  blue: '#7fbaf7',
+  green: '#a3ffaa',
+  purple: '#dc9af7',
+  black: '#595959',
+  pink: '#ff90d4',
+  orange: '#ffba75',
+  'light blue': '#4bded7',
+  'yellow green': '#d2ff87',
+  none: '#ffffff',
 };
 
 export type GlobalColorKey = keyof typeof GLOBAL_COLORS;
@@ -99,6 +116,7 @@ export const mapBackgroundToForeground = (
 export type ColorTheme = {
   theme: ThemeColors;
   global: typeof GLOBAL_COLORS;
+  glowStick: typeof GLOW_STICK_COLORS;
 };
 
 export const LIGHT_COLOR_THEME: ColorTheme = {
@@ -145,6 +163,7 @@ export const LIGHT_COLOR_THEME: ColorTheme = {
     },
   },
   global: GLOBAL_COLORS,
+  glowStick: GLOW_STICK_COLORS,
 };
 
 export const DARK_COLOR_THEME: ColorTheme = {
@@ -191,4 +210,5 @@ export const DARK_COLOR_THEME: ColorTheme = {
     },
   },
   global: GLOBAL_COLORS,
+  glowStick: GLOW_STICK_COLORS,
 };

@@ -1,3 +1,5 @@
+import { JoinedGenerationType } from 'server/actors/Members/constants/joinedGeneration';
+
 export const arrayToObject = <T, K extends keyof T>(
   array: T[],
   keyField: K
@@ -29,12 +31,15 @@ export const sortByDate = <T>(
   });
 };
 
-export const sortByJoin = <T>(
+export const sortByJoin = <
+  T extends {
+    join: JoinedGenerationType;
+  }
+>(
   array: T[],
-  keyField: keyof T,
   order: 'asc' | 'desc'
 ): T[] => {
-  const joinWeightMap: Record<string, number> = {
+  const joinWeightMap: Record<JoinedGenerationType, number> = {
     exchange: 100,
     first: 1,
     second: 2,
@@ -44,9 +49,7 @@ export const sortByJoin = <T>(
 
   return array.slice().sort((itemA, itemB) => {
     return order === 'asc'
-      ? joinWeightMap[itemA[keyField] as any] -
-          joinWeightMap[itemB[keyField] as any]
-      : joinWeightMap[itemB[keyField] as any] -
-          joinWeightMap[itemA[keyField] as any];
+      ? joinWeightMap[itemA.join] - joinWeightMap[itemB.join]
+      : joinWeightMap[itemB.join] - joinWeightMap[itemA.join];
   });
 };
