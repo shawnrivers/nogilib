@@ -9,10 +9,14 @@ import {
 import { Language } from 'client/types/language';
 
 const getLocalStorageTheme = () =>
-  localStorage?.getItem(LOCAL_STORAGE_THEME_MODE_KEY) as ThemeMode | null;
+  typeof localStorage !== 'undefined'
+    ? (localStorage.getItem(LOCAL_STORAGE_THEME_MODE_KEY) as ThemeMode)
+    : null;
 
 const getLocalStorageLanguage = () =>
-  localStorage?.getItem(LOCAL_STORAGE_LANGUAGE) as Language | null;
+  typeof localStorage !== 'undefined'
+    ? (localStorage.getItem(LOCAL_STORAGE_LANGUAGE) as Language)
+    : null;
 
 type Context = {
   themeMode: ThemeMode;
@@ -67,7 +71,9 @@ export const AppContextProvider: React.FC = props => {
         },
       });
 
-      localStorage?.setItem(LOCAL_STORAGE_LANGUAGE, language);
+      if (typeof localStorage !== 'undefined') {
+        localStorage.setItem(LOCAL_STORAGE_LANGUAGE, language);
+      }
     },
     [dispatch]
   );
@@ -77,10 +83,14 @@ export const AppContextProvider: React.FC = props => {
       if (themeMode === 'light' || themeMode === 'dark') {
         setThemeKey(themeMode);
         setThemeMode(themeMode);
-        localStorage?.setItem(LOCAL_STORAGE_THEME_MODE_KEY, themeMode);
+        if (typeof localStorage !== 'undefined') {
+          localStorage?.setItem(LOCAL_STORAGE_THEME_MODE_KEY, themeMode);
+        }
       } else {
         setThemeMode('auto');
-        localStorage?.setItem(LOCAL_STORAGE_THEME_MODE_KEY, 'auto');
+        if (typeof localStorage !== 'undefined') {
+          localStorage?.setItem(LOCAL_STORAGE_THEME_MODE_KEY, 'auto');
+        }
       }
     },
     [setThemeKey, setThemeMode]
