@@ -6,7 +6,7 @@ import {
   HeaderProps,
 } from 'client/components/templates/Page/components/Header';
 import { NavigationBar } from 'client/components/templates/Page/components/NavigationBar';
-import { useSidebar } from 'client/hooks/useSidebar';
+import { Sidebar } from 'client/hooks/useSidebar';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
 
 export const PageContent: React.FC<HeaderProps> = props => {
@@ -41,7 +41,13 @@ export const PageContent: React.FC<HeaderProps> = props => {
 
 export const Page: React.FC = props => {
   const theme = useAppTheme();
-  const { toggleSidebar, SideBar } = useSidebar();
+  const [isSidebarOpen, toggleSidebar] = React.useState(false);
+  const handleOpenSidebar = React.useCallback(() => {
+    toggleSidebar(true);
+  }, [toggleSidebar]);
+  const handleCloseSidebar = React.useCallback(() => {
+    toggleSidebar(false);
+  }, [toggleSidebar]);
 
   return (
     <div
@@ -68,8 +74,8 @@ export const Page: React.FC = props => {
         }
       `}
     >
-      <NavigationBar toggleSidebar={toggleSidebar} />
-      <SideBar />
+      <NavigationBar onOpenSidebar={handleOpenSidebar} />
+      <Sidebar open={isSidebarOpen} onClose={handleCloseSidebar} />
       {props.children}
     </div>
   );

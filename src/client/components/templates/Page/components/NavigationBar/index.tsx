@@ -1,6 +1,7 @@
 /**@jsx jsx */
 import { jsx, css } from '@emotion/core';
 import * as React from 'react';
+import { motion } from 'framer-motion';
 import { Card } from 'client/components/atoms/Card';
 import { MenuIcon } from 'client/components/atoms/icons/MenuIcon';
 import { RadioCheckIcon } from 'client/components/atoms/icons/RadioCheckIcon';
@@ -113,16 +114,22 @@ const Settings: React.FC = () => {
       <BaseButton onClick={switchDropdown}>
         <SettingsIcon fill={theme.colors.theme.onSurface.standard} />
       </BaseButton>
-      {isDropdownVisible && (
-        <Card
-          elevation={componentElevationKey.dropdown}
-          borderRadius="s"
-          css={css`
-            position: absolute;
-            top: calc(${commonStyles.sizes.navigationBarHeight} - 8px);
-            min-width: 140px;
-          `}
-        >
+      <motion.div
+        animate={isDropdownVisible ? 'open' : 'closed'}
+        style={{ originX: 1, originY: 0 }}
+        initial={{ scale: 0, opacity: 0 }}
+        variants={{
+          open: { scale: 1, opacity: 1 },
+          closed: { scale: 0, opacity: 1 },
+        }}
+        transition={{ duration: 0.2 }}
+        css={css`
+          position: absolute;
+          top: calc(${commonStyles.sizes.navigationBarHeight} - 8px);
+          min-width: 140px;
+        `}
+      >
+        <Card elevation={componentElevationKey.dropdown} borderRadius="s">
           <Typography variant="body2" element="p">
             Languages
           </Typography>
@@ -184,13 +191,13 @@ const Settings: React.FC = () => {
             </SelectionItem>
           </ul>
         </Card>
-      )}
+      </motion.div>
     </div>
   );
 };
 
 export const NavigationBar: React.FC<{
-  toggleSidebar: () => void;
+  onOpenSidebar: () => void;
 }> = props => {
   const theme = useAppTheme();
 
@@ -269,7 +276,7 @@ export const NavigationBar: React.FC<{
           </TextLink>
           <BaseButton
             className="small"
-            onClick={props.toggleSidebar}
+            onClick={props.onOpenSidebar}
             css={css`
               margin-left: ${commonStyles.spacing.xxs};
             `}
