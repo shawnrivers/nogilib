@@ -272,6 +272,9 @@ export const NavigationBar: React.FC<{
             typographyVariant="h6"
             showUnderline={false}
             className="large"
+            css={css`
+              text-transform: capitalize;
+            `}
           >
             {getTranslation('discography')}
           </TextLink>
@@ -281,6 +284,9 @@ export const NavigationBar: React.FC<{
             typographyVariant="h6"
             showUnderline={false}
             className="large"
+            css={css`
+              text-transform: capitalize;
+            `}
           >
             {getTranslation('members')}
           </TextLink>
@@ -290,6 +296,9 @@ export const NavigationBar: React.FC<{
             typographyVariant="h6"
             showUnderline={false}
             className="large"
+            css={css`
+              text-transform: capitalize;
+            `}
           >
             {getTranslation('search')}
           </TextLink>
