@@ -1,6 +1,7 @@
-import { MemberName } from "server/constants/names";
-import { FukujinType, SongType } from "server/constants/commons";
-import { SongTitle } from "server/constants/songs";
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { SongType } from 'server/actors/Songs/constants/songType';
+import { SongTitle } from 'server/actors/Songs/constants/songTitle';
+import { UnitName } from 'server/actors/Units/constants/unitName';
 
 export type SongRaw = {
   title: SongTitle;
@@ -13,29 +14,29 @@ export type SongRaw = {
     direct: string[];
   };
   performers: {
-    center: MemberName[];
-    fukujin: FukujinType | MemberName[];
-    solo: MemberName | "";
-    unit: string;
+    center: MemberNameKey[];
+    fukujin: 'row-1' | 'row-1-2' | MemberNameKey[];
+    solo: MemberNameKey | '';
+    unit: UnitName | '';
   };
   formations: {
-    firstRow: MemberName[];
-    secondRow: MemberName[];
-    thirdRow: MemberName[];
-    fourthRow: MemberName[];
+    firstRow: MemberNameKey[];
+    secondRow: MemberNameKey[];
+    thirdRow: MemberNameKey[];
+    fourthRow: MemberNameKey[];
   };
+};
+
+type InCd = {
+  title: string;
+  number: string;
 };
 
 export type SongResult = SongRaw & {
   key: string;
-  single: {
-    title: string;
-    number: string;
-  };
-  albums: {
-    title: string;
-    number: string;
-  }[];
+  single: InCd;
+  albums: InCd[];
+  otherCds: InCd[];
   artwork: string;
   performersTag: {
     name: string;
@@ -44,5 +45,5 @@ export type SongResult = SongRaw & {
 };
 
 export type SongsRawArray = SongRaw[];
-export type SongsRawObject = { [key: string]: SongRaw };
+export type SongsRawObject = Record<SongTitle, SongRaw>;
 export type SongsResultArray = SongResult[];

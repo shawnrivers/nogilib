@@ -1,6 +1,6 @@
-import { SongRaw } from "server/actors/Songs/models";
-import { SongType } from "server/constants/commons";
-import { MemberName } from "server/constants/names";
+import { SongRaw } from 'server/actors/Songs/models';
+import { SongType } from 'server/actors/Songs/constants/songType';
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 
 type SongRawCreatorCreators = {
   lyrics?: string[];
@@ -10,39 +10,39 @@ type SongRawCreatorCreators = {
 };
 
 type SongRawCreatorFormation = {
-  firstRow: MemberName[];
-  secondRow?: MemberName[];
-  thirdRow?: MemberName[];
-  fourthRow?: MemberName[];
+  firstRow: MemberNameKey[];
+  secondRow?: MemberNameKey[];
+  thirdRow?: MemberNameKey[];
+  fourthRow?: MemberNameKey[];
 };
 
 type SongRawCreatorParams = {
-  title: SongRaw["title"];
+  title: SongRaw['title'];
   creators?: SongRawCreatorCreators;
-  musicVideo?: SongRaw["musicVideo"];
+  musicVideo?: SongRaw['musicVideo'];
 } & (
   | {
       type: SongType.Title;
-      center: SongRaw["performers"]["center"];
-      fukujin: SongRaw["performers"]["fukujin"];
+      center: SongRaw['performers']['center'];
+      fukujin: SongRaw['performers']['fukujin'];
       formations?: SongRawCreatorFormation;
     }
   | {
       type: SongType.Unit;
-      center?: SongRaw["performers"]["center"];
-      unit?: SongRaw["performers"]["unit"];
+      center?: SongRaw['performers']['center'];
+      unit?: SongRaw['performers']['unit'];
       formations?: SongRawCreatorFormation;
     }
   | {
       type: SongType.Solo;
-      solo: MemberName;
+      solo: MemberNameKey;
     }
   | {
       type: Exclude<
-        SongRaw["type"],
+        SongRaw['type'],
         SongType.Title | SongType.Unit | SongType.Solo
       >;
-      center?: SongRaw["performers"]["center"];
+      center?: SongRaw['performers']['center'];
       formations?: SongRawCreatorFormation;
     }
 );
@@ -52,7 +52,7 @@ export const createSongRaw = (params: SongRawCreatorParams): SongRaw => {
     return {
       title: params.title,
       type: params.type,
-      musicVideo: params.musicVideo ?? "",
+      musicVideo: params.musicVideo ?? '',
       creators: {
         lyrics: params.creators?.lyrics ?? [],
         compose: params.creators?.compose ?? [],
@@ -62,8 +62,8 @@ export const createSongRaw = (params: SongRawCreatorParams): SongRaw => {
       performers: {
         center: params.center,
         fukujin: params.fukujin,
-        solo: "",
-        unit: "",
+        solo: '',
+        unit: '',
       },
       formations: {
         firstRow: params.formations?.firstRow ?? [],
@@ -78,7 +78,7 @@ export const createSongRaw = (params: SongRawCreatorParams): SongRaw => {
     return {
       title: params.title,
       type: params.type,
-      musicVideo: params.musicVideo ?? "",
+      musicVideo: params.musicVideo ?? '',
       creators: {
         lyrics: params.creators?.lyrics ?? [],
         compose: params.creators?.compose ?? [],
@@ -88,8 +88,8 @@ export const createSongRaw = (params: SongRawCreatorParams): SongRaw => {
       performers: {
         center: params.center ?? [],
         fukujin: [],
-        solo: "",
-        unit: params.unit ?? "",
+        solo: '',
+        unit: params.unit ?? '',
       },
       formations: {
         firstRow: params.formations?.firstRow ?? [],
@@ -104,7 +104,7 @@ export const createSongRaw = (params: SongRawCreatorParams): SongRaw => {
     return {
       title: params.title,
       type: params.type,
-      musicVideo: params.musicVideo ?? "",
+      musicVideo: params.musicVideo ?? '',
       creators: {
         lyrics: params.creators?.lyrics ?? [],
         compose: params.creators?.compose ?? [],
@@ -115,7 +115,7 @@ export const createSongRaw = (params: SongRawCreatorParams): SongRaw => {
         center: [],
         fukujin: [],
         solo: params.solo,
-        unit: "",
+        unit: '',
       },
       formations: {
         firstRow: [params.solo],
@@ -129,7 +129,7 @@ export const createSongRaw = (params: SongRawCreatorParams): SongRaw => {
   return {
     title: params.title,
     type: params.type,
-    musicVideo: params.musicVideo ?? "",
+    musicVideo: params.musicVideo ?? '',
     creators: {
       lyrics: params.creators?.lyrics ?? [],
       compose: params.creators?.compose ?? [],
@@ -139,8 +139,8 @@ export const createSongRaw = (params: SongRawCreatorParams): SongRaw => {
     performers: {
       center: params.center ?? [],
       fukujin: [],
-      solo: "",
-      unit: "",
+      solo: '',
+      unit: '',
     },
     formations: {
       firstRow: params.formations?.firstRow ?? [],

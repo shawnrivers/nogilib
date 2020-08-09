@@ -250,6 +250,10 @@
         "url": "https://blog.nogizaka46.com/erika.ikuta/"
       },
       {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/ikutaerika.official/"
+      },
+      {
         "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/ikutaerika.php"
       },
@@ -456,6 +460,10 @@
         "url": "https://twitter.com/ikomarina_staff"
       },
       {
+        "title": "YouTube",
+        "url": "https://www.youtube.com/channel/UCKfIRa0Zhs6HQ33a_L6Tc5Q/"
+      },
+      {
         "title": "Official",
         "url": "https://ikomarina.com/"
       },
@@ -646,6 +654,10 @@
       {
         "title": "Twitter",
         "url": "https://twitter.com/syr_1214"
+      },
+      {
+        "title": "YouTube",
+        "url": "https://www.youtube.com/channel/UCmVJtdqSRFSsJb5hjHL4QKg"
       },
       {
         "title": "Profile",
@@ -1040,16 +1052,20 @@
     "origin": "長崎県",
     "sites": [
       {
-        "title": "Official",
-        "url": "https://kawagopro.com/"
-      },
-      {
         "title": "Instagram",
         "url": "https://www.instagram.com/kawagohina3/"
       },
       {
         "title": "Twitter",
         "url": "https://twitter.com/kawagohina3"
+      },
+      {
+        "title": "YouTube",
+        "url": "https://www.youtube.com/channel/UCygUvA0j15FpHp6kv2IuQYA"
+      },
+      {
+        "title": "Official",
+        "url": "https://kawagopro.com/"
       }
     ],
     "photoAlbums": [],
@@ -3359,16 +3375,20 @@
     "origin": "静岡県",
     "sites": [
       {
-        "title": "Official",
-        "url": "http://yumiwakatsuki.com/"
+        "title": "Instagram",
+        "url": "https://www.instagram.com/yumi_wakatsuki_official/"
       },
       {
         "title": "Twitter",
         "url": "https://twitter.com/WAKA_Y_official/"
       },
       {
-        "title": "Instagram",
-        "url": "https://www.instagram.com/yumi_wakatsuki_official/"
+        "title": "Official",
+        "url": "https://yumiwakatsuki.com/"
+      },
+      {
+        "title": "Online Salon",
+        "url": "https://lounge.dmm.com/detail/2711/"
       },
       {
         "title": "Profile",
@@ -5175,11 +5195,15 @@
     "sites": [
       {
         "title": "Instagram",
-        "url": "https://www.instagram.com/seira_hatanaka/"
+        "url": "https://www.instagram.com/seira.hatanaka_official/"
       },
       {
         "title": "Twitter",
         "url": "https://twitter.com/seira_hatanaka"
+      },
+      {
+        "title": "YouTube",
+        "url": "https://www.youtube.com/channel/UCC4iZzCZMJBVxghrzwvMp8w"
       }
     ],
     "photoAlbums": [],
@@ -5643,8 +5667,8 @@
       "firstNameEn": "rena"
     },
     "glowStickColor": {
-      "left": "",
-      "right": ""
+      "left": "none",
+      "right": "none"
     },
     "profileImage": "members/graduated/ichikirena.jpg",
     "singleImages": [
@@ -5811,8 +5835,8 @@
       "firstNameEn": "nanami"
     },
     "glowStickColor": {
-      "left": "",
-      "right": ""
+      "left": "none",
+      "right": "none"
     },
     "profileImage": "members/7/nishikawananami.jpg",
     "singleImages": [
@@ -5974,8 +5998,8 @@
       "firstNameEn": "seira"
     },
     "glowStickColor": {
-      "left": "",
-      "right": ""
+      "left": "none",
+      "right": "none"
     },
     "profileImage": "members/graduated/miyazawaseira.jpg",
     "singleImages": [
@@ -6322,8 +6346,8 @@
       "firstNameEn": "mikumo"
     },
     "glowStickColor": {
-      "left": "",
-      "right": ""
+      "left": "none",
+      "right": "none"
     },
     "profileImage": "members/5/andoumikumo.jpg",
     "singleImages": [
@@ -6485,8 +6509,8 @@
       "firstNameEn": "yumiko"
     },
     "glowStickColor": {
-      "left": "",
-      "right": ""
+      "left": "none",
+      "right": "none"
     },
     "profileImage": "members/graduated/iwaseyumiko.jpg",
     "singleImages": [
@@ -6697,6 +6721,10 @@
       {
         "title": "Instagram",
         "url": "https://www.instagram.com/karin___ito/"
+      },
+      {
+        "title": "YouTube",
+        "url": "https://www.youtube.com/channel/UC9BihA2GY6ATFR__KvRWudA"
       },
       {
         "title": "Profile",
@@ -13006,8 +13034,8 @@
       "firstNameEn": "haruka"
     },
     "glowStickColor": {
-      "left": "",
-      "right": ""
+      "left": "none",
+      "right": "none"
     },
     "profileImage": "members/25/kuromiharuka.jpg",
     "singleImages": [
@@ -13178,8 +13206,8 @@
       "firstNameEn": "rika"
     },
     "glowStickColor": {
-      "left": "",
-      "right": ""
+      "left": "none",
+      "right": "none"
     },
     "profileImage": "members/25/satourika.jpg",
     "singleImages": [
@@ -13350,8 +13378,8 @@
       "firstNameEn": "runa"
     },
     "glowStickColor": {
-      "left": "",
-      "right": ""
+      "left": "none",
+      "right": "none"
     },
     "profileImage": "members/25/hayashiruna.jpg",
     "singleImages": [
@@ -13522,8 +13550,8 @@
       "firstNameEn": "miyu"
     },
     "glowStickColor": {
-      "left": "",
-      "right": ""
+      "left": "none",
+      "right": "none"
     },
     "profileImage": "members/25/matsuomiyu.jpg",
     "singleImages": [
@@ -13694,8 +13722,8 @@
       "firstNameEn": "nao"
     },
     "glowStickColor": {
-      "left": "",
-      "right": ""
+      "left": "none",
+      "right": "none"
     },
     "profileImage": "members/25/yumikinao.jpg",
     "singleImages": [

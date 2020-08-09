@@ -1,13 +1,12 @@
-import { Language } from "client/utils/constants";
-import { FocusPerformersType } from "server/constants/commons";
+import { Language } from 'client/types/language';
 
 export const getUrlWithTrailingSlash = (url: string): string =>
-  url.slice(-1) !== "/" ? url + "/" : url;
+  url.slice(-1) !== '/' ? url + '/' : url;
 
 export const classNames = (
   ...classNames: (string | undefined)[]
 ): string | undefined =>
-  classNames.reduce((acc, curr) => (curr ? acc + " " + curr : acc));
+  classNames.reduce((acc, curr) => (curr ? acc + ' ' + curr : acc));
 
 export const toCdNumber = (num: string | number): string => {
   const number = Number(num);
@@ -16,95 +15,67 @@ export const toCdNumber = (num: string | number): string => {
     const remainderByTen = number % 10;
     const remainderByHundred = number % 100;
     if (remainderByTen === 1 && remainderByHundred !== 11) {
-      return num + "st.";
+      return num + 'st.';
     }
     if (remainderByTen === 2 && remainderByHundred !== 12) {
-      return num + "nd.";
+      return num + 'nd.';
     }
     if (remainderByTen === 3 && remainderByHundred !== 13) {
-      return num + "rd.";
+      return num + 'rd.';
     } else {
-      return num + "th.";
+      return num + 'th.';
     }
   }
 
-  return "Under";
+  return 'Under';
 };
 
 export const toNumberWithLocale = (
   num: string,
-  language: string,
-  type?: "cd" | "row"
+  language: Language,
+  type?: 'cd' | 'row'
 ): string => {
   let counter = {
-    ja: "",
-    zh: "",
+    ja: '',
+    zh: '',
   };
 
   switch (type) {
-    case "cd":
+    case 'cd':
       counter = {
-        ja: "枚",
-        zh: "张",
+        ja: '枚',
+        zh: '张',
       };
       break;
-    case "row":
+    case 'row':
       counter = {
-        ja: "列",
-        zh: "排",
+        ja: '列',
+        zh: '排',
       };
       break;
     default:
       counter = {
-        ja: "枚",
-        zh: "张",
+        ja: '枚',
+        zh: '张',
       };
       break;
   }
 
-  if (language === Language.En) {
+  if (language === 'en') {
     return toCdNumber(num);
   }
 
   const number = Number(num);
 
   if (number) {
-    if (language === Language.Ja) {
-      return num + counter + "目";
+    if (language === 'ja') {
+      return num + counter + '目';
     }
-    return "第" + num + counter;
+    return '第' + num + counter;
   }
 
-  return "under";
+  return 'under';
 };
 
-export const getFocusPerformersText = (
-  focusPerformers: {
-    name: string[];
-    type: FocusPerformersType;
-  },
-  locale: string
-): string => {
-  let comma: string;
-  switch (locale) {
-    case Language.Zh:
-      comma = "、";
-      break;
-    case Language.Ja:
-      comma = "・";
-      break;
-    default:
-      comma = ", ";
-      break;
-  }
-
-  if (focusPerformers.name.length > 0) {
-    if (focusPerformers.type === FocusPerformersType.Center) {
-      return (
-        "C: " + focusPerformers.name.reduce((acc, curr) => acc + comma + curr)
-      );
-    }
-    return focusPerformers.name.reduce((acc, curr) => acc + comma + curr);
-  }
-  return "";
-};
+export const commaTextArray = (array: string[]): string =>
+  array.reduce((acc, curr) => `${acc}, ${curr}`);
