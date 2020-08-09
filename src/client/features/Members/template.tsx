@@ -13,6 +13,7 @@ import {
   MembersUrlFilter,
 } from 'client/utils/urls';
 import { useTranslations } from 'client/hooks/useTranslations';
+import { useIntl } from 'client/hooks/useIntl';
 
 export type MemberGroupByYear = {
   join: MemberResult['join'];
@@ -35,27 +36,28 @@ export type MembersPageProps = {
 
 export const MembersPage: React.FC<MembersPageProps> = props => {
   const { currentFilter, memberGroupsByJoin } = props;
-  const { Translation } = useTranslations();
+  const { getTranslation } = useTranslations();
+  const { formatMemberName } = useIntl();
 
   return (
     <PageContent title="members">
       <React.Fragment>
         <TextSwitchLinkGroup
-          variant="h2"
+          variant="h4"
           textOn="onBackground"
           links={[
             {
-              text: <Translation text="current" />,
+              text: getTranslation('current'),
               isSwitchedOn: currentFilter === 'current',
               to: getMembersUrl('current'),
             },
             {
-              text: <Translation text="graduated" />,
+              text: getTranslation('graduated'),
               isSwitchedOn: currentFilter === 'graduated',
               to: getMembersUrl('graduated'),
             },
             {
-              text: <Translation text="all" />,
+              text: getTranslation('all'),
               isSwitchedOn: currentFilter === 'all',
               to: getMembersUrl('all'),
             },
@@ -69,7 +71,7 @@ export const MembersPage: React.FC<MembersPageProps> = props => {
         />
         {memberGroupsByJoin.map(member => (
           <div key={member.join}>
-            <TextDivider text={member.join} />
+            <TextDivider text={getTranslation(`join: ${member.join}` as any)} />
             <div
               css={css`
                 display: flex;
@@ -82,10 +84,7 @@ export const MembersPage: React.FC<MembersPageProps> = props => {
                 <MemberCard
                   key={member.name}
                   profileImage={member.profileImage}
-                  name={
-                    member.nameNotations.lastName +
-                    member.nameNotations.firstName
-                  }
+                  name={formatMemberName(member.nameNotations)}
                   to={getMemberUrl(member.name)}
                   textSize="em2"
                   borderRadius="s"

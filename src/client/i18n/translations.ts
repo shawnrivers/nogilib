@@ -45,7 +45,7 @@ const dictionary = {
     zh: '关于',
   },
   languages: {
-    en: 'lang',
+    en: 'languages',
     ja: '言語',
     zh: '语言',
   },
@@ -123,26 +123,6 @@ const dictionary = {
     en: 'release',
     ja: 'リリース日',
     zh: '发售日',
-  },
-  'first-gen': {
-    en: '1st. gen',
-    ja: '1期生',
-    zh: '1期生',
-  },
-  'second-gen': {
-    en: '2nd. gen',
-    ja: '2期生',
-    zh: '2期生',
-  },
-  'third-gen': {
-    en: '3rd. gen',
-    ja: '3期生',
-    zh: '3期生',
-  },
-  'fourth-gen': {
-    en: '4th. gen',
-    ja: '4期生',
-    zh: '4期生',
   },
   graduated: {
     en: 'graduated',
@@ -516,180 +496,20 @@ const dictionary = {
       'これは乃木坂46の情報をわかりやすく提示するウェブアプリケーションである。',
     zh: '这是一个简洁明了地显示乃木坂46的信息的网页应用。',
   },
-  'go to app': {
-    en: 'go to app',
-    ja: 'アプリケーションへ',
-    zh: '前往应用',
-  },
-  'supported languages': {
-    en: 'supported languages',
-    ja: 'サポート言語',
-    zh: '支持语言',
-  },
-  'Feature - Music': {
-    en: 'Feature - Music',
-    ja: '機能：音楽',
-    zh: '功能：音乐',
-  },
-  'Feature - Members': {
-    en: 'Feature - Members',
-    ja: '機能：メンバー',
-    zh: '功能：成员',
-  },
-  'Feature - Search': {
-    en: 'Feature - Search',
-    ja: '機能：検索',
-    zh: '功能：搜索',
-  },
-  'CD List': {
-    en: 'CD List',
-    ja: 'CD リスト',
-    zh: 'CD 列表',
-  },
-  'CD List page shows released a grid of CD cards (singles and albums).': {
-    en: 'CD List page shows released a grid of CD cards (singles and albums).',
-    ja:
-      'CD リストページは CD（シングルとアルバム）カードのグリッドを表示する。',
-    zh:
-      'CD 列表界面会显示出至今为止已经发布的所有 CD（单曲和专辑）卡片的网格列表。',
-  },
-  'By tapping/clicking on any CD card, it will navigate to the corresponding CD page.': {
-    en:
-      'By tapping/clicking on any CD card, it will navigate to the corresponding CD page.',
-    ja:
-      '任意の CD カードをタップ・クリックすると、それと対応する CD ページに遷移できる。',
-    zh: '轻触或点击 CD 卡片会移动到相应的 CD 列表界面。',
-  },
   CD: {
     en: 'CD',
     ja: 'CD',
     zh: 'CD',
   },
-  'CD Page shows detailed information about each CD.': {
-    en: 'CD Page shows detailed information about each CD.',
-    ja: 'CD ページは CD の詳細情報を表示する。',
-    zh: 'CD 界面会显示出这张 CD 的详细信息。',
-  },
-  'The artwork part on the top is tappable/clickable so that you can see artworks in different types of this CD.': {
-    en:
-      'The artwork part on the top is tappable/clickable so that you can see artworks in different types of this CD.',
-    ja:
-      'ジャケット写真（以下「ジャケ写」と略す）をタップ・クリックすると CD の他のタイプのジャケ写を閲覧することができる。',
-    zh: '轻触或者点击 CD 封面可以切换至这张 CD 的其他封面图像。',
-  },
-  'A list of cards of songs included in this CD will also be displayed here. By tapping/clicking on any card, it will lead you to the Song Page.': {
-    en:
-      'A list of cards of songs included in this CD will also be displayed here. By tapping/clicking on any card, it will lead you to the Song Page.',
-    ja:
-      '収録曲のカードのリストがジャケ写の下に表示される。任意の収録曲カードをタップ・クリックすると、それと対応する楽曲ページに遷移できる。',
-    zh:
-      '收录于该 CD 中的歌曲一览也会显示在这个界面中。轻触或点击歌曲卡片会移动到相应的歌曲界面。',
-  },
-  Song: {
+  song: {
     en: 'Song',
     ja: '楽曲',
     zh: '歌曲',
   },
-  'Song Page shows detailed information about each song.': {
-    en: 'Song Page shows detailed information about each song.',
-    ja: '楽曲ページは楽曲の詳細情報を表示する。',
-    zh: '歌曲界面会显示出这首歌曲的详细信息。',
-  },
-  'The artwork part shows the artwork of the song’s CD.': {
-    en: 'The artwork part shows the artwork of the song’s CD.',
-    ja:
-      'ジャケ写部分では、この楽曲が収録されている CD のジャケ写が表示される。',
-    zh: '封面图像为这首歌曲所在的 CD 的封面图像。',
-  },
-  'A list of cards of members who perform this song will be displayed here. By tapping/clicking on any card, it will lead you to the corresponding Member Page.': {
-    en:
-      'A list of cards of members who perform this song will be displayed here. By tapping/clicking on any card, it will lead you to the corresponding Member Page.',
-    ja:
-      '楽曲の歌唱メンバー及びそのフォーメーションもこの画面に表示される。任意のメンバーカードをタップ・クリックすると、それと対応するメンバーページに遷移できる。',
-    zh:
-      '这首歌曲的表演成员的一览也会显示在这个界面中。轻触或点击成员卡片会移动到相应的成员界面。',
-  },
-  'Below the performers is the information about creators like songwriters and MV directors.': {
-    en:
-      'Below the performers is the information about creators like songwriters and MV directors.',
-    ja:
-      '歌唱メンバーの次に、作詞や MV 監督などのクリエイターの情報が表示される。',
-    zh:
-      '在表演成员一览的下方将会显示该歌曲的创作人员一览（例如，作词、作曲）。',
-  },
-  'Member List': {
-    en: 'Member List',
-    ja: 'メンバーリスト',
-    zh: '成员列表',
-  },
-  'Member List Page shows a grid of member cards (1st. gen to 4th. gen, graduated).': {
-    en:
-      'Member List Page shows a grid of member cards (1st. gen to 4th. gen, graduated).',
-    ja:
-      'メンバーリストページは、メンバーカードのグリッドを表示する（1期生から4期生、卒業生）。',
-    zh: '成员列表界面会显示出一个所有成员（1期生到4期生、毕业生）的网格列表。',
-  },
-  'By tapping/clicking on any member card, it will navigate to the corresponding Member page.': {
-    en:
-      'By tapping/clicking on any member card, it will navigate to the corresponding Member page.',
-    ja:
-      '任意のメンバーカードをタップ・クリックすると、それと対応するメンバーページに遷移できる。',
-    zh: '轻触或点击成员卡片会移动到相应的成员列表界面。',
-  },
-  Member: {
+  member: {
     en: 'Member',
     ja: 'メンバー',
     zh: '成员',
-  },
-  'Member page shows detailed information about each member.': {
-    en: 'Member page shows detailed information about each member.',
-    ja: 'メンバーページはメンバーの詳細情報を表示する。',
-    zh: '成员界面会显示出这名成员的详细信息。',
-  },
-  'The badges below the profile image show the member’s glow stick colors.': {
-    en:
-      'The badges below the profile image show the member’s glow stick colors.',
-    ja: 'プロフィール写真の下のバッチはメンバーのサイリウムカラーを表す。',
-    zh: '成员照片下的圆点表示这名成员的荧光棒颜色。',
-  },
-  'Member’s profile (e.g. name, sites / social networks, birthday, birthplace, etc.) is showed.': {
-    en:
-      'Member’s profile (e.g. name, sites / social networks, birthday, birthplace, etc.) is showed.',
-    ja:
-      'メンバーの名前・サイト・SNS アカウント・誕生日・出身地などのプロフィール情報が表示される',
-    zh: '成员的姓名、网站、生日、出生地等的信息也会显示在这个界面中。',
-  },
-  'Position History shows the records of members positions in each single.': {
-    en:
-      'Position History shows the records of members positions in each single.',
-    ja:
-      'ポジション履歴では、加入から今までのシングルの表題曲の立ち位置が表示される。',
-    zh: '站位记录会表示出成员加入至今的单曲标题曲的站位记录。',
-  },
-  'Position Counter shows how many times she has been in each position.': {
-    en: 'Position Counter shows how many times she has been in each position.',
-    ja:
-      'ポジション回数では、上記のそれぞれの立ち位置にいた回数かが集計されて表示される。',
-    zh: '站位次数会表示出成员经历过的站位的次数。',
-  },
-  'Gallery shows the member’s profile images from her first single to the latest one.': {
-    en:
-      'Gallery shows the member’s profile images from her first single to the latest one.',
-    ja:
-      'アーティスト写真では、メンバーの今までのシングルごとのアーティスト写真が表示される。',
-    zh: '官方照片为成员加入至今的官方照片的一览。',
-  },
-  'By typing CD/song title or member name in the top input area, you can search for CDs and members.': {
-    en:
-      'By typing CD/song title or member name in the top input area, you can search for CDs and members.',
-    ja:
-      '画面上部の入力フォームに、検索したい CD や楽曲のタイトル、またはメンバーの名前を入力する。',
-    zh: '在画面上方的输入区域中输入 CD 或歌曲的标题，或者成员的名字。',
-  },
-  'The search results will be displayed below the input area.': {
-    en: 'The search results will be displayed below the input area.',
-    ja: '検索結果は入力フォームの下部に表示される。',
-    zh: '搜索结果会在输入区域的下方显示出来。',
   },
   copyright: {
     en: 'copyright',
@@ -750,6 +570,26 @@ const dictionary = {
     en: 'info',
     ja: 'info',
     zh: '简介',
+  },
+  'color theme': {
+    en: 'color theme',
+    ja: 'テーマ',
+    zh: '夜间模式',
+  },
+  dark: {
+    en: 'dark',
+    ja: 'ダーク',
+    zh: '夜间',
+  },
+  light: {
+    en: 'light',
+    ja: 'ライト',
+    zh: '白天',
+  },
+  auto: {
+    en: 'auto',
+    ja: '自動',
+    zh: '自动',
   },
 };
 

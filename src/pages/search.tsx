@@ -7,11 +7,13 @@ import { MemberResult } from 'server/actors/Members/models';
 import { DiscographyResult } from 'server/actors/Discography/models';
 import { SongResult } from 'server/actors/Songs/models';
 import { useTranslations } from 'client/hooks/useTranslations';
+import { useAppContext } from 'client/hooks/useAppContext';
 
 export type MemberDoc = {
   key: MemberResult['name'];
   nameNotations: MemberResult['nameNotations'];
   profileImage: MemberResult['profileImage'];
+  join: MemberResult['join'];
 };
 
 export type CdDoc = {
@@ -55,6 +57,7 @@ export const SearchPageContainer: React.FC = () => {
   const [results, setResults] = React.useState<SearchDoc[]>([]);
   const [isSearching, setIsSearching] = React.useState(false);
 
+  const { language } = useAppContext();
   const { getTranslation } = useTranslations();
 
   const lunr = React.useMemo(
@@ -95,13 +98,16 @@ export const SearchPageContainer: React.FC = () => {
 
     for (const result of results) {
       if (result.type === 'members') {
+        const memberName =
+          language === 'en'
+            ? `${result.nameNotations.lastNameEn} ${result.nameNotations.firstNameEn}`
+            : `${result.nameNotations.lastName}${result.nameNotations.firstName}`;
+
         members.push({
           to: getMemberUrl(result.key),
           imgSrc: result.profileImage,
-          heading: `${result.nameNotations.lastName} ${result.nameNotations.firstName}`,
-          captions: [
-            `${result.nameNotations.lastNameEn} ${result.nameNotations.firstNameEn}`,
-          ],
+          heading: memberName,
+          captions: [getTranslation(`${result.join} generation` as any)],
         });
       }
 
@@ -135,7 +141,7 @@ export const SearchPageContainer: React.FC = () => {
     }
 
     return { members, cds, albums, songs };
-  }, [getTranslation, results]);
+  }, [getTranslation, results, language]);
 
   return (
     <Search

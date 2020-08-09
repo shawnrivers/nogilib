@@ -8,6 +8,7 @@ import {
   MembersPage,
   MembersPageProps,
 } from 'client/features/Members/template';
+import { sortByJoin } from 'utils/arrays';
 
 export const query = graphql`
   query {
@@ -54,8 +55,9 @@ const groupMembersByJoin = (
   members: QueryResultMember[]
 ): MemberGroupByYear[] => {
   const memberGroupByJoin: MemberGroupByYear[] = [];
+  const membersSortedByJoin = sortByJoin(members, 'join', 'asc');
 
-  for (const member of members) {
+  for (const member of membersSortedByJoin) {
     if (memberGroupByJoin.length === 0) {
       memberGroupByJoin.push({ join: member.join, members: [member] });
     } else {

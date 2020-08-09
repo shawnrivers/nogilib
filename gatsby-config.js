@@ -81,6 +81,7 @@ module.exports = {
           { name: 'album', store: true },
           { name: 'type', store: true },
           { name: 'cdType', store: true },
+          { name: 'join', store: true },
         ],
         resolvers: {
           MembersJson: {
@@ -95,6 +96,7 @@ module.exports = {
             key: node => node.name,
             nameNotations: node => node.nameNotations,
             profileImage: node => node.profileImage,
+            join: node => node.join,
             type: () => 'members',
           },
           DiscographyJson: {

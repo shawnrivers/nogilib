@@ -35,6 +35,7 @@ export const MemberCard: React.FC<MemberCardProps> = props => {
           white-space: nowrap;
           text-overflow: ellipsis;
           text-align: center;
+          text-transform: capitalize;
         `}
       >
         {name}

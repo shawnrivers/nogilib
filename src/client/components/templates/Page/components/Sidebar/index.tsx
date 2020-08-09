@@ -16,6 +16,7 @@ import {
   TextLink,
   TextLinkProps,
 } from 'client/components/molecules/links/TextLink';
+import { useTranslations } from 'client/hooks/useTranslations';
 
 const NavigationItem: React.FC<Omit<TextLinkProps, 'element'>> = props => {
   const { to, children, onClick, ...restProps } = props;
@@ -50,6 +51,7 @@ export const Sidebar: React.FC<{
   onClose: () => void;
 }> = props => {
   const theme = useAppTheme();
+  const { getTranslation } = useTranslations();
   const { open, onClose } = props;
 
   return (
@@ -128,13 +130,13 @@ export const Sidebar: React.FC<{
         >
           <ul>
             <NavigationItem to={getDiscographyUrl()} onClick={onClose}>
-              Discography
+              {getTranslation('discography')}
             </NavigationItem>
             <NavigationItem to={getMembersUrl()} onClick={onClose}>
-              Members
+              {getTranslation('members')}
             </NavigationItem>
             <NavigationItem to={getSearchUrl()} onClick={onClose}>
-              Search
+              {getTranslation('search')}
             </NavigationItem>
           </ul>
           <Divider

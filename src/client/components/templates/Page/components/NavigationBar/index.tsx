@@ -20,6 +20,7 @@ import {
 import { Divider } from 'client/components/atoms/Divider';
 import { TextLink } from 'client/components/molecules/links/TextLink';
 import { BaseButton } from 'client/components/atoms/BaseButton';
+import { useTranslations } from 'client/hooks/useTranslations';
 
 const SelectionItem: React.FC<
   {
@@ -54,6 +55,7 @@ const SelectionItem: React.FC<
             line-height: 24px;
             height: 24px;
             margin-left: ${commonStyles.spacing.xs};
+            text-transform: capitalize;
           `}
         >
           {children}
@@ -77,6 +79,8 @@ const Settings: React.FC = () => {
 
   const theme = useAppTheme();
   const { themeMode, language, setTheme, setLanguage } = useAppContext();
+
+  const { getTranslation } = useTranslations();
 
   const handleClickLightTheme = React.useCallback(() => {
     setTheme('light');
@@ -130,8 +134,15 @@ const Settings: React.FC = () => {
         `}
       >
         <Card elevation={componentElevationKey.dropdown} borderRadius="s">
-          <Typography variant="body2" element="p">
-            Languages
+          <Typography
+            variant="body2"
+            element="p"
+            css={css`
+              text-transform: capitalize;
+              text-align: center;
+            `}
+          >
+            {getTranslation('languages')}
           </Typography>
           <ul
             css={css`
@@ -163,8 +174,15 @@ const Settings: React.FC = () => {
               margin: ${commonStyles.spacing.s} 0;
             `}
           />
-          <Typography variant="body2" element="p">
-            Color Theme
+          <Typography
+            variant="body2"
+            element="p"
+            css={css`
+              text-transform: capitalize;
+              text-align: center;
+            `}
+          >
+            {getTranslation('color theme')}
           </Typography>
           <ul
             css={css`
@@ -175,19 +193,19 @@ const Settings: React.FC = () => {
               isSelected={themeMode === 'dark'}
               onClick={handleClickDarkTheme}
             >
-              Dark
+              {getTranslation('dark')}
             </SelectionItem>
             <SelectionItem
               isSelected={themeMode === 'light'}
               onClick={handleClickLightTheme}
             >
-              Light
+              {getTranslation('light')}
             </SelectionItem>
             <SelectionItem
               isSelected={themeMode === 'auto'}
               onClick={handleClickAutoTheme}
             >
-              Auto
+              {getTranslation('auto')}
             </SelectionItem>
           </ul>
         </Card>
@@ -200,6 +218,7 @@ export const NavigationBar: React.FC<{
   onOpenSidebar: () => void;
 }> = props => {
   const theme = useAppTheme();
+  const { getTranslation } = useTranslations();
 
   return (
     <Surface
@@ -254,7 +273,7 @@ export const NavigationBar: React.FC<{
             showUnderline={false}
             className="large"
           >
-            Discography
+            {getTranslation('discography')}
           </TextLink>
           <TextLink
             element="Link"
@@ -263,7 +282,7 @@ export const NavigationBar: React.FC<{
             showUnderline={false}
             className="large"
           >
-            Members
+            {getTranslation('members')}
           </TextLink>
           <TextLink
             element="Link"
@@ -272,7 +291,7 @@ export const NavigationBar: React.FC<{
             showUnderline={false}
             className="large"
           >
-            Search
+            {getTranslation('search')}
           </TextLink>
           <BaseButton
             className="small"

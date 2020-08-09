@@ -27,7 +27,7 @@ export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
     <PageContent title="discography">
       <React.Fragment>
         <TextSwitchLinkGroup
-          variant="h2"
+          variant="h4"
           textOn="onBackground"
           links={[
             {

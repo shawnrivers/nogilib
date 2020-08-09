@@ -24,7 +24,6 @@ export const ArtworkCard: React.FC<
         variant="h7"
         textColor={{ on: 'onBackground', variant: 'variant1' }}
         css={css`
-          text-transform: capitalize;
           margin-top: 0.5em;
           text-align: center;
         `}

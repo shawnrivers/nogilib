@@ -5,6 +5,7 @@ import { ArrowBackIcon } from 'client/components/atoms/icons/ArrowBack';
 import { Typography } from 'client/components/atoms/Typography';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import { BaseButton } from 'client/components/atoms/BaseButton';
+import { useTranslations } from 'client/hooks/useTranslations';
 
 export type HeaderProps = {
   title?: string;
@@ -21,6 +22,8 @@ export const Header: React.FC<HeaderProps> = props => {
     titleTextTransform = 'uppercase',
   } = props;
   const theme = useAppTheme();
+  const { getTranslation } = useTranslations();
+
   const handleGoBack = React.useCallback(() => window.history.back(), []);
 
   return (
@@ -69,7 +72,7 @@ export const Header: React.FC<HeaderProps> = props => {
             text-align: center;
           `}
         >
-          {title}
+          {getTranslation(title as any)}
         </Typography>
       )}
     </header>

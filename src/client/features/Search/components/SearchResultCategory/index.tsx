@@ -74,7 +74,7 @@ export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props =
               </li>
             ))
           : null}
-        {results.length > DEFAULT_RESULT_COUNT ? (
+        {results.length > DEFAULT_RESULT_COUNT && !showMore ? (
           <Typography
             variant="body2"
             element="button"
@@ -82,9 +82,7 @@ export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props =
               on: 'onBackground',
               variant: 'variant1',
             }}
-            onClick={() =>
-              showMore ? toggleShowMore(false) : toggleShowMore(true)
-            }
+            onClick={() => toggleShowMore(true)}
             css={css`
               text-transform: uppercase;
               align-self: center;
@@ -95,7 +93,7 @@ export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props =
               }
             `}
           >
-            <Translation text={showMore ? 'show less' : 'show all'} />
+            <Translation text={'show all'} />
           </Typography>
         ) : null}
       </ul>
