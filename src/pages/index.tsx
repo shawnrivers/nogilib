@@ -5,16 +5,17 @@ import { PageContent } from 'client/components/templates/Page';
 import { Typography } from 'client/components/atoms/Typography';
 import { GatsbyImage } from 'client/components/atoms/images/GatsbyImage';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
-import { TextCard } from 'client/components/molecules/cards/TextCard';
 import {
   getDiscographyUrl,
   getMembersUrl,
   getSearchUrl,
 } from 'client/utils/urls';
 import { TextLink } from 'client/components/molecules/links/TextLink';
+import { useTranslations } from 'client/hooks/useTranslations';
 
 const HomePage: React.FC = () => {
   const theme = useAppTheme();
+  const { getTranslation } = useTranslations();
 
   return (
     <PageContent>
@@ -30,8 +31,8 @@ const HomePage: React.FC = () => {
           src="icon.png"
           css={css`
             border-radius: 50%;
-            width: 256px;
-            height: 256px;
+            width: 224px;
+            height: 224px;
             box-shadow: ${theme.elevation[4].boxShadow};
           `}
         />
@@ -49,42 +50,79 @@ const HomePage: React.FC = () => {
           css={css`
             text-align: center;
             margin-top: ${commonStyles.spacing.m};
+            max-width: 520px;
           `}
         >
-          A web app for showing the information about Nogizaka46 in a
-          user-friendly way
+          {getTranslation(
+            'A web app for showing the information about Nogizaka46 in a user-friendly way'
+          )}
         </Typography>
         <Typography
           variant="h3"
           element="h2"
           css={css`
             text-align: center;
+            text-transform: capitalize;
             margin-top: ${commonStyles.spacing.l};
           `}
         >
-          Features
+          {getTranslation('features')}
         </Typography>
         <div
           css={css`
-            display: grid;
-            grid-auto-columns: max-content;
-            grid-gap: ${commonStyles.spacing.s};
-            margin-top: ${commonStyles.spacing.m};
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            & > * {
+              margin-top: ${commonStyles.spacing.s};
+            }
           `}
         >
-          <TextCard to={getDiscographyUrl()} text="Discography" />
-          <TextCard to={getMembersUrl()} text="Members" />
-          <TextCard to={getSearchUrl()} text="Search" />
+          <TextLink
+            to={getDiscographyUrl()}
+            element="a"
+            typographyVariant="body2"
+            textColor={{ on: 'onBackground', variant: 'variant0' }}
+            css={css`
+              text-transform: capitalize;
+            `}
+          >
+            {getTranslation('discography')}
+          </TextLink>
+          <TextLink
+            to={getMembersUrl()}
+            element="a"
+            typographyVariant="body2"
+            textColor={{ on: 'onBackground', variant: 'variant0' }}
+            css={css`
+              text-transform: capitalize;
+            `}
+          >
+            {getTranslation('members')}
+          </TextLink>
+          <TextLink
+            to={getSearchUrl()}
+            element="a"
+            typographyVariant="body2"
+            textColor={{ on: 'onBackground', variant: 'variant0' }}
+            css={css`
+              text-transform: capitalize;
+            `}
+          >
+            {getTranslation('search')}
+          </TextLink>
         </div>
         <Typography
           variant="h3"
           element="h2"
           css={css`
             text-align: center;
-            margin-top: ${commonStyles.spacing.l};
+            text-transform: capitalize;
+            margin: ${commonStyles.spacing.l} 0 ${commonStyles.spacing.s};
           `}
         >
-          Author
+          {getTranslation('developer')}
         </Typography>
         <TextLink
           to="https://twitter.com/yuxiao_he"
@@ -93,7 +131,6 @@ const HomePage: React.FC = () => {
           textColor={{ on: 'onBackground', variant: 'variant0' }}
           css={css`
             text-align: center;
-            margin-top: ${commonStyles.spacing.s};
           `}
         >
           Yuxiao He (Usho Ka)

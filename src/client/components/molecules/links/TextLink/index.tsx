@@ -20,7 +20,6 @@ export const TextLink: React.FC<TextLinkProps> = props => {
     backgroundType,
     backgroundColorVariant,
     children,
-    className,
     disabled,
     onClick,
     ...typographyProps
@@ -34,7 +33,6 @@ export const TextLink: React.FC<TextLinkProps> = props => {
       underlineColorVariant={textColor.variant}
       backgroundType={backgroundType}
       backgroundColorVariant={backgroundColorVariant}
-      className={className}
       onClick={onClick}
       disabled={disabled}
     >

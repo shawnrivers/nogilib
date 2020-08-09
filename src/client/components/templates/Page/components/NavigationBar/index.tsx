@@ -266,42 +266,47 @@ export const NavigationBar: React.FC<{
           >
             |
           </Typography>
-          <TextLink
-            element="Link"
-            to={getDiscographyUrl()}
-            typographyVariant="h6"
-            showUnderline={false}
-            className="large"
+          <div
             css={css`
-              text-transform: capitalize;
+              display: flex;
+              align-items: center;
             `}
-          >
-            {getTranslation('discography')}
-          </TextLink>
-          <TextLink
-            element="Link"
-            to={getMembersUrl()}
-            typographyVariant="h6"
-            showUnderline={false}
             className="large"
-            css={css`
-              text-transform: capitalize;
-            `}
           >
-            {getTranslation('members')}
-          </TextLink>
-          <TextLink
-            element="Link"
-            to={getSearchUrl()}
-            typographyVariant="h6"
-            showUnderline={false}
-            className="large"
-            css={css`
-              text-transform: capitalize;
-            `}
-          >
-            {getTranslation('search')}
-          </TextLink>
+            <TextLink
+              element="Link"
+              to={getDiscographyUrl()}
+              typographyVariant="h6"
+              showUnderline={false}
+              css={css`
+                text-transform: capitalize;
+              `}
+            >
+              {getTranslation('discography')}
+            </TextLink>
+            <TextLink
+              element="Link"
+              to={getMembersUrl()}
+              typographyVariant="h6"
+              showUnderline={false}
+              css={css`
+                text-transform: capitalize;
+              `}
+            >
+              {getTranslation('members')}
+            </TextLink>
+            <TextLink
+              element="Link"
+              to={getSearchUrl()}
+              typographyVariant="h6"
+              showUnderline={false}
+              css={css`
+                text-transform: capitalize;
+              `}
+            >
+              {getTranslation('search')}
+            </TextLink>
+          </div>
           <BaseButton
             className="small"
             onClick={props.onOpenSidebar}
