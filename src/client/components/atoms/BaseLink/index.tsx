@@ -34,10 +34,10 @@ export const BaseLink: React.FC<BaseLinkProps> = props => {
 
   const theme = useAppTheme();
 
-  const disabledStyles = React.useMemo(
+  const baseStyles = React.useMemo(
     () => css`
       display: inline-block;
-      padding: ${commonStyles.spacing.xs} ${commonStyles.spacing.s};
+      padding: ${commonStyles.spacing.xxs} ${commonStyles.spacing.xs};
       border-radius: ${commonStyles.borderRadius.xs};
     `,
     []
@@ -45,9 +45,7 @@ export const BaseLink: React.FC<BaseLinkProps> = props => {
 
   const styles = React.useMemo(
     () => css`
-      display: inline-block;
-      padding: ${commonStyles.spacing.xxs} ${commonStyles.spacing.xs};
-      border-radius: ${commonStyles.borderRadius.xs};
+      ${baseStyles};
       transition: background-color 0.3s ease-out;
       text-decoration: ${showUnderline ? 'underline' : 'none'};
       text-underline-position: under;
@@ -66,6 +64,7 @@ export const BaseLink: React.FC<BaseLinkProps> = props => {
       }
     `,
     [
+      baseStyles,
       backgroundColorVariant,
       backgroundType,
       showUnderline,
@@ -75,7 +74,7 @@ export const BaseLink: React.FC<BaseLinkProps> = props => {
   );
 
   return disabled ? (
-    <div css={disabledStyles}>{children}</div>
+    <div css={baseStyles}>{children}</div>
   ) : element === 'a' ? (
     <a href={to} css={styles} {...restProps}>
       {children}
