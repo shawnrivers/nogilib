@@ -127,7 +127,10 @@ const AlbumPageContainer: React.FC<QueryResult> = props => {
   const centers = React.useMemo(() => {
     const titleSongFocusPerformers = albumData.songs[0].focusPerformers;
 
-    if (titleSongFocusPerformers.type !== 'center') {
+    if (
+      titleSongFocusPerformers.type !== 'center' ||
+      albumData.type === 'album'
+    ) {
       return [];
     } else {
       return titleSongFocusPerformers.members
@@ -139,7 +142,12 @@ const AlbumPageContainer: React.FC<QueryResult> = props => {
             member.singleImages[parseInt(albumData.previousSingleNumber) - 1],
         }));
     }
-  }, [albumData.previousSingleNumber, albumData.songs, membersObject]);
+  }, [
+    albumData.previousSingleNumber,
+    albumData.songs,
+    membersObject,
+    albumData.type,
+  ]);
 
   return (
     <AlbumPage
