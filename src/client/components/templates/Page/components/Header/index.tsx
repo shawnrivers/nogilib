@@ -44,19 +44,20 @@ export const Header: React.FC<HeaderProps> = props => {
               fill={theme.colors.theme.onBackground.standard}
             />
           </BaseButton>
-          {subtitle !== undefined && (
-            <Typography
-              variant="h4"
-              textColor={{ on: 'onBackground', variant: 'variant0' }}
-              css={css`
-                margin-left: 0.5em;
-                text-transform: capitalize;
-              `}
-            >
-              {subtitle}
-            </Typography>
-          )}
         </div>
+      )}
+      {subtitle !== undefined && (
+        <Typography
+          variant="h4"
+          textColor={{ on: 'onBackground', variant: 'variant0' }}
+          css={css`
+            margin-left: 0.5em;
+            text-transform: capitalize;
+            text-align: center;
+          `}
+        >
+          {subtitle}
+        </Typography>
       )}
       {title !== undefined && (
         <Typography
