@@ -42,14 +42,19 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
         <TextDivider text={<Translation text="tracks" />} />
         <ul
           css={css`
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            grid-gap: ${commonStyles.spacing.m};
+            display: flex;
+            flex-wrap: wrap;
             justify-content: center;
           `}
         >
           {props.tracks.map(track => (
-            <li key={track.key}>
+            <li
+              key={track.key}
+              css={css`
+                width: 300px;
+                margin: ${commonStyles.spacing.xs};
+              `}
+            >
               <HorizontalCard
                 to={getSongUrl(track.key)}
                 image={{
@@ -86,6 +91,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
                   padding="s"
                   css={css`
                     width: 160px;
+                    margin: ${commonStyles.spacing.s};
                   `}
                 />
               ))}

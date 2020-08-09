@@ -58,12 +58,9 @@ export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
             <TextDivider text={cdGroup.year} />
             <div
               css={css`
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-                grid-template-rows: auto;
-                grid-gap: ${commonStyles.spacing.m};
+                display: flex;
+                flex-wrap: wrap;
                 justify-content: center;
-                max-width: 60rem;
                 margin: auto;
               `}
             >
@@ -77,6 +74,10 @@ export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
                   title={cd.title}
                   borderRadius="s"
                   padding="s"
+                  css={css`
+                    width: 200px;
+                    margin: ${commonStyles.spacing.s};
+                  `}
                 />
               ))}
             </div>

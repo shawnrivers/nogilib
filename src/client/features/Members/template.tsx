@@ -72,10 +72,8 @@ export const MembersPage: React.FC<MembersPageProps> = props => {
             <TextDivider text={member.join} />
             <div
               css={css`
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-                grid-template-rows: auto;
-                grid-gap: ${commonStyles.spacing.m};
+                display: flex;
+                flex-wrap: wrap;
                 justify-content: center;
                 margin: auto;
               `}
@@ -92,6 +90,10 @@ export const MembersPage: React.FC<MembersPageProps> = props => {
                   textSize="em2"
                   borderRadius="s"
                   padding="s"
+                  css={css`
+                    width: 150px;
+                    margin: ${commonStyles.spacing.xs};
+                  `}
                 />
               ))}
             </div>

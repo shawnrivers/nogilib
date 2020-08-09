@@ -44,6 +44,7 @@ export const Surface: React.FC<SurfaceProps> = props => {
         box-shadow: ${theme.elevation[elevation].boxShadow};
         z-index: ${theme.elevation[elevation].zIndex};
         transition: box-shadow 0.3s ease-out;
+        transition: background-color 0.3s ease-out;
       `,
       overlay: css`
         width: 100%;
@@ -53,7 +54,7 @@ export const Surface: React.FC<SurfaceProps> = props => {
         transition: background-color 0.3s ease-out;
       `,
     }),
-    [backgroundColor, elevation, foregroundColor, theme.elevation]
+    [backgroundColor, elevation, foregroundColor, theme]
   );
 
   const hoveredStyles = React.useMemo(
@@ -77,7 +78,7 @@ export const Surface: React.FC<SurfaceProps> = props => {
         }
       `,
     }),
-    [theme.elevation]
+    [theme]
   );
 
   return (

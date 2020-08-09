@@ -31,6 +31,7 @@ export const Hashtag: React.FC<{
         padding: ${commonStyles.spacing.xxs} ${commonStyles.spacing[spacing]};
         width: max-content;
         white-space: nowrap;
+        line-height: 1;
       `}
       {...restProps}
     >

@@ -11,10 +11,13 @@ import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { PageContent } from 'client/components/templates/Page';
 import { Typography } from 'client/components/atoms/Typography';
 import { Hashtag } from 'client/components/atoms/Hashtag';
-import { Theme, useAppTheme } from 'client/styles/tokens';
+import { commonStyles, Theme, useAppTheme } from 'client/styles/tokens';
 import { GridArtworkImage } from 'client/components/atoms/images/GirdArtworkImage';
 import { TextDivider } from 'client/components/molecules/TextDivider';
-import { MemberCard } from 'client/components/molecules/cards/MemberCard';
+import {
+  MemberCard,
+  MemberCardProps,
+} from 'client/components/molecules/cards/MemberCard';
 import { getMemberUrl } from 'client/utils/urls';
 import { useTranslations } from 'client/hooks/useTranslations';
 import { useAppContext } from 'client/hooks/useAppContext';
@@ -24,13 +27,25 @@ type StyledComponentWithThemeProps = {
 };
 
 const RowContainer = styled.div<StyledComponentWithThemeProps>`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-  grid-template-rows: auto;
-  grid-gap: ${props => props.theme.spacing.s};
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 1em;
+
+  & > * {
+    width: 140px;
+    margin: ${commonStyles.spacing.xs};
+  }
 `;
+
+const memberCardCommonProps: Pick<
+  MemberCardProps,
+  'textSize' | 'borderRadius' | 'padding'
+> = {
+  textSize: 'body2',
+  borderRadius: 's',
+  padding: 's',
+};
 
 const PerformersTag: React.FC<{
   singleNumber: string;
@@ -192,15 +207,20 @@ export const SongPage: React.FC<SongPageProps> = ({
               {creators.lyrics.length > 0 ? (
                 <React.Fragment>
                   <Typography
-                    variant="h7"
+                    variant="body2"
                     element="span"
+                    textColor={{ on: 'onBackground', variant: 'standard' }}
                     css={css`
                       text-transform: capitalize;
                     `}
                   >
                     <Translation text="lyrics" />
                   </Typography>
-                  <Typography variant="h7" element="span">
+                  <Typography
+                    variant="body2"
+                    element="span"
+                    textColor={{ on: 'onBackground', variant: 'variant0' }}
+                  >
                     <LocalizedList list={creators.lyrics} />
                   </Typography>
                 </React.Fragment>
@@ -208,15 +228,20 @@ export const SongPage: React.FC<SongPageProps> = ({
               {creators.compose.length > 0 ? (
                 <React.Fragment>
                   <Typography
-                    variant="h7"
+                    variant="body2"
                     element="span"
+                    textColor={{ on: 'onBackground', variant: 'standard' }}
                     css={css`
                       text-transform: capitalize;
                     `}
                   >
                     <Translation text="compose" />
                   </Typography>
-                  <Typography variant="h7" element="span">
+                  <Typography
+                    variant="body2"
+                    element="span"
+                    textColor={{ on: 'onBackground', variant: 'variant0' }}
+                  >
                     <LocalizedList list={creators.compose} />
                   </Typography>
                 </React.Fragment>
@@ -224,15 +249,20 @@ export const SongPage: React.FC<SongPageProps> = ({
               {creators.arrange.length > 0 ? (
                 <React.Fragment>
                   <Typography
-                    variant="h7"
+                    variant="body2"
                     element="span"
+                    textColor={{ on: 'onBackground', variant: 'standard' }}
                     css={css`
                       text-transform: capitalize;
                     `}
                   >
                     <Translation text="arrange" />
                   </Typography>
-                  <Typography variant="h7" element="span">
+                  <Typography
+                    variant="body2"
+                    element="span"
+                    textColor={{ on: 'onBackground', variant: 'variant0' }}
+                  >
                     <LocalizedList list={creators.arrange} />
                   </Typography>
                 </React.Fragment>
@@ -240,15 +270,20 @@ export const SongPage: React.FC<SongPageProps> = ({
               {creators.direct.length > 0 ? (
                 <React.Fragment>
                   <Typography
-                    variant="h7"
+                    variant="body2"
                     element="span"
+                    textColor={{ on: 'onBackground', variant: 'standard' }}
                     css={css`
                       text-transform: capitalize;
                     `}
                   >
                     <Translation text="direct" />
                   </Typography>
-                  <Typography variant="h7" element="span">
+                  <Typography
+                    variant="body2"
+                    element="span"
+                    textColor={{ on: 'onBackground', variant: 'variant0' }}
+                  >
                     <LocalizedList list={creators.direct} />
                   </Typography>
                 </React.Fragment>
@@ -283,6 +318,7 @@ export const SongPage: React.FC<SongPageProps> = ({
                         element="h4"
                         css={css`
                           margin-top: 1em;
+                          text-align: center;
                         `}
                       >
                         <LocalizedNumber num={index + 1} type="row" />
@@ -301,9 +337,7 @@ export const SongPage: React.FC<SongPageProps> = ({
                                 }
                                 profileImage={member.profileImage}
                                 to={getMemberUrl(member.name)}
-                                textSize="em2"
-                                borderRadius="s"
-                                padding="s"
+                                {...memberCardCommonProps}
                               />
                             );
                           } else {
@@ -312,9 +346,7 @@ export const SongPage: React.FC<SongPageProps> = ({
                                 key={'小嶋陽菜'}
                                 name={'小嶋陽菜'}
                                 profileImage={KOJIHARU_IMAGE_SRC}
-                                textSize="em2"
-                                borderRadius="s"
-                                padding="s"
+                                {...memberCardCommonProps}
                               />
                             );
                           }
@@ -336,9 +368,7 @@ export const SongPage: React.FC<SongPageProps> = ({
                             }
                             profileImage={member.profileImage}
                             to={getMemberUrl(member.name)}
-                            textSize="em2"
-                            borderRadius="s"
-                            padding="s"
+                            {...memberCardCommonProps}
                           />
                         );
                       } else {
@@ -347,9 +377,7 @@ export const SongPage: React.FC<SongPageProps> = ({
                             key={'小嶋陽菜'}
                             name={'小嶋陽菜'}
                             profileImage={KOJIHARU_IMAGE_SRC}
-                            textSize="em2"
-                            borderRadius="s"
-                            padding="s"
+                            {...memberCardCommonProps}
                           />
                         );
                       }

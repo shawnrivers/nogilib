@@ -8,13 +8,13 @@ import {
 import { Card, CardProps } from 'client/components/atoms/Card';
 import { GridMemberImage } from 'client/components/atoms/images/GridMemberImage';
 
-export const MemberCard: React.FC<
-  CardProps & {
-    profileImage: string;
-    name: string;
-    textSize?: TypographyProps['variant'];
-  }
-> = props => {
+export type MemberCardProps = CardProps & {
+  profileImage: string;
+  name: string;
+  textSize?: TypographyProps['variant'];
+};
+
+export const MemberCard: React.FC<MemberCardProps> = props => {
   const {
     profileImage,
     name,

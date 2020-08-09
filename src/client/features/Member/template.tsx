@@ -9,7 +9,7 @@ import { PageContent } from 'client/components/templates/Page';
 import { Typography } from 'client/components/atoms/Typography';
 import { useAppContext } from 'client/hooks/useAppContext';
 import { TextDivider } from 'client/components/molecules/TextDivider';
-import { useAppTheme } from 'client/styles/tokens';
+import { useAppTheme, commonStyles } from 'client/styles/tokens';
 import { GridMemberImage } from 'client/components/atoms/images/GridMemberImage';
 import { useTranslations } from 'client/hooks/useTranslations';
 import { MemberPageProps } from 'client/features/Member/container';
@@ -458,10 +458,8 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
             <TextDivider text={<Translation text="gallery" />} />
             <div
               css={css`
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
-                grid-template-rows: auto;
-                grid-gap: ${theme.spacing.m};
+                display: flex;
+                flex-wrap: wrap;
                 justify-content: center;
               `}
             >
@@ -471,6 +469,12 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                   key={index}
                   alt={name}
                   glow
+                  fixedSize
+                  css={css`
+                    width: ${140}px;
+                    height: ${168}px;
+                    margin: ${commonStyles.spacing.xs};
+                  `}
                 />
               ))}
             </div>
