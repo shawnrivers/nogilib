@@ -48,7 +48,7 @@ export const CardContent: React.FC<CardContentProps> = props => {
   );
 };
 
-export type CardProps = CardContentProps & {
+export type CardProps = Omit<CardContentProps, 'isClickable'> & {
   to?: string;
 };
 
@@ -57,9 +57,13 @@ export const Card: React.FC<CardProps> = props => {
 
   return to ? (
     <Link to={to}>
-      <CardContent {...restProps}>{children}</CardContent>
+      <CardContent isClickable {...restProps}>
+        {children}
+      </CardContent>
     </Link>
   ) : (
-    <CardContent {...restProps}>{children}</CardContent>
+    <CardContent isClickable={false} {...restProps}>
+      {children}
+    </CardContent>
   );
 };
