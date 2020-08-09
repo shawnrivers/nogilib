@@ -1,100 +1,100 @@
-import { NameKeyArray } from "server/types/commons";
-import { arrayToObject } from "utils/arrays";
+import { NameKeyArray } from 'server/types/commons';
+import { arrayToObject } from 'utils/arrays';
 
 export enum UnitName {
-  WhiteHigh = "WHITE HIGH",
-  Kodokukyoudai = "孤独兄弟",
-  Karaageshimai = "からあげ姉妹",
-  CinqEtoiles = "サンクエトワール",
-  JyoshikouQuarte = "女子校カルテット",
-  Anegozaka = "姉御坂",
-  Nasuka = "ナスカ",
-  Kasumikusa = "かすみ草",
-  DontWorry = "藤桜梨",
-  Imootozaka = "いもうと坂",
-  Sayuringogundan = "さゆりんご軍団",
-  ManatsusanRespectGundan = "真夏さんリスペクト軍団",
-  Wakasamagundan = "若様軍団",
-  Inumen = "犬メン",
-  Suika = "スイカ",
-  Tulip = "チューリップ",
-  Kojizaka46 = "こじ坂46",
-  Nogidan = "乃木團",
+  WhiteHigh = 'WHITE HIGH',
+  Kodokukyoudai = '孤独兄弟',
+  Karaageshimai = 'からあげ姉妹',
+  CinqEtoiles = 'サンクエトワール',
+  JyoshikouQuarte = '女子校カルテット',
+  Anegozaka = '姉御坂',
+  Nasuka = 'ナスカ',
+  Kasumikusa = 'かすみ草',
+  DontWorry = '藤桜梨',
+  Imootozaka = 'いもうと坂',
+  Sayuringogundan = 'さゆりんご軍団',
+  ManatsusanRespectGundan = '真夏さんリスペクト軍団',
+  Wakasamagundan = '若様軍団',
+  Inumen = '犬メン',
+  Suika = 'スイカ',
+  Tulip = 'チューリップ',
+  Kojizaka46 = 'こじ坂46',
+  Nogidan = '乃木團',
 }
 
 export const UnitNameKeyArray: NameKeyArray<UnitName> = [
   {
     name: UnitName.WhiteHigh,
-    key: "whitehigh",
+    key: 'whitehigh',
   },
   {
     name: UnitName.Kodokukyoudai,
-    key: "kodokukyoudai",
+    key: 'kodokukyoudai',
   },
   {
     name: UnitName.Karaageshimai,
-    key: "karaageshimai",
+    key: 'karaageshimai',
   },
   {
     name: UnitName.CinqEtoiles,
-    key: "cinqetoiles",
+    key: 'cinqetoiles',
   },
   {
     name: UnitName.JyoshikouQuarte,
-    key: "jyoshikouquarte",
+    key: 'jyoshikouquarte',
   },
   {
     name: UnitName.Anegozaka,
-    key: "anegozaka",
+    key: 'anegozaka',
   },
   {
     name: UnitName.Nasuka,
-    key: "nasuka",
+    key: 'nasuka',
   },
   {
     name: UnitName.Kasumikusa,
-    key: "kasumikusa",
+    key: 'kasumikusa',
   },
   {
     name: UnitName.DontWorry,
-    key: "dontworry",
+    key: 'dontworry',
   },
   {
     name: UnitName.Imootozaka,
-    key: "imootozaka",
+    key: 'imootozaka',
   },
   {
     name: UnitName.Sayuringogundan,
-    key: "sayuringogundan",
+    key: 'sayuringogundan',
   },
   {
     name: UnitName.ManatsusanRespectGundan,
-    key: "manatsusanrespectgundan",
+    key: 'manatsusanrespectgundan',
   },
   {
     name: UnitName.Wakasamagundan,
-    key: "wakasamagundan",
+    key: 'wakasamagundan',
   },
   {
     name: UnitName.Inumen,
-    key: "inumen",
+    key: 'inumen',
   },
   {
     name: UnitName.Suika,
-    key: "suika",
+    key: 'suika',
   },
   {
     name: UnitName.Tulip,
-    key: "tulip",
+    key: 'tulip',
   },
   {
     name: UnitName.Kojizaka46,
-    key: "kojizaka46",
+    key: 'kojizaka46',
   },
   {
     name: UnitName.Nogidan,
-    key: "nogidan",
+    key: 'nogidan',
   },
 ];
 
-export const UNIT_NAMES = arrayToObject(UnitNameKeyArray, "name");
+export const UNIT_NAMES = arrayToObject(UnitNameKeyArray, 'name');

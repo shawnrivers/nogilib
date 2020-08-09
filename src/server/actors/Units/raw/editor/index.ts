@@ -1,29 +1,29 @@
-import { UnitRaw } from "server/actors/Units/models";
-import { createUnitRaw } from "server/actors/Units/raw/creator";
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
-import { UnitType } from "server/actors/Units/constants/unitType";
-import { UNIT_NAMES } from "server/actors/Units/constants/unitName";
+import { UnitRaw } from 'server/actors/Units/models';
+import { createUnitRaw } from 'server/actors/Units/raw/creator';
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { UnitType } from 'server/actors/Units/constants/unitType';
+import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
 
 export const UNITS: UnitRaw[] = [
   createUnitRaw({
-    name: UNIT_NAMES["WHITE HIGH"].name,
+    name: UNIT_NAMES['WHITE HIGH'].name,
     members: [MemberNameKey.ShiraishiMai, MemberNameKey.TakayamaKazumi],
     type: UnitType.Unit,
     description:
-      "白石の「白」、高山の「高」をそれぞれ英語表記にした「WHITE」「HIGH」の組み合わせ",
+      '白石の「白」、高山の「高」をそれぞれ英語表記にした「WHITE」「HIGH」の組み合わせ',
   }),
   createUnitRaw({
-    name: UNIT_NAMES["孤独兄弟"].name,
+    name: UNIT_NAMES['孤独兄弟'].name,
     members: [MemberNameKey.ShiraishiMai, MemberNameKey.HashimotoNanami],
     type: UnitType.Unit,
   }),
   createUnitRaw({
-    name: UNIT_NAMES["からあげ姉妹"].name,
+    name: UNIT_NAMES['からあげ姉妹'].name,
     members: [MemberNameKey.IkutaErika, MemberNameKey.MatsumuraSayuri],
     type: UnitType.Unit,
   }),
   createUnitRaw({
-    name: UNIT_NAMES["サンクエトワール"].name,
+    name: UNIT_NAMES['サンクエトワール'].name,
     members: [
       MemberNameKey.KitanoHinako,
       MemberNameKey.TeradaRanze,
@@ -33,10 +33,10 @@ export const UNITS: UnitRaw[] = [
     ],
     type: UnitType.Unit,
     description:
-      "13thシングルのアンダーメンバーより選抜。「サンクエトワール」とはフランス語で「五つ星」という意味",
+      '13thシングルのアンダーメンバーより選抜。「サンクエトワール」とはフランス語で「五つ星」という意味',
   }),
   createUnitRaw({
-    name: UNIT_NAMES["女子校カルテット"].name,
+    name: UNIT_NAMES['女子校カルテット'].name,
     members: [
       MemberNameKey.AkimotoManatsu,
       MemberNameKey.SakuraiReika,
@@ -44,10 +44,10 @@ export const UNITS: UnitRaw[] = [
       MemberNameKey.WakatsukiYumi,
     ],
     type: UnitType.Unit,
-    description: "女子高に通っていたメンバーで結成",
+    description: '女子高に通っていたメンバーで結成',
   }),
   createUnitRaw({
-    name: UNIT_NAMES["姉御坂"].name,
+    name: UNIT_NAMES['姉御坂'].name,
     members: [
       MemberNameKey.EtouMisa,
       MemberNameKey.ShiraishiMai,
@@ -55,20 +55,20 @@ export const UNITS: UnitRaw[] = [
       MemberNameKey.MatsumuraSayuri,
     ],
     type: UnitType.Unit,
-    description: "グループ1期生年長メンバーで結成",
+    description: 'グループ1期生年長メンバーで結成',
   }),
   createUnitRaw({
-    name: UNIT_NAMES["ナスカ"].name,
+    name: UNIT_NAMES['ナスカ'].name,
     members: [
       MemberNameKey.ItouMarika,
       MemberNameKey.SaitouAsuka,
       MemberNameKey.NishinoNanase,
     ],
     type: UnitType.Unit,
-    description: "ナナセの「ナ」、アスカの「ス」、マリカの「カ」の組み合わせ",
+    description: 'ナナセの「ナ」、アスカの「ス」、マリカの「カ」の組み合わせ',
   }),
   createUnitRaw({
-    name: UNIT_NAMES["かすみ草"].name,
+    name: UNIT_NAMES['かすみ草'].name,
     members: [
       MemberNameKey.IkomaRina,
       MemberNameKey.InoueSayuri,
@@ -77,20 +77,20 @@ export const UNITS: UnitRaw[] = [
     ],
     type: UnitType.Unit,
     description:
-      "かすみ草の花言葉は「名脇役」。主役を影で支える力のあるメンバーという意味が込められている",
+      'かすみ草の花言葉は「名脇役」。主役を影で支える力のあるメンバーという意味が込められている',
   }),
   createUnitRaw({
-    name: UNIT_NAMES["藤桜梨"].name,
+    name: UNIT_NAMES['藤桜梨'].name,
     members: [
       MemberNameKey.IkutaErika,
       MemberNameKey.EtouMisa,
       MemberNameKey.SakuraiReika,
     ],
     type: UnitType.Unit,
-    description: "ドンウォーリー",
+    description: 'ドンウォーリー',
   }),
   createUnitRaw({
-    name: UNIT_NAMES["いもうと坂"].name,
+    name: UNIT_NAMES['いもうと坂'].name,
     members: [
       MemberNameKey.OozonoMomoko,
       MemberNameKey.KuboShiori,
@@ -100,7 +100,7 @@ export const UNITS: UnitRaw[] = [
     type: UnitType.Unit,
   }),
   createUnitRaw({
-    name: UNIT_NAMES["さゆりんご軍団"].name,
+    name: UNIT_NAMES['さゆりんご軍団'].name,
     members: [
       MemberNameKey.MatsumuraSayuri,
       MemberNameKey.ItouKarin,
@@ -110,7 +110,7 @@ export const UNITS: UnitRaw[] = [
     type: UnitType.Corp,
   }),
   createUnitRaw({
-    name: UNIT_NAMES["真夏さんリスペクト軍団"].name,
+    name: UNIT_NAMES['真夏さんリスペクト軍団'].name,
     members: [
       MemberNameKey.AkimotoManatsu,
       MemberNameKey.SagaraIori,
@@ -120,7 +120,7 @@ export const UNITS: UnitRaw[] = [
     type: UnitType.Corp,
   }),
   createUnitRaw({
-    name: UNIT_NAMES["若様軍団"].name,
+    name: UNIT_NAMES['若様軍団'].name,
     members: [
       MemberNameKey.WakatsukiYumi,
       MemberNameKey.UmezawaMinami,
@@ -128,10 +128,10 @@ export const UNITS: UnitRaw[] = [
       MemberNameKey.YamashitaMizuki,
     ],
     type: UnitType.Corp,
-    description: "4名に共通する一文字「美」から若月が3期生を結集",
+    description: '4名に共通する一文字「美」から若月が3期生を結集',
   }),
   createUnitRaw({
-    name: UNIT_NAMES["犬メン"].name,
+    name: UNIT_NAMES['犬メン'].name,
     members: [
       MemberNameKey.SakuraiReika,
       MemberNameKey.IkomaRina,
@@ -143,10 +143,10 @@ export const UNITS: UnitRaw[] = [
       MemberNameKey.WakatsukiYumi,
     ],
     type: UnitType.Corp,
-    description: "舞台『すべての犬は天国へ行く』出演メンバーで構成",
+    description: '舞台『すべての犬は天国へ行く』出演メンバーで構成',
   }),
   createUnitRaw({
-    name: UNIT_NAMES["スイカ"].name,
+    name: UNIT_NAMES['スイカ'].name,
     members: [
       MemberNameKey.ItouKarin,
       MemberNameKey.ItouJunna,
@@ -157,7 +157,7 @@ export const UNITS: UnitRaw[] = [
     type: UnitType.Corp,
   }),
   createUnitRaw({
-    name: UNIT_NAMES["チューリップ"].name,
+    name: UNIT_NAMES['チューリップ'].name,
     members: [
       MemberNameKey.NoujouAmi,
       MemberNameKey.IkutaErika,
@@ -168,6 +168,6 @@ export const UNITS: UnitRaw[] = [
       MemberNameKey.WadaMaaya,
     ],
     type: UnitType.Corp,
-    description: "母体は「チームD (ディズニー好き)」 (和田を除くメンバー)",
+    description: '母体は「チームD (ディズニー好き)」 (和田を除くメンバー)',
   }),
 ];

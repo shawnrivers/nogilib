@@ -1,27 +1,27 @@
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
-import { SongRaw } from "server/actors/Songs/models";
-import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { SONGS } from "server/actors/Songs/constants/songTitle";
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { SongRaw } from 'server/actors/Songs/models';
+import { createSongRaw } from 'server/actors/Songs/raw/creator';
+import { SongType } from 'server/actors/Songs/constants/songType';
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const UNDER_ALBUM_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS["自分のこと"].title,
+    title: SONGS['自分のこと'].title,
     type: SongType.Solo,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["小松清人"],
-      arrange: ["小松清人"],
+      lyrics: ['秋元康'],
+      compose: ['小松清人'],
+      arrange: ['小松清人'],
     },
     solo: MemberNameKey.NakamotoHimeka,
   }),
   createSongRaw({
-    title: SONGS["自惚れビーチ"].title,
+    title: SONGS['自惚れビーチ'].title,
     type: SongType.Under,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["ツキダタダシ"],
-      arrange: ["ツキダタダシ"],
+      lyrics: ['秋元康'],
+      compose: ['ツキダタダシ'],
+      arrange: ['ツキダタダシ'],
     },
     center: [MemberNameKey.SuzukiAyane],
     formations: {
@@ -44,12 +44,12 @@ export const UNDER_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["その女"].title,
+    title: SONGS['その女'].title,
     type: SongType.Under,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["HRK"],
-      arrange: ["APAZZI"],
+      lyrics: ['秋元康'],
+      compose: ['HRK'],
+      arrange: ['APAZZI'],
     },
     center: [MemberNameKey.TeradaRanze],
     formations: {
@@ -72,12 +72,12 @@ export const UNDER_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["誰よりそばにいたい"].title,
+    title: SONGS['誰よりそばにいたい'].title,
     type: SongType.Under,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["岩崎哲也"],
-      arrange: ["関根佑樹"],
+      lyrics: ['秋元康'],
+      compose: ['岩崎哲也'],
+      arrange: ['関根佑樹'],
     },
     center: [MemberNameKey.HiguchiHina],
     formations: {

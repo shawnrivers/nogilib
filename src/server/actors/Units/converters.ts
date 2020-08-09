@@ -1,11 +1,11 @@
-import { SongsRawArray } from "server/actors/Songs/models";
-import { UnitRaw, UnitResult } from "server/actors/Units/models";
-import { SongType } from "server/actors/Songs/constants/songType";
+import { SongsRawArray } from 'server/actors/Songs/models';
+import { UnitRaw, UnitResult } from 'server/actors/Units/models';
+import { SongType } from 'server/actors/Songs/constants/songType';
 
 type ConvertUnitSongs = (params: {
-  unitName: UnitRaw["name"];
+  unitName: UnitRaw['name'];
   songsRawArray: SongsRawArray;
-}) => UnitResult["songs"];
+}) => UnitResult['songs'];
 
 export const convertUnitSongs: ConvertUnitSongs = ({
   unitName,

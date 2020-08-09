@@ -1,4 +1,4 @@
 export enum UnitType {
-  Unit = "unit",
-  Corp = "corp",
+  Unit = 'unit',
+  Corp = 'corp',
 }

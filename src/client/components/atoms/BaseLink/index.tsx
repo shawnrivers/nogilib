@@ -29,7 +29,6 @@ export const BaseLink: React.FC<BaseLinkProps> = props => {
     backgroundColorVariant = 'variant0',
     disabled = false,
     children,
-    ...restProps
   } = props;
 
   const theme = useAppTheme();
@@ -77,11 +76,11 @@ export const BaseLink: React.FC<BaseLinkProps> = props => {
   return disabled ? (
     <div css={baseStyles}>{children}</div>
   ) : element === 'a' ? (
-    <a href={to} css={styles} {...restProps}>
+    <a href={to} css={styles}>
       {children}
     </a>
   ) : (
-    <Link to={to} css={styles} {...restProps}>
+    <Link to={to} css={styles}>
       {children}
     </Link>
   );

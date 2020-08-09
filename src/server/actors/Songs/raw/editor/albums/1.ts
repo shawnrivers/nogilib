@@ -1,18 +1,18 @@
-import { MemberNameKey } from "server/actors/Members/constants/memberName";
-import { SongRaw } from "server/actors/Songs/models";
-import { createSongRaw } from "server/actors/Songs/raw/creator";
-import { SongType } from "server/actors/Songs/constants/songType";
-import { SONGS } from "server/actors/Songs/constants/songTitle";
-import { UNIT_NAMES } from "server/actors/Units/constants/unitName";
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { SongRaw } from 'server/actors/Songs/models';
+import { createSongRaw } from 'server/actors/Songs/raw/creator';
+import { SongType } from 'server/actors/Songs/constants/songType';
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
+import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
 
 export const FIRST_ALBUM_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS["誰かは味方"].title,
+    title: SONGS['誰かは味方'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["宮坂聡彦"],
-      arrange: ["佐々木裕"],
+      lyrics: ['秋元康'],
+      compose: ['宮坂聡彦'],
+      arrange: ['佐々木裕'],
     },
     formations: {
       firstRow: [
@@ -23,12 +23,12 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["革命の馬"].title,
+    title: SONGS['革命の馬'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["伊勢佳史"],
-      arrange: ["伊勢佳史"],
+      lyrics: ['秋元康'],
+      compose: ['伊勢佳史'],
+      arrange: ['伊勢佳史'],
     },
     formations: {
       firstRow: [
@@ -42,12 +42,12 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["僕がいる場所"].title,
+    title: SONGS['僕がいる場所'].title,
     type: SongType.Selected,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["杉山勝彦"],
-      arrange: ["杉山勝彦", "有木竜郎"],
+      lyrics: ['秋元康'],
+      compose: ['杉山勝彦'],
+      arrange: ['杉山勝彦', '有木竜郎'],
     },
     center: [MemberNameKey.IkutaErika],
     formations: {
@@ -72,25 +72,25 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["あなたのために弾きたい"].title,
+    title: SONGS['あなたのために弾きたい'].title,
     type: SongType.Solo,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["近藤圭一"],
-      arrange: ["樫原伸彦"],
+      lyrics: ['秋元康'],
+      compose: ['近藤圭一'],
+      arrange: ['樫原伸彦'],
     },
     solo: MemberNameKey.IkutaErika,
   }),
   createSongRaw({
-    title: SONGS["傾斜する"].title,
+    title: SONGS['傾斜する'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["須藤哲平", "長谷川湊"],
-      arrange: ["佐々木裕"],
+      lyrics: ['秋元康'],
+      compose: ['須藤哲平', '長谷川湊'],
+      arrange: ['佐々木裕'],
     },
     center: [MemberNameKey.KojimaHaruna],
-    unit: UNIT_NAMES["こじ坂46"].name,
+    unit: UNIT_NAMES['こじ坂46'].name,
     formations: {
       firstRow: [
         MemberNameKey.KojimaHaruna,
@@ -113,11 +113,11 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["なぞの落書き"].title,
+    title: SONGS['なぞの落書き'].title,
     type: SongType.Unit,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["片桐周太郎"],
+      lyrics: ['秋元康'],
+      compose: ['片桐周太郎'],
       arrange: ['野中"まさ"雄一'],
     },
     formations: {
@@ -129,12 +129,12 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["自由の彼方"].title,
+    title: SONGS['自由の彼方'].title,
     type: SongType.Under,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["山田智和"],
-      arrange: ["住谷翔平"],
+      lyrics: ['秋元康'],
+      compose: ['山田智和'],
+      arrange: ['住谷翔平'],
     },
     center: [MemberNameKey.InoueSayuri],
     formations: {
@@ -167,12 +167,12 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS["ひとりよがり"].title,
+    title: SONGS['ひとりよがり'].title,
     type: SongType.Solo,
     creators: {
-      lyrics: ["秋元康"],
-      compose: ["杉山勝彦"],
-      arrange: ["杉山勝彦", "有木竜郎"],
+      lyrics: ['秋元康'],
+      compose: ['杉山勝彦'],
+      arrange: ['杉山勝彦', '有木竜郎'],
     },
     solo: MemberNameKey.NishinoNanase,
   }),
