@@ -22,7 +22,11 @@ const NavigationItem: React.FC<Omit<TextLinkProps, 'element'>> = props => {
   const { to, children, onClick, ...restProps } = props;
 
   return (
-    <li>
+    <li
+      css={css`
+        margin-top: 1em;
+      `}
+    >
       <TextLink
         to={to}
         element="Link"
@@ -33,7 +37,6 @@ const NavigationItem: React.FC<Omit<TextLinkProps, 'element'>> = props => {
         showUnderline={false}
         onClick={onClick}
         css={css`
-          margin-top: 1em;
           text-transform: uppercase;
         `}
         {...restProps}
