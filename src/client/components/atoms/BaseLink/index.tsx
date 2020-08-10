@@ -28,7 +28,6 @@ export const BaseLink: React.FC<BaseLinkProps> = props => {
     backgroundType = 'background',
     backgroundColorVariant = 'variant0',
     disabled = false,
-    onClick,
     children,
   } = props;
 
@@ -54,14 +53,16 @@ export const BaseLink: React.FC<BaseLinkProps> = props => {
         mapBackgroundToForeground(backgroundType)
       ][underlineColorVariant]};
 
-      &:hover {
-        background-color: ${theme.colors.theme[backgroundType][
-          backgroundColorVariant
-        ]};
-      }
-
       &:focus {
         outline: auto;
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          background-color: ${theme.colors.theme[backgroundType][
+            backgroundColorVariant
+          ]};
+        }
       }
     `,
     [
@@ -77,11 +78,11 @@ export const BaseLink: React.FC<BaseLinkProps> = props => {
   return disabled ? (
     <div css={baseStyles}>{children}</div>
   ) : element === 'a' ? (
-    <a href={to} css={styles} onClick={onClick}>
+    <a href={to} css={styles}>
       {children}
     </a>
   ) : (
-    <Link to={to} css={styles} onClick={onClick}>
+    <Link to={to} css={styles}>
       {children}
     </Link>
   );

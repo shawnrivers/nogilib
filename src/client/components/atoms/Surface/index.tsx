@@ -60,10 +60,12 @@ export const Surface: React.FC<SurfaceProps> = props => {
   const hoveredStyles = React.useMemo(
     () => ({
       container: css`
-        &:hover {
-          box-shadow: ${theme.elevation[
-            componentElevationKey.elevatedComponentOnBackground
-          ].boxShadow};
+        @media (hover: hover) and (pointer: fine) {
+          &:hover {
+            box-shadow: ${theme.elevation[
+              componentElevationKey.elevatedComponentOnBackground
+            ].boxShadow};
+          }
         }
 
         &:focus {
@@ -71,10 +73,12 @@ export const Surface: React.FC<SurfaceProps> = props => {
         }
       `,
       overlay: css`
-        &:hover {
-          background-color: ${theme.elevation[
-            componentElevationKey.elevatedComponentOnBackground
-          ].whiteOverlayTransparency};
+        @media (hover: hover) and (pointer: fine) {
+          &:hover {
+            background-color: ${theme.elevation[
+              componentElevationKey.elevatedComponentOnBackground
+            ].whiteOverlayTransparency};
+          }
         }
       `,
     }),

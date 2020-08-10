@@ -90,8 +90,10 @@ export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props =
               align-self: center;
               justify-self: start;
 
-              &:hover {
-                text-decoration: underline;
+              @media (hover: hover) and (pointer: fine) {
+                &:hover {
+                  text-decoration: underline;
+                }
               }
             `}
           >
