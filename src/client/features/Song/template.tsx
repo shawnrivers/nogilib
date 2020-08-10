@@ -182,7 +182,7 @@ export const SongPage: React.FC<SongPageProps> = ({
           <GridArtworkImage
             src={artwork}
             alt={title}
-            glow
+            shadow
             fixedSize
             css={css`
               width: 200px;

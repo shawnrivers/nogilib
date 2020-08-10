@@ -83,7 +83,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
           css={css`
             vertical-align: center;
             text-transform: capitalize;
-            text-align-last: center;
+            text-align: center;
             margin-top: 0.3em;
           `}
         >
@@ -110,10 +110,10 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
             src={profileImage}
             alt={name}
             fixedSize
-            glow
+            shadow
             css={css`
-              width: 180px;
-              height: 220px;
+              width: 200px;
+              height: 240px;
             `}
           />
           <div
@@ -450,7 +450,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                   src={profileImage}
                   key={index}
                   alt={name}
-                  glow
+                  shadow
                   fixedSize
                   css={css`
                     width: ${140}px;

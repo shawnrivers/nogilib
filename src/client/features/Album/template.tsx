@@ -111,7 +111,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
               key={i}
               src={artwork.url}
               alt={String(i + 1)}
-              glow
+              shadow
               fixedSize
               css={css`
                 width: 160px;
