@@ -90,7 +90,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
                   borderRadius="s"
                   padding="xs"
                   css={css`
-                    width: 120px;
+                    width: 130px;
                     margin: ${commonStyles.spacing.xs};
                   `}
                 />

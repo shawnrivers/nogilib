@@ -94,7 +94,7 @@ export const MembersPage: React.FC<MembersPageProps> = props => {
                   borderRadius="s"
                   padding="xs"
                   css={css`
-                    width: 120px;
+                    width: 130px;
                     margin: ${commonStyles.spacing.xs};
                   `}
                 />

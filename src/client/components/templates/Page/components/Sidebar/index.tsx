@@ -3,14 +3,13 @@ import { jsx, css } from '@emotion/core';
 import * as React from 'react';
 import { motion } from 'framer-motion';
 import { CloseIcon } from 'client/components/atoms/icons/CloseIcon';
-import { commonStyles, useAppTheme } from 'client/styles/tokens';
+import { useAppTheme } from 'client/styles/tokens';
 import {
   getDiscographyUrl,
   getMembersUrl,
   getSearchUrl,
 } from 'client/utils/urls';
 import { componentElevationKey } from 'client/styles/elevation';
-import { Divider } from 'client/components/atoms/Divider';
 import { BaseButton } from 'client/components/atoms/BaseButton';
 import {
   TextLink,
@@ -142,16 +141,6 @@ export const Sidebar: React.FC<{
               {getTranslation('search')}
             </NavigationItem>
           </ul>
-          <Divider
-            lineColor={{
-              on: 'onSecondary',
-              variant: 'variant0',
-            }}
-            css={css`
-              margin: ${commonStyles.spacing.l} auto;
-              width: 24px;
-            `}
-          />
         </div>
       </motion.div>
     </div>
