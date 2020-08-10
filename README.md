@@ -4,12 +4,12 @@
   </a>
 </p>
 <h1 align="center">
-  Nogizaka Lib
+  NOGILIB
 </h1>
 
 **[App link](https://shawnrivers.github.io/nogilib/discography)**
 
-**Nogizaka Lib** (**Nogilib**) is a web application for showing the information about [Nogizaka46](http://www.nogizaka46.com/) in a user-friendly way.
+**NOGILIB** is a web application for showing the information about [Nogizaka46](http://www.nogizaka46.com/) in a user-friendly way.
 
 ## Multi-language Support
 
