@@ -30,14 +30,25 @@ export const useDarkModeMediaQuery = () => {
         }
       }
 
-      darkModeMediaQuery.addEventListener('change', handleDarkModeQueryChange);
+      if (typeof darkModeMediaQuery.addEventListener === 'function') {
+        darkModeMediaQuery.addEventListener(
+          'change',
+          handleDarkModeQueryChange
+        );
+      } else {
+        darkModeMediaQuery.addListener(handleDarkModeQueryChange);
+      }
     }
 
     return () => {
-      darkModeMediaQuery.removeEventListener(
-        'change',
-        handleDarkModeQueryChange
-      );
+      if (typeof darkModeMediaQuery.addEventListener === 'function') {
+        darkModeMediaQuery.removeEventListener(
+          'change',
+          handleDarkModeQueryChange
+        );
+      } else {
+        darkModeMediaQuery.removeListener(handleDarkModeQueryChange);
+      }
     };
   }, [themeMode, setThemeKey]);
 };
