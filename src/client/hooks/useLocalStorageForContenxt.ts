@@ -11,7 +11,12 @@ export const useLocalStorageForContext = () => {
   const { setTheme, setLanguage } = useAppContext();
 
   React.useEffect(() => {
-    setTheme(localStorage.getItem(LOCAL_STORAGE_THEME_MODE_KEY) as ThemeMode);
-    setLanguage(localStorage.getItem(LOCAL_STORAGE_LANGUAGE) as Language);
+    const themeMode = (localStorage.getItem(LOCAL_STORAGE_THEME_MODE_KEY) ??
+      'auto') as ThemeMode;
+    const language = (localStorage.getItem(LOCAL_STORAGE_LANGUAGE) ??
+      'ja') as Language;
+
+    setTheme(themeMode);
+    setLanguage(language);
   }, [setLanguage, setTheme]);
 };

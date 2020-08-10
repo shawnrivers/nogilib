@@ -18,9 +18,6 @@ export const useTranslations = (): {
 } => {
   const { language } = useAppContext();
 
-  console.log('[useTranslations] language:', language);
-  console.log('[useTranslations] messages:', messages);
-
   const getTranslation = React.useCallback(
     (text: DictionaryKey) => messages[language][text] ?? text,
     [language]
