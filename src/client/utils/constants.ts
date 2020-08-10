@@ -24,4 +24,4 @@ export enum SearchResultType {
 }
 
 export const LOCAL_STORAGE_THEME_MODE_KEY = 'themeMode';
-export const LOCAL_STORAGE_LANGUAGE_KEY = 'language';
+export const LOCAL_STORAGE_LANGUAGE = 'language';
