@@ -31,6 +31,7 @@ export const TextSwitchLink: React.FC<TextSwitchLinkProps> = props => {
       showUnderline={false}
       textColor={{ on: textOn, variant: 'variant1' }}
       typographyVariant={variant}
+      {...restProps}
     >
       {children}
     </TextLink>

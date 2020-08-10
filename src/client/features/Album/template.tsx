@@ -86,12 +86,12 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
                     member.nameNotations.firstName
                   }
                   to={getMemberUrl(member.name)}
-                  textSize="em2"
+                  textSize="body2"
                   borderRadius="s"
-                  padding="s"
+                  padding="xs"
                   css={css`
-                    width: 160px;
-                    margin: ${commonStyles.spacing.s};
+                    width: 120px;
+                    margin: ${commonStyles.spacing.xs};
                   `}
                 />
               ))}

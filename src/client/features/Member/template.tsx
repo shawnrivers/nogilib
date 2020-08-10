@@ -18,26 +18,9 @@ import { PositionCounter } from 'client/features/Member/components/PositionCount
 import { TextLink } from 'client/components/molecules/links/TextLink';
 import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
 import { GlowStickBadge } from 'client/features/Member/components/GlowStickBadge';
-
-const InfoItemLabel: React.FC = props => (
-  <Typography
-    variant="body2"
-    element="span"
-    textColor={{ on: 'onBackground', variant: 'standard' }}
-  >
-    {props.children}
-  </Typography>
-);
-
-const InfoItemValue: React.FC = props => (
-  <Typography
-    variant="body2"
-    element="span"
-    textColor={{ on: 'onBackground', variant: 'variant0' }}
-  >
-    {props.children}
-  </Typography>
-);
+import { InfoItemLabel } from 'client/components/molecules/typography/info/InfoItemLabel';
+import { InfoItemValue } from 'client/components/molecules/typography/info/InfoItemValue';
+import { SectionSubtitle } from 'client/components/molecules/typography/SectionSubtitle';
 
 export const MemberPage: React.FC<MemberPageProps> = props => {
   const {
@@ -93,7 +76,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
             ? names.en
             : names.ja}
         </Typography>
-        <TextDivider text={<Translation text="profile" />} />
+        <TextDivider text={<Translation text="profile" />} element="h2" />
         <div
           css={css`
             display: flex;
@@ -124,7 +107,6 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
               grid-gap: ${theme.spacing.s};
               margin-top: 0.5em;
               align-items: center;
-              text-transform: capitalize;
             `}
           >
             <InfoItemLabel>
@@ -145,7 +127,13 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
             <InfoItemLabel>
               <Translation text="blood type" />
             </InfoItemLabel>
-            <InfoItemValue>{bloodType}</InfoItemValue>
+            <InfoItemValue
+              css={css`
+                text-transform: uppercase;
+              `}
+            >
+              {bloodType}
+            </InfoItemValue>
             <InfoItemLabel>
               <Translation text="birthplace" />
             </InfoItemLabel>
@@ -199,23 +187,20 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
         </div>
         {sites.length > 0 ? (
           <React.Fragment>
-            <Typography
-              variant="h4"
-              element="h3"
+            <SectionSubtitle
               css={css`
-                margin: 0.5em 0;
-                text-align: center;
-                text-transform: capitalize;
+                margin-top: 0.6em;
               `}
             >
               <Translation text="websites" />
-            </Typography>
+            </SectionSubtitle>
             <div
               css={css`
                 display: flex;
                 justify-content: center;
                 align-items: baseline;
                 flex-wrap: wrap;
+                margin-top: 0.5em;
               `}
             >
               {sites.map(site => (
@@ -237,23 +222,20 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
         ) : null}
         {photoAlbums.length > 0 ? (
           <React.Fragment>
-            <Typography
-              variant="h4"
-              element="h3"
+            <SectionSubtitle
               css={css`
-                margin: 0.5em 0;
-                text-align: center;
-                text-transform: capitalize;
+                margin-top: 0.6em;
               `}
             >
               <Translation text="photo albums" />
-            </Typography>
+            </SectionSubtitle>
             <div
               css={css`
                 display: flex;
                 justify-content: center;
                 align-items: baseline;
                 flex-wrap: wrap;
+                margin-top: 0.5em;
               `}
             >
               {photoAlbums.map(photoAlbum => (
@@ -274,7 +256,10 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
         ) : null}
         {positionsHistory.length > 0 ? (
           <React.Fragment>
-            <TextDivider text={<Translation text="position history" />} />
+            <TextDivider
+              text={<Translation text="position history" />}
+              element="h2"
+            />
             <div
               css={css`
                 display: flex;
@@ -437,7 +422,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
         ) : null}
         {gallery.length > 0 ? (
           <React.Fragment>
-            <TextDivider text={<Translation text="gallery" />} />
+            <TextDivider text={<Translation text="gallery" />} element="h2" />
             <div
               css={css`
                 display: flex;
@@ -453,8 +438,8 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                   shadow
                   fixedSize
                   css={css`
-                    width: ${140}px;
-                    height: ${168}px;
+                    width: ${110}px;
+                    height: ${132}px;
                     margin: ${commonStyles.spacing.xs};
                   `}
                 />

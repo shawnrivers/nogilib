@@ -2,9 +2,17 @@
 import { css, jsx } from '@emotion/core';
 import * as React from 'react';
 import { useAppTheme } from 'client/styles/tokens';
-import { Typography } from 'client/components/atoms/Typography';
+import {
+  Typography,
+  TypographyProps,
+} from 'client/components/atoms/Typography';
 
-export const TextDivider: React.FC<{ text: React.ReactNode }> = props => {
+export const TextDivider: React.FC<{
+  text: React.ReactNode;
+  element?: TypographyProps['element'];
+}> = props => {
+  const { element = 'span' } = props;
+
   const theme = useAppTheme();
   const dividerLineColor = theme.colors.theme.onBackground.variant1;
   const dividerLineStyles = css`
@@ -35,7 +43,7 @@ export const TextDivider: React.FC<{ text: React.ReactNode }> = props => {
       />
       <Typography
         variant="h3"
-        element="span"
+        element={element}
         textColor={{ on: 'onBackground', variant: 'standard' }}
         css={css`
           margin: 0 1em;

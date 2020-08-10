@@ -45,6 +45,7 @@ export const MembersPage: React.FC<MembersPageProps> = props => {
         <TextSwitchLinkGroup
           variant="h4"
           textOn="onBackground"
+          capitalize
           links={[
             {
               text: getTranslation('current'),
@@ -71,7 +72,10 @@ export const MembersPage: React.FC<MembersPageProps> = props => {
         />
         {memberGroupsByJoin.map(member => (
           <div key={member.join}>
-            <TextDivider text={getTranslation(`join: ${member.join}` as any)} />
+            <TextDivider
+              text={getTranslation(`join: ${member.join}` as any)}
+              element="h2"
+            />
             <div
               css={css`
                 display: flex;
@@ -86,11 +90,11 @@ export const MembersPage: React.FC<MembersPageProps> = props => {
                   profileImage={member.profileImage}
                   name={formatMemberName(member.nameNotations)}
                   to={getMemberUrl(member.name)}
-                  textSize="em2"
+                  textSize="body2"
                   borderRadius="s"
-                  padding="s"
+                  padding="xs"
                   css={css`
-                    width: 150px;
+                    width: 120px;
                     margin: ${commonStyles.spacing.xs};
                   `}
                 />

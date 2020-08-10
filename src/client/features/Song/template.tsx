@@ -9,7 +9,6 @@ import { SongType } from 'server/actors/Songs/constants/songType';
 import { KOJIHARU_IMAGE_SRC } from 'server/constants/paths';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { PageContent } from 'client/components/templates/Page';
-import { Typography } from 'client/components/atoms/Typography';
 import { Hashtag } from 'client/components/atoms/Hashtag';
 import { commonStyles, Theme, useAppTheme } from 'client/styles/tokens';
 import { GridArtworkImage } from 'client/components/atoms/images/GirdArtworkImage';
@@ -21,6 +20,10 @@ import {
 import { getMemberUrl } from 'client/utils/urls';
 import { useTranslations } from 'client/hooks/useTranslations';
 import { useAppContext } from 'client/hooks/useAppContext';
+import { NameNotationsForIntl, useIntl } from 'client/hooks/useIntl';
+import { InfoItemLabel } from 'client/components/molecules/typography/info/InfoItemLabel';
+import { InfoItemValue } from 'client/components/molecules/typography/info/InfoItemValue';
+import { SectionSubtitle } from 'client/components/molecules/typography/SectionSubtitle';
 
 type StyledComponentWithThemeProps = {
   theme: Theme;
@@ -30,21 +33,38 @@ const RowContainer = styled.div<StyledComponentWithThemeProps>`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 1em;
+  margin-top: 0.5em;
 
   & > * {
-    width: 140px;
+    width: 110px;
     margin: ${commonStyles.spacing.xs};
   }
 `;
 
-const memberCardCommonProps: Pick<
-  MemberCardProps,
-  'textSize' | 'borderRadius' | 'padding'
-> = {
-  textSize: 'body2',
-  borderRadius: 's',
-  padding: 's',
+const KOJIHARU_NAME_NOTATIONS: NameNotationsForIntl = {
+  lastName: '小嶋',
+  firstName: '陽菜',
+  lastNameEn: 'kojima',
+  firstNameEn: 'haruna',
+};
+
+type PerformerCardProps = Pick<MemberCardProps, 'profileImage' | 'to'> & {
+  nameNotations: NameNotationsForIntl;
+};
+
+const PerformerCard: React.FC<PerformerCardProps> = props => {
+  const { formatMemberName } = useIntl();
+
+  return (
+    <MemberCard
+      name={formatMemberName(props.nameNotations)}
+      profileImage={props.profileImage}
+      to={props.to}
+      textSize="body3"
+      borderRadius="s"
+      padding="xs"
+    />
+  );
 };
 
 const PerformersTag: React.FC<{
@@ -166,7 +186,7 @@ export const SongPage: React.FC<SongPageProps> = ({
             </Hashtag>
           ))}
         </div>
-        <TextDivider text={<Translation text="info" />} />
+        <TextDivider text={<Translation text="info" />} element="h2" />
         <div
           css={css`
             display: flex;
@@ -193,7 +213,7 @@ export const SongPage: React.FC<SongPageProps> = ({
             creators.compose.length +
             creators.arrange.length +
             creators.direct.length >
-          0 ? (
+            0 && (
             <div
               css={css`
                 display: grid;
@@ -204,94 +224,50 @@ export const SongPage: React.FC<SongPageProps> = ({
                 align-items: center;
               `}
             >
-              {creators.lyrics.length > 0 ? (
+              {creators.lyrics.length > 0 && (
                 <React.Fragment>
-                  <Typography
-                    variant="body2"
-                    element="span"
-                    textColor={{ on: 'onBackground', variant: 'standard' }}
-                    css={css`
-                      text-transform: capitalize;
-                    `}
-                  >
+                  <InfoItemLabel>
                     <Translation text="lyrics" />
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    element="span"
-                    textColor={{ on: 'onBackground', variant: 'variant0' }}
-                  >
+                  </InfoItemLabel>
+                  <InfoItemValue>
                     <LocalizedList list={creators.lyrics} />
-                  </Typography>
+                  </InfoItemValue>
                 </React.Fragment>
-              ) : null}
-              {creators.compose.length > 0 ? (
+              )}
+              {creators.compose.length > 0 && (
                 <React.Fragment>
-                  <Typography
-                    variant="body2"
-                    element="span"
-                    textColor={{ on: 'onBackground', variant: 'standard' }}
-                    css={css`
-                      text-transform: capitalize;
-                    `}
-                  >
+                  <InfoItemLabel>
                     <Translation text="compose" />
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    element="span"
-                    textColor={{ on: 'onBackground', variant: 'variant0' }}
-                  >
+                  </InfoItemLabel>
+                  <InfoItemValue>
                     <LocalizedList list={creators.compose} />
-                  </Typography>
+                  </InfoItemValue>
                 </React.Fragment>
-              ) : null}
-              {creators.arrange.length > 0 ? (
+              )}
+              {creators.arrange.length > 0 && (
                 <React.Fragment>
-                  <Typography
-                    variant="body2"
-                    element="span"
-                    textColor={{ on: 'onBackground', variant: 'standard' }}
-                    css={css`
-                      text-transform: capitalize;
-                    `}
-                  >
+                  <InfoItemLabel>
                     <Translation text="arrange" />
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    element="span"
-                    textColor={{ on: 'onBackground', variant: 'variant0' }}
-                  >
+                  </InfoItemLabel>
+                  <InfoItemValue>
                     <LocalizedList list={creators.arrange} />
-                  </Typography>
+                  </InfoItemValue>
                 </React.Fragment>
-              ) : null}
-              {creators.direct.length > 0 ? (
+              )}
+              {creators.direct.length > 0 && (
                 <React.Fragment>
-                  <Typography
-                    variant="body2"
-                    element="span"
-                    textColor={{ on: 'onBackground', variant: 'standard' }}
-                    css={css`
-                      text-transform: capitalize;
-                    `}
-                  >
+                  <InfoItemLabel>
                     <Translation text="direct" />
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    element="span"
-                    textColor={{ on: 'onBackground', variant: 'variant0' }}
-                  >
+                  </InfoItemLabel>
+                  <InfoItemValue>
                     <LocalizedList list={creators.direct} />
-                  </Typography>
+                  </InfoItemValue>
                 </React.Fragment>
-              ) : null}
+              )}
             </div>
-          ) : null}
+          )}
         </div>
-        <TextDivider text={<Translation text="performers" />} />
+        <TextDivider text={<Translation text="performers" />} element="h2" />
         <div>
           {formation.length > 0 ? (
             <section>
@@ -309,44 +285,40 @@ export const SongPage: React.FC<SongPageProps> = ({
                   />
                 ) : null}
               </div>
-              <div>
+              <div
+                css={css`
+                  margin-top: 1em;
+                `}
+              >
                 {formation.length > 1 ? (
                   formation.map((row, index) => (
                     <div key={index}>
-                      <Typography
-                        variant="h5"
-                        element="h4"
+                      <SectionSubtitle
                         css={css`
-                          margin-top: 1em;
-                          text-align: center;
+                          margin-top: 0.5em;
                         `}
                       >
                         <LocalizedNumber num={index + 1} type="row" />
-                      </Typography>
+                      </SectionSubtitle>
                       <RowContainer>
                         {row.map(memberName => {
                           if (memberName !== MemberNameKey.KojimaHaruna) {
                             const member = members[memberName];
 
                             return (
-                              <MemberCard
+                              <PerformerCard
                                 key={member.name}
-                                name={
-                                  member.nameNotations.lastName +
-                                  member.nameNotations.firstName
-                                }
+                                nameNotations={member.nameNotations}
                                 profileImage={member.profileImage}
                                 to={getMemberUrl(member.name)}
-                                {...memberCardCommonProps}
                               />
                             );
                           } else {
                             return (
-                              <MemberCard
+                              <PerformerCard
                                 key={'小嶋陽菜'}
-                                name={'小嶋陽菜'}
+                                nameNotations={KOJIHARU_NAME_NOTATIONS}
                                 profileImage={KOJIHARU_IMAGE_SRC}
-                                {...memberCardCommonProps}
                               />
                             );
                           }
@@ -360,24 +332,19 @@ export const SongPage: React.FC<SongPageProps> = ({
                       if (memberName !== MemberNameKey.KojimaHaruna) {
                         const member = members[memberName];
                         return (
-                          <MemberCard
+                          <PerformerCard
                             key={member.name}
-                            name={
-                              member.nameNotations.lastName +
-                              member.nameNotations.firstName
-                            }
+                            nameNotations={member.nameNotations}
                             profileImage={member.profileImage}
                             to={getMemberUrl(member.name)}
-                            {...memberCardCommonProps}
                           />
                         );
                       } else {
                         return (
-                          <MemberCard
+                          <PerformerCard
                             key={'小嶋陽菜'}
-                            name={'小嶋陽菜'}
+                            nameNotations={KOJIHARU_NAME_NOTATIONS}
                             profileImage={KOJIHARU_IMAGE_SRC}
-                            {...memberCardCommonProps}
                           />
                         );
                       }

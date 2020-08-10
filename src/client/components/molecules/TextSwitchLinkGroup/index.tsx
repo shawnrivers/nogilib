@@ -1,3 +1,5 @@
+/**@jsx jsx */
+import { jsx, css } from '@emotion/core';
 import * as React from 'react';
 import { Typography } from 'client/components/atoms/Typography';
 import {
@@ -5,46 +7,51 @@ import {
   TextSwitchLinkProps,
 } from 'client/components/molecules/links/TextSwitchLink';
 
-type TextSwitchLinkGroupProps = Pick<
+type TextSwitchLinkGroupProps = Omit<
   TextSwitchLinkProps,
-  'variant' | 'textOn'
+  'to' | 'isSwitchedOn'
 > & {
   links: (Pick<TextSwitchLinkProps, 'isSwitchedOn' | 'to'> & {
     text: React.ReactNode;
   })[];
-} & React.HTMLAttributes<HTMLDivElement>;
+};
 
 export const TextSwitchLinkGroup: React.FC<TextSwitchLinkGroupProps> = props => {
-  const { variant, textOn = 'onBackground', links, ...restProps } = props;
+  const { links, ...TextSwitchLinkProps } = props;
 
   return (
-    <div {...restProps}>
+    <div
+      css={css`
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      `}
+    >
       {links.map((link, index) =>
         index === links.length - 1 ? (
           <TextSwitchLink
             key={index}
-            variant={variant}
-            textOn={textOn}
             isSwitchedOn={link.isSwitchedOn}
             to={link.to}
+            {...TextSwitchLinkProps}
           >
             {link.text}
           </TextSwitchLink>
         ) : (
           <React.Fragment key={index}>
             <TextSwitchLink
-              variant={variant}
-              textOn={textOn}
               isSwitchedOn={link.isSwitchedOn}
               to={link.to}
+              {...TextSwitchLinkProps}
             >
               {link.text}
             </TextSwitchLink>
             <Typography
-              variant={variant}
+              variant={TextSwitchLinkProps.variant}
               element="span"
               textColor={{
-                on: textOn,
+                on: TextSwitchLinkProps.textOn ?? 'onBackground',
                 variant: 'variant1',
               }}
             >

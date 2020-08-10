@@ -22,6 +22,20 @@ import { TextLink } from 'client/components/molecules/links/TextLink';
 import { BaseButton } from 'client/components/atoms/BaseButton';
 import { useTranslations } from 'client/hooks/useTranslations';
 
+const SettingHeading: React.FC = props => (
+  <Typography
+    variant="body2"
+    element="p"
+    bold
+    css={css`
+      text-transform: capitalize;
+      text-align: center;
+    `}
+  >
+    {props.children}
+  </Typography>
+);
+
 const SelectionItem: React.FC<
   {
     isSelected: boolean;
@@ -137,16 +151,7 @@ const Settings: React.FC = () => {
         `}
       >
         <Card elevation={componentElevationKey.dropdown} borderRadius="s">
-          <Typography
-            variant="body2"
-            element="p"
-            css={css`
-              text-transform: capitalize;
-              text-align: center;
-            `}
-          >
-            {getTranslation('languages')}
-          </Typography>
+          <SettingHeading>{getTranslation('languages')}</SettingHeading>
           <ul
             css={css`
               margin-top: ${commonStyles.spacing.xs};
@@ -177,16 +182,7 @@ const Settings: React.FC = () => {
               margin: ${commonStyles.spacing.s} 0;
             `}
           />
-          <Typography
-            variant="body2"
-            element="p"
-            css={css`
-              text-transform: capitalize;
-              text-align: center;
-            `}
-          >
-            {getTranslation('color theme')}
-          </Typography>
+          <SettingHeading>{getTranslation('color theme')}</SettingHeading>
           <ul
             css={css`
               margin-top: ${commonStyles.spacing.xs};

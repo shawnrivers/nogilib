@@ -29,6 +29,7 @@ export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
         <TextSwitchLinkGroup
           variant="h4"
           textOn="onBackground"
+          capitalize
           links={[
             {
               text: <Translation text="singles" />,
@@ -55,7 +56,7 @@ export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
         />
         {cdGroupsByYear.map(cdGroup => (
           <div key={cdGroup.year}>
-            <TextDivider text={cdGroup.year} />
+            <TextDivider text={cdGroup.year} element="h2" />
             <div
               css={css`
                 display: flex;
@@ -75,8 +76,8 @@ export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
                   borderRadius="s"
                   padding="s"
                   css={css`
-                    width: 200px;
-                    margin: ${commonStyles.spacing.s};
+                    width: 175px;
+                    margin: ${commonStyles.spacing.xs};
                   `}
                 />
               ))}
