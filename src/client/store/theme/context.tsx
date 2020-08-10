@@ -5,11 +5,13 @@ import { ThemeProvider as EmotionThemeProvider } from 'emotion-theming';
 import { themes } from 'client/styles/tokens';
 import { useDarkModeMediaQuery } from 'client/hooks/useDarkModeMediaQuery';
 import { useAppContext } from 'client/hooks/useAppContext';
+import { useLocalStorageForContext } from 'client/hooks/useLocalStorageForContenxt';
 
 export const ThemeProvider: React.FC = props => {
   const { themeKey } = useAppContext();
 
   useDarkModeMediaQuery();
+  useLocalStorageForContext();
 
   return (
     <EmotionThemeProvider theme={themes[themeKey]}>
