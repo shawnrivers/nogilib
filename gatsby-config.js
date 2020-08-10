@@ -2,7 +2,7 @@
 const path = require('path');
 
 module.exports = {
-  pathPrefix: '/nogizaka-lib-redesign',
+  pathPrefix: '/nogilib',
   plugins: [
     {
       resolve: 'gatsby-plugin-typescript',
@@ -55,7 +55,7 @@ module.exports = {
       options: {
         name: 'Nogizaka Lib',
         short_name: 'Nogilib',
-        start_url: '/nogizaka-lib-redesign/',
+        start_url: '/nogilib/',
         background_color: '#ffffff',
         theme_color: '#ffffff',
         display: 'standalone',

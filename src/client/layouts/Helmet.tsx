@@ -19,10 +19,7 @@ export const Helmet: React.FC = () => {
         name="description"
         content="NOGILIB is a Gatsby powered web application aiming at showing the information about Nogizaka46 in a user-friendly way."
       />
-      <meta
-        name="url"
-        content="https://shawnrivers.github.io/nogizaka-lib-redesign/"
-      />
+      <meta name="url" content="https://shawnrivers.github.io/nogilib/" />
       <meta name="og:title" content="NOGILIB" />
       <meta
         name="og:description"

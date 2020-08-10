@@ -1,21 +1,21 @@
 <p align="center">
-  <a href="https://shawnrivers.github.io/nogizaka-lib-redesign/cds/singles/">
-    <img alt="Gatsby" src="https://raw.githubusercontent.com/shawnrivers/nogizaka-lib-redesign/master/src/assets/images/favicon-512.png" width="128" />
+  <a href="https://shawnrivers.github.io/nogilib/discography">
+    <img alt="Gatsby" src="https://raw.githubusercontent.com/shawnrivers/nogilib/master/src/assets/images/favicon-512.png" width="128" />
   </a>
 </p>
 <h1 align="center">
   Nogizaka Lib
 </h1>
 
-**[App link](https://shawnrivers.github.io/nogizaka-lib-redesign/cds/singles/)**
+**[App link](https://shawnrivers.github.io/nogilib/discography)**
 
 **Nogizaka Lib** (**Nogilib**) is a web application for showing the information about [Nogizaka46](http://www.nogizaka46.com/) in a user-friendly way.
 
 ## Multi-language Support
 
-- [Japanese](https://shawnrivers.github.io/nogizaka-lib-redesign/cds/singles/) 🇯🇵
-- [English](https://shawnrivers.github.io/nogizaka-lib-redesign/en/cds/singles/) 🇬🇧
-- [Chinese](https://shawnrivers.github.io/nogizaka-lib-redesign/zh/cds/singles/) 🇨🇳
+- Japanese 🇯🇵
+- English 🇬🇧
+- Simplified Chinese 🇨🇳
 
 ## 🚀 Set Up Dev Environment
 
