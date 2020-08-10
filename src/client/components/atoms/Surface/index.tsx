@@ -43,8 +43,8 @@ export const Surface: React.FC<SurfaceProps> = props => {
         color: ${foregroundColor};
         box-shadow: ${theme.elevation[elevation].boxShadow};
         z-index: ${theme.elevation[elevation].zIndex};
-        transition: box-shadow 0.3s ease-out;
-        transition: background-color 0.3s ease-out;
+        transition: all 0.3s ease-out;
+        transition-property: background-color box-shadow;
       `,
       overlay: css`
         width: 100%;
