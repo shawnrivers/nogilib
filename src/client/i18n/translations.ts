@@ -337,7 +337,7 @@ const dictionary = {
   center: {
     en: 'center',
     ja: 'センター',
-    zh: '中心',
+    zh: 'C位',
   },
   fukujin: {
     en: 'fukujin',

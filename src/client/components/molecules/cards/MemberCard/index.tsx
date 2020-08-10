@@ -29,8 +29,7 @@ export const MemberCard: React.FC<MemberCardProps> = props => {
       <Typography
         variant={textSize}
         css={css`
-          margin-top: 1em;
-          line-height: 1.2;
+          margin-top: 0.8em;
           overflow-x: hidden;
           white-space: nowrap;
           text-overflow: ellipsis;
