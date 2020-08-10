@@ -26,20 +26,8 @@ export const Context = React.createContext<Context>({
   setLanguage: () => null,
 });
 
-const getLocalStorageThemeMode = () =>
-  (typeof localStorage !== 'undefined'
-    ? localStorage.getItem(LOCAL_STORAGE_THEME_MODE_KEY)
-    : 'auto') as ThemeMode;
-const getLocalStorageLanguage = () =>
-  (typeof localStorage !== 'undefined'
-    ? localStorage.getItem(LOCAL_STORAGE_LANGUAGE_KEY)
-    : 'ja') as Language;
-
 export const AppContextProvider: React.FC = props => {
-  const [state, dispatch] = React.useReducer(
-    reducer,
-    getInitialState(getLocalStorageThemeMode(), getLocalStorageLanguage())
-  );
+  const [state, dispatch] = React.useReducer(reducer, getInitialState());
 
   const setThemeMode = React.useCallback(
     (themeMode: ThemeMode) => {
