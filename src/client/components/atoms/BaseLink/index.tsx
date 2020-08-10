@@ -28,6 +28,7 @@ export const BaseLink: React.FC<BaseLinkProps> = props => {
     backgroundType = 'background',
     backgroundColorVariant = 'variant0',
     disabled = false,
+    onClick,
     children,
   } = props;
 
@@ -76,11 +77,11 @@ export const BaseLink: React.FC<BaseLinkProps> = props => {
   return disabled ? (
     <div css={baseStyles}>{children}</div>
   ) : element === 'a' ? (
-    <a href={to} css={styles}>
+    <a href={to} css={styles} onClick={onClick}>
       {children}
     </a>
   ) : (
-    <Link to={to} css={styles}>
+    <Link to={to} css={styles} onClick={onClick}>
       {children}
     </Link>
   );
