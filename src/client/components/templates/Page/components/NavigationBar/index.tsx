@@ -115,7 +115,10 @@ const Settings: React.FC = () => {
         align-items: flex-end;
       `}
     >
-      <BaseButton onClick={switchDropdown}>
+      <BaseButton
+        onClick={switchDropdown}
+        aria-label={getTranslation('settings')}
+      >
         <SettingsIcon fill={theme.colors.theme.onSurface.standard} />
       </BaseButton>
       <motion.div
@@ -309,6 +312,7 @@ export const NavigationBar: React.FC<{
           </div>
           <BaseButton
             className="small"
+            aria-label={getTranslation('menu')}
             onClick={props.onOpenSidebar}
             css={css`
               margin-left: ${commonStyles.spacing.xxs};

@@ -32,6 +32,7 @@ export const TextDivider: React.FC<{ text: React.ReactNode }> = props => {
       />
       <Typography
         variant="h3"
+        element="span"
         textColor={{ on: 'onBackground', variant: 'standard' }}
         css={css`
           margin: 0 1em;

@@ -605,6 +605,16 @@ const dictionary = {
     ja: '開発者',
     zh: '开发者',
   },
+  menu: {
+    en: 'menu',
+    ja: 'メニュー',
+    zh: '菜单',
+  },
+  settings: {
+    en: 'settings',
+    ja: '設定',
+    zh: '设定',
+  },
 };
 
 export type DictionaryKey = keyof typeof dictionary;

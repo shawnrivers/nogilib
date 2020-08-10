@@ -22,8 +22,10 @@ export const ArtworkCard: React.FC<
       <GridArtworkImage src={artwork} alt={number} />
       <Typography
         variant="h7"
+        element="span"
         textColor={{ on: 'onBackground', variant: 'variant1' }}
         css={css`
+          display: block;
           margin-top: 0.5em;
           text-align: center;
         `}
@@ -32,8 +34,10 @@ export const ArtworkCard: React.FC<
       </Typography>
       <Typography
         variant="em2"
+        element="span"
         ellipsis
         css={css`
+          display: block;
           margin-top: 0.5em;
           line-height: 1.2;
           text-align: center;
