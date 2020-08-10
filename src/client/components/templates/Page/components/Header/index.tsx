@@ -11,7 +11,7 @@ export type HeaderProps = {
   title?: string;
   subtitle?: string;
   showBackButton?: boolean;
-  titleTextTransform?: 'uppercase' | 'capitalize';
+  titleTextTransform?: 'uppercase' | 'capitalize' | 'initial';
 };
 
 export const Header: React.FC<HeaderProps> = props => {

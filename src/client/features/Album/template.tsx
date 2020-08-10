@@ -23,6 +23,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
       title={props.title}
       subtitle={`${toCdNumber(props.number)} ${props.type}`}
       showBackButton
+      titleTextTransform="initial"
     >
       <React.Fragment>
         <Typography

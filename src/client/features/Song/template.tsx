@@ -154,7 +154,7 @@ export const SongPage: React.FC<SongPageProps> = ({
   const { Translation } = useTranslations();
 
   return (
-    <PageContent title={title} showBackButton>
+    <PageContent title={title} showBackButton titleTextTransform="initial">
       <React.Fragment>
         <div
           css={css`
