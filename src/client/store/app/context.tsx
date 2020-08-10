@@ -8,16 +8,6 @@ import {
 } from 'client/utils/constants';
 import { Language } from 'client/types/language';
 
-const getLocalStorageTheme = () =>
-  typeof localStorage !== 'undefined'
-    ? (localStorage.getItem(LOCAL_STORAGE_THEME_MODE_KEY) as ThemeMode)
-    : null;
-
-const getLocalStorageLanguage = () =>
-  typeof localStorage !== 'undefined'
-    ? (localStorage.getItem(LOCAL_STORAGE_LANGUAGE) as Language)
-    : null;
-
 type Context = {
   themeMode: ThemeMode;
   themeKey: ThemeKey;
@@ -37,10 +27,7 @@ export const Context = React.createContext<Context>({
 });
 
 export const AppContextProvider: React.FC = props => {
-  const [state, dispatch] = React.useReducer(
-    reducer,
-    getInitialState(getLocalStorageTheme(), getLocalStorageLanguage())
-  );
+  const [state, dispatch] = React.useReducer(reducer, getInitialState());
 
   const setThemeMode = React.useCallback(
     (themeMode: ThemeMode) => {
@@ -84,12 +71,12 @@ export const AppContextProvider: React.FC = props => {
         setThemeKey(themeMode);
         setThemeMode(themeMode);
         if (typeof localStorage !== 'undefined') {
-          localStorage?.setItem(LOCAL_STORAGE_THEME_MODE_KEY, themeMode);
+          localStorage.setItem(LOCAL_STORAGE_THEME_MODE_KEY, themeMode);
         }
       } else {
         setThemeMode('auto');
         if (typeof localStorage !== 'undefined') {
-          localStorage?.setItem(LOCAL_STORAGE_THEME_MODE_KEY, 'auto');
+          localStorage.setItem(LOCAL_STORAGE_THEME_MODE_KEY, 'auto');
         }
       }
     },
