@@ -16,9 +16,30 @@ import {
   TextLinkProps,
 } from 'client/components/molecules/links/TextLink';
 import { useTranslations } from 'client/hooks/useTranslations';
+import { Divider } from 'client/components/atoms/Divider';
 
-const NavigationItem: React.FC<Omit<TextLinkProps, 'element'>> = props => {
-  const { to, children, onClick, ...restProps } = props;
+type SidebarItemProps = Pick<TextLinkProps, 'to' | 'element' | 'onClick'>;
+
+const SidebarItem: React.FC<SidebarItemProps> = props => (
+  <TextLink
+    to={props.to}
+    element={props.element}
+    typographyVariant="h6"
+    textColor={{ on: 'onSecondary', variant: 'standard' }}
+    backgroundType="primary"
+    backgroundColorVariant="standard"
+    showUnderline={false}
+    onClick={props.onClick}
+    css={css`
+      text-transform: uppercase;
+    `}
+  >
+    {props.children}
+  </TextLink>
+);
+
+const NavigationItem: React.FC<Omit<SidebarItemProps, 'element'>> = props => {
+  const { to, children, onClick } = props;
 
   return (
     <li
@@ -26,22 +47,9 @@ const NavigationItem: React.FC<Omit<TextLinkProps, 'element'>> = props => {
         margin-top: 1em;
       `}
     >
-      <TextLink
-        to={to}
-        element="Link"
-        typographyVariant="h6"
-        textColor={{ on: 'onSecondary', variant: 'standard' }}
-        backgroundType="primary"
-        backgroundColorVariant="standard"
-        showUnderline={false}
-        onClick={onClick}
-        css={css`
-          text-transform: uppercase;
-        `}
-        {...restProps}
-      >
+      <SidebarItem to={to} element="Link" onClick={onClick}>
         {children}
-      </TextLink>
+      </SidebarItem>
     </li>
   );
 };
@@ -141,6 +149,27 @@ export const Sidebar: React.FC<{
               {getTranslation('search')}
             </NavigationItem>
           </ul>
+        </div>
+        <Divider
+          lineColor={{ on: 'onSecondary', variant: 'standard' }}
+          css={css`
+            margin-top: 2em;
+            width: 40px;
+          `}
+        />
+        <div
+          css={css`
+            text-align: center;
+            margin-top: 2em;
+          `}
+        >
+          <SidebarItem
+            to="https://github.com/shawnrivers/nogilib"
+            element="a"
+            onClick={onClose}
+          >
+            {getTranslation('about')}
+          </SidebarItem>
         </div>
       </motion.div>
     </div>
