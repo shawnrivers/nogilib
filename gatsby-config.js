@@ -53,8 +53,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Nogizaka Lib',
-        short_name: 'Nogilib',
+        name: 'NOGILIB',
+        short_name: 'NOGILIB',
         start_url: '/nogilib/',
         background_color: '#ffffff',
         theme_color: '#ffffff',
