@@ -107,7 +107,7 @@ export const SearchPageContainer: React.FC = () => {
           to: getMemberUrl(result.key),
           imgSrc: result.profileImage,
           heading: memberName,
-          captions: [getTranslation(`${result.join} generation` as any)],
+          captions: [getTranslation(`join: ${result.join}` as any)],
         });
       }
 

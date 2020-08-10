@@ -7,18 +7,21 @@ import { GridImage } from 'client/components/atoms/images/GirdImage';
 import { Hashtag } from 'client/components/atoms/Hashtag';
 import { Typography } from 'client/components/atoms/Typography';
 
-type HorizontalCardProps = CardProps & {
+type HorizontalCardProps = Omit<CardProps, 'children'> & {
   image: {
     src: string;
     alt: string;
   };
   title: string;
   tags: string[];
+  capitalizeTitle?: boolean;
 };
 
 export const HorizontalCard: React.FC<HorizontalCardProps> = props => {
+  const { capitalizeTitle = false, image, title, tags, ...cardProps } = props;
+
   return (
-    <Card borderRadius="s" padding="xxs" to={props.to}>
+    <Card borderRadius="s" padding="xxs" to={props.to} {...cardProps}>
       <div
         css={css`
           display: grid;
@@ -29,7 +32,7 @@ export const HorizontalCard: React.FC<HorizontalCardProps> = props => {
           overflow: hidden;
         `}
       >
-        <GridImage src={props.image.src} alt={props.image.alt} />
+        <GridImage src={image.src} alt={image.alt} />
         <div
           css={css`
             display: flex;
@@ -39,10 +42,18 @@ export const HorizontalCard: React.FC<HorizontalCardProps> = props => {
             overflow: hidden;
           `}
         >
-          <Typography variant="h7" element="p" bold ellipsis>
-            {props.title}
+          <Typography
+            variant="h7"
+            element="p"
+            bold
+            ellipsis
+            css={css`
+              text-transform: ${capitalizeTitle ? 'capitalize' : 'initial'};
+            `}
+          >
+            {title}
           </Typography>
-          {props.tags.length > 0 && (
+          {tags.length > 0 && (
             <div
               css={css`
                 display: flex;
@@ -54,7 +65,7 @@ export const HorizontalCard: React.FC<HorizontalCardProps> = props => {
                 }
               `}
             >
-              {props.tags.map(tag => (
+              {tags.map(tag => (
                 <Hashtag
                   key={tag}
                   textColor={{

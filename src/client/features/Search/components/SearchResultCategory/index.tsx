@@ -59,6 +59,7 @@ export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props =
               image={{ src: result.imgSrc, alt: result.heading }}
               title={result.heading}
               tags={result.captions}
+              capitalizeTitle={title === 'members'}
             />
           </li>
         ))}
@@ -70,6 +71,7 @@ export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props =
                   image={{ src: result.imgSrc, alt: result.heading }}
                   title={result.heading}
                   tags={result.captions}
+                  capitalizeTitle={title === 'members'}
                 />
               </li>
             ))
