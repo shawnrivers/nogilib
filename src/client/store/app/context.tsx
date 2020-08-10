@@ -3,7 +3,7 @@ import { getInitialState, reducer } from 'client/store/app/reducer';
 import { ThemeMode } from 'client/types/themeMode';
 import { ThemeKey } from 'client/styles/colors';
 import {
-  LOCAL_STORAGE_LANGUAGE,
+  LOCAL_STORAGE_LANGUAGE_KEY,
   LOCAL_STORAGE_THEME_MODE_KEY,
 } from 'client/utils/constants';
 import { Language } from 'client/types/language';
@@ -26,8 +26,20 @@ export const Context = React.createContext<Context>({
   setLanguage: () => null,
 });
 
+const getLocalStorageThemeMode = () =>
+  (typeof localStorage !== 'undefined'
+    ? localStorage.getItem(LOCAL_STORAGE_THEME_MODE_KEY)
+    : 'auto') as ThemeMode;
+const getLocalStorageLanguage = () =>
+  (typeof localStorage !== 'undefined'
+    ? localStorage.getItem(LOCAL_STORAGE_LANGUAGE_KEY)
+    : 'ja') as Language;
+
 export const AppContextProvider: React.FC = props => {
-  const [state, dispatch] = React.useReducer(reducer, getInitialState());
+  const [state, dispatch] = React.useReducer(
+    reducer,
+    getInitialState(getLocalStorageThemeMode(), getLocalStorageLanguage())
+  );
 
   const setThemeMode = React.useCallback(
     (themeMode: ThemeMode) => {
@@ -59,7 +71,7 @@ export const AppContextProvider: React.FC = props => {
       });
 
       if (typeof localStorage !== 'undefined') {
-        localStorage.setItem(LOCAL_STORAGE_LANGUAGE, language);
+        localStorage.setItem(LOCAL_STORAGE_LANGUAGE_KEY, language);
       }
     },
     [dispatch]
