@@ -890,7 +890,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     sites: [
       {
         title: SocialMedia.Instagram,
-        url: 'https://www.instagram.com/seira.hatanaka_official/',
+        url: 'https://www.instagram.com/seira_hatanaka/',
       },
       {
         title: SocialMedia.Twitter,
