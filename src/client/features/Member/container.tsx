@@ -2,6 +2,7 @@ import { graphql } from 'gatsby';
 import * as React from 'react';
 import { MemberPage } from 'client/features/Member/template';
 import { MemberResult } from 'server/actors/Members/models';
+import { sortByDate } from 'utils/arrays';
 
 export const query = graphql`
   query($name: String!) {
@@ -38,6 +39,12 @@ export const query = graphql`
       profileImage
       photoAlbums {
         title
+        sites {
+          title
+          url
+        }
+        release
+        cover
       }
       positionsHistory {
         position
@@ -78,7 +85,10 @@ export type MemberPageProps = {
   units: string[];
   corps: string[];
   glowStickColor: MemberResult['glowStickColor'];
-  photoAlbums: MemberResult['photoAlbums'];
+  photoAlbums: Pick<
+    MemberResult['photoAlbums'][0],
+    'title' | 'sites' | 'release' | 'cover'
+  >[];
   positionsHistory: MemberResult['positionsHistory'];
   shouldShowPositionCounter: boolean;
   positionsCounter: MemberResult['positionsCounter'];
@@ -123,6 +133,11 @@ const MemberPageContainer: React.FC<MemberData> = ({
       corps,
     };
   }, [membersJson.units]);
+
+  const photoBooks = React.useMemo(
+    () => sortByDate(membersJson.photoAlbums, 'release', 'asc'),
+    [membersJson.photoAlbums]
+  );
 
   const positionsHistory = React.useMemo(
     () =>
@@ -183,7 +198,7 @@ const MemberPageContainer: React.FC<MemberData> = ({
       origin={membersJson.origin}
       units={units}
       corps={corps}
-      photoAlbums={membersJson.photoAlbums}
+      photoAlbums={photoBooks}
       shouldShowPositionCounter={shouldShowPositionCounter}
       positionsHistory={positionsHistory}
       positionsCounter={membersJson.positionsCounter}

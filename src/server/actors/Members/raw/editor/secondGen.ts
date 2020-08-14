@@ -90,6 +90,13 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         title: '空気の色',
         release: '2018-12-27',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/hinako_gentosha',
+          },
+        ],
+        cover: 'photo-albums/kitanohinako_1.jpg',
       },
     ],
   }),
@@ -138,6 +145,13 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         title: 'どこにいるの？',
         release: '2017-11-14',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/mai_kobunsha',
+          },
+        ],
+        cover: 'photo-albums/shinuchimai_1.jpg',
       },
     ],
   }),
@@ -213,11 +227,25 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         title: '君らしさ',
         release: '2017-11-24',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/miona_book',
+          },
+        ],
+        cover: 'photo-albums/horimiona_1.jpg',
       },
       {
         title: 'いつかの待ち合わせ場所',
         release: '2020-05-27',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/horimiona2nd',
+          },
+        ],
+        cover: 'photo-albums/horimiona_2.jpg',
       },
     ],
   }),

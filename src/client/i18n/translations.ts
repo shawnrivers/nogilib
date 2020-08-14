@@ -324,6 +324,11 @@ const dictionary = {
     ja: '写真集',
     zh: '照片集',
   },
+  'photo books': {
+    en: 'photo books',
+    ja: '写真集',
+    zh: '照片集',
+  },
   'position history': {
     en: 'position history',
     ja: 'ポジション履歴',

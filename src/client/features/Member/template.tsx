@@ -21,6 +21,8 @@ import { GlowStickBadge } from 'client/features/Member/components/GlowStickBadge
 import { InfoItemLabel } from 'client/components/molecules/typography/info/InfoItemLabel';
 import { InfoItemValue } from 'client/components/molecules/typography/info/InfoItemValue';
 import { SectionSubtitle } from 'client/components/molecules/typography/SectionSubtitle';
+import { GridImage } from 'client/components/atoms/images/GirdImage';
+import { Card } from 'client/components/atoms/Card';
 
 export const MemberPage: React.FC<MemberPageProps> = props => {
   const {
@@ -227,7 +229,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                 margin-top: 0.6em;
               `}
             >
-              <Translation text="photo albums" />
+              <Translation text="photo books" />
             </SectionSubtitle>
             <div
               css={css`
@@ -239,17 +241,33 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
               `}
             >
               {photoAlbums.map(photoAlbum => (
-                <Typography
+                <Card
                   key={photoAlbum.title}
-                  variant="body2"
-                  element="span"
-                  textColor={{
-                    on: 'onBackground',
-                    variant: 'variant0',
-                  }}
+                  borderRadius="s"
+                  padding="xs"
+                  to={photoAlbum.sites[0].url}
+                  css={css`
+                    width: 180px;
+                    margin: ${commonStyles.spacing.xs};
+                  `}
                 >
-                  『{photoAlbum.title}』
-                </Typography>
+                  <GridImage
+                    ratio={1.1}
+                    src={photoAlbum.cover}
+                    alt={photoAlbum.title}
+                  />
+                  <Typography
+                    variant="body2"
+                    element="p"
+                    css={css`
+                      margin-top: 0.8em;
+                      text-align: center;
+                      line-height: 1.4;
+                    `}
+                  >
+                    {photoAlbum.title}
+                  </Typography>
+                </Card>
               ))}
             </div>
           </React.Fragment>
