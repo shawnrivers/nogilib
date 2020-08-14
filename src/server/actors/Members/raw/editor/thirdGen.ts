@@ -68,6 +68,13 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.nogizaka46.com/member/detail/umezawaminami.php',
       },
     ],
+    photoAlbums: [
+      {
+        title: '夢の近く',
+        release: '2020-09-29',
+        type: PhotoAlbumType.PhotoAlbum,
+      },
+    ],
   }),
   createMemberRaw({
     name: MemberNameKey.OozonoMomoko,

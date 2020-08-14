@@ -9414,7 +9414,14 @@
         "url": "https://www.nogizaka46.com/member/detail/umezawaminami.php"
       }
     ],
-    "photoAlbums": [],
+    "photoAlbums": [
+      {
+        "title": "夢の近く",
+        "release": "2020-09-29",
+        "type": "photo album",
+        "sites": []
+      }
+    ],
     "units": [
       {
         "name": "若様軍団",
