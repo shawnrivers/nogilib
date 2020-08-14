@@ -65,7 +65,7 @@ export const createMemberRaw = (params: CreateMemberRawParams): MemberRaw => {
         release: photoAlbum.release,
         type: photoAlbum.type,
         sites: photoAlbum.sites ?? [],
-        cover: photoAlbum.cover ?? '',
+        cover: photoAlbum.cover ?? 'photo-albums/photo_album_no_image.png',
       })) ?? [],
     graduation,
   };
