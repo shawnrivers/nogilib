@@ -37,11 +37,25 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: '真夏の気圧配置',
         release: '2017-02-28',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/manattan_0228',
+          },
+        ],
+        cover: 'photo-albums/akimotomanatsu_1.jpg',
       },
       {
         title: 'しあわせにしたい',
         release: '2020-04-08',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/manatsu_2nd',
+          },
+        ],
+        cover: 'photo-albums/akimotomanatsu_2.jpg',
       },
     ],
   }),
@@ -77,11 +91,26 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: '転調',
         release: '2016-01-21',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: 'amazon',
+            url:
+              'https://www.amazon.co.jp/%E7%94%9F%E7%94%B0%E7%B5%B5%E6%A2%A8%E8%8A%B11st%E5%86%99%E7%9C%9F%E9%9B%86-%E3%80%8E%E8%BB%A2%E8%AA%BF%E3%80%8F-%E7%94%9F%E7%94%B0-%E7%B5%B5%E6%A2%A8%E8%8A%B1/dp/4087807789/',
+          },
+        ],
+        cover: 'photo-albums/ikutaerika_1.jpg',
       },
       {
         title: 'インターミッション',
         release: '2019-01-22',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/erika_newyork/',
+          },
+        ],
+        cover: 'photo-albums/ikutaerika_2.jpg',
       },
     ],
   }),
@@ -121,6 +150,14 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: '君の足跡',
         release: '2016-02-24',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: 'amazon',
+            url:
+              'https://www.amazon.co.jp/%E4%B9%83%E6%9C%A8%E5%9D%8246-%E7%94%9F%E9%A7%92%E9%87%8C%E5%A5%88%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E5%86%99%E7%9C%9F%E9%9B%86%E3%80%8E%E5%90%9B%E3%81%AE%E8%B6%B3%E8%B7%A1%E3%80%8F-%E7%94%9F%E9%A7%92-%E9%87%8C%E5%A5%88/dp/4344028864',
+          },
+        ],
+        cover: 'photo-albums/ikomarina_1.jpg',
       },
     ],
     graduatedDate: '2018-05-06',
@@ -154,6 +191,13 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: '存在',
         release: '2018-12-12',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/1st71845914',
+          },
+        ],
+        cover: 'photo-albums/inouesayuri_1.jpg',
       },
     ],
     graduatedDate: '2020-04-27',
@@ -190,16 +234,38 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: '彩',
         release: '2012-01-31',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: 'amazon',
+            url:
+              'https://www.amazon.co.jp/%E8%A1%9B%E8%97%A4%E7%BE%8E%E5%BD%A9-%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E5%86%99%E7%9C%9F%E9%9B%86-%E3%80%8E-%E5%BD%A9-%E3%80%8F/dp/4847044290',
+          },
+        ],
+        cover: 'photo-albums/etoumisa_1.jpg',
       },
       {
         title: '話を聞こうか。',
         release: '2017-04-25',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/33misa_syd',
+          },
+        ],
+        cover: 'photo-albums/etoumisa_2.jpg',
       },
       {
         title: 'Decision',
         release: '2020-01-08',
         type: PhotoAlbumType.PhotoBook,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/etomisabook',
+          },
+        ],
+        cover: 'photo-albums/etoumisa_pb.jpg',
       },
     ],
     graduatedDate: '2019-03-31',
@@ -262,6 +328,13 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: '潮騒',
         release: '2017-01-25',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/gentosha_asuka',
+          },
+        ],
+        cover: 'photo-albums/saitouasuka_1.jpg',
       },
     ],
   }),
@@ -293,6 +366,13 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: '7秒のしあわせ',
         release: '2019-06-20',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/7sec_yuuri',
+          },
+        ],
+        cover: 'photo-albums/saitouyuuri_1.jpg',
       },
     ],
     graduatedDate: '2019-06-30',
@@ -325,11 +405,25 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: '自由ということ',
         release: '2017-03-08',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/reika_kobunsha',
+          },
+        ],
+        cover: 'photo-albums/sakuraireika_1.jpg',
       },
       {
         title: '視線',
         release: '2019-11-27',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/sakuraireika2nd',
+          },
+        ],
+        cover: 'photo-albums/sakuraireika_2.jpg',
       },
     ],
     graduatedDate: '2019-09-01',
@@ -365,16 +459,39 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: '清純な大人',
         release: '2014-12-10',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: 'amazon',
+            url:
+              'https://www.amazon.co.jp/Adult-Shiraishi-First-Photo-Collection/dp/4344026713/',
+          },
+        ],
+        cover: 'photo-albums/shiraishimai_1.jpg',
       },
       {
         title: 'MAI STYLE',
         release: '2015-01-23',
         type: PhotoAlbumType.PhotoBook,
+        sites: [
+          {
+            title: 'amazon',
+            url:
+              'https://www.amazon.co.jp/%E4%B9%83%E6%9C%A8%E5%9D%8246-%E7%99%BD%E7%9F%B3%E9%BA%BB%E8%A1%A31st%E3%83%95%E3%82%A9%E3%83%88%E3%83%96%E3%83%83%E3%82%AF-MAI-STYLE-%E4%B8%BB%E5%A9%A6%E3%81%AE%E5%8F%8B%E7%94%9F%E6%B4%BB%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA/dp/407402098X',
+          },
+        ],
+        cover: 'photo-albums/shiraishimai_pb.jpg',
       },
       {
         title: 'パスポート',
         release: '2017-02-07',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/mai_westcoast',
+          },
+        ],
+        cover: 'photo-albums/shiraishimai_2.jpg',
       },
     ],
   }),
@@ -410,11 +527,26 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: '恋かもしれない',
         release: '2016-09-15',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: 'amazon',
+            url:
+              'https://www.amazon.co.jp/%E9%AB%98%E5%B1%B1%E4%B8%80%E5%AE%9F%E5%86%99%E7%9C%9F%E9%9B%86-%E6%81%8B%E3%81%8B%E3%82%82%E3%81%97%E3%82%8C%E3%81%AA%E3%81%84-%E9%AB%98%E5%B1%B1%E4%B8%80%E5%AE%9F/dp/4054064744',
+          },
+        ],
+        cover: 'photo-albums/takayamakazumi_1.jpg',
       },
       {
         title: '独白',
         release: '2019-02-26',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/takayama_tokuma',
+          },
+        ],
+        cover: 'photo-albums/takayamakazumi_2.jpg',
       },
     ],
   }),
@@ -474,16 +606,39 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: '普段着',
         release: '2015-05-18',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: 'amazon',
+            url:
+              'https://www.amazon.co.jp/%E8%A5%BF%E9%87%8E%E4%B8%83%E7%80%AC%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E5%86%99%E7%9C%9F%E9%9B%86%E3%80%8E%E6%99%AE%E6%AE%B5%E7%9D%80%E3%80%8F-%E8%A5%BF%E9%87%8E-%E4%B8%83%E7%80%AC/dp/4344027094/',
+          },
+        ],
+        cover: 'photo-albums/nishinonanase_1.jpg',
       },
       {
         title: '風に着替えて',
         release: '2016-09-27',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: 'amazon',
+            url:
+              'https://www.amazon.co.jp/%E8%A5%BF%E9%87%8E%E4%B8%83%E7%80%AC%E5%86%99%E7%9C%9F%E9%9B%86-%E9%A2%A8%E3%82%92%E7%9D%80%E6%9B%BF%E3%81%88%E3%81%A6-%E8%A5%BF%E9%87%8E-%E4%B8%83%E7%80%AC/dp/4087807983/',
+          },
+        ],
+        cover: 'photo-albums/nishinonanase_2.jpg',
       },
       {
         title: 'わたしのこと',
         release: '2018-05-09',
         type: PhotoAlbumType.PhotoBook,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/nanase_1st',
+          },
+        ],
+        cover: 'photo-albums/nishinonanase_pb.jpg',
       },
     ],
     graduatedDate: '2018-12-31',
@@ -561,6 +716,13 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: 'いたずら',
         release: '2018-04-10',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/373_kawaii',
+          },
+        ],
+        cover: 'photo-albums/hoshinominami_1.jpg',
       },
     ],
   }),
@@ -603,6 +765,13 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: '意外っていうか、前から可愛いと思ってた',
         release: '2017-12-12',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/sayuringo_pb',
+          },
+        ],
+        cover: 'photo-albums/matsumurasayuri_1.jpg',
       },
     ],
   }),
@@ -642,6 +811,13 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: 'パレット',
         release: '2017-11-07',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/waka_palette',
+          },
+        ],
+        cover: 'photo-albums/wakatsukiyumi_1.jpg',
       },
     ],
     graduatedDate: '2018-11-30',
@@ -763,6 +939,20 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://n46llc.com/s/m00/artist/3',
       },
     ],
+    photoAlbums: [
+      {
+        title: 'エトランゼ',
+        release: '2018-02-20',
+        type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/MARIKA_etranger',
+          },
+        ],
+        cover: 'photo-albums/itoumarika_1.jpg',
+      },
+    ],
     graduatedDate: '2017-12-23',
   }),
   createMemberRaw({
@@ -786,11 +976,26 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: 'やさしい棘',
         release: '2015-08-28',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: 'amazon',
+            url:
+              'https://www.amazon.co.jp/%E6%A9%8B%E6%9C%AC%E5%A5%88%E3%80%85%E6%9C%AA%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E5%86%99%E7%9C%9F%E9%9B%86%E3%80%8E%E3%82%84%E3%81%95%E3%81%97%E3%81%84%E6%A3%98%EF%BC%88%E3%81%A8%E3%81%92%EF%BC%89%E3%80%8F-%E6%A9%8B%E6%9C%AC-%E5%A5%88%E3%80%85%E6%9C%AA/dp/4344027949/',
+          },
+        ],
+        cover: 'photo-albums/hashimotonanami_1.jpg',
       },
       {
         title: '2017',
         release: '2017-02-20',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/nanaminNY2017',
+          },
+        ],
+        cover: 'photo-albums/hashimotonanami_2.jpg',
       },
     ],
     graduatedDate: '2017-02-20',
@@ -819,11 +1024,27 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: 'ずっと、そばにいたい',
         release: '2016-06-09',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: 'amazon',
+            url:
+              'https://www.amazon.co.jp/s?k=%E9%A2%A8%E3%81%AB%E7%9D%80%E6%9B%BF%E3%81%88%E3%81%A6&i=stripbooks&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&ref=nb_sb_noss',
+          },
+        ],
+        cover: 'photo-albums/fukagawamai_1.jpg',
       },
       {
         title: 'My magazine',
         release: '2018-02-22',
         type: PhotoAlbumType.PhotoMagazine,
+        sites: [
+          {
+            title: 'amazon',
+            url:
+              'https://www.amazon.co.jp/%E6%B7%B1%E5%B7%9D%E9%BA%BB%E8%A1%A3PhotoMagazine-%E3%80%8EMY-magazine%E3%80%8F-MOOK-%E6%B7%B1%E5%B7%9D/dp/4800280494/',
+          },
+        ],
+        cover: 'photo-albums/fukagawamai_pm.jpg',
       },
     ],
     graduatedDate: '2016-06-16',
