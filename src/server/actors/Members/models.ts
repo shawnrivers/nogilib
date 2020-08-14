@@ -32,6 +32,7 @@ export type MemberRaw = {
     release: string;
     type: PhotoAlbumType;
     sites: Site[];
+    cover: string;
   }[];
   graduation: {
     isGraduated: boolean;

@@ -1,27 +1,28 @@
-import { MemberRaw } from "server/actors/Members/models";
+import { MemberRaw } from 'server/actors/Members/models';
 
 type CreateMemberRawParams = {
-  name: MemberRaw["name"];
+  name: MemberRaw['name'];
   nameNotations: [
-    MemberRaw["nameNotations"]["lastName"],
-    MemberRaw["nameNotations"]["firstName"],
-    MemberRaw["nameNotations"]["lastNameEn"],
-    MemberRaw["nameNotations"]["firstNameEn"],
-    MemberRaw["nameNotations"]["lastNameFurigana"],
-    MemberRaw["nameNotations"]["firstNameFurigana"]
+    MemberRaw['nameNotations']['lastName'],
+    MemberRaw['nameNotations']['firstName'],
+    MemberRaw['nameNotations']['lastNameEn'],
+    MemberRaw['nameNotations']['firstNameEn'],
+    MemberRaw['nameNotations']['lastNameFurigana'],
+    MemberRaw['nameNotations']['firstNameFurigana']
   ];
   glowStickColor: [
-    MemberRaw["glowStickColor"]["left"],
-    MemberRaw["glowStickColor"]["right"]
+    MemberRaw['glowStickColor']['left'],
+    MemberRaw['glowStickColor']['right']
   ];
-  join: MemberRaw["join"];
-  birthday: MemberRaw["birthday"];
-  height: MemberRaw["height"];
-  bloodType: MemberRaw["bloodType"];
-  origin: MemberRaw["origin"];
-  sites?: MemberRaw["sites"];
-  photoAlbums?: (Omit<MemberRaw["photoAlbums"][0], "sites"> & {
-    sites?: MemberRaw["photoAlbums"][0]["sites"];
+  join: MemberRaw['join'];
+  birthday: MemberRaw['birthday'];
+  height: MemberRaw['height'];
+  bloodType: MemberRaw['bloodType'];
+  origin: MemberRaw['origin'];
+  sites?: MemberRaw['sites'];
+  photoAlbums?: (Omit<MemberRaw['photoAlbums'][0], 'sites' | 'cover'> & {
+    sites?: MemberRaw['photoAlbums'][0]['sites'];
+    cover?: MemberRaw['photoAlbums'][0]['cover'];
   })[];
   graduatedDate?: string;
 };
@@ -35,7 +36,7 @@ export const createMemberRaw = (params: CreateMemberRawParams): MemberRaw => {
         }
       : {
           isGraduated: false,
-          graduatedDate: "",
+          graduatedDate: '',
         };
 
   return {
@@ -64,6 +65,7 @@ export const createMemberRaw = (params: CreateMemberRawParams): MemberRaw => {
         release: photoAlbum.release,
         type: photoAlbum.type,
         sites: photoAlbum.sites ?? [],
+        cover: photoAlbum.cover ?? '',
       })) ?? [],
     graduation,
   };

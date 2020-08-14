@@ -65,13 +65,15 @@
         "title": "真夏の気圧配置",
         "release": "2017-02-28",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       },
       {
         "title": "しあわせにしたい",
         "release": "2020-04-08",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       }
     ],
     "units": [
@@ -267,13 +269,15 @@
         "title": "転調",
         "release": "2016-01-21",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       },
       {
         "title": "インターミッション",
         "release": "2019-01-22",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       }
     ],
     "units": [
@@ -477,7 +481,8 @@
         "title": "君の足跡",
         "release": "2016-02-24",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       }
     ],
     "units": [
@@ -669,7 +674,8 @@
         "title": "存在",
         "release": "2018-12-12",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       }
     ],
     "units": [
@@ -865,19 +871,22 @@
         "title": "彩",
         "release": "2012-01-31",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       },
       {
         "title": "話を聞こうか。",
         "release": "2017-04-25",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       },
       {
         "title": "Decision",
         "release": "2020-01-08",
         "type": "photo book",
-        "sites": []
+        "sites": [],
+        "cover": ""
       }
     ],
     "units": [
@@ -1258,7 +1267,8 @@
         "title": "潮騒",
         "release": "2017-01-25",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       }
     ],
     "units": [
@@ -1446,7 +1456,8 @@
         "title": "7秒のしあわせ",
         "release": "2019-06-20",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       }
     ],
     "units": [
@@ -1638,13 +1649,15 @@
         "title": "自由ということ",
         "release": "2017-03-08",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       },
       {
         "title": "視線",
         "release": "2019-11-27",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       }
     ],
     "units": [
@@ -1840,19 +1853,22 @@
         "title": "清純な大人",
         "release": "2014-12-10",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       },
       {
         "title": "MAI STYLE",
         "release": "2015-01-23",
         "type": "photo book",
-        "sites": []
+        "sites": [],
+        "cover": ""
       },
       {
         "title": "パスポート",
         "release": "2017-02-07",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       }
     ],
     "units": [
@@ -2052,13 +2068,15 @@
         "title": "恋かもしれない",
         "release": "2016-09-15",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       },
       {
         "title": "独白",
         "release": "2019-02-26",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       }
     ],
     "units": [
@@ -2443,19 +2461,22 @@
         "title": "普段着",
         "release": "2015-05-18",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       },
       {
         "title": "風に着替えて",
         "release": "2016-09-27",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       },
       {
         "title": "わたしのこと",
         "release": "2018-05-09",
         "type": "photo book",
-        "sites": []
+        "sites": [],
+        "cover": ""
       }
     ],
     "units": [
@@ -3000,7 +3021,8 @@
         "title": "いたずら",
         "release": "2018-04-10",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       }
     ],
     "units": [
@@ -3192,7 +3214,8 @@
         "title": "意外っていうか、前から可愛いと思ってた",
         "release": "2017-12-12",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       }
     ],
     "units": [
@@ -3400,7 +3423,8 @@
         "title": "パレット",
         "release": "2017-11-07",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       }
     ],
     "units": [
@@ -4480,13 +4504,15 @@
         "title": "やさしい棘",
         "release": "2015-08-28",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       },
       {
         "title": "2017",
         "release": "2017-02-20",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       }
     ],
     "units": [
@@ -4670,13 +4696,15 @@
         "title": "ずっと、そばにいたい",
         "release": "2016-06-09",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       },
       {
         "title": "My magazine",
         "release": "2018-02-22",
         "type": "photo magazine",
-        "sites": []
+        "sites": [],
+        "cover": ""
       }
     ],
     "units": [],
@@ -7106,7 +7134,8 @@
         "title": "空気の色",
         "release": "2018-12-27",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       }
     ],
     "units": [
@@ -7467,7 +7496,8 @@
         "title": "どこにいるの？",
         "release": "2017-11-14",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       }
     ],
     "units": [
@@ -8017,13 +8047,15 @@
         "title": "君らしさ",
         "release": "2017-11-24",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       },
       {
         "title": "いつかの待ち合わせ場所",
         "release": "2020-05-27",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       }
     ],
     "units": [
@@ -9419,7 +9451,8 @@
         "title": "夢の近く",
         "release": "2020-09-29",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       }
     ],
     "units": [
@@ -10650,7 +10683,8 @@
         "title": "忘れられない人",
         "release": "2020-01-21",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       }
     ],
     "units": [
@@ -11010,13 +11044,15 @@
         "title": "日向の温度",
         "release": "2017-12-26",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       },
       {
         "title": "無口な時間",
         "release": "2020-03-10",
         "type": "photo album",
-        "sites": []
+        "sites": [],
+        "cover": ""
       }
     ],
     "units": [
