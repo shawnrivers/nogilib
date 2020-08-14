@@ -257,11 +257,12 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                     alt={photoAlbum.title}
                   />
                   <Typography
-                    variant="body3"
+                    variant="body2"
                     element="p"
                     css={css`
                       margin-top: 0.8em;
                       text-align: center;
+                      line-height: 1.4;
                     `}
                   >
                     {photoAlbum.title}
