@@ -184,10 +184,10 @@ const dictionary = {
     ja: '乃木坂46',
     zh: '乃木坂46',
   },
-  'Official Blog': {
-    en: 'Official Blog',
-    ja: '公式ブログ',
-    zh: '官方博客',
+  blog: {
+    en: 'blog',
+    ja: 'ブログ',
+    zh: '博客',
   },
   'Fourth Gen Blog': {
     en: 'Fourth Gen Blog',

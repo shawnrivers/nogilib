@@ -49,7 +49,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Kanagawa,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/junna.itou/',
       },
       {
@@ -73,7 +73,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Hokkaido,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/hinako.kitano/',
       },
       {
@@ -128,7 +128,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Saitama,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/mai.shinuchi/',
       },
       {
@@ -166,7 +166,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Akita,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/ayane.suzuki/',
       },
       {
@@ -190,7 +190,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Tokyo,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/ranze.terada/',
       },
       {
@@ -210,7 +210,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Gifu,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/miona.hori/',
       },
       {
@@ -260,7 +260,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Tokyo,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/rena.yamazaki/',
       },
       {
@@ -291,7 +291,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Tokyo,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/miria.watanabe/',
       },
       {
