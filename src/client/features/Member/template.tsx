@@ -215,6 +215,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                     on: 'onBackground',
                     variant: 'variant0',
                   }}
+                  capitalize
                 >
                   <Translation text={site.title as any} />
                 </TextLink>
