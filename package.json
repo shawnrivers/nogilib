@@ -77,7 +77,7 @@
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/react": "^5.3.19",
     "@types/jest": "^26.0.10",
-    "@types/node": "^14.0.27",
+    "@types/node": "^14.6.0",
     "@types/query-string": "^6.3.0",
     "@types/react": "^16.9.46",
     "@types/react-dom": "^16.9.8",
