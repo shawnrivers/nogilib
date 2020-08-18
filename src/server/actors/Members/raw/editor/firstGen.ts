@@ -298,6 +298,20 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://kawagopro.com/',
       },
     ],
+    photoAlbums: [
+      {
+        title: '川後陽菜 インタビューフォトブック',
+        release: '2020-03-02',
+        type: PhotoAlbumType.PhotoBook,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://www.amazon.co.jp/dp/4907929331',
+          },
+        ],
+        cover: 'photo-albums/kawagohina_1.jpg',
+      },
+    ],
     graduatedDate: '2018-12-20',
   }),
   createMemberRaw({

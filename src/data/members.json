@@ -1122,7 +1122,20 @@
         "url": "https://kawagopro.com/"
       }
     ],
-    "photoAlbums": [],
+    "photoAlbums": [
+      {
+        "title": "川後陽菜 インタビューフォトブック",
+        "release": "2020-03-02",
+        "type": "photo book",
+        "sites": [
+          {
+            "title": "Twitter",
+            "url": "https://www.amazon.co.jp/dp/4907929331"
+          }
+        ],
+        "cover": "photo-albums/kawagohina_1.jpg"
+      }
+    ],
     "units": [
       {
         "name": "スイカ",
