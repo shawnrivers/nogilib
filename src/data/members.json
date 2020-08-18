@@ -48,7 +48,7 @@
     "origin": "埼玉県",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/manatsu.akimoto/"
       },
       {
@@ -258,7 +258,7 @@
     "origin": "Düsseldorf, Germany",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/erika.ikuta/"
       },
       {
@@ -1295,7 +1295,7 @@
     "origin": "東京都",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/asuka.saito/"
       },
       {
@@ -1901,12 +1901,16 @@
     "origin": "群馬県",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/mai.shiraishi/"
       },
       {
         "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/shiraishimai.php"
+      },
+      {
+        "title": "YouTube",
+        "url": "https://www.youtube.com/c/maishiraishi"
       },
       {
         "title": "755",
@@ -2127,7 +2131,7 @@
     "origin": "千葉県",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/kazumi.takayama/"
       },
       {
@@ -2345,7 +2349,7 @@
     "origin": "埼玉県",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/kana.nakada/"
       },
       {
@@ -2933,7 +2937,7 @@
     "origin": "東京都",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/hina.higuchi/"
       },
       {
@@ -3109,7 +3113,7 @@
     "origin": "千葉県",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/minami.hoshino/"
       },
       {
@@ -3303,7 +3307,7 @@
     "origin": "大阪府",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/sayuri.matsumura/"
       },
       {
@@ -3723,7 +3727,7 @@
     "origin": "広島県",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/maaya.wada/"
       },
       {
@@ -7089,7 +7093,7 @@
     "origin": "神奈川県",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/junna.itou/"
       },
       {
@@ -7270,7 +7274,7 @@
     "origin": "北海道",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/hinako.kitano/"
       },
       {
@@ -7637,7 +7641,7 @@
     "origin": "埼玉県",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/mai.shinuchi/"
       },
       {
@@ -7831,7 +7835,7 @@
     "origin": "秋田県",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/ayane.suzuki/"
       },
       {
@@ -8012,7 +8016,7 @@
     "origin": "東京都",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/ranze.terada/"
       },
       {
@@ -8193,7 +8197,7 @@
     "origin": "岐阜県",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/miona.hori/"
       },
       {
@@ -8403,7 +8407,7 @@
     "origin": "東京都",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/rena.yamazaki/"
       },
       {
@@ -8579,7 +8583,7 @@
     "origin": "東京都",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/miria.watanabe/"
       },
       {
@@ -9267,7 +9271,7 @@
     "origin": "沖縄県",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/riria.itou/"
       },
       {
@@ -9439,7 +9443,7 @@
     "origin": "東京都",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/renka.iwamoto/"
       },
       {
@@ -9611,7 +9615,7 @@
     "origin": "神奈川県",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/minami.umezawa/"
       },
       {
@@ -9801,7 +9805,7 @@
     "origin": "鹿児島県",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/momoko.oozono/"
       },
       {
@@ -9978,7 +9982,7 @@
     "origin": "宮城県",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/shiori.kubo/"
       },
       {
@@ -10155,7 +10159,7 @@
     "origin": "東京都",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/tamami.sakaguchi/"
       },
       {
@@ -10332,7 +10336,7 @@
     "origin": "愛知県",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/kaede.satou/"
       },
       {
@@ -10504,7 +10508,7 @@
     "origin": "東京都",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/reno.nakamura/"
       },
       {
@@ -10676,7 +10680,7 @@
     "origin": "東京都",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/hazuki.mukai/"
       },
       {
@@ -10848,7 +10852,7 @@
     "origin": "東京都",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/mizuki.yamashita/"
       },
       {
@@ -11042,7 +11046,7 @@
     "origin": "大分県",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/ayanochristie.yoshida/"
       },
       {
@@ -11214,7 +11218,7 @@
     "origin": "福岡県",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/yuuki.yoda/"
       },
       {
@@ -11416,7 +11420,7 @@
     "origin": "愛知県",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/sakura.endou/"
       },
       {
@@ -11588,7 +11592,7 @@
     "origin": "栃木県",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/haruka.kaki/"
       },
       {
@@ -11760,7 +11764,7 @@
     "origin": "岡山県",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/sayaka.kakehashi/"
       },
       {
@@ -11932,7 +11936,7 @@
     "origin": "北海道",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/saya.kanagawa/"
       },
       {
@@ -12104,7 +12108,7 @@
     "origin": "California, US",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/yuri.kitagawa/"
       },
       {
@@ -12276,7 +12280,7 @@
     "origin": "千葉県",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/yuna.shibata/"
       },
       {
@@ -12448,7 +12452,7 @@
     "origin": "埼玉県",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/rei.seimiya/"
       },
       {
@@ -12620,7 +12624,7 @@
     "origin": "埼玉県",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/mayu.tamura/"
       },
       {
@@ -12792,7 +12796,7 @@
     "origin": "愛知県",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/ayame.tsutsui/"
       },
       {
@@ -12964,7 +12968,7 @@
     "origin": "大阪府",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/seira.hayakawa/"
       },
       {
@@ -13136,7 +13140,7 @@
     "origin": "東京都",
     "sites": [
       {
-        "title": "Official Blog",
+        "title": "blog",
         "url": "https://blog.nogizaka46.com/mio.yakubo/"
       },
       {

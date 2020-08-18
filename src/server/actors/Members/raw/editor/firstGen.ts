@@ -450,6 +450,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.nogizaka46.com/member/detail/shiraishimai.php',
       },
       {
+        title: SocialMedia.YouTube,
+        url: 'https://www.youtube.com/c/maishiraishi',
+      },
+      {
         title: SocialMedia.Nanagogo,
         url: 'https://7gogo.jp/shiraishi-mai',
       },
