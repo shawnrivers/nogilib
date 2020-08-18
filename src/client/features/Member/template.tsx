@@ -134,7 +134,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                 text-transform: uppercase;
               `}
             >
-              {bloodType}
+              <Translation text={bloodType} />
             </InfoItemValue>
             <InfoItemLabel>
               <Translation text="birthplace" />
