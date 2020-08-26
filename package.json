@@ -62,7 +62,7 @@
     "gatsby-plugin-sharp": "^2.6.29",
     "gatsby-plugin-typescript": "^2.4.18",
     "gatsby-plugin-web-font-loader": "^1.0.4",
-    "gatsby-source-filesystem": "^2.3.25",
+    "gatsby-source-filesystem": "^2.3.26",
     "gatsby-transformer-json": "^2.4.11",
     "gatsby-transformer-sharp": "^2.5.13",
     "node": "^14.8.0",
