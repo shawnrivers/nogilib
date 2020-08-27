@@ -72,7 +72,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^5.3.20",
+    "@storybook/addon-actions": "^6.0.19",
     "@storybook/addon-knobs": "^5.3.20",
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/react": "^5.3.20",
