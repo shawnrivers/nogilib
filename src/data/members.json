@@ -1961,11 +1961,23 @@
         "type": "photo album",
         "sites": [
           {
+            "title": "amazon",
+            "url": "https://www.amazon.co.jp/%E7%99%BD%E7%9F%B3%E9%BA%BB%E8%A1%A3%E5%86%99%E7%9C%9F%E9%9B%86-%E3%83%91%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88-%E7%99%BD%E7%9F%B3-%E9%BA%BB%E8%A1%A3/dp/406352857X"
+          }
+        ],
+        "cover": "photo-albums/shiraishimai_2.jpg"
+      },
+      {
+        "title": "白石麻衣メモリアルマガジン",
+        "release": "2020-10-21",
+        "type": "photo magazine",
+        "sites": [
+          {
             "title": "Twitter",
             "url": "https://twitter.com/mai_westcoast"
           }
         ],
-        "cover": "photo-albums/shiraishimai_2.jpg"
+        "cover": "photo-albums/shiraishimai_mm.jpg"
       }
     ],
     "units": [
