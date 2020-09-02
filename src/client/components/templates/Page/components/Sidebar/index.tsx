@@ -59,13 +59,14 @@ const transition = { duration: 0.2 };
 export const Sidebar: React.FC<{
   open: boolean;
   onClose: () => void;
+  className?: string;
 }> = props => {
   const theme = useAppTheme();
   const { getTranslation } = useTranslations();
   const { open, onClose } = props;
 
   return (
-    <div>
+    <div className={props.className}>
       <motion.div
         animate={open ? 'open' : 'closed'}
         variants={{

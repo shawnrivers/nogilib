@@ -75,7 +75,11 @@ export const Page: React.FC = props => {
       `}
     >
       <NavigationBar onOpenSidebar={handleOpenSidebar} />
-      <Sidebar open={isSidebarOpen} onClose={handleCloseSidebar} />
+      <Sidebar
+        open={isSidebarOpen}
+        onClose={handleCloseSidebar}
+        className="small"
+      />
       {props.children}
     </div>
   );
