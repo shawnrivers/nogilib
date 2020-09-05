@@ -41,12 +41,6 @@ export const Search: React.FC<SearchProps> = props => {
   const theme = useAppTheme();
   const { Translation, getTranslation } = useTranslations();
 
-  const inputRef = React.useRef<HTMLInputElement>(null);
-
-  React.useEffect(() => {
-    inputRef.current?.focus();
-  }, []);
-
   return (
     <PageContent title="search">
       <div
@@ -77,7 +71,6 @@ export const Search: React.FC<SearchProps> = props => {
             `}
           >
             <input
-              ref={inputRef}
               type="text"
               value={query}
               onChange={search}
