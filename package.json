@@ -57,7 +57,7 @@
     "gatsby-plugin-lunr": "^1.5.2",
     "gatsby-plugin-manifest": "^2.4.28",
     "gatsby-plugin-offline": "^3.2.27",
-    "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-plugin-react-helmet": "^3.3.11",
     "gatsby-plugin-resolve-src": "^2.1.0",
     "gatsby-plugin-sharp": "^2.6.35",
     "gatsby-plugin-typescript": "^2.4.19",
