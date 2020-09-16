@@ -1,4 +1,5 @@
 import { graphql } from 'gatsby';
+import { useLocation } from '@reach/router';
 import * as React from 'react';
 import { DiscographyResult } from 'server/actors/Discography/models';
 import { sortByDate } from 'utils/arrays';
@@ -115,9 +116,8 @@ const DiscographyPageContainer: React.FC<QueryResult> = props => {
     albumsData,
   ]);
 
-  const filter = new URL(window.location.href).searchParams.get(
-    FILTER_PARAM_KEY
-  );
+  const location = useLocation();
+  const filter = new URL(location.href).searchParams.get(FILTER_PARAM_KEY);
 
   const currentFilter: DiscographyPageProps['currentFilter'] = React.useMemo(() => {
     switch (filter) {
