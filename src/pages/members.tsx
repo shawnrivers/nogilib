@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
 import { useLocation } from '@reach/router';
-import * as queryString from 'query-string';
 import { MemberResult } from 'server/actors/Members/models';
 import {
   MemberGroupByYear,
@@ -9,6 +8,7 @@ import {
   MembersPageProps,
 } from 'client/features/Members/template';
 import { sortByJoin } from 'utils/arrays';
+import { FILTER_PARAM_KEY } from 'client/utils/urls';
 
 export const query = graphql`
   query {
@@ -102,7 +102,8 @@ const MembersPageContainer: React.FC<QueryResult> = props => {
   );
 
   const location = useLocation();
-  const { filter } = queryString.parse(location.search);
+  const filter = new URL(location.href).searchParams.get(FILTER_PARAM_KEY);
+
   const currentFilter: MembersPageProps['currentFilter'] = React.useMemo(() => {
     switch (filter) {
       case 'current':
