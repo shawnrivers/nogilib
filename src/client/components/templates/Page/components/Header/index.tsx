@@ -34,7 +34,7 @@ export const Header: React.FC<HeaderProps> = props => {
       `}
     >
       {showBackButton && (
-        <div
+        <nav
           css={css`
             display: flex;
             align-items: flex-end;
@@ -47,11 +47,12 @@ export const Header: React.FC<HeaderProps> = props => {
               fill={theme.colors.theme.onBackground.standard}
             />
           </BaseButton>
-        </div>
+        </nav>
       )}
       {subtitle !== undefined && (
         <Typography
           variant="h4"
+          element="p"
           textColor={{ on: 'onBackground', variant: 'variant0' }}
           css={css`
             margin-left: 0.5em;
