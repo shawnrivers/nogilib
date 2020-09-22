@@ -608,8 +608,8 @@
         "members/singles/14/ikomarina.jpg",
         "members/singles/15/ikomarina.jpg",
         "members/singles/17/ikomarina.jpg",
-        "members/others/ikomarina_2020-08-10.jpg",
-        "members/others/ikomarina_2020-09-21.jpg"
+        "members/others/ikomarina_2019-09-21.jpg",
+        "members/others/ikomarina_2020-08-10.jpg"
       ],
       "singles": {
         "1": "members/singles/1/ikomarina.jpg",
@@ -636,7 +636,7 @@
         "22": "members/singles/17/ikomarina.jpg",
         "23": "members/singles/17/ikomarina.jpg",
         "24": "members/singles/17/ikomarina.jpg",
-        "25": "members/singles/17/ikomarina.jpg"
+        "25": "members/others/ikomarina_2019-09-21.jpg"
       },
       "albums": {
         "1": "members/singles/10/ikomarina.jpg",
@@ -646,8 +646,8 @@
         "U": "members/singles/17/ikomarina.jpg"
       },
       "digital": {
-        "1": "members/singles/17/ikomarina.jpg",
-        "2": "members/singles/17/ikomarina.jpg"
+        "1": "members/others/ikomarina_2019-09-21.jpg",
+        "2": "members/others/ikomarina_2019-09-21.jpg"
       }
     },
     "join": "first",
