@@ -116,7 +116,9 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
             </InfoItemLabel>
             <InfoItemValue>
               <Translation text={('join: ' + join) as any} />{' '}
-              {graduation.isGraduated ? <Translation text="graduate" /> : null}
+              {graduation.isGraduated
+                ? `(${getTranslation('graduate')})`
+                : null}
             </InfoItemValue>
             <InfoItemLabel>
               <Translation text="birthday" />
