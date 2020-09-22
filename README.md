@@ -39,7 +39,7 @@
     yarn dev
     ```
 
-    Your site is now running at `http://localhost:8000`.
+    Your site is now running at `http://localhost:8080`.
 
 4.  **Build the product.**
 
