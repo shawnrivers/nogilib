@@ -1,13 +1,13 @@
 /**@jsx jsx */
 import { css, jsx } from '@emotion/core';
 import * as React from 'react';
-import { Link } from 'gatsby';
 import { useAppTheme } from 'client/styles/tokens';
 import { BorderRadiusKey } from 'client/styles/borderRadius';
 import { ThemeColorVariants } from 'client/styles/colors';
 import { SpacingKey } from 'client/styles/spacing';
 import { Surface, SurfaceProps } from 'client/components/atoms/Surface';
 import { componentElevationKey } from 'client/styles/elevation';
+import { BaseLink } from 'client/components/atoms/BaseLink';
 
 type CardContentProps = SurfaceProps & {
   borderRadius?: BorderRadiusKey;
@@ -56,11 +56,11 @@ export const Card: React.FC<CardProps> = props => {
   const { to, children, ...restProps } = props;
 
   return to ? (
-    <Link to={to}>
+    <BaseLink to={to}>
       <CardContent isClickable {...restProps}>
         {children}
       </CardContent>
-    </Link>
+    </BaseLink>
   ) : (
     <CardContent isClickable={false} {...restProps}>
       {children}
