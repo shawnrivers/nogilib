@@ -39,9 +39,22 @@ export type MemberRaw = {
     graduatedDate: string;
   };
 };
+
+export type DiscographyProfileImages = {
+  [number: string]: string;
+};
+
+export type ProfileImages = {
+  gallery: string[];
+  singles: DiscographyProfileImages;
+  albums: DiscographyProfileImages;
+  digital: DiscographyProfileImages;
+};
+
 export type MemberResult = MemberRaw & {
   profileImage: string;
   singleImages: string[];
+  profileImages: ProfileImages;
   units: {
     name: string;
     type: UnitType;
