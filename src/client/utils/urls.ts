@@ -17,3 +17,13 @@ export const getMembersUrl = (filter?: MembersUrlFilter): string =>
 export const getMemberUrl = (memberName: string) => `/members/${memberName}/`;
 
 export const getSearchUrl = () => '/search/';
+
+export const isAbsoluteUrl = (url: string): boolean => {
+  try {
+    new URL(url);
+
+    return true;
+  } catch (error) {
+    return false;
+  }
+};
