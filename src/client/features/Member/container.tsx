@@ -2,7 +2,7 @@ import { graphql } from 'gatsby';
 import * as React from 'react';
 import { MemberPage } from 'client/features/Member/template';
 import { MemberResult } from 'server/actors/Members/models';
-import { sortByDate } from 'utils/arrays';
+import { sortByDate, filterDuplicate } from 'utils/arrays';
 
 export const query = graphql`
   query($name: String!) {
@@ -163,24 +163,7 @@ const MemberPageContainer: React.FC<MemberData> = ({
       .reverse()
       .filter(image => image !== '');
 
-    let uniqueList: string[] = [];
-
-    for (const item of list) {
-      let isSeen = false;
-
-      for (const seenItem of uniqueList) {
-        if (seenItem === item) {
-          isSeen = true;
-          break;
-        }
-      }
-
-      if (!isSeen) {
-        uniqueList.push(item);
-      }
-    }
-
-    return uniqueList;
+    return filterDuplicate(list);
   }, [membersJson.singleImages]);
 
   return membersJson ? (
