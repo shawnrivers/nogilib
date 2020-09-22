@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "dev": "gatsby develop",
+    "dev": "gatsby develop -p 8080",
     "serve": "gatsby serve",
     "type-check": "tsc",
     "type-check:server": "tsc -b tsconfig-server.json",
