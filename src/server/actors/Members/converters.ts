@@ -139,6 +139,8 @@ const otherProfileImageFiles = fs.readdirSync(
   './src/assets/images/members/others'
 );
 
+// Other profile image file name format:
+// <name>_<YYYY>-<MM>-<DD>.jpg
 const otherProfileImagesFileNameWithDate = otherProfileImageFiles.map(file => {
   const fullFileName = file;
   const extName = path.extname(file);
@@ -182,9 +184,14 @@ function getDiscographyProfileImages(params: {
 
   const discographyGallery: DiscographyProfileImages = {};
   const sortedGallery = sortByDate(galleryWithDate, 'date', 'desc');
+  const sortedDiscographyRawArray = sortByDate(
+    discographyRawArray,
+    'release',
+    'desc'
+  );
 
-  for (let i = 0; i < discographyRawArray.length; i++) {
-    const album = discographyRawArray[i];
+  for (let i = 0; i < sortedDiscographyRawArray.length; i++) {
+    const album = sortedDiscographyRawArray[i];
     const albumNumber = album.number;
 
     const profileImageSrc = `members/${profileImageTypeFolderName}/${albumNumber}/${memberName}.jpg`;
@@ -205,11 +212,6 @@ function getDiscographyProfileImages(params: {
             discographyGallery[albumNumber] = currentProfileImage.url;
             break;
           }
-        } else if (j === sortedGallery.length - 1) {
-          if (albumReleaseDate < currentProfileImageDate) {
-            discographyGallery[albumNumber] = currentProfileImage.url;
-            break;
-          }
         } else {
           const previousProfileImage = sortedGallery[j - 1];
           const previousProfileImageDate = new Date(
@@ -222,6 +224,11 @@ function getDiscographyProfileImages(params: {
           ) {
             discographyGallery[albumNumber] = currentProfileImage.url;
             break;
+          } else {
+            if (j === sortedGallery.length - 1) {
+              discographyGallery[albumNumber] = currentProfileImage.url;
+              break;
+            }
           }
         }
       }

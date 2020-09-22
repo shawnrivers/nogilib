@@ -106,15 +106,27 @@ describe('convertMemberProfileImage', () => {
 });
 
 describe('convertProfileImages', () => {
-  const nishinonanaseProfileImages = convertProfileImages({
+  const nanaseProfileImages = convertProfileImages({
     memberName: MemberNameKey.NishinoNanase,
+    singlesRawArray,
+    albumsRawArray,
+    digitalRawArray,
+  });
+  const renkaProfileImages = convertProfileImages({
+    memberName: MemberNameKey.IwamotoRenka,
+    singlesRawArray,
+    albumsRawArray,
+    digitalRawArray,
+  });
+  const hashimotoProfileImages = convertProfileImages({
+    memberName: MemberNameKey.HashimotoNanami,
     singlesRawArray,
     albumsRawArray,
     digitalRawArray,
   });
 
   test('should sort gallery by date', () => {
-    expect(nishinonanaseProfileImages.gallery).toEqual([
+    expect(nanaseProfileImages.gallery).toEqual([
       'members/singles/1/nishinonanase.jpg',
       'members/singles/2/nishinonanase.jpg',
       'members/singles/3/nishinonanase.jpg',
@@ -139,34 +151,40 @@ describe('convertProfileImages', () => {
   });
 
   test('should have the same amount of single/album/digital images as the amount of singles/albums/digital', () => {
-    expect(Object.entries(nishinonanaseProfileImages.singles).length).toEqual(
+    expect(Object.entries(nanaseProfileImages.singles).length).toEqual(
       singlesRawArray.length
+    );
+    expect(Object.entries(renkaProfileImages.albums).length).toEqual(
+      albumsRawArray.length
+    );
+    expect(Object.entries(hashimotoProfileImages.digital).length).toEqual(
+      digitalRawArray.length
     );
   });
 
   test('should use the corresponding file for single', () => {
-    expect(nishinonanaseProfileImages.singles[15]).toEqual(
+    expect(nanaseProfileImages.singles[15]).toEqual(
       'members/singles/15/nishinonanase.jpg'
     );
   });
 
   test('should use the closest image if no corresponding file exists', () => {
-    expect(nishinonanaseProfileImages.singles[16]).toEqual(
+    expect(nanaseProfileImages.singles[16]).toEqual(
       'members/singles/15/nishinonanase.jpg'
     );
-    expect(nishinonanaseProfileImages.singles[21]).toEqual(
+    expect(nanaseProfileImages.singles[21]).toEqual(
       'members/singles/20/nishinonanase.jpg'
     );
-    expect(nishinonanaseProfileImages.singles[23]).toEqual(
+    expect(nanaseProfileImages.singles[23]).toEqual(
       'members/singles/22/nishinonanase.jpg'
     );
-    expect(nishinonanaseProfileImages.singles[25]).toEqual(
+    expect(nanaseProfileImages.singles[25]).toEqual(
       'members/others/nishinonanase_2019-09-21.jpg'
     );
-    expect(nishinonanaseProfileImages.albums['U']).toEqual(
+    expect(nanaseProfileImages.albums['U']).toEqual(
       'members/singles/17/nishinonanase.jpg'
     );
-    expect(nishinonanaseProfileImages.digital[2]).toEqual(
+    expect(nanaseProfileImages.digital[2]).toEqual(
       'members/others/nishinonanase_2020-06-11.jpg'
     );
   });
