@@ -2,7 +2,7 @@
 const path = require('path');
 
 module.exports = {
-  pathPrefix: '/nogizaka-lib-redesign',
+  pathPrefix: '/nogilib',
   plugins: [
     {
       resolve: 'gatsby-plugin-typescript',
@@ -53,9 +53,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Nogizaka Lib',
-        short_name: 'Nogilib',
-        start_url: '/nogizaka-lib-redesign/',
+        name: 'NOGILIB',
+        short_name: 'NOGILIB',
+        start_url: '/nogilib/',
         background_color: '#ffffff',
         theme_color: '#ffffff',
         display: 'standalone',
@@ -121,6 +121,6 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-offline`,
+    'gatsby-plugin-remove-serviceworker',
   ],
 };

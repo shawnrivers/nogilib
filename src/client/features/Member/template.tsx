@@ -18,26 +18,11 @@ import { PositionCounter } from 'client/features/Member/components/PositionCount
 import { TextLink } from 'client/components/molecules/links/TextLink';
 import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
 import { GlowStickBadge } from 'client/features/Member/components/GlowStickBadge';
-
-const InfoItemLabel: React.FC = props => (
-  <Typography
-    variant="body2"
-    element="span"
-    textColor={{ on: 'onBackground', variant: 'standard' }}
-  >
-    {props.children}
-  </Typography>
-);
-
-const InfoItemValue: React.FC = props => (
-  <Typography
-    variant="body2"
-    element="span"
-    textColor={{ on: 'onBackground', variant: 'variant0' }}
-  >
-    {props.children}
-  </Typography>
-);
+import { InfoItemLabel } from 'client/components/molecules/typography/info/InfoItemLabel';
+import { InfoItemValue } from 'client/components/molecules/typography/info/InfoItemValue';
+import { SectionSubtitle } from 'client/components/molecules/typography/SectionSubtitle';
+import { GridImage } from 'client/components/atoms/images/GirdImage';
+import { Card } from 'client/components/atoms/Card';
 
 export const MemberPage: React.FC<MemberPageProps> = props => {
   const {
@@ -61,7 +46,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
     gallery,
   } = props;
   const { language } = useAppContext();
-  const { Translation } = useTranslations();
+  const { Translation, getTranslation } = useTranslations();
   const theme = useAppTheme();
   const { formatDate } = useIntl();
 
@@ -73,27 +58,27 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
       titleTextTransform="capitalize"
       showBackButton
     >
-      <React.Fragment>
-        <Typography
-          variant="body1"
-          textColor={{
-            on: 'onBackground',
-            variant: 'variant0',
-          }}
-          css={css`
-            vertical-align: center;
-            text-transform: capitalize;
-            text-align-last: center;
-            margin-top: 0.3em;
-          `}
-        >
-          {language === 'ja'
-            ? names.furigana
-            : language === 'zh'
-            ? names.en
-            : names.ja}
-        </Typography>
-        <TextDivider text={<Translation text="profile" />} />
+      <Typography
+        variant="body1"
+        textColor={{
+          on: 'onBackground',
+          variant: 'variant0',
+        }}
+        css={css`
+          vertical-align: center;
+          text-transform: capitalize;
+          text-align: center;
+          margin-top: 0.3em;
+        `}
+      >
+        {language === 'ja'
+          ? names.furigana
+          : language === 'zh'
+          ? names.en
+          : names.ja}
+      </Typography>
+      <section>
+        <TextDivider text={<Translation text="profile" />} element="h2" />
         <div
           css={css`
             display: flex;
@@ -110,10 +95,10 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
             src={profileImage}
             alt={name}
             fixedSize
-            glow
+            shadow
             css={css`
-              width: 180px;
-              height: 220px;
+              width: 200px;
+              height: 240px;
             `}
           />
           <div
@@ -124,7 +109,6 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
               grid-gap: ${theme.spacing.s};
               margin-top: 0.5em;
               align-items: center;
-              text-transform: capitalize;
             `}
           >
             <InfoItemLabel>
@@ -132,7 +116,9 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
             </InfoItemLabel>
             <InfoItemValue>
               <Translation text={('join: ' + join) as any} />{' '}
-              {graduation.isGraduated ? <Translation text="graduate" /> : null}
+              {graduation.isGraduated
+                ? `(${getTranslation('graduate')})`
+                : null}
             </InfoItemValue>
             <InfoItemLabel>
               <Translation text="birthday" />
@@ -145,7 +131,13 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
             <InfoItemLabel>
               <Translation text="blood type" />
             </InfoItemLabel>
-            <InfoItemValue>{bloodType}</InfoItemValue>
+            <InfoItemValue
+              css={css`
+                text-transform: uppercase;
+              `}
+            >
+              <Translation text={bloodType} />
+            </InfoItemValue>
             <InfoItemLabel>
               <Translation text="birthplace" />
             </InfoItemLabel>
@@ -198,271 +190,300 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
           </div>
         </div>
         {sites.length > 0 ? (
-          <React.Fragment>
-            <Typography
-              variant="h4"
+          <section>
+            <SectionSubtitle
               element="h3"
               css={css`
-                margin: 0.5em 0;
-                text-align: center;
-                text-transform: capitalize;
+                margin-top: 0.6em;
               `}
             >
               <Translation text="websites" />
-            </Typography>
-            <div
+            </SectionSubtitle>
+            <ul
               css={css`
                 display: flex;
                 justify-content: center;
                 align-items: baseline;
                 flex-wrap: wrap;
+                margin-top: 0.5em;
               `}
             >
               {sites.map(site => (
-                <TextLink
-                  key={site.title}
-                  element="a"
-                  to={site.url}
-                  typographyVariant="body2"
-                  textColor={{
-                    on: 'onBackground',
-                    variant: 'variant0',
-                  }}
-                >
-                  <Translation text={site.title as any} />
-                </TextLink>
+                <li key={site.title}>
+                  <TextLink
+                    to={site.url}
+                    typographyVariant="body2"
+                    textColor={{
+                      on: 'onBackground',
+                      variant: 'variant0',
+                    }}
+                    capitalize
+                  >
+                    <Translation text={site.title as any} />
+                  </TextLink>
+                </li>
               ))}
-            </div>
-          </React.Fragment>
+            </ul>
+          </section>
         ) : null}
         {photoAlbums.length > 0 ? (
-          <React.Fragment>
-            <Typography
-              variant="h4"
+          <section>
+            <SectionSubtitle
               element="h3"
               css={css`
-                margin: 0.5em 0;
-                text-align: center;
-                text-transform: capitalize;
+                margin-top: 0.6em;
               `}
             >
-              <Translation text="photo albums" />
-            </Typography>
-            <div
+              <Translation text="photo books" />
+            </SectionSubtitle>
+            <ul
               css={css`
                 display: flex;
                 justify-content: center;
                 align-items: baseline;
                 flex-wrap: wrap;
+                margin-top: 0.5em;
               `}
             >
               {photoAlbums.map(photoAlbum => (
+                <li key={photoAlbum.title}>
+                  <Card
+                    borderRadius="s"
+                    padding="xs"
+                    to={photoAlbum.sites[0].url}
+                    css={css`
+                      width: 180px;
+                      margin: ${commonStyles.spacing.xs};
+                    `}
+                  >
+                    <article>
+                      <GridImage
+                        ratio={1.1}
+                        src={photoAlbum.cover}
+                        alt={photoAlbum.title}
+                      />
+                      <Typography
+                        variant="body2"
+                        element="p"
+                        css={css`
+                          margin-top: 0.8em;
+                          text-align: center;
+                          line-height: 1.4;
+                        `}
+                      >
+                        {photoAlbum.title}
+                      </Typography>
+                    </article>
+                  </Card>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+      </section>
+      {positionsHistory.length > 0 ? (
+        <section>
+          <TextDivider
+            text={<Translation text="position history" />}
+            element="h2"
+          />
+          <ol
+            start={parseInt(positionsHistory[0].singleNumber)}
+            css={css`
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+            `}
+          >
+            {positionsHistory.map(position => (
+              <li
+                key={position.singleNumber}
+                css={css`
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  margin: ${theme.spacing.xxs};
+                `}
+              >
                 <Typography
-                  key={photoAlbum.title}
                   variant="body2"
                   element="span"
                   textColor={{
                     on: 'onBackground',
                     variant: 'variant0',
                   }}
+                  css={css`
+                    margin-bottom: 0.3em;
+                  `}
                 >
-                  『{photoAlbum.title}』
+                  {position.singleNumber}
                 </Typography>
-              ))}
-            </div>
-          </React.Fragment>
-        ) : null}
-        {positionsHistory.length > 0 ? (
-          <React.Fragment>
-            <TextDivider text={<Translation text="position history" />} />
-            <div
-              css={css`
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-              `}
-            >
-              {positionsHistory.map(position => (
-                <div
-                  key={position.singleNumber}
+                <PositionBadge position={position.position} />
+              </li>
+            ))}
+          </ol>
+          {shouldShowPositionCounter ? (
+            <section>
+              <SectionSubtitle
+                element="h3"
+                css={css`
+                  margin-top: 1em;
+                `}
+              >
+                {getTranslation('position counter')}
+              </SectionSubtitle>
+              <div
+                css={css`
+                  margin-top: 0.5em;
+
+                  & > * {
+                    margin: auto;
+                  }
+                `}
+              >
+                <PositionCounter {...positionsCounter} />
+              </div>
+              <ul
+                css={css`
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  margin-top: 1em;
+                `}
+              >
+                <li
                   css={css`
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    margin: ${theme.spacing.xxs};
+                    margin: 0.3em;
                   `}
                 >
+                  <PositionBadge position={PositionType.Center} />
                   <Typography
-                    variant="body2"
+                    variant="body3"
                     element="span"
                     textColor={{
                       on: 'onBackground',
                       variant: 'variant0',
                     }}
                     css={css`
-                      margin-bottom: 0.3em;
+                      text-transform: capitalize;
+                      margin-top: 0.3em;
+                      line-height: 1;
                     `}
                   >
-                    {position.singleNumber}
+                    <Translation text="center" />
                   </Typography>
-                  <PositionBadge position={position.position} />
-                </div>
-              ))}
-            </div>
-            {shouldShowPositionCounter ? (
-              <React.Fragment>
-                <div
-                  css={css`
-                    margin-top: 1em;
-
-                    & > * {
-                      margin: auto;
-                    }
-                  `}
-                >
-                  <PositionCounter {...positionsCounter} />
-                </div>
-                <div
+                </li>
+                <li
                   css={css`
                     display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    margin-top: 1em;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 0.3em;
                   `}
                 >
-                  <div
+                  <PositionBadge position={PositionType.Fukujin} />
+                  <Typography
+                    variant="body3"
+                    element="span"
+                    textColor={{
+                      on: 'onBackground',
+                      variant: 'variant0',
+                    }}
                     css={css`
-                      display: flex;
-                      flex-direction: column;
-                      align-items: center;
-                      margin: 0.3em;
+                      text-transform: capitalize;
+                      margin-top: 0.3em;
+                      line-height: 1;
                     `}
                   >
-                    <PositionBadge position={PositionType.Center} />
-                    <Typography
-                      variant="body3"
-                      element="span"
-                      textColor={{
-                        on: 'onBackground',
-                        variant: 'variant0',
-                      }}
-                      css={css`
-                        text-transform: capitalize;
-                        margin-top: 0.3em;
-                        line-height: 1;
-                      `}
-                    >
-                      <Translation text="center" />
-                    </Typography>
-                  </div>
-                  <div
+                    <Translation text="fukujin" />
+                  </Typography>
+                </li>
+                <li
+                  css={css`
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 0.3em;
+                  `}
+                >
+                  <PositionBadge position={PositionType.Selected} />
+                  <Typography
+                    variant="body3"
+                    element="span"
+                    textColor={{
+                      on: 'onBackground',
+                      variant: 'variant0',
+                    }}
                     css={css`
-                      display: flex;
-                      flex-direction: column;
-                      align-items: center;
-                      margin: 0.3em;
+                      text-transform: capitalize;
+                      margin-top: 0.3em;
+                      line-height: 1;
                     `}
                   >
-                    <PositionBadge position={PositionType.Fukujin} />
-                    <Typography
-                      variant="body3"
-                      element="span"
-                      textColor={{
-                        on: 'onBackground',
-                        variant: 'variant0',
-                      }}
-                      css={css`
-                        text-transform: capitalize;
-                        margin-top: 0.3em;
-                        line-height: 1;
-                      `}
-                    >
-                      <Translation text="fukujin" />
-                    </Typography>
-                  </div>
-                  <div
+                    <Translation text="selected" />
+                  </Typography>
+                </li>
+                <li
+                  css={css`
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 0.3em;
+                  `}
+                >
+                  <PositionBadge position={PositionType.Under} />
+                  <Typography
+                    variant="body3"
+                    element="span"
+                    textColor={{
+                      on: 'onBackground',
+                      variant: 'variant0',
+                    }}
                     css={css`
-                      display: flex;
-                      flex-direction: column;
-                      align-items: center;
-                      margin: 0.3em;
+                      text-transform: capitalize;
+                      margin-top: 0.3em;
+                      line-height: 1;
                     `}
                   >
-                    <PositionBadge position={PositionType.Selected} />
-                    <Typography
-                      variant="body3"
-                      element="span"
-                      textColor={{
-                        on: 'onBackground',
-                        variant: 'variant0',
-                      }}
-                      css={css`
-                        text-transform: capitalize;
-                        margin-top: 0.3em;
-                        line-height: 1;
-                      `}
-                    >
-                      <Translation text="selected" />
-                    </Typography>
-                  </div>
-                  <div
-                    css={css`
-                      display: flex;
-                      flex-direction: column;
-                      align-items: center;
-                      margin: 0.3em;
-                    `}
-                  >
-                    <PositionBadge position={PositionType.Under} />
-                    <Typography
-                      variant="body3"
-                      element="span"
-                      textColor={{
-                        on: 'onBackground',
-                        variant: 'variant0',
-                      }}
-                      css={css`
-                        text-transform: capitalize;
-                        margin-top: 0.3em;
-                        line-height: 1;
-                      `}
-                    >
-                      <Translation text="under" />
-                    </Typography>
-                  </div>
-                </div>
-              </React.Fragment>
-            ) : null}
-          </React.Fragment>
-        ) : null}
-        {gallery.length > 0 ? (
-          <React.Fragment>
-            <TextDivider text={<Translation text="gallery" />} />
-            <div
-              css={css`
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-              `}
-            >
-              {gallery.map((profileImage, index) => (
+                    <Translation text="under" />
+                  </Typography>
+                </li>
+              </ul>
+            </section>
+          ) : null}
+        </section>
+      ) : null}
+      {gallery.length > 0 ? (
+        <section>
+          <TextDivider text={<Translation text="gallery" />} element="h2" />
+          <ul
+            css={css`
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+            `}
+          >
+            {gallery.map((profileImage, index) => (
+              <li key={index}>
                 <GridMemberImage
                   src={profileImage}
-                  key={index}
                   alt={name}
-                  glow
+                  shadow
                   fixedSize
                   css={css`
-                    width: ${140}px;
-                    height: ${168}px;
+                    width: ${110}px;
+                    height: ${132}px;
                     margin: ${commonStyles.spacing.xs};
                   `}
                 />
-              ))}
-            </div>
-          </React.Fragment>
-        ) : null}
-      </React.Fragment>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
     </PageContent>
   );
 };

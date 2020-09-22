@@ -1,7 +1,7 @@
 export enum SocialMedia {
   Instagram = 'Instagram',
   Twitter = 'Twitter',
-  OfficialBlog = 'Official Blog',
+  Blog = 'blog',
   FourthGenBlog = 'Fourth Gen Blog',
   Profile = 'Profile',
   Official = 'Official',

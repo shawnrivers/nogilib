@@ -2,6 +2,11 @@ import * as React from 'react';
 import { useAppContext } from 'client/hooks/useAppContext';
 import { MemberResult } from 'server/actors/Members/models';
 
+export type NameNotationsForIntl = Pick<
+  MemberResult['nameNotations'],
+  'lastName' | 'firstName' | 'lastNameEn' | 'firstNameEn'
+>;
+
 export const useIntl = () => {
   const { language } = useAppContext();
 
@@ -20,12 +25,7 @@ export const useIntl = () => {
   );
 
   const formatMemberName = React.useCallback(
-    (
-      nameNotations: Pick<
-        MemberResult['nameNotations'],
-        'lastName' | 'firstName' | 'lastNameEn' | 'firstNameEn'
-      >
-    ) => {
+    (nameNotations: NameNotationsForIntl) => {
       switch (language) {
         case 'ja':
           return `${nameNotations.lastName}${nameNotations.firstName}`;

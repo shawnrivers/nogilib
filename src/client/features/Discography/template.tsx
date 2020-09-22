@@ -29,6 +29,7 @@ export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
         <TextSwitchLinkGroup
           variant="h4"
           textOn="onBackground"
+          capitalize
           links={[
             {
               text: <Translation text="singles" />,
@@ -54,9 +55,9 @@ export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
           `}
         />
         {cdGroupsByYear.map(cdGroup => (
-          <div key={cdGroup.year}>
-            <TextDivider text={cdGroup.year} />
-            <div
+          <section key={cdGroup.year}>
+            <TextDivider text={cdGroup.year} element="h2" />
+            <ul
               css={css`
                 display: flex;
                 flex-wrap: wrap;
@@ -65,23 +66,25 @@ export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
               `}
             >
               {cdGroup.cds.map(cd => (
-                <ArtworkCard
-                  key={cd.key}
-                  to={getAlbumUrl(cd.key)}
-                  artwork={cd.artworks[0].url}
-                  number={cd.number}
-                  type={cd.type}
-                  title={cd.title}
-                  borderRadius="s"
-                  padding="s"
-                  css={css`
-                    width: 200px;
-                    margin: ${commonStyles.spacing.s};
-                  `}
-                />
+                <li key={cd.key}>
+                  <ArtworkCard
+                    to={getAlbumUrl(cd.key)}
+                    artwork={cd.artworks[0].url}
+                    number={cd.number}
+                    type={cd.type}
+                    title={cd.title}
+                    titleElement="h3"
+                    borderRadius="s"
+                    padding="s"
+                    css={css`
+                      width: 175px;
+                      margin: ${commonStyles.spacing.xs};
+                    `}
+                  />
+                </li>
               ))}
-            </div>
-          </div>
+            </ul>
+          </section>
         ))}
       </React.Fragment>
     </PageContent>

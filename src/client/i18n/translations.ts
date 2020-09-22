@@ -184,10 +184,10 @@ const dictionary = {
     ja: '乃木坂46',
     zh: '乃木坂46',
   },
-  'Official Blog': {
-    en: 'Official Blog',
-    ja: '公式ブログ',
-    zh: '官方博客',
+  blog: {
+    en: 'blog',
+    ja: 'ブログ',
+    zh: '博客',
   },
   'Fourth Gen Blog': {
     en: 'Fourth Gen Blog',
@@ -324,6 +324,11 @@ const dictionary = {
     ja: '写真集',
     zh: '照片集',
   },
+  'photo books': {
+    en: 'photo books',
+    ja: '写真集',
+    zh: '照片集',
+  },
   'position history': {
     en: 'position history',
     ja: 'ポジション履歴',
@@ -337,7 +342,7 @@ const dictionary = {
   center: {
     en: 'center',
     ja: 'センター',
-    zh: '中心',
+    zh: 'C位',
   },
   fukujin: {
     en: 'fukujin',
@@ -489,12 +494,11 @@ const dictionary = {
     ja: '結果がみ見つかりませんでした',
     zh: '找不到搜索结果',
   },
-  'This is a web application aiming at showing the information about Nogizaka46 in a user-friendly way.': {
+  'A web app for showing the information about Nogizaka46 in a user-friendly way': {
     en:
-      'This is a web application aiming at showing the information about Nogizaka46 in a user-friendly way.',
-    ja:
-      'これは乃木坂46の情報をわかりやすく提示するウェブアプリケーションである。',
-    zh: '这是一个简洁明了地显示乃木坂46的信息的网页应用。',
+      'A web app for showing the information about Nogizaka46 in a user-friendly way',
+    ja: '乃木坂46の情報をわかりやすく提示するウェブアプリケーション',
+    zh: '简洁地显示乃木坂46的信息的网页应用',
   },
   CD: {
     en: 'CD',
@@ -595,6 +599,26 @@ const dictionary = {
     en: 'glow stick',
     ja: 'サイリューム',
     zh: '荧光棒',
+  },
+  features: {
+    en: 'features',
+    ja: '機能',
+    zh: '功能',
+  },
+  developer: {
+    en: 'developer',
+    ja: '開発者',
+    zh: '开发者',
+  },
+  menu: {
+    en: 'menu',
+    ja: 'メニュー',
+    zh: '菜单',
+  },
+  settings: {
+    en: 'settings',
+    ja: '設定',
+    zh: '设定',
   },
 };
 

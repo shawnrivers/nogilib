@@ -4,17 +4,46 @@ import * as React from 'react';
 import { PageContent } from 'client/components/templates/Page';
 import { Typography } from 'client/components/atoms/Typography';
 import { GatsbyImage } from 'client/components/atoms/images/GatsbyImage';
-import { commonStyles, useAppTheme } from 'client/styles/tokens';
-import { TextCard } from 'client/components/molecules/cards/TextCard';
+import { commonStyles } from 'client/styles/tokens';
 import {
   getDiscographyUrl,
   getMembersUrl,
   getSearchUrl,
 } from 'client/utils/urls';
 import { TextLink } from 'client/components/molecules/links/TextLink';
+import { useTranslations } from 'client/hooks/useTranslations';
+
+const SubHeading: React.FC = props => (
+  <Typography
+    variant="h3"
+    element="h2"
+    css={css`
+      text-align: center;
+      text-transform: capitalize;
+      margin: ${commonStyles.spacing.l} 0 ${commonStyles.spacing.s};
+    `}
+  >
+    {props.children}
+  </Typography>
+);
+
+const SectionTextLink: React.FC<{
+  to: string;
+}> = props => (
+  <TextLink
+    to={props.to}
+    typographyVariant="body2"
+    textColor={{ on: 'onBackground', variant: 'variant0' }}
+    css={css`
+      text-transform: capitalize;
+    `}
+  >
+    {props.children}
+  </TextLink>
+);
 
 const HomePage: React.FC = () => {
-  const theme = useAppTheme();
+  const { getTranslation } = useTranslations();
 
   return (
     <PageContent>
@@ -29,10 +58,8 @@ const HomePage: React.FC = () => {
         <GatsbyImage
           src="icon.png"
           css={css`
-            border-radius: 50%;
-            width: 256px;
-            height: 256px;
-            box-shadow: ${theme.elevation[4].boxShadow};
+            width: 224px;
+            height: 224px;
           `}
         />
         <Typography
@@ -46,58 +73,47 @@ const HomePage: React.FC = () => {
         </Typography>
         <Typography
           variant="body1"
-          css={css`
-            text-align: center;
-            margin-top: ${commonStyles.spacing.m};
-          `}
-        >
-          A web app for showing the information about Nogizaka46 in a
-          user-friendly way
-        </Typography>
-        <Typography
-          variant="h3"
-          element="h2"
-          css={css`
-            text-align: center;
-            margin-top: ${commonStyles.spacing.l};
-          `}
-        >
-          Features
-        </Typography>
-        <div
-          css={css`
-            display: grid;
-            grid-auto-columns: max-content;
-            grid-gap: ${commonStyles.spacing.s};
-            margin-top: ${commonStyles.spacing.m};
-          `}
-        >
-          <TextCard to={getDiscographyUrl()} text="Discography" />
-          <TextCard to={getMembersUrl()} text="Members" />
-          <TextCard to={getSearchUrl()} text="Search" />
-        </div>
-        <Typography
-          variant="h3"
-          element="h2"
-          css={css`
-            text-align: center;
-            margin-top: ${commonStyles.spacing.l};
-          `}
-        >
-          Author
-        </Typography>
-        <TextLink
-          to="https://twitter.com/yuxiao_he"
-          element="a"
-          typographyVariant="body2"
           textColor={{ on: 'onBackground', variant: 'variant0' }}
           css={css`
             text-align: center;
-            margin-top: ${commonStyles.spacing.s};
+            margin-top: ${commonStyles.spacing.m};
+            max-width: 30em;
           `}
         >
+          {getTranslation(
+            'A web app for showing the information about Nogizaka46 in a user-friendly way'
+          )}
+        </Typography>
+        <SubHeading>{getTranslation('features')}</SubHeading>
+        <div
+          css={css`
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            & > * {
+              margin-top: ${commonStyles.spacing.s};
+            }
+          `}
+        >
+          <SectionTextLink to={getDiscographyUrl()}>
+            {getTranslation('discography')}
+          </SectionTextLink>
+          <SectionTextLink to={getMembersUrl()}>
+            {getTranslation('members')}
+          </SectionTextLink>
+          <SectionTextLink to={getSearchUrl()}>
+            {getTranslation('search')}
+          </SectionTextLink>
+        </div>
+        <SubHeading>{getTranslation('developer')}</SubHeading>
+        <SectionTextLink to="https://twitter.com/yuxiao_he">
           Yuxiao He (Usho Ka)
-        </TextLink>
+        </SectionTextLink>
+        <SubHeading>{getTranslation('about')}</SubHeading>
+        <SectionTextLink to="https://github.com/shawnrivers/nogilib">
+          GitHub
+        </SectionTextLink>
       </div>
     </PageContent>
   );

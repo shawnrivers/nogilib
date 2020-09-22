@@ -33,14 +33,16 @@ export const BaseButton: React.FC<BaseButtonProps> = props => {
         transition: background-color 0.3s ease-out;
         background: none;
 
-        &:hover {
-          background-color: ${theme.colors.theme[backgroundType][
-            backgroundColorVariant
-          ]};
-        }
-
         &:focus {
           outline: auto;
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+          &:hover {
+            background-color: ${theme.colors.theme[backgroundType][
+              backgroundColorVariant
+            ]};
+          }
         }
       `}
       {...buttonProps}

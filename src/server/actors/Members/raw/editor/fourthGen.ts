@@ -19,7 +19,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Aichi,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/sakura.endou/',
       },
       {
@@ -39,7 +39,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Tochigi,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/haruka.kaki/',
       },
       {
@@ -66,7 +66,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Okayama,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/sayaka.kakehashi/',
       },
       {
@@ -86,7 +86,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Hokkaido,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/saya.kanagawa/',
       },
       {
@@ -106,7 +106,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.California,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/yuri.kitagawa/',
       },
       {
@@ -126,7 +126,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Chiba,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/yuna.shibata/',
       },
       {
@@ -146,7 +146,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Saitama,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/rei.seimiya/',
       },
       {
@@ -166,7 +166,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Saitama,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/mayu.tamura/',
       },
       {
@@ -186,7 +186,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Aichi,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/ayame.tsutsui/',
       },
       {
@@ -206,7 +206,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Osaka,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/seira.hayakawa/',
       },
       {
@@ -226,7 +226,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Tokyo,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/mio.yakubo/',
       },
       {

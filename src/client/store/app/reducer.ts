@@ -9,12 +9,12 @@ type State = {
 };
 
 export const getInitialState = (
-  localStorageTheme: ThemeMode | null,
-  localStorageLanguage: Language | null
+  theme?: ThemeMode | null,
+  language?: Language | null
 ): State => ({
-  themeMode: localStorageTheme ?? 'auto',
-  themeKey: localStorageTheme === 'dark' ? 'dark' : 'light',
-  language: localStorageLanguage ?? 'ja',
+  themeMode: theme ?? 'auto',
+  themeKey: theme === 'dark' ? 'dark' : 'light',
+  language: language ?? 'ja',
 });
 
 type Action =

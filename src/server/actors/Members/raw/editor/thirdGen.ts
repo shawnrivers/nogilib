@@ -20,7 +20,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Okinawa,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/riria.itou/',
       },
       {
@@ -40,7 +40,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Tokyo,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/renka.iwamoto/',
       },
       {
@@ -60,12 +60,26 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Kanagawa,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/minami.umezawa/',
       },
       {
         title: SocialMedia.Profile,
         url: 'https://www.nogizaka46.com/member/detail/umezawaminami.php',
+      },
+    ],
+    photoAlbums: [
+      {
+        title: '夢の近く',
+        release: '2020-09-29',
+        type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/ume1st_minami',
+          },
+        ],
+        cover: 'photo-albums/umezawaminami_1.jpg',
       },
     ],
   }),
@@ -80,7 +94,11 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Kagoshima,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/o.momoko_official/',
+      },
+      {
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/momoko.oozono/',
       },
       {
@@ -100,7 +118,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Miyagi,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/shiori.kubo/',
       },
       {
@@ -127,7 +145,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Tokyo,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/tamami.sakaguchi/',
       },
       {
@@ -147,7 +165,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Aichi,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/kaede.satou/',
       },
       {
@@ -167,7 +185,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Tokyo,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/reno.nakamura/',
       },
       {
@@ -187,7 +205,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Tokyo,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/hazuki.mukai/',
       },
       {
@@ -214,7 +232,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Tokyo,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/mizuki.yamashita/',
       },
       {
@@ -227,6 +245,13 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
         title: '忘れられない人',
         release: '2020-01-21',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/mizuki1st_paris',
+          },
+        ],
+        cover: 'photo-albums/yamashitamizuki_1.jpg',
       },
     ],
   }),
@@ -248,7 +273,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Oita,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/ayanochristie.yoshida/',
       },
       {
@@ -269,7 +294,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Fukuoka,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/yuuki.yoda/',
       },
       {
@@ -282,11 +307,25 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
         title: '日向の温度',
         release: '2017-12-26',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/gentosha_yoda',
+          },
+        ],
+        cover: 'photo-albums/yodayuuki_1.jpg',
       },
       {
         title: '無口な時間',
         release: '2020-03-10',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/yodayuuki_oimo',
+          },
+        ],
+        cover: 'photo-albums/yodayuuki_2.jpg',
       },
     ],
   }),

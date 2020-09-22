@@ -1,6 +1,6 @@
 export const SIZES = {
   contentMaxWidth: '60rem',
-  navigationBarHeight: '64px',
+  navigationBarHeight: '56px',
 };
 
 export type SizesKey = keyof typeof SIZES;

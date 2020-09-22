@@ -49,7 +49,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Kanagawa,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/junna.itou/',
       },
       {
@@ -73,7 +73,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Hokkaido,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/hinako.kitano/',
       },
       {
@@ -90,6 +90,13 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         title: '空気の色',
         release: '2018-12-27',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/hinako_gentosha',
+          },
+        ],
+        cover: 'photo-albums/kitanohinako_1.jpg',
       },
     ],
   }),
@@ -121,7 +128,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Saitama,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/mai.shinuchi/',
       },
       {
@@ -138,6 +145,13 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         title: 'どこにいるの？',
         release: '2017-11-14',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/mai_kobunsha',
+          },
+        ],
+        cover: 'photo-albums/shinuchimai_1.jpg',
       },
     ],
   }),
@@ -152,7 +166,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Akita,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/ayane.suzuki/',
       },
       {
@@ -176,7 +190,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Tokyo,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/ranze.terada/',
       },
       {
@@ -196,7 +210,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Gifu,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/miona.hori/',
       },
       {
@@ -213,11 +227,25 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         title: '君らしさ',
         release: '2017-11-24',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/miona_book',
+          },
+        ],
+        cover: 'photo-albums/horimiona_1.jpg',
       },
       {
         title: 'いつかの待ち合わせ場所',
         release: '2020-05-27',
         type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/horimiona2nd',
+          },
+        ],
+        cover: 'photo-albums/horimiona_2.jpg',
       },
     ],
   }),
@@ -232,7 +260,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Tokyo,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/rena.yamazaki/',
       },
       {
@@ -263,7 +291,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Tokyo,
     sites: [
       {
-        title: SocialMedia.OfficialBlog,
+        title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/miria.watanabe/',
       },
       {

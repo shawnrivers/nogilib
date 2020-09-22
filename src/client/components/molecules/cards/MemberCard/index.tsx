@@ -11,6 +11,7 @@ import { GridMemberImage } from 'client/components/atoms/images/GridMemberImage'
 export type MemberCardProps = CardProps & {
   profileImage: string;
   name: string;
+  nameElement?: TypographyProps['element'];
   textSize?: TypographyProps['variant'];
 };
 
@@ -18,6 +19,7 @@ export const MemberCard: React.FC<MemberCardProps> = props => {
   const {
     profileImage,
     name,
+    nameElement = 'div',
     textSize = 'em2',
     borderRadius = 's',
     padding = 's',
@@ -25,21 +27,23 @@ export const MemberCard: React.FC<MemberCardProps> = props => {
   } = props;
   return (
     <Card borderRadius={borderRadius} padding={padding} {...cardProps}>
-      <GridMemberImage src={profileImage} alt={name} />
-      <Typography
-        variant={textSize}
-        css={css`
-          margin-top: 1em;
-          line-height: 1.2;
-          overflow-x: hidden;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          text-align: center;
-          text-transform: capitalize;
-        `}
-      >
-        {name}
-      </Typography>
+      <article>
+        <GridMemberImage src={profileImage} alt={name} />
+        <Typography
+          variant={textSize}
+          element={nameElement}
+          css={css`
+            margin-top: 0.8em;
+            overflow-x: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            text-align: center;
+            text-transform: capitalize;
+          `}
+        >
+          {name}
+        </Typography>
+      </article>
     </Card>
   );
 };

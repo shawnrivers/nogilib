@@ -62,6 +62,7 @@ export type TypographyProps = React.HTMLAttributes<HTMLElement> & {
   bold?: boolean;
   fontFamily?: FontFamily;
   ellipsis?: boolean;
+  capitalize?: boolean;
   textColor?: {
     on: keyof ThemeColorsForeground;
     variant: keyof ThemeColorVariants;
@@ -79,6 +80,7 @@ export const Typography: React.FC<TypographyProps> = props => {
       variant: 'standard',
     },
     bold,
+    capitalize = false,
     children,
     ...restProps
   } = props;
@@ -96,6 +98,7 @@ export const Typography: React.FC<TypographyProps> = props => {
         color: ${color};
         font-weight: ${bold ? 700 : undefined};
         font-family: ${fontFamilyValue};
+        text-transform: ${capitalize ? 'capitalize' : 'initial'};
       `,
     ];
     if (ellipsis) {
@@ -103,7 +106,15 @@ export const Typography: React.FC<TypographyProps> = props => {
     }
 
     return stylesResult;
-  }, [bold, color, fontFamilyValue, ellipsis, theme.typography, variant]);
+  }, [
+    bold,
+    color,
+    fontFamilyValue,
+    ellipsis,
+    theme.typography,
+    variant,
+    capitalize,
+  ]);
 
   return (
     <Element css={styles} {...restProps}>

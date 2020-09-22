@@ -23,6 +23,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
       title={props.title}
       subtitle={`${toCdNumber(props.number)} ${props.type}`}
       showBackButton
+      titleTextTransform="initial"
     >
       <React.Fragment>
         <Typography
@@ -39,38 +40,40 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
         >
           <Translation text="release" />: {formatDate(props.release)}
         </Typography>
-        <TextDivider text={<Translation text="tracks" />} />
-        <ul
-          css={css`
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-          `}
-        >
-          {props.tracks.map(track => (
-            <li
-              key={track.key}
-              css={css`
-                width: 300px;
-                margin: ${commonStyles.spacing.xs};
-              `}
-            >
-              <HorizontalCard
-                to={getSongUrl(track.key)}
-                image={{
-                  src: track.artwork,
-                  alt: track.inCdType[0],
-                }}
-                title={track.title}
-                tags={[track.type]}
-              />
-            </li>
-          ))}
-        </ul>
+        <section>
+          <TextDivider text={<Translation text="tracks" />} element="h2" />
+          <ol
+            css={css`
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+            `}
+          >
+            {props.tracks.map(track => (
+              <li
+                key={track.key}
+                css={css`
+                  width: 300px;
+                  margin: ${commonStyles.spacing.xs};
+                `}
+              >
+                <HorizontalCard
+                  to={getSongUrl(track.key)}
+                  image={{
+                    src: track.artwork,
+                    alt: track.inCdType[0],
+                  }}
+                  title={track.title}
+                  tags={[track.type]}
+                />
+              </li>
+            ))}
+          </ol>
+        </section>
         {props.centers.length > 0 ? (
-          <React.Fragment>
-            <TextDivider text={<Translation text="center" />} />
-            <div
+          <section>
+            <TextDivider text={<Translation text="center" />} element="h2" />
+            <ul
               css={css`
                 display: flex;
                 flex-wrap: wrap;
@@ -78,49 +81,53 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
               `}
             >
               {props.centers.map(member => (
-                <MemberCard
-                  key={member.name}
-                  profileImage={member.profileImage}
-                  name={
-                    member.nameNotations.lastName +
-                    member.nameNotations.firstName
-                  }
-                  to={getMemberUrl(member.name)}
-                  textSize="em2"
-                  borderRadius="s"
-                  padding="s"
+                <li key={member.name}>
+                  <MemberCard
+                    profileImage={member.profileImage}
+                    name={
+                      member.nameNotations.lastName +
+                      member.nameNotations.firstName
+                    }
+                    to={getMemberUrl(member.name)}
+                    textSize="body2"
+                    borderRadius="s"
+                    padding="xs"
+                    css={css`
+                      width: 130px;
+                      margin: ${commonStyles.spacing.xs};
+                    `}
+                  />
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+        <section>
+          <TextDivider text={<Translation text="artworks" />} element="h2" />
+          <ul
+            css={css`
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+            `}
+          >
+            {props.artworks.map((artwork, i) => (
+              <li key={i}>
+                <GridImage
+                  src={artwork.url}
+                  alt={String(i + 1)}
+                  shadow
+                  fixedSize
                   css={css`
                     width: 160px;
+                    height: 160px;
                     margin: ${commonStyles.spacing.s};
                   `}
                 />
-              ))}
-            </div>
-          </React.Fragment>
-        ) : null}
-        <TextDivider text={<Translation text="artworks" />} />
-        <div
-          css={css`
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-          `}
-        >
-          {props.artworks.map((artwork, i) => (
-            <GridImage
-              key={i}
-              src={artwork.url}
-              alt={String(i + 1)}
-              glow
-              fixedSize
-              css={css`
-                width: 160px;
-                height: 160px;
-                margin: ${commonStyles.spacing.s};
-              `}
-            />
-          ))}
-        </div>
+              </li>
+            ))}
+          </ul>
+        </section>
       </React.Fragment>
     </PageContent>
   );

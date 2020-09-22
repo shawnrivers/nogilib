@@ -7,13 +7,15 @@ import {
 } from 'client/components/atoms/images/GatsbyImage';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import { BorderRadiusKey } from 'client/styles/borderRadius';
+import { componentElevationKey } from 'client/styles/elevation';
 
 type ImageProps = GatsbyImageProps & {
-  borderRadius?: BorderRadiusKey;
+  borderRadius: BorderRadiusKey;
+  shadow: boolean;
 };
 
 const Image: React.FC<ImageProps> = props => {
-  const { src, alt, borderRadius = 's', ...restProps } = props;
+  const { src, alt, borderRadius, shadow, ...restProps } = props;
   const theme = useAppTheme();
 
   return (
@@ -23,6 +25,10 @@ const Image: React.FC<ImageProps> = props => {
         height: 100%;
         position: relative;
         border-radius: ${commonStyles.borderRadius[borderRadius]};
+        box-shadow: ${shadow
+          ? theme.elevation[componentElevationKey.componentOnBackground]
+              .boxShadow
+          : 'none'};
         overflow: hidden;
       `}
     >
@@ -54,10 +60,11 @@ const Image: React.FC<ImageProps> = props => {
   );
 };
 
-export type GridImageProps = ImageProps & {
+export type GridImageProps = Omit<ImageProps, 'borderRadius' | 'shadow'> & {
   ratio?: number;
   fixedSize?: boolean;
-  glow?: boolean;
+  borderRadius?: BorderRadiusKey;
+  shadow?: boolean;
 };
 
 export const GridImage: React.FC<GridImageProps> = props => {
@@ -66,37 +73,36 @@ export const GridImage: React.FC<GridImageProps> = props => {
     alt,
     ratio = 1,
     fixedSize = false,
-    glow = false,
+    shadow = false,
+    borderRadius = 's',
     className,
     ...restProps
   } = props;
 
-  const containerStyles = !fixedSize
-    ? css`
-        position: relative;
-        padding-top: ${ratio * 100}%;
-      `
-    : css`
-        position: relative;
-      `;
+  const theme = useAppTheme();
+
+  const containerStyles = React.useMemo(() => {
+    const baseStyles = css`
+      position: relative;
+      overflow: auto;
+      border-radius: ${commonStyles.borderRadius[borderRadius]};
+      box-shadow: ${shadow
+        ? theme.elevation[componentElevationKey.componentOnBackground].boxShadow
+        : 'none'};
+    `;
+
+    return !fixedSize
+      ? [
+          baseStyles,
+          css`
+            padding-top: ${ratio * 100}%;
+          `,
+        ]
+      : baseStyles;
+  }, [borderRadius, fixedSize, ratio, shadow, theme.elevation]);
 
   return (
     <div css={containerStyles} className={className as string}>
-      {glow ? (
-        <div
-          css={css`
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            overflow: hidden;
-            filter: blur(4px);
-          `}
-        >
-          <Image src={src} alt={alt} {...restProps} />
-        </div>
-      ) : null}
       <div
         css={css`
           position: absolute;
@@ -106,7 +112,13 @@ export const GridImage: React.FC<GridImageProps> = props => {
           left: 0;
         `}
       >
-        <Image src={src} alt={alt} {...restProps} />
+        <Image
+          src={src}
+          alt={alt}
+          shadow={shadow}
+          borderRadius={borderRadius}
+          {...restProps}
+        />
       </div>
     </div>
   );

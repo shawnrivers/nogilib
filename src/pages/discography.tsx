@@ -1,6 +1,4 @@
 import { graphql } from 'gatsby';
-import { useLocation } from '@reach/router';
-import * as queryString from 'query-string';
 import * as React from 'react';
 import { DiscographyResult } from 'server/actors/Discography/models';
 import { sortByDate } from 'utils/arrays';
@@ -8,6 +6,7 @@ import {
   DiscographyPage,
   DiscographyPageProps,
 } from 'client/features/Discography/template';
+import { useFilter } from 'client/hooks/useFilter';
 
 export const query = graphql`
   query {
@@ -116,8 +115,8 @@ const DiscographyPageContainer: React.FC<QueryResult> = props => {
     albumsData,
   ]);
 
-  const location = useLocation();
-  const { filter } = queryString.parse(location.search);
+  const filter = useFilter();
+
   const currentFilter: DiscographyPageProps['currentFilter'] = React.useMemo(() => {
     switch (filter) {
       case 'singles':
