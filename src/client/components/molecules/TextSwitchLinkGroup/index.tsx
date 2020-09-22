@@ -20,7 +20,7 @@ export const TextSwitchLinkGroup: React.FC<TextSwitchLinkGroupProps> = props => 
   const { links, ...TextSwitchLinkProps } = props;
 
   return (
-    <div
+    <nav
       css={css`
         display: flex;
         flex-wrap: wrap;
@@ -61,6 +61,6 @@ export const TextSwitchLinkGroup: React.FC<TextSwitchLinkGroupProps> = props => 
           </React.Fragment>
         )
       )}
-    </div>
+    </nav>
   );
 };
