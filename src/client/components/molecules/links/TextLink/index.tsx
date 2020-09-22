@@ -24,7 +24,6 @@ export type TextLinkProps = BaseLinkProps &
 
 export const TextLink: React.FC<TextLinkProps> = props => {
   const {
-    element,
     to,
     typographyVariant = 'body1',
     showUnderline = true,
@@ -87,13 +86,7 @@ export const TextLink: React.FC<TextLinkProps> = props => {
   );
 
   return (
-    <BaseLink
-      element={element}
-      to={to}
-      onClick={onClick}
-      disabled={disabled}
-      css={styles}
-    >
+    <BaseLink to={to} onClick={onClick} disabled={disabled} css={styles}>
       <Typography
         variant={typographyVariant}
         textColor={textColor}

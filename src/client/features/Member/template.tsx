@@ -209,7 +209,6 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
               {sites.map(site => (
                 <li key={site.title}>
                   <TextLink
-                    element="a"
                     to={site.url}
                     typographyVariant="body2"
                     textColor={{

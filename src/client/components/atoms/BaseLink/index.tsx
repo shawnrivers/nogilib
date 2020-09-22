@@ -1,18 +1,20 @@
 import { Link } from 'gatsby';
 import * as React from 'react';
+import { isAbsoluteUrl } from 'client/utils/urls';
 
 export type BaseLinkProps = {
-  element: 'a' | 'Link';
   to: string;
   disabled?: boolean;
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
 export const BaseLink: React.FC<BaseLinkProps> = props => {
-  const { element, to, disabled, className, onClick, children } = props;
+  const { to, disabled, className, onClick, children } = props;
+
+  const isAbsoluteLink = isAbsoluteUrl(to);
 
   return disabled ? (
     <div css={className}>{children}</div>
-  ) : element === 'a' ? (
+  ) : isAbsoluteLink ? (
     <a href={to} css={className} onClick={onClick}>
       {children}
     </a>

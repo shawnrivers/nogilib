@@ -10,10 +10,7 @@ import {
   getMembersUrl,
   getSearchUrl,
 } from 'client/utils/urls';
-import {
-  TextLink,
-  TextLinkProps,
-} from 'client/components/molecules/links/TextLink';
+import { TextLink } from 'client/components/molecules/links/TextLink';
 import { useTranslations } from 'client/hooks/useTranslations';
 
 const SubHeading: React.FC = props => (
@@ -32,11 +29,9 @@ const SubHeading: React.FC = props => (
 
 const SectionTextLink: React.FC<{
   to: string;
-  element: TextLinkProps['element'];
 }> = props => (
   <TextLink
     to={props.to}
-    element={props.element}
     typographyVariant="body2"
     textColor={{ on: 'onBackground', variant: 'variant0' }}
     css={css`
@@ -101,25 +96,22 @@ const HomePage: React.FC = () => {
             }
           `}
         >
-          <SectionTextLink to={getDiscographyUrl()} element="Link">
+          <SectionTextLink to={getDiscographyUrl()}>
             {getTranslation('discography')}
           </SectionTextLink>
-          <SectionTextLink to={getMembersUrl()} element="Link">
+          <SectionTextLink to={getMembersUrl()}>
             {getTranslation('members')}
           </SectionTextLink>
-          <SectionTextLink to={getSearchUrl()} element="Link">
+          <SectionTextLink to={getSearchUrl()}>
             {getTranslation('search')}
           </SectionTextLink>
         </div>
         <SubHeading>{getTranslation('developer')}</SubHeading>
-        <SectionTextLink to="https://twitter.com/yuxiao_he" element="a">
+        <SectionTextLink to="https://twitter.com/yuxiao_he">
           Yuxiao He (Usho Ka)
         </SectionTextLink>
         <SubHeading>{getTranslation('about')}</SubHeading>
-        <SectionTextLink
-          to="https://github.com/shawnrivers/nogilib"
-          element="a"
-        >
+        <SectionTextLink to="https://github.com/shawnrivers/nogilib">
           GitHub
         </SectionTextLink>
       </div>
