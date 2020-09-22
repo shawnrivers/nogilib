@@ -57,11 +57,14 @@ export const Search: React.FC<SearchProps> = props => {
             margin: auto;
           `}
         >
-          <SearchIcon
-            css={css`
-              fill: ${theme.colors.theme.onBackground.standard};
-            `}
-          />
+          <label htmlFor="search-box">
+            <SearchIcon
+              title={getTranslation('search')}
+              css={css`
+                fill: ${theme.colors.theme.onBackground.standard};
+              `}
+            />
+          </label>
           <Typography
             variant="body1"
             element="div"
@@ -71,6 +74,7 @@ export const Search: React.FC<SearchProps> = props => {
             `}
           >
             <input
+              id="search-box"
               type="text"
               value={query}
               onChange={search}
@@ -114,6 +118,7 @@ export const Search: React.FC<SearchProps> = props => {
         ) : null}
         <SearchResultCategory
           title="members"
+          titleElement="h2"
           results={results.members}
           css={css`
             margin-top: 2rem;
@@ -121,6 +126,7 @@ export const Search: React.FC<SearchProps> = props => {
         />
         <SearchResultCategory
           title="cds"
+          titleElement="h2"
           results={results.cds}
           css={css`
             margin-top: 2rem;
@@ -128,6 +134,7 @@ export const Search: React.FC<SearchProps> = props => {
         />
         <SearchResultCategory
           title="songs"
+          titleElement="h2"
           results={results.songs}
           css={css`
             margin-top: 2rem;

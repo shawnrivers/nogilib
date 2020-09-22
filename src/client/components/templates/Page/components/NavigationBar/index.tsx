@@ -225,105 +225,109 @@ export const NavigationBar: React.FC<{
   const { getTranslation } = useTranslations();
 
   return (
-    <Surface
-      backgroundColor="standard"
-      foregroundColor="standard"
-      elevation={componentElevationKey.navigationBar}
-      css={css`
-        width: 100vw;
-        height: ${commonStyles.sizes.navigationBarHeight};
-        position: fixed;
-        top: 0;
-      `}
-    >
-      <div
+    <header>
+      <Surface
+        backgroundColor="standard"
+        foregroundColor="standard"
+        elevation={componentElevationKey.navigationBar}
         css={css`
-          max-width: ${commonStyles.breakPoints.maxContent};
-          height: 100%;
-          margin: auto;
-          padding: 0 ${commonStyles.spacing.l};
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
+          width: 100vw;
+          height: ${commonStyles.sizes.navigationBarHeight};
+          position: fixed;
+          top: 0;
         `}
       >
         <div
           css={css`
+            max-width: ${commonStyles.breakPoints.maxContent};
+            height: 100%;
+            margin: auto;
+            padding: 0 ${commonStyles.spacing.l};
             display: flex;
+            justify-content: space-between;
             align-items: center;
           `}
         >
-          <TextLink
-            element="Link"
-            to={getDiscographyUrl()}
-            typographyVariant="h6"
-            showUnderline={false}
-          >
-            NOGILIB
-          </TextLink>
-          <Typography
-            variant="h6"
-            element="span"
-            css={css`
-              margin: 0 ${commonStyles.spacing.xs};
-            `}
-          >
-            |
-          </Typography>
           <div
             css={css`
               display: flex;
               align-items: center;
             `}
-            className="large"
           >
             <TextLink
               element="Link"
               to={getDiscographyUrl()}
               typographyVariant="h6"
               showUnderline={false}
+            >
+              NOGILIB
+            </TextLink>
+            <Typography
+              variant="h6"
+              element="span"
               css={css`
-                text-transform: capitalize;
+                margin: 0 ${commonStyles.spacing.xs};
               `}
             >
-              {getTranslation('discography')}
-            </TextLink>
-            <TextLink
-              element="Link"
-              to={getMembersUrl()}
-              typographyVariant="h6"
-              showUnderline={false}
-              css={css`
-                text-transform: capitalize;
-              `}
-            >
-              {getTranslation('members')}
-            </TextLink>
-            <TextLink
-              element="Link"
-              to={getSearchUrl()}
-              typographyVariant="h6"
-              showUnderline={false}
-              css={css`
-                text-transform: capitalize;
-              `}
-            >
-              {getTranslation('search')}
-            </TextLink>
+              |
+            </Typography>
+            <nav>
+              <div
+                css={css`
+                  display: flex;
+                  align-items: center;
+                `}
+                className="large"
+              >
+                <TextLink
+                  element="Link"
+                  to={getDiscographyUrl()}
+                  typographyVariant="h6"
+                  showUnderline={false}
+                  css={css`
+                    text-transform: capitalize;
+                  `}
+                >
+                  {getTranslation('discography')}
+                </TextLink>
+                <TextLink
+                  element="Link"
+                  to={getMembersUrl()}
+                  typographyVariant="h6"
+                  showUnderline={false}
+                  css={css`
+                    text-transform: capitalize;
+                  `}
+                >
+                  {getTranslation('members')}
+                </TextLink>
+                <TextLink
+                  element="Link"
+                  to={getSearchUrl()}
+                  typographyVariant="h6"
+                  showUnderline={false}
+                  css={css`
+                    text-transform: capitalize;
+                  `}
+                >
+                  {getTranslation('search')}
+                </TextLink>
+              </div>
+              <BaseButton
+                className="small"
+                aria-label={getTranslation('menu')}
+                onClick={props.onOpenSidebar}
+                css={css`
+                  margin-left: ${commonStyles.spacing.xxs};
+                `}
+              >
+                <MenuIcon fill={theme.colors.theme.onSurface.standard} />
+              </BaseButton>
+            </nav>
           </div>
-          <BaseButton
-            className="small"
-            aria-label={getTranslation('menu')}
-            onClick={props.onOpenSidebar}
-            css={css`
-              margin-left: ${commonStyles.spacing.xxs};
-            `}
-          >
-            <MenuIcon fill={theme.colors.theme.onSurface.standard} />
-          </BaseButton>
+          <Settings />
         </div>
-        <Settings />
-      </div>
-    </Surface>
+      </Surface>
+    </header>
   );
 };

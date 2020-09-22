@@ -45,13 +45,10 @@ export const ThemeProvider: React.FC = props => {
             text-decoration: inherit;
           }
 
-          ul {
+          ul,
+          ol {
             list-style-type: none;
             padding-inline-start: 0;
-          }
-
-          ol {
-            padding-inline-start: 24px;
           }
 
           button {

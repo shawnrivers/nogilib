@@ -108,7 +108,7 @@ export const Sidebar: React.FC<{
                   .zIndex};
               `}
             />
-            <motion.div
+            <motion.nav
               initial={{ x: '-102vw' }}
               exit={{ x: '-102vw' }}
               animate={open ? 'open' : 'closed'}
@@ -184,7 +184,7 @@ export const Sidebar: React.FC<{
                   {getTranslation('about')}
                 </SidebarItem>
               </div>
-            </motion.div>
+            </motion.nav>
           </React.Fragment>
         )}
       </AnimatePresence>

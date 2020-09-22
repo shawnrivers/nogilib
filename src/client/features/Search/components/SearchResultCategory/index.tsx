@@ -1,7 +1,10 @@
 /**@jsx jsx */
 import { jsx, css } from '@emotion/core';
 import * as React from 'react';
-import { Typography } from 'client/components/atoms/Typography';
+import {
+  Typography,
+  TypographyProps,
+} from 'client/components/atoms/Typography';
 import { useAppTheme } from 'client/styles/tokens';
 import { useTranslations } from 'client/hooks/useTranslations';
 import { HorizontalCard } from 'client/components/molecules/cards/HorizontalCard';
@@ -10,6 +13,7 @@ const DEFAULT_RESULT_COUNT = 4;
 
 interface SearchResultCategoryProps {
   title: 'members' | 'cds' | 'songs';
+  titleElement?: TypographyProps['element'];
   results: {
     to: string;
     imgSrc: string;
@@ -19,30 +23,22 @@ interface SearchResultCategoryProps {
 }
 
 export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props => {
-  const { title, results, ...restProps } = props;
+  const { title, results, titleElement = 'h3', ...restProps } = props;
   const theme = useAppTheme();
   const { Translation } = useTranslations();
   const [showMore, toggleShowMore] = React.useState(false);
 
   return results.length > 0 ? (
-    <div {...restProps}>
-      <div
+    <section {...restProps}>
+      <Typography
+        variant="h6"
+        element={titleElement}
         css={css`
-          display: flex;
-          align-items: baseline;
-          justify-content: space-between;
+          text-transform: capitalize;
         `}
       >
-        <Typography
-          variant="h6"
-          element="h3"
-          css={css`
-            text-transform: capitalize;
-          `}
-        >
-          <Translation text={title} />
-        </Typography>
-      </div>
+        <Translation text={title} />
+      </Typography>
       <ul
         css={css`
           display: grid;
@@ -70,6 +66,7 @@ export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props =
                   to={result.to}
                   image={{ src: result.imgSrc, alt: result.heading }}
                   title={result.heading}
+                  titleElement="h3"
                   tags={result.captions}
                   capitalizeTitle={title === 'members'}
                 />
@@ -101,6 +98,6 @@ export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props =
           </Typography>
         ) : null}
       </ul>
-    </div>
+    </section>
   ) : null;
 };

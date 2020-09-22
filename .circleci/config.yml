@@ -14,10 +14,10 @@ jobs:
           name: Install Dependencies
           command: yarn install
       - run:
-          name: format
+          name: Format
           command: yarn format
       - run:
-          name: type-check
+          name: Type Check
           command: yarn type-check
       - run:
           name: Lint
@@ -25,6 +25,9 @@ jobs:
       - run:
           name: Test
           command: yarn test
+      - run:
+          name: Build
+          command: yarn build
       - save_cache:
           name: Save Yarn Package Cache
           key: yarn-packages-{{ checksum "yarn.lock" }}

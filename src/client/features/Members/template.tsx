@@ -71,12 +71,12 @@ export const MembersPage: React.FC<MembersPageProps> = props => {
           `}
         />
         {memberGroupsByJoin.map(member => (
-          <div key={member.join}>
+          <section key={member.join}>
             <TextDivider
               text={getTranslation(`join: ${member.join}` as any)}
               element="h2"
             />
-            <div
+            <ul
               css={css`
                 display: flex;
                 flex-wrap: wrap;
@@ -85,22 +85,24 @@ export const MembersPage: React.FC<MembersPageProps> = props => {
               `}
             >
               {member.members.map(member => (
-                <MemberCard
-                  key={member.name}
-                  profileImage={member.profileImage}
-                  name={formatMemberName(member.nameNotations)}
-                  to={getMemberUrl(member.name)}
-                  textSize="body2"
-                  borderRadius="s"
-                  padding="xs"
-                  css={css`
-                    width: 130px;
-                    margin: ${commonStyles.spacing.xs};
-                  `}
-                />
+                <li key={member.name}>
+                  <MemberCard
+                    profileImage={member.profileImage}
+                    name={formatMemberName(member.nameNotations)}
+                    nameElement="h3"
+                    to={getMemberUrl(member.name)}
+                    textSize="body2"
+                    borderRadius="s"
+                    padding="xs"
+                    css={css`
+                      width: 130px;
+                      margin: ${commonStyles.spacing.xs};
+                    `}
+                  />
+                </li>
               ))}
-            </div>
-          </div>
+            </ul>
+          </section>
         ))}
       </React.Fragment>
     </PageContent>
