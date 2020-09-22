@@ -255,7 +255,6 @@ export const NavigationBar: React.FC<{
             `}
           >
             <TextLink
-              element="Link"
               to={getDiscographyUrl()}
               typographyVariant="h6"
               showUnderline={false}
@@ -280,7 +279,6 @@ export const NavigationBar: React.FC<{
                 className="large"
               >
                 <TextLink
-                  element="Link"
                   to={getDiscographyUrl()}
                   typographyVariant="h6"
                   showUnderline={false}
@@ -291,7 +289,6 @@ export const NavigationBar: React.FC<{
                   {getTranslation('discography')}
                 </TextLink>
                 <TextLink
-                  element="Link"
                   to={getMembersUrl()}
                   typographyVariant="h6"
                   showUnderline={false}
@@ -302,7 +299,6 @@ export const NavigationBar: React.FC<{
                   {getTranslation('members')}
                 </TextLink>
                 <TextLink
-                  element="Link"
                   to={getSearchUrl()}
                   typographyVariant="h6"
                   showUnderline={false}

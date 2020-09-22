@@ -18,12 +18,11 @@ import {
 import { useTranslations } from 'client/hooks/useTranslations';
 import { Divider } from 'client/components/atoms/Divider';
 
-type SidebarItemProps = Pick<TextLinkProps, 'to' | 'element' | 'onClick'>;
+type SidebarItemProps = Pick<TextLinkProps, 'to' | 'onClick'>;
 
 const SidebarItem: React.FC<SidebarItemProps> = props => (
   <TextLink
     to={props.to}
-    element={props.element}
     typographyVariant="h6"
     textColor={{ on: 'onSecondary', variant: 'standard' }}
     backgroundType="primary"
@@ -47,7 +46,7 @@ const NavigationItem: React.FC<Omit<SidebarItemProps, 'element'>> = props => {
         margin-top: 1em;
       `}
     >
-      <SidebarItem to={to} element="Link" onClick={onClick}>
+      <SidebarItem to={to} onClick={onClick}>
         {children}
       </SidebarItem>
     </li>
@@ -178,7 +177,6 @@ export const Sidebar: React.FC<{
               >
                 <SidebarItem
                   to="https://github.com/shawnrivers/nogilib"
-                  element="a"
                   onClick={onClose}
                 >
                   {getTranslation('about')}

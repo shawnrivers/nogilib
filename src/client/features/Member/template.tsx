@@ -116,7 +116,9 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
             </InfoItemLabel>
             <InfoItemValue>
               <Translation text={('join: ' + join) as any} />{' '}
-              {graduation.isGraduated ? <Translation text="graduate" /> : null}
+              {graduation.isGraduated
+                ? `(${getTranslation('graduate')})`
+                : null}
             </InfoItemValue>
             <InfoItemLabel>
               <Translation text="birthday" />
@@ -209,7 +211,6 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
               {sites.map(site => (
                 <li key={site.title}>
                   <TextLink
-                    element="a"
                     to={site.url}
                     typographyVariant="body2"
                     textColor={{

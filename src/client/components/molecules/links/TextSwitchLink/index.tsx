@@ -27,7 +27,6 @@ export const TextSwitchLink: React.FC<TextSwitchLinkProps> = props => {
     <TextLink
       to={to}
       onClick={onClick}
-      element="Link"
       showUnderline={false}
       textColor={{ on: textOn, variant: 'variant1' }}
       typographyVariant={variant}
@@ -38,7 +37,6 @@ export const TextSwitchLink: React.FC<TextSwitchLinkProps> = props => {
   ) : (
     <TextLink
       to={to}
-      element="Link"
       textColor={{ on: textOn, variant: 'standard' }}
       typographyVariant={variant}
       disabled
