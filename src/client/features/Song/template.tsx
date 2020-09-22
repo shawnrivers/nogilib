@@ -29,7 +29,7 @@ type StyledComponentWithThemeProps = {
   theme: Theme;
 };
 
-const RowContainer = styled.div<StyledComponentWithThemeProps>`
+const RowContainer = styled.ul<StyledComponentWithThemeProps>`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -186,175 +186,184 @@ export const SongPage: React.FC<SongPageProps> = ({
             </Hashtag>
           ))}
         </div>
-        <TextDivider text={<Translation text="info" />} element="h2" />
-        <div
-          css={css`
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-
-            & > * {
-              margin: ${theme.spacing.s};
-            }
-          `}
-        >
-          <GridArtworkImage
-            src={artwork}
-            alt={title}
-            shadow
-            fixedSize
+        <section>
+          <TextDivider text={<Translation text="info" />} element="h2" />
+          <div
             css={css`
-              width: 200px;
-              height: 200px;
-            `}
-          />
-          {creators.lyrics.length +
-            creators.compose.length +
-            creators.arrange.length +
-            creators.direct.length >
-            0 && (
-            <div
-              css={css`
-                display: grid;
-                grid-template-columns: max-content auto;
-                grid-template-rows: auto;
-                grid-gap: ${theme.spacing.m};
-                margin-top: 0.5em;
-                align-items: center;
-              `}
-            >
-              {creators.lyrics.length > 0 && (
-                <React.Fragment>
-                  <InfoItemLabel>
-                    <Translation text="lyrics" />
-                  </InfoItemLabel>
-                  <InfoItemValue>
-                    <LocalizedList list={creators.lyrics} />
-                  </InfoItemValue>
-                </React.Fragment>
-              )}
-              {creators.compose.length > 0 && (
-                <React.Fragment>
-                  <InfoItemLabel>
-                    <Translation text="compose" />
-                  </InfoItemLabel>
-                  <InfoItemValue>
-                    <LocalizedList list={creators.compose} />
-                  </InfoItemValue>
-                </React.Fragment>
-              )}
-              {creators.arrange.length > 0 && (
-                <React.Fragment>
-                  <InfoItemLabel>
-                    <Translation text="arrange" />
-                  </InfoItemLabel>
-                  <InfoItemValue>
-                    <LocalizedList list={creators.arrange} />
-                  </InfoItemValue>
-                </React.Fragment>
-              )}
-              {creators.direct.length > 0 && (
-                <React.Fragment>
-                  <InfoItemLabel>
-                    <Translation text="direct" />
-                  </InfoItemLabel>
-                  <InfoItemValue>
-                    <LocalizedList list={creators.direct} />
-                  </InfoItemValue>
-                </React.Fragment>
-              )}
-            </div>
-          )}
-        </div>
-        <TextDivider text={<Translation text="performers" />} element="h2" />
-        <div>
-          {formation.length > 0 ? (
-            <section>
-              <div
-                css={css`
-                  display: flex;
-                  justify-content: center;
-                `}
-              >
-                {performersTag.singleNumber !== '' &&
-                performersTag.name !== '' ? (
-                  <PerformersTag
-                    singleNumber={performersTag.singleNumber}
-                    tagName={performersTag.name}
-                  />
-                ) : null}
-              </div>
-              <div
-                css={css`
-                  margin-top: 1em;
-                `}
-              >
-                {formation.length > 1 ? (
-                  formation.map((row, index) => (
-                    <div key={index}>
-                      <SectionSubtitle
-                        css={css`
-                          margin-top: 0.5em;
-                        `}
-                      >
-                        <LocalizedNumber num={index + 1} type="row" />
-                      </SectionSubtitle>
-                      <RowContainer>
-                        {row.map(memberName => {
-                          if (memberName !== MemberNameKey.KojimaHaruna) {
-                            const member = members[memberName];
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: center;
 
-                            return (
+              & > * {
+                margin: ${theme.spacing.s};
+              }
+            `}
+          >
+            <GridArtworkImage
+              src={artwork}
+              alt={title}
+              shadow
+              fixedSize
+              css={css`
+                width: 200px;
+                height: 200px;
+              `}
+            />
+            {creators.lyrics.length +
+              creators.compose.length +
+              creators.arrange.length +
+              creators.direct.length >
+              0 && (
+              <div
+                css={css`
+                  display: grid;
+                  grid-template-columns: max-content auto;
+                  grid-template-rows: auto;
+                  grid-gap: ${theme.spacing.m};
+                  margin-top: 0.5em;
+                  align-items: center;
+                `}
+              >
+                {creators.lyrics.length > 0 && (
+                  <React.Fragment>
+                    <InfoItemLabel>
+                      <Translation text="lyrics" />
+                    </InfoItemLabel>
+                    <InfoItemValue>
+                      <LocalizedList list={creators.lyrics} />
+                    </InfoItemValue>
+                  </React.Fragment>
+                )}
+                {creators.compose.length > 0 && (
+                  <React.Fragment>
+                    <InfoItemLabel>
+                      <Translation text="compose" />
+                    </InfoItemLabel>
+                    <InfoItemValue>
+                      <LocalizedList list={creators.compose} />
+                    </InfoItemValue>
+                  </React.Fragment>
+                )}
+                {creators.arrange.length > 0 && (
+                  <React.Fragment>
+                    <InfoItemLabel>
+                      <Translation text="arrange" />
+                    </InfoItemLabel>
+                    <InfoItemValue>
+                      <LocalizedList list={creators.arrange} />
+                    </InfoItemValue>
+                  </React.Fragment>
+                )}
+                {creators.direct.length > 0 && (
+                  <React.Fragment>
+                    <InfoItemLabel>
+                      <Translation text="direct" />
+                    </InfoItemLabel>
+                    <InfoItemValue>
+                      <LocalizedList list={creators.direct} />
+                    </InfoItemValue>
+                  </React.Fragment>
+                )}
+              </div>
+            )}
+          </div>
+        </section>
+        <section>
+          <TextDivider text={<Translation text="performers" />} element="h2" />
+          <div>
+            {formation.length > 0 ? (
+              <section>
+                <div
+                  css={css`
+                    display: flex;
+                    justify-content: center;
+                  `}
+                >
+                  {performersTag.singleNumber !== '' &&
+                  performersTag.name !== '' ? (
+                    <PerformersTag
+                      singleNumber={performersTag.singleNumber}
+                      tagName={performersTag.name}
+                    />
+                  ) : null}
+                </div>
+                <div
+                  css={css`
+                    margin-top: 1em;
+                  `}
+                >
+                  {formation.length > 1 ? (
+                    formation.map((row, index) => (
+                      <div key={index}>
+                        <SectionSubtitle
+                          element="h3"
+                          css={css`
+                            margin-top: 0.5em;
+                          `}
+                        >
+                          <LocalizedNumber num={index + 1} type="row" />
+                        </SectionSubtitle>
+                        <RowContainer>
+                          {row.map(memberName => {
+                            if (memberName !== MemberNameKey.KojimaHaruna) {
+                              const member = members[memberName];
+
+                              return (
+                                <li key={member.name}>
+                                  <PerformerCard
+                                    nameNotations={member.nameNotations}
+                                    profileImage={member.profileImage}
+                                    to={getMemberUrl(member.name)}
+                                  />
+                                </li>
+                              );
+                            } else {
+                              return (
+                                <li key={'小嶋陽菜'}>
+                                  <PerformerCard
+                                    nameNotations={KOJIHARU_NAME_NOTATIONS}
+                                    profileImage={KOJIHARU_IMAGE_SRC}
+                                  />
+                                </li>
+                              );
+                            }
+                          })}
+                        </RowContainer>
+                      </div>
+                    ))
+                  ) : (
+                    <RowContainer>
+                      {formation[0].map(memberName => {
+                        if (memberName !== MemberNameKey.KojimaHaruna) {
+                          const member = members[memberName];
+                          return (
+                            <li key={member.name}>
                               <PerformerCard
-                                key={member.name}
                                 nameNotations={member.nameNotations}
                                 profileImage={member.profileImage}
                                 to={getMemberUrl(member.name)}
                               />
-                            );
-                          } else {
-                            return (
+                            </li>
+                          );
+                        } else {
+                          return (
+                            <li key={'小嶋陽菜'}>
                               <PerformerCard
-                                key={'小嶋陽菜'}
                                 nameNotations={KOJIHARU_NAME_NOTATIONS}
                                 profileImage={KOJIHARU_IMAGE_SRC}
                               />
-                            );
-                          }
-                        })}
-                      </RowContainer>
-                    </div>
-                  ))
-                ) : (
-                  <RowContainer>
-                    {formation[0].map(memberName => {
-                      if (memberName !== MemberNameKey.KojimaHaruna) {
-                        const member = members[memberName];
-                        return (
-                          <PerformerCard
-                            key={member.name}
-                            nameNotations={member.nameNotations}
-                            profileImage={member.profileImage}
-                            to={getMemberUrl(member.name)}
-                          />
-                        );
-                      } else {
-                        return (
-                          <PerformerCard
-                            key={'小嶋陽菜'}
-                            nameNotations={KOJIHARU_NAME_NOTATIONS}
-                            profileImage={KOJIHARU_IMAGE_SRC}
-                          />
-                        );
-                      }
-                    })}
-                  </RowContainer>
-                )}
-              </div>
-            </section>
-          ) : null}
-        </div>
+                            </li>
+                          );
+                        }
+                      })}
+                    </RowContainer>
+                  )}
+                </div>
+              </section>
+            ) : null}
+          </div>
+        </section>
       </React.Fragment>
     </PageContent>
   );
