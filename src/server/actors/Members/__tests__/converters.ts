@@ -5,6 +5,7 @@ import {
   convertMemberProfileImage,
   convertMemberSingleImages,
   convertMemberUnits,
+  convertProfileImages,
 } from 'server/actors/Members/converters';
 import { Songs } from 'server/actors/Songs';
 import { songsRawArray } from 'server/actors/Songs/raw';
@@ -14,6 +15,8 @@ import { discographyRawArray } from 'server/actors/Discography/raw/editor';
 
 const discography = new Discography(discographyRawArray);
 const singlesRawArray = discography.getSinglesRawArray();
+const albumsRawArray = discography.getAlbumsRawArray();
+const digitalRawArray = discography.getOtherCdsRawArray();
 const songsRawObject = new Songs(songsRawArray).rawObject;
 
 const numberOfSingles = singlesRawArray.length;
@@ -99,6 +102,73 @@ describe('convertMemberProfileImage', () => {
         isMemberGraduated: true,
       })
     ).toEqual(nanaminSingleImages[nanaminSingleImages.length - 1]);
+  });
+});
+
+describe('convertProfileImages', () => {
+  const nishinonanaseProfileImages = convertProfileImages({
+    memberName: MemberNameKey.NishinoNanase,
+    singlesRawArray,
+    albumsRawArray,
+    digitalRawArray,
+  });
+
+  test('should sort gallery by date', () => {
+    expect(nishinonanaseProfileImages.gallery).toEqual([
+      'members/singles/1/nishinonanase.jpg',
+      'members/singles/2/nishinonanase.jpg',
+      'members/singles/3/nishinonanase.jpg',
+      'members/singles/4/nishinonanase.jpg',
+      'members/singles/5/nishinonanase.jpg',
+      'members/singles/6/nishinonanase.jpg',
+      'members/singles/7/nishinonanase.jpg',
+      'members/singles/8/nishinonanase.jpg',
+      'members/singles/9/nishinonanase.jpg',
+      'members/singles/10/nishinonanase.jpg',
+      'members/singles/11/nishinonanase.jpg',
+      'members/singles/12/nishinonanase.jpg',
+      'members/singles/13/nishinonanase.jpg',
+      'members/singles/14/nishinonanase.jpg',
+      'members/singles/15/nishinonanase.jpg',
+      'members/singles/17/nishinonanase.jpg',
+      'members/singles/20/nishinonanase.jpg',
+      'members/singles/22/nishinonanase.jpg',
+      'members/others/nishinonanase_2019-09-21.jpg',
+      'members/others/nishinonanase_2020-06-11.jpg',
+    ]);
+  });
+
+  test('should have the same amount of single/album/digital images as the amount of singles/albums/digital', () => {
+    expect(Object.entries(nishinonanaseProfileImages.singles).length).toEqual(
+      singlesRawArray.length
+    );
+  });
+
+  test('should use the corresponding file for single', () => {
+    expect(nishinonanaseProfileImages.singles[15]).toEqual(
+      'members/singles/15/nishinonanase.jpg'
+    );
+  });
+
+  test('should use the closest image if no corresponding file exists', () => {
+    expect(nishinonanaseProfileImages.singles[16]).toEqual(
+      'members/singles/15/nishinonanase.jpg'
+    );
+    expect(nishinonanaseProfileImages.singles[21]).toEqual(
+      'members/singles/20/nishinonanase.jpg'
+    );
+    expect(nishinonanaseProfileImages.singles[23]).toEqual(
+      'members/singles/22/nishinonanase.jpg'
+    );
+    expect(nishinonanaseProfileImages.singles[25]).toEqual(
+      'members/others/nishinonanase_2019-09-21.jpg'
+    );
+    expect(nishinonanaseProfileImages.albums['U']).toEqual(
+      'members/singles/17/nishinonanase.jpg'
+    );
+    expect(nishinonanaseProfileImages.digital[2]).toEqual(
+      'members/others/nishinonanase_2020-06-11.jpg'
+    );
   });
 });
 

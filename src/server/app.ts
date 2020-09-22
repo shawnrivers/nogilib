@@ -13,17 +13,23 @@ const members = new Members(membersRawArray);
 const units = new Units(unitsRawArray);
 const discography = new Discography(discographyRawArray);
 
+const singlesRawArray = discography.getSinglesRawArray();
+const albumsRawArray = discography.getAlbumsRawArray();
+const otherCdsRawArray = discography.getOtherCdsRawArray();
+
 const songsResultArray = songs.convertSongs({
-  singlesRawArray: discography.getSinglesRawArray(),
+  singlesRawArray,
   singlesRawObject: discography.getSinglesRawObject(),
-  albumsRawArray: discography.getAlbumsRawArray(),
+  albumsRawArray,
   albumsRawObject: discography.getAlbumsRawObject(),
-  otherCdsRawArray: discography.getOtherCdsRawArray(),
+  otherCdsRawArray,
   otherCdsRawObject: discography.getOtherCdsRawObject(),
 });
 const membersResultArray = members.convertMembers({
   unitsRawArray: units.rawArray,
-  singlesRawArray: discography.getSinglesRawArray(),
+  singlesRawArray,
+  albumsRawArray,
+  digitalRawArray: otherCdsRawArray,
   songsRawObject: songs.rawObject,
 });
 const unitsResultArray = units.convertUnits({

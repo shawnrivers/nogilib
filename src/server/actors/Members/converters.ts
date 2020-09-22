@@ -1,10 +1,19 @@
 import * as fs from 'fs';
-import { MemberResult, MemberRaw } from 'server/actors/Members/models';
+import * as path from 'path';
+import {
+  MemberResult,
+  MemberRaw,
+  DiscographyProfileImages,
+} from 'server/actors/Members/models';
 import { UnitsRawArray } from 'server/actors/Units/models';
 import { SongsRawObject } from 'server/actors/Songs/models';
 import { SongType } from 'server/actors/Songs/constants/songType';
 import { PositionType } from 'server/actors/Members/constants/position';
-import { DiscographyRawArray } from 'server/actors/Discography/models';
+import {
+  DiscographyRawArray,
+  DiscographyRaw,
+} from 'server/actors/Discography/models';
+import { sortByDate } from 'utils/arrays';
 
 type ConvertMemberProfileImage = (params: {
   memberName: MemberRaw['name'];
@@ -71,6 +80,223 @@ export const convertMemberSingleImages: ConvertMemberSingleImages = ({
 
   return memberSingleImagesResult;
 };
+
+type GalleryWithDate = {
+  url: string;
+  date: string;
+}[];
+
+function getProfileImageTypeFolderName(
+  discographyType: DiscographyRaw['type']
+): string {
+  let profileImageTypeFolderName: string;
+
+  switch (discographyType) {
+    case 'single':
+      profileImageTypeFolderName = 'singles';
+      break;
+    case 'album':
+      profileImageTypeFolderName = 'albums';
+      break;
+    case 'digital':
+      profileImageTypeFolderName = 'digital';
+      break;
+  }
+
+  return profileImageTypeFolderName;
+}
+
+function getDiscographyGalleryWithDate(params: {
+  memberName: MemberRaw['name'];
+  discographyRawArray: DiscographyRawArray;
+  discographyType: Parameters<typeof getProfileImageTypeFolderName>[0];
+}): GalleryWithDate {
+  const { memberName, discographyRawArray, discographyType } = params;
+
+  const profileImageTypeFolderName = getProfileImageTypeFolderName(
+    discographyType
+  );
+
+  const discographyGallery = [];
+
+  for (let i = 0; i < discographyRawArray.length; i++) {
+    const albumNumber = discographyRawArray[i].number;
+
+    const profileImageSrc = `members/${profileImageTypeFolderName}/${albumNumber}/${memberName}.jpg`;
+
+    if (fs.existsSync('./src/assets/images/' + profileImageSrc)) {
+      discographyGallery.push({
+        url: profileImageSrc,
+        date: discographyRawArray[i].release,
+      });
+    }
+  }
+
+  return discographyGallery;
+}
+
+const otherProfileImageFiles = fs.readdirSync(
+  './src/assets/images/members/others'
+);
+
+const otherProfileImagesFileNameWithDate = otherProfileImageFiles.map(file => {
+  const fullFileName = file;
+  const extName = path.extname(file);
+  const filename = path.basename(file, extName);
+  const [memberName, date] = filename.split('_');
+
+  return {
+    fullFileName,
+    memberName,
+    date,
+  };
+});
+
+function getOtherGalleryWithDate(
+  memberName: MemberRaw['name']
+): GalleryWithDate {
+  return otherProfileImagesFileNameWithDate
+    .filter(fileNameWithDate => fileNameWithDate.memberName === memberName)
+    .map(fileNameWithDate => ({
+      url: `members/others/${fileNameWithDate.fullFileName}`,
+      date: fileNameWithDate.date,
+    }));
+}
+
+function getDiscographyProfileImages(params: {
+  memberName: MemberRaw['name'];
+  discographyRawArray: DiscographyRawArray;
+  discographyType: Parameters<typeof getProfileImageTypeFolderName>[0];
+  galleryWithDate: GalleryWithDate;
+}): DiscographyProfileImages {
+  const {
+    memberName,
+    discographyRawArray,
+    discographyType,
+    galleryWithDate,
+  } = params;
+
+  const profileImageTypeFolderName = getProfileImageTypeFolderName(
+    discographyType
+  );
+
+  const discographyGallery: DiscographyProfileImages = {};
+  const sortedGallery = sortByDate(galleryWithDate, 'date', 'desc');
+
+  for (let i = 0; i < discographyRawArray.length; i++) {
+    const album = discographyRawArray[i];
+    const albumNumber = album.number;
+
+    const profileImageSrc = `members/${profileImageTypeFolderName}/${albumNumber}/${memberName}.jpg`;
+
+    if (fs.existsSync('./src/assets/images/' + profileImageSrc)) {
+      discographyGallery[albumNumber] = profileImageSrc;
+    } else {
+      const albumReleaseDate = new Date(album.release).getTime();
+
+      for (let j = 0; j < sortedGallery.length; j++) {
+        const currentProfileImage = sortedGallery[j];
+        const currentProfileImageDate = new Date(
+          currentProfileImage.date
+        ).getTime();
+
+        if (j === 0) {
+          if (albumReleaseDate > currentProfileImageDate) {
+            discographyGallery[albumNumber] = currentProfileImage.url;
+            break;
+          }
+        } else if (j === sortedGallery.length - 1) {
+          if (albumReleaseDate < currentProfileImageDate) {
+            discographyGallery[albumNumber] = currentProfileImage.url;
+            break;
+          }
+        } else {
+          const previousProfileImage = sortedGallery[j - 1];
+          const previousProfileImageDate = new Date(
+            previousProfileImage.date
+          ).getTime();
+
+          if (
+            albumReleaseDate < previousProfileImageDate &&
+            albumReleaseDate >= currentProfileImageDate
+          ) {
+            discographyGallery[albumNumber] = currentProfileImage.url;
+            break;
+          }
+        }
+      }
+    }
+  }
+
+  return discographyGallery;
+}
+
+export function convertProfileImages(params: {
+  memberName: MemberRaw['name'];
+  singlesRawArray: DiscographyRawArray;
+  albumsRawArray: DiscographyRawArray;
+  digitalRawArray: DiscographyRawArray;
+}): MemberResult['profileImages'] {
+  const {
+    memberName,
+    singlesRawArray,
+    albumsRawArray,
+    digitalRawArray,
+  } = params;
+
+  const singlesGalleryWithDate = getDiscographyGalleryWithDate({
+    memberName,
+    discographyRawArray: singlesRawArray,
+    discographyType: 'single',
+  });
+  const albumsGalleryWithDate = getDiscographyGalleryWithDate({
+    memberName,
+    discographyRawArray: albumsRawArray,
+    discographyType: 'album',
+  });
+  const digitalGalleryWithDate = getDiscographyGalleryWithDate({
+    memberName,
+    discographyRawArray: digitalRawArray,
+    discographyType: 'digital',
+  });
+  const otherGalleryWithDate = getOtherGalleryWithDate(memberName);
+  const galleryWithDate = sortByDate(
+    [
+      ...singlesGalleryWithDate,
+      ...albumsGalleryWithDate,
+      ...digitalGalleryWithDate,
+      ...otherGalleryWithDate,
+    ],
+    'date',
+    'asc'
+  );
+
+  const singles = getDiscographyProfileImages({
+    memberName,
+    discographyRawArray: singlesRawArray,
+    discographyType: 'single',
+    galleryWithDate,
+  });
+  const albums = getDiscographyProfileImages({
+    memberName,
+    discographyRawArray: albumsRawArray,
+    discographyType: 'album',
+    galleryWithDate,
+  });
+  const digital = getDiscographyProfileImages({
+    memberName,
+    discographyRawArray: digitalRawArray,
+    discographyType: 'digital',
+    galleryWithDate,
+  });
+
+  return {
+    gallery: galleryWithDate.map(image => image.url),
+    singles,
+    albums,
+    digital,
+  };
+}
 
 type ConvertMemberUnits = (params: {
   memberName: MemberRaw['name'];
