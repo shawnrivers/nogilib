@@ -25,7 +25,6 @@ export const query = graphql`
         number
       }
       performersTag {
-        singleNumber
         name
         album {
           type

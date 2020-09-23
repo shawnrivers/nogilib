@@ -180,7 +180,6 @@ export const convertSongPerformersTag: ConvertSongPerformersTag = params => {
     otherCdsRawObject,
   } = params;
 
-  let singleNumber = '';
   let album: SongResult['performersTag']['album'] = {
     type: null,
     number: null,
@@ -189,7 +188,6 @@ export const convertSongPerformersTag: ConvertSongPerformersTag = params => {
   if (songType === SongType.Selected12) {
     return {
       name: 'selected',
-      singleNumber: '12',
       album: {
         type: 'single',
         number: '12',
@@ -198,7 +196,6 @@ export const convertSongPerformersTag: ConvertSongPerformersTag = params => {
   }
 
   if (songSingleResult.number !== '') {
-    singleNumber = songSingleResult.number;
     album = {
       type: 'single',
       number: songSingleResult.number,
@@ -214,7 +211,6 @@ export const convertSongPerformersTag: ConvertSongPerformersTag = params => {
   } else if (songAlbumsResult.length > 0) {
     const oldestSongAlbumTitle = songAlbumsResult.slice().reverse()[0].title;
 
-    singleNumber = albumsRawObject[oldestSongAlbumTitle].previousSingleNumber;
     album = {
       type: 'album',
       number: albumsRawObject[oldestSongAlbumTitle].number,
@@ -222,34 +218,33 @@ export const convertSongPerformersTag: ConvertSongPerformersTag = params => {
   }
 
   if (songType === SongType.Unit) {
-    return { name: songPerformers.unit, singleNumber, album };
+    return { name: songPerformers.unit, album };
   }
   if (songType === SongType.FirstGeneration) {
-    return { name: 'first generation', singleNumber, album };
+    return { name: 'first generation', album };
   }
   if (songType === SongType.SecondGeneration) {
-    return { name: 'second generation', singleNumber, album };
+    return { name: 'second generation', album };
   }
   if (songType === SongType.ThirdGeneration) {
-    return { name: 'third generation', singleNumber, album };
+    return { name: 'third generation', album };
   }
   if (songType === SongType.FourthGeneration) {
-    return { name: 'fourth generation', singleNumber, album };
+    return { name: 'fourth generation', album };
   }
   if (
     songType === SongType.Title ||
     songType === SongType.Selected ||
     songType === SongType.Lead
   ) {
-    return { name: 'selected', singleNumber, album };
+    return { name: 'selected', album };
   }
   if (songType === SongType.Under) {
-    return { name: 'under', singleNumber, album };
+    return { name: 'under', album };
   }
 
   return {
     name: '',
-    singleNumber,
     album,
   };
 };

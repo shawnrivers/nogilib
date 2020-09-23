@@ -188,7 +188,6 @@ describe('convertSongPerformersTag', () => {
       })
     ).toEqual({
       name: '',
-      singleNumber: '16',
       album: {
         type: 'single',
         number: '16',
@@ -220,7 +219,6 @@ describe('convertSongPerformersTag', () => {
       })
     ).toEqual({
       name: '',
-      singleNumber: '22',
       album: {
         type: 'album',
         number: '4',
@@ -253,7 +251,6 @@ describe('convertSongPerformersTag', () => {
       })
     ).toEqual({
       name: 'selected',
-      singleNumber: '25',
       album: {
         type: 'single',
         number: '25',
@@ -281,7 +278,6 @@ describe('convertSongPerformersTag', () => {
       })
     ).toEqual({
       name: 'selected',
-      singleNumber: '18',
       album: {
         type: 'single',
         number: '18',
@@ -313,7 +309,6 @@ describe('convertSongPerformersTag', () => {
       })
     ).toEqual({
       name: 'selected',
-      singleNumber: '22',
       album: {
         type: 'album',
         number: '4',
@@ -345,7 +340,6 @@ describe('convertSongPerformersTag', () => {
       })
     ).toEqual({
       name: 'selected',
-      singleNumber: '12',
       album: {
         type: 'single',
         number: '12',
@@ -377,7 +371,6 @@ describe('convertSongPerformersTag', () => {
       })
     ).toEqual({
       name: '女子校カルテット',
-      singleNumber: '22',
       album: {
         type: 'single',
         number: '22',
@@ -409,7 +402,6 @@ describe('convertSongPerformersTag', () => {
       })
     ).toEqual({
       name: 'under',
-      singleNumber: '15',
       album: {
         type: 'single',
         number: '15',
@@ -444,7 +436,6 @@ describe('convertSongPerformersTag', () => {
       })
     ).toEqual({
       name: 'first generation',
-      singleNumber: '20',
       album: {
         type: 'single',
         number: '20',
@@ -472,7 +463,6 @@ describe('convertSongPerformersTag', () => {
       })
     ).toEqual({
       name: 'second generation',
-      singleNumber: '25',
       album: {
         type: 'single',
         number: '25',
@@ -500,7 +490,6 @@ describe('convertSongPerformersTag', () => {
       })
     ).toEqual({
       name: 'third generation',
-      singleNumber: '17',
       album: {
         type: 'single',
         number: '17',
@@ -528,7 +517,6 @@ describe('convertSongPerformersTag', () => {
       })
     ).toEqual({
       name: 'fourth generation',
-      singleNumber: '23',
       album: {
         type: 'single',
         number: '23',
@@ -554,7 +542,6 @@ describe('convertSongPerformersTag', () => {
       })
     ).toEqual({
       name: '',
-      singleNumber: '',
       album: {
         type: 'digital',
         number: '1',

@@ -41,7 +41,6 @@ export type SongResult = SongRaw & {
   artwork: string;
   performersTag: {
     name: string;
-    singleNumber: string;
     album:
       | {
           type: DiscographyType;

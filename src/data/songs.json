@@ -40,7 +40,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "1",
       "album": {
         "type": "single",
         "number": "1"
@@ -111,7 +110,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "1",
       "album": {
         "type": "single",
         "number": "1"
@@ -184,7 +182,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "1",
       "album": {
         "type": "single",
         "number": "1"
@@ -268,7 +265,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "1",
       "album": {
         "type": "single",
         "number": "1"
@@ -344,7 +340,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "1",
       "album": {
         "type": "single",
         "number": "1"
@@ -412,7 +407,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "1",
       "album": {
         "type": "single",
         "number": "1"
@@ -487,7 +481,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "2",
       "album": {
         "type": "single",
         "number": "2"
@@ -560,7 +553,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "2",
       "album": {
         "type": "single",
         "number": "2"
@@ -628,7 +620,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "2",
       "album": {
         "type": "single",
         "number": "2"
@@ -696,7 +687,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "2",
       "album": {
         "type": "single",
         "number": "2"
@@ -748,7 +738,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "2",
       "album": {
         "type": "single",
         "number": "2"
@@ -802,7 +791,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "2",
       "album": {
         "type": "single",
         "number": "2"
@@ -888,7 +876,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "3",
       "album": {
         "type": "single",
         "number": "3"
@@ -965,7 +952,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "3",
       "album": {
         "type": "single",
         "number": "3"
@@ -1040,7 +1026,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "3",
       "album": {
         "type": "single",
         "number": "3"
@@ -1098,7 +1083,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "3",
       "album": {
         "type": "single",
         "number": "3"
@@ -1170,7 +1154,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "3",
       "album": {
         "type": "single",
         "number": "3"
@@ -1239,7 +1222,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "3",
       "album": {
         "type": "single",
         "number": "3"
@@ -1301,7 +1283,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "4",
       "album": {
         "type": "single",
         "number": "4"
@@ -1374,7 +1355,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "4",
       "album": {
         "type": "single",
         "number": "4"
@@ -1443,7 +1423,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "4",
       "album": {
         "type": "single",
         "number": "4"
@@ -1510,7 +1489,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "4",
       "album": {
         "type": "single",
         "number": "4"
@@ -1566,7 +1544,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "4",
       "album": {
         "type": "single",
         "number": "4"
@@ -1617,7 +1594,6 @@
     },
     "performersTag": {
       "name": "WHITE HIGH",
-      "singleNumber": "4",
       "album": {
         "type": "single",
         "number": "4"
@@ -1675,7 +1651,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "5",
       "album": {
         "type": "single",
         "number": "5"
@@ -1752,7 +1727,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "5",
       "album": {
         "type": "single",
         "number": "5"
@@ -1827,7 +1801,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "5",
       "album": {
         "type": "single",
         "number": "5"
@@ -1894,7 +1867,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "5",
       "album": {
         "type": "single",
         "number": "5"
@@ -1958,7 +1930,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "5",
       "album": {
         "type": "single",
         "number": "5"
@@ -2014,7 +1985,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "5",
       "album": {
         "type": "single",
         "number": "5"
@@ -2077,7 +2047,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "6",
       "album": {
         "type": "single",
         "number": "6"
@@ -2150,7 +2119,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "6",
       "album": {
         "type": "single",
         "number": "6"
@@ -2224,7 +2192,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "6",
       "album": {
         "type": "single",
         "number": "6"
@@ -2288,7 +2255,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "6",
       "album": {
         "type": "single",
         "number": "6"
@@ -2348,7 +2314,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "6",
       "album": {
         "type": "single",
         "number": "6"
@@ -2401,7 +2366,6 @@
     },
     "performersTag": {
       "name": "first generation",
-      "singleNumber": "6",
       "album": {
         "type": "single",
         "number": "6"
@@ -2488,7 +2452,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "7",
       "album": {
         "type": "single",
         "number": "7"
@@ -2562,7 +2525,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "7",
       "album": {
         "type": "single",
         "number": "7"
@@ -2627,7 +2589,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "7",
       "album": {
         "type": "single",
         "number": "7"
@@ -2700,7 +2661,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "7",
       "album": {
         "type": "single",
         "number": "7"
@@ -2760,7 +2720,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "7",
       "album": {
         "type": "single",
         "number": "7"
@@ -2830,7 +2789,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "7",
       "album": {
         "type": "single",
         "number": "7"
@@ -2892,7 +2850,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "8",
       "album": {
         "type": "single",
         "number": "8"
@@ -2965,7 +2922,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "8",
       "album": {
         "type": "single",
         "number": "8"
@@ -3040,7 +2996,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "8",
       "album": {
         "type": "single",
         "number": "8"
@@ -3104,7 +3059,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "8",
       "album": {
         "type": "single",
         "number": "8"
@@ -3172,7 +3126,6 @@
     },
     "performersTag": {
       "name": "孤独兄弟",
-      "singleNumber": "8",
       "album": {
         "type": "single",
         "number": "8"
@@ -3229,7 +3182,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "8",
       "album": {
         "type": "single",
         "number": "8"
@@ -3292,7 +3244,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "9",
       "album": {
         "type": "single",
         "number": "9"
@@ -3366,7 +3317,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "9",
       "album": {
         "type": "single",
         "number": "9"
@@ -3432,7 +3382,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "9",
       "album": {
         "type": "single",
         "number": "9"
@@ -3501,7 +3450,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "9",
       "album": {
         "type": "single",
         "number": "9"
@@ -3567,7 +3515,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "9",
       "album": {
         "type": "single",
         "number": "9"
@@ -3623,7 +3570,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "9",
       "album": {
         "type": "single",
         "number": "9"
@@ -3685,7 +3631,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "10",
       "album": {
         "type": "single",
         "number": "10"
@@ -3762,7 +3707,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "10",
       "album": {
         "type": "single",
         "number": "10"
@@ -3830,7 +3774,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "10",
       "album": {
         "type": "single",
         "number": "10"
@@ -3888,7 +3831,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "10",
       "album": {
         "type": "single",
         "number": "10"
@@ -3956,7 +3898,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "10",
       "album": {
         "type": "single",
         "number": "10"
@@ -4013,7 +3954,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "10",
       "album": {
         "type": "single",
         "number": "10"
@@ -4077,7 +4017,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "11",
       "album": {
         "type": "single",
         "number": "11"
@@ -4158,7 +4097,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "11",
       "album": {
         "type": "single",
         "number": "11"
@@ -4232,7 +4170,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "11",
       "album": {
         "type": "single",
         "number": "11"
@@ -4293,7 +4230,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "11",
       "album": {
         "type": "single",
         "number": "11"
@@ -4348,7 +4284,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "11",
       "album": {
         "type": "single",
         "number": "11"
@@ -4397,7 +4332,6 @@
     },
     "performersTag": {
       "name": "second generation",
-      "singleNumber": "11",
       "album": {
         "type": "single",
         "number": "11"
@@ -4458,7 +4392,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "12",
       "album": {
         "type": "single",
         "number": "12"
@@ -4539,7 +4472,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "12",
       "album": {
         "type": "single",
         "number": "12"
@@ -4605,7 +4537,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "12",
       "album": {
         "type": "single",
         "number": "12"
@@ -4654,7 +4585,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "12",
       "album": {
         "type": "single",
         "number": "12"
@@ -4713,7 +4643,6 @@
     },
     "performersTag": {
       "name": "からあげ姉妹",
-      "singleNumber": "12",
       "album": {
         "type": "single",
         "number": "12"
@@ -4771,7 +4700,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "12",
       "album": {
         "type": "single",
         "number": "12"
@@ -4840,7 +4768,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "12",
       "album": {
         "type": "single",
         "number": "12"
@@ -4900,7 +4827,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "13",
       "album": {
         "type": "single",
         "number": "13"
@@ -4978,7 +4904,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "13",
       "album": {
         "type": "single",
         "number": "13"
@@ -5059,7 +4984,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "13",
       "album": {
         "type": "single",
         "number": "13"
@@ -5130,7 +5054,6 @@
     },
     "performersTag": {
       "name": "サンクエトワール",
-      "singleNumber": "13",
       "album": {
         "type": "single",
         "number": "13"
@@ -5190,7 +5113,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "12",
       "album": {
         "type": "single",
         "number": "12"
@@ -5263,7 +5185,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "13",
       "album": {
         "type": "single",
         "number": "13"
@@ -5322,7 +5243,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "14",
       "album": {
         "type": "single",
         "number": "14"
@@ -5400,7 +5320,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "14",
       "album": {
         "type": "single",
         "number": "14"
@@ -5474,7 +5393,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "14",
       "album": {
         "type": "single",
         "number": "14"
@@ -5530,7 +5448,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "14",
       "album": {
         "type": "single",
         "number": "14"
@@ -5585,7 +5502,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "14",
       "album": {
         "type": "single",
         "number": "14"
@@ -5636,7 +5552,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "14",
       "album": {
         "type": "single",
         "number": "14"
@@ -5691,7 +5606,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "14",
       "album": {
         "type": "single",
         "number": "14"
@@ -5752,7 +5666,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "15",
       "album": {
         "type": "single",
         "number": "15"
@@ -5829,7 +5742,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "15",
       "album": {
         "type": "single",
         "number": "15"
@@ -5903,7 +5815,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "15",
       "album": {
         "type": "single",
         "number": "15"
@@ -5974,7 +5885,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "15",
       "album": {
         "type": "single",
         "number": "15"
@@ -6028,7 +5938,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "15",
       "album": {
         "type": "single",
         "number": "15"
@@ -6082,7 +5991,6 @@
     },
     "performersTag": {
       "name": "さゆりんご軍団",
-      "singleNumber": "15",
       "album": {
         "type": "single",
         "number": "15"
@@ -6138,7 +6046,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "15",
       "album": {
         "type": "single",
         "number": "15"
@@ -6195,7 +6102,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "16",
       "album": {
         "type": "single",
         "number": "16"
@@ -6275,7 +6181,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "16",
       "album": {
         "type": "single",
         "number": "16"
@@ -6346,7 +6251,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "16",
       "album": {
         "type": "single",
         "number": "16"
@@ -6418,7 +6322,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "16",
       "album": {
         "type": "single",
         "number": "16"
@@ -6475,7 +6378,6 @@
     },
     "performersTag": {
       "name": "真夏さんリスペクト軍団",
-      "singleNumber": "16",
       "album": {
         "type": "single",
         "number": "16"
@@ -6532,7 +6434,6 @@
     },
     "performersTag": {
       "name": "サンクエトワール",
-      "singleNumber": "16",
       "album": {
         "type": "single",
         "number": "16"
@@ -6591,7 +6492,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "16",
       "album": {
         "type": "single",
         "number": "16"
@@ -6648,7 +6548,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "17",
       "album": {
         "type": "single",
         "number": "17"
@@ -6732,7 +6631,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "17",
       "album": {
         "type": "single",
         "number": "17"
@@ -6797,7 +6695,6 @@
     },
     "performersTag": {
       "name": "女子校カルテット",
-      "singleNumber": "17",
       "album": {
         "type": "single",
         "number": "17"
@@ -6854,7 +6751,6 @@
     },
     "performersTag": {
       "name": "姉御坂",
-      "singleNumber": "17",
       "album": {
         "type": "single",
         "number": "17"
@@ -6912,7 +6808,6 @@
     },
     "performersTag": {
       "name": "ナスカ",
-      "singleNumber": "17",
       "album": {
         "type": "single",
         "number": "17"
@@ -6970,7 +6865,6 @@
     },
     "performersTag": {
       "name": "third generation",
-      "singleNumber": "17",
       "album": {
         "type": "single",
         "number": "17"
@@ -7035,7 +6929,6 @@
     },
     "performersTag": {
       "name": "かすみ草",
-      "singleNumber": "17",
       "album": {
         "type": "single",
         "number": "17"
@@ -7095,7 +6988,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "18",
       "album": {
         "type": "single",
         "number": "18"
@@ -7175,7 +7067,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "18",
       "album": {
         "type": "single",
         "number": "18"
@@ -7246,7 +7137,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "18",
       "album": {
         "type": "single",
         "number": "18"
@@ -7313,7 +7203,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "18",
       "album": {
         "type": "single",
         "number": "18"
@@ -7386,7 +7275,6 @@
     },
     "performersTag": {
       "name": "second generation",
-      "singleNumber": "18",
       "album": {
         "type": "single",
         "number": "18"
@@ -7455,7 +7343,6 @@
     },
     "performersTag": {
       "name": "third generation",
-      "singleNumber": "18",
       "album": {
         "type": "single",
         "number": "18"
@@ -7518,7 +7405,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "18",
       "album": {
         "type": "single",
         "number": "18"
@@ -7594,7 +7480,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "19",
       "album": {
         "type": "single",
         "number": "19"
@@ -7675,7 +7560,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "19",
       "album": {
         "type": "single",
         "number": "19"
@@ -7744,7 +7628,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "19",
       "album": {
         "type": "single",
         "number": "19"
@@ -7812,7 +7695,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "19",
       "album": {
         "type": "single",
         "number": "19"
@@ -7866,7 +7748,6 @@
     },
     "performersTag": {
       "name": "若様軍団",
-      "singleNumber": "19",
       "album": {
         "type": "single",
         "number": "19"
@@ -7925,7 +7806,6 @@
     },
     "performersTag": {
       "name": "third generation",
-      "singleNumber": "19",
       "album": {
         "type": "single",
         "number": "19"
@@ -7984,7 +7864,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "19",
       "album": {
         "type": "single",
         "number": "19"
@@ -8041,7 +7920,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "20",
       "album": {
         "type": "single",
         "number": "20"
@@ -8119,7 +7997,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "20",
       "album": {
         "type": "single",
         "number": "20"
@@ -8197,7 +8074,6 @@
     },
     "performersTag": {
       "name": "first generation",
-      "singleNumber": "20",
       "album": {
         "type": "single",
         "number": "20"
@@ -8263,7 +8139,6 @@
     },
     "performersTag": {
       "name": "藤桜梨",
-      "singleNumber": "20",
       "album": {
         "type": "single",
         "number": "20"
@@ -8321,7 +8196,6 @@
     },
     "performersTag": {
       "name": "second generation",
-      "singleNumber": "20",
       "album": {
         "type": "single",
         "number": "20"
@@ -8388,7 +8262,6 @@
     },
     "performersTag": {
       "name": "third generation",
-      "singleNumber": "20",
       "album": {
         "type": "single",
         "number": "20"
@@ -8448,7 +8321,6 @@
     },
     "performersTag": {
       "name": "いもうと坂",
-      "singleNumber": "20",
       "album": {
         "type": "single",
         "number": "20"
@@ -8507,7 +8379,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "21",
       "album": {
         "type": "single",
         "number": "21"
@@ -8585,7 +8456,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "21",
       "album": {
         "type": "single",
         "number": "21"
@@ -8656,7 +8526,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "21",
       "album": {
         "type": "single",
         "number": "21"
@@ -8726,7 +8595,6 @@
     },
     "performersTag": {
       "name": "third generation",
-      "singleNumber": "21",
       "album": {
         "type": "single",
         "number": "21"
@@ -8785,7 +8653,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "21",
       "album": {
         "type": "single",
         "number": "21"
@@ -8835,7 +8702,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "21",
       "album": {
         "type": "single",
         "number": "21"
@@ -8886,7 +8752,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "21",
       "album": {
         "type": "single",
         "number": "21"
@@ -8963,7 +8828,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "22",
       "album": {
         "type": "single",
         "number": "22"
@@ -9043,7 +8907,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "22",
       "album": {
         "type": "single",
         "number": "22"
@@ -9118,7 +8981,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "22",
       "album": {
         "type": "single",
         "number": "22"
@@ -9187,7 +9049,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "22",
       "album": {
         "type": "single",
         "number": "22"
@@ -9236,7 +9097,6 @@
     },
     "performersTag": {
       "name": "女子校カルテット",
-      "singleNumber": "22",
       "album": {
         "type": "single",
         "number": "22"
@@ -9286,7 +9146,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "22",
       "album": {
         "type": "single",
         "number": "22"
@@ -9335,7 +9194,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "22",
       "album": {
         "type": "single",
         "number": "22"
@@ -9390,7 +9248,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "23",
       "album": {
         "type": "single",
         "number": "23"
@@ -9464,7 +9321,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "23",
       "album": {
         "type": "single",
         "number": "23"
@@ -9524,7 +9380,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "23",
       "album": {
         "type": "single",
         "number": "23"
@@ -9572,7 +9427,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "23",
       "album": {
         "type": "single",
         "number": "23"
@@ -9625,7 +9479,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "23",
       "album": {
         "type": "single",
         "number": "23"
@@ -9681,7 +9534,6 @@
     },
     "performersTag": {
       "name": "fourth generation",
-      "singleNumber": "23",
       "album": {
         "type": "single",
         "number": "23"
@@ -9738,7 +9590,6 @@
     },
     "performersTag": {
       "name": "からあげ姉妹",
-      "singleNumber": "23",
       "album": {
         "type": "single",
         "number": "23"
@@ -9790,7 +9641,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "24",
       "album": {
         "type": "single",
         "number": "24"
@@ -9858,7 +9708,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "24",
       "album": {
         "type": "single",
         "number": "24"
@@ -9931,7 +9780,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "24",
       "album": {
         "type": "single",
         "number": "24"
@@ -9984,7 +9832,6 @@
     },
     "performersTag": {
       "name": "fourth generation",
-      "singleNumber": "24",
       "album": {
         "type": "single",
         "number": "24"
@@ -10044,7 +9891,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "24",
       "album": {
         "type": "single",
         "number": "24"
@@ -10097,7 +9943,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "24",
       "album": {
         "type": "single",
         "number": "24"
@@ -10161,7 +10006,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "24",
       "album": {
         "type": "single",
         "number": "24"
@@ -10231,7 +10075,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "25",
       "album": {
         "type": "single",
         "number": "25"
@@ -10301,7 +10144,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "25",
       "album": {
         "type": "single",
         "number": "25"
@@ -10358,7 +10200,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "25",
       "album": {
         "type": "single",
         "number": "25"
@@ -10407,7 +10248,6 @@
     },
     "performersTag": {
       "name": "second generation",
-      "singleNumber": "25",
       "album": {
         "type": "single",
         "number": "25"
@@ -10464,7 +10304,6 @@
     },
     "performersTag": {
       "name": "third generation",
-      "singleNumber": "25",
       "album": {
         "type": "single",
         "number": "25"
@@ -10524,7 +10363,6 @@
     },
     "performersTag": {
       "name": "fourth generation",
-      "singleNumber": "25",
       "album": {
         "type": "single",
         "number": "25"
@@ -10581,7 +10419,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "25",
       "album": {
         "type": "single",
         "number": "25"
@@ -10635,7 +10472,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "10",
       "album": {
         "type": "album",
         "number": "1"
@@ -10689,7 +10525,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "10",
       "album": {
         "type": "album",
         "number": "1"
@@ -10749,7 +10584,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "10",
       "album": {
         "type": "album",
         "number": "1"
@@ -10816,7 +10650,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "10",
       "album": {
         "type": "album",
         "number": "1"
@@ -10871,7 +10704,6 @@
     },
     "performersTag": {
       "name": "こじ坂46",
-      "singleNumber": "10",
       "album": {
         "type": "album",
         "number": "1"
@@ -10938,7 +10770,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "10",
       "album": {
         "type": "album",
         "number": "1"
@@ -10998,7 +10829,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "10",
       "album": {
         "type": "album",
         "number": "1"
@@ -11074,7 +10904,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "10",
       "album": {
         "type": "album",
         "number": "1"
@@ -11127,7 +10956,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "14",
       "album": {
         "type": "album",
         "number": "2"
@@ -11194,7 +11022,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "14",
       "album": {
         "type": "album",
         "number": "2"
@@ -11266,7 +11093,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "14",
       "album": {
         "type": "album",
         "number": "2"
@@ -11326,7 +11152,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "14",
       "album": {
         "type": "album",
         "number": "2"
@@ -11382,7 +11207,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "14",
       "album": {
         "type": "album",
         "number": "2"
@@ -11434,7 +11258,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "14",
       "album": {
         "type": "album",
         "number": "2"
@@ -11488,7 +11311,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "14",
       "album": {
         "type": "album",
         "number": "2"
@@ -11540,7 +11362,6 @@
     },
     "performersTag": {
       "name": "乃木團",
-      "singleNumber": "14",
       "album": {
         "type": "album",
         "number": "2"
@@ -11593,7 +11414,6 @@
     },
     "performersTag": {
       "name": "second generation",
-      "singleNumber": "14",
       "album": {
         "type": "album",
         "number": "2"
@@ -11655,7 +11475,6 @@
     },
     "performersTag": {
       "name": "犬メン",
-      "singleNumber": "14",
       "album": {
         "type": "album",
         "number": "2"
@@ -11709,7 +11528,6 @@
     },
     "performersTag": {
       "name": "女子校カルテット",
-      "singleNumber": "14",
       "album": {
         "type": "album",
         "number": "2"
@@ -11764,7 +11582,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "17",
       "album": {
         "type": "album",
         "number": "3"
@@ -11841,7 +11658,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "17",
       "album": {
         "type": "album",
         "number": "3"
@@ -11904,7 +11720,6 @@
     },
     "performersTag": {
       "name": "third generation",
-      "singleNumber": "17",
       "album": {
         "type": "album",
         "number": "3"
@@ -11967,7 +11782,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "17",
       "album": {
         "type": "album",
         "number": "3"
@@ -12065,7 +11879,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "17",
       "album": {
         "type": "album",
         "number": "3"
@@ -12119,7 +11932,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "17",
       "album": {
         "type": "album",
         "number": "3"
@@ -12173,7 +11985,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "17",
       "album": {
         "type": "album",
         "number": "3"
@@ -12229,7 +12040,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "17",
       "album": {
         "type": "album",
         "number": "3"
@@ -12281,7 +12091,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "17",
       "album": {
         "type": "album",
         "number": "3"
@@ -12335,7 +12144,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "17",
       "album": {
         "type": "album",
         "number": "3"
@@ -12389,7 +12197,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "17",
       "album": {
         "type": "album",
         "number": "3"
@@ -12442,7 +12249,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "17",
       "album": {
         "type": "album",
         "number": "3"
@@ -12495,7 +12301,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "19",
       "album": {
         "type": "album",
         "number": "U"
@@ -12549,7 +12354,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "19",
       "album": {
         "type": "album",
         "number": "U"
@@ -12616,7 +12420,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "19",
       "album": {
         "type": "album",
         "number": "U"
@@ -12683,7 +12486,6 @@
     },
     "performersTag": {
       "name": "under",
-      "singleNumber": "19",
       "album": {
         "type": "album",
         "number": "U"
@@ -12748,7 +12550,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "22",
       "album": {
         "type": "album",
         "number": "4"
@@ -12818,7 +12619,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "22",
       "album": {
         "type": "album",
         "number": "4"
@@ -12870,7 +12670,6 @@
     },
     "performersTag": {
       "name": "fourth generation",
-      "singleNumber": "22",
       "album": {
         "type": "album",
         "number": "4"
@@ -12932,7 +12731,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "22",
       "album": {
         "type": "album",
         "number": "4"
@@ -12988,7 +12786,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "22",
       "album": {
         "type": "album",
         "number": "4"
@@ -13044,7 +12841,6 @@
     },
     "performersTag": {
       "name": "さゆりんご軍団",
-      "singleNumber": "22",
       "album": {
         "type": "album",
         "number": "4"
@@ -13099,7 +12895,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "22",
       "album": {
         "type": "album",
         "number": "4"
@@ -13153,7 +12948,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "22",
       "album": {
         "type": "album",
         "number": "4"
@@ -13227,7 +13021,6 @@
     },
     "performersTag": {
       "name": "",
-      "singleNumber": "",
       "album": {
         "type": "digital",
         "number": "1"
@@ -13339,7 +13132,6 @@
     },
     "performersTag": {
       "name": "selected",
-      "singleNumber": "",
       "album": {
         "type": "digital",
         "number": "2"
