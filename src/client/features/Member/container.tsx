@@ -117,33 +117,31 @@ export type MemberPageProps = Pick<
 };
 
 const MemberPageContainer: React.FC<QueryResult> = props => {
-  const {
-    data: { membersJson },
-  } = props;
+  const memberData = props.data.membersJson;
 
   const names = React.useMemo(
     () => ({
       ja:
-        membersJson.nameNotations.lastName +
+        memberData.nameNotations.lastName +
         ' ' +
-        membersJson.nameNotations.firstName,
+        memberData.nameNotations.firstName,
       en:
-        membersJson.nameNotations.lastNameEn +
+        memberData.nameNotations.lastNameEn +
         ' ' +
-        membersJson.nameNotations.firstNameEn,
+        memberData.nameNotations.firstNameEn,
       furigana:
-        membersJson.nameNotations.lastNameFurigana +
+        memberData.nameNotations.lastNameFurigana +
         ' ' +
-        membersJson.nameNotations.firstNameFurigana,
+        memberData.nameNotations.firstNameFurigana,
     }),
-    [membersJson.nameNotations]
+    [memberData.nameNotations]
   );
 
   const { units, corps } = React.useMemo(() => {
     let units = [];
     let corps = [];
 
-    for (const unit of membersJson.units) {
+    for (const unit of memberData.units) {
       if (unit.type === 'unit') {
         units.push(unit.name);
       } else {
@@ -155,56 +153,56 @@ const MemberPageContainer: React.FC<QueryResult> = props => {
       units,
       corps,
     };
-  }, [membersJson.units]);
+  }, [memberData.units]);
 
   const photoBooks = React.useMemo(
-    () => sortByDate(membersJson.photoAlbums, 'release', 'desc'),
-    [membersJson.photoAlbums]
+    () => sortByDate(memberData.photoAlbums, 'release', 'desc'),
+    [memberData.photoAlbums]
   );
 
   const positionsHistory = React.useMemo(
     () =>
-      membersJson.positionsHistory
+      memberData.positionsHistory
         .slice()
         .reverse()
         .filter(history => history.position !== 'none'),
-    [membersJson.positionsHistory]
+    [memberData.positionsHistory]
   );
 
   const shouldShowPositionCounter = React.useMemo(
     () =>
-      membersJson.positionsCounter.center +
-        membersJson.positionsCounter.fukujin +
-        membersJson.positionsCounter.selected +
-        membersJson.positionsCounter.under >
+      memberData.positionsCounter.center +
+        memberData.positionsCounter.fukujin +
+        memberData.positionsCounter.selected +
+        memberData.positionsCounter.under >
       0,
-    [membersJson.positionsCounter]
+    [memberData.positionsCounter]
   );
 
   const gallery = React.useMemo(() => {
-    return membersJson.profileImages.gallery.slice().reverse();
-  }, [membersJson.profileImages.gallery]);
+    return memberData.profileImages.gallery.slice().reverse();
+  }, [memberData.profileImages.gallery]);
 
-  return membersJson ? (
+  return memberData ? (
     <MemberPage
-      name={membersJson.name}
+      name={memberData.name}
       names={names}
       gallery={gallery}
       profileImage={gallery[0]}
-      glowStickColor={membersJson.glowStickColor}
-      sites={membersJson.sites}
-      join={membersJson.join}
-      graduation={membersJson.graduation}
-      birthday={membersJson.birthday}
-      height={membersJson.height}
-      bloodType={membersJson.bloodType}
-      origin={membersJson.origin}
+      glowStickColor={memberData.glowStickColor}
+      sites={memberData.sites}
+      join={memberData.join}
+      graduation={memberData.graduation}
+      birthday={memberData.birthday}
+      height={memberData.height}
+      bloodType={memberData.bloodType}
+      origin={memberData.origin}
       units={units}
       corps={corps}
       photoAlbums={photoBooks}
       shouldShowPositionCounter={shouldShowPositionCounter}
       positionsHistory={positionsHistory}
-      positionsCounter={membersJson.positionsCounter}
+      positionsCounter={memberData.positionsCounter}
     />
   ) : null;
 };
