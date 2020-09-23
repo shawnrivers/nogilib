@@ -194,10 +194,13 @@ function getDiscographyProfileImages(params: {
     const album = sortedDiscographyRawArray[i];
     const albumNumber = album.number;
 
-    const profileImageSrc = `members/${profileImageTypeFolderName}/${albumNumber}/${memberName}.jpg`;
+    const albumProfileImageSrc = `members/${profileImageTypeFolderName}/${albumNumber}/${memberName}.jpg`;
 
-    if (fs.existsSync('./src/assets/images/' + profileImageSrc)) {
-      discographyGallery.push({ url: profileImageSrc, number: albumNumber });
+    if (fs.existsSync('./src/assets/images/' + albumProfileImageSrc)) {
+      discographyGallery.push({
+        url: albumProfileImageSrc,
+        number: albumNumber,
+      });
     } else {
       const albumReleaseDate = new Date(album.release).getTime();
 
@@ -208,7 +211,15 @@ function getDiscographyProfileImages(params: {
         ).getTime();
 
         if (j === 0) {
-          if (albumReleaseDate > currentProfileImageDate) {
+          if (albumReleaseDate >= currentProfileImageDate) {
+            discographyGallery.push({
+              url: currentProfileImage.url,
+              number: albumNumber,
+            });
+            break;
+          }
+
+          if (sortedGallery.length === 1) {
             discographyGallery.push({
               url: currentProfileImage.url,
               number: albumNumber,

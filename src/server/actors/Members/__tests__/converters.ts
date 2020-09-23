@@ -137,6 +137,12 @@ describe('convertProfileImages', () => {
     albumsRawArray,
     digitalRawArray,
   });
+  const nishikawaProfileImages = convertProfileImages({
+    memberName: MemberNameKey.NishikawaNanami,
+    singlesRawArray,
+    albumsRawArray,
+    digitalRawArray,
+  });
 
   test('should sort gallery by date', () => {
     expect(nanaseProfileImages.gallery).toEqual([
@@ -172,6 +178,9 @@ describe('convertProfileImages', () => {
     );
     expect(Object.entries(hashimotoProfileImages.digital).length).toEqual(
       digitalRawArray.length
+    );
+    expect(Object.entries(nishikawaProfileImages.singles).length).toEqual(
+      singlesRawArray.length
     );
   });
 
