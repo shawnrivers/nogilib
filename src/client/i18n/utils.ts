@@ -37,3 +37,16 @@ export function getLocalizedNth(params: {
     return null;
   }
 }
+
+export function getLocalizedWords(params: {
+  words: string[];
+  language: Language;
+}): string {
+  const { words, language } = params;
+
+  if (language === 'en') {
+    return words.join(' ');
+  } else {
+    return words.join('');
+  }
+}

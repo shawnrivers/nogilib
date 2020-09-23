@@ -1,4 +1,4 @@
-import { getLocalizedNth } from 'client/i18n/utils';
+import { getLocalizedNth, getLocalizedWords } from 'client/i18n/utils';
 
 describe('getLocalizedNth', () => {
   it('should get the correct CD count', () => {
@@ -29,5 +29,32 @@ describe('getLocalizedNth', () => {
     expect(getLocalizedNth({ num: 'u', unit: 'row', language: 'en' })).toBe(
       null
     );
+  });
+});
+
+describe('getLocalizedWords', () => {
+  it('should join space between each word in English', () => {
+    expect(
+      getLocalizedWords({
+        words: ['25th.', 'single', 'selected', 'members'],
+        language: 'en',
+      })
+    ).toBe('25th. single selected members');
+  });
+
+  it('should join nothing between each word in Japanese and Chinese', () => {
+    expect(
+      getLocalizedWords({
+        words: ['25枚目', 'シングル', '選抜', 'メンバー'],
+        language: 'ja',
+      })
+    ).toBe('25枚目シングル選抜メンバー');
+
+    expect(
+      getLocalizedWords({
+        words: ['第25张', '单曲', '选拔', '成员'],
+        language: 'ja',
+      })
+    ).toBe('第25张单曲选拔成员');
   });
 });
