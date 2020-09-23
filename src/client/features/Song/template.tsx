@@ -3,7 +3,6 @@ import { jsx, css } from '@emotion/core';
 import styled from '@emotion/styled';
 import * as React from 'react';
 import { LocalizedList } from 'client/components/atoms/locales/LocalizedList';
-import { LocalizedNumber } from 'client/components/atoms/locales/LocalizedNumber';
 import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
 import { KOJIHARU_IMAGE_SRC } from 'server/constants/paths';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
@@ -110,6 +109,7 @@ export const SongPage: React.FC<SongPageProps> = ({
   useScrollRestoration();
   const theme = useAppTheme();
   const { Translation } = useTranslations();
+  const { formatNth } = useIntl();
 
   return (
     <PageContent title={title} showBackButton titleTextTransform="initial">
@@ -256,7 +256,7 @@ export const SongPage: React.FC<SongPageProps> = ({
                             margin-top: 0.5em;
                           `}
                         >
-                          <LocalizedNumber num={index + 1} type="row" />
+                          {formatNth({ num: index + 1, unit: 'row' })}
                         </SectionSubtitle>
                         <RowContainer>
                           {row.map(memberName => {
