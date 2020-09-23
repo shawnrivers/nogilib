@@ -83,7 +83,10 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
 
   return (
     <PageContent
-      title={language !== 'en' ? names.ja : names.en}
+      title={{
+        text: language !== 'en' ? names.ja : names.en,
+        lang: language === 'en' ? 'ja' : 'en',
+      }}
       titleTextTransform="capitalize"
       showBackButton
     >

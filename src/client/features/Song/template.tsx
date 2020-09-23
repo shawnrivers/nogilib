@@ -112,7 +112,11 @@ export const SongPage: React.FC<SongPageProps> = ({
   const { formatNth, formatWordsWithCommas } = useIntl();
 
   return (
-    <PageContent title={title} showBackButton titleTextTransform="initial">
+    <PageContent
+      title={{ text: title, lang: 'ja' }}
+      showBackButton
+      titleTextTransform="initial"
+    >
       <React.Fragment>
         <div
           css={css`

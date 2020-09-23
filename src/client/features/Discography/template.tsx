@@ -13,6 +13,7 @@ import {
 } from 'client/utils/urls';
 import { CdGroupByYear } from 'pages/discography';
 import { useTranslations } from 'client/hooks/useTranslations';
+import { useAppContext } from 'client/hooks/useAppContext';
 
 export type DiscographyPageProps = {
   currentFilter: DiscographyUrlFilter;
@@ -21,10 +22,13 @@ export type DiscographyPageProps = {
 
 export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
   const { currentFilter, cdGroupsByYear } = props;
-  const { Translation } = useTranslations();
+  const { Translation, getTranslation } = useTranslations();
+  const { language } = useAppContext();
 
   return (
-    <PageContent title="discography">
+    <PageContent
+      title={{ text: getTranslation('discography'), lang: language }}
+    >
       <React.Fragment>
         <TextSwitchLinkGroup
           variant="h4"

@@ -7,6 +7,7 @@ import { Typography } from 'client/components/atoms/Typography';
 import { PageContent } from 'client/components/templates/Page';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import { useTranslations } from 'client/hooks/useTranslations';
+import { useAppContext } from 'client/hooks/useAppContext';
 
 export type SearchResult = {
   to: string;
@@ -40,9 +41,10 @@ export const Search: React.FC<SearchProps> = props => {
 
   const theme = useAppTheme();
   const { Translation, getTranslation } = useTranslations();
+  const { language } = useAppContext();
 
   return (
-    <PageContent title="search">
+    <PageContent title={{ text: getTranslation('search'), lang: language }}>
       <div
         css={css`
           margin-top: ${commonStyles.spacing.xl};

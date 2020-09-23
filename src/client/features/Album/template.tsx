@@ -20,8 +20,11 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
 
   return (
     <PageContent
-      title={props.title}
-      subtitle={`${toCdNumber(props.number)} ${props.type}`}
+      title={{ text: props.title, lang: 'ja' }}
+      subtitle={{
+        text: `${toCdNumber(props.number)} ${props.type}`,
+        lang: 'en',
+      }}
       showBackButton
       titleTextTransform="initial"
     >
