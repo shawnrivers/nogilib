@@ -2,30 +2,26 @@
 import { jsx, css } from '@emotion/core';
 import * as React from 'react';
 import { SearchIcon } from 'client/components/atoms/icons/SearchIcon';
-import { SearchResultCategory } from 'client/features/Search/components/SearchResultCategory';
+import {
+  SearchResultCategory,
+  SearchResultCategoryProps,
+} from 'client/features/Search/components/SearchResultCategory';
 import { Typography } from 'client/components/atoms/Typography';
 import { PageContent } from 'client/components/templates/Page';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import { useTranslations } from 'client/hooks/useTranslations';
 import { useAppContext } from 'client/hooks/useAppContext';
 
-export type SearchResult = {
-  to: string;
-  imgSrc: string;
-  heading: string;
-  captions: string[];
-};
-
-interface SearchProps {
+export type SearchProps = {
   query: string;
   search(event: React.FormEvent<HTMLInputElement>): void;
   results: {
-    members: SearchResult[];
-    cds: SearchResult[];
-    songs: SearchResult[];
+    members: SearchResultCategoryProps['results'];
+    cds: SearchResultCategoryProps['results'];
+    songs: SearchResultCategoryProps['results'];
   };
   isSearching: boolean;
-}
+};
 
 export const Search: React.FC<SearchProps> = props => {
   const { query, search, results, isSearching } = props;

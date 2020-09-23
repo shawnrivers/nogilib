@@ -13,10 +13,12 @@ import { useTranslations } from 'client/hooks/useTranslations';
 import { HorizontalCard } from 'client/components/molecules/cards/HorizontalCard';
 import { useIntl } from 'client/hooks/useIntl';
 import { GridImage } from 'client/components/atoms/images/GirdImage';
+import { useAppContext } from 'client/hooks/useAppContext';
 
 export const AlbumPage: React.FC<AlbumPageProps> = props => {
-  const { Translation } = useTranslations();
+  const { Translation, getTranslation } = useTranslations();
   const { formatDate, formatMemberName } = useIntl();
+  const { language } = useAppContext();
 
   return (
     <PageContent
@@ -67,8 +69,10 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
                     src: track.artwork,
                     alt: track.inCdType[0],
                   }}
-                  title={track.title}
-                  tags={[track.type]}
+                  title={{ text: track.title, lang: 'ja' }}
+                  tags={[
+                    { text: getTranslation(track.type as any), lang: language },
+                  ]}
                 />
               </li>
             ))}

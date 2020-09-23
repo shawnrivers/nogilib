@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Search, SearchResult } from 'client/features/Search/template';
+import { Search, SearchProps } from 'client/features/Search/template';
 import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
 import { toCdNumber } from 'utils/strings';
 import { getAlbumUrl, getMemberUrl, getSongUrl } from 'client/utils/urls';
@@ -8,6 +8,7 @@ import { DiscographyResult } from 'server/actors/Discography/models';
 import { SongResult } from 'server/actors/Songs/models';
 import { useTranslations } from 'client/hooks/useTranslations';
 import { useAppContext } from 'client/hooks/useAppContext';
+import { useIntl } from 'client/hooks/useIntl';
 
 export type MemberDoc = {
   key: MemberResult['name'];
@@ -59,6 +60,7 @@ export const SearchPageContainer: React.FC = () => {
 
   const { language } = useAppContext();
   const { getTranslation } = useTranslations();
+  const { formatMemberName } = useIntl();
 
   const lunr = React.useMemo(
     () => (typeof window !== 'undefined' ? (window as any).__LUNR__.ja : null),
@@ -90,24 +92,33 @@ export const SearchPageContainer: React.FC = () => {
     [lunr]
   );
 
-  const convertedResults = React.useMemo(() => {
-    let members: SearchResult[] = [];
-    let cds: SearchResult[] = [];
-    let albums: SearchResult[] = [];
-    let songs: SearchResult[] = [];
+  const convertedResults = React.useMemo((): SearchProps['results'] => {
+    let members: SearchProps['results']['members'] = [];
+    let cds: SearchProps['results']['cds'] = [];
+    let songs: SearchProps['results']['songs'] = [];
 
     for (const result of results) {
       if (result.type === 'members') {
-        const memberName =
-          language === 'en'
-            ? `${result.nameNotations.lastNameEn} ${result.nameNotations.firstNameEn}`
-            : `${result.nameNotations.lastName}${result.nameNotations.firstName}`;
+        const memberName = formatMemberName({
+          firstName: result.nameNotations.firstName,
+          lastName: result.nameNotations.lastName,
+          firstNameEn: result.nameNotations.firstNameEn,
+          lastNameEn: result.nameNotations.lastNameEn,
+        });
 
         members.push({
           to: getMemberUrl(result.key),
           imgSrc: result.profileImage,
-          heading: memberName,
-          captions: [getTranslation(`join: ${result.join}` as any)],
+          heading: {
+            text: memberName.name,
+            lang: memberName.lang,
+          },
+          captions: [
+            {
+              text: getTranslation(`join: ${result.join}` as any),
+              lang: language,
+            },
+          ],
         });
       }
 
@@ -115,33 +126,46 @@ export const SearchPageContainer: React.FC = () => {
         cds.push({
           to: getAlbumUrl(result.key),
           imgSrc: result.artwork.url,
-          heading: result.title,
-          captions: [`${toCdNumber(result.number)} ${result.cdType}`],
+          heading: { text: result.title, lang: 'ja' },
+          captions: [
+            {
+              text: `${toCdNumber(result.number)} ${result.cdType}`,
+              lang: 'en',
+            },
+          ],
         });
       }
 
       if (result.type === 'songs') {
-        const captions = [`${getTranslation(result.songType as any)}`];
+        const captions = [
+          { text: `${getTranslation(result.songType as any)}`, lang: language },
+        ];
 
         if (result.single.number !== '') {
-          captions.push(`${toCdNumber(result.single.number)} single`);
+          captions.push({
+            text: `${toCdNumber(result.single.number)} single`,
+            lang: 'en',
+          });
         } else {
           if (result.album !== undefined) {
-            captions.push(`${toCdNumber(result.album.number)} album`);
+            captions.push({
+              text: `${toCdNumber(result.album.number)} album`,
+              lang: 'en',
+            });
           }
         }
 
         songs.push({
           to: getSongUrl(result.key),
           imgSrc: result.artwork,
-          heading: result.title,
+          heading: { text: result.title, lang: 'ja' },
           captions,
         });
       }
     }
 
-    return { members, cds, albums, songs };
-  }, [getTranslation, results, language]);
+    return { members, cds, songs };
+  }, [results, formatMemberName, getTranslation, language]);
 
   return (
     <Search
