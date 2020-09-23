@@ -18,7 +18,6 @@ import {
 } from 'client/components/molecules/cards/MemberCard';
 import { getMemberUrl } from 'client/utils/urls';
 import { useTranslations } from 'client/hooks/useTranslations';
-import { useAppContext } from 'client/hooks/useAppContext';
 import { NameNotationsForIntl, useIntl } from 'client/hooks/useIntl';
 import { InfoItemLabel } from 'client/components/molecules/typography/info/InfoItemLabel';
 import { InfoItemValue } from 'client/components/molecules/typography/info/InfoItemValue';
@@ -67,44 +66,35 @@ const PerformerCard: React.FC<PerformerCardProps> = props => {
   );
 };
 
-const PerformersTag: React.FC<{
-  singleNumber: string;
-  tagName: string;
-}> = props => {
-  const { singleNumber, tagName } = props;
-  const { Translation } = useTranslations();
-  const { language } = useAppContext();
+const PerformersTag: React.FC<SongPageProps['performersTag']> = props => {
+  const { name, album } = props;
+  const { getTranslation } = useTranslations();
+  const { formatNth, formatWords } = useIntl();
 
-  if (tagName === '') {
+  if (name === '') {
     return null;
   }
 
-  if (tagName.includes('generation')) {
-    return (
-      <Hashtag>
-        <Translation text={tagName as any} />
-      </Hashtag>
-    );
+  if (name.includes('generation')) {
+    return <Hashtag>{getTranslation(name as any)}</Hashtag>;
   }
 
-  if (tagName === 'selected' || tagName === 'under') {
-    return language === 'en' ? (
-      <Hashtag>
-        <LocalizedNumber num={singleNumber} type="cd" />{' '}
-        <Translation text="single" /> <Translation text={tagName} />{' '}
-        <Translation text="members" />
-      </Hashtag>
-    ) : (
-      <Hashtag>
-        <LocalizedNumber num={singleNumber} type="cd" />
-        <Translation text="single" />
-        <Translation text={tagName} />
-        <Translation text="members" />
-      </Hashtag>
-    );
+  if (name === 'selected' || name === 'under') {
+    if (album.number !== null) {
+      const number = formatNth({ num: album.number, unit: 'cd' });
+
+      const words = [
+        number ?? getTranslation(album.number as any),
+        getTranslation(album.type as any),
+        getTranslation(name as any),
+        getTranslation('members'),
+      ];
+
+      return <Hashtag>{formatWords(words)}</Hashtag>;
+    }
   }
 
-  return <Hashtag>{tagName}</Hashtag>;
+  return <Hashtag>{name}</Hashtag>;
 };
 
 export const SongPage: React.FC<SongPageProps> = ({
@@ -248,12 +238,8 @@ export const SongPage: React.FC<SongPageProps> = ({
                     justify-content: center;
                   `}
                 >
-                  {performersTag.singleNumber !== '' &&
-                  performersTag.name !== '' ? (
-                    <PerformersTag
-                      singleNumber={performersTag.singleNumber}
-                      tagName={performersTag.name}
-                    />
+                  {performersTag.name !== '' ? (
+                    <PerformersTag {...performersTag} />
                   ) : null}
                 </div>
                 <div
