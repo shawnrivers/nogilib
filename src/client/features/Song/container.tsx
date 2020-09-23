@@ -20,9 +20,17 @@ export const query = graphql`
         title
         number
       }
+      otherCds {
+        title
+        number
+      }
       performersTag {
         singleNumber
         name
+        album {
+          type
+          number
+        }
       }
       performers {
         center
@@ -51,87 +59,142 @@ export const query = graphql`
           lastName
           lastNameEn
         }
-        profileImage
-        singleImages
+        profileImages {
+          gallery
+          singles {
+            number
+            url
+          }
+          albums {
+            number
+            url
+          }
+          digital {
+            number
+            url
+          }
+        }
       }
     }
   }
 `;
 
-interface SongData {
+type QueryResultSong = Pick<
+  SongResult,
+  | 'title'
+  | 'type'
+  | 'artwork'
+  | 'single'
+  | 'albums'
+  | 'otherCds'
+  | 'performersTag'
+  | 'formations'
+  | 'creators'
+> & {
+  performers: Pick<SongResult['performers'], 'center'>;
+};
+
+type QueryResultMember = Pick<
+  MemberResult,
+  'name' | 'nameNotations' | 'profileImages'
+>;
+
+type SongData = {
   data: {
-    songsJson: Pick<
-      SongResult,
-      | 'title'
-      | 'type'
-      | 'artwork'
-      | 'single'
-      | 'albums'
-      | 'performersTag'
-      | 'formations'
-      | 'creators'
-      | 'performers'
-    >;
+    songsJson: QueryResultSong;
     allMembersJson: {
-      nodes: Pick<
-        MemberResult,
-        'name' | 'profileImage' | 'singleImages' | 'nameNotations'
-      >[];
+      nodes: QueryResultMember[];
     };
   };
-}
+};
 
-const SongPageContainer = ({
-  data: { songsJson, allMembersJson },
-}: SongData) => {
+type SongPerformer = Pick<QueryResultMember, 'name' | 'nameNotations'> & {
+  profileImage: string;
+};
+
+export type SongPageProps = Pick<
+  QueryResultSong,
+  'title' | 'type' | 'performersTag' | 'creators'
+> & {
+  songTags: string[];
+  artwork: string;
+  formation: QueryResultSong['formations']['firstRow'][0][][];
+  members: Record<SongPerformer['name'], SongPerformer>;
+  centers: string[];
+};
+
+const SongPageContainer: React.FC<SongData> = props => {
+  const { songsJson: songData, allMembersJson } = props.data;
+  const membersData = allMembersJson.nodes;
+
   const songTags = React.useMemo(
     () => [
-      ...[songsJson.single]
+      ...[songData.single]
         .filter(({ number }) => number !== '')
         .map(({ number }) => `${toCdNumber(number)} single`),
-      ...songsJson.albums.map(({ number }) => `${toCdNumber(number)} album`),
+      ...songData.albums.map(({ number }) => `${toCdNumber(number)} album`),
+      ...songData.otherCds.map(({ number }) => `${toCdNumber(number)} digital`),
     ],
-    [songsJson.single, songsJson.albums]
+    [songData.single, songData.albums, songData.otherCds]
   );
 
-  const members = React.useMemo(() => {
-    let membersArray = allMembersJson.nodes;
-
-    const singleNumber = songsJson.performersTag.singleNumber;
-
-    for (const member of membersArray) {
-      if (singleNumber !== '') {
-        member.profileImage = member.singleImages[parseInt(singleNumber) - 1];
-      }
-    }
+  const members = React.useMemo<SongPageProps['members']>(() => {
+    const membersArray = membersData.map(memberData => ({
+      name: memberData.name,
+      nameNotations: memberData.nameNotations,
+      profileImage: getMemberProfileImage(
+        songData.performersTag.album,
+        memberData.profileImages
+      ),
+    }));
 
     return arrayToObject(membersArray, 'name');
-  }, [allMembersJson.nodes, songsJson.performersTag.singleNumber]);
+  }, [membersData, songData]);
 
   const formation = React.useMemo(
     () =>
       [
-        songsJson.formations.firstRow,
-        songsJson.formations.secondRow,
-        songsJson.formations.thirdRow,
-        songsJson.formations.fourthRow,
+        songData.formations.firstRow,
+        songData.formations.secondRow,
+        songData.formations.thirdRow,
+        songData.formations.fourthRow,
       ].filter(formation => formation.length > 0),
-    [songsJson.formations]
+    [songData.formations]
   );
 
-  return songsJson ? (
+  return songData ? (
     <SongPage
-      title={songsJson.title}
+      title={songData.title}
       songTags={songTags}
-      type={songsJson.type}
-      artwork={songsJson.artwork}
-      performersTag={songsJson.performersTag}
+      type={songData.type}
+      artwork={songData.artwork}
+      performersTag={songData.performersTag}
       formation={formation}
       members={members}
-      centers={songsJson.performers.center}
-      creators={songsJson.creators}
+      centers={songData.performers.center}
+      creators={songData.creators}
     />
   ) : null;
 };
 
 export default SongPageContainer;
+
+function getMemberProfileImage(
+  album: QueryResultSong['performersTag']['album'],
+  profileImages: QueryResultMember['profileImages']
+): string {
+  const singleProfileImages = arrayToObject(profileImages.singles, 'number');
+  const digitalProfileImages = arrayToObject(profileImages.digital, 'number');
+  const albumProfileImages = arrayToObject(profileImages.albums, 'number');
+
+  switch (album.type) {
+    case 'single':
+      return singleProfileImages[album.number].url;
+    case 'digital':
+      return digitalProfileImages[album.number].url;
+    case 'album':
+      return albumProfileImages[album.number].url;
+    default:
+      return profileImages.gallery.slice().reverse()[0];
+  }
+}

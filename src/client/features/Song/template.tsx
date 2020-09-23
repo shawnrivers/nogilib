@@ -5,7 +5,6 @@ import * as React from 'react';
 import { LocalizedList } from 'client/components/atoms/locales/LocalizedList';
 import { LocalizedNumber } from 'client/components/atoms/locales/LocalizedNumber';
 import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
-import { SongType } from 'server/actors/Songs/constants/songType';
 import { KOJIHARU_IMAGE_SRC } from 'server/constants/paths';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { PageContent } from 'client/components/templates/Page';
@@ -24,6 +23,7 @@ import { NameNotationsForIntl, useIntl } from 'client/hooks/useIntl';
 import { InfoItemLabel } from 'client/components/molecules/typography/info/InfoItemLabel';
 import { InfoItemValue } from 'client/components/molecules/typography/info/InfoItemValue';
 import { SectionSubtitle } from 'client/components/molecules/typography/SectionSubtitle';
+import { SongPageProps } from 'client/features/Song/container';
 
 type StyledComponentWithThemeProps = {
   theme: Theme;
@@ -106,38 +106,6 @@ const PerformersTag: React.FC<{
 
   return <Hashtag>{tagName}</Hashtag>;
 };
-
-type SongPerformerType = {
-  name: string;
-  nameNotations: {
-    lastName: string;
-    firstName: string;
-    lastNameEn: string;
-    firstNameEn: string;
-  };
-  profileImage: string;
-  singleImages: string[];
-};
-
-interface SongPageProps {
-  title: string;
-  songTags: string[];
-  type: SongType;
-  artwork: string;
-  performersTag: {
-    singleNumber: string;
-    name: string;
-  };
-  formation: string[][];
-  members: { [key: string]: SongPerformerType };
-  centers: string[];
-  creators: {
-    arrange: string[];
-    compose: string[];
-    direct: string[];
-    lyrics: string[];
-  };
-}
 
 export const SongPage: React.FC<SongPageProps> = ({
   title,
