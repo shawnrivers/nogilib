@@ -93,7 +93,7 @@ const PerformersTag: React.FC<SongPageProps['performersTag']> = props => {
     }
   }
 
-  return <Hashtag>{name}</Hashtag>;
+  return <Hashtag lang="ja">{name}</Hashtag>;
 };
 
 export const SongPage: React.FC<SongPageProps> = ({
