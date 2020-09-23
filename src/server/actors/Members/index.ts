@@ -100,7 +100,6 @@ export class Members {
       name: memberRaw.name,
       nameNotations: memberRaw.nameNotations,
       glowStickColor: memberRaw.glowStickColor,
-      profileImage: profileImages.gallery[0],
       profileImages,
       join: memberRaw.join,
       birthday: memberRaw.birthday,

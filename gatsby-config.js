@@ -95,7 +95,8 @@ module.exports = {
               node.name,
             key: node => node.name,
             nameNotations: node => node.nameNotations,
-            profileImage: node => node.profileImage,
+            profileImage: node =>
+              node.profileImages.gallery[node.profileImages.gallery.length - 1],
             join: node => node.join,
             type: () => 'members',
           },
