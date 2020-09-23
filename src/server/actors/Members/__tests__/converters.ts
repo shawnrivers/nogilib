@@ -12,6 +12,7 @@ import { songsRawArray } from 'server/actors/Songs/raw';
 import { unitsRawArray } from 'server/actors/Units/raw';
 import { Discography } from 'server/actors/Discography';
 import { discographyRawArray } from 'server/actors/Discography/raw/editor';
+import { arrayToObject } from 'utils/arrays';
 
 const discography = new Discography(discographyRawArray);
 const singlesRawArray = discography.getSinglesRawArray();
@@ -112,6 +113,18 @@ describe('convertProfileImages', () => {
     albumsRawArray,
     digitalRawArray,
   });
+  const nanaseSingleProfileImages = arrayToObject(
+    nanaseProfileImages.singles,
+    'number'
+  );
+  const nanaseAlbumProfileImages = arrayToObject(
+    nanaseProfileImages.albums,
+    'number'
+  );
+  const nanaseDigitalProfileImages = arrayToObject(
+    nanaseProfileImages.digital,
+    'number'
+  );
   const renkaProfileImages = convertProfileImages({
     memberName: MemberNameKey.IwamotoRenka,
     singlesRawArray,
@@ -163,28 +176,28 @@ describe('convertProfileImages', () => {
   });
 
   test('should use the corresponding file for single', () => {
-    expect(nanaseProfileImages.singles[15]).toEqual(
+    expect(nanaseSingleProfileImages[15].url).toEqual(
       'members/singles/15/nishinonanase.jpg'
     );
   });
 
   test('should use the closest image if no corresponding file exists', () => {
-    expect(nanaseProfileImages.singles[16]).toEqual(
+    expect(nanaseSingleProfileImages[16].url).toEqual(
       'members/singles/15/nishinonanase.jpg'
     );
-    expect(nanaseProfileImages.singles[21]).toEqual(
+    expect(nanaseSingleProfileImages[21].url).toEqual(
       'members/singles/20/nishinonanase.jpg'
     );
-    expect(nanaseProfileImages.singles[23]).toEqual(
+    expect(nanaseSingleProfileImages[23].url).toEqual(
       'members/singles/22/nishinonanase.jpg'
     );
-    expect(nanaseProfileImages.singles[25]).toEqual(
+    expect(nanaseSingleProfileImages[25].url).toEqual(
       'members/others/nishinonanase_2019-09-21.jpg'
     );
-    expect(nanaseProfileImages.albums['U']).toEqual(
+    expect(nanaseAlbumProfileImages['U'].url).toEqual(
       'members/singles/17/nishinonanase.jpg'
     );
-    expect(nanaseProfileImages.digital[2]).toEqual(
+    expect(nanaseDigitalProfileImages[2].url).toEqual(
       'members/others/nishinonanase_2020-06-11.jpg'
     );
   });

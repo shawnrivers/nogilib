@@ -3,7 +3,7 @@ import * as path from 'path';
 import {
   MemberResult,
   MemberRaw,
-  DiscographyProfileImages,
+  DiscographyProfileImage,
 } from 'server/actors/Members/models';
 import { UnitsRawArray } from 'server/actors/Units/models';
 import { SongsRawObject } from 'server/actors/Songs/models';
@@ -170,7 +170,7 @@ function getDiscographyProfileImages(params: {
   discographyRawArray: DiscographyRawArray;
   discographyType: Parameters<typeof getProfileImageTypeFolderName>[0];
   galleryWithDate: GalleryWithDate;
-}): DiscographyProfileImages {
+}): DiscographyProfileImage[] {
   const {
     memberName,
     discographyRawArray,
@@ -182,7 +182,7 @@ function getDiscographyProfileImages(params: {
     discographyType
   );
 
-  const discographyGallery: DiscographyProfileImages = {};
+  const discographyGallery: DiscographyProfileImage[] = [];
   const sortedGallery = sortByDate(galleryWithDate, 'date', 'desc');
   const sortedDiscographyRawArray = sortByDate(
     discographyRawArray,
@@ -197,7 +197,7 @@ function getDiscographyProfileImages(params: {
     const profileImageSrc = `members/${profileImageTypeFolderName}/${albumNumber}/${memberName}.jpg`;
 
     if (fs.existsSync('./src/assets/images/' + profileImageSrc)) {
-      discographyGallery[albumNumber] = profileImageSrc;
+      discographyGallery.push({ url: profileImageSrc, number: albumNumber });
     } else {
       const albumReleaseDate = new Date(album.release).getTime();
 
@@ -209,7 +209,10 @@ function getDiscographyProfileImages(params: {
 
         if (j === 0) {
           if (albumReleaseDate > currentProfileImageDate) {
-            discographyGallery[albumNumber] = currentProfileImage.url;
+            discographyGallery.push({
+              url: currentProfileImage.url,
+              number: albumNumber,
+            });
             break;
           }
         } else {
@@ -222,11 +225,17 @@ function getDiscographyProfileImages(params: {
             albumReleaseDate < previousProfileImageDate &&
             albumReleaseDate >= currentProfileImageDate
           ) {
-            discographyGallery[albumNumber] = currentProfileImage.url;
+            discographyGallery.push({
+              url: currentProfileImage.url,
+              number: albumNumber,
+            });
             break;
           } else {
             if (j === sortedGallery.length - 1) {
-              discographyGallery[albumNumber] = currentProfileImage.url;
+              discographyGallery.push({
+                url: currentProfileImage.url,
+                number: albumNumber,
+              });
               break;
             }
           }

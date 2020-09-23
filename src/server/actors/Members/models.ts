@@ -40,15 +40,16 @@ export type MemberRaw = {
   };
 };
 
-export type DiscographyProfileImages = {
-  [number: string]: string;
+export type DiscographyProfileImage = {
+  url: string;
+  number: string;
 };
 
 export type ProfileImages = {
   gallery: string[];
-  singles: DiscographyProfileImages;
-  albums: DiscographyProfileImages;
-  digital: DiscographyProfileImages;
+  singles: DiscographyProfileImage[];
+  albums: DiscographyProfileImage[];
+  digital: DiscographyProfileImage[];
 };
 
 export type MemberResult = MemberRaw & {
