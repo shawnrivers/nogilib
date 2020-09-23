@@ -54,7 +54,7 @@ export const HorizontalCard: React.FC<HorizontalCardProps> = props => {
           `}
         >
           <Typography
-            variant="h7"
+            variant="body2"
             element={titleElement}
             bold
             ellipsis
