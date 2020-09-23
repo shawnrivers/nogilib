@@ -54,7 +54,8 @@ const PerformerCard: React.FC<PerformerCardProps> = props => {
 
   return (
     <MemberCard
-      name={formatMemberName(props.nameNotations)}
+      name={formatMemberName(props.nameNotations).name}
+      lang={formatMemberName(props.nameNotations).lang}
       profileImage={props.profileImage}
       to={props.to}
       textSize="body3"
@@ -187,7 +188,7 @@ export const SongPage: React.FC<SongPageProps> = ({
                     <InfoItemLabel>
                       <Translation text="lyrics" />
                     </InfoItemLabel>
-                    <InfoItemValue>
+                    <InfoItemValue lang="ja">
                       {formatWordsWithCommas(creators.lyrics)}
                     </InfoItemValue>
                   </React.Fragment>
@@ -197,7 +198,7 @@ export const SongPage: React.FC<SongPageProps> = ({
                     <InfoItemLabel>
                       <Translation text="compose" />
                     </InfoItemLabel>
-                    <InfoItemValue>
+                    <InfoItemValue lang="ja">
                       {formatWordsWithCommas(creators.compose)}
                     </InfoItemValue>
                   </React.Fragment>
@@ -207,7 +208,7 @@ export const SongPage: React.FC<SongPageProps> = ({
                     <InfoItemLabel>
                       <Translation text="arrange" />
                     </InfoItemLabel>
-                    <InfoItemValue>
+                    <InfoItemValue lang="ja">
                       {formatWordsWithCommas(creators.arrange)}
                     </InfoItemValue>
                   </React.Fragment>
@@ -217,7 +218,7 @@ export const SongPage: React.FC<SongPageProps> = ({
                     <InfoItemLabel>
                       <Translation text="direct" />
                     </InfoItemLabel>
-                    <InfoItemValue>
+                    <InfoItemValue lang="ja">
                       {formatWordsWithCommas(creators.direct)}
                     </InfoItemValue>
                   </React.Fragment>

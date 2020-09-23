@@ -16,7 +16,7 @@ import { GridImage } from 'client/components/atoms/images/GirdImage';
 
 export const AlbumPage: React.FC<AlbumPageProps> = props => {
   const { Translation } = useTranslations();
-  const { formatDate } = useIntl();
+  const { formatDate, formatMemberName } = useIntl();
 
   return (
     <PageContent
@@ -38,7 +38,8 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
             text-align: center;
           `}
         >
-          <Translation text="release" />: {formatDate(props.release)}
+          <Translation text="release" />:{' '}
+          <time dateTime={props.release}>{formatDate(props.release)}</time>
         </Typography>
         <section>
           <TextDivider text={<Translation text="tracks" />} element="h2" />
@@ -84,10 +85,8 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
                 <li key={member.name}>
                   <MemberCard
                     profileImage={member.profileImage}
-                    name={
-                      member.nameNotations.lastName +
-                      member.nameNotations.firstName
-                    }
+                    name={formatMemberName(member.nameNotations).name}
+                    lang={formatMemberName(member.nameNotations).lang}
                     to={getMemberUrl(member.name)}
                     textSize="body2"
                     borderRadius="s"

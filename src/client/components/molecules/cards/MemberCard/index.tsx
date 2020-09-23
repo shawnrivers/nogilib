@@ -11,6 +11,7 @@ import { GridMemberImage } from 'client/components/atoms/images/GridMemberImage'
 export type MemberCardProps = CardProps & {
   profileImage: string;
   name: string;
+  lang: string;
   nameElement?: TypographyProps['element'];
   textSize?: TypographyProps['variant'];
 };
@@ -19,12 +20,14 @@ export const MemberCard: React.FC<MemberCardProps> = props => {
   const {
     profileImage,
     name,
+    lang,
     nameElement = 'div',
     textSize = 'em2',
     borderRadius = 's',
     padding = 's',
     ...cardProps
   } = props;
+
   return (
     <Card borderRadius={borderRadius} padding={padding} {...cardProps}>
       <article>
@@ -40,6 +43,7 @@ export const MemberCard: React.FC<MemberCardProps> = props => {
             text-align: center;
             text-transform: capitalize;
           `}
+          lang={lang}
         >
           {name}
         </Typography>

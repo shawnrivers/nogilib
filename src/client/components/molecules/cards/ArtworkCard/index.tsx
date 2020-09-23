@@ -52,6 +52,7 @@ export const ArtworkCard: React.FC<
             line-height: 1.2;
             text-align: center;
           `}
+          lang="ja"
         >
           {title}
         </Typography>

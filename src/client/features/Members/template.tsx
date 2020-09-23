@@ -65,7 +65,8 @@ export const MembersPage: React.FC<MembersPageProps> = props => {
                 <li key={member.name}>
                   <MemberCard
                     profileImage={member.profileImage}
-                    name={formatMemberName(member.nameNotations)}
+                    name={formatMemberName(member.nameNotations).name}
+                    lang={formatMemberName(member.nameNotations).lang}
                     nameElement="h3"
                     to={getMemberUrl(member.name)}
                     textSize="body2"
