@@ -25,9 +25,13 @@ export const toCdNumber = (num: string | number): string => {
     } else {
       return num + 'th.';
     }
-  }
+  } else {
+    if (num === 'U') {
+      return 'Under';
+    }
 
-  return 'Under';
+    return num.toString();
+  }
 };
 
 export const toNumberWithLocale = (
