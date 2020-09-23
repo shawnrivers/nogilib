@@ -107,12 +107,12 @@ const MembersPageContainer: React.FC<QueryResult> = props => {
     allMemberGroupByJoin,
   ]);
 
-  return (
+  return membersData ? (
     <MembersPage
       currentFilter={currentFilter}
       memberGroupsByJoin={memberGroupsByJoin}
     />
-  );
+  ) : null;
 };
 
 export default MembersPageContainer;
