@@ -83,34 +83,25 @@ export class Members {
       songsRawObject,
     } = params;
 
-    const singleImages = MemberConverters.convertMemberSingleImages({
-      memberName: memberRaw.name,
-      numberOfSingles: singlesRawArray.length,
-    });
-
     const positionsHistory = MemberConverters.convertMemberPositionsHistory({
       memberName: memberRaw.name,
       singlesRawArray,
       songsRawObject,
     });
 
+    const profileImages = MemberConverters.convertProfileImages({
+      memberName: memberRaw.name,
+      singlesRawArray,
+      albumsRawArray,
+      digitalRawArray,
+    });
+
     return {
       name: memberRaw.name,
       nameNotations: memberRaw.nameNotations,
       glowStickColor: memberRaw.glowStickColor,
-      profileImage: MemberConverters.convertMemberProfileImage({
-        memberName: memberRaw.name,
-        numberOfSingles: singlesRawArray.length,
-        memberSingleImages: singleImages,
-        isMemberGraduated: memberRaw.graduation.isGraduated,
-      }),
-      singleImages,
-      profileImages: MemberConverters.convertProfileImages({
-        memberName: memberRaw.name,
-        singlesRawArray,
-        albumsRawArray,
-        digitalRawArray,
-      }),
+      profileImage: profileImages.gallery[0],
+      profileImages,
       join: memberRaw.join,
       birthday: memberRaw.birthday,
       height: memberRaw.height,

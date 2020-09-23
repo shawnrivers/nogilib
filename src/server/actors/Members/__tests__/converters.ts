@@ -2,8 +2,6 @@ import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import {
   convertMemberPositionsCounter,
   convertMemberPositionsHistory,
-  convertMemberProfileImage,
-  convertMemberSingleImages,
   convertMemberUnits,
   convertProfileImages,
 } from 'server/actors/Members/converters';
@@ -21,22 +19,6 @@ const digitalRawArray = discography.getOtherCdsRawArray();
 const songsRawObject = new Songs(songsRawArray).rawObject;
 
 const numberOfSingles = singlesRawArray.length;
-const asukaSingleImages = convertMemberSingleImages({
-  memberName: MemberNameKey.SaitouAsuka,
-  numberOfSingles,
-});
-const ranzeSingleImages = convertMemberSingleImages({
-  memberName: MemberNameKey.TeradaRanze,
-  numberOfSingles,
-});
-const nanaminSingleImages = convertMemberSingleImages({
-  memberName: MemberNameKey.HashimotoNanami,
-  numberOfSingles,
-});
-const nanaseSingleImages = convertMemberSingleImages({
-  memberName: MemberNameKey.NishinoNanase,
-  numberOfSingles,
-});
 
 const nanaminPositionsHistory = convertMemberPositionsHistory({
   memberName: MemberNameKey.HashimotoNanami,
@@ -47,63 +29,6 @@ const ioriPositionsHistory = convertMemberPositionsHistory({
   memberName: MemberNameKey.SagaraIori,
   singlesRawArray,
   songsRawObject,
-});
-
-describe('convertMemberSingleImages', () => {
-  test('should have the same amount of profile images to the amount of singles', () => {
-    expect(asukaSingleImages).toHaveLength(singlesRawArray.length);
-  });
-
-  test('should contain member profile image when the correspond file exists', () => {
-    expect(asukaSingleImages[24]).toEqual('members/25/saitouasuka.jpg');
-  });
-
-  test("should use the previous profile image when the correspond file doesn't exist", () => {
-    expect(asukaSingleImages[13]).toEqual('members/14/saitouasuka.jpg');
-
-    expect(asukaSingleImages[14]).toEqual('members/15/saitouasuka.jpg');
-
-    expect(asukaSingleImages[15]).toEqual('members/15/saitouasuka.jpg');
-  });
-
-  test('should use the empty string for singles before join', () => {
-    expect(ranzeSingleImages[5]).toEqual('');
-  });
-});
-
-describe('convertMemberProfileImage', () => {
-  test('should return the latest single profile image if not graduated', () => {
-    expect(
-      convertMemberProfileImage({
-        memberName: MemberNameKey.SaitouAsuka,
-        numberOfSingles,
-        memberSingleImages: asukaSingleImages,
-        isMemberGraduated: false,
-      })
-    ).toEqual(asukaSingleImages[asukaSingleImages.length - 1]);
-  });
-
-  test('should return the current profile image if graduated', () => {
-    expect(
-      convertMemberProfileImage({
-        memberName: MemberNameKey.NishinoNanase,
-        numberOfSingles,
-        memberSingleImages: nanaseSingleImages,
-        isMemberGraduated: true,
-      })
-    ).toEqual('members/graduated/nishinonanase.jpg');
-  });
-
-  test("should return the last profile image if graduated doesn't have a current profile image", () => {
-    expect(
-      convertMemberProfileImage({
-        memberName: MemberNameKey.HashimotoNanami,
-        numberOfSingles,
-        memberSingleImages: nanaminSingleImages,
-        isMemberGraduated: true,
-      })
-    ).toEqual(nanaminSingleImages[nanaminSingleImages.length - 1]);
-  });
 });
 
 describe('convertProfileImages', () => {

@@ -54,7 +54,6 @@ export type ProfileImages = {
 
 export type MemberResult = MemberRaw & {
   profileImage: string;
-  singleImages: string[];
   profileImages: ProfileImages;
   units: {
     name: string;
