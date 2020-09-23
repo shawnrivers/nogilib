@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useAppContext } from 'client/hooks/useAppContext';
 import { MemberResult } from 'server/actors/Members/models';
+import { getLocalizedNth } from 'client/i18n/utils';
 
 export type NameNotationsForIntl = Pick<
   MemberResult['nameNotations'],
@@ -38,8 +39,19 @@ export const useIntl = () => {
     [language]
   );
 
+  const formatNth = React.useCallback(
+    (
+      params: Omit<Parameters<typeof getLocalizedNth>[0], 'language'>
+    ): string | null => {
+      const { num, unit } = params;
+      return getLocalizedNth({ num, unit, language });
+    },
+    [language]
+  );
+
   return {
     formatDate,
     formatMemberName,
+    formatNth,
   };
 };
