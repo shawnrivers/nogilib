@@ -10,14 +10,16 @@ import { getMembersUrl, getMemberUrl } from 'client/utils/urls';
 import { useTranslations } from 'client/hooks/useTranslations';
 import { useIntl } from 'client/hooks/useIntl';
 import { MembersPageProps } from 'pages/members';
+import { useAppContext } from 'client/hooks/useAppContext';
 
 export const MembersPage: React.FC<MembersPageProps> = props => {
   const { currentFilter, memberGroupsByJoin } = props;
   const { getTranslation } = useTranslations();
   const { formatMemberName } = useIntl();
+  const { language } = useAppContext();
 
   return (
-    <PageContent title="members">
+    <PageContent title={{ text: getTranslation('members'), lang: language }}>
       <React.Fragment>
         <TextSwitchLinkGroup
           variant="h4"
@@ -65,7 +67,8 @@ export const MembersPage: React.FC<MembersPageProps> = props => {
                 <li key={member.name}>
                   <MemberCard
                     profileImage={member.profileImage}
-                    name={formatMemberName(member.nameNotations)}
+                    name={formatMemberName(member.nameNotations).name}
+                    lang={formatMemberName(member.nameNotations).lang}
                     nameElement="h3"
                     to={getMemberUrl(member.name)}
                     textSize="body2"

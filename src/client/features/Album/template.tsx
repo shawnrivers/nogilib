@@ -13,15 +13,20 @@ import { useTranslations } from 'client/hooks/useTranslations';
 import { HorizontalCard } from 'client/components/molecules/cards/HorizontalCard';
 import { useIntl } from 'client/hooks/useIntl';
 import { GridImage } from 'client/components/atoms/images/GirdImage';
+import { useAppContext } from 'client/hooks/useAppContext';
 
 export const AlbumPage: React.FC<AlbumPageProps> = props => {
-  const { Translation } = useTranslations();
-  const { formatDate } = useIntl();
+  const { Translation, getTranslation } = useTranslations();
+  const { formatDate, formatMemberName } = useIntl();
+  const { language } = useAppContext();
 
   return (
     <PageContent
-      title={props.title}
-      subtitle={`${toCdNumber(props.number)} ${props.type}`}
+      title={{ text: props.title, lang: 'ja' }}
+      subtitle={{
+        text: `${toCdNumber(props.number)} ${props.type}`,
+        lang: 'en',
+      }}
       showBackButton
       titleTextTransform="initial"
     >
@@ -38,7 +43,8 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
             text-align: center;
           `}
         >
-          <Translation text="release" />: {formatDate(props.release)}
+          <Translation text="release" />:{' '}
+          <time dateTime={props.release}>{formatDate(props.release)}</time>
         </Typography>
         <section>
           <TextDivider text={<Translation text="tracks" />} element="h2" />
@@ -63,8 +69,10 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
                     src: track.artwork,
                     alt: track.inCdType[0],
                   }}
-                  title={track.title}
-                  tags={[track.type]}
+                  title={{ text: track.title, lang: 'ja' }}
+                  tags={[
+                    { text: getTranslation(track.type as any), lang: language },
+                  ]}
                 />
               </li>
             ))}
@@ -84,10 +92,8 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
                 <li key={member.name}>
                   <MemberCard
                     profileImage={member.profileImage}
-                    name={
-                      member.nameNotations.lastName +
-                      member.nameNotations.firstName
-                    }
+                    name={formatMemberName(member.nameNotations).name}
+                    lang={formatMemberName(member.nameNotations).lang}
                     to={getMemberUrl(member.name)}
                     textSize="body2"
                     borderRadius="s"

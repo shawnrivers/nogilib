@@ -630,6 +630,11 @@ const dictionary = {
     ja: '設定',
     zh: '设定',
   },
+  'page not found': {
+    en: 'page not found',
+    ja: 'ページが見つかりませんでした',
+    zh: '没有找到对应页面',
+  },
 };
 
 export type DictionaryKey = keyof typeof dictionary;

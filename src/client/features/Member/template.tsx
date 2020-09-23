@@ -23,6 +23,36 @@ import { SectionSubtitle } from 'client/components/molecules/typography/SectionS
 import { GridImage } from 'client/components/atoms/images/GirdImage';
 import { Card } from 'client/components/atoms/Card';
 
+const SecondaryNameNotation: React.FC<{
+  nameNotations: MemberPageProps['names'];
+}> = props => {
+  const { nameNotations } = props;
+  const { language } = useAppContext();
+
+  return (
+    <Typography
+      variant="body1"
+      textColor={{
+        on: 'onBackground',
+        variant: 'variant0',
+      }}
+      css={css`
+        vertical-align: center;
+        text-transform: capitalize;
+        text-align: center;
+        margin-top: 0.3em;
+      `}
+      lang={language === 'ja' ? 'ja-Hira' : language === 'zh' ? 'en' : 'ja'}
+    >
+      {language === 'ja'
+        ? nameNotations.furigana
+        : language === 'zh'
+        ? nameNotations.en
+        : nameNotations.ja}
+    </Typography>
+  );
+};
+
 export const MemberPage: React.FC<MemberPageProps> = props => {
   const {
     name,
@@ -53,29 +83,14 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
 
   return (
     <PageContent
-      title={language !== 'en' ? names.ja : names.en}
+      title={{
+        text: language !== 'en' ? names.ja : names.en,
+        lang: language === 'en' ? 'ja' : 'en',
+      }}
       titleTextTransform="capitalize"
       showBackButton
     >
-      <Typography
-        variant="body1"
-        textColor={{
-          on: 'onBackground',
-          variant: 'variant0',
-        }}
-        css={css`
-          vertical-align: center;
-          text-transform: capitalize;
-          text-align: center;
-          margin-top: 0.3em;
-        `}
-      >
-        {language === 'ja'
-          ? names.furigana
-          : language === 'zh'
-          ? names.en
-          : names.ja}
-      </Typography>
+      <SecondaryNameNotation nameNotations={names} />
       <section>
         <TextDivider text={<Translation text="profile" />} element="h2" />
         <div
@@ -148,7 +163,9 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                 <InfoItemLabel>
                   <Translation text="units" />
                 </InfoItemLabel>
-                <InfoItemValue>{formatWordsWithCommas(units)}</InfoItemValue>
+                <InfoItemValue lang="ja">
+                  {formatWordsWithCommas(units)}
+                </InfoItemValue>
               </React.Fragment>
             )}
             {corps.length > 0 && (
@@ -156,7 +173,9 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                 <InfoItemLabel>
                   <Translation text="corps" />
                 </InfoItemLabel>
-                <InfoItemValue>{formatWordsWithCommas(corps)}</InfoItemValue>
+                <InfoItemValue lang="ja">
+                  {formatWordsWithCommas(corps)}
+                </InfoItemValue>
               </React.Fragment>
             )}
             {glowStickColor.left !== GlowStickColorType.None && (
@@ -265,6 +284,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                           text-align: center;
                           line-height: 1.4;
                         `}
+                        lang="ja"
                       >
                         {photoAlbum.title}
                       </Typography>

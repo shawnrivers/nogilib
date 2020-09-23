@@ -30,14 +30,28 @@ export const useIntl = () => {
   );
 
   const formatMemberName = React.useCallback(
-    (nameNotations: NameNotationsForIntl) => {
+    (
+      nameNotations: NameNotationsForIntl
+    ): {
+      name: string;
+      lang: 'ja' | 'en';
+    } => {
       switch (language) {
         case 'ja':
-          return `${nameNotations.lastName}${nameNotations.firstName}`;
+          return {
+            name: `${nameNotations.lastName}${nameNotations.firstName}`,
+            lang: 'ja',
+          };
         case 'zh':
-          return `${nameNotations.lastName}${nameNotations.firstName}`;
+          return {
+            name: `${nameNotations.lastName}${nameNotations.firstName}`,
+            lang: 'ja',
+          };
         case 'en':
-          return `${nameNotations.lastNameEn} ${nameNotations.firstNameEn}`;
+          return {
+            name: `${nameNotations.lastNameEn} ${nameNotations.firstNameEn}`,
+            lang: 'en',
+          };
       }
     },
     [language]
