@@ -149,6 +149,16 @@ const dictionary = {
     ja: 'シングル',
     zh: '单曲',
   },
+  album: {
+    en: 'album',
+    ja: 'アルバム',
+    zh: '专辑',
+  },
+  digital: {
+    en: 'digital',
+    ja: '配信シングル',
+    zh: '数字专辑',
+  },
   selected: {
     en: 'selected',
     ja: '選抜',

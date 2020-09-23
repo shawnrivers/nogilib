@@ -2,7 +2,7 @@ import { graphql } from 'gatsby';
 import * as React from 'react';
 import { MemberPage } from 'client/features/Member/template';
 import { MemberResult } from 'server/actors/Members/models';
-import { sortByDate, filterDuplicate } from 'utils/arrays';
+import { sortByDate } from 'utils/arrays';
 
 export const query = graphql`
   query($name: String!) {
@@ -16,9 +16,8 @@ export const query = graphql`
         lastNameEn
         lastNameFurigana
       }
-      sites {
-        title
-        url
+      profileImages {
+        gallery
       }
       join
       graduation {
@@ -36,15 +35,19 @@ export const query = graphql`
         left
         right
       }
-      profileImage
-      photoAlbums {
+      sites {
         title
+        url
+      }
+      photoAlbums {
+        cover
+        release
         sites {
           title
           url
         }
-        release
-        cover
+        title
+        type
       }
       positionsHistory {
         position
@@ -56,71 +59,89 @@ export const query = graphql`
         selected
         under
       }
-      singleImages
     }
   }
 `;
 
-interface MemberData {
-  data: {
-    membersJson: MemberResult;
-  };
-}
+type QueryResultMember = Pick<
+  MemberResult,
+  | 'name'
+  | 'nameNotations'
+  | 'graduation'
+  | 'join'
+  | 'birthday'
+  | 'height'
+  | 'bloodType'
+  | 'origin'
+  | 'units'
+  | 'glowStickColor'
+  | 'sites'
+  | 'photoAlbums'
+  | 'positionsHistory'
+  | 'positionsCounter'
+> & {
+  profileImages: Pick<MemberResult['profileImages'], 'gallery'>;
+};
 
-export type MemberPageProps = {
-  name: MemberResult['name'];
+type QueryResult = {
+  data: {
+    membersJson: QueryResultMember;
+  };
+};
+
+export type MemberPageProps = Pick<
+  QueryResultMember,
+  | 'name'
+  | 'join'
+  | 'graduation'
+  | 'birthday'
+  | 'height'
+  | 'bloodType'
+  | 'origin'
+  | 'sites'
+  | 'glowStickColor'
+  | 'photoAlbums'
+  | 'positionsHistory'
+  | 'positionsCounter'
+> & {
   names: {
     ja: string;
     en: string;
     furigana: string;
   };
-  profileImage: MemberResult['profileImage'];
-  sites: MemberResult['sites'];
-  join: MemberResult['join'];
-  graduation: Pick<MemberResult['graduation'], 'isGraduated'>;
-  birthday: MemberResult['birthday'];
-  height: MemberResult['height'];
-  bloodType: MemberResult['bloodType'];
-  origin: MemberResult['origin'];
   units: string[];
   corps: string[];
-  glowStickColor: MemberResult['glowStickColor'];
-  photoAlbums: Pick<
-    MemberResult['photoAlbums'][0],
-    'title' | 'sites' | 'release' | 'cover'
-  >[];
-  positionsHistory: MemberResult['positionsHistory'];
-  shouldShowPositionCounter: boolean;
-  positionsCounter: MemberResult['positionsCounter'];
+  profileImage: string;
   gallery: string[];
+  shouldShowPositionCounter: boolean;
 };
 
-const MemberPageContainer: React.FC<MemberData> = ({
-  data: { membersJson },
-}) => {
+const MemberPageContainer: React.FC<QueryResult> = props => {
+  const memberData = props.data.membersJson;
+
   const names = React.useMemo(
     () => ({
       ja:
-        membersJson.nameNotations.lastName +
+        memberData.nameNotations.lastName +
         ' ' +
-        membersJson.nameNotations.firstName,
+        memberData.nameNotations.firstName,
       en:
-        membersJson.nameNotations.lastNameEn +
+        memberData.nameNotations.lastNameEn +
         ' ' +
-        membersJson.nameNotations.firstNameEn,
+        memberData.nameNotations.firstNameEn,
       furigana:
-        membersJson.nameNotations.lastNameFurigana +
+        memberData.nameNotations.lastNameFurigana +
         ' ' +
-        membersJson.nameNotations.firstNameFurigana,
+        memberData.nameNotations.firstNameFurigana,
     }),
-    [membersJson.nameNotations]
+    [memberData.nameNotations]
   );
 
   const { units, corps } = React.useMemo(() => {
     let units = [];
     let corps = [];
 
-    for (const unit of membersJson.units) {
+    for (const unit of memberData.units) {
       if (unit.type === 'unit') {
         units.push(unit.name);
       } else {
@@ -132,60 +153,56 @@ const MemberPageContainer: React.FC<MemberData> = ({
       units,
       corps,
     };
-  }, [membersJson.units]);
+  }, [memberData.units]);
 
   const photoBooks = React.useMemo(
-    () => sortByDate(membersJson.photoAlbums, 'release', 'asc'),
-    [membersJson.photoAlbums]
+    () => sortByDate(memberData.photoAlbums, 'release', 'desc'),
+    [memberData.photoAlbums]
   );
 
   const positionsHistory = React.useMemo(
     () =>
-      membersJson.positionsHistory.filter(
-        history => history.position !== 'none'
-      ),
-    [membersJson.positionsHistory]
+      memberData.positionsHistory
+        .slice()
+        .reverse()
+        .filter(history => history.position !== 'none'),
+    [memberData.positionsHistory]
   );
 
   const shouldShowPositionCounter = React.useMemo(
     () =>
-      membersJson.positionsCounter.center +
-        membersJson.positionsCounter.fukujin +
-        membersJson.positionsCounter.selected +
-        membersJson.positionsCounter.under >
+      memberData.positionsCounter.center +
+        memberData.positionsCounter.fukujin +
+        memberData.positionsCounter.selected +
+        memberData.positionsCounter.under >
       0,
-    [membersJson.positionsCounter]
+    [memberData.positionsCounter]
   );
 
   const gallery = React.useMemo(() => {
-    const list = membersJson.singleImages
-      .slice()
-      .reverse()
-      .filter(image => image !== '');
+    return memberData.profileImages.gallery.slice().reverse();
+  }, [memberData.profileImages.gallery]);
 
-    return filterDuplicate(list);
-  }, [membersJson.singleImages]);
-
-  return membersJson ? (
+  return memberData ? (
     <MemberPage
-      name={membersJson.name}
+      name={memberData.name}
       names={names}
-      profileImage={membersJson.profileImage}
-      glowStickColor={membersJson.glowStickColor}
-      sites={membersJson.sites}
-      join={membersJson.join}
-      graduation={membersJson.graduation}
-      birthday={membersJson.birthday}
-      height={membersJson.height}
-      bloodType={membersJson.bloodType}
-      origin={membersJson.origin}
+      gallery={gallery}
+      profileImage={gallery[0]}
+      glowStickColor={memberData.glowStickColor}
+      sites={memberData.sites}
+      join={memberData.join}
+      graduation={memberData.graduation}
+      birthday={memberData.birthday}
+      height={memberData.height}
+      bloodType={memberData.bloodType}
+      origin={memberData.origin}
       units={units}
       corps={corps}
       photoAlbums={photoBooks}
       shouldShowPositionCounter={shouldShowPositionCounter}
       positionsHistory={positionsHistory}
-      positionsCounter={membersJson.positionsCounter}
-      gallery={gallery}
+      positionsCounter={memberData.positionsCounter}
     />
   ) : null;
 };

@@ -11,6 +11,15 @@ import { UnitsRawArray } from 'server/actors/Units/models';
 import { arrayToObject } from 'utils/arrays';
 import { DiscographyRawArray } from 'server/actors/Discography/models';
 
+type ConvertMemberParams = {
+  memberRaw: MemberRaw;
+  unitsRawArray: UnitsRawArray;
+  singlesRawArray: DiscographyRawArray;
+  albumsRawArray: DiscographyRawArray;
+  digitalRawArray: DiscographyRawArray;
+  songsRawObject: SongsRawObject;
+};
+
 export class Members {
   private rawDataArray: MembersRawArray;
   private rawDataObject: MembersRawObject;
@@ -34,15 +43,17 @@ export class Members {
     return this.resultData;
   }
 
-  public convertMembers({
-    unitsRawArray,
-    singlesRawArray,
-    songsRawObject,
-  }: {
-    unitsRawArray: UnitsRawArray;
-    singlesRawArray: DiscographyRawArray;
-    songsRawObject: SongsRawObject;
-  }): MembersResultArray {
+  public convertMembers(
+    params: Omit<ConvertMemberParams, 'memberRaw'>
+  ): MembersResultArray {
+    const {
+      unitsRawArray,
+      singlesRawArray,
+      albumsRawArray,
+      digitalRawArray,
+      songsRawObject,
+    } = params;
+
     const membersResult = [];
 
     for (const memberRaw of this.rawDataArray) {
@@ -51,6 +62,8 @@ export class Members {
           memberRaw,
           unitsRawArray,
           singlesRawArray,
+          albumsRawArray,
+          digitalRawArray,
           songsRawObject,
         })
       );
@@ -60,21 +73,15 @@ export class Members {
     return membersResult;
   }
 
-  private convertMember({
-    memberRaw,
-    unitsRawArray,
-    singlesRawArray,
-    songsRawObject,
-  }: {
-    memberRaw: MemberRaw;
-    unitsRawArray: UnitsRawArray;
-    singlesRawArray: DiscographyRawArray;
-    songsRawObject: SongsRawObject;
-  }): MemberResult {
-    const singleImages = MemberConverters.convertMemberSingleImages({
-      memberName: memberRaw.name,
-      numberOfSingles: singlesRawArray.length,
-    });
+  private convertMember(params: ConvertMemberParams): MemberResult {
+    const {
+      memberRaw,
+      unitsRawArray,
+      singlesRawArray,
+      albumsRawArray,
+      digitalRawArray,
+      songsRawObject,
+    } = params;
 
     const positionsHistory = MemberConverters.convertMemberPositionsHistory({
       memberName: memberRaw.name,
@@ -82,17 +89,18 @@ export class Members {
       songsRawObject,
     });
 
+    const profileImages = MemberConverters.convertProfileImages({
+      memberName: memberRaw.name,
+      singlesRawArray,
+      albumsRawArray,
+      digitalRawArray,
+    });
+
     return {
       name: memberRaw.name,
       nameNotations: memberRaw.nameNotations,
       glowStickColor: memberRaw.glowStickColor,
-      profileImage: MemberConverters.convertMemberProfileImage({
-        memberName: memberRaw.name,
-        numberOfSingles: singlesRawArray.length,
-        memberSingleImages: singleImages,
-        isMemberGraduated: memberRaw.graduation.isGraduated,
-      }),
-      singleImages,
+      profileImages,
       join: memberRaw.join,
       birthday: memberRaw.birthday,
       height: memberRaw.height,

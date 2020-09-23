@@ -12,7 +12,7 @@ import { useAppContext } from 'client/hooks/useAppContext';
 export type MemberDoc = {
   key: MemberResult['name'];
   nameNotations: MemberResult['nameNotations'];
-  profileImage: MemberResult['profileImage'];
+  profileImage: MemberResult['profileImages']['gallery'][0];
   join: MemberResult['join'];
 };
 

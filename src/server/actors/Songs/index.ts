@@ -129,8 +129,10 @@ export class Songs {
         songType: songRaw.type,
         songSingleResult,
         songAlbumsResult,
+        songOtherCdsResult,
         songPerformers: songRaw.performers,
         albumsRawObject,
+        otherCdsRawObject,
       }),
       formations: songRaw.formations,
     };
