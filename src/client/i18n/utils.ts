@@ -50,3 +50,16 @@ export function getLocalizedWords(params: {
     return words.join('');
   }
 }
+
+export function getLocalizedWordsSplitWithCommas(params: {
+  words: string[];
+  language: Language;
+}): string {
+  const { words, language } = params;
+
+  if (language === 'en') {
+    return words.join(', ');
+  } else {
+    return words.join('、');
+  }
+}

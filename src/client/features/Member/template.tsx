@@ -1,7 +1,6 @@
 /**@jsx jsx */
 import { jsx, css } from '@emotion/core';
 import * as React from 'react';
-import { LocalizedList } from 'client/components/atoms/locales/LocalizedList';
 import { PositionBadge } from 'client/features/Member/components/PositionBadge';
 import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
 import { PositionType } from 'server/actors/Members/constants/position';
@@ -48,7 +47,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
   const { language } = useAppContext();
   const { Translation, getTranslation } = useTranslations();
   const theme = useAppTheme();
-  const { formatDate } = useIntl();
+  const { formatDate, formatWordsWithCommas } = useIntl();
 
   useScrollRestoration();
 
@@ -149,9 +148,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                 <InfoItemLabel>
                   <Translation text="units" />
                 </InfoItemLabel>
-                <InfoItemValue>
-                  <LocalizedList list={units} />
-                </InfoItemValue>
+                <InfoItemValue>{formatWordsWithCommas(units)}</InfoItemValue>
               </React.Fragment>
             )}
             {corps.length > 0 && (
@@ -159,9 +156,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                 <InfoItemLabel>
                   <Translation text="corps" />
                 </InfoItemLabel>
-                <InfoItemValue>
-                  <LocalizedList list={corps} />
-                </InfoItemValue>
+                <InfoItemValue>{formatWordsWithCommas(corps)}</InfoItemValue>
               </React.Fragment>
             )}
             {glowStickColor.left !== GlowStickColorType.None && (

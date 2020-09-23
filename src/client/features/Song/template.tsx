@@ -2,7 +2,6 @@
 import { jsx, css } from '@emotion/core';
 import styled from '@emotion/styled';
 import * as React from 'react';
-import { LocalizedList } from 'client/components/atoms/locales/LocalizedList';
 import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
 import { KOJIHARU_IMAGE_SRC } from 'server/constants/paths';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
@@ -109,7 +108,7 @@ export const SongPage: React.FC<SongPageProps> = ({
   useScrollRestoration();
   const theme = useAppTheme();
   const { Translation } = useTranslations();
-  const { formatNth } = useIntl();
+  const { formatNth, formatWordsWithCommas } = useIntl();
 
   return (
     <PageContent title={title} showBackButton titleTextTransform="initial">
@@ -189,7 +188,7 @@ export const SongPage: React.FC<SongPageProps> = ({
                       <Translation text="lyrics" />
                     </InfoItemLabel>
                     <InfoItemValue>
-                      <LocalizedList list={creators.lyrics} />
+                      {formatWordsWithCommas(creators.lyrics)}
                     </InfoItemValue>
                   </React.Fragment>
                 )}
@@ -199,7 +198,7 @@ export const SongPage: React.FC<SongPageProps> = ({
                       <Translation text="compose" />
                     </InfoItemLabel>
                     <InfoItemValue>
-                      <LocalizedList list={creators.compose} />
+                      {formatWordsWithCommas(creators.compose)}
                     </InfoItemValue>
                   </React.Fragment>
                 )}
@@ -209,7 +208,7 @@ export const SongPage: React.FC<SongPageProps> = ({
                       <Translation text="arrange" />
                     </InfoItemLabel>
                     <InfoItemValue>
-                      <LocalizedList list={creators.arrange} />
+                      {formatWordsWithCommas(creators.arrange)}
                     </InfoItemValue>
                   </React.Fragment>
                 )}
@@ -219,7 +218,7 @@ export const SongPage: React.FC<SongPageProps> = ({
                       <Translation text="direct" />
                     </InfoItemLabel>
                     <InfoItemValue>
-                      <LocalizedList list={creators.direct} />
+                      {formatWordsWithCommas(creators.direct)}
                     </InfoItemValue>
                   </React.Fragment>
                 )}

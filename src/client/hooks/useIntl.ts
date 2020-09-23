@@ -1,7 +1,11 @@
 import * as React from 'react';
 import { useAppContext } from 'client/hooks/useAppContext';
 import { MemberResult } from 'server/actors/Members/models';
-import { getLocalizedNth, getLocalizedWords } from 'client/i18n/utils';
+import {
+  getLocalizedNth,
+  getLocalizedWords,
+  getLocalizedWordsSplitWithCommas,
+} from 'client/i18n/utils';
 
 export type NameNotationsForIntl = Pick<
   MemberResult['nameNotations'],
@@ -57,10 +61,20 @@ export const useIntl = () => {
     [language]
   );
 
+  const formatWordsWithCommas = React.useCallback(
+    (
+      words: Parameters<typeof getLocalizedWordsSplitWithCommas>[0]['words']
+    ): string | null => {
+      return getLocalizedWordsSplitWithCommas({ words, language });
+    },
+    [language]
+  );
+
   return {
     formatDate,
     formatMemberName,
     formatNth,
     formatWords,
+    formatWordsWithCommas,
   };
 };
