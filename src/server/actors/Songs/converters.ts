@@ -5,6 +5,7 @@ import {
   DiscographyRawArray,
   DiscographyRawObject,
 } from 'server/actors/Discography/models';
+import { sortByDate } from 'utils/arrays';
 
 type ConvertSongSingle = (params: {
   songTitle: SongRaw['title'];
@@ -54,12 +55,11 @@ export const convertSongAlbums: ConvertSongAlbums = ({
     }
   }
 
-  songAlbumsWithRelease.sort(
-    (albumA, albumB) =>
-      new Date(albumA.release).getTime() - new Date(albumB.release).getTime()
-  );
-
-  return songAlbumsWithRelease.map(({ title, number }) => ({ title, number }));
+  return sortByDate(
+    songAlbumsWithRelease,
+    'release',
+    'desc'
+  ).map(({ title, number }) => ({ title, number }));
 };
 
 export const convertSongOtherCds = (params: {
@@ -82,15 +82,12 @@ export const convertSongOtherCds = (params: {
     }
   }
 
-  songOtherCdsWithRelease.sort(
-    (albumA, albumB) =>
-      new Date(albumA.release).getTime() - new Date(albumB.release).getTime()
+  return sortByDate(songOtherCdsWithRelease, 'release', 'desc').map(
+    ({ title, number }) => ({
+      title,
+      number,
+    })
   );
-
-  return songOtherCdsWithRelease.map(({ title, number }) => ({
-    title,
-    number,
-  }));
 };
 
 type ConvertSongArtwork = (params: {
@@ -127,7 +124,8 @@ export const convertSongArtwork: ConvertSongArtwork = ({
   }
 
   if (songAlbumsResult.length > 0) {
-    const album = albumsRawObject[songAlbumsResult[0].title];
+    const oldestSongAlbumTitle = songAlbumsResult.slice().reverse()[0].title;
+    const album = albumsRawObject[oldestSongAlbumTitle];
 
     for (const albumSong of album.songs) {
       if (albumSong.title === songTitle) {
@@ -140,7 +138,9 @@ export const convertSongArtwork: ConvertSongArtwork = ({
   }
 
   if (songOtherCdsResult.length > 0) {
-    const otherCd = otherCdsRawObject[songOtherCdsResult[0].title];
+    const oldestSongOtherCdTitle = songOtherCdsResult.slice().reverse()[0]
+      .title;
+    const otherCd = otherCdsRawObject[oldestSongOtherCdTitle];
 
     for (const otherCdSong of otherCd.songs) {
       if (otherCdSong.title === songTitle) {
@@ -179,8 +179,8 @@ export const convertSongPerformersTag: ConvertSongPerformersTag = ({
   if (songSingleResult.number !== '') {
     singleNumber = songSingleResult.number;
   } else if (songAlbumsResult.length > 0) {
-    singleNumber =
-      albumsRawObject[songAlbumsResult[0].title].previousSingleNumber;
+    const oldestSongAlbumTitle = songAlbumsResult.slice().reverse()[0].title;
+    singleNumber = albumsRawObject[oldestSongAlbumTitle].previousSingleNumber;
   }
 
   if (songType === SongType.Unit) {
