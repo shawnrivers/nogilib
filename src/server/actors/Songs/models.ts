@@ -2,6 +2,7 @@ import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { SongType } from 'server/actors/Songs/constants/songType';
 import { SongTitle } from 'server/actors/Songs/constants/songTitle';
 import { UnitName } from 'server/actors/Units/constants/unitName';
+import { DiscographyType } from 'server/actors/Discography/types';
 
 export type SongRaw = {
   title: SongTitle;
@@ -41,6 +42,15 @@ export type SongResult = SongRaw & {
   performersTag: {
     name: string;
     singleNumber: string;
+    album:
+      | {
+          type: DiscographyType;
+          number: string;
+        }
+      | {
+          type: null;
+          number: null;
+        };
   };
 };
 

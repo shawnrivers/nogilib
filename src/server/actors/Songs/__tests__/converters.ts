@@ -178,12 +178,21 @@ describe('convertSongPerformersTag', () => {
           songTitle: song.title,
           albumsRawArray,
         }),
+        songOtherCdsResult: convertSongOtherCds({
+          songTitle: song.title,
+          otherCdsRawArray,
+        }),
         songPerformers: song.performers,
         albumsRawObject,
+        otherCdsRawObject,
       })
     ).toEqual({
       name: '',
       singleNumber: '16',
+      album: {
+        type: 'single',
+        number: '16',
+      },
     });
   });
 
@@ -201,12 +210,21 @@ describe('convertSongPerformersTag', () => {
           songTitle: song.title,
           albumsRawArray,
         }),
+        songOtherCdsResult: convertSongOtherCds({
+          songTitle: song.title,
+          otherCdsRawArray,
+        }),
         songPerformers: song.performers,
         albumsRawObject,
+        otherCdsRawObject,
       })
     ).toEqual({
       name: '',
       singleNumber: '22',
+      album: {
+        type: 'album',
+        number: '4',
+      },
     });
   });
 
@@ -225,12 +243,21 @@ describe('convertSongPerformersTag', () => {
           songTitle: titleSong.title,
           albumsRawArray,
         }),
+        songOtherCdsResult: convertSongOtherCds({
+          songTitle: titleSong.title,
+          otherCdsRawArray,
+        }),
         songPerformers: titleSong.performers,
         albumsRawObject,
+        otherCdsRawObject,
       })
     ).toEqual({
       name: 'selected',
       singleNumber: '25',
+      album: {
+        type: 'single',
+        number: '25',
+      },
     });
 
     expect(
@@ -244,12 +271,21 @@ describe('convertSongPerformersTag', () => {
           songTitle: couplingSong.title,
           albumsRawArray,
         }),
+        songOtherCdsResult: convertSongOtherCds({
+          songTitle: couplingSong.title,
+          otherCdsRawArray,
+        }),
         songPerformers: couplingSong.performers,
         albumsRawObject,
+        otherCdsRawObject,
       })
     ).toEqual({
       name: 'selected',
       singleNumber: '18',
+      album: {
+        type: 'single',
+        number: '18',
+      },
     });
   });
 
@@ -267,12 +303,21 @@ describe('convertSongPerformersTag', () => {
           songTitle: song.title,
           albumsRawArray,
         }),
+        songOtherCdsResult: convertSongOtherCds({
+          songTitle: song.title,
+          otherCdsRawArray,
+        }),
         songPerformers: song.performers,
         albumsRawObject,
+        otherCdsRawObject,
       })
     ).toEqual({
       name: 'selected',
       singleNumber: '22',
+      album: {
+        type: 'album',
+        number: '4',
+      },
     });
   });
 
@@ -290,12 +335,21 @@ describe('convertSongPerformersTag', () => {
           songTitle: song.title,
           albumsRawArray,
         }),
+        songOtherCdsResult: convertSongOtherCds({
+          songTitle: song.title,
+          otherCdsRawArray,
+        }),
         songPerformers: song.performers,
         albumsRawObject,
+        otherCdsRawObject,
       })
     ).toEqual({
       name: 'selected',
       singleNumber: '12',
+      album: {
+        type: 'single',
+        number: '12',
+      },
     });
   });
 
@@ -313,12 +367,21 @@ describe('convertSongPerformersTag', () => {
           songTitle: song.title,
           albumsRawArray,
         }),
+        songOtherCdsResult: convertSongOtherCds({
+          songTitle: song.title,
+          otherCdsRawArray,
+        }),
         songPerformers: song.performers,
         albumsRawObject,
+        otherCdsRawObject,
       })
     ).toEqual({
       name: '女子校カルテット',
       singleNumber: '22',
+      album: {
+        type: 'single',
+        number: '22',
+      },
     });
   });
 
@@ -336,12 +399,21 @@ describe('convertSongPerformersTag', () => {
           songTitle: song.title,
           albumsRawArray,
         }),
+        songOtherCdsResult: convertSongOtherCds({
+          songTitle: song.title,
+          otherCdsRawArray,
+        }),
         songPerformers: song.performers,
         albumsRawObject,
+        otherCdsRawObject,
       })
     ).toEqual({
       name: 'under',
       singleNumber: '15',
+      album: {
+        type: 'single',
+        number: '15',
+      },
     });
   });
 
@@ -362,12 +434,21 @@ describe('convertSongPerformersTag', () => {
           songTitle: firstGenSong.title,
           albumsRawArray,
         }),
+        songOtherCdsResult: convertSongOtherCds({
+          songTitle: firstGenSong.title,
+          otherCdsRawArray,
+        }),
         songPerformers: firstGenSong.performers,
         albumsRawObject,
+        otherCdsRawObject,
       })
     ).toEqual({
       name: 'first generation',
       singleNumber: '20',
+      album: {
+        type: 'single',
+        number: '20',
+      },
     });
 
     expect(
@@ -381,12 +462,21 @@ describe('convertSongPerformersTag', () => {
           songTitle: secondGenSong.title,
           albumsRawArray,
         }),
+        songOtherCdsResult: convertSongOtherCds({
+          songTitle: secondGenSong.title,
+          otherCdsRawArray,
+        }),
         songPerformers: secondGenSong.performers,
         albumsRawObject,
+        otherCdsRawObject,
       })
     ).toEqual({
       name: 'second generation',
       singleNumber: '25',
+      album: {
+        type: 'single',
+        number: '25',
+      },
     });
 
     expect(
@@ -400,12 +490,21 @@ describe('convertSongPerformersTag', () => {
           songTitle: thirdGenSong.title,
           albumsRawArray,
         }),
+        songOtherCdsResult: convertSongOtherCds({
+          songTitle: thirdGenSong.title,
+          otherCdsRawArray,
+        }),
         songPerformers: thirdGenSong.performers,
         albumsRawObject,
+        otherCdsRawObject,
       })
     ).toEqual({
       name: 'third generation',
       singleNumber: '17',
+      album: {
+        type: 'single',
+        number: '17',
+      },
     });
 
     expect(
@@ -419,12 +518,21 @@ describe('convertSongPerformersTag', () => {
           songTitle: fourthGenSong.title,
           albumsRawArray,
         }),
+        songOtherCdsResult: convertSongOtherCds({
+          songTitle: fourthGenSong.title,
+          otherCdsRawArray,
+        }),
         songPerformers: fourthGenSong.performers,
         albumsRawObject,
+        otherCdsRawObject,
       })
     ).toEqual({
       name: 'fourth generation',
       singleNumber: '23',
+      album: {
+        type: 'single',
+        number: '23',
+      },
     });
   });
 
@@ -436,12 +544,21 @@ describe('convertSongPerformersTag', () => {
         songType: SongType.None,
         songSingleResult: { title: '', number: '' },
         songAlbumsResult: [],
+        songOtherCdsResult: convertSongOtherCds({
+          songTitle: song.title,
+          otherCdsRawArray,
+        }),
         songPerformers: song.performers,
         albumsRawObject,
+        otherCdsRawObject,
       })
     ).toEqual({
       name: '',
       singleNumber: '',
+      album: {
+        type: 'digital',
+        number: '1',
+      },
     });
   });
 });
