@@ -55,7 +55,7 @@ export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props =
           <li key={result.heading.text}>
             <HorizontalCard
               to={result.to}
-              image={{ src: result.imgSrc, alt: result.heading.text }}
+              image={{ src: result.imgSrc, alt: '' }}
               title={result.heading}
               titleElement="h3"
               tags={result.captions}
@@ -68,7 +68,7 @@ export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props =
               <li key={result.heading.text}>
                 <HorizontalCard
                   to={result.to}
-                  image={{ src: result.imgSrc, alt: result.heading.text }}
+                  image={{ src: result.imgSrc, alt: '' }}
                   title={result.heading}
                   titleElement="h3"
                   tags={result.captions}
