@@ -8,13 +8,10 @@ type State = {
   language: Language;
 };
 
-export const getInitialState = (
-  theme?: ThemeMode | null,
-  language?: Language | null
-): State => ({
-  themeMode: theme ?? 'auto',
-  themeKey: theme === 'dark' ? 'dark' : 'light',
-  language: language ?? 'ja',
+export const getInitialState = (): State => ({
+  themeMode: 'auto',
+  themeKey: 'dark',
+  language: 'ja',
 });
 
 type Action =
