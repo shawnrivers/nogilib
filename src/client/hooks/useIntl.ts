@@ -67,9 +67,7 @@ export const useIntl = () => {
   );
 
   const formatWords = React.useCallback(
-    (
-      words: Parameters<typeof getLocalizedWords>[0]['words']
-    ): string | null => {
+    (words: Parameters<typeof getLocalizedWords>[0]['words']): string => {
       return getLocalizedWords({ words, language });
     },
     [language]
@@ -78,7 +76,7 @@ export const useIntl = () => {
   const formatWordsWithCommas = React.useCallback(
     (
       words: Parameters<typeof getLocalizedWordsSplitWithCommas>[0]['words']
-    ): string | null => {
+    ): string => {
       return getLocalizedWordsSplitWithCommas({ words, language });
     },
     [language]

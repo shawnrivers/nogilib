@@ -214,6 +214,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Gifu,
     sites: [
       {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/horimiona_2nd/',
+      },
+      {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/miona.hori/',
       },

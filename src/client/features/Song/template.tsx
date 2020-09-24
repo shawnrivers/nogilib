@@ -108,8 +108,8 @@ export const SongPage: React.FC<SongPageProps> = ({
 }) => {
   useScrollRestoration();
   const theme = useAppTheme();
-  const { Translation } = useTranslations();
-  const { formatNth, formatWordsWithCommas } = useIntl();
+  const { Translation, getTranslation } = useTranslations();
+  const { formatWords, formatNth, formatWordsWithCommas } = useIntl();
 
   return (
     <PageContent
@@ -164,7 +164,7 @@ export const SongPage: React.FC<SongPageProps> = ({
           >
             <GridArtworkImage
               src={artwork}
-              alt={title}
+              alt={formatWords([title, getTranslation('artwork')])}
               shadow
               fixedSize
               css={css`
