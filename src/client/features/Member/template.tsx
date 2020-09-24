@@ -23,40 +23,9 @@ import { SectionSubtitle } from 'client/components/molecules/typography/SectionS
 import { GridImage } from 'client/components/atoms/images/GirdImage';
 import { Card } from 'client/components/atoms/Card';
 
-const SecondaryNameNotation: React.FC<{
-  nameNotations: MemberPageProps['names'];
-}> = props => {
-  const { nameNotations } = props;
-  const { language } = useAppContext();
-
-  return (
-    <Typography
-      variant="body1"
-      textColor={{
-        on: 'onBackground',
-        variant: 'variant0',
-      }}
-      css={css`
-        vertical-align: center;
-        text-transform: capitalize;
-        text-align: center;
-        margin-top: 0.3em;
-      `}
-      lang={language === 'ja' ? 'ja-Hira' : language === 'zh' ? 'en' : 'ja'}
-    >
-      {language === 'ja'
-        ? nameNotations.furigana
-        : language === 'zh'
-        ? nameNotations.en
-        : nameNotations.ja}
-    </Typography>
-  );
-};
-
 export const MemberPage: React.FC<MemberPageProps> = props => {
   const {
-    name,
-    names,
+    nameNotations,
     profileImage,
     sites,
     join,
@@ -77,20 +46,51 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
   const { language } = useAppContext();
   const { Translation, getTranslation } = useTranslations();
   const theme = useAppTheme();
-  const { formatDate, formatWordsWithCommas } = useIntl();
+  const { formatWords, formatDate, formatWordsWithCommas } = useIntl();
 
   useScrollRestoration();
 
+  const kanjiName = [nameNotations.lastName, nameNotations.firstName].join(' ');
+  const enName = [nameNotations.lastNameEn, nameNotations.firstNameEn].join(
+    ' '
+  );
+  const furiganaName = [
+    nameNotations.lastNameFurigana,
+    nameNotations.firstNameFurigana,
+  ].join(' ');
+
+  const primaryName = {
+    text: language !== 'en' ? kanjiName : enName,
+    lang: language !== 'en' ? 'ja' : 'en',
+  };
+  const secondaryName = {
+    text:
+      language === 'ja' ? furiganaName : language === 'zh' ? enName : kanjiName,
+    lang: language === 'ja' ? 'ja-Hira' : language === 'zh' ? 'en' : 'ja',
+  };
+
   return (
     <PageContent
-      title={{
-        text: language !== 'en' ? names.ja : names.en,
-        lang: language === 'en' ? 'ja' : 'en',
-      }}
+      title={primaryName}
       titleTextTransform="capitalize"
       showBackButton
     >
-      <SecondaryNameNotation nameNotations={names} />
+      <Typography
+        variant="body1"
+        textColor={{
+          on: 'onBackground',
+          variant: 'variant0',
+        }}
+        css={css`
+          vertical-align: center;
+          text-transform: capitalize;
+          text-align: center;
+          margin-top: 0.3em;
+        `}
+        lang={secondaryName.lang}
+      >
+        {secondaryName.text}
+      </Typography>
       <section>
         <TextDivider text={<Translation text="profile" />} element="h2" />
         <div
@@ -107,7 +107,12 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
         >
           <GridMemberImage
             src={profileImage}
-            alt={name}
+            alt={formatWords([
+              language !== 'en'
+                ? nameNotations.lastName + nameNotations.firstName
+                : enName,
+              getTranslation('profile image'),
+            ])}
             fixedSize
             shadow
             css={css`
@@ -271,11 +276,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                     `}
                   >
                     <article>
-                      <GridImage
-                        ratio={1.1}
-                        src={photoAlbum.cover}
-                        alt={photoAlbum.title}
-                      />
+                      <GridImage ratio={1.1} src={photoAlbum.cover} alt="" />
                       <Typography
                         variant="body2"
                         element="p"
@@ -485,7 +486,9 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
               <li key={index}>
                 <GridMemberImage
                   src={profileImage}
-                  alt={name}
+                  alt={[getTranslation('profile image'), index + 1].join(
+                    language === 'en' ? ' ' : ''
+                  )}
                   shadow
                   fixedSize
                   css={css`

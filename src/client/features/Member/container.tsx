@@ -7,7 +7,6 @@ import { sortByDate } from 'utils/arrays';
 export const query = graphql`
   query($name: String!) {
     membersJson(name: { eq: $name }) {
-      name
       nameNotations {
         firstName
         firstNameEn
@@ -65,7 +64,6 @@ export const query = graphql`
 
 type QueryResultMember = Pick<
   MemberResult,
-  | 'name'
   | 'nameNotations'
   | 'graduation'
   | 'join'
@@ -91,7 +89,7 @@ type QueryResult = {
 
 export type MemberPageProps = Pick<
   QueryResultMember,
-  | 'name'
+  | 'nameNotations'
   | 'join'
   | 'graduation'
   | 'birthday'
@@ -104,11 +102,6 @@ export type MemberPageProps = Pick<
   | 'positionsHistory'
   | 'positionsCounter'
 > & {
-  names: {
-    ja: string;
-    en: string;
-    furigana: string;
-  };
   units: string[];
   corps: string[];
   profileImage: string;
@@ -118,24 +111,6 @@ export type MemberPageProps = Pick<
 
 const MemberPageContainer: React.FC<QueryResult> = props => {
   const memberData = props.data.membersJson;
-
-  const names = React.useMemo(
-    () => ({
-      ja:
-        memberData.nameNotations.lastName +
-        ' ' +
-        memberData.nameNotations.firstName,
-      en:
-        memberData.nameNotations.lastNameEn +
-        ' ' +
-        memberData.nameNotations.firstNameEn,
-      furigana:
-        memberData.nameNotations.lastNameFurigana +
-        ' ' +
-        memberData.nameNotations.firstNameFurigana,
-    }),
-    [memberData.nameNotations]
-  );
 
   const { units, corps } = React.useMemo(() => {
     let units = [];
@@ -185,8 +160,7 @@ const MemberPageContainer: React.FC<QueryResult> = props => {
 
   return memberData ? (
     <MemberPage
-      name={memberData.name}
-      names={names}
+      nameNotations={memberData.nameNotations}
       gallery={gallery}
       profileImage={gallery[0]}
       glowStickColor={memberData.glowStickColor}
