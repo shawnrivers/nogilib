@@ -3938,7 +3938,20 @@
         "url": "https://7gogo.jp/nakada-kana"
       }
     ],
-    "photoAlbums": [],
+    "photoAlbums": [
+      {
+        "title": "好きなことだけをしていたい",
+        "release": "2020-10-13",
+        "type": "photo album",
+        "sites": [
+          {
+            "title": "Twitter",
+            "url": "https://twitter.com/nakadakana_1st"
+          }
+        ],
+        "cover": "photo-albums/nakadakana_1.jpg"
+      }
+    ],
     "units": [
       {
         "name": "サンクエトワール",

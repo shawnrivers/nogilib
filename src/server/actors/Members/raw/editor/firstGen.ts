@@ -604,6 +604,20 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://7gogo.jp/nakada-kana',
       },
     ],
+    photoAlbums: [
+      {
+        title: '好きなことだけをしていたい',
+        release: '2020-10-13',
+        type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/nakadakana_1st',
+          },
+        ],
+        cover: 'photo-albums/nakadakana_1.jpg',
+      },
+    ],
   }),
   createMemberRaw({
     name: MemberNameKey.NishinoNanase,
