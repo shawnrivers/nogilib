@@ -57,6 +57,7 @@ const HomePage: React.FC = () => {
       >
         <GatsbyImage
           src="icon.png"
+          alt=""
           css={css`
             width: 224px;
             height: 224px;
