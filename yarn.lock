@@ -9180,10 +9180,10 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-framer-motion@^2.7.1:
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-2.7.1.tgz#65bbfa1547eab8f896571779bd09702af50e4fc2"
-  integrity sha512-LVsM59b/01eFENudzbaJP5wU8iFCy5ftsbeJ8ELG5ydZVq99PlRukhzPn1RLEWGpn8cADMKHT893/ps0Zi1wjw==
+framer-motion@^2.7.2:
+  version "2.7.2"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-2.7.2.tgz#9971ea4ee8565243e57ff25c1f1b058e7f28933d"
+  integrity sha512-ELGzshfzpmiA1ITv4Rl9NYtiLKB2rwI661yK1tuxyRiE9SHEg4f/XHZFvXYJAiaKmzI/XXfPclNrP4hUw7Sj2Q==
   dependencies:
     framesync "^4.1.0"
     hey-listen "^1.0.8"
