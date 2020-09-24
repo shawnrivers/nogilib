@@ -18,9 +18,7 @@ type Context = {
 };
 
 export const Context = React.createContext<Context>({
-  themeMode: 'auto',
-  themeKey: 'light',
-  language: 'ja',
+  ...getInitialState(),
   setThemeKey: () => null,
   setTheme: () => null,
   setLanguage: () => null,

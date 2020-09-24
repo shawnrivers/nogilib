@@ -142,7 +142,9 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
             <InfoItemLabel>
               <Translation text="birthday" />
             </InfoItemLabel>
-            <InfoItemValue>{formatDate(birthday)}</InfoItemValue>
+            <InfoItemValue>
+              <time dateTime={birthday}>{formatDate(birthday)}</time>
+            </InfoItemValue>
             <InfoItemLabel>
               <Translation text="height" />
             </InfoItemLabel>
