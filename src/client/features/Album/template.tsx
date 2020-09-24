@@ -67,7 +67,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
                   to={getSongUrl(track.key)}
                   image={{
                     src: track.artwork,
-                    alt: track.inCdType[0],
+                    alt: '',
                   }}
                   title={{ text: track.title, lang: 'ja' }}
                   tags={[
@@ -121,7 +121,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
               <li key={i}>
                 <GridImage
                   src={artwork.url}
-                  alt={String(i + 1)}
+                  alt={`Type ${artwork.type}`}
                   shadow
                   fixedSize
                   css={css`

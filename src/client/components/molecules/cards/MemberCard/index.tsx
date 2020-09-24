@@ -31,7 +31,7 @@ export const MemberCard: React.FC<MemberCardProps> = props => {
   return (
     <Card borderRadius={borderRadius} padding={padding} {...cardProps}>
       <article>
-        <GridMemberImage src={profileImage} alt={name} />
+        <GridMemberImage src={profileImage} alt="" />
         <Typography
           variant={textSize}
           element={nameElement}
