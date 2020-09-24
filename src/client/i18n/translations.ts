@@ -204,11 +204,6 @@ const dictionary = {
     ja: '4期生ブログ',
     zh: '4期生博客',
   },
-  Profile: {
-    en: 'Profile',
-    ja: 'プロフィール',
-    zh: '成员介绍',
-  },
   Official: {
     en: 'Official',
     ja: '公式サイト',
@@ -634,6 +629,11 @@ const dictionary = {
     en: 'page not found',
     ja: 'ページが見つかりませんでした',
     zh: '没有找到对应页面',
+  },
+  'profile image': {
+    en: 'profile image',
+    ja: 'プロフィール写真',
+    zh: '照片',
   },
 };
 
