@@ -1,45 +1,19 @@
 /**@jsx jsx */
-import { css, jsx } from '@emotion/core';
-import * as React from 'react';
-import { withKnobs, select } from '@storybook/addon-knobs';
-import { Hashtag } from '.';
+import { jsx } from '@emotion/core';
+import { Meta, Story } from '@storybook/react/types-6-0';
+import { Hashtag, HashtagProps } from '.';
 import { ThemeDecorator } from 'storybook/ThemeDecorator';
-import { useAppContext } from 'client/hooks/useAppContext';
-import { useAppTheme, commonStyles } from 'client/styles/tokens';
 
 export default {
-  title: 'HashTag',
-  decorators: [ThemeDecorator(), withKnobs],
-};
+  title: 'Hashtag',
+  component: Hashtag,
+  decorators: [ThemeDecorator()],
+} as Meta<HashtagProps>;
 
-export const All: React.FC = () => {
-  const { setThemeKey } = useAppContext();
+const Template: Story<HashtagProps> = props => <Hashtag {...props} />;
 
-  const selectThemeKey = select(
-    'Theme',
-    {
-      Dark: 'dark',
-      Light: 'light',
-    },
-    'dark'
-  );
+export const Default = Template.bind({});
 
-  React.useEffect(() => setThemeKey(selectThemeKey), [
-    selectThemeKey,
-    setThemeKey,
-  ]);
-  const theme = useAppTheme();
-
-  return (
-    <div
-      css={css`
-        background-color: ${theme.colors.theme.background.standard};
-        min-width: 100vw;
-        min-height: 100vh;
-        padding: ${commonStyles.spacing.l};
-      `}
-    >
-      <Hashtag>hashtag</Hashtag>
-    </div>
-  );
+Default.args = {
+  children: 'Hashtag',
 };
