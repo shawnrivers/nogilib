@@ -1,4 +1,5 @@
 import { MemberRaw } from 'server/actors/Members/models';
+import { sortBySocialMedia } from 'utils/arrays';
 
 type CreateMemberRawParams = {
   name: MemberRaw['name'];
@@ -27,7 +28,16 @@ type CreateMemberRawParams = {
   graduatedDate?: string;
 };
 
-export const createMemberRaw = (params: CreateMemberRawParams): MemberRaw => {
+type CreateMemberOptions = {
+  autoSortSites?: boolean;
+};
+
+export const createMemberRaw = (
+  params: CreateMemberRawParams,
+  options: CreateMemberOptions = {
+    autoSortSites: true,
+  }
+): MemberRaw => {
   const graduation =
     params.graduatedDate !== undefined
       ? {
@@ -58,7 +68,12 @@ export const createMemberRaw = (params: CreateMemberRawParams): MemberRaw => {
     height: params.height,
     bloodType: params.bloodType,
     origin: params.origin,
-    sites: params.sites ?? [],
+    sites:
+      params.sites === undefined
+        ? []
+        : options.autoSortSites
+        ? sortBySocialMedia(params.sites, 'asc')
+        : params.sites,
     photoAlbums:
       params.photoAlbums?.map(photoAlbum => ({
         title: photoAlbum.title,

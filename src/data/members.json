@@ -515,12 +515,12 @@
     "origin": "Düsseldorf, Germany",
     "sites": [
       {
-        "title": "blog",
-        "url": "https://blog.nogizaka46.com/erika.ikuta/"
-      },
-      {
         "title": "Instagram",
         "url": "https://www.instagram.com/ikutaerika.official/"
+      },
+      {
+        "title": "blog",
+        "url": "https://blog.nogizaka46.com/erika.ikuta/"
       },
       {
         "title": "Profile",
@@ -1525,12 +1525,12 @@
     "origin": "大分県",
     "sites": [
       {
-        "title": "Official",
-        "url": "https://etomisa.jp/"
-      },
-      {
         "title": "Instagram",
         "url": "https://www.instagram.com/misa_eto_official/"
+      },
+      {
+        "title": "Official",
+        "url": "https://etomisa.jp/"
       },
       {
         "title": "Profile",
@@ -2391,7 +2391,8 @@
         "members/singles/17/saitouyuuri.jpg",
         "members/singles/20/saitouyuuri.jpg",
         "members/singles/22/saitouyuuri.jpg",
-        "members/others/saitouyuuri_2020-04-29.jpg"
+        "members/others/saitouyuuri_2020-04-29.jpg",
+        "members/others/saitouyuuri_2020-09-26.jpg"
       ],
       "singles": [
         {
@@ -3206,16 +3207,16 @@
     "origin": "群馬県",
     "sites": [
       {
+        "title": "YouTube",
+        "url": "https://www.youtube.com/c/maishiraishi"
+      },
+      {
         "title": "blog",
         "url": "https://blog.nogizaka46.com/mai.shiraishi/"
       },
       {
         "title": "Profile",
         "url": "https://www.nogizaka46.com/member/detail/shiraishimai.php"
-      },
-      {
-        "title": "YouTube",
-        "url": "https://www.youtube.com/c/maishiraishi"
       },
       {
         "title": "755",
@@ -3578,12 +3579,12 @@
     "origin": "千葉県",
     "sites": [
       {
-        "title": "blog",
-        "url": "https://blog.nogizaka46.com/kazumi.takayama/"
-      },
-      {
         "title": "Instagram",
         "url": "https://instagram.com/takayama.kazumi.official/"
+      },
+      {
+        "title": "blog",
+        "url": "https://blog.nogizaka46.com/kazumi.takayama/"
       },
       {
         "title": "Profile",
@@ -4254,12 +4255,12 @@
     "origin": "大阪府",
     "sites": [
       {
-        "title": "Official",
-        "url": "https://nishinonanase.com/"
-      },
-      {
         "title": "Instagram",
         "url": "https://www.instagram.com/nishino.nanase.official/"
+      },
+      {
+        "title": "Official",
+        "url": "https://nishinonanase.com/"
       },
       {
         "title": "Profile",
@@ -4465,7 +4466,8 @@
         "members/singles/17/noujouami.jpg",
         "members/singles/20/noujouami.jpg",
         "members/singles/22/noujouami.jpg",
-        "members/others/noujouami_2020-04-29.jpg"
+        "members/others/noujouami_2020-04-29.jpg",
+        "members/others/noujouami_2020-09-26.jpg"
       ],
       "singles": [
         {
@@ -5546,12 +5548,12 @@
     "origin": "大阪府",
     "sites": [
       {
-        "title": "blog",
-        "url": "https://blog.nogizaka46.com/sayuri.matsumura/"
-      },
-      {
         "title": "Instagram",
         "url": "https://www.instagram.com/matsumura_sayuri_official/"
+      },
+      {
+        "title": "blog",
+        "url": "https://blog.nogizaka46.com/sayuri.matsumura/"
       },
       {
         "title": "Profile",
@@ -7303,7 +7305,8 @@
         "members/singles/14/itoumarika.jpg",
         "members/singles/15/itoumarika.jpg",
         "members/singles/17/itoumarika.jpg",
-        "members/others/itoumarika_2020-04-29.jpg"
+        "members/others/itoumarika_2020-04-29.jpg",
+        "members/others/itoumarika_2020-09-26.jpg"
       ],
       "singles": [
         {
@@ -7447,12 +7450,12 @@
     "origin": "神奈川県",
     "sites": [
       {
-        "title": "Official",
-        "url": "https://itomarika.com/"
-      },
-      {
         "title": "Instagram",
         "url": "https://www.instagram.com/marikaito_official/"
+      },
+      {
+        "title": "Official",
+        "url": "https://itomarika.com/"
       },
       {
         "title": "Profile",
@@ -8088,12 +8091,12 @@
     "origin": "静岡県",
     "sites": [
       {
-        "title": "Official",
-        "url": "https://fukagawamai.com/"
-      },
-      {
         "title": "Instagram",
         "url": "https://www.instagram.com/fukagawamai.official/"
+      },
+      {
+        "title": "Official",
+        "url": "https://fukagawamai.com/"
       }
     ],
     "photoAlbums": [
@@ -10428,12 +10431,12 @@
     "origin": "千葉県",
     "sites": [
       {
-        "title": "Twitter",
-        "url": "https://twitter.com/seira_miyazawa/"
-      },
-      {
         "title": "Instagram",
         "url": "https://www.instagram.com/seira_miyazawa/"
+      },
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/seira_miyazawa/"
       },
       {
         "title": "Ameba",
@@ -14536,7 +14539,8 @@
         "members/singles/14/sagaraiori.jpg",
         "members/singles/15/sagaraiori.jpg",
         "members/singles/17/sagaraiori.jpg",
-        "members/others/sagaraiori_2020-04-29.jpg"
+        "members/others/sagaraiori_2020-04-29.jpg",
+        "members/others/sagaraiori_2020-09-26.jpg"
       ],
       "singles": [
         {
