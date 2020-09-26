@@ -70,12 +70,12 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Düsseldorf,
     sites: [
       {
-        title: SocialMedia.Blog,
-        url: 'https://blog.nogizaka46.com/erika.ikuta/',
-      },
-      {
         title: SocialMedia.Instagram,
         url: 'https://www.instagram.com/ikutaerika.official/',
+      },
+      {
+        title: SocialMedia.Blog,
+        url: 'https://blog.nogizaka46.com/erika.ikuta/',
       },
       {
         title: SocialMedia.Profile,
@@ -213,12 +213,12 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Oita,
     sites: [
       {
-        title: SocialMedia.Official,
-        url: 'https://etomisa.jp/',
-      },
-      {
         title: SocialMedia.Instagram,
         url: 'https://www.instagram.com/misa_eto_official/',
+      },
+      {
+        title: SocialMedia.Official,
+        url: 'https://etomisa.jp/',
       },
       {
         title: SocialMedia.Profile,
@@ -456,16 +456,16 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Gunma,
     sites: [
       {
+        title: SocialMedia.YouTube,
+        url: 'https://www.youtube.com/c/maishiraishi',
+      },
+      {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/mai.shiraishi/',
       },
       {
         title: SocialMedia.Profile,
         url: 'https://www.nogizaka46.com/member/detail/shiraishimai.php',
-      },
-      {
-        title: SocialMedia.YouTube,
-        url: 'https://www.youtube.com/c/maishiraishi',
       },
       {
         title: SocialMedia.Nanagogo,
@@ -537,12 +537,12 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Chiba,
     sites: [
       {
-        title: SocialMedia.Blog,
-        url: 'https://blog.nogizaka46.com/kazumi.takayama/',
-      },
-      {
         title: SocialMedia.Instagram,
         url: 'https://instagram.com/takayama.kazumi.official/',
+      },
+      {
+        title: SocialMedia.Blog,
+        url: 'https://blog.nogizaka46.com/kazumi.takayama/',
       },
       {
         title: SocialMedia.Profile,
@@ -630,12 +630,12 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Osaka,
     sites: [
       {
-        title: SocialMedia.Official,
-        url: 'https://nishinonanase.com/',
-      },
-      {
         title: SocialMedia.Instagram,
         url: 'https://www.instagram.com/nishino.nanase.official/',
+      },
+      {
+        title: SocialMedia.Official,
+        url: 'https://nishinonanase.com/',
       },
       {
         title: SocialMedia.Profile,
@@ -789,12 +789,12 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Osaka,
     sites: [
       {
-        title: SocialMedia.Blog,
-        url: 'https://blog.nogizaka46.com/sayuri.matsumura/',
-      },
-      {
         title: SocialMedia.Instagram,
         url: 'https://www.instagram.com/matsumura_sayuri_official/',
+      },
+      {
+        title: SocialMedia.Blog,
+        url: 'https://blog.nogizaka46.com/sayuri.matsumura/',
       },
       {
         title: SocialMedia.Profile,
@@ -972,12 +972,12 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Kanagawa,
     sites: [
       {
-        title: SocialMedia.Official,
-        url: 'https://itomarika.com/',
-      },
-      {
         title: SocialMedia.Instagram,
         url: 'https://www.instagram.com/marikaito_official/',
+      },
+      {
+        title: SocialMedia.Official,
+        url: 'https://itomarika.com/',
       },
       {
         title: SocialMedia.Profile,
@@ -1056,12 +1056,12 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Shizuoka,
     sites: [
       {
-        title: SocialMedia.Official,
-        url: 'https://fukagawamai.com/',
-      },
-      {
         title: SocialMedia.Instagram,
         url: 'https://www.instagram.com/fukagawamai.official/',
+      },
+      {
+        title: SocialMedia.Official,
+        url: 'https://fukagawamai.com/',
       },
     ],
     photoAlbums: [
@@ -1247,12 +1247,12 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Chiba,
     sites: [
       {
-        title: SocialMedia.Twitter,
-        url: 'https://twitter.com/seira_miyazawa/',
-      },
-      {
         title: SocialMedia.Instagram,
         url: 'https://www.instagram.com/seira_miyazawa/',
+      },
+      {
+        title: SocialMedia.Twitter,
+        url: 'https://twitter.com/seira_miyazawa/',
       },
       {
         title: 'Ameba',
