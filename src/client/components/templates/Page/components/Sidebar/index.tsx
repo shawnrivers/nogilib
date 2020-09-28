@@ -55,11 +55,13 @@ const NavigationItem: React.FC<Omit<SidebarItemProps, 'element'>> = props => {
 
 const transition = { duration: 0.2 };
 
-export const Sidebar: React.FC<{
+export type SidebarProps = {
   open: boolean;
   onClose: () => void;
   className?: string;
-}> = props => {
+};
+
+export const Sidebar: React.FC<SidebarProps> = props => {
   const theme = useAppTheme();
   const { getTranslation } = useTranslations();
   const { open, onClose } = props;
