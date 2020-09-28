@@ -14,6 +14,7 @@ export type HashtagProps = Omit<TypographyProps, 'variant' | 'element'> & {
 
 export const Hashtag: React.FC<HashtagProps> = props => {
   const theme = useAppTheme();
+
   const {
     textColor = { on: 'onBackground', variant: 'variant0' },
     spacing = 'xs',

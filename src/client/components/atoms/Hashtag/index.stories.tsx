@@ -6,11 +6,13 @@ import { ThemeDecorator } from 'storybook/ThemeDecorator';
 
 export default {
   title: 'Hashtag',
-  component: Hashtag,
   decorators: [ThemeDecorator()],
+  component: Hashtag,
 } as Meta<HashtagProps>;
 
-const Template: Story<HashtagProps> = props => <Hashtag {...props} />;
+const Template: Story<HashtagProps> = props => {
+  return <Hashtag {...props} />;
+};
 
 export const Default = Template.bind({});
 
