@@ -8,12 +8,13 @@ import {
 } from 'client/components/atoms/Typography';
 import { SpacingKey } from 'client/styles/spacing';
 
-type HashTagProps = Omit<TypographyProps, 'variant' | 'element'> & {
+export type HashtagProps = Omit<TypographyProps, 'variant' | 'element'> & {
   spacing?: SpacingKey;
 };
 
-export const Hashtag: React.FC<HashTagProps> = props => {
+export const Hashtag: React.FC<HashtagProps> = props => {
   const theme = useAppTheme();
+
   const {
     textColor = { on: 'onBackground', variant: 'variant0' },
     spacing = 'xs',

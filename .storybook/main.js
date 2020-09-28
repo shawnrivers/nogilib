@@ -2,7 +2,11 @@ const path = require('path');
 
 module.exports = {
   stories: ['../src/**/*.stories.tsx'],
-  addons: ['@storybook/preset-typescript', '@storybook/addon-knobs'],
+  addons: [
+    '@storybook/addon-essentials',
+    '@storybook/addon-knobs',
+    '@storybook/preset-typescript',
+  ],
   webpackFinal: async config => {
     config.resolve.mainFields = ['browser', 'module', 'main'];
     config.resolve.alias['client'] = path.resolve(__dirname, '../src/client/');

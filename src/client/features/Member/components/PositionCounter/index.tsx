@@ -6,12 +6,12 @@ import { Typography } from 'client/components/atoms/Typography';
 import { componentElevationKey } from 'client/styles/elevation';
 import { POSITION_STYLES } from 'client/features/Member/constants/positionStyles';
 
-interface PositionCounterProps {
+export type PositionCounterProps = {
   center: number;
   fukujin: number;
   selected: number;
   under: number;
-}
+};
 
 export const PositionCounter: React.FC<PositionCounterProps> = props => {
   const { center, fukujin, selected, under } = props;

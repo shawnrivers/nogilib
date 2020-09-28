@@ -5,11 +5,13 @@ import { componentElevationKey } from 'client/styles/elevation';
 import { useAppTheme } from 'client/styles/tokens';
 import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
 
-export const GlowStickBadge: React.FC<{
+export type GlowStickBadgeProps = {
   color: GlowStickColorType;
   size?: number;
   className?: string;
-}> = props => {
+};
+
+export const GlowStickBadge: React.FC<GlowStickBadgeProps> = props => {
   const theme = useAppTheme();
   const { color, size = 24, className } = props;
 
