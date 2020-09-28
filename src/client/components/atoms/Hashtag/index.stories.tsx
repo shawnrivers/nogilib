@@ -5,7 +5,7 @@ import { Hashtag, HashtagProps } from '.';
 import { ThemeDecorator } from 'storybook/ThemeDecorator';
 
 export default {
-  title: 'Hashtag',
+  title: 'Common/Hashtag',
   decorators: [ThemeDecorator()],
   component: Hashtag,
 } as Meta<HashtagProps>;

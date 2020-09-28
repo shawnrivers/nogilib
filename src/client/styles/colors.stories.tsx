@@ -13,7 +13,7 @@ import { useAppContext } from 'client/hooks/useAppContext';
 import { ThemeDecorator } from 'storybook/ThemeDecorator';
 
 export default {
-  title: 'Colors',
+  title: 'Design System/Colors',
   decorators: [ThemeDecorator(), withKnobs],
 };
 

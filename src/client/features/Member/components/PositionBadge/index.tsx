@@ -27,9 +27,9 @@ const NoneBadge: React.FC = () => {
   );
 };
 
-interface PositionBadgeProps {
+export type PositionBadgeProps = {
   position: PositionType;
-}
+};
 
 export const PositionBadge: React.FC<PositionBadgeProps> = props => {
   const theme = useAppTheme();
