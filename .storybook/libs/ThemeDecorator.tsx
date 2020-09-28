@@ -1,14 +1,27 @@
 /**@jsx jsx */
 import { jsx, css } from '@emotion/core';
-import { ThemeProvider } from 'client/store/theme/context';
-import { AppContextProvider } from 'client/store/app/context';
+import { ThemeProvider } from 'emotion-theming';
+import { themes } from 'client/styles/tokens';
 
 export const ThemeDecorator = () => {
-  return (Story: any) => (
-    <AppContextProvider>
-      <ThemeProvider>
-        <Story />
+  return (Story: any, context: any) => {
+    console.log({ Story, context });
+
+    const themeKey = context.globals.theme as 'light' | 'dark';
+
+    return (
+      <ThemeProvider theme={themes[themeKey]}>
+        <div
+          css={css`
+            padding: 24px;
+            background-color: ${themeKey === 'dark'
+              ? themes.dark.colors.global.gray8
+              : themes.dark.colors.global.white};
+          `}
+        >
+          <Story />
+        </div>
       </ThemeProvider>
-    </AppContextProvider>
-  );
+    );
+  };
 };
