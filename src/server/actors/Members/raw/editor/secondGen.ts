@@ -178,6 +178,20 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://7gogo.jp/suzuki-ayane',
       },
     ],
+    photoAlbums: [
+      {
+        title: '光の角度',
+        release: '2020-11-10',
+        type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/ayane_gentosha',
+          },
+        ],
+        cover: 'photo-albums/suzukiayane_1.jpg',
+      },
+    ],
   }),
   createMemberRaw({
     name: MemberNameKey.TeradaRanze,

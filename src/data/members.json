@@ -13149,7 +13149,20 @@
         "url": "https://7gogo.jp/suzuki-ayane"
       }
     ],
-    "photoAlbums": [],
+    "photoAlbums": [
+      {
+        "title": "光の角度",
+        "release": "2020-11-10",
+        "type": "photo album",
+        "sites": [
+          {
+            "title": "Twitter",
+            "url": "https://twitter.com/ayane_gentosha"
+          }
+        ],
+        "cover": "photo-albums/suzukiayane_1.jpg"
+      }
+    ],
     "units": [
       {
         "name": "真夏さんリスペクト軍団",
