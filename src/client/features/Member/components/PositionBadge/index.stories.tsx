@@ -6,7 +6,7 @@ import { ThemeDecorator } from 'storybook/ThemeDecorator';
 import { PositionType } from 'server/actors/Members/constants/position';
 
 export default {
-  title: 'Position/badge',
+  title: 'Position/PositionBadge',
   decorators: [ThemeDecorator()],
   component: PositionBadge,
 } as Meta<PositionBadgeProps>;

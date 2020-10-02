@@ -8,7 +8,7 @@ import {
 } from 'client/features/Member/components/PositionCounter';
 
 export default {
-  title: 'Position/counter',
+  title: 'Position/PositionCounter',
   component: PositionCounter,
   decorators: [ThemeDecorator()],
 } as Meta<PositionCounterProps>;

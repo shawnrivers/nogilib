@@ -20,6 +20,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Saitama,
     sites: [
       {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/manatsu.akimoto_official/',
+      },
+      {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/manatsu.akimoto/',
       },
