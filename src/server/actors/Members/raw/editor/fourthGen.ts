@@ -238,7 +238,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: MemberNameKey.KuromiHaruka,
     nameNotations: ['黒見', '明香', 'くろみ', 'はるか', 'kuromi', 'haruka'],
-    glowStickColor: [GlowStickColorType.None, GlowStickColorType.None],
+    glowStickColor: [GlowStickColorType.Purple, GlowStickColorType.Green],
     join: JoinedGenerationType.Fourth,
     birthday: '2004-01-19',
     height: 162,
@@ -258,7 +258,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: MemberNameKey.SatouRika,
     nameNotations: ['佐藤', '璃果', 'さとう', 'りか', 'satou', 'rika'],
-    glowStickColor: [GlowStickColorType.None, GlowStickColorType.None],
+    glowStickColor: [GlowStickColorType.Pink, GlowStickColorType.LightBlue],
     join: JoinedGenerationType.Fourth,
     birthday: '2001-08-09',
     height: 158,
@@ -278,7 +278,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: MemberNameKey.HayashiRuna,
     nameNotations: ['林', '瑠奈', 'はやし', 'るな', 'hayashi', 'runa'],
-    glowStickColor: [GlowStickColorType.None, GlowStickColorType.None],
+    glowStickColor: [GlowStickColorType.Pink, GlowStickColorType.Pink],
     join: JoinedGenerationType.Fourth,
     birthday: '2003-10-02',
     height: 163,
@@ -298,7 +298,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: MemberNameKey.MatsuoMiyu,
     nameNotations: ['松尾', '美佑', 'まつお', 'みゆ', 'matsuo', 'miyu'],
-    glowStickColor: [GlowStickColorType.None, GlowStickColorType.None],
+    glowStickColor: [GlowStickColorType.LightBlue, GlowStickColorType.White],
     join: JoinedGenerationType.Fourth,
     birthday: '2004-01-03',
     height: 165,
@@ -318,7 +318,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: MemberNameKey.YumikiNao,
     nameNotations: ['弓木', '奈於', 'ゆみき', 'なお', 'yumiki', 'nao'],
-    glowStickColor: [GlowStickColorType.None, GlowStickColorType.None],
+    glowStickColor: [GlowStickColorType.Red, GlowStickColorType.YellowGreen],
     join: JoinedGenerationType.Fourth,
     birthday: '1999-02-03',
     height: 165,
