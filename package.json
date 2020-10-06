@@ -64,7 +64,7 @@
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.3.32",
     "gatsby-transformer-json": "^2.4.13",
-    "gatsby-transformer-sharp": "^2.5.16",
+    "gatsby-transformer-sharp": "^2.5.17",
     "node": "^14.13.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
