@@ -72,7 +72,7 @@
   },
   "devDependencies": {
     "@storybook/addon-actions": "^6.0.22",
-    "@storybook/addon-knobs": "^6.0.22",
+    "@storybook/addon-knobs": "^6.0.26",
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/react": "^6.0.22",
     "@types/jest": "^26.0.14",
