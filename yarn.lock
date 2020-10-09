@@ -5698,7 +5698,7 @@ buffer-alloc-unsafe@^1.1.0:
   resolved "https://registry.yarnpkg.com/buffer-alloc-unsafe/-/buffer-alloc-unsafe-1.1.0.tgz#bd7dc26ae2972d0eda253be061dba992349c19f0"
   integrity sha512-TEM2iMIEQdJ2yjPJoSIsldnleVaAk1oW3DBVUykyOLsEsFmEc9kn+SFFPz+gl54KQNxlDnAwCXosOS9Okx2xAg==
 
-buffer-alloc@^1.1.0, buffer-alloc@^1.2.0:
+buffer-alloc@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/buffer-alloc/-/buffer-alloc-1.2.0.tgz#890dd90d923a873e08e10e5fd51a57e5b7cce0ec"
   integrity sha512-CFsHQgjtW1UChdXgbyJGtnm+O/uLQeZdtbDo8mfUgYXCHSM1wgrVxXm6bSyrUuErEb+4sYVGCzASBRot7zyrow==
@@ -9220,10 +9220,10 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-framer-motion@^2.7.8:
-  version "2.7.8"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-2.7.8.tgz#3bc607200642b4a331df1d5e44eec8e2f4a0dcaf"
-  integrity sha512-PKfkSlpN1i7XTYNMuU5X/efgtBUoSc1APM0n4VDl+5wX+Ch5sPVyQP4wNyQKZM4sJL8Eb/HPLH0CE7KcAgKwqg==
+framer-motion@^2.8.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-2.8.0.tgz#f77ae82eeb8277f6aa0b357fd95b946c273bf226"
+  integrity sha512-ZWuAZmrKIZ+5BKqd6BUTddNijcjoAl7TDbP2JnWUhtRqA6/a0qG8Ku/8+bcLZO00G8KY4B0BzvkbeLCVMgmGIQ==
   dependencies:
     framesync "^4.1.0"
     hey-listen "^1.0.8"
@@ -13191,13 +13191,6 @@ material-colors@^1.2.1:
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/material-colors/-/material-colors-1.2.6.tgz#6d1958871126992ceecc72f4bcc4d8f010865f46"
   integrity sha512-6qE4B9deFBIa9YSpOc9O0Sgc43zTeVYbgDT5veRKSlB2+ZuHNoVVxA1L/ckMUayV9Ay9y7Z/SZCLcGteW9i7bg==
-
-md5-file@^3.2.3:
-  version "3.2.3"
-  resolved "https://registry.yarnpkg.com/md5-file/-/md5-file-3.2.3.tgz#f9bceb941eca2214a4c0727f5e700314e770f06f"
-  integrity sha512-3Tkp1piAHaworfcCgH0jKbTvj1jWWFgbvh2cXaNCgHwyTCBxxvD1Y04rmfpvdPm1P4oXMOpm6+2H7sr7v9v8Fw==
-  dependencies:
-    buffer-alloc "^1.1.0"
 
 md5-file@^5.0.0:
   version "5.0.0"
