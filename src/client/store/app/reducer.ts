@@ -2,7 +2,7 @@ import { ThemeKey } from 'client/styles/colors';
 import { Language } from 'client/types/language';
 import { ThemeMode } from 'client/types/themeMode';
 
-type State = {
+export type State = {
   themeMode: ThemeMode;
   themeKey: ThemeKey;
   language: Language;

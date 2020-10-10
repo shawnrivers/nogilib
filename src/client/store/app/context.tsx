@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { getInitialState, reducer } from 'client/store/app/reducer';
+import { getInitialState, reducer, State } from 'client/store/app/reducer';
 import { ThemeMode } from 'client/types/themeMode';
 import { ThemeKey } from 'client/styles/colors';
 import {
@@ -8,10 +8,7 @@ import {
 } from 'client/utils/constants';
 import { Language } from 'client/types/language';
 
-type Context = {
-  themeMode: ThemeMode;
-  themeKey: ThemeKey;
-  language: Language;
+type Context = State & {
   setThemeKey(themeKey: ThemeKey): void;
   setTheme(themeMode: ThemeMode): void;
   setLanguage(language: Language): void;
