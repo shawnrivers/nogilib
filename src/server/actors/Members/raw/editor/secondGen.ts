@@ -114,6 +114,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         title: SocialMedia.Instagram,
         url: 'https://www.instagram.com/sasaki_kotoko828/',
       },
+      {
+        title: SocialMedia.Twitter,
+        url: 'https://twitter.com/ssk_ktk828',
+      },
     ],
     graduatedDate: '2020-03-31',
   }),

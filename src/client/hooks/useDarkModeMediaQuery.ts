@@ -1,7 +1,9 @@
 import * as React from 'react';
 import { Context } from 'client/store/app/context';
 
-export const useDarkModeMediaQuery = () => {
+type DarkModeQueryEventHandler = (event: MediaQueryListEvent) => void;
+
+export function useDarkModeMediaQuery() {
   const { themeMode, setThemeKey } = React.useContext(Context);
 
   React.useEffect(() => {
@@ -9,14 +11,10 @@ export const useDarkModeMediaQuery = () => {
       '(prefers-color-scheme: dark)'
     );
 
-    // Change theme when system settings have been changed
-    const handleDarkModeQueryChange = (event: MediaQueryListEvent) => {
-      if (event.matches) {
-        setThemeKey('dark');
-      } else {
-        setThemeKey('light');
-      }
-    };
+    const handleDarkModeQueryChange = createDarkModeQueryChangeHandler({
+      onMatch: () => setThemeKey('dark'),
+      onUnMatch: () => setThemeKey('light'),
+    });
 
     // Auto change theme based on system settings
     if (themeMode === 'auto') {
@@ -30,25 +28,54 @@ export const useDarkModeMediaQuery = () => {
         }
       }
 
-      if (typeof darkModeMediaQuery.addEventListener === 'function') {
-        darkModeMediaQuery.addEventListener(
-          'change',
-          handleDarkModeQueryChange
-        );
-      } else {
-        darkModeMediaQuery.addListener(handleDarkModeQueryChange);
-      }
+      subscribeDarkModeMediaQueryEventListeners(
+        darkModeMediaQuery,
+        handleDarkModeQueryChange
+      );
     }
 
     return () => {
-      if (typeof darkModeMediaQuery.addEventListener === 'function') {
-        darkModeMediaQuery.removeEventListener(
-          'change',
-          handleDarkModeQueryChange
-        );
-      } else {
-        darkModeMediaQuery.removeListener(handleDarkModeQueryChange);
-      }
+      clearUpDarkModeMediaQueryEventListeners(
+        darkModeMediaQuery,
+        handleDarkModeQueryChange
+      );
     };
   }, [themeMode, setThemeKey]);
-};
+}
+
+function createDarkModeQueryChangeHandler(params: {
+  onMatch(): void;
+  onUnMatch(): void;
+}): DarkModeQueryEventHandler {
+  function handleDarkModeQueryChange(event: MediaQueryListEvent) {
+    if (event.matches) {
+      params.onMatch();
+    } else {
+      params.onUnMatch();
+    }
+  }
+
+  return handleDarkModeQueryChange;
+}
+
+function subscribeDarkModeMediaQueryEventListeners(
+  darkModeMediaQuery: MediaQueryList,
+  onDarkModeQueryChange: DarkModeQueryEventHandler
+) {
+  if (typeof darkModeMediaQuery.addEventListener === 'function') {
+    darkModeMediaQuery.addEventListener('change', onDarkModeQueryChange);
+  } else {
+    darkModeMediaQuery.addListener(onDarkModeQueryChange);
+  }
+}
+
+function clearUpDarkModeMediaQueryEventListeners(
+  darkModeMediaQuery: MediaQueryList,
+  onDarkModeQueryChange: DarkModeQueryEventHandler
+) {
+  if (typeof darkModeMediaQuery.addEventListener === 'function') {
+    darkModeMediaQuery.removeEventListener('change', onDarkModeQueryChange);
+  } else {
+    darkModeMediaQuery.removeListener(onDarkModeQueryChange);
+  }
+}
