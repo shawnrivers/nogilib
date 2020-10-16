@@ -724,6 +724,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Tokyo,
     sites: [
       {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/higuchi_hina_official/',
+      },
+      {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/hina.higuchi/',
       },
