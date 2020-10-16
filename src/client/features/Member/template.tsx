@@ -306,7 +306,6 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
             element="h2"
           />
           <ol
-            start={parseInt(positionsHistory[0].singleNumber)}
             css={css`
               display: flex;
               flex-wrap: wrap;
@@ -316,6 +315,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
             {positionsHistory.map(position => (
               <li
                 key={position.singleNumber}
+                value={position.singleNumber}
                 css={css`
                   display: flex;
                   flex-direction: column;
