@@ -3931,6 +3931,10 @@
     "origin": "埼玉県",
     "sites": [
       {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/nakadakana_1st/"
+      },
+      {
         "title": "blog",
         "url": "https://blog.nogizaka46.com/kana.nakada/"
       },
@@ -4076,8 +4080,8 @@
       "under": 17
     },
     "graduation": {
-      "isGraduated": false,
-      "graduatedDate": ""
+      "isGraduated": true,
+      "graduatedDate": "2020-10-26"
     }
   },
   {
