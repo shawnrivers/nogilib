@@ -2,7 +2,7 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 import { MemberResult } from 'server/actors/Members/models';
 import { MembersPage } from 'client/features/Members/template';
-import { sortByJoin } from 'utils/arrays';
+import { sortByJoin, sortByGraduation } from 'utils/arrays';
 import { useFilter } from 'client/hooks/useFilter';
 import { MembersUrlFilter } from 'client/utils/urls';
 
@@ -59,7 +59,11 @@ const MembersPageContainer: React.FC<QueryResult> = props => {
     [memberCards]
   );
   const graduatedMembersData = React.useMemo(
-    () => memberCards.filter(member => member.graduation.isGraduated),
+    () =>
+      sortByGraduation(
+        memberCards.filter(member => member.graduation.isGraduated),
+        'desc'
+      ),
     [memberCards]
   );
   const allMemberGroupByJoin = React.useMemo(
