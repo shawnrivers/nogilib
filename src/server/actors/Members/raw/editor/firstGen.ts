@@ -594,7 +594,12 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     height: 158,
     bloodType: BloodType.A,
     origin: Birthplace.Saitama,
+    graduatedDate: '2020-10-26',
     sites: [
+      {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/nakadakana_1st/',
+      },
       {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/kana.nakada/',
