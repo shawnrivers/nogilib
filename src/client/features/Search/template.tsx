@@ -1,7 +1,6 @@
 /**@jsx jsx */
 import { jsx, css } from '@emotion/core';
 import * as React from 'react';
-import { SearchIcon } from 'client/components/atoms/icons/SearchIcon';
 import {
   SearchResultCategory,
   SearchResultCategoryProps,
@@ -55,14 +54,6 @@ export const Search: React.FC<SearchProps> = props => {
             margin: auto;
           `}
         >
-          <label htmlFor="search-box">
-            <SearchIcon
-              title={getTranslation('search')}
-              css={css`
-                fill: ${theme.colors.theme.onBackground.standard};
-              `}
-            />
-          </label>
           <Typography
             variant="body1"
             element="div"
@@ -72,7 +63,6 @@ export const Search: React.FC<SearchProps> = props => {
             `}
           >
             <input
-              id="search-box"
               type="text"
               value={query}
               onChange={search}
