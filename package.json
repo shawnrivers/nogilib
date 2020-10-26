@@ -42,7 +42,8 @@
     "hooks": {
       "pre-commit": [
         "lint-staged"
-      ]
+      ],
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "dependencies": {
@@ -71,6 +72,8 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@storybook/addon-actions": "^6.0.21",
     "@storybook/addon-essentials": "^6.0.22",
     "@storybook/addon-knobs": "^6.0.21",
