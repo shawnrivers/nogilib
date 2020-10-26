@@ -66,7 +66,9 @@ export const Search: React.FC<SearchProps> = props => {
               type="text"
               value={query}
               onChange={search}
-              placeholder={getTranslation('Song title, member name, etc.')}
+              placeholder={getTranslation(
+                'Search song title, member name, etc.'
+              )}
               css={css`
                 width: 100%;
                 border-width: 2px;
