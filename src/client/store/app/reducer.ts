@@ -2,19 +2,16 @@ import { ThemeKey } from 'client/styles/colors';
 import { Language } from 'client/types/language';
 import { ThemeMode } from 'client/types/themeMode';
 
-type State = {
+export type State = {
   themeMode: ThemeMode;
   themeKey: ThemeKey;
   language: Language;
 };
 
-export const getInitialState = (
-  theme?: ThemeMode | null,
-  language?: Language | null
-): State => ({
-  themeMode: theme ?? 'auto',
-  themeKey: theme === 'dark' ? 'dark' : 'light',
-  language: language ?? 'ja',
+export const getInitialState = (): State => ({
+  themeMode: 'auto',
+  themeKey: 'dark',
+  language: 'ja',
 });
 
 type Action =

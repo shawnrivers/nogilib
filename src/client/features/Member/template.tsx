@@ -1,7 +1,6 @@
 /**@jsx jsx */
 import { jsx, css } from '@emotion/core';
 import * as React from 'react';
-import { LocalizedList } from 'client/components/atoms/locales/LocalizedList';
 import { PositionBadge } from 'client/features/Member/components/PositionBadge';
 import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
 import { PositionType } from 'server/actors/Members/constants/position';
@@ -26,8 +25,7 @@ import { Card } from 'client/components/atoms/Card';
 
 export const MemberPage: React.FC<MemberPageProps> = props => {
   const {
-    name,
-    names,
+    nameNotations,
     profileImage,
     sites,
     join,
@@ -48,13 +46,32 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
   const { language } = useAppContext();
   const { Translation, getTranslation } = useTranslations();
   const theme = useAppTheme();
-  const { formatDate } = useIntl();
+  const { formatWords, formatDate, formatWordsWithCommas } = useIntl();
 
   useScrollRestoration();
 
+  const kanjiName = [nameNotations.lastName, nameNotations.firstName].join(' ');
+  const enName = [nameNotations.lastNameEn, nameNotations.firstNameEn].join(
+    ' '
+  );
+  const furiganaName = [
+    nameNotations.lastNameFurigana,
+    nameNotations.firstNameFurigana,
+  ].join(' ');
+
+  const primaryName = {
+    text: language !== 'en' ? kanjiName : enName,
+    lang: language !== 'en' ? 'ja' : 'en',
+  };
+  const secondaryName = {
+    text:
+      language === 'ja' ? furiganaName : language === 'zh' ? enName : kanjiName,
+    lang: language === 'ja' ? 'ja-Hira' : language === 'zh' ? 'en' : 'ja',
+  };
+
   return (
     <PageContent
-      title={language !== 'en' ? names.ja : names.en}
+      title={primaryName}
       titleTextTransform="capitalize"
       showBackButton
     >
@@ -70,12 +87,9 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
           text-align: center;
           margin-top: 0.3em;
         `}
+        lang={secondaryName.lang}
       >
-        {language === 'ja'
-          ? names.furigana
-          : language === 'zh'
-          ? names.en
-          : names.ja}
+        {secondaryName.text}
       </Typography>
       <section>
         <TextDivider text={<Translation text="profile" />} element="h2" />
@@ -93,7 +107,12 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
         >
           <GridMemberImage
             src={profileImage}
-            alt={name}
+            alt={formatWords([
+              language !== 'en'
+                ? nameNotations.lastName + nameNotations.firstName
+                : enName,
+              getTranslation('profile image'),
+            ])}
             fixedSize
             shadow
             css={css`
@@ -123,7 +142,9 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
             <InfoItemLabel>
               <Translation text="birthday" />
             </InfoItemLabel>
-            <InfoItemValue>{formatDate(birthday)}</InfoItemValue>
+            <InfoItemValue>
+              <time dateTime={birthday}>{formatDate(birthday)}</time>
+            </InfoItemValue>
             <InfoItemLabel>
               <Translation text="height" />
             </InfoItemLabel>
@@ -149,8 +170,8 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                 <InfoItemLabel>
                   <Translation text="units" />
                 </InfoItemLabel>
-                <InfoItemValue>
-                  <LocalizedList list={units} />
+                <InfoItemValue lang="ja">
+                  {formatWordsWithCommas(units)}
                 </InfoItemValue>
               </React.Fragment>
             )}
@@ -159,8 +180,8 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                 <InfoItemLabel>
                   <Translation text="corps" />
                 </InfoItemLabel>
-                <InfoItemValue>
-                  <LocalizedList list={corps} />
+                <InfoItemValue lang="ja">
+                  {formatWordsWithCommas(corps)}
                 </InfoItemValue>
               </React.Fragment>
             )}
@@ -257,11 +278,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                     `}
                   >
                     <article>
-                      <GridImage
-                        ratio={1.1}
-                        src={photoAlbum.cover}
-                        alt={photoAlbum.title}
-                      />
+                      <GridImage ratio={1.1} src={photoAlbum.cover} alt="" />
                       <Typography
                         variant="body2"
                         element="p"
@@ -270,6 +287,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                           text-align: center;
                           line-height: 1.4;
                         `}
+                        lang="ja"
                       >
                         {photoAlbum.title}
                       </Typography>
@@ -288,7 +306,6 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
             element="h2"
           />
           <ol
-            start={parseInt(positionsHistory[0].singleNumber)}
             css={css`
               display: flex;
               flex-wrap: wrap;
@@ -298,6 +315,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
             {positionsHistory.map(position => (
               <li
                 key={position.singleNumber}
+                value={position.singleNumber}
                 css={css`
                   display: flex;
                   flex-direction: column;
@@ -470,7 +488,9 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
               <li key={index}>
                 <GridMemberImage
                   src={profileImage}
-                  alt={name}
+                  alt={[getTranslation('profile image'), index + 1].join(
+                    language === 'en' ? ' ' : ''
+                  )}
                   shadow
                   fixedSize
                   css={css`

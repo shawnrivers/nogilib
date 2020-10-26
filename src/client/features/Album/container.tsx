@@ -39,7 +39,16 @@ export const query = graphql`
           lastNameEn
           firstNameEn
         }
-        singleImages
+        profileImages {
+          singles {
+            number
+            url
+          }
+          digital {
+            number
+            url
+          }
+        }
       }
     }
   }
@@ -68,7 +77,7 @@ type QueryResultMember = {
     MemberResult['nameNotations'],
     'lastName' | 'firstName' | 'lastNameEn' | 'firstNameEn'
   >;
-  singleImages: MemberResult['singleImages'];
+  profileImages: Pick<MemberResult['profileImages'], 'singles' | 'digital'>;
 };
 
 type QueryResult = {
@@ -101,17 +110,13 @@ export type AlbumPageProps = {
       MemberResult['nameNotations'],
       'lastName' | 'firstName' | 'lastNameEn' | 'firstNameEn'
     >;
-    profileImage: MemberResult['singleImages'][0];
+    profileImage: QueryResultMember['profileImages']['singles'][0]['url'];
   }[];
 };
 
 const AlbumPageContainer: React.FC<QueryResult> = props => {
   const albumData = props.data.discographyJson;
   const membersData = props.data.allMembersJson.nodes;
-  const membersObject = React.useMemo(
-    () => arrayToObject(membersData, 'name'),
-    [membersData]
-  );
 
   const tracks = React.useMemo(
     () =>
@@ -124,29 +129,9 @@ const AlbumPageContainer: React.FC<QueryResult> = props => {
     [albumData]
   );
 
-  const centers = React.useMemo(() => {
-    const titleSongFocusPerformers = albumData.songs[0].focusPerformers;
-
-    if (
-      titleSongFocusPerformers.type !== 'center' ||
-      albumData.type === 'album'
-    ) {
-      return [];
-    } else {
-      return titleSongFocusPerformers.members
-        .map(memberNameKey => membersObject[memberNameKey])
-        .map(member => ({
-          name: member.name,
-          nameNotations: member.nameNotations,
-          profileImage:
-            member.singleImages[parseInt(albumData.previousSingleNumber) - 1],
-        }));
-    }
-  }, [
-    albumData.previousSingleNumber,
-    albumData.songs,
-    membersObject,
-    albumData.type,
+  const centers = React.useMemo(() => getCenters(albumData, membersData), [
+    albumData,
+    membersData,
   ]);
 
   return (
@@ -164,3 +149,41 @@ const AlbumPageContainer: React.FC<QueryResult> = props => {
 };
 
 export default AlbumPageContainer;
+
+function getCenters(
+  albumData: QueryResultAlbum,
+  membersData: QueryResultMember[]
+): AlbumPageProps['centers'] {
+  const membersObject = arrayToObject(membersData, 'name');
+
+  const titleSong = albumData.songs[0];
+  const titleSongFocusPerformers = titleSong.focusPerformers;
+
+  if (
+    titleSongFocusPerformers.type !== 'center' ||
+    albumData.type === 'album'
+  ) {
+    return [];
+  } else {
+    let profileImageType: 'singles' | 'digital';
+
+    switch (albumData.type) {
+      case 'single':
+        profileImageType = 'singles';
+        break;
+      case 'digital':
+        profileImageType = 'digital';
+    }
+
+    return titleSongFocusPerformers.members
+      .map(memberNameKey => membersObject[memberNameKey])
+      .map(member => ({
+        name: member.name,
+        nameNotations: member.nameNotations,
+        profileImage: arrayToObject(
+          member.profileImages[profileImageType],
+          'number'
+        )[albumData.number].url,
+      }));
+  }
+}

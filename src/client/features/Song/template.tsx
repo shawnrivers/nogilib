@@ -2,10 +2,7 @@
 import { jsx, css } from '@emotion/core';
 import styled from '@emotion/styled';
 import * as React from 'react';
-import { LocalizedList } from 'client/components/atoms/locales/LocalizedList';
-import { LocalizedNumber } from 'client/components/atoms/locales/LocalizedNumber';
 import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
-import { SongType } from 'server/actors/Songs/constants/songType';
 import { KOJIHARU_IMAGE_SRC } from 'server/constants/paths';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { PageContent } from 'client/components/templates/Page';
@@ -19,11 +16,11 @@ import {
 } from 'client/components/molecules/cards/MemberCard';
 import { getMemberUrl } from 'client/utils/urls';
 import { useTranslations } from 'client/hooks/useTranslations';
-import { useAppContext } from 'client/hooks/useAppContext';
 import { NameNotationsForIntl, useIntl } from 'client/hooks/useIntl';
 import { InfoItemLabel } from 'client/components/molecules/typography/info/InfoItemLabel';
 import { InfoItemValue } from 'client/components/molecules/typography/info/InfoItemValue';
 import { SectionSubtitle } from 'client/components/molecules/typography/SectionSubtitle';
+import { SongPageProps } from 'client/features/Song/container';
 
 type StyledComponentWithThemeProps = {
   theme: Theme;
@@ -57,7 +54,8 @@ const PerformerCard: React.FC<PerformerCardProps> = props => {
 
   return (
     <MemberCard
-      name={formatMemberName(props.nameNotations)}
+      name={formatMemberName(props.nameNotations).name}
+      lang={formatMemberName(props.nameNotations).lang}
       profileImage={props.profileImage}
       to={props.to}
       textSize="body3"
@@ -67,77 +65,36 @@ const PerformerCard: React.FC<PerformerCardProps> = props => {
   );
 };
 
-const PerformersTag: React.FC<{
-  singleNumber: string;
-  tagName: string;
-}> = props => {
-  const { singleNumber, tagName } = props;
-  const { Translation } = useTranslations();
-  const { language } = useAppContext();
+const PerformersTag: React.FC<SongPageProps['performersTag']> = props => {
+  const { name, album } = props;
+  const { getTranslation } = useTranslations();
+  const { formatNth, formatWords } = useIntl();
 
-  if (tagName === '') {
+  if (name === '') {
     return null;
   }
 
-  if (tagName.includes('generation')) {
-    return (
-      <Hashtag>
-        <Translation text={tagName as any} />
-      </Hashtag>
-    );
+  if (name.includes('generation')) {
+    return <Hashtag>{getTranslation(name as any)}</Hashtag>;
   }
 
-  if (tagName === 'selected' || tagName === 'under') {
-    return language === 'en' ? (
-      <Hashtag>
-        <LocalizedNumber num={singleNumber} type="cd" />{' '}
-        <Translation text="single" /> <Translation text={tagName} />{' '}
-        <Translation text="members" />
-      </Hashtag>
-    ) : (
-      <Hashtag>
-        <LocalizedNumber num={singleNumber} type="cd" />
-        <Translation text="single" />
-        <Translation text={tagName} />
-        <Translation text="members" />
-      </Hashtag>
-    );
+  if (name === 'selected' || name === 'under') {
+    if (album.number !== null) {
+      const number = formatNth({ num: album.number, unit: 'cd' });
+
+      const words = [
+        number ?? getTranslation(album.number as any),
+        getTranslation(album.type as any),
+        getTranslation(name as any),
+        getTranslation('members'),
+      ];
+
+      return <Hashtag>{formatWords(words)}</Hashtag>;
+    }
   }
 
-  return <Hashtag>{tagName}</Hashtag>;
+  return <Hashtag lang="ja">{name}</Hashtag>;
 };
-
-type SongPerformerType = {
-  name: string;
-  nameNotations: {
-    lastName: string;
-    firstName: string;
-    lastNameEn: string;
-    firstNameEn: string;
-  };
-  profileImage: string;
-  singleImages: string[];
-};
-
-interface SongPageProps {
-  title: string;
-  songTags: string[];
-  type: SongType;
-  artwork: string;
-  performersTag: {
-    singleNumber: string;
-    name: string;
-  };
-  formation: string[][];
-  members: { [key: string]: SongPerformerType };
-  centers: string[];
-  creators: {
-    arrange: string[];
-    compose: string[];
-    direct: string[];
-    lyrics: string[];
-  };
-}
 
 export const SongPage: React.FC<SongPageProps> = ({
   title,
@@ -151,10 +108,15 @@ export const SongPage: React.FC<SongPageProps> = ({
 }) => {
   useScrollRestoration();
   const theme = useAppTheme();
-  const { Translation } = useTranslations();
+  const { Translation, getTranslation } = useTranslations();
+  const { formatWords, formatNth, formatWordsWithCommas } = useIntl();
 
   return (
-    <PageContent title={title} showBackButton titleTextTransform="initial">
+    <PageContent
+      title={{ text: title, lang: 'ja' }}
+      showBackButton
+      titleTextTransform="initial"
+    >
       <React.Fragment>
         <div
           css={css`
@@ -202,7 +164,7 @@ export const SongPage: React.FC<SongPageProps> = ({
           >
             <GridArtworkImage
               src={artwork}
-              alt={title}
+              alt={formatWords([title, getTranslation('artwork')])}
               shadow
               fixedSize
               css={css`
@@ -230,8 +192,8 @@ export const SongPage: React.FC<SongPageProps> = ({
                     <InfoItemLabel>
                       <Translation text="lyrics" />
                     </InfoItemLabel>
-                    <InfoItemValue>
-                      <LocalizedList list={creators.lyrics} />
+                    <InfoItemValue lang="ja">
+                      {formatWordsWithCommas(creators.lyrics)}
                     </InfoItemValue>
                   </React.Fragment>
                 )}
@@ -240,8 +202,8 @@ export const SongPage: React.FC<SongPageProps> = ({
                     <InfoItemLabel>
                       <Translation text="compose" />
                     </InfoItemLabel>
-                    <InfoItemValue>
-                      <LocalizedList list={creators.compose} />
+                    <InfoItemValue lang="ja">
+                      {formatWordsWithCommas(creators.compose)}
                     </InfoItemValue>
                   </React.Fragment>
                 )}
@@ -250,8 +212,8 @@ export const SongPage: React.FC<SongPageProps> = ({
                     <InfoItemLabel>
                       <Translation text="arrange" />
                     </InfoItemLabel>
-                    <InfoItemValue>
-                      <LocalizedList list={creators.arrange} />
+                    <InfoItemValue lang="ja">
+                      {formatWordsWithCommas(creators.arrange)}
                     </InfoItemValue>
                   </React.Fragment>
                 )}
@@ -260,8 +222,8 @@ export const SongPage: React.FC<SongPageProps> = ({
                     <InfoItemLabel>
                       <Translation text="direct" />
                     </InfoItemLabel>
-                    <InfoItemValue>
-                      <LocalizedList list={creators.direct} />
+                    <InfoItemValue lang="ja">
+                      {formatWordsWithCommas(creators.direct)}
                     </InfoItemValue>
                   </React.Fragment>
                 )}
@@ -280,12 +242,8 @@ export const SongPage: React.FC<SongPageProps> = ({
                     justify-content: center;
                   `}
                 >
-                  {performersTag.singleNumber !== '' &&
-                  performersTag.name !== '' ? (
-                    <PerformersTag
-                      singleNumber={performersTag.singleNumber}
-                      tagName={performersTag.name}
-                    />
+                  {performersTag.name !== '' ? (
+                    <PerformersTag {...performersTag} />
                   ) : null}
                 </div>
                 <div
@@ -302,7 +260,7 @@ export const SongPage: React.FC<SongPageProps> = ({
                             margin-top: 0.5em;
                           `}
                         >
-                          <LocalizedNumber num={index + 1} type="row" />
+                          {formatNth({ num: index + 1, unit: 'row' })}
                         </SectionSubtitle>
                         <RowContainer>
                           {row.map(memberName => {

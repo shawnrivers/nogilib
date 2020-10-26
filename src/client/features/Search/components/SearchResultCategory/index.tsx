@@ -7,20 +7,23 @@ import {
 } from 'client/components/atoms/Typography';
 import { useAppTheme } from 'client/styles/tokens';
 import { useTranslations } from 'client/hooks/useTranslations';
-import { HorizontalCard } from 'client/components/molecules/cards/HorizontalCard';
+import {
+  HorizontalCard,
+  HorizontalCardProps,
+} from 'client/components/molecules/cards/HorizontalCard';
 
 const DEFAULT_RESULT_COUNT = 4;
 
-interface SearchResultCategoryProps {
+export type SearchResultCategoryProps = {
   title: 'members' | 'cds' | 'songs';
   titleElement?: TypographyProps['element'];
   results: {
     to: string;
     imgSrc: string;
-    heading: string;
-    captions: string[];
+    heading: HorizontalCardProps['title'];
+    captions: HorizontalCardProps['tags'];
   }[];
-}
+};
 
 export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props => {
   const { title, results, titleElement = 'h3', ...restProps } = props;
@@ -49,11 +52,12 @@ export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props =
         `}
       >
         {results.slice(0, DEFAULT_RESULT_COUNT).map(result => (
-          <li key={result.heading}>
+          <li key={result.heading.text}>
             <HorizontalCard
               to={result.to}
-              image={{ src: result.imgSrc, alt: result.heading }}
+              image={{ src: result.imgSrc, alt: '' }}
               title={result.heading}
+              titleElement="h3"
               tags={result.captions}
               capitalizeTitle={title === 'members'}
             />
@@ -61,10 +65,10 @@ export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props =
         ))}
         {showMore
           ? results.slice(DEFAULT_RESULT_COUNT, results.length).map(result => (
-              <li key={result.heading}>
+              <li key={result.heading.text}>
                 <HorizontalCard
                   to={result.to}
-                  image={{ src: result.imgSrc, alt: result.heading }}
+                  image={{ src: result.imgSrc, alt: '' }}
                   title={result.heading}
                   titleElement="h3"
                   tags={result.captions}

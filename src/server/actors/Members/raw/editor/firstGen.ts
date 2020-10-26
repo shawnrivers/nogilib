@@ -20,6 +20,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Saitama,
     sites: [
       {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/manatsu.akimoto_official/',
+      },
+      {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/manatsu.akimoto/',
       },
@@ -70,12 +74,12 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Düsseldorf,
     sites: [
       {
-        title: SocialMedia.Blog,
-        url: 'https://blog.nogizaka46.com/erika.ikuta/',
-      },
-      {
         title: SocialMedia.Instagram,
         url: 'https://www.instagram.com/ikutaerika.official/',
+      },
+      {
+        title: SocialMedia.Blog,
+        url: 'https://blog.nogizaka46.com/erika.ikuta/',
       },
       {
         title: SocialMedia.Profile,
@@ -213,12 +217,12 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Oita,
     sites: [
       {
-        title: SocialMedia.Official,
-        url: 'https://etomisa.jp/',
-      },
-      {
         title: SocialMedia.Instagram,
         url: 'https://www.instagram.com/misa_eto_official/',
+      },
+      {
+        title: SocialMedia.Official,
+        url: 'https://etomisa.jp/',
       },
       {
         title: SocialMedia.Profile,
@@ -456,16 +460,16 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Gunma,
     sites: [
       {
+        title: SocialMedia.YouTube,
+        url: 'https://www.youtube.com/c/maishiraishi',
+      },
+      {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/mai.shiraishi/',
       },
       {
         title: SocialMedia.Profile,
         url: 'https://www.nogizaka46.com/member/detail/shiraishimai.php',
-      },
-      {
-        title: SocialMedia.YouTube,
-        url: 'https://www.youtube.com/c/maishiraishi',
       },
       {
         title: SocialMedia.Nanagogo,
@@ -537,12 +541,12 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Chiba,
     sites: [
       {
-        title: SocialMedia.Blog,
-        url: 'https://blog.nogizaka46.com/kazumi.takayama/',
-      },
-      {
         title: SocialMedia.Instagram,
         url: 'https://instagram.com/takayama.kazumi.official/',
+      },
+      {
+        title: SocialMedia.Blog,
+        url: 'https://blog.nogizaka46.com/kazumi.takayama/',
       },
       {
         title: SocialMedia.Profile,
@@ -590,7 +594,12 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     height: 158,
     bloodType: BloodType.A,
     origin: Birthplace.Saitama,
+    graduatedDate: '2020-10-26',
     sites: [
+      {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/nakadakana_1st/',
+      },
       {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/kana.nakada/',
@@ -602,6 +611,20 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: SocialMedia.Nanagogo,
         url: 'https://7gogo.jp/nakada-kana',
+      },
+    ],
+    photoAlbums: [
+      {
+        title: '好きなことだけをしていたい',
+        release: '2020-10-13',
+        type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/nakadakana_1st',
+          },
+        ],
+        cover: 'photo-albums/nakadakana_1.jpg',
       },
     ],
   }),
@@ -616,12 +639,12 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Osaka,
     sites: [
       {
-        title: SocialMedia.Official,
-        url: 'https://nishinonanase.com/',
-      },
-      {
         title: SocialMedia.Instagram,
         url: 'https://www.instagram.com/nishino.nanase.official/',
+      },
+      {
+        title: SocialMedia.Official,
+        url: 'https://nishinonanase.com/',
       },
       {
         title: SocialMedia.Profile,
@@ -706,6 +729,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Tokyo,
     sites: [
       {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/higuchi_hina_official/',
+      },
+      {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/hina.higuchi/',
       },
@@ -775,12 +802,12 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Osaka,
     sites: [
       {
-        title: SocialMedia.Blog,
-        url: 'https://blog.nogizaka46.com/sayuri.matsumura/',
-      },
-      {
         title: SocialMedia.Instagram,
         url: 'https://www.instagram.com/matsumura_sayuri_official/',
+      },
+      {
+        title: SocialMedia.Blog,
+        url: 'https://blog.nogizaka46.com/sayuri.matsumura/',
       },
       {
         title: SocialMedia.Profile,
@@ -958,12 +985,12 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Kanagawa,
     sites: [
       {
-        title: SocialMedia.Official,
-        url: 'https://itomarika.com/',
-      },
-      {
         title: SocialMedia.Instagram,
         url: 'https://www.instagram.com/marikaito_official/',
+      },
+      {
+        title: SocialMedia.Official,
+        url: 'https://itomarika.com/',
       },
       {
         title: SocialMedia.Profile,
@@ -1042,12 +1069,12 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Shizuoka,
     sites: [
       {
-        title: SocialMedia.Official,
-        url: 'https://fukagawamai.com/',
-      },
-      {
         title: SocialMedia.Instagram,
         url: 'https://www.instagram.com/fukagawamai.official/',
+      },
+      {
+        title: SocialMedia.Official,
+        url: 'https://fukagawamai.com/',
       },
     ],
     photoAlbums: [
@@ -1233,12 +1260,12 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Chiba,
     sites: [
       {
-        title: SocialMedia.Twitter,
-        url: 'https://twitter.com/seira_miyazawa/',
-      },
-      {
         title: SocialMedia.Instagram,
         url: 'https://www.instagram.com/seira_miyazawa/',
+      },
+      {
+        title: SocialMedia.Twitter,
+        url: 'https://twitter.com/seira_miyazawa/',
       },
       {
         title: 'Ameba',

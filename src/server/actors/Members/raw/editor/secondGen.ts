@@ -114,6 +114,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         title: SocialMedia.Instagram,
         url: 'https://www.instagram.com/sasaki_kotoko828/',
       },
+      {
+        title: SocialMedia.Twitter,
+        url: 'https://twitter.com/ssk_ktk828',
+      },
     ],
     graduatedDate: '2020-03-31',
   }),
@@ -178,6 +182,20 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://7gogo.jp/suzuki-ayane',
       },
     ],
+    photoAlbums: [
+      {
+        title: '光の角度',
+        release: '2020-11-10',
+        type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/ayane_gentosha',
+          },
+        ],
+        cover: 'photo-albums/suzukiayane_1.jpg',
+      },
+    ],
   }),
   createMemberRaw({
     name: MemberNameKey.TeradaRanze,
@@ -189,6 +207,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     bloodType: BloodType.Unknown,
     origin: Birthplace.Tokyo,
     sites: [
+      {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/terada.ranze.official/',
+      },
       {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/ranze.terada/',
@@ -209,6 +231,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     bloodType: BloodType.O,
     origin: Birthplace.Gifu,
     sites: [
+      {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/horimiona_2nd/',
+      },
       {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/miona.hori/',

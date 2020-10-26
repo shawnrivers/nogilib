@@ -149,6 +149,16 @@ const dictionary = {
     ja: 'シングル',
     zh: '单曲',
   },
+  album: {
+    en: 'album',
+    ja: 'アルバム',
+    zh: '专辑',
+  },
+  digital: {
+    en: 'digital',
+    ja: '配信シングル',
+    zh: '数字专辑',
+  },
   selected: {
     en: 'selected',
     ja: '選抜',
@@ -193,11 +203,6 @@ const dictionary = {
     en: 'Fourth Gen Blog',
     ja: '4期生ブログ',
     zh: '4期生博客',
-  },
-  Profile: {
-    en: 'Profile',
-    ja: 'プロフィール',
-    zh: '成员介绍',
   },
   Official: {
     en: 'Official',
@@ -619,6 +624,16 @@ const dictionary = {
     en: 'settings',
     ja: '設定',
     zh: '设定',
+  },
+  'page not found': {
+    en: 'page not found',
+    ja: 'ページが見つかりませんでした',
+    zh: '没有找到对应页面',
+  },
+  'profile image': {
+    en: 'profile image',
+    ja: 'プロフィール写真',
+    zh: '照片',
   },
 };
 

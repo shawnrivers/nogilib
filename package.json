@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "dev": "gatsby develop",
+    "dev": "gatsby develop -p 8080",
     "serve": "gatsby serve",
     "type-check": "tsc",
     "type-check:server": "tsc -b tsconfig-server.json",
@@ -42,7 +42,8 @@
     "hooks": {
       "pre-commit": [
         "lint-staged"
-      ]
+      ],
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "dependencies": {
@@ -71,7 +72,10 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@storybook/addon-actions": "^6.0.27",
+    "@storybook/addon-essentials": "^6.0.22",
     "@storybook/addon-knobs": "^6.0.27",
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/react": "^6.0.27",

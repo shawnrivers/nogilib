@@ -1,51 +1,26 @@
 /**@jsx jsx */
-import { css, jsx } from '@emotion/core';
-import * as React from 'react';
-import { withKnobs, select, number } from '@storybook/addon-knobs';
-import { useAppContext } from 'client/hooks/useAppContext';
+import { jsx } from '@emotion/core';
+import { Meta, Story } from '@storybook/react/types-6-0';
 import { ThemeDecorator } from 'storybook/ThemeDecorator';
-import { PositionCounter } from 'client/features/Member/components/PositionCounter';
+import {
+  PositionCounter,
+  PositionCounterProps,
+} from 'client/features/Member/components/PositionCounter';
 
 export default {
-  title: 'Position/counter',
-  decorators: [ThemeDecorator(), withKnobs],
-};
+  title: 'Position/PositionCounter',
+  component: PositionCounter,
+  decorators: [ThemeDecorator()],
+} as Meta<PositionCounterProps>;
 
-export const All: React.FC = () => {
-  const { setThemeKey } = useAppContext();
+const Template: Story<PositionCounterProps> = props => (
+  <PositionCounter {...props} />
+);
 
-  const themeKey = select(
-    'Theme',
-    {
-      Dark: 'dark',
-      Light: 'light',
-    },
-    'dark'
-  );
-  const center = number('Center', 1);
-  const fukujin = number('Fukujin', 1);
-  const selected = number('Selected', 1);
-  const under = number('Under', 1);
-
-  React.useEffect(() => setThemeKey(themeKey), [themeKey, setThemeKey]);
-
-  return (
-    <div
-      css={css`
-        margin: 24px;
-        display: flex;
-
-        & > * {
-          margin: 8px;
-        }
-      `}
-    >
-      <PositionCounter
-        center={center}
-        fukujin={fukujin + center}
-        selected={selected + fukujin + center}
-        under={under}
-      />
-    </div>
-  );
+export const Default = Template.bind({});
+Default.args = {
+  center: 1,
+  fukujin: 2,
+  selected: 3,
+  under: 1,
 };

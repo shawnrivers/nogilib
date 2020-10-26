@@ -1,6 +1,11 @@
 import * as React from 'react';
 import { useAppContext } from 'client/hooks/useAppContext';
 import { MemberResult } from 'server/actors/Members/models';
+import {
+  getLocalizedNth,
+  getLocalizedWords,
+  getLocalizedWordsSplitWithCommas,
+} from 'client/i18n/utils';
 
 export type NameNotationsForIntl = Pick<
   MemberResult['nameNotations'],
@@ -25,15 +30,54 @@ export const useIntl = () => {
   );
 
   const formatMemberName = React.useCallback(
-    (nameNotations: NameNotationsForIntl) => {
+    (
+      nameNotations: NameNotationsForIntl
+    ): {
+      name: string;
+      lang: 'ja' | 'en';
+    } => {
       switch (language) {
         case 'ja':
-          return `${nameNotations.lastName}${nameNotations.firstName}`;
+          return {
+            name: `${nameNotations.lastName}${nameNotations.firstName}`,
+            lang: 'ja',
+          };
         case 'zh':
-          return `${nameNotations.lastName}${nameNotations.firstName}`;
+          return {
+            name: `${nameNotations.lastName}${nameNotations.firstName}`,
+            lang: 'ja',
+          };
         case 'en':
-          return `${nameNotations.lastNameEn} ${nameNotations.firstNameEn}`;
+          return {
+            name: `${nameNotations.lastNameEn} ${nameNotations.firstNameEn}`,
+            lang: 'en',
+          };
       }
+    },
+    [language]
+  );
+
+  const formatNth = React.useCallback(
+    (
+      params: Omit<Parameters<typeof getLocalizedNth>[0], 'language'>
+    ): string | null => {
+      return getLocalizedNth({ ...params, language });
+    },
+    [language]
+  );
+
+  const formatWords = React.useCallback(
+    (words: Parameters<typeof getLocalizedWords>[0]['words']): string => {
+      return getLocalizedWords({ words, language });
+    },
+    [language]
+  );
+
+  const formatWordsWithCommas = React.useCallback(
+    (
+      words: Parameters<typeof getLocalizedWordsSplitWithCommas>[0]['words']
+    ): string => {
+      return getLocalizedWordsSplitWithCommas({ words, language });
     },
     [language]
   );
@@ -41,5 +85,8 @@ export const useIntl = () => {
   return {
     formatDate,
     formatMemberName,
+    formatNth,
+    formatWords,
+    formatWordsWithCommas,
   };
 };

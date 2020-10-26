@@ -5,6 +5,7 @@ import {
   DiscographyRawArray,
   DiscographyRawObject,
 } from 'server/actors/Discography/models';
+import { sortByDate } from 'utils/arrays';
 
 type ConvertSongSingle = (params: {
   songTitle: SongRaw['title'];
@@ -54,12 +55,11 @@ export const convertSongAlbums: ConvertSongAlbums = ({
     }
   }
 
-  songAlbumsWithRelease.sort(
-    (albumA, albumB) =>
-      new Date(albumA.release).getTime() - new Date(albumB.release).getTime()
-  );
-
-  return songAlbumsWithRelease.map(({ title, number }) => ({ title, number }));
+  return sortByDate(
+    songAlbumsWithRelease,
+    'release',
+    'desc'
+  ).map(({ title, number }) => ({ title, number }));
 };
 
 export const convertSongOtherCds = (params: {
@@ -82,15 +82,12 @@ export const convertSongOtherCds = (params: {
     }
   }
 
-  songOtherCdsWithRelease.sort(
-    (albumA, albumB) =>
-      new Date(albumA.release).getTime() - new Date(albumB.release).getTime()
+  return sortByDate(songOtherCdsWithRelease, 'release', 'desc').map(
+    ({ title, number }) => ({
+      title,
+      number,
+    })
   );
-
-  return songOtherCdsWithRelease.map(({ title, number }) => ({
-    title,
-    number,
-  }));
 };
 
 type ConvertSongArtwork = (params: {
@@ -127,7 +124,8 @@ export const convertSongArtwork: ConvertSongArtwork = ({
   }
 
   if (songAlbumsResult.length > 0) {
-    const album = albumsRawObject[songAlbumsResult[0].title];
+    const oldestSongAlbumTitle = songAlbumsResult.slice().reverse()[0].title;
+    const album = albumsRawObject[oldestSongAlbumTitle];
 
     for (const albumSong of album.songs) {
       if (albumSong.title === songTitle) {
@@ -140,7 +138,9 @@ export const convertSongArtwork: ConvertSongArtwork = ({
   }
 
   if (songOtherCdsResult.length > 0) {
-    const otherCd = otherCdsRawObject[songOtherCdsResult[0].title];
+    const oldestSongOtherCdTitle = songOtherCdsResult.slice().reverse()[0]
+      .title;
+    const otherCd = otherCdsRawObject[oldestSongOtherCdTitle];
 
     for (const otherCdSong of otherCd.songs) {
       if (otherCdSong.title === songTitle) {
@@ -163,54 +163,88 @@ type ConvertSongPerformersTag = (params: {
   songType: SongRaw['type'];
   songSingleResult: SongResult['single'];
   songAlbumsResult: SongResult['albums'];
+  songOtherCdsResult: SongResult['otherCds'];
   songPerformers: SongRaw['performers'];
   albumsRawObject: DiscographyRawObject;
+  otherCdsRawObject: DiscographyRawObject;
 }) => SongResult['performersTag'];
 
-export const convertSongPerformersTag: ConvertSongPerformersTag = ({
-  songType,
-  songSingleResult,
-  songAlbumsResult,
-  songPerformers,
-  albumsRawObject,
-}) => {
-  let singleNumber = '';
+export const convertSongPerformersTag: ConvertSongPerformersTag = params => {
+  const {
+    songType,
+    songSingleResult,
+    songAlbumsResult,
+    songOtherCdsResult,
+    songPerformers,
+    albumsRawObject,
+    otherCdsRawObject,
+  } = params;
+
+  let album: SongResult['performersTag']['album'] = {
+    type: null,
+    number: null,
+  };
+
+  if (songType === SongType.Selected12) {
+    return {
+      name: 'selected',
+      album: {
+        type: 'single',
+        number: '12',
+      },
+    };
+  }
 
   if (songSingleResult.number !== '') {
-    singleNumber = songSingleResult.number;
+    album = {
+      type: 'single',
+      number: songSingleResult.number,
+    };
+  } else if (songOtherCdsResult.length > 0) {
+    const oldestSongOtherCdTitle = songOtherCdsResult.slice().reverse()[0]
+      .title;
+
+    album = {
+      type: 'digital',
+      number: otherCdsRawObject[oldestSongOtherCdTitle].number,
+    };
   } else if (songAlbumsResult.length > 0) {
-    singleNumber =
-      albumsRawObject[songAlbumsResult[0].title].previousSingleNumber;
+    const oldestSongAlbumTitle = songAlbumsResult.slice().reverse()[0].title;
+
+    album = {
+      type: 'album',
+      number: albumsRawObject[oldestSongAlbumTitle].number,
+    };
   }
 
   if (songType === SongType.Unit) {
-    return { name: songPerformers.unit, singleNumber };
+    return { name: songPerformers.unit, album };
   }
   if (songType === SongType.FirstGeneration) {
-    return { name: 'first generation', singleNumber };
+    return { name: 'first generation', album };
   }
   if (songType === SongType.SecondGeneration) {
-    return { name: 'second generation', singleNumber };
+    return { name: 'second generation', album };
   }
   if (songType === SongType.ThirdGeneration) {
-    return { name: 'third generation', singleNumber };
+    return { name: 'third generation', album };
   }
   if (songType === SongType.FourthGeneration) {
-    return { name: 'fourth generation', singleNumber };
+    return { name: 'fourth generation', album };
   }
   if (
     songType === SongType.Title ||
     songType === SongType.Selected ||
     songType === SongType.Lead
   ) {
-    return { name: 'selected', singleNumber };
-  }
-  if (songType === SongType.Selected12) {
-    return { name: 'selected', singleNumber: '12' };
+    return { name: 'selected', album };
   }
   if (songType === SongType.Under) {
-    return { name: 'under', singleNumber };
+    return { name: 'under', album };
   }
 
-  return { name: '', singleNumber };
+  return {
+    name: '',
+    album,
+  };
 };

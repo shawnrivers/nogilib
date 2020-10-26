@@ -10,14 +10,20 @@ import {
   TypographyProps,
 } from 'client/components/atoms/Typography';
 
-type HorizontalCardProps = Omit<CardProps, 'children'> & {
+export type HorizontalCardProps = Omit<CardProps, 'children' | 'title'> & {
   image: {
     src: string;
     alt: string;
   };
-  title: string;
+  title: {
+    text: string;
+    lang: string;
+  };
   titleElement?: TypographyProps['element'];
-  tags: string[];
+  tags: {
+    text: string;
+    lang: string;
+  }[];
   capitalizeTitle?: boolean;
 };
 
@@ -54,15 +60,16 @@ export const HorizontalCard: React.FC<HorizontalCardProps> = props => {
           `}
         >
           <Typography
-            variant="h7"
+            variant="body2"
             element={titleElement}
             bold
             ellipsis
             css={css`
               text-transform: ${capitalizeTitle ? 'capitalize' : 'initial'};
             `}
+            lang={title.lang}
           >
-            {title}
+            {title.text}
           </Typography>
           {tags.length > 0 && (
             <div
@@ -78,7 +85,7 @@ export const HorizontalCard: React.FC<HorizontalCardProps> = props => {
             >
               {tags.map(tag => (
                 <Hashtag
-                  key={tag}
+                  key={tag.text}
                   textColor={{
                     on: 'onSurface',
                     variant: 'variant0',
@@ -86,8 +93,9 @@ export const HorizontalCard: React.FC<HorizontalCardProps> = props => {
                   css={css`
                     margin-right: 0.3em;
                   `}
+                  lang={tag.lang}
                 >
-                  {tag}
+                  {tag.text}
                 </Hashtag>
               ))}
             </div>

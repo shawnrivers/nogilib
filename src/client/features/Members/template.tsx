@@ -4,43 +4,22 @@ import * as React from 'react';
 import { TextSwitchLinkGroup } from 'client/components/molecules/TextSwitchLinkGroup';
 import { PageContent } from 'client/components/templates/Page';
 import { TextDivider } from 'client/components/molecules/TextDivider';
-import { MemberResult } from 'server/actors/Members/models';
 import { MemberCard } from 'client/components/molecules/cards/MemberCard';
 import { commonStyles } from 'client/styles/tokens';
-import {
-  getMembersUrl,
-  getMemberUrl,
-  MembersUrlFilter,
-} from 'client/utils/urls';
+import { getMembersUrl, getMemberUrl } from 'client/utils/urls';
 import { useTranslations } from 'client/hooks/useTranslations';
 import { useIntl } from 'client/hooks/useIntl';
-
-export type MemberGroupByYear = {
-  join: MemberResult['join'];
-  members: {
-    name: MemberResult['name'];
-    nameNotations: Pick<
-      MemberResult['nameNotations'],
-      'lastName' | 'firstName' | 'lastNameEn' | 'firstNameEn'
-    >;
-    join: MemberResult['join'];
-    graduation: MemberResult['graduation'];
-    profileImage: MemberResult['profileImage'];
-  }[];
-};
-
-export type MembersPageProps = {
-  currentFilter: MembersUrlFilter;
-  memberGroupsByJoin: MemberGroupByYear[];
-};
+import { MembersPageProps } from 'pages/members';
+import { useAppContext } from 'client/hooks/useAppContext';
 
 export const MembersPage: React.FC<MembersPageProps> = props => {
   const { currentFilter, memberGroupsByJoin } = props;
   const { getTranslation } = useTranslations();
   const { formatMemberName } = useIntl();
+  const { language } = useAppContext();
 
   return (
-    <PageContent title="members">
+    <PageContent title={{ text: getTranslation('members'), lang: language }}>
       <React.Fragment>
         <TextSwitchLinkGroup
           variant="h4"
@@ -88,7 +67,8 @@ export const MembersPage: React.FC<MembersPageProps> = props => {
                 <li key={member.name}>
                   <MemberCard
                     profileImage={member.profileImage}
-                    name={formatMemberName(member.nameNotations)}
+                    name={formatMemberName(member.nameNotations).name}
+                    lang={formatMemberName(member.nameNotations).lang}
                     nameElement="h3"
                     to={getMemberUrl(member.name)}
                     textSize="body2"

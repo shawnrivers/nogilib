@@ -29,7 +29,7 @@ export const ArtworkCard: React.FC<
   return (
     <Card {...cardProps}>
       <article>
-        <GridArtworkImage src={artwork} alt={number} />
+        <GridArtworkImage src={artwork} alt="" />
         <Typography
           variant="h7"
           element="div"
@@ -52,6 +52,7 @@ export const ArtworkCard: React.FC<
             line-height: 1.2;
             text-align: center;
           `}
+          lang="ja"
         >
           {title}
         </Typography>
