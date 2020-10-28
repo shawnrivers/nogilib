@@ -458,6 +458,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     height: 162,
     bloodType: BloodType.A,
     origin: Birthplace.Gunma,
+    graduatedDate: '2020-10-28',
     sites: [
       {
         title: SocialMedia.YouTube,

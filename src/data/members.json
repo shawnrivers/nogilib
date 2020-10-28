@@ -3400,8 +3400,8 @@
       "under": 0
     },
     "graduation": {
-      "isGraduated": false,
-      "graduatedDate": ""
+      "isGraduated": true,
+      "graduatedDate": "2020-10-28"
     }
   },
   {
