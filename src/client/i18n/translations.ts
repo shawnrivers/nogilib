@@ -489,10 +489,10 @@ const dictionary = {
     ja: 'ドイツ デュッセルドルフ',
     zh: '德国 杜塞尔多夫',
   },
-  'Song title, member name, etc.': {
-    en: 'Song title, member name, etc.',
-    ja: '楽曲タイトル、メンバー名前など',
-    zh: '歌曲名、成员名字等等',
+  'Search song title, member name, etc.': {
+    en: 'Search song title, member name, etc.',
+    ja: '楽曲タイトル、メンバー名前などを検索',
+    zh: '搜索歌曲名、成员名字等',
   },
   'no result': {
     en: 'no result',

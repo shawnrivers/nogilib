@@ -286,6 +286,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Tokyo,
     sites: [
       {
+        title: SocialMedia.Instagram,
+        url: 'https://instagram.com/rena_yamazaki.official/',
+      },
+      {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/rena.yamazaki/',
       },

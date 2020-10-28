@@ -3400,8 +3400,8 @@
       "under": 0
     },
     "graduation": {
-      "isGraduated": false,
-      "graduatedDate": ""
+      "isGraduated": true,
+      "graduatedDate": "2020-10-28"
     }
   },
   {
@@ -14113,6 +14113,10 @@
     "bloodType": "a",
     "origin": "東京都",
     "sites": [
+      {
+        "title": "Instagram",
+        "url": "https://instagram.com/rena_yamazaki.official/"
+      },
       {
         "title": "blog",
         "url": "https://blog.nogizaka46.com/rena.yamazaki/"

@@ -1,6 +1,7 @@
 import { JoinedGenerationType } from 'server/actors/Members/constants/joinedGeneration';
 import { SocialMedia } from 'server/actors/Members/constants/socialMedia';
 import { Site } from 'server/types/commons';
+import { MemberResult } from 'server/actors/Members/models';
 
 type SortOrder = 'asc' | 'desc';
 
@@ -35,11 +36,7 @@ export const sortByDate = <T>(
   });
 };
 
-export const sortByJoin = <
-  T extends {
-    join: JoinedGenerationType;
-  }
->(
+export const sortByJoin = <T extends Pick<MemberResult, 'join'>>(
   array: T[],
   order: SortOrder
 ): T[] => {
@@ -57,6 +54,29 @@ export const sortByJoin = <
       : joinWeightMap[itemB.join] - joinWeightMap[itemA.join];
   });
 };
+
+export function sortByGraduation<T extends Pick<MemberResult, 'graduation'>>(
+  array: readonly T[],
+  order: SortOrder
+): T[] {
+  return array.slice().sort((itemA, itemB) => {
+    let compareResult = 0;
+
+    if (itemA.graduation.isGraduated && itemB.graduation.isGraduated) {
+      compareResult =
+        new Date(itemA.graduation.graduatedDate).getTime() -
+        new Date(itemB.graduation.graduatedDate).getTime();
+    } else if (itemA.graduation.isGraduated && !itemB.graduation.isGraduated) {
+      compareResult = 1;
+    } else if (!itemA.graduation.isGraduated && itemB.graduation.isGraduated) {
+      compareResult = -1;
+    } else if (!itemA.graduation.isGraduated && !itemB.graduation.isGraduated) {
+      compareResult = 0;
+    }
+
+    return order === 'asc' ? compareResult : compareResult * -1;
+  });
+}
 
 export function sortBySocialMedia(
   sites: readonly Site[],
