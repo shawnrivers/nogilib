@@ -49,6 +49,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Kanagawa,
     sites: [
       {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/junna_ito_official/',
+      },
+      {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/junna.itou/',
       },
