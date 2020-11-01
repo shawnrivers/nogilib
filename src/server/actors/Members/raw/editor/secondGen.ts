@@ -136,6 +136,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Saitama,
     sites: [
       {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/mai.shinuchi_official/',
+      },
+      {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/mai.shinuchi/',
       },
