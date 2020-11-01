@@ -3211,12 +3211,24 @@
     "origin": "群馬県",
     "sites": [
       {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/m.shiraishi.official/"
+      },
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/shiraishi_staff"
+      },
+      {
         "title": "YouTube",
         "url": "https://www.youtube.com/c/maishiraishi"
       },
       {
         "title": "blog",
         "url": "https://blog.nogizaka46.com/mai.shiraishi/"
+      },
+      {
+        "title": "Official",
+        "url": "https://maishiraishi-official.com/"
       },
       {
         "title": "Profile",
