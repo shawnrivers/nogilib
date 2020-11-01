@@ -461,6 +461,18 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     graduatedDate: '2020-10-28',
     sites: [
       {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/m.shiraishi.official/',
+      },
+      {
+        title: SocialMedia.Twitter,
+        url: 'https://twitter.com/shiraishi_staff',
+      },
+      {
+        title: SocialMedia.Official,
+        url: 'https://maishiraishi-official.com/',
+      },
+      {
         title: SocialMedia.YouTube,
         url: 'https://www.youtube.com/c/maishiraishi',
       },
