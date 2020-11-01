@@ -639,9 +639,9 @@ const dictionary = {
 
 export type DictionaryKey = keyof typeof dictionary;
 
-const en: Record<DictionaryKey, string> = {} as any;
-const ja: Record<DictionaryKey, string> = {} as any;
-const zh: Record<DictionaryKey, string> = {} as any;
+let en = {} as Record<DictionaryKey, string>;
+let ja = {} as Record<DictionaryKey, string>;
+let zh = {} as Record<DictionaryKey, string>;
 
 for (const [key, value] of Object.entries(dictionary)) {
   Object.assign(en, { [key]: value.en });
