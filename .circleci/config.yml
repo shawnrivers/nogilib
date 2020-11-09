@@ -26,8 +26,8 @@ jobs:
           name: Test
           command: yarn test
       - run:
-          name: Build
-          command: yarn build
+          name: Lighthouse
+          command: yarn lighthouse
       - save_cache:
           name: Save Yarn Package Cache
           key: yarn-packages-{{ checksum "yarn.lock" }}
