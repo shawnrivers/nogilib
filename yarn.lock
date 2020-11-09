@@ -14200,10 +14200,10 @@ node-releases@^1.1.58:
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.58.tgz#8ee20eef30fa60e52755fcc0942def5a734fe935"
   integrity sha512-NxBudgVKiRh/2aPWMgPR7bPTX0VPmGx5QBwCtdHitnqFE5/O8DeBXuIMH1nwNnw/aMo6AjOrpsHzfY3UbUJ7yg==
 
-node@^14.14.0:
-  version "14.14.0"
-  resolved "https://registry.yarnpkg.com/node/-/node-14.14.0.tgz#c668075a5f2017da332327f5c0a1740a69e0c34a"
-  integrity sha512-A0KO0Y3S23tWUyuL9DR7onuGaNjtQwWRC7oQF3yc7ZzRp6i+jbyA+fWv+5OaxfV6nJ6cKjK2unz/qsVl3MagbQ==
+node@^15.0.1:
+  version "15.0.1"
+  resolved "https://registry.yarnpkg.com/node/-/node-15.0.1.tgz#f079c534a68c4cd04323958fe5293d501dda5da6"
+  integrity sha512-1H+cBZRGVVU8df/pxanHE9gjxjEzupMfvMw43/79dvPfIvNQJR1T0uxeHfXFIYWH86JthQbu8zes7vtttP+99g==
   dependencies:
     node-bin-setup "^1.0.0"
 
