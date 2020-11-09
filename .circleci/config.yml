@@ -55,6 +55,11 @@ jobs:
       - run:
           name: Deploy
           command: yarn deploy
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: yarn-packages-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
 workflows:
   version: 2
   deploy:
