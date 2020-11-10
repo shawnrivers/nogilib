@@ -2,22 +2,22 @@ version: 2
 jobs:
   check:
     docker:
-      - image: circleci/node:12.9.1
+      - image: circleci/node:14.15.0-browsers
     working_directory: ~/repo
     steps:
       - checkout
       - restore_cache:
-          name: Restore Yarn Package Cache
+          name: Restore dependencies cache
           keys:
             - yarn-packages-{{ checksum "yarn.lock" }}
       - run:
-          name: Install Dependencies
+          name: Install dependencies
           command: yarn install
       - run:
           name: Format
           command: yarn format
       - run:
-          name: Type Check
+          name: Check type
           command: yarn type-check
       - run:
           name: Lint
@@ -26,25 +26,31 @@ jobs:
           name: Test
           command: yarn test
       - run:
+          name: Check data
+          command: yarn generate-data && test `git status -s src/data/* | wc -l` = 0 || echo Generate and commit the latest data!
+      - run:
           name: Build
           command: yarn build
+      - run:
+          name: Lighthouse
+          command: yarn lighthouse
       - save_cache:
-          name: Save Yarn Package Cache
+          name: Save dependencies cache
           key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache/yarn
   build-deploy:
     docker:
-      - image: circleci/node:12.9.1
+      - image: circleci/node:14.15.0-browsers
     working_directory: ~/repo
     steps:
       - checkout
       - restore_cache:
-          name: Restore Yarn Package Cache
+          name: Restore dependencies cache
           keys:
             - yarn-packages-{{ checksum "yarn.lock" }}
       - run:
-          name: Install Dependencies
+          name: Install dependencies
           command: yarn install
       - run:
           name: Set up GitHub user name
@@ -55,6 +61,11 @@ jobs:
       - run:
           name: Deploy
           command: yarn deploy
+      - save_cache:
+          name: Save dependencies Cache
+          key: yarn-packages-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
 workflows:
   version: 2
   deploy:

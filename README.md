@@ -19,6 +19,12 @@
 
 ## 🚀 Set Up Dev Environment
 
+### Prerequisites
+
+- Node.js 14.15.0
+
+### Development process
+
 1.  **Install necessary packages.**
 
     ```sh
@@ -40,15 +46,6 @@
     ```
 
     Your site is now running at `http://localhost:8080`.
-
-4.  **Build the product.**
-
-    ```sh
-    yarn build
-    yarn serve
-    ```
-
-    Your build result is now running at `http://localhost:9000`.
 
 ## 🧐 Directories
 
