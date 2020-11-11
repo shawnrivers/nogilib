@@ -482,7 +482,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       },
       {
         title: SocialMedia.Profile,
-        url: 'https://www.nogizaka46.com/member/detail/shiraishimai.php',
+        url: 'https://n46llc.com/s/m00/artist/12?ima=0737',
       },
       {
         title: SocialMedia.Nanagogo,
@@ -619,7 +619,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       },
       {
         title: SocialMedia.Profile,
-        url: 'https://www.nogizaka46.com/member/detail/nakadakana.php',
+        url: 'https://n46llc.com/s/m00/artist/13?ima=0737',
       },
       {
         title: SocialMedia.Nanagogo,

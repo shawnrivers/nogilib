@@ -27,7 +27,7 @@ jobs:
           command: yarn test
       - run:
           name: Check data
-          command: yarn generate-data && test `git status -s src/data/* | wc -l` = 0 || echo Generate and commit the latest data!
+          command: yarn generate-data && test `git status -s src/data/* | wc -l` = 0 || (echo Generate and commit the latest data! && false)
       - run:
           name: Build
           command: yarn build
