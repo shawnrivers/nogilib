@@ -1,5 +1,60 @@
 [
   {
+    "title": "タイトル未定",
+    "key": "untitled26",
+    "type": "single",
+    "number": "26",
+    "release": "2021-01-27",
+    "shopping": [],
+    "artworks": [
+      {
+        "url": "artworks/artwork_no_image.png",
+        "type": "A"
+      },
+      {
+        "url": "artworks/artwork_no_image.png",
+        "type": "B"
+      },
+      {
+        "url": "artworks/artwork_no_image.png",
+        "type": "C"
+      },
+      {
+        "url": "artworks/artwork_no_image.png",
+        "type": "D"
+      },
+      {
+        "url": "artworks/artwork_no_image.png",
+        "type": "T"
+      }
+    ],
+    "songs": [
+      {
+        "number": 1,
+        "title": "タイトル未定",
+        "key": "untitled26",
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ],
+        "type": "title",
+        "focusPerformers": {
+          "type": "center",
+          "members": []
+        }
+      }
+    ],
+    "underMembers": [],
+    "behindPerformers": {
+      "trainees": [],
+      "skips": []
+    },
+    "previousSingleNumber": "26"
+  },
+  {
     "title": "しあわせの保護色",
     "key": "hogoshoku",
     "type": "single",
