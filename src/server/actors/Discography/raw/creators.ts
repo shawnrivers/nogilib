@@ -1,14 +1,13 @@
 import * as fs from 'fs';
-import { CDS } from 'server/actors/Discography/constants/cdTitle';
-import { DiscographyRaw } from 'server/actors/Discography/models';
 import {
+  CDS,
+  CdTitle,
   SingleTitle,
   AlbumTitle,
   OtherCdTitle,
-  CdType,
-  CdTitle,
-  OtherCdKind,
-} from 'server/actors/Discography/types';
+} from 'server/actors/Discography/constants/cdTitle';
+import { DiscographyRaw } from 'server/actors/Discography/models';
+import { CdType, OtherCdKind } from 'server/actors/Discography/types';
 import { NO_ARTWORK_IMAGE_SRC } from 'server/constants/paths';
 
 export const convertCdArtwork = ({
