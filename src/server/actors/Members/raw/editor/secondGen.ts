@@ -24,6 +24,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/karin___ito/',
       },
       {
+        title: SocialMedia.Twitter,
+        url: 'https://twitter.com/karin___ito',
+      },
+      {
         title: SocialMedia.YouTube,
         url: 'https://www.youtube.com/channel/UC9BihA2GY6ATFR__KvRWudA',
       },
