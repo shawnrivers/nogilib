@@ -35,8 +35,7 @@
     ],
     "src/server/**/*.ts": [
       "prettier --write",
-      "eslint --fix",
-      "yarn generate-data"
+      "eslint --fix"
     ]
   },
   "husky": {
