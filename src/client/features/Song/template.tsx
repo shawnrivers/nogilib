@@ -253,7 +253,7 @@ export const SongPage: React.FC<SongPageProps> = ({
                 >
                   {formation.length > 1 ? (
                     formation.map((row, index) => (
-                      <div key={index}>
+                      <section key={index}>
                         <SectionSubtitle
                           element="h3"
                           css={css`
@@ -288,7 +288,7 @@ export const SongPage: React.FC<SongPageProps> = ({
                             }
                           })}
                         </RowContainer>
-                      </div>
+                      </section>
                     ))
                   ) : (
                     <RowContainer>

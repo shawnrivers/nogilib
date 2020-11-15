@@ -1,7 +1,7 @@
 /**@jsx jsx */
 import { jsx, css, Global } from '@emotion/core';
 import * as React from 'react';
-import { ThemeProvider as EmotionThemeProvider } from 'emotion-theming';
+import { ThemeProvider as EmotionThemeProvider } from '@emotion/react';
 import { themes } from 'client/styles/tokens';
 import { useDarkModeMediaQuery } from 'client/hooks/useDarkModeMediaQuery';
 import { useAppContext } from 'client/hooks/useAppContext';

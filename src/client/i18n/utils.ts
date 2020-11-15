@@ -39,7 +39,7 @@ export function getLocalizedNth(params: {
 }
 
 export function getLocalizedWords(params: {
-  words: string[];
+  words: readonly string[];
   language: Language;
 }): string {
   const { words, language } = params;
@@ -52,7 +52,7 @@ export function getLocalizedWords(params: {
 }
 
 export function getLocalizedWordsSplitWithCommas(params: {
-  words: string[];
+  words: readonly string[];
   language: Language;
 }): string {
   const { words, language } = params;

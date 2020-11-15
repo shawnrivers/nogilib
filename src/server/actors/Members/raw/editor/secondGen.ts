@@ -24,6 +24,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/karin___ito/',
       },
       {
+        title: SocialMedia.Twitter,
+        url: 'https://twitter.com/karin___ito',
+      },
+      {
         title: SocialMedia.YouTube,
         url: 'https://www.youtube.com/channel/UC9BihA2GY6ATFR__KvRWudA',
       },
@@ -48,6 +52,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     bloodType: BloodType.A,
     origin: Birthplace.Kanagawa,
     sites: [
+      {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/junna_ito_official/',
+      },
       {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/junna.itou/',
@@ -131,6 +139,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     bloodType: BloodType.B,
     origin: Birthplace.Saitama,
     sites: [
+      {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/mai.shinuchi_official/',
+      },
       {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/mai.shinuchi/',
@@ -285,6 +297,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     bloodType: BloodType.A,
     origin: Birthplace.Tokyo,
     sites: [
+      {
+        title: SocialMedia.Instagram,
+        url: 'https://instagram.com/rena_yamazaki.official/',
+      },
       {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/rena.yamazaki/',
