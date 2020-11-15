@@ -21,7 +21,6 @@ module.exports = {
   },
   rules: {
     '@typescript-eslint/indent': 'off',
-    '@typescript-eslint/interface-name-prefix': 'warn',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/prefer-interface': 'off',
@@ -34,6 +33,7 @@ module.exports = {
     'react/prop-types': 'off',
     'import/order': 'warn',
     'no-console': 'warn',
+    'prefer-const': 'off',
   },
   settings: {
     react: {
