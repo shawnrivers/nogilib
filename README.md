@@ -28,13 +28,13 @@
 1.  **Install necessary packages.**
 
     ```sh
-    yarn install
+    npm install
     ```
 
 2.  **(Optional) Generate the latest data.**
 
     ```sh
-    yarn generate-data
+    npm run generate-data
     ```
 
     Data will be generated in `src/data`.
@@ -42,7 +42,7 @@
 3.  **Start the dev server.**
 
     ```sh
-    yarn dev
+    npm run dev
     ```
 
     Your site is now running at `http://localhost:8080`.
