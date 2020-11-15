@@ -3067,7 +3067,8 @@
         "members/singles/20/shiraishimai.jpg",
         "members/singles/22/shiraishimai.jpg",
         "members/singles/24/shiraishimai.jpg",
-        "members/singles/25/shiraishimai.jpg"
+        "members/singles/25/shiraishimai.jpg",
+        "members/others/shiraishimai_2020-11-11.jpg"
       ],
       "singles": [
         {
@@ -3211,6 +3212,14 @@
     "origin": "群馬県",
     "sites": [
       {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/m.shiraishi.official/"
+      },
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/shiraishi_staff"
+      },
+      {
         "title": "YouTube",
         "url": "https://www.youtube.com/c/maishiraishi"
       },
@@ -3219,8 +3228,12 @@
         "url": "https://blog.nogizaka46.com/mai.shiraishi/"
       },
       {
+        "title": "Official",
+        "url": "https://maishiraishi-official.com/"
+      },
+      {
         "title": "Profile",
-        "url": "https://www.nogizaka46.com/member/detail/shiraishimai.php"
+        "url": "https://n46llc.com/s/m00/artist/12?ima=0737"
       },
       {
         "title": "755",
@@ -3400,8 +3413,8 @@
       "under": 0
     },
     "graduation": {
-      "isGraduated": false,
-      "graduatedDate": ""
+      "isGraduated": true,
+      "graduatedDate": "2020-10-28"
     }
   },
   {
@@ -3787,7 +3800,8 @@
         "members/singles/20/nakadakana.jpg",
         "members/singles/22/nakadakana.jpg",
         "members/singles/24/nakadakana.jpg",
-        "members/singles/25/nakadakana.jpg"
+        "members/singles/25/nakadakana.jpg",
+        "members/others/nakadakana_2020-11-11.jpg"
       ],
       "singles": [
         {
@@ -3940,7 +3954,7 @@
       },
       {
         "title": "Profile",
-        "url": "https://www.nogizaka46.com/member/detail/nakadakana.php"
+        "url": "https://n46llc.com/s/m00/artist/13?ima=0737"
       },
       {
         "title": "755",
@@ -11598,6 +11612,10 @@
         "url": "https://www.instagram.com/karin___ito/"
       },
       {
+        "title": "Twitter",
+        "url": "https://twitter.com/karin___ito"
+      },
+      {
         "title": "YouTube",
         "url": "https://www.youtube.com/channel/UC9BihA2GY6ATFR__KvRWudA"
       },
@@ -11906,6 +11924,10 @@
     "bloodType": "a",
     "origin": "神奈川県",
     "sites": [
+      {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/junna_ito_official/"
+      },
       {
         "title": "blog",
         "url": "https://blog.nogizaka46.com/junna.itou/"
@@ -12831,6 +12853,10 @@
     "bloodType": "b",
     "origin": "埼玉県",
     "sites": [
+      {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/mai.shinuchi_official/"
+      },
       {
         "title": "blog",
         "url": "https://blog.nogizaka46.com/mai.shinuchi/"
@@ -14113,6 +14139,10 @@
     "bloodType": "a",
     "origin": "東京都",
     "sites": [
+      {
+        "title": "Instagram",
+        "url": "https://instagram.com/rena_yamazaki.official/"
+      },
       {
         "title": "blog",
         "url": "https://blog.nogizaka46.com/rena.yamazaki/"

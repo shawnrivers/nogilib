@@ -458,7 +458,20 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     height: 162,
     bloodType: BloodType.A,
     origin: Birthplace.Gunma,
+    graduatedDate: '2020-10-28',
     sites: [
+      {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/m.shiraishi.official/',
+      },
+      {
+        title: SocialMedia.Twitter,
+        url: 'https://twitter.com/shiraishi_staff',
+      },
+      {
+        title: SocialMedia.Official,
+        url: 'https://maishiraishi-official.com/',
+      },
       {
         title: SocialMedia.YouTube,
         url: 'https://www.youtube.com/c/maishiraishi',
@@ -469,7 +482,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       },
       {
         title: SocialMedia.Profile,
-        url: 'https://www.nogizaka46.com/member/detail/shiraishimai.php',
+        url: 'https://n46llc.com/s/m00/artist/12?ima=0737',
       },
       {
         title: SocialMedia.Nanagogo,
@@ -606,7 +619,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       },
       {
         title: SocialMedia.Profile,
-        url: 'https://www.nogizaka46.com/member/detail/nakadakana.php',
+        url: 'https://n46llc.com/s/m00/artist/13?ima=0737',
       },
       {
         title: SocialMedia.Nanagogo,
