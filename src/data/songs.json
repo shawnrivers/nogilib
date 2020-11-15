@@ -10454,7 +10454,9 @@
       "direct": []
     },
     "performers": {
-      "center": [],
+      "center": [
+        "yamashitamizuki"
+      ],
       "fukujin": "row-1-2",
       "solo": "",
       "unit": ""
@@ -10467,9 +10469,31 @@
       }
     },
     "formations": {
-      "firstRow": [],
-      "secondRow": [],
-      "thirdRow": [],
+      "firstRow": [
+        "ikutaerika",
+        "umezawaminami",
+        "yamashitamizuki",
+        "kuboshiori",
+        "saitouasuka"
+      ],
+      "secondRow": [
+        "matsumurasayuri",
+        "endousakura",
+        "oozonomomoko",
+        "horimiona",
+        "yodayuuki",
+        "kakiharuka",
+        "akimotomanatsu"
+      ],
+      "thirdRow": [
+        "shinuchimai",
+        "seimiyarei",
+        "tamuramayu",
+        "hoshinominami",
+        "tsutsuiayame",
+        "iwamotorenka",
+        "takayamakazumi"
+      ],
       "fourthRow": []
     }
   },

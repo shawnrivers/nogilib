@@ -43,13 +43,43 @@
         "type": "title",
         "focusPerformers": {
           "type": "center",
-          "members": []
+          "members": [
+            "yamashitamizuki"
+          ]
         }
       }
     ],
-    "underMembers": [],
+    "underMembers": [
+      "itoujunna",
+      "itouriria",
+      "kitanohinako",
+      "sakaguchitamami",
+      "satoukaede",
+      "suzukiayane",
+      "teradaranze",
+      "nakamurareno",
+      "higuchihina",
+      "mukaihazuki",
+      "yamazakirena",
+      "yoshidaayanochristie",
+      "watanabemiria",
+      "wadamaaya"
+    ],
     "behindPerformers": {
-      "trainees": [],
+      "trainees": [
+        "kakehashisayaka",
+        "kanagawasaya",
+        "kitagawayuri",
+        "shibatayuna",
+        "seimiyarei",
+        "hayakawaseira",
+        "yakubomio",
+        "kuromiharuka",
+        "satourika",
+        "hayashiruna",
+        "matsuomiyu",
+        "yumikinao"
+      ],
       "skips": []
     },
     "previousSingleNumber": "26"
