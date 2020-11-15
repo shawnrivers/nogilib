@@ -1,6 +1,6 @@
 /**@jsx jsx */
 import { jsx, css } from '@emotion/core';
-import { ThemeProvider } from 'emotion-theming';
+import { ThemeProvider } from '@emotion/react';
 import { themes } from 'client/styles/tokens';
 
 export const ThemeDecorator = () => {

@@ -1,4 +1,4 @@
-import { useTheme as useEmotionTheme } from 'emotion-theming';
+import { useTheme as useEmotionTheme } from '@emotion/react';
 import {
   ColorTheme,
   DARK_COLOR_THEME,
@@ -54,4 +54,4 @@ export const themes = {
   dark: darkTheme,
 };
 
-export const useAppTheme = () => useEmotionTheme<Theme>();
+export const useAppTheme = () => useEmotionTheme();
