@@ -21,7 +21,7 @@ type DataType = {
 
 export type GatsbyImageProps = {
   src: string;
-} & React.ComponentProps<typeof Img>;
+} & Omit<React.ComponentProps<typeof Img>, 'fluid'>;
 
 export const GatsbyImage: React.FC<GatsbyImageProps> = ({ src, ...props }) => {
   const data: DataType = useStaticQuery(graphql`
