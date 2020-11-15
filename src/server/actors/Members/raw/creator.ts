@@ -4,16 +4,16 @@ import { sortBySocialMedia } from 'utils/arrays';
 type CreateMemberRawParams = {
   name: MemberRaw['name'];
   nameNotations: [
-    MemberRaw['nameNotations']['lastName'],
-    MemberRaw['nameNotations']['firstName'],
-    MemberRaw['nameNotations']['lastNameEn'],
-    MemberRaw['nameNotations']['firstNameEn'],
-    MemberRaw['nameNotations']['lastNameFurigana'],
-    MemberRaw['nameNotations']['firstNameFurigana']
+    lastName: MemberRaw['nameNotations']['lastName'],
+    firstName: MemberRaw['nameNotations']['firstName'],
+    lastNameEn: MemberRaw['nameNotations']['lastNameEn'],
+    firstNameEn: MemberRaw['nameNotations']['firstNameEn'],
+    lastNameFurigana: MemberRaw['nameNotations']['lastNameFurigana'],
+    firstNameFurigana: MemberRaw['nameNotations']['firstNameFurigana']
   ];
   glowStickColor: [
-    MemberRaw['glowStickColor']['left'],
-    MemberRaw['glowStickColor']['right']
+    left: MemberRaw['glowStickColor']['left'],
+    right: MemberRaw['glowStickColor']['right']
   ];
   join: MemberRaw['join'];
   birthday: MemberRaw['birthday'];
