@@ -6,11 +6,11 @@ export const TWENTY_SIXTH_SINGLE = createSingleRaw({
   title: 'タイトル未定',
   number: '26',
   release: '2021-01-27',
-  cdTypes: ['A', 'B', 'C', 'D', 'T'],
+  cdTypes: ['A'],
   songs: [
     {
       title: SONGS['タイトル未定'].title,
-      inCdType: ['A', 'B', 'C', 'D', 'T'],
+      inCdType: ['A'],
     },
   ],
   underMembers: [

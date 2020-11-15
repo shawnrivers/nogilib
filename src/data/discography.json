@@ -10,22 +10,6 @@
       {
         "url": "artworks/artwork_no_image.png",
         "type": "A"
-      },
-      {
-        "url": "artworks/artwork_no_image.png",
-        "type": "B"
-      },
-      {
-        "url": "artworks/artwork_no_image.png",
-        "type": "C"
-      },
-      {
-        "url": "artworks/artwork_no_image.png",
-        "type": "D"
-      },
-      {
-        "url": "artworks/artwork_no_image.png",
-        "type": "T"
       }
     ],
     "songs": [
@@ -34,11 +18,7 @@
         "title": "タイトル未定",
         "key": "untitled26",
         "inCdType": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "T"
+          "A"
         ],
         "type": "title",
         "focusPerformers": {
