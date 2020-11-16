@@ -1,9 +1,8 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
-
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SongTitle, SONGS } from 'server/actors/Songs/constants/songTitle';
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
@@ -81,7 +80,7 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
     solo: MemberNameKey.ShiraishiMai,
   }),
   createSongRaw({
-    title: SongTitle.Anastasia,
+    title: SONGS['アナスターシャ'].title,
     type: SongType.SecondGeneration,
     creators: {
       lyrics: ['秋元康'],
