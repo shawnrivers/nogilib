@@ -1,0 +1,17 @@
+change-template: '- $TITLE ($URL)'
+categories:
+  - title: '🚀 Features'
+    labels: 'feature'
+  - title: '🌈 Data Update'
+    labels: 'data update'
+  - title: '🔨 Improvements'
+    labels:
+      - 'improvement'
+      - 'documentation'
+      - 'dependencies'
+  - title: '🐛 Bug Fixes'
+    labels: 'bug'
+template: |
+  ## Changes
+
+  $CHANGES
