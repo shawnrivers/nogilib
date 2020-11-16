@@ -14,6 +14,4 @@ categories:
   - title: '🐛 Bug Fixes'
     labels: 'bug'
 template: |
-  ## Changes
-
   $CHANGES
