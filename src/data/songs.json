@@ -34,7 +34,18 @@
       "center": [
         "ikomarina"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "ikutaerika",
+          "ikomarina",
+          "hoshinominami",
+          "hashimotonanami",
+          "matsumurasayuri",
+          "shiraishimai",
+          "takayamakazumi"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -104,7 +115,10 @@
       "center": [
         "hatanakaseira"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -176,7 +190,10 @@
       "center": [
         "ikomarina"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -259,7 +276,10 @@
       "center": [
         "ikomarina"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -334,7 +354,10 @@
         "ikomarina",
         "ikutaerika"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -401,7 +424,10 @@
       "center": [
         "ikomarina"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -475,7 +501,18 @@
       "center": [
         "ikomarina"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "sakuraireika",
+          "ikomarina",
+          "nakadakana",
+          "hashimotonanami",
+          "matsumurasayuri",
+          "shiraishimai",
+          "takayamakazumi"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -547,7 +584,10 @@
       "center": [
         "itoumarika"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -614,7 +654,10 @@
       "center": [
         "ikomarina"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -681,7 +724,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -732,7 +778,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "ikomarina",
       "unit": ""
     },
@@ -785,7 +834,10 @@
       "center": [
         "ikomarina"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -862,15 +914,18 @@
       "center": [
         "ikomarina"
       ],
-      "fukujin": [
-        "ikutaerika",
-        "ikomarina",
-        "hoshinominami",
-        "hashimotonanami",
-        "shiraishimai",
-        "matsumurasayuri",
-        "nishinonanase"
-      ],
+      "fukujin": {
+        "type": "irregular",
+        "members": [
+          "ikutaerika",
+          "ikomarina",
+          "hoshinominami",
+          "hashimotonanami",
+          "shiraishimai",
+          "matsumurasayuri",
+          "nishinonanase"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -946,7 +1001,10 @@
       "center": [
         "itounene"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -1020,7 +1078,10 @@
       "center": [
         "matsumurasayuri"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -1077,7 +1138,10 @@
       "center": [
         "ikomarina"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -1148,7 +1212,10 @@
       "center": [
         "ikomarina"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -1216,7 +1283,10 @@
       "center": [
         "saitouasuka"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -1277,7 +1347,19 @@
       "center": [
         "ikomarina"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "ikutaerika",
+          "ikomarina",
+          "hoshinominami",
+          "shiraishimai",
+          "hashimotonanami",
+          "matsumurasayuri",
+          "sakuraireika",
+          "akimotomanatsu"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -1349,7 +1431,10 @@
       "center": [
         "nakadakana"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -1417,7 +1502,10 @@
       "center": [
         "ikomarina"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -1483,7 +1571,10 @@
         "takayamakazumi",
         "noujouami"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -1538,7 +1629,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -1588,7 +1682,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": "WHITE HIGH"
     },
@@ -1645,7 +1742,19 @@
       "center": [
         "ikomarina"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "ikutaerika",
+          "ikomarina",
+          "hoshinominami",
+          "sakuraireika",
+          "hashimotonanami",
+          "shiraishimai",
+          "matsumurasayuri",
+          "akimotomanatsu"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -1721,7 +1830,10 @@
       "center": [
         "saitouyuuri"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -1795,7 +1907,10 @@
         "ikomarina",
         "hoshinominami"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -1861,7 +1976,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -1924,7 +2042,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -1979,7 +2100,10 @@
         "sakuraireika",
         "nishinonanase"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -2041,7 +2165,19 @@
       "center": [
         "shiraishimai"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "matsumurasayuri",
+          "shiraishimai",
+          "hashimotonanami",
+          "sakuraireika",
+          "ikutaerika",
+          "ikomarina",
+          "nishinonanase",
+          "takayamakazumi"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -2113,7 +2249,10 @@
       "center": [
         "saitouasuka"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -2186,7 +2325,10 @@
       "center": [
         "shiraishimai"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -2249,7 +2391,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -2308,7 +2453,10 @@
       "center": [
         "nishinonanase"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -2360,7 +2508,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -2446,7 +2597,20 @@
       "center": [
         "horimiona"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "nishinonanase",
+          "shiraishimai",
+          "horimiona",
+          "hashimotonanami",
+          "matsumurasayuri",
+          "sakuraireika",
+          "ikutaerika",
+          "ikomarina",
+          "wakatsukiyumi"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -2519,7 +2683,10 @@
       "center": [
         "hoshinominami"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -2583,7 +2750,10 @@
       "center": [
         "horimiona"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -2655,7 +2825,10 @@
       "center": [
         "shiraishimai"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -2714,7 +2887,10 @@
       "center": [
         "horimiona"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -2783,7 +2959,10 @@
       "center": [
         "hashimotonanami"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -2844,7 +3023,16 @@
       "center": [
         "nishinonanase"
       ],
-      "fukujin": "row-1",
+      "fukujin": {
+        "type": "row-1",
+        "members": [
+          "horimiona",
+          "shiraishimai",
+          "nishinonanase",
+          "hashimotonanami",
+          "ikomarina"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -2916,7 +3104,10 @@
       "center": [
         "itoumarika"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -2990,7 +3181,10 @@
       "center": [
         "nishinonanase"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -3053,7 +3247,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -3120,7 +3317,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": "孤独兄弟"
     },
@@ -3176,7 +3376,10 @@
       "center": [
         "ikutaerika"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -3238,7 +3441,21 @@
       "center": [
         "nishinonanase"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "matsuirena",
+          "shiraishimai",
+          "nishinonanase",
+          "hashimotonanami",
+          "matsumurasayuri",
+          "wakatsukiyumi",
+          "akimotomanatsu",
+          "sakuraireika",
+          "fukagawamai",
+          "ikomarina"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -3311,7 +3528,10 @@
       "center": [
         "itoumarika"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -3376,7 +3596,10 @@
       "center": [
         "nishinonanase"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -3444,7 +3667,10 @@
       "center": [
         "shiraishimai"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -3509,7 +3735,10 @@
       "center": [
         "nishinonanase"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -3564,7 +3793,10 @@
       "center": [
         "nishinonanase"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -3625,7 +3857,21 @@
       "center": [
         "ikutaerika"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "matsuirena",
+          "shiraishimai",
+          "ikutaerika",
+          "nishinonanase",
+          "hashimotonanami",
+          "matsumurasayuri",
+          "akimotomanatsu",
+          "ikomarina",
+          "sakuraireika",
+          "fukagawamai"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -3701,7 +3947,10 @@
       "center": [
         "inouesayuri"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -3768,7 +4017,10 @@
         "nagashimaseira",
         "sakuraireika"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -3825,7 +4077,10 @@
       "center": [
         "ikutaerika"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -3892,7 +4147,10 @@
       "center": [
         "ikutaerika"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -3948,7 +4206,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -4011,7 +4272,21 @@
       "center": [
         "nishinonanase"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "matsuirena",
+          "shiraishimai",
+          "nishinonanase",
+          "hashimotonanami",
+          "ikutaerika",
+          "wakatsukiyumi",
+          "akimotomanatsu",
+          "ikomarina",
+          "sakuraireika",
+          "fukagawamai"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -4091,7 +4366,10 @@
       "center": [
         "nakamotohimeka"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -4164,7 +4442,10 @@
         "saitouasuka",
         "hoshinominami"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -4224,7 +4505,10 @@
       "center": [
         "shiraishimai"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -4278,7 +4562,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "nishinonanase",
       "unit": ""
     },
@@ -4326,7 +4613,10 @@
       "center": [
         "teradaranze"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -4386,7 +4676,21 @@
       "center": [
         "ikomarina"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "shiraishimai",
+          "nishinonanase",
+          "ikomarina",
+          "ikutaerika",
+          "hashimotonanami",
+          "takayamakazumi",
+          "wakatsukiyumi",
+          "sakuraireika",
+          "akimotomanatsu",
+          "fukagawamai"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -4466,7 +4770,10 @@
       "center": [
         "horimiona"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -4531,7 +4838,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "nishinonanase",
       "unit": ""
     },
@@ -4579,7 +4889,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -4637,7 +4950,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": "からあげ姉妹"
     },
@@ -4694,7 +5010,10 @@
       "center": [
         "ikomarina"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -4762,7 +5081,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -4821,7 +5143,21 @@
         "shiraishimai",
         "nishinonanase"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "etoumisa",
+          "nishinonanase",
+          "shiraishimai",
+          "fukagawamai",
+          "saitouasuka",
+          "takayamakazumi",
+          "hashimotonanami",
+          "ikutaerika",
+          "akimotomanatsu",
+          "hoshinominami"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -4898,7 +5234,10 @@
         "horimiona",
         "nakamotohimeka"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -4978,7 +5317,10 @@
         "shiraishimai",
         "nishinonanase"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -5048,7 +5390,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": "サンクエトワール"
     },
@@ -5107,7 +5452,10 @@
       "center": [
         "ikomarina"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -5179,7 +5527,10 @@
       "center": [
         "nishinonanase"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -5237,7 +5588,21 @@
       "center": [
         "fukagawamai"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "hashimotonanami",
+          "nishinonanase",
+          "fukagawamai",
+          "shiraishimai",
+          "ikutaerika",
+          "saitouasuka",
+          "takayamakazumi",
+          "etoumisa",
+          "akimotomanatsu",
+          "hoshinominami"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -5314,7 +5679,10 @@
       "center": [
         "nakamotohimeka"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -5387,7 +5755,10 @@
       "center": [
         "ikutaerika"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -5442,7 +5813,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "fukagawamai",
       "unit": ""
     },
@@ -5496,7 +5870,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -5546,7 +5923,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "nishinonanase",
       "unit": ""
     },
@@ -5600,7 +5980,10 @@
       "center": [
         "hoshinominami"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -5660,7 +6043,21 @@
       "center": [
         "saitouasuka"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "hashimotonanami",
+          "nishinonanase",
+          "saitouasuka",
+          "shiraishimai",
+          "ikutaerika",
+          "takayamakazumi",
+          "etoumisa",
+          "matsumurasayuri",
+          "akimotomanatsu",
+          "sakuraireika"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -5736,7 +6133,10 @@
       "center": [
         "higuchihina"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -5809,7 +6209,10 @@
       "center": [
         "saitouasuka"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -5879,7 +6282,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "shiraishimai",
       "unit": ""
     },
@@ -5932,7 +6338,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "ikutaerika",
       "unit": ""
     },
@@ -5985,7 +6394,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": "さゆりんご軍団"
     },
@@ -6040,7 +6452,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -6096,7 +6511,22 @@
       "center": [
         "hashimotonanami"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "takayamakazumi",
+          "nishinonanase",
+          "hashimotonanami",
+          "shiraishimai",
+          "ikutaerika",
+          "wakatsukiyumi",
+          "matsumurasayuri",
+          "horimiona",
+          "saitouasuka",
+          "etoumisa",
+          "akimotomanatsu"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -6175,7 +6605,10 @@
       "center": [
         "teradaranze"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -6245,7 +6678,10 @@
       "center": [
         "hashimotonanami"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -6316,7 +6752,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -6372,7 +6811,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": "真夏さんリスペクト軍団"
     },
@@ -6428,7 +6870,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": "サンクエトワール"
     },
@@ -6486,7 +6931,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "hashimotonanami",
       "unit": ""
     },
@@ -6542,7 +6990,23 @@
         "nishinonanase",
         "shiraishimai"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "akimotomanatsu",
+          "horimiona",
+          "nishinonanase",
+          "shiraishimai",
+          "saitouasuka",
+          "etoumisa",
+          "wakatsukiyumi",
+          "takayamakazumi",
+          "ikomarina",
+          "ikutaerika",
+          "matsumurasayuri",
+          "sakuraireika"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -6625,7 +7089,10 @@
       "center": [
         "watanabemiria"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -6689,7 +7156,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": "女子校カルテット"
     },
@@ -6745,7 +7215,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": "姉御坂"
     },
@@ -6802,7 +7275,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": "ナスカ"
     },
@@ -6859,7 +7335,10 @@
       "center": [
         "oozonomomoko"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -6923,7 +7402,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": "かすみ草"
     },
@@ -6982,7 +7464,23 @@
         "oozonomomoko",
         "yodayuuki"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "saitouasuka",
+          "shiraishimai",
+          "oozonomomoko",
+          "yodayuuki",
+          "nishinonanase",
+          "horimiona",
+          "hoshinominami",
+          "matsumurasayuri",
+          "ikutaerika",
+          "akimotomanatsu",
+          "etoumisa",
+          "takayamakazumi"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -7061,7 +7559,10 @@
         "nakamotohimeka",
         "kitanohinako"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -7131,7 +7632,10 @@
         "oozonomomoko",
         "yodayuuki"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -7197,7 +7701,10 @@
         "akimotomanatsu",
         "matsumurasayuri"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -7269,7 +7776,10 @@
       "center": [
         "horimiona"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -7337,7 +7847,10 @@
         "kuboshiori",
         "yamashitamizuki"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -7399,7 +7912,10 @@
       "center": [
         "takayamakazumi"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -7474,7 +7990,22 @@
         "nishinonanase",
         "saitouasuka"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "horimiona",
+          "nishinonanase",
+          "saitouasuka",
+          "shiraishimai",
+          "wakatsukiyumi",
+          "inouesayuri",
+          "matsumurasayuri",
+          "ikutaerika",
+          "itoumarika",
+          "sakuraireika",
+          "etoumisa"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -7554,7 +8085,10 @@
       "center": [
         "higuchihina"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -7622,7 +8156,10 @@
         "kuboshiori",
         "yamashitamizuki"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -7689,7 +8226,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -7742,7 +8282,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": "若様軍団"
     },
@@ -7800,7 +8343,10 @@
       "center": [
         "itouriria"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -7858,7 +8404,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -7914,7 +8463,25 @@
       "center": [
         "shiraishimai"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "yamashitamizuki",
+          "horimiona",
+          "ikutaerika",
+          "shiraishimai",
+          "nishinonanase",
+          "saitouasuka",
+          "yodayuuki",
+          "sakuraireika",
+          "matsumurasayuri",
+          "kuboshiori",
+          "ikomarina",
+          "oozonomomoko",
+          "etoumisa",
+          "akimotomanatsu"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -7991,7 +8558,10 @@
       "center": [
         "suzukiayane"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -8068,7 +8638,10 @@
       "center": [
         "ikomarina"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -8133,7 +8706,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": "藤桜梨"
     },
@@ -8190,7 +8766,10 @@
       "center": [
         "horimiona"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -8256,7 +8835,10 @@
       "center": [
         "iwamotorenka"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -8315,7 +8897,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": "いもうと坂"
     },
@@ -8373,7 +8958,25 @@
       "center": [
         "saitouasuka"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "ikutaerika",
+          "yodayuuki",
+          "nishinonanase",
+          "saitouasuka",
+          "shiraishimai",
+          "horimiona",
+          "yamashitamizuki",
+          "akimotomanatsu",
+          "etoumisa",
+          "oozonomomoko",
+          "umezawaminami",
+          "iwamotorenka",
+          "matsumurasayuri",
+          "sakuraireika"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -8450,7 +9053,10 @@
       "center": [
         "nakadakana"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -8520,7 +9126,10 @@
       "center": [
         "umezawaminami"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -8589,7 +9198,10 @@
       "center": [
         "yamashitamizuki"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -8647,7 +9259,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -8696,7 +9311,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -8746,7 +9364,10 @@
       "center": [
         "saitouasuka"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -8822,7 +9443,25 @@
       "center": [
         "nishinonanase"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "umezawaminami",
+          "yamashitamizuki",
+          "saitouasuka",
+          "nishinonanase",
+          "shiraishimai",
+          "ikutaerika",
+          "yodayuuki",
+          "etoumisa",
+          "akimotomanatsu",
+          "horimiona",
+          "wakatsukiyumi",
+          "hoshinominami",
+          "sakuraireika",
+          "matsumurasayuri"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -8901,7 +9540,10 @@
       "center": [
         "kitanohinako"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -8975,7 +9617,10 @@
       "center": [
         "saitouasuka"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -9043,7 +9688,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "nishinonanase",
       "unit": ""
     },
@@ -9091,7 +9739,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": "女子校カルテット"
     },
@@ -9140,7 +9791,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -9188,7 +9842,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -9242,7 +9899,25 @@
       "center": [
         "saitouasuka"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "oozonomomoko",
+          "horimiona",
+          "ikutaerika",
+          "saitouasuka",
+          "shiraishimai",
+          "takayamakazumi",
+          "yodayuuki",
+          "umezawaminami",
+          "kitanohinako",
+          "akimotomanatsu",
+          "kuboshiori",
+          "matsumurasayuri",
+          "hoshinominami",
+          "sakuraireika"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -9315,7 +9990,10 @@
       "center": [
         "teradaranze"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -9374,7 +10052,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -9421,7 +10102,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -9473,7 +10157,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -9528,7 +10215,10 @@
       "center": [
         "endousakura"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -9584,7 +10274,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": "からあげ姉妹"
     },
@@ -9635,7 +10328,22 @@
       "center": [
         "endousakura"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "horimiona",
+          "kakiharuka",
+          "endousakura",
+          "tsutsuiayame",
+          "saitouasuka",
+          "yamashitamizuki",
+          "ikutaerika",
+          "shiraishimai",
+          "matsumurasayuri",
+          "sakuraireika",
+          "yodayuuki"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -9702,7 +10410,10 @@
       "center": [
         "saitouasuka"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -9774,7 +10485,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -9826,7 +10540,10 @@
       "center": [
         "kakehashisayaka"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -9885,7 +10602,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "sakuraireika",
       "unit": ""
     },
@@ -9937,7 +10657,10 @@
       "center": [
         "iwamotorenka"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -10000,7 +10723,10 @@
       "center": [
         "endousakura"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -10069,7 +10795,22 @@
       "center": [
         "shiraishimai"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "saitouasuka",
+          "ikutaerika",
+          "shiraishimai",
+          "matsumurasayuri",
+          "hoshinominami",
+          "inouesayuri",
+          "wadamaaya",
+          "takayamakazumi",
+          "akimotomanatsu",
+          "higuchihina",
+          "nakadakana"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -10138,7 +10879,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -10194,7 +10938,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "shiraishimai",
       "unit": ""
     },
@@ -10242,7 +10989,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -10298,7 +11048,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -10357,7 +11110,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -10413,7 +11169,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -10457,7 +11216,23 @@
       "center": [
         "yamashitamizuki"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "ikutaerika",
+          "umezawaminami",
+          "yamashitamizuki",
+          "kuboshiori",
+          "saitouasuka",
+          "matsumurasayuri",
+          "endousakura",
+          "oozonomomoko",
+          "horimiona",
+          "yodayuuki",
+          "kakiharuka",
+          "akimotomanatsu"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
@@ -10528,7 +11303,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -10581,7 +11359,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -10640,7 +11421,10 @@
       "center": [
         "ikutaerika"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -10706,7 +11490,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "ikutaerika",
       "unit": ""
     },
@@ -10760,7 +11547,10 @@
       "center": [
         "kojimaharuna"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": "こじ坂46"
     },
@@ -10826,7 +11616,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -10885,7 +11678,10 @@
       "center": [
         "inouesayuri"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -10960,7 +11756,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "nishinonanase",
       "unit": ""
     },
@@ -11012,7 +11811,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -11078,7 +11880,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -11149,7 +11954,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -11208,7 +12016,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -11263,7 +12074,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "nishinonanase",
       "unit": ""
     },
@@ -11314,7 +12128,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -11367,7 +12184,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "ikutaerika",
       "unit": ""
     },
@@ -11418,7 +12238,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": "乃木團"
     },
@@ -11470,7 +12293,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -11531,7 +12357,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": "犬メン"
     },
@@ -11584,7 +12413,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": "女子校カルテット"
     },
@@ -11638,7 +12470,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -11714,7 +12549,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -11776,7 +12614,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -11838,7 +12679,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -11935,7 +12779,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -11988,7 +12835,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -12041,7 +12891,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -12096,7 +12949,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "saitouasuka",
       "unit": ""
     },
@@ -12147,7 +13003,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -12200,7 +13059,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -12253,7 +13115,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -12305,7 +13170,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -12357,7 +13225,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "nakamotohimeka",
       "unit": ""
     },
@@ -12410,7 +13281,10 @@
       "center": [
         "suzukiayane"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -12476,7 +13350,10 @@
       "center": [
         "teradaranze"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -12542,7 +13419,10 @@
       "center": [
         "higuchihina"
       ],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -12606,7 +13486,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -12675,7 +13558,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "etoumisa",
       "unit": ""
     },
@@ -12726,7 +13612,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -12787,7 +13676,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -12842,7 +13734,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -12897,7 +13792,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": "さゆりんご軍団"
     },
@@ -12951,7 +13849,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -13004,7 +13905,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -13077,7 +13981,10 @@
     },
     "performers": {
       "center": [],
-      "fukujin": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
       "solo": "",
       "unit": ""
     },
@@ -13188,7 +14095,22 @@
       "center": [
         "saitouasuka"
       ],
-      "fukujin": "row-1-2",
+      "fukujin": {
+        "type": "row-1-2",
+        "members": [
+          "yodayuuki",
+          "ikutaerika",
+          "saitouasuka",
+          "endousakura",
+          "kakiharuka",
+          "umezawaminami",
+          "horimiona",
+          "yamashitamizuki",
+          "kuboshiori",
+          "akimotomanatsu",
+          "matsumurasayuri"
+        ]
+      },
       "solo": "",
       "unit": ""
     },
