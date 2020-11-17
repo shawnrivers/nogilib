@@ -13,6 +13,7 @@ type CardContentProps = SurfaceProps & {
   borderRadius?: BorderRadiusKey;
   surfaceColor?: keyof ThemeColorVariants;
   padding?: SpacingKey;
+  accessory?: React.ReactNode;
 };
 
 export const CardContent: React.FC<CardContentProps> = props => {
@@ -22,6 +23,7 @@ export const CardContent: React.FC<CardContentProps> = props => {
     elevation = componentElevationKey.componentOnBackground,
     surfaceColor = 'standard',
     padding = 'm',
+    accessory,
     ...restProps
   } = props;
 
@@ -34,6 +36,7 @@ export const CardContent: React.FC<CardContentProps> = props => {
       css={css`
         border-radius: ${theme.borderRadius[borderRadius]};
         overflow: hidden;
+        position: relative;
       `}
       {...restProps}
     >
@@ -44,6 +47,17 @@ export const CardContent: React.FC<CardContentProps> = props => {
       >
         {children}
       </div>
+      {accessory !== undefined ? (
+        <div
+          css={css`
+            position: absolute;
+            top: 0;
+            right: 0;
+          `}
+        >
+          {accessory}
+        </div>
+      ) : undefined}
     </Surface>
   );
 };
