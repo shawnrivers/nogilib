@@ -1,11 +1,10 @@
 /**@jsx jsx */
 import { jsx, css } from '@emotion/core';
-import styled from '@emotion/styled';
 import * as React from 'react';
 import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
 import { PageContent } from 'client/components/templates/Page';
 import { Hashtag } from 'client/components/atoms/Hashtag';
-import { commonStyles, Theme, useAppTheme } from 'client/styles/tokens';
+import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import { GridArtworkImage } from 'client/components/atoms/images/GirdArtworkImage';
 import { TextDivider } from 'client/components/molecules/TextDivider';
 import {
@@ -20,21 +19,23 @@ import { InfoItemValue } from 'client/components/molecules/typography/info/InfoI
 import { SectionSubtitle } from 'client/components/molecules/typography/SectionSubtitle';
 import { SongPageProps } from 'client/features/Song/container';
 
-type StyledComponentWithThemeProps = {
-  theme: Theme;
-};
+const RowContainer: React.FC = props => (
+  <ul
+    css={css`
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 0.5em;
 
-const RowContainer = styled.ul<StyledComponentWithThemeProps>`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 0.5em;
-
-  & > * {
-    width: 110px;
-    margin: ${commonStyles.spacing.xs};
-  }
-`;
+      & > * {
+        width: 110px;
+        margin: ${commonStyles.spacing.xs};
+      }
+    `}
+  >
+    {props.children}
+  </ul>
+);
 
 type PerformerCardProps = Pick<
   MemberCardProps,
