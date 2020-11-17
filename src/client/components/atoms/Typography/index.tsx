@@ -1,16 +1,16 @@
 /**@jsx jsx */
 import { css, jsx } from '@emotion/core';
 import * as React from 'react';
-import { useAppTheme } from 'client/styles/tokens';
 import {
   FontFamily,
   FONT_FAMILY,
   TypographyKey,
-} from 'client/styles/typography';
+} from 'client/styles/tokens/typography';
+import { useAppTheme } from 'client/styles/tokens';
 import {
   ThemeColorsForeground,
   ThemeColorVariants,
-} from 'client/styles/colors';
+} from 'client/styles/tokens/colors';
 
 const textEllipsisStyles = css`
   overflow: hidden;

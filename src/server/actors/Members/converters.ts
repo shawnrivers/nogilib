@@ -315,24 +315,7 @@ export const convertMemberPositionsHistory: ConvertMemberPositionsHistory = ({
           if (song.performers.center.includes(memberName)) {
             // Check Center
             singlePosition = PositionType.Center;
-          } else if (
-            song.performers.fukujin === 'row-1' &&
-            song.formations.firstRow.includes(memberName)
-          ) {
-            // Check Fukujin (first row case)
-            singlePosition = PositionType.Fukujin;
-          } else if (
-            song.performers.fukujin === 'row-1-2' &&
-            (song.formations.firstRow.includes(memberName) ||
-              song.formations.secondRow.includes(memberName))
-          ) {
-            // Check Fukujin (first & second row case)
-            singlePosition = PositionType.Fukujin;
-          } else if (
-            song.performers.fukujin instanceof Array &&
-            song.performers.fukujin.includes(memberName)
-          ) {
-            // Check Fukujin (irregular case)
+          } else if (song.performers.fukujin.members.includes(memberName)) {
             singlePosition = PositionType.Fukujin;
           } else if (
             song.formations.firstRow.includes(memberName) ||

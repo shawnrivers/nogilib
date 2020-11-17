@@ -16,7 +16,10 @@ export type SongRaw = {
   };
   performers: {
     center: MemberNameKey[];
-    fukujin: 'row-1' | 'row-1-2' | MemberNameKey[];
+    fukujin: {
+      type: 'row-1' | 'row-1-2' | 'irregular' | null;
+      members: MemberNameKey[];
+    };
     solo: MemberNameKey | '';
     unit: UnitName | '';
   };

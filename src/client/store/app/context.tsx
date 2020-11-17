@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { getInitialState, reducer, State } from 'client/store/app/reducer';
 import { ThemeMode } from 'client/types/themeMode';
-import { ThemeKey } from 'client/styles/colors';
+import { ThemeKey } from 'client/styles/tokens/colors';
 import {
   LOCAL_STORAGE_LANGUAGE_KEY,
   LOCAL_STORAGE_THEME_MODE_KEY,

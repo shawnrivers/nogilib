@@ -2,7 +2,7 @@ import {
   ThemeColorsBackground,
   ThemeColorsForeground,
   ThemeColorVariants,
-} from 'client/styles/colors';
+} from './tokens/colors';
 
 export const POSITION_STYLES: Record<
   'center' | 'fukujin' | 'selected' | 'under',

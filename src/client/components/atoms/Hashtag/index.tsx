@@ -6,7 +6,7 @@ import {
   Typography,
   TypographyProps,
 } from 'client/components/atoms/Typography';
-import { SpacingKey } from 'client/styles/spacing';
+import { SpacingKey } from 'client/styles/tokens/spacing';
 
 export type HashtagProps = Omit<TypographyProps, 'variant' | 'element'> & {
   spacing?: SpacingKey;

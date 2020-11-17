@@ -11,7 +11,7 @@ import {
   mapBackgroundToForeground,
   ThemeColorKey,
   ThemeColorsBackground,
-} from 'client/styles/colors';
+} from 'client/styles/tokens/colors';
 
 export type TextLinkProps = BaseLinkProps &
   Omit<TypographyProps, 'variant' | 'element'> & {
