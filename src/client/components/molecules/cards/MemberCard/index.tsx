@@ -10,7 +10,7 @@ import { GridMemberImage } from 'client/components/atoms/images/GridMemberImage'
 import { PositionType } from 'server/actors/Members/constants/position';
 import { useAppTheme } from 'client/styles/tokens';
 import { BORDER_RADIUS } from 'client/styles/borderRadius';
-import { POSITION_STYLES } from 'client/features/Member/constants/positionStyles';
+import { POSITION_STYLES } from 'client/styles/positionStyles';
 
 const PositionBadge: React.FC<{
   position: PositionType.Center | PositionType.Fukujin;
