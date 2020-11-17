@@ -2,13 +2,13 @@
 import { css, jsx } from '@emotion/core';
 import * as React from 'react';
 import { withKnobs, select } from '@storybook/addon-knobs';
-import { Typography } from 'client/components/atoms/Typography';
-import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import {
-  mapBackgroundToForeground,
   ThemeColorKey,
   ThemeColorsBackground,
-} from 'client/styles/colors';
+  mapBackgroundToForeground,
+} from './colors';
+import { Typography } from 'client/components/atoms/Typography';
+import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import { useAppContext } from 'client/hooks/useAppContext';
 import { ThemeDecorator } from 'storybook/ThemeDecorator';
 

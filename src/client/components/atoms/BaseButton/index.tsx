@@ -1,9 +1,12 @@
 /**@jsx jsx */
 import { jsx, css } from '@emotion/core';
 import * as React from 'react';
-import { ThemeColorKey, ThemeColorsBackground } from 'client/styles/colors';
+import { SpacingKey } from 'client/styles/tokens/spacing';
+import {
+  ThemeColorKey,
+  ThemeColorsBackground,
+} from 'client/styles/tokens/colors';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
-import { SpacingKey } from 'client/styles/spacing';
 
 export type BaseButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   backgroundType?: keyof ThemeColorsBackground;

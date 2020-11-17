@@ -3,7 +3,7 @@ import { jsx, css } from '@emotion/core';
 import * as React from 'react';
 import { PositionType } from 'server/actors/Members/constants/position';
 import { useAppTheme } from 'client/styles/tokens';
-import { componentElevationKey } from 'client/styles/elevation';
+import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { Typography } from 'client/components/atoms/Typography';
 import { POSITION_STYLES } from 'client/styles/positionStyles';
 

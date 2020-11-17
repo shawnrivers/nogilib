@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { TypographyProps } from 'client/components/atoms/Typography';
-import { ThemeColorsForeground } from 'client/styles/colors';
+import { ThemeColorsForeground } from 'client/styles/tokens/colors';
 import { TextLink } from 'client/components/molecules/links/TextLink';
 
 export type TextSwitchLinkProps = Omit<

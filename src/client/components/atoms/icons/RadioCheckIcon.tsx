@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { GlobalColorKey, ThemeColorKey } from 'client/styles/colors';
+import { GlobalColorKey, ThemeColorKey } from 'client/styles/tokens/colors';
 import { useAppTheme } from 'client/styles/tokens';
 
 type RadioCheckIconProps = React.SVGAttributes<SVGElement> & {

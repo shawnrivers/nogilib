@@ -1,13 +1,13 @@
 /**@jsx jsx */
 import { css, jsx } from '@emotion/core';
 import * as React from 'react';
+import { componentElevationKey } from 'client/styles/tokens/elevation';
 import {
   GatsbyImage,
   GatsbyImageProps,
 } from 'client/components/atoms/images/GatsbyImage';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
-import { BorderRadiusKey } from 'client/styles/borderRadius';
-import { componentElevationKey } from 'client/styles/elevation';
+import { BorderRadiusKey } from 'client/styles/tokens/borderRadius';
 
 type ImageProps = GatsbyImageProps & {
   borderRadius: BorderRadiusKey;

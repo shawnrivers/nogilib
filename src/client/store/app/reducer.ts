@@ -1,4 +1,4 @@
-import { ThemeKey } from 'client/styles/colors';
+import { ThemeKey } from 'client/styles/tokens/colors';
 import { Language } from 'client/types/language';
 import { ThemeMode } from 'client/types/themeMode';
 

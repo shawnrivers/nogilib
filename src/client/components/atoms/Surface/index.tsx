@@ -2,11 +2,14 @@
 import { jsx, css } from '@emotion/core';
 import * as React from 'react';
 import {
+  componentElevationKey,
+  ElevationKey,
+} from 'client/styles/tokens/elevation';
+import {
   mapBackgroundToForeground,
   ThemeColorsBackground,
   ThemeColorVariants,
-} from 'client/styles/colors';
-import { componentElevationKey, ElevationKey } from 'client/styles/elevation';
+} from 'client/styles/tokens/colors';
 import { useAppTheme } from 'client/styles/tokens';
 
 export type SurfaceProps = React.HTMLAttributes<HTMLDivElement> & {

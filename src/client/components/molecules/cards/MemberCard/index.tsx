@@ -9,7 +9,7 @@ import { Card, CardProps } from 'client/components/atoms/Card';
 import { GridMemberImage } from 'client/components/atoms/images/GridMemberImage';
 import { PositionType } from 'server/actors/Members/constants/position';
 import { useAppTheme } from 'client/styles/tokens';
-import { BORDER_RADIUS } from 'client/styles/borderRadius';
+import { BORDER_RADIUS } from 'client/styles/tokens/borderRadius';
 import { POSITION_STYLES } from 'client/styles/positionStyles';
 
 const PositionBadge: React.FC<{
