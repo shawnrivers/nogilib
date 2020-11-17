@@ -3,8 +3,6 @@ import { jsx, css } from '@emotion/core';
 import styled from '@emotion/styled';
 import * as React from 'react';
 import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
-import { KOJIHARU_IMAGE_SRC } from 'server/constants/paths';
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { PageContent } from 'client/components/templates/Page';
 import { Hashtag } from 'client/components/atoms/Hashtag';
 import { commonStyles, Theme, useAppTheme } from 'client/styles/tokens';
@@ -38,14 +36,10 @@ const RowContainer = styled.ul<StyledComponentWithThemeProps>`
   }
 `;
 
-const KOJIHARU_NAME_NOTATIONS: NameNotationsForIntl = {
-  lastName: '小嶋',
-  firstName: '陽菜',
-  lastNameEn: 'kojima',
-  firstNameEn: 'haruna',
-};
-
-type PerformerCardProps = Pick<MemberCardProps, 'profileImage' | 'to'> & {
+type PerformerCardProps = Pick<
+  MemberCardProps,
+  'profileImage' | 'to' | 'position'
+> & {
   nameNotations: NameNotationsForIntl;
 };
 
@@ -58,6 +52,7 @@ const PerformerCard: React.FC<PerformerCardProps> = props => {
       lang={formatMemberName(props.nameNotations).lang}
       profileImage={props.profileImage}
       to={props.to}
+      position={props.position}
       textSize="body3"
       borderRadius="s"
       padding="xs"
@@ -103,7 +98,6 @@ export const SongPage: React.FC<SongPageProps> = ({
   artwork,
   performersTag,
   formation,
-  members,
   creators,
 }) => {
   useScrollRestoration();
@@ -251,9 +245,9 @@ export const SongPage: React.FC<SongPageProps> = ({
                     margin-top: 1em;
                   `}
                 >
-                  {formation.length > 1 ? (
-                    formation.map((row, index) => (
-                      <section key={index}>
+                  {formation.map((row, index) => (
+                    <section key={index}>
+                      {formation.length > 1 && (
                         <SectionSubtitle
                           element="h3"
                           css={css`
@@ -262,61 +256,25 @@ export const SongPage: React.FC<SongPageProps> = ({
                         >
                           {formatNth({ num: index + 1, unit: 'row' })}
                         </SectionSubtitle>
-                        <RowContainer>
-                          {row.map(memberName => {
-                            if (memberName !== MemberNameKey.KojimaHaruna) {
-                              const member = members[memberName];
-
-                              return (
-                                <li key={member.name}>
-                                  <PerformerCard
-                                    nameNotations={member.nameNotations}
-                                    profileImage={member.profileImage}
-                                    to={getMemberUrl(member.name)}
-                                  />
-                                </li>
-                              );
-                            } else {
-                              return (
-                                <li key={'小嶋陽菜'}>
-                                  <PerformerCard
-                                    nameNotations={KOJIHARU_NAME_NOTATIONS}
-                                    profileImage={KOJIHARU_IMAGE_SRC}
-                                  />
-                                </li>
-                              );
-                            }
-                          })}
-                        </RowContainer>
-                      </section>
-                    ))
-                  ) : (
-                    <RowContainer>
-                      {formation[0].map(memberName => {
-                        if (memberName !== MemberNameKey.KojimaHaruna) {
-                          const member = members[memberName];
-                          return (
-                            <li key={member.name}>
-                              <PerformerCard
-                                nameNotations={member.nameNotations}
-                                profileImage={member.profileImage}
-                                to={getMemberUrl(member.name)}
-                              />
-                            </li>
-                          );
-                        } else {
-                          return (
-                            <li key={'小嶋陽菜'}>
-                              <PerformerCard
-                                nameNotations={KOJIHARU_NAME_NOTATIONS}
-                                profileImage={KOJIHARU_IMAGE_SRC}
-                              />
-                            </li>
-                          );
-                        }
-                      })}
-                    </RowContainer>
-                  )}
+                      )}
+                      <RowContainer>
+                        {row.map(member => (
+                          <li key={member.name}>
+                            <PerformerCard
+                              nameNotations={member.nameNotations}
+                              profileImage={member.profileImage}
+                              position={member.position}
+                              to={
+                                member.isLink
+                                  ? getMemberUrl(member.name)
+                                  : undefined
+                              }
+                            />
+                          </li>
+                        ))}
+                      </RowContainer>
+                    </section>
+                  ))}
                 </div>
               </section>
             ) : null}
