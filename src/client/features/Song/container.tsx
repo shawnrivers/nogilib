@@ -5,6 +5,10 @@ import { toCdNumber } from 'utils/strings';
 import { SongResult } from 'server/actors/Songs/models';
 import { MemberResult } from 'server/actors/Members/models';
 import { arrayToObject } from 'utils/arrays';
+import { PositionType } from 'server/actors/Members/constants/position';
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { NameNotationsForIntl } from 'client/hooks/useIntl';
+import { KOJIHARU_IMAGE_SRC } from 'server/constants/paths';
 
 export const query = graphql`
   query($key: String!) {
@@ -33,6 +37,9 @@ export const query = graphql`
       }
       performers {
         center
+        fukujin {
+          members
+        }
       }
       formations {
         firstRow
@@ -90,7 +97,10 @@ type QueryResultSong = Pick<
   | 'formations'
   | 'creators'
 > & {
-  performers: Pick<SongResult['performers'], 'center'>;
+  performers: {
+    center: SongResult['performers']['center'];
+    fukujin: Pick<SongResult['performers']['fukujin'], 'members'>;
+  };
 };
 
 type QueryResultMember = Pick<
@@ -107,8 +117,15 @@ type SongData = {
   };
 };
 
-type SongPerformer = Pick<QueryResultMember, 'name' | 'nameNotations'> & {
+type Member = {
+  name: MemberNameKey;
+  nameNotations: NameNotationsForIntl;
   profileImage: string;
+};
+
+type SongPerformer = Member & {
+  position?: PositionType;
+  isLink: boolean;
 };
 
 export type SongPageProps = Pick<
@@ -117,8 +134,7 @@ export type SongPageProps = Pick<
 > & {
   songTags: string[];
   artwork: string;
-  formation: QueryResultSong['formations']['firstRow'][0][][];
-  members: Record<SongPerformer['name'], SongPerformer>;
+  formation: SongPerformer[][];
   centers: string[];
 };
 
@@ -137,7 +153,7 @@ const SongPageContainer: React.FC<SongData> = props => {
     [songData.single, songData.albums, songData.otherCds]
   );
 
-  const members = React.useMemo<SongPageProps['members']>(() => {
+  const members = React.useMemo<Record<MemberNameKey, Member>>(() => {
     const membersArray = membersData.map(memberData => ({
       name: memberData.name,
       nameNotations: memberData.nameNotations,
@@ -150,15 +166,44 @@ const SongPageContainer: React.FC<SongData> = props => {
     return arrayToObject(membersArray, 'name');
   }, [membersData, songData]);
 
-  const formation = React.useMemo(
+  const formation = React.useMemo<SongPageProps['formation']>(
     () =>
       [
         songData.formations.firstRow,
         songData.formations.secondRow,
         songData.formations.thirdRow,
         songData.formations.fourthRow,
-      ].filter(formation => formation.length > 0),
-    [songData.formations]
+      ]
+        .filter(formation => formation.length > 0)
+        .map(row =>
+          row.map(memberNameKey => {
+            if (memberNameKey !== MemberNameKey.KojimaHaruna) {
+              const member = members[memberNameKey];
+              return {
+                ...member,
+                position: getMemberPosition(member.name, songData.performers),
+                isLink: true,
+              };
+            } else {
+              return {
+                name: MemberNameKey.KojimaHaruna,
+                nameNotations: {
+                  lastName: '小嶋',
+                  firstName: '陽菜',
+                  lastNameEn: 'kojima',
+                  firstNameEn: 'haruna',
+                },
+                profileImage: KOJIHARU_IMAGE_SRC,
+                position: getMemberPosition(
+                  MemberNameKey.KojimaHaruna,
+                  songData.performers
+                ),
+                isLink: false,
+              };
+            }
+          })
+        ),
+    [members, songData.formations, songData.performers]
   );
 
   return songData ? (
@@ -169,7 +214,6 @@ const SongPageContainer: React.FC<SongData> = props => {
       artwork={songData.artwork}
       performersTag={songData.performersTag}
       formation={formation}
-      members={members}
       centers={songData.performers.center}
       creators={songData.creators}
     />
@@ -196,4 +240,19 @@ function getMemberProfileImage(
     default:
       return profileImages.gallery.slice().reverse()[0];
   }
+}
+
+function getMemberPosition(
+  memberName: Member['name'],
+  songPerformers: QueryResultSong['performers']
+): PositionType | undefined {
+  if (songPerformers.center.includes(memberName)) {
+    return PositionType.Center;
+  }
+
+  if (songPerformers.fukujin.members.includes(memberName)) {
+    return PositionType.Fukujin;
+  }
+
+  return undefined;
 }

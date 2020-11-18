@@ -9,7 +9,7 @@ import {
   getMembersUrl,
   getSearchUrl,
 } from 'client/utils/urls';
-import { componentElevationKey } from 'client/styles/elevation';
+import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { BaseButton } from 'client/components/atoms/BaseButton';
 import {
   TextLink,

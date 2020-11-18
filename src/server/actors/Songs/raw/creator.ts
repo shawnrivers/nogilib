@@ -24,7 +24,9 @@ type SongRawCreatorParams = {
   | {
       type: SongType.Title;
       center: SongRaw['performers']['center'];
-      fukujin: SongRaw['performers']['fukujin'];
+      fukujin:
+        | Exclude<SongRaw['performers']['fukujin']['type'], 'irregular' | null>
+        | SongRaw['performers']['fukujin']['members'];
       formations?: SongRawCreatorFormation;
     }
   | {
@@ -48,105 +50,133 @@ type SongRawCreatorParams = {
 );
 
 export const createSongRaw = (params: SongRawCreatorParams): SongRaw => {
-  if (params.type === SongType.Title) {
-    return {
-      title: params.title,
-      type: params.type,
-      musicVideo: params.musicVideo ?? '',
-      creators: {
-        lyrics: params.creators?.lyrics ?? [],
-        compose: params.creators?.compose ?? [],
-        arrange: params.creators?.arrange ?? [],
-        direct: params.creators?.direct ?? [],
-      },
-      performers: {
-        center: params.center,
-        fukujin: params.fukujin,
-        solo: '',
-        unit: '',
-      },
-      formations: {
-        firstRow: params.formations?.firstRow ?? [],
-        secondRow: params.formations?.secondRow ?? [],
-        thirdRow: params.formations?.thirdRow ?? [],
-        fourthRow: params.formations?.fourthRow ?? [],
-      },
-    };
-  }
-
-  if (params.type === SongType.Unit) {
-    return {
-      title: params.title,
-      type: params.type,
-      musicVideo: params.musicVideo ?? '',
-      creators: {
-        lyrics: params.creators?.lyrics ?? [],
-        compose: params.creators?.compose ?? [],
-        arrange: params.creators?.arrange ?? [],
-        direct: params.creators?.direct ?? [],
-      },
-      performers: {
-        center: params.center ?? [],
-        fukujin: [],
-        solo: '',
-        unit: params.unit ?? '',
-      },
-      formations: {
-        firstRow: params.formations?.firstRow ?? [],
-        secondRow: params.formations?.secondRow ?? [],
-        thirdRow: params.formations?.thirdRow ?? [],
-        fourthRow: params.formations?.fourthRow ?? [],
-      },
-    };
-  }
-
-  if (params.type === SongType.Solo) {
-    return {
-      title: params.title,
-      type: params.type,
-      musicVideo: params.musicVideo ?? '',
-      creators: {
-        lyrics: params.creators?.lyrics ?? [],
-        compose: params.creators?.compose ?? [],
-        arrange: params.creators?.arrange ?? [],
-        direct: params.creators?.direct ?? [],
-      },
-      performers: {
-        center: [],
-        fukujin: [],
-        solo: params.solo,
-        unit: '',
-      },
-      formations: {
-        firstRow: [params.solo],
-        secondRow: [],
-        thirdRow: [],
-        fourthRow: [],
-      },
-    };
-  }
-
-  return {
-    title: params.title,
-    type: params.type,
-    musicVideo: params.musicVideo ?? '',
-    creators: {
-      lyrics: params.creators?.lyrics ?? [],
-      compose: params.creators?.compose ?? [],
-      arrange: params.creators?.arrange ?? [],
-      direct: params.creators?.direct ?? [],
-    },
-    performers: {
-      center: params.center ?? [],
-      fukujin: [],
-      solo: '',
-      unit: '',
-    },
-    formations: {
-      firstRow: params.formations?.firstRow ?? [],
-      secondRow: params.formations?.secondRow ?? [],
-      thirdRow: params.formations?.thirdRow ?? [],
-      fourthRow: params.formations?.fourthRow ?? [],
-    },
+  let fukujin: SongRaw['performers']['fukujin'] = {
+    type: null,
+    members: [],
   };
+
+  switch (params.type) {
+    case SongType.Title:
+      switch (params.fukujin) {
+        case 'row-1':
+          fukujin = {
+            type: 'row-1',
+            members: params.formations?.firstRow ?? [],
+          };
+          break;
+        case 'row-1-2':
+          fukujin = {
+            type: 'row-1-2',
+            members: [
+              ...(params.formations?.firstRow ?? []),
+              ...(params.formations?.secondRow ?? []),
+            ],
+          };
+          break;
+        default:
+          fukujin = {
+            type: 'irregular',
+            members: params.fukujin,
+          };
+          break;
+      }
+      return {
+        title: params.title,
+        type: params.type,
+        musicVideo: params.musicVideo ?? '',
+        creators: {
+          lyrics: params.creators?.lyrics ?? [],
+          compose: params.creators?.compose ?? [],
+          arrange: params.creators?.arrange ?? [],
+          direct: params.creators?.direct ?? [],
+        },
+        performers: {
+          center: params.center,
+          fukujin,
+          solo: '',
+          unit: '',
+        },
+        formations: {
+          firstRow: params.formations?.firstRow ?? [],
+          secondRow: params.formations?.secondRow ?? [],
+          thirdRow: params.formations?.thirdRow ?? [],
+          fourthRow: params.formations?.fourthRow ?? [],
+        },
+      };
+
+    case SongType.Unit:
+      return {
+        title: params.title,
+        type: params.type,
+        musicVideo: params.musicVideo ?? '',
+        creators: {
+          lyrics: params.creators?.lyrics ?? [],
+          compose: params.creators?.compose ?? [],
+          arrange: params.creators?.arrange ?? [],
+          direct: params.creators?.direct ?? [],
+        },
+        performers: {
+          center: params.center ?? [],
+          fukujin,
+          solo: '',
+          unit: params.unit ?? '',
+        },
+        formations: {
+          firstRow: params.formations?.firstRow ?? [],
+          secondRow: params.formations?.secondRow ?? [],
+          thirdRow: params.formations?.thirdRow ?? [],
+          fourthRow: params.formations?.fourthRow ?? [],
+        },
+      };
+
+    case SongType.Solo:
+      return {
+        title: params.title,
+        type: params.type,
+        musicVideo: params.musicVideo ?? '',
+        creators: {
+          lyrics: params.creators?.lyrics ?? [],
+          compose: params.creators?.compose ?? [],
+          arrange: params.creators?.arrange ?? [],
+          direct: params.creators?.direct ?? [],
+        },
+        performers: {
+          center: [],
+          fukujin,
+          solo: params.solo,
+          unit: '',
+        },
+        formations: {
+          firstRow: [params.solo],
+          secondRow: [],
+          thirdRow: [],
+          fourthRow: [],
+        },
+      };
+
+    default:
+      return {
+        title: params.title,
+        type: params.type,
+        musicVideo: params.musicVideo ?? '',
+        creators: {
+          lyrics: params.creators?.lyrics ?? [],
+          compose: params.creators?.compose ?? [],
+          arrange: params.creators?.arrange ?? [],
+          direct: params.creators?.direct ?? [],
+        },
+        performers: {
+          center: params.center ?? [],
+          fukujin,
+          solo: '',
+          unit: '',
+        },
+        formations: {
+          firstRow: params.formations?.firstRow ?? [],
+          secondRow: params.formations?.secondRow ?? [],
+          thirdRow: params.formations?.thirdRow ?? [],
+          fourthRow: params.formations?.fourthRow ?? [],
+        },
+      };
+  }
 };

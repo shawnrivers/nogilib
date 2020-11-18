@@ -5,7 +5,7 @@ import { useAppTheme } from 'client/styles/tokens';
 import {
   ThemeColorsForeground,
   ThemeColorVariants,
-} from 'client/styles/colors';
+} from 'client/styles/tokens/colors';
 
 type DividerProps = React.HTMLAttributes<HTMLElement> & {
   lineColor?: {

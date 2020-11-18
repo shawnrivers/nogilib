@@ -1,20 +1,16 @@
 import { useTheme as useEmotionTheme } from '@emotion/react';
+import { BORDER_RADIUS } from './borderRadius';
+import { BREAK_POINTS } from './breakPoints';
 import {
-  ColorTheme,
-  DARK_COLOR_THEME,
-  LIGHT_COLOR_THEME,
   ThemeKey,
+  ColorTheme,
+  LIGHT_COLOR_THEME,
+  DARK_COLOR_THEME,
 } from './colors';
-import { TYPOGRAPHY } from 'client/styles/typography';
-import { SPACING } from 'client/styles/spacing';
-import { BORDER_RADIUS } from 'client/styles/borderRadius';
-import {
-  Elevation,
-  ELEVATION_DARK,
-  ELEVATION_LIGHT,
-} from 'client/styles/elevation';
-import { BREAK_POINTS } from 'client/styles/breakPoints';
-import { SIZES } from 'client/styles/sizes';
+import { Elevation, ELEVATION_LIGHT, ELEVATION_DARK } from './elevation';
+import { SIZES } from './sizes';
+import { SPACING } from './spacing';
+import { TYPOGRAPHY } from './typography';
 
 export type Theme = {
   key: ThemeKey;
