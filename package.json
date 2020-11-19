@@ -50,7 +50,7 @@
     "@emotion/core": "^10.1.1",
     "@emotion/react": "^11.1.1",
     "framer-motion": "^2.9.4",
-    "gatsby": "^2.26.1",
+    "gatsby": "^2.27.0",
     "gatsby-image": "^2.5.0",
     "gatsby-plugin-emotion": "^4.4.0",
     "gatsby-plugin-layout": "^1.4.0",
