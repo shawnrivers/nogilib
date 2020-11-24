@@ -2,7 +2,7 @@ import { arrayToObject } from 'utils/arrays';
 import { TitleKeyArray } from 'server/types/commons';
 
 export type SingleTitle =
-  | 'タイトル未定'
+  | '僕は僕を好きになる'
   | 'しあわせの保護色'
   | '夜明けまで強がらなくてもいい'
   | 'Sing Out!'
@@ -42,8 +42,8 @@ export type CdTitle = SingleTitle | AlbumTitle | OtherCdTitle;
 
 export const CdTitleKeyArray: TitleKeyArray<CdTitle> = [
   {
-    title: 'タイトル未定',
-    key: 'untitled26',
+    title: '僕は僕を好きになる',
+    key: 'bokuhabokuwosukininaru',
   },
   {
     title: 'Route 246',

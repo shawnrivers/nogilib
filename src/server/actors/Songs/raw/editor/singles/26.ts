@@ -6,11 +6,11 @@ import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 
 export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['タイトル未定'].title,
+    title: SONGS['僕は僕を好きになる'].title,
     type: SongType.Title,
     creators: {
       lyrics: [],
-      compose: [],
+      compose: ['杉山勝彦'],
       arrange: [],
       direct: [],
     },
