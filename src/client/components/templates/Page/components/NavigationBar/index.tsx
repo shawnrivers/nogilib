@@ -22,6 +22,8 @@ import { TextLink } from 'client/components/molecules/links/TextLink';
 import { BaseButton, BaseButtonRef } from 'client/components/atoms/BaseButton';
 import { useTranslations } from 'client/hooks/useTranslations';
 
+const settingDropdownId = 'setting-dropdown';
+
 const SettingHeading: React.FC = props => (
   <Typography
     variant="body2"
@@ -95,6 +97,7 @@ const Settings: React.FC = () => {
   );
   const componentRef = React.useRef<HTMLDivElement>(null);
   useOnClickOutside(componentRef, hideDropdown);
+  const firstItemRef = React.useRef<HTMLButtonElement>(null);
 
   const theme = useAppTheme();
   const { themeMode, language, setTheme, setLanguage } = useAppContext();
@@ -133,6 +136,7 @@ const Settings: React.FC = () => {
 
   React.useEffect(() => {
     if (isDropdownOpen) {
+      firstItemRef.current?.focus();
       document.addEventListener('keyup', handleEscape);
     } else {
       document.removeEventListener('keyup', handleEscape);
@@ -151,7 +155,7 @@ const Settings: React.FC = () => {
       <BaseButton
         onClick={switchDropdown}
         aria-label={getTranslation('settings')}
-        aria-controls="setting-dropdown"
+        aria-controls={settingDropdownId}
         aria-haspopup
       >
         <SettingsIcon fill={theme.colors.theme.onSurface.standard} />
@@ -173,7 +177,7 @@ const Settings: React.FC = () => {
               top: calc(${commonStyles.sizes.navigationBarHeight} - 8px);
               min-width: 140px;
             `}
-            id="setting-dropdown"
+            id={settingDropdownId}
           >
             <Card elevation={componentElevationKey.dropdown} borderRadius="s">
               <SettingHeading>{getTranslation('languages')}</SettingHeading>
@@ -185,6 +189,7 @@ const Settings: React.FC = () => {
                 <SelectionItem
                   isSelected={language === 'en'}
                   onClick={handleClickEnglish}
+                  ref={firstItemRef}
                 >
                   English
                 </SelectionItem>
