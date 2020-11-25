@@ -23,6 +23,7 @@ import { BaseButton, BaseButtonRef } from 'client/components/atoms/BaseButton';
 import { useTranslations } from 'client/hooks/useTranslations';
 
 const settingDropdownId = 'setting-dropdown';
+const settingItemClass = 'setting-item';
 
 const SettingHeading: React.FC = props => (
   <Typography
@@ -49,7 +50,7 @@ const SelectionItem = React.forwardRef<SelectionItemRef, SelectionItemProps>(
     const { onClick, isSelected, children, ...buttonProps } = props;
 
     return (
-      <li>
+      <li className={settingItemClass}>
         <BaseButton
           onClick={onClick}
           disabled={isSelected}
@@ -97,7 +98,7 @@ const Settings: React.FC = () => {
   );
   const componentRef = React.useRef<HTMLDivElement>(null);
   useOnClickOutside(componentRef, hideDropdown);
-  const firstItemRef = React.useRef<HTMLButtonElement>(null);
+  const languageListRef = React.useRef<HTMLUListElement>(null);
 
   const theme = useAppTheme();
   const { themeMode, language, setTheme, setLanguage } = useAppContext();
@@ -136,7 +137,11 @@ const Settings: React.FC = () => {
 
   React.useEffect(() => {
     if (isDropdownOpen) {
-      firstItemRef.current?.focus();
+      const firstSelectableItem = languageListRef.current?.querySelector(
+        `.${settingItemClass} > button:not([disabled])`
+      ) as HTMLButtonElement | null;
+      firstSelectableItem?.focus();
+
       document.addEventListener('keyup', handleEscape);
     } else {
       document.removeEventListener('keyup', handleEscape);
@@ -185,11 +190,11 @@ const Settings: React.FC = () => {
                 css={css`
                   margin-top: ${commonStyles.spacing.xs};
                 `}
+                ref={languageListRef}
               >
                 <SelectionItem
                   isSelected={language === 'en'}
                   onClick={handleClickEnglish}
-                  ref={firstItemRef}
                 >
                   English
                 </SelectionItem>
