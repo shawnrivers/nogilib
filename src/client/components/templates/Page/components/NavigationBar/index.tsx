@@ -80,13 +80,13 @@ const SelectionItem: React.FC<
 };
 
 const Settings: React.FC = () => {
-  const [isDropdownVisible, toggleDropdown] = React.useState(false);
+  const [isDropdownOpen, toggleDropdown] = React.useState(false);
   const hideDropdown = React.useCallback(() => toggleDropdown(false), [
     toggleDropdown,
   ]);
   const switchDropdown = React.useCallback(
-    () => toggleDropdown(!isDropdownVisible),
-    [isDropdownVisible, toggleDropdown]
+    () => toggleDropdown(!isDropdownOpen),
+    [isDropdownOpen, toggleDropdown]
   );
   const componentRef = React.useRef<HTMLDivElement>(null);
   useOnClickOutside(componentRef, hideDropdown);
@@ -132,15 +132,17 @@ const Settings: React.FC = () => {
       <BaseButton
         onClick={switchDropdown}
         aria-label={getTranslation('settings')}
+        aria-controls="setting-dropdown"
+        aria-haspopup
       >
         <SettingsIcon fill={theme.colors.theme.onSurface.standard} />
       </BaseButton>
       <AnimatePresence>
-        {isDropdownVisible && (
+        {isDropdownOpen && (
           <motion.div
             initial={{ scale: 0, opacity: 0 }}
             style={{ originX: 1, originY: 0 }}
-            animate={isDropdownVisible ? 'open' : 'closed'}
+            animate={isDropdownOpen ? 'open' : 'closed'}
             variants={{
               open: { scale: 1, opacity: 1 },
               closed: { scale: 0, opacity: 0 },
@@ -152,6 +154,7 @@ const Settings: React.FC = () => {
               top: calc(${commonStyles.sizes.navigationBarHeight} - 8px);
               min-width: 140px;
             `}
+            id="setting-dropdown"
           >
             <Card elevation={componentElevationKey.dropdown} borderRadius="s">
               <SettingHeading>{getTranslation('languages')}</SettingHeading>
