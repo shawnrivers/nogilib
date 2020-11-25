@@ -19,7 +19,7 @@ import {
 } from 'client/utils/urls';
 import { Divider } from 'client/components/atoms/Divider';
 import { TextLink } from 'client/components/molecules/links/TextLink';
-import { BaseButton } from 'client/components/atoms/BaseButton';
+import { BaseButton, BaseButtonRef } from 'client/components/atoms/BaseButton';
 import { useTranslations } from 'client/hooks/useTranslations';
 
 const SettingHeading: React.FC = props => (
@@ -36,48 +36,53 @@ const SettingHeading: React.FC = props => (
   </Typography>
 );
 
-const SelectionItem: React.FC<
-  {
-    isSelected: boolean;
-  } & React.ButtonHTMLAttributes<HTMLButtonElement>
-> = props => {
-  const { onClick, isSelected, children, ...buttonProps } = props;
+type SelectionItemProps = {
+  isSelected: boolean;
+} & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-  return (
-    <li>
-      <BaseButton
-        onClick={onClick}
-        disabled={isSelected}
-        css={css`
-          display: flex;
-          align-items: center;
-          width: 100%;
-        `}
-        {...buttonProps}
-      >
-        <RadioCheckIcon
-          isChecked={isSelected}
-          unCheckColor="variant0"
-          checkColor="purple1"
-          width={20}
-          height={20}
-        />
-        <Typography
-          variant="body3"
-          element="span"
+type SelectionItemRef = BaseButtonRef;
+
+const SelectionItem = React.forwardRef<SelectionItemRef, SelectionItemProps>(
+  (props, ref) => {
+    const { onClick, isSelected, children, ...buttonProps } = props;
+
+    return (
+      <li>
+        <BaseButton
+          onClick={onClick}
+          disabled={isSelected}
           css={css`
-            line-height: 24px;
-            height: 24px;
-            margin-left: ${commonStyles.spacing.xs};
-            text-transform: capitalize;
+            display: flex;
+            align-items: center;
+            width: 100%;
           `}
+          {...buttonProps}
+          ref={ref}
         >
-          {children}
-        </Typography>
-      </BaseButton>
-    </li>
-  );
-};
+          <RadioCheckIcon
+            isChecked={isSelected}
+            unCheckColor="variant0"
+            checkColor="purple1"
+            width={20}
+            height={20}
+          />
+          <Typography
+            variant="body3"
+            element="span"
+            css={css`
+              line-height: 24px;
+              height: 24px;
+              margin-left: ${commonStyles.spacing.xs};
+              text-transform: capitalize;
+            `}
+          >
+            {children}
+          </Typography>
+        </BaseButton>
+      </li>
+    );
+  }
+);
 
 const Settings: React.FC = () => {
   const [isDropdownOpen, toggleDropdown] = React.useState(false);
