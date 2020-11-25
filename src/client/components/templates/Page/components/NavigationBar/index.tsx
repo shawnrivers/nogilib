@@ -120,6 +120,20 @@ const Settings: React.FC = () => {
     setLanguage('zh');
   }, [setLanguage]);
 
+  const handleEscape = (event: KeyboardEvent) => {
+    if (event.key === 'Escape') {
+      toggleDropdown(false);
+    }
+  };
+
+  React.useEffect(() => {
+    if (isDropdownOpen) {
+      document.addEventListener('keyup', handleEscape);
+    } else {
+      document.removeEventListener('keyup', handleEscape);
+    }
+  }, [isDropdownOpen]);
+
   return (
     <div
       ref={componentRef}
