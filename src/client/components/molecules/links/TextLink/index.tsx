@@ -33,6 +33,7 @@ export const TextLink: React.FC<TextLinkProps> = props => {
     underlineColorVariant = 'variant0',
     children,
     disabled = false,
+    tabIndex,
     onClick,
     ...typographyProps
   } = props;
@@ -82,7 +83,13 @@ export const TextLink: React.FC<TextLinkProps> = props => {
   );
 
   return (
-    <BaseLink to={to} onClick={onClick} disabled={disabled} css={styles}>
+    <BaseLink
+      to={to}
+      onClick={onClick}
+      disabled={disabled}
+      css={styles}
+      tabIndex={tabIndex}
+    >
       <Typography
         variant={typographyVariant}
         textColor={textColor}
