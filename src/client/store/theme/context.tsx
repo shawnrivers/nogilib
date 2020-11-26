@@ -6,6 +6,7 @@ import { themes } from 'client/styles/tokens';
 import { useDarkModeMediaQuery } from 'client/hooks/useDarkModeMediaQuery';
 import { useAppContext } from 'client/hooks/useAppContext';
 import { useLocalStorageForContext } from 'client/hooks/useLocalStorageForContext';
+import 'focus-visible';
 
 export const ThemeProvider: React.FC = props => {
   const { themeKey } = useAppContext();
@@ -70,6 +71,14 @@ export const ThemeProvider: React.FC = props => {
             vertical-align: middle;
             white-space: normal;
             background: none;
+          }
+
+          .js-focus-visible :focus:not(.focus-visible) {
+            outline: none;
+          }
+
+          .focus-visible {
+            outline: auto;
           }
         `}
       />

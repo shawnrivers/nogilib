@@ -62,10 +62,6 @@ export const TextLink: React.FC<TextLinkProps> = props => {
               mapBackgroundToForeground(backgroundType)
             ][underlineColorVariant]};
 
-            &:focus {
-              outline: auto;
-            }
-
             @media (hover: hover) and (pointer: fine) {
               &:hover {
                 background-color: ${theme.colors.theme[backgroundType][
