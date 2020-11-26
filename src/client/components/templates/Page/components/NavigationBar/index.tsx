@@ -21,6 +21,7 @@ import { Divider } from 'client/components/atoms/Divider';
 import { TextLink } from 'client/components/molecules/links/TextLink';
 import { BaseButton, BaseButtonRef } from 'client/components/atoms/BaseButton';
 import { useTranslations } from 'client/hooks/useTranslations';
+import { MENU_BUTTON_ID } from 'client/constants/ids';
 
 const settingDropdownId = 'setting-dropdown';
 const settingItemClass = 'setting-item';
@@ -349,6 +350,8 @@ export const NavigationBar: React.FC<{
               <BaseButton
                 className="small"
                 aria-label={getTranslation('menu')}
+                aria-controls={MENU_BUTTON_ID}
+                aria-haspopup
                 onClick={props.onOpenSidebar}
                 css={css`
                   margin-left: ${commonStyles.spacing.xxs};

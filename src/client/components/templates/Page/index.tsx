@@ -9,6 +9,7 @@ import { NavigationBar } from 'client/components/templates/Page/components/Navig
 import { Sidebar } from 'client/components/templates/Page/components/Sidebar';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import { BaseButtonRef } from 'client/components/atoms/BaseButton';
+import { MENU_BUTTON_ID } from 'client/constants/ids';
 
 export const PageContent: React.FC<HeaderProps> = props => {
   return (
@@ -86,6 +87,7 @@ export const Page: React.FC = props => {
         onClose={handleCloseSidebar}
         className="small"
         menuButtonRef={menuButtonRef}
+        id={MENU_BUTTON_ID}
       />
       {props.children}
     </div>
