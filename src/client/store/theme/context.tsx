@@ -44,6 +44,11 @@ export const ThemeProvider: React.FC = props => {
           a {
             color: inherit;
             text-decoration: inherit;
+            outline: inherit;
+
+            :focus {
+              outline-offset: 0;
+            }
           }
 
           ul,
