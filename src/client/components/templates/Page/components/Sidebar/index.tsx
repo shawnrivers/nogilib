@@ -155,13 +155,25 @@ export const Sidebar: React.FC<SidebarProps> = props => {
           `}
         >
           <ul>
-            <NavigationItem to={getDiscographyUrl()} onClick={onClose}>
+            <NavigationItem
+              to={getDiscographyUrl()}
+              tabIndex={open ? 0 : -1}
+              onClick={onClose}
+            >
               {getTranslation('discography')}
             </NavigationItem>
-            <NavigationItem to={getMembersUrl()} onClick={onClose}>
+            <NavigationItem
+              to={getMembersUrl()}
+              tabIndex={open ? 0 : -1}
+              onClick={onClose}
+            >
               {getTranslation('members')}
             </NavigationItem>
-            <NavigationItem to={getSearchUrl()} onClick={onClose}>
+            <NavigationItem
+              to={getSearchUrl()}
+              tabIndex={open ? 0 : -1}
+              onClick={onClose}
+            >
               {getTranslation('search')}
             </NavigationItem>
           </ul>
@@ -181,6 +193,7 @@ export const Sidebar: React.FC<SidebarProps> = props => {
         >
           <SidebarItem
             to="https://github.com/shawnrivers/nogilib"
+            tabIndex={open ? 0 : -1}
             onClick={onClose}
           >
             {getTranslation('about')}
