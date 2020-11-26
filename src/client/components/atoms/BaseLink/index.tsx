@@ -7,20 +7,30 @@ export type BaseLinkProps = {
   disabled?: boolean;
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
-export const BaseLink: React.FC<BaseLinkProps> = props => {
-  const { to, disabled, className, onClick, children, ...anchorProps } = props;
+export type BaseLinkRef = HTMLAnchorElement;
 
-  const isAbsoluteLink = isAbsoluteUrl(to);
+export const BaseLink = React.forwardRef<BaseLinkRef, BaseLinkProps>(
+  (props, ref) => {
+    const { to, disabled, css, onClick, children, ...anchorProps } = props;
 
-  return disabled ? (
-    <div css={className}>{children}</div>
-  ) : isAbsoluteLink ? (
-    <a href={to} css={className} onClick={onClick} {...anchorProps}>
-      {children}
-    </a>
-  ) : (
-    <Link to={to} css={className} onClick={onClick} {...anchorProps}>
-      {children}
-    </Link>
-  );
-};
+    const isAbsoluteLink = isAbsoluteUrl(to);
+
+    return disabled ? (
+      <div css={css}>{children}</div>
+    ) : isAbsoluteLink ? (
+      <a href={to} css={css} onClick={onClick} {...anchorProps} ref={ref}>
+        {children}
+      </a>
+    ) : (
+      <Link
+        to={to}
+        css={css}
+        onClick={onClick}
+        {...anchorProps}
+        ref={ref as any}
+      >
+        {children}
+      </Link>
+    );
+  }
+);

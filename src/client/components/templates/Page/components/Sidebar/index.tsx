@@ -14,6 +14,7 @@ import { BaseButton } from 'client/components/atoms/BaseButton';
 import {
   TextLink,
   TextLinkProps,
+  TextLinkRef,
 } from 'client/components/molecules/links/TextLink';
 import { useTranslations } from 'client/hooks/useTranslations';
 import { Divider } from 'client/components/atoms/Divider';
@@ -27,41 +28,53 @@ type SidebarItemProps = Omit<
   | 'showUnderline'
 >;
 
-const SidebarItem: React.FC<SidebarItemProps> = props => {
-  const { to, children, onClick, ...restProps } = props;
+type SidebarItemRef = TextLinkRef;
 
-  return (
-    <TextLink
-      to={to}
-      typographyVariant="h6"
-      textColor={{ on: 'onSecondary', variant: 'standard' }}
-      backgroundType="primary"
-      backgroundColorVariant="standard"
-      showUnderline={false}
-      onClick={onClick}
-      css={css`
-        text-transform: uppercase;
-      `}
-      {...restProps}
-    >
-      {children}
-    </TextLink>
-  );
-};
+const SidebarItem = React.forwardRef<SidebarItemRef, SidebarItemProps>(
+  (props, ref) => {
+    const { to, children, onClick, ...restProps } = props;
 
-const NavigationItem: React.FC<Omit<SidebarItemProps, 'element'>> = props => {
-  const { children, ...sidebarItemProps } = props;
+    return (
+      <TextLink
+        to={to}
+        typographyVariant="h6"
+        textColor={{ on: 'onSecondary', variant: 'standard' }}
+        backgroundType="primary"
+        backgroundColorVariant="standard"
+        showUnderline={false}
+        onClick={onClick}
+        css={css`
+          text-transform: uppercase;
+        `}
+        {...restProps}
+        ref={ref}
+      >
+        {children}
+      </TextLink>
+    );
+  }
+);
 
-  return (
-    <li
-      css={css`
-        margin-top: 1em;
-      `}
-    >
-      <SidebarItem {...sidebarItemProps}>{children}</SidebarItem>
-    </li>
-  );
-};
+type NavigationItemProps = Omit<SidebarItemProps, 'element'>;
+type NavigationItemRef = SidebarItemRef;
+
+const NavigationItem = React.forwardRef<NavigationItemRef, NavigationItemProps>(
+  (props, ref) => {
+    const { children, ...sidebarItemProps } = props;
+
+    return (
+      <li
+        css={css`
+          margin-top: 1em;
+        `}
+      >
+        <SidebarItem {...sidebarItemProps} ref={ref}>
+          {children}
+        </SidebarItem>
+      </li>
+    );
+  }
+);
 
 const transition = { duration: 0.2 };
 
