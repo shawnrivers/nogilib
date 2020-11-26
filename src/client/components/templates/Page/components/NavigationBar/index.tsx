@@ -99,6 +99,7 @@ const Settings: React.FC = () => {
   const componentRef = React.useRef<HTMLDivElement>(null);
   useOnClickOutside(componentRef, hideDropdown);
   const languageListRef = React.useRef<HTMLUListElement>(null);
+  const settingsButtonRef = React.useRef<BaseButtonRef>(null);
 
   const theme = useAppTheme();
   const { themeMode, language, setTheme, setLanguage } = useAppContext();
@@ -129,13 +130,14 @@ const Settings: React.FC = () => {
     setLanguage('zh');
   }, [setLanguage]);
 
-  const handleEscape = (event: KeyboardEvent) => {
-    if (event.key === 'Escape') {
-      toggleDropdown(false);
-    }
-  };
-
   React.useEffect(() => {
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        toggleDropdown(false);
+        settingsButtonRef.current?.focus();
+      }
+    };
+
     if (isDropdownOpen) {
       const firstSelectableItem = languageListRef.current?.querySelector(
         `.${settingItemClass} > button:not([disabled])`
@@ -162,6 +164,7 @@ const Settings: React.FC = () => {
         aria-label={getTranslation('settings')}
         aria-controls={settingDropdownId}
         aria-haspopup
+        ref={settingsButtonRef}
       >
         <SettingsIcon fill={theme.colors.theme.onSurface.standard} />
       </BaseButton>
