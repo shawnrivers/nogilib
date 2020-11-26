@@ -5,7 +5,11 @@ import {
   Typography,
   TypographyProps,
 } from 'client/components/atoms/Typography';
-import { BaseLink, BaseLinkProps } from 'client/components/atoms/BaseLink';
+import {
+  BaseLink,
+  BaseLinkProps,
+  BaseLinkRef,
+} from 'client/components/atoms/BaseLink';
 import { useAppTheme, commonStyles } from 'client/styles/tokens';
 import {
   mapBackgroundToForeground,
@@ -22,82 +26,87 @@ export type TextLinkProps = BaseLinkProps &
     backgroundColorVariant?: ThemeColorKey;
   };
 
-export const TextLink: React.FC<TextLinkProps> = props => {
-  const {
-    to,
-    typographyVariant = 'body1',
-    showUnderline = true,
-    textColor = { on: 'onBackground', variant: 'standard' },
-    backgroundType = 'background',
-    backgroundColorVariant = 'variant0',
-    underlineColorVariant = 'variant0',
-    children,
-    disabled = false,
-    tabIndex,
-    onClick,
-    ...typographyProps
-  } = props;
+export type TextLinkRef = BaseLinkRef;
 
-  const theme = useAppTheme();
+export const TextLink = React.forwardRef<TextLinkRef, TextLinkProps>(
+  (props, ref) => {
+    const {
+      to,
+      typographyVariant = 'body1',
+      showUnderline = true,
+      textColor = { on: 'onBackground', variant: 'standard' },
+      backgroundType = 'background',
+      backgroundColorVariant = 'variant0',
+      underlineColorVariant = 'variant0',
+      children,
+      disabled = false,
+      tabIndex,
+      onClick,
+      ...typographyProps
+    } = props;
 
-  const baseStyles = React.useMemo(
-    () => css`
-      display: inline-block;
-      padding: ${commonStyles.spacing.xxs} ${commonStyles.spacing.xs};
-      border-radius: ${commonStyles.borderRadius.xs};
-      background: none;
-    `,
-    []
-  );
+    const theme = useAppTheme();
 
-  const styles = React.useMemo(
-    () =>
-      disabled
-        ? baseStyles
-        : css`
-            ${baseStyles};
-            transition: background-color 0.3s ease-out;
-            text-decoration: ${showUnderline ? 'underline' : 'none'};
-            text-underline-position: under;
-            text-decoration-color: ${theme.colors.theme[
-              mapBackgroundToForeground(backgroundType)
-            ][underlineColorVariant]};
+    const baseStyles = React.useMemo(
+      () => css`
+        display: inline-block;
+        padding: ${commonStyles.spacing.xxs} ${commonStyles.spacing.xs};
+        border-radius: ${commonStyles.borderRadius.xs};
+        background: none;
+      `,
+      []
+    );
 
-            @media (hover: hover) and (pointer: fine) {
-              &:hover {
-                background-color: ${theme.colors.theme[backgroundType][
-                  backgroundColorVariant
-                ]};
+    const styles = React.useMemo(
+      () =>
+        disabled
+          ? baseStyles
+          : css`
+              ${baseStyles};
+              transition: background-color 0.3s ease-out;
+              text-decoration: ${showUnderline ? 'underline' : 'none'};
+              text-underline-position: under;
+              text-decoration-color: ${theme.colors.theme[
+                mapBackgroundToForeground(backgroundType)
+              ][underlineColorVariant]};
+
+              @media (hover: hover) and (pointer: fine) {
+                &:hover {
+                  background-color: ${theme.colors.theme[backgroundType][
+                    backgroundColorVariant
+                  ]};
+                }
               }
-            }
-          `,
-    [
-      disabled,
-      baseStyles,
-      backgroundColorVariant,
-      backgroundType,
-      showUnderline,
-      theme.colors.theme,
-      underlineColorVariant,
-    ]
-  );
+            `,
+      [
+        disabled,
+        baseStyles,
+        backgroundColorVariant,
+        backgroundType,
+        showUnderline,
+        theme.colors.theme,
+        underlineColorVariant,
+      ]
+    );
 
-  return (
-    <BaseLink
-      to={to}
-      onClick={onClick}
-      disabled={disabled}
-      css={styles}
-      tabIndex={tabIndex}
-    >
-      <Typography
-        variant={typographyVariant}
-        textColor={textColor}
-        element="span"
-        {...typographyProps}
+    return (
+      <BaseLink
+        to={to}
+        onClick={onClick}
+        disabled={disabled}
+        css={styles}
+        tabIndex={tabIndex}
+        ref={ref}
       >
-        {children}
-      </Typography>
-    </BaseLink>
-  );
-};
+        <Typography
+          variant={typographyVariant}
+          textColor={textColor}
+          element="span"
+          {...typographyProps}
+        >
+          {children}
+        </Typography>
+      </BaseLink>
+    );
+  }
+);
