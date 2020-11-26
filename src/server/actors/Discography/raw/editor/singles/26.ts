@@ -3,13 +3,13 @@ import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const TWENTY_SIXTH_SINGLE = createSingleRaw({
-  title: 'タイトル未定',
+  title: '僕は僕を好きになる',
   number: '26',
   release: '2021-01-27',
   cdTypes: ['A'],
   songs: [
     {
-      title: SONGS['タイトル未定'].title,
+      title: SONGS['僕は僕を好きになる'].title,
       inCdType: ['A'],
     },
   ],

@@ -1,7 +1,7 @@
 /**@jsx jsx */
 import { jsx, css } from '@emotion/core';
 import * as React from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Card } from 'client/components/atoms/Card';
 import { MenuIcon } from 'client/components/atoms/icons/MenuIcon';
 import { RadioCheckIcon } from 'client/components/atoms/icons/RadioCheckIcon';
@@ -19,8 +19,12 @@ import {
 } from 'client/utils/urls';
 import { Divider } from 'client/components/atoms/Divider';
 import { TextLink } from 'client/components/molecules/links/TextLink';
-import { BaseButton } from 'client/components/atoms/BaseButton';
+import { BaseButton, BaseButtonRef } from 'client/components/atoms/BaseButton';
 import { useTranslations } from 'client/hooks/useTranslations';
+import { MENU_BUTTON_ID } from 'client/constants/ids';
+
+const settingDropdownId = 'setting-dropdown';
+const settingItemClass = 'setting-item';
 
 const SettingHeading: React.FC = props => (
   <Typography
@@ -36,60 +40,67 @@ const SettingHeading: React.FC = props => (
   </Typography>
 );
 
-const SelectionItem: React.FC<
-  {
-    isSelected: boolean;
-  } & React.ButtonHTMLAttributes<HTMLButtonElement>
-> = props => {
-  const { onClick, isSelected, children, ...buttonProps } = props;
+type SelectionItemProps = {
+  isSelected: boolean;
+} & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-  return (
-    <li>
-      <BaseButton
-        onClick={onClick}
-        disabled={isSelected}
-        css={css`
-          display: flex;
-          align-items: center;
-          width: 100%;
-        `}
-        {...buttonProps}
-      >
-        <RadioCheckIcon
-          isChecked={isSelected}
-          unCheckColor="variant0"
-          checkColor="purple1"
-          width={20}
-          height={20}
-        />
-        <Typography
-          variant="body3"
-          element="span"
+type SelectionItemRef = BaseButtonRef;
+
+const SelectionItem = React.forwardRef<SelectionItemRef, SelectionItemProps>(
+  (props, ref) => {
+    const { onClick, isSelected, children, ...buttonProps } = props;
+
+    return (
+      <li className={settingItemClass}>
+        <BaseButton
+          onClick={onClick}
+          disabled={isSelected}
           css={css`
-            line-height: 24px;
-            height: 24px;
-            margin-left: ${commonStyles.spacing.xs};
-            text-transform: capitalize;
+            display: flex;
+            align-items: center;
+            width: 100%;
           `}
+          {...buttonProps}
+          ref={ref}
         >
-          {children}
-        </Typography>
-      </BaseButton>
-    </li>
-  );
-};
+          <RadioCheckIcon
+            isChecked={isSelected}
+            unCheckColor="variant0"
+            checkColor="purple1"
+            width={20}
+            height={20}
+          />
+          <Typography
+            variant="body3"
+            element="span"
+            css={css`
+              line-height: 24px;
+              height: 24px;
+              margin-left: ${commonStyles.spacing.xs};
+              text-transform: capitalize;
+            `}
+          >
+            {children}
+          </Typography>
+        </BaseButton>
+      </li>
+    );
+  }
+);
 
 const Settings: React.FC = () => {
-  const [isDropdownVisible, toggleDropdown] = React.useState(false);
+  const [isDropdownOpen, toggleDropdown] = React.useState(false);
   const hideDropdown = React.useCallback(() => toggleDropdown(false), [
     toggleDropdown,
   ]);
   const switchDropdown = React.useCallback(
-    () => toggleDropdown(!isDropdownVisible),
-    [isDropdownVisible, toggleDropdown]
+    () => toggleDropdown(!isDropdownOpen),
+    [isDropdownOpen, toggleDropdown]
   );
   const componentRef = React.useRef<HTMLDivElement>(null);
   useOnClickOutside(componentRef, hideDropdown);
+  const languageListRef = React.useRef<HTMLUListElement>(null);
+  const settingsButtonRef = React.useRef<BaseButtonRef>(null);
 
   const theme = useAppTheme();
   const { themeMode, language, setTheme, setLanguage } = useAppContext();
@@ -120,6 +131,26 @@ const Settings: React.FC = () => {
     setLanguage('zh');
   }, [setLanguage]);
 
+  React.useEffect(() => {
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        toggleDropdown(false);
+        settingsButtonRef.current?.focus();
+      }
+    };
+
+    if (isDropdownOpen) {
+      const firstSelectableItem = languageListRef.current?.querySelector(
+        `.${settingItemClass} > button:not([disabled])`
+      ) as HTMLButtonElement | null;
+      firstSelectableItem?.focus();
+
+      document.addEventListener('keyup', handleEscape);
+    } else {
+      document.removeEventListener('keyup', handleEscape);
+    }
+  }, [isDropdownOpen]);
+
   return (
     <div
       ref={componentRef}
@@ -132,94 +163,101 @@ const Settings: React.FC = () => {
       <BaseButton
         onClick={switchDropdown}
         aria-label={getTranslation('settings')}
+        aria-controls={settingDropdownId}
+        aria-haspopup
+        ref={settingsButtonRef}
       >
         <SettingsIcon fill={theme.colors.theme.onSurface.standard} />
       </BaseButton>
-      <AnimatePresence>
-        {isDropdownVisible && (
-          <motion.div
-            initial={{ scale: 0, opacity: 0 }}
-            style={{ originX: 1, originY: 0 }}
-            animate={isDropdownVisible ? 'open' : 'closed'}
-            variants={{
-              open: { scale: 1, opacity: 1 },
-              closed: { scale: 0, opacity: 0 },
-            }}
-            exit={{ scale: 0, opacity: 0 }}
-            transition={{ duration: 0.2 }}
+      <motion.div
+        initial={{ scale: 0, opacity: 0 }}
+        style={{ originX: 1, originY: 0 }}
+        animate={isDropdownOpen ? 'open' : 'closed'}
+        variants={{
+          open: { scale: 1, opacity: 1 },
+          closed: { scale: 0, opacity: 0 },
+        }}
+        transition={{ duration: 0.2 }}
+        css={css`
+          position: absolute;
+          top: calc(${commonStyles.sizes.navigationBarHeight} - 8px);
+          min-width: 140px;
+        `}
+        id={settingDropdownId}
+      >
+        <Card elevation={componentElevationKey.dropdown} borderRadius="s">
+          <SettingHeading>{getTranslation('languages')}</SettingHeading>
+          <ul
             css={css`
-              position: absolute;
-              top: calc(${commonStyles.sizes.navigationBarHeight} - 8px);
-              min-width: 140px;
+              margin-top: ${commonStyles.spacing.xs};
+            `}
+            ref={languageListRef}
+          >
+            <SelectionItem
+              isSelected={language === 'en'}
+              tabIndex={isDropdownOpen ? 0 : -1}
+              onClick={handleClickEnglish}
+            >
+              English
+            </SelectionItem>
+            <SelectionItem
+              isSelected={language === 'ja'}
+              tabIndex={isDropdownOpen ? 0 : -1}
+              onClick={handleClickJapanese}
+            >
+              日本語
+            </SelectionItem>
+            <SelectionItem
+              isSelected={language === 'zh'}
+              tabIndex={isDropdownOpen ? 0 : -1}
+              onClick={handleClickChinese}
+            >
+              简体中文
+            </SelectionItem>
+          </ul>
+          <Divider
+            lineColor={{ on: 'onSurface', variant: 'variant1' }}
+            css={css`
+              margin: ${commonStyles.spacing.s} 0;
+            `}
+          />
+          <SettingHeading>{getTranslation('color theme')}</SettingHeading>
+          <ul
+            css={css`
+              margin-top: ${commonStyles.spacing.xs};
             `}
           >
-            <Card elevation={componentElevationKey.dropdown} borderRadius="s">
-              <SettingHeading>{getTranslation('languages')}</SettingHeading>
-              <ul
-                css={css`
-                  margin-top: ${commonStyles.spacing.xs};
-                `}
-              >
-                <SelectionItem
-                  isSelected={language === 'en'}
-                  onClick={handleClickEnglish}
-                >
-                  English
-                </SelectionItem>
-                <SelectionItem
-                  isSelected={language === 'ja'}
-                  onClick={handleClickJapanese}
-                >
-                  日本語
-                </SelectionItem>
-                <SelectionItem
-                  isSelected={language === 'zh'}
-                  onClick={handleClickChinese}
-                >
-                  简体中文
-                </SelectionItem>
-              </ul>
-              <Divider
-                lineColor={{ on: 'onSurface', variant: 'variant1' }}
-                css={css`
-                  margin: ${commonStyles.spacing.s} 0;
-                `}
-              />
-              <SettingHeading>{getTranslation('color theme')}</SettingHeading>
-              <ul
-                css={css`
-                  margin-top: ${commonStyles.spacing.xs};
-                `}
-              >
-                <SelectionItem
-                  isSelected={themeMode === 'dark'}
-                  onClick={handleClickDarkTheme}
-                >
-                  {getTranslation('dark')}
-                </SelectionItem>
-                <SelectionItem
-                  isSelected={themeMode === 'light'}
-                  onClick={handleClickLightTheme}
-                >
-                  {getTranslation('light')}
-                </SelectionItem>
-                <SelectionItem
-                  isSelected={themeMode === 'auto'}
-                  onClick={handleClickAutoTheme}
-                >
-                  {getTranslation('auto')}
-                </SelectionItem>
-              </ul>
-            </Card>
-          </motion.div>
-        )}
-      </AnimatePresence>
+            <SelectionItem
+              isSelected={themeMode === 'dark'}
+              tabIndex={isDropdownOpen ? 0 : -1}
+              onClick={handleClickDarkTheme}
+            >
+              {getTranslation('dark')}
+            </SelectionItem>
+            <SelectionItem
+              isSelected={themeMode === 'light'}
+              tabIndex={isDropdownOpen ? 0 : -1}
+              onClick={handleClickLightTheme}
+            >
+              {getTranslation('light')}
+            </SelectionItem>
+            <SelectionItem
+              isSelected={themeMode === 'auto'}
+              tabIndex={isDropdownOpen ? 0 : -1}
+              onClick={handleClickAutoTheme}
+            >
+              {getTranslation('auto')}
+            </SelectionItem>
+          </ul>
+        </Card>
+      </motion.div>
     </div>
   );
 };
 
 export const NavigationBar: React.FC<{
   onOpenSidebar: () => void;
+  menuButtonRef?: React.RefObject<BaseButtonRef>;
 }> = props => {
   const theme = useAppTheme();
   const { getTranslation } = useTranslations();
@@ -312,10 +350,13 @@ export const NavigationBar: React.FC<{
               <BaseButton
                 className="small"
                 aria-label={getTranslation('menu')}
+                aria-controls={MENU_BUTTON_ID}
+                aria-haspopup
                 onClick={props.onOpenSidebar}
                 css={css`
                   margin-left: ${commonStyles.spacing.xxs};
                 `}
+                ref={props.menuButtonRef}
               >
                 <MenuIcon fill={theme.colors.theme.onSurface.standard} />
               </BaseButton>

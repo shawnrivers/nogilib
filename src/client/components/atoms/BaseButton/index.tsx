@@ -15,42 +15,43 @@ export type BaseButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   verticalPadding?: SpacingKey;
 };
 
-export const BaseButton: React.FC<BaseButtonProps> = props => {
-  const {
-    backgroundType = 'background',
-    horizontalPadding = 'xxs',
-    verticalPadding = 'xxs',
-    backgroundColorVariant = 'variant0',
-    children,
-    ...buttonProps
-  } = props;
+export type BaseButtonRef = HTMLButtonElement;
 
-  const theme = useAppTheme();
+export const BaseButton = React.forwardRef<BaseButtonRef, BaseButtonProps>(
+  (props, ref) => {
+    const {
+      backgroundType = 'background',
+      horizontalPadding = 'xxs',
+      verticalPadding = 'xxs',
+      backgroundColorVariant = 'variant0',
+      children,
+      ...buttonProps
+    } = props;
 
-  return (
-    <button
-      css={css`
-        padding: ${commonStyles.spacing[verticalPadding]}
-          ${commonStyles.spacing[horizontalPadding]};
-        border-radius: ${commonStyles.borderRadius.xs};
-        transition: background-color 0.3s ease-out;
-        background: none;
+    const theme = useAppTheme();
 
-        &:focus {
-          outline: auto;
-        }
+    return (
+      <button
+        css={css`
+          padding: ${commonStyles.spacing[verticalPadding]}
+            ${commonStyles.spacing[horizontalPadding]};
+          border-radius: ${commonStyles.borderRadius.xs};
+          transition: background-color 0.3s ease-out;
+          background: none;
 
-        @media (hover: hover) and (pointer: fine) {
-          &:hover {
-            background-color: ${theme.colors.theme[backgroundType][
-              backgroundColorVariant
-            ]};
+          @media (hover: hover) and (pointer: fine) {
+            &:hover {
+              background-color: ${theme.colors.theme[backgroundType][
+                backgroundColorVariant
+              ]};
+            }
           }
-        }
-      `}
-      {...buttonProps}
-    >
-      {children}
-    </button>
-  );
-};
+        `}
+        {...buttonProps}
+        ref={ref}
+      >
+        {children}
+      </button>
+    );
+  }
+);

@@ -70,10 +70,6 @@ export const Surface: React.FC<SurfaceProps> = props => {
             ].boxShadow};
           }
         }
-
-        &:focus {
-          outline: auto;
-        }
       `,
       overlay: css`
         @media (hover: hover) and (pointer: fine) {

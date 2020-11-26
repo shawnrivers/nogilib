@@ -11195,10 +11195,10 @@
     }
   },
   {
-    "title": "タイトル未定",
-    "key": "untitled26",
+    "title": "僕は僕を好きになる",
+    "key": "bokuhabokuwosukininaru",
     "single": {
-      "title": "タイトル未定",
+      "title": "僕は僕を好きになる",
       "number": "26"
     },
     "albums": [],
@@ -11208,7 +11208,9 @@
     "type": "title",
     "creators": {
       "lyrics": [],
-      "compose": [],
+      "compose": [
+        "杉山勝彦"
+      ],
       "arrange": [],
       "direct": []
     },
