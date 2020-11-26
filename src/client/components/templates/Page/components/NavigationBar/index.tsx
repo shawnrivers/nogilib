@@ -1,7 +1,7 @@
 /**@jsx jsx */
 import { jsx, css } from '@emotion/core';
 import * as React from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Card } from 'client/components/atoms/Card';
 import { MenuIcon } from 'client/components/atoms/icons/MenuIcon';
 import { RadioCheckIcon } from 'client/components/atoms/icons/RadioCheckIcon';
@@ -165,87 +165,89 @@ const Settings: React.FC = () => {
       >
         <SettingsIcon fill={theme.colors.theme.onSurface.standard} />
       </BaseButton>
-      <AnimatePresence>
-        {isDropdownOpen && (
-          <motion.div
-            initial={{ scale: 0, opacity: 0 }}
-            style={{ originX: 1, originY: 0 }}
-            animate={isDropdownOpen ? 'open' : 'closed'}
-            variants={{
-              open: { scale: 1, opacity: 1 },
-              closed: { scale: 0, opacity: 0 },
-            }}
-            exit={{ scale: 0, opacity: 0 }}
-            transition={{ duration: 0.2 }}
+      <motion.div
+        initial={{ scale: 0, opacity: 0 }}
+        style={{ originX: 1, originY: 0 }}
+        animate={isDropdownOpen ? 'open' : 'closed'}
+        variants={{
+          open: { scale: 1, opacity: 1 },
+          closed: { scale: 0, opacity: 0 },
+        }}
+        exit={{ scale: 0, opacity: 0 }}
+        transition={{ duration: 0.2 }}
+        css={css`
+          position: absolute;
+          top: calc(${commonStyles.sizes.navigationBarHeight} - 8px);
+          min-width: 140px;
+        `}
+        id={settingDropdownId}
+      >
+        <Card elevation={componentElevationKey.dropdown} borderRadius="s">
+          <SettingHeading>{getTranslation('languages')}</SettingHeading>
+          <ul
             css={css`
-              position: absolute;
-              top: calc(${commonStyles.sizes.navigationBarHeight} - 8px);
-              min-width: 140px;
+              margin-top: ${commonStyles.spacing.xs};
             `}
-            id={settingDropdownId}
+            ref={languageListRef}
           >
-            <Card elevation={componentElevationKey.dropdown} borderRadius="s">
-              <SettingHeading>{getTranslation('languages')}</SettingHeading>
-              <ul
-                css={css`
-                  margin-top: ${commonStyles.spacing.xs};
-                `}
-                ref={languageListRef}
-              >
-                <SelectionItem
-                  isSelected={language === 'en'}
-                  onClick={handleClickEnglish}
-                >
-                  English
-                </SelectionItem>
-                <SelectionItem
-                  isSelected={language === 'ja'}
-                  onClick={handleClickJapanese}
-                >
-                  日本語
-                </SelectionItem>
-                <SelectionItem
-                  isSelected={language === 'zh'}
-                  onClick={handleClickChinese}
-                >
-                  简体中文
-                </SelectionItem>
-              </ul>
-              <Divider
-                lineColor={{ on: 'onSurface', variant: 'variant1' }}
-                css={css`
-                  margin: ${commonStyles.spacing.s} 0;
-                `}
-              />
-              <SettingHeading>{getTranslation('color theme')}</SettingHeading>
-              <ul
-                css={css`
-                  margin-top: ${commonStyles.spacing.xs};
-                `}
-              >
-                <SelectionItem
-                  isSelected={themeMode === 'dark'}
-                  onClick={handleClickDarkTheme}
-                >
-                  {getTranslation('dark')}
-                </SelectionItem>
-                <SelectionItem
-                  isSelected={themeMode === 'light'}
-                  onClick={handleClickLightTheme}
-                >
-                  {getTranslation('light')}
-                </SelectionItem>
-                <SelectionItem
-                  isSelected={themeMode === 'auto'}
-                  onClick={handleClickAutoTheme}
-                >
-                  {getTranslation('auto')}
-                </SelectionItem>
-              </ul>
-            </Card>
-          </motion.div>
-        )}
-      </AnimatePresence>
+            <SelectionItem
+              isSelected={language === 'en'}
+              tabIndex={isDropdownOpen ? 0 : -1}
+              onClick={handleClickEnglish}
+            >
+              English
+            </SelectionItem>
+            <SelectionItem
+              isSelected={language === 'ja'}
+              tabIndex={isDropdownOpen ? 0 : -1}
+              onClick={handleClickJapanese}
+            >
+              日本語
+            </SelectionItem>
+            <SelectionItem
+              isSelected={language === 'zh'}
+              tabIndex={isDropdownOpen ? 0 : -1}
+              onClick={handleClickChinese}
+            >
+              简体中文
+            </SelectionItem>
+          </ul>
+          <Divider
+            lineColor={{ on: 'onSurface', variant: 'variant1' }}
+            css={css`
+              margin: ${commonStyles.spacing.s} 0;
+            `}
+          />
+          <SettingHeading>{getTranslation('color theme')}</SettingHeading>
+          <ul
+            css={css`
+              margin-top: ${commonStyles.spacing.xs};
+            `}
+          >
+            <SelectionItem
+              isSelected={themeMode === 'dark'}
+              tabIndex={isDropdownOpen ? 0 : -1}
+              onClick={handleClickDarkTheme}
+            >
+              {getTranslation('dark')}
+            </SelectionItem>
+            <SelectionItem
+              isSelected={themeMode === 'light'}
+              tabIndex={isDropdownOpen ? 0 : -1}
+              onClick={handleClickLightTheme}
+            >
+              {getTranslation('light')}
+            </SelectionItem>
+            <SelectionItem
+              isSelected={themeMode === 'auto'}
+              tabIndex={isDropdownOpen ? 0 : -1}
+              onClick={handleClickAutoTheme}
+            >
+              {getTranslation('auto')}
+            </SelectionItem>
+          </ul>
+        </Card>
+      </motion.div>
     </div>
   );
 };
