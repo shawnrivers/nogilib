@@ -256,6 +256,7 @@ const Settings: React.FC = () => {
 
 export const NavigationBar: React.FC<{
   onOpenSidebar: () => void;
+  menuButtonRef?: React.RefObject<BaseButtonRef>;
 }> = props => {
   const theme = useAppTheme();
   const { getTranslation } = useTranslations();
@@ -352,6 +353,7 @@ export const NavigationBar: React.FC<{
                 css={css`
                   margin-left: ${commonStyles.spacing.xxs};
                 `}
+                ref={props.menuButtonRef}
               >
                 <MenuIcon fill={theme.colors.theme.onSurface.standard} />
               </BaseButton>

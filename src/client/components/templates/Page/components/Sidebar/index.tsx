@@ -10,7 +10,7 @@ import {
   getSearchUrl,
 } from 'client/utils/urls';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
-import { BaseButton } from 'client/components/atoms/BaseButton';
+import { BaseButton, BaseButtonRef } from 'client/components/atoms/BaseButton';
 import {
   TextLink,
   TextLinkProps,
@@ -82,6 +82,7 @@ export type SidebarProps = {
   open: boolean;
   onClose: () => void;
   className?: string;
+  menuButtonRef?: React.RefObject<BaseButtonRef>;
 };
 
 export const Sidebar: React.FC<SidebarProps> = props => {
@@ -94,6 +95,7 @@ export const Sidebar: React.FC<SidebarProps> = props => {
     const handleEscape = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
         onClose();
+        props.menuButtonRef?.current?.focus();
       }
     };
 
@@ -104,7 +106,7 @@ export const Sidebar: React.FC<SidebarProps> = props => {
     } else {
       document.removeEventListener('keyup', handleEscape);
     }
-  }, [open, onClose]);
+  }, [open, onClose, props.menuButtonRef]);
 
   return (
     <div className={props.className}>
