@@ -89,6 +89,13 @@ export const Sidebar: React.FC<SidebarProps> = props => {
   const { getTranslation } = useTranslations();
   const { open, onClose } = props;
 
+  const firstNavigationItemLink = React.useRef<NavigationItemRef>(null);
+  React.useEffect(() => {
+    if (open) {
+      firstNavigationItemLink.current?.focus();
+    }
+  }, [open]);
+
   return (
     <div className={props.className}>
       <motion.div
@@ -172,6 +179,7 @@ export const Sidebar: React.FC<SidebarProps> = props => {
               to={getDiscographyUrl()}
               tabIndex={open ? 0 : -1}
               onClick={onClose}
+              ref={firstNavigationItemLink}
             >
               {getTranslation('discography')}
             </NavigationItem>
