@@ -8,18 +8,18 @@ export type BaseLinkProps = {
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
 export const BaseLink: React.FC<BaseLinkProps> = props => {
-  const { to, disabled, className, onClick, children } = props;
+  const { to, disabled, className, onClick, children, ...anchorProps } = props;
 
   const isAbsoluteLink = isAbsoluteUrl(to);
 
   return disabled ? (
     <div css={className}>{children}</div>
   ) : isAbsoluteLink ? (
-    <a href={to} css={className} onClick={onClick}>
+    <a href={to} css={className} onClick={onClick} {...anchorProps}>
       {children}
     </a>
   ) : (
-    <Link to={to} css={className} onClick={onClick}>
+    <Link to={to} css={className} onClick={onClick} {...anchorProps}>
       {children}
     </Link>
   );

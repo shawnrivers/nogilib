@@ -18,27 +18,39 @@ import {
 import { useTranslations } from 'client/hooks/useTranslations';
 import { Divider } from 'client/components/atoms/Divider';
 
-type SidebarItemProps = Pick<TextLinkProps, 'to' | 'onClick'>;
+type SidebarItemProps = Omit<
+  TextLinkProps,
+  | 'typographyVariant'
+  | 'textColor'
+  | 'backgroundType'
+  | 'backgroundColorVariant'
+  | 'showUnderline'
+>;
 
-const SidebarItem: React.FC<SidebarItemProps> = props => (
-  <TextLink
-    to={props.to}
-    typographyVariant="h6"
-    textColor={{ on: 'onSecondary', variant: 'standard' }}
-    backgroundType="primary"
-    backgroundColorVariant="standard"
-    showUnderline={false}
-    onClick={props.onClick}
-    css={css`
-      text-transform: uppercase;
-    `}
-  >
-    {props.children}
-  </TextLink>
-);
+const SidebarItem: React.FC<SidebarItemProps> = props => {
+  const { to, children, onClick, ...restProps } = props;
+
+  return (
+    <TextLink
+      to={to}
+      typographyVariant="h6"
+      textColor={{ on: 'onSecondary', variant: 'standard' }}
+      backgroundType="primary"
+      backgroundColorVariant="standard"
+      showUnderline={false}
+      onClick={onClick}
+      css={css`
+        text-transform: uppercase;
+      `}
+      {...restProps}
+    >
+      {children}
+    </TextLink>
+  );
+};
 
 const NavigationItem: React.FC<Omit<SidebarItemProps, 'element'>> = props => {
-  const { to, children, onClick } = props;
+  const { children, ...sidebarItemProps } = props;
 
   return (
     <li
@@ -46,9 +58,7 @@ const NavigationItem: React.FC<Omit<SidebarItemProps, 'element'>> = props => {
         margin-top: 1em;
       `}
     >
-      <SidebarItem to={to} onClick={onClick}>
-        {children}
-      </SidebarItem>
+      <SidebarItem {...sidebarItemProps}>{children}</SidebarItem>
     </li>
   );
 };
@@ -131,6 +141,7 @@ export const Sidebar: React.FC<SidebarProps> = props => {
           onClick={onClose}
           backgroundType="primary"
           backgroundColorVariant="standard"
+          tabIndex={open ? 0 : -1}
           css={css`
             margin: ${theme.spacing.m};
           `}
