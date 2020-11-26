@@ -81,21 +81,20 @@ const transition = { duration: 0.2 };
 export type SidebarProps = {
   open: boolean;
   onClose: () => void;
-  className?: string;
   menuButtonRef?: React.RefObject<BaseButtonRef>;
-};
+} & React.HTMLAttributes<HTMLElement>;
 
 export const Sidebar: React.FC<SidebarProps> = props => {
   const theme = useAppTheme();
   const { getTranslation } = useTranslations();
-  const { open, onClose } = props;
+  const { open, menuButtonRef, onClose, ...restProps } = props;
 
   const firstNavigationItemLink = React.useRef<NavigationItemRef>(null);
   React.useEffect(() => {
     const handleEscape = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
         onClose();
-        props.menuButtonRef?.current?.focus();
+        menuButtonRef?.current?.focus();
       }
     };
 
@@ -106,10 +105,10 @@ export const Sidebar: React.FC<SidebarProps> = props => {
     } else {
       document.removeEventListener('keyup', handleEscape);
     }
-  }, [open, onClose, props.menuButtonRef]);
+  }, [open, onClose, menuButtonRef]);
 
   return (
-    <div className={props.className}>
+    <div {...restProps}>
       <motion.div
         initial={{ opacity: 0 }}
         animate={open ? 'open' : 'closed'}
