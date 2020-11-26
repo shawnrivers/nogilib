@@ -176,7 +176,6 @@ const Settings: React.FC = () => {
           open: { scale: 1, opacity: 1 },
           closed: { scale: 0, opacity: 0 },
         }}
-        exit={{ scale: 0, opacity: 0 }}
         transition={{ duration: 0.2 }}
         css={css`
           position: absolute;
