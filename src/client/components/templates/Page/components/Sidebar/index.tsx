@@ -91,10 +91,20 @@ export const Sidebar: React.FC<SidebarProps> = props => {
 
   const firstNavigationItemLink = React.useRef<NavigationItemRef>(null);
   React.useEffect(() => {
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        onClose();
+      }
+    };
+
     if (open) {
       firstNavigationItemLink.current?.focus();
+
+      document.addEventListener('keyup', handleEscape);
+    } else {
+      document.removeEventListener('keyup', handleEscape);
     }
-  }, [open]);
+  }, [open, onClose]);
 
   return (
     <div className={props.className}>
