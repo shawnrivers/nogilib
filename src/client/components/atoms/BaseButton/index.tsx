@@ -39,10 +39,6 @@ export const BaseButton = React.forwardRef<BaseButtonRef, BaseButtonProps>(
           transition: background-color 0.3s ease-out;
           background: none;
 
-          &:focus {
-            outline: auto;
-          }
-
           @media (hover: hover) and (pointer: fine) {
             &:hover {
               background-color: ${theme.colors.theme[backgroundType][

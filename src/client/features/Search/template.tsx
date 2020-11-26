@@ -87,7 +87,7 @@ export const Search: React.FC<SearchProps> = props => {
                   color: ${theme.colors.theme.onBackground.variant1};
                 }
 
-                &:focus {
+                &.focus-visible {
                   border-color: ${theme.colors.theme.onBackground.standard};
                 }
               `}
