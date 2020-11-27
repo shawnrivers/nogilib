@@ -11207,7 +11207,9 @@
     "musicVideo": "",
     "type": "title",
     "creators": {
-      "lyrics": [],
+      "lyrics": [
+        "秋元康"
+      ],
       "compose": [
         "杉山勝彦"
       ],
