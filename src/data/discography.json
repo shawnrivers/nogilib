@@ -27,6 +27,21 @@
             "yamashitamizuki"
           ]
         }
+      },
+      {
+        "number": 2,
+        "title": "冷たい水の中",
+        "key": "tsumetaimizunonaka",
+        "inCdType": [
+          "A"
+        ],
+        "type": "solo",
+        "focusPerformers": {
+          "type": "solo",
+          "members": [
+            "horimiona"
+          ]
+        }
       }
     ],
     "underMembers": [

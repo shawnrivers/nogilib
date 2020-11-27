@@ -11277,6 +11277,53 @@
     }
   },
   {
+    "title": "冷たい水の中",
+    "key": "tsumetaimizunonaka",
+    "single": {
+      "title": "僕は僕を好きになる",
+      "number": "26"
+    },
+    "albums": [],
+    "otherCds": [],
+    "artwork": "artworks/artwork_no_image.png",
+    "musicVideo": "",
+    "type": "solo",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [],
+      "arrange": [],
+      "direct": [
+        "山戸結希"
+      ]
+    },
+    "performers": {
+      "center": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
+      "solo": "horimiona",
+      "unit": ""
+    },
+    "performersTag": {
+      "name": "",
+      "album": {
+        "type": "single",
+        "number": "26"
+      }
+    },
+    "formations": {
+      "firstRow": [
+        "horimiona"
+      ],
+      "secondRow": [],
+      "thirdRow": [],
+      "fourthRow": []
+    }
+  },
+  {
     "title": "誰かは味方",
     "key": "darekahamikata",
     "single": {
