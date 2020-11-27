@@ -12,6 +12,10 @@ export const TWENTY_SIXTH_SINGLE = createSingleRaw({
       title: SONGS['僕は僕を好きになる'].title,
       inCdType: ['A'],
     },
+    {
+      title: SONGS['冷たい水の中'].title,
+      inCdType: ['A'],
+    },
   ],
   underMembers: [
     MemberNameKey.ItouJunna,

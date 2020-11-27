@@ -44,4 +44,15 @@ export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
       ],
     },
   }),
+  createSongRaw({
+    title: SONGS['冷たい水の中'].title,
+    type: SongType.Solo,
+    creators: {
+      lyrics: ['秋元康'],
+      compose: [],
+      arrange: [],
+      direct: ['山戸結希'],
+    },
+    solo: MemberNameKey.HoriMiona,
+  }),
 ];
