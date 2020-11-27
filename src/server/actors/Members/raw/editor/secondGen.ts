@@ -126,6 +126,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         title: SocialMedia.Twitter,
         url: 'https://twitter.com/ssk_ktk828',
       },
+      {
+        title: SocialMedia.Profile,
+        url: 'http://stylecube.jp/talents/kotoko/index.html',
+      },
     ],
     graduatedDate: '2020-03-31',
   }),
