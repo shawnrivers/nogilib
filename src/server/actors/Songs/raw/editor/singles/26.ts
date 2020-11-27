@@ -9,7 +9,7 @@ export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
     title: SONGS['僕は僕を好きになる'].title,
     type: SongType.Title,
     creators: {
-      lyrics: [],
+      lyrics: ['秋元康'],
       compose: ['杉山勝彦'],
       arrange: [],
       direct: [],
