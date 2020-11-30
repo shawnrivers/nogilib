@@ -294,6 +294,10 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Fukuoka,
     sites: [
       {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/yodayuuki_oimo/',
+      },
+      {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/yuuki.yoda/',
       },
