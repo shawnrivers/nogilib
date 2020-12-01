@@ -79,7 +79,7 @@
     "@storybook/addon-knobs": "^6.1.9",
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/react": "^6.1.9",
-    "@types/jest": "^26.0.15",
+    "@types/jest": "^26.0.16",
     "@types/query-string": "^6.3.0",
     "@types/react": "^16.14.0",
     "@types/react-dom": "^16.9.9",
