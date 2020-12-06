@@ -2,7 +2,7 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 import { MemberResult } from 'server/actors/Members/models';
 import { MembersPage } from 'client/features/Members/template';
-import { sortByJoin, sortByGraduation } from 'utils/sorting';
+import { sortByJoin, sortByGraduation, sortByMemberName } from 'utils/sorting';
 import { useFilter } from 'client/hooks/useFilter';
 import { MembersUrlFilter } from 'client/utils/urls';
 
@@ -52,8 +52,12 @@ export type MembersPageProps = {
 };
 
 const MembersPageContainer: React.FC<QueryResult> = props => {
-  const membersData = props.data.allMembersJson.nodes;
-  const memberCards = getMemberCards(membersData);
+  const memberCards = React.useMemo(() => {
+    const membersData = sortByMemberName(props.data.allMembersJson.nodes);
+
+    return getMemberCards(membersData);
+  }, [props.data.allMembersJson.nodes]);
+
   const currentMembersData = React.useMemo(
     () => memberCards.filter(member => !member.graduation.isGraduated),
     [memberCards]
@@ -111,7 +115,7 @@ const MembersPageContainer: React.FC<QueryResult> = props => {
     allMemberGroupByJoin,
   ]);
 
-  return membersData ? (
+  return memberCards ? (
     <MembersPage
       currentFilter={currentFilter}
       memberGroupsByJoin={memberGroupsByJoin}
