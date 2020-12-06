@@ -42,6 +42,21 @@
             "horimiona"
           ]
         }
+      },
+      {
+        "number": 3,
+        "title": "Out of the blue",
+        "key": "outoftheblue",
+        "inCdType": [
+          "A"
+        ],
+        "type": "fourth generation",
+        "focusPerformers": {
+          "type": "center",
+          "members": [
+            "hayakawaseira"
+          ]
+        }
       }
     ],
     "underMembers": [
