@@ -11324,6 +11324,68 @@
     }
   },
   {
+    "title": "Out of the blue",
+    "key": "outoftheblue",
+    "single": {
+      "title": "僕は僕を好きになる",
+      "number": "26"
+    },
+    "albums": [],
+    "otherCds": [],
+    "artwork": "artworks/artwork_no_image.png",
+    "musicVideo": "",
+    "type": "fourth generation",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [],
+      "arrange": [],
+      "direct": []
+    },
+    "performers": {
+      "center": [
+        "hayakawaseira"
+      ],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
+      "solo": "",
+      "unit": ""
+    },
+    "performersTag": {
+      "name": "fourth generation",
+      "album": {
+        "type": "single",
+        "number": "26"
+      }
+    },
+    "formations": {
+      "firstRow": [
+        "endousakura",
+        "kakiharuka",
+        "kakehashisayaka",
+        "kanagawasaya",
+        "kitagawayuri",
+        "shibatayuna",
+        "seimiyarei",
+        "tamuramayu",
+        "tsutsuiayame",
+        "hayakawaseira",
+        "yakubomio",
+        "kuromiharuka",
+        "satourika",
+        "hayashiruna",
+        "matsuomiyu",
+        "yumikinao"
+      ],
+      "secondRow": [],
+      "thirdRow": [],
+      "fourthRow": []
+    }
+  },
+  {
     "title": "誰かは味方",
     "key": "darekahamikata",
     "single": {
