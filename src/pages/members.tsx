@@ -2,7 +2,7 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 import { MemberResult } from 'server/actors/Members/models';
 import { MembersPage } from 'client/features/Members/template';
-import { sortByJoin, sortByGraduation } from 'utils/arrays';
+import { sortByJoin, sortByGraduation } from 'utils/sorting';
 import { useFilter } from 'client/hooks/useFilter';
 import { MembersUrlFilter } from 'client/utils/urls';
 

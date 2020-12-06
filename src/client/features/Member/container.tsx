@@ -2,7 +2,7 @@ import { graphql } from 'gatsby';
 import * as React from 'react';
 import { MemberPage } from 'client/features/Member/template';
 import { MemberResult } from 'server/actors/Members/models';
-import { sortByDate } from 'utils/arrays';
+import { sortByDate } from 'utils/sorting';
 
 export const query = graphql`
   query($name: String!) {

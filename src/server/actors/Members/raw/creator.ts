@@ -1,5 +1,5 @@
 import { MemberRaw } from 'server/actors/Members/models';
-import { sortBySocialMedia } from 'utils/arrays';
+import { sortBySocialMedia } from 'utils/sorting';
 
 type CreateMemberRawParams = {
   name: MemberRaw['name'];
