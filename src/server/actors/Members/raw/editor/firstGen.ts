@@ -477,10 +477,6 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.youtube.com/c/maishiraishi',
       },
       {
-        title: SocialMedia.Blog,
-        url: 'https://blog.nogizaka46.com/mai.shiraishi/',
-      },
-      {
         title: SocialMedia.Profile,
         url: 'https://n46llc.com/s/m00/artist/12?ima=0737',
       },
@@ -612,10 +608,6 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: SocialMedia.Instagram,
         url: 'https://www.instagram.com/nakadakana_1st/',
-      },
-      {
-        title: SocialMedia.Blog,
-        url: 'https://blog.nogizaka46.com/kana.nakada/',
       },
       {
         title: SocialMedia.Profile,
