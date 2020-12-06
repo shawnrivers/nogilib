@@ -57,8 +57,7 @@ export const convertSongAlbums: ConvertSongAlbums = ({
 
   return sortByDate(
     songAlbumsWithRelease,
-    'release',
-    'desc'
+    'release'
   ).map(({ title, number }) => ({ title, number }));
 };
 
@@ -82,7 +81,7 @@ export const convertSongOtherCds = (params: {
     }
   }
 
-  return sortByDate(songOtherCdsWithRelease, 'release', 'desc').map(
+  return sortByDate(songOtherCdsWithRelease, 'release').map(
     ({ title, number }) => ({
       title,
       number,

@@ -79,7 +79,7 @@ const groupCdsByYear = (cds: QueryResultDiscography[]): CdGroupByYear[] => {
 
   return cdGroupsByYear.map(cdGroup => ({
     ...cdGroup,
-    cds: sortByDate(cdGroup.cds, 'release', 'desc'),
+    cds: sortByDate(cdGroup.cds, 'release'),
   }));
 };
 
