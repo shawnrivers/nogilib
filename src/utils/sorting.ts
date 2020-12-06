@@ -1,4 +1,5 @@
 import { JoinedGenerationType } from 'server/actors/Members/constants/joinedGeneration';
+import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { SocialMedia } from 'server/actors/Members/constants/socialMedia';
 import { MemberResult } from 'server/actors/Members/models';
 import { Site } from 'server/types/commons';
@@ -61,29 +62,96 @@ export function sortByGraduation<T extends Pick<MemberResult, 'graduation'>>(
   });
 }
 
+const socialMediaOrder: string[] = [
+  SocialMedia.Instagram,
+  SocialMedia.Twitter,
+  SocialMedia.YouTube,
+  SocialMedia.Blog,
+  SocialMedia.FourthGenBlog,
+  SocialMedia.Official,
+  SocialMedia.OnlineSalon,
+  SocialMedia.Profile,
+];
+
 export function sortBySocialMedia(
   sites: readonly Site[],
   order: SortOrder
 ): Site[] {
-  const socialMediaWeightMap: Record<SocialMedia | string, number> = {
-    [SocialMedia.Instagram]: 1,
-    [SocialMedia.Twitter]: 2,
-    [SocialMedia.YouTube]: 3,
-    [SocialMedia.Blog]: 4,
-    [SocialMedia.FourthGenBlog]: 5,
-    [SocialMedia.Official]: 6,
-    [SocialMedia.OnlineSalon]: 7,
-    [SocialMedia.Profile]: 8,
-  };
-
   return sites.slice().sort((mediaA, mediaB) => {
-    const weightA = socialMediaWeightMap[mediaA.title];
-    const weightB = socialMediaWeightMap[mediaB.title];
+    const indexA = socialMediaOrder.indexOf(mediaA.title);
+    const indexB = socialMediaOrder.indexOf(mediaB.title);
 
-    if (weightA !== undefined && weightB !== undefined) {
-      return order === 'asc' ? weightA - weightB : weightB - weightA;
+    if (indexA !== undefined && indexB !== undefined) {
+      return order === 'asc' ? indexA - indexB : indexB - indexA;
     } else {
       return 1;
     }
+  });
+}
+
+/**
+ * Why use reverse():
+ * The larger the index is,
+ * the earlier the item should come in the array.
+ * For the items that do not exist in the array,
+ * they should have the lowest order.
+ */
+const memberOrder: MemberNameKey[] = [
+  MemberNameKey.AkimotoManatsu,
+  MemberNameKey.IkutaErika,
+  MemberNameKey.ItouJunna,
+  MemberNameKey.ItouRiria,
+  MemberNameKey.IwamotoRenka,
+  MemberNameKey.UmezawaMinami,
+  MemberNameKey.OozonoMomoko,
+  MemberNameKey.KitanoHinako,
+  MemberNameKey.KuboShiori,
+  MemberNameKey.SaitouAsuka,
+  MemberNameKey.SakaguchiTamami,
+  MemberNameKey.SatouKaede,
+  MemberNameKey.ShinuchiMai,
+  MemberNameKey.SuzukiAyane,
+  MemberNameKey.TakayamaKazumi,
+  MemberNameKey.TeradaRanze,
+  MemberNameKey.NakamuraReno,
+  MemberNameKey.HiguchiHina,
+  MemberNameKey.HoshinoMinami,
+  MemberNameKey.HoriMiona,
+  MemberNameKey.MatsumuraSayuri,
+  MemberNameKey.MukaiHazuki,
+  MemberNameKey.YamazakiRena,
+  MemberNameKey.YamashitaMizuki,
+  MemberNameKey.YoshidaAyanoChristie,
+  MemberNameKey.YodaYuuki,
+  MemberNameKey.WatanabeMiria,
+  MemberNameKey.WadaMaaya,
+  MemberNameKey.EndouSakura,
+  MemberNameKey.KakiHaruka,
+  MemberNameKey.KakehashiSayaka,
+  MemberNameKey.KanagawaSaya,
+  MemberNameKey.KitagawaYuri,
+  MemberNameKey.KuromiHaruka,
+  MemberNameKey.SatouRika,
+  MemberNameKey.ShibataYuna,
+  MemberNameKey.SeimiyaRei,
+  MemberNameKey.TamuraMayu,
+  MemberNameKey.TsutsuiAyame,
+  MemberNameKey.HayakawaSeira,
+  MemberNameKey.HayashiRuna,
+  MemberNameKey.MatsuoMiyu,
+  MemberNameKey.YakuboMio,
+  MemberNameKey.YumikiNao,
+].reverse();
+
+export function sortByMemberName<
+  T extends {
+    name: MemberNameKey;
+  }
+>(members: readonly T[], order: SortOrder = 'desc'): T[] {
+  return members.slice().sort((memberA, memberB) => {
+    const indexA = memberOrder.indexOf(memberA.name);
+    const indexB = memberOrder.indexOf(memberB.name);
+
+    return order === 'asc' ? indexA - indexB : indexB - indexA;
   });
 }
