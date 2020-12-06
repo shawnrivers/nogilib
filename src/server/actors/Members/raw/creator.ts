@@ -72,7 +72,7 @@ export const createMemberRaw = (
       params.sites === undefined
         ? []
         : options.autoSortSites
-        ? sortBySocialMedia(params.sites, 'asc')
+        ? sortBySocialMedia(params.sites)
         : params.sites,
     photoAlbums:
       params.photoAlbums?.map(photoAlbum => ({

@@ -65,8 +65,7 @@ const MembersPageContainer: React.FC<QueryResult> = props => {
   const graduatedMembersData = React.useMemo(
     () =>
       sortByGraduation(
-        memberCards.filter(member => member.graduation.isGraduated),
-        'desc'
+        memberCards.filter(member => member.graduation.isGraduated)
       ),
     [memberCards]
   );
@@ -143,7 +142,7 @@ function getMemberCards(membersData: QueryResultMember[]): MemberCard[] {
 
 function groupMembersByJoin(members: MemberCard[]): MemberGroupByYear[] {
   const memberGroupByJoin: MemberGroupByYear[] = [];
-  const membersSortedByJoin = sortByJoin(members, 'asc');
+  const membersSortedByJoin = sortByJoin(members);
 
   for (const member of membersSortedByJoin) {
     if (memberGroupByJoin.length === 0) {

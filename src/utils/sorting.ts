@@ -9,7 +9,7 @@ type SortOrder = 'asc' | 'desc';
 export function sortByDate<T>(
   array: T[],
   keyField: keyof T,
-  order: SortOrder
+  order: SortOrder = 'desc'
 ): T[] {
   return array.slice().sort((itemA, itemB) => {
     return order === 'asc'
@@ -20,28 +20,36 @@ export function sortByDate<T>(
   });
 }
 
-export function sortByJoin<T extends Pick<MemberResult, 'join'>>(
-  array: T[],
-  order: SortOrder
-): T[] {
-  const joinWeightMap: Record<JoinedGenerationType, number> = {
-    exchange: 100,
-    first: 1,
-    second: 2,
-    third: 3,
-    fourth: 4,
-  };
+/**
+ * Why use reverse():
+ * The larger the index is,
+ * the earlier the item should come in the array.
+ * For the items that do not exist in the array,
+ * they should have the lowest order.
+ */
+const joinOrder: JoinedGenerationType[] = [
+  JoinedGenerationType.First,
+  JoinedGenerationType.Second,
+  JoinedGenerationType.Third,
+  JoinedGenerationType.Fourth,
+  JoinedGenerationType.Exchange,
+].reverse();
 
+export function sortByJoin<T extends Pick<MemberResult, 'join'>>(
+  array: readonly T[],
+  order: SortOrder = 'desc'
+): T[] {
   return array.slice().sort((itemA, itemB) => {
-    return order === 'asc'
-      ? joinWeightMap[itemA.join] - joinWeightMap[itemB.join]
-      : joinWeightMap[itemB.join] - joinWeightMap[itemA.join];
+    const indexA = joinOrder.indexOf(itemA.join);
+    const indexB = joinOrder.indexOf(itemB.join);
+
+    return order === 'asc' ? indexA - indexB : indexB - indexA;
   });
 }
 
 export function sortByGraduation<T extends Pick<MemberResult, 'graduation'>>(
   array: readonly T[],
-  order: SortOrder
+  order: SortOrder = 'desc'
 ): T[] {
   return array.slice().sort((itemA, itemB) => {
     let compareResult = 0;
@@ -71,31 +79,20 @@ const socialMediaOrder: string[] = [
   SocialMedia.Official,
   SocialMedia.OnlineSalon,
   SocialMedia.Profile,
-];
+].reverse();
 
 export function sortBySocialMedia(
   sites: readonly Site[],
-  order: SortOrder
+  order: SortOrder = 'desc'
 ): Site[] {
   return sites.slice().sort((mediaA, mediaB) => {
     const indexA = socialMediaOrder.indexOf(mediaA.title);
     const indexB = socialMediaOrder.indexOf(mediaB.title);
 
-    if (indexA !== undefined && indexB !== undefined) {
-      return order === 'asc' ? indexA - indexB : indexB - indexA;
-    } else {
-      return 1;
-    }
+    return order === 'asc' ? indexA - indexB : indexB - indexA;
   });
 }
 
-/**
- * Why use reverse():
- * The larger the index is,
- * the earlier the item should come in the array.
- * For the items that do not exist in the array,
- * they should have the lowest order.
- */
 const memberOrder: MemberNameKey[] = [
   MemberNameKey.AkimotoManatsu,
   MemberNameKey.IkutaErika,

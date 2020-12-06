@@ -117,12 +117,8 @@ function getDiscographyProfileImages(params: {
   );
 
   const discographyGallery: DiscographyProfileImage[] = [];
-  const sortedGallery = sortByDate(galleryWithDate, 'date', 'desc');
-  const sortedDiscographyRawArray = sortByDate(
-    discographyRawArray,
-    'release',
-    'desc'
-  );
+  const sortedGallery = sortByDate(galleryWithDate, 'date');
+  const sortedDiscographyRawArray = sortByDate(discographyRawArray, 'release');
 
   for (let i = 0; i < sortedDiscographyRawArray.length; i++) {
     const album = sortedDiscographyRawArray[i];

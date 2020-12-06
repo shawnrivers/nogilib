@@ -131,7 +131,7 @@ const MemberPageContainer: React.FC<QueryResult> = props => {
   }, [memberData.units]);
 
   const photoBooks = React.useMemo(
-    () => sortByDate(memberData.photoAlbums, 'release', 'desc'),
+    () => sortByDate(memberData.photoAlbums, 'release'),
     [memberData.photoAlbums]
   );
 
