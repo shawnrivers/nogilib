@@ -5,7 +5,7 @@ import {
   DiscographyRawArray,
   DiscographyRawObject,
 } from 'server/actors/Discography/models';
-import { sortByDate } from 'utils/arrays';
+import { sortByDate } from 'utils/sorting';
 
 type ConvertSongSingle = (params: {
   songTitle: SongRaw['title'];

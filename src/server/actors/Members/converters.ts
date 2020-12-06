@@ -13,7 +13,7 @@ import {
   DiscographyRawArray,
   DiscographyRaw,
 } from 'server/actors/Discography/models';
-import { sortByDate } from 'utils/arrays';
+import { sortByDate } from 'utils/sorting';
 
 type GalleryWithDate = {
   url: string;

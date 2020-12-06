@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
 import { DiscographyResult } from 'server/actors/Discography/models';
-import { sortByDate } from 'utils/arrays';
+import { sortByDate } from 'utils/sorting';
 import {
   DiscographyPage,
   DiscographyPageProps,
