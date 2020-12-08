@@ -10,6 +10,15 @@ import { Sidebar } from 'client/components/templates/Page/components/Sidebar';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import { BaseButtonRef } from 'client/components/atoms/BaseButton';
 import { MENU_BUTTON_ID } from 'client/constants/ids';
+import { Surface } from 'client/components/atoms/Surface';
+import {
+  componentElevationKey,
+  ELEVATION_DARK,
+} from 'client/styles/tokens/elevation';
+import { Typography } from 'client/components/atoms/Typography';
+import { useTranslations } from 'client/hooks/useTranslations';
+
+const PAGE_CONTENT_ID = 'page-content';
 
 export const PageContent: React.FC<HeaderProps> = props => {
   return (
@@ -25,6 +34,7 @@ export const PageContent: React.FC<HeaderProps> = props => {
           ${commonStyles.spacing.xxl} + env(safe-area-inset-bottom)
         );
       `}
+      id={PAGE_CONTENT_ID}
     >
       {(props.title !== undefined || props.subtitle !== undefined) && (
         <Header {...props} />
@@ -38,6 +48,55 @@ export const PageContent: React.FC<HeaderProps> = props => {
         {props.children}
       </main>
     </div>
+  );
+};
+
+const SkipLink: React.FC = () => {
+  const { getTranslation } = useTranslations();
+
+  return (
+    <a
+      id="skip-link"
+      href={`#${PAGE_CONTENT_ID}`}
+      css={css`
+        display: inline-block;
+        top: ${commonStyles.spacing.xs};
+        left: ${commonStyles.spacing.s};
+        transform: translateY(-170%);
+        transition: transform 0.3s;
+        z-index: ${ELEVATION_DARK[componentElevationKey.skipLink].zIndex};
+        position: absolute;
+
+        &:focus {
+          transform: translateY(0%);
+        }
+      `}
+    >
+      <Surface
+        backgroundColor="variant0"
+        foregroundColor="standard"
+        colorType="primary"
+        elevation={componentElevationKey.skipLink}
+        css={css`
+          display: inline-block;
+          border-radius: ${commonStyles.borderRadius.xs};
+        `}
+      >
+        <div
+          css={css`
+            padding: ${commonStyles.spacing.s};
+          `}
+        >
+          <Typography
+            variant="body2"
+            element="span"
+            textColor={{ on: 'onPrimary', variant: 'standard' }}
+          >
+            {getTranslation('skip to content')}
+          </Typography>
+        </div>
+      </Surface>
+    </a>
   );
 };
 
@@ -78,6 +137,7 @@ export const Page: React.FC = props => {
         }
       `}
     >
+      <SkipLink />
       <NavigationBar
         onOpenSidebar={handleOpenSidebar}
         menuButtonRef={menuButtonRef}

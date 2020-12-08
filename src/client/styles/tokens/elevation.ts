@@ -34,7 +34,8 @@ export const componentElevationKey: Record<
   | 'dropdown'
   | 'componentOnBackground'
   | 'elevatedComponentOnBackground'
-  | 'background',
+  | 'background'
+  | 'skipLink',
   ElevationKey
 > = {
   background: 0,
@@ -43,6 +44,7 @@ export const componentElevationKey: Record<
   dropdown: 8,
   sidebar: 10,
   elevatedComponentOnBackground: 12,
+  skipLink: 16,
 };
 
 const UMBRA_COLOR = 'rgba(0, 0, 0, 0.2)';
