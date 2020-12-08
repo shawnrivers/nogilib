@@ -635,6 +635,11 @@ const dictionary = {
     ja: 'プロフィール写真',
     zh: '照片',
   },
+  'skip to content': {
+    en: 'skip to content',
+    ja: 'コンテンツまで移動',
+    zh: '跳转到内容',
+  },
 };
 
 export type DictionaryKey = keyof typeof dictionary;
