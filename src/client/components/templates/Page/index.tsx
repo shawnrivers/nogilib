@@ -63,11 +63,13 @@ const SkipLink: React.FC = () => {
         top: ${commonStyles.spacing.xs};
         left: ${commonStyles.spacing.s};
         transform: translateY(-170%);
-        transition: transform 0.3s;
+        opacity: 0;
+        transition: all 0.3s;
         z-index: ${ELEVATION_DARK[componentElevationKey.skipLink].zIndex};
         position: absolute;
 
         &:focus {
+          opacity: 1;
           transform: translateY(0%);
         }
       `}
