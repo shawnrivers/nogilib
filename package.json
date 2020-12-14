@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "@emotion/core": "^10.1.1",
-    "@emotion/react": "^11.1.1",
+    "@emotion/react": "^11.1.2",
     "focus-visible": "^5.2.0",
     "framer-motion": "^2.9.5",
     "gatsby": "^2.28.2",
