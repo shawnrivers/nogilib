@@ -65,7 +65,7 @@
     "gatsby-plugin-react-helmet": "^3.6.0",
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
     "gatsby-plugin-resolve-src": "^2.1.0",
-    "gatsby-plugin-sharp": "^2.10.1",
+    "gatsby-plugin-sharp": "^2.11.0",
     "gatsby-plugin-typescript": "^2.8.0",
     "gatsby-source-filesystem": "^2.7.0",
     "gatsby-transformer-json": "^2.7.0",
