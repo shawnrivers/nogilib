@@ -51,7 +51,7 @@
     "@emotion/react": "^11.1.2",
     "focus-visible": "^5.2.0",
     "framer-motion": "^2.9.5",
-    "gatsby": "^2.29.0",
+    "gatsby": "^2.29.1",
     "gatsby-image": "^2.8.0",
     "gatsby-plugin-emotion": "^5.1.0",
     "gatsby-plugin-layout": "^1.7.0",
