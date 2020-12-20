@@ -39,41 +39,8 @@ jobs:
           key: npm-packages-{{ checksum "package-lock.json" }}
           paths:
             - ~/.cache/npm
-  build-deploy:
-    docker:
-      - image: circleci/node:14.15.0-browsers
-    working_directory: ~/repo
-    steps:
-      - checkout
-      - restore_cache:
-          name: Restore dependencies cache
-          keys:
-            - npm-packages-{{ checksum "package-lock.json" }}
-      - run:
-          name: Install dependencies
-          command: npm install
-      - run:
-          name: Set up GitHub user name
-          command: git config user.name $GITHUB_NAME
-      - run:
-          name: Set up GitHub user email
-          command: git config user.email $GITHUB_EMAIL
-      - run:
-          name: Deploy
-          command: npm run deploy
-      - save_cache:
-          name: Save dependencies Cache
-          key: npm-packages-{{ checksum "package-lock.json" }}
-          paths:
-            - ~/.cache/npm
 workflows:
   version: 2
   deploy:
     jobs:
       - check
-      - build-deploy:
-          requires:
-            - check
-          filters:
-            branches:
-              only: master
