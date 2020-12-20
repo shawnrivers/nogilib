@@ -45,14 +45,16 @@ const Image: React.FC<ImageProps> = props => {
         <GatsbyImage
           src={src}
           alt={alt}
-          objectFit="cover"
-          objectPosition="top"
           css={css`
             display: block;
             width: 100%;
             height: 100%;
             transform-origin: center;
           `}
+          imgStyle={{
+            objectFit: 'cover',
+            objectPosition: 'center top',
+          }}
           {...restProps}
         />
       </div>
