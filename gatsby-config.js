@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: 'NOGILIB',
-    siteUrl: 'https://shawnrivers.github.io/nogilib/',
+    siteUrl: 'https://nogilib.com',
     description:
       'NOGILIB is a web app for showing the information about Nogizaka46 in a user-friendly way.',
   },
