@@ -8,7 +8,6 @@ module.exports = {
     description:
       'NOGILIB is a web app for showing the information about Nogizaka46 in a user-friendly way.',
   },
-  pathPrefix: '/nogilib',
   plugins: [
     {
       resolve: 'gatsby-plugin-typescript',
@@ -61,7 +60,7 @@ module.exports = {
       options: {
         name: 'NOGILIB',
         short_name: 'NOGILIB',
-        start_url: '/nogilib/',
+        start_url: '/discography',
         background_color: '#ffffff',
         theme_color: '#ffffff',
         display: 'standalone',
