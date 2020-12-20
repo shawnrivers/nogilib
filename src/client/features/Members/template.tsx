@@ -10,7 +10,7 @@ import { getMembersUrl, getMemberUrl } from 'client/utils/urls';
 import { useTranslations } from 'client/hooks/useTranslations';
 import { useIntl } from 'client/hooks/useIntl';
 import { MembersPageProps } from 'pages/members';
-import { useAppContext } from 'client/hooks/useAppContext';
+import { useAppContext } from 'client/store/app/useAppContext';
 import { PageHelmet } from 'client/layouts/PageHelmet';
 
 export const MembersPage: React.FC<MembersPageProps> = props => {

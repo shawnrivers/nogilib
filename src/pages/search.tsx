@@ -7,7 +7,7 @@ import { MemberResult } from 'server/actors/Members/models';
 import { DiscographyResult } from 'server/actors/Discography/models';
 import { SongResult } from 'server/actors/Songs/models';
 import { useTranslations } from 'client/hooks/useTranslations';
-import { useAppContext } from 'client/hooks/useAppContext';
+import { useAppContext } from 'client/store/app/useAppContext';
 import { useIntl } from 'client/hooks/useIntl';
 
 export type MemberDoc = {

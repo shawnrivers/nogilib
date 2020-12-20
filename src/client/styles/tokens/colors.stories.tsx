@@ -9,7 +9,7 @@ import {
 } from './colors';
 import { Typography } from 'client/components/atoms/Typography';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
-import { useAppContext } from 'client/hooks/useAppContext';
+import { useAppContext } from 'client/store/app/useAppContext';
 import { ThemeDecorator } from 'storybook/ThemeDecorator';
 
 export default {
