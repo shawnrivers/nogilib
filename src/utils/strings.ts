@@ -38,3 +38,11 @@ export const toCdNumber = (num: string | number): string => {
     return num.toString();
   }
 };
+
+export function capitalizeFirstLetter(text: string): string {
+  return text[0].toUpperCase() + text.slice(1);
+}
+
+export function capitalizeText(text: string): string {
+  return text.split(' ').map(capitalizeFirstLetter).join(' ');
+}
