@@ -18,6 +18,7 @@ import { InfoItemLabel } from 'client/components/molecules/typography/info/InfoI
 import { InfoItemValue } from 'client/components/molecules/typography/info/InfoItemValue';
 import { SectionSubtitle } from 'client/components/molecules/typography/SectionSubtitle';
 import { SongPageProps } from 'client/features/Song/container';
+import { PageHelmet } from 'client/layouts/PageHelmet';
 
 const RowContainer: React.FC = props => (
   <ul
@@ -92,196 +93,204 @@ const PerformersTag: React.FC<SongPageProps['performersTag']> = props => {
   return <Hashtag lang="ja">{name}</Hashtag>;
 };
 
-export const SongPage: React.FC<SongPageProps> = ({
-  title,
-  type,
-  songTags,
-  artwork,
-  performersTag,
-  formation,
-  creators,
-}) => {
+export const SongPage: React.FC<SongPageProps> = props => {
   useScrollRestoration();
+
+  const {
+    title,
+    type,
+    songTags,
+    artwork,
+    performersTag,
+    formation,
+    creators,
+  } = props;
   const theme = useAppTheme();
   const { Translation, getTranslation } = useTranslations();
   const { formatWords, formatNth, formatWordsWithCommas } = useIntl();
 
   return (
-    <PageContent
-      title={{ text: title, lang: 'ja' }}
-      showBackButton
-      titleTextTransform="initial"
-    >
-      <React.Fragment>
-        <div
-          css={css`
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 0.8em;
-          `}
-        >
-          <Hashtag
+    <>
+      <PageHelmet title={title} options={{ textTransform: 'none' }} />
+      <PageContent
+        title={{ text: title, lang: 'ja' }}
+        showBackButton
+        titleTextTransform="initial"
+      >
+        <>
+          <div
             css={css`
-              &:not(:first-of-type) {
-                margin-left: 0.4em;
-              }
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              margin-top: 0.8em;
             `}
           >
-            <Translation text={type as any} />
-          </Hashtag>
-          {songTags.map((tag, index) => (
             <Hashtag
-              key={index}
               css={css`
                 &:not(:first-of-type) {
                   margin-left: 0.4em;
                 }
               `}
             >
-              {tag}
+              <Translation text={type as any} />
             </Hashtag>
-          ))}
-        </div>
-        <section>
-          <TextDivider text={<Translation text="info" />} element="h2" />
-          <div
-            css={css`
-              display: flex;
-              flex-wrap: wrap;
-              align-items: center;
-              justify-content: center;
-
-              & > * {
-                margin: ${theme.spacing.s};
-              }
-            `}
-          >
-            <GridArtworkImage
-              src={artwork}
-              alt={formatWords([title, getTranslation('artwork')])}
-              shadow
-              fixedSize
-              css={css`
-                width: 200px;
-                height: 200px;
-              `}
-            />
-            {creators.lyrics.length +
-              creators.compose.length +
-              creators.arrange.length +
-              creators.direct.length >
-              0 && (
-              <div
+            {songTags.map((tag, index) => (
+              <Hashtag
+                key={index}
                 css={css`
-                  display: grid;
-                  grid-template-columns: max-content auto;
-                  grid-template-rows: auto;
-                  grid-gap: ${theme.spacing.m};
-                  margin-top: 0.5em;
-                  align-items: center;
+                  &:not(:first-of-type) {
+                    margin-left: 0.4em;
+                  }
                 `}
               >
-                {creators.lyrics.length > 0 && (
-                  <React.Fragment>
-                    <InfoItemLabel>
-                      <Translation text="lyrics" />
-                    </InfoItemLabel>
-                    <InfoItemValue lang="ja">
-                      {formatWordsWithCommas(creators.lyrics)}
-                    </InfoItemValue>
-                  </React.Fragment>
-                )}
-                {creators.compose.length > 0 && (
-                  <React.Fragment>
-                    <InfoItemLabel>
-                      <Translation text="compose" />
-                    </InfoItemLabel>
-                    <InfoItemValue lang="ja">
-                      {formatWordsWithCommas(creators.compose)}
-                    </InfoItemValue>
-                  </React.Fragment>
-                )}
-                {creators.arrange.length > 0 && (
-                  <React.Fragment>
-                    <InfoItemLabel>
-                      <Translation text="arrange" />
-                    </InfoItemLabel>
-                    <InfoItemValue lang="ja">
-                      {formatWordsWithCommas(creators.arrange)}
-                    </InfoItemValue>
-                  </React.Fragment>
-                )}
-                {creators.direct.length > 0 && (
-                  <React.Fragment>
-                    <InfoItemLabel>
-                      <Translation text="direct" />
-                    </InfoItemLabel>
-                    <InfoItemValue lang="ja">
-                      {formatWordsWithCommas(creators.direct)}
-                    </InfoItemValue>
-                  </React.Fragment>
-                )}
-              </div>
-            )}
+                {tag}
+              </Hashtag>
+            ))}
           </div>
-        </section>
-        <section>
-          <TextDivider text={<Translation text="performers" />} element="h2" />
-          <div>
-            {formation.length > 0 ? (
-              <section>
+          <section>
+            <TextDivider text={<Translation text="info" />} element="h2" />
+            <div
+              css={css`
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+
+                & > * {
+                  margin: ${theme.spacing.s};
+                }
+              `}
+            >
+              <GridArtworkImage
+                src={artwork}
+                alt={formatWords([title, getTranslation('artwork')])}
+                shadow
+                fixedSize
+                css={css`
+                  width: 200px;
+                  height: 200px;
+                `}
+              />
+              {creators.lyrics.length +
+                creators.compose.length +
+                creators.arrange.length +
+                creators.direct.length >
+                0 && (
                 <div
                   css={css`
-                    display: flex;
-                    justify-content: center;
+                    display: grid;
+                    grid-template-columns: max-content auto;
+                    grid-template-rows: auto;
+                    grid-gap: ${theme.spacing.m};
+                    margin-top: 0.5em;
+                    align-items: center;
                   `}
                 >
-                  {performersTag.name !== '' ? (
-                    <PerformersTag {...performersTag} />
-                  ) : null}
+                  {creators.lyrics.length > 0 && (
+                    <>
+                      <InfoItemLabel>
+                        <Translation text="lyrics" />
+                      </InfoItemLabel>
+                      <InfoItemValue lang="ja">
+                        {formatWordsWithCommas(creators.lyrics)}
+                      </InfoItemValue>
+                    </>
+                  )}
+                  {creators.compose.length > 0 && (
+                    <>
+                      <InfoItemLabel>
+                        <Translation text="compose" />
+                      </InfoItemLabel>
+                      <InfoItemValue lang="ja">
+                        {formatWordsWithCommas(creators.compose)}
+                      </InfoItemValue>
+                    </>
+                  )}
+                  {creators.arrange.length > 0 && (
+                    <>
+                      <InfoItemLabel>
+                        <Translation text="arrange" />
+                      </InfoItemLabel>
+                      <InfoItemValue lang="ja">
+                        {formatWordsWithCommas(creators.arrange)}
+                      </InfoItemValue>
+                    </>
+                  )}
+                  {creators.direct.length > 0 && (
+                    <>
+                      <InfoItemLabel>
+                        <Translation text="direct" />
+                      </InfoItemLabel>
+                      <InfoItemValue lang="ja">
+                        {formatWordsWithCommas(creators.direct)}
+                      </InfoItemValue>
+                    </>
+                  )}
                 </div>
-                <div
-                  css={css`
-                    margin-top: 1em;
-                  `}
-                >
-                  {formation.map((row, index) => (
-                    <section key={index}>
-                      {formation.length > 1 && (
-                        <SectionSubtitle
-                          element="h3"
-                          css={css`
-                            margin-top: 0.5em;
-                          `}
-                        >
-                          {formatNth({ num: index + 1, unit: 'row' })}
-                        </SectionSubtitle>
-                      )}
-                      <RowContainer>
-                        {row.map(member => (
-                          <li key={member.name}>
-                            <PerformerCard
-                              nameNotations={member.nameNotations}
-                              profileImage={member.profileImage}
-                              position={member.position}
-                              to={
-                                member.isLink
-                                  ? getMemberUrl(member.name)
-                                  : undefined
-                              }
-                            />
-                          </li>
-                        ))}
-                      </RowContainer>
-                    </section>
-                  ))}
-                </div>
-              </section>
-            ) : null}
-          </div>
-        </section>
-      </React.Fragment>
-    </PageContent>
+              )}
+            </div>
+          </section>
+          <section>
+            <TextDivider
+              text={<Translation text="performers" />}
+              element="h2"
+            />
+            <div>
+              {formation.length > 0 ? (
+                <section>
+                  <div
+                    css={css`
+                      display: flex;
+                      justify-content: center;
+                    `}
+                  >
+                    {performersTag.name !== '' ? (
+                      <PerformersTag {...performersTag} />
+                    ) : null}
+                  </div>
+                  <div
+                    css={css`
+                      margin-top: 1em;
+                    `}
+                  >
+                    {formation.map((row, index) => (
+                      <section key={index}>
+                        {formation.length > 1 && (
+                          <SectionSubtitle
+                            element="h3"
+                            css={css`
+                              margin-top: 0.5em;
+                            `}
+                          >
+                            {formatNth({ num: index + 1, unit: 'row' })}
+                          </SectionSubtitle>
+                        )}
+                        <RowContainer>
+                          {row.map(member => (
+                            <li key={member.name}>
+                              <PerformerCard
+                                nameNotations={member.nameNotations}
+                                profileImage={member.profileImage}
+                                position={member.position}
+                                to={
+                                  member.isLink
+                                    ? getMemberUrl(member.name)
+                                    : undefined
+                                }
+                              />
+                            </li>
+                          ))}
+                        </RowContainer>
+                      </section>
+                    ))}
+                  </div>
+                </section>
+              ) : null}
+            </div>
+          </section>
+        </>
+      </PageContent>
+    </>
   );
 };

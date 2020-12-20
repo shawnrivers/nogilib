@@ -10,6 +10,7 @@ import { PageContent } from 'client/components/templates/Page';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import { useTranslations } from 'client/hooks/useTranslations';
 import { useAppContext } from 'client/hooks/useAppContext';
+import { PageHelmet } from 'client/layouts/PageHelmet';
 
 export type SearchProps = {
   query: string;
@@ -39,98 +40,101 @@ export const Search: React.FC<SearchProps> = props => {
   const { language } = useAppContext();
 
   return (
-    <PageContent title={{ text: getTranslation('search'), lang: language }}>
-      <div
-        css={css`
-          margin-top: ${commonStyles.spacing.xl};
-        `}
-      >
+    <>
+      <PageHelmet title={getTranslation('search')} />
+      <PageContent title={{ text: getTranslation('search'), lang: language }}>
         <div
           css={css`
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            max-width: 30em;
-            margin: auto;
+            margin-top: ${commonStyles.spacing.xl};
           `}
         >
-          <Typography
-            variant="body1"
-            element="div"
+          <div
             css={css`
-              width: 100%;
-              margin-left: 0.5em;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              max-width: 30em;
+              margin: auto;
             `}
           >
-            <input
-              type="text"
-              value={query}
-              onChange={search}
-              placeholder={getTranslation(
-                'Search song title, member name, etc.'
-              )}
+            <Typography
+              variant="body1"
+              element="div"
               css={css`
                 width: 100%;
-                border-width: 2px;
-                border-style: solid;
-                border-color: ${theme.colors.theme.onBackground.variant1};
-                border-radius: ${theme.borderRadius.xl};
-                padding: ${theme.spacing.s};
-                transition: border-color 0.2s linear;
-                box-sizing: border-box;
-                color: inherit;
-                font-size: inherit;
-                font-family: inherit;
-                font-weight: inherit;
-
-                &::placeholder {
-                  color: ${theme.colors.theme.onBackground.variant1};
-                }
-
-                &.focus-visible {
-                  border-color: ${theme.colors.theme.onBackground.standard};
-                }
+                margin-left: 0.5em;
               `}
-            />
-          </Typography>
-        </div>
-        {hasNoResult ? (
-          <Typography
-            variant="em1"
+            >
+              <input
+                type="text"
+                value={query}
+                onChange={search}
+                placeholder={getTranslation(
+                  'Search song title, member name, etc.'
+                )}
+                css={css`
+                  width: 100%;
+                  border-width: 2px;
+                  border-style: solid;
+                  border-color: ${theme.colors.theme.onBackground.variant1};
+                  border-radius: ${theme.borderRadius.xl};
+                  padding: ${theme.spacing.s};
+                  transition: border-color 0.2s linear;
+                  box-sizing: border-box;
+                  color: inherit;
+                  font-size: inherit;
+                  font-family: inherit;
+                  font-weight: inherit;
+
+                  &::placeholder {
+                    color: ${theme.colors.theme.onBackground.variant1};
+                  }
+
+                  &.focus-visible {
+                    border-color: ${theme.colors.theme.onBackground.standard};
+                  }
+                `}
+              />
+            </Typography>
+          </div>
+          {hasNoResult ? (
+            <Typography
+              variant="em1"
+              css={css`
+                text-align: center;
+                text-transform: capitalize;
+                margin-top: 2em;
+              `}
+            >
+              <Translation text="no result" />
+            </Typography>
+          ) : null}
+          <SearchResultCategory
+            title="members"
+            titleElement="h2"
+            results={results.members}
             css={css`
-              text-align: center;
-              text-transform: capitalize;
-              margin-top: 2em;
+              margin-top: 2rem;
             `}
-          >
-            <Translation text="no result" />
-          </Typography>
-        ) : null}
-        <SearchResultCategory
-          title="members"
-          titleElement="h2"
-          results={results.members}
-          css={css`
-            margin-top: 2rem;
-          `}
-        />
-        <SearchResultCategory
-          title="cds"
-          titleElement="h2"
-          results={results.cds}
-          css={css`
-            margin-top: 2rem;
-          `}
-        />
-        <SearchResultCategory
-          title="songs"
-          titleElement="h2"
-          results={results.songs}
-          css={css`
-            margin-top: 2rem;
-          `}
-        />
-      </div>
-    </PageContent>
+          />
+          <SearchResultCategory
+            title="cds"
+            titleElement="h2"
+            results={results.cds}
+            css={css`
+              margin-top: 2rem;
+            `}
+          />
+          <SearchResultCategory
+            title="songs"
+            titleElement="h2"
+            results={results.songs}
+            css={css`
+              margin-top: 2rem;
+            `}
+          />
+        </div>
+      </PageContent>
+    </>
   );
 };
