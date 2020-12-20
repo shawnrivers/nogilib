@@ -14,6 +14,7 @@ import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import {
   getDiscographyUrl,
+  getHomeUrl,
   getMembersUrl,
   getSearchUrl,
 } from 'client/utils/urls';
@@ -293,7 +294,7 @@ export const NavigationBar: React.FC<{
             `}
           >
             <TextLink
-              to={getDiscographyUrl()}
+              to={getHomeUrl()}
               typographyVariant="h6"
               showUnderline={false}
             >

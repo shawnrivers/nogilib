@@ -1,3 +1,5 @@
+export const getHomeUrl = () => '/';
+
 export const FILTER_PARAM_KEY = 'filter';
 
 export type DiscographyUrlFilter = 'all' | 'singles' | 'albums';
