@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://nogilib.com/discography">
+  <a href="https://nogilib.com">
     <img alt="Gatsby" src="https://raw.githubusercontent.com/shawnrivers/nogilib/master/src/assets/images/favicon-512.png" width="128" />
   </a>
 </p>
@@ -7,7 +7,7 @@
   NOGILIB
 </h1>
 
-**[App link](https://nogilib.com/discography)**
+**[App link](https://nogilib.com)**
 
 **NOGILIB** is a web application for showing the information about [Nogizaka46](http://www.nogizaka46.com/) in a user-friendly way.
 
