@@ -7,7 +7,12 @@ import {
   LIGHT_COLOR_THEME,
   DARK_COLOR_THEME,
 } from './colors';
-import { Elevation, ELEVATION_LIGHT, ELEVATION_DARK } from './elevation';
+import {
+  Elevation,
+  ELEVATION_LIGHT,
+  ELEVATION_DARK,
+  COMMON_ELEVATIONS,
+} from './elevation';
 import { SIZES } from './sizes';
 import { SPACING } from './spacing';
 import { TYPOGRAPHY } from './typography';
@@ -21,6 +26,7 @@ export type Theme = {
   elevation: Elevation;
   breakPoints: typeof BREAK_POINTS;
   sizes: typeof SIZES;
+  elevations: typeof COMMON_ELEVATIONS;
 };
 
 export const commonStyles: Omit<Theme, 'key' | 'colors' | 'elevation'> = {
@@ -29,6 +35,7 @@ export const commonStyles: Omit<Theme, 'key' | 'colors' | 'elevation'> = {
   borderRadius: BORDER_RADIUS,
   breakPoints: BREAK_POINTS,
   sizes: SIZES,
+  elevations: COMMON_ELEVATIONS,
 };
 
 const lightTheme: Theme = {
