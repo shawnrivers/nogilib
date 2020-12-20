@@ -505,6 +505,13 @@ const dictionary = {
     ja: '乃木坂46の情報をわかりやすく提示するウェブアプリケーション',
     zh: '简洁地显示乃木坂46的信息的网页应用',
   },
+  'NOGILIB is a web app for showing the information about Nogizaka46 in a user-friendly way.': {
+    en:
+      'NOGILIB is a web app for showing the information about Nogizaka46 in a user-friendly way.',
+    ja:
+      'NOGILIBは乃木坂46の情報をわかりやすく提示するウェブアプリケーションです。',
+    zh: 'NOGILIB是一个简洁地显示乃木坂46的信息的网页应用。',
+  },
   CD: {
     en: 'CD',
     ja: 'CD',
