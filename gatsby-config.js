@@ -127,6 +127,14 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
+      options: {
+        disable: !process.env.ANALYZE_BUNDLE_SIZE,
+        analyzerMode: 'server',
+        analyzerPort: 8888,
+      },
+    },
     'gatsby-plugin-remove-serviceworker',
   ],
 };
