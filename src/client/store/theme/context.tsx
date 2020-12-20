@@ -4,7 +4,7 @@ import * as React from 'react';
 import { ThemeProvider as EmotionThemeProvider } from '@emotion/react';
 import { themes } from 'client/styles/tokens';
 import { useDarkModeMediaQuery } from 'client/hooks/useDarkModeMediaQuery';
-import { useAppContext } from 'client/hooks/useAppContext';
+import { useAppContext } from 'client/store/app/useAppContext';
 import { useLocalStorageForContext } from 'client/hooks/useLocalStorageForContext';
 import 'focus-visible';
 

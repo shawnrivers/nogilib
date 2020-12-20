@@ -13,7 +13,7 @@ import {
 } from 'client/utils/urls';
 import { CdGroupByYear } from 'pages/discography';
 import { useTranslations } from 'client/hooks/useTranslations';
-import { useAppContext } from 'client/hooks/useAppContext';
+import { useAppContext } from 'client/store/app/useAppContext';
 import { PageHelmet } from 'client/layouts/PageHelmet';
 
 export type DiscographyPageProps = {

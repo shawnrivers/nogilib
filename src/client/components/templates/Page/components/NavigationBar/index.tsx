@@ -8,7 +8,7 @@ import { RadioCheckIcon } from 'client/components/atoms/icons/RadioCheckIcon';
 import { SettingsIcon } from 'client/components/atoms/icons/SettingsIcon';
 import { Surface } from 'client/components/atoms/Surface';
 import { Typography } from 'client/components/atoms/Typography';
-import { useAppContext } from 'client/hooks/useAppContext';
+import { useAppContext } from 'client/store/app/useAppContext';
 import { useOnClickOutside } from 'client/hooks/useOnClickOutside';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useAppContext } from 'client/hooks/useAppContext';
+import { useAppContext } from 'client/store/app/useAppContext';
 import { ThemeMode } from 'client/types/themeMode';
 import {
   Language,

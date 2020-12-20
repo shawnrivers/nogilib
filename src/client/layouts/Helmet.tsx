@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Helmet as ReactHelmet } from 'react-helmet';
-import { useAppContext } from 'client/hooks/useAppContext';
+import { useAppContext } from 'client/store/app/useAppContext';
 import { useSiteMetadata } from 'client/hooks/useSiteMetadata';
 
 export const Helmet: React.FC = () => {
