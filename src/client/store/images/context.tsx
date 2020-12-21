@@ -28,9 +28,7 @@ export const AllImagesContextProvider: React.FC = props => {
           relativePath
           childImageSharp {
             fluid {
-              src
-              srcSet
-              sizes
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }

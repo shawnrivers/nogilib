@@ -1,12 +1,9 @@
+import { FluidObject } from 'gatsby-image';
+
 export type AllImages = {
   relativePath: string;
   childImageSharp: {
-    fluid: {
-      src: string;
-      srcSet: string;
-      aspectRatio: number;
-      sizes: string;
-    };
+    fluid: FluidObject;
   };
 }[];
 
