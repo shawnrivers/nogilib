@@ -51,10 +51,7 @@ const Image: React.FC<ImageProps> = props => {
             height: 100%;
             transform-origin: center;
           `}
-          imgStyle={{
-            objectFit: 'cover',
-            objectPosition: 'center top',
-          }}
+          imgStyle={{ objectFit: 'cover', objectPosition: 'center top' }}
           {...restProps}
         />
       </div>

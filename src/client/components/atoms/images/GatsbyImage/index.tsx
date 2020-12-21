@@ -7,6 +7,7 @@ export type GatsbyImageProps = {
 } & Omit<React.ComponentProps<typeof Img>, 'fluid'>;
 
 export const GatsbyImage: React.FC<GatsbyImageProps> = ({ src, ...props }) => {
+  const { imgStyle, ...restProps } = props;
   const { allImages } = useAllImagesContext();
 
   const image = React.useMemo(
@@ -15,6 +16,13 @@ export const GatsbyImage: React.FC<GatsbyImageProps> = ({ src, ...props }) => {
   );
 
   return image?.childImageSharp.fluid ? (
-    <Img fluid={image?.childImageSharp.fluid} {...props} />
+    <Img
+      fluid={image?.childImageSharp.fluid}
+      imgStyle={{
+        transition: 'none',
+        ...imgStyle,
+      }}
+      {...restProps}
+    />
   ) : null;
 };
