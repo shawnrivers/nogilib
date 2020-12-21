@@ -31,9 +31,6 @@ jobs:
       - run:
           name: Build
           command: npm run build
-      - run:
-          name: Lighthouse
-          command: npm run lighthouse
       - save_cache:
           name: Save dependencies cache
           key: npm-packages-{{ checksum "package-lock.json" }}
