@@ -7,7 +7,7 @@ import { MemberResult } from 'server/actors/Members/models';
 import { DiscographyResult } from 'server/actors/Discography/models';
 import { SongResult } from 'server/actors/Songs/models';
 import { useTranslations } from 'client/hooks/useTranslations';
-import { useAppContext } from 'client/store/app/hook';
+import { useLanguageContext } from 'client/store/language/hook';
 import { useIntl } from 'client/hooks/useIntl';
 
 export type MemberDoc = {
@@ -58,7 +58,7 @@ export const SearchPageContainer: React.FC = () => {
   const [results, setResults] = React.useState<SearchDoc[]>([]);
   const [isSearching, setIsSearching] = React.useState(false);
 
-  const { language } = useAppContext();
+  const { language } = useLanguageContext();
   const { getTranslation } = useTranslations();
   const { formatMemberName } = useIntl();
 

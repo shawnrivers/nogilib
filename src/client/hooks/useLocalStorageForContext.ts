@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useAppContext } from 'client/store/app/hook';
+import { useLanguageContext } from 'client/store/language/hook';
 import { ThemeMode } from 'client/types/themeMode';
 import {
   Language,
@@ -9,7 +9,7 @@ import {
 import { useThemeContext } from 'client/store/theme/hook';
 
 export const useLocalStorageForContext = () => {
-  const { setLanguage } = useAppContext();
+  const { setLanguage } = useLanguageContext();
   const { setTheme } = useThemeContext();
 
   React.useEffect(() => {

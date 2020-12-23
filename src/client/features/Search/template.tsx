@@ -9,7 +9,7 @@ import { Typography } from 'client/components/atoms/Typography';
 import { PageContent } from 'client/components/templates/Page';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import { useTranslations } from 'client/hooks/useTranslations';
-import { useAppContext } from 'client/store/app/hook';
+import { useLanguageContext } from 'client/store/language/hook';
 import { PageHelmet } from 'client/layouts/PageHelmet';
 
 export type SearchProps = {
@@ -37,7 +37,7 @@ export const Search: React.FC<SearchProps> = props => {
 
   const theme = useAppTheme();
   const { Translation, getTranslation } = useTranslations();
-  const { language } = useAppContext();
+  const { language } = useLanguageContext();
 
   return (
     <>

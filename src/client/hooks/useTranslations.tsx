@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useAppContext } from 'client/store/app/hook';
+import { useLanguageContext } from 'client/store/language/hook';
 import { DictionaryKey, messages } from 'client/i18n/translations';
 import { Language } from 'client/types/language';
 
@@ -16,7 +16,7 @@ export const useTranslations = (): {
   getTranslation: (text: DictionaryKey) => string;
   Translation: React.FC<{ text: DictionaryKey }>;
 } => {
-  const { language } = useAppContext();
+  const { language } = useLanguageContext();
 
   const getTranslation = React.useCallback(
     (text: DictionaryKey) => messages[language][text] ?? text,

@@ -13,13 +13,13 @@ import { useTranslations } from 'client/hooks/useTranslations';
 import { HorizontalCard } from 'client/components/molecules/cards/HorizontalCard';
 import { useIntl } from 'client/hooks/useIntl';
 import { GridImage } from 'client/components/atoms/images/GirdImage';
-import { useAppContext } from 'client/store/app/hook';
+import { useLanguageContext } from 'client/store/language/hook';
 import { PageHelmet } from 'client/layouts/PageHelmet';
 
 export const AlbumPage: React.FC<AlbumPageProps> = props => {
   const { Translation, getTranslation } = useTranslations();
   const { formatDate, formatMemberName } = useIntl();
-  const { language } = useAppContext();
+  const { language } = useLanguageContext();
 
   return (
     <>

@@ -13,7 +13,7 @@ import {
 } from 'client/utils/urls';
 import { CdGroupByYear } from 'pages/discography';
 import { useTranslations } from 'client/hooks/useTranslations';
-import { useAppContext } from 'client/store/app/hook';
+import { useLanguageContext } from 'client/store/language/hook';
 import { PageHelmet } from 'client/layouts/PageHelmet';
 
 export type DiscographyPageProps = {
@@ -24,7 +24,7 @@ export type DiscographyPageProps = {
 export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
   const { currentFilter, cdGroupsByYear } = props;
   const { Translation, getTranslation } = useTranslations();
-  const { language } = useAppContext();
+  const { language } = useLanguageContext();
 
   return (
     <>

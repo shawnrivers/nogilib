@@ -8,7 +8,7 @@ import { RadioCheckIcon } from 'client/components/atoms/icons/RadioCheckIcon';
 import { SettingsIcon } from 'client/components/atoms/icons/SettingsIcon';
 import { Surface } from 'client/components/atoms/Surface';
 import { Typography } from 'client/components/atoms/Typography';
-import { useAppContext } from 'client/store/app/hook';
+import { useLanguageContext } from 'client/store/language/hook';
 import { useOnClickOutside } from 'client/hooks/useOnClickOutside';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
@@ -105,7 +105,7 @@ const Settings: React.FC = () => {
   const settingsButtonRef = React.useRef<BaseButtonRef>(null);
 
   const theme = useAppTheme();
-  const { language, setLanguage } = useAppContext();
+  const { language, setLanguage } = useLanguageContext();
   const { themeMode, setTheme } = useThemeContext();
 
   const { getTranslation } = useTranslations();
