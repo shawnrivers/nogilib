@@ -17,6 +17,13 @@ import {
   ThemeColorsBackground,
 } from 'client/styles/tokens/colors';
 
+const baseStyles = css`
+  display: inline-block;
+  padding: ${commonStyles.spacing.xxs} ${commonStyles.spacing.xs};
+  border-radius: ${commonStyles.borderRadius.xs};
+  background: none;
+`;
+
 export type TextLinkProps = BaseLinkProps &
   Omit<TypographyProps, 'variant' | 'element'> & {
     typographyVariant?: TypographyProps['variant'];
@@ -47,16 +54,6 @@ export const TextLink = React.forwardRef<TextLinkRef, TextLinkProps>(
 
     const theme = useAppTheme();
 
-    const baseStyles = React.useMemo(
-      () => css`
-        display: inline-block;
-        padding: ${commonStyles.spacing.xxs} ${commonStyles.spacing.xs};
-        border-radius: ${commonStyles.borderRadius.xs};
-        background: none;
-      `,
-      []
-    );
-
     const styles = React.useMemo(
       () =>
         disabled
@@ -80,7 +77,6 @@ export const TextLink = React.forwardRef<TextLinkRef, TextLinkProps>(
             `,
       [
         disabled,
-        baseStyles,
         backgroundColorVariant,
         backgroundType,
         showUnderline,
