@@ -6,7 +6,7 @@ import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
 import { PositionType } from 'server/actors/Members/constants/position';
 import { PageContent } from 'client/components/templates/Page';
 import { Typography } from 'client/components/atoms/Typography';
-import { useAppContext } from 'client/store/app/hook';
+import { useLanguageContext } from 'client/store/language/hook';
 import { TextDivider } from 'client/components/molecules/TextDivider';
 import { useAppTheme, commonStyles } from 'client/styles/tokens';
 import { GridMemberImage } from 'client/components/atoms/images/GridMemberImage';
@@ -44,7 +44,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
     glowStickColor,
     gallery,
   } = props;
-  const { language } = useAppContext();
+  const { language } = useLanguageContext();
   const { Translation, getTranslation } = useTranslations();
   const theme = useAppTheme();
   const { formatWords, formatDate, formatWordsWithCommas } = useIntl();

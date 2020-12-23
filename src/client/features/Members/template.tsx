@@ -10,14 +10,14 @@ import { getMembersUrl, getMemberUrl } from 'client/utils/urls';
 import { useTranslations } from 'client/hooks/useTranslations';
 import { useIntl } from 'client/hooks/useIntl';
 import { MembersPageProps } from 'pages/members';
-import { useAppContext } from 'client/store/app/hook';
+import { useLanguageContext } from 'client/store/language/hook';
 import { PageHelmet } from 'client/layouts/PageHelmet';
 
 export const MembersPage: React.FC<MembersPageProps> = props => {
   const { currentFilter, memberGroupsByJoin } = props;
   const { getTranslation } = useTranslations();
   const { formatMemberName } = useIntl();
-  const { language } = useAppContext();
+  const { language } = useLanguageContext();
 
   return (
     <>

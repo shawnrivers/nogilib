@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useAppContext } from 'client/store/app/hook';
+import { useLanguageContext } from 'client/store/language/hook';
 import { MemberResult } from 'server/actors/Members/models';
 import {
   getLocalizedNth,
@@ -13,7 +13,7 @@ export type NameNotationsForIntl = Pick<
 >;
 
 export const useIntl = () => {
-  const { language } = useAppContext();
+  const { language } = useLanguageContext();
 
   const formatDate = React.useCallback(
     (date: string) => {

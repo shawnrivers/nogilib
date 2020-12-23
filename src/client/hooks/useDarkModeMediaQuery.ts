@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { Context } from 'client/store/app/context';
+import { LanguageContext } from 'client/store/language/context';
 
 type DarkModeQueryEventHandler = (event: MediaQueryListEvent) => void;
 
 export function useDarkModeMediaQuery() {
-  const { themeMode, setThemeKey } = React.useContext(Context);
+  const { themeMode, setThemeKey } = React.useContext(LanguageContext);
 
   React.useEffect(() => {
     const darkModeMediaQuery = window.matchMedia(
