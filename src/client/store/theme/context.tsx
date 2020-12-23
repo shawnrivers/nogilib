@@ -1,103 +1,78 @@
-/**@jsx jsx */
-import { jsx, css, Global } from '@emotion/core';
 import * as React from 'react';
-import { ThemeProvider as EmotionThemeProvider } from '@emotion/react';
-import { themes } from 'client/styles/tokens';
-import { useDarkModeMediaQuery } from 'client/hooks/useDarkModeMediaQuery';
-import { useAppContext } from 'client/store/app/useAppContext';
-import { useLocalStorageForContext } from 'client/hooks/useLocalStorageForContext';
-import 'focus-visible';
+import { ThemeMode } from 'client/types/themeMode';
+import { ThemeKey } from 'client/styles/tokens/colors';
+import { LOCAL_STORAGE_THEME_MODE_KEY } from 'client/utils/constants';
+import {
+  getInitialThemeState,
+  ThemeState,
+  themeReducer,
+} from 'client/store/theme/reducer';
 
-export const ThemeProvider: React.FC = props => {
-  const { themeKey } = useAppContext();
+type Context = ThemeState & {
+  setThemeKey(themeKey: ThemeKey): void;
+  setTheme(themeMode: ThemeMode): void;
+};
 
-  useDarkModeMediaQuery();
-  useLocalStorageForContext();
+export const ThemeContext = React.createContext<Context>({
+  ...getInitialThemeState(),
+  setThemeKey: () => null,
+  setTheme: () => null,
+});
+
+export const ThemeContextProvider: React.FC = props => {
+  const [state, dispatch] = React.useReducer(
+    themeReducer,
+    getInitialThemeState()
+  );
+
+  const setThemeMode = React.useCallback(
+    (themeMode: ThemeMode) => {
+      dispatch({
+        type: 'UPDATE_THEME_MODE',
+        payload: { themeMode },
+      });
+    },
+    [dispatch]
+  );
+
+  const setThemeKey = React.useCallback(
+    (themeKey: ThemeKey) => {
+      dispatch({
+        type: 'UPDATE_THEME_KEY',
+        payload: { themeKey },
+      });
+    },
+    [dispatch]
+  );
+
+  const setTheme = React.useCallback(
+    (themeMode: ThemeMode) => {
+      if (themeMode === 'light' || themeMode === 'dark') {
+        setThemeKey(themeMode);
+        setThemeMode(themeMode);
+        if (typeof localStorage !== 'undefined') {
+          localStorage.setItem(LOCAL_STORAGE_THEME_MODE_KEY, themeMode);
+        }
+      } else {
+        setThemeMode('auto');
+        if (typeof localStorage !== 'undefined') {
+          localStorage.setItem(LOCAL_STORAGE_THEME_MODE_KEY, 'auto');
+        }
+      }
+    },
+    [setThemeKey, setThemeMode]
+  );
 
   return (
-    <EmotionThemeProvider theme={themes[themeKey]}>
-      <Global
-        styles={css`
-          h1,
-          h2,
-          h3,
-          h4,
-          h5,
-          h6,
-          p,
-          ul,
-          ol,
-          li {
-            margin-block-end: 0;
-            margin-block-start: 0;
-            margin-inline-end: 0;
-            margin-inline-start: 0;
-          }
-
-          body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-              'Oxygen', 'Ubuntu', 'Helvetica Neue', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-          }
-
-          a {
-            color: inherit;
-            text-decoration: inherit;
-            outline: inherit;
-
-            :focus {
-              outline-offset: 0;
-            }
-          }
-
-          ul,
-          ol {
-            list-style-type: none;
-            padding-inline-start: 0;
-          }
-
-          button {
-            background: none;
-            border: none;
-            color: inherit;
-            cursor: pointer;
-            font: inherit;
-            margin: 0;
-            outline: inherit;
-            padding: 0;
-          }
-
-          input {
-            margin: 0;
-            border: 0;
-            padding: 0;
-            display: inline-block;
-            vertical-align: middle;
-            white-space: normal;
-            background: none;
-          }
-
-          .js-focus-visible :focus:not(.focus-visible) {
-            outline: none;
-          }
-
-          .focus-visible {
-            outline: auto;
-          }
-        `}
-      />
-      <div
-        css={css`
-          & * {
-            transition-property: background-color, color;
-            transition-duration: 0.5s;
-            transition-timing-function: ease-in-out;
-          }
-        `}
-      >
-        {props.children}
-      </div>
-    </EmotionThemeProvider>
+    <ThemeContext.Provider
+      value={{
+        themeMode: state.themeMode,
+        themeKey: state.themeKey,
+        setThemeKey,
+        setTheme,
+      }}
+    >
+      {props.children}
+    </ThemeContext.Provider>
   );
 };

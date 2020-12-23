@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useAppContext } from 'client/store/app/useAppContext';
+import { useAppContext } from 'client/store/app/hook';
 import { MemberResult } from 'server/actors/Members/models';
 import {
   getLocalizedNth,

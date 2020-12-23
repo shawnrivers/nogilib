@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useAppContext } from 'client/store/app/useAppContext';
+import { useAppContext } from 'client/store/app/hook';
 import { DictionaryKey, messages } from 'client/i18n/translations';
 import { Language } from 'client/types/language';
 
