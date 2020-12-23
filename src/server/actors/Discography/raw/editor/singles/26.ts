@@ -20,6 +20,18 @@ export const TWENTY_SIXTH_SINGLE = createSingleRaw({
       title: SONGS['Out of the blue'].title,
       inCdType: ['A'],
     },
+    {
+      title: SONGS['口ほどにもないKISS'].title,
+      inCdType: ['A'],
+    },
+    {
+      title: SONGS['明日がある理由'].title,
+      inCdType: ['A'],
+    },
+    {
+      title: SONGS['Wilderness world'].title,
+      inCdType: ['A'],
+    },
   ],
   underMembers: [
     MemberNameKey.ItouJunna,
