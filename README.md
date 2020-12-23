@@ -100,3 +100,8 @@
 - [川後陽菜 OFFICIAL SITE](https://kawagopro.com/)
 - [生駒里奈オフィシャルサイト](https://ikomarina.com/)
 - [SIS company inc. Web](http://www.siscompany.com/02manage/49inoue/)
+
+## Copyrights
+
+I do not own any Copyrights of members or CD artworks images used in this project.
+Therefore, please **DO NOT** use this project for any commercial use.
