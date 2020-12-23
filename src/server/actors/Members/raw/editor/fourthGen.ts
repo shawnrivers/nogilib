@@ -246,6 +246,10 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Tokyo,
     sites: [
       {
+        title: SocialMedia.Blog,
+        url: 'https://blog.nogizaka46.com/haruka.kuromi/',
+      },
+      {
         title: SocialMedia.FourthGenBlog,
         url: 'https://blog.nogizaka46.com/newfourth/',
       },
@@ -265,6 +269,10 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     bloodType: BloodType.B,
     origin: Birthplace.Iwate,
     sites: [
+      {
+        title: SocialMedia.Blog,
+        url: 'https://blog.nogizaka46.com/rika.satou/',
+      },
       {
         title: SocialMedia.FourthGenBlog,
         url: 'https://blog.nogizaka46.com/newfourth/',
@@ -286,6 +294,10 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Kanagawa,
     sites: [
       {
+        title: SocialMedia.Blog,
+        url: 'https://blog.nogizaka46.com/runa.hayashi/',
+      },
+      {
         title: SocialMedia.FourthGenBlog,
         url: 'https://blog.nogizaka46.com/newfourth/',
       },
@@ -306,6 +318,10 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Chiba,
     sites: [
       {
+        title: SocialMedia.Blog,
+        url: 'https://blog.nogizaka46.com/miyu.matsuo/',
+      },
+      {
         title: SocialMedia.FourthGenBlog,
         url: 'https://blog.nogizaka46.com/newfourth/',
       },
@@ -325,6 +341,10 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     bloodType: BloodType.A,
     origin: Birthplace.Kyoto,
     sites: [
+      {
+        title: SocialMedia.Blog,
+        url: 'https://blog.nogizaka46.com/nao.yumiki/',
+      },
       {
         title: SocialMedia.FourthGenBlog,
         url: 'https://blog.nogizaka46.com/newfourth/',
