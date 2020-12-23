@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://nogilib.com">
-    <img alt="Gatsby" src="https://raw.githubusercontent.com/shawnrivers/nogilib/master/src/assets/images/favicon-512.png" width="128" />
+    <img alt="Gatsby" src="https://raw.githubusercontent.com/shawnrivers/nogilib/main/src/assets/images/favicon-512.png" width="128" />
   </a>
 </p>
 <h1 align="center">
