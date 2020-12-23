@@ -3,13 +3,13 @@ import { css, jsx } from '@emotion/core';
 import * as React from 'react';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import {
-  GatsbyImage,
-  GatsbyImageProps,
-} from 'client/components/atoms/images/GatsbyImage';
+  DynamicImage,
+  DynamicImageProps,
+} from 'client/components/atoms/images/DynamicImage';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import { BorderRadiusKey } from 'client/styles/tokens/borderRadius';
 
-type ImageProps = GatsbyImageProps & {
+type ImageProps = DynamicImageProps & {
   borderRadius: BorderRadiusKey;
   shadow: boolean;
 };
@@ -42,7 +42,7 @@ const Image: React.FC<ImageProps> = props => {
           position: absolute;
         `}
       >
-        <GatsbyImage
+        <DynamicImage
           src={src}
           alt={alt}
           css={css`
