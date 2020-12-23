@@ -11,7 +11,7 @@ export type State = {
 export const getInitialState = (): State => ({
   themeMode: 'auto',
   themeKey: 'dark',
-  language: 'ja',
+  language: 'en',
 });
 
 type Action =
