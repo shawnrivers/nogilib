@@ -231,13 +231,13 @@ export const SongPage: React.FC<SongPageProps> = props => {
               )}
             </div>
           </section>
-          <section>
-            <TextDivider
-              text={<Translation text="performers" />}
-              element="h2"
-            />
-            <div>
-              {formation.length > 0 ? (
+          {formation.length > 0 && (
+            <section>
+              <TextDivider
+                text={<Translation text="performers" />}
+                element="h2"
+              />
+              <div>
                 <section>
                   <div
                     css={css`
@@ -286,9 +286,9 @@ export const SongPage: React.FC<SongPageProps> = props => {
                     ))}
                   </div>
                 </section>
-              ) : null}
-            </div>
-          </section>
+              </div>
+            </section>
+          )}
         </>
       </PageContent>
     </>
