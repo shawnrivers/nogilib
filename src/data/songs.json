@@ -11368,18 +11368,185 @@
         "kakehashisayaka",
         "kanagawasaya",
         "kitagawayuri",
+        "kuromiharuka",
+        "satourika",
         "shibatayuna",
         "seimiyarei",
         "tamuramayu",
         "tsutsuiayame",
         "hayakawaseira",
-        "yakubomio",
-        "kuromiharuka",
-        "satourika",
         "hayashiruna",
         "matsuomiyu",
+        "yakubomio",
         "yumikinao"
       ],
+      "secondRow": [],
+      "thirdRow": [],
+      "fourthRow": []
+    }
+  },
+  {
+    "title": "口ほどにもないKISS",
+    "key": "kuchihodonimonaikiss",
+    "single": {
+      "title": "僕は僕を好きになる",
+      "number": "26"
+    },
+    "albums": [],
+    "otherCds": [],
+    "artwork": "artworks/artwork_no_image.png",
+    "musicVideo": "",
+    "type": "under",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [],
+      "arrange": [],
+      "direct": []
+    },
+    "performers": {
+      "center": [
+        "sakaguchitamami"
+      ],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
+      "solo": "",
+      "unit": ""
+    },
+    "performersTag": {
+      "name": "under",
+      "album": {
+        "type": "single",
+        "number": "26"
+      }
+    },
+    "formations": {
+      "firstRow": [
+        "itoujunna",
+        "itouriria",
+        "kitanohinako",
+        "sakaguchitamami",
+        "satoukaede",
+        "suzukiayane",
+        "teradaranze",
+        "nakamurareno",
+        "higuchihina",
+        "mukaihazuki",
+        "yamazakirena",
+        "yoshidaayanochristie",
+        "watanabemiria",
+        "wadamaaya"
+      ],
+      "secondRow": [],
+      "thirdRow": [],
+      "fourthRow": []
+    }
+  },
+  {
+    "title": "明日がある理由",
+    "key": "ashitagaaruriyuu",
+    "single": {
+      "title": "僕は僕を好きになる",
+      "number": "26"
+    },
+    "albums": [],
+    "otherCds": [],
+    "artwork": "artworks/artwork_no_image.png",
+    "musicVideo": "",
+    "type": "coupling",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [],
+      "arrange": [],
+      "direct": []
+    },
+    "performers": {
+      "center": [
+        "iwamotorenka"
+      ],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
+      "solo": "",
+      "unit": ""
+    },
+    "performersTag": {
+      "name": "",
+      "album": {
+        "type": "single",
+        "number": "26"
+      }
+    },
+    "formations": {
+      "firstRow": [
+        "akimotomanatsu",
+        "ikutaerika",
+        "iwamotorenka",
+        "umezawaminami",
+        "endousakura",
+        "oozonomomoko",
+        "kakiharuka",
+        "kitanohinako",
+        "kuboshiori",
+        "saitouasuka",
+        "shinuchimai",
+        "takayamakazumi",
+        "tsutsuiayame",
+        "hoshinominami",
+        "horimiona",
+        "matsumurasayuri",
+        "yamashitamizuki",
+        "yodayuuki"
+      ],
+      "secondRow": [],
+      "thirdRow": [],
+      "fourthRow": []
+    }
+  },
+  {
+    "title": "Wilderness world",
+    "key": "wildernessworld",
+    "single": {
+      "title": "僕は僕を好きになる",
+      "number": "26"
+    },
+    "albums": [],
+    "otherCds": [],
+    "artwork": "artworks/artwork_no_image.png",
+    "musicVideo": "",
+    "type": "coupling",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [],
+      "arrange": [],
+      "direct": []
+    },
+    "performers": {
+      "center": [],
+      "fukujin": {
+        "type": null,
+        "members": []
+      },
+      "solo": "",
+      "unit": ""
+    },
+    "performersTag": {
+      "name": "",
+      "album": {
+        "type": "single",
+        "number": "26"
+      }
+    },
+    "formations": {
+      "firstRow": [],
       "secondRow": [],
       "thirdRow": [],
       "fourthRow": []

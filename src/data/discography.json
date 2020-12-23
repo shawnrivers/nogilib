@@ -57,6 +57,49 @@
             "hayakawaseira"
           ]
         }
+      },
+      {
+        "number": 4,
+        "title": "口ほどにもないKISS",
+        "key": "kuchihodonimonaikiss",
+        "inCdType": [
+          "A"
+        ],
+        "type": "under",
+        "focusPerformers": {
+          "type": "center",
+          "members": [
+            "sakaguchitamami"
+          ]
+        }
+      },
+      {
+        "number": 5,
+        "title": "明日がある理由",
+        "key": "ashitagaaruriyuu",
+        "inCdType": [
+          "A"
+        ],
+        "type": "coupling",
+        "focusPerformers": {
+          "type": "center",
+          "members": [
+            "iwamotorenka"
+          ]
+        }
+      },
+      {
+        "number": 6,
+        "title": "Wilderness world",
+        "key": "wildernessworld",
+        "inCdType": [
+          "A"
+        ],
+        "type": "coupling",
+        "focusPerformers": {
+          "type": "center",
+          "members": []
+        }
       }
     ],
     "underMembers": [
