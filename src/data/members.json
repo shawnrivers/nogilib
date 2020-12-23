@@ -22838,6 +22838,10 @@
     "origin": "東京都",
     "sites": [
       {
+        "title": "blog",
+        "url": "https://blog.nogizaka46.com/haruka.kuromi/"
+      },
+      {
         "title": "Fourth Gen Blog",
         "url": "https://blog.nogizaka46.com/newfourth/"
       },
@@ -23130,6 +23134,10 @@
     "bloodType": "b",
     "origin": "岩手県",
     "sites": [
+      {
+        "title": "blog",
+        "url": "https://blog.nogizaka46.com/rika.satou/"
+      },
       {
         "title": "Fourth Gen Blog",
         "url": "https://blog.nogizaka46.com/newfourth/"
@@ -23424,6 +23432,10 @@
     "origin": "神奈川県",
     "sites": [
       {
+        "title": "blog",
+        "url": "https://blog.nogizaka46.com/runa.hayashi/"
+      },
+      {
         "title": "Fourth Gen Blog",
         "url": "https://blog.nogizaka46.com/newfourth/"
       },
@@ -23715,6 +23727,10 @@
     "bloodType": "o",
     "origin": "千葉県",
     "sites": [
+      {
+        "title": "blog",
+        "url": "https://blog.nogizaka46.com/miyu.matsuo/"
+      },
       {
         "title": "Fourth Gen Blog",
         "url": "https://blog.nogizaka46.com/newfourth/"
@@ -24008,6 +24024,10 @@
     "bloodType": "a",
     "origin": "京都府",
     "sites": [
+      {
+        "title": "blog",
+        "url": "https://blog.nogizaka46.com/nao.yumiki/"
+      },
       {
         "title": "Fourth Gen Blog",
         "url": "https://blog.nogizaka46.com/newfourth/"
