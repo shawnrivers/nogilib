@@ -1,9 +1,9 @@
 /**@jsx jsx */
 import { jsx, css } from '@emotion/core';
 import * as React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 import { PageContent } from 'client/components/templates/Page';
 import { Typography } from 'client/components/atoms/Typography';
-import { GatsbyImage } from 'client/components/atoms/images/GatsbyImage';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import {
   getDiscographyUrl,
@@ -16,6 +16,7 @@ import { Card } from 'client/components/atoms/Card';
 import { DiscographyIcon } from 'client/components/atoms/icons/DiscographyIcon';
 import { MembersIcon } from 'client/components/atoms/icons/MembersIcon';
 import { SearchIcon } from 'client/components/atoms/icons/SearchIcon';
+import { StaticImage } from 'client/components/atoms/images/StaticImage';
 
 const SubHeading: React.FC = props => (
   <Typography
@@ -49,6 +50,17 @@ const SectionTextLink: React.FC<{
 const HomePage: React.FC = () => {
   const { getTranslation } = useTranslations();
   const theme = useAppTheme();
+  const heroImageData = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "design/preview.jpg" }) {
+        childImageSharp {
+          fixed(width: 800, height: 400) {
+            ...GatsbyImageSharpFixed_withWebp
+          }
+        }
+      }
+    }
+  `);
 
   return (
     <PageContent>
@@ -60,13 +72,11 @@ const HomePage: React.FC = () => {
           margin-top: ${commonStyles.spacing.l};
         `}
       >
-        <GatsbyImage
-          src="design/preview.jpg"
+        <StaticImage
+          fixed={heroImageData.file.childImageSharp.fixed}
           alt="NOGILIB"
           css={css`
-            width: 800px;
             max-width: 80vw;
-            height: 400px;
             border-radius: ${commonStyles.borderRadius.m};
             box-shadow: ${commonStyles.elevations[3].boxShadow};
           `}
