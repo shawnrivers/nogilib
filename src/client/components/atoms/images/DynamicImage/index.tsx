@@ -1,6 +1,6 @@
 import Img from 'gatsby-image';
 import React from 'react';
-import { useAllImagesContext } from 'client/store/images/useAllImagesContext';
+import { useAllImagesContext } from 'client/store/images/hook';
 
 export type DynamicImageProps = {
   src: string;

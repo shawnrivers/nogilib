@@ -9,8 +9,8 @@ import {
 } from './colors';
 import { Typography } from 'client/components/atoms/Typography';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
-import { useAppContext } from 'client/store/app/useAppContext';
 import { ThemeDecorator } from 'storybook/ThemeDecorator';
+import { useThemeContext } from 'client/store/theme/hook';
 
 export default {
   title: 'Design System/Colors',
@@ -27,7 +27,7 @@ const backgroundTypes: (keyof ThemeColorsBackground)[] = [
 ];
 
 export const All: React.FC = () => {
-  const { setThemeKey } = useAppContext();
+  const { setThemeKey } = useThemeContext();
   const theme = useAppTheme();
 
   const themeKey = select(

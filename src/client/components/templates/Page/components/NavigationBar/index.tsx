@@ -8,7 +8,7 @@ import { RadioCheckIcon } from 'client/components/atoms/icons/RadioCheckIcon';
 import { SettingsIcon } from 'client/components/atoms/icons/SettingsIcon';
 import { Surface } from 'client/components/atoms/Surface';
 import { Typography } from 'client/components/atoms/Typography';
-import { useAppContext } from 'client/store/app/useAppContext';
+import { useAppContext } from 'client/store/app/hook';
 import { useOnClickOutside } from 'client/hooks/useOnClickOutside';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
@@ -23,6 +23,7 @@ import { TextLink } from 'client/components/molecules/links/TextLink';
 import { BaseButton, BaseButtonRef } from 'client/components/atoms/BaseButton';
 import { useTranslations } from 'client/hooks/useTranslations';
 import { MENU_BUTTON_ID } from 'client/constants/ids';
+import { useThemeContext } from 'client/store/theme/hook';
 
 const settingDropdownId = 'setting-dropdown';
 const settingItemClass = 'setting-item';
@@ -104,7 +105,8 @@ const Settings: React.FC = () => {
   const settingsButtonRef = React.useRef<BaseButtonRef>(null);
 
   const theme = useAppTheme();
-  const { themeMode, language, setTheme, setLanguage } = useAppContext();
+  const { language, setLanguage } = useAppContext();
+  const { themeMode, setTheme } = useThemeContext();
 
   const { getTranslation } = useTranslations();
 
