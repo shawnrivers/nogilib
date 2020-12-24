@@ -11,7 +11,7 @@ import { useTranslations } from 'client/hooks/useTranslations';
 import { useIntl } from 'client/hooks/useIntl';
 import { useLanguageContext } from 'client/store/language/hook';
 import { PageHelmet } from 'client/layouts/PageHelmet';
-import { MembersPageProps } from 'client/features/Members/container';
+import { MembersPageProps } from 'pages/members';
 
 export const MembersPage: React.FC<MembersPageProps> = props => {
   const { currentFilter, memberGroupsByJoin } = props;

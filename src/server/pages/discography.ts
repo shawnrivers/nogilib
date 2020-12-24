@@ -17,8 +17,7 @@ export function getDiscographyPageData(
     throw new Error('Please convert Discography data at first.');
   }
 
-  const resultData = discography.result;
-  return resultData.map(item => ({
+  return discography.result.map(item => ({
     title: item.title,
     key: item.key,
     type: item.type,

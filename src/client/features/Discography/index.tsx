@@ -10,7 +10,7 @@ import { getAlbumUrl, getDiscographyUrl } from 'client/utils/urls';
 import { useTranslations } from 'client/hooks/useTranslations';
 import { useLanguageContext } from 'client/store/language/hook';
 import { PageHelmet } from 'client/layouts/PageHelmet';
-import { DiscographyPageProps } from 'client/features/Discography/container';
+import { DiscographyPageProps } from 'pages/discography';
 
 export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
   const { currentFilter, cdGroupsByYear } = props;

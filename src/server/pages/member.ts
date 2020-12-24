@@ -26,8 +26,7 @@ export function getMemberPageData(members: Members): MemberPageData {
     throw new Error('Please convert Members data at first.');
   }
 
-  const resultData = members.result;
-  return resultData.map(member => ({
+  return members.result.map(member => ({
     name: member.name,
     nameNotations: member.nameNotations,
     profileImages: member.profileImages.gallery,
