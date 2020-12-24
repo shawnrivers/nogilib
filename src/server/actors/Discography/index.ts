@@ -19,6 +19,7 @@ export class Discography {
   private otherCdsRawArray: DiscographyRawArray;
   private otherCdsRawObject: DiscographyRawObject;
   private resultData: DiscographyResultArray;
+  public isConverted: boolean;
 
   public constructor(discographyRawArray: DiscographyRawArray) {
     this.rawDataArray = discographyRawArray;
@@ -34,6 +35,7 @@ export class Discography {
     );
     this.otherCdsRawObject = arrayToObject(this.otherCdsRawArray, 'title');
     this.resultData = [];
+    this.isConverted = false;
   }
 
   public get rawArray(): DiscographyRawArray {
@@ -84,6 +86,7 @@ export class Discography {
     }
 
     this.resultData = discographyResult;
+    this.isConverted = true;
     return discographyResult;
   }
 
