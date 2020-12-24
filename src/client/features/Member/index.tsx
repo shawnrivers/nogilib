@@ -11,7 +11,6 @@ import { TextDivider } from 'client/components/molecules/TextDivider';
 import { useAppTheme, commonStyles } from 'client/styles/tokens';
 import { GridMemberImage } from 'client/components/atoms/images/GridMemberImage';
 import { useTranslations } from 'client/hooks/useTranslations';
-import { MemberPageProps } from 'client/features/Member/container';
 import { useIntl } from 'client/hooks/useIntl';
 import { PositionCounter } from 'client/features/Member/components/PositionCounter';
 import { TextLink } from 'client/components/molecules/links/TextLink';
@@ -23,6 +22,7 @@ import { SectionSubtitle } from 'client/components/molecules/typography/SectionS
 import { GridImage } from 'client/components/atoms/images/GirdImage';
 import { Card } from 'client/components/atoms/Card';
 import { PageHelmet } from 'client/layouts/PageHelmet';
+import { MemberPageProps } from 'pages/members/{MemberJson.name}';
 
 export const MemberPage: React.FC<MemberPageProps> = props => {
   const {
