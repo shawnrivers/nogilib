@@ -8,7 +8,7 @@ import {
 import { useAppTheme } from 'client/styles/tokens';
 import { useTranslations } from 'client/hooks/useTranslations';
 import {
-  HorizontalCard,
+  // HorizontalCard,
   HorizontalCardProps,
 } from 'client/components/molecules/cards/HorizontalCard';
 
@@ -53,29 +53,31 @@ export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props =
       >
         {results.slice(0, DEFAULT_RESULT_COUNT).map(result => (
           <li key={result.heading.text}>
-            <HorizontalCard
+            {/* <HorizontalCard
               to={result.to}
-              image={{ src: result.imgSrc, alt: '' }}
+              image={{ fluid: result.imgSrc, alt: '' }}
               title={result.heading}
               titleElement="h3"
               tags={result.captions}
               capitalizeTitle={title === 'members'}
-            />
+            /> */}
           </li>
         ))}
         {showMore
-          ? results.slice(DEFAULT_RESULT_COUNT, results.length).map(result => (
-              <li key={result.heading.text}>
-                <HorizontalCard
+          ? results
+              .slice(DEFAULT_RESULT_COUNT, results.length)
+              .map(result => (
+                <li key={result.heading.text}>
+                  {/* <HorizontalCard
                   to={result.to}
-                  image={{ src: result.imgSrc, alt: '' }}
+                  image={{ fluid: result.imgSrc, alt: '' }}
                   title={result.heading}
                   titleElement="h3"
                   tags={result.captions}
                   capitalizeTitle={title === 'members'}
-                />
-              </li>
-            ))
+                /> */}
+                </li>
+              ))
           : null}
         {results.length > DEFAULT_RESULT_COUNT && !showMore ? (
           <Typography

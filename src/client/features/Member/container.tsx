@@ -1,5 +1,6 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
+import { FluidObject } from 'gatsby-image';
 import { MemberPage } from 'client/features/Member/template';
 import { MemberResult } from 'server/actors/Members/models';
 import { sortByDate } from 'utils/sorting';
@@ -16,7 +17,13 @@ export const query = graphql`
         lastNameFurigana
       }
       profileImages {
-        gallery
+        gallery {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
       }
       join
       graduation {
@@ -39,7 +46,13 @@ export const query = graphql`
         url
       }
       photoAlbums {
-        cover
+        cover {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
         release
         sites {
           title
@@ -74,11 +87,30 @@ type QueryResultMember = Pick<
   | 'units'
   | 'glowStickColor'
   | 'sites'
-  | 'photoAlbums'
   | 'positionsHistory'
   | 'positionsCounter'
 > & {
-  profileImages: Pick<MemberResult['profileImages'], 'gallery'>;
+  profileImages: {
+    gallery: {
+      childImageSharp: {
+        fluid: FluidObject;
+      };
+    }[];
+  };
+  photoAlbums: {
+    cover: {
+      childImageSharp: {
+        fluid: FluidObject;
+      };
+    };
+    release: MemberResult['photoAlbums'][0]['release'];
+    sites: {
+      title: MemberResult['photoAlbums'][0]['sites'][0]['title'];
+      url: MemberResult['photoAlbums'][0]['sites'][0]['url'];
+    }[];
+    title: MemberResult['photoAlbums'][0]['title'];
+    type: MemberResult['photoAlbums'][0]['type'];
+  }[];
 };
 
 type QueryResult = {
@@ -98,14 +130,16 @@ export type MemberPageProps = Pick<
   | 'origin'
   | 'sites'
   | 'glowStickColor'
-  | 'photoAlbums'
   | 'positionsHistory'
   | 'positionsCounter'
 > & {
   units: string[];
   corps: string[];
-  profileImage: string;
-  gallery: string[];
+  profileImageFluid: FluidObject;
+  galleryFluids: FluidObject[];
+  photoAlbums: (Omit<QueryResultMember['photoAlbums'][0], 'cover'> & {
+    coverFluid: FluidObject;
+  })[];
   shouldShowPositionCounter: boolean;
 };
 
@@ -131,7 +165,14 @@ const MemberPageContainer: React.FC<QueryResult> = props => {
   }, [memberData.units]);
 
   const photoBooks = React.useMemo(
-    () => sortByDate(memberData.photoAlbums, 'release'),
+    () =>
+      sortByDate(
+        memberData.photoAlbums.map(photoAlbum => ({
+          ...photoAlbum,
+          coverFluid: photoAlbum.cover.childImageSharp.fluid,
+        })),
+        'release'
+      ),
     [memberData.photoAlbums]
   );
 
@@ -155,14 +196,17 @@ const MemberPageContainer: React.FC<QueryResult> = props => {
   );
 
   const gallery = React.useMemo(() => {
-    return memberData.profileImages.gallery.slice().reverse();
+    return memberData.profileImages.gallery
+      .map(photo => photo.childImageSharp.fluid)
+      .slice()
+      .reverse();
   }, [memberData.profileImages.gallery]);
 
   return memberData ? (
     <MemberPage
       nameNotations={memberData.nameNotations}
-      gallery={gallery}
-      profileImage={gallery[0]}
+      galleryFluids={gallery}
+      profileImageFluid={gallery[0]}
       glowStickColor={memberData.glowStickColor}
       sites={memberData.sites}
       join={memberData.join}

@@ -27,7 +27,7 @@ import { PageHelmet } from 'client/layouts/PageHelmet';
 export const MemberPage: React.FC<MemberPageProps> = props => {
   const {
     nameNotations,
-    profileImage,
+    profileImageFluid,
     sites,
     join,
     graduation,
@@ -42,7 +42,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
     positionsHistory,
     positionsCounter,
     glowStickColor,
-    gallery,
+    galleryFluids,
   } = props;
   const { language } = useLanguageContext();
   const { Translation, getTranslation } = useTranslations();
@@ -112,7 +112,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
             `}
           >
             <GridMemberImage
-              src={profileImage}
+              fluid={profileImageFluid}
               alt={formatWords([
                 language !== 'en'
                   ? nameNotations.lastName + nameNotations.firstName
@@ -284,7 +284,11 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                       `}
                     >
                       <article>
-                        <GridImage ratio={1.1} src={photoAlbum.cover} alt="" />
+                        <GridImage
+                          ratio={1.1}
+                          fluid={photoAlbum.coverFluid}
+                          alt=""
+                        />
                         <Typography
                           variant="body2"
                           element="p"
@@ -480,7 +484,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
             ) : null}
           </section>
         ) : null}
-        {gallery.length > 0 ? (
+        {galleryFluids.length > 0 ? (
           <section>
             <TextDivider text={<Translation text="gallery" />} element="h2" />
             <ul
@@ -490,10 +494,10 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                 justify-content: center;
               `}
             >
-              {gallery.map((profileImage, index) => (
+              {galleryFluids.map((profileImageFluid, index) => (
                 <li key={index}>
                   <GridMemberImage
-                    src={profileImage}
+                    fluid={profileImageFluid}
                     alt={[getTranslation('profile image'), index + 1].join(
                       language === 'en' ? ' ' : ''
                     )}

@@ -40,7 +40,7 @@ const RowContainer: React.FC = props => (
 
 type PerformerCardProps = Pick<
   MemberCardProps,
-  'profileImage' | 'to' | 'position'
+  'profileImageFluid' | 'to' | 'position'
 > & {
   nameNotations: NameNotationsForIntl;
 };
@@ -52,7 +52,7 @@ const PerformerCard: React.FC<PerformerCardProps> = props => {
     <MemberCard
       name={formatMemberName(props.nameNotations).name}
       lang={formatMemberName(props.nameNotations).lang}
-      profileImage={props.profileImage}
+      profileImageFluid={props.profileImageFluid}
       to={props.to}
       position={props.position}
       textSize="body3"
@@ -100,7 +100,7 @@ export const SongPage: React.FC<SongPageProps> = props => {
     title,
     type,
     songTags,
-    artwork,
+    artworkFluid,
     performersTag,
     formation,
     creators,
@@ -163,7 +163,7 @@ export const SongPage: React.FC<SongPageProps> = props => {
               `}
             >
               <GridArtworkImage
-                src={artwork}
+                fluid={artworkFluid}
                 alt={formatWords([title, getTranslation('artwork')])}
                 shadow
                 fixedSize
@@ -271,7 +271,7 @@ export const SongPage: React.FC<SongPageProps> = props => {
                             <li key={member.name}>
                               <PerformerCard
                                 nameNotations={member.nameNotations}
-                                profileImage={member.profileImage}
+                                profileImageFluid={member.profileImageFluid}
                                 position={member.position}
                                 to={
                                   member.isLink
