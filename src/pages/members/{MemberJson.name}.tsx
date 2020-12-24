@@ -1,13 +1,12 @@
 import { graphql } from 'gatsby';
-import * as React from 'react';
 import { FluidObject } from 'gatsby-image';
-import { MemberPage } from 'client/features/Member/template';
-import { MemberResult } from 'server/actors/Members/models';
-import { sortByDate } from 'utils/sorting';
+import * as React from 'react';
+import { MemberPage } from 'client/features/Member';
+import { MemberPageData } from 'server/pages/member';
 
 export const query = graphql`
   query($name: String!) {
-    membersJson(name: { eq: $name }) {
+    memberJson(name: { eq: $name }) {
       nameNotations {
         firstName
         firstNameEn
@@ -17,11 +16,9 @@ export const query = graphql`
         lastNameFurigana
       }
       profileImages {
-        gallery {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
@@ -33,10 +30,8 @@ export const query = graphql`
       height
       bloodType
       origin
-      units {
-        name
-        type
-      }
+      units
+      corps
       glowStickColor {
         left
         right
@@ -75,104 +70,61 @@ export const query = graphql`
   }
 `;
 
-type QueryResultMember = Pick<
-  MemberResult,
-  | 'nameNotations'
-  | 'graduation'
-  | 'join'
-  | 'birthday'
-  | 'height'
-  | 'bloodType'
-  | 'origin'
-  | 'units'
-  | 'glowStickColor'
-  | 'sites'
-  | 'positionsHistory'
-  | 'positionsCounter'
-> & {
+type MemberPageDataNode = {
+  nameNotations: MemberPageData[0]['nameNotations'];
   profileImages: {
-    gallery: {
-      childImageSharp: {
-        fluid: FluidObject;
-      };
-    }[];
+    childImageSharp: {
+      fluid: FluidObject;
+    };
+  }[];
+  join: MemberPageData[0]['join'];
+  graduation: {
+    isGraduated: MemberPageData[0]['graduation']['isGraduated'];
   };
-  photoAlbums: {
+  birthday: MemberPageData[0]['birthday'];
+  height: MemberPageData[0]['height'];
+  bloodType: MemberPageData[0]['bloodType'];
+  origin: MemberPageData[0]['origin'];
+  units: MemberPageData[0]['units'];
+  corps: MemberPageData[0]['corps'];
+  glowStickColor: MemberPageData[0]['glowStickColor'];
+  sites: MemberPageData[0]['sites'];
+  photoAlbums: (Omit<MemberPageData[0]['photoAlbums'][0], 'cover'> & {
     cover: {
       childImageSharp: {
         fluid: FluidObject;
       };
     };
-    release: MemberResult['photoAlbums'][0]['release'];
-    sites: {
-      title: MemberResult['photoAlbums'][0]['sites'][0]['title'];
-      url: MemberResult['photoAlbums'][0]['sites'][0]['url'];
-    }[];
-    title: MemberResult['photoAlbums'][0]['title'];
-    type: MemberResult['photoAlbums'][0]['type'];
-  }[];
+  })[];
+  positionsHistory: MemberPageData[0]['positionsHistory'];
+  positionsCounter: MemberPageData[0]['positionsCounter'];
 };
 
-type QueryResult = {
-  data: {
-    membersJson: QueryResultMember;
-  };
-};
-
-export type MemberPageProps = Pick<
-  QueryResultMember,
-  | 'nameNotations'
-  | 'join'
-  | 'graduation'
-  | 'birthday'
-  | 'height'
-  | 'bloodType'
-  | 'origin'
-  | 'sites'
-  | 'glowStickColor'
-  | 'positionsHistory'
-  | 'positionsCounter'
+export type MemberPageProps = Omit<
+  MemberPageDataNode,
+  'profileImages' | 'photoAlbums'
 > & {
-  units: string[];
-  corps: string[];
   profileImageFluid: FluidObject;
   galleryFluids: FluidObject[];
-  photoAlbums: (Omit<QueryResultMember['photoAlbums'][0], 'cover'> & {
+  photoAlbums: (Omit<MemberPageDataNode['photoAlbums'][0], 'cover'> & {
     coverFluid: FluidObject;
   })[];
   shouldShowPositionCounter: boolean;
 };
 
-const MemberPageContainer: React.FC<QueryResult> = props => {
-  const memberData = props.data.membersJson;
-
-  const { units, corps } = React.useMemo(() => {
-    let units = [];
-    let corps = [];
-
-    for (const unit of memberData.units) {
-      if (unit.type === 'unit') {
-        units.push(unit.name);
-      } else {
-        corps.push(unit.name);
-      }
-    }
-
-    return {
-      units,
-      corps,
-    };
-  }, [memberData.units]);
+const MemberPageContainer: React.FC<{
+  data: {
+    memberJson: MemberPageDataNode;
+  };
+}> = props => {
+  const memberData = props.data.memberJson;
 
   const photoBooks = React.useMemo(
     () =>
-      sortByDate(
-        memberData.photoAlbums.map(photoAlbum => ({
-          ...photoAlbum,
-          coverFluid: photoAlbum.cover.childImageSharp.fluid,
-        })),
-        'release'
-      ),
+      memberData.photoAlbums.map(photoAlbum => ({
+        ...photoAlbum,
+        coverFluid: photoAlbum.cover.childImageSharp.fluid,
+      })),
     [memberData.photoAlbums]
   );
 
@@ -196,11 +148,8 @@ const MemberPageContainer: React.FC<QueryResult> = props => {
   );
 
   const gallery = React.useMemo(() => {
-    return memberData.profileImages.gallery
-      .map(photo => photo.childImageSharp.fluid)
-      .slice()
-      .reverse();
-  }, [memberData.profileImages.gallery]);
+    return memberData.profileImages.map(photo => photo.childImageSharp.fluid);
+  }, [memberData.profileImages]);
 
   return memberData ? (
     <MemberPage
@@ -215,8 +164,8 @@ const MemberPageContainer: React.FC<QueryResult> = props => {
       height={memberData.height}
       bloodType={memberData.bloodType}
       origin={memberData.origin}
-      units={units}
-      corps={corps}
+      units={memberData.units}
+      corps={memberData.corps}
       photoAlbums={photoBooks}
       shouldShowPositionCounter={shouldShowPositionCounter}
       positionsHistory={positionsHistory}

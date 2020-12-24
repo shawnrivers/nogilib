@@ -15,8 +15,8 @@ export type DiscographyPageDataNode = {
   release: DiscographyPageData[0]['release'];
 };
 
-export const useDiscographyPageQuery = () =>
-  useStaticQuery<{
+export function useDiscographyPageQuery() {
+  return useStaticQuery<{
     allDiscographyJson: {
       nodes: DiscographyPageDataNode[];
     };
@@ -40,3 +40,4 @@ export const useDiscographyPageQuery = () =>
       }
     }
   `);
+}

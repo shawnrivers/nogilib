@@ -39,14 +39,10 @@
     "bloodType": "b",
     "origin": "埼玉県",
     "units": [
-      {
-        "name": "女子校カルテット",
-        "type": "unit"
-      },
-      {
-        "name": "真夏さんリスペクト軍団",
-        "type": "corp"
-      }
+      "女子校カルテット"
+    ],
+    "corps": [
+      "真夏さんリスペクト軍団"
     ],
     "glowStickColor": {
       "left": "red",
@@ -72,18 +68,6 @@
     ],
     "photoAlbums": [
       {
-        "title": "真夏の気圧配置",
-        "release": "2017-02-28",
-        "type": "photo album",
-        "sites": [
-          {
-            "title": "Twitter",
-            "url": "https://twitter.com/manattan_0228"
-          }
-        ],
-        "cover": "../assets/images/photo-albums/akimotomanatsu_1.jpg"
-      },
-      {
         "title": "しあわせにしたい",
         "release": "2020-04-08",
         "type": "photo album",
@@ -94,6 +78,18 @@
           }
         ],
         "cover": "../assets/images/photo-albums/akimotomanatsu_2.jpg"
+      },
+      {
+        "title": "真夏の気圧配置",
+        "release": "2017-02-28",
+        "type": "photo album",
+        "sites": [
+          {
+            "title": "Twitter",
+            "url": "https://twitter.com/manattan_0228"
+          }
+        ],
+        "cover": "../assets/images/photo-albums/akimotomanatsu_1.jpg"
       }
     ],
     "positionsHistory": [
@@ -250,18 +246,11 @@
     "bloodType": "a",
     "origin": "Düsseldorf, Germany",
     "units": [
-      {
-        "name": "からあげ姉妹",
-        "type": "unit"
-      },
-      {
-        "name": "藤桜梨",
-        "type": "unit"
-      },
-      {
-        "name": "チューリップ",
-        "type": "corp"
-      }
+      "からあげ姉妹",
+      "藤桜梨"
+    ],
+    "corps": [
+      "チューリップ"
     ],
     "glowStickColor": {
       "left": "yellow",
@@ -287,18 +276,6 @@
     ],
     "photoAlbums": [
       {
-        "title": "転調",
-        "release": "2016-01-21",
-        "type": "photo album",
-        "sites": [
-          {
-            "title": "amazon",
-            "url": "https://www.amazon.co.jp/%E7%94%9F%E7%94%B0%E7%B5%B5%E6%A2%A8%E8%8A%B11st%E5%86%99%E7%9C%9F%E9%9B%86-%E3%80%8E%E8%BB%A2%E8%AA%BF%E3%80%8F-%E7%94%9F%E7%94%B0-%E7%B5%B5%E6%A2%A8%E8%8A%B1/dp/4087807789/"
-          }
-        ],
-        "cover": "../assets/images/photo-albums/ikutaerika_1.jpg"
-      },
-      {
         "title": "インターミッション",
         "release": "2019-01-22",
         "type": "photo album",
@@ -309,6 +286,18 @@
           }
         ],
         "cover": "../assets/images/photo-albums/ikutaerika_2.jpg"
+      },
+      {
+        "title": "転調",
+        "release": "2016-01-21",
+        "type": "photo album",
+        "sites": [
+          {
+            "title": "amazon",
+            "url": "https://www.amazon.co.jp/%E7%94%9F%E7%94%B0%E7%B5%B5%E6%A2%A8%E8%8A%B11st%E5%86%99%E7%9C%9F%E9%9B%86-%E3%80%8E%E8%BB%A2%E8%AA%BF%E3%80%8F-%E7%94%9F%E7%94%B0-%E7%B5%B5%E6%A2%A8%E8%8A%B1/dp/4087807789/"
+          }
+        ],
+        "cover": "../assets/images/photo-albums/ikutaerika_1.jpg"
       }
     ],
     "positionsHistory": [
@@ -464,14 +453,10 @@
     "bloodType": "ab",
     "origin": "秋田県",
     "units": [
-      {
-        "name": "かすみ草",
-        "type": "unit"
-      },
-      {
-        "name": "犬メン",
-        "type": "corp"
-      }
+      "かすみ草"
+    ],
+    "corps": [
+      "犬メン"
     ],
     "glowStickColor": {
       "left": "blue",
@@ -669,14 +654,10 @@
     "bloodType": "b",
     "origin": "埼玉県",
     "units": [
-      {
-        "name": "かすみ草",
-        "type": "unit"
-      },
-      {
-        "name": "犬メン",
-        "type": "corp"
-      }
+      "かすみ草"
+    ],
+    "corps": [
+      "犬メン"
     ],
     "glowStickColor": {
       "left": "white",
@@ -864,15 +845,10 @@
     "bloodType": "ab",
     "origin": "大分県",
     "units": [
-      {
-        "name": "姉御坂",
-        "type": "unit"
-      },
-      {
-        "name": "藤桜梨",
-        "type": "unit"
-      }
+      "姉御坂",
+      "藤桜梨"
     ],
+    "corps": [],
     "glowStickColor": {
       "left": "red",
       "right": "red"
@@ -897,16 +873,16 @@
     ],
     "photoAlbums": [
       {
-        "title": "彩",
-        "release": "2012-01-31",
-        "type": "photo album",
+        "title": "Decision",
+        "release": "2020-01-08",
+        "type": "photo book",
         "sites": [
           {
-            "title": "amazon",
-            "url": "https://www.amazon.co.jp/%E8%A1%9B%E8%97%A4%E7%BE%8E%E5%BD%A9-%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E5%86%99%E7%9C%9F%E9%9B%86-%E3%80%8E-%E5%BD%A9-%E3%80%8F/dp/4847044290"
+            "title": "Twitter",
+            "url": "https://twitter.com/etomisabook"
           }
         ],
-        "cover": "../assets/images/photo-albums/etoumisa_1.jpg"
+        "cover": "../assets/images/photo-albums/etoumisa_pb.jpg"
       },
       {
         "title": "話を聞こうか。",
@@ -921,16 +897,16 @@
         "cover": "../assets/images/photo-albums/etoumisa_2.jpg"
       },
       {
-        "title": "Decision",
-        "release": "2020-01-08",
-        "type": "photo book",
+        "title": "彩",
+        "release": "2012-01-31",
+        "type": "photo album",
         "sites": [
           {
-            "title": "Twitter",
-            "url": "https://twitter.com/etomisabook"
+            "title": "amazon",
+            "url": "https://www.amazon.co.jp/%E8%A1%9B%E8%97%A4%E7%BE%8E%E5%BD%A9-%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E5%86%99%E7%9C%9F%E9%9B%86-%E3%80%8E-%E5%BD%A9-%E3%80%8F/dp/4847044290"
           }
         ],
-        "cover": "../assets/images/photo-albums/etoumisa_pb.jpg"
+        "cover": "../assets/images/photo-albums/etoumisa_1.jpg"
       }
     ],
     "positionsHistory": [
@@ -1086,15 +1062,10 @@
     "height": 161,
     "bloodType": "o",
     "origin": "長崎県",
-    "units": [
-      {
-        "name": "スイカ",
-        "type": "corp"
-      },
-      {
-        "name": "チューリップ",
-        "type": "corp"
-      }
+    "units": [],
+    "corps": [
+      "スイカ",
+      "チューリップ"
     ],
     "glowStickColor": {
       "left": "red",
@@ -1287,11 +1258,9 @@
     "bloodType": "o",
     "origin": "東京都",
     "units": [
-      {
-        "name": "ナスカ",
-        "type": "unit"
-      }
+      "ナスカ"
     ],
+    "corps": [],
     "glowStickColor": {
       "left": "light blue",
       "right": "white"
@@ -1478,15 +1447,10 @@
     "height": 157,
     "bloodType": "o",
     "origin": "東京都",
-    "units": [
-      {
-        "name": "犬メン",
-        "type": "corp"
-      },
-      {
-        "name": "スイカ",
-        "type": "corp"
-      }
+    "units": [],
+    "corps": [
+      "犬メン",
+      "スイカ"
     ],
     "glowStickColor": {
       "left": "pink",
@@ -1674,18 +1638,11 @@
     "bloodType": "a",
     "origin": "神奈川県",
     "units": [
-      {
-        "name": "女子校カルテット",
-        "type": "unit"
-      },
-      {
-        "name": "藤桜梨",
-        "type": "unit"
-      },
-      {
-        "name": "犬メン",
-        "type": "corp"
-      }
+      "女子校カルテット",
+      "藤桜梨"
+    ],
+    "corps": [
+      "犬メン"
     ],
     "glowStickColor": {
       "left": "red",
@@ -1707,18 +1664,6 @@
     ],
     "photoAlbums": [
       {
-        "title": "自由ということ",
-        "release": "2017-03-08",
-        "type": "photo album",
-        "sites": [
-          {
-            "title": "Twitter",
-            "url": "https://twitter.com/reika_kobunsha"
-          }
-        ],
-        "cover": "../assets/images/photo-albums/sakuraireika_1.jpg"
-      },
-      {
         "title": "視線",
         "release": "2019-11-27",
         "type": "photo album",
@@ -1729,6 +1674,18 @@
           }
         ],
         "cover": "../assets/images/photo-albums/sakuraireika_2.jpg"
+      },
+      {
+        "title": "自由ということ",
+        "release": "2017-03-08",
+        "type": "photo album",
+        "sites": [
+          {
+            "title": "Twitter",
+            "url": "https://twitter.com/reika_kobunsha"
+          }
+        ],
+        "cover": "../assets/images/photo-albums/sakuraireika_1.jpg"
       }
     ],
     "positionsHistory": [
@@ -1887,19 +1844,11 @@
     "bloodType": "a",
     "origin": "群馬県",
     "units": [
-      {
-        "name": "WHITE HIGH",
-        "type": "unit"
-      },
-      {
-        "name": "孤独兄弟",
-        "type": "unit"
-      },
-      {
-        "name": "姉御坂",
-        "type": "unit"
-      }
+      "WHITE HIGH",
+      "孤独兄弟",
+      "姉御坂"
     ],
+    "corps": [],
     "glowStickColor": {
       "left": "light blue",
       "right": "light blue"
@@ -1932,28 +1881,16 @@
     ],
     "photoAlbums": [
       {
-        "title": "清純な大人",
-        "release": "2014-12-10",
-        "type": "photo album",
+        "title": "白石麻衣メモリアルマガジン",
+        "release": "2020-10-21",
+        "type": "photo magazine",
         "sites": [
           {
-            "title": "amazon",
-            "url": "https://www.amazon.co.jp/Adult-Shiraishi-First-Photo-Collection/dp/4344026713/"
+            "title": "Twitter",
+            "url": "https://twitter.com/mai_westcoast"
           }
         ],
-        "cover": "../assets/images/photo-albums/shiraishimai_1.jpg"
-      },
-      {
-        "title": "MAI STYLE",
-        "release": "2015-01-23",
-        "type": "photo book",
-        "sites": [
-          {
-            "title": "amazon",
-            "url": "https://www.amazon.co.jp/%E4%B9%83%E6%9C%A8%E5%9D%8246-%E7%99%BD%E7%9F%B3%E9%BA%BB%E8%A1%A31st%E3%83%95%E3%82%A9%E3%83%88%E3%83%96%E3%83%83%E3%82%AF-MAI-STYLE-%E4%B8%BB%E5%A9%A6%E3%81%AE%E5%8F%8B%E7%94%9F%E6%B4%BB%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA/dp/407402098X"
-          }
-        ],
-        "cover": "../assets/images/photo-albums/shiraishimai_pb.jpg"
+        "cover": "../assets/images/photo-albums/shiraishimai_mm.jpg"
       },
       {
         "title": "パスポート",
@@ -1968,16 +1905,28 @@
         "cover": "../assets/images/photo-albums/shiraishimai_2.jpg"
       },
       {
-        "title": "白石麻衣メモリアルマガジン",
-        "release": "2020-10-21",
-        "type": "photo magazine",
+        "title": "MAI STYLE",
+        "release": "2015-01-23",
+        "type": "photo book",
         "sites": [
           {
-            "title": "Twitter",
-            "url": "https://twitter.com/mai_westcoast"
+            "title": "amazon",
+            "url": "https://www.amazon.co.jp/%E4%B9%83%E6%9C%A8%E5%9D%8246-%E7%99%BD%E7%9F%B3%E9%BA%BB%E8%A1%A31st%E3%83%95%E3%82%A9%E3%83%88%E3%83%96%E3%83%83%E3%82%AF-MAI-STYLE-%E4%B8%BB%E5%A9%A6%E3%81%AE%E5%8F%8B%E7%94%9F%E6%B4%BB%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA/dp/407402098X"
           }
         ],
-        "cover": "../assets/images/photo-albums/shiraishimai_mm.jpg"
+        "cover": "../assets/images/photo-albums/shiraishimai_pb.jpg"
+      },
+      {
+        "title": "清純な大人",
+        "release": "2014-12-10",
+        "type": "photo album",
+        "sites": [
+          {
+            "title": "amazon",
+            "url": "https://www.amazon.co.jp/Adult-Shiraishi-First-Photo-Collection/dp/4344026713/"
+          }
+        ],
+        "cover": "../assets/images/photo-albums/shiraishimai_1.jpg"
       }
     ],
     "positionsHistory": [
@@ -2135,18 +2084,11 @@
     "bloodType": "a",
     "origin": "千葉県",
     "units": [
-      {
-        "name": "WHITE HIGH",
-        "type": "unit"
-      },
-      {
-        "name": "姉御坂",
-        "type": "unit"
-      },
-      {
-        "name": "チューリップ",
-        "type": "corp"
-      }
+      "WHITE HIGH",
+      "姉御坂"
+    ],
+    "corps": [
+      "チューリップ"
     ],
     "glowStickColor": {
       "left": "light blue",
@@ -2172,18 +2114,6 @@
     ],
     "photoAlbums": [
       {
-        "title": "恋かもしれない",
-        "release": "2016-09-15",
-        "type": "photo album",
-        "sites": [
-          {
-            "title": "amazon",
-            "url": "https://www.amazon.co.jp/%E9%AB%98%E5%B1%B1%E4%B8%80%E5%AE%9F%E5%86%99%E7%9C%9F%E9%9B%86-%E6%81%8B%E3%81%8B%E3%82%82%E3%81%97%E3%82%8C%E3%81%AA%E3%81%84-%E9%AB%98%E5%B1%B1%E4%B8%80%E5%AE%9F/dp/4054064744"
-          }
-        ],
-        "cover": "../assets/images/photo-albums/takayamakazumi_1.jpg"
-      },
-      {
         "title": "独白",
         "release": "2019-02-26",
         "type": "photo album",
@@ -2194,6 +2124,18 @@
           }
         ],
         "cover": "../assets/images/photo-albums/takayamakazumi_2.jpg"
+      },
+      {
+        "title": "恋かもしれない",
+        "release": "2016-09-15",
+        "type": "photo album",
+        "sites": [
+          {
+            "title": "amazon",
+            "url": "https://www.amazon.co.jp/%E9%AB%98%E5%B1%B1%E4%B8%80%E5%AE%9F%E5%86%99%E7%9C%9F%E9%9B%86-%E6%81%8B%E3%81%8B%E3%82%82%E3%81%97%E3%82%8C%E3%81%AA%E3%81%84-%E9%AB%98%E5%B1%B1%E4%B8%80%E5%AE%9F/dp/4054064744"
+          }
+        ],
+        "cover": "../assets/images/photo-albums/takayamakazumi_1.jpg"
       }
     ],
     "positionsHistory": [
@@ -2352,15 +2294,10 @@
     "bloodType": "a",
     "origin": "埼玉県",
     "units": [
-      {
-        "name": "サンクエトワール",
-        "type": "unit"
-      },
-      {
-        "name": "女子校カルテット",
-        "type": "unit"
-      }
+      "サンクエトワール",
+      "女子校カルテット"
     ],
+    "corps": [],
     "glowStickColor": {
       "left": "black",
       "right": "white"
@@ -2548,14 +2485,10 @@
     "bloodType": "o",
     "origin": "大阪府",
     "units": [
-      {
-        "name": "ナスカ",
-        "type": "unit"
-      },
-      {
-        "name": "スイカ",
-        "type": "corp"
-      }
+      "ナスカ"
+    ],
+    "corps": [
+      "スイカ"
     ],
     "glowStickColor": {
       "left": "green",
@@ -2581,16 +2514,16 @@
     ],
     "photoAlbums": [
       {
-        "title": "普段着",
-        "release": "2015-05-18",
-        "type": "photo album",
+        "title": "わたしのこと",
+        "release": "2018-05-09",
+        "type": "photo book",
         "sites": [
           {
-            "title": "amazon",
-            "url": "https://www.amazon.co.jp/%E8%A5%BF%E9%87%8E%E4%B8%83%E7%80%AC%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E5%86%99%E7%9C%9F%E9%9B%86%E3%80%8E%E6%99%AE%E6%AE%B5%E7%9D%80%E3%80%8F-%E8%A5%BF%E9%87%8E-%E4%B8%83%E7%80%AC/dp/4344027094/"
+            "title": "Twitter",
+            "url": "https://twitter.com/nanase_1st"
           }
         ],
-        "cover": "../assets/images/photo-albums/nishinonanase_1.jpg"
+        "cover": "../assets/images/photo-albums/nishinonanase_pb.jpg"
       },
       {
         "title": "風に着替えて",
@@ -2605,16 +2538,16 @@
         "cover": "../assets/images/photo-albums/nishinonanase_2.jpg"
       },
       {
-        "title": "わたしのこと",
-        "release": "2018-05-09",
-        "type": "photo book",
+        "title": "普段着",
+        "release": "2015-05-18",
+        "type": "photo album",
         "sites": [
           {
-            "title": "Twitter",
-            "url": "https://twitter.com/nanase_1st"
+            "title": "amazon",
+            "url": "https://www.amazon.co.jp/%E8%A5%BF%E9%87%8E%E4%B8%83%E7%80%AC%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E5%86%99%E7%9C%9F%E9%9B%86%E3%80%8E%E6%99%AE%E6%AE%B5%E7%9D%80%E3%80%8F-%E8%A5%BF%E9%87%8E-%E4%B8%83%E7%80%AC/dp/4344027094/"
           }
         ],
-        "cover": "../assets/images/photo-albums/nishinonanase_pb.jpg"
+        "cover": "../assets/images/photo-albums/nishinonanase_1.jpg"
       }
     ],
     "positionsHistory": [
@@ -2771,11 +2704,9 @@
     "height": 163,
     "bloodType": "a",
     "origin": "神奈川県",
-    "units": [
-      {
-        "name": "チューリップ",
-        "type": "corp"
-      }
+    "units": [],
+    "corps": [
+      "チューリップ"
     ],
     "glowStickColor": {
       "left": "orange",
@@ -2947,6 +2878,7 @@
     "bloodType": "a",
     "origin": "東京都",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "purple",
       "right": "orange"
@@ -3125,11 +3057,9 @@
     "bloodType": "b",
     "origin": "千葉県",
     "units": [
-      {
-        "name": "かすみ草",
-        "type": "unit"
-      }
+      "かすみ草"
     ],
+    "corps": [],
     "glowStickColor": {
       "left": "white",
       "right": "white"
@@ -3317,22 +3247,12 @@
     "bloodType": "b",
     "origin": "大阪府",
     "units": [
-      {
-        "name": "からあげ姉妹",
-        "type": "unit"
-      },
-      {
-        "name": "姉御坂",
-        "type": "unit"
-      },
-      {
-        "name": "さゆりんご軍団",
-        "type": "corp"
-      },
-      {
-        "name": "犬メン",
-        "type": "corp"
-      }
+      "からあげ姉妹",
+      "姉御坂"
+    ],
+    "corps": [
+      "さゆりんご軍団",
+      "犬メン"
     ],
     "glowStickColor": {
       "left": "red",
@@ -3525,18 +3445,11 @@
     "bloodType": "o",
     "origin": "静岡県",
     "units": [
-      {
-        "name": "女子校カルテット",
-        "type": "unit"
-      },
-      {
-        "name": "若様軍団",
-        "type": "corp"
-      },
-      {
-        "name": "犬メン",
-        "type": "corp"
-      }
+      "女子校カルテット"
+    ],
+    "corps": [
+      "若様軍団",
+      "犬メン"
     ],
     "glowStickColor": {
       "left": "blue",
@@ -3732,11 +3645,9 @@
     "height": 160,
     "bloodType": "o",
     "origin": "広島県",
-    "units": [
-      {
-        "name": "チューリップ",
-        "type": "corp"
-      }
+    "units": [],
+    "corps": [
+      "チューリップ"
     ],
     "glowStickColor": {
       "left": "yellow",
@@ -3909,11 +3820,9 @@
     "height": 166,
     "bloodType": "a",
     "origin": "埼玉県",
-    "units": [
-      {
-        "name": "チューリップ",
-        "type": "corp"
-      }
+    "units": [],
+    "corps": [
+      "チューリップ"
     ],
     "glowStickColor": {
       "left": "blue",
@@ -4081,11 +3990,9 @@
     "height": 156,
     "bloodType": "a",
     "origin": "大阪府",
-    "units": [
-      {
-        "name": "チューリップ",
-        "type": "corp"
-      }
+    "units": [],
+    "corps": [
+      "チューリップ"
     ],
     "glowStickColor": {
       "left": "red",
@@ -4254,11 +4161,9 @@
     "bloodType": "o",
     "origin": "広島県",
     "units": [
-      {
-        "name": "サンクエトワール",
-        "type": "unit"
-      }
+      "サンクエトワール"
     ],
+    "corps": [],
     "glowStickColor": {
       "left": "pink",
       "right": "pink"
@@ -4427,14 +4332,10 @@
     "bloodType": "o",
     "origin": "神奈川県",
     "units": [
-      {
-        "name": "ナスカ",
-        "type": "unit"
-      },
-      {
-        "name": "犬メン",
-        "type": "corp"
-      }
+      "ナスカ"
+    ],
+    "corps": [
+      "犬メン"
     ],
     "glowStickColor": {
       "left": "green",
@@ -4618,29 +4519,15 @@
     "bloodType": "b",
     "origin": "北海道",
     "units": [
-      {
-        "name": "孤独兄弟",
-        "type": "unit"
-      }
+      "孤独兄弟"
     ],
+    "corps": [],
     "glowStickColor": {
       "left": "green",
       "right": "green"
     },
     "sites": [],
     "photoAlbums": [
-      {
-        "title": "やさしい棘",
-        "release": "2015-08-28",
-        "type": "photo album",
-        "sites": [
-          {
-            "title": "amazon",
-            "url": "https://www.amazon.co.jp/%E6%A9%8B%E6%9C%AC%E5%A5%88%E3%80%85%E6%9C%AA%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E5%86%99%E7%9C%9F%E9%9B%86%E3%80%8E%E3%82%84%E3%81%95%E3%81%97%E3%81%84%E6%A3%98%EF%BC%88%E3%81%A8%E3%81%92%EF%BC%89%E3%80%8F-%E6%A9%8B%E6%9C%AC-%E5%A5%88%E3%80%85%E6%9C%AA/dp/4344027949/"
-          }
-        ],
-        "cover": "../assets/images/photo-albums/hashimotonanami_1.jpg"
-      },
       {
         "title": "2017",
         "release": "2017-02-20",
@@ -4652,6 +4539,18 @@
           }
         ],
         "cover": "../assets/images/photo-albums/hashimotonanami_2.jpg"
+      },
+      {
+        "title": "やさしい棘",
+        "release": "2015-08-28",
+        "type": "photo album",
+        "sites": [
+          {
+            "title": "amazon",
+            "url": "https://www.amazon.co.jp/%E6%A9%8B%E6%9C%AC%E5%A5%88%E3%80%85%E6%9C%AA%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E5%86%99%E7%9C%9F%E9%9B%86%E3%80%8E%E3%82%84%E3%81%95%E3%81%97%E3%81%84%E6%A3%98%EF%BC%88%E3%81%A8%E3%81%92%EF%BC%89%E3%80%8F-%E6%A9%8B%E6%9C%AC-%E5%A5%88%E3%80%85%E6%9C%AA/dp/4344027949/"
+          }
+        ],
+        "cover": "../assets/images/photo-albums/hashimotonanami_1.jpg"
       }
     ],
     "positionsHistory": [
@@ -4804,6 +4703,7 @@
     "bloodType": "o",
     "origin": "静岡県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "green",
       "right": "purple"
@@ -4820,18 +4720,6 @@
     ],
     "photoAlbums": [
       {
-        "title": "ずっと、そばにいたい",
-        "release": "2016-06-09",
-        "type": "photo album",
-        "sites": [
-          {
-            "title": "amazon",
-            "url": "https://www.amazon.co.jp/s?k=%E9%A2%A8%E3%81%AB%E7%9D%80%E6%9B%BF%E3%81%88%E3%81%A6&i=stripbooks&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&ref=nb_sb_noss"
-          }
-        ],
-        "cover": "../assets/images/photo-albums/fukagawamai_1.jpg"
-      },
-      {
         "title": "My magazine",
         "release": "2018-02-22",
         "type": "photo magazine",
@@ -4842,6 +4730,18 @@
           }
         ],
         "cover": "../assets/images/photo-albums/fukagawamai_pm.jpg"
+      },
+      {
+        "title": "ずっと、そばにいたい",
+        "release": "2016-06-09",
+        "type": "photo album",
+        "sites": [
+          {
+            "title": "amazon",
+            "url": "https://www.amazon.co.jp/s?k=%E9%A2%A8%E3%81%AB%E7%9D%80%E6%9B%BF%E3%81%88%E3%81%A6&i=stripbooks&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&ref=nb_sb_noss"
+          }
+        ],
+        "cover": "../assets/images/photo-albums/fukagawamai_1.jpg"
       }
     ],
     "positionsHistory": [
@@ -4994,6 +4894,7 @@
     "bloodType": "o",
     "origin": "愛知県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "yellow",
       "right": "yellow"
@@ -5153,6 +5054,7 @@
     "bloodType": "o",
     "origin": "愛知県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "green",
       "right": "green"
@@ -5318,6 +5220,7 @@
     "bloodType": "b",
     "origin": "大分県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "blue",
       "right": "pink"
@@ -5482,6 +5385,7 @@
     "bloodType": "o",
     "origin": "宮城県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "pink",
       "right": "white"
@@ -5633,6 +5537,7 @@
     "bloodType": "b",
     "origin": "岐阜県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "pink",
       "right": "orange"
@@ -5793,6 +5698,7 @@
     "bloodType": "a",
     "origin": "千葉県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "none",
       "right": "none"
@@ -5940,6 +5846,7 @@
     "bloodType": "a",
     "origin": "東京都",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "none",
       "right": "none"
@@ -6088,6 +5995,7 @@
     "bloodType": "o",
     "origin": "千葉県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "none",
       "right": "none"
@@ -6248,6 +6156,7 @@
     "bloodType": "b",
     "origin": "神奈川県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "pink",
       "right": "pink"
@@ -6403,6 +6312,7 @@
     "bloodType": "o",
     "origin": "神奈川県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "none",
       "right": "none"
@@ -6548,6 +6458,7 @@
     "bloodType": "a",
     "origin": "埼玉県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "none",
       "right": "none"
@@ -6710,15 +6621,10 @@
     "height": 154,
     "bloodType": "o",
     "origin": "神奈川県",
-    "units": [
-      {
-        "name": "さゆりんご軍団",
-        "type": "corp"
-      },
-      {
-        "name": "スイカ",
-        "type": "corp"
-      }
+    "units": [],
+    "corps": [
+      "さゆりんご軍団",
+      "スイカ"
     ],
     "glowStickColor": {
       "left": "green",
@@ -6895,11 +6801,9 @@
     "height": 166,
     "bloodType": "a",
     "origin": "神奈川県",
-    "units": [
-      {
-        "name": "スイカ",
-        "type": "corp"
-      }
+    "units": [],
+    "corps": [
+      "スイカ"
     ],
     "glowStickColor": {
       "left": "light blue",
@@ -7073,11 +6977,9 @@
     "bloodType": "o",
     "origin": "北海道",
     "units": [
-      {
-        "name": "サンクエトワール",
-        "type": "unit"
-      }
+      "サンクエトワール"
     ],
+    "corps": [],
     "glowStickColor": {
       "left": "pink",
       "right": "yellow green"
@@ -7259,11 +7161,9 @@
     "height": 163,
     "bloodType": "a",
     "origin": "埼玉県",
-    "units": [
-      {
-        "name": "さゆりんご軍団",
-        "type": "corp"
-      }
+    "units": [],
+    "corps": [
+      "さゆりんご軍団"
     ],
     "glowStickColor": {
       "left": "blue",
@@ -7432,11 +7332,9 @@
     "height": 165,
     "bloodType": "b",
     "origin": "埼玉県",
-    "units": [
-      {
-        "name": "犬メン",
-        "type": "corp"
-      }
+    "units": [],
+    "corps": [
+      "犬メン"
     ],
     "glowStickColor": {
       "left": "blue",
@@ -7622,11 +7520,9 @@
     "height": 160,
     "bloodType": "o",
     "origin": "秋田県",
-    "units": [
-      {
-        "name": "真夏さんリスペクト軍団",
-        "type": "corp"
-      }
+    "units": [],
+    "corps": [
+      "真夏さんリスペクト軍団"
     ],
     "glowStickColor": {
       "left": "white",
@@ -7808,14 +7704,10 @@
     "bloodType": "unknown",
     "origin": "東京都",
     "units": [
-      {
-        "name": "サンクエトワール",
-        "type": "unit"
-      },
-      {
-        "name": "さゆりんご軍団",
-        "type": "corp"
-      }
+      "サンクエトワール"
+    ],
+    "corps": [
+      "さゆりんご軍団"
     ],
     "glowStickColor": {
       "left": "red",
@@ -7985,15 +7877,10 @@
     "bloodType": "o",
     "origin": "岐阜県",
     "units": [
-      {
-        "name": "サンクエトワール",
-        "type": "unit"
-      },
-      {
-        "name": "かすみ草",
-        "type": "unit"
-      }
+      "サンクエトワール",
+      "かすみ草"
     ],
+    "corps": [],
     "glowStickColor": {
       "left": "white",
       "right": "orange"
@@ -8018,18 +7905,6 @@
     ],
     "photoAlbums": [
       {
-        "title": "君らしさ",
-        "release": "2017-11-24",
-        "type": "photo album",
-        "sites": [
-          {
-            "title": "Twitter",
-            "url": "https://twitter.com/miona_book"
-          }
-        ],
-        "cover": "../assets/images/photo-albums/horimiona_1.jpg"
-      },
-      {
         "title": "いつかの待ち合わせ場所",
         "release": "2020-05-27",
         "type": "photo album",
@@ -8040,6 +7915,18 @@
           }
         ],
         "cover": "../assets/images/photo-albums/horimiona_2.jpg"
+      },
+      {
+        "title": "君らしさ",
+        "release": "2017-11-24",
+        "type": "photo album",
+        "sites": [
+          {
+            "title": "Twitter",
+            "url": "https://twitter.com/miona_book"
+          }
+        ],
+        "cover": "../assets/images/photo-albums/horimiona_1.jpg"
       }
     ],
     "positionsHistory": [
@@ -8191,6 +8078,7 @@
     "bloodType": "a",
     "origin": "東京都",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "yellow",
       "right": "white"
@@ -8362,11 +8250,9 @@
     "height": 153,
     "bloodType": "o",
     "origin": "東京都",
-    "units": [
-      {
-        "name": "真夏さんリスペクト軍団",
-        "type": "corp"
-      }
+    "units": [],
+    "corps": [
+      "真夏さんリスペクト軍団"
     ],
     "glowStickColor": {
       "left": "yellow",
@@ -8530,11 +8416,9 @@
     "height": 164,
     "bloodType": "o",
     "origin": "埼玉県",
-    "units": [
-      {
-        "name": "真夏さんリスペクト軍団",
-        "type": "corp"
-      }
+    "units": [],
+    "corps": [
+      "真夏さんリスペクト軍団"
     ],
     "glowStickColor": {
       "left": "green",
@@ -8693,6 +8577,7 @@
     "bloodType": "ab",
     "origin": "神奈川県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "light blue",
       "right": "blue"
@@ -8837,6 +8722,7 @@
     "bloodType": "a",
     "origin": "埼玉県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "pink",
       "right": "pink"
@@ -8983,6 +8869,7 @@
     "bloodType": "b",
     "origin": "沖縄県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "purple",
       "right": "red"
@@ -9138,6 +9025,7 @@
     "bloodType": "b",
     "origin": "東京都",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "red",
       "right": "pink"
@@ -9292,11 +9180,9 @@
     "height": 170,
     "bloodType": "a",
     "origin": "神奈川県",
-    "units": [
-      {
-        "name": "若様軍団",
-        "type": "corp"
-      }
+    "units": [],
+    "corps": [
+      "若様軍団"
     ],
     "glowStickColor": {
       "left": "blue",
@@ -9466,11 +9352,9 @@
     "bloodType": "o",
     "origin": "鹿児島県",
     "units": [
-      {
-        "name": "いもうと坂",
-        "type": "unit"
-      }
+      "いもうと坂"
     ],
+    "corps": [],
     "glowStickColor": {
       "left": "pink",
       "right": "green"
@@ -9630,11 +9514,9 @@
     "bloodType": "o",
     "origin": "宮城県",
     "units": [
-      {
-        "name": "いもうと坂",
-        "type": "unit"
-      }
+      "いもうと坂"
     ],
+    "corps": [],
     "glowStickColor": {
       "left": "light blue",
       "right": "yellow"
@@ -9789,11 +9671,9 @@
     "height": 161,
     "bloodType": "a",
     "origin": "東京都",
-    "units": [
-      {
-        "name": "若様軍団",
-        "type": "corp"
-      }
+    "units": [],
+    "corps": [
+      "若様軍団"
     ],
     "glowStickColor": {
       "left": "purple",
@@ -9950,6 +9830,7 @@
     "bloodType": "a",
     "origin": "愛知県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "red",
       "right": "red"
@@ -10105,6 +9986,7 @@
     "bloodType": "unknown",
     "origin": "東京都",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "blue",
       "right": "white"
@@ -10260,6 +10142,7 @@
     "bloodType": "a",
     "origin": "東京都",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "yellow",
       "right": "yellow"
@@ -10415,14 +10298,10 @@
     "bloodType": "o",
     "origin": "東京都",
     "units": [
-      {
-        "name": "いもうと坂",
-        "type": "unit"
-      },
-      {
-        "name": "若様軍団",
-        "type": "corp"
-      }
+      "いもうと坂"
+    ],
+    "corps": [
+      "若様軍団"
     ],
     "glowStickColor": {
       "left": "blue",
@@ -10592,6 +10471,7 @@
     "bloodType": "a",
     "origin": "大分県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "pink",
       "right": "purple"
@@ -10747,11 +10627,9 @@
     "bloodType": "o",
     "origin": "福岡県",
     "units": [
-      {
-        "name": "いもうと坂",
-        "type": "unit"
-      }
+      "いもうと坂"
     ],
+    "corps": [],
     "glowStickColor": {
       "left": "red",
       "right": "green"
@@ -10772,18 +10650,6 @@
     ],
     "photoAlbums": [
       {
-        "title": "日向の温度",
-        "release": "2017-12-26",
-        "type": "photo album",
-        "sites": [
-          {
-            "title": "Twitter",
-            "url": "https://twitter.com/gentosha_yoda"
-          }
-        ],
-        "cover": "../assets/images/photo-albums/yodayuuki_1.jpg"
-      },
-      {
         "title": "無口な時間",
         "release": "2020-03-10",
         "type": "photo album",
@@ -10794,6 +10660,18 @@
           }
         ],
         "cover": "../assets/images/photo-albums/yodayuuki_2.jpg"
+      },
+      {
+        "title": "日向の温度",
+        "release": "2017-12-26",
+        "type": "photo album",
+        "sites": [
+          {
+            "title": "Twitter",
+            "url": "https://twitter.com/gentosha_yoda"
+          }
+        ],
+        "cover": "../assets/images/photo-albums/yodayuuki_1.jpg"
       }
     ],
     "positionsHistory": [
@@ -10934,6 +10812,7 @@
     "bloodType": "unknown",
     "origin": "愛知県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "white",
       "right": "pink"
@@ -11087,6 +10966,7 @@
     "bloodType": "a",
     "origin": "栃木県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "green",
       "right": "orange"
@@ -11240,6 +11120,7 @@
     "bloodType": "b",
     "origin": "岡山県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "pink",
       "right": "orange"
@@ -11393,6 +11274,7 @@
     "bloodType": "o",
     "origin": "北海道",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "red",
       "right": "light blue"
@@ -11546,6 +11428,7 @@
     "bloodType": "unknown",
     "origin": "California, US",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "orange",
       "right": "light blue"
@@ -11699,6 +11582,7 @@
     "bloodType": "a",
     "origin": "千葉県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "blue",
       "right": "yellow green"
@@ -11852,6 +11736,7 @@
     "bloodType": "o",
     "origin": "埼玉県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "orange",
       "right": "orange"
@@ -12005,6 +11890,7 @@
     "bloodType": "a",
     "origin": "埼玉県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "light blue",
       "right": "purple"
@@ -12158,6 +12044,7 @@
     "bloodType": "o",
     "origin": "愛知県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "purple",
       "right": "purple"
@@ -12311,6 +12198,7 @@
     "bloodType": "a",
     "origin": "大阪府",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "blue",
       "right": "blue"
@@ -12464,6 +12352,7 @@
     "bloodType": "b",
     "origin": "東京都",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "yellow",
       "right": "pink"
@@ -12617,6 +12506,7 @@
     "bloodType": "o",
     "origin": "東京都",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "purple",
       "right": "green"
@@ -12774,6 +12664,7 @@
     "bloodType": "b",
     "origin": "岩手県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "pink",
       "right": "light blue"
@@ -12931,6 +12822,7 @@
     "bloodType": "o",
     "origin": "神奈川県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "pink",
       "right": "pink"
@@ -13087,6 +12979,7 @@
     "bloodType": "o",
     "origin": "千葉県",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "light blue",
       "right": "white"
@@ -13244,6 +13137,7 @@
     "bloodType": "a",
     "origin": "京都府",
     "units": [],
+    "corps": [],
     "glowStickColor": {
       "left": "red",
       "right": "yellow green"

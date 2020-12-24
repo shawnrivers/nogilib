@@ -1,5 +1,6 @@
 import { Members } from 'server/actors/Members';
 import { MemberResult } from 'server/actors/Members/models';
+import { sortByDate } from 'utils/sorting';
 
 export type MemberPageData = {
   name: MemberResult['name'];
@@ -11,7 +12,8 @@ export type MemberPageData = {
   height: MemberResult['height'];
   bloodType: MemberResult['bloodType'];
   origin: MemberResult['origin'];
-  units: MemberResult['units'];
+  units: MemberResult['units'][0]['name'][];
+  corps: MemberResult['units'][0]['name'][];
   glowStickColor: MemberResult['glowStickColor'];
   sites: MemberResult['sites'];
   photoAlbums: MemberResult['photoAlbums'];
@@ -35,10 +37,15 @@ export function getMemberPageData(members: Members): MemberPageData {
     height: member.height,
     bloodType: member.bloodType,
     origin: member.origin,
-    units: member.units,
+    units: member.units
+      .filter(unit => unit.type === 'unit')
+      .map(unit => unit.name),
+    corps: member.units
+      .filter(unit => unit.type === 'corp')
+      .map(unit => unit.name),
     glowStickColor: member.glowStickColor,
     sites: member.sites,
-    photoAlbums: member.photoAlbums,
+    photoAlbums: sortByDate(member.photoAlbums, 'release'),
     positionsHistory: member.positionsHistory,
     positionsCounter: member.positionsCounter,
   }));
