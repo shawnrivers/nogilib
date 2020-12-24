@@ -6,20 +6,11 @@ import { ArtworkCard } from 'client/components/molecules/cards/ArtworkCard';
 import { PageContent } from 'client/components/templates/Page';
 import { TextDivider } from 'client/components/molecules/TextDivider';
 import { commonStyles } from 'client/styles/tokens';
-import {
-  DiscographyUrlFilter,
-  getAlbumUrl,
-  getDiscographyUrl,
-} from 'client/utils/urls';
-import { CdGroupByYear } from 'pages/discography';
+import { getAlbumUrl, getDiscographyUrl } from 'client/utils/urls';
 import { useTranslations } from 'client/hooks/useTranslations';
 import { useLanguageContext } from 'client/store/language/hook';
 import { PageHelmet } from 'client/layouts/PageHelmet';
-
-export type DiscographyPageProps = {
-  currentFilter: DiscographyUrlFilter;
-  cdGroupsByYear: CdGroupByYear[];
-};
+import { DiscographyPageProps } from 'client/features/Discography/container';
 
 export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
   const { currentFilter, cdGroupsByYear } = props;
@@ -76,7 +67,7 @@ export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
                   <li key={cd.key}>
                     <ArtworkCard
                       to={getAlbumUrl(cd.key)}
-                      artworkFluid={cd.artworks[0].url.childImageSharp.fluid}
+                      artworkFluid={cd.artwork.childImageSharp.fluid}
                       number={cd.number}
                       type={cd.type}
                       title={cd.title}
