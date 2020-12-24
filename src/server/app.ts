@@ -9,6 +9,7 @@ import { Discography } from 'server/actors/Discography';
 import { writeJSONFile } from 'server/utils/files';
 import { getDiscographyPageData } from 'server/pages/discography';
 import { getMembersPageData } from 'server/pages/members';
+import { getMemberPageData } from 'server/pages/member';
 
 // Generate raw data
 const songs = new Songs(songsRawArray);
@@ -46,9 +47,11 @@ discography.convertDiscography({
 // Convert to page data
 const discographyPageData = getDiscographyPageData(discography);
 const membersPageData = getMembersPageData(members);
+const memberPageData = getMemberPageData(members);
 
 // Store in JSON files
 writeJSONFile('./src/data/members.json', membersPageData);
+writeJSONFile('./src/data/member.json', memberPageData);
 writeJSONFile('./src/data/songs.json', songsResultArray);
 writeJSONFile('./src/data/units.json', unitsResultArray);
 writeJSONFile('./src/data/discography.json', discographyPageData);
