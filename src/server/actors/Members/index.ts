@@ -24,11 +24,13 @@ export class Members {
   private rawDataArray: MembersRawArray;
   private rawDataObject: MembersRawObject;
   private resultData: MembersResultArray;
+  public isConverted: boolean;
 
   public constructor(membersRawArray: MembersRawArray) {
     this.rawDataArray = membersRawArray;
     this.rawDataObject = arrayToObject(membersRawArray, 'name');
     this.resultData = [];
+    this.isConverted = false;
   }
 
   public get rawArray(): MembersRawArray {
@@ -70,6 +72,7 @@ export class Members {
     }
 
     this.resultData = membersResult;
+    this.isConverted = true;
     return membersResult;
   }
 
