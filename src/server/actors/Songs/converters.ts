@@ -6,6 +6,7 @@ import {
   DiscographyRawObject,
 } from 'server/actors/Discography/models';
 import { sortByDate } from 'utils/sorting';
+import { convertImageFilePath } from 'server/utils/paths';
 
 type ConvertSongSingle = (params: {
   songTitle: SongRaw['title'];
@@ -113,7 +114,7 @@ export const convertSongArtwork: ConvertSongArtwork = ({
 
     for (const singleSong of single.songs) {
       if (singleSong.title === songTitle) {
-        return (
+        return convertImageFilePath(
           single.artworks.find(
             artwork => artwork.type === singleSong.inCdType[0]
           )?.url ?? NO_ARTWORK_IMAGE_SRC
@@ -128,7 +129,7 @@ export const convertSongArtwork: ConvertSongArtwork = ({
 
     for (const albumSong of album.songs) {
       if (albumSong.title === songTitle) {
-        return (
+        return convertImageFilePath(
           album.artworks.find(artwork => artwork.type === albumSong.inCdType[0])
             ?.url ?? NO_ARTWORK_IMAGE_SRC
         );
@@ -143,7 +144,7 @@ export const convertSongArtwork: ConvertSongArtwork = ({
 
     for (const otherCdSong of otherCd.songs) {
       if (otherCdSong.title === songTitle) {
-        return (
+        return convertImageFilePath(
           otherCd.artworks.find(
             artwork => artwork.type === otherCdSong.inCdType[0]
           )?.url ?? NO_ARTWORK_IMAGE_SRC
@@ -152,7 +153,7 @@ export const convertSongArtwork: ConvertSongArtwork = ({
     }
   }
 
-  return NO_ARTWORK_IMAGE_SRC;
+  return convertImageFilePath(NO_ARTWORK_IMAGE_SRC);
 };
 
 export const convertSongType = (type: SongRaw['type']): SongResult['type'] =>

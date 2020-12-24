@@ -9,6 +9,7 @@ import {
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { CdType, OtherCdKind } from 'server/actors/Discography/types';
 import { NO_ARTWORK_IMAGE_SRC } from 'server/constants/paths';
+import { convertImageFilePath } from 'server/utils/paths';
 
 export const convertCdArtwork = ({
   cdHasArtworks,
@@ -66,12 +67,14 @@ const convertCdArtworks = ({
 
   for (const cdArtworkType of cdArtworkTypes) {
     artworksResult.push({
-      url: convertCdArtwork({
-        cdHasArtworks,
-        cdNumber,
-        cdArtworkType,
-        cdKind,
-      }),
+      url: convertImageFilePath(
+        convertCdArtwork({
+          cdHasArtworks,
+          cdNumber,
+          cdArtworkType,
+          cdKind,
+        })
+      ),
       type: cdArtworkType,
     });
   }
