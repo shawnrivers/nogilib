@@ -14,6 +14,7 @@ import {
   DiscographyRaw,
 } from 'server/actors/Discography/models';
 import { sortByDate } from 'utils/sorting';
+import { convertImageFilePath } from 'server/utils/paths';
 
 type GalleryWithDate = {
   url: string;
@@ -248,11 +249,29 @@ export function convertProfileImages(params: {
   });
 
   return {
-    gallery: galleryWithDate.map(image => image.url),
-    singles,
-    albums,
-    digital,
+    gallery: galleryWithDate.map(image => convertImageFilePath(image.url)),
+    singles: singles.map(cd => ({
+      ...cd,
+      url: convertImageFilePath(cd.url),
+    })),
+    albums: albums.map(cd => ({
+      ...cd,
+      url: convertImageFilePath(cd.url),
+    })),
+    digital: digital.map(cd => ({
+      ...cd,
+      url: convertImageFilePath(cd.url),
+    })),
   };
+}
+
+export function convertPhotoAlbums(
+  photoAlbums: MemberRaw['photoAlbums']
+): MemberResult['photoAlbums'] {
+  return photoAlbums.map(photoAlbum => ({
+    ...photoAlbum,
+    cover: convertImageFilePath(photoAlbum.cover),
+  }));
 }
 
 type ConvertMemberUnits = (params: {

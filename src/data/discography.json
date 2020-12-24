@@ -8,7 +8,7 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/artwork_no_image.png",
+        "url": "../assets/images/artworks/artwork_no_image.png",
         "type": "A"
       }
     ],
@@ -146,23 +146,23 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/25/A.jpg",
+        "url": "../assets/images/artworks/singles/25/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/25/B.jpg",
+        "url": "../assets/images/artworks/singles/25/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/25/C.jpg",
+        "url": "../assets/images/artworks/singles/25/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/25/D.jpg",
+        "url": "../assets/images/artworks/singles/25/D.jpg",
         "type": "D"
       },
       {
-        "url": "artworks/singles/25/T.jpg",
+        "url": "../assets/images/artworks/singles/25/T.jpg",
         "type": "T"
       }
     ],
@@ -310,23 +310,23 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/24/A.jpg",
+        "url": "../assets/images/artworks/singles/24/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/24/B.jpg",
+        "url": "../assets/images/artworks/singles/24/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/24/C.jpg",
+        "url": "../assets/images/artworks/singles/24/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/24/D.jpg",
+        "url": "../assets/images/artworks/singles/24/D.jpg",
         "type": "D"
       },
       {
-        "url": "artworks/singles/24/T.jpg",
+        "url": "../assets/images/artworks/singles/24/T.jpg",
         "type": "T"
       }
     ],
@@ -492,23 +492,23 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/23/A.jpg",
+        "url": "../assets/images/artworks/singles/23/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/23/B.jpg",
+        "url": "../assets/images/artworks/singles/23/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/23/C.jpg",
+        "url": "../assets/images/artworks/singles/23/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/23/D.jpg",
+        "url": "../assets/images/artworks/singles/23/D.jpg",
         "type": "D"
       },
       {
-        "url": "artworks/singles/23/T.jpg",
+        "url": "../assets/images/artworks/singles/23/T.jpg",
         "type": "T"
       }
     ],
@@ -677,23 +677,23 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/22/A.jpg",
+        "url": "../assets/images/artworks/singles/22/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/22/B.jpg",
+        "url": "../assets/images/artworks/singles/22/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/22/C.jpg",
+        "url": "../assets/images/artworks/singles/22/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/22/D.jpg",
+        "url": "../assets/images/artworks/singles/22/D.jpg",
         "type": "D"
       },
       {
-        "url": "artworks/singles/22/T.jpg",
+        "url": "../assets/images/artworks/singles/22/T.jpg",
         "type": "T"
       }
     ],
@@ -852,23 +852,23 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/21/A.jpg",
+        "url": "../assets/images/artworks/singles/21/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/21/B.jpg",
+        "url": "../assets/images/artworks/singles/21/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/21/C.jpg",
+        "url": "../assets/images/artworks/singles/21/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/21/D.jpg",
+        "url": "../assets/images/artworks/singles/21/D.jpg",
         "type": "D"
       },
       {
-        "url": "artworks/singles/21/T.jpg",
+        "url": "../assets/images/artworks/singles/21/T.jpg",
         "type": "T"
       }
     ],
@@ -1027,23 +1027,23 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/20/A.jpg",
+        "url": "../assets/images/artworks/singles/20/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/20/B.jpg",
+        "url": "../assets/images/artworks/singles/20/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/20/C.jpg",
+        "url": "../assets/images/artworks/singles/20/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/20/D.jpg",
+        "url": "../assets/images/artworks/singles/20/D.jpg",
         "type": "D"
       },
       {
-        "url": "artworks/singles/20/T.jpg",
+        "url": "../assets/images/artworks/singles/20/T.jpg",
         "type": "T"
       }
     ],
@@ -1202,23 +1202,23 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/19/A.jpg",
+        "url": "../assets/images/artworks/singles/19/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/19/B.jpg",
+        "url": "../assets/images/artworks/singles/19/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/19/C.jpg",
+        "url": "../assets/images/artworks/singles/19/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/19/D.jpg",
+        "url": "../assets/images/artworks/singles/19/D.jpg",
         "type": "D"
       },
       {
-        "url": "artworks/singles/19/T.jpg",
+        "url": "../assets/images/artworks/singles/19/T.jpg",
         "type": "T"
       }
     ],
@@ -1385,23 +1385,23 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/18/A.jpg",
+        "url": "../assets/images/artworks/singles/18/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/18/B.jpg",
+        "url": "../assets/images/artworks/singles/18/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/18/C.jpg",
+        "url": "../assets/images/artworks/singles/18/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/18/D.jpg",
+        "url": "../assets/images/artworks/singles/18/D.jpg",
         "type": "D"
       },
       {
-        "url": "artworks/singles/18/T.jpg",
+        "url": "../assets/images/artworks/singles/18/T.jpg",
         "type": "T"
       }
     ],
@@ -1571,23 +1571,23 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/17/A.jpg",
+        "url": "../assets/images/artworks/singles/17/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/17/B.jpg",
+        "url": "../assets/images/artworks/singles/17/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/17/C.jpg",
+        "url": "../assets/images/artworks/singles/17/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/17/D.jpg",
+        "url": "../assets/images/artworks/singles/17/D.jpg",
         "type": "D"
       },
       {
-        "url": "artworks/singles/17/T.jpg",
+        "url": "../assets/images/artworks/singles/17/T.jpg",
         "type": "T"
       }
     ],
@@ -1751,23 +1751,23 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/16/A.jpg",
+        "url": "../assets/images/artworks/singles/16/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/16/B.jpg",
+        "url": "../assets/images/artworks/singles/16/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/16/C.jpg",
+        "url": "../assets/images/artworks/singles/16/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/16/D.jpg",
+        "url": "../assets/images/artworks/singles/16/D.jpg",
         "type": "D"
       },
       {
-        "url": "artworks/singles/16/T.jpg",
+        "url": "../assets/images/artworks/singles/16/T.jpg",
         "type": "T"
       }
     ],
@@ -1920,23 +1920,23 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/15/A.jpg",
+        "url": "../assets/images/artworks/singles/15/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/15/B.jpg",
+        "url": "../assets/images/artworks/singles/15/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/15/C.jpg",
+        "url": "../assets/images/artworks/singles/15/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/15/D.jpg",
+        "url": "../assets/images/artworks/singles/15/D.jpg",
         "type": "D"
       },
       {
-        "url": "artworks/singles/15/T.jpg",
+        "url": "../assets/images/artworks/singles/15/T.jpg",
         "type": "T"
       }
     ],
@@ -2092,23 +2092,23 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/14/A.jpg",
+        "url": "../assets/images/artworks/singles/14/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/14/B.jpg",
+        "url": "../assets/images/artworks/singles/14/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/14/C.jpg",
+        "url": "../assets/images/artworks/singles/14/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/14/D.jpg",
+        "url": "../assets/images/artworks/singles/14/D.jpg",
         "type": "D"
       },
       {
-        "url": "artworks/singles/14/T.jpg",
+        "url": "../assets/images/artworks/singles/14/T.jpg",
         "type": "T"
       }
     ],
@@ -2265,19 +2265,19 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/13/A.jpg",
+        "url": "../assets/images/artworks/singles/13/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/13/B.jpg",
+        "url": "../assets/images/artworks/singles/13/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/13/C.jpg",
+        "url": "../assets/images/artworks/singles/13/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/13/T.jpg",
+        "url": "../assets/images/artworks/singles/13/T.jpg",
         "type": "T"
       }
     ],
@@ -2420,19 +2420,19 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/12/A.jpg",
+        "url": "../assets/images/artworks/singles/12/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/12/B.jpg",
+        "url": "../assets/images/artworks/singles/12/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/12/C.jpg",
+        "url": "../assets/images/artworks/singles/12/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/12/T.jpg",
+        "url": "../assets/images/artworks/singles/12/T.jpg",
         "type": "T"
       }
     ],
@@ -2592,19 +2592,19 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/11/A.jpg",
+        "url": "../assets/images/artworks/singles/11/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/11/B.jpg",
+        "url": "../assets/images/artworks/singles/11/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/11/C.jpg",
+        "url": "../assets/images/artworks/singles/11/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/11/T.jpg",
+        "url": "../assets/images/artworks/singles/11/T.jpg",
         "type": "T"
       }
     ],
@@ -2745,19 +2745,19 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/10/A.jpg",
+        "url": "../assets/images/artworks/singles/10/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/10/B.jpg",
+        "url": "../assets/images/artworks/singles/10/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/10/C.jpg",
+        "url": "../assets/images/artworks/singles/10/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/10/T.jpg",
+        "url": "../assets/images/artworks/singles/10/T.jpg",
         "type": "T"
       }
     ],
@@ -2910,19 +2910,19 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/9/A.jpg",
+        "url": "../assets/images/artworks/singles/9/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/9/B.jpg",
+        "url": "../assets/images/artworks/singles/9/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/9/C.jpg",
+        "url": "../assets/images/artworks/singles/9/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/9/T.jpg",
+        "url": "../assets/images/artworks/singles/9/T.jpg",
         "type": "T"
       }
     ],
@@ -3070,19 +3070,19 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/8/A.jpg",
+        "url": "../assets/images/artworks/singles/8/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/8/B.jpg",
+        "url": "../assets/images/artworks/singles/8/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/8/C.jpg",
+        "url": "../assets/images/artworks/singles/8/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/8/T.jpg",
+        "url": "../assets/images/artworks/singles/8/T.jpg",
         "type": "T"
       }
     ],
@@ -3228,19 +3228,19 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/7/A.jpg",
+        "url": "../assets/images/artworks/singles/7/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/7/B.jpg",
+        "url": "../assets/images/artworks/singles/7/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/7/C.jpg",
+        "url": "../assets/images/artworks/singles/7/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/7/T.jpg",
+        "url": "../assets/images/artworks/singles/7/T.jpg",
         "type": "T"
       }
     ],
@@ -3388,19 +3388,19 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/6/A.jpg",
+        "url": "../assets/images/artworks/singles/6/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/6/B.jpg",
+        "url": "../assets/images/artworks/singles/6/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/6/C.jpg",
+        "url": "../assets/images/artworks/singles/6/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/6/T.jpg",
+        "url": "../assets/images/artworks/singles/6/T.jpg",
         "type": "T"
       }
     ],
@@ -3536,19 +3536,19 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/5/A.jpg",
+        "url": "../assets/images/artworks/singles/5/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/5/B.jpg",
+        "url": "../assets/images/artworks/singles/5/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/5/C.jpg",
+        "url": "../assets/images/artworks/singles/5/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/5/T.jpg",
+        "url": "../assets/images/artworks/singles/5/T.jpg",
         "type": "T"
       }
     ],
@@ -3688,19 +3688,19 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/4/A.jpg",
+        "url": "../assets/images/artworks/singles/4/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/4/B.jpg",
+        "url": "../assets/images/artworks/singles/4/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/4/C.jpg",
+        "url": "../assets/images/artworks/singles/4/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/4/T.jpg",
+        "url": "../assets/images/artworks/singles/4/T.jpg",
         "type": "T"
       }
     ],
@@ -3840,19 +3840,19 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/3/A.jpg",
+        "url": "../assets/images/artworks/singles/3/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/3/B.jpg",
+        "url": "../assets/images/artworks/singles/3/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/3/C.jpg",
+        "url": "../assets/images/artworks/singles/3/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/3/T.jpg",
+        "url": "../assets/images/artworks/singles/3/T.jpg",
         "type": "T"
       }
     ],
@@ -3990,19 +3990,19 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/2/A.jpg",
+        "url": "../assets/images/artworks/singles/2/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/2/B.jpg",
+        "url": "../assets/images/artworks/singles/2/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/2/C.jpg",
+        "url": "../assets/images/artworks/singles/2/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/2/T.jpg",
+        "url": "../assets/images/artworks/singles/2/T.jpg",
         "type": "T"
       }
     ],
@@ -4143,19 +4143,19 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/singles/1/A.jpg",
+        "url": "../assets/images/artworks/singles/1/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/singles/1/B.jpg",
+        "url": "../assets/images/artworks/singles/1/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/singles/1/C.jpg",
+        "url": "../assets/images/artworks/singles/1/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/singles/1/T.jpg",
+        "url": "../assets/images/artworks/singles/1/T.jpg",
         "type": "T"
       }
     ],
@@ -4294,19 +4294,19 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/albums/4/L.jpg",
+        "url": "../assets/images/artworks/albums/4/L.jpg",
         "type": "L"
       },
       {
-        "url": "artworks/albums/4/A.jpg",
+        "url": "../assets/images/artworks/albums/4/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/albums/4/B.jpg",
+        "url": "../assets/images/artworks/albums/4/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/albums/4/T.jpg",
+        "url": "../assets/images/artworks/albums/4/T.jpg",
         "type": "T"
       }
     ],
@@ -4772,15 +4772,15 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/albums/U/L1.jpg",
+        "url": "../assets/images/artworks/albums/U/L1.jpg",
         "type": "L1"
       },
       {
-        "url": "artworks/albums/U/L2.jpg",
+        "url": "../assets/images/artworks/albums/U/L2.jpg",
         "type": "L2"
       },
       {
-        "url": "artworks/albums/U/T.jpg",
+        "url": "../assets/images/artworks/albums/U/T.jpg",
         "type": "T"
       }
     ],
@@ -5190,19 +5190,19 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/albums/3/A.jpg",
+        "url": "../assets/images/artworks/albums/3/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/albums/3/B.jpg",
+        "url": "../assets/images/artworks/albums/3/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/albums/3/L.jpg",
+        "url": "../assets/images/artworks/albums/3/L.jpg",
         "type": "L"
       },
       {
-        "url": "artworks/albums/3/T.jpg",
+        "url": "../assets/images/artworks/albums/3/T.jpg",
         "type": "T"
       }
     ],
@@ -5750,23 +5750,23 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/albums/2/A.jpg",
+        "url": "../assets/images/artworks/albums/2/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/albums/2/B.jpg",
+        "url": "../assets/images/artworks/albums/2/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/albums/2/C.jpg",
+        "url": "../assets/images/artworks/albums/2/C.jpg",
         "type": "C"
       },
       {
-        "url": "artworks/albums/2/D.jpg",
+        "url": "../assets/images/artworks/albums/2/D.jpg",
         "type": "D"
       },
       {
-        "url": "artworks/albums/2/T.jpg",
+        "url": "../assets/images/artworks/albums/2/T.jpg",
         "type": "T"
       }
     ],
@@ -6371,15 +6371,15 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/albums/1/A.jpg",
+        "url": "../assets/images/artworks/albums/1/A.jpg",
         "type": "A"
       },
       {
-        "url": "artworks/albums/1/B.jpg",
+        "url": "../assets/images/artworks/albums/1/B.jpg",
         "type": "B"
       },
       {
-        "url": "artworks/albums/1/C.jpg",
+        "url": "../assets/images/artworks/albums/1/C.jpg",
         "type": "C"
       }
     ],
@@ -6888,7 +6888,7 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/digital/1/T.jpg",
+        "url": "../assets/images/artworks/digital/1/T.jpg",
         "type": "T"
       }
     ],
@@ -6923,7 +6923,7 @@
     "shopping": [],
     "artworks": [
       {
-        "url": "artworks/digital/2/T.jpg",
+        "url": "../assets/images/artworks/digital/2/T.jpg",
         "type": "T"
       }
     ],

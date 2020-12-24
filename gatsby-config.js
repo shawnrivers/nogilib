@@ -26,12 +26,14 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        name: 'images',
         path: path.join(__dirname, 'src/assets/images'),
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        name: 'pages',
         path: path.join(__dirname, 'src/data'),
       },
     },
