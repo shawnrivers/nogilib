@@ -225,8 +225,7 @@ export function convertProfileImages(params: {
       ...digitalGalleryWithDate,
       ...otherGalleryWithDate,
     ],
-    'date',
-    'asc'
+    'date'
   );
 
   const singles = getDiscographyProfileImages({

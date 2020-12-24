@@ -8,6 +8,7 @@ import { discographyRawArray } from 'server/actors/Discography/raw/editor';
 import { Discography } from 'server/actors/Discography';
 import { writeJSONFile } from 'server/utils/files';
 import { getDiscographyPageData } from 'server/pages/discography';
+import { getMembersPageData } from 'server/pages/members';
 
 // Generate raw data
 const songs = new Songs(songsRawArray);
@@ -28,7 +29,7 @@ const songsResultArray = songs.convertSongs({
   otherCdsRawArray,
   otherCdsRawObject: discography.getOtherCdsRawObject(),
 });
-const membersResultArray = members.convertMembers({
+members.convertMembers({
   unitsRawArray: units.rawArray,
   singlesRawArray,
   albumsRawArray,
@@ -38,15 +39,16 @@ const membersResultArray = members.convertMembers({
 const unitsResultArray = units.convertUnits({
   songsRawArray: songs.rawArray,
 });
-// const discographyResultArray = discography.convertDiscography({
-//   songsRawObject: songs.rawObject,
-// });
+discography.convertDiscography({
+  songsRawObject: songs.rawObject,
+});
 
 // Convert to page data
-const dicographyPageData = getDiscographyPageData(discography);
+const discographyPageData = getDiscographyPageData(discography);
+const membersPageData = getMembersPageData(members);
 
 // Store in JSON files
-writeJSONFile('./src/data/members.json', membersResultArray);
+writeJSONFile('./src/data/members.json', membersPageData);
 writeJSONFile('./src/data/songs.json', songsResultArray);
 writeJSONFile('./src/data/units.json', unitsResultArray);
-writeJSONFile('./src/data/discography.json', dicographyPageData);
+writeJSONFile('./src/data/discography.json', discographyPageData);
