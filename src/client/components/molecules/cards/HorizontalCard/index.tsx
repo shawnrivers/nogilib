@@ -3,7 +3,10 @@ import { jsx, css } from '@emotion/core';
 import * as React from 'react';
 import { Card, CardProps } from 'client/components/atoms/Card';
 import { commonStyles } from 'client/styles/tokens';
-import { GridImage } from 'client/components/atoms/images/GirdImage';
+import {
+  GridImage,
+  GridImageProps,
+} from 'client/components/atoms/images/GirdImage';
 import { Hashtag } from 'client/components/atoms/Hashtag';
 import {
   Typography,
@@ -12,7 +15,7 @@ import {
 
 export type HorizontalCardProps = Omit<CardProps, 'children' | 'title'> & {
   image: {
-    src: string;
+    fluid: GridImageProps['fluid'];
     alt: string;
   };
   title: {
@@ -49,7 +52,7 @@ export const HorizontalCard: React.FC<HorizontalCardProps> = props => {
           overflow: hidden;
         `}
       >
-        <GridImage src={image.src} alt={image.alt} />
+        <GridImage fluid={image.fluid} alt={image.alt} />
         <div
           css={css`
             display: flex;

@@ -6,7 +6,10 @@ import {
   TypographyProps,
 } from 'client/components/atoms/Typography';
 import { Card, CardProps } from 'client/components/atoms/Card';
-import { GridMemberImage } from 'client/components/atoms/images/GridMemberImage';
+import {
+  GridMemberImage,
+  GridMemberImageProps,
+} from 'client/components/atoms/images/GridMemberImage';
 import { PositionType } from 'server/actors/Members/constants/position';
 import { useAppTheme } from 'client/styles/tokens';
 import { BORDER_RADIUS } from 'client/styles/tokens/borderRadius';
@@ -74,7 +77,7 @@ const PositionBadge: React.FC<{
 };
 
 export type MemberCardProps = CardProps & {
-  profileImage: string;
+  profileImageFluid: GridMemberImageProps['fluid'];
   name: string;
   lang: string;
   nameElement?: TypographyProps['element'];
@@ -84,7 +87,7 @@ export type MemberCardProps = CardProps & {
 
 export const MemberCard: React.FC<MemberCardProps> = props => {
   const {
-    profileImage,
+    profileImageFluid,
     name,
     lang,
     nameElement = 'div',
@@ -108,7 +111,7 @@ export const MemberCard: React.FC<MemberCardProps> = props => {
       {...cardProps}
     >
       <article>
-        <GridMemberImage src={profileImage} alt="" />
+        <GridMemberImage fluid={profileImageFluid} alt="" />
         <Typography
           variant={textSize}
           element={nameElement}

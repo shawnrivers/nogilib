@@ -69,7 +69,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
                   <HorizontalCard
                     to={getSongUrl(track.key)}
                     image={{
-                      src: track.artwork,
+                      fluid: track.artworkFluid,
                       alt: '',
                     }}
                     title={{ text: track.title, lang: 'ja' }}
@@ -97,7 +97,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
                 {props.centers.map(member => (
                   <li key={member.name}>
                     <MemberCard
-                      profileImage={member.profileImage}
+                      profileImageFluid={member.profileImageFluid}
                       name={formatMemberName(member.nameNotations).name}
                       lang={formatMemberName(member.nameNotations).lang}
                       to={getMemberUrl(member.name)}
@@ -126,7 +126,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
               {props.artworks.map((artwork, i) => (
                 <li key={i}>
                   <GridImage
-                    src={artwork.url}
+                    fluid={artwork.fluid}
                     alt={`Type ${artwork.type}`}
                     shadow
                     fixedSize

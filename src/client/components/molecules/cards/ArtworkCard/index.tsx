@@ -1,7 +1,10 @@
 /**@jsx jsx */
 import { css, jsx } from '@emotion/core';
 import * as React from 'react';
-import { GridArtworkImage } from 'client/components/atoms/images/GirdArtworkImage';
+import {
+  GridArtworkImage,
+  GridArtworkImageProps,
+} from 'client/components/atoms/images/GirdArtworkImage';
 import {
   Typography,
   TypographyProps,
@@ -11,15 +14,15 @@ import { Card, CardProps } from 'client/components/atoms/Card';
 
 export const ArtworkCard: React.FC<
   CardProps & {
-    artwork: string;
     title: string;
+    artworkFluid: GridArtworkImageProps['fluid'];
     titleElement?: TypographyProps['element'];
     number: string;
     type: string;
   }
 > = props => {
   const {
-    artwork,
+    artworkFluid,
     title,
     titleElement = 'div',
     number,
@@ -29,7 +32,7 @@ export const ArtworkCard: React.FC<
   return (
     <Card {...cardProps}>
       <article>
-        <GridArtworkImage src={artwork} alt="" />
+        <GridArtworkImage fluid={artworkFluid} alt="" />
         <Typography
           variant="h7"
           element="div"

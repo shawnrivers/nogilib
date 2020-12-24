@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
+import { FluidObject } from 'gatsby-image';
 import { MemberResult } from 'server/actors/Members/models';
 import { MembersPage } from 'client/features/Members/template';
 import { sortByJoin, sortByGraduation, sortByMemberName } from 'utils/sorting';
@@ -23,7 +24,13 @@ export const query = graphql`
           graduatedDate
         }
         profileImages {
-          gallery
+          gallery {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
         }
       }
     }
@@ -35,7 +42,13 @@ type QueryResultMember = Pick<MemberResult, 'name' | 'join' | 'graduation'> & {
     MemberResult['nameNotations'],
     'lastName' | 'firstName' | 'lastNameEn' | 'firstNameEn'
   >;
-  profileImages: Pick<MemberResult['profileImages'], 'gallery'>;
+  profileImages: {
+    gallery: {
+      childImageSharp: {
+        fluid: FluidObject;
+      };
+    }[];
+  };
 };
 
 type QueryResult = {
@@ -125,7 +138,7 @@ const MembersPageContainer: React.FC<QueryResult> = props => {
 export default MembersPageContainer;
 
 type MemberCard = Omit<QueryResultMember, 'profileImages'> & {
-  profileImage: string;
+  profileImageFluid: FluidObject;
 };
 
 type MemberGroupByYear = {
@@ -136,7 +149,8 @@ type MemberGroupByYear = {
 function getMemberCards(membersData: QueryResultMember[]): MemberCard[] {
   return membersData.map(({ profileImages, ...restFields }) => ({
     ...restFields,
-    profileImage: profileImages.gallery.slice().reverse()[0],
+    profileImageFluid: profileImages.gallery.slice().reverse()[0]
+      .childImageSharp.fluid,
   }));
 }
 

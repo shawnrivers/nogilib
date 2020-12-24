@@ -1,5 +1,6 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
+import { FluidObject } from 'gatsby-image';
 import { SongPage } from 'client/features/Song/template';
 import { toCdNumber } from 'utils/strings';
 import { SongResult } from 'server/actors/Songs/models';
@@ -8,14 +9,19 @@ import { arrayToObject } from 'utils/arrays';
 import { PositionType } from 'server/actors/Members/constants/position';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { NameNotationsForIntl } from 'client/hooks/useIntl';
-import { KOJIHARU_IMAGE_SRC } from 'server/constants/paths';
 
 export const query = graphql`
   query($key: String!) {
     songsJson(key: { eq: $key }) {
       title
       type
-      artwork
+      artwork {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
       single {
         title
         number
@@ -54,6 +60,7 @@ export const query = graphql`
         lyrics
       }
     }
+
     allMembersJson {
       nodes {
         name
@@ -66,19 +73,51 @@ export const query = graphql`
           lastNameEn
         }
         profileImages {
-          gallery
+          gallery {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
           singles {
             number
-            url
+            url {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
+            }
           }
           albums {
             number
-            url
+            url {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
+            }
           }
           digital {
             number
-            url
+            url {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
+            }
           }
+        }
+      }
+    }
+
+    file(relativePath: { eq: "members/others/kojimaharuna.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
@@ -89,7 +128,6 @@ type QueryResultSong = Pick<
   SongResult,
   | 'title'
   | 'type'
-  | 'artwork'
   | 'single'
   | 'albums'
   | 'otherCds'
@@ -101,12 +139,46 @@ type QueryResultSong = Pick<
     center: SongResult['performers']['center'];
     fukujin: Pick<SongResult['performers']['fukujin'], 'members'>;
   };
+  artwork: {
+    childImageSharp: {
+      fluid: FluidObject;
+    };
+  };
 };
 
-type QueryResultMember = Pick<
-  MemberResult,
-  'name' | 'nameNotations' | 'profileImages'
->;
+type QueryResultMember = Pick<MemberResult, 'name' | 'nameNotations'> & {
+  profileImages: {
+    gallery: {
+      childImageSharp: {
+        fluid: FluidObject;
+      };
+    }[];
+    singles: {
+      number: MemberResult['profileImages']['singles'][0]['number'];
+      url: {
+        childImageSharp: {
+          fluid: FluidObject;
+        };
+      };
+    }[];
+    albums: {
+      number: MemberResult['profileImages']['albums'][0]['number'];
+      url: {
+        childImageSharp: {
+          fluid: FluidObject;
+        };
+      };
+    }[];
+    digital: {
+      number: MemberResult['profileImages']['digital'][0]['number'];
+      url: {
+        childImageSharp: {
+          fluid: FluidObject;
+        };
+      };
+    }[];
+  };
+};
 
 type SongData = {
   data: {
@@ -114,13 +186,18 @@ type SongData = {
     allMembersJson: {
       nodes: QueryResultMember[];
     };
+    file: {
+      childImageSharp: {
+        fluid: FluidObject;
+      };
+    };
   };
 };
 
 type Member = {
   name: MemberNameKey;
   nameNotations: NameNotationsForIntl;
-  profileImage: string;
+  profileImageFluid: FluidObject;
 };
 
 type SongPerformer = Member & {
@@ -133,13 +210,17 @@ export type SongPageProps = Pick<
   'title' | 'type' | 'performersTag' | 'creators'
 > & {
   songTags: string[];
-  artwork: string;
+  artworkFluid: FluidObject;
   formation: SongPerformer[][];
   centers: string[];
 };
 
 const SongPageContainer: React.FC<SongData> = props => {
-  const { songsJson: songData, allMembersJson } = props.data;
+  const {
+    songsJson: songData,
+    allMembersJson,
+    file: kojiharuImageData,
+  } = props.data;
   const membersData = allMembersJson.nodes;
 
   const songTags = React.useMemo(
@@ -157,7 +238,7 @@ const SongPageContainer: React.FC<SongData> = props => {
     const membersArray = membersData.map(memberData => ({
       name: memberData.name,
       nameNotations: memberData.nameNotations,
-      profileImage: getMemberProfileImage(
+      profileImageFluid: getMemberProfileImageFluid(
         songData.performersTag.album,
         memberData.profileImages
       ),
@@ -193,7 +274,7 @@ const SongPageContainer: React.FC<SongData> = props => {
                   lastNameEn: 'kojima',
                   firstNameEn: 'haruna',
                 },
-                profileImage: KOJIHARU_IMAGE_SRC,
+                profileImageFluid: kojiharuImageData.childImageSharp.fluid,
                 position: getMemberPosition(
                   MemberNameKey.KojimaHaruna,
                   songData.performers
@@ -203,7 +284,15 @@ const SongPageContainer: React.FC<SongData> = props => {
             }
           })
         ),
-    [members, songData.formations, songData.performers]
+    [
+      kojiharuImageData,
+      members,
+      songData.formations.firstRow,
+      songData.formations.fourthRow,
+      songData.formations.secondRow,
+      songData.formations.thirdRow,
+      songData.performers,
+    ]
   );
 
   return songData ? (
@@ -211,7 +300,7 @@ const SongPageContainer: React.FC<SongData> = props => {
       title={songData.title}
       songTags={songTags}
       type={songData.type}
-      artwork={songData.artwork}
+      artworkFluid={songData.artwork.childImageSharp.fluid}
       performersTag={songData.performersTag}
       formation={formation}
       centers={songData.performers.center}
@@ -222,23 +311,23 @@ const SongPageContainer: React.FC<SongData> = props => {
 
 export default SongPageContainer;
 
-function getMemberProfileImage(
+function getMemberProfileImageFluid(
   album: QueryResultSong['performersTag']['album'],
   profileImages: QueryResultMember['profileImages']
-): string {
+): FluidObject {
   const singleProfileImages = arrayToObject(profileImages.singles, 'number');
   const digitalProfileImages = arrayToObject(profileImages.digital, 'number');
   const albumProfileImages = arrayToObject(profileImages.albums, 'number');
 
   switch (album.type) {
     case 'single':
-      return singleProfileImages[album.number].url;
+      return singleProfileImages[album.number].url.childImageSharp.fluid;
     case 'digital':
-      return digitalProfileImages[album.number].url;
+      return digitalProfileImages[album.number].url.childImageSharp.fluid;
     case 'album':
-      return albumProfileImages[album.number].url;
+      return albumProfileImages[album.number].url.childImageSharp.fluid;
     default:
-      return profileImages.gallery.slice().reverse()[0];
+      return profileImages.gallery.slice().reverse()[0].childImageSharp.fluid;
   }
 }
 

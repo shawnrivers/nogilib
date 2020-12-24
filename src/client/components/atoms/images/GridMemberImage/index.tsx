@@ -4,6 +4,8 @@ import {
   GridImageProps,
 } from 'client/components/atoms/images/GirdImage';
 
-export const GridMemberImage: React.FC<GridImageProps> = props => {
+export type GridMemberImageProps = GridImageProps;
+
+export const GridMemberImage: React.FC<GridMemberImageProps> = props => {
   return <GridImage ratio={1.2} {...props} />;
 };

@@ -1,5 +1,6 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
+import { FluidObject } from 'gatsby-image';
 import { DiscographyResult } from 'server/actors/Discography/models';
 import { sortByDate } from 'utils/sorting';
 import {
@@ -17,7 +18,13 @@ export const query = graphql`
         type
         number
         artworks {
-          url
+          url {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
           type
         }
         release
@@ -31,7 +38,13 @@ type QueryResultDiscography = {
   key: DiscographyResult['key'];
   type: DiscographyResult['type'];
   number: DiscographyResult['number'];
-  artworks: DiscographyResult['artworks'];
+  artworks: (DiscographyResult['artworks'][0]['type'] & {
+    url: {
+      childImageSharp: {
+        fluid: FluidObject;
+      };
+    };
+  })[];
   release: DiscographyResult['release'];
 };
 

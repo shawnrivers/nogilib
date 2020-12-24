@@ -1,21 +1,23 @@
 /**@jsx jsx */
 import { css, jsx } from '@emotion/core';
 import * as React from 'react';
+import { FluidObject } from 'gatsby-image';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
-import {
-  DynamicImage,
-  DynamicImageProps,
-} from 'client/components/atoms/images/DynamicImage';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import { BorderRadiusKey } from 'client/styles/tokens/borderRadius';
+import {
+  StaticImage,
+  StaticImageProps,
+} from 'client/components/atoms/images/StaticImage';
 
-type ImageProps = DynamicImageProps & {
+type ImageProps = {
+  fluid: FluidObject;
   borderRadius: BorderRadiusKey;
   shadow: boolean;
-};
+} & StaticImageProps;
 
 const Image: React.FC<ImageProps> = props => {
-  const { src, alt, borderRadius, shadow, ...restProps } = props;
+  const { fluid, borderRadius, shadow, imgStyle, ...staticImageProps } = props;
   const theme = useAppTheme();
 
   return (
@@ -42,17 +44,20 @@ const Image: React.FC<ImageProps> = props => {
           position: absolute;
         `}
       >
-        <DynamicImage
-          src={src}
-          alt={alt}
+        <StaticImage
+          fluid={fluid}
           css={css`
             display: block;
             width: 100%;
             height: 100%;
             transform-origin: center;
           `}
-          imgStyle={{ objectFit: 'cover', objectPosition: 'center top' }}
-          {...restProps}
+          imgStyle={{
+            ...imgStyle,
+            objectFit: 'cover',
+            objectPosition: 'center top',
+          }}
+          {...staticImageProps}
         />
       </div>
     </div>
@@ -60,22 +65,21 @@ const Image: React.FC<ImageProps> = props => {
 };
 
 export type GridImageProps = Omit<ImageProps, 'borderRadius' | 'shadow'> & {
-  ratio?: number;
-  fixedSize?: boolean;
   borderRadius?: BorderRadiusKey;
   shadow?: boolean;
+  ratio?: number;
+  fixedSize?: boolean;
+  className?: string;
 };
 
 export const GridImage: React.FC<GridImageProps> = props => {
   const {
-    src,
-    alt,
-    ratio = 1,
-    fixedSize = false,
     shadow = false,
     borderRadius = 's',
+    ratio = 1,
+    fixedSize = false,
     className,
-    ...restProps
+    fluid,
   } = props;
 
   const theme = useAppTheme();
@@ -101,7 +105,7 @@ export const GridImage: React.FC<GridImageProps> = props => {
   }, [borderRadius, fixedSize, ratio, shadow, theme.elevation]);
 
   return (
-    <div css={containerStyles} className={className as string}>
+    <div css={containerStyles} className={className}>
       <div
         css={css`
           position: absolute;
@@ -111,13 +115,7 @@ export const GridImage: React.FC<GridImageProps> = props => {
           left: 0;
         `}
       >
-        <Image
-          src={src}
-          alt={alt}
-          shadow={shadow}
-          borderRadius={borderRadius}
-          {...restProps}
-        />
+        <Image fluid={fluid} shadow={shadow} borderRadius={borderRadius} />
       </div>
     </div>
   );
