@@ -18,11 +18,13 @@ export class Songs {
   private rawDataArray: SongsRawArray;
   private rawDataObject: SongsRawObject;
   private resultData: SongsResultArray;
+  public isConverted: boolean;
 
   public constructor(songsRawArray: SongsRawArray) {
     this.rawDataArray = songsRawArray;
     this.rawDataObject = arrayToObject(songsRawArray, 'title');
     this.resultData = [];
+    this.isConverted = false;
   }
 
   public get rawArray(): SongsRawArray {
@@ -71,6 +73,7 @@ export class Songs {
     }
 
     this.resultData = songsResult;
+    this.isConverted = true;
     return songsResult;
   }
 
