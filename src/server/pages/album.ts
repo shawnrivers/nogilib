@@ -9,10 +9,7 @@ export type AlbumPageData = {
   title: DiscographyResult['title'];
   type: DiscographyResult['type'];
   number: DiscographyResult['number'];
-  artworks: Record<
-    DiscographyResult['artworks'][0]['type'],
-    DiscographyResult['artworks'][0]['url']
-  >;
+  artworks: DiscographyResult['artworks'];
   release: DiscographyResult['release'];
   songs: {
     key: DiscographyResult['songs'][0]['key'];
@@ -26,13 +23,6 @@ export type AlbumPageData = {
     albumProfileImage: MemberResult['profileImages']['gallery'][0];
   }[];
 }[];
-
-function getArtworks(album: DiscographyResult): AlbumPageData[0]['artworks'] {
-  return Object.assign(
-    {},
-    ...album.artworks.map(artwork => ({ [artwork.type]: artwork.url }))
-  );
-}
 
 function getAlbumCenters(
   album: DiscographyResult,
@@ -86,7 +76,7 @@ export function getAlbumPageData(
     title: album.title,
     type: album.type,
     number: album.number,
-    artworks: getArtworks(album),
+    artworks: album.artworks,
     release: album.release,
     songs: album.songs.map(song => ({
       key: song.key,

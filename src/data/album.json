@@ -4,9 +4,12 @@
     "title": "僕は僕を好きになる",
     "type": "single",
     "number": "26",
-    "artworks": {
-      "A": "../assets/images/artworks/artwork_no_image.png"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/artwork_no_image.png",
+        "type": "A"
+      }
+    ],
     "release": "2021-01-27",
     "songs": [
       {
@@ -78,13 +81,28 @@
     "title": "しあわせの保護色",
     "type": "single",
     "number": "25",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/25/A.jpg",
-      "B": "../assets/images/artworks/singles/25/B.jpg",
-      "C": "../assets/images/artworks/singles/25/C.jpg",
-      "D": "../assets/images/artworks/singles/25/D.jpg",
-      "T": "../assets/images/artworks/singles/25/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/25/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/25/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/25/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/25/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "../assets/images/artworks/singles/25/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2020-03-25",
     "songs": [
       {
@@ -172,13 +190,28 @@
     "title": "夜明けまで強がらなくてもいい",
     "type": "single",
     "number": "24",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/24/A.jpg",
-      "B": "../assets/images/artworks/singles/24/B.jpg",
-      "C": "../assets/images/artworks/singles/24/C.jpg",
-      "D": "../assets/images/artworks/singles/24/D.jpg",
-      "T": "../assets/images/artworks/singles/24/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/24/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/24/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/24/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/24/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "../assets/images/artworks/singles/24/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2019-09-04",
     "songs": [
       {
@@ -266,13 +299,28 @@
     "title": "Sing Out!",
     "type": "single",
     "number": "23",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/23/A.jpg",
-      "B": "../assets/images/artworks/singles/23/B.jpg",
-      "C": "../assets/images/artworks/singles/23/C.jpg",
-      "D": "../assets/images/artworks/singles/23/D.jpg",
-      "T": "../assets/images/artworks/singles/23/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/23/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/23/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/23/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/23/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "../assets/images/artworks/singles/23/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2019-05-29",
     "songs": [
       {
@@ -360,13 +408,28 @@
     "title": "帰り道は遠回りしたくなる",
     "type": "single",
     "number": "22",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/22/A.jpg",
-      "B": "../assets/images/artworks/singles/22/B.jpg",
-      "C": "../assets/images/artworks/singles/22/C.jpg",
-      "D": "../assets/images/artworks/singles/22/D.jpg",
-      "T": "../assets/images/artworks/singles/22/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/22/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/22/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/22/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/22/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "../assets/images/artworks/singles/22/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2018-11-14",
     "songs": [
       {
@@ -454,13 +517,28 @@
     "title": "ジコチューで行こう!",
     "type": "single",
     "number": "21",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/21/A.jpg",
-      "B": "../assets/images/artworks/singles/21/B.jpg",
-      "C": "../assets/images/artworks/singles/21/C.jpg",
-      "D": "../assets/images/artworks/singles/21/D.jpg",
-      "T": "../assets/images/artworks/singles/21/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/21/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/21/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/21/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/21/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "../assets/images/artworks/singles/21/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2018-08-08",
     "songs": [
       {
@@ -548,13 +626,28 @@
     "title": "シンクロニシティ",
     "type": "single",
     "number": "20",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/20/A.jpg",
-      "B": "../assets/images/artworks/singles/20/B.jpg",
-      "C": "../assets/images/artworks/singles/20/C.jpg",
-      "D": "../assets/images/artworks/singles/20/D.jpg",
-      "T": "../assets/images/artworks/singles/20/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/20/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/20/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/20/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/20/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "../assets/images/artworks/singles/20/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2018-04-25",
     "songs": [
       {
@@ -642,13 +735,28 @@
     "title": "いつかできるから今日できる",
     "type": "single",
     "number": "19",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/19/A.jpg",
-      "B": "../assets/images/artworks/singles/19/B.jpg",
-      "C": "../assets/images/artworks/singles/19/C.jpg",
-      "D": "../assets/images/artworks/singles/19/D.jpg",
-      "T": "../assets/images/artworks/singles/19/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/19/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/19/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/19/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/19/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "../assets/images/artworks/singles/19/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2017-10-11",
     "songs": [
       {
@@ -748,13 +856,28 @@
     "title": "逃げ水",
     "type": "single",
     "number": "18",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/18/A.jpg",
-      "B": "../assets/images/artworks/singles/18/B.jpg",
-      "C": "../assets/images/artworks/singles/18/C.jpg",
-      "D": "../assets/images/artworks/singles/18/D.jpg",
-      "T": "../assets/images/artworks/singles/18/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/18/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/18/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/18/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/18/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "../assets/images/artworks/singles/18/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2017-08-09",
     "songs": [
       {
@@ -854,13 +977,28 @@
     "title": "インフルエンサー",
     "type": "single",
     "number": "17",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/17/A.jpg",
-      "B": "../assets/images/artworks/singles/17/B.jpg",
-      "C": "../assets/images/artworks/singles/17/C.jpg",
-      "D": "../assets/images/artworks/singles/17/D.jpg",
-      "T": "../assets/images/artworks/singles/17/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/17/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/17/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/17/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/17/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "../assets/images/artworks/singles/17/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2017-03-22",
     "songs": [
       {
@@ -960,13 +1098,28 @@
     "title": "サヨナラの意味",
     "type": "single",
     "number": "16",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/16/A.jpg",
-      "B": "../assets/images/artworks/singles/16/B.jpg",
-      "C": "../assets/images/artworks/singles/16/C.jpg",
-      "D": "../assets/images/artworks/singles/16/D.jpg",
-      "T": "../assets/images/artworks/singles/16/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/16/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/16/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/16/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/16/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "../assets/images/artworks/singles/16/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2016-11-09",
     "songs": [
       {
@@ -1054,13 +1207,28 @@
     "title": "裸足でSummer",
     "type": "single",
     "number": "15",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/15/A.jpg",
-      "B": "../assets/images/artworks/singles/15/B.jpg",
-      "C": "../assets/images/artworks/singles/15/C.jpg",
-      "D": "../assets/images/artworks/singles/15/D.jpg",
-      "T": "../assets/images/artworks/singles/15/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/15/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/15/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/15/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/15/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "../assets/images/artworks/singles/15/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2016-07-27",
     "songs": [
       {
@@ -1148,13 +1316,28 @@
     "title": "ハルジオンが咲く頃",
     "type": "single",
     "number": "14",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/14/A.jpg",
-      "B": "../assets/images/artworks/singles/14/B.jpg",
-      "C": "../assets/images/artworks/singles/14/C.jpg",
-      "D": "../assets/images/artworks/singles/14/D.jpg",
-      "T": "../assets/images/artworks/singles/14/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/14/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/14/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/14/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/14/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "../assets/images/artworks/singles/14/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2016-03-23",
     "songs": [
       {
@@ -1242,12 +1425,24 @@
     "title": "今、話したい誰かがいる",
     "type": "single",
     "number": "13",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/13/A.jpg",
-      "B": "../assets/images/artworks/singles/13/B.jpg",
-      "C": "../assets/images/artworks/singles/13/C.jpg",
-      "T": "../assets/images/artworks/singles/13/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/13/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/13/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/13/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/13/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2015-10-28",
     "songs": [
       {
@@ -1337,12 +1532,24 @@
     "title": "太陽ノック",
     "type": "single",
     "number": "12",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/12/A.jpg",
-      "B": "../assets/images/artworks/singles/12/B.jpg",
-      "C": "../assets/images/artworks/singles/12/C.jpg",
-      "T": "../assets/images/artworks/singles/12/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/12/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/12/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/12/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/12/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2015-07-22",
     "songs": [
       {
@@ -1430,12 +1637,24 @@
     "title": "命は美しい",
     "type": "single",
     "number": "11",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/11/A.jpg",
-      "B": "../assets/images/artworks/singles/11/B.jpg",
-      "C": "../assets/images/artworks/singles/11/C.jpg",
-      "T": "../assets/images/artworks/singles/11/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/11/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/11/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/11/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/11/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2015-03-18",
     "songs": [
       {
@@ -1513,12 +1732,24 @@
     "title": "何度目の青空か?",
     "type": "single",
     "number": "10",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/10/A.jpg",
-      "B": "../assets/images/artworks/singles/10/B.jpg",
-      "C": "../assets/images/artworks/singles/10/C.jpg",
-      "T": "../assets/images/artworks/singles/10/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/10/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/10/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/10/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/10/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2014-10-08",
     "songs": [
       {
@@ -1596,12 +1827,24 @@
     "title": "夏のFree&Easy",
     "type": "single",
     "number": "9",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/9/A.jpg",
-      "B": "../assets/images/artworks/singles/9/B.jpg",
-      "C": "../assets/images/artworks/singles/9/C.jpg",
-      "T": "../assets/images/artworks/singles/9/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/9/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/9/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/9/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/9/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2014-07-09",
     "songs": [
       {
@@ -1679,12 +1922,24 @@
     "title": "気づいたら片想い",
     "type": "single",
     "number": "8",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/8/A.jpg",
-      "B": "../assets/images/artworks/singles/8/B.jpg",
-      "C": "../assets/images/artworks/singles/8/C.jpg",
-      "T": "../assets/images/artworks/singles/8/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/8/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/8/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/8/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/8/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2014-04-02",
     "songs": [
       {
@@ -1762,12 +2017,24 @@
     "title": "バレッタ",
     "type": "single",
     "number": "7",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/7/A.jpg",
-      "B": "../assets/images/artworks/singles/7/B.jpg",
-      "C": "../assets/images/artworks/singles/7/C.jpg",
-      "T": "../assets/images/artworks/singles/7/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/7/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/7/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/7/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/7/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2013-11-27",
     "songs": [
       {
@@ -1845,12 +2112,24 @@
     "title": "ガールズルール",
     "type": "single",
     "number": "6",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/6/A.jpg",
-      "B": "../assets/images/artworks/singles/6/B.jpg",
-      "C": "../assets/images/artworks/singles/6/C.jpg",
-      "T": "../assets/images/artworks/singles/6/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/6/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/6/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/6/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/6/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2013-07-03",
     "songs": [
       {
@@ -1928,12 +2207,24 @@
     "title": "君の名は希望",
     "type": "single",
     "number": "5",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/5/A.jpg",
-      "B": "../assets/images/artworks/singles/5/B.jpg",
-      "C": "../assets/images/artworks/singles/5/C.jpg",
-      "T": "../assets/images/artworks/singles/5/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/5/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/5/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/5/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/5/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2013-03-31",
     "songs": [
       {
@@ -2011,12 +2302,24 @@
     "title": "制服のマネキン",
     "type": "single",
     "number": "4",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/4/A.jpg",
-      "B": "../assets/images/artworks/singles/4/B.jpg",
-      "C": "../assets/images/artworks/singles/4/C.jpg",
-      "T": "../assets/images/artworks/singles/4/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/4/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/4/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/4/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/4/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2012-12-19",
     "songs": [
       {
@@ -2094,12 +2397,24 @@
     "title": "走れ!Bicycle",
     "type": "single",
     "number": "3",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/3/A.jpg",
-      "B": "../assets/images/artworks/singles/3/B.jpg",
-      "C": "../assets/images/artworks/singles/3/C.jpg",
-      "T": "../assets/images/artworks/singles/3/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/3/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/3/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/3/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/3/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2012-08-22",
     "songs": [
       {
@@ -2177,12 +2492,24 @@
     "title": "おいでシャンプー",
     "type": "single",
     "number": "2",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/2/A.jpg",
-      "B": "../assets/images/artworks/singles/2/B.jpg",
-      "C": "../assets/images/artworks/singles/2/C.jpg",
-      "T": "../assets/images/artworks/singles/2/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/2/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/2/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/2/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/2/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2012-05-02",
     "songs": [
       {
@@ -2260,12 +2587,24 @@
     "title": "ぐるぐるカーテン",
     "type": "single",
     "number": "1",
-    "artworks": {
-      "A": "../assets/images/artworks/singles/1/A.jpg",
-      "B": "../assets/images/artworks/singles/1/B.jpg",
-      "C": "../assets/images/artworks/singles/1/C.jpg",
-      "T": "../assets/images/artworks/singles/1/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/singles/1/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/1/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/1/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/1/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2012-02-22",
     "songs": [
       {
@@ -2343,12 +2682,24 @@
     "title": "今が思い出になるまで",
     "type": "album",
     "number": "4",
-    "artworks": {
-      "L": "../assets/images/artworks/albums/4/L.jpg",
-      "A": "../assets/images/artworks/albums/4/A.jpg",
-      "B": "../assets/images/artworks/albums/4/B.jpg",
-      "T": "../assets/images/artworks/albums/4/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/albums/4/L.jpg",
+        "type": "L"
+      },
+      {
+        "url": "../assets/images/artworks/albums/4/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/albums/4/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/albums/4/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2019-04-17",
     "songs": [
       {
@@ -2608,11 +2959,20 @@
     "title": "僕だけの君〜Under Super Best〜",
     "type": "album",
     "number": "U",
-    "artworks": {
-      "L1": "../assets/images/artworks/albums/U/L1.jpg",
-      "L2": "../assets/images/artworks/albums/U/L2.jpg",
-      "T": "../assets/images/artworks/albums/U/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/albums/U/L1.jpg",
+        "type": "L1"
+      },
+      {
+        "url": "../assets/images/artworks/albums/U/L2.jpg",
+        "type": "L2"
+      },
+      {
+        "url": "../assets/images/artworks/albums/U/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2018-01-10",
     "songs": [
       {
@@ -2831,12 +3191,24 @@
     "title": "生まれてから初めて見た夢",
     "type": "album",
     "number": "3",
-    "artworks": {
-      "A": "../assets/images/artworks/albums/3/A.jpg",
-      "B": "../assets/images/artworks/albums/3/B.jpg",
-      "L": "../assets/images/artworks/albums/3/L.jpg",
-      "T": "../assets/images/artworks/albums/3/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/albums/3/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/albums/3/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/albums/3/L.jpg",
+        "type": "L"
+      },
+      {
+        "url": "../assets/images/artworks/albums/3/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2017-05-24",
     "songs": [
       {
@@ -3135,13 +3507,28 @@
     "title": "それぞれの椅子",
     "type": "album",
     "number": "2",
-    "artworks": {
-      "A": "../assets/images/artworks/albums/2/A.jpg",
-      "B": "../assets/images/artworks/albums/2/B.jpg",
-      "C": "../assets/images/artworks/albums/2/C.jpg",
-      "D": "../assets/images/artworks/albums/2/D.jpg",
-      "T": "../assets/images/artworks/albums/2/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/albums/2/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/albums/2/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/albums/2/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/albums/2/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "../assets/images/artworks/albums/2/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2016-05-25",
     "songs": [
       {
@@ -3479,11 +3866,20 @@
     "title": "透明な色",
     "type": "album",
     "number": "1",
-    "artworks": {
-      "A": "../assets/images/artworks/albums/1/A.jpg",
-      "B": "../assets/images/artworks/albums/1/B.jpg",
-      "C": "../assets/images/artworks/albums/1/C.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/albums/1/A.jpg",
+        "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/albums/1/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/albums/1/C.jpg",
+        "type": "C"
+      }
+    ],
     "release": "2015-01-27",
     "songs": [
       {
@@ -3770,9 +4166,12 @@
     "title": "世界中の隣人よ",
     "type": "digital",
     "number": "1",
-    "artworks": {
-      "T": "../assets/images/artworks/digital/1/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/digital/1/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2020-06-17",
     "songs": [
       {
@@ -3791,9 +4190,12 @@
     "title": "Route 246",
     "type": "digital",
     "number": "2",
-    "artworks": {
-      "T": "../assets/images/artworks/digital/2/T.jpg"
-    },
+    "artworks": [
+      {
+        "url": "../assets/images/artworks/digital/2/T.jpg",
+        "type": "T"
+      }
+    ],
     "release": "2020-07-24",
     "songs": [
       {
