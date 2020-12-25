@@ -39,7 +39,7 @@ members.convertMembers({
   digitalRawArray: otherCdsRawArray,
   songsRawObject: songs.rawObject,
 });
-const unitsResultArray = units.convertUnits({
+units.convertUnits({
   songsRawArray: songs.rawArray,
 });
 discography.convertDiscography({
@@ -57,6 +57,5 @@ const songPageData = getSongPageData(songs, members);
 writeJSONFile('./src/data/members.json', membersPageData);
 writeJSONFile('./src/data/member.json', memberPageData);
 writeJSONFile('./src/data/song.json', songPageData);
-writeJSONFile('./src/data/units.json', unitsResultArray);
 writeJSONFile('./src/data/discography.json', discographyPageData);
 writeJSONFile('./src/data/album.json', albumPageData);
