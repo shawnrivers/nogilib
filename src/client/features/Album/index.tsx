@@ -6,7 +6,6 @@ import { PageContent } from 'client/components/templates/Page';
 import { commonStyles } from 'client/styles/tokens';
 import { toCdNumber } from 'utils/strings';
 import { TextDivider } from 'client/components/molecules/TextDivider';
-import { AlbumPageProps } from 'client/features/Album/container';
 import { MemberCard } from 'client/components/molecules/cards/MemberCard';
 import { getMemberUrl, getSongUrl } from 'client/utils/urls';
 import { useTranslations } from 'client/hooks/useTranslations';
@@ -15,6 +14,7 @@ import { useIntl } from 'client/hooks/useIntl';
 import { GridImage } from 'client/components/atoms/images/GirdImage';
 import { useLanguageContext } from 'client/store/language/hook';
 import { PageHelmet } from 'client/layouts/PageHelmet';
+import { AlbumPageProps } from 'pages/discography/{AlbumJson.key}';
 
 export const AlbumPage: React.FC<AlbumPageProps> = props => {
   const { Translation, getTranslation } = useTranslations();
@@ -97,7 +97,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
                 {props.centers.map(member => (
                   <li key={member.name}>
                     <MemberCard
-                      profileImageFluid={member.profileImageFluid}
+                      profileImageFluid={member.albumProfileImageFluid}
                       name={formatMemberName(member.nameNotations).name}
                       lang={formatMemberName(member.nameNotations).lang}
                       to={getMemberUrl(member.name)}
