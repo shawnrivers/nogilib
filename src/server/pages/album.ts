@@ -22,12 +22,12 @@ export type AlbumPageData = {
     nameNotations: MemberResult['nameNotations'];
     albumProfileImage: MemberResult['profileImages']['gallery'][0];
   }[];
-}[];
+};
 
 function getAlbumCenters(
   album: DiscographyResult,
   members: Members
-): AlbumPageData[0]['centers'] {
+): AlbumPageData['centers'] {
   const membersObject = members.getResultObject();
 
   const titleSong = album.songs[0];
@@ -62,7 +62,7 @@ function getAlbumCenters(
 export function getAlbumPageData(
   discography: Discography,
   members: Members
-): AlbumPageData {
+): AlbumPageData[] {
   if (!discography.isConverted) {
     throw new Error('Please convert Discography data at first.');
   }

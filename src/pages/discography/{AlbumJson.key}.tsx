@@ -49,23 +49,23 @@ export const query = graphql`
 `;
 
 type AlbumPageDataNode = {
-  title: AlbumPageData[0]['title'];
-  type: AlbumPageData[0]['type'];
-  number: AlbumPageData[0]['number'];
+  title: AlbumPageData['title'];
+  type: AlbumPageData['type'];
+  number: AlbumPageData['number'];
   artworks: {
     url: {
       childImageSharp: {
         fluid: FluidObject;
       };
     };
-    type: AlbumPageData[0]['artworks'][0]['type'];
+    type: AlbumPageData['artworks'][0]['type'];
   }[];
-  release: AlbumPageData[0]['release'];
-  songs: AlbumPageData[0]['songs'];
+  release: AlbumPageData['release'];
+  songs: AlbumPageData['songs'];
   centers: {
-    name: AlbumPageData[0]['centers'][0]['name'];
+    name: AlbumPageData['centers'][0]['name'];
     nameNotations: Pick<
-      AlbumPageData[0]['centers'][0]['nameNotations'],
+      AlbumPageData['centers'][0]['nameNotations'],
       'firstName' | 'firstNameEn' | 'lastName' | 'lastNameEn'
     >;
     albumProfileImage: {

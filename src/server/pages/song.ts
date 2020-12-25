@@ -13,6 +13,7 @@ export type SongPageData = {
   title: SongResult['title'];
   type: SongResult['type'];
   artwork: SongResult['artwork'];
+  creators: SongResult['creators'];
   single: SongResult['single'];
   albums: SongResult['albums'];
   otherCds: SongResult['otherCds'];
@@ -21,7 +22,7 @@ export type SongPageData = {
     name: MemberResult['name'];
     nameNotations: MemberResult['nameNotations'];
     profileImage: string;
-    position: PositionType | null;
+    position: PositionType.Center | PositionType.Fukujin | null;
     isMember: boolean;
   }[][];
 };
@@ -29,7 +30,7 @@ export type SongPageData = {
 function getPerformerPosition(
   song: SongResult,
   memberName: MemberResult['name']
-): PositionType | null {
+): SongPageData['performers'][0][0]['position'] {
   if (song.performers.center.includes(memberName)) {
     return PositionType.Center;
   }
@@ -125,6 +126,7 @@ export function getSongPageData(
     title: song.title,
     type: song.type,
     artwork: song.artwork,
+    creators: song.creators,
     single: song.single,
     albums: song.albums,
     otherCds: song.otherCds,

@@ -19,9 +19,9 @@ export type MemberPageData = {
   photoAlbums: MemberResult['photoAlbums'];
   positionsHistory: MemberResult['positionsHistory'];
   positionsCounter: MemberResult['positionsCounter'];
-}[];
+};
 
-export function getMemberPageData(members: Members): MemberPageData {
+export function getMemberPageData(members: Members): MemberPageData[] {
   if (!members.isConverted) {
     throw new Error('Please convert Members data at first.');
   }
