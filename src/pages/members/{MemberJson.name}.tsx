@@ -71,33 +71,33 @@ export const query = graphql`
 `;
 
 type MemberPageDataNode = {
-  nameNotations: MemberPageData[0]['nameNotations'];
+  nameNotations: MemberPageData['nameNotations'];
   profileImages: {
     childImageSharp: {
       fluid: FluidObject;
     };
   }[];
-  join: MemberPageData[0]['join'];
+  join: MemberPageData['join'];
   graduation: {
-    isGraduated: MemberPageData[0]['graduation']['isGraduated'];
+    isGraduated: MemberPageData['graduation']['isGraduated'];
   };
-  birthday: MemberPageData[0]['birthday'];
-  height: MemberPageData[0]['height'];
-  bloodType: MemberPageData[0]['bloodType'];
-  origin: MemberPageData[0]['origin'];
-  units: MemberPageData[0]['units'];
-  corps: MemberPageData[0]['corps'];
-  glowStickColor: MemberPageData[0]['glowStickColor'];
-  sites: MemberPageData[0]['sites'];
-  photoAlbums: (Omit<MemberPageData[0]['photoAlbums'][0], 'cover'> & {
+  birthday: MemberPageData['birthday'];
+  height: MemberPageData['height'];
+  bloodType: MemberPageData['bloodType'];
+  origin: MemberPageData['origin'];
+  units: MemberPageData['units'];
+  corps: MemberPageData['corps'];
+  glowStickColor: MemberPageData['glowStickColor'];
+  sites: MemberPageData['sites'];
+  photoAlbums: (Omit<MemberPageData['photoAlbums'][0], 'cover'> & {
     cover: {
       childImageSharp: {
         fluid: FluidObject;
       };
     };
   })[];
-  positionsHistory: MemberPageData[0]['positionsHistory'];
-  positionsCounter: MemberPageData[0]['positionsCounter'];
+  positionsHistory: MemberPageData['positionsHistory'];
+  positionsCounter: MemberPageData['positionsCounter'];
 };
 
 export type MemberPageProps = Omit<

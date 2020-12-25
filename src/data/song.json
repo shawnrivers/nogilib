@@ -4,6 +4,20 @@
     "title": "ぐるぐるカーテン",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/1/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "黒須克彦"
+      ],
+      "arrange": [
+        "湯浅篤"
+      ],
+      "direct": [
+        "操上和美"
+      ]
+    },
     "single": {
       "title": "ぐるぐるカーテン",
       "number": "1"
@@ -260,6 +274,18 @@
     "title": "左胸の勇気",
     "type": "under",
     "artwork": "../assets/images/artworks/singles/1/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "小内喜文"
+      ],
+      "arrange": [
+        "佐々木裕"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "ぐるぐるカーテン",
       "number": "1"
@@ -528,6 +554,20 @@
     "title": "乃木坂の詩",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/1/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "井手コウジ"
+      ],
+      "arrange": [
+        "井手コウジ"
+      ],
+      "direct": [
+        "南流石"
+      ]
+    },
     "single": {
       "title": "ぐるぐるカーテン",
       "number": "1"
@@ -1018,6 +1058,21 @@
     "title": "会いたかったかもしれない",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/1/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "BOUNCEBACK",
+        "MIKOTO"
+      ],
+      "arrange": [
+        "野中雄一"
+      ],
+      "direct": [
+        "久保茂昭"
+      ]
+    },
     "single": {
       "title": "ぐるぐるカーテン",
       "number": "1"
@@ -1321,6 +1376,20 @@
     "title": "失いたくないから",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/1/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "蛯原ランス"
+      ],
+      "arrange": [
+        "塩川満己"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
+    },
     "single": {
       "title": "ぐるぐるカーテン",
       "number": "1"
@@ -1629,6 +1698,18 @@
     "title": "白い雲にのって",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/1/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "太田美知彦"
+      ],
+      "arrange": [
+        "太田美知彦"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "ぐるぐるカーテン",
       "number": "1"
@@ -1932,6 +2013,20 @@
     "title": "おいでシャンプー",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/2/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "小田切大"
+      ],
+      "arrange": [
+        "TATOO"
+      ],
+      "direct": [
+        "高橋栄樹"
+      ]
+    },
     "single": {
       "title": "おいでシャンプー",
       "number": "2"
@@ -2188,6 +2283,20 @@
     "title": "狼に口笛を",
     "type": "under",
     "artwork": "../assets/images/artworks/singles/2/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset"
+      ],
+      "arrange": [
+        "シライシ紗トリ"
+      ],
+      "direct": [
+        "福居英晃"
+      ]
+    },
     "single": {
       "title": "おいでシャンプー",
       "number": "2"
@@ -2460,6 +2569,18 @@
     "title": "心の薬",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/2/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "MIKOTO"
+      ],
+      "arrange": [
+        "木之下慶行"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "おいでシャンプー",
       "number": "2"
@@ -2763,6 +2884,20 @@
     "title": "偶然を言い訳にして",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/2/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "坂部大介"
+      ],
+      "arrange": [
+        "中土智博"
+      ],
+      "direct": [
+        "中村太洸"
+      ]
+    },
     "single": {
       "title": "おいでシャンプー",
       "number": "2"
@@ -2842,6 +2977,20 @@
     "title": "水玉模様",
     "type": "solo",
     "artwork": "../assets/images/artworks/singles/2/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "若田部誠"
+      ],
+      "arrange": [
+        "若田部誠"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
+    },
     "single": {
       "title": "おいでシャンプー",
       "number": "2"
@@ -2879,6 +3028,18 @@
     "title": "ハウス!",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/2/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "y@suo ohtani"
+      ],
+      "arrange": [
+        "y@suo ohtani"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "おいでシャンプー",
       "number": "2"
@@ -3187,6 +3348,23 @@
     "title": "走れ!Bicycle",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/3/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Shusui",
+        "伊藤涼",
+        "木村篤史",
+        "ヒロイズム"
+      ],
+      "arrange": [
+        "湯浅篤"
+      ],
+      "direct": [
+        "中島哲也"
+      ]
+    },
     "single": {
       "title": "走れ!Bicycle",
       "number": "3"
@@ -3443,6 +3621,20 @@
     "title": "涙がまだ悲しみだった頃",
     "type": "under",
     "artwork": "../assets/images/artworks/singles/3/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "内田智之"
+      ],
+      "arrange": [
+        "TATOO"
+      ],
+      "direct": [
+        "関和亮"
+      ]
+    },
     "single": {
       "title": "走れ!Bicycle",
       "number": "3"
@@ -3719,6 +3911,20 @@
     "title": "せっかちなかたつむり",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/3/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "山本加津彦"
+      ],
+      "arrange": [
+        "湯浅篤"
+      ],
+      "direct": [
+        "中村太洸"
+      ]
+    },
     "single": {
       "title": "走れ!Bicycle",
       "number": "3"
@@ -3845,6 +4051,21 @@
     "title": "人はなぜ走るのか?",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/3/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "キタムラタケシ",
+        "田上陽一"
+      ],
+      "arrange": [
+        "田上陽一"
+      ],
+      "direct": [
+        "久保茂昭"
+      ]
+    },
     "single": {
       "title": "走れ!Bicycle",
       "number": "3"
@@ -4162,6 +4383,21 @@
     "title": "音が出ないギター",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/3/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Jam9",
+        "ArmySlick"
+      ],
+      "arrange": [
+        "シライシ紗トリ"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
+    },
     "single": {
       "title": "走れ!Bicycle",
       "number": "3"
@@ -4479,6 +4715,18 @@
     "title": "海流の島よ",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/3/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset"
+      ],
+      "arrange": [
+        "京田誠一"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "走れ!Bicycle",
       "number": "3"
@@ -4600,6 +4848,20 @@
     "title": "制服のマネキン",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/4/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "百石元"
+      ],
+      "direct": [
+        "池田一真"
+      ]
+    },
     "single": {
       "title": "制服のマネキン",
       "number": "4"
@@ -4856,6 +5118,20 @@
     "title": "春のメロディー",
     "type": "under",
     "artwork": "../assets/images/artworks/singles/4/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "フジノタカフミ"
+      ],
+      "arrange": [
+        "湯浅篤"
+      ],
+      "direct": [
+        "柿本ケンサク"
+      ]
+    },
     "single": {
       "title": "制服のマネキン",
       "number": "4"
@@ -5114,6 +5390,20 @@
     "title": "指望遠鏡",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/4/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "北室龍馬"
+      ],
+      "arrange": [
+        "木村有希"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
+    },
     "single": {
       "title": "制服のマネキン",
       "number": "4"
@@ -5365,6 +5655,18 @@
     "title": "やさしさなら間に合ってる",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/4/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "松田純一"
+      ],
+      "arrange": [
+        "清水武仁"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "制服のマネキン",
       "number": "4"
@@ -5500,6 +5802,20 @@
     "title": "ここじゃないどこか",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/4/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "大藤史"
+      ],
+      "arrange": [
+        "京田誠一"
+      ],
+      "direct": [
+        "岡川太郎"
+      ]
+    },
     "single": {
       "title": "制服のマネキン",
       "number": "4"
@@ -5565,6 +5881,20 @@
     "title": "渋谷ブルース",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/4/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "佐藤嘉風"
+      ],
+      "arrange": [
+        "佐藤嘉風"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
+    },
     "single": {
       "title": "制服のマネキン",
       "number": "4"
@@ -5616,6 +5946,21 @@
     "title": "君の名は希望",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/5/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "杉山勝彦",
+        "有木竜郎"
+      ],
+      "direct": [
+        "山下敦弘"
+      ]
+    },
     "single": {
       "title": "君の名は希望",
       "number": "5"
@@ -5872,6 +6217,20 @@
     "title": "13日の金曜日",
     "type": "under",
     "artwork": "../assets/images/artworks/singles/5/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "網本ナオノブ"
+      ],
+      "arrange": [
+        "湯浅篤"
+      ],
+      "direct": [
+        "山田篤宏"
+      ]
+    },
     "single": {
       "title": "君の名は希望",
       "number": "5"
@@ -6146,6 +6505,20 @@
     "title": "シャキイズム",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/5/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "岡本健介"
+      ],
+      "arrange": [
+        "岡本健介"
+      ],
+      "direct": [
+        "柳沢翔"
+      ]
+    },
     "single": {
       "title": "君の名は希望",
       "number": "5"
@@ -6398,6 +6771,18 @@
     "title": "ロマンティックいか焼き",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/5/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "横健介"
+      ],
+      "arrange": [
+        "重永亮介"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "君の名は希望",
       "number": "5"
@@ -6650,6 +7035,20 @@
     "title": "でこぴん",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/5/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "中土智博"
+      ],
+      "arrange": [
+        "中土智博"
+      ],
+      "direct": [
+        "中村太洸"
+      ]
+    },
     "single": {
       "title": "君の名は希望",
       "number": "5"
@@ -6743,6 +7142,20 @@
     "title": "サイコキネシスの可能性",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/5/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "中土智博"
+      ],
+      "arrange": [
+        "中土智博"
+      ],
+      "direct": [
+        "中村太洸"
+      ]
+    },
     "single": {
       "title": "君の名は希望",
       "number": "5"
@@ -6878,6 +7291,20 @@
     "title": "ガールズルール",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/6/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "後藤康二"
+      ],
+      "arrange": [
+        "後藤康二"
+      ],
+      "direct": [
+        "柳沢翔"
+      ]
+    },
     "single": {
       "title": "ガールズルール",
       "number": "6"
@@ -7134,6 +7561,20 @@
     "title": "扇風機",
     "type": "under",
     "artwork": "../assets/images/artworks/singles/6/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "角野寿和"
+      ],
+      "arrange": [
+        "野村陽一郎"
+      ],
+      "direct": [
+        "池田一真"
+      ]
+    },
     "single": {
       "title": "ガールズルール",
       "number": "6"
@@ -7392,6 +7833,20 @@
     "title": "世界で一番 孤独なLover",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/6/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "河原嶺旭"
+      ],
+      "arrange": [
+        "百石元"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
+    },
     "single": {
       "title": "ガールズルール",
       "number": "6"
@@ -7648,6 +8103,18 @@
     "title": "コウモリよ",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/6/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "南田健吾"
+      ],
+      "arrange": [
+        "高梨康治"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "ガールズルール",
       "number": "6"
@@ -7727,6 +8194,21 @@
     "title": "他の星から",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/6/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Sugaya Bros.",
+        "松村PONY"
+      ],
+      "arrange": [
+        "Sugaya Bros."
+      ],
+      "direct": [
+        "岡川太郎"
+      ]
+    },
     "single": {
       "title": "ガールズルール",
       "number": "6"
@@ -7853,6 +8335,18 @@
     "title": "人間という楽器",
     "type": "first generation",
     "artwork": "../assets/images/artworks/singles/6/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "鐘撞行孝"
+      ],
+      "arrange": [
+        "TATOO"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "ガールズルール",
       "number": "6"
@@ -8324,6 +8818,20 @@
     "title": "バレッタ",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/7/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "サイトウヨシヒロ"
+      ],
+      "arrange": [
+        "若田部誠"
+      ],
+      "direct": [
+        "江湖広二"
+      ]
+    },
     "single": {
       "title": "バレッタ",
       "number": "7"
@@ -8594,6 +9102,20 @@
     "title": "初恋の人を今でも",
     "type": "under",
     "artwork": "../assets/images/artworks/singles/7/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "古川貴浩"
+      ],
+      "arrange": [
+        "古川貴浩"
+      ],
+      "direct": [
+        "田所貴司"
+      ]
+    },
     "single": {
       "title": "バレッタ",
       "number": "7"
@@ -8808,6 +9330,20 @@
     "title": "月の大きさ",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/7/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "古川貴浩"
+      ],
+      "arrange": [
+        "古川貴浩"
+      ],
+      "direct": [
+        "大久保拓朗"
+      ]
+    },
     "single": {
       "title": "バレッタ",
       "number": "7"
@@ -9073,6 +9609,19 @@
     "title": "私のために 誰かのために",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/7/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "杉山勝彦",
+        "有木竜郎"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "バレッタ",
       "number": "7"
@@ -9171,6 +9720,20 @@
     "title": "そんなバカな…",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/7/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset"
+      ],
+      "arrange": [
+        "Akira Sunset"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
+    },
     "single": {
       "title": "バレッタ",
       "number": "7"
@@ -9507,6 +10070,18 @@
     "title": "やさしさとは",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/7/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "古川貴浩"
+      ],
+      "arrange": [
+        "古川貴浩"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "バレッタ",
       "number": "7"
@@ -9628,6 +10203,20 @@
     "title": "気づいたら片想い",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/8/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset"
+      ],
+      "arrange": [
+        "湯浅篤"
+      ],
+      "direct": [
+        "柳沢翔"
+      ]
+    },
     "single": {
       "title": "気づいたら片想い",
       "number": "8"
@@ -9884,6 +10473,20 @@
     "title": "生まれたままで",
     "type": "under",
     "artwork": "../assets/images/artworks/singles/8/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "田中俊亮"
+      ],
+      "arrange": [
+        "鈴木裕明"
+      ],
+      "direct": [
+        "久保茂昭"
+      ]
+    },
     "single": {
       "title": "気づいたら片想い",
       "number": "8"
@@ -10154,6 +10757,21 @@
     "title": "ロマンスのスタート",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/8/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "押田誠"
+      ],
+      "arrange": [
+        "佐々木聡作",
+        "押田誠"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
+    },
     "single": {
       "title": "気づいたら片想い",
       "number": "8"
@@ -10410,6 +11028,18 @@
     "title": "吐息のメソッド",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/8/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "田中明仁"
+      ],
+      "arrange": [
+        "TATOO"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "気づいたら片想い",
       "number": "8"
@@ -10713,6 +11343,20 @@
     "title": "孤独兄弟",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/8/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Soulife"
+      ],
+      "arrange": [
+        "Soulife"
+      ],
+      "direct": [
+        "池田一真"
+      ]
+    },
     "single": {
       "title": "気づいたら片想い",
       "number": "8"
@@ -10764,6 +11408,20 @@
     "title": "ダンケシェーン",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/8/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "C#"
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "C#"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "気づいたら片想い",
       "number": "8"
@@ -10904,6 +11562,20 @@
     "title": "夏のFree&Easy",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/9/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "井上トモノリ"
+      ],
+      "arrange": [
+        "橋本幸太"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
+    },
     "single": {
       "title": "夏のFree&Easy",
       "number": "9"
@@ -11174,6 +11846,20 @@
     "title": "ここにいる理由",
     "type": "under",
     "artwork": "../assets/images/artworks/singles/9/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "長谷川湊"
+      ],
+      "arrange": [
+        "Carlos K."
+      ],
+      "direct": [
+        "近藤大介"
+      ]
+    },
     "single": {
       "title": "夏のFree&Easy",
       "number": "9"
@@ -11430,6 +12116,18 @@
     "title": "何もできずにそばにいる",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/9/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "角野寿和"
+      ],
+      "arrange": [
+        "京田誠一"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "夏のFree&Easy",
       "number": "9"
@@ -11695,6 +12393,20 @@
     "title": "その先の出口!",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/9/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Carlos K."
+      ],
+      "arrange": [
+        "Carlos K."
+      ],
+      "direct": [
+        "中村太洸"
+      ]
+    },
     "single": {
       "title": "夏のFree&Easy",
       "number": "9"
@@ -11844,6 +12556,22 @@
     "title": "無口なライオン",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/9/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Shusui",
+        "ヒロイズム"
+      ],
+      "arrange": [
+        "Shusui",
+        "ヒロイズム"
+      ],
+      "direct": [
+        "湯浅弘章"
+      ]
+    },
     "single": {
       "title": "夏のFree&Easy",
       "number": "9"
@@ -11984,6 +12712,18 @@
     "title": "僕が行かなきゃ誰が行くんだ?",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/9/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "中土智博"
+      ],
+      "arrange": [
+        "中土智博"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "夏のFree&Easy",
       "number": "9"
@@ -12105,6 +12845,20 @@
     "title": "何度目の青空か?",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/10/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "川浦正大"
+      ],
+      "arrange": [
+        "百石元"
+      ],
+      "direct": [
+        "内田けんじ"
+      ]
+    },
     "single": {
       "title": "何度目の青空か?",
       "number": "10"
@@ -12361,6 +13115,20 @@
     "title": "あの日 僕は咄嗟に嘘をついた",
     "type": "under",
     "artwork": "../assets/images/artworks/singles/10/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "三輪智也"
+      ],
+      "arrange": [
+        "京田誠一"
+      ],
+      "direct": [
+        "湯浅弘章"
+      ]
+    },
     "single": {
       "title": "何度目の青空か?",
       "number": "10"
@@ -12635,6 +13403,18 @@
     "title": "遠回りの愛情",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/10/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Noda Akiko"
+      ],
+      "arrange": [
+        "野中\"まさ\"雄一"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "何度目の青空か?",
       "number": "10"
@@ -12770,6 +13550,20 @@
     "title": "転がった鐘を鳴らせ!",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/10/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "中山英二"
+      ],
+      "arrange": [
+        "田上陽一"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
+    },
     "single": {
       "title": "何度目の青空か?",
       "number": "10"
@@ -13017,6 +13811,22 @@
     "title": "私、起きる。",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/10/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "ZERO"
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "ZERO"
+      ],
+      "direct": [
+        "柳沢翔"
+      ]
+    },
     "single": {
       "title": "何度目の青空か?",
       "number": "10"
@@ -13180,6 +13990,19 @@
     "title": "Tender days",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/10/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "SoichiroK",
+        "Nozomu.S"
+      ],
+      "arrange": [
+        "Soulife"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "何度目の青空か?",
       "number": "10"
@@ -13329,6 +14152,20 @@
     "title": "命は美しい",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/11/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Hiroki Sagawa"
+      ],
+      "arrange": [
+        "Hiroki Sagawa"
+      ],
+      "direct": [
+        "井上強"
+      ]
+    },
     "single": {
       "title": "命は美しい",
       "number": "11"
@@ -13613,6 +14450,22 @@
     "title": "君は僕と会わない方がよかったのかな",
     "type": "under",
     "artwork": "../assets/images/artworks/singles/11/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "ha-j"
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "ha-j"
+      ],
+      "direct": [
+        "山田篤宏"
+      ]
+    },
     "single": {
       "title": "命は美しい",
       "number": "11"
@@ -13845,6 +14698,22 @@
     "title": "あらかじめ語られるロマンス",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/11/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "SoichiroK",
+        "Nozomu.S"
+      ],
+      "arrange": [
+        "SoichiroK",
+        "Nozomu.S"
+      ],
+      "direct": [
+        "岡川太郎"
+      ]
+    },
     "single": {
       "title": "命は美しい",
       "number": "11"
@@ -13957,6 +14826,20 @@
     "title": "立ち直り中",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/11/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "福田貴史"
+      ],
+      "arrange": [
+        "TATOO"
+      ],
+      "direct": [
+        "湯浅弘章"
+      ]
+    },
     "single": {
       "title": "命は美しい",
       "number": "11"
@@ -14083,6 +14966,20 @@
     "title": "ごめんね ずっと…",
     "type": "solo",
     "artwork": "../assets/images/artworks/singles/11/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "山田智和"
+      ],
+      "arrange": [
+        "住谷翔平"
+      ],
+      "direct": [
+        "山戸結希"
+      ]
+    },
     "single": {
       "title": "命は美しい",
       "number": "11"
@@ -14120,6 +15017,18 @@
     "title": "ボーダー",
     "type": "second generation",
     "artwork": "../assets/images/artworks/singles/11/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "中土智博"
+      ],
+      "arrange": [
+        "中土智博"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "命は美しい",
       "number": "11"
@@ -14227,6 +15136,20 @@
     "title": "太陽ノック",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/12/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "黒須克彦"
+      ],
+      "arrange": [
+        "長田直之"
+      ],
+      "direct": [
+        "三石直和"
+      ]
+    },
     "single": {
       "title": "太陽ノック",
       "number": "12"
@@ -14511,6 +15434,22 @@
     "title": "別れ際、もっと好きになる",
     "type": "under",
     "artwork": "../assets/images/artworks/singles/12/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "ha-j"
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "ha-j"
+      ],
+      "direct": [
+        "山岸聖太"
+      ]
+    },
     "single": {
       "title": "太陽ノック",
       "number": "12"
@@ -14799,6 +15738,18 @@
     "title": "もう少しの夢",
     "type": "solo",
     "artwork": "../assets/images/artworks/singles/12/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "丸谷マナブ"
+      ],
+      "arrange": [
+        "野中\"まさ\"雄一"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "太陽ノック",
       "number": "12"
@@ -14836,6 +15787,20 @@
     "title": "魚たちのLOVE SONG",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/12/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "渡辺拓也"
+      ],
+      "arrange": [
+        "渡辺拓也"
+      ],
+      "direct": [
+        "中村太洸"
+      ]
+    },
     "single": {
       "title": "太陽ノック",
       "number": "12"
@@ -14915,6 +15880,22 @@
     "title": "無表情",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/12/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset"
+      ],
+      "arrange": [
+        "Akira Sunset"
+      ],
+      "direct": [
+        "月田茂",
+        "山本篤彦",
+        "柴谷麻以"
+      ]
+    },
     "single": {
       "title": "太陽ノック",
       "number": "12"
@@ -14971,6 +15952,21 @@
     "title": "羽根の記憶",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/12/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "杉山勝彦",
+        "有木竜郎"
+      ],
+      "direct": [
+        "岡川太郎"
+      ]
+    },
     "single": {
       "title": "太陽ノック",
       "number": "12"
@@ -15251,6 +16247,18 @@
     "title": "制服を脱いでサヨナラを…",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/12/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "古川貴浩"
+      ],
+      "arrange": [
+        "古川貴浩"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "太陽ノック",
       "number": "12"
@@ -15307,6 +16315,22 @@
     "title": "今、話したい誰かがいる",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/13/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "APAZZI"
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "APAZZI"
+      ],
+      "direct": [
+        "萩原健太郎"
+      ]
+    },
     "single": {
       "title": "今、話したい誰かがいる",
       "number": "13"
@@ -15563,6 +16587,20 @@
     "title": "嫉妬の権利",
     "type": "under",
     "artwork": "../assets/images/artworks/singles/13/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "丸山真由子"
+      ],
+      "arrange": [
+        "丸山真由子"
+      ],
+      "direct": [
+        "井上強"
+      ]
+    },
     "single": {
       "title": "今、話したい誰かがいる",
       "number": "13"
@@ -15893,6 +16931,22 @@
     "title": "ポピパッパパー",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/13/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "ha-j"
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "ha-j"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
+    },
     "single": {
       "title": "今、話したい誰かがいる",
       "number": "13"
@@ -16149,6 +17203,20 @@
     "title": "大人への近道",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/13/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "古川貴浩"
+      ],
+      "arrange": [
+        "古川貴浩"
+      ],
+      "direct": [
+        "湯浅弘章"
+      ]
+    },
     "single": {
       "title": "今、話したい誰かがいる",
       "number": "13"
@@ -16247,6 +17315,20 @@
     "title": "悲しみの忘れ方",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/13/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "近藤圭一"
+      ],
+      "arrange": [
+        "久下真音"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
+    },
     "single": {
       "title": "今、話したい誰かがいる",
       "number": "13"
@@ -16527,6 +17609,20 @@
     "title": "隙間",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/13/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "Carlos K."
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "Carlos K."
+      ],
+      "direct": []
+    },
     "single": {
       "title": "今、話したい誰かがいる",
       "number": "13"
@@ -16653,6 +17749,22 @@
     "title": "ハルジオンが咲く頃",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/14/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "APAZZI"
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "APAZZI"
+      ],
+      "direct": [
+        "山戸結希"
+      ]
+    },
     "single": {
       "title": "ハルジオンが咲く頃",
       "number": "14"
@@ -16918,6 +18030,20 @@
     "title": "不等号",
     "type": "under",
     "artwork": "../assets/images/artworks/singles/14/D.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "福田貴史"
+      ],
+      "arrange": [
+        "福田貴史"
+      ],
+      "direct": [
+        "池田千尋"
+      ]
+    },
     "single": {
       "title": "ハルジオンが咲く頃",
       "number": "14"
@@ -17220,6 +18346,18 @@
     "title": "遥かなるブータン",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/14/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "ツキダタダシ"
+      ],
+      "arrange": [
+        "ha-j"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "ハルジオンが咲く頃",
       "number": "14"
@@ -17332,6 +18470,22 @@
     "title": "強がる蕾",
     "type": "solo",
     "artwork": "../assets/images/artworks/singles/14/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "大貫和紀",
+        "河原レオ",
+        "高木龍一"
+      ],
+      "arrange": [
+        "Carlos K."
+      ],
+      "direct": [
+        "真壁幸紀"
+      ]
+    },
     "single": {
       "title": "ハルジオンが咲く頃",
       "number": "14"
@@ -17369,6 +18523,21 @@
     "title": "急斜面",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/14/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "FURUTA",
+        "Yasutaka Ishio"
+      ],
+      "arrange": [
+        "重永亮介"
+      ],
+      "direct": [
+        "番場秀一"
+      ]
+    },
     "single": {
       "title": "ハルジオンが咲く頃",
       "number": "14"
@@ -17439,6 +18608,20 @@
     "title": "釣り堀",
     "type": "solo",
     "artwork": "../assets/images/artworks/singles/14/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Bush-I"
+      ],
+      "arrange": [
+        "APAZZI"
+      ],
+      "direct": [
+        "永田琴"
+      ]
+    },
     "single": {
       "title": "ハルジオンが咲く頃",
       "number": "14"
@@ -17476,6 +18659,19 @@
     "title": "憂鬱と風船ガム",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/14/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "HIROTOMO",
+        "Dr.Lilcom"
+      ],
+      "arrange": [
+        "APAZZI"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "ハルジオンが咲く頃",
       "number": "14"
@@ -17588,6 +18784,20 @@
     "title": "裸足でSummer",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/15/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "福森秀敏"
+      ],
+      "arrange": [
+        "APAZZI"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
+    },
     "single": {
       "title": "裸足でSummer",
       "number": "15"
@@ -17844,6 +19054,20 @@
     "title": "シークレットグラフィティー",
     "type": "under",
     "artwork": "../assets/images/artworks/singles/15/D.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "ツキダタダシ"
+      ],
+      "arrange": [
+        "ツキダタダシ"
+      ],
+      "direct": [
+        "山岸聖太"
+      ]
+    },
     "single": {
       "title": "裸足でSummer",
       "number": "15"
@@ -18146,6 +19370,18 @@
     "title": "僕だけの光",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/15/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Hiro Hoashi"
+      ],
+      "arrange": [
+        "Hiro Hoashi"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "裸足でSummer",
       "number": "15"
@@ -18398,6 +19634,22 @@
     "title": "オフショアガール",
     "type": "solo",
     "artwork": "../assets/images/artworks/singles/15/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "ha-j"
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "ha-j"
+      ],
+      "direct": [
+        "井上強"
+      ]
+    },
     "single": {
       "title": "裸足でSummer",
       "number": "15"
@@ -18440,6 +19692,20 @@
     "title": "命の真実 ミュージカル「林檎売りとカメムシ」",
     "type": "solo",
     "artwork": "../assets/images/artworks/singles/15/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "NA.ZU.NA"
+      ],
+      "arrange": [
+        "NA.ZU.NA"
+      ],
+      "direct": [
+        "中村太洸"
+      ]
+    },
     "single": {
       "title": "裸足でSummer",
       "number": "15"
@@ -18482,6 +19748,20 @@
     "title": "白米様",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/15/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Ruby"
+      ],
+      "arrange": [
+        "あらケン"
+      ],
+      "direct": [
+        "伊藤衆人"
+      ]
+    },
     "single": {
       "title": "裸足でSummer",
       "number": "15"
@@ -18568,6 +19848,18 @@
     "title": "行くあてのない僕たち",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/15/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "大橋莉子"
+      ],
+      "arrange": [
+        "佐々木裕"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "裸足でSummer",
       "number": "15"
@@ -18624,6 +19916,20 @@
     "title": "サヨナラの意味",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/16/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "若田部誠"
+      ],
+      "direct": [
+        "柳沢翔"
+      ]
+    },
     "single": {
       "title": "サヨナラの意味",
       "number": "16"
@@ -18922,6 +20228,20 @@
     "title": "ブランコ",
     "type": "under",
     "artwork": "../assets/images/artworks/singles/16/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Hiro Hoashi"
+      ],
+      "arrange": [
+        "Hiro Hoashi"
+      ],
+      "direct": [
+        "伊藤衆人"
+      ]
+    },
     "single": {
       "title": "サヨナラの意味",
       "number": "16"
@@ -19182,6 +20502,18 @@
     "title": "孤独な青空",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/16/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "aokado"
+      ],
+      "arrange": [
+        "aokado"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "サヨナラの意味",
       "number": "16"
@@ -19476,6 +20808,20 @@
     "title": "あの教室",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/16/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "カワノミチオ"
+      ],
+      "arrange": [
+        "カワノミチオ"
+      ],
+      "direct": [
+        "山岸聖太"
+      ]
+    },
     "single": {
       "title": "サヨナラの意味",
       "number": "16"
@@ -19532,6 +20878,22 @@
     "title": "2度目のキスから",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/16/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "APAZZI"
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "APAZZI"
+      ],
+      "direct": [
+        "中村太洸"
+      ]
+    },
     "single": {
       "title": "サヨナラの意味",
       "number": "16"
@@ -19616,6 +20978,20 @@
     "title": "君に贈る花がない",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/16/D.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Rizz"
+      ],
+      "arrange": [
+        "山田竜平"
+      ],
+      "direct": [
+        "東市篤憲"
+      ]
+    },
     "single": {
       "title": "サヨナラの意味",
       "number": "16"
@@ -19714,6 +21090,21 @@
     "title": "ないものねだり",
     "type": "solo",
     "artwork": "../assets/images/artworks/singles/16/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "丸谷マナブ"
+      ],
+      "arrange": [
+        "丸谷マナブ",
+        "福田貴史"
+      ],
+      "direct": [
+        "山岸聖太"
+      ]
+    },
     "single": {
       "title": "サヨナラの意味",
       "number": "16"
@@ -19756,6 +21147,20 @@
     "title": "インフルエンサー",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/17/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "すみだしんや"
+      ],
+      "arrange": [
+        "APAZZI"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
+    },
     "single": {
       "title": "インフルエンサー",
       "number": "17"
@@ -20082,6 +21487,22 @@
     "title": "風船は生きている",
     "type": "under",
     "artwork": "../assets/images/artworks/singles/17/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "泉佳伸",
+        "三好翔太"
+      ],
+      "arrange": [
+        "早川博隆",
+        "三好翔太"
+      ],
+      "direct": [
+        "多田卓也"
+      ]
+    },
     "single": {
       "title": "インフルエンサー",
       "number": "17"
@@ -20286,6 +21707,18 @@
     "title": "人生を考えたくなる",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/17/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "片桐周太郎"
+      ],
+      "arrange": [
+        "片桐周太郎"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "インフルエンサー",
       "number": "17"
@@ -20370,6 +21803,20 @@
     "title": "意外BREAK",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/17/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "すみだしんや"
+      ],
+      "arrange": [
+        "華原大輔"
+      ],
+      "direct": [
+        "伊藤衆人"
+      ]
+    },
     "single": {
       "title": "インフルエンサー",
       "number": "17"
@@ -20454,6 +21901,21 @@
     "title": "Another Ghost",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/17/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "前迫潤哉",
+        "Yasutaka.Ishio"
+      ],
+      "arrange": [
+        "Yasutaka.Ishio"
+      ],
+      "direct": [
+        "井上強"
+      ]
+    },
     "single": {
       "title": "インフルエンサー",
       "number": "17"
@@ -20524,6 +21986,20 @@
     "title": "三番目の風",
     "type": "third generation",
     "artwork": "../assets/images/artworks/singles/17/D.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "丸谷マナブ"
+      ],
+      "arrange": [
+        "丸谷マナブ"
+      ],
+      "direct": [
+        "岡川太郎"
+      ]
+    },
     "single": {
       "title": "インフルエンサー",
       "number": "17"
@@ -20724,6 +22200,18 @@
     "title": "当たり障りのない話",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/17/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "小網準"
+      ],
+      "arrange": [
+        "野中\"まさ\"雄一"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "インフルエンサー",
       "number": "17"
@@ -20808,6 +22296,20 @@
     "title": "逃げ水",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/18/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "谷村庸平"
+      ],
+      "arrange": [
+        "谷村庸平"
+      ],
+      "direct": [
+        "山岸聖太"
+      ]
+    },
     "single": {
       "title": "逃げ水",
       "number": "18"
@@ -21092,6 +22594,20 @@
     "title": "アンダー",
     "type": "under",
     "artwork": "../assets/images/artworks/singles/18/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "白土亨"
+      ],
+      "arrange": [
+        "遠藤ナオキ"
+      ],
+      "direct": [
+        "金森孝宏"
+      ]
+    },
     "single": {
       "title": "逃げ水",
       "number": "18"
@@ -21380,6 +22896,20 @@
     "title": "女は一人じゃ眠れない",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/18/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "小形誠"
+      ],
+      "arrange": [
+        "高橋浩一郎"
+      ],
+      "direct": [
+        "萩原健太郎"
+      ]
+    },
     "single": {
       "title": "逃げ水",
       "number": "18"
@@ -21655,6 +23185,18 @@
     "title": "ひと夏の長さより…",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/18/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "aokado"
+      ],
+      "arrange": [
+        "aokado"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "逃げ水",
       "number": "18"
@@ -21930,6 +23472,20 @@
     "title": "ライブ神",
     "type": "second generation",
     "artwork": "../assets/images/artworks/singles/18/D.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "SaSA"
+      ],
+      "arrange": [
+        "SaSA"
+      ],
+      "direct": [
+        "伊藤衆人"
+      ]
+    },
     "single": {
       "title": "逃げ水",
       "number": "18"
@@ -22116,6 +23672,20 @@
     "title": "未来の答え",
     "type": "third generation",
     "artwork": "../assets/images/artworks/singles/18/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "板垣祐介"
+      ],
+      "arrange": [
+        "板垣祐介"
+      ],
+      "direct": [
+        "福島真希"
+      ]
+    },
     "single": {
       "title": "逃げ水",
       "number": "18"
@@ -22316,6 +23886,19 @@
     "title": "泣いたっていいじゃないか?",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/18/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "K-WONDER",
+        "SAS3"
+      ],
+      "arrange": [
+        "遠藤ナオキ"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "逃げ水",
       "number": "18"
@@ -22591,6 +24174,22 @@
     "title": "いつかできるから今日できる",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/19/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "京田誠一"
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "京田誠一"
+      ],
+      "direct": [
+        "高橋栄樹"
+      ]
+    },
     "single": {
       "title": "いつかできるから今日できる",
       "number": "19"
@@ -22889,6 +24488,21 @@
     "title": "My rule",
     "type": "under",
     "artwork": "../assets/images/artworks/singles/19/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "藤田卓也"
+      ],
+      "arrange": [
+        "藤田卓也"
+      ],
+      "direct": [
+        "林希",
+        "古屋蔵人"
+      ]
+    },
     "single": {
       "title": "いつかできるから今日できる",
       "number": "19"
@@ -23121,6 +24735,22 @@
     "title": "不眠症",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/19/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "大貫和紀",
+        "河原レオ",
+        "高木龍一"
+      ],
+      "arrange": [
+        "大貫和紀",
+        "河原レオ",
+        "高木龍一"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "いつかできるから今日できる",
       "number": "19"
@@ -23424,6 +25054,20 @@
     "title": "まあいいか?",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/19/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "HRK"
+      ],
+      "arrange": [
+        "原広明"
+      ],
+      "direct": [
+        "中村太洸"
+      ]
+    },
     "single": {
       "title": "いつかできるから今日できる",
       "number": "19"
@@ -23475,6 +25119,24 @@
     "title": "失恋お掃除人",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/19/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "さいとうくにあき",
+        "Akira Sunset",
+        "京田誠一"
+      ],
+      "arrange": [
+        "さいとうくにあき",
+        "Akira Sunset",
+        "京田誠一"
+      ],
+      "direct": [
+        "伊藤衆人"
+      ]
+    },
     "single": {
       "title": "いつかできるから今日できる",
       "number": "19"
@@ -23554,6 +25216,20 @@
     "title": "僕の衝動",
     "type": "third generation",
     "artwork": "../assets/images/artworks/singles/19/D.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "石井伸昂"
+      ],
+      "arrange": [
+        "石井伸昂"
+      ],
+      "direct": [
+        "荒船泰廣"
+      ]
+    },
     "single": {
       "title": "いつかできるから今日できる",
       "number": "19"
@@ -23736,6 +25412,20 @@
     "title": "新しい花粉 〜ミュージカル「見知らぬ世界」より〜",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/19/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "新田目翔"
+      ],
+      "arrange": [
+        "若田部誠"
+      ],
+      "direct": [
+        "荒船泰廣"
+      ]
+    },
     "single": {
       "title": "いつかできるから今日できる",
       "number": "19"
@@ -23787,6 +25477,20 @@
     "title": "シンクロニシティ",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/20/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "シライシ紗トリ"
+      ],
+      "arrange": [
+        "シライシ紗トリ"
+      ],
+      "direct": [
+        "池田一真"
+      ]
+    },
     "single": {
       "title": "シンクロニシティ",
       "number": "20"
@@ -24113,6 +25817,20 @@
     "title": "新しい世界",
     "type": "under",
     "artwork": "../assets/images/artworks/singles/20/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "古川貴浩"
+      ],
+      "arrange": [
+        "古川貴浩"
+      ],
+      "direct": [
+        "横堀光範"
+      ]
+    },
     "single": {
       "title": "シンクロニシティ",
       "number": "20"
@@ -24439,6 +26157,20 @@
     "title": "Against",
     "type": "first generation",
     "artwork": "../assets/images/artworks/singles/20/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "古川貴浩"
+      ],
+      "arrange": [
+        "古川貴浩"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
+    },
     "single": {
       "title": "シンクロニシティ",
       "number": "20"
@@ -24747,6 +26479,18 @@
     "title": "雲になればいい",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/20/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "丸谷マナブ"
+      ],
+      "arrange": [
+        "丸谷マナブ"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "シンクロニシティ",
       "number": "20"
@@ -24812,6 +26556,20 @@
     "title": "スカウトマン",
     "type": "second generation",
     "artwork": "../assets/images/artworks/singles/20/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "SaSA"
+      ],
+      "arrange": [
+        "SaSA"
+      ],
+      "direct": [
+        "中村太洸"
+      ]
+    },
     "single": {
       "title": "シンクロニシティ",
       "number": "20"
@@ -24980,6 +26738,22 @@
     "title": "トキトキメキメキ",
     "type": "third generation",
     "artwork": "../assets/images/artworks/singles/20/D.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "中山聡",
+        "足立優"
+      ],
+      "arrange": [
+        "中山聡",
+        "足立優"
+      ],
+      "direct": [
+        "伊藤衆人"
+      ]
+    },
     "single": {
       "title": "シンクロニシティ",
       "number": "20"
@@ -25176,6 +26950,20 @@
     "title": "言霊砲",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/20/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Ryota Saito",
+        "TomoLow"
+      ],
+      "arrange": [
+        "Ryota Saito",
+        "TomoLow"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "シンクロニシティ",
       "number": "20"
@@ -25255,6 +27043,20 @@
     "title": "ジコチューで行こう!",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/21/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "ナスカ"
+      ],
+      "arrange": [
+        "野中\"まさ\"雄一"
+      ],
+      "direct": [
+        "中村太洸"
+      ]
+    },
     "single": {
       "title": "ジコチューで行こう!",
       "number": "21"
@@ -25581,6 +27383,20 @@
     "title": "三角の空き地",
     "type": "under",
     "artwork": "../assets/images/artworks/singles/21/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Hiroki"
+      ],
+      "arrange": [
+        "Yasutaka.Ishio"
+      ],
+      "direct": [
+        "月田茂"
+      ]
+    },
     "single": {
       "title": "ジコチューで行こう!",
       "number": "21"
@@ -25865,6 +27681,21 @@
     "title": "空扉",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/21/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "FURUTA",
+        "Dr.Lilcom"
+      ],
+      "arrange": [
+        "Dr.Lilcom"
+      ],
+      "direct": [
+        "伊藤衆人"
+      ]
+    },
     "single": {
       "title": "ジコチューで行こう!",
       "number": "21"
@@ -26126,6 +27957,18 @@
     "title": "自分じゃない感じ",
     "type": "third generation",
     "artwork": "../assets/images/artworks/singles/21/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "ツキダタダシ"
+      ],
+      "arrange": [
+        "ツキダタダシ"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "ジコチューで行こう!",
       "number": "21"
@@ -26308,6 +28151,20 @@
     "title": "心のモノローグ",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/21/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "シライシ紗トリ"
+      ],
+      "arrange": [
+        "シライシ紗トリ"
+      ],
+      "direct": [
+        "英勉"
+      ]
+    },
     "single": {
       "title": "ジコチューで行こう!",
       "number": "21"
@@ -26359,6 +28216,20 @@
     "title": "地球が丸いなら",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/21/D.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "山下孝之"
+      ],
+      "arrange": [
+        "山下孝之"
+      ],
+      "direct": [
+        "沖田修一"
+      ]
+    },
     "single": {
       "title": "ジコチューで行こう!",
       "number": "21"
@@ -26424,6 +28295,18 @@
     "title": "あんなに好きだったのに...",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/21/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "木下めろん"
+      ],
+      "arrange": [
+        "木下めろん"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "ジコチューで行こう!",
       "number": "21"
@@ -26741,6 +28624,21 @@
     "title": "帰り道は遠回りしたくなる",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/22/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "渡邉俊彦"
+      ],
+      "arrange": [
+        "渡邉俊彦",
+        "早川博隆"
+      ],
+      "direct": [
+        "関和亮"
+      ]
+    },
     "single": {
       "title": "帰り道は遠回りしたくなる",
       "number": "22"
@@ -27067,6 +28965,22 @@
     "title": "日常",
     "type": "under",
     "artwork": "../assets/images/artworks/singles/22/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "野口大志"
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "野口大志"
+      ],
+      "direct": [
+        "今泉力哉"
+      ]
+    },
     "single": {
       "title": "帰り道は遠回りしたくなる",
       "number": "22"
@@ -27351,6 +29265,20 @@
     "title": "キャラバンは眠らない",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/22/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "CottON"
+      ],
+      "arrange": [
+        "CottON"
+      ],
+      "direct": [
+        "横堀光範"
+      ]
+    },
     "single": {
       "title": "帰り道は遠回りしたくなる",
       "number": "22"
@@ -27603,6 +29531,20 @@
     "title": "つづく",
     "type": "solo",
     "artwork": "../assets/images/artworks/singles/22/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "若田部誠"
+      ],
+      "arrange": [
+        "若田部誠"
+      ],
+      "direct": [
+        "湯浅弘章"
+      ]
+    },
     "single": {
       "title": "帰り道は遠回りしたくなる",
       "number": "22"
@@ -27645,6 +29587,20 @@
     "title": "告白の順番",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/22/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "安部純"
+      ],
+      "arrange": [
+        "安部純"
+      ],
+      "direct": [
+        "荒船泰廣"
+      ]
+    },
     "single": {
       "title": "帰り道は遠回りしたくなる",
       "number": "22"
@@ -27724,6 +29680,18 @@
     "title": "ショパンの嘘つき",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/22/D.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "山本加津彦"
+      ],
+      "arrange": [
+        "山本加津彦"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "帰り道は遠回りしたくなる",
       "number": "22"
@@ -27789,6 +29757,18 @@
     "title": "知りたいこと",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/22/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "佐々木裕"
+      ],
+      "arrange": [
+        "佐々木裕"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "帰り道は遠回りしたくなる",
       "number": "22"
@@ -27868,6 +29848,21 @@
     "title": "Sing Out!",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/23/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Ryota Saito",
+        "TETTA"
+      ],
+      "arrange": [
+        "野中“まさ”雄一"
+      ],
+      "direct": [
+        "池田一真"
+      ]
+    },
     "single": {
       "title": "Sing Out!",
       "number": "23"
@@ -28203,6 +30198,20 @@
     "title": "滑走路",
     "type": "under",
     "artwork": "../assets/images/artworks/singles/23/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "CHOCOLATE MIX"
+      ],
+      "arrange": [
+        "CHOCOLATE MIX"
+      ],
+      "direct": [
+        "maxilla"
+      ]
+    },
     "single": {
       "title": "Sing Out!",
       "number": "23"
@@ -28366,6 +30375,22 @@
     "title": "のような存在",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/23/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Akira Sunset",
+        "APAZZI"
+      ],
+      "arrange": [
+        "Akira Sunset",
+        "APAZZI"
+      ],
+      "direct": [
+        "伊藤衆人"
+      ]
+    },
     "single": {
       "title": "Sing Out!",
       "number": "23"
@@ -28417,6 +30442,18 @@
     "title": "Am I Loving?",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/23/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "山田智和"
+      ],
+      "arrange": [
+        "APAZZI"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "Sing Out!",
       "number": "23"
@@ -28510,6 +30547,20 @@
     "title": "平行線",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/23/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "近藤圭一"
+      ],
+      "arrange": [
+        "近藤圭一"
+      ],
+      "direct": [
+        "泉田岳"
+      ]
+    },
     "single": {
       "title": "Sing Out!",
       "number": "23"
@@ -28603,6 +30654,21 @@
     "title": "4番目の光",
     "type": "fourth generation",
     "artwork": "../assets/images/artworks/singles/23/D.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "杉山勝彦",
+        "谷地学"
+      ],
+      "direct": [
+        "月田茂"
+      ]
+    },
     "single": {
       "title": "Sing Out!",
       "number": "23"
@@ -28780,6 +30846,18 @@
     "title": "曖昧",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/23/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "doubleglass"
+      ],
+      "arrange": [
+        "doubleglass"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "Sing Out!",
       "number": "23"
@@ -28831,6 +30909,20 @@
     "title": "夜明けまで強がらなくてもいい",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/24/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "山田裕介"
+      ],
+      "arrange": [
+        "APAZZI"
+      ],
+      "direct": [
+        "丸山健志"
+      ]
+    },
     "single": {
       "title": "夜明けまで強がらなくてもいい",
       "number": "24"
@@ -29110,6 +31202,18 @@
     "title": "僕のこと、知ってる?",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/24/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "中村泰輔"
+      ],
+      "arrange": [
+        "中村泰輔"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "夜明けまで強がらなくてもいい",
       "number": "24"
@@ -29445,6 +31549,21 @@
     "title": "路面電車の街",
     "type": "unit",
     "artwork": "../assets/images/artworks/singles/24/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "杉山勝彦",
+        "谷地学"
+      ],
+      "direct": [
+        "山岸聖太"
+      ]
+    },
     "single": {
       "title": "夜明けまで強がらなくてもいい",
       "number": "24"
@@ -29510,6 +31629,20 @@
     "title": "図書室の君へ",
     "type": "fourth generation",
     "artwork": "../assets/images/artworks/singles/24/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "若田部誠"
+      ],
+      "direct": [
+        "伊藤衆人"
+      ]
+    },
     "single": {
       "title": "夜明けまで強がらなくてもいい",
       "number": "24"
@@ -29687,6 +31820,21 @@
     "title": "時々 思い出してください",
     "type": "solo",
     "artwork": "../assets/images/artworks/singles/24/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "杉山勝彦",
+        "谷地学"
+      ],
+      "direct": [
+        "頃安祐良"
+      ]
+    },
     "single": {
       "title": "夜明けまで強がらなくてもいい",
       "number": "24"
@@ -29724,6 +31872,22 @@
     "title": "～Do my best～じゃ意味はない",
     "type": "under",
     "artwork": "../assets/images/artworks/singles/24/D.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "浦島健太",
+        "APAZZI"
+      ],
+      "arrange": [
+        "浦島健太",
+        "APAZZI"
+      ],
+      "direct": [
+        "maxilla"
+      ]
+    },
     "single": {
       "title": "夜明けまで強がらなくてもいい",
       "number": "24"
@@ -29971,6 +32135,18 @@
     "title": "僕の思い込み",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/24/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "野中“まさ”雄一"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "夜明けまで強がらなくてもいい",
       "number": "24"
@@ -30250,6 +32426,20 @@
     "title": "しあわせの保護色",
     "type": "title",
     "artwork": "../assets/images/artworks/singles/25/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "MASANORI URA"
+      ],
+      "arrange": [
+        "武藤星児"
+      ],
+      "direct": [
+        "池田一真"
+      ]
+    },
     "single": {
       "title": "しあわせの保護色",
       "number": "25"
@@ -30585,6 +32775,18 @@
     "title": "サヨナラ Stay with me",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/25/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "シライシ紗トリ"
+      ],
+      "arrange": [
+        "シライシ紗トリ"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "しあわせの保護色",
       "number": "25"
@@ -30720,6 +32922,21 @@
     "title": "じゃあね。",
     "type": "solo",
     "artwork": "../assets/images/artworks/singles/25/A.jpg",
+    "creators": {
+      "lyrics": [
+        "白石麻衣"
+      ],
+      "compose": [
+        "浦島健太",
+        "H.Shing"
+      ],
+      "arrange": [
+        "菊池博人"
+      ],
+      "direct": [
+        "湯浅弘章"
+      ]
+    },
     "single": {
       "title": "しあわせの保護色",
       "number": "25"
@@ -30757,6 +32974,20 @@
     "title": "アナスターシャ",
     "type": "second generation",
     "artwork": "../assets/images/artworks/singles/25/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "中村泰輔"
+      ],
+      "arrange": [
+        "中村泰輔"
+      ],
+      "direct": [
+        "伊藤衆人"
+      ]
+    },
     "single": {
       "title": "しあわせの保護色",
       "number": "25"
@@ -30906,6 +33137,20 @@
     "title": "毎日がBrand new day",
     "type": "third generation",
     "artwork": "../assets/images/artworks/singles/25/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "APAZZI"
+      ],
+      "arrange": [
+        "APAZZI"
+      ],
+      "direct": [
+        "横堀光範"
+      ]
+    },
     "single": {
       "title": "しあわせの保護色",
       "number": "25"
@@ -31097,6 +33342,20 @@
     "title": "I see…",
     "type": "fourth generation",
     "artwork": "../assets/images/artworks/singles/25/D.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "youth case"
+      ],
+      "arrange": [
+        "佐々木博史"
+      ],
+      "direct": [
+        "神谷雄貴"
+      ]
+    },
     "single": {
       "title": "しあわせの保護色",
       "number": "25"
@@ -31274,6 +33533,18 @@
     "title": "ファンタスティック三色パン",
     "type": "coupling",
     "artwork": "../assets/images/artworks/singles/25/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "ジンツチハシ"
+      ],
+      "arrange": [
+        "ジンツチハシ"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "しあわせの保護色",
       "number": "25"
@@ -31339,6 +33610,16 @@
     "title": "僕は僕を好きになる",
     "type": "title",
     "artwork": "../assets/images/artworks/artwork_no_image.png",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [],
+      "direct": []
+    },
     "single": {
       "title": "僕は僕を好きになる",
       "number": "26"
@@ -31632,6 +33913,16 @@
     "title": "冷たい水の中",
     "type": "solo",
     "artwork": "../assets/images/artworks/artwork_no_image.png",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [],
+      "arrange": [],
+      "direct": [
+        "山戸結希"
+      ]
+    },
     "single": {
       "title": "僕は僕を好きになる",
       "number": "26"
@@ -31669,6 +33960,14 @@
     "title": "Out of the blue",
     "type": "fourth generation",
     "artwork": "../assets/images/artworks/artwork_no_image.png",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [],
+      "arrange": [],
+      "direct": []
+    },
     "single": {
       "title": "僕は僕を好きになる",
       "number": "26"
@@ -31916,6 +34215,14 @@
     "title": "口ほどにもないKISS",
     "type": "under",
     "artwork": "../assets/images/artworks/artwork_no_image.png",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [],
+      "arrange": [],
+      "direct": []
+    },
     "single": {
       "title": "僕は僕を好きになる",
       "number": "26"
@@ -32135,6 +34442,14 @@
     "title": "明日がある理由",
     "type": "coupling",
     "artwork": "../assets/images/artworks/artwork_no_image.png",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [],
+      "arrange": [],
+      "direct": []
+    },
     "single": {
       "title": "僕は僕を好きになる",
       "number": "26"
@@ -32410,6 +34725,14 @@
     "title": "Wilderness world",
     "type": "coupling",
     "artwork": "../assets/images/artworks/artwork_no_image.png",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [],
+      "arrange": [],
+      "direct": []
+    },
     "single": {
       "title": "僕は僕を好きになる",
       "number": "26"
@@ -32430,6 +34753,18 @@
     "title": "誰かは味方",
     "type": "unit",
     "artwork": "../assets/images/artworks/albums/1/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "宮坂聡彦"
+      ],
+      "arrange": [
+        "佐々木裕"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -32500,6 +34835,18 @@
     "title": "革命の馬",
     "type": "unit",
     "artwork": "../assets/images/artworks/albums/1/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "伊勢佳史"
+      ],
+      "arrange": [
+        "伊勢佳史"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -32612,6 +34959,19 @@
     "title": "僕がいる場所",
     "type": "coupling",
     "artwork": "../assets/images/artworks/albums/1/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "杉山勝彦",
+        "有木竜郎"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -32864,6 +35224,18 @@
     "title": "あなたのために弾きたい",
     "type": "solo",
     "artwork": "../assets/images/artworks/albums/1/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "近藤圭一"
+      ],
+      "arrange": [
+        "樫原伸彦"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -32906,6 +35278,19 @@
     "title": "傾斜する",
     "type": "unit",
     "artwork": "../assets/images/artworks/albums/1/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "須藤哲平",
+        "長谷川湊"
+      ],
+      "arrange": [
+        "佐々木裕"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -33158,6 +35543,18 @@
     "title": "なぞの落書き",
     "type": "unit",
     "artwork": "../assets/images/artworks/albums/1/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "片桐周太郎"
+      ],
+      "arrange": [
+        "野中\"まさ\"雄一"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -33228,6 +35625,18 @@
     "title": "自由の彼方",
     "type": "under",
     "artwork": "../assets/images/artworks/albums/1/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "山田智和"
+      ],
+      "arrange": [
+        "住谷翔平"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -33596,6 +36005,19 @@
     "title": "ひとりよがり",
     "type": "solo",
     "artwork": "../assets/images/artworks/albums/1/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "杉山勝彦",
+        "有木竜郎"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -33638,6 +36060,19 @@
     "title": "きっかけ",
     "type": "coupling",
     "artwork": "../assets/images/artworks/albums/2/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "杉山勝彦",
+        "有木竜郎"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -33890,6 +36325,18 @@
     "title": "太陽に口説かれて",
     "type": "coupling",
     "artwork": "../assets/images/artworks/albums/2/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "フジノタカフミ"
+      ],
+      "arrange": [
+        "フジノタカフミ"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -34142,6 +36589,19 @@
     "title": "欲望のリインカーネーション",
     "type": "under",
     "artwork": "../assets/images/artworks/albums/2/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康",
+        "本山清治"
+      ],
+      "compose": [
+        "渡辺未来"
+      ],
+      "arrange": [
+        "渡辺未来"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -34300,6 +36760,18 @@
     "title": "空気感",
     "type": "unit",
     "artwork": "../assets/images/artworks/albums/2/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "DR QUEENBEE"
+      ],
+      "arrange": [
+        "DR QUEENBEE"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -34398,6 +36870,18 @@
     "title": "光合成希望",
     "type": "solo",
     "artwork": "../assets/images/artworks/albums/2/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "吉田博"
+      ],
+      "arrange": [
+        "野中\"まさ\"雄一"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -34440,6 +36924,18 @@
     "title": "Threefold choice",
     "type": "unit",
     "artwork": "../assets/images/artworks/albums/2/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "古川貴浩"
+      ],
+      "arrange": [
+        "古川貴浩"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -34510,6 +37006,18 @@
     "title": "低体温のキス",
     "type": "solo",
     "artwork": "../assets/images/artworks/albums/2/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "中谷あつこ"
+      ],
+      "arrange": [
+        "田上陽一"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -34552,6 +37060,18 @@
     "title": "失恋したら、顔を洗え!",
     "type": "unit",
     "artwork": "../assets/images/artworks/albums/2/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "さいとうくにあき"
+      ],
+      "arrange": [
+        "内田充"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -34608,6 +37128,18 @@
     "title": "かき氷の片想い",
     "type": "second generation",
     "artwork": "../assets/images/artworks/albums/2/C.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "白須賀悟"
+      ],
+      "arrange": [
+        "白須賀悟"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -34790,6 +37322,18 @@
     "title": "環状六号線",
     "type": "unit",
     "artwork": "../assets/images/artworks/albums/2/D.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "サイトウリョースケ"
+      ],
+      "arrange": [
+        "サイトウリョースケ"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -34860,6 +37404,18 @@
     "title": "口約束",
     "type": "unit",
     "artwork": "../assets/images/artworks/albums/2/D.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Amber"
+      ],
+      "arrange": [
+        "若田部誠"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -34944,6 +37500,18 @@
     "title": "スカイダイビング",
     "type": "coupling",
     "artwork": "../assets/images/artworks/albums/3/L.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "菅井達司"
+      ],
+      "arrange": [
+        "菅井達司"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -35266,6 +37834,19 @@
     "title": "君が扇いでくれた",
     "type": "under",
     "artwork": "../assets/images/artworks/albums/3/L.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "中山聡",
+        "足立優"
+      ],
+      "arrange": [
+        "野中\"まさ\"雄一"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -35466,6 +38047,18 @@
     "title": "思い出ファースト",
     "type": "third generation",
     "artwork": "../assets/images/artworks/albums/3/L.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "ミサマサカリヲ"
+      ],
+      "arrange": [
+        "遠藤ナオキ"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -35662,6 +38255,18 @@
     "title": "設定温度",
     "type": "coupling",
     "artwork": "../assets/images/artworks/albums/3/L.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "石井亮輔"
+      ],
+      "arrange": [
+        "APAZZI"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -36324,6 +38929,18 @@
     "title": "Rewindあの日",
     "type": "unit",
     "artwork": "../assets/images/artworks/albums/3/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "藤木テツ"
+      ],
+      "arrange": [
+        "佐々木裕"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -36394,6 +39011,18 @@
     "title": "ごめんね、スムージー",
     "type": "unit",
     "artwork": "../assets/images/artworks/albums/3/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "YASUSHI WATANABE"
+      ],
+      "arrange": [
+        "YASUSHI WATANABE"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -36464,6 +39093,18 @@
     "title": "醜い私",
     "type": "unit",
     "artwork": "../assets/images/artworks/albums/3/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "外山大輔"
+      ],
+      "arrange": [
+        "APAZZI"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -36534,6 +39175,20 @@
     "title": "硬い殻のように抱きしめたい",
     "type": "solo",
     "artwork": "../assets/images/artworks/albums/3/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "杉山勝彦",
+        "三谷秀甫",
+        "谷地学"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -36576,6 +39231,18 @@
     "title": "満月が消えた",
     "type": "unit",
     "artwork": "../assets/images/artworks/albums/3/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "SaSA"
+      ],
+      "arrange": [
+        "SaSA"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -36646,6 +39313,18 @@
     "title": "ワタボコリ",
     "type": "unit",
     "artwork": "../assets/images/artworks/albums/3/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "ハサミマン"
+      ],
+      "arrange": [
+        "ハサミマン"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -36716,6 +39395,18 @@
     "title": "流星ディスコティック",
     "type": "unit",
     "artwork": "../assets/images/artworks/albums/3/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Masayoshi Kawabata"
+      ],
+      "arrange": [
+        "Masayoshi Kawabata"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -36772,6 +39463,18 @@
     "title": "忘却と美学",
     "type": "unit",
     "artwork": "../assets/images/artworks/albums/3/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "早川博隆"
+      ],
+      "arrange": [
+        "早川博隆"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -36828,6 +39531,18 @@
     "title": "自分のこと",
     "type": "solo",
     "artwork": "../assets/images/artworks/albums/U/L2.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "小松清人"
+      ],
+      "arrange": [
+        "小松清人"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -36870,6 +39585,18 @@
     "title": "自惚れビーチ",
     "type": "under",
     "artwork": "../assets/images/artworks/albums/U/L2.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "ツキダタダシ"
+      ],
+      "arrange": [
+        "ツキダタダシ"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -37094,6 +39821,18 @@
     "title": "その女",
     "type": "under",
     "artwork": "../assets/images/artworks/albums/U/L2.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "HRK"
+      ],
+      "arrange": [
+        "APAZZI"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -37318,6 +40057,18 @@
     "title": "誰よりそばにいたい",
     "type": "under",
     "artwork": "../assets/images/artworks/albums/U/L2.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "岩崎哲也"
+      ],
+      "arrange": [
+        "関根佑樹"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -37542,6 +40293,18 @@
     "title": "ありがちな恋愛",
     "type": "lead",
     "artwork": "../assets/images/artworks/albums/4/L.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "野中\"まさ\"雄一"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -37822,6 +40585,19 @@
     "title": "もし君がいなければ",
     "type": "solo",
     "artwork": "../assets/images/artworks/albums/4/L.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "杉山勝彦",
+        "有木竜郎"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -37864,6 +40640,18 @@
     "title": "キスの手裏剣",
     "type": "fourth generation",
     "artwork": "../assets/images/artworks/albums/4/L.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "山田智和"
+      ],
+      "arrange": [
+        "住谷翔平"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -38046,6 +40834,18 @@
     "title": "頬杖をついては眠れない",
     "type": "unit",
     "artwork": "../assets/images/artworks/albums/4/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Super Mahirock"
+      ],
+      "arrange": [
+        "Huge M"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -38144,6 +40944,18 @@
     "title": "ぼっち党",
     "type": "unit",
     "artwork": "../assets/images/artworks/albums/4/A.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "庄司裕"
+      ],
+      "arrange": [
+        "庄司裕"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -38214,6 +41026,20 @@
     "title": "さゆりんご募集中",
     "type": "unit",
     "artwork": "../assets/images/artworks/albums/4/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "浦島健太",
+        "菊池博人"
+      ],
+      "arrange": [
+        "浦島健太",
+        "菊池博人"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -38298,6 +41124,18 @@
     "title": "ゴルゴンゾーラ",
     "type": "unit",
     "artwork": "../assets/images/artworks/albums/4/B.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "BASEMINT"
+      ],
+      "arrange": [
+        "BASEMINT"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -38368,6 +41206,18 @@
     "title": "もうすぐ～ザンビ伝説～",
     "type": "special",
     "artwork": "../assets/images/artworks/albums/4/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "渡辺剛"
+      ],
+      "arrange": [
+        "渡辺剛"
+      ],
+      "direct": []
+    },
     "single": {
       "title": "",
       "number": ""
@@ -38690,6 +41540,20 @@
     "title": "世界中の隣人よ",
     "type": "special",
     "artwork": "../assets/images/artworks/digital/1/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "taka"
+      ],
+      "arrange": [
+        "taka"
+      ],
+      "direct": [
+        "横堀光範"
+      ]
+    },
     "single": {
       "title": "",
       "number": ""
@@ -39516,6 +42380,20 @@
     "title": "Route 246",
     "type": "title",
     "artwork": "../assets/images/artworks/digital/2/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "小室哲哉"
+      ],
+      "arrange": [
+        "小室哲哉"
+      ],
+      "direct": [
+        "maxilla"
+      ]
+    },
     "single": {
       "title": "",
       "number": ""

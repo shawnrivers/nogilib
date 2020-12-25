@@ -17,8 +17,9 @@ import { NameNotationsForIntl, useIntl } from 'client/hooks/useIntl';
 import { InfoItemLabel } from 'client/components/molecules/typography/info/InfoItemLabel';
 import { InfoItemValue } from 'client/components/molecules/typography/info/InfoItemValue';
 import { SectionSubtitle } from 'client/components/molecules/typography/SectionSubtitle';
-import { SongPageProps } from 'client/features/Song/container';
 import { PageHelmet } from 'client/layouts/PageHelmet';
+import { SongPageProps } from 'pages/songs/{SongJson.key}';
+import { toCdNumber } from 'utils/strings';
 
 const RowContainer: React.FC = props => (
   <ul
@@ -99,15 +100,28 @@ export const SongPage: React.FC<SongPageProps> = props => {
   const {
     title,
     type,
-    songTags,
+    single,
+    albums,
+    otherCds,
     artworkFluid,
     performersTag,
-    formation,
+    performers,
     creators,
   } = props;
   const theme = useAppTheme();
   const { Translation, getTranslation } = useTranslations();
   const { formatWords, formatNth, formatWordsWithCommas } = useIntl();
+
+  const songTags = React.useMemo(
+    () => [
+      ...[single]
+        .filter(({ number }) => number !== '')
+        .map(({ number }) => `${toCdNumber(number)} single`),
+      ...albums.map(({ number }) => `${toCdNumber(number)} album`),
+      ...otherCds.map(({ number }) => `${toCdNumber(number)} digital`),
+    ],
+    [single, albums, otherCds]
+  );
 
   return (
     <>
@@ -231,7 +245,7 @@ export const SongPage: React.FC<SongPageProps> = props => {
               )}
             </div>
           </section>
-          {formation.length > 0 && (
+          {performers.length > 0 && (
             <section>
               <TextDivider
                 text={<Translation text="performers" />}
@@ -254,9 +268,9 @@ export const SongPage: React.FC<SongPageProps> = props => {
                       margin-top: 1em;
                     `}
                   >
-                    {formation.map((row, index) => (
+                    {performers.map((row, index) => (
                       <section key={index}>
-                        {formation.length > 1 && (
+                        {performers.length > 1 && (
                           <SectionSubtitle
                             element="h3"
                             css={css`
@@ -272,9 +286,9 @@ export const SongPage: React.FC<SongPageProps> = props => {
                               <PerformerCard
                                 nameNotations={member.nameNotations}
                                 profileImageFluid={member.profileImageFluid}
-                                position={member.position}
+                                position={member.position ?? undefined}
                                 to={
-                                  member.isLink
+                                  member.isMember
                                     ? getMemberUrl(member.name)
                                     : undefined
                                 }
