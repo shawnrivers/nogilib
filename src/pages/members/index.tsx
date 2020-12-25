@@ -2,7 +2,7 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 import { FluidObject } from 'gatsby-image';
 import { MemberResult } from 'server/actors/Members/models';
-import { MembersPage } from 'client/features/Members';
+import { MembersPage } from 'client/templates/Members';
 import { sortByJoin, sortByGraduation, sortByMemberName } from 'utils/sorting';
 import { useFilter } from 'client/hooks/useFilter';
 import { MembersUrlFilter } from 'client/utils/urls';

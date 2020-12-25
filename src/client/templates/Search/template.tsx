@@ -4,7 +4,7 @@ import * as React from 'react';
 import {
   SearchResultCategory,
   SearchResultCategoryProps,
-} from 'client/features/Search/components/SearchResultCategory';
+} from 'client/templates/Search/components/SearchResultCategory';
 import { Typography } from 'client/components/atoms/Typography';
 import { PageContent } from 'client/components/templates/Page';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';

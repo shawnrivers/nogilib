@@ -2,7 +2,7 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 import { FluidObject } from 'gatsby-image';
 import { sortByDate } from 'utils/sorting';
-import { DiscographyPage } from 'client/features/Discography';
+import { DiscographyPage } from 'client/templates/Discography';
 import { useFilter } from 'client/hooks/useFilter';
 import { DiscographyUrlFilter } from 'client/utils/urls';
 import { DiscographyPageData } from 'server/pages/discography';

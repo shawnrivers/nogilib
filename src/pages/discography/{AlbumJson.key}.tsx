@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import { FluidObject } from 'gatsby-image';
 import * as React from 'react';
-import { AlbumPage } from 'client/features/Album';
+import { AlbumPage } from 'client/templates/Album';
 import { AlbumPageData } from 'server/pages/album';
 import { arrayToObject } from 'utils/arrays';
 
