@@ -5,6 +5,7 @@ import {
   MembersRawArray,
   MembersRawObject,
   MembersResultArray,
+  MembersResultObject,
 } from 'server/actors/Members/models';
 import { SongsRawObject } from 'server/actors/Songs/models';
 import { UnitsRawArray } from 'server/actors/Units/models';
@@ -24,12 +25,14 @@ export class Members {
   private rawDataArray: MembersRawArray;
   private rawDataObject: MembersRawObject;
   private resultData: MembersResultArray;
+  private resultDataObject: MembersResultObject | null;
   public isConverted: boolean;
 
   public constructor(membersRawArray: MembersRawArray) {
     this.rawDataArray = membersRawArray;
     this.rawDataObject = arrayToObject(membersRawArray, 'name');
     this.resultData = [];
+    this.resultDataObject = null;
     this.isConverted = false;
   }
 
@@ -43,6 +46,14 @@ export class Members {
 
   public get result(): MembersResultArray {
     return this.resultData;
+  }
+
+  public getResultObject(): MembersResultObject {
+    if (!this.resultDataObject) {
+      throw new Error('Please convert Members data at first.');
+    }
+
+    return this.resultDataObject;
   }
 
   public convertMembers(
@@ -72,6 +83,7 @@ export class Members {
     }
 
     this.resultData = membersResult;
+    this.resultDataObject = arrayToObject(membersResult, 'name');
     this.isConverted = true;
     return membersResult;
   }
