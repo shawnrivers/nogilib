@@ -5,7 +5,7 @@ import { ThemeDecorator } from 'storybook/ThemeDecorator';
 import {
   PositionCounter,
   PositionCounterProps,
-} from 'client/features/Member/components/PositionCounter';
+} from 'client/templates/Member/components/PositionCounter';
 
 export default {
   title: 'Position/PositionCounter',

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 import { FluidObject } from 'gatsby-image';
 import { SongPageData } from 'server/pages/song';
-import { SongPage } from 'client/features/Song';
+import { SongPage } from 'client/templates/Song';
 
 export const query = graphql`
   query($key: String!) {

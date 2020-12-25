@@ -1,7 +1,7 @@
 /**@jsx jsx */
 import { jsx, css } from '@emotion/core';
 import * as React from 'react';
-import { PositionBadge } from 'client/features/Member/components/PositionBadge';
+import { PositionBadge } from 'client/templates/Member/components/PositionBadge';
 import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
 import { PositionType } from 'server/actors/Members/constants/position';
 import { PageContent } from 'client/components/templates/Page';
@@ -12,10 +12,10 @@ import { useAppTheme, commonStyles } from 'client/styles/tokens';
 import { GridMemberImage } from 'client/components/atoms/images/GridMemberImage';
 import { useTranslations } from 'client/hooks/useTranslations';
 import { useIntl } from 'client/hooks/useIntl';
-import { PositionCounter } from 'client/features/Member/components/PositionCounter';
+import { PositionCounter } from 'client/templates/Member/components/PositionCounter';
 import { TextLink } from 'client/components/molecules/links/TextLink';
 import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
-import { GlowStickBadge } from 'client/features/Member/components/GlowStickBadge';
+import { GlowStickBadge } from 'client/templates/Member/components/GlowStickBadge';
 import { InfoItemLabel } from 'client/components/molecules/typography/info/InfoItemLabel';
 import { InfoItemValue } from 'client/components/molecules/typography/info/InfoItemValue';
 import { SectionSubtitle } from 'client/components/molecules/typography/SectionSubtitle';

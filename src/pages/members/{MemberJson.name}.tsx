@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import { FluidObject } from 'gatsby-image';
 import * as React from 'react';
-import { MemberPage } from 'client/features/Member';
+import { MemberPage } from 'client/templates/Member';
 import { MemberPageData } from 'server/pages/member';
 
 export const query = graphql`
