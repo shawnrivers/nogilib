@@ -5,18 +5,35 @@ import type { Index } from 'flexsearch';
 /**
  * Tokenize for searching in both English and Japanese.
  * Split non-ASCII codes by characters.
- * Example: `"齋藤飛鳥"` => `["齋", "藤", "飛", "鳥"]`; `"foo bar"` => `["foo", "bar"]`
  * @param str The original search query string
  */
-function tokenize(str: string): string[] {
+export function tokenize(str: string): string[] {
   return str
     .split(' ')
     .map(subStr => {
-      if (subStr.match(/[\x20-\x7F]/g)) {
-        return subStr;
-      } else {
-        return Array.from(subStr);
+      const charCount = subStr.length;
+      const result = [];
+      let currentStr = '';
+
+      for (let i = 0; i < charCount; i++) {
+        const char = subStr.charAt(i);
+
+        if (char.match(/[a-zA-Z]/g)) {
+          currentStr += char;
+        } else {
+          if (currentStr !== '') {
+            result.push(currentStr);
+            currentStr = '';
+          }
+          result.push(char);
+        }
+
+        if (currentStr !== '' && i === charCount - 1) {
+          result.push(currentStr);
+        }
       }
+
+      return result;
     })
     .flat();
 }
