@@ -12,6 +12,7 @@ import { getMembersPageData } from 'server/pages/members';
 import { getMemberPageData } from 'server/pages/member';
 import { getAlbumPageData } from 'server/pages/album';
 import { getSongPageData } from 'server/pages/song';
+import { getSearchPageData } from 'server/pages/search';
 
 // Generate raw data
 const songs = new Songs(songsRawArray);
@@ -52,6 +53,7 @@ const membersPageData = getMembersPageData(members);
 const memberPageData = getMemberPageData(members);
 const albumPageData = getAlbumPageData(discography, members);
 const songPageData = getSongPageData(songs, members);
+const searchPageData = getSearchPageData(discography, songs, members);
 
 // Store in JSON files
 writeJSONFile('./src/data/members.json', membersPageData);
@@ -59,3 +61,4 @@ writeJSONFile('./src/data/member.json', memberPageData);
 writeJSONFile('./src/data/song.json', songPageData);
 writeJSONFile('./src/data/discography.json', discographyPageData);
 writeJSONFile('./src/data/album.json', albumPageData);
+writeJSONFile('./src/data/search.json', searchPageData);
