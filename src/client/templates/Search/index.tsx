@@ -8,11 +8,11 @@ import {
 import { Typography } from 'client/components/atoms/Typography';
 import { PageContent } from 'client/components/templates/Page';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
-import { useTranslations } from 'client/hooks/useTranslations';
+import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { useLanguageContext } from 'client/store/language/hook';
 import { PageHelmet } from 'client/layouts/PageHelmet';
 import { SearchPageProps } from 'pages/search';
-import { useIntl } from 'client/hooks/useIntl';
+import { useIntl } from 'client/i18n/hooks/useIntl';
 import { getAlbumUrl, getMemberUrl, getSongUrl } from 'client/utils/urls';
 import { toCdNumber } from 'utils/strings';
 

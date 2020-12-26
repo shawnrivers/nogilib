@@ -16,7 +16,7 @@ import {
   TextLinkProps,
   TextLinkRef,
 } from 'client/components/molecules/links/TextLink';
-import { useTranslations } from 'client/hooks/useTranslations';
+import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { Divider } from 'client/components/atoms/Divider';
 
 type SidebarItemProps = Omit<

@@ -6,7 +6,7 @@ import {
   TypographyProps,
 } from 'client/components/atoms/Typography';
 import { useAppTheme } from 'client/styles/tokens';
-import { useTranslations } from 'client/hooks/useTranslations';
+import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import {
   HorizontalCard,
   HorizontalCardProps,

@@ -11,7 +11,7 @@ import {
   getSearchUrl,
 } from 'client/utils/urls';
 import { TextLink } from 'client/components/molecules/links/TextLink';
-import { useTranslations } from 'client/hooks/useTranslations';
+import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { Card } from 'client/components/atoms/Card';
 import { DiscographyIcon } from 'client/components/atoms/icons/DiscographyIcon';
 import { MembersIcon } from 'client/components/atoms/icons/MembersIcon';
