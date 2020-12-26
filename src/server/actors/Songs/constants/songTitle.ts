@@ -219,7 +219,7 @@ export enum SongTitle {
   Overture = 'OVERTURE',
 }
 
-export const SongsTitleKeyArray: TitleKeyArray<SongTitle> = [
+const SongsTitleKeyArray: TitleKeyArray<SongTitle> = [
   {
     title: SongTitle.Ashigaaruriyuu,
     key: 'ashitagaaruriyuu',
@@ -998,7 +998,7 @@ export const SongsTitleKeyArray: TitleKeyArray<SongTitle> = [
   },
   {
     title: SongTitle.RewindAnohi,
-    key: 'Rewindanohi',
+    key: 'rewindanohi',
   },
   {
     title: SongTitle.GomenneSmoothie,
@@ -1078,8 +1078,12 @@ export const SongsTitleKeyArray: TitleKeyArray<SongTitle> = [
   },
   {
     title: SongTitle.Overture,
-    key: 'OVERTURE',
+    key: 'overture',
   },
-];
+].map(titleKey => ({
+  ...titleKey,
+  // Make sure all keys are lower-cased
+  key: titleKey.key.toLowerCase(),
+}));
 
 export const SONGS = arrayToObject(SongsTitleKeyArray, 'title');

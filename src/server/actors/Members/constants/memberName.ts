@@ -1,3 +1,4 @@
+// Values should be lower-cased
 export enum MemberNameKey {
   AkimotoManatsu = 'akimotomanatsu',
   IkutaErika = 'ikutaerika',

@@ -3356,7 +3356,7 @@
         ]
       },
       {
-        "key": "Rewindanohi",
+        "key": "rewindanohi",
         "title": "Rewindあの日",
         "type": "unit",
         "inCdType": [
@@ -3883,7 +3883,7 @@
     "release": "2015-01-27",
     "songs": [
       {
-        "key": "OVERTURE",
+        "key": "overture",
         "title": "OVERTURE",
         "type": "coupling",
         "inCdType": [
