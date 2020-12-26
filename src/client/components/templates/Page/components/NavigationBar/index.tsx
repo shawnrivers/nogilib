@@ -21,7 +21,7 @@ import {
 import { Divider } from 'client/components/atoms/Divider';
 import { TextLink } from 'client/components/molecules/links/TextLink';
 import { BaseButton, BaseButtonRef } from 'client/components/atoms/BaseButton';
-import { useTranslations } from 'client/hooks/useTranslations';
+import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { MENU_BUTTON_ID } from 'client/constants/ids';
 import { useThemeContext } from 'client/store/theme/hook';
 

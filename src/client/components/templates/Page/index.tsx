@@ -16,7 +16,7 @@ import {
   ELEVATION_DARK,
 } from 'client/styles/tokens/elevation';
 import { Typography } from 'client/components/atoms/Typography';
-import { useTranslations } from 'client/hooks/useTranslations';
+import { useTranslations } from 'client/i18n/hooks/useTranslations';
 
 const PAGE_CONTENT_ID = 'page-content';
 

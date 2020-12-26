@@ -12,8 +12,8 @@ import {
   MemberCardProps,
 } from 'client/components/molecules/cards/MemberCard';
 import { getMemberUrl } from 'client/utils/urls';
-import { useTranslations } from 'client/hooks/useTranslations';
-import { NameNotationsForIntl, useIntl } from 'client/hooks/useIntl';
+import { useTranslations } from 'client/i18n/hooks/useTranslations';
+import { NameNotationsForIntl, useIntl } from 'client/i18n/hooks/useIntl';
 import { InfoItemLabel } from 'client/components/molecules/typography/info/InfoItemLabel';
 import { InfoItemValue } from 'client/components/molecules/typography/info/InfoItemValue';
 import { SectionSubtitle } from 'client/components/molecules/typography/SectionSubtitle';

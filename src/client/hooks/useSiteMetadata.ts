@@ -1,5 +1,5 @@
 import { useStaticQuery, graphql } from 'gatsby';
-import { useTranslations } from 'client/hooks/useTranslations';
+import { useTranslations } from 'client/i18n/hooks/useTranslations';
 
 type SiteMetadata = {
   title: string;
