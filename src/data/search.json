@@ -3657,10 +3657,10 @@
         "artwork": "../assets/images/artworks/albums/3/L.jpg"
       },
       {
-        "id": "song-Rewindanohi",
-        "field": "Rewindあの日 Rewindanohi",
+        "id": "song-rewindanohi",
+        "field": "Rewindあの日 rewindanohi",
         "searchType": "songs",
-        "key": "Rewindanohi",
+        "key": "rewindanohi",
         "title": "Rewindあの日",
         "songType": "unit",
         "single": {
