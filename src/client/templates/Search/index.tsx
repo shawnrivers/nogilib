@@ -88,7 +88,7 @@ export const SearchPage: React.FC<SearchPageProps> = props => {
             lang: 'en',
           });
         } else {
-          if (result.albums !== undefined) {
+          if (result.albums.length > 0) {
             captions.push({
               text: `${toCdNumber(result.albums[0].number)} album`,
               lang: 'en',
