@@ -11,33 +11,102 @@ import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import { useTranslations } from 'client/hooks/useTranslations';
 import { useLanguageContext } from 'client/store/language/hook';
 import { PageHelmet } from 'client/layouts/PageHelmet';
+import { SearchPageProps } from 'pages/search';
+import { useIntl } from 'client/hooks/useIntl';
+import { getAlbumUrl, getMemberUrl, getSongUrl } from 'client/utils/urls';
+import { toCdNumber } from 'utils/strings';
 
-export type SearchProps = {
-  query: string;
-  search(event: React.FormEvent<HTMLInputElement>): void;
-  results: {
-    members: SearchResultCategoryProps['results'];
-    cds: SearchResultCategoryProps['results'];
-    songs: SearchResultCategoryProps['results'];
-  };
-  isSearching: boolean;
-};
-
-export const Search: React.FC<SearchProps> = props => {
-  const { query, search, results, isSearching } = props;
+export const SearchPage: React.FC<SearchPageProps> = props => {
+  const { query, onSearch, results } = props;
 
   const hasNoResult = React.useMemo(
-    () =>
-      results.members.length + results.cds.length + results.songs.length ===
-        0 &&
-      query !== '' &&
-      !isSearching,
-    [results, query, isSearching]
+    () => results.length === 0 && query !== '',
+    [results, query]
   );
 
   const theme = useAppTheme();
   const { Translation, getTranslation } = useTranslations();
   const { language } = useLanguageContext();
+  const { formatMemberName } = useIntl();
+
+  const convertedResults = React.useMemo<{
+    members: SearchResultCategoryProps['results'];
+    cds: SearchResultCategoryProps['results'];
+    songs: SearchResultCategoryProps['results'];
+  }>(() => {
+    let members = [];
+    let cds = [];
+    let songs = [];
+
+    for (const result of results) {
+      if (result.searchType === 'members') {
+        const memberName = formatMemberName({
+          firstName: result.nameNotations.firstName,
+          lastName: result.nameNotations.lastName,
+          firstNameEn: result.nameNotations.firstNameEn,
+          lastNameEn: result.nameNotations.lastNameEn,
+        });
+
+        members.push({
+          to: getMemberUrl(result.name),
+          imgSharp: result.profileImageFluid,
+          heading: {
+            text: memberName.name,
+            lang: memberName.lang,
+          },
+          captions: [
+            {
+              text: getTranslation(`join: ${result.join}` as any),
+              lang: language,
+            },
+          ],
+        });
+      }
+
+      if (result.searchType === 'albums') {
+        cds.push({
+          to: getAlbumUrl(result.key),
+          imgSharp: result.artworkFluid,
+          heading: { text: result.title, lang: 'ja' },
+          captions: [
+            {
+              text: `${toCdNumber(result.number)} ${result.albumType}`,
+              lang: 'en',
+            },
+          ],
+        });
+      }
+
+      if (result.searchType === 'songs') {
+        const captions = [
+          { text: `${getTranslation(result.songType as any)}`, lang: language },
+        ];
+
+        if (result.single.number !== '') {
+          captions.push({
+            text: `${toCdNumber(result.single.number)} single`,
+            lang: 'en',
+          });
+        } else {
+          if (result.albums !== undefined) {
+            captions.push({
+              text: `${toCdNumber(result.albums[0].number)} album`,
+              lang: 'en',
+            });
+          }
+        }
+
+        songs.push({
+          to: getSongUrl(result.key),
+          imgSharp: result.artworkFluid,
+          heading: { text: result.title, lang: 'ja' },
+          captions,
+        });
+      }
+    }
+
+    return { members, cds, songs };
+  }, [results, formatMemberName, getTranslation, language]);
 
   return (
     <>
@@ -68,7 +137,7 @@ export const Search: React.FC<SearchProps> = props => {
               <input
                 type="text"
                 value={query}
-                onChange={search}
+                onChange={onSearch}
                 placeholder={getTranslation(
                   'Search song title, member name, etc.'
                 )}
@@ -112,7 +181,7 @@ export const Search: React.FC<SearchProps> = props => {
           <SearchResultCategory
             title="members"
             titleElement="h2"
-            results={results.members}
+            results={convertedResults.members}
             css={css`
               margin-top: 2rem;
             `}
@@ -120,7 +189,7 @@ export const Search: React.FC<SearchProps> = props => {
           <SearchResultCategory
             title="cds"
             titleElement="h2"
-            results={results.cds}
+            results={convertedResults.cds}
             css={css`
               margin-top: 2rem;
             `}
@@ -128,7 +197,7 @@ export const Search: React.FC<SearchProps> = props => {
           <SearchResultCategory
             title="songs"
             titleElement="h2"
-            results={results.songs}
+            results={convertedResults.songs}
             css={css`
               margin-top: 2rem;
             `}
