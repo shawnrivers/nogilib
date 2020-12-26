@@ -39,7 +39,7 @@ export function getSearchPageData(
   discography: Discography,
   songs: Songs,
   members: Members
-): SearchPageData {
+): SearchPageData[] {
   if (!discography.isConverted) {
     throw new Error('Please convert Discography data at first.');
   }
@@ -90,9 +90,11 @@ export function getSearchPageData(
     };
   });
 
-  return {
-    albums: albumsData,
-    songs: songsData,
-    members: membersData,
-  };
+  return [
+    {
+      albums: albumsData,
+      songs: songsData,
+      members: membersData,
+    },
+  ];
 }
