@@ -14,7 +14,7 @@ export const query = graphql`
       artworks {
         url {
           childImageSharp {
-            fluid {
+            fluid(maxWidth: 160) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -38,7 +38,7 @@ export const query = graphql`
         }
         albumProfileImage {
           childImageSharp {
-            fluid {
+            fluid(maxWidth: 130) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
