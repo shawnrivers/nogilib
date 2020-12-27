@@ -68,10 +68,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
                 >
                   <HorizontalCard
                     to={getSongUrl(track.key)}
-                    image={{
-                      fluid: track.artworkFluid,
-                      alt: '',
-                    }}
+                    image={{ fluid: track.artworkFluid }}
                     title={{ text: track.title, lang: 'ja' }}
                     tags={[
                       {
