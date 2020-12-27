@@ -19,7 +19,7 @@ export type SearchResultCategoryProps = {
   titleElement?: TypographyProps['element'];
   results: {
     to: string;
-    imgSharp: HorizontalCardProps['image']['fluid'];
+    image: HorizontalCardProps['image'];
     heading: HorizontalCardProps['title'];
     captions: HorizontalCardProps['tags'];
   }[];
@@ -55,7 +55,7 @@ export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props =
           <li key={result.heading.text}>
             <HorizontalCard
               to={result.to}
-              image={{ fluid: result.imgSharp, alt: '' }}
+              image={result.image}
               title={result.heading}
               titleElement="h3"
               tags={result.captions}
@@ -68,7 +68,7 @@ export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props =
               <li key={result.heading.text}>
                 <HorizontalCard
                   to={result.to}
-                  image={{ fluid: result.imgSharp, alt: '' }}
+                  image={result.image}
                   title={result.heading}
                   titleElement="h3"
                   tags={result.captions}

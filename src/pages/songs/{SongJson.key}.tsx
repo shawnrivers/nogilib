@@ -11,7 +11,7 @@ export const query = graphql`
       type
       artwork {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 200) {
             src
           }
         }
@@ -48,7 +48,7 @@ export const query = graphql`
         }
         profileImage {
           childImageSharp {
-            fluid {
+            fluid(maxWidth: 110) {
               src
             }
           }
