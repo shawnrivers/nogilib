@@ -15,7 +15,14 @@ export const query = graphql`
         lastNameEn
         lastNameFurigana
       }
-      profileImages {
+      profileImage {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      gallery {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
@@ -72,7 +79,12 @@ export const query = graphql`
 
 type MemberPageDataNode = {
   nameNotations: MemberPageData['nameNotations'];
-  profileImages: {
+  profileImage: {
+    childImageSharp: {
+      fluid: FluidObject;
+    };
+  };
+  gallery: {
     childImageSharp: {
       fluid: FluidObject;
     };
@@ -102,7 +114,7 @@ type MemberPageDataNode = {
 
 export type MemberPageProps = Omit<
   MemberPageDataNode,
-  'profileImages' | 'photoAlbums'
+  'gallery' | 'profileImage' | 'photoAlbums'
 > & {
   profileImageFluid: FluidObject;
   galleryFluids: FluidObject[];
@@ -148,14 +160,14 @@ const MemberPageContainer: React.FC<{
   );
 
   const gallery = React.useMemo(() => {
-    return memberData.profileImages.map(photo => photo.childImageSharp.fluid);
-  }, [memberData.profileImages]);
+    return memberData.gallery.map(photo => photo.childImageSharp.fluid);
+  }, [memberData.gallery]);
 
   return memberData ? (
     <MemberPage
       nameNotations={memberData.nameNotations}
+      profileImageFluid={memberData.profileImage.childImageSharp.fluid}
       galleryFluids={gallery}
-      profileImageFluid={gallery[0]}
       glowStickColor={memberData.glowStickColor}
       sites={memberData.sites}
       join={memberData.join}
