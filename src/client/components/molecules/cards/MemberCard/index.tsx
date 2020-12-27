@@ -77,7 +77,7 @@ const PositionBadge: React.FC<{
 };
 
 export type MemberCardProps = CardProps & {
-  profileImageFluid: GridMemberImageProps['fluid'];
+  profileImage: GridMemberImageProps;
   name: string;
   lang: string;
   nameElement?: TypographyProps['element'];
@@ -87,7 +87,7 @@ export type MemberCardProps = CardProps & {
 
 export const MemberCard: React.FC<MemberCardProps> = props => {
   const {
-    profileImageFluid,
+    profileImage,
     name,
     lang,
     nameElement = 'div',
@@ -111,7 +111,7 @@ export const MemberCard: React.FC<MemberCardProps> = props => {
       {...cardProps}
     >
       <article>
-        <GridMemberImage fluid={profileImageFluid} alt="" />
+        <GridMemberImage {...profileImage} alt="" />
         <Typography
           variant={textSize}
           element={nameElement}

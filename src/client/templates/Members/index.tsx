@@ -69,7 +69,7 @@ export const MembersPage: React.FC<MembersPageProps> = props => {
                 {member.members.map(member => (
                   <li key={member.name}>
                     <MemberCard
-                      profileImageFluid={member.profileImageFluid}
+                      profileImage={{ fluid: member.profileImageFluid }}
                       name={formatMemberName(member.nameNotations).name}
                       lang={formatMemberName(member.nameNotations).lang}
                       nameElement="h3"

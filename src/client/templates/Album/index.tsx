@@ -97,7 +97,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
                 {props.centers.map(member => (
                   <li key={member.name}>
                     <MemberCard
-                      profileImageFluid={member.albumProfileImageFluid}
+                      profileImage={{ fluid: member.albumProfileImageFluid }}
                       name={formatMemberName(member.nameNotations).name}
                       lang={formatMemberName(member.nameNotations).lang}
                       to={getMemberUrl(member.name)}
