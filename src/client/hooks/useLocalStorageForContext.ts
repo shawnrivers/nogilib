@@ -15,10 +15,15 @@ export const useLocalStorageForContext = () => {
   const { setTheme } = useThemeContext();
 
   React.useEffect(() => {
-    const themeMode = (localStorage.getItem(LOCAL_STORAGE_THEME_MODE_KEY) ??
-      getInitialThemeState().themeMode) as ThemeMode;
-    const language = (localStorage.getItem(LOCAL_STORAGE_LANGUAGE_KEY) ??
-      getInitialLanguageState()) as Language;
+    const initialThemeMode = getInitialThemeState().themeMode;
+    const initialLanguage = getInitialLanguageState().language;
+
+    const themeMode =
+      (localStorage.getItem(LOCAL_STORAGE_THEME_MODE_KEY) as ThemeMode) ??
+      initialThemeMode;
+    const language =
+      (localStorage.getItem(LOCAL_STORAGE_LANGUAGE_KEY) as Language) ??
+      initialLanguage;
 
     setTheme(themeMode);
     setLanguage(language);
