@@ -16,7 +16,7 @@ import { Card } from 'client/components/atoms/Card';
 import { DiscographyIcon } from 'client/components/atoms/icons/DiscographyIcon';
 import { MembersIcon } from 'client/components/atoms/icons/MembersIcon';
 import { SearchIcon } from 'client/components/atoms/icons/SearchIcon';
-import { StaticImage } from 'client/components/atoms/images/StaticImage';
+import { GatsbyImage } from 'client/components/atoms/images/GatsbyImage';
 
 const SubHeading: React.FC = props => (
   <Typography
@@ -72,7 +72,7 @@ const HomePage: React.FC = () => {
           margin-top: ${commonStyles.spacing.l};
         `}
       >
-        <StaticImage
+        <GatsbyImage
           fixed={heroImageData.file.childImageSharp.fixed}
           alt="NOGILIB"
           css={css`
