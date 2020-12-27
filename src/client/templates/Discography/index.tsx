@@ -67,7 +67,9 @@ export const DiscographyPage: React.FC<DiscographyPageProps> = props => {
                   <li key={cd.key}>
                     <ArtworkCard
                       to={getAlbumUrl(cd.key)}
-                      artworkFluid={cd.artwork.childImageSharp.fluid}
+                      image={{
+                        fluid: cd.artwork.childImageSharp.fluid,
+                      }}
                       number={cd.number}
                       type={cd.type}
                       title={cd.title}
