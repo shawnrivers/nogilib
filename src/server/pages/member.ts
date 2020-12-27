@@ -5,7 +5,8 @@ import { sortByDate } from 'utils/sorting';
 export type MemberPageData = {
   name: MemberResult['name'];
   nameNotations: MemberResult['nameNotations'];
-  profileImages: MemberResult['profileImages']['gallery'];
+  profileImage: MemberResult['profileImages']['gallery'][0];
+  gallery: MemberResult['profileImages']['gallery'];
   join: MemberResult['join'];
   graduation: MemberResult['graduation'];
   birthday: MemberResult['birthday'];
@@ -29,7 +30,8 @@ export function getMemberPageData(members: Members): MemberPageData[] {
   return members.result.map(member => ({
     name: member.name,
     nameNotations: member.nameNotations,
-    profileImages: member.profileImages.gallery,
+    profileImage: member.profileImages.gallery[0],
+    gallery: member.profileImages.gallery,
     join: member.join,
     graduation: member.graduation,
     birthday: member.birthday,

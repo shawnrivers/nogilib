@@ -9,7 +9,8 @@
       "lastNameEn": "akimoto",
       "firstNameEn": "manatsu"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/akimotomanatsu.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/akimotomanatsu.jpg",
       "../assets/images/members/singles/24/akimotomanatsu.jpg",
       "../assets/images/members/singles/22/akimotomanatsu.jpg",
@@ -215,7 +216,8 @@
       "lastNameEn": "ikuta",
       "firstNameEn": "erika"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/ikutaerika.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/ikutaerika.jpg",
       "../assets/images/members/singles/24/ikutaerika.jpg",
       "../assets/images/members/singles/22/ikutaerika.jpg",
@@ -423,7 +425,8 @@
       "lastNameEn": "ikoma",
       "firstNameEn": "rina"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/ikomarina_2020-08-10.jpg",
+    "gallery": [
       "../assets/images/members/others/ikomarina_2020-08-10.jpg",
       "../assets/images/members/others/ikomarina_2019-09-21.jpg",
       "../assets/images/members/singles/17/ikomarina.jpg",
@@ -621,7 +624,8 @@
       "lastNameEn": "inoue",
       "firstNameEn": "sayuri"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/inouesayuri_2020-06-11.jpg",
+    "gallery": [
       "../assets/images/members/others/inouesayuri_2020-06-11.jpg",
       "../assets/images/members/singles/25/inouesayuri.jpg",
       "../assets/images/members/singles/24/inouesayuri.jpg",
@@ -814,7 +818,8 @@
       "lastNameEn": "eto",
       "firstNameEn": "misa"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/etoumisa_2020-04-29.jpg",
+    "gallery": [
       "../assets/images/members/others/etoumisa_2020-04-29.jpg",
       "../assets/images/members/singles/22/etoumisa.jpg",
       "../assets/images/members/singles/20/etoumisa.jpg",
@@ -1032,7 +1037,8 @@
       "lastNameEn": "kawago",
       "firstNameEn": "hina"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/kawagohina_2020-04-29.jpg",
+    "gallery": [
       "../assets/images/members/others/kawagohina_2020-04-29.jpg",
       "../assets/images/members/singles/22/kawagohina.jpg",
       "../assets/images/members/singles/20/kawagohina.jpg",
@@ -1226,7 +1232,8 @@
       "lastNameEn": "saito",
       "firstNameEn": "asuka"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/saitouasuka.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/saitouasuka.jpg",
       "../assets/images/members/singles/24/saitouasuka.jpg",
       "../assets/images/members/singles/22/saitouasuka.jpg",
@@ -1416,7 +1423,8 @@
       "lastNameEn": "saito",
       "firstNameEn": "yuri"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/saitouyuuri_2020-09-26.jpg",
+    "gallery": [
       "../assets/images/members/others/saitouyuuri_2020-09-26.jpg",
       "../assets/images/members/others/saitouyuuri_2020-04-29.jpg",
       "../assets/images/members/singles/22/saitouyuuri.jpg",
@@ -1607,7 +1615,8 @@
       "lastNameEn": "sakurai",
       "firstNameEn": "reika"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/sakuraireika_2020-04-29.jpg",
+    "gallery": [
       "../assets/images/members/others/sakuraireika_2020-04-29.jpg",
       "../assets/images/members/singles/22/sakuraireika.jpg",
       "../assets/images/members/singles/20/sakuraireika.jpg",
@@ -1811,7 +1820,8 @@
       "lastNameEn": "shiraishi",
       "firstNameEn": "mai"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/shiraishimai_2020-11-11.jpg",
+    "gallery": [
       "../assets/images/members/others/shiraishimai_2020-11-11.jpg",
       "../assets/images/members/singles/25/shiraishimai.jpg",
       "../assets/images/members/singles/24/shiraishimai.jpg",
@@ -2052,7 +2062,8 @@
       "lastNameEn": "takayama",
       "firstNameEn": "kazumi"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/takayamakazumi.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/takayamakazumi.jpg",
       "../assets/images/members/singles/24/takayamakazumi.jpg",
       "../assets/images/members/singles/22/takayamakazumi.jpg",
@@ -2261,7 +2272,8 @@
       "lastNameEn": "nakada",
       "firstNameEn": "kana"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/nakadakana_2020-11-11.jpg",
+    "gallery": [
       "../assets/images/members/others/nakadakana_2020-11-11.jpg",
       "../assets/images/members/singles/25/nakadakana.jpg",
       "../assets/images/members/singles/24/nakadakana.jpg",
@@ -2453,7 +2465,8 @@
       "lastNameEn": "nishino",
       "firstNameEn": "nanase"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/nishinonanase_2020-06-11.jpg",
+    "gallery": [
       "../assets/images/members/others/nishinonanase_2020-06-11.jpg",
       "../assets/images/members/others/nishinonanase_2019-09-21.jpg",
       "../assets/images/members/singles/22/nishinonanase.jpg",
@@ -2673,7 +2686,8 @@
       "lastNameEn": "nojo",
       "firstNameEn": "ami"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/noujouami_2020-09-26.jpg",
+    "gallery": [
       "../assets/images/members/others/noujouami_2020-09-26.jpg",
       "../assets/images/members/others/noujouami_2020-04-29.jpg",
       "../assets/images/members/singles/22/noujouami.jpg",
@@ -2846,7 +2860,8 @@
       "lastNameEn": "higuchi",
       "firstNameEn": "hina"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/higuchihina.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/higuchihina.jpg",
       "../assets/images/members/singles/24/higuchihina.jpg",
       "../assets/images/members/singles/22/higuchihina.jpg",
@@ -3025,7 +3040,8 @@
       "lastNameEn": "hoshino",
       "firstNameEn": "minami"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/hoshinominami.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/hoshinominami.jpg",
       "../assets/images/members/singles/24/hoshinominami.jpg",
       "../assets/images/members/singles/22/hoshinominami.jpg",
@@ -3215,7 +3231,8 @@
       "lastNameEn": "matsumura",
       "firstNameEn": "sayuri"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/matsumurasayuri.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/matsumurasayuri.jpg",
       "../assets/images/members/singles/24/matsumurasayuri.jpg",
       "../assets/images/members/singles/22/matsumurasayuri.jpg",
@@ -3413,7 +3430,8 @@
       "lastNameEn": "wakatsuki",
       "firstNameEn": "yumi"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/wakatsukiyumi_2020-06-11.jpg",
+    "gallery": [
       "../assets/images/members/others/wakatsukiyumi_2020-06-11.jpg",
       "../assets/images/members/others/wakatsukiyumi_2019-09-21.jpg",
       "../assets/images/members/singles/22/wakatsukiyumi.jpg",
@@ -3614,7 +3632,8 @@
       "lastNameEn": "wada",
       "firstNameEn": "maya"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/wadamaaya.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/wadamaaya.jpg",
       "../assets/images/members/singles/24/wadamaaya.jpg",
       "../assets/images/members/singles/22/wadamaaya.jpg",
@@ -3791,7 +3810,8 @@
       "lastNameEn": "saito",
       "firstNameEn": "chiharu"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/saitouchiharu_2020-06-11.jpg",
+    "gallery": [
       "../assets/images/members/others/saitouchiharu_2020-06-11.jpg",
       "../assets/images/members/others/saitouchiharu_2019-09-22.jpg",
       "../assets/images/members/singles/17/saitouchiharu.jpg",
@@ -3962,7 +3982,8 @@
       "lastNameEn": "kawamura",
       "firstNameEn": "mahiro"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/kawamuramahiro_2020-04-29.jpg",
+    "gallery": [
       "../assets/images/members/others/kawamuramahiro_2020-04-29.jpg",
       "../assets/images/members/singles/17/kawamuramahiro.jpg",
       "../assets/images/members/singles/15/kawamuramahiro.jpg",
@@ -4132,7 +4153,8 @@
       "lastNameEn": "nakamoto",
       "firstNameEn": "himeka"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/nakamotohimeka_2020-04-29.jpg",
+    "gallery": [
       "../assets/images/members/others/nakamotohimeka_2020-04-29.jpg",
       "../assets/images/members/singles/17/nakamotohimeka.jpg",
       "../assets/images/members/singles/15/nakamotohimeka.jpg",
@@ -4302,7 +4324,8 @@
       "lastNameEn": "ito",
       "firstNameEn": "marika"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/itoumarika_2020-09-26.jpg",
+    "gallery": [
       "../assets/images/members/others/itoumarika_2020-09-26.jpg",
       "../assets/images/members/others/itoumarika_2020-04-29.jpg",
       "../assets/images/members/singles/17/itoumarika.jpg",
@@ -4492,7 +4515,8 @@
       "lastNameEn": "hashimoto",
       "firstNameEn": "nanami"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/15/hashimotonanami.jpg",
+    "gallery": [
       "../assets/images/members/singles/15/hashimotonanami.jpg",
       "../assets/images/members/singles/14/hashimotonanami.jpg",
       "../assets/images/members/singles/13/hashimotonanami.jpg",
@@ -4676,7 +4700,8 @@
       "lastNameEn": "fukagawa",
       "firstNameEn": "mai"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/fukagawamai_2020-04-29.jpg",
+    "gallery": [
       "../assets/images/members/others/fukagawamai_2020-04-29.jpg",
       "../assets/images/members/singles/14/fukagawamai.jpg",
       "../assets/images/members/singles/13/fukagawamai.jpg",
@@ -4867,7 +4892,8 @@
       "lastNameEn": "nagashima",
       "firstNameEn": "seira"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/nagashimaseira_2020-04-29.jpg",
+    "gallery": [
       "../assets/images/members/others/nagashimaseira_2020-04-29.jpg",
       "../assets/images/members/singles/14/nagashimaseira.jpg",
       "../assets/images/members/singles/13/nagashimaseira.jpg",
@@ -5037,7 +5063,8 @@
       "lastNameEn": "matsui",
       "firstNameEn": "rena"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/matsuirena_2020-04-29.jpg",
+    "gallery": [
       "../assets/images/members/others/matsuirena_2020-04-29.jpg",
       "../assets/images/members/singles/11/matsuirena.jpg",
       "../assets/images/members/singles/10/matsuirena.jpg",
@@ -5197,7 +5224,8 @@
       "lastNameEn": "hatanaka",
       "firstNameEn": "seira"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/hatanakaseira_2020-04-29.jpg",
+    "gallery": [
       "../assets/images/members/others/hatanakaseira_2020-04-29.jpg",
       "../assets/images/members/singles/10/hatanakaseira.jpg",
       "../assets/images/members/singles/9/hatanakaseira.jpg",
@@ -5363,7 +5391,8 @@
       "lastNameEn": "yamato",
       "firstNameEn": "rina"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/10/yamatorina.jpg",
+    "gallery": [
       "../assets/images/members/singles/10/yamatorina.jpg",
       "../assets/images/members/singles/9/yamatorina.jpg",
       "../assets/images/members/singles/8/yamatorina.jpg",
@@ -5515,7 +5544,8 @@
       "lastNameEn": "ito",
       "firstNameEn": "nene"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/itounene_2020-04-29.jpg",
+    "gallery": [
       "../assets/images/members/others/itounene_2020-04-29.jpg",
       "../assets/images/members/singles/9/itounene.jpg",
       "../assets/images/members/singles/8/itounene.jpg",
@@ -5676,7 +5706,8 @@
       "lastNameEn": "ichiki",
       "firstNameEn": "rena"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/ichikirena_2020-04-29.jpg",
+    "gallery": [
       "../assets/images/members/others/ichikirena_2020-04-29.jpg",
       "../assets/images/members/singles/9/ichikirena.jpg",
       "../assets/images/members/singles/8/ichikirena.jpg",
@@ -5833,7 +5864,8 @@
       "lastNameEn": "nishikawa",
       "firstNameEn": "nanami"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/7/nishikawananami.jpg",
+    "gallery": [
       "../assets/images/members/singles/7/nishikawananami.jpg"
     ],
     "join": "second",
@@ -5976,7 +6008,8 @@
       "lastNameEn": "miyazawa",
       "firstNameEn": "seira"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/miyazawaseira_2020-04-29.jpg",
+    "gallery": [
       "../assets/images/members/others/miyazawaseira_2020-04-29.jpg",
       "../assets/images/members/singles/6/miyazawaseira.jpg",
       "../assets/images/members/singles/5/miyazawaseira.jpg",
@@ -6138,7 +6171,8 @@
       "lastNameEn": "kashiwa",
       "firstNameEn": "yukina"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/kashiwayukina_2020-04-29.jpg",
+    "gallery": [
       "../assets/images/members/others/kashiwayukina_2020-04-29.jpg",
       "../assets/images/members/singles/6/kashiwayukina.jpg",
       "../assets/images/members/singles/5/kashiwayukina.jpg",
@@ -6295,7 +6329,8 @@
       "lastNameEn": "ando",
       "firstNameEn": "mikumo"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/5/andoumikumo.jpg",
+    "gallery": [
       "../assets/images/members/singles/5/andoumikumo.jpg",
       "../assets/images/members/singles/4/andoumikumo.jpg",
       "../assets/images/members/singles/3/andoumikumo.jpg",
@@ -6442,7 +6477,8 @@
       "lastNameEn": "iwase",
       "firstNameEn": "yumiko"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/iwaseyumiko_2020-04-29.jpg",
+    "gallery": [
       "../assets/images/members/others/iwaseyumiko_2020-04-29.jpg",
       "../assets/images/members/singles/3/iwaseyumiko.jpg",
       "../assets/images/members/singles/2/iwaseyumiko.jpg",
@@ -6597,7 +6633,8 @@
       "lastNameEn": "ito",
       "firstNameEn": "karin"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/itoukarin_2020-04-29.jpg",
+    "gallery": [
       "../assets/images/members/others/itoukarin_2020-04-29.jpg",
       "../assets/images/members/singles/22/itoukarin.jpg",
       "../assets/images/members/singles/20/itoukarin.jpg",
@@ -6776,7 +6813,8 @@
       "lastNameEn": "ito",
       "firstNameEn": "junna"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/itoujunna.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/itoujunna.jpg",
       "../assets/images/members/singles/24/itoujunna.jpg",
       "../assets/images/members/singles/22/itoujunna.jpg",
@@ -6951,7 +6989,8 @@
       "lastNameEn": "kitano",
       "firstNameEn": "hinako"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/kitanohinako.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/kitanohinako.jpg",
       "../assets/images/members/singles/24/kitanohinako.jpg",
       "../assets/images/members/singles/22/kitanohinako.jpg",
@@ -7135,7 +7174,8 @@
       "lastNameEn": "sasaki",
       "firstNameEn": "kotoko"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/sasakikotoko_2020-10-14.jpg",
+    "gallery": [
       "../assets/images/members/others/sasakikotoko_2020-10-14.jpg",
       "../assets/images/members/singles/25/sasakikotoko.jpg",
       "../assets/images/members/singles/24/sasakikotoko.jpg",
@@ -7307,7 +7347,8 @@
       "lastNameEn": "shinuchi",
       "firstNameEn": "mai"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/shinuchimai.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/shinuchimai.jpg",
       "../assets/images/members/singles/24/shinuchimai.jpg",
       "../assets/images/members/singles/22/shinuchimai.jpg",
@@ -7495,7 +7536,8 @@
       "lastNameEn": "suzuki",
       "firstNameEn": "ayane"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/suzukiayane.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/suzukiayane.jpg",
       "../assets/images/members/singles/24/suzukiayane.jpg",
       "../assets/images/members/singles/22/suzukiayane.jpg",
@@ -7679,7 +7721,8 @@
       "lastNameEn": "terada",
       "firstNameEn": "ranze"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/teradaranze.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/teradaranze.jpg",
       "../assets/images/members/singles/24/teradaranze.jpg",
       "../assets/images/members/singles/22/teradaranze.jpg",
@@ -7851,7 +7894,8 @@
       "lastNameEn": "hori",
       "firstNameEn": "miona"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/horimiona.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/horimiona.jpg",
       "../assets/images/members/singles/24/horimiona.jpg",
       "../assets/images/members/singles/22/horimiona.jpg",
@@ -8052,7 +8096,8 @@
       "lastNameEn": "yamazaki",
       "firstNameEn": "rena"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/yamazakirena.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/yamazakirena.jpg",
       "../assets/images/members/singles/24/yamazakirena.jpg",
       "../assets/images/members/singles/22/yamazakirena.jpg",
@@ -8225,7 +8270,8 @@
       "lastNameEn": "watanabe",
       "firstNameEn": "miria"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/watanabemiria.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/watanabemiria.jpg",
       "../assets/images/members/singles/24/watanabemiria.jpg",
       "../assets/images/members/singles/22/watanabemiria.jpg",
@@ -8396,7 +8442,8 @@
       "lastNameEn": "sagara",
       "firstNameEn": "iori"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/others/sagaraiori_2020-09-26.jpg",
+    "gallery": [
       "../assets/images/members/others/sagaraiori_2020-09-26.jpg",
       "../assets/images/members/others/sagaraiori_2020-04-29.jpg",
       "../assets/images/members/singles/17/sagaraiori.jpg",
@@ -8562,7 +8609,8 @@
       "lastNameEn": "yonetoku",
       "firstNameEn": "kyoka"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/9/yonetokukyouka.jpg",
+    "gallery": [
       "../assets/images/members/singles/9/yonetokukyouka.jpg",
       "../assets/images/members/singles/8/yonetokukyouka.jpg",
       "../assets/images/members/singles/7/yonetokukyouka.jpg"
@@ -8707,7 +8755,8 @@
       "lastNameEn": "yada",
       "firstNameEn": "risako"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/9/yadarisako.jpg",
+    "gallery": [
       "../assets/images/members/singles/9/yadarisako.jpg",
       "../assets/images/members/singles/8/yadarisako.jpg",
       "../assets/images/members/singles/7/yadarisako.jpg"
@@ -8852,7 +8901,8 @@
       "lastNameEn": "ito",
       "firstNameEn": "riria"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/itouriria.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/itouriria.jpg",
       "../assets/images/members/singles/24/itouriria.jpg",
       "../assets/images/members/singles/22/itouriria.jpg",
@@ -9008,7 +9058,8 @@
       "lastNameEn": "iwamoto",
       "firstNameEn": "renka"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/iwamotorenka.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/iwamotorenka.jpg",
       "../assets/images/members/singles/24/iwamotorenka.jpg",
       "../assets/images/members/singles/22/iwamotorenka.jpg",
@@ -9164,7 +9215,8 @@
       "lastNameEn": "umezakwa",
       "firstNameEn": "minami"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/umezawaminami.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/umezawaminami.jpg",
       "../assets/images/members/singles/24/umezawaminami.jpg",
       "../assets/images/members/singles/22/umezawaminami.jpg",
@@ -9335,7 +9387,8 @@
       "lastNameEn": "ozono",
       "firstNameEn": "momoko"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/oozonomomoko.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/oozonomomoko.jpg",
       "../assets/images/members/singles/24/oozonomomoko.jpg",
       "../assets/images/members/singles/22/oozonomomoko.jpg",
@@ -9497,7 +9550,8 @@
       "lastNameEn": "kubo",
       "firstNameEn": "shiori"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/kuboshiori.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/kuboshiori.jpg",
       "../assets/images/members/singles/24/kuboshiori.jpg",
       "../assets/images/members/singles/22/kuboshiori.jpg",
@@ -9655,7 +9709,8 @@
       "lastNameEn": "sakaguchi",
       "firstNameEn": "tamami"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/sakaguchitamami.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/sakaguchitamami.jpg",
       "../assets/images/members/singles/24/sakaguchitamami.jpg",
       "../assets/images/members/singles/22/sakaguchitamami.jpg",
@@ -9813,7 +9868,8 @@
       "lastNameEn": "sato",
       "firstNameEn": "kaede"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/satoukaede.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/satoukaede.jpg",
       "../assets/images/members/singles/24/satoukaede.jpg",
       "../assets/images/members/singles/22/satoukaede.jpg",
@@ -9969,7 +10025,8 @@
       "lastNameEn": "nakamura",
       "firstNameEn": "reno"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/nakamurareno.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/nakamurareno.jpg",
       "../assets/images/members/singles/24/nakamurareno.jpg",
       "../assets/images/members/singles/22/nakamurareno.jpg",
@@ -10125,7 +10182,8 @@
       "lastNameEn": "mukai",
       "firstNameEn": "hazuki"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/mukaihazuki.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/mukaihazuki.jpg",
       "../assets/images/members/singles/24/mukaihazuki.jpg",
       "../assets/images/members/singles/22/mukaihazuki.jpg",
@@ -10281,7 +10339,8 @@
       "lastNameEn": "yamashita",
       "firstNameEn": "mizuki"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/yamashitamizuki.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/yamashitamizuki.jpg",
       "../assets/images/members/singles/24/yamashitamizuki.jpg",
       "../assets/images/members/singles/22/yamashitamizuki.jpg",
@@ -10454,7 +10513,8 @@
       "lastNameEn": "yoshida",
       "firstNameEn": "ayanochristie"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/yoshidaayanochristie.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/yoshidaayanochristie.jpg",
       "../assets/images/members/singles/24/yoshidaayanochristie.jpg",
       "../assets/images/members/singles/22/yoshidaayanochristie.jpg",
@@ -10610,7 +10670,8 @@
       "lastNameEn": "yoda",
       "firstNameEn": "yuki"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/yodayuuki.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/yodayuuki.jpg",
       "../assets/images/members/singles/24/yodayuuki.jpg",
       "../assets/images/members/singles/22/yodayuuki.jpg",
@@ -10797,7 +10858,8 @@
       "lastNameEn": "endo",
       "firstNameEn": "sakura"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/endousakura.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/endousakura.jpg",
       "../assets/images/members/singles/24/endousakura.jpg",
       "../assets/images/members/singles/22/endousakura.jpg"
@@ -10951,7 +11013,8 @@
       "lastNameEn": "kaki",
       "firstNameEn": "haruka"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/kakiharuka.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/kakiharuka.jpg",
       "../assets/images/members/singles/24/kakiharuka.jpg",
       "../assets/images/members/singles/22/kakiharuka.jpg"
@@ -11105,7 +11168,8 @@
       "lastNameEn": "kakehashi",
       "firstNameEn": "sayaka"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/kakehashisayaka.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/kakehashisayaka.jpg",
       "../assets/images/members/singles/24/kakehashisayaka.jpg",
       "../assets/images/members/singles/22/kakehashisayaka.jpg"
@@ -11259,7 +11323,8 @@
       "lastNameEn": "kanagawa",
       "firstNameEn": "saya"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/kanagawasaya.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/kanagawasaya.jpg",
       "../assets/images/members/singles/24/kanagawasaya.jpg",
       "../assets/images/members/singles/22/kanagawasaya.jpg"
@@ -11413,7 +11478,8 @@
       "lastNameEn": "kitagawa",
       "firstNameEn": "yuri"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/kitagawayuri.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/kitagawayuri.jpg",
       "../assets/images/members/singles/24/kitagawayuri.jpg",
       "../assets/images/members/singles/22/kitagawayuri.jpg"
@@ -11567,7 +11633,8 @@
       "lastNameEn": "shibata",
       "firstNameEn": "yuna"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/shibatayuna.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/shibatayuna.jpg",
       "../assets/images/members/singles/24/shibatayuna.jpg",
       "../assets/images/members/singles/22/shibatayuna.jpg"
@@ -11721,7 +11788,8 @@
       "lastNameEn": "seimiya",
       "firstNameEn": "rei"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/seimiyarei.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/seimiyarei.jpg",
       "../assets/images/members/singles/24/seimiyarei.jpg",
       "../assets/images/members/singles/22/seimiyarei.jpg"
@@ -11875,7 +11943,8 @@
       "lastNameEn": "tamura",
       "firstNameEn": "mayu"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/tamuramayu.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/tamuramayu.jpg",
       "../assets/images/members/singles/24/tamuramayu.jpg",
       "../assets/images/members/singles/22/tamuramayu.jpg"
@@ -12029,7 +12098,8 @@
       "lastNameEn": "tsutsui",
       "firstNameEn": "ayame"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/tsutsuiayame.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/tsutsuiayame.jpg",
       "../assets/images/members/singles/24/tsutsuiayame.jpg",
       "../assets/images/members/singles/22/tsutsuiayame.jpg"
@@ -12183,7 +12253,8 @@
       "lastNameEn": "hayakawa",
       "firstNameEn": "seira"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/hayakawaseira.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/hayakawaseira.jpg",
       "../assets/images/members/singles/24/hayakawaseira.jpg",
       "../assets/images/members/singles/22/hayakawaseira.jpg"
@@ -12337,7 +12408,8 @@
       "lastNameEn": "yakubo",
       "firstNameEn": "mio"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/yakubomio.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/yakubomio.jpg",
       "../assets/images/members/singles/24/yakubomio.jpg",
       "../assets/images/members/singles/22/yakubomio.jpg"
@@ -12491,7 +12563,8 @@
       "lastNameEn": "kuromi",
       "firstNameEn": "haruka"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/kuromiharuka.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/kuromiharuka.jpg",
       "../assets/images/members/others/kuromiharuka_2020-02-18.jpg",
       "../assets/images/members/others/kuromiharuka_2020-02-16.jpg"
@@ -12649,7 +12722,8 @@
       "lastNameEn": "satou",
       "firstNameEn": "rika"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/satourika.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/satourika.jpg",
       "../assets/images/members/others/satourika_2020-02-18.jpg",
       "../assets/images/members/others/satourika_2020-02-16.jpg"
@@ -12807,7 +12881,8 @@
       "lastNameEn": "hayashi",
       "firstNameEn": "runa"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/hayashiruna.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/hayashiruna.jpg",
       "../assets/images/members/others/hayashiruna_2020-02-18.jpg",
       "../assets/images/members/others/hayashiruna_2020-02-16.jpg"
@@ -12965,7 +13040,8 @@
       "lastNameEn": "matsuo",
       "firstNameEn": "miyu"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/matsuomiyu.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/matsuomiyu.jpg",
       "../assets/images/members/others/matsuomiyu_2020-02-16.jpg"
     ],
@@ -13122,7 +13198,8 @@
       "lastNameEn": "yumiki",
       "firstNameEn": "nao"
     },
-    "profileImages": [
+    "profileImage": "../assets/images/members/singles/25/yumikinao.jpg",
+    "gallery": [
       "../assets/images/members/singles/25/yumikinao.jpg",
       "../assets/images/members/others/yumikinao_2020-02-18.jpg",
       "../assets/images/members/others/yumikinao_2020-02-16.jpg"
