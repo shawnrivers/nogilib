@@ -7,6 +7,8 @@ import {
   LOCAL_STORAGE_THEME_MODE_KEY,
 } from 'client/utils/constants';
 import { useThemeContext } from 'client/store/theme/hook';
+import { getInitialThemeState } from 'client/store/theme/reducer';
+import { getInitialLanguageState } from 'client/store/language/reducer';
 
 export const useLocalStorageForContext = () => {
   const { setLanguage } = useLanguageContext();
@@ -14,9 +16,9 @@ export const useLocalStorageForContext = () => {
 
   React.useEffect(() => {
     const themeMode = (localStorage.getItem(LOCAL_STORAGE_THEME_MODE_KEY) ??
-      'auto') as ThemeMode;
+      getInitialThemeState().themeMode) as ThemeMode;
     const language = (localStorage.getItem(LOCAL_STORAGE_LANGUAGE_KEY) ??
-      'ja') as Language;
+      getInitialLanguageState()) as Language;
 
     setTheme(themeMode);
     setLanguage(language);
