@@ -1,9 +1,7 @@
 import Img, { GatsbyImageProps } from 'gatsby-image';
 import React from 'react';
 
-export type StaticImageProps = GatsbyImageProps;
-
-export const StaticImage: React.FC<StaticImageProps> = props => {
+export const GatsbyImage: React.FC<GatsbyImageProps> = props => {
   const { imgStyle, ...restProps } = props;
 
   return (
