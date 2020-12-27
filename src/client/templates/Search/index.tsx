@@ -49,7 +49,7 @@ export const SearchPage: React.FC<SearchPageProps> = props => {
 
         members.push({
           to: getMemberUrl(result.name),
-          imgSharp: result.profileImageFluid,
+          image: { fluid: result.profileImageFluid },
           heading: {
             text: memberName.name,
             lang: memberName.lang,
@@ -66,7 +66,7 @@ export const SearchPage: React.FC<SearchPageProps> = props => {
       if (result.searchType === 'albums') {
         cds.push({
           to: getAlbumUrl(result.key),
-          imgSharp: result.artworkFluid,
+          image: { fluid: result.artworkFluid },
           heading: { text: result.title, lang: 'ja' },
           captions: [
             {
@@ -98,7 +98,7 @@ export const SearchPage: React.FC<SearchPageProps> = props => {
 
         songs.push({
           to: getSongUrl(result.key),
-          imgSharp: result.artworkFluid,
+          image: { fluid: result.artworkFluid },
           heading: { text: result.title, lang: 'ja' },
           captions,
         });
