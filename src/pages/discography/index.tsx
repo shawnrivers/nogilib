@@ -17,7 +17,7 @@ export const query = graphql`
         number
         artwork {
           childImageSharp {
-            fluid(maxWidth: 200) {
+            fluid(maxWidth: 300) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }

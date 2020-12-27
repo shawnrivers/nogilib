@@ -26,7 +26,7 @@ export const query = graphql`
         }
         profileImage {
           childImageSharp {
-            fluid(maxWidth: 130) {
+            fluid(maxWidth: 200) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
