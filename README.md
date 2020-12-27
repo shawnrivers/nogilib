@@ -47,6 +47,15 @@
 
     Your site is now running at `http://localhost:8080`.
 
+4. **Generate font pre-load cache**
+   
+   NOTE: Only run this script when new pages or new fonts are added.
+   Also note that because this script walks through every single page of the app, it will take several minutes.
+
+    ```sh
+    npm run preload-fonts
+    ```
+
 ## 🧐 Directories
 
     .
@@ -103,5 +112,5 @@
 
 ## Copyrights
 
-I do not own any Copyrights of members or CD artworks images used in this project.
+I do not own any copyrights of members or CD artworks images used in this project.
 Therefore, please **DO NOT** use this project for any commercial use.
