@@ -15,14 +15,14 @@ import { Card, CardProps } from 'client/components/atoms/Card';
 export const ArtworkCard: React.FC<
   CardProps & {
     title: string;
-    artworkFluid: GridArtworkImageProps['fluid'];
+    image: GridArtworkImageProps;
     titleElement?: TypographyProps['element'];
     number: string;
     type: string;
   }
 > = props => {
   const {
-    artworkFluid,
+    image,
     title,
     titleElement = 'div',
     number,
@@ -32,7 +32,7 @@ export const ArtworkCard: React.FC<
   return (
     <Card {...cardProps}>
       <article>
-        <GridArtworkImage fluid={artworkFluid} alt="" />
+        <GridArtworkImage {...image} alt="" />
         <Typography
           variant="h7"
           element="div"
