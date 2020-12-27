@@ -41,7 +41,7 @@ const RowContainer: React.FC = props => (
 
 type PerformerCardProps = Pick<
   MemberCardProps,
-  'profileImageFluid' | 'to' | 'position'
+  'profileImage' | 'to' | 'position'
 > & {
   nameNotations: NameNotationsForIntl;
 };
@@ -53,7 +53,7 @@ const PerformerCard: React.FC<PerformerCardProps> = props => {
     <MemberCard
       name={formatMemberName(props.nameNotations).name}
       lang={formatMemberName(props.nameNotations).lang}
-      profileImageFluid={props.profileImageFluid}
+      profileImage={props.profileImage}
       to={props.to}
       position={props.position}
       textSize="body3"
@@ -285,7 +285,9 @@ export const SongPage: React.FC<SongPageProps> = props => {
                             <li key={member.name}>
                               <PerformerCard
                                 nameNotations={member.nameNotations}
-                                profileImageFluid={member.profileImageFluid}
+                                profileImage={{
+                                  fluid: member.profileImageFluid,
+                                }}
                                 position={member.position ?? undefined}
                                 to={
                                   member.isMember
