@@ -17,14 +17,14 @@ export const query = graphql`
       }
       profileImage {
         childImageSharp {
-          fluid(maxWidth: 200) {
+          fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
       gallery {
         childImageSharp {
-          fluid(maxWidth: 110) {
+          fluid(maxWidth: 165) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -50,7 +50,7 @@ export const query = graphql`
       photoAlbums {
         cover {
           childImageSharp {
-            fluid(maxWidth: 180) {
+            fluid(maxWidth: 270) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }

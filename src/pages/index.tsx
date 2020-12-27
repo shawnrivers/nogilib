@@ -54,8 +54,8 @@ const HomePage: React.FC = () => {
     query {
       file(relativePath: { eq: "design/preview.jpg" }) {
         childImageSharp {
-          fixed(width: 800, height: 400) {
-            ...GatsbyImageSharpFixed_withWebp
+          fluid(maxWidth: 1200) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
@@ -73,10 +73,12 @@ const HomePage: React.FC = () => {
         `}
       >
         <GatsbyImage
-          fixed={heroImageData.file.childImageSharp.fixed}
+          fluid={heroImageData.file.childImageSharp.fluid}
           alt="NOGILIB"
           css={css`
             max-width: 80vw;
+            width: 800px;
+            height: 400px;
             border-radius: ${commonStyles.borderRadius.m};
             box-shadow: ${commonStyles.elevations[3].boxShadow};
           `}

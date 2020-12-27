@@ -19,7 +19,7 @@ export const query = graphql`
           albumType
           artwork {
             childImageSharp {
-              fluid(maxWidth: 90) {
+              fluid(maxWidth: 135) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }
@@ -42,7 +42,7 @@ export const query = graphql`
           }
           artwork {
             childImageSharp {
-              fluid(maxWidth: 90) {
+              fluid(maxWidth: 135) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }
@@ -64,7 +64,7 @@ export const query = graphql`
           join
           profileImage {
             childImageSharp {
-              fluid(maxWidth: 90) {
+              fluid(maxWidth: 135) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }
