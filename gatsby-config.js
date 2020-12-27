@@ -49,14 +49,7 @@ module.exports = {
         component: path.join(__dirname, 'src/client/layouts/index.tsx'),
       },
     },
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Playfair Display:400,700'],
-        },
-      },
-    },
+    'gatsby-plugin-preload-fonts',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {

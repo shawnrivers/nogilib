@@ -1,12 +1,14 @@
 /**@jsx jsx */
 import { jsx, css, Global } from '@emotion/core';
-import * as React from 'react';
 import { ThemeProvider } from '@emotion/react';
+import * as React from 'react';
+import 'focus-visible';
 import { themes } from 'client/styles/tokens';
 import { useDarkModeMediaQuery } from 'client/hooks/useDarkModeMediaQuery';
 import { useLocalStorageForContext } from 'client/hooks/useLocalStorageForContext';
-import 'focus-visible';
 import { useThemeContext } from 'client/store/theme/hook';
+import '@fontsource/playfair-display/400.css';
+import '@fontsource/playfair-display/700.css';
 
 /**
  * NOTE:
