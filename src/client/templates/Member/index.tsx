@@ -504,8 +504,8 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                     shadow
                     fixedSize
                     css={css`
-                      width: ${110}px;
-                      height: ${132}px;
+                      width: 110px;
+                      height: 132px;
                       margin: ${commonStyles.spacing.xs};
                     `}
                   />
