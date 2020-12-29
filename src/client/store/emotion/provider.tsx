@@ -4,7 +4,7 @@ import { ThemeProvider } from '@emotion/react';
 import * as React from 'react';
 import 'focus-visible';
 import { themes } from 'client/styles/tokens';
-import { useDarkModeMediaQuery } from 'client/hooks/useDarkModeMediaQuery';
+import { useDarkModeMediaQuery } from 'client/store/theme/hook/useDarkModeMediaQuery';
 import { useLocalStorageThemeMode } from 'client/store/theme/hook/useLocalStorageThemeMode';
 import { useThemeContext } from 'client/store/theme/hook/useThemeContext';
 import '@fontsource/playfair-display/400.css';
