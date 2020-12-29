@@ -10,7 +10,7 @@ import {
 import { Typography } from 'client/components/atoms/Typography';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import { ThemeDecorator } from 'storybook/ThemeDecorator';
-import { useThemeContext } from 'client/store/theme/hook';
+import { useThemeContext } from 'client/store/theme/hook/useThemeContext';
 
 export default {
   title: 'Design System/Colors',

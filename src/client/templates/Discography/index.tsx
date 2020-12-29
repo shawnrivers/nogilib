@@ -8,7 +8,7 @@ import { TextDivider } from 'client/components/molecules/TextDivider';
 import { commonStyles } from 'client/styles/tokens';
 import { getAlbumUrl, getDiscographyUrl } from 'client/utils/urls';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
-import { useLanguageContext } from 'client/store/language/hook';
+import { useLanguageContext } from 'client/store/language/hooks/useLanguageContext';
 import { PageHelmet } from 'client/layouts/PageHelmet';
 import { DiscographyPageProps } from 'pages/discography';
 

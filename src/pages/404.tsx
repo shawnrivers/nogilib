@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Typography } from 'client/components/atoms/Typography';
 import { PageContent } from 'client/components/templates/Page';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
-import { useLanguageContext } from 'client/store/language/hook';
+import { useLanguageContext } from 'client/store/language/hooks/useLanguageContext';
 
 const NotFoundPage: React.FC = () => {
   const { getTranslation } = useTranslations();

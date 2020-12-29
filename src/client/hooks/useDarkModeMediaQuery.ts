@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useThemeContext } from 'client/store/theme/hook';
+import { useThemeContext } from 'client/store/theme/hook/useThemeContext';
 
 type DarkModeQueryEventHandler = (event: MediaQueryListEvent) => void;
 

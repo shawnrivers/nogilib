@@ -10,12 +10,6 @@ export enum Links {
   Search = '/search',
 }
 
-export enum Language {
-  En = 'en',
-  Ja = 'ja',
-  Zh = 'zh',
-}
-
 export enum SearchResultType {
   Members = 'members',
   Singles = 'singles',
@@ -24,4 +18,3 @@ export enum SearchResultType {
 }
 
 export const LOCAL_STORAGE_THEME_MODE_KEY = 'themeMode';
-export const LOCAL_STORAGE_LANGUAGE_KEY = 'language';
