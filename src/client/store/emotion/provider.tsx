@@ -5,10 +5,11 @@ import * as React from 'react';
 import 'focus-visible';
 import { themes } from 'client/styles/tokens';
 import { useDarkModeMediaQuery } from 'client/hooks/useDarkModeMediaQuery';
-import { useLocalStorageForContext } from 'client/hooks/useLocalStorageForContext';
-import { useThemeContext } from 'client/store/theme/hook';
+import { useLocalStorageThemeMode } from 'client/store/theme/hook/useLocalStorageThemeMode';
+import { useThemeContext } from 'client/store/theme/hook/useThemeContext';
 import '@fontsource/playfair-display/400.css';
 import '@fontsource/playfair-display/700.css';
+import { useLocalStorageLanguage } from 'client/store/language/hooks/useLocalStorageLanguage';
 
 /**
  * NOTE:
@@ -18,7 +19,8 @@ export const EmotionThemeProvider: React.FC = props => {
   const { themeKey } = useThemeContext();
 
   useDarkModeMediaQuery();
-  useLocalStorageForContext();
+  useLocalStorageThemeMode();
+  useLocalStorageLanguage();
 
   return (
     <ThemeProvider theme={themes[themeKey]}>

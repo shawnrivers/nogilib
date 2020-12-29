@@ -6,7 +6,7 @@ import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
 import { PositionType } from 'server/actors/Members/constants/position';
 import { PageContent } from 'client/components/templates/Page';
 import { Typography } from 'client/components/atoms/Typography';
-import { useLanguageContext } from 'client/store/language/hook';
+import { useLanguageContext } from 'client/store/language/hooks/useLanguageContext';
 import { TextDivider } from 'client/components/molecules/TextDivider';
 import { useAppTheme, commonStyles } from 'client/styles/tokens';
 import { GridMemberImage } from 'client/components/atoms/images/GridMemberImage';

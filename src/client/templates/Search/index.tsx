@@ -9,7 +9,7 @@ import { Typography } from 'client/components/atoms/Typography';
 import { PageContent } from 'client/components/templates/Page';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
-import { useLanguageContext } from 'client/store/language/hook';
+import { useLanguageContext } from 'client/store/language/hooks/useLanguageContext';
 import { PageHelmet } from 'client/layouts/PageHelmet';
 import { SearchPageProps } from 'pages/search';
 import { useIntl } from 'client/i18n/hooks/useIntl';

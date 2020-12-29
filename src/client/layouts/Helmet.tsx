@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Helmet as ReactHelmet } from 'react-helmet';
-import { useLanguageContext } from 'client/store/language/hook';
+import { useLanguageContext } from 'client/store/language/hooks/useLanguageContext';
 import { useSiteMetadata } from 'client/hooks/useSiteMetadata';
 
 export const Helmet: React.FC = () => {

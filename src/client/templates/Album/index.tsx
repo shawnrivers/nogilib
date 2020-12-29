@@ -12,7 +12,7 @@ import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { HorizontalCard } from 'client/components/molecules/cards/HorizontalCard';
 import { useIntl } from 'client/i18n/hooks/useIntl';
 import { GridImage } from 'client/components/atoms/images/GirdImage';
-import { useLanguageContext } from 'client/store/language/hook';
+import { useLanguageContext } from 'client/store/language/hooks/useLanguageContext';
 import { PageHelmet } from 'client/layouts/PageHelmet';
 import { AlbumPageProps } from 'pages/discography/{AlbumJson.key}';
 

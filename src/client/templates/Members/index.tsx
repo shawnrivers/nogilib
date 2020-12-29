@@ -9,7 +9,7 @@ import { commonStyles } from 'client/styles/tokens';
 import { getMembersUrl, getMemberUrl } from 'client/utils/urls';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { useIntl } from 'client/i18n/hooks/useIntl';
-import { useLanguageContext } from 'client/store/language/hook';
+import { useLanguageContext } from 'client/store/language/hooks/useLanguageContext';
 import { PageHelmet } from 'client/layouts/PageHelmet';
 import { MembersPageProps } from 'pages/members';
 

@@ -4,8 +4,8 @@ import {
   languageReducer,
   LanguageState,
 } from 'client/store/language/reducer';
-import { LOCAL_STORAGE_LANGUAGE_KEY } from 'client/utils/constants';
 import { Language } from 'client/types/language';
+import { LOCAL_STORAGE_LANGUAGE_KEY } from 'client/store/language/constants/localStorageKey';
 
 type Context = LanguageState & {
   setLanguage(language: Language): void;
