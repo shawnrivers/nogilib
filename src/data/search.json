@@ -9,7 +9,7 @@
         "title": "僕は僕を好きになる",
         "number": "26",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/artwork_no_image.png"
+        "artwork": "../assets/images/artworks/singles/26/A.jpg"
       },
       {
         "id": "single-hogoshoku",
@@ -3135,7 +3135,7 @@
           "number": "26"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/artwork_no_image.png"
+        "artwork": "../assets/images/artworks/singles/26/A.jpg"
       },
       {
         "id": "song-tsumetaimizunonaka",
@@ -3149,7 +3149,7 @@
           "number": "26"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/artwork_no_image.png"
+        "artwork": "../assets/images/artworks/singles/26/A.jpg"
       },
       {
         "id": "song-outoftheblue",
@@ -3163,7 +3163,7 @@
           "number": "26"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/artwork_no_image.png"
+        "artwork": "../assets/images/artworks/singles/26/A.jpg"
       },
       {
         "id": "song-kuchihodonimonaikiss",
@@ -3177,7 +3177,7 @@
           "number": "26"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/artwork_no_image.png"
+        "artwork": "../assets/images/artworks/singles/26/A.jpg"
       },
       {
         "id": "song-ashitagaaruriyuu",
@@ -3191,7 +3191,7 @@
           "number": "26"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/artwork_no_image.png"
+        "artwork": "../assets/images/artworks/singles/26/A.jpg"
       },
       {
         "id": "song-wildernessworld",
@@ -3205,7 +3205,7 @@
           "number": "26"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/artwork_no_image.png"
+        "artwork": "../assets/images/artworks/singles/26/A.jpg"
       },
       {
         "id": "song-darekahamikata",
