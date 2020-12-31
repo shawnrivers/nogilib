@@ -6,31 +6,31 @@ export const TWENTY_SIXTH_SINGLE = createSingleRaw({
   title: '僕は僕を好きになる',
   number: '26',
   release: '2021-01-27',
-  cdTypes: ['A'],
+  cdTypes: ['A', 'B', 'C', 'D', 'T'],
   songs: [
     {
       title: SONGS['僕は僕を好きになる'].title,
-      inCdType: ['A'],
-    },
-    {
-      title: SONGS['冷たい水の中'].title,
-      inCdType: ['A'],
-    },
-    {
-      title: SONGS['Out of the blue'].title,
-      inCdType: ['A'],
-    },
-    {
-      title: SONGS['口ほどにもないKISS'].title,
-      inCdType: ['A'],
+      inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
       title: SONGS['明日がある理由'].title,
-      inCdType: ['A'],
+      inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
       title: SONGS['Wilderness world'].title,
       inCdType: ['A'],
+    },
+    {
+      title: SONGS['口ほどにもないKISS'].title,
+      inCdType: ['B'],
+    },
+    {
+      title: SONGS['冷たい水の中'].title,
+      inCdType: ['C'],
+    },
+    {
+      title: SONGS['Out of the blue'].title,
+      inCdType: ['D'],
     },
   ],
   underMembers: [

@@ -8,6 +8,22 @@
       {
         "url": "../assets/images/artworks/singles/26/A.jpg",
         "type": "A"
+      },
+      {
+        "url": "../assets/images/artworks/singles/26/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "../assets/images/artworks/singles/26/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "../assets/images/artworks/singles/26/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "../assets/images/artworks/singles/26/T.jpg",
+        "type": "T"
       }
     ],
     "release": "2021-01-27",
@@ -17,21 +33,29 @@
         "title": "僕は僕を好きになる",
         "type": "title",
         "inCdType": [
-          "A"
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
         ]
       },
       {
-        "key": "tsumetaimizunonaka",
-        "title": "冷たい水の中",
-        "type": "solo",
+        "key": "ashitagaaruriyuu",
+        "title": "明日がある理由",
+        "type": "coupling",
         "inCdType": [
-          "A"
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
         ]
       },
       {
-        "key": "outoftheblue",
-        "title": "Out of the blue",
-        "type": "fourth generation",
+        "key": "wildernessworld",
+        "title": "Wilderness world",
+        "type": "coupling",
         "inCdType": [
           "A"
         ]
@@ -41,23 +65,23 @@
         "title": "口ほどにもないKISS",
         "type": "under",
         "inCdType": [
-          "A"
+          "B"
         ]
       },
       {
-        "key": "ashitagaaruriyuu",
-        "title": "明日がある理由",
-        "type": "coupling",
+        "key": "tsumetaimizunonaka",
+        "title": "冷たい水の中",
+        "type": "solo",
         "inCdType": [
-          "A"
+          "C"
         ]
       },
       {
-        "key": "wildernessworld",
-        "title": "Wilderness world",
-        "type": "coupling",
+        "key": "outoftheblue",
+        "title": "Out of the blue",
+        "type": "fourth generation",
         "inCdType": [
-          "A"
+          "D"
         ]
       }
     ],
