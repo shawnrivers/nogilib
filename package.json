@@ -60,7 +60,7 @@
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
     "gatsby-plugin-resolve-src": "^2.1.0",
     "gatsby-plugin-sharp": "^2.11.2",
-    "gatsby-plugin-typescript": "^2.9.0",
+    "gatsby-plugin-typescript": "^2.10.0",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.8.1",
     "gatsby-transformer-json": "^2.8.0",
