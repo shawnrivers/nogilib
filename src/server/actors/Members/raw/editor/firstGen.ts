@@ -648,6 +648,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/nishino.nanase.official/',
       },
       {
+        title: SocialMedia.Twitter,
+        url: 'https://twitter.com/nanase_andstaff',
+      },
+      {
         title: SocialMedia.Official,
         url: 'https://nishinonanase.com/',
       },
