@@ -36,6 +36,9 @@
     "src/server/**/*.ts": [
       "prettier --write",
       "eslint --fix"
+    ],
+    "src/server/**/raw/editor/**/*.ts": [
+      "npm run generate-data"
     ]
   },
   "husky": {
