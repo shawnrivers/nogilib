@@ -60,6 +60,10 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Kanagawa,
     sites: [
       {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/ume_minami.official/',
+      },
+      {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/minami.umezawa/',
       },
