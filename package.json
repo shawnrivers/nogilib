@@ -60,7 +60,7 @@
     "gatsby-image": "^2.8.0",
     "gatsby-plugin-emotion": "^5.1.0",
     "gatsby-plugin-layout": "^1.7.0",
-    "gatsby-plugin-manifest": "^2.9.0",
+    "gatsby-plugin-manifest": "^2.9.1",
     "gatsby-plugin-preload-fonts": "^1.6.1",
     "gatsby-plugin-react-helmet": "^3.7.0",
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
