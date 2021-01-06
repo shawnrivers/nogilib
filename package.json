@@ -67,7 +67,7 @@
     "gatsby-plugin-resolve-src": "^2.1.0",
     "gatsby-plugin-sharp": "^2.11.1",
     "gatsby-plugin-typescript": "^2.9.0",
-    "gatsby-source-filesystem": "^2.8.0",
+    "gatsby-source-filesystem": "^2.8.1",
     "gatsby-transformer-json": "^2.8.0",
     "gatsby-transformer-sharp": "^2.9.0",
     "react": "^16.14.0",
