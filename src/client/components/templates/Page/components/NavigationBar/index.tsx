@@ -168,7 +168,7 @@ const Settings: React.FC = () => {
         onClick={switchDropdown}
         aria-label={getTranslation('settings')}
         aria-controls={settingDropdownId}
-        aria-haspopup
+        aria-haspopup="dialog"
         ref={settingsButtonRef}
       >
         <SettingsIcon fill={theme.colors.theme.onSurface.standard} />
@@ -356,12 +356,12 @@ export const NavigationBar: React.FC<{
                 className="small"
                 aria-label={getTranslation('menu')}
                 aria-controls={MENU_BUTTON_ID}
-                aria-haspopup
+                aria-haspopup="menu"
                 onClick={props.onOpenSidebar}
+                ref={props.menuButtonRef}
                 css={css`
                   margin-left: ${commonStyles.spacing.xxs};
                 `}
-                ref={props.menuButtonRef}
               >
                 <MenuIcon fill={theme.colors.theme.onSurface.standard} />
               </BaseButton>
