@@ -47,11 +47,13 @@ export const Header: React.FC<HeaderProps> = props => {
             align-items: flex-end;
           `}
         >
-          <BaseButton onClick={handleGoBack}>
+          <BaseButton
+            aria-label={getTranslation('back')}
+            onClick={handleGoBack}
+          >
             <ArrowBackIcon
               width={32}
               height={32}
-              title={getTranslation('back')}
               fill={theme.colors.theme.onBackground.standard}
             />
           </BaseButton>
