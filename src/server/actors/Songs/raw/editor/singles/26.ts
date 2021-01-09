@@ -12,7 +12,7 @@ export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
       lyrics: ['秋元康'],
       compose: ['杉山勝彦'],
       arrange: [],
-      direct: [],
+      direct: ['奥山大史'],
     },
     center: [MemberNameKey.YamashitaMizuki],
     fukujin: 'row-1-2',
