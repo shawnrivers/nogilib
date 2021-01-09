@@ -51,6 +51,7 @@ export const Header: React.FC<HeaderProps> = props => {
             <ArrowBackIcon
               width={32}
               height={32}
+              title={getTranslation('back')}
               fill={theme.colors.theme.onBackground.standard}
             />
           </BaseButton>
