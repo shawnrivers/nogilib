@@ -266,7 +266,7 @@ export const NavigationBar: React.FC<{
   const { getTranslation } = useTranslations();
 
   return (
-    <header>
+    <div>
       <Surface
         backgroundColor="standard"
         foregroundColor="standard"
@@ -368,6 +368,6 @@ export const NavigationBar: React.FC<{
           <Settings />
         </div>
       </Surface>
-    </header>
+    </div>
   );
 };
