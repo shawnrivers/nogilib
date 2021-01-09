@@ -647,6 +647,21 @@ const dictionary = {
     ja: 'コンテンツまで移動',
     zh: '跳转到内容',
   },
+  tab: {
+    en: 'tab',
+    ja: 'タブ',
+    zh: '标签',
+  },
+  back: {
+    en: 'back',
+    ja: '戻る',
+    zh: '返回',
+  },
+  page: {
+    en: 'page',
+    ja: 'ページ',
+    zh: '页面',
+  },
 };
 
 export type DictionaryKey = keyof typeof dictionary;
