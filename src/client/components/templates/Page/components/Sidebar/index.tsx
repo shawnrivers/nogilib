@@ -151,6 +151,7 @@ export const Sidebar: React.FC<SidebarProps> = props => {
           closed: { x: '-102vw' },
         }}
         transition={transition}
+        aria-label={getTranslation('menu')}
         css={css`
           background-color: ${theme.colors.theme.secondary.variant0};
           box-shadow: ${theme.elevation[componentElevationKey.sidebar]
@@ -177,7 +178,10 @@ export const Sidebar: React.FC<SidebarProps> = props => {
             margin: ${theme.spacing.m};
           `}
         >
-          <CloseIcon fill={theme.colors.theme.onSecondary.standard} />
+          <CloseIcon
+            fill={theme.colors.theme.onSecondary.standard}
+            title={getTranslation('back')}
+          />
         </BaseButton>
         <div
           css={css`

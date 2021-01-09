@@ -6,6 +6,7 @@ import {
   TextSwitchLink,
   TextSwitchLinkProps,
 } from 'client/components/molecules/links/TextSwitchLink';
+import { useTranslations } from 'client/i18n/hooks/useTranslations';
 
 type TextSwitchLinkGroupProps = Omit<
   TextSwitchLinkProps,
@@ -18,9 +19,11 @@ type TextSwitchLinkGroupProps = Omit<
 
 export const TextSwitchLinkGroup: React.FC<TextSwitchLinkGroupProps> = props => {
   const { links, ...TextSwitchLinkProps } = props;
+  const { getTranslation } = useTranslations();
 
   return (
     <nav
+      aria-label={getTranslation('tab')}
       css={css`
         display: flex;
         flex-wrap: wrap;
