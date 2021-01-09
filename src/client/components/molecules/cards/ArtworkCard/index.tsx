@@ -29,8 +29,11 @@ export const ArtworkCard: React.FC<
     type,
     ...cardProps
   } = props;
+
+  const caption = `${toCdNumber(number)} ${type}`;
+
   return (
-    <Card {...cardProps}>
+    <Card {...cardProps} aria-label={title}>
       <article>
         <GridArtworkImage {...image} alt="" />
         <Typography
@@ -43,7 +46,7 @@ export const ArtworkCard: React.FC<
             text-align: center;
           `}
         >
-          {toCdNumber(number)} {type}
+          {caption}
         </Typography>
         <Typography
           variant="em2"

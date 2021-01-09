@@ -108,6 +108,7 @@ export const MemberCard: React.FC<MemberCardProps> = props => {
           <PositionBadge position={position} borderRadius={borderRadius} />
         ) : undefined
       }
+      aria-label={name}
       {...cardProps}
     >
       <article>
