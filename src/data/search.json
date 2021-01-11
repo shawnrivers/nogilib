@@ -3208,6 +3208,20 @@
         "artwork": "../assets/images/artworks/singles/26/A.jpg"
       },
       {
+        "id": "song-yuujoupierce",
+        "field": "友情ピアス yuujoupierce",
+        "searchType": "songs",
+        "key": "yuujoupierce",
+        "title": "友情ピアス",
+        "songType": "unit",
+        "single": {
+          "title": "僕は僕を好きになる",
+          "number": "26"
+        },
+        "albums": [],
+        "artwork": "../assets/images/artworks/singles/26/T.jpg"
+      },
+      {
         "id": "song-darekahamikata",
         "field": "誰かは味方 darekahamikata",
         "searchType": "songs",
