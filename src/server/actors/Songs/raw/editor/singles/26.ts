@@ -159,4 +159,14 @@ export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
     },
     center: [],
   }),
+  createSongRaw({
+    title: SONGS['友情ピアス'].title,
+    type: SongType.Unit,
+    creators: {
+      lyrics: ['秋元康'],
+    },
+    formations: {
+      firstRow: [MemberNameKey.EndouSakura, MemberNameKey.OozonoMomoko],
+    },
+  }),
 ];

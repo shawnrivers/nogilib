@@ -34751,6 +34751,65 @@
     "performers": []
   },
   {
+    "key": "yuujoupierce",
+    "title": "友情ピアス",
+    "type": "unit",
+    "artwork": "../assets/images/artworks/singles/26/T.jpg",
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [],
+      "arrange": [],
+      "direct": []
+    },
+    "single": {
+      "title": "僕は僕を好きになる",
+      "number": "26"
+    },
+    "albums": [],
+    "otherCds": [],
+    "performersTag": {
+      "name": "",
+      "album": {
+        "type": "single",
+        "number": "26"
+      }
+    },
+    "performers": [
+      [
+        {
+          "name": "endousakura",
+          "nameNotations": {
+            "lastName": "遠藤",
+            "firstName": "さくら",
+            "lastNameFurigana": "えんどう",
+            "firstNameFurigana": "さくら",
+            "lastNameEn": "endo",
+            "firstNameEn": "sakura"
+          },
+          "profileImage": "../assets/images/members/singles/25/endousakura.jpg",
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "oozonomomoko",
+          "nameNotations": {
+            "lastName": "大園",
+            "firstName": "桃子",
+            "lastNameFurigana": "おおぞの",
+            "firstNameFurigana": "ももこ",
+            "lastNameEn": "ozono",
+            "firstNameEn": "momoko"
+          },
+          "profileImage": "../assets/images/members/singles/25/oozonomomoko.jpg",
+          "position": null,
+          "isMember": true
+        }
+      ]
+    ]
+  },
+  {
     "key": "darekahamikata",
     "title": "誰かは味方",
     "type": "unit",
