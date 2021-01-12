@@ -17,6 +17,17 @@
 - English 🇬🇧
 - Simplified Chinese 🇨🇳
 
+## Technology Stack
+
+- Framework: Gatsby
+- JavaScript flavor: TypeScript
+- Styling: Emotion
+- Animation: Framer Motion
+- Compiler: Babel
+- Linter: ESLint
+- Testing: Jest, Storybook
+- Search: [FlexSearch.js](https://github.com/nextapps-de/flexsearch)
+
 ## 🚀 Set Up Dev Environment
 
 ### Prerequisites
