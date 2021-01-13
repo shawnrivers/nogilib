@@ -69,7 +69,7 @@
     "gatsby-plugin-typescript": "^2.10.0",
     "gatsby-source-filesystem": "^2.9.0",
     "gatsby-transformer-json": "^2.9.0",
-    "gatsby-transformer-sharp": "^2.10.0",
+    "gatsby-transformer-sharp": "^2.10.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0"
