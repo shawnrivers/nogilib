@@ -155,7 +155,7 @@ export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
       lyrics: ['秋元康'],
       compose: [],
       arrange: [],
-      direct: [],
+      direct: ['東市篤憲'],
     },
     center: [],
     formations: {
