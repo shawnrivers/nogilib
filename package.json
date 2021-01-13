@@ -79,7 +79,7 @@
     "@commitlint/config-conventional": "^11.0.0",
     "@lhci/cli": "^0.6.1",
     "@storybook/addon-actions": "^6.1.14",
-    "@storybook/addon-essentials": "^6.1.11",
+    "@storybook/addon-essentials": "^6.1.14",
     "@storybook/addon-knobs": "^6.1.14",
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/react": "^6.1.14",
