@@ -83,6 +83,14 @@
         "inCdType": [
           "D"
         ]
+      },
+      {
+        "key": "yuujoupierce",
+        "title": "友情ピアス",
+        "type": "unit",
+        "inCdType": [
+          "T"
+        ]
       }
     ],
     "centers": [

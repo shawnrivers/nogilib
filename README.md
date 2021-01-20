@@ -17,6 +17,17 @@
 - English 🇬🇧
 - Simplified Chinese 🇨🇳
 
+## Technology Stack
+
+- Framework: Gatsby
+- JavaScript flavor: TypeScript
+- Styling: Emotion
+- Animation: Framer Motion
+- Compiler: Babel
+- Linter: ESLint
+- Testing: Jest, Storybook
+- Search: [FlexSearch.js](https://github.com/nextapps-de/flexsearch)
+
 ## 🚀 Set Up Dev Environment
 
 ### Prerequisites
@@ -25,21 +36,13 @@
 
 ### Development process
 
-1.  **Install necessary packages.**
+1. **Install necessary packages.**
 
     ```sh
     npm install
     ```
 
-2.  **(Optional) Generate the latest data.**
-
-    ```sh
-    npm run generate-data
-    ```
-
-    Data will be generated in `src/data`.
-
-3.  **Start the dev server.**
+2. **Start the dev server.**
 
     ```sh
     npm run dev
@@ -47,14 +50,23 @@
 
     Your site is now running at `http://localhost:8080`.
 
-4. **Generate font pre-load cache**
-   
-   NOTE: Only run this script when new pages or new fonts are added.
-   Also note that because this script walks through every single page of the app, it will take several minutes.
+### Other commands
+
+- **(Optional) Generate the latest data.**
+
+    ```sh
+    npm run generate-data
+    ```
+
+    Data will be generated in `src/data`.
+
+- **Generate font pre-load cache**
 
     ```sh
     npm run preload-fonts
     ```
+
+    NOTE: Only run this script when new pages or new fonts are added. Also note that because this script walks through every single page of the app, it will take several minutes.
 
 ## 🧐 Directories
 

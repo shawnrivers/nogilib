@@ -155,8 +155,9 @@ const Settings: React.FC = () => {
   }, [isDropdownOpen]);
 
   return (
-    <div
+    <nav
       ref={componentRef}
+      aria-label={getTranslation('settings')}
       css={css`
         display: flex;
         flex-direction: column;
@@ -167,7 +168,7 @@ const Settings: React.FC = () => {
         onClick={switchDropdown}
         aria-label={getTranslation('settings')}
         aria-controls={settingDropdownId}
-        aria-haspopup
+        aria-haspopup="dialog"
         ref={settingsButtonRef}
       >
         <SettingsIcon fill={theme.colors.theme.onSurface.standard} />
@@ -254,7 +255,7 @@ const Settings: React.FC = () => {
           </ul>
         </Card>
       </motion.div>
-    </div>
+    </nav>
   );
 };
 
@@ -266,7 +267,7 @@ export const NavigationBar: React.FC<{
   const { getTranslation } = useTranslations();
 
   return (
-    <header>
+    <div>
       <Surface
         backgroundColor="standard"
         foregroundColor="standard"
@@ -289,7 +290,8 @@ export const NavigationBar: React.FC<{
             align-items: center;
           `}
         >
-          <div
+          <nav
+            aria-label={getTranslation('page')}
             css={css`
               display: flex;
               align-items: center;
@@ -311,7 +313,7 @@ export const NavigationBar: React.FC<{
             >
               |
             </Typography>
-            <nav>
+            <div>
               <div
                 css={css`
                   display: flex;
@@ -354,20 +356,20 @@ export const NavigationBar: React.FC<{
                 className="small"
                 aria-label={getTranslation('menu')}
                 aria-controls={MENU_BUTTON_ID}
-                aria-haspopup
+                aria-haspopup="menu"
                 onClick={props.onOpenSidebar}
+                ref={props.menuButtonRef}
                 css={css`
                   margin-left: ${commonStyles.spacing.xxs};
                 `}
-                ref={props.menuButtonRef}
               >
                 <MenuIcon fill={theme.colors.theme.onSurface.standard} />
               </BaseButton>
-            </nav>
-          </div>
+            </div>
+          </nav>
           <Settings />
         </div>
       </Surface>
-    </header>
+    </div>
   );
 };

@@ -38,7 +38,13 @@ export const HorizontalCard: React.FC<HorizontalCardProps> = props => {
   } = props;
 
   return (
-    <Card borderRadius="s" padding="xxs" to={props.to} {...cardProps}>
+    <Card
+      borderRadius="s"
+      padding="xxs"
+      to={props.to}
+      aria-label={title.text}
+      {...cardProps}
+    >
       <article
         css={css`
           display: grid;

@@ -72,17 +72,19 @@ const HomePage: React.FC = () => {
           margin-top: ${commonStyles.spacing.l};
         `}
       >
-        <GatsbyImage
-          fluid={heroImageData.file.childImageSharp.fluid}
-          alt="NOGILIB"
-          css={css`
-            max-width: 80vw;
-            width: 800px;
-            height: 400px;
-            border-radius: ${commonStyles.borderRadius.m};
-            box-shadow: ${commonStyles.elevations[3].boxShadow};
-          `}
-        />
+        <h1>
+          <GatsbyImage
+            fluid={heroImageData.file.childImageSharp.fluid}
+            alt="NOGILIB"
+            css={css`
+              max-width: 80vw;
+              width: 800px;
+              height: 400px;
+              border-radius: ${commonStyles.borderRadius.m};
+              box-shadow: ${commonStyles.elevations[3].boxShadow};
+            `}
+          />
+        </h1>
         <Typography
           variant="body1"
           textColor={{ on: 'onBackground', variant: 'variant0' }}
