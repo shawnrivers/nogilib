@@ -37,13 +37,13 @@ module.exports = {
         path: path.join(__dirname, 'src/data'),
       },
     },
-    'gatsby-plugin-image',
     {
       resolve: 'gatsby-plugin-root-import',
       options: {
         src: path.join(__dirname, 'src'),
       },
     },
+    'gatsby-plugin-image',
     {
       resolve: 'gatsby-plugin-layout',
       options: {

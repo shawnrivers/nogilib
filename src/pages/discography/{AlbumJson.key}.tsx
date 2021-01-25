@@ -123,8 +123,6 @@ const AlbumPageContainer: React.FC<{
       center.albumProfileImage.childImageSharp.gatsbyImageData,
   }));
 
-  console.log(artworks, centers);
-
   return (
     <AlbumPage
       title={albumData.title}

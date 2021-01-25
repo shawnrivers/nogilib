@@ -2,20 +2,21 @@
 import { css, jsx } from '@emotion/core';
 import * as React from 'react';
 import {
-  GridArtworkImage,
-  GridArtworkImageProps,
-} from 'client/components/atoms/images/GirdArtworkImage';
-import {
   Typography,
   TypographyProps,
 } from 'client/components/atoms/Typography';
 import { toCdNumber } from 'utils/strings';
 import { Card, CardProps } from 'client/components/atoms/Card';
+import {
+  GatsbyImage,
+  GatsbyImageProps,
+} from 'client/components/atoms/images/GatsbyImage';
+import { commonStyles } from 'client/styles/tokens';
 
 export const ArtworkCard: React.FC<
   CardProps & {
     title: string;
-    image: Omit<GridArtworkImageProps, 'alt'>;
+    image: Omit<GatsbyImageProps, 'alt' | 'role'>;
     titleElement?: TypographyProps['element'];
     number: string;
     type: string;
@@ -35,7 +36,15 @@ export const ArtworkCard: React.FC<
   return (
     <Card {...cardProps} aria-label={title}>
       <article>
-        <GridArtworkImage {...image} alt="" role="presentation" />
+        <GatsbyImage
+          {...image}
+          alt=""
+          role="presentation"
+          css={css`
+            overflow: auto;
+            border-radius: ${commonStyles.borderRadius.s};
+          `}
+        />
         <Typography
           variant="h7"
           element="div"

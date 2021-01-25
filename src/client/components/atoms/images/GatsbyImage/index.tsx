@@ -1,8 +1,10 @@
 import {
   GatsbyImage as GatsbyImageComponent,
-  GatsbyImageProps,
+  GatsbyImageProps as GatsbyImageComponentProps,
 } from 'gatsby-plugin-image';
 import React from 'react';
+
+export type GatsbyImageProps = GatsbyImageComponentProps;
 
 export const GatsbyImage: React.FC<GatsbyImageProps> = props => {
   const { imgStyle, ...restProps } = props;
