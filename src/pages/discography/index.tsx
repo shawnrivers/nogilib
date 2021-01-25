@@ -17,7 +17,7 @@ export const query = graphql`
         number
         artwork {
           childImageSharp {
-            gatsbyImageData(width: 300, layout: CONSTRAINED)
+            gatsbyImageData(width: 300, layout: CONSTRAINED, aspectRatio: 1)
           }
         }
         release
