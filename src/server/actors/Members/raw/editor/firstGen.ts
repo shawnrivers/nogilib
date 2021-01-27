@@ -733,7 +733,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     glowStickColor: [GlowStickColorType.Purple, GlowStickColorType.Orange],
     join: JoinedGenerationType.First,
     birthday: '1998-01-31',
-    height: 159,
+    height: 161,
     bloodType: BloodType.A,
     origin: Birthplace.Tokyo,
     sites: [
@@ -895,7 +895,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     glowStickColor: [GlowStickColorType.Yellow, GlowStickColorType.Orange],
     join: JoinedGenerationType.First,
     birthday: '1998-04-23',
-    height: 160,
+    height: 161,
     bloodType: BloodType.O,
     origin: Birthplace.Hiroshima,
     sites: [

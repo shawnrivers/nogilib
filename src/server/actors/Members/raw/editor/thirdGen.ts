@@ -35,7 +35,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     glowStickColor: [GlowStickColorType.Red, GlowStickColorType.Pink],
     join: JoinedGenerationType.Third,
     birthday: '2004-02-02',
-    height: 157,
+    height: 159,
     bloodType: BloodType.B,
     origin: Birthplace.Tokyo,
     sites: [
@@ -117,7 +117,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     glowStickColor: [GlowStickColorType.LightBlue, GlowStickColorType.Yellow],
     join: JoinedGenerationType.Third,
     birthday: '2001-07-14',
-    height: 159,
+    height: 161,
     bloodType: BloodType.O,
     origin: Birthplace.Miyagi,
     sites: [
@@ -231,7 +231,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     glowStickColor: [GlowStickColorType.Blue, GlowStickColorType.Yellow],
     join: JoinedGenerationType.Third,
     birthday: '1999-07-26',
-    height: 159,
+    height: 160,
     bloodType: BloodType.O,
     origin: Birthplace.Tokyo,
     sites: [
@@ -293,7 +293,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     glowStickColor: [GlowStickColorType.Red, GlowStickColorType.Green],
     join: JoinedGenerationType.Third,
     birthday: '2000-05-05',
-    height: 152,
+    height: 153,
     bloodType: BloodType.O,
     origin: Birthplace.Fukuoka,
     sites: [
