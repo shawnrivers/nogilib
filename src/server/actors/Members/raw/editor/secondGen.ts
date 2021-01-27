@@ -181,7 +181,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     glowStickColor: [GlowStickColorType.White, GlowStickColorType.Purple],
     join: JoinedGenerationType.Second,
     birthday: '1999-03-05',
-    height: 160,
+    height: 161,
     bloodType: BloodType.O,
     origin: Birthplace.Akita,
     sites: [
@@ -243,7 +243,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     glowStickColor: [GlowStickColorType.White, GlowStickColorType.Orange],
     join: JoinedGenerationType.Second,
     birthday: '1996-10-15',
-    height: 160,
+    height: 162,
     bloodType: BloodType.O,
     origin: Birthplace.Gifu,
     sites: [
