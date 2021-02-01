@@ -100,7 +100,7 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "gatsby-plugin-root-import": "^2.0.5",
+    "gatsby-plugin-root-import": "^2.0.6",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.20",
     "husky": "^4.3.8",
     "jest": "^26.6.3",
