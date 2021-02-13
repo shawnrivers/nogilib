@@ -14,7 +14,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     glowStickColor: [GlowStickColorType.White, GlowStickColorType.Pink],
     join: JoinedGenerationType.Fourth,
     birthday: '2001-10-03',
-    height: 160,
+    height: 164,
     bloodType: BloodType.Unknown,
     origin: Birthplace.Aichi,
     sites: [
@@ -61,7 +61,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     glowStickColor: [GlowStickColorType.Pink, GlowStickColorType.Orange],
     join: JoinedGenerationType.Fourth,
     birthday: '2002-11-20',
-    height: 156,
+    height: 154,
     bloodType: BloodType.B,
     origin: Birthplace.Okayama,
     sites: [
@@ -81,7 +81,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     glowStickColor: [GlowStickColorType.Red, GlowStickColorType.LightBlue],
     join: JoinedGenerationType.Fourth,
     birthday: '2001-10-31',
-    height: 164,
+    height: 165,
     bloodType: BloodType.O,
     origin: Birthplace.Hokkaido,
     sites: [
@@ -101,7 +101,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     glowStickColor: [GlowStickColorType.Orange, GlowStickColorType.LightBlue],
     join: JoinedGenerationType.Fourth,
     birthday: '2001-08-08',
-    height: 163,
+    height: 165,
     bloodType: BloodType.Unknown,
     origin: Birthplace.California,
     sites: [
@@ -141,7 +141,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     glowStickColor: [GlowStickColorType.Orange, GlowStickColorType.Orange],
     join: JoinedGenerationType.Fourth,
     birthday: '2003-08-01',
-    height: 162,
+    height: 164,
     bloodType: BloodType.O,
     origin: Birthplace.Saitama,
     sites: [
@@ -161,7 +161,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     glowStickColor: [GlowStickColorType.LightBlue, GlowStickColorType.Purple],
     join: JoinedGenerationType.Fourth,
     birthday: '1999-01-12',
-    height: 158,
+    height: 160,
     bloodType: BloodType.A,
     origin: Birthplace.Saitama,
     sites: [
@@ -221,7 +221,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     glowStickColor: [GlowStickColorType.Yellow, GlowStickColorType.Pink],
     join: JoinedGenerationType.Fourth,
     birthday: '2002-08-14',
-    height: 152,
+    height: 153,
     bloodType: BloodType.B,
     origin: Birthplace.Tokyo,
     sites: [
@@ -265,7 +265,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     glowStickColor: [GlowStickColorType.Pink, GlowStickColorType.LightBlue],
     join: JoinedGenerationType.Fourth,
     birthday: '2001-08-09',
-    height: 158,
+    height: 160,
     bloodType: BloodType.B,
     origin: Birthplace.Iwate,
     sites: [
@@ -289,7 +289,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     glowStickColor: [GlowStickColorType.Pink, GlowStickColorType.Pink],
     join: JoinedGenerationType.Fourth,
     birthday: '2003-10-02',
-    height: 163,
+    height: 164,
     bloodType: BloodType.O,
     origin: Birthplace.Kanagawa,
     sites: [
@@ -313,7 +313,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     glowStickColor: [GlowStickColorType.LightBlue, GlowStickColorType.White],
     join: JoinedGenerationType.Fourth,
     birthday: '2004-01-03',
-    height: 165,
+    height: 167,
     bloodType: BloodType.O,
     origin: Birthplace.Chiba,
     sites: [
