@@ -11,7 +11,7 @@ export const query = graphql`
       type
       artwork {
         childImageSharp {
-          gatsbyImageData(width: 300, placeholder: BLURRED, layout: CONSTRAINED)
+          gatsbyImageData(width: 300, layout: CONSTRAINED)
         }
       }
       creators {
@@ -46,11 +46,7 @@ export const query = graphql`
         }
         profileImage {
           childImageSharp {
-            gatsbyImageData(
-              width: 165
-              placeholder: BLURRED
-              layout: CONSTRAINED
-            )
+            gatsbyImageData(width: 165, layout: CONSTRAINED)
           }
         }
         position
