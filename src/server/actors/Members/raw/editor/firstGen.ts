@@ -1152,6 +1152,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Aichi,
     sites: [
       {
+        title: SocialMedia.YouTube,
+        url: 'https://www.youtube.com/channel/UCRQoWfwbu1dDf0XujaNQ-9A',
+      },
+      {
         title: SocialMedia.Instagram,
         url: 'https://www.instagram.com/renamatui27/',
       },

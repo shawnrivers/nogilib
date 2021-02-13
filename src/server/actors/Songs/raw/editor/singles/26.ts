@@ -49,7 +49,7 @@ export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
     type: SongType.Solo,
     creators: {
       lyrics: ['秋元康'],
-      compose: [],
+      compose: ['山口寛雄'],
       arrange: [],
       direct: ['山戸結希'],
     },
@@ -60,9 +60,9 @@ export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
     type: SongType.FourthGeneration,
     creators: {
       lyrics: ['秋元康'],
-      compose: [],
+      compose: ['youth case'],
       arrange: [],
-      direct: [],
+      direct: ['N2B'],
     },
     center: [MemberNameKey.HayakawaSeira],
     formations: {
@@ -91,9 +91,9 @@ export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],
-      compose: [],
+      compose: ['中村泰輔'],
       arrange: [],
-      direct: [],
+      direct: ['頃安祐良'],
     },
     center: [MemberNameKey.SakaguchiTamami],
     formations: {
@@ -120,7 +120,7 @@ export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
     type: SongType.Coupling,
     creators: {
       lyrics: ['秋元康'],
-      compose: [],
+      compose: ['YU-JIN'],
       arrange: [],
       direct: [],
     },
@@ -153,9 +153,9 @@ export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
     type: SongType.Coupling,
     creators: {
       lyrics: ['秋元康'],
-      compose: [],
+      compose: ['youth case'],
       arrange: [],
-      direct: [],
+      direct: ['東市篤憲'],
     },
     center: [],
     formations: {
@@ -187,6 +187,7 @@ export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
+      compose: ['カワノミチオ'],
     },
     formations: {
       firstRow: [MemberNameKey.EndouSakura, MemberNameKey.OozonoMomoko],
