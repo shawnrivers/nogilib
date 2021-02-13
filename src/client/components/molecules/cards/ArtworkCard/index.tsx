@@ -11,7 +11,6 @@ import {
   GatsbyImage,
   GatsbyImageProps,
 } from 'client/components/atoms/images/GatsbyImage';
-import { commonStyles } from 'client/styles/tokens';
 
 export const ArtworkCard: React.FC<
   CardProps & {
@@ -40,9 +39,9 @@ export const ArtworkCard: React.FC<
           {...image}
           alt=""
           role="presentation"
+          borderRadius="s"
           css={css`
             overflow: auto;
-            border-radius: ${commonStyles.borderRadius.s};
           `}
         />
         <Typography

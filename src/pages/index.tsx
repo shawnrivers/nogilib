@@ -74,11 +74,11 @@ const HomePage: React.FC = () => {
           <GatsbyImage
             image={heroImageData.file.childImageSharp.gatsbyImageData}
             alt="NOGILIB"
+            borderRadius="m"
             css={css`
               max-width: 80vw;
               width: 800px;
               height: 400px;
-              border-radius: ${commonStyles.borderRadius.m};
               box-shadow: ${commonStyles.elevations[3].boxShadow};
             `}
           />
