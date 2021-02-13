@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
-import { FluidObject } from 'gatsby-image';
+import { IGatsbyImageData } from 'gatsby-plugin-image';
 import { SearchPage } from 'client/templates/Search';
 import { SearchPageData } from 'server/pages/search';
 import { useSearchIndex } from 'client/libs/flexSearch/hook';
 
 export const query = graphql`
-  query {
+  {
     allSearchJson {
       nodes {
         albums {
@@ -19,9 +19,7 @@ export const query = graphql`
           albumType
           artwork {
             childImageSharp {
-              fluid(maxWidth: 135) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
+              gatsbyImageData(width: 135, layout: CONSTRAINED)
             }
           }
         }
@@ -42,9 +40,7 @@ export const query = graphql`
           }
           artwork {
             childImageSharp {
-              fluid(maxWidth: 135) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
+              gatsbyImageData(width: 135, layout: CONSTRAINED)
             }
           }
         }
@@ -64,9 +60,7 @@ export const query = graphql`
           join
           profileImage {
             childImageSharp {
-              fluid(maxWidth: 135) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
+              gatsbyImageData(width: 135, layout: CONSTRAINED)
             }
           }
         }
@@ -79,37 +73,37 @@ type SearchPageDataNode = {
   albums: (Omit<SearchPageData['albums'][0], 'artwork'> & {
     artwork: {
       childImageSharp: {
-        fluid: FluidObject;
+        gatsbyImageData: IGatsbyImageData;
       };
     };
   })[];
   songs: (Omit<SearchPageData['songs'][0], 'artwork'> & {
     artwork: {
       childImageSharp: {
-        fluid: FluidObject;
+        gatsbyImageData: IGatsbyImageData;
       };
     };
   })[];
   members: (Omit<SearchPageData['members'][0], 'profileImage'> & {
     profileImage: {
       childImageSharp: {
-        fluid: FluidObject;
+        gatsbyImageData: IGatsbyImageData;
       };
     };
   })[];
 };
 
 type AlbumSearchDoc = Omit<SearchPageDataNode['albums'][0], 'artwork'> & {
-  artworkFluid: FluidObject;
+  artworkFluid: IGatsbyImageData;
 };
 type SongSearchDoc = Omit<SearchPageDataNode['songs'][0], 'artwork'> & {
-  artworkFluid: FluidObject;
+  artworkFluid: IGatsbyImageData;
 };
 type MemberSearchDoc = Omit<
   SearchPageDataNode['members'][0],
   'profileImage'
 > & {
-  profileImageFluid: FluidObject;
+  profileImageFluid: IGatsbyImageData;
 };
 
 type SearchDoc = AlbumSearchDoc | SongSearchDoc | MemberSearchDoc;
@@ -132,15 +126,15 @@ const SearchPageContainer: React.FC<{
   const docs = React.useMemo<SearchDoc[]>(() => {
     const albums = searchData.albums.map(({ artwork, ...rest }) => ({
       ...rest,
-      artworkFluid: artwork.childImageSharp.fluid,
+      artworkFluid: artwork.childImageSharp.gatsbyImageData,
     }));
     const songs = searchData.songs.map(({ artwork, ...rest }) => ({
       ...rest,
-      artworkFluid: artwork.childImageSharp.fluid,
+      artworkFluid: artwork.childImageSharp.gatsbyImageData,
     }));
     const members = searchData.members.map(({ profileImage, ...rest }) => ({
       ...rest,
-      profileImageFluid: profileImage.childImageSharp.fluid,
+      profileImageFluid: profileImage.childImageSharp.gatsbyImageData,
     }));
     return [...albums, ...songs, ...members];
   }, [searchData]);

@@ -1,5 +1,5 @@
 import { graphql } from 'gatsby';
-import { FluidObject } from 'gatsby-image';
+import { IGatsbyImageData } from 'gatsby-plugin-image';
 import * as React from 'react';
 import { MemberPage } from 'client/templates/Member';
 import { MemberPageData } from 'server/pages/member';
@@ -17,16 +17,12 @@ export const query = graphql`
       }
       profileImage {
         childImageSharp {
-          fluid(maxWidth: 300, quality: 95) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(width: 300, quality: 95, layout: CONSTRAINED)
         }
       }
       gallery {
         childImageSharp {
-          fluid(maxWidth: 165) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(width: 165, layout: CONSTRAINED)
         }
       }
       join
@@ -50,9 +46,7 @@ export const query = graphql`
       photoAlbums {
         cover {
           childImageSharp {
-            fluid(maxWidth: 270) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(width: 270, layout: CONSTRAINED)
           }
         }
         release
@@ -81,12 +75,12 @@ type MemberPageDataNode = {
   nameNotations: MemberPageData['nameNotations'];
   profileImage: {
     childImageSharp: {
-      fluid: FluidObject;
+      gatsbyImageData: IGatsbyImageData;
     };
   };
   gallery: {
     childImageSharp: {
-      fluid: FluidObject;
+      gatsbyImageData: IGatsbyImageData;
     };
   }[];
   join: MemberPageData['join'];
@@ -104,7 +98,7 @@ type MemberPageDataNode = {
   photoAlbums: (Omit<MemberPageData['photoAlbums'][0], 'cover'> & {
     cover: {
       childImageSharp: {
-        fluid: FluidObject;
+        gatsbyImageData: IGatsbyImageData;
       };
     };
   })[];
@@ -116,10 +110,10 @@ export type MemberPageProps = Omit<
   MemberPageDataNode,
   'gallery' | 'profileImage' | 'photoAlbums'
 > & {
-  profileImageFluid: FluidObject;
-  galleryFluids: FluidObject[];
+  profileImageData: IGatsbyImageData;
+  galleryFluids: IGatsbyImageData[];
   photoAlbums: (Omit<MemberPageDataNode['photoAlbums'][0], 'cover'> & {
-    coverFluid: FluidObject;
+    coverImageData: IGatsbyImageData;
   })[];
   shouldShowPositionCounter: boolean;
 };
@@ -135,7 +129,7 @@ const MemberPageContainer: React.FC<{
     () =>
       memberData.photoAlbums.map(photoAlbum => ({
         ...photoAlbum,
-        coverFluid: photoAlbum.cover.childImageSharp.fluid,
+        coverImageData: photoAlbum.cover.childImageSharp.gatsbyImageData,
       })),
     [memberData.photoAlbums]
   );
@@ -160,13 +154,15 @@ const MemberPageContainer: React.FC<{
   );
 
   const gallery = React.useMemo(() => {
-    return memberData.gallery.map(photo => photo.childImageSharp.fluid);
+    return memberData.gallery.map(
+      photo => photo.childImageSharp.gatsbyImageData
+    );
   }, [memberData.gallery]);
 
   return memberData ? (
     <MemberPage
       nameNotations={memberData.nameNotations}
-      profileImageFluid={memberData.profileImage.childImageSharp.fluid}
+      profileImageData={memberData.profileImage.childImageSharp.gatsbyImageData}
       galleryFluids={gallery}
       glowStickColor={memberData.glowStickColor}
       sites={memberData.sites}

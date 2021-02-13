@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
-import { FluidObject } from 'gatsby-image';
+import { IGatsbyImageData } from 'gatsby-plugin-image';
 import { sortByDate } from 'utils/sorting';
 import { DiscographyPage } from 'client/templates/Discography';
 import { useFilter } from 'client/hooks/useFilter';
@@ -8,7 +8,7 @@ import { DiscographyUrlFilter } from 'client/utils/urls';
 import { DiscographyPageData } from 'server/pages/discography';
 
 export const query = graphql`
-  query {
+  {
     allDiscographyJson {
       nodes {
         title
@@ -17,9 +17,7 @@ export const query = graphql`
         number
         artwork {
           childImageSharp {
-            fluid(maxWidth: 300) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(width: 300, layout: CONSTRAINED)
           }
         }
         release
@@ -35,7 +33,7 @@ type DiscographyPageDataNode = {
   number: DiscographyPageData[0]['number'];
   artwork: {
     childImageSharp: {
-      fluid: FluidObject;
+      gatsbyImageData: IGatsbyImageData;
     };
   };
   release: DiscographyPageData[0]['release'];

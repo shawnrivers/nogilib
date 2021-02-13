@@ -77,7 +77,7 @@ const PositionBadge: React.FC<{
 };
 
 export type MemberCardProps = CardProps & {
-  profileImage: GridMemberImageProps;
+  profileImage: Omit<GridMemberImageProps, 'alt' | 'role'>;
   name: string;
   lang: string;
   nameElement?: TypographyProps['element'];
@@ -112,7 +112,7 @@ export const MemberCard: React.FC<MemberCardProps> = props => {
       {...cardProps}
     >
       <article>
-        <GridMemberImage {...profileImage} alt="" />
+        <GridMemberImage {...profileImage} alt="" role="presentation" />
         <Typography
           variant={textSize}
           element={nameElement}

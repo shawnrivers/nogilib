@@ -51,12 +51,10 @@ const HomePage: React.FC = () => {
   const { getTranslation } = useTranslations();
   const theme = useAppTheme();
   const heroImageData = useStaticQuery(graphql`
-    query {
+    {
       file(relativePath: { eq: "design/preview.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
     }
@@ -74,7 +72,7 @@ const HomePage: React.FC = () => {
       >
         <h1>
           <GatsbyImage
-            fluid={heroImageData.file.childImageSharp.fluid}
+            image={heroImageData.file.childImageSharp.gatsbyImageData}
             alt="NOGILIB"
             css={css`
               max-width: 80vw;

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
-import { FluidObject } from 'gatsby-image';
+import { IGatsbyImageData } from 'gatsby-plugin-image';
 import { SongPageData } from 'server/pages/song';
 import { SongPage } from 'client/templates/Song';
 
@@ -11,9 +11,7 @@ export const query = graphql`
       type
       artwork {
         childImageSharp {
-          fluid(maxWidth: 300) {
-            src
-          }
+          gatsbyImageData(width: 300, placeholder: BLURRED, layout: CONSTRAINED)
         }
       }
       creators {
@@ -48,9 +46,11 @@ export const query = graphql`
         }
         profileImage {
           childImageSharp {
-            fluid(maxWidth: 165) {
-              src
-            }
+            gatsbyImageData(
+              width: 165
+              placeholder: BLURRED
+              layout: CONSTRAINED
+            )
           }
         }
         position
@@ -65,7 +65,7 @@ type SongPageDataNode = {
   type: SongPageData['type'];
   artwork: {
     childImageSharp: {
-      fluid: FluidObject;
+      gatsbyImageData: IGatsbyImageData;
     };
   };
   creators: SongPageData['creators'];
@@ -87,7 +87,7 @@ type SongPageDataNode = {
     >;
     profileImage: {
       childImageSharp: {
-        fluid: FluidObject;
+        gatsbyImageData: IGatsbyImageData;
       };
     };
     position: SongPageData['performers'][0][0]['position'];
@@ -98,14 +98,14 @@ type SongPageDataNode = {
 export type SongPageProps = {
   title: SongPageDataNode['title'];
   type: SongPageDataNode['type'];
-  artworkFluid: SongPageDataNode['artwork']['childImageSharp']['fluid'];
+  artworkFluid: SongPageDataNode['artwork']['childImageSharp']['gatsbyImageData'];
   creators: SongPageData['creators'];
   single: SongPageDataNode['single'];
   albums: SongPageDataNode['albums'];
   otherCds: SongPageDataNode['otherCds'];
   performersTag: SongPageDataNode['performersTag'];
   performers: (Omit<SongPageDataNode['performers'][0][0], 'profileImage'> & {
-    profileImageFluid: SongPageDataNode['performers'][0][0]['profileImage']['childImageSharp']['fluid'];
+    profileImageFluid: SongPageDataNode['performers'][0][0]['profileImage']['childImageSharp']['gatsbyImageData'];
   })[][];
 };
 
@@ -120,7 +120,7 @@ const SongPageContainer: React.FC<{
     row.map(performer => ({
       name: performer.name,
       nameNotations: performer.nameNotations,
-      profileImageFluid: performer.profileImage.childImageSharp.fluid,
+      profileImageFluid: performer.profileImage.childImageSharp.gatsbyImageData,
       position: performer.position,
       isMember: performer.isMember,
     }))
@@ -130,7 +130,7 @@ const SongPageContainer: React.FC<{
     <SongPage
       title={songData.title}
       type={songData.type}
-      artworkFluid={songData.artwork.childImageSharp.fluid}
+      artworkFluid={songData.artwork.childImageSharp.gatsbyImageData}
       creators={songData.creators}
       single={songData.single}
       albums={songData.albums}
