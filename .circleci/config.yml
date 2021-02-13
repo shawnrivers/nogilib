@@ -28,9 +28,6 @@ jobs:
       - run:
           name: Check data
           command: npm run generate-data && test `git status -s src/data/* | wc -l` = 0 || (echo Generate and commit the latest data! && false)
-      - run:
-          name: Build
-          command: npm run build
       - save_cache:
           name: Save dependencies cache
           key: npm-packages-{{ checksum "package-lock.json" }}
