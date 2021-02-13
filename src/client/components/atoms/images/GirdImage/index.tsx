@@ -3,11 +3,12 @@ import { css, jsx } from '@emotion/core';
 import * as React from 'react';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
-import { BorderRadiusKey } from 'client/styles/tokens/borderRadius';
-import { GatsbyImage } from 'client/components/atoms/images/GatsbyImage';
+import {
+  GatsbyImage,
+  GatsbyImageProps,
+} from 'client/components/atoms/images/GatsbyImage';
 
-export type GridImageProps = React.ComponentProps<typeof GatsbyImage> & {
-  borderRadius?: BorderRadiusKey;
+export type GridImageProps = GatsbyImageProps & {
   shadow?: boolean;
   ratio?: number;
   fixedSize?: boolean;
@@ -93,6 +94,7 @@ export const GridImage: React.FC<GridImageProps> = props => {
                 objectFit: 'cover',
                 objectPosition: 'center top',
               }}
+              borderRadius={borderRadius}
               {...gatsbyImageProps}
             />
           </div>
