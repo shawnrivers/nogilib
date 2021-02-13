@@ -14,7 +14,7 @@ import {
 } from 'client/components/atoms/Typography';
 
 export type HorizontalCardProps = Omit<CardProps, 'children' | 'title'> & {
-  image: GridImageProps;
+  image: Omit<GridImageProps, 'alt' | 'role'>;
   title: {
     text: string;
     lang: string;
@@ -55,7 +55,7 @@ export const HorizontalCard: React.FC<HorizontalCardProps> = props => {
           overflow: hidden;
         `}
       >
-        <GridImage {...image} />
+        <GridImage {...image} alt="" role="presentation" />
         <div
           css={css`
             display: flex;

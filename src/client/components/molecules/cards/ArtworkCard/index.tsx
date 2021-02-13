@@ -15,7 +15,7 @@ import { Card, CardProps } from 'client/components/atoms/Card';
 export const ArtworkCard: React.FC<
   CardProps & {
     title: string;
-    image: GridArtworkImageProps;
+    image: Omit<GridArtworkImageProps, 'alt'>;
     titleElement?: TypographyProps['element'];
     number: string;
     type: string;
@@ -35,7 +35,7 @@ export const ArtworkCard: React.FC<
   return (
     <Card {...cardProps} aria-label={title}>
       <article>
-        <GridArtworkImage {...image} alt="" />
+        <GridArtworkImage {...image} alt="" role="presentation" />
         <Typography
           variant="h7"
           element="div"

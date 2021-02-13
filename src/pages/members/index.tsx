@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
-import { FluidObject } from 'gatsby-image';
+import { IGatsbyImageData } from 'gatsby-plugin-image';
 import { MemberResult } from 'server/actors/Members/models';
 import { MembersPage } from 'client/templates/Members';
 import { sortByJoin, sortByGraduation, sortByMemberName } from 'utils/sorting';
@@ -9,7 +9,7 @@ import { MembersUrlFilter } from 'client/utils/urls';
 import { MembersPageData } from 'server/pages/members';
 
 export const query = graphql`
-  query {
+  {
     allMembersJson {
       nodes {
         name
@@ -26,9 +26,7 @@ export const query = graphql`
         }
         profileImage {
           childImageSharp {
-            fluid(maxWidth: 200) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(width: 200, layout: CONSTRAINED)
           }
         }
       }
@@ -51,13 +49,13 @@ type MembersPageDataNode = {
   };
   profileImage: {
     childImageSharp: {
-      fluid: FluidObject;
+      gatsbyImageData: IGatsbyImageData;
     };
   };
 };
 
 type MemberCard = Omit<MembersPageDataNode, 'profileImage'> & {
-  profileImageFluid: MembersPageDataNode['profileImage']['childImageSharp']['fluid'];
+  profileImageFluid: MembersPageDataNode['profileImage']['childImageSharp']['gatsbyImageData'];
 };
 
 type MemberGroupByYear = {
@@ -68,7 +66,7 @@ type MemberGroupByYear = {
 function getMemberCards(membersData: MembersPageDataNode[]): MemberCard[] {
   return membersData.map(({ profileImage, ...restFields }) => ({
     ...restFields,
-    profileImageFluid: profileImage.childImageSharp.fluid,
+    profileImageFluid: profileImage.childImageSharp.gatsbyImageData,
   }));
 }
 

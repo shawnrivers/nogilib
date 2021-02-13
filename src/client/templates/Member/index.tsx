@@ -27,7 +27,7 @@ import { MemberPageProps } from 'pages/members/{MemberJson.name}';
 export const MemberPage: React.FC<MemberPageProps> = props => {
   const {
     nameNotations,
-    profileImageFluid,
+    profileImageData,
     sites,
     join,
     graduation,
@@ -112,7 +112,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
             `}
           >
             <GridMemberImage
-              fluid={profileImageFluid}
+              image={profileImageData}
               alt={formatWords([
                 language !== 'en'
                   ? nameNotations.lastName + nameNotations.firstName
@@ -286,8 +286,9 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                       <article>
                         <GridImage
                           ratio={1.1}
-                          fluid={photoAlbum.coverFluid}
+                          image={photoAlbum.coverImageData}
                           alt=""
+                          role="presentation"
                         />
                         <Typography
                           variant="body2"
@@ -497,7 +498,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
               {galleryFluids.map((profileImageFluid, index) => (
                 <li key={index}>
                   <GridMemberImage
-                    fluid={profileImageFluid}
+                    image={profileImageFluid}
                     alt={[getTranslation('profile image'), index + 1].join(
                       language === 'en' ? ' ' : ''
                     )}

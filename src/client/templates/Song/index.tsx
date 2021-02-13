@@ -177,7 +177,7 @@ export const SongPage: React.FC<SongPageProps> = props => {
               `}
             >
               <GridArtworkImage
-                fluid={artworkFluid}
+                image={artworkFluid}
                 alt={formatWords([title, getTranslation('artwork')])}
                 shadow
                 fixedSize
@@ -286,7 +286,7 @@ export const SongPage: React.FC<SongPageProps> = props => {
                               <PerformerCard
                                 nameNotations={member.nameNotations}
                                 profileImage={{
-                                  fluid: member.profileImageFluid,
+                                  image: member.profileImageFluid,
                                 }}
                                 position={member.position ?? undefined}
                                 to={

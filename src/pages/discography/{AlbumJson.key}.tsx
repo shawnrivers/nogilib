@@ -1,5 +1,5 @@
 import { graphql } from 'gatsby';
-import { FluidObject } from 'gatsby-image';
+import { IGatsbyImageData } from 'gatsby-plugin-image';
 import * as React from 'react';
 import { AlbumPage } from 'client/templates/Album';
 import { AlbumPageData } from 'server/pages/album';
@@ -14,9 +14,7 @@ export const query = graphql`
       artworks {
         url {
           childImageSharp {
-            fluid(maxWidth: 240) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(width: 240, layout: CONSTRAINED)
           }
         }
         type
@@ -38,9 +36,7 @@ export const query = graphql`
         }
         albumProfileImage {
           childImageSharp {
-            fluid(maxWidth: 200) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(width: 200, layout: CONSTRAINED)
           }
         }
       }
@@ -55,7 +51,7 @@ type AlbumPageDataNode = {
   artworks: {
     url: {
       childImageSharp: {
-        fluid: FluidObject;
+        gatsbyImageData: IGatsbyImageData;
       };
     };
     type: AlbumPageData['artworks'][0]['type'];
@@ -70,7 +66,7 @@ type AlbumPageDataNode = {
     >;
     albumProfileImage: {
       childImageSharp: {
-        fluid: FluidObject;
+        gatsbyImageData: IGatsbyImageData;
       };
     };
   }[];
@@ -81,7 +77,7 @@ export type AlbumPageProps = {
   type: AlbumPageDataNode['type'];
   number: AlbumPageDataNode['number'];
   artworks: {
-    fluid: AlbumPageDataNode['artworks'][0]['url']['childImageSharp']['fluid'];
+    fluid: AlbumPageDataNode['artworks'][0]['url']['childImageSharp']['gatsbyImageData'];
     type: AlbumPageDataNode['artworks'][0]['type'];
   }[];
   release: AlbumPageDataNode['release'];
@@ -89,12 +85,12 @@ export type AlbumPageProps = {
     key: AlbumPageDataNode['songs'][0]['key'];
     title: AlbumPageDataNode['songs'][0]['title'];
     type: AlbumPageDataNode['songs'][0]['type'];
-    artworkFluid: AlbumPageDataNode['artworks'][0]['url']['childImageSharp']['fluid'];
+    artworkFluid: AlbumPageDataNode['artworks'][0]['url']['childImageSharp']['gatsbyImageData'];
   }[];
   centers: {
     name: AlbumPageDataNode['centers'][0]['name'];
     nameNotations: AlbumPageDataNode['centers'][0]['nameNotations'];
-    albumProfileImageFluid: AlbumPageDataNode['centers'][0]['albumProfileImage']['childImageSharp']['fluid'];
+    albumProfileImageFluid: AlbumPageDataNode['centers'][0]['albumProfileImage']['childImageSharp']['gatsbyImageData'];
   }[];
 };
 
@@ -107,7 +103,7 @@ const AlbumPageContainer: React.FC<{
 
   const artworks: AlbumPageProps['artworks'] = albumData.artworks.map(
     artwork => ({
-      fluid: artwork.url.childImageSharp.fluid,
+      fluid: artwork.url.childImageSharp.gatsbyImageData,
       type: artwork.type,
     })
   );
@@ -123,8 +119,11 @@ const AlbumPageContainer: React.FC<{
   const centers: AlbumPageProps['centers'] = albumData.centers.map(center => ({
     name: center.name,
     nameNotations: center.nameNotations,
-    albumProfileImageFluid: center.albumProfileImage.childImageSharp.fluid,
+    albumProfileImageFluid:
+      center.albumProfileImage.childImageSharp.gatsbyImageData,
   }));
+
+  console.log(artworks, centers);
 
   return (
     <AlbumPage
