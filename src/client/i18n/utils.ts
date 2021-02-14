@@ -18,20 +18,22 @@ const COUNTER_TRANSLATIONS: Record<CounterUnit, Record<Language, string>> = {
 export function getLocalizedNth(params: {
   num: string | number;
   unit: CounterUnit;
-  language: Language;
+  locale: string | undefined;
 }): string | null {
-  const { num, unit, language } = params;
+  const { num, unit, locale } = params;
 
   if (isNumberCountable(num)) {
-    switch (language) {
+    switch (locale) {
       case 'ja':
-        return `${num}${COUNTER_TRANSLATIONS[unit][language]}目`;
+        return `${num}${COUNTER_TRANSLATIONS[unit].ja}目`;
       case 'zh':
-        return `第${num}${COUNTER_TRANSLATIONS[unit][language]}`;
+        return `第${num}${COUNTER_TRANSLATIONS[unit].zh}`;
       case 'en':
-        return [toNth(num), COUNTER_TRANSLATIONS[unit][language]]
+        return [toNth(num), COUNTER_TRANSLATIONS[unit].en]
           .filter(element => element !== '')
           .join(' ');
+      default:
+        return `${num}${COUNTER_TRANSLATIONS[unit].ja}目`;
     }
   } else {
     return null;
@@ -40,11 +42,11 @@ export function getLocalizedNth(params: {
 
 export function getLocalizedWords(params: {
   words: readonly string[];
-  language: Language;
+  locale: string | undefined;
 }): string {
-  const { words, language } = params;
+  const { words, locale } = params;
 
-  if (language === 'en') {
+  if (locale === 'en') {
     return words.join(' ');
   } else {
     return words.join('');
@@ -53,13 +55,19 @@ export function getLocalizedWords(params: {
 
 export function getLocalizedWordsSplitWithCommas(params: {
   words: readonly string[];
-  language: Language;
+  locale: string | undefined;
 }): string {
-  const { words, language } = params;
+  const { words, locale } = params;
 
-  if (language === 'en') {
+  if (locale === 'en') {
     return words.join(', ');
   } else {
     return words.join('、');
   }
+}
+
+export function isDefinedLanguage(
+  locale: string | undefined
+): locale is Language {
+  return locale === 'ja' || locale === 'en' || locale === 'zh';
 }
