@@ -1,5 +1,5 @@
-/**@jsx jsx */
-import { jsx, css } from '@emotion/core';
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/core';
 import * as React from 'react';
 import { motion } from 'framer-motion';
 import { Card } from 'client/components/atoms/Card';
@@ -298,7 +298,7 @@ export const NavigationBar: React.FC<{
             `}
           >
             <TextLink
-              to={getHomeUrl()}
+              href={getHomeUrl()}
               typographyVariant="h6"
               showUnderline={false}
             >
@@ -322,7 +322,7 @@ export const NavigationBar: React.FC<{
                 className="large"
               >
                 <TextLink
-                  to={getDiscographyUrl()}
+                  href={getDiscographyUrl()}
                   typographyVariant="h6"
                   showUnderline={false}
                   css={css`
@@ -332,7 +332,7 @@ export const NavigationBar: React.FC<{
                   {getTranslation('discography')}
                 </TextLink>
                 <TextLink
-                  to={getMembersUrl()}
+                  href={getMembersUrl()}
                   typographyVariant="h6"
                   showUnderline={false}
                   css={css`
@@ -342,7 +342,7 @@ export const NavigationBar: React.FC<{
                   {getTranslation('members')}
                 </TextLink>
                 <TextLink
-                  to={getSearchUrl()}
+                  href={getSearchUrl()}
                   typographyVariant="h6"
                   showUnderline={false}
                   css={css`
