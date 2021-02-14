@@ -37,7 +37,7 @@ describe('getLocalizedWords', () => {
     expect(
       getLocalizedWords({
         words: ['25th.', 'single', 'selected', 'members'],
-        language: 'en',
+        locale: 'en',
       })
     ).toBe('25th. single selected members');
   });
@@ -46,14 +46,14 @@ describe('getLocalizedWords', () => {
     expect(
       getLocalizedWords({
         words: ['25枚目', 'シングル', '選抜', 'メンバー'],
-        language: 'ja',
+        locale: 'ja',
       })
     ).toBe('25枚目シングル選抜メンバー');
 
     expect(
       getLocalizedWords({
         words: ['第25张', '单曲', '选拔', '成员'],
-        language: 'ja',
+        locale: 'ja',
       })
     ).toBe('第25张单曲选拔成员');
   });

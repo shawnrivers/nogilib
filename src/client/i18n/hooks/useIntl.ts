@@ -1,10 +1,11 @@
 import * as React from 'react';
-import { useLanguageContext } from 'client/store/language/hooks/useLanguageContext';
+import { useRouter } from 'next/router';
 import { MemberResult } from 'server/actors/Members/models';
 import {
   getLocalizedNth,
   getLocalizedWords,
   getLocalizedWordsSplitWithCommas,
+  isDefinedLanguage,
 } from 'client/i18n/utils';
 
 export type NameNotationsForIntl = Pick<
@@ -13,12 +14,12 @@ export type NameNotationsForIntl = Pick<
 >;
 
 export const useIntl = () => {
-  const { language } = useLanguageContext();
+  const { locale } = useRouter();
 
   const formatDate = React.useCallback(
     (date: string) => {
       const locales =
-        language === 'en' ? 'en-US' : language === 'ja' ? 'ja-JP' : 'zh-Hans';
+        locale === 'en' ? 'en-US' : locale === 'ja' ? 'ja-JP' : 'zh-Hans';
 
       return new Intl.DateTimeFormat(locales, {
         year: 'numeric',
@@ -26,7 +27,7 @@ export const useIntl = () => {
         day: 'numeric',
       }).format(new Date(date));
     },
-    [language]
+    [locale]
   );
 
   const formatMemberName = React.useCallback(
@@ -36,7 +37,7 @@ export const useIntl = () => {
       name: string;
       lang: 'ja' | 'en';
     } => {
-      switch (language) {
+      switch (locale) {
         case 'ja':
           return {
             name: `${nameNotations.lastName}${nameNotations.firstName}`,
@@ -52,34 +53,42 @@ export const useIntl = () => {
             name: `${nameNotations.lastNameEn} ${nameNotations.firstNameEn}`,
             lang: 'en',
           };
+        default: {
+          return {
+            name: `${nameNotations.lastName}${nameNotations.firstName}`,
+            lang: 'ja',
+          };
+        }
       }
     },
-    [language]
+    [locale]
   );
 
   const formatNth = React.useCallback(
     (
       params: Omit<Parameters<typeof getLocalizedNth>[0], 'language'>
     ): string | null => {
-      return getLocalizedNth({ ...params, language });
+      return isDefinedLanguage(locale)
+        ? getLocalizedNth({ ...params, locale })
+        : null;
     },
-    [language]
+    [locale]
   );
 
   const formatWords = React.useCallback(
     (words: Parameters<typeof getLocalizedWords>[0]['words']): string => {
-      return getLocalizedWords({ words, language });
+      return getLocalizedWords({ words, locale });
     },
-    [language]
+    [locale]
   );
 
   const formatWordsWithCommas = React.useCallback(
     (
       words: Parameters<typeof getLocalizedWordsSplitWithCommas>[0]['words']
     ): string => {
-      return getLocalizedWordsSplitWithCommas({ words, language });
+      return getLocalizedWordsSplitWithCommas({ words, locale });
     },
-    [language]
+    [locale]
   );
 
   return {

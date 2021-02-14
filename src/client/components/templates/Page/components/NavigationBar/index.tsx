@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
 import * as React from 'react';
+import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
 import { Card } from 'client/components/atoms/Card';
 import { MenuIcon } from 'client/components/atoms/icons/MenuIcon';
@@ -8,7 +9,6 @@ import { RadioCheckIcon } from 'client/components/atoms/icons/RadioCheckIcon';
 import { SettingsIcon } from 'client/components/atoms/icons/SettingsIcon';
 import { Surface } from 'client/components/atoms/Surface';
 import { Typography } from 'client/components/atoms/Typography';
-import { useLanguageContext } from 'client/store/language/hooks/useLanguageContext';
 import { useOnClickOutside } from 'client/hooks/useOnClickOutside';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
@@ -24,6 +24,7 @@ import { BaseButton, BaseButtonRef } from 'client/components/atoms/BaseButton';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { MENU_BUTTON_ID } from 'client/constants/ids';
 import { useThemeContext } from 'client/store/theme/hook/useThemeContext';
+import { Language } from 'client/types/language';
 
 const settingDropdownId = 'setting-dropdown';
 const settingItemClass = 'setting-item';
@@ -105,7 +106,6 @@ const Settings: React.FC = () => {
   const settingsButtonRef = React.useRef<BaseButtonRef>(null);
 
   const theme = useAppTheme();
-  const { language, setLanguage } = useLanguageContext();
   const { themeMode, setTheme } = useThemeContext();
 
   const { getTranslation } = useTranslations();
@@ -122,17 +122,24 @@ const Settings: React.FC = () => {
     setTheme('auto');
   }, [setTheme]);
 
+  const router = useRouter();
+  const { locale } = router;
+
+  const handleSwitchLanguage = React.useCallback(
+    (language: Language) => {
+      router.push(router.asPath, router.asPath, { locale: language });
+    },
+    [router]
+  );
   const handleClickEnglish = React.useCallback(() => {
-    setLanguage('en');
-  }, [setLanguage]);
-
+    handleSwitchLanguage('en');
+  }, [handleSwitchLanguage]);
   const handleClickJapanese = React.useCallback(() => {
-    setLanguage('ja');
-  }, [setLanguage]);
-
+    handleSwitchLanguage('ja');
+  }, [handleSwitchLanguage]);
   const handleClickChinese = React.useCallback(() => {
-    setLanguage('zh');
-  }, [setLanguage]);
+    handleSwitchLanguage('zh');
+  }, [handleSwitchLanguage]);
 
   React.useEffect(() => {
     const handleEscape = (event: KeyboardEvent) => {
@@ -198,21 +205,21 @@ const Settings: React.FC = () => {
             ref={languageListRef}
           >
             <SelectionItem
-              isSelected={language === 'en'}
+              isSelected={locale === 'en'}
               tabIndex={isDropdownOpen ? 0 : -1}
               onClick={handleClickEnglish}
             >
               English
             </SelectionItem>
             <SelectionItem
-              isSelected={language === 'ja'}
+              isSelected={locale === 'ja'}
               tabIndex={isDropdownOpen ? 0 : -1}
               onClick={handleClickJapanese}
             >
               日本語
             </SelectionItem>
             <SelectionItem
-              isSelected={language === 'zh'}
+              isSelected={locale === 'zh'}
               tabIndex={isDropdownOpen ? 0 : -1}
               onClick={handleClickChinese}
             >

@@ -1,29 +1,37 @@
 import * as React from 'react';
-import { useLanguageContext } from 'client/store/language/hooks/useLanguageContext';
+import { useRouter } from 'next/router';
 import { DictionaryKey, messages } from 'client/i18n/translations';
-import { Language } from 'client/types/language';
+import { isDefinedLanguage } from 'client/i18n/utils';
 
 const TranslationComponent: React.FC<{
   text: DictionaryKey;
-  language: Language;
-}> = props => (
-  <React.Fragment>
-    {messages[props.language][props.text] ?? props.text}
-  </React.Fragment>
-);
+  locale: string | undefined;
+}> = props => {
+  return isDefinedLanguage(props.locale) ? (
+    <>{messages[props.locale][props.text] ?? props.text}</>
+  ) : (
+    <>{props.text}</>
+  );
+};
 
 export const useTranslations = (): {
   getTranslation: (text: DictionaryKey) => string;
   Translation: React.FC<{ text: DictionaryKey }>;
 } => {
-  const { language } = useLanguageContext();
+  const { locale } = useRouter();
 
   const getTranslation = React.useCallback(
-    (text: DictionaryKey) => messages[language][text] ?? text,
-    [language]
+    (text: DictionaryKey) => {
+      if (isDefinedLanguage(locale)) {
+        return messages[locale][text] ?? text;
+      }
+
+      return text;
+    },
+    [locale]
   );
   const Translation = React.memo((props: { text: DictionaryKey }) => (
-    <TranslationComponent text={props.text} language={language} />
+    <TranslationComponent text={props.text} locale={locale} />
   ));
 
   return {
