@@ -14,7 +14,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/akimotomanatsu.jpg"
+    "profileImage": "/images/members/singles/26/akimotomanatsu.jpg"
   },
   {
     "name": "ikutaerika",
@@ -31,7 +31,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/ikutaerika.jpg"
+    "profileImage": "/images/members/singles/26/ikutaerika.jpg"
   },
   {
     "name": "ikomarina",
@@ -48,7 +48,7 @@
       "isGraduated": true,
       "graduatedDate": "2018-05-06"
     },
-    "profileImage": "../assets/images/members/others/ikomarina_2020-08-10.jpg"
+    "profileImage": "/images/members/others/ikomarina_2020-08-10.jpg"
   },
   {
     "name": "inouesayuri",
@@ -65,7 +65,7 @@
       "isGraduated": true,
       "graduatedDate": "2020-04-27"
     },
-    "profileImage": "../assets/images/members/others/inouesayuri_2020-06-11.jpg"
+    "profileImage": "/images/members/others/inouesayuri_2020-06-11.jpg"
   },
   {
     "name": "etoumisa",
@@ -82,7 +82,7 @@
       "isGraduated": true,
       "graduatedDate": "2019-03-31"
     },
-    "profileImage": "../assets/images/members/others/etoumisa_2020-04-29.jpg"
+    "profileImage": "/images/members/others/etoumisa_2020-04-29.jpg"
   },
   {
     "name": "kawagohina",
@@ -99,7 +99,7 @@
       "isGraduated": true,
       "graduatedDate": "2018-12-20"
     },
-    "profileImage": "../assets/images/members/others/kawagohina_2020-04-29.jpg"
+    "profileImage": "/images/members/others/kawagohina_2020-04-29.jpg"
   },
   {
     "name": "saitouasuka",
@@ -116,7 +116,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/saitouasuka.jpg"
+    "profileImage": "/images/members/singles/26/saitouasuka.jpg"
   },
   {
     "name": "saitouyuuri",
@@ -133,7 +133,7 @@
       "isGraduated": true,
       "graduatedDate": "2019-06-30"
     },
-    "profileImage": "../assets/images/members/others/saitouyuuri_2020-09-26.jpg"
+    "profileImage": "/images/members/others/saitouyuuri_2020-09-26.jpg"
   },
   {
     "name": "sakuraireika",
@@ -150,7 +150,7 @@
       "isGraduated": true,
       "graduatedDate": "2019-09-01"
     },
-    "profileImage": "../assets/images/members/others/sakuraireika_2020-04-29.jpg"
+    "profileImage": "/images/members/others/sakuraireika_2020-04-29.jpg"
   },
   {
     "name": "shiraishimai",
@@ -167,7 +167,7 @@
       "isGraduated": true,
       "graduatedDate": "2020-10-28"
     },
-    "profileImage": "../assets/images/members/others/shiraishimai_2020-11-11.jpg"
+    "profileImage": "/images/members/others/shiraishimai_2020-11-11.jpg"
   },
   {
     "name": "takayamakazumi",
@@ -184,7 +184,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/takayamakazumi.jpg"
+    "profileImage": "/images/members/singles/26/takayamakazumi.jpg"
   },
   {
     "name": "nakadakana",
@@ -201,7 +201,7 @@
       "isGraduated": true,
       "graduatedDate": "2020-10-26"
     },
-    "profileImage": "../assets/images/members/others/nakadakana_2020-11-11.jpg"
+    "profileImage": "/images/members/others/nakadakana_2020-11-11.jpg"
   },
   {
     "name": "nishinonanase",
@@ -218,7 +218,7 @@
       "isGraduated": true,
       "graduatedDate": "2018-12-31"
     },
-    "profileImage": "../assets/images/members/others/nishinonanase_2020-06-11.jpg"
+    "profileImage": "/images/members/others/nishinonanase_2020-06-11.jpg"
   },
   {
     "name": "noujouami",
@@ -235,7 +235,7 @@
       "isGraduated": true,
       "graduatedDate": "2018-12-15"
     },
-    "profileImage": "../assets/images/members/others/noujouami_2020-09-26.jpg"
+    "profileImage": "/images/members/others/noujouami_2020-09-26.jpg"
   },
   {
     "name": "higuchihina",
@@ -252,7 +252,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/higuchihina.jpg"
+    "profileImage": "/images/members/singles/26/higuchihina.jpg"
   },
   {
     "name": "hoshinominami",
@@ -269,7 +269,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/hoshinominami.jpg"
+    "profileImage": "/images/members/singles/26/hoshinominami.jpg"
   },
   {
     "name": "matsumurasayuri",
@@ -286,7 +286,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/matsumurasayuri.jpg"
+    "profileImage": "/images/members/singles/26/matsumurasayuri.jpg"
   },
   {
     "name": "wakatsukiyumi",
@@ -303,7 +303,7 @@
       "isGraduated": true,
       "graduatedDate": "2018-11-30"
     },
-    "profileImage": "../assets/images/members/others/wakatsukiyumi_2020-06-11.jpg"
+    "profileImage": "/images/members/others/wakatsukiyumi_2020-06-11.jpg"
   },
   {
     "name": "wadamaaya",
@@ -320,7 +320,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/wadamaaya.jpg"
+    "profileImage": "/images/members/singles/26/wadamaaya.jpg"
   },
   {
     "name": "saitouchiharu",
@@ -337,7 +337,7 @@
       "isGraduated": true,
       "graduatedDate": "2018-07-16"
     },
-    "profileImage": "../assets/images/members/others/saitouchiharu_2020-06-11.jpg"
+    "profileImage": "/images/members/others/saitouchiharu_2020-06-11.jpg"
   },
   {
     "name": "kawamuramahiro",
@@ -354,7 +354,7 @@
       "isGraduated": true,
       "graduatedDate": "2018-03-31"
     },
-    "profileImage": "../assets/images/members/others/kawamuramahiro_2020-04-29.jpg"
+    "profileImage": "/images/members/others/kawamuramahiro_2020-04-29.jpg"
   },
   {
     "name": "nakamotohimeka",
@@ -371,7 +371,7 @@
       "isGraduated": true,
       "graduatedDate": "2017-12-31"
     },
-    "profileImage": "../assets/images/members/others/nakamotohimeka_2020-04-29.jpg"
+    "profileImage": "/images/members/others/nakamotohimeka_2020-04-29.jpg"
   },
   {
     "name": "itoumarika",
@@ -388,7 +388,7 @@
       "isGraduated": true,
       "graduatedDate": "2017-12-23"
     },
-    "profileImage": "../assets/images/members/others/itoumarika_2020-09-26.jpg"
+    "profileImage": "/images/members/others/itoumarika_2020-09-26.jpg"
   },
   {
     "name": "hashimotonanami",
@@ -405,7 +405,7 @@
       "isGraduated": true,
       "graduatedDate": "2017-02-20"
     },
-    "profileImage": "../assets/images/members/singles/15/hashimotonanami.jpg"
+    "profileImage": "/images/members/singles/15/hashimotonanami.jpg"
   },
   {
     "name": "fukagawamai",
@@ -422,7 +422,7 @@
       "isGraduated": true,
       "graduatedDate": "2016-06-16"
     },
-    "profileImage": "../assets/images/members/others/fukagawamai_2020-04-29.jpg"
+    "profileImage": "/images/members/others/fukagawamai_2020-04-29.jpg"
   },
   {
     "name": "nagashimaseira",
@@ -439,7 +439,7 @@
       "isGraduated": true,
       "graduatedDate": "2016-03-20"
     },
-    "profileImage": "../assets/images/members/others/nagashimaseira_2020-04-29.jpg"
+    "profileImage": "/images/members/others/nagashimaseira_2020-04-29.jpg"
   },
   {
     "name": "matsuirena",
@@ -456,7 +456,7 @@
       "isGraduated": true,
       "graduatedDate": "2015-05-14"
     },
-    "profileImage": "../assets/images/members/others/matsuirena_2020-04-29.jpg"
+    "profileImage": "/images/members/others/matsuirena_2020-04-29.jpg"
   },
   {
     "name": "hatanakaseira",
@@ -473,7 +473,7 @@
       "isGraduated": true,
       "graduatedDate": "2015-04-04"
     },
-    "profileImage": "../assets/images/members/others/hatanakaseira_2020-04-29.jpg"
+    "profileImage": "/images/members/others/hatanakaseira_2020-04-29.jpg"
   },
   {
     "name": "yamatorina",
@@ -490,7 +490,7 @@
       "isGraduated": true,
       "graduatedDate": "2015-04-04"
     },
-    "profileImage": "../assets/images/members/singles/10/yamatorina.jpg"
+    "profileImage": "/images/members/singles/10/yamatorina.jpg"
   },
   {
     "name": "itounene",
@@ -507,7 +507,7 @@
       "isGraduated": true,
       "graduatedDate": "2014-10-19"
     },
-    "profileImage": "../assets/images/members/others/itounene_2020-04-29.jpg"
+    "profileImage": "/images/members/others/itounene_2020-04-29.jpg"
   },
   {
     "name": "ichikirena",
@@ -524,7 +524,7 @@
       "isGraduated": true,
       "graduatedDate": "2014-10-19"
     },
-    "profileImage": "../assets/images/members/others/ichikirena_2020-04-29.jpg"
+    "profileImage": "/images/members/others/ichikirena_2020-04-29.jpg"
   },
   {
     "name": "nishikawananami",
@@ -541,7 +541,7 @@
       "isGraduated": true,
       "graduatedDate": "2014-03-22"
     },
-    "profileImage": "../assets/images/members/singles/7/nishikawananami.jpg"
+    "profileImage": "/images/members/singles/7/nishikawananami.jpg"
   },
   {
     "name": "miyazawaseira",
@@ -558,7 +558,7 @@
       "isGraduated": true,
       "graduatedDate": "2013-11-17"
     },
-    "profileImage": "../assets/images/members/others/miyazawaseira_2020-04-29.jpg"
+    "profileImage": "/images/members/others/miyazawaseira_2020-04-29.jpg"
   },
   {
     "name": "kashiwayukina",
@@ -575,7 +575,7 @@
       "isGraduated": true,
       "graduatedDate": "2013-11-17"
     },
-    "profileImage": "../assets/images/members/others/kashiwayukina_2020-04-29.jpg"
+    "profileImage": "/images/members/others/kashiwayukina_2020-04-29.jpg"
   },
   {
     "name": "andoumikumo",
@@ -592,7 +592,7 @@
       "isGraduated": true,
       "graduatedDate": "2013-06-16"
     },
-    "profileImage": "../assets/images/members/singles/5/andoumikumo.jpg"
+    "profileImage": "/images/members/singles/5/andoumikumo.jpg"
   },
   {
     "name": "iwaseyumiko",
@@ -609,7 +609,7 @@
       "isGraduated": true,
       "graduatedDate": "2012-11-18"
     },
-    "profileImage": "../assets/images/members/others/iwaseyumiko_2020-04-29.jpg"
+    "profileImage": "/images/members/others/iwaseyumiko_2020-04-29.jpg"
   },
   {
     "name": "itoukarin",
@@ -626,7 +626,7 @@
       "isGraduated": true,
       "graduatedDate": "2019-05-24"
     },
-    "profileImage": "../assets/images/members/others/itoukarin_2020-04-29.jpg"
+    "profileImage": "/images/members/others/itoukarin_2020-04-29.jpg"
   },
   {
     "name": "itoujunna",
@@ -643,7 +643,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/itoujunna.jpg"
+    "profileImage": "/images/members/singles/26/itoujunna.jpg"
   },
   {
     "name": "kitanohinako",
@@ -660,7 +660,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/kitanohinako.jpg"
+    "profileImage": "/images/members/singles/26/kitanohinako.jpg"
   },
   {
     "name": "sasakikotoko",
@@ -677,7 +677,7 @@
       "isGraduated": true,
       "graduatedDate": "2020-03-31"
     },
-    "profileImage": "../assets/images/members/others/sasakikotoko_2020-10-14.jpg"
+    "profileImage": "/images/members/others/sasakikotoko_2020-10-14.jpg"
   },
   {
     "name": "shinuchimai",
@@ -694,7 +694,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/shinuchimai.jpg"
+    "profileImage": "/images/members/singles/26/shinuchimai.jpg"
   },
   {
     "name": "suzukiayane",
@@ -711,7 +711,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/suzukiayane.jpg"
+    "profileImage": "/images/members/singles/26/suzukiayane.jpg"
   },
   {
     "name": "teradaranze",
@@ -728,7 +728,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/teradaranze.jpg"
+    "profileImage": "/images/members/singles/26/teradaranze.jpg"
   },
   {
     "name": "horimiona",
@@ -745,7 +745,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/horimiona.jpg"
+    "profileImage": "/images/members/singles/26/horimiona.jpg"
   },
   {
     "name": "yamazakirena",
@@ -762,7 +762,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/yamazakirena.jpg"
+    "profileImage": "/images/members/singles/26/yamazakirena.jpg"
   },
   {
     "name": "watanabemiria",
@@ -779,7 +779,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/watanabemiria.jpg"
+    "profileImage": "/images/members/singles/26/watanabemiria.jpg"
   },
   {
     "name": "sagaraiori",
@@ -796,7 +796,7 @@
       "isGraduated": true,
       "graduatedDate": "2018-07-16"
     },
-    "profileImage": "../assets/images/members/others/sagaraiori_2020-09-26.jpg"
+    "profileImage": "/images/members/others/sagaraiori_2020-09-26.jpg"
   },
   {
     "name": "yonetokukyouka",
@@ -813,7 +813,7 @@
       "isGraduated": true,
       "graduatedDate": "2014-10-18"
     },
-    "profileImage": "../assets/images/members/singles/9/yonetokukyouka.jpg"
+    "profileImage": "/images/members/singles/9/yonetokukyouka.jpg"
   },
   {
     "name": "yadarisako",
@@ -830,7 +830,7 @@
       "isGraduated": true,
       "graduatedDate": "2014-10-18"
     },
-    "profileImage": "../assets/images/members/singles/9/yadarisako.jpg"
+    "profileImage": "/images/members/singles/9/yadarisako.jpg"
   },
   {
     "name": "itouriria",
@@ -847,7 +847,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/itouriria.jpg"
+    "profileImage": "/images/members/singles/26/itouriria.jpg"
   },
   {
     "name": "iwamotorenka",
@@ -864,7 +864,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/iwamotorenka.jpg"
+    "profileImage": "/images/members/singles/26/iwamotorenka.jpg"
   },
   {
     "name": "umezawaminami",
@@ -881,7 +881,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/umezawaminami.jpg"
+    "profileImage": "/images/members/singles/26/umezawaminami.jpg"
   },
   {
     "name": "oozonomomoko",
@@ -898,7 +898,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/oozonomomoko.jpg"
+    "profileImage": "/images/members/singles/26/oozonomomoko.jpg"
   },
   {
     "name": "kuboshiori",
@@ -915,7 +915,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/kuboshiori.jpg"
+    "profileImage": "/images/members/singles/26/kuboshiori.jpg"
   },
   {
     "name": "sakaguchitamami",
@@ -932,7 +932,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/sakaguchitamami.jpg"
+    "profileImage": "/images/members/singles/26/sakaguchitamami.jpg"
   },
   {
     "name": "satoukaede",
@@ -949,7 +949,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/satoukaede.jpg"
+    "profileImage": "/images/members/singles/26/satoukaede.jpg"
   },
   {
     "name": "nakamurareno",
@@ -966,7 +966,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/nakamurareno.jpg"
+    "profileImage": "/images/members/singles/26/nakamurareno.jpg"
   },
   {
     "name": "mukaihazuki",
@@ -983,7 +983,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/mukaihazuki.jpg"
+    "profileImage": "/images/members/singles/26/mukaihazuki.jpg"
   },
   {
     "name": "yamashitamizuki",
@@ -1000,7 +1000,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/yamashitamizuki.jpg"
+    "profileImage": "/images/members/singles/26/yamashitamizuki.jpg"
   },
   {
     "name": "yoshidaayanochristie",
@@ -1017,7 +1017,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/yoshidaayanochristie.jpg"
+    "profileImage": "/images/members/singles/26/yoshidaayanochristie.jpg"
   },
   {
     "name": "yodayuuki",
@@ -1034,7 +1034,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/yodayuuki.jpg"
+    "profileImage": "/images/members/singles/26/yodayuuki.jpg"
   },
   {
     "name": "endousakura",
@@ -1051,7 +1051,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/endousakura.jpg"
+    "profileImage": "/images/members/singles/26/endousakura.jpg"
   },
   {
     "name": "kakiharuka",
@@ -1068,7 +1068,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/kakiharuka.jpg"
+    "profileImage": "/images/members/singles/26/kakiharuka.jpg"
   },
   {
     "name": "kakehashisayaka",
@@ -1085,7 +1085,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/kakehashisayaka.jpg"
+    "profileImage": "/images/members/singles/26/kakehashisayaka.jpg"
   },
   {
     "name": "kanagawasaya",
@@ -1102,7 +1102,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/kanagawasaya.jpg"
+    "profileImage": "/images/members/singles/26/kanagawasaya.jpg"
   },
   {
     "name": "kitagawayuri",
@@ -1119,7 +1119,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/kitagawayuri.jpg"
+    "profileImage": "/images/members/singles/26/kitagawayuri.jpg"
   },
   {
     "name": "shibatayuna",
@@ -1136,7 +1136,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/shibatayuna.jpg"
+    "profileImage": "/images/members/singles/26/shibatayuna.jpg"
   },
   {
     "name": "seimiyarei",
@@ -1153,7 +1153,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/seimiyarei.jpg"
+    "profileImage": "/images/members/singles/26/seimiyarei.jpg"
   },
   {
     "name": "tamuramayu",
@@ -1170,7 +1170,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/tamuramayu.jpg"
+    "profileImage": "/images/members/singles/26/tamuramayu.jpg"
   },
   {
     "name": "tsutsuiayame",
@@ -1187,7 +1187,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/tsutsuiayame.jpg"
+    "profileImage": "/images/members/singles/26/tsutsuiayame.jpg"
   },
   {
     "name": "hayakawaseira",
@@ -1204,7 +1204,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/hayakawaseira.jpg"
+    "profileImage": "/images/members/singles/26/hayakawaseira.jpg"
   },
   {
     "name": "yakubomio",
@@ -1221,7 +1221,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/yakubomio.jpg"
+    "profileImage": "/images/members/singles/26/yakubomio.jpg"
   },
   {
     "name": "kuromiharuka",
@@ -1238,7 +1238,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/kuromiharuka.jpg"
+    "profileImage": "/images/members/singles/26/kuromiharuka.jpg"
   },
   {
     "name": "satourika",
@@ -1255,7 +1255,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/satourika.jpg"
+    "profileImage": "/images/members/singles/26/satourika.jpg"
   },
   {
     "name": "hayashiruna",
@@ -1272,7 +1272,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/hayashiruna.jpg"
+    "profileImage": "/images/members/singles/26/hayashiruna.jpg"
   },
   {
     "name": "matsuomiyu",
@@ -1289,7 +1289,7 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/matsuomiyu.jpg"
+    "profileImage": "/images/members/singles/26/matsuomiyu.jpg"
   },
   {
     "name": "yumikinao",
@@ -1306,6 +1306,6 @@
       "isGraduated": false,
       "graduatedDate": ""
     },
-    "profileImage": "../assets/images/members/singles/26/yumikinao.jpg"
+    "profileImage": "/images/members/singles/26/yumikinao.jpg"
   }
 ]
