@@ -1,12 +1,8 @@
-/**@jsx jsx */
-import { jsx, css } from '@emotion/core';
-import * as React from 'react';
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/core';
+import Image from 'next/image';
 import { Card, CardProps } from 'client/components/atoms/Card';
 import { commonStyles } from 'client/styles/tokens';
-import {
-  GridImage,
-  GridImageProps,
-} from 'client/components/atoms/images/GirdImage';
 import { Hashtag } from 'client/components/atoms/Hashtag';
 import {
   Typography,
@@ -14,7 +10,7 @@ import {
 } from 'client/components/atoms/Typography';
 
 export type HorizontalCardProps = Omit<CardProps, 'children' | 'title'> & {
-  image: Omit<GridImageProps, 'alt' | 'role'>;
+  image: string;
   title: {
     text: string;
     lang: string;
@@ -29,22 +25,16 @@ export type HorizontalCardProps = Omit<CardProps, 'children' | 'title'> & {
 
 export const HorizontalCard: React.FC<HorizontalCardProps> = props => {
   const {
-    capitalizeTitle = false,
     image,
     title,
     titleElement = 'p',
     tags,
+    capitalizeTitle = false,
     ...cardProps
   } = props;
 
   return (
-    <Card
-      borderRadius="s"
-      padding="xxs"
-      to={props.to}
-      aria-label={title.text}
-      {...cardProps}
-    >
+    <Card borderRadius="s" padding="xxs" aria-label={title.text} {...cardProps}>
       <article
         css={css`
           display: grid;
@@ -55,7 +45,18 @@ export const HorizontalCard: React.FC<HorizontalCardProps> = props => {
           overflow: hidden;
         `}
       >
-        <GridImage {...image} alt="" role="presentation" />
+        <Image
+          src={image}
+          width={90}
+          height={90}
+          alt=""
+          role="presentation"
+          objectFit="cover"
+          objectPosition="top"
+          css={css`
+            border-radius: ${commonStyles.borderRadius.s};
+          `}
+        />
         <div
           css={css`
             display: flex;
