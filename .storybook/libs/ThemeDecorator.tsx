@@ -1,5 +1,5 @@
-/**@jsx jsx */
-import { jsx, css } from '@emotion/core';
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/core';
 import { ThemeProvider } from '@emotion/react';
 import { themes } from 'client/styles/tokens';
 
