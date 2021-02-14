@@ -1,25 +1,27 @@
-/**@jsx jsx */
-import { jsx, css } from '@emotion/core';
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/core';
 import * as React from 'react';
+import Image from 'next/image';
 import { Typography } from 'client/components/atoms/Typography';
 import { PageContent } from 'client/components/templates/Page';
-import { commonStyles } from 'client/styles/tokens';
+import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import { toCdNumber } from 'utils/strings';
 import { TextDivider } from 'client/components/molecules/TextDivider';
 import { MemberCard } from 'client/components/molecules/cards/MemberCard';
-import { getMemberUrl, getSongUrl } from 'client/utils/urls';
+import { getMemberLink, getSongLink } from 'client/utils/urls';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { HorizontalCard } from 'client/components/molecules/cards/HorizontalCard';
 import { useIntl } from 'client/i18n/hooks/useIntl';
-import { GridImage } from 'client/components/atoms/images/GirdImage';
 import { useLanguageContext } from 'client/store/language/hooks/useLanguageContext';
 import { PageHelmet } from 'client/layouts/PageHelmet';
-import { AlbumPageProps } from 'pages/discography/{AlbumJson.key}';
+import { AlbumPageProps } from 'pages/discography/[id]';
+import { componentElevationKey } from 'client/styles/tokens/elevation';
 
 export const AlbumPage: React.FC<AlbumPageProps> = props => {
   const { Translation, getTranslation } = useTranslations();
   const { formatDate, formatMemberName } = useIntl();
   const { language } = useLanguageContext();
+  const theme = useAppTheme();
 
   return (
     <>
@@ -58,7 +60,7 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
                 justify-content: center;
               `}
             >
-              {props.tracks.map(track => (
+              {props.songs.map(track => (
                 <li
                   key={track.key}
                   css={css`
@@ -67,8 +69,8 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
                   `}
                 >
                   <HorizontalCard
-                    to={getSongUrl(track.key)}
-                    image={{ image: track.artworkFluid }}
+                    href={getSongLink(track.key)}
+                    image={track.artwork}
                     title={{ text: track.title, lang: 'ja' }}
                     tags={[
                       {
@@ -94,15 +96,15 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
                 {props.centers.map(member => (
                   <li key={member.name}>
                     <MemberCard
-                      profileImage={{ image: member.albumProfileImageFluid }}
+                      href={getMemberLink(member.name)}
+                      profileImage={member.albumProfileImage}
                       name={formatMemberName(member.nameNotations).name}
                       lang={formatMemberName(member.nameNotations).lang}
-                      to={getMemberUrl(member.name)}
+                      width={130}
                       textSize="body2"
                       borderRadius="s"
                       padding="xs"
                       css={css`
-                        width: 130px;
                         margin: ${commonStyles.spacing.xs};
                       `}
                     />
@@ -121,17 +123,26 @@ export const AlbumPage: React.FC<AlbumPageProps> = props => {
               `}
             >
               {props.artworks.map((artwork, i) => (
-                <li key={i}>
-                  <GridImage
-                    image={artwork.fluid}
+                <li
+                  key={i}
+                  css={css`
+                    margin: ${commonStyles.spacing.s};
+                    border-radius: ${commonStyles.borderRadius.m};
+                    box-shadow: ${theme.elevation[
+                      componentElevationKey.componentOnBackground
+                    ].boxShadow};
+                    overflow: hidden;
+                    width: 160px;
+                    height: 160px;
+                  `}
+                >
+                  <Image
+                    src={artwork.url}
                     alt={`Type ${artwork.type}`}
-                    shadow
-                    fixedSize
-                    css={css`
-                      width: 160px;
-                      height: 160px;
-                      margin: ${commonStyles.spacing.s};
-                    `}
+                    width={160}
+                    height={160}
+                    objectFit="cover"
+                    objectPosition="top"
                   />
                 </li>
               ))}
