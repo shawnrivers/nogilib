@@ -1,5 +1,5 @@
-/**@jsx jsx */
-import { jsx, css } from '@emotion/core';
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/core';
 import * as React from 'react';
 import {
   Typography,
@@ -31,6 +31,7 @@ export type TextLinkProps = BaseLinkProps &
     underlineColorVariant?: ThemeColorKey;
     backgroundType?: keyof ThemeColorsBackground;
     backgroundColorVariant?: ThemeColorKey;
+    disabled?: boolean;
   };
 
 export type TextLinkRef = BaseLinkRef;
@@ -38,18 +39,19 @@ export type TextLinkRef = BaseLinkRef;
 export const TextLink = React.forwardRef<TextLinkRef, TextLinkProps>(
   (props, ref) => {
     const {
-      to,
       typographyVariant = 'body1',
       showUnderline = true,
-      textColor = { on: 'onBackground', variant: 'standard' },
+      underlineColorVariant = 'variant0',
       backgroundType = 'background',
       backgroundColorVariant = 'variant0',
-      underlineColorVariant = 'variant0',
-      children,
       disabled = false,
-      tabIndex,
-      onClick,
-      ...typographyProps
+      bold,
+      fontFamily,
+      ellipsis,
+      capitalize,
+      textColor = { on: 'onBackground', variant: 'standard' },
+      children,
+      ...linkProps
     } = props;
 
     const theme = useAppTheme();
@@ -86,19 +88,16 @@ export const TextLink = React.forwardRef<TextLinkRef, TextLinkProps>(
     );
 
     return (
-      <BaseLink
-        to={to}
-        onClick={onClick}
-        disabled={disabled}
-        css={styles}
-        tabIndex={tabIndex}
-        ref={ref}
-      >
+      <BaseLink {...linkProps} ref={ref}>
         <Typography
           variant={typographyVariant}
-          textColor={textColor}
           element="span"
-          {...typographyProps}
+          bold={bold}
+          fontFamily={fontFamily}
+          ellipsis={ellipsis}
+          capitalize={capitalize}
+          textColor={textColor}
+          css={styles}
         >
           {children}
         </Typography>

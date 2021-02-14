@@ -1,17 +1,14 @@
-/**@jsx jsx */
-import { css, jsx } from '@emotion/core';
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/core';
 import * as React from 'react';
+import Image from 'next/image';
 import {
   Typography,
   TypographyProps,
 } from 'client/components/atoms/Typography';
 import { Card, CardProps } from 'client/components/atoms/Card';
-import {
-  GridMemberImage,
-  GridMemberImageProps,
-} from 'client/components/atoms/images/GridMemberImage';
 import { PositionType } from 'server/actors/Members/constants/position';
-import { useAppTheme } from 'client/styles/tokens';
+import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import { BORDER_RADIUS } from 'client/styles/tokens/borderRadius';
 import { POSITION_STYLES } from 'client/styles/positionStyles';
 
@@ -76,10 +73,11 @@ const PositionBadge: React.FC<{
   );
 };
 
-export type MemberCardProps = CardProps & {
-  profileImage: Omit<GridMemberImageProps, 'alt' | 'role'>;
+export type MemberCardProps = Omit<CardProps, 'children'> & {
+  profileImage: string;
   name: string;
   lang: string;
+  width: number;
   nameElement?: TypographyProps['element'];
   textSize?: TypographyProps['variant'];
   position?: PositionType;
@@ -90,6 +88,7 @@ export const MemberCard: React.FC<MemberCardProps> = props => {
     profileImage,
     name,
     lang,
+    width,
     nameElement = 'div',
     textSize = 'em2',
     borderRadius = 's',
@@ -109,10 +108,24 @@ export const MemberCard: React.FC<MemberCardProps> = props => {
         ) : undefined
       }
       aria-label={name}
+      css={css`
+        width: ${width}px;
+      `}
       {...cardProps}
     >
       <article>
-        <GridMemberImage {...profileImage} alt="" role="presentation" />
+        <Image
+          src={profileImage}
+          width={width}
+          height={width * 1.2}
+          alt=""
+          role="presentation"
+          objectFit="cover"
+          objectPosition="top"
+          css={css`
+            border-radius: ${commonStyles.borderRadius[borderRadius]};
+          `}
+        />
         <Typography
           variant={textSize}
           element={nameElement}

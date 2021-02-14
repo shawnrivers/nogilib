@@ -1,29 +1,25 @@
-/**@jsx jsx */
-import { css, jsx } from '@emotion/core';
-import * as React from 'react';
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/core';
 import { SpacingKey } from 'client/styles/tokens/spacing';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
-import { ThemeColorVariants } from 'client/styles/tokens/colors';
 import { useAppTheme } from 'client/styles/tokens';
 import { BorderRadiusKey } from 'client/styles/tokens/borderRadius';
 import { Surface, SurfaceProps } from 'client/components/atoms/Surface';
-import { BaseLink } from 'client/components/atoms/BaseLink';
+import { BaseLink, BaseLinkProps } from 'client/components/atoms/BaseLink';
 
 type CardContentProps = SurfaceProps & {
   borderRadius?: BorderRadiusKey;
-  surfaceColor?: keyof ThemeColorVariants;
   padding?: SpacingKey;
   accessory?: React.ReactNode;
 };
 
 export const CardContent: React.FC<CardContentProps> = props => {
   const {
-    children,
     borderRadius = 'l',
-    elevation = componentElevationKey.componentOnBackground,
-    surfaceColor = 'standard',
     padding = 'm',
+    elevation = componentElevationKey.componentOnBackground,
     accessory,
+    children,
     ...restProps
   } = props;
 
@@ -31,7 +27,6 @@ export const CardContent: React.FC<CardContentProps> = props => {
 
   return (
     <Surface
-      backgroundColor={surfaceColor}
       elevation={elevation}
       css={css`
         border-radius: ${theme.borderRadius[borderRadius]};
@@ -47,7 +42,7 @@ export const CardContent: React.FC<CardContentProps> = props => {
       >
         {children}
       </div>
-      {accessory !== undefined ? (
+      {accessory !== undefined && (
         <div
           css={css`
             position: absolute;
@@ -57,26 +52,57 @@ export const CardContent: React.FC<CardContentProps> = props => {
         >
           {accessory}
         </div>
-      ) : undefined}
+      )}
     </Surface>
   );
 };
 
-export type CardProps = Omit<CardContentProps, 'isClickable'> & {
-  to?: string;
-};
+export type CardProps = Omit<CardContentProps, 'isClickable'> & BaseLinkProps;
 
 export const Card: React.FC<CardProps> = props => {
-  const { to, children, ...restProps } = props;
+  const {
+    borderRadius,
+    padding,
+    accessory,
+    children,
+    foregroundColor,
+    backgroundColor,
+    colorType,
+    elevation,
+    className,
+    ...linkProps
+  } = props;
 
-  return to ? (
-    <BaseLink to={to}>
-      <CardContent isClickable {...restProps}>
+  const isClickable = 'href' in props;
+
+  return isClickable ? (
+    <BaseLink {...linkProps}>
+      <CardContent
+        borderRadius={borderRadius}
+        padding={padding}
+        accessory={accessory}
+        foregroundColor={foregroundColor}
+        backgroundColor={backgroundColor}
+        colorType={colorType}
+        elevation={elevation}
+        isClickable={isClickable}
+        className={className}
+      >
         {children}
       </CardContent>
     </BaseLink>
   ) : (
-    <CardContent isClickable={false} {...restProps}>
+    <CardContent
+      borderRadius={borderRadius}
+      padding={padding}
+      accessory={accessory}
+      foregroundColor={foregroundColor}
+      backgroundColor={backgroundColor}
+      colorType={colorType}
+      elevation={elevation}
+      isClickable={isClickable}
+      className={className}
+    >
       {children}
     </CardContent>
   );
