@@ -1,5 +1,5 @@
-/**@jsx jsx */
-import { jsx, css, Global } from '@emotion/core';
+/** @jsxImportSource @emotion/react */
+import { css, Global } from '@emotion/core';
 import { ThemeProvider } from '@emotion/react';
 import * as React from 'react';
 import 'focus-visible';
