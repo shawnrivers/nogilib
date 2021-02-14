@@ -9,7 +9,7 @@
         "title": "僕は僕を好きになる",
         "number": "26",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/26/A.jpg"
+        "artwork": "/images/artworks/singles/26/A.jpg"
       },
       {
         "id": "single-hogoshoku",
@@ -19,7 +19,7 @@
         "title": "しあわせの保護色",
         "number": "25",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/25/A.jpg"
+        "artwork": "/images/artworks/singles/25/A.jpg"
       },
       {
         "id": "single-yoakemade",
@@ -29,7 +29,7 @@
         "title": "夜明けまで強がらなくてもいい",
         "number": "24",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/24/A.jpg"
+        "artwork": "/images/artworks/singles/24/A.jpg"
       },
       {
         "id": "single-singout",
@@ -39,7 +39,7 @@
         "title": "Sing Out!",
         "number": "23",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/23/A.jpg"
+        "artwork": "/images/artworks/singles/23/A.jpg"
       },
       {
         "id": "single-kaerimichi",
@@ -49,7 +49,7 @@
         "title": "帰り道は遠回りしたくなる",
         "number": "22",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/22/A.jpg"
+        "artwork": "/images/artworks/singles/22/A.jpg"
       },
       {
         "id": "single-jikochu",
@@ -59,7 +59,7 @@
         "title": "ジコチューで行こう!",
         "number": "21",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/21/A.jpg"
+        "artwork": "/images/artworks/singles/21/A.jpg"
       },
       {
         "id": "single-synchronicity",
@@ -69,7 +69,7 @@
         "title": "シンクロニシティ",
         "number": "20",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/20/A.jpg"
+        "artwork": "/images/artworks/singles/20/A.jpg"
       },
       {
         "id": "single-itsukadekiru",
@@ -79,7 +79,7 @@
         "title": "いつかできるから今日できる",
         "number": "19",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/19/A.jpg"
+        "artwork": "/images/artworks/singles/19/A.jpg"
       },
       {
         "id": "single-nigemizu",
@@ -89,7 +89,7 @@
         "title": "逃げ水",
         "number": "18",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/18/A.jpg"
+        "artwork": "/images/artworks/singles/18/A.jpg"
       },
       {
         "id": "single-influencer",
@@ -99,7 +99,7 @@
         "title": "インフルエンサー",
         "number": "17",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/17/A.jpg"
+        "artwork": "/images/artworks/singles/17/A.jpg"
       },
       {
         "id": "single-sayonaranoimi",
@@ -109,7 +109,7 @@
         "title": "サヨナラの意味",
         "number": "16",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/16/A.jpg"
+        "artwork": "/images/artworks/singles/16/A.jpg"
       },
       {
         "id": "single-hadasummer",
@@ -119,7 +119,7 @@
         "title": "裸足でSummer",
         "number": "15",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/15/A.jpg"
+        "artwork": "/images/artworks/singles/15/A.jpg"
       },
       {
         "id": "single-harujion",
@@ -129,7 +129,7 @@
         "title": "ハルジオンが咲く頃",
         "number": "14",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/14/A.jpg"
+        "artwork": "/images/artworks/singles/14/A.jpg"
       },
       {
         "id": "single-imahana",
@@ -139,7 +139,7 @@
         "title": "今、話したい誰かがいる",
         "number": "13",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/13/A.jpg"
+        "artwork": "/images/artworks/singles/13/A.jpg"
       },
       {
         "id": "single-taiyouknock",
@@ -149,7 +149,7 @@
         "title": "太陽ノック",
         "number": "12",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/12/A.jpg"
+        "artwork": "/images/artworks/singles/12/A.jpg"
       },
       {
         "id": "single-inochihautsukushii",
@@ -159,7 +159,7 @@
         "title": "命は美しい",
         "number": "11",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/11/A.jpg"
+        "artwork": "/images/artworks/singles/11/A.jpg"
       },
       {
         "id": "single-nandomenoaozoraka",
@@ -169,7 +169,7 @@
         "title": "何度目の青空か?",
         "number": "10",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/10/A.jpg"
+        "artwork": "/images/artworks/singles/10/A.jpg"
       },
       {
         "id": "single-natsunofreeeasy",
@@ -179,7 +179,7 @@
         "title": "夏のFree&Easy",
         "number": "9",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/9/A.jpg"
+        "artwork": "/images/artworks/singles/9/A.jpg"
       },
       {
         "id": "single-kiduitarakataomoi",
@@ -189,7 +189,7 @@
         "title": "気づいたら片想い",
         "number": "8",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/8/A.jpg"
+        "artwork": "/images/artworks/singles/8/A.jpg"
       },
       {
         "id": "single-valletta",
@@ -199,7 +199,7 @@
         "title": "バレッタ",
         "number": "7",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/7/A.jpg"
+        "artwork": "/images/artworks/singles/7/A.jpg"
       },
       {
         "id": "single-girlsrule",
@@ -209,7 +209,7 @@
         "title": "ガールズルール",
         "number": "6",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/6/A.jpg"
+        "artwork": "/images/artworks/singles/6/A.jpg"
       },
       {
         "id": "single-kiminonahakibou",
@@ -219,7 +219,7 @@
         "title": "君の名は希望",
         "number": "5",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/5/A.jpg"
+        "artwork": "/images/artworks/singles/5/A.jpg"
       },
       {
         "id": "single-seifukunomannequin",
@@ -229,7 +229,7 @@
         "title": "制服のマネキン",
         "number": "4",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/4/A.jpg"
+        "artwork": "/images/artworks/singles/4/A.jpg"
       },
       {
         "id": "single-hashirebicycle",
@@ -239,7 +239,7 @@
         "title": "走れ!Bicycle",
         "number": "3",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/3/A.jpg"
+        "artwork": "/images/artworks/singles/3/A.jpg"
       },
       {
         "id": "single-oideshampo",
@@ -249,7 +249,7 @@
         "title": "おいでシャンプー",
         "number": "2",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/2/A.jpg"
+        "artwork": "/images/artworks/singles/2/A.jpg"
       },
       {
         "id": "single-gurugurucurtain",
@@ -259,7 +259,7 @@
         "title": "ぐるぐるカーテン",
         "number": "1",
         "albumType": "single",
-        "artwork": "../assets/images/artworks/singles/1/A.jpg"
+        "artwork": "/images/artworks/singles/1/A.jpg"
       },
       {
         "id": "album-imagaomoideninarumade",
@@ -269,7 +269,7 @@
         "title": "今が思い出になるまで",
         "number": "4",
         "albumType": "album",
-        "artwork": "../assets/images/artworks/albums/4/L.jpg"
+        "artwork": "/images/artworks/albums/4/L.jpg"
       },
       {
         "id": "album-bokudakenokimiunderbestalbum",
@@ -279,7 +279,7 @@
         "title": "僕だけの君〜Under Super Best〜",
         "number": "U",
         "albumType": "album",
-        "artwork": "../assets/images/artworks/albums/U/L1.jpg"
+        "artwork": "/images/artworks/albums/U/L1.jpg"
       },
       {
         "id": "album-umaretekarahajimetemitayume",
@@ -289,7 +289,7 @@
         "title": "生まれてから初めて見た夢",
         "number": "3",
         "albumType": "album",
-        "artwork": "../assets/images/artworks/albums/3/A.jpg"
+        "artwork": "/images/artworks/albums/3/A.jpg"
       },
       {
         "id": "album-sorezorenoisu",
@@ -299,7 +299,7 @@
         "title": "それぞれの椅子",
         "number": "2",
         "albumType": "album",
-        "artwork": "../assets/images/artworks/albums/2/A.jpg"
+        "artwork": "/images/artworks/albums/2/A.jpg"
       },
       {
         "id": "album-toumeinairo",
@@ -309,7 +309,7 @@
         "title": "透明な色",
         "number": "1",
         "albumType": "album",
-        "artwork": "../assets/images/artworks/albums/1/A.jpg"
+        "artwork": "/images/artworks/albums/1/A.jpg"
       },
       {
         "id": "digital-sekaichuunorinjinyo",
@@ -319,7 +319,7 @@
         "title": "世界中の隣人よ",
         "number": "1",
         "albumType": "digital",
-        "artwork": "../assets/images/artworks/digital/1/T.jpg"
+        "artwork": "/images/artworks/digital/1/T.jpg"
       },
       {
         "id": "digital-route246",
@@ -329,7 +329,7 @@
         "title": "Route 246",
         "number": "2",
         "albumType": "digital",
-        "artwork": "../assets/images/artworks/digital/2/T.jpg"
+        "artwork": "/images/artworks/digital/2/T.jpg"
       }
     ],
     "songs": [
@@ -350,7 +350,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/1/A.jpg"
+        "artwork": "/images/artworks/singles/1/A.jpg"
       },
       {
         "id": "song-hidarimunenoyuuki",
@@ -369,7 +369,7 @@
             "number": "U"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/1/A.jpg"
+        "artwork": "/images/artworks/singles/1/A.jpg"
       },
       {
         "id": "song-nogizakanouta",
@@ -388,7 +388,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/1/A.jpg"
+        "artwork": "/images/artworks/singles/1/A.jpg"
       },
       {
         "id": "song-aitakattakamoshirenai",
@@ -402,7 +402,7 @@
           "number": "1"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/1/B.jpg"
+        "artwork": "/images/artworks/singles/1/B.jpg"
       },
       {
         "id": "song-ushinaitakunaikara",
@@ -421,7 +421,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/1/C.jpg"
+        "artwork": "/images/artworks/singles/1/C.jpg"
       },
       {
         "id": "song-shiroikumoninotte",
@@ -435,7 +435,7 @@
           "number": "1"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/1/T.jpg"
+        "artwork": "/images/artworks/singles/1/T.jpg"
       },
       {
         "id": "song-oideshampo",
@@ -454,7 +454,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/2/A.jpg"
+        "artwork": "/images/artworks/singles/2/A.jpg"
       },
       {
         "id": "song-ookaminikuchibuewo",
@@ -473,7 +473,7 @@
             "number": "U"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/2/C.jpg"
+        "artwork": "/images/artworks/singles/2/C.jpg"
       },
       {
         "id": "song-kokoronokusuri",
@@ -487,7 +487,7 @@
           "number": "2"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/2/A.jpg"
+        "artwork": "/images/artworks/singles/2/A.jpg"
       },
       {
         "id": "song-guuzenwoiiwakenishite",
@@ -501,7 +501,7 @@
           "number": "2"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/2/A.jpg"
+        "artwork": "/images/artworks/singles/2/A.jpg"
       },
       {
         "id": "song-mizutamamoyou",
@@ -515,7 +515,7 @@
           "number": "2"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/2/B.jpg"
+        "artwork": "/images/artworks/singles/2/B.jpg"
       },
       {
         "id": "song-house",
@@ -534,7 +534,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/2/T.jpg"
+        "artwork": "/images/artworks/singles/2/T.jpg"
       },
       {
         "id": "song-hashirebicycle",
@@ -553,7 +553,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/3/A.jpg"
+        "artwork": "/images/artworks/singles/3/A.jpg"
       },
       {
         "id": "song-namidagamadakanashimi",
@@ -576,7 +576,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/3/A.jpg"
+        "artwork": "/images/artworks/singles/3/A.jpg"
       },
       {
         "id": "song-sekkachinakatatsumuri",
@@ -595,7 +595,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/3/A.jpg"
+        "artwork": "/images/artworks/singles/3/A.jpg"
       },
       {
         "id": "song-hitohanazehashirunoka",
@@ -609,7 +609,7 @@
           "number": "3"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/3/B.jpg"
+        "artwork": "/images/artworks/singles/3/B.jpg"
       },
       {
         "id": "song-otogadenaiguitar",
@@ -623,7 +623,7 @@
           "number": "3"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/3/C.jpg"
+        "artwork": "/images/artworks/singles/3/C.jpg"
       },
       {
         "id": "song-kairyuunoshimayo",
@@ -637,7 +637,7 @@
           "number": "3"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/3/T.jpg"
+        "artwork": "/images/artworks/singles/3/T.jpg"
       },
       {
         "id": "song-seifukunomannequin",
@@ -656,7 +656,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/4/A.jpg"
+        "artwork": "/images/artworks/singles/4/A.jpg"
       },
       {
         "id": "song-harunomelody",
@@ -675,7 +675,7 @@
             "number": "U"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/4/C.jpg"
+        "artwork": "/images/artworks/singles/4/C.jpg"
       },
       {
         "id": "song-yubibouenkyou",
@@ -689,7 +689,7 @@
           "number": "4"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/4/A.jpg"
+        "artwork": "/images/artworks/singles/4/A.jpg"
       },
       {
         "id": "song-yasashisanaramaniatteiru",
@@ -703,7 +703,7 @@
           "number": "4"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/4/A.jpg"
+        "artwork": "/images/artworks/singles/4/A.jpg"
       },
       {
         "id": "song-kokojanaidokoka",
@@ -717,7 +717,7 @@
           "number": "4"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/4/B.jpg"
+        "artwork": "/images/artworks/singles/4/B.jpg"
       },
       {
         "id": "song-shibuyablues",
@@ -731,7 +731,7 @@
           "number": "4"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/4/T.jpg"
+        "artwork": "/images/artworks/singles/4/T.jpg"
       },
       {
         "id": "song-kiminonahakibou",
@@ -750,7 +750,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/5/A.jpg"
+        "artwork": "/images/artworks/singles/5/A.jpg"
       },
       {
         "id": "song-13nichinokinyoubi",
@@ -773,7 +773,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/5/B.jpg"
+        "artwork": "/images/artworks/singles/5/B.jpg"
       },
       {
         "id": "song-shakism",
@@ -792,7 +792,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/5/A.jpg"
+        "artwork": "/images/artworks/singles/5/A.jpg"
       },
       {
         "id": "song-romanticikayaki",
@@ -811,7 +811,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/5/A.jpg"
+        "artwork": "/images/artworks/singles/5/A.jpg"
       },
       {
         "id": "song-dekopin",
@@ -825,7 +825,7 @@
           "number": "5"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/5/C.jpg"
+        "artwork": "/images/artworks/singles/5/C.jpg"
       },
       {
         "id": "song-psychokinesesnokanousei",
@@ -839,7 +839,7 @@
           "number": "5"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/5/T.jpg"
+        "artwork": "/images/artworks/singles/5/T.jpg"
       },
       {
         "id": "song-girlsrule",
@@ -858,7 +858,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/6/A.jpg"
+        "artwork": "/images/artworks/singles/6/A.jpg"
       },
       {
         "id": "song-senpuuki",
@@ -877,7 +877,7 @@
             "number": "U"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/6/B.jpg"
+        "artwork": "/images/artworks/singles/6/B.jpg"
       },
       {
         "id": "song-sekaideichibankodokuralover",
@@ -896,7 +896,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/6/A.jpg"
+        "artwork": "/images/artworks/singles/6/A.jpg"
       },
       {
         "id": "song-koumoriyo",
@@ -910,7 +910,7 @@
           "number": "6"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/6/A.jpg"
+        "artwork": "/images/artworks/singles/6/A.jpg"
       },
       {
         "id": "song-hokanohoshikara",
@@ -929,7 +929,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/6/C.jpg"
+        "artwork": "/images/artworks/singles/6/C.jpg"
       },
       {
         "id": "song-ningentoiugakki",
@@ -943,7 +943,7 @@
           "number": "6"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/6/T.jpg"
+        "artwork": "/images/artworks/singles/6/T.jpg"
       },
       {
         "id": "song-valletta",
@@ -962,7 +962,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/7/A.jpg"
+        "artwork": "/images/artworks/singles/7/A.jpg"
       },
       {
         "id": "song-hatsukoinohitowo",
@@ -981,7 +981,7 @@
             "number": "U"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/7/C.jpg"
+        "artwork": "/images/artworks/singles/7/C.jpg"
       },
       {
         "id": "song-tsukinoookisa",
@@ -995,7 +995,7 @@
           "number": "7"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/7/A.jpg"
+        "artwork": "/images/artworks/singles/7/A.jpg"
       },
       {
         "id": "song-watanotamenidarekanotameni",
@@ -1014,7 +1014,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/7/A.jpg"
+        "artwork": "/images/artworks/singles/7/A.jpg"
       },
       {
         "id": "song-sonnabakana",
@@ -1033,7 +1033,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/7/B.jpg"
+        "artwork": "/images/artworks/singles/7/B.jpg"
       },
       {
         "id": "song-yasashisatoha",
@@ -1047,7 +1047,7 @@
           "number": "7"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/7/T.jpg"
+        "artwork": "/images/artworks/singles/7/T.jpg"
       },
       {
         "id": "song-kiduitarakataomoi",
@@ -1066,7 +1066,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/8/A.jpg"
+        "artwork": "/images/artworks/singles/8/A.jpg"
       },
       {
         "id": "song-umaretamamade",
@@ -1085,7 +1085,7 @@
             "number": "U"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/8/C.jpg"
+        "artwork": "/images/artworks/singles/8/C.jpg"
       },
       {
         "id": "song-romancenostart",
@@ -1104,7 +1104,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/8/A.jpg"
+        "artwork": "/images/artworks/singles/8/A.jpg"
       },
       {
         "id": "song-toikimethod",
@@ -1118,7 +1118,7 @@
           "number": "8"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/8/A.jpg"
+        "artwork": "/images/artworks/singles/8/A.jpg"
       },
       {
         "id": "song-kodokukyoudai",
@@ -1132,7 +1132,7 @@
           "number": "8"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/8/B.jpg"
+        "artwork": "/images/artworks/singles/8/B.jpg"
       },
       {
         "id": "song-dankeschan",
@@ -1151,7 +1151,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/8/T.jpg"
+        "artwork": "/images/artworks/singles/8/T.jpg"
       },
       {
         "id": "song-natsunofreeeasy",
@@ -1170,7 +1170,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/9/A.jpg"
+        "artwork": "/images/artworks/singles/9/A.jpg"
       },
       {
         "id": "song-kokoniiruriyuu",
@@ -1189,7 +1189,7 @@
             "number": "U"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/9/C.jpg"
+        "artwork": "/images/artworks/singles/9/C.jpg"
       },
       {
         "id": "song-nanimodekizunisobaniiru",
@@ -1203,7 +1203,7 @@
           "number": "9"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/9/A.jpg"
+        "artwork": "/images/artworks/singles/9/A.jpg"
       },
       {
         "id": "song-sonosakinodeguchi",
@@ -1217,7 +1217,7 @@
           "number": "9"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/9/A.jpg"
+        "artwork": "/images/artworks/singles/9/A.jpg"
       },
       {
         "id": "song-mukuchinalion",
@@ -1236,7 +1236,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/9/B.jpg"
+        "artwork": "/images/artworks/singles/9/B.jpg"
       },
       {
         "id": "song-bokugaikanakyadaregaikunda",
@@ -1250,7 +1250,7 @@
           "number": "9"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/9/T.jpg"
+        "artwork": "/images/artworks/singles/9/T.jpg"
       },
       {
         "id": "song-nandomenoaozoraka",
@@ -1269,7 +1269,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/10/A.jpg"
+        "artwork": "/images/artworks/singles/10/A.jpg"
       },
       {
         "id": "song-anohibokuha",
@@ -1292,7 +1292,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/10/C.jpg"
+        "artwork": "/images/artworks/singles/10/C.jpg"
       },
       {
         "id": "song-toomawarinoaijou",
@@ -1306,7 +1306,7 @@
           "number": "10"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/10/A.jpg"
+        "artwork": "/images/artworks/singles/10/A.jpg"
       },
       {
         "id": "song-korogattakanewonarase",
@@ -1320,7 +1320,7 @@
           "number": "10"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/10/A.jpg"
+        "artwork": "/images/artworks/singles/10/A.jpg"
       },
       {
         "id": "song-watashiokiru",
@@ -1334,7 +1334,7 @@
           "number": "10"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/10/B.jpg"
+        "artwork": "/images/artworks/singles/10/B.jpg"
       },
       {
         "id": "song-tenderdays",
@@ -1348,7 +1348,7 @@
           "number": "10"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/10/T.jpg"
+        "artwork": "/images/artworks/singles/10/T.jpg"
       },
       {
         "id": "song-inochihautsukushii",
@@ -1367,7 +1367,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/11/A.jpg"
+        "artwork": "/images/artworks/singles/11/A.jpg"
       },
       {
         "id": "song-kimihabokuto",
@@ -1390,7 +1390,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/11/C.jpg"
+        "artwork": "/images/artworks/singles/11/C.jpg"
       },
       {
         "id": "song-arakajimekatarareruromance",
@@ -1409,7 +1409,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/11/A.jpg"
+        "artwork": "/images/artworks/singles/11/A.jpg"
       },
       {
         "id": "song-tachinaorichuu",
@@ -1428,7 +1428,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/11/A.jpg"
+        "artwork": "/images/artworks/singles/11/A.jpg"
       },
       {
         "id": "song-gomennezutto",
@@ -1442,7 +1442,7 @@
           "number": "11"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/11/B.jpg"
+        "artwork": "/images/artworks/singles/11/B.jpg"
       },
       {
         "id": "song-border",
@@ -1456,7 +1456,7 @@
           "number": "11"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/11/T.jpg"
+        "artwork": "/images/artworks/singles/11/T.jpg"
       },
       {
         "id": "song-taiyouknock",
@@ -1475,7 +1475,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/12/A.jpg"
+        "artwork": "/images/artworks/singles/12/A.jpg"
       },
       {
         "id": "song-wakaregiwa",
@@ -1498,7 +1498,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/12/C.jpg"
+        "artwork": "/images/artworks/singles/12/C.jpg"
       },
       {
         "id": "song-mousukoshinoyume",
@@ -1512,7 +1512,7 @@
           "number": "12"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/12/A.jpg"
+        "artwork": "/images/artworks/singles/12/A.jpg"
       },
       {
         "id": "song-sakanatachinolovesong",
@@ -1526,7 +1526,7 @@
           "number": "12"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/12/A.jpg"
+        "artwork": "/images/artworks/singles/12/A.jpg"
       },
       {
         "id": "song-muhyoujyou",
@@ -1545,7 +1545,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/12/B.jpg"
+        "artwork": "/images/artworks/singles/12/B.jpg"
       },
       {
         "id": "song-hanenokioku",
@@ -1564,7 +1564,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/12/T.jpg"
+        "artwork": "/images/artworks/singles/12/T.jpg"
       },
       {
         "id": "song-seifukuwonuidesayonarawo",
@@ -1583,7 +1583,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/12/T.jpg"
+        "artwork": "/images/artworks/singles/12/T.jpg"
       },
       {
         "id": "song-imahana",
@@ -1602,7 +1602,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/13/A.jpg"
+        "artwork": "/images/artworks/singles/13/A.jpg"
       },
       {
         "id": "song-shittonokenri",
@@ -1625,7 +1625,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/13/A.jpg"
+        "artwork": "/images/artworks/singles/13/A.jpg"
       },
       {
         "id": "song-popipappappa",
@@ -1644,7 +1644,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/13/A.jpg"
+        "artwork": "/images/artworks/singles/13/A.jpg"
       },
       {
         "id": "song-otonahenochikamichi",
@@ -1663,7 +1663,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/13/B.jpg"
+        "artwork": "/images/artworks/singles/13/B.jpg"
       },
       {
         "id": "song-kanashiminowasurekata",
@@ -1682,7 +1682,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/13/C.jpg"
+        "artwork": "/images/artworks/singles/13/C.jpg"
       },
       {
         "id": "song-sukima",
@@ -1701,7 +1701,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/13/T.jpg"
+        "artwork": "/images/artworks/singles/13/T.jpg"
       },
       {
         "id": "song-harujion",
@@ -1715,7 +1715,7 @@
           "number": "14"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/14/A.jpg"
+        "artwork": "/images/artworks/singles/14/A.jpg"
       },
       {
         "id": "song-futoogo",
@@ -1738,7 +1738,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/14/D.jpg"
+        "artwork": "/images/artworks/singles/14/D.jpg"
       },
       {
         "id": "song-harukanarubhutan",
@@ -1757,7 +1757,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/14/A.jpg"
+        "artwork": "/images/artworks/singles/14/A.jpg"
       },
       {
         "id": "song-tsuyogarutsubomi",
@@ -1771,7 +1771,7 @@
           "number": "14"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/14/A.jpg"
+        "artwork": "/images/artworks/singles/14/A.jpg"
       },
       {
         "id": "song-kyuushamen",
@@ -1790,7 +1790,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/14/B.jpg"
+        "artwork": "/images/artworks/singles/14/B.jpg"
       },
       {
         "id": "song-tsuribori",
@@ -1804,7 +1804,7 @@
           "number": "14"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/14/C.jpg"
+        "artwork": "/images/artworks/singles/14/C.jpg"
       },
       {
         "id": "song-yuuutsutofuusengamu",
@@ -1823,7 +1823,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/14/T.jpg"
+        "artwork": "/images/artworks/singles/14/T.jpg"
       },
       {
         "id": "song-hadasummer",
@@ -1842,7 +1842,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/15/A.jpg"
+        "artwork": "/images/artworks/singles/15/A.jpg"
       },
       {
         "id": "song-secretgravity",
@@ -1865,7 +1865,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/15/D.jpg"
+        "artwork": "/images/artworks/singles/15/D.jpg"
       },
       {
         "id": "song-bokudakenohikari",
@@ -1884,7 +1884,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/15/A.jpg"
+        "artwork": "/images/artworks/singles/15/A.jpg"
       },
       {
         "id": "song-offshoregirl",
@@ -1903,7 +1903,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/15/A.jpg"
+        "artwork": "/images/artworks/singles/15/A.jpg"
       },
       {
         "id": "song-inochinoshinjitsu",
@@ -1922,7 +1922,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/15/B.jpg"
+        "artwork": "/images/artworks/singles/15/B.jpg"
       },
       {
         "id": "song-hakumaisama",
@@ -1941,7 +1941,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/15/C.jpg"
+        "artwork": "/images/artworks/singles/15/C.jpg"
       },
       {
         "id": "song-ikuatenonaibokutachi",
@@ -1960,7 +1960,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/15/T.jpg"
+        "artwork": "/images/artworks/singles/15/T.jpg"
       },
       {
         "id": "song-sayonaranoimi",
@@ -1979,7 +1979,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/16/A.jpg"
+        "artwork": "/images/artworks/singles/16/A.jpg"
       },
       {
         "id": "song-bulanko",
@@ -2002,7 +2002,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/16/B.jpg"
+        "artwork": "/images/artworks/singles/16/B.jpg"
       },
       {
         "id": "song-kodokunaaozora",
@@ -2021,7 +2021,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/16/A.jpg"
+        "artwork": "/images/artworks/singles/16/A.jpg"
       },
       {
         "id": "song-anokyoushitsu",
@@ -2040,7 +2040,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/16/A.jpg"
+        "artwork": "/images/artworks/singles/16/A.jpg"
       },
       {
         "id": "song-nidomenokisskara",
@@ -2059,7 +2059,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/16/C.jpg"
+        "artwork": "/images/artworks/singles/16/C.jpg"
       },
       {
         "id": "song-kiminiokuruhanaganai",
@@ -2078,7 +2078,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/16/D.jpg"
+        "artwork": "/images/artworks/singles/16/D.jpg"
       },
       {
         "id": "song-naimononedari",
@@ -2097,7 +2097,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/16/T.jpg"
+        "artwork": "/images/artworks/singles/16/T.jpg"
       },
       {
         "id": "song-influencer",
@@ -2116,7 +2116,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/17/A.jpg"
+        "artwork": "/images/artworks/singles/17/A.jpg"
       },
       {
         "id": "song-fusuenhaikiteiru",
@@ -2139,7 +2139,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/17/C.jpg"
+        "artwork": "/images/artworks/singles/17/C.jpg"
       },
       {
         "id": "song-jinseiwokangaetakunaru",
@@ -2158,7 +2158,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/17/A.jpg"
+        "artwork": "/images/artworks/singles/17/A.jpg"
       },
       {
         "id": "song-igaibreak",
@@ -2177,7 +2177,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/17/A.jpg"
+        "artwork": "/images/artworks/singles/17/A.jpg"
       },
       {
         "id": "song-anotherghost",
@@ -2196,7 +2196,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/17/B.jpg"
+        "artwork": "/images/artworks/singles/17/B.jpg"
       },
       {
         "id": "song-sanbanmenokaze",
@@ -2215,7 +2215,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/17/D.jpg"
+        "artwork": "/images/artworks/singles/17/D.jpg"
       },
       {
         "id": "song-atarisawarinonaihanashi",
@@ -2234,7 +2234,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/17/T.jpg"
+        "artwork": "/images/artworks/singles/17/T.jpg"
       },
       {
         "id": "song-nigemizu",
@@ -2253,7 +2253,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/18/A.jpg"
+        "artwork": "/images/artworks/singles/18/A.jpg"
       },
       {
         "id": "song-under",
@@ -2276,7 +2276,7 @@
             "number": "U"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/18/C.jpg"
+        "artwork": "/images/artworks/singles/18/C.jpg"
       },
       {
         "id": "song-onnahahitorija",
@@ -2290,7 +2290,7 @@
           "number": "18"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/18/A.jpg"
+        "artwork": "/images/artworks/singles/18/A.jpg"
       },
       {
         "id": "song-hitonatsunonagasa",
@@ -2304,7 +2304,7 @@
           "number": "18"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/18/A.jpg"
+        "artwork": "/images/artworks/singles/18/A.jpg"
       },
       {
         "id": "song-liveshin",
@@ -2323,7 +2323,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/18/D.jpg"
+        "artwork": "/images/artworks/singles/18/D.jpg"
       },
       {
         "id": "song-mirainokotae",
@@ -2342,7 +2342,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/18/T.jpg"
+        "artwork": "/images/artworks/singles/18/T.jpg"
       },
       {
         "id": "song-naitatteiijanaika",
@@ -2356,7 +2356,7 @@
           "number": "18"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/18/B.jpg"
+        "artwork": "/images/artworks/singles/18/B.jpg"
       },
       {
         "id": "song-itsukadekiru",
@@ -2375,7 +2375,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/19/A.jpg"
+        "artwork": "/images/artworks/singles/19/A.jpg"
       },
       {
         "id": "song-myrule",
@@ -2398,7 +2398,7 @@
             "number": "U"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/19/C.jpg"
+        "artwork": "/images/artworks/singles/19/C.jpg"
       },
       {
         "id": "song-fumenshou",
@@ -2412,7 +2412,7 @@
           "number": "19"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/19/A.jpg"
+        "artwork": "/images/artworks/singles/19/A.jpg"
       },
       {
         "id": "song-maaiika",
@@ -2426,7 +2426,7 @@
           "number": "19"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/19/A.jpg"
+        "artwork": "/images/artworks/singles/19/A.jpg"
       },
       {
         "id": "song-shirenosoujinin",
@@ -2440,7 +2440,7 @@
           "number": "19"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/19/B.jpg"
+        "artwork": "/images/artworks/singles/19/B.jpg"
       },
       {
         "id": "song-bokunoshoudou",
@@ -2459,7 +2459,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/19/D.jpg"
+        "artwork": "/images/artworks/singles/19/D.jpg"
       },
       {
         "id": "song-atarashiikafun",
@@ -2473,7 +2473,7 @@
           "number": "19"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/19/T.jpg"
+        "artwork": "/images/artworks/singles/19/T.jpg"
       },
       {
         "id": "song-synchronicity",
@@ -2492,7 +2492,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/20/A.jpg"
+        "artwork": "/images/artworks/singles/20/A.jpg"
       },
       {
         "id": "song-atarashiisekai",
@@ -2511,7 +2511,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/20/B.jpg"
+        "artwork": "/images/artworks/singles/20/B.jpg"
       },
       {
         "id": "song-against",
@@ -2530,7 +2530,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/20/A.jpg"
+        "artwork": "/images/artworks/singles/20/A.jpg"
       },
       {
         "id": "song-kumoninarebaii",
@@ -2544,7 +2544,7 @@
           "number": "20"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/20/A.jpg"
+        "artwork": "/images/artworks/singles/20/A.jpg"
       },
       {
         "id": "song-scoutman",
@@ -2563,7 +2563,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/20/C.jpg"
+        "artwork": "/images/artworks/singles/20/C.jpg"
       },
       {
         "id": "song-tokitokimekimeki",
@@ -2582,7 +2582,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/20/D.jpg"
+        "artwork": "/images/artworks/singles/20/D.jpg"
       },
       {
         "id": "song-kotodamahou",
@@ -2596,7 +2596,7 @@
           "number": "20"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/20/T.jpg"
+        "artwork": "/images/artworks/singles/20/T.jpg"
       },
       {
         "id": "song-jikochu",
@@ -2615,7 +2615,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/21/A.jpg"
+        "artwork": "/images/artworks/singles/21/A.jpg"
       },
       {
         "id": "song-sankakunoakichi",
@@ -2634,7 +2634,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/21/A.jpg"
+        "artwork": "/images/artworks/singles/21/A.jpg"
       },
       {
         "id": "song-soratobira",
@@ -2648,7 +2648,7 @@
           "number": "21"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/21/A.jpg"
+        "artwork": "/images/artworks/singles/21/A.jpg"
       },
       {
         "id": "song-jibunjanaikanji",
@@ -2667,7 +2667,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/21/B.jpg"
+        "artwork": "/images/artworks/singles/21/B.jpg"
       },
       {
         "id": "song-kokoronomonolog",
@@ -2681,7 +2681,7 @@
           "number": "21"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/21/C.jpg"
+        "artwork": "/images/artworks/singles/21/C.jpg"
       },
       {
         "id": "song-chikyuugamaruinara",
@@ -2695,7 +2695,7 @@
           "number": "21"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/21/D.jpg"
+        "artwork": "/images/artworks/singles/21/D.jpg"
       },
       {
         "id": "song-annarisukidatta",
@@ -2709,7 +2709,7 @@
           "number": "21"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/21/T.jpg"
+        "artwork": "/images/artworks/singles/21/T.jpg"
       },
       {
         "id": "song-kaerimichi",
@@ -2728,7 +2728,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/22/A.jpg"
+        "artwork": "/images/artworks/singles/22/A.jpg"
       },
       {
         "id": "song-nichijou",
@@ -2747,7 +2747,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/22/B.jpg"
+        "artwork": "/images/artworks/singles/22/B.jpg"
       },
       {
         "id": "song-caravan",
@@ -2766,7 +2766,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/22/A.jpg"
+        "artwork": "/images/artworks/singles/22/A.jpg"
       },
       {
         "id": "song-tsuduku",
@@ -2785,7 +2785,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/singles/22/A.jpg"
+        "artwork": "/images/artworks/singles/22/A.jpg"
       },
       {
         "id": "song-kokuhakunojunban",
@@ -2799,7 +2799,7 @@
           "number": "22"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/22/C.jpg"
+        "artwork": "/images/artworks/singles/22/C.jpg"
       },
       {
         "id": "song-chopinnousotsuki",
@@ -2813,7 +2813,7 @@
           "number": "22"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/22/D.jpg"
+        "artwork": "/images/artworks/singles/22/D.jpg"
       },
       {
         "id": "song-shiritaikoto",
@@ -2827,7 +2827,7 @@
           "number": "22"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/22/T.jpg"
+        "artwork": "/images/artworks/singles/22/T.jpg"
       },
       {
         "id": "song-singout",
@@ -2841,7 +2841,7 @@
           "number": "23"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/23/A.jpg"
+        "artwork": "/images/artworks/singles/23/A.jpg"
       },
       {
         "id": "song-kassouro",
@@ -2855,7 +2855,7 @@
           "number": "23"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/23/A.jpg"
+        "artwork": "/images/artworks/singles/23/A.jpg"
       },
       {
         "id": "song-noyounasonzai",
@@ -2869,7 +2869,7 @@
           "number": "23"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/23/A.jpg"
+        "artwork": "/images/artworks/singles/23/A.jpg"
       },
       {
         "id": "song-amiloving",
@@ -2883,7 +2883,7 @@
           "number": "23"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/23/B.jpg"
+        "artwork": "/images/artworks/singles/23/B.jpg"
       },
       {
         "id": "song-heikousen",
@@ -2897,7 +2897,7 @@
           "number": "23"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/23/C.jpg"
+        "artwork": "/images/artworks/singles/23/C.jpg"
       },
       {
         "id": "song-yonbanmenohikari",
@@ -2911,7 +2911,7 @@
           "number": "23"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/23/D.jpg"
+        "artwork": "/images/artworks/singles/23/D.jpg"
       },
       {
         "id": "song-aimai",
@@ -2925,7 +2925,7 @@
           "number": "23"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/23/T.jpg"
+        "artwork": "/images/artworks/singles/23/T.jpg"
       },
       {
         "id": "song-yoakemade",
@@ -2939,7 +2939,7 @@
           "number": "24"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/24/A.jpg"
+        "artwork": "/images/artworks/singles/24/A.jpg"
       },
       {
         "id": "song-bokunokoto",
@@ -2953,7 +2953,7 @@
           "number": "24"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/24/A.jpg"
+        "artwork": "/images/artworks/singles/24/A.jpg"
       },
       {
         "id": "song-romendensha",
@@ -2967,7 +2967,7 @@
           "number": "24"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/24/A.jpg"
+        "artwork": "/images/artworks/singles/24/A.jpg"
       },
       {
         "id": "song-toshoshitsu",
@@ -2981,7 +2981,7 @@
           "number": "24"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/24/B.jpg"
+        "artwork": "/images/artworks/singles/24/B.jpg"
       },
       {
         "id": "song-tokidokiomoidashite",
@@ -2995,7 +2995,7 @@
           "number": "24"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/24/C.jpg"
+        "artwork": "/images/artworks/singles/24/C.jpg"
       },
       {
         "id": "song-domybest",
@@ -3009,7 +3009,7 @@
           "number": "24"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/24/D.jpg"
+        "artwork": "/images/artworks/singles/24/D.jpg"
       },
       {
         "id": "song-bokunoomoikomi",
@@ -3023,7 +3023,7 @@
           "number": "24"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/24/T.jpg"
+        "artwork": "/images/artworks/singles/24/T.jpg"
       },
       {
         "id": "song-hogoshoku",
@@ -3037,7 +3037,7 @@
           "number": "25"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/25/A.jpg"
+        "artwork": "/images/artworks/singles/25/A.jpg"
       },
       {
         "id": "song-staywithme",
@@ -3051,7 +3051,7 @@
           "number": "25"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/25/A.jpg"
+        "artwork": "/images/artworks/singles/25/A.jpg"
       },
       {
         "id": "song-jaane",
@@ -3065,7 +3065,7 @@
           "number": "25"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/25/A.jpg"
+        "artwork": "/images/artworks/singles/25/A.jpg"
       },
       {
         "id": "song-anastasia",
@@ -3079,7 +3079,7 @@
           "number": "25"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/25/B.jpg"
+        "artwork": "/images/artworks/singles/25/B.jpg"
       },
       {
         "id": "song-brandnewday",
@@ -3093,7 +3093,7 @@
           "number": "25"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/25/C.jpg"
+        "artwork": "/images/artworks/singles/25/C.jpg"
       },
       {
         "id": "song-isee",
@@ -3107,7 +3107,7 @@
           "number": "25"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/25/D.jpg"
+        "artwork": "/images/artworks/singles/25/D.jpg"
       },
       {
         "id": "song-fantastic",
@@ -3121,7 +3121,7 @@
           "number": "25"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/25/T.jpg"
+        "artwork": "/images/artworks/singles/25/T.jpg"
       },
       {
         "id": "song-bokuhabokuwosukininaru",
@@ -3135,7 +3135,7 @@
           "number": "26"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/26/A.jpg"
+        "artwork": "/images/artworks/singles/26/A.jpg"
       },
       {
         "id": "song-tsumetaimizunonaka",
@@ -3149,7 +3149,7 @@
           "number": "26"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/26/C.jpg"
+        "artwork": "/images/artworks/singles/26/C.jpg"
       },
       {
         "id": "song-outoftheblue",
@@ -3163,7 +3163,7 @@
           "number": "26"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/26/D.jpg"
+        "artwork": "/images/artworks/singles/26/D.jpg"
       },
       {
         "id": "song-kuchihodonimonaikiss",
@@ -3177,7 +3177,7 @@
           "number": "26"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/26/B.jpg"
+        "artwork": "/images/artworks/singles/26/B.jpg"
       },
       {
         "id": "song-ashitagaaruriyuu",
@@ -3191,7 +3191,7 @@
           "number": "26"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/26/A.jpg"
+        "artwork": "/images/artworks/singles/26/A.jpg"
       },
       {
         "id": "song-wildernessworld",
@@ -3205,7 +3205,7 @@
           "number": "26"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/26/A.jpg"
+        "artwork": "/images/artworks/singles/26/A.jpg"
       },
       {
         "id": "song-yuujoupierce",
@@ -3219,7 +3219,7 @@
           "number": "26"
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/singles/26/T.jpg"
+        "artwork": "/images/artworks/singles/26/T.jpg"
       },
       {
         "id": "song-darekahamikata",
@@ -3238,7 +3238,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/1/A.jpg"
+        "artwork": "/images/artworks/albums/1/A.jpg"
       },
       {
         "id": "song-kakumeinouma",
@@ -3257,7 +3257,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/1/A.jpg"
+        "artwork": "/images/artworks/albums/1/A.jpg"
       },
       {
         "id": "song-bokugairubasho",
@@ -3276,7 +3276,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/1/A.jpg"
+        "artwork": "/images/artworks/albums/1/A.jpg"
       },
       {
         "id": "song-anatanotamenihikitai",
@@ -3295,7 +3295,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/1/A.jpg"
+        "artwork": "/images/artworks/albums/1/A.jpg"
       },
       {
         "id": "song-keishasuru",
@@ -3314,7 +3314,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/1/A.jpg"
+        "artwork": "/images/artworks/albums/1/A.jpg"
       },
       {
         "id": "song-nazonorakugaki",
@@ -3333,7 +3333,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/1/A.jpg"
+        "artwork": "/images/artworks/albums/1/A.jpg"
       },
       {
         "id": "song-jiyuunokanata",
@@ -3356,7 +3356,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/1/A.jpg"
+        "artwork": "/images/artworks/albums/1/A.jpg"
       },
       {
         "id": "song-hitoriyogari",
@@ -3375,7 +3375,7 @@
             "number": "1"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/1/A.jpg"
+        "artwork": "/images/artworks/albums/1/A.jpg"
       },
       {
         "id": "song-kikkake",
@@ -3394,7 +3394,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/2/A.jpg"
+        "artwork": "/images/artworks/albums/2/A.jpg"
       },
       {
         "id": "song-taiyounikudokarete",
@@ -3413,7 +3413,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/2/A.jpg"
+        "artwork": "/images/artworks/albums/2/A.jpg"
       },
       {
         "id": "song-yokuboureincarnation",
@@ -3436,7 +3436,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/2/A.jpg"
+        "artwork": "/images/artworks/albums/2/A.jpg"
       },
       {
         "id": "song-kuukikann",
@@ -3455,7 +3455,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/2/A.jpg"
+        "artwork": "/images/artworks/albums/2/A.jpg"
       },
       {
         "id": "song-kougouseikibou",
@@ -3474,7 +3474,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/2/A.jpg"
+        "artwork": "/images/artworks/albums/2/A.jpg"
       },
       {
         "id": "song-threefoldchoice",
@@ -3493,7 +3493,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/2/B.jpg"
+        "artwork": "/images/artworks/albums/2/B.jpg"
       },
       {
         "id": "song-teitaionnokiss",
@@ -3512,7 +3512,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/2/B.jpg"
+        "artwork": "/images/artworks/albums/2/B.jpg"
       },
       {
         "id": "song-shitsurenshitarakaowoarae",
@@ -3531,7 +3531,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/2/C.jpg"
+        "artwork": "/images/artworks/albums/2/C.jpg"
       },
       {
         "id": "song-kakigoorinokataomoi",
@@ -3550,7 +3550,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/2/C.jpg"
+        "artwork": "/images/artworks/albums/2/C.jpg"
       },
       {
         "id": "song-kanjyourokugousen",
@@ -3569,7 +3569,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/2/D.jpg"
+        "artwork": "/images/artworks/albums/2/D.jpg"
       },
       {
         "id": "song-kuchiyakusoku",
@@ -3588,7 +3588,7 @@
             "number": "2"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/2/D.jpg"
+        "artwork": "/images/artworks/albums/2/D.jpg"
       },
       {
         "id": "song-skydiving",
@@ -3607,7 +3607,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/3/L.jpg"
+        "artwork": "/images/artworks/albums/3/L.jpg"
       },
       {
         "id": "song-kimigaaoidekureta",
@@ -3630,7 +3630,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/3/L.jpg"
+        "artwork": "/images/artworks/albums/3/L.jpg"
       },
       {
         "id": "song-omoidefirst",
@@ -3649,7 +3649,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/3/L.jpg"
+        "artwork": "/images/artworks/albums/3/L.jpg"
       },
       {
         "id": "song-setteiondo",
@@ -3668,7 +3668,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/3/L.jpg"
+        "artwork": "/images/artworks/albums/3/L.jpg"
       },
       {
         "id": "song-rewindanohi",
@@ -3687,7 +3687,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/3/A.jpg"
+        "artwork": "/images/artworks/albums/3/A.jpg"
       },
       {
         "id": "song-gomennesmoothie",
@@ -3706,7 +3706,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/3/A.jpg"
+        "artwork": "/images/artworks/albums/3/A.jpg"
       },
       {
         "id": "song-minikuiwatashi",
@@ -3725,7 +3725,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/3/A.jpg"
+        "artwork": "/images/artworks/albums/3/A.jpg"
       },
       {
         "id": "song-kataikaranoyounidakishimetai",
@@ -3744,7 +3744,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/3/B.jpg"
+        "artwork": "/images/artworks/albums/3/B.jpg"
       },
       {
         "id": "song-mangetsugakieta",
@@ -3763,7 +3763,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/3/B.jpg"
+        "artwork": "/images/artworks/albums/3/B.jpg"
       },
       {
         "id": "song-watabokori",
@@ -3782,7 +3782,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/3/B.jpg"
+        "artwork": "/images/artworks/albums/3/B.jpg"
       },
       {
         "id": "song-ryuuseidiscotic",
@@ -3801,7 +3801,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/3/T.jpg"
+        "artwork": "/images/artworks/albums/3/T.jpg"
       },
       {
         "id": "song-boukyakutobigaku",
@@ -3820,7 +3820,7 @@
             "number": "3"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/3/T.jpg"
+        "artwork": "/images/artworks/albums/3/T.jpg"
       },
       {
         "id": "song-jibunnokoto",
@@ -3839,7 +3839,7 @@
             "number": "U"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/U/L2.jpg"
+        "artwork": "/images/artworks/albums/U/L2.jpg"
       },
       {
         "id": "song-unuborebeach",
@@ -3858,7 +3858,7 @@
             "number": "U"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/U/L2.jpg"
+        "artwork": "/images/artworks/albums/U/L2.jpg"
       },
       {
         "id": "song-sonohito",
@@ -3877,7 +3877,7 @@
             "number": "U"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/U/L2.jpg"
+        "artwork": "/images/artworks/albums/U/L2.jpg"
       },
       {
         "id": "song-dareyorimosobaniitai",
@@ -3896,7 +3896,7 @@
             "number": "U"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/U/L2.jpg"
+        "artwork": "/images/artworks/albums/U/L2.jpg"
       },
       {
         "id": "song-arigachinarenai",
@@ -3915,7 +3915,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/4/L.jpg"
+        "artwork": "/images/artworks/albums/4/L.jpg"
       },
       {
         "id": "song-moshikimigainakereba",
@@ -3934,7 +3934,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/4/L.jpg"
+        "artwork": "/images/artworks/albums/4/L.jpg"
       },
       {
         "id": "song-kissnoshuriken",
@@ -3953,7 +3953,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/4/L.jpg"
+        "artwork": "/images/artworks/albums/4/L.jpg"
       },
       {
         "id": "song-hoozuewotsuitehanemurenai",
@@ -3972,7 +3972,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/4/A.jpg"
+        "artwork": "/images/artworks/albums/4/A.jpg"
       },
       {
         "id": "song-bocchitou",
@@ -3991,7 +3991,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/4/A.jpg"
+        "artwork": "/images/artworks/albums/4/A.jpg"
       },
       {
         "id": "song-sayuringoboshuuchuu",
@@ -4010,7 +4010,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/4/B.jpg"
+        "artwork": "/images/artworks/albums/4/B.jpg"
       },
       {
         "id": "song-gorugonzora",
@@ -4029,7 +4029,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/4/B.jpg"
+        "artwork": "/images/artworks/albums/4/B.jpg"
       },
       {
         "id": "song-mousuguzambidensetsu",
@@ -4048,7 +4048,7 @@
             "number": "4"
           }
         ],
-        "artwork": "../assets/images/artworks/albums/4/T.jpg"
+        "artwork": "/images/artworks/albums/4/T.jpg"
       },
       {
         "id": "song-sekainorinjinyo",
@@ -4062,7 +4062,7 @@
           "number": ""
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/digital/1/T.jpg"
+        "artwork": "/images/artworks/digital/1/T.jpg"
       },
       {
         "id": "song-route246",
@@ -4076,7 +4076,7 @@
           "number": ""
         },
         "albums": [],
-        "artwork": "../assets/images/artworks/digital/2/T.jpg"
+        "artwork": "/images/artworks/digital/2/T.jpg"
       }
     ],
     "members": [
@@ -4094,7 +4094,7 @@
           "firstNameEn": "manatsu"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/singles/26/akimotomanatsu.jpg"
+        "profileImage": "/images/members/singles/26/akimotomanatsu.jpg"
       },
       {
         "id": "member-ikutaerika",
@@ -4110,7 +4110,7 @@
           "firstNameEn": "erika"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/singles/26/ikutaerika.jpg"
+        "profileImage": "/images/members/singles/26/ikutaerika.jpg"
       },
       {
         "id": "member-ikomarina",
@@ -4126,7 +4126,7 @@
           "firstNameEn": "rina"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/others/ikomarina_2020-08-10.jpg"
+        "profileImage": "/images/members/others/ikomarina_2020-08-10.jpg"
       },
       {
         "id": "member-inouesayuri",
@@ -4142,7 +4142,7 @@
           "firstNameEn": "sayuri"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/others/inouesayuri_2020-06-11.jpg"
+        "profileImage": "/images/members/others/inouesayuri_2020-06-11.jpg"
       },
       {
         "id": "member-etoumisa",
@@ -4158,7 +4158,7 @@
           "firstNameEn": "misa"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/others/etoumisa_2020-04-29.jpg"
+        "profileImage": "/images/members/others/etoumisa_2020-04-29.jpg"
       },
       {
         "id": "member-kawagohina",
@@ -4174,7 +4174,7 @@
           "firstNameEn": "hina"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/others/kawagohina_2020-04-29.jpg"
+        "profileImage": "/images/members/others/kawagohina_2020-04-29.jpg"
       },
       {
         "id": "member-saitouasuka",
@@ -4190,7 +4190,7 @@
           "firstNameEn": "asuka"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/singles/26/saitouasuka.jpg"
+        "profileImage": "/images/members/singles/26/saitouasuka.jpg"
       },
       {
         "id": "member-saitouyuuri",
@@ -4206,7 +4206,7 @@
           "firstNameEn": "yuri"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/others/saitouyuuri_2020-09-26.jpg"
+        "profileImage": "/images/members/others/saitouyuuri_2020-09-26.jpg"
       },
       {
         "id": "member-sakuraireika",
@@ -4222,7 +4222,7 @@
           "firstNameEn": "reika"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/others/sakuraireika_2020-04-29.jpg"
+        "profileImage": "/images/members/others/sakuraireika_2020-04-29.jpg"
       },
       {
         "id": "member-shiraishimai",
@@ -4238,7 +4238,7 @@
           "firstNameEn": "mai"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/others/shiraishimai_2020-11-11.jpg"
+        "profileImage": "/images/members/others/shiraishimai_2020-11-11.jpg"
       },
       {
         "id": "member-takayamakazumi",
@@ -4254,7 +4254,7 @@
           "firstNameEn": "kazumi"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/singles/26/takayamakazumi.jpg"
+        "profileImage": "/images/members/singles/26/takayamakazumi.jpg"
       },
       {
         "id": "member-nakadakana",
@@ -4270,7 +4270,7 @@
           "firstNameEn": "kana"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/others/nakadakana_2020-11-11.jpg"
+        "profileImage": "/images/members/others/nakadakana_2020-11-11.jpg"
       },
       {
         "id": "member-nishinonanase",
@@ -4286,7 +4286,7 @@
           "firstNameEn": "nanase"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/others/nishinonanase_2020-06-11.jpg"
+        "profileImage": "/images/members/others/nishinonanase_2020-06-11.jpg"
       },
       {
         "id": "member-noujouami",
@@ -4302,7 +4302,7 @@
           "firstNameEn": "ami"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/others/noujouami_2020-09-26.jpg"
+        "profileImage": "/images/members/others/noujouami_2020-09-26.jpg"
       },
       {
         "id": "member-higuchihina",
@@ -4318,7 +4318,7 @@
           "firstNameEn": "hina"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/singles/26/higuchihina.jpg"
+        "profileImage": "/images/members/singles/26/higuchihina.jpg"
       },
       {
         "id": "member-hoshinominami",
@@ -4334,7 +4334,7 @@
           "firstNameEn": "minami"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/singles/26/hoshinominami.jpg"
+        "profileImage": "/images/members/singles/26/hoshinominami.jpg"
       },
       {
         "id": "member-matsumurasayuri",
@@ -4350,7 +4350,7 @@
           "firstNameEn": "sayuri"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/singles/26/matsumurasayuri.jpg"
+        "profileImage": "/images/members/singles/26/matsumurasayuri.jpg"
       },
       {
         "id": "member-wakatsukiyumi",
@@ -4366,7 +4366,7 @@
           "firstNameEn": "yumi"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/others/wakatsukiyumi_2020-06-11.jpg"
+        "profileImage": "/images/members/others/wakatsukiyumi_2020-06-11.jpg"
       },
       {
         "id": "member-wadamaaya",
@@ -4382,7 +4382,7 @@
           "firstNameEn": "maya"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/singles/26/wadamaaya.jpg"
+        "profileImage": "/images/members/singles/26/wadamaaya.jpg"
       },
       {
         "id": "member-saitouchiharu",
@@ -4398,7 +4398,7 @@
           "firstNameEn": "chiharu"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/others/saitouchiharu_2020-06-11.jpg"
+        "profileImage": "/images/members/others/saitouchiharu_2020-06-11.jpg"
       },
       {
         "id": "member-kawamuramahiro",
@@ -4414,7 +4414,7 @@
           "firstNameEn": "mahiro"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/others/kawamuramahiro_2020-04-29.jpg"
+        "profileImage": "/images/members/others/kawamuramahiro_2020-04-29.jpg"
       },
       {
         "id": "member-nakamotohimeka",
@@ -4430,7 +4430,7 @@
           "firstNameEn": "himeka"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/others/nakamotohimeka_2020-04-29.jpg"
+        "profileImage": "/images/members/others/nakamotohimeka_2020-04-29.jpg"
       },
       {
         "id": "member-itoumarika",
@@ -4446,7 +4446,7 @@
           "firstNameEn": "marika"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/others/itoumarika_2020-09-26.jpg"
+        "profileImage": "/images/members/others/itoumarika_2020-09-26.jpg"
       },
       {
         "id": "member-hashimotonanami",
@@ -4462,7 +4462,7 @@
           "firstNameEn": "nanami"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/singles/15/hashimotonanami.jpg"
+        "profileImage": "/images/members/singles/15/hashimotonanami.jpg"
       },
       {
         "id": "member-fukagawamai",
@@ -4478,7 +4478,7 @@
           "firstNameEn": "mai"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/others/fukagawamai_2020-04-29.jpg"
+        "profileImage": "/images/members/others/fukagawamai_2020-04-29.jpg"
       },
       {
         "id": "member-nagashimaseira",
@@ -4494,7 +4494,7 @@
           "firstNameEn": "seira"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/others/nagashimaseira_2020-04-29.jpg"
+        "profileImage": "/images/members/others/nagashimaseira_2020-04-29.jpg"
       },
       {
         "id": "member-matsuirena",
@@ -4510,7 +4510,7 @@
           "firstNameEn": "rena"
         },
         "join": "exchange",
-        "profileImage": "../assets/images/members/others/matsuirena_2020-04-29.jpg"
+        "profileImage": "/images/members/others/matsuirena_2020-04-29.jpg"
       },
       {
         "id": "member-hatanakaseira",
@@ -4526,7 +4526,7 @@
           "firstNameEn": "seira"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/others/hatanakaseira_2020-04-29.jpg"
+        "profileImage": "/images/members/others/hatanakaseira_2020-04-29.jpg"
       },
       {
         "id": "member-yamatorina",
@@ -4542,7 +4542,7 @@
           "firstNameEn": "rina"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/singles/10/yamatorina.jpg"
+        "profileImage": "/images/members/singles/10/yamatorina.jpg"
       },
       {
         "id": "member-itounene",
@@ -4558,7 +4558,7 @@
           "firstNameEn": "nene"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/others/itounene_2020-04-29.jpg"
+        "profileImage": "/images/members/others/itounene_2020-04-29.jpg"
       },
       {
         "id": "member-ichikirena",
@@ -4574,7 +4574,7 @@
           "firstNameEn": "rena"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/others/ichikirena_2020-04-29.jpg"
+        "profileImage": "/images/members/others/ichikirena_2020-04-29.jpg"
       },
       {
         "id": "member-nishikawananami",
@@ -4590,7 +4590,7 @@
           "firstNameEn": "nanami"
         },
         "join": "second",
-        "profileImage": "../assets/images/members/singles/7/nishikawananami.jpg"
+        "profileImage": "/images/members/singles/7/nishikawananami.jpg"
       },
       {
         "id": "member-miyazawaseira",
@@ -4606,7 +4606,7 @@
           "firstNameEn": "seira"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/others/miyazawaseira_2020-04-29.jpg"
+        "profileImage": "/images/members/others/miyazawaseira_2020-04-29.jpg"
       },
       {
         "id": "member-kashiwayukina",
@@ -4622,7 +4622,7 @@
           "firstNameEn": "yukina"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/others/kashiwayukina_2020-04-29.jpg"
+        "profileImage": "/images/members/others/kashiwayukina_2020-04-29.jpg"
       },
       {
         "id": "member-andoumikumo",
@@ -4638,7 +4638,7 @@
           "firstNameEn": "mikumo"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/singles/5/andoumikumo.jpg"
+        "profileImage": "/images/members/singles/5/andoumikumo.jpg"
       },
       {
         "id": "member-iwaseyumiko",
@@ -4654,7 +4654,7 @@
           "firstNameEn": "yumiko"
         },
         "join": "first",
-        "profileImage": "../assets/images/members/others/iwaseyumiko_2020-04-29.jpg"
+        "profileImage": "/images/members/others/iwaseyumiko_2020-04-29.jpg"
       },
       {
         "id": "member-itoukarin",
@@ -4670,7 +4670,7 @@
           "firstNameEn": "karin"
         },
         "join": "second",
-        "profileImage": "../assets/images/members/others/itoukarin_2020-04-29.jpg"
+        "profileImage": "/images/members/others/itoukarin_2020-04-29.jpg"
       },
       {
         "id": "member-itoujunna",
@@ -4686,7 +4686,7 @@
           "firstNameEn": "junna"
         },
         "join": "second",
-        "profileImage": "../assets/images/members/singles/26/itoujunna.jpg"
+        "profileImage": "/images/members/singles/26/itoujunna.jpg"
       },
       {
         "id": "member-kitanohinako",
@@ -4702,7 +4702,7 @@
           "firstNameEn": "hinako"
         },
         "join": "second",
-        "profileImage": "../assets/images/members/singles/26/kitanohinako.jpg"
+        "profileImage": "/images/members/singles/26/kitanohinako.jpg"
       },
       {
         "id": "member-sasakikotoko",
@@ -4718,7 +4718,7 @@
           "firstNameEn": "kotoko"
         },
         "join": "second",
-        "profileImage": "../assets/images/members/others/sasakikotoko_2020-10-14.jpg"
+        "profileImage": "/images/members/others/sasakikotoko_2020-10-14.jpg"
       },
       {
         "id": "member-shinuchimai",
@@ -4734,7 +4734,7 @@
           "firstNameEn": "mai"
         },
         "join": "second",
-        "profileImage": "../assets/images/members/singles/26/shinuchimai.jpg"
+        "profileImage": "/images/members/singles/26/shinuchimai.jpg"
       },
       {
         "id": "member-suzukiayane",
@@ -4750,7 +4750,7 @@
           "firstNameEn": "ayane"
         },
         "join": "second",
-        "profileImage": "../assets/images/members/singles/26/suzukiayane.jpg"
+        "profileImage": "/images/members/singles/26/suzukiayane.jpg"
       },
       {
         "id": "member-teradaranze",
@@ -4766,7 +4766,7 @@
           "firstNameEn": "ranze"
         },
         "join": "second",
-        "profileImage": "../assets/images/members/singles/26/teradaranze.jpg"
+        "profileImage": "/images/members/singles/26/teradaranze.jpg"
       },
       {
         "id": "member-horimiona",
@@ -4782,7 +4782,7 @@
           "firstNameEn": "miona"
         },
         "join": "second",
-        "profileImage": "../assets/images/members/singles/26/horimiona.jpg"
+        "profileImage": "/images/members/singles/26/horimiona.jpg"
       },
       {
         "id": "member-yamazakirena",
@@ -4798,7 +4798,7 @@
           "firstNameEn": "rena"
         },
         "join": "second",
-        "profileImage": "../assets/images/members/singles/26/yamazakirena.jpg"
+        "profileImage": "/images/members/singles/26/yamazakirena.jpg"
       },
       {
         "id": "member-watanabemiria",
@@ -4814,7 +4814,7 @@
           "firstNameEn": "miria"
         },
         "join": "second",
-        "profileImage": "../assets/images/members/singles/26/watanabemiria.jpg"
+        "profileImage": "/images/members/singles/26/watanabemiria.jpg"
       },
       {
         "id": "member-sagaraiori",
@@ -4830,7 +4830,7 @@
           "firstNameEn": "iori"
         },
         "join": "second",
-        "profileImage": "../assets/images/members/others/sagaraiori_2020-09-26.jpg"
+        "profileImage": "/images/members/others/sagaraiori_2020-09-26.jpg"
       },
       {
         "id": "member-yonetokukyouka",
@@ -4846,7 +4846,7 @@
           "firstNameEn": "kyoka"
         },
         "join": "second",
-        "profileImage": "../assets/images/members/singles/9/yonetokukyouka.jpg"
+        "profileImage": "/images/members/singles/9/yonetokukyouka.jpg"
       },
       {
         "id": "member-yadarisako",
@@ -4862,7 +4862,7 @@
           "firstNameEn": "risako"
         },
         "join": "second",
-        "profileImage": "../assets/images/members/singles/9/yadarisako.jpg"
+        "profileImage": "/images/members/singles/9/yadarisako.jpg"
       },
       {
         "id": "member-itouriria",
@@ -4878,7 +4878,7 @@
           "firstNameEn": "riria"
         },
         "join": "third",
-        "profileImage": "../assets/images/members/singles/26/itouriria.jpg"
+        "profileImage": "/images/members/singles/26/itouriria.jpg"
       },
       {
         "id": "member-iwamotorenka",
@@ -4894,7 +4894,7 @@
           "firstNameEn": "renka"
         },
         "join": "third",
-        "profileImage": "../assets/images/members/singles/26/iwamotorenka.jpg"
+        "profileImage": "/images/members/singles/26/iwamotorenka.jpg"
       },
       {
         "id": "member-umezawaminami",
@@ -4910,7 +4910,7 @@
           "firstNameEn": "minami"
         },
         "join": "third",
-        "profileImage": "../assets/images/members/singles/26/umezawaminami.jpg"
+        "profileImage": "/images/members/singles/26/umezawaminami.jpg"
       },
       {
         "id": "member-oozonomomoko",
@@ -4926,7 +4926,7 @@
           "firstNameEn": "momoko"
         },
         "join": "third",
-        "profileImage": "../assets/images/members/singles/26/oozonomomoko.jpg"
+        "profileImage": "/images/members/singles/26/oozonomomoko.jpg"
       },
       {
         "id": "member-kuboshiori",
@@ -4942,7 +4942,7 @@
           "firstNameEn": "shiori"
         },
         "join": "third",
-        "profileImage": "../assets/images/members/singles/26/kuboshiori.jpg"
+        "profileImage": "/images/members/singles/26/kuboshiori.jpg"
       },
       {
         "id": "member-sakaguchitamami",
@@ -4958,7 +4958,7 @@
           "firstNameEn": "tamami"
         },
         "join": "third",
-        "profileImage": "../assets/images/members/singles/26/sakaguchitamami.jpg"
+        "profileImage": "/images/members/singles/26/sakaguchitamami.jpg"
       },
       {
         "id": "member-satoukaede",
@@ -4974,7 +4974,7 @@
           "firstNameEn": "kaede"
         },
         "join": "third",
-        "profileImage": "../assets/images/members/singles/26/satoukaede.jpg"
+        "profileImage": "/images/members/singles/26/satoukaede.jpg"
       },
       {
         "id": "member-nakamurareno",
@@ -4990,7 +4990,7 @@
           "firstNameEn": "reno"
         },
         "join": "third",
-        "profileImage": "../assets/images/members/singles/26/nakamurareno.jpg"
+        "profileImage": "/images/members/singles/26/nakamurareno.jpg"
       },
       {
         "id": "member-mukaihazuki",
@@ -5006,7 +5006,7 @@
           "firstNameEn": "hazuki"
         },
         "join": "third",
-        "profileImage": "../assets/images/members/singles/26/mukaihazuki.jpg"
+        "profileImage": "/images/members/singles/26/mukaihazuki.jpg"
       },
       {
         "id": "member-yamashitamizuki",
@@ -5022,7 +5022,7 @@
           "firstNameEn": "mizuki"
         },
         "join": "third",
-        "profileImage": "../assets/images/members/singles/26/yamashitamizuki.jpg"
+        "profileImage": "/images/members/singles/26/yamashitamizuki.jpg"
       },
       {
         "id": "member-yoshidaayanochristie",
@@ -5038,7 +5038,7 @@
           "firstNameEn": "ayanochristie"
         },
         "join": "third",
-        "profileImage": "../assets/images/members/singles/26/yoshidaayanochristie.jpg"
+        "profileImage": "/images/members/singles/26/yoshidaayanochristie.jpg"
       },
       {
         "id": "member-yodayuuki",
@@ -5054,7 +5054,7 @@
           "firstNameEn": "yuki"
         },
         "join": "third",
-        "profileImage": "../assets/images/members/singles/26/yodayuuki.jpg"
+        "profileImage": "/images/members/singles/26/yodayuuki.jpg"
       },
       {
         "id": "member-endousakura",
@@ -5070,7 +5070,7 @@
           "firstNameEn": "sakura"
         },
         "join": "fourth",
-        "profileImage": "../assets/images/members/singles/26/endousakura.jpg"
+        "profileImage": "/images/members/singles/26/endousakura.jpg"
       },
       {
         "id": "member-kakiharuka",
@@ -5086,7 +5086,7 @@
           "firstNameEn": "haruka"
         },
         "join": "fourth",
-        "profileImage": "../assets/images/members/singles/26/kakiharuka.jpg"
+        "profileImage": "/images/members/singles/26/kakiharuka.jpg"
       },
       {
         "id": "member-kakehashisayaka",
@@ -5102,7 +5102,7 @@
           "firstNameEn": "sayaka"
         },
         "join": "fourth",
-        "profileImage": "../assets/images/members/singles/26/kakehashisayaka.jpg"
+        "profileImage": "/images/members/singles/26/kakehashisayaka.jpg"
       },
       {
         "id": "member-kanagawasaya",
@@ -5118,7 +5118,7 @@
           "firstNameEn": "saya"
         },
         "join": "fourth",
-        "profileImage": "../assets/images/members/singles/26/kanagawasaya.jpg"
+        "profileImage": "/images/members/singles/26/kanagawasaya.jpg"
       },
       {
         "id": "member-kitagawayuri",
@@ -5134,7 +5134,7 @@
           "firstNameEn": "yuri"
         },
         "join": "fourth",
-        "profileImage": "../assets/images/members/singles/26/kitagawayuri.jpg"
+        "profileImage": "/images/members/singles/26/kitagawayuri.jpg"
       },
       {
         "id": "member-shibatayuna",
@@ -5150,7 +5150,7 @@
           "firstNameEn": "yuna"
         },
         "join": "fourth",
-        "profileImage": "../assets/images/members/singles/26/shibatayuna.jpg"
+        "profileImage": "/images/members/singles/26/shibatayuna.jpg"
       },
       {
         "id": "member-seimiyarei",
@@ -5166,7 +5166,7 @@
           "firstNameEn": "rei"
         },
         "join": "fourth",
-        "profileImage": "../assets/images/members/singles/26/seimiyarei.jpg"
+        "profileImage": "/images/members/singles/26/seimiyarei.jpg"
       },
       {
         "id": "member-tamuramayu",
@@ -5182,7 +5182,7 @@
           "firstNameEn": "mayu"
         },
         "join": "fourth",
-        "profileImage": "../assets/images/members/singles/26/tamuramayu.jpg"
+        "profileImage": "/images/members/singles/26/tamuramayu.jpg"
       },
       {
         "id": "member-tsutsuiayame",
@@ -5198,7 +5198,7 @@
           "firstNameEn": "ayame"
         },
         "join": "fourth",
-        "profileImage": "../assets/images/members/singles/26/tsutsuiayame.jpg"
+        "profileImage": "/images/members/singles/26/tsutsuiayame.jpg"
       },
       {
         "id": "member-hayakawaseira",
@@ -5214,7 +5214,7 @@
           "firstNameEn": "seira"
         },
         "join": "fourth",
-        "profileImage": "../assets/images/members/singles/26/hayakawaseira.jpg"
+        "profileImage": "/images/members/singles/26/hayakawaseira.jpg"
       },
       {
         "id": "member-yakubomio",
@@ -5230,7 +5230,7 @@
           "firstNameEn": "mio"
         },
         "join": "fourth",
-        "profileImage": "../assets/images/members/singles/26/yakubomio.jpg"
+        "profileImage": "/images/members/singles/26/yakubomio.jpg"
       },
       {
         "id": "member-kuromiharuka",
@@ -5246,7 +5246,7 @@
           "firstNameEn": "haruka"
         },
         "join": "fourth",
-        "profileImage": "../assets/images/members/singles/26/kuromiharuka.jpg"
+        "profileImage": "/images/members/singles/26/kuromiharuka.jpg"
       },
       {
         "id": "member-satourika",
@@ -5262,7 +5262,7 @@
           "firstNameEn": "rika"
         },
         "join": "fourth",
-        "profileImage": "../assets/images/members/singles/26/satourika.jpg"
+        "profileImage": "/images/members/singles/26/satourika.jpg"
       },
       {
         "id": "member-hayashiruna",
@@ -5278,7 +5278,7 @@
           "firstNameEn": "runa"
         },
         "join": "fourth",
-        "profileImage": "../assets/images/members/singles/26/hayashiruna.jpg"
+        "profileImage": "/images/members/singles/26/hayashiruna.jpg"
       },
       {
         "id": "member-matsuomiyu",
@@ -5294,7 +5294,7 @@
           "firstNameEn": "miyu"
         },
         "join": "fourth",
-        "profileImage": "../assets/images/members/singles/26/matsuomiyu.jpg"
+        "profileImage": "/images/members/singles/26/matsuomiyu.jpg"
       },
       {
         "id": "member-yumikinao",
@@ -5310,7 +5310,7 @@
           "firstNameEn": "nao"
         },
         "join": "fourth",
-        "profileImage": "../assets/images/members/singles/26/yumikinao.jpg"
+        "profileImage": "/images/members/singles/26/yumikinao.jpg"
       }
     ]
   }
