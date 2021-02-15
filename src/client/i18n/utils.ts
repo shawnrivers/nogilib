@@ -18,7 +18,7 @@ const COUNTER_TRANSLATIONS: Record<CounterUnit, Record<Language, string>> = {
 export function getLocalizedNth(params: {
   num: string | number;
   unit: CounterUnit;
-  locale: string | undefined;
+  locale?: string;
 }): string | null {
   const { num, unit, locale } = params;
 
@@ -42,7 +42,7 @@ export function getLocalizedNth(params: {
 
 export function getLocalizedWords(params: {
   words: readonly string[];
-  locale: string | undefined;
+  locale?: string;
 }): string {
   const { words, locale } = params;
 
@@ -55,7 +55,7 @@ export function getLocalizedWords(params: {
 
 export function getLocalizedWordsSplitWithCommas(params: {
   words: readonly string[];
-  locale: string | undefined;
+  locale?: string;
 }): string {
   const { words, locale } = params;
 
@@ -66,8 +66,6 @@ export function getLocalizedWordsSplitWithCommas(params: {
   }
 }
 
-export function isDefinedLanguage(
-  locale: string | undefined
-): locale is Language {
+export function isDefinedLanguage(locale?: string): locale is Language {
   return locale === 'ja' || locale === 'en' || locale === 'zh';
 }
