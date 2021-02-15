@@ -17,7 +17,7 @@ import { useIntl } from 'client/i18n/hooks/useIntl';
 import { PageHelmet } from 'client/layouts/PageHelmet';
 import { useAppTheme, commonStyles } from 'client/styles/tokens';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
-import { getSongLink, getMemberLink } from 'client/utils/urls';
+import { getSongUrl, getMemberUrl } from 'client/utils/urls';
 import { toCdNumber } from 'utils/strings';
 
 type PathParams = { id: string };
@@ -135,7 +135,7 @@ const AlbumPage: React.FC<AlbumPageProps> = props => {
                   `}
                 >
                   <HorizontalCard
-                    href={getSongLink(track.key)}
+                    href={getSongUrl(track.key)}
                     image={track.artwork}
                     title={{ text: track.title, lang: 'ja' }}
                     tags={[
@@ -162,7 +162,7 @@ const AlbumPage: React.FC<AlbumPageProps> = props => {
                 {props.centers.map(member => (
                   <li key={member.name}>
                     <MemberCard
-                      href={getMemberLink(member.name)}
+                      href={getMemberUrl(member.name)}
                       profileImage={member.albumProfileImage}
                       name={formatMemberName(member.nameNotations).name}
                       lang={formatMemberName(member.nameNotations).lang}

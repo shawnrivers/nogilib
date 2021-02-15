@@ -73,7 +73,7 @@ export const Card: React.FC<CardProps> = props => {
     ...linkProps
   } = props;
 
-  const isClickable = 'href' in props;
+  const isClickable = 'href' in props && props.href !== undefined;
 
   return isClickable ? (
     <BaseLink {...linkProps}>
