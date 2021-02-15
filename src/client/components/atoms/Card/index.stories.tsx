@@ -1,5 +1,3 @@
-/**@jsx jsx */
-import { jsx } from '@emotion/core';
 import { Meta, Story } from '@storybook/react/types-6-0';
 import { Card, CardProps } from '.';
 import { ThemeDecorator } from 'storybook/ThemeDecorator';
@@ -22,5 +20,5 @@ const Template: Story<CardProps> = props => {
 export const Default = Template.bind({});
 
 Default.args = {
-  to: '/',
+  href: '/',
 };

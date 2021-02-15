@@ -32,11 +32,11 @@ type SidebarItemRef = TextLinkRef;
 
 const SidebarItem = React.forwardRef<SidebarItemRef, SidebarItemProps>(
   (props, ref) => {
-    const { to, children, onClick, ...restProps } = props;
+    const { href, children, onClick, ...restProps } = props;
 
     return (
       <TextLink
-        to={to}
+        href={href}
         typographyVariant="h6"
         textColor={{ on: 'onSecondary', variant: 'standard' }}
         backgroundType="primary"
@@ -191,7 +191,7 @@ export const Sidebar: React.FC<SidebarProps> = props => {
         >
           <ul>
             <NavigationItem
-              to={getDiscographyUrl()}
+              href={getDiscographyUrl()}
               tabIndex={open ? 0 : -1}
               onClick={onClose}
               ref={firstNavigationItemLink}
@@ -199,14 +199,14 @@ export const Sidebar: React.FC<SidebarProps> = props => {
               {getTranslation('discography')}
             </NavigationItem>
             <NavigationItem
-              to={getMembersUrl()}
+              href={getMembersUrl()}
               tabIndex={open ? 0 : -1}
               onClick={onClose}
             >
               {getTranslation('members')}
             </NavigationItem>
             <NavigationItem
-              to={getSearchUrl()}
+              href={getSearchUrl()}
               tabIndex={open ? 0 : -1}
               onClick={onClose}
             >
@@ -228,7 +228,7 @@ export const Sidebar: React.FC<SidebarProps> = props => {
           `}
         >
           <SidebarItem
-            to="https://github.com/shawnrivers/nogilib"
+            href="https://github.com/shawnrivers/nogilib"
             tabIndex={open ? 0 : -1}
             onClick={onClose}
           >
