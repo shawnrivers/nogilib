@@ -1,49 +1,60 @@
-/**@jsx jsx */
-import { css, jsx } from '@emotion/core';
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/core';
 import * as React from 'react';
+import Image from 'next/image';
 import {
   Typography,
   TypographyProps,
 } from 'client/components/atoms/Typography';
 import { toCdNumber } from 'utils/strings';
 import { Card, CardProps } from 'client/components/atoms/Card';
-import {
-  GatsbyImage,
-  GatsbyImageProps,
-} from 'client/components/atoms/images/GatsbyImage';
+import { commonStyles } from 'client/styles/tokens';
 
 export const ArtworkCard: React.FC<
-  CardProps & {
+  Omit<CardProps, 'children'> & {
     title: string;
-    image: Omit<GatsbyImageProps, 'alt' | 'role'>;
     titleElement?: TypographyProps['element'];
     number: string;
     type: string;
+    image: string;
+    width: number;
   }
 > = props => {
   const {
     image,
     title,
     titleElement = 'div',
+    borderRadius = 'm',
     number,
     type,
+    width,
     ...cardProps
   } = props;
 
   const caption = `${toCdNumber(number)} ${type}`;
 
   return (
-    <Card {...cardProps} aria-label={title}>
+    <Card
+      css={css`
+        width: ${175}px;
+      `}
+      aria-label={title}
+      borderRadius={borderRadius}
+      {...cardProps}
+    >
       <article>
-        <GatsbyImage
-          {...image}
+        <Image
+          src={image}
+          width={width}
+          height={width}
           alt=""
           role="presentation"
-          borderRadius="s"
+          objectFit="cover"
+          objectPosition="top"
           css={css`
-            overflow: auto;
+            border-radius: ${commonStyles.borderRadius[borderRadius]};
           `}
-        />
+        ></Image>
         <Typography
           variant="h7"
           element="div"

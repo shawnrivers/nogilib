@@ -13,12 +13,12 @@ export type HorizontalCardProps = Omit<CardProps, 'children' | 'title'> & {
   image: string;
   title: {
     text: string;
-    lang: string;
+    lang?: string;
   };
   titleElement?: TypographyProps['element'];
   tags: {
     text: string;
-    lang: string;
+    lang?: string;
   }[];
   capitalizeTitle?: boolean;
 };
