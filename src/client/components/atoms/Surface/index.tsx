@@ -1,5 +1,5 @@
-/**@jsx jsx */
-import { jsx, css } from '@emotion/core';
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/core';
 import * as React from 'react';
 import {
   componentElevationKey,
@@ -12,12 +12,14 @@ import {
 } from 'client/styles/tokens/colors';
 import { useAppTheme } from 'client/styles/tokens';
 
-export type SurfaceProps = React.HTMLAttributes<HTMLDivElement> & {
+export type SurfaceProps = {
   foregroundColor?: keyof ThemeColorVariants;
   backgroundColor?: keyof ThemeColorVariants;
   colorType?: keyof ThemeColorsBackground;
   elevation?: ElevationKey;
   isClickable?: boolean;
+  className?: string;
+  children: React.ReactNode;
 };
 
 export const Surface: React.FC<SurfaceProps> = props => {
@@ -28,8 +30,8 @@ export const Surface: React.FC<SurfaceProps> = props => {
     colorType = 'surface',
     elevation = componentElevationKey.background,
     isClickable = false,
+    className,
     children,
-    ...divProps
   } = props;
 
   const backgroundColor = theme.colors.theme[colorType][backgroundColorVariant];
@@ -91,7 +93,7 @@ export const Surface: React.FC<SurfaceProps> = props => {
           ? [normalStyles.container, hoveredStyles.container]
           : normalStyles.container
       }
-      {...divProps}
+      className={className}
     >
       <div
         css={
