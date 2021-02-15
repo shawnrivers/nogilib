@@ -1,12 +1,13 @@
-import { useLocation } from '@reach/router';
+import { useRouter } from 'next/router';
 import { FILTER_PARAM_KEY } from 'client/utils/urls';
 
 export const useFilter = (): string => {
-  const location = useLocation();
+  const location = useRouter();
+  const filter = location.query[FILTER_PARAM_KEY];
 
-  try {
-    return new URL(location.href).searchParams.get(FILTER_PARAM_KEY) ?? '';
-  } catch (error) {
-    return '';
+  if (typeof filter === 'string') {
+    return filter;
   }
+
+  return '';
 };

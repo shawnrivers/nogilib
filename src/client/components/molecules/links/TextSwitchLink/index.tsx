@@ -7,7 +7,7 @@ export type TextSwitchLinkProps = Omit<
   TypographyProps,
   'element' | 'textColor'
 > & {
-  to: string;
+  href: string;
   isSwitchedOn: boolean;
   textOn?: keyof ThemeColorsForeground;
 };
@@ -16,7 +16,7 @@ export const TextSwitchLink: React.FC<TextSwitchLinkProps> = props => {
   const {
     variant,
     textOn = 'onBackground',
-    to,
+    href,
     isSwitchedOn,
     children,
     onClick,
@@ -25,7 +25,7 @@ export const TextSwitchLink: React.FC<TextSwitchLinkProps> = props => {
 
   return !isSwitchedOn ? (
     <TextLink
-      to={to}
+      href={href}
       onClick={onClick}
       showUnderline={false}
       textColor={{ on: textOn, variant: 'variant1' }}
@@ -36,7 +36,7 @@ export const TextSwitchLink: React.FC<TextSwitchLinkProps> = props => {
     </TextLink>
   ) : (
     <TextLink
-      to={to}
+      href={href}
       textColor={{ on: textOn, variant: 'standard' }}
       typographyVariant={variant}
       disabled

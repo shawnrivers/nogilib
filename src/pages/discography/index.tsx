@@ -1,52 +1,29 @@
+/** @jsxImportSource @emotion/react */
 import * as React from 'react';
-import { graphql } from 'gatsby';
-import { IGatsbyImageData } from 'gatsby-plugin-image';
-import { sortByDate } from 'utils/sorting';
-import { DiscographyPage } from 'client/templates/Discography';
+import { GetStaticProps } from 'next';
+import { css } from '@emotion/react';
+import { useRouter } from 'next/router';
 import { useFilter } from 'client/hooks/useFilter';
-import { DiscographyUrlFilter } from 'client/utils/urls';
+import { getAlbumUrl, getDiscographyUrl } from 'client/utils/urls';
+import { getDiscographyData } from 'api/discography';
 import { DiscographyPageData } from 'server/pages/discography';
-
-export const query = graphql`
-  {
-    allDiscographyJson {
-      nodes {
-        title
-        key
-        type
-        number
-        artwork {
-          childImageSharp {
-            gatsbyImageData(width: 300, layout: CONSTRAINED, aspectRatio: 1)
-          }
-        }
-        release
-      }
-    }
-  }
-`;
-
-type DiscographyPageDataNode = {
-  title: DiscographyPageData[0]['title'];
-  key: DiscographyPageData[0]['key'];
-  type: DiscographyPageData[0]['type'];
-  number: DiscographyPageData[0]['number'];
-  artwork: {
-    childImageSharp: {
-      gatsbyImageData: IGatsbyImageData;
-    };
-  };
-  release: DiscographyPageData[0]['release'];
-};
+import { sortByDate } from 'utils/sorting';
+import { useTranslations } from 'client/i18n/hooks/useTranslations';
+import { ArtworkCard } from 'client/components/molecules/cards/ArtworkCard';
+import { TextDivider } from 'client/components/molecules/TextDivider';
+import { TextSwitchLinkGroup } from 'client/components/molecules/TextSwitchLinkGroup';
+import { PageContent } from 'client/components/templates/Page';
+import { PageHelmet } from 'client/layouts/PageHelmet';
+import { commonStyles } from 'client/styles/tokens';
 
 type CdGroupByYear = {
   year: number;
-  cds: (DiscographyPageDataNode & {
+  cds: (DiscographyPageData[0] & {
     year: number;
   })[];
 };
 
-function groupCdsByYear(cds: DiscographyPageDataNode[]): CdGroupByYear[] {
+function groupCdsByYear(cds: DiscographyPageData): CdGroupByYear[] {
   const cdsWithYear = cds
     .map(cd => ({
       ...cd,
@@ -80,64 +57,54 @@ function groupCdsByYear(cds: DiscographyPageDataNode[]): CdGroupByYear[] {
 }
 
 export type DiscographyPageProps = {
-  currentFilter: DiscographyUrlFilter;
-  cdGroupsByYear: CdGroupByYear[];
+  allCdGroupsByYear: CdGroupByYear[];
+  singleGroupsByYear: CdGroupByYear[];
+  albumGroupsByYear: CdGroupByYear[];
 };
 
-const DiscographyPageContainer: React.FC<{
-  data: {
-    allDiscographyJson: {
-      nodes: DiscographyPageDataNode[];
-    };
+export const getStaticProps: GetStaticProps<DiscographyPageProps> = async () => {
+  const discographyData = await getDiscographyData();
+
+  const singlesData = discographyData.filter(
+    cd => cd.type === 'single' || cd.type === 'digital'
+  );
+  const albumsData = discographyData.filter(cd => cd.type === 'album');
+  const otherCdsData = discographyData.filter(
+    cd => cd.type !== 'single' && cd.type !== 'album' && cd.type !== 'digital'
+  );
+  const allCdGroupsByYear = groupCdsByYear([
+    ...singlesData,
+    ...albumsData,
+    ...otherCdsData,
+  ]);
+  const singleGroupsByYear = groupCdsByYear(singlesData);
+  const albumGroupsByYear = groupCdsByYear(albumsData);
+
+  return {
+    props: {
+      allCdGroupsByYear,
+      singleGroupsByYear,
+      albumGroupsByYear,
+    },
   };
-}> = props => {
-  const discographyData = props.data.allDiscographyJson.nodes;
+};
 
-  const singlesData = React.useMemo(
-    () =>
-      discographyData.filter(
-        cd => cd.type === 'single' || cd.type === 'digital'
-      ),
-    [discographyData]
-  );
-  const albumsData = React.useMemo(
-    () => discographyData.filter(cd => cd.type === 'album'),
-    [discographyData]
-  );
-  const otherCdsData = React.useMemo(
-    () =>
-      discographyData.filter(
-        cd =>
-          cd.type !== 'single' && cd.type !== 'album' && cd.type !== 'digital'
-      ),
-    [discographyData]
-  );
-  const allCdGroupsByYear = React.useMemo(
-    () => groupCdsByYear([...singlesData, ...albumsData, ...otherCdsData]),
-    [singlesData, albumsData, otherCdsData]
-  );
-  const singleGroupsByYear = React.useMemo(() => groupCdsByYear(singlesData), [
-    singlesData,
-  ]);
-  const albumGroupsByYear = React.useMemo(() => groupCdsByYear(albumsData), [
-    albumsData,
-  ]);
-
+const DiscographyPage: React.FC<DiscographyPageProps> = props => {
   const filter = useFilter();
+  const { singleGroupsByYear, albumGroupsByYear, allCdGroupsByYear } = props;
 
-  const currentFilter: DiscographyPageProps['currentFilter'] = React.useMemo(() => {
+  const currentFilter = React.useMemo(() => {
     switch (filter) {
       case 'singles':
-        return 'singles';
       case 'albums':
-        return 'albums';
       case 'all':
-        return 'all';
+        return filter;
       default:
         return 'singles';
     }
   }, [filter]);
-  const cdGroupsByYear: DiscographyPageProps['cdGroupsByYear'] = React.useMemo(() => {
+
+  const cdGroupsByYear = React.useMemo(() => {
     switch (filter) {
       case 'singles':
         return singleGroupsByYear;
@@ -150,12 +117,80 @@ const DiscographyPageContainer: React.FC<{
     }
   }, [filter, singleGroupsByYear, albumGroupsByYear, allCdGroupsByYear]);
 
+  const { Translation, getTranslation } = useTranslations();
+  const { locale } = useRouter();
+
   return (
-    <DiscographyPage
-      currentFilter={currentFilter}
-      cdGroupsByYear={cdGroupsByYear}
-    />
+    <>
+      <PageHelmet title={getTranslation('discography')} />
+      <PageContent
+        title={{ text: getTranslation('discography'), lang: locale }}
+      >
+        <>
+          <TextSwitchLinkGroup
+            variant="h4"
+            textOn="onBackground"
+            capitalize
+            links={[
+              {
+                text: <Translation text="singles" />,
+                isSwitchedOn: currentFilter === 'singles',
+                href: getDiscographyUrl('singles'),
+              },
+              {
+                text: <Translation text="albums" />,
+                isSwitchedOn: currentFilter === 'albums',
+                href: getDiscographyUrl('albums'),
+              },
+              {
+                text: <Translation text="all" />,
+                isSwitchedOn: currentFilter === 'all',
+                href: getDiscographyUrl('all'),
+              },
+            ]}
+            css={css`
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+              text-transform: capitalize;
+            `}
+          />
+          {cdGroupsByYear.map(cdGroup => (
+            <section key={cdGroup.year}>
+              <TextDivider text={cdGroup.year} element="h2" />
+              <ul
+                css={css`
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  margin: auto;
+                `}
+              >
+                {cdGroup.cds.map(cd => (
+                  <li key={cd.key}>
+                    <ArtworkCard
+                      href={getAlbumUrl(cd.key)}
+                      image={cd.artwork}
+                      width={175}
+                      number={cd.number}
+                      type={cd.type}
+                      title={cd.title}
+                      titleElement="h3"
+                      borderRadius="s"
+                      padding="s"
+                      css={css`
+                        margin: ${commonStyles.spacing.xs};
+                      `}
+                    />
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
+        </>
+      </PageContent>
+    </>
   );
 };
 
-export default DiscographyPageContainer;
+export default DiscographyPage;
