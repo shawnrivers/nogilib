@@ -56,7 +56,7 @@ function groupCdsByYear(cds: DiscographyPageData): CdGroupByYear[] {
   }));
 }
 
-export type DiscographyPageProps = {
+type DiscographyPageProps = {
   allCdGroupsByYear: CdGroupByYear[];
   singleGroupsByYear: CdGroupByYear[];
   albumGroupsByYear: CdGroupByYear[];
@@ -90,8 +90,11 @@ export const getStaticProps: GetStaticProps<DiscographyPageProps> = async () => 
 };
 
 const DiscographyPage: React.FC<DiscographyPageProps> = props => {
-  const filter = useFilter();
   const { singleGroupsByYear, albumGroupsByYear, allCdGroupsByYear } = props;
+
+  const filter = useFilter();
+  const { Translation, getTranslation } = useTranslations();
+  const { locale } = useRouter();
 
   const currentFilter = React.useMemo(() => {
     switch (filter) {
@@ -116,9 +119,6 @@ const DiscographyPage: React.FC<DiscographyPageProps> = props => {
         return singleGroupsByYear;
     }
   }, [filter, singleGroupsByYear, albumGroupsByYear, allCdGroupsByYear]);
-
-  const { Translation, getTranslation } = useTranslations();
-  const { locale } = useRouter();
 
   return (
     <>
