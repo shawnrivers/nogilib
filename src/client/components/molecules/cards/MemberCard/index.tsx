@@ -130,7 +130,7 @@ export const MemberCard: React.FC<MemberCardProps> = props => {
           variant={textSize}
           element={nameElement}
           css={css`
-            margin-top: 0.8em;
+            margin-top: 0.6em;
             overflow-x: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
