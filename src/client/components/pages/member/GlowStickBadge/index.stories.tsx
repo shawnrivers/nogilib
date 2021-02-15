@@ -1,5 +1,3 @@
-/**@jsx jsx */
-import { jsx } from '@emotion/core';
 import { Meta, Story } from '@storybook/react/types-6-0';
 import { GlowStickBadge, GlowStickBadgeProps } from '.';
 import { ThemeDecorator } from 'storybook/ThemeDecorator';

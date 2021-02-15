@@ -1,33 +1,85 @@
-/**@jsx jsx */
-import { jsx, css } from '@emotion/core';
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/core';
 import * as React from 'react';
-import { PositionBadge } from 'client/templates/Member/components/PositionBadge';
-import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
-import { PositionType } from 'server/actors/Members/constants/position';
-import { PageContent } from 'client/components/templates/Page';
-import { Typography } from 'client/components/atoms/Typography';
-import { useLanguageContext } from 'client/store/language/hooks/useLanguageContext';
-import { TextDivider } from 'client/components/molecules/TextDivider';
-import { useAppTheme, commonStyles } from 'client/styles/tokens';
-import { GridMemberImage } from 'client/components/atoms/images/GridMemberImage';
+import { useRouter } from 'next/router';
+import { GetStaticPaths, GetStaticProps } from 'next';
+import Image from 'next/image';
+import { getMemberData } from 'api/member';
+import { MemberPageData } from 'server/pages/member';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
+import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import { useIntl } from 'client/i18n/hooks/useIntl';
-import { PositionCounter } from 'client/templates/Member/components/PositionCounter';
+import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
+import { PageHelmet } from 'client/layouts/PageHelmet';
+import { Card } from 'client/components/atoms/Card';
+import { Typography } from 'client/components/atoms/Typography';
 import { TextLink } from 'client/components/molecules/links/TextLink';
-import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
-import { GlowStickBadge } from 'client/templates/Member/components/GlowStickBadge';
+import { TextDivider } from 'client/components/molecules/TextDivider';
 import { InfoItemLabel } from 'client/components/molecules/typography/info/InfoItemLabel';
 import { InfoItemValue } from 'client/components/molecules/typography/info/InfoItemValue';
 import { SectionSubtitle } from 'client/components/molecules/typography/SectionSubtitle';
-import { GridImage } from 'client/components/atoms/images/GirdImage';
-import { Card } from 'client/components/atoms/Card';
-import { PageHelmet } from 'client/layouts/PageHelmet';
-import { MemberPageProps } from 'pages/members/{MemberJson.name}';
+import { GlowStickBadge } from 'client/components/pages/member/GlowStickBadge';
+import { PositionBadge } from 'client/components/pages/member/PositionBadge';
+import { PositionCounter } from 'client/components/pages/member/PositionCounter';
+import { PageContent } from 'client/components/templates/Page';
+import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
+import { PositionType } from 'server/actors/Members/constants/position';
+import { componentElevationKey } from 'client/styles/tokens/elevation';
 
-export const MemberPage: React.FC<MemberPageProps> = props => {
+type PathParams = { name: string };
+
+export const getStaticPaths: GetStaticPaths<PathParams> = async () => {
+  const memberData = await getMemberData();
+
+  return {
+    paths: ['ja', 'en', 'zh']
+      .map(locale =>
+        memberData.map(member => ({
+          params: {
+            name: member.name,
+          },
+          locale,
+        }))
+      )
+      .flat(),
+    fallback: false,
+  };
+};
+
+type PageProps = MemberPageData;
+
+export const getStaticProps: GetStaticProps<PageProps, PathParams> = async ({
+  params,
+}) => {
+  const memberData = await getMemberData();
+
+  if (params) {
+    const member = memberData.find(member => member.name === params.name);
+
+    if (member) {
+      const { positionsHistory, ...rest } = member;
+
+      return {
+        props: {
+          positionsHistory: positionsHistory
+            .slice()
+            .reverse()
+            .filter(history => history.position !== 'none'),
+          ...rest,
+        },
+      };
+    }
+  }
+
+  return {
+    notFound: true,
+  };
+};
+
+const MemberPage: React.FC<PageProps> = props => {
   const {
     nameNotations,
-    profileImageData,
+    profileImage,
     sites,
     join,
     graduation,
@@ -38,16 +90,26 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
     units,
     corps,
     photoAlbums,
-    shouldShowPositionCounter,
     positionsHistory,
     positionsCounter,
     glowStickColor,
-    galleryFluids,
+    gallery,
   } = props;
-  const { language } = useLanguageContext();
+
+  const { locale } = useRouter();
   const { Translation, getTranslation } = useTranslations();
   const theme = useAppTheme();
   const { formatWords, formatDate, formatWordsWithCommas } = useIntl();
+
+  const shouldShowPositionCounter = React.useMemo(
+    () =>
+      positionsCounter.center +
+        positionsCounter.fukujin +
+        positionsCounter.selected +
+        positionsCounter.under >
+      0,
+    [positionsCounter]
+  );
 
   useScrollRestoration();
 
@@ -59,15 +121,13 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
     nameNotations.lastNameFurigana,
     nameNotations.firstNameFurigana,
   ].join(' ');
-
   const primaryName = {
-    text: language !== 'en' ? kanjiName : enName,
-    lang: language !== 'en' ? 'ja' : 'en',
+    text: locale !== 'en' ? kanjiName : enName,
+    lang: locale !== 'en' ? 'ja' : 'en',
   };
   const secondaryName = {
-    text:
-      language === 'ja' ? furiganaName : language === 'zh' ? enName : kanjiName,
-    lang: language === 'ja' ? 'ja-Hira' : language === 'zh' ? 'en' : 'ja',
+    text: locale === 'ja' ? furiganaName : locale === 'zh' ? enName : kanjiName,
+    lang: locale === 'ja' ? 'ja-Hira' : locale === 'zh' ? 'en' : 'ja',
   };
 
   return (
@@ -111,21 +171,31 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
               }
             `}
           >
-            <GridMemberImage
-              image={profileImageData}
-              alt={formatWords([
-                language !== 'en'
-                  ? nameNotations.lastName + nameNotations.firstName
-                  : enName,
-                getTranslation('profile image'),
-              ])}
-              fixedSize
-              shadow
+            <div
               css={css`
+                border-radius: ${commonStyles.borderRadius.m};
+                box-shadow: ${theme.elevation[
+                  componentElevationKey.componentOnBackground
+                ].boxShadow};
+                overflow: hidden;
                 width: 200px;
                 height: 240px;
               `}
-            />
+            >
+              <Image
+                src={profileImage}
+                alt={formatWords([
+                  locale !== 'en'
+                    ? nameNotations.lastName + nameNotations.firstName
+                    : enName,
+                  getTranslation('profile image'),
+                ])}
+                width={200}
+                height={240}
+                objectFit="cover"
+                objectPosition="top"
+              />
+            </div>
             <div
               css={css`
                 display: grid;
@@ -238,7 +308,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                 {sites.map(site => (
                   <li key={site.title}>
                     <TextLink
-                      to={site.url}
+                      href={site.url}
                       typographyVariant="body2"
                       textColor={{
                         on: 'onBackground',
@@ -277,18 +347,24 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                     <Card
                       borderRadius="s"
                       padding="xs"
-                      to={photoAlbum.sites[0].url}
+                      href={photoAlbum.sites[0].url}
                       css={css`
                         width: 180px;
                         margin: ${commonStyles.spacing.xs};
                       `}
                     >
                       <article>
-                        <GridImage
-                          ratio={1.1}
-                          image={photoAlbum.coverImageData}
+                        <Image
+                          src={photoAlbum.cover}
                           alt=""
                           role="presentation"
+                          width={180}
+                          height={200}
+                          objectFit="cover"
+                          objectPosition="top"
+                          css={css`
+                            border-radius: ${commonStyles.borderRadius.s};
+                          `}
                         />
                         <Typography
                           variant="body2"
@@ -485,7 +561,7 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
             ) : null}
           </section>
         ) : null}
-        {galleryFluids.length > 0 ? (
+        {gallery.length > 0 ? (
           <section>
             <TextDivider text={<Translation text="gallery" />} element="h2" />
             <ul
@@ -495,20 +571,29 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
                 justify-content: center;
               `}
             >
-              {galleryFluids.map((profileImageFluid, index) => (
-                <li key={index}>
-                  <GridMemberImage
-                    image={profileImageFluid}
+              {gallery.map((profileImage, index) => (
+                <li
+                  key={index}
+                  css={css`
+                    margin: ${commonStyles.spacing.xs};
+                    border-radius: ${commonStyles.borderRadius.xs};
+                    box-shadow: ${theme.elevation[
+                      componentElevationKey.componentOnBackground
+                    ].boxShadow};
+                    width: 110px;
+                    height: 132px;
+                    overflow: hidden;
+                  `}
+                >
+                  <Image
+                    src={profileImage}
                     alt={[getTranslation('profile image'), index + 1].join(
-                      language === 'en' ? ' ' : ''
+                      locale === 'en' ? ' ' : ''
                     )}
-                    shadow
-                    fixedSize
-                    css={css`
-                      width: 110px;
-                      height: 132px;
-                      margin: ${commonStyles.spacing.xs};
-                    `}
+                    width={110}
+                    height={132}
+                    objectFit="cover"
+                    objectPosition="top"
                   />
                 </li>
               ))}
@@ -519,3 +604,5 @@ export const MemberPage: React.FC<MemberPageProps> = props => {
     </>
   );
 };
+
+export default MemberPage;

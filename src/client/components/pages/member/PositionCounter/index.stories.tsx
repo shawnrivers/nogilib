@@ -1,11 +1,6 @@
-/**@jsx jsx */
-import { jsx } from '@emotion/core';
 import { Meta, Story } from '@storybook/react/types-6-0';
+import { PositionCounter, PositionCounterProps } from '.';
 import { ThemeDecorator } from 'storybook/ThemeDecorator';
-import {
-  PositionCounter,
-  PositionCounterProps,
-} from 'client/templates/Member/components/PositionCounter';
 
 export default {
   title: 'Position/PositionCounter',
