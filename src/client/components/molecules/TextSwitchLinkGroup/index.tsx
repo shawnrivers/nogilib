@@ -1,5 +1,5 @@
-/**@jsx jsx */
-import { jsx, css } from '@emotion/core';
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/core';
 import * as React from 'react';
 import { Typography } from 'client/components/atoms/Typography';
 import {
@@ -10,9 +10,9 @@ import { useTranslations } from 'client/i18n/hooks/useTranslations';
 
 type TextSwitchLinkGroupProps = Omit<
   TextSwitchLinkProps,
-  'to' | 'isSwitchedOn'
+  'href' | 'isSwitchedOn'
 > & {
-  links: (Pick<TextSwitchLinkProps, 'isSwitchedOn' | 'to'> & {
+  links: (Pick<TextSwitchLinkProps, 'isSwitchedOn' | 'href'> & {
     text: React.ReactNode;
   })[];
 };
@@ -36,7 +36,7 @@ export const TextSwitchLinkGroup: React.FC<TextSwitchLinkGroupProps> = props => 
           <TextSwitchLink
             key={index}
             isSwitchedOn={link.isSwitchedOn}
-            to={link.to}
+            href={link.href}
             {...TextSwitchLinkProps}
           >
             {link.text}
@@ -45,7 +45,7 @@ export const TextSwitchLinkGroup: React.FC<TextSwitchLinkGroupProps> = props => 
           <React.Fragment key={index}>
             <TextSwitchLink
               isSwitchedOn={link.isSwitchedOn}
-              to={link.to}
+              href={link.href}
               {...TextSwitchLinkProps}
             >
               {link.text}
