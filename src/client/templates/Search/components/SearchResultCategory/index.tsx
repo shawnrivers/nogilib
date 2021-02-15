@@ -1,5 +1,5 @@
-/**@jsx jsx */
-import { jsx, css } from '@emotion/core';
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/core';
 import * as React from 'react';
 import {
   Typography,
@@ -54,7 +54,7 @@ export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props =
         {results.slice(0, DEFAULT_RESULT_COUNT).map(result => (
           <li key={result.heading.text}>
             <HorizontalCard
-              to={result.to}
+              href={result.to}
               image={result.image}
               title={result.heading}
               titleElement="h3"
@@ -67,7 +67,7 @@ export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props =
           ? results.slice(DEFAULT_RESULT_COUNT, results.length).map(result => (
               <li key={result.heading.text}>
                 <HorizontalCard
-                  to={result.to}
+                  href={result.to}
                   image={result.image}
                   title={result.heading}
                   titleElement="h3"
