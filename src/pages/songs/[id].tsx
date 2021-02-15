@@ -1,66 +1,69 @@
-/**@jsx jsx */
-import { jsx, css } from '@emotion/core';
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/core';
 import * as React from 'react';
+import { GetStaticPaths, GetStaticProps } from 'next';
+import Image from 'next/image';
 import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
 import { PageContent } from 'client/components/templates/Page';
 import { Hashtag } from 'client/components/atoms/Hashtag';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
-import { GridArtworkImage } from 'client/components/atoms/images/GirdArtworkImage';
 import { TextDivider } from 'client/components/molecules/TextDivider';
-import {
-  MemberCard,
-  MemberCardProps,
-} from 'client/components/molecules/cards/MemberCard';
-import { getMemberUrl } from 'client/utils/urls';
+import { MemberCard } from 'client/components/molecules/cards/MemberCard';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
-import { NameNotationsForIntl, useIntl } from 'client/i18n/hooks/useIntl';
+import { useIntl } from 'client/i18n/hooks/useIntl';
 import { InfoItemLabel } from 'client/components/molecules/typography/info/InfoItemLabel';
 import { InfoItemValue } from 'client/components/molecules/typography/info/InfoItemValue';
 import { SectionSubtitle } from 'client/components/molecules/typography/SectionSubtitle';
 import { PageHelmet } from 'client/layouts/PageHelmet';
-import { SongPageProps } from 'pages/songs/{SongJson.key}';
 import { toCdNumber } from 'utils/strings';
+import { getSongData } from 'api/song';
+import { SongPageData } from 'server/pages/song';
+import { getMemberUrl } from 'client/utils/urls';
+import { componentElevationKey } from 'client/styles/tokens/elevation';
 
-const RowContainer: React.FC = props => (
-  <ul
-    css={css`
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 0.5em;
+type PathParams = { id: string };
 
-      & > * {
-        width: 110px;
-        margin: ${commonStyles.spacing.xs};
-      }
-    `}
-  >
-    {props.children}
-  </ul>
-);
+export const getStaticPaths: GetStaticPaths<PathParams> = async () => {
+  const songData = await getSongData();
 
-type PerformerCardProps = Pick<
-  MemberCardProps,
-  'profileImage' | 'to' | 'position'
-> & {
-  nameNotations: NameNotationsForIntl;
+  return {
+    paths: ['ja', 'en', 'zh']
+      .map(locale =>
+        songData.map(song => {
+          return {
+            params: {
+              id: song.key,
+            },
+            locale,
+          };
+        })
+      )
+      .flat(),
+    fallback: false,
+  };
 };
 
-const PerformerCard: React.FC<PerformerCardProps> = props => {
-  const { formatMemberName } = useIntl();
+export type SongPageProps = SongPageData;
 
-  return (
-    <MemberCard
-      name={formatMemberName(props.nameNotations).name}
-      lang={formatMemberName(props.nameNotations).lang}
-      profileImage={props.profileImage}
-      to={props.to}
-      position={props.position}
-      textSize="body3"
-      borderRadius="s"
-      padding="xs"
-    />
-  );
+export const getStaticProps: GetStaticProps<
+  SongPageProps,
+  PathParams
+> = async ({ params }) => {
+  const songData = await getSongData();
+
+  if (params) {
+    const song = songData.find(song => song.key === params.id);
+
+    if (song) {
+      return {
+        props: song,
+      };
+    }
+  }
+
+  return {
+    notFound: true,
+  };
 };
 
 const PerformersTag: React.FC<SongPageProps['performersTag']> = props => {
@@ -103,14 +106,19 @@ export const SongPage: React.FC<SongPageProps> = props => {
     single,
     albums,
     otherCds,
-    artworkFluid,
+    artwork,
     performersTag,
     performers,
     creators,
   } = props;
   const theme = useAppTheme();
   const { Translation, getTranslation } = useTranslations();
-  const { formatWords, formatNth, formatWordsWithCommas } = useIntl();
+  const {
+    formatWords,
+    formatNth,
+    formatWordsWithCommas,
+    formatMemberName,
+  } = useIntl();
 
   const songTags = React.useMemo(
     () => [
@@ -176,16 +184,27 @@ export const SongPage: React.FC<SongPageProps> = props => {
                 }
               `}
             >
-              <GridArtworkImage
-                image={artworkFluid}
-                alt={formatWords([title, getTranslation('artwork')])}
-                shadow
-                fixedSize
+              <div
                 css={css`
+                  margin: ${commonStyles.spacing.s};
+                  border-radius: ${commonStyles.borderRadius.m};
+                  box-shadow: ${theme.elevation[
+                    componentElevationKey.componentOnBackground
+                  ].boxShadow};
+                  overflow: hidden;
                   width: 200px;
                   height: 200px;
                 `}
-              />
+              >
+                <Image
+                  src={artwork}
+                  alt={formatWords([title, getTranslation('artwork')])}
+                  width={200}
+                  height={200}
+                  objectFit="cover"
+                  objectPosition="top"
+                />
+              </div>
               {creators.lyrics.length +
                 creators.compose.length +
                 creators.arrange.length +
@@ -280,24 +299,44 @@ export const SongPage: React.FC<SongPageProps> = props => {
                             {formatNth({ num: index + 1, unit: 'row' })}
                           </SectionSubtitle>
                         )}
-                        <RowContainer>
+                        <ul
+                          css={css`
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            margin-top: 0.5em;
+                          `}
+                        >
                           {row.map(member => (
-                            <li key={member.name}>
-                              <PerformerCard
-                                nameNotations={member.nameNotations}
-                                profileImage={{
-                                  image: member.profileImageFluid,
-                                }}
-                                position={member.position ?? undefined}
-                                to={
+                            <li
+                              key={member.name}
+                              css={css`
+                                margin: ${commonStyles.spacing.xs};
+                              `}
+                            >
+                              <MemberCard
+                                name={
+                                  formatMemberName(member.nameNotations).name
+                                }
+                                lang={
+                                  formatMemberName(member.nameNotations).lang
+                                }
+                                width={110}
+                                profileImage={member.profileImage}
+                                href={
                                   member.isMember
                                     ? getMemberUrl(member.name)
                                     : undefined
                                 }
+                                position={member.position ?? undefined}
+                                textSize="body3"
+                                borderRadius="s"
+                                padding="xs"
                               />
                             </li>
                           ))}
-                        </RowContainer>
+                          {props.children}
+                        </ul>
                       </section>
                     ))}
                   </div>
@@ -310,3 +349,5 @@ export const SongPage: React.FC<SongPageProps> = props => {
     </>
   );
 };
+
+export default SongPage;

@@ -16,7 +16,8 @@ export type MembersUrlFilter = 'all' | 'current' | 'graduated';
 export const getMembersUrl = (filter?: MembersUrlFilter): string =>
   filter ? `/members/?${FILTER_PARAM_KEY}=${filter}` : '/members/';
 
-export const getMemberUrl = (memberName: string) => `/members/${memberName}/`;
+export const getMemberUrl = (memberName: string): string =>
+  `/members/${memberName}/`;
 
 export const getSearchUrl = () => '/search/';
 
