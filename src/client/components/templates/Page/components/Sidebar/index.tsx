@@ -1,5 +1,5 @@
-/**@jsx jsx */
-import { jsx, css } from '@emotion/core';
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/core';
 import * as React from 'react';
 import { motion } from 'framer-motion';
 import { CloseIcon } from 'client/components/atoms/icons/CloseIcon';

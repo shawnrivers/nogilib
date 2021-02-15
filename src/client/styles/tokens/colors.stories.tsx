@@ -1,5 +1,5 @@
-/**@jsx jsx */
-import { css, jsx } from '@emotion/core';
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/core';
 import * as React from 'react';
 import { withKnobs, select } from '@storybook/addon-knobs';
 import {
