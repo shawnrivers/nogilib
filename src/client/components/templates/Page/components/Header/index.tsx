@@ -1,5 +1,5 @@
-/**@jsx jsx */
-import { jsx, css } from '@emotion/core';
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/core';
 import * as React from 'react';
 import { ArrowBackIcon } from 'client/components/atoms/icons/ArrowBack';
 import { Typography } from 'client/components/atoms/Typography';
@@ -10,11 +10,11 @@ import { useTranslations } from 'client/i18n/hooks/useTranslations';
 export type HeaderProps = {
   title?: {
     text: string;
-    lang: string;
+    lang?: string;
   };
   subtitle?: {
     text: string;
-    lang: string;
+    lang?: string;
   };
   showBackButton?: boolean;
   titleTextTransform?: 'uppercase' | 'capitalize' | 'initial';
