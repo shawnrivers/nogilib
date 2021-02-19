@@ -9,7 +9,6 @@ import { useLocalStorageThemeMode } from 'client/store/theme/hook/useLocalStorag
 import { useThemeContext } from 'client/store/theme/hook/useThemeContext';
 import '@fontsource/playfair-display/400.css';
 import '@fontsource/playfair-display/700.css';
-import { useLocalStorageLanguage } from 'client/store/language/hooks/useLocalStorageLanguage';
 
 /**
  * NOTE:
@@ -20,7 +19,6 @@ export const EmotionThemeProvider: React.FC = props => {
 
   useDarkModeMediaQuery();
   useLocalStorageThemeMode();
-  useLocalStorageLanguage();
 
   return (
     <ThemeProvider theme={themes[themeKey]}>
