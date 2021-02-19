@@ -2,7 +2,7 @@
   "name": "nogilib",
   "private": true,
   "description": "NOGILIB is a web app for showing the information about Nogizaka46 in a user-friendly way.",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "license": "MIT",
   "scripts": {
     "build": "next build",
