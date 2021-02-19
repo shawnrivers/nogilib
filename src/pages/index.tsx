@@ -1,7 +1,6 @@
-/**@jsx jsx */
-import { jsx, css } from '@emotion/core';
-import * as React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/core';
+import Image from 'next/image';
 import { PageContent } from 'client/components/templates/Page';
 import { Typography } from 'client/components/atoms/Typography';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
@@ -16,7 +15,7 @@ import { Card } from 'client/components/atoms/Card';
 import { DiscographyIcon } from 'client/components/atoms/icons/DiscographyIcon';
 import { MembersIcon } from 'client/components/atoms/icons/MembersIcon';
 import { SearchIcon } from 'client/components/atoms/icons/SearchIcon';
-import { GatsbyImage } from 'client/components/atoms/images/GatsbyImage';
+import { componentElevationKey } from 'client/styles/tokens/elevation';
 
 const SubHeading: React.FC = props => (
   <Typography
@@ -36,7 +35,7 @@ const SectionTextLink: React.FC<{
   to: string;
 }> = props => (
   <TextLink
-    to={props.to}
+    href={props.to}
     typographyVariant="body2"
     textColor={{ on: 'onBackground', variant: 'variant0' }}
     css={css`
@@ -50,15 +49,6 @@ const SectionTextLink: React.FC<{
 const HomePage: React.FC = () => {
   const { getTranslation } = useTranslations();
   const theme = useAppTheme();
-  const heroImageData = useStaticQuery(graphql`
-    {
-      file(relativePath: { eq: "design/preview.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
-    }
-  `);
 
   return (
     <PageContent>
@@ -71,17 +61,30 @@ const HomePage: React.FC = () => {
         `}
       >
         <h1>
-          <GatsbyImage
-            image={heroImageData.file.childImageSharp.gatsbyImageData}
-            alt="NOGILIB"
-            borderRadius="m"
+          <div
             css={css`
+              border-radius: ${commonStyles.borderRadius.m};
+              box-shadow: ${theme.elevation[
+                componentElevationKey.componentOnBackground
+              ].boxShadow};
+              overflow: hidden;
               max-width: 80vw;
-              width: 800px;
-              height: 400px;
-              box-shadow: ${commonStyles.elevations[3].boxShadow};
+
+              & > * {
+                vertical-align: top;
+              }
             `}
-          />
+          >
+            <Image
+              src="/images/design/preview.jpg"
+              alt="NOGILIB"
+              layout="intrinsic"
+              width={320}
+              height={320}
+              objectFit="cover"
+              objectPosition="top"
+            />
+          </div>
         </h1>
         <Typography
           variant="body1"
@@ -113,7 +116,7 @@ const HomePage: React.FC = () => {
             }
           `}
         >
-          <Card to={getDiscographyUrl()} padding="l" borderRadius="m">
+          <Card href={getDiscographyUrl()} padding="l" borderRadius="m">
             <div
               css={css`
                 display: flex;
@@ -137,7 +140,7 @@ const HomePage: React.FC = () => {
               </Typography>
             </div>
           </Card>
-          <Card to={getMembersUrl()} padding="l" borderRadius="m">
+          <Card href={getMembersUrl()} padding="l" borderRadius="m">
             <div
               css={css`
                 display: flex;
@@ -161,7 +164,7 @@ const HomePage: React.FC = () => {
               </Typography>
             </div>
           </Card>
-          <Card to={getSearchUrl()} padding="l" borderRadius="m">
+          <Card href={getSearchUrl()} padding="l" borderRadius="m">
             <div
               css={css`
                 display: flex;
