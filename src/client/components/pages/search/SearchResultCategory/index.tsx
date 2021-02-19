@@ -18,7 +18,7 @@ export type SearchResultCategoryProps = {
   title: 'members' | 'cds' | 'songs';
   titleElement?: TypographyProps['element'];
   results: {
-    to: string;
+    href: string;
     image: HorizontalCardProps['image'];
     heading: HorizontalCardProps['title'];
     captions: HorizontalCardProps['tags'];
@@ -54,7 +54,7 @@ export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props =
         {results.slice(0, DEFAULT_RESULT_COUNT).map(result => (
           <li key={result.heading.text}>
             <HorizontalCard
-              href={result.to}
+              href={result.href}
               image={result.image}
               title={result.heading}
               titleElement="h3"
@@ -67,7 +67,7 @@ export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props =
           ? results.slice(DEFAULT_RESULT_COUNT, results.length).map(result => (
               <li key={result.heading.text}>
                 <HorizontalCard
-                  href={result.to}
+                  href={result.href}
                   image={result.image}
                   title={result.heading}
                   titleElement="h3"

@@ -40,7 +40,7 @@ export const getStaticPaths: GetStaticPaths<PathParams> = async () => {
   };
 };
 
-export type AlbumPageProps = Omit<AlbumPageData, 'songs'> & {
+type PageProps = Omit<AlbumPageData, 'songs'> & {
   songs: {
     key: AlbumPageData['songs'][0]['key'];
     title: AlbumPageData['songs'][0]['title'];
@@ -49,10 +49,9 @@ export type AlbumPageProps = Omit<AlbumPageData, 'songs'> & {
   }[];
 };
 
-export const getStaticProps: GetStaticProps<
-  AlbumPageProps,
-  PathParams
-> = async ({ params }) => {
+export const getStaticProps: GetStaticProps<PageProps, PathParams> = async ({
+  params,
+}) => {
   const albumData = await getAlbumData();
 
   if (params) {
@@ -61,7 +60,7 @@ export const getStaticProps: GetStaticProps<
     if (album) {
       const { songs: rawSongs, ...rest } = album;
       const artworksObject = arrayToObject(album.artworks, 'type');
-      const songs: AlbumPageProps['songs'] = rawSongs.map(song => ({
+      const songs: PageProps['songs'] = rawSongs.map(song => ({
         key: song.key,
         title: song.title,
         type: song.type,
@@ -83,7 +82,7 @@ export const getStaticProps: GetStaticProps<
   };
 };
 
-const AlbumPage: React.FC<AlbumPageProps> = props => {
+const AlbumPage: React.FC<PageProps> = props => {
   const { Translation, getTranslation } = useTranslations();
   const { formatDate, formatMemberName } = useIntl();
   const { locale } = useRouter();

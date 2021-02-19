@@ -18,67 +18,10 @@ import { getMembersUrl, getMemberUrl } from 'client/utils/urls';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { useIntl } from 'client/i18n/hooks/useIntl';
 
-// export const query = graphql`
-//   {
-//     allMembersJson {
-//       nodes {
-//         name
-//         nameNotations {
-//           lastName
-//           firstName
-//           lastNameEn
-//           firstNameEn
-//         }
-//         join
-//         graduation {
-//           isGraduated
-//           graduatedDate
-//         }
-//         profileImage {
-//           childImageSharp {
-//             gatsbyImageData(width: 200, layout: CONSTRAINED)
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;
-
-// type MembersPageDataNode = {
-//   name: MembersPageData[0]['name'];
-//   nameNotations: {
-//     lastName: MembersPageData[0]['nameNotations']['lastName'];
-//     firstName: MembersPageData[0]['nameNotations']['firstName'];
-//     lastNameEn: MembersPageData[0]['nameNotations']['lastNameEn'];
-//     firstNameEn: MembersPageData[0]['nameNotations']['firstNameEn'];
-//   };
-//   join: MembersPageData[0]['join'];
-//   graduation: {
-//     isGraduated: MembersPageData[0]['graduation']['isGraduated'];
-//     graduatedDate: MembersPageData[0]['graduation']['graduatedDate'];
-//   };
-//   profileImage: {
-//     childImageSharp: {
-//       gatsbyImageData: IGatsbyImageData;
-//     };
-//   };
-// };
-
-// type MemberCard = Omit<MembersPageDataNode, 'profileImage'> & {
-//   profileImageFluid: MembersPageDataNode['profileImage']['childImageSharp']['gatsbyImageData'];
-// };
-
 type MemberGroupByYear = {
   join: MemberResult['join'];
   members: MembersPageData;
 };
-
-// function getMemberCards(membersData: MembersPageDataNode[]): MemberCard[] {
-//   return membersData.map(({ profileImage, ...restFields }) => ({
-//     ...restFields,
-//     profileImageFluid: profileImage.childImageSharp.gatsbyImageData,
-//   }));
-// }
 
 function groupMembersByJoin(members: MembersPageData): MemberGroupByYear[] {
   const memberGroupByJoin: MemberGroupByYear[] = [];
