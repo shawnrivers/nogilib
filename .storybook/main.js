@@ -21,7 +21,6 @@ module.exports = {
         path.resolve(__dirname, '../src/utils'),
         path.resolve(__dirname, '../.storybook'),
       ],
-      exclude: [/node_modules\/(?!(gatsby)\/)/],
       use: [
         {
           loader: 'babel-loader',
@@ -29,7 +28,6 @@ module.exports = {
             presets: [['react-app', { flow: false, typescript: true }]],
             plugins: [
               require.resolve('@babel/plugin-proposal-class-properties'),
-              require.resolve('babel-plugin-remove-graphql-queries'),
             ],
           },
         },

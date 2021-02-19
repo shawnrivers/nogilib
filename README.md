@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://nogilib.com">
-    <img alt="Gatsby" src="https://raw.githubusercontent.com/shawnrivers/nogilib/main/src/assets/images/favicon-512.png" width="128" />
+    <img alt="NOGILIB" src="https://raw.githubusercontent.com/shawnrivers/nogilib/main/public/images/design/preview.jpg" width="400" />
   </a>
 </p>
 <h1 align="center">
@@ -19,7 +19,7 @@
 
 ## Technology Stack
 
-- Framework: Gatsby
+- Framework: Next.js
 - JavaScript flavor: TypeScript
 - Styling: Emotion
 - Animation: Framer Motion
