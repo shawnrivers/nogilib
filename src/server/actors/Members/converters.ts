@@ -14,7 +14,7 @@ import {
   DiscographyRaw,
 } from 'server/actors/Discography/models';
 import { sortByDate } from 'utils/sorting';
-import { convertImageFilePath } from 'server/utils/paths';
+import { convertImageFilePath } from 'server/utils/path';
 
 type GalleryWithDate = {
   url: string;

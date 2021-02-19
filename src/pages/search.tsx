@@ -13,11 +13,11 @@ import {
   SearchResultCategory,
   SearchResultCategoryProps,
 } from 'client/components/pages/search/SearchResultCategory';
-import { getAlbumUrl, getMemberUrl, getSongUrl } from 'client/utils/urls';
-import { toCdNumber } from 'utils/strings';
+import { getAlbumUrl, getMemberUrl, getSongUrl } from 'client/utils/url';
+import { toCdNumber } from 'utils/string';
 import { Typography } from 'client/components/atoms/Typography';
-import { PageContent } from 'client/components/templates/Page';
-import { PageHelmet } from 'client/layouts/PageHelmet';
+import { PageContent } from 'client/components/layout/PageContent';
+import { PageHelmet } from 'client/components/layout/PageHelmet';
 
 type PageProps = {
   docs: (

@@ -17,7 +17,7 @@ import {
   getHomeUrl,
   getMembersUrl,
   getSearchUrl,
-} from 'client/utils/urls';
+} from 'client/utils/url';
 import { Divider } from 'client/components/atoms/Divider';
 import { TextLink } from 'client/components/molecules/links/TextLink';
 import { BaseButton, BaseButtonRef } from 'client/components/atoms/BaseButton';

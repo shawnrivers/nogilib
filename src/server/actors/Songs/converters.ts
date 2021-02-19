@@ -6,7 +6,7 @@ import {
   DiscographyRawObject,
 } from 'server/actors/Discography/models';
 import { sortByDate } from 'utils/sorting';
-import { convertImageFilePath } from 'server/utils/paths';
+import { convertImageFilePath } from 'server/utils/path';
 
 type ConvertSongSingle = (params: {
   songTitle: SongRaw['title'];

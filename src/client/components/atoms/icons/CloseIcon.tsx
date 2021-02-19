@@ -1,5 +1,3 @@
-import * as React from 'react';
-
 type CloseIconProps = React.SVGAttributes<SVGElement> & {
   title?: string;
 };

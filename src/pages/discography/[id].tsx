@@ -4,7 +4,7 @@ import * as React from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { arrayToObject } from 'utils/arrays';
+import { arrayToObject } from 'utils/array';
 import { AlbumPageData } from 'server/pages/album';
 import { getAlbumData } from 'api/album';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
@@ -12,13 +12,13 @@ import { Typography } from 'client/components/atoms/Typography';
 import { HorizontalCard } from 'client/components/molecules/cards/HorizontalCard';
 import { MemberCard } from 'client/components/molecules/cards/MemberCard';
 import { TextDivider } from 'client/components/molecules/TextDivider';
-import { PageContent } from 'client/components/templates/Page';
+import { PageContent } from 'client/components/layout/PageContent';
 import { useIntl } from 'client/i18n/hooks/useIntl';
-import { PageHelmet } from 'client/layouts/PageHelmet';
+import { PageHelmet } from 'client/components/layout/PageHelmet';
 import { useAppTheme, commonStyles } from 'client/styles/tokens';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
-import { getSongUrl, getMemberUrl } from 'client/utils/urls';
-import { toCdNumber } from 'utils/strings';
+import { getSongUrl, getMemberUrl } from 'client/utils/url';
+import { toCdNumber } from 'utils/string';
 
 type PathParams = { id: string };
 

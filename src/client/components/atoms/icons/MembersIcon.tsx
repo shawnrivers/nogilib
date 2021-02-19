@@ -1,5 +1,3 @@
-import * as React from 'react';
-
 type MembersIconProps = React.SVGAttributes<SVGElement> & {
   title?: string;
 };

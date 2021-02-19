@@ -5,8 +5,8 @@ import { MemberResult } from 'server/actors/Members/models';
 import { Songs } from 'server/actors/Songs';
 import { SongResult } from 'server/actors/Songs/models';
 import { KOJIHARU_IMAGE_SRC } from 'server/constants/paths';
-import { convertImageFilePath } from 'server/utils/paths';
-import { arrayToObject } from 'utils/arrays';
+import { convertImageFilePath } from 'server/utils/path';
+import { arrayToObject } from 'utils/array';
 
 export type SongPageData = {
   key: SongResult['key'];

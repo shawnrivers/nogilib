@@ -1,7 +1,7 @@
 import Link, { LinkProps } from 'next/link';
 import { useRouter } from 'next/router';
 import * as React from 'react';
-import { isAbsoluteUrl } from 'client/utils/urls';
+import { isAbsoluteUrl } from 'client/utils/url';
 
 type AnchorBaseProps = Omit<
   React.AnchorHTMLAttributes<HTMLAnchorElement>,

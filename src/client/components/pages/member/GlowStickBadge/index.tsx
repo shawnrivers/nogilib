@@ -1,6 +1,5 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
-import * as React from 'react';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { useAppTheme } from 'client/styles/tokens';
 import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';

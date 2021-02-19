@@ -1,12 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
 import * as React from 'react';
-import {
-  Header,
-  HeaderProps,
-} from 'client/components/templates/Page/components/Header';
-import { NavigationBar } from 'client/components/templates/Page/components/NavigationBar';
-import { Sidebar } from 'client/components/templates/Page/components/Sidebar';
+import { NavigationBar } from 'client/components/layout/Page/components/NavigationBar';
+import { Sidebar } from 'client/components/layout/Page/components/Sidebar';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import { BaseButtonRef } from 'client/components/atoms/BaseButton';
 import { MENU_BUTTON_ID } from 'client/constants/ids';
@@ -17,39 +13,7 @@ import {
 } from 'client/styles/tokens/elevation';
 import { Typography } from 'client/components/atoms/Typography';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
-
-const PAGE_CONTENT_ID = 'page-content';
-
-export const PageContent: React.FC<HeaderProps> = props => {
-  return (
-    <div
-      css={css`
-        padding-top: calc(
-          ${commonStyles.sizes.navigationBarHeight} + ${commonStyles.spacing.m} +
-            env(safe-area-inset-top)
-        );
-        padding-left: ${commonStyles.spacing.m};
-        padding-right: ${commonStyles.spacing.m};
-        padding-bottom: calc(
-          ${commonStyles.spacing.xxl} + env(safe-area-inset-bottom)
-        );
-      `}
-      id={PAGE_CONTENT_ID}
-    >
-      {(props.title !== undefined || props.subtitle !== undefined) && (
-        <Header {...props} />
-      )}
-      <main
-        css={css`
-          max-width: ${commonStyles.sizes.contentMaxWidth};
-          margin: auto;
-        `}
-      >
-        {props.children}
-      </main>
-    </div>
-  );
-};
+import { PAGE_CONTENT_ID } from 'client/components/layout/PageContent';
 
 const SkipLink: React.FC = () => {
   const { getTranslation } = useTranslations();

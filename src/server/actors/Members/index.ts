@@ -9,7 +9,7 @@ import {
 } from 'server/actors/Members/models';
 import { SongsRawObject } from 'server/actors/Songs/models';
 import { UnitsRawArray } from 'server/actors/Units/models';
-import { arrayToObject } from 'utils/arrays';
+import { arrayToObject } from 'utils/array';
 import { DiscographyRawArray } from 'server/actors/Discography/models';
 
 type ConvertMemberParams = {

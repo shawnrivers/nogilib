@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ThemeMode } from 'client/types/themeMode';
-import { LOCAL_STORAGE_THEME_MODE_KEY } from 'client/utils/constants';
+import { LOCAL_STORAGE_THEME_MODE_KEY } from 'client/utils/constant';
 import { useThemeContext } from 'client/store/theme/hook/useThemeContext';
 import { getInitialThemeState } from 'client/store/theme/reducer';
 

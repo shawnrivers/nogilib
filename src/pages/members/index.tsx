@@ -11,10 +11,10 @@ import { sortByGraduation, sortByJoin, sortByMemberName } from 'utils/sorting';
 import { MemberCard } from 'client/components/molecules/cards/MemberCard';
 import { TextDivider } from 'client/components/molecules/TextDivider';
 import { TextSwitchLinkGroup } from 'client/components/molecules/TextSwitchLinkGroup';
-import { PageContent } from 'client/components/templates/Page';
-import { PageHelmet } from 'client/layouts/PageHelmet';
+import { PageContent } from 'client/components/layout/PageContent';
+import { PageHelmet } from 'client/components/layout/PageHelmet';
 import { commonStyles } from 'client/styles/tokens';
-import { getMembersUrl, getMemberUrl } from 'client/utils/urls';
+import { getMembersUrl, getMemberUrl } from 'client/utils/url';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { useIntl } from 'client/i18n/hooks/useIntl';
 

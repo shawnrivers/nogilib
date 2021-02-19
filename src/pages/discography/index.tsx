@@ -4,7 +4,7 @@ import { GetStaticProps } from 'next';
 import { css } from '@emotion/react';
 import { useRouter } from 'next/router';
 import { useFilter } from 'client/hooks/useFilter';
-import { getAlbumUrl, getDiscographyUrl } from 'client/utils/urls';
+import { getAlbumUrl, getDiscographyUrl } from 'client/utils/url';
 import { getDiscographyData } from 'api/discography';
 import { DiscographyPageData } from 'server/pages/discography';
 import { sortByDate } from 'utils/sorting';
@@ -12,8 +12,8 @@ import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { ArtworkCard } from 'client/components/molecules/cards/ArtworkCard';
 import { TextDivider } from 'client/components/molecules/TextDivider';
 import { TextSwitchLinkGroup } from 'client/components/molecules/TextSwitchLinkGroup';
-import { PageContent } from 'client/components/templates/Page';
-import { PageHelmet } from 'client/layouts/PageHelmet';
+import { PageContent } from 'client/components/layout/PageContent';
+import { PageHelmet } from 'client/components/layout/PageHelmet';
 import { commonStyles } from 'client/styles/tokens';
 
 type CdGroupByYear = {

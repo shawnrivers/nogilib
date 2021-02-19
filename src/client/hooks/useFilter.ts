@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { FILTER_PARAM_KEY } from 'client/utils/urls';
+import { FILTER_PARAM_KEY } from 'client/utils/url';
 
 export const useFilter = (): string => {
   const location = useRouter();

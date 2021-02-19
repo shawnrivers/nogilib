@@ -1,4 +1,4 @@
-import { arrayToObject } from 'utils/arrays';
+import { arrayToObject } from 'utils/array';
 import { TitleKeyArray } from 'server/types/commons';
 
 export type SingleTitle =

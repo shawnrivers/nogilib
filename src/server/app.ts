@@ -6,7 +6,7 @@ import { Units } from 'server/actors/Units';
 import { unitsRawArray } from 'server/actors/Units/raw';
 import { discographyRawArray } from 'server/actors/Discography/raw/editor';
 import { Discography } from 'server/actors/Discography';
-import { writeJSONFile } from 'server/utils/files';
+import { writeJSONFile } from 'server/utils/file';
 import { getDiscographyPageData } from 'server/pages/discography';
 import { getMembersPageData } from 'server/pages/members';
 import { getMemberPageData } from 'server/pages/member';

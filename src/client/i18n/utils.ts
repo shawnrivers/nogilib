@@ -1,5 +1,5 @@
 import { Language } from 'client/types/language';
-import { isNumberCountable, toNth } from 'utils/strings';
+import { isNumberCountable, toNth } from 'utils/string';
 
 type CounterUnit = 'cd' | 'row';
 const COUNTER_TRANSLATIONS: Record<CounterUnit, Record<Language, string>> = {

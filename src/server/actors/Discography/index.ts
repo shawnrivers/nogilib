@@ -1,6 +1,6 @@
 import * as CdConverters from 'server/actors/Discography/converters';
 import { SongsRawObject } from 'server/actors/Songs/models';
-import { arrayToObject } from 'utils/arrays';
+import { arrayToObject } from 'utils/array';
 import {
   DiscographyRawArray,
   DiscographyRawObject,

@@ -2,7 +2,7 @@ import { Discography } from 'server/actors/Discography';
 import { DiscographyResult } from 'server/actors/Discography/models';
 import { Members } from 'server/actors/Members';
 import { MemberResult } from 'server/actors/Members/models';
-import { arrayToObject } from 'utils/arrays';
+import { arrayToObject } from 'utils/array';
 
 export type AlbumPageData = {
   key: DiscographyResult['key'];
