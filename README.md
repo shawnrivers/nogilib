@@ -72,15 +72,15 @@
 
     .
     ├── src
-    ├──── assets
     ├──── data
     ├──── server
     ├──── client
     ├──── pages
     ├──── utils
+    ├── public
 
-- **`src/assets`**
-  - Images in the app
+- **`public`**
+  - Public assets in the app (e.g., images)
 - **`src/data`**
   - Data to statically generate the app
 - **`src/server`**

@@ -59,7 +59,7 @@ function getDiscographyGalleryWithDate(params: {
 
     const profileImageSrc = `members/${profileImageTypeFolderName}/${albumNumber}/${memberName}.jpg`;
 
-    if (fs.existsSync('./src/assets/images/' + profileImageSrc)) {
+    if (fs.existsSync('./public/images/' + profileImageSrc)) {
       discographyGallery.push({
         url: profileImageSrc,
         date: discographyRawArray[i].release,
@@ -70,9 +70,7 @@ function getDiscographyGalleryWithDate(params: {
   return discographyGallery;
 }
 
-const otherProfileImageFiles = fs.readdirSync(
-  './src/assets/images/members/others'
-);
+const otherProfileImageFiles = fs.readdirSync('./public/images/members/others');
 
 // Other profile image file name format:
 // <name>_<YYYY>-<MM>-<DD>.jpg
@@ -127,7 +125,7 @@ function getDiscographyProfileImages(params: {
 
     const albumProfileImageSrc = `members/${profileImageTypeFolderName}/${albumNumber}/${memberName}.jpg`;
 
-    if (fs.existsSync('./src/assets/images/' + albumProfileImageSrc)) {
+    if (fs.existsSync('./public/images/' + albumProfileImageSrc)) {
       discographyGallery.push({
         url: albumProfileImageSrc,
         number: albumNumber,
