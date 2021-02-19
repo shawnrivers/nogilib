@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://nogilib.com">
-    <img alt="NOGILIB" src="https://raw.githubusercontent.com/shawnrivers/nogilib/main/public/images/design/preview.jpg" width="400" />
+    <img alt="NOGILIB" src="https://raw.githubusercontent.com/shawnrivers/nogilib/main/public/images/design/preview.jpg" width="800" style="border-radius: 8px" />
   </a>
 </p>
 <h1 align="center">
