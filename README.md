@@ -60,14 +60,6 @@
 
     Data will be generated in `src/data`.
 
-- **Generate font pre-load cache**
-
-    ```sh
-    npm run preload-fonts
-    ```
-
-    NOTE: Only run this script when new pages or new fonts are added. Also note that because this script walks through every single page of the app, it will take several minutes.
-
 ## 🧐 Directories
 
     .
