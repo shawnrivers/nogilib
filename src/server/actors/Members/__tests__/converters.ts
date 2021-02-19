@@ -71,26 +71,26 @@ describe('convertProfileImages', () => {
 
   test('should sort gallery by date', () => {
     expect(nanaseProfileImages.gallery).toEqual([
-      '../assets/images/members/others/nishinonanase_2020-06-11.jpg',
-      '../assets/images/members/others/nishinonanase_2019-09-21.jpg',
-      '../assets/images/members/singles/22/nishinonanase.jpg',
-      '../assets/images/members/singles/20/nishinonanase.jpg',
-      '../assets/images/members/singles/17/nishinonanase.jpg',
-      '../assets/images/members/singles/15/nishinonanase.jpg',
-      '../assets/images/members/singles/14/nishinonanase.jpg',
-      '../assets/images/members/singles/13/nishinonanase.jpg',
-      '../assets/images/members/singles/12/nishinonanase.jpg',
-      '../assets/images/members/singles/11/nishinonanase.jpg',
-      '../assets/images/members/singles/10/nishinonanase.jpg',
-      '../assets/images/members/singles/9/nishinonanase.jpg',
-      '../assets/images/members/singles/8/nishinonanase.jpg',
-      '../assets/images/members/singles/7/nishinonanase.jpg',
-      '../assets/images/members/singles/6/nishinonanase.jpg',
-      '../assets/images/members/singles/5/nishinonanase.jpg',
-      '../assets/images/members/singles/4/nishinonanase.jpg',
-      '../assets/images/members/singles/3/nishinonanase.jpg',
-      '../assets/images/members/singles/2/nishinonanase.jpg',
-      '../assets/images/members/singles/1/nishinonanase.jpg',
+      '/images/members/others/nishinonanase_2020-06-11.jpg',
+      '/images/members/others/nishinonanase_2019-09-21.jpg',
+      '/images/members/singles/22/nishinonanase.jpg',
+      '/images/members/singles/20/nishinonanase.jpg',
+      '/images/members/singles/17/nishinonanase.jpg',
+      '/images/members/singles/15/nishinonanase.jpg',
+      '/images/members/singles/14/nishinonanase.jpg',
+      '/images/members/singles/13/nishinonanase.jpg',
+      '/images/members/singles/12/nishinonanase.jpg',
+      '/images/members/singles/11/nishinonanase.jpg',
+      '/images/members/singles/10/nishinonanase.jpg',
+      '/images/members/singles/9/nishinonanase.jpg',
+      '/images/members/singles/8/nishinonanase.jpg',
+      '/images/members/singles/7/nishinonanase.jpg',
+      '/images/members/singles/6/nishinonanase.jpg',
+      '/images/members/singles/5/nishinonanase.jpg',
+      '/images/members/singles/4/nishinonanase.jpg',
+      '/images/members/singles/3/nishinonanase.jpg',
+      '/images/members/singles/2/nishinonanase.jpg',
+      '/images/members/singles/1/nishinonanase.jpg',
     ]);
   });
 
@@ -111,28 +111,28 @@ describe('convertProfileImages', () => {
 
   test('should use the corresponding file for single', () => {
     expect(nanaseSingleProfileImages[15].url).toEqual(
-      '../assets/images/members/singles/15/nishinonanase.jpg'
+      '/images/members/singles/15/nishinonanase.jpg'
     );
   });
 
   test('should use the closest image if no corresponding file exists', () => {
     expect(nanaseSingleProfileImages[16].url).toEqual(
-      '../assets/images/members/singles/15/nishinonanase.jpg'
+      '/images/members/singles/15/nishinonanase.jpg'
     );
     expect(nanaseSingleProfileImages[21].url).toEqual(
-      '../assets/images/members/singles/20/nishinonanase.jpg'
+      '/images/members/singles/20/nishinonanase.jpg'
     );
     expect(nanaseSingleProfileImages[23].url).toEqual(
-      '../assets/images/members/singles/22/nishinonanase.jpg'
+      '/images/members/singles/22/nishinonanase.jpg'
     );
     expect(nanaseSingleProfileImages[25].url).toEqual(
-      '../assets/images/members/others/nishinonanase_2019-09-21.jpg'
+      '/images/members/others/nishinonanase_2019-09-21.jpg'
     );
     expect(nanaseAlbumProfileImages['U'].url).toEqual(
-      '../assets/images/members/singles/17/nishinonanase.jpg'
+      '/images/members/singles/17/nishinonanase.jpg'
     );
     expect(nanaseDigitalProfileImages[2].url).toEqual(
-      '../assets/images/members/others/nishinonanase_2020-06-11.jpg'
+      '/images/members/others/nishinonanase_2020-06-11.jpg'
     );
   });
 });

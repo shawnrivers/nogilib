@@ -45,7 +45,7 @@ export const convertCdArtwork = ({
 
   const imageSrc = `${imageSrcBasePath}/${cdNumber}/${cdArtworkType}.jpg`;
 
-  if (fs.existsSync('./src/assets/images/' + imageSrc)) {
+  if (fs.existsSync('./public/images/' + imageSrc)) {
     return imageSrc;
   }
 
