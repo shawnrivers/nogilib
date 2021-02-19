@@ -26,6 +26,7 @@ type SidebarItemProps = Omit<
   | 'backgroundType'
   | 'backgroundColorVariant'
   | 'showUnderline'
+  | 'capitalize'
 >;
 
 type SidebarItemRef = TextLinkRef;
@@ -42,10 +43,8 @@ const SidebarItem = React.forwardRef<SidebarItemRef, SidebarItemProps>(
         backgroundType="primary"
         backgroundColorVariant="standard"
         showUnderline={false}
+        capitalize
         onClick={onClick}
-        css={css`
-          text-transform: uppercase;
-        `}
         {...restProps}
         ref={ref}
       >
