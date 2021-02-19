@@ -332,9 +332,7 @@ export const NavigationBar: React.FC<{
                   href={getDiscographyUrl()}
                   typographyVariant="h6"
                   showUnderline={false}
-                  css={css`
-                    text-transform: capitalize;
-                  `}
+                  capitalize
                 >
                   {getTranslation('discography')}
                 </TextLink>
@@ -342,9 +340,7 @@ export const NavigationBar: React.FC<{
                   href={getMembersUrl()}
                   typographyVariant="h6"
                   showUnderline={false}
-                  css={css`
-                    text-transform: capitalize;
-                  `}
+                  capitalize
                 >
                   {getTranslation('members')}
                 </TextLink>
@@ -352,9 +348,7 @@ export const NavigationBar: React.FC<{
                   href={getSearchUrl()}
                   typographyVariant="h6"
                   showUnderline={false}
-                  css={css`
-                    text-transform: capitalize;
-                  `}
+                  capitalize
                 >
                   {getTranslation('search')}
                 </TextLink>
