@@ -1,14 +1,14 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
 import Image from 'next/image';
-import { PageContent } from 'client/components/templates/Page';
+import { PageContent } from 'client/components/layout/PageContent';
 import { Typography } from 'client/components/atoms/Typography';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import {
   getDiscographyUrl,
   getMembersUrl,
   getSearchUrl,
-} from 'client/utils/urls';
+} from 'client/utils/url';
 import { TextLink } from 'client/components/molecules/links/TextLink';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { Card } from 'client/components/atoms/Card';

@@ -1,4 +1,4 @@
-import { convertImageFilePath } from 'server/utils/paths';
+import { convertImageFilePath } from 'server/utils/path';
 
 describe('convertImageFilePath', () => {
   test('should prefix image path when no prefix is added', () => {

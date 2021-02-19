@@ -1,5 +1,3 @@
-import * as React from 'react';
-
 type DiscographyIconProps = React.SVGAttributes<SVGElement> & {
   title?: string;
 };

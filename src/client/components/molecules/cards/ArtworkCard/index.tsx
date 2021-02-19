@@ -1,12 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
-import * as React from 'react';
 import Image from 'next/image';
 import {
   Typography,
   TypographyProps,
 } from 'client/components/atoms/Typography';
-import { toCdNumber } from 'utils/strings';
+import { toCdNumber } from 'utils/string';
 import { Card, CardProps } from 'client/components/atoms/Card';
 import { commonStyles } from 'client/styles/tokens';
 

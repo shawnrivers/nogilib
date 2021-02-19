@@ -38,21 +38,13 @@ export const useIntl = () => {
       lang: 'ja' | 'en';
     } => {
       switch (locale) {
-        case 'ja':
-          return {
-            name: `${nameNotations.lastName}${nameNotations.firstName}`,
-            lang: 'ja',
-          };
-        case 'zh':
-          return {
-            name: `${nameNotations.lastName}${nameNotations.firstName}`,
-            lang: 'ja',
-          };
         case 'en':
           return {
             name: `${nameNotations.lastNameEn} ${nameNotations.firstNameEn}`,
             lang: 'en',
           };
+        case 'ja':
+        case 'zh':
         default: {
           return {
             name: `${nameNotations.lastName}${nameNotations.firstName}`,

@@ -1,4 +1,4 @@
-import { toNth } from 'utils/strings';
+import { toNth } from 'utils/string';
 
 describe('toNth', () => {
   it('should get the correct result when the arg is number', () => {

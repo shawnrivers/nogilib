@@ -9,7 +9,7 @@ import {
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { CdType, OtherCdKind } from 'server/actors/Discography/types';
 import { NO_ARTWORK_IMAGE_SRC } from 'server/constants/paths';
-import { convertImageFilePath } from 'server/utils/paths';
+import { convertImageFilePath } from 'server/utils/path';
 
 export const convertCdArtwork = ({
   cdHasArtworks,

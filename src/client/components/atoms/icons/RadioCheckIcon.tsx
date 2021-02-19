@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { GlobalColorKey, ThemeColorKey } from 'client/styles/tokens/colors';
 import { useAppTheme } from 'client/styles/tokens';
 

@@ -1,6 +1,5 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
-import * as React from 'react';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import {
   Typography,

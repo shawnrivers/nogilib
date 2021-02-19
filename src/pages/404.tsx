@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
-import { PageContent } from 'client/components/templates/Page';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
+import { PageContent } from 'client/components/layout/PageContent';
 
 const NotFoundPage: React.FC = () => {
   const { getTranslation } = useTranslations();

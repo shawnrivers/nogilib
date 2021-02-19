@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ThemeMode } from 'client/types/themeMode';
 import { ThemeKey } from 'client/styles/tokens/colors';
-import { LOCAL_STORAGE_THEME_MODE_KEY } from 'client/utils/constants';
+import { LOCAL_STORAGE_THEME_MODE_KEY } from 'client/utils/constant';
 import {
   getInitialThemeState,
   ThemeState,

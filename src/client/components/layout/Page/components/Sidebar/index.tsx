@@ -8,7 +8,7 @@ import {
   getDiscographyUrl,
   getMembersUrl,
   getSearchUrl,
-} from 'client/utils/urls';
+} from 'client/utils/url';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { BaseButton, BaseButtonRef } from 'client/components/atoms/BaseButton';
 import {

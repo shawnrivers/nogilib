@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Head from 'next/head';
-import { capitalizeFirstLetter, capitalizeText } from 'utils/strings';
+import { capitalizeFirstLetter, capitalizeText } from 'utils/string';
 
 const SITE_TITLE = 'NOGILIB';
 const SITE_URL = 'https://nogilib.com';

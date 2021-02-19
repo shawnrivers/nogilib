@@ -10,7 +10,7 @@ import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import { useIntl } from 'client/i18n/hooks/useIntl';
 import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
-import { PageHelmet } from 'client/layouts/PageHelmet';
+import { PageHelmet } from 'client/components/layout/PageHelmet';
 import { Card } from 'client/components/atoms/Card';
 import { Typography } from 'client/components/atoms/Typography';
 import { TextLink } from 'client/components/molecules/links/TextLink';
@@ -21,7 +21,7 @@ import { SectionSubtitle } from 'client/components/molecules/typography/SectionS
 import { GlowStickBadge } from 'client/components/pages/member/GlowStickBadge';
 import { PositionBadge } from 'client/components/pages/member/PositionBadge';
 import { PositionCounter } from 'client/components/pages/member/PositionCounter';
-import { PageContent } from 'client/components/templates/Page';
+import { PageContent } from 'client/components/layout/PageContent';
 import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
 import { PositionType } from 'server/actors/Members/constants/position';
 import { componentElevationKey } from 'client/styles/tokens/elevation';

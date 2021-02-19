@@ -1,5 +1,5 @@
 import { NameKeyArray } from 'server/types/commons';
-import { arrayToObject } from 'utils/arrays';
+import { arrayToObject } from 'utils/array';
 
 export enum UnitName {
   WhiteHigh = 'WHITE HIGH',

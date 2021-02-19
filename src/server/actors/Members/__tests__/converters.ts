@@ -10,7 +10,7 @@ import { songsRawArray } from 'server/actors/Songs/raw';
 import { unitsRawArray } from 'server/actors/Units/raw';
 import { Discography } from 'server/actors/Discography';
 import { discographyRawArray } from 'server/actors/Discography/raw/editor';
-import { arrayToObject } from 'utils/arrays';
+import { arrayToObject } from 'utils/array';
 
 const discography = new Discography(discographyRawArray);
 const singlesRawArray = discography.getSinglesRawArray();

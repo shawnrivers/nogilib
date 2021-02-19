@@ -4,10 +4,10 @@ import {
   UnitsRawArray,
   UnitsRawObject,
   UnitsResultArray,
-} from "server/actors/Units/models";
-import { arrayToObject } from "utils/arrays";
-import * as UnitConverters from "server/actors/Units/converters";
-import { SongsRawArray } from "server/actors/Songs/models";
+} from 'server/actors/Units/models';
+import { arrayToObject } from 'utils/array';
+import * as UnitConverters from 'server/actors/Units/converters';
+import { SongsRawArray } from 'server/actors/Songs/models';
 
 export class Units {
   private rawDataArray: UnitsRawArray;
@@ -16,7 +16,7 @@ export class Units {
 
   public constructor(unitsRawArray: UnitsRawArray) {
     this.rawDataArray = unitsRawArray;
-    this.rawDataObject = arrayToObject(unitsRawArray, "name");
+    this.rawDataObject = arrayToObject(unitsRawArray, 'name');
     this.resultData = [];
   }
 

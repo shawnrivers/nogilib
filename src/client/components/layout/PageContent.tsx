@@ -7,7 +7,7 @@ import { commonStyles, useAppTheme } from 'client/styles/tokens';
 import { BaseButton } from 'client/components/atoms/BaseButton';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 
-export type HeaderProps = {
+type HeaderProps = {
   title?: {
     text: string;
     lang?: string;
@@ -20,7 +20,7 @@ export type HeaderProps = {
   titleTextTransform?: 'uppercase' | 'capitalize' | 'initial';
 };
 
-export const Header: React.FC<HeaderProps> = props => {
+const Header: React.FC<HeaderProps> = props => {
   const {
     title,
     subtitle,
@@ -89,5 +89,38 @@ export const Header: React.FC<HeaderProps> = props => {
         </Typography>
       )}
     </header>
+  );
+};
+
+export const PAGE_CONTENT_ID = 'page-content';
+
+export const PageContent: React.FC<HeaderProps> = props => {
+  return (
+    <div
+      css={css`
+        padding-top: calc(
+          ${commonStyles.sizes.navigationBarHeight} + ${commonStyles.spacing.m} +
+            env(safe-area-inset-top)
+        );
+        padding-left: ${commonStyles.spacing.m};
+        padding-right: ${commonStyles.spacing.m};
+        padding-bottom: calc(
+          ${commonStyles.spacing.xxl} + env(safe-area-inset-bottom)
+        );
+      `}
+      id={PAGE_CONTENT_ID}
+    >
+      {(props.title !== undefined || props.subtitle !== undefined) && (
+        <Header {...props} />
+      )}
+      <main
+        css={css`
+          max-width: ${commonStyles.sizes.contentMaxWidth};
+          margin: auto;
+        `}
+      >
+        {props.children}
+      </main>
+    </div>
   );
 };

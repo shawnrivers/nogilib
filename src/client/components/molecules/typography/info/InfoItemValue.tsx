@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { Typography } from 'client/components/atoms/Typography';
 import { StyledTypographyProps } from 'client/components/molecules/typography/types';
 
