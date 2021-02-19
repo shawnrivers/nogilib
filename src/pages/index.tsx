@@ -16,6 +16,7 @@ import { DiscographyIcon } from 'client/components/atoms/icons/DiscographyIcon';
 import { MembersIcon } from 'client/components/atoms/icons/MembersIcon';
 import { SearchIcon } from 'client/components/atoms/icons/SearchIcon';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
+import { PageHelmet } from 'client/components/layout/PageHelmet';
 
 const SubHeading: React.FC = props => (
   <Typography
@@ -51,154 +52,157 @@ const HomePage: React.FC = () => {
   const theme = useAppTheme();
 
   return (
-    <PageContent>
-      <div
-        css={css`
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          margin-top: ${commonStyles.spacing.l};
-        `}
-      >
-        <h1>
-          <div
-            css={css`
-              border-radius: ${commonStyles.borderRadius.m};
-              box-shadow: ${theme.elevation[
-                componentElevationKey.componentOnBackground
-              ].boxShadow};
-              overflow: hidden;
-              max-width: 80vw;
-
-              & > * {
-                vertical-align: top;
-              }
-            `}
-          >
-            <Image
-              src="/images/design/preview.jpg"
-              alt="NOGILIB"
-              layout="intrinsic"
-              width={320}
-              height={320}
-              objectFit="cover"
-              objectPosition="top"
-            />
-          </div>
-        </h1>
-        <Typography
-          variant="body1"
-          textColor={{ on: 'onBackground', variant: 'variant0' }}
-          css={css`
-            text-align: center;
-            margin-top: ${commonStyles.spacing.xl};
-            max-width: 30em;
-          `}
-        >
-          {getTranslation(
-            'NOGILIB is a web app for showing the information about Nogizaka46 in a user-friendly way.'
-          )}
-        </Typography>
-        <SubHeading>{getTranslation('features')}</SubHeading>
+    <>
+      <PageHelmet />
+      <PageContent>
         <div
           css={css`
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
-
-            & > * {
-              margin-top: ${commonStyles.spacing.s};
-              margin-left: ${commonStyles.spacing.s};
-              margin-right: ${commonStyles.spacing.s};
-              min-width: max-content;
-              width: 240px;
-            }
+            margin-top: ${commonStyles.spacing.l};
           `}
         >
-          <Card href={getDiscographyUrl()} padding="l" borderRadius="m">
+          <h1>
             <div
               css={css`
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                border-radius: ${commonStyles.borderRadius.m};
+                box-shadow: ${theme.elevation[
+                  componentElevationKey.componentOnBackground
+                ].boxShadow};
+                overflow: hidden;
+                max-width: 80vw;
+
+                & > * {
+                  vertical-align: top;
+                }
               `}
             >
-              <DiscographyIcon
-                width="40"
-                height="40"
-                fill={theme.colors.theme.onSurface.standard}
+              <Image
+                src="/images/design/preview.jpg"
+                alt="NOGILIB"
+                layout="intrinsic"
+                width={320}
+                height={320}
+                objectFit="cover"
+                objectPosition="top"
               />
-              <Typography
-                variant="body1"
-                capitalize
+            </div>
+          </h1>
+          <Typography
+            variant="body1"
+            textColor={{ on: 'onBackground', variant: 'variant0' }}
+            css={css`
+              text-align: center;
+              margin-top: ${commonStyles.spacing.xl};
+              max-width: 30em;
+            `}
+          >
+            {getTranslation(
+              'NOGILIB is a web app for showing the information about Nogizaka46 in a user-friendly way.'
+            )}
+          </Typography>
+          <SubHeading>{getTranslation('features')}</SubHeading>
+          <div
+            css={css`
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: center;
+
+              & > * {
+                margin-top: ${commonStyles.spacing.s};
+                margin-left: ${commonStyles.spacing.s};
+                margin-right: ${commonStyles.spacing.s};
+                min-width: max-content;
+                width: 240px;
+              }
+            `}
+          >
+            <Card href={getDiscographyUrl()} padding="l" borderRadius="m">
+              <div
                 css={css`
-                  margin-top: ${commonStyles.spacing.s};
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
                 `}
               >
-                {getTranslation('discography')}
-              </Typography>
-            </div>
-          </Card>
-          <Card href={getMembersUrl()} padding="l" borderRadius="m">
-            <div
-              css={css`
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-              `}
-            >
-              <MembersIcon
-                width="40"
-                height="40"
-                fill={theme.colors.theme.onSurface.standard}
-              />
-              <Typography
-                variant="body1"
-                capitalize
+                <DiscographyIcon
+                  width="40"
+                  height="40"
+                  fill={theme.colors.theme.onSurface.standard}
+                />
+                <Typography
+                  variant="body1"
+                  capitalize
+                  css={css`
+                    margin-top: ${commonStyles.spacing.s};
+                  `}
+                >
+                  {getTranslation('discography')}
+                </Typography>
+              </div>
+            </Card>
+            <Card href={getMembersUrl()} padding="l" borderRadius="m">
+              <div
                 css={css`
-                  margin-top: ${commonStyles.spacing.s};
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
                 `}
               >
-                {getTranslation('members')}
-              </Typography>
-            </div>
-          </Card>
-          <Card href={getSearchUrl()} padding="l" borderRadius="m">
-            <div
-              css={css`
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-              `}
-            >
-              <SearchIcon
-                width="40"
-                height="40"
-                fill={theme.colors.theme.onSurface.standard}
-              />
-              <Typography
-                variant="body1"
-                capitalize
+                <MembersIcon
+                  width="40"
+                  height="40"
+                  fill={theme.colors.theme.onSurface.standard}
+                />
+                <Typography
+                  variant="body1"
+                  capitalize
+                  css={css`
+                    margin-top: ${commonStyles.spacing.s};
+                  `}
+                >
+                  {getTranslation('members')}
+                </Typography>
+              </div>
+            </Card>
+            <Card href={getSearchUrl()} padding="l" borderRadius="m">
+              <div
                 css={css`
-                  margin-top: ${commonStyles.spacing.s};
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
                 `}
               >
-                {getTranslation('search')}
-              </Typography>
-            </div>
-          </Card>
+                <SearchIcon
+                  width="40"
+                  height="40"
+                  fill={theme.colors.theme.onSurface.standard}
+                />
+                <Typography
+                  variant="body1"
+                  capitalize
+                  css={css`
+                    margin-top: ${commonStyles.spacing.s};
+                  `}
+                >
+                  {getTranslation('search')}
+                </Typography>
+              </div>
+            </Card>
+          </div>
+          <SubHeading>{getTranslation('developer')}</SubHeading>
+          <SectionTextLink to="https://twitter.com/yuxiao_he">
+            Yuxiao He (Usho Ka)
+          </SectionTextLink>
+          <SubHeading>{getTranslation('about')}</SubHeading>
+          <SectionTextLink to="https://github.com/shawnrivers/nogilib">
+            GitHub
+          </SectionTextLink>
         </div>
-        <SubHeading>{getTranslation('developer')}</SubHeading>
-        <SectionTextLink to="https://twitter.com/yuxiao_he">
-          Yuxiao He (Usho Ka)
-        </SectionTextLink>
-        <SubHeading>{getTranslation('about')}</SubHeading>
-        <SectionTextLink to="https://github.com/shawnrivers/nogilib">
-          GitHub
-        </SectionTextLink>
-      </div>
-    </PageContent>
+      </PageContent>
+    </>
   );
 };
 

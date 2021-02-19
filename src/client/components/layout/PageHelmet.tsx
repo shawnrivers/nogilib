@@ -55,7 +55,7 @@ export const PageHelmet: React.FC<PageHelmetProps> = props => {
       <meta name="og:url" content={SITE_URL} />
       <meta
         property="og:image"
-        content="https://raw.githubusercontent.com/shawnrivers/nogilib/main/src/assets/images/design/preview.jpg"
+        content="https://raw.githubusercontent.com/shawnrivers/nogilib/main/src/public/images/design/preview.jpg"
       />
       <meta name="og:image:type" content="image/jpeg" />
       <meta name="og:image:width" content="2560" />
