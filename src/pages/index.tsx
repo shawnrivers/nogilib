@@ -64,30 +64,19 @@ const HomePage: React.FC = () => {
           `}
         >
           <h1>
-            <div
+            <Image
+              src="/images/favicon-512.png"
+              alt="NOGILIB"
+              width={192}
+              height={192}
+              objectFit="cover"
+              objectPosition="top"
               css={css`
-                border-radius: ${commonStyles.borderRadius.m};
                 box-shadow: ${theme.elevation[
                   componentElevationKey.componentOnBackground
                 ].boxShadow};
-                overflow: hidden;
-                max-width: 80vw;
-
-                & > * {
-                  vertical-align: top;
-                }
               `}
-            >
-              <Image
-                src="/images/design/preview.jpg"
-                alt="NOGILIB"
-                layout="intrinsic"
-                width={320}
-                height={320}
-                objectFit="cover"
-                objectPosition="top"
-              />
-            </div>
+            />
           </h1>
           <Typography
             variant="body1"
