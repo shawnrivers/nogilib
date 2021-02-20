@@ -127,8 +127,8 @@ const Settings: React.FC = () => {
 
   const handleSwitchLanguage = React.useCallback(
     (language: Language) => {
+      document.cookie = `NEXT_LOCALE=${language}; expires=Fri, 31 Dec 9999 23:59:59 GMTl; path=/`;
       router.push(router.asPath, router.asPath, { locale: language });
-      document.cookie = `NEXT_LOCALE=${language}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
     },
     [router]
   );
