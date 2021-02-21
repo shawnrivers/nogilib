@@ -156,7 +156,7 @@ const dictionary = {
   },
   digital: {
     en: 'digital',
-    ja: '配信シングル',
+    ja: '配信限定',
     zh: '数字专辑',
   },
   selected: {
