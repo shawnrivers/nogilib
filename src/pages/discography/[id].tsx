@@ -83,18 +83,24 @@ export const getStaticProps: GetStaticProps<PageProps, PathParams> = async ({
 };
 
 const AlbumPage: React.FC<PageProps> = props => {
+  const { title, type, number } = props;
   const { Translation, getTranslation } = useTranslations();
   const { formatDate, formatMemberName } = useIntl();
   const { locale } = useRouter();
   const theme = useAppTheme();
 
+  const subtitleText =
+    type === 'album' || type === 'single'
+      ? `${toCdNumber(number)} ${type}`
+      : type;
+
   return (
     <>
-      <PageHelmet title={props.title} options={{ textTransform: 'none' }} />
+      <PageHelmet title={title} options={{ textTransform: 'none' }} />
       <PageContent
-        title={{ text: props.title, lang: 'ja' }}
+        title={{ text: title, lang: 'ja' }}
         subtitle={{
-          text: `${toCdNumber(props.number)} ${props.type}`,
+          text: subtitleText,
           lang: 'en',
         }}
         showBackButton
