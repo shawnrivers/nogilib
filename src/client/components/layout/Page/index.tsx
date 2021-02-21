@@ -7,10 +7,7 @@ import { commonStyles } from 'client/styles/tokens';
 import { BaseButtonRef } from 'client/components/atoms/BaseButton';
 import { MENU_BUTTON_ID } from 'client/constants/ids';
 import { Surface } from 'client/components/atoms/Surface';
-import {
-  componentElevationKey,
-  ELEVATION_DARK,
-} from 'client/styles/tokens/elevation';
+import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { Typography } from 'client/components/atoms/Typography';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { PAGE_CONTENT_ID } from 'client/components/layout/PageContent';
@@ -29,7 +26,8 @@ const SkipLink: React.FC = () => {
         transform: translateY(-170%);
         opacity: 0;
         transition: all 0.3s;
-        z-index: ${ELEVATION_DARK[componentElevationKey.skipLink].zIndex};
+        z-index: ${commonStyles.elevations[componentElevationKey.skipLink]
+          .zIndex};
         position: absolute;
 
         &:focus {
