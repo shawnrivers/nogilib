@@ -59,6 +59,8 @@ export const ThemeContextProvider: React.FC = props => {
           localStorage.setItem(LOCAL_STORAGE_THEME_MODE_KEY, 'auto');
         }
       }
+
+      window.__setThemeMode(themeMode);
     },
     [setThemeKey, setThemeMode]
   );

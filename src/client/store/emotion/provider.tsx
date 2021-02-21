@@ -24,6 +24,60 @@ export const EmotionThemeProvider: React.FC = props => {
     <ThemeProvider theme={themes[themeKey]}>
       <Global
         styles={css`
+          html[data-theme='light'] body {
+            --color-primary-standard: #cb78d9;
+            --color-primary-variant0: #ae37c3;
+            --color-primary-variant1: #812990;
+            --color-secondary-standard: #fbe297;
+            --color-secondary-variant0: #fad566;
+            --color-secondary-variant1: #f8c630;
+            --color-background-standard: #ffffff;
+            --color-background-variant0: #cccccc;
+            --color-background-variant1: #999999;
+            --color-surface-standard: #ffffff;
+            --color-surface-variant0: #cccccc;
+            --color-surface-variant1: #999999;
+            --color-onPrimary-standard: #ffffff;
+            --color-onPrimary-variant0: #cccccc;
+            --color-onPrimary-variant1: #999999;
+            --color-onSecondary-standard: #1a1a1a;
+            --color-onSecondary-variant0: #4d4d4d;
+            --color-onSecondary-variant1: #808080;
+            --color-onBackground-standard: #1a1a1a;
+            --color-onBackground-variant0: #666666;
+            --color-onBackground-variant1: #999999;
+            --color-onSurface-standard: #1a1a1a;
+            --color-onSurface-variant0: #666666;
+            --color-onSurface-variant1: #999999;
+          }
+
+          html[data-theme='dark'] body {
+            --color-primary-standard: #cb78d9;
+            --color-primary-variant0: #ae37c3;
+            --color-primary-variant1: #812990;
+            --color-secondary-standard: #fbe297;
+            --color-secondary-variant0: #fad566;
+            --color-secondary-variant1: #f8c630;
+            --color-background-standard: #1a1a1a;
+            --color-background-variant0: #4d4d4d;
+            --color-background-variant1: #808080;
+            --color-surface-standard: #1a1a1a;
+            --color-surface-variant0: #4d4d4d;
+            --color-surface-variant1: #808080;
+            --color-onPrimary-standard: #ffffff;
+            --color-onPrimary-variant0: #cccccc;
+            --color-onPrimary-variant1: #999999;
+            --color-onSecondary-standard: #1a1a1a;
+            --color-onSecondary-variant0: #4d4d4d;
+            --color-onSecondary-variant1: #808080;
+            --color-onBackground-standard: #ffffff;
+            --color-onBackground-variant0: #cccccc;
+            --color-onBackground-variant1: #999999;
+            --color-onSurface-standard: #ffffff;
+            --color-onSurface-variant0: #cccccc;
+            --color-onSurface-variant1: #999999;
+          }
+
           h1,
           h2,
           h3,

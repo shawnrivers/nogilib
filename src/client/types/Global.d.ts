@@ -1,6 +1,4 @@
-declare global {
-  interface Window {
-    __theme: 'light' | 'dark';
-    __themeMode: 'light' | 'dark' | 'auto';
-  }
+interface Window {
+  __themeMode: 'light' | 'dark' | 'auto';
+  __setThemeMode(themeMode: 'light' | 'dark' | 'auto'): void;
 }
