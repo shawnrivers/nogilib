@@ -92,7 +92,7 @@ const AlbumPage: React.FC<PageProps> = props => {
   const subtitleText =
     type === 'album' || type === 'single'
       ? `${toCdNumber(number)} ${type}`
-      : type;
+      : getTranslation(type);
 
   return (
     <>
@@ -101,7 +101,7 @@ const AlbumPage: React.FC<PageProps> = props => {
         title={{ text: title, lang: 'ja' }}
         subtitle={{
           text: subtitleText,
-          lang: 'en',
+          lang: locale,
         }}
         showBackButton
         titleTextTransform="initial"

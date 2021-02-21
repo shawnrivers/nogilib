@@ -126,9 +126,9 @@ export const SongPage: React.FC<SongPageProps> = props => {
         .filter(({ number }) => number !== '')
         .map(({ number }) => `${toCdNumber(number)} single`),
       ...albums.map(({ number }) => `${toCdNumber(number)} album`),
-      ...otherCds.map(({ number }) => `${toCdNumber(number)} digital`),
+      ...otherCds.map(() => getTranslation('digital')),
     ],
-    [single, albums, otherCds]
+    [single, albums, otherCds, getTranslation]
   );
 
   return (
