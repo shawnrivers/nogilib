@@ -112,12 +112,12 @@ const DiscographyPage: React.FC<DiscographyPageProps> = props => {
       case 'all':
         return filter;
       default:
-        return 'singles';
+        return 'all';
     }
   }, [filter]);
 
   const cdGroupsByYear = React.useMemo(() => {
-    switch (filter) {
+    switch (currentFilter) {
       case 'singles':
         return singleGroupsByYear;
       case 'albums':
@@ -126,11 +126,9 @@ const DiscographyPage: React.FC<DiscographyPageProps> = props => {
         return digitalGroupsByYear;
       case 'all':
         return allCdGroupsByYear;
-      default:
-        return singleGroupsByYear;
     }
   }, [
-    filter,
+    currentFilter,
     singleGroupsByYear,
     albumGroupsByYear,
     digitalGroupsByYear,
@@ -150,6 +148,11 @@ const DiscographyPage: React.FC<DiscographyPageProps> = props => {
             capitalize
             links={[
               {
+                text: <Translation text="all" />,
+                isSwitchedOn: currentFilter === 'all',
+                href: getDiscographyUrl('all'),
+              },
+              {
                 text: <Translation text="singles" />,
                 isSwitchedOn: currentFilter === 'singles',
                 href: getDiscographyUrl('singles'),
@@ -163,11 +166,6 @@ const DiscographyPage: React.FC<DiscographyPageProps> = props => {
                 text: <Translation text="digital" />,
                 isSwitchedOn: currentFilter === 'digital',
                 href: getDiscographyUrl('digital'),
-              },
-              {
-                text: <Translation text="all" />,
-                isSwitchedOn: currentFilter === 'all',
-                href: getDiscographyUrl('all'),
               },
             ]}
             css={css`
