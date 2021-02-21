@@ -1,8 +1,8 @@
-export type SearchQueryState = {
+export type SearchState = {
   searchQuery: string;
 };
 
-export function getInitialSearchQueryState(): SearchQueryState {
+export function getInitialSearchState(): SearchState {
   return {
     searchQuery: '',
   };
@@ -15,10 +15,7 @@ type Action = {
   };
 };
 
-export function searchQueryReducer(
-  state: SearchQueryState,
-  action: Action
-): SearchQueryState {
+export function searchReducer(state: SearchState, action: Action): SearchState {
   switch (action.type) {
     case 'UPDATE_SEARCH_QUERY':
       return {

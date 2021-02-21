@@ -19,6 +19,7 @@ import { Typography } from 'client/components/atoms/Typography';
 import { PageContent } from 'client/components/layout/PageContent';
 import { PageHelmet } from 'client/components/layout/PageHelmet';
 import { getColorVarName } from 'client/styles/tokens/colors';
+import { useSearchQuery } from 'client/store/search/hook/useSearchQuery';
 
 type PageProps = {
   docs: (
@@ -46,22 +47,34 @@ const SearchPage: React.FC<PageProps> = props => {
     idField: 'id',
   });
 
-  const [query, setQuery] = React.useState('');
+  const { searchQuery: query, setSearchQuery: setQuery } = useSearchQuery();
   const [results, setResults] = React.useState<PageProps['docs']>([]);
 
-  const handleSearch = React.useCallback(
-    async (event: React.ChangeEvent<HTMLInputElement>) => {
+  const search = React.useCallback(
+    async (searchQuery: string) => {
       if (!index) {
         return;
       }
-
-      const searchQuery = event.target.value;
-      setQuery(searchQuery);
 
       const searchResults = await index.search(searchQuery);
       setResults(searchResults);
     },
     [index]
+  );
+
+  React.useEffect(() => {
+    if (query !== '') {
+      search(query);
+    }
+  }, [query, search]);
+
+  const handleSearch = React.useCallback(
+    async (event: React.ChangeEvent<HTMLInputElement>) => {
+      const searchQuery = event.target.value;
+      setQuery(searchQuery);
+      search(searchQuery);
+    },
+    [setQuery, search]
   );
 
   const hasNoResult = results.length === 0 && query !== '';

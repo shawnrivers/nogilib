@@ -1,27 +1,23 @@
 import * as React from 'react';
-import {
-  SearchQueryState,
-  getInitialSearchQueryState,
-  searchQueryReducer,
-} from './reducer';
+import { SearchState, getInitialSearchState, searchReducer } from './reducer';
 
-export type SearchQueryContext = SearchQueryState & {
+type Context = SearchState & {
   setSearchQuery(searchQuery: string): void;
 };
 
-export const searchQueryContext = React.createContext<SearchQueryContext>({
-  ...getInitialSearchQueryState(),
+export const SearchContext = React.createContext<Context>({
+  ...getInitialSearchState(),
   setSearchQuery() {
     return;
   },
 });
 
-export const SearchQueryContextProvider: React.FC<{
+export const SearchContextProvider: React.FC<{
   children?: React.ReactNode;
 }> = props => {
   const [state, dispatch] = React.useReducer(
-    searchQueryReducer,
-    getInitialSearchQueryState()
+    searchReducer,
+    getInitialSearchState()
   );
 
   const setSearchQuery = React.useCallback(
@@ -35,13 +31,13 @@ export const SearchQueryContextProvider: React.FC<{
   );
 
   return (
-    <searchQueryContext.Provider
+    <SearchContext.Provider
       value={{
         searchQuery: state.searchQuery,
         setSearchQuery,
       }}
     >
       {props.children}
-    </searchQueryContext.Provider>
+    </SearchContext.Provider>
   );
 };
