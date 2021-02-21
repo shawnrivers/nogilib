@@ -1,47 +1,8 @@
 import * as React from 'react';
 import { useThemeContext } from 'client/store/theme/hook/useThemeContext';
+import { ThemeKey } from 'client/styles/tokens/colors';
 
 type DarkModeQueryEventHandler = (event: MediaQueryListEvent) => void;
-
-export function useDarkModeMediaQuery() {
-  const { themeMode, setThemeKey } = useThemeContext();
-
-  React.useEffect(() => {
-    const darkModeMediaQuery = window.matchMedia(
-      '(prefers-color-scheme: dark)'
-    );
-
-    const handleDarkModeQueryChange = createDarkModeQueryChangeHandler({
-      onMatch: () => setThemeKey('dark'),
-      onUnMatch: () => setThemeKey('light'),
-    });
-
-    // Auto change theme based on system settings
-    if (themeMode === 'auto') {
-      if (darkModeMediaQuery.media === 'not all') {
-        setThemeKey('light');
-      } else {
-        if (darkModeMediaQuery.matches) {
-          setThemeKey('dark');
-        } else {
-          setThemeKey('light');
-        }
-      }
-
-      subscribeDarkModeMediaQueryEventListeners(
-        darkModeMediaQuery,
-        handleDarkModeQueryChange
-      );
-    }
-
-    return () => {
-      clearUpDarkModeMediaQueryEventListeners(
-        darkModeMediaQuery,
-        handleDarkModeQueryChange
-      );
-    };
-  }, [themeMode, setThemeKey]);
-}
 
 function createDarkModeQueryChangeHandler(params: {
   onMatch(): void;
@@ -78,4 +39,52 @@ function clearUpDarkModeMediaQueryEventListeners(
   } else {
     darkModeMediaQuery.removeListener(onDarkModeQueryChange);
   }
+}
+
+export function useDarkModeMediaQuery() {
+  const { themeMode, setThemeKey } = useThemeContext();
+
+  const setTheme = React.useCallback(
+    (theme: ThemeKey) => {
+      setThemeKey(theme);
+      window.__setTheme(theme);
+    },
+    [setThemeKey]
+  );
+
+  React.useEffect(() => {
+    const darkModeMediaQuery = window.matchMedia(
+      '(prefers-color-scheme: dark)'
+    );
+
+    const handleDarkModeQueryChange = createDarkModeQueryChangeHandler({
+      onMatch: () => setTheme('dark'),
+      onUnMatch: () => setTheme('light'),
+    });
+
+    // Auto change theme based on system settings
+    if (themeMode === 'auto') {
+      if (darkModeMediaQuery.media === 'not all') {
+        setTheme('light');
+      } else {
+        if (darkModeMediaQuery.matches) {
+          setTheme('dark');
+        } else {
+          setTheme('light');
+        }
+      }
+
+      subscribeDarkModeMediaQueryEventListeners(
+        darkModeMediaQuery,
+        handleDarkModeQueryChange
+      );
+    }
+
+    return () => {
+      clearUpDarkModeMediaQueryEventListeners(
+        darkModeMediaQuery,
+        handleDarkModeQueryChange
+      );
+    };
+  }, [themeMode, setThemeKey, setTheme]);
 }
