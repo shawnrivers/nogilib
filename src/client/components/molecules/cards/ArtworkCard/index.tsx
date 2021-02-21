@@ -30,7 +30,10 @@ export const ArtworkCard: React.FC<
     ...cardProps
   } = props;
 
-  const caption = `${toCdNumber(number)} ${type}`;
+  const caption =
+    type === 'album' || type === 'single'
+      ? `${toCdNumber(number)} ${type}`
+      : type;
 
   return (
     <Card

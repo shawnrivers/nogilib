@@ -65,7 +65,6 @@ const Header: React.FC<HeaderProps> = props => {
           element="p"
           textColor={{ on: 'onBackground', variant: 'variant0' }}
           css={css`
-            margin-left: 0.5em;
             text-transform: capitalize;
             text-align: center;
           `}
