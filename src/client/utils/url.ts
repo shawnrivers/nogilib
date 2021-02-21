@@ -2,7 +2,7 @@ export const getHomeUrl = () => '/';
 
 export const FILTER_PARAM_KEY = 'filter';
 
-export type DiscographyUrlFilter = 'all' | 'singles' | 'albums';
+export type DiscographyUrlFilter = 'all' | 'singles' | 'albums' | 'digital';
 export const getDiscographyUrl = (filter?: DiscographyUrlFilter): string =>
   filter ? `/discography/?${FILTER_PARAM_KEY}=${filter}` : '/discography/';
 
