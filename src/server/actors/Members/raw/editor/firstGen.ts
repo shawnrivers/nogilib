@@ -679,7 +679,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         cover: 'photo-albums/nishinonanase_1.jpg',
       },
       {
-        title: '風に着替えて',
+        title: '風を着替えて',
         release: '2016-09-27',
         type: PhotoAlbumType.PhotoAlbum,
         sites: [
