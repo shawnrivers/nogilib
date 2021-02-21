@@ -2,12 +2,16 @@ import * as React from 'react';
 import { SearchState, getInitialSearchState, searchReducer } from './reducer';
 
 type Context = SearchState & {
-  setSearchQuery(searchQuery: string): void;
+  setQuery(query: SearchState['query']): void;
+  setResults(results: SearchState['results']): void;
 };
 
 export const SearchContext = React.createContext<Context>({
   ...getInitialSearchState(),
-  setSearchQuery() {
+  setQuery() {
+    return;
+  },
+  setResults() {
     return;
   },
 });
@@ -20,11 +24,21 @@ export const SearchContextProvider: React.FC<{
     getInitialSearchState()
   );
 
-  const setSearchQuery = React.useCallback(
-    (searchQuery: string) => {
+  const setQuery = React.useCallback(
+    (query: SearchState['query']) => {
       dispatch({
         type: 'UPDATE_SEARCH_QUERY',
-        payload: { searchQuery },
+        payload: { query },
+      });
+    },
+    [dispatch]
+  );
+
+  const setResults = React.useCallback(
+    (results: SearchState['results']) => {
+      dispatch({
+        type: 'UPDATE_SEARCH_RESULTS',
+        payload: { results },
       });
     },
     [dispatch]
@@ -33,8 +47,10 @@ export const SearchContextProvider: React.FC<{
   return (
     <SearchContext.Provider
       value={{
-        searchQuery: state.searchQuery,
-        setSearchQuery,
+        query: state.query,
+        results: state.results,
+        setQuery,
+        setResults,
       }}
     >
       {props.children}
