@@ -4,13 +4,15 @@ import * as React from 'react';
 import {
   componentElevationKey,
   ElevationKey,
+  getElevationWhiteOverlayTransparencyVarName,
 } from 'client/styles/tokens/elevation';
 import {
+  getColorVarName,
   mapBackgroundToForeground,
   ThemeColorsBackground,
   ThemeColorVariants,
 } from 'client/styles/tokens/colors';
-import { useAppTheme } from 'client/styles/tokens';
+import { commonStyles } from 'client/styles/tokens';
 
 export type SurfaceProps = {
   foregroundColor?: keyof ThemeColorVariants;
@@ -23,7 +25,6 @@ export type SurfaceProps = {
 };
 
 export const Surface: React.FC<SurfaceProps> = props => {
-  const theme = useAppTheme();
   const {
     foregroundColor: foregroundColorVariant = 'standard',
     backgroundColor: backgroundColorVariant = 'standard',
@@ -34,32 +35,36 @@ export const Surface: React.FC<SurfaceProps> = props => {
     children,
   } = props;
 
-  const backgroundColor = theme.colors.theme[colorType][backgroundColorVariant];
-  const foregroundColor =
-    theme.colors.theme[mapBackgroundToForeground(colorType)][
-      foregroundColorVariant
-    ];
+  const backgroundColorVarName = getColorVarName(
+    colorType,
+    backgroundColorVariant
+  );
+  const foregroundColorVarName = getColorVarName(
+    mapBackgroundToForeground(colorType),
+    foregroundColorVariant
+  );
 
   const normalStyles = React.useMemo(
     () => ({
       container: css`
         position: relative;
-        background-color: ${backgroundColor};
-        color: ${foregroundColor};
-        box-shadow: ${theme.elevation[elevation].boxShadow};
-        z-index: ${theme.elevation[elevation].zIndex};
+        background-color: var(${backgroundColorVarName});
+        color: var(${foregroundColorVarName});
+        box-shadow: ${commonStyles.elevations[elevation].boxShadow};
+        z-index: ${commonStyles.elevations[elevation].zIndex};
         transition: all 0.3s ease-out;
         transition-property: background-color box-shadow;
       `,
       overlay: css`
         width: 100%;
         height: 100%;
-        background-color: ${theme.elevation[elevation]
-          .whiteOverlayTransparency};
+        background-color: var(
+          ${getElevationWhiteOverlayTransparencyVarName(elevation)}
+        );
         transition: background-color 0.3s ease-out;
       `,
     }),
-    [backgroundColor, elevation, foregroundColor, theme]
+    [backgroundColorVarName, elevation, foregroundColorVarName]
   );
 
   const hoveredStyles = React.useMemo(
@@ -67,7 +72,7 @@ export const Surface: React.FC<SurfaceProps> = props => {
       container: css`
         @media (hover: hover) and (pointer: fine) {
           &:hover {
-            box-shadow: ${theme.elevation[
+            box-shadow: ${commonStyles.elevations[
               componentElevationKey.elevatedComponentOnBackground
             ].boxShadow};
           }
@@ -76,14 +81,16 @@ export const Surface: React.FC<SurfaceProps> = props => {
       overlay: css`
         @media (hover: hover) and (pointer: fine) {
           &:hover {
-            background-color: ${theme.elevation[
-              componentElevationKey.elevatedComponentOnBackground
-            ].whiteOverlayTransparency};
+            background-color: var(
+              ${getElevationWhiteOverlayTransparencyVarName(
+                componentElevationKey.elevatedComponentOnBackground
+              )}
+            );
           }
         }
       `,
     }),
-    [theme]
+    []
   );
 
   return (
