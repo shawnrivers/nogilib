@@ -60,37 +60,45 @@ type DiscographyPageProps = {
   allCdGroupsByYear: CdGroupByYear[];
   singleGroupsByYear: CdGroupByYear[];
   albumGroupsByYear: CdGroupByYear[];
+  digitalGroupsByYear: CdGroupByYear[];
 };
 
 export const getStaticProps: GetStaticProps<DiscographyPageProps> = async () => {
   const discographyData = await getDiscographyData();
 
-  const singlesData = discographyData.filter(
-    cd => cd.type === 'single' || cd.type === 'digital'
-  );
+  const singlesData = discographyData.filter(cd => cd.type === 'single');
   const albumsData = discographyData.filter(cd => cd.type === 'album');
+  const digitalsData = discographyData.filter(cd => cd.type === 'digital');
   const otherCdsData = discographyData.filter(
     cd => cd.type !== 'single' && cd.type !== 'album' && cd.type !== 'digital'
   );
   const allCdGroupsByYear = groupCdsByYear([
     ...singlesData,
     ...albumsData,
+    ...digitalsData,
     ...otherCdsData,
   ]);
   const singleGroupsByYear = groupCdsByYear(singlesData);
   const albumGroupsByYear = groupCdsByYear(albumsData);
+  const digitalGroupsByYear = groupCdsByYear(digitalsData);
 
   return {
     props: {
       allCdGroupsByYear,
       singleGroupsByYear,
       albumGroupsByYear,
+      digitalGroupsByYear,
     },
   };
 };
 
 const DiscographyPage: React.FC<DiscographyPageProps> = props => {
-  const { singleGroupsByYear, albumGroupsByYear, allCdGroupsByYear } = props;
+  const {
+    singleGroupsByYear,
+    albumGroupsByYear,
+    digitalGroupsByYear,
+    allCdGroupsByYear,
+  } = props;
 
   const filter = useFilter();
   const { Translation, getTranslation } = useTranslations();
@@ -100,6 +108,7 @@ const DiscographyPage: React.FC<DiscographyPageProps> = props => {
     switch (filter) {
       case 'singles':
       case 'albums':
+      case 'digital':
       case 'all':
         return filter;
       default:
@@ -113,12 +122,20 @@ const DiscographyPage: React.FC<DiscographyPageProps> = props => {
         return singleGroupsByYear;
       case 'albums':
         return albumGroupsByYear;
+      case 'digital':
+        return digitalGroupsByYear;
       case 'all':
         return allCdGroupsByYear;
       default:
         return singleGroupsByYear;
     }
-  }, [filter, singleGroupsByYear, albumGroupsByYear, allCdGroupsByYear]);
+  }, [
+    filter,
+    singleGroupsByYear,
+    albumGroupsByYear,
+    digitalGroupsByYear,
+    allCdGroupsByYear,
+  ]);
 
   return (
     <>
@@ -141,6 +158,11 @@ const DiscographyPage: React.FC<DiscographyPageProps> = props => {
                 text: <Translation text="albums" />,
                 isSwitchedOn: currentFilter === 'albums',
                 href: getDiscographyUrl('albums'),
+              },
+              {
+                text: <Translation text="digital" />,
+                isSwitchedOn: currentFilter === 'digital',
+                href: getDiscographyUrl('digital'),
               },
               {
                 text: <Translation text="all" />,
