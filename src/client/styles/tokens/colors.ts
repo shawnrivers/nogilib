@@ -113,6 +113,13 @@ export const mapBackgroundToForeground = (
   }
 };
 
+export function getColorVarName(
+  type: keyof ThemeColorsBackground | keyof ThemeColorsForeground,
+  variant: keyof ThemeColorVariants
+): string {
+  return `--color-${type}-${variant}`;
+}
+
 export type ColorTheme = {
   theme: ThemeColors;
   global: typeof GLOBAL_COLORS;

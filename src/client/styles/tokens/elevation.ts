@@ -501,3 +501,9 @@ export const ELEVATION_LIGHT: Elevation = {
     zIndex: COMMON_ELEVATIONS[24].zIndex,
   },
 };
+
+export function getElevationWhiteOverlayTransparencyVarName(
+  elevation: ElevationKey
+): string {
+  return `--elevation-white-overlay-transparency-${elevation}`;
+}
