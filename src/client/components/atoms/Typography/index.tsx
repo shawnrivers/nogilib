@@ -10,6 +10,7 @@ import { useAppTheme } from 'client/styles/tokens';
 import {
   ThemeColorsForeground,
   ThemeColorVariants,
+  getColorVarName,
 } from 'client/styles/tokens/colors';
 
 const textEllipsisStyles = css`
@@ -90,12 +91,11 @@ export const Typography: React.FC<TypographyProps> = props => {
     fontFamily !== undefined
       ? FONT_FAMILY[fontFamily]
       : FONT_FAMILY[defaultFontFamilyMapping[variant]];
-  const color = theme.colors.theme[textColor.on][textColor.variant];
   const styles = React.useMemo(() => {
     const stylesResult = [
       theme.typography[variant],
       css`
-        color: ${color};
+        color: var(${getColorVarName(textColor.on, textColor.variant)});
         font-weight: ${bold ? 700 : undefined};
         font-family: ${fontFamilyValue};
         text-transform: ${capitalize ? 'capitalize' : 'initial'};
@@ -108,7 +108,7 @@ export const Typography: React.FC<TypographyProps> = props => {
     return stylesResult;
   }, [
     bold,
-    color,
+    textColor,
     fontFamilyValue,
     ellipsis,
     theme.typography,

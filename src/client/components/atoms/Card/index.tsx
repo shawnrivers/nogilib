@@ -2,7 +2,7 @@
 import { css } from '@emotion/core';
 import { SpacingKey } from 'client/styles/tokens/spacing';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
-import { useAppTheme } from 'client/styles/tokens';
+import { commonStyles } from 'client/styles/tokens';
 import { BorderRadiusKey } from 'client/styles/tokens/borderRadius';
 import { Surface, SurfaceProps } from 'client/components/atoms/Surface';
 import { BaseLink, BaseLinkProps } from 'client/components/atoms/BaseLink';
@@ -23,13 +23,11 @@ export const CardContent: React.FC<CardContentProps> = props => {
     ...restProps
   } = props;
 
-  const theme = useAppTheme();
-
   return (
     <Surface
       elevation={elevation}
       css={css`
-        border-radius: ${theme.borderRadius[borderRadius]};
+        border-radius: ${commonStyles.borderRadius[borderRadius]};
         overflow: hidden;
         position: relative;
       `}
@@ -37,7 +35,7 @@ export const CardContent: React.FC<CardContentProps> = props => {
     >
       <div
         css={css`
-          padding: ${theme.spacing[padding]};
+          padding: ${commonStyles.spacing[padding]};
         `}
       >
         {children}

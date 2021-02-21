@@ -81,7 +81,6 @@ export const Page: React.FC = props => {
   return (
     <div
       css={css`
-        background-color: ${theme.colors.theme.background.standard};
         min-height: 100vh;
 
         & .large {
