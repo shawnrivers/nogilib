@@ -7,6 +7,9 @@ import {
   getLocalizedWordsSplitWithCommas,
   isDefinedLanguage,
 } from 'client/i18n/utils';
+import { DiscographyType } from 'server/actors/Discography/types';
+import { toCdNumber } from 'utils/string';
+import { useTranslations } from 'client/i18n/hooks/useTranslations';
 
 export type NameNotationsForIntl = Pick<
   MemberResult['nameNotations'],
@@ -15,6 +18,7 @@ export type NameNotationsForIntl = Pick<
 
 export const useIntl = () => {
   const { locale } = useRouter();
+  const { getTranslation } = useTranslations();
 
   const formatDate = React.useCallback(
     (date: string) => {
@@ -83,11 +87,20 @@ export const useIntl = () => {
     [locale]
   );
 
+  const formatAlbumType = React.useCallback(
+    (type: DiscographyType, number: string): string =>
+      type === 'album' || type === 'single'
+        ? `${toCdNumber(number)} ${type}`
+        : getTranslation(type),
+    [getTranslation]
+  );
+
   return {
     formatDate,
     formatMemberName,
     formatNth,
     formatWords,
     formatWordsWithCommas,
+    formatAlbumType,
   };
 };

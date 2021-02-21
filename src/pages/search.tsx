@@ -68,7 +68,7 @@ const SearchPage: React.FC<PageProps> = props => {
   const theme = useAppTheme();
   const { Translation, getTranslation } = useTranslations();
   const { locale } = useRouter();
-  const { formatMemberName } = useIntl();
+  const { formatMemberName, formatAlbumType } = useIntl();
 
   const convertedResults = React.useMemo<{
     members: SearchResultCategoryProps['results'];
@@ -111,8 +111,8 @@ const SearchPage: React.FC<PageProps> = props => {
           heading: { text: result.title, lang: 'ja' },
           captions: [
             {
-              text: `${toCdNumber(result.number)} ${result.albumType}`,
-              lang: 'en',
+              text: formatAlbumType(result.albumType, result.number),
+              lang: locale,
             },
           ],
         });

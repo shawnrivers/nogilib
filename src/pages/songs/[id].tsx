@@ -15,7 +15,6 @@ import { InfoItemLabel } from 'client/components/molecules/typography/info/InfoI
 import { InfoItemValue } from 'client/components/molecules/typography/info/InfoItemValue';
 import { SectionSubtitle } from 'client/components/molecules/typography/SectionSubtitle';
 import { PageHelmet } from 'client/components/layout/PageHelmet';
-import { toCdNumber } from 'utils/string';
 import { getSongData } from 'api/song';
 import { SongPageData } from 'server/pages/song';
 import { getMemberUrl } from 'client/utils/url';
@@ -118,17 +117,18 @@ export const SongPage: React.FC<SongPageProps> = props => {
     formatNth,
     formatWordsWithCommas,
     formatMemberName,
+    formatAlbumType,
   } = useIntl();
 
   const songTags = React.useMemo(
     () => [
       ...[single]
         .filter(({ number }) => number !== '')
-        .map(({ number }) => `${toCdNumber(number)} single`),
-      ...albums.map(({ number }) => `${toCdNumber(number)} album`),
-      ...otherCds.map(() => getTranslation('digital')),
+        .map(({ number }) => formatAlbumType('single', number)),
+      ...albums.map(({ number }) => formatAlbumType('album', number)),
+      ...otherCds.map(({ number }) => formatAlbumType('digital', number)),
     ],
-    [single, albums, otherCds, getTranslation]
+    [single, albums, otherCds, formatAlbumType]
   );
 
   return (

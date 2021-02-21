@@ -18,7 +18,6 @@ import { PageHelmet } from 'client/components/layout/PageHelmet';
 import { useAppTheme, commonStyles } from 'client/styles/tokens';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { getSongUrl, getMemberUrl } from 'client/utils/url';
-import { toCdNumber } from 'utils/string';
 
 type PathParams = { id: string };
 
@@ -85,14 +84,11 @@ export const getStaticProps: GetStaticProps<PageProps, PathParams> = async ({
 const AlbumPage: React.FC<PageProps> = props => {
   const { title, type, number } = props;
   const { Translation, getTranslation } = useTranslations();
-  const { formatDate, formatMemberName } = useIntl();
+  const { formatDate, formatMemberName, formatAlbumType } = useIntl();
   const { locale } = useRouter();
   const theme = useAppTheme();
 
-  const subtitleText =
-    type === 'album' || type === 'single'
-      ? `${toCdNumber(number)} ${type}`
-      : getTranslation(type);
+  const subtitleText = formatAlbumType(type, number);
 
   return (
     <>
