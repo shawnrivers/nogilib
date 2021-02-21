@@ -1,12 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import { css, Global } from '@emotion/core';
-import { ThemeProvider } from '@emotion/react';
 import * as React from 'react';
 import 'focus-visible';
-import { themes } from 'client/styles/tokens';
 import { useDarkModeMediaQuery } from 'client/store/theme/hook/useDarkModeMediaQuery';
 import { useLocalStorageThemeMode } from 'client/store/theme/hook/useLocalStorageThemeMode';
-import { useThemeContext } from 'client/store/theme/hook/useThemeContext';
 import '@fontsource/playfair-display/400.css';
 import '@fontsource/playfair-display/700.css';
 
@@ -15,13 +12,11 @@ import '@fontsource/playfair-display/700.css';
  * EmotionThemeProvider should be put used as a descendant of ThemeContextProvider.
  */
 export const EmotionThemeProvider: React.FC = props => {
-  const { themeKey } = useThemeContext();
-
   useDarkModeMediaQuery();
   useLocalStorageThemeMode();
 
   return (
-    <ThemeProvider theme={themes[themeKey]}>
+    <>
       <Global
         styles={css`
           :root {
@@ -328,6 +323,6 @@ export const EmotionThemeProvider: React.FC = props => {
         `}
       />
       <div>{props.children}</div>
-    </ThemeProvider>
+    </>
   );
 };
