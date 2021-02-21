@@ -36,11 +36,15 @@ export type AlbumTitle =
   | 'それぞれの椅子'
   | '透明な色';
 
-export type OtherCdTitle = '世界中の隣人よ' | 'Route 246';
+export type OtherCdTitle = '世界中の隣人よ' | 'Route 246' | '１・２・３';
 
 export type CdTitle = SingleTitle | AlbumTitle | OtherCdTitle;
 
 const CdTitleKeyArray: TitleKeyArray<CdTitle> = [
+  {
+    title: '１・２・３',
+    key: '123',
+  },
   {
     title: '僕は僕を好きになる',
     key: 'bokuhabokuwosukininaru',
@@ -174,9 +178,7 @@ const CdTitleKeyArray: TitleKeyArray<CdTitle> = [
     key: 'toumeinairo',
   },
 ].map(titleKey => ({
-  // Type error workaround
   title: titleKey.title as CdTitle,
-  // Make sure all keys are lower-cased
   key: titleKey.key.toLowerCase(),
 }));
 

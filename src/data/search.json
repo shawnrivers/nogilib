@@ -330,6 +330,16 @@
         "number": "2",
         "albumType": "digital",
         "artwork": "/images/artworks/digital/2/T.jpg"
+      },
+      {
+        "id": "digital-123",
+        "field": "１・２・３ 123",
+        "searchType": "albums",
+        "key": "123",
+        "title": "１・２・３",
+        "number": "3",
+        "albumType": "digital",
+        "artwork": "/images/artworks/digital/3/T.jpg"
       }
     ],
     "songs": [
@@ -4077,6 +4087,20 @@
         },
         "albums": [],
         "artwork": "/images/artworks/digital/2/T.jpg"
+      },
+      {
+        "id": "song-123",
+        "field": "１・２・３ 123",
+        "searchType": "songs",
+        "key": "123",
+        "title": "１・２・３",
+        "songType": "unit",
+        "single": {
+          "title": "",
+          "number": ""
+        },
+        "albums": [],
+        "artwork": "/images/artworks/digital/3/T.jpg"
       }
     ],
     "members": [

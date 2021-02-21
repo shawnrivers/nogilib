@@ -262,5 +262,13 @@
     "number": "2",
     "artwork": "/images/artworks/digital/2/T.jpg",
     "release": "2020-07-24"
+  },
+  {
+    "title": "１・２・３",
+    "key": "123",
+    "type": "digital",
+    "number": "3",
+    "artwork": "/images/artworks/digital/3/T.jpg",
+    "release": "2021-02-19"
   }
 ]
