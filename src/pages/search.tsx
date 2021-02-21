@@ -38,9 +38,7 @@ export const getStaticProps: GetStaticProps<PageProps> = async () => {
   };
 };
 
-const SearchPage: React.FC<PageProps> = props => {
-  const { docs } = props;
-
+function useSearch(docs: PageProps['docs']) {
   const index = useSearchIndex({
     docs,
     searchField: 'field',
@@ -61,12 +59,6 @@ const SearchPage: React.FC<PageProps> = props => {
     [index, setResults]
   );
 
-  React.useEffect(() => {
-    if (query !== '') {
-      search(query);
-    }
-  }, [query, search]);
-
   const handleSearch = React.useCallback(
     async (event: React.ChangeEvent<HTMLInputElement>) => {
       const searchQuery = event.target.value;
@@ -76,6 +68,18 @@ const SearchPage: React.FC<PageProps> = props => {
     [setQuery, search]
   );
 
+  React.useEffect(() => {
+    if (query !== '') {
+      search(query);
+    }
+  }, [query, search]);
+
+  return { query, results, handleSearch };
+}
+
+const SearchPage: React.FC<PageProps> = props => {
+  const { docs } = props;
+  const { query, results, handleSearch } = useSearch(docs);
   const hasNoResult = results.length === 0 && query !== '';
 
   const { Translation, getTranslation } = useTranslations();
