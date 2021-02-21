@@ -49,6 +49,31 @@ export const EmotionThemeProvider: React.FC = props => {
             --color-onSurface-standard: #1a1a1a;
             --color-onSurface-variant0: #666666;
             --color-onSurface-variant1: #999999;
+
+            --elevation-white-overlay-transparency-0: none;
+            --elevation-white-overlay-transparency-1: none;
+            --elevation-white-overlay-transparency-2: none;
+            --elevation-white-overlay-transparency-3: none;
+            --elevation-white-overlay-transparency-4: none;
+            --elevation-white-overlay-transparency-5: none;
+            --elevation-white-overlay-transparency-6: none;
+            --elevation-white-overlay-transparency-7: none;
+            --elevation-white-overlay-transparency-8: none;
+            --elevation-white-overlay-transparency-9: none;
+            --elevation-white-overlay-transparency-10: none;
+            --elevation-white-overlay-transparency-11: none;
+            --elevation-white-overlay-transparency-12: none;
+            --elevation-white-overlay-transparency-13: none;
+            --elevation-white-overlay-transparency-14: none;
+            --elevation-white-overlay-transparency-15: none;
+            --elevation-white-overlay-transparency-16: none;
+            --elevation-white-overlay-transparency-17: none;
+            --elevation-white-overlay-transparency-18: none;
+            --elevation-white-overlay-transparency-19: none;
+            --elevation-white-overlay-transparency-20: none;
+            --elevation-white-overlay-transparency-21: none;
+            --elevation-white-overlay-transparency-23: none;
+            --elevation-white-overlay-transparency-24: none;
           }
 
           html[data-theme='dark'] body {
@@ -76,6 +101,101 @@ export const EmotionThemeProvider: React.FC = props => {
             --color-onSurface-standard: #ffffff;
             --color-onSurface-variant0: #cccccc;
             --color-onSurface-variant1: #999999;
+
+            --elevation-white-overlay-transparency-0: rgba(255, 255, 255, 0);
+            --elevation-white-overlay-transparency-1: rgba(255, 255, 255, 0.05);
+            --elevation-white-overlay-transparency-2: rgba(255, 255, 255, 0.07);
+            --elevation-white-overlay-transparency-3: rgba(255, 255, 255, 0.08);
+            --elevation-white-overlay-transparency-4: rgba(255, 255, 255, 0.09);
+            --elevation-white-overlay-transparency-5: rgba(255, 255, 255, 0.1);
+            --elevation-white-overlay-transparency-6: rgba(255, 255, 255, 0.11);
+            --elevation-white-overlay-transparency-7: rgba(255, 255, 255, 0.11);
+            --elevation-white-overlay-transparency-8: rgba(255, 255, 255, 0.12);
+            --elevation-white-overlay-transparency-9: rgba(255, 255, 255, 0.12);
+            --elevation-white-overlay-transparency-10: rgba(
+              255,
+              255,
+              255,
+              0.13
+            );
+            --elevation-white-overlay-transparency-11: rgba(
+              255,
+              255,
+              255,
+              0.13
+            );
+            --elevation-white-overlay-transparency-12: rgba(
+              255,
+              255,
+              255,
+              0.14
+            );
+            --elevation-white-overlay-transparency-13: rgba(
+              255,
+              255,
+              255,
+              0.14
+            );
+            --elevation-white-overlay-transparency-14: rgba(
+              255,
+              255,
+              255,
+              0.14
+            );
+            --elevation-white-overlay-transparency-15: rgba(
+              255,
+              255,
+              255,
+              0.14
+            );
+            --elevation-white-overlay-transparency-16: rgba(
+              255,
+              255,
+              255,
+              0.15
+            );
+            --elevation-white-overlay-transparency-17: rgba(
+              255,
+              255,
+              255,
+              0.15
+            );
+            --elevation-white-overlay-transparency-18: rgba(
+              255,
+              255,
+              255,
+              0.15
+            );
+            --elevation-white-overlay-transparency-19: rgba(
+              255,
+              255,
+              255,
+              0.15
+            );
+            --elevation-white-overlay-transparency-20: rgba(
+              255,
+              255,
+              255,
+              0.15
+            );
+            --elevation-white-overlay-transparency-21: rgba(
+              255,
+              255,
+              255,
+              0.15
+            );
+            --elevation-white-overlay-transparency-23: rgba(
+              255,
+              255,
+              255,
+              0.15
+            );
+            --elevation-white-overlay-transparency-24: rgba(
+              255,
+              255,
+              255,
+              0.16
+            );
           }
 
           h1,
@@ -99,6 +219,10 @@ export const EmotionThemeProvider: React.FC = props => {
               'Oxygen', 'Ubuntu', 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: var(--color-background-standard);
+            /* transition-property: background-color, color;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out; */
           }
 
           a {
@@ -147,17 +271,7 @@ export const EmotionThemeProvider: React.FC = props => {
           }
         `}
       />
-      <div
-        css={css`
-          & * {
-            transition-property: background-color, color;
-            transition-duration: 0.5s;
-            transition-timing-function: ease-in-out;
-          }
-        `}
-      >
-        {props.children}
-      </div>
+      <div>{props.children}</div>
     </ThemeProvider>
   );
 };
