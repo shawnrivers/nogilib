@@ -5,16 +5,17 @@ import {
   Typography,
   TypographyProps,
 } from 'client/components/atoms/Typography';
-import { toCdNumber } from 'utils/string';
 import { Card, CardProps } from 'client/components/atoms/Card';
 import { commonStyles } from 'client/styles/tokens';
+import { useIntl } from 'client/i18n/hooks/useIntl';
+import { DiscographyType } from 'server/actors/Discography/types';
 
 export const ArtworkCard: React.FC<
   Omit<CardProps, 'children'> & {
     title: string;
     titleElement?: TypographyProps['element'];
     number: string;
-    type: string;
+    type: DiscographyType;
     image: string;
     width: number;
   }
@@ -30,10 +31,8 @@ export const ArtworkCard: React.FC<
     ...cardProps
   } = props;
 
-  const caption =
-    type === 'album' || type === 'single'
-      ? `${toCdNumber(number)} ${type}`
-      : type;
+  const { formatAlbumType } = useIntl();
+  const caption = formatAlbumType(type, number);
 
   return (
     <Card
@@ -64,6 +63,7 @@ export const ArtworkCard: React.FC<
           css={css`
             display: block;
             margin-top: 0.5em;
+            line-height: 1.2;
             text-align: center;
           `}
         >
