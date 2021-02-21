@@ -188,6 +188,7 @@ export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
       lyrics: ['秋元康'],
       compose: ['カワノミチオ'],
       arrange: ['カワノミチオ'],
+      direct: ['高野寛地'],
     },
     formations: {
       firstRow: [MemberNameKey.EndouSakura, MemberNameKey.OozonoMomoko],
