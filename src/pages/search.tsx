@@ -47,8 +47,7 @@ const SearchPage: React.FC<PageProps> = props => {
     idField: 'id',
   });
 
-  const { searchQuery: query, setSearchQuery: setQuery } = useSearchQuery();
-  const [results, setResults] = React.useState<PageProps['docs']>([]);
+  const { query, results, setQuery, setResults } = useSearchQuery();
 
   const search = React.useCallback(
     async (searchQuery: string) => {
@@ -59,7 +58,7 @@ const SearchPage: React.FC<PageProps> = props => {
       const searchResults = await index.search(searchQuery);
       setResults(searchResults);
     },
-    [index]
+    [index, setResults]
   );
 
   React.useEffect(() => {
