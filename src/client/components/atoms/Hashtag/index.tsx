@@ -1,19 +1,18 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
-import { commonStyles, useAppTheme } from 'client/styles/tokens';
+import { commonStyles } from 'client/styles/tokens';
 import {
   Typography,
   TypographyProps,
 } from 'client/components/atoms/Typography';
 import { SpacingKey } from 'client/styles/tokens/spacing';
+import { getColorVarName } from 'client/styles/tokens/colors';
 
 export type HashtagProps = Omit<TypographyProps, 'variant' | 'element'> & {
   spacing?: SpacingKey;
 };
 
 export const Hashtag: React.FC<HashtagProps> = props => {
-  const theme = useAppTheme();
-
   const {
     textColor = { on: 'onBackground', variant: 'variant0' },
     spacing = 'xs',
@@ -27,8 +26,9 @@ export const Hashtag: React.FC<HashtagProps> = props => {
       element="span"
       textColor={textColor}
       css={css`
-        border-radius: ${theme.borderRadius.xl};
-        border: 1px solid ${theme.colors.theme[textColor.on][textColor.variant]};
+        border-radius: ${commonStyles.borderRadius.xl};
+        border: 1px solid
+          var(${getColorVarName(textColor.on, textColor.variant)});
         padding: ${commonStyles.spacing.xxs} ${commonStyles.spacing[spacing]};
         width: max-content;
         white-space: nowrap;

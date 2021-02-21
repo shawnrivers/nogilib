@@ -3,7 +3,7 @@ import { css } from '@emotion/core';
 import Image from 'next/image';
 import { PageContent } from 'client/components/layout/PageContent';
 import { Typography } from 'client/components/atoms/Typography';
-import { commonStyles, useAppTheme } from 'client/styles/tokens';
+import { commonStyles } from 'client/styles/tokens';
 import {
   getDiscographyUrl,
   getMembersUrl,
@@ -17,6 +17,7 @@ import { MembersIcon } from 'client/components/atoms/icons/MembersIcon';
 import { SearchIcon } from 'client/components/atoms/icons/SearchIcon';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { PageHelmet } from 'client/components/layout/PageHelmet';
+import { getColorVarName } from 'client/styles/tokens/colors';
 
 const SubHeading: React.FC = props => (
   <Typography
@@ -49,7 +50,6 @@ const SectionTextLink: React.FC<{
 
 const HomePage: React.FC = () => {
   const { getTranslation } = useTranslations();
-  const theme = useAppTheme();
 
   return (
     <>
@@ -72,7 +72,7 @@ const HomePage: React.FC = () => {
               objectFit="cover"
               objectPosition="top"
               css={css`
-                box-shadow: ${theme.elevation[
+                box-shadow: ${commonStyles.elevations[
                   componentElevationKey.componentOnBackground
                 ].boxShadow};
               `}
@@ -119,7 +119,9 @@ const HomePage: React.FC = () => {
                 <DiscographyIcon
                   width="40"
                   height="40"
-                  fill={theme.colors.theme.onSurface.standard}
+                  css={css`
+                    fill: var(${getColorVarName('onSurface', 'standard')});
+                  `}
                 />
                 <Typography
                   variant="body1"
@@ -143,7 +145,9 @@ const HomePage: React.FC = () => {
                 <MembersIcon
                   width="40"
                   height="40"
-                  fill={theme.colors.theme.onSurface.standard}
+                  css={css`
+                    fill: var(${getColorVarName('onSurface', 'standard')});
+                  `}
                 />
                 <Typography
                   variant="body1"
@@ -167,7 +171,9 @@ const HomePage: React.FC = () => {
                 <SearchIcon
                   width="40"
                   height="40"
-                  fill={theme.colors.theme.onSurface.standard}
+                  css={css`
+                    fill: var(${getColorVarName('onSurface', 'standard')});
+                  `}
                 />
                 <Typography
                   variant="body1"

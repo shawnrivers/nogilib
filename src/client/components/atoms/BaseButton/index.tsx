@@ -3,10 +3,11 @@ import { css } from '@emotion/core';
 import * as React from 'react';
 import { SpacingKey } from 'client/styles/tokens/spacing';
 import {
+  getColorVarName,
   ThemeColorKey,
   ThemeColorsBackground,
 } from 'client/styles/tokens/colors';
-import { commonStyles, useAppTheme } from 'client/styles/tokens';
+import { commonStyles } from 'client/styles/tokens';
 
 export type BaseButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   backgroundType?: keyof ThemeColorsBackground;
@@ -28,8 +29,6 @@ export const BaseButton = React.forwardRef<BaseButtonRef, BaseButtonProps>(
       ...buttonProps
     } = props;
 
-    const theme = useAppTheme();
-
     return (
       <button
         css={css`
@@ -41,9 +40,9 @@ export const BaseButton = React.forwardRef<BaseButtonRef, BaseButtonProps>(
 
           @media (hover: hover) and (pointer: fine) {
             &:hover {
-              background-color: ${theme.colors.theme[backgroundType][
-                backgroundColorVariant
-              ]};
+              background-color: var(
+                ${getColorVarName(backgroundType, backgroundColorVariant)}
+              );
             }
           }
         `}

@@ -15,7 +15,7 @@ import { TextDivider } from 'client/components/molecules/TextDivider';
 import { PageContent } from 'client/components/layout/PageContent';
 import { useIntl } from 'client/i18n/hooks/useIntl';
 import { PageHelmet } from 'client/components/layout/PageHelmet';
-import { useAppTheme, commonStyles } from 'client/styles/tokens';
+import { commonStyles } from 'client/styles/tokens';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { getSongUrl, getMemberUrl } from 'client/utils/url';
 
@@ -86,7 +86,6 @@ const AlbumPage: React.FC<PageProps> = props => {
   const { Translation, getTranslation } = useTranslations();
   const { formatDate, formatMemberName, formatAlbumType } = useIntl();
   const { locale } = useRouter();
-  const theme = useAppTheme();
 
   const subtitleText = formatAlbumType(type, number);
 
@@ -195,7 +194,7 @@ const AlbumPage: React.FC<PageProps> = props => {
                   css={css`
                     margin: ${commonStyles.spacing.s};
                     border-radius: ${commonStyles.borderRadius.m};
-                    box-shadow: ${theme.elevation[
+                    box-shadow: ${commonStyles.elevations[
                       componentElevationKey.componentOnBackground
                     ].boxShadow};
                     overflow: hidden;

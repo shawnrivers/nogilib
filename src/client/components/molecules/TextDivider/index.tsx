@@ -1,10 +1,10 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
-import { useAppTheme } from 'client/styles/tokens';
 import {
   Typography,
   TypographyProps,
 } from 'client/components/atoms/Typography';
+import { getColorVarName } from 'client/styles/tokens/colors';
 
 export const TextDivider: React.FC<{
   text: React.ReactNode;
@@ -12,10 +12,9 @@ export const TextDivider: React.FC<{
 }> = props => {
   const { element = 'span' } = props;
 
-  const theme = useAppTheme();
-  const dividerLineColor = theme.colors.theme.onBackground.variant1;
+  const dividerLineColorVarName = getColorVarName('onBackground', 'variant1');
   const dividerLineStyles = css`
-    border-top: 2px solid ${dividerLineColor};
+    border-top: 2px solid var(${dividerLineColorVarName});
     height: 2px;
     margin-top: 10px;
     width: 100%;

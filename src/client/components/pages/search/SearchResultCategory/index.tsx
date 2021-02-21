@@ -5,7 +5,7 @@ import {
   Typography,
   TypographyProps,
 } from 'client/components/atoms/Typography';
-import { useAppTheme } from 'client/styles/tokens';
+import { commonStyles } from 'client/styles/tokens';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import {
   HorizontalCard,
@@ -27,7 +27,6 @@ export type SearchResultCategoryProps = {
 
 export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props => {
   const { title, results, titleElement = 'h3', ...restProps } = props;
-  const theme = useAppTheme();
   const { Translation } = useTranslations();
   const [showMore, toggleShowMore] = React.useState(false);
 
@@ -47,7 +46,7 @@ export const SearchResultCategory: React.FC<SearchResultCategoryProps> = props =
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
           grid-template-rows: auto;
-          grid-gap: ${theme.spacing.m};
+          grid-gap: ${commonStyles.spacing.m};
           margin-top: 1rem;
         `}
       >

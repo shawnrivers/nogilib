@@ -1,9 +1,10 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
-import { useAppTheme } from 'client/styles/tokens';
+import { commonStyles } from 'client/styles/tokens';
 import { Typography } from 'client/components/atoms/Typography';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { POSITION_STYLES } from 'client/styles/positionStyles';
+import { getColorVarName } from 'client/styles/tokens/colors';
 
 export type PositionCounterProps = {
   center: number;
@@ -14,17 +15,16 @@ export type PositionCounterProps = {
 
 export const PositionCounter: React.FC<PositionCounterProps> = props => {
   const { center, fukujin, selected, under } = props;
-  const theme = useAppTheme();
 
   return (
     <div
       css={css`
-        border-color: ${theme.colors.theme.onBackground.standard};
+        border-color: var(${getColorVarName('onBackground', 'standard')});
         border-radius: 32px;
         border-style: solid;
         border-width: 2px;
         box-sizing: border-box;
-        box-shadow: ${theme.elevation[
+        box-shadow: ${commonStyles.elevations[
           componentElevationKey.componentOnBackground
         ].boxShadow};
         display: flex;
@@ -41,7 +41,7 @@ export const PositionCounter: React.FC<PositionCounterProps> = props => {
           width: 100%;
 
           &:not(:last-child) {
-            border-color: ${theme.colors.theme.onBackground.standard};
+            border-color: var(${getColorVarName('onBackground', 'standard')});
             border-radius: 0;
             border-right-style: solid;
             border-right-width: 2px;
@@ -51,12 +51,18 @@ export const PositionCounter: React.FC<PositionCounterProps> = props => {
         {center !== 0 && (
           <div
             css={css`
-              background-color: ${theme.colors.theme[
-                POSITION_STYLES.center.backgroundColor
-              ][POSITION_STYLES.center.backgroundColorVariant]};
-              border-color: ${theme.colors.theme[
-                POSITION_STYLES.center.foregroundColor
-              ][POSITION_STYLES.center.textColorVariant]};
+              background-color: var(
+                ${getColorVarName(
+                  POSITION_STYLES.center.backgroundColor,
+                  POSITION_STYLES.center.backgroundColorVariant
+                )}
+              );
+              border-color: var(
+                ${getColorVarName(
+                  POSITION_STYLES.center.foregroundColor,
+                  POSITION_STYLES.center.textColorVariant
+                )}
+              );
               text-align: center;
               width: ${(center / (under + selected)) * 100}%;
               min-width: max-content;
@@ -81,12 +87,18 @@ export const PositionCounter: React.FC<PositionCounterProps> = props => {
         {fukujin - center !== 0 && (
           <div
             css={css`
-              background-color: ${theme.colors.theme[
-                POSITION_STYLES.fukujin.backgroundColor
-              ][POSITION_STYLES.fukujin.backgroundColorVariant]};
-              border-color: ${theme.colors.theme[
-                POSITION_STYLES.fukujin.foregroundColor
-              ][POSITION_STYLES.fukujin.textColorVariant]};
+              background-color: var(
+                ${getColorVarName(
+                  POSITION_STYLES.fukujin.backgroundColor,
+                  POSITION_STYLES.fukujin.backgroundColorVariant
+                )}
+              );
+              border-color: var(
+                ${getColorVarName(
+                  POSITION_STYLES.fukujin.foregroundColor,
+                  POSITION_STYLES.fukujin.textColorVariant
+                )}
+              );
               text-align: center;
               width: ${((fukujin - center) / (under + selected)) * 100}%;
               min-width: max-content;
@@ -111,12 +123,18 @@ export const PositionCounter: React.FC<PositionCounterProps> = props => {
         {selected - fukujin !== 0 && (
           <div
             css={css`
-              background-color: ${theme.colors.theme[
-                POSITION_STYLES.selected.backgroundColor
-              ][POSITION_STYLES.selected.backgroundColorVariant]};
-              border-color: ${theme.colors.theme[
-                POSITION_STYLES.selected.foregroundColor
-              ][POSITION_STYLES.selected.textColorVariant]};
+              background-color: var(
+                ${getColorVarName(
+                  POSITION_STYLES.selected.backgroundColor,
+                  POSITION_STYLES.selected.backgroundColorVariant
+                )}
+              );
+              border-color: var(
+                ${getColorVarName(
+                  POSITION_STYLES.selected.foregroundColor,
+                  POSITION_STYLES.selected.textColorVariant
+                )}
+              );
               text-align: center;
               width: ${((selected - fukujin) / (under + selected)) * 100}%;
               min-width: max-content;
@@ -141,12 +159,18 @@ export const PositionCounter: React.FC<PositionCounterProps> = props => {
         {under !== 0 && (
           <div
             css={css`
-              background-color: ${theme.colors.theme[
-                POSITION_STYLES.under.backgroundColor
-              ][POSITION_STYLES.under.backgroundColorVariant]};
-              border-color: ${theme.colors.theme[
-                POSITION_STYLES.under.foregroundColor
-              ][POSITION_STYLES.under.textColorVariant]};
+              background-color: var(
+                ${getColorVarName(
+                  POSITION_STYLES.under.backgroundColor,
+                  POSITION_STYLES.under.backgroundColorVariant
+                )}
+              );
+              border-color: var(
+                ${getColorVarName(
+                  POSITION_STYLES.under.foregroundColor,
+                  POSITION_STYLES.under.textColorVariant
+                )}
+              );
               text-align: center;
               line-height: 28px;
               width: ${(under / (under + selected)) * 100}%;

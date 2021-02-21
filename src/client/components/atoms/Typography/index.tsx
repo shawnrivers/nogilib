@@ -6,7 +6,7 @@ import {
   FONT_FAMILY,
   TypographyKey,
 } from 'client/styles/tokens/typography';
-import { useAppTheme } from 'client/styles/tokens';
+import { commonStyles } from 'client/styles/tokens';
 import {
   ThemeColorsForeground,
   ThemeColorVariants,
@@ -85,7 +85,6 @@ export const Typography: React.FC<TypographyProps> = props => {
     children,
     ...restProps
   } = props;
-  const theme = useAppTheme();
   const Element = element ?? variantMapping[variant];
   const fontFamilyValue =
     fontFamily !== undefined
@@ -93,7 +92,7 @@ export const Typography: React.FC<TypographyProps> = props => {
       : FONT_FAMILY[defaultFontFamilyMapping[variant]];
   const styles = React.useMemo(() => {
     const stylesResult = [
-      theme.typography[variant],
+      commonStyles.typography[variant],
       css`
         color: var(${getColorVarName(textColor.on, textColor.variant)});
         font-weight: ${bold ? 700 : undefined};
@@ -106,15 +105,7 @@ export const Typography: React.FC<TypographyProps> = props => {
     }
 
     return stylesResult;
-  }, [
-    bold,
-    textColor,
-    fontFamilyValue,
-    ellipsis,
-    theme.typography,
-    variant,
-    capitalize,
-  ]);
+  }, [bold, textColor, fontFamilyValue, ellipsis, variant, capitalize]);
 
   return (
     <Element css={styles} {...restProps}>

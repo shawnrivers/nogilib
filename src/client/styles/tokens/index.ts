@@ -1,4 +1,3 @@
-import { useTheme as useEmotionTheme } from '@emotion/react';
 import { BORDER_RADIUS } from './borderRadius';
 import { BREAK_POINTS } from './breakPoints';
 import {
@@ -56,5 +55,3 @@ export const themes = {
   light: lightTheme,
   dark: darkTheme,
 };
-
-export const useAppTheme = () => useEmotionTheme();

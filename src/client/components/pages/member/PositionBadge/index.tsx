@@ -2,23 +2,23 @@
 import { css } from '@emotion/core';
 import * as React from 'react';
 import { PositionType } from 'server/actors/Members/constants/position';
-import { useAppTheme } from 'client/styles/tokens';
+import { commonStyles } from 'client/styles/tokens';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { Typography } from 'client/components/atoms/Typography';
 import { POSITION_STYLES } from 'client/styles/positionStyles';
+import { getColorVarName } from 'client/styles/tokens/colors';
 
 const NoneBadge: React.FC = () => {
-  const theme = useAppTheme();
-
   return (
     <div
       css={css`
-        background-color: ${theme.colors.theme.onBackground.variant1};
-        box-shadow: ${theme.elevation[
+        background-color: var(${getColorVarName('onBackground', 'variant1')});
+        box-shadow: ${commonStyles.elevations[
           componentElevationKey.componentOnBackground
         ].boxShadow};
-        z-index: ${theme.elevation[componentElevationKey.componentOnBackground]
-          .zIndex};
+        z-index: ${commonStyles.elevations[
+          componentElevationKey.componentOnBackground
+        ].zIndex};
         height: 3px;
         margin: 11px 8px;
         width: 12px;
@@ -32,7 +32,6 @@ export type PositionBadgeProps = {
 };
 
 export const PositionBadge: React.FC<PositionBadgeProps> = props => {
-  const theme = useAppTheme();
   const positionStyles = React.useMemo(() => {
     switch (props.position) {
       case PositionType.Center:
@@ -59,19 +58,25 @@ export const PositionBadge: React.FC<PositionBadgeProps> = props => {
         <div
           css={css`
             border-radius: 50%;
-            background-color: ${theme.colors.theme[
-              positionStyles.backgroundColor
-            ][positionStyles.backgroundColorVariant]};
-            box-shadow: ${theme.elevation[
+            background-color: var(
+              ${getColorVarName(
+                positionStyles.backgroundColor,
+                positionStyles.backgroundColorVariant
+              )}
+            );
+            box-shadow: ${commonStyles.elevations[
               componentElevationKey.componentOnBackground
             ].boxShadow};
-            z-index: ${theme.elevation[
+            z-index: ${commonStyles.elevations[
               componentElevationKey.componentOnBackground
             ].zIndex};
             border: 2px solid
-              ${theme.colors.theme[positionStyles.foregroundColor][
-                positionStyles.textColorVariant
-              ]};
+              var(
+                ${getColorVarName(
+                  positionStyles.foregroundColor,
+                  positionStyles.textColorVariant
+                )}
+              );
             height: 24px;
             line-height: 24px;
             text-align: center;

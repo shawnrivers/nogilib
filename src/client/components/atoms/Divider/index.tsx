@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
-import { useAppTheme } from 'client/styles/tokens';
 import {
+  getColorVarName,
   ThemeColorsForeground,
   ThemeColorVariants,
 } from 'client/styles/tokens/colors';
@@ -22,12 +22,11 @@ export const Divider: React.FC<DividerProps> = props => {
     ...hrProps
   } = props;
 
-  const theme = useAppTheme();
-
   return (
     <hr
       css={css`
-        border: 1px solid ${theme.colors.theme[lineColor.on][lineColor.variant]};
+        border: 1px solid
+          var(${getColorVarName(lineColor.on, lineColor.variant)});
       `}
       {...hrProps}
     />
