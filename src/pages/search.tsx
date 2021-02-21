@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 import { getSearchData } from 'api/search';
 import { SearchPageData } from 'server/pages/search';
 import { useSearchIndex } from 'client/libs/flexSearch/hook';
-import { commonStyles, useAppTheme } from 'client/styles/tokens';
+import { commonStyles } from 'client/styles/tokens';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { useIntl } from 'client/i18n/hooks/useIntl';
 import {
@@ -18,6 +18,7 @@ import { toCdNumber } from 'utils/string';
 import { Typography } from 'client/components/atoms/Typography';
 import { PageContent } from 'client/components/layout/PageContent';
 import { PageHelmet } from 'client/components/layout/PageHelmet';
+import { getColorVarName } from 'client/styles/tokens/colors';
 
 type PageProps = {
   docs: (
@@ -65,7 +66,6 @@ const SearchPage: React.FC<PageProps> = props => {
 
   const hasNoResult = results.length === 0 && query !== '';
 
-  const theme = useAppTheme();
   const { Translation, getTranslation } = useTranslations();
   const { locale } = useRouter();
   const { formatMemberName, formatAlbumType } = useIntl();
@@ -147,7 +147,7 @@ const SearchPage: React.FC<PageProps> = props => {
     }
 
     return { members, cds, songs };
-  }, [results, formatMemberName, getTranslation, locale]);
+  }, [results, formatMemberName, getTranslation, locale, formatAlbumType]);
 
   return (
     <>
@@ -186,9 +186,11 @@ const SearchPage: React.FC<PageProps> = props => {
                   width: 100%;
                   border-width: 2px;
                   border-style: solid;
-                  border-color: ${theme.colors.theme.onBackground.variant1};
-                  border-radius: ${theme.borderRadius.xl};
-                  padding: ${theme.spacing.s};
+                  border-color: var(
+                    ${getColorVarName('onBackground', 'variant1')}
+                  );
+                  border-radius: ${commonStyles.borderRadius.xl};
+                  padding: ${commonStyles.spacing.s};
                   transition: border-color 0.2s linear;
                   box-sizing: border-box;
                   color: inherit;
@@ -197,11 +199,13 @@ const SearchPage: React.FC<PageProps> = props => {
                   font-weight: inherit;
 
                   &::placeholder {
-                    color: ${theme.colors.theme.onBackground.variant1};
+                    color: var(${getColorVarName('onBackground', 'variant1')});
                   }
 
                   &.focus-visible {
-                    border-color: ${theme.colors.theme.onBackground.standard};
+                    border-color: var(
+                      ${getColorVarName('onBackground', 'standard')}
+                    );
                   }
                 `}
               />

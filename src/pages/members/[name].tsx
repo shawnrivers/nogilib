@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { getMemberData } from 'api/member';
 import { MemberPageData } from 'server/pages/member';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
-import { commonStyles, useAppTheme } from 'client/styles/tokens';
+import { commonStyles } from 'client/styles/tokens';
 import { useIntl } from 'client/i18n/hooks/useIntl';
 import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
 import { PageHelmet } from 'client/components/layout/PageHelmet';
@@ -98,7 +98,6 @@ const MemberPage: React.FC<PageProps> = props => {
 
   const { locale } = useRouter();
   const { Translation, getTranslation } = useTranslations();
-  const theme = useAppTheme();
   const { formatWords, formatDate, formatWordsWithCommas } = useIntl();
 
   const shouldShowPositionCounter = React.useMemo(
@@ -167,14 +166,14 @@ const MemberPage: React.FC<PageProps> = props => {
               justify-content: center;
 
               & > * {
-                margin: ${theme.spacing.s};
+                margin: ${commonStyles.spacing.s};
               }
             `}
           >
             <div
               css={css`
                 border-radius: ${commonStyles.borderRadius.m};
-                box-shadow: ${theme.elevation[
+                box-shadow: ${commonStyles.elevations[
                   componentElevationKey.componentOnBackground
                 ].boxShadow};
                 overflow: hidden;
@@ -201,7 +200,7 @@ const MemberPage: React.FC<PageProps> = props => {
                 display: grid;
                 grid-template-columns: max-content auto;
                 grid-template-rows: auto;
-                grid-gap: ${theme.spacing.s};
+                grid-gap: ${commonStyles.spacing.s};
                 margin-top: 0.5em;
                 align-items: center;
               `}
@@ -407,7 +406,7 @@ const MemberPage: React.FC<PageProps> = props => {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    margin: ${theme.spacing.xxs};
+                    margin: ${commonStyles.spacing.xxs};
                   `}
                 >
                   <Typography
@@ -577,7 +576,7 @@ const MemberPage: React.FC<PageProps> = props => {
                   css={css`
                     margin: ${commonStyles.spacing.xs};
                     border-radius: ${commonStyles.borderRadius.xs};
-                    box-shadow: ${theme.elevation[
+                    box-shadow: ${commonStyles.elevations[
                       componentElevationKey.componentOnBackground
                     ].boxShadow};
                     width: 110px;

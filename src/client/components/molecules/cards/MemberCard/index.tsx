@@ -8,16 +8,16 @@ import {
 } from 'client/components/atoms/Typography';
 import { Card, CardProps } from 'client/components/atoms/Card';
 import { PositionType } from 'server/actors/Members/constants/position';
-import { commonStyles, useAppTheme } from 'client/styles/tokens';
+import { commonStyles } from 'client/styles/tokens';
 import { BORDER_RADIUS } from 'client/styles/tokens/borderRadius';
 import { POSITION_STYLES } from 'client/styles/positionStyles';
+import { getColorVarName } from 'client/styles/tokens/colors';
 
 const PositionBadge: React.FC<{
   position: PositionType.Center | PositionType.Fukujin;
   borderRadius: MemberCardProps['borderRadius'];
 }> = props => {
   const { position, borderRadius } = props;
-  const theme = useAppTheme();
 
   const positionStylesKey =
     position === PositionType.Center
@@ -25,33 +25,33 @@ const PositionBadge: React.FC<{
       : POSITION_STYLES.fukujin;
 
   const badgeStyles = React.useMemo(() => {
-    const backgroundColor =
-      theme.colors.theme[positionStylesKey.backgroundColor][
-        positionStylesKey.backgroundColorVariant
-      ];
+    const backgroundColorVarName = getColorVarName(
+      positionStylesKey.backgroundColor,
+      positionStylesKey.backgroundColorVariant
+    );
 
     const borderRadiusStyle = `0
     ${BORDER_RADIUS[borderRadius ?? 's']} 0
     ${BORDER_RADIUS.s}`;
 
-    const borderColor =
-      theme.colors.theme[positionStylesKey.foregroundColor][
-        positionStylesKey.textColorVariant
-      ];
+    const borderColorVarName = getColorVarName(
+      positionStylesKey.foregroundColor,
+      positionStylesKey.textColorVariant
+    );
 
     return css`
       display: inline-block;
       border-radius: ${borderRadiusStyle};
       border-width: 2px;
       border-style: solid;
-      border-color: ${borderColor};
-      background-color: ${backgroundColor};
+      border-color: var(${borderColorVarName});
+      background-color: var(${backgroundColorVarName});
       width: 24px;
       height: 28px;
       text-align: center;
-      box-shadow: ${theme.elevation[1].boxShadow};
+      box-shadow: ${commonStyles.elevations[1].boxShadow};
     `;
-  }, [positionStylesKey, borderRadius, theme]);
+  }, [positionStylesKey, borderRadius]);
 
   return (
     <div css={badgeStyles}>

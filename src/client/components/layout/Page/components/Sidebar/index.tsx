@@ -3,7 +3,7 @@ import { css } from '@emotion/core';
 import * as React from 'react';
 import { motion } from 'framer-motion';
 import { CloseIcon } from 'client/components/atoms/icons/CloseIcon';
-import { useAppTheme } from 'client/styles/tokens';
+import { commonStyles } from 'client/styles/tokens';
 import {
   getDiscographyUrl,
   getMembersUrl,
@@ -18,6 +18,7 @@ import {
 } from 'client/components/molecules/links/TextLink';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { Divider } from 'client/components/atoms/Divider';
+import { getColorVarName } from 'client/styles/tokens/colors';
 
 type SidebarItemProps = Omit<
   TextLinkProps,
@@ -84,7 +85,6 @@ export type SidebarProps = {
 } & React.HTMLAttributes<HTMLElement>;
 
 export const Sidebar: React.FC<SidebarProps> = props => {
-  const theme = useAppTheme();
   const { getTranslation } = useTranslations();
   const { open, menuButtonRef, onClose, ...restProps } = props;
 
@@ -123,7 +123,8 @@ export const Sidebar: React.FC<SidebarProps> = props => {
           pointer-events: none;
           position: fixed;
           width: 100vw;
-          z-index: ${theme.elevation[componentElevationKey.sidebar].zIndex};
+          z-index: ${commonStyles.elevations[componentElevationKey.sidebar]
+            .zIndex};
         `}
       />
       <motion.div
@@ -139,7 +140,8 @@ export const Sidebar: React.FC<SidebarProps> = props => {
           height: 100vh;
           position: fixed;
           width: 100vw;
-          z-index: ${theme.elevation[componentElevationKey.sidebar].zIndex};
+          z-index: ${commonStyles.elevations[componentElevationKey.sidebar]
+            .zIndex};
         `}
       />
       <motion.nav
@@ -152,10 +154,11 @@ export const Sidebar: React.FC<SidebarProps> = props => {
         transition={transition}
         aria-label={getTranslation('menu')}
         css={css`
-          background-color: ${theme.colors.theme.secondary.variant0};
-          box-shadow: ${theme.elevation[componentElevationKey.sidebar]
+          background-color: var(${getColorVarName('secondary', 'variant0')});
+          box-shadow: ${commonStyles.elevations[componentElevationKey.sidebar]
             .boxShadow};
-          z-index: ${theme.elevation[componentElevationKey.sidebar].zIndex};
+          z-index: ${commonStyles.elevations[componentElevationKey.sidebar]
+            .zIndex};
           width: 70vw;
           height: 100vh;
           max-width: 400px;
@@ -174,18 +177,20 @@ export const Sidebar: React.FC<SidebarProps> = props => {
           backgroundColorVariant="standard"
           tabIndex={open ? 0 : -1}
           css={css`
-            margin: ${theme.spacing.m};
+            margin: ${commonStyles.spacing.m};
           `}
         >
           <CloseIcon
-            fill={theme.colors.theme.onSecondary.standard}
             title={getTranslation('back')}
+            css={css`
+              fill: var(${getColorVarName('onSecondary', 'standard')});
+            `}
           />
         </BaseButton>
         <div
           css={css`
             text-align: center;
-            margin: ${theme.spacing.l} auto;
+            margin: ${commonStyles.spacing.l} auto;
           `}
         >
           <ul>

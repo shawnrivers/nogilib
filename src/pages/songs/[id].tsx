@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
 import { PageContent } from 'client/components/layout/PageContent';
 import { Hashtag } from 'client/components/atoms/Hashtag';
-import { commonStyles, useAppTheme } from 'client/styles/tokens';
+import { commonStyles } from 'client/styles/tokens';
 import { TextDivider } from 'client/components/molecules/TextDivider';
 import { MemberCard } from 'client/components/molecules/cards/MemberCard';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
@@ -110,7 +110,6 @@ export const SongPage: React.FC<SongPageProps> = props => {
     performers,
     creators,
   } = props;
-  const theme = useAppTheme();
   const { Translation, getTranslation } = useTranslations();
   const {
     formatWords,
@@ -180,7 +179,7 @@ export const SongPage: React.FC<SongPageProps> = props => {
                 justify-content: center;
 
                 & > * {
-                  margin: ${theme.spacing.s};
+                  margin: ${commonStyles.spacing.s};
                 }
               `}
             >
@@ -188,7 +187,7 @@ export const SongPage: React.FC<SongPageProps> = props => {
                 css={css`
                   margin: ${commonStyles.spacing.s};
                   border-radius: ${commonStyles.borderRadius.m};
-                  box-shadow: ${theme.elevation[
+                  box-shadow: ${commonStyles.elevations[
                     componentElevationKey.componentOnBackground
                   ].boxShadow};
                   overflow: hidden;
@@ -215,7 +214,7 @@ export const SongPage: React.FC<SongPageProps> = props => {
                     display: grid;
                     grid-template-columns: max-content auto;
                     grid-template-rows: auto;
-                    grid-gap: ${theme.spacing.m};
+                    grid-gap: ${commonStyles.spacing.m};
                     margin-top: 0.5em;
                     align-items: center;
                   `}

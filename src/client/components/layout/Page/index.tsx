@@ -3,7 +3,7 @@ import { css } from '@emotion/core';
 import * as React from 'react';
 import { NavigationBar } from 'client/components/layout/Page/components/NavigationBar';
 import { Sidebar } from 'client/components/layout/Page/components/Sidebar';
-import { commonStyles, useAppTheme } from 'client/styles/tokens';
+import { commonStyles } from 'client/styles/tokens';
 import { BaseButtonRef } from 'client/components/atoms/BaseButton';
 import { MENU_BUTTON_ID } from 'client/constants/ids';
 import { Surface } from 'client/components/atoms/Surface';
@@ -67,7 +67,6 @@ const SkipLink: React.FC = () => {
 };
 
 export const Page: React.FC = props => {
-  const theme = useAppTheme();
   const [isSidebarOpen, toggleSidebar] = React.useState(false);
   const handleOpenSidebar = React.useCallback(() => {
     toggleSidebar(true);
@@ -91,7 +90,7 @@ export const Page: React.FC = props => {
           display: none;
         }
 
-        @media screen and (max-width: ${theme.breakPoints.sp}) {
+        @media screen and (max-width: ${commonStyles.breakPoints.sp}) {
           & .large {
             display: none;
           }

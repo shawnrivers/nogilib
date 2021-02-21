@@ -11,7 +11,7 @@ import { Surface } from 'client/components/atoms/Surface';
 import { Typography } from 'client/components/atoms/Typography';
 import { useOnClickOutside } from 'client/hooks/useOnClickOutside';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
-import { commonStyles, useAppTheme } from 'client/styles/tokens';
+import { commonStyles } from 'client/styles/tokens';
 import {
   getDiscographyUrl,
   getHomeUrl,
@@ -25,6 +25,7 @@ import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { MENU_BUTTON_ID } from 'client/constants/ids';
 import { useThemeContext } from 'client/store/theme/hook/useThemeContext';
 import { Language } from 'client/types/language';
+import { getColorVarName } from 'client/styles/tokens/colors';
 
 const settingDropdownId = 'setting-dropdown';
 const settingItemClass = 'setting-item';
@@ -105,7 +106,6 @@ const Settings: React.FC = () => {
   const languageListRef = React.useRef<HTMLUListElement>(null);
   const settingsButtonRef = React.useRef<BaseButtonRef>(null);
 
-  const theme = useAppTheme();
   const { themeMode, setTheme } = useThemeContext();
 
   const { getTranslation } = useTranslations();
@@ -179,7 +179,11 @@ const Settings: React.FC = () => {
         aria-haspopup="dialog"
         ref={settingsButtonRef}
       >
-        <SettingsIcon fill={theme.colors.theme.onSurface.standard} />
+        <SettingsIcon
+          css={css`
+            fill: var(${getColorVarName('onSurface', 'standard')});
+          `}
+        />
       </BaseButton>
       <motion.div
         initial={{ scale: 0, opacity: 0 }}
@@ -271,7 +275,6 @@ export const NavigationBar: React.FC<{
   onOpenSidebar: () => void;
   menuButtonRef?: React.RefObject<BaseButtonRef>;
 }> = props => {
-  const theme = useAppTheme();
   const { getTranslation } = useTranslations();
 
   return (
@@ -365,7 +368,11 @@ export const NavigationBar: React.FC<{
                   margin-left: ${commonStyles.spacing.xxs};
                 `}
               >
-                <MenuIcon fill={theme.colors.theme.onSurface.standard} />
+                <MenuIcon
+                  css={css`
+                    fill: var(${getColorVarName('onSurface', 'standard')});
+                  `}
+                />
               </BaseButton>
             </div>
           </nav>

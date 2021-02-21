@@ -10,8 +10,9 @@ import {
   BaseLinkProps,
   BaseLinkRef,
 } from 'client/components/atoms/BaseLink';
-import { useAppTheme, commonStyles } from 'client/styles/tokens';
+import { commonStyles } from 'client/styles/tokens';
 import {
+  getColorVarName,
   mapBackgroundToForeground,
   ThemeColorKey,
   ThemeColorsBackground,
@@ -54,8 +55,6 @@ export const TextLink = React.forwardRef<TextLinkRef, TextLinkProps>(
       ...linkProps
     } = props;
 
-    const theme = useAppTheme();
-
     const styles = React.useMemo(
       () =>
         disabled
@@ -65,15 +64,18 @@ export const TextLink = React.forwardRef<TextLinkRef, TextLinkProps>(
               transition: background-color 0.3s ease-out;
               text-decoration: ${showUnderline ? 'underline' : 'none'};
               text-underline-position: under;
-              text-decoration-color: ${theme.colors.theme[
-                mapBackgroundToForeground(backgroundType)
-              ][underlineColorVariant]};
+              text-decoration-color: var(
+                ${getColorVarName(
+                  mapBackgroundToForeground(backgroundType),
+                  underlineColorVariant
+                )}
+              );
 
               @media (hover: hover) and (pointer: fine) {
                 &:hover {
-                  background-color: ${theme.colors.theme[backgroundType][
-                    backgroundColorVariant
-                  ]};
+                  background-color: var(
+                    ${getColorVarName(backgroundType, backgroundColorVariant)}
+                  );
                 }
               }
             `,
@@ -82,7 +84,6 @@ export const TextLink = React.forwardRef<TextLinkRef, TextLinkProps>(
         backgroundColorVariant,
         backgroundType,
         showUnderline,
-        theme.colors.theme,
         underlineColorVariant,
       ]
     );

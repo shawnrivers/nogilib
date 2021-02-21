@@ -3,9 +3,10 @@ import { css } from '@emotion/core';
 import * as React from 'react';
 import { ArrowBackIcon } from 'client/components/atoms/icons/ArrowBack';
 import { Typography } from 'client/components/atoms/Typography';
-import { commonStyles, useAppTheme } from 'client/styles/tokens';
+import { commonStyles } from 'client/styles/tokens';
 import { BaseButton } from 'client/components/atoms/BaseButton';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
+import { getColorVarName } from 'client/styles/tokens/colors';
 
 type HeaderProps = {
   title?: {
@@ -27,7 +28,6 @@ const Header: React.FC<HeaderProps> = props => {
     showBackButton = false,
     titleTextTransform = 'uppercase',
   } = props;
-  const theme = useAppTheme();
   const { getTranslation } = useTranslations();
 
   const handleGoBack = React.useCallback(() => window.history.back(), []);
@@ -54,7 +54,9 @@ const Header: React.FC<HeaderProps> = props => {
             <ArrowBackIcon
               width={32}
               height={32}
-              fill={theme.colors.theme.onBackground.standard}
+              css={css`
+                fill: var(${getColorVarName('onBackground', 'standard')});
+              `}
             />
           </BaseButton>
         </nav>

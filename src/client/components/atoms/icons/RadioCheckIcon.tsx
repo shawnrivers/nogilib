@@ -1,5 +1,11 @@
-import { GlobalColorKey, ThemeColorKey } from 'client/styles/tokens/colors';
-import { useAppTheme } from 'client/styles/tokens';
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/core';
+import {
+  getColorVarName,
+  getGlobalColorVarName,
+  GlobalColorKey,
+  ThemeColorKey,
+} from 'client/styles/tokens/colors';
 
 type RadioCheckIconProps = React.SVGAttributes<SVGElement> & {
   title?: string;
@@ -16,18 +22,19 @@ export const RadioCheckIcon: React.FC<RadioCheckIconProps> = props => {
     checkColor = 'purple1',
     ...svgProps
   } = props;
-  const theme = useAppTheme();
 
   return (
     <svg
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill={
-        isChecked
-          ? theme.colors.global[checkColor]
-          : theme.colors.theme.onBackground[unCheckColor]
-      }
+      css={css`
+        fill: var(
+          ${isChecked
+            ? getGlobalColorVarName(checkColor)
+            : getColorVarName('onBackground', unCheckColor)}
+        );
+      `}
       {...svgProps}
     >
       <title>{title}</title>
@@ -37,7 +44,11 @@ export const RadioCheckIcon: React.FC<RadioCheckIconProps> = props => {
         cx="12"
         cy="12"
         r="5"
-        fill={isChecked ? theme.colors.global[checkColor] : 'none'}
+        css={css`
+          fill: ${isChecked
+            ? `var(${getGlobalColorVarName(checkColor)})`
+            : 'none'};
+        `}
       />
     </svg>
   );

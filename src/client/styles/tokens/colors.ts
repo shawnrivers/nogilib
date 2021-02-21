@@ -113,13 +113,6 @@ export const mapBackgroundToForeground = (
   }
 };
 
-export function getColorVarName(
-  type: keyof ThemeColorsBackground | keyof ThemeColorsForeground,
-  variant: keyof ThemeColorVariants
-): string {
-  return `--color-${type}-${variant}`;
-}
-
 export type ColorTheme = {
   theme: ThemeColors;
   global: typeof GLOBAL_COLORS;
@@ -219,3 +212,18 @@ export const DARK_COLOR_THEME: ColorTheme = {
   global: GLOBAL_COLORS,
   glowStick: GLOW_STICK_COLORS,
 };
+
+export function getColorVarName(
+  type: keyof ThemeColorsBackground | keyof ThemeColorsForeground,
+  variant: keyof ThemeColorVariants
+): string {
+  return `--color-${type}-${variant}`;
+}
+
+export function getGlobalColorVarName(color: GlobalColorKey): string {
+  return `--${color}`;
+}
+
+export function getGlowStickColorVarName(color: GlowStickColorType): string {
+  return `--glow-stick-color-${color.replace(' ', '-')}`;
+}
