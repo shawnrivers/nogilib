@@ -8,6 +8,10 @@
     themeMode = localStorageThemeMode;
   }
 
+  window.__setTheme = function (theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+  };
+
   window.__setThemeMode = function (themeMode) {
     var theme = 'light';
 
@@ -28,7 +32,7 @@
       theme = themeMode;
     }
 
-    document.documentElement.setAttribute('data-theme', theme);
+    window.__setTheme(theme);
     window.__themeMode = themeMode;
     window.localStorage.setItem('themeMode', themeMode);
   };
