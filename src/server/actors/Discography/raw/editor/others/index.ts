@@ -31,4 +31,18 @@ export const otherCdsRawArray: DiscographyRawArray = [
       },
     ],
   }),
+  createOtherCdRaw({
+    title: '１・２・３',
+    number: '3',
+    type: 'digital',
+    release: '2021-02-19',
+    previousSingle: '26',
+    cdTypes: ['T'],
+    songs: [
+      {
+        title: SONGS['１・２・３'].title,
+        inCdType: ['T'],
+      },
+    ],
+  }),
 ];

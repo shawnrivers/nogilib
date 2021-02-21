@@ -2,6 +2,7 @@ import { arrayToObject } from 'utils/array';
 import { TitleKeyArray } from 'server/types/commons';
 
 export enum SongTitle {
+  OneTwoThree = '１・２・３',
   YuujouPierce = '友情ピアス',
   Ashigaaruriyuu = '明日がある理由',
   WildernessWorld = 'Wilderness world',
@@ -221,6 +222,10 @@ export enum SongTitle {
 }
 
 const SongsTitleKeyArray: TitleKeyArray<SongTitle> = [
+  {
+    title: SongTitle.OneTwoThree,
+    key: '123',
+  },
   {
     title: SongTitle.YuujouPierce,
     key: 'yuujoupierce',
@@ -1087,7 +1092,6 @@ const SongsTitleKeyArray: TitleKeyArray<SongTitle> = [
   },
 ].map(titleKey => ({
   ...titleKey,
-  // Make sure all keys are lower-cased
   key: titleKey.key.toLowerCase(),
 }));
 

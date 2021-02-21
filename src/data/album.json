@@ -4253,5 +4253,29 @@
         "albumProfileImage": "/images/members/singles/25/saitouasuka.jpg"
       }
     ]
+  },
+  {
+    "key": "123",
+    "title": "１・２・３",
+    "type": "digital",
+    "number": "3",
+    "artworks": [
+      {
+        "url": "/images/artworks/digital/3/T.jpg",
+        "type": "T"
+      }
+    ],
+    "release": "2021-02-19",
+    "songs": [
+      {
+        "key": "123",
+        "title": "１・２・３",
+        "type": "unit",
+        "inCdType": [
+          "T"
+        ]
+      }
+    ],
+    "centers": []
   }
 ]

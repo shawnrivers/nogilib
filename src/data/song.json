@@ -35064,7 +35064,9 @@
       "arrange": [
         "カワノミチオ"
       ],
-      "direct": []
+      "direct": [
+        "高野寛地"
+      ]
     },
     "single": {
       "title": "僕は僕を好きになる",
@@ -43031,6 +43033,77 @@
             "firstNameEn": "kazumi"
           },
           "profileImage": "/images/members/singles/25/takayamakazumi.jpg",
+          "position": null,
+          "isMember": true
+        }
+      ]
+    ]
+  },
+  {
+    "key": "123",
+    "title": "１・２・３",
+    "type": "unit",
+    "artwork": "/images/artworks/digital/3/T.jpg",
+    "creators": {
+      "lyrics": [
+        "まふまふ"
+      ],
+      "compose": [
+        "まふまふ"
+      ],
+      "arrange": [
+        "APAZZI",
+        "Akira Sunset"
+      ],
+      "direct": [
+        "月田茂"
+      ]
+    },
+    "single": {
+      "title": "",
+      "number": ""
+    },
+    "albums": [],
+    "otherCds": [
+      {
+        "title": "１・２・３",
+        "number": "3"
+      }
+    ],
+    "performersTag": {
+      "name": "からあげ姉妹",
+      "album": {
+        "type": "digital",
+        "number": "3"
+      }
+    },
+    "performers": [
+      [
+        {
+          "name": "ikutaerika",
+          "nameNotations": {
+            "lastName": "生田",
+            "firstName": "絵梨花",
+            "lastNameFurigana": "いくた",
+            "firstNameFurigana": "えりか",
+            "lastNameEn": "ikuta",
+            "firstNameEn": "erika"
+          },
+          "profileImage": "/images/members/singles/26/ikutaerika.jpg",
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "matsumurasayuri",
+          "nameNotations": {
+            "lastName": "松村",
+            "firstName": "沙友理",
+            "lastNameFurigana": "まつむら",
+            "firstNameFurigana": "さゆり",
+            "lastNameEn": "matsumura",
+            "firstNameEn": "sayuri"
+          },
+          "profileImage": "/images/members/singles/26/matsumurasayuri.jpg",
           "position": null,
           "isMember": true
         }
