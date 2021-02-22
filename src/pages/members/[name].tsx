@@ -19,12 +19,108 @@ import { InfoItemLabel } from 'client/components/molecules/typography/info/InfoI
 import { InfoItemValue } from 'client/components/molecules/typography/info/InfoItemValue';
 import { SectionSubtitle } from 'client/components/molecules/typography/SectionSubtitle';
 import { GlowStickBadge } from 'client/components/pages/member/GlowStickBadge';
-import { PositionBadge } from 'client/components/pages/member/PositionBadge';
+import {
+  PositionBadge,
+  PositionBadgeProps,
+} from 'client/components/pages/member/PositionBadge';
 import { PageContent } from 'client/components/layout/PageContent';
 import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
 import { PositionType } from 'server/actors/Members/constants/position';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { Divider } from 'client/components/atoms/Divider';
+import { filterDuplicate } from 'utils/array';
+
+/**
+ * Local components
+ */
+
+const NON_ABSENT_POSITIONS = [
+  PositionType.Center,
+  PositionType.Fukujin,
+  PositionType.Selected,
+  PositionType.Under,
+];
+
+const PositionBadgeIndicator: React.FC<{
+  position: PositionBadgeProps['position'];
+}> = props => {
+  const { position } = props;
+  const { getTranslation } = useTranslations();
+  const caption = NON_ABSENT_POSITIONS.includes(position) ? position : 'absent';
+
+  return (
+    <div
+      css={css`
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      `}
+    >
+      <PositionBadge position={position} />
+      <Typography
+        variant="body3"
+        element="span"
+        textColor={{
+          on: 'onBackground',
+          variant: 'variant0',
+        }}
+        css={css`
+          text-transform: capitalize;
+          margin-top: 0.5em;
+          line-height: 1;
+        `}
+      >
+        {getTranslation(caption as any)}
+      </Typography>
+    </div>
+  );
+};
+
+function getPositionOrder(position: PositionType): number {
+  switch (position) {
+    case PositionType.Center:
+      return 4;
+    case PositionType.Fukujin:
+      return 3;
+    case PositionType.Selected:
+      return 2;
+    case PositionType.Under:
+      return 1;
+    default:
+      return 0;
+  }
+}
+
+const PositionBadgeIndicatorsGroup: React.FC<{
+  positionTypes: PositionType[];
+}> = props => {
+  return (
+    <ul
+      css={css`
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 1.5em;
+      `}
+    >
+      {props.positionTypes.map(position => (
+        <li
+          key={position}
+          css={css`
+            margin: 0.3em;
+            width: 60px;
+          `}
+        >
+          <PositionBadgeIndicator position={position} />
+        </li>
+      ))}
+    </ul>
+  );
+};
+
+/**
+ * Page component
+ */
 
 type PathParams = { name: string };
 
@@ -91,7 +187,6 @@ const MemberPage: React.FC<PageProps> = props => {
     corps,
     photoAlbums,
     positionsHistory,
-    positionsCounter,
     glowStickColor,
     gallery,
   } = props;
@@ -99,16 +194,6 @@ const MemberPage: React.FC<PageProps> = props => {
   const { locale } = useRouter();
   const { Translation, getTranslation } = useTranslations();
   const { formatWords, formatDate, formatWordsWithCommas } = useIntl();
-
-  const shouldShowPositionCounter = React.useMemo(
-    () =>
-      positionsCounter.center +
-        positionsCounter.fukujin +
-        positionsCounter.selected +
-        positionsCounter.under >
-      0,
-    [positionsCounter]
-  );
 
   useScrollRestoration();
 
@@ -128,6 +213,15 @@ const MemberPage: React.FC<PageProps> = props => {
     text: locale === 'ja' ? furiganaName : locale === 'zh' ? enName : kanjiName,
     lang: locale === 'ja' ? 'ja-Hira' : locale === 'zh' ? 'en' : 'ja',
   };
+
+  const positionTypes = React.useMemo(
+    () =>
+      filterDuplicate(positionsHistory.map(record => record.position)).sort(
+        (positionA, positionB) =>
+          getPositionOrder(positionB) - getPositionOrder(positionA)
+      ),
+    [positionsHistory]
+  );
 
   return (
     <>
@@ -426,7 +520,7 @@ const MemberPage: React.FC<PageProps> = props => {
                 </li>
               ))}
             </ol>
-            {shouldShowPositionCounter ? (
+            {positionTypes.length > 0 ? (
               <section>
                 <Divider
                   lineColor={{ on: 'onBackground', variant: 'variant1' }}
@@ -435,115 +529,7 @@ const MemberPage: React.FC<PageProps> = props => {
                     width: 80px;
                   `}
                 />
-                <ul
-                  css={css`
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    margin-top: 1.5em;
-                  `}
-                >
-                  <li
-                    css={css`
-                      display: flex;
-                      flex-direction: column;
-                      align-items: center;
-                      margin: 0.3em;
-                    `}
-                  >
-                    <PositionBadge position={PositionType.Center} />
-                    <Typography
-                      variant="body3"
-                      element="span"
-                      textColor={{
-                        on: 'onBackground',
-                        variant: 'variant0',
-                      }}
-                      css={css`
-                        text-transform: capitalize;
-                        margin-top: 0.3em;
-                        line-height: 1;
-                      `}
-                    >
-                      <Translation text="center" />
-                    </Typography>
-                  </li>
-                  <li
-                    css={css`
-                      display: flex;
-                      flex-direction: column;
-                      align-items: center;
-                      margin: 0.3em;
-                    `}
-                  >
-                    <PositionBadge position={PositionType.Fukujin} />
-                    <Typography
-                      variant="body3"
-                      element="span"
-                      textColor={{
-                        on: 'onBackground',
-                        variant: 'variant0',
-                      }}
-                      css={css`
-                        text-transform: capitalize;
-                        margin-top: 0.3em;
-                        line-height: 1;
-                      `}
-                    >
-                      <Translation text="fukujin" />
-                    </Typography>
-                  </li>
-                  <li
-                    css={css`
-                      display: flex;
-                      flex-direction: column;
-                      align-items: center;
-                      margin: 0.3em;
-                    `}
-                  >
-                    <PositionBadge position={PositionType.Selected} />
-                    <Typography
-                      variant="body3"
-                      element="span"
-                      textColor={{
-                        on: 'onBackground',
-                        variant: 'variant0',
-                      }}
-                      css={css`
-                        text-transform: capitalize;
-                        margin-top: 0.3em;
-                        line-height: 1;
-                      `}
-                    >
-                      <Translation text="selected" />
-                    </Typography>
-                  </li>
-                  <li
-                    css={css`
-                      display: flex;
-                      flex-direction: column;
-                      align-items: center;
-                      margin: 0.3em;
-                    `}
-                  >
-                    <PositionBadge position={PositionType.Under} />
-                    <Typography
-                      variant="body3"
-                      element="span"
-                      textColor={{
-                        on: 'onBackground',
-                        variant: 'variant0',
-                      }}
-                      css={css`
-                        text-transform: capitalize;
-                        margin-top: 0.3em;
-                        line-height: 1;
-                      `}
-                    >
-                      <Translation text="under" />
-                    </Typography>
-                  </li>
-                </ul>
+                <PositionBadgeIndicatorsGroup positionTypes={positionTypes} />
               </section>
             ) : null}
           </section>

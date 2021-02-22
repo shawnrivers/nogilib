@@ -662,6 +662,11 @@ const dictionary = {
     ja: 'ページ',
     zh: '页面',
   },
+  absent: {
+    en: 'absent',
+    ja: '未参加',
+    zh: '未参加',
+  },
 };
 
 export type DictionaryKey = keyof typeof dictionary;
