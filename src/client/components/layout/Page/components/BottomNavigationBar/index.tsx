@@ -34,7 +34,7 @@ export const BottomNavigationBar: React.FC = () => {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 0.5em 0.5em 0.3em;
+            padding: 0.5em;
 
             & > * {
               flex: 1;
@@ -56,7 +56,7 @@ export const BottomNavigationBar: React.FC = () => {
               capitalize
               css={css`
                 margin-top: 0.3em;
-                height: 20px;
+                line-height: 1.2;
                 white-space: nowrap;
               `}
             >
@@ -77,7 +77,7 @@ export const BottomNavigationBar: React.FC = () => {
               capitalize
               css={css`
                 margin-top: 0.3em;
-                height: 20px;
+                line-height: 1.2;
                 white-space: nowrap;
               `}
             >
@@ -98,7 +98,7 @@ export const BottomNavigationBar: React.FC = () => {
               capitalize
               css={css`
                 margin-top: 0.3em;
-                height: 20px;
+                line-height: 1.2;
                 white-space: nowrap;
               `}
             >
