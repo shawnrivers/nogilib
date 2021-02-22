@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
 import * as React from 'react';
-import { NavigationBar } from 'client/components/layout/Page/components/NavigationBar';
+import { TopNavigationBar } from 'client/components/layout/Page/components/TopNavigationBar';
 import { Sidebar } from 'client/components/layout/Page/components/Sidebar';
 import { commonStyles } from 'client/styles/tokens';
 import { BaseButtonRef } from 'client/components/atoms/BaseButton';
@@ -100,7 +100,7 @@ export const Page: React.FC = props => {
       `}
     >
       <SkipLink />
-      <NavigationBar
+      <TopNavigationBar
         onOpenSidebar={handleOpenSidebar}
         menuButtonRef={menuButtonRef}
       />
