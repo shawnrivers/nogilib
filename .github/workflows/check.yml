@@ -1,0 +1,103 @@
+name: Codes Check
+
+on:
+  push:
+    branches: [$default-branch]
+  pull_request:
+    branches: [$default-branch]
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+      - name: Cache application node_modules
+        id: cache-npm-modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: npm-${{ hashFiles('package-lock.json') }}
+      - name: Install dependencies
+        if: steps.cache-npm-modules.outputs.cache-hit != 'true'
+        run: npm install
+      - name: Format
+        run: npm run format
+
+  type-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+      - name: Cache application node_modules
+        id: cache-npm-modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: npm-${{ hashFiles('package-lock.json') }}
+      - name: Install dependencies
+        if: steps.cache-npm-modules.outputs.cache-hit != 'true'
+        run: npm install
+      - name: Check type
+        run: npm run type-check
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+      - name: Cache application node_modules
+        id: cache-npm-modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: npm-${{ hashFiles('package-lock.json') }}
+      - name: Install dependencies
+        if: steps.cache-npm-modules.outputs.cache-hit != 'true'
+        run: npm install
+      - name: Lint
+        run: npm run lint
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+      - name: Cache application node_modules
+        id: cache-npm-modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: npm-${{ hashFiles('package-lock.json') }}
+      - name: Install dependencies
+        if: steps.cache-npm-modules.outputs.cache-hit != 'true'
+        run: npm install
+      - name: Test
+        run: npm run test
+
+  data-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+      - name: Cache application node_modules
+        id: cache-npm-modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: npm-${{ hashFiles('package-lock.json') }}
+      - name: Install dependencies
+        if: steps.cache-npm-modules.outputs.cache-hit != 'true'
+        run: npm install
+      - name: Check data
+        run: npm run generate-data && test `git status -s src/data/* | wc -l` = 0 || (echo Generate and commit the latest data! && false)
