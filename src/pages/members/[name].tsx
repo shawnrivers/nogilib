@@ -429,7 +429,7 @@ const MemberPage: React.FC<PageProps> = props => {
             {shouldShowPositionCounter ? (
               <section>
                 <Divider
-                  lineColor={{ on: 'onBackground', variant: 'variant0' }}
+                  lineColor={{ on: 'onBackground', variant: 'variant1' }}
                   css={css`
                     margin-top: 1.5em;
                     width: 80px;
