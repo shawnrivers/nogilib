@@ -91,6 +91,9 @@ export const PositionBadge: React.FC<PositionBadgeProps> = props => {
               variant: positionStyles.textColorVariant,
             }}
             bold={positionStyles.bold}
+            css={css`
+              margin-top: 0.3em;
+            `}
           >
             {positionStyles.text}
           </Typography>
