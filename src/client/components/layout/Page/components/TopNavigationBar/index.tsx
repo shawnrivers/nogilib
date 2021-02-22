@@ -271,7 +271,7 @@ const Settings: React.FC = () => {
   );
 };
 
-export const NavigationBar: React.FC<{
+export const TopNavigationBar: React.FC<{
   onOpenSidebar: () => void;
   menuButtonRef?: React.RefObject<BaseButtonRef>;
 }> = props => {
