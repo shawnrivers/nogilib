@@ -11,6 +11,7 @@ import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { Typography } from 'client/components/atoms/Typography';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { PAGE_CONTENT_ID } from 'client/components/layout/PageContent';
+import { BottomNavigationBar } from 'client/components/layout/Page/components/BottomNavigationBar';
 
 const SkipLink: React.FC = () => {
   const { getTranslation } = useTranslations();
@@ -104,6 +105,7 @@ export const Page: React.FC = props => {
         onOpenSidebar={handleOpenSidebar}
         menuButtonRef={menuButtonRef}
       />
+      <BottomNavigationBar />
       <Sidebar
         open={isSidebarOpen}
         onClose={handleCloseSidebar}
