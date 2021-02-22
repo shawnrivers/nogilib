@@ -13,6 +13,7 @@ import { MembersIcon } from 'client/components/atoms/icons/MembersIcon';
 import { SearchIcon } from 'client/components/atoms/icons/SearchIcon';
 import { BaseLink } from 'client/components/atoms/BaseLink';
 import { Typography } from 'client/components/atoms/Typography';
+import { commonStyles } from 'client/styles/tokens';
 
 export const BottomNavigationBar: React.FC = () => {
   const { getTranslation } = useTranslations();
@@ -34,7 +35,8 @@ export const BottomNavigationBar: React.FC = () => {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 0.5em;
+            min-height: ${commonStyles.sizes.navigationBarHeight};
+            padding: 0 0.5em env(safe-area-inset-bottom);
 
             & > * {
               flex: 1;

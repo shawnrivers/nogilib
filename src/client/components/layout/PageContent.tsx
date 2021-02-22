@@ -106,7 +106,8 @@ export const PageContent: React.FC<HeaderProps> = props => {
         padding-left: ${commonStyles.spacing.m};
         padding-right: ${commonStyles.spacing.m};
         padding-bottom: calc(
-          ${commonStyles.spacing.xxl} + env(safe-area-inset-bottom)
+          ${commonStyles.sizes.navigationBarHeight} +
+            ${commonStyles.spacing.xxl} + env(safe-area-inset-bottom)
         );
       `}
       id={PAGE_CONTENT_ID}
