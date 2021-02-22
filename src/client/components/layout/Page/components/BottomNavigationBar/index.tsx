@@ -57,6 +57,7 @@ export const BottomNavigationBar: React.FC = () => {
               css={css`
                 margin-top: 0.3em;
                 height: 20px;
+                white-space: nowrap;
               `}
             >
               {getTranslation('discography')}
@@ -77,6 +78,7 @@ export const BottomNavigationBar: React.FC = () => {
               css={css`
                 margin-top: 0.3em;
                 height: 20px;
+                white-space: nowrap;
               `}
             >
               {getTranslation('members')}
@@ -97,6 +99,7 @@ export const BottomNavigationBar: React.FC = () => {
               css={css`
                 margin-top: 0.3em;
                 height: 20px;
+                white-space: nowrap;
               `}
             >
               {getTranslation('search')}

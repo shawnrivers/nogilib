@@ -4,7 +4,6 @@ import * as React from 'react';
 import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
 import { Card } from 'client/components/atoms/Card';
-import { MenuIcon } from 'client/components/atoms/icons/MenuIcon';
 import { RadioCheckIcon } from 'client/components/atoms/icons/RadioCheckIcon';
 import { SettingsIcon } from 'client/components/atoms/icons/SettingsIcon';
 import { Surface } from 'client/components/atoms/Surface';
@@ -22,7 +21,6 @@ import { Divider } from 'client/components/atoms/Divider';
 import { TextLink } from 'client/components/molecules/links/TextLink';
 import { BaseButton, BaseButtonRef } from 'client/components/atoms/BaseButton';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
-import { MENU_BUTTON_ID } from 'client/constants/ids';
 import { useThemeContext } from 'client/store/theme/hook/useThemeContext';
 import { Language } from 'client/types/language';
 import { getColorVarName } from 'client/styles/tokens/colors';
@@ -271,114 +269,93 @@ const Settings: React.FC = () => {
   );
 };
 
-export const TopNavigationBar: React.FC<{
-  onOpenSidebar: () => void;
-  menuButtonRef?: React.RefObject<BaseButtonRef>;
-}> = props => {
+export const TopNavigationBar: React.FC = () => {
   const { getTranslation } = useTranslations();
 
   return (
-    <div>
-      <Surface
-        backgroundColor="standard"
-        foregroundColor="standard"
-        elevation={componentElevationKey.navigationBar}
+    <Surface
+      backgroundColor="standard"
+      foregroundColor="standard"
+      elevation={componentElevationKey.navigationBar}
+      css={css`
+        width: 100vw;
+        height: ${commonStyles.sizes.navigationBarHeight};
+        position: fixed;
+        top: 0;
+      `}
+    >
+      <div
         css={css`
-          width: 100vw;
-          height: ${commonStyles.sizes.navigationBarHeight};
-          position: fixed;
-          top: 0;
+          max-width: ${commonStyles.breakPoints.maxContent};
+          height: 100%;
+          margin: auto;
+          padding: 0 ${commonStyles.spacing.l};
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
         `}
       >
-        <div
+        <nav
+          aria-label={getTranslation('page')}
           css={css`
-            max-width: ${commonStyles.breakPoints.maxContent};
-            height: 100%;
-            margin: auto;
-            padding: 0 ${commonStyles.spacing.l};
             display: flex;
-            justify-content: space-between;
             align-items: center;
           `}
         >
-          <nav
-            aria-label={getTranslation('page')}
+          <TextLink
+            href={getHomeUrl()}
+            typographyVariant="h6"
+            showUnderline={false}
+          >
+            NOGILIB
+          </TextLink>
+          <Typography
+            variant="h6"
+            element="span"
+            className="large"
             css={css`
-              display: flex;
-              align-items: center;
+              margin: 0 ${commonStyles.spacing.xs};
             `}
           >
-            <TextLink
-              href={getHomeUrl()}
-              typographyVariant="h6"
-              showUnderline={false}
-            >
-              NOGILIB
-            </TextLink>
-            <Typography
-              variant="h6"
-              element="span"
+            |
+          </Typography>
+          <div>
+            <div
               css={css`
-                margin: 0 ${commonStyles.spacing.xs};
+                display: flex;
+                align-items: center;
               `}
+              className="large"
             >
-              |
-            </Typography>
-            <div>
-              <div
-                css={css`
-                  display: flex;
-                  align-items: center;
-                `}
-                className="large"
+              <TextLink
+                href={getDiscographyUrl()}
+                typographyVariant="h6"
+                showUnderline={false}
+                capitalize
               >
-                <TextLink
-                  href={getDiscographyUrl()}
-                  typographyVariant="h6"
-                  showUnderline={false}
-                  capitalize
-                >
-                  {getTranslation('discography')}
-                </TextLink>
-                <TextLink
-                  href={getMembersUrl()}
-                  typographyVariant="h6"
-                  showUnderline={false}
-                  capitalize
-                >
-                  {getTranslation('members')}
-                </TextLink>
-                <TextLink
-                  href={getSearchUrl()}
-                  typographyVariant="h6"
-                  showUnderline={false}
-                  capitalize
-                >
-                  {getTranslation('search')}
-                </TextLink>
-              </div>
-              <BaseButton
-                className="small"
-                aria-label={getTranslation('menu')}
-                aria-controls={MENU_BUTTON_ID}
-                aria-haspopup="menu"
-                onClick={props.onOpenSidebar}
-                ref={props.menuButtonRef}
-                css={css`
-                  margin-left: ${commonStyles.spacing.xxs};
-                `}
+                {getTranslation('discography')}
+              </TextLink>
+              <TextLink
+                href={getMembersUrl()}
+                typographyVariant="h6"
+                showUnderline={false}
+                capitalize
               >
-                <MenuIcon
-                  css={css`
-                    fill: var(${getColorVarName('onSurface', 'standard')});
-                  `}
-                />
-              </BaseButton>
+                {getTranslation('members')}
+              </TextLink>
+              <TextLink
+                href={getSearchUrl()}
+                typographyVariant="h6"
+                showUnderline={false}
+                capitalize
+              >
+                {getTranslation('search')}
+              </TextLink>
             </div>
-          </nav>
-          <Settings />
-        </div>
-      </Surface>
-    </div>
+          </div>
+        </nav>
+        <Settings />
+      </div>
+    </Surface>
   );
 };

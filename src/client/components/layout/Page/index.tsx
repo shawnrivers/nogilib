@@ -2,10 +2,7 @@
 import { css } from '@emotion/core';
 import * as React from 'react';
 import { TopNavigationBar } from 'client/components/layout/Page/components/TopNavigationBar';
-import { Sidebar } from 'client/components/layout/Page/components/Sidebar';
 import { commonStyles } from 'client/styles/tokens';
-import { BaseButtonRef } from 'client/components/atoms/BaseButton';
-import { MENU_BUTTON_ID } from 'client/constants/ids';
 import { Surface } from 'client/components/atoms/Surface';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { Typography } from 'client/components/atoms/Typography';
@@ -66,16 +63,6 @@ const SkipLink: React.FC = () => {
 };
 
 export const Page: React.FC = props => {
-  const [isSidebarOpen, toggleSidebar] = React.useState(false);
-  const handleOpenSidebar = React.useCallback(() => {
-    toggleSidebar(true);
-  }, [toggleSidebar]);
-  const handleCloseSidebar = React.useCallback(() => {
-    toggleSidebar(false);
-  }, [toggleSidebar]);
-
-  const menuButtonRef = React.useRef<BaseButtonRef>(null);
-
   return (
     <div
       css={css`
@@ -101,18 +88,8 @@ export const Page: React.FC = props => {
       `}
     >
       <SkipLink />
-      <TopNavigationBar
-        onOpenSidebar={handleOpenSidebar}
-        menuButtonRef={menuButtonRef}
-      />
+      <TopNavigationBar />
       <BottomNavigationBar />
-      <Sidebar
-        open={isSidebarOpen}
-        onClose={handleCloseSidebar}
-        className="small"
-        menuButtonRef={menuButtonRef}
-        id={MENU_BUTTON_ID}
-      />
       {props.children}
     </div>
   );
