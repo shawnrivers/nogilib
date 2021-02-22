@@ -20,11 +20,11 @@ import { InfoItemValue } from 'client/components/molecules/typography/info/InfoI
 import { SectionSubtitle } from 'client/components/molecules/typography/SectionSubtitle';
 import { GlowStickBadge } from 'client/components/pages/member/GlowStickBadge';
 import { PositionBadge } from 'client/components/pages/member/PositionBadge';
-import { PositionCounter } from 'client/components/pages/member/PositionCounter';
 import { PageContent } from 'client/components/layout/PageContent';
 import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
 import { PositionType } from 'server/actors/Members/constants/position';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
+import { Divider } from 'client/components/atoms/Divider';
 
 type PathParams = { name: string };
 
@@ -428,31 +428,19 @@ const MemberPage: React.FC<PageProps> = props => {
             </ol>
             {shouldShowPositionCounter ? (
               <section>
-                <SectionSubtitle
-                  element="h3"
+                <Divider
+                  lineColor={{ on: 'onBackground', variant: 'variant0' }}
                   css={css`
-                    margin-top: 1em;
+                    margin-top: 1.5em;
+                    width: 80px;
                   `}
-                >
-                  {getTranslation('position counter')}
-                </SectionSubtitle>
-                <div
-                  css={css`
-                    margin-top: 0.5em;
-
-                    & > * {
-                      margin: auto;
-                    }
-                  `}
-                >
-                  <PositionCounter {...positionsCounter} />
-                </div>
+                />
                 <ul
                   css={css`
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: center;
-                    margin-top: 1em;
+                    margin-top: 1.5em;
                   `}
                 >
                   <li
