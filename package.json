@@ -54,7 +54,7 @@
     "flexsearch": "^0.6.32",
     "focus-visible": "^5.2.0",
     "framer-motion": "^3.2.1",
-    "next": "^10.0.6",
+    "next": "^10.0.7",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-helmet": "^6.1.0"
