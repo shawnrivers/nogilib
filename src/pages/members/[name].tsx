@@ -216,9 +216,18 @@ const MemberPage: React.FC<PageProps> = props => {
 
   const positionTypes = React.useMemo(
     () =>
-      filterDuplicate(positionsHistory.map(record => record.position)).sort(
-        (positionA, positionB) =>
-          getPositionOrder(positionB) - getPositionOrder(positionA)
+      filterDuplicate(
+        positionsHistory
+          .map(record => record.position)
+          .sort(
+            (positionA, positionB) =>
+              getPositionOrder(positionB) - getPositionOrder(positionA)
+          )
+          .map(position =>
+            NON_ABSENT_POSITIONS.includes(position)
+              ? position
+              : PositionType.None
+          )
       ),
     [positionsHistory]
   );
