@@ -1,15 +1,13 @@
 import * as React from 'react';
 import Head from 'next/head';
 import { capitalizeFirstLetter, capitalizeText } from 'utils/string';
+import { useTranslations } from 'client/i18n/hooks/useTranslations';
 
 const SITE_TITLE = 'NOGILIB';
 const SITE_URL = 'https://nogilib.com';
-const SITE_DESCRIPTION =
-  'NOGILIB is a web app for showing the information about Nogizaka46 in a user-friendly way.';
 
 type PageHelmetProps = {
   title?: string;
-  description?: string;
   options?: {
     textTransform?: 'capitalize-first-letter' | 'capitalize' | 'none';
   };
@@ -18,7 +16,6 @@ type PageHelmetProps = {
 export const PageHelmet: React.FC<PageHelmetProps> = props => {
   const {
     title,
-    description,
     options = { textTransform: 'capitalize-first-letter' },
   } = props;
   const pageTitleText = title ? `${title} | ${SITE_TITLE}` : SITE_TITLE;
@@ -37,7 +34,11 @@ export const PageHelmet: React.FC<PageHelmetProps> = props => {
       break;
   }
 
-  const pageDescription = description ?? SITE_DESCRIPTION;
+  const { getTranslation } = useTranslations();
+
+  const pageDescription = getTranslation(
+    'NOGILIB is a web app for showing the information about Nogizaka46 in a user-friendly way.'
+  );
 
   return (
     <Head>
