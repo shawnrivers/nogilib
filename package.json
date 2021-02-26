@@ -48,7 +48,7 @@
     }
   },
   "dependencies": {
-    "@emotion/core": "^10.1.1",
+    "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.1.5",
     "@fontsource/playfair-display": "^4.2.1",
     "flexsearch": "^0.6.32",
