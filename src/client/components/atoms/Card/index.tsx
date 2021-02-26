@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { SpacingKey } from 'client/styles/tokens/spacing';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { commonStyles } from 'client/styles/tokens';

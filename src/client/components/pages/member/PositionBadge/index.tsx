@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import * as React from 'react';
 import { PositionType } from 'server/actors/Members/constants/position';
 import { commonStyles } from 'client/styles/tokens';
