@@ -39,14 +39,6 @@
       "npm run generate-data"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": [
-        "lint-staged"
-      ],
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "dependencies": {
     "@emotion/react": "^11.1.5",
     "@fontsource/playfair-display": "^4.2.1",
