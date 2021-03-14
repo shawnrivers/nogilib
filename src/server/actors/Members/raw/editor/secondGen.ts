@@ -337,6 +337,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Tokyo,
     sites: [
       {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/miria.watanabe_official/',
+      },
+      {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/miria.watanabe/',
       },
