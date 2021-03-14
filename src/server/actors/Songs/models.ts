@@ -6,6 +6,7 @@ import { DiscographyType } from 'server/actors/Discography/types';
 
 export type SongRaw = {
   title: SongTitle;
+  key: string;
   musicVideo: string;
   type: SongType;
   creators: {
@@ -37,7 +38,6 @@ type InCd = {
 };
 
 export type SongResult = SongRaw & {
-  key: string;
   single: InCd;
   albums: InCd[];
   otherCds: InCd[];

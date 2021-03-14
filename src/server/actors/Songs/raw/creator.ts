@@ -1,6 +1,7 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { SongType } from 'server/actors/Songs/constants/songType';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 type SongRawCreatorCreators = {
   lyrics?: string[];
@@ -82,6 +83,7 @@ export const createSongRaw = (params: SongRawCreatorParams): SongRaw => {
       }
       return {
         title: params.title,
+        key: SONGS[params.title].key,
         type: params.type,
         musicVideo: params.musicVideo ?? '',
         creators: {
@@ -107,6 +109,7 @@ export const createSongRaw = (params: SongRawCreatorParams): SongRaw => {
     case SongType.Unit:
       return {
         title: params.title,
+        key: SONGS[params.title].key,
         type: params.type,
         musicVideo: params.musicVideo ?? '',
         creators: {
@@ -132,6 +135,7 @@ export const createSongRaw = (params: SongRawCreatorParams): SongRaw => {
     case SongType.Solo:
       return {
         title: params.title,
+        key: SONGS[params.title].key,
         type: params.type,
         musicVideo: params.musicVideo ?? '',
         creators: {
@@ -157,6 +161,7 @@ export const createSongRaw = (params: SongRawCreatorParams): SongRaw => {
     default:
       return {
         title: params.title,
+        key: SONGS[params.title].key,
         type: params.type,
         musicVideo: params.musicVideo ?? '',
         creators: {

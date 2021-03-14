@@ -123,20 +123,6 @@ export const convertSongArtwork: ConvertSongArtwork = ({
     }
   }
 
-  if (songAlbumsResult.length > 0) {
-    const oldestSongAlbumTitle = songAlbumsResult.slice().reverse()[0].title;
-    const album = albumsRawObject[oldestSongAlbumTitle];
-
-    for (const albumSong of album.songs) {
-      if (albumSong.title === songTitle) {
-        return convertImageFilePath(
-          album.artworks.find(artwork => artwork.type === albumSong.inCdType[0])
-            ?.url ?? NO_ARTWORK_IMAGE_SRC
-        );
-      }
-    }
-  }
-
   if (songOtherCdsResult.length > 0) {
     const oldestSongOtherCdTitle = songOtherCdsResult.slice().reverse()[0]
       .title;
@@ -148,6 +134,20 @@ export const convertSongArtwork: ConvertSongArtwork = ({
           otherCd.artworks.find(
             artwork => artwork.type === otherCdSong.inCdType[0]
           )?.url ?? NO_ARTWORK_IMAGE_SRC
+        );
+      }
+    }
+  }
+
+  if (songAlbumsResult.length > 0) {
+    const oldestSongAlbumTitle = songAlbumsResult.slice().reverse()[0].title;
+    const album = albumsRawObject[oldestSongAlbumTitle];
+
+    for (const albumSong of album.songs) {
+      if (albumSong.title === songTitle) {
+        return convertImageFilePath(
+          album.artworks.find(artwork => artwork.type === albumSong.inCdType[0])
+            ?.url ?? NO_ARTWORK_IMAGE_SRC
         );
       }
     }
