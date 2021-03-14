@@ -1,3 +1,5 @@
+// Server entry point
+
 import { Members } from 'server/actors/Members';
 import { membersRawArray } from 'server/actors/Members/raw';
 import { Songs } from 'server/actors/Songs';
