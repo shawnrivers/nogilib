@@ -9,7 +9,7 @@
     "types": ["node", "jest"],
     "removeComments": true,
     "allowJs": true,
-    "lib": ["es6", "dom", "es2017"],
+    "lib": ["es6", "dom", "esnext"],
     "baseUrl": "src",
     "esModuleInterop": true
   },
