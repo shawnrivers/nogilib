@@ -69,7 +69,7 @@
     "@typescript-eslint/parser": "^4.15.2",
     "babel-loader": "^8.2.2",
     "babel-preset-react-app": "^10.0.0",
-    "eslint": "^7.21.0",
+    "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.22.1",
@@ -82,6 +82,6 @@
     "prettier": "^2.2.1",
     "ts-jest": "^26.5.1",
     "ts-node": "^9.1.1",
-    "typescript": "^4.2.2"
+    "typescript": "^4.2.3"
   }
 }
