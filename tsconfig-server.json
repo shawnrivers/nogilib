@@ -11,7 +11,8 @@
     "allowJs": true,
     "lib": ["es6", "dom", "esnext"],
     "baseUrl": "src",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "resolveJsonModule": true
   },
   "include": ["src"],
   "exclude": ["src/client", "src/pages", "node_modules"]
