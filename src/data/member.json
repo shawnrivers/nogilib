@@ -7976,6 +7976,18 @@
     ],
     "photoAlbums": [
       {
+        "title": "いつのまにか",
+        "release": "2021-04-20",
+        "type": "photo book",
+        "sites": [
+          {
+            "title": "Twitter",
+            "url": "https://twitter.com/miona_photobook"
+          }
+        ],
+        "cover": "/images/photo-albums/horimiona_3.jpg"
+      },
+      {
         "title": "いつかの待ち合わせ場所",
         "release": "2020-05-27",
         "type": "photo album",
