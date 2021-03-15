@@ -289,6 +289,18 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         ],
         cover: 'photo-albums/horimiona_2.jpg',
       },
+      {
+        title: 'いつのまにか',
+        release: '2021-04-20',
+        type: PhotoAlbumType.PhotoBook,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/miona_photobook',
+          },
+        ],
+        cover: 'photo-albums/horimiona_3.jpg',
+      },
     ],
   }),
   createMemberRaw({
