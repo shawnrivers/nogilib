@@ -1,7 +1,10 @@
 import { Discography } from 'server/actors/Discography';
+import { CdTitle } from 'server/actors/Discography/constants/cdTitle';
 import { DiscographyResult } from 'server/actors/Discography/models';
 import { Members } from 'server/actors/Members';
 import { MemberResult } from 'server/actors/Members/models';
+import { SpotifyAlbumId, SpotifyIds } from 'server/actors/Spotify/models';
+import { MusicExternalLinks } from 'server/types/commons';
 import { arrayToObject } from 'utils/array';
 
 export type AlbumPageData = {
@@ -22,6 +25,7 @@ export type AlbumPageData = {
     nameNotations: MemberResult['nameNotations'];
     albumProfileImage: MemberResult['profileImages']['gallery'][0];
   }[];
+  externalLinks?: Partial<MusicExternalLinks>;
 };
 
 function getAlbumCenters(
@@ -59,9 +63,29 @@ function getAlbumCenters(
   }
 }
 
+type SpotifyAlbumIdMap = Record<CdTitle, SpotifyAlbumId> | undefined;
+
+function getAlbumExternalLinks(
+  album: DiscographyResult,
+  spotifyAlbumIdMap: SpotifyAlbumIdMap
+): AlbumPageData['externalLinks'] {
+  if (spotifyAlbumIdMap !== undefined) {
+    const spotifyAlbumId = spotifyAlbumIdMap[album.title]?.id;
+
+    return {
+      spotifyEmbed: spotifyAlbumId
+        ? `https://open.spotify.com/embed/album/${spotifyAlbumId}`
+        : undefined,
+    };
+  }
+
+  return undefined;
+}
+
 export function getAlbumPageData(
   discography: Discography,
-  members: Members
+  members: Members,
+  spotifyIds?: SpotifyIds
 ): AlbumPageData[] {
   if (!discography.isConverted) {
     throw new Error('Please convert Discography data at first.');
@@ -69,6 +93,12 @@ export function getAlbumPageData(
 
   if (!members.isConverted) {
     throw new Error('Please convert Members data at first.');
+  }
+
+  let spotifyAlbumIdMap: SpotifyAlbumIdMap = undefined;
+
+  if (spotifyIds !== undefined) {
+    spotifyAlbumIdMap = arrayToObject(spotifyIds.albums, 'title');
   }
 
   return discography.result.map(album => ({
@@ -85,5 +115,6 @@ export function getAlbumPageData(
       inCdType: song.inCdType,
     })),
     centers: getAlbumCenters(album, members),
+    externalLinks: getAlbumExternalLinks(album, spotifyAlbumIdMap),
   }));
 }
