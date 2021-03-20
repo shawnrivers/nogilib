@@ -65,7 +65,7 @@ async function main() {
   const membersPageData = getMembersPageData(members);
   const memberPageData = getMemberPageData(members);
   const albumPageData = getAlbumPageData(discography, members, spotifyIds);
-  const songPageData = getSongPageData(songs, members);
+  const songPageData = getSongPageData(songs, members, spotifyIds);
   const searchPageData = getSearchPageData(discography, songs, members);
 
   // Store in JSON files
