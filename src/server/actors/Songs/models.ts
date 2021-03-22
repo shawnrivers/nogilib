@@ -3,9 +3,11 @@ import { SongType } from 'server/actors/Songs/constants/songType';
 import { SongTitle } from 'server/actors/Songs/constants/songTitle';
 import { UnitName } from 'server/actors/Units/constants/unitName';
 import { DiscographyType } from 'server/actors/Discography/types';
+import { CdTitle } from 'server/actors/Discography/constants/cdTitle';
 
 export type SongRaw = {
   title: SongTitle;
+  key: string;
   musicVideo: string;
   type: SongType;
   creators: {
@@ -32,12 +34,11 @@ export type SongRaw = {
 };
 
 type InCd = {
-  title: string;
+  title: CdTitle | '';
   number: string;
 };
 
 export type SongResult = SongRaw & {
-  key: string;
   single: InCd;
   albums: InCd[];
   otherCds: InCd[];

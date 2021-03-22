@@ -8,6 +8,11 @@ import {
   DiscographyRaw,
   DiscographyResult,
 } from 'server/actors/Discography/models';
+import {
+  filterAlbums,
+  filterOtherCds,
+  filterSingles,
+} from 'server/actors/Discography/utils';
 
 export class Discography {
   private rawDataArray: DiscographyRawArray;
@@ -24,15 +29,11 @@ export class Discography {
   public constructor(discographyRawArray: DiscographyRawArray) {
     this.rawDataArray = discographyRawArray;
     this.rawDataObject = arrayToObject(discographyRawArray, 'title');
-    this.singlesRawArray = discographyRawArray.filter(
-      cd => cd.type === 'single'
-    );
+    this.singlesRawArray = filterSingles(discographyRawArray);
     this.singlesRawObject = arrayToObject(this.singlesRawArray, 'title');
-    this.albumsRawArray = discographyRawArray.filter(cd => cd.type === 'album');
+    this.albumsRawArray = filterAlbums(discographyRawArray);
     this.albumsRawObject = arrayToObject(this.albumsRawArray, 'title');
-    this.otherCdsRawArray = discographyRawArray.filter(
-      cd => cd.type !== 'single' && cd.type !== 'album'
-    );
+    this.otherCdsRawArray = filterOtherCds(discographyRawArray);
     this.otherCdsRawObject = arrayToObject(this.otherCdsRawArray, 'title');
     this.resultData = [];
     this.isConverted = false;

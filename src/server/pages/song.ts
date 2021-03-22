@@ -3,8 +3,11 @@ import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { PositionType } from 'server/actors/Members/constants/position';
 import { MemberResult } from 'server/actors/Members/models';
 import { Songs } from 'server/actors/Songs';
+import { SongTitle } from 'server/actors/Songs/constants/songTitle';
 import { SongResult } from 'server/actors/Songs/models';
+import { SpotifyIds, SpotifySongId } from 'server/actors/Spotify/models';
 import { KOJIHARU_IMAGE_SRC } from 'server/constants/paths';
+import { MusicExternalLinks } from 'server/types/commons';
 import { convertImageFilePath } from 'server/utils/path';
 import { arrayToObject } from 'utils/array';
 
@@ -25,6 +28,7 @@ export type SongPageData = {
     position: PositionType.Center | PositionType.Fukujin | null;
     isMember: boolean;
   }[][];
+  externalLinks?: Partial<MusicExternalLinks>;
 };
 
 function getPerformerPosition(
@@ -109,9 +113,29 @@ function getSongPerformers(
     );
 }
 
+type SpotifySongIdMap = Record<SongTitle, SpotifySongId> | undefined;
+
+function getSongExternalLinks(
+  song: SongResult,
+  spotifySongIdMap: SpotifySongIdMap
+): SongPageData['externalLinks'] {
+  if (spotifySongIdMap !== undefined) {
+    const spotifySongId = spotifySongIdMap[song.title]?.id;
+
+    return {
+      spotifyEmbed: spotifySongId
+        ? `https://open.spotify.com/embed/track/${spotifySongId}`
+        : undefined,
+    };
+  }
+
+  return undefined;
+}
+
 export function getSongPageData(
   songs: Songs,
-  members: Members
+  members: Members,
+  spotifyIds?: SpotifyIds
 ): SongPageData[] {
   if (!songs.isConverted) {
     throw new Error('Please convert Songs data at first.');
@@ -119,6 +143,12 @@ export function getSongPageData(
 
   if (!members.isConverted) {
     throw new Error('Please convert Members data at first.');
+  }
+
+  let spotifySongIdMap: SpotifySongIdMap = undefined;
+
+  if (spotifyIds !== undefined) {
+    spotifySongIdMap = arrayToObject(spotifyIds.songs, 'title');
   }
 
   return songs.result.map(song => ({
@@ -132,5 +162,6 @@ export function getSongPageData(
     otherCds: song.otherCds,
     performersTag: song.performersTag,
     performers: getSongPerformers(song, members),
+    externalLinks: getSongExternalLinks(song, spotifySongIdMap),
   }));
 }

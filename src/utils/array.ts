@@ -39,3 +39,14 @@ export const filterDuplicate = <
 
   return uniqueList;
 };
+
+export function batchArray<T>(array: T[], batchSize: number): T[][] {
+  const batchedArray: T[][] = [];
+  const arrayLength = array.length;
+
+  for (let i = 0; i < arrayLength; i += batchSize) {
+    batchedArray.push(array.slice(i, i + batchSize));
+  }
+
+  return batchedArray;
+}

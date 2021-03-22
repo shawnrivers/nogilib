@@ -6,7 +6,6 @@ import {
   SongsRawObject,
   SongsResultArray,
 } from 'server/actors/Songs/models';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 import { arrayToObject } from 'utils/array';
 import {
@@ -111,7 +110,7 @@ export class Songs {
 
     return {
       title: songRaw.title,
-      key: SONGS[songRaw.title].key,
+      key: songRaw.key,
       single: songSingleResult,
       albums: songAlbumsResult,
       otherCds: songOtherCdsResult,
