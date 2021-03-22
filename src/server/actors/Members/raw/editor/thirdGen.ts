@@ -236,6 +236,10 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Tokyo,
     sites: [
       {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/mizuki.yamashita.official/',
+      },
+      {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/mizuki.yamashita/',
       },
