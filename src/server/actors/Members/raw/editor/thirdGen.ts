@@ -169,6 +169,10 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Aichi,
     sites: [
       {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/Kaede_Sato.official/',
+      },
+      {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/kaede.satou/',
       },
