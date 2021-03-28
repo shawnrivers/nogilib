@@ -742,8 +742,8 @@
     },
     "join": "second",
     "graduation": {
-      "isGraduated": false,
-      "graduatedDate": ""
+      "isGraduated": true,
+      "graduatedDate": "2021-03-28"
     },
     "profileImage": "/images/members/singles/26/horimiona.jpg"
   },
