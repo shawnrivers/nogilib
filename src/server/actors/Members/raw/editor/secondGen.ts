@@ -246,6 +246,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     height: 162,
     bloodType: BloodType.O,
     origin: Birthplace.Gifu,
+    graduatedDate: '2021-03-28',
     sites: [
       {
         title: SocialMedia.Instagram,
