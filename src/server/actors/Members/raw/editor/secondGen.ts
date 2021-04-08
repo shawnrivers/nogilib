@@ -250,7 +250,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     sites: [
       {
         title: SocialMedia.Instagram,
-        url: 'https://www.instagram.com/horimiona_2nd/',
+        url: 'https://www.instagram.com/horimiona_official/',
       },
       {
         title: SocialMedia.Official,
