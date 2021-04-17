@@ -872,10 +872,6 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: SocialMedia.OnlineSalon,
         url: 'https://lounge.dmm.com/detail/2711/',
       },
-      {
-        title: SocialMedia.Profile,
-        url: 'https://n46llc.com/s/m00/artist/9',
-      },
     ],
     photoAlbums: [
       {
