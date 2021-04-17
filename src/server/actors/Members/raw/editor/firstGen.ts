@@ -726,7 +726,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       },
       {
         title: SocialMedia.Profile,
-        url: 'https://n46llc.com/s/m00/artist/8',
+        url: 'https://www.tp-e.jp/noujo-ami/',
       },
     ],
     graduatedDate: '2018-12-15',
