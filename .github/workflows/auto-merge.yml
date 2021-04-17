@@ -1,9 +1,6 @@
 name: Auto Merge
 
-on: 
-  pull_request:
-    branches:
-      - update-dependencies
+on: pull_request
 
 jobs:
   auto-merge:
