@@ -1285,6 +1285,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://twitter.com/seira_miyazawa/',
       },
       {
+        title: SocialMedia.Official,
+        url: 'http://www.incent.jp/idea/model/miyazawa/index.html',
+      },
+      {
         title: 'Ameba',
         url: 'https://ameblo.jp/seira-miyazawa/',
       },
