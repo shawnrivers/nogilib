@@ -198,12 +198,16 @@
       {
         "singleNumber": "26",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "27",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 18,
-      "selected": 23,
+      "fukujin": 19,
+      "selected": 24,
       "under": 0
     }
   },
@@ -408,12 +412,16 @@
       {
         "singleNumber": "26",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "27",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 1,
-      "fukujin": 23,
-      "selected": 25,
+      "fukujin": 24,
+      "selected": 26,
       "under": 0
     }
   },
@@ -606,6 +614,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -800,6 +812,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -1020,6 +1036,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -1215,6 +1235,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -1407,12 +1431,16 @@
       {
         "singleNumber": "26",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "27",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 4,
-      "fukujin": 14,
-      "selected": 19,
+      "fukujin": 15,
+      "selected": 20,
       "under": 7
     }
   },
@@ -1598,6 +1626,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -1808,6 +1840,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -2051,6 +2087,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -2262,12 +2302,16 @@
       {
         "singleNumber": "26",
         "position": "selected"
+      },
+      {
+        "singleNumber": "27",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 12,
-      "selected": 26,
+      "fukujin": 13,
+      "selected": 27,
       "under": 0
     }
   },
@@ -2454,6 +2498,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -2680,6 +2728,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -2854,6 +2906,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -3036,12 +3092,16 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 1,
-      "selected": 4,
+      "selected": 5,
       "under": 22
     }
   },
@@ -3228,12 +3288,16 @@
       {
         "singleNumber": "26",
         "position": "selected"
+      },
+      {
+        "singleNumber": "27",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 10,
-      "selected": 24,
+      "fukujin": 11,
+      "selected": 25,
       "under": 2
     }
   },
@@ -3428,12 +3492,16 @@
       {
         "singleNumber": "26",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "27",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 21,
-      "selected": 26,
+      "fukujin": 22,
+      "selected": 27,
       "under": 0
     }
   },
@@ -3627,6 +3695,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -3806,13 +3878,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 1,
       "selected": 2,
-      "under": 24
+      "under": 25
     }
   },
   {
@@ -3977,6 +4053,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -4149,6 +4229,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -4319,6 +4403,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -4511,6 +4599,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -4695,6 +4787,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -4888,6 +4984,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -5059,6 +5159,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -5223,6 +5327,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -5391,6 +5499,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -5543,6 +5655,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -5706,6 +5822,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -5864,6 +5984,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -6007,6 +6131,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -6176,6 +6304,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -6334,6 +6466,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -6481,6 +6617,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -6637,6 +6777,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -6818,6 +6962,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -6995,13 +7143,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 15
+      "under": 16
     }
   },
   {
@@ -7181,13 +7333,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 1,
       "selected": 8,
-      "under": 10
+      "under": 11
     }
   },
   {
@@ -7353,6 +7509,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -7544,12 +7704,16 @@
       {
         "singleNumber": "26",
         "position": "selected"
+      },
+      {
+        "singleNumber": "27",
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 12,
+      "selected": 13,
       "under": 7
     }
   },
@@ -7730,13 +7894,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 2,
-      "under": 13
+      "under": 14
     }
   },
   {
@@ -7904,13 +8072,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 2,
-      "under": 13
+      "under": 14
     }
   },
   {
@@ -8123,6 +8295,10 @@
       {
         "singleNumber": "26",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -8298,13 +8474,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 14
+      "under": 15
     }
   },
   {
@@ -8475,13 +8655,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 1,
-      "under": 14
+      "under": 15
     }
   },
   {
@@ -8642,6 +8826,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -8788,6 +8976,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -8933,6 +9125,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -9092,13 +9288,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 2,
-      "under": 5
+      "under": 6
     }
   },
   {
@@ -9250,12 +9450,16 @@
       {
         "singleNumber": "26",
         "position": "selected"
+      },
+      {
+        "singleNumber": "27",
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 1,
-      "selected": 4,
+      "selected": 5,
       "under": 3
     }
   },
@@ -9427,12 +9631,16 @@
       {
         "singleNumber": "26",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "27",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 4,
-      "selected": 6,
+      "fukujin": 5,
+      "selected": 7,
       "under": 1
     }
   },
@@ -9591,12 +9799,16 @@
       {
         "singleNumber": "26",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "27",
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 1,
       "fukujin": 5,
-      "selected": 7,
+      "selected": 8,
       "under": 0
     }
   },
@@ -9751,12 +9963,16 @@
       {
         "singleNumber": "26",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "27",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 3,
-      "selected": 5,
+      "fukujin": 4,
+      "selected": 6,
       "under": 1
     }
   },
@@ -9911,13 +10127,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 1,
-      "under": 6
+      "under": 7
     }
   },
   {
@@ -10073,13 +10293,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 2,
-      "under": 5
+      "under": 6
     }
   },
   {
@@ -10231,13 +10455,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 7
+      "under": 8
     }
   },
   {
@@ -10389,13 +10617,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 7
+      "under": 8
     }
   },
   {
@@ -10568,12 +10800,16 @@
       {
         "singleNumber": "26",
         "position": "center"
+      },
+      {
+        "singleNumber": "27",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 1,
-      "fukujin": 5,
-      "selected": 6,
+      "fukujin": 6,
+      "selected": 7,
       "under": 0
     }
   },
@@ -10726,13 +10962,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 7
+      "under": 8
     }
   },
   {
@@ -10915,12 +11155,16 @@
       {
         "singleNumber": "26",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "27",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 1,
-      "fukujin": 7,
-      "selected": 8,
+      "fukujin": 8,
+      "selected": 9,
       "under": 0
     }
   },
@@ -11071,12 +11315,16 @@
       {
         "singleNumber": "26",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "27",
+        "position": "center"
       }
     ],
     "positionsCounter": {
-      "center": 1,
-      "fukujin": 2,
-      "selected": 3,
+      "center": 2,
+      "fukujin": 3,
+      "selected": 4,
       "under": 0
     }
   },
@@ -11227,12 +11475,16 @@
       {
         "singleNumber": "26",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "27",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 2,
-      "selected": 3,
+      "fukujin": 3,
+      "selected": 4,
       "under": 0
     }
   },
@@ -11382,6 +11634,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "27",
         "position": "trainee"
       }
     ],
@@ -11539,6 +11795,10 @@
       {
         "singleNumber": "26",
         "position": "trainee"
+      },
+      {
+        "singleNumber": "27",
+        "position": "trainee"
       }
     ],
     "positionsCounter": {
@@ -11694,6 +11954,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "27",
         "position": "trainee"
       }
     ],
@@ -11851,6 +12115,10 @@
       {
         "singleNumber": "26",
         "position": "trainee"
+      },
+      {
+        "singleNumber": "27",
+        "position": "trainee"
       }
     ],
     "positionsCounter": {
@@ -12007,12 +12275,16 @@
       {
         "singleNumber": "26",
         "position": "trainee"
+      },
+      {
+        "singleNumber": "27",
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 0,
+      "selected": 1,
       "under": 0
     }
   },
@@ -12163,12 +12435,16 @@
       {
         "singleNumber": "26",
         "position": "selected"
+      },
+      {
+        "singleNumber": "27",
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 1,
+      "selected": 2,
       "under": 0
     }
   },
@@ -12319,12 +12595,16 @@
       {
         "singleNumber": "26",
         "position": "selected"
+      },
+      {
+        "singleNumber": "27",
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 1,
-      "selected": 2,
+      "selected": 3,
       "under": 0
     }
   },
@@ -12475,12 +12755,16 @@
       {
         "singleNumber": "26",
         "position": "trainee"
+      },
+      {
+        "singleNumber": "27",
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 0,
+      "selected": 1,
       "under": 0
     }
   },
@@ -12630,6 +12914,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "27",
         "position": "trainee"
       }
     ],
@@ -12791,6 +13079,10 @@
       {
         "singleNumber": "26",
         "position": "trainee"
+      },
+      {
+        "singleNumber": "27",
+        "position": "trainee"
       }
     ],
     "positionsCounter": {
@@ -12950,6 +13242,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "27",
         "position": "trainee"
       }
     ],
@@ -13111,6 +13407,10 @@
       {
         "singleNumber": "26",
         "position": "trainee"
+      },
+      {
+        "singleNumber": "27",
+        "position": "trainee"
       }
     ],
     "positionsCounter": {
@@ -13269,6 +13569,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "27",
         "position": "trainee"
       }
     ],
@@ -13429,6 +13733,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "27",
         "position": "trainee"
       }
     ],
