@@ -52,7 +52,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.1",
-    "@commitlint/config-conventional": "^11.0.0",
+    "@commitlint/config-conventional": "^12.1.1",
     "@lhci/cli": "^0.7.0",
     "@storybook/addon-actions": "^6.2.8",
     "@storybook/addon-essentials": "^6.2.8",
