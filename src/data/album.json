@@ -2710,6 +2710,43 @@
     ]
   },
   {
+    "key": "untitled",
+    "title": "タイトル未定",
+    "type": "single",
+    "number": "27",
+    "artworks": [
+      {
+        "url": "/images/artworks/artwork_no_image.png",
+        "type": "A"
+      }
+    ],
+    "release": "2021-06-09",
+    "songs": [
+      {
+        "key": "untitled",
+        "title": "タイトル未定",
+        "type": "title",
+        "inCdType": [
+          "A"
+        ]
+      }
+    ],
+    "centers": [
+      {
+        "name": "endousakura",
+        "nameNotations": {
+          "lastName": "遠藤",
+          "firstName": "さくら",
+          "lastNameFurigana": "えんどう",
+          "firstNameFurigana": "さくら",
+          "lastNameEn": "endo",
+          "firstNameEn": "sakura"
+        },
+        "albumProfileImage": "/images/members/singles/26/endousakura.jpg"
+      }
+    ]
+  },
+  {
     "key": "imagaomoideninarumade",
     "title": "今が思い出になるまで",
     "type": "album",

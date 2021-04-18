@@ -2,6 +2,7 @@ import { arrayToObject } from 'utils/array';
 import { TitleKeyArray } from 'server/types/commons';
 
 export enum SongTitle {
+  Untitled = 'タイトル未定',
   OneTwoThree = '１・２・３',
   YuujouPierce = '友情ピアス',
   Ashigaaruriyuu = '明日がある理由',
@@ -222,6 +223,10 @@ export enum SongTitle {
 }
 
 const SongsTitleKeyArray: TitleKeyArray<SongTitle> = [
+  {
+    title: SongTitle.Untitled,
+    key: 'untitled',
+  },
   {
     title: SongTitle.OneTwoThree,
     key: '123',

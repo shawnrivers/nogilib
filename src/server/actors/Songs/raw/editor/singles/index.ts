@@ -25,6 +25,7 @@ import { SEVENTH_SINGLE_SONGS } from 'server/actors/Songs/raw/editor/singles/7';
 import { EIGHTH_SINGLE_SONGS } from 'server/actors/Songs/raw/editor/singles/8';
 import { NINTH_SINGLE_SONGS } from 'server/actors/Songs/raw/editor/singles/9';
 import { TWENTY_SIXTH_SINGLE_SONGS } from 'server/actors/Songs/raw/editor/singles/26';
+import { TWENTY_SEVENTH_SINGLE_SONGS } from 'server/actors/Songs/raw/editor/singles/27';
 
 export const SINGLE_SONGS: SongRaw[] = [
   ...FIRST_SINGLE_SONGS,
@@ -53,4 +54,5 @@ export const SINGLE_SONGS: SongRaw[] = [
   ...TWENTY_FOURTH_SINGLE_SONGS,
   ...TWENTY_FIFTH_SINGLE_SONGS,
   ...TWENTY_SIXTH_SINGLE_SONGS,
+  ...TWENTY_SEVENTH_SINGLE_SONGS,
 ];
