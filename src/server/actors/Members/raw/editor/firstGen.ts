@@ -900,6 +900,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Hiroshima,
     sites: [
       {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/wada_maaya_official/',
+      },
+      {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/maaya.wada/',
       },
