@@ -81,6 +81,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Hokkaido,
     sites: [
       {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/kitanohinako_official/',
+      },
+      {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/hinako.kitano/',
       },
