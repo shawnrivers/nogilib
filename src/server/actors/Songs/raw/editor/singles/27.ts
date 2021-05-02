@@ -6,7 +6,7 @@ import { createSongRaw } from 'server/actors/Songs/raw/creator';
 
 export const TWENTY_SEVENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['タイトル未定'].title,
+    title: SONGS['ごめんねFingers crossed'].title,
     type: SongType.Title,
     center: [MemberNameKey.EndouSakura],
     fukujin: 'row-1-2',
