@@ -5,6 +5,7 @@ class AppDocument extends Document {
     return (
       <Html>
         <Head>
+          <link rel="manifest" href="/site.webmanifest" />
           <script src="/theme.js"></script>
         </Head>
         <body>
