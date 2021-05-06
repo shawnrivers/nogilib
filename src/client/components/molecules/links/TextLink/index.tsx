@@ -71,6 +71,12 @@ export const TextLink = React.forwardRef<TextLinkRef, TextLinkProps>(
                 )}
               );
 
+              &:active {
+                background-color: var(
+                  ${getColorVarName(backgroundType, backgroundColorVariant)}
+                );
+              }
+
               @media (hover: hover) and (pointer: fine) {
                 &:hover {
                   background-color: var(
