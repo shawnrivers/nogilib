@@ -204,8 +204,8 @@ const dictionary = {
     ja: '4期生ブログ',
     zh: '4期生博客',
   },
-  Official: {
-    en: 'Official',
+  official: {
+    en: 'official',
     ja: '公式サイト',
     zh: '官方网站',
   },
@@ -542,8 +542,8 @@ const dictionary = {
     ja: 'アプリを更新する',
     zh: '更新应用',
   },
-  'Online Salon': {
-    en: 'Online Salon',
+  'online salon': {
+    en: 'online salon',
     ja: 'オンラインサロン',
     zh: '线上社区',
   },
@@ -666,6 +666,11 @@ const dictionary = {
     en: 'absent',
     ja: '未参加',
     zh: '未参加',
+  },
+  'fan club': {
+    en: 'fan club',
+    ja: 'ファンクラブ',
+    zh: '粉丝俱乐部',
   },
 };
 
