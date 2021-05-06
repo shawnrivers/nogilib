@@ -3,7 +3,7 @@ name: Auto Create update-dependencies branch
 on: delete
 
 jobs:
-  auto-merge:
+  auto-create-branch:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
