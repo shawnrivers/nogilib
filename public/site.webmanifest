@@ -1,6 +1,7 @@
 {
   "display": "standalone",
   "short_name": "Nogilib",
+  "start_url": ".",
   "icons": [
     {
       "src": "/images/manifest-icon-192.png",
