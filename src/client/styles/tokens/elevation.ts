@@ -32,6 +32,7 @@ export const componentElevationKey: Record<
   | 'navigationBar'
   | 'sidebar'
   | 'dropdown'
+  | 'pressedComponentOnBackground'
   | 'componentOnBackground'
   | 'elevatedComponentOnBackground'
   | 'background'
@@ -39,6 +40,7 @@ export const componentElevationKey: Record<
   ElevationKey
 > = {
   background: 0,
+  pressedComponentOnBackground: 1,
   componentOnBackground: 3,
   navigationBar: 6,
   dropdown: 8,

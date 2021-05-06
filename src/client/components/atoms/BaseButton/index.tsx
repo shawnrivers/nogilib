@@ -38,6 +38,12 @@ export const BaseButton = React.forwardRef<BaseButtonRef, BaseButtonProps>(
           transition: background-color 0.3s ease-out;
           background: none;
 
+          &:active {
+            background-color: var(
+              ${getColorVarName(backgroundType, backgroundColorVariant)}
+            );
+          }
+
           @media (hover: hover) and (pointer: fine) {
             &:hover {
               background-color: var(

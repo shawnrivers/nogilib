@@ -14,6 +14,54 @@ import { SearchIcon } from 'client/components/atoms/icons/SearchIcon';
 import { BaseLink } from 'client/components/atoms/BaseLink';
 import { Typography } from 'client/components/atoms/Typography';
 import { commonStyles } from 'client/styles/tokens';
+import { getColorVarName } from 'client/styles/tokens/colors';
+
+const NavItem: React.FC<{
+  href: string;
+  icon: React.ReactNode;
+  text: string;
+}> = props => {
+  return (
+    <BaseLink href={props.href}>
+      <div
+        css={css`
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: ${commonStyles.spacing.xxs} ${commonStyles.spacing.xs};
+          border-radius: ${commonStyles.borderRadius.xs};
+          background: none;
+          transition: background-color 0.3s ease-out;
+
+          &:active {
+            background-color: var(${getColorVarName('background', 'variant0')});
+          }
+
+          @media (hover: hover) and (pointer: fine) {
+            &:hover {
+              background-color: var(
+                ${getColorVarName('background', 'variant0')}
+              );
+            }
+          }
+        `}
+      >
+        {props.icon}
+        <Typography
+          variant="body4"
+          capitalize
+          css={css`
+            margin-top: 0.3em;
+            line-height: 1.2;
+            white-space: nowrap;
+          `}
+        >
+          {props.text}
+        </Typography>
+      </div>
+    </BaseLink>
+  );
+};
 
 export const BottomNavigationBar: React.FC = () => {
   const { getTranslation } = useTranslations();
@@ -44,69 +92,21 @@ export const BottomNavigationBar: React.FC = () => {
             }
           `}
         >
-          <BaseLink
+          <NavItem
             href={getDiscographyUrl()}
-            css={css`
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-            `}
-          >
-            <DiscographyIcon width={24} height={24} />
-            <Typography
-              variant="body4"
-              capitalize
-              css={css`
-                margin-top: 0.3em;
-                line-height: 1.2;
-                white-space: nowrap;
-              `}
-            >
-              {getTranslation('discography')}
-            </Typography>
-          </BaseLink>
-          <BaseLink
+            icon={<DiscographyIcon width={24} height={24} />}
+            text={getTranslation('discography')}
+          />
+          <NavItem
             href={getMembersUrl()}
-            css={css`
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-            `}
-          >
-            <MembersIcon width={24} height={24} />
-            <Typography
-              variant="body4"
-              capitalize
-              css={css`
-                margin-top: 0.3em;
-                line-height: 1.2;
-                white-space: nowrap;
-              `}
-            >
-              {getTranslation('members')}
-            </Typography>
-          </BaseLink>
-          <BaseLink
+            icon={<MembersIcon width={24} height={24} />}
+            text={getTranslation('members')}
+          />
+          <NavItem
             href={getSearchUrl()}
-            css={css`
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-            `}
-          >
-            <SearchIcon width={24} height={24} />
-            <Typography
-              variant="body4"
-              capitalize
-              css={css`
-                margin-top: 0.3em;
-                line-height: 1.2;
-                white-space: nowrap;
-              `}
-            >
-              {getTranslation('search')}
-            </Typography>
-          </BaseLink>
+            icon={<SearchIcon width={24} height={24} />}
+            text={getTranslation('search')}
+          />
         </div>
       </Surface>
     </nav>

@@ -71,6 +71,12 @@ export const Surface: React.FC<SurfaceProps> = props => {
   const hoveredStyles = React.useMemo(
     () => ({
       container: css`
+        &:active {
+          box-shadow: ${commonStyles.elevations[
+            componentElevationKey.pressedComponentOnBackground
+          ].boxShadow};
+        }
+
         @media (hover: hover) and (pointer: fine) {
           &:hover {
             box-shadow: ${commonStyles.elevations[
@@ -80,6 +86,14 @@ export const Surface: React.FC<SurfaceProps> = props => {
         }
       `,
       overlay: css`
+        &:active {
+          background-color: var(
+            ${getElevationWhiteOverlayTransparencyVarName(
+              componentElevationKey.pressedComponentOnBackground
+            )}
+          );
+        }
+
         @media (hover: hover) and (pointer: fine) {
           &:hover {
             background-color: var(
