@@ -69,10 +69,7 @@ export const PageHelmet: React.FC<PageHelmetProps> = props => {
       {/* Standalone app meta */}
       <meta name="mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta
-        name="apple-mobile-web-app-status-bar-style"
-        content="black-translucent"
-      />
+      <meta name="apple-mobile-web-app-status-bar-style" content="default" />
       <link rel="manifest" href="/site.webmanifest" />
 
       {/* App icon */}
