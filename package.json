@@ -56,7 +56,7 @@
     "@lhci/cli": "^0.7.2",
     "@storybook/addon-actions": "^6.2.8",
     "@storybook/addon-essentials": "^6.2.8",
-    "@storybook/addon-knobs": "^6.2.8",
+    "@storybook/addon-knobs": "^6.2.9",
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/react": "^6.2.8",
     "@types/jest": "^26.0.23",
