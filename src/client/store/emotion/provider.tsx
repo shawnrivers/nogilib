@@ -271,6 +271,7 @@ export const EmotionThemeProvider: React.FC = props => {
             margin: 0;
             padding: 0;
             background-color: var(--color-background-standard);
+            -webkit-tap-highlight-color: transparent;
             /* transition-property: background-color, color;
             transition-duration: 0.5s;
             transition-timing-function: ease-in-out; */
