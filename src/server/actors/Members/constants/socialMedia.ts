@@ -3,9 +3,10 @@ export enum SocialMedia {
   Twitter = 'Twitter',
   Blog = 'blog',
   FourthGenBlog = 'Fourth Gen Blog',
-  Profile = 'Profile',
-  Official = 'Official',
+  Profile = 'profile',
+  Official = 'official',
   Nanagogo = '755',
   YouTube = 'YouTube',
-  OnlineSalon = 'Online Salon',
+  OnlineSalon = 'online salon',
+  FanClub = 'fan club',
 }

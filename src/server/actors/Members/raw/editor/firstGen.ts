@@ -186,8 +186,12 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.youtube.com/channel/UCmVJtdqSRFSsJb5hjHL4QKg',
       },
       {
+        title: SocialMedia.FanClub,
+        url: 'https://www.sayuriinoue-fc.com',
+      },
+      {
         title: SocialMedia.Profile,
-        url: 'http://www.siscompany.com/02manage/49inoue/',
+        url: 'http://www.siscompany.com/management/artist.php?id=30',
       },
     ],
     photoAlbums: [

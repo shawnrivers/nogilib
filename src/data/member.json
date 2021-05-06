@@ -60,7 +60,7 @@
         "url": "https://blog.nogizaka46.com/manatsu.akimoto/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/akimotomanatsu.php"
       },
       {
@@ -274,7 +274,7 @@
         "url": "https://blog.nogizaka46.com/erika.ikuta/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/ikutaerika.php"
       },
       {
@@ -489,11 +489,11 @@
         "url": "https://www.youtube.com/channel/UCKfIRa0Zhs6HQ33a_L6Tc5Q/"
       },
       {
-        "title": "Official",
+        "title": "official",
         "url": "https://ikomarina.com/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://n46llc.com/s/m00/artist/1"
       }
     ],
@@ -691,8 +691,12 @@
         "url": "https://www.youtube.com/channel/UCmVJtdqSRFSsJb5hjHL4QKg"
       },
       {
-        "title": "Profile",
-        "url": "http://www.siscompany.com/02manage/49inoue/"
+        "title": "profile",
+        "url": "http://www.siscompany.com/management/artist.php?id=30"
+      },
+      {
+        "title": "fan club",
+        "url": "https://www.sayuriinoue-fc.com"
       }
     ],
     "photoAlbums": [
@@ -882,11 +886,11 @@
         "url": "https://www.instagram.com/misa_eto_official/"
       },
       {
-        "title": "Official",
+        "title": "official",
         "url": "https://etomisa.jp/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://n46llc.com/s/m00/artist/10"
       },
       {
@@ -1113,7 +1117,7 @@
         "url": "https://www.youtube.com/channel/UCygUvA0j15FpHp6kv2IuQYA"
       },
       {
-        "title": "Official",
+        "title": "official",
         "url": "https://kawagopro.com/"
       }
     ],
@@ -1305,7 +1309,7 @@
         "url": "https://blog.nogizaka46.com/asuka.saito/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/saitouasuka.php"
       },
       {
@@ -1501,7 +1505,7 @@
         "url": "https://www.instagram.com/yuuri_3ito/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://n46llc.com/s/m00/artist/4"
       },
       {
@@ -1699,11 +1703,11 @@
         "url": "https://www.instagram.com/reika_s16/"
       },
       {
-        "title": "Official",
+        "title": "official",
         "url": "https://reikasakurai.com/s/m08/?ima=0916"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://n46llc.com/s/m00/artist/11"
       },
       {
@@ -1921,11 +1925,11 @@
         "url": "https://www.youtube.com/c/maishiraishi"
       },
       {
-        "title": "Official",
+        "title": "official",
         "url": "https://maishiraishi-official.com/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://n46llc.com/s/m00/artist/12?ima=0737"
       },
       {
@@ -2164,7 +2168,7 @@
         "url": "https://blog.nogizaka46.com/kazumi.takayama/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/takayamakazumi.php"
       },
       {
@@ -2373,7 +2377,7 @@
         "url": "https://www.instagram.com/nakadakana_1st/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://n46llc.com/s/m00/artist/13?ima=0737"
       },
       {
@@ -2574,11 +2578,11 @@
         "url": "https://twitter.com/nanase_andstaff"
       },
       {
-        "title": "Official",
+        "title": "official",
         "url": "https://nishinonanase.com/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://n46llc.com/s/m00/artist/7"
       },
       {
@@ -2798,7 +2802,7 @@
         "url": "https://www.instagram.com/noujoami_official/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.tp-e.jp/noujo-ami/"
       }
     ],
@@ -2979,7 +2983,7 @@
         "url": "https://blog.nogizaka46.com/hina.higuchi/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/higuchihina.php"
       },
       {
@@ -3162,7 +3166,7 @@
         "url": "https://blog.nogizaka46.com/minami.hoshino/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/hoshinominami.php"
       },
       {
@@ -3366,7 +3370,7 @@
         "url": "https://blog.nogizaka46.com/sayuri.matsumura/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/matsumurasayuri.php"
       },
       {
@@ -3569,11 +3573,11 @@
         "url": "https://twitter.com/WAKA_Y_official/"
       },
       {
-        "title": "Official",
+        "title": "official",
         "url": "https://yumiwakatsuki.com/"
       },
       {
-        "title": "Online Salon",
+        "title": "online salon",
         "url": "https://lounge.dmm.com/detail/2711/"
       }
     ],
@@ -3769,7 +3773,7 @@
         "url": "https://blog.nogizaka46.com/maaya.wada/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/wadamaaya.php"
       },
       {
@@ -4295,11 +4299,11 @@
     },
     "sites": [
       {
-        "title": "Official",
+        "title": "official",
         "url": "https://nakamotohimeka.com/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://n46llc.com/s/m00/artist/6"
       }
     ],
@@ -4477,11 +4481,11 @@
         "url": "https://www.instagram.com/marikaito_official/"
       },
       {
-        "title": "Official",
+        "title": "official",
         "url": "https://itomarika.com/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://n46llc.com/s/m00/artist/3"
       }
     ],
@@ -4854,7 +4858,7 @@
         "url": "https://www.instagram.com/fukagawamai.official/"
       },
       {
-        "title": "Official",
+        "title": "official",
         "url": "https://fukagawamai.com/"
       }
     ],
@@ -5054,7 +5058,7 @@
         "url": "https://twitter.com/seira_0519n"
       },
       {
-        "title": "Official",
+        "title": "official",
         "url": "https://www.horipro.co.jp/nagashimaseira/"
       }
     ],
@@ -5223,7 +5227,7 @@
         "url": "https://www.youtube.com/channel/UCRQoWfwbu1dDf0XujaNQ-9A"
       },
       {
-        "title": "Official",
+        "title": "official",
         "url": "https://matsuirena.club/"
       }
     ],
@@ -6195,7 +6199,7 @@
         "url": "https://twitter.com/seira_miyazawa/"
       },
       {
-        "title": "Official",
+        "title": "official",
         "url": "http://www.incent.jp/idea/model/miyazawa/index.html"
       },
       {
@@ -6673,7 +6677,7 @@
         "url": "https://twitter.com/scarf_iwase/"
       },
       {
-        "title": "Official",
+        "title": "official",
         "url": "https://ketsuban.com/"
       }
     ],
@@ -6853,7 +6857,7 @@
         "url": "https://www.youtube.com/channel/UC9BihA2GY6ATFR__KvRWudA"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://n46llc.com/s/m00/artist/2"
       },
       {
@@ -7034,7 +7038,7 @@
         "url": "https://blog.nogizaka46.com/junna.itou/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/itoujunna.php"
       },
       {
@@ -7215,7 +7219,7 @@
         "url": "https://blog.nogizaka46.com/hinako.kitano/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/kitanohinako.php"
       },
       {
@@ -7409,7 +7413,7 @@
         "url": "https://twitter.com/ssk_ktk828"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "http://stylecube.jp/talents/kotoko/index.html"
       }
     ],
@@ -7586,7 +7590,7 @@
         "url": "https://blog.nogizaka46.com/mai.shinuchi/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/shinuchimai.php"
       },
       {
@@ -7776,7 +7780,7 @@
         "url": "https://blog.nogizaka46.com/ayane.suzuki/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/suzukiayane.php"
       },
       {
@@ -7971,7 +7975,7 @@
         "url": "https://blog.nogizaka46.com/ranze.terada/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/teradaranze.php"
       }
     ],
@@ -8149,11 +8153,11 @@
         "url": "https://blog.nogizaka46.com/miona.hori/"
       },
       {
-        "title": "Official",
+        "title": "official",
         "url": "https://hori-miona.com/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/horimiona.php"
       },
       {
@@ -8369,7 +8373,7 @@
         "url": "https://blog.nogizaka46.com/rena.yamazaki/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/yamazakirena.php"
       },
       {
@@ -8550,7 +8554,7 @@
         "url": "https://blog.nogizaka46.com/miria.watanabe/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/watanabemiria.php"
       },
       {
@@ -8721,7 +8725,7 @@
         "url": "https://www.instagram.com/_iori.sagara_/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://n46llc.com/s/m00/artist/5"
       },
       {
@@ -9187,7 +9191,7 @@
         "url": "https://blog.nogizaka46.com/riria.itou/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/itouriria.php"
       }
     ],
@@ -9349,7 +9353,7 @@
         "url": "https://blog.nogizaka46.com/renka.iwamoto/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/iwamotorenka.php"
       }
     ],
@@ -9517,7 +9521,7 @@
         "url": "https://blog.nogizaka46.com/minami.umezawa/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/umezawaminami.php"
       }
     ],
@@ -9698,7 +9702,7 @@
         "url": "https://blog.nogizaka46.com/momoko.oozono/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/oozonomomoko.php"
       }
     ],
@@ -9862,7 +9866,7 @@
         "url": "https://blog.nogizaka46.com/shiori.kubo/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/kuboshiori.php"
       }
     ],
@@ -10026,7 +10030,7 @@
         "url": "https://blog.nogizaka46.com/tamami.sakaguchi/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/sakaguchitamami.php"
       }
     ],
@@ -10192,7 +10196,7 @@
         "url": "https://blog.nogizaka46.com/kaede.satou/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/satoukaede.php"
       }
     ],
@@ -10354,7 +10358,7 @@
         "url": "https://blog.nogizaka46.com/reno.nakamura/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/nakamurareno.php"
       }
     ],
@@ -10516,7 +10520,7 @@
         "url": "https://blog.nogizaka46.com/hazuki.mukai/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/mukaihazuki.php"
       }
     ],
@@ -10686,7 +10690,7 @@
         "url": "https://blog.nogizaka46.com/mizuki.yamashita/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/yamashitamizuki.php"
       }
     ],
@@ -10861,7 +10865,7 @@
         "url": "https://blog.nogizaka46.com/ayanochristie.yoshida/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/yoshidaayanochristie.php"
       }
     ],
@@ -11029,7 +11033,7 @@
         "url": "https://blog.nogizaka46.com/yuuki.yoda/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/yodayuuki.php"
       }
     ],
@@ -11214,7 +11218,7 @@
         "url": "https://blog.nogizaka46.com/sakura.endou/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/endousakura.php"
       }
     ],
@@ -11374,7 +11378,7 @@
         "url": "https://blog.nogizaka46.com/haruka.kaki/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/kakiharuka.php"
       }
     ],
@@ -11534,7 +11538,7 @@
         "url": "https://blog.nogizaka46.com/sayaka.kakehashi/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/kakehashisayaka.php"
       }
     ],
@@ -11694,7 +11698,7 @@
         "url": "https://blog.nogizaka46.com/saya.kanagawa/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/kanagawasaya.php"
       }
     ],
@@ -11854,7 +11858,7 @@
         "url": "https://blog.nogizaka46.com/yuri.kitagawa/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/kitagawayuri.php"
       }
     ],
@@ -12014,7 +12018,7 @@
         "url": "https://blog.nogizaka46.com/yuna.shibata/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/shibatayuna.php"
       }
     ],
@@ -12174,7 +12178,7 @@
         "url": "https://blog.nogizaka46.com/rei.seimiya/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/seimiyarei.php"
       }
     ],
@@ -12334,7 +12338,7 @@
         "url": "https://blog.nogizaka46.com/mayu.tamura/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/tamuramayu.php"
       }
     ],
@@ -12494,7 +12498,7 @@
         "url": "https://blog.nogizaka46.com/ayame.tsutsui/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/tsutsuiayame.php"
       }
     ],
@@ -12654,7 +12658,7 @@
         "url": "https://blog.nogizaka46.com/seira.hayakawa/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/hayakawaseira.php"
       }
     ],
@@ -12814,7 +12818,7 @@
         "url": "https://blog.nogizaka46.com/mio.yakubo/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/yakubomio.php"
       }
     ],
@@ -12978,7 +12982,7 @@
         "url": "https://blog.nogizaka46.com/newfourth/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/kuromiharuka.php"
       }
     ],
@@ -13142,7 +13146,7 @@
         "url": "https://blog.nogizaka46.com/newfourth/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/satourika.php"
       }
     ],
@@ -13306,7 +13310,7 @@
         "url": "https://blog.nogizaka46.com/newfourth/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/hayashiruna.php"
       }
     ],
@@ -13469,7 +13473,7 @@
         "url": "https://blog.nogizaka46.com/newfourth/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/mastuomiyu.php"
       }
     ],
@@ -13633,7 +13637,7 @@
         "url": "https://blog.nogizaka46.com/newfourth/"
       },
       {
-        "title": "Profile",
+        "title": "profile",
         "url": "https://www.nogizaka46.com/member/detail/yumikinao.php"
       }
     ],
