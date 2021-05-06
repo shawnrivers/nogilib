@@ -262,6 +262,16 @@
         "artwork": "/images/artworks/singles/1/A.jpg"
       },
       {
+        "id": "single-gomennefingerscrossed",
+        "field": "ごめんねFingers crossed gomennefingerscrossed",
+        "searchType": "albums",
+        "key": "gomennefingerscrossed",
+        "title": "ごめんねFingers crossed",
+        "number": "27",
+        "albumType": "single",
+        "artwork": "/images/artworks/artwork_no_image.png"
+      },
+      {
         "id": "album-imagaomoideninarumade",
         "field": "今が思い出になるまで imagaomoideninarumade",
         "searchType": "albums",
@@ -3232,6 +3242,20 @@
         "artwork": "/images/artworks/singles/26/T.jpg"
       },
       {
+        "id": "song-gomennefingerscrossed",
+        "field": "ごめんねFingers crossed gomennefingerscrossed",
+        "searchType": "songs",
+        "key": "gomennefingerscrossed",
+        "title": "ごめんねFingers crossed",
+        "songType": "title",
+        "single": {
+          "title": "ごめんねFingers crossed",
+          "number": "27"
+        },
+        "albums": [],
+        "artwork": "/images/artworks/artwork_no_image.png"
+      },
+      {
         "id": "song-darekahamikata",
         "field": "誰かは味方 darekahamikata",
         "searchType": "songs",
@@ -4246,7 +4270,7 @@
           "firstNameEn": "reika"
         },
         "join": "first",
-        "profileImage": "/images/members/others/sakuraireika_2020-04-29.jpg"
+        "profileImage": "/images/members/others/sakuraireika_2021-03-01.jpg"
       },
       {
         "id": "member-shiraishimai",
@@ -4326,7 +4350,7 @@
           "firstNameEn": "ami"
         },
         "join": "first",
-        "profileImage": "/images/members/others/noujouami_2020-09-26.jpg"
+        "profileImage": "/images/members/others/noujouami_2021-04-17.jpg"
       },
       {
         "id": "member-higuchihina",
@@ -4390,7 +4414,7 @@
           "firstNameEn": "yumi"
         },
         "join": "first",
-        "profileImage": "/images/members/others/wakatsukiyumi_2020-06-11.jpg"
+        "profileImage": "/images/members/others/wakatsukiyumi_2021-04-02.jpg"
       },
       {
         "id": "member-wadamaaya",
@@ -4630,7 +4654,7 @@
           "firstNameEn": "seira"
         },
         "join": "first",
-        "profileImage": "/images/members/others/miyazawaseira_2020-04-29.jpg"
+        "profileImage": "/images/members/others/miyazawaseira_2021-04-17.jpg"
       },
       {
         "id": "member-kashiwayukina",

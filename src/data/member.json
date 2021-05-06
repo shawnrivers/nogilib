@@ -198,12 +198,16 @@
       {
         "singleNumber": "26",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "27",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 18,
-      "selected": 23,
+      "fukujin": 19,
+      "selected": 24,
       "under": 0
     }
   },
@@ -408,12 +412,16 @@
       {
         "singleNumber": "26",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "27",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 1,
-      "fukujin": 23,
-      "selected": 25,
+      "fukujin": 24,
+      "selected": 26,
       "under": 0
     }
   },
@@ -606,6 +614,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -800,6 +812,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -1020,6 +1036,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -1215,6 +1235,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -1407,12 +1431,16 @@
       {
         "singleNumber": "26",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "27",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 4,
-      "fukujin": 14,
-      "selected": 19,
+      "fukujin": 15,
+      "selected": 20,
       "under": 7
     }
   },
@@ -1599,6 +1627,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -1618,8 +1650,9 @@
       "lastNameEn": "sakurai",
       "firstNameEn": "reika"
     },
-    "profileImage": "/images/members/others/sakuraireika_2020-04-29.jpg",
+    "profileImage": "/images/members/others/sakuraireika_2021-03-01.jpg",
     "gallery": [
+      "/images/members/others/sakuraireika_2021-03-01.jpg",
       "/images/members/others/sakuraireika_2020-04-29.jpg",
       "/images/members/singles/22/sakuraireika.jpg",
       "/images/members/singles/20/sakuraireika.jpg",
@@ -1664,6 +1697,10 @@
       {
         "title": "Instagram",
         "url": "https://www.instagram.com/reika_s16/"
+      },
+      {
+        "title": "Official",
+        "url": "https://reikasakurai.com/s/m08/?ima=0916"
       },
       {
         "title": "Profile",
@@ -1803,6 +1840,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -2046,6 +2087,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -2257,12 +2302,16 @@
       {
         "singleNumber": "26",
         "position": "selected"
+      },
+      {
+        "singleNumber": "27",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 12,
-      "selected": 26,
+      "fukujin": 13,
+      "selected": 27,
       "under": 0
     }
   },
@@ -2449,6 +2498,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -2675,6 +2728,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -2694,8 +2751,9 @@
       "lastNameEn": "nojo",
       "firstNameEn": "ami"
     },
-    "profileImage": "/images/members/others/noujouami_2020-09-26.jpg",
+    "profileImage": "/images/members/others/noujouami_2021-04-17.jpg",
     "gallery": [
+      "/images/members/others/noujouami_2021-04-17.jpg",
       "/images/members/others/noujouami_2020-09-26.jpg",
       "/images/members/others/noujouami_2020-04-29.jpg",
       "/images/members/singles/22/noujouami.jpg",
@@ -2741,7 +2799,7 @@
       },
       {
         "title": "Profile",
-        "url": "https://n46llc.com/s/m00/artist/8"
+        "url": "https://www.tp-e.jp/noujo-ami/"
       }
     ],
     "photoAlbums": [],
@@ -2848,6 +2906,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -3030,12 +3092,16 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 1,
-      "selected": 4,
+      "selected": 5,
       "under": 22
     }
   },
@@ -3222,12 +3288,16 @@
       {
         "singleNumber": "26",
         "position": "selected"
+      },
+      {
+        "singleNumber": "27",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 10,
-      "selected": 24,
+      "fukujin": 11,
+      "selected": 25,
       "under": 2
     }
   },
@@ -3422,12 +3492,16 @@
       {
         "singleNumber": "26",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "27",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 21,
-      "selected": 26,
+      "fukujin": 22,
+      "selected": 27,
       "under": 0
     }
   },
@@ -3441,8 +3515,9 @@
       "lastNameEn": "wakatsuki",
       "firstNameEn": "yumi"
     },
-    "profileImage": "/images/members/others/wakatsukiyumi_2020-06-11.jpg",
+    "profileImage": "/images/members/others/wakatsukiyumi_2021-04-02.jpg",
     "gallery": [
+      "/images/members/others/wakatsukiyumi_2021-04-02.jpg",
       "/images/members/others/wakatsukiyumi_2020-06-11.jpg",
       "/images/members/others/wakatsukiyumi_2019-09-21.jpg",
       "/images/members/singles/22/wakatsukiyumi.jpg",
@@ -3500,10 +3575,6 @@
       {
         "title": "Online Salon",
         "url": "https://lounge.dmm.com/detail/2711/"
-      },
-      {
-        "title": "Profile",
-        "url": "https://n46llc.com/s/m00/artist/9"
       }
     ],
     "photoAlbums": [
@@ -3624,6 +3695,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -3685,6 +3760,10 @@
       "right": "orange"
     },
     "sites": [
+      {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/wada_maaya_official/"
+      },
       {
         "title": "blog",
         "url": "https://blog.nogizaka46.com/maaya.wada/"
@@ -3803,13 +3882,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 1,
       "selected": 2,
-      "under": 24
+      "under": 25
     }
   },
   {
@@ -3974,6 +4057,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -4146,6 +4233,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -4316,6 +4407,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -4508,6 +4603,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -4692,6 +4791,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -4885,6 +4988,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -5056,6 +5163,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -5220,6 +5331,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -5388,6 +5503,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -5540,6 +5659,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -5703,6 +5826,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -5861,6 +5988,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -6005,6 +6136,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -6024,8 +6159,9 @@
       "lastNameEn": "miyazawa",
       "firstNameEn": "seira"
     },
-    "profileImage": "/images/members/others/miyazawaseira_2020-04-29.jpg",
+    "profileImage": "/images/members/others/miyazawaseira_2021-04-17.jpg",
     "gallery": [
+      "/images/members/others/miyazawaseira_2021-04-17.jpg",
       "/images/members/others/miyazawaseira_2020-04-29.jpg",
       "/images/members/singles/6/miyazawaseira.jpg",
       "/images/members/singles/5/miyazawaseira.jpg",
@@ -6057,6 +6193,10 @@
       {
         "title": "Twitter",
         "url": "https://twitter.com/seira_miyazawa/"
+      },
+      {
+        "title": "Official",
+        "url": "http://www.incent.jp/idea/model/miyazawa/index.html"
       },
       {
         "title": "Ameba",
@@ -6167,6 +6307,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -6326,6 +6470,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -6473,6 +6621,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -6629,6 +6781,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -6810,6 +6966,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -6987,13 +7147,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 15
+      "under": 16
     }
   },
   {
@@ -7042,6 +7206,10 @@
       "right": "yellow green"
     },
     "sites": [
+      {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/kitanohinako_official/"
+      },
       {
         "title": "blog",
         "url": "https://blog.nogizaka46.com/hinako.kitano/"
@@ -7173,13 +7341,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 1,
       "selected": 8,
-      "under": 10
+      "under": 11
     }
   },
   {
@@ -7345,6 +7517,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -7536,12 +7712,16 @@
       {
         "singleNumber": "26",
         "position": "selected"
+      },
+      {
+        "singleNumber": "27",
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 12,
+      "selected": 13,
       "under": 7
     }
   },
@@ -7722,13 +7902,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 2,
-      "under": 13
+      "under": 14
     }
   },
   {
@@ -7896,13 +8080,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 2,
-      "under": 13
+      "under": 14
     }
   },
   {
@@ -7935,8 +8123,8 @@
     ],
     "join": "second",
     "graduation": {
-      "isGraduated": false,
-      "graduatedDate": ""
+      "isGraduated": true,
+      "graduatedDate": "2021-03-28"
     },
     "birthday": "1996-10-15",
     "height": 162,
@@ -7954,11 +8142,15 @@
     "sites": [
       {
         "title": "Instagram",
-        "url": "https://www.instagram.com/horimiona_2nd/"
+        "url": "https://www.instagram.com/horimiona_official/"
       },
       {
         "title": "blog",
         "url": "https://blog.nogizaka46.com/miona.hori/"
+      },
+      {
+        "title": "Official",
+        "url": "https://hori-miona.com/"
       },
       {
         "title": "Profile",
@@ -7970,6 +8162,18 @@
       }
     ],
     "photoAlbums": [
+      {
+        "title": "いつのまにか",
+        "release": "2021-04-20",
+        "type": "photo book",
+        "sites": [
+          {
+            "title": "Twitter",
+            "url": "https://twitter.com/miona_photobook"
+          }
+        ],
+        "cover": "/images/photo-albums/horimiona_3.jpg"
+      },
       {
         "title": "いつかの待ち合わせ場所",
         "release": "2020-05-27",
@@ -8099,6 +8303,10 @@
       {
         "singleNumber": "26",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -8274,13 +8482,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 14
+      "under": 15
     }
   },
   {
@@ -8329,6 +8541,10 @@
       "right": "yellow green"
     },
     "sites": [
+      {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/miria.watanabe_official/"
+      },
       {
         "title": "blog",
         "url": "https://blog.nogizaka46.com/miria.watanabe/"
@@ -8447,13 +8663,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 1,
-      "under": 14
+      "under": 15
     }
   },
   {
@@ -8614,6 +8834,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -8760,6 +8984,10 @@
       {
         "singleNumber": "26",
         "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -8905,6 +9133,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
         "position": "none"
       }
     ],
@@ -9064,13 +9296,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 2,
-      "under": 5
+      "under": 6
     }
   },
   {
@@ -9222,12 +9458,16 @@
       {
         "singleNumber": "26",
         "position": "selected"
+      },
+      {
+        "singleNumber": "27",
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 1,
-      "selected": 4,
+      "selected": 5,
       "under": 3
     }
   },
@@ -9399,12 +9639,16 @@
       {
         "singleNumber": "26",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "27",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 4,
-      "selected": 6,
+      "fukujin": 5,
+      "selected": 7,
       "under": 1
     }
   },
@@ -9563,12 +9807,16 @@
       {
         "singleNumber": "26",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "27",
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 1,
       "fukujin": 5,
-      "selected": 7,
+      "selected": 8,
       "under": 0
     }
   },
@@ -9723,12 +9971,16 @@
       {
         "singleNumber": "26",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "27",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 3,
-      "selected": 5,
+      "fukujin": 4,
+      "selected": 6,
       "under": 1
     }
   },
@@ -9883,13 +10135,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 1,
-      "under": 6
+      "under": 7
     }
   },
   {
@@ -9927,6 +10183,10 @@
       "right": "red"
     },
     "sites": [
+      {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/Kaede_Sato.official/"
+      },
       {
         "title": "blog",
         "url": "https://blog.nogizaka46.com/kaede.satou/"
@@ -10041,13 +10301,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 2,
-      "under": 5
+      "under": 6
     }
   },
   {
@@ -10199,13 +10463,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 7
+      "under": 8
     }
   },
   {
@@ -10357,13 +10625,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 7
+      "under": 8
     }
   },
   {
@@ -10405,6 +10677,10 @@
       "right": "yellow"
     },
     "sites": [
+      {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/mizuki.yamashita.official/"
+      },
       {
         "title": "blog",
         "url": "https://blog.nogizaka46.com/mizuki.yamashita/"
@@ -10532,12 +10808,16 @@
       {
         "singleNumber": "26",
         "position": "center"
+      },
+      {
+        "singleNumber": "27",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 1,
-      "fukujin": 5,
-      "selected": 6,
+      "fukujin": 6,
+      "selected": 7,
       "under": 0
     }
   },
@@ -10690,13 +10970,17 @@
       {
         "singleNumber": "26",
         "position": "under"
+      },
+      {
+        "singleNumber": "27",
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 7
+      "under": 8
     }
   },
   {
@@ -10879,12 +11163,16 @@
       {
         "singleNumber": "26",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "27",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 1,
-      "fukujin": 7,
-      "selected": 8,
+      "fukujin": 8,
+      "selected": 9,
       "under": 0
     }
   },
@@ -11035,12 +11323,16 @@
       {
         "singleNumber": "26",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "27",
+        "position": "center"
       }
     ],
     "positionsCounter": {
-      "center": 1,
-      "fukujin": 2,
-      "selected": 3,
+      "center": 2,
+      "fukujin": 3,
+      "selected": 4,
       "under": 0
     }
   },
@@ -11191,12 +11483,16 @@
       {
         "singleNumber": "26",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "27",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 2,
-      "selected": 3,
+      "fukujin": 3,
+      "selected": 4,
       "under": 0
     }
   },
@@ -11346,6 +11642,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "27",
         "position": "trainee"
       }
     ],
@@ -11503,6 +11803,10 @@
       {
         "singleNumber": "26",
         "position": "trainee"
+      },
+      {
+        "singleNumber": "27",
+        "position": "trainee"
       }
     ],
     "positionsCounter": {
@@ -11658,6 +11962,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "27",
         "position": "trainee"
       }
     ],
@@ -11815,6 +12123,10 @@
       {
         "singleNumber": "26",
         "position": "trainee"
+      },
+      {
+        "singleNumber": "27",
+        "position": "trainee"
       }
     ],
     "positionsCounter": {
@@ -11971,12 +12283,16 @@
       {
         "singleNumber": "26",
         "position": "trainee"
+      },
+      {
+        "singleNumber": "27",
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 0,
+      "selected": 1,
       "under": 0
     }
   },
@@ -12127,12 +12443,16 @@
       {
         "singleNumber": "26",
         "position": "selected"
+      },
+      {
+        "singleNumber": "27",
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 1,
+      "selected": 2,
       "under": 0
     }
   },
@@ -12283,12 +12603,16 @@
       {
         "singleNumber": "26",
         "position": "selected"
+      },
+      {
+        "singleNumber": "27",
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 1,
-      "selected": 2,
+      "selected": 3,
       "under": 0
     }
   },
@@ -12439,12 +12763,16 @@
       {
         "singleNumber": "26",
         "position": "trainee"
+      },
+      {
+        "singleNumber": "27",
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 0,
+      "selected": 1,
       "under": 0
     }
   },
@@ -12594,6 +12922,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "27",
         "position": "trainee"
       }
     ],
@@ -12755,6 +13087,10 @@
       {
         "singleNumber": "26",
         "position": "trainee"
+      },
+      {
+        "singleNumber": "27",
+        "position": "trainee"
       }
     ],
     "positionsCounter": {
@@ -12914,6 +13250,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "27",
         "position": "trainee"
       }
     ],
@@ -13075,6 +13415,10 @@
       {
         "singleNumber": "26",
         "position": "trainee"
+      },
+      {
+        "singleNumber": "27",
+        "position": "trainee"
       }
     ],
     "positionsCounter": {
@@ -13233,6 +13577,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "27",
         "position": "trainee"
       }
     ],
@@ -13393,6 +13741,10 @@
       },
       {
         "singleNumber": "26",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "27",
         "position": "trainee"
       }
     ],

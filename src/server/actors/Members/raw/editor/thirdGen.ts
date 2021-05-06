@@ -169,6 +169,10 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Aichi,
     sites: [
       {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/Kaede_Sato.official/',
+      },
+      {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/kaede.satou/',
       },
@@ -235,6 +239,10 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     bloodType: BloodType.O,
     origin: Birthplace.Tokyo,
     sites: [
+      {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/mizuki.yamashita.official/',
+      },
       {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/mizuki.yamashita/',

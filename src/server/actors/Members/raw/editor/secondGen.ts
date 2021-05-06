@@ -81,6 +81,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Hokkaido,
     sites: [
       {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/kitanohinako_official/',
+      },
+      {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/hinako.kitano/',
       },
@@ -246,10 +250,15 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     height: 162,
     bloodType: BloodType.O,
     origin: Birthplace.Gifu,
+    graduatedDate: '2021-03-28',
     sites: [
       {
         title: SocialMedia.Instagram,
-        url: 'https://www.instagram.com/horimiona_2nd/',
+        url: 'https://www.instagram.com/horimiona_official/',
+      },
+      {
+        title: SocialMedia.Official,
+        url: 'https://hori-miona.com/',
       },
       {
         title: SocialMedia.Blog,
@@ -288,6 +297,18 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
           },
         ],
         cover: 'photo-albums/horimiona_2.jpg',
+      },
+      {
+        title: 'いつのまにか',
+        release: '2021-04-20',
+        type: PhotoAlbumType.PhotoBook,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/miona_photobook',
+          },
+        ],
+        cover: 'photo-albums/horimiona_3.jpg',
       },
     ],
   }),
@@ -336,6 +357,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     bloodType: BloodType.O,
     origin: Birthplace.Tokyo,
     sites: [
+      {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/miria.watanabe_official/',
+      },
       {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/miria.watanabe/',

@@ -410,6 +410,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/reika_s16/',
       },
       {
+        title: SocialMedia.Official,
+        url: 'https://reikasakurai.com/s/m08/?ima=0916',
+      },
+      {
         title: SocialMedia.Profile,
         url: 'https://n46llc.com/s/m00/artist/11',
       },
@@ -722,7 +726,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       },
       {
         title: SocialMedia.Profile,
-        url: 'https://n46llc.com/s/m00/artist/8',
+        url: 'https://www.tp-e.jp/noujo-ami/',
       },
     ],
     graduatedDate: '2018-12-15',
@@ -868,10 +872,6 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: SocialMedia.OnlineSalon,
         url: 'https://lounge.dmm.com/detail/2711/',
       },
-      {
-        title: SocialMedia.Profile,
-        url: 'https://n46llc.com/s/m00/artist/9',
-      },
     ],
     photoAlbums: [
       {
@@ -899,6 +899,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     bloodType: BloodType.O,
     origin: Birthplace.Hiroshima,
     sites: [
+      {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/wada_maaya_official/',
+      },
       {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/maaya.wada/',
@@ -1279,6 +1283,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: SocialMedia.Twitter,
         url: 'https://twitter.com/seira_miyazawa/',
+      },
+      {
+        title: SocialMedia.Official,
+        url: 'http://www.incent.jp/idea/model/miyazawa/index.html',
       },
       {
         title: 'Ameba',
