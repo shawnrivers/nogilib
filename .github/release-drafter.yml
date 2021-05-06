@@ -3,16 +3,19 @@ tag-template: 'v$RESOLVED_VERSION'
 change-template: '- $TITLE ($URL)'
 categories:
   - title: '🚀 Features'
-    labels: 'feature'
+    labels: 
+      - 'feature'
   - title: '🌈 Data Update'
-    labels: 'data update'
+    labels:
+      - 'data update'
   - title: '🔨 Improvements'
     labels:
       - 'improvement'
       - 'documentation'
       - 'dependencies'
   - title: '🐛 Bug Fixes'
-    labels: 'bug'
+    labels:
+      - 'bug'
 version-resolver:
   major:
     labels:
