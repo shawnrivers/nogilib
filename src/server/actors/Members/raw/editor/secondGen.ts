@@ -416,6 +416,16 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     height: 163,
     bloodType: BloodType.AB,
     origin: Birthplace.Kanagawa,
+    sites: [
+      {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/kyoka_yonetoku/',
+      },
+      {
+        title: SocialMedia.Twitter,
+        url: 'https://twitter.com/miss2chuo__2020',
+      },
+    ],
     graduatedDate: '2014-10-18',
   }),
   createMemberRaw({
