@@ -8882,7 +8882,16 @@
       "left": "light blue",
       "right": "blue"
     },
-    "sites": [],
+    "sites": [
+      {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/kyoka_yonetoku/"
+      },
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/miss2chuo__2020"
+      }
+    ],
     "photoAlbums": [],
     "positionsHistory": [
       {
