@@ -35,4 +35,6 @@ jobs:
               } else {
                 console.log('Not Merged 🚫');
               }
+            } else {
+              console.log('Mot Merged 🚫');
             }
