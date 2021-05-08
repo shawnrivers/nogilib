@@ -145,28 +145,21 @@ export const SongPage: React.FC<SongPageProps> = props => {
               flex-wrap: wrap;
               justify-content: center;
               margin-top: 0.8em;
+
+              & > * {
+                margin-top: 0.4em;
+              }
+
+              & > *:not(:first-of-type) {
+                margin-left: 0.4em;
+              }
             `}
           >
-            <Hashtag
-              css={css`
-                &:not(:first-of-type) {
-                  margin-left: 0.4em;
-                }
-              `}
-            >
+            <Hashtag>
               <Translation text={type as any} />
             </Hashtag>
-            {songTags.map((tag, index) => (
-              <Hashtag
-                key={index}
-                css={css`
-                  &:not(:first-of-type) {
-                    margin-left: 0.4em;
-                  }
-                `}
-              >
-                {tag}
-              </Hashtag>
+            {songTags.map(tag => (
+              <Hashtag key={tag}>{tag}</Hashtag>
             ))}
           </div>
           <section>
