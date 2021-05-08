@@ -1,6 +1,6 @@
 # From @UziTech
 # https://github.com/dependabot/dependabot-core/issues/2268#issuecomment-831376155
-name: Auto merge dependabot PR
+name: Auto merge Dependabot PR
 
 on:
   workflow_run:
@@ -12,9 +12,7 @@ on:
 jobs:
   auto-merge:
     runs-on: ubuntu-latest
-    if: |
-      github.event.workflow_run.event == 'pull_request' &&
-      github.event.workflow_run.conclusion == 'success'
+    if: ${{ github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: 'Merge PR'
         uses: actions/github-script@v4
