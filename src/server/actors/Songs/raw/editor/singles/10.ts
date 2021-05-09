@@ -112,9 +112,9 @@ export const TENTH_SINGLE_SONGS: SongRaw[] = [
     center: [MemberNameKey.IkutaErika],
     formations: {
       firstRow: [
+        MemberNameKey.IkomaRina,
         MemberNameKey.AkimotoManatsu,
         MemberNameKey.IkutaErika,
-        MemberNameKey.IkomaRina,
         MemberNameKey.EtouMisa,
         MemberNameKey.SaitouChiharu,
         MemberNameKey.SakuraiReika,

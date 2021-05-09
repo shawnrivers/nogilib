@@ -86,9 +86,9 @@ export const FIRST_SINGLE_SONGS: SongRaw[] = [
     center: [MemberNameKey.IkomaRina],
     formations: {
       firstRow: [
+        MemberNameKey.IkomaRina,
         MemberNameKey.AndouMikumo,
         MemberNameKey.IkutaErika,
-        MemberNameKey.IkomaRina,
         MemberNameKey.IchikiRena,
         MemberNameKey.ItouNene,
         MemberNameKey.ItouMarika,
@@ -134,8 +134,8 @@ export const FIRST_SINGLE_SONGS: SongRaw[] = [
     center: [MemberNameKey.IkomaRina],
     formations: {
       firstRow: [
-        MemberNameKey.IkutaErika,
         MemberNameKey.IkomaRina,
+        MemberNameKey.IkutaErika,
         MemberNameKey.IchikiRena,
         MemberNameKey.ItouNene,
         MemberNameKey.ItouMarika,
@@ -203,9 +203,9 @@ export const FIRST_SINGLE_SONGS: SongRaw[] = [
     center: [MemberNameKey.IkomaRina],
     formations: {
       firstRow: [
+        MemberNameKey.IkomaRina,
         MemberNameKey.AndouMikumo,
         MemberNameKey.IkutaErika,
-        MemberNameKey.IkomaRina,
         MemberNameKey.IchikiRena,
         MemberNameKey.InoueSayuri,
         MemberNameKey.IwaseYumiko,

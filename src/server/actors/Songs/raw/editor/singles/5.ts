@@ -89,9 +89,10 @@ export const FIFTH_SINGLE_SONGS: SongRaw[] = [
     center: [MemberNameKey.IkomaRina, MemberNameKey.HoshinoMinami],
     formations: {
       firstRow: [
+        MemberNameKey.IkomaRina,
+        MemberNameKey.HoshinoMinami,
         MemberNameKey.AkimotoManatsu,
         MemberNameKey.IkutaErika,
-        MemberNameKey.IkomaRina,
         MemberNameKey.ItouNene,
         MemberNameKey.InoueSayuri,
         MemberNameKey.SakuraiReika,
@@ -102,7 +103,6 @@ export const FIFTH_SINGLE_SONGS: SongRaw[] = [
         MemberNameKey.NishinoNanase,
         MemberNameKey.HashimotoNanami,
         MemberNameKey.FukagawaMai,
-        MemberNameKey.HoshinoMinami,
         MemberNameKey.MatsumuraSayuri,
         MemberNameKey.WakatsukiYumi,
       ],

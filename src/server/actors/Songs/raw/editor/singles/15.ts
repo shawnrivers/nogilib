@@ -92,12 +92,12 @@ export const FIFTEENTH_SINGLE_SONGS: SongRaw[] = [
     center: [MemberNameKey.SaitouAsuka],
     formations: {
       firstRow: [
+        MemberNameKey.SaitouAsuka,
         MemberNameKey.AkimotoManatsu,
         MemberNameKey.IkutaErika,
         MemberNameKey.IkomaRina,
         MemberNameKey.EtouMisa,
         MemberNameKey.KitanoHinako,
-        MemberNameKey.SaitouAsuka,
         MemberNameKey.SakuraiReika,
         MemberNameKey.ShiraishiMai,
         MemberNameKey.TakayamaKazumi,
