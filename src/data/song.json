@@ -36214,20 +36214,6 @@
     "performers": [
       [
         {
-          "name": "akimotomanatsu",
-          "nameNotations": {
-            "lastName": "秋元",
-            "firstName": "真夏",
-            "lastNameFurigana": "あきもと",
-            "firstNameFurigana": "まなつ",
-            "lastNameEn": "akimoto",
-            "firstNameEn": "manatsu"
-          },
-          "profileImage": "/images/members/singles/10/akimotomanatsu.jpg",
-          "position": null,
-          "isMember": true
-        },
-        {
           "name": "ikutaerika",
           "nameNotations": {
             "lastName": "生田",
@@ -36239,6 +36225,20 @@
           },
           "profileImage": "/images/members/singles/10/ikutaerika.jpg",
           "position": "center",
+          "isMember": true
+        },
+        {
+          "name": "akimotomanatsu",
+          "nameNotations": {
+            "lastName": "秋元",
+            "firstName": "真夏",
+            "lastNameFurigana": "あきもと",
+            "firstNameFurigana": "まなつ",
+            "lastNameEn": "akimoto",
+            "firstNameEn": "manatsu"
+          },
+          "profileImage": "/images/members/singles/10/akimotomanatsu.jpg",
+          "position": null,
           "isMember": true
         },
         {
@@ -36883,6 +36883,20 @@
     "performers": [
       [
         {
+          "name": "inouesayuri",
+          "nameNotations": {
+            "lastName": "井上",
+            "firstName": "小百合",
+            "lastNameFurigana": "いのうえ",
+            "firstNameFurigana": "さゆり",
+            "lastNameEn": "inoue",
+            "firstNameEn": "sayuri"
+          },
+          "profileImage": "/images/members/singles/10/inouesayuri.jpg",
+          "position": "center",
+          "isMember": true
+        },
+        {
           "name": "itoukarin",
           "nameNotations": {
             "lastName": "伊藤",
@@ -36922,20 +36936,6 @@
           },
           "profileImage": "/images/members/singles/10/itoumarika.jpg",
           "position": null,
-          "isMember": true
-        },
-        {
-          "name": "inouesayuri",
-          "nameNotations": {
-            "lastName": "井上",
-            "firstName": "小百合",
-            "lastNameFurigana": "いのうえ",
-            "firstNameFurigana": "さゆり",
-            "lastNameEn": "inoue",
-            "firstNameEn": "sayuri"
-          },
-          "profileImage": "/images/members/singles/10/inouesayuri.jpg",
-          "position": "center",
           "isMember": true
         },
         {
@@ -40851,6 +40851,20 @@
     "performers": [
       [
         {
+          "name": "suzukiayane",
+          "nameNotations": {
+            "lastName": "鈴木",
+            "firstName": "絢音",
+            "lastNameFurigana": "すずき",
+            "firstNameFurigana": "あやね",
+            "lastNameEn": "suzuki",
+            "firstNameEn": "ayane"
+          },
+          "profileImage": "/images/members/singles/17/suzukiayane.jpg",
+          "position": "center",
+          "isMember": true
+        },
+        {
           "name": "itoukarin",
           "nameNotations": {
             "lastName": "伊藤",
@@ -40946,20 +40960,6 @@
           },
           "profileImage": "/images/members/singles/17/sasakikotoko.jpg",
           "position": null,
-          "isMember": true
-        },
-        {
-          "name": "suzukiayane",
-          "nameNotations": {
-            "lastName": "鈴木",
-            "firstName": "絢音",
-            "lastNameFurigana": "すずき",
-            "firstNameFurigana": "あやね",
-            "lastNameEn": "suzuki",
-            "firstNameEn": "ayane"
-          },
-          "profileImage": "/images/members/singles/17/suzukiayane.jpg",
-          "position": "center",
           "isMember": true
         },
         {
@@ -41087,6 +41087,20 @@
     "performers": [
       [
         {
+          "name": "teradaranze",
+          "nameNotations": {
+            "lastName": "寺田",
+            "firstName": "蘭世",
+            "lastNameFurigana": "てらだ",
+            "firstNameFurigana": "らんぜ",
+            "lastNameEn": "terada",
+            "firstNameEn": "ranze"
+          },
+          "profileImage": "/images/members/singles/17/teradaranze.jpg",
+          "position": "center",
+          "isMember": true
+        },
+        {
           "name": "itoukarin",
           "nameNotations": {
             "lastName": "伊藤",
@@ -41196,20 +41210,6 @@
           },
           "profileImage": "/images/members/singles/17/suzukiayane.jpg",
           "position": null,
-          "isMember": true
-        },
-        {
-          "name": "teradaranze",
-          "nameNotations": {
-            "lastName": "寺田",
-            "firstName": "蘭世",
-            "lastNameFurigana": "てらだ",
-            "firstNameFurigana": "らんぜ",
-            "lastNameEn": "terada",
-            "firstNameEn": "ranze"
-          },
-          "profileImage": "/images/members/singles/17/teradaranze.jpg",
-          "position": "center",
           "isMember": true
         },
         {
@@ -41323,6 +41323,20 @@
     "performers": [
       [
         {
+          "name": "higuchihina",
+          "nameNotations": {
+            "lastName": "樋口",
+            "firstName": "日奈",
+            "lastNameFurigana": "ひぐち",
+            "firstNameFurigana": "ひな",
+            "lastNameEn": "higuchi",
+            "firstNameEn": "hina"
+          },
+          "profileImage": "/images/members/singles/17/higuchihina.jpg",
+          "position": "center",
+          "isMember": true
+        },
+        {
           "name": "itoukarin",
           "nameNotations": {
             "lastName": "伊藤",
@@ -41460,20 +41474,6 @@
           },
           "profileImage": "/images/members/singles/17/noujouami.jpg",
           "position": null,
-          "isMember": true
-        },
-        {
-          "name": "higuchihina",
-          "nameNotations": {
-            "lastName": "樋口",
-            "firstName": "日奈",
-            "lastNameFurigana": "ひぐち",
-            "firstNameFurigana": "ひな",
-            "lastNameEn": "higuchi",
-            "firstNameEn": "hina"
-          },
-          "profileImage": "/images/members/singles/17/higuchihina.jpg",
-          "position": "center",
           "isMember": true
         },
         {
