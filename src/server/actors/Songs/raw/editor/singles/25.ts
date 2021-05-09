@@ -88,17 +88,22 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
       arrange: ['中村泰輔'],
       direct: ['伊藤衆人'],
     },
+    center: [MemberNameKey.HoriMiona],
     formations: {
       firstRow: [
-        MemberNameKey.ItouJunna,
-        MemberNameKey.KitanoHinako,
-        MemberNameKey.SasakiKotoko,
         MemberNameKey.ShinuchiMai,
-        MemberNameKey.SuzukiAyane,
-        MemberNameKey.TeradaRanze,
         MemberNameKey.HoriMiona,
-        MemberNameKey.YamazakiRena,
+        MemberNameKey.KitanoHinako,
+      ],
+      secondRow: [
+        MemberNameKey.TeradaRanze,
+        MemberNameKey.SuzukiAyane,
         MemberNameKey.WatanabeMiria,
+      ],
+      thirdRow: [
+        MemberNameKey.ItouJunna,
+        MemberNameKey.SasakiKotoko,
+        MemberNameKey.YamazakiRena,
       ],
     },
   }),
