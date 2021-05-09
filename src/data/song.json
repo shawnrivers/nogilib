@@ -41547,6 +41547,34 @@
     "performers": [
       [
         {
+          "name": "shiraishimai",
+          "nameNotations": {
+            "lastName": "白石",
+            "firstName": "麻衣",
+            "lastNameFurigana": "しらいし",
+            "firstNameFurigana": "まい",
+            "lastNameEn": "shiraishi",
+            "firstNameEn": "mai"
+          },
+          "profileImage": "/images/members/singles/22/shiraishimai.jpg",
+          "position": "center",
+          "isMember": true
+        },
+        {
+          "name": "saitouasuka",
+          "nameNotations": {
+            "lastName": "齋藤",
+            "firstName": "飛鳥",
+            "lastNameFurigana": "さいとう",
+            "firstNameFurigana": "あすか",
+            "lastNameEn": "saito",
+            "firstNameEn": "asuka"
+          },
+          "profileImage": "/images/members/singles/22/saitouasuka.jpg",
+          "position": "center",
+          "isMember": true
+        },
+        {
           "name": "akimotomanatsu",
           "nameNotations": {
             "lastName": "秋元",
@@ -41631,20 +41659,6 @@
           "isMember": true
         },
         {
-          "name": "saitouasuka",
-          "nameNotations": {
-            "lastName": "齋藤",
-            "firstName": "飛鳥",
-            "lastNameFurigana": "さいとう",
-            "firstNameFurigana": "あすか",
-            "lastNameEn": "saito",
-            "firstNameEn": "asuka"
-          },
-          "profileImage": "/images/members/singles/22/saitouasuka.jpg",
-          "position": null,
-          "isMember": true
-        },
-        {
           "name": "saitouyuuri",
           "nameNotations": {
             "lastName": "斉藤",
@@ -41683,20 +41697,6 @@
             "firstNameEn": "kaede"
           },
           "profileImage": "/images/members/singles/22/satoukaede.jpg",
-          "position": null,
-          "isMember": true
-        },
-        {
-          "name": "shiraishimai",
-          "nameNotations": {
-            "lastName": "白石",
-            "firstName": "麻衣",
-            "lastNameFurigana": "しらいし",
-            "firstNameFurigana": "まい",
-            "lastNameEn": "shiraishi",
-            "firstNameEn": "mai"
-          },
-          "profileImage": "/images/members/singles/22/shiraishimai.jpg",
           "position": null,
           "isMember": true
         },
@@ -42462,6 +42462,20 @@
     "performers": [
       [
         {
+          "name": "saitouasuka",
+          "nameNotations": {
+            "lastName": "齋藤",
+            "firstName": "飛鳥",
+            "lastNameFurigana": "さいとう",
+            "firstNameFurigana": "あすか",
+            "lastNameEn": "saito",
+            "firstNameEn": "asuka"
+          },
+          "profileImage": "/images/members/singles/22/saitouasuka.jpg",
+          "position": "center",
+          "isMember": true
+        },
+        {
           "name": "akimotomanatsu",
           "nameNotations": {
             "lastName": "秋元",
@@ -42556,20 +42570,6 @@
             "firstNameEn": "shiori"
           },
           "profileImage": "/images/members/singles/22/kuboshiori.jpg",
-          "position": null,
-          "isMember": true
-        },
-        {
-          "name": "saitouasuka",
-          "nameNotations": {
-            "lastName": "齋藤",
-            "firstName": "飛鳥",
-            "lastNameFurigana": "さいとう",
-            "firstNameFurigana": "あすか",
-            "lastNameEn": "saito",
-            "firstNameEn": "asuka"
-          },
-          "profileImage": "/images/members/singles/22/saitouasuka.jpg",
           "position": null,
           "isMember": true
         },
