@@ -129,6 +129,7 @@ export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
     formations: {
       firstRow: [
         MemberNameKey.AkimotoManatsu,
+        MemberNameKey.MatsumuraSayuri,
         MemberNameKey.IkutaErika,
         MemberNameKey.IkomaRina,
         MemberNameKey.ItouMarika,
@@ -143,7 +144,6 @@ export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
         MemberNameKey.NishinoNanase,
         MemberNameKey.HoshinoMinami,
         MemberNameKey.HoriMiona,
-        MemberNameKey.MatsumuraSayuri,
         MemberNameKey.YodaYuuki,
         MemberNameKey.WakatsukiYumi,
       ],
@@ -223,6 +223,7 @@ export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
     center: [MemberNameKey.TakayamaKazumi],
     formations: {
       firstRow: [
+        MemberNameKey.TakayamaKazumi,
         MemberNameKey.AkimotoManatsu,
         MemberNameKey.IkutaErika,
         MemberNameKey.IkomaRina,
@@ -234,7 +235,6 @@ export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
         MemberNameKey.SakuraiReika,
         MemberNameKey.ShiraishiMai,
         MemberNameKey.ShinuchiMai,
-        MemberNameKey.TakayamaKazumi,
         MemberNameKey.NishinoNanase,
         MemberNameKey.HoshinoMinami,
         MemberNameKey.HoriMiona,

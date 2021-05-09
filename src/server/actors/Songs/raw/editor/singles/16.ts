@@ -92,6 +92,7 @@ export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
     center: [MemberNameKey.HashimotoNanami],
     formations: {
       firstRow: [
+        MemberNameKey.HashimotoNanami,
         MemberNameKey.AkimotoManatsu,
         MemberNameKey.IkutaErika,
         MemberNameKey.IkomaRina,
@@ -106,7 +107,6 @@ export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
         MemberNameKey.TakayamaKazumi,
         MemberNameKey.NakamotoHimeka,
         MemberNameKey.NishinoNanase,
-        MemberNameKey.HashimotoNanami,
         MemberNameKey.HoshinoMinami,
         MemberNameKey.HoriMiona,
         MemberNameKey.MatsumuraSayuri,

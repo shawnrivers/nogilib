@@ -90,6 +90,8 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
     center: [MemberNameKey.KuboShiori, MemberNameKey.YamashitaMizuki],
     formations: {
       firstRow: [
+        MemberNameKey.KuboShiori,
+        MemberNameKey.YamashitaMizuki,
         MemberNameKey.AkimotoManatsu,
         MemberNameKey.IkutaErika,
         MemberNameKey.IkomaRina,
@@ -97,7 +99,6 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
         MemberNameKey.InoueSayuri,
         MemberNameKey.EtouMisa,
         MemberNameKey.OozonoMomoko,
-        MemberNameKey.KuboShiori,
         MemberNameKey.SaitouAsuka,
         MemberNameKey.SakuraiReika,
         MemberNameKey.ShiraishiMai,
@@ -107,7 +108,6 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
         MemberNameKey.HoshinoMinami,
         MemberNameKey.HoriMiona,
         MemberNameKey.MatsumuraSayuri,
-        MemberNameKey.YamashitaMizuki,
         MemberNameKey.YodaYuuki,
         MemberNameKey.WakatsukiYumi,
       ],

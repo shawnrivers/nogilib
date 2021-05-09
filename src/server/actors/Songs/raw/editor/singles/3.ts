@@ -121,8 +121,8 @@ export const THIRD_SINGLE_SONGS: SongRaw[] = [
     center: [MemberNameKey.IkomaRina],
     formations: {
       firstRow: [
-        MemberNameKey.IkutaErika,
         MemberNameKey.IkomaRina,
+        MemberNameKey.IkutaErika,
         MemberNameKey.IchikiRena,
         MemberNameKey.ItouMarika,
         MemberNameKey.InoueSayuri,
@@ -157,8 +157,8 @@ export const THIRD_SINGLE_SONGS: SongRaw[] = [
     center: [MemberNameKey.IkomaRina],
     formations: {
       firstRow: [
-        MemberNameKey.IkutaErika,
         MemberNameKey.IkomaRina,
+        MemberNameKey.IkutaErika,
         MemberNameKey.IchikiRena,
         MemberNameKey.ItouNene,
         MemberNameKey.ItouMarika,

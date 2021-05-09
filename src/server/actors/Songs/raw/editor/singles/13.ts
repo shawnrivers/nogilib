@@ -149,9 +149,9 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
     center: [MemberNameKey.IkomaRina],
     formations: {
       firstRow: [
+        MemberNameKey.IkomaRina,
         MemberNameKey.AkimotoManatsu,
         MemberNameKey.IkutaErika,
-        MemberNameKey.IkomaRina,
         MemberNameKey.ItouMarika,
         MemberNameKey.InoueSayuri,
         MemberNameKey.EtouMisa,

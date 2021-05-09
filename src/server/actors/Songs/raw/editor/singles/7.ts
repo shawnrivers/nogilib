@@ -141,6 +141,7 @@ export const SEVENTH_SINGLE_SONGS: SongRaw[] = [
     center: [MemberNameKey.HoriMiona],
     formations: {
       firstRow: [
+        MemberNameKey.HoriMiona,
         MemberNameKey.AkimotoManatsu,
         MemberNameKey.IkutaErika,
         MemberNameKey.IkomaRina,
@@ -160,7 +161,6 @@ export const SEVENTH_SINGLE_SONGS: SongRaw[] = [
         MemberNameKey.HiguchiHina,
         MemberNameKey.FukagawaMai,
         MemberNameKey.HoshinoMinami,
-        MemberNameKey.HoriMiona,
         MemberNameKey.MatsumuraSayuri,
         MemberNameKey.WakatsukiYumi,
       ],
