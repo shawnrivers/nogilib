@@ -39089,6 +39089,20 @@
     "performers": [
       [
         {
+          "name": "watanabemiria",
+          "nameNotations": {
+            "lastName": "渡辺",
+            "firstName": "みり愛",
+            "lastNameFurigana": "わたなべ",
+            "firstNameFurigana": "みりあ",
+            "lastNameEn": "watanabe",
+            "firstNameEn": "miria"
+          },
+          "profileImage": "/images/members/singles/17/watanabemiria.jpg",
+          "position": "center",
+          "isMember": true
+        },
+        {
           "name": "itoukarin",
           "nameNotations": {
             "lastName": "伊藤",
@@ -39225,20 +39239,6 @@
             "firstNameEn": "rena"
           },
           "profileImage": "/images/members/singles/17/yamazakirena.jpg",
-          "position": null,
-          "isMember": true
-        },
-        {
-          "name": "watanabemiria",
-          "nameNotations": {
-            "lastName": "渡辺",
-            "firstName": "みり愛",
-            "lastNameFurigana": "わたなべ",
-            "firstNameFurigana": "みりあ",
-            "lastNameEn": "watanabe",
-            "firstNameEn": "miria"
-          },
-          "profileImage": "/images/members/singles/17/watanabemiria.jpg",
           "position": null,
           "isMember": true
         },
