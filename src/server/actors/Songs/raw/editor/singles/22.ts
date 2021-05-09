@@ -176,7 +176,6 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
         MemberNameKey.YamashitaMizuki,
         MemberNameKey.YodaYuuki,
       ],
-      fourthRow: [],
     },
   }),
 ];
