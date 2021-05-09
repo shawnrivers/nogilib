@@ -35765,6 +35765,207 @@
     ]
   },
   {
+    "key": "otonatachinihashihaisarenai",
+    "title": "大人たちには指示されない",
+    "type": "third generation",
+    "artwork": "/images/artworks/artwork_no_image.png",
+    "creators": {
+      "lyrics": [],
+      "compose": [],
+      "arrange": [],
+      "direct": []
+    },
+    "single": {
+      "title": "ごめんねFingers crossed",
+      "number": "27"
+    },
+    "albums": [],
+    "otherCds": [],
+    "performersTag": {
+      "name": "third generation",
+      "album": {
+        "type": "single",
+        "number": "27"
+      }
+    },
+    "performers": [
+      [
+        {
+          "name": "oozonomomoko",
+          "nameNotations": {
+            "lastName": "大園",
+            "firstName": "桃子",
+            "lastNameFurigana": "おおぞの",
+            "firstNameFurigana": "ももこ",
+            "lastNameEn": "ozono",
+            "firstNameEn": "momoko"
+          },
+          "profileImage": "/images/members/singles/26/oozonomomoko.jpg",
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "iwamotorenka",
+          "nameNotations": {
+            "lastName": "岩本",
+            "firstName": "蓮加",
+            "lastNameFurigana": "いわもと",
+            "firstNameFurigana": "れんか",
+            "lastNameEn": "iwamoto",
+            "firstNameEn": "renka"
+          },
+          "profileImage": "/images/members/singles/26/iwamotorenka.jpg",
+          "position": "center",
+          "isMember": true
+        },
+        {
+          "name": "nakamurareno",
+          "nameNotations": {
+            "lastName": "中村",
+            "firstName": "麗乃",
+            "lastNameFurigana": "なかむら",
+            "firstNameFurigana": "れの",
+            "lastNameEn": "nakamura",
+            "firstNameEn": "reno"
+          },
+          "profileImage": "/images/members/singles/26/nakamurareno.jpg",
+          "position": null,
+          "isMember": true
+        }
+      ],
+      [
+        {
+          "name": "kuboshiori",
+          "nameNotations": {
+            "lastName": "久保",
+            "firstName": "史緒里",
+            "lastNameFurigana": "くぼ",
+            "firstNameFurigana": "しおり",
+            "lastNameEn": "kubo",
+            "firstNameEn": "shiori"
+          },
+          "profileImage": "/images/members/singles/26/kuboshiori.jpg",
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "yodayuuki",
+          "nameNotations": {
+            "lastName": "与田",
+            "firstName": "祐希",
+            "lastNameFurigana": "よだ",
+            "firstNameFurigana": "ゆうき",
+            "lastNameEn": "yoda",
+            "firstNameEn": "yuki"
+          },
+          "profileImage": "/images/members/singles/26/yodayuuki.jpg",
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "yamashitamizuki",
+          "nameNotations": {
+            "lastName": "山下",
+            "firstName": "美月",
+            "lastNameFurigana": "やました",
+            "firstNameFurigana": "みづき",
+            "lastNameEn": "yamashita",
+            "firstNameEn": "mizuki"
+          },
+          "profileImage": "/images/members/singles/26/yamashitamizuki.jpg",
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "umezawaminami",
+          "nameNotations": {
+            "lastName": "梅澤",
+            "firstName": "美波",
+            "lastNameFurigana": "うめざわ",
+            "firstNameFurigana": "みなみ",
+            "lastNameEn": "umezakwa",
+            "firstNameEn": "minami"
+          },
+          "profileImage": "/images/members/singles/26/umezawaminami.jpg",
+          "position": null,
+          "isMember": true
+        }
+      ],
+      [
+        {
+          "name": "satoukaede",
+          "nameNotations": {
+            "lastName": "佐藤",
+            "firstName": "楓",
+            "lastNameFurigana": "さとう",
+            "firstNameFurigana": "かえで",
+            "lastNameEn": "sato",
+            "firstNameEn": "kaede"
+          },
+          "profileImage": "/images/members/singles/26/satoukaede.jpg",
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "mukaihazuki",
+          "nameNotations": {
+            "lastName": "向井",
+            "firstName": "葉月",
+            "lastNameFurigana": "むかい",
+            "firstNameFurigana": "はづき",
+            "lastNameEn": "mukai",
+            "firstNameEn": "hazuki"
+          },
+          "profileImage": "/images/members/singles/26/mukaihazuki.jpg",
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "sakaguchitamami",
+          "nameNotations": {
+            "lastName": "阪口",
+            "firstName": "珠美",
+            "lastNameFurigana": "さかぐち",
+            "firstNameFurigana": "たまみ",
+            "lastNameEn": "sakaguchi",
+            "firstNameEn": "tamami"
+          },
+          "profileImage": "/images/members/singles/26/sakaguchitamami.jpg",
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "itouriria",
+          "nameNotations": {
+            "lastName": "伊藤",
+            "firstName": "理々杏",
+            "lastNameFurigana": "いとう",
+            "firstNameFurigana": "りりあ",
+            "lastNameEn": "ito",
+            "firstNameEn": "riria"
+          },
+          "profileImage": "/images/members/singles/26/itouriria.jpg",
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "yoshidaayanochristie",
+          "nameNotations": {
+            "lastName": "吉田",
+            "firstName": "綾乃クリスティー",
+            "lastNameFurigana": "よしだ",
+            "firstNameFurigana": "あやのくりすてぃー",
+            "lastNameEn": "yoshida",
+            "firstNameEn": "ayanochristie"
+          },
+          "profileImage": "/images/members/singles/26/yoshidaayanochristie.jpg",
+          "position": null,
+          "isMember": true
+        }
+      ]
+    ]
+  },
+  {
     "key": "darekahamikata",
     "title": "誰かは味方",
     "type": "unit",

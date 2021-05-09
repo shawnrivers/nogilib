@@ -68,4 +68,29 @@ export const TWENTY_SEVENTH_SINGLE_SONGS: SongRaw[] = [
       ],
     },
   }),
+  createSongRaw({
+    title: SONGS['大人たちには指示されない'].title,
+    type: SongType.ThirdGeneration,
+    center: [MemberNameKey.IwamotoRenka],
+    formations: {
+      firstRow: [
+        MemberNameKey.OozonoMomoko,
+        MemberNameKey.IwamotoRenka,
+        MemberNameKey.NakamuraReno,
+      ],
+      secondRow: [
+        MemberNameKey.KuboShiori,
+        MemberNameKey.YodaYuuki,
+        MemberNameKey.YamashitaMizuki,
+        MemberNameKey.UmezawaMinami,
+      ],
+      thirdRow: [
+        MemberNameKey.SatouKaede,
+        MemberNameKey.MukaiHazuki,
+        MemberNameKey.SakaguchiTamami,
+        MemberNameKey.ItouRiria,
+        MemberNameKey.YoshidaAyanoChristie,
+      ],
+    },
+  }),
 ];

@@ -3270,6 +3270,20 @@
         "artwork": "/images/artworks/artwork_no_image.png"
       },
       {
+        "id": "song-otonatachinihashihaisarenai",
+        "field": "大人たちには指示されない otonatachinihashihaisarenai",
+        "searchType": "songs",
+        "key": "otonatachinihashihaisarenai",
+        "title": "大人たちには指示されない",
+        "songType": "third generation",
+        "single": {
+          "title": "ごめんねFingers crossed",
+          "number": "27"
+        },
+        "albums": [],
+        "artwork": "/images/artworks/artwork_no_image.png"
+      },
+      {
         "id": "song-darekahamikata",
         "field": "誰かは味方 darekahamikata",
         "searchType": "songs",
