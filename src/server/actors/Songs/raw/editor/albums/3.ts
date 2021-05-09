@@ -47,8 +47,10 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
       compose: ['中山聡', '足立優'],
       arrange: ['野中"まさ"雄一'],
     },
+    center: [MemberNameKey.WatanabeMiria],
     formations: {
       firstRow: [
+        MemberNameKey.WatanabeMiria,
         MemberNameKey.ItouKarin,
         MemberNameKey.ItouJunna,
         MemberNameKey.KawagoHina,
@@ -59,7 +61,6 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
         MemberNameKey.SuzukiAyane,
         MemberNameKey.NoujouAmi,
         MemberNameKey.YamazakiRena,
-        MemberNameKey.WatanabeMiria,
         MemberNameKey.WadaMaaya,
       ],
     },
