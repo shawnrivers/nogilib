@@ -116,11 +116,11 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
     },
     formations: {
       firstRow: [
+        MemberNameKey.SakaguchiTamami,
         MemberNameKey.IwamotoRenka,
         MemberNameKey.OozonoMomoko,
-        MemberNameKey.KuboShiori,
-        MemberNameKey.SakaguchiTamami,
         MemberNameKey.YodaYuuki,
+        MemberNameKey.KuboShiori,
       ],
     },
   }),

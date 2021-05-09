@@ -162,7 +162,6 @@ export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
         MemberNameKey.SatouKaede,
         MemberNameKey.YoshidaAyanoChristie,
       ],
-      fourthRow: [],
     },
   }),
   createSongRaw({
@@ -181,7 +180,6 @@ export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
         MemberNameKey.HoshinoMinami,
         MemberNameKey.HoriMiona,
       ],
-      fourthRow: [],
     },
   }),
 ];

@@ -177,18 +177,22 @@ export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
     center: [MemberNameKey.IwamotoRenka],
     formations: {
       firstRow: [
-        MemberNameKey.ItouRiria,
+        MemberNameKey.NakamuraReno,
         MemberNameKey.IwamotoRenka,
+        MemberNameKey.SakaguchiTamami,
+      ],
+      secondRow: [
         MemberNameKey.UmezawaMinami,
+        MemberNameKey.YodaYuuki,
+        MemberNameKey.YamashitaMizuki,
         MemberNameKey.OozonoMomoko,
         MemberNameKey.KuboShiori,
-        MemberNameKey.SakaguchiTamami,
-        MemberNameKey.SatouKaede,
-        MemberNameKey.NakamuraReno,
-        MemberNameKey.MukaiHazuki,
-        MemberNameKey.YamashitaMizuki,
+      ],
+      thirdRow: [
         MemberNameKey.YoshidaAyanoChristie,
-        MemberNameKey.YodaYuuki,
+        MemberNameKey.MukaiHazuki,
+        MemberNameKey.ItouRiria,
+        MemberNameKey.SatouKaede,
       ],
     },
   }),
@@ -203,10 +207,10 @@ export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
     unit: UNIT_NAMES['いもうと坂'].name,
     formations: {
       firstRow: [
-        MemberNameKey.OozonoMomoko,
         MemberNameKey.KuboShiori,
-        MemberNameKey.YamashitaMizuki,
         MemberNameKey.YodaYuuki,
+        MemberNameKey.YamashitaMizuki,
+        MemberNameKey.OozonoMomoko,
       ],
     },
   }),
