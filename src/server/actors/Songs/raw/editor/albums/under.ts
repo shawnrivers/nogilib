@@ -26,6 +26,7 @@ export const UNDER_ALBUM_SONGS: SongRaw[] = [
     center: [MemberNameKey.SuzukiAyane],
     formations: {
       firstRow: [
+        MemberNameKey.SuzukiAyane,
         MemberNameKey.ItouKarin,
         MemberNameKey.ItouJunna,
         MemberNameKey.KawagoHina,
@@ -33,7 +34,6 @@ export const UNDER_ALBUM_SONGS: SongRaw[] = [
         MemberNameKey.SaitouChiharu,
         MemberNameKey.SagaraIori,
         MemberNameKey.SasakiKotoko,
-        MemberNameKey.SuzukiAyane,
         MemberNameKey.TeradaRanze,
         MemberNameKey.NoujouAmi,
         MemberNameKey.HiguchiHina,
@@ -54,6 +54,7 @@ export const UNDER_ALBUM_SONGS: SongRaw[] = [
     center: [MemberNameKey.TeradaRanze],
     formations: {
       firstRow: [
+        MemberNameKey.TeradaRanze,
         MemberNameKey.ItouKarin,
         MemberNameKey.ItouJunna,
         MemberNameKey.KawagoHina,
@@ -62,7 +63,6 @@ export const UNDER_ALBUM_SONGS: SongRaw[] = [
         MemberNameKey.SagaraIori,
         MemberNameKey.SasakiKotoko,
         MemberNameKey.SuzukiAyane,
-        MemberNameKey.TeradaRanze,
         MemberNameKey.NoujouAmi,
         MemberNameKey.HiguchiHina,
         MemberNameKey.YamazakiRena,
@@ -82,6 +82,7 @@ export const UNDER_ALBUM_SONGS: SongRaw[] = [
     center: [MemberNameKey.HiguchiHina],
     formations: {
       firstRow: [
+        MemberNameKey.HiguchiHina,
         MemberNameKey.ItouKarin,
         MemberNameKey.ItouJunna,
         MemberNameKey.KawagoHina,
@@ -92,7 +93,6 @@ export const UNDER_ALBUM_SONGS: SongRaw[] = [
         MemberNameKey.SuzukiAyane,
         MemberNameKey.TeradaRanze,
         MemberNameKey.NoujouAmi,
-        MemberNameKey.HiguchiHina,
         MemberNameKey.YamazakiRena,
         MemberNameKey.WatanabeMiria,
         MemberNameKey.WadaMaaya,

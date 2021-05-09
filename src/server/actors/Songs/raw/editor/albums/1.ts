@@ -52,8 +52,8 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
     center: [MemberNameKey.IkutaErika],
     formations: {
       firstRow: [
-        MemberNameKey.AkimotoManatsu,
         MemberNameKey.IkutaErika,
+        MemberNameKey.AkimotoManatsu,
         MemberNameKey.IkomaRina,
         MemberNameKey.EtouMisa,
         MemberNameKey.SaitouChiharu,
@@ -139,10 +139,10 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
     center: [MemberNameKey.InoueSayuri],
     formations: {
       firstRow: [
+        MemberNameKey.InoueSayuri,
         MemberNameKey.ItouKarin,
         MemberNameKey.ItouJunna,
         MemberNameKey.ItouMarika,
-        MemberNameKey.InoueSayuri,
         MemberNameKey.KawamuraMahiro,
         MemberNameKey.KawagoHina,
         MemberNameKey.KitanoHinako,
