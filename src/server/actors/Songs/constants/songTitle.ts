@@ -2,6 +2,7 @@ import { arrayToObject } from 'utils/array';
 import { TitleKeyArray } from 'server/types/commons';
 
 export enum SongTitle {
+  Otonatachinihashihaisarenai = '大人たちには指示されない',
   NekojitaChamomileTea = '猫舌カモミールティー',
   GomenneFingerCrossed = 'ごめんねFingers crossed',
   OneTwoThree = '１・２・３',
@@ -224,6 +225,10 @@ export enum SongTitle {
 }
 
 const SongsTitleKeyArray: TitleKeyArray<SongTitle> = [
+  {
+    title: SongTitle.Otonatachinihashihaisarenai,
+    key: 'otonatachinihashihaisarenai',
+  },
   {
     title: SongTitle.NekojitaChamomileTea,
     key: 'nekojitachamomiletea',

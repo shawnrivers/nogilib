@@ -16,6 +16,10 @@ export const TWENTY_SEVENTH_SINGLE = createSingleRaw({
       title: SONGS['猫舌カモミールティー'].title,
       inCdType: ['A'],
     },
+    {
+      title: SONGS['大人たちには指示されない'].title,
+      inCdType: ['A'],
+    },
   ],
   underMembers: [
     MemberNameKey.ItouJunna,
