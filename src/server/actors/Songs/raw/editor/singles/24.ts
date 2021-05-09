@@ -114,16 +114,18 @@ export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
     formations: {
       firstRow: [
         MemberNameKey.EndouSakura,
-        MemberNameKey.KakiHaruka,
+        MemberNameKey.TamuraMayu,
         MemberNameKey.KakehashiSayaka,
         MemberNameKey.KanagawaSaya,
+        MemberNameKey.TsutsuiAyame,
+      ],
+      secondRow: [
+        MemberNameKey.KakiHaruka,
+        MemberNameKey.SeimiyaRei,
+        MemberNameKey.YakuboMio,
         MemberNameKey.KitagawaYuri,
         MemberNameKey.ShibataYuna,
-        MemberNameKey.SeimiyaRei,
-        MemberNameKey.TamuraMayu,
-        MemberNameKey.TsutsuiAyame,
         MemberNameKey.HayakawaSeira,
-        MemberNameKey.YakuboMio,
       ],
     },
   }),
