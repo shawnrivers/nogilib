@@ -269,7 +269,7 @@
         "title": "ごめんねFingers crossed",
         "number": "27",
         "albumType": "single",
-        "artwork": "/images/artworks/artwork_no_image.png"
+        "artwork": "/images/artworks/singles/27/A.jpg"
       },
       {
         "id": "album-imagaomoideninarumade",
@@ -3253,7 +3253,7 @@
           "number": "27"
         },
         "albums": [],
-        "artwork": "/images/artworks/artwork_no_image.png"
+        "artwork": "/images/artworks/singles/27/A.jpg"
       },
       {
         "id": "song-nekojitachamomiletea",
@@ -3267,7 +3267,7 @@
           "number": "27"
         },
         "albums": [],
-        "artwork": "/images/artworks/artwork_no_image.png"
+        "artwork": "/images/artworks/singles/27/A.jpg"
       },
       {
         "id": "song-otonatachinihashihaisarenai",
@@ -3281,7 +3281,7 @@
           "number": "27"
         },
         "albums": [],
-        "artwork": "/images/artworks/artwork_no_image.png"
+        "artwork": "/images/artworks/singles/27/A.jpg"
       },
       {
         "id": "song-darekahamikata",

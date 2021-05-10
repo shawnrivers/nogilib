@@ -2716,8 +2716,24 @@
     "number": "27",
     "artworks": [
       {
-        "url": "/images/artworks/artwork_no_image.png",
+        "url": "/images/artworks/singles/27/A.jpg",
         "type": "A"
+      },
+      {
+        "url": "/images/artworks/singles/27/B.jpg",
+        "type": "B"
+      },
+      {
+        "url": "/images/artworks/singles/27/C.jpg",
+        "type": "C"
+      },
+      {
+        "url": "/images/artworks/singles/27/D.jpg",
+        "type": "D"
+      },
+      {
+        "url": "/images/artworks/singles/27/T.jpg",
+        "type": "T"
       }
     ],
     "release": "2021-06-09",

@@ -6,7 +6,7 @@ export const TWENTY_SEVENTH_SINGLE = createSingleRaw({
   title: 'ごめんねFingers crossed',
   number: '27',
   release: '2021-06-09',
-  cdTypes: ['A'],
+  cdTypes: ['A', 'B', 'C', 'D', 'T'],
   songs: [
     {
       title: SONGS['ごめんねFingers crossed'].title,
