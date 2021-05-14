@@ -89,7 +89,20 @@ const getAllImageFiles = (dir: string): string[] => {
       if (fs.statSync(pathname).isDirectory()) {
         getFilepathsInDir(pathname);
       }
-      if (!IGNORE_FILENAMES.includes(getPath(pathname).filename)) {
+
+      const { filename, dirname, extension } = getPath(pathname);
+      if (
+        !IGNORE_FILENAMES.includes(filename) &&
+        !/@[1-3]x$/.test(filename) &&
+        !filename.endsWith('-compressed') &&
+        !fs.existsSync(
+          getPathname({
+            dirname,
+            extension,
+            filename: `${filename}-compressed`,
+          })
+        )
+      ) {
         filepaths.push(pathname);
       }
     });
@@ -118,17 +131,14 @@ const main = async () => {
 
     progressBar.start(filepaths.length, 0);
 
-    for (let j = 0; j < filepaths.length; j++) {
-      await getResponsiveImages(filepaths[j], 200);
-      progressBar.update(j + 1);
-    }
-
-    // await Promise.all(
-    //   filepaths.map(async (filepath, i) => {
-    //     await getResponsiveImages(filepath, 200);
-    //     progressBar.update(i + 1);
-    //   })
-    // );
+    let progressCounter = 0;
+    await Promise.all(
+      filepaths.map(async filepath => {
+        await getResponsiveImages(filepath, 200);
+        progressCounter++;
+        progressBar.update(progressCounter);
+      })
+    );
 
     progressBar.stop();
     console.log(`${dir} DONE!\n`);
