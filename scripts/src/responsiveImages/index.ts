@@ -2,7 +2,7 @@ import path from 'path';
 import fs from 'fs';
 import cliProgress from 'cli-progress';
 import sharp from 'sharp';
-import { getPath } from '../utils/path';
+import { getPath, getPathname } from '../utils/path';
 import { compress } from './compress';
 import { resize } from './resize';
 
@@ -41,18 +41,39 @@ const getResponsiveImages = async (
     throw new Error(`[${path}] No dimension data`);
   }
 
+  const originalPath = getPath(path);
+
   // Skip responsive images
-  if (/@[1-3]x$/.test(getPath(path).filename)) {
+  if (/@[1-3]x$/.test(originalPath.filename)) {
     return;
   }
 
-  const compressedFilepath = await compress(path, { quality: 89 });
+  const compressedFilepath = getPathname({
+    dirname: originalPath.dirname,
+    extension: originalPath.extension,
+    filename: `${originalPath.filename}-compressed`,
+  });
+
+  fs.copyFileSync(path, compressedFilepath);
+
+  await compress(compressedFilepath, {
+    quality: 89,
+  });
 
   const [width1x, width2x, width3x] = getResponsiveWidths(width, originalWidth);
   await Promise.all([
-    resize(compressedFilepath, { width: width1x, filenameSuffix: '@1x' }),
-    resize(compressedFilepath, { width: width2x, filenameSuffix: '@2x' }),
-    resize(compressedFilepath, { width: width3x, filenameSuffix: '@3x' }),
+    resize(compressedFilepath, {
+      width: width1x,
+      filename: `${originalPath.filename}@1x`,
+    }),
+    resize(compressedFilepath, {
+      width: width2x,
+      filename: `${originalPath.filename}@2x`,
+    }),
+    resize(compressedFilepath, {
+      width: width3x,
+      filename: `${originalPath.filename}@3x`,
+    }),
   ]);
 };
 
@@ -80,13 +101,16 @@ const getAllImageFiles = (dir: string): string[] => {
 
 const progressBar = new cliProgress.SingleBar({}, cliProgress.Presets.legacy);
 
-const main = () => {
-  [
+const main = async () => {
+  const DIRS = [
     '../public/images/artworks',
     '../public/images/members',
     '../public/images/photo-albums',
-  ].forEach(async dir => {
-    console.log(`Generating images for ${dir}...`);
+  ];
+
+  for (let i = 0; i < DIRS.length; i++) {
+    const dir = DIRS[i];
+    console.log(`Generating images for ${dir}...\n`);
 
     const filepaths = getAllImageFiles(dir).filter(
       filepath => !fs.statSync(filepath).isDirectory()
@@ -94,16 +118,21 @@ const main = () => {
 
     progressBar.start(filepaths.length, 0);
 
-    await Promise.all(
-      filepaths.map(async (filepath, i) => {
-        await getResponsiveImages(filepath, 200);
-        progressBar.update(i + 1);
-      })
-    );
+    for (let j = 0; j < filepaths.length; j++) {
+      await getResponsiveImages(filepaths[j], 200);
+      progressBar.update(j + 1);
+    }
+
+    // await Promise.all(
+    //   filepaths.map(async (filepath, i) => {
+    //     await getResponsiveImages(filepath, 200);
+    //     progressBar.update(i + 1);
+    //   })
+    // );
 
     progressBar.stop();
-    console.log(`${dir} DONE!`);
-  });
+    console.log(`${dir} DONE!\n`);
+  }
 };
 
 main();
