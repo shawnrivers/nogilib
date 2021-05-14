@@ -1,4 +1,8 @@
+import path from 'path';
+import fs from 'fs';
+import cliProgress from 'cli-progress';
 import sharp from 'sharp';
+import { getPath } from '../utils/path';
 import { compress } from './compress';
 import { resize } from './resize';
 
@@ -28,13 +32,18 @@ const getResponsiveWidths = (
  * @param {number} width the width of the image component on the UI
  * @return {string[]} the paths of generated images
  */
-export const getResponsiveImages = async (
+const getResponsiveImages = async (
   path: string,
   width: number
 ): Promise<void> => {
   const { width: originalWidth } = await sharp(path).metadata();
   if (originalWidth === undefined) {
     throw new Error(`[${path}] No dimension data`);
+  }
+
+  // Skip responsive images
+  if (/@[1-3]x$/.test(getPath(path).filename)) {
+    return;
   }
 
   const compressedFilepath = await compress(path, { quality: 89 });
@@ -47,12 +56,54 @@ export const getResponsiveImages = async (
   ]);
 };
 
-const main = async () => {
-  await getResponsiveImages(
-    '../public/images/artworks/artwork_no_image.png',
-    200
-  );
-  console.log('DONE');
+const IGNORE_FILENAMES = ['.DS_Store'];
+
+const getAllImageFiles = (dir: string): string[] => {
+  const filepaths: string[] = [];
+
+  const getFilepathsInDir = (dir: string): void => {
+    const files = fs.readdirSync(dir);
+    files.forEach(file => {
+      const pathname = path.join(dir, file);
+      if (fs.statSync(pathname).isDirectory()) {
+        getFilepathsInDir(pathname);
+      }
+      if (!IGNORE_FILENAMES.includes(getPath(pathname).filename)) {
+        filepaths.push(pathname);
+      }
+    });
+  };
+
+  getFilepathsInDir(dir);
+  return filepaths;
+};
+
+const progressBar = new cliProgress.SingleBar({}, cliProgress.Presets.legacy);
+
+const main = () => {
+  [
+    '../public/images/artworks',
+    '../public/images/members',
+    '../public/images/photo-albums',
+  ].forEach(async dir => {
+    console.log(`Generating images for ${dir}...`);
+
+    const filepaths = getAllImageFiles(dir).filter(
+      filepath => !fs.statSync(filepath).isDirectory()
+    );
+
+    progressBar.start(filepaths.length, 0);
+
+    await Promise.all(
+      filepaths.map(async (filepath, i) => {
+        await getResponsiveImages(filepath, 200);
+        progressBar.update(i + 1);
+      })
+    );
+
+    progressBar.stop();
+    console.log(`${dir} DONE!`);
+  });
 };
 
 main();
