@@ -5,19 +5,21 @@ export const resize = async (
   path: string,
   options: {
     width: number;
-    filenameSuffix?: string;
+    filename?: string;
   }
 ): Promise<string> => {
-  const { filename, dirname } = getPath(path);
-  const { width, filenameSuffix = '' } = options;
+  const imagePath = getPath(path);
 
   try {
     const outputPathname = getPathname({
-      dirname,
-      filename: `${filename}${filenameSuffix}`,
+      ...imagePath,
+      filename: options.filename ?? imagePath.filename,
       extension: '.jpg',
     });
-    await sharp(path).resize(Math.round(width)).jpeg().toFile(outputPathname);
+    await sharp(path)
+      .resize(Math.round(options.width))
+      .jpeg()
+      .toFile(outputPathname);
     return outputPathname;
   } catch (error) {
     throw new Error(`[${path}] Something went wrong: ${error}`);
