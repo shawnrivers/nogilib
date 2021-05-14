@@ -75,6 +75,9 @@ const getResponsiveImages = async (
       filename: `${originalPath.filename}@3x`,
     }),
   ]);
+
+  // Remove compressed files
+  fs.unlinkSync(compressedFilepath);
 };
 
 const IGNORE_FILENAMES = ['.DS_Store'];
@@ -99,7 +102,7 @@ const getAllImageFiles = (dir: string): string[] => {
           getPathname({
             dirname,
             extension,
-            filename: `${filename}-compressed`,
+            filename: `${filename}@1x`,
           })
         )
       ) {
