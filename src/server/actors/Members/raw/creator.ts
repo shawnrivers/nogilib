@@ -80,7 +80,7 @@ export const createMemberRaw = (
         release: photoAlbum.release,
         type: photoAlbum.type,
         sites: photoAlbum.sites ?? [],
-        cover: photoAlbum.cover ?? 'photo-albums/photo_album_no_image.png',
+        cover: photoAlbum.cover ?? 'photo-albums/photo_album_no_image.jpg',
       })) ?? [],
     graduation,
   };
