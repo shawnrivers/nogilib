@@ -33,7 +33,7 @@ describe('convertCdArtwork', () => {
         cdArtworkType: 'A',
         cdKind: 'single',
       })
-    ).toEqual('artworks/artwork_no_image.png');
+    ).toEqual('artworks/artwork_no_image.jpg');
     expect(
       convertCdArtwork({
         cdHasArtworks: false,
@@ -41,7 +41,7 @@ describe('convertCdArtwork', () => {
         cdArtworkType: 'A',
         cdKind: 'single',
       })
-    ).toEqual('artworks/artwork_no_image.png');
+    ).toEqual('artworks/artwork_no_image.jpg');
   });
 
   test("should return no artwork image path when image doesn't exist in the file system", () => {
@@ -52,7 +52,7 @@ describe('convertCdArtwork', () => {
         cdArtworkType: 'A',
         cdKind: 'single',
       })
-    ).toEqual('artworks/artwork_no_image.png');
+    ).toEqual('artworks/artwork_no_image.jpg');
   });
 });
 

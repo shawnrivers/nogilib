@@ -144,7 +144,7 @@ describe('convertSongArtwork', () => {
         albumsRawObject,
         otherCdsRawObject,
       })
-    ).toEqual('/images/artworks/artwork_no_image.png');
+    ).toEqual('/images/artworks/artwork_no_image.jpg');
   });
 });
 
