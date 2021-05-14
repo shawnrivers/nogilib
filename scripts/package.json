@@ -1,0 +1,16 @@
+{
+  "name": "nogilib-scripts",
+  "scripts": {
+    "generate-responsive-images": "ts-node ./src/responsiveImages/index.ts"
+  },
+  "dependencies": {
+    "imagemin": "^7.0.1",
+    "imagemin-mozjpeg": "^9.0.0",
+    "sharp": "^0.28.2"
+  },
+  "devDependencies": {
+    "@types/imagemin": "^7.0.0",
+    "@types/imagemin-mozjpeg": "^8.0.0",
+    "@types/sharp": "^0.28.1"
+  }
+}
