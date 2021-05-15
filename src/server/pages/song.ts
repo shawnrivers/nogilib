@@ -5,7 +5,11 @@ import { MemberResult } from 'server/actors/Members/models';
 import { Songs } from 'server/actors/Songs';
 import { SongResult } from 'server/actors/Songs/models';
 import { KOJIHARU_IMAGE_SRC } from 'server/constants/paths';
-import { convertImageFilePath } from 'server/utils/path';
+import { ImageUrl } from 'server/types/commons';
+import {
+  convertImageFilePath,
+  getResponsiveImageUrls,
+} from 'server/utils/path';
 import { arrayToObject } from 'utils/array';
 
 export type SongPageData = {
@@ -21,7 +25,7 @@ export type SongPageData = {
   performers: {
     name: MemberResult['name'];
     nameNotations: MemberResult['nameNotations'];
-    profileImage: string;
+    profileImage: ImageUrl;
     position: PositionType.Center | PositionType.Fukujin | null;
     isMember: boolean;
   }[][];
@@ -45,7 +49,7 @@ function getPerformerPosition(
 function getPerformerProfileImage(
   song: SongResult,
   member: MemberResult
-): string {
+): ImageUrl {
   const { album } = song.performersTag;
   const { profileImages } = member;
 
@@ -100,7 +104,9 @@ function getSongPerformers(
               firstNameEn: 'haruna',
               firstNameFurigana: 'はるな',
             },
-            profileImage: convertImageFilePath(KOJIHARU_IMAGE_SRC),
+            profileImage: getResponsiveImageUrls(
+              convertImageFilePath(KOJIHARU_IMAGE_SRC)
+            ),
             position: getPerformerPosition(song, MemberNameKey.KojimaHaruna),
             isMember: false,
           };
