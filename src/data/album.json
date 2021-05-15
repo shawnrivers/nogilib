@@ -3351,15 +3351,23 @@
         "title": "ごめんねFingers crossed",
         "type": "title",
         "inCdType": [
-          "A"
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
         ]
       },
       {
-        "key": "nekojitachamomiletea",
-        "title": "猫舌カモミールティー",
-        "type": "fourth generation",
+        "key": "zenbuyumenomama",
+        "title": "全部　夢のまま",
+        "type": "coupling",
         "inCdType": [
-          "A"
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
         ]
       },
       {
@@ -3368,6 +3376,38 @@
         "type": "third generation",
         "inCdType": [
           "A"
+        ]
+      },
+      {
+        "key": "zanbuzazabun",
+        "title": "ざんぶざざぶん",
+        "type": "unit",
+        "inCdType": [
+          "B"
+        ]
+      },
+      {
+        "key": "sayuready",
+        "title": "さ～ゆ～Ready？",
+        "type": "solo",
+        "inCdType": [
+          "C"
+        ]
+      },
+      {
+        "key": "aabitacompass",
+        "title": "錆びたコンパス",
+        "type": "under",
+        "inCdType": [
+          "D"
+        ]
+      },
+      {
+        "key": "nekojitachamomiletea",
+        "title": "猫舌カモミールティー",
+        "type": "fourth generation",
+        "inCdType": [
+          "T"
         ]
       }
     ],
