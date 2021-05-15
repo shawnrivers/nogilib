@@ -5,6 +5,14 @@ import { UnitName } from 'server/actors/Units/constants/unitName';
 import { DiscographyType } from 'server/actors/Discography/types';
 import { ImageUrl } from 'server/types/commons';
 
+export type PerformersType =
+  | { name: 'unit' | 'solo' }
+  | { name: 'selected' | 'under'; single: string }
+  | {
+      name: 'generation';
+      generation: number;
+    };
+
 export type SongRaw = {
   title: SongTitle;
   musicVideo: string;
@@ -23,6 +31,7 @@ export type SongRaw = {
     };
     solo: MemberNameKey | '';
     unit: UnitName | '';
+    type?: PerformersType;
   };
   formations: {
     firstRow: MemberNameKey[];

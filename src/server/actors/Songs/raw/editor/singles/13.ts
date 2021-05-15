@@ -139,7 +139,7 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: SONGS['悲しみの忘れ方'].title,
-    type: SongType.Selected12,
+    type: SongType.Coupling,
     creators: {
       lyrics: ['秋元康'],
       compose: ['近藤圭一'],
@@ -168,6 +168,10 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
         MemberNameKey.MatsumuraSayuri,
         MemberNameKey.WakatsukiYumi,
       ],
+    },
+    performersType: {
+      name: 'selected',
+      single: '12',
     },
   }),
   createSongRaw({
