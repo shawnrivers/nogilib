@@ -14,5 +14,5 @@
     "resolveJsonModule": true
   },
   "include": ["src"],
-  "exclude": ["src/client", "src/pages"]
+  "exclude": ["src/client", "src/pages", "./scripts"]
 }
