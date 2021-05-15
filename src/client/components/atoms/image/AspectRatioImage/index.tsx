@@ -14,7 +14,7 @@ export const AspectRatioImage: React.FC<AspectRatioImageProps> = props => {
       css={css`
         position: relative;
         width: 100%;
-        padding-top: ${aspectRatio * 100}%;
+        padding-top: ${(1 / aspectRatio) * 100}%;
         overflow: hidden;
       `}
       className={className}
