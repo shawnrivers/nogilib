@@ -4080,12 +4080,12 @@
         }
       },
       {
-        "id": "song-nekojitachamomiletea",
-        "field": "猫舌カモミールティー nekojitachamomiletea",
+        "id": "song-zenbuyumenomama",
+        "field": "全部　夢のまま zenbuyumenomama",
         "searchType": "songs",
-        "key": "nekojitachamomiletea",
-        "title": "猫舌カモミールティー",
-        "songType": "fourth generation",
+        "key": "zenbuyumenomama",
+        "title": "全部　夢のまま",
+        "songType": "coupling",
         "single": {
           "title": "ごめんねFingers crossed",
           "number": "27"
@@ -4113,6 +4113,78 @@
           "sm": "/images/artworks/singles/27/A@1x.jpg",
           "md": "/images/artworks/singles/27/A@2x.jpg",
           "lg": "/images/artworks/singles/27/A@3x.jpg"
+        }
+      },
+      {
+        "id": "song-zanbuzazabun",
+        "field": "ざんぶざざぶん zanbuzazabun",
+        "searchType": "songs",
+        "key": "zanbuzazabun",
+        "title": "ざんぶざざぶん",
+        "songType": "unit",
+        "single": {
+          "title": "ごめんねFingers crossed",
+          "number": "27"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/singles/27/B@1x.jpg",
+          "md": "/images/artworks/singles/27/B@2x.jpg",
+          "lg": "/images/artworks/singles/27/B@3x.jpg"
+        }
+      },
+      {
+        "id": "song-sayuready",
+        "field": "さ～ゆ～Ready？ sayuready",
+        "searchType": "songs",
+        "key": "sayuready",
+        "title": "さ～ゆ～Ready？",
+        "songType": "solo",
+        "single": {
+          "title": "ごめんねFingers crossed",
+          "number": "27"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/singles/27/C@1x.jpg",
+          "md": "/images/artworks/singles/27/C@2x.jpg",
+          "lg": "/images/artworks/singles/27/C@3x.jpg"
+        }
+      },
+      {
+        "id": "song-aabitacompass",
+        "field": "錆びたコンパス aabitacompass",
+        "searchType": "songs",
+        "key": "aabitacompass",
+        "title": "錆びたコンパス",
+        "songType": "under",
+        "single": {
+          "title": "ごめんねFingers crossed",
+          "number": "27"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/singles/27/D@1x.jpg",
+          "md": "/images/artworks/singles/27/D@2x.jpg",
+          "lg": "/images/artworks/singles/27/D@3x.jpg"
+        }
+      },
+      {
+        "id": "song-nekojitachamomiletea",
+        "field": "猫舌カモミールティー nekojitachamomiletea",
+        "searchType": "songs",
+        "key": "nekojitachamomiletea",
+        "title": "猫舌カモミールティー",
+        "songType": "fourth generation",
+        "single": {
+          "title": "ごめんねFingers crossed",
+          "number": "27"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/singles/27/T@1x.jpg",
+          "md": "/images/artworks/singles/27/T@2x.jpg",
+          "lg": "/images/artworks/singles/27/T@3x.jpg"
         }
       },
       {

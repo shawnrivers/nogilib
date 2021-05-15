@@ -10,15 +10,31 @@ export const TWENTY_SEVENTH_SINGLE = createSingleRaw({
   songs: [
     {
       title: SONGS['ごめんねFingers crossed'].title,
-      inCdType: ['A'],
+      inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['猫舌カモミールティー'].title,
-      inCdType: ['A'],
+      title: SONGS['全部　夢のまま'].title,
+      inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
       title: SONGS['大人たちには指示されない'].title,
       inCdType: ['A'],
+    },
+    {
+      title: SONGS['ざんぶざざぶん'].title,
+      inCdType: ['B'],
+    },
+    {
+      title: SONGS['さ～ゆ～Ready？'].title,
+      inCdType: ['C'],
+    },
+    {
+      title: SONGS['錆びたコンパス'].title,
+      inCdType: ['D'],
+    },
+    {
+      title: SONGS['猫舌カモミールティー'].title,
+      inCdType: ['T'],
     },
   ],
   underMembers: [
