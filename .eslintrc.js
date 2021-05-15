@@ -63,6 +63,6 @@ module.exports = {
     '**/__tests__/**/*.ts',
     '**/*.test.ts',
     'README.md',
-    './scripts/**/*',
+    'scripts/**/*',
   ],
 };
