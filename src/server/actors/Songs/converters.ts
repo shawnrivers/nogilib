@@ -6,7 +6,10 @@ import {
   DiscographyRawObject,
 } from 'server/actors/Discography/models';
 import { sortByDate } from 'utils/sorting';
-import { convertImageFilePath } from 'server/utils/path';
+import {
+  convertImageFilePath,
+  getResponsiveImageUrls,
+} from 'server/utils/path';
 
 type ConvertSongSingle = (params: {
   songTitle: SongRaw['title'];
@@ -109,16 +112,22 @@ export const convertSongArtwork: ConvertSongArtwork = ({
   albumsRawObject,
   otherCdsRawObject,
 }) => {
+  const noArtworkUrl = getResponsiveImageUrls(NO_ARTWORK_IMAGE_SRC);
+
   if (songSingleResult.title !== '') {
     const single = singlesRawObject[songSingleResult.title];
 
     for (const singleSong of single.songs) {
       if (singleSong.title === songTitle) {
-        return convertImageFilePath(
-          single.artworks.find(
-            artwork => artwork.type === singleSong.inCdType[0]
-          )?.url ?? NO_ARTWORK_IMAGE_SRC
-        );
+        const artworkUrlInSingle = single.artworks.find(
+          artwork => artwork.type === singleSong.inCdType[0]
+        )?.url;
+
+        return {
+          sm: convertImageFilePath(artworkUrlInSingle?.sm ?? noArtworkUrl.sm),
+          md: convertImageFilePath(artworkUrlInSingle?.md ?? noArtworkUrl.md),
+          lg: convertImageFilePath(artworkUrlInSingle?.lg ?? noArtworkUrl.lg),
+        };
       }
     }
   }
@@ -129,10 +138,15 @@ export const convertSongArtwork: ConvertSongArtwork = ({
 
     for (const albumSong of album.songs) {
       if (albumSong.title === songTitle) {
-        return convertImageFilePath(
-          album.artworks.find(artwork => artwork.type === albumSong.inCdType[0])
-            ?.url ?? NO_ARTWORK_IMAGE_SRC
-        );
+        const artworkUrlInAlbum = album.artworks.find(
+          artwork => artwork.type === albumSong.inCdType[0]
+        )?.url;
+
+        return {
+          sm: convertImageFilePath(artworkUrlInAlbum?.sm ?? noArtworkUrl.sm),
+          md: convertImageFilePath(artworkUrlInAlbum?.md ?? noArtworkUrl.md),
+          lg: convertImageFilePath(artworkUrlInAlbum?.lg ?? noArtworkUrl.lg),
+        };
       }
     }
   }
@@ -144,16 +158,24 @@ export const convertSongArtwork: ConvertSongArtwork = ({
 
     for (const otherCdSong of otherCd.songs) {
       if (otherCdSong.title === songTitle) {
-        return convertImageFilePath(
-          otherCd.artworks.find(
-            artwork => artwork.type === otherCdSong.inCdType[0]
-          )?.url ?? NO_ARTWORK_IMAGE_SRC
-        );
+        const artworkUrlInOtherCd = otherCd.artworks.find(
+          artwork => artwork.type === otherCdSong.inCdType[0]
+        )?.url;
+
+        return {
+          sm: convertImageFilePath(artworkUrlInOtherCd?.sm ?? noArtworkUrl.sm),
+          md: convertImageFilePath(artworkUrlInOtherCd?.md ?? noArtworkUrl.md),
+          lg: convertImageFilePath(artworkUrlInOtherCd?.lg ?? noArtworkUrl.lg),
+        };
       }
     }
   }
 
-  return convertImageFilePath(NO_ARTWORK_IMAGE_SRC);
+  return {
+    sm: convertImageFilePath(noArtworkUrl.sm),
+    md: convertImageFilePath(noArtworkUrl.md),
+    lg: convertImageFilePath(noArtworkUrl.lg),
+  };
 };
 
 export const convertSongType = (type: SongRaw['type']): SongResult['type'] =>

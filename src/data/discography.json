@@ -4,7 +4,11 @@
     "key": "bokuhabokuwosukininaru",
     "type": "single",
     "number": "26",
-    "artwork": "/images/artworks/singles/26/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/26/A@1x.jpg",
+      "md": "/images/artworks/singles/26/A@2x.jpg",
+      "lg": "/images/artworks/singles/26/A@3x.jpg"
+    },
     "release": "2021-01-27"
   },
   {
@@ -12,7 +16,11 @@
     "key": "hogoshoku",
     "type": "single",
     "number": "25",
-    "artwork": "/images/artworks/singles/25/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/25/A@1x.jpg",
+      "md": "/images/artworks/singles/25/A@2x.jpg",
+      "lg": "/images/artworks/singles/25/A@3x.jpg"
+    },
     "release": "2020-03-25"
   },
   {
@@ -20,7 +28,11 @@
     "key": "yoakemade",
     "type": "single",
     "number": "24",
-    "artwork": "/images/artworks/singles/24/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/24/A@1x.jpg",
+      "md": "/images/artworks/singles/24/A@2x.jpg",
+      "lg": "/images/artworks/singles/24/A@3x.jpg"
+    },
     "release": "2019-09-04"
   },
   {
@@ -28,7 +40,11 @@
     "key": "singout",
     "type": "single",
     "number": "23",
-    "artwork": "/images/artworks/singles/23/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/23/A@1x.jpg",
+      "md": "/images/artworks/singles/23/A@2x.jpg",
+      "lg": "/images/artworks/singles/23/A@3x.jpg"
+    },
     "release": "2019-05-29"
   },
   {
@@ -36,7 +52,11 @@
     "key": "kaerimichi",
     "type": "single",
     "number": "22",
-    "artwork": "/images/artworks/singles/22/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/22/A@1x.jpg",
+      "md": "/images/artworks/singles/22/A@2x.jpg",
+      "lg": "/images/artworks/singles/22/A@3x.jpg"
+    },
     "release": "2018-11-14"
   },
   {
@@ -44,7 +64,11 @@
     "key": "jikochu",
     "type": "single",
     "number": "21",
-    "artwork": "/images/artworks/singles/21/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/21/A@1x.jpg",
+      "md": "/images/artworks/singles/21/A@2x.jpg",
+      "lg": "/images/artworks/singles/21/A@3x.jpg"
+    },
     "release": "2018-08-08"
   },
   {
@@ -52,7 +76,11 @@
     "key": "synchronicity",
     "type": "single",
     "number": "20",
-    "artwork": "/images/artworks/singles/20/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/20/A@1x.jpg",
+      "md": "/images/artworks/singles/20/A@2x.jpg",
+      "lg": "/images/artworks/singles/20/A@3x.jpg"
+    },
     "release": "2018-04-25"
   },
   {
@@ -60,7 +88,11 @@
     "key": "itsukadekiru",
     "type": "single",
     "number": "19",
-    "artwork": "/images/artworks/singles/19/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/19/A@1x.jpg",
+      "md": "/images/artworks/singles/19/A@2x.jpg",
+      "lg": "/images/artworks/singles/19/A@3x.jpg"
+    },
     "release": "2017-10-11"
   },
   {
@@ -68,7 +100,11 @@
     "key": "nigemizu",
     "type": "single",
     "number": "18",
-    "artwork": "/images/artworks/singles/18/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/18/A@1x.jpg",
+      "md": "/images/artworks/singles/18/A@2x.jpg",
+      "lg": "/images/artworks/singles/18/A@3x.jpg"
+    },
     "release": "2017-08-09"
   },
   {
@@ -76,7 +112,11 @@
     "key": "influencer",
     "type": "single",
     "number": "17",
-    "artwork": "/images/artworks/singles/17/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/17/A@1x.jpg",
+      "md": "/images/artworks/singles/17/A@2x.jpg",
+      "lg": "/images/artworks/singles/17/A@3x.jpg"
+    },
     "release": "2017-03-22"
   },
   {
@@ -84,7 +124,11 @@
     "key": "sayonaranoimi",
     "type": "single",
     "number": "16",
-    "artwork": "/images/artworks/singles/16/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/16/A@1x.jpg",
+      "md": "/images/artworks/singles/16/A@2x.jpg",
+      "lg": "/images/artworks/singles/16/A@3x.jpg"
+    },
     "release": "2016-11-09"
   },
   {
@@ -92,7 +136,11 @@
     "key": "hadasummer",
     "type": "single",
     "number": "15",
-    "artwork": "/images/artworks/singles/15/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/15/A@1x.jpg",
+      "md": "/images/artworks/singles/15/A@2x.jpg",
+      "lg": "/images/artworks/singles/15/A@3x.jpg"
+    },
     "release": "2016-07-27"
   },
   {
@@ -100,7 +148,11 @@
     "key": "harujion",
     "type": "single",
     "number": "14",
-    "artwork": "/images/artworks/singles/14/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/14/A@1x.jpg",
+      "md": "/images/artworks/singles/14/A@2x.jpg",
+      "lg": "/images/artworks/singles/14/A@3x.jpg"
+    },
     "release": "2016-03-23"
   },
   {
@@ -108,7 +160,11 @@
     "key": "imahana",
     "type": "single",
     "number": "13",
-    "artwork": "/images/artworks/singles/13/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/13/A@1x.jpg",
+      "md": "/images/artworks/singles/13/A@2x.jpg",
+      "lg": "/images/artworks/singles/13/A@3x.jpg"
+    },
     "release": "2015-10-28"
   },
   {
@@ -116,7 +172,11 @@
     "key": "taiyouknock",
     "type": "single",
     "number": "12",
-    "artwork": "/images/artworks/singles/12/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/12/A@1x.jpg",
+      "md": "/images/artworks/singles/12/A@2x.jpg",
+      "lg": "/images/artworks/singles/12/A@3x.jpg"
+    },
     "release": "2015-07-22"
   },
   {
@@ -124,7 +184,11 @@
     "key": "inochihautsukushii",
     "type": "single",
     "number": "11",
-    "artwork": "/images/artworks/singles/11/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/11/A@1x.jpg",
+      "md": "/images/artworks/singles/11/A@2x.jpg",
+      "lg": "/images/artworks/singles/11/A@3x.jpg"
+    },
     "release": "2015-03-18"
   },
   {
@@ -132,7 +196,11 @@
     "key": "nandomenoaozoraka",
     "type": "single",
     "number": "10",
-    "artwork": "/images/artworks/singles/10/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/10/A@1x.jpg",
+      "md": "/images/artworks/singles/10/A@2x.jpg",
+      "lg": "/images/artworks/singles/10/A@3x.jpg"
+    },
     "release": "2014-10-08"
   },
   {
@@ -140,7 +208,11 @@
     "key": "natsunofreeeasy",
     "type": "single",
     "number": "9",
-    "artwork": "/images/artworks/singles/9/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/9/A@1x.jpg",
+      "md": "/images/artworks/singles/9/A@2x.jpg",
+      "lg": "/images/artworks/singles/9/A@3x.jpg"
+    },
     "release": "2014-07-09"
   },
   {
@@ -148,7 +220,11 @@
     "key": "kiduitarakataomoi",
     "type": "single",
     "number": "8",
-    "artwork": "/images/artworks/singles/8/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/8/A@1x.jpg",
+      "md": "/images/artworks/singles/8/A@2x.jpg",
+      "lg": "/images/artworks/singles/8/A@3x.jpg"
+    },
     "release": "2014-04-02"
   },
   {
@@ -156,7 +232,11 @@
     "key": "valletta",
     "type": "single",
     "number": "7",
-    "artwork": "/images/artworks/singles/7/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/7/A@1x.jpg",
+      "md": "/images/artworks/singles/7/A@2x.jpg",
+      "lg": "/images/artworks/singles/7/A@3x.jpg"
+    },
     "release": "2013-11-27"
   },
   {
@@ -164,7 +244,11 @@
     "key": "girlsrule",
     "type": "single",
     "number": "6",
-    "artwork": "/images/artworks/singles/6/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/6/A@1x.jpg",
+      "md": "/images/artworks/singles/6/A@2x.jpg",
+      "lg": "/images/artworks/singles/6/A@3x.jpg"
+    },
     "release": "2013-07-03"
   },
   {
@@ -172,7 +256,11 @@
     "key": "kiminonahakibou",
     "type": "single",
     "number": "5",
-    "artwork": "/images/artworks/singles/5/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/5/A@1x.jpg",
+      "md": "/images/artworks/singles/5/A@2x.jpg",
+      "lg": "/images/artworks/singles/5/A@3x.jpg"
+    },
     "release": "2013-03-31"
   },
   {
@@ -180,7 +268,11 @@
     "key": "seifukunomannequin",
     "type": "single",
     "number": "4",
-    "artwork": "/images/artworks/singles/4/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/4/A@1x.jpg",
+      "md": "/images/artworks/singles/4/A@2x.jpg",
+      "lg": "/images/artworks/singles/4/A@3x.jpg"
+    },
     "release": "2012-12-19"
   },
   {
@@ -188,7 +280,11 @@
     "key": "hashirebicycle",
     "type": "single",
     "number": "3",
-    "artwork": "/images/artworks/singles/3/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/3/A@1x.jpg",
+      "md": "/images/artworks/singles/3/A@2x.jpg",
+      "lg": "/images/artworks/singles/3/A@3x.jpg"
+    },
     "release": "2012-08-22"
   },
   {
@@ -196,7 +292,11 @@
     "key": "oideshampo",
     "type": "single",
     "number": "2",
-    "artwork": "/images/artworks/singles/2/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/2/A@1x.jpg",
+      "md": "/images/artworks/singles/2/A@2x.jpg",
+      "lg": "/images/artworks/singles/2/A@3x.jpg"
+    },
     "release": "2012-05-02"
   },
   {
@@ -204,7 +304,11 @@
     "key": "gurugurucurtain",
     "type": "single",
     "number": "1",
-    "artwork": "/images/artworks/singles/1/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/1/A@1x.jpg",
+      "md": "/images/artworks/singles/1/A@2x.jpg",
+      "lg": "/images/artworks/singles/1/A@3x.jpg"
+    },
     "release": "2012-02-22"
   },
   {
@@ -212,7 +316,11 @@
     "key": "gomennefingerscrossed",
     "type": "single",
     "number": "27",
-    "artwork": "/images/artworks/singles/27/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/27/A@1x.jpg",
+      "md": "/images/artworks/singles/27/A@2x.jpg",
+      "lg": "/images/artworks/singles/27/A@3x.jpg"
+    },
     "release": "2021-06-09"
   },
   {
@@ -220,7 +328,11 @@
     "key": "imagaomoideninarumade",
     "type": "album",
     "number": "4",
-    "artwork": "/images/artworks/albums/4/L.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/4/L@1x.jpg",
+      "md": "/images/artworks/albums/4/L@2x.jpg",
+      "lg": "/images/artworks/albums/4/L@3x.jpg"
+    },
     "release": "2019-04-17"
   },
   {
@@ -228,7 +340,11 @@
     "key": "bokudakenokimiunderbestalbum",
     "type": "album",
     "number": "U",
-    "artwork": "/images/artworks/albums/U/L1.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/U/L1@1x.jpg",
+      "md": "/images/artworks/albums/U/L1@2x.jpg",
+      "lg": "/images/artworks/albums/U/L1@3x.jpg"
+    },
     "release": "2018-01-10"
   },
   {
@@ -236,7 +352,11 @@
     "key": "umaretekarahajimetemitayume",
     "type": "album",
     "number": "3",
-    "artwork": "/images/artworks/albums/3/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/3/A@1x.jpg",
+      "md": "/images/artworks/albums/3/A@2x.jpg",
+      "lg": "/images/artworks/albums/3/A@3x.jpg"
+    },
     "release": "2017-05-24"
   },
   {
@@ -244,7 +364,11 @@
     "key": "sorezorenoisu",
     "type": "album",
     "number": "2",
-    "artwork": "/images/artworks/albums/2/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/2/A@1x.jpg",
+      "md": "/images/artworks/albums/2/A@2x.jpg",
+      "lg": "/images/artworks/albums/2/A@3x.jpg"
+    },
     "release": "2016-05-25"
   },
   {
@@ -252,7 +376,11 @@
     "key": "toumeinairo",
     "type": "album",
     "number": "1",
-    "artwork": "/images/artworks/albums/1/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/1/A@1x.jpg",
+      "md": "/images/artworks/albums/1/A@2x.jpg",
+      "lg": "/images/artworks/albums/1/A@3x.jpg"
+    },
     "release": "2015-01-27"
   },
   {
@@ -260,7 +388,11 @@
     "key": "sekaichuunorinjinyo",
     "type": "digital",
     "number": "1",
-    "artwork": "/images/artworks/digital/1/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/digital/1/T@1x.jpg",
+      "md": "/images/artworks/digital/1/T@2x.jpg",
+      "lg": "/images/artworks/digital/1/T@3x.jpg"
+    },
     "release": "2020-06-17"
   },
   {
@@ -268,7 +400,11 @@
     "key": "route246",
     "type": "digital",
     "number": "2",
-    "artwork": "/images/artworks/digital/2/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/digital/2/T@1x.jpg",
+      "md": "/images/artworks/digital/2/T@2x.jpg",
+      "lg": "/images/artworks/digital/2/T@3x.jpg"
+    },
     "release": "2020-07-24"
   },
   {
@@ -276,7 +412,11 @@
     "key": "123",
     "type": "digital",
     "number": "3",
-    "artwork": "/images/artworks/digital/3/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/digital/3/T@1x.jpg",
+      "md": "/images/artworks/digital/3/T@2x.jpg",
+      "lg": "/images/artworks/digital/3/T@3x.jpg"
+    },
     "release": "2021-02-19"
   }
 ]
