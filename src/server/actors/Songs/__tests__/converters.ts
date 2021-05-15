@@ -90,7 +90,11 @@ describe('convertSongArtwork', () => {
         albumsRawObject,
         otherCdsRawObject,
       })
-    ).toEqual('/images/artworks/singles/20/A.jpg');
+    ).toEqual({
+      sm: '/images/artworks/singles/20/A@1x.jpg',
+      md: '/images/artworks/singles/20/A@2x.jpg',
+      lg: '/images/artworks/singles/20/A@3x.jpg',
+    });
   });
 
   test('should return the first matched album artwork when no single matched', () => {
@@ -109,7 +113,11 @@ describe('convertSongArtwork', () => {
         albumsRawObject,
         otherCdsRawObject,
       })
-    ).toEqual('/images/artworks/albums/U/L2.jpg');
+    ).toEqual({
+      sm: '/images/artworks/albums/U/L2@1x.jpg',
+      md: '/images/artworks/albums/U/L2@2x.jpg',
+      lg: '/images/artworks/albums/U/L2@3x.jpg',
+    });
   });
 
   test('should return the first matched other CD artwork when no single nor albums matched', () => {
@@ -128,7 +136,11 @@ describe('convertSongArtwork', () => {
         albumsRawObject,
         otherCdsRawObject,
       })
-    ).toEqual('/images/artworks/digital/1/T.jpg');
+    ).toEqual({
+      sm: '/images/artworks/digital/1/T@1x.jpg',
+      md: '/images/artworks/digital/1/T@2x.jpg',
+      lg: '/images/artworks/digital/1/T@3x.jpg',
+    });
   });
 
   test('should return no image artwork when no single nor albums and other CDs matched', () => {
@@ -144,7 +156,11 @@ describe('convertSongArtwork', () => {
         albumsRawObject,
         otherCdsRawObject,
       })
-    ).toEqual('/images/artworks/artwork_no_image.jpg');
+    ).toEqual({
+      sm: '/images/artworks/artwork_no_image@1x.jpg',
+      md: '/images/artworks/artwork_no_image@2x.jpg',
+      lg: '/images/artworks/artwork_no_image@3x.jpg',
+    });
   });
 });
 
