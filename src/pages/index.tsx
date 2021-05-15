@@ -1,6 +1,5 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
-import Image from 'next/image';
 import { PageContent } from 'client/components/layout/PageContent';
 import { Typography } from 'client/components/atoms/Typography';
 import { commonStyles } from 'client/styles/tokens';
@@ -15,9 +14,9 @@ import { Card } from 'client/components/atoms/Card';
 import { DiscographyIcon } from 'client/components/atoms/icons/DiscographyIcon';
 import { MembersIcon } from 'client/components/atoms/icons/MembersIcon';
 import { SearchIcon } from 'client/components/atoms/icons/SearchIcon';
-import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { PageHelmet } from 'client/components/layout/PageHelmet';
 import { getColorVarName } from 'client/styles/tokens/colors';
+import { Image } from 'client/components/atoms/image/Image';
 
 const SubHeading: React.FC = props => (
   <Typography
@@ -66,15 +65,13 @@ const HomePage: React.FC = () => {
           <h1>
             <Image
               src="/images/favicon-512.png"
+              srcSet="/images/favicon-256.png, /images/favicon-512.png 2x, /images/favicon-512.png 3x"
               alt="NOGILIB"
               width={192}
               height={192}
-              objectFit="cover"
-              objectPosition="top"
               css={css`
-                box-shadow: ${commonStyles.elevations[
-                  componentElevationKey.componentOnBackground
-                ].boxShadow};
+                object-fit: cover;
+                object-position: top;
               `}
             />
           </h1>
