@@ -14,7 +14,10 @@ import {
   DiscographyRaw,
 } from 'server/actors/Discography/models';
 import { sortByDate } from 'utils/sorting';
-import { convertImageFilePath } from 'server/utils/path';
+import {
+  convertImageFilePath,
+  getResponsiveImageUrls,
+} from 'server/utils/path';
 
 type GalleryWithDate = {
   url: string;
@@ -127,7 +130,7 @@ function getDiscographyProfileImages(params: {
 
     if (fs.existsSync('./public/images/' + albumProfileImageSrc)) {
       discographyGallery.push({
-        url: albumProfileImageSrc,
+        url: getResponsiveImageUrls(albumProfileImageSrc),
         number: albumNumber,
       });
     } else {
@@ -142,7 +145,7 @@ function getDiscographyProfileImages(params: {
         if (j === 0) {
           if (albumReleaseDate >= currentProfileImageDate) {
             discographyGallery.push({
-              url: currentProfileImage.url,
+              url: getResponsiveImageUrls(currentProfileImage.url),
               number: albumNumber,
             });
             break;
@@ -150,7 +153,7 @@ function getDiscographyProfileImages(params: {
 
           if (sortedGallery.length === 1) {
             discographyGallery.push({
-              url: currentProfileImage.url,
+              url: getResponsiveImageUrls(currentProfileImage.url),
               number: albumNumber,
             });
             break;
@@ -166,14 +169,14 @@ function getDiscographyProfileImages(params: {
             albumReleaseDate >= currentProfileImageDate
           ) {
             discographyGallery.push({
-              url: currentProfileImage.url,
+              url: getResponsiveImageUrls(currentProfileImage.url),
               number: albumNumber,
             });
             break;
           } else {
             if (j === sortedGallery.length - 1) {
               discographyGallery.push({
-                url: currentProfileImage.url,
+                url: getResponsiveImageUrls(currentProfileImage.url),
                 number: albumNumber,
               });
               break;
@@ -246,18 +249,32 @@ export function convertProfileImages(params: {
   });
 
   return {
-    gallery: galleryWithDate.map(image => convertImageFilePath(image.url)),
+    gallery: galleryWithDate.map(image =>
+      getResponsiveImageUrls(convertImageFilePath(image.url))
+    ),
     singles: singles.map(cd => ({
       ...cd,
-      url: convertImageFilePath(cd.url),
+      url: {
+        sm: convertImageFilePath(cd.url.sm),
+        md: convertImageFilePath(cd.url.md),
+        lg: convertImageFilePath(cd.url.lg),
+      },
     })),
     albums: albums.map(cd => ({
       ...cd,
-      url: convertImageFilePath(cd.url),
+      url: {
+        sm: convertImageFilePath(cd.url.sm),
+        md: convertImageFilePath(cd.url.md),
+        lg: convertImageFilePath(cd.url.lg),
+      },
     })),
     digital: digital.map(cd => ({
       ...cd,
-      url: convertImageFilePath(cd.url),
+      url: {
+        sm: convertImageFilePath(cd.url.sm),
+        md: convertImageFilePath(cd.url.md),
+        lg: convertImageFilePath(cd.url.lg),
+      },
     })),
   };
 }

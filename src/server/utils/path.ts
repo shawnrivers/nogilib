@@ -33,8 +33,20 @@ const getPathname = (path: Path): string =>
 export const getResponsiveImageUrls = (path: string): ImageUrl => {
   const { dirname, extension, filename } = getPath(path);
   return {
-    sm: getPathname({ dirname, extension, filename: `${filename}@1x` }),
-    md: getPathname({ dirname, extension, filename: `${filename}@2x` }),
-    lg: getPathname({ dirname, extension, filename: `${filename}@3x` }),
+    sm: getPathname({
+      dirname,
+      extension,
+      filename: /@[1-3]x$/.test(filename) ? filename : `${filename}@1x`,
+    }),
+    md: getPathname({
+      dirname,
+      extension,
+      filename: /@[1-3]x$/.test(filename) ? filename : `${filename}@2x`,
+    }),
+    lg: getPathname({
+      dirname,
+      extension,
+      filename: /@[1-3]x$/.test(filename) ? filename : `${filename}@3x`,
+    }),
   };
 };

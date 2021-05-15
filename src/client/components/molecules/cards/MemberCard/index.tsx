@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
 import * as React from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import {
   Typography,
   TypographyProps,
@@ -12,6 +12,8 @@ import { commonStyles } from 'client/styles/tokens';
 import { BORDER_RADIUS } from 'client/styles/tokens/borderRadius';
 import { POSITION_STYLES } from 'client/styles/positionStyles';
 import { getColorVarName } from 'client/styles/tokens/colors';
+import { ImageUrl } from 'server/types/commons';
+import { AspectRatioImage } from 'client/components/atoms/image/AspectRatioImage';
 
 const PositionBadge: React.FC<{
   position: PositionType.Center | PositionType.Fukujin;
@@ -74,7 +76,7 @@ const PositionBadge: React.FC<{
 };
 
 export type MemberCardProps = Omit<CardProps, 'children'> & {
-  profileImage: string;
+  profileImage: ImageUrl;
   name: string;
   lang: string;
   width: number;
@@ -114,17 +116,16 @@ export const MemberCard: React.FC<MemberCardProps> = props => {
       {...cardProps}
     >
       <article>
-        <Image
-          src={profileImage}
-          width={width}
-          height={width * 1.2}
+        <AspectRatioImage
+          src={profileImage.lg}
+          srcSet={`${profileImage.sm}, ${profileImage.md} 2x, ${profileImage.lg} 3x`}
           alt=""
           role="presentation"
-          objectFit="cover"
-          objectPosition="top"
+          aspectRatio={5 / 6}
           css={css`
             border-radius: ${commonStyles.borderRadius[borderRadius]};
           `}
+          loading="lazy"
         />
         <Typography
           variant={textSize}

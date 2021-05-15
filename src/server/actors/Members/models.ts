@@ -41,12 +41,12 @@ export type MemberRaw = {
 };
 
 export type DiscographyProfileImage = {
-  url: string;
+  url: ImageUrl;
   number: string;
 };
 
 export type ProfileImages = {
-  gallery: string[];
+  gallery: ImageUrl[];
   singles: DiscographyProfileImage[];
   albums: DiscographyProfileImage[];
   digital: DiscographyProfileImage[];

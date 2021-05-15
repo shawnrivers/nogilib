@@ -3,7 +3,6 @@ import { css } from '@emotion/core';
 import * as React from 'react';
 import { useRouter } from 'next/router';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import Image from 'next/image';
 import { getMemberData } from 'api/member';
 import { MemberPageData } from 'server/pages/member';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
@@ -285,18 +284,16 @@ const MemberPage: React.FC<PageProps> = props => {
                 height: 240px;
               `}
             >
-              <Image
-                src={profileImage}
+              <AspectRatioImage
+                src={profileImage.lg}
+                srcSet={`${profileImage.sm}, ${profileImage.md} 2x, ${profileImage.lg} 3x`}
                 alt={formatWords([
                   locale !== 'en'
                     ? nameNotations.lastName + nameNotations.firstName
                     : enName,
                   getTranslation('profile image'),
                 ])}
-                width={200}
-                height={240}
-                objectFit="cover"
-                objectPosition="top"
+                aspectRatio={5 / 6}
               />
             </div>
             <div
@@ -567,15 +564,14 @@ const MemberPage: React.FC<PageProps> = props => {
                     overflow: hidden;
                   `}
                 >
-                  <Image
-                    src={profileImage}
+                  <AspectRatioImage
+                    src={profileImage.lg}
+                    srcSet={`${profileImage.sm}, ${profileImage.md} 2x, ${profileImage.lg} 3x`}
                     alt={[getTranslation('profile image'), index + 1].join(
                       locale === 'en' ? ' ' : ''
                     )}
-                    width={110}
-                    height={132}
-                    objectFit="cover"
-                    objectPosition="top"
+                    aspectRatio={5 / 6}
+                    loading="lazy"
                   />
                 </li>
               ))}

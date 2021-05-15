@@ -4,6 +4,7 @@ import { Members } from 'server/actors/Members';
 import { MemberResult } from 'server/actors/Members/models';
 import { Songs } from 'server/actors/Songs';
 import { SongResult } from 'server/actors/Songs/models';
+import { ImageUrl } from 'server/types/commons';
 
 type SearchDoc<T extends 'members' | 'albums' | 'songs'> = {
   id: string;
@@ -31,7 +32,7 @@ export type SearchPageData = {
     name: MemberResult['name'];
     nameNotations: MemberResult['nameNotations'];
     join: MemberResult['join'];
-    profileImage: string;
+    profileImage: ImageUrl;
   })[];
 };
 
