@@ -19,7 +19,7 @@ type Path = {
   filename: string;
 };
 
-const getPath = (pathname: string): Path => {
+export const getPath = (pathname: string): Path => {
   const dirname = path.dirname(pathname);
   const extension = path.extname(pathname);
   const filename = path.basename(pathname, extension);
@@ -27,7 +27,7 @@ const getPath = (pathname: string): Path => {
   return { dirname, extension, filename };
 };
 
-const getPathname = (path: Path): string =>
+export const getPathname = (path: Path): string =>
   `${path.dirname}/${path.filename}${path.extension}`;
 
 export const getResponsiveImageUrls = (path: string): ImageUrl => {
