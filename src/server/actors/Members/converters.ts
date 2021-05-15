@@ -1,5 +1,4 @@
 import * as fs from 'fs';
-import * as path from 'path';
 import {
   MemberResult,
   MemberRaw,
@@ -17,6 +16,7 @@ import { sortByDate } from 'utils/sorting';
 import {
   convertImageFilePath,
   getResponsiveImageUrls,
+  getPath,
 } from 'server/utils/path';
 
 type GalleryWithDate = {
@@ -77,18 +77,22 @@ const otherProfileImageFiles = fs.readdirSync('./public/images/members/others');
 
 // Other profile image file name format:
 // <name>_<YYYY>-<MM>-<DD>.jpg
-const otherProfileImagesFileNameWithDate = otherProfileImageFiles.map(file => {
-  const fullFileName = file;
-  const extName = path.extname(file);
-  const filename = path.basename(file, extName);
-  const [memberName, date] = filename.split('_');
+const otherProfileImagesFileNameWithDate: {
+  filePathname: string;
+  memberName: string;
+  date: string;
+}[] = otherProfileImageFiles
+  .filter(file => !/@[1-3]x$/.test(getPath(file).filename))
+  .map(file => {
+    const filePath = getPath(file);
+    const [memberName, date] = filePath.filename.split('_');
 
-  return {
-    fullFileName,
-    memberName,
-    date,
-  };
-});
+    return {
+      filePathname: file,
+      memberName,
+      date,
+    };
+  });
 
 function getOtherGalleryWithDate(
   memberName: MemberRaw['name']
@@ -96,7 +100,7 @@ function getOtherGalleryWithDate(
   return otherProfileImagesFileNameWithDate
     .filter(fileNameWithDate => fileNameWithDate.memberName === memberName)
     .map(fileNameWithDate => ({
-      url: `members/others/${fileNameWithDate.fullFileName}`,
+      url: `members/others/${fileNameWithDate.filePathname}`,
       date: fileNameWithDate.date,
     }));
 }
