@@ -79,7 +79,11 @@
             "url": "https://twitter.com/manatsu_2nd"
           }
         ],
-        "cover": "/images/photo-albums/akimotomanatsu_2.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/akimotomanatsu_2@1x.jpg",
+          "md": "/images/photo-albums/akimotomanatsu_2@2x.jpg",
+          "lg": "/images/photo-albums/akimotomanatsu_2@3x.jpg"
+        }
       },
       {
         "title": "真夏の気圧配置",
@@ -91,7 +95,11 @@
             "url": "https://twitter.com/manattan_0228"
           }
         ],
-        "cover": "/images/photo-albums/akimotomanatsu_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/akimotomanatsu_1@1x.jpg",
+          "md": "/images/photo-albums/akimotomanatsu_1@2x.jpg",
+          "lg": "/images/photo-albums/akimotomanatsu_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -293,7 +301,11 @@
             "url": "https://twitter.com/erika_newyork/"
           }
         ],
-        "cover": "/images/photo-albums/ikutaerika_2.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/ikutaerika_2@1x.jpg",
+          "md": "/images/photo-albums/ikutaerika_2@2x.jpg",
+          "lg": "/images/photo-albums/ikutaerika_2@3x.jpg"
+        }
       },
       {
         "title": "転調",
@@ -305,7 +317,11 @@
             "url": "https://www.amazon.co.jp/%E7%94%9F%E7%94%B0%E7%B5%B5%E6%A2%A8%E8%8A%B11st%E5%86%99%E7%9C%9F%E9%9B%86-%E3%80%8E%E8%BB%A2%E8%AA%BF%E3%80%8F-%E7%94%9F%E7%94%B0-%E7%B5%B5%E6%A2%A8%E8%8A%B1/dp/4087807789/"
           }
         ],
-        "cover": "/images/photo-albums/ikutaerika_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/ikutaerika_1@1x.jpg",
+          "md": "/images/photo-albums/ikutaerika_1@2x.jpg",
+          "lg": "/images/photo-albums/ikutaerika_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -454,7 +470,13 @@
       "/images/members/singles/4/ikomarina.jpg",
       "/images/members/singles/3/ikomarina.jpg",
       "/images/members/singles/2/ikomarina.jpg",
-      "/images/members/singles/1/ikomarina.jpg"
+      "/images/members/singles/1/ikomarina.jpg",
+      "/images/members/others/ikomarina_2019-09-21@1x.jpg",
+      "/images/members/others/ikomarina_2019-09-21@2x.jpg",
+      "/images/members/others/ikomarina_2019-09-21@3x.jpg",
+      "/images/members/others/ikomarina_2020-08-10@1x.jpg",
+      "/images/members/others/ikomarina_2020-08-10@2x.jpg",
+      "/images/members/others/ikomarina_2020-08-10@3x.jpg"
     ],
     "join": "first",
     "graduation": {
@@ -508,7 +530,11 @@
             "url": "https://www.amazon.co.jp/%E4%B9%83%E6%9C%A8%E5%9D%8246-%E7%94%9F%E9%A7%92%E9%87%8C%E5%A5%88%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E5%86%99%E7%9C%9F%E9%9B%86%E3%80%8E%E5%90%9B%E3%81%AE%E8%B6%B3%E8%B7%A1%E3%80%8F-%E7%94%9F%E9%A7%92-%E9%87%8C%E5%A5%88/dp/4344028864"
           }
         ],
-        "cover": "/images/photo-albums/ikomarina_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/ikomarina_1@1x.jpg",
+          "md": "/images/photo-albums/ikomarina_1@2x.jpg",
+          "lg": "/images/photo-albums/ikomarina_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -660,7 +686,10 @@
       "/images/members/singles/4/inouesayuri.jpg",
       "/images/members/singles/3/inouesayuri.jpg",
       "/images/members/singles/2/inouesayuri.jpg",
-      "/images/members/singles/1/inouesayuri.jpg"
+      "/images/members/singles/1/inouesayuri.jpg",
+      "/images/members/others/inouesayuri_2021-05-06@1x.jpg",
+      "/images/members/others/inouesayuri_2021-05-06@2x.jpg",
+      "/images/members/others/inouesayuri_2021-05-06@3x.jpg"
     ],
     "join": "first",
     "graduation": {
@@ -710,7 +739,11 @@
             "url": "https://twitter.com/1st71845914"
           }
         ],
-        "cover": "/images/photo-albums/inouesayuri_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/inouesayuri_1@1x.jpg",
+          "md": "/images/photo-albums/inouesayuri_1@2x.jpg",
+          "lg": "/images/photo-albums/inouesayuri_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -860,7 +893,10 @@
       "/images/members/singles/4/etoumisa.jpg",
       "/images/members/singles/3/etoumisa.jpg",
       "/images/members/singles/2/etoumisa.jpg",
-      "/images/members/singles/1/etoumisa.jpg"
+      "/images/members/singles/1/etoumisa.jpg",
+      "/images/members/others/etoumisa_2020-04-29@1x.jpg",
+      "/images/members/others/etoumisa_2020-04-29@2x.jpg",
+      "/images/members/others/etoumisa_2020-04-29@3x.jpg"
     ],
     "join": "first",
     "graduation": {
@@ -909,7 +945,11 @@
             "url": "https://twitter.com/etomisabook"
           }
         ],
-        "cover": "/images/photo-albums/etoumisa_pb.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/etoumisa_pb@1x.jpg",
+          "md": "/images/photo-albums/etoumisa_pb@2x.jpg",
+          "lg": "/images/photo-albums/etoumisa_pb@3x.jpg"
+        }
       },
       {
         "title": "話を聞こうか。",
@@ -921,7 +961,11 @@
             "url": "https://twitter.com/33misa_syd"
           }
         ],
-        "cover": "/images/photo-albums/etoumisa_2.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/etoumisa_2@1x.jpg",
+          "md": "/images/photo-albums/etoumisa_2@2x.jpg",
+          "lg": "/images/photo-albums/etoumisa_2@3x.jpg"
+        }
       },
       {
         "title": "彩",
@@ -933,7 +977,11 @@
             "url": "https://www.amazon.co.jp/%E8%A1%9B%E8%97%A4%E7%BE%8E%E5%BD%A9-%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E5%86%99%E7%9C%9F%E9%9B%86-%E3%80%8E-%E5%BD%A9-%E3%80%8F/dp/4847044290"
           }
         ],
-        "cover": "/images/photo-albums/etoumisa_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/etoumisa_1@1x.jpg",
+          "md": "/images/photo-albums/etoumisa_1@2x.jpg",
+          "lg": "/images/photo-albums/etoumisa_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -1083,7 +1131,10 @@
       "/images/members/singles/4/kawagohina.jpg",
       "/images/members/singles/3/kawagohina.jpg",
       "/images/members/singles/2/kawagohina.jpg",
-      "/images/members/singles/1/kawagohina.jpg"
+      "/images/members/singles/1/kawagohina.jpg",
+      "/images/members/others/kawagohina_2020-04-29@1x.jpg",
+      "/images/members/others/kawagohina_2020-04-29@2x.jpg",
+      "/images/members/others/kawagohina_2020-04-29@3x.jpg"
     ],
     "join": "first",
     "graduation": {
@@ -1132,7 +1183,11 @@
             "url": "https://www.amazon.co.jp/dp/4907929331"
           }
         ],
-        "cover": "/images/photo-albums/kawagohina_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/kawagohina_1@1x.jpg",
+          "md": "/images/photo-albums/kawagohina_1@2x.jpg",
+          "lg": "/images/photo-albums/kawagohina_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -1328,7 +1383,11 @@
             "url": "https://twitter.com/gentosha_asuka"
           }
         ],
-        "cover": "/images/photo-albums/saitouasuka_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/saitouasuka_1@1x.jpg",
+          "md": "/images/photo-albums/saitouasuka_1@2x.jpg",
+          "lg": "/images/photo-albums/saitouasuka_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -1479,7 +1538,13 @@
       "/images/members/singles/4/saitouyuuri.jpg",
       "/images/members/singles/3/saitouyuuri.jpg",
       "/images/members/singles/2/saitouyuuri.jpg",
-      "/images/members/singles/1/saitouyuuri.jpg"
+      "/images/members/singles/1/saitouyuuri.jpg",
+      "/images/members/others/saitouyuuri_2020-04-29@1x.jpg",
+      "/images/members/others/saitouyuuri_2020-04-29@2x.jpg",
+      "/images/members/others/saitouyuuri_2020-04-29@3x.jpg",
+      "/images/members/others/saitouyuuri_2020-09-26@1x.jpg",
+      "/images/members/others/saitouyuuri_2020-09-26@2x.jpg",
+      "/images/members/others/saitouyuuri_2020-09-26@3x.jpg"
     ],
     "join": "first",
     "graduation": {
@@ -1524,7 +1589,11 @@
             "url": "https://twitter.com/7sec_yuuri"
           }
         ],
-        "cover": "/images/photo-albums/saitouyuuri_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/saitouyuuri_1@1x.jpg",
+          "md": "/images/photo-albums/saitouyuuri_1@2x.jpg",
+          "lg": "/images/photo-albums/saitouyuuri_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -1675,7 +1744,13 @@
       "/images/members/singles/4/sakuraireika.jpg",
       "/images/members/singles/3/sakuraireika.jpg",
       "/images/members/singles/2/sakuraireika.jpg",
-      "/images/members/singles/1/sakuraireika.jpg"
+      "/images/members/singles/1/sakuraireika.jpg",
+      "/images/members/others/sakuraireika_2020-04-29@1x.jpg",
+      "/images/members/others/sakuraireika_2020-04-29@2x.jpg",
+      "/images/members/others/sakuraireika_2020-04-29@3x.jpg",
+      "/images/members/others/sakuraireika_2021-03-01@1x.jpg",
+      "/images/members/others/sakuraireika_2021-03-01@2x.jpg",
+      "/images/members/others/sakuraireika_2021-03-01@3x.jpg"
     ],
     "join": "first",
     "graduation": {
@@ -1726,7 +1801,11 @@
             "url": "https://twitter.com/sakuraireika2nd"
           }
         ],
-        "cover": "/images/photo-albums/sakuraireika_2.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/sakuraireika_2@1x.jpg",
+          "md": "/images/photo-albums/sakuraireika_2@2x.jpg",
+          "lg": "/images/photo-albums/sakuraireika_2@3x.jpg"
+        }
       },
       {
         "title": "自由ということ",
@@ -1738,7 +1817,11 @@
             "url": "https://twitter.com/reika_kobunsha"
           }
         ],
-        "cover": "/images/photo-albums/sakuraireika_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/sakuraireika_1@1x.jpg",
+          "md": "/images/photo-albums/sakuraireika_1@2x.jpg",
+          "lg": "/images/photo-albums/sakuraireika_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -1890,7 +1973,10 @@
       "/images/members/singles/4/shiraishimai.jpg",
       "/images/members/singles/3/shiraishimai.jpg",
       "/images/members/singles/2/shiraishimai.jpg",
-      "/images/members/singles/1/shiraishimai.jpg"
+      "/images/members/singles/1/shiraishimai.jpg",
+      "/images/members/others/shiraishimai_2020-11-11@1x.jpg",
+      "/images/members/others/shiraishimai_2020-11-11@2x.jpg",
+      "/images/members/others/shiraishimai_2020-11-11@3x.jpg"
     ],
     "join": "first",
     "graduation": {
@@ -1948,7 +2034,11 @@
             "url": "https://twitter.com/mai_westcoast"
           }
         ],
-        "cover": "/images/photo-albums/shiraishimai_mm.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/shiraishimai_mm@1x.jpg",
+          "md": "/images/photo-albums/shiraishimai_mm@2x.jpg",
+          "lg": "/images/photo-albums/shiraishimai_mm@3x.jpg"
+        }
       },
       {
         "title": "パスポート",
@@ -1960,7 +2050,11 @@
             "url": "https://www.amazon.co.jp/%E7%99%BD%E7%9F%B3%E9%BA%BB%E8%A1%A3%E5%86%99%E7%9C%9F%E9%9B%86-%E3%83%91%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88-%E7%99%BD%E7%9F%B3-%E9%BA%BB%E8%A1%A3/dp/406352857X"
           }
         ],
-        "cover": "/images/photo-albums/shiraishimai_2.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/shiraishimai_2@1x.jpg",
+          "md": "/images/photo-albums/shiraishimai_2@2x.jpg",
+          "lg": "/images/photo-albums/shiraishimai_2@3x.jpg"
+        }
       },
       {
         "title": "MAI STYLE",
@@ -1972,7 +2066,11 @@
             "url": "https://www.amazon.co.jp/%E4%B9%83%E6%9C%A8%E5%9D%8246-%E7%99%BD%E7%9F%B3%E9%BA%BB%E8%A1%A31st%E3%83%95%E3%82%A9%E3%83%88%E3%83%96%E3%83%83%E3%82%AF-MAI-STYLE-%E4%B8%BB%E5%A9%A6%E3%81%AE%E5%8F%8B%E7%94%9F%E6%B4%BB%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA/dp/407402098X"
           }
         ],
-        "cover": "/images/photo-albums/shiraishimai_pb.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/shiraishimai_pb@1x.jpg",
+          "md": "/images/photo-albums/shiraishimai_pb@2x.jpg",
+          "lg": "/images/photo-albums/shiraishimai_pb@3x.jpg"
+        }
       },
       {
         "title": "清純な大人",
@@ -1984,7 +2082,11 @@
             "url": "https://www.amazon.co.jp/Adult-Shiraishi-First-Photo-Collection/dp/4344026713/"
           }
         ],
-        "cover": "/images/photo-albums/shiraishimai_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/shiraishimai_1@1x.jpg",
+          "md": "/images/photo-albums/shiraishimai_1@2x.jpg",
+          "lg": "/images/photo-albums/shiraishimai_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -2187,7 +2289,11 @@
             "url": "https://twitter.com/takayama_tokuma"
           }
         ],
-        "cover": "/images/photo-albums/takayamakazumi_2.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/takayamakazumi_2@1x.jpg",
+          "md": "/images/photo-albums/takayamakazumi_2@2x.jpg",
+          "lg": "/images/photo-albums/takayamakazumi_2@3x.jpg"
+        }
       },
       {
         "title": "恋かもしれない",
@@ -2199,7 +2305,11 @@
             "url": "https://www.amazon.co.jp/%E9%AB%98%E5%B1%B1%E4%B8%80%E5%AE%9F%E5%86%99%E7%9C%9F%E9%9B%86-%E6%81%8B%E3%81%8B%E3%82%82%E3%81%97%E3%82%8C%E3%81%AA%E3%81%84-%E9%AB%98%E5%B1%B1%E4%B8%80%E5%AE%9F/dp/4054064744"
           }
         ],
-        "cover": "/images/photo-albums/takayamakazumi_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/takayamakazumi_1@1x.jpg",
+          "md": "/images/photo-albums/takayamakazumi_1@2x.jpg",
+          "lg": "/images/photo-albums/takayamakazumi_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -2351,7 +2461,10 @@
       "/images/members/singles/4/nakadakana.jpg",
       "/images/members/singles/3/nakadakana.jpg",
       "/images/members/singles/2/nakadakana.jpg",
-      "/images/members/singles/1/nakadakana.jpg"
+      "/images/members/singles/1/nakadakana.jpg",
+      "/images/members/others/nakadakana_2020-11-11@1x.jpg",
+      "/images/members/others/nakadakana_2020-11-11@2x.jpg",
+      "/images/members/others/nakadakana_2020-11-11@3x.jpg"
     ],
     "join": "first",
     "graduation": {
@@ -2396,7 +2509,11 @@
             "url": "https://twitter.com/nakadakana_1st"
           }
         ],
-        "cover": "/images/photo-albums/nakadakana_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/nakadakana_1@1x.jpg",
+          "md": "/images/photo-albums/nakadakana_1@2x.jpg",
+          "lg": "/images/photo-albums/nakadakana_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -2547,7 +2664,13 @@
       "/images/members/singles/4/nishinonanase.jpg",
       "/images/members/singles/3/nishinonanase.jpg",
       "/images/members/singles/2/nishinonanase.jpg",
-      "/images/members/singles/1/nishinonanase.jpg"
+      "/images/members/singles/1/nishinonanase.jpg",
+      "/images/members/others/nishinonanase_2019-09-21@1x.jpg",
+      "/images/members/others/nishinonanase_2019-09-21@2x.jpg",
+      "/images/members/others/nishinonanase_2019-09-21@3x.jpg",
+      "/images/members/others/nishinonanase_2020-06-11@1x.jpg",
+      "/images/members/others/nishinonanase_2020-06-11@2x.jpg",
+      "/images/members/others/nishinonanase_2020-06-11@3x.jpg"
     ],
     "join": "first",
     "graduation": {
@@ -2601,7 +2724,11 @@
             "url": "https://twitter.com/nanase_1st"
           }
         ],
-        "cover": "/images/photo-albums/nishinonanase_pb.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/nishinonanase_pb@1x.jpg",
+          "md": "/images/photo-albums/nishinonanase_pb@2x.jpg",
+          "lg": "/images/photo-albums/nishinonanase_pb@3x.jpg"
+        }
       },
       {
         "title": "風を着替えて",
@@ -2613,7 +2740,11 @@
             "url": "https://www.amazon.co.jp/%E8%A5%BF%E9%87%8E%E4%B8%83%E7%80%AC%E5%86%99%E7%9C%9F%E9%9B%86-%E9%A2%A8%E3%82%92%E7%9D%80%E6%9B%BF%E3%81%88%E3%81%A6-%E8%A5%BF%E9%87%8E-%E4%B8%83%E7%80%AC/dp/4087807983/"
           }
         ],
-        "cover": "/images/photo-albums/nishinonanase_2.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/nishinonanase_2@1x.jpg",
+          "md": "/images/photo-albums/nishinonanase_2@2x.jpg",
+          "lg": "/images/photo-albums/nishinonanase_2@3x.jpg"
+        }
       },
       {
         "title": "普段着",
@@ -2625,7 +2756,11 @@
             "url": "https://www.amazon.co.jp/%E8%A5%BF%E9%87%8E%E4%B8%83%E7%80%AC%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E5%86%99%E7%9C%9F%E9%9B%86%E3%80%8E%E6%99%AE%E6%AE%B5%E7%9D%80%E3%80%8F-%E8%A5%BF%E9%87%8E-%E4%B8%83%E7%80%AC/dp/4344027094/"
           }
         ],
-        "cover": "/images/photo-albums/nishinonanase_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/nishinonanase_1@1x.jpg",
+          "md": "/images/photo-albums/nishinonanase_1@2x.jpg",
+          "lg": "/images/photo-albums/nishinonanase_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -2777,7 +2912,16 @@
       "/images/members/singles/4/noujouami.jpg",
       "/images/members/singles/3/noujouami.jpg",
       "/images/members/singles/2/noujouami.jpg",
-      "/images/members/singles/1/noujouami.jpg"
+      "/images/members/singles/1/noujouami.jpg",
+      "/images/members/others/noujouami_2020-04-29@1x.jpg",
+      "/images/members/others/noujouami_2020-04-29@2x.jpg",
+      "/images/members/others/noujouami_2020-04-29@3x.jpg",
+      "/images/members/others/noujouami_2020-09-26@1x.jpg",
+      "/images/members/others/noujouami_2020-09-26@2x.jpg",
+      "/images/members/others/noujouami_2020-09-26@3x.jpg",
+      "/images/members/others/noujouami_2021-04-17@1x.jpg",
+      "/images/members/others/noujouami_2021-04-17@2x.jpg",
+      "/images/members/others/noujouami_2021-04-17@3x.jpg"
     ],
     "join": "first",
     "graduation": {
@@ -3185,7 +3329,11 @@
             "url": "https://twitter.com/373_kawaii"
           }
         ],
-        "cover": "/images/photo-albums/hoshinominami_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/hoshinominami_1@1x.jpg",
+          "md": "/images/photo-albums/hoshinominami_1@2x.jpg",
+          "lg": "/images/photo-albums/hoshinominami_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -3389,7 +3537,11 @@
             "url": "https://twitter.com/sayuringo_pb"
           }
         ],
-        "cover": "/images/photo-albums/matsumurasayuri_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/matsumurasayuri_1@1x.jpg",
+          "md": "/images/photo-albums/matsumurasayuri_1@2x.jpg",
+          "lg": "/images/photo-albums/matsumurasayuri_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -3541,7 +3693,16 @@
       "/images/members/singles/4/wakatsukiyumi.jpg",
       "/images/members/singles/3/wakatsukiyumi.jpg",
       "/images/members/singles/2/wakatsukiyumi.jpg",
-      "/images/members/singles/1/wakatsukiyumi.jpg"
+      "/images/members/singles/1/wakatsukiyumi.jpg",
+      "/images/members/others/wakatsukiyumi_2019-09-21@1x.jpg",
+      "/images/members/others/wakatsukiyumi_2019-09-21@2x.jpg",
+      "/images/members/others/wakatsukiyumi_2019-09-21@3x.jpg",
+      "/images/members/others/wakatsukiyumi_2020-06-11@1x.jpg",
+      "/images/members/others/wakatsukiyumi_2020-06-11@2x.jpg",
+      "/images/members/others/wakatsukiyumi_2020-06-11@3x.jpg",
+      "/images/members/others/wakatsukiyumi_2021-04-02@1x.jpg",
+      "/images/members/others/wakatsukiyumi_2021-04-02@2x.jpg",
+      "/images/members/others/wakatsukiyumi_2021-04-02@3x.jpg"
     ],
     "join": "first",
     "graduation": {
@@ -3592,7 +3753,11 @@
             "url": "https://twitter.com/waka_palette"
           }
         ],
-        "cover": "/images/photo-albums/wakatsukiyumi_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/wakatsukiyumi_1@1x.jpg",
+          "md": "/images/photo-albums/wakatsukiyumi_1@2x.jpg",
+          "lg": "/images/photo-albums/wakatsukiyumi_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -3928,7 +4093,13 @@
       "/images/members/singles/4/saitouchiharu.jpg",
       "/images/members/singles/3/saitouchiharu.jpg",
       "/images/members/singles/2/saitouchiharu.jpg",
-      "/images/members/singles/1/saitouchiharu.jpg"
+      "/images/members/singles/1/saitouchiharu.jpg",
+      "/images/members/others/saitouchiharu_2019-09-22@1x.jpg",
+      "/images/members/others/saitouchiharu_2019-09-22@2x.jpg",
+      "/images/members/others/saitouchiharu_2019-09-22@3x.jpg",
+      "/images/members/others/saitouchiharu_2020-06-11@1x.jpg",
+      "/images/members/others/saitouchiharu_2020-06-11@2x.jpg",
+      "/images/members/others/saitouchiharu_2020-06-11@3x.jpg"
     ],
     "join": "first",
     "graduation": {
@@ -4103,7 +4274,10 @@
       "/images/members/singles/4/kawamuramahiro.jpg",
       "/images/members/singles/3/kawamuramahiro.jpg",
       "/images/members/singles/2/kawamuramahiro.jpg",
-      "/images/members/singles/1/kawamuramahiro.jpg"
+      "/images/members/singles/1/kawamuramahiro.jpg",
+      "/images/members/others/kawamuramahiro_2020-04-29@1x.jpg",
+      "/images/members/others/kawamuramahiro_2020-04-29@2x.jpg",
+      "/images/members/others/kawamuramahiro_2020-04-29@3x.jpg"
     ],
     "join": "first",
     "graduation": {
@@ -4278,7 +4452,10 @@
       "/images/members/singles/4/nakamotohimeka.jpg",
       "/images/members/singles/3/nakamotohimeka.jpg",
       "/images/members/singles/2/nakamotohimeka.jpg",
-      "/images/members/singles/1/nakamotohimeka.jpg"
+      "/images/members/singles/1/nakamotohimeka.jpg",
+      "/images/members/others/nakamotohimeka_2020-04-29@1x.jpg",
+      "/images/members/others/nakamotohimeka_2020-04-29@2x.jpg",
+      "/images/members/others/nakamotohimeka_2020-04-29@3x.jpg"
     ],
     "join": "first",
     "graduation": {
@@ -4454,7 +4631,13 @@
       "/images/members/singles/4/itoumarika.jpg",
       "/images/members/singles/3/itoumarika.jpg",
       "/images/members/singles/2/itoumarika.jpg",
-      "/images/members/singles/1/itoumarika.jpg"
+      "/images/members/singles/1/itoumarika.jpg",
+      "/images/members/others/itoumarika_2020-04-29@1x.jpg",
+      "/images/members/others/itoumarika_2020-04-29@2x.jpg",
+      "/images/members/others/itoumarika_2020-04-29@3x.jpg",
+      "/images/members/others/itoumarika_2020-09-26@1x.jpg",
+      "/images/members/others/itoumarika_2020-09-26@2x.jpg",
+      "/images/members/others/itoumarika_2020-09-26@3x.jpg"
     ],
     "join": "first",
     "graduation": {
@@ -4500,7 +4683,11 @@
             "url": "https://twitter.com/MARIKA_etranger"
           }
         ],
-        "cover": "/images/photo-albums/itoumarika_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/itoumarika_1@1x.jpg",
+          "md": "/images/photo-albums/itoumarika_1@2x.jpg",
+          "lg": "/images/photo-albums/itoumarika_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -4677,7 +4864,11 @@
             "url": "https://twitter.com/nanaminNY2017"
           }
         ],
-        "cover": "/images/photo-albums/hashimotonanami_2.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/hashimotonanami_2@1x.jpg",
+          "md": "/images/photo-albums/hashimotonanami_2@2x.jpg",
+          "lg": "/images/photo-albums/hashimotonanami_2@3x.jpg"
+        }
       },
       {
         "title": "やさしい棘",
@@ -4689,7 +4880,11 @@
             "url": "https://www.amazon.co.jp/%E6%A9%8B%E6%9C%AC%E5%A5%88%E3%80%85%E6%9C%AA%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E5%86%99%E7%9C%9F%E9%9B%86%E3%80%8E%E3%82%84%E3%81%95%E3%81%97%E3%81%84%E6%A3%98%EF%BC%88%E3%81%A8%E3%81%92%EF%BC%89%E3%80%8F-%E6%A9%8B%E6%9C%AC-%E5%A5%88%E3%80%85%E6%9C%AA/dp/4344027949/"
           }
         ],
-        "cover": "/images/photo-albums/hashimotonanami_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/hashimotonanami_1@1x.jpg",
+          "md": "/images/photo-albums/hashimotonanami_1@2x.jpg",
+          "lg": "/images/photo-albums/hashimotonanami_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -4835,7 +5030,10 @@
       "/images/members/singles/4/fukagawamai.jpg",
       "/images/members/singles/3/fukagawamai.jpg",
       "/images/members/singles/2/fukagawamai.jpg",
-      "/images/members/singles/1/fukagawamai.jpg"
+      "/images/members/singles/1/fukagawamai.jpg",
+      "/images/members/others/fukagawamai_2020-04-29@1x.jpg",
+      "/images/members/others/fukagawamai_2020-04-29@2x.jpg",
+      "/images/members/others/fukagawamai_2020-04-29@3x.jpg"
     ],
     "join": "first",
     "graduation": {
@@ -4873,7 +5071,11 @@
             "url": "https://www.amazon.co.jp/%E6%B7%B1%E5%B7%9D%E9%BA%BB%E8%A1%A3PhotoMagazine-%E3%80%8EMY-magazine%E3%80%8F-MOOK-%E6%B7%B1%E5%B7%9D/dp/4800280494/"
           }
         ],
-        "cover": "/images/photo-albums/fukagawamai_pm.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/fukagawamai_pm@1x.jpg",
+          "md": "/images/photo-albums/fukagawamai_pm@2x.jpg",
+          "lg": "/images/photo-albums/fukagawamai_pm@3x.jpg"
+        }
       },
       {
         "title": "ずっと、そばにいたい",
@@ -4885,7 +5087,11 @@
             "url": "https://www.amazon.co.jp/s?k=%E9%A2%A8%E3%81%AB%E7%9D%80%E6%9B%BF%E3%81%88%E3%81%A6&i=stripbooks&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&ref=nb_sb_noss"
           }
         ],
-        "cover": "/images/photo-albums/fukagawamai_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/fukagawamai_1@1x.jpg",
+          "md": "/images/photo-albums/fukagawamai_1@2x.jpg",
+          "lg": "/images/photo-albums/fukagawamai_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -5031,7 +5237,10 @@
       "/images/members/singles/4/nagashimaseira.jpg",
       "/images/members/singles/3/nagashimaseira.jpg",
       "/images/members/singles/2/nagashimaseira.jpg",
-      "/images/members/singles/1/nagashimaseira.jpg"
+      "/images/members/singles/1/nagashimaseira.jpg",
+      "/images/members/others/nagashimaseira_2020-04-29@1x.jpg",
+      "/images/members/others/nagashimaseira_2020-04-29@2x.jpg",
+      "/images/members/others/nagashimaseira_2020-04-29@3x.jpg"
     ],
     "join": "first",
     "graduation": {
@@ -5196,7 +5405,10 @@
       "/images/members/singles/11/matsuirena.jpg",
       "/images/members/singles/10/matsuirena.jpg",
       "/images/members/singles/9/matsuirena.jpg",
-      "/images/members/singles/8/matsuirena.jpg"
+      "/images/members/singles/8/matsuirena.jpg",
+      "/images/members/others/matsuirena_2020-04-29@1x.jpg",
+      "/images/members/others/matsuirena_2020-04-29@2x.jpg",
+      "/images/members/others/matsuirena_2020-04-29@3x.jpg"
     ],
     "join": "exchange",
     "graduation": {
@@ -5371,7 +5583,10 @@
       "/images/members/singles/4/hatanakaseira.jpg",
       "/images/members/singles/3/hatanakaseira.jpg",
       "/images/members/singles/2/hatanakaseira.jpg",
-      "/images/members/singles/1/hatanakaseira.jpg"
+      "/images/members/singles/1/hatanakaseira.jpg",
+      "/images/members/others/hatanakaseira_2020-04-29@1x.jpg",
+      "/images/members/others/hatanakaseira_2020-04-29@2x.jpg",
+      "/images/members/others/hatanakaseira_2020-04-29@3x.jpg"
     ],
     "join": "first",
     "graduation": {
@@ -5698,7 +5913,10 @@
       "/images/members/singles/4/itounene.jpg",
       "/images/members/singles/3/itounene.jpg",
       "/images/members/singles/2/itounene.jpg",
-      "/images/members/singles/1/itounene.jpg"
+      "/images/members/singles/1/itounene.jpg",
+      "/images/members/others/itounene_2020-04-29@1x.jpg",
+      "/images/members/others/itounene_2020-04-29@2x.jpg",
+      "/images/members/others/itounene_2020-04-29@3x.jpg"
     ],
     "join": "first",
     "graduation": {
@@ -5864,7 +6082,10 @@
       "/images/members/singles/4/ichikirena.jpg",
       "/images/members/singles/3/ichikirena.jpg",
       "/images/members/singles/2/ichikirena.jpg",
-      "/images/members/singles/1/ichikirena.jpg"
+      "/images/members/singles/1/ichikirena.jpg",
+      "/images/members/others/ichikirena_2020-04-29@1x.jpg",
+      "/images/members/others/ichikirena_2020-04-29@2x.jpg",
+      "/images/members/others/ichikirena_2020-04-29@3x.jpg"
     ],
     "join": "first",
     "graduation": {
@@ -6172,7 +6393,13 @@
       "/images/members/singles/4/miyazawaseira.jpg",
       "/images/members/singles/3/miyazawaseira.jpg",
       "/images/members/singles/2/miyazawaseira.jpg",
-      "/images/members/singles/1/miyazawaseira.jpg"
+      "/images/members/singles/1/miyazawaseira.jpg",
+      "/images/members/others/miyazawaseira_2020-04-29@1x.jpg",
+      "/images/members/others/miyazawaseira_2020-04-29@2x.jpg",
+      "/images/members/others/miyazawaseira_2020-04-29@3x.jpg",
+      "/images/members/others/miyazawaseira_2021-04-17@1x.jpg",
+      "/images/members/others/miyazawaseira_2021-04-17@2x.jpg",
+      "/images/members/others/miyazawaseira_2021-04-17@3x.jpg"
     ],
     "join": "first",
     "graduation": {
@@ -6342,7 +6569,10 @@
       "/images/members/singles/5/kashiwayukina.jpg",
       "/images/members/singles/3/kashiwayukina.jpg",
       "/images/members/singles/2/kashiwayukina.jpg",
-      "/images/members/singles/1/kashiwayukina.jpg"
+      "/images/members/singles/1/kashiwayukina.jpg",
+      "/images/members/others/kashiwayukina_2020-04-29@1x.jpg",
+      "/images/members/others/kashiwayukina_2020-04-29@2x.jpg",
+      "/images/members/others/kashiwayukina_2020-04-29@3x.jpg"
     ],
     "join": "first",
     "graduation": {
@@ -6654,7 +6884,10 @@
       "/images/members/others/iwaseyumiko_2020-04-29.jpg",
       "/images/members/singles/3/iwaseyumiko.jpg",
       "/images/members/singles/2/iwaseyumiko.jpg",
-      "/images/members/singles/1/iwaseyumiko.jpg"
+      "/images/members/singles/1/iwaseyumiko.jpg",
+      "/images/members/others/iwaseyumiko_2020-04-29@1x.jpg",
+      "/images/members/others/iwaseyumiko_2020-04-29@2x.jpg",
+      "/images/members/others/iwaseyumiko_2020-04-29@3x.jpg"
     ],
     "join": "first",
     "graduation": {
@@ -6823,7 +7056,10 @@
       "/images/members/singles/10/itoukarin.jpg",
       "/images/members/singles/9/itoukarin.jpg",
       "/images/members/singles/8/itoukarin.jpg",
-      "/images/members/singles/7/itoukarin.jpg"
+      "/images/members/singles/7/itoukarin.jpg",
+      "/images/members/others/itoukarin_2020-04-29@1x.jpg",
+      "/images/members/others/itoukarin_2020-04-29@2x.jpg",
+      "/images/members/others/itoukarin_2020-04-29@3x.jpg"
     ],
     "join": "second",
     "graduation": {
@@ -7238,7 +7474,11 @@
             "url": "https://twitter.com/hinako_gentosha"
           }
         ],
-        "cover": "/images/photo-albums/kitanohinako_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/kitanohinako_1@1x.jpg",
+          "md": "/images/photo-albums/kitanohinako_1@2x.jpg",
+          "lg": "/images/photo-albums/kitanohinako_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -7384,7 +7624,10 @@
       "/images/members/singles/10/sasakikotoko.jpg",
       "/images/members/singles/9/sasakikotoko.jpg",
       "/images/members/singles/8/sasakikotoko.jpg",
-      "/images/members/singles/7/sasakikotoko.jpg"
+      "/images/members/singles/7/sasakikotoko.jpg",
+      "/images/members/others/sasakikotoko_2020-10-14@1x.jpg",
+      "/images/members/others/sasakikotoko_2020-10-14@2x.jpg",
+      "/images/members/others/sasakikotoko_2020-10-14@3x.jpg"
     ],
     "join": "second",
     "graduation": {
@@ -7609,7 +7852,11 @@
             "url": "https://twitter.com/mai_kobunsha"
           }
         ],
-        "cover": "/images/photo-albums/shinuchimai_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/shinuchimai_1@1x.jpg",
+          "md": "/images/photo-albums/shinuchimai_1@2x.jpg",
+          "lg": "/images/photo-albums/shinuchimai_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -7799,7 +8046,11 @@
             "url": "https://twitter.com/ayane_gentosha"
           }
         ],
-        "cover": "/images/photo-albums/suzukiayane_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/suzukiayane_1@1x.jpg",
+          "md": "/images/photo-albums/suzukiayane_1@2x.jpg",
+          "lg": "/images/photo-albums/suzukiayane_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -8176,7 +8427,11 @@
             "url": "https://twitter.com/miona_photobook"
           }
         ],
-        "cover": "/images/photo-albums/horimiona_3.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/horimiona_3@1x.jpg",
+          "md": "/images/photo-albums/horimiona_3@2x.jpg",
+          "lg": "/images/photo-albums/horimiona_3@3x.jpg"
+        }
       },
       {
         "title": "いつかの待ち合わせ場所",
@@ -8188,7 +8443,11 @@
             "url": "https://twitter.com/horimiona2nd"
           }
         ],
-        "cover": "/images/photo-albums/horimiona_2.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/horimiona_2@1x.jpg",
+          "md": "/images/photo-albums/horimiona_2@2x.jpg",
+          "lg": "/images/photo-albums/horimiona_2@3x.jpg"
+        }
       },
       {
         "title": "君らしさ",
@@ -8200,7 +8459,11 @@
             "url": "https://twitter.com/miona_book"
           }
         ],
-        "cover": "/images/photo-albums/horimiona_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/horimiona_1@1x.jpg",
+          "md": "/images/photo-albums/horimiona_1@2x.jpg",
+          "lg": "/images/photo-albums/horimiona_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -8700,7 +8963,13 @@
       "/images/members/singles/13/sagaraiori.jpg",
       "/images/members/singles/11/sagaraiori.jpg",
       "/images/members/singles/10/sagaraiori.jpg",
-      "/images/members/singles/9/sagaraiori.jpg"
+      "/images/members/singles/9/sagaraiori.jpg",
+      "/images/members/others/sagaraiori_2020-04-29@1x.jpg",
+      "/images/members/others/sagaraiori_2020-04-29@2x.jpg",
+      "/images/members/others/sagaraiori_2020-04-29@3x.jpg",
+      "/images/members/others/sagaraiori_2020-09-26@1x.jpg",
+      "/images/members/others/sagaraiori_2020-09-26@2x.jpg",
+      "/images/members/others/sagaraiori_2020-09-26@3x.jpg"
     ],
     "join": "second",
     "graduation": {
@@ -9545,7 +9814,11 @@
             "url": "https://twitter.com/ume1st_minami"
           }
         ],
-        "cover": "/images/photo-albums/umezawaminami_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/umezawaminami_1@1x.jpg",
+          "md": "/images/photo-albums/umezawaminami_1@2x.jpg",
+          "lg": "/images/photo-albums/umezawaminami_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -10714,7 +10987,11 @@
             "url": "https://twitter.com/mizuki1st_paris"
           }
         ],
-        "cover": "/images/photo-albums/yamashitamizuki_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/yamashitamizuki_1@1x.jpg",
+          "md": "/images/photo-albums/yamashitamizuki_1@2x.jpg",
+          "lg": "/images/photo-albums/yamashitamizuki_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -11057,7 +11334,11 @@
             "url": "https://twitter.com/yodayuuki_oimo"
           }
         ],
-        "cover": "/images/photo-albums/yodayuuki_2.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/yodayuuki_2@1x.jpg",
+          "md": "/images/photo-albums/yodayuuki_2@2x.jpg",
+          "lg": "/images/photo-albums/yodayuuki_2@3x.jpg"
+        }
       },
       {
         "title": "日向の温度",
@@ -11069,7 +11350,11 @@
             "url": "https://twitter.com/gentosha_yoda"
           }
         ],
-        "cover": "/images/photo-albums/yodayuuki_1.jpg"
+        "cover": {
+          "sm": "/images/photo-albums/yodayuuki_1@1x.jpg",
+          "md": "/images/photo-albums/yodayuuki_1@2x.jpg",
+          "lg": "/images/photo-albums/yodayuuki_1@3x.jpg"
+        }
       }
     ],
     "positionsHistory": [
@@ -12963,8 +13248,14 @@
     "gallery": [
       "/images/members/singles/26/kuromiharuka.jpg",
       "/images/members/singles/25/kuromiharuka.jpg",
+      "/images/members/others/kuromiharuka_2020-02-16.jpg",
+      "/images/members/others/kuromiharuka_2020-02-16@1x.jpg",
+      "/images/members/others/kuromiharuka_2020-02-16@2x.jpg",
+      "/images/members/others/kuromiharuka_2020-02-16@3x.jpg",
       "/images/members/others/kuromiharuka_2020-02-18.jpg",
-      "/images/members/others/kuromiharuka_2020-02-16.jpg"
+      "/images/members/others/kuromiharuka_2020-02-18@1x.jpg",
+      "/images/members/others/kuromiharuka_2020-02-18@2x.jpg",
+      "/images/members/others/kuromiharuka_2020-02-18@3x.jpg"
     ],
     "join": "fourth",
     "graduation": {
@@ -13127,8 +13418,14 @@
     "gallery": [
       "/images/members/singles/26/satourika.jpg",
       "/images/members/singles/25/satourika.jpg",
+      "/images/members/others/satourika_2020-02-16.jpg",
+      "/images/members/others/satourika_2020-02-16@1x.jpg",
+      "/images/members/others/satourika_2020-02-16@2x.jpg",
+      "/images/members/others/satourika_2020-02-16@3x.jpg",
       "/images/members/others/satourika_2020-02-18.jpg",
-      "/images/members/others/satourika_2020-02-16.jpg"
+      "/images/members/others/satourika_2020-02-18@1x.jpg",
+      "/images/members/others/satourika_2020-02-18@2x.jpg",
+      "/images/members/others/satourika_2020-02-18@3x.jpg"
     ],
     "join": "fourth",
     "graduation": {
@@ -13291,8 +13588,14 @@
     "gallery": [
       "/images/members/singles/26/hayashiruna.jpg",
       "/images/members/singles/25/hayashiruna.jpg",
+      "/images/members/others/hayashiruna_2020-02-16.jpg",
+      "/images/members/others/hayashiruna_2020-02-16@1x.jpg",
+      "/images/members/others/hayashiruna_2020-02-16@2x.jpg",
+      "/images/members/others/hayashiruna_2020-02-16@3x.jpg",
       "/images/members/others/hayashiruna_2020-02-18.jpg",
-      "/images/members/others/hayashiruna_2020-02-16.jpg"
+      "/images/members/others/hayashiruna_2020-02-18@1x.jpg",
+      "/images/members/others/hayashiruna_2020-02-18@2x.jpg",
+      "/images/members/others/hayashiruna_2020-02-18@3x.jpg"
     ],
     "join": "fourth",
     "graduation": {
@@ -13455,7 +13758,10 @@
     "gallery": [
       "/images/members/singles/26/matsuomiyu.jpg",
       "/images/members/singles/25/matsuomiyu.jpg",
-      "/images/members/others/matsuomiyu_2020-02-16.jpg"
+      "/images/members/others/matsuomiyu_2020-02-16.jpg",
+      "/images/members/others/matsuomiyu_2020-02-16@1x.jpg",
+      "/images/members/others/matsuomiyu_2020-02-16@2x.jpg",
+      "/images/members/others/matsuomiyu_2020-02-16@3x.jpg"
     ],
     "join": "fourth",
     "graduation": {
@@ -13618,8 +13924,14 @@
     "gallery": [
       "/images/members/singles/26/yumikinao.jpg",
       "/images/members/singles/25/yumikinao.jpg",
+      "/images/members/others/yumikinao_2020-02-16.jpg",
+      "/images/members/others/yumikinao_2020-02-16@1x.jpg",
+      "/images/members/others/yumikinao_2020-02-16@2x.jpg",
+      "/images/members/others/yumikinao_2020-02-16@3x.jpg",
       "/images/members/others/yumikinao_2020-02-18.jpg",
-      "/images/members/others/yumikinao_2020-02-16.jpg"
+      "/images/members/others/yumikinao_2020-02-18@1x.jpg",
+      "/images/members/others/yumikinao_2020-02-18@2x.jpg",
+      "/images/members/others/yumikinao_2020-02-18@3x.jpg"
     ],
     "join": "fourth",
     "graduation": {
