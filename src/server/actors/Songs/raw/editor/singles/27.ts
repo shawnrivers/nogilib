@@ -69,6 +69,10 @@ export const TWENTY_SEVENTH_SINGLE_SONGS: SongRaw[] = [
         MemberNameKey.TakayamaKazumi,
       ],
     },
+    performersType: {
+      name: 'selected',
+      single: '26',
+    },
   }),
   createSongRaw({
     title: SONGS['大人たちには指示されない'].title,

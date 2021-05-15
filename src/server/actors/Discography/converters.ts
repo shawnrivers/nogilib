@@ -50,7 +50,6 @@ export const convertCdSongFocusPerformers: ConvertCdSongFocusPerformers = ({
       song.type === SongType.Under ||
       song.type === SongType.Coupling ||
       song.type === SongType.Selected ||
-      song.type === SongType.Selected12 ||
       song.type === SongType.Lead ||
       song.type === SongType.FirstGeneration ||
       song.type === SongType.SecondGeneration ||

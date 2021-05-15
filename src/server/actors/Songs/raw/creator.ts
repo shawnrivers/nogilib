@@ -28,6 +28,7 @@ type SongRawCreatorParams = {
         | Exclude<SongRaw['performers']['fukujin']['type'], 'irregular' | null>
         | SongRaw['performers']['fukujin']['members'];
       formations?: SongRawCreatorFormation;
+      performersType?: { name?: 'selected'; single: string };
     }
   | {
       type: SongType.Unit;
@@ -46,6 +47,12 @@ type SongRawCreatorParams = {
       >;
       center?: SongRaw['performers']['center'];
       formations?: SongRawCreatorFormation;
+      performersType?:
+        | { name: 'selected' | 'under'; single: string }
+        | {
+            name: 'generation';
+            generation: number;
+          };
     }
 );
 
@@ -95,6 +102,10 @@ export const createSongRaw = (params: SongRawCreatorParams): SongRaw => {
           fukujin,
           solo: '',
           unit: '',
+          type: {
+            name: 'selected',
+            single: params.performersType?.single ?? '',
+          },
         },
         formations: {
           firstRow: params.formations?.firstRow ?? [],
@@ -120,6 +131,7 @@ export const createSongRaw = (params: SongRawCreatorParams): SongRaw => {
           fukujin,
           solo: '',
           unit: params.unit ?? '',
+          type: { name: 'unit' },
         },
         formations: {
           firstRow: params.formations?.firstRow ?? [],
@@ -145,6 +157,7 @@ export const createSongRaw = (params: SongRawCreatorParams): SongRaw => {
           fukujin,
           solo: params.solo,
           unit: '',
+          type: { name: 'solo' },
         },
         formations: {
           firstRow: [params.solo],
@@ -170,6 +183,7 @@ export const createSongRaw = (params: SongRawCreatorParams): SongRaw => {
           fukujin,
           solo: '',
           unit: '',
+          type: params.performersType,
         },
         formations: {
           firstRow: params.formations?.firstRow ?? [],

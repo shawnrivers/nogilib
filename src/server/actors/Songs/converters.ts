@@ -181,7 +181,7 @@ export const convertSongArtwork: ConvertSongArtwork = ({
 export const convertSongType = (type: SongRaw['type']): SongResult['type'] =>
   type.includes(SongType.Selected) ? SongType.Coupling : type;
 
-type ConvertSongPerformersTag = (params: {
+export const convertSongPerformersTag = (params: {
   songType: SongRaw['type'];
   songSingleResult: SongResult['single'];
   songAlbumsResult: SongResult['albums'];
@@ -189,9 +189,7 @@ type ConvertSongPerformersTag = (params: {
   songPerformers: SongRaw['performers'];
   albumsRawObject: DiscographyRawObject;
   otherCdsRawObject: DiscographyRawObject;
-}) => SongResult['performersTag'];
-
-export const convertSongPerformersTag: ConvertSongPerformersTag = params => {
+}): SongResult['performersTag'] => {
   const {
     songType,
     songSingleResult,
@@ -207,12 +205,15 @@ export const convertSongPerformersTag: ConvertSongPerformersTag = params => {
     number: null,
   };
 
-  if (songType === SongType.Selected12) {
+  if (
+    songPerformers.type?.name === 'selected' &&
+    songPerformers.type?.single !== ''
+  ) {
     return {
       name: 'selected',
       album: {
         type: 'single',
-        number: '12',
+        number: songPerformers.type.single,
       },
     };
   }
