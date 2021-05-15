@@ -5,7 +5,7 @@ import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { PhotoAlbumType } from 'server/actors/Members/constants/photoAlbum';
 import { PositionType } from 'server/actors/Members/constants/position';
 import { UnitType } from 'server/actors/Units/constants/unitType';
-import { Site } from 'server/types/commons';
+import { ImageUrl, Site } from 'server/types/commons';
 
 export type MemberRaw = {
   name: MemberNameKey;
@@ -32,7 +32,7 @@ export type MemberRaw = {
     release: string;
     type: PhotoAlbumType;
     sites: Site[];
-    cover: string;
+    cover: ImageUrl;
   }[];
   graduation: {
     isGraduated: boolean;

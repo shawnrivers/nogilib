@@ -29,6 +29,7 @@ import { PositionType } from 'server/actors/Members/constants/position';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { Divider } from 'client/components/atoms/Divider';
 import { filterDuplicate } from 'utils/array';
+import { AspectRatioImage } from 'client/components/atoms/image/AspectRatioImage';
 
 /**
  * Local components
@@ -456,14 +457,13 @@ const MemberPage: React.FC<PageProps> = props => {
                       `}
                     >
                       <article>
-                        <Image
-                          src={photoAlbum.cover}
+                        <AspectRatioImage
+                          src={photoAlbum.cover.lg}
+                          srcSet={`${photoAlbum.cover.sm}, ${photoAlbum.cover.md} 2x, ${photoAlbum.cover.lg} 3x`}
                           alt=""
                           role="presentation"
-                          width={180}
-                          height={200}
-                          objectFit="cover"
-                          objectPosition="top"
+                          aspectRatio={0.9}
+                          loading="lazy"
                           css={css`
                             border-radius: ${commonStyles.borderRadius.s};
                           `}

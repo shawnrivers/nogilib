@@ -267,7 +267,11 @@ export function convertPhotoAlbums(
 ): MemberResult['photoAlbums'] {
   return photoAlbums.map(photoAlbum => ({
     ...photoAlbum,
-    cover: convertImageFilePath(photoAlbum.cover),
+    cover: {
+      sm: convertImageFilePath(photoAlbum.cover.sm),
+      md: convertImageFilePath(photoAlbum.cover.md),
+      lg: convertImageFilePath(photoAlbum.cover.lg),
+    },
   }));
 }
 

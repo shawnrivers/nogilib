@@ -1,4 +1,5 @@
 import { MemberRaw } from 'server/actors/Members/models';
+import { getResponsiveImageUrls } from 'server/utils/path';
 import { sortBySocialMedia } from 'utils/sorting';
 
 type CreateMemberRawParams = {
@@ -23,7 +24,7 @@ type CreateMemberRawParams = {
   sites?: MemberRaw['sites'];
   photoAlbums?: (Omit<MemberRaw['photoAlbums'][0], 'sites' | 'cover'> & {
     sites?: MemberRaw['photoAlbums'][0]['sites'];
-    cover?: MemberRaw['photoAlbums'][0]['cover'];
+    cover?: string;
   })[];
   graduatedDate?: string;
 };
@@ -80,7 +81,9 @@ export const createMemberRaw = (
         release: photoAlbum.release,
         type: photoAlbum.type,
         sites: photoAlbum.sites ?? [],
-        cover: photoAlbum.cover ?? 'photo-albums/photo_album_no_image.jpg',
+        cover: getResponsiveImageUrls(
+          photoAlbum.cover ?? 'photo-albums/photo_album_no_image.jpg'
+        ),
       })) ?? [],
     graduation,
   };
