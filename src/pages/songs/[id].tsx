@@ -2,7 +2,6 @@
 import { css } from '@emotion/core';
 import * as React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import Image from 'next/image';
 import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
 import { PageContent } from 'client/components/layout/PageContent';
 import { Hashtag } from 'client/components/atoms/Hashtag';
@@ -19,6 +18,7 @@ import { getSongData } from 'api/song';
 import { SongPageData } from 'server/pages/song';
 import { getMemberUrl } from 'client/utils/url';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
+import { AspectRatioImage } from 'client/components/atoms/image/AspectRatioImage';
 
 type PathParams = { id: string };
 
@@ -188,13 +188,12 @@ export const SongPage: React.FC<SongPageProps> = props => {
                   height: 200px;
                 `}
               >
-                <Image
-                  src={artwork}
+                <AspectRatioImage
+                  src={artwork.lg}
+                  srcSet={`${artwork.sm}, ${artwork.md} 2x, ${artwork.lg} 3x`}
                   alt={formatWords([title, getTranslation('artwork')])}
-                  width={200}
-                  height={200}
-                  objectFit="cover"
-                  objectPosition="top"
+                  aspectRatio={1}
+                  loading="lazy"
                 />
               </div>
               {creators.lyrics.length +

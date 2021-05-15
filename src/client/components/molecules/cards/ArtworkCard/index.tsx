@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
-import Image from 'next/image';
+import { AspectRatioImage } from 'client/components/atoms/image/AspectRatioImage';
 import {
   Typography,
   TypographyProps,
@@ -9,6 +9,7 @@ import { Card, CardProps } from 'client/components/atoms/Card';
 import { commonStyles } from 'client/styles/tokens';
 import { useIntl } from 'client/i18n/hooks/useIntl';
 import { DiscographyType } from 'server/actors/Discography/types';
+import { ImageUrl } from 'server/types/commons';
 
 export const ArtworkCard: React.FC<
   Omit<CardProps, 'children'> & {
@@ -16,7 +17,7 @@ export const ArtworkCard: React.FC<
     titleElement?: TypographyProps['element'];
     number: string;
     type: DiscographyType;
-    image: string;
+    image: ImageUrl;
     width: number;
   }
 > = props => {
@@ -36,26 +37,25 @@ export const ArtworkCard: React.FC<
 
   return (
     <Card
-      css={css`
-        width: ${175}px;
-      `}
       aria-label={title}
       borderRadius={borderRadius}
+      css={css`
+        width: ${width}px;
+      `}
       {...cardProps}
     >
       <article>
-        <Image
-          src={image}
-          width={width}
-          height={width}
+        <AspectRatioImage
+          src={image.lg}
+          srcSet={`${image.sm}, ${image.md} 2x, ${image.lg} 3x`}
           alt=""
           role="presentation"
-          objectFit="cover"
-          objectPosition="top"
+          aspectRatio={1}
+          loading="lazy"
           css={css`
             border-radius: ${commonStyles.borderRadius[borderRadius]};
           `}
-        ></Image>
+        />
         <Typography
           variant="h7"
           element="div"

@@ -6,23 +6,43 @@
     "number": "26",
     "artworks": [
       {
-        "url": "/images/artworks/singles/26/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/26/A@1x.jpg",
+          "md": "/images/artworks/singles/26/A@2x.jpg",
+          "lg": "/images/artworks/singles/26/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/26/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/26/B@1x.jpg",
+          "md": "/images/artworks/singles/26/B@2x.jpg",
+          "lg": "/images/artworks/singles/26/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/26/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/26/C@1x.jpg",
+          "md": "/images/artworks/singles/26/C@2x.jpg",
+          "lg": "/images/artworks/singles/26/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/26/D.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/26/D@1x.jpg",
+          "md": "/images/artworks/singles/26/D@2x.jpg",
+          "lg": "/images/artworks/singles/26/D@3x.jpg"
+        },
         "type": "D"
       },
       {
-        "url": "/images/artworks/singles/26/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/26/T@1x.jpg",
+          "md": "/images/artworks/singles/26/T@2x.jpg",
+          "lg": "/images/artworks/singles/26/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -119,23 +139,43 @@
     "number": "25",
     "artworks": [
       {
-        "url": "/images/artworks/singles/25/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/25/A@1x.jpg",
+          "md": "/images/artworks/singles/25/A@2x.jpg",
+          "lg": "/images/artworks/singles/25/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/25/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/25/B@1x.jpg",
+          "md": "/images/artworks/singles/25/B@2x.jpg",
+          "lg": "/images/artworks/singles/25/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/25/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/25/C@1x.jpg",
+          "md": "/images/artworks/singles/25/C@2x.jpg",
+          "lg": "/images/artworks/singles/25/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/25/D.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/25/D@1x.jpg",
+          "md": "/images/artworks/singles/25/D@2x.jpg",
+          "lg": "/images/artworks/singles/25/D@3x.jpg"
+        },
         "type": "D"
       },
       {
-        "url": "/images/artworks/singles/25/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/25/T@1x.jpg",
+          "md": "/images/artworks/singles/25/T@2x.jpg",
+          "lg": "/images/artworks/singles/25/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -232,23 +272,43 @@
     "number": "24",
     "artworks": [
       {
-        "url": "/images/artworks/singles/24/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/24/A@1x.jpg",
+          "md": "/images/artworks/singles/24/A@2x.jpg",
+          "lg": "/images/artworks/singles/24/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/24/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/24/B@1x.jpg",
+          "md": "/images/artworks/singles/24/B@2x.jpg",
+          "lg": "/images/artworks/singles/24/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/24/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/24/C@1x.jpg",
+          "md": "/images/artworks/singles/24/C@2x.jpg",
+          "lg": "/images/artworks/singles/24/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/24/D.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/24/D@1x.jpg",
+          "md": "/images/artworks/singles/24/D@2x.jpg",
+          "lg": "/images/artworks/singles/24/D@3x.jpg"
+        },
         "type": "D"
       },
       {
-        "url": "/images/artworks/singles/24/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/24/T@1x.jpg",
+          "md": "/images/artworks/singles/24/T@2x.jpg",
+          "lg": "/images/artworks/singles/24/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -345,23 +405,43 @@
     "number": "23",
     "artworks": [
       {
-        "url": "/images/artworks/singles/23/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/23/A@1x.jpg",
+          "md": "/images/artworks/singles/23/A@2x.jpg",
+          "lg": "/images/artworks/singles/23/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/23/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/23/B@1x.jpg",
+          "md": "/images/artworks/singles/23/B@2x.jpg",
+          "lg": "/images/artworks/singles/23/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/23/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/23/C@1x.jpg",
+          "md": "/images/artworks/singles/23/C@2x.jpg",
+          "lg": "/images/artworks/singles/23/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/23/D.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/23/D@1x.jpg",
+          "md": "/images/artworks/singles/23/D@2x.jpg",
+          "lg": "/images/artworks/singles/23/D@3x.jpg"
+        },
         "type": "D"
       },
       {
-        "url": "/images/artworks/singles/23/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/23/T@1x.jpg",
+          "md": "/images/artworks/singles/23/T@2x.jpg",
+          "lg": "/images/artworks/singles/23/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -458,23 +538,43 @@
     "number": "22",
     "artworks": [
       {
-        "url": "/images/artworks/singles/22/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/22/A@1x.jpg",
+          "md": "/images/artworks/singles/22/A@2x.jpg",
+          "lg": "/images/artworks/singles/22/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/22/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/22/B@1x.jpg",
+          "md": "/images/artworks/singles/22/B@2x.jpg",
+          "lg": "/images/artworks/singles/22/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/22/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/22/C@1x.jpg",
+          "md": "/images/artworks/singles/22/C@2x.jpg",
+          "lg": "/images/artworks/singles/22/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/22/D.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/22/D@1x.jpg",
+          "md": "/images/artworks/singles/22/D@2x.jpg",
+          "lg": "/images/artworks/singles/22/D@3x.jpg"
+        },
         "type": "D"
       },
       {
-        "url": "/images/artworks/singles/22/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/22/T@1x.jpg",
+          "md": "/images/artworks/singles/22/T@2x.jpg",
+          "lg": "/images/artworks/singles/22/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -571,23 +671,43 @@
     "number": "21",
     "artworks": [
       {
-        "url": "/images/artworks/singles/21/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/21/A@1x.jpg",
+          "md": "/images/artworks/singles/21/A@2x.jpg",
+          "lg": "/images/artworks/singles/21/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/21/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/21/B@1x.jpg",
+          "md": "/images/artworks/singles/21/B@2x.jpg",
+          "lg": "/images/artworks/singles/21/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/21/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/21/C@1x.jpg",
+          "md": "/images/artworks/singles/21/C@2x.jpg",
+          "lg": "/images/artworks/singles/21/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/21/D.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/21/D@1x.jpg",
+          "md": "/images/artworks/singles/21/D@2x.jpg",
+          "lg": "/images/artworks/singles/21/D@3x.jpg"
+        },
         "type": "D"
       },
       {
-        "url": "/images/artworks/singles/21/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/21/T@1x.jpg",
+          "md": "/images/artworks/singles/21/T@2x.jpg",
+          "lg": "/images/artworks/singles/21/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -684,23 +804,43 @@
     "number": "20",
     "artworks": [
       {
-        "url": "/images/artworks/singles/20/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/20/A@1x.jpg",
+          "md": "/images/artworks/singles/20/A@2x.jpg",
+          "lg": "/images/artworks/singles/20/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/20/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/20/B@1x.jpg",
+          "md": "/images/artworks/singles/20/B@2x.jpg",
+          "lg": "/images/artworks/singles/20/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/20/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/20/C@1x.jpg",
+          "md": "/images/artworks/singles/20/C@2x.jpg",
+          "lg": "/images/artworks/singles/20/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/20/D.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/20/D@1x.jpg",
+          "md": "/images/artworks/singles/20/D@2x.jpg",
+          "lg": "/images/artworks/singles/20/D@3x.jpg"
+        },
         "type": "D"
       },
       {
-        "url": "/images/artworks/singles/20/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/20/T@1x.jpg",
+          "md": "/images/artworks/singles/20/T@2x.jpg",
+          "lg": "/images/artworks/singles/20/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -797,23 +937,43 @@
     "number": "19",
     "artworks": [
       {
-        "url": "/images/artworks/singles/19/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/19/A@1x.jpg",
+          "md": "/images/artworks/singles/19/A@2x.jpg",
+          "lg": "/images/artworks/singles/19/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/19/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/19/B@1x.jpg",
+          "md": "/images/artworks/singles/19/B@2x.jpg",
+          "lg": "/images/artworks/singles/19/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/19/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/19/C@1x.jpg",
+          "md": "/images/artworks/singles/19/C@2x.jpg",
+          "lg": "/images/artworks/singles/19/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/19/D.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/19/D@1x.jpg",
+          "md": "/images/artworks/singles/19/D@2x.jpg",
+          "lg": "/images/artworks/singles/19/D@3x.jpg"
+        },
         "type": "D"
       },
       {
-        "url": "/images/artworks/singles/19/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/19/T@1x.jpg",
+          "md": "/images/artworks/singles/19/T@2x.jpg",
+          "lg": "/images/artworks/singles/19/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -926,23 +1086,43 @@
     "number": "18",
     "artworks": [
       {
-        "url": "/images/artworks/singles/18/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/18/A@1x.jpg",
+          "md": "/images/artworks/singles/18/A@2x.jpg",
+          "lg": "/images/artworks/singles/18/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/18/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/18/B@1x.jpg",
+          "md": "/images/artworks/singles/18/B@2x.jpg",
+          "lg": "/images/artworks/singles/18/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/18/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/18/C@1x.jpg",
+          "md": "/images/artworks/singles/18/C@2x.jpg",
+          "lg": "/images/artworks/singles/18/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/18/D.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/18/D@1x.jpg",
+          "md": "/images/artworks/singles/18/D@2x.jpg",
+          "lg": "/images/artworks/singles/18/D@3x.jpg"
+        },
         "type": "D"
       },
       {
-        "url": "/images/artworks/singles/18/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/18/T@1x.jpg",
+          "md": "/images/artworks/singles/18/T@2x.jpg",
+          "lg": "/images/artworks/singles/18/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -1055,23 +1235,43 @@
     "number": "17",
     "artworks": [
       {
-        "url": "/images/artworks/singles/17/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/17/A@1x.jpg",
+          "md": "/images/artworks/singles/17/A@2x.jpg",
+          "lg": "/images/artworks/singles/17/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/17/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/17/B@1x.jpg",
+          "md": "/images/artworks/singles/17/B@2x.jpg",
+          "lg": "/images/artworks/singles/17/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/17/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/17/C@1x.jpg",
+          "md": "/images/artworks/singles/17/C@2x.jpg",
+          "lg": "/images/artworks/singles/17/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/17/D.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/17/D@1x.jpg",
+          "md": "/images/artworks/singles/17/D@2x.jpg",
+          "lg": "/images/artworks/singles/17/D@3x.jpg"
+        },
         "type": "D"
       },
       {
-        "url": "/images/artworks/singles/17/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/17/T@1x.jpg",
+          "md": "/images/artworks/singles/17/T@2x.jpg",
+          "lg": "/images/artworks/singles/17/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -1184,23 +1384,43 @@
     "number": "16",
     "artworks": [
       {
-        "url": "/images/artworks/singles/16/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/16/A@1x.jpg",
+          "md": "/images/artworks/singles/16/A@2x.jpg",
+          "lg": "/images/artworks/singles/16/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/16/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/16/B@1x.jpg",
+          "md": "/images/artworks/singles/16/B@2x.jpg",
+          "lg": "/images/artworks/singles/16/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/16/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/16/C@1x.jpg",
+          "md": "/images/artworks/singles/16/C@2x.jpg",
+          "lg": "/images/artworks/singles/16/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/16/D.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/16/D@1x.jpg",
+          "md": "/images/artworks/singles/16/D@2x.jpg",
+          "lg": "/images/artworks/singles/16/D@3x.jpg"
+        },
         "type": "D"
       },
       {
-        "url": "/images/artworks/singles/16/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/16/T@1x.jpg",
+          "md": "/images/artworks/singles/16/T@2x.jpg",
+          "lg": "/images/artworks/singles/16/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -1297,23 +1517,43 @@
     "number": "15",
     "artworks": [
       {
-        "url": "/images/artworks/singles/15/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/15/A@1x.jpg",
+          "md": "/images/artworks/singles/15/A@2x.jpg",
+          "lg": "/images/artworks/singles/15/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/15/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/15/B@1x.jpg",
+          "md": "/images/artworks/singles/15/B@2x.jpg",
+          "lg": "/images/artworks/singles/15/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/15/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/15/C@1x.jpg",
+          "md": "/images/artworks/singles/15/C@2x.jpg",
+          "lg": "/images/artworks/singles/15/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/15/D.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/15/D@1x.jpg",
+          "md": "/images/artworks/singles/15/D@2x.jpg",
+          "lg": "/images/artworks/singles/15/D@3x.jpg"
+        },
         "type": "D"
       },
       {
-        "url": "/images/artworks/singles/15/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/15/T@1x.jpg",
+          "md": "/images/artworks/singles/15/T@2x.jpg",
+          "lg": "/images/artworks/singles/15/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -1410,23 +1650,43 @@
     "number": "14",
     "artworks": [
       {
-        "url": "/images/artworks/singles/14/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/14/A@1x.jpg",
+          "md": "/images/artworks/singles/14/A@2x.jpg",
+          "lg": "/images/artworks/singles/14/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/14/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/14/B@1x.jpg",
+          "md": "/images/artworks/singles/14/B@2x.jpg",
+          "lg": "/images/artworks/singles/14/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/14/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/14/C@1x.jpg",
+          "md": "/images/artworks/singles/14/C@2x.jpg",
+          "lg": "/images/artworks/singles/14/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/14/D.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/14/D@1x.jpg",
+          "md": "/images/artworks/singles/14/D@2x.jpg",
+          "lg": "/images/artworks/singles/14/D@3x.jpg"
+        },
         "type": "D"
       },
       {
-        "url": "/images/artworks/singles/14/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/14/T@1x.jpg",
+          "md": "/images/artworks/singles/14/T@2x.jpg",
+          "lg": "/images/artworks/singles/14/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -1523,19 +1783,35 @@
     "number": "13",
     "artworks": [
       {
-        "url": "/images/artworks/singles/13/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/13/A@1x.jpg",
+          "md": "/images/artworks/singles/13/A@2x.jpg",
+          "lg": "/images/artworks/singles/13/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/13/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/13/B@1x.jpg",
+          "md": "/images/artworks/singles/13/B@2x.jpg",
+          "lg": "/images/artworks/singles/13/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/13/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/13/C@1x.jpg",
+          "md": "/images/artworks/singles/13/C@2x.jpg",
+          "lg": "/images/artworks/singles/13/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/13/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/13/T@1x.jpg",
+          "md": "/images/artworks/singles/13/T@2x.jpg",
+          "lg": "/images/artworks/singles/13/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -1638,19 +1914,35 @@
     "number": "12",
     "artworks": [
       {
-        "url": "/images/artworks/singles/12/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/12/A@1x.jpg",
+          "md": "/images/artworks/singles/12/A@2x.jpg",
+          "lg": "/images/artworks/singles/12/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/12/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/12/B@1x.jpg",
+          "md": "/images/artworks/singles/12/B@2x.jpg",
+          "lg": "/images/artworks/singles/12/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/12/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/12/C@1x.jpg",
+          "md": "/images/artworks/singles/12/C@2x.jpg",
+          "lg": "/images/artworks/singles/12/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/12/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/12/T@1x.jpg",
+          "md": "/images/artworks/singles/12/T@2x.jpg",
+          "lg": "/images/artworks/singles/12/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -1747,19 +2039,35 @@
     "number": "11",
     "artworks": [
       {
-        "url": "/images/artworks/singles/11/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/11/A@1x.jpg",
+          "md": "/images/artworks/singles/11/A@2x.jpg",
+          "lg": "/images/artworks/singles/11/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/11/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/11/B@1x.jpg",
+          "md": "/images/artworks/singles/11/B@2x.jpg",
+          "lg": "/images/artworks/singles/11/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/11/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/11/C@1x.jpg",
+          "md": "/images/artworks/singles/11/C@2x.jpg",
+          "lg": "/images/artworks/singles/11/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/11/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/11/T@1x.jpg",
+          "md": "/images/artworks/singles/11/T@2x.jpg",
+          "lg": "/images/artworks/singles/11/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -1846,19 +2154,35 @@
     "number": "10",
     "artworks": [
       {
-        "url": "/images/artworks/singles/10/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/10/A@1x.jpg",
+          "md": "/images/artworks/singles/10/A@2x.jpg",
+          "lg": "/images/artworks/singles/10/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/10/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/10/B@1x.jpg",
+          "md": "/images/artworks/singles/10/B@2x.jpg",
+          "lg": "/images/artworks/singles/10/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/10/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/10/C@1x.jpg",
+          "md": "/images/artworks/singles/10/C@2x.jpg",
+          "lg": "/images/artworks/singles/10/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/10/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/10/T@1x.jpg",
+          "md": "/images/artworks/singles/10/T@2x.jpg",
+          "lg": "/images/artworks/singles/10/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -1945,19 +2269,35 @@
     "number": "9",
     "artworks": [
       {
-        "url": "/images/artworks/singles/9/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/9/A@1x.jpg",
+          "md": "/images/artworks/singles/9/A@2x.jpg",
+          "lg": "/images/artworks/singles/9/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/9/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/9/B@1x.jpg",
+          "md": "/images/artworks/singles/9/B@2x.jpg",
+          "lg": "/images/artworks/singles/9/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/9/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/9/C@1x.jpg",
+          "md": "/images/artworks/singles/9/C@2x.jpg",
+          "lg": "/images/artworks/singles/9/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/9/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/9/T@1x.jpg",
+          "md": "/images/artworks/singles/9/T@2x.jpg",
+          "lg": "/images/artworks/singles/9/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -2044,19 +2384,35 @@
     "number": "8",
     "artworks": [
       {
-        "url": "/images/artworks/singles/8/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/8/A@1x.jpg",
+          "md": "/images/artworks/singles/8/A@2x.jpg",
+          "lg": "/images/artworks/singles/8/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/8/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/8/B@1x.jpg",
+          "md": "/images/artworks/singles/8/B@2x.jpg",
+          "lg": "/images/artworks/singles/8/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/8/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/8/C@1x.jpg",
+          "md": "/images/artworks/singles/8/C@2x.jpg",
+          "lg": "/images/artworks/singles/8/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/8/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/8/T@1x.jpg",
+          "md": "/images/artworks/singles/8/T@2x.jpg",
+          "lg": "/images/artworks/singles/8/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -2143,19 +2499,35 @@
     "number": "7",
     "artworks": [
       {
-        "url": "/images/artworks/singles/7/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/7/A@1x.jpg",
+          "md": "/images/artworks/singles/7/A@2x.jpg",
+          "lg": "/images/artworks/singles/7/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/7/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/7/B@1x.jpg",
+          "md": "/images/artworks/singles/7/B@2x.jpg",
+          "lg": "/images/artworks/singles/7/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/7/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/7/C@1x.jpg",
+          "md": "/images/artworks/singles/7/C@2x.jpg",
+          "lg": "/images/artworks/singles/7/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/7/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/7/T@1x.jpg",
+          "md": "/images/artworks/singles/7/T@2x.jpg",
+          "lg": "/images/artworks/singles/7/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -2242,19 +2614,35 @@
     "number": "6",
     "artworks": [
       {
-        "url": "/images/artworks/singles/6/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/6/A@1x.jpg",
+          "md": "/images/artworks/singles/6/A@2x.jpg",
+          "lg": "/images/artworks/singles/6/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/6/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/6/B@1x.jpg",
+          "md": "/images/artworks/singles/6/B@2x.jpg",
+          "lg": "/images/artworks/singles/6/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/6/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/6/C@1x.jpg",
+          "md": "/images/artworks/singles/6/C@2x.jpg",
+          "lg": "/images/artworks/singles/6/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/6/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/6/T@1x.jpg",
+          "md": "/images/artworks/singles/6/T@2x.jpg",
+          "lg": "/images/artworks/singles/6/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -2341,19 +2729,35 @@
     "number": "5",
     "artworks": [
       {
-        "url": "/images/artworks/singles/5/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/5/A@1x.jpg",
+          "md": "/images/artworks/singles/5/A@2x.jpg",
+          "lg": "/images/artworks/singles/5/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/5/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/5/B@1x.jpg",
+          "md": "/images/artworks/singles/5/B@2x.jpg",
+          "lg": "/images/artworks/singles/5/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/5/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/5/C@1x.jpg",
+          "md": "/images/artworks/singles/5/C@2x.jpg",
+          "lg": "/images/artworks/singles/5/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/5/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/5/T@1x.jpg",
+          "md": "/images/artworks/singles/5/T@2x.jpg",
+          "lg": "/images/artworks/singles/5/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -2440,19 +2844,35 @@
     "number": "4",
     "artworks": [
       {
-        "url": "/images/artworks/singles/4/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/4/A@1x.jpg",
+          "md": "/images/artworks/singles/4/A@2x.jpg",
+          "lg": "/images/artworks/singles/4/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/4/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/4/B@1x.jpg",
+          "md": "/images/artworks/singles/4/B@2x.jpg",
+          "lg": "/images/artworks/singles/4/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/4/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/4/C@1x.jpg",
+          "md": "/images/artworks/singles/4/C@2x.jpg",
+          "lg": "/images/artworks/singles/4/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/4/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/4/T@1x.jpg",
+          "md": "/images/artworks/singles/4/T@2x.jpg",
+          "lg": "/images/artworks/singles/4/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -2539,19 +2959,35 @@
     "number": "3",
     "artworks": [
       {
-        "url": "/images/artworks/singles/3/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/3/A@1x.jpg",
+          "md": "/images/artworks/singles/3/A@2x.jpg",
+          "lg": "/images/artworks/singles/3/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/3/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/3/B@1x.jpg",
+          "md": "/images/artworks/singles/3/B@2x.jpg",
+          "lg": "/images/artworks/singles/3/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/3/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/3/C@1x.jpg",
+          "md": "/images/artworks/singles/3/C@2x.jpg",
+          "lg": "/images/artworks/singles/3/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/3/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/3/T@1x.jpg",
+          "md": "/images/artworks/singles/3/T@2x.jpg",
+          "lg": "/images/artworks/singles/3/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -2638,19 +3074,35 @@
     "number": "2",
     "artworks": [
       {
-        "url": "/images/artworks/singles/2/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/2/A@1x.jpg",
+          "md": "/images/artworks/singles/2/A@2x.jpg",
+          "lg": "/images/artworks/singles/2/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/2/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/2/B@1x.jpg",
+          "md": "/images/artworks/singles/2/B@2x.jpg",
+          "lg": "/images/artworks/singles/2/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/2/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/2/C@1x.jpg",
+          "md": "/images/artworks/singles/2/C@2x.jpg",
+          "lg": "/images/artworks/singles/2/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/2/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/2/T@1x.jpg",
+          "md": "/images/artworks/singles/2/T@2x.jpg",
+          "lg": "/images/artworks/singles/2/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -2737,19 +3189,35 @@
     "number": "1",
     "artworks": [
       {
-        "url": "/images/artworks/singles/1/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/1/A@1x.jpg",
+          "md": "/images/artworks/singles/1/A@2x.jpg",
+          "lg": "/images/artworks/singles/1/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/1/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/1/B@1x.jpg",
+          "md": "/images/artworks/singles/1/B@2x.jpg",
+          "lg": "/images/artworks/singles/1/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/1/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/1/C@1x.jpg",
+          "md": "/images/artworks/singles/1/C@2x.jpg",
+          "lg": "/images/artworks/singles/1/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/1/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/1/T@1x.jpg",
+          "md": "/images/artworks/singles/1/T@2x.jpg",
+          "lg": "/images/artworks/singles/1/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -2836,23 +3304,43 @@
     "number": "27",
     "artworks": [
       {
-        "url": "/images/artworks/singles/27/A.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/27/A@1x.jpg",
+          "md": "/images/artworks/singles/27/A@2x.jpg",
+          "lg": "/images/artworks/singles/27/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/singles/27/B.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/27/B@1x.jpg",
+          "md": "/images/artworks/singles/27/B@2x.jpg",
+          "lg": "/images/artworks/singles/27/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/singles/27/C.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/27/C@1x.jpg",
+          "md": "/images/artworks/singles/27/C@2x.jpg",
+          "lg": "/images/artworks/singles/27/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/singles/27/D.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/27/D@1x.jpg",
+          "md": "/images/artworks/singles/27/D@2x.jpg",
+          "lg": "/images/artworks/singles/27/D@3x.jpg"
+        },
         "type": "D"
       },
       {
-        "url": "/images/artworks/singles/27/T.jpg",
+        "url": {
+          "sm": "/images/artworks/singles/27/T@1x.jpg",
+          "md": "/images/artworks/singles/27/T@2x.jpg",
+          "lg": "/images/artworks/singles/27/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -2909,19 +3397,35 @@
     "number": "4",
     "artworks": [
       {
-        "url": "/images/artworks/albums/4/L.jpg",
+        "url": {
+          "sm": "/images/artworks/albums/4/L@1x.jpg",
+          "md": "/images/artworks/albums/4/L@2x.jpg",
+          "lg": "/images/artworks/albums/4/L@3x.jpg"
+        },
         "type": "L"
       },
       {
-        "url": "/images/artworks/albums/4/A.jpg",
+        "url": {
+          "sm": "/images/artworks/albums/4/A@1x.jpg",
+          "md": "/images/artworks/albums/4/A@2x.jpg",
+          "lg": "/images/artworks/albums/4/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/albums/4/B.jpg",
+        "url": {
+          "sm": "/images/artworks/albums/4/B@1x.jpg",
+          "md": "/images/artworks/albums/4/B@2x.jpg",
+          "lg": "/images/artworks/albums/4/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/albums/4/T.jpg",
+        "url": {
+          "sm": "/images/artworks/albums/4/T@1x.jpg",
+          "md": "/images/artworks/albums/4/T@2x.jpg",
+          "lg": "/images/artworks/albums/4/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -3186,15 +3690,27 @@
     "number": "U",
     "artworks": [
       {
-        "url": "/images/artworks/albums/U/L1.jpg",
+        "url": {
+          "sm": "/images/artworks/albums/U/L1@1x.jpg",
+          "md": "/images/artworks/albums/U/L1@2x.jpg",
+          "lg": "/images/artworks/albums/U/L1@3x.jpg"
+        },
         "type": "L1"
       },
       {
-        "url": "/images/artworks/albums/U/L2.jpg",
+        "url": {
+          "sm": "/images/artworks/albums/U/L2@1x.jpg",
+          "md": "/images/artworks/albums/U/L2@2x.jpg",
+          "lg": "/images/artworks/albums/U/L2@3x.jpg"
+        },
         "type": "L2"
       },
       {
-        "url": "/images/artworks/albums/U/T.jpg",
+        "url": {
+          "sm": "/images/artworks/albums/U/T@1x.jpg",
+          "md": "/images/artworks/albums/U/T@2x.jpg",
+          "lg": "/images/artworks/albums/U/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -3418,19 +3934,35 @@
     "number": "3",
     "artworks": [
       {
-        "url": "/images/artworks/albums/3/A.jpg",
+        "url": {
+          "sm": "/images/artworks/albums/3/A@1x.jpg",
+          "md": "/images/artworks/albums/3/A@2x.jpg",
+          "lg": "/images/artworks/albums/3/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/albums/3/B.jpg",
+        "url": {
+          "sm": "/images/artworks/albums/3/B@1x.jpg",
+          "md": "/images/artworks/albums/3/B@2x.jpg",
+          "lg": "/images/artworks/albums/3/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/albums/3/L.jpg",
+        "url": {
+          "sm": "/images/artworks/albums/3/L@1x.jpg",
+          "md": "/images/artworks/albums/3/L@2x.jpg",
+          "lg": "/images/artworks/albums/3/L@3x.jpg"
+        },
         "type": "L"
       },
       {
-        "url": "/images/artworks/albums/3/T.jpg",
+        "url": {
+          "sm": "/images/artworks/albums/3/T@1x.jpg",
+          "md": "/images/artworks/albums/3/T@2x.jpg",
+          "lg": "/images/artworks/albums/3/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -3734,23 +4266,43 @@
     "number": "2",
     "artworks": [
       {
-        "url": "/images/artworks/albums/2/A.jpg",
+        "url": {
+          "sm": "/images/artworks/albums/2/A@1x.jpg",
+          "md": "/images/artworks/albums/2/A@2x.jpg",
+          "lg": "/images/artworks/albums/2/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/albums/2/B.jpg",
+        "url": {
+          "sm": "/images/artworks/albums/2/B@1x.jpg",
+          "md": "/images/artworks/albums/2/B@2x.jpg",
+          "lg": "/images/artworks/albums/2/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/albums/2/C.jpg",
+        "url": {
+          "sm": "/images/artworks/albums/2/C@1x.jpg",
+          "md": "/images/artworks/albums/2/C@2x.jpg",
+          "lg": "/images/artworks/albums/2/C@3x.jpg"
+        },
         "type": "C"
       },
       {
-        "url": "/images/artworks/albums/2/D.jpg",
+        "url": {
+          "sm": "/images/artworks/albums/2/D@1x.jpg",
+          "md": "/images/artworks/albums/2/D@2x.jpg",
+          "lg": "/images/artworks/albums/2/D@3x.jpg"
+        },
         "type": "D"
       },
       {
-        "url": "/images/artworks/albums/2/T.jpg",
+        "url": {
+          "sm": "/images/artworks/albums/2/T@1x.jpg",
+          "md": "/images/artworks/albums/2/T@2x.jpg",
+          "lg": "/images/artworks/albums/2/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -4093,15 +4645,27 @@
     "number": "1",
     "artworks": [
       {
-        "url": "/images/artworks/albums/1/A.jpg",
+        "url": {
+          "sm": "/images/artworks/albums/1/A@1x.jpg",
+          "md": "/images/artworks/albums/1/A@2x.jpg",
+          "lg": "/images/artworks/albums/1/A@3x.jpg"
+        },
         "type": "A"
       },
       {
-        "url": "/images/artworks/albums/1/B.jpg",
+        "url": {
+          "sm": "/images/artworks/albums/1/B@1x.jpg",
+          "md": "/images/artworks/albums/1/B@2x.jpg",
+          "lg": "/images/artworks/albums/1/B@3x.jpg"
+        },
         "type": "B"
       },
       {
-        "url": "/images/artworks/albums/1/C.jpg",
+        "url": {
+          "sm": "/images/artworks/albums/1/C@1x.jpg",
+          "md": "/images/artworks/albums/1/C@2x.jpg",
+          "lg": "/images/artworks/albums/1/C@3x.jpg"
+        },
         "type": "C"
       }
     ],
@@ -4393,7 +4957,11 @@
     "number": "1",
     "artworks": [
       {
-        "url": "/images/artworks/digital/1/T.jpg",
+        "url": {
+          "sm": "/images/artworks/digital/1/T@1x.jpg",
+          "md": "/images/artworks/digital/1/T@2x.jpg",
+          "lg": "/images/artworks/digital/1/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -4417,7 +4985,11 @@
     "number": "2",
     "artworks": [
       {
-        "url": "/images/artworks/digital/2/T.jpg",
+        "url": {
+          "sm": "/images/artworks/digital/2/T@1x.jpg",
+          "md": "/images/artworks/digital/2/T@2x.jpg",
+          "lg": "/images/artworks/digital/2/T@3x.jpg"
+        },
         "type": "T"
       }
     ],
@@ -4458,7 +5030,11 @@
     "number": "3",
     "artworks": [
       {
-        "url": "/images/artworks/digital/3/T.jpg",
+        "url": {
+          "sm": "/images/artworks/digital/3/T@1x.jpg",
+          "md": "/images/artworks/digital/3/T@2x.jpg",
+          "lg": "/images/artworks/digital/3/T@3x.jpg"
+        },
         "type": "T"
       }
     ],

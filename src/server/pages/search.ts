@@ -18,7 +18,7 @@ export type SearchPageData = {
     title: DiscographyResult['title'];
     number: DiscographyResult['number'];
     albumType: DiscographyResult['type'];
-    artwork: string;
+    artwork: ImageUrl;
   })[];
   songs: (SearchDoc<'songs'> & {
     key: SongResult['key'];
@@ -26,7 +26,7 @@ export type SearchPageData = {
     songType: SongResult['type'];
     single: SongResult['single'];
     albums: SongResult['albums'];
-    artwork: string;
+    artwork: ImageUrl;
   })[];
   members: (SearchDoc<'members'> & {
     name: MemberResult['name'];

@@ -1,7 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
 import * as React from 'react';
-import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { arrayToObject } from 'utils/array';
@@ -18,6 +17,7 @@ import { PageHelmet } from 'client/components/layout/PageHelmet';
 import { commonStyles } from 'client/styles/tokens';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { getSongUrl, getMemberUrl } from 'client/utils/url';
+import { AspectRatioImage } from 'client/components/atoms/image/AspectRatioImage';
 
 type PathParams = { id: string };
 
@@ -202,13 +202,12 @@ const AlbumPage: React.FC<PageProps> = props => {
                     height: 160px;
                   `}
                 >
-                  <Image
-                    src={artwork.url}
+                  <AspectRatioImage
+                    src={artwork.url.lg}
+                    srcSet={`${artwork.url.sm}, ${artwork.url.md} 2x, ${artwork.url.lg} 3x`}
                     alt={`Type ${artwork.type}`}
-                    width={160}
-                    height={160}
-                    objectFit="cover"
-                    objectPosition="top"
+                    aspectRatio={1}
+                    loading="lazy"
                   />
                 </li>
               ))}

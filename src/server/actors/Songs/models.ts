@@ -3,6 +3,7 @@ import { SongType } from 'server/actors/Songs/constants/songType';
 import { SongTitle } from 'server/actors/Songs/constants/songTitle';
 import { UnitName } from 'server/actors/Units/constants/unitName';
 import { DiscographyType } from 'server/actors/Discography/types';
+import { ImageUrl } from 'server/types/commons';
 
 export type SongRaw = {
   title: SongTitle;
@@ -41,7 +42,7 @@ export type SongResult = SongRaw & {
   single: InCd;
   albums: InCd[];
   otherCds: InCd[];
-  artwork: string;
+  artwork: ImageUrl;
   performersTag: {
     name: string;
     album:

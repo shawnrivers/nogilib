@@ -3,7 +3,11 @@
     "key": "gurugurucurtain",
     "title": "ぐるぐるカーテン",
     "type": "title",
-    "artwork": "/images/artworks/singles/1/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/1/A@1x.jpg",
+      "md": "/images/artworks/singles/1/A@2x.jpg",
+      "lg": "/images/artworks/singles/1/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -337,7 +341,11 @@
     "key": "hidarimunenoyuuki",
     "title": "左胸の勇気",
     "type": "under",
-    "artwork": "/images/artworks/singles/1/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/1/A@1x.jpg",
+      "md": "/images/artworks/singles/1/A@2x.jpg",
+      "lg": "/images/artworks/singles/1/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -685,7 +693,11 @@
     "key": "nogizakanouta",
     "title": "乃木坂の詩",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/1/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/1/A@1x.jpg",
+      "md": "/images/artworks/singles/1/A@2x.jpg",
+      "lg": "/images/artworks/singles/1/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -1321,7 +1333,11 @@
     "key": "aitakattakamoshirenai",
     "title": "会いたかったかもしれない",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/1/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/1/B@1x.jpg",
+      "md": "/images/artworks/singles/1/B@2x.jpg",
+      "lg": "/images/artworks/singles/1/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -1719,7 +1735,11 @@
     "key": "ushinaitakunaikara",
     "title": "失いたくないから",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/1/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/1/C@1x.jpg",
+      "md": "/images/artworks/singles/1/C@2x.jpg",
+      "lg": "/images/artworks/singles/1/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -2121,7 +2141,11 @@
     "key": "shiroikumoninotte",
     "title": "白い雲にのって",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/1/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/1/T@1x.jpg",
+      "md": "/images/artworks/singles/1/T@2x.jpg",
+      "lg": "/images/artworks/singles/1/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -2516,7 +2540,11 @@
     "key": "oideshampo",
     "title": "おいでシャンプー",
     "type": "title",
-    "artwork": "/images/artworks/singles/2/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/2/A@1x.jpg",
+      "md": "/images/artworks/singles/2/A@2x.jpg",
+      "lg": "/images/artworks/singles/2/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -2850,7 +2878,11 @@
     "key": "ookaminikuchibuewo",
     "title": "狼に口笛を",
     "type": "under",
-    "artwork": "/images/artworks/singles/2/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/2/C@1x.jpg",
+      "md": "/images/artworks/singles/2/C@2x.jpg",
+      "lg": "/images/artworks/singles/2/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -3204,7 +3236,11 @@
     "key": "kokoronokusuri",
     "title": "心の薬",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/2/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/2/A@1x.jpg",
+      "md": "/images/artworks/singles/2/A@2x.jpg",
+      "lg": "/images/artworks/singles/2/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -3599,7 +3635,11 @@
     "key": "guuzenwoiiwakenishite",
     "title": "偶然を言い訳にして",
     "type": "unit",
-    "artwork": "/images/artworks/singles/2/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/2/A@1x.jpg",
+      "md": "/images/artworks/singles/2/A@2x.jpg",
+      "lg": "/images/artworks/singles/2/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -3708,7 +3748,11 @@
     "key": "mizutamamoyou",
     "title": "水玉模様",
     "type": "solo",
-    "artwork": "/images/artworks/singles/2/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/2/B@1x.jpg",
+      "md": "/images/artworks/singles/2/B@2x.jpg",
+      "lg": "/images/artworks/singles/2/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -3763,7 +3807,11 @@
     "key": "house",
     "title": "ハウス!",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/2/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/2/T@1x.jpg",
+      "md": "/images/artworks/singles/2/T@2x.jpg",
+      "lg": "/images/artworks/singles/2/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -4163,7 +4211,11 @@
     "key": "hashirebicycle",
     "title": "走れ!Bicycle",
     "type": "title",
-    "artwork": "/images/artworks/singles/3/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/3/A@1x.jpg",
+      "md": "/images/artworks/singles/3/A@2x.jpg",
+      "lg": "/images/artworks/singles/3/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -4500,7 +4552,11 @@
     "key": "namidagamadakanashimi",
     "title": "涙がまだ悲しみだった頃",
     "type": "under",
-    "artwork": "/images/artworks/singles/3/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/3/A@1x.jpg",
+      "md": "/images/artworks/singles/3/A@2x.jpg",
+      "lg": "/images/artworks/singles/3/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -4858,7 +4914,11 @@
     "key": "sekkachinakatatsumuri",
     "title": "せっかちなかたつむり",
     "type": "unit",
-    "artwork": "/images/artworks/singles/3/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/3/A@1x.jpg",
+      "md": "/images/artworks/singles/3/A@2x.jpg",
+      "lg": "/images/artworks/singles/3/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -5026,7 +5086,11 @@
     "key": "hitohanazehashirunoka",
     "title": "人はなぜ走るのか?",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/3/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/3/B@1x.jpg",
+      "md": "/images/artworks/singles/3/B@2x.jpg",
+      "lg": "/images/artworks/singles/3/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -5442,7 +5506,11 @@
     "key": "otogadenaiguitar",
     "title": "音が出ないギター",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/3/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/3/C@1x.jpg",
+      "md": "/images/artworks/singles/3/C@2x.jpg",
+      "lg": "/images/artworks/singles/3/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -5858,7 +5926,11 @@
     "key": "kairyuunoshimayo",
     "title": "海流の島よ",
     "type": "unit",
-    "artwork": "/images/artworks/singles/3/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/3/T@1x.jpg",
+      "md": "/images/artworks/singles/3/T@2x.jpg",
+      "lg": "/images/artworks/singles/3/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -6019,7 +6091,11 @@
     "key": "seifukunomannequin",
     "title": "制服のマネキン",
     "type": "title",
-    "artwork": "/images/artworks/singles/4/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/4/A@1x.jpg",
+      "md": "/images/artworks/singles/4/A@2x.jpg",
+      "lg": "/images/artworks/singles/4/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -6353,7 +6429,11 @@
     "key": "harunomelody",
     "title": "春のメロディー",
     "type": "under",
-    "artwork": "/images/artworks/singles/4/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/4/C@1x.jpg",
+      "md": "/images/artworks/singles/4/C@2x.jpg",
+      "lg": "/images/artworks/singles/4/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -6689,7 +6769,11 @@
     "key": "yubibouenkyou",
     "title": "指望遠鏡",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/4/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/4/A@1x.jpg",
+      "md": "/images/artworks/singles/4/A@2x.jpg",
+      "lg": "/images/artworks/singles/4/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -7018,7 +7102,11 @@
     "key": "yasashisanaramaniatteiru",
     "title": "やさしさなら間に合ってる",
     "type": "unit",
-    "artwork": "/images/artworks/singles/4/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/4/A@1x.jpg",
+      "md": "/images/artworks/singles/4/A@2x.jpg",
+      "lg": "/images/artworks/singles/4/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -7197,7 +7285,11 @@
     "key": "kokojanaidokoka",
     "title": "ここじゃないどこか",
     "type": "unit",
-    "artwork": "/images/artworks/singles/4/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/4/B@1x.jpg",
+      "md": "/images/artworks/singles/4/B@2x.jpg",
+      "lg": "/images/artworks/singles/4/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -7288,7 +7380,11 @@
     "key": "shibuyablues",
     "title": "渋谷ブルース",
     "type": "unit",
-    "artwork": "/images/artworks/singles/4/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/4/T@1x.jpg",
+      "md": "/images/artworks/singles/4/T@2x.jpg",
+      "lg": "/images/artworks/singles/4/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -7361,7 +7457,11 @@
     "key": "kiminonahakibou",
     "title": "君の名は希望",
     "type": "title",
-    "artwork": "/images/artworks/singles/5/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/5/A@1x.jpg",
+      "md": "/images/artworks/singles/5/A@2x.jpg",
+      "lg": "/images/artworks/singles/5/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -7696,7 +7796,11 @@
     "key": "13nichinokinyoubi",
     "title": "13日の金曜日",
     "type": "under",
-    "artwork": "/images/artworks/singles/5/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/5/B@1x.jpg",
+      "md": "/images/artworks/singles/5/B@2x.jpg",
+      "lg": "/images/artworks/singles/5/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -8052,7 +8156,11 @@
     "key": "shakism",
     "title": "シャキイズム",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/5/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/5/A@1x.jpg",
+      "md": "/images/artworks/singles/5/A@2x.jpg",
+      "lg": "/images/artworks/singles/5/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -8382,7 +8490,11 @@
     "key": "romanticikayaki",
     "title": "ロマンティックいか焼き",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/5/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/5/A@1x.jpg",
+      "md": "/images/artworks/singles/5/A@2x.jpg",
+      "lg": "/images/artworks/singles/5/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -8710,7 +8822,11 @@
     "key": "dekopin",
     "title": "でこぴん",
     "type": "unit",
-    "artwork": "/images/artworks/singles/5/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/5/C@1x.jpg",
+      "md": "/images/artworks/singles/5/C@2x.jpg",
+      "lg": "/images/artworks/singles/5/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -8837,7 +8953,11 @@
     "key": "psychokinesesnokanousei",
     "title": "サイコキネシスの可能性",
     "type": "unit",
-    "artwork": "/images/artworks/singles/5/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/5/T@1x.jpg",
+      "md": "/images/artworks/singles/5/T@2x.jpg",
+      "lg": "/images/artworks/singles/5/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -9018,7 +9138,11 @@
     "key": "girlsrule",
     "title": "ガールズルール",
     "type": "title",
-    "artwork": "/images/artworks/singles/6/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/6/A@1x.jpg",
+      "md": "/images/artworks/singles/6/A@2x.jpg",
+      "lg": "/images/artworks/singles/6/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -9352,7 +9476,11 @@
     "key": "senpuuki",
     "title": "扇風機",
     "type": "under",
-    "artwork": "/images/artworks/singles/6/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/6/B@1x.jpg",
+      "md": "/images/artworks/singles/6/B@2x.jpg",
+      "lg": "/images/artworks/singles/6/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -9688,7 +9816,11 @@
     "key": "sekaideichibankodokuralover",
     "title": "世界で一番 孤独なLover",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/6/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/6/A@1x.jpg",
+      "md": "/images/artworks/singles/6/A@2x.jpg",
+      "lg": "/images/artworks/singles/6/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -10022,7 +10154,11 @@
     "key": "koumoriyo",
     "title": "コウモリよ",
     "type": "unit",
-    "artwork": "/images/artworks/singles/6/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/6/A@1x.jpg",
+      "md": "/images/artworks/singles/6/A@2x.jpg",
+      "lg": "/images/artworks/singles/6/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -10129,7 +10265,11 @@
     "key": "hokanohoshikara",
     "title": "他の星から",
     "type": "unit",
-    "artwork": "/images/artworks/singles/6/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/6/C@1x.jpg",
+      "md": "/images/artworks/singles/6/C@2x.jpg",
+      "lg": "/images/artworks/singles/6/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -10298,7 +10438,11 @@
     "key": "ningentoiugakki",
     "title": "人間という楽器",
     "type": "first generation",
-    "artwork": "/images/artworks/singles/6/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/6/T@1x.jpg",
+      "md": "/images/artworks/singles/6/T@2x.jpg",
+      "lg": "/images/artworks/singles/6/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -10909,7 +11053,11 @@
     "key": "valletta",
     "title": "バレッタ",
     "type": "title",
-    "artwork": "/images/artworks/singles/7/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/7/A@1x.jpg",
+      "md": "/images/artworks/singles/7/A@2x.jpg",
+      "lg": "/images/artworks/singles/7/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -11261,7 +11409,11 @@
     "key": "hatsukoinohitowo",
     "title": "初恋の人を今でも",
     "type": "under",
-    "artwork": "/images/artworks/singles/7/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/7/C@1x.jpg",
+      "md": "/images/artworks/singles/7/C@2x.jpg",
+      "lg": "/images/artworks/singles/7/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -11541,7 +11693,11 @@
     "key": "tsukinoookisa",
     "title": "月の大きさ",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/7/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/7/A@1x.jpg",
+      "md": "/images/artworks/singles/7/A@2x.jpg",
+      "lg": "/images/artworks/singles/7/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -11888,7 +12044,11 @@
     "key": "watanotamenidarekanotameni",
     "title": "私のために 誰かのために",
     "type": "unit",
-    "artwork": "/images/artworks/singles/7/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/7/A@1x.jpg",
+      "md": "/images/artworks/singles/7/A@2x.jpg",
+      "lg": "/images/artworks/singles/7/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -12019,7 +12179,11 @@
     "key": "sonnabakana",
     "title": "そんなバカな…",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/7/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/7/B@1x.jpg",
+      "md": "/images/artworks/singles/7/B@2x.jpg",
+      "lg": "/images/artworks/singles/7/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -12457,7 +12621,11 @@
     "key": "yasashisatoha",
     "title": "やさしさとは",
     "type": "unit",
-    "artwork": "/images/artworks/singles/7/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/7/T@1x.jpg",
+      "md": "/images/artworks/singles/7/T@2x.jpg",
+      "lg": "/images/artworks/singles/7/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -12618,7 +12786,11 @@
     "key": "kiduitarakataomoi",
     "title": "気づいたら片想い",
     "type": "title",
-    "artwork": "/images/artworks/singles/8/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/8/A@1x.jpg",
+      "md": "/images/artworks/singles/8/A@2x.jpg",
+      "lg": "/images/artworks/singles/8/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -12952,7 +13124,11 @@
     "key": "umaretamamade",
     "title": "生まれたままで",
     "type": "under",
-    "artwork": "/images/artworks/singles/8/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/8/C@1x.jpg",
+      "md": "/images/artworks/singles/8/C@2x.jpg",
+      "lg": "/images/artworks/singles/8/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -13304,7 +13480,11 @@
     "key": "romancenostart",
     "title": "ロマンスのスタート",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/8/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/8/A@1x.jpg",
+      "md": "/images/artworks/singles/8/A@2x.jpg",
+      "lg": "/images/artworks/singles/8/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -13639,7 +13819,11 @@
     "key": "toikimethod",
     "title": "吐息のメソッド",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/8/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/8/A@1x.jpg",
+      "md": "/images/artworks/singles/8/A@2x.jpg",
+      "lg": "/images/artworks/singles/8/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -14034,7 +14218,11 @@
     "key": "kodokukyoudai",
     "title": "孤独兄弟",
     "type": "unit",
-    "artwork": "/images/artworks/singles/8/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/8/B@1x.jpg",
+      "md": "/images/artworks/singles/8/B@2x.jpg",
+      "lg": "/images/artworks/singles/8/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -14107,7 +14295,11 @@
     "key": "dankeschan",
     "title": "ダンケシェーン",
     "type": "unit",
-    "artwork": "/images/artworks/singles/8/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/8/T@1x.jpg",
+      "md": "/images/artworks/singles/8/T@2x.jpg",
+      "lg": "/images/artworks/singles/8/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -14293,7 +14485,11 @@
     "key": "natsunofreeeasy",
     "title": "夏のFree&Easy",
     "type": "title",
-    "artwork": "/images/artworks/singles/9/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/9/A@1x.jpg",
+      "md": "/images/artworks/singles/9/A@2x.jpg",
+      "lg": "/images/artworks/singles/9/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -14645,7 +14841,11 @@
     "key": "kokoniiruriyuu",
     "title": "ここにいる理由",
     "type": "under",
-    "artwork": "/images/artworks/singles/9/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/9/C@1x.jpg",
+      "md": "/images/artworks/singles/9/C@2x.jpg",
+      "lg": "/images/artworks/singles/9/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -14979,7 +15179,11 @@
     "key": "nanimodekizunisobaniiru",
     "title": "何もできずにそばにいる",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/9/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/9/A@1x.jpg",
+      "md": "/images/artworks/singles/9/A@2x.jpg",
+      "lg": "/images/artworks/singles/9/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -15324,7 +15528,11 @@
     "key": "sonosakinodeguchi",
     "title": "その先の出口!",
     "type": "unit",
-    "artwork": "/images/artworks/singles/9/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/9/A@1x.jpg",
+      "md": "/images/artworks/singles/9/A@2x.jpg",
+      "lg": "/images/artworks/singles/9/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -15523,7 +15731,11 @@
     "key": "mukuchinalion",
     "title": "無口なライオン",
     "type": "unit",
-    "artwork": "/images/artworks/singles/9/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/9/B@1x.jpg",
+      "md": "/images/artworks/singles/9/B@2x.jpg",
+      "lg": "/images/artworks/singles/9/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -15711,7 +15923,11 @@
     "key": "bokugaikanakyadaregaikunda",
     "title": "僕が行かなきゃ誰が行くんだ?",
     "type": "unit",
-    "artwork": "/images/artworks/singles/9/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/9/T@1x.jpg",
+      "md": "/images/artworks/singles/9/T@2x.jpg",
+      "lg": "/images/artworks/singles/9/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -15872,7 +16088,11 @@
     "key": "nandomenoaozoraka",
     "title": "何度目の青空か?",
     "type": "title",
-    "artwork": "/images/artworks/singles/10/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/10/A@1x.jpg",
+      "md": "/images/artworks/singles/10/A@2x.jpg",
+      "lg": "/images/artworks/singles/10/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -16206,7 +16426,11 @@
     "key": "anohibokuha",
     "title": "あの日 僕は咄嗟に嘘をついた",
     "type": "under",
-    "artwork": "/images/artworks/singles/10/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/10/C@1x.jpg",
+      "md": "/images/artworks/singles/10/C@2x.jpg",
+      "lg": "/images/artworks/singles/10/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -16562,7 +16786,11 @@
     "key": "toomawarinoaijou",
     "title": "遠回りの愛情",
     "type": "unit",
-    "artwork": "/images/artworks/singles/10/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/10/A@1x.jpg",
+      "md": "/images/artworks/singles/10/A@2x.jpg",
+      "lg": "/images/artworks/singles/10/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -16741,7 +16969,11 @@
     "key": "korogattakanewonarase",
     "title": "転がった鐘を鳴らせ!",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/10/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/10/A@1x.jpg",
+      "md": "/images/artworks/singles/10/A@2x.jpg",
+      "lg": "/images/artworks/singles/10/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -17066,7 +17298,11 @@
     "key": "watashiokiru",
     "title": "私、起きる。",
     "type": "unit",
-    "artwork": "/images/artworks/singles/10/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/10/B@1x.jpg",
+      "md": "/images/artworks/singles/10/B@2x.jpg",
+      "lg": "/images/artworks/singles/10/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -17285,7 +17521,11 @@
     "key": "tenderdays",
     "title": "Tender days",
     "type": "unit",
-    "artwork": "/images/artworks/singles/10/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/10/T@1x.jpg",
+      "md": "/images/artworks/singles/10/T@2x.jpg",
+      "lg": "/images/artworks/singles/10/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -17483,7 +17723,11 @@
     "key": "inochihautsukushii",
     "title": "命は美しい",
     "type": "title",
-    "artwork": "/images/artworks/singles/11/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/11/A@1x.jpg",
+      "md": "/images/artworks/singles/11/A@2x.jpg",
+      "lg": "/images/artworks/singles/11/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -17853,7 +18097,11 @@
     "key": "kimihabokuto",
     "title": "君は僕と会わない方がよかったのかな",
     "type": "under",
-    "artwork": "/images/artworks/singles/11/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/11/C@1x.jpg",
+      "md": "/images/artworks/singles/11/C@2x.jpg",
+      "lg": "/images/artworks/singles/11/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -18157,7 +18405,11 @@
     "key": "arakajimekatarareruromance",
     "title": "あらかじめ語られるロマンス",
     "type": "unit",
-    "artwork": "/images/artworks/singles/11/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/11/A@1x.jpg",
+      "md": "/images/artworks/singles/11/A@2x.jpg",
+      "lg": "/images/artworks/singles/11/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -18309,7 +18561,11 @@
     "key": "tachinaorichuu",
     "title": "立ち直り中",
     "type": "unit",
-    "artwork": "/images/artworks/singles/11/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/11/A@1x.jpg",
+      "md": "/images/artworks/singles/11/A@2x.jpg",
+      "lg": "/images/artworks/singles/11/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -18477,7 +18733,11 @@
     "key": "gomennezutto",
     "title": "ごめんね ずっと…",
     "type": "solo",
-    "artwork": "/images/artworks/singles/11/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/11/B@1x.jpg",
+      "md": "/images/artworks/singles/11/B@2x.jpg",
+      "lg": "/images/artworks/singles/11/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -18532,7 +18792,11 @@
     "key": "border",
     "title": "ボーダー",
     "type": "second generation",
-    "artwork": "/images/artworks/singles/11/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/11/T@1x.jpg",
+      "md": "/images/artworks/singles/11/T@2x.jpg",
+      "lg": "/images/artworks/singles/11/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -18675,7 +18939,11 @@
     "key": "taiyouknock",
     "title": "太陽ノック",
     "type": "title",
-    "artwork": "/images/artworks/singles/12/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/12/A@1x.jpg",
+      "md": "/images/artworks/singles/12/A@2x.jpg",
+      "lg": "/images/artworks/singles/12/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -19045,7 +19313,11 @@
     "key": "wakaregiwa",
     "title": "別れ際、もっと好きになる",
     "type": "under",
-    "artwork": "/images/artworks/singles/12/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/12/C@1x.jpg",
+      "md": "/images/artworks/singles/12/C@2x.jpg",
+      "lg": "/images/artworks/singles/12/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -19421,7 +19693,11 @@
     "key": "mousukoshinoyume",
     "title": "もう少しの夢",
     "type": "solo",
-    "artwork": "/images/artworks/singles/12/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/12/A@1x.jpg",
+      "md": "/images/artworks/singles/12/A@2x.jpg",
+      "lg": "/images/artworks/singles/12/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -19474,7 +19750,11 @@
     "key": "sakanatachinolovesong",
     "title": "魚たちのLOVE SONG",
     "type": "unit",
-    "artwork": "/images/artworks/singles/12/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/12/A@1x.jpg",
+      "md": "/images/artworks/singles/12/A@2x.jpg",
+      "lg": "/images/artworks/singles/12/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -19583,7 +19863,11 @@
     "key": "muhyoujyou",
     "title": "無表情",
     "type": "unit",
-    "artwork": "/images/artworks/singles/12/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/12/B@1x.jpg",
+      "md": "/images/artworks/singles/12/B@2x.jpg",
+      "lg": "/images/artworks/singles/12/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -19663,7 +19947,11 @@
     "key": "hanenokioku",
     "title": "羽根の記憶",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/12/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/12/T@1x.jpg",
+      "md": "/images/artworks/singles/12/T@2x.jpg",
+      "lg": "/images/artworks/singles/12/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -20030,7 +20318,11 @@
     "key": "seifukuwonuidesayonarawo",
     "title": "制服を脱いでサヨナラを…",
     "type": "unit",
-    "artwork": "/images/artworks/singles/12/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/12/T@1x.jpg",
+      "md": "/images/artworks/singles/12/T@2x.jpg",
+      "lg": "/images/artworks/singles/12/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -20106,7 +20398,11 @@
     "key": "imahana",
     "title": "今、話したい誰かがいる",
     "type": "title",
-    "artwork": "/images/artworks/singles/13/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/13/A@1x.jpg",
+      "md": "/images/artworks/singles/13/A@2x.jpg",
+      "lg": "/images/artworks/singles/13/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -20442,7 +20738,11 @@
     "key": "shittonokenri",
     "title": "嫉妬の権利",
     "type": "under",
-    "artwork": "/images/artworks/singles/13/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/13/A@1x.jpg",
+      "md": "/images/artworks/singles/13/A@2x.jpg",
+      "lg": "/images/artworks/singles/13/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -20870,7 +21170,11 @@
     "key": "popipappappa",
     "title": "ポピパッパパー",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/13/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/13/A@1x.jpg",
+      "md": "/images/artworks/singles/13/A@2x.jpg",
+      "lg": "/images/artworks/singles/13/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -21206,7 +21510,11 @@
     "key": "otonahenochikamichi",
     "title": "大人への近道",
     "type": "unit",
-    "artwork": "/images/artworks/singles/13/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/13/B@1x.jpg",
+      "md": "/images/artworks/singles/13/B@2x.jpg",
+      "lg": "/images/artworks/singles/13/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -21338,7 +21646,11 @@
     "key": "kanashiminowasurekata",
     "title": "悲しみの忘れ方",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/13/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/13/C@1x.jpg",
+      "md": "/images/artworks/singles/13/C@2x.jpg",
+      "lg": "/images/artworks/singles/13/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -21704,7 +22016,11 @@
     "key": "sukima",
     "title": "隙間",
     "type": "unit",
-    "artwork": "/images/artworks/singles/13/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/13/T@1x.jpg",
+      "md": "/images/artworks/singles/13/T@2x.jpg",
+      "lg": "/images/artworks/singles/13/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -21872,7 +22188,11 @@
     "key": "harujion",
     "title": "ハルジオンが咲く頃",
     "type": "title",
-    "artwork": "/images/artworks/singles/14/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/14/A@1x.jpg",
+      "md": "/images/artworks/singles/14/A@2x.jpg",
+      "lg": "/images/artworks/singles/14/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -22221,7 +22541,11 @@
     "key": "futoogo",
     "title": "不等号",
     "type": "under",
-    "artwork": "/images/artworks/singles/14/D.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/14/D@1x.jpg",
+      "md": "/images/artworks/singles/14/D@2x.jpg",
+      "lg": "/images/artworks/singles/14/D@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -22613,7 +22937,11 @@
     "key": "harukanarubhutan",
     "title": "遥かなるブータン",
     "type": "unit",
-    "artwork": "/images/artworks/singles/14/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/14/A@1x.jpg",
+      "md": "/images/artworks/singles/14/A@2x.jpg",
+      "lg": "/images/artworks/singles/14/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -22761,7 +23089,11 @@
     "key": "tsuyogarutsubomi",
     "title": "強がる蕾",
     "type": "solo",
-    "artwork": "/images/artworks/singles/14/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/14/A@1x.jpg",
+      "md": "/images/artworks/singles/14/A@2x.jpg",
+      "lg": "/images/artworks/singles/14/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -22818,7 +23150,11 @@
     "key": "kyuushamen",
     "title": "急斜面",
     "type": "unit",
-    "artwork": "/images/artworks/singles/14/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/14/B@1x.jpg",
+      "md": "/images/artworks/singles/14/B@2x.jpg",
+      "lg": "/images/artworks/singles/14/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -22915,7 +23251,11 @@
     "key": "tsuribori",
     "title": "釣り堀",
     "type": "solo",
-    "artwork": "/images/artworks/singles/14/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/14/C@1x.jpg",
+      "md": "/images/artworks/singles/14/C@2x.jpg",
+      "lg": "/images/artworks/singles/14/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -22970,7 +23310,11 @@
     "key": "yuuutsutofuusengamu",
     "title": "憂鬱と風船ガム",
     "type": "unit",
-    "artwork": "/images/artworks/singles/14/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/14/T@1x.jpg",
+      "md": "/images/artworks/singles/14/T@2x.jpg",
+      "lg": "/images/artworks/singles/14/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -23119,7 +23463,11 @@
     "key": "hadasummer",
     "title": "裸足でSummer",
     "type": "title",
-    "artwork": "/images/artworks/singles/15/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/15/A@1x.jpg",
+      "md": "/images/artworks/singles/15/A@2x.jpg",
+      "lg": "/images/artworks/singles/15/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -23453,7 +23801,11 @@
     "key": "secretgravity",
     "title": "シークレットグラフィティー",
     "type": "under",
-    "artwork": "/images/artworks/singles/15/D.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/15/D@1x.jpg",
+      "md": "/images/artworks/singles/15/D@2x.jpg",
+      "lg": "/images/artworks/singles/15/D@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -23845,7 +24197,11 @@
     "key": "bokudakenohikari",
     "title": "僕だけの光",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/15/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/15/A@1x.jpg",
+      "md": "/images/artworks/singles/15/A@2x.jpg",
+      "lg": "/images/artworks/singles/15/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -24173,7 +24529,11 @@
     "key": "offshoregirl",
     "title": "オフショアガール",
     "type": "solo",
-    "artwork": "/images/artworks/singles/15/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/15/A@1x.jpg",
+      "md": "/images/artworks/singles/15/A@2x.jpg",
+      "lg": "/images/artworks/singles/15/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -24235,7 +24595,11 @@
     "key": "inochinoshinjitsu",
     "title": "命の真実 ミュージカル「林檎売りとカメムシ」",
     "type": "solo",
-    "artwork": "/images/artworks/singles/15/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/15/B@1x.jpg",
+      "md": "/images/artworks/singles/15/B@2x.jpg",
+      "lg": "/images/artworks/singles/15/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -24295,7 +24659,11 @@
     "key": "hakumaisama",
     "title": "白米様",
     "type": "unit",
-    "artwork": "/images/artworks/singles/15/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/15/C@1x.jpg",
+      "md": "/images/artworks/singles/15/C@2x.jpg",
+      "lg": "/images/artworks/singles/15/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -24411,7 +24779,11 @@
     "key": "ikuatenonaibokutachi",
     "title": "行くあてのない僕たち",
     "type": "unit",
-    "artwork": "/images/artworks/singles/15/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/15/T@1x.jpg",
+      "md": "/images/artworks/singles/15/T@2x.jpg",
+      "lg": "/images/artworks/singles/15/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -24487,7 +24859,11 @@
     "key": "sayonaranoimi",
     "title": "サヨナラの意味",
     "type": "title",
-    "artwork": "/images/artworks/singles/16/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/16/A@1x.jpg",
+      "md": "/images/artworks/singles/16/A@2x.jpg",
+      "lg": "/images/artworks/singles/16/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -24875,7 +25251,11 @@
     "key": "bulanko",
     "title": "ブランコ",
     "type": "under",
-    "artwork": "/images/artworks/singles/16/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/16/B@1x.jpg",
+      "md": "/images/artworks/singles/16/B@2x.jpg",
+      "lg": "/images/artworks/singles/16/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -25213,7 +25593,11 @@
     "key": "kodokunaaozora",
     "title": "孤独な青空",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/16/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/16/A@1x.jpg",
+      "md": "/images/artworks/singles/16/A@2x.jpg",
+      "lg": "/images/artworks/singles/16/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -25595,7 +25979,11 @@
     "key": "anokyoushitsu",
     "title": "あの教室",
     "type": "unit",
-    "artwork": "/images/artworks/singles/16/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/16/A@1x.jpg",
+      "md": "/images/artworks/singles/16/A@2x.jpg",
+      "lg": "/images/artworks/singles/16/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -25673,7 +26061,11 @@
     "key": "nidomenokisskara",
     "title": "2度目のキスから",
     "type": "unit",
-    "artwork": "/images/artworks/singles/16/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/16/C@1x.jpg",
+      "md": "/images/artworks/singles/16/C@2x.jpg",
+      "lg": "/images/artworks/singles/16/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -25789,7 +26181,11 @@
     "key": "kiminiokuruhanaganai",
     "title": "君に贈る花がない",
     "type": "unit",
-    "artwork": "/images/artworks/singles/16/D.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/16/D@1x.jpg",
+      "md": "/images/artworks/singles/16/D@2x.jpg",
+      "lg": "/images/artworks/singles/16/D@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -25921,7 +26317,11 @@
     "key": "naimononedari",
     "title": "ないものねだり",
     "type": "solo",
-    "artwork": "/images/artworks/singles/16/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/16/T@1x.jpg",
+      "md": "/images/artworks/singles/16/T@2x.jpg",
+      "lg": "/images/artworks/singles/16/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -25982,7 +26382,11 @@
     "key": "influencer",
     "title": "インフルエンサー",
     "type": "title",
-    "artwork": "/images/artworks/singles/17/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/17/A@1x.jpg",
+      "md": "/images/artworks/singles/17/A@2x.jpg",
+      "lg": "/images/artworks/singles/17/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -26406,7 +26810,11 @@
     "key": "fusuenhaikiteiru",
     "title": "風船は生きている",
     "type": "under",
-    "artwork": "/images/artworks/singles/17/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/17/C@1x.jpg",
+      "md": "/images/artworks/singles/17/C@2x.jpg",
+      "lg": "/images/artworks/singles/17/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -26674,7 +27082,11 @@
     "key": "jinseiwokangaetakunaru",
     "title": "人生を考えたくなる",
     "type": "unit",
-    "artwork": "/images/artworks/singles/17/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/17/A@1x.jpg",
+      "md": "/images/artworks/singles/17/A@2x.jpg",
+      "lg": "/images/artworks/singles/17/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -26786,7 +27198,11 @@
     "key": "igaibreak",
     "title": "意外BREAK",
     "type": "unit",
-    "artwork": "/images/artworks/singles/17/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/17/A@1x.jpg",
+      "md": "/images/artworks/singles/17/A@2x.jpg",
+      "lg": "/images/artworks/singles/17/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -26900,7 +27316,11 @@
     "key": "anotherghost",
     "title": "Another Ghost",
     "type": "unit",
-    "artwork": "/images/artworks/singles/17/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/17/B@1x.jpg",
+      "md": "/images/artworks/singles/17/B@2x.jpg",
+      "lg": "/images/artworks/singles/17/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -26997,7 +27417,11 @@
     "key": "sanbanmenokaze",
     "title": "三番目の風",
     "type": "third generation",
-    "artwork": "/images/artworks/singles/17/D.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/17/D@1x.jpg",
+      "md": "/images/artworks/singles/17/D@2x.jpg",
+      "lg": "/images/artworks/singles/17/D@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -27259,7 +27683,11 @@
     "key": "atarisawarinonaihanashi",
     "title": "当たり障りのない話",
     "type": "unit",
-    "artwork": "/images/artworks/singles/17/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/17/T@1x.jpg",
+      "md": "/images/artworks/singles/17/T@2x.jpg",
+      "lg": "/images/artworks/singles/17/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -27371,7 +27799,11 @@
     "key": "nigemizu",
     "title": "逃げ水",
     "type": "title",
-    "artwork": "/images/artworks/singles/18/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/18/A@1x.jpg",
+      "md": "/images/artworks/singles/18/A@2x.jpg",
+      "lg": "/images/artworks/singles/18/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -27741,7 +28173,11 @@
     "key": "under",
     "title": "アンダー",
     "type": "under",
-    "artwork": "/images/artworks/singles/18/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/18/C@1x.jpg",
+      "md": "/images/artworks/singles/18/C@2x.jpg",
+      "lg": "/images/artworks/singles/18/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -28115,7 +28551,11 @@
     "key": "onnahahitorija",
     "title": "女は一人じゃ眠れない",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/18/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/18/A@1x.jpg",
+      "md": "/images/artworks/singles/18/A@2x.jpg",
+      "lg": "/images/artworks/singles/18/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -28480,7 +28920,11 @@
     "key": "hitonatsunonagasa",
     "title": "ひと夏の長さより…",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/18/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/18/A@1x.jpg",
+      "md": "/images/artworks/singles/18/A@2x.jpg",
+      "lg": "/images/artworks/singles/18/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -28839,7 +29283,11 @@
     "key": "liveshin",
     "title": "ライブ神",
     "type": "second generation",
-    "artwork": "/images/artworks/singles/18/D.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/18/D@1x.jpg",
+      "md": "/images/artworks/singles/18/D@2x.jpg",
+      "lg": "/images/artworks/singles/18/D@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -29083,7 +29531,11 @@
     "key": "mirainokotae",
     "title": "未来の答え",
     "type": "third generation",
-    "artwork": "/images/artworks/singles/18/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/18/T@1x.jpg",
+      "md": "/images/artworks/singles/18/T@2x.jpg",
+      "lg": "/images/artworks/singles/18/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -29345,7 +29797,11 @@
     "key": "naitatteiijanaika",
     "title": "泣いたっていいじゃないか?",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/18/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/18/B@1x.jpg",
+      "md": "/images/artworks/singles/18/B@2x.jpg",
+      "lg": "/images/artworks/singles/18/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -29705,7 +30161,11 @@
     "key": "itsukadekiru",
     "title": "いつかできるから今日できる",
     "type": "title",
-    "artwork": "/images/artworks/singles/19/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/19/A@1x.jpg",
+      "md": "/images/artworks/singles/19/A@2x.jpg",
+      "lg": "/images/artworks/singles/19/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -30095,7 +30555,11 @@
     "key": "myrule",
     "title": "My rule",
     "type": "under",
-    "artwork": "/images/artworks/singles/19/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/19/C@1x.jpg",
+      "md": "/images/artworks/singles/19/C@2x.jpg",
+      "lg": "/images/artworks/singles/19/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -30398,7 +30862,11 @@
     "key": "fumenshou",
     "title": "不眠症",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/19/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/19/A@1x.jpg",
+      "md": "/images/artworks/singles/19/A@2x.jpg",
+      "lg": "/images/artworks/singles/19/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -30797,7 +31265,11 @@
     "key": "maaiika",
     "title": "まあいいか?",
     "type": "unit",
-    "artwork": "/images/artworks/singles/19/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/19/A@1x.jpg",
+      "md": "/images/artworks/singles/19/A@2x.jpg",
+      "lg": "/images/artworks/singles/19/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -30870,7 +31342,11 @@
     "key": "shirenosoujinin",
     "title": "失恋お掃除人",
     "type": "unit",
-    "artwork": "/images/artworks/singles/19/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/19/B@1x.jpg",
+      "md": "/images/artworks/singles/19/B@2x.jpg",
+      "lg": "/images/artworks/singles/19/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -30983,7 +31459,11 @@
     "key": "bokunoshoudou",
     "title": "僕の衝動",
     "type": "third generation",
-    "artwork": "/images/artworks/singles/19/D.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/19/D@1x.jpg",
+      "md": "/images/artworks/singles/19/D@2x.jpg",
+      "lg": "/images/artworks/singles/19/D@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -31245,7 +31725,11 @@
     "key": "atarashiikafun",
     "title": "新しい花粉 〜ミュージカル「見知らぬ世界」より〜",
     "type": "unit",
-    "artwork": "/images/artworks/singles/19/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/19/T@1x.jpg",
+      "md": "/images/artworks/singles/19/T@2x.jpg",
+      "lg": "/images/artworks/singles/19/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -31318,7 +31802,11 @@
     "key": "synchronicity",
     "title": "シンクロニシティ",
     "type": "title",
-    "artwork": "/images/artworks/singles/20/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/20/A@1x.jpg",
+      "md": "/images/artworks/singles/20/A@2x.jpg",
+      "lg": "/images/artworks/singles/20/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -31742,7 +32230,11 @@
     "key": "atarashiisekai",
     "title": "新しい世界",
     "type": "under",
-    "artwork": "/images/artworks/singles/20/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/20/B@1x.jpg",
+      "md": "/images/artworks/singles/20/B@2x.jpg",
+      "lg": "/images/artworks/singles/20/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -32166,7 +32658,11 @@
     "key": "against",
     "title": "Against",
     "type": "first generation",
-    "artwork": "/images/artworks/singles/20/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/20/A@1x.jpg",
+      "md": "/images/artworks/singles/20/A@2x.jpg",
+      "lg": "/images/artworks/singles/20/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -32572,7 +33068,11 @@
     "key": "kumoninarebaii",
     "title": "雲になればいい",
     "type": "unit",
-    "artwork": "/images/artworks/singles/20/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/20/A@1x.jpg",
+      "md": "/images/artworks/singles/20/A@2x.jpg",
+      "lg": "/images/artworks/singles/20/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -32661,7 +33161,11 @@
     "key": "scoutman",
     "title": "スカウトマン",
     "type": "second generation",
-    "artwork": "/images/artworks/singles/20/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/20/C@1x.jpg",
+      "md": "/images/artworks/singles/20/C@2x.jpg",
+      "lg": "/images/artworks/singles/20/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -32887,7 +33391,11 @@
     "key": "tokitokimekimeki",
     "title": "トキトキメキメキ",
     "type": "third generation",
-    "artwork": "/images/artworks/singles/20/D.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/20/D@1x.jpg",
+      "md": "/images/artworks/singles/20/D@2x.jpg",
+      "lg": "/images/artworks/singles/20/D@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -33151,7 +33659,11 @@
     "key": "kotodamahou",
     "title": "言霊砲",
     "type": "unit",
-    "artwork": "/images/artworks/singles/20/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/20/T@1x.jpg",
+      "md": "/images/artworks/singles/20/T@2x.jpg",
+      "lg": "/images/artworks/singles/20/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -33260,7 +33772,11 @@
     "key": "jikochu",
     "title": "ジコチューで行こう!",
     "type": "title",
-    "artwork": "/images/artworks/singles/21/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/21/A@1x.jpg",
+      "md": "/images/artworks/singles/21/A@2x.jpg",
+      "lg": "/images/artworks/singles/21/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -33684,7 +34200,11 @@
     "key": "sankakunoakichi",
     "title": "三角の空き地",
     "type": "under",
-    "artwork": "/images/artworks/singles/21/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/21/A@1x.jpg",
+      "md": "/images/artworks/singles/21/A@2x.jpg",
+      "lg": "/images/artworks/singles/21/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -34054,7 +34574,11 @@
     "key": "soratobira",
     "title": "空扉",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/21/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/21/A@1x.jpg",
+      "md": "/images/artworks/singles/21/A@2x.jpg",
+      "lg": "/images/artworks/singles/21/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -34402,7 +34926,11 @@
     "key": "jibunjanaikanji",
     "title": "自分じゃない感じ",
     "type": "third generation",
-    "artwork": "/images/artworks/singles/21/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/21/B@1x.jpg",
+      "md": "/images/artworks/singles/21/B@2x.jpg",
+      "lg": "/images/artworks/singles/21/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -34644,7 +35172,11 @@
     "key": "kokoronomonolog",
     "title": "心のモノローグ",
     "type": "unit",
-    "artwork": "/images/artworks/singles/21/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/21/C@1x.jpg",
+      "md": "/images/artworks/singles/21/C@2x.jpg",
+      "lg": "/images/artworks/singles/21/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -34717,7 +35249,11 @@
     "key": "chikyuugamaruinara",
     "title": "地球が丸いなら",
     "type": "unit",
-    "artwork": "/images/artworks/singles/21/D.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/21/D@1x.jpg",
+      "md": "/images/artworks/singles/21/D@2x.jpg",
+      "lg": "/images/artworks/singles/21/D@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -34808,7 +35344,11 @@
     "key": "annarisukidatta",
     "title": "あんなに好きだったのに...",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/21/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/21/T@1x.jpg",
+      "md": "/images/artworks/singles/21/T@2x.jpg",
+      "lg": "/images/artworks/singles/21/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -35225,7 +35765,11 @@
     "key": "kaerimichi",
     "title": "帰り道は遠回りしたくなる",
     "type": "title",
-    "artwork": "/images/artworks/singles/22/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/22/A@1x.jpg",
+      "md": "/images/artworks/singles/22/A@2x.jpg",
+      "lg": "/images/artworks/singles/22/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -35650,7 +36194,11 @@
     "key": "nichijou",
     "title": "日常",
     "type": "under",
-    "artwork": "/images/artworks/singles/22/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/22/B@1x.jpg",
+      "md": "/images/artworks/singles/22/B@2x.jpg",
+      "lg": "/images/artworks/singles/22/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -36022,7 +36570,11 @@
     "key": "caravan",
     "title": "キャラバンは眠らない",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/22/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/22/A@1x.jpg",
+      "md": "/images/artworks/singles/22/A@2x.jpg",
+      "lg": "/images/artworks/singles/22/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -36356,7 +36908,11 @@
     "key": "tsuduku",
     "title": "つづく",
     "type": "solo",
-    "artwork": "/images/artworks/singles/22/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/22/A@1x.jpg",
+      "md": "/images/artworks/singles/22/A@2x.jpg",
+      "lg": "/images/artworks/singles/22/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -36416,7 +36972,11 @@
     "key": "kokuhakunojunban",
     "title": "告白の順番",
     "type": "unit",
-    "artwork": "/images/artworks/singles/22/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/22/C@1x.jpg",
+      "md": "/images/artworks/singles/22/C@2x.jpg",
+      "lg": "/images/artworks/singles/22/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -36525,7 +37085,11 @@
     "key": "chopinnousotsuki",
     "title": "ショパンの嘘つき",
     "type": "unit",
-    "artwork": "/images/artworks/singles/22/D.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/22/D@1x.jpg",
+      "md": "/images/artworks/singles/22/D@2x.jpg",
+      "lg": "/images/artworks/singles/22/D@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -36614,7 +37178,11 @@
     "key": "shiritaikoto",
     "title": "知りたいこと",
     "type": "unit",
-    "artwork": "/images/artworks/singles/22/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/22/T@1x.jpg",
+      "md": "/images/artworks/singles/22/T@2x.jpg",
+      "lg": "/images/artworks/singles/22/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -36721,7 +37289,11 @@
     "key": "singout",
     "title": "Sing Out!",
     "type": "title",
-    "artwork": "/images/artworks/singles/23/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/23/A@1x.jpg",
+      "md": "/images/artworks/singles/23/A@2x.jpg",
+      "lg": "/images/artworks/singles/23/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -37159,7 +37731,11 @@
     "key": "kassouro",
     "title": "滑走路",
     "type": "under",
-    "artwork": "/images/artworks/singles/23/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/23/A@1x.jpg",
+      "md": "/images/artworks/singles/23/A@2x.jpg",
+      "lg": "/images/artworks/singles/23/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -37378,7 +37954,11 @@
     "key": "noyounasonzai",
     "title": "のような存在",
     "type": "unit",
-    "artwork": "/images/artworks/singles/23/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/23/A@1x.jpg",
+      "md": "/images/artworks/singles/23/A@2x.jpg",
+      "lg": "/images/artworks/singles/23/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -37453,7 +38033,11 @@
     "key": "amiloving",
     "title": "Am I Loving?",
     "type": "unit",
-    "artwork": "/images/artworks/singles/23/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/23/B@1x.jpg",
+      "md": "/images/artworks/singles/23/B@2x.jpg",
+      "lg": "/images/artworks/singles/23/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -37578,7 +38162,11 @@
     "key": "heikousen",
     "title": "平行線",
     "type": "unit",
-    "artwork": "/images/artworks/singles/23/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/23/C@1x.jpg",
+      "md": "/images/artworks/singles/23/C@2x.jpg",
+      "lg": "/images/artworks/singles/23/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -37705,7 +38293,11 @@
     "key": "yonbanmenohikari",
     "title": "4番目の光",
     "type": "fourth generation",
-    "artwork": "/images/artworks/singles/23/D.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/23/D@1x.jpg",
+      "md": "/images/artworks/singles/23/D@2x.jpg",
+      "lg": "/images/artworks/singles/23/D@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -37943,7 +38535,11 @@
     "key": "aimai",
     "title": "曖昧",
     "type": "unit",
-    "artwork": "/images/artworks/singles/23/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/23/T@1x.jpg",
+      "md": "/images/artworks/singles/23/T@2x.jpg",
+      "lg": "/images/artworks/singles/23/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -38014,7 +38610,11 @@
     "key": "yoakemade",
     "title": "夜明けまで強がらなくてもいい",
     "type": "title",
-    "artwork": "/images/artworks/singles/24/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/24/A@1x.jpg",
+      "md": "/images/artworks/singles/24/A@2x.jpg",
+      "lg": "/images/artworks/singles/24/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -38379,7 +38979,11 @@
     "key": "bokunokoto",
     "title": "僕のこと、知ってる?",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/24/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/24/A@1x.jpg",
+      "md": "/images/artworks/singles/24/A@2x.jpg",
+      "lg": "/images/artworks/singles/24/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -38814,7 +39418,11 @@
     "key": "romendensha",
     "title": "路面電車の街",
     "type": "unit",
-    "artwork": "/images/artworks/singles/24/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/24/A@1x.jpg",
+      "md": "/images/artworks/singles/24/A@2x.jpg",
+      "lg": "/images/artworks/singles/24/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -38906,7 +39514,11 @@
     "key": "toshoshitsu",
     "title": "図書室の君へ",
     "type": "fourth generation",
-    "artwork": "/images/artworks/singles/24/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/24/B@1x.jpg",
+      "md": "/images/artworks/singles/24/B@2x.jpg",
+      "lg": "/images/artworks/singles/24/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -39143,7 +39755,11 @@
     "key": "tokidokiomoidashite",
     "title": "時々 思い出してください",
     "type": "solo",
-    "artwork": "/images/artworks/singles/24/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/24/C@1x.jpg",
+      "md": "/images/artworks/singles/24/C@2x.jpg",
+      "lg": "/images/artworks/singles/24/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -39199,7 +39815,11 @@
     "key": "domybest",
     "title": "～Do my best～じゃ意味はない",
     "type": "under",
-    "artwork": "/images/artworks/singles/24/D.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/24/D@1x.jpg",
+      "md": "/images/artworks/singles/24/D@2x.jpg",
+      "lg": "/images/artworks/singles/24/D@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -39530,7 +40150,11 @@
     "key": "bokunoomoikomi",
     "title": "僕の思い込み",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/24/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/24/T@1x.jpg",
+      "md": "/images/artworks/singles/24/T@2x.jpg",
+      "lg": "/images/artworks/singles/24/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -39893,7 +40517,11 @@
     "key": "hogoshoku",
     "title": "しあわせの保護色",
     "type": "title",
-    "artwork": "/images/artworks/singles/25/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/25/A@1x.jpg",
+      "md": "/images/artworks/singles/25/A@2x.jpg",
+      "lg": "/images/artworks/singles/25/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -40330,7 +40958,11 @@
     "key": "staywithme",
     "title": "サヨナラ Stay with me",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/25/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/25/A@1x.jpg",
+      "md": "/images/artworks/singles/25/A@2x.jpg",
+      "lg": "/images/artworks/singles/25/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -40509,7 +41141,11 @@
     "key": "jaane",
     "title": "じゃあね。",
     "type": "solo",
-    "artwork": "/images/artworks/singles/25/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/25/A@1x.jpg",
+      "md": "/images/artworks/singles/25/A@2x.jpg",
+      "lg": "/images/artworks/singles/25/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "白石麻衣"
@@ -40565,7 +41201,11 @@
     "key": "anastasia",
     "title": "アナスターシャ",
     "type": "second generation",
-    "artwork": "/images/artworks/singles/25/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/25/B@1x.jpg",
+      "md": "/images/artworks/singles/25/B@2x.jpg",
+      "lg": "/images/artworks/singles/25/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -40768,7 +41408,11 @@
     "key": "brandnewday",
     "title": "毎日がBrand new day",
     "type": "third generation",
-    "artwork": "/images/artworks/singles/25/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/25/C@1x.jpg",
+      "md": "/images/artworks/singles/25/C@2x.jpg",
+      "lg": "/images/artworks/singles/25/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -41023,7 +41667,11 @@
     "key": "isee",
     "title": "I see…",
     "type": "fourth generation",
-    "artwork": "/images/artworks/singles/25/D.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/25/D@1x.jpg",
+      "md": "/images/artworks/singles/25/D@2x.jpg",
+      "lg": "/images/artworks/singles/25/D@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -41260,7 +41908,11 @@
     "key": "fantastic",
     "title": "ファンタスティック三色パン",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/25/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/25/T@1x.jpg",
+      "md": "/images/artworks/singles/25/T@2x.jpg",
+      "lg": "/images/artworks/singles/25/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -41349,7 +42001,11 @@
     "key": "bokuhabokuwosukininaru",
     "title": "僕は僕を好きになる",
     "type": "title",
-    "artwork": "/images/artworks/singles/26/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/26/A@1x.jpg",
+      "md": "/images/artworks/singles/26/A@2x.jpg",
+      "lg": "/images/artworks/singles/26/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -41733,7 +42389,11 @@
     "key": "tsumetaimizunonaka",
     "title": "冷たい水の中",
     "type": "solo",
-    "artwork": "/images/artworks/singles/26/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/26/C@1x.jpg",
+      "md": "/images/artworks/singles/26/C@2x.jpg",
+      "lg": "/images/artworks/singles/26/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -41788,7 +42448,11 @@
     "key": "outoftheblue",
     "title": "Out of the blue",
     "type": "fourth generation",
-    "artwork": "/images/artworks/singles/26/D.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/26/D@1x.jpg",
+      "md": "/images/artworks/singles/26/D@2x.jpg",
+      "lg": "/images/artworks/singles/26/D@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -42117,7 +42781,11 @@
     "key": "kuchihodonimonaikiss",
     "title": "口ほどにもないKISS",
     "type": "under",
-    "artwork": "/images/artworks/singles/26/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/26/B@1x.jpg",
+      "md": "/images/artworks/singles/26/B@2x.jpg",
+      "lg": "/images/artworks/singles/26/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -42410,7 +43078,11 @@
     "key": "ashitagaaruriyuu",
     "title": "明日がある理由",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/26/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/26/A@1x.jpg",
+      "md": "/images/artworks/singles/26/A@2x.jpg",
+      "lg": "/images/artworks/singles/26/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -42773,7 +43445,11 @@
     "key": "wildernessworld",
     "title": "Wilderness world",
     "type": "coupling",
-    "artwork": "/images/artworks/singles/26/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/26/A@1x.jpg",
+      "md": "/images/artworks/singles/26/A@2x.jpg",
+      "lg": "/images/artworks/singles/26/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -43157,7 +43833,11 @@
     "key": "yuujoupierce",
     "title": "友情ピアス",
     "type": "unit",
-    "artwork": "/images/artworks/singles/26/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/26/T@1x.jpg",
+      "md": "/images/artworks/singles/26/T@2x.jpg",
+      "lg": "/images/artworks/singles/26/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -43230,7 +43910,11 @@
     "key": "gomennefingerscrossed",
     "title": "ごめんねFingers crossed",
     "type": "title",
-    "artwork": "/images/artworks/singles/27/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/27/A@1x.jpg",
+      "md": "/images/artworks/singles/27/A@2x.jpg",
+      "lg": "/images/artworks/singles/27/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [],
       "compose": [],
@@ -43623,7 +44307,11 @@
     "key": "nekojitachamomiletea",
     "title": "猫舌カモミールティー",
     "type": "fourth generation",
-    "artwork": "/images/artworks/singles/27/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/27/A@1x.jpg",
+      "md": "/images/artworks/singles/27/A@2x.jpg",
+      "lg": "/images/artworks/singles/27/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [],
       "compose": [],
@@ -43944,7 +44632,11 @@
     "key": "otonatachinihashihaisarenai",
     "title": "大人たちには指示されない",
     "type": "third generation",
-    "artwork": "/images/artworks/singles/27/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/singles/27/A@1x.jpg",
+      "md": "/images/artworks/singles/27/A@2x.jpg",
+      "lg": "/images/artworks/singles/27/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [],
       "compose": [],
@@ -44193,7 +44885,11 @@
     "key": "darekahamikata",
     "title": "誰かは味方",
     "type": "unit",
-    "artwork": "/images/artworks/albums/1/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/1/A@1x.jpg",
+      "md": "/images/artworks/albums/1/A@2x.jpg",
+      "lg": "/images/artworks/albums/1/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -44287,7 +44983,11 @@
     "key": "kakumeinouma",
     "title": "革命の馬",
     "type": "unit",
-    "artwork": "/images/artworks/albums/1/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/1/A@1x.jpg",
+      "md": "/images/artworks/albums/1/A@2x.jpg",
+      "lg": "/images/artworks/albums/1/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -44435,7 +45135,11 @@
     "key": "bokugairubasho",
     "title": "僕がいる場所",
     "type": "coupling",
-    "artwork": "/images/artworks/albums/1/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/1/A@1x.jpg",
+      "md": "/images/artworks/albums/1/A@2x.jpg",
+      "lg": "/images/artworks/albums/1/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -44764,7 +45468,11 @@
     "key": "anatanotamenihikitai",
     "title": "あなたのために弾きたい",
     "type": "solo",
-    "artwork": "/images/artworks/albums/1/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/1/A@1x.jpg",
+      "md": "/images/artworks/albums/1/A@2x.jpg",
+      "lg": "/images/artworks/albums/1/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -44822,7 +45530,11 @@
     "key": "keishasuru",
     "title": "傾斜する",
     "type": "unit",
-    "artwork": "/images/artworks/albums/1/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/1/A@1x.jpg",
+      "md": "/images/artworks/albums/1/A@2x.jpg",
+      "lg": "/images/artworks/albums/1/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -45151,7 +45863,11 @@
     "key": "nazonorakugaki",
     "title": "なぞの落書き",
     "type": "unit",
-    "artwork": "/images/artworks/albums/1/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/1/A@1x.jpg",
+      "md": "/images/artworks/albums/1/A@2x.jpg",
+      "lg": "/images/artworks/albums/1/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -45245,7 +45961,11 @@
     "key": "jiyuunokanata",
     "title": "自由の彼方",
     "type": "under",
-    "artwork": "/images/artworks/albums/1/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/1/A@1x.jpg",
+      "md": "/images/artworks/albums/1/A@2x.jpg",
+      "lg": "/images/artworks/albums/1/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -45721,7 +46441,11 @@
     "key": "hitoriyogari",
     "title": "ひとりよがり",
     "type": "solo",
-    "artwork": "/images/artworks/albums/1/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/1/A@1x.jpg",
+      "md": "/images/artworks/albums/1/A@2x.jpg",
+      "lg": "/images/artworks/albums/1/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -45780,7 +46504,11 @@
     "key": "kikkake",
     "title": "きっかけ",
     "type": "coupling",
-    "artwork": "/images/artworks/albums/2/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/2/A@1x.jpg",
+      "md": "/images/artworks/albums/2/A@2x.jpg",
+      "lg": "/images/artworks/albums/2/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -46113,7 +46841,11 @@
     "key": "taiyounikudokarete",
     "title": "太陽に口説かれて",
     "type": "coupling",
-    "artwork": "/images/artworks/albums/2/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/2/A@1x.jpg",
+      "md": "/images/artworks/albums/2/A@2x.jpg",
+      "lg": "/images/artworks/albums/2/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -46441,7 +47173,11 @@
     "key": "yokuboureincarnation",
     "title": "欲望のリインカーネーション",
     "type": "under",
-    "artwork": "/images/artworks/albums/2/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/2/A@1x.jpg",
+      "md": "/images/artworks/albums/2/A@2x.jpg",
+      "lg": "/images/artworks/albums/2/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康",
@@ -46648,7 +47384,11 @@
     "key": "kuukikann",
     "title": "空気感",
     "type": "unit",
-    "artwork": "/images/artworks/albums/2/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/2/A@1x.jpg",
+      "md": "/images/artworks/albums/2/A@2x.jpg",
+      "lg": "/images/artworks/albums/2/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -46778,7 +47518,11 @@
     "key": "kougouseikibou",
     "title": "光合成希望",
     "type": "solo",
-    "artwork": "/images/artworks/albums/2/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/2/A@1x.jpg",
+      "md": "/images/artworks/albums/2/A@2x.jpg",
+      "lg": "/images/artworks/albums/2/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -46836,7 +47580,11 @@
     "key": "threefoldchoice",
     "title": "Threefold choice",
     "type": "unit",
-    "artwork": "/images/artworks/albums/2/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/2/B@1x.jpg",
+      "md": "/images/artworks/albums/2/B@2x.jpg",
+      "lg": "/images/artworks/albums/2/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -46930,7 +47678,11 @@
     "key": "teitaionnokiss",
     "title": "低体温のキス",
     "type": "solo",
-    "artwork": "/images/artworks/albums/2/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/2/B@1x.jpg",
+      "md": "/images/artworks/albums/2/B@2x.jpg",
+      "lg": "/images/artworks/albums/2/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -46988,7 +47740,11 @@
     "key": "shitsurenshitarakaowoarae",
     "title": "失恋したら、顔を洗え!",
     "type": "unit",
-    "artwork": "/images/artworks/albums/2/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/2/C@1x.jpg",
+      "md": "/images/artworks/albums/2/C@2x.jpg",
+      "lg": "/images/artworks/albums/2/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -47064,7 +47820,11 @@
     "key": "kakigoorinokataomoi",
     "title": "かき氷の片想い",
     "type": "second generation",
-    "artwork": "/images/artworks/albums/2/C.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/2/C@1x.jpg",
+      "md": "/images/artworks/albums/2/C@2x.jpg",
+      "lg": "/images/artworks/albums/2/C@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -47306,7 +48066,11 @@
     "key": "kanjyourokugousen",
     "title": "環状六号線",
     "type": "unit",
-    "artwork": "/images/artworks/albums/2/D.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/2/D@1x.jpg",
+      "md": "/images/artworks/albums/2/D@2x.jpg",
+      "lg": "/images/artworks/albums/2/D@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -47400,7 +48164,11 @@
     "key": "kuchiyakusoku",
     "title": "口約束",
     "type": "unit",
-    "artwork": "/images/artworks/albums/2/D.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/2/D@1x.jpg",
+      "md": "/images/artworks/albums/2/D@2x.jpg",
+      "lg": "/images/artworks/albums/2/D@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -47512,7 +48280,11 @@
     "key": "skydiving",
     "title": "スカイダイビング",
     "type": "coupling",
-    "artwork": "/images/artworks/albums/3/L.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/3/L@1x.jpg",
+      "md": "/images/artworks/albums/3/L@2x.jpg",
+      "lg": "/images/artworks/albums/3/L@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -47930,7 +48702,11 @@
     "key": "kimigaaoidekureta",
     "title": "君が扇いでくれた",
     "type": "under",
-    "artwork": "/images/artworks/albums/3/L.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/3/L@1x.jpg",
+      "md": "/images/artworks/albums/3/L@2x.jpg",
+      "lg": "/images/artworks/albums/3/L@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -48191,7 +48967,11 @@
     "key": "omoidefirst",
     "title": "思い出ファースト",
     "type": "third generation",
-    "artwork": "/images/artworks/albums/3/L.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/3/L@1x.jpg",
+      "md": "/images/artworks/albums/3/L@2x.jpg",
+      "lg": "/images/artworks/albums/3/L@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -48451,7 +49231,11 @@
     "key": "setteiondo",
     "title": "設定温度",
     "type": "coupling",
-    "artwork": "/images/artworks/albums/3/L.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/3/L@1x.jpg",
+      "md": "/images/artworks/albums/3/L@2x.jpg",
+      "lg": "/images/artworks/albums/3/L@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -49305,7 +50089,11 @@
     "key": "rewindanohi",
     "title": "Rewindあの日",
     "type": "unit",
-    "artwork": "/images/artworks/albums/3/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/3/A@1x.jpg",
+      "md": "/images/artworks/albums/3/A@2x.jpg",
+      "lg": "/images/artworks/albums/3/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -49399,7 +50187,11 @@
     "key": "gomennesmoothie",
     "title": "ごめんね、スムージー",
     "type": "unit",
-    "artwork": "/images/artworks/albums/3/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/3/A@1x.jpg",
+      "md": "/images/artworks/albums/3/A@2x.jpg",
+      "lg": "/images/artworks/albums/3/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -49493,7 +50285,11 @@
     "key": "minikuiwatashi",
     "title": "醜い私",
     "type": "unit",
-    "artwork": "/images/artworks/albums/3/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/3/A@1x.jpg",
+      "md": "/images/artworks/albums/3/A@2x.jpg",
+      "lg": "/images/artworks/albums/3/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -49587,7 +50383,11 @@
     "key": "kataikaranoyounidakishimetai",
     "title": "硬い殻のように抱きしめたい",
     "type": "solo",
-    "artwork": "/images/artworks/albums/3/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/3/B@1x.jpg",
+      "md": "/images/artworks/albums/3/B@2x.jpg",
+      "lg": "/images/artworks/albums/3/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -49647,7 +50447,11 @@
     "key": "mangetsugakieta",
     "title": "満月が消えた",
     "type": "unit",
-    "artwork": "/images/artworks/albums/3/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/3/B@1x.jpg",
+      "md": "/images/artworks/albums/3/B@2x.jpg",
+      "lg": "/images/artworks/albums/3/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -49741,7 +50545,11 @@
     "key": "watabokori",
     "title": "ワタボコリ",
     "type": "unit",
-    "artwork": "/images/artworks/albums/3/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/3/B@1x.jpg",
+      "md": "/images/artworks/albums/3/B@2x.jpg",
+      "lg": "/images/artworks/albums/3/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -49835,7 +50643,11 @@
     "key": "ryuuseidiscotic",
     "title": "流星ディスコティック",
     "type": "unit",
-    "artwork": "/images/artworks/albums/3/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/3/T@1x.jpg",
+      "md": "/images/artworks/albums/3/T@2x.jpg",
+      "lg": "/images/artworks/albums/3/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -49911,7 +50723,11 @@
     "key": "boukyakutobigaku",
     "title": "忘却と美学",
     "type": "unit",
-    "artwork": "/images/artworks/albums/3/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/3/T@1x.jpg",
+      "md": "/images/artworks/albums/3/T@2x.jpg",
+      "lg": "/images/artworks/albums/3/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -49987,7 +50803,11 @@
     "key": "jibunnokoto",
     "title": "自分のこと",
     "type": "solo",
-    "artwork": "/images/artworks/albums/U/L2.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/U/L2@1x.jpg",
+      "md": "/images/artworks/albums/U/L2@2x.jpg",
+      "lg": "/images/artworks/albums/U/L2@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -50045,7 +50865,11 @@
     "key": "unuborebeach",
     "title": "自惚れビーチ",
     "type": "under",
-    "artwork": "/images/artworks/albums/U/L2.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/U/L2@1x.jpg",
+      "md": "/images/artworks/albums/U/L2@2x.jpg",
+      "lg": "/images/artworks/albums/U/L2@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -50337,7 +51161,11 @@
     "key": "sonohito",
     "title": "その女",
     "type": "under",
-    "artwork": "/images/artworks/albums/U/L2.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/U/L2@1x.jpg",
+      "md": "/images/artworks/albums/U/L2@2x.jpg",
+      "lg": "/images/artworks/albums/U/L2@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -50629,7 +51457,11 @@
     "key": "dareyorimosobaniitai",
     "title": "誰よりそばにいたい",
     "type": "under",
-    "artwork": "/images/artworks/albums/U/L2.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/U/L2@1x.jpg",
+      "md": "/images/artworks/albums/U/L2@2x.jpg",
+      "lg": "/images/artworks/albums/U/L2@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -50921,7 +51753,11 @@
     "key": "arigachinarenai",
     "title": "ありがちな恋愛",
     "type": "lead",
-    "artwork": "/images/artworks/albums/4/L.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/4/L@1x.jpg",
+      "md": "/images/artworks/albums/4/L@2x.jpg",
+      "lg": "/images/artworks/albums/4/L@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -51285,7 +52121,11 @@
     "key": "moshikimigainakereba",
     "title": "もし君がいなければ",
     "type": "solo",
-    "artwork": "/images/artworks/albums/4/L.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/4/L@1x.jpg",
+      "md": "/images/artworks/albums/4/L@2x.jpg",
+      "lg": "/images/artworks/albums/4/L@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -51344,7 +52184,11 @@
     "key": "kissnoshuriken",
     "title": "キスの手裏剣",
     "type": "fourth generation",
-    "artwork": "/images/artworks/albums/4/L.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/4/L@1x.jpg",
+      "md": "/images/artworks/albums/4/L@2x.jpg",
+      "lg": "/images/artworks/albums/4/L@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -51584,7 +52428,11 @@
     "key": "hoozuewotsuitehanemurenai",
     "title": "頬杖をついては眠れない",
     "type": "unit",
-    "artwork": "/images/artworks/albums/4/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/4/A@1x.jpg",
+      "md": "/images/artworks/albums/4/A@2x.jpg",
+      "lg": "/images/artworks/albums/4/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -51714,7 +52562,11 @@
     "key": "bocchitou",
     "title": "ぼっち党",
     "type": "unit",
-    "artwork": "/images/artworks/albums/4/A.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/4/A@1x.jpg",
+      "md": "/images/artworks/albums/4/A@2x.jpg",
+      "lg": "/images/artworks/albums/4/A@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -51808,7 +52660,11 @@
     "key": "sayuringoboshuuchuu",
     "title": "さゆりんご募集中",
     "type": "unit",
-    "artwork": "/images/artworks/albums/4/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/4/B@1x.jpg",
+      "md": "/images/artworks/albums/4/B@2x.jpg",
+      "lg": "/images/artworks/albums/4/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -51922,7 +52778,11 @@
     "key": "gorugonzora",
     "title": "ゴルゴンゾーラ",
     "type": "unit",
-    "artwork": "/images/artworks/albums/4/B.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/4/B@1x.jpg",
+      "md": "/images/artworks/albums/4/B@2x.jpg",
+      "lg": "/images/artworks/albums/4/B@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -52016,7 +52876,11 @@
     "key": "mousuguzambidensetsu",
     "title": "もうすぐ～ザンビ伝説～",
     "type": "special",
-    "artwork": "/images/artworks/albums/4/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/albums/4/T@1x.jpg",
+      "md": "/images/artworks/albums/4/T@2x.jpg",
+      "lg": "/images/artworks/albums/4/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -52434,7 +53298,11 @@
     "key": "sekainorinjinyo",
     "title": "世界中の隣人よ",
     "type": "special",
-    "artwork": "/images/artworks/digital/1/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/digital/1/T@1x.jpg",
+      "md": "/images/artworks/digital/1/T@2x.jpg",
+      "lg": "/images/artworks/digital/1/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -53502,7 +54370,11 @@
     "key": "route246",
     "title": "Route 246",
     "type": "title",
-    "artwork": "/images/artworks/digital/2/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/digital/2/T@1x.jpg",
+      "md": "/images/artworks/digital/2/T@2x.jpg",
+      "lg": "/images/artworks/digital/2/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "秋元康"
@@ -53872,7 +54744,11 @@
     "key": "123",
     "title": "１・２・３",
     "type": "unit",
-    "artwork": "/images/artworks/digital/3/T.jpg",
+    "artwork": {
+      "sm": "/images/artworks/digital/3/T@1x.jpg",
+      "md": "/images/artworks/digital/3/T@2x.jpg",
+      "lg": "/images/artworks/digital/3/T@3x.jpg"
+    },
     "creators": {
       "lyrics": [
         "まふまふ"

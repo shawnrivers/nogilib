@@ -1,4 +1,4 @@
-import { Site } from 'server/types/commons';
+import { ImageUrl, Site } from 'server/types/commons';
 import { SongTitle } from 'server/actors/Songs/constants/songTitle';
 import { SongType } from 'server/actors/Songs/constants/songType';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
@@ -28,7 +28,7 @@ export type CdSongResult = CdSongRaw & {
   focusPerformers: FocusPerformers;
 };
 
-// TODO: Rename to CdRaw
+// TODO: Rename to AlbumRaw
 export type DiscographyRaw = {
   title: CdTitle;
   key: string;
@@ -46,12 +46,12 @@ export type DiscographyRaw = {
   };
   previousSingleNumber: string;
   artworks: {
-    url: string;
+    url: ImageUrl;
     type: CdType;
   }[];
 };
 
-// TODO: Rename to CdResult
+// TODO: Rename to AlbumResult
 export type DiscographyResult = Pick<
   DiscographyRaw,
   | 'title'
