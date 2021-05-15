@@ -59,5 +59,10 @@ module.exports = {
     browser: true,
     node: true,
   },
-  ignorePatterns: ['**/__tests__/**/*.ts', '**/*.test.ts', 'README.md'],
+  ignorePatterns: [
+    '**/__tests__/**/*.ts',
+    '**/*.test.ts',
+    'README.md',
+    './scripts/**/*',
+  ],
 };
