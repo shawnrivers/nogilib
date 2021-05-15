@@ -73,12 +73,7 @@ export const PageHelmet: React.FC<PageHelmetProps> = props => {
       <link rel="manifest" href="/site.webmanifest" />
 
       {/* App icon */}
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="180x180"
-        href="/images/apple-icon-180.png"
-      />
+      <link rel="icon" href="/favicon.ico" />
       <link rel="apple-touch-icon" href="/images/apple-icon-180.png" />
 
       {/* Splash screens */}
