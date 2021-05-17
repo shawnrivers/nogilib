@@ -144,10 +144,6 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: SocialMedia.Official,
         url: 'https://ikomarina.com/',
       },
-      {
-        title: SocialMedia.Profile,
-        url: 'https://n46llc.com/s/m00/artist/1',
-      },
     ],
     photoAlbums: [
       {
