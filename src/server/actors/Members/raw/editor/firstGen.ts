@@ -960,6 +960,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: SocialMedia.Twitter,
         url: 'https://twitter.com/mahiro_chan0723',
       },
+      {
+        title: SocialMedia.FanClub,
+        url: 'https://fanicon.net/fancommunities/3640',
+      },
     ],
     graduatedDate: '2018-03-31',
   }),
