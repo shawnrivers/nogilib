@@ -261,14 +261,6 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://hori-miona.com/',
       },
       {
-        title: SocialMedia.Blog,
-        url: 'https://blog.nogizaka46.com/miona.hori/',
-      },
-      {
-        title: SocialMedia.Profile,
-        url: 'https://www.nogizaka46.com/member/detail/horimiona.php',
-      },
-      {
         title: SocialMedia.Nanagogo,
         url: 'https://7gogo.jp/hori-miona',
       },
