@@ -1220,7 +1220,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     glowStickColor: [GlowStickColorType.Pink, GlowStickColorType.Orange],
     join: JoinedGenerationType.First,
     birthday: '1995-12-12',
-    height: 148,
+    height: 149,
     bloodType: BloodType.B,
     origin: Birthplace.Gifu,
     sites: [
@@ -1231,6 +1231,14 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: SocialMedia.Twitter,
         url: 'https://twitter.com/nene_ito1212',
+      },
+      {
+        title: SocialMedia.YouTube,
+        url: 'https://www.youtube.com/channel/UCgj7DMxLEz72XMtaDNQFRTw',
+      },
+      {
+        title: SocialMedia.Profile,
+        url: 'https://www.watanabepro.co.jp/mypage/61000049/',
       },
     ],
     graduatedDate: '2014-10-19',
