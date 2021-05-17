@@ -1318,10 +1318,6 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Kanagawa,
     sites: [
       {
-        title: SocialMedia.Instagram,
-        url: 'https://www.instagram.com/yukina_812/',
-      },
-      {
         title: SocialMedia.Twitter,
         url: 'https://twitter.com/y_k812/',
       },
