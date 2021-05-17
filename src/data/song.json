@@ -44334,6 +44334,80 @@
     "performers": [
       [
         {
+          "name": "hoshinominami",
+          "nameNotations": {
+            "lastName": "星野",
+            "firstName": "みなみ",
+            "lastNameFurigana": "ほしの",
+            "firstNameFurigana": "みなみ",
+            "lastNameEn": "hoshino",
+            "firstNameEn": "minami"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/26/hoshinominami@1x.jpg",
+            "md": "/images/members/singles/26/hoshinominami@2x.jpg",
+            "lg": "/images/members/singles/26/hoshinominami@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "yodayuuki",
+          "nameNotations": {
+            "lastName": "与田",
+            "firstName": "祐希",
+            "lastNameFurigana": "よだ",
+            "firstNameFurigana": "ゆうき",
+            "lastNameEn": "yoda",
+            "firstNameEn": "yuki"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/26/yodayuuki@1x.jpg",
+            "md": "/images/members/singles/26/yodayuuki@2x.jpg",
+            "lg": "/images/members/singles/26/yodayuuki@3x.jpg"
+          },
+          "position": "center",
+          "isMember": true
+        },
+        {
+          "name": "tsutsuiayame",
+          "nameNotations": {
+            "lastName": "筒井",
+            "firstName": "あやめ",
+            "lastNameFurigana": "つつい",
+            "firstNameFurigana": "あやめ",
+            "lastNameEn": "tsutsui",
+            "firstNameEn": "ayame"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/26/tsutsuiayame@1x.jpg",
+            "md": "/images/members/singles/26/tsutsuiayame@2x.jpg",
+            "lg": "/images/members/singles/26/tsutsuiayame@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        }
+      ],
+      [
+        {
+          "name": "akimotomanatsu",
+          "nameNotations": {
+            "lastName": "秋元",
+            "firstName": "真夏",
+            "lastNameFurigana": "あきもと",
+            "firstNameFurigana": "まなつ",
+            "lastNameEn": "akimoto",
+            "firstNameEn": "manatsu"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/26/akimotomanatsu@1x.jpg",
+            "md": "/images/members/singles/26/akimotomanatsu@2x.jpg",
+            "lg": "/images/members/singles/26/akimotomanatsu@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
           "name": "ikutaerika",
           "nameNotations": {
             "lastName": "生田",
@@ -44384,7 +44458,7 @@
             "md": "/images/members/singles/26/yamashitamizuki@2x.jpg",
             "lg": "/images/members/singles/26/yamashitamizuki@3x.jpg"
           },
-          "position": "center",
+          "position": null,
           "isMember": true
         },
         {
@@ -44422,9 +44496,7 @@
           },
           "position": null,
           "isMember": true
-        }
-      ],
-      [
+        },
         {
           "name": "matsumurasayuri",
           "nameNotations": {
@@ -44442,61 +44514,9 @@
           },
           "position": null,
           "isMember": true
-        },
-        {
-          "name": "endousakura",
-          "nameNotations": {
-            "lastName": "遠藤",
-            "firstName": "さくら",
-            "lastNameFurigana": "えんどう",
-            "firstNameFurigana": "さくら",
-            "lastNameEn": "endo",
-            "firstNameEn": "sakura"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/26/endousakura@1x.jpg",
-            "md": "/images/members/singles/26/endousakura@2x.jpg",
-            "lg": "/images/members/singles/26/endousakura@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
-        {
-          "name": "oozonomomoko",
-          "nameNotations": {
-            "lastName": "大園",
-            "firstName": "桃子",
-            "lastNameFurigana": "おおぞの",
-            "firstNameFurigana": "ももこ",
-            "lastNameEn": "ozono",
-            "firstNameEn": "momoko"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/26/oozonomomoko@1x.jpg",
-            "md": "/images/members/singles/26/oozonomomoko@2x.jpg",
-            "lg": "/images/members/singles/26/oozonomomoko@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
-        {
-          "name": "yodayuuki",
-          "nameNotations": {
-            "lastName": "与田",
-            "firstName": "祐希",
-            "lastNameFurigana": "よだ",
-            "firstNameFurigana": "ゆうき",
-            "lastNameEn": "yoda",
-            "firstNameEn": "yuki"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/26/yodayuuki@1x.jpg",
-            "md": "/images/members/singles/26/yodayuuki@2x.jpg",
-            "lg": "/images/members/singles/26/yodayuuki@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
+        }
+      ],
+      [
         {
           "name": "kakiharuka",
           "nameNotations": {
@@ -44511,116 +44531,6 @@
             "sm": "/images/members/singles/26/kakiharuka@1x.jpg",
             "md": "/images/members/singles/26/kakiharuka@2x.jpg",
             "lg": "/images/members/singles/26/kakiharuka@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
-        {
-          "name": "akimotomanatsu",
-          "nameNotations": {
-            "lastName": "秋元",
-            "firstName": "真夏",
-            "lastNameFurigana": "あきもと",
-            "firstNameFurigana": "まなつ",
-            "lastNameEn": "akimoto",
-            "firstNameEn": "manatsu"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/26/akimotomanatsu@1x.jpg",
-            "md": "/images/members/singles/26/akimotomanatsu@2x.jpg",
-            "lg": "/images/members/singles/26/akimotomanatsu@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        }
-      ],
-      [
-        {
-          "name": "shinuchimai",
-          "nameNotations": {
-            "lastName": "新内",
-            "firstName": "眞衣",
-            "lastNameFurigana": "しんうち",
-            "firstNameFurigana": "まい",
-            "lastNameEn": "shinuchi",
-            "firstNameEn": "mai"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/26/shinuchimai@1x.jpg",
-            "md": "/images/members/singles/26/shinuchimai@2x.jpg",
-            "lg": "/images/members/singles/26/shinuchimai@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
-        {
-          "name": "seimiyarei",
-          "nameNotations": {
-            "lastName": "清宮",
-            "firstName": "レイ",
-            "lastNameFurigana": "せいみや",
-            "firstNameFurigana": "れい",
-            "lastNameEn": "seimiya",
-            "firstNameEn": "rei"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/26/seimiyarei@1x.jpg",
-            "md": "/images/members/singles/26/seimiyarei@2x.jpg",
-            "lg": "/images/members/singles/26/seimiyarei@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
-        {
-          "name": "tamuramayu",
-          "nameNotations": {
-            "lastName": "田村",
-            "firstName": "真佑",
-            "lastNameFurigana": "たむら",
-            "firstNameFurigana": "まゆ",
-            "lastNameEn": "tamura",
-            "firstNameEn": "mayu"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/26/tamuramayu@1x.jpg",
-            "md": "/images/members/singles/26/tamuramayu@2x.jpg",
-            "lg": "/images/members/singles/26/tamuramayu@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
-        {
-          "name": "hoshinominami",
-          "nameNotations": {
-            "lastName": "星野",
-            "firstName": "みなみ",
-            "lastNameFurigana": "ほしの",
-            "firstNameFurigana": "みなみ",
-            "lastNameEn": "hoshino",
-            "firstNameEn": "minami"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/26/hoshinominami@1x.jpg",
-            "md": "/images/members/singles/26/hoshinominami@2x.jpg",
-            "lg": "/images/members/singles/26/hoshinominami@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
-        {
-          "name": "tsutsuiayame",
-          "nameNotations": {
-            "lastName": "筒井",
-            "firstName": "あやめ",
-            "lastNameFurigana": "つつい",
-            "firstNameFurigana": "あやめ",
-            "lastNameEn": "tsutsui",
-            "firstNameEn": "ayame"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/26/tsutsuiayame@1x.jpg",
-            "md": "/images/members/singles/26/tsutsuiayame@2x.jpg",
-            "lg": "/images/members/singles/26/tsutsuiayame@3x.jpg"
           },
           "position": null,
           "isMember": true
@@ -44644,6 +44554,60 @@
           "isMember": true
         },
         {
+          "name": "seimiyarei",
+          "nameNotations": {
+            "lastName": "清宮",
+            "firstName": "レイ",
+            "lastNameFurigana": "せいみや",
+            "firstNameFurigana": "れい",
+            "lastNameEn": "seimiya",
+            "firstNameEn": "rei"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/26/seimiyarei@1x.jpg",
+            "md": "/images/members/singles/26/seimiyarei@2x.jpg",
+            "lg": "/images/members/singles/26/seimiyarei@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "oozonomomoko",
+          "nameNotations": {
+            "lastName": "大園",
+            "firstName": "桃子",
+            "lastNameFurigana": "おおぞの",
+            "firstNameFurigana": "ももこ",
+            "lastNameEn": "ozono",
+            "firstNameEn": "momoko"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/26/oozonomomoko@1x.jpg",
+            "md": "/images/members/singles/26/oozonomomoko@2x.jpg",
+            "lg": "/images/members/singles/26/oozonomomoko@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "endousakura",
+          "nameNotations": {
+            "lastName": "遠藤",
+            "firstName": "さくら",
+            "lastNameFurigana": "えんどう",
+            "firstNameFurigana": "さくら",
+            "lastNameEn": "endo",
+            "firstNameEn": "sakura"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/26/endousakura@1x.jpg",
+            "md": "/images/members/singles/26/endousakura@2x.jpg",
+            "lg": "/images/members/singles/26/endousakura@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
           "name": "takayamakazumi",
           "nameNotations": {
             "lastName": "高山",
@@ -44657,6 +44621,42 @@
             "sm": "/images/members/singles/26/takayamakazumi@1x.jpg",
             "md": "/images/members/singles/26/takayamakazumi@2x.jpg",
             "lg": "/images/members/singles/26/takayamakazumi@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "shinuchimai",
+          "nameNotations": {
+            "lastName": "新内",
+            "firstName": "眞衣",
+            "lastNameFurigana": "しんうち",
+            "firstNameFurigana": "まい",
+            "lastNameEn": "shinuchi",
+            "firstNameEn": "mai"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/26/shinuchimai@1x.jpg",
+            "md": "/images/members/singles/26/shinuchimai@2x.jpg",
+            "lg": "/images/members/singles/26/shinuchimai@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "tamuramayu",
+          "nameNotations": {
+            "lastName": "田村",
+            "firstName": "真佑",
+            "lastNameFurigana": "たむら",
+            "firstNameFurigana": "まゆ",
+            "lastNameEn": "tamura",
+            "firstNameEn": "mayu"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/26/tamuramayu@1x.jpg",
+            "md": "/images/members/singles/26/tamuramayu@2x.jpg",
+            "lg": "/images/members/singles/26/tamuramayu@3x.jpg"
           },
           "position": null,
           "isMember": true
