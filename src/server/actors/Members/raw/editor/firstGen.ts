@@ -668,6 +668,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://n46llc.com/s/m00/artist/7',
       },
       {
+        title: SocialMedia.Weibo,
+        url: 'https://weibo.com/u/7266809683',
+      },
+      {
         title: SocialMedia.Nanagogo,
         url: 'https://7gogo.jp/nishino-nanase',
       },
