@@ -79,6 +79,7 @@ const socialMediaOrder: string[] = [
   SocialMedia.Official,
   SocialMedia.OnlineSalon,
   SocialMedia.Profile,
+  SocialMedia.Weibo,
 ].reverse();
 
 export function sortBySocialMedia(
