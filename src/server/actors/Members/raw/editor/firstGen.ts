@@ -835,6 +835,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.nogizaka46.com/member/detail/matsumurasayuri.php',
       },
       {
+        title: SocialMedia.Weibo,
+        url: 'https://weibo.com/u/7266841339',
+      },
+      {
         title: SocialMedia.Nanagogo,
         url: 'https://7gogo.jp/matsumura-sayuri',
       },
