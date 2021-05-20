@@ -333,6 +333,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://blog.nogizaka46.com/asuka.saito/',
       },
       {
+        title: SocialMedia.Weibo,
+        url: 'https://weibo.com/saitoasukaofficial',
+      },
+      {
         title: SocialMedia.Profile,
         url: 'https://www.nogizaka46.com/member/detail/saitouasuka.php',
       },
