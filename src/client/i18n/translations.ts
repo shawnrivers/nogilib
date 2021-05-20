@@ -219,6 +219,11 @@ const dictionary = {
     ja: 'Twitter',
     zh: 'Twitter',
   },
+  Weibo: {
+    en: 'Weibo',
+    ja: 'Weibo',
+    zh: '微博',
+  },
   テレビ朝日: {
     en: 'TV Asahi',
     ja: 'テレビ朝日',

@@ -9,4 +9,5 @@ export enum SocialMedia {
   YouTube = 'YouTube',
   OnlineSalon = 'online salon',
   FanClub = 'fan club',
+  Weibo = 'Weibo',
 }
