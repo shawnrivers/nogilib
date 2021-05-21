@@ -7937,7 +7937,12 @@
       "left": "pink",
       "right": "white"
     },
-    "sites": [],
+    "sites": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/rina_yamat0"
+      }
+    ],
     "photoAlbums": [],
     "positionsHistory": [
       {

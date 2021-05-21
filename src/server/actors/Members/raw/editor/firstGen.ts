@@ -1212,6 +1212,12 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     height: 162,
     bloodType: BloodType.O,
     origin: Birthplace.Miyagi,
+    sites: [
+      {
+        title: SocialMedia.Twitter,
+        url: 'https://twitter.com/rina_yamat0',
+      },
+    ],
     graduatedDate: '2015-04-04',
   }),
   createMemberRaw({
