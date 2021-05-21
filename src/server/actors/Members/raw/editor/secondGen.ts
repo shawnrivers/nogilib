@@ -447,6 +447,16 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     height: 165,
     bloodType: BloodType.A,
     origin: Birthplace.Tokyo,
+    sites: [
+      {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/nanami_nishikawa/',
+      },
+      {
+        title: SocialMedia.Twitter,
+        url: 'https://twitter.com/nnnnn0703',
+      },
+    ],
     graduatedDate: '2014-03-22',
   }),
 ];

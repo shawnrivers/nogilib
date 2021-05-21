@@ -12359,7 +12359,16 @@
       "left": "none",
       "right": "none"
     },
-    "sites": [],
+    "sites": [
+      {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/nanami_nishikawa/"
+      },
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/nnnnn0703"
+      }
+    ],
     "photoAlbums": [],
     "positionsHistory": [
       {
