@@ -8486,162 +8486,6 @@
     }
   },
   {
-    "name": "nishikawananami",
-    "nameNotations": {
-      "lastName": "西川",
-      "firstName": "七海",
-      "lastNameFurigana": "にしかわ",
-      "firstNameFurigana": "ななみ",
-      "lastNameEn": "nishikawa",
-      "firstNameEn": "nanami"
-    },
-    "profileImage": {
-      "sm": "/images/members/singles/7/nishikawananami@1x.jpg",
-      "md": "/images/members/singles/7/nishikawananami@2x.jpg",
-      "lg": "/images/members/singles/7/nishikawananami@3x.jpg"
-    },
-    "gallery": [
-      {
-        "sm": "/images/members/singles/7/nishikawananami@1x.jpg",
-        "md": "/images/members/singles/7/nishikawananami@2x.jpg",
-        "lg": "/images/members/singles/7/nishikawananami@3x.jpg"
-      }
-    ],
-    "join": "second",
-    "graduation": {
-      "isGraduated": true,
-      "graduatedDate": "2014-03-22"
-    },
-    "birthday": "1993-07-03",
-    "height": 165,
-    "bloodType": "a",
-    "origin": "東京都",
-    "units": [],
-    "corps": [],
-    "glowStickColor": {
-      "left": "none",
-      "right": "none"
-    },
-    "sites": [],
-    "photoAlbums": [],
-    "positionsHistory": [
-      {
-        "singleNumber": "1",
-        "position": "none"
-      },
-      {
-        "singleNumber": "2",
-        "position": "none"
-      },
-      {
-        "singleNumber": "3",
-        "position": "none"
-      },
-      {
-        "singleNumber": "4",
-        "position": "none"
-      },
-      {
-        "singleNumber": "5",
-        "position": "none"
-      },
-      {
-        "singleNumber": "6",
-        "position": "none"
-      },
-      {
-        "singleNumber": "7",
-        "position": "trainee"
-      },
-      {
-        "singleNumber": "8",
-        "position": "none"
-      },
-      {
-        "singleNumber": "9",
-        "position": "none"
-      },
-      {
-        "singleNumber": "10",
-        "position": "none"
-      },
-      {
-        "singleNumber": "11",
-        "position": "none"
-      },
-      {
-        "singleNumber": "12",
-        "position": "none"
-      },
-      {
-        "singleNumber": "13",
-        "position": "none"
-      },
-      {
-        "singleNumber": "14",
-        "position": "none"
-      },
-      {
-        "singleNumber": "15",
-        "position": "none"
-      },
-      {
-        "singleNumber": "16",
-        "position": "none"
-      },
-      {
-        "singleNumber": "17",
-        "position": "none"
-      },
-      {
-        "singleNumber": "18",
-        "position": "none"
-      },
-      {
-        "singleNumber": "19",
-        "position": "none"
-      },
-      {
-        "singleNumber": "20",
-        "position": "none"
-      },
-      {
-        "singleNumber": "21",
-        "position": "none"
-      },
-      {
-        "singleNumber": "22",
-        "position": "none"
-      },
-      {
-        "singleNumber": "23",
-        "position": "none"
-      },
-      {
-        "singleNumber": "24",
-        "position": "none"
-      },
-      {
-        "singleNumber": "25",
-        "position": "none"
-      },
-      {
-        "singleNumber": "26",
-        "position": "none"
-      },
-      {
-        "singleNumber": "27",
-        "position": "none"
-      }
-    ],
-    "positionsCounter": {
-      "center": 0,
-      "fukujin": 0,
-      "selected": 0,
-      "under": 0
-    }
-  },
-  {
     "name": "miyazawaseira",
     "nameNotations": {
       "lastName": "宮澤",
@@ -12397,6 +12241,162 @@
       {
         "singleNumber": "9",
         "position": "trainee"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      },
+      {
+        "singleNumber": "25",
+        "position": "none"
+      },
+      {
+        "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
+      }
+    ],
+    "positionsCounter": {
+      "center": 0,
+      "fukujin": 0,
+      "selected": 0,
+      "under": 0
+    }
+  },
+  {
+    "name": "nishikawananami",
+    "nameNotations": {
+      "lastName": "西川",
+      "firstName": "七海",
+      "lastNameFurigana": "にしかわ",
+      "firstNameFurigana": "ななみ",
+      "lastNameEn": "nishikawa",
+      "firstNameEn": "nanami"
+    },
+    "profileImage": {
+      "sm": "/images/members/singles/7/nishikawananami@1x.jpg",
+      "md": "/images/members/singles/7/nishikawananami@2x.jpg",
+      "lg": "/images/members/singles/7/nishikawananami@3x.jpg"
+    },
+    "gallery": [
+      {
+        "sm": "/images/members/singles/7/nishikawananami@1x.jpg",
+        "md": "/images/members/singles/7/nishikawananami@2x.jpg",
+        "lg": "/images/members/singles/7/nishikawananami@3x.jpg"
+      }
+    ],
+    "join": "second",
+    "graduation": {
+      "isGraduated": true,
+      "graduatedDate": "2014-03-22"
+    },
+    "birthday": "1993-07-03",
+    "height": 165,
+    "bloodType": "a",
+    "origin": "東京都",
+    "units": [],
+    "corps": [],
+    "glowStickColor": {
+      "left": "none",
+      "right": "none"
+    },
+    "sites": [],
+    "photoAlbums": [],
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "trainee"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
       },
       {
         "singleNumber": "10",

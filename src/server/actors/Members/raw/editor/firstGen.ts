@@ -98,8 +98,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         sites: [
           {
             title: 'amazon',
-            url:
-              'https://www.amazon.co.jp/%E7%94%9F%E7%94%B0%E7%B5%B5%E6%A2%A8%E8%8A%B11st%E5%86%99%E7%9C%9F%E9%9B%86-%E3%80%8E%E8%BB%A2%E8%AA%BF%E3%80%8F-%E7%94%9F%E7%94%B0-%E7%B5%B5%E6%A2%A8%E8%8A%B1/dp/4087807789/',
+            url: 'https://www.amazon.co.jp/%E7%94%9F%E7%94%B0%E7%B5%B5%E6%A2%A8%E8%8A%B11st%E5%86%99%E7%9C%9F%E9%9B%86-%E3%80%8E%E8%BB%A2%E8%AA%BF%E3%80%8F-%E7%94%9F%E7%94%B0-%E7%B5%B5%E6%A2%A8%E8%8A%B1/dp/4087807789/',
           },
         ],
         cover: 'photo-albums/ikutaerika_1.jpg',
@@ -153,8 +152,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         sites: [
           {
             title: 'amazon',
-            url:
-              'https://www.amazon.co.jp/%E4%B9%83%E6%9C%A8%E5%9D%8246-%E7%94%9F%E9%A7%92%E9%87%8C%E5%A5%88%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E5%86%99%E7%9C%9F%E9%9B%86%E3%80%8E%E5%90%9B%E3%81%AE%E8%B6%B3%E8%B7%A1%E3%80%8F-%E7%94%9F%E9%A7%92-%E9%87%8C%E5%A5%88/dp/4344028864',
+            url: 'https://www.amazon.co.jp/%E4%B9%83%E6%9C%A8%E5%9D%8246-%E7%94%9F%E9%A7%92%E9%87%8C%E5%A5%88%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E5%86%99%E7%9C%9F%E9%9B%86%E3%80%8E%E5%90%9B%E3%81%AE%E8%B6%B3%E8%B7%A1%E3%80%8F-%E7%94%9F%E9%A7%92-%E9%87%8C%E5%A5%88/dp/4344028864',
           },
         ],
         cover: 'photo-albums/ikomarina_1.jpg',
@@ -241,8 +239,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         sites: [
           {
             title: 'amazon',
-            url:
-              'https://www.amazon.co.jp/%E8%A1%9B%E8%97%A4%E7%BE%8E%E5%BD%A9-%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E5%86%99%E7%9C%9F%E9%9B%86-%E3%80%8E-%E5%BD%A9-%E3%80%8F/dp/4847044290',
+            url: 'https://www.amazon.co.jp/%E8%A1%9B%E8%97%A4%E7%BE%8E%E5%BD%A9-%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E5%86%99%E7%9C%9F%E9%9B%86-%E3%80%8E-%E5%BD%A9-%E3%80%8F/dp/4847044290',
           },
         ],
         cover: 'photo-albums/etoumisa_1.jpg',
@@ -501,8 +498,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         sites: [
           {
             title: 'amazon',
-            url:
-              'https://www.amazon.co.jp/Adult-Shiraishi-First-Photo-Collection/dp/4344026713/',
+            url: 'https://www.amazon.co.jp/Adult-Shiraishi-First-Photo-Collection/dp/4344026713/',
           },
         ],
         cover: 'photo-albums/shiraishimai_1.jpg',
@@ -514,8 +510,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         sites: [
           {
             title: 'amazon',
-            url:
-              'https://www.amazon.co.jp/%E4%B9%83%E6%9C%A8%E5%9D%8246-%E7%99%BD%E7%9F%B3%E9%BA%BB%E8%A1%A31st%E3%83%95%E3%82%A9%E3%83%88%E3%83%96%E3%83%83%E3%82%AF-MAI-STYLE-%E4%B8%BB%E5%A9%A6%E3%81%AE%E5%8F%8B%E7%94%9F%E6%B4%BB%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA/dp/407402098X',
+            url: 'https://www.amazon.co.jp/%E4%B9%83%E6%9C%A8%E5%9D%8246-%E7%99%BD%E7%9F%B3%E9%BA%BB%E8%A1%A31st%E3%83%95%E3%82%A9%E3%83%88%E3%83%96%E3%83%83%E3%82%AF-MAI-STYLE-%E4%B8%BB%E5%A9%A6%E3%81%AE%E5%8F%8B%E7%94%9F%E6%B4%BB%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA/dp/407402098X',
           },
         ],
         cover: 'photo-albums/shiraishimai_pb.jpg',
@@ -527,8 +522,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         sites: [
           {
             title: 'amazon',
-            url:
-              'https://www.amazon.co.jp/%E7%99%BD%E7%9F%B3%E9%BA%BB%E8%A1%A3%E5%86%99%E7%9C%9F%E9%9B%86-%E3%83%91%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88-%E7%99%BD%E7%9F%B3-%E9%BA%BB%E8%A1%A3/dp/406352857X',
+            url: 'https://www.amazon.co.jp/%E7%99%BD%E7%9F%B3%E9%BA%BB%E8%A1%A3%E5%86%99%E7%9C%9F%E9%9B%86-%E3%83%91%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88-%E7%99%BD%E7%9F%B3-%E9%BA%BB%E8%A1%A3/dp/406352857X',
           },
         ],
         cover: 'photo-albums/shiraishimai_2.jpg',
@@ -582,8 +576,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         sites: [
           {
             title: 'amazon',
-            url:
-              'https://www.amazon.co.jp/%E9%AB%98%E5%B1%B1%E4%B8%80%E5%AE%9F%E5%86%99%E7%9C%9F%E9%9B%86-%E6%81%8B%E3%81%8B%E3%82%82%E3%81%97%E3%82%8C%E3%81%AA%E3%81%84-%E9%AB%98%E5%B1%B1%E4%B8%80%E5%AE%9F/dp/4054064744',
+            url: 'https://www.amazon.co.jp/%E9%AB%98%E5%B1%B1%E4%B8%80%E5%AE%9F%E5%86%99%E7%9C%9F%E9%9B%86-%E6%81%8B%E3%81%8B%E3%82%82%E3%81%97%E3%82%8C%E3%81%AA%E3%81%84-%E9%AB%98%E5%B1%B1%E4%B8%80%E5%AE%9F/dp/4054064744',
           },
         ],
         cover: 'photo-albums/takayamakazumi_1.jpg',
@@ -684,8 +677,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         sites: [
           {
             title: 'amazon',
-            url:
-              'https://www.amazon.co.jp/%E8%A5%BF%E9%87%8E%E4%B8%83%E7%80%AC%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E5%86%99%E7%9C%9F%E9%9B%86%E3%80%8E%E6%99%AE%E6%AE%B5%E7%9D%80%E3%80%8F-%E8%A5%BF%E9%87%8E-%E4%B8%83%E7%80%AC/dp/4344027094/',
+            url: 'https://www.amazon.co.jp/%E8%A5%BF%E9%87%8E%E4%B8%83%E7%80%AC%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E5%86%99%E7%9C%9F%E9%9B%86%E3%80%8E%E6%99%AE%E6%AE%B5%E7%9D%80%E3%80%8F-%E8%A5%BF%E9%87%8E-%E4%B8%83%E7%80%AC/dp/4344027094/',
           },
         ],
         cover: 'photo-albums/nishinonanase_1.jpg',
@@ -697,8 +689,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         sites: [
           {
             title: 'amazon',
-            url:
-              'https://www.amazon.co.jp/%E8%A5%BF%E9%87%8E%E4%B8%83%E7%80%AC%E5%86%99%E7%9C%9F%E9%9B%86-%E9%A2%A8%E3%82%92%E7%9D%80%E6%9B%BF%E3%81%88%E3%81%A6-%E8%A5%BF%E9%87%8E-%E4%B8%83%E7%80%AC/dp/4087807983/',
+            url: 'https://www.amazon.co.jp/%E8%A5%BF%E9%87%8E%E4%B8%83%E7%80%AC%E5%86%99%E7%9C%9F%E9%9B%86-%E9%A2%A8%E3%82%92%E7%9D%80%E6%9B%BF%E3%81%88%E3%81%A6-%E8%A5%BF%E9%87%8E-%E4%B8%83%E7%80%AC/dp/4087807983/',
           },
         ],
         cover: 'photo-albums/nishinonanase_2.jpg',
@@ -1066,8 +1057,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         sites: [
           {
             title: 'amazon',
-            url:
-              'https://www.amazon.co.jp/%E6%A9%8B%E6%9C%AC%E5%A5%88%E3%80%85%E6%9C%AA%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E5%86%99%E7%9C%9F%E9%9B%86%E3%80%8E%E3%82%84%E3%81%95%E3%81%97%E3%81%84%E6%A3%98%EF%BC%88%E3%81%A8%E3%81%92%EF%BC%89%E3%80%8F-%E6%A9%8B%E6%9C%AC-%E5%A5%88%E3%80%85%E6%9C%AA/dp/4344027949/',
+            url: 'https://www.amazon.co.jp/%E6%A9%8B%E6%9C%AC%E5%A5%88%E3%80%85%E6%9C%AA%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E5%86%99%E7%9C%9F%E9%9B%86%E3%80%8E%E3%82%84%E3%81%95%E3%81%97%E3%81%84%E6%A3%98%EF%BC%88%E3%81%A8%E3%81%92%EF%BC%89%E3%80%8F-%E6%A9%8B%E6%9C%AC-%E5%A5%88%E3%80%85%E6%9C%AA/dp/4344027949/',
           },
         ],
         cover: 'photo-albums/hashimotonanami_1.jpg',
@@ -1114,8 +1104,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         sites: [
           {
             title: 'amazon',
-            url:
-              'https://www.amazon.co.jp/s?k=%E9%A2%A8%E3%81%AB%E7%9D%80%E6%9B%BF%E3%81%88%E3%81%A6&i=stripbooks&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&ref=nb_sb_noss',
+            url: 'https://www.amazon.co.jp/s?k=%E9%A2%A8%E3%81%AB%E7%9D%80%E6%9B%BF%E3%81%88%E3%81%A6&i=stripbooks&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&ref=nb_sb_noss',
           },
         ],
         cover: 'photo-albums/fukagawamai_1.jpg',
@@ -1127,8 +1116,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         sites: [
           {
             title: 'amazon',
-            url:
-              'https://www.amazon.co.jp/%E6%B7%B1%E5%B7%9D%E9%BA%BB%E8%A1%A3PhotoMagazine-%E3%80%8EMY-magazine%E3%80%8F-MOOK-%E6%B7%B1%E5%B7%9D/dp/4800280494/',
+            url: 'https://www.amazon.co.jp/%E6%B7%B1%E5%B7%9D%E9%BA%BB%E8%A1%A3PhotoMagazine-%E3%80%8EMY-magazine%E3%80%8F-MOOK-%E6%B7%B1%E5%B7%9D/dp/4800280494/',
           },
         ],
         cover: 'photo-albums/fukagawamai_pm.jpg',
@@ -1271,24 +1259,6 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       },
     ],
     graduatedDate: '2014-10-19',
-  }),
-  createMemberRaw({
-    name: MemberNameKey.NishikawaNanami,
-    nameNotations: [
-      '西川',
-      '七海',
-      'にしかわ',
-      'ななみ',
-      'nishikawa',
-      'nanami',
-    ],
-    glowStickColor: [GlowStickColorType.None, GlowStickColorType.None],
-    join: JoinedGenerationType.Second,
-    birthday: '1993-07-03',
-    height: 165,
-    bloodType: BloodType.A,
-    origin: Birthplace.Tokyo,
-    graduatedDate: '2014-03-22',
   }),
   createMemberRaw({
     name: MemberNameKey.MiyazawaSeira,

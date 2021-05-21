@@ -431,4 +431,22 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Saitama,
     graduatedDate: '2014-10-18',
   }),
+  createMemberRaw({
+    name: MemberNameKey.NishikawaNanami,
+    nameNotations: [
+      '西川',
+      '七海',
+      'にしかわ',
+      'ななみ',
+      'nishikawa',
+      'nanami',
+    ],
+    glowStickColor: [GlowStickColorType.None, GlowStickColorType.None],
+    join: JoinedGenerationType.Second,
+    birthday: '1993-07-03',
+    height: 165,
+    bloodType: BloodType.A,
+    origin: Birthplace.Tokyo,
+    graduatedDate: '2014-03-22',
+  }),
 ];
