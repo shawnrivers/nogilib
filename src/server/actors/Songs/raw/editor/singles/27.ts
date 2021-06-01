@@ -8,6 +8,11 @@ export const TWENTY_SEVENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: SONGS['ごめんねFingers crossed'].title,
     type: SongType.Title,
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['杉山勝彦', 'APAZZI'],
+      direct: ['東市篤憲'],
+    },
     center: [MemberNameKey.EndouSakura],
     fukujin: 'row-1-2',
     formations: {
@@ -42,6 +47,12 @@ export const TWENTY_SEVENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: SONGS['全部　夢のまま'].title,
     type: SongType.Coupling,
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['you-me'],
+      arrange: ['佐々木裕'],
+      direct: ['神谷雄貴'],
+    },
     center: [MemberNameKey.YodaYuuki],
     formations: {
       firstRow: [
@@ -77,6 +88,10 @@ export const TWENTY_SEVENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: SONGS['大人たちには指示されない'].title,
     type: SongType.ThirdGeneration,
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['BASEMINT'],
+    },
     center: [MemberNameKey.IwamotoRenka],
     formations: {
       firstRow: [
@@ -102,6 +117,11 @@ export const TWENTY_SEVENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: SONGS['ざんぶざざぶん'].title,
     type: SongType.Unit,
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['NOVECHIKA', 'TETTA'],
+      direct: ['高橋一生'],
+    },
     formations: {
       firstRow: [MemberNameKey.YodaYuuki, MemberNameKey.TsutsuiAyame],
     },
@@ -109,11 +129,21 @@ export const TWENTY_SEVENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: SONGS['さ～ゆ～Ready？'].title,
     type: SongType.Solo,
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['Masayoshi Kawabata'],
+      direct: ['萩原健太郎', '月田茂', '伊藤衆人'],
+    },
     solo: MemberNameKey.MatsumuraSayuri,
   }),
   createSongRaw({
     title: SONGS['錆びたコンパス'].title,
     type: SongType.Under,
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['中村泰輔'],
+      direct: ['大久保拓朗'],
+    },
     center: [MemberNameKey.YamazakiRena],
     formations: {
       firstRow: [
@@ -136,6 +166,10 @@ export const TWENTY_SEVENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: SONGS['猫舌カモミールティー'].title,
     type: SongType.FourthGeneration,
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['Shinobu Suzuki'],
+    },
     center: [MemberNameKey.TamuraMayu],
     formations: {
       firstRow: [
