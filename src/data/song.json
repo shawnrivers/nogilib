@@ -43916,10 +43916,17 @@
       "lg": "/images/artworks/singles/27/A@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
-      "compose": [],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦",
+        "APAZZI"
+      ],
       "arrange": [],
-      "direct": []
+      "direct": [
+        "東市篤憲"
+      ]
     },
     "single": {
       "title": "ごめんねFingers crossed",
@@ -44313,10 +44320,18 @@
       "lg": "/images/artworks/singles/27/A@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
-      "compose": [],
-      "arrange": [],
-      "direct": []
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "you-me"
+      ],
+      "arrange": [
+        "佐々木裕"
+      ],
+      "direct": [
+        "神谷雄貴"
+      ]
     },
     "single": {
       "title": "ごめんねFingers crossed",
@@ -44674,8 +44689,12 @@
       "lg": "/images/artworks/singles/27/A@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
-      "compose": [],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "BASEMINT"
+      ],
       "arrange": [],
       "direct": []
     },
@@ -44927,10 +44946,17 @@
       "lg": "/images/artworks/singles/27/B@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
-      "compose": [],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "NOVECHIKA",
+        "TETTA"
+      ],
       "arrange": [],
-      "direct": []
+      "direct": [
+        "高橋一生"
+      ]
     },
     "single": {
       "title": "ごめんねFingers crossed",
@@ -44996,10 +45022,18 @@
       "lg": "/images/artworks/singles/27/C@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
-      "compose": [],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Masayoshi Kawabata"
+      ],
       "arrange": [],
-      "direct": []
+      "direct": [
+        "萩原健太郎",
+        "月田茂",
+        "伊藤衆人"
+      ]
     },
     "single": {
       "title": "ごめんねFingers crossed",
@@ -45047,10 +45081,16 @@
       "lg": "/images/artworks/singles/27/D@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
-      "compose": [],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "中村泰輔"
+      ],
       "arrange": [],
-      "direct": []
+      "direct": [
+        "大久保拓朗"
+      ]
     },
     "single": {
       "title": "ごめんねFingers crossed",
@@ -45314,8 +45354,12 @@
       "lg": "/images/artworks/singles/27/T@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
-      "compose": [],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "Shinobu Suzuki"
+      ],
       "arrange": [],
       "direct": []
     },
