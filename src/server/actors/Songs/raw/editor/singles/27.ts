@@ -147,19 +147,23 @@ export const TWENTY_SEVENTH_SINGLE_SONGS: SongRaw[] = [
     center: [MemberNameKey.YamazakiRena],
     formations: {
       firstRow: [
+        MemberNameKey.WatanabeMiria,
         MemberNameKey.YamazakiRena,
         MemberNameKey.ItouJunna,
-        MemberNameKey.ItouRiria,
-        MemberNameKey.KitanoHinako,
+      ],
+      secondRow: [
         MemberNameKey.SakaguchiTamami,
-        MemberNameKey.SatouKaede,
+        MemberNameKey.KitanoHinako,
         MemberNameKey.SuzukiAyane,
         MemberNameKey.TeradaRanze,
+      ],
+      thirdRow: [
+        MemberNameKey.SatouKaede,
+        MemberNameKey.WadaMaaya,
         MemberNameKey.NakamuraReno,
         MemberNameKey.MukaiHazuki,
         MemberNameKey.YoshidaAyanoChristie,
-        MemberNameKey.WatanabeMiria,
-        MemberNameKey.WadaMaaya,
+        MemberNameKey.ItouRiria,
       ],
     },
   }),
