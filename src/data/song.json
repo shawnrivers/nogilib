@@ -45108,6 +45108,24 @@
     "performers": [
       [
         {
+          "name": "watanabemiria",
+          "nameNotations": {
+            "lastName": "渡辺",
+            "firstName": "みり愛",
+            "lastNameFurigana": "わたなべ",
+            "firstNameFurigana": "みりあ",
+            "lastNameEn": "watanabe",
+            "firstNameEn": "miria"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/26/watanabemiria@1x.jpg",
+            "md": "/images/members/singles/26/watanabemiria@2x.jpg",
+            "lg": "/images/members/singles/26/watanabemiria@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
           "name": "yamazakirena",
           "nameNotations": {
             "lastName": "山崎",
@@ -45142,43 +45160,9 @@
           },
           "position": null,
           "isMember": true
-        },
-        {
-          "name": "itouriria",
-          "nameNotations": {
-            "lastName": "伊藤",
-            "firstName": "理々杏",
-            "lastNameFurigana": "いとう",
-            "firstNameFurigana": "りりあ",
-            "lastNameEn": "ito",
-            "firstNameEn": "riria"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/26/itouriria@1x.jpg",
-            "md": "/images/members/singles/26/itouriria@2x.jpg",
-            "lg": "/images/members/singles/26/itouriria@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
-        {
-          "name": "kitanohinako",
-          "nameNotations": {
-            "lastName": "北野",
-            "firstName": "日奈子",
-            "lastNameFurigana": "きたの",
-            "firstNameFurigana": "ひなこ",
-            "lastNameEn": "kitano",
-            "firstNameEn": "hinako"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/26/kitanohinako@1x.jpg",
-            "md": "/images/members/singles/26/kitanohinako@2x.jpg",
-            "lg": "/images/members/singles/26/kitanohinako@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
+        }
+      ],
+      [
         {
           "name": "sakaguchitamami",
           "nameNotations": {
@@ -45198,19 +45182,19 @@
           "isMember": true
         },
         {
-          "name": "satoukaede",
+          "name": "kitanohinako",
           "nameNotations": {
-            "lastName": "佐藤",
-            "firstName": "楓",
-            "lastNameFurigana": "さとう",
-            "firstNameFurigana": "かえで",
-            "lastNameEn": "sato",
-            "firstNameEn": "kaede"
+            "lastName": "北野",
+            "firstName": "日奈子",
+            "lastNameFurigana": "きたの",
+            "firstNameFurigana": "ひなこ",
+            "lastNameEn": "kitano",
+            "firstNameEn": "hinako"
           },
           "profileImage": {
-            "sm": "/images/members/singles/26/satoukaede@1x.jpg",
-            "md": "/images/members/singles/26/satoukaede@2x.jpg",
-            "lg": "/images/members/singles/26/satoukaede@3x.jpg"
+            "sm": "/images/members/singles/26/kitanohinako@1x.jpg",
+            "md": "/images/members/singles/26/kitanohinako@2x.jpg",
+            "lg": "/images/members/singles/26/kitanohinako@3x.jpg"
           },
           "position": null,
           "isMember": true
@@ -45247,6 +45231,44 @@
             "sm": "/images/members/singles/26/teradaranze@1x.jpg",
             "md": "/images/members/singles/26/teradaranze@2x.jpg",
             "lg": "/images/members/singles/26/teradaranze@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        }
+      ],
+      [
+        {
+          "name": "satoukaede",
+          "nameNotations": {
+            "lastName": "佐藤",
+            "firstName": "楓",
+            "lastNameFurigana": "さとう",
+            "firstNameFurigana": "かえで",
+            "lastNameEn": "sato",
+            "firstNameEn": "kaede"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/26/satoukaede@1x.jpg",
+            "md": "/images/members/singles/26/satoukaede@2x.jpg",
+            "lg": "/images/members/singles/26/satoukaede@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "wadamaaya",
+          "nameNotations": {
+            "lastName": "和田",
+            "firstName": "まあや",
+            "lastNameFurigana": "わだ",
+            "firstNameFurigana": "まあや",
+            "lastNameEn": "wada",
+            "firstNameEn": "maya"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/26/wadamaaya@1x.jpg",
+            "md": "/images/members/singles/26/wadamaaya@2x.jpg",
+            "lg": "/images/members/singles/26/wadamaaya@3x.jpg"
           },
           "position": null,
           "isMember": true
@@ -45306,37 +45328,19 @@
           "isMember": true
         },
         {
-          "name": "watanabemiria",
+          "name": "itouriria",
           "nameNotations": {
-            "lastName": "渡辺",
-            "firstName": "みり愛",
-            "lastNameFurigana": "わたなべ",
-            "firstNameFurigana": "みりあ",
-            "lastNameEn": "watanabe",
-            "firstNameEn": "miria"
+            "lastName": "伊藤",
+            "firstName": "理々杏",
+            "lastNameFurigana": "いとう",
+            "firstNameFurigana": "りりあ",
+            "lastNameEn": "ito",
+            "firstNameEn": "riria"
           },
           "profileImage": {
-            "sm": "/images/members/singles/26/watanabemiria@1x.jpg",
-            "md": "/images/members/singles/26/watanabemiria@2x.jpg",
-            "lg": "/images/members/singles/26/watanabemiria@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
-        {
-          "name": "wadamaaya",
-          "nameNotations": {
-            "lastName": "和田",
-            "firstName": "まあや",
-            "lastNameFurigana": "わだ",
-            "firstNameFurigana": "まあや",
-            "lastNameEn": "wada",
-            "firstNameEn": "maya"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/26/wadamaaya@1x.jpg",
-            "md": "/images/members/singles/26/wadamaaya@2x.jpg",
-            "lg": "/images/members/singles/26/wadamaaya@3x.jpg"
+            "sm": "/images/members/singles/26/itouriria@1x.jpg",
+            "md": "/images/members/singles/26/itouriria@2x.jpg",
+            "lg": "/images/members/singles/26/itouriria@3x.jpg"
           },
           "position": null,
           "isMember": true
