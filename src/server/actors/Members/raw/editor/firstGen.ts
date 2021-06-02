@@ -847,6 +847,18 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         ],
         cover: 'photo-albums/matsumurasayuri_1.jpg',
       },
+      {
+        title: '次、いつ会える？',
+        release: '2021-07-13',
+        type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/sayuringohan',
+          },
+        ],
+        cover: 'photo-albums/matsumurasayuri_2.jpg',
+      },
     ],
   }),
   createMemberRaw({
