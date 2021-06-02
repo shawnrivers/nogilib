@@ -4932,6 +4932,22 @@
     ],
     "photoAlbums": [
       {
+        "title": "次、いつ会える？",
+        "release": "2021-07-13",
+        "type": "photo album",
+        "sites": [
+          {
+            "title": "Twitter",
+            "url": "https://twitter.com/sayuringohan"
+          }
+        ],
+        "cover": {
+          "sm": "/images/photo-albums/matsumurasayuri_2@1x.jpg",
+          "md": "/images/photo-albums/matsumurasayuri_2@2x.jpg",
+          "lg": "/images/photo-albums/matsumurasayuri_2@3x.jpg"
+        }
+      },
+      {
         "title": "意外っていうか、前から可愛いと思ってた",
         "release": "2017-12-12",
         "type": "photo album",
