@@ -1021,6 +1021,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/marikaito_official/',
       },
       {
+        title: SocialMedia.Twitter,
+        url: 'https://twitter.com/marikaito_staff',
+      },
+      {
         title: SocialMedia.Official,
         url: 'https://itomarika.com/',
       },
