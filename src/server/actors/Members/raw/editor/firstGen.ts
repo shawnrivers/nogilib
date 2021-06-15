@@ -720,6 +720,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Kanagawa,
     sites: [
       {
+        title: SocialMedia.Twitter,
+        url: 'https://twitter.com/noujo_ami',
+      },
+      {
         title: SocialMedia.Instagram,
         url: 'https://www.instagram.com/noujoami_official/',
       },
