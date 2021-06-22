@@ -9,6 +9,7 @@ module.exports = {
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:import/typescript',
+    'next',
   ],
   plugins: ['react-hooks', 'import'],
   parserOptions: {
@@ -37,6 +38,7 @@ module.exports = {
     'import/order': 'warn',
     'no-console': 'warn',
     'prefer-const': 'off',
+    '@next/next/no-img-element': 'off',
   },
   settings: {
     react: {

@@ -5,7 +5,8 @@ class AppDocument extends Document {
     return (
       <Html>
         <Head>
-          <script src="/theme.js"></script>
+          {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+          <script src="/theme.js" />
         </Head>
         <body>
           <Main />
