@@ -27,6 +27,7 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'error',
     '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/no-object-literal-type-assertion': 'off',
+    '@typescript-eslint/ban-ts-comment': 'warn',
     'react/display-name': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
