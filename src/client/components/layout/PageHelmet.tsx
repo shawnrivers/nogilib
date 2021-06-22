@@ -14,10 +14,8 @@ type PageHelmetProps = {
 };
 
 export const PageHelmet: React.FC<PageHelmetProps> = props => {
-  const {
-    title,
-    options = { textTransform: 'capitalize-first-letter' },
-  } = props;
+  const { title, options = { textTransform: 'capitalize-first-letter' } } =
+    props;
   const pageTitleText = title ? `${title} | ${SITE_TITLE}` : SITE_TITLE;
 
   let pageTitle;
@@ -65,6 +63,20 @@ export const PageHelmet: React.FC<PageHelmetProps> = props => {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content="@yuxiao_he" />
       <title>{pageTitle}</title>
+
+      {/* Theme colors */}
+      <meta
+        name="theme-color"
+        content="#ffffff"
+        // @ts-ignore
+        media="(prefers-color-scheme: light)"
+      />
+      <meta
+        name="theme-color"
+        content="#333333"
+        // @ts-ignore
+        media="(prefers-color-scheme: dark)"
+      />
 
       {/* Standalone app meta */}
       <meta name="mobile-web-app-capable" content="yes" />
