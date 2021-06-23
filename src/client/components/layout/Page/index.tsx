@@ -20,7 +20,7 @@ const SkipLink: React.FC = () => {
       css={css`
         display: inline-block;
         top: ${commonStyles.spacing.xs};
-        left: ${commonStyles.spacing.s};
+        left: calc(${commonStyles.spacing.s} + env(safe-area-inset-left));
         transform: translateY(-170%);
         opacity: 0;
         transition: all 0.3s;
