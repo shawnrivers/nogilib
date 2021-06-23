@@ -53,7 +53,7 @@
     "react-lazyload": "^3.2.0"
   },
   "devDependencies": {
-    "@axe-core/react": "^4.2.1",
+    "@axe-core/react": "^4.2.2",
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
     "@lhci/cli": "^0.8.0",
