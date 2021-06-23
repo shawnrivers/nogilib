@@ -103,8 +103,12 @@ export const PageContent: React.FC<HeaderProps> = props => {
           ${commonStyles.sizes.navigationBarHeight} + ${commonStyles.spacing.m} +
             env(safe-area-inset-top)
         );
-        padding-left: ${commonStyles.spacing.m};
-        padding-right: ${commonStyles.spacing.m};
+        padding-left: calc(
+          ${commonStyles.spacing.m} + env(safe-area-inset-left)
+        );
+        padding-right: calc(
+          ${commonStyles.spacing.m} + env(safe-area-inset-right)
+        );
         padding-bottom: calc(
           ${commonStyles.sizes.navigationBarHeight} +
             ${commonStyles.spacing.xxl} + env(safe-area-inset-bottom)

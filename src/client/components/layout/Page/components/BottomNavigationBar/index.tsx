@@ -84,7 +84,10 @@ export const BottomNavigationBar: React.FC = () => {
             align-items: center;
             justify-content: space-between;
             min-height: ${commonStyles.sizes.navigationBarHeight};
-            padding: 0 0.5em env(safe-area-inset-bottom);
+            padding-top: 0;
+            padding-bottom: env(safe-area-inset-bottom);
+            padding-left: calc(0.5em + env(safe-area-inset-left));
+            padding-right: calc(0.5em + env(safe-area-inset-right));
 
             & > * {
               flex: 1;
