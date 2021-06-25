@@ -1,7 +1,8 @@
 {
   "name": "nogilib-scripts",
   "scripts": {
-    "generate-responsive-images": "ts-node ./src/responsiveImages/index.ts"
+    "generate-responsive-images": "ts-node ./src/responsiveImages/index.ts",
+    "download-images": "ts-node ./src/downloadImages/index.ts"
   },
   "devDependencies": {
     "@types/cli-progress": "^3.9.1",
