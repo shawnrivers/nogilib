@@ -57,7 +57,7 @@ const getResponsiveImages = async (
   fs.copyFileSync(path, compressedFilepath);
 
   await compress(compressedFilepath, {
-    quality: 89,
+    quality: 100,
   });
 
   const [width1x, width2x, width3x] = getResponsiveWidths(width, originalWidth);
