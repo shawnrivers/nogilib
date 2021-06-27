@@ -72,6 +72,7 @@ const HomePage: React.FC = () => {
               css={css`
                 object-fit: cover;
                 object-position: top;
+                background: none;
               `}
             />
           </h1>
