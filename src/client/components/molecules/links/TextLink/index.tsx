@@ -70,32 +70,45 @@ export const TextLink = React.forwardRef<TextLinkRef, TextLinkProps>(
                   underlineColorVariant
                 )}
               );
+            `,
+      [disabled, backgroundType, showUnderline, underlineColorVariant]
+    );
 
-              &:active {
-                background-color: var(
-                  ${getColorVarName(backgroundType, backgroundColorVariant)}
-                );
-              }
+    return (
+      <BaseLink
+        {...linkProps}
+        css={
+          !disabled
+            ? css`
+                &.focus-visible {
+                  outline: 2px solid transparent;
+                  outline-offset: 2px;
+                }
 
-              @media (hover: hover) and (pointer: fine) {
-                &:hover {
+                &:active > *,
+                &.focus-visible > * {
                   background-color: var(
                     ${getColorVarName(backgroundType, backgroundColorVariant)}
                   );
                 }
-              }
-            `,
-      [
-        disabled,
-        backgroundColorVariant,
-        backgroundType,
-        showUnderline,
-        underlineColorVariant,
-      ]
-    );
 
-    return (
-      <BaseLink {...linkProps} ref={ref}>
+                @media (hover: hover) and (pointer: fine) {
+                  &:hover > * {
+                    background-color: var(
+                      ${getColorVarName(backgroundType, backgroundColorVariant)}
+                    );
+                  }
+                }
+              `
+            : css`
+                &.focus-visible {
+                  outline: 2px solid transparent;
+                  outline-offset: 2px;
+                }
+              `
+        }
+        ref={ref}
+      >
         <Typography
           variant={typographyVariant}
           element="span"

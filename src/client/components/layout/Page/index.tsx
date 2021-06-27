@@ -18,19 +18,20 @@ const SkipLink: React.FC = () => {
       id="skip-link"
       href={`#${PAGE_CONTENT_ID}`}
       css={css`
-        display: inline-block;
         top: ${commonStyles.spacing.xs};
         left: calc(${commonStyles.spacing.s} + env(safe-area-inset-left));
         transform: translateY(-170%);
         opacity: 0;
-        transition: all 0.3s;
+        transition: transform 0.3s, opacity 0.3s;
         z-index: ${commonStyles.elevations[componentElevationKey.skipLink]
           .zIndex};
         position: absolute;
 
-        &:focus {
+        &.focus-visible {
           opacity: 1;
           transform: translateY(0%);
+          outline: 2px solid transparent;
+          outline-offset: 2px;
         }
       `}
     >
