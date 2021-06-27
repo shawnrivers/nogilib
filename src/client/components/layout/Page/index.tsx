@@ -43,6 +43,7 @@ const SkipLink: React.FC = () => {
         css={css`
           display: inline-block;
           border-radius: ${commonStyles.borderRadius.xs};
+          overflow: hidden;
         `}
       >
         <div

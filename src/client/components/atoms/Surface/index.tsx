@@ -54,7 +54,6 @@ export const Surface: React.FC<SurfaceProps> = props => {
         transition-duration: 0.3s;
         transition-timing-function: ease-out;
         transition-property: background-color, box-shadow;
-        overflow: hidden;
       `}
       className={className}
     >
