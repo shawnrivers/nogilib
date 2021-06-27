@@ -1,7 +1,10 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
 import { SpacingKey } from 'client/styles/tokens/spacing';
-import { componentElevationKey } from 'client/styles/tokens/elevation';
+import {
+  componentElevationKey,
+  getElevationWhiteOverlayTransparencyVarName,
+} from 'client/styles/tokens/elevation';
 import { commonStyles } from 'client/styles/tokens';
 import { BorderRadiusKey } from 'client/styles/tokens/borderRadius';
 import { Surface, SurfaceProps } from 'client/components/atoms/Surface';
@@ -28,7 +31,6 @@ export const CardContent: React.FC<CardContentProps> = props => {
       elevation={elevation}
       css={css`
         border-radius: ${commonStyles.borderRadius[borderRadius]};
-        overflow: hidden;
         position: relative;
       `}
       {...restProps}
@@ -74,7 +76,59 @@ export const Card: React.FC<CardProps> = props => {
   const isClickable = 'href' in props && props.href !== undefined;
 
   return isClickable ? (
-    <BaseLink {...linkProps}>
+    <BaseLink
+      css={css`
+        &.focus-visible {
+          outline: 2px solid transparent;
+          outline-offset: 2px;
+        }
+
+        &:active > * {
+          box-shadow: ${commonStyles.elevations[
+            componentElevationKey.pressedComponentOnBackground
+          ].boxShadow};
+        }
+
+        &.focus-visible > * {
+          box-shadow: ${commonStyles.elevations[
+            componentElevationKey.elevatedComponentOnBackground
+          ].boxShadow};
+        }
+
+        &:active > * > * {
+          background-color: var(
+            ${getElevationWhiteOverlayTransparencyVarName(
+              componentElevationKey.pressedComponentOnBackground
+            )}
+          );
+        }
+
+        &.focus-visible > * > * {
+          background-color: var(
+            ${getElevationWhiteOverlayTransparencyVarName(
+              componentElevationKey.elevatedComponentOnBackground
+            )}
+          );
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+          &:hover > * {
+            box-shadow: ${commonStyles.elevations[
+              componentElevationKey.elevatedComponentOnBackground
+            ].boxShadow};
+          }
+
+          &:hover > * > * {
+            background-color: var(
+              ${getElevationWhiteOverlayTransparencyVarName(
+                componentElevationKey.elevatedComponentOnBackground
+              )}
+            );
+          }
+        }
+      `}
+      {...linkProps}
+    >
       <CardContent
         borderRadius={borderRadius}
         padding={padding}
