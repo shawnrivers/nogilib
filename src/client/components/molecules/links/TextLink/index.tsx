@@ -76,7 +76,6 @@ export const TextLink = React.forwardRef<TextLinkRef, TextLinkProps>(
 
     return (
       <BaseLink
-        {...linkProps}
         css={
           !disabled
             ? css`
@@ -108,6 +107,8 @@ export const TextLink = React.forwardRef<TextLinkRef, TextLinkProps>(
               `
         }
         ref={ref}
+        tabIndex={!disabled ? 0 : -1}
+        {...linkProps}
       >
         <Typography
           variant={typographyVariant}
