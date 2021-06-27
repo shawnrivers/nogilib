@@ -7,7 +7,7 @@ type AspectRatioImageProps = ImageProps & {
 };
 
 export const AspectRatioImage: React.FC<AspectRatioImageProps> = props => {
-  const { aspectRatio = 1, className, ...restImgProps } = props;
+  const { aspectRatio = 1, className, alt, ...restImgProps } = props;
 
   return (
     <div
@@ -20,6 +20,7 @@ export const AspectRatioImage: React.FC<AspectRatioImageProps> = props => {
       className={className}
     >
       <Image
+        alt={alt}
         css={css`
           position: absolute;
           top: 0;

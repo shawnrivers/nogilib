@@ -11,12 +11,11 @@ const isImgLoadingSupported = (): boolean => {
 export type ImageProps = React.ImgHTMLAttributes<HTMLImageElement>;
 
 export const Image: React.FC<ImageProps> = props => {
-  const { loading, ...imgProps } = props;
+  const { loading, alt, ...imgProps } = props;
 
-  /* eslint-disable jsx-a11y/alt-text */
   return loading === 'lazy' && !isImgLoadingSupported() ? (
     <PolyfilledLazyImage {...imgProps} />
   ) : (
-    <img loading={loading} {...imgProps} />
+    <img loading={loading} alt={alt} {...imgProps} />
   );
 };
