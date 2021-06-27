@@ -32,6 +32,7 @@ export const CardContent: React.FC<CardContentProps> = props => {
       css={css`
         border-radius: ${commonStyles.borderRadius[borderRadius]};
         position: relative;
+        overflow: hidden;
       `}
       {...restProps}
     >
