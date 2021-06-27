@@ -160,92 +160,87 @@ export const EmotionThemeProvider: React.FC = props => {
             --elevation-white-overlay-transparency-4: rgba(255, 255, 255, 0.09);
             --elevation-white-overlay-transparency-5: rgba(255, 255, 255, 0.1);
             --elevation-white-overlay-transparency-6: rgba(255, 255, 255, 0.11);
-            --elevation-white-overlay-transparency-7: rgba(255, 255, 255, 0.11);
-            --elevation-white-overlay-transparency-8: rgba(255, 255, 255, 0.12);
-            --elevation-white-overlay-transparency-9: rgba(255, 255, 255, 0.12);
+            --elevation-white-overlay-transparency-7: rgba(255, 255, 255, 0.12);
+            --elevation-white-overlay-transparency-8: rgba(255, 255, 255, 0.13);
+            --elevation-white-overlay-transparency-9: rgba(255, 255, 255, 0.14);
             --elevation-white-overlay-transparency-10: rgba(
               255,
               255,
               255,
-              0.13
+              0.15
             );
             --elevation-white-overlay-transparency-11: rgba(
               255,
               255,
               255,
-              0.13
+              0.16
             );
             --elevation-white-overlay-transparency-12: rgba(
               255,
               255,
               255,
-              0.14
+              0.17
             );
             --elevation-white-overlay-transparency-13: rgba(
               255,
               255,
               255,
-              0.14
+              0.18
             );
             --elevation-white-overlay-transparency-14: rgba(
               255,
               255,
               255,
-              0.14
+              0.19
             );
-            --elevation-white-overlay-transparency-15: rgba(
-              255,
-              255,
-              255,
-              0.14
-            );
+            --elevation-white-overlay-transparency-15: rgba(255, 255, 255, 0.2);
             --elevation-white-overlay-transparency-16: rgba(
               255,
               255,
               255,
-              0.15
+              0.21
             );
             --elevation-white-overlay-transparency-17: rgba(
               255,
               255,
               255,
-              0.15
+              0.22
             );
             --elevation-white-overlay-transparency-18: rgba(
               255,
               255,
               255,
-              0.15
+              0.23
             );
             --elevation-white-overlay-transparency-19: rgba(
               255,
               255,
               255,
-              0.15
+              0.24
             );
             --elevation-white-overlay-transparency-20: rgba(
               255,
               255,
               255,
-              0.15
+              0.25
             );
             --elevation-white-overlay-transparency-21: rgba(
               255,
               255,
               255,
-              0.15
+              0.26
             );
             --elevation-white-overlay-transparency-23: rgba(
               255,
               255,
               255,
-              0.15
+              0.27
             );
             --elevation-white-overlay-transparency-24: rgba(
               255,
               255,
               255,
-              0.16
+              0.28
             );
           }
 
