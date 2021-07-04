@@ -126,7 +126,7 @@
 - [伊藤 かりん | 乃木坂46合同会社所属 タレント一覧](https://n46llc.com/s/m00/artist/2)
 - [相楽 伊織 | 乃木坂46合同会社所属 タレント一覧](https://n46llc.com/s/m00/artist/5)
 - [米徳 京花 (@kyoka_yonetoku) • Instagram photos and videos](https://www.instagram.com/kyoka_yonetoku/)
-- [RENA MATSUI Official Fan Club]('https://matsuirena.club/')
+- [RENA MATSUI Official Fan Club](https://matsuirena.club/)
 
 ## Copyrights
 
