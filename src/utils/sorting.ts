@@ -74,6 +74,7 @@ const socialMediaOrder: string[] = [
   SocialMedia.Instagram,
   SocialMedia.Twitter,
   SocialMedia.YouTube,
+  SocialMedia.TikTok,
   SocialMedia.Blog,
   SocialMedia.FourthGenBlog,
   SocialMedia.Official,
