@@ -372,6 +372,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/yuuri_3ito/',
       },
       {
+        title: SocialMedia.TikTok,
+        url: 'https://www.tiktok.com/@yuuri_3ito',
+      },
+      {
         title: SocialMedia.Profile,
         url: 'https://n46llc.com/s/m00/artist/4',
       },
