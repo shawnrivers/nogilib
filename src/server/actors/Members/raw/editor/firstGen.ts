@@ -295,6 +295,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.youtube.com/channel/UCygUvA0j15FpHp6kv2IuQYA',
       },
       {
+        title: SocialMedia.TikTok,
+        url: 'https://www.tiktok.com/@kawagohina3',
+      },
+      {
         title: SocialMedia.Official,
         url: 'https://kawagopro.com/',
       },
