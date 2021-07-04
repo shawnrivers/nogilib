@@ -504,19 +504,18 @@ const dictionary = {
     ja: '結果がみ見つかりませんでした',
     zh: '找不到搜索结果',
   },
-  'A web app for showing the information about Nogizaka46 in a user-friendly way': {
-    en:
-      'A web app for showing the information about Nogizaka46 in a user-friendly way',
-    ja: '乃木坂46の情報をわかりやすく提示するウェブアプリケーション',
-    zh: '简洁地显示乃木坂46的信息的网页应用',
-  },
-  'NOGILIB is a web app for showing the information about Nogizaka46 in a user-friendly way.': {
-    en:
-      'NOGILIB is a web app for showing the information about Nogizaka46 in a user-friendly way.',
-    ja:
-      'NOGILIBは乃木坂46の情報をわかりやすく提示するウェブアプリケーションです。',
-    zh: 'NOGILIB是一个简洁地显示乃木坂46的信息的网页应用。',
-  },
+  'A web app for showing the information about Nogizaka46 in a user-friendly way':
+    {
+      en: 'A web app for showing the information about Nogizaka46 in a user-friendly way',
+      ja: '乃木坂46の情報をわかりやすく提示するウェブアプリケーション',
+      zh: '简洁地显示乃木坂46的信息的网页应用',
+    },
+  'NOGILIB is a web app for showing the information about Nogizaka46 in a user-friendly way.':
+    {
+      en: 'NOGILIB is a web app for showing the information about Nogizaka46 in a user-friendly way.',
+      ja: 'NOGILIBは乃木坂46の情報をわかりやすく提示するウェブアプリケーションです。',
+      zh: 'NOGILIB是一个简洁地显示乃木坂46的信息的网页应用。',
+    },
   CD: {
     en: 'CD',
     ja: 'CD',
@@ -676,6 +675,11 @@ const dictionary = {
     en: 'fan club',
     ja: 'ファンクラブ',
     zh: '粉丝俱乐部',
+  },
+  TikTok: {
+    en: 'TikTok',
+    ja: 'TikTok',
+    zh: '抖音',
   },
 };
 

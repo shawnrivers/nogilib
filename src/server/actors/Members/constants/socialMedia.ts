@@ -10,4 +10,5 @@ export enum SocialMedia {
   OnlineSalon = 'online salon',
   FanClub = 'fan club',
   Weibo = 'Weibo',
+  TikTok = 'TikTok',
 }
