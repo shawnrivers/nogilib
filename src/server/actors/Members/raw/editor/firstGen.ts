@@ -380,10 +380,6 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.tiktok.com/@yuuri_3ito',
       },
       {
-        title: SocialMedia.Profile,
-        url: 'https://n46llc.com/s/m00/artist/4',
-      },
-      {
         title: SocialMedia.Nanagogo,
         url: 'https://7gogo.jp/MM1u8Yp3Dv6C',
       },
