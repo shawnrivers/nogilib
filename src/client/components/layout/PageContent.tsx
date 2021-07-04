@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
 import * as React from 'react';
+import { useRouter } from 'next/router';
 import { ArrowBackIcon } from 'client/components/atoms/icons/ArrowBack';
 import { Typography } from 'client/components/atoms/Typography';
 import { commonStyles } from 'client/styles/tokens';
@@ -29,8 +30,7 @@ const Header: React.FC<HeaderProps> = props => {
     titleTextTransform = 'uppercase',
   } = props;
   const { getTranslation } = useTranslations();
-
-  const handleGoBack = React.useCallback(() => window.history.back(), []);
+  const router = useRouter();
 
   return (
     <header
@@ -47,10 +47,7 @@ const Header: React.FC<HeaderProps> = props => {
             align-items: flex-end;
           `}
         >
-          <BaseButton
-            aria-label={getTranslation('back')}
-            onClick={handleGoBack}
-          >
+          <BaseButton aria-label={getTranslation('back')} onClick={router.back}>
             <ArrowBackIcon
               width={32}
               height={32}
