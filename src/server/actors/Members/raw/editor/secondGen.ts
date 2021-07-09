@@ -370,6 +370,20 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://7gogo.jp/watanabe-miria',
       },
     ],
+    photoAlbums: [
+      {
+        title: '渡辺みり愛1st写真集',
+        release: '2021-08-31',
+        type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/miria_1st',
+          },
+        ],
+        cover: 'photo-albums/watanabemiria_1.jpg',
+      },
+    ],
   }),
   createMemberRaw({
     name: MemberNameKey.SagaraIori,
