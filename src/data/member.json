@@ -11775,7 +11775,24 @@
         "url": "https://7gogo.jp/watanabe-miria"
       }
     ],
-    "photoAlbums": [],
+    "photoAlbums": [
+      {
+        "title": "渡辺みり愛1st写真集",
+        "release": "2021-08-31",
+        "type": "photo album",
+        "sites": [
+          {
+            "title": "Twitter",
+            "url": "https://twitter.com/miria_1st"
+          }
+        ],
+        "cover": {
+          "sm": "/images/photo-albums/watanabemiria_1@1x.jpg",
+          "md": "/images/photo-albums/watanabemiria_1@2x.jpg",
+          "lg": "/images/photo-albums/watanabemiria_1@3x.jpg"
+        }
+      }
+    ],
     "positionsHistory": [
       {
         "singleNumber": "1",
