@@ -5286,6 +5286,22 @@
     ],
     "photoAlbums": [
       {
+        "title": "若月佑美2nd写真集",
+        "release": "2021-09-08",
+        "type": "photo album",
+        "sites": [
+          {
+            "title": "Twitter",
+            "url": "https://twitter.com/wakatsukiyumi_2"
+          }
+        ],
+        "cover": {
+          "sm": "/images/photo-albums/wakatsukiyumi_2@1x.jpg",
+          "md": "/images/photo-albums/wakatsukiyumi_2@2x.jpg",
+          "lg": "/images/photo-albums/wakatsukiyumi_2@3x.jpg"
+        }
+      },
+      {
         "title": "パレット",
         "release": "2017-11-07",
         "type": "photo album",
