@@ -898,6 +898,18 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     ],
     photoAlbums: [
       {
+        title: '若月佑美2nd写真集',
+        release: '2021-09-08',
+        type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/wakatsukiyumi_2',
+          },
+        ],
+        cover: 'photo-albums/wakatsukiyumi_2.jpg',
+      },
+      {
         title: 'パレット',
         release: '2017-11-07',
         type: PhotoAlbumType.PhotoAlbum,
