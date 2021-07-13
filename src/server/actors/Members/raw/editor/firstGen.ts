@@ -997,6 +997,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://twitter.com/mahiro_chan0723',
       },
       {
+        title: SocialMedia.Official,
+        url: 'https://mahiro.jp/',
+      },
+      {
         title: SocialMedia.FanClub,
         url: 'https://fanicon.net/fancommunities/3640',
       },
