@@ -820,6 +820,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     height: 164,
     bloodType: BloodType.B,
     origin: Birthplace.Osaka,
+    graduatedDate: '2021-07-13',
     sites: [
       {
         title: SocialMedia.Instagram,
@@ -831,7 +832,11 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       },
       {
         title: SocialMedia.Profile,
-        url: 'https://www.nogizaka46.com/member/detail/matsumurasayuri.php',
+        url: 'https://n46llc.com/s/m00/artist/14',
+      },
+      {
+        title: SocialMedia.Official,
+        url: 'https://sayurimatsumura.com/',
       },
       {
         title: SocialMedia.Weibo,

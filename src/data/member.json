@@ -4932,8 +4932,8 @@
     ],
     "join": "first",
     "graduation": {
-      "isGraduated": false,
-      "graduatedDate": ""
+      "isGraduated": true,
+      "graduatedDate": "2021-07-13"
     },
     "birthday": "1992-08-27",
     "height": 164,
@@ -4961,8 +4961,12 @@
         "url": "https://blog.nogizaka46.com/sayuri.matsumura/"
       },
       {
+        "title": "official",
+        "url": "https://sayurimatsumura.com/"
+      },
+      {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/matsumurasayuri.php"
+        "url": "https://n46llc.com/s/m00/artist/14"
       },
       {
         "title": "Weibo",
