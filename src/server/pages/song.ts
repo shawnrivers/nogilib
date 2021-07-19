@@ -50,10 +50,17 @@ function getPerformerProfileImage(
   song: SongResult,
   member: MemberResult
 ): ImageUrl {
-  const { album } = song.performersTag;
   const { profileImages } = member;
+  const { album } = song.performersTag;
+  const { single } = song;
 
   const singleProfileImages = arrayToObject(profileImages.singles, 'number');
+
+  // If the song is in a single, use the single's profile image.
+  if (singleProfileImages[single.number]) {
+    return singleProfileImages[single.number].url;
+  }
+
   const digitalProfileImages = arrayToObject(profileImages.digital, 'number');
   const albumProfileImages = arrayToObject(profileImages.albums, 'number');
 
