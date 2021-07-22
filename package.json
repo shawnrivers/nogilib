@@ -61,7 +61,7 @@
     "@storybook/addon-essentials": "^6.3.5",
     "@storybook/addon-knobs": "^6.3.0",
     "@storybook/preset-typescript": "^3.0.0",
-    "@storybook/react": "^6.3.4",
+    "@storybook/react": "^6.3.5",
     "@types/jest": "^26.0.24",
     "@types/node": "^16.4.0",
     "@types/query-string": "^6.3.0",
