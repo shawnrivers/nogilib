@@ -54,7 +54,7 @@
   },
   "devDependencies": {
     "@axe-core/react": "^4.2.2",
-    "@commitlint/cli": "^12.1.4",
+    "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
     "@lhci/cli": "^0.8.0",
     "@storybook/addon-actions": "^6.3.6",
