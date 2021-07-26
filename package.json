@@ -65,7 +65,7 @@
     "@types/jest": "^26.0.24",
     "@types/node": "^16.4.1",
     "@types/query-string": "^6.3.0",
-    "@types/react": "^17.0.14",
+    "@types/react": "^17.0.15",
     "@types/react-dom": "^17.0.9",
     "@types/react-helmet": "^6.1.2",
     "@types/react-lazyload": "^3.1.1",
