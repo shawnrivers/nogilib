@@ -903,7 +903,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     ],
     photoAlbums: [
       {
-        title: '若月佑美2nd写真集',
+        title: 'アンド チョコレート',
         release: '2021-09-08',
         type: PhotoAlbumType.PhotoAlbum,
         sites: [
