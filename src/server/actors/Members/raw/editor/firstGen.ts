@@ -1001,6 +1001,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.youtube.com/channel/UC6PRAAvAYKP-axlG3LC-WdA',
       },
       {
+        title: SocialMedia.TikTok,
+        url: 'https://www.tiktok.com/@mahiro_0723',
+      },
+      {
         title: SocialMedia.Official,
         url: 'https://mahiro.jp/',
       },
