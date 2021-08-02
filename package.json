@@ -22,8 +22,8 @@
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook -s ./public/",
     "lighthouse": "lhci autorun",
-    "update-data:start": "./scripts/src/update-data/start.sh",
-    "update-data:release": "./scripts/src/update-data/release.sh"
+    "update-data:start": "cd ./scripts && npm run update-data:start",
+    "update-data:release": "cd ./scripts && npm run update-data:release"
   },
   "lint-staged": {
     "src/client/**/*.{ts,tsx}": [
