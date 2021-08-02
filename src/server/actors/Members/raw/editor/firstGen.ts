@@ -997,6 +997,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://twitter.com/mahiro_chan0723',
       },
       {
+        title: SocialMedia.YouTube,
+        url: 'https://www.youtube.com/channel/UC6PRAAvAYKP-axlG3LC-WdA',
+      },
+      {
         title: SocialMedia.Official,
         url: 'https://mahiro.jp/',
       },
