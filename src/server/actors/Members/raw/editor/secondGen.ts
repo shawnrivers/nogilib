@@ -376,7 +376,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     ],
     photoAlbums: [
       {
-        title: '渡辺みり愛1st写真集',
+        title: '消極的な華やかさ',
         release: '2021-08-31',
         type: PhotoAlbumType.PhotoAlbum,
         sites: [
