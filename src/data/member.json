@@ -10,11 +10,16 @@
       "firstNameEn": "manatsu"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/akimotomanatsu@1x.jpg",
-      "md": "/images/members/singles/26/akimotomanatsu@2x.jpg",
-      "lg": "/images/members/singles/26/akimotomanatsu@3x.jpg"
+      "sm": "/images/members/singles/27/akimotomanatsu@1x.jpg",
+      "md": "/images/members/singles/27/akimotomanatsu@2x.jpg",
+      "lg": "/images/members/singles/27/akimotomanatsu@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/akimotomanatsu@1x.jpg",
+        "md": "/images/members/singles/27/akimotomanatsu@2x.jpg",
+        "lg": "/images/members/singles/27/akimotomanatsu@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/akimotomanatsu@1x.jpg",
         "md": "/images/members/singles/26/akimotomanatsu@2x.jpg",
@@ -310,11 +315,16 @@
       "firstNameEn": "erika"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/ikutaerika@1x.jpg",
-      "md": "/images/members/singles/26/ikutaerika@2x.jpg",
-      "lg": "/images/members/singles/26/ikutaerika@3x.jpg"
+      "sm": "/images/members/singles/27/ikutaerika@1x.jpg",
+      "md": "/images/members/singles/27/ikutaerika@2x.jpg",
+      "lg": "/images/members/singles/27/ikutaerika@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/ikutaerika@1x.jpg",
+        "md": "/images/members/singles/27/ikutaerika@2x.jpg",
+        "lg": "/images/members/singles/27/ikutaerika@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/ikutaerika@1x.jpg",
         "md": "/images/members/singles/26/ikutaerika@2x.jpg",
@@ -1637,6 +1647,10 @@
         "url": "https://www.youtube.com/channel/UCygUvA0j15FpHp6kv2IuQYA"
       },
       {
+        "title": "TikTok",
+        "url": "https://www.tiktok.com/@kawagohina3"
+      },
+      {
         "title": "official",
         "url": "https://kawagopro.com/"
       }
@@ -1787,11 +1801,16 @@
       "firstNameEn": "asuka"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/saitouasuka@1x.jpg",
-      "md": "/images/members/singles/26/saitouasuka@2x.jpg",
-      "lg": "/images/members/singles/26/saitouasuka@3x.jpg"
+      "sm": "/images/members/singles/27/saitouasuka@1x.jpg",
+      "md": "/images/members/singles/27/saitouasuka@2x.jpg",
+      "lg": "/images/members/singles/27/saitouasuka@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/saitouasuka@1x.jpg",
+        "md": "/images/members/singles/27/saitouasuka@2x.jpg",
+        "lg": "/images/members/singles/27/saitouasuka@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/saitouasuka@1x.jpg",
         "md": "/images/members/singles/26/saitouasuka@2x.jpg",
@@ -2209,8 +2228,8 @@
         "url": "https://www.instagram.com/yuuri_3ito/"
       },
       {
-        "title": "profile",
-        "url": "https://n46llc.com/s/m00/artist/4"
+        "title": "TikTok",
+        "url": "https://www.tiktok.com/@yuuri_3ito"
       },
       {
         "title": "755",
@@ -3019,11 +3038,16 @@
       "firstNameEn": "kazumi"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/takayamakazumi@1x.jpg",
-      "md": "/images/members/singles/26/takayamakazumi@2x.jpg",
-      "lg": "/images/members/singles/26/takayamakazumi@3x.jpg"
+      "sm": "/images/members/singles/27/takayamakazumi@1x.jpg",
+      "md": "/images/members/singles/27/takayamakazumi@2x.jpg",
+      "lg": "/images/members/singles/27/takayamakazumi@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/takayamakazumi@1x.jpg",
+        "md": "/images/members/singles/27/takayamakazumi@2x.jpg",
+        "lg": "/images/members/singles/27/takayamakazumi@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/takayamakazumi@1x.jpg",
         "md": "/images/members/singles/26/takayamakazumi@2x.jpg",
@@ -4219,11 +4243,16 @@
       "firstNameEn": "hina"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/higuchihina@1x.jpg",
-      "md": "/images/members/singles/26/higuchihina@2x.jpg",
-      "lg": "/images/members/singles/26/higuchihina@3x.jpg"
+      "sm": "/images/members/singles/27/higuchihina@1x.jpg",
+      "md": "/images/members/singles/27/higuchihina@2x.jpg",
+      "lg": "/images/members/singles/27/higuchihina@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/higuchihina@1x.jpg",
+        "md": "/images/members/singles/27/higuchihina@2x.jpg",
+        "lg": "/images/members/singles/27/higuchihina@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/higuchihina@1x.jpg",
         "md": "/images/members/singles/26/higuchihina@2x.jpg",
@@ -4492,11 +4521,16 @@
       "firstNameEn": "minami"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/hoshinominami@1x.jpg",
-      "md": "/images/members/singles/26/hoshinominami@2x.jpg",
-      "lg": "/images/members/singles/26/hoshinominami@3x.jpg"
+      "sm": "/images/members/singles/27/hoshinominami@1x.jpg",
+      "md": "/images/members/singles/27/hoshinominami@2x.jpg",
+      "lg": "/images/members/singles/27/hoshinominami@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/hoshinominami@1x.jpg",
+        "md": "/images/members/singles/27/hoshinominami@2x.jpg",
+        "lg": "/images/members/singles/27/hoshinominami@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/hoshinominami@1x.jpg",
         "md": "/images/members/singles/26/hoshinominami@2x.jpg",
@@ -4780,11 +4814,21 @@
       "firstNameEn": "sayuri"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/matsumurasayuri@1x.jpg",
-      "md": "/images/members/singles/26/matsumurasayuri@2x.jpg",
-      "lg": "/images/members/singles/26/matsumurasayuri@3x.jpg"
+      "sm": "/images/members/others/matsumurasayuri_2021-07-13@1x.jpg",
+      "md": "/images/members/others/matsumurasayuri_2021-07-13@2x.jpg",
+      "lg": "/images/members/others/matsumurasayuri_2021-07-13@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/others/matsumurasayuri_2021-07-13@1x.jpg",
+        "md": "/images/members/others/matsumurasayuri_2021-07-13@2x.jpg",
+        "lg": "/images/members/others/matsumurasayuri_2021-07-13@3x.jpg"
+      },
+      {
+        "sm": "/images/members/singles/27/matsumurasayuri@1x.jpg",
+        "md": "/images/members/singles/27/matsumurasayuri@2x.jpg",
+        "lg": "/images/members/singles/27/matsumurasayuri@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/matsumurasayuri@1x.jpg",
         "md": "/images/members/singles/26/matsumurasayuri@2x.jpg",
@@ -4893,8 +4937,8 @@
     ],
     "join": "first",
     "graduation": {
-      "isGraduated": false,
-      "graduatedDate": ""
+      "isGraduated": true,
+      "graduatedDate": "2021-07-13"
     },
     "birthday": "1992-08-27",
     "height": 164,
@@ -4922,8 +4966,12 @@
         "url": "https://blog.nogizaka46.com/sayuri.matsumura/"
       },
       {
+        "title": "official",
+        "url": "https://sayurimatsumura.com/"
+      },
+      {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/matsumurasayuri.php"
+        "url": "https://n46llc.com/s/m00/artist/14"
       },
       {
         "title": "Weibo",
@@ -5247,6 +5295,22 @@
     ],
     "photoAlbums": [
       {
+        "title": "アンド チョコレート",
+        "release": "2021-09-08",
+        "type": "photo album",
+        "sites": [
+          {
+            "title": "Twitter",
+            "url": "https://twitter.com/wakatsukiyumi_2"
+          }
+        ],
+        "cover": {
+          "sm": "/images/photo-albums/wakatsukiyumi_2@1x.jpg",
+          "md": "/images/photo-albums/wakatsukiyumi_2@2x.jpg",
+          "lg": "/images/photo-albums/wakatsukiyumi_2@3x.jpg"
+        }
+      },
+      {
         "title": "パレット",
         "release": "2017-11-07",
         "type": "photo album",
@@ -5391,11 +5455,16 @@
       "firstNameEn": "maya"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/wadamaaya@1x.jpg",
-      "md": "/images/members/singles/26/wadamaaya@2x.jpg",
-      "lg": "/images/members/singles/26/wadamaaya@3x.jpg"
+      "sm": "/images/members/singles/27/wadamaaya@1x.jpg",
+      "md": "/images/members/singles/27/wadamaaya@2x.jpg",
+      "lg": "/images/members/singles/27/wadamaaya@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/wadamaaya@1x.jpg",
+        "md": "/images/members/singles/27/wadamaaya@2x.jpg",
+        "lg": "/images/members/singles/27/wadamaaya@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/wadamaaya@1x.jpg",
         "md": "/images/members/singles/26/wadamaaya@2x.jpg",
@@ -5918,11 +5987,16 @@
       "firstNameEn": "mahiro"
     },
     "profileImage": {
-      "sm": "/images/members/others/kawamuramahiro_2021-05-17@1x.jpg",
-      "md": "/images/members/others/kawamuramahiro_2021-05-17@2x.jpg",
-      "lg": "/images/members/others/kawamuramahiro_2021-05-17@3x.jpg"
+      "sm": "/images/members/others/kawamuramahiro_2021-08-03@1x.jpg",
+      "md": "/images/members/others/kawamuramahiro_2021-08-03@2x.jpg",
+      "lg": "/images/members/others/kawamuramahiro_2021-08-03@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/others/kawamuramahiro_2021-08-03@1x.jpg",
+        "md": "/images/members/others/kawamuramahiro_2021-08-03@2x.jpg",
+        "lg": "/images/members/others/kawamuramahiro_2021-08-03@3x.jpg"
+      },
       {
         "sm": "/images/members/others/kawamuramahiro_2021-05-17@1x.jpg",
         "md": "/images/members/others/kawamuramahiro_2021-05-17@2x.jpg",
@@ -6039,6 +6113,18 @@
       {
         "title": "Twitter",
         "url": "https://twitter.com/mahiro_chan0723"
+      },
+      {
+        "title": "YouTube",
+        "url": "https://www.youtube.com/channel/UC6PRAAvAYKP-axlG3LC-WdA"
+      },
+      {
+        "title": "TikTok",
+        "url": "https://www.tiktok.com/@mahiro_0723"
+      },
+      {
+        "title": "official",
+        "url": "https://mahiro.jp/"
       },
       {
         "title": "fan club",
@@ -9515,11 +9601,16 @@
       "firstNameEn": "junna"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/itoujunna@1x.jpg",
-      "md": "/images/members/singles/26/itoujunna@2x.jpg",
-      "lg": "/images/members/singles/26/itoujunna@3x.jpg"
+      "sm": "/images/members/singles/27/itoujunna@1x.jpg",
+      "md": "/images/members/singles/27/itoujunna@2x.jpg",
+      "lg": "/images/members/singles/27/itoujunna@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/itoujunna@1x.jpg",
+        "md": "/images/members/singles/27/itoujunna@2x.jpg",
+        "lg": "/images/members/singles/27/itoujunna@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/itoujunna@1x.jpg",
         "md": "/images/members/singles/26/itoujunna@2x.jpg",
@@ -9760,11 +9851,16 @@
       "firstNameEn": "hinako"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/kitanohinako@1x.jpg",
-      "md": "/images/members/singles/26/kitanohinako@2x.jpg",
-      "lg": "/images/members/singles/26/kitanohinako@3x.jpg"
+      "sm": "/images/members/singles/27/kitanohinako@1x.jpg",
+      "md": "/images/members/singles/27/kitanohinako@2x.jpg",
+      "lg": "/images/members/singles/27/kitanohinako@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/kitanohinako@1x.jpg",
+        "md": "/images/members/singles/27/kitanohinako@2x.jpg",
+        "lg": "/images/members/singles/27/kitanohinako@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/kitanohinako@1x.jpg",
         "md": "/images/members/singles/26/kitanohinako@2x.jpg",
@@ -10263,11 +10359,16 @@
       "firstNameEn": "mai"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/shinuchimai@1x.jpg",
-      "md": "/images/members/singles/26/shinuchimai@2x.jpg",
-      "lg": "/images/members/singles/26/shinuchimai@3x.jpg"
+      "sm": "/images/members/singles/27/shinuchimai@1x.jpg",
+      "md": "/images/members/singles/27/shinuchimai@2x.jpg",
+      "lg": "/images/members/singles/27/shinuchimai@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/shinuchimai@1x.jpg",
+        "md": "/images/members/singles/27/shinuchimai@2x.jpg",
+        "lg": "/images/members/singles/27/shinuchimai@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/shinuchimai@1x.jpg",
         "md": "/images/members/singles/26/shinuchimai@2x.jpg",
@@ -10525,11 +10626,16 @@
       "firstNameEn": "ayane"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/suzukiayane@1x.jpg",
-      "md": "/images/members/singles/26/suzukiayane@2x.jpg",
-      "lg": "/images/members/singles/26/suzukiayane@3x.jpg"
+      "sm": "/images/members/singles/27/suzukiayane@1x.jpg",
+      "md": "/images/members/singles/27/suzukiayane@2x.jpg",
+      "lg": "/images/members/singles/27/suzukiayane@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/suzukiayane@1x.jpg",
+        "md": "/images/members/singles/27/suzukiayane@2x.jpg",
+        "lg": "/images/members/singles/27/suzukiayane@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/suzukiayane@1x.jpg",
         "md": "/images/members/singles/26/suzukiayane@2x.jpg",
@@ -10783,11 +10889,16 @@
       "firstNameEn": "ranze"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/teradaranze@1x.jpg",
-      "md": "/images/members/singles/26/teradaranze@2x.jpg",
-      "lg": "/images/members/singles/26/teradaranze@3x.jpg"
+      "sm": "/images/members/singles/27/teradaranze@1x.jpg",
+      "md": "/images/members/singles/27/teradaranze@2x.jpg",
+      "lg": "/images/members/singles/27/teradaranze@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/teradaranze@1x.jpg",
+        "md": "/images/members/singles/27/teradaranze@2x.jpg",
+        "lg": "/images/members/singles/27/teradaranze@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/teradaranze@1x.jpg",
         "md": "/images/members/singles/26/teradaranze@2x.jpg",
@@ -11021,15 +11132,15 @@
       "firstNameEn": "miona"
     },
     "profileImage": {
-      "sm": "/images/members/others/horimiona_2021-04-17@1x.jpg",
-      "md": "/images/members/others/horimiona_2021-04-17@2x.jpg",
-      "lg": "/images/members/others/horimiona_2021-04-17@3x.jpg"
+      "sm": "/images/members/others/horimiona_2021-07-14@1x.jpg",
+      "md": "/images/members/others/horimiona_2021-07-14@2x.jpg",
+      "lg": "/images/members/others/horimiona_2021-07-14@3x.jpg"
     },
     "gallery": [
       {
-        "sm": "/images/members/others/horimiona_2021-04-17@1x.jpg",
-        "md": "/images/members/others/horimiona_2021-04-17@2x.jpg",
-        "lg": "/images/members/others/horimiona_2021-04-17@3x.jpg"
+        "sm": "/images/members/others/horimiona_2021-07-14@1x.jpg",
+        "md": "/images/members/others/horimiona_2021-07-14@2x.jpg",
+        "lg": "/images/members/others/horimiona_2021-07-14@3x.jpg"
       },
       {
         "sm": "/images/members/singles/26/horimiona@1x.jpg",
@@ -11129,6 +11240,14 @@
       {
         "title": "Instagram",
         "url": "https://www.instagram.com/horimiona_official/"
+      },
+      {
+        "title": "YouTube",
+        "url": "https://www.youtube.com/channel/UCio44gPWhiXjC7uHhkS8W9w"
+      },
+      {
+        "title": "TikTok",
+        "url": "https://www.tiktok.com/@horimiona10"
       },
       {
         "title": "official",
@@ -11317,11 +11436,16 @@
       "firstNameEn": "rena"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/yamazakirena@1x.jpg",
-      "md": "/images/members/singles/26/yamazakirena@2x.jpg",
-      "lg": "/images/members/singles/26/yamazakirena@3x.jpg"
+      "sm": "/images/members/singles/27/yamazakirena@1x.jpg",
+      "md": "/images/members/singles/27/yamazakirena@2x.jpg",
+      "lg": "/images/members/singles/27/yamazakirena@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/yamazakirena@1x.jpg",
+        "md": "/images/members/singles/27/yamazakirena@2x.jpg",
+        "lg": "/images/members/singles/27/yamazakirena@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/yamazakirena@1x.jpg",
         "md": "/images/members/singles/26/yamazakirena@2x.jpg",
@@ -11560,11 +11684,16 @@
       "firstNameEn": "miria"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/watanabemiria@1x.jpg",
-      "md": "/images/members/singles/26/watanabemiria@2x.jpg",
-      "lg": "/images/members/singles/26/watanabemiria@3x.jpg"
+      "sm": "/images/members/singles/27/watanabemiria@1x.jpg",
+      "md": "/images/members/singles/27/watanabemiria@2x.jpg",
+      "lg": "/images/members/singles/27/watanabemiria@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/watanabemiria@1x.jpg",
+        "md": "/images/members/singles/27/watanabemiria@2x.jpg",
+        "lg": "/images/members/singles/27/watanabemiria@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/watanabemiria@1x.jpg",
         "md": "/images/members/singles/26/watanabemiria@2x.jpg",
@@ -11676,7 +11805,24 @@
         "url": "https://7gogo.jp/watanabe-miria"
       }
     ],
-    "photoAlbums": [],
+    "photoAlbums": [
+      {
+        "title": "消極的な華やかさ",
+        "release": "2021-08-31",
+        "type": "photo album",
+        "sites": [
+          {
+            "title": "Twitter",
+            "url": "https://twitter.com/miria_1st"
+          }
+        ],
+        "cover": {
+          "sm": "/images/photo-albums/watanabemiria_1@1x.jpg",
+          "md": "/images/photo-albums/watanabemiria_1@2x.jpg",
+          "lg": "/images/photo-albums/watanabemiria_1@3x.jpg"
+        }
+      }
+    ],
     "positionsHistory": [
       {
         "singleNumber": "1",
@@ -12527,11 +12673,16 @@
       "firstNameEn": "riria"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/itouriria@1x.jpg",
-      "md": "/images/members/singles/26/itouriria@2x.jpg",
-      "lg": "/images/members/singles/26/itouriria@3x.jpg"
+      "sm": "/images/members/singles/27/itouriria@1x.jpg",
+      "md": "/images/members/singles/27/itouriria@2x.jpg",
+      "lg": "/images/members/singles/27/itouriria@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/itouriria@1x.jpg",
+        "md": "/images/members/singles/27/itouriria@2x.jpg",
+        "lg": "/images/members/singles/27/itouriria@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/itouriria@1x.jpg",
         "md": "/images/members/singles/26/itouriria@2x.jpg",
@@ -12717,11 +12868,16 @@
       "firstNameEn": "renka"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/iwamotorenka@1x.jpg",
-      "md": "/images/members/singles/26/iwamotorenka@2x.jpg",
-      "lg": "/images/members/singles/26/iwamotorenka@3x.jpg"
+      "sm": "/images/members/singles/27/iwamotorenka@1x.jpg",
+      "md": "/images/members/singles/27/iwamotorenka@2x.jpg",
+      "lg": "/images/members/singles/27/iwamotorenka@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/iwamotorenka@1x.jpg",
+        "md": "/images/members/singles/27/iwamotorenka@2x.jpg",
+        "lg": "/images/members/singles/27/iwamotorenka@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/iwamotorenka@1x.jpg",
         "md": "/images/members/singles/26/iwamotorenka@2x.jpg",
@@ -12907,11 +13063,16 @@
       "firstNameEn": "minami"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/umezawaminami@1x.jpg",
-      "md": "/images/members/singles/26/umezawaminami@2x.jpg",
-      "lg": "/images/members/singles/26/umezawaminami@3x.jpg"
+      "sm": "/images/members/singles/27/umezawaminami@1x.jpg",
+      "md": "/images/members/singles/27/umezawaminami@2x.jpg",
+      "lg": "/images/members/singles/27/umezawaminami@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/umezawaminami@1x.jpg",
+        "md": "/images/members/singles/27/umezawaminami@2x.jpg",
+        "lg": "/images/members/singles/27/umezawaminami@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/umezawaminami@1x.jpg",
         "md": "/images/members/singles/26/umezawaminami@2x.jpg",
@@ -13120,11 +13281,16 @@
       "firstNameEn": "momoko"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/oozonomomoko@1x.jpg",
-      "md": "/images/members/singles/26/oozonomomoko@2x.jpg",
-      "lg": "/images/members/singles/26/oozonomomoko@3x.jpg"
+      "sm": "/images/members/singles/27/oozonomomoko@1x.jpg",
+      "md": "/images/members/singles/27/oozonomomoko@2x.jpg",
+      "lg": "/images/members/singles/27/oozonomomoko@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/oozonomomoko@1x.jpg",
+        "md": "/images/members/singles/27/oozonomomoko@2x.jpg",
+        "lg": "/images/members/singles/27/oozonomomoko@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/oozonomomoko@1x.jpg",
         "md": "/images/members/singles/26/oozonomomoko@2x.jpg",
@@ -13316,11 +13482,16 @@
       "firstNameEn": "shiori"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/kuboshiori@1x.jpg",
-      "md": "/images/members/singles/26/kuboshiori@2x.jpg",
-      "lg": "/images/members/singles/26/kuboshiori@3x.jpg"
+      "sm": "/images/members/singles/27/kuboshiori@1x.jpg",
+      "md": "/images/members/singles/27/kuboshiori@2x.jpg",
+      "lg": "/images/members/singles/27/kuboshiori@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/kuboshiori@1x.jpg",
+        "md": "/images/members/singles/27/kuboshiori@2x.jpg",
+        "lg": "/images/members/singles/27/kuboshiori@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/kuboshiori@1x.jpg",
         "md": "/images/members/singles/26/kuboshiori@2x.jpg",
@@ -13508,11 +13679,16 @@
       "firstNameEn": "tamami"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/sakaguchitamami@1x.jpg",
-      "md": "/images/members/singles/26/sakaguchitamami@2x.jpg",
-      "lg": "/images/members/singles/26/sakaguchitamami@3x.jpg"
+      "sm": "/images/members/singles/27/sakaguchitamami@1x.jpg",
+      "md": "/images/members/singles/27/sakaguchitamami@2x.jpg",
+      "lg": "/images/members/singles/27/sakaguchitamami@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/sakaguchitamami@1x.jpg",
+        "md": "/images/members/singles/27/sakaguchitamami@2x.jpg",
+        "lg": "/images/members/singles/27/sakaguchitamami@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/sakaguchitamami@1x.jpg",
         "md": "/images/members/singles/26/sakaguchitamami@2x.jpg",
@@ -13700,11 +13876,16 @@
       "firstNameEn": "kaede"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/satoukaede@1x.jpg",
-      "md": "/images/members/singles/26/satoukaede@2x.jpg",
-      "lg": "/images/members/singles/26/satoukaede@3x.jpg"
+      "sm": "/images/members/singles/27/satoukaede@1x.jpg",
+      "md": "/images/members/singles/27/satoukaede@2x.jpg",
+      "lg": "/images/members/singles/27/satoukaede@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/satoukaede@1x.jpg",
+        "md": "/images/members/singles/27/satoukaede@2x.jpg",
+        "lg": "/images/members/singles/27/satoukaede@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/satoukaede@1x.jpg",
         "md": "/images/members/singles/26/satoukaede@2x.jpg",
@@ -13894,11 +14075,16 @@
       "firstNameEn": "reno"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/nakamurareno@1x.jpg",
-      "md": "/images/members/singles/26/nakamurareno@2x.jpg",
-      "lg": "/images/members/singles/26/nakamurareno@3x.jpg"
+      "sm": "/images/members/singles/27/nakamurareno@1x.jpg",
+      "md": "/images/members/singles/27/nakamurareno@2x.jpg",
+      "lg": "/images/members/singles/27/nakamurareno@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/nakamurareno@1x.jpg",
+        "md": "/images/members/singles/27/nakamurareno@2x.jpg",
+        "lg": "/images/members/singles/27/nakamurareno@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/nakamurareno@1x.jpg",
         "md": "/images/members/singles/26/nakamurareno@2x.jpg",
@@ -14084,11 +14270,16 @@
       "firstNameEn": "hazuki"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/mukaihazuki@1x.jpg",
-      "md": "/images/members/singles/26/mukaihazuki@2x.jpg",
-      "lg": "/images/members/singles/26/mukaihazuki@3x.jpg"
+      "sm": "/images/members/singles/27/mukaihazuki@1x.jpg",
+      "md": "/images/members/singles/27/mukaihazuki@2x.jpg",
+      "lg": "/images/members/singles/27/mukaihazuki@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/mukaihazuki@1x.jpg",
+        "md": "/images/members/singles/27/mukaihazuki@2x.jpg",
+        "lg": "/images/members/singles/27/mukaihazuki@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/mukaihazuki@1x.jpg",
         "md": "/images/members/singles/26/mukaihazuki@2x.jpg",
@@ -14274,11 +14465,16 @@
       "firstNameEn": "mizuki"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/yamashitamizuki@1x.jpg",
-      "md": "/images/members/singles/26/yamashitamizuki@2x.jpg",
-      "lg": "/images/members/singles/26/yamashitamizuki@3x.jpg"
+      "sm": "/images/members/singles/27/yamashitamizuki@1x.jpg",
+      "md": "/images/members/singles/27/yamashitamizuki@2x.jpg",
+      "lg": "/images/members/singles/27/yamashitamizuki@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/yamashitamizuki@1x.jpg",
+        "md": "/images/members/singles/27/yamashitamizuki@2x.jpg",
+        "lg": "/images/members/singles/27/yamashitamizuki@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/yamashitamizuki@1x.jpg",
         "md": "/images/members/singles/26/yamashitamizuki@2x.jpg",
@@ -14489,11 +14685,16 @@
       "firstNameEn": "ayanochristie"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/yoshidaayanochristie@1x.jpg",
-      "md": "/images/members/singles/26/yoshidaayanochristie@2x.jpg",
-      "lg": "/images/members/singles/26/yoshidaayanochristie@3x.jpg"
+      "sm": "/images/members/singles/27/yoshidaayanochristie@1x.jpg",
+      "md": "/images/members/singles/27/yoshidaayanochristie@2x.jpg",
+      "lg": "/images/members/singles/27/yoshidaayanochristie@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/yoshidaayanochristie@1x.jpg",
+        "md": "/images/members/singles/27/yoshidaayanochristie@2x.jpg",
+        "lg": "/images/members/singles/27/yoshidaayanochristie@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/yoshidaayanochristie@1x.jpg",
         "md": "/images/members/singles/26/yoshidaayanochristie@2x.jpg",
@@ -14679,11 +14880,16 @@
       "firstNameEn": "yuki"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/yodayuuki@1x.jpg",
-      "md": "/images/members/singles/26/yodayuuki@2x.jpg",
-      "lg": "/images/members/singles/26/yodayuuki@3x.jpg"
+      "sm": "/images/members/singles/27/yodayuuki@1x.jpg",
+      "md": "/images/members/singles/27/yodayuuki@2x.jpg",
+      "lg": "/images/members/singles/27/yodayuuki@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/yodayuuki@1x.jpg",
+        "md": "/images/members/singles/27/yodayuuki@2x.jpg",
+        "lg": "/images/members/singles/27/yodayuuki@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/yodayuuki@1x.jpg",
         "md": "/images/members/singles/26/yodayuuki@2x.jpg",
@@ -14908,11 +15114,16 @@
       "firstNameEn": "sakura"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/endousakura@1x.jpg",
-      "md": "/images/members/singles/26/endousakura@2x.jpg",
-      "lg": "/images/members/singles/26/endousakura@3x.jpg"
+      "sm": "/images/members/singles/27/endousakura@1x.jpg",
+      "md": "/images/members/singles/27/endousakura@2x.jpg",
+      "lg": "/images/members/singles/27/endousakura@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/endousakura@1x.jpg",
+        "md": "/images/members/singles/27/endousakura@2x.jpg",
+        "lg": "/images/members/singles/27/endousakura@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/endousakura@1x.jpg",
         "md": "/images/members/singles/26/endousakura@2x.jpg",
@@ -15088,11 +15299,16 @@
       "firstNameEn": "haruka"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/kakiharuka@1x.jpg",
-      "md": "/images/members/singles/26/kakiharuka@2x.jpg",
-      "lg": "/images/members/singles/26/kakiharuka@3x.jpg"
+      "sm": "/images/members/singles/27/kakiharuka@1x.jpg",
+      "md": "/images/members/singles/27/kakiharuka@2x.jpg",
+      "lg": "/images/members/singles/27/kakiharuka@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/kakiharuka@1x.jpg",
+        "md": "/images/members/singles/27/kakiharuka@2x.jpg",
+        "lg": "/images/members/singles/27/kakiharuka@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/kakiharuka@1x.jpg",
         "md": "/images/members/singles/26/kakiharuka@2x.jpg",
@@ -15268,11 +15484,16 @@
       "firstNameEn": "sayaka"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/kakehashisayaka@1x.jpg",
-      "md": "/images/members/singles/26/kakehashisayaka@2x.jpg",
-      "lg": "/images/members/singles/26/kakehashisayaka@3x.jpg"
+      "sm": "/images/members/singles/27/kakehashisayaka@1x.jpg",
+      "md": "/images/members/singles/27/kakehashisayaka@2x.jpg",
+      "lg": "/images/members/singles/27/kakehashisayaka@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/kakehashisayaka@1x.jpg",
+        "md": "/images/members/singles/27/kakehashisayaka@2x.jpg",
+        "lg": "/images/members/singles/27/kakehashisayaka@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/kakehashisayaka@1x.jpg",
         "md": "/images/members/singles/26/kakehashisayaka@2x.jpg",
@@ -15448,11 +15669,16 @@
       "firstNameEn": "saya"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/kanagawasaya@1x.jpg",
-      "md": "/images/members/singles/26/kanagawasaya@2x.jpg",
-      "lg": "/images/members/singles/26/kanagawasaya@3x.jpg"
+      "sm": "/images/members/singles/27/kanagawasaya@1x.jpg",
+      "md": "/images/members/singles/27/kanagawasaya@2x.jpg",
+      "lg": "/images/members/singles/27/kanagawasaya@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/kanagawasaya@1x.jpg",
+        "md": "/images/members/singles/27/kanagawasaya@2x.jpg",
+        "lg": "/images/members/singles/27/kanagawasaya@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/kanagawasaya@1x.jpg",
         "md": "/images/members/singles/26/kanagawasaya@2x.jpg",
@@ -15628,11 +15854,16 @@
       "firstNameEn": "yuri"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/kitagawayuri@1x.jpg",
-      "md": "/images/members/singles/26/kitagawayuri@2x.jpg",
-      "lg": "/images/members/singles/26/kitagawayuri@3x.jpg"
+      "sm": "/images/members/singles/27/kitagawayuri@1x.jpg",
+      "md": "/images/members/singles/27/kitagawayuri@2x.jpg",
+      "lg": "/images/members/singles/27/kitagawayuri@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/kitagawayuri@1x.jpg",
+        "md": "/images/members/singles/27/kitagawayuri@2x.jpg",
+        "lg": "/images/members/singles/27/kitagawayuri@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/kitagawayuri@1x.jpg",
         "md": "/images/members/singles/26/kitagawayuri@2x.jpg",
@@ -15808,11 +16039,16 @@
       "firstNameEn": "yuna"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/shibatayuna@1x.jpg",
-      "md": "/images/members/singles/26/shibatayuna@2x.jpg",
-      "lg": "/images/members/singles/26/shibatayuna@3x.jpg"
+      "sm": "/images/members/singles/27/shibatayuna@1x.jpg",
+      "md": "/images/members/singles/27/shibatayuna@2x.jpg",
+      "lg": "/images/members/singles/27/shibatayuna@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/shibatayuna@1x.jpg",
+        "md": "/images/members/singles/27/shibatayuna@2x.jpg",
+        "lg": "/images/members/singles/27/shibatayuna@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/shibatayuna@1x.jpg",
         "md": "/images/members/singles/26/shibatayuna@2x.jpg",
@@ -15988,11 +16224,16 @@
       "firstNameEn": "rei"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/seimiyarei@1x.jpg",
-      "md": "/images/members/singles/26/seimiyarei@2x.jpg",
-      "lg": "/images/members/singles/26/seimiyarei@3x.jpg"
+      "sm": "/images/members/singles/27/seimiyarei@1x.jpg",
+      "md": "/images/members/singles/27/seimiyarei@2x.jpg",
+      "lg": "/images/members/singles/27/seimiyarei@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/seimiyarei@1x.jpg",
+        "md": "/images/members/singles/27/seimiyarei@2x.jpg",
+        "lg": "/images/members/singles/27/seimiyarei@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/seimiyarei@1x.jpg",
         "md": "/images/members/singles/26/seimiyarei@2x.jpg",
@@ -16168,11 +16409,16 @@
       "firstNameEn": "mayu"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/tamuramayu@1x.jpg",
-      "md": "/images/members/singles/26/tamuramayu@2x.jpg",
-      "lg": "/images/members/singles/26/tamuramayu@3x.jpg"
+      "sm": "/images/members/singles/27/tamuramayu@1x.jpg",
+      "md": "/images/members/singles/27/tamuramayu@2x.jpg",
+      "lg": "/images/members/singles/27/tamuramayu@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/tamuramayu@1x.jpg",
+        "md": "/images/members/singles/27/tamuramayu@2x.jpg",
+        "lg": "/images/members/singles/27/tamuramayu@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/tamuramayu@1x.jpg",
         "md": "/images/members/singles/26/tamuramayu@2x.jpg",
@@ -16348,11 +16594,16 @@
       "firstNameEn": "ayame"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/tsutsuiayame@1x.jpg",
-      "md": "/images/members/singles/26/tsutsuiayame@2x.jpg",
-      "lg": "/images/members/singles/26/tsutsuiayame@3x.jpg"
+      "sm": "/images/members/singles/27/tsutsuiayame@1x.jpg",
+      "md": "/images/members/singles/27/tsutsuiayame@2x.jpg",
+      "lg": "/images/members/singles/27/tsutsuiayame@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/tsutsuiayame@1x.jpg",
+        "md": "/images/members/singles/27/tsutsuiayame@2x.jpg",
+        "lg": "/images/members/singles/27/tsutsuiayame@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/tsutsuiayame@1x.jpg",
         "md": "/images/members/singles/26/tsutsuiayame@2x.jpg",
@@ -16528,11 +16779,16 @@
       "firstNameEn": "seira"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/hayakawaseira@1x.jpg",
-      "md": "/images/members/singles/26/hayakawaseira@2x.jpg",
-      "lg": "/images/members/singles/26/hayakawaseira@3x.jpg"
+      "sm": "/images/members/singles/27/hayakawaseira@1x.jpg",
+      "md": "/images/members/singles/27/hayakawaseira@2x.jpg",
+      "lg": "/images/members/singles/27/hayakawaseira@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/hayakawaseira@1x.jpg",
+        "md": "/images/members/singles/27/hayakawaseira@2x.jpg",
+        "lg": "/images/members/singles/27/hayakawaseira@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/hayakawaseira@1x.jpg",
         "md": "/images/members/singles/26/hayakawaseira@2x.jpg",
@@ -16708,11 +16964,16 @@
       "firstNameEn": "mio"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/yakubomio@1x.jpg",
-      "md": "/images/members/singles/26/yakubomio@2x.jpg",
-      "lg": "/images/members/singles/26/yakubomio@3x.jpg"
+      "sm": "/images/members/singles/27/yakubomio@1x.jpg",
+      "md": "/images/members/singles/27/yakubomio@2x.jpg",
+      "lg": "/images/members/singles/27/yakubomio@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/yakubomio@1x.jpg",
+        "md": "/images/members/singles/27/yakubomio@2x.jpg",
+        "lg": "/images/members/singles/27/yakubomio@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/yakubomio@1x.jpg",
         "md": "/images/members/singles/26/yakubomio@2x.jpg",
@@ -16888,11 +17149,16 @@
       "firstNameEn": "haruka"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/kuromiharuka@1x.jpg",
-      "md": "/images/members/singles/26/kuromiharuka@2x.jpg",
-      "lg": "/images/members/singles/26/kuromiharuka@3x.jpg"
+      "sm": "/images/members/singles/27/kuromiharuka@1x.jpg",
+      "md": "/images/members/singles/27/kuromiharuka@2x.jpg",
+      "lg": "/images/members/singles/27/kuromiharuka@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/kuromiharuka@1x.jpg",
+        "md": "/images/members/singles/27/kuromiharuka@2x.jpg",
+        "lg": "/images/members/singles/27/kuromiharuka@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/kuromiharuka@1x.jpg",
         "md": "/images/members/singles/26/kuromiharuka@2x.jpg",
@@ -17072,11 +17338,16 @@
       "firstNameEn": "rika"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/satourika@1x.jpg",
-      "md": "/images/members/singles/26/satourika@2x.jpg",
-      "lg": "/images/members/singles/26/satourika@3x.jpg"
+      "sm": "/images/members/singles/27/satourika@1x.jpg",
+      "md": "/images/members/singles/27/satourika@2x.jpg",
+      "lg": "/images/members/singles/27/satourika@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/satourika@1x.jpg",
+        "md": "/images/members/singles/27/satourika@2x.jpg",
+        "lg": "/images/members/singles/27/satourika@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/satourika@1x.jpg",
         "md": "/images/members/singles/26/satourika@2x.jpg",
@@ -17256,11 +17527,16 @@
       "firstNameEn": "runa"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/hayashiruna@1x.jpg",
-      "md": "/images/members/singles/26/hayashiruna@2x.jpg",
-      "lg": "/images/members/singles/26/hayashiruna@3x.jpg"
+      "sm": "/images/members/singles/27/hayashiruna@1x.jpg",
+      "md": "/images/members/singles/27/hayashiruna@2x.jpg",
+      "lg": "/images/members/singles/27/hayashiruna@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/hayashiruna@1x.jpg",
+        "md": "/images/members/singles/27/hayashiruna@2x.jpg",
+        "lg": "/images/members/singles/27/hayashiruna@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/hayashiruna@1x.jpg",
         "md": "/images/members/singles/26/hayashiruna@2x.jpg",
@@ -17440,11 +17716,16 @@
       "firstNameEn": "miyu"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/matsuomiyu@1x.jpg",
-      "md": "/images/members/singles/26/matsuomiyu@2x.jpg",
-      "lg": "/images/members/singles/26/matsuomiyu@3x.jpg"
+      "sm": "/images/members/singles/27/matsuomiyu@1x.jpg",
+      "md": "/images/members/singles/27/matsuomiyu@2x.jpg",
+      "lg": "/images/members/singles/27/matsuomiyu@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/matsuomiyu@1x.jpg",
+        "md": "/images/members/singles/27/matsuomiyu@2x.jpg",
+        "lg": "/images/members/singles/27/matsuomiyu@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/matsuomiyu@1x.jpg",
         "md": "/images/members/singles/26/matsuomiyu@2x.jpg",
@@ -17619,11 +17900,16 @@
       "firstNameEn": "nao"
     },
     "profileImage": {
-      "sm": "/images/members/singles/26/yumikinao@1x.jpg",
-      "md": "/images/members/singles/26/yumikinao@2x.jpg",
-      "lg": "/images/members/singles/26/yumikinao@3x.jpg"
+      "sm": "/images/members/singles/27/yumikinao@1x.jpg",
+      "md": "/images/members/singles/27/yumikinao@2x.jpg",
+      "lg": "/images/members/singles/27/yumikinao@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/singles/27/yumikinao@1x.jpg",
+        "md": "/images/members/singles/27/yumikinao@2x.jpg",
+        "lg": "/images/members/singles/27/yumikinao@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/26/yumikinao@1x.jpg",
         "md": "/images/members/singles/26/yumikinao@2x.jpg",

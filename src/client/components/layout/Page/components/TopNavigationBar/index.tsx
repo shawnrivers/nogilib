@@ -92,9 +92,10 @@ const SelectionItem = React.forwardRef<SelectionItemRef, SelectionItemProps>(
 
 const Settings: React.FC = () => {
   const [isDropdownOpen, toggleDropdown] = React.useState(false);
-  const hideDropdown = React.useCallback(() => toggleDropdown(false), [
-    toggleDropdown,
-  ]);
+  const hideDropdown = React.useCallback(
+    () => toggleDropdown(false),
+    [toggleDropdown]
+  );
   const switchDropdown = React.useCallback(
     () => toggleDropdown(!isDropdownOpen),
     [isDropdownOpen, toggleDropdown]
@@ -289,7 +290,14 @@ export const TopNavigationBar: React.FC = () => {
           max-width: ${commonStyles.breakPoints.maxContent};
           height: 100%;
           margin: auto;
-          padding: 0 ${commonStyles.spacing.l};
+          padding-top: 0;
+          padding-bottom: 0;
+          padding-left: calc(
+            ${commonStyles.spacing.l} + env(safe-area-inset-left)
+          );
+          padding-right: calc(
+            ${commonStyles.spacing.l} + env(safe-area-inset-right)
+          );
           display: flex;
           justify-content: space-between;
           align-items: center;

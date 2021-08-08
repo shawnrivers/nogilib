@@ -30,7 +30,6 @@ export const Surface: React.FC<SurfaceProps> = props => {
     backgroundColor: backgroundColorVariant = 'standard',
     colorType = 'surface',
     elevation = componentElevationKey.background,
-    isClickable = false,
     className,
     children,
   } = props;
@@ -44,9 +43,9 @@ export const Surface: React.FC<SurfaceProps> = props => {
     foregroundColorVariant
   );
 
-  const normalStyles = React.useMemo(
-    () => ({
-      container: css`
+  return (
+    <div
+      css={css`
         position: relative;
         background-color: var(${backgroundColorVarName});
         color: var(${foregroundColorVarName});
@@ -55,74 +54,18 @@ export const Surface: React.FC<SurfaceProps> = props => {
         transition-duration: 0.3s;
         transition-timing-function: ease-out;
         transition-property: background-color, box-shadow;
-      `,
-      overlay: css`
-        width: 100%;
-        height: 100%;
-        background-color: var(
-          ${getElevationWhiteOverlayTransparencyVarName(elevation)}
-        );
-        transition: background-color 0.3s ease-out;
-      `,
-    }),
-    [backgroundColorVarName, elevation, foregroundColorVarName]
-  );
-
-  const hoveredStyles = React.useMemo(
-    () => ({
-      container: css`
-        &:active {
-          box-shadow: ${commonStyles.elevations[
-            componentElevationKey.pressedComponentOnBackground
-          ].boxShadow};
-        }
-
-        @media (hover: hover) and (pointer: fine) {
-          &:hover {
-            box-shadow: ${commonStyles.elevations[
-              componentElevationKey.elevatedComponentOnBackground
-            ].boxShadow};
-          }
-        }
-      `,
-      overlay: css`
-        &:active {
-          background-color: var(
-            ${getElevationWhiteOverlayTransparencyVarName(
-              componentElevationKey.pressedComponentOnBackground
-            )}
-          );
-        }
-
-        @media (hover: hover) and (pointer: fine) {
-          &:hover {
-            background-color: var(
-              ${getElevationWhiteOverlayTransparencyVarName(
-                componentElevationKey.elevatedComponentOnBackground
-              )}
-            );
-          }
-        }
-      `,
-    }),
-    []
-  );
-
-  return (
-    <div
-      css={
-        isClickable
-          ? [normalStyles.container, hoveredStyles.container]
-          : normalStyles.container
-      }
+      `}
       className={className}
     >
       <div
-        css={
-          isClickable
-            ? [normalStyles.overlay, hoveredStyles.overlay]
-            : normalStyles.overlay
-        }
+        css={css`
+          width: 100%;
+          height: 100%;
+          background-color: var(
+            ${getElevationWhiteOverlayTransparencyVarName(elevation)}
+          );
+          transition: background-color 0.3s ease-out;
+        `}
       >
         {children}
       </div>

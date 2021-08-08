@@ -257,6 +257,14 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/horimiona_official/',
       },
       {
+        title: SocialMedia.YouTube,
+        url: 'https://www.youtube.com/channel/UCio44gPWhiXjC7uHhkS8W9w',
+      },
+      {
+        title: SocialMedia.TikTok,
+        url: 'https://www.tiktok.com/@horimiona10',
+      },
+      {
         title: SocialMedia.Official,
         url: 'https://hori-miona.com/',
       },
@@ -364,6 +372,20 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
       {
         title: SocialMedia.Nanagogo,
         url: 'https://7gogo.jp/watanabe-miria',
+      },
+    ],
+    photoAlbums: [
+      {
+        title: '消極的な華やかさ',
+        release: '2021-08-31',
+        type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/miria_1st',
+          },
+        ],
+        cover: 'photo-albums/watanabemiria_1.jpg',
       },
     ],
   }),

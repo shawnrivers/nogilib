@@ -38,7 +38,13 @@ export const BaseButton = React.forwardRef<BaseButtonRef, BaseButtonProps>(
           transition: background-color 0.3s ease-out;
           background: none;
 
-          &:active {
+          &.focus-visible {
+            outline: 2px solid transparent;
+            outline-offset: 2px;
+          }
+
+          &:active,
+          &.focus-visible {
             background-color: var(
               ${getColorVarName(backgroundType, backgroundColorVariant)}
             );

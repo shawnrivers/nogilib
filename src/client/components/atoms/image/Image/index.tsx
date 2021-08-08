@@ -1,5 +1,8 @@
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/core';
 import { PolyfilledLazyImage } from './PolyfilledLazyImage';
 import { isServer } from 'utils/env';
+import { getColorVarName } from 'client/styles/tokens/colors';
 
 const isImgLoadingSupported = (): boolean => {
   if (isServer()) {
@@ -11,12 +14,18 @@ const isImgLoadingSupported = (): boolean => {
 export type ImageProps = React.ImgHTMLAttributes<HTMLImageElement>;
 
 export const Image: React.FC<ImageProps> = props => {
-  const { loading, ...imgProps } = props;
+  const { loading, alt, ...imgProps } = props;
 
-  /* eslint-disable jsx-a11y/alt-text */
   return loading === 'lazy' && !isImgLoadingSupported() ? (
     <PolyfilledLazyImage {...imgProps} />
   ) : (
-    <img loading={loading} {...imgProps} />
+    <img
+      loading={loading}
+      alt={alt}
+      css={css`
+        background-color: var(${getColorVarName('surface', 'variant0')});
+      `}
+      {...imgProps}
+    />
   );
 };

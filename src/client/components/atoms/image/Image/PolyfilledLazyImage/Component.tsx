@@ -1,11 +1,21 @@
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/core';
 import LazyLoad from 'react-lazyload';
+import { getColorVarName } from 'client/styles/tokens/colors';
+
 type PolyfilledLazyImageProps = React.ImgHTMLAttributes<HTMLImageElement>;
 
 const PolyfilledLazyImage: React.FC<PolyfilledLazyImageProps> = props => {
+  const { alt, ...restProps } = props;
   return (
     <LazyLoad once offset={1400}>
-      {/* eslint-disable jsx-a11y/alt-text */}
-      <img {...props} />
+      <img
+        alt={alt}
+        css={css`
+          background-color: var(${getColorVarName('surface', 'variant0')});
+        `}
+        {...restProps}
+      />
     </LazyLoad>
   );
 };

@@ -295,6 +295,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.youtube.com/channel/UCygUvA0j15FpHp6kv2IuQYA',
       },
       {
+        title: SocialMedia.TikTok,
+        url: 'https://www.tiktok.com/@kawagohina3',
+      },
+      {
         title: SocialMedia.Official,
         url: 'https://kawagopro.com/',
       },
@@ -372,8 +376,8 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/yuuri_3ito/',
       },
       {
-        title: SocialMedia.Profile,
-        url: 'https://n46llc.com/s/m00/artist/4',
+        title: SocialMedia.TikTok,
+        url: 'https://www.tiktok.com/@yuuri_3ito',
       },
       {
         title: SocialMedia.Nanagogo,
@@ -816,6 +820,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     height: 164,
     bloodType: BloodType.B,
     origin: Birthplace.Osaka,
+    graduatedDate: '2021-07-13',
     sites: [
       {
         title: SocialMedia.Instagram,
@@ -827,7 +832,11 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       },
       {
         title: SocialMedia.Profile,
-        url: 'https://www.nogizaka46.com/member/detail/matsumurasayuri.php',
+        url: 'https://n46llc.com/s/m00/artist/14',
+      },
+      {
+        title: SocialMedia.Official,
+        url: 'https://sayurimatsumura.com/',
       },
       {
         title: SocialMedia.Weibo,
@@ -893,6 +902,18 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       },
     ],
     photoAlbums: [
+      {
+        title: 'アンド チョコレート',
+        release: '2021-09-08',
+        type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          {
+            title: SocialMedia.Twitter,
+            url: 'https://twitter.com/wakatsukiyumi_2',
+          },
+        ],
+        cover: 'photo-albums/wakatsukiyumi_2.jpg',
+      },
       {
         title: 'パレット',
         release: '2017-11-07',
@@ -974,6 +995,18 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: SocialMedia.Twitter,
         url: 'https://twitter.com/mahiro_chan0723',
+      },
+      {
+        title: SocialMedia.YouTube,
+        url: 'https://www.youtube.com/channel/UC6PRAAvAYKP-axlG3LC-WdA',
+      },
+      {
+        title: SocialMedia.TikTok,
+        url: 'https://www.tiktok.com/@mahiro_0723',
+      },
+      {
+        title: SocialMedia.Official,
+        url: 'https://mahiro.jp/',
       },
       {
         title: SocialMedia.FanClub,
