@@ -1,4 +1,3 @@
-/** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
 import LazyLoad from 'react-lazyload';
 import { getColorVarName } from 'client/styles/tokens/colors';

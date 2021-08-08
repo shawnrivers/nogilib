@@ -1,4 +1,3 @@
-/** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
 import { AspectRatioImage } from 'client/components/atoms/image/AspectRatioImage';
 import {

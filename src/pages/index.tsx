@@ -1,5 +1,5 @@
-/** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
+import { Fragment } from 'react';
 import { PageContent } from 'client/components/layout/PageContent';
 import { Typography } from 'client/components/atoms/Typography';
 import { commonStyles } from 'client/styles/tokens';
@@ -51,7 +51,7 @@ const HomePage: React.FC = () => {
   const { getTranslation } = useTranslations();
 
   return (
-    <>
+    <Fragment>
       <PageHelmet />
       <PageContent>
         <div
@@ -195,7 +195,7 @@ const HomePage: React.FC = () => {
           </SectionTextLink>
         </div>
       </PageContent>
-    </>
+    </Fragment>
   );
 };
 

@@ -1,4 +1,3 @@
-/** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
 import { Typography } from 'client/components/atoms/Typography';
 import { StyledTypographyProps } from 'client/components/molecules/typography/types';

@@ -1,4 +1,3 @@
-/** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
 import { PolyfilledLazyImage } from './PolyfilledLazyImage';
 import { isServer } from 'utils/env';

@@ -1,4 +1,3 @@
-/** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
 import * as React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
@@ -44,26 +43,24 @@ export const getStaticPaths: GetStaticPaths<PathParams> = async () => {
 
 export type SongPageProps = SongPageData;
 
-export const getStaticProps: GetStaticProps<
-  SongPageProps,
-  PathParams
-> = async ({ params }) => {
-  const songData = await getSongData();
+export const getStaticProps: GetStaticProps<SongPageProps, PathParams> =
+  async ({ params }) => {
+    const songData = await getSongData();
 
-  if (params) {
-    const song = songData.find(song => song.key === params.id);
+    if (params) {
+      const song = songData.find(song => song.key === params.id);
 
-    if (song) {
-      return {
-        props: song,
-      };
+      if (song) {
+        return {
+          props: song,
+        };
+      }
     }
-  }
 
-  return {
-    notFound: true,
+    return {
+      notFound: true,
+    };
   };
-};
 
 const PerformersTag: React.FC<SongPageProps['performersTag']> = props => {
   const { name, album } = props;

@@ -1,4 +1,3 @@
-/** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
 import { Card, CardProps } from 'client/components/atoms/Card';
 import { commonStyles } from 'client/styles/tokens';

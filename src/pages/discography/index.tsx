@@ -1,4 +1,3 @@
-/** @jsxImportSource @emotion/react */
 import * as React from 'react';
 import { GetStaticProps } from 'next';
 import { css } from '@emotion/react';
@@ -63,34 +62,35 @@ type DiscographyPageProps = {
   digitalGroupsByYear: CdGroupByYear[];
 };
 
-export const getStaticProps: GetStaticProps<DiscographyPageProps> = async () => {
-  const discographyData = await getDiscographyData();
+export const getStaticProps: GetStaticProps<DiscographyPageProps> =
+  async () => {
+    const discographyData = await getDiscographyData();
 
-  const singlesData = discographyData.filter(cd => cd.type === 'single');
-  const albumsData = discographyData.filter(cd => cd.type === 'album');
-  const digitalsData = discographyData.filter(cd => cd.type === 'digital');
-  const otherCdsData = discographyData.filter(
-    cd => cd.type !== 'single' && cd.type !== 'album' && cd.type !== 'digital'
-  );
-  const allCdGroupsByYear = groupCdsByYear([
-    ...singlesData,
-    ...albumsData,
-    ...digitalsData,
-    ...otherCdsData,
-  ]);
-  const singleGroupsByYear = groupCdsByYear(singlesData);
-  const albumGroupsByYear = groupCdsByYear(albumsData);
-  const digitalGroupsByYear = groupCdsByYear(digitalsData);
+    const singlesData = discographyData.filter(cd => cd.type === 'single');
+    const albumsData = discographyData.filter(cd => cd.type === 'album');
+    const digitalsData = discographyData.filter(cd => cd.type === 'digital');
+    const otherCdsData = discographyData.filter(
+      cd => cd.type !== 'single' && cd.type !== 'album' && cd.type !== 'digital'
+    );
+    const allCdGroupsByYear = groupCdsByYear([
+      ...singlesData,
+      ...albumsData,
+      ...digitalsData,
+      ...otherCdsData,
+    ]);
+    const singleGroupsByYear = groupCdsByYear(singlesData);
+    const albumGroupsByYear = groupCdsByYear(albumsData);
+    const digitalGroupsByYear = groupCdsByYear(digitalsData);
 
-  return {
-    props: {
-      allCdGroupsByYear,
-      singleGroupsByYear,
-      albumGroupsByYear,
-      digitalGroupsByYear,
-    },
+    return {
+      props: {
+        allCdGroupsByYear,
+        singleGroupsByYear,
+        albumGroupsByYear,
+        digitalGroupsByYear,
+      },
+    };
   };
-};
 
 const DiscographyPage: React.FC<DiscographyPageProps> = props => {
   const {
