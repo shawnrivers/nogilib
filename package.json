@@ -20,7 +20,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook -s ./public/",
+    "build-storybook": "build-storybook -s ./public",
     "lighthouse": "lhci autorun",
     "update-data:start": "cd ./scripts && npm run update-data:start",
     "update-data:release": "cd ./scripts && npm run update-data:release"
@@ -63,6 +63,7 @@
     "@storybook/addon-actions": "^6.3.6",
     "@storybook/addon-essentials": "^6.3.6",
     "@storybook/addon-knobs": "^6.3.0",
+    "@storybook/addon-links": "^6.3.6",
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/react": "^6.3.6",
     "@types/jest": "^26.0.24",
@@ -89,6 +90,7 @@
     "jest": "^27.0.6",
     "lint-staged": "^11.1.2",
     "prettier": "^2.3.2",
+    "storybook-addon-next-router": "^3.0.7",
     "ts-jest": "^27.0.4",
     "ts-node": "^10.1.0",
     "typescript": "^4.3.5"
