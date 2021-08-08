@@ -1,4 +1,5 @@
 import { action } from '@storybook/addon-actions';
+import { RouterContext } from 'next/dist/next-server/lib/router-context';
 
 global.___loader = {
   enqueue: () => {},
@@ -11,15 +12,8 @@ window.___navigate = pathname => {
   action('NavigateTo:')(pathname);
 };
 
-export const globalTypes = {
-  theme: {
-    name: 'Theme',
-    description: 'Global theme for components',
-    defaultValue: 'light',
-    toolbar: {
-      icon: 'circlehollow',
-      // array of plain string values or MenuItem shape (see below)
-      items: ['light', 'dark'],
-    },
+export const parameters = {
+  nextRouter: {
+    Provider: RouterContext.Provider,
   },
 };

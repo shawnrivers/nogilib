@@ -6,6 +6,7 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@react-theming/storybook-addon',
+    'storybook-addon-next-router',
   ],
   webpackFinal: async config => {
     config.resolve.mainFields = ['browser', 'module', 'main'];
