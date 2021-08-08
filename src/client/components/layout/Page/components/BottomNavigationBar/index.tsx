@@ -1,4 +1,3 @@
-/** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
 import { Surface } from 'client/components/atoms/Surface';
 import { componentElevationKey } from 'client/styles/tokens/elevation';

@@ -1,4 +1,3 @@
-/** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
 import * as React from 'react';
 import { Typography } from 'client/components/atoms/Typography';
@@ -17,53 +16,54 @@ type TextSwitchLinkGroupProps = Omit<
   })[];
 };
 
-export const TextSwitchLinkGroup: React.FC<TextSwitchLinkGroupProps> = props => {
-  const { links, ...TextSwitchLinkProps } = props;
-  const { getTranslation } = useTranslations();
+export const TextSwitchLinkGroup: React.FC<TextSwitchLinkGroupProps> =
+  props => {
+    const { links, ...TextSwitchLinkProps } = props;
+    const { getTranslation } = useTranslations();
 
-  return (
-    <nav
-      aria-label={getTranslation('tab')}
-      css={css`
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-      `}
-    >
-      {links.map((link, index) =>
-        index === links.length - 1 ? (
-          <TextSwitchLink
-            key={index}
-            isSwitchedOn={link.isSwitchedOn}
-            href={link.href}
-            {...TextSwitchLinkProps}
-          >
-            {link.text}
-          </TextSwitchLink>
-        ) : (
-          <React.Fragment key={index}>
+    return (
+      <nav
+        aria-label={getTranslation('tab')}
+        css={css`
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+        `}
+      >
+        {links.map((link, index) =>
+          index === links.length - 1 ? (
             <TextSwitchLink
+              key={index}
               isSwitchedOn={link.isSwitchedOn}
               href={link.href}
               {...TextSwitchLinkProps}
             >
               {link.text}
             </TextSwitchLink>
-            <Typography
-              variant={TextSwitchLinkProps.variant}
-              element="span"
-              textColor={{
-                on: TextSwitchLinkProps.textOn ?? 'onBackground',
-                variant: 'variant1',
-              }}
-            >
-              {' '}
-              /{' '}
-            </Typography>
-          </React.Fragment>
-        )
-      )}
-    </nav>
-  );
-};
+          ) : (
+            <React.Fragment key={index}>
+              <TextSwitchLink
+                isSwitchedOn={link.isSwitchedOn}
+                href={link.href}
+                {...TextSwitchLinkProps}
+              >
+                {link.text}
+              </TextSwitchLink>
+              <Typography
+                variant={TextSwitchLinkProps.variant}
+                element="span"
+                textColor={{
+                  on: TextSwitchLinkProps.textOn ?? 'onBackground',
+                  variant: 'variant1',
+                }}
+              >
+                {' '}
+                /{' '}
+              </Typography>
+            </React.Fragment>
+          )
+        )}
+      </nav>
+    );
+  };

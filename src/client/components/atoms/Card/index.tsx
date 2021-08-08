@@ -1,4 +1,3 @@
-/** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
 import { SpacingKey } from 'client/styles/tokens/spacing';
 import {

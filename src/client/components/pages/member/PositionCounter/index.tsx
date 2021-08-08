@@ -1,4 +1,3 @@
-/** @jsxImportSource @emotion/react */
 import { css } from '@emotion/core';
 import { commonStyles } from 'client/styles/tokens';
 import { Typography } from 'client/components/atoms/Typography';
