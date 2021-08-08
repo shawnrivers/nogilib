@@ -5,7 +5,6 @@ module.exports = {
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
-    '@react-theming/storybook-addon',
     'storybook-addon-next-router',
   ],
   webpackFinal: async config => {
