@@ -14,6 +14,7 @@ export const BaseAnchor = forwardRef<HTMLAnchorElement, BaseAnchorProps>(
   (props, ref) => {
     const {
       disabled,
+      active,
       hideBorder,
       hideBackgroundTransition,
       children,
@@ -21,8 +22,14 @@ export const BaseAnchor = forwardRef<HTMLAnchorElement, BaseAnchorProps>(
     } = props;
 
     const styles = useMemo(
-      () => getLinkStyles({ disabled, hideBorder, hideBackgroundTransition }),
-      [disabled, hideBorder, hideBackgroundTransition]
+      () =>
+        getLinkStyles({
+          disabled,
+          active,
+          hideBorder,
+          hideBackgroundTransition,
+        }),
+      [disabled, active, hideBorder, hideBackgroundTransition]
     );
 
     return (

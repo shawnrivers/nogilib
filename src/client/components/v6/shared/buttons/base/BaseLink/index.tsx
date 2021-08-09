@@ -23,6 +23,7 @@ export const BaseLink = forwardRef<HTMLAnchorElement, BaseLinkProps>(
       href,
       locale = router.locale,
       disabled,
+      active,
       hideBorder,
       hideBackgroundTransition,
       children,
@@ -30,8 +31,14 @@ export const BaseLink = forwardRef<HTMLAnchorElement, BaseLinkProps>(
     } = props;
 
     const styles = useMemo(
-      () => getLinkStyles({ disabled, hideBorder, hideBackgroundTransition }),
-      [disabled, hideBorder, hideBackgroundTransition]
+      () =>
+        getLinkStyles({
+          disabled,
+          active,
+          hideBorder,
+          hideBackgroundTransition,
+        }),
+      [disabled, active, hideBorder, hideBackgroundTransition]
     );
 
     return (

@@ -13,6 +13,7 @@ export const BaseButton = forwardRef<HTMLButtonElement, BaseButtonProps>(
   (props, ref) => {
     const {
       disabled,
+      active,
       hideBorder,
       hideBackgroundTransition,
       children,
@@ -20,8 +21,14 @@ export const BaseButton = forwardRef<HTMLButtonElement, BaseButtonProps>(
     } = props;
 
     const styles = useMemo(
-      () => getButtonStyles({ disabled, hideBorder, hideBackgroundTransition }),
-      [disabled, hideBorder, hideBackgroundTransition]
+      () =>
+        getButtonStyles({
+          disabled,
+          active,
+          hideBorder,
+          hideBackgroundTransition,
+        }),
+      [disabled, active, hideBorder, hideBackgroundTransition]
     );
 
     return (
