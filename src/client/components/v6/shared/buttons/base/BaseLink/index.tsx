@@ -1,29 +1,37 @@
 import Link, { LinkProps } from 'next/link';
 import { useRouter } from 'next/router';
 import { forwardRef, useMemo } from 'react';
-import { getLinkStyles } from 'client/components/v6/shared/buttons/base/styles/link';
+import {
+  getLinkStyles,
+  GetLinkStylesParams,
+} from 'client/components/v6/shared/buttons/base/styles/link';
 
-type BaseAnchorProps = Omit<React.ComponentProps<'a'>, 'href'> & {
+export type BaseLinkProps = Omit<React.ComponentProps<'a'>, 'href'> & {
   as?: LinkProps['as'];
   href: LinkProps['href'];
   locale?: LinkProps['locale'];
-  children?: React.ReactNode;
   disabled?: boolean;
+  hideBorder?: GetLinkStylesParams['hideBorder'];
+  children?: React.ReactNode;
 };
 
-export const BaseLink = forwardRef<HTMLAnchorElement, BaseAnchorProps>(
+export const BaseLink = forwardRef<HTMLAnchorElement, BaseLinkProps>(
   (props, ref) => {
     const router = useRouter();
     const {
       as,
       href,
       locale = router.locale,
-      disabled = false,
+      disabled,
+      hideBorder,
       children,
       ...buttonProps
     } = props;
 
-    const styles = useMemo(() => getLinkStyles({ disabled }), [disabled]);
+    const styles = useMemo(
+      () => getLinkStyles({ disabled, hideBorder }),
+      [disabled, hideBorder]
+    );
 
     return (
       <Link href={href} as={as} locale={locale} passHref>
