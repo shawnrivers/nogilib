@@ -12,27 +12,27 @@ export type FontFamily = 'serif' | 'sans';
 
 export const TYPOGRAPHY = {
   h1: {
-    fontSize: '2.5rem',
-    fontWeight: 700,
-  },
-  h2: {
-    fontSize: '2.25rem',
-    fontWeight: 700,
-  },
-  h3: {
     fontSize: '2rem',
     fontWeight: 700,
   },
-  h4: {
+  h2: {
     fontSize: '1.75rem',
     fontWeight: 700,
   },
+  h3: {
+    fontSize: '1.5625rem',
+    fontWeight: 700,
+  },
+  h4: {
+    fontSize: '1.375rem',
+    fontWeight: 700,
+  },
   h5: {
-    fontSize: '1.5rem',
+    fontSize: '1.25rem',
     fontWeight: 700,
   },
   h6: {
-    fontSize: '1.25rem',
+    fontSize: '1.125rem',
     fontWeight: 700,
   },
   h7: {
@@ -40,15 +40,15 @@ export const TYPOGRAPHY = {
     fontWeight: 400,
   },
   body1: {
-    fontSize: '1.25rem',
-    fontWeight: 400,
-  },
-  body2: {
     fontSize: '1rem',
     fontWeight: 400,
   },
-  body3: {
+  body2: {
     fontSize: '0.875rem',
+    fontWeight: 400,
+  },
+  body3: {
+    fontSize: '0.75rem',
     fontWeight: 400,
   },
   body4: {
@@ -56,7 +56,7 @@ export const TYPOGRAPHY = {
     fontWeight: 400,
   },
   em1: {
-    fontSize: '1.25rem',
+    fontSize: '1.125rem',
     fontWeight: 700,
   },
   em2: {
@@ -68,7 +68,7 @@ export const TYPOGRAPHY = {
     fontWeight: 700,
   },
   caption: {
-    fontSize: '0.625rem',
+    fontSize: '0.75rem',
     fontWeight: 400,
   },
   button: {
