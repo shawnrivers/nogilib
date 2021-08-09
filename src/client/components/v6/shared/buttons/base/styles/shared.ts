@@ -13,7 +13,7 @@ function getBackgroundTransitionStyles(disabled: boolean, active: boolean) {
       content: '';
       background-color: var(${getColorVarName('primary', 'standard')});
       opacity: 0.25;
-      transition: transform 0.3s cubic-bezier(0, 0.5, 0.7, 1);
+      transition: transform 0.2s cubic-bezier(0, 0.5, 0.7, 1);
       transform: translateX(${active ? '0' : '-102%'});
     }
 
