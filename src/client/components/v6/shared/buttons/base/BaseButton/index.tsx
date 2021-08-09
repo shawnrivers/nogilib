@@ -1,5 +1,5 @@
-import { forwardRef } from 'react';
-import { buttonStyles } from 'client/components/v6/shared/buttons/base/styles/button';
+import { forwardRef, useMemo } from 'react';
+import { getButtonStyles } from 'client/components/v6/shared/buttons/base/styles/button';
 
 type BaseButtonProps = React.ComponentProps<'button'> & {
   children?: React.ReactNode;
@@ -7,10 +7,12 @@ type BaseButtonProps = React.ComponentProps<'button'> & {
 
 export const BaseButton = forwardRef<HTMLButtonElement, BaseButtonProps>(
   (props, ref) => {
-    const { children, ...buttonProps } = props;
+    const { children, disabled, ...buttonProps } = props;
+
+    const styles = useMemo(() => getButtonStyles({ disabled }), [disabled]);
 
     return (
-      <button css={buttonStyles} {...buttonProps} ref={ref}>
+      <button disabled={disabled} css={styles} {...buttonProps} ref={ref}>
         {children}
       </button>
     );

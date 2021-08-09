@@ -1,7 +1,14 @@
 import { css } from '@emotion/core';
-import { sharedStyles } from 'client/components/v6/shared/buttons/base/styles/shared';
+import {
+  getSharedStyles,
+  GetSharedStylesParams,
+} from 'client/components/v6/shared/buttons/base/styles/shared';
 
-export const buttonStyles = css`
-  ${sharedStyles};
-  border-width: 2px;
-`;
+export function getButtonStyles(params?: Partial<GetSharedStylesParams>) {
+  const sharedStyles = getSharedStyles(params);
+
+  return css`
+    ${sharedStyles};
+    border-width: 2px;
+  `;
+}

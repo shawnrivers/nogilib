@@ -1,16 +1,19 @@
-import { forwardRef } from 'react';
-import { linkStyles } from 'client/components/v6/shared/buttons/base/styles/link';
+import { forwardRef, useMemo } from 'react';
+import { getLinkStyles } from 'client/components/v6/shared/buttons/base/styles/link';
 
 type BaseAnchorProps = React.ComponentProps<'a'> & {
   children?: React.ReactNode;
+  disabled?: boolean;
 };
 
 export const BaseAnchor = forwardRef<HTMLAnchorElement, BaseAnchorProps>(
   (props, ref) => {
-    const { children, ...buttonProps } = props;
+    const { children, disabled, ...buttonProps } = props;
+
+    const styles = useMemo(() => getLinkStyles({ disabled }), [disabled]);
 
     return (
-      <a css={linkStyles} {...buttonProps} ref={ref}>
+      <a aria-disabled={disabled} css={styles} {...buttonProps} ref={ref}>
         {children}
       </a>
     );
