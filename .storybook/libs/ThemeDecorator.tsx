@@ -3,34 +3,60 @@ import { css } from '@emotion/core';
 import { EmotionThemeProvider } from 'client/store/emotion/provider';
 import { ThemeContextProvider } from 'client/store/theme/context';
 import { useThemeContext } from 'client/store/theme/hook/useThemeContext';
-import { ThemeMode } from 'client/types/themeMode';
+import { Typography } from 'client/components/atoms/Typography';
 
-type ThemeConsumerProps = {
-  theme?: ThemeMode;
+const ThemeConsumer: React.FC = () => {
+  const { themeMode, setTheme } = useThemeContext();
+
+  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const value = event.target.value;
+    if (value === 'light' || value === 'dark') {
+      setTheme(value);
+    }
+  };
+
+  return (
+    <div>
+      <label
+        css={css`
+          display: inline-flex;
+          align-items: center;
+        `}
+      >
+        <Typography
+          variant="body2"
+          element="span"
+          css={css`
+            margin-right: 0.5rem;
+          `}
+        >
+          Color Theme:
+        </Typography>
+        <select value={themeMode} onChange={handleChange}>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </label>
+    </div>
+  );
 };
 
-const ThemeConsumer: React.FC<ThemeConsumerProps> = props => {
-  const { theme = 'light' } = props;
-
-  const { setTheme } = useThemeContext();
-  React.useEffect(() => {
-    setTheme(theme);
-  }, [setTheme, theme]);
-
-  return null;
-};
-
-export const ThemeDecorator = (options?: Partial<ThemeConsumerProps>) => {
+export const ThemeDecorator = () => {
   return (Story: any) => {
     return (
       <ThemeContextProvider>
         <EmotionThemeProvider>
+          <ThemeConsumer />
+          <hr
+            css={css`
+              margin-top: 1.5rem;
+            `}
+          />
           <div
             css={css`
-              padding: 24px;
+              margin-top: 1.5rem;
             `}
           >
-            <ThemeConsumer theme={options?.theme} />
             <Story />
           </div>
         </EmotionThemeProvider>
