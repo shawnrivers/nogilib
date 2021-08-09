@@ -6,14 +6,14 @@ import {
   GetLinkStylesParams,
 } from 'client/components/v6/shared/buttons/base/styles/link';
 
-export type BaseLinkProps = Omit<React.ComponentProps<'a'>, 'href'> & {
-  as?: LinkProps['as'];
-  href: LinkProps['href'];
-  locale?: LinkProps['locale'];
-  disabled?: boolean;
-  hideBorder?: GetLinkStylesParams['hideBorder'];
-  children?: React.ReactNode;
-};
+export type BaseLinkProps = Omit<React.ComponentProps<'a'>, 'href'> &
+  Partial<GetLinkStylesParams> & {
+    as?: LinkProps['as'];
+    href: LinkProps['href'];
+    locale?: LinkProps['locale'];
+    disabled?: boolean;
+    children?: React.ReactNode;
+  };
 
 export const BaseLink = forwardRef<HTMLAnchorElement, BaseLinkProps>(
   (props, ref) => {
@@ -24,13 +24,14 @@ export const BaseLink = forwardRef<HTMLAnchorElement, BaseLinkProps>(
       locale = router.locale,
       disabled,
       hideBorder,
+      hideBackgroundTransition,
       children,
       ...buttonProps
     } = props;
 
     const styles = useMemo(
-      () => getLinkStyles({ disabled, hideBorder }),
-      [disabled, hideBorder]
+      () => getLinkStyles({ disabled, hideBorder, hideBackgroundTransition }),
+      [disabled, hideBorder, hideBackgroundTransition]
     );
 
     return (

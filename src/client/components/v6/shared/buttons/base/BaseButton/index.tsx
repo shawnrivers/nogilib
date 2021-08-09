@@ -4,18 +4,24 @@ import {
   GetButtonStylesParams,
 } from 'client/components/v6/shared/buttons/base/styles/button';
 
-export type BaseButtonProps = React.ComponentProps<'button'> & {
-  hideBorder?: GetButtonStylesParams['hideBorder'];
-  children?: React.ReactNode;
-};
+export type BaseButtonProps = React.ComponentProps<'button'> &
+  Partial<GetButtonStylesParams> & {
+    children?: React.ReactNode;
+  };
 
 export const BaseButton = forwardRef<HTMLButtonElement, BaseButtonProps>(
   (props, ref) => {
-    const { hideBorder, disabled, children, ...buttonProps } = props;
+    const {
+      disabled,
+      hideBorder,
+      hideBackgroundTransition,
+      children,
+      ...buttonProps
+    } = props;
 
     const styles = useMemo(
-      () => getButtonStyles({ hideBorder, disabled }),
-      [hideBorder, disabled]
+      () => getButtonStyles({ disabled, hideBorder, hideBackgroundTransition }),
+      [disabled, hideBorder, hideBackgroundTransition]
     );
 
     return (
