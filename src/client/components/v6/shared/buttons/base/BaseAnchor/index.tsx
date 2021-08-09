@@ -1,5 +1,5 @@
 import { forwardRef } from 'react';
-import { buttonStyles } from 'client/components/v6/shared/buttons/base/styles/buttonStyles';
+import { linkStyles } from 'client/components/v6/shared/buttons/base/styles/link';
 
 type BaseAnchorProps = React.ComponentProps<'a'> & {
   children?: React.ReactNode;
@@ -10,7 +10,7 @@ export const BaseAnchor = forwardRef<HTMLAnchorElement, BaseAnchorProps>(
     const { children, ...buttonProps } = props;
 
     return (
-      <a css={buttonStyles} {...buttonProps} ref={ref}>
+      <a css={linkStyles} {...buttonProps} ref={ref}>
         {children}
       </a>
     );
