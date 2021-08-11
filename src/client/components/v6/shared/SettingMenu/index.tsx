@@ -47,7 +47,7 @@ export type SettingMenuProps = {
   items: MenuItem[];
 };
 
-export const SettingMenu: React.VFC<SettingMenuProps> = props => {
+export const SettingMenu: React.FC<SettingMenuProps> = props => {
   const { buttonLabel, items } = props;
 
   return (

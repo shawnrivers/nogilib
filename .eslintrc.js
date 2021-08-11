@@ -39,6 +39,7 @@ module.exports = {
     'no-console': 'warn',
     'prefer-const': 'off',
     '@next/next/no-img-element': 'off',
+    'jsx-a11y/anchor-is-valid': 'off',
   },
   settings: {
     react: {
