@@ -65,21 +65,8 @@ LongName.args = {
     md: '/images/members/singles/27/yoshidaayanochristie@2x.jpg',
     lg: '/images/members/singles/27/yoshidaayanochristie@3x.jpg',
   },
-  imageBackgroundColor: '#8CD0F6',
-  nameBackgroundColor: '#e2f3fd',
-};
-
-export const FallbackBackground = Template.bind({});
-FallbackBackground.args = {
-  href: '/',
-  name: 'Saito Asuka',
-  number: 1,
-  position: 'fukujin',
-  image: {
-    sm: '/images/members/singles/27/saitouasuka@1x.jpg',
-    md: '/images/members/singles/27/saitouasuka@2x.jpg',
-    lg: '/images/members/singles/27/saitouasuka@3x.jpg',
-  },
+  imageBackgroundColor: '#dfa2f8',
+  nameBackgroundColor: '#ecccf8',
 };
 
 export const NoNumber = Template.bind({});
@@ -109,4 +96,30 @@ NoPosition.args = {
   },
   imageBackgroundColor: '#8CD0F6',
   nameBackgroundColor: '#e2f3fd',
+};
+
+export const NotLink = Template.bind({});
+NotLink.args = {
+  name: 'Kojima Haruna',
+  nameLang: 'en',
+  number: 1,
+  position: 'center',
+  image: {
+    sm: '/images/members/others/kojimaharuna@1x.jpg',
+    md: '/images/members/others/kojimaharuna@2x.jpg',
+    lg: '/images/members/others/kojimaharuna@3x.jpg',
+  },
+};
+
+export const FallbackBackground = Template.bind({});
+FallbackBackground.args = {
+  href: '/',
+  name: 'Saito Asuka',
+  number: 1,
+  position: 'fukujin',
+  image: {
+    sm: '/images/members/singles/27/saitouasuka@1x.jpg',
+    md: '/images/members/singles/27/saitouasuka@2x.jpg',
+    lg: '/images/members/singles/27/saitouasuka@3x.jpg',
+  },
 };

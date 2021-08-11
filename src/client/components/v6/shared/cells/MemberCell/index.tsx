@@ -13,8 +13,33 @@ import {
   parentAnimationStyles,
 } from 'client/components/v6/shared/images/CoverImage';
 
+const getWrapperStyles = (isLink: boolean) => css`
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
+  cursor: ${isLink ? 'pointer' : 'default'};
+
+  ${isLink ? parentAnimationStyles : undefined};
+`;
+
+const LinkWrapper: React.FC<{
+  href?: string;
+  children: React.ReactNode;
+}> = props => {
+  const { href, children } = props;
+
+  return href !== undefined ? (
+    <Link href={href} passHref>
+      <a css={getWrapperStyles(true)}>{children}</a>
+    </Link>
+  ) : (
+    <div css={getWrapperStyles(false)}>{children}</div>
+  );
+};
+
 export type MemberCellProps = {
-  href: string;
+  href?: string;
   name: string;
   nameLang: string;
   number?: string | number;
@@ -28,102 +53,87 @@ export const MemberCell: React.FC<MemberCellProps> = props => {
   const { getTranslation } = useTranslations();
 
   return (
-    <Link href="/" passHref>
-      <a
+    <LinkWrapper href={props.href}>
+      <div
         css={css`
-          display: inline-block;
           width: 100%;
           height: 100%;
-          vertical-align: bottom;
-          cursor: pointer;
-
-          ${parentAnimationStyles};
+          border: 2px solid var(${getColorVarName('onBackground', 'standard')});
         `}
       >
         <div
           css={css`
             width: 100%;
             height: 100%;
-            border: 2px solid
-              var(${getColorVarName('onBackground', 'standard')});
+            display: flex;
+            flex-direction: column-reverse;
+            overflow: hidden;
+            z-index: 0;
           `}
         >
           <div
             css={css`
-              width: 100%;
-              height: 100%;
+              flex: 0 0 auto;
               display: flex;
-              flex-direction: column-reverse;
-              overflow: hidden;
-              z-index: 0;
+              align-items: center;
+              border-top: 1px solid
+                var(${getColorVarName('onBackground', 'standard')});
             `}
           >
-            <div
-              css={css`
-                flex: 0 0 auto;
-                display: flex;
-                align-items: center;
-                border-top: 1px solid
-                  var(${getColorVarName('onBackground', 'standard')});
-              `}
-            >
-              {props.number && (
-                <span
-                  css={css`
-                    flex: 0 0 40px;
-                    align-self: stretch;
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center;
-                    border-right: 1px solid
-                      var(${getColorVarName('onBackground', 'standard')});
-                  `}
-                >
-                  <Typography
-                    variant="h6"
-                    element="span"
-                    css={css`
-                      color: var(
-                        ${getColorVarName('onBackground', 'standard')}
-                      );
-                    `}
-                  >
-                    {props.number}
-                  </Typography>
-                </span>
-              )}
-              <Typography
-                variant="h7"
-                element="h3"
-                lang={props.nameLang}
-                ellipsis
+            {props.number && (
+              <span
                 css={css`
-                  flex: 1;
-                  display: inline;
-                  text-align: center;
-                  line-height: 1.5;
-                  color: var(${getGlobalColorVarName('gray7')});
-                  padding: ${commonStyles.spacing.xs};
-                  background-color: ${props.nameBackgroundColor ??
-                  `var(${getGlobalColorVarName('gray0')})`};
+                  flex: 0 0 40px;
+                  align-self: stretch;
+                  display: inline-flex;
+                  align-items: center;
+                  justify-content: center;
+                  border-right: 1px solid
+                    var(${getColorVarName('onBackground', 'standard')});
                 `}
               >
-                {props.name}
-              </Typography>
-            </div>
-            <CoverImage
-              image={props.image}
-              caption={
-                props.position ? getTranslation(props.position) : undefined
-              }
-              imageBackgroundColor={props.imageBackgroundColor}
+                <Typography
+                  variant="h6"
+                  element="span"
+                  css={css`
+                    color: var(${getColorVarName('onBackground', 'standard')});
+                  `}
+                >
+                  {props.number}
+                </Typography>
+              </span>
+            )}
+            <Typography
+              variant="h7"
+              element="h3"
+              lang={props.nameLang}
+              ellipsis
               css={css`
                 flex: 1;
+                display: inline;
+                text-align: center;
+                line-height: 1.5;
+                color: var(${getGlobalColorVarName('gray7')});
+                padding: ${commonStyles.spacing.xs};
+                background-color: ${props.nameBackgroundColor ??
+                `var(${getGlobalColorVarName('gray0')})`};
               `}
-            />
+            >
+              {props.name}
+            </Typography>
           </div>
+          <CoverImage
+            image={props.image}
+            caption={
+              props.position ? getTranslation(props.position) : undefined
+            }
+            imageBackgroundColor={props.imageBackgroundColor}
+            css={css`
+              flex: 1;
+            `}
+          />
         </div>
-      </a>
-    </Link>
+      </div>
+    </LinkWrapper>
   );
 };
