@@ -18,7 +18,7 @@ export type AlbumCellProps = {
   number: string;
   type: DiscographyType;
   image: ImageUrl;
-  artworkBackgroundColor?: string;
+  imageBackgroundColor?: string;
   titleBackgroundColor?: string;
 };
 
@@ -57,12 +57,12 @@ export const AlbumCell: React.FC<AlbumCellProps> = props => {
               z-index: 1;
               bottom: ${commonStyles.spacing.xs};
               right: ${commonStyles.spacing.xs};
-              border: 1px solid
-                var(${getColorVarName('onBackground', 'standard')});
-              padding: ${commonStyles.spacing.xs};
-              background-color: var(
-                ${getColorVarName('background', 'standard')}
-              );
+              border: 1px solid var(${getGlobalColorVarName('gray8')});
+              padding-top: ${commonStyles.spacing.xs};
+              padding-bottom: ${commonStyles.spacing.xs};
+              padding-left: ${commonStyles.spacing.xs};
+              padding-right: calc(${commonStyles.spacing.xs} + 2px);
+              background-color: var(${getGlobalColorVarName('white')});
               line-height: 1;
             `}
           >
@@ -71,6 +71,8 @@ export const AlbumCell: React.FC<AlbumCellProps> = props => {
               element="span"
               css={css`
                 text-transform: uppercase;
+                font-style: italic;
+                color: var(${getGlobalColorVarName('gray8')});
               `}
             >
               {caption}
@@ -88,14 +90,15 @@ export const AlbumCell: React.FC<AlbumCellProps> = props => {
             <Typography
               variant="h7"
               element="h3"
+              lang="ja"
               ellipsis
               css={css`
                 color: var(${getGlobalColorVarName('gray7')});
                 writing-mode: vertical-rl;
                 flex: 0 0 auto;
-                padding: ${commonStyles.spacing.xxs};
+                padding: ${commonStyles.spacing.xs};
                 background-color: ${props.titleBackgroundColor ??
-                `var(${getGlobalColorVarName('gray1')})`};
+                `var(${getGlobalColorVarName('gray0')})`};
               `}
             >
               {props.title}
@@ -106,7 +109,7 @@ export const AlbumCell: React.FC<AlbumCellProps> = props => {
                 overflow: hidden;
                 border-left: 1px solid
                   var(${getColorVarName('onBackground', 'standard')});
-                background-color: ${props.artworkBackgroundColor ??
+                background-color: ${props.imageBackgroundColor ??
                 `var(${getGlobalColorVarName('gray6')})`};
               `}
             >

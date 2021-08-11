@@ -34,7 +34,22 @@ Default.args = {
     lg: '/images/artworks/singles/27/A@3x.jpg',
   },
   titleBackgroundColor: '#f8b1b1',
-  artworkBackgroundColor: '#bf0000',
+  imageBackgroundColor: '#bf0000',
+};
+
+export const LongTitle = Template.bind({});
+LongTitle.args = {
+  href: '/',
+  title: '夜明けまで強がらなくてもいい',
+  number: '24',
+  type: 'single',
+  image: {
+    sm: '/images/artworks/singles/24/A@1x.jpg',
+    md: '/images/artworks/singles/24/A@2x.jpg',
+    lg: '/images/artworks/singles/24/A@3x.jpg',
+  },
+  titleBackgroundColor: '#a6c3cc',
+  imageBackgroundColor: '#5e8491',
 };
 
 export const FallbackBackground = Template.bind({});
