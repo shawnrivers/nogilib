@@ -4,7 +4,7 @@ import { AlbumCell, AlbumCellProps } from '.';
 import { ThemeDecorator } from 'storybook/ThemeDecorator';
 
 export default {
-  title: 'Components/Features/Discography/AlbumCell',
+  title: 'Components/Shared/Cells/AlbumCell',
   decorators: [ThemeDecorator()],
   component: AlbumCell,
 } as Meta<AlbumCellProps>;
