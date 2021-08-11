@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 import { Menu } from '@headlessui/react';
 import { Fragment } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Typography } from 'client/components/atoms/Typography';
 import { BaseButton } from 'client/components/v6/shared/buttons/base/BaseButton';
 import { BaseLink } from 'client/components/v6/shared/buttons/base/BaseLink';
@@ -79,6 +79,7 @@ export const SettingMenu: React.VFC<SettingMenuProps> = props => {
               </Typography>
               <MenuDownIcon
                 css={css`
+                  fill: var(${getColorVarName('onBackground', 'standard')});
                   margin-left: ${commonStyles.spacing.xs};
                   transition: transform 0.2s cubic-bezier(0, 0.5, 0.7, 1);
                   transform: rotate(${open ? '0.5turn' : '0turn'});
@@ -86,87 +87,83 @@ export const SettingMenu: React.VFC<SettingMenuProps> = props => {
               />
             </BaseButton>
           </Menu.Button>
-          <AnimatePresence>
-            {open && (
-              // @ts-ignore
-              <Menu.Items static as={Fragment}>
-                <motion.div
-                  key={`${buttonLabel}-menu`}
-                  initial="closed"
-                  animate="open"
-                  exit="closed"
-                  variants={{
-                    open: { scale: 1, opacity: 1 },
-                    closed: { scale: 0, opacity: 0 },
-                  }}
-                  transition={{ duration: 0.2, ease: [0, 0.5, 0.7, 1] }}
-                  style={{ originX: 1, originY: 0 }}
-                  css={css`
-                    position: absolute;
-                    right: 0;
-                    margin-top: ${commonStyles.spacing.xs};
-                    background-color: var(
-                      ${getColorVarName('background', 'standard')}
-                    );
-                    border: 2px solid
-                      var(${getColorVarName('onBackground', 'variant0')});
-                  `}
-                >
-                  <ul>
-                    {items.map(item => (
-                      // @ts-ignore
-                      <Menu.Item
-                        key={item.label}
-                        as="li"
-                        disabled={item.isSelected}
-                        css={css`
-                          width: 100%;
-                        `}
-                      >
-                        {({ active }) =>
-                          item.component === 'button' ? (
-                            <BaseButton
-                              disabled={item.isSelected}
-                              active={active}
-                              hideBorder
-                              css={menuItemButtonStyles}
-                              onClick={item.onClick}
+          {open && (
+            // @ts-ignore
+            <Menu.Items static as={Fragment}>
+              <motion.div
+                initial="closed"
+                animate="open"
+                variants={{
+                  open: { scale: 1, opacity: 1 },
+                  closed: { scale: 0, opacity: 0 },
+                }}
+                transition={{ duration: 0.2, ease: [0, 0.5, 0.7, 1] }}
+                style={{ originX: 1, originY: 0 }}
+                css={css`
+                  position: absolute;
+                  right: 0;
+                  margin-top: ${commonStyles.spacing.xs};
+                  background-color: var(
+                    ${getColorVarName('background', 'standard')}
+                  );
+                  border: 2px solid
+                    var(${getColorVarName('onBackground', 'variant0')});
+                `}
+              >
+                <ul>
+                  {items.map(item => (
+                    // @ts-ignore
+                    <Menu.Item
+                      key={item.label}
+                      as="li"
+                      disabled={item.isSelected}
+                      css={css`
+                        width: 100%;
+                      `}
+                    >
+                      {({ active }) =>
+                        item.component === 'button' ? (
+                          <BaseButton
+                            disabled={item.isSelected}
+                            active={active}
+                            hideBorder
+                            css={menuItemButtonStyles}
+                            onClick={item.onClick}
+                          >
+                            <RadioIcon isChecked={item.isSelected} />
+                            <Typography
+                              variant="body2"
+                              element="span"
+                              css={menuItemLabelStyles}
                             >
-                              <RadioIcon isChecked={item.isSelected} />
-                              <Typography
-                                variant="body2"
-                                element="span"
-                                css={menuItemLabelStyles}
-                              >
-                                {item.label}
-                              </Typography>
-                            </BaseButton>
-                          ) : (
-                            <BaseLink
-                              disabled={item.isSelected}
-                              active={active}
-                              hideBorder
-                              css={menuItemButtonStyles}
-                              href={item.href}
+                              {item.label}
+                            </Typography>
+                          </BaseButton>
+                        ) : (
+                          <BaseLink
+                            disabled={item.isSelected}
+                            active={active}
+                            hideBorder
+                            css={menuItemButtonStyles}
+                            href={item.href}
+                          >
+                            <RadioIcon isChecked={item.isSelected} />
+                            <Typography
+                              variant="body2"
+                              element="span"
+                              css={menuItemLabelStyles}
                             >
-                              <RadioIcon isChecked={item.isSelected} />
-                              <Typography
-                                variant="body2"
-                                element="span"
-                                css={menuItemLabelStyles}
-                              >
-                                {item.label}
-                              </Typography>
-                            </BaseLink>
-                          )
-                        }
-                      </Menu.Item>
-                    ))}
-                  </ul>
-                </motion.div>
-              </Menu.Items>
-            )}
-          </AnimatePresence>
+                              {item.label}
+                            </Typography>
+                          </BaseLink>
+                        )
+                      }
+                    </Menu.Item>
+                  ))}
+                </ul>
+              </motion.div>
+            </Menu.Items>
+          )}
         </Fragment>
       )}
     </Menu>
