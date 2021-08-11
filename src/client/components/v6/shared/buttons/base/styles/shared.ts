@@ -4,6 +4,11 @@ import { getColorVarName } from 'client/styles/tokens/colors';
 
 function getBackgroundTransitionStyles(disabled: boolean, active: boolean) {
   return css`
+    &.focus-visible {
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+    }
+
     &::before {
       position: absolute;
       width: 100%;
