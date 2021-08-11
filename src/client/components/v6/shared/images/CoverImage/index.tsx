@@ -9,29 +9,6 @@ import { Image } from 'client/components/atoms/image/Image';
 import { ImageUrl } from 'server/types/commons';
 import { joinClassNames } from 'client/utils/class';
 
-const imageInitialStyles = css`
-  transform: scale(1);
-`;
-const imageHoveredStyles = css`
-  transform: scale(1.1);
-`;
-
-const imageWrapperBeforeInitialStyles = css`
-  opacity: 0;
-`;
-const imageWrapperBeforeHoveredStyles = css`
-  opacity: 0.5;
-`;
-
-const arrowInitialStyles = css`
-  transform: translateX(-102%) scale(0);
-  opacity: 0;
-`;
-const arrowHoveredStyles = css`
-  transform: translateX(0) scale(1);
-  opacity: 1;
-`;
-
 export const parentAnimationStyles = css`
   & .image {
     transition: transform 0.3s cubic-bezier(0, 0.5, 0.7, 1);
@@ -53,30 +30,32 @@ export const parentAnimationStyles = css`
 
   &:active .image,
   &.focus-visible .image {
-    ${imageHoveredStyles};
+    transform: scale(1.1);
   }
 
   &:active .image-wrapper::before,
   &.focus-visible .image-wrapper::before {
-    ${imageWrapperBeforeHoveredStyles};
+    opacity: 0.5;
   }
 
   &:active .arrow,
   &.focus-visible .arrow {
-    ${arrowHoveredStyles};
+    transform: translateX(0) scale(1);
+    opacity: 1;
   }
 
   @media (hover: hover) and (pointer: fine) {
     &:hover .image {
-      ${imageHoveredStyles};
+      transform: scale(1.1);
     }
 
     &:hover .image-wrapper::before {
-      ${imageWrapperBeforeHoveredStyles};
+      opacity: 0.5;
     }
 
     &:hover .arrow {
-      ${arrowHoveredStyles};
+      transform: translateX(0) scale(1);
+      opacity: 1;
     }
   }
 `;
@@ -93,7 +72,6 @@ export const CoverImage: React.FC<CoverImageProps> = props => {
     <div
       className={joinClassNames('image-wrapper', props.className)}
       css={css`
-        /* flex: 1; */
         overflow: hidden;
         background-color: ${props.imageBackgroundColor ??
         `var(${getGlobalColorVarName('gray6')})`};
@@ -108,7 +86,8 @@ export const CoverImage: React.FC<CoverImageProps> = props => {
           left: 0;
           content: '';
           background-color: var(${getGlobalColorVarName('gray6')});
-          ${imageWrapperBeforeInitialStyles};
+
+          opacity: 0;
         }
       `}
     >
@@ -153,7 +132,9 @@ export const CoverImage: React.FC<CoverImageProps> = props => {
           display: flex;
           align-items: center;
           justify-content: center;
-          ${arrowInitialStyles};
+
+          transform: translateX(-102%) scale(0);
+          opacity: 0;
         `}
       >
         <ArrowRightIcon
@@ -174,7 +155,8 @@ export const CoverImage: React.FC<CoverImageProps> = props => {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          ${imageInitialStyles};
+
+          transform: scale(1);
         `}
       />
     </div>

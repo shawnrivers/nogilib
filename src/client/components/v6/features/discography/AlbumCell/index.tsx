@@ -33,6 +33,8 @@ export const AlbumCell: React.FC<AlbumCellProps> = props => {
       <a
         css={css`
           display: inline-block;
+          width: 100%;
+          height: 100%;
           vertical-align: bottom;
           cursor: pointer;
 
@@ -75,6 +77,7 @@ export const AlbumCell: React.FC<AlbumCellProps> = props => {
                 color: var(${getGlobalColorVarName('gray7')});
                 writing-mode: vertical-rl;
                 flex: 0 0 auto;
+                line-height: 1.5;
                 padding: ${commonStyles.spacing.xs};
                 background-color: ${props.titleBackgroundColor ??
                 `var(${getGlobalColorVarName('gray0')})`};

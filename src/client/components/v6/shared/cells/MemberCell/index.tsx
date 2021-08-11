@@ -1,6 +1,5 @@
 import { css } from '@emotion/react';
 import Link from 'next/link';
-import { Image } from 'client/components/atoms/image/Image';
 import { Typography } from 'client/components/atoms/Typography';
 import { commonStyles } from 'client/styles/tokens';
 import {
@@ -9,7 +8,10 @@ import {
 } from 'client/styles/tokens/colors';
 import { ImageUrl } from 'server/types/commons';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
-import { getImgSrcSet } from 'client/utils/imgSrcSet';
+import {
+  CoverImage,
+  parentAnimationStyles,
+} from 'client/components/v6/shared/images/CoverImage';
 
 export type MemberCellProps = {
   href: string;
@@ -29,16 +31,13 @@ export const MemberCell: React.FC<MemberCellProps> = props => {
     <Link href="/" passHref>
       <a
         css={css`
+          display: inline-block;
+          width: 100%;
+          height: 100%;
           vertical-align: bottom;
           cursor: pointer;
 
-          & img {
-            transition: transform 0.3s cubic-bezier(0, 0.5, 0.7, 1);
-          }
-
-          &:hover img {
-            transform: scale(1.1);
-          }
+          ${parentAnimationStyles};
         `}
       >
         <div
@@ -64,6 +63,8 @@ export const MemberCell: React.FC<MemberCellProps> = props => {
                 flex: 0 0 auto;
                 display: flex;
                 align-items: center;
+                border-top: 1px solid
+                  var(${getColorVarName('onBackground', 'standard')});
               `}
             >
               {props.number && (
@@ -100,6 +101,7 @@ export const MemberCell: React.FC<MemberCellProps> = props => {
                   flex: 1;
                   display: inline;
                   text-align: center;
+                  line-height: 1.5;
                   color: var(${getGlobalColorVarName('gray7')});
                   padding: ${commonStyles.spacing.xs};
                   background-color: ${props.nameBackgroundColor ??
@@ -109,57 +111,16 @@ export const MemberCell: React.FC<MemberCellProps> = props => {
                 {props.name}
               </Typography>
             </div>
-            <div
+            <CoverImage
+              image={props.image}
+              caption={
+                props.position ? getTranslation(props.position) : undefined
+              }
+              imageBackgroundColor={props.imageBackgroundColor}
               css={css`
                 flex: 1;
-                overflow: hidden;
-                position: relative;
-                border-bottom: 1px solid
-                  var(${getColorVarName('onBackground', 'standard')});
-                background-color: ${props.image ??
-                `var(${getGlobalColorVarName('gray6')})`};
               `}
-            >
-              <Image
-                src={props.image.lg}
-                srcSet={getImgSrcSet(props.image)}
-                alt=""
-                css={css`
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
-                `}
-              />
-              {props.position && (
-                <div
-                  css={css`
-                    position: absolute;
-                    z-index: 1;
-                    bottom: ${commonStyles.spacing.xs};
-                    right: ${commonStyles.spacing.xs};
-                    border: 1px solid var(${getGlobalColorVarName('gray8')});
-                    padding-top: ${commonStyles.spacing.xs};
-                    padding-bottom: ${commonStyles.spacing.xs};
-                    padding-left: ${commonStyles.spacing.xs};
-                    padding-right: calc(${commonStyles.spacing.xs} + 2px);
-                    background-color: var(${getGlobalColorVarName('white')});
-                    line-height: 1;
-                  `}
-                >
-                  <Typography
-                    variant="caption"
-                    element="span"
-                    css={css`
-                      text-transform: uppercase;
-                      font-style: italic;
-                      color: var(${getGlobalColorVarName('gray8')});
-                    `}
-                  >
-                    {getTranslation(props.position)}
-                  </Typography>
-                </div>
-              )}
-            </div>
+            />
           </div>
         </div>
       </a>
