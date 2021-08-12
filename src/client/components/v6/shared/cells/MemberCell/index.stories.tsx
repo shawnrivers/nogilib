@@ -28,7 +28,7 @@ Default.args = {
   name: 'Saito Asuka',
   nameLang: 'en',
   number: 1,
-  position: 'fukujin',
+  caption: 'fukujin',
   image: {
     sm: '/images/members/singles/27/saitouasuka@1x.jpg',
     md: '/images/members/singles/27/saitouasuka@2x.jpg',
@@ -44,7 +44,7 @@ Japanese.args = {
   name: '齋藤飛鳥',
   nameLang: 'ja',
   number: 1,
-  position: 'fukujin',
+  caption: 'fukujin',
   image: {
     sm: '/images/members/singles/27/saitouasuka@1x.jpg',
     md: '/images/members/singles/27/saitouasuka@2x.jpg',
@@ -73,7 +73,7 @@ export const NoNumber = Template.bind({});
 NoNumber.args = {
   href: '/',
   name: 'Saito Asuka',
-  position: 'fukujin',
+  caption: 'fukujin',
   image: {
     sm: '/images/members/singles/27/saitouasuka@1x.jpg',
     md: '/images/members/singles/27/saitouasuka@2x.jpg',
@@ -83,8 +83,8 @@ NoNumber.args = {
   nameBackgroundColor: '#e2f3fd',
 };
 
-export const NoPosition = Template.bind({});
-NoPosition.args = {
+export const NoCaption = Template.bind({});
+NoCaption.args = {
   href: '/',
   name: 'Saito Asuka',
   nameLang: 'en',
@@ -103,7 +103,7 @@ NotLink.args = {
   name: 'Kojima Haruna',
   nameLang: 'en',
   number: 1,
-  position: 'center',
+  caption: 'center',
   image: {
     sm: '/images/members/others/kojimaharuna@1x.jpg',
     md: '/images/members/others/kojimaharuna@2x.jpg',
@@ -116,7 +116,7 @@ FallbackBackground.args = {
   href: '/',
   name: 'Saito Asuka',
   number: 1,
-  position: 'fukujin',
+  caption: 'fukujin',
   image: {
     sm: '/images/members/singles/27/saitouasuka@1x.jpg',
     md: '/images/members/singles/27/saitouasuka@2x.jpg',

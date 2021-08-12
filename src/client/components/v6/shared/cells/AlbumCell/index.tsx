@@ -7,8 +7,6 @@ import {
   getGlobalColorVarName,
 } from 'client/styles/tokens/colors';
 import { ImageUrl } from 'server/types/commons';
-import { DiscographyType } from 'server/actors/Discography/types';
-import { useIntl } from 'client/i18n/hooks/useIntl';
 import {
   CoverImage,
   parentAnimationStyles,
@@ -17,17 +15,13 @@ import {
 export type AlbumCellProps = {
   href: string;
   title: string;
-  number: string;
-  type: DiscographyType;
+  caption?: string;
   image: ImageUrl;
   imageBackgroundColor?: string;
   titleBackgroundColor?: string;
 };
 
 export const AlbumCell: React.FC<AlbumCellProps> = props => {
-  const { formatAlbumType } = useIntl();
-  const caption = formatAlbumType(props.type, props.number);
-
   return (
     <Link href="/" passHref>
       <a
@@ -62,7 +56,7 @@ export const AlbumCell: React.FC<AlbumCellProps> = props => {
           >
             <CoverImage
               image={props.image}
-              caption={caption}
+              caption={props.caption}
               imageBackgroundColor={props.imageBackgroundColor}
               css={css`
                 flex: 1;

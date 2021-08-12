@@ -9,6 +9,9 @@ import { Image } from 'client/components/atoms/image/Image';
 import { ImageUrl } from 'server/types/commons';
 import { joinClassNames } from 'client/utils/class';
 
+/**
+ * The styles to be applied to `<CoverImage>`'s parent component.
+ */
 export const parentAnimationStyles = css`
   & .image {
     transition: transform 0.3s cubic-bezier(0, 0.5, 0.7, 1);

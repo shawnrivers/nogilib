@@ -26,8 +26,7 @@ export const Default = Template.bind({});
 Default.args = {
   href: '/',
   title: 'ごめんねFingers Crossed',
-  number: '27',
-  type: 'single',
+  caption: '27th. single',
   image: {
     sm: '/images/artworks/singles/27/A@1x.jpg',
     md: '/images/artworks/singles/27/A@2x.jpg',
@@ -41,8 +40,7 @@ export const LongTitle = Template.bind({});
 LongTitle.args = {
   href: '/',
   title: '夜明けまで強がらなくてもいい',
-  number: '24',
-  type: 'single',
+  caption: '24th. single',
   image: {
     sm: '/images/artworks/singles/24/A@1x.jpg',
     md: '/images/artworks/singles/24/A@2x.jpg',
@@ -56,8 +54,7 @@ export const FallbackBackground = Template.bind({});
 FallbackBackground.args = {
   href: '/',
   title: 'ごめんねFingers Crossed',
-  number: '27',
-  type: 'single',
+  caption: '27th. single',
   image: {
     sm: '/images/artworks/singles/27/A@1x.jpg',
     md: '/images/artworks/singles/27/A@2x.jpg',

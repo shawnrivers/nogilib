@@ -37,18 +37,18 @@ const LinkWrapper: React.FC<{
   );
 };
 
-export type MemberCellProps = {
+export type SongCellProps = {
   href?: string;
-  name: string;
-  nameLang: string;
+  title: string;
+  titleLang: string;
   number?: string | number;
   caption?: string;
   image: ImageUrl;
   imageBackgroundColor?: string;
-  nameBackgroundColor?: string;
+  titleBackgroundColor?: string;
 };
 
-export const MemberCell: React.FC<MemberCellProps> = props => {
+export const SongCell: React.FC<SongCellProps> = props => {
   return (
     <LinkWrapper href={props.href}>
       <div
@@ -63,7 +63,7 @@ export const MemberCell: React.FC<MemberCellProps> = props => {
             width: 100%;
             height: 100%;
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column;
             overflow: hidden;
             z-index: 0;
           `}
@@ -73,7 +73,7 @@ export const MemberCell: React.FC<MemberCellProps> = props => {
               flex: 0 0 auto;
               display: flex;
               align-items: center;
-              border-top: 1px solid
+              border-bottom: 1px solid
                 var(${getColorVarName('onBackground', 'standard')});
             `}
           >
@@ -103,7 +103,7 @@ export const MemberCell: React.FC<MemberCellProps> = props => {
             <Typography
               variant="h7"
               element="h3"
-              lang={props.nameLang}
+              lang={props.titleLang}
               ellipsis
               css={css`
                 flex: 1;
@@ -112,11 +112,11 @@ export const MemberCell: React.FC<MemberCellProps> = props => {
                 line-height: 1.5;
                 color: var(${getGlobalColorVarName('gray7')});
                 padding: ${commonStyles.spacing.xs};
-                background-color: ${props.nameBackgroundColor ??
+                background-color: ${props.titleBackgroundColor ??
                 `var(${getGlobalColorVarName('gray0')})`};
               `}
             >
-              {props.name}
+              {props.title}
             </Typography>
           </div>
           <CoverImage
