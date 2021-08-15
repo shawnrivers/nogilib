@@ -324,6 +324,18 @@
     "release": "2021-06-09"
   },
   {
+    "title": "タイトル未定",
+    "key": "untitled",
+    "type": "single",
+    "number": "28",
+    "artwork": {
+      "sm": "/images/artworks/artwork_no_image@1x.jpg",
+      "md": "/images/artworks/artwork_no_image@2x.jpg",
+      "lg": "/images/artworks/artwork_no_image@3x.jpg"
+    },
+    "release": "2021-09-22"
+  },
+  {
     "title": "今が思い出になるまで",
     "key": "imagaomoideninarumade",
     "type": "album",
