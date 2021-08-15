@@ -2,6 +2,7 @@ import { arrayToObject } from 'utils/array';
 import { TitleKeyArray } from 'server/types/commons';
 
 export type SingleTitle =
+  | 'タイトル未定'
   | 'ごめんねFingers crossed'
   | '僕は僕を好きになる'
   | 'しあわせの保護色'
@@ -42,6 +43,10 @@ export type OtherCdTitle = '世界中の隣人よ' | 'Route 246' | '１・２・
 export type CdTitle = SingleTitle | AlbumTitle | OtherCdTitle;
 
 const CdTitleKeyArray: TitleKeyArray<CdTitle> = [
+  {
+    title: 'タイトル未定',
+    key: 'untitled',
+  },
   {
     title: 'ごめんねFingers crossed',
     key: 'gomennefingerscrossed',
