@@ -213,6 +213,10 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: Birthplace.Tokyo,
     sites: [
       {
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/hazuki.p3.official/',
+      },
+      {
         title: SocialMedia.Blog,
         url: 'https://blog.nogizaka46.com/hazuki.mukai/',
       },
@@ -290,8 +294,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
       },
       {
         title: SocialMedia.Profile,
-        url:
-          'https://www.nogizaka46.com/member/detail/yoshidaayanochristie.php',
+        url: 'https://www.nogizaka46.com/member/detail/yoshidaayanochristie.php',
       },
     ],
   }),
