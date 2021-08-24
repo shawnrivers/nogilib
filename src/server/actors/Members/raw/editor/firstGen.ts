@@ -835,10 +835,6 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/matsumura_sayuri_official/',
       },
       {
-        title: SocialMedia.Blog,
-        url: 'https://blog.nogizaka46.com/sayuri.matsumura/',
-      },
-      {
         title: SocialMedia.Profile,
         url: 'https://n46llc.com/s/m00/artist/14',
       },
@@ -849,10 +845,6 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: SocialMedia.Weibo,
         url: 'https://weibo.com/u/7266841339',
-      },
-      {
-        title: SocialMedia.Nanagogo,
-        url: 'https://7gogo.jp/matsumura-sayuri',
       },
     ],
     photoAlbums: [
