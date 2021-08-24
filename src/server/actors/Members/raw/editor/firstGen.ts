@@ -827,12 +827,12 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     graduatedDate: '2021-07-13',
     sites: [
       {
-        title: SocialMedia.Instagram,
-        url: 'https://www.instagram.com/matsumura_sayuri_official/',
+        title: SocialMedia.Twitter,
+        url: 'https://twitter.com/sayuringo_staff',
       },
       {
-        title: SocialMedia.Blog,
-        url: 'https://blog.nogizaka46.com/sayuri.matsumura/',
+        title: SocialMedia.Instagram,
+        url: 'https://www.instagram.com/matsumura_sayuri_official/',
       },
       {
         title: SocialMedia.Profile,
@@ -845,10 +845,6 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: SocialMedia.Weibo,
         url: 'https://weibo.com/u/7266841339',
-      },
-      {
-        title: SocialMedia.Nanagogo,
-        url: 'https://7gogo.jp/matsumura-sayuri',
       },
     ],
     photoAlbums: [
