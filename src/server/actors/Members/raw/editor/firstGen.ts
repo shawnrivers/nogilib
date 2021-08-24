@@ -827,6 +827,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     graduatedDate: '2021-07-13',
     sites: [
       {
+        title: SocialMedia.Twitter,
+        url: 'https://twitter.com/sayuringo_staff',
+      },
+      {
         title: SocialMedia.Instagram,
         url: 'https://www.instagram.com/matsumura_sayuri_official/',
       },
