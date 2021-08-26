@@ -4,8 +4,6 @@ import { SongType } from 'server/actors/Songs/constants/songType';
 
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 
-import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
-
 export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: 'サヨナラの意味',
@@ -136,7 +134,7 @@ export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
       arrange: ['Akira Sunset', 'APAZZI'],
       direct: ['中村太洸'],
     },
-    unit: UNIT_NAMES['真夏さんリスペクト軍団'].name,
+    unit: '真夏さんリスペクト軍団',
     formations: {
       firstRow: [
         MemberNameKey.AkimotoManatsu,
@@ -155,7 +153,7 @@ export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
       arrange: ['山田竜平'],
       direct: ['東市篤憲'],
     },
-    unit: UNIT_NAMES['サンクエトワール'].name,
+    unit: 'サンクエトワール',
     formations: {
       firstRow: [
         MemberNameKey.KitanoHinako,

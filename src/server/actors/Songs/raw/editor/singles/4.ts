@@ -3,8 +3,6 @@ import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
 
-import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
-
 export const FOURTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: '制服のマネキン',
@@ -162,7 +160,7 @@ export const FOURTH_SINGLE_SONGS: SongRaw[] = [
       arrange: ['佐藤嘉風'],
       direct: ['丸山健志'],
     },
-    unit: UNIT_NAMES['WHITE HIGH'].name,
+    unit: 'WHITE HIGH',
     formations: {
       firstRow: [MemberNameKey.ShiraishiMai, MemberNameKey.TakayamaKazumi],
     },

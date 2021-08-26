@@ -3,8 +3,6 @@ import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 
-import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
-
 export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: 'Sing Out!',
@@ -162,7 +160,7 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
       compose: ['doubleglass'],
       arrange: ['doubleglass'],
     },
-    unit: UNIT_NAMES['からあげ姉妹'].name,
+    unit: 'からあげ姉妹',
     formations: {
       firstRow: [MemberNameKey.IkutaErika, MemberNameKey.MatsumuraSayuri],
     },

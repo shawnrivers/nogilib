@@ -3,8 +3,6 @@ import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
 
-import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
-
 export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: '今、話したい誰かがいる',
@@ -126,7 +124,7 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
       arrange: ['古川貴浩'],
       direct: ['湯浅弘章'],
     },
-    unit: UNIT_NAMES['サンクエトワール'].name,
+    unit: 'サンクエトワール',
     formations: {
       firstRow: [
         MemberNameKey.KitanoHinako,

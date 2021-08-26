@@ -4,8 +4,6 @@ import { SongType } from 'server/actors/Songs/constants/songType';
 
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 
-import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
-
 export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: 'シンクロニシティ',
@@ -135,7 +133,7 @@ export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
       compose: ['丸谷マナブ'],
       arrange: ['丸谷マナブ'],
     },
-    unit: UNIT_NAMES['藤桜梨'].name,
+    unit: '藤桜梨',
     formations: {
       firstRow: [
         MemberNameKey.IkutaErika,
@@ -209,7 +207,7 @@ export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
       compose: ['Ryota Saito', 'TomoLow'],
       arrange: ['Ryota Saito', 'TomoLow'],
     },
-    unit: UNIT_NAMES['いもうと坂'].name,
+    unit: 'いもうと坂',
     formations: {
       firstRow: [
         MemberNameKey.KuboShiori,

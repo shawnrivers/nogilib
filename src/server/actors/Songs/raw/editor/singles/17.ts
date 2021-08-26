@@ -3,8 +3,6 @@ import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 
-import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
-
 export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: 'インフルエンサー',
@@ -86,7 +84,7 @@ export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
       compose: ['片桐周太郎'],
       arrange: ['片桐周太郎'],
     },
-    unit: UNIT_NAMES['女子校カルテット'].name,
+    unit: '女子校カルテット',
     formations: {
       firstRow: [
         MemberNameKey.AkimotoManatsu,
@@ -105,7 +103,7 @@ export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
       arrange: ['華原大輔'],
       direct: ['伊藤衆人'],
     },
-    unit: UNIT_NAMES['姉御坂'].name,
+    unit: '姉御坂',
     formations: {
       firstRow: [
         MemberNameKey.EtouMisa,
@@ -124,7 +122,7 @@ export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
       arrange: ['Yasutaka.Ishio'],
       direct: ['井上強'],
     },
-    unit: UNIT_NAMES['ナスカ'].name,
+    unit: 'ナスカ',
     formations: {
       firstRow: [
         MemberNameKey.ItouMarika,
@@ -172,7 +170,7 @@ export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
       compose: ['小網準'],
       arrange: ['野中"まさ"雄一'],
     },
-    unit: UNIT_NAMES['かすみ草'].name,
+    unit: 'かすみ草',
     formations: {
       firstRow: [
         MemberNameKey.IkomaRina,

@@ -3,7 +3,6 @@ import { SongType } from 'server/actors/Songs/constants/songType';
 
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { UnitName } from 'server/actors/Units/constants/unitName';
 
 export const OTHER_SONGS: SongRaw[] = [
   createSongRaw({
@@ -124,7 +123,7 @@ export const OTHER_SONGS: SongRaw[] = [
       arrange: ['APAZZI', 'Akira Sunset'],
       direct: ['月田茂'],
     },
-    unit: UnitName.Karaageshimai,
+    unit: 'からあげ姉妹',
     formations: {
       firstRow: [MemberNameKey.IkutaErika, MemberNameKey.MatsumuraSayuri],
     },

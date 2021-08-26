@@ -4,8 +4,6 @@ import { SongType } from 'server/actors/Songs/constants/songType';
 
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 
-import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
-
 export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: 'いつかできるから今日できる',
@@ -135,7 +133,7 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
       arrange: ['さいとうくにあき', 'Akira Sunset', '京田誠一'],
       direct: ['伊藤衆人'],
     },
-    unit: UNIT_NAMES['若様軍団'].name,
+    unit: '若様軍団',
     formations: {
       firstRow: [
         MemberNameKey.UmezawaMinami,

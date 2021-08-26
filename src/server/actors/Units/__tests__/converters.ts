@@ -7,7 +7,7 @@ const songsRawObject = new Songs(songsRawArray).rawObject;
 
 describe('convertUnitSongs', () => {
   test('should return songs when the song performers match the unit', () => {
-    const unitName = UNIT_NAMES['さゆりんご軍団'].name;
+    const unitName = 'さゆりんご軍団';
     const songs = [
       songsRawObject['白米様'],
       songsRawObject['さゆりんご募集中'],

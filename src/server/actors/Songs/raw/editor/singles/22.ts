@@ -3,8 +3,6 @@ import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 
-import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
-
 export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: '帰り道は遠回りしたくなる',
@@ -139,7 +137,7 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
       arrange: ['安部純'],
       direct: ['荒船泰廣'],
     },
-    unit: UNIT_NAMES['女子校カルテット'].name,
+    unit: '女子校カルテット',
     formations: {
       firstRow: [
         MemberNameKey.AkimotoManatsu,

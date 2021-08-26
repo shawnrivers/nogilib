@@ -3,8 +3,6 @@ import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
 
-import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
-
 export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: '太陽ノック',
@@ -118,7 +116,7 @@ export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
       arrange: ['Akira Sunset'],
       direct: ['月田茂', '山本篤彦', '柴谷麻以'],
     },
-    unit: UNIT_NAMES['からあげ姉妹'].name,
+    unit: 'からあげ姉妹',
     formations: {
       firstRow: [MemberNameKey.IkutaErika, MemberNameKey.MatsumuraSayuri],
     },

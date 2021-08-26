@@ -3,8 +3,6 @@ import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
 
-import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
-
 export const FIFTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: '裸足でSummer',
@@ -141,7 +139,7 @@ export const FIFTEENTH_SINGLE_SONGS: SongRaw[] = [
       arrange: ['あらケン'],
       direct: ['伊藤衆人'],
     },
-    unit: UNIT_NAMES['さゆりんご軍団'].name,
+    unit: 'さゆりんご軍団',
     formations: {
       firstRow: [MemberNameKey.MatsumuraSayuri],
       secondRow: [

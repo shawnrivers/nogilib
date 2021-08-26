@@ -3,8 +3,6 @@ import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
 
-import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
-
 export const EIGHTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: '気づいたら片想い',
@@ -155,7 +153,7 @@ export const EIGHTH_SINGLE_SONGS: SongRaw[] = [
       arrange: ['Soulife'],
       direct: ['池田一真'],
     },
-    unit: UNIT_NAMES['孤独兄弟'].name,
+    unit: '孤独兄弟',
     formations: {
       firstRow: [MemberNameKey.ShiraishiMai, MemberNameKey.HashimotoNanami],
     },
