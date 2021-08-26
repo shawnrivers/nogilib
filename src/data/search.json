@@ -380,11 +380,11 @@
         }
       },
       {
-        "id": "single-untitled",
-        "field": "タイトル未定 untitled",
+        "id": "single-kiminishikarareta",
+        "field": "君に叱られた kiminishikarareta",
         "searchType": "albums",
-        "key": "untitled",
-        "title": "タイトル未定",
+        "key": "kiminishikarareta",
+        "title": "君に叱られた",
         "number": "28",
         "albumType": "single",
         "artwork": {
@@ -4202,14 +4202,14 @@
         }
       },
       {
-        "id": "song-untitled",
-        "field": "タイトル未定 untitled",
+        "id": "song-kiminishikarareta",
+        "field": "君に叱られた kiminishikarareta",
         "searchType": "songs",
-        "key": "untitled",
-        "title": "タイトル未定",
+        "key": "kiminishikarareta",
+        "title": "君に叱られた",
         "songType": "title",
         "single": {
-          "title": "タイトル未定",
+          "title": "君に叱られた",
           "number": "28"
         },
         "albums": [],
