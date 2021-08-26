@@ -1,9 +1,6 @@
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
-
 export const SIXTEENTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: 'サヨナラの意味',
   number: '16',
@@ -11,50 +8,50 @@ export const SIXTEENTH_SINGLE: DiscographyRaw = createSingleRaw({
   cdTypes: ['A', 'B', 'C', 'D', 'T'],
   songs: [
     {
-      title: SONGS['サヨナラの意味'].title,
+      title: 'サヨナラの意味',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['孤独な青空'].title,
+      title: '孤独な青空',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['あの教室'].title,
+      title: 'あの教室',
       inCdType: ['A'],
     },
     {
-      title: SONGS['ブランコ'].title,
+      title: 'ブランコ',
       inCdType: ['B'],
     },
     {
-      title: SONGS['2度目のキスから'].title,
+      title: '2度目のキスから',
       inCdType: ['C'],
     },
     {
-      title: SONGS['君に贈る花がない'].title,
+      title: '君に贈る花がない',
       inCdType: ['D'],
     },
     {
-      title: SONGS['ないものねだり'].title,
+      title: 'ないものねだり',
       inCdType: ['T'],
     },
   ],
   underMembers: [
-    MemberNameKey.KawamuraMahiro,
-    MemberNameKey.HiguchiHina,
-    MemberNameKey.TeradaRanze,
-    MemberNameKey.NakadaKana,
-    MemberNameKey.NoujouAmi,
-    MemberNameKey.SaitouYuuri,
-    MemberNameKey.YamazakiRena,
-    MemberNameKey.WatanabeMiria,
-    MemberNameKey.SuzukiAyane,
-    MemberNameKey.SaitouChiharu,
-    MemberNameKey.ItouJunna,
-    MemberNameKey.WadaMaaya,
-    MemberNameKey.ItouKarin,
-    MemberNameKey.KawagoHina,
-    MemberNameKey.SasakiKotoko,
-    MemberNameKey.SagaraIori,
+    'kawamuramahiro',
+    'higuchihina',
+    'teradaranze',
+    'nakadakana',
+    'noujouami',
+    'saitouyuuri',
+    'yamazakirena',
+    'watanabemiria',
+    'suzukiayane',
+    'saitouchiharu',
+    'itoujunna',
+    'wadamaaya',
+    'itoukarin',
+    'kawagohina',
+    'sasakikotoko',
+    'sagaraiori',
   ],
 });

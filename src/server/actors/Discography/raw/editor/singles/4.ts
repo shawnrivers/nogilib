@@ -1,9 +1,6 @@
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
-
 export const FOURTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: '制服のマネキン',
   number: '4',
@@ -11,47 +8,47 @@ export const FOURTH_SINGLE: DiscographyRaw = createSingleRaw({
   cdTypes: ['A', 'B', 'C', 'T'],
   songs: [
     {
-      title: SONGS['制服のマネキン'].title,
+      title: '制服のマネキン',
       inCdType: ['A', 'B', 'C', 'T'],
     },
     {
-      title: SONGS['指望遠鏡'].title,
+      title: '指望遠鏡',
       inCdType: ['A', 'B', 'C', 'T'],
     },
     {
-      title: SONGS['やさしさなら間に合ってる'].title,
+      title: 'やさしさなら間に合ってる',
       inCdType: ['A'],
     },
     {
-      title: SONGS['ここじゃないどこか'].title,
+      title: 'ここじゃないどこか',
       inCdType: ['B'],
     },
     {
-      title: SONGS['春のメロディー'].title,
+      title: '春のメロディー',
       inCdType: ['C'],
     },
     {
-      title: SONGS['渋谷ブルース'].title,
+      title: '渋谷ブルース',
       inCdType: ['T'],
     },
   ],
   underMembers: [
-    MemberNameKey.SaitouYuuri,
-    MemberNameKey.NakadaKana,
-    MemberNameKey.EtouMisa,
-    MemberNameKey.ItouMarika,
-    MemberNameKey.KawagoHina,
-    MemberNameKey.HiguchiHina,
-    MemberNameKey.ItouNene,
-    MemberNameKey.KawamuraMahiro,
-    MemberNameKey.NakamotoHimeka,
-    MemberNameKey.HatanakaSeira,
-    MemberNameKey.NagashimaSeira,
-    MemberNameKey.MiyazawaSeira,
-    MemberNameKey.YamatoRina,
-    MemberNameKey.AndouMikumo,
-    MemberNameKey.WadaMaaya,
-    MemberNameKey.SaitouChiharu,
+    'saitouyuuri',
+    'nakadakana',
+    'etoumisa',
+    'itoumarika',
+    'kawagohina',
+    'higuchihina',
+    'itounene',
+    'kawamuramahiro',
+    'nakamotohimeka',
+    'hatanakaseira',
+    'nagashimaseira',
+    'miyazawaseira',
+    'yamatorina',
+    'andoumikumo',
+    'wadamaaya',
+    'saitouchiharu',
   ],
-  skips: [MemberNameKey.KashiwaYukina],
+  skips: ['kashiwayukina'],
 });

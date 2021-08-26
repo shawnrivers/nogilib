@@ -1,9 +1,6 @@
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
-
 export const TENTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: '何度目の青空か?',
   number: '10',
@@ -11,56 +8,56 @@ export const TENTH_SINGLE: DiscographyRaw = createSingleRaw({
   cdTypes: ['A', 'B', 'C', 'T'],
   songs: [
     {
-      title: SONGS['何度目の青空か?'].title,
+      title: '何度目の青空か?',
       inCdType: ['A', 'B', 'C', 'T'],
     },
     {
-      title: SONGS['遠回りの愛情'].title,
+      title: '遠回りの愛情',
       inCdType: ['A', 'B', 'C', 'T'],
     },
     {
-      title: SONGS['転がった鐘を鳴らせ!'].title,
+      title: '転がった鐘を鳴らせ!',
       inCdType: ['A'],
     },
     {
-      title: SONGS['私、起きる。'].title,
+      title: '私、起きる。',
       inCdType: ['B'],
     },
     {
-      title: SONGS['あの日 僕は咄嗟に嘘をついた'].title,
+      title: 'あの日 僕は咄嗟に嘘をついた',
       inCdType: ['C'],
     },
     {
-      title: SONGS['Tender days'].title,
+      title: 'Tender days',
       inCdType: ['T'],
     },
   ],
   underMembers: [
-    MemberNameKey.SaitouAsuka,
-    MemberNameKey.InoueSayuri,
-    MemberNameKey.ItouMarika,
-    MemberNameKey.NagashimaSeira,
-    MemberNameKey.NakamotoHimeka,
-    MemberNameKey.SaitouYuuri,
-    MemberNameKey.NakadaKana,
-    MemberNameKey.NoujouAmi,
-    MemberNameKey.KawamuraMahiro,
-    MemberNameKey.WadaMaaya,
-    MemberNameKey.HiguchiHina,
-    MemberNameKey.ItouKarin,
-    MemberNameKey.KawagoHina,
-    MemberNameKey.HatanakaSeira,
-    MemberNameKey.KitanoHinako,
-    MemberNameKey.YamatoRina,
-    MemberNameKey.ShinuchiMai,
+    'saitouasuka',
+    'inouesayuri',
+    'itoumarika',
+    'nagashimaseira',
+    'nakamotohimeka',
+    'saitouyuuri',
+    'nakadakana',
+    'noujouami',
+    'kawamuramahiro',
+    'wadamaaya',
+    'higuchihina',
+    'itoukarin',
+    'kawagohina',
+    'hatanakaseira',
+    'kitanohinako',
+    'yamatorina',
+    'shinuchimai',
   ],
   trainees: [
-    MemberNameKey.ItouJunna,
-    MemberNameKey.SagaraIori,
-    MemberNameKey.SasakiKotoko,
-    MemberNameKey.SuzukiAyane,
-    MemberNameKey.TeradaRanze,
-    MemberNameKey.YamazakiRena,
-    MemberNameKey.WatanabeMiria,
+    'itoujunna',
+    'sagaraiori',
+    'sasakikotoko',
+    'suzukiayane',
+    'teradaranze',
+    'yamazakirena',
+    'watanabemiria',
   ],
 });

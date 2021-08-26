@@ -59,10 +59,9 @@ export const convertSongAlbums: ConvertSongAlbums = ({
     }
   }
 
-  return sortByDate(
-    songAlbumsWithRelease,
-    'release'
-  ).map(({ title, number }) => ({ title, number }));
+  return sortByDate(songAlbumsWithRelease, 'release').map(
+    ({ title, number }) => ({ title, number })
+  );
 };
 
 export const convertSongOtherCds = (params: {
@@ -152,8 +151,9 @@ export const convertSongArtwork: ConvertSongArtwork = ({
   }
 
   if (songOtherCdsResult.length > 0) {
-    const oldestSongOtherCdTitle = songOtherCdsResult.slice().reverse()[0]
-      .title;
+    const oldestSongOtherCdTitle = songOtherCdsResult
+      .slice()
+      .reverse()[0].title;
     const otherCd = otherCdsRawObject[oldestSongOtherCdTitle];
 
     for (const otherCdSong of otherCd.songs) {
@@ -224,8 +224,9 @@ export const convertSongPerformersTag = (params: {
       number: songSingleResult.number,
     };
   } else if (songOtherCdsResult.length > 0) {
-    const oldestSongOtherCdTitle = songOtherCdsResult.slice().reverse()[0]
-      .title;
+    const oldestSongOtherCdTitle = songOtherCdsResult
+      .slice()
+      .reverse()[0].title;
 
     album = {
       type: 'digital',

@@ -1,6 +1,5 @@
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createAlbumRaw } from 'server/actors/Discography/raw/creators';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const FIRST_ALBUM: DiscographyRaw = createAlbumRaw({
   title: '透明な色',
@@ -10,119 +9,119 @@ export const FIRST_ALBUM: DiscographyRaw = createAlbumRaw({
   cdTypes: ['A', 'B', 'C'],
   songs: [
     {
-      title: SONGS['OVERTURE'].title,
+      title: 'OVERTURE',
       inCdType: ['A', 'B', 'C'],
     },
     {
-      title: SONGS['ぐるぐるカーテン'].title,
+      title: 'ぐるぐるカーテン',
       inCdType: ['A', 'B', 'C'],
     },
     {
-      title: SONGS['おいでシャンプー'].title,
+      title: 'おいでシャンプー',
       inCdType: ['A', 'B', 'C'],
     },
     {
-      title: SONGS['走れ!Bicycle'].title,
+      title: '走れ!Bicycle',
       inCdType: ['A', 'B', 'C'],
     },
     {
-      title: SONGS['制服のマネキン'].title,
+      title: '制服のマネキン',
       inCdType: ['A', 'B', 'C'],
     },
     {
-      title: SONGS['君の名は希望'].title,
+      title: '君の名は希望',
       inCdType: ['A', 'B', 'C'],
     },
     {
-      title: SONGS['ガールズルール'].title,
+      title: 'ガールズルール',
       inCdType: ['A', 'B', 'C'],
     },
     {
-      title: SONGS['バレッタ'].title,
+      title: 'バレッタ',
       inCdType: ['A', 'B', 'C'],
     },
     {
-      title: SONGS['気づいたら片想い'].title,
+      title: '気づいたら片想い',
       inCdType: ['A', 'B', 'C'],
     },
     {
-      title: SONGS['夏のFree&Easy'].title,
+      title: '夏のFree&Easy',
       inCdType: ['A', 'B', 'C'],
     },
     {
-      title: SONGS['何度目の青空か?'].title,
+      title: '何度目の青空か?',
       inCdType: ['A', 'B', 'C'],
     },
     {
-      title: SONGS['誰かは味方'].title,
+      title: '誰かは味方',
       inCdType: ['A', 'B', 'C'],
     },
     {
-      title: SONGS['革命の馬'].title,
+      title: '革命の馬',
       inCdType: ['A', 'B', 'C'],
     },
     {
-      title: SONGS['僕がいる場所'].title,
+      title: '僕がいる場所',
       inCdType: ['A', 'B', 'C'],
     },
     {
-      title: SONGS['あなたのために弾きたい'].title,
+      title: 'あなたのために弾きたい',
       inCdType: ['A', 'B', 'C'],
     },
     {
-      title: SONGS['他の星から'].title,
+      title: '他の星から',
       inCdType: ['A', 'B'],
     },
     {
-      title: SONGS['私のために 誰かのために'].title,
+      title: '私のために 誰かのために',
       inCdType: ['A', 'B'],
     },
     {
-      title: SONGS['せっかちなかたつむり'].title,
+      title: 'せっかちなかたつむり',
       inCdType: ['A', 'B'],
     },
     {
-      title: SONGS['涙がまだ悲しみだった頃'].title,
+      title: '涙がまだ悲しみだった頃',
       inCdType: ['A', 'B'],
     },
     {
-      title: SONGS['無口なライオン'].title,
+      title: '無口なライオン',
       inCdType: ['A', 'B'],
     },
     {
-      title: SONGS['世界で一番 孤独なLover'].title,
+      title: '世界で一番 孤独なLover',
       inCdType: ['A', 'B'],
     },
     {
-      title: SONGS['あの日 僕は咄嗟に嘘をついた'].title,
+      title: 'あの日 僕は咄嗟に嘘をついた',
       inCdType: ['A', 'B'],
     },
     {
-      title: SONGS['13日の金曜日'].title,
+      title: '13日の金曜日',
       inCdType: ['A', 'B'],
     },
     {
-      title: SONGS['失いたくないから'].title,
+      title: '失いたくないから',
       inCdType: ['A', 'B'],
     },
     {
-      title: SONGS['ダンケシェーン'].title,
+      title: 'ダンケシェーン',
       inCdType: ['A', 'B'],
     },
     {
-      title: SONGS['傾斜する'].title,
+      title: '傾斜する',
       inCdType: ['A', 'B'],
     },
     {
-      title: SONGS['なぞの落書き'].title,
+      title: 'なぞの落書き',
       inCdType: ['A', 'B'],
     },
     {
-      title: SONGS['自由の彼方'].title,
+      title: '自由の彼方',
       inCdType: ['A', 'B'],
     },
     {
-      title: SONGS['ひとりよがり'].title,
+      title: 'ひとりよがり',
       inCdType: ['A', 'B'],
     },
   ],

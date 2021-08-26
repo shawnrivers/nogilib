@@ -1,6 +1,5 @@
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createAlbumRaw } from 'server/actors/Discography/raw/creators';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const FOURTH_ALBUM: DiscographyRaw = createAlbumRaw({
   title: '今が思い出になるまで',
@@ -10,111 +9,111 @@ export const FOURTH_ALBUM: DiscographyRaw = createAlbumRaw({
   cdTypes: ['L', 'A', 'B', 'T'],
   songs: [
     {
-      title: SONGS['ありがちな恋愛'].title,
+      title: 'ありがちな恋愛',
       inCdType: ['L', 'A', 'B', 'T'],
     },
     {
-      title: SONGS['逃げ水'].title,
+      title: '逃げ水',
       inCdType: ['L', 'A', 'B', 'T'],
     },
     {
-      title: SONGS['いつかできるから今日できる'].title,
+      title: 'いつかできるから今日できる',
       inCdType: ['L', 'A', 'B', 'T'],
     },
     {
-      title: SONGS['シンクロニシティ'].title,
+      title: 'シンクロニシティ',
       inCdType: ['L', 'A', 'B', 'T'],
     },
     {
-      title: SONGS['ジコチューで行こう!'].title,
+      title: 'ジコチューで行こう!',
       inCdType: ['L', 'A', 'B', 'T'],
     },
     {
-      title: SONGS['帰り道は遠回りしたくなる'].title,
+      title: '帰り道は遠回りしたくなる',
       inCdType: ['L', 'A', 'B', 'T'],
     },
     {
-      title: SONGS['アンダー'].title,
+      title: 'アンダー',
       inCdType: ['L', 'A', 'B', 'T'],
     },
     {
-      title: SONGS['My rule'].title,
+      title: 'My rule',
       inCdType: ['L', 'A', 'B', 'T'],
     },
     {
-      title: SONGS['新しい世界'].title,
+      title: '新しい世界',
       inCdType: ['L', 'A', 'B', 'T'],
     },
     {
-      title: SONGS['三角の空き地'].title,
+      title: '三角の空き地',
       inCdType: ['L', 'A', 'B', 'T'],
     },
     {
-      title: SONGS['日常'].title,
+      title: '日常',
       inCdType: ['L', 'A', 'B', 'T'],
     },
     {
-      title: SONGS['もし君がいなければ'].title,
+      title: 'もし君がいなければ',
       inCdType: ['L'],
     },
     {
-      title: SONGS['キスの手裏剣'].title,
+      title: 'キスの手裏剣',
       inCdType: ['L'],
     },
     {
-      title: SONGS['Against'].title,
+      title: 'Against',
       inCdType: ['L'],
     },
     {
-      title: SONGS['つづく'].title,
+      title: 'つづく',
       inCdType: ['L'],
     },
     {
-      title: SONGS['頬杖をついては眠れない'].title,
+      title: '頬杖をついては眠れない',
       inCdType: ['A'],
     },
     {
-      title: SONGS['ぼっち党'].title,
+      title: 'ぼっち党',
       inCdType: ['A'],
     },
     {
-      title: SONGS['僕の衝動'].title,
+      title: '僕の衝動',
       inCdType: ['A'],
     },
     {
-      title: SONGS['スカウトマン'].title,
+      title: 'スカウトマン',
       inCdType: ['A'],
     },
     {
-      title: SONGS['さゆりんご募集中'].title,
+      title: 'さゆりんご募集中',
       inCdType: ['B'],
     },
     {
-      title: SONGS['ゴルゴンゾーラ'].title,
+      title: 'ゴルゴンゾーラ',
       inCdType: ['B'],
     },
     {
-      title: SONGS['トキトキメキメキ'].title,
+      title: 'トキトキメキメキ',
       inCdType: ['B'],
     },
     {
-      title: SONGS['未来の答え'].title,
+      title: '未来の答え',
       inCdType: ['B'],
     },
     {
-      title: SONGS['もうすぐ～ザンビ伝説～'].title,
+      title: 'もうすぐ～ザンビ伝説～',
       inCdType: ['T'],
     },
     {
-      title: SONGS['キャラバンは眠らない'].title,
+      title: 'キャラバンは眠らない',
       inCdType: ['T'],
     },
     {
-      title: SONGS['ライブ神'].title,
+      title: 'ライブ神',
       inCdType: ['T'],
     },
     {
-      title: SONGS['自分じゃない感じ'].title,
+      title: '自分じゃない感じ',
       inCdType: ['T'],
     },
   ],

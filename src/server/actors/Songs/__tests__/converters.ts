@@ -26,7 +26,7 @@ describe('convertSongSingle', () => {
   test('should return single title and number when the single contains this song', () => {
     expect(
       convertSongSingle({
-        songTitle: SONGS['しあわせの保護色'].title,
+        songTitle: 'しあわせの保護色',
         singlesRawArray,
       })
     ).toEqual({
@@ -38,7 +38,7 @@ describe('convertSongSingle', () => {
   test('should return empty when no any single contains this song', () => {
     expect(
       convertSongSingle({
-        songTitle: SONGS['ありがちな恋愛'].title,
+        songTitle: 'ありがちな恋愛',
         singlesRawArray,
       })
     ).toEqual({
@@ -52,7 +52,7 @@ describe('convertSongAlbums', () => {
   test('should return album title and number when the album contains this song', () => {
     expect(
       convertSongAlbums({
-        songTitle: SONGS['自分のこと'].title,
+        songTitle: '自分のこと',
         albumsRawArray,
       })
     ).toEqual([
@@ -66,7 +66,7 @@ describe('convertSongAlbums', () => {
   test('should return an empty array when no any album contains this song', () => {
     expect(
       convertSongAlbums({
-        songTitle: SONGS['ショパンの嘘つき'].title,
+        songTitle: 'ショパンの嘘つき',
         albumsRawArray,
       })
     ).toEqual([]);
@@ -75,7 +75,7 @@ describe('convertSongAlbums', () => {
 
 describe('convertSongArtwork', () => {
   test('should the first matched single artwork', () => {
-    const songTitle = SONGS['シンクロニシティ'].title;
+    const songTitle = 'シンクロニシティ';
 
     expect(
       convertSongArtwork({
@@ -98,7 +98,7 @@ describe('convertSongArtwork', () => {
   });
 
   test('should return the first matched album artwork when no single matched', () => {
-    const songTitle = SONGS['自分のこと'].title;
+    const songTitle = '自分のこと';
 
     expect(
       convertSongArtwork({
@@ -121,7 +121,7 @@ describe('convertSongArtwork', () => {
   });
 
   test('should return the first matched other CD artwork when no single nor albums matched', () => {
-    const songTitle = SONGS['世界中の隣人よ'].title;
+    const songTitle = '世界中の隣人よ';
 
     expect(
       convertSongArtwork({
@@ -144,7 +144,7 @@ describe('convertSongArtwork', () => {
   });
 
   test('should return no image artwork when no single nor albums and other CDs matched', () => {
-    const songTitle = SONGS['OVERTURE'].title;
+    const songTitle = 'OVERTURE';
 
     expect(
       convertSongArtwork({

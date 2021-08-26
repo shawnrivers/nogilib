@@ -1,9 +1,6 @@
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
-
 export const TWELFTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: '太陽ノック',
   number: '12',
@@ -11,53 +8,53 @@ export const TWELFTH_SINGLE: DiscographyRaw = createSingleRaw({
   cdTypes: ['A', 'B', 'C', 'T'],
   songs: [
     {
-      title: SONGS['太陽ノック'].title,
+      title: '太陽ノック',
       inCdType: ['A', 'B', 'C', 'T', 'L'],
     },
     {
-      title: SONGS['もう少しの夢'].title,
+      title: 'もう少しの夢',
       inCdType: ['A', 'B', 'C', 'T', 'L'],
     },
     {
-      title: SONGS['魚たちのLOVE SONG'].title,
+      title: '魚たちのLOVE SONG',
       inCdType: ['A'],
     },
     {
-      title: SONGS['無表情'].title,
+      title: '無表情',
       inCdType: ['B'],
     },
     {
-      title: SONGS['別れ際、もっと好きになる'].title,
+      title: '別れ際、もっと好きになる',
       inCdType: ['C'],
     },
     {
-      title: SONGS['羽根の記憶'].title,
+      title: '羽根の記憶',
       inCdType: ['T'],
     },
     {
-      title: SONGS['制服を脱いでサヨナラを…'].title,
+      title: '制服を脱いでサヨナラを…',
       inCdType: ['T'],
     },
   ],
   underMembers: [
-    MemberNameKey.KawamuraMahiro,
-    MemberNameKey.KitanoHinako,
-    MemberNameKey.HoriMiona,
-    MemberNameKey.NakamotoHimeka,
-    MemberNameKey.NakadaKana,
-    MemberNameKey.SagaraIori,
-    MemberNameKey.KawagoHina,
-    MemberNameKey.NagashimaSeira,
-    MemberNameKey.NoujouAmi,
-    MemberNameKey.SaitouChiharu,
-    MemberNameKey.WadaMaaya,
-    MemberNameKey.SasakiKotoko,
-    MemberNameKey.TeradaRanze,
-    MemberNameKey.ItouKarin,
-    MemberNameKey.WatanabeMiria,
-    MemberNameKey.SuzukiAyane,
-    MemberNameKey.ItouJunna,
-    MemberNameKey.HiguchiHina,
+    'kawamuramahiro',
+    'kitanohinako',
+    'horimiona',
+    'nakamotohimeka',
+    'nakadakana',
+    'sagaraiori',
+    'kawagohina',
+    'nagashimaseira',
+    'noujouami',
+    'saitouchiharu',
+    'wadamaaya',
+    'sasakikotoko',
+    'teradaranze',
+    'itoukarin',
+    'watanabemiria',
+    'suzukiayane',
+    'itoujunna',
+    'higuchihina',
   ],
-  skips: [MemberNameKey.YamazakiRena],
+  skips: ['yamazakirena'],
 });

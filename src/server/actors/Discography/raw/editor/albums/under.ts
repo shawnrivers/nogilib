@@ -1,6 +1,5 @@
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createAlbumRaw } from 'server/actors/Discography/raw/creators';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const UNDER_ALBUM: DiscographyRaw = createAlbumRaw({
   title: '僕だけの君〜Under Super Best〜',
@@ -10,107 +9,107 @@ export const UNDER_ALBUM: DiscographyRaw = createAlbumRaw({
   cdTypes: ['L1', 'L2', 'T'],
   songs: [
     {
-      title: SONGS['左胸の勇気'].title,
+      title: '左胸の勇気',
       inCdType: ['L1'],
     },
     {
-      title: SONGS['狼に口笛を'].title,
+      title: '狼に口笛を',
       inCdType: ['L1'],
     },
     {
-      title: SONGS['涙がまだ悲しみだった頃'].title,
+      title: '涙がまだ悲しみだった頃',
       inCdType: ['L1'],
     },
     {
-      title: SONGS['春のメロディー'].title,
+      title: '春のメロディー',
       inCdType: ['L1'],
     },
     {
-      title: SONGS['13日の金曜日'].title,
+      title: '13日の金曜日',
       inCdType: ['L1'],
     },
     {
-      title: SONGS['扇風機'].title,
+      title: '扇風機',
       inCdType: ['L1'],
     },
     {
-      title: SONGS['初恋の人を今でも'].title,
+      title: '初恋の人を今でも',
       inCdType: ['L1'],
     },
     {
-      title: SONGS['生まれたままで'].title,
+      title: '生まれたままで',
       inCdType: ['L1'],
     },
     {
-      title: SONGS['ここにいる理由'].title,
+      title: 'ここにいる理由',
       inCdType: ['L1'],
     },
     {
-      title: SONGS['あの日 僕は咄嗟に嘘をついた'].title,
+      title: 'あの日 僕は咄嗟に嘘をついた',
       inCdType: ['L1'],
     },
     {
-      title: SONGS['君は僕と会わない方がよかったのかな'].title,
+      title: '君は僕と会わない方がよかったのかな',
       inCdType: ['L1'],
     },
     {
-      title: SONGS['別れ際、もっと好きになる'].title,
+      title: '別れ際、もっと好きになる',
       inCdType: ['L1'],
     },
     {
-      title: SONGS['嫉妬の権利'].title,
+      title: '嫉妬の権利',
       inCdType: ['L1'],
     },
     {
-      title: SONGS['不等号'].title,
+      title: '不等号',
       inCdType: ['L1'],
     },
     {
-      title: SONGS['シークレットグラフィティー'].title,
+      title: 'シークレットグラフィティー',
       inCdType: ['L1'],
     },
     {
-      title: SONGS['ブランコ'].title,
+      title: 'ブランコ',
       inCdType: ['L2'],
     },
     {
-      title: SONGS['風船は生きている'].title,
+      title: '風船は生きている',
       inCdType: ['L2'],
     },
     {
-      title: SONGS['アンダー'].title,
+      title: 'アンダー',
       inCdType: ['L2'],
     },
     {
-      title: SONGS['My rule'].title,
+      title: 'My rule',
       inCdType: ['L2'],
     },
     {
-      title: SONGS['自由の彼方'].title,
+      title: '自由の彼方',
       inCdType: ['L2'],
     },
     {
-      title: SONGS['欲望のリインカーネーション'].title,
+      title: '欲望のリインカーネーション',
       inCdType: ['L2'],
     },
     {
-      title: SONGS['君が扇いでくれた'].title,
+      title: '君が扇いでくれた',
       inCdType: ['L2'],
     },
     {
-      title: SONGS['自分のこと'].title,
+      title: '自分のこと',
       inCdType: ['L2'],
     },
     {
-      title: SONGS['自惚れビーチ'].title,
+      title: '自惚れビーチ',
       inCdType: ['L2'],
     },
     {
-      title: SONGS['その女'].title,
+      title: 'その女',
       inCdType: ['L2'],
     },
     {
-      title: SONGS['誰よりそばにいたい'].title,
+      title: '誰よりそばにいたい',
       inCdType: ['L2'],
     },
   ],

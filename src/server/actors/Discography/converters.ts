@@ -1,4 +1,4 @@
-import { SONGS, SongTitle } from 'server/actors/Songs/constants/songTitle';
+import { SONGS } from 'server/actors/Songs/constants/songTitle';
 import { SongsRawObject } from 'server/actors/Songs/models';
 import { SongType } from 'server/actors/Songs/constants/songType';
 import {
@@ -17,7 +17,7 @@ export const convertCdSongType: ConvertCdSongType = ({
   cdSongTitle,
   songsRawObject,
 }) => {
-  if (cdSongTitle === SongTitle.Overture) {
+  if (cdSongTitle === 'OVERTURE') {
     return SongType.Coupling;
   }
 
@@ -44,7 +44,7 @@ export const convertCdSongFocusPerformers: ConvertCdSongFocusPerformers = ({
 
   const song = songsRawObject[cdSongTitle];
 
-  if (cdSongTitle !== SongTitle.Overture) {
+  if (cdSongTitle !== 'OVERTURE') {
     if (
       song.type === SongType.Title ||
       song.type === SongType.Under ||

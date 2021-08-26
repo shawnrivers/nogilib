@@ -1,9 +1,6 @@
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
-
 export const FOURTEENTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: 'ハルジオンが咲く頃',
   number: '14',
@@ -11,53 +8,53 @@ export const FOURTEENTH_SINGLE: DiscographyRaw = createSingleRaw({
   cdTypes: ['A', 'B', 'C', 'D', 'T'],
   songs: [
     {
-      title: SONGS['ハルジオンが咲く頃'].title,
+      title: 'ハルジオンが咲く頃',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['遥かなるブータン'].title,
+      title: '遥かなるブータン',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['強がる蕾'].title,
+      title: '強がる蕾',
       inCdType: ['A'],
     },
     {
-      title: SONGS['急斜面'].title,
+      title: '急斜面',
       inCdType: ['B'],
     },
     {
-      title: SONGS['釣り堀'].title,
+      title: '釣り堀',
       inCdType: ['C'],
     },
     {
-      title: SONGS['不等号'].title,
+      title: '不等号',
       inCdType: ['D'],
     },
     {
-      title: SONGS['憂鬱と風船ガム'].title,
+      title: '憂鬱と風船ガム',
       inCdType: ['T'],
     },
   ],
   underMembers: [
-    MemberNameKey.SaitouYuuri,
-    MemberNameKey.TeradaRanze,
-    MemberNameKey.NakamotoHimeka,
-    MemberNameKey.KitanoHinako,
-    MemberNameKey.HiguchiHina,
-    MemberNameKey.ItouKarin,
-    MemberNameKey.KawagoHina,
-    MemberNameKey.NakadaKana,
-    MemberNameKey.ShinuchiMai,
-    MemberNameKey.NoujouAmi,
-    MemberNameKey.SaitouChiharu,
-    MemberNameKey.WatanabeMiria,
-    MemberNameKey.SuzukiAyane,
-    MemberNameKey.YamazakiRena,
-    MemberNameKey.SasakiKotoko,
-    MemberNameKey.SagaraIori,
-    MemberNameKey.KawagoHina,
-    MemberNameKey.WadaMaaya,
-    MemberNameKey.ItouJunna,
+    'saitouyuuri',
+    'teradaranze',
+    'nakamotohimeka',
+    'kitanohinako',
+    'higuchihina',
+    'itoukarin',
+    'kawagohina',
+    'nakadakana',
+    'shinuchimai',
+    'noujouami',
+    'saitouchiharu',
+    'watanabemiria',
+    'suzukiayane',
+    'yamazakirena',
+    'sasakikotoko',
+    'sagaraiori',
+    'kawagohina',
+    'wadamaaya',
+    'itoujunna',
   ],
 });

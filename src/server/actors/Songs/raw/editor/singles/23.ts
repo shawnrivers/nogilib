@@ -1,13 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
-import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
 
 export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['Sing Out!'].title,
+    title: 'Sing Out!',
     type: SongType.Title,
     creators: {
       lyrics: ['秋元康'],
@@ -15,41 +12,41 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
       arrange: ['野中“まさ”雄一'],
       direct: ['池田一真'],
     },
-    center: [MemberNameKey.SaitouAsuka],
+    center: ['saitouasuka'],
     fukujin: 'row-1-2',
     formations: {
       firstRow: [
-        MemberNameKey.OozonoMomoko,
-        MemberNameKey.HoriMiona,
-        MemberNameKey.IkutaErika,
-        MemberNameKey.SaitouAsuka,
-        MemberNameKey.ShiraishiMai,
-        MemberNameKey.TakayamaKazumi,
-        MemberNameKey.YodaYuuki,
+        'oozonomomoko',
+        'horimiona',
+        'ikutaerika',
+        'saitouasuka',
+        'shiraishimai',
+        'takayamakazumi',
+        'yodayuuki',
       ],
       secondRow: [
-        MemberNameKey.UmezawaMinami,
-        MemberNameKey.KitanoHinako,
-        MemberNameKey.AkimotoManatsu,
-        MemberNameKey.KuboShiori,
-        MemberNameKey.MatsumuraSayuri,
-        MemberNameKey.HoshinoMinami,
-        MemberNameKey.SakuraiReika,
+        'umezawaminami',
+        'kitanohinako',
+        'akimotomanatsu',
+        'kuboshiori',
+        'matsumurasayuri',
+        'hoshinominami',
+        'sakuraireika',
       ],
       thirdRow: [
-        MemberNameKey.InoueSayuri,
-        MemberNameKey.SatouKaede,
-        MemberNameKey.SuzukiAyane,
-        MemberNameKey.IwamotoRenka,
-        MemberNameKey.SakaguchiTamami,
-        MemberNameKey.WatanabeMiria,
-        MemberNameKey.ItouRiria,
-        MemberNameKey.ShinuchiMai,
+        'inouesayuri',
+        'satoukaede',
+        'suzukiayane',
+        'iwamotorenka',
+        'sakaguchitamami',
+        'watanabemiria',
+        'itouriria',
+        'shinuchimai',
       ],
     },
   }),
   createSongRaw({
-    title: SONGS['滑走路'].title,
+    title: '滑走路',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],
@@ -57,26 +54,26 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
       arrange: ['CHOCOLATE MIX'],
       direct: ['maxilla'],
     },
-    center: [MemberNameKey.TeradaRanze],
+    center: ['teradaranze'],
     formations: {
       firstRow: [
-        MemberNameKey.YamazakiRena,
-        MemberNameKey.NakamuraReno,
-        MemberNameKey.TeradaRanze,
-        MemberNameKey.HiguchiHina,
-        MemberNameKey.NakadaKana,
+        'yamazakirena',
+        'nakamurareno',
+        'teradaranze',
+        'higuchihina',
+        'nakadakana',
       ],
       secondRow: [
-        MemberNameKey.YoshidaAyanoChristie,
-        MemberNameKey.MukaiHazuki,
-        MemberNameKey.WadaMaaya,
-        MemberNameKey.SasakiKotoko,
-        MemberNameKey.ItouJunna,
+        'yoshidaayanochristie',
+        'mukaihazuki',
+        'wadamaaya',
+        'sasakikotoko',
+        'itoujunna',
       ],
     },
   }),
   createSongRaw({
-    title: SONGS['のような存在'].title,
+    title: 'のような存在',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -85,11 +82,11 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
       direct: ['伊藤衆人'],
     },
     formations: {
-      firstRow: [MemberNameKey.SaitouAsuka, MemberNameKey.ShiraishiMai],
+      firstRow: ['saitouasuka', 'shiraishimai'],
     },
   }),
   createSongRaw({
-    title: SONGS['Am I Loving?'].title,
+    title: 'Am I Loving?',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -99,16 +96,16 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
     },
     formations: {
       firstRow: [
-        MemberNameKey.KitanoHinako,
-        MemberNameKey.SuzukiAyane,
-        MemberNameKey.HoshinoMinami,
-        MemberNameKey.HoriMiona,
-        MemberNameKey.WatanabeMiria,
+        'kitanohinako',
+        'suzukiayane',
+        'hoshinominami',
+        'horimiona',
+        'watanabemiria',
       ],
     },
   }),
   createSongRaw({
-    title: SONGS['平行線'].title,
+    title: '平行線',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -118,16 +115,16 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
     },
     formations: {
       firstRow: [
-        MemberNameKey.SakaguchiTamami,
-        MemberNameKey.IwamotoRenka,
-        MemberNameKey.OozonoMomoko,
-        MemberNameKey.YodaYuuki,
-        MemberNameKey.KuboShiori,
+        'sakaguchitamami',
+        'iwamotorenka',
+        'oozonomomoko',
+        'yodayuuki',
+        'kuboshiori',
       ],
     },
   }),
   createSongRaw({
-    title: SONGS['4番目の光'].title,
+    title: '4番目の光',
     type: SongType.FourthGeneration,
     creators: {
       lyrics: ['秋元康'],
@@ -135,36 +132,36 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
       arrange: ['杉山勝彦', '谷地学'],
       direct: ['月田茂'],
     },
-    center: [MemberNameKey.EndouSakura],
+    center: ['endousakura'],
     formations: {
       firstRow: [
-        MemberNameKey.TamuraMayu,
-        MemberNameKey.KakehashiSayaka,
-        MemberNameKey.EndouSakura,
-        MemberNameKey.TsutsuiAyame,
-        MemberNameKey.KakiHaruka,
+        'tamuramayu',
+        'kakehashisayaka',
+        'endousakura',
+        'tsutsuiayame',
+        'kakiharuka',
       ],
       secondRow: [
-        MemberNameKey.HayakawaSeira,
-        MemberNameKey.KitagawaYuri,
-        MemberNameKey.SeimiyaRei,
-        MemberNameKey.ShibataYuna,
-        MemberNameKey.YakuboMio,
-        MemberNameKey.KanagawaSaya,
+        'hayakawaseira',
+        'kitagawayuri',
+        'seimiyarei',
+        'shibatayuna',
+        'yakubomio',
+        'kanagawasaya',
       ],
     },
   }),
   createSongRaw({
-    title: SONGS['曖昧'].title,
+    title: '曖昧',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
       compose: ['doubleglass'],
       arrange: ['doubleglass'],
     },
-    unit: UNIT_NAMES['からあげ姉妹'].name,
+    unit: 'からあげ姉妹',
     formations: {
-      firstRow: [MemberNameKey.IkutaErika, MemberNameKey.MatsumuraSayuri],
+      firstRow: ['ikutaerika', 'matsumurasayuri'],
     },
   }),
 ];

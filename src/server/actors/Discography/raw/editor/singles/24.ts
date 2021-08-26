@@ -1,9 +1,6 @@
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
-
 export const TWENTY_FOURTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: '夜明けまで強がらなくてもいい',
   number: '24',
@@ -11,61 +8,61 @@ export const TWENTY_FOURTH_SINGLE: DiscographyRaw = createSingleRaw({
   cdTypes: ['A', 'B', 'C', 'D', 'T'],
   songs: [
     {
-      title: SONGS['夜明けまで強がらなくてもいい'].title,
+      title: '夜明けまで強がらなくてもいい',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['僕のこと、知ってる?'].title,
+      title: '僕のこと、知ってる?',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['路面電車の街'].title,
+      title: '路面電車の街',
       inCdType: ['A'],
     },
     {
-      title: SONGS['図書室の君へ'].title,
+      title: '図書室の君へ',
       inCdType: ['B'],
     },
     {
-      title: SONGS['時々 思い出してください'].title,
+      title: '時々 思い出してください',
       inCdType: ['C'],
     },
     {
-      title: SONGS['～Do my best～じゃ意味はない'].title,
+      title: '～Do my best～じゃ意味はない',
       inCdType: ['D'],
     },
     {
-      title: SONGS['僕の思い込み'].title,
+      title: '僕の思い込み',
       inCdType: ['T'],
     },
   ],
   underMembers: [
-    MemberNameKey.ItouJunna,
-    MemberNameKey.ItouRiria,
-    MemberNameKey.IwamotoRenka,
-    MemberNameKey.SakaguchiTamami,
-    MemberNameKey.SasakiKotoko,
-    MemberNameKey.SatouKaede,
-    MemberNameKey.SuzukiAyane,
-    MemberNameKey.TeradaRanze,
-    MemberNameKey.NakadaKana,
-    MemberNameKey.NakamuraReno,
-    MemberNameKey.HiguchiHina,
-    MemberNameKey.MukaiHazuki,
-    MemberNameKey.YamazakiRena,
-    MemberNameKey.YoshidaAyanoChristie,
-    MemberNameKey.WatanabeMiria,
-    MemberNameKey.WadaMaaya,
+    'itoujunna',
+    'itouriria',
+    'iwamotorenka',
+    'sakaguchitamami',
+    'sasakikotoko',
+    'satoukaede',
+    'suzukiayane',
+    'teradaranze',
+    'nakadakana',
+    'nakamurareno',
+    'higuchihina',
+    'mukaihazuki',
+    'yamazakirena',
+    'yoshidaayanochristie',
+    'watanabemiria',
+    'wadamaaya',
   ],
   trainees: [
-    MemberNameKey.KakehashiSayaka,
-    MemberNameKey.KanagawaSaya,
-    MemberNameKey.KitagawaYuri,
-    MemberNameKey.ShibataYuna,
-    MemberNameKey.SeimiyaRei,
-    MemberNameKey.TamuraMayu,
-    MemberNameKey.HayakawaSeira,
-    MemberNameKey.YakuboMio,
+    'kakehashisayaka',
+    'kanagawasaya',
+    'kitagawayuri',
+    'shibatayuna',
+    'seimiyarei',
+    'tamuramayu',
+    'hayakawaseira',
+    'yakubomio',
   ],
-  skips: [MemberNameKey.InoueSayuri, MemberNameKey.OozonoMomoko],
+  skips: ['inouesayuri', 'oozonomomoko'],
 });

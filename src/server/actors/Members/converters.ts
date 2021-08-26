@@ -51,9 +51,8 @@ function getDiscographyGalleryWithDate(params: {
 }): GalleryWithDate {
   const { memberName, discographyRawArray, discographyType } = params;
 
-  const profileImageTypeFolderName = getProfileImageTypeFolderName(
-    discographyType
-  );
+  const profileImageTypeFolderName =
+    getProfileImageTypeFolderName(discographyType);
 
   const discographyGallery = [];
 
@@ -111,16 +110,11 @@ function getDiscographyProfileImages(params: {
   discographyType: Parameters<typeof getProfileImageTypeFolderName>[0];
   galleryWithDate: GalleryWithDate;
 }): DiscographyProfileImage[] {
-  const {
-    memberName,
-    discographyRawArray,
-    discographyType,
-    galleryWithDate,
-  } = params;
+  const { memberName, discographyRawArray, discographyType, galleryWithDate } =
+    params;
 
-  const profileImageTypeFolderName = getProfileImageTypeFolderName(
-    discographyType
-  );
+  const profileImageTypeFolderName =
+    getProfileImageTypeFolderName(discographyType);
 
   const discographyGallery: DiscographyProfileImage[] = [];
   const sortedGallery = sortByDate(galleryWithDate, 'date');
@@ -200,12 +194,8 @@ export function convertProfileImages(params: {
   albumsRawArray: DiscographyRawArray;
   digitalRawArray: DiscographyRawArray;
 }): MemberResult['profileImages'] {
-  const {
-    memberName,
-    singlesRawArray,
-    albumsRawArray,
-    digitalRawArray,
-  } = params;
+  const { memberName, singlesRawArray, albumsRawArray, digitalRawArray } =
+    params;
 
   const singlesGalleryWithDate = getDiscographyGalleryWithDate({
     memberName,
@@ -382,33 +372,34 @@ type ConvertMemberPositionsCounter = (
   positionsHistory: MemberResult['positionsHistory']
 ) => MemberResult['positionsCounter'];
 
-export const convertMemberPositionsCounter: ConvertMemberPositionsCounter = positionsHistory => {
-  let center = 0;
-  let fukujin = 0;
-  let selected = 0;
-  let under = 0;
+export const convertMemberPositionsCounter: ConvertMemberPositionsCounter =
+  positionsHistory => {
+    let center = 0;
+    let fukujin = 0;
+    let selected = 0;
+    let under = 0;
 
-  for (const position of positionsHistory) {
-    switch (position.position) {
-      case PositionType.Center:
-        center += 1;
-        fukujin += 1;
-        selected += 1;
-        break;
-      case PositionType.Fukujin:
-        fukujin += 1;
-        selected += 1;
-        break;
-      case PositionType.Selected:
-        selected += 1;
-        break;
-      case PositionType.Under:
-        under += 1;
-        break;
-      default:
-        break;
+    for (const position of positionsHistory) {
+      switch (position.position) {
+        case PositionType.Center:
+          center += 1;
+          fukujin += 1;
+          selected += 1;
+          break;
+        case PositionType.Fukujin:
+          fukujin += 1;
+          selected += 1;
+          break;
+        case PositionType.Selected:
+          selected += 1;
+          break;
+        case PositionType.Under:
+          under += 1;
+          break;
+        default:
+          break;
+      }
     }
-  }
 
-  return { center, fukujin, selected, under };
-};
+    return { center, fukujin, selected, under };
+  };

@@ -1,9 +1,6 @@
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
-
 export const FIFTEENTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: '裸足でSummer',
   number: '15',
@@ -11,53 +8,53 @@ export const FIFTEENTH_SINGLE: DiscographyRaw = createSingleRaw({
   cdTypes: ['A', 'B', 'C', 'D', 'T'],
   songs: [
     {
-      title: SONGS['裸足でSummer'].title,
+      title: '裸足でSummer',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['僕だけの光'].title,
+      title: '僕だけの光',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['オフショアガール'].title,
+      title: 'オフショアガール',
       inCdType: ['A'],
     },
     {
-      title: SONGS['命の真実 ミュージカル「林檎売りとカメムシ」'].title,
+      title: '命の真実 ミュージカル「林檎売りとカメムシ」',
       inCdType: ['B'],
     },
     {
-      title: SONGS['白米様'].title,
+      title: '白米様',
       inCdType: ['C'],
     },
     {
-      title: SONGS['シークレットグラフィティー'].title,
+      title: 'シークレットグラフィティー',
       inCdType: ['D'],
     },
     {
-      title: SONGS['行くあてのない僕たち'].title,
+      title: '行くあてのない僕たち',
       inCdType: ['T'],
     },
   ],
   underMembers: [
-    MemberNameKey.TeradaRanze,
-    MemberNameKey.ItouMarika,
-    MemberNameKey.HiguchiHina,
-    MemberNameKey.InoueSayuri,
-    MemberNameKey.WatanabeMiria,
-    MemberNameKey.SaitouChiharu,
-    MemberNameKey.SaitouYuuri,
-    MemberNameKey.ShinuchiMai,
-    MemberNameKey.NakadaKana,
-    MemberNameKey.NoujouAmi,
-    MemberNameKey.KawamuraMahiro,
-    MemberNameKey.YamazakiRena,
-    MemberNameKey.ItouJunna,
-    MemberNameKey.KawagoHina,
-    MemberNameKey.SuzukiAyane,
-    MemberNameKey.WadaMaaya,
-    MemberNameKey.SagaraIori,
-    MemberNameKey.SasakiKotoko,
-    MemberNameKey.ItouKarin,
+    'teradaranze',
+    'itoumarika',
+    'higuchihina',
+    'inouesayuri',
+    'watanabemiria',
+    'saitouchiharu',
+    'saitouyuuri',
+    'shinuchimai',
+    'nakadakana',
+    'noujouami',
+    'kawamuramahiro',
+    'yamazakirena',
+    'itoujunna',
+    'kawagohina',
+    'suzukiayane',
+    'wadamaaya',
+    'sagaraiori',
+    'sasakikotoko',
+    'itoukarin',
   ],
 });

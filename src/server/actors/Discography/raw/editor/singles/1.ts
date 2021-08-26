@@ -1,9 +1,6 @@
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
-
 export const FIRST_SINGLE: DiscographyRaw = createSingleRaw({
   title: 'ぐるぐるカーテン',
   number: '1',
@@ -11,48 +8,48 @@ export const FIRST_SINGLE: DiscographyRaw = createSingleRaw({
   cdTypes: ['A', 'B', 'C', 'T'],
   songs: [
     {
-      title: SONGS['ぐるぐるカーテン'].title,
+      title: 'ぐるぐるカーテン',
       inCdType: ['A', 'B', 'C', 'T'],
     },
     {
-      title: SONGS['左胸の勇気'].title,
+      title: '左胸の勇気',
       inCdType: ['A', 'B', 'C', 'T'],
     },
     {
-      title: SONGS['乃木坂の詩'].title,
+      title: '乃木坂の詩',
       inCdType: ['A'],
     },
     {
-      title: SONGS['会いたかったかもしれない'].title,
+      title: '会いたかったかもしれない',
       inCdType: ['B'],
     },
     {
-      title: SONGS['失いたくないから'].title,
+      title: '失いたくないから',
       inCdType: ['C'],
     },
     {
-      title: SONGS['白い雲にのって'].title,
+      title: '白い雲にのって',
       inCdType: ['T'],
     },
   ],
   underMembers: [
-    MemberNameKey.AndouMikumo,
-    MemberNameKey.IwaseYumiko,
-    MemberNameKey.ItouNene,
-    MemberNameKey.HatanakaSeira,
-    MemberNameKey.ItouMarika,
-    MemberNameKey.WadaMaaya,
-    MemberNameKey.NakamotoHimeka,
-    MemberNameKey.SaitouChiharu,
-    MemberNameKey.YamatoRina,
-    MemberNameKey.NagashimaSeira,
-    MemberNameKey.HiguchiHina,
-    MemberNameKey.KawagoHina,
-    MemberNameKey.WakatsukiYumi,
-    MemberNameKey.KashiwaYukina,
-    MemberNameKey.EtouMisa,
-    MemberNameKey.FukagawaMai,
-    MemberNameKey.MiyazawaSeira,
+    'andoumikumo',
+    'iwaseyumiko',
+    'itounene',
+    'hatanakaseira',
+    'itoumarika',
+    'wadamaaya',
+    'nakamotohimeka',
+    'saitouchiharu',
+    'yamatorina',
+    'nagashimaseira',
+    'higuchihina',
+    'kawagohina',
+    'wakatsukiyumi',
+    'kashiwayukina',
+    'etoumisa',
+    'fukagawamai',
+    'miyazawaseira',
   ],
-  skips: [MemberNameKey.AkimotoManatsu],
+  skips: ['akimotomanatsu'],
 });
