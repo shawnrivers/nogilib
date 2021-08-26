@@ -1,5 +1,5 @@
 import { JoinedGenerationType } from 'server/actors/Members/constants/joinedGeneration';
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { MemberNameKey } from 'server/actors/Members/types/memberNameKey';
 import { SocialMedia } from 'server/actors/Members/constants/socialMedia';
 import { MemberResult } from 'server/actors/Members/models';
 import { Site } from 'server/types/commons';

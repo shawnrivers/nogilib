@@ -1,4 +1,4 @@
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
+import { MemberNameKey } from 'server/actors/Members/types/memberNameKey';
 import { UnitType } from 'server/actors/Units/constants/unitType';
 import { UnitName } from 'server/actors/Units/constants/unitName';
 
