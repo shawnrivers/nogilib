@@ -11167,7 +11167,24 @@
         "url": "https://www.nogizaka46.com/member/detail/teradaranze.php"
       }
     ],
-    "photoAlbums": [],
+    "photoAlbums": [
+      {
+        "title": "タイトル未定",
+        "release": "2021-11-09",
+        "type": "photo album",
+        "sites": [
+          {
+            "title": "Twitter",
+            "url": "https://twitter.com/ranze1st"
+          }
+        ],
+        "cover": {
+          "sm": "/images/photo-albums/teradaranze_1@1x.jpg",
+          "md": "/images/photo-albums/teradaranze_1@2x.jpg",
+          "lg": "/images/photo-albums/teradaranze_1@3x.jpg"
+        }
+      }
+    ],
     "positionsHistory": [
       {
         "singleNumber": "1",

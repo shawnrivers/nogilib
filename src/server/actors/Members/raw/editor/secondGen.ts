@@ -240,6 +240,17 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.nogizaka46.com/member/detail/teradaranze.php',
       },
     ],
+    photoAlbums: [
+      {
+        title: 'タイトル未定',
+        release: '2021-11-09',
+        type: PhotoAlbumType.PhotoAlbum,
+        sites: [
+          { title: SocialMedia.Twitter, url: 'https://twitter.com/ranze1st' },
+        ],
+        cover: 'photo-albums/teradaranze_1.jpg',
+      },
+    ],
   }),
   createMemberRaw({
     name: MemberNameKey.HoriMiona,
