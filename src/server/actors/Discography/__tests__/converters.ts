@@ -6,7 +6,6 @@ import { convertCdArtwork } from 'server/actors/Discography/raw/creators';
 import { Members } from 'server/actors/Members';
 import { membersRawArray } from 'server/actors/Members/raw';
 import { Songs } from 'server/actors/Songs';
-import { SongTitle } from 'server/actors/Songs/constants/songTitle';
 import { SongType } from 'server/actors/Songs/constants/songType';
 import { songsRawArray } from 'server/actors/Songs/raw';
 
@@ -60,7 +59,7 @@ describe('convertCdSongType', () => {
   test("should return 'coupling' when cd song title is 'OVERTURE'", () => {
     expect(
       convertCdSongType({
-        cdSongTitle: SongTitle.Overture,
+        cdSongTitle: 'OVERTURE',
         songsRawObject,
       })
     ).toEqual(SongType.Coupling);
@@ -96,7 +95,7 @@ describe('convertCdSongFocusPerformers', () => {
   test("should return empty when the song title is 'OVERTURE'", () => {
     expect(
       convertCdSongFocusPerformers({
-        cdSongTitle: SongTitle.Overture,
+        cdSongTitle: 'OVERTURE',
         songsRawObject,
       })
     ).toEqual({
