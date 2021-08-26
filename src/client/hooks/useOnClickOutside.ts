@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 
 export const useOnClickOutside = (
   ref: React.MutableRefObject<any>,
@@ -13,12 +13,12 @@ export const useOnClickOutside = (
       handler(event);
     };
 
-    document.addEventListener("mousedown", listener);
-    document.addEventListener("touchstart", listener);
+    document.addEventListener('mousedown', listener);
+    document.addEventListener('touchstart', listener);
 
     return () => {
-      document.removeEventListener("mousedown", listener);
-      document.removeEventListener("touchstart", listener);
+      document.removeEventListener('mousedown', listener);
+      document.removeEventListener('touchstart', listener);
     };
   }, [ref, handler]);
 };

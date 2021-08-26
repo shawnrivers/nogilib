@@ -128,9 +128,8 @@ export class Members {
         unitsRawArray,
       }),
       positionsHistory,
-      positionsCounter: MemberConverters.convertMemberPositionsCounter(
-        positionsHistory
-      ),
+      positionsCounter:
+        MemberConverters.convertMemberPositionsCounter(positionsHistory),
       graduation: memberRaw.graduation,
     };
   }
