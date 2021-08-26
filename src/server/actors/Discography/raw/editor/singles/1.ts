@@ -1,8 +1,6 @@
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-
 export const FIRST_SINGLE: DiscographyRaw = createSingleRaw({
   title: 'ぐるぐるカーテン',
   number: '1',
@@ -35,23 +33,23 @@ export const FIRST_SINGLE: DiscographyRaw = createSingleRaw({
     },
   ],
   underMembers: [
-    MemberNameKey.AndouMikumo,
-    MemberNameKey.IwaseYumiko,
-    MemberNameKey.ItouNene,
-    MemberNameKey.HatanakaSeira,
-    MemberNameKey.ItouMarika,
-    MemberNameKey.WadaMaaya,
-    MemberNameKey.NakamotoHimeka,
-    MemberNameKey.SaitouChiharu,
-    MemberNameKey.YamatoRina,
-    MemberNameKey.NagashimaSeira,
-    MemberNameKey.HiguchiHina,
-    MemberNameKey.KawagoHina,
-    MemberNameKey.WakatsukiYumi,
-    MemberNameKey.KashiwaYukina,
-    MemberNameKey.EtouMisa,
-    MemberNameKey.FukagawaMai,
-    MemberNameKey.MiyazawaSeira,
+    'andoumikumo',
+    'iwaseyumiko',
+    'itounene',
+    'hatanakaseira',
+    'itoumarika',
+    'wadamaaya',
+    'nakamotohimeka',
+    'saitouchiharu',
+    'yamatorina',
+    'nagashimaseira',
+    'higuchihina',
+    'kawagohina',
+    'wakatsukiyumi',
+    'kashiwayukina',
+    'etoumisa',
+    'fukagawamai',
+    'miyazawaseira',
   ],
-  skips: [MemberNameKey.AkimotoManatsu],
+  skips: ['akimotomanatsu'],
 });

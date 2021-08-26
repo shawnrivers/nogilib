@@ -1,8 +1,6 @@
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-
 export const TWENTY_FIRST_SINGLE: DiscographyRaw = createSingleRaw({
   title: 'ジコチューで行こう!',
   number: '21',
@@ -39,24 +37,24 @@ export const TWENTY_FIRST_SINGLE: DiscographyRaw = createSingleRaw({
     },
   ],
   underMembers: [
-    MemberNameKey.HiguchiHina,
-    MemberNameKey.NakadaKana,
-    MemberNameKey.ItouRiria,
-    MemberNameKey.YamazakiRena,
-    MemberNameKey.SakaguchiTamami,
-    MemberNameKey.KitanoHinako,
-    MemberNameKey.TeradaRanze,
-    MemberNameKey.WatanabeMiria,
-    MemberNameKey.SatouKaede,
-    MemberNameKey.YoshidaAyanoChristie,
-    MemberNameKey.WadaMaaya,
-    MemberNameKey.KawagoHina,
-    MemberNameKey.NoujouAmi,
-    MemberNameKey.NakamuraReno,
-    MemberNameKey.ItouKarin,
-    MemberNameKey.SasakiKotoko,
-    MemberNameKey.MukaiHazuki,
-    MemberNameKey.ItouJunna,
+    'higuchihina',
+    'nakadakana',
+    'itouriria',
+    'yamazakirena',
+    'sakaguchitamami',
+    'kitanohinako',
+    'teradaranze',
+    'watanabemiria',
+    'satoukaede',
+    'yoshidaayanochristie',
+    'wadamaaya',
+    'kawagohina',
+    'noujouami',
+    'nakamurareno',
+    'itoukarin',
+    'sasakikotoko',
+    'mukaihazuki',
+    'itoujunna',
   ],
-  skips: [MemberNameKey.KuboShiori],
+  skips: ['kuboshiori'],
 });

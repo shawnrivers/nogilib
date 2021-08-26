@@ -1,8 +1,6 @@
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-
 export const ELEVENTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: '命は美しい',
   number: '11',
@@ -35,27 +33,27 @@ export const ELEVENTH_SINGLE: DiscographyRaw = createSingleRaw({
     },
   ],
   underMembers: [
-    MemberNameKey.SaitouYuuri,
-    MemberNameKey.NakamotoHimeka,
-    MemberNameKey.InoueSayuri,
-    MemberNameKey.NoujouAmi,
-    MemberNameKey.NagashimaSeira,
-    MemberNameKey.NakadaKana,
-    MemberNameKey.ShinuchiMai,
-    MemberNameKey.KawamuraMahiro,
-    MemberNameKey.KitanoHinako,
-    MemberNameKey.KawagoHina,
-    MemberNameKey.HiguchiHina,
-    MemberNameKey.ItouKarin,
-    MemberNameKey.WadaMaaya,
-    MemberNameKey.SaitouChiharu,
+    'saitouyuuri',
+    'nakamotohimeka',
+    'inouesayuri',
+    'noujouami',
+    'nagashimaseira',
+    'nakadakana',
+    'shinuchimai',
+    'kawamuramahiro',
+    'kitanohinako',
+    'kawagohina',
+    'higuchihina',
+    'itoukarin',
+    'wadamaaya',
+    'saitouchiharu',
   ],
   trainees: [
-    MemberNameKey.ItouJunna,
-    MemberNameKey.SasakiKotoko,
-    MemberNameKey.SuzukiAyane,
-    MemberNameKey.TeradaRanze,
-    MemberNameKey.YamazakiRena,
-    MemberNameKey.WatanabeMiria,
+    'itoujunna',
+    'sasakikotoko',
+    'suzukiayane',
+    'teradaranze',
+    'yamazakirena',
+    'watanabemiria',
   ],
 });

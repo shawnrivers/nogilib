@@ -1,8 +1,6 @@
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-
 export const TWENTY_SECOND_SINGLE: DiscographyRaw = createSingleRaw({
   title: '帰り道は遠回りしたくなる',
   number: '22',
@@ -39,23 +37,23 @@ export const TWENTY_SECOND_SINGLE: DiscographyRaw = createSingleRaw({
     },
   ],
   underMembers: [
-    MemberNameKey.SuzukiAyane,
-    MemberNameKey.HiguchiHina,
-    MemberNameKey.KitanoHinako,
-    MemberNameKey.TeradaRanze,
-    MemberNameKey.IwamotoRenka,
-    MemberNameKey.SakaguchiTamami,
-    MemberNameKey.YamazakiRena,
-    MemberNameKey.KuboShiori,
-    MemberNameKey.NakadaKana,
-    MemberNameKey.WatanabeMiria,
-    MemberNameKey.MukaiHazuki,
-    MemberNameKey.ItouJunna,
-    MemberNameKey.WadaMaaya,
-    MemberNameKey.NakamuraReno,
-    MemberNameKey.KawagoHina,
-    MemberNameKey.ItouKarin,
-    MemberNameKey.SasakiKotoko,
-    MemberNameKey.YoshidaAyanoChristie,
+    'suzukiayane',
+    'higuchihina',
+    'kitanohinako',
+    'teradaranze',
+    'iwamotorenka',
+    'sakaguchitamami',
+    'yamazakirena',
+    'kuboshiori',
+    'nakadakana',
+    'watanabemiria',
+    'mukaihazuki',
+    'itoujunna',
+    'wadamaaya',
+    'nakamurareno',
+    'kawagohina',
+    'itoukarin',
+    'sasakikotoko',
+    'yoshidaayanochristie',
   ],
 });

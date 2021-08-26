@@ -1,8 +1,6 @@
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-
 export const TWENTY_FIFTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: 'しあわせの保護色',
   number: '25',
@@ -39,28 +37,28 @@ export const TWENTY_FIFTH_SINGLE: DiscographyRaw = createSingleRaw({
     },
   ],
   underMembers: [
-    MemberNameKey.ItouJunna,
-    MemberNameKey.ItouRiria,
-    MemberNameKey.SakaguchiTamami,
-    MemberNameKey.SasakiKotoko,
-    MemberNameKey.SatouKaede,
-    MemberNameKey.SuzukiAyane,
-    MemberNameKey.TeradaRanze,
-    MemberNameKey.NakamuraReno,
-    MemberNameKey.MukaiHazuki,
-    MemberNameKey.YamazakiRena,
-    MemberNameKey.YoshidaAyanoChristie,
-    MemberNameKey.WatanabeMiria,
+    'itoujunna',
+    'itouriria',
+    'sakaguchitamami',
+    'sasakikotoko',
+    'satoukaede',
+    'suzukiayane',
+    'teradaranze',
+    'nakamurareno',
+    'mukaihazuki',
+    'yamazakirena',
+    'yoshidaayanochristie',
+    'watanabemiria',
   ],
   trainees: [
-    MemberNameKey.KakehashiSayaka,
-    MemberNameKey.KanagawaSaya,
-    MemberNameKey.KitagawaYuri,
-    MemberNameKey.ShibataYuna,
-    MemberNameKey.SeimiyaRei,
-    MemberNameKey.TamuraMayu,
-    MemberNameKey.HayakawaSeira,
-    MemberNameKey.YakuboMio,
-    MemberNameKey.TsutsuiAyame,
+    'kakehashisayaka',
+    'kanagawasaya',
+    'kitagawayuri',
+    'shibatayuna',
+    'seimiyarei',
+    'tamuramayu',
+    'hayakawaseira',
+    'yakubomio',
+    'tsutsuiayame',
   ],
 });

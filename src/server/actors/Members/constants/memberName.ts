@@ -1,81 +1,79 @@
-// Values should be lower-cased
-export enum MemberNameKey {
-  AkimotoManatsu = 'akimotomanatsu',
-  IkutaErika = 'ikutaerika',
-  ItouKarin = 'itoukarin',
-  ItouJunna = 'itoujunna',
-  InoueSayuri = 'inouesayuri',
-  EtouMisa = 'etoumisa',
-  KitanoHinako = 'kitanohinako',
-  SaitouAsuka = 'saitouasuka',
-  SaitouYuuri = 'saitouyuuri',
-  SakuraiReika = 'sakuraireika',
-  SasakiKotoko = 'sasakikotoko',
-  ShiraishiMai = 'shiraishimai',
-  ShinuchiMai = 'shinuchimai',
-  SuzukiAyane = 'suzukiayane',
-  TakayamaKazumi = 'takayamakazumi',
-  TeradaRanze = 'teradaranze',
-  NakadaKana = 'nakadakana',
-  NishinoNanase = 'nishinonanase',
-  HiguchiHina = 'higuchihina',
-  HoshinoMinami = 'hoshinominami',
-  HoriMiona = 'horimiona',
-  MatsumuraSayuri = 'matsumurasayuri',
-  YamazakiRena = 'yamazakirena',
-  WatanabeMiria = 'watanabemiria',
-  WadaMaaya = 'wadamaaya',
-  ItouRiria = 'itouriria',
-  IwamotoRenka = 'iwamotorenka',
-  UmezawaMinami = 'umezawaminami',
-  OozonoMomoko = 'oozonomomoko',
-  KuboShiori = 'kuboshiori',
-  SakaguchiTamami = 'sakaguchitamami',
-  SatouKaede = 'satoukaede',
-  NakamuraReno = 'nakamurareno',
-  MukaiHazuki = 'mukaihazuki',
-  YamashitaMizuki = 'yamashitamizuki',
-  YoshidaAyanoChristie = 'yoshidaayanochristie',
-  YodaYuuki = 'yodayuuki',
-  EndouSakura = 'endousakura',
-  KakiHaruka = 'kakiharuka',
-  KakehashiSayaka = 'kakehashisayaka',
-  KanagawaSaya = 'kanagawasaya',
-  KitagawaYuri = 'kitagawayuri',
-  ShibataYuna = 'shibatayuna',
-  SeimiyaRei = 'seimiyarei',
-  TamuraMayu = 'tamuramayu',
-  TsutsuiAyame = 'tsutsuiayame',
-  HayakawaSeira = 'hayakawaseira',
-  YakuboMio = 'yakubomio',
-  KuromiHaruka = 'kuromiharuka',
-  SatouRika = 'satourika',
-  HayashiRuna = 'hayashiruna',
-  MatsuoMiyu = 'matsuomiyu',
-  YumikiNao = 'yumikinao',
-  KawagoHina = 'kawagohina',
-  NoujouAmi = 'noujouami',
-  WakatsukiYumi = 'wakatsukiyumi',
-  SagaraIori = 'sagaraiori',
-  SaitouChiharu = 'saitouchiharu',
-  IkomaRina = 'ikomarina',
-  KawamuraMahiro = 'kawamuramahiro',
-  NakamotoHimeka = 'nakamotohimeka',
-  ItouMarika = 'itoumarika',
-  HashimotoNanami = 'hashimotonanami',
-  FukagawaMai = 'fukagawamai',
-  NagashimaSeira = 'nagashimaseira',
-  MatsuiRena = 'matsuirena',
-  HatanakaSeira = 'hatanakaseira',
-  YamatoRina = 'yamatorina',
-  ItouNene = 'itounene',
-  YonetokuKyouka = 'yonetokukyouka',
-  YadaRisako = 'yadarisako',
-  IchikiRena = 'ichikirena',
-  NishikawaNanami = 'nishikawananami',
-  MiyazawaSeira = 'miyazawaseira',
-  KashiwaYukina = 'kashiwayukina',
-  AndouMikumo = 'andoumikumo',
-  IwaseYumiko = 'iwaseyumiko',
-  KojimaHaruna = 'kojimaharuna',
-}
+export type MemberNameKey =
+  | 'akimotomanatsu'
+  | 'ikutaerika'
+  | 'itoukarin'
+  | 'itoujunna'
+  | 'inouesayuri'
+  | 'etoumisa'
+  | 'kitanohinako'
+  | 'saitouasuka'
+  | 'saitouyuuri'
+  | 'sakuraireika'
+  | 'sasakikotoko'
+  | 'shiraishimai'
+  | 'shinuchimai'
+  | 'suzukiayane'
+  | 'takayamakazumi'
+  | 'teradaranze'
+  | 'nakadakana'
+  | 'nishinonanase'
+  | 'higuchihina'
+  | 'hoshinominami'
+  | 'horimiona'
+  | 'matsumurasayuri'
+  | 'yamazakirena'
+  | 'watanabemiria'
+  | 'wadamaaya'
+  | 'itouriria'
+  | 'iwamotorenka'
+  | 'umezawaminami'
+  | 'oozonomomoko'
+  | 'kuboshiori'
+  | 'sakaguchitamami'
+  | 'satoukaede'
+  | 'nakamurareno'
+  | 'mukaihazuki'
+  | 'yamashitamizuki'
+  | 'yoshidaayanochristie'
+  | 'yodayuuki'
+  | 'endousakura'
+  | 'kakiharuka'
+  | 'kakehashisayaka'
+  | 'kanagawasaya'
+  | 'kitagawayuri'
+  | 'shibatayuna'
+  | 'seimiyarei'
+  | 'tamuramayu'
+  | 'tsutsuiayame'
+  | 'hayakawaseira'
+  | 'yakubomio'
+  | 'kuromiharuka'
+  | 'satourika'
+  | 'hayashiruna'
+  | 'matsuomiyu'
+  | 'yumikinao'
+  | 'kawagohina'
+  | 'noujouami'
+  | 'wakatsukiyumi'
+  | 'sagaraiori'
+  | 'saitouchiharu'
+  | 'ikomarina'
+  | 'kawamuramahiro'
+  | 'nakamotohimeka'
+  | 'itoumarika'
+  | 'hashimotonanami'
+  | 'fukagawamai'
+  | 'nagashimaseira'
+  | 'matsuirena'
+  | 'hatanakaseira'
+  | 'yamatorina'
+  | 'itounene'
+  | 'yonetokukyouka'
+  | 'yadarisako'
+  | 'ichikirena'
+  | 'nishikawananami'
+  | 'miyazawaseira'
+  | 'kashiwayukina'
+  | 'andoumikumo'
+  | 'iwaseyumiko'
+  | 'kojimaharuna';

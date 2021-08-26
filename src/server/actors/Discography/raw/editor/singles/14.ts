@@ -1,8 +1,6 @@
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-
 export const FOURTEENTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: 'ハルジオンが咲く頃',
   number: '14',
@@ -39,24 +37,24 @@ export const FOURTEENTH_SINGLE: DiscographyRaw = createSingleRaw({
     },
   ],
   underMembers: [
-    MemberNameKey.SaitouYuuri,
-    MemberNameKey.TeradaRanze,
-    MemberNameKey.NakamotoHimeka,
-    MemberNameKey.KitanoHinako,
-    MemberNameKey.HiguchiHina,
-    MemberNameKey.ItouKarin,
-    MemberNameKey.KawagoHina,
-    MemberNameKey.NakadaKana,
-    MemberNameKey.ShinuchiMai,
-    MemberNameKey.NoujouAmi,
-    MemberNameKey.SaitouChiharu,
-    MemberNameKey.WatanabeMiria,
-    MemberNameKey.SuzukiAyane,
-    MemberNameKey.YamazakiRena,
-    MemberNameKey.SasakiKotoko,
-    MemberNameKey.SagaraIori,
-    MemberNameKey.KawagoHina,
-    MemberNameKey.WadaMaaya,
-    MemberNameKey.ItouJunna,
+    'saitouyuuri',
+    'teradaranze',
+    'nakamotohimeka',
+    'kitanohinako',
+    'higuchihina',
+    'itoukarin',
+    'kawagohina',
+    'nakadakana',
+    'shinuchimai',
+    'noujouami',
+    'saitouchiharu',
+    'watanabemiria',
+    'suzukiayane',
+    'yamazakirena',
+    'sasakikotoko',
+    'sagaraiori',
+    'kawagohina',
+    'wadamaaya',
+    'itoujunna',
   ],
 });

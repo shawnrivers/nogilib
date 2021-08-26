@@ -1,8 +1,6 @@
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-
 export const TWELFTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: '太陽ノック',
   number: '12',
@@ -39,24 +37,24 @@ export const TWELFTH_SINGLE: DiscographyRaw = createSingleRaw({
     },
   ],
   underMembers: [
-    MemberNameKey.KawamuraMahiro,
-    MemberNameKey.KitanoHinako,
-    MemberNameKey.HoriMiona,
-    MemberNameKey.NakamotoHimeka,
-    MemberNameKey.NakadaKana,
-    MemberNameKey.SagaraIori,
-    MemberNameKey.KawagoHina,
-    MemberNameKey.NagashimaSeira,
-    MemberNameKey.NoujouAmi,
-    MemberNameKey.SaitouChiharu,
-    MemberNameKey.WadaMaaya,
-    MemberNameKey.SasakiKotoko,
-    MemberNameKey.TeradaRanze,
-    MemberNameKey.ItouKarin,
-    MemberNameKey.WatanabeMiria,
-    MemberNameKey.SuzukiAyane,
-    MemberNameKey.ItouJunna,
-    MemberNameKey.HiguchiHina,
+    'kawamuramahiro',
+    'kitanohinako',
+    'horimiona',
+    'nakamotohimeka',
+    'nakadakana',
+    'sagaraiori',
+    'kawagohina',
+    'nagashimaseira',
+    'noujouami',
+    'saitouchiharu',
+    'wadamaaya',
+    'sasakikotoko',
+    'teradaranze',
+    'itoukarin',
+    'watanabemiria',
+    'suzukiayane',
+    'itoujunna',
+    'higuchihina',
   ],
-  skips: [MemberNameKey.YamazakiRena],
+  skips: ['yamazakirena'],
 });

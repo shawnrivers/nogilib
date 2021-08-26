@@ -1,8 +1,6 @@
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-
 export const FIFTEENTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: '裸足でSummer',
   number: '15',
@@ -39,24 +37,24 @@ export const FIFTEENTH_SINGLE: DiscographyRaw = createSingleRaw({
     },
   ],
   underMembers: [
-    MemberNameKey.TeradaRanze,
-    MemberNameKey.ItouMarika,
-    MemberNameKey.HiguchiHina,
-    MemberNameKey.InoueSayuri,
-    MemberNameKey.WatanabeMiria,
-    MemberNameKey.SaitouChiharu,
-    MemberNameKey.SaitouYuuri,
-    MemberNameKey.ShinuchiMai,
-    MemberNameKey.NakadaKana,
-    MemberNameKey.NoujouAmi,
-    MemberNameKey.KawamuraMahiro,
-    MemberNameKey.YamazakiRena,
-    MemberNameKey.ItouJunna,
-    MemberNameKey.KawagoHina,
-    MemberNameKey.SuzukiAyane,
-    MemberNameKey.WadaMaaya,
-    MemberNameKey.SagaraIori,
-    MemberNameKey.SasakiKotoko,
-    MemberNameKey.ItouKarin,
+    'teradaranze',
+    'itoumarika',
+    'higuchihina',
+    'inouesayuri',
+    'watanabemiria',
+    'saitouchiharu',
+    'saitouyuuri',
+    'shinuchimai',
+    'nakadakana',
+    'noujouami',
+    'kawamuramahiro',
+    'yamazakirena',
+    'itoujunna',
+    'kawagohina',
+    'suzukiayane',
+    'wadamaaya',
+    'sagaraiori',
+    'sasakikotoko',
+    'itoukarin',
   ],
 });

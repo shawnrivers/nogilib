@@ -1,8 +1,6 @@
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-
 export const FOURTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: '制服のマネキン',
   number: '4',
@@ -35,22 +33,22 @@ export const FOURTH_SINGLE: DiscographyRaw = createSingleRaw({
     },
   ],
   underMembers: [
-    MemberNameKey.SaitouYuuri,
-    MemberNameKey.NakadaKana,
-    MemberNameKey.EtouMisa,
-    MemberNameKey.ItouMarika,
-    MemberNameKey.KawagoHina,
-    MemberNameKey.HiguchiHina,
-    MemberNameKey.ItouNene,
-    MemberNameKey.KawamuraMahiro,
-    MemberNameKey.NakamotoHimeka,
-    MemberNameKey.HatanakaSeira,
-    MemberNameKey.NagashimaSeira,
-    MemberNameKey.MiyazawaSeira,
-    MemberNameKey.YamatoRina,
-    MemberNameKey.AndouMikumo,
-    MemberNameKey.WadaMaaya,
-    MemberNameKey.SaitouChiharu,
+    'saitouyuuri',
+    'nakadakana',
+    'etoumisa',
+    'itoumarika',
+    'kawagohina',
+    'higuchihina',
+    'itounene',
+    'kawamuramahiro',
+    'nakamotohimeka',
+    'hatanakaseira',
+    'nagashimaseira',
+    'miyazawaseira',
+    'yamatorina',
+    'andoumikumo',
+    'wadamaaya',
+    'saitouchiharu',
   ],
-  skips: [MemberNameKey.KashiwaYukina],
+  skips: ['kashiwayukina'],
 });

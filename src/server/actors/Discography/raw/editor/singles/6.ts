@@ -1,8 +1,6 @@
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-
 export const SIXTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: 'ガールズルール',
   number: '6',
@@ -35,21 +33,21 @@ export const SIXTH_SINGLE: DiscographyRaw = createSingleRaw({
     },
   ],
   underMembers: [
-    MemberNameKey.HiguchiHina,
-    MemberNameKey.SaitouAsuka,
-    MemberNameKey.NakamotoHimeka,
-    MemberNameKey.NoujouAmi,
-    MemberNameKey.EtouMisa,
-    MemberNameKey.KawamuraMahiro,
-    MemberNameKey.ItouNene,
-    MemberNameKey.NagashimaSeira,
-    MemberNameKey.SaitouChiharu,
-    MemberNameKey.IchikiRena,
-    MemberNameKey.YamatoRina,
-    MemberNameKey.KawagoHina,
-    MemberNameKey.WadaMaaya,
-    MemberNameKey.KashiwaYukina,
-    MemberNameKey.HatanakaSeira,
-    MemberNameKey.MiyazawaSeira,
+    'higuchihina',
+    'saitouasuka',
+    'nakamotohimeka',
+    'noujouami',
+    'etoumisa',
+    'kawamuramahiro',
+    'itounene',
+    'nagashimaseira',
+    'saitouchiharu',
+    'ichikirena',
+    'yamatorina',
+    'kawagohina',
+    'wadamaaya',
+    'kashiwayukina',
+    'hatanakaseira',
+    'miyazawaseira',
   ],
 });

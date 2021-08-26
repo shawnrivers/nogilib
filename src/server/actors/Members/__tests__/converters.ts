@@ -19,19 +19,19 @@ const digitalRawArray = discography.getOtherCdsRawArray();
 const songsRawObject = new Songs(songsRawArray).rawObject;
 
 const nanaminPositionsHistory = convertMemberPositionsHistory({
-  memberName: MemberNameKey.HashimotoNanami,
+  memberName: 'hashimotonanami',
   singlesRawArray,
   songsRawObject,
 });
 const ioriPositionsHistory = convertMemberPositionsHistory({
-  memberName: MemberNameKey.SagaraIori,
+  memberName: 'sagaraiori',
   singlesRawArray,
   songsRawObject,
 });
 
 describe('convertProfileImages', () => {
   const nanaseProfileImages = convertProfileImages({
-    memberName: MemberNameKey.NishinoNanase,
+    memberName: 'nishinonanase',
     singlesRawArray,
     albumsRawArray,
     digitalRawArray,
@@ -49,19 +49,19 @@ describe('convertProfileImages', () => {
     'number'
   );
   const renkaProfileImages = convertProfileImages({
-    memberName: MemberNameKey.IwamotoRenka,
+    memberName: 'iwamotorenka',
     singlesRawArray,
     albumsRawArray,
     digitalRawArray,
   });
   const hashimotoProfileImages = convertProfileImages({
-    memberName: MemberNameKey.HashimotoNanami,
+    memberName: 'hashimotonanami',
     singlesRawArray,
     albumsRawArray,
     digitalRawArray,
   });
   const nishikawaProfileImages = convertProfileImages({
-    memberName: MemberNameKey.NishikawaNanami,
+    memberName: 'nishikawananami',
     singlesRawArray,
     albumsRawArray,
     digitalRawArray,
@@ -409,7 +409,7 @@ describe('convertMemberUnits', () => {
   test("should calculate Nishino Nanase's units correctly", () => {
     expect(
       convertMemberUnits({
-        memberName: MemberNameKey.NishinoNanase,
+        memberName: 'nishinonanase',
         unitsRawArray,
       })
     ).toEqual([
@@ -421,7 +421,7 @@ describe('convertMemberUnits', () => {
   test("should calculate Fukagawa Mai's units correctly", () => {
     expect(
       convertMemberUnits({
-        memberName: MemberNameKey.FukagawaMai,
+        memberName: 'fukagawamai',
         unitsRawArray,
       })
     ).toEqual([]);

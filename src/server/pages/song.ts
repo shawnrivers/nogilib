@@ -1,5 +1,4 @@
 import { Members } from 'server/actors/Members';
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { PositionType } from 'server/actors/Members/constants/position';
 import { MemberResult } from 'server/actors/Members/models';
 import { Songs } from 'server/actors/Songs';
@@ -91,7 +90,7 @@ function getSongPerformers(
     .filter(formation => formation.length > 0)
     .map(row =>
       row.map(memberNameKey => {
-        if (memberNameKey !== MemberNameKey.KojimaHaruna) {
+        if (memberNameKey !== 'kojimaharuna') {
           const member = membersObject[memberNameKey];
           return {
             name: member.name,
@@ -102,7 +101,7 @@ function getSongPerformers(
           };
         } else {
           return {
-            name: MemberNameKey.KojimaHaruna,
+            name: 'kojimaharuna',
             nameNotations: {
               lastName: '小嶋',
               lastNameEn: 'kojima',
@@ -114,7 +113,7 @@ function getSongPerformers(
             profileImage: getResponsiveImageUrls(
               convertImageFilePath(KOJIHARU_IMAGE_SRC)
             ),
-            position: getPerformerPosition(song, MemberNameKey.KojimaHaruna),
+            position: getPerformerPosition(song, 'kojimaharuna'),
             isMember: false,
           };
         }

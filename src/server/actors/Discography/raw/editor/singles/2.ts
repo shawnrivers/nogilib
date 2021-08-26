@@ -1,8 +1,6 @@
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-
 export const SECOND_SINGLE: DiscographyRaw = createSingleRaw({
   title: 'おいでシャンプー',
   number: '2',
@@ -35,23 +33,23 @@ export const SECOND_SINGLE: DiscographyRaw = createSingleRaw({
     },
   ],
   underMembers: [
-    MemberNameKey.FukagawaMai,
-    MemberNameKey.ItouMarika,
-    MemberNameKey.WakatsukiYumi,
-    MemberNameKey.KawagoHina,
-    MemberNameKey.KawamuraMahiro,
-    MemberNameKey.SaitouChiharu,
-    MemberNameKey.NagashimaSeira,
-    MemberNameKey.EtouMisa,
-    MemberNameKey.ItouNene,
-    MemberNameKey.SaitouAsuka,
-    MemberNameKey.NakamotoHimeka,
-    MemberNameKey.HiguchiHina,
-    MemberNameKey.KashiwaYukina,
-    MemberNameKey.AndouMikumo,
-    MemberNameKey.YamatoRina,
-    MemberNameKey.NoujouAmi,
-    MemberNameKey.WadaMaaya,
+    'fukagawamai',
+    'itoumarika',
+    'wakatsukiyumi',
+    'kawagohina',
+    'kawamuramahiro',
+    'saitouchiharu',
+    'nagashimaseira',
+    'etoumisa',
+    'itounene',
+    'saitouasuka',
+    'nakamotohimeka',
+    'higuchihina',
+    'kashiwayukina',
+    'andoumikumo',
+    'yamatorina',
+    'noujouami',
+    'wadamaaya',
   ],
-  skips: [MemberNameKey.AkimotoManatsu],
+  skips: ['akimotomanatsu'],
 });

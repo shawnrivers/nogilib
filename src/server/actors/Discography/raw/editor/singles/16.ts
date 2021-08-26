@@ -1,8 +1,6 @@
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
-import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-
 export const SIXTEENTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: 'サヨナラの意味',
   number: '16',
@@ -39,21 +37,21 @@ export const SIXTEENTH_SINGLE: DiscographyRaw = createSingleRaw({
     },
   ],
   underMembers: [
-    MemberNameKey.KawamuraMahiro,
-    MemberNameKey.HiguchiHina,
-    MemberNameKey.TeradaRanze,
-    MemberNameKey.NakadaKana,
-    MemberNameKey.NoujouAmi,
-    MemberNameKey.SaitouYuuri,
-    MemberNameKey.YamazakiRena,
-    MemberNameKey.WatanabeMiria,
-    MemberNameKey.SuzukiAyane,
-    MemberNameKey.SaitouChiharu,
-    MemberNameKey.ItouJunna,
-    MemberNameKey.WadaMaaya,
-    MemberNameKey.ItouKarin,
-    MemberNameKey.KawagoHina,
-    MemberNameKey.SasakiKotoko,
-    MemberNameKey.SagaraIori,
+    'kawamuramahiro',
+    'higuchihina',
+    'teradaranze',
+    'nakadakana',
+    'noujouami',
+    'saitouyuuri',
+    'yamazakirena',
+    'watanabemiria',
+    'suzukiayane',
+    'saitouchiharu',
+    'itoujunna',
+    'wadamaaya',
+    'itoukarin',
+    'kawagohina',
+    'sasakikotoko',
+    'sagaraiori',
   ],
 });
