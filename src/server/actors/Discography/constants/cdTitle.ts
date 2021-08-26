@@ -1,49 +1,7 @@
+import { ArrayElementReadonly } from 'types/common';
 import { arrayToObject } from 'utils/array';
-import { TitleKeyArray } from 'server/types/commons';
 
-export type SingleTitle =
-  | '君に叱られた'
-  | 'ごめんねFingers crossed'
-  | '僕は僕を好きになる'
-  | 'しあわせの保護色'
-  | '夜明けまで強がらなくてもいい'
-  | 'Sing Out!'
-  | '帰り道は遠回りしたくなる'
-  | 'ジコチューで行こう!'
-  | 'シンクロニシティ'
-  | 'いつかできるから今日できる'
-  | '逃げ水'
-  | 'インフルエンサー'
-  | 'サヨナラの意味'
-  | '裸足でSummer'
-  | 'ハルジオンが咲く頃'
-  | '今、話したい誰かがいる'
-  | '太陽ノック'
-  | '命は美しい'
-  | '何度目の青空か?'
-  | '夏のFree&Easy'
-  | '気づいたら片想い'
-  | 'バレッタ'
-  | 'ガールズルール'
-  | '君の名は希望'
-  | '制服のマネキン'
-  | '走れ!Bicycle'
-  | 'おいでシャンプー'
-  | 'ぐるぐるカーテン'
-  | 'タイトル未定';
-
-export type AlbumTitle =
-  | '今が思い出になるまで'
-  | '僕だけの君〜Under Super Best〜'
-  | '生まれてから初めて見た夢'
-  | 'それぞれの椅子'
-  | '透明な色';
-
-export type OtherCdTitle = '世界中の隣人よ' | 'Route 246' | '１・２・３';
-
-export type CdTitle = SingleTitle | AlbumTitle | OtherCdTitle;
-
-const CdTitleKeyArray: TitleKeyArray<CdTitle> = [
+const singleTitles = [
   {
     title: '君に叱られた',
     key: 'kiminishikarareta',
@@ -53,20 +11,8 @@ const CdTitleKeyArray: TitleKeyArray<CdTitle> = [
     key: 'gomennefingerscrossed',
   },
   {
-    title: '１・２・３',
-    key: '123',
-  },
-  {
     title: '僕は僕を好きになる',
     key: 'bokuhabokuwosukininaru',
-  },
-  {
-    title: 'Route 246',
-    key: 'route246',
-  },
-  {
-    title: '世界中の隣人よ',
-    key: 'sekaichuunorinjinyo',
   },
   {
     title: 'しあわせの保護色',
@@ -168,6 +114,25 @@ const CdTitleKeyArray: TitleKeyArray<CdTitle> = [
     title: 'ぐるぐるカーテン',
     key: 'gurugurucurtain',
   },
+] as const;
+
+const otherCdTitles = [
+  {
+    title: '１・２・３',
+    key: '123',
+  },
+
+  {
+    title: 'Route 246',
+    key: 'route246',
+  },
+  {
+    title: '世界中の隣人よ',
+    key: 'sekaichuunorinjinyo',
+  },
+] as const;
+
+const albumTitles = [
   {
     title: '今が思い出になるまで',
     key: 'imagaomoideninarumade',
@@ -188,13 +153,26 @@ const CdTitleKeyArray: TitleKeyArray<CdTitle> = [
     title: '透明な色',
     key: 'toumeinairo',
   },
-  {
-    title: 'タイトル未定',
-    key: 'untitled',
-  },
+] as const;
+
+const untitled = {
+  title: 'タイトル未定',
+  key: 'untitled',
+} as const;
+
+const cdTitleKeyArray = [
+  ...singleTitles,
+  ...otherCdTitles,
+  ...albumTitles,
+  untitled,
 ].map(titleKey => ({
-  title: titleKey.title as CdTitle,
+  title: titleKey.title,
   key: titleKey.key.toLowerCase(),
 }));
 
-export const CDS = arrayToObject(CdTitleKeyArray, 'title');
+export const CDS = arrayToObject(cdTitleKeyArray, 'title');
+
+export type SingleTitle = ArrayElementReadonly<typeof singleTitles>['title'];
+export type AlbumTitle = ArrayElementReadonly<typeof albumTitles>['title'];
+export type OtherCdTitle = ArrayElementReadonly<typeof otherCdTitles>['title'];
+export type CdTitle = ArrayElementReadonly<typeof cdTitleKeyArray>['title'];
