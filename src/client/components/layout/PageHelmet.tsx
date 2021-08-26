@@ -68,13 +68,11 @@ export const PageHelmet: React.FC<PageHelmetProps> = props => {
       <meta
         name="theme-color"
         content="#ffffff"
-        // @ts-ignore
         media="(prefers-color-scheme: light)"
       />
       <meta
         name="theme-color"
         content="#333333"
-        // @ts-ignore
         media="(prefers-color-scheme: dark)"
       />
 
