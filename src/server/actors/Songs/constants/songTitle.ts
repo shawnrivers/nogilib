@@ -2,7 +2,7 @@ import { arrayToObject } from 'utils/array';
 import { TitleKeyArray } from 'server/types/commons';
 
 export enum SongTitle {
-  Untitled = 'タイトル未定',
+  Kiminishikarareta = '君に叱られた',
   SayuReady = 'さ～ゆ～Ready？',
   Zanbuzazabun = 'ざんぶざざぶん',
   SabitaCompass = '錆びたコンパス',
@@ -227,10 +227,11 @@ export enum SongTitle {
   Gorugonzora = 'ゴルゴンゾーラ',
   MousuguZambidensetsu = 'もうすぐ～ザンビ伝説～',
   Overture = 'OVERTURE',
+  Untitled = 'タイトル未定',
 }
 
 const SongsTitleKeyArray: TitleKeyArray<SongTitle> = [
-  { title: SongTitle.Untitled, key: 'untitled' },
+  { title: SongTitle.Kiminishikarareta, key: 'Kiminishikarareta' },
   { title: SongTitle.SayuReady, key: 'sayuready' },
   { title: SongTitle.Zanbuzazabun, key: 'zanbuzazabun' },
   {
@@ -1121,6 +1122,7 @@ const SongsTitleKeyArray: TitleKeyArray<SongTitle> = [
     title: SongTitle.Overture,
     key: 'overture',
   },
+  { title: SongTitle.Untitled, key: 'untitled' },
 ].map(titleKey => ({
   ...titleKey,
   key: titleKey.key.toLowerCase(),

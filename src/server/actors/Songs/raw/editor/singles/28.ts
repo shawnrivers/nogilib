@@ -6,7 +6,7 @@ import { createSongRaw } from 'server/actors/Songs/raw/creator';
 
 export const TWENTY_EIGHTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['タイトル未定'].title,
+    title: SONGS['君に叱られた'].title,
     type: SongType.Title,
     center: [MemberNameKey.KakiHaruka],
     fukujin: 'row-1-2',
