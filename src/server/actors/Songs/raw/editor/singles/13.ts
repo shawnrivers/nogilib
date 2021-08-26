@@ -2,12 +2,12 @@ import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
+
 import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
 
 export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['今、話したい誰かがいる'].title,
+    title: '今、話したい誰かがいる',
     type: SongType.Title,
     creators: {
       lyrics: ['秋元康'],
@@ -43,7 +43,7 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['嫉妬の権利'].title,
+    title: '嫉妬の権利',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],
@@ -83,7 +83,7 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['ポピパッパパー'].title,
+    title: 'ポピパッパパー',
     type: SongType.Selected,
     creators: {
       lyrics: ['秋元康'],
@@ -118,7 +118,7 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['大人への近道'].title,
+    title: '大人への近道',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -138,7 +138,7 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['悲しみの忘れ方'].title,
+    title: '悲しみの忘れ方',
     type: SongType.Coupling,
     creators: {
       lyrics: ['秋元康'],
@@ -175,7 +175,7 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['隙間'].title,
+    title: '隙間',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],

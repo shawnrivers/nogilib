@@ -2,11 +2,10 @@ import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const UNDER_ALBUM_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['自分のこと'].title,
+    title: '自分のこと',
     type: SongType.Solo,
     creators: {
       lyrics: ['秋元康'],
@@ -16,7 +15,7 @@ export const UNDER_ALBUM_SONGS: SongRaw[] = [
     solo: MemberNameKey.NakamotoHimeka,
   }),
   createSongRaw({
-    title: SONGS['自惚れビーチ'].title,
+    title: '自惚れビーチ',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],
@@ -44,7 +43,7 @@ export const UNDER_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['その女'].title,
+    title: 'その女',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],
@@ -72,7 +71,7 @@ export const UNDER_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['誰よりそばにいたい'].title,
+    title: '誰よりそばにいたい',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],

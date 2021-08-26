@@ -2,11 +2,10 @@ import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const FIRST_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['ぐるぐるカーテン'].title,
+    title: 'ぐるぐるカーテン',
     type: SongType.Title,
     creators: {
       lyrics: ['秋元康'],
@@ -42,7 +41,7 @@ export const FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['左胸の勇気'].title,
+    title: '左胸の勇気',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],
@@ -75,7 +74,7 @@ export const FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['乃木坂の詩'].title,
+    title: '乃木坂の詩',
     type: SongType.Coupling,
     creators: {
       lyrics: ['秋元康'],
@@ -123,7 +122,7 @@ export const FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['会いたかったかもしれない'].title,
+    title: '会いたかったかもしれない',
     type: SongType.Coupling,
     creators: {
       lyrics: ['秋元康'],
@@ -158,7 +157,7 @@ export const FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['失いたくないから'].title,
+    title: '失いたくないから',
     type: SongType.Coupling,
     creators: {
       lyrics: ['秋元康'],
@@ -193,7 +192,7 @@ export const FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['白い雲にのって'].title,
+    title: '白い雲にのって',
     type: SongType.Coupling,
     creators: {
       lyrics: ['秋元康'],

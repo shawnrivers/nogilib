@@ -2,7 +2,6 @@ import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const NINTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: '夏のFree&Easy',
@@ -11,27 +10,27 @@ export const NINTH_SINGLE: DiscographyRaw = createSingleRaw({
   cdTypes: ['A', 'B', 'C', 'T'],
   songs: [
     {
-      title: SONGS['夏のFree&Easy'].title,
+      title: '夏のFree&Easy',
       inCdType: ['A', 'B', 'C', 'T'],
     },
     {
-      title: SONGS['何もできずにそばにいる'].title,
+      title: '何もできずにそばにいる',
       inCdType: ['A', 'B', 'C', 'T'],
     },
     {
-      title: SONGS['その先の出口!'].title,
+      title: 'その先の出口!',
       inCdType: ['A'],
     },
     {
-      title: SONGS['無口なライオン'].title,
+      title: '無口なライオン',
       inCdType: ['B'],
     },
     {
-      title: SONGS['ここにいる理由'].title,
+      title: 'ここにいる理由',
       inCdType: ['C'],
     },
     {
-      title: SONGS['僕が行かなきゃ誰が行くんだ?'].title,
+      title: '僕が行かなきゃ誰が行くんだ?',
       inCdType: ['T'],
     },
   ],

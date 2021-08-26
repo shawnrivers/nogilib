@@ -1,6 +1,5 @@
 import { createAlbumRaw } from 'server/actors/Discography/raw/creators';
 import { DiscographyRaw } from 'server/actors/Discography/models';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const SECOND_ALBUM: DiscographyRaw = createAlbumRaw({
   title: 'それぞれの椅子',
@@ -10,147 +9,147 @@ export const SECOND_ALBUM: DiscographyRaw = createAlbumRaw({
   cdTypes: ['A', 'B', 'C', 'D', 'T'],
   songs: [
     {
-      title: SONGS['命は美しい'].title,
+      title: '命は美しい',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['太陽ノック'].title,
+      title: '太陽ノック',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['今、話したい誰かがいる'].title,
+      title: '今、話したい誰かがいる',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['きっかけ'].title,
+      title: 'きっかけ',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['太陽に口説かれて'].title,
+      title: '太陽に口説かれて',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['欲望のリインカーネーション'].title,
+      title: '欲望のリインカーネーション',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['悲しみの忘れ方'].title,
+      title: '悲しみの忘れ方',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['空気感'].title,
+      title: '空気感',
       inCdType: ['A', 'T'],
     },
     {
-      title: SONGS['光合成希望'].title,
+      title: '光合成希望',
       inCdType: ['A', 'T'],
     },
     {
-      title: SONGS['無表情'].title,
+      title: '無表情',
       inCdType: ['A', 'T'],
     },
     {
-      title: SONGS['あらかじめ語られるロマンス'].title,
+      title: 'あらかじめ語られるロマンス',
       inCdType: ['A', 'T'],
     },
     {
-      title: SONGS['隙間'].title,
+      title: '隙間',
       inCdType: ['A', 'T'],
     },
     {
-      title: SONGS['急斜面'].title,
+      title: '急斜面',
       inCdType: ['A', 'T'],
     },
     {
-      title: SONGS['羽根の記憶'].title,
+      title: '羽根の記憶',
       inCdType: ['A', 'T'],
     },
     {
-      title: SONGS['乃木坂の詩'].title,
+      title: '乃木坂の詩',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['Threefold choice'].title,
+      title: 'Threefold choice',
       inCdType: ['B'],
     },
     {
-      title: SONGS['低体温のキス'].title,
+      title: '低体温のキス',
       inCdType: ['B'],
     },
     {
-      title: SONGS['遥かなるブータン'].title,
+      title: '遥かなるブータン',
       inCdType: ['B'],
     },
     {
-      title: SONGS['ポピパッパパー'].title,
+      title: 'ポピパッパパー',
       inCdType: ['B'],
     },
     {
-      title: SONGS['制服を脱いでサヨナラを…'].title,
+      title: '制服を脱いでサヨナラを…',
       inCdType: ['B'],
     },
     {
-      title: SONGS['憂鬱と風船ガム'].title,
+      title: '憂鬱と風船ガム',
       inCdType: ['B'],
     },
     {
-      title: SONGS['立ち直り中'].title,
+      title: '立ち直り中',
       inCdType: ['B'],
     },
     {
-      title: SONGS['失恋したら、顔を洗え!'].title,
+      title: '失恋したら、顔を洗え!',
       inCdType: ['C'],
     },
     {
-      title: SONGS['かき氷の片想い'].title,
+      title: 'かき氷の片想い',
       inCdType: ['C'],
     },
     {
-      title: SONGS['大人への近道'].title,
+      title: '大人への近道',
       inCdType: ['C'],
     },
     {
-      title: SONGS['君は僕と会わない方がよかったのかな'].title,
+      title: '君は僕と会わない方がよかったのかな',
       inCdType: ['C'],
     },
     {
-      title: SONGS['別れ際、もっと好きになる'].title,
+      title: '別れ際、もっと好きになる',
       inCdType: ['C'],
     },
     {
-      title: SONGS['嫉妬の権利'].title,
+      title: '嫉妬の権利',
       inCdType: ['C'],
     },
     {
-      title: SONGS['不等号'].title,
+      title: '不等号',
       inCdType: ['C'],
     },
     {
-      title: SONGS['環状六号線'].title,
+      title: '環状六号線',
       inCdType: ['D'],
     },
     {
-      title: SONGS['口約束'].title,
+      title: '口約束',
       inCdType: ['D'],
     },
     {
-      title: SONGS['ロマンティックいか焼き'].title,
+      title: 'ロマンティックいか焼き',
       inCdType: ['D'],
     },
     {
-      title: SONGS['ハウス!'].title,
+      title: 'ハウス!',
       inCdType: ['D'],
     },
     {
-      title: SONGS['そんなバカな…'].title,
+      title: 'そんなバカな…',
       inCdType: ['D'],
     },
     {
-      title: SONGS['シャキイズム'].title,
+      title: 'シャキイズム',
       inCdType: ['D'],
     },
     {
-      title: SONGS['ロマンスのスタート'].title,
+      title: 'ロマンスのスタート',
       inCdType: ['D'],
     },
   ],

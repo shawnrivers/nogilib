@@ -2,7 +2,6 @@ import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const TENTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: '何度目の青空か?',
@@ -11,27 +10,27 @@ export const TENTH_SINGLE: DiscographyRaw = createSingleRaw({
   cdTypes: ['A', 'B', 'C', 'T'],
   songs: [
     {
-      title: SONGS['何度目の青空か?'].title,
+      title: '何度目の青空か?',
       inCdType: ['A', 'B', 'C', 'T'],
     },
     {
-      title: SONGS['遠回りの愛情'].title,
+      title: '遠回りの愛情',
       inCdType: ['A', 'B', 'C', 'T'],
     },
     {
-      title: SONGS['転がった鐘を鳴らせ!'].title,
+      title: '転がった鐘を鳴らせ!',
       inCdType: ['A'],
     },
     {
-      title: SONGS['私、起きる。'].title,
+      title: '私、起きる。',
       inCdType: ['B'],
     },
     {
-      title: SONGS['あの日 僕は咄嗟に嘘をついた'].title,
+      title: 'あの日 僕は咄嗟に嘘をついた',
       inCdType: ['C'],
     },
     {
-      title: SONGS['Tender days'].title,
+      title: 'Tender days',
       inCdType: ['T'],
     },
   ],

@@ -1,6 +1,5 @@
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createAlbumRaw } from 'server/actors/Discography/raw/creators';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const THIRD_ALBUM: DiscographyRaw = createAlbumRaw({
   title: '生まれてから初めて見た夢',
@@ -10,135 +9,135 @@ export const THIRD_ALBUM: DiscographyRaw = createAlbumRaw({
   cdTypes: ['A', 'B', 'L', 'T'],
   songs: [
     {
-      title: SONGS['裸足でSummer'].title,
+      title: '裸足でSummer',
       inCdType: ['L', 'A', 'B', 'T'],
     },
     {
-      title: SONGS['サヨナラの意味'].title,
+      title: 'サヨナラの意味',
       inCdType: ['L', 'A', 'B', 'T'],
     },
     {
-      title: SONGS['インフルエンサー'].title,
+      title: 'インフルエンサー',
       inCdType: ['L', 'A', 'B', 'T'],
     },
     {
-      title: SONGS['シークレットグラフィティー'].title,
+      title: 'シークレットグラフィティー',
       inCdType: ['L', 'A', 'B', 'T'],
     },
     {
-      title: SONGS['ブランコ'].title,
+      title: 'ブランコ',
       inCdType: ['L', 'A', 'B', 'T'],
     },
     {
-      title: SONGS['風船は生きている'].title,
+      title: '風船は生きている',
       inCdType: ['L', 'A', 'B', 'T'],
     },
     {
-      title: SONGS['スカイダイビング'].title,
+      title: 'スカイダイビング',
       inCdType: ['L', 'A', 'B', 'T'],
     },
     {
-      title: SONGS['三番目の風'].title,
+      title: '三番目の風',
       inCdType: ['L', 'A', 'B', 'T'],
     },
     {
-      title: SONGS['君が扇いでくれた'].title,
+      title: '君が扇いでくれた',
       inCdType: ['L'],
     },
     {
-      title: SONGS['思い出ファースト'].title,
+      title: '思い出ファースト',
       inCdType: ['L'],
     },
     {
-      title: SONGS['設定温度'].title,
+      title: '設定温度',
       inCdType: ['L'],
     },
     {
-      title: SONGS['孤独な青空'].title,
+      title: '孤独な青空',
       inCdType: ['L'],
     },
     {
-      title: SONGS['僕だけの光'].title,
+      title: '僕だけの光',
       inCdType: ['L'],
     },
     {
-      title: SONGS['人生を考えたくなる'].title,
+      title: '人生を考えたくなる',
       inCdType: ['L'],
     },
     {
-      title: SONGS['意外BREAK'].title,
+      title: '意外BREAK',
       inCdType: ['L'],
     },
     {
-      title: SONGS['Rewindあの日'].title,
+      title: 'Rewindあの日',
       inCdType: ['A'],
     },
     {
-      title: SONGS['ごめんね、スムージー'].title,
+      title: 'ごめんね、スムージー',
       inCdType: ['A'],
     },
     {
-      title: SONGS['醜い私'].title,
+      title: '醜い私',
       inCdType: ['A'],
     },
     {
-      title: SONGS['オフショアガール'].title,
+      title: 'オフショアガール',
       inCdType: ['A'],
     },
     {
-      title: SONGS['君に贈る花がない'].title,
+      title: '君に贈る花がない',
       inCdType: ['A'],
     },
     {
-      title: SONGS['白米様'].title,
+      title: '白米様',
       inCdType: ['A'],
     },
     {
-      title: SONGS['硬い殻のように抱きしめたい'].title,
+      title: '硬い殻のように抱きしめたい',
       inCdType: ['B'],
     },
     {
-      title: SONGS['満月が消えた'].title,
+      title: '満月が消えた',
       inCdType: ['B'],
     },
     {
-      title: SONGS['ワタボコリ'].title,
+      title: 'ワタボコリ',
       inCdType: ['B'],
     },
     {
-      title: SONGS['ないものねだり'].title,
+      title: 'ないものねだり',
       inCdType: ['B'],
     },
     {
-      title: SONGS['Another Ghost'].title,
+      title: 'Another Ghost',
       inCdType: ['B'],
     },
     {
-      title: SONGS['あの教室'].title,
+      title: 'あの教室',
       inCdType: ['B'],
     },
     {
-      title: SONGS['流星ディスコティック'].title,
+      title: '流星ディスコティック',
       inCdType: ['T'],
     },
     {
-      title: SONGS['忘却と美学'].title,
+      title: '忘却と美学',
       inCdType: ['T'],
     },
     {
-      title: SONGS['2度目のキスから'].title,
+      title: '2度目のキスから',
       inCdType: ['T'],
     },
     {
-      title: SONGS['命の真実 ミュージカル「林檎売りとカメムシ」'].title,
+      title: '命の真実 ミュージカル「林檎売りとカメムシ」',
       inCdType: ['T'],
     },
     {
-      title: SONGS['行くあてのない僕たち'].title,
+      title: '行くあてのない僕たち',
       inCdType: ['T'],
     },
     {
-      title: SONGS['当たり障りのない話'].title,
+      title: '当たり障りのない話',
       inCdType: ['T'],
     },
   ],

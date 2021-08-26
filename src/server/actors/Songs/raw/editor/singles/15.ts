@@ -3,12 +3,11 @@ import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
 
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
 
 export const FIFTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['裸足でSummer'].title,
+    title: '裸足でSummer',
     type: SongType.Title,
     creators: {
       lyrics: ['秋元康'],
@@ -44,7 +43,7 @@ export const FIFTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['シークレットグラフィティー'].title,
+    title: 'シークレットグラフィティー',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],
@@ -82,7 +81,7 @@ export const FIFTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['僕だけの光'].title,
+    title: '僕だけの光',
     type: SongType.Selected,
     creators: {
       lyrics: ['秋元康'],
@@ -112,7 +111,7 @@ export const FIFTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['オフショアガール'].title,
+    title: 'オフショアガール',
     type: SongType.Solo,
     creators: {
       lyrics: ['秋元康'],
@@ -123,7 +122,7 @@ export const FIFTEENTH_SINGLE_SONGS: SongRaw[] = [
     solo: MemberNameKey.ShiraishiMai,
   }),
   createSongRaw({
-    title: SONGS['命の真実 ミュージカル「林檎売りとカメムシ」'].title,
+    title: '命の真実 ミュージカル「林檎売りとカメムシ」',
     type: SongType.Solo,
     creators: {
       lyrics: ['秋元康'],
@@ -134,7 +133,7 @@ export const FIFTEENTH_SINGLE_SONGS: SongRaw[] = [
     solo: MemberNameKey.IkutaErika,
   }),
   createSongRaw({
-    title: SONGS['白米様'].title,
+    title: '白米様',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -153,7 +152,7 @@ export const FIFTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['行くあてのない僕たち'].title,
+    title: '行くあてのない僕たち',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],

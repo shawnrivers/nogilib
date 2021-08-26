@@ -1,13 +1,13 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { SongType } from 'server/actors/Songs/constants/songType';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
+
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { UnitName } from 'server/actors/Units/constants/unitName';
 
 export const OTHER_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['世界中の隣人よ'].title,
+    title: '世界中の隣人よ',
     type: SongType.Special,
     creators: {
       lyrics: ['秋元康'],
@@ -78,7 +78,7 @@ export const OTHER_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['Route 246'].title,
+    title: 'Route 246',
     type: SongType.Title,
     creators: {
       lyrics: ['秋元康'],
@@ -116,7 +116,7 @@ export const OTHER_SONGS: SongRaw[] = [
     fukujin: 'row-1-2',
   }),
   createSongRaw({
-    title: SONGS['１・２・３'].title,
+    title: '１・２・３',
     type: SongType.Unit,
     creators: {
       lyrics: ['まふまふ'],

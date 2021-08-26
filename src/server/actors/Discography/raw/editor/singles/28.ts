@@ -1,6 +1,5 @@
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const TWENTY_EIGHTH_SINGLE = createSingleRaw({
   title: '君に叱られた',
@@ -9,7 +8,7 @@ export const TWENTY_EIGHTH_SINGLE = createSingleRaw({
   cdTypes: ['A'],
   songs: [
     {
-      title: SONGS['君に叱られた'].title,
+      title: '君に叱られた',
       inCdType: ['A'],
     },
   ],

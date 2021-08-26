@@ -2,7 +2,6 @@ import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const TWENTY_SECOND_SINGLE: DiscographyRaw = createSingleRaw({
   title: '帰り道は遠回りしたくなる',
@@ -11,31 +10,31 @@ export const TWENTY_SECOND_SINGLE: DiscographyRaw = createSingleRaw({
   cdTypes: ['A', 'B', 'C', 'D', 'T'],
   songs: [
     {
-      title: SONGS['帰り道は遠回りしたくなる'].title,
+      title: '帰り道は遠回りしたくなる',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['キャラバンは眠らない'].title,
+      title: 'キャラバンは眠らない',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['つづく'].title,
+      title: 'つづく',
       inCdType: ['A'],
     },
     {
-      title: SONGS['日常'].title,
+      title: '日常',
       inCdType: ['B'],
     },
     {
-      title: SONGS['告白の順番'].title,
+      title: '告白の順番',
       inCdType: ['C'],
     },
     {
-      title: SONGS['ショパンの嘘つき'].title,
+      title: 'ショパンの嘘つき',
       inCdType: ['D'],
     },
     {
-      title: SONGS['知りたいこと'].title,
+      title: '知りたいこと',
       inCdType: ['T'],
     },
   ],

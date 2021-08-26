@@ -1,12 +1,12 @@
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongRaw } from 'server/actors/Songs/models';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
+
 import { SongType } from 'server/actors/Songs/constants/songType';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 
 export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['僕は僕を好きになる'].title,
+    title: '僕は僕を好きになる',
     type: SongType.Title,
     creators: {
       lyrics: ['秋元康'],
@@ -45,7 +45,7 @@ export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['冷たい水の中'].title,
+    title: '冷たい水の中',
     type: SongType.Solo,
     creators: {
       lyrics: ['秋元康'],
@@ -56,7 +56,7 @@ export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
     solo: MemberNameKey.HoriMiona,
   }),
   createSongRaw({
-    title: SONGS['Out of the blue'].title,
+    title: 'Out of the blue',
     type: SongType.FourthGeneration,
     creators: {
       lyrics: ['秋元康'],
@@ -91,7 +91,7 @@ export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['口ほどにもないKISS'].title,
+    title: '口ほどにもないKISS',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],
@@ -124,7 +124,7 @@ export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['明日がある理由'].title,
+    title: '明日がある理由',
     type: SongType.Coupling,
     creators: {
       lyrics: ['秋元康'],
@@ -160,7 +160,7 @@ export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['Wilderness world'].title,
+    title: 'Wilderness world',
     type: SongType.Coupling,
     creators: {
       lyrics: ['秋元康'],
@@ -198,7 +198,7 @@ export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['友情ピアス'].title,
+    title: '友情ピアス',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],

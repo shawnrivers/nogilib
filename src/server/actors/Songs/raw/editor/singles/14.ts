@@ -2,11 +2,10 @@ import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['ハルジオンが咲く頃'].title,
+    title: 'ハルジオンが咲く頃',
     type: SongType.Title,
     creators: {
       lyrics: ['秋元康'],
@@ -43,7 +42,7 @@ export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['不等号'].title,
+    title: '不等号',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],
@@ -81,7 +80,7 @@ export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['遥かなるブータン'].title,
+    title: '遥かなるブータン',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -101,7 +100,7 @@ export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['強がる蕾'].title,
+    title: '強がる蕾',
     type: SongType.Solo,
     creators: {
       lyrics: ['秋元康'],
@@ -112,7 +111,7 @@ export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
     solo: MemberNameKey.FukagawaMai,
   }),
   createSongRaw({
-    title: SONGS['急斜面'].title,
+    title: '急斜面',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -129,7 +128,7 @@ export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['釣り堀'].title,
+    title: '釣り堀',
     type: SongType.Solo,
     creators: {
       lyrics: ['秋元康'],
@@ -140,7 +139,7 @@ export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
     solo: MemberNameKey.NishinoNanase,
   }),
   createSongRaw({
-    title: SONGS['憂鬱と風船ガム'].title,
+    title: '憂鬱と風船ガム',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],

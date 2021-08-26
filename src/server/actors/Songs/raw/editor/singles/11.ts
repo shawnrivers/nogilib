@@ -3,11 +3,9 @@ import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
 
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
-
 export const ELEVENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['命は美しい'].title,
+    title: '命は美しい',
     type: SongType.Title,
     creators: {
       lyrics: ['秋元康'],
@@ -45,7 +43,7 @@ export const ELEVENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['君は僕と会わない方がよかったのかな'].title,
+    title: '君は僕と会わない方がよかったのかな',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],
@@ -78,7 +76,7 @@ export const ELEVENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['あらかじめ語られるロマンス'].title,
+    title: 'あらかじめ語られるロマンス',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -99,7 +97,7 @@ export const ELEVENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['立ち直り中'].title,
+    title: '立ち直り中',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -121,7 +119,7 @@ export const ELEVENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['ごめんね ずっと…'].title,
+    title: 'ごめんね ずっと…',
     type: SongType.Solo,
     creators: {
       lyrics: ['秋元康'],
@@ -132,7 +130,7 @@ export const ELEVENTH_SINGLE_SONGS: SongRaw[] = [
     solo: MemberNameKey.NishinoNanase,
   }),
   createSongRaw({
-    title: SONGS['ボーダー'].title,
+    title: 'ボーダー',
     type: SongType.SecondGeneration,
     creators: {
       lyrics: ['秋元康'],

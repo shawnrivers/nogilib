@@ -2,7 +2,6 @@ import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const SEVENTEENTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: 'インフルエンサー',
@@ -11,31 +10,31 @@ export const SEVENTEENTH_SINGLE: DiscographyRaw = createSingleRaw({
   cdTypes: ['A', 'B', 'C', 'D', 'T'],
   songs: [
     {
-      title: SONGS['インフルエンサー'].title,
+      title: 'インフルエンサー',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['人生を考えたくなる'].title,
+      title: '人生を考えたくなる',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['意外BREAK'].title,
+      title: '意外BREAK',
       inCdType: ['A'],
     },
     {
-      title: SONGS['Another Ghost'].title,
+      title: 'Another Ghost',
       inCdType: ['B'],
     },
     {
-      title: SONGS['風船は生きている'].title,
+      title: '風船は生きている',
       inCdType: ['C'],
     },
     {
-      title: SONGS['三番目の風'].title,
+      title: '三番目の風',
       inCdType: ['D'],
     },
     {
-      title: SONGS['当たり障りのない話'].title,
+      title: '当たり障りのない話',
       inCdType: ['T'],
     },
   ],

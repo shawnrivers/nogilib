@@ -2,7 +2,6 @@ import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const EIGHTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: '気づいたら片想い',
@@ -11,27 +10,27 @@ export const EIGHTH_SINGLE: DiscographyRaw = createSingleRaw({
   cdTypes: ['A', 'B', 'C', 'T'],
   songs: [
     {
-      title: SONGS['気づいたら片想い'].title,
+      title: '気づいたら片想い',
       inCdType: ['A', 'B', 'C', 'T'],
     },
     {
-      title: SONGS['ロマンスのスタート'].title,
+      title: 'ロマンスのスタート',
       inCdType: ['A', 'B', 'C', 'T'],
     },
     {
-      title: SONGS['吐息のメソッド'].title,
+      title: '吐息のメソッド',
       inCdType: ['A'],
     },
     {
-      title: SONGS['孤独兄弟'].title,
+      title: '孤独兄弟',
       inCdType: ['B'],
     },
     {
-      title: SONGS['生まれたままで'].title,
+      title: '生まれたままで',
       inCdType: ['C'],
     },
     {
-      title: SONGS['ダンケシェーン'].title,
+      title: 'ダンケシェーン',
       inCdType: ['T'],
     },
   ],

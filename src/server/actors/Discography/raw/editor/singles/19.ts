@@ -2,7 +2,6 @@ import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const NINETEENTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: 'いつかできるから今日できる',
@@ -11,31 +10,31 @@ export const NINETEENTH_SINGLE: DiscographyRaw = createSingleRaw({
   cdTypes: ['A', 'B', 'C', 'D', 'T'],
   songs: [
     {
-      title: SONGS['いつかできるから今日できる'].title,
+      title: 'いつかできるから今日できる',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['不眠症'].title,
+      title: '不眠症',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['まあいいか?'].title,
+      title: 'まあいいか?',
       inCdType: ['A'],
     },
     {
-      title: SONGS['失恋お掃除人'].title,
+      title: '失恋お掃除人',
       inCdType: ['B'],
     },
     {
-      title: SONGS['My rule'].title,
+      title: 'My rule',
       inCdType: ['C'],
     },
     {
-      title: SONGS['僕の衝動'].title,
+      title: '僕の衝動',
       inCdType: ['D'],
     },
     {
-      title: SONGS['新しい花粉 〜ミュージカル「見知らぬ世界」より〜'].title,
+      title: '新しい花粉 〜ミュージカル「見知らぬ世界」より〜',
       inCdType: ['T'],
     },
   ],

@@ -2,7 +2,6 @@ import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const TWENTY_FIFTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: 'しあわせの保護色',
@@ -11,31 +10,31 @@ export const TWENTY_FIFTH_SINGLE: DiscographyRaw = createSingleRaw({
   cdTypes: ['A', 'B', 'C', 'D', 'T'],
   songs: [
     {
-      title: SONGS['しあわせの保護色'].title,
+      title: 'しあわせの保護色',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['サヨナラ Stay with me'].title,
+      title: 'サヨナラ Stay with me',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['じゃあね。'].title,
+      title: 'じゃあね。',
       inCdType: ['A'],
     },
     {
-      title: SONGS['アナスターシャ'].title,
+      title: 'アナスターシャ',
       inCdType: ['B'],
     },
     {
-      title: SONGS['毎日がBrand new day'].title,
+      title: '毎日がBrand new day',
       inCdType: ['C'],
     },
     {
-      title: SONGS['I see…'].title,
+      title: 'I see…',
       inCdType: ['D'],
     },
     {
-      title: SONGS['ファンタスティック三色パン'].title,
+      title: 'ファンタスティック三色パン',
       inCdType: ['T'],
     },
   ],

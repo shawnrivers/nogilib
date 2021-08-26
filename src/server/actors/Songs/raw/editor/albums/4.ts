@@ -2,12 +2,12 @@ import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
+
 import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
 
 export const FOURTH_ALBUM_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['ありがちな恋愛'].title,
+    title: 'ありがちな恋愛',
     type: SongType.Lead,
     creators: {
       lyrics: ['秋元康'],
@@ -39,7 +39,7 @@ export const FOURTH_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['もし君がいなければ'].title,
+    title: 'もし君がいなければ',
     type: SongType.Solo,
     creators: {
       lyrics: ['秋元康'],
@@ -50,7 +50,7 @@ export const FOURTH_ALBUM_SONGS: SongRaw[] = [
     solo: MemberNameKey.EtouMisa,
   }),
   createSongRaw({
-    title: SONGS['キスの手裏剣'].title,
+    title: 'キスの手裏剣',
     type: SongType.FourthGeneration,
     creators: {
       lyrics: ['秋元康'],
@@ -77,7 +77,7 @@ export const FOURTH_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['頬杖をついては眠れない'].title,
+    title: '頬杖をついては眠れない',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -95,7 +95,7 @@ export const FOURTH_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['ぼっち党'].title,
+    title: 'ぼっち党',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -111,7 +111,7 @@ export const FOURTH_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['さゆりんご募集中'].title,
+    title: 'さゆりんご募集中',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -129,7 +129,7 @@ export const FOURTH_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['ゴルゴンゾーラ'].title,
+    title: 'ゴルゴンゾーラ',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -145,7 +145,7 @@ export const FOURTH_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['もうすぐ～ザンビ伝説～'].title,
+    title: 'もうすぐ～ザンビ伝説～',
     type: SongType.Special,
     creators: {
       lyrics: ['秋元康'],

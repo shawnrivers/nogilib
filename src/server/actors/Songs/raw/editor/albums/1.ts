@@ -2,12 +2,12 @@ import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
+
 import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
 
 export const FIRST_ALBUM_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['誰かは味方'].title,
+    title: '誰かは味方',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -23,7 +23,7 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['革命の馬'].title,
+    title: '革命の馬',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -42,7 +42,7 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['僕がいる場所'].title,
+    title: '僕がいる場所',
     type: SongType.Selected,
     creators: {
       lyrics: ['秋元康'],
@@ -72,7 +72,7 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['あなたのために弾きたい'].title,
+    title: 'あなたのために弾きたい',
     type: SongType.Solo,
     creators: {
       lyrics: ['秋元康'],
@@ -82,7 +82,7 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
     solo: MemberNameKey.IkutaErika,
   }),
   createSongRaw({
-    title: SONGS['傾斜する'].title,
+    title: '傾斜する',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -113,7 +113,7 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['なぞの落書き'].title,
+    title: 'なぞの落書き',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -129,7 +129,7 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['自由の彼方'].title,
+    title: '自由の彼方',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],
@@ -167,7 +167,7 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['ひとりよがり'].title,
+    title: 'ひとりよがり',
     type: SongType.Solo,
     creators: {
       lyrics: ['秋元康'],

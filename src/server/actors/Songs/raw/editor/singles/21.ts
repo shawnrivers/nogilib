@@ -3,11 +3,10 @@ import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
 
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const TWENTY_FIRST_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['ジコチューで行こう!'].title,
+    title: 'ジコチューで行こう!',
     type: SongType.Title,
     creators: {
       lyrics: ['秋元康'],
@@ -48,7 +47,7 @@ export const TWENTY_FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['三角の空き地'].title,
+    title: '三角の空き地',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],
@@ -85,7 +84,7 @@ export const TWENTY_FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['空扉'].title,
+    title: '空扉',
     type: SongType.Selected,
     creators: {
       lyrics: ['秋元康'],
@@ -121,7 +120,7 @@ export const TWENTY_FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['自分じゃない感じ'].title,
+    title: '自分じゃない感じ',
     type: SongType.ThirdGeneration,
     creators: {
       lyrics: ['秋元康'],
@@ -150,7 +149,7 @@ export const TWENTY_FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['心のモノローグ'].title,
+    title: '心のモノローグ',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -163,7 +162,7 @@ export const TWENTY_FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['地球が丸いなら'].title,
+    title: '地球が丸いなら',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -180,7 +179,7 @@ export const TWENTY_FIRST_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['あんなに好きだったのに...'].title,
+    title: 'あんなに好きだったのに...',
     type: SongType.Selected,
     creators: {
       lyrics: ['秋元康'],

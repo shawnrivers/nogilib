@@ -1,12 +1,12 @@
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
+
 import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const NINTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['夏のFree&Easy'].title,
+    title: '夏のFree&Easy',
     type: SongType.Title,
     creators: {
       lyrics: ['秋元康'],
@@ -43,7 +43,7 @@ export const NINTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['ここにいる理由'].title,
+    title: 'ここにいる理由',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],
@@ -78,7 +78,7 @@ export const NINTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['何もできずにそばにいる'].title,
+    title: '何もできずにそばにいる',
     type: SongType.Selected,
     creators: {
       lyrics: ['秋元康'],
@@ -113,7 +113,7 @@ export const NINTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['その先の出口!'].title,
+    title: 'その先の出口!',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -137,7 +137,7 @@ export const NINTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['無口なライオン'].title,
+    title: '無口なライオン',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -160,7 +160,7 @@ export const NINTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['僕が行かなきゃ誰が行くんだ?'].title,
+    title: '僕が行かなきゃ誰が行くんだ?',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],

@@ -2,11 +2,10 @@ import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['しあわせの保護色'].title,
+    title: 'しあわせの保護色',
     type: SongType.Title,
     creators: {
       lyrics: ['秋元康'],
@@ -48,7 +47,7 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['サヨナラ Stay with me'].title,
+    title: 'サヨナラ Stay with me',
     type: SongType.Coupling,
     creators: {
       lyrics: ['秋元康'],
@@ -69,7 +68,7 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['じゃあね。'].title,
+    title: 'じゃあね。',
     type: SongType.Solo,
     creators: {
       lyrics: ['白石麻衣'],
@@ -80,7 +79,7 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
     solo: MemberNameKey.ShiraishiMai,
   }),
   createSongRaw({
-    title: SONGS['アナスターシャ'].title,
+    title: 'アナスターシャ',
     type: SongType.SecondGeneration,
     creators: {
       lyrics: ['秋元康'],
@@ -108,7 +107,7 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['毎日がBrand new day'].title,
+    title: '毎日がBrand new day',
     type: SongType.ThirdGeneration,
     creators: {
       lyrics: ['秋元康'],
@@ -137,7 +136,7 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['I see…'].title,
+    title: 'I see…',
     type: SongType.FourthGeneration,
     creators: {
       lyrics: ['秋元康'],
@@ -165,7 +164,7 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['ファンタスティック三色パン'].title,
+    title: 'ファンタスティック三色パン',
     type: SongType.Coupling,
     creators: {
       lyrics: ['秋元康'],

@@ -3,11 +3,9 @@ import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
 
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
-
 export const TENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['何度目の青空か?'].title,
+    title: '何度目の青空か?',
     type: SongType.Title,
     creators: {
       lyrics: ['秋元康'],
@@ -43,7 +41,7 @@ export const TENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['あの日 僕は咄嗟に嘘をついた'].title,
+    title: 'あの日 僕は咄嗟に嘘をついた',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],
@@ -79,7 +77,7 @@ export const TENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['遠回りの愛情'].title,
+    title: '遠回りの愛情',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -101,7 +99,7 @@ export const TENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['転がった鐘を鳴らせ!'].title,
+    title: '転がった鐘を鳴らせ!',
     type: SongType.Selected,
     creators: {
       lyrics: ['秋元康'],
@@ -132,7 +130,7 @@ export const TENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['私、起きる。'].title,
+    title: '私、起きる。',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -157,7 +155,7 @@ export const TENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['Tender days'].title,
+    title: 'Tender days',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],

@@ -2,7 +2,6 @@ import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const SEVENTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: 'バレッタ',
@@ -11,27 +10,27 @@ export const SEVENTH_SINGLE: DiscographyRaw = createSingleRaw({
   cdTypes: ['A', 'B', 'C', 'T'],
   songs: [
     {
-      title: SONGS['バレッタ'].title,
+      title: 'バレッタ',
       inCdType: ['A', 'B', 'C', 'T'],
     },
     {
-      title: SONGS['月の大きさ'].title,
+      title: '月の大きさ',
       inCdType: ['A', 'B', 'C', 'T'],
     },
     {
-      title: SONGS['私のために 誰かのために'].title,
+      title: '私のために 誰かのために',
       inCdType: ['A'],
     },
     {
-      title: SONGS['そんなバカな…'].title,
+      title: 'そんなバカな…',
       inCdType: ['B'],
     },
     {
-      title: SONGS['初恋の人を今でも'].title,
+      title: '初恋の人を今でも',
       inCdType: ['C'],
     },
     {
-      title: SONGS['やさしさとは'].title,
+      title: 'やさしさとは',
       inCdType: ['T'],
     },
   ],

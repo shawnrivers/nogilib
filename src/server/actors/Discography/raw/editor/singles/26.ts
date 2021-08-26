@@ -1,6 +1,5 @@
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const TWENTY_SIXTH_SINGLE = createSingleRaw({
   title: '僕は僕を好きになる',
@@ -9,31 +8,31 @@ export const TWENTY_SIXTH_SINGLE = createSingleRaw({
   cdTypes: ['A', 'B', 'C', 'D', 'T'],
   songs: [
     {
-      title: SONGS['僕は僕を好きになる'].title,
+      title: '僕は僕を好きになる',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['明日がある理由'].title,
+      title: '明日がある理由',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['Wilderness world'].title,
+      title: 'Wilderness world',
       inCdType: ['A'],
     },
     {
-      title: SONGS['口ほどにもないKISS'].title,
+      title: '口ほどにもないKISS',
       inCdType: ['B'],
     },
     {
-      title: SONGS['冷たい水の中'].title,
+      title: '冷たい水の中',
       inCdType: ['C'],
     },
     {
-      title: SONGS['Out of the blue'].title,
+      title: 'Out of the blue',
       inCdType: ['D'],
     },
     {
-      title: SONGS['友情ピアス'].title,
+      title: '友情ピアス',
       inCdType: ['T'],
     },
   ],

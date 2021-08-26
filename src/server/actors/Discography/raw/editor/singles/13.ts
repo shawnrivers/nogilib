@@ -2,7 +2,6 @@ import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const THIRTEENTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: '今、話したい誰かがいる',
@@ -11,27 +10,27 @@ export const THIRTEENTH_SINGLE: DiscographyRaw = createSingleRaw({
   cdTypes: ['A', 'B', 'C', 'T'],
   songs: [
     {
-      title: SONGS['今、話したい誰かがいる'].title,
+      title: '今、話したい誰かがいる',
       inCdType: ['A', 'B', 'C', 'T'],
     },
     {
-      title: SONGS['嫉妬の権利'].title,
+      title: '嫉妬の権利',
       inCdType: ['A', 'B', 'C', 'T'],
     },
     {
-      title: SONGS['ポピパッパパー'].title,
+      title: 'ポピパッパパー',
       inCdType: ['A'],
     },
     {
-      title: SONGS['大人への近道'].title,
+      title: '大人への近道',
       inCdType: ['B'],
     },
     {
-      title: SONGS['悲しみの忘れ方'].title,
+      title: '悲しみの忘れ方',
       inCdType: ['C'],
     },
     {
-      title: SONGS['隙間'].title,
+      title: '隙間',
       inCdType: ['T'],
     },
   ],

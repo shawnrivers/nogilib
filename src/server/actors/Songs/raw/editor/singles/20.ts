@@ -3,12 +3,12 @@ import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
 
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
+
 import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
 
 export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['シンクロニシティ'].title,
+    title: 'シンクロニシティ',
     type: SongType.Title,
     creators: {
       lyrics: ['秋元康'],
@@ -49,7 +49,7 @@ export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['新しい世界'].title,
+    title: '新しい世界',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],
@@ -89,7 +89,7 @@ export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['Against'].title,
+    title: 'Against',
     type: SongType.FirstGeneration,
     creators: {
       lyrics: ['秋元康'],
@@ -128,7 +128,7 @@ export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['雲になればいい'].title,
+    title: '雲になればいい',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -145,7 +145,7 @@ export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['スカウトマン'].title,
+    title: 'スカウトマン',
     type: SongType.SecondGeneration,
     creators: {
       lyrics: ['秋元康'],
@@ -171,7 +171,7 @@ export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['トキトキメキメキ'].title,
+    title: 'トキトキメキメキ',
     type: SongType.ThirdGeneration,
     creators: {
       lyrics: ['秋元康'],
@@ -202,7 +202,7 @@ export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['言霊砲'].title,
+    title: '言霊砲',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],

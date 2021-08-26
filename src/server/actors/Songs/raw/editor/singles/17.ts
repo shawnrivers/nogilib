@@ -2,12 +2,12 @@ import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
+
 import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
 
 export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['インフルエンサー'].title,
+    title: 'インフルエンサー',
     type: SongType.Title,
     creators: {
       lyrics: ['秋元康'],
@@ -48,7 +48,7 @@ export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['風船は生きている'].title,
+    title: '風船は生きている',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],
@@ -79,7 +79,7 @@ export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['人生を考えたくなる'].title,
+    title: '人生を考えたくなる',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -97,7 +97,7 @@ export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['意外BREAK'].title,
+    title: '意外BREAK',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -116,7 +116,7 @@ export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['Another Ghost'].title,
+    title: 'Another Ghost',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -134,7 +134,7 @@ export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['三番目の風'].title,
+    title: '三番目の風',
     type: SongType.ThirdGeneration,
     creators: {
       lyrics: ['秋元康'],
@@ -165,7 +165,7 @@ export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['当たり障りのない話'].title,
+    title: '当たり障りのない話',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],

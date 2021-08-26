@@ -3,11 +3,9 @@ import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
 
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
-
 export const SIXTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['ガールズルール'].title,
+    title: 'ガールズルール',
     type: SongType.Title,
     creators: {
       lyrics: ['秋元康'],
@@ -43,7 +41,7 @@ export const SIXTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['扇風機'].title,
+    title: '扇風機',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],
@@ -80,7 +78,7 @@ export const SIXTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['世界で一番 孤独なLover'].title,
+    title: '世界で一番 孤独なLover',
     type: SongType.Selected,
     creators: {
       lyrics: ['秋元康'],
@@ -115,7 +113,7 @@ export const SIXTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['コウモリよ'].title,
+    title: 'コウモリよ',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -132,7 +130,7 @@ export const SIXTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['他の星から'].title,
+    title: '他の星から',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -154,7 +152,7 @@ export const SIXTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['人間という楽器'].title,
+    title: '人間という楽器',
     type: SongType.FirstGeneration,
     creators: {
       lyrics: ['秋元康'],

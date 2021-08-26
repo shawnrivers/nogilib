@@ -1,12 +1,12 @@
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
+
 import { SongType } from 'server/actors/Songs/constants/songType';
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 
 export const TWENTY_EIGHTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['君に叱られた'].title,
+    title: '君に叱られた',
     type: SongType.Title,
     center: [MemberNameKey.KakiHaruka],
     fukujin: 'row-1-2',

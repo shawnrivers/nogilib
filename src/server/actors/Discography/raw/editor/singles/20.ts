@@ -2,7 +2,6 @@ import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const TWENTIETH_SINGLE: DiscographyRaw = createSingleRaw({
   title: 'シンクロニシティ',
@@ -11,31 +10,31 @@ export const TWENTIETH_SINGLE: DiscographyRaw = createSingleRaw({
   cdTypes: ['A', 'B', 'C', 'D', 'T'],
   songs: [
     {
-      title: SONGS['シンクロニシティ'].title,
+      title: 'シンクロニシティ',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['Against'].title,
+      title: 'Against',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['雲になればいい'].title,
+      title: '雲になればいい',
       inCdType: ['A'],
     },
     {
-      title: SONGS['新しい世界'].title,
+      title: '新しい世界',
       inCdType: ['B'],
     },
     {
-      title: SONGS['スカウトマン'].title,
+      title: 'スカウトマン',
       inCdType: ['C'],
     },
     {
-      title: SONGS['トキトキメキメキ'].title,
+      title: 'トキトキメキメキ',
       inCdType: ['D'],
     },
     {
-      title: SONGS['言霊砲'].title,
+      title: '言霊砲',
       inCdType: ['T'],
     },
   ],

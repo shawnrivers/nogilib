@@ -1,6 +1,5 @@
 import { DiscographyRawArray } from 'server/actors/Discography/models';
 import { createOtherCdRaw } from 'server/actors/Discography/raw/creators';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const otherCdsRawArray: DiscographyRawArray = [
   createOtherCdRaw({
@@ -12,7 +11,7 @@ export const otherCdsRawArray: DiscographyRawArray = [
     cdTypes: ['T'],
     songs: [
       {
-        title: SONGS['世界中の隣人よ'].title,
+        title: '世界中の隣人よ',
         inCdType: ['T'],
       },
     ],
@@ -26,7 +25,7 @@ export const otherCdsRawArray: DiscographyRawArray = [
     cdTypes: ['T'],
     songs: [
       {
-        title: SONGS['Route 246'].title,
+        title: 'Route 246',
         inCdType: ['T'],
       },
     ],
@@ -40,7 +39,7 @@ export const otherCdsRawArray: DiscographyRawArray = [
     cdTypes: ['T'],
     songs: [
       {
-        title: SONGS['１・２・３'].title,
+        title: '１・２・３',
         inCdType: ['T'],
       },
     ],

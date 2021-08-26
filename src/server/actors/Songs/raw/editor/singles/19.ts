@@ -3,12 +3,12 @@ import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
 
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
+
 import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
 
 export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['いつかできるから今日できる'].title,
+    title: 'いつかできるから今日できる',
     type: SongType.Title,
     creators: {
       lyrics: ['秋元康'],
@@ -47,7 +47,7 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['My rule'].title,
+    title: 'My rule',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],
@@ -80,7 +80,7 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['不眠症'].title,
+    title: '不眠症',
     type: SongType.Coupling,
     creators: {
       lyrics: ['秋元康'],
@@ -114,7 +114,7 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['まあいいか?'].title,
+    title: 'まあいいか?',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -127,7 +127,7 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['失恋お掃除人'].title,
+    title: '失恋お掃除人',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -146,7 +146,7 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['僕の衝動'].title,
+    title: '僕の衝動',
     type: SongType.ThirdGeneration,
     creators: {
       lyrics: ['秋元康'],
@@ -177,7 +177,7 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['新しい花粉 〜ミュージカル「見知らぬ世界」より〜'].title,
+    title: '新しい花粉 〜ミュージカル「見知らぬ世界」より〜',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],

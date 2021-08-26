@@ -2,12 +2,12 @@ import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
+
 import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
 
 export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['帰り道は遠回りしたくなる'].title,
+    title: '帰り道は遠回りしたくなる',
     type: SongType.Title,
     creators: {
       lyrics: ['秋元康'],
@@ -48,7 +48,7 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['日常'].title,
+    title: '日常',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],
@@ -85,7 +85,7 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['キャラバンは眠らない'].title,
+    title: 'キャラバンは眠らない',
     type: SongType.Coupling,
     creators: {
       lyrics: ['秋元康'],
@@ -120,7 +120,7 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['つづく'].title,
+    title: 'つづく',
     type: SongType.Solo,
     creators: {
       lyrics: ['秋元康'],
@@ -131,7 +131,7 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
     solo: MemberNameKey.NishinoNanase,
   }),
   createSongRaw({
-    title: SONGS['告白の順番'].title,
+    title: '告白の順番',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -150,7 +150,7 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['ショパンの嘘つき'].title,
+    title: 'ショパンの嘘つき',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -166,7 +166,7 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['知りたいこと'].title,
+    title: '知りたいこと',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],

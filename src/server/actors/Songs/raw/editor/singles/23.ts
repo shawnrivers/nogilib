@@ -2,12 +2,12 @@ import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
+
 import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
 
 export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['Sing Out!'].title,
+    title: 'Sing Out!',
     type: SongType.Title,
     creators: {
       lyrics: ['秋元康'],
@@ -49,7 +49,7 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['滑走路'].title,
+    title: '滑走路',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],
@@ -76,7 +76,7 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['のような存在'].title,
+    title: 'のような存在',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -89,7 +89,7 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['Am I Loving?'].title,
+    title: 'Am I Loving?',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -108,7 +108,7 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['平行線'].title,
+    title: '平行線',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -127,7 +127,7 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['4番目の光'].title,
+    title: '4番目の光',
     type: SongType.FourthGeneration,
     creators: {
       lyrics: ['秋元康'],
@@ -155,7 +155,7 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['曖昧'].title,
+    title: '曖昧',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],

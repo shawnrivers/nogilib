@@ -2,7 +2,6 @@ import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const ELEVENTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: '命は美しい',
@@ -11,27 +10,27 @@ export const ELEVENTH_SINGLE: DiscographyRaw = createSingleRaw({
   cdTypes: ['A', 'B', 'C', 'T'],
   songs: [
     {
-      title: SONGS['命は美しい'].title,
+      title: '命は美しい',
       inCdType: ['A', 'B', 'C', 'T'],
     },
     {
-      title: SONGS['あらかじめ語られるロマンス'].title,
+      title: 'あらかじめ語られるロマンス',
       inCdType: ['A', 'B', 'C', 'T'],
     },
     {
-      title: SONGS['立ち直り中'].title,
+      title: '立ち直り中',
       inCdType: ['A'],
     },
     {
-      title: SONGS['ごめんね ずっと…'].title,
+      title: 'ごめんね ずっと…',
       inCdType: ['B'],
     },
     {
-      title: SONGS['君は僕と会わない方がよかったのかな'].title,
+      title: '君は僕と会わない方がよかったのかな',
       inCdType: ['C'],
     },
     {
-      title: SONGS['ボーダー'].title,
+      title: 'ボーダー',
       inCdType: ['T'],
     },
   ],

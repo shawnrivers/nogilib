@@ -2,7 +2,6 @@ import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const SECOND_SINGLE: DiscographyRaw = createSingleRaw({
   title: 'おいでシャンプー',
@@ -11,27 +10,27 @@ export const SECOND_SINGLE: DiscographyRaw = createSingleRaw({
   cdTypes: ['A', 'B', 'C', 'T'],
   songs: [
     {
-      title: SONGS['おいでシャンプー'].title,
+      title: 'おいでシャンプー',
       inCdType: ['A', 'B', 'C', 'T'],
     },
     {
-      title: SONGS['心の薬'].title,
+      title: '心の薬',
       inCdType: ['A', 'B', 'C', 'T'],
     },
     {
-      title: SONGS['偶然を言い訳にして'].title,
+      title: '偶然を言い訳にして',
       inCdType: ['A'],
     },
     {
-      title: SONGS['水玉模様'].title,
+      title: '水玉模様',
       inCdType: ['B'],
     },
     {
-      title: SONGS['狼に口笛を'].title,
+      title: '狼に口笛を',
       inCdType: ['C'],
     },
     {
-      title: SONGS['ハウス!'].title,
+      title: 'ハウス!',
       inCdType: ['T'],
     },
   ],

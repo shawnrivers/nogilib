@@ -2,7 +2,6 @@ import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const TWENTY_THIRD_SINGLE: DiscographyRaw = createSingleRaw({
   title: 'Sing Out!',
@@ -11,31 +10,31 @@ export const TWENTY_THIRD_SINGLE: DiscographyRaw = createSingleRaw({
   cdTypes: ['A', 'B', 'C', 'D', 'T'],
   songs: [
     {
-      title: SONGS['Sing Out!'].title,
+      title: 'Sing Out!',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['滑走路'].title,
+      title: '滑走路',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['のような存在'].title,
+      title: 'のような存在',
       inCdType: ['A'],
     },
     {
-      title: SONGS['Am I Loving?'].title,
+      title: 'Am I Loving?',
       inCdType: ['B'],
     },
     {
-      title: SONGS['平行線'].title,
+      title: '平行線',
       inCdType: ['C'],
     },
     {
-      title: SONGS['4番目の光'].title,
+      title: '4番目の光',
       inCdType: ['D'],
     },
     {
-      title: SONGS['曖昧'].title,
+      title: '曖昧',
       inCdType: ['T'],
     },
   ],

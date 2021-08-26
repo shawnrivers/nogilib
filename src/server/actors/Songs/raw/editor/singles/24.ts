@@ -3,11 +3,10 @@ import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
 
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['夜明けまで強がらなくてもいい'].title,
+    title: '夜明けまで強がらなくてもいい',
     type: SongType.Title,
     creators: {
       lyrics: ['秋元康'],
@@ -45,7 +44,7 @@ export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['僕のこと、知ってる?'].title,
+    title: '僕のこと、知ってる?',
     type: SongType.Coupling,
     creators: {
       lyrics: ['秋元康'],
@@ -85,7 +84,7 @@ export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['路面電車の街'].title,
+    title: '路面電車の街',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -102,7 +101,7 @@ export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['図書室の君へ'].title,
+    title: '図書室の君へ',
     type: SongType.FourthGeneration,
     creators: {
       lyrics: ['秋元康'],
@@ -130,7 +129,7 @@ export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['時々 思い出してください'].title,
+    title: '時々 思い出してください',
     type: SongType.Solo,
     creators: {
       lyrics: ['秋元康'],
@@ -142,7 +141,7 @@ export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
   }),
 
   createSongRaw({
-    title: SONGS['～Do my best～じゃ意味はない'].title,
+    title: '～Do my best～じゃ意味はない',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],
@@ -177,7 +176,7 @@ export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['僕の思い込み'].title,
+    title: '僕の思い込み',
     type: SongType.Coupling,
     creators: {
       lyrics: ['秋元康'],

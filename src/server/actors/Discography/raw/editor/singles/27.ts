@@ -1,6 +1,5 @@
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const TWENTY_SEVENTH_SINGLE = createSingleRaw({
   title: 'ごめんねFingers crossed',
@@ -9,31 +8,31 @@ export const TWENTY_SEVENTH_SINGLE = createSingleRaw({
   cdTypes: ['A', 'B', 'C', 'D', 'T'],
   songs: [
     {
-      title: SONGS['ごめんねFingers crossed'].title,
+      title: 'ごめんねFingers crossed',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['全部　夢のまま'].title,
+      title: '全部　夢のまま',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['大人たちには指示されない'].title,
+      title: '大人たちには指示されない',
       inCdType: ['A'],
     },
     {
-      title: SONGS['ざんぶざざぶん'].title,
+      title: 'ざんぶざざぶん',
       inCdType: ['B'],
     },
     {
-      title: SONGS['さ～ゆ～Ready？'].title,
+      title: 'さ～ゆ～Ready？',
       inCdType: ['C'],
     },
     {
-      title: SONGS['錆びたコンパス'].title,
+      title: '錆びたコンパス',
       inCdType: ['D'],
     },
     {
-      title: SONGS['猫舌カモミールティー'].title,
+      title: '猫舌カモミールティー',
       inCdType: ['T'],
     },
   ],

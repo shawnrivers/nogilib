@@ -2,12 +2,12 @@ import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
+
 import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
 
 export const SECOND_ALBUM_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['きっかけ'].title,
+    title: 'きっかけ',
     type: SongType.Selected,
     creators: {
       lyrics: ['秋元康'],
@@ -40,7 +40,7 @@ export const SECOND_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['太陽に口説かれて'].title,
+    title: '太陽に口説かれて',
     type: SongType.Selected,
     creators: {
       lyrics: ['秋元康'],
@@ -69,7 +69,7 @@ export const SECOND_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['欲望のリインカーネーション'].title,
+    title: '欲望のリインカーネーション',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康', '本山清治'],
@@ -91,7 +91,7 @@ export const SECOND_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['空気感'].title,
+    title: '空気感',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -109,7 +109,7 @@ export const SECOND_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['光合成希望'].title,
+    title: '光合成希望',
     type: SongType.Solo,
     creators: {
       lyrics: ['秋元康'],
@@ -119,7 +119,7 @@ export const SECOND_ALBUM_SONGS: SongRaw[] = [
     solo: MemberNameKey.NishinoNanase,
   }),
   createSongRaw({
-    title: SONGS['Threefold choice'].title,
+    title: 'Threefold choice',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -135,7 +135,7 @@ export const SECOND_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['低体温のキス'].title,
+    title: '低体温のキス',
     type: SongType.Solo,
     creators: {
       lyrics: ['秋元康'],
@@ -145,7 +145,7 @@ export const SECOND_ALBUM_SONGS: SongRaw[] = [
     solo: MemberNameKey.IkutaErika,
   }),
   createSongRaw({
-    title: SONGS['失恋したら、顔を洗え!'].title,
+    title: '失恋したら、顔を洗え!',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -158,7 +158,7 @@ export const SECOND_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['かき氷の片想い'].title,
+    title: 'かき氷の片想い',
     type: SongType.SecondGeneration,
     creators: {
       lyrics: ['秋元康'],
@@ -187,7 +187,7 @@ export const SECOND_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['環状六号線'].title,
+    title: '環状六号線',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -204,7 +204,7 @@ export const SECOND_ALBUM_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['口約束'].title,
+    title: '口約束',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],

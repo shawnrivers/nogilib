@@ -1,12 +1,12 @@
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
+
 import { SongType } from 'server/actors/Songs/constants/songType';
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 
 export const TWENTY_SEVENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['ごめんねFingers crossed'].title,
+    title: 'ごめんねFingers crossed',
     type: SongType.Title,
     creators: {
       lyrics: ['秋元康'],
@@ -45,7 +45,7 @@ export const TWENTY_SEVENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['全部　夢のまま'].title,
+    title: '全部　夢のまま',
     type: SongType.Coupling,
     creators: {
       lyrics: ['秋元康'],
@@ -86,7 +86,7 @@ export const TWENTY_SEVENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['大人たちには指示されない'].title,
+    title: '大人たちには指示されない',
     type: SongType.ThirdGeneration,
     creators: {
       lyrics: ['秋元康'],
@@ -115,7 +115,7 @@ export const TWENTY_SEVENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['ざんぶざざぶん'].title,
+    title: 'ざんぶざざぶん',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -127,7 +127,7 @@ export const TWENTY_SEVENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['さ～ゆ～Ready？'].title,
+    title: 'さ～ゆ～Ready？',
     type: SongType.Solo,
     creators: {
       lyrics: ['秋元康'],
@@ -137,7 +137,7 @@ export const TWENTY_SEVENTH_SINGLE_SONGS: SongRaw[] = [
     solo: MemberNameKey.MatsumuraSayuri,
   }),
   createSongRaw({
-    title: SONGS['錆びたコンパス'].title,
+    title: '錆びたコンパス',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],
@@ -168,7 +168,7 @@ export const TWENTY_SEVENTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['猫舌カモミールティー'].title,
+    title: '猫舌カモミールティー',
     type: SongType.FourthGeneration,
     creators: {
       lyrics: ['秋元康'],

@@ -2,7 +2,6 @@ import { DiscographyRaw } from 'server/actors/Discography/models';
 import { createSingleRaw } from 'server/actors/Discography/raw/creators';
 
 import { MemberNameKey } from 'server/actors/Members/constants/memberName';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const EIGHTEENTH_SINGLE: DiscographyRaw = createSingleRaw({
   title: '逃げ水',
@@ -11,31 +10,31 @@ export const EIGHTEENTH_SINGLE: DiscographyRaw = createSingleRaw({
   cdTypes: ['A', 'B', 'C', 'D', 'T'],
   songs: [
     {
-      title: SONGS['逃げ水'].title,
+      title: '逃げ水',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['女は一人じゃ眠れない'].title,
+      title: '女は一人じゃ眠れない',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
     {
-      title: SONGS['ひと夏の長さより…'].title,
+      title: 'ひと夏の長さより…',
       inCdType: ['A'],
     },
     {
-      title: SONGS['泣いたっていいじゃないか?'].title,
+      title: '泣いたっていいじゃないか?',
       inCdType: ['B'],
     },
     {
-      title: SONGS['アンダー'].title,
+      title: 'アンダー',
       inCdType: ['C'],
     },
     {
-      title: SONGS['ライブ神'].title,
+      title: 'ライブ神',
       inCdType: ['D'],
     },
     {
-      title: SONGS['未来の答え'].title,
+      title: '未来の答え',
       inCdType: ['T'],
     },
   ],

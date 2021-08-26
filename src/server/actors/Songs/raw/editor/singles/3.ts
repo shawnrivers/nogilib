@@ -2,11 +2,10 @@ import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
 
 export const THIRD_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['走れ!Bicycle'].title,
+    title: '走れ!Bicycle',
     type: SongType.Title,
     creators: {
       lyrics: ['秋元康'],
@@ -50,7 +49,7 @@ export const THIRD_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['涙がまだ悲しみだった頃'].title,
+    title: '涙がまだ悲しみだった頃',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],
@@ -88,7 +87,7 @@ export const THIRD_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['せっかちなかたつむり'].title,
+    title: 'せっかちなかたつむり',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -110,7 +109,7 @@ export const THIRD_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['人はなぜ走るのか?'].title,
+    title: '人はなぜ走るのか?',
     type: SongType.Selected,
     creators: {
       lyrics: ['秋元康'],
@@ -146,7 +145,7 @@ export const THIRD_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['音が出ないギター'].title,
+    title: '音が出ないギター',
     type: SongType.Coupling,
     creators: {
       lyrics: ['秋元康'],
@@ -182,7 +181,7 @@ export const THIRD_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['海流の島よ'].title,
+    title: '海流の島よ',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],

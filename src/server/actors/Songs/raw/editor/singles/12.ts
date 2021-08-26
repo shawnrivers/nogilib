@@ -2,12 +2,12 @@ import { MemberNameKey } from 'server/actors/Members/constants/memberName';
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongType } from 'server/actors/Songs/constants/songType';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
+
 import { UNIT_NAMES } from 'server/actors/Units/constants/unitName';
 
 export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: SONGS['太陽ノック'].title,
+    title: '太陽ノック',
     type: SongType.Title,
     creators: {
       lyrics: ['秋元康'],
@@ -45,7 +45,7 @@ export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['別れ際、もっと好きになる'].title,
+    title: '別れ際、もっと好きになる',
     type: SongType.Under,
     creators: {
       lyrics: ['秋元康'],
@@ -82,7 +82,7 @@ export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['もう少しの夢'].title,
+    title: 'もう少しの夢',
     type: SongType.Solo,
     creators: {
       lyrics: ['秋元康'],
@@ -92,7 +92,7 @@ export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
     solo: MemberNameKey.NishinoNanase,
   }),
   createSongRaw({
-    title: SONGS['魚たちのLOVE SONG'].title,
+    title: '魚たちのLOVE SONG',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -110,7 +110,7 @@ export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['無表情'].title,
+    title: '無表情',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
@@ -124,7 +124,7 @@ export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['羽根の記憶'].title,
+    title: '羽根の記憶',
     type: SongType.Selected,
     creators: {
       lyrics: ['秋元康'],
@@ -157,7 +157,7 @@ export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
     },
   }),
   createSongRaw({
-    title: SONGS['制服を脱いでサヨナラを…'].title,
+    title: '制服を脱いでサヨナラを…',
     type: SongType.Unit,
     creators: {
       lyrics: ['秋元康'],
