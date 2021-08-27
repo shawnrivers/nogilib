@@ -9,17 +9,18 @@ import { getColorVarName } from 'client/styles/tokens/colors';
 
 export type HashtagProps = Omit<TypographyProps, 'variant' | 'element'> & {
   spacing?: SpacingKey;
+  text?: string;
 };
 
 export const Hashtag: React.FC<HashtagProps> = props => {
   const {
     textColor = { on: 'onBackground', variant: 'variant0' },
     spacing = 'xs',
-    children,
+    text = '',
     ...restProps
   } = props;
 
-  return (
+  return text !== '' ? (
     <Typography
       variant="body2"
       element="span"
@@ -35,7 +36,7 @@ export const Hashtag: React.FC<HashtagProps> = props => {
       `}
       {...restProps}
     >
-      #{children}
+      #{text}
     </Typography>
-  );
+  ) : null;
 };

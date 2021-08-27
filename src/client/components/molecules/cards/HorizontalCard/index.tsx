@@ -92,6 +92,7 @@ export const HorizontalCard: React.FC<HorizontalCardProps> = props => {
               {tags.map(tag => (
                 <Hashtag
                   key={tag.text}
+                  text={tag.text}
                   textColor={{
                     on: 'onSurface',
                     variant: 'variant0',
@@ -100,9 +101,7 @@ export const HorizontalCard: React.FC<HorizontalCardProps> = props => {
                     margin-right: 0.3em;
                   `}
                   lang={tag.lang}
-                >
-                  {tag.text}
-                </Hashtag>
+                />
               ))}
             </div>
           )}
