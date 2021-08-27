@@ -1,4 +1,4 @@
-import { BloodType } from 'server/actors/Members/constants/bloodType';
+import { BloodType } from 'server/actors/Members/types/bloodType';
 import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
 import { JoinedGenerationType } from 'server/actors/Members/constants/joinedGeneration';
 import { MemberNameKey } from 'server/actors/Members/types/memberNameKey';

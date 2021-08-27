@@ -1,4 +1,3 @@
-import { BloodType } from 'server/actors/Members/constants/bloodType';
 import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
 import { JoinedGenerationType } from 'server/actors/Members/constants/joinedGeneration';
 import { PhotoAlbumType } from 'server/actors/Members/constants/photoAlbum';
@@ -14,7 +13,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Third,
     birthday: '2002-10-08',
     height: 154,
-    bloodType: BloodType.B,
+    bloodType: 'b',
     origin: '沖縄県',
     sites: [
       {
@@ -34,7 +33,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Third,
     birthday: '2004-02-02',
     height: 159,
-    bloodType: BloodType.B,
+    bloodType: 'b',
     origin: '東京都',
     sites: [
       {
@@ -54,7 +53,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Third,
     birthday: '1999-01-06',
     height: 170,
-    bloodType: BloodType.A,
+    bloodType: 'a',
     origin: '神奈川県',
     sites: [
       {
@@ -92,7 +91,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Third,
     birthday: '1999-09-13',
     height: 156,
-    bloodType: BloodType.O,
+    bloodType: 'o',
     origin: '鹿児島県',
     sites: [
       {
@@ -116,7 +115,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Third,
     birthday: '2001-07-14',
     height: 161,
-    bloodType: BloodType.O,
+    bloodType: 'o',
     origin: '宮城県',
     sites: [
       {
@@ -143,7 +142,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Third,
     birthday: '2001-11-10',
     height: 161,
-    bloodType: BloodType.A,
+    bloodType: 'a',
     origin: '東京都',
     sites: [
       {
@@ -163,7 +162,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Third,
     birthday: '1998-03-23',
     height: 161,
-    bloodType: BloodType.A,
+    bloodType: 'a',
     origin: '愛知県',
     sites: [
       {
@@ -187,7 +186,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Third,
     birthday: '2001-09-27',
     height: 167,
-    bloodType: BloodType.Unknown,
+    bloodType: 'unknown',
     origin: '東京都',
     sites: [
       {
@@ -207,7 +206,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Third,
     birthday: '1999-08-23',
     height: 152,
-    bloodType: BloodType.A,
+    bloodType: 'a',
     origin: '東京都',
     sites: [
       {
@@ -238,7 +237,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Third,
     birthday: '1999-07-26',
     height: 160,
-    bloodType: BloodType.O,
+    bloodType: 'o',
     origin: '東京都',
     sites: [
       {
@@ -283,7 +282,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Third,
     birthday: '1995-09-06',
     height: 161,
-    bloodType: BloodType.A,
+    bloodType: 'a',
     origin: '大分県',
     sites: [
       {
@@ -303,7 +302,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Third,
     birthday: '2000-05-05',
     height: 153,
-    bloodType: BloodType.O,
+    bloodType: 'o',
     origin: '福岡県',
     sites: [
       {

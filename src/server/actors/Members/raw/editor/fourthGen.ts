@@ -1,4 +1,3 @@
-import { BloodType } from 'server/actors/Members/constants/bloodType';
 import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
 import { JoinedGenerationType } from 'server/actors/Members/constants/joinedGeneration';
 import { SocialMedia } from 'server/actors/Members/constants/socialMedia';
@@ -13,7 +12,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Fourth,
     birthday: '2001-10-03',
     height: 164,
-    bloodType: BloodType.Unknown,
+    bloodType: 'unknown',
     origin: '愛知県',
     sites: [
       {
@@ -33,7 +32,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Fourth,
     birthday: '2001-08-08',
     height: 166,
-    bloodType: BloodType.A,
+    bloodType: 'a',
     origin: '栃木県',
     sites: [
       {
@@ -60,7 +59,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Fourth,
     birthday: '2002-11-20',
     height: 154,
-    bloodType: BloodType.B,
+    bloodType: 'b',
     origin: '岡山県',
     sites: [
       {
@@ -80,7 +79,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Fourth,
     birthday: '2001-10-31',
     height: 165,
-    bloodType: BloodType.O,
+    bloodType: 'o',
     origin: '北海道',
     sites: [
       {
@@ -100,7 +99,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Fourth,
     birthday: '2001-08-08',
     height: 165,
-    bloodType: BloodType.Unknown,
+    bloodType: 'unknown',
     origin: 'California, US',
     sites: [
       {
@@ -120,7 +119,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Fourth,
     birthday: '2003-03-03',
     height: 160,
-    bloodType: BloodType.A,
+    bloodType: 'a',
     origin: '千葉県',
     sites: [
       {
@@ -140,7 +139,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Fourth,
     birthday: '2003-08-01',
     height: 164,
-    bloodType: BloodType.O,
+    bloodType: 'o',
     origin: '埼玉県',
     sites: [
       {
@@ -160,7 +159,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Fourth,
     birthday: '1999-01-12',
     height: 160,
-    bloodType: BloodType.A,
+    bloodType: 'a',
     origin: '埼玉県',
     sites: [
       {
@@ -180,7 +179,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Fourth,
     birthday: '2004-06-08',
     height: 160,
-    bloodType: BloodType.O,
+    bloodType: 'o',
     origin: '愛知県',
     sites: [
       {
@@ -200,7 +199,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Fourth,
     birthday: '2000-08-24',
     height: 164,
-    bloodType: BloodType.A,
+    bloodType: 'a',
     origin: '大阪府',
     sites: [
       {
@@ -220,7 +219,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Fourth,
     birthday: '2002-08-14',
     height: 153,
-    bloodType: BloodType.B,
+    bloodType: 'b',
     origin: '東京都',
     sites: [
       {
@@ -240,7 +239,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Fourth,
     birthday: '2004-01-19',
     height: 162,
-    bloodType: BloodType.O,
+    bloodType: 'o',
     origin: '東京都',
     sites: [
       {
@@ -264,7 +263,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Fourth,
     birthday: '2001-08-09',
     height: 160,
-    bloodType: BloodType.B,
+    bloodType: 'b',
     origin: '岩手県',
     sites: [
       {
@@ -288,7 +287,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Fourth,
     birthday: '2003-10-02',
     height: 164,
-    bloodType: BloodType.O,
+    bloodType: 'o',
     origin: '神奈川県',
     sites: [
       {
@@ -312,7 +311,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Fourth,
     birthday: '2004-01-03',
     height: 167,
-    bloodType: BloodType.O,
+    bloodType: 'o',
     origin: '千葉県',
     sites: [
       {
@@ -336,7 +335,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     join: JoinedGenerationType.Fourth,
     birthday: '1999-02-03',
     height: 165,
-    bloodType: BloodType.A,
+    bloodType: 'a',
     origin: '京都府',
     sites: [
       {
