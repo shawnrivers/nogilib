@@ -1,4 +1,3 @@
-import { SocialMedia } from 'server/actors/Members/constants/socialMedia';
 import { MemberRaw } from 'server/actors/Members/models';
 import { createMemberRaw } from 'server/actors/Members/raw/creator';
 
@@ -14,19 +13,19 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '埼玉県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/manatsu.akimoto_official/',
       },
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/manatsu.akimoto/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/akimotomanatsu.php',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/akimoto-manatsu',
       },
     ],
@@ -37,7 +36,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/manattan_0228',
           },
         ],
@@ -49,7 +48,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/manatsu_2nd',
           },
         ],
@@ -68,19 +67,19 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: 'Düsseldorf, Germany',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/ikutaerika.official/',
       },
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/erika.ikuta/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/ikutaerika.php',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/ikuta-erika',
       },
     ],
@@ -103,7 +102,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/erika_newyork/',
           },
         ],
@@ -122,19 +121,19 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '秋田県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/ikomarina_1229/',
       },
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/ikomarina_staff',
       },
       {
-        title: SocialMedia.YouTube,
+        title: 'YouTube',
         url: 'https://www.youtube.com/channel/UCKfIRa0Zhs6HQ33a_L6Tc5Q/',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://ikomarina.com/',
       },
     ],
@@ -166,19 +165,19 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '埼玉県',
     sites: [
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/syr_1214',
       },
       {
-        title: SocialMedia.YouTube,
+        title: 'YouTube',
         url: 'https://www.youtube.com/channel/UCmVJtdqSRFSsJb5hjHL4QKg',
       },
       {
-        title: SocialMedia.FanClub,
+        title: 'fan club',
         url: 'https://www.sayuriinoue-fc.com',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'http://www.siscompany.com/management/artist.php?id=30',
       },
     ],
@@ -189,7 +188,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/1st71845914',
           },
         ],
@@ -209,19 +208,19 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '大分県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/misa_eto_official/',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://etomisa.jp/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://n46llc.com/s/m00/artist/10',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/eto-misa',
       },
     ],
@@ -244,7 +243,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/33misa_syd',
           },
         ],
@@ -256,7 +255,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo book',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/etomisabook',
           },
         ],
@@ -277,23 +276,23 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '長崎県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/kawagohina3/',
       },
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/kawagohina3',
       },
       {
-        title: SocialMedia.YouTube,
+        title: 'YouTube',
         url: 'https://www.youtube.com/channel/UCygUvA0j15FpHp6kv2IuQYA',
       },
       {
-        title: SocialMedia.TikTok,
+        title: 'TikTok',
         url: 'https://www.tiktok.com/@kawagohina3',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://kawagopro.com/',
       },
     ],
@@ -304,7 +303,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo book',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://www.amazon.co.jp/dp/4907929331',
           },
         ],
@@ -324,23 +323,23 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '東京都',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/asuka.3110.official/',
       },
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/asuka.saito/',
       },
       {
-        title: SocialMedia.Weibo,
+        title: 'Weibo',
         url: 'https://weibo.com/saitoasukaofficial',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/saitouasuka.php',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/saito-asuka',
       },
     ],
@@ -351,7 +350,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/gentosha_asuka',
           },
         ],
@@ -370,15 +369,15 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '東京都',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/yuuri_3ito/',
       },
       {
-        title: SocialMedia.TikTok,
+        title: 'TikTok',
         url: 'https://www.tiktok.com/@yuuri_3ito',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/MM1u8Yp3Dv6C',
       },
     ],
@@ -389,7 +388,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/7sec_yuuri',
           },
         ],
@@ -409,19 +408,19 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '神奈川県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/reika_s16/',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://reikasakurai.com/s/m08/?ima=0916',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://n46llc.com/s/m00/artist/11',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/sakurai-reika',
       },
     ],
@@ -432,7 +431,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/reika_kobunsha',
           },
         ],
@@ -444,7 +443,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/sakuraireika2nd',
           },
         ],
@@ -465,27 +464,27 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     graduatedDate: '2020-10-28',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/m.shiraishi.official/',
       },
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/shiraishi_staff',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://maishiraishi-official.com/',
       },
       {
-        title: SocialMedia.YouTube,
+        title: 'YouTube',
         url: 'https://www.youtube.com/c/maishiraishi',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://n46llc.com/s/m00/artist/12?ima=0737',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/shiraishi-mai',
       },
     ],
@@ -532,7 +531,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo magazine',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/mai_westcoast',
           },
         ],
@@ -551,19 +550,19 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '千葉県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://instagram.com/takayama.kazumi.official/',
       },
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/kazumi.takayama/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/takayamakazumi.php',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/takayama-kazumi',
       },
     ],
@@ -586,7 +585,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/takayama_tokuma',
           },
         ],
@@ -606,15 +605,15 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     graduatedDate: '2020-10-26',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/nakadakana_1st/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://n46llc.com/s/m00/artist/13?ima=0737',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/nakada-kana',
       },
     ],
@@ -625,7 +624,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/nakadakana_1st',
           },
         ],
@@ -644,27 +643,27 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '大阪府',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/nishino.nanase.official/',
       },
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/nanase_andstaff',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://nishinonanase.com/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://n46llc.com/s/m00/artist/7',
       },
       {
-        title: SocialMedia.Weibo,
+        title: 'Weibo',
         url: 'https://weibo.com/u/7266809683',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/nishino-nanase',
       },
     ],
@@ -699,7 +698,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo book',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/nanase_1st',
           },
         ],
@@ -719,15 +718,15 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '神奈川県',
     sites: [
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/noujo_ami',
       },
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/noujoami_official/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.tp-e.jp/noujo-ami/',
       },
     ],
@@ -744,19 +743,19 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '東京都',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/higuchi_hina_official/',
       },
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/hina.higuchi/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/higuchihina.php',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/higuchi-hina',
       },
     ],
@@ -772,15 +771,15 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '千葉県',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/minami.hoshino/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/hoshinominami.php',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/hoshino-minami',
       },
     ],
@@ -791,7 +790,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/373_kawaii',
           },
         ],
@@ -818,23 +817,23 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     graduatedDate: '2021-07-13',
     sites: [
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/sayuringo_staff',
       },
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/matsumura_sayuri_official/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://n46llc.com/s/m00/artist/14',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://sayurimatsumura.com/',
       },
       {
-        title: SocialMedia.Weibo,
+        title: 'Weibo',
         url: 'https://weibo.com/u/7266841339',
       },
     ],
@@ -845,7 +844,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/sayuringo_pb',
           },
         ],
@@ -857,7 +856,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/sayuringohan',
           },
         ],
@@ -876,19 +875,19 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '静岡県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/yumi_wakatsuki_official/',
       },
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/WAKA_Y_official/',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://yumiwakatsuki.com/',
       },
       {
-        title: SocialMedia.OnlineSalon,
+        title: 'online salon',
         url: 'https://lounge.dmm.com/detail/2711/',
       },
     ],
@@ -899,7 +898,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/wakatsukiyumi_2',
           },
         ],
@@ -911,7 +910,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/waka_palette',
           },
         ],
@@ -931,19 +930,19 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '広島県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/wada_maaya_official/',
       },
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/maaya.wada/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/wadamaaya.php',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/wada-maaya',
       },
     ],
@@ -959,7 +958,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '埼玉県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/chiharu_saito_ex/',
       },
       {
@@ -980,27 +979,27 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '大阪府',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/mahiro_kawamura_official/',
       },
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/mahiro_chan0723',
       },
       {
-        title: SocialMedia.YouTube,
+        title: 'YouTube',
         url: 'https://www.youtube.com/channel/UC6PRAAvAYKP-axlG3LC-WdA',
       },
       {
-        title: SocialMedia.TikTok,
+        title: 'TikTok',
         url: 'https://www.tiktok.com/@mahiro_0723',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://mahiro.jp/',
       },
       {
-        title: SocialMedia.FanClub,
+        title: 'fan club',
         url: 'https://fanicon.net/fancommunities/3640',
       },
     ],
@@ -1024,11 +1023,11 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '広島県',
     sites: [
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://nakamotohimeka.com/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://n46llc.com/s/m00/artist/6',
       },
     ],
@@ -1045,19 +1044,19 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '神奈川県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/marikaito_official/',
       },
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/marikaito_staff',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://itomarika.com/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://n46llc.com/s/m00/artist/3',
       },
     ],
@@ -1068,7 +1067,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/MARIKA_etranger',
           },
         ],
@@ -1112,7 +1111,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/nanaminNY2017',
           },
         ],
@@ -1132,11 +1131,11 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '静岡県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/fukagawamai.official/',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://fukagawamai.com/',
       },
     ],
@@ -1179,15 +1178,15 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '愛知県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/seira_nagashima/',
       },
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/seira_0519n',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://www.horipro.co.jp/nagashimaseira/',
       },
     ],
@@ -1204,19 +1203,19 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '愛知県',
     sites: [
       {
-        title: SocialMedia.YouTube,
+        title: 'YouTube',
         url: 'https://www.youtube.com/channel/UCRQoWfwbu1dDf0XujaNQ-9A',
       },
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/renamatui27/',
       },
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/renampme',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://matsuirena.club/',
       },
     ],
@@ -1233,15 +1232,15 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '大分県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/seira_hatanaka/',
       },
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/seira_hatanaka',
       },
       {
-        title: SocialMedia.YouTube,
+        title: 'YouTube',
         url: 'https://www.youtube.com/channel/UCC4iZzCZMJBVxghrzwvMp8w',
       },
     ],
@@ -1258,7 +1257,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '宮城県',
     sites: [
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/rina_yamat0',
       },
     ],
@@ -1275,19 +1274,19 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '岐阜県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/12neneito12/',
       },
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/nene_ito1212',
       },
       {
-        title: SocialMedia.YouTube,
+        title: 'YouTube',
         url: 'https://www.youtube.com/channel/UCgj7DMxLEz72XMtaDNQFRTw',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.watanabepro.co.jp/mypage/61000049/',
       },
     ],
@@ -1321,15 +1320,15 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '千葉県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/seira_miyazawa/',
       },
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/seira_miyazawa/',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'http://www.incent.jp/idea/model/miyazawa/index.html',
       },
       {
@@ -1350,7 +1349,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '神奈川県',
     sites: [
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/y_k812/',
       },
     ],
@@ -1378,11 +1377,11 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '埼玉県',
     sites: [
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/scarf_iwase/',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://ketsuban.com/',
       },
     ],

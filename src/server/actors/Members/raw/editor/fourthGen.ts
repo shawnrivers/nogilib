@@ -1,4 +1,3 @@
-import { SocialMedia } from 'server/actors/Members/constants/socialMedia';
 import { MemberRaw } from 'server/actors/Members/models';
 import { createMemberRaw } from 'server/actors/Members/raw/creator';
 
@@ -14,11 +13,11 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '愛知県',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/sakura.endou/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/endousakura.php',
       },
     ],
@@ -34,11 +33,11 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '栃木県',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/haruka.kaki/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/kakiharuka.php',
       },
     ],
@@ -61,11 +60,11 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '岡山県',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/sayaka.kakehashi/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/kakehashisayaka.php',
       },
     ],
@@ -81,11 +80,11 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '北海道',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/saya.kanagawa/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/kanagawasaya.php',
       },
     ],
@@ -101,11 +100,11 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: 'California, US',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/yuri.kitagawa/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/kitagawayuri.php',
       },
     ],
@@ -121,11 +120,11 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '千葉県',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/yuna.shibata/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/shibatayuna.php',
       },
     ],
@@ -141,11 +140,11 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '埼玉県',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/rei.seimiya/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/seimiyarei.php',
       },
     ],
@@ -161,11 +160,11 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '埼玉県',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/mayu.tamura/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/tamuramayu.php',
       },
     ],
@@ -181,11 +180,11 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '愛知県',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/ayame.tsutsui/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/tsutsuiayame.php',
       },
     ],
@@ -201,11 +200,11 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '大阪府',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/seira.hayakawa/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/hayakawaseira.php',
       },
     ],
@@ -221,11 +220,11 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '東京都',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/mio.yakubo/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/yakubomio.php',
       },
     ],
@@ -241,15 +240,15 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '東京都',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/haruka.kuromi/',
       },
       {
-        title: SocialMedia.FourthGenBlog,
+        title: 'Fourth Gen Blog',
         url: 'https://blog.nogizaka46.com/newfourth/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/kuromiharuka.php',
       },
     ],
@@ -265,15 +264,15 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '岩手県',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/rika.satou/',
       },
       {
-        title: SocialMedia.FourthGenBlog,
+        title: 'Fourth Gen Blog',
         url: 'https://blog.nogizaka46.com/newfourth/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/satourika.php',
       },
     ],
@@ -289,15 +288,15 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '神奈川県',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/runa.hayashi/',
       },
       {
-        title: SocialMedia.FourthGenBlog,
+        title: 'Fourth Gen Blog',
         url: 'https://blog.nogizaka46.com/newfourth/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/hayashiruna.php',
       },
     ],
@@ -313,15 +312,15 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '千葉県',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/miyu.matsuo/',
       },
       {
-        title: SocialMedia.FourthGenBlog,
+        title: 'Fourth Gen Blog',
         url: 'https://blog.nogizaka46.com/newfourth/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/mastuomiyu.php',
       },
     ],
@@ -337,15 +336,15 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '京都府',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/nao.yumiki/',
       },
       {
-        title: SocialMedia.FourthGenBlog,
+        title: 'Fourth Gen Blog',
         url: 'https://blog.nogizaka46.com/newfourth/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/yumikinao.php',
       },
     ],

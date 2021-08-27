@@ -1,4 +1,3 @@
-import { SocialMedia } from 'server/actors/Members/constants/socialMedia';
 import { MemberRaw } from 'server/actors/Members/models';
 import { createMemberRaw } from 'server/actors/Members/raw/creator';
 
@@ -14,11 +13,11 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: '沖縄県',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/riria.itou/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/itouriria.php',
       },
     ],
@@ -34,11 +33,11 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: '東京都',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/renka.iwamoto/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/iwamotorenka.php',
       },
     ],
@@ -54,15 +53,15 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: '神奈川県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/ume_minami.official/',
       },
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/minami.umezawa/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/umezawaminami.php',
       },
     ],
@@ -73,7 +72,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/ume1st_minami',
           },
         ],
@@ -92,15 +91,15 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: '鹿児島県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/o.momoko_official/',
       },
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/momoko.oozono/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/oozonomomoko.php',
       },
     ],
@@ -116,11 +115,11 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: '宮城県',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/shiori.kubo/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/kuboshiori.php',
       },
     ],
@@ -143,11 +142,11 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: '東京都',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/tamami.sakaguchi/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/sakaguchitamami.php',
       },
     ],
@@ -163,15 +162,15 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: '愛知県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/Kaede_Sato.official/',
       },
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/kaede.satou/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/satoukaede.php',
       },
     ],
@@ -187,11 +186,11 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: '東京都',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/reno.nakamura/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/nakamurareno.php',
       },
     ],
@@ -207,15 +206,15 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: '東京都',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/hazuki.p3.official/',
       },
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/hazuki.mukai/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/mukaihazuki.php',
       },
     ],
@@ -238,15 +237,15 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: '東京都',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/mizuki.yamashita.official/',
       },
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/mizuki.yamashita/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/yamashitamizuki.php',
       },
     ],
@@ -257,7 +256,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/mizuki1st_paris',
           },
         ],
@@ -283,11 +282,11 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: '大分県',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/ayanochristie.yoshida/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/yoshidaayanochristie.php',
       },
     ],
@@ -303,15 +302,15 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: '福岡県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/yodayuuki_oimo/',
       },
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/yuuki.yoda/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/yodayuuki.php',
       },
     ],
@@ -322,7 +321,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/gentosha_yoda',
           },
         ],
@@ -334,7 +333,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
         type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/yodayuuki_oimo',
           },
         ],

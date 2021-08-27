@@ -1,5 +1,4 @@
 import { Generation, MemberNameKey } from 'server/actors/Members/types';
-import { SocialMedia } from 'server/actors/Members/constants/socialMedia';
 import { MemberResult } from 'server/actors/Members/models';
 import { Site } from 'server/types/commons';
 
@@ -68,16 +67,16 @@ export function sortByGraduation<T extends Pick<MemberResult, 'graduation'>>(
 }
 
 const socialMediaOrder: string[] = [
-  SocialMedia.Instagram,
-  SocialMedia.Twitter,
-  SocialMedia.YouTube,
-  SocialMedia.TikTok,
-  SocialMedia.Blog,
-  SocialMedia.FourthGenBlog,
-  SocialMedia.Official,
-  SocialMedia.OnlineSalon,
-  SocialMedia.Profile,
-  SocialMedia.Weibo,
+  'Instagram',
+  'Twitter',
+  'YouTube',
+  'TikTok',
+  'blog',
+  'Fourth Gen Blog',
+  'official',
+  'online salon',
+  'profile',
+  'Weibo',
 ].reverse();
 
 export function sortBySocialMedia(
