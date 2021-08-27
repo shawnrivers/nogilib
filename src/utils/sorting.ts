@@ -1,4 +1,4 @@
-import { JoinedGenerationType } from 'server/actors/Members/constants/joinedGeneration';
+import { JoinedGenerationType } from 'server/actors/Members/types/joinedGeneration';
 import { MemberNameKey } from 'server/actors/Members/types/memberNameKey';
 import { SocialMedia } from 'server/actors/Members/constants/socialMedia';
 import { MemberResult } from 'server/actors/Members/models';
@@ -27,13 +27,11 @@ export function sortByDate<T>(
  * For the items that do not exist in the array,
  * they should have the lowest order.
  */
-const joinOrder: JoinedGenerationType[] = [
-  JoinedGenerationType.First,
-  JoinedGenerationType.Second,
-  JoinedGenerationType.Third,
-  JoinedGenerationType.Fourth,
-  JoinedGenerationType.Exchange,
-].reverse();
+const joinOrder: JoinedGenerationType[] = (
+  ['first', 'second', 'third', 'fourth', 'exchange'] as const
+)
+  .slice()
+  .reverse();
 
 export function sortByJoin<T extends Pick<MemberResult, 'join'>>(
   array: readonly T[],

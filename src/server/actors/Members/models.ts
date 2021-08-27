@@ -1,6 +1,6 @@
 import { BloodType } from 'server/actors/Members/types/bloodType';
 import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
-import { JoinedGenerationType } from 'server/actors/Members/constants/joinedGeneration';
+import { JoinedGenerationType } from 'server/actors/Members/types/joinedGeneration';
 import { MemberNameKey } from 'server/actors/Members/types/memberNameKey';
 import { PhotoAlbumType } from 'server/actors/Members/constants/photoAlbum';
 import { PositionType } from 'server/actors/Members/constants/position';
