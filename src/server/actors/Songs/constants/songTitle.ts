@@ -3,7 +3,13 @@ import { ArrayElement } from 'types/common';
 
 const SongsTitleKeyArray = (
   [
-    { title: '君に叱られた', key: 'Kiminishikarareta' },
+    { title: '他人のそら似', key: 'taninnosorane' },
+    { title: '泥だらけ', key: 'dorodarake' },
+    { title: '私の色', key: 'watashinoiro' },
+    { title: 'もしも心が透明なら', key: 'moshimokokorogatoumeinara' },
+    { title: 'マシンガンレイン', key: 'machinegunrain' },
+    { title: 'やさしいだけなら', key: 'yasashidakenara' },
+    { title: '君に叱られた', key: 'kiminishikarareta' },
     { title: 'さ～ゆ～Ready？', key: 'sayuready' },
     { title: 'ざんぶざざぶん', key: 'zanbuzazabun' },
     {

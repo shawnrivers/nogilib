@@ -3443,6 +3443,38 @@
           "lg": "/images/artworks/artwork_no_image@3x.jpg"
         },
         "type": "A"
+      },
+      {
+        "url": {
+          "sm": "/images/artworks/artwork_no_image@1x.jpg",
+          "md": "/images/artworks/artwork_no_image@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image@3x.jpg"
+        },
+        "type": "B"
+      },
+      {
+        "url": {
+          "sm": "/images/artworks/artwork_no_image@1x.jpg",
+          "md": "/images/artworks/artwork_no_image@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image@3x.jpg"
+        },
+        "type": "C"
+      },
+      {
+        "url": {
+          "sm": "/images/artworks/artwork_no_image@1x.jpg",
+          "md": "/images/artworks/artwork_no_image@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image@3x.jpg"
+        },
+        "type": "D"
+      },
+      {
+        "url": {
+          "sm": "/images/artworks/artwork_no_image@1x.jpg",
+          "md": "/images/artworks/artwork_no_image@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image@3x.jpg"
+        },
+        "type": "T"
       }
     ],
     "release": "2021-09-22",
@@ -3452,7 +3484,63 @@
         "title": "君に叱られた",
         "type": "title",
         "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ]
+      },
+      {
+        "key": "yasashidakenara",
+        "title": "やさしいだけなら",
+        "type": "unit",
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ]
+      },
+      {
+        "key": "machinegunrain",
+        "title": "マシンガンレイン",
+        "type": "under",
+        "inCdType": [
           "A"
+        ]
+      },
+      {
+        "key": "moshimokokorogatoumeinara",
+        "title": "もしも心が透明なら",
+        "type": "unit",
+        "inCdType": [
+          "B"
+        ]
+      },
+      {
+        "key": "watashinoiro",
+        "title": "私の色",
+        "type": "solo",
+        "inCdType": [
+          "C"
+        ]
+      },
+      {
+        "key": "dorodarake",
+        "title": "泥だらけ",
+        "type": "unit",
+        "inCdType": [
+          "D"
+        ]
+      },
+      {
+        "key": "taninnosorane",
+        "title": "他人のそら似",
+        "type": "none",
+        "inCdType": [
+          "D"
         ]
       }
     ],

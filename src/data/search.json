@@ -4220,6 +4220,114 @@
         }
       },
       {
+        "id": "song-yasashidakenara",
+        "field": "やさしいだけなら yasashidakenara",
+        "searchType": "songs",
+        "key": "yasashidakenara",
+        "title": "やさしいだけなら",
+        "songType": "unit",
+        "single": {
+          "title": "君に叱られた",
+          "number": "28"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/artwork_no_image@1x.jpg",
+          "md": "/images/artworks/artwork_no_image@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image@3x.jpg"
+        }
+      },
+      {
+        "id": "song-machinegunrain",
+        "field": "マシンガンレイン machinegunrain",
+        "searchType": "songs",
+        "key": "machinegunrain",
+        "title": "マシンガンレイン",
+        "songType": "under",
+        "single": {
+          "title": "君に叱られた",
+          "number": "28"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/artwork_no_image@1x.jpg",
+          "md": "/images/artworks/artwork_no_image@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image@3x.jpg"
+        }
+      },
+      {
+        "id": "song-moshimokokorogatoumeinara",
+        "field": "もしも心が透明なら moshimokokorogatoumeinara",
+        "searchType": "songs",
+        "key": "moshimokokorogatoumeinara",
+        "title": "もしも心が透明なら",
+        "songType": "unit",
+        "single": {
+          "title": "君に叱られた",
+          "number": "28"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/artwork_no_image@1x.jpg",
+          "md": "/images/artworks/artwork_no_image@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image@3x.jpg"
+        }
+      },
+      {
+        "id": "song-watashinoiro",
+        "field": "私の色 watashinoiro",
+        "searchType": "songs",
+        "key": "watashinoiro",
+        "title": "私の色",
+        "songType": "solo",
+        "single": {
+          "title": "君に叱られた",
+          "number": "28"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/artwork_no_image@1x.jpg",
+          "md": "/images/artworks/artwork_no_image@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image@3x.jpg"
+        }
+      },
+      {
+        "id": "song-dorodarake",
+        "field": "泥だらけ dorodarake",
+        "searchType": "songs",
+        "key": "dorodarake",
+        "title": "泥だらけ",
+        "songType": "unit",
+        "single": {
+          "title": "君に叱られた",
+          "number": "28"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/artwork_no_image@1x.jpg",
+          "md": "/images/artworks/artwork_no_image@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image@3x.jpg"
+        }
+      },
+      {
+        "id": "song-taninnosorane",
+        "field": "他人のそら似 taninnosorane",
+        "searchType": "songs",
+        "key": "taninnosorane",
+        "title": "他人のそら似",
+        "songType": "none",
+        "single": {
+          "title": "君に叱られた",
+          "number": "28"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/artwork_no_image@1x.jpg",
+          "md": "/images/artworks/artwork_no_image@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image@3x.jpg"
+        }
+      },
+      {
         "id": "song-darekahamikata",
         "field": "誰かは味方 darekahamikata",
         "searchType": "songs",
