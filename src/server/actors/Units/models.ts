@@ -1,5 +1,5 @@
 import { MemberNameKey } from 'server/actors/Members/types';
-import { UnitType } from 'server/actors/Units/constants/unitType';
+import { UnitType } from 'server/actors/Units/types';
 import { UnitName } from 'server/actors/Units/constants/unitName';
 
 export type UnitRaw = {

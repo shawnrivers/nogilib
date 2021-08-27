@@ -6,7 +6,7 @@ import {
   GlowStickColor,
   MemberNameKey,
 } from 'server/actors/Members/types';
-import { UnitType } from 'server/actors/Units/constants/unitType';
+import { UnitType } from 'server/actors/Units/types';
 import { ImageUrl, Site } from 'server/types/commons';
 
 export type MemberRaw = {

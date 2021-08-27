@@ -1,7 +1,7 @@
 import { ArrayElement } from 'types/common';
 import { arrayToObject } from 'utils/array';
 
-export const unitNameKeyArray = (
+const unitNameKeyArray = (
   [
     {
       name: 'WHITE HIGH',
