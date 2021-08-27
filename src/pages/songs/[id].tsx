@@ -72,7 +72,7 @@ const PerformersTag: React.FC<SongPageProps['performersTag']> = props => {
   }
 
   if (name.includes('generation')) {
-    return <Hashtag>{getTranslation(name as any)}</Hashtag>;
+    return <Hashtag text={getTranslation(name as any)} />;
   }
 
   if (name === 'selected' || name === 'under') {
@@ -86,11 +86,11 @@ const PerformersTag: React.FC<SongPageProps['performersTag']> = props => {
         getTranslation('members'),
       ];
 
-      return <Hashtag>{formatWords(words)}</Hashtag>;
+      return <Hashtag text={formatWords(words)} />;
     }
   }
 
-  return <Hashtag lang="ja">{name}</Hashtag>;
+  return <Hashtag lang="ja" text={name} />;
 };
 
 export const SongPage: React.FC<SongPageProps> = props => {
@@ -152,11 +152,9 @@ export const SongPage: React.FC<SongPageProps> = props => {
               }
             `}
           >
-            <Hashtag>
-              <Translation text={type as any} />
-            </Hashtag>
+            <Hashtag text={getTranslation(type)} />
             {songTags.map(tag => (
-              <Hashtag key={tag}>{tag}</Hashtag>
+              <Hashtag key={tag} text={tag} />
             ))}
           </div>
           <section>

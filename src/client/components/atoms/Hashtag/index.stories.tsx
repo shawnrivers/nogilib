@@ -15,5 +15,5 @@ const Template: Story<HashtagProps> = props => {
 export const Default = Template.bind({});
 
 Default.args = {
-  children: 'Hashtag',
+  text: 'Hashtag',
 };
