@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const EIGHTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: '気づいたら片想い',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Akira Sunset'],
@@ -41,7 +40,7 @@ export const EIGHTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '生まれたままで',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['田中俊亮'],
@@ -77,7 +76,7 @@ export const EIGHTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'ロマンスのスタート',
-    type: SongType.Selected,
+    type: 'selected',
     creators: {
       lyrics: ['秋元康'],
       compose: ['押田誠'],
@@ -112,7 +111,7 @@ export const EIGHTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '吐息のメソッド',
-    type: SongType.Selected,
+    type: 'selected',
     creators: {
       lyrics: ['秋元康'],
       compose: ['田中明仁'],
@@ -145,7 +144,7 @@ export const EIGHTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '孤独兄弟',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Soulife'],
@@ -159,7 +158,7 @@ export const EIGHTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'ダンケシェーン',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Akira Sunset', 'C#'],

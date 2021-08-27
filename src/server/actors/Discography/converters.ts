@@ -1,6 +1,5 @@
 import { SONGS } from 'server/actors/Songs/constants/songTitle';
 import { SongsRawObject } from 'server/actors/Songs/models';
-import { SongType } from 'server/actors/Songs/constants/songType';
 import {
   DiscographyRaw,
   DiscographyResult,
@@ -18,11 +17,11 @@ export const convertCdSongType: ConvertCdSongType = ({
   songsRawObject,
 }) => {
   if (cdSongTitle === 'OVERTURE') {
-    return SongType.Coupling;
+    return 'coupling';
   }
 
-  if (songsRawObject[cdSongTitle].type.includes(SongType.Selected)) {
-    return SongType.Coupling;
+  if (songsRawObject[cdSongTitle].type.includes('selected')) {
+    return 'coupling';
   }
 
   return songsRawObject[cdSongTitle].type;
@@ -46,15 +45,15 @@ export const convertCdSongFocusPerformers: ConvertCdSongFocusPerformers = ({
 
   if (cdSongTitle !== 'OVERTURE') {
     if (
-      song.type === SongType.Title ||
-      song.type === SongType.Under ||
-      song.type === SongType.Coupling ||
-      song.type === SongType.Selected ||
-      song.type === SongType.Lead ||
-      song.type === SongType.FirstGeneration ||
-      song.type === SongType.SecondGeneration ||
-      song.type === SongType.ThirdGeneration ||
-      song.type === SongType.FourthGeneration
+      song.type === 'title' ||
+      song.type === 'under' ||
+      song.type === 'coupling' ||
+      song.type === 'selected' ||
+      song.type === 'lead' ||
+      song.type === 'first generation' ||
+      song.type === 'second generation' ||
+      song.type === 'third generation' ||
+      song.type === 'fourth generation'
     ) {
       if (song.performers.center !== null) {
         focusPerformersResult = {
@@ -67,12 +66,12 @@ export const convertCdSongFocusPerformers: ConvertCdSongFocusPerformers = ({
           members: [],
         };
       }
-    } else if (song.type === SongType.Solo) {
+    } else if (song.type === 'solo') {
       focusPerformersResult = {
         type: 'solo',
         members: song.formations.firstRow,
       };
-    } else if (song.type === SongType.Unit) {
+    } else if (song.type === 'unit') {
       if (song.performers.unit !== '') {
         focusPerformersResult = {
           type: 'unit',
@@ -94,7 +93,7 @@ export const convertCdSongFocusPerformers: ConvertCdSongFocusPerformers = ({
           ],
         };
       }
-    } else if (song.type === SongType.None) {
+    } else if (song.type === 'none') {
       if (song.performers.center.length > 0) {
         focusPerformersResult = {
           type: '',

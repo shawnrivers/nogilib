@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const SIXTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: 'ガールズルール',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['後藤康二'],
@@ -37,7 +36,7 @@ export const SIXTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '扇風機',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['角野寿和'],
@@ -61,7 +60,7 @@ export const SIXTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '世界で一番 孤独なLover',
-    type: SongType.Selected,
+    type: 'selected',
     creators: {
       lyrics: ['秋元康'],
       compose: ['河原嶺旭'],
@@ -92,7 +91,7 @@ export const SIXTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'コウモリよ',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['南田健吾'],
@@ -109,7 +108,7 @@ export const SIXTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '他の星から',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Sugaya Bros.', '松村PONY'],
@@ -131,7 +130,7 @@ export const SIXTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '人間という楽器',
-    type: SongType.FirstGeneration,
+    type: 'first generation',
     creators: {
       lyrics: ['秋元康'],
       compose: ['鐘撞行孝'],

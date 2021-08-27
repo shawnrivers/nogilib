@@ -1,11 +1,10 @@
-import { SongType } from 'server/actors/Songs/constants/songType';
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 
 export const TWENTY_SEVENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: 'ごめんねFingers crossed',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['杉山勝彦', 'APAZZI'],
@@ -44,7 +43,7 @@ export const TWENTY_SEVENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '全部　夢のまま',
-    type: SongType.Coupling,
+    type: 'coupling',
     creators: {
       lyrics: ['秋元康'],
       compose: ['you-me'],
@@ -81,7 +80,7 @@ export const TWENTY_SEVENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '大人たちには指示されない',
-    type: SongType.ThirdGeneration,
+    type: 'third generation',
     creators: {
       lyrics: ['秋元康'],
       compose: ['BASEMINT'],
@@ -106,7 +105,7 @@ export const TWENTY_SEVENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'ざんぶざざぶん',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['NOVECHIKA', 'TETTA'],
@@ -118,7 +117,7 @@ export const TWENTY_SEVENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'さ～ゆ～Ready？',
-    type: SongType.Solo,
+    type: 'solo',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Masayoshi Kawabata'],
@@ -128,7 +127,7 @@ export const TWENTY_SEVENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '錆びたコンパス',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['中村泰輔'],
@@ -155,7 +154,7 @@ export const TWENTY_SEVENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '猫舌カモミールティー',
-    type: SongType.FourthGeneration,
+    type: 'fourth generation',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Shinobu Suzuki'],

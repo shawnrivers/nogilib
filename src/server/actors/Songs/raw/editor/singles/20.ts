@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: 'シンクロニシティ',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['シライシ紗トリ'],
@@ -46,7 +45,7 @@ export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '新しい世界',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['古川貴浩'],
@@ -86,7 +85,7 @@ export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'Against',
-    type: SongType.FirstGeneration,
+    type: 'first generation',
     creators: {
       lyrics: ['秋元康'],
       compose: ['古川貴浩'],
@@ -125,7 +124,7 @@ export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '雲になればいい',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['丸谷マナブ'],
@@ -138,7 +137,7 @@ export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'スカウトマン',
-    type: SongType.SecondGeneration,
+    type: 'second generation',
     creators: {
       lyrics: ['秋元康'],
       compose: ['SaSA'],
@@ -160,7 +159,7 @@ export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'トキトキメキメキ',
-    type: SongType.ThirdGeneration,
+    type: 'third generation',
     creators: {
       lyrics: ['秋元康'],
       compose: ['中山聡', '足立優'],
@@ -187,7 +186,7 @@ export const TWENTIETH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '言霊砲',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Ryota Saito', 'TomoLow'],

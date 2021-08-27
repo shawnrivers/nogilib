@@ -1,6 +1,5 @@
 import { SongResult, SongRaw } from 'server/actors/Songs/models';
 import { NO_ARTWORK_IMAGE_SRC } from 'server/constants/paths';
-import { SongType } from 'server/actors/Songs/constants/songType';
 import {
   DiscographyRawArray,
   DiscographyRawObject,
@@ -179,7 +178,7 @@ export const convertSongArtwork: ConvertSongArtwork = ({
 };
 
 export const convertSongType = (type: SongRaw['type']): SongResult['type'] =>
-  type.includes(SongType.Selected) ? SongType.Coupling : type;
+  type.includes('selected') ? 'coupling' : type;
 
 export const convertSongPerformersTag = (params: {
   songType: SongRaw['type'];
@@ -241,29 +240,25 @@ export const convertSongPerformersTag = (params: {
     };
   }
 
-  if (songType === SongType.Unit) {
+  if (songType === 'unit') {
     return { name: songPerformers.unit, album };
   }
-  if (songType === SongType.FirstGeneration) {
+  if (songType === 'first generation') {
     return { name: 'first generation', album };
   }
-  if (songType === SongType.SecondGeneration) {
+  if (songType === 'second generation') {
     return { name: 'second generation', album };
   }
-  if (songType === SongType.ThirdGeneration) {
+  if (songType === 'third generation') {
     return { name: 'third generation', album };
   }
-  if (songType === SongType.FourthGeneration) {
+  if (songType === 'fourth generation') {
     return { name: 'fourth generation', album };
   }
-  if (
-    songType === SongType.Title ||
-    songType === SongType.Selected ||
-    songType === SongType.Lead
-  ) {
+  if (songType === 'title' || songType === 'selected' || songType === 'lead') {
     return { name: 'selected', album };
   }
-  if (songType === SongType.Under) {
+  if (songType === 'under') {
     return { name: 'under', album };
   }
 

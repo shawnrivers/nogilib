@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: '帰り道は遠回りしたくなる',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['渡邉俊彦'],
@@ -46,7 +45,7 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '日常',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Akira Sunset', '野口大志'],
@@ -83,7 +82,7 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'キャラバンは眠らない',
-    type: SongType.Coupling,
+    type: 'coupling',
     creators: {
       lyrics: ['秋元康'],
       compose: ['CottON'],
@@ -118,7 +117,7 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'つづく',
-    type: SongType.Solo,
+    type: 'solo',
     creators: {
       lyrics: ['秋元康'],
       compose: ['若田部誠'],
@@ -129,7 +128,7 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '告白の順番',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['安部純'],
@@ -148,7 +147,7 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'ショパンの嘘つき',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['山本加津彦'],
@@ -160,7 +159,7 @@ export const TWENTY_SECOND_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '知りたいこと',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['佐々木裕'],

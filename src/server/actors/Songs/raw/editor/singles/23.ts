@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: 'Sing Out!',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Ryota Saito', 'TETTA'],
@@ -47,7 +46,7 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '滑走路',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['CHOCOLATE MIX'],
@@ -74,7 +73,7 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'のような存在',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Akira Sunset', 'APAZZI'],
@@ -87,7 +86,7 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'Am I Loving?',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['山田智和'],
@@ -106,7 +105,7 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '平行線',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['近藤圭一'],
@@ -125,7 +124,7 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '4番目の光',
-    type: SongType.FourthGeneration,
+    type: 'fourth generation',
     creators: {
       lyrics: ['秋元康'],
       compose: ['杉山勝彦'],
@@ -153,7 +152,7 @@ export const TWENTY_THIRD_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '曖昧',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['doubleglass'],

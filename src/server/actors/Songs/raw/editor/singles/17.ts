@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: 'インフルエンサー',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['すみだしんや'],
@@ -46,7 +45,7 @@ export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '風船は生きている',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['泉佳伸', '三好翔太'],
@@ -68,7 +67,7 @@ export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '人生を考えたくなる',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['片桐周太郎'],
@@ -86,7 +85,7 @@ export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '意外BREAK',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['すみだしんや'],
@@ -105,7 +104,7 @@ export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'Another Ghost',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['前迫潤哉', 'Yasutaka.Ishio'],
@@ -119,7 +118,7 @@ export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '三番目の風',
-    type: SongType.ThirdGeneration,
+    type: 'third generation',
     creators: {
       lyrics: ['秋元康'],
       compose: ['丸谷マナブ'],
@@ -141,7 +140,7 @@ export const SEVENTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '当たり障りのない話',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['小網準'],

@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const TENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: '何度目の青空か?',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['川浦正大'],
@@ -41,7 +40,7 @@ export const TENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'あの日 僕は咄嗟に嘘をついた',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['三輪智也'],
@@ -73,7 +72,7 @@ export const TENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '遠回りの愛情',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Noda Akiko'],
@@ -95,7 +94,7 @@ export const TENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '転がった鐘を鳴らせ!',
-    type: SongType.Selected,
+    type: 'selected',
     creators: {
       lyrics: ['秋元康'],
       compose: ['中山英二'],
@@ -126,7 +125,7 @@ export const TENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '私、起きる。',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Akira Sunset', 'ZERO'],
@@ -151,7 +150,7 @@ export const TENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'Tender days',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['SoichiroK', 'Nozomu.S'],

@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const SEVENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: 'バレッタ',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['サイトウヨシヒロ'],
@@ -37,7 +36,7 @@ export const SEVENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '初恋の人を今でも',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['古川貴浩'],
@@ -65,7 +64,7 @@ export const SEVENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '月の大きさ',
-    type: SongType.Selected,
+    type: 'selected',
     creators: {
       lyrics: ['秋元康'],
       compose: ['古川貴浩'],
@@ -96,7 +95,7 @@ export const SEVENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '私のために 誰かのために',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['杉山勝彦'],
@@ -115,7 +114,7 @@ export const SEVENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'そんなバカな…',
-    type: SongType.Selected,
+    type: 'selected',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Akira Sunset'],
@@ -152,7 +151,7 @@ export const SEVENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'やさしさとは',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['古川貴浩'],

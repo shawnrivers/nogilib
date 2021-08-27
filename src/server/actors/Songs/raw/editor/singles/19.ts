@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: 'いつかできるから今日できる',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Akira Sunset', '京田誠一'],
@@ -39,7 +38,7 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'My rule',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['藤田卓也'],
@@ -63,7 +62,7 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '不眠症',
-    type: SongType.Coupling,
+    type: 'coupling',
     creators: {
       lyrics: ['秋元康'],
       compose: ['大貫和紀', '河原レオ', '高木龍一'],
@@ -97,7 +96,7 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'まあいいか?',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['HRK'],
@@ -110,7 +109,7 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '失恋お掃除人',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['さいとうくにあき', 'Akira Sunset', '京田誠一'],
@@ -129,7 +128,7 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '僕の衝動',
-    type: SongType.ThirdGeneration,
+    type: 'third generation',
     creators: {
       lyrics: ['秋元康'],
       compose: ['石井伸昂'],
@@ -156,7 +155,7 @@ export const NINETEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '新しい花粉 〜ミュージカル「見知らぬ世界」より〜',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['新田目翔'],

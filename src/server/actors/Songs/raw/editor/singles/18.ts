@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: '逃げ水',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['谷村庸平'],
@@ -43,7 +42,7 @@ export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'アンダー',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['白土亨'],
@@ -80,7 +79,7 @@ export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '女は一人じゃ眠れない',
-    type: SongType.Selected,
+    type: 'selected',
     creators: {
       lyrics: ['秋元康'],
       compose: ['小形誠'],
@@ -117,7 +116,7 @@ export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'ひと夏の長さより…',
-    type: SongType.Selected,
+    type: 'selected',
     creators: {
       lyrics: ['秋元康'],
       compose: ['aokado'],
@@ -149,7 +148,7 @@ export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'ライブ神',
-    type: SongType.SecondGeneration,
+    type: 'second generation',
     creators: {
       lyrics: ['秋元康'],
       compose: ['SaSA'],
@@ -171,7 +170,7 @@ export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
 
   createSongRaw({
     title: '未来の答え',
-    type: SongType.ThirdGeneration,
+    type: 'third generation',
     creators: {
       lyrics: ['秋元康'],
       compose: ['板垣祐介'],
@@ -198,7 +197,7 @@ export const EIGHTEENTH_SINGLE_SONGS: SongRaw[] = [
 
   createSongRaw({
     title: '泣いたっていいじゃないか?',
-    type: SongType.Selected,
+    type: 'selected',
     creators: {
       lyrics: ['秋元康'],
       compose: ['K-WONDER', 'SAS3'],

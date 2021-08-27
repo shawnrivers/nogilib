@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const THIRD_ALBUM_SONGS: SongRaw[] = [
   createSongRaw({
     title: 'スカイダイビング',
-    type: SongType.Selected,
+    type: 'selected',
     creators: {
       lyrics: ['秋元康'],
       compose: ['菅井達司'],
@@ -39,7 +38,7 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '君が扇いでくれた',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['中山聡', '足立優'],
@@ -65,7 +64,7 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '思い出ファースト',
-    type: SongType.ThirdGeneration,
+    type: 'third generation',
     creators: {
       lyrics: ['秋元康'],
       compose: ['ミサマサカリヲ'],
@@ -86,7 +85,7 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '設定温度',
-    type: SongType.Selected,
+    type: 'selected',
     creators: {
       lyrics: ['秋元康'],
       compose: ['石井亮輔'],
@@ -148,7 +147,7 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'Rewindあの日',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['藤木テツ'],
@@ -160,7 +159,7 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'ごめんね、スムージー',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['YASUSHI WATANABE'],
@@ -172,7 +171,7 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '醜い私',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['外山大輔'],
@@ -184,7 +183,7 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '硬い殻のように抱きしめたい',
-    type: SongType.Solo,
+    type: 'solo',
     creators: {
       lyrics: ['秋元康'],
       compose: ['杉山勝彦'],
@@ -194,7 +193,7 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '満月が消えた',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['SaSA'],
@@ -206,7 +205,7 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'ワタボコリ',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['ハサミマン'],
@@ -218,7 +217,7 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '流星ディスコティック',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Masayoshi Kawabata'],
@@ -230,7 +229,7 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '忘却と美学',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['早川博隆'],

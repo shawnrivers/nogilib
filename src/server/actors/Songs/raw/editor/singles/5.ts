@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const FIFTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: '君の名は希望',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['杉山勝彦'],
@@ -37,7 +36,7 @@ export const FIFTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '13日の金曜日',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['網本ナオノブ'],
@@ -64,7 +63,7 @@ export const FIFTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'シャキイズム',
-    type: SongType.Selected,
+    type: 'selected',
     creators: {
       lyrics: ['秋元康'],
       compose: ['岡本健介'],
@@ -95,7 +94,7 @@ export const FIFTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'ロマンティックいか焼き',
-    type: SongType.Selected,
+    type: 'selected',
     creators: {
       lyrics: ['秋元康'],
       compose: ['横健介'],
@@ -124,7 +123,7 @@ export const FIFTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'でこぴん',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['中土智博'],
@@ -143,7 +142,7 @@ export const FIFTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'サイコキネシスの可能性',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['中土智博'],

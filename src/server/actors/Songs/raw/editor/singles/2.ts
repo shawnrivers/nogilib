@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const SECOND_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: 'おいでシャンプー',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['小田切大'],
@@ -37,7 +36,7 @@ export const SECOND_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '狼に口笛を',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Akira Sunset'],
@@ -71,7 +70,7 @@ export const SECOND_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '心の薬',
-    type: SongType.Coupling,
+    type: 'coupling',
     creators: {
       lyrics: ['秋元康'],
       compose: ['MIKOTO'],
@@ -105,7 +104,7 @@ export const SECOND_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '偶然を言い訳にして',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['坂部大介'],
@@ -123,7 +122,7 @@ export const SECOND_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '水玉模様',
-    type: SongType.Solo,
+    type: 'solo',
     creators: {
       lyrics: ['秋元康'],
       compose: ['若田部誠'],
@@ -134,7 +133,7 @@ export const SECOND_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'ハウス!',
-    type: SongType.Coupling,
+    type: 'coupling',
     creators: {
       lyrics: ['秋元康'],
       compose: ['y@suo ohtani'],

@@ -1,5 +1,4 @@
 import { SongRaw } from 'server/actors/Songs/models';
-import { SongType } from 'server/actors/Songs/constants/songType';
 import { MemberNameKey } from 'server/actors/Members/types';
 
 type SongRawCreatorCreators = {
@@ -22,7 +21,7 @@ type SongRawCreatorParams = {
   musicVideo?: SongRaw['musicVideo'];
 } & (
   | {
-      type: SongType.Title;
+      type: 'title';
       center: SongRaw['performers']['center'];
       fukujin:
         | Exclude<SongRaw['performers']['fukujin']['type'], 'irregular' | null>
@@ -31,20 +30,17 @@ type SongRawCreatorParams = {
       performersType?: { name?: 'selected'; single: string };
     }
   | {
-      type: SongType.Unit;
+      type: 'unit';
       center?: SongRaw['performers']['center'];
       unit?: SongRaw['performers']['unit'];
       formations?: SongRawCreatorFormation;
     }
   | {
-      type: SongType.Solo;
+      type: 'solo';
       solo: MemberNameKey;
     }
   | {
-      type: Exclude<
-        SongRaw['type'],
-        SongType.Title | SongType.Unit | SongType.Solo
-      >;
+      type: Exclude<SongRaw['type'], 'title' | 'unit' | 'solo'>;
       center?: SongRaw['performers']['center'];
       formations?: SongRawCreatorFormation;
       performersType?:
@@ -63,7 +59,7 @@ export const createSongRaw = (params: SongRawCreatorParams): SongRaw => {
   };
 
   switch (params.type) {
-    case SongType.Title:
+    case 'title':
       switch (params.fukujin) {
         case 'row-1':
           fukujin = {
@@ -115,7 +111,7 @@ export const createSongRaw = (params: SongRawCreatorParams): SongRaw => {
         },
       };
 
-    case SongType.Unit:
+    case 'unit':
       return {
         title: params.title,
         type: params.type,
@@ -141,7 +137,7 @@ export const createSongRaw = (params: SongRawCreatorParams): SongRaw => {
         },
       };
 
-    case SongType.Solo:
+    case 'solo':
       return {
         title: params.title,
         type: params.type,

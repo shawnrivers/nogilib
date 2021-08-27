@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const ELEVENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: '命は美しい',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Hiroki Sagawa'],
@@ -43,7 +42,7 @@ export const ELEVENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '君は僕と会わない方がよかったのかな',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Akira Sunset', 'ha-j'],
@@ -67,7 +66,7 @@ export const ELEVENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'あらかじめ語られるロマンス',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['SoichiroK', 'Nozomu.S'],
@@ -88,7 +87,7 @@ export const ELEVENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '立ち直り中',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['福田貴史'],
@@ -110,7 +109,7 @@ export const ELEVENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'ごめんね ずっと…',
-    type: SongType.Solo,
+    type: 'solo',
     creators: {
       lyrics: ['秋元康'],
       compose: ['山田智和'],
@@ -121,7 +120,7 @@ export const ELEVENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'ボーダー',
-    type: SongType.SecondGeneration,
+    type: 'second generation',
     creators: {
       lyrics: ['秋元康'],
       compose: ['中土智博'],

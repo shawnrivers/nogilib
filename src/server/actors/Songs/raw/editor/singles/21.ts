@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const TWENTY_FIRST_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: 'ジコチューで行こう!',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['ナスカ'],
@@ -46,7 +45,7 @@ export const TWENTY_FIRST_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '三角の空き地',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Hiroki'],
@@ -79,7 +78,7 @@ export const TWENTY_FIRST_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '空扉',
-    type: SongType.Selected,
+    type: 'selected',
     creators: {
       lyrics: ['秋元康'],
       compose: ['FURUTA', 'Dr.Lilcom'],
@@ -115,7 +114,7 @@ export const TWENTY_FIRST_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '自分じゃない感じ',
-    type: SongType.ThirdGeneration,
+    type: 'third generation',
     creators: {
       lyrics: ['秋元康'],
       compose: ['ツキダタダシ'],
@@ -140,7 +139,7 @@ export const TWENTY_FIRST_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '心のモノローグ',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['シライシ紗トリ'],
@@ -153,7 +152,7 @@ export const TWENTY_FIRST_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '地球が丸いなら',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['山下孝之'],
@@ -166,7 +165,7 @@ export const TWENTY_FIRST_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'あんなに好きだったのに...',
-    type: SongType.Selected,
+    type: 'selected',
     creators: {
       lyrics: ['秋元康'],
       compose: ['木下めろん'],

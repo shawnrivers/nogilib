@@ -1,12 +1,10 @@
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 import { SongRaw } from 'server/actors/Songs/models';
 
-import { SongType } from 'server/actors/Songs/constants/songType';
-
 export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: '僕は僕を好きになる',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['杉山勝彦'],
@@ -45,7 +43,7 @@ export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '冷たい水の中',
-    type: SongType.Solo,
+    type: 'solo',
     creators: {
       lyrics: ['秋元康'],
       compose: ['山口寛雄'],
@@ -56,7 +54,7 @@ export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'Out of the blue',
-    type: SongType.FourthGeneration,
+    type: 'fourth generation',
     creators: {
       lyrics: ['秋元康'],
       compose: ['youth case'],
@@ -87,7 +85,7 @@ export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '口ほどにもないKISS',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['中村泰輔'],
@@ -116,7 +114,7 @@ export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '明日がある理由',
-    type: SongType.Coupling,
+    type: 'coupling',
     creators: {
       lyrics: ['秋元康'],
       compose: ['YU-JIN'],
@@ -148,7 +146,7 @@ export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'Wilderness world',
-    type: SongType.Coupling,
+    type: 'coupling',
     creators: {
       lyrics: ['秋元康'],
       compose: ['youth case'],
@@ -186,7 +184,7 @@ export const TWENTY_SIXTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '友情ピアス',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['カワノミチオ'],

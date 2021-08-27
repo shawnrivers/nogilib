@@ -1,11 +1,10 @@
-import { SongType } from 'server/actors/Songs/constants/songType';
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 
 export const TWENTY_EIGHTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: '君に叱られた',
-    type: SongType.Title,
+    type: 'title',
     center: ['kakiharuka'],
     fukujin: 'row-1-2',
     formations: {

@@ -1,6 +1,5 @@
 import { SongsRawArray } from 'server/actors/Songs/models';
 import { UnitRaw, UnitResult } from 'server/actors/Units/models';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 type ConvertUnitSongs = (params: {
   unitName: UnitRaw['name'];
@@ -14,7 +13,7 @@ export const convertUnitSongs: ConvertUnitSongs = ({
   const unitSongs = [];
 
   for (const song of songsRawArray) {
-    if (song.type === SongType.Unit && song.performers.unit === unitName) {
+    if (song.type === 'unit' && song.performers.unit === unitName) {
       unitSongs.push(song.title);
     }
   }

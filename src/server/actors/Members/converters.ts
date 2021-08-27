@@ -6,7 +6,7 @@ import {
 } from 'server/actors/Members/models';
 import { UnitsRawArray } from 'server/actors/Units/models';
 import { SongsRawObject } from 'server/actors/Songs/models';
-import { SongType } from 'server/actors/Songs/constants/songType';
+
 import {
   DiscographyRawArray,
   DiscographyRaw,
@@ -337,7 +337,7 @@ export const convertMemberPositionsHistory: ConvertMemberPositionsHistory = ({
         const song = songsRawObject[singleSong.title];
 
         // Calculate center, fukujin, selected.
-        if (song.type === SongType.Title) {
+        if (song.type === 'title') {
           // Check order: Center -> Fukujin -> Selected
           if (song.performers.center.includes(memberName)) {
             // Check Center

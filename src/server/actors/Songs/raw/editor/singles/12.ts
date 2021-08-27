@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: '太陽ノック',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['黒須克彦'],
@@ -43,7 +42,7 @@ export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '別れ際、もっと好きになる',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Akira Sunset', 'ha-j'],
@@ -80,7 +79,7 @@ export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'もう少しの夢',
-    type: SongType.Solo,
+    type: 'solo',
     creators: {
       lyrics: ['秋元康'],
       compose: ['丸谷マナブ'],
@@ -90,7 +89,7 @@ export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '魚たちのLOVE SONG',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['渡辺拓也'],
@@ -108,7 +107,7 @@ export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '無表情',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Akira Sunset'],
@@ -122,7 +121,7 @@ export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '羽根の記憶',
-    type: SongType.Selected,
+    type: 'selected',
     creators: {
       lyrics: ['秋元康'],
       compose: ['杉山勝彦'],
@@ -155,7 +154,7 @@ export const TWELFTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '制服を脱いでサヨナラを…',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['古川貴浩'],

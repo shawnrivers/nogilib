@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const FIRST_ALBUM_SONGS: SongRaw[] = [
   createSongRaw({
     title: '誰かは味方',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['宮坂聡彦'],
@@ -17,7 +16,7 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '革命の馬',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['伊勢佳史'],
@@ -36,7 +35,7 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '僕がいる場所',
-    type: SongType.Selected,
+    type: 'selected',
     creators: {
       lyrics: ['秋元康'],
       compose: ['杉山勝彦'],
@@ -66,7 +65,7 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'あなたのために弾きたい',
-    type: SongType.Solo,
+    type: 'solo',
     creators: {
       lyrics: ['秋元康'],
       compose: ['近藤圭一'],
@@ -76,7 +75,7 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '傾斜する',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['須藤哲平', '長谷川湊'],
@@ -107,7 +106,7 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'なぞの落書き',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['片桐周太郎'],
@@ -119,7 +118,7 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '自由の彼方',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['山田智和'],
@@ -157,7 +156,7 @@ export const FIRST_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'ひとりよがり',
-    type: SongType.Solo,
+    type: 'solo',
     creators: {
       lyrics: ['秋元康'],
       compose: ['杉山勝彦'],
