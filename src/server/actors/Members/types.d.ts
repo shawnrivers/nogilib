@@ -8,6 +8,7 @@ export type Position =
   | 'trainee'
   | 'skip'
   | 'none';
+export type PhotoAlbumType = 'photo album' | 'photo book' | 'photo magazine';
 export type MemberNameKey =
   | 'akimotomanatsu'
   | 'ikutaerika'

@@ -1,5 +1,4 @@
 import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
-import { PhotoAlbumType } from 'server/actors/Members/constants/photoAlbum';
 import { SocialMedia } from 'server/actors/Members/constants/socialMedia';
 import { MemberRaw } from 'server/actors/Members/models';
 import { createMemberRaw } from 'server/actors/Members/raw/creator';
@@ -36,7 +35,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '真夏の気圧配置',
         release: '2017-02-28',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -48,7 +47,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'しあわせにしたい',
         release: '2020-04-08',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -90,7 +89,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '転調',
         release: '2016-01-21',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: 'amazon',
@@ -102,7 +101,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'インターミッション',
         release: '2019-01-22',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -144,7 +143,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '君の足跡',
         release: '2016-02-24',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: 'amazon',
@@ -188,7 +187,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '存在',
         release: '2018-12-12',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -231,7 +230,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '彩',
         release: '2012-01-31',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: 'amazon',
@@ -243,7 +242,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '話を聞こうか。',
         release: '2017-04-25',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -255,7 +254,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'Decision',
         release: '2020-01-08',
-        type: PhotoAlbumType.PhotoBook,
+        type: 'photo book',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -303,7 +302,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '川後陽菜 インタビューフォトブック',
         release: '2020-03-02',
-        type: PhotoAlbumType.PhotoBook,
+        type: 'photo book',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -350,7 +349,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '潮騒',
         release: '2017-01-25',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -388,7 +387,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '7秒のしあわせ',
         release: '2019-06-20',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -431,7 +430,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '自由ということ',
         release: '2017-03-08',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -443,7 +442,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '視線',
         release: '2019-11-27',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -498,7 +497,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '清純な大人',
         release: '2014-12-10',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: 'amazon',
@@ -510,7 +509,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'MAI STYLE',
         release: '2015-01-23',
-        type: PhotoAlbumType.PhotoBook,
+        type: 'photo book',
         sites: [
           {
             title: 'amazon',
@@ -522,7 +521,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'パスポート',
         release: '2017-02-07',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: 'amazon',
@@ -534,7 +533,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '白石麻衣メモリアルマガジン',
         release: '2020-10-21',
-        type: PhotoAlbumType.PhotoMagazine,
+        type: 'photo magazine',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -576,7 +575,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '恋かもしれない',
         release: '2016-09-15',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: 'amazon',
@@ -588,7 +587,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '独白',
         release: '2019-02-26',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -627,7 +626,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '好きなことだけをしていたい',
         release: '2020-10-13',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -677,7 +676,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '普段着',
         release: '2015-05-18',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: 'amazon',
@@ -689,7 +688,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '風を着替えて',
         release: '2016-09-27',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: 'amazon',
@@ -701,7 +700,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'わたしのこと',
         release: '2018-05-09',
-        type: PhotoAlbumType.PhotoBook,
+        type: 'photo book',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -793,7 +792,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'いたずら',
         release: '2018-04-10',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -847,7 +846,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '意外っていうか、前から可愛いと思ってた',
         release: '2017-12-12',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -859,7 +858,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '次、いつ会える？',
         release: '2021-07-13',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -901,7 +900,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'アンド チョコレート',
         release: '2021-09-08',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -913,7 +912,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'パレット',
         release: '2017-11-07',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -1070,7 +1069,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'エトランゼ',
         release: '2018-02-20',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -1102,7 +1101,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'やさしい棘',
         release: '2015-08-28',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: 'amazon',
@@ -1114,7 +1113,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '2017',
         release: '2017-02-20',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -1149,7 +1148,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'ずっと、そばにいたい',
         release: '2016-06-09',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: 'amazon',
@@ -1161,7 +1160,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'My magazine',
         release: '2018-02-22',
-        type: PhotoAlbumType.PhotoMagazine,
+        type: 'photo magazine',
         sites: [
           {
             title: 'amazon',

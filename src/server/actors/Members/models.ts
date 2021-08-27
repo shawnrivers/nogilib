@@ -2,10 +2,10 @@ import {
   BloodType,
   Generation,
   Position,
+  PhotoAlbumType,
   MemberNameKey,
 } from 'server/actors/Members/types';
 import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
-import { PhotoAlbumType } from 'server/actors/Members/constants/photoAlbum';
 import { UnitType } from 'server/actors/Units/constants/unitType';
 import { ImageUrl, Site } from 'server/types/commons';
 

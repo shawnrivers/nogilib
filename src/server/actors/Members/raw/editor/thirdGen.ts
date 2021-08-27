@@ -1,5 +1,4 @@
 import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
-import { PhotoAlbumType } from 'server/actors/Members/constants/photoAlbum';
 import { SocialMedia } from 'server/actors/Members/constants/socialMedia';
 import { MemberRaw } from 'server/actors/Members/models';
 import { createMemberRaw } from 'server/actors/Members/raw/creator';
@@ -72,7 +71,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '夢の近く',
         release: '2020-09-29',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -256,7 +255,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '忘れられない人',
         release: '2020-01-21',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -321,7 +320,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '日向の温度',
         release: '2017-12-26',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -333,7 +332,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '無口な時間',
         release: '2020-03-10',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,

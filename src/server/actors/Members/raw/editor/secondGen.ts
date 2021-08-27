@@ -1,5 +1,4 @@
 import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
-import { PhotoAlbumType } from 'server/actors/Members/constants/photoAlbum';
 import { SocialMedia } from 'server/actors/Members/constants/socialMedia';
 import { MemberRaw } from 'server/actors/Members/models';
 import { createMemberRaw } from 'server/actors/Members/raw/creator';
@@ -97,7 +96,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '空気の色',
         release: '2018-12-27',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -164,7 +163,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'どこにいるの？',
         release: '2017-11-14',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -202,7 +201,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '光の角度',
         release: '2020-11-10',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -240,7 +239,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'タイトル未定',
         release: '2021-11-09',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           { title: SocialMedia.Twitter, url: 'https://twitter.com/ranze1st' },
         ],
@@ -284,7 +283,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '君らしさ',
         release: '2017-11-24',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -296,7 +295,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'いつかの待ち合わせ場所',
         release: '2020-05-27',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -308,7 +307,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'いつのまにか',
         release: '2021-04-20',
-        type: PhotoAlbumType.PhotoBook,
+        type: 'photo book',
         sites: [
           {
             title: SocialMedia.Twitter,
@@ -385,7 +384,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '消極的な華やかさ',
         release: '2021-08-31',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: SocialMedia.Twitter,
