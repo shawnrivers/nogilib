@@ -9,6 +9,19 @@ export type Position =
   | 'skip'
   | 'none';
 export type PhotoAlbumType = 'photo album' | 'photo book' | 'photo magazine';
+export type GlowStickColor =
+  | 'red'
+  | 'yellow'
+  | 'white'
+  | 'blue'
+  | 'green'
+  | 'purple'
+  | 'black'
+  | 'pink'
+  | 'orange'
+  | 'light blue'
+  | 'yellow green'
+  | 'none';
 export type MemberNameKey =
   | 'akimotomanatsu'
   | 'ikutaerika'

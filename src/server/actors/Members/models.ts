@@ -3,9 +3,9 @@ import {
   Generation,
   Position,
   PhotoAlbumType,
+  GlowStickColor,
   MemberNameKey,
 } from 'server/actors/Members/types';
-import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
 import { UnitType } from 'server/actors/Units/constants/unitType';
 import { ImageUrl, Site } from 'server/types/commons';
 
@@ -20,8 +20,8 @@ export type MemberRaw = {
     lastNameEn: string;
   };
   glowStickColor: {
-    left: GlowStickColorType;
-    right: GlowStickColorType;
+    left: GlowStickColor;
+    right: GlowStickColor;
   };
   join: Generation;
   birthday: string;

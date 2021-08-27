@@ -1,4 +1,3 @@
-import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
 import { SocialMedia } from 'server/actors/Members/constants/socialMedia';
 import { MemberRaw } from 'server/actors/Members/models';
 import { createMemberRaw } from 'server/actors/Members/raw/creator';
@@ -7,7 +6,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'akimotomanatsu',
     nameNotations: ['秋元', '真夏', 'あきもと', 'まなつ', 'akimoto', 'manatsu'],
-    glowStickColor: [GlowStickColorType.Red, GlowStickColorType.Pink],
+    glowStickColor: ['red', 'pink'],
     join: 'first',
     birthday: '1993-08-20',
     height: 154,
@@ -61,7 +60,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'ikutaerika',
     nameNotations: ['生田', '絵梨花', 'いくた', 'えりか', 'ikuta', 'erika'],
-    glowStickColor: [GlowStickColorType.Yellow, GlowStickColorType.Yellow],
+    glowStickColor: ['yellow', 'yellow'],
     join: 'first',
     birthday: '1997-01-22',
     height: 160,
@@ -115,7 +114,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'ikomarina',
     nameNotations: ['生駒', '里奈', 'いこま', 'りな', 'ikoma', 'rina'],
-    glowStickColor: [GlowStickColorType.Blue, GlowStickColorType.Purple],
+    glowStickColor: ['blue', 'purple'],
     join: 'first',
     birthday: '1995-12-29',
     height: 153,
@@ -159,7 +158,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'inouesayuri',
     nameNotations: ['井上', '小百合', 'いのうえ', 'さゆり', 'inoue', 'sayuri'],
-    glowStickColor: [GlowStickColorType.White, GlowStickColorType.White],
+    glowStickColor: ['white', 'white'],
     join: 'first',
     birthday: '1994-12-14',
     height: 156,
@@ -202,7 +201,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'etoumisa',
     nameNotations: ['衛藤', '美彩', 'えとう', 'みさ', 'eto', 'misa'],
-    glowStickColor: [GlowStickColorType.Red, GlowStickColorType.Red],
+    glowStickColor: ['red', 'red'],
     join: 'first',
     birthday: '1993-01-04',
     height: 163,
@@ -270,7 +269,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'kawagohina',
     nameNotations: ['川後', '陽菜', 'かわご', 'ひな', 'kawago', 'hina'],
-    glowStickColor: [GlowStickColorType.Red, GlowStickColorType.Red],
+    glowStickColor: ['red', 'red'],
     join: 'first',
     birthday: '1998-03-22',
     height: 161,
@@ -317,7 +316,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'saitouasuka',
     nameNotations: ['齋藤', '飛鳥', 'さいとう', 'あすか', 'saito', 'asuka'],
-    glowStickColor: [GlowStickColorType.LightBlue, GlowStickColorType.White],
+    glowStickColor: ['light blue', 'white'],
     join: 'first',
     birthday: '1998-08-10',
     height: 158,
@@ -363,7 +362,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'saitouyuuri',
     nameNotations: ['斉藤', '優里', 'さいとう', 'ゆうり', 'saito', 'yuri'],
-    glowStickColor: [GlowStickColorType.Pink, GlowStickColorType.White],
+    glowStickColor: ['pink', 'white'],
     join: 'first',
     birthday: '1993-07-20',
     height: 157,
@@ -402,7 +401,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'sakuraireika',
     nameNotations: ['桜井', '玲香', 'さくらい', 'れいか', 'sakurai', 'reika'],
-    glowStickColor: [GlowStickColorType.Red, GlowStickColorType.Pink],
+    glowStickColor: ['red', 'pink'],
     join: 'first',
     birthday: '1994-05-16',
     height: 156,
@@ -457,10 +456,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'shiraishimai',
     nameNotations: ['白石', '麻衣', 'しらいし', 'まい', 'shiraishi', 'mai'],
-    glowStickColor: [
-      GlowStickColorType.LightBlue,
-      GlowStickColorType.LightBlue,
-    ],
+    glowStickColor: ['light blue', 'light blue'],
     join: 'first',
     birthday: '1992-08-20',
     height: 162,
@@ -547,7 +543,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'takayamakazumi',
     nameNotations: ['高山', '一実', 'たかやま', 'かずみ', 'takayama', 'kazumi'],
-    glowStickColor: [GlowStickColorType.LightBlue, GlowStickColorType.Pink],
+    glowStickColor: ['light blue', 'pink'],
     join: 'first',
     birthday: '1994-02-08',
     height: 162,
@@ -601,7 +597,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'nakadakana',
     nameNotations: ['中田', '花奈', 'なかだ', 'かな', 'nakada', 'kana'],
-    glowStickColor: [GlowStickColorType.Black, GlowStickColorType.White],
+    glowStickColor: ['black', 'white'],
     join: 'first',
     birthday: '1994-08-06',
     height: 158,
@@ -640,7 +636,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'nishinonanase',
     nameNotations: ['西野', '七瀬', 'にしの', 'ななせ', 'nishino', 'nanase'],
-    glowStickColor: [GlowStickColorType.Green, GlowStickColorType.White],
+    glowStickColor: ['green', 'white'],
     join: 'first',
     birthday: '1994-05-25',
     height: 159,
@@ -715,7 +711,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'noujouami',
     nameNotations: ['能條', '愛未', 'のうじょう', 'あみ', 'nojo', 'ami'],
-    glowStickColor: [GlowStickColorType.Orange, GlowStickColorType.Orange],
+    glowStickColor: ['orange', 'orange'],
     join: 'first',
     birthday: '1994-10-18',
     height: 163,
@@ -740,7 +736,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'higuchihina',
     nameNotations: ['樋口', '日奈', 'ひぐち', 'ひな', 'higuchi', 'hina'],
-    glowStickColor: [GlowStickColorType.Purple, GlowStickColorType.Orange],
+    glowStickColor: ['purple', 'orange'],
     join: 'first',
     birthday: '1998-01-31',
     height: 161,
@@ -768,7 +764,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'hoshinominami',
     nameNotations: ['星野', 'みなみ', 'ほしの', 'みなみ', 'hoshino', 'minami'],
-    glowStickColor: [GlowStickColorType.White, GlowStickColorType.White],
+    glowStickColor: ['white', 'white'],
     join: 'first',
     birthday: '1998-02-06',
     height: 155,
@@ -813,7 +809,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       'matsumura',
       'sayuri',
     ],
-    glowStickColor: [GlowStickColorType.Red, GlowStickColorType.Red],
+    glowStickColor: ['red', 'red'],
     join: 'first',
     birthday: '1992-08-27',
     height: 164,
@@ -872,7 +868,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'wakatsukiyumi',
     nameNotations: ['若月', '佑美', 'わかつき', 'ゆみ', 'wakatsuki', 'yumi'],
-    glowStickColor: [GlowStickColorType.Blue, GlowStickColorType.Blue],
+    glowStickColor: ['blue', 'blue'],
     join: 'first',
     birthday: '1994-06-27',
     height: 157,
@@ -927,7 +923,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'wadamaaya',
     nameNotations: ['和田', 'まあや', 'わだ', 'まあや', 'wada', 'maya'],
-    glowStickColor: [GlowStickColorType.Yellow, GlowStickColorType.Orange],
+    glowStickColor: ['yellow', 'orange'],
     join: 'first',
     birthday: '1998-04-23',
     height: 161,
@@ -955,7 +951,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'saitouchiharu',
     nameNotations: ['斎藤', 'ちはる', 'さいとう', 'ちはる', 'saito', 'chiharu'],
-    glowStickColor: [GlowStickColorType.Blue, GlowStickColorType.Red],
+    glowStickColor: ['blue', 'red'],
     join: 'first',
     birthday: '1997-02-17',
     height: 166,
@@ -976,7 +972,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'kawamuramahiro',
     nameNotations: ['川村', '真洋', 'かわむら', 'まひろ', 'kawamura', 'mahiro'],
-    glowStickColor: [GlowStickColorType.Red, GlowStickColorType.White],
+    glowStickColor: ['red', 'white'],
     join: 'first',
     birthday: '1995-07-23',
     height: 156,
@@ -1020,7 +1016,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       'nakamoto',
       'himeka',
     ],
-    glowStickColor: [GlowStickColorType.Pink, GlowStickColorType.Pink],
+    glowStickColor: ['pink', 'pink'],
     join: 'first',
     birthday: '1996-04-13',
     height: 161,
@@ -1041,7 +1037,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'itoumarika',
     nameNotations: ['伊藤', '万理華', 'いとう', 'まりか', 'ito', 'marika'],
-    glowStickColor: [GlowStickColorType.Green, GlowStickColorType.Purple],
+    glowStickColor: ['green', 'purple'],
     join: 'first',
     birthday: '1996-02-20',
     height: 158,
@@ -1091,7 +1087,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       'hashimoto',
       'nanami',
     ],
-    glowStickColor: [GlowStickColorType.Green, GlowStickColorType.Green],
+    glowStickColor: ['green', 'green'],
     join: 'first',
     birthday: '1993-02-20',
     height: 163,
@@ -1128,7 +1124,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'fukagawamai',
     nameNotations: ['深川', '麻衣', 'ふかがわ', 'まい', 'fukagawa', 'mai'],
-    glowStickColor: [GlowStickColorType.Green, GlowStickColorType.Purple],
+    glowStickColor: ['green', 'purple'],
     join: 'first',
     birthday: '1991-03-29',
     height: 162,
@@ -1175,7 +1171,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'nagashimaseira',
     nameNotations: ['永島', '聖羅', 'ながしま', 'せいら', 'nagashima', 'seira'],
-    glowStickColor: [GlowStickColorType.Yellow, GlowStickColorType.Yellow],
+    glowStickColor: ['yellow', 'yellow'],
     join: 'first',
     birthday: '1994-05-19',
     height: 158,
@@ -1200,7 +1196,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'matsuirena',
     nameNotations: ['松井', '玲奈', 'まつい', 'れな', 'matsui', 'rena'],
-    glowStickColor: [GlowStickColorType.Green, GlowStickColorType.Green],
+    glowStickColor: ['green', 'green'],
     join: 'exchange',
     birthday: '1991-07-27',
     height: 162,
@@ -1229,7 +1225,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'hatanakaseira',
     nameNotations: ['畠中', '清羅', 'はたなか', 'せいら', 'hatanaka', 'seira'],
-    glowStickColor: [GlowStickColorType.Blue, GlowStickColorType.Pink],
+    glowStickColor: ['blue', 'pink'],
     join: 'first',
     birthday: '1995-12-05',
     height: 150,
@@ -1254,7 +1250,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'yamatorina',
     nameNotations: ['大和', '里菜', 'やまと', 'りな', 'yamato', 'rina'],
-    glowStickColor: [GlowStickColorType.Pink, GlowStickColorType.White],
+    glowStickColor: ['pink', 'white'],
     join: 'first',
     birthday: '1994-12-14',
     height: 162,
@@ -1271,7 +1267,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'itounene',
     nameNotations: ['伊藤', '寧々', 'いとう', 'ねね', 'ito', 'nene'],
-    glowStickColor: [GlowStickColorType.Pink, GlowStickColorType.Orange],
+    glowStickColor: ['pink', 'orange'],
     join: 'first',
     birthday: '1995-12-12',
     height: 149,
@@ -1300,7 +1296,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'ichikirena',
     nameNotations: ['市來', '玲奈', 'いちき', 'れな', 'ichiki', 'rena'],
-    glowStickColor: [GlowStickColorType.None, GlowStickColorType.None],
+    glowStickColor: ['none', 'none'],
     join: 'first',
     birthday: '1996-01-22',
     height: 153,
@@ -1317,7 +1313,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'miyazawaseira',
     nameNotations: ['宮澤', '成良', 'みやざわ', 'せいら', 'miyazawa', 'seira'],
-    glowStickColor: [GlowStickColorType.None, GlowStickColorType.None],
+    glowStickColor: ['none', 'none'],
     join: 'first',
     birthday: '1993-10-29',
     height: 166,
@@ -1346,7 +1342,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'kashiwayukina',
     nameNotations: ['柏', '幸奈', 'かしわ', 'ゆきな', 'kashiwa', 'yukina'],
-    glowStickColor: [GlowStickColorType.Pink, GlowStickColorType.Pink],
+    glowStickColor: ['pink', 'pink'],
     join: 'first',
     birthday: '1994-08-12',
     height: 158,
@@ -1363,7 +1359,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'andoumikumo',
     nameNotations: ['安藤', '美雲', 'あんどう', 'みくも', 'ando', 'mikumo'],
-    glowStickColor: [GlowStickColorType.None, GlowStickColorType.None],
+    glowStickColor: ['none', 'none'],
     join: 'first',
     birthday: '1993-05-21',
     height: 156,
@@ -1374,7 +1370,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'iwaseyumiko',
     nameNotations: ['岩瀬', '佑美子', 'いわせ', 'ゆみこ', 'iwase', 'yumiko'],
-    glowStickColor: [GlowStickColorType.None, GlowStickColorType.None],
+    glowStickColor: ['none', 'none'],
     join: 'first',
     birthday: '1990-06-12',
     height: 153,

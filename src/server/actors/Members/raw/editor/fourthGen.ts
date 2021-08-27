@@ -1,4 +1,3 @@
-import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
 import { SocialMedia } from 'server/actors/Members/constants/socialMedia';
 import { MemberRaw } from 'server/actors/Members/models';
 import { createMemberRaw } from 'server/actors/Members/raw/creator';
@@ -7,7 +6,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'endousakura',
     nameNotations: ['遠藤', 'さくら', 'えんどう', 'さくら', 'endo', 'sakura'],
-    glowStickColor: [GlowStickColorType.White, GlowStickColorType.Pink],
+    glowStickColor: ['white', 'pink'],
     join: 'fourth',
     birthday: '2001-10-03',
     height: 164,
@@ -27,7 +26,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'kakiharuka',
     nameNotations: ['賀喜', '遥香', 'かき', 'はるか', 'kaki', 'haruka'],
-    glowStickColor: [GlowStickColorType.Green, GlowStickColorType.Orange],
+    glowStickColor: ['green', 'orange'],
     join: 'fourth',
     birthday: '2001-08-08',
     height: 166,
@@ -54,7 +53,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
       'kakehashi',
       'sayaka',
     ],
-    glowStickColor: [GlowStickColorType.Pink, GlowStickColorType.Orange],
+    glowStickColor: ['pink', 'orange'],
     join: 'fourth',
     birthday: '2002-11-20',
     height: 154,
@@ -74,7 +73,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'kanagawasaya',
     nameNotations: ['金川', '紗耶', 'かながわ', 'さや', 'kanagawa', 'saya'],
-    glowStickColor: [GlowStickColorType.Red, GlowStickColorType.LightBlue],
+    glowStickColor: ['red', 'light blue'],
     join: 'fourth',
     birthday: '2001-10-31',
     height: 165,
@@ -94,7 +93,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'kitagawayuri',
     nameNotations: ['北川', '悠理', 'きたがわ', 'ゆり', 'kitagawa', 'yuri'],
-    glowStickColor: [GlowStickColorType.Orange, GlowStickColorType.LightBlue],
+    glowStickColor: ['orange', 'light blue'],
     join: 'fourth',
     birthday: '2001-08-08',
     height: 165,
@@ -114,7 +113,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'shibatayuna',
     nameNotations: ['柴田', '柚菜', 'しばた', 'ゆな', 'shibata', 'yuna'],
-    glowStickColor: [GlowStickColorType.Blue, GlowStickColorType.YellowGreen],
+    glowStickColor: ['blue', 'yellow green'],
     join: 'fourth',
     birthday: '2003-03-03',
     height: 160,
@@ -134,7 +133,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'seimiyarei',
     nameNotations: ['清宮', 'レイ', 'せいみや', 'れい', 'seimiya', 'rei'],
-    glowStickColor: [GlowStickColorType.Orange, GlowStickColorType.Orange],
+    glowStickColor: ['orange', 'orange'],
     join: 'fourth',
     birthday: '2003-08-01',
     height: 164,
@@ -154,7 +153,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'tamuramayu',
     nameNotations: ['田村', '真佑', 'たむら', 'まゆ', 'tamura', 'mayu'],
-    glowStickColor: [GlowStickColorType.LightBlue, GlowStickColorType.Purple],
+    glowStickColor: ['light blue', 'purple'],
     join: 'fourth',
     birthday: '1999-01-12',
     height: 160,
@@ -174,7 +173,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'tsutsuiayame',
     nameNotations: ['筒井', 'あやめ', 'つつい', 'あやめ', 'tsutsui', 'ayame'],
-    glowStickColor: [GlowStickColorType.Purple, GlowStickColorType.Purple],
+    glowStickColor: ['purple', 'purple'],
     join: 'fourth',
     birthday: '2004-06-08',
     height: 160,
@@ -194,7 +193,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'hayakawaseira',
     nameNotations: ['早川', '聖来', 'はやかわ', 'せいら', 'hayakawa', 'seira'],
-    glowStickColor: [GlowStickColorType.Blue, GlowStickColorType.Blue],
+    glowStickColor: ['blue', 'blue'],
     join: 'fourth',
     birthday: '2000-08-24',
     height: 164,
@@ -214,7 +213,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'yakubomio',
     nameNotations: ['矢久保', '美緒', 'やくぼ', 'みお', 'yakubo', 'mio'],
-    glowStickColor: [GlowStickColorType.Yellow, GlowStickColorType.Pink],
+    glowStickColor: ['yellow', 'pink'],
     join: 'fourth',
     birthday: '2002-08-14',
     height: 153,
@@ -234,7 +233,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'kuromiharuka',
     nameNotations: ['黒見', '明香', 'くろみ', 'はるか', 'kuromi', 'haruka'],
-    glowStickColor: [GlowStickColorType.Purple, GlowStickColorType.Green],
+    glowStickColor: ['purple', 'green'],
     join: 'fourth',
     birthday: '2004-01-19',
     height: 162,
@@ -258,7 +257,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'satourika',
     nameNotations: ['佐藤', '璃果', 'さとう', 'りか', 'satou', 'rika'],
-    glowStickColor: [GlowStickColorType.Pink, GlowStickColorType.LightBlue],
+    glowStickColor: ['pink', 'light blue'],
     join: 'fourth',
     birthday: '2001-08-09',
     height: 160,
@@ -282,7 +281,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'hayashiruna',
     nameNotations: ['林', '瑠奈', 'はやし', 'るな', 'hayashi', 'runa'],
-    glowStickColor: [GlowStickColorType.Pink, GlowStickColorType.Pink],
+    glowStickColor: ['pink', 'pink'],
     join: 'fourth',
     birthday: '2003-10-02',
     height: 164,
@@ -306,7 +305,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'matsuomiyu',
     nameNotations: ['松尾', '美佑', 'まつお', 'みゆ', 'matsuo', 'miyu'],
-    glowStickColor: [GlowStickColorType.LightBlue, GlowStickColorType.White],
+    glowStickColor: ['light blue', 'white'],
     join: 'fourth',
     birthday: '2004-01-03',
     height: 167,
@@ -330,7 +329,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'yumikinao',
     nameNotations: ['弓木', '奈於', 'ゆみき', 'なお', 'yumiki', 'nao'],
-    glowStickColor: [GlowStickColorType.Red, GlowStickColorType.YellowGreen],
+    glowStickColor: ['red', 'yellow green'],
     join: 'fourth',
     birthday: '1999-02-03',
     height: 165,

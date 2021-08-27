@@ -1,4 +1,3 @@
-import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
 import { SocialMedia } from 'server/actors/Members/constants/socialMedia';
 import { MemberRaw } from 'server/actors/Members/models';
 import { createMemberRaw } from 'server/actors/Members/raw/creator';
@@ -7,7 +6,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'itouriria',
     nameNotations: ['伊藤', '理々杏', 'いとう', 'りりあ', 'ito', 'riria'],
-    glowStickColor: [GlowStickColorType.Purple, GlowStickColorType.Red],
+    glowStickColor: ['purple', 'red'],
     join: 'third',
     birthday: '2002-10-08',
     height: 154,
@@ -27,7 +26,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'iwamotorenka',
     nameNotations: ['岩本', '蓮加', 'いわもと', 'れんか', 'iwamoto', 'renka'],
-    glowStickColor: [GlowStickColorType.Red, GlowStickColorType.Pink],
+    glowStickColor: ['red', 'pink'],
     join: 'third',
     birthday: '2004-02-02',
     height: 159,
@@ -47,7 +46,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'umezawaminami',
     nameNotations: ['梅澤', '美波', 'うめざわ', 'みなみ', 'umezakwa', 'minami'],
-    glowStickColor: [GlowStickColorType.Blue, GlowStickColorType.LightBlue],
+    glowStickColor: ['blue', 'light blue'],
     join: 'third',
     birthday: '1999-01-06',
     height: 170,
@@ -85,7 +84,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'oozonomomoko',
     nameNotations: ['大園', '桃子', 'おおぞの', 'ももこ', 'ozono', 'momoko'],
-    glowStickColor: [GlowStickColorType.Pink, GlowStickColorType.Green],
+    glowStickColor: ['pink', 'green'],
     join: 'third',
     birthday: '1999-09-13',
     height: 156,
@@ -109,7 +108,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'kuboshiori',
     nameNotations: ['久保', '史緒里', 'くぼ', 'しおり', 'kubo', 'shiori'],
-    glowStickColor: [GlowStickColorType.LightBlue, GlowStickColorType.Yellow],
+    glowStickColor: ['light blue', 'yellow'],
     join: 'third',
     birthday: '2001-07-14',
     height: 161,
@@ -136,7 +135,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
       'sakaguchi',
       'tamami',
     ],
-    glowStickColor: [GlowStickColorType.Purple, GlowStickColorType.Yellow],
+    glowStickColor: ['purple', 'yellow'],
     join: 'third',
     birthday: '2001-11-10',
     height: 161,
@@ -156,7 +155,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'satoukaede',
     nameNotations: ['佐藤', '楓', 'さとう', 'かえで', 'sato', 'kaede'],
-    glowStickColor: [GlowStickColorType.Red, GlowStickColorType.Red],
+    glowStickColor: ['red', 'red'],
     join: 'third',
     birthday: '1998-03-23',
     height: 161,
@@ -180,7 +179,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'nakamurareno',
     nameNotations: ['中村', '麗乃', 'なかむら', 'れの', 'nakamura', 'reno'],
-    glowStickColor: [GlowStickColorType.Blue, GlowStickColorType.White],
+    glowStickColor: ['blue', 'white'],
     join: 'third',
     birthday: '2001-09-27',
     height: 167,
@@ -200,7 +199,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'mukaihazuki',
     nameNotations: ['向井', '葉月', 'むかい', 'はづき', 'mukai', 'hazuki'],
-    glowStickColor: [GlowStickColorType.Yellow, GlowStickColorType.Yellow],
+    glowStickColor: ['yellow', 'yellow'],
     join: 'third',
     birthday: '1999-08-23',
     height: 152,
@@ -231,7 +230,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
       'yamashita',
       'mizuki',
     ],
-    glowStickColor: [GlowStickColorType.Blue, GlowStickColorType.Yellow],
+    glowStickColor: ['blue', 'yellow'],
     join: 'third',
     birthday: '1999-07-26',
     height: 160,
@@ -276,7 +275,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
       'yoshida',
       'ayanochristie',
     ],
-    glowStickColor: [GlowStickColorType.Pink, GlowStickColorType.Purple],
+    glowStickColor: ['pink', 'purple'],
     join: 'third',
     birthday: '1995-09-06',
     height: 161,
@@ -296,7 +295,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'yodayuuki',
     nameNotations: ['与田', '祐希', 'よだ', 'ゆうき', 'yoda', 'yuki'],
-    glowStickColor: [GlowStickColorType.Red, GlowStickColorType.Green],
+    glowStickColor: ['red', 'green'],
     join: 'third',
     birthday: '2000-05-05',
     height: 153,

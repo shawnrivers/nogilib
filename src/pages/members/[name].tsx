@@ -22,7 +22,6 @@ import {
   PositionBadgeProps,
 } from 'client/components/pages/member/PositionBadge';
 import { PageContent } from 'client/components/layout/PageContent';
-import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
 import { Position } from 'server/actors/Members/types';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { Divider } from 'client/components/atoms/Divider';
@@ -353,7 +352,7 @@ const MemberPage: React.FC<PageProps> = props => {
                   </InfoItemValue>
                 </>
               )}
-              {glowStickColor.left !== GlowStickColorType.None && (
+              {glowStickColor.left !== 'none' && (
                 <>
                   <InfoItemLabel>
                     <Translation text="glow stick" />
