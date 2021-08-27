@@ -1,8 +1,6 @@
-import { Birthplace } from 'server/actors/Members/constants/birthplace';
 import { BloodType } from 'server/actors/Members/constants/bloodType';
 import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
 import { JoinedGenerationType } from 'server/actors/Members/constants/joinedGeneration';
-
 import { SocialMedia } from 'server/actors/Members/constants/socialMedia';
 import { MemberRaw } from 'server/actors/Members/models';
 import { createMemberRaw } from 'server/actors/Members/raw/creator';
@@ -16,7 +14,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     birthday: '2001-10-03',
     height: 164,
     bloodType: BloodType.Unknown,
-    origin: Birthplace.Aichi,
+    origin: '愛知県',
     sites: [
       {
         title: SocialMedia.Blog,
@@ -36,7 +34,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     birthday: '2001-08-08',
     height: 166,
     bloodType: BloodType.A,
-    origin: Birthplace.Tochigi,
+    origin: '栃木県',
     sites: [
       {
         title: SocialMedia.Blog,
@@ -63,7 +61,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     birthday: '2002-11-20',
     height: 154,
     bloodType: BloodType.B,
-    origin: Birthplace.Okayama,
+    origin: '岡山県',
     sites: [
       {
         title: SocialMedia.Blog,
@@ -83,7 +81,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     birthday: '2001-10-31',
     height: 165,
     bloodType: BloodType.O,
-    origin: Birthplace.Hokkaido,
+    origin: '北海道',
     sites: [
       {
         title: SocialMedia.Blog,
@@ -103,7 +101,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     birthday: '2001-08-08',
     height: 165,
     bloodType: BloodType.Unknown,
-    origin: Birthplace.California,
+    origin: 'California, US',
     sites: [
       {
         title: SocialMedia.Blog,
@@ -123,7 +121,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     birthday: '2003-03-03',
     height: 160,
     bloodType: BloodType.A,
-    origin: Birthplace.Chiba,
+    origin: '千葉県',
     sites: [
       {
         title: SocialMedia.Blog,
@@ -143,7 +141,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     birthday: '2003-08-01',
     height: 164,
     bloodType: BloodType.O,
-    origin: Birthplace.Saitama,
+    origin: '埼玉県',
     sites: [
       {
         title: SocialMedia.Blog,
@@ -163,7 +161,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1999-01-12',
     height: 160,
     bloodType: BloodType.A,
-    origin: Birthplace.Saitama,
+    origin: '埼玉県',
     sites: [
       {
         title: SocialMedia.Blog,
@@ -183,7 +181,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     birthday: '2004-06-08',
     height: 160,
     bloodType: BloodType.O,
-    origin: Birthplace.Aichi,
+    origin: '愛知県',
     sites: [
       {
         title: SocialMedia.Blog,
@@ -203,7 +201,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     birthday: '2000-08-24',
     height: 164,
     bloodType: BloodType.A,
-    origin: Birthplace.Osaka,
+    origin: '大阪府',
     sites: [
       {
         title: SocialMedia.Blog,
@@ -223,7 +221,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     birthday: '2002-08-14',
     height: 153,
     bloodType: BloodType.B,
-    origin: Birthplace.Tokyo,
+    origin: '東京都',
     sites: [
       {
         title: SocialMedia.Blog,
@@ -243,7 +241,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     birthday: '2004-01-19',
     height: 162,
     bloodType: BloodType.O,
-    origin: Birthplace.Tokyo,
+    origin: '東京都',
     sites: [
       {
         title: SocialMedia.Blog,
@@ -267,7 +265,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     birthday: '2001-08-09',
     height: 160,
     bloodType: BloodType.B,
-    origin: Birthplace.Iwate,
+    origin: '岩手県',
     sites: [
       {
         title: SocialMedia.Blog,
@@ -291,7 +289,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     birthday: '2003-10-02',
     height: 164,
     bloodType: BloodType.O,
-    origin: Birthplace.Kanagawa,
+    origin: '神奈川県',
     sites: [
       {
         title: SocialMedia.Blog,
@@ -315,7 +313,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     birthday: '2004-01-03',
     height: 167,
     bloodType: BloodType.O,
-    origin: Birthplace.Chiba,
+    origin: '千葉県',
     sites: [
       {
         title: SocialMedia.Blog,
@@ -339,7 +337,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1999-02-03',
     height: 165,
     bloodType: BloodType.A,
-    origin: Birthplace.Kyoto,
+    origin: '京都府',
     sites: [
       {
         title: SocialMedia.Blog,

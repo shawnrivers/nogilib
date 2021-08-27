@@ -1,8 +1,6 @@
-import { Birthplace } from 'server/actors/Members/constants/birthplace';
 import { BloodType } from 'server/actors/Members/constants/bloodType';
 import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
 import { JoinedGenerationType } from 'server/actors/Members/constants/joinedGeneration';
-
 import { PhotoAlbumType } from 'server/actors/Members/constants/photoAlbum';
 import { SocialMedia } from 'server/actors/Members/constants/socialMedia';
 import { MemberRaw } from 'server/actors/Members/models';
@@ -17,7 +15,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1993-08-20',
     height: 154,
     bloodType: BloodType.B,
-    origin: Birthplace.Saitama,
+    origin: '埼玉県',
     sites: [
       {
         title: SocialMedia.Instagram,
@@ -71,7 +69,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1997-01-22',
     height: 160,
     bloodType: BloodType.A,
-    origin: Birthplace.Düsseldorf,
+    origin: 'Düsseldorf, Germany',
     sites: [
       {
         title: SocialMedia.Instagram,
@@ -125,7 +123,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1995-12-29',
     height: 153,
     bloodType: BloodType.AB,
-    origin: Birthplace.Akita,
+    origin: '秋田県',
     sites: [
       {
         title: SocialMedia.Instagram,
@@ -169,7 +167,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1994-12-14',
     height: 156,
     bloodType: BloodType.B,
-    origin: Birthplace.Saitama,
+    origin: '埼玉県',
     sites: [
       {
         title: SocialMedia.Twitter,
@@ -212,7 +210,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1993-01-04',
     height: 163,
     bloodType: BloodType.AB,
-    origin: Birthplace.Oita,
+    origin: '大分県',
     sites: [
       {
         title: SocialMedia.Instagram,
@@ -280,7 +278,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1998-03-22',
     height: 161,
     bloodType: BloodType.O,
-    origin: Birthplace.Nagasaki,
+    origin: '長崎県',
     sites: [
       {
         title: SocialMedia.Instagram,
@@ -327,7 +325,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1998-08-10',
     height: 158,
     bloodType: BloodType.O,
-    origin: Birthplace.Tokyo,
+    origin: '東京都',
     sites: [
       {
         title: SocialMedia.Instagram,
@@ -373,7 +371,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1993-07-20',
     height: 157,
     bloodType: BloodType.O,
-    origin: Birthplace.Tokyo,
+    origin: '東京都',
     sites: [
       {
         title: SocialMedia.Instagram,
@@ -412,7 +410,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1994-05-16',
     height: 156,
     bloodType: BloodType.A,
-    origin: Birthplace.Kanagawa,
+    origin: '神奈川県',
     sites: [
       {
         title: SocialMedia.Instagram,
@@ -470,7 +468,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1992-08-20',
     height: 162,
     bloodType: BloodType.A,
-    origin: Birthplace.Gunma,
+    origin: '群馬県',
     graduatedDate: '2020-10-28',
     sites: [
       {
@@ -557,7 +555,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1994-02-08',
     height: 162,
     bloodType: BloodType.A,
-    origin: Birthplace.Chiba,
+    origin: '千葉県',
     sites: [
       {
         title: SocialMedia.Instagram,
@@ -611,7 +609,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1994-08-06',
     height: 158,
     bloodType: BloodType.A,
-    origin: Birthplace.Saitama,
+    origin: '埼玉県',
     graduatedDate: '2020-10-26',
     sites: [
       {
@@ -650,7 +648,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1994-05-25',
     height: 159,
     bloodType: BloodType.O,
-    origin: Birthplace.Osaka,
+    origin: '大阪府',
     sites: [
       {
         title: SocialMedia.Instagram,
@@ -725,7 +723,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1994-10-18',
     height: 163,
     bloodType: BloodType.A,
-    origin: Birthplace.Kanagawa,
+    origin: '神奈川県',
     sites: [
       {
         title: SocialMedia.Twitter,
@@ -750,7 +748,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1998-01-31',
     height: 161,
     bloodType: BloodType.A,
-    origin: Birthplace.Tokyo,
+    origin: '東京都',
     sites: [
       {
         title: SocialMedia.Instagram,
@@ -778,7 +776,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1998-02-06',
     height: 155,
     bloodType: BloodType.B,
-    origin: Birthplace.Chiba,
+    origin: '千葉県',
     sites: [
       {
         title: SocialMedia.Blog,
@@ -823,7 +821,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1992-08-27',
     height: 164,
     bloodType: BloodType.B,
-    origin: Birthplace.Osaka,
+    origin: '大阪府',
     graduatedDate: '2021-07-13',
     sites: [
       {
@@ -882,7 +880,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1994-06-27',
     height: 157,
     bloodType: BloodType.O,
-    origin: Birthplace.Shizuoka,
+    origin: '静岡県',
     sites: [
       {
         title: SocialMedia.Instagram,
@@ -937,7 +935,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1998-04-23',
     height: 161,
     bloodType: BloodType.O,
-    origin: Birthplace.Hiroshima,
+    origin: '広島県',
     sites: [
       {
         title: SocialMedia.Instagram,
@@ -965,7 +963,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1997-02-17',
     height: 166,
     bloodType: BloodType.A,
-    origin: Birthplace.Saitama,
+    origin: '埼玉県',
     sites: [
       {
         title: SocialMedia.Instagram,
@@ -986,7 +984,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1995-07-23',
     height: 156,
     bloodType: BloodType.A,
-    origin: Birthplace.Osaka,
+    origin: '大阪府',
     sites: [
       {
         title: SocialMedia.Instagram,
@@ -1030,7 +1028,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1996-04-13',
     height: 161,
     bloodType: BloodType.O,
-    origin: Birthplace.Hiroshima,
+    origin: '広島県',
     sites: [
       {
         title: SocialMedia.Official,
@@ -1051,7 +1049,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1996-02-20',
     height: 158,
     bloodType: BloodType.O,
-    origin: Birthplace.Kanagawa,
+    origin: '神奈川県',
     sites: [
       {
         title: SocialMedia.Instagram,
@@ -1101,7 +1099,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1993-02-20',
     height: 163,
     bloodType: BloodType.B,
-    origin: Birthplace.Hokkaido,
+    origin: '北海道',
     photoAlbums: [
       {
         title: 'やさしい棘',
@@ -1138,7 +1136,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1991-03-29',
     height: 162,
     bloodType: BloodType.O,
-    origin: Birthplace.Shizuoka,
+    origin: '静岡県',
     sites: [
       {
         title: SocialMedia.Instagram,
@@ -1185,7 +1183,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1994-05-19',
     height: 158,
     bloodType: BloodType.O,
-    origin: Birthplace.Aichi,
+    origin: '愛知県',
     sites: [
       {
         title: SocialMedia.Instagram,
@@ -1210,7 +1208,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1991-07-27',
     height: 162,
     bloodType: BloodType.O,
-    origin: Birthplace.Aichi,
+    origin: '愛知県',
     sites: [
       {
         title: SocialMedia.YouTube,
@@ -1239,7 +1237,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1995-12-05',
     height: 150,
     bloodType: BloodType.B,
-    origin: Birthplace.Oita,
+    origin: '大分県',
     sites: [
       {
         title: SocialMedia.Instagram,
@@ -1264,7 +1262,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1994-12-14',
     height: 162,
     bloodType: BloodType.O,
-    origin: Birthplace.Miyagi,
+    origin: '宮城県',
     sites: [
       {
         title: SocialMedia.Twitter,
@@ -1281,7 +1279,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1995-12-12',
     height: 149,
     bloodType: BloodType.B,
-    origin: Birthplace.Gifu,
+    origin: '岐阜県',
     sites: [
       {
         title: SocialMedia.Instagram,
@@ -1310,7 +1308,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1996-01-22',
     height: 153,
     bloodType: BloodType.A,
-    origin: Birthplace.Chiba,
+    origin: '千葉県',
     sites: [
       {
         title: '日本テレビ',
@@ -1327,7 +1325,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1993-10-29',
     height: 166,
     bloodType: BloodType.O,
-    origin: Birthplace.Chiba,
+    origin: '千葉県',
     sites: [
       {
         title: SocialMedia.Instagram,
@@ -1356,7 +1354,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1994-08-12',
     height: 158,
     bloodType: BloodType.B,
-    origin: Birthplace.Kanagawa,
+    origin: '神奈川県',
     sites: [
       {
         title: SocialMedia.Twitter,
@@ -1373,7 +1371,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1993-05-21',
     height: 156,
     bloodType: BloodType.O,
-    origin: Birthplace.Kanagawa,
+    origin: '神奈川県',
     graduatedDate: '2013-06-16',
   }),
   createMemberRaw({
@@ -1384,7 +1382,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     birthday: '1990-06-12',
     height: 153,
     bloodType: BloodType.A,
-    origin: Birthplace.Saitama,
+    origin: '埼玉県',
     sites: [
       {
         title: SocialMedia.Twitter,
