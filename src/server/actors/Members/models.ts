@@ -1,11 +1,11 @@
 import {
   BloodType,
   Generation,
+  Position,
   MemberNameKey,
 } from 'server/actors/Members/types';
 import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
 import { PhotoAlbumType } from 'server/actors/Members/constants/photoAlbum';
-import { PositionType } from 'server/actors/Members/constants/position';
 import { UnitType } from 'server/actors/Units/constants/unitType';
 import { ImageUrl, Site } from 'server/types/commons';
 
@@ -62,7 +62,7 @@ export type MemberResult = MemberRaw & {
   }[];
   positionsHistory: {
     singleNumber: string;
-    position: PositionType;
+    position: Position;
   }[];
   positionsCounter: {
     center: number;

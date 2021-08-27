@@ -6,7 +6,7 @@ import {
   TypographyProps,
 } from 'client/components/atoms/Typography';
 import { Card, CardProps } from 'client/components/atoms/Card';
-import { PositionType } from 'server/actors/Members/constants/position';
+import { Position } from 'server/actors/Members/types';
 import { commonStyles } from 'client/styles/tokens';
 import { BORDER_RADIUS } from 'client/styles/tokens/borderRadius';
 import { POSITION_STYLES } from 'client/styles/positionStyles';
@@ -15,15 +15,13 @@ import { ImageUrl } from 'server/types/commons';
 import { AspectRatioImage } from 'client/components/atoms/image/AspectRatioImage';
 
 const PositionBadge: React.FC<{
-  position: PositionType.Center | PositionType.Fukujin;
+  position: 'center' | 'fukujin';
   borderRadius: MemberCardProps['borderRadius'];
 }> = props => {
   const { position, borderRadius } = props;
 
   const positionStylesKey =
-    position === PositionType.Center
-      ? POSITION_STYLES.center
-      : POSITION_STYLES.fukujin;
+    position === 'center' ? POSITION_STYLES.center : POSITION_STYLES.fukujin;
 
   const badgeStyles = React.useMemo(() => {
     const backgroundColorVarName = getColorVarName(
@@ -68,7 +66,7 @@ const PositionBadge: React.FC<{
           line-height: 28px;
         `}
       >
-        {position === PositionType.Center ? 'C' : 'F'}
+        {position === 'center' ? 'C' : 'F'}
       </Typography>
     </div>
   );
@@ -81,7 +79,7 @@ export type MemberCardProps = Omit<CardProps, 'children'> & {
   width: number;
   nameElement?: TypographyProps['element'];
   textSize?: TypographyProps['variant'];
-  position?: PositionType;
+  position?: Position;
 };
 
 export const MemberCard: React.FC<MemberCardProps> = props => {
@@ -103,8 +101,7 @@ export const MemberCard: React.FC<MemberCardProps> = props => {
       borderRadius={borderRadius}
       padding={padding}
       accessory={
-        position === PositionType.Center ||
-        position === PositionType.Fukujin ? (
+        position === 'center' || position === 'fukujin' ? (
           <PositionBadge position={position} borderRadius={borderRadius} />
         ) : undefined
       }

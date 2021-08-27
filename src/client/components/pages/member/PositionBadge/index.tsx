@@ -1,6 +1,6 @@
 import { css } from '@emotion/core';
 import * as React from 'react';
-import { PositionType } from 'server/actors/Members/constants/position';
+import { Position } from 'server/actors/Members/types';
 import { commonStyles } from 'client/styles/tokens';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { Typography } from 'client/components/atoms/Typography';
@@ -27,19 +27,19 @@ const NoneBadge: React.FC = () => {
 };
 
 export type PositionBadgeProps = {
-  position: PositionType;
+  position: Position;
 };
 
 export const PositionBadge: React.FC<PositionBadgeProps> = props => {
   const positionStyles = React.useMemo(() => {
     switch (props.position) {
-      case PositionType.Center:
+      case 'center':
         return POSITION_STYLES.center;
-      case PositionType.Fukujin:
+      case 'fukujin':
         return POSITION_STYLES.fukujin;
-      case PositionType.Selected:
+      case 'selected':
         return POSITION_STYLES.selected;
-      case PositionType.Under:
+      case 'under':
         return POSITION_STYLES.under;
       default:
         return undefined;
