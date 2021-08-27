@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const FIRST_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: 'ぐるぐるカーテン',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['黒須克彦'],
@@ -37,7 +36,7 @@ export const FIRST_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '左胸の勇気',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['小内喜文'],
@@ -70,7 +69,7 @@ export const FIRST_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '乃木坂の詩',
-    type: SongType.Coupling,
+    type: 'coupling',
     creators: {
       lyrics: ['秋元康'],
       compose: ['井手コウジ'],
@@ -118,7 +117,7 @@ export const FIRST_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '会いたかったかもしれない',
-    type: SongType.Coupling,
+    type: 'coupling',
     creators: {
       lyrics: ['秋元康'],
       compose: ['BOUNCEBACK', 'MIKOTO'],
@@ -153,7 +152,7 @@ export const FIRST_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '失いたくないから',
-    type: SongType.Coupling,
+    type: 'coupling',
     creators: {
       lyrics: ['秋元康'],
       compose: ['蛯原ランス'],
@@ -188,7 +187,7 @@ export const FIRST_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '白い雲にのって',
-    type: SongType.Coupling,
+    type: 'coupling',
     creators: {
       lyrics: ['秋元康'],
       compose: ['太田美知彦'],

@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const THIRD_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: '走れ!Bicycle',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Shusui', '伊藤涼', '木村篤史', 'ヒロイズム'],
@@ -44,7 +43,7 @@ export const THIRD_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '涙がまだ悲しみだった頃',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['内田智之'],
@@ -74,7 +73,7 @@ export const THIRD_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'せっかちなかたつむり',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['山本加津彦'],
@@ -96,7 +95,7 @@ export const THIRD_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '人はなぜ走るのか?',
-    type: SongType.Selected,
+    type: 'selected',
     creators: {
       lyrics: ['秋元康'],
       compose: ['キタムラタケシ', '田上陽一'],
@@ -132,7 +131,7 @@ export const THIRD_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '音が出ないギター',
-    type: SongType.Coupling,
+    type: 'coupling',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Jam9', 'ArmySlick'],
@@ -168,7 +167,7 @@ export const THIRD_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '海流の島よ',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Akira Sunset'],

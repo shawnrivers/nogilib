@@ -1,10 +1,12 @@
-import { BloodType } from 'server/actors/Members/constants/bloodType';
-import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
-import { JoinedGenerationType } from 'server/actors/Members/constants/joinedGeneration';
-import { MemberNameKey } from 'server/actors/Members/types/memberNameKey';
-import { PhotoAlbumType } from 'server/actors/Members/constants/photoAlbum';
-import { PositionType } from 'server/actors/Members/constants/position';
-import { UnitType } from 'server/actors/Units/constants/unitType';
+import {
+  BloodType,
+  Generation,
+  Position,
+  PhotoAlbumType,
+  GlowStickColor,
+  MemberNameKey,
+} from 'server/actors/Members/types';
+import { UnitType } from 'server/actors/Units/types';
 import { ImageUrl, Site } from 'server/types/commons';
 
 export type MemberRaw = {
@@ -18,10 +20,10 @@ export type MemberRaw = {
     lastNameEn: string;
   };
   glowStickColor: {
-    left: GlowStickColorType;
-    right: GlowStickColorType;
+    left: GlowStickColor;
+    right: GlowStickColor;
   };
-  join: JoinedGenerationType;
+  join: Generation;
   birthday: string;
   height: number;
   bloodType: BloodType;
@@ -60,7 +62,7 @@ export type MemberResult = MemberRaw & {
   }[];
   positionsHistory: {
     singleNumber: string;
-    position: PositionType;
+    position: Position;
   }[];
   positionsCounter: {
     center: number;

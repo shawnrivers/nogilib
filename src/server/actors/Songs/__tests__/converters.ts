@@ -6,8 +6,6 @@ import {
   convertSongPerformersTag,
   convertSongOtherCds,
 } from 'server/actors/Songs/converters';
-import { SONGS } from 'server/actors/Songs/constants/songTitle';
-import { SongType } from 'server/actors/Songs/constants/songType';
 import { Songs } from 'server/actors/Songs';
 import { songsRawArray } from 'server/actors/Songs/raw';
 import { discographyRawArray } from 'server/actors/Discography/raw/editor';
@@ -166,16 +164,14 @@ describe('convertSongArtwork', () => {
 
 describe('convertSongType', () => {
   test('should return "coupling" when song type is "selected"', () => {
-    expect(convertSongType(SongType.Selected)).toEqual('coupling');
+    expect(convertSongType('selected')).toEqual('coupling');
   });
 
   test('except the above, should return exact song type', () => {
-    expect(convertSongType(SongType.Title)).toEqual('title');
-    expect(convertSongType(SongType.Lead)).toEqual('lead');
-    expect(convertSongType(SongType.Under)).toEqual('under');
-    expect(convertSongType(SongType.FirstGeneration)).toEqual(
-      'first generation'
-    );
+    expect(convertSongType('title')).toEqual('title');
+    expect(convertSongType('lead')).toEqual('lead');
+    expect(convertSongType('under')).toEqual('under');
+    expect(convertSongType('first generation')).toEqual('first generation');
   });
 });
 
@@ -545,7 +541,7 @@ describe('convertSongPerformersTag', () => {
 
     expect(
       convertSongPerformersTag({
-        songType: SongType.None,
+        songType: 'none',
         songSingleResult: { title: '', number: '' },
         songAlbumsResult: [],
         songOtherCdsResult: convertSongOtherCds({

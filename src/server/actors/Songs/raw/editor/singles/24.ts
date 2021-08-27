@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: '夜明けまで強がらなくてもいい',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['山田裕介'],
@@ -43,7 +42,7 @@ export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '僕のこと、知ってる?',
-    type: SongType.Coupling,
+    type: 'coupling',
     creators: {
       lyrics: ['秋元康'],
       compose: ['中村泰輔'],
@@ -83,7 +82,7 @@ export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '路面電車の街',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['杉山勝彦'],
@@ -96,7 +95,7 @@ export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '図書室の君へ',
-    type: SongType.FourthGeneration,
+    type: 'fourth generation',
     creators: {
       lyrics: ['秋元康'],
       compose: ['杉山勝彦'],
@@ -124,7 +123,7 @@ export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '時々 思い出してください',
-    type: SongType.Solo,
+    type: 'solo',
     creators: {
       lyrics: ['秋元康'],
       compose: ['杉山勝彦'],
@@ -136,7 +135,7 @@ export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
 
   createSongRaw({
     title: '～Do my best～じゃ意味はない',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['浦島健太', 'APAZZI'],
@@ -171,7 +170,7 @@ export const TWENTY_FOURTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '僕の思い込み',
-    type: SongType.Coupling,
+    type: 'coupling',
     creators: {
       lyrics: ['秋元康'],
       compose: ['杉山勝彦'],

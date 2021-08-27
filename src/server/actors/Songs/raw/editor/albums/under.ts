@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const UNDER_ALBUM_SONGS: SongRaw[] = [
   createSongRaw({
     title: '自分のこと',
-    type: SongType.Solo,
+    type: 'solo',
     creators: {
       lyrics: ['秋元康'],
       compose: ['小松清人'],
@@ -15,7 +14,7 @@ export const UNDER_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '自惚れビーチ',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['ツキダタダシ'],
@@ -43,7 +42,7 @@ export const UNDER_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'その女',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['HRK'],
@@ -71,7 +70,7 @@ export const UNDER_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '誰よりそばにいたい',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['岩崎哲也'],

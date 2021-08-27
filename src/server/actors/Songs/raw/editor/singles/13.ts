@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: '今、話したい誰かがいる',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Akira Sunset', 'APAZZI'],
@@ -36,7 +35,7 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '嫉妬の権利',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['丸山真由子'],
@@ -71,7 +70,7 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'ポピパッパパー',
-    type: SongType.Selected,
+    type: 'selected',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Akira Sunset', 'ha-j'],
@@ -101,7 +100,7 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '大人への近道',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['古川貴浩'],
@@ -121,7 +120,7 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '悲しみの忘れ方',
-    type: SongType.Coupling,
+    type: 'coupling',
     creators: {
       lyrics: ['秋元康'],
       compose: ['近藤圭一'],
@@ -158,7 +157,7 @@ export const THIRTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '隙間',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Akira Sunset', 'Carlos K.'],

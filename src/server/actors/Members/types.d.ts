@@ -1,3 +1,27 @@
+export type BloodType = 'a' | 'b' | 'o' | 'ab' | 'unknown';
+export type Generation = 'first' | 'second' | 'third' | 'fourth' | 'exchange';
+export type Position =
+  | 'center'
+  | 'fukujin'
+  | 'selected'
+  | 'under'
+  | 'trainee'
+  | 'skip'
+  | 'none';
+export type PhotoAlbumType = 'photo album' | 'photo book' | 'photo magazine';
+export type GlowStickColor =
+  | 'red'
+  | 'yellow'
+  | 'white'
+  | 'blue'
+  | 'green'
+  | 'purple'
+  | 'black'
+  | 'pink'
+  | 'orange'
+  | 'light blue'
+  | 'yellow green'
+  | 'none';
 export type MemberNameKey =
   | 'akimotomanatsu'
   | 'ikutaerika'

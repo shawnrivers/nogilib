@@ -6,8 +6,7 @@ import {
 } from 'server/actors/Members/models';
 import { UnitsRawArray } from 'server/actors/Units/models';
 import { SongsRawObject } from 'server/actors/Songs/models';
-import { SongType } from 'server/actors/Songs/constants/songType';
-import { PositionType } from 'server/actors/Members/constants/position';
+
 import {
   DiscographyRawArray,
   DiscographyRaw,
@@ -18,6 +17,7 @@ import {
   getResponsiveImageUrls,
   getPath,
 } from 'server/utils/path';
+import { Position } from 'server/actors/Members/types';
 
 type GalleryWithDate = {
   url: string;
@@ -323,34 +323,34 @@ export const convertMemberPositionsHistory: ConvertMemberPositionsHistory = ({
   const memberPositionHistoryResult = [];
 
   for (const single of singlesRawArray) {
-    let singlePosition = PositionType.None;
+    let singlePosition: Position = 'none';
 
     // Check trainee, skip and under.
     if (single.behindPerformers.trainees.includes(memberName)) {
-      singlePosition = PositionType.Trainee;
+      singlePosition = 'trainee';
     } else if (single.behindPerformers.skips.includes(memberName)) {
-      singlePosition = PositionType.Skip;
+      singlePosition = 'skip';
     } else if (single.underMembers.includes(memberName)) {
-      singlePosition = PositionType.Under;
+      singlePosition = 'under';
     } else {
       for (const singleSong of single.songs) {
         const song = songsRawObject[singleSong.title];
 
         // Calculate center, fukujin, selected.
-        if (song.type === SongType.Title) {
+        if (song.type === 'title') {
           // Check order: Center -> Fukujin -> Selected
           if (song.performers.center.includes(memberName)) {
             // Check Center
-            singlePosition = PositionType.Center;
+            singlePosition = 'center';
           } else if (song.performers.fukujin.members.includes(memberName)) {
-            singlePosition = PositionType.Fukujin;
+            singlePosition = 'fukujin';
           } else if (
             song.formations.firstRow.includes(memberName) ||
             song.formations.secondRow.includes(memberName) ||
             song.formations.thirdRow.includes(memberName)
           ) {
             // Check Selected
-            singlePosition = PositionType.Selected;
+            singlePosition = 'selected';
           }
         }
       }
@@ -381,19 +381,19 @@ export const convertMemberPositionsCounter: ConvertMemberPositionsCounter =
 
     for (const position of positionsHistory) {
       switch (position.position) {
-        case PositionType.Center:
+        case 'center':
           center += 1;
           fukujin += 1;
           selected += 1;
           break;
-        case PositionType.Fukujin:
+        case 'fukujin':
           fukujin += 1;
           selected += 1;
           break;
-        case PositionType.Selected:
+        case 'selected':
           selected += 1;
           break;
-        case PositionType.Under:
+        case 'under':
           under += 1;
           break;
         default:

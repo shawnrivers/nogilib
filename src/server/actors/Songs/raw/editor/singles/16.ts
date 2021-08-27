@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: 'サヨナラの意味',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['杉山勝彦'],
@@ -44,7 +43,7 @@ export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'ブランコ',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Hiro Hoashi'],
@@ -79,7 +78,7 @@ export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '孤独な青空',
-    type: SongType.Selected,
+    type: 'selected',
     creators: {
       lyrics: ['秋元康'],
       compose: ['aokado'],
@@ -112,7 +111,7 @@ export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'あの教室',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['カワノミチオ'],
@@ -125,7 +124,7 @@ export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '2度目のキスから',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Akira Sunset', 'APAZZI'],
@@ -144,7 +143,7 @@ export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '君に贈る花がない',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Rizz'],
@@ -164,7 +163,7 @@ export const SIXTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'ないものねだり',
-    type: SongType.Solo,
+    type: 'solo',
     creators: {
       lyrics: ['秋元康'],
       compose: ['丸谷マナブ'],

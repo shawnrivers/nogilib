@@ -1,12 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
 
-import { SongType } from 'server/actors/Songs/constants/songType';
-
 export const NINTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: '夏のFree&Easy',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['井上トモノリ'],
@@ -43,7 +41,7 @@ export const NINTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'ここにいる理由',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['長谷川湊'],
@@ -78,7 +76,7 @@ export const NINTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '何もできずにそばにいる',
-    type: SongType.Selected,
+    type: 'selected',
     creators: {
       lyrics: ['秋元康'],
       compose: ['角野寿和'],
@@ -113,7 +111,7 @@ export const NINTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'その先の出口!',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Carlos K.'],
@@ -137,7 +135,7 @@ export const NINTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '無口なライオン',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Shusui', 'ヒロイズム'],
@@ -160,7 +158,7 @@ export const NINTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '僕が行かなきゃ誰が行くんだ?',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['中土智博'],

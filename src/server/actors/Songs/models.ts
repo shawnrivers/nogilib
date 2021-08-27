@@ -1,5 +1,5 @@
-import { MemberNameKey } from 'server/actors/Members/types/memberNameKey';
-import { SongType } from 'server/actors/Songs/constants/songType';
+import { MemberNameKey } from 'server/actors/Members/types';
+import { SongType } from 'server/actors/Songs/types';
 import { SongTitle } from 'server/actors/Songs/constants/songTitle';
 import { UnitName } from 'server/actors/Units/constants/unitName';
 import { DiscographyType } from 'server/actors/Discography/types';

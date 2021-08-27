@@ -1,6 +1,4 @@
-import { JoinedGenerationType } from 'server/actors/Members/constants/joinedGeneration';
-import { MemberNameKey } from 'server/actors/Members/types/memberNameKey';
-import { SocialMedia } from 'server/actors/Members/constants/socialMedia';
+import { Generation, MemberNameKey } from 'server/actors/Members/types';
 import { MemberResult } from 'server/actors/Members/models';
 import { Site } from 'server/types/commons';
 
@@ -27,13 +25,11 @@ export function sortByDate<T>(
  * For the items that do not exist in the array,
  * they should have the lowest order.
  */
-const joinOrder: JoinedGenerationType[] = [
-  JoinedGenerationType.First,
-  JoinedGenerationType.Second,
-  JoinedGenerationType.Third,
-  JoinedGenerationType.Fourth,
-  JoinedGenerationType.Exchange,
-].reverse();
+const joinOrder: Generation[] = (
+  ['first', 'second', 'third', 'fourth', 'exchange'] as const
+)
+  .slice()
+  .reverse();
 
 export function sortByJoin<T extends Pick<MemberResult, 'join'>>(
   array: readonly T[],
@@ -71,16 +67,16 @@ export function sortByGraduation<T extends Pick<MemberResult, 'graduation'>>(
 }
 
 const socialMediaOrder: string[] = [
-  SocialMedia.Instagram,
-  SocialMedia.Twitter,
-  SocialMedia.YouTube,
-  SocialMedia.TikTok,
-  SocialMedia.Blog,
-  SocialMedia.FourthGenBlog,
-  SocialMedia.Official,
-  SocialMedia.OnlineSalon,
-  SocialMedia.Profile,
-  SocialMedia.Weibo,
+  'Instagram',
+  'Twitter',
+  'YouTube',
+  'TikTok',
+  'blog',
+  'Fourth Gen Blog',
+  'official',
+  'online salon',
+  'profile',
+  'Weibo',
 ].reverse();
 
 export function sortBySocialMedia(

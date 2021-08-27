@@ -1,7 +1,7 @@
 import { ImageUrl, Site } from 'server/types/commons';
 import { SongTitle } from 'server/actors/Songs/constants/songTitle';
-import { SongType } from 'server/actors/Songs/constants/songType';
-import { MemberNameKey } from 'server/actors/Members/types/memberNameKey';
+import { SongType } from 'server/actors/Songs/types';
+import { MemberNameKey } from 'server/actors/Members/types';
 import { CdType, DiscographyType } from 'server/actors/Discography/types';
 import { UnitName } from 'server/actors/Units/constants/unitName';
 import { CdTitle } from 'server/actors/Discography/constants/cdTitle';

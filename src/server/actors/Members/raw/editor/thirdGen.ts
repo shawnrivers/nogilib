@@ -1,10 +1,3 @@
-import { Birthplace } from 'server/actors/Members/constants/birthplace';
-import { BloodType } from 'server/actors/Members/constants/bloodType';
-import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
-import { JoinedGenerationType } from 'server/actors/Members/constants/joinedGeneration';
-
-import { PhotoAlbumType } from 'server/actors/Members/constants/photoAlbum';
-import { SocialMedia } from 'server/actors/Members/constants/socialMedia';
 import { MemberRaw } from 'server/actors/Members/models';
 import { createMemberRaw } from 'server/actors/Members/raw/creator';
 
@@ -12,19 +5,19 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'itouriria',
     nameNotations: ['伊藤', '理々杏', 'いとう', 'りりあ', 'ito', 'riria'],
-    glowStickColor: [GlowStickColorType.Purple, GlowStickColorType.Red],
-    join: JoinedGenerationType.Third,
+    glowStickColor: ['purple', 'red'],
+    join: 'third',
     birthday: '2002-10-08',
     height: 154,
-    bloodType: BloodType.B,
-    origin: Birthplace.Okinawa,
+    bloodType: 'b',
+    origin: '沖縄県',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/riria.itou/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/itouriria.php',
       },
     ],
@@ -32,19 +25,19 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'iwamotorenka',
     nameNotations: ['岩本', '蓮加', 'いわもと', 'れんか', 'iwamoto', 'renka'],
-    glowStickColor: [GlowStickColorType.Red, GlowStickColorType.Pink],
-    join: JoinedGenerationType.Third,
+    glowStickColor: ['red', 'pink'],
+    join: 'third',
     birthday: '2004-02-02',
     height: 159,
-    bloodType: BloodType.B,
-    origin: Birthplace.Tokyo,
+    bloodType: 'b',
+    origin: '東京都',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/renka.iwamoto/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/iwamotorenka.php',
       },
     ],
@@ -52,23 +45,23 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'umezawaminami',
     nameNotations: ['梅澤', '美波', 'うめざわ', 'みなみ', 'umezakwa', 'minami'],
-    glowStickColor: [GlowStickColorType.Blue, GlowStickColorType.LightBlue],
-    join: JoinedGenerationType.Third,
+    glowStickColor: ['blue', 'light blue'],
+    join: 'third',
     birthday: '1999-01-06',
     height: 170,
-    bloodType: BloodType.A,
-    origin: Birthplace.Kanagawa,
+    bloodType: 'a',
+    origin: '神奈川県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/ume_minami.official/',
       },
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/minami.umezawa/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/umezawaminami.php',
       },
     ],
@@ -76,10 +69,10 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '夢の近く',
         release: '2020-09-29',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/ume1st_minami',
           },
         ],
@@ -90,23 +83,23 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'oozonomomoko',
     nameNotations: ['大園', '桃子', 'おおぞの', 'ももこ', 'ozono', 'momoko'],
-    glowStickColor: [GlowStickColorType.Pink, GlowStickColorType.Green],
-    join: JoinedGenerationType.Third,
+    glowStickColor: ['pink', 'green'],
+    join: 'third',
     birthday: '1999-09-13',
     height: 156,
-    bloodType: BloodType.O,
-    origin: Birthplace.Kagoshima,
+    bloodType: 'o',
+    origin: '鹿児島県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/o.momoko_official/',
       },
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/momoko.oozono/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/oozonomomoko.php',
       },
     ],
@@ -114,19 +107,19 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'kuboshiori',
     nameNotations: ['久保', '史緒里', 'くぼ', 'しおり', 'kubo', 'shiori'],
-    glowStickColor: [GlowStickColorType.LightBlue, GlowStickColorType.Yellow],
-    join: JoinedGenerationType.Third,
+    glowStickColor: ['light blue', 'yellow'],
+    join: 'third',
     birthday: '2001-07-14',
     height: 161,
-    bloodType: BloodType.O,
-    origin: Birthplace.Miyagi,
+    bloodType: 'o',
+    origin: '宮城県',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/shiori.kubo/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/kuboshiori.php',
       },
     ],
@@ -141,19 +134,19 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
       'sakaguchi',
       'tamami',
     ],
-    glowStickColor: [GlowStickColorType.Purple, GlowStickColorType.Yellow],
-    join: JoinedGenerationType.Third,
+    glowStickColor: ['purple', 'yellow'],
+    join: 'third',
     birthday: '2001-11-10',
     height: 161,
-    bloodType: BloodType.A,
-    origin: Birthplace.Tokyo,
+    bloodType: 'a',
+    origin: '東京都',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/tamami.sakaguchi/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/sakaguchitamami.php',
       },
     ],
@@ -161,23 +154,23 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'satoukaede',
     nameNotations: ['佐藤', '楓', 'さとう', 'かえで', 'sato', 'kaede'],
-    glowStickColor: [GlowStickColorType.Red, GlowStickColorType.Red],
-    join: JoinedGenerationType.Third,
+    glowStickColor: ['red', 'red'],
+    join: 'third',
     birthday: '1998-03-23',
     height: 161,
-    bloodType: BloodType.A,
-    origin: Birthplace.Aichi,
+    bloodType: 'a',
+    origin: '愛知県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/Kaede_Sato.official/',
       },
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/kaede.satou/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/satoukaede.php',
       },
     ],
@@ -185,19 +178,19 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'nakamurareno',
     nameNotations: ['中村', '麗乃', 'なかむら', 'れの', 'nakamura', 'reno'],
-    glowStickColor: [GlowStickColorType.Blue, GlowStickColorType.White],
-    join: JoinedGenerationType.Third,
+    glowStickColor: ['blue', 'white'],
+    join: 'third',
     birthday: '2001-09-27',
     height: 167,
-    bloodType: BloodType.Unknown,
-    origin: Birthplace.Tokyo,
+    bloodType: 'unknown',
+    origin: '東京都',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/reno.nakamura/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/nakamurareno.php',
       },
     ],
@@ -205,23 +198,23 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'mukaihazuki',
     nameNotations: ['向井', '葉月', 'むかい', 'はづき', 'mukai', 'hazuki'],
-    glowStickColor: [GlowStickColorType.Yellow, GlowStickColorType.Yellow],
-    join: JoinedGenerationType.Third,
+    glowStickColor: ['yellow', 'yellow'],
+    join: 'third',
     birthday: '1999-08-23',
     height: 152,
-    bloodType: BloodType.A,
-    origin: Birthplace.Tokyo,
+    bloodType: 'a',
+    origin: '東京都',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/hazuki.p3.official/',
       },
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/hazuki.mukai/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/mukaihazuki.php',
       },
     ],
@@ -236,23 +229,23 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
       'yamashita',
       'mizuki',
     ],
-    glowStickColor: [GlowStickColorType.Blue, GlowStickColorType.Yellow],
-    join: JoinedGenerationType.Third,
+    glowStickColor: ['blue', 'yellow'],
+    join: 'third',
     birthday: '1999-07-26',
     height: 160,
-    bloodType: BloodType.O,
-    origin: Birthplace.Tokyo,
+    bloodType: 'o',
+    origin: '東京都',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/mizuki.yamashita.official/',
       },
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/mizuki.yamashita/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/yamashitamizuki.php',
       },
     ],
@@ -260,10 +253,10 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '忘れられない人',
         release: '2020-01-21',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/mizuki1st_paris',
           },
         ],
@@ -281,19 +274,19 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
       'yoshida',
       'ayanochristie',
     ],
-    glowStickColor: [GlowStickColorType.Pink, GlowStickColorType.Purple],
-    join: JoinedGenerationType.Third,
+    glowStickColor: ['pink', 'purple'],
+    join: 'third',
     birthday: '1995-09-06',
     height: 161,
-    bloodType: BloodType.A,
-    origin: Birthplace.Oita,
+    bloodType: 'a',
+    origin: '大分県',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/ayanochristie.yoshida/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/yoshidaayanochristie.php',
       },
     ],
@@ -301,23 +294,23 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'yodayuuki',
     nameNotations: ['与田', '祐希', 'よだ', 'ゆうき', 'yoda', 'yuki'],
-    glowStickColor: [GlowStickColorType.Red, GlowStickColorType.Green],
-    join: JoinedGenerationType.Third,
+    glowStickColor: ['red', 'green'],
+    join: 'third',
     birthday: '2000-05-05',
     height: 153,
-    bloodType: BloodType.O,
-    origin: Birthplace.Fukuoka,
+    bloodType: 'o',
+    origin: '福岡県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/yodayuuki_oimo/',
       },
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/yuuki.yoda/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/yodayuuki.php',
       },
     ],
@@ -325,10 +318,10 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '日向の温度',
         release: '2017-12-26',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/gentosha_yoda',
           },
         ],
@@ -337,10 +330,10 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '無口な時間',
         release: '2020-03-10',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/yodayuuki_oimo',
           },
         ],

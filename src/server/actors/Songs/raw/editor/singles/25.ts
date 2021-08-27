@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: 'しあわせの保護色',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['MASANORI URA'],
@@ -47,7 +46,7 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'サヨナラ Stay with me',
-    type: SongType.Coupling,
+    type: 'coupling',
     creators: {
       lyrics: ['秋元康'],
       compose: ['シライシ紗トリ'],
@@ -68,7 +67,7 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'じゃあね。',
-    type: SongType.Solo,
+    type: 'solo',
     creators: {
       lyrics: ['白石麻衣'],
       compose: ['浦島健太', 'H.Shing'],
@@ -79,7 +78,7 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'アナスターシャ',
-    type: SongType.SecondGeneration,
+    type: 'second generation',
     creators: {
       lyrics: ['秋元康'],
       compose: ['中村泰輔'],
@@ -95,7 +94,7 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '毎日がBrand new day',
-    type: SongType.ThirdGeneration,
+    type: 'third generation',
     creators: {
       lyrics: ['秋元康'],
       compose: ['APAZZI'],
@@ -124,7 +123,7 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'I see…',
-    type: SongType.FourthGeneration,
+    type: 'fourth generation',
     creators: {
       lyrics: ['秋元康'],
       compose: ['youth case'],
@@ -152,7 +151,7 @@ export const TWENTY_FIFTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'ファンタスティック三色パン',
-    type: SongType.Coupling,
+    type: 'coupling',
     creators: {
       lyrics: ['秋元康'],
       compose: ['ジンツチハシ'],

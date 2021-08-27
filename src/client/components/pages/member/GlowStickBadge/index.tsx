@@ -4,14 +4,14 @@ import {
   getElevationWhiteOverlayTransparencyVarName,
 } from 'client/styles/tokens/elevation';
 import { commonStyles } from 'client/styles/tokens';
-import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
+import { GlowStickColor } from 'server/actors/Members/types';
 import {
   getColorVarName,
   getGlowStickColorVarName,
 } from 'client/styles/tokens/colors';
 
 export type GlowStickBadgeProps = {
-  color: GlowStickColorType;
+  color: GlowStickColor;
   size?: number;
   className?: string;
 };

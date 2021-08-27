@@ -1,4 +1,4 @@
-import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
+import { GlowStickColor } from 'server/actors/Members/types';
 
 export type GlobalColorKey =
   | 'white'
@@ -107,6 +107,6 @@ export function getGlobalColorVarName(color: GlobalColorKey): string {
   return `--${color}`;
 }
 
-export function getGlowStickColorVarName(color: GlowStickColorType): string {
+export function getGlowStickColorVarName(color: GlowStickColor): string {
   return `--glow-stick-color-${color.replace(' ', '-')}`;
 }

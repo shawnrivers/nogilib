@@ -1,5 +1,4 @@
 import { Members } from 'server/actors/Members';
-import { PositionType } from 'server/actors/Members/constants/position';
 import { MemberResult } from 'server/actors/Members/models';
 import { Songs } from 'server/actors/Songs';
 import { SongResult } from 'server/actors/Songs/models';
@@ -25,7 +24,7 @@ export type SongPageData = {
     name: MemberResult['name'];
     nameNotations: MemberResult['nameNotations'];
     profileImage: ImageUrl;
-    position: PositionType.Center | PositionType.Fukujin | null;
+    position: 'center' | 'fukujin' | null;
     isMember: boolean;
   }[][];
 };
@@ -35,11 +34,11 @@ function getPerformerPosition(
   memberName: MemberResult['name']
 ): SongPageData['performers'][0][0]['position'] {
   if (song.performers.center.includes(memberName)) {
-    return PositionType.Center;
+    return 'center';
   }
 
   if (song.performers.fukujin.members.includes(memberName)) {
-    return PositionType.Fukujin;
+    return 'fukujin';
   }
 
   return null;

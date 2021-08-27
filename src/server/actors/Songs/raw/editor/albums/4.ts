@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const FOURTH_ALBUM_SONGS: SongRaw[] = [
   createSongRaw({
     title: 'ありがちな恋愛',
-    type: SongType.Lead,
+    type: 'lead',
     creators: {
       lyrics: ['秋元康'],
       compose: ['杉山勝彦'],
@@ -37,7 +36,7 @@ export const FOURTH_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'もし君がいなければ',
-    type: SongType.Solo,
+    type: 'solo',
     creators: {
       lyrics: ['秋元康'],
       compose: ['杉山勝彦'],
@@ -48,7 +47,7 @@ export const FOURTH_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'キスの手裏剣',
-    type: SongType.FourthGeneration,
+    type: 'fourth generation',
     creators: {
       lyrics: ['秋元康'],
       compose: ['山田智和'],
@@ -75,7 +74,7 @@ export const FOURTH_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '頬杖をついては眠れない',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Super Mahirock'],
@@ -93,7 +92,7 @@ export const FOURTH_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'ぼっち党',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['庄司裕'],
@@ -105,7 +104,7 @@ export const FOURTH_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'さゆりんご募集中',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['浦島健太', '菊池博人'],
@@ -118,7 +117,7 @@ export const FOURTH_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'ゴルゴンゾーラ',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['BASEMINT'],
@@ -130,7 +129,7 @@ export const FOURTH_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'もうすぐ～ザンビ伝説～',
-    type: SongType.Special,
+    type: 'special',
     creators: {
       lyrics: ['秋元康'],
       compose: ['渡辺剛'],

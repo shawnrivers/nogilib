@@ -6,7 +6,6 @@ import { convertCdArtwork } from 'server/actors/Discography/raw/creators';
 import { Members } from 'server/actors/Members';
 import { membersRawArray } from 'server/actors/Members/raw';
 import { Songs } from 'server/actors/Songs';
-import { SongType } from 'server/actors/Songs/constants/songType';
 import { songsRawArray } from 'server/actors/Songs/raw';
 
 const songsRawObject = new Songs(songsRawArray).rawObject;
@@ -62,7 +61,7 @@ describe('convertCdSongType', () => {
         cdSongTitle: 'OVERTURE',
         songsRawObject,
       })
-    ).toEqual(SongType.Coupling);
+    ).toEqual('coupling');
   });
 
   test("should return 'coupling' when cd song type is 'selected'", () => {
@@ -71,7 +70,7 @@ describe('convertCdSongType', () => {
         cdSongTitle: songsRawObject['月の大きさ'].title,
         songsRawObject,
       })
-    ).toEqual(SongType.Coupling);
+    ).toEqual('coupling');
   });
 
   test('except for the above cases, should return the exact cd song type', () => {

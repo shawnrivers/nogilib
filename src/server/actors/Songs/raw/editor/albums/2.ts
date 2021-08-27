@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const SECOND_ALBUM_SONGS: SongRaw[] = [
   createSongRaw({
     title: 'きっかけ',
-    type: SongType.Selected,
+    type: 'selected',
     creators: {
       lyrics: ['秋元康'],
       compose: ['杉山勝彦'],
@@ -38,7 +37,7 @@ export const SECOND_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '太陽に口説かれて',
-    type: SongType.Selected,
+    type: 'selected',
     creators: {
       lyrics: ['秋元康'],
       compose: ['フジノタカフミ'],
@@ -67,7 +66,7 @@ export const SECOND_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '欲望のリインカーネーション',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康', '本山清治'],
       compose: ['渡辺未来'],
@@ -89,7 +88,7 @@ export const SECOND_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '空気感',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['DR QUEENBEE'],
@@ -107,7 +106,7 @@ export const SECOND_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '光合成希望',
-    type: SongType.Solo,
+    type: 'solo',
     creators: {
       lyrics: ['秋元康'],
       compose: ['吉田博'],
@@ -117,7 +116,7 @@ export const SECOND_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'Threefold choice',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['古川貴浩'],
@@ -129,7 +128,7 @@ export const SECOND_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '低体温のキス',
-    type: SongType.Solo,
+    type: 'solo',
     creators: {
       lyrics: ['秋元康'],
       compose: ['中谷あつこ'],
@@ -139,7 +138,7 @@ export const SECOND_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '失恋したら、顔を洗え!',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['さいとうくにあき'],
@@ -152,7 +151,7 @@ export const SECOND_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: 'かき氷の片想い',
-    type: SongType.SecondGeneration,
+    type: 'second generation',
     creators: {
       lyrics: ['秋元康'],
       compose: ['白須賀悟'],
@@ -172,7 +171,7 @@ export const SECOND_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '環状六号線',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['サイトウリョースケ'],
@@ -185,7 +184,7 @@ export const SECOND_ALBUM_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '口約束',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Amber'],

@@ -1,11 +1,10 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { createSongRaw } from 'server/actors/Songs/raw/creator';
-import { SongType } from 'server/actors/Songs/constants/songType';
 
 export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: 'ハルジオンが咲く頃',
-    type: SongType.Title,
+    type: 'title',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Akira Sunset', 'APAZZI'],
@@ -42,7 +41,7 @@ export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '不等号',
-    type: SongType.Under,
+    type: 'under',
     creators: {
       lyrics: ['秋元康'],
       compose: ['福田貴史'],
@@ -80,7 +79,7 @@ export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '遥かなるブータン',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['ツキダタダシ'],
@@ -100,7 +99,7 @@ export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '強がる蕾',
-    type: SongType.Solo,
+    type: 'solo',
     creators: {
       lyrics: ['秋元康'],
       compose: ['大貫和紀', '河原レオ', '高木龍一'],
@@ -111,7 +110,7 @@ export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '急斜面',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['FURUTA', 'Yasutaka Ishio'],
@@ -124,7 +123,7 @@ export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '釣り堀',
-    type: SongType.Solo,
+    type: 'solo',
     creators: {
       lyrics: ['秋元康'],
       compose: ['Bush-I'],
@@ -135,7 +134,7 @@ export const FOURTEENTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '憂鬱と風船ガム',
-    type: SongType.Unit,
+    type: 'unit',
     creators: {
       lyrics: ['秋元康'],
       compose: ['HIROTOMO', 'Dr.Lilcom'],

@@ -22,8 +22,7 @@ import {
   PositionBadgeProps,
 } from 'client/components/pages/member/PositionBadge';
 import { PageContent } from 'client/components/layout/PageContent';
-import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
-import { PositionType } from 'server/actors/Members/constants/position';
+import { Position } from 'server/actors/Members/types';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { Divider } from 'client/components/atoms/Divider';
 import { filterDuplicate } from 'utils/array';
@@ -33,12 +32,7 @@ import { AspectRatioImage } from 'client/components/atoms/image/AspectRatioImage
  * Local components
  */
 
-const NON_ABSENT_POSITIONS = [
-  PositionType.Center,
-  PositionType.Fukujin,
-  PositionType.Selected,
-  PositionType.Under,
-];
+const NON_ABSENT_POSITIONS = ['center', 'fukujin', 'selected', 'under'];
 
 const PositionBadgeIndicator: React.FC<{
   position: PositionBadgeProps['position'];
@@ -75,15 +69,15 @@ const PositionBadgeIndicator: React.FC<{
   );
 };
 
-function getPositionOrder(position: PositionType): number {
+function getPositionOrder(position: Position): number {
   switch (position) {
-    case PositionType.Center:
+    case 'center':
       return 4;
-    case PositionType.Fukujin:
+    case 'fukujin':
       return 3;
-    case PositionType.Selected:
+    case 'selected':
       return 2;
-    case PositionType.Under:
+    case 'under':
       return 1;
     default:
       return 0;
@@ -91,7 +85,7 @@ function getPositionOrder(position: PositionType): number {
 }
 
 const PositionBadgeIndicatorsGroup: React.FC<{
-  positionTypes: PositionType[];
+  positionTypes: Position[];
 }> = props => {
   return (
     <ul
@@ -223,9 +217,7 @@ const MemberPage: React.FC<PageProps> = props => {
               getPositionOrder(positionB) - getPositionOrder(positionA)
           )
           .map(position =>
-            NON_ABSENT_POSITIONS.includes(position)
-              ? position
-              : PositionType.None
+            NON_ABSENT_POSITIONS.includes(position) ? position : 'none'
           )
       ),
     [positionsHistory]
@@ -360,7 +352,7 @@ const MemberPage: React.FC<PageProps> = props => {
                   </InfoItemValue>
                 </>
               )}
-              {glowStickColor.left !== GlowStickColorType.None && (
+              {glowStickColor.left !== 'none' && (
                 <>
                   <InfoItemLabel>
                     <Translation text="glow stick" />

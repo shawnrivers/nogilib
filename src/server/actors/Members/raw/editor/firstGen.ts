@@ -1,10 +1,3 @@
-import { Birthplace } from 'server/actors/Members/constants/birthplace';
-import { BloodType } from 'server/actors/Members/constants/bloodType';
-import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
-import { JoinedGenerationType } from 'server/actors/Members/constants/joinedGeneration';
-
-import { PhotoAlbumType } from 'server/actors/Members/constants/photoAlbum';
-import { SocialMedia } from 'server/actors/Members/constants/socialMedia';
 import { MemberRaw } from 'server/actors/Members/models';
 import { createMemberRaw } from 'server/actors/Members/raw/creator';
 
@@ -12,27 +5,27 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'akimotomanatsu',
     nameNotations: ['秋元', '真夏', 'あきもと', 'まなつ', 'akimoto', 'manatsu'],
-    glowStickColor: [GlowStickColorType.Red, GlowStickColorType.Pink],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['red', 'pink'],
+    join: 'first',
     birthday: '1993-08-20',
     height: 154,
-    bloodType: BloodType.B,
-    origin: Birthplace.Saitama,
+    bloodType: 'b',
+    origin: '埼玉県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/manatsu.akimoto_official/',
       },
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/manatsu.akimoto/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/akimotomanatsu.php',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/akimoto-manatsu',
       },
     ],
@@ -40,10 +33,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '真夏の気圧配置',
         release: '2017-02-28',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/manattan_0228',
           },
         ],
@@ -52,10 +45,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'しあわせにしたい',
         release: '2020-04-08',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/manatsu_2nd',
           },
         ],
@@ -66,27 +59,27 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'ikutaerika',
     nameNotations: ['生田', '絵梨花', 'いくた', 'えりか', 'ikuta', 'erika'],
-    glowStickColor: [GlowStickColorType.Yellow, GlowStickColorType.Yellow],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['yellow', 'yellow'],
+    join: 'first',
     birthday: '1997-01-22',
     height: 160,
-    bloodType: BloodType.A,
-    origin: Birthplace.Düsseldorf,
+    bloodType: 'a',
+    origin: 'Düsseldorf, Germany',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/ikutaerika.official/',
       },
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/erika.ikuta/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/ikutaerika.php',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/ikuta-erika',
       },
     ],
@@ -94,7 +87,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '転調',
         release: '2016-01-21',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: 'amazon',
@@ -106,10 +99,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'インターミッション',
         release: '2019-01-22',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/erika_newyork/',
           },
         ],
@@ -120,27 +113,27 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'ikomarina',
     nameNotations: ['生駒', '里奈', 'いこま', 'りな', 'ikoma', 'rina'],
-    glowStickColor: [GlowStickColorType.Blue, GlowStickColorType.Purple],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['blue', 'purple'],
+    join: 'first',
     birthday: '1995-12-29',
     height: 153,
-    bloodType: BloodType.AB,
-    origin: Birthplace.Akita,
+    bloodType: 'ab',
+    origin: '秋田県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/ikomarina_1229/',
       },
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/ikomarina_staff',
       },
       {
-        title: SocialMedia.YouTube,
+        title: 'YouTube',
         url: 'https://www.youtube.com/channel/UCKfIRa0Zhs6HQ33a_L6Tc5Q/',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://ikomarina.com/',
       },
     ],
@@ -148,7 +141,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '君の足跡',
         release: '2016-02-24',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: 'amazon',
@@ -164,27 +157,27 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'inouesayuri',
     nameNotations: ['井上', '小百合', 'いのうえ', 'さゆり', 'inoue', 'sayuri'],
-    glowStickColor: [GlowStickColorType.White, GlowStickColorType.White],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['white', 'white'],
+    join: 'first',
     birthday: '1994-12-14',
     height: 156,
-    bloodType: BloodType.B,
-    origin: Birthplace.Saitama,
+    bloodType: 'b',
+    origin: '埼玉県',
     sites: [
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/syr_1214',
       },
       {
-        title: SocialMedia.YouTube,
+        title: 'YouTube',
         url: 'https://www.youtube.com/channel/UCmVJtdqSRFSsJb5hjHL4QKg',
       },
       {
-        title: SocialMedia.FanClub,
+        title: 'fan club',
         url: 'https://www.sayuriinoue-fc.com',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'http://www.siscompany.com/management/artist.php?id=30',
       },
     ],
@@ -192,10 +185,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '存在',
         release: '2018-12-12',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/1st71845914',
           },
         ],
@@ -207,27 +200,27 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'etoumisa',
     nameNotations: ['衛藤', '美彩', 'えとう', 'みさ', 'eto', 'misa'],
-    glowStickColor: [GlowStickColorType.Red, GlowStickColorType.Red],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['red', 'red'],
+    join: 'first',
     birthday: '1993-01-04',
     height: 163,
-    bloodType: BloodType.AB,
-    origin: Birthplace.Oita,
+    bloodType: 'ab',
+    origin: '大分県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/misa_eto_official/',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://etomisa.jp/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://n46llc.com/s/m00/artist/10',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/eto-misa',
       },
     ],
@@ -235,7 +228,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '彩',
         release: '2012-01-31',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: 'amazon',
@@ -247,10 +240,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '話を聞こうか。',
         release: '2017-04-25',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/33misa_syd',
           },
         ],
@@ -259,10 +252,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'Decision',
         release: '2020-01-08',
-        type: PhotoAlbumType.PhotoBook,
+        type: 'photo book',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/etomisabook',
           },
         ],
@@ -275,31 +268,31 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'kawagohina',
     nameNotations: ['川後', '陽菜', 'かわご', 'ひな', 'kawago', 'hina'],
-    glowStickColor: [GlowStickColorType.Red, GlowStickColorType.Red],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['red', 'red'],
+    join: 'first',
     birthday: '1998-03-22',
     height: 161,
-    bloodType: BloodType.O,
-    origin: Birthplace.Nagasaki,
+    bloodType: 'o',
+    origin: '長崎県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/kawagohina3/',
       },
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/kawagohina3',
       },
       {
-        title: SocialMedia.YouTube,
+        title: 'YouTube',
         url: 'https://www.youtube.com/channel/UCygUvA0j15FpHp6kv2IuQYA',
       },
       {
-        title: SocialMedia.TikTok,
+        title: 'TikTok',
         url: 'https://www.tiktok.com/@kawagohina3',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://kawagopro.com/',
       },
     ],
@@ -307,10 +300,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '川後陽菜 インタビューフォトブック',
         release: '2020-03-02',
-        type: PhotoAlbumType.PhotoBook,
+        type: 'photo book',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://www.amazon.co.jp/dp/4907929331',
           },
         ],
@@ -322,31 +315,31 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'saitouasuka',
     nameNotations: ['齋藤', '飛鳥', 'さいとう', 'あすか', 'saito', 'asuka'],
-    glowStickColor: [GlowStickColorType.LightBlue, GlowStickColorType.White],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['light blue', 'white'],
+    join: 'first',
     birthday: '1998-08-10',
     height: 158,
-    bloodType: BloodType.O,
-    origin: Birthplace.Tokyo,
+    bloodType: 'o',
+    origin: '東京都',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/asuka.3110.official/',
       },
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/asuka.saito/',
       },
       {
-        title: SocialMedia.Weibo,
+        title: 'Weibo',
         url: 'https://weibo.com/saitoasukaofficial',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/saitouasuka.php',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/saito-asuka',
       },
     ],
@@ -354,10 +347,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '潮騒',
         release: '2017-01-25',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/gentosha_asuka',
           },
         ],
@@ -368,23 +361,23 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'saitouyuuri',
     nameNotations: ['斉藤', '優里', 'さいとう', 'ゆうり', 'saito', 'yuri'],
-    glowStickColor: [GlowStickColorType.Pink, GlowStickColorType.White],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['pink', 'white'],
+    join: 'first',
     birthday: '1993-07-20',
     height: 157,
-    bloodType: BloodType.O,
-    origin: Birthplace.Tokyo,
+    bloodType: 'o',
+    origin: '東京都',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/yuuri_3ito/',
       },
       {
-        title: SocialMedia.TikTok,
+        title: 'TikTok',
         url: 'https://www.tiktok.com/@yuuri_3ito',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/MM1u8Yp3Dv6C',
       },
     ],
@@ -392,10 +385,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '7秒のしあわせ',
         release: '2019-06-20',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/7sec_yuuri',
           },
         ],
@@ -407,27 +400,27 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'sakuraireika',
     nameNotations: ['桜井', '玲香', 'さくらい', 'れいか', 'sakurai', 'reika'],
-    glowStickColor: [GlowStickColorType.Red, GlowStickColorType.Pink],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['red', 'pink'],
+    join: 'first',
     birthday: '1994-05-16',
     height: 156,
-    bloodType: BloodType.A,
-    origin: Birthplace.Kanagawa,
+    bloodType: 'a',
+    origin: '神奈川県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/reika_s16/',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://reikasakurai.com/s/m08/?ima=0916',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://n46llc.com/s/m00/artist/11',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/sakurai-reika',
       },
     ],
@@ -435,10 +428,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '自由ということ',
         release: '2017-03-08',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/reika_kobunsha',
           },
         ],
@@ -447,10 +440,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '視線',
         release: '2019-11-27',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/sakuraireika2nd',
           },
         ],
@@ -462,39 +455,36 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'shiraishimai',
     nameNotations: ['白石', '麻衣', 'しらいし', 'まい', 'shiraishi', 'mai'],
-    glowStickColor: [
-      GlowStickColorType.LightBlue,
-      GlowStickColorType.LightBlue,
-    ],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['light blue', 'light blue'],
+    join: 'first',
     birthday: '1992-08-20',
     height: 162,
-    bloodType: BloodType.A,
-    origin: Birthplace.Gunma,
+    bloodType: 'a',
+    origin: '群馬県',
     graduatedDate: '2020-10-28',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/m.shiraishi.official/',
       },
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/shiraishi_staff',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://maishiraishi-official.com/',
       },
       {
-        title: SocialMedia.YouTube,
+        title: 'YouTube',
         url: 'https://www.youtube.com/c/maishiraishi',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://n46llc.com/s/m00/artist/12?ima=0737',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/shiraishi-mai',
       },
     ],
@@ -502,7 +492,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '清純な大人',
         release: '2014-12-10',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: 'amazon',
@@ -514,7 +504,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'MAI STYLE',
         release: '2015-01-23',
-        type: PhotoAlbumType.PhotoBook,
+        type: 'photo book',
         sites: [
           {
             title: 'amazon',
@@ -526,7 +516,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'パスポート',
         release: '2017-02-07',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: 'amazon',
@@ -538,10 +528,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '白石麻衣メモリアルマガジン',
         release: '2020-10-21',
-        type: PhotoAlbumType.PhotoMagazine,
+        type: 'photo magazine',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/mai_westcoast',
           },
         ],
@@ -552,27 +542,27 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'takayamakazumi',
     nameNotations: ['高山', '一実', 'たかやま', 'かずみ', 'takayama', 'kazumi'],
-    glowStickColor: [GlowStickColorType.LightBlue, GlowStickColorType.Pink],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['light blue', 'pink'],
+    join: 'first',
     birthday: '1994-02-08',
     height: 162,
-    bloodType: BloodType.A,
-    origin: Birthplace.Chiba,
+    bloodType: 'a',
+    origin: '千葉県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://instagram.com/takayama.kazumi.official/',
       },
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/kazumi.takayama/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/takayamakazumi.php',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/takayama-kazumi',
       },
     ],
@@ -580,7 +570,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '恋かもしれない',
         release: '2016-09-15',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: 'amazon',
@@ -592,10 +582,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '独白',
         release: '2019-02-26',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/takayama_tokuma',
           },
         ],
@@ -606,24 +596,24 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'nakadakana',
     nameNotations: ['中田', '花奈', 'なかだ', 'かな', 'nakada', 'kana'],
-    glowStickColor: [GlowStickColorType.Black, GlowStickColorType.White],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['black', 'white'],
+    join: 'first',
     birthday: '1994-08-06',
     height: 158,
-    bloodType: BloodType.A,
-    origin: Birthplace.Saitama,
+    bloodType: 'a',
+    origin: '埼玉県',
     graduatedDate: '2020-10-26',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/nakadakana_1st/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://n46llc.com/s/m00/artist/13?ima=0737',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/nakada-kana',
       },
     ],
@@ -631,10 +621,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '好きなことだけをしていたい',
         release: '2020-10-13',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/nakadakana_1st',
           },
         ],
@@ -645,35 +635,35 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'nishinonanase',
     nameNotations: ['西野', '七瀬', 'にしの', 'ななせ', 'nishino', 'nanase'],
-    glowStickColor: [GlowStickColorType.Green, GlowStickColorType.White],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['green', 'white'],
+    join: 'first',
     birthday: '1994-05-25',
     height: 159,
-    bloodType: BloodType.O,
-    origin: Birthplace.Osaka,
+    bloodType: 'o',
+    origin: '大阪府',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/nishino.nanase.official/',
       },
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/nanase_andstaff',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://nishinonanase.com/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://n46llc.com/s/m00/artist/7',
       },
       {
-        title: SocialMedia.Weibo,
+        title: 'Weibo',
         url: 'https://weibo.com/u/7266809683',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/nishino-nanase',
       },
     ],
@@ -681,7 +671,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '普段着',
         release: '2015-05-18',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: 'amazon',
@@ -693,7 +683,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '風を着替えて',
         release: '2016-09-27',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: 'amazon',
@@ -705,10 +695,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'わたしのこと',
         release: '2018-05-09',
-        type: PhotoAlbumType.PhotoBook,
+        type: 'photo book',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/nanase_1st',
           },
         ],
@@ -720,23 +710,23 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'noujouami',
     nameNotations: ['能條', '愛未', 'のうじょう', 'あみ', 'nojo', 'ami'],
-    glowStickColor: [GlowStickColorType.Orange, GlowStickColorType.Orange],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['orange', 'orange'],
+    join: 'first',
     birthday: '1994-10-18',
     height: 163,
-    bloodType: BloodType.A,
-    origin: Birthplace.Kanagawa,
+    bloodType: 'a',
+    origin: '神奈川県',
     sites: [
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/noujo_ami',
       },
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/noujoami_official/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.tp-e.jp/noujo-ami/',
       },
     ],
@@ -745,27 +735,27 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'higuchihina',
     nameNotations: ['樋口', '日奈', 'ひぐち', 'ひな', 'higuchi', 'hina'],
-    glowStickColor: [GlowStickColorType.Purple, GlowStickColorType.Orange],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['purple', 'orange'],
+    join: 'first',
     birthday: '1998-01-31',
     height: 161,
-    bloodType: BloodType.A,
-    origin: Birthplace.Tokyo,
+    bloodType: 'a',
+    origin: '東京都',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/higuchi_hina_official/',
       },
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/hina.higuchi/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/higuchihina.php',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/higuchi-hina',
       },
     ],
@@ -773,23 +763,23 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'hoshinominami',
     nameNotations: ['星野', 'みなみ', 'ほしの', 'みなみ', 'hoshino', 'minami'],
-    glowStickColor: [GlowStickColorType.White, GlowStickColorType.White],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['white', 'white'],
+    join: 'first',
     birthday: '1998-02-06',
     height: 155,
-    bloodType: BloodType.B,
-    origin: Birthplace.Chiba,
+    bloodType: 'b',
+    origin: '千葉県',
     sites: [
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/minami.hoshino/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/hoshinominami.php',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/hoshino-minami',
       },
     ],
@@ -797,10 +787,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'いたずら',
         release: '2018-04-10',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/373_kawaii',
           },
         ],
@@ -818,32 +808,32 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       'matsumura',
       'sayuri',
     ],
-    glowStickColor: [GlowStickColorType.Red, GlowStickColorType.Red],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['red', 'red'],
+    join: 'first',
     birthday: '1992-08-27',
     height: 164,
-    bloodType: BloodType.B,
-    origin: Birthplace.Osaka,
+    bloodType: 'b',
+    origin: '大阪府',
     graduatedDate: '2021-07-13',
     sites: [
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/sayuringo_staff',
       },
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/matsumura_sayuri_official/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://n46llc.com/s/m00/artist/14',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://sayurimatsumura.com/',
       },
       {
-        title: SocialMedia.Weibo,
+        title: 'Weibo',
         url: 'https://weibo.com/u/7266841339',
       },
     ],
@@ -851,10 +841,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '意外っていうか、前から可愛いと思ってた',
         release: '2017-12-12',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/sayuringo_pb',
           },
         ],
@@ -863,10 +853,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '次、いつ会える？',
         release: '2021-07-13',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/sayuringohan',
           },
         ],
@@ -877,27 +867,27 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'wakatsukiyumi',
     nameNotations: ['若月', '佑美', 'わかつき', 'ゆみ', 'wakatsuki', 'yumi'],
-    glowStickColor: [GlowStickColorType.Blue, GlowStickColorType.Blue],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['blue', 'blue'],
+    join: 'first',
     birthday: '1994-06-27',
     height: 157,
-    bloodType: BloodType.O,
-    origin: Birthplace.Shizuoka,
+    bloodType: 'o',
+    origin: '静岡県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/yumi_wakatsuki_official/',
       },
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/WAKA_Y_official/',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://yumiwakatsuki.com/',
       },
       {
-        title: SocialMedia.OnlineSalon,
+        title: 'online salon',
         url: 'https://lounge.dmm.com/detail/2711/',
       },
     ],
@@ -905,10 +895,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'アンド チョコレート',
         release: '2021-09-08',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/wakatsukiyumi_2',
           },
         ],
@@ -917,10 +907,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'パレット',
         release: '2017-11-07',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/waka_palette',
           },
         ],
@@ -932,27 +922,27 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'wadamaaya',
     nameNotations: ['和田', 'まあや', 'わだ', 'まあや', 'wada', 'maya'],
-    glowStickColor: [GlowStickColorType.Yellow, GlowStickColorType.Orange],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['yellow', 'orange'],
+    join: 'first',
     birthday: '1998-04-23',
     height: 161,
-    bloodType: BloodType.O,
-    origin: Birthplace.Hiroshima,
+    bloodType: 'o',
+    origin: '広島県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/wada_maaya_official/',
       },
       {
-        title: SocialMedia.Blog,
+        title: 'blog',
         url: 'https://blog.nogizaka46.com/maaya.wada/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/wadamaaya.php',
       },
       {
-        title: SocialMedia.Nanagogo,
+        title: '755',
         url: 'https://7gogo.jp/wada-maaya',
       },
     ],
@@ -960,15 +950,15 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'saitouchiharu',
     nameNotations: ['斎藤', 'ちはる', 'さいとう', 'ちはる', 'saito', 'chiharu'],
-    glowStickColor: [GlowStickColorType.Blue, GlowStickColorType.Red],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['blue', 'red'],
+    join: 'first',
     birthday: '1997-02-17',
     height: 166,
-    bloodType: BloodType.A,
-    origin: Birthplace.Saitama,
+    bloodType: 'a',
+    origin: '埼玉県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/chiharu_saito_ex/',
       },
       {
@@ -981,35 +971,35 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'kawamuramahiro',
     nameNotations: ['川村', '真洋', 'かわむら', 'まひろ', 'kawamura', 'mahiro'],
-    glowStickColor: [GlowStickColorType.Red, GlowStickColorType.White],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['red', 'white'],
+    join: 'first',
     birthday: '1995-07-23',
     height: 156,
-    bloodType: BloodType.A,
-    origin: Birthplace.Osaka,
+    bloodType: 'a',
+    origin: '大阪府',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/mahiro_kawamura_official/',
       },
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/mahiro_chan0723',
       },
       {
-        title: SocialMedia.YouTube,
+        title: 'YouTube',
         url: 'https://www.youtube.com/channel/UC6PRAAvAYKP-axlG3LC-WdA',
       },
       {
-        title: SocialMedia.TikTok,
+        title: 'TikTok',
         url: 'https://www.tiktok.com/@mahiro_0723',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://mahiro.jp/',
       },
       {
-        title: SocialMedia.FanClub,
+        title: 'fan club',
         url: 'https://fanicon.net/fancommunities/3640',
       },
     ],
@@ -1025,19 +1015,19 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       'nakamoto',
       'himeka',
     ],
-    glowStickColor: [GlowStickColorType.Pink, GlowStickColorType.Pink],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['pink', 'pink'],
+    join: 'first',
     birthday: '1996-04-13',
     height: 161,
-    bloodType: BloodType.O,
-    origin: Birthplace.Hiroshima,
+    bloodType: 'o',
+    origin: '広島県',
     sites: [
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://nakamotohimeka.com/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://n46llc.com/s/m00/artist/6',
       },
     ],
@@ -1046,27 +1036,27 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'itoumarika',
     nameNotations: ['伊藤', '万理華', 'いとう', 'まりか', 'ito', 'marika'],
-    glowStickColor: [GlowStickColorType.Green, GlowStickColorType.Purple],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['green', 'purple'],
+    join: 'first',
     birthday: '1996-02-20',
     height: 158,
-    bloodType: BloodType.O,
-    origin: Birthplace.Kanagawa,
+    bloodType: 'o',
+    origin: '神奈川県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/marikaito_official/',
       },
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/marikaito_staff',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://itomarika.com/',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://n46llc.com/s/m00/artist/3',
       },
     ],
@@ -1074,10 +1064,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'エトランゼ',
         release: '2018-02-20',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/MARIKA_etranger',
           },
         ],
@@ -1096,17 +1086,17 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       'hashimoto',
       'nanami',
     ],
-    glowStickColor: [GlowStickColorType.Green, GlowStickColorType.Green],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['green', 'green'],
+    join: 'first',
     birthday: '1993-02-20',
     height: 163,
-    bloodType: BloodType.B,
-    origin: Birthplace.Hokkaido,
+    bloodType: 'b',
+    origin: '北海道',
     photoAlbums: [
       {
         title: 'やさしい棘',
         release: '2015-08-28',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: 'amazon',
@@ -1118,10 +1108,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '2017',
         release: '2017-02-20',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
-            title: SocialMedia.Twitter,
+            title: 'Twitter',
             url: 'https://twitter.com/nanaminNY2017',
           },
         ],
@@ -1133,19 +1123,19 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'fukagawamai',
     nameNotations: ['深川', '麻衣', 'ふかがわ', 'まい', 'fukagawa', 'mai'],
-    glowStickColor: [GlowStickColorType.Green, GlowStickColorType.Purple],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['green', 'purple'],
+    join: 'first',
     birthday: '1991-03-29',
     height: 162,
-    bloodType: BloodType.O,
-    origin: Birthplace.Shizuoka,
+    bloodType: 'o',
+    origin: '静岡県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/fukagawamai.official/',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://fukagawamai.com/',
       },
     ],
@@ -1153,7 +1143,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'ずっと、そばにいたい',
         release: '2016-06-09',
-        type: PhotoAlbumType.PhotoAlbum,
+        type: 'photo album',
         sites: [
           {
             title: 'amazon',
@@ -1165,7 +1155,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'My magazine',
         release: '2018-02-22',
-        type: PhotoAlbumType.PhotoMagazine,
+        type: 'photo magazine',
         sites: [
           {
             title: 'amazon',
@@ -1180,23 +1170,23 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'nagashimaseira',
     nameNotations: ['永島', '聖羅', 'ながしま', 'せいら', 'nagashima', 'seira'],
-    glowStickColor: [GlowStickColorType.Yellow, GlowStickColorType.Yellow],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['yellow', 'yellow'],
+    join: 'first',
     birthday: '1994-05-19',
     height: 158,
-    bloodType: BloodType.O,
-    origin: Birthplace.Aichi,
+    bloodType: 'o',
+    origin: '愛知県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/seira_nagashima/',
       },
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/seira_0519n',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://www.horipro.co.jp/nagashimaseira/',
       },
     ],
@@ -1205,27 +1195,27 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'matsuirena',
     nameNotations: ['松井', '玲奈', 'まつい', 'れな', 'matsui', 'rena'],
-    glowStickColor: [GlowStickColorType.Green, GlowStickColorType.Green],
-    join: JoinedGenerationType.Exchange,
+    glowStickColor: ['green', 'green'],
+    join: 'exchange',
     birthday: '1991-07-27',
     height: 162,
-    bloodType: BloodType.O,
-    origin: Birthplace.Aichi,
+    bloodType: 'o',
+    origin: '愛知県',
     sites: [
       {
-        title: SocialMedia.YouTube,
+        title: 'YouTube',
         url: 'https://www.youtube.com/channel/UCRQoWfwbu1dDf0XujaNQ-9A',
       },
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/renamatui27/',
       },
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/renampme',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://matsuirena.club/',
       },
     ],
@@ -1234,23 +1224,23 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'hatanakaseira',
     nameNotations: ['畠中', '清羅', 'はたなか', 'せいら', 'hatanaka', 'seira'],
-    glowStickColor: [GlowStickColorType.Blue, GlowStickColorType.Pink],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['blue', 'pink'],
+    join: 'first',
     birthday: '1995-12-05',
     height: 150,
-    bloodType: BloodType.B,
-    origin: Birthplace.Oita,
+    bloodType: 'b',
+    origin: '大分県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/seira_hatanaka/',
       },
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/seira_hatanaka',
       },
       {
-        title: SocialMedia.YouTube,
+        title: 'YouTube',
         url: 'https://www.youtube.com/channel/UCC4iZzCZMJBVxghrzwvMp8w',
       },
     ],
@@ -1259,15 +1249,15 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'yamatorina',
     nameNotations: ['大和', '里菜', 'やまと', 'りな', 'yamato', 'rina'],
-    glowStickColor: [GlowStickColorType.Pink, GlowStickColorType.White],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['pink', 'white'],
+    join: 'first',
     birthday: '1994-12-14',
     height: 162,
-    bloodType: BloodType.O,
-    origin: Birthplace.Miyagi,
+    bloodType: 'o',
+    origin: '宮城県',
     sites: [
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/rina_yamat0',
       },
     ],
@@ -1276,27 +1266,27 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'itounene',
     nameNotations: ['伊藤', '寧々', 'いとう', 'ねね', 'ito', 'nene'],
-    glowStickColor: [GlowStickColorType.Pink, GlowStickColorType.Orange],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['pink', 'orange'],
+    join: 'first',
     birthday: '1995-12-12',
     height: 149,
-    bloodType: BloodType.B,
-    origin: Birthplace.Gifu,
+    bloodType: 'b',
+    origin: '岐阜県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/12neneito12/',
       },
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/nene_ito1212',
       },
       {
-        title: SocialMedia.YouTube,
+        title: 'YouTube',
         url: 'https://www.youtube.com/channel/UCgj7DMxLEz72XMtaDNQFRTw',
       },
       {
-        title: SocialMedia.Profile,
+        title: 'profile',
         url: 'https://www.watanabepro.co.jp/mypage/61000049/',
       },
     ],
@@ -1305,12 +1295,12 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'ichikirena',
     nameNotations: ['市來', '玲奈', 'いちき', 'れな', 'ichiki', 'rena'],
-    glowStickColor: [GlowStickColorType.None, GlowStickColorType.None],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['none', 'none'],
+    join: 'first',
     birthday: '1996-01-22',
     height: 153,
-    bloodType: BloodType.A,
-    origin: Birthplace.Chiba,
+    bloodType: 'a',
+    origin: '千葉県',
     sites: [
       {
         title: '日本テレビ',
@@ -1322,23 +1312,23 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'miyazawaseira',
     nameNotations: ['宮澤', '成良', 'みやざわ', 'せいら', 'miyazawa', 'seira'],
-    glowStickColor: [GlowStickColorType.None, GlowStickColorType.None],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['none', 'none'],
+    join: 'first',
     birthday: '1993-10-29',
     height: 166,
-    bloodType: BloodType.O,
-    origin: Birthplace.Chiba,
+    bloodType: 'o',
+    origin: '千葉県',
     sites: [
       {
-        title: SocialMedia.Instagram,
+        title: 'Instagram',
         url: 'https://www.instagram.com/seira_miyazawa/',
       },
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/seira_miyazawa/',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'http://www.incent.jp/idea/model/miyazawa/index.html',
       },
       {
@@ -1351,15 +1341,15 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'kashiwayukina',
     nameNotations: ['柏', '幸奈', 'かしわ', 'ゆきな', 'kashiwa', 'yukina'],
-    glowStickColor: [GlowStickColorType.Pink, GlowStickColorType.Pink],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['pink', 'pink'],
+    join: 'first',
     birthday: '1994-08-12',
     height: 158,
-    bloodType: BloodType.B,
-    origin: Birthplace.Kanagawa,
+    bloodType: 'b',
+    origin: '神奈川県',
     sites: [
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/y_k812/',
       },
     ],
@@ -1368,30 +1358,30 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'andoumikumo',
     nameNotations: ['安藤', '美雲', 'あんどう', 'みくも', 'ando', 'mikumo'],
-    glowStickColor: [GlowStickColorType.None, GlowStickColorType.None],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['none', 'none'],
+    join: 'first',
     birthday: '1993-05-21',
     height: 156,
-    bloodType: BloodType.O,
-    origin: Birthplace.Kanagawa,
+    bloodType: 'o',
+    origin: '神奈川県',
     graduatedDate: '2013-06-16',
   }),
   createMemberRaw({
     name: 'iwaseyumiko',
     nameNotations: ['岩瀬', '佑美子', 'いわせ', 'ゆみこ', 'iwase', 'yumiko'],
-    glowStickColor: [GlowStickColorType.None, GlowStickColorType.None],
-    join: JoinedGenerationType.First,
+    glowStickColor: ['none', 'none'],
+    join: 'first',
     birthday: '1990-06-12',
     height: 153,
-    bloodType: BloodType.A,
-    origin: Birthplace.Saitama,
+    bloodType: 'a',
+    origin: '埼玉県',
     sites: [
       {
-        title: SocialMedia.Twitter,
+        title: 'Twitter',
         url: 'https://twitter.com/scarf_iwase/',
       },
       {
-        title: SocialMedia.Official,
+        title: 'official',
         url: 'https://ketsuban.com/',
       },
     ],
