@@ -1,4 +1,3 @@
-import { MemberNameKey } from 'server/actors/Members/types/memberNameKey';
 import {
   convertMemberPositionsCounter,
   convertMemberPositionsHistory,

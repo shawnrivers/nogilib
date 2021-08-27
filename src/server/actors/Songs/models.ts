@@ -1,4 +1,4 @@
-import { MemberNameKey } from 'server/actors/Members/types/memberNameKey';
+import { MemberNameKey } from 'server/actors/Members/types';
 import { SongType } from 'server/actors/Songs/constants/songType';
 import { SongTitle } from 'server/actors/Songs/constants/songTitle';
 import { UnitName } from 'server/actors/Units/constants/unitName';

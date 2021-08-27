@@ -1,7 +1,9 @@
-import { BloodType } from 'server/actors/Members/types/bloodType';
+import {
+  BloodType,
+  Generation,
+  MemberNameKey,
+} from 'server/actors/Members/types';
 import { GlowStickColorType } from 'server/actors/Members/constants/glowStickColor';
-import { JoinedGenerationType } from 'server/actors/Members/types/joinedGeneration';
-import { MemberNameKey } from 'server/actors/Members/types/memberNameKey';
 import { PhotoAlbumType } from 'server/actors/Members/constants/photoAlbum';
 import { PositionType } from 'server/actors/Members/constants/position';
 import { UnitType } from 'server/actors/Units/constants/unitType';
@@ -21,7 +23,7 @@ export type MemberRaw = {
     left: GlowStickColorType;
     right: GlowStickColorType;
   };
-  join: JoinedGenerationType;
+  join: Generation;
   birthday: string;
   height: number;
   bloodType: BloodType;

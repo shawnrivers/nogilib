@@ -1,6 +1,6 @@
 import { SongRaw } from 'server/actors/Songs/models';
 import { SongType } from 'server/actors/Songs/constants/songType';
-import { MemberNameKey } from 'server/actors/Members/types/memberNameKey';
+import { MemberNameKey } from 'server/actors/Members/types';
 
 type SongRawCreatorCreators = {
   lyrics?: string[];
