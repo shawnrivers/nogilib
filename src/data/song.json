@@ -45687,8 +45687,12 @@
       "lg": "/images/artworks/singles/28/A@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
-      "compose": [],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "youth case"
+      ],
       "arrange": [],
       "direct": []
     },

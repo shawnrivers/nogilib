@@ -36,6 +36,10 @@ export const TWENTY_EIGHTH_SINGLE_SONGS: SongRaw[] = [
         'kakehashisayaka',
       ],
     },
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['youth case'],
+    },
   }),
   createSongRaw({
     title: 'やさしいだけなら',
