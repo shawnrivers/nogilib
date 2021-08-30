@@ -45682,13 +45682,17 @@
     "title": "君に叱られた",
     "type": "title",
     "artwork": {
-      "sm": "/images/artworks/artwork_no_image@1x.jpg",
-      "md": "/images/artworks/artwork_no_image@2x.jpg",
-      "lg": "/images/artworks/artwork_no_image@3x.jpg"
+      "sm": "/images/artworks/singles/28/A@1x.jpg",
+      "md": "/images/artworks/singles/28/A@2x.jpg",
+      "lg": "/images/artworks/singles/28/A@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
-      "compose": [],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "youth case"
+      ],
       "arrange": [],
       "direct": []
     },
@@ -46097,9 +46101,9 @@
     "title": "やさしいだけなら",
     "type": "unit",
     "artwork": {
-      "sm": "/images/artworks/artwork_no_image@1x.jpg",
-      "md": "/images/artworks/artwork_no_image@2x.jpg",
-      "lg": "/images/artworks/artwork_no_image@3x.jpg"
+      "sm": "/images/artworks/singles/28/A@1x.jpg",
+      "md": "/images/artworks/singles/28/A@2x.jpg",
+      "lg": "/images/artworks/singles/28/A@3x.jpg"
     },
     "creators": {
       "lyrics": [],
@@ -46184,9 +46188,9 @@
     "title": "マシンガンレイン",
     "type": "under",
     "artwork": {
-      "sm": "/images/artworks/artwork_no_image@1x.jpg",
-      "md": "/images/artworks/artwork_no_image@2x.jpg",
-      "lg": "/images/artworks/artwork_no_image@3x.jpg"
+      "sm": "/images/artworks/singles/28/A@1x.jpg",
+      "md": "/images/artworks/singles/28/A@2x.jpg",
+      "lg": "/images/artworks/singles/28/A@3x.jpg"
     },
     "creators": {
       "lyrics": [],
@@ -46559,9 +46563,9 @@
     "title": "もしも心が透明なら",
     "type": "unit",
     "artwork": {
-      "sm": "/images/artworks/artwork_no_image@1x.jpg",
-      "md": "/images/artworks/artwork_no_image@2x.jpg",
-      "lg": "/images/artworks/artwork_no_image@3x.jpg"
+      "sm": "/images/artworks/singles/28/B@1x.jpg",
+      "md": "/images/artworks/singles/28/B@2x.jpg",
+      "lg": "/images/artworks/singles/28/B@3x.jpg"
     },
     "creators": {
       "lyrics": [],
@@ -46664,9 +46668,9 @@
     "title": "私の色",
     "type": "solo",
     "artwork": {
-      "sm": "/images/artworks/artwork_no_image@1x.jpg",
-      "md": "/images/artworks/artwork_no_image@2x.jpg",
-      "lg": "/images/artworks/artwork_no_image@3x.jpg"
+      "sm": "/images/artworks/singles/28/C@1x.jpg",
+      "md": "/images/artworks/singles/28/C@2x.jpg",
+      "lg": "/images/artworks/singles/28/C@3x.jpg"
     },
     "creators": {
       "lyrics": [],
@@ -46715,9 +46719,9 @@
     "title": "泥だらけ",
     "type": "unit",
     "artwork": {
-      "sm": "/images/artworks/artwork_no_image@1x.jpg",
-      "md": "/images/artworks/artwork_no_image@2x.jpg",
-      "lg": "/images/artworks/artwork_no_image@3x.jpg"
+      "sm": "/images/artworks/singles/28/D@1x.jpg",
+      "md": "/images/artworks/singles/28/D@2x.jpg",
+      "lg": "/images/artworks/singles/28/D@3x.jpg"
     },
     "creators": {
       "lyrics": [],
@@ -46856,9 +46860,9 @@
     "title": "他人のそら似",
     "type": "none",
     "artwork": {
-      "sm": "/images/artworks/artwork_no_image@1x.jpg",
-      "md": "/images/artworks/artwork_no_image@2x.jpg",
-      "lg": "/images/artworks/artwork_no_image@3x.jpg"
+      "sm": "/images/artworks/singles/28/D@1x.jpg",
+      "md": "/images/artworks/singles/28/D@2x.jpg",
+      "lg": "/images/artworks/singles/28/D@3x.jpg"
     },
     "creators": {
       "lyrics": [],
