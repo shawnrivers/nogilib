@@ -62,6 +62,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://7gogo.jp/itou-junna',
       },
     ],
+    graduatedDate: '2021-08-29',
   }),
   createMemberRaw({
     name: 'kitanohinako',
@@ -390,6 +391,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         cover: 'photo-albums/watanabemiria_1.jpg',
       },
     ],
+    graduatedDate: '2021-08-31',
   }),
   createMemberRaw({
     name: 'sagaraiori',

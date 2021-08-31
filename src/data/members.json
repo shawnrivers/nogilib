@@ -767,8 +767,8 @@
     },
     "join": "second",
     "graduation": {
-      "isGraduated": false,
-      "graduatedDate": ""
+      "isGraduated": true,
+      "graduatedDate": "2021-08-29"
     },
     "profileImage": {
       "sm": "/images/members/singles/27/itoujunna@1x.jpg",
@@ -935,8 +935,8 @@
     },
     "join": "second",
     "graduation": {
-      "isGraduated": false,
-      "graduatedDate": ""
+      "isGraduated": true,
+      "graduatedDate": "2021-08-31"
     },
     "profileImage": {
       "sm": "/images/members/singles/27/watanabemiria@1x.jpg",
