@@ -9833,8 +9833,8 @@
     ],
     "join": "second",
     "graduation": {
-      "isGraduated": false,
-      "graduatedDate": ""
+      "isGraduated": true,
+      "graduatedDate": "2021-08-29"
     },
     "birthday": "1998-11-30",
     "height": 166,
@@ -11965,8 +11965,8 @@
     ],
     "join": "second",
     "graduation": {
-      "isGraduated": false,
-      "graduatedDate": ""
+      "isGraduated": true,
+      "graduatedDate": "2021-08-31"
     },
     "birthday": "1999-11-01",
     "height": 153,
