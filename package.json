@@ -59,7 +59,7 @@
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
     "@emotion/babel-preset-css-prop": "^11.2.0",
-    "@lhci/cli": "^0.8.0",
+    "@lhci/cli": "^0.8.1",
     "@storybook/addon-actions": "^6.3.6",
     "@storybook/addon-essentials": "^6.3.7",
     "@storybook/addon-knobs": "^6.3.0",
