@@ -61,7 +61,7 @@
     "@emotion/babel-preset-css-prop": "^11.2.0",
     "@lhci/cli": "^0.8.1",
     "@storybook/addon-actions": "^6.3.8",
-    "@storybook/addon-essentials": "^6.3.7",
+    "@storybook/addon-essentials": "^6.3.8",
     "@storybook/addon-knobs": "^6.3.0",
     "@storybook/addon-links": "^6.3.8",
     "@storybook/preset-typescript": "^3.0.0",
