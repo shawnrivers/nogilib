@@ -103,6 +103,7 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.nogizaka46.com/member/detail/oozonomomoko.php',
       },
     ],
+    graduatedDate: '2021-09-04',
   }),
   createMemberRaw({
     name: 'kuboshiori',
