@@ -13549,8 +13549,8 @@
     ],
     "join": "third",
     "graduation": {
-      "isGraduated": false,
-      "graduatedDate": ""
+      "isGraduated": true,
+      "graduatedDate": "2021-09-04"
     },
     "birthday": "1999-09-13",
     "height": 156,
