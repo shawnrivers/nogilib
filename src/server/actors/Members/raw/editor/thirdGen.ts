@@ -283,6 +283,10 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: '大分県',
     sites: [
       {
+        title: 'Instagram',
+        url: 'https://www.instagram.com/y.ayanochristie.official/',
+      },
+      {
         title: 'blog',
         url: 'https://blog.nogizaka46.com/ayanochristie.yoshida/',
       },
