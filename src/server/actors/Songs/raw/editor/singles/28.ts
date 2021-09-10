@@ -39,6 +39,7 @@ export const TWENTY_EIGHTH_SINGLE_SONGS: SongRaw[] = [
     creators: {
       lyrics: ['秋元康'],
       compose: ['youth case'],
+      direct: ['横堀光範'],
     },
   }),
   createSongRaw({
@@ -51,28 +52,36 @@ export const TWENTY_EIGHTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: 'マシンガンレイン',
     type: 'under',
+    center: ['teradaranze'],
     formations: {
       firstRow: [
-        'itouriria',
-        'sakaguchitamami',
-        'satoukaede',
+        'yumikinao',
+        'shibatayuna',
         'teradaranze',
         'nakamurareno',
-        'mukaihazuki',
         'yamazakirena',
-        'yoshidaayanochristie',
-        'wadamaaya',
-        'kakehashisayaka',
-        'kanagawasaya',
-        'kitagawayuri',
-        'kuromiharuka',
-        'satourika',
-        'shibatayuna',
-        'hayashiruna',
-        'matsuomiyu',
-        'yakubomio',
-        'yumikinao',
       ],
+      secondRow: [
+        'matsuomiyu',
+        'hayashiruna',
+        'sakaguchitamami',
+        'kanagawasaya',
+        'satourika',
+        'satoukaede',
+      ],
+      thirdRow: [
+        'itouriria',
+        'kuromiharuka',
+        'yakubomio',
+        'wadamaaya',
+        'kitagawayuri',
+        'yoshidaayanochristie',
+        'mukaihazuki',
+      ],
+    },
+    creators: {
+      lyrics: ['秋元康'],
+      direct: ['今原電気'],
     },
   }),
   createSongRaw({
@@ -91,6 +100,10 @@ export const TWENTY_EIGHTH_SINGLE_SONGS: SongRaw[] = [
     title: '私の色',
     type: 'solo',
     solo: 'takayamakazumi',
+    creators: {
+      lyrics: ['秋元康'],
+      direct: ['頃安祐良'],
+    },
   }),
   createSongRaw({
     title: '泥だらけ',
