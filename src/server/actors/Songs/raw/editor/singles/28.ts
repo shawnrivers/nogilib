@@ -39,6 +39,7 @@ export const TWENTY_EIGHTH_SINGLE_SONGS: SongRaw[] = [
     creators: {
       lyrics: ['秋元康'],
       compose: ['youth case'],
+      arrange: ['石塚知生'],
       direct: ['横堀光範'],
     },
   }),
@@ -47,6 +48,11 @@ export const TWENTY_EIGHTH_SINGLE_SONGS: SongRaw[] = [
     type: 'unit',
     formations: {
       firstRow: ['ikutaerika', 'kakiharuka', 'kuboshiori'],
+    },
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['平賀伸明'],
+      arrange: ['野中“まさ”雄一'],
     },
   }),
   createSongRaw({
@@ -81,6 +87,8 @@ export const TWENTY_EIGHTH_SINGLE_SONGS: SongRaw[] = [
     },
     creators: {
       lyrics: ['秋元康'],
+      compose: ['CottON'],
+      arrange: ['CottON'],
       direct: ['今原電気'],
     },
   }),
@@ -95,6 +103,12 @@ export const TWENTY_EIGHTH_SINGLE_SONGS: SongRaw[] = [
         'matsuomiyu',
       ],
     },
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['山本加津彦'],
+      arrange: ['千葉"naotyu-"直樹', '山本加津彦'],
+      direct: ['大久保拓朗'],
+    },
   }),
   createSongRaw({
     title: '私の色',
@@ -102,6 +116,8 @@ export const TWENTY_EIGHTH_SINGLE_SONGS: SongRaw[] = [
     solo: 'takayamakazumi',
     creators: {
       lyrics: ['秋元康'],
+      compose: ['YSU'],
+      arrange: ['YSU'],
       direct: ['頃安祐良'],
     },
   }),
@@ -117,6 +133,12 @@ export const TWENTY_EIGHTH_SINGLE_SONGS: SongRaw[] = [
         'yamashitamizuki',
         'wadamaaya',
       ],
+    },
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['CottON'],
+      arrange: ['CottON'],
+      direct: ['林希'],
     },
   }),
   createSongRaw({
@@ -165,6 +187,11 @@ export const TWENTY_EIGHTH_SINGLE_SONGS: SongRaw[] = [
         'yakubomio',
         'yumikinao',
       ],
+    },
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['youth case'],
+      arrange: ['佐々木博史'],
     },
   }),
 ];
