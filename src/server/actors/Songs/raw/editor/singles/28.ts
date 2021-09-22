@@ -143,7 +143,7 @@ export const TWENTY_EIGHTH_SINGLE_SONGS: SongRaw[] = [
   }),
   createSongRaw({
     title: '他人のそら似',
-    type: 'none',
+    type: 'coupling',
     formations: {
       firstRow: [
         'akimotomanatsu',
