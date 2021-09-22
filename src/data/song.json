@@ -45693,7 +45693,9 @@
       "compose": [
         "youth case"
       ],
-      "arrange": [],
+      "arrange": [
+        "石塚知生"
+      ],
       "direct": [
         "横堀光範"
       ]
@@ -46108,9 +46110,15 @@
       "lg": "/images/artworks/singles/28/A@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
-      "compose": [],
-      "arrange": [],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "平賀伸明"
+      ],
+      "arrange": [
+        "野中“まさ”雄一"
+      ],
       "direct": []
     },
     "single": {
@@ -46198,8 +46206,12 @@
       "lyrics": [
         "秋元康"
       ],
-      "compose": [],
-      "arrange": [],
+      "compose": [
+        "CottON"
+      ],
+      "arrange": [
+        "CottON"
+      ],
       "direct": [
         "今原電気"
       ]
@@ -46560,10 +46572,19 @@
       "lg": "/images/artworks/singles/28/B@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
-      "compose": [],
-      "arrange": [],
-      "direct": []
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "山本加津彦"
+      ],
+      "arrange": [
+        "千葉\"naotyu-\"直樹",
+        "山本加津彦"
+      ],
+      "direct": [
+        "大久保拓朗"
+      ]
     },
     "single": {
       "title": "君に叱られた",
@@ -46668,8 +46689,12 @@
       "lyrics": [
         "秋元康"
       ],
-      "compose": [],
-      "arrange": [],
+      "compose": [
+        "YSU"
+      ],
+      "arrange": [
+        "YSU"
+      ],
       "direct": [
         "頃安祐良"
       ]
@@ -46720,10 +46745,18 @@
       "lg": "/images/artworks/singles/28/D@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
-      "compose": [],
-      "arrange": [],
-      "direct": []
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "CottON"
+      ],
+      "arrange": [
+        "CottON"
+      ],
+      "direct": [
+        "林希"
+      ]
     },
     "single": {
       "title": "君に叱られた",
@@ -46854,16 +46887,22 @@
   {
     "key": "taninnosorane",
     "title": "他人のそら似",
-    "type": "none",
+    "type": "coupling",
     "artwork": {
       "sm": "/images/artworks/singles/28/D@1x.jpg",
       "md": "/images/artworks/singles/28/D@2x.jpg",
       "lg": "/images/artworks/singles/28/D@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
-      "compose": [],
-      "arrange": [],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "youth case"
+      ],
+      "arrange": [
+        "佐々木博史"
+      ],
       "direct": []
     },
     "single": {
