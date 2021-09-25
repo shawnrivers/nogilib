@@ -441,7 +441,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
       },
       {
         title: 'Twitter',
-        url: 'https://twitter.com/miss2chuo__2020',
+        url: 'https://twitter.com/kyoka_yonetoku',
       },
     ],
     graduatedDate: '2014-10-18',
