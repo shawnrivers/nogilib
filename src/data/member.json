@@ -4028,11 +4028,16 @@
       "firstNameEn": "ami"
     },
     "profileImage": {
-      "sm": "/images/members/others/noujouami_2021-04-17@1x.jpg",
-      "md": "/images/members/others/noujouami_2021-04-17@2x.jpg",
-      "lg": "/images/members/others/noujouami_2021-04-17@3x.jpg"
+      "sm": "/images/members/others/noujouami_2021-09-01@1x.jpg",
+      "md": "/images/members/others/noujouami_2021-09-01@2x.jpg",
+      "lg": "/images/members/others/noujouami_2021-09-01@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/others/noujouami_2021-09-01@1x.jpg",
+        "md": "/images/members/others/noujouami_2021-09-01@2x.jpg",
+        "lg": "/images/members/others/noujouami_2021-09-01@3x.jpg"
+      },
       {
         "sm": "/images/members/others/noujouami_2021-04-17@1x.jpg",
         "md": "/images/members/others/noujouami_2021-04-17@2x.jpg",
@@ -12411,7 +12416,7 @@
       },
       {
         "title": "Twitter",
-        "url": "https://twitter.com/miss2chuo__2020"
+        "url": "https://twitter.com/kyoka_yonetoku"
       }
     ],
     "photoAlbums": [],
