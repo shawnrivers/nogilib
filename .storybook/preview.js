@@ -1,5 +1,5 @@
 import { action } from '@storybook/addon-actions';
-import { RouterContext } from 'next/dist/next-server/lib/router-context';
+import { RouterContext } from 'next/dist/shared/lib/router-context';
 
 global.___loader = {
   enqueue: () => {},
