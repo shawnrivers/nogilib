@@ -187,6 +187,10 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: '東京都',
     sites: [
       {
+        title: 'Instagram',
+        url: 'https://www.instagram.com/n.reno_official/',
+      },
+      {
         title: 'blog',
         url: 'https://blog.nogizaka46.com/reno.nakamura/',
       },
