@@ -236,7 +236,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     ],
     photoAlbums: [
       {
-        title: 'タイトル未定',
+        title: 'なぜ、忘れられないんだろう？',
         release: '2021-11-09',
         type: 'photo album',
         sites: [{ title: 'Twitter', url: 'https://twitter.com/ranze1st' }],
