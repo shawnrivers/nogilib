@@ -50,12 +50,8 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/junna_ito_official/',
       },
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/junna.itou/',
-      },
-      {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/itoujunna.php',
+        title: 'fan club',
+        url: 'https://funkeon.com/fanclub/5',
       },
       {
         title: '755',
@@ -363,14 +359,6 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'Instagram',
         url: 'https://www.instagram.com/miria.watanabe_official/',
-      },
-      {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/miria.watanabe/',
-      },
-      {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/watanabemiria.php',
       },
       {
         title: '755',

@@ -94,14 +94,6 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
         title: 'Instagram',
         url: 'https://www.instagram.com/o.momoko_official/',
       },
-      {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/momoko.oozono/',
-      },
-      {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/oozonomomoko.php',
-      },
     ],
     graduatedDate: '2021-09-04',
   }),
