@@ -54,6 +54,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://blog.nogizaka46.com/junna.itou/',
       },
       {
+        title: 'fan club',
+        url: 'https://funkeon.com/fanclub/5',
+      },
+      {
         title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/itoujunna.php',
       },
