@@ -103,7 +103,7 @@ export const CoverImage: React.FC<CoverImageProps> = props => {
             right: ${commonStyles.spacing.xs};
             box-sizing: border-box;
             border: 1px solid var(${getGlobalColorVarName('gray8')});
-            padding-top: ${commonStyles.spacing.xs};
+            padding-top: ${commonStyles.spacing.xxs};
             padding-bottom: ${commonStyles.spacing.xs};
             padding-left: ${commonStyles.spacing.xs};
             padding-right: calc(${commonStyles.spacing.xs} + 2px);

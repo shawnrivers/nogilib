@@ -6,7 +6,6 @@ import { PageContent } from 'client/components/layout/PageContent';
 import { Hashtag } from 'client/components/atoms/Hashtag';
 import { commonStyles } from 'client/styles/tokens';
 import { TextDivider } from 'client/components/molecules/TextDivider';
-import { MemberCard } from 'client/components/molecules/cards/MemberCard';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { useIntl } from 'client/i18n/hooks/useIntl';
 import { InfoItemLabel } from 'client/components/molecules/typography/info/InfoItemLabel';
@@ -16,8 +15,9 @@ import { PageHelmet } from 'client/components/layout/PageHelmet';
 import { getSongData } from 'api/song';
 import { SongPageData } from 'server/pages/song';
 import { getMemberUrl } from 'client/utils/url';
-import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { AspectRatioImage } from 'client/components/atoms/image/AspectRatioImage';
+import { getColorVarName } from 'client/styles/tokens/colors';
+import { MemberCell } from 'client/components/v6/shared/cells/MemberCell';
 
 type PathParams = { id: string };
 
@@ -91,6 +91,17 @@ const PerformersTag: React.FC<SongPageProps['performersTag']> = props => {
   }
 
   return <Hashtag lang="ja" text={name} />;
+};
+
+const convertPositionText = (position: string | null): string | undefined => {
+  switch (position) {
+    case 'center':
+      return 'c';
+    case 'fukujin':
+      return 'f';
+    default:
+      return undefined;
+  }
 };
 
 export const SongPage: React.FC<SongPageProps> = props => {
@@ -174,10 +185,9 @@ export const SongPage: React.FC<SongPageProps> = props => {
               <div
                 css={css`
                   margin: ${commonStyles.spacing.s};
-                  border-radius: ${commonStyles.borderRadius.m};
-                  box-shadow: ${commonStyles.elevations[
-                    componentElevationKey.componentOnBackground
-                  ].boxShadow};
+                  border-radius: ${commonStyles.borderRadius.xxs};
+                  border: 2px solid
+                    var(${getColorVarName('onBackground', 'standard')});
                   overflow: hidden;
                   width: 200px;
                   height: 200px;
@@ -298,26 +308,24 @@ export const SongPage: React.FC<SongPageProps> = props => {
                               key={member.name}
                               css={css`
                                 margin: ${commonStyles.spacing.xs};
+                                width: 110px;
+                                height: 165px;
                               `}
                             >
-                              <MemberCard
-                                name={
-                                  formatMemberName(member.nameNotations).name
-                                }
-                                lang={
-                                  formatMemberName(member.nameNotations).lang
-                                }
-                                width={110}
-                                profileImage={member.profileImage}
+                              <MemberCell
                                 href={
                                   member.isMember
                                     ? getMemberUrl(member.name)
                                     : undefined
                                 }
-                                position={member.position ?? undefined}
-                                textSize="body3"
-                                borderRadius="s"
-                                padding="xs"
+                                name={
+                                  formatMemberName(member.nameNotations).name
+                                }
+                                nameLang={
+                                  formatMemberName(member.nameNotations).lang
+                                }
+                                image={member.profileImage}
+                                caption={convertPositionText(member.position)}
                               />
                             </li>
                           ))}
