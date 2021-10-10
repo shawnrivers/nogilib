@@ -204,7 +204,7 @@ const SearchPage: React.FC<PageProps> = props => {
                   border-color: var(
                     ${getColorVarName('onBackground', 'variant1')}
                   );
-                  border-radius: ${commonStyles.borderRadius.xl};
+                  border-radius: ${commonStyles.borderRadius.xxs};
                   padding: ${commonStyles.spacing.s};
                   transition: border-color 0.2s linear;
                   box-sizing: border-box;

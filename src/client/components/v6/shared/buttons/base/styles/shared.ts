@@ -16,7 +16,7 @@ function getBackgroundTransitionStyles(disabled: boolean, active: boolean) {
       top: 0;
       left: 0;
       content: '';
-      background-color: var(${getColorVarName('primary', 'standard')});
+      background-color: var(${getColorVarName('primary', 'variant0')});
       opacity: 0.25;
       transition: transform 0.2s cubic-bezier(0, 0.5, 0.7, 1);
       transform: translateX(${active ? '0' : '-102%'});
@@ -53,6 +53,7 @@ export function getSharedStyles(params?: Partial<GetSharedStylesParams>) {
     padding: ${commonStyles.spacing.xxs} ${commonStyles.spacing.xs};
     background: none;
     border: 0 solid var(${getColorVarName('onBackground', 'variant0')});
+    border-radius: ${commonStyles.borderRadius.xxs};
     cursor: ${disabled ? 'default' : 'pointer'};
     ${!hideBackgroundTransition &&
     getBackgroundTransitionStyles(disabled, active)}

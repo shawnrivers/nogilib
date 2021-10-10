@@ -59,7 +59,7 @@ export const AlbumCell: React.FC<AlbumCellProps> = props => {
               `}
             />
             <Typography
-              variant="h7"
+              variant="h8"
               element="h3"
               lang="ja"
               ellipsis

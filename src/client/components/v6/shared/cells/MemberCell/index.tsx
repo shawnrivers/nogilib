@@ -102,7 +102,7 @@ export const MemberCell: React.FC<MemberCellProps> = props => {
               </span>
             )}
             <Typography
-              variant="body1"
+              variant="h8"
               element="h3"
               lang={props.nameLang}
               ellipsis
