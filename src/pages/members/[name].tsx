@@ -9,7 +9,6 @@ import { commonStyles } from 'client/styles/tokens';
 import { useIntl } from 'client/i18n/hooks/useIntl';
 import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
 import { PageHelmet } from 'client/components/layout/PageHelmet';
-import { Card } from 'client/components/atoms/Card';
 import { Typography } from 'client/components/atoms/Typography';
 import { TextLink } from 'client/components/molecules/links/TextLink';
 import { TextDivider } from 'client/components/molecules/TextDivider';
@@ -23,10 +22,11 @@ import {
 } from 'client/components/pages/member/PositionBadge';
 import { PageContent } from 'client/components/layout/PageContent';
 import { Position } from 'server/actors/Members/types';
-import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { Divider } from 'client/components/atoms/Divider';
 import { filterDuplicate } from 'utils/array';
 import { AspectRatioImage } from 'client/components/atoms/image/AspectRatioImage';
+import { getColorVarName } from 'client/styles/tokens/colors';
+import { MemberCell } from 'client/components/v6/shared/cells/MemberCell';
 
 /**
  * Local components
@@ -266,10 +266,9 @@ const MemberPage: React.FC<PageProps> = props => {
           >
             <div
               css={css`
-                border-radius: ${commonStyles.borderRadius.m};
-                box-shadow: ${commonStyles.elevations[
-                  componentElevationKey.componentOnBackground
-                ].boxShadow};
+                border-radius: ${commonStyles.borderRadius.xxs};
+                border: 2px solid
+                  var(${getColorVarName('onBackground', 'standard')});
                 overflow: hidden;
                 width: 200px;
                 height: 240px;
@@ -434,42 +433,20 @@ const MemberPage: React.FC<PageProps> = props => {
                 `}
               >
                 {photoAlbums.map(photoAlbum => (
-                  <li key={photoAlbum.title}>
-                    <Card
-                      borderRadius="s"
-                      padding="xs"
+                  <li
+                    key={photoAlbum.title}
+                    css={css`
+                      margin: ${commonStyles.spacing.xs};
+                      width: 180px;
+                      height: 250px;
+                    `}
+                  >
+                    <MemberCell
                       href={photoAlbum.sites[0].url}
-                      css={css`
-                        width: 180px;
-                        margin: ${commonStyles.spacing.xs};
-                      `}
-                    >
-                      <article>
-                        <AspectRatioImage
-                          src={photoAlbum.cover.lg}
-                          srcSet={`${photoAlbum.cover.sm}, ${photoAlbum.cover.md} 2x, ${photoAlbum.cover.lg} 3x`}
-                          alt=""
-                          role="presentation"
-                          aspectRatio={0.9}
-                          loading="lazy"
-                          css={css`
-                            border-radius: ${commonStyles.borderRadius.s};
-                          `}
-                        />
-                        <Typography
-                          variant="body2"
-                          element="p"
-                          css={css`
-                            margin-top: 0.8em;
-                            text-align: center;
-                            line-height: 1.4;
-                          `}
-                          lang="ja"
-                        >
-                          {photoAlbum.title}
-                        </Typography>
-                      </article>
-                    </Card>
+                      name={photoAlbum.title}
+                      nameLang="en"
+                      image={photoAlbum.cover}
+                    />
                   </li>
                 ))}
               </ul>
@@ -545,11 +522,10 @@ const MemberPage: React.FC<PageProps> = props => {
                 <li
                   key={index}
                   css={css`
-                    margin: ${commonStyles.spacing.xs};
-                    border-radius: ${commonStyles.borderRadius.xs};
-                    box-shadow: ${commonStyles.elevations[
-                      componentElevationKey.componentOnBackground
-                    ].boxShadow};
+                    margin: ${commonStyles.spacing.xxs};
+                    border-radius: ${commonStyles.borderRadius.xxs};
+                    border: 2px solid
+                      var(${getColorVarName('onBackground', 'standard')});
                     width: 110px;
                     height: 132px;
                     overflow: hidden;

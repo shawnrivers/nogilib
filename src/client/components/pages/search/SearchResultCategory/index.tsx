@@ -1,107 +1,113 @@
 import { css } from '@emotion/core';
 import * as React from 'react';
-import {
-  Typography,
-  TypographyProps,
-} from 'client/components/atoms/Typography';
+import { TypographyProps } from 'client/components/atoms/Typography';
 import { commonStyles } from 'client/styles/tokens';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
-import {
-  HorizontalCard,
-  HorizontalCardProps,
-} from 'client/components/molecules/cards/HorizontalCard';
+import { HorizontalCardProps } from 'client/components/molecules/cards/HorizontalCard';
+import { MemberCell } from 'client/components/v6/shared/cells/MemberCell';
+import { AlbumCell } from 'client/components/v6/shared/cells/AlbumCell';
+import { SongCell } from 'client/components/v6/shared/cells/SongCell';
+import { capitalizeText } from 'utils/string';
+import { TextDivider } from 'client/components/molecules/TextDivider';
 
-const DEFAULT_RESULT_COUNT = 4;
+type SearchResult = {
+  href: string;
+  image: HorizontalCardProps['image'];
+  heading: HorizontalCardProps['title'];
+  captions: HorizontalCardProps['tags'];
+};
+
+type ResultType = 'members' | 'cds' | 'songs';
+
+const SearchResultCell: React.FC<
+  SearchResult & {
+    type: ResultType;
+  }
+> = props => {
+  if (props.type === 'members') {
+    return (
+      <div
+        css={css`
+          width: 120px;
+          height: 170px;
+        `}
+      >
+        <MemberCell
+          href={props.href}
+          name={capitalizeText(props.heading.text)}
+          nameLang={props.heading.lang ?? 'ja'}
+          caption={props.captions[0].text}
+          image={props.image}
+        />
+      </div>
+    );
+  }
+  if (props.type === 'cds') {
+    return (
+      <div
+        css={css`
+          width: 195px;
+          height: 160px;
+        `}
+      >
+        <AlbumCell
+          href={props.href}
+          title={props.heading.text}
+          caption={props.captions[0].text}
+          image={props.image}
+        />
+      </div>
+    );
+  }
+  return (
+    <div
+      css={css`
+        width: 180px;
+        height: 190px;
+      `}
+    >
+      <SongCell
+        href={props.href}
+        title={props.heading.text}
+        titleLang={props.heading.lang ?? 'ja'}
+        caption={props.captions[0].text}
+        image={props.image}
+      />
+    </div>
+  );
+};
 
 export type SearchResultCategoryProps = {
-  title: 'members' | 'cds' | 'songs';
+  title: ResultType;
   titleElement?: TypographyProps['element'];
-  results: {
-    href: string;
-    image: HorizontalCardProps['image'];
-    heading: HorizontalCardProps['title'];
-    captions: HorizontalCardProps['tags'];
-  }[];
+  results: SearchResult[];
 };
 
 export const SearchResultCategory: React.FC<SearchResultCategoryProps> =
   props => {
     const { title, results, titleElement = 'h3', ...restProps } = props;
-    const { Translation } = useTranslations();
-    const [showMore, toggleShowMore] = React.useState(false);
+    const { getTranslation } = useTranslations();
 
     return results.length > 0 ? (
       <section {...restProps}>
-        <Typography
-          variant="h6"
-          element={titleElement}
-          css={css`
-            text-transform: capitalize;
-          `}
-        >
-          <Translation text={title} />
-        </Typography>
+        <TextDivider text={getTranslation(title)} element={titleElement} />
         <ul
           css={css`
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            grid-template-rows: auto;
-            grid-gap: ${commonStyles.spacing.m};
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
             margin-top: 1rem;
+
+            & > li {
+              margin: ${commonStyles.spacing.xs};
+            }
           `}
         >
-          {results.slice(0, DEFAULT_RESULT_COUNT).map(result => (
+          {results.map(result => (
             <li key={result.heading.text}>
-              <HorizontalCard
-                href={result.href}
-                image={result.image}
-                title={result.heading}
-                titleElement="h3"
-                tags={result.captions}
-                capitalizeTitle={title === 'members'}
-              />
+              <SearchResultCell type={title} {...result} />
             </li>
           ))}
-          {showMore
-            ? results
-                .slice(DEFAULT_RESULT_COUNT, results.length)
-                .map(result => (
-                  <li key={result.heading.text}>
-                    <HorizontalCard
-                      href={result.href}
-                      image={result.image}
-                      title={result.heading}
-                      titleElement="h3"
-                      tags={result.captions}
-                      capitalizeTitle={title === 'members'}
-                    />
-                  </li>
-                ))
-            : null}
-          {results.length > DEFAULT_RESULT_COUNT && !showMore ? (
-            <Typography
-              variant="body2"
-              element="button"
-              textColor={{
-                on: 'onBackground',
-                variant: 'variant1',
-              }}
-              onClick={() => toggleShowMore(true)}
-              css={css`
-                text-transform: uppercase;
-                align-self: center;
-                justify-self: start;
-
-                @media (hover: hover) and (pointer: fine) {
-                  &:hover {
-                    text-decoration: underline;
-                  }
-                }
-              `}
-            >
-              <Translation text={'show all'} />
-            </Typography>
-          ) : null}
         </ul>
       </section>
     ) : null;

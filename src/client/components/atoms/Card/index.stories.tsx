@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/react/types-6-0';
+import type { Meta, Story } from '@storybook/react';
 import { Card, CardProps } from '.';
 import { ThemeDecorator } from 'storybook/ThemeDecorator';
 import { Typography } from 'client/components/atoms/Typography';

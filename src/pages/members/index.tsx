@@ -7,7 +7,6 @@ import { useFilter } from 'client/hooks/useFilter';
 import { MemberResult } from 'server/actors/Members/models';
 import { MembersPageData } from 'server/pages/members';
 import { sortByGraduation, sortByJoin, sortByMemberName } from 'utils/sorting';
-import { MemberCard } from 'client/components/molecules/cards/MemberCard';
 import { TextDivider } from 'client/components/molecules/TextDivider';
 import { TextSwitchLinkGroup } from 'client/components/molecules/TextSwitchLinkGroup';
 import { PageContent } from 'client/components/layout/PageContent';
@@ -16,6 +15,8 @@ import { commonStyles } from 'client/styles/tokens';
 import { getMembersUrl, getMemberUrl } from 'client/utils/url';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { useIntl } from 'client/i18n/hooks/useIntl';
+import { MemberCell } from 'client/components/v6/shared/cells/MemberCell';
+import { capitalizeText } from 'utils/string';
 
 type MemberGroupByYear = {
   join: MemberResult['join'];
@@ -170,20 +171,21 @@ const MembersPage: React.FC<MembersPageProps> = props => {
                 `}
               >
                 {member.members.map(member => (
-                  <li key={member.name}>
-                    <MemberCard
-                      profileImage={member.profileImage}
-                      name={formatMemberName(member.nameNotations).name}
-                      lang={formatMemberName(member.nameNotations).lang}
-                      nameElement="h3"
+                  <li
+                    key={member.name}
+                    css={css`
+                      margin: ${commonStyles.spacing.xs};
+                      width: 120px;
+                      height: 170px;
+                    `}
+                  >
+                    <MemberCell
                       href={getMemberUrl(member.name)}
-                      textSize="body2"
-                      borderRadius="s"
-                      padding="xs"
-                      width={130}
-                      css={css`
-                        margin: ${commonStyles.spacing.xs};
-                      `}
+                      name={capitalizeText(
+                        formatMemberName(member.nameNotations).name
+                      )}
+                      nameLang={formatMemberName(member.nameNotations).lang}
+                      image={member.profileImage}
                     />
                   </li>
                 ))}
