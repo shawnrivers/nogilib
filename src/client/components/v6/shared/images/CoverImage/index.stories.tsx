@@ -41,7 +41,6 @@ Default.args = {
     lg: '/images/artworks/singles/27/A@3x.jpg',
   },
   caption: '27th. single',
-  imageBackgroundColor: '#bf0000',
 };
 
 export const NoCaption = Template.bind({});
@@ -51,5 +50,4 @@ NoCaption.args = {
     md: '/images/artworks/singles/27/A@2x.jpg',
     lg: '/images/artworks/singles/27/A@3x.jpg',
   },
-  imageBackgroundColor: '#bf0000',
 };

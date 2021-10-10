@@ -32,8 +32,6 @@ Default.args = {
     md: '/images/artworks/singles/27/A@2x.jpg',
     lg: '/images/artworks/singles/27/A@3x.jpg',
   },
-  titleBackgroundColor: '#f8b1b1',
-  imageBackgroundColor: '#bf0000',
 };
 
 export const LongTitle = Template.bind({});
@@ -45,19 +43,5 @@ LongTitle.args = {
     sm: '/images/artworks/singles/24/A@1x.jpg',
     md: '/images/artworks/singles/24/A@2x.jpg',
     lg: '/images/artworks/singles/24/A@3x.jpg',
-  },
-  titleBackgroundColor: '#a6c3cc',
-  imageBackgroundColor: '#5e8491',
-};
-
-export const FallbackBackground = Template.bind({});
-FallbackBackground.args = {
-  href: '/',
-  title: 'ごめんねFingers Crossed',
-  caption: '27th. single',
-  image: {
-    sm: '/images/artworks/singles/27/A@1x.jpg',
-    md: '/images/artworks/singles/27/A@2x.jpg',
-    lg: '/images/artworks/singles/27/A@3x.jpg',
   },
 };

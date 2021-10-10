@@ -44,8 +44,6 @@ export type SongCellProps = {
   number?: string | number;
   caption?: string;
   image: ImageUrl;
-  imageBackgroundColor?: string;
-  titleBackgroundColor?: string;
 };
 
 export const SongCell: React.FC<SongCellProps> = props => {
@@ -112,8 +110,7 @@ export const SongCell: React.FC<SongCellProps> = props => {
                 line-height: 1.5;
                 color: var(${getGlobalColorVarName('gray7')});
                 padding: ${commonStyles.spacing.xs};
-                background-color: ${props.titleBackgroundColor ??
-                `var(${getGlobalColorVarName('gray0')})`};
+                background-color: var(${getGlobalColorVarName('gray0')});
               `}
             >
               {props.title}
@@ -122,7 +119,6 @@ export const SongCell: React.FC<SongCellProps> = props => {
           <CoverImage
             image={props.image}
             caption={props.caption}
-            imageBackgroundColor={props.imageBackgroundColor}
             css={css`
               flex: 1;
             `}

@@ -34,8 +34,6 @@ Default.args = {
     md: '/images/members/singles/27/saitouasuka@2x.jpg',
     lg: '/images/members/singles/27/saitouasuka@3x.jpg',
   },
-  imageBackgroundColor: '#8CD0F6',
-  nameBackgroundColor: '#e2f3fd',
 };
 
 export const Japanese = Template.bind({});
@@ -50,8 +48,6 @@ Japanese.args = {
     md: '/images/members/singles/27/saitouasuka@2x.jpg',
     lg: '/images/members/singles/27/saitouasuka@3x.jpg',
   },
-  imageBackgroundColor: '#8CD0F6',
-  nameBackgroundColor: '#e2f3fd',
 };
 
 export const LongName = Template.bind({});
@@ -65,8 +61,6 @@ LongName.args = {
     md: '/images/members/singles/27/yoshidaayanochristie@2x.jpg',
     lg: '/images/members/singles/27/yoshidaayanochristie@3x.jpg',
   },
-  imageBackgroundColor: '#dfa2f8',
-  nameBackgroundColor: '#ecccf8',
 };
 
 export const NoNumber = Template.bind({});
@@ -79,8 +73,6 @@ NoNumber.args = {
     md: '/images/members/singles/27/saitouasuka@2x.jpg',
     lg: '/images/members/singles/27/saitouasuka@3x.jpg',
   },
-  imageBackgroundColor: '#8CD0F6',
-  nameBackgroundColor: '#e2f3fd',
 };
 
 export const NoCaption = Template.bind({});
@@ -94,8 +86,6 @@ NoCaption.args = {
     md: '/images/members/singles/27/saitouasuka@2x.jpg',
     lg: '/images/members/singles/27/saitouasuka@3x.jpg',
   },
-  imageBackgroundColor: '#8CD0F6',
-  nameBackgroundColor: '#e2f3fd',
 };
 
 export const NotLink = Template.bind({});
@@ -108,18 +98,5 @@ NotLink.args = {
     sm: '/images/members/others/kojimaharuna@1x.jpg',
     md: '/images/members/others/kojimaharuna@2x.jpg',
     lg: '/images/members/others/kojimaharuna@3x.jpg',
-  },
-};
-
-export const FallbackBackground = Template.bind({});
-FallbackBackground.args = {
-  href: '/',
-  name: 'Saito Asuka',
-  number: 1,
-  caption: 'fukujin',
-  image: {
-    sm: '/images/members/singles/27/saitouasuka@1x.jpg',
-    md: '/images/members/singles/27/saitouasuka@2x.jpg',
-    lg: '/images/members/singles/27/saitouasuka@3x.jpg',
   },
 };

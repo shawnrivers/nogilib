@@ -2,10 +2,7 @@ import { css } from '@emotion/react';
 import Link from 'next/link';
 import { commonStyles } from 'client/styles/tokens';
 import { Typography } from 'client/components/atoms/Typography';
-import {
-  getColorVarName,
-  getGlobalColorVarName,
-} from 'client/styles/tokens/colors';
+import { getColorVarName } from 'client/styles/tokens/colors';
 import { ImageUrl } from 'server/types/commons';
 import {
   CoverImage,
@@ -17,13 +14,11 @@ export type AlbumCellProps = {
   title: string;
   caption?: string;
   image: ImageUrl;
-  imageBackgroundColor?: string;
-  titleBackgroundColor?: string;
 };
 
 export const AlbumCell: React.FC<AlbumCellProps> = props => {
   return (
-    <Link href="/" passHref>
+    <Link href={props.href} passHref>
       <a
         css={css`
           display: inline-block;
@@ -31,7 +26,6 @@ export const AlbumCell: React.FC<AlbumCellProps> = props => {
           height: 100%;
           vertical-align: bottom;
           cursor: pointer;
-
           ${parentAnimationStyles};
         `}
       >
@@ -42,6 +36,8 @@ export const AlbumCell: React.FC<AlbumCellProps> = props => {
             position: relative;
             border: 2px solid
               var(${getColorVarName('onBackground', 'standard')});
+            border-radius: ${commonStyles.borderRadius.xxs};
+            overflow: hidden;
           `}
         >
           <div
@@ -57,7 +53,6 @@ export const AlbumCell: React.FC<AlbumCellProps> = props => {
             <CoverImage
               image={props.image}
               caption={props.caption}
-              imageBackgroundColor={props.imageBackgroundColor}
               css={css`
                 flex: 1;
               `}
@@ -68,13 +63,14 @@ export const AlbumCell: React.FC<AlbumCellProps> = props => {
               lang="ja"
               ellipsis
               css={css`
-                color: var(${getGlobalColorVarName('gray7')});
+                color: var(${getColorVarName('onBackground', 'standard')});
                 writing-mode: vertical-rl;
                 flex: 0 0 auto;
                 line-height: 1.5;
-                padding: ${commonStyles.spacing.xs};
-                background-color: ${props.titleBackgroundColor ??
-                `var(${getGlobalColorVarName('gray0')})`};
+                padding: ${commonStyles.spacing.xs} ${commonStyles.spacing.xxs};
+                background-color: var(
+                  ${getColorVarName('background', 'variant0')}
+                );
                 border-right: 1px solid
                   var(${getColorVarName('onBackground', 'standard')});
               `}

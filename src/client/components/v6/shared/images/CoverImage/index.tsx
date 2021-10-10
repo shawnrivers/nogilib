@@ -67,7 +67,6 @@ export type CoverImageProps = {
   className?: string;
   image: ImageUrl;
   caption?: string;
-  imageBackgroundColor?: string;
 };
 
 export const CoverImage: React.FC<CoverImageProps> = props => {
@@ -76,8 +75,7 @@ export const CoverImage: React.FC<CoverImageProps> = props => {
       className={joinClassNames('image-wrapper', props.className)}
       css={css`
         overflow: hidden;
-        background-color: ${props.imageBackgroundColor ??
-        `var(${getGlobalColorVarName('gray6')})`};
+        background-color: var(${getGlobalColorVarName('gray6')});
         position: relative;
 
         &::before {

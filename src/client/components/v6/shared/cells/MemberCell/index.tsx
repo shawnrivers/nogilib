@@ -44,8 +44,6 @@ export type MemberCellProps = {
   number?: string | number;
   caption?: string;
   image: ImageUrl;
-  imageBackgroundColor?: string;
-  nameBackgroundColor?: string;
 };
 
 export const MemberCell: React.FC<MemberCellProps> = props => {
@@ -56,7 +54,7 @@ export const MemberCell: React.FC<MemberCellProps> = props => {
           width: 100%;
           height: 100%;
           border: 2px solid var(${getColorVarName('onBackground', 'standard')});
-          border-radius: ${commonStyles.borderRadius.xs};
+          border-radius: ${commonStyles.borderRadius.xxs};
           overflow: hidden;
         `}
       >
@@ -115,8 +113,7 @@ export const MemberCell: React.FC<MemberCellProps> = props => {
                 line-height: 1.5;
                 color: var(${getGlobalColorVarName('gray8')});
                 padding: ${commonStyles.spacing.xxs};
-                background-color: ${props.nameBackgroundColor ??
-                `var(${getGlobalColorVarName('gray0')})`};
+                background-color: var(${getGlobalColorVarName('gray0')});
               `}
             >
               {props.name}
@@ -125,10 +122,6 @@ export const MemberCell: React.FC<MemberCellProps> = props => {
           <CoverImage
             image={props.image}
             caption={props.caption}
-            imageBackgroundColor={
-              props.imageBackgroundColor ??
-              `var(${getColorVarName('background', 'variant0')})`
-            }
             css={css`
               flex: 1;
             `}

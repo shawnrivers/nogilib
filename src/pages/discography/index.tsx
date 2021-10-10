@@ -8,12 +8,13 @@ import { getDiscographyData } from 'api/discography';
 import { DiscographyPageData } from 'server/pages/discography';
 import { sortByDate } from 'utils/sorting';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
-import { ArtworkCard } from 'client/components/molecules/cards/ArtworkCard';
 import { TextDivider } from 'client/components/molecules/TextDivider';
 import { TextSwitchLinkGroup } from 'client/components/molecules/TextSwitchLinkGroup';
 import { PageContent } from 'client/components/layout/PageContent';
 import { PageHelmet } from 'client/components/layout/PageHelmet';
 import { commonStyles } from 'client/styles/tokens';
+import { AlbumCell } from 'client/components/v6/shared/cells/AlbumCell';
+import { useIntl } from 'client/i18n/hooks/useIntl';
 
 type CdGroupByYear = {
   year: number;
@@ -103,6 +104,7 @@ const DiscographyPage: React.FC<DiscographyPageProps> = props => {
   const filter = useFilter();
   const { Translation, getTranslation } = useTranslations();
   const { locale } = useRouter();
+  const { formatAlbumType } = useIntl();
 
   const currentFilter = React.useMemo(() => {
     switch (filter) {
@@ -187,20 +189,19 @@ const DiscographyPage: React.FC<DiscographyPageProps> = props => {
                 `}
               >
                 {cdGroup.cds.map(cd => (
-                  <li key={cd.key}>
-                    <ArtworkCard
+                  <li
+                    key={cd.key}
+                    css={css`
+                      margin: ${commonStyles.spacing.xs};
+                      width: 195px;
+                      height: 160px;
+                    `}
+                  >
+                    <AlbumCell
                       href={getAlbumUrl(cd.key)}
-                      image={cd.artwork}
-                      width={175}
-                      number={cd.number}
-                      type={cd.type}
                       title={cd.title}
-                      titleElement="h3"
-                      borderRadius="s"
-                      padding="s"
-                      css={css`
-                        margin: ${commonStyles.spacing.xs};
-                      `}
+                      caption={formatAlbumType(cd.type, cd.number)}
+                      image={cd.artwork}
                     />
                   </li>
                 ))}

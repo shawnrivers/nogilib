@@ -34,8 +34,6 @@ Default.args = {
     md: '/images/artworks/singles/27/A@2x.jpg',
     lg: '/images/artworks/singles/27/A@3x.jpg',
   },
-  titleBackgroundColor: '#f8b1b1',
-  imageBackgroundColor: '#bf0000',
 };
 
 export const Variation = Template.bind({});
@@ -50,8 +48,6 @@ Variation.args = {
     md: '/images/artworks/singles/27/B@2x.jpg',
     lg: '/images/artworks/singles/27/B@3x.jpg',
   },
-  imageBackgroundColor: '#ffa700',
-  titleBackgroundColor: '#fcda9c',
 };
 
 export const NoNumber = Template.bind({});
@@ -65,8 +61,6 @@ NoNumber.args = {
     md: '/images/artworks/singles/27/A@2x.jpg',
     lg: '/images/artworks/singles/27/A@3x.jpg',
   },
-  titleBackgroundColor: '#f8b1b1',
-  imageBackgroundColor: '#bf0000',
 };
 
 export const NoCaption = Template.bind({});
@@ -75,22 +69,6 @@ NoCaption.args = {
   title: 'ごめんねFingers crossed',
   titleLang: 'ja',
   number: 1,
-  image: {
-    sm: '/images/artworks/singles/27/A@1x.jpg',
-    md: '/images/artworks/singles/27/A@2x.jpg',
-    lg: '/images/artworks/singles/27/A@3x.jpg',
-  },
-  titleBackgroundColor: '#f8b1b1',
-  imageBackgroundColor: '#bf0000',
-};
-
-export const FallbackBackground = Template.bind({});
-FallbackBackground.args = {
-  href: '/',
-  title: 'ごめんねFingers crossed',
-  titleLang: 'ja',
-  number: 1,
-  caption: '#title',
   image: {
     sm: '/images/artworks/singles/27/A@1x.jpg',
     md: '/images/artworks/singles/27/A@2x.jpg',
