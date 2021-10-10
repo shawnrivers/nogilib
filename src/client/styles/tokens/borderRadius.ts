@@ -7,6 +7,6 @@ export const BORDER_RADIUS = {
   l: '24px',
   xl: '32px',
   xxl: '40px',
-};
+} as const;
 
 export type BorderRadiusKey = keyof typeof BORDER_RADIUS;

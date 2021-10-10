@@ -158,7 +158,7 @@ export const CoverImage: React.FC<CoverImageProps> = props => {
           width: 100%;
           height: 100%;
           object-fit: cover;
-
+          object-position: top;
           transform: scale(1);
         `}
       />

@@ -56,6 +56,8 @@ export const MemberCell: React.FC<MemberCellProps> = props => {
           width: 100%;
           height: 100%;
           border: 2px solid var(${getColorVarName('onBackground', 'standard')});
+          border-radius: ${commonStyles.borderRadius.xs};
+          overflow: hidden;
         `}
       >
         <div
@@ -87,13 +89,14 @@ export const MemberCell: React.FC<MemberCellProps> = props => {
                   justify-content: center;
                   border-right: 1px solid
                     var(${getColorVarName('onBackground', 'standard')});
+                  background-color: var(${getGlobalColorVarName('gray1')}); ;
                 `}
               >
                 <Typography
                   variant="em1"
                   element="span"
                   css={css`
-                    color: var(${getColorVarName('onBackground', 'standard')});
+                    color: var(${getGlobalColorVarName('gray8')});
                   `}
                 >
                   {props.number}
@@ -101,7 +104,7 @@ export const MemberCell: React.FC<MemberCellProps> = props => {
               </span>
             )}
             <Typography
-              variant="h7"
+              variant="body1"
               element="h3"
               lang={props.nameLang}
               ellipsis
@@ -110,8 +113,8 @@ export const MemberCell: React.FC<MemberCellProps> = props => {
                 display: inline;
                 text-align: center;
                 line-height: 1.5;
-                color: var(${getGlobalColorVarName('gray7')});
-                padding: ${commonStyles.spacing.xs};
+                color: var(${getGlobalColorVarName('gray8')});
+                padding: ${commonStyles.spacing.xxs};
                 background-color: ${props.nameBackgroundColor ??
                 `var(${getGlobalColorVarName('gray0')})`};
               `}
@@ -122,7 +125,10 @@ export const MemberCell: React.FC<MemberCellProps> = props => {
           <CoverImage
             image={props.image}
             caption={props.caption}
-            imageBackgroundColor={props.imageBackgroundColor}
+            imageBackgroundColor={
+              props.imageBackgroundColor ??
+              `var(${getColorVarName('background', 'variant0')})`
+            }
             css={css`
               flex: 1;
             `}
