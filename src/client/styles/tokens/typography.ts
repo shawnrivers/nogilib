@@ -39,6 +39,10 @@ export const TYPOGRAPHY = {
     fontSize: '1rem',
     fontWeight: 400,
   },
+  h8: {
+    fontSize: '0.875rem',
+    fontWeight: 400,
+  },
   body1: {
     fontSize: '1rem',
     fontWeight: 400,

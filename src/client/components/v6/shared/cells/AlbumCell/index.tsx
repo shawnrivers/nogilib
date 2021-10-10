@@ -53,6 +53,7 @@ export const AlbumCell: React.FC<AlbumCellProps> = props => {
             <CoverImage
               image={props.image}
               caption={props.caption}
+              objectPosition="center"
               css={css`
                 flex: 1;
               `}

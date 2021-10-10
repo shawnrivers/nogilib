@@ -7,16 +7,17 @@ import { AlbumPageData } from 'server/pages/album';
 import { getAlbumData } from 'api/album';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { Typography } from 'client/components/atoms/Typography';
-import { HorizontalCard } from 'client/components/molecules/cards/HorizontalCard';
-import { MemberCard } from 'client/components/molecules/cards/MemberCard';
 import { TextDivider } from 'client/components/molecules/TextDivider';
 import { PageContent } from 'client/components/layout/PageContent';
 import { useIntl } from 'client/i18n/hooks/useIntl';
 import { PageHelmet } from 'client/components/layout/PageHelmet';
 import { commonStyles } from 'client/styles/tokens';
-import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { getSongUrl, getMemberUrl } from 'client/utils/url';
 import { AspectRatioImage } from 'client/components/atoms/image/AspectRatioImage';
+import { SongCell } from 'client/components/v6/shared/cells/SongCell';
+import { MemberCell } from 'client/components/v6/shared/cells/MemberCell';
+import { capitalizeText } from 'utils/string';
+import { getColorVarName } from 'client/styles/tokens/colors';
 
 type PathParams = { id: string };
 
@@ -82,7 +83,7 @@ export const getStaticProps: GetStaticProps<PageProps, PathParams> = async ({
 
 const AlbumPage: React.FC<PageProps> = props => {
   const { title, type, number } = props;
-  const { Translation, getTranslation } = useTranslations();
+  const { Translation } = useTranslations();
   const { formatDate, formatMemberName, formatAlbumType } = useIntl();
   const { locale } = useRouter();
 
@@ -125,24 +126,22 @@ const AlbumPage: React.FC<PageProps> = props => {
                 justify-content: center;
               `}
             >
-              {props.songs.map(track => (
+              {props.songs.map((track, i) => (
                 <li
                   key={track.key}
                   css={css`
-                    width: 300px;
-                    margin: ${commonStyles.spacing.xs};
+                    width: 180px;
+                    height: 190px;
+                    margin: ${commonStyles.spacing.s};
                   `}
                 >
-                  <HorizontalCard
+                  <SongCell
                     href={getSongUrl(track.key)}
+                    title={track.title}
+                    titleLang="ja"
+                    number={i + 1}
+                    caption={`#${track.type}`}
                     image={track.artwork}
-                    title={{ text: track.title, lang: 'ja' }}
-                    tags={[
-                      {
-                        text: getTranslation(track.type as any),
-                        lang: locale,
-                      },
-                    ]}
                   />
                 </li>
               ))}
@@ -159,19 +158,21 @@ const AlbumPage: React.FC<PageProps> = props => {
                 `}
               >
                 {props.centers.map(member => (
-                  <li key={member.name}>
-                    <MemberCard
+                  <li
+                    key={member.name}
+                    css={css`
+                      margin: ${commonStyles.spacing.xs};
+                      width: 120px;
+                      height: 170px;
+                    `}
+                  >
+                    <MemberCell
                       href={getMemberUrl(member.name)}
-                      profileImage={member.albumProfileImage}
-                      name={formatMemberName(member.nameNotations).name}
-                      lang={formatMemberName(member.nameNotations).lang}
-                      width={130}
-                      textSize="body2"
-                      borderRadius="s"
-                      padding="xs"
-                      css={css`
-                        margin: ${commonStyles.spacing.xs};
-                      `}
+                      name={capitalizeText(
+                        formatMemberName(member.nameNotations).name
+                      )}
+                      nameLang={formatMemberName(member.nameNotations).lang}
+                      image={member.albumProfileImage}
                     />
                   </li>
                 ))}
@@ -191,11 +192,10 @@ const AlbumPage: React.FC<PageProps> = props => {
                 <li
                   key={i}
                   css={css`
-                    margin: ${commonStyles.spacing.s};
-                    border-radius: ${commonStyles.borderRadius.m};
-                    box-shadow: ${commonStyles.elevations[
-                      componentElevationKey.componentOnBackground
-                    ].boxShadow};
+                    margin: ${commonStyles.spacing.xxs};
+                    border-radius: ${commonStyles.borderRadius.xxs};
+                    border: 2px solid
+                      var(${getColorVarName('onBackground', 'standard')});
                     overflow: hidden;
                     width: 160px;
                     height: 160px;

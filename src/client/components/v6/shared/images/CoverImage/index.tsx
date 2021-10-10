@@ -67,6 +67,7 @@ export type CoverImageProps = {
   className?: string;
   image: ImageUrl;
   caption?: string;
+  objectPosition?: 'top' | 'center' | 'bottom';
 };
 
 export const CoverImage: React.FC<CoverImageProps> = props => {
@@ -96,9 +97,11 @@ export const CoverImage: React.FC<CoverImageProps> = props => {
         <div
           css={css`
             position: absolute;
+            max-width: calc(100% - ${commonStyles.spacing.xs} * 2);
             z-index: 1;
             bottom: ${commonStyles.spacing.xs};
             right: ${commonStyles.spacing.xs};
+            box-sizing: border-box;
             border: 1px solid var(${getGlobalColorVarName('gray8')});
             padding-top: ${commonStyles.spacing.xs};
             padding-bottom: ${commonStyles.spacing.xs};
@@ -106,6 +109,9 @@ export const CoverImage: React.FC<CoverImageProps> = props => {
             padding-right: calc(${commonStyles.spacing.xs} + 2px);
             background-color: var(${getGlobalColorVarName('white')});
             line-height: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
           `}
         >
           <Typography
@@ -156,7 +162,7 @@ export const CoverImage: React.FC<CoverImageProps> = props => {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          object-position: top;
+          object-position: ${props.objectPosition ?? 'top'};
           transform: scale(1);
         `}
       />

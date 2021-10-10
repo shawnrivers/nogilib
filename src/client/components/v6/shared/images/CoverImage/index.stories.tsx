@@ -51,3 +51,13 @@ NoCaption.args = {
     lg: '/images/artworks/singles/27/A@3x.jpg',
   },
 };
+
+export const LongCaption = Template.bind({});
+LongCaption.args = {
+  image: {
+    sm: '/images/artworks/singles/27/A@1x.jpg',
+    md: '/images/artworks/singles/27/A@2x.jpg',
+    lg: '/images/artworks/singles/27/A@3x.jpg',
+  },
+  caption: 'TWENTY-SEVENTIETH GENERATION',
+};
