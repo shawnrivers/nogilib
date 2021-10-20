@@ -70,7 +70,7 @@
     "@types/node": "^16.11.1",
     "@types/query-string": "^6.3.0",
     "@types/react": "^17.0.30",
-    "@types/react-dom": "^17.0.9",
+    "@types/react-dom": "^17.0.10",
     "@types/react-helmet": "^6.1.4",
     "@types/react-lazyload": "^3.1.1",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
