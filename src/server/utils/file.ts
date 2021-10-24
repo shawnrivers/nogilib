@@ -6,6 +6,7 @@ export function writeJSONFile(path: string, data: any) {
       throw err;
     }
 
+    // eslint-disable-next-line no-console
     console.log(`JSON saved in: ${path}`);
   });
 }

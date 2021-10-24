@@ -75,90 +75,87 @@ describe('convertSongArtwork', () => {
   test('should the first matched single artwork', () => {
     const songTitle = 'シンクロニシティ';
 
-    expect(
-      convertSongArtwork({
+    const converted = convertSongArtwork({
+      songTitle,
+      songSingleResult: convertSongSingle({ songTitle, singlesRawArray }),
+      songAlbumsResult: convertSongAlbums({ songTitle, albumsRawArray }),
+      songOtherCdsResult: convertSongOtherCds({
         songTitle,
-        songSingleResult: convertSongSingle({ songTitle, singlesRawArray }),
-        songAlbumsResult: convertSongAlbums({ songTitle, albumsRawArray }),
-        songOtherCdsResult: convertSongOtherCds({
-          songTitle,
-          otherCdsRawArray,
-        }),
-        singlesRawObject,
-        albumsRawObject,
-        otherCdsRawObject,
-      })
-    ).toEqual({
-      sm: '/images/artworks/singles/20/A@1x.jpg',
-      md: '/images/artworks/singles/20/A@2x.jpg',
-      lg: '/images/artworks/singles/20/A@3x.jpg',
+        otherCdsRawArray,
+      }),
+      singlesRawObject,
+      albumsRawObject,
+      otherCdsRawObject,
     });
+
+    expect(converted.sm).toMatch(/images\/artworks\/singles\/20\/A.*@1x.jpg/);
+    expect(converted.md).toMatch(/images\/artworks\/singles\/20\/A.*@2x.jpg/);
+    expect(converted.lg).toMatch(/images\/artworks\/singles\/20\/A.*@3x.jpg/);
   });
 
   test('should return the first matched album artwork when no single matched', () => {
     const songTitle = '自分のこと';
 
-    expect(
-      convertSongArtwork({
+    const converted = convertSongArtwork({
+      songTitle,
+      songSingleResult: convertSongSingle({ songTitle, singlesRawArray }),
+      songAlbumsResult: convertSongAlbums({ songTitle, albumsRawArray }),
+      songOtherCdsResult: convertSongOtherCds({
         songTitle,
-        songSingleResult: convertSongSingle({ songTitle, singlesRawArray }),
-        songAlbumsResult: convertSongAlbums({ songTitle, albumsRawArray }),
-        songOtherCdsResult: convertSongOtherCds({
-          songTitle,
-          otherCdsRawArray,
-        }),
-        singlesRawObject,
-        albumsRawObject,
-        otherCdsRawObject,
-      })
-    ).toEqual({
-      sm: '/images/artworks/albums/U/L2@1x.jpg',
-      md: '/images/artworks/albums/U/L2@2x.jpg',
-      lg: '/images/artworks/albums/U/L2@3x.jpg',
+        otherCdsRawArray,
+      }),
+      singlesRawObject,
+      albumsRawObject,
+      otherCdsRawObject,
     });
+
+    expect(converted.sm).toMatch(/\/images\/artworks\/albums\/U\/L2.*@1x.jpg/);
+    expect(converted.md).toMatch(/\/images\/artworks\/albums\/U\/L2.*@2x.jpg/);
+    expect(converted.lg).toMatch(/\/images\/artworks\/albums\/U\/L2.*@3x.jpg/);
   });
 
   test('should return the first matched other CD artwork when no single nor albums matched', () => {
     const songTitle = '世界中の隣人よ';
-
-    expect(
-      convertSongArtwork({
+    const converted = convertSongArtwork({
+      songTitle,
+      songSingleResult: convertSongSingle({ songTitle, singlesRawArray }),
+      songAlbumsResult: convertSongAlbums({ songTitle, albumsRawArray }),
+      songOtherCdsResult: convertSongOtherCds({
         songTitle,
-        songSingleResult: convertSongSingle({ songTitle, singlesRawArray }),
-        songAlbumsResult: convertSongAlbums({ songTitle, albumsRawArray }),
-        songOtherCdsResult: convertSongOtherCds({
-          songTitle,
-          otherCdsRawArray,
-        }),
-        singlesRawObject,
-        albumsRawObject,
-        otherCdsRawObject,
-      })
-    ).toEqual({
-      sm: '/images/artworks/digital/1/T@1x.jpg',
-      md: '/images/artworks/digital/1/T@2x.jpg',
-      lg: '/images/artworks/digital/1/T@3x.jpg',
+        otherCdsRawArray,
+      }),
+      singlesRawObject,
+      albumsRawObject,
+      otherCdsRawObject,
     });
+
+    expect(converted.sm).toMatch(/\/images\/artworks\/digital\/1\/T.*@1x.jpg/);
+    expect(converted.md).toMatch(/\/images\/artworks\/digital\/1\/T.*@2x.jpg/);
+    expect(converted.lg).toMatch(/\/images\/artworks\/digital\/1\/T.*@3x.jpg/);
   });
 
   test('should return no image artwork when no single nor albums and other CDs matched', () => {
     const songTitle = 'OVERTURE';
 
-    expect(
-      convertSongArtwork({
-        songTitle,
-        songSingleResult: { title: '', number: '' },
-        songAlbumsResult: [],
-        songOtherCdsResult: [],
-        singlesRawObject,
-        albumsRawObject,
-        otherCdsRawObject,
-      })
-    ).toEqual({
-      sm: '/images/artworks/artwork_no_image@1x.jpg',
-      md: '/images/artworks/artwork_no_image@2x.jpg',
-      lg: '/images/artworks/artwork_no_image@3x.jpg',
+    const converted = convertSongArtwork({
+      songTitle,
+      songSingleResult: { title: '', number: '' },
+      songAlbumsResult: [],
+      songOtherCdsResult: [],
+      singlesRawObject,
+      albumsRawObject,
+      otherCdsRawObject,
     });
+
+    expect(converted.sm).toMatch(
+      /\/images\/artworks\/artwork_no_image.*@1x.jpg/
+    );
+    expect(converted.md).toMatch(
+      /\/images\/artworks\/artwork_no_image.*@2x.jpg/
+    );
+    expect(converted.lg).toMatch(
+      /\/images\/artworks\/artwork_no_image.*@3x.jpg/
+    );
   });
 });
 

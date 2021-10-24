@@ -1,12 +1,14 @@
 import { SongResult, SongRaw } from 'server/actors/Songs/models';
-import { NO_ARTWORK_IMAGE_SRC } from 'server/constants/paths';
+import { NO_ARTWORK_IMAGE_FILENAME } from 'server/constants/paths';
 import {
   DiscographyRawArray,
   DiscographyRawObject,
 } from 'server/actors/Discography/models';
 import { sortByDate } from 'utils/sorting';
 import {
+  complementImageFilePathname,
   convertImageFilePath,
+  findPathname,
   getResponsiveImageUrls,
 } from 'server/utils/path';
 
@@ -110,7 +112,12 @@ export const convertSongArtwork: ConvertSongArtwork = ({
   albumsRawObject,
   otherCdsRawObject,
 }) => {
-  const noArtworkUrl = getResponsiveImageUrls(NO_ARTWORK_IMAGE_SRC);
+  const noArtworkUrl = getResponsiveImageUrls(
+    findPathname(
+      complementImageFilePathname('/images/artworks/'),
+      NO_ARTWORK_IMAGE_FILENAME
+    ) ?? ''
+  );
 
   if (songSingleResult.title !== '') {
     const single = singlesRawObject[songSingleResult.title];

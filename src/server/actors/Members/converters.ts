@@ -16,6 +16,8 @@ import {
   convertImageFilePath,
   getResponsiveImageUrls,
   getPath,
+  complementImageFilePathname,
+  findPathname,
 } from 'server/utils/path';
 import { Position } from 'server/actors/Members/types';
 
@@ -59,11 +61,14 @@ function getDiscographyGalleryWithDate(params: {
   for (let i = 0; i < discographyRawArray.length; i++) {
     const albumNumber = discographyRawArray[i].number;
 
-    const profileImageSrc = `members/${profileImageTypeFolderName}/${albumNumber}/${memberName}.jpg`;
-
-    if (fs.existsSync('./public/images/' + profileImageSrc)) {
+    const dirname = complementImageFilePathname(
+      `/images/members/${profileImageTypeFolderName}/${albumNumber}/`
+    );
+    const pathname = findPathname(dirname, memberName);
+    if (pathname !== null) {
+      const path = getPath(pathname);
       discographyGallery.push({
-        url: profileImageSrc,
+        url: `members/${profileImageTypeFolderName}/${albumNumber}/${path.filename}${path.extension}`,
         date: discographyRawArray[i].release,
       });
     }
@@ -81,7 +86,7 @@ const otherProfileImagesFileNameWithDate: {
   memberName: string;
   date: string;
 }[] = otherProfileImageFiles
-  .filter(file => !/@[1-3]x$/.test(getPath(file).filename))
+  .filter(file => file.includes('_@1x'))
   .map(file => {
     const filePath = getPath(file);
     const [memberName, date] = filePath.filename.split('_');

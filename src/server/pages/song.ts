@@ -2,10 +2,13 @@ import { Members } from 'server/actors/Members';
 import { MemberResult } from 'server/actors/Members/models';
 import { Songs } from 'server/actors/Songs';
 import { SongResult } from 'server/actors/Songs/models';
-import { KOJIHARU_IMAGE_SRC } from 'server/constants/paths';
+import { KOJIHARU_IMAGE_FILENAME } from 'server/constants/paths';
 import { ImageUrl } from 'server/types/commons';
 import {
+  complementImageFilePathname,
   convertImageFilePath,
+  findPathname,
+  getPath,
   getResponsiveImageUrls,
 } from 'server/utils/path';
 import { arrayToObject } from 'utils/array';
@@ -99,6 +102,10 @@ function getSongPerformers(
             isMember: true,
           };
         } else {
+          const dirname = complementImageFilePathname('/images/members/others');
+          const pathname = findPathname(dirname, KOJIHARU_IMAGE_FILENAME);
+          const path = getPath(pathname ?? '');
+
           return {
             name: 'kojimaharuna',
             nameNotations: {
@@ -110,7 +117,9 @@ function getSongPerformers(
               firstNameFurigana: 'はるな',
             },
             profileImage: getResponsiveImageUrls(
-              convertImageFilePath(KOJIHARU_IMAGE_SRC)
+              convertImageFilePath(
+                `/images/members/others/${path.filename}${path.extension}`
+              )
             ),
             position: getPerformerPosition(song, 'kojimaharuna'),
             isMember: false,

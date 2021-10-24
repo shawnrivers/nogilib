@@ -7,6 +7,7 @@
     "update-data:release": "./src/update-data/release.sh"
   },
   "devDependencies": {
+    "@lukeed/uuid": "^2.0.0",
     "@types/cli-progress": "^3.9.1",
     "@types/imagemin": "^7.0.0",
     "@types/imagemin-mozjpeg": "^8.0.0",
