@@ -55,7 +55,10 @@ export const convertCdArtwork = ({
     return `${imageSrcBasePath}/${cdNumber}/${path.filename}${path.extension}`;
   } else {
     const path = getPath(
-      findPathname(dirname, NO_ARTWORK_IMAGE_FILENAME) ?? ''
+      findPathname(
+        complementImageFilePathname('/images/artworks/'),
+        NO_ARTWORK_IMAGE_FILENAME
+      ) ?? ''
     );
     return `artworks/${path.filename}${path.extension}`;
   }
