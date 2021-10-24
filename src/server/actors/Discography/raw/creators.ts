@@ -1,4 +1,4 @@
-import * as fs from 'fs';
+// import * as fs from 'fs';
 import {
   CDS,
   CdTitle,
@@ -8,9 +8,12 @@ import {
 } from 'server/actors/Discography/constants/cdTitle';
 import { DiscographyRaw } from 'server/actors/Discography/models';
 import { CdType, OtherCdKind } from 'server/actors/Discography/types';
-import { NO_ARTWORK_IMAGE_SRC } from 'server/constants/paths';
+import { NO_ARTWORK_IMAGE_FILENAME } from 'server/constants/paths';
 import {
+  complementImageFilePathname,
   convertImageFilePath,
+  findPathname,
+  getPath,
   getResponsiveImageUrls,
 } from 'server/utils/path';
 
@@ -42,17 +45,20 @@ export const convertCdArtwork = ({
       break;
   }
 
-  if (!cdHasArtworks) {
-    return NO_ARTWORK_IMAGE_SRC;
+  const dirname = complementImageFilePathname(
+    `/images/${imageSrcBasePath}/${cdNumber}/`
+  );
+  const pathname = cdHasArtworks ? findPathname(dirname, cdArtworkType) : null;
+
+  if (pathname !== null) {
+    const path = getPath(pathname);
+    return `${imageSrcBasePath}/${cdNumber}/${path.filename}${path.extension}`;
+  } else {
+    const path = getPath(
+      findPathname(dirname, NO_ARTWORK_IMAGE_FILENAME) ?? ''
+    );
+    return `artworks/${path.filename}${path.extension}`;
   }
-
-  const imageSrc = `${imageSrcBasePath}/${cdNumber}/${cdArtworkType}.jpg`;
-
-  if (fs.existsSync('./public/images/' + imageSrc)) {
-    return imageSrc;
-  }
-
-  return NO_ARTWORK_IMAGE_SRC;
 };
 
 const convertCdArtworks = ({
