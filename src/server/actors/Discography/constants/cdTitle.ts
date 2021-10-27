@@ -134,6 +134,10 @@ const otherCdTitles = [
 
 const albumTitles = [
   {
+    title: 'Time flies',
+    key: 'timefiles',
+  },
+  {
     title: '今が思い出になるまで',
     key: 'imagaomoideninarumade',
   },

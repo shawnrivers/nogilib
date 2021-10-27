@@ -116,39 +116,41 @@ const AlbumPage: React.FC<PageProps> = props => {
             <Translation text="release" />:{' '}
             <time dateTime={props.release}>{formatDate(props.release)}</time>
           </Typography>
-          <section>
-            <TextDivider text={<Translation text="tracks" />} element="h2" />
-            <ol
-              css={css`
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-              `}
-            >
-              {props.songs.map(track => (
-                <li
-                  key={track.key}
-                  css={css`
-                    width: 300px;
-                    margin: ${commonStyles.spacing.xs};
-                  `}
-                >
-                  <HorizontalCard
-                    href={getSongUrl(track.key)}
-                    image={track.artwork}
-                    title={{ text: track.title, lang: 'ja' }}
-                    tags={[
-                      {
-                        text: getTranslation(track.type as any),
-                        lang: locale,
-                      },
-                    ]}
-                  />
-                </li>
-              ))}
-            </ol>
-          </section>
-          {props.centers.length > 0 ? (
+          {props.songs.length > 0 && (
+            <section>
+              <TextDivider text={<Translation text="tracks" />} element="h2" />
+              <ol
+                css={css`
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                `}
+              >
+                {props.songs.map(track => (
+                  <li
+                    key={track.key}
+                    css={css`
+                      width: 300px;
+                      margin: ${commonStyles.spacing.xs};
+                    `}
+                  >
+                    <HorizontalCard
+                      href={getSongUrl(track.key)}
+                      image={track.artwork}
+                      title={{ text: track.title, lang: 'ja' }}
+                      tags={[
+                        {
+                          text: getTranslation(track.type as any),
+                          lang: locale,
+                        },
+                      ]}
+                    />
+                  </li>
+                ))}
+              </ol>
+            </section>
+          )}
+          {props.centers.length > 0 && (
             <section>
               <TextDivider text={<Translation text="center" />} element="h2" />
               <ul
@@ -177,41 +179,46 @@ const AlbumPage: React.FC<PageProps> = props => {
                 ))}
               </ul>
             </section>
-          ) : null}
-          <section>
-            <TextDivider text={<Translation text="artworks" />} element="h2" />
-            <ul
-              css={css`
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-              `}
-            >
-              {props.artworks.map((artwork, i) => (
-                <li
-                  key={i}
-                  css={css`
-                    margin: ${commonStyles.spacing.s};
-                    border-radius: ${commonStyles.borderRadius.m};
-                    box-shadow: ${commonStyles.elevations[
-                      componentElevationKey.componentOnBackground
-                    ].boxShadow};
-                    overflow: hidden;
-                    width: 160px;
-                    height: 160px;
-                  `}
-                >
-                  <AspectRatioImage
-                    src={artwork.url.lg}
-                    srcSet={`${artwork.url.sm}, ${artwork.url.md} 2x, ${artwork.url.lg} 3x`}
-                    alt={`Type ${artwork.type}`}
-                    aspectRatio={1}
-                    loading="lazy"
-                  />
-                </li>
-              ))}
-            </ul>
-          </section>
+          )}
+          {props.artworks.length > 0 && (
+            <section>
+              <TextDivider
+                text={<Translation text="artworks" />}
+                element="h2"
+              />
+              <ul
+                css={css`
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                `}
+              >
+                {props.artworks.map((artwork, i) => (
+                  <li
+                    key={i}
+                    css={css`
+                      margin: ${commonStyles.spacing.s};
+                      border-radius: ${commonStyles.borderRadius.m};
+                      box-shadow: ${commonStyles.elevations[
+                        componentElevationKey.componentOnBackground
+                      ].boxShadow};
+                      overflow: hidden;
+                      width: 160px;
+                      height: 160px;
+                    `}
+                  >
+                    <AspectRatioImage
+                      src={artwork.url.lg}
+                      srcSet={`${artwork.url.sm}, ${artwork.url.md} 2x, ${artwork.url.lg} 3x`}
+                      alt={`Type ${artwork.type}`}
+                      aspectRatio={1}
+                      loading="lazy"
+                    />
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
         </>
       </PageContent>
     </>
