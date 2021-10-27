@@ -32,7 +32,8 @@
       "storybook/*": [
         "../.storybook/libs/*"
       ]
-    }
+    },
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
