@@ -30,6 +30,10 @@ function getAlbumCenters(
 ): AlbumPageData['centers'] {
   const membersObject = members.getResultObject();
 
+  if (album.songs.length === 0) {
+    return [];
+  }
+
   const titleSong = album.songs[0];
   const titleSongFocusPerformers = titleSong.focusPerformers;
 
