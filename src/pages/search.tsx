@@ -19,6 +19,8 @@ import { PageContent } from 'client/components/layout/PageContent';
 import { PageHelmet } from 'client/components/layout/PageHelmet';
 import { getColorVarName } from 'client/styles/tokens/colors';
 import { useSearchQuery } from 'client/store/search/hook/useSearchQuery';
+import { BaseButton } from 'client/components/atoms/BaseButton';
+import { CloseIcon } from 'client/components/atoms/icons/CloseIcon';
 
 type PageProps = {
   docs: (
@@ -59,13 +61,16 @@ function useSearch(docs: PageProps['docs']) {
   );
 
   const handleSearch = React.useCallback(
-    async (event: React.ChangeEvent<HTMLInputElement>) => {
-      const searchQuery = event.target.value;
+    (searchQuery: string) => {
       setQuery(searchQuery);
       search(searchQuery);
     },
     [setQuery, search]
   );
+
+  const handleClear = React.useCallback(() => {
+    handleSearch('');
+  }, [handleSearch]);
 
   React.useEffect(() => {
     if (query !== '') {
@@ -73,13 +78,21 @@ function useSearch(docs: PageProps['docs']) {
     }
   }, [query, search]);
 
-  return { query, results, handleSearch };
+  return { query, results, handleSearch, handleClear };
 }
 
 const SearchPage: React.FC<PageProps> = props => {
   const { docs } = props;
-  const { query, results, handleSearch } = useSearch(docs);
+  const { query, results, handleSearch, handleClear } = useSearch(docs);
   const hasNoResult = results.length === 0 && query !== '';
+  const handleChangeSearchQuery = React.useCallback<
+    React.ChangeEventHandler<HTMLInputElement>
+  >(
+    e => {
+      handleSearch(e.target.value);
+    },
+    [handleSearch]
+  );
 
   const { Translation, getTranslation } = useTranslations();
   const { locale } = useRouter();
@@ -186,6 +199,7 @@ const SearchPage: React.FC<PageProps> = props => {
               variant="body1"
               element="div"
               css={css`
+                position: relative;
                 width: 100%;
                 margin-left: 0.5em;
               `}
@@ -193,7 +207,7 @@ const SearchPage: React.FC<PageProps> = props => {
               <input
                 type="text"
                 value={query}
-                onChange={handleSearch}
+                onChange={handleChangeSearchQuery}
                 placeholder={getTranslation(
                   'Search song title, member name, etc.'
                 )}
@@ -205,13 +219,17 @@ const SearchPage: React.FC<PageProps> = props => {
                     ${getColorVarName('onBackground', 'variant1')}
                   );
                   border-radius: ${commonStyles.borderRadius.xl};
-                  padding: ${commonStyles.spacing.s};
+                  padding: ${commonStyles.spacing.s} 3rem
+                    ${commonStyles.spacing.s} ${commonStyles.spacing.s};
                   transition: border-color 0.2s linear;
                   box-sizing: border-box;
                   color: inherit;
                   font-size: inherit;
                   font-family: inherit;
                   font-weight: inherit;
+                  overflow-x: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
 
                   &::placeholder {
                     color: var(${getColorVarName('onBackground', 'variant1')});
@@ -226,6 +244,27 @@ const SearchPage: React.FC<PageProps> = props => {
                   }
                 `}
               />
+              {query !== '' && (
+                <BaseButton
+                  css={css`
+                    position: absolute;
+                    right: 1rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+                  `}
+                  onClick={handleClear}
+                >
+                  <CloseIcon
+                    width={24}
+                    height={24}
+                    title={getTranslation('clear')}
+                    css={css`
+                      vertical-align: middle;
+                      fill: var(${getColorVarName('onBackground', 'standard')});
+                    `}
+                  />
+                </BaseButton>
+              )}
             </Typography>
           </div>
           {hasNoResult ? (
