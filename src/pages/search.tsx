@@ -63,13 +63,13 @@ function useSearch(docs: PageProps['docs']) {
   const handleSearch = React.useCallback(
     (searchQuery: string) => {
       setQuery(searchQuery);
-      search(searchQuery);
+      return search(searchQuery);
     },
     [setQuery, search]
   );
 
   const handleClear = React.useCallback(() => {
-    handleSearch('');
+    return handleSearch('');
   }, [handleSearch]);
 
   React.useEffect(() => {
@@ -93,6 +93,12 @@ const SearchPage: React.FC<PageProps> = props => {
     },
     [handleSearch]
   );
+
+  const searchInputRef = React.useRef<HTMLInputElement>(null);
+  const handleClickClearSearch = React.useCallback(async () => {
+    await handleClear();
+    searchInputRef.current?.focus();
+  }, [handleClear]);
 
   const { Translation, getTranslation } = useTranslations();
   const { locale } = useRouter();
@@ -211,6 +217,7 @@ const SearchPage: React.FC<PageProps> = props => {
                 placeholder={getTranslation(
                   'Search song title, member name, etc.'
                 )}
+                ref={searchInputRef}
                 css={css`
                   width: 100%;
                   border-width: 2px;
@@ -252,7 +259,7 @@ const SearchPage: React.FC<PageProps> = props => {
                     top: 50%;
                     transform: translateY(-50%);
                   `}
-                  onClick={handleClear}
+                  onClick={handleClickClearSearch}
                 >
                   <CloseIcon
                     width={24}
