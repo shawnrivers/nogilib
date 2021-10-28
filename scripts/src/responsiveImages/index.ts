@@ -2,7 +2,12 @@ import path from 'path';
 import fs from 'fs';
 import cliProgress from 'cli-progress';
 import sharp from 'sharp';
-import { getPath, getPathname } from '../utils/path';
+import {
+  appendString,
+  generateHash,
+  getPath,
+  getPathname,
+} from '../utils/path';
 import { compress } from './compress';
 import { resize } from './resize';
 
@@ -51,7 +56,7 @@ const getResponsiveImages = async (
   const compressedFilepath = getPathname({
     dirname: originalPath.dirname,
     extension: originalPath.extension,
-    filename: `${originalPath.filename}-compressed`,
+    filename: appendString(originalPath.filename, 'compressed'),
   });
 
   fs.copyFileSync(path, compressedFilepath);
@@ -61,23 +66,25 @@ const getResponsiveImages = async (
   });
 
   const [width1x, width2x, width3x] = getResponsiveWidths(width, originalWidth);
+  const hashedFilename = appendString(originalPath.filename, generateHash());
   await Promise.all([
     resize(compressedFilepath, {
       width: width1x,
-      filename: `${originalPath.filename}@1x`,
+      filename: appendString(hashedFilename, '@1x'),
     }),
     resize(compressedFilepath, {
       width: width2x,
-      filename: `${originalPath.filename}@2x`,
+      filename: appendString(hashedFilename, '@2x'),
     }),
     resize(compressedFilepath, {
       width: width3x,
-      filename: `${originalPath.filename}@3x`,
+      filename: appendString(hashedFilename, '@3x'),
     }),
   ]);
 
-  // Remove compressed files
+  // Remove compressed files and the original file
   fs.unlinkSync(compressedFilepath);
+  fs.unlinkSync(path);
 };
 
 const IGNORE_FILENAMES = ['.DS_Store'];
@@ -97,12 +104,12 @@ const getAllImageFiles = (dir: string): string[] => {
       if (
         !IGNORE_FILENAMES.includes(filename) &&
         !/@[1-3]x$/.test(filename) &&
-        !filename.endsWith('-compressed') &&
+        !filename.includes(appendString('', 'compressed')) &&
         !fs.existsSync(
           getPathname({
             dirname,
             extension,
-            filename: `${filename}@1x`,
+            filename: appendString(filename, '@1x'),
           })
         )
       ) {

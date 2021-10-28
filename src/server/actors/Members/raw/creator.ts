@@ -1,5 +1,10 @@
 import { MemberRaw } from 'server/actors/Members/models';
-import { getResponsiveImageUrls } from 'server/utils/path';
+import {
+  complementImageFilePathname,
+  findPathname,
+  getPath,
+  getResponsiveImageUrls,
+} from 'server/utils/path';
 import { sortBySocialMedia } from 'utils/sorting';
 
 type CreateMemberRawParams = {
@@ -76,15 +81,27 @@ export const createMemberRaw = (
         ? sortBySocialMedia(params.sites)
         : params.sites,
     photoAlbums:
-      params.photoAlbums?.map(photoAlbum => ({
-        title: photoAlbum.title,
-        release: photoAlbum.release,
-        type: photoAlbum.type,
-        sites: photoAlbum.sites ?? [],
-        cover: getResponsiveImageUrls(
-          photoAlbum.cover ?? 'photo-albums/photo_album_no_image.jpg'
-        ),
-      })) ?? [],
+      params.photoAlbums?.map(photoAlbum => {
+        const dirname = complementImageFilePathname('/images/photo-albums');
+        const pathname = findPathname(
+          dirname,
+          photoAlbum.cover?.replace('photo-albums/', '').replace('.jpg', '') ??
+            'photo_album_no_image'
+        );
+        const path = getPath(pathname ?? '');
+
+        return {
+          title: photoAlbum.title,
+          release: photoAlbum.release,
+          type: photoAlbum.type,
+          sites: photoAlbum.sites ?? [],
+          cover: getResponsiveImageUrls(
+            pathname !== null
+              ? `photo-albums/${path.filename}${path.extension}`
+              : ''
+          ),
+        };
+      }) ?? [],
     graduation,
   };
 };

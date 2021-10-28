@@ -59,6 +59,7 @@ export const ArtworkCard: React.FC<
           variant="h7"
           element="div"
           textColor={{ on: 'onBackground', variant: 'variant1' }}
+          capitalize
           css={css`
             display: block;
             margin-top: 0.5em;

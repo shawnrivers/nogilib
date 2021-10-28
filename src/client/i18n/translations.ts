@@ -681,6 +681,11 @@ const dictionary = {
     ja: 'TikTok',
     zh: '抖音',
   },
+  clear: {
+    en: 'clear',
+    ja: 'クリア',
+    zh: '清除',
+  },
 };
 
 export type DictionaryKey = keyof typeof dictionary;

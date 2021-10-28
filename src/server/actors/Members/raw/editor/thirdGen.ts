@@ -94,15 +94,8 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
         title: 'Instagram',
         url: 'https://www.instagram.com/o.momoko_official/',
       },
-      {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/momoko.oozono/',
-      },
-      {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/oozonomomoko.php',
-      },
     ],
+    graduatedDate: '2021-09-04',
   }),
   createMemberRaw({
     name: 'kuboshiori',
@@ -185,6 +178,10 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     bloodType: 'unknown',
     origin: '東京都',
     sites: [
+      {
+        title: 'Instagram',
+        url: 'https://www.instagram.com/n.reno_official/',
+      },
       {
         title: 'blog',
         url: 'https://blog.nogizaka46.com/reno.nakamura/',
@@ -281,6 +278,10 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     bloodType: 'a',
     origin: '大分県',
     sites: [
+      {
+        title: 'Instagram',
+        url: 'https://www.instagram.com/y.ayanochristie.official/',
+      },
       {
         title: 'blog',
         url: 'https://blog.nogizaka46.com/ayanochristie.yoshida/',

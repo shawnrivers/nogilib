@@ -36,6 +36,12 @@ export const TWENTY_EIGHTH_SINGLE_SONGS: SongRaw[] = [
         'kakehashisayaka',
       ],
     },
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['youth case'],
+      arrange: ['石塚知生'],
+      direct: ['横堀光範'],
+    },
   }),
   createSongRaw({
     title: 'やさしいだけなら',
@@ -43,32 +49,47 @@ export const TWENTY_EIGHTH_SINGLE_SONGS: SongRaw[] = [
     formations: {
       firstRow: ['ikutaerika', 'kakiharuka', 'kuboshiori'],
     },
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['平賀伸明'],
+      arrange: ['野中“まさ”雄一'],
+    },
   }),
   createSongRaw({
     title: 'マシンガンレイン',
     type: 'under',
+    center: ['teradaranze'],
     formations: {
       firstRow: [
-        'itouriria',
-        'sakaguchitamami',
-        'satoukaede',
+        'yumikinao',
+        'shibatayuna',
         'teradaranze',
         'nakamurareno',
-        'mukaihazuki',
         'yamazakirena',
-        'yoshidaayanochristie',
-        'wadamaaya',
-        'kakehashisayaka',
-        'kanagawasaya',
-        'kitagawayuri',
-        'kuromiharuka',
-        'satourika',
-        'shibatayuna',
-        'hayashiruna',
-        'matsuomiyu',
-        'yakubomio',
-        'yumikinao',
       ],
+      secondRow: [
+        'matsuomiyu',
+        'hayashiruna',
+        'sakaguchitamami',
+        'kanagawasaya',
+        'satourika',
+        'satoukaede',
+      ],
+      thirdRow: [
+        'itouriria',
+        'kuromiharuka',
+        'yakubomio',
+        'wadamaaya',
+        'kitagawayuri',
+        'yoshidaayanochristie',
+        'mukaihazuki',
+      ],
+    },
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['CottON'],
+      arrange: ['CottON'],
+      direct: ['今原電気'],
     },
   }),
   createSongRaw({
@@ -82,11 +103,23 @@ export const TWENTY_EIGHTH_SINGLE_SONGS: SongRaw[] = [
         'matsuomiyu',
       ],
     },
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['山本加津彦'],
+      arrange: ['千葉"naotyu-"直樹', '山本加津彦'],
+      direct: ['大久保拓朗'],
+    },
   }),
   createSongRaw({
     title: '私の色',
     type: 'solo',
     solo: 'takayamakazumi',
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['YSU'],
+      arrange: ['YSU'],
+      direct: ['頃安祐良'],
+    },
   }),
   createSongRaw({
     title: '泥だらけ',
@@ -101,10 +134,16 @@ export const TWENTY_EIGHTH_SINGLE_SONGS: SongRaw[] = [
         'wadamaaya',
       ],
     },
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['CottON'],
+      arrange: ['CottON'],
+      direct: ['林希'],
+    },
   }),
   createSongRaw({
     title: '他人のそら似',
-    type: 'none',
+    type: 'coupling',
     formations: {
       firstRow: [
         'akimotomanatsu',
@@ -148,6 +187,11 @@ export const TWENTY_EIGHTH_SINGLE_SONGS: SongRaw[] = [
         'yakubomio',
         'yumikinao',
       ],
+    },
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['youth case'],
+      arrange: ['佐々木博史'],
     },
   }),
 ];

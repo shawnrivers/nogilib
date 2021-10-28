@@ -50,18 +50,15 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/junna_ito_official/',
       },
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/junna.itou/',
-      },
-      {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/itoujunna.php',
+        title: 'fan club',
+        url: 'https://funkeon.com/fanclub/5',
       },
       {
         title: '755',
         url: 'https://7gogo.jp/itou-junna',
       },
     ],
+    graduatedDate: '2021-08-29',
   }),
   createMemberRaw({
     name: 'kitanohinako',
@@ -235,7 +232,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     ],
     photoAlbums: [
       {
-        title: 'タイトル未定',
+        title: 'なぜ、忘れられないんだろう？',
         release: '2021-11-09',
         type: 'photo album',
         sites: [{ title: 'Twitter', url: 'https://twitter.com/ranze1st' }],
@@ -364,14 +361,6 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/miria.watanabe_official/',
       },
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/miria.watanabe/',
-      },
-      {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/watanabemiria.php',
-      },
-      {
         title: '755',
         url: 'https://7gogo.jp/watanabe-miria',
       },
@@ -390,6 +379,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         cover: 'photo-albums/watanabemiria_1.jpg',
       },
     ],
+    graduatedDate: '2021-08-31',
   }),
   createMemberRaw({
     name: 'sagaraiori',
@@ -439,7 +429,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
       },
       {
         title: 'Twitter',
-        url: 'https://twitter.com/miss2chuo__2020',
+        url: 'https://twitter.com/kyoka_yonetoku',
       },
     ],
     graduatedDate: '2014-10-18',
