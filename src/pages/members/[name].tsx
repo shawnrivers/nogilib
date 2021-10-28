@@ -241,7 +241,7 @@ const MemberPage: React.FC<PageProps> = props => {
             variant: 'variant0',
           }}
           css={css`
-            vertical-align: center;
+            vertical-align: middle;
             text-transform: capitalize;
             text-align: center;
             margin-top: 0.3em;
