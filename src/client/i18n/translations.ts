@@ -686,6 +686,11 @@ const dictionary = {
     ja: 'クリア',
     zh: '清除',
   },
+  best: {
+    en: 'best',
+    ja: 'ベスト',
+    zh: '精选',
+  },
 };
 
 export type DictionaryKey = keyof typeof dictionary;
