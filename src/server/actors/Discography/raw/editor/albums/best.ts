@@ -6,5 +6,10 @@ export const BEST_ALBUM = createAlbumRaw({
   release: '2021-12-15',
   previousSingle: '28',
   cdTypes: ['L1', 'L2', 'T'],
-  songs: [],
+  songs: [
+    {
+      title: '最後のTight Hug',
+      inCdType: ['L1'],
+    },
+  ],
 });
