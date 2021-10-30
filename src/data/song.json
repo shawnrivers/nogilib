@@ -56057,6 +56057,69 @@
     ]
   },
   {
+    "key": "saigonotighthug",
+    "title": "最後のTight Hug",
+    "type": "lead",
+    "artwork": {
+      "sm": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@1x.jpg",
+      "md": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@2x.jpg",
+      "lg": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@3x.jpg"
+    },
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "杉山勝彦",
+        "谷地学"
+      ],
+      "direct": []
+    },
+    "single": {
+      "title": "",
+      "number": ""
+    },
+    "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      }
+    ],
+    "otherCds": [],
+    "performersTag": {
+      "name": "selected",
+      "album": {
+        "type": "album",
+        "number": "best"
+      }
+    },
+    "performers": [
+      [
+        {
+          "name": "ikutaerika",
+          "nameNotations": {
+            "lastName": "生田",
+            "firstName": "絵梨花",
+            "lastNameFurigana": "いくた",
+            "firstNameFurigana": "えりか",
+            "lastNameEn": "ikuta",
+            "firstNameEn": "erika"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/27/ikutaerika_a1dd8a40-c077-4c2c-8dee-3fdbdf961f2d_@1x.jpg",
+            "md": "/images/members/singles/27/ikutaerika_a1dd8a40-c077-4c2c-8dee-3fdbdf961f2d_@2x.jpg",
+            "lg": "/images/members/singles/27/ikutaerika_a1dd8a40-c077-4c2c-8dee-3fdbdf961f2d_@3x.jpg"
+          },
+          "position": "center",
+          "isMember": true
+        }
+      ]
+    ]
+  },
+  {
     "key": "sekainorinjinyo",
     "title": "世界中の隣人よ",
     "type": "special",
