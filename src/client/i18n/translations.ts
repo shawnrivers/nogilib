@@ -501,7 +501,7 @@ const dictionary = {
   },
   'no result': {
     en: 'no result',
-    ja: '結果がみ見つかりませんでした',
+    ja: '結果が見つかりませんでした',
     zh: '找不到搜索结果',
   },
   'A web app for showing the information about Nogizaka46 in a user-friendly way':
