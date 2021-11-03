@@ -1,7 +1,6 @@
 import { css } from '@emotion/core';
 import * as React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
 import { PageContent } from 'client/components/layout/PageContent';
 import { Hashtag } from 'client/components/atoms/Hashtag';
 import { commonStyles } from 'client/styles/tokens';
@@ -94,8 +93,6 @@ const PerformersTag: React.FC<SongPageProps['performersTag']> = props => {
 };
 
 export const SongPage: React.FC<SongPageProps> = props => {
-  useScrollRestoration();
-
   const {
     title,
     type,

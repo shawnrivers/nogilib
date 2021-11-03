@@ -7,7 +7,6 @@ import { MemberPageData } from 'server/pages/member';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { commonStyles } from 'client/styles/tokens';
 import { useIntl } from 'client/i18n/hooks/useIntl';
-import { useScrollRestoration } from 'client/hooks/useScrollRestoration';
 import { PageHelmet } from 'client/components/layout/PageHelmet';
 import { Card } from 'client/components/atoms/Card';
 import { Typography } from 'client/components/atoms/Typography';
@@ -187,8 +186,6 @@ const MemberPage: React.FC<PageProps> = props => {
   const { locale } = useRouter();
   const { Translation, getTranslation } = useTranslations();
   const { formatWords, formatDate, formatWordsWithCommas } = useIntl();
-
-  useScrollRestoration();
 
   const kanjiName = [nameNotations.lastName, nameNotations.firstName].join(' ');
   const enName = [nameNotations.lastNameEn, nameNotations.firstNameEn].join(
