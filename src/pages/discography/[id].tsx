@@ -97,7 +97,6 @@ const AlbumPage: React.FC<PageProps> = props => {
           text: subtitleText,
           lang: locale,
         }}
-        showBackButton
         titleTextTransform="initial"
       >
         <>

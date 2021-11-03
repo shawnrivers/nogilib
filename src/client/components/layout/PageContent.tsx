@@ -1,12 +1,7 @@
 import { css } from '@emotion/core';
 import * as React from 'react';
-import { useRouter } from 'next/router';
-import { ArrowBackIcon } from 'client/components/atoms/icons/ArrowBack';
 import { Typography } from 'client/components/atoms/Typography';
 import { commonStyles } from 'client/styles/tokens';
-import { BaseButton } from 'client/components/atoms/BaseButton';
-import { useTranslations } from 'client/i18n/hooks/useTranslations';
-import { getColorVarName } from 'client/styles/tokens/colors';
 
 type HeaderProps = {
   title?: {
@@ -17,19 +12,11 @@ type HeaderProps = {
     text: string;
     lang?: string;
   };
-  showBackButton?: boolean;
   titleTextTransform?: 'uppercase' | 'capitalize' | 'initial';
 };
 
 const Header: React.FC<HeaderProps> = props => {
-  const {
-    title,
-    subtitle,
-    showBackButton = false,
-    titleTextTransform = 'uppercase',
-  } = props;
-  const { getTranslation } = useTranslations();
-  const router = useRouter();
+  const { title, subtitle, titleTextTransform = 'uppercase' } = props;
 
   return (
     <header
@@ -38,25 +25,6 @@ const Header: React.FC<HeaderProps> = props => {
         margin: 0 auto;
       `}
     >
-      {showBackButton && (
-        <nav
-          aria-label={getTranslation('back')}
-          css={css`
-            display: flex;
-            align-items: flex-end;
-          `}
-        >
-          <BaseButton aria-label={getTranslation('back')} onClick={router.back}>
-            <ArrowBackIcon
-              width={32}
-              height={32}
-              css={css`
-                fill: var(${getColorVarName('onBackground', 'standard')});
-              `}
-            />
-          </BaseButton>
-        </nav>
-      )}
       {subtitle !== undefined && (
         <Typography
           variant="h4"

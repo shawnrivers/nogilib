@@ -229,11 +229,7 @@ const MemberPage: React.FC<PageProps> = props => {
         title={primaryName.text}
         options={{ textTransform: 'capitalize' }}
       />
-      <PageContent
-        title={primaryName}
-        titleTextTransform="capitalize"
-        showBackButton
-      >
+      <PageContent title={primaryName} titleTextTransform="capitalize">
         <Typography
           variant="body1"
           textColor={{
