@@ -1,6 +1,5 @@
 import { css } from '@emotion/core';
 import * as React from 'react';
-import { useRouter } from 'next/router';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { arrayToObject } from 'utils/array';
 import { AlbumPageData } from 'server/pages/album';
@@ -83,8 +82,7 @@ export const getStaticProps: GetStaticProps<PageProps, PathParams> = async ({
 const AlbumPage: React.FC<PageProps> = props => {
   const { title, type, number } = props;
   const { Translation, getTranslation } = useTranslations();
-  const { formatDate, formatMemberName, formatAlbumType } = useIntl();
-  const { locale } = useRouter();
+  const { formatDate, formatMemberName, formatAlbumType, locale } = useIntl();
 
   const subtitleText = formatAlbumType(type, number);
 

@@ -114,6 +114,7 @@ export const SongPage: React.FC<SongPageProps> = props => {
     formatWordsWithCommas,
     formatMemberName,
     formatAlbumType,
+    locale,
   } = useIntl();
 
   const songTags = React.useMemo(
@@ -133,6 +134,10 @@ export const SongPage: React.FC<SongPageProps> = props => {
       <PageContent
         title={{ text: title, lang: 'ja' }}
         titleTextTransform="initial"
+        subtitle={{
+          text: getTranslation('song'),
+          lang: locale,
+        }}
       >
         <>
           <div
