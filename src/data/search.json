@@ -5343,6 +5343,29 @@
         }
       },
       {
+        "id": "song-saigonotighthug",
+        "field": "最後のTight Hug saigonotighthug",
+        "searchType": "songs",
+        "key": "saigonotighthug",
+        "title": "最後のTight Hug",
+        "songType": "lead",
+        "single": {
+          "title": "",
+          "number": ""
+        },
+        "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          }
+        ],
+        "artwork": {
+          "sm": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@1x.jpg",
+          "md": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@3x.jpg"
+        }
+      },
+      {
         "id": "song-sekainorinjinyo",
         "field": "世界中の隣人よ sekainorinjinyo",
         "searchType": "songs",

@@ -5155,7 +5155,16 @@
       }
     ],
     "release": "2021-12-15",
-    "songs": [],
+    "songs": [
+      {
+        "key": "saigonotighthug",
+        "title": "最後のTight Hug",
+        "type": "lead",
+        "inCdType": [
+          "L1"
+        ]
+      }
+    ],
     "centers": []
   },
   {

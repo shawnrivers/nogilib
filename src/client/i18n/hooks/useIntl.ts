@@ -102,5 +102,6 @@ export const useIntl = () => {
     formatWords,
     formatWordsWithCommas,
     formatAlbumType,
+    locale,
   };
 };

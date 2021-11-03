@@ -3,6 +3,7 @@ import { ArrayElement } from 'types/common';
 
 const SongsTitleKeyArray = (
   [
+    { title: '最後のTight Hug', key: 'saigonotighthug' },
     { title: '他人のそら似', key: 'taninnosorane' },
     { title: '泥だらけ', key: 'dorodarake' },
     { title: '私の色', key: 'watashinoiro' },
