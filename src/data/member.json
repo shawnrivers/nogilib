@@ -470,6 +470,22 @@
     ],
     "photoAlbums": [
       {
+        "title": "生田絵梨花メモリアルブック",
+        "release": "2021-12-14",
+        "type": "photo book",
+        "sites": [
+          {
+            "title": "Twitter",
+            "url": "https://twitter.com/erika_memorial"
+          }
+        ],
+        "cover": {
+          "sm": "/images/photo-albums/ikutaerika_mb_d4d03633-7dd5-4674-9a46-412ee3dabf39_@1x.jpg",
+          "md": "/images/photo-albums/ikutaerika_mb_d4d03633-7dd5-4674-9a46-412ee3dabf39_@2x.jpg",
+          "lg": "/images/photo-albums/ikutaerika_mb_d4d03633-7dd5-4674-9a46-412ee3dabf39_@3x.jpg"
+        }
+      },
+      {
         "title": "インターミッション",
         "release": "2019-01-22",
         "type": "photo album",
@@ -3402,11 +3418,16 @@
       "firstNameEn": "kana"
     },
     "profileImage": {
-      "sm": "/images/members/others/nakadakana_2020-11-11_aa31394d-705f-4cde-9417-0cd70effa185_@1x.jpg",
-      "md": "/images/members/others/nakadakana_2020-11-11_aa31394d-705f-4cde-9417-0cd70effa185_@2x.jpg",
-      "lg": "/images/members/others/nakadakana_2020-11-11_aa31394d-705f-4cde-9417-0cd70effa185_@3x.jpg"
+      "sm": "/images/members/others/nakadakana_2021-11-10_694c09da-e7d4-4533-b161-7144321b256c_@1x.jpg",
+      "md": "/images/members/others/nakadakana_2021-11-10_694c09da-e7d4-4533-b161-7144321b256c_@2x.jpg",
+      "lg": "/images/members/others/nakadakana_2021-11-10_694c09da-e7d4-4533-b161-7144321b256c_@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/others/nakadakana_2021-11-10_694c09da-e7d4-4533-b161-7144321b256c_@1x.jpg",
+        "md": "/images/members/others/nakadakana_2021-11-10_694c09da-e7d4-4533-b161-7144321b256c_@2x.jpg",
+        "lg": "/images/members/others/nakadakana_2021-11-10_694c09da-e7d4-4533-b161-7144321b256c_@3x.jpg"
+      },
       {
         "sm": "/images/members/others/nakadakana_2020-11-11_aa31394d-705f-4cde-9417-0cd70effa185_@1x.jpg",
         "md": "/images/members/others/nakadakana_2020-11-11_aa31394d-705f-4cde-9417-0cd70effa185_@2x.jpg",
@@ -3535,6 +3556,10 @@
       {
         "title": "Instagram",
         "url": "https://www.instagram.com/nakadakana_1st/"
+      },
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/nakada_official"
       },
       {
         "title": "profile",
@@ -4173,6 +4198,10 @@
       {
         "title": "profile",
         "url": "https://www.tp-e.jp/noujo-ami/"
+      },
+      {
+        "title": "fan club",
+        "url": "https://noujo-ami-rooms.fanpla.jp/"
       }
     ],
     "photoAlbums": [],

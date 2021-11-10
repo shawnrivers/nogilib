@@ -108,6 +108,18 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         ],
         cover: 'photo-albums/ikutaerika_2.jpg',
       },
+      {
+        title: '生田絵梨花メモリアルブック',
+        release: '2021-12-14',
+        type: 'photo book',
+        sites: [
+          {
+            title: 'Twitter',
+            url: 'https://twitter.com/erika_memorial',
+          },
+        ],
+        cover: 'photo-albums/ikutaerika_mb.jpg',
+      },
     ],
   }),
   createMemberRaw({
@@ -609,6 +621,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/nakadakana_1st/',
       },
       {
+        title: 'Twitter',
+        url: 'https://twitter.com/nakada_official',
+      },
+      {
         title: 'profile',
         url: 'https://n46llc.com/s/m00/artist/13?ima=0737',
       },
@@ -728,6 +744,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'profile',
         url: 'https://www.tp-e.jp/noujo-ami/',
+      },
+      {
+        title: 'fan club',
+        url: 'https://noujo-ami-rooms.fanpla.jp/',
       },
     ],
     graduatedDate: '2018-12-15',
