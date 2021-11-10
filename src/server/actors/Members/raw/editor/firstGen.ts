@@ -609,6 +609,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/nakadakana_1st/',
       },
       {
+        title: 'Twitter',
+        url: 'https://twitter.com/nakada_official',
+      },
+      {
         title: 'profile',
         url: 'https://n46llc.com/s/m00/artist/13?ima=0737',
       },
