@@ -470,6 +470,22 @@
     ],
     "photoAlbums": [
       {
+        "title": "生田絵梨花メモリアルブック",
+        "release": "2021-12-14",
+        "type": "photo book",
+        "sites": [
+          {
+            "title": "Twitter",
+            "url": "https://twitter.com/erika_memorial"
+          }
+        ],
+        "cover": {
+          "sm": "/images/photo-albums/ikutaerika_mb_d4d03633-7dd5-4674-9a46-412ee3dabf39_@1x.jpg",
+          "md": "/images/photo-albums/ikutaerika_mb_d4d03633-7dd5-4674-9a46-412ee3dabf39_@2x.jpg",
+          "lg": "/images/photo-albums/ikutaerika_mb_d4d03633-7dd5-4674-9a46-412ee3dabf39_@3x.jpg"
+        }
+      },
+      {
         "title": "インターミッション",
         "release": "2019-01-22",
         "type": "photo album",

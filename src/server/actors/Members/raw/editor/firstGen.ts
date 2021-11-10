@@ -108,6 +108,18 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         ],
         cover: 'photo-albums/ikutaerika_2.jpg',
       },
+      {
+        title: '生田絵梨花メモリアルブック',
+        release: '2021-12-14',
+        type: 'photo book',
+        sites: [
+          {
+            title: 'Twitter',
+            url: 'https://twitter.com/erika_memorial',
+          },
+        ],
+        cover: 'photo-albums/ikutaerika_mb.jpg',
+      },
     ],
   }),
   createMemberRaw({
