@@ -3402,11 +3402,16 @@
       "firstNameEn": "kana"
     },
     "profileImage": {
-      "sm": "/images/members/others/nakadakana_2020-11-11_aa31394d-705f-4cde-9417-0cd70effa185_@1x.jpg",
-      "md": "/images/members/others/nakadakana_2020-11-11_aa31394d-705f-4cde-9417-0cd70effa185_@2x.jpg",
-      "lg": "/images/members/others/nakadakana_2020-11-11_aa31394d-705f-4cde-9417-0cd70effa185_@3x.jpg"
+      "sm": "/images/members/others/nakadakana_2021-11-10_694c09da-e7d4-4533-b161-7144321b256c_@1x.jpg",
+      "md": "/images/members/others/nakadakana_2021-11-10_694c09da-e7d4-4533-b161-7144321b256c_@2x.jpg",
+      "lg": "/images/members/others/nakadakana_2021-11-10_694c09da-e7d4-4533-b161-7144321b256c_@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/others/nakadakana_2021-11-10_694c09da-e7d4-4533-b161-7144321b256c_@1x.jpg",
+        "md": "/images/members/others/nakadakana_2021-11-10_694c09da-e7d4-4533-b161-7144321b256c_@2x.jpg",
+        "lg": "/images/members/others/nakadakana_2021-11-10_694c09da-e7d4-4533-b161-7144321b256c_@3x.jpg"
+      },
       {
         "sm": "/images/members/others/nakadakana_2020-11-11_aa31394d-705f-4cde-9417-0cd70effa185_@1x.jpg",
         "md": "/images/members/others/nakadakana_2020-11-11_aa31394d-705f-4cde-9417-0cd70effa185_@2x.jpg",
