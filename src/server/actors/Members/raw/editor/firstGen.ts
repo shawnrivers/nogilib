@@ -733,6 +733,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: 'profile',
         url: 'https://www.tp-e.jp/noujo-ami/',
       },
+      {
+        title: 'fan club',
+        url: 'https://noujo-ami-rooms.fanpla.jp/',
+      },
     ],
     graduatedDate: '2018-12-15',
   }),
