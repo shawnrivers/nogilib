@@ -8,6 +8,7 @@ export const BEST_ALBUM_SONGS = [
       lyrics: ['秋元康'],
       compose: ['杉山勝彦'],
       arrange: ['杉山勝彦', '谷地学'],
+      direct: ['池田一真'],
     },
     center: ['ikutaerika'],
     formations: {

@@ -2,7 +2,7 @@
   "name": "nogilib-scripts",
   "scripts": {
     "generate-responsive-images": "ts-node ./src/responsiveImages/index.ts",
-    "download-images": "ts-node ./src/downloadImages/index.ts",
+    "download-profile-images": "ts-node ./src/downloadImages/index.ts",
     "update-data:start": "./src/update-data/start.sh",
     "update-data:release": "./src/update-data/release.sh"
   },
@@ -16,6 +16,7 @@
     "cli-progress": "^3.9.0",
     "imagemin": "^7.0.1",
     "imagemin-mozjpeg": "^9.0.0",
-    "sharp": "^0.28.2"
+    "sharp": "^0.28.2",
+    "ts-node": "^10.4.0"
   }
 }
