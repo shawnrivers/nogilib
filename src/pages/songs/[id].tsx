@@ -294,12 +294,13 @@ export const SongPage: React.FC<SongPageProps> = props => {
                             justify-content: center;
                             margin-top: 0.5em;
                             width: 100vw;
+                            max-width: 1920px;
                             box-sizing: border-box;
                             overflow-x: hidden;
                             position: relative;
                             /* CSS hack to make child component larger than the parent's width */
                             /* @see https://stackoverflow.com/a/24895631 */
-                            left: calc(-50vw + 50%);
+                            left: calc(50% - min(100vw, 1920px) / 2);
                             padding-left: calc(
                               ${commonStyles.spacing.m} +
                                 env(safe-area-inset-left)
