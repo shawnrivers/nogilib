@@ -56101,6 +56101,60 @@
     "performers": [
       [
         {
+          "name": "kitanohinako",
+          "nameNotations": {
+            "lastName": "北野",
+            "firstName": "日奈子",
+            "lastNameFurigana": "きたの",
+            "firstNameFurigana": "ひなこ",
+            "lastNameEn": "kitano",
+            "firstNameEn": "hinako"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/kitanohinako_7d7fa886-f6f4-4701-bbaa-b93b8ba08c82_@1x.jpg",
+            "md": "/images/members/singles/28/kitanohinako_7d7fa886-f6f4-4701-bbaa-b93b8ba08c82_@2x.jpg",
+            "lg": "/images/members/singles/28/kitanohinako_7d7fa886-f6f4-4701-bbaa-b93b8ba08c82_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "higuchihina",
+          "nameNotations": {
+            "lastName": "樋口",
+            "firstName": "日奈",
+            "lastNameFurigana": "ひぐち",
+            "firstNameFurigana": "ひな",
+            "lastNameEn": "higuchi",
+            "firstNameEn": "hina"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/higuchihina_5bacf377-2705-4a99-b477-ebf61d4e1c28_@1x.jpg",
+            "md": "/images/members/singles/28/higuchihina_5bacf377-2705-4a99-b477-ebf61d4e1c28_@2x.jpg",
+            "lg": "/images/members/singles/28/higuchihina_5bacf377-2705-4a99-b477-ebf61d4e1c28_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "saitouasuka",
+          "nameNotations": {
+            "lastName": "齋藤",
+            "firstName": "飛鳥",
+            "lastNameFurigana": "さいとう",
+            "firstNameFurigana": "あすか",
+            "lastNameEn": "saito",
+            "firstNameEn": "asuka"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/saitouasuka_f9f29f26-3d5b-4cf3-b727-054a997477eb_@1x.jpg",
+            "md": "/images/members/singles/28/saitouasuka_f9f29f26-3d5b-4cf3-b727-054a997477eb_@2x.jpg",
+            "lg": "/images/members/singles/28/saitouasuka_f9f29f26-3d5b-4cf3-b727-054a997477eb_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
           "name": "ikutaerika",
           "nameNotations": {
             "lastName": "生田",
@@ -56116,6 +56170,298 @@
             "lg": "/images/members/singles/28/ikutaerika_dbd7d5fe-da1f-4a7d-bfa8-86f6f4d7017b_@3x.jpg"
           },
           "position": "center",
+          "isMember": true
+        },
+        {
+          "name": "akimotomanatsu",
+          "nameNotations": {
+            "lastName": "秋元",
+            "firstName": "真夏",
+            "lastNameFurigana": "あきもと",
+            "firstNameFurigana": "まなつ",
+            "lastNameEn": "akimoto",
+            "firstNameEn": "manatsu"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/akimotomanatsu_f29f263d-5bac-4377-a705-4a997477ebf6_@1x.jpg",
+            "md": "/images/members/singles/28/akimotomanatsu_f29f263d-5bac-4377-a705-4a997477ebf6_@2x.jpg",
+            "lg": "/images/members/singles/28/akimotomanatsu_f29f263d-5bac-4377-a705-4a997477ebf6_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "hoshinominami",
+          "nameNotations": {
+            "lastName": "星野",
+            "firstName": "みなみ",
+            "lastNameFurigana": "ほしの",
+            "firstNameFurigana": "みなみ",
+            "lastNameEn": "hoshino",
+            "firstNameEn": "minami"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/hoshinominami_a08c82db-2677-4fb8-b9f2-9f263d5bacf3_@1x.jpg",
+            "md": "/images/members/singles/28/hoshinominami_a08c82db-2677-4fb8-b9f2-9f263d5bacf3_@2x.jpg",
+            "lg": "/images/members/singles/28/hoshinominami_a08c82db-2677-4fb8-b9f2-9f263d5bacf3_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "suzukiayane",
+          "nameNotations": {
+            "lastName": "鈴木",
+            "firstName": "絢音",
+            "lastNameFurigana": "すずき",
+            "firstNameFurigana": "あやね",
+            "lastNameEn": "suzuki",
+            "firstNameEn": "ayane"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/suzukiayane_d7d5feda-1f6a-4d7f-a886-f6f4d7017baa_@1x.jpg",
+            "md": "/images/members/singles/28/suzukiayane_d7d5feda-1f6a-4d7f-a886-f6f4d7017baa_@2x.jpg",
+            "lg": "/images/members/singles/28/suzukiayane_d7d5feda-1f6a-4d7f-a886-f6f4d7017baa_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        }
+      ],
+      [
+        {
+          "name": "iwamotorenka",
+          "nameNotations": {
+            "lastName": "岩本",
+            "firstName": "蓮加",
+            "lastNameFurigana": "いわもと",
+            "firstNameFurigana": "れんか",
+            "lastNameEn": "iwamoto",
+            "firstNameEn": "renka"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/iwamotorenka_d7017baa-b93b-4ba0-8c82-db26770fb8f9_@1x.jpg",
+            "md": "/images/members/singles/28/iwamotorenka_d7017baa-b93b-4ba0-8c82-db26770fb8f9_@2x.jpg",
+            "lg": "/images/members/singles/28/iwamotorenka_d7017baa-b93b-4ba0-8c82-db26770fb8f9_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "yodayuuki",
+          "nameNotations": {
+            "lastName": "与田",
+            "firstName": "祐希",
+            "lastNameFurigana": "よだ",
+            "firstNameFurigana": "ゆうき",
+            "lastNameEn": "yoda",
+            "firstNameEn": "yuki"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/yodayuuki_017baab9-3b8b-408c-82db-26770fb8f9f2_@1x.jpg",
+            "md": "/images/members/singles/28/yodayuuki_017baab9-3b8b-408c-82db-26770fb8f9f2_@2x.jpg",
+            "lg": "/images/members/singles/28/yodayuuki_017baab9-3b8b-408c-82db-26770fb8f9f2_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "umezawaminami",
+          "nameNotations": {
+            "lastName": "梅澤",
+            "firstName": "美波",
+            "lastNameFurigana": "うめざわ",
+            "firstNameFurigana": "みなみ",
+            "lastNameEn": "umezakwa",
+            "firstNameEn": "minami"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/umezawaminami_1f6a7d7f-a886-46f4-9701-7baab93b8ba0_@1x.jpg",
+            "md": "/images/members/singles/28/umezawaminami_1f6a7d7f-a886-46f4-9701-7baab93b8ba0_@2x.jpg",
+            "lg": "/images/members/singles/28/umezawaminami_1f6a7d7f-a886-46f4-9701-7baab93b8ba0_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "shinuchimai",
+          "nameNotations": {
+            "lastName": "新内",
+            "firstName": "眞衣",
+            "lastNameFurigana": "しんうち",
+            "firstNameFurigana": "まい",
+            "lastNameEn": "shinuchi",
+            "firstNameEn": "mai"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@1x.jpg",
+            "md": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@2x.jpg",
+            "lg": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "yamashitamizuki",
+          "nameNotations": {
+            "lastName": "山下",
+            "firstName": "美月",
+            "lastNameFurigana": "やました",
+            "firstNameFurigana": "みづき",
+            "lastNameEn": "yamashita",
+            "firstNameEn": "mizuki"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/yamashitamizuki_9f263d5b-acf3-4727-854a-997477ebf61d_@1x.jpg",
+            "md": "/images/members/singles/28/yamashitamizuki_9f263d5b-acf3-4727-854a-997477ebf61d_@2x.jpg",
+            "lg": "/images/members/singles/28/yamashitamizuki_9f263d5b-acf3-4727-854a-997477ebf61d_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "kuboshiori",
+          "nameNotations": {
+            "lastName": "久保",
+            "firstName": "史緒里",
+            "lastNameFurigana": "くぼ",
+            "firstNameFurigana": "しおり",
+            "lastNameEn": "kubo",
+            "firstNameEn": "shiori"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@1x.jpg",
+            "md": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@2x.jpg",
+            "lg": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        }
+      ],
+      [
+        {
+          "name": "endousakura",
+          "nameNotations": {
+            "lastName": "遠藤",
+            "firstName": "さくら",
+            "lastNameFurigana": "えんどう",
+            "firstNameFurigana": "さくら",
+            "lastNameEn": "endo",
+            "firstNameEn": "sakura"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/endousakura_3d5bacf3-7727-454a-9974-77ebf61d4e1c_@1x.jpg",
+            "md": "/images/members/singles/28/endousakura_3d5bacf3-7727-454a-9974-77ebf61d4e1c_@2x.jpg",
+            "lg": "/images/members/singles/28/endousakura_3d5bacf3-7727-454a-9974-77ebf61d4e1c_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "seimiyarei",
+          "nameNotations": {
+            "lastName": "清宮",
+            "firstName": "レイ",
+            "lastNameFurigana": "せいみや",
+            "firstNameFurigana": "れい",
+            "lastNameEn": "seimiya",
+            "firstNameEn": "rei"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/seimiyarei_770fb8f9-f29f-463d-9bac-f37727054a99_@1x.jpg",
+            "md": "/images/members/singles/28/seimiyarei_770fb8f9-f29f-463d-9bac-f37727054a99_@2x.jpg",
+            "lg": "/images/members/singles/28/seimiyarei_770fb8f9-f29f-463d-9bac-f37727054a99_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "kakehashisayaka",
+          "nameNotations": {
+            "lastName": "掛橋",
+            "firstName": "沙耶香",
+            "lastNameFurigana": "かけはし",
+            "firstNameFurigana": "さやか",
+            "lastNameEn": "kakehashi",
+            "firstNameEn": "sayaka"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/kakehashisayaka_d5feda1f-6a7d-4fa8-86f6-f4d7017baab9_@1x.jpg",
+            "md": "/images/members/singles/28/kakehashisayaka_d5feda1f-6a7d-4fa8-86f6-f4d7017baab9_@2x.jpg",
+            "lg": "/images/members/singles/28/kakehashisayaka_d5feda1f-6a7d-4fa8-86f6-f4d7017baab9_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "tsutsuiayame",
+          "nameNotations": {
+            "lastName": "筒井",
+            "firstName": "あやめ",
+            "lastNameFurigana": "つつい",
+            "firstNameFurigana": "あやめ",
+            "lastNameEn": "tsutsui",
+            "firstNameEn": "ayame"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/tsutsuiayame_26770fb8-f9f2-4f26-bd5b-acf37727054a_@1x.jpg",
+            "md": "/images/members/singles/28/tsutsuiayame_26770fb8-f9f2-4f26-bd5b-acf37727054a_@2x.jpg",
+            "lg": "/images/members/singles/28/tsutsuiayame_26770fb8-f9f2-4f26-bd5b-acf37727054a_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "hayakawaseira",
+          "nameNotations": {
+            "lastName": "早川",
+            "firstName": "聖来",
+            "lastNameFurigana": "はやかわ",
+            "firstNameFurigana": "せいら",
+            "lastNameEn": "hayakawa",
+            "firstNameEn": "seira"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/hayakawaseira_0fb8f9f2-9f26-4d5b-acf3-7727054a9974_@1x.jpg",
+            "md": "/images/members/singles/28/hayakawaseira_0fb8f9f2-9f26-4d5b-acf3-7727054a9974_@2x.jpg",
+            "lg": "/images/members/singles/28/hayakawaseira_0fb8f9f2-9f26-4d5b-acf3-7727054a9974_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "tamuramayu",
+          "nameNotations": {
+            "lastName": "田村",
+            "firstName": "真佑",
+            "lastNameFurigana": "たむら",
+            "firstNameFurigana": "まゆ",
+            "lastNameEn": "tamura",
+            "firstNameEn": "mayu"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/tamuramayu_7baab93b-8ba0-4c82-9b26-770fb8f9f29f_@1x.jpg",
+            "md": "/images/members/singles/28/tamuramayu_7baab93b-8ba0-4c82-9b26-770fb8f9f29f_@2x.jpg",
+            "lg": "/images/members/singles/28/tamuramayu_7baab93b-8ba0-4c82-9b26-770fb8f9f29f_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "kakiharuka",
+          "nameNotations": {
+            "lastName": "賀喜",
+            "firstName": "遥香",
+            "lastNameFurigana": "かき",
+            "firstNameFurigana": "はるか",
+            "lastNameEn": "kaki",
+            "firstNameEn": "haruka"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/kakiharuka_da1f6a7d-7fa8-46f6-b4d7-017baab93b8b_@1x.jpg",
+            "md": "/images/members/singles/28/kakiharuka_da1f6a7d-7fa8-46f6-b4d7-017baab93b8b_@2x.jpg",
+            "lg": "/images/members/singles/28/kakiharuka_da1f6a7d-7fa8-46f6-b4d7-017baab93b8b_@3x.jpg"
+          },
+          "position": null,
           "isMember": true
         }
       ]
