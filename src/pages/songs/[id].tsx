@@ -286,12 +286,28 @@ export const SongPage: React.FC<SongPageProps> = props => {
                             {formatNth({ num: index + 1, unit: 'row' })}
                           </SectionSubtitle>
                         )}
+
                         <ul
                           css={css`
                             display: flex;
                             flex-wrap: wrap;
                             justify-content: center;
                             margin-top: 0.5em;
+                            width: 100vw;
+                            box-sizing: border-box;
+                            overflow-x: hidden;
+                            position: relative;
+                            /* CSS hack to make child component larger than the parent's width */
+                            /* @see https://stackoverflow.com/a/24895631 */
+                            left: calc(-50vw + 50%);
+                            padding-left: calc(
+                              ${commonStyles.spacing.m} +
+                                env(safe-area-inset-left)
+                            );
+                            padding-right: calc(
+                              ${commonStyles.spacing.m} +
+                                env(safe-area-inset-right)
+                            );
                           `}
                         >
                           {row.map(member => (
