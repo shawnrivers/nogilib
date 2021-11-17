@@ -12,7 +12,32 @@ export const BEST_ALBUM_SONGS = [
     },
     center: ['ikutaerika'],
     formations: {
-      firstRow: ['ikutaerika'],
+      firstRow: [
+        'kitanohinako',
+        'higuchihina',
+        'saitouasuka',
+        'ikutaerika',
+        'akimotomanatsu',
+        'hoshinominami',
+        'suzukiayane',
+      ],
+      secondRow: [
+        'iwamotorenka',
+        'yodayuuki',
+        'umezawaminami',
+        'shinuchimai',
+        'yamashitamizuki',
+        'kuboshiori',
+      ],
+      thirdRow: [
+        'endousakura',
+        'seimiyarei',
+        'kakehashisayaka',
+        'tsutsuiayame',
+        'hayakawaseira',
+        'tamuramayu',
+        'kakiharuka',
+      ],
     },
   }),
 ];
