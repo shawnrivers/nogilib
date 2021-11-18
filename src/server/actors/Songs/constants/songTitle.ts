@@ -3,6 +3,10 @@ import { ArrayElement } from 'types/common';
 
 const SongsTitleKeyArray = (
   [
+    { title: 'Hard to say', key: 'hardtosay' },
+    { title: 'あなたからの卒業', key: 'anatakaranosotsugyo' },
+    { title: '歳月の轍', key: 'tokinowadachi' },
+    { title: 'ゆっくりと咲く花', key: 'yukkuritosakuhana' },
     { title: '最後のTight Hug', key: 'saigonotighthug' },
     { title: '他人のそら似', key: 'taninnosorane' },
     { title: '泥だらけ', key: 'dorodarake' },
