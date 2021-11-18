@@ -48,6 +48,7 @@ type SongRawCreatorParams = {
         | {
             name: 'generation';
             generation: number;
+            single?: string;
           };
     }
 );
