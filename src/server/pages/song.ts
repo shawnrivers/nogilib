@@ -47,19 +47,24 @@ function getPerformerPosition(
   return null;
 }
 
-function getPerformerProfileImage(
-  song: SongResult,
-  member: MemberResult
-): ImageUrl {
+function getPerformerProfileImage(params: {
+  song: SongResult;
+  member: MemberResult;
+  singleNumber?: string;
+}): ImageUrl {
+  const { song, member, singleNumber } = params;
   const { profileImages } = member;
   const { album } = song.performersTag;
   const { single } = song;
 
   const singleProfileImages = arrayToObject(profileImages.singles, 'number');
-
   // If the song is in a single, use the single's profile image.
-  if (singleProfileImages[single.number]) {
+  if (single.number in singleProfileImages) {
     return singleProfileImages[single.number].url;
+  }
+
+  if (singleNumber !== undefined && singleNumber in singleProfileImages) {
+    return singleProfileImages[singleNumber].url;
   }
 
   const digitalProfileImages = arrayToObject(profileImages.digital, 'number');
@@ -97,7 +102,11 @@ function getSongPerformers(
           return {
             name: member.name,
             nameNotations: member.nameNotations,
-            profileImage: getPerformerProfileImage(song, member),
+            profileImage: getPerformerProfileImage({
+              song,
+              member,
+              singleNumber: song.performers.type?.single,
+            }),
             position: getPerformerPosition(song, member.name),
             isMember: true,
           };

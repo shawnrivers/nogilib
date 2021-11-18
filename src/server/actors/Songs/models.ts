@@ -6,11 +6,12 @@ import { DiscographyType } from 'server/actors/Discography/types';
 import { ImageUrl } from 'server/types/commons';
 
 export type PerformersType =
-  | { name: 'unit' | 'solo' }
+  | { name: 'unit' | 'solo'; single?: string }
   | { name: 'selected' | 'under'; single: string }
   | {
       name: 'generation';
       generation: number;
+      single?: string;
     };
 
 export type SongRaw = {
