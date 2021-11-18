@@ -54,6 +54,7 @@ export const BEST_ALBUM_SONGS = [
     performersType: {
       name: 'generation',
       generation: 2,
+      single: '24',
     },
     formations: {
       firstRow: ['teradaranze', 'horimiona', 'kitanohinako', 'shinuchimai'],
