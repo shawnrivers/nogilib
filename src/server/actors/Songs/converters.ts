@@ -137,25 +137,6 @@ export const convertSongArtwork: ConvertSongArtwork = ({
     }
   }
 
-  if (songAlbumsResult.length > 0) {
-    const oldestSongAlbumTitle = songAlbumsResult.slice().reverse()[0].title;
-    const album = albumsRawObject[oldestSongAlbumTitle];
-
-    for (const albumSong of album.songs) {
-      if (albumSong.title === songTitle) {
-        const artworkUrlInAlbum = album.artworks.find(
-          artwork => artwork.type === albumSong.inCdType[0]
-        )?.url;
-
-        return {
-          sm: convertImageFilePath(artworkUrlInAlbum?.sm ?? noArtworkUrl.sm),
-          md: convertImageFilePath(artworkUrlInAlbum?.md ?? noArtworkUrl.md),
-          lg: convertImageFilePath(artworkUrlInAlbum?.lg ?? noArtworkUrl.lg),
-        };
-      }
-    }
-  }
-
   if (songOtherCdsResult.length > 0) {
     const oldestSongOtherCdTitle = songOtherCdsResult
       .slice()
@@ -172,6 +153,25 @@ export const convertSongArtwork: ConvertSongArtwork = ({
           sm: convertImageFilePath(artworkUrlInOtherCd?.sm ?? noArtworkUrl.sm),
           md: convertImageFilePath(artworkUrlInOtherCd?.md ?? noArtworkUrl.md),
           lg: convertImageFilePath(artworkUrlInOtherCd?.lg ?? noArtworkUrl.lg),
+        };
+      }
+    }
+  }
+
+  if (songAlbumsResult.length > 0) {
+    const oldestSongAlbumTitle = songAlbumsResult.slice().reverse()[0].title;
+    const album = albumsRawObject[oldestSongAlbumTitle];
+
+    for (const albumSong of album.songs) {
+      if (albumSong.title === songTitle) {
+        const artworkUrlInAlbum = album.artworks.find(
+          artwork => artwork.type === albumSong.inCdType[0]
+        )?.url;
+
+        return {
+          sm: convertImageFilePath(artworkUrlInAlbum?.sm ?? noArtworkUrl.sm),
+          md: convertImageFilePath(artworkUrlInAlbum?.md ?? noArtworkUrl.md),
+          lg: convertImageFilePath(artworkUrlInAlbum?.lg ?? noArtworkUrl.lg),
         };
       }
     }
