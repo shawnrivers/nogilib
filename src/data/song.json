@@ -28,6 +28,10 @@
     },
     "albums": [
       {
+        "title": "Time flies",
+        "number": "best"
+      },
+      {
         "title": "透明な色",
         "number": "1"
       }
@@ -2565,6 +2569,10 @@
     },
     "albums": [
       {
+        "title": "Time flies",
+        "number": "best"
+      },
+      {
         "title": "透明な色",
         "number": "1"
       }
@@ -4238,6 +4246,10 @@
       "number": "3"
     },
     "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      },
       {
         "title": "透明な色",
         "number": "1"
@@ -6116,6 +6128,10 @@
     },
     "albums": [
       {
+        "title": "Time flies",
+        "number": "best"
+      },
+      {
         "title": "透明な色",
         "number": "1"
       }
@@ -7482,6 +7498,10 @@
       "number": "5"
     },
     "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      },
       {
         "title": "透明な色",
         "number": "1"
@@ -9162,6 +9182,10 @@
       "number": "6"
     },
     "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      },
       {
         "title": "透明な色",
         "number": "1"
@@ -11078,6 +11102,10 @@
     },
     "albums": [
       {
+        "title": "Time flies",
+        "number": "best"
+      },
+      {
         "title": "透明な色",
         "number": "1"
       }
@@ -12811,6 +12839,10 @@
     },
     "albums": [
       {
+        "title": "Time flies",
+        "number": "best"
+      },
+      {
         "title": "透明な色",
         "number": "1"
       }
@@ -14510,6 +14542,10 @@
     },
     "albums": [
       {
+        "title": "Time flies",
+        "number": "best"
+      },
+      {
         "title": "透明な色",
         "number": "1"
       }
@@ -16112,6 +16148,10 @@
       "number": "10"
     },
     "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      },
       {
         "title": "透明な色",
         "number": "1"
@@ -17748,6 +17788,10 @@
     },
     "albums": [
       {
+        "title": "Time flies",
+        "number": "best"
+      },
+      {
         "title": "それぞれの椅子",
         "number": "2"
       }
@@ -18963,6 +19007,10 @@
       "number": "12"
     },
     "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      },
       {
         "title": "それぞれの椅子",
         "number": "2"
@@ -20424,6 +20472,10 @@
       "number": "13"
     },
     "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      },
       {
         "title": "それぞれの椅子",
         "number": "2"
@@ -22213,7 +22265,12 @@
       "title": "ハルジオンが咲く頃",
       "number": "14"
     },
-    "albums": [],
+    "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      }
+    ],
     "otherCds": [],
     "performersTag": {
       "name": "selected",
@@ -23487,6 +23544,10 @@
       "number": "15"
     },
     "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      },
       {
         "title": "生まれてから初めて見た夢",
         "number": "3"
@@ -24883,6 +24944,10 @@
       "number": "16"
     },
     "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      },
       {
         "title": "生まれてから初めて見た夢",
         "number": "3"
@@ -26407,6 +26472,10 @@
     },
     "albums": [
       {
+        "title": "Time flies",
+        "number": "best"
+      },
+      {
         "title": "生まれてから初めて見た夢",
         "number": "3"
       }
@@ -27823,6 +27892,10 @@
       "number": "18"
     },
     "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      },
       {
         "title": "今が思い出になるまで",
         "number": "4"
@@ -30188,6 +30261,10 @@
     },
     "albums": [
       {
+        "title": "Time flies",
+        "number": "best"
+      },
+      {
         "title": "今が思い出になるまで",
         "number": "4"
       }
@@ -31826,6 +31903,10 @@
       "number": "20"
     },
     "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      },
       {
         "title": "今が思い出になるまで",
         "number": "4"
@@ -33796,6 +33877,10 @@
       "number": "21"
     },
     "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      },
       {
         "title": "今が思い出になるまで",
         "number": "4"
@@ -35791,6 +35876,10 @@
     },
     "albums": [
       {
+        "title": "Time flies",
+        "number": "best"
+      },
+      {
         "title": "今が思い出になるまで",
         "number": "4"
       }
@@ -37313,7 +37402,12 @@
       "title": "Sing Out!",
       "number": "23"
     },
-    "albums": [],
+    "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      }
+    ],
     "otherCds": [],
     "performersTag": {
       "name": "selected",
@@ -38633,7 +38727,12 @@
       "title": "夜明けまで強がらなくてもいい",
       "number": "24"
     },
-    "albums": [],
+    "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      }
+    ],
     "otherCds": [],
     "performersTag": {
       "name": "selected",
@@ -40540,7 +40639,12 @@
       "title": "しあわせの保護色",
       "number": "25"
     },
-    "albums": [],
+    "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      }
+    ],
     "otherCds": [],
     "performersTag": {
       "name": "selected",
@@ -42025,7 +42129,12 @@
       "title": "僕は僕を好きになる",
       "number": "26"
     },
-    "albums": [],
+    "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      }
+    ],
     "otherCds": [],
     "performersTag": {
       "name": "selected",
@@ -43932,7 +44041,12 @@
       "title": "ごめんねFingers crossed",
       "number": "27"
     },
-    "albums": [],
+    "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      }
+    ],
     "otherCds": [],
     "performersTag": {
       "name": "selected",
@@ -45704,7 +45818,12 @@
       "title": "君に叱られた",
       "number": "28"
     },
-    "albums": [],
+    "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      }
+    ],
     "otherCds": [],
     "performersTag": {
       "name": "selected",
@@ -47921,6 +48040,10 @@
     },
     "albums": [
       {
+        "title": "Time flies",
+        "number": "best"
+      },
+      {
         "title": "透明な色",
         "number": "1"
       }
@@ -49289,6 +49412,10 @@
       "number": ""
     },
     "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      },
       {
         "title": "それぞれの椅子",
         "number": "2"
@@ -51064,6 +51191,10 @@
       "number": ""
     },
     "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      },
       {
         "title": "生まれてから初めて見た夢",
         "number": "3"
@@ -54538,6 +54669,10 @@
     },
     "albums": [
       {
+        "title": "Time flies",
+        "number": "best"
+      },
+      {
         "title": "今が思い出になるまで",
         "number": "4"
       }
@@ -56094,8 +56229,8 @@
     "performersTag": {
       "name": "selected",
       "album": {
-        "type": "album",
-        "number": "best"
+        "type": "single",
+        "number": "28"
       }
     },
     "performers": [
@@ -56468,13 +56603,837 @@
     ]
   },
   {
+    "key": "yukkuritosakuhana",
+    "title": "ゆっくりと咲く花",
+    "type": "second generation",
+    "artwork": {
+      "sm": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@1x.jpg",
+      "md": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@2x.jpg",
+      "lg": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@3x.jpg"
+    },
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [],
+      "arrange": [],
+      "direct": [
+        "荒船泰廣"
+      ]
+    },
+    "single": {
+      "title": "",
+      "number": ""
+    },
+    "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      }
+    ],
+    "otherCds": [],
+    "performersTag": {
+      "name": "second generation",
+      "album": {
+        "type": "album",
+        "number": "best"
+      }
+    },
+    "performers": [
+      [
+        {
+          "name": "teradaranze",
+          "nameNotations": {
+            "lastName": "寺田",
+            "firstName": "蘭世",
+            "lastNameFurigana": "てらだ",
+            "firstNameFurigana": "らんぜ",
+            "lastNameEn": "terada",
+            "firstNameEn": "ranze"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/teradaranze_82db2677-0fb8-49f2-9f26-3d5bacf37727_@1x.jpg",
+            "md": "/images/members/singles/28/teradaranze_82db2677-0fb8-49f2-9f26-3d5bacf37727_@2x.jpg",
+            "lg": "/images/members/singles/28/teradaranze_82db2677-0fb8-49f2-9f26-3d5bacf37727_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "horimiona",
+          "nameNotations": {
+            "lastName": "堀",
+            "firstName": "未央奈",
+            "lastNameFurigana": "ほり",
+            "firstNameFurigana": "みおな",
+            "lastNameEn": "hori",
+            "firstNameEn": "miona"
+          },
+          "profileImage": {
+            "sm": "/images/members/others/horimiona_2021-07-14_45f2d4b9-bccf-4a36-8ee7-1221f29283be_@1x.jpg",
+            "md": "/images/members/others/horimiona_2021-07-14_45f2d4b9-bccf-4a36-8ee7-1221f29283be_@2x.jpg",
+            "lg": "/images/members/others/horimiona_2021-07-14_45f2d4b9-bccf-4a36-8ee7-1221f29283be_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "kitanohinako",
+          "nameNotations": {
+            "lastName": "北野",
+            "firstName": "日奈子",
+            "lastNameFurigana": "きたの",
+            "firstNameFurigana": "ひなこ",
+            "lastNameEn": "kitano",
+            "firstNameEn": "hinako"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/kitanohinako_7d7fa886-f6f4-4701-bbaa-b93b8ba08c82_@1x.jpg",
+            "md": "/images/members/singles/28/kitanohinako_7d7fa886-f6f4-4701-bbaa-b93b8ba08c82_@2x.jpg",
+            "lg": "/images/members/singles/28/kitanohinako_7d7fa886-f6f4-4701-bbaa-b93b8ba08c82_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "shinuchimai",
+          "nameNotations": {
+            "lastName": "新内",
+            "firstName": "眞衣",
+            "lastNameFurigana": "しんうち",
+            "firstNameFurigana": "まい",
+            "lastNameEn": "shinuchi",
+            "firstNameEn": "mai"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@1x.jpg",
+            "md": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@2x.jpg",
+            "lg": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        }
+      ],
+      [
+        {
+          "name": "yamazakirena",
+          "nameNotations": {
+            "lastName": "山崎",
+            "firstName": "怜奈",
+            "lastNameFurigana": "やまざき",
+            "firstNameFurigana": "れな",
+            "lastNameEn": "yamazaki",
+            "firstNameEn": "rena"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/yamazakirena_acf37727-054a-4974-b7eb-f61d4e1c2806_@1x.jpg",
+            "md": "/images/members/singles/28/yamazakirena_acf37727-054a-4974-b7eb-f61d4e1c2806_@2x.jpg",
+            "lg": "/images/members/singles/28/yamazakirena_acf37727-054a-4974-b7eb-f61d4e1c2806_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "watanabemiria",
+          "nameNotations": {
+            "lastName": "渡辺",
+            "firstName": "みり愛",
+            "lastNameFurigana": "わたなべ",
+            "firstNameFurigana": "みりあ",
+            "lastNameEn": "watanabe",
+            "firstNameEn": "miria"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/27/watanabemiria_6d8781be-f6bc-44b3-b3aa-31394d705fac_@1x.jpg",
+            "md": "/images/members/singles/27/watanabemiria_6d8781be-f6bc-44b3-b3aa-31394d705fac_@2x.jpg",
+            "lg": "/images/members/singles/27/watanabemiria_6d8781be-f6bc-44b3-b3aa-31394d705fac_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "sasakikotoko",
+          "nameNotations": {
+            "lastName": "佐々木",
+            "firstName": "琴子",
+            "lastNameFurigana": "ささき",
+            "firstNameFurigana": "ことこ",
+            "lastNameEn": "sasaki",
+            "firstNameEn": "kotoko"
+          },
+          "profileImage": {
+            "sm": "/images/members/others/sasakikotoko_2020-10-14_c15e1f2d-45f2-44b9-bccf-2a36cee71221_@1x.jpg",
+            "md": "/images/members/others/sasakikotoko_2020-10-14_c15e1f2d-45f2-44b9-bccf-2a36cee71221_@2x.jpg",
+            "lg": "/images/members/others/sasakikotoko_2020-10-14_c15e1f2d-45f2-44b9-bccf-2a36cee71221_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "suzukiayane",
+          "nameNotations": {
+            "lastName": "鈴木",
+            "firstName": "絢音",
+            "lastNameFurigana": "すずき",
+            "firstNameFurigana": "あやね",
+            "lastNameEn": "suzuki",
+            "firstNameEn": "ayane"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/suzukiayane_d7d5feda-1f6a-4d7f-a886-f6f4d7017baa_@1x.jpg",
+            "md": "/images/members/singles/28/suzukiayane_d7d5feda-1f6a-4d7f-a886-f6f4d7017baa_@2x.jpg",
+            "lg": "/images/members/singles/28/suzukiayane_d7d5feda-1f6a-4d7f-a886-f6f4d7017baa_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "itoujunna",
+          "nameNotations": {
+            "lastName": "伊藤",
+            "firstName": "純奈",
+            "lastNameFurigana": "いとう",
+            "firstNameFurigana": "じゅんな",
+            "lastNameEn": "ito",
+            "firstNameEn": "junna"
+          },
+          "profileImage": {
+            "sm": "/images/members/others/itoujunna_2021-11-06_e9a02643-7db2-4bf3-bd68-02981c844e53_@1x.jpg",
+            "md": "/images/members/others/itoujunna_2021-11-06_e9a02643-7db2-4bf3-bd68-02981c844e53_@2x.jpg",
+            "lg": "/images/members/others/itoujunna_2021-11-06_e9a02643-7db2-4bf3-bd68-02981c844e53_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        }
+      ]
+    ]
+  },
+  {
+    "key": "tokinowadachi",
+    "title": "歳月の轍",
+    "type": "solo",
+    "artwork": {
+      "sm": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@1x.jpg",
+      "md": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@2x.jpg",
+      "lg": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@3x.jpg"
+    },
+    "creators": {
+      "lyrics": [],
+      "compose": [],
+      "arrange": [],
+      "direct": []
+    },
+    "single": {
+      "title": "",
+      "number": ""
+    },
+    "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      }
+    ],
+    "otherCds": [],
+    "performersTag": {
+      "name": "",
+      "album": {
+        "type": "album",
+        "number": "best"
+      }
+    },
+    "performers": [
+      [
+        {
+          "name": "ikutaerika",
+          "nameNotations": {
+            "lastName": "生田",
+            "firstName": "絵梨花",
+            "lastNameFurigana": "いくた",
+            "firstNameFurigana": "えりか",
+            "lastNameEn": "ikuta",
+            "firstNameEn": "erika"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/ikutaerika_dbd7d5fe-da1f-4a7d-bfa8-86f6f4d7017b_@1x.jpg",
+            "md": "/images/members/singles/28/ikutaerika_dbd7d5fe-da1f-4a7d-bfa8-86f6f4d7017b_@2x.jpg",
+            "lg": "/images/members/singles/28/ikutaerika_dbd7d5fe-da1f-4a7d-bfa8-86f6f4d7017b_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        }
+      ]
+    ]
+  },
+  {
+    "key": "anatakaranosotsugyo",
+    "title": "あなたからの卒業",
+    "type": "solo",
+    "artwork": {
+      "sm": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@1x.jpg",
+      "md": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@2x.jpg",
+      "lg": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@3x.jpg"
+    },
+    "creators": {
+      "lyrics": [],
+      "compose": [],
+      "arrange": [],
+      "direct": []
+    },
+    "single": {
+      "title": "",
+      "number": ""
+    },
+    "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      }
+    ],
+    "otherCds": [],
+    "performersTag": {
+      "name": "",
+      "album": {
+        "type": "album",
+        "number": "best"
+      }
+    },
+    "performers": [
+      [
+        {
+          "name": "shinuchimai",
+          "nameNotations": {
+            "lastName": "新内",
+            "firstName": "眞衣",
+            "lastNameFurigana": "しんうち",
+            "firstNameFurigana": "まい",
+            "lastNameEn": "shinuchi",
+            "firstNameEn": "mai"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@1x.jpg",
+            "md": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@2x.jpg",
+            "lg": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        }
+      ]
+    ]
+  },
+  {
+    "key": "hardtosay",
+    "title": "Hard to say",
+    "type": "coupling",
+    "artwork": {
+      "sm": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@1x.jpg",
+      "md": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@2x.jpg",
+      "lg": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@3x.jpg"
+    },
+    "creators": {
+      "lyrics": [],
+      "compose": [],
+      "arrange": [],
+      "direct": []
+    },
+    "single": {
+      "title": "",
+      "number": ""
+    },
+    "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      }
+    ],
+    "otherCds": [],
+    "performersTag": {
+      "name": "",
+      "album": {
+        "type": "album",
+        "number": "best"
+      }
+    },
+    "performers": [
+      [
+        {
+          "name": "saitouasuka",
+          "nameNotations": {
+            "lastName": "齋藤",
+            "firstName": "飛鳥",
+            "lastNameFurigana": "さいとう",
+            "firstNameFurigana": "あすか",
+            "lastNameEn": "saito",
+            "firstNameEn": "asuka"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/saitouasuka_f9f29f26-3d5b-4cf3-b727-054a997477eb_@1x.jpg",
+            "md": "/images/members/singles/28/saitouasuka_f9f29f26-3d5b-4cf3-b727-054a997477eb_@2x.jpg",
+            "lg": "/images/members/singles/28/saitouasuka_f9f29f26-3d5b-4cf3-b727-054a997477eb_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "higuchihina",
+          "nameNotations": {
+            "lastName": "樋口",
+            "firstName": "日奈",
+            "lastNameFurigana": "ひぐち",
+            "firstNameFurigana": "ひな",
+            "lastNameEn": "higuchi",
+            "firstNameEn": "hina"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/higuchihina_5bacf377-2705-4a99-b477-ebf61d4e1c28_@1x.jpg",
+            "md": "/images/members/singles/28/higuchihina_5bacf377-2705-4a99-b477-ebf61d4e1c28_@2x.jpg",
+            "lg": "/images/members/singles/28/higuchihina_5bacf377-2705-4a99-b477-ebf61d4e1c28_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "hoshinominami",
+          "nameNotations": {
+            "lastName": "星野",
+            "firstName": "みなみ",
+            "lastNameFurigana": "ほしの",
+            "firstNameFurigana": "みなみ",
+            "lastNameEn": "hoshino",
+            "firstNameEn": "minami"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/hoshinominami_a08c82db-2677-4fb8-b9f2-9f263d5bacf3_@1x.jpg",
+            "md": "/images/members/singles/28/hoshinominami_a08c82db-2677-4fb8-b9f2-9f263d5bacf3_@2x.jpg",
+            "lg": "/images/members/singles/28/hoshinominami_a08c82db-2677-4fb8-b9f2-9f263d5bacf3_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "wadamaaya",
+          "nameNotations": {
+            "lastName": "和田",
+            "firstName": "まあや",
+            "lastNameFurigana": "わだ",
+            "firstNameFurigana": "まあや",
+            "lastNameEn": "wada",
+            "firstNameEn": "maya"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/wadamaaya_7727054a-9974-47eb-b61d-4e1c2806aaf0_@1x.jpg",
+            "md": "/images/members/singles/28/wadamaaya_7727054a-9974-47eb-b61d-4e1c2806aaf0_@2x.jpg",
+            "lg": "/images/members/singles/28/wadamaaya_7727054a-9974-47eb-b61d-4e1c2806aaf0_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "kitanohinako",
+          "nameNotations": {
+            "lastName": "北野",
+            "firstName": "日奈子",
+            "lastNameFurigana": "きたの",
+            "firstNameFurigana": "ひなこ",
+            "lastNameEn": "kitano",
+            "firstNameEn": "hinako"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/kitanohinako_7d7fa886-f6f4-4701-bbaa-b93b8ba08c82_@1x.jpg",
+            "md": "/images/members/singles/28/kitanohinako_7d7fa886-f6f4-4701-bbaa-b93b8ba08c82_@2x.jpg",
+            "lg": "/images/members/singles/28/kitanohinako_7d7fa886-f6f4-4701-bbaa-b93b8ba08c82_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "shinuchimai",
+          "nameNotations": {
+            "lastName": "新内",
+            "firstName": "眞衣",
+            "lastNameFurigana": "しんうち",
+            "firstNameFurigana": "まい",
+            "lastNameEn": "shinuchi",
+            "firstNameEn": "mai"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@1x.jpg",
+            "md": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@2x.jpg",
+            "lg": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "suzukiayane",
+          "nameNotations": {
+            "lastName": "鈴木",
+            "firstName": "絢音",
+            "lastNameFurigana": "すずき",
+            "firstNameFurigana": "あやね",
+            "lastNameEn": "suzuki",
+            "firstNameEn": "ayane"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/suzukiayane_d7d5feda-1f6a-4d7f-a886-f6f4d7017baa_@1x.jpg",
+            "md": "/images/members/singles/28/suzukiayane_d7d5feda-1f6a-4d7f-a886-f6f4d7017baa_@2x.jpg",
+            "lg": "/images/members/singles/28/suzukiayane_d7d5feda-1f6a-4d7f-a886-f6f4d7017baa_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "yamazakirena",
+          "nameNotations": {
+            "lastName": "山崎",
+            "firstName": "怜奈",
+            "lastNameFurigana": "やまざき",
+            "firstNameFurigana": "れな",
+            "lastNameEn": "yamazaki",
+            "firstNameEn": "rena"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/yamazakirena_acf37727-054a-4974-b7eb-f61d4e1c2806_@1x.jpg",
+            "md": "/images/members/singles/28/yamazakirena_acf37727-054a-4974-b7eb-f61d4e1c2806_@2x.jpg",
+            "lg": "/images/members/singles/28/yamazakirena_acf37727-054a-4974-b7eb-f61d4e1c2806_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "itouriria",
+          "nameNotations": {
+            "lastName": "伊藤",
+            "firstName": "理々杏",
+            "lastNameFurigana": "いとう",
+            "firstNameFurigana": "りりあ",
+            "lastNameEn": "ito",
+            "firstNameEn": "riria"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/itouriria_6a7d7fa8-86f6-44d7-817b-aab93b8ba08c_@1x.jpg",
+            "md": "/images/members/singles/28/itouriria_6a7d7fa8-86f6-44d7-817b-aab93b8ba08c_@2x.jpg",
+            "lg": "/images/members/singles/28/itouriria_6a7d7fa8-86f6-44d7-817b-aab93b8ba08c_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "iwamotorenka",
+          "nameNotations": {
+            "lastName": "岩本",
+            "firstName": "蓮加",
+            "lastNameFurigana": "いわもと",
+            "firstNameFurigana": "れんか",
+            "lastNameEn": "iwamoto",
+            "firstNameEn": "renka"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/iwamotorenka_d7017baa-b93b-4ba0-8c82-db26770fb8f9_@1x.jpg",
+            "md": "/images/members/singles/28/iwamotorenka_d7017baa-b93b-4ba0-8c82-db26770fb8f9_@2x.jpg",
+            "lg": "/images/members/singles/28/iwamotorenka_d7017baa-b93b-4ba0-8c82-db26770fb8f9_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "umezawaminami",
+          "nameNotations": {
+            "lastName": "梅澤",
+            "firstName": "美波",
+            "lastNameFurigana": "うめざわ",
+            "firstNameFurigana": "みなみ",
+            "lastNameEn": "umezakwa",
+            "firstNameEn": "minami"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/umezawaminami_1f6a7d7f-a886-46f4-9701-7baab93b8ba0_@1x.jpg",
+            "md": "/images/members/singles/28/umezawaminami_1f6a7d7f-a886-46f4-9701-7baab93b8ba0_@2x.jpg",
+            "lg": "/images/members/singles/28/umezawaminami_1f6a7d7f-a886-46f4-9701-7baab93b8ba0_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "kuboshiori",
+          "nameNotations": {
+            "lastName": "久保",
+            "firstName": "史緒里",
+            "lastNameFurigana": "くぼ",
+            "firstNameFurigana": "しおり",
+            "lastNameEn": "kubo",
+            "firstNameEn": "shiori"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@1x.jpg",
+            "md": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@2x.jpg",
+            "lg": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "sakaguchitamami",
+          "nameNotations": {
+            "lastName": "阪口",
+            "firstName": "珠美",
+            "lastNameFurigana": "さかぐち",
+            "firstNameFurigana": "たまみ",
+            "lastNameEn": "sakaguchi",
+            "firstNameEn": "tamami"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/sakaguchitamami_3b8ba08c-82db-4677-8fb8-f9f29f263d5b_@1x.jpg",
+            "md": "/images/members/singles/28/sakaguchitamami_3b8ba08c-82db-4677-8fb8-f9f29f263d5b_@2x.jpg",
+            "lg": "/images/members/singles/28/sakaguchitamami_3b8ba08c-82db-4677-8fb8-f9f29f263d5b_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "satoukaede",
+          "nameNotations": {
+            "lastName": "佐藤",
+            "firstName": "楓",
+            "lastNameFurigana": "さとう",
+            "firstNameFurigana": "かえで",
+            "lastNameEn": "sato",
+            "firstNameEn": "kaede"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/satoukaede_f6f4d701-7baa-493b-8ba0-8c82db26770f_@1x.jpg",
+            "md": "/images/members/singles/28/satoukaede_f6f4d701-7baa-493b-8ba0-8c82db26770f_@2x.jpg",
+            "lg": "/images/members/singles/28/satoukaede_f6f4d701-7baa-493b-8ba0-8c82db26770f_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "nakamurareno",
+          "nameNotations": {
+            "lastName": "中村",
+            "firstName": "麗乃",
+            "lastNameFurigana": "なかむら",
+            "firstNameFurigana": "れの",
+            "lastNameEn": "nakamura",
+            "firstNameEn": "reno"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@1x.jpg",
+            "md": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@2x.jpg",
+            "lg": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "mukaihazuki",
+          "nameNotations": {
+            "lastName": "向井",
+            "firstName": "葉月",
+            "lastNameFurigana": "むかい",
+            "firstNameFurigana": "はづき",
+            "lastNameEn": "mukai",
+            "firstNameEn": "hazuki"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/mukaihazuki_86f6f4d7-017b-4ab9-bb8b-a08c82db2677_@1x.jpg",
+            "md": "/images/members/singles/28/mukaihazuki_86f6f4d7-017b-4ab9-bb8b-a08c82db2677_@2x.jpg",
+            "lg": "/images/members/singles/28/mukaihazuki_86f6f4d7-017b-4ab9-bb8b-a08c82db2677_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "yoshidaayanochristie",
+          "nameNotations": {
+            "lastName": "吉田",
+            "firstName": "綾乃クリスティー",
+            "lastNameFurigana": "よしだ",
+            "firstNameFurigana": "あやのくりすてぃー",
+            "lastNameEn": "yoshida",
+            "firstNameEn": "ayanochristie"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/yoshidaayanochristie_7fa886f6-f4d7-417b-aab9-3b8ba08c82db_@1x.jpg",
+            "md": "/images/members/singles/28/yoshidaayanochristie_7fa886f6-f4d7-417b-aab9-3b8ba08c82db_@2x.jpg",
+            "lg": "/images/members/singles/28/yoshidaayanochristie_7fa886f6-f4d7-417b-aab9-3b8ba08c82db_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "kanagawasaya",
+          "nameNotations": {
+            "lastName": "金川",
+            "firstName": "紗耶",
+            "lastNameFurigana": "かながわ",
+            "firstNameFurigana": "さや",
+            "lastNameEn": "kanagawa",
+            "firstNameEn": "saya"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/kanagawasaya_feda1f6a-7d7f-4886-b6f4-d7017baab93b_@1x.jpg",
+            "md": "/images/members/singles/28/kanagawasaya_feda1f6a-7d7f-4886-b6f4-d7017baab93b_@2x.jpg",
+            "lg": "/images/members/singles/28/kanagawasaya_feda1f6a-7d7f-4886-b6f4-d7017baab93b_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "kitagawayuri",
+          "nameNotations": {
+            "lastName": "北川",
+            "firstName": "悠理",
+            "lastNameFurigana": "きたがわ",
+            "firstNameFurigana": "ゆり",
+            "lastNameEn": "kitagawa",
+            "firstNameEn": "yuri"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/kitagawayuri_263d5bac-f377-4705-8a99-7477ebf61d4e_@1x.jpg",
+            "md": "/images/members/singles/28/kitagawayuri_263d5bac-f377-4705-8a99-7477ebf61d4e_@2x.jpg",
+            "lg": "/images/members/singles/28/kitagawayuri_263d5bac-f377-4705-8a99-7477ebf61d4e_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "kuromiharuka",
+          "nameNotations": {
+            "lastName": "黒見",
+            "firstName": "明香",
+            "lastNameFurigana": "くろみ",
+            "firstNameFurigana": "はるか",
+            "lastNameEn": "kuromi",
+            "firstNameEn": "haruka"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/kuromiharuka_b93b8ba0-8c82-4b26-b70f-b8f9f29f263d_@1x.jpg",
+            "md": "/images/members/singles/28/kuromiharuka_b93b8ba0-8c82-4b26-b70f-b8f9f29f263d_@2x.jpg",
+            "lg": "/images/members/singles/28/kuromiharuka_b93b8ba0-8c82-4b26-b70f-b8f9f29f263d_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "satourika",
+          "nameNotations": {
+            "lastName": "佐藤",
+            "firstName": "璃果",
+            "lastNameFurigana": "さとう",
+            "firstNameFurigana": "りか",
+            "lastNameEn": "satou",
+            "firstNameEn": "rika"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/satourika_db26770f-b8f9-429f-a63d-5bacf3772705_@1x.jpg",
+            "md": "/images/members/singles/28/satourika_db26770f-b8f9-429f-a63d-5bacf3772705_@2x.jpg",
+            "lg": "/images/members/singles/28/satourika_db26770f-b8f9-429f-a63d-5bacf3772705_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "shibatayuna",
+          "nameNotations": {
+            "lastName": "柴田",
+            "firstName": "柚菜",
+            "lastNameFurigana": "しばた",
+            "firstNameFurigana": "ゆな",
+            "lastNameEn": "shibata",
+            "firstNameEn": "yuna"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/shibatayuna_f3772705-4a99-4477-abf6-1d4e1c2806aa_@1x.jpg",
+            "md": "/images/members/singles/28/shibatayuna_f3772705-4a99-4477-abf6-1d4e1c2806aa_@2x.jpg",
+            "lg": "/images/members/singles/28/shibatayuna_f3772705-4a99-4477-abf6-1d4e1c2806aa_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "hayashiruna",
+          "nameNotations": {
+            "lastName": "林",
+            "firstName": "瑠奈",
+            "lastNameFurigana": "はやし",
+            "firstNameFurigana": "るな",
+            "lastNameEn": "hayashi",
+            "firstNameEn": "runa"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/hayashiruna_f4d7017b-aab9-4b8b-a08c-82db26770fb8_@1x.jpg",
+            "md": "/images/members/singles/28/hayashiruna_f4d7017b-aab9-4b8b-a08c-82db26770fb8_@2x.jpg",
+            "lg": "/images/members/singles/28/hayashiruna_f4d7017b-aab9-4b8b-a08c-82db26770fb8_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "matsuomiyu",
+          "nameNotations": {
+            "lastName": "松尾",
+            "firstName": "美佑",
+            "lastNameFurigana": "まつお",
+            "firstNameFurigana": "みゆ",
+            "lastNameEn": "matsuo",
+            "firstNameEn": "miyu"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/matsuomiyu_27054a99-7477-4bf6-9d4e-1c2806aaf0e7_@1x.jpg",
+            "md": "/images/members/singles/28/matsuomiyu_27054a99-7477-4bf6-9d4e-1c2806aaf0e7_@2x.jpg",
+            "lg": "/images/members/singles/28/matsuomiyu_27054a99-7477-4bf6-9d4e-1c2806aaf0e7_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "yakubomio",
+          "nameNotations": {
+            "lastName": "矢久保",
+            "firstName": "美緒",
+            "lastNameFurigana": "やくぼ",
+            "firstNameFurigana": "みお",
+            "lastNameEn": "yakubo",
+            "firstNameEn": "mio"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/yakubomio_b8f9f29f-263d-4bac-b377-27054a997477_@1x.jpg",
+            "md": "/images/members/singles/28/yakubomio_b8f9f29f-263d-4bac-b377-27054a997477_@2x.jpg",
+            "lg": "/images/members/singles/28/yakubomio_b8f9f29f-263d-4bac-b377-27054a997477_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "yumikinao",
+          "nameNotations": {
+            "lastName": "弓木",
+            "firstName": "奈於",
+            "lastNameFurigana": "ゆみき",
+            "firstNameFurigana": "なお",
+            "lastNameEn": "yumiki",
+            "firstNameEn": "nao"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/yumikinao_a886f6f4-d701-4baa-b93b-8ba08c82db26_@1x.jpg",
+            "md": "/images/members/singles/28/yumikinao_a886f6f4-d701-4baa-b93b-8ba08c82db26_@2x.jpg",
+            "lg": "/images/members/singles/28/yumikinao_a886f6f4-d701-4baa-b93b-8ba08c82db26_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        }
+      ]
+    ]
+  },
+  {
     "key": "sekainorinjinyo",
     "title": "世界中の隣人よ",
     "type": "special",
     "artwork": {
-      "sm": "/images/artworks/digital/1/T_a2b312ea-25ad-4121-83c9-d7a4aa20644a_@1x.jpg",
-      "md": "/images/artworks/digital/1/T_a2b312ea-25ad-4121-83c9-d7a4aa20644a_@2x.jpg",
-      "lg": "/images/artworks/digital/1/T_a2b312ea-25ad-4121-83c9-d7a4aa20644a_@3x.jpg"
+      "sm": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@1x.jpg",
+      "md": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@2x.jpg",
+      "lg": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@3x.jpg"
     },
     "creators": {
       "lyrics": [
@@ -56494,7 +57453,12 @@
       "title": "",
       "number": ""
     },
-    "albums": [],
+    "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      }
+    ],
     "otherCds": [
       {
         "title": "世界中の隣人よ",
@@ -57544,9 +58508,9 @@
     "title": "Route 246",
     "type": "title",
     "artwork": {
-      "sm": "/images/artworks/digital/2/T_ad05aca5-3ff9-42a8-961f-f8553a69bce4_@1x.jpg",
-      "md": "/images/artworks/digital/2/T_ad05aca5-3ff9-42a8-961f-f8553a69bce4_@2x.jpg",
-      "lg": "/images/artworks/digital/2/T_ad05aca5-3ff9-42a8-961f-f8553a69bce4_@3x.jpg"
+      "sm": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@1x.jpg",
+      "md": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@2x.jpg",
+      "lg": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@3x.jpg"
     },
     "creators": {
       "lyrics": [
@@ -57566,7 +58530,12 @@
       "title": "",
       "number": ""
     },
-    "albums": [],
+    "albums": [
+      {
+        "title": "Time flies",
+        "number": "best"
+      }
+    ],
     "otherCds": [
       {
         "title": "Route 246",

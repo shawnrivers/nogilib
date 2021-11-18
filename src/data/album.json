@@ -5161,7 +5161,389 @@
         "title": "最後のTight Hug",
         "type": "lead",
         "inCdType": [
-          "L1"
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "gurugurucurtain",
+        "title": "ぐるぐるカーテン",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "oideshampo",
+        "title": "おいでシャンプー",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "hashirebicycle",
+        "title": "走れ!Bicycle",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "seifukunomannequin",
+        "title": "制服のマネキン",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "kiminonahakibou",
+        "title": "君の名は希望",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "girlsrule",
+        "title": "ガールズルール",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "valletta",
+        "title": "バレッタ",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "kiduitarakataomoi",
+        "title": "気づいたら片想い",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "natsunofreeeasy",
+        "title": "夏のFree&Easy",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "nandomenoaozoraka",
+        "title": "何度目の青空か?",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "inochihautsukushii",
+        "title": "命は美しい",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "taiyouknock",
+        "title": "太陽ノック",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "imahana",
+        "title": "今、話したい誰かがいる",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "harujion",
+        "title": "ハルジオンが咲く頃",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "hadasummer",
+        "title": "裸足でSummer",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "sayonaranoimi",
+        "title": "サヨナラの意味",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "influencer",
+        "title": "インフルエンサー",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "nigemizu",
+        "title": "逃げ水",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "itsukadekiru",
+        "title": "いつかできるから今日できる",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "synchronicity",
+        "title": "シンクロニシティ",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "jikochu",
+        "title": "ジコチューで行こう!",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "kaerimichi",
+        "title": "帰り道は遠回りしたくなる",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "singout",
+        "title": "Sing Out!",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "yoakemade",
+        "title": "夜明けまで強がらなくてもいい",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "hogoshoku",
+        "title": "しあわせの保護色",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "bokuhabokuwosukininaru",
+        "title": "僕は僕を好きになる",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "gomennefingerscrossed",
+        "title": "ごめんねFingers crossed",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "kiminishikarareta",
+        "title": "君に叱られた",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "bokugairubasho",
+        "title": "僕がいる場所",
+        "type": "coupling",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "kikkake",
+        "title": "きっかけ",
+        "type": "coupling",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "skydiving",
+        "title": "スカイダイビング",
+        "type": "coupling",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "arigachinarenai",
+        "title": "ありがちな恋愛",
+        "type": "lead",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "sekainorinjinyo",
+        "title": "世界中の隣人よ",
+        "type": "special",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "route246",
+        "title": "Route 246",
+        "type": "title",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "yukkuritosakuhana",
+        "title": "ゆっくりと咲く花",
+        "type": "second generation",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "tokinowadachi",
+        "title": "歳月の轍",
+        "type": "solo",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "anatakaranosotsugyo",
+        "title": "あなたからの卒業",
+        "type": "solo",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
+        ]
+      },
+      {
+        "key": "hardtosay",
+        "title": "Hard to say",
+        "type": "coupling",
+        "inCdType": [
+          "L1",
+          "L2",
+          "T"
         ]
       }
     ],

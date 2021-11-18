@@ -534,6 +534,10 @@
         },
         "albums": [
           {
+            "title": "Time flies",
+            "number": "best"
+          },
+          {
             "title": "透明な色",
             "number": "1"
           }
@@ -662,6 +666,10 @@
         },
         "albums": [
           {
+            "title": "Time flies",
+            "number": "best"
+          },
+          {
             "title": "透明な色",
             "number": "1"
           }
@@ -784,6 +792,10 @@
           "number": "3"
         },
         "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          },
           {
             "title": "透明な色",
             "number": "1"
@@ -912,6 +924,10 @@
         },
         "albums": [
           {
+            "title": "Time flies",
+            "number": "best"
+          },
+          {
             "title": "透明な色",
             "number": "1"
           }
@@ -1029,6 +1045,10 @@
           "number": "5"
         },
         "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          },
           {
             "title": "透明な色",
             "number": "1"
@@ -1162,6 +1182,10 @@
         },
         "albums": [
           {
+            "title": "Time flies",
+            "number": "best"
+          },
+          {
             "title": "透明な色",
             "number": "1"
           }
@@ -1289,6 +1313,10 @@
           "number": "7"
         },
         "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          },
           {
             "title": "透明な色",
             "number": "1"
@@ -1418,6 +1446,10 @@
         },
         "albums": [
           {
+            "title": "Time flies",
+            "number": "best"
+          },
+          {
             "title": "透明な色",
             "number": "1"
           }
@@ -1546,6 +1578,10 @@
         },
         "albums": [
           {
+            "title": "Time flies",
+            "number": "best"
+          },
+          {
             "title": "透明な色",
             "number": "1"
           }
@@ -1669,6 +1705,10 @@
         },
         "albums": [
           {
+            "title": "Time flies",
+            "number": "best"
+          },
+          {
             "title": "透明な色",
             "number": "1"
           }
@@ -1790,6 +1830,10 @@
           "number": "11"
         },
         "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          },
           {
             "title": "それぞれの椅子",
             "number": "2"
@@ -1922,6 +1966,10 @@
           "number": "12"
         },
         "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          },
           {
             "title": "それぞれの椅子",
             "number": "2"
@@ -2078,6 +2126,10 @@
         },
         "albums": [
           {
+            "title": "Time flies",
+            "number": "best"
+          },
+          {
             "title": "それぞれの椅子",
             "number": "2"
           }
@@ -2218,7 +2270,12 @@
           "title": "ハルジオンが咲く頃",
           "number": "14"
         },
-        "albums": [],
+        "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          }
+        ],
         "artwork": {
           "sm": "/images/artworks/singles/14/A_496127cf-ce7f-4d93-8797-5e43e3def3d1_@1x.jpg",
           "md": "/images/artworks/singles/14/A_496127cf-ce7f-4d93-8797-5e43e3def3d1_@2x.jpg",
@@ -2369,6 +2426,10 @@
           "number": "15"
         },
         "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          },
           {
             "title": "生まれてから初めて見た夢",
             "number": "3"
@@ -2535,6 +2596,10 @@
         },
         "albums": [
           {
+            "title": "Time flies",
+            "number": "best"
+          },
+          {
             "title": "生まれてから初めて見た夢",
             "number": "3"
           }
@@ -2699,6 +2764,10 @@
           "number": "17"
         },
         "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          },
           {
             "title": "生まれてから初めて見た夢",
             "number": "3"
@@ -2865,6 +2934,10 @@
         },
         "albums": [
           {
+            "title": "Time flies",
+            "number": "best"
+          },
+          {
             "title": "今が思い出になるまで",
             "number": "4"
           }
@@ -3015,6 +3088,10 @@
         },
         "albums": [
           {
+            "title": "Time flies",
+            "number": "best"
+          },
+          {
             "title": "今が思い出になるまで",
             "number": "4"
           }
@@ -3159,6 +3236,10 @@
           "number": "20"
         },
         "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          },
           {
             "title": "今が思い出になるまで",
             "number": "4"
@@ -3311,6 +3392,10 @@
         },
         "albums": [
           {
+            "title": "Time flies",
+            "number": "best"
+          },
+          {
             "title": "今が思い出になるまで",
             "number": "4"
           }
@@ -3451,6 +3536,10 @@
           "number": "22"
         },
         "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          },
           {
             "title": "今が思い出になるまで",
             "number": "4"
@@ -3596,7 +3685,12 @@
           "title": "Sing Out!",
           "number": "23"
         },
-        "albums": [],
+        "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          }
+        ],
         "artwork": {
           "sm": "/images/artworks/singles/23/A_9de9908a-ba84-40a2-b312-ea25ad212103_@1x.jpg",
           "md": "/images/artworks/singles/23/A_9de9908a-ba84-40a2-b312-ea25ad212103_@2x.jpg",
@@ -3722,7 +3816,12 @@
           "title": "夜明けまで強がらなくてもいい",
           "number": "24"
         },
-        "albums": [],
+        "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          }
+        ],
         "artwork": {
           "sm": "/images/artworks/singles/24/A_fc845bae-83f0-4484-bd64-711a8b41f2b8_@1x.jpg",
           "md": "/images/artworks/singles/24/A_fc845bae-83f0-4484-bd64-711a8b41f2b8_@2x.jpg",
@@ -3848,7 +3947,12 @@
           "title": "しあわせの保護色",
           "number": "25"
         },
-        "albums": [],
+        "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          }
+        ],
         "artwork": {
           "sm": "/images/artworks/singles/25/A_f05484bd-6471-4a8b-81f2-b88763e00b28_@1x.jpg",
           "md": "/images/artworks/singles/25/A_f05484bd-6471-4a8b-81f2-b88763e00b28_@2x.jpg",
@@ -3974,7 +4078,12 @@
           "title": "僕は僕を好きになる",
           "number": "26"
         },
-        "albums": [],
+        "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          }
+        ],
         "artwork": {
           "sm": "/images/artworks/singles/26/A_03c9d7a4-aa20-444a-8aa3-03408b0241af_@1x.jpg",
           "md": "/images/artworks/singles/26/A_03c9d7a4-aa20-444a-8aa3-03408b0241af_@2x.jpg",
@@ -4100,7 +4209,12 @@
           "title": "ごめんねFingers crossed",
           "number": "27"
         },
-        "albums": [],
+        "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          }
+        ],
         "artwork": {
           "sm": "/images/artworks/singles/27/A_212103c9-d7a4-4a20-a44a-caa303408b02_@1x.jpg",
           "md": "/images/artworks/singles/27/A_212103c9-d7a4-4a20-a44a-caa303408b02_@2x.jpg",
@@ -4226,7 +4340,12 @@
           "title": "君に叱られた",
           "number": "28"
         },
-        "albums": [],
+        "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          }
+        ],
         "artwork": {
           "sm": "/images/artworks/singles/28/A_d7a4aa20-644a-4aa3-8340-8b0241afb44f_@1x.jpg",
           "md": "/images/artworks/singles/28/A_d7a4aa20-644a-4aa3-8340-8b0241afb44f_@2x.jpg",
@@ -4400,6 +4519,10 @@
         },
         "albums": [
           {
+            "title": "Time flies",
+            "number": "best"
+          },
+          {
             "title": "透明な色",
             "number": "1"
           }
@@ -4541,6 +4664,10 @@
           "number": ""
         },
         "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          },
           {
             "title": "それぞれの椅子",
             "number": "2"
@@ -4798,6 +4925,10 @@
           "number": ""
         },
         "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          },
           {
             "title": "生まれてから初めて見た夢",
             "number": "3"
@@ -5171,6 +5302,10 @@
         },
         "albums": [
           {
+            "title": "Time flies",
+            "number": "best"
+          },
+          {
             "title": "今が思い出になるまで",
             "number": "4"
           }
@@ -5366,6 +5501,98 @@
         }
       },
       {
+        "id": "song-yukkuritosakuhana",
+        "field": "ゆっくりと咲く花 yukkuritosakuhana",
+        "searchType": "songs",
+        "key": "yukkuritosakuhana",
+        "title": "ゆっくりと咲く花",
+        "songType": "second generation",
+        "single": {
+          "title": "",
+          "number": ""
+        },
+        "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          }
+        ],
+        "artwork": {
+          "sm": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@1x.jpg",
+          "md": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@2x.jpg",
+          "lg": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@3x.jpg"
+        }
+      },
+      {
+        "id": "song-tokinowadachi",
+        "field": "歳月の轍 tokinowadachi",
+        "searchType": "songs",
+        "key": "tokinowadachi",
+        "title": "歳月の轍",
+        "songType": "solo",
+        "single": {
+          "title": "",
+          "number": ""
+        },
+        "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          }
+        ],
+        "artwork": {
+          "sm": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@1x.jpg",
+          "md": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@2x.jpg",
+          "lg": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@3x.jpg"
+        }
+      },
+      {
+        "id": "song-anatakaranosotsugyo",
+        "field": "あなたからの卒業 anatakaranosotsugyo",
+        "searchType": "songs",
+        "key": "anatakaranosotsugyo",
+        "title": "あなたからの卒業",
+        "songType": "solo",
+        "single": {
+          "title": "",
+          "number": ""
+        },
+        "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          }
+        ],
+        "artwork": {
+          "sm": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@1x.jpg",
+          "md": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@2x.jpg",
+          "lg": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@3x.jpg"
+        }
+      },
+      {
+        "id": "song-hardtosay",
+        "field": "Hard to say hardtosay",
+        "searchType": "songs",
+        "key": "hardtosay",
+        "title": "Hard to say",
+        "songType": "coupling",
+        "single": {
+          "title": "",
+          "number": ""
+        },
+        "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          }
+        ],
+        "artwork": {
+          "sm": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@1x.jpg",
+          "md": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@2x.jpg",
+          "lg": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@3x.jpg"
+        }
+      },
+      {
         "id": "song-sekainorinjinyo",
         "field": "世界中の隣人よ sekainorinjinyo",
         "searchType": "songs",
@@ -5376,11 +5603,16 @@
           "title": "",
           "number": ""
         },
-        "albums": [],
+        "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          }
+        ],
         "artwork": {
-          "sm": "/images/artworks/digital/1/T_a2b312ea-25ad-4121-83c9-d7a4aa20644a_@1x.jpg",
-          "md": "/images/artworks/digital/1/T_a2b312ea-25ad-4121-83c9-d7a4aa20644a_@2x.jpg",
-          "lg": "/images/artworks/digital/1/T_a2b312ea-25ad-4121-83c9-d7a4aa20644a_@3x.jpg"
+          "sm": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@1x.jpg",
+          "md": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@2x.jpg",
+          "lg": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@3x.jpg"
         }
       },
       {
@@ -5394,11 +5626,16 @@
           "title": "",
           "number": ""
         },
-        "albums": [],
+        "albums": [
+          {
+            "title": "Time flies",
+            "number": "best"
+          }
+        ],
         "artwork": {
-          "sm": "/images/artworks/digital/2/T_ad05aca5-3ff9-42a8-961f-f8553a69bce4_@1x.jpg",
-          "md": "/images/artworks/digital/2/T_ad05aca5-3ff9-42a8-961f-f8553a69bce4_@2x.jpg",
-          "lg": "/images/artworks/digital/2/T_ad05aca5-3ff9-42a8-961f-f8553a69bce4_@3x.jpg"
+          "sm": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@1x.jpg",
+          "md": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@2x.jpg",
+          "lg": "/images/artworks/albums/best/L1_7da3fde1-7d2e-44ed-b669-ff14ffaa77c8_@3x.jpg"
         }
       },
       {
