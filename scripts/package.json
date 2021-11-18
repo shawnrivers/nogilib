@@ -2,9 +2,7 @@
   "name": "nogilib-scripts",
   "scripts": {
     "generate-responsive-images": "ts-node ./src/responsiveImages/index.ts",
-    "download-profile-images": "ts-node ./src/downloadImages/index.ts",
-    "update-data:start": "./src/update-data/start.sh",
-    "update-data:release": "./src/update-data/release.sh"
+    "download-profile-images": "ts-node ./src/downloadImages/index.ts"
   },
   "devDependencies": {
     "@lukeed/uuid": "^2.0.0",
