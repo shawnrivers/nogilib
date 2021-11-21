@@ -604,6 +604,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         cover: 'photo-albums/takayamakazumi_2.jpg',
       },
     ],
+    graduatedDate: '2021-11-21',
   }),
   createMemberRaw({
     name: 'nakadakana',
