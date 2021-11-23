@@ -10728,6 +10728,26 @@
     ],
     "photoAlbums": [
       {
+        "title": "タイトル未定",
+        "release": "2022-01-25",
+        "type": "photo album",
+        "sites": [
+          {
+            "title": "Twitter",
+            "url": "https://twitter.com/m_shinuchi_2"
+          },
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/m_shinuchi_2/"
+          }
+        ],
+        "cover": {
+          "sm": "/images/photo-albums/shinuchimai_2_f88dd11b-1ad1-4b5c-bb2d-0c6b156a675d_@1x.jpg",
+          "md": "/images/photo-albums/shinuchimai_2_f88dd11b-1ad1-4b5c-bb2d-0c6b156a675d_@2x.jpg",
+          "lg": "/images/photo-albums/shinuchimai_2_f88dd11b-1ad1-4b5c-bb2d-0c6b156a675d_@3x.jpg"
+        }
+      },
+      {
         "title": "どこにいるの？",
         "release": "2017-11-14",
         "type": "photo album",
