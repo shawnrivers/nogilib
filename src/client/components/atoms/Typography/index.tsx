@@ -95,6 +95,7 @@ export const Typography: React.FC<TypographyProps> = props => {
       css`
         color: var(${getColorVarName(textColor.on, textColor.variant)});
         font-weight: ${bold ? 700 : undefined};
+        line-height: 1.5;
         font-family: ${fontFamilyValue};
         text-transform: ${capitalize ? 'capitalize' : 'initial'};
       `,
