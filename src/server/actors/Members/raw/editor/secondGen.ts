@@ -156,6 +156,22 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     ],
     photoAlbums: [
       {
+        title: 'タイトル未定',
+        release: '2022-01-25',
+        type: 'photo album',
+        sites: [
+          {
+            title: 'Twitter',
+            url: 'https://twitter.com/m_shinuchi_2',
+          },
+          {
+            title: 'Instagram',
+            url: 'https://www.instagram.com/m_shinuchi_2/',
+          },
+        ],
+        cover: 'photo-albums/shinuchimai_2.jpg',
+      },
+      {
         title: 'どこにいるの？',
         release: '2017-11-14',
         type: 'photo album',
