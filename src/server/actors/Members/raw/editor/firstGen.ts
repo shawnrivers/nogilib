@@ -109,7 +109,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         cover: 'photo-albums/ikutaerika_2.jpg',
       },
       {
-        title: '生田絵梨花メモリアルブック',
+        title: 'カノン',
         release: '2021-12-14',
         type: 'photo book',
         sites: [
