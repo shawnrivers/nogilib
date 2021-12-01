@@ -570,12 +570,12 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://blog.nogizaka46.com/kazumi.takayama/',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/takayamakazumi.php',
+        title: 'official',
+        url: 'https://kazumitakayama.com/',
       },
       {
-        title: '755',
-        url: 'https://7gogo.jp/takayama-kazumi',
+        title: 'profile',
+        url: 'https://n46llc.com/s/m00/artist/15',
       },
     ],
     photoAlbums: [
