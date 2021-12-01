@@ -3113,11 +3113,16 @@
       "firstNameEn": "kazumi"
     },
     "profileImage": {
-      "sm": "/images/members/singles/28/takayamakazumi_aab93b8b-a08c-42db-a677-0fb8f9f29f26_@1x.jpg",
-      "md": "/images/members/singles/28/takayamakazumi_aab93b8b-a08c-42db-a677-0fb8f9f29f26_@2x.jpg",
-      "lg": "/images/members/singles/28/takayamakazumi_aab93b8b-a08c-42db-a677-0fb8f9f29f26_@3x.jpg"
+      "sm": "/images/members/others/takayamakazumi_2021-12-01_5fae0f0e-a581-4065-a17d-332912ad2475_@1x.jpg",
+      "md": "/images/members/others/takayamakazumi_2021-12-01_5fae0f0e-a581-4065-a17d-332912ad2475_@2x.jpg",
+      "lg": "/images/members/others/takayamakazumi_2021-12-01_5fae0f0e-a581-4065-a17d-332912ad2475_@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/others/takayamakazumi_2021-12-01_5fae0f0e-a581-4065-a17d-332912ad2475_@1x.jpg",
+        "md": "/images/members/others/takayamakazumi_2021-12-01_5fae0f0e-a581-4065-a17d-332912ad2475_@2x.jpg",
+        "lg": "/images/members/others/takayamakazumi_2021-12-01_5fae0f0e-a581-4065-a17d-332912ad2475_@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/28/takayamakazumi_aab93b8b-a08c-42db-a677-0fb8f9f29f26_@1x.jpg",
         "md": "/images/members/singles/28/takayamakazumi_aab93b8b-a08c-42db-a677-0fb8f9f29f26_@2x.jpg",
