@@ -385,6 +385,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/yuuri_3ito/',
       },
       {
+        title: 'official',
+        url: 'https://yuuri-saito.com/',
+      },
+      {
         title: 'TikTok',
         url: 'https://www.tiktok.com/@yuuri_3ito',
       },
