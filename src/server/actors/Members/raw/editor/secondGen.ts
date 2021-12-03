@@ -156,7 +156,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     ],
     photoAlbums: [
       {
-        title: 'タイトル未定',
+        title: '夜が明けたら',
         release: '2022-01-25',
         type: 'photo album',
         sites: [
