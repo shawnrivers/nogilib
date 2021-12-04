@@ -428,6 +428,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/reika_s16/',
       },
       {
+        title: 'Twitter',
+        url: 'https://twitter.com/uninyan_rs',
+      },
+      {
         title: 'official',
         url: 'https://reikasakurai.com/s/m08/?ima=0916',
       },
