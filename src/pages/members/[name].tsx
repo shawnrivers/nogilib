@@ -399,6 +399,8 @@ const MemberPage: React.FC<PageProps> = props => {
                         variant: 'variant0',
                       }}
                       capitalize
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <Translation text={site.title as any} />
                     </TextLink>
