@@ -5,7 +5,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'endousakura',
     nameNotations: ['遠藤', 'さくら', 'えんどう', 'さくら', 'endo', 'sakura'],
-    glowStickColor: ['white', 'pink'],
+    glowStickColor: ['pink', 'white'],
     join: 'fourth',
     birthday: '2001-10-03',
     height: 164,
@@ -25,7 +25,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'kakiharuka',
     nameNotations: ['賀喜', '遥香', 'かき', 'はるか', 'kaki', 'haruka'],
-    glowStickColor: ['green', 'orange'],
+    glowStickColor: ['orange', 'green'],
     join: 'fourth',
     birthday: '2001-08-08',
     height: 166,
@@ -72,7 +72,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'kanagawasaya',
     nameNotations: ['金川', '紗耶', 'かながわ', 'さや', 'kanagawa', 'saya'],
-    glowStickColor: ['red', 'light blue'],
+    glowStickColor: ['light blue', 'red'],
     join: 'fourth',
     birthday: '2001-10-31',
     height: 165,
@@ -92,7 +92,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'kitagawayuri',
     nameNotations: ['北川', '悠理', 'きたがわ', 'ゆり', 'kitagawa', 'yuri'],
-    glowStickColor: ['orange', 'light blue'],
+    glowStickColor: ['light blue', 'orange'],
     join: 'fourth',
     birthday: '2001-08-08',
     height: 165,
@@ -212,7 +212,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'yakubomio',
     nameNotations: ['矢久保', '美緒', 'やくぼ', 'みお', 'yakubo', 'mio'],
-    glowStickColor: ['yellow', 'pink'],
+    glowStickColor: ['pink', 'yellow'],
     join: 'fourth',
     birthday: '2002-08-14',
     height: 153,
@@ -256,7 +256,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'satourika',
     nameNotations: ['佐藤', '璃果', 'さとう', 'りか', 'satou', 'rika'],
-    glowStickColor: ['pink', 'light blue'],
+    glowStickColor: ['pink', 'turquoise'],
     join: 'fourth',
     birthday: '2001-08-09',
     height: 160,
@@ -304,7 +304,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
     name: 'matsuomiyu',
     nameNotations: ['松尾', '美佑', 'まつお', 'みゆ', 'matsuo', 'miyu'],
-    glowStickColor: ['light blue', 'white'],
+    glowStickColor: ['turquoise', 'white'],
     join: 'fourth',
     birthday: '2004-01-03',
     height: 167,

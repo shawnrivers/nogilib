@@ -21,6 +21,7 @@ export type GlowStickColor =
   | 'orange'
   | 'light blue'
   | 'yellow green'
+  | 'turquoise'
   | 'none';
 export type MemberNameKey =
   | 'akimotomanatsu'
