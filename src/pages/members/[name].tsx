@@ -426,6 +426,8 @@ const MemberPage: React.FC<PageProps> = props => {
                       borderRadius="s"
                       padding="xs"
                       href={photoAlbum.sites[0].url}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       css={css`
                         width: 180px;
                         margin: ${commonStyles.spacing.xs};
