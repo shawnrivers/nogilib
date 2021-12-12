@@ -21,43 +21,46 @@ const NavItem: React.FC<{
   text: string;
 }> = props => {
   return (
-    <BaseLink href={props.href}>
-      <div
-        css={css`
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding: ${commonStyles.spacing.xxs} ${commonStyles.spacing.xs};
-          border-radius: ${commonStyles.borderRadius.xs};
-          background: none;
-          transition: background-color 0.3s ease-out;
+    <BaseLink
+      href={props.href}
+      css={css`
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: ${commonStyles.spacing.xxs} ${commonStyles.spacing.xs};
+        border-radius: ${commonStyles.borderRadius.xs};
+        background: none;
+        transition: background-color 0.3s ease-out;
 
-          &:active {
+        &.focus-visible {
+          outline: 2px solid transparent;
+          outline-offset: 2px;
+        }
+
+        &:active,
+        &.focus-visible {
+          background-color: var(${getColorVarName('background', 'variant0')});
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+          &:hover {
             background-color: var(${getColorVarName('background', 'variant0')});
           }
-
-          @media (hover: hover) and (pointer: fine) {
-            &:hover {
-              background-color: var(
-                ${getColorVarName('background', 'variant0')}
-              );
-            }
-          }
+        }
+      `}
+    >
+      {props.icon}
+      <Typography
+        variant="body4"
+        capitalize
+        css={css`
+          margin-top: 0.3em;
+          line-height: 1.2;
+          white-space: nowrap;
         `}
       >
-        {props.icon}
-        <Typography
-          variant="body4"
-          capitalize
-          css={css`
-            margin-top: 0.3em;
-            line-height: 1.2;
-            white-space: nowrap;
-          `}
-        >
-          {props.text}
-        </Typography>
-      </div>
+        {props.text}
+      </Typography>
     </BaseLink>
   );
 };
