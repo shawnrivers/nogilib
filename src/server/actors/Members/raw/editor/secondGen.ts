@@ -89,6 +89,18 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     ],
     photoAlbums: [
       {
+        title: 'タイトル未定',
+        release: '2022-02-08',
+        type: 'photo album',
+        sites: [
+          {
+            title: 'Twitter',
+            url: 'https://twitter.com/hinakochan_2nd',
+          },
+        ],
+        cover: 'photo-albums/kitanohinako_2.jpg',
+      },
+      {
         title: '空気の色',
         release: '2018-12-27',
         type: 'photo album',
