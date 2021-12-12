@@ -62,6 +62,7 @@ export const GlowStickBadge: React.FC<GlowStickBadgeProps> = props => {
         textColor={{ on: 'onBackground', variant: 'variant0' }}
         css={css`
           margin-left: ${commonStyles.spacing.xxs};
+          line-height: 1;
         `}
       >
         {getTranslation(color)}
