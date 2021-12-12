@@ -227,29 +227,13 @@ const MemberPage: React.FC<PageProps> = props => {
         options={{ textTransform: 'capitalize' }}
       />
       <PageContent
-        title={primaryName}
-        titleTextTransform="capitalize"
+        title={{ ...primaryName, textTransform: 'capitalize' }}
+        titleCaption={secondaryName}
         subtitle={{
           text: getTranslation('member'),
           lang: locale,
         }}
       >
-        <Typography
-          variant="body1"
-          textColor={{
-            on: 'onBackground',
-            variant: 'variant0',
-          }}
-          css={css`
-            vertical-align: middle;
-            text-transform: capitalize;
-            text-align: center;
-            margin-top: 0.3em;
-          `}
-          lang={secondaryName.lang}
-        >
-          {secondaryName.text}
-        </Typography>
         <section>
           <TextDivider text={<Translation text="profile" />} element="h2" />
           <div

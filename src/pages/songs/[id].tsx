@@ -131,8 +131,7 @@ export const SongPage: React.FC<SongPageProps> = props => {
     <>
       <PageHelmet title={title} options={{ textTransform: 'none' }} />
       <PageContent
-        title={{ text: title, lang: 'ja' }}
-        titleTextTransform="initial"
+        title={{ text: title, lang: 'ja', textTransform: 'initial' }}
         subtitle={{
           text: getTranslation('song'),
           lang: locale,

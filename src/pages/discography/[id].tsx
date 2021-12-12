@@ -90,12 +90,11 @@ const AlbumPage: React.FC<PageProps> = props => {
     <>
       <PageHelmet title={title} options={{ textTransform: 'none' }} />
       <PageContent
-        title={{ text: title, lang: 'ja' }}
+        title={{ text: title, lang: 'ja', textTransform: 'initial' }}
         subtitle={{
           text: subtitleText,
           lang: locale,
         }}
-        titleTextTransform="initial"
       >
         <>
           <Typography

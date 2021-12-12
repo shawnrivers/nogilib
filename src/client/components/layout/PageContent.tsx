@@ -3,20 +3,20 @@ import * as React from 'react';
 import { Typography } from 'client/components/atoms/Typography';
 import { commonStyles } from 'client/styles/tokens';
 
-type HeaderProps = {
-  title?: {
-    text: string;
-    lang?: string;
-  };
-  subtitle?: {
-    text: string;
-    lang?: string;
-  };
-  titleTextTransform?: 'uppercase' | 'capitalize' | 'initial';
+type TextTransform = 'uppercase' | 'capitalize' | 'initial';
+type HeaderText = {
+  text: string;
+  lang?: string;
+  textTransform?: TextTransform;
 };
+type HeaderProps = Partial<{
+  title: HeaderText;
+  titleCaption: HeaderText;
+  subtitle: HeaderText;
+}>;
 
 const Header: React.FC<HeaderProps> = props => {
-  const { title, subtitle, titleTextTransform = 'uppercase' } = props;
+  const { title, titleCaption, subtitle } = props;
 
   return (
     <header
@@ -31,7 +31,8 @@ const Header: React.FC<HeaderProps> = props => {
           element="p"
           textColor={{ on: 'onBackground', variant: 'variant0' }}
           css={css`
-            text-transform: capitalize;
+            margin-bottom: 0.1em;
+            text-transform: ${subtitle.textTransform ?? 'uppercase'};
             text-align: center;
           `}
           lang={subtitle.lang}
@@ -44,13 +45,26 @@ const Header: React.FC<HeaderProps> = props => {
           variant="h1"
           textColor={{ on: 'onBackground', variant: 'standard' }}
           css={css`
-            margin-top: 0.2em;
-            text-transform: ${titleTextTransform ?? 'initial'};
+            margin-bottom: 0.1em;
+            text-transform: ${title.textTransform ?? 'uppercase'};
             text-align: center;
           `}
           lang={title.lang}
         >
           {title.text}
+        </Typography>
+      )}
+      {titleCaption !== undefined && (
+        <Typography
+          variant="body1"
+          textColor={{ on: 'onBackground', variant: 'variant0' }}
+          css={css`
+            text-transform: ${titleCaption.textTransform ?? 'uppercase'};
+            text-align: center;
+          `}
+          lang={titleCaption.lang}
+        >
+          {titleCaption.text}
         </Typography>
       )}
     </header>
