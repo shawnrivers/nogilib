@@ -19,7 +19,7 @@ export type GlowStickBadgeProps = {
 };
 
 export const GlowStickBadge: React.FC<GlowStickBadgeProps> = props => {
-  const { color, size = 14, className } = props;
+  const { color, size = 16, className } = props;
   const { getTranslation } = useTranslations();
 
   return (
@@ -38,6 +38,7 @@ export const GlowStickBadge: React.FC<GlowStickBadgeProps> = props => {
             componentElevationKey.componentOnBackground
           ].boxShadow};
           border: 1px solid var(${getColorVarName('onBackground', 'standard')});
+          box-sizing: border-box;
           width: ${size}px;
           height: ${size}px;
         `}

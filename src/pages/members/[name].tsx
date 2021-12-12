@@ -226,7 +226,14 @@ const MemberPage: React.FC<PageProps> = props => {
         title={primaryName.text}
         options={{ textTransform: 'capitalize' }}
       />
-      <PageContent title={primaryName} titleTextTransform="capitalize">
+      <PageContent
+        title={primaryName}
+        titleTextTransform="capitalize"
+        subtitle={{
+          text: getTranslation('member'),
+          lang: locale,
+        }}
+      >
         <Typography
           variant="body1"
           textColor={{
@@ -265,7 +272,7 @@ const MemberPage: React.FC<PageProps> = props => {
                 ].boxShadow};
                 overflow: hidden;
                 width: 200px;
-                height: 240px;
+                max-height: 240px;
               `}
             >
               <AspectRatioImage
@@ -546,7 +553,7 @@ const MemberPage: React.FC<PageProps> = props => {
                       componentElevationKey.componentOnBackground
                     ].boxShadow};
                     width: 110px;
-                    height: 132px;
+                    max-height: 132px;
                     overflow: hidden;
                   `}
                 >
