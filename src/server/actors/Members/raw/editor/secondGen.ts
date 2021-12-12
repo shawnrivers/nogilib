@@ -267,6 +267,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         cover: 'photo-albums/teradaranze_1.jpg',
       },
     ],
+    graduatedDate: '2021-12-12',
   }),
   createMemberRaw({
     name: 'horimiona',
