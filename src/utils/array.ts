@@ -39,3 +39,27 @@ export const filterDuplicate = <
 
   return uniqueList;
 };
+
+const checkIndexParams = (current: number, length: number): void => {
+  if (length < 1) {
+    throw new Error('Pass a length that is larger than 0');
+  }
+
+  if (current > length - 1 || current < 0) {
+    throw new Error(
+      `Pass a current index that is between ${0} and ${length - 1}`
+    );
+  }
+};
+
+export const getNextIndex = (current: number, length: number): number => {
+  checkIndexParams(current, length);
+  let nextIndex = current + 1;
+  return nextIndex % length;
+};
+
+export const getPreviousIndex = (current: number, length: number): number => {
+  checkIndexParams(current, length);
+  let previousIndex = current - 1;
+  return previousIndex >= 0 ? previousIndex % length : length - 1;
+};
