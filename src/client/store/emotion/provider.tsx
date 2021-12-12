@@ -60,17 +60,18 @@ export const EmotionThemeProvider: React.FC = props => {
             --yellowdull3: #787059;
             --yellowdull4: #585241;
 
-            --glow-stick-color-red: #fb9090;
+            --glow-stick-color-red: #f56a6a;
             --glow-stick-color-yellow: #f7dd7f;
             --glow-stick-color-white: #ffffff;
-            --glow-stick-color-blue: #7fbaf7;
+            --glow-stick-color-blue: #6f9af5;
             --glow-stick-color-green: #a3ffaa;
-            --glow-stick-color-purple: #dc9af7;
+            --glow-stick-color-purple: #d073f5;
             --glow-stick-color-black: #595959;
-            --glow-stick-color-pink: #ff90d4;
-            --glow-stick-color-orange: #ffba75;
-            --glow-stick-color-light-blue: #4bded7;
+            --glow-stick-color-pink: #fa9dcb;
+            --glow-stick-color-orange: #f7993b;
+            --glow-stick-color-light-blue: #a9ceec;
             --glow-stick-color-yellow-green: #d2ff87;
+            --glow-stick-color-turquoise: #4cecdc;
             --glow-stick-color-none: #ffffff;
           }
 
