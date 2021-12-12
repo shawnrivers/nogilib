@@ -245,6 +245,7 @@ export const SettingsMenu: React.FC = () => {
         <SettingsIcon
           css={css`
             fill: var(${getColorVarName('onSurface', 'standard')});
+            vertical-align: middle;
           `}
         />
       </BaseButton>
