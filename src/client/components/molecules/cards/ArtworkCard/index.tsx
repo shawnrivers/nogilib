@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { AspectRatioImage } from 'client/components/atoms/image/AspectRatioImage';
 import {
   Typography,

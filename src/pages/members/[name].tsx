@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import * as React from 'react';
 import { useRouter } from 'next/router';
 import { GetStaticPaths, GetStaticProps } from 'next';
@@ -226,23 +226,14 @@ const MemberPage: React.FC<PageProps> = props => {
         title={primaryName.text}
         options={{ textTransform: 'capitalize' }}
       />
-      <PageContent title={primaryName} titleTextTransform="capitalize">
-        <Typography
-          variant="body1"
-          textColor={{
-            on: 'onBackground',
-            variant: 'variant0',
-          }}
-          css={css`
-            vertical-align: middle;
-            text-transform: capitalize;
-            text-align: center;
-            margin-top: 0.3em;
-          `}
-          lang={secondaryName.lang}
-        >
-          {secondaryName.text}
-        </Typography>
+      <PageContent
+        title={{ ...primaryName, textTransform: 'capitalize' }}
+        titleCaption={secondaryName}
+        subtitle={{
+          text: getTranslation('member'),
+          lang: locale,
+        }}
+      >
         <section>
           <TextDivider text={<Translation text="profile" />} element="h2" />
           <div
@@ -265,7 +256,7 @@ const MemberPage: React.FC<PageProps> = props => {
                 ].boxShadow};
                 overflow: hidden;
                 width: 200px;
-                height: 240px;
+                max-height: 240px;
               `}
             >
               <AspectRatioImage
@@ -285,7 +276,8 @@ const MemberPage: React.FC<PageProps> = props => {
                 display: grid;
                 grid-template-columns: max-content auto;
                 grid-template-rows: auto;
-                grid-gap: ${commonStyles.spacing.s};
+                row-gap: ${commonStyles.spacing.xs};
+                column-gap: ${commonStyles.spacing.s};
                 margin-top: 0.5em;
                 align-items: center;
               `}
@@ -361,7 +353,7 @@ const MemberPage: React.FC<PageProps> = props => {
                       color={glowStickColor.left}
                       size={14}
                       css={css`
-                        margin-right: ${commonStyles.spacing.xxs};
+                        margin-right: ${commonStyles.spacing.s};
                       `}
                     />
                     <GlowStickBadge color={glowStickColor.right} size={14} />
@@ -399,6 +391,8 @@ const MemberPage: React.FC<PageProps> = props => {
                         variant: 'variant0',
                       }}
                       capitalize
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <Translation text={site.title as any} />
                     </TextLink>
@@ -544,7 +538,7 @@ const MemberPage: React.FC<PageProps> = props => {
                       componentElevationKey.componentOnBackground
                     ].boxShadow};
                     width: 110px;
-                    height: 132px;
+                    max-height: 132px;
                     overflow: hidden;
                   `}
                 >

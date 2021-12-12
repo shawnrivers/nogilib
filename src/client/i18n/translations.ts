@@ -691,6 +691,66 @@ const dictionary = {
     ja: 'ベスト',
     zh: '精选',
   },
+  red: {
+    en: 'red',
+    ja: '赤',
+    zh: '红',
+  },
+  yellow: {
+    en: 'yellow',
+    ja: '黄',
+    zh: '黄',
+  },
+  white: {
+    en: 'white',
+    ja: '白',
+    zh: '白',
+  },
+  blue: {
+    en: 'blue',
+    ja: '青',
+    zh: '蓝',
+  },
+  green: {
+    en: 'green',
+    ja: '緑',
+    zh: '绿',
+  },
+  purple: {
+    en: 'purple',
+    ja: '紫',
+    zh: '紫',
+  },
+  black: {
+    en: 'black',
+    ja: '黒',
+    zh: '黑',
+  },
+  pink: {
+    en: 'pink',
+    ja: '桃',
+    zh: '粉',
+  },
+  orange: {
+    en: 'orange',
+    ja: '橙',
+    zh: '橙',
+  },
+  'light blue': {
+    en: 'light blue',
+    ja: '水',
+    zh: '淡蓝',
+  },
+  'yellow green': {
+    en: 'yellow green',
+    ja: '黄緑',
+    zh: '黄绿',
+  },
+  turquoise: {
+    en: 'turquoise',
+    ja: '青緑',
+    zh: '青绿',
+  },
 };
 
 export type DictionaryKey = keyof typeof dictionary;

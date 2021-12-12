@@ -15621,8 +15621,8 @@
     "units": [],
     "corps": [],
     "glowStickColor": {
-      "left": "white",
-      "right": "pink"
+      "left": "pink",
+      "right": "white"
     },
     "sites": [
       {
@@ -15815,8 +15815,8 @@
     "units": [],
     "corps": [],
     "glowStickColor": {
-      "left": "green",
-      "right": "orange"
+      "left": "orange",
+      "right": "green"
     },
     "sites": [
       {
@@ -16203,8 +16203,8 @@
     "units": [],
     "corps": [],
     "glowStickColor": {
-      "left": "red",
-      "right": "light blue"
+      "left": "light blue",
+      "right": "red"
     },
     "sites": [
       {
@@ -16397,8 +16397,8 @@
     "units": [],
     "corps": [],
     "glowStickColor": {
-      "left": "orange",
-      "right": "light blue"
+      "left": "light blue",
+      "right": "orange"
     },
     "sites": [
       {
@@ -17561,8 +17561,8 @@
     "units": [],
     "corps": [],
     "glowStickColor": {
-      "left": "yellow",
-      "right": "pink"
+      "left": "pink",
+      "right": "yellow"
     },
     "sites": [
       {
@@ -17954,7 +17954,7 @@
     "corps": [],
     "glowStickColor": {
       "left": "pink",
-      "right": "light blue"
+      "right": "turquoise"
     },
     "sites": [
       {
@@ -18344,7 +18344,7 @@
     "units": [],
     "corps": [],
     "glowStickColor": {
-      "left": "light blue",
+      "left": "turquoise",
       "right": "white"
     },
     "sites": [

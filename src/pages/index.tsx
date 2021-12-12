@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { Fragment } from 'react';
 import { PageContent } from 'client/components/layout/PageContent';
 import { Typography } from 'client/components/atoms/Typography';

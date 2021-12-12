@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import * as React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { PageContent } from 'client/components/layout/PageContent';
@@ -42,24 +42,26 @@ export const getStaticPaths: GetStaticPaths<PathParams> = async () => {
 
 export type SongPageProps = SongPageData;
 
-export const getStaticProps: GetStaticProps<SongPageProps, PathParams> =
-  async ({ params }) => {
-    const songData = await getSongData();
+export const getStaticProps: GetStaticProps<
+  SongPageProps,
+  PathParams
+> = async ({ params }) => {
+  const songData = await getSongData();
 
-    if (params) {
-      const song = songData.find(song => song.key === params.id);
+  if (params) {
+    const song = songData.find(song => song.key === params.id);
 
-      if (song) {
-        return {
-          props: song,
-        };
-      }
+    if (song) {
+      return {
+        props: song,
+      };
     }
+  }
 
-    return {
-      notFound: true,
-    };
+  return {
+    notFound: true,
   };
+};
 
 const PerformersTag: React.FC<SongPageProps['performersTag']> = props => {
   const { name, album } = props;
@@ -129,8 +131,7 @@ export const SongPage: React.FC<SongPageProps> = props => {
     <>
       <PageHelmet title={title} options={{ textTransform: 'none' }} />
       <PageContent
-        title={{ text: title, lang: 'ja' }}
-        titleTextTransform="initial"
+        title={{ text: title, lang: 'ja', textTransform: 'initial' }}
         subtitle={{
           text: getTranslation('song'),
           lang: locale,
