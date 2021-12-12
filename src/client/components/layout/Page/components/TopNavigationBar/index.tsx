@@ -24,8 +24,9 @@ import { useThemeContext } from 'client/store/theme/hook/useThemeContext';
 import { Language } from 'client/types/language';
 import { getColorVarName } from 'client/styles/tokens/colors';
 
-const settingDropdownId = 'setting-dropdown';
-const settingItemClass = 'setting-item';
+const SETTING_MENU_BUTTON_ID = 'setting-menu-button';
+const SETTING_MENU_ID = 'setting-menu';
+const SETTING_MENU_ITEM_CLASS = 'setting-menu-item';
 
 const SettingHeading: React.FC = props => (
   <Typography
@@ -52,39 +53,40 @@ const SelectionItem = React.forwardRef<SelectionItemRef, SelectionItemProps>(
     const { onClick, isSelected, children, ...buttonProps } = props;
 
     return (
-      <li className={settingItemClass}>
-        <BaseButton
-          onClick={onClick}
-          disabled={isSelected}
+      <BaseButton
+        role="menuitemradio"
+        aria-checked={isSelected}
+        disabled={isSelected}
+        ref={ref}
+        css={css`
+          display: flex;
+          align-items: center;
+          width: 100%;
+        `}
+        className={SETTING_MENU_ITEM_CLASS}
+        onClick={onClick}
+        {...buttonProps}
+      >
+        <RadioCheckIcon
+          isChecked={isSelected}
+          unCheckColor="variant0"
+          checkColor="purple1"
+          width={20}
+          height={20}
+        />
+        <Typography
+          variant="body3"
+          element="span"
           css={css`
-            display: flex;
-            align-items: center;
-            width: 100%;
+            line-height: 24px;
+            height: 24px;
+            margin-left: ${commonStyles.spacing.xs};
+            text-transform: capitalize;
           `}
-          {...buttonProps}
-          ref={ref}
         >
-          <RadioCheckIcon
-            isChecked={isSelected}
-            unCheckColor="variant0"
-            checkColor="purple1"
-            width={20}
-            height={20}
-          />
-          <Typography
-            variant="body3"
-            element="span"
-            css={css`
-              line-height: 24px;
-              height: 24px;
-              margin-left: ${commonStyles.spacing.xs};
-              text-transform: capitalize;
-            `}
-          >
-            {children}
-          </Typography>
-        </BaseButton>
-      </li>
+          {children}
+        </Typography>
+      </BaseButton>
     );
   }
 );
@@ -101,7 +103,7 @@ const Settings: React.FC = () => {
   );
   const componentRef = React.useRef<HTMLDivElement>(null);
   useOnClickOutside(componentRef, hideDropdown);
-  const languageListRef = React.useRef<HTMLUListElement>(null);
+  const languageListRef = React.useRef<HTMLDivElement>(null);
   const settingsButtonRef = React.useRef<BaseButtonRef>(null);
 
   const { themeMode, setTheme } = useThemeContext();
@@ -150,7 +152,7 @@ const Settings: React.FC = () => {
 
     if (isDropdownOpen) {
       const firstSelectableItem = languageListRef.current?.querySelector(
-        `.${settingItemClass} > button:not([disabled])`
+        `.${SETTING_MENU_ITEM_CLASS} > button:not([disabled])`
       ) as HTMLButtonElement | null;
       firstSelectableItem?.focus();
 
@@ -171,11 +173,12 @@ const Settings: React.FC = () => {
       `}
     >
       <BaseButton
-        onClick={switchDropdown}
+        id={SETTING_MENU_BUTTON_ID}
         aria-label={getTranslation('settings')}
-        aria-controls={settingDropdownId}
+        aria-controls={SETTING_MENU_ID}
         aria-haspopup="dialog"
         ref={settingsButtonRef}
+        onClick={switchDropdown}
       >
         <SettingsIcon
           css={css`
@@ -184,6 +187,9 @@ const Settings: React.FC = () => {
         />
       </BaseButton>
       <motion.div
+        id={SETTING_MENU_ID}
+        role="menu"
+        aria-labelledby={SETTING_MENU_BUTTON_ID}
         initial={{ scale: 0, opacity: 0 }}
         style={{ originX: 1, originY: 0 }}
         animate={isDropdownOpen ? 'open' : 'closed'}
@@ -197,11 +203,11 @@ const Settings: React.FC = () => {
           top: calc(${commonStyles.sizes.navigationBarHeight} - 8px);
           min-width: 140px;
         `}
-        id={settingDropdownId}
       >
         <Card elevation={componentElevationKey.dropdown} borderRadius="s">
           <SettingHeading>{getTranslation('languages')}</SettingHeading>
-          <ul
+          <div
+            role="group"
             css={css`
               margin-top: ${commonStyles.spacing.xs};
             `}
@@ -228,7 +234,7 @@ const Settings: React.FC = () => {
             >
               简体中文
             </SelectionItem>
-          </ul>
+          </div>
           <Divider
             lineColor={{ on: 'onSurface', variant: 'variant1' }}
             css={css`
@@ -236,7 +242,8 @@ const Settings: React.FC = () => {
             `}
           />
           <SettingHeading>{getTranslation('color theme')}</SettingHeading>
-          <ul
+          <div
+            role="group"
             css={css`
               margin-top: ${commonStyles.spacing.xs};
             `}
@@ -262,7 +269,7 @@ const Settings: React.FC = () => {
             >
               {getTranslation('auto')}
             </SelectionItem>
-          </ul>
+          </div>
         </Card>
       </motion.div>
     </nav>
