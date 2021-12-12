@@ -10225,6 +10225,22 @@
     ],
     "photoAlbums": [
       {
+        "title": "タイトル未定",
+        "release": "2022-02-08",
+        "type": "photo album",
+        "sites": [
+          {
+            "title": "Twitter",
+            "url": "https://twitter.com/hinakochan_2nd"
+          }
+        ],
+        "cover": {
+          "sm": "/images/photo-albums/kitanohinako_2_959ee4b0-851d-440a-aa2c-73917a7dd2b1_@1x.jpg",
+          "md": "/images/photo-albums/kitanohinako_2_959ee4b0-851d-440a-aa2c-73917a7dd2b1_@2x.jpg",
+          "lg": "/images/photo-albums/kitanohinako_2_959ee4b0-851d-440a-aa2c-73917a7dd2b1_@3x.jpg"
+        }
+      },
+      {
         "title": "空気の色",
         "release": "2018-12-27",
         "type": "photo album",
