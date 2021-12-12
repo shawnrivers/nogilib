@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import * as React from 'react';
 import { Typography } from 'client/components/atoms/Typography';
 import { commonStyles } from 'client/styles/tokens';

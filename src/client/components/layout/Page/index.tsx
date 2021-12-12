@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import * as React from 'react';
 import { TopNavigationBar } from 'client/components/layout/Page/components/TopNavigationBar';
 import { commonStyles } from 'client/styles/tokens';

@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import * as React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { arrayToObject } from 'utils/array';

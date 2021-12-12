@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { EmotionThemeProvider } from 'client/store/emotion/provider';
 import { ThemeContextProvider } from 'client/store/theme/context';
 import { useThemeContext } from 'client/store/theme/hook/useThemeContext';

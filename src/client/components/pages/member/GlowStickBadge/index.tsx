@@ -19,7 +19,7 @@ export type GlowStickBadgeProps = {
 };
 
 export const GlowStickBadge: React.FC<GlowStickBadgeProps> = props => {
-  const { color, size = 24, className } = props;
+  const { color, size = 14, className } = props;
   const { getTranslation } = useTranslations();
 
   return (

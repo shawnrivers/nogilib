@@ -1,4 +1,4 @@
-import { css, Global } from '@emotion/core';
+import { css, Global } from '@emotion/react';
 import * as React from 'react';
 import 'focus-visible';
 import { useDarkModeMediaQuery } from 'client/store/theme/hook/useDarkModeMediaQuery';
