@@ -872,8 +872,8 @@
     },
     "join": "second",
     "graduation": {
-      "isGraduated": false,
-      "graduatedDate": ""
+      "isGraduated": true,
+      "graduatedDate": "2021-12-12"
     },
     "profileImage": {
       "sm": "/images/members/singles/28/teradaranze_82db2677-0fb8-49f2-9f26-3d5bacf37727_@1x.jpg",
