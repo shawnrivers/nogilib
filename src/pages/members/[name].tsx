@@ -361,7 +361,7 @@ const MemberPage: React.FC<PageProps> = props => {
                       color={glowStickColor.left}
                       size={14}
                       css={css`
-                        margin-right: ${commonStyles.spacing.xxs};
+                        margin-right: ${commonStyles.spacing.s};
                       `}
                     />
                     <GlowStickBadge color={glowStickColor.right} size={14} />
