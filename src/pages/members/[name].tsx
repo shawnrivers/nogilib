@@ -276,7 +276,8 @@ const MemberPage: React.FC<PageProps> = props => {
                 display: grid;
                 grid-template-columns: max-content auto;
                 grid-template-rows: auto;
-                grid-gap: ${commonStyles.spacing.s};
+                row-gap: ${commonStyles.spacing.xs};
+                column-gap: ${commonStyles.spacing.s};
                 margin-top: 0.5em;
                 align-items: center;
               `}
