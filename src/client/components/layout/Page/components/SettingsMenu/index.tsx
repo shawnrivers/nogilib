@@ -204,12 +204,6 @@ export const SettingsMenu: React.FC = () => {
   );
 
   React.useEffect(() => {
-    if (!isDropdownOpen) {
-      settingsButtonRef.current?.focus();
-    }
-  }, [isDropdownOpen]);
-
-  React.useEffect(() => {
     // Trap focus when the dropdown is open
     const handleWindowKeyDown = (event: KeyboardEvent) => {
       if (isDropdownOpen) {
