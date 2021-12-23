@@ -50,6 +50,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/junna_ito_official/',
       },
       {
+        title: 'Twitter',
+        url: 'https://twitter.com/itojunna_staff',
+      },
+      {
         title: 'fan club',
         url: 'https://funkeon.com/fanclub/5',
       },
