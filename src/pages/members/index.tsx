@@ -3,7 +3,7 @@ import * as React from 'react';
 import { GetStaticProps } from 'next';
 import { useRouter } from 'next/router';
 import { MembersPageData } from 'db/src/pages/members';
-import { getMembersData } from 'api/members';
+import { getMembersData } from 'client/api/members';
 import { useFilter } from 'client/hooks/useFilter';
 import { MemberResult } from 'db/src/actors/Members/models';
 import { sortByGraduation, sortByJoin, sortByMemberName } from 'utils/sorting';

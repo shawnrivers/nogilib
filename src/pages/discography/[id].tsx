@@ -3,7 +3,7 @@ import * as React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { arrayToObject } from 'utils/array';
 import { AlbumPageData } from 'db/src/pages/album';
-import { getAlbumData } from 'api/album';
+import { getAlbumData } from 'client/api/album';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { Typography } from 'client/components/atoms/Typography';
 import { HorizontalCard } from 'client/components/molecules/cards/HorizontalCard';

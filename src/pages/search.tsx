@@ -2,7 +2,7 @@ import { css } from '@emotion/react';
 import * as React from 'react';
 import { GetStaticProps } from 'next';
 import { useRouter } from 'next/router';
-import { getSearchData } from 'api/search';
+import { getSearchData } from 'client/api/search';
 import { SearchPageData } from 'db/src/pages/search';
 import { useSearchIndex } from 'client/libs/flexSearch/hook';
 import { commonStyles } from 'client/styles/tokens';

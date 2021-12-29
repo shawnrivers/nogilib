@@ -4,7 +4,7 @@ import { css } from '@emotion/react';
 import { useRouter } from 'next/router';
 import { useFilter } from 'client/hooks/useFilter';
 import { getAlbumUrl, getDiscographyUrl } from 'client/utils/url';
-import { getDiscographyData } from 'api/discography';
+import { getDiscographyData } from 'client/api/discography';
 import { DiscographyPageData } from 'db/src/pages/discography';
 import { sortByDate } from 'utils/sorting';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';

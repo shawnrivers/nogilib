@@ -3,7 +3,7 @@ import * as React from 'react';
 import { useRouter } from 'next/router';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { MemberPageData } from 'db/src/pages/member';
-import { getMemberData } from 'api/member';
+import { getMemberData } from 'client/api/member';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { commonStyles } from 'client/styles/tokens';
 import { useIntl } from 'client/i18n/hooks/useIntl';
