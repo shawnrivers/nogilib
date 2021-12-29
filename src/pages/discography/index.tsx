@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { useFilter } from 'client/hooks/useFilter';
 import { getAlbumUrl, getDiscographyUrl } from 'client/utils/url';
 import { getDiscographyData } from 'api/discography';
-import { DiscographyPageData } from 'server/pages/discography';
+import { DiscographyPageData } from 'db/src/pages/discography';
 import { sortByDate } from 'utils/sorting';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { ArtworkCard } from 'client/components/molecules/cards/ArtworkCard';
@@ -62,35 +62,36 @@ type DiscographyPageProps = {
   digitalGroupsByYear: CdGroupByYear[];
 };
 
-export const getStaticProps: GetStaticProps<DiscographyPageProps> =
-  async () => {
-    const discographyData = await getDiscographyData();
+export const getStaticProps: GetStaticProps<
+  DiscographyPageProps
+> = async () => {
+  const discographyData = await getDiscographyData();
 
-    const singlesData = discographyData.filter(cd => cd.type === 'single');
-    const albumsData = discographyData.filter(cd => cd.type === 'album');
-    const digitalsData = discographyData.filter(cd => cd.type === 'digital');
-    const otherCdsData = discographyData.filter(
-      cd => cd.type !== 'single' && cd.type !== 'album' && cd.type !== 'digital'
-    );
-    const allCdGroupsByYear = groupCdsByYear([
-      ...singlesData,
-      ...albumsData,
-      ...digitalsData,
-      ...otherCdsData,
-    ]);
-    const singleGroupsByYear = groupCdsByYear(singlesData);
-    const albumGroupsByYear = groupCdsByYear(albumsData);
-    const digitalGroupsByYear = groupCdsByYear(digitalsData);
+  const singlesData = discographyData.filter(cd => cd.type === 'single');
+  const albumsData = discographyData.filter(cd => cd.type === 'album');
+  const digitalsData = discographyData.filter(cd => cd.type === 'digital');
+  const otherCdsData = discographyData.filter(
+    cd => cd.type !== 'single' && cd.type !== 'album' && cd.type !== 'digital'
+  );
+  const allCdGroupsByYear = groupCdsByYear([
+    ...singlesData,
+    ...albumsData,
+    ...digitalsData,
+    ...otherCdsData,
+  ]);
+  const singleGroupsByYear = groupCdsByYear(singlesData);
+  const albumGroupsByYear = groupCdsByYear(albumsData);
+  const digitalGroupsByYear = groupCdsByYear(digitalsData);
 
-    return {
-      props: {
-        allCdGroupsByYear,
-        singleGroupsByYear,
-        albumGroupsByYear,
-        digitalGroupsByYear,
-      },
-    };
+  return {
+    props: {
+      allCdGroupsByYear,
+      singleGroupsByYear,
+      albumGroupsByYear,
+      digitalGroupsByYear,
+    },
   };
+};
 
 const DiscographyPage: React.FC<DiscographyPageProps> = props => {
   const {

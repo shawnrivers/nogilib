@@ -1,5 +1,5 @@
-import { AlbumPageData } from 'server/pages/album';
+import { AlbumPageData } from 'db/src/pages/album';
 
 export async function getAlbumData(): Promise<AlbumPageData[]> {
-  return (await import('data/album.json')).default as AlbumPageData[];
+  return (await import('db/result/album.json')).default as AlbumPageData[];
 }

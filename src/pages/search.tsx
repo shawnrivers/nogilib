@@ -3,7 +3,7 @@ import * as React from 'react';
 import { GetStaticProps } from 'next';
 import { useRouter } from 'next/router';
 import { getSearchData } from 'api/search';
-import { SearchPageData } from 'server/pages/search';
+import { SearchPageData } from 'db/src/pages/search';
 import { useSearchIndex } from 'client/libs/flexSearch/hook';
 import { commonStyles } from 'client/styles/tokens';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';

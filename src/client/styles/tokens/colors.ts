@@ -1,4 +1,4 @@
-import { GlowStickColor } from 'server/actors/Members/types';
+import { GlowStickColor } from 'db/src/actors/Members/types';
 
 export type GlobalColorKey =
   | 'white'

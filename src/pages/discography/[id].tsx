@@ -2,7 +2,7 @@ import { css } from '@emotion/react';
 import * as React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { arrayToObject } from 'utils/array';
-import { AlbumPageData } from 'server/pages/album';
+import { AlbumPageData } from 'db/src/pages/album';
 import { getAlbumData } from 'api/album';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { Typography } from 'client/components/atoms/Typography';

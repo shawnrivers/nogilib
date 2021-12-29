@@ -1,6 +1,6 @@
-import { Generation, MemberNameKey } from 'server/actors/Members/types';
-import { MemberResult } from 'server/actors/Members/models';
-import { Site } from 'server/types/commons';
+import { Generation, MemberNameKey } from 'db/src/actors/Members/types';
+import { MemberResult } from 'db/src/actors/Members/models';
+import { Site } from 'db/src/types/commons';
 
 type SortOrder = 'asc' | 'desc';
 

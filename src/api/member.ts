@@ -1,5 +1,5 @@
-import { MemberPageData } from 'server/pages/member';
+import { MemberPageData } from 'db/src/pages/member';
 
 export async function getMemberData(): Promise<MemberPageData[]> {
-  return (await import('data/member.json')).default as MemberPageData[];
+  return (await import('db/result/member.json')).default as MemberPageData[];
 }

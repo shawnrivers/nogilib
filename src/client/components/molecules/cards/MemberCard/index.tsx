@@ -6,12 +6,12 @@ import {
   TypographyProps,
 } from 'client/components/atoms/Typography';
 import { Card, CardProps } from 'client/components/atoms/Card';
-import { Position } from 'server/actors/Members/types';
+import { Position } from 'db/src/actors/Members/types';
 import { commonStyles } from 'client/styles/tokens';
 import { BORDER_RADIUS } from 'client/styles/tokens/borderRadius';
 import { POSITION_STYLES } from 'client/styles/positionStyles';
 import { getColorVarName } from 'client/styles/tokens/colors';
-import { ImageUrl } from 'server/types/commons';
+import { ImageUrl } from 'db/src/types/commons';
 import { AspectRatioImage } from 'client/components/atoms/image/AspectRatioImage';
 
 const PositionBadge: React.FC<{
