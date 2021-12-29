@@ -1,10 +1,10 @@
-import {
-  complementImageFilePathname,
-  findPathname,
-  getPath,
-  getResponsiveImageUrls,
-} from 'db/src/utils/path';
+import * as path from 'path';
 import { MemberRaw } from 'db/src/actors/Members/models';
+import {
+  convertPathnameToClientStaticFileUrl,
+  findFilePathname,
+  getResponsiveImageUrl,
+} from 'db/src/utils/path';
 import { sortBySocialMedia } from 'utils/sorting';
 
 type CreateMemberRawParams = {
@@ -82,23 +82,24 @@ export const createMemberRaw = (
         : params.sites,
     photoAlbums:
       params.photoAlbums?.map(photoAlbum => {
-        const dirname = complementImageFilePathname('/images/photo-albums');
-        const pathname = findPathname(
-          dirname,
-          photoAlbum.cover?.replace('photo-albums/', '').replace('.jpg', '') ??
-            'photo_album_no_image'
+        const pathname = findFilePathname(
+          path.join('public', 'images', 'photo-albums'),
+          photoAlbum.cover ?? 'photo_album_no_image'
         );
-        const path = getPath(pathname ?? '');
+
+        if (pathname === null) {
+          throw new Error(
+            'The fallback photo album image file might have been lost or renamed.'
+          );
+        }
 
         return {
           title: photoAlbum.title,
           release: photoAlbum.release,
           type: photoAlbum.type,
           sites: photoAlbum.sites ?? [],
-          cover: getResponsiveImageUrls(
-            pathname !== null
-              ? `photo-albums/${path.filename}${path.extension}`
-              : ''
+          cover: getResponsiveImageUrl(
+            convertPathnameToClientStaticFileUrl(pathname)
           ),
         };
       }) ?? [],

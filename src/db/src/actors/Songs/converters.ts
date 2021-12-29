@@ -1,15 +1,15 @@
-import { NO_ARTWORK_IMAGE_FILENAME } from 'db/src/constants/paths';
-import {
-  complementImageFilePathname,
-  convertImageFilePath,
-  findPathname,
-  getResponsiveImageUrls,
-} from 'db/src/utils/path';
-import { SongResult, SongRaw } from 'db/src/actors/Songs/models';
+import * as path from 'path';
 import {
   DiscographyRawArray,
   DiscographyRawObject,
 } from 'db/src/actors/Discography/models';
+import { SongRaw, SongResult } from 'db/src/actors/Songs/models';
+import { NO_ARTWORK_IMAGE_FILENAME } from 'db/src/constants/paths';
+import {
+  convertPathnameToClientStaticFileUrl,
+  findFilePathname,
+  getResponsiveImageUrl,
+} from 'db/src/utils/path';
 import { sortByDate } from 'utils/sorting';
 
 type ConvertSongSingle = (params: {
@@ -112,11 +112,13 @@ export const convertSongArtwork: ConvertSongArtwork = ({
   albumsRawObject,
   otherCdsRawObject,
 }) => {
-  const noArtworkUrl = getResponsiveImageUrls(
-    findPathname(
-      complementImageFilePathname('/images/artworks/'),
-      NO_ARTWORK_IMAGE_FILENAME
-    ) ?? ''
+  const noArtworkUrl = getResponsiveImageUrl(
+    convertPathnameToClientStaticFileUrl(
+      findFilePathname(
+        path.join('public', '/images/artworks/'),
+        NO_ARTWORK_IMAGE_FILENAME
+      ) ?? ''
+    )
   );
 
   if (songSingleResult.title !== '') {
@@ -129,9 +131,9 @@ export const convertSongArtwork: ConvertSongArtwork = ({
         )?.url;
 
         return {
-          sm: convertImageFilePath(artworkUrlInSingle?.sm ?? noArtworkUrl.sm),
-          md: convertImageFilePath(artworkUrlInSingle?.md ?? noArtworkUrl.md),
-          lg: convertImageFilePath(artworkUrlInSingle?.lg ?? noArtworkUrl.lg),
+          sm: artworkUrlInSingle?.sm ?? noArtworkUrl.sm,
+          md: artworkUrlInSingle?.md ?? noArtworkUrl.md,
+          lg: artworkUrlInSingle?.lg ?? noArtworkUrl.lg,
         };
       }
     }
@@ -150,9 +152,9 @@ export const convertSongArtwork: ConvertSongArtwork = ({
         )?.url;
 
         return {
-          sm: convertImageFilePath(artworkUrlInOtherCd?.sm ?? noArtworkUrl.sm),
-          md: convertImageFilePath(artworkUrlInOtherCd?.md ?? noArtworkUrl.md),
-          lg: convertImageFilePath(artworkUrlInOtherCd?.lg ?? noArtworkUrl.lg),
+          sm: artworkUrlInOtherCd?.sm ?? noArtworkUrl.sm,
+          md: artworkUrlInOtherCd?.md ?? noArtworkUrl.md,
+          lg: artworkUrlInOtherCd?.lg ?? noArtworkUrl.lg,
         };
       }
     }
@@ -169,18 +171,18 @@ export const convertSongArtwork: ConvertSongArtwork = ({
         )?.url;
 
         return {
-          sm: convertImageFilePath(artworkUrlInAlbum?.sm ?? noArtworkUrl.sm),
-          md: convertImageFilePath(artworkUrlInAlbum?.md ?? noArtworkUrl.md),
-          lg: convertImageFilePath(artworkUrlInAlbum?.lg ?? noArtworkUrl.lg),
+          sm: artworkUrlInAlbum?.sm ?? noArtworkUrl.sm,
+          md: artworkUrlInAlbum?.md ?? noArtworkUrl.md,
+          lg: artworkUrlInAlbum?.lg ?? noArtworkUrl.lg,
         };
       }
     }
   }
 
   return {
-    sm: convertImageFilePath(noArtworkUrl.sm),
-    md: convertImageFilePath(noArtworkUrl.md),
-    lg: convertImageFilePath(noArtworkUrl.lg),
+    sm: noArtworkUrl.sm,
+    md: noArtworkUrl.md,
+    lg: noArtworkUrl.lg,
   };
 };
 

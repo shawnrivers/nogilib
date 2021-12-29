@@ -1,16 +1,18 @@
-import {
-  complementImageFilePathname,
-  convertImageFilePath,
-  findPathname,
-  getPath,
-  getResponsiveImageUrls,
-} from 'db/src/utils/path';
-import { KOJIHARU_IMAGE_FILENAME } from 'db/src/constants/paths';
+import * as path from 'path';
 import { Members } from 'db/src/actors/Members';
 import { MemberResult } from 'db/src/actors/Members/models';
 import { Songs } from 'db/src/actors/Songs';
 import { SongResult } from 'db/src/actors/Songs/models';
+import {
+  KOJIHARU_IMAGE_FILENAME,
+  NO_PROFILE_IMAGE_FILENAME,
+} from 'db/src/constants/paths';
 import { ImageUrl } from 'db/src/types/commons';
+import {
+  convertPathnameToClientStaticFileUrl,
+  findFilePathname,
+  getResponsiveImageUrl,
+} from 'db/src/utils/path';
 import { arrayToObject } from 'utils/array';
 
 export type SongPageData = {
@@ -111,9 +113,21 @@ function getSongPerformers(
             isMember: true,
           };
         } else {
-          const dirname = complementImageFilePathname('/images/members/others');
-          const pathname = findPathname(dirname, KOJIHARU_IMAGE_FILENAME);
-          const path = getPath(pathname ?? '');
+          const pathname =
+            findFilePathname(
+              path.join('public', 'images', 'members', 'others'),
+              KOJIHARU_IMAGE_FILENAME
+            ) ??
+            findFilePathname(
+              path.join('public', 'images', 'members'),
+              NO_PROFILE_IMAGE_FILENAME
+            );
+
+          if (pathname === null) {
+            throw new Error(
+              "Kojima Haruna's profile image and the fallback profile image file might have been lost or renamed."
+            );
+          }
 
           return {
             name: 'kojimaharuna',
@@ -125,10 +139,8 @@ function getSongPerformers(
               firstNameEn: 'haruna',
               firstNameFurigana: 'はるな',
             },
-            profileImage: getResponsiveImageUrls(
-              convertImageFilePath(
-                `/images/members/others/${path.filename}${path.extension}`
-              )
+            profileImage: getResponsiveImageUrl(
+              convertPathnameToClientStaticFileUrl(pathname)
             ),
             position: getPerformerPosition(song, 'kojimaharuna'),
             isMember: false,

@@ -1,23 +1,22 @@
-// import * as fs from 'fs';
-import { NO_ARTWORK_IMAGE_FILENAME } from 'db/src/constants/paths';
+import * as path from 'path';
 import {
-  complementImageFilePathname,
-  convertImageFilePath,
-  findPathname,
-  getPath,
-  getResponsiveImageUrls,
-} from 'db/src/utils/path';
-import {
+  AlbumTitle,
   CDS,
   CdTitle,
-  SingleTitle,
-  AlbumTitle,
   OtherCdTitle,
+  SingleTitle,
 } from 'db/src/actors/Discography/constants/cdTitle';
 import { DiscographyRaw } from 'db/src/actors/Discography/models';
 import { CdType, OtherCdKind } from 'db/src/actors/Discography/types';
+import { NO_ARTWORK_IMAGE_FILENAME } from 'db/src/constants/paths';
+import { ImageUrl } from 'db/src/types/commons';
+import {
+  convertPathnameToClientStaticFileUrl,
+  findFilePathname,
+  getResponsiveImageUrl,
+} from 'db/src/utils/path';
 
-export const convertCdArtwork = ({
+export const convertCdArtworkUrl = ({
   cdHasArtworks,
   cdNumber,
   cdArtworkType,
@@ -27,40 +26,41 @@ export const convertCdArtwork = ({
   cdNumber: DiscographyRaw['number'];
   cdArtworkType: CdType;
   cdKind: DiscographyRaw['type'];
-}): string => {
-  let imageSrcBasePath = '';
+}): ImageUrl => {
+  let imageTypeSubPath = '';
 
   switch (cdKind) {
     case 'single':
-      imageSrcBasePath = 'artworks/singles';
+      imageTypeSubPath = 'singles';
       break;
     case 'album':
-      imageSrcBasePath = 'artworks/albums';
+      imageTypeSubPath = 'albums';
       break;
     case 'digital':
-      imageSrcBasePath = 'artworks/digital';
-      break;
-    default:
-      imageSrcBasePath = '';
+      imageTypeSubPath = 'digital';
       break;
   }
 
-  const dirname = complementImageFilePathname(
-    `/images/${imageSrcBasePath}/${cdNumber}/`
-  );
-  const pathname = cdHasArtworks ? findPathname(dirname, cdArtworkType) : null;
+  const pathname = cdHasArtworks
+    ? findFilePathname(
+        path.join('public', 'images', 'artworks', imageTypeSubPath, cdNumber),
+        cdArtworkType
+      ) ?? null
+    : null;
 
   if (pathname !== null) {
-    const path = getPath(pathname);
-    return `${imageSrcBasePath}/${cdNumber}/${path.filename}${path.extension}`;
-  } else {
-    const path = getPath(
-      findPathname(
-        complementImageFilePathname('/images/artworks/'),
-        NO_ARTWORK_IMAGE_FILENAME
-      ) ?? ''
+    return getResponsiveImageUrl(
+      convertPathnameToClientStaticFileUrl(pathname)
     );
-    return `artworks/${path.filename}${path.extension}`;
+  } else {
+    const pathname =
+      findFilePathname(
+        path.join('public', 'images', 'artworks'),
+        NO_ARTWORK_IMAGE_FILENAME
+      ) ?? '';
+    return getResponsiveImageUrl(
+      convertPathnameToClientStaticFileUrl(pathname)
+    );
   }
 };
 
@@ -75,20 +75,16 @@ const convertCdArtworks = ({
   cdNumber: DiscographyRaw['number'];
   cdKind: DiscographyRaw['type'];
 }): DiscographyRaw['artworks'] => {
-  const artworksResult = [];
+  const artworksResult: DiscographyRaw['artworks'] = [];
 
   for (const cdArtworkType of cdArtworkTypes) {
     artworksResult.push({
-      url: getResponsiveImageUrls(
-        convertImageFilePath(
-          convertCdArtwork({
-            cdHasArtworks,
-            cdNumber,
-            cdArtworkType,
-            cdKind,
-          })
-        )
-      ),
+      url: convertCdArtworkUrl({
+        cdHasArtworks,
+        cdNumber,
+        cdArtworkType,
+        cdKind,
+      }),
       type: cdArtworkType,
     });
   }

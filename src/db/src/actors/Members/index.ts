@@ -122,7 +122,7 @@ export class Members {
       bloodType: memberRaw.bloodType,
       origin: memberRaw.origin,
       sites: memberRaw.sites,
-      photoAlbums: MemberConverters.convertPhotoAlbums(memberRaw.photoAlbums),
+      photoAlbums: memberRaw.photoAlbums,
       units: MemberConverters.convertMemberUnits({
         memberName: memberRaw.name,
         unitsRawArray,

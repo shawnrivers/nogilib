@@ -6,22 +6,24 @@ export const appendString = (original: string, appendant: string): string =>
   `${original}_${appendant}`;
 
 /**
- * Convert the image file path to a relative path for Next asset filesystem
- * @param pathname Image path like `"photo-albums/akimotomanatsu_1.jpg"`
+ * Convert Node file system file pathname to URL that is accessible from the client side.
+ * @param pathname pathname in the file system
+ * @returns URL to access on the client
+ *
+ * @example
+ * convertPathnameToClientStaticFileUrl('./public/images/singles/28/saitouasuka-xxx_@1x.jpg');
+ * // returns '/images/singles/28/saitouasuka-xxx_@1x.jpg'
  */
-export function convertImageFilePath(pathname: string): string {
-  if (pathname.startsWith('/images/')) {
-    return pathname;
+export const convertPathnameToClientStaticFileUrl = (
+  pathname: string
+): string => {
+  const [firstSubPath, ...restSubPaths] = path
+    .normalize(pathname)
+    .split(path.sep);
+  if (firstSubPath === 'public') {
+    return `/${restSubPaths.join('/')}`;
   }
-
-  return `/images/${pathname}`;
-}
-
-export const complementImageFilePathname = (pathname: string): string => {
-  if (pathname.startsWith('./public/')) {
-    return pathname;
-  }
-  return path.join('./public', convertImageFilePath(pathname));
+  return `/${[firstSubPath, ...restSubPaths].join('/')}`;
 };
 
 type Path = {
@@ -38,11 +40,11 @@ export const getPath = (pathname: string): Path => {
   return { dirname, extension, filename };
 };
 
-export const getPathname = (path: Path): string =>
-  `${path.dirname}/${path.filename}${path.extension}`;
+export const getPathname = (filePath: Path): string =>
+  path.join(filePath.dirname, `${filePath.filename}${filePath.extension}`);
 
-export const getResponsiveImageUrls = (path: string): ImageUrl => {
-  const { dirname, extension, filename } = getPath(path);
+export const getResponsiveImageUrl = (pathname: string): ImageUrl => {
+  const { dirname, extension, filename } = getPath(pathname);
 
   return {
     sm: getPathname({
@@ -69,7 +71,10 @@ export const getResponsiveImageUrls = (path: string): ImageUrl => {
   };
 };
 
-export const findPathname = (dir: string, pattern: string): string | null => {
+export const findFilePathname = (
+  dir: string,
+  pattern: string
+): string | null => {
   if (!fs.existsSync(dir)) {
     return null;
   }

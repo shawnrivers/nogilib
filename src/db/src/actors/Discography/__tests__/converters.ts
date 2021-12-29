@@ -2,7 +2,7 @@ import {
   convertCdSongFocusPerformers,
   convertCdSongType,
 } from 'db/src/actors/Discography/converters';
-import { convertCdArtwork } from 'db/src/actors/Discography/raw/creators';
+import { convertCdArtworkUrl } from 'db/src/actors/Discography/raw/creators';
 import { Members } from 'db/src/actors/Members';
 import { membersRawArray } from 'db/src/actors/Members/raw';
 import { Songs } from 'db/src/actors/Songs';
@@ -14,42 +14,42 @@ const membersRawObject = new Members(membersRawArray).rawObject;
 describe('convertCdArtwork', () => {
   test('should return correspond image path when image exists in the file system', () => {
     expect(
-      convertCdArtwork({
+      convertCdArtworkUrl({
         cdHasArtworks: true,
         cdNumber: '25',
         cdArtworkType: 'A',
         cdKind: 'single',
-      })
+      }).lg
     ).toMatch(/artworks\/singles\/25\/A.*/);
   });
 
   test('should return no artwork image path when cdHasArtworks flag is false', () => {
     expect(
-      convertCdArtwork({
+      convertCdArtworkUrl({
         cdHasArtworks: false,
         cdNumber: '100',
         cdArtworkType: 'A',
         cdKind: 'single',
-      })
+      }).lg
     ).toMatch(/artworks\/artwork_no_image.*/);
     expect(
-      convertCdArtwork({
+      convertCdArtworkUrl({
         cdHasArtworks: false,
         cdNumber: '25',
         cdArtworkType: 'A',
         cdKind: 'single',
-      })
+      }).lg
     ).toMatch(/artworks\/artwork_no_image.*/);
   });
 
   test("should return no artwork image path when image doesn't exist in the file system", () => {
     expect(
-      convertCdArtwork({
+      convertCdArtworkUrl({
         cdHasArtworks: true,
         cdNumber: '100',
         cdArtworkType: 'A',
         cdKind: 'single',
-      })
+      }).lg
     ).toMatch(/artworks\/artwork_no_image.*/);
   });
 });

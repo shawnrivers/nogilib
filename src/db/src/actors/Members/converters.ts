@@ -1,10 +1,10 @@
 import * as fs from 'fs';
+import * as path from 'path';
 import {
-  convertImageFilePath,
-  getResponsiveImageUrls,
+  getResponsiveImageUrl,
   getPath,
-  complementImageFilePathname,
-  findPathname,
+  findFilePathname,
+  convertPathnameToClientStaticFileUrl,
 } from 'db/src/utils/path';
 import {
   MemberResult,
@@ -20,30 +20,24 @@ import {
 } from 'db/src/actors/Discography/models';
 import { sortByDate } from 'utils/sorting';
 import { Position } from 'db/src/actors/Members/types';
+import { ImageUrl } from 'db/src/types/commons';
 
 type GalleryWithDate = {
-  url: string;
+  url: ImageUrl;
   date: string;
 }[];
 
 function getProfileImageTypeFolderName(
   discographyType: DiscographyRaw['type']
 ): string {
-  let profileImageTypeFolderName: string;
-
   switch (discographyType) {
     case 'single':
-      profileImageTypeFolderName = 'singles';
-      break;
+      return 'singles';
     case 'album':
-      profileImageTypeFolderName = 'albums';
-      break;
+      return 'albums';
     case 'digital':
-      profileImageTypeFolderName = 'digital';
-      break;
+      return 'digital';
   }
-
-  return profileImageTypeFolderName;
 }
 
 function getDiscographyGalleryWithDate(params: {
@@ -60,15 +54,21 @@ function getDiscographyGalleryWithDate(params: {
 
   for (let i = 0; i < discographyRawArray.length; i++) {
     const albumNumber = discographyRawArray[i].number;
-
-    const dirname = complementImageFilePathname(
-      `/images/members/${profileImageTypeFolderName}/${albumNumber}/`
+    const pathname = findFilePathname(
+      path.join(
+        'public',
+        'images',
+        'members',
+        profileImageTypeFolderName,
+        albumNumber
+      ),
+      memberName
     );
-    const pathname = findPathname(dirname, memberName);
     if (pathname !== null) {
-      const path = getPath(pathname);
       discographyGallery.push({
-        url: `members/${profileImageTypeFolderName}/${albumNumber}/${path.filename}${path.extension}`,
+        url: getResponsiveImageUrl(
+          convertPathnameToClientStaticFileUrl(pathname)
+        ),
         date: discographyRawArray[i].release,
       });
     }
@@ -104,7 +104,16 @@ function getOtherGalleryWithDate(
   return otherProfileImagesFileNameWithDate
     .filter(fileNameWithDate => fileNameWithDate.memberName === memberName)
     .map(fileNameWithDate => ({
-      url: `members/others/${fileNameWithDate.filePathname}`,
+      url: getResponsiveImageUrl(
+        convertPathnameToClientStaticFileUrl(
+          path.join(
+            'images',
+            'members',
+            'others',
+            fileNameWithDate.filePathname
+          )
+        )
+      ),
       date: fileNameWithDate.date,
     }));
 }
@@ -129,11 +138,22 @@ function getDiscographyProfileImages(params: {
     const album = sortedDiscographyRawArray[i];
     const albumNumber = album.number;
 
-    const albumProfileImageSrc = `members/${profileImageTypeFolderName}/${albumNumber}/${memberName}.jpg`;
+    const matchedPathname = findFilePathname(
+      path.join(
+        'public',
+        'images',
+        'members',
+        profileImageTypeFolderName,
+        albumNumber
+      ),
+      memberName
+    );
 
-    if (fs.existsSync('./public/images/' + albumProfileImageSrc)) {
+    if (matchedPathname !== null) {
       discographyGallery.push({
-        url: getResponsiveImageUrls(albumProfileImageSrc),
+        url: getResponsiveImageUrl(
+          convertPathnameToClientStaticFileUrl(matchedPathname)
+        ),
         number: albumNumber,
       });
     } else {
@@ -148,7 +168,7 @@ function getDiscographyProfileImages(params: {
         if (j === 0) {
           if (albumReleaseDate >= currentProfileImageDate) {
             discographyGallery.push({
-              url: getResponsiveImageUrls(currentProfileImage.url),
+              url: currentProfileImage.url,
               number: albumNumber,
             });
             break;
@@ -156,7 +176,7 @@ function getDiscographyProfileImages(params: {
 
           if (sortedGallery.length === 1) {
             discographyGallery.push({
-              url: getResponsiveImageUrls(currentProfileImage.url),
+              url: currentProfileImage.url,
               number: albumNumber,
             });
             break;
@@ -172,14 +192,14 @@ function getDiscographyProfileImages(params: {
             albumReleaseDate >= currentProfileImageDate
           ) {
             discographyGallery.push({
-              url: getResponsiveImageUrls(currentProfileImage.url),
+              url: currentProfileImage.url,
               number: albumNumber,
             });
             break;
           } else {
             if (j === sortedGallery.length - 1) {
               discographyGallery.push({
-                url: getResponsiveImageUrls(currentProfileImage.url),
+                url: currentProfileImage.url,
                 number: albumNumber,
               });
               break;
@@ -248,47 +268,11 @@ export function convertProfileImages(params: {
   });
 
   return {
-    gallery: galleryWithDate.map(image =>
-      getResponsiveImageUrls(convertImageFilePath(image.url))
-    ),
-    singles: singles.map(cd => ({
-      ...cd,
-      url: {
-        sm: convertImageFilePath(cd.url.sm),
-        md: convertImageFilePath(cd.url.md),
-        lg: convertImageFilePath(cd.url.lg),
-      },
-    })),
-    albums: albums.map(cd => ({
-      ...cd,
-      url: {
-        sm: convertImageFilePath(cd.url.sm),
-        md: convertImageFilePath(cd.url.md),
-        lg: convertImageFilePath(cd.url.lg),
-      },
-    })),
-    digital: digital.map(cd => ({
-      ...cd,
-      url: {
-        sm: convertImageFilePath(cd.url.sm),
-        md: convertImageFilePath(cd.url.md),
-        lg: convertImageFilePath(cd.url.lg),
-      },
-    })),
+    gallery: galleryWithDate.map(image => image.url),
+    singles,
+    albums,
+    digital,
   };
-}
-
-export function convertPhotoAlbums(
-  photoAlbums: MemberRaw['photoAlbums']
-): MemberResult['photoAlbums'] {
-  return photoAlbums.map(photoAlbum => ({
-    ...photoAlbum,
-    cover: {
-      sm: convertImageFilePath(photoAlbum.cover.sm),
-      md: convertImageFilePath(photoAlbum.cover.md),
-      lg: convertImageFilePath(photoAlbum.cover.lg),
-    },
-  }));
 }
 
 type ConvertMemberUnits = (params: {
