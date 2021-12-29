@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 import * as React from 'react';
-import { Position } from 'server/actors/Members/types';
+import { Position } from 'db/src/actors/Members/types';
 import { commonStyles } from 'client/styles/tokens';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { Typography } from 'client/components/atoms/Typography';

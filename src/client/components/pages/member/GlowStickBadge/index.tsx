@@ -4,7 +4,7 @@ import {
   getElevationWhiteOverlayTransparencyVarName,
 } from 'client/styles/tokens/elevation';
 import { commonStyles } from 'client/styles/tokens';
-import { GlowStickColor } from 'server/actors/Members/types';
+import { GlowStickColor } from 'db/src/actors/Members/types';
 import {
   getColorVarName,
   getGlowStickColorVarName,

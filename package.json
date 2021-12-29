@@ -12,7 +12,7 @@
     "type-check:server": "tsc -b tsconfig-server.json",
     "type-check-watch": "tsc --watch",
     "type-check-watch:server": "tsc -b tsconfig-server.json --watch",
-    "generate-data": "NODE_PATH=./src ts-node --project tsconfig-server.json src/server/app.ts",
+    "generate-data": "NODE_PATH=./src ts-node --project tsconfig-server.json src/db/src/main.ts",
     "generate-responsive-images": "cd ./scripts && npm run generate-responsive-images",
     "download-profile-images": "cd ./scripts && npm run download-profile-images",
     "lint": "eslint --ignore-path .gitignore . --ext ts,tsx,js,jsx",

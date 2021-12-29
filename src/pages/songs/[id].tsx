@@ -12,8 +12,8 @@ import { InfoItemLabel } from 'client/components/molecules/typography/info/InfoI
 import { InfoItemValue } from 'client/components/molecules/typography/info/InfoItemValue';
 import { SectionSubtitle } from 'client/components/molecules/typography/SectionSubtitle';
 import { PageHelmet } from 'client/components/layout/PageHelmet';
-import { getSongData } from 'api/song';
-import { SongPageData } from 'server/pages/song';
+import { getSongData } from 'client/api/song';
+import { SongPageData } from 'db/src/pages/song';
 import { getMemberUrl } from 'client/utils/url';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { AspectRatioImage } from 'client/components/atoms/image/AspectRatioImage';

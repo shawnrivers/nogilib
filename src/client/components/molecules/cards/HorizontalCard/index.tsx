@@ -6,7 +6,7 @@ import {
   Typography,
   TypographyProps,
 } from 'client/components/atoms/Typography';
-import { ImageUrl } from 'server/types/commons';
+import { ImageUrl } from 'db/src/types/commons';
 import { AspectRatioImage } from 'client/components/atoms/image/AspectRatioImage';
 
 export type HorizontalCardProps = Omit<CardProps, 'children' | 'title'> & {

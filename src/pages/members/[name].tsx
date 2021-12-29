@@ -2,8 +2,8 @@ import { css } from '@emotion/react';
 import * as React from 'react';
 import { useRouter } from 'next/router';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { getMemberData } from 'api/member';
-import { MemberPageData } from 'server/pages/member';
+import { MemberPageData } from 'db/src/pages/member';
+import { getMemberData } from 'client/api/member';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { commonStyles } from 'client/styles/tokens';
 import { useIntl } from 'client/i18n/hooks/useIntl';
@@ -21,7 +21,7 @@ import {
   PositionBadgeProps,
 } from 'client/components/pages/member/PositionBadge';
 import { PageContent } from 'client/components/layout/PageContent';
-import { Position } from 'server/actors/Members/types';
+import { Position } from 'db/src/actors/Members/types';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { Divider } from 'client/components/atoms/Divider';
 import { filterDuplicate } from 'utils/array';

@@ -69,8 +69,7 @@
 
     .
     ├── src
-    ├──── data
-    ├──── server
+    ├──── db
     ├──── client
     ├──── pages
     ├──── utils
@@ -78,11 +77,8 @@
 
 - **`public`**
   - Public assets in the app (e.g., images)
-- **`src/data`**
-  - Data to statically generate the app
-- **`src/server`**
-  - Codes for generating data
-  - Data will be generated in `src/data`
+- **`src/db`**
+  - Data generation
 - **`src/client`**
   - Client side codes
 - **`src/pages`**
