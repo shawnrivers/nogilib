@@ -115,7 +115,7 @@ export const convertSongArtwork: ConvertSongArtwork = ({
   const noArtworkUrl = getResponsiveImageUrl(
     convertPathnameToClientStaticFileUrl(
       findFilePathname(
-        path.join('public', '/images/artworks/'),
+        path.join('public', 'images', 'artworks'),
         NO_ARTWORK_IMAGE_FILENAME
       ) ?? ''
     )
@@ -126,15 +126,11 @@ export const convertSongArtwork: ConvertSongArtwork = ({
 
     for (const singleSong of single.songs) {
       if (singleSong.title === songTitle) {
-        const artworkUrlInSingle = single.artworks.find(
-          artwork => artwork.type === singleSong.inCdType[0]
-        )?.url;
-
-        return {
-          sm: artworkUrlInSingle?.sm ?? noArtworkUrl.sm,
-          md: artworkUrlInSingle?.md ?? noArtworkUrl.md,
-          lg: artworkUrlInSingle?.lg ?? noArtworkUrl.lg,
-        };
+        return (
+          single.artworks.find(
+            artwork => artwork.type === singleSong.inCdType[0]
+          )?.url ?? noArtworkUrl
+        );
       }
     }
   }
@@ -147,15 +143,11 @@ export const convertSongArtwork: ConvertSongArtwork = ({
 
     for (const otherCdSong of otherCd.songs) {
       if (otherCdSong.title === songTitle) {
-        const artworkUrlInOtherCd = otherCd.artworks.find(
-          artwork => artwork.type === otherCdSong.inCdType[0]
-        )?.url;
-
-        return {
-          sm: artworkUrlInOtherCd?.sm ?? noArtworkUrl.sm,
-          md: artworkUrlInOtherCd?.md ?? noArtworkUrl.md,
-          lg: artworkUrlInOtherCd?.lg ?? noArtworkUrl.lg,
-        };
+        return (
+          otherCd.artworks.find(
+            artwork => artwork.type === otherCdSong.inCdType[0]
+          )?.url ?? noArtworkUrl
+        );
       }
     }
   }
@@ -166,24 +158,15 @@ export const convertSongArtwork: ConvertSongArtwork = ({
 
     for (const albumSong of album.songs) {
       if (albumSong.title === songTitle) {
-        const artworkUrlInAlbum = album.artworks.find(
-          artwork => artwork.type === albumSong.inCdType[0]
-        )?.url;
-
-        return {
-          sm: artworkUrlInAlbum?.sm ?? noArtworkUrl.sm,
-          md: artworkUrlInAlbum?.md ?? noArtworkUrl.md,
-          lg: artworkUrlInAlbum?.lg ?? noArtworkUrl.lg,
-        };
+        return (
+          album.artworks.find(artwork => artwork.type === albumSong.inCdType[0])
+            ?.url ?? noArtworkUrl
+        );
       }
     }
   }
 
-  return {
-    sm: noArtworkUrl.sm,
-    md: noArtworkUrl.md,
-    lg: noArtworkUrl.lg,
-  };
+  return noArtworkUrl;
 };
 
 export const convertSongType = (type: SongRaw['type']): SongResult['type'] =>
