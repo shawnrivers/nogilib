@@ -121,6 +121,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         cover: 'ikutaerika_mb',
       },
     ],
+    graduatedDate: '2021-12-31',
   }),
   createMemberRaw({
     name: 'ikomarina',
