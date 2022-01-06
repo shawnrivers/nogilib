@@ -71,12 +71,16 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/ikutaerika.official/',
       },
       {
+        title: 'official',
+        url: 'https://erikaikuta.jp/',
+      },
+      {
         title: 'blog',
         url: 'https://blog.nogizaka46.com/erika.ikuta/',
       },
       {
         title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/ikutaerika.php',
+        url: 'https://www.ohtapro.co.jp/talent/ikutaerika/',
       },
       {
         title: '755',
