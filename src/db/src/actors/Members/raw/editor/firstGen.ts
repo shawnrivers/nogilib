@@ -70,6 +70,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: 'Instagram',
         url: 'https://www.instagram.com/ikutaerika.official/',
       },
+      { title: 'Twitter', url: 'https://twitter.com/ikuta_staff' },
       {
         title: 'official',
         url: 'https://erikaikuta.jp/',
