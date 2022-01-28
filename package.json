@@ -60,7 +60,7 @@
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/react": "^6.4.14",
     "@types/jest": "^27.4.0",
-    "@types/node": "^17.0.12",
+    "@types/node": "^17.0.13",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.10",
     "@types/react-lazyload": "^3.1.1",
