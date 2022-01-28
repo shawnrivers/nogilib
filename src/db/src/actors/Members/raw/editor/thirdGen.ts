@@ -94,6 +94,10 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
         title: 'Instagram',
         url: 'https://www.instagram.com/o.momoko_official/',
       },
+      {
+        title: 'YouTube',
+        url: 'https://www.youtube.com/channel/UCibf_MVPbqh9RzsTytBseqA',
+      },
     ],
     graduatedDate: '2021-09-04',
   }),
