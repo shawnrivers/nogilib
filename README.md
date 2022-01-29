@@ -23,7 +23,6 @@
 - JavaScript flavor: TypeScript
 - Styling: Emotion
 - Animation: Framer Motion
-- Compiler: Babel
 - Linter: ESLint
 - Testing: Jest, Storybook
 - Search: [FlexSearch.js](https://github.com/nextapps-de/flexsearch)
