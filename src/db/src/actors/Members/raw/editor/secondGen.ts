@@ -93,7 +93,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     ],
     photoAlbums: [
       {
-        title: 'タイトル未定',
+        title: '希望の方角',
         release: '2022-02-08',
         type: 'photo album',
         sites: [
