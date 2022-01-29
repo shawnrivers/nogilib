@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { Typography } from 'client/components/atoms/Typography';
 import { StyledTypographyProps } from 'client/components/molecules/typography/types';
 

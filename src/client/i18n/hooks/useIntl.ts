@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { useRouter } from 'next/router';
-import { MemberResult } from 'server/actors/Members/models';
+import { MemberResult } from 'db/src/actors/Members/models';
 import {
   getLocalizedNth,
   getLocalizedWords,
   getLocalizedWordsSplitWithCommas,
   isDefinedLanguage,
 } from 'client/i18n/utils';
-import { DiscographyType } from 'server/actors/Discography/types';
+import { DiscographyType } from 'db/src/actors/Discography/types';
 import { toCdNumber } from 'utils/string';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 

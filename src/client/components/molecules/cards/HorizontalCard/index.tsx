@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { Card, CardProps } from 'client/components/atoms/Card';
 import { commonStyles } from 'client/styles/tokens';
 import { Hashtag } from 'client/components/atoms/Hashtag';
@@ -6,7 +6,7 @@ import {
   Typography,
   TypographyProps,
 } from 'client/components/atoms/Typography';
-import { ImageUrl } from 'server/types/commons';
+import { ImageUrl } from 'db/src/types/commons';
 import { AspectRatioImage } from 'client/components/atoms/image/AspectRatioImage';
 
 export type HorizontalCardProps = Omit<CardProps, 'children' | 'title'> & {

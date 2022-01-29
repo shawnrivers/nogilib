@@ -1,6 +1,6 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import * as React from 'react';
-import { Position } from 'server/actors/Members/types';
+import { Position } from 'db/src/actors/Members/types';
 import { commonStyles } from 'client/styles/tokens';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { Typography } from 'client/components/atoms/Typography';
@@ -66,9 +66,6 @@ export const PositionBadge: React.FC<PositionBadgeProps> = props => {
             box-shadow: ${commonStyles.elevations[
               componentElevationKey.componentOnBackground
             ].boxShadow};
-            z-index: ${commonStyles.elevations[
-              componentElevationKey.componentOnBackground
-            ].zIndex};
             border: 2px solid
               var(
                 ${getColorVarName(

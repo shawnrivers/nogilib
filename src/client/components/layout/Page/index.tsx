@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import * as React from 'react';
 import { TopNavigationBar } from 'client/components/layout/Page/components/TopNavigationBar';
 import { commonStyles } from 'client/styles/tokens';
@@ -8,6 +8,7 @@ import { Typography } from 'client/components/atoms/Typography';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { PAGE_CONTENT_ID } from 'client/components/layout/PageContent';
 import { BottomNavigationBar } from 'client/components/layout/Page/components/BottomNavigationBar';
+import { capitalizeFirstLetter } from 'utils/string';
 
 const SkipLink: React.FC = () => {
   const { getTranslation } = useTranslations();
@@ -55,7 +56,7 @@ const SkipLink: React.FC = () => {
             element="span"
             textColor={{ on: 'onPrimary', variant: 'standard' }}
           >
-            {getTranslation('skip to content')}
+            {capitalizeFirstLetter(getTranslation('skip to content'))}
           </Typography>
         </div>
       </Surface>

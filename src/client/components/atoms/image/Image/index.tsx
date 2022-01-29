@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { PolyfilledLazyImage } from './PolyfilledLazyImage';
 import { isServer } from 'utils/env';
 import { getColorVarName } from 'client/styles/tokens/colors';

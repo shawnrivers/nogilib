@@ -1,4 +1,4 @@
-import { SearchPageData } from 'server/pages/search';
+import { SearchPageData } from 'db/src/pages/search';
 
 export type SearchState = {
   query: string;

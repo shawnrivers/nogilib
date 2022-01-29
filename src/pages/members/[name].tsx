@@ -1,9 +1,9 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import * as React from 'react';
 import { useRouter } from 'next/router';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { getMemberData } from 'api/member';
-import { MemberPageData } from 'server/pages/member';
+import { MemberPageData } from 'db/src/pages/member';
+import { getMemberData } from 'client/api/member';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { commonStyles } from 'client/styles/tokens';
 import { useIntl } from 'client/i18n/hooks/useIntl';
@@ -21,7 +21,7 @@ import {
   PositionBadgeProps,
 } from 'client/components/pages/member/PositionBadge';
 import { PageContent } from 'client/components/layout/PageContent';
-import { Position } from 'server/actors/Members/types';
+import { Position } from 'db/src/actors/Members/types';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { Divider } from 'client/components/atoms/Divider';
 import { filterDuplicate } from 'utils/array';
@@ -226,23 +226,14 @@ const MemberPage: React.FC<PageProps> = props => {
         title={primaryName.text}
         options={{ textTransform: 'capitalize' }}
       />
-      <PageContent title={primaryName} titleTextTransform="capitalize">
-        <Typography
-          variant="body1"
-          textColor={{
-            on: 'onBackground',
-            variant: 'variant0',
-          }}
-          css={css`
-            vertical-align: middle;
-            text-transform: capitalize;
-            text-align: center;
-            margin-top: 0.3em;
-          `}
-          lang={secondaryName.lang}
-        >
-          {secondaryName.text}
-        </Typography>
+      <PageContent
+        title={{ ...primaryName, textTransform: 'capitalize' }}
+        titleCaption={secondaryName}
+        subtitle={{
+          text: getTranslation('member'),
+          lang: locale,
+        }}
+      >
         <section>
           <TextDivider text={<Translation text="profile" />} element="h2" />
           <div
@@ -265,7 +256,7 @@ const MemberPage: React.FC<PageProps> = props => {
                 ].boxShadow};
                 overflow: hidden;
                 width: 200px;
-                height: 240px;
+                max-height: 240px;
               `}
             >
               <AspectRatioImage
@@ -285,7 +276,8 @@ const MemberPage: React.FC<PageProps> = props => {
                 display: grid;
                 grid-template-columns: max-content auto;
                 grid-template-rows: auto;
-                grid-gap: ${commonStyles.spacing.s};
+                row-gap: ${commonStyles.spacing.xs};
+                column-gap: ${commonStyles.spacing.s};
                 margin-top: 0.5em;
                 align-items: center;
               `}
@@ -361,7 +353,7 @@ const MemberPage: React.FC<PageProps> = props => {
                       color={glowStickColor.left}
                       size={14}
                       css={css`
-                        margin-right: ${commonStyles.spacing.xxs};
+                        margin-right: ${commonStyles.spacing.s};
                       `}
                     />
                     <GlowStickBadge color={glowStickColor.right} size={14} />
@@ -399,6 +391,8 @@ const MemberPage: React.FC<PageProps> = props => {
                         variant: 'variant0',
                       }}
                       capitalize
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <Translation text={site.title as any} />
                     </TextLink>
@@ -432,6 +426,8 @@ const MemberPage: React.FC<PageProps> = props => {
                       borderRadius="s"
                       padding="xs"
                       href={photoAlbum.sites[0].url}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       css={css`
                         width: 180px;
                         margin: ${commonStyles.spacing.xs};
@@ -544,7 +540,7 @@ const MemberPage: React.FC<PageProps> = props => {
                       componentElevationKey.componentOnBackground
                     ].boxShadow};
                     width: 110px;
-                    height: 132px;
+                    max-height: 132px;
                     overflow: hidden;
                   `}
                 >
