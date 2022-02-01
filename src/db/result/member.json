@@ -4542,7 +4542,28 @@
         "url": "https://7gogo.jp/higuchi-hina"
       }
     ],
-    "photoAlbums": [],
+    "photoAlbums": [
+      {
+        "title": "タイトル未定",
+        "release": "2022-04-12",
+        "type": "photo album",
+        "sites": [
+          {
+            "title": "Twitter",
+            "url": "https://twitter.com/higuchihina_1st"
+          },
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/higuchihina_1st_ph/"
+          }
+        ],
+        "cover": {
+          "sm": "/images/photo-albums/higuchihina_1_dd659aa1-fc7d-46cf-a49c-38ffa3fa92a8_@1x.jpg",
+          "md": "/images/photo-albums/higuchihina_1_dd659aa1-fc7d-46cf-a49c-38ffa3fa92a8_@2x.jpg",
+          "lg": "/images/photo-albums/higuchihina_1_dd659aa1-fc7d-46cf-a49c-38ffa3fa92a8_@3x.jpg"
+        }
+      }
+    ],
     "positionsHistory": [
       {
         "singleNumber": "1",

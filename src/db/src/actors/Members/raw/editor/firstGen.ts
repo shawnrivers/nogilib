@@ -794,6 +794,21 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://7gogo.jp/higuchi-hina',
       },
     ],
+    photoAlbums: [
+      {
+        title: 'タイトル未定',
+        release: '2022-04-12',
+        type: 'photo album',
+        sites: [
+          { title: 'Twitter', url: 'https://twitter.com/higuchihina_1st' },
+          {
+            title: 'Instagram',
+            url: 'https://www.instagram.com/higuchihina_1st_ph/',
+          },
+        ],
+        cover: 'higuchihina_1',
+      },
+    ],
   }),
   createMemberRaw({
     name: 'hoshinominami',
