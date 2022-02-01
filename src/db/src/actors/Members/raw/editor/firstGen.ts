@@ -76,10 +76,6 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://erikaikuta.jp/',
       },
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/erika.ikuta/',
-      },
-      {
         title: 'profile',
         url: 'https://www.ohtapro.co.jp/talent/ikutaerika/',
       },
@@ -792,6 +788,21 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       {
         title: '755',
         url: 'https://7gogo.jp/higuchi-hina',
+      },
+    ],
+    photoAlbums: [
+      {
+        title: 'タイトル未定',
+        release: '2022-04-12',
+        type: 'photo album',
+        sites: [
+          { title: 'Twitter', url: 'https://twitter.com/higuchihina_1st' },
+          {
+            title: 'Instagram',
+            url: 'https://www.instagram.com/higuchihina_1st_ph/',
+          },
+        ],
+        cover: 'higuchihina_1',
       },
     ],
   }),

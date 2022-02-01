@@ -253,14 +253,6 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         title: 'Instagram',
         url: 'https://www.instagram.com/terada.ranze.official/',
       },
-      {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/ranze.terada/',
-      },
-      {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/teradaranze.php',
-      },
     ],
     photoAlbums: [
       {
