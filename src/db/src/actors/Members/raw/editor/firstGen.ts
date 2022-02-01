@@ -76,10 +76,6 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://erikaikuta.jp/',
       },
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/erika.ikuta/',
-      },
-      {
         title: 'profile',
         url: 'https://www.ohtapro.co.jp/talent/ikutaerika/',
       },
