@@ -1,54 +1,35 @@
 import * as React from 'react';
-import { SearchState, getInitialSearchState, searchReducer } from './reducer';
+import { SearchPageData } from 'db/src/pages/search';
 
-type Context = SearchState & {
-  setQuery(query: SearchState['query']): void;
-  setResults(results: SearchState['results']): void;
+type SearchQuery = string;
+type SearchResults = (
+  | SearchPageData['members'][0]
+  | SearchPageData['albums'][0]
+  | SearchPageData['songs'][0]
+)[];
+
+type Context = {
+  query: SearchQuery;
+  results: SearchResults;
+  setQuery(query: SearchQuery): void;
+  setResults(results: SearchResults): void;
 };
 
-export const SearchContext = React.createContext<Context>({
-  ...getInitialSearchState(),
-  setQuery() {
-    return;
-  },
-  setResults() {
-    return;
-  },
-});
+export const SearchContext = React.createContext<Context | undefined>(
+  undefined
+);
 
 export const SearchContextProvider: React.FC<{
   children?: React.ReactNode;
 }> = props => {
-  const [state, dispatch] = React.useReducer(
-    searchReducer,
-    getInitialSearchState()
-  );
-
-  const setQuery = React.useCallback(
-    (query: SearchState['query']) => {
-      dispatch({
-        type: 'UPDATE_SEARCH_QUERY',
-        payload: { query },
-      });
-    },
-    [dispatch]
-  );
-
-  const setResults = React.useCallback(
-    (results: SearchState['results']) => {
-      dispatch({
-        type: 'UPDATE_SEARCH_RESULTS',
-        payload: { results },
-      });
-    },
-    [dispatch]
-  );
+  const [query, setQuery] = React.useState<SearchQuery>('');
+  const [results, setResults] = React.useState<SearchResults>([]);
 
   return (
     <SearchContext.Provider
       value={{
-        query: state.query,
-        results: state.results,
+        query: query,
+        results: results,
         setQuery,
         setResults,
       }}
@@ -56,4 +37,14 @@ export const SearchContextProvider: React.FC<{
       {props.children}
     </SearchContext.Provider>
   );
+};
+
+export const useSearchQuery = () => {
+  const context = React.useContext(SearchContext);
+  if (!context) {
+    throw new Error(
+      'useSearchQuery must be used within a <SearchContextProvider>.'
+    );
+  }
+  return context;
 };

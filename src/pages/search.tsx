@@ -18,7 +18,7 @@ import { Typography } from 'client/components/atoms/Typography';
 import { PageContent } from 'client/components/layout/PageContent';
 import { PageHelmet } from 'client/components/layout/PageHelmet';
 import { getColorVarName } from 'client/styles/tokens/colors';
-import { useSearchQuery } from 'client/store/search/hook/useSearchQuery';
+import { useSearchQuery } from 'client/store/search/context';
 import { BaseButton } from 'client/components/atoms/BaseButton';
 import { CloseIcon } from 'client/components/atoms/icons/CloseIcon';
 
