@@ -4815,8 +4815,8 @@
     ],
     "join": "first",
     "graduation": {
-      "isGraduated": false,
-      "graduatedDate": ""
+      "isGraduated": true,
+      "graduatedDate": "2022-02-12"
     },
     "birthday": "1998-02-06",
     "height": 155,

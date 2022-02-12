@@ -843,6 +843,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         cover: 'hoshinominami_1',
       },
     ],
+    graduatedDate: '2022-02-12',
   }),
   createMemberRaw({
     name: 'matsumurasayuri',
