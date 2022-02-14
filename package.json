@@ -54,7 +54,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^16.1.0",
-    "@commitlint/config-conventional": "^16.0.0",
+    "@commitlint/config-conventional": "^16.2.1",
     "@emotion/babel-preset-css-prop": "^11.2.0",
     "@storybook/addon-essentials": "^6.4.19",
     "@storybook/addon-links": "^6.4.18",
