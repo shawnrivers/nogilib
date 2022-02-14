@@ -62,6 +62,20 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://7gogo.jp/itou-junna',
       },
     ],
+    photoAlbums: [
+      {
+        title: 'unfussy',
+        release: '2022-02-21',
+        type: 'photo album',
+        sites: [
+          {
+            title: 'official',
+            url: 'https://junnashouse.hp.peraichi.com/',
+          },
+        ],
+        cover: 'itoujunna_1',
+      },
+    ],
     graduatedDate: '2021-08-29',
   }),
   createMemberRaw({
