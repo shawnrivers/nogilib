@@ -9998,7 +9998,24 @@
         "url": "https://7gogo.jp/itou-junna"
       }
     ],
-    "photoAlbums": [],
+    "photoAlbums": [
+      {
+        "title": "unfussy",
+        "release": "2022-02-21",
+        "type": "photo album",
+        "sites": [
+          {
+            "title": "official",
+            "url": "https://junnashouse.hp.peraichi.com/"
+          }
+        ],
+        "cover": {
+          "sm": "/images/photo-albums/itoujunna_1_5605388a-8b70-4b76-964f-b29e513373e3_@1x.jpg",
+          "md": "/images/photo-albums/itoujunna_1_5605388a-8b70-4b76-964f-b29e513373e3_@2x.jpg",
+          "lg": "/images/photo-albums/itoujunna_1_5605388a-8b70-4b76-964f-b29e513373e3_@3x.jpg"
+        }
+      }
+    ],
     "positionsHistory": [
       {
         "singleNumber": "1",
