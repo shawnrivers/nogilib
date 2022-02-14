@@ -57,7 +57,7 @@
     "@commitlint/config-conventional": "^16.2.1",
     "@emotion/babel-preset-css-prop": "^11.2.0",
     "@storybook/addon-essentials": "^6.4.19",
-    "@storybook/addon-links": "^6.4.18",
+    "@storybook/addon-links": "^6.4.19",
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/react": "^6.4.19",
     "@types/jest": "^27.4.0",
