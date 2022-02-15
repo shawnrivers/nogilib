@@ -469,6 +469,11 @@ const dictionary = {
     ja: '栃木県',
     zh: '栃木县',
   },
+  兵庫県: {
+    en: 'Hyogo',
+    ja: '兵庫県',
+    zh: '兵库县',
+  },
   岡山県: {
     en: 'Okayama',
     ja: '岡山県',
