@@ -101,4 +101,12 @@ export type MemberNameKey =
   | 'kashiwayukina'
   | 'andoumikumo'
   | 'iwaseyumiko'
-  | 'kojimaharuna';
+  | 'kojimaharuna'
+  | 'inouenagi'
+  | 'ichinosemiku'
+  | 'sugawarasatsuki'
+  | 'ogawaaya'
+  | 'tomisatonao'
+  | 'okudairoha'
+  | 'nakanishiaruno'
+  | 'iokimao';
