@@ -1,5 +1,11 @@
 export type BloodType = 'a' | 'b' | 'o' | 'ab' | 'unknown';
-export type Generation = 'first' | 'second' | 'third' | 'fourth' | 'exchange';
+export type Generation =
+  | 'first'
+  | 'second'
+  | 'third'
+  | 'fourth'
+  | 'fifth'
+  | 'exchange';
 export type Position =
   | 'center'
   | 'fukujin'
@@ -101,4 +107,12 @@ export type MemberNameKey =
   | 'kashiwayukina'
   | 'andoumikumo'
   | 'iwaseyumiko'
-  | 'kojimaharuna';
+  | 'kojimaharuna'
+  | 'inouenagi'
+  | 'ichinosemiku'
+  | 'sugawarasatsuki'
+  | 'ogawaaya'
+  | 'tomisatonao'
+  | 'okudairoha'
+  | 'nakanishiaruno'
+  | 'iokimao';
