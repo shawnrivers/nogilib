@@ -104,6 +104,11 @@ const dictionary = {
     ja: '4期生',
     zh: '4期生',
   },
+  'fifth generation': {
+    en: '5th. gen',
+    ja: '5期生',
+    zh: '5期生',
+  },
   special: {
     en: 'special',
     ja: 'special',
@@ -268,6 +273,11 @@ const dictionary = {
     en: '4th. generation',
     ja: '4期生',
     zh: '4期生',
+  },
+  'join: fifth': {
+    en: '5th. generation',
+    ja: '5期生',
+    zh: '5期生',
   },
   'join: exchange': {
     en: 'exchange',
