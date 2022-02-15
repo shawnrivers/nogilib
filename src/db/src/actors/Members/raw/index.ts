@@ -3,10 +3,12 @@ import { FIRST_GEN_MEMBERS } from 'db/src/actors/Members/raw/editor/firstGen';
 import { SECOND_GEN_MEMBERS } from 'db/src/actors/Members/raw/editor/secondGen';
 import { THIRD_GEN_MEMBERS } from 'db/src/actors/Members/raw/editor/thirdGen';
 import { FOURTH_GEN_MEMBERS } from 'db/src/actors/Members/raw/editor/fourthGen';
+import { FIFTH_GEN_MEMBERS } from 'db/src/actors/Members/raw/editor/fifthGen';
 
 export const membersRawArray: MembersRawArray = [
   ...FIRST_GEN_MEMBERS,
   ...SECOND_GEN_MEMBERS,
   ...THIRD_GEN_MEMBERS,
   ...FOURTH_GEN_MEMBERS,
+  ...FIFTH_GEN_MEMBERS,
 ];
