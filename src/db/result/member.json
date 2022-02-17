@@ -10685,11 +10685,16 @@
       "firstNameEn": "mai"
     },
     "profileImage": {
-      "sm": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@1x.jpg",
-      "md": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@2x.jpg",
-      "lg": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@3x.jpg"
+      "sm": "/images/members/others/shinuchimai_2022-02-17_55db71fd-b2a7-44e7-91c1-fd37721508f4_@1x.jpg",
+      "md": "/images/members/others/shinuchimai_2022-02-17_55db71fd-b2a7-44e7-91c1-fd37721508f4_@2x.jpg",
+      "lg": "/images/members/others/shinuchimai_2022-02-17_55db71fd-b2a7-44e7-91c1-fd37721508f4_@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/others/shinuchimai_2022-02-17_55db71fd-b2a7-44e7-91c1-fd37721508f4_@1x.jpg",
+        "md": "/images/members/others/shinuchimai_2022-02-17_55db71fd-b2a7-44e7-91c1-fd37721508f4_@2x.jpg",
+        "lg": "/images/members/others/shinuchimai_2022-02-17_55db71fd-b2a7-44e7-91c1-fd37721508f4_@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@1x.jpg",
         "md": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@2x.jpg",
@@ -10800,15 +10805,11 @@
       },
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/mai.shinuchi/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=17068"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/shinuchimai.php"
-      },
-      {
-        "title": "755",
-        "url": "https://7gogo.jp/shinuchi-mai"
+        "url": "https://www.centforce.com/profile/t_profile/shinuchimai.html"
       }
     ],
     "photoAlbums": [
@@ -13980,6 +13981,10 @@
       "right": "yellow"
     },
     "sites": [
+      {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/kubo.shiori.official/"
+      },
       {
         "title": "blog",
         "url": "https://blog.nogizaka46.com/shiori.kubo/"

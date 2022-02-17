@@ -173,15 +173,11 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
       },
       {
         title: 'blog',
-        url: 'https://blog.nogizaka46.com/mai.shinuchi/',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=17068',
       },
       {
         title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/shinuchimai.php',
-      },
-      {
-        title: '755',
-        url: 'https://7gogo.jp/shinuchi-mai',
+        url: 'https://www.centforce.com/profile/t_profile/shinuchimai.html',
       },
     ],
     photoAlbums: [

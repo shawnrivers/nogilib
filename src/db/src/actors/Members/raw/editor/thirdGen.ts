@@ -119,6 +119,10 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
         title: 'profile',
         url: 'https://www.nogizaka46.com/member/detail/kuboshiori.php',
       },
+      {
+        title: 'Instagram',
+        url: 'https://www.instagram.com/kubo.shiori.official/',
+      },
     ],
   }),
   createMemberRaw({
