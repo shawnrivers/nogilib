@@ -93,12 +93,12 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/kitanohinako_official/',
       },
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/hinako.kitano/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/16454',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/kitanohinako.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=16454',
       },
       {
         title: '755',
@@ -223,12 +223,12 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: '秋田県',
     sites: [
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/ayane.suzuki/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/17378',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/suzukiayane.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=17378',
       },
       {
         title: '755',
@@ -362,12 +362,12 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://instagram.com/rena_yamazaki.official/',
       },
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/rena.yamazaki/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/17381',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/yamazakirena.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=17381',
       },
       {
         title: '755',

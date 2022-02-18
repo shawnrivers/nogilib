@@ -13,12 +13,12 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '愛知県',
     sites: [
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/sakura.endou/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/48006',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/endousakura.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=48006',
       },
     ],
   }),
@@ -33,12 +33,12 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '栃木県',
     sites: [
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/haruka.kaki/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/48008',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/kakiharuka.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=48008',
       },
     ],
   }),
@@ -60,12 +60,12 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '岡山県',
     sites: [
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/sayaka.kakehashi/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/48009',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/kakehashisayaka.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=48009',
       },
     ],
   }),
@@ -80,12 +80,12 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '北海道',
     sites: [
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/saya.kanagawa/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/48010',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/kanagawasaya.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=48010',
       },
     ],
   }),
@@ -100,12 +100,12 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: 'California, US',
     sites: [
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/yuri.kitagawa/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/48012',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/kitagawayuri.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=48012',
       },
     ],
   }),
@@ -120,12 +120,12 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '千葉県',
     sites: [
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/yuna.shibata/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/48013',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/shibatayuna.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=48013',
       },
     ],
   }),
@@ -140,12 +140,12 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '埼玉県',
     sites: [
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/rei.seimiya/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/48014',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/seimiyarei.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=48014',
       },
     ],
   }),
@@ -160,12 +160,12 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '埼玉県',
     sites: [
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/mayu.tamura/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/48015',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/tamuramayu.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=48015',
       },
     ],
   }),
@@ -180,12 +180,12 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '愛知県',
     sites: [
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/ayame.tsutsui/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/48017',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/tsutsuiayame.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=48017',
       },
     ],
   }),
@@ -200,12 +200,12 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '大阪府',
     sites: [
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/seira.hayakawa/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/48018',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/hayakawaseira.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=48018',
       },
     ],
   }),
@@ -220,12 +220,12 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '東京都',
     sites: [
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/mio.yakubo/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/48019',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/yakubomio.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=48019',
       },
     ],
   }),
@@ -240,16 +240,12 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '東京都',
     sites: [
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/haruka.kuromi/',
-      },
-      {
-        title: 'Fourth Gen Blog',
-        url: 'https://blog.nogizaka46.com/newfourth/',
-      },
-      {
         title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/kuromiharuka.php',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55383',
+      },
+      {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=55383',
       },
     ],
   }),
@@ -264,16 +260,12 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '岩手県',
     sites: [
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/rika.satou/',
-      },
-      {
-        title: 'Fourth Gen Blog',
-        url: 'https://blog.nogizaka46.com/newfourth/',
-      },
-      {
         title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/satourika.php',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55384',
+      },
+      {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=55384',
       },
     ],
   }),
@@ -288,16 +280,12 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '神奈川県',
     sites: [
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/runa.hayashi/',
-      },
-      {
-        title: 'Fourth Gen Blog',
-        url: 'https://blog.nogizaka46.com/newfourth/',
-      },
-      {
         title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/hayashiruna.php',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55385',
+      },
+      {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=55385',
       },
     ],
   }),
@@ -312,16 +300,12 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '千葉県',
     sites: [
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/miyu.matsuo/',
-      },
-      {
-        title: 'Fourth Gen Blog',
-        url: 'https://blog.nogizaka46.com/newfourth/',
-      },
-      {
         title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/mastuomiyu.php',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55386',
+      },
+      {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=55386',
       },
     ],
   }),
@@ -336,16 +320,12 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '京都府',
     sites: [
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/nao.yumiki/',
-      },
-      {
-        title: 'Fourth Gen Blog',
-        url: 'https://blog.nogizaka46.com/newfourth/',
-      },
-      {
         title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/yumikinao.php',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55387',
+      },
+      {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=55387',
       },
     ],
   }),
