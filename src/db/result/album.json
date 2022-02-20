@@ -3564,6 +3564,34 @@
     ]
   },
   {
+    "key": "untitled",
+    "title": "タイトル未定",
+    "type": "single",
+    "number": "29",
+    "artworks": [
+      {
+        "url": {
+          "sm": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@1x.jpg",
+          "md": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@3x.jpg"
+        },
+        "type": "A"
+      }
+    ],
+    "release": "2022-03-23",
+    "songs": [
+      {
+        "key": "untitled",
+        "title": "タイトル未定",
+        "type": "title",
+        "inCdType": [
+          "A"
+        ]
+      }
+    ],
+    "centers": []
+  },
+  {
     "key": "imagaomoideninarumade",
     "title": "今が思い出になるまで",
     "type": "album",

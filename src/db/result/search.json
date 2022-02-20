@@ -394,6 +394,20 @@
         }
       },
       {
+        "id": "single-untitled",
+        "field": "タイトル未定 untitled",
+        "searchType": "albums",
+        "key": "untitled",
+        "title": "タイトル未定",
+        "number": "29",
+        "albumType": "single",
+        "artwork": {
+          "sm": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@1x.jpg",
+          "md": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@3x.jpg"
+        }
+      },
+      {
         "id": "album-imagaomoideninarumade",
         "field": "今が思い出になるまで imagaomoideninarumade",
         "searchType": "albums",
@@ -4458,6 +4472,24 @@
           "sm": "/images/artworks/singles/28/D_aa20644a-caa3-4340-8b02-41afb44f3dcc_@1x.jpg",
           "md": "/images/artworks/singles/28/D_aa20644a-caa3-4340-8b02-41afb44f3dcc_@2x.jpg",
           "lg": "/images/artworks/singles/28/D_aa20644a-caa3-4340-8b02-41afb44f3dcc_@3x.jpg"
+        }
+      },
+      {
+        "id": "song-untitled",
+        "field": "タイトル未定 untitled",
+        "searchType": "songs",
+        "key": "untitled",
+        "title": "タイトル未定",
+        "songType": "title",
+        "single": {
+          "title": "タイトル未定",
+          "number": "29"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@1x.jpg",
+          "md": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@3x.jpg"
         }
       },
       {
