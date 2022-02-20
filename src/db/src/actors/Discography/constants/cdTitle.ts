@@ -3,6 +3,10 @@ import { arrayToObject } from 'utils/array';
 
 const singleTitles = [
   {
+    title: 'タイトル未定',
+    key: 'untitled',
+  },
+  {
     title: '君に叱られた',
     key: 'kiminishikarareta',
   },
