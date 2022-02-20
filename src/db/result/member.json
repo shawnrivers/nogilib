@@ -307,13 +307,13 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 20,
-      "selected": 25,
+      "fukujin": 21,
+      "selected": 26,
       "under": 0
     }
   },
@@ -2177,13 +2177,13 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 4,
-      "fukujin": 16,
-      "selected": 21,
+      "fukujin": 17,
+      "selected": 22,
       "under": 7
     }
   },
@@ -4731,13 +4731,13 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 1,
-      "selected": 6,
+      "selected": 7,
       "under": 22
     }
   },
@@ -11397,13 +11397,13 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 3,
+      "selected": 4,
       "under": 14
     }
   },
@@ -13672,13 +13672,13 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 1,
-      "selected": 6,
+      "selected": 7,
       "under": 3
     }
   },
@@ -13903,13 +13903,13 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 6,
-      "selected": 8,
+      "fukujin": 7,
+      "selected": 9,
       "under": 1
     }
   },
@@ -14322,13 +14322,13 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 5,
-      "selected": 7,
+      "fukujin": 6,
+      "selected": 8,
       "under": 1
     }
   },
@@ -15405,13 +15405,13 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 1,
-      "fukujin": 7,
-      "selected": 8,
+      "fukujin": 8,
+      "selected": 9,
       "under": 0
     }
   },
@@ -15864,13 +15864,13 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 1,
-      "fukujin": 9,
-      "selected": 10,
+      "fukujin": 10,
+      "selected": 11,
       "under": 0
     }
   },
@@ -16062,13 +16062,13 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 2,
-      "fukujin": 4,
-      "selected": 5,
+      "fukujin": 5,
+      "selected": 6,
       "under": 0
     }
   },
@@ -16260,13 +16260,13 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 1,
-      "fukujin": 4,
-      "selected": 5,
+      "fukujin": 5,
+      "selected": 6,
       "under": 0
     }
   },
@@ -16458,13 +16458,13 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 0,
+      "selected": 1,
       "under": 1
     }
   },
@@ -17052,13 +17052,13 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 0,
+      "selected": 1,
       "under": 1
     }
   },
@@ -17250,13 +17250,13 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 2,
+      "selected": 3,
       "under": 0
     }
   },
@@ -17448,13 +17448,13 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 3,
+      "selected": 4,
       "under": 0
     }
   },
@@ -17646,13 +17646,13 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 2,
-      "selected": 4,
+      "fukujin": 3,
+      "selected": 5,
       "under": 0
     }
   },
@@ -17844,13 +17844,13 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 2,
+      "selected": 3,
       "under": 0
     }
   },

@@ -8,9 +8,29 @@ export const TWENTY_NINTH_SINGLE_SONGS: SongRaw[] = [
     center: [],
     fukujin: 'row-1-2',
     formations: {
-      firstRow: [],
-      secondRow: [],
-      thirdRow: [],
+      firstRow: [
+        'umezawaminami',
+        'yamashitamizuki',
+        'saitouasuka',
+        'akimotomanatsu',
+      ],
+      secondRow: [
+        'kuboshiori',
+        'kakiharuka',
+        'yodayuuki',
+        'endousakura',
+        'tsutsuiayame',
+      ],
+      thirdRow: [
+        'tamuramayu',
+        'kakehashisayaka',
+        'seimiyarei',
+        'suzukiayane',
+        'higuchihina',
+        'iwamotorenka',
+        'shibatayuna',
+        'hayakawaseira',
+      ],
     },
   }),
 ];
