@@ -3,14 +3,19 @@ import { createSongRaw } from 'db/src/actors/Songs/raw/creator';
 
 export const TWENTY_NINTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
-    title: 'タイトル未定',
+    title: 'Actually...',
     type: 'title',
-    center: [],
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['NAMITO'],
+    },
+    center: ['nakanishiaruno'],
     fukujin: 'row-1-2',
     formations: {
       firstRow: [
         'umezawaminami',
         'yamashitamizuki',
+        'nakanishiaruno',
         'saitouasuka',
         'akimotomanatsu',
       ],
