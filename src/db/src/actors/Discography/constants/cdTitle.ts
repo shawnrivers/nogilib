@@ -7,6 +7,10 @@ const singleTitles = [
     key: 'untitled',
   },
   {
+    title: 'Actually...',
+    key: 'actually',
+  },
+  {
     title: '君に叱られた',
     key: 'kiminishikarareta',
   },

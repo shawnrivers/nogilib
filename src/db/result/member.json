@@ -20175,13 +20175,13 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "center"
       }
     ],
     "positionsCounter": {
-      "center": 0,
-      "fukujin": 0,
-      "selected": 0,
+      "center": 1,
+      "fukujin": 1,
+      "selected": 1,
       "under": 0
     }
   },

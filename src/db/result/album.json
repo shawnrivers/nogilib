@@ -3564,8 +3564,8 @@
     ]
   },
   {
-    "key": "untitled",
-    "title": "タイトル未定",
+    "key": "actually",
+    "title": "Actually...",
     "type": "single",
     "number": "29",
     "artworks": [
@@ -3581,15 +3581,32 @@
     "release": "2022-03-23",
     "songs": [
       {
-        "key": "untitled",
-        "title": "タイトル未定",
+        "key": "actually",
+        "title": "Actually...",
         "type": "title",
         "inCdType": [
           "A"
         ]
       }
     ],
-    "centers": []
+    "centers": [
+      {
+        "name": "nakanishiaruno",
+        "nameNotations": {
+          "lastName": "中西",
+          "firstName": "アルノ",
+          "lastNameFurigana": "なかにし",
+          "firstNameFurigana": "あるの",
+          "lastNameEn": "nakanishi",
+          "firstNameEn": "aruno"
+        },
+        "albumProfileImage": {
+          "sm": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@1x.jpg",
+          "md": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@2x.jpg",
+          "lg": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@3x.jpg"
+        }
+      }
+    ]
   },
   {
     "key": "imagaomoideninarumade",

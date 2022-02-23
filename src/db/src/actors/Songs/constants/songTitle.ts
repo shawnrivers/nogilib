@@ -3,6 +3,7 @@ import { ArrayElement } from 'types/common';
 
 const SongsTitleKeyArray = (
   [
+    { title: 'Actually...', key: 'actually' },
     { title: 'Hard to say', key: 'hardtosay' },
     { title: 'あなたからの卒業', key: 'anatakaranosotsugyo' },
     { title: '歳月の轍', key: 'tokinowadachi' },
