@@ -3576,6 +3576,38 @@
           "lg": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@3x.jpg"
         },
         "type": "A"
+      },
+      {
+        "url": {
+          "sm": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@1x.jpg",
+          "md": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@3x.jpg"
+        },
+        "type": "B"
+      },
+      {
+        "url": {
+          "sm": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@1x.jpg",
+          "md": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@3x.jpg"
+        },
+        "type": "C"
+      },
+      {
+        "url": {
+          "sm": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@1x.jpg",
+          "md": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@3x.jpg"
+        },
+        "type": "D"
+      },
+      {
+        "url": {
+          "sm": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@1x.jpg",
+          "md": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@3x.jpg"
+        },
+        "type": "T"
       }
     ],
     "release": "2022-03-23",
@@ -3585,7 +3617,63 @@
         "title": "Actually...",
         "type": "title",
         "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ]
+      },
+      {
+        "key": "fukayomi",
+        "title": "深読み",
+        "type": "coupling",
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ]
+      },
+      {
+        "key": "kachiarumono",
+        "title": "価値あるもの",
+        "type": "unit",
+        "inCdType": [
           "A"
+        ]
+      },
+      {
+        "key": "wasurenaitoiina",
+        "title": "忘れないといいな",
+        "type": "solo",
+        "inCdType": [
+          "B"
+        ]
+      },
+      {
+        "key": "todokanakudatte",
+        "title": "届かなくたって…",
+        "type": "under",
+        "inCdType": [
+          "C"
+        ]
+      },
+      {
+        "key": "zetsubounoichibyoumae",
+        "title": "絶望の一秒前",
+        "type": "fifth generation",
+        "inCdType": [
+          "D"
+        ]
+      },
+      {
+        "key": "sukininattemita",
+        "title": "好きになってみた",
+        "type": "coupling",
+        "inCdType": [
+          "T"
         ]
       }
     ],

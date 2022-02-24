@@ -235,17 +235,8 @@ export const convertSongPerformersTag = (params: {
   if (songType === 'unit') {
     return { name: songPerformers.unit, album };
   }
-  if (songType === 'first generation') {
-    return { name: 'first generation', album };
-  }
-  if (songType === 'second generation') {
-    return { name: 'second generation', album };
-  }
-  if (songType === 'third generation') {
-    return { name: 'third generation', album };
-  }
-  if (songType === 'fourth generation') {
-    return { name: 'fourth generation', album };
+  if (songType.includes('generation')) {
+    return { name: songType, album };
   }
   if (songType === 'title' || songType === 'selected' || songType === 'lead') {
     return { name: 'selected', album };
