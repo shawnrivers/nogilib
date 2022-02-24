@@ -4493,6 +4493,114 @@
         }
       },
       {
+        "id": "song-fukayomi",
+        "field": "深読み fukayomi",
+        "searchType": "songs",
+        "key": "fukayomi",
+        "title": "深読み",
+        "songType": "coupling",
+        "single": {
+          "title": "Actually...",
+          "number": "29"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@1x.jpg",
+          "md": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@3x.jpg"
+        }
+      },
+      {
+        "id": "song-kachiarumono",
+        "field": "価値あるもの kachiarumono",
+        "searchType": "songs",
+        "key": "kachiarumono",
+        "title": "価値あるもの",
+        "songType": "unit",
+        "single": {
+          "title": "Actually...",
+          "number": "29"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@1x.jpg",
+          "md": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@3x.jpg"
+        }
+      },
+      {
+        "id": "song-wasurenaitoiina",
+        "field": "忘れないといいな wasurenaitoiina",
+        "searchType": "songs",
+        "key": "wasurenaitoiina",
+        "title": "忘れないといいな",
+        "songType": "solo",
+        "single": {
+          "title": "Actually...",
+          "number": "29"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@1x.jpg",
+          "md": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@3x.jpg"
+        }
+      },
+      {
+        "id": "song-todokanakudatte",
+        "field": "届かなくたって… todokanakudatte",
+        "searchType": "songs",
+        "key": "todokanakudatte",
+        "title": "届かなくたって…",
+        "songType": "under",
+        "single": {
+          "title": "Actually...",
+          "number": "29"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@1x.jpg",
+          "md": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@3x.jpg"
+        }
+      },
+      {
+        "id": "song-zetsubounoichibyoumae",
+        "field": "絶望の一秒前 zetsubounoichibyoumae",
+        "searchType": "songs",
+        "key": "zetsubounoichibyoumae",
+        "title": "絶望の一秒前",
+        "songType": "fifth generation",
+        "single": {
+          "title": "Actually...",
+          "number": "29"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@1x.jpg",
+          "md": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@3x.jpg"
+        }
+      },
+      {
+        "id": "song-sukininattemita",
+        "field": "好きになってみた sukininattemita",
+        "searchType": "songs",
+        "key": "sukininattemita",
+        "title": "好きになってみた",
+        "songType": "coupling",
+        "single": {
+          "title": "Actually...",
+          "number": "29"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@1x.jpg",
+          "md": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@3x.jpg"
+        }
+      },
+      {
         "id": "song-darekahamikata",
         "field": "誰かは味方 darekahamikata",
         "searchType": "songs",
