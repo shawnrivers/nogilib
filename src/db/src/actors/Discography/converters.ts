@@ -50,10 +50,7 @@ export const convertCdSongFocusPerformers: ConvertCdSongFocusPerformers = ({
       song.type === 'coupling' ||
       song.type === 'selected' ||
       song.type === 'lead' ||
-      song.type === 'first generation' ||
-      song.type === 'second generation' ||
-      song.type === 'third generation' ||
-      song.type === 'fourth generation'
+      song.type.includes('generation')
     ) {
       if (song.performers.center !== null) {
         focusPerformersResult = {
