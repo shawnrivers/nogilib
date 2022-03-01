@@ -397,6 +397,14 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/miria.watanabe_official/',
       },
       {
+        title: 'official',
+        url: 'https://www.alligator-ltd.jp/talent/watanabe_miria/index.html',
+      },
+      {
+        title: 'fan club',
+        url: 'https://fanicon.net/fancommunities/4430',
+      },
+      {
         title: '755',
         url: 'https://7gogo.jp/watanabe-miria',
       },
