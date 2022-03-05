@@ -231,6 +231,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=17378',
       },
       {
+        title: 'Instagram',
+        url: 'https://www.instagram.com/ayane.suzuki_official/',
+      },
+      {
         title: '755',
         url: 'https://7gogo.jp/suzuki-ayane',
       },
