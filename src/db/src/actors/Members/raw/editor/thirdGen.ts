@@ -13,12 +13,12 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: '沖縄県',
     sites: [
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/riria.itou/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/36749',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/itouriria.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=36749',
       },
     ],
   }),
@@ -33,12 +33,12 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: '東京都',
     sites: [
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/renka.iwamoto/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/36750',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/iwamotorenka.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=36750',
       },
     ],
   }),
@@ -57,12 +57,12 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/ume_minami.official/',
       },
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/minami.umezawa/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/36751',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/umezawaminami.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=36751',
       },
     ],
     photoAlbums: [
@@ -112,12 +112,16 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: '宮城県',
     sites: [
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/shiori.kubo/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/36753',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/kuboshiori.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=36753',
+      },
+      {
+        title: 'Instagram',
+        url: 'https://www.instagram.com/kubo.shiori.official/',
       },
     ],
   }),
@@ -143,12 +147,12 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/tamami_46_official/',
       },
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/tamami.sakaguchi/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/36754',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/sakaguchitamami.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=36754',
       },
     ],
   }),
@@ -167,12 +171,12 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/Kaede_Sato.official/',
       },
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/kaede.satou/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/36755',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/satoukaede.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=36755',
       },
     ],
   }),
@@ -191,12 +195,12 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/n.reno_official/',
       },
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/reno.nakamura/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/36756',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/nakamurareno.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=36756',
       },
     ],
   }),
@@ -215,12 +219,12 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/hazuki.p3.official/',
       },
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/hazuki.mukai/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/36757',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/mukaihazuki.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=36757',
       },
     ],
   }),
@@ -246,12 +250,12 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/mizuki.yamashita.official/',
       },
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/mizuki.yamashita/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/36758',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/yamashitamizuki.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=36758',
       },
     ],
     photoAlbums: [
@@ -291,12 +295,12 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/y.ayanochristie.official/',
       },
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/ayanochristie.yoshida/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/36759',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/yoshidaayanochristie.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=36759',
       },
     ],
   }),
@@ -315,12 +319,12 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/yodayuuki_oimo/',
       },
       {
-        title: 'blog',
-        url: 'https://blog.nogizaka46.com/yuuki.yoda/',
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/36760',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/yodayuuki.php',
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=36760',
       },
     ],
     photoAlbums: [

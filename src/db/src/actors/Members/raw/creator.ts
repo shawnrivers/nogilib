@@ -17,7 +17,7 @@ type CreateMemberRawParams = {
     lastNameFurigana: MemberRaw['nameNotations']['lastNameFurigana'],
     firstNameFurigana: MemberRaw['nameNotations']['firstNameFurigana']
   ];
-  glowStickColor: [
+  glowStickColor?: [
     left: MemberRaw['glowStickColor']['left'],
     right: MemberRaw['glowStickColor']['right']
   ];
@@ -44,17 +44,6 @@ export const createMemberRaw = (
     autoSortSites: true,
   }
 ): MemberRaw => {
-  const graduation =
-    params.graduatedDate !== undefined
-      ? {
-          isGraduated: true,
-          graduatedDate: params.graduatedDate,
-        }
-      : {
-          isGraduated: false,
-          graduatedDate: '',
-        };
-
   return {
     name: params.name,
     nameNotations: {
@@ -65,10 +54,16 @@ export const createMemberRaw = (
       lastNameEn: params.nameNotations[4],
       firstNameEn: params.nameNotations[5],
     },
-    glowStickColor: {
-      left: params.glowStickColor[0],
-      right: params.glowStickColor[1],
-    },
+    glowStickColor:
+      params.glowStickColor !== undefined
+        ? {
+            left: params.glowStickColor[0],
+            right: params.glowStickColor[1],
+          }
+        : {
+            left: 'none',
+            right: 'none',
+          },
     join: params.join,
     birthday: params.birthday,
     height: params.height,
@@ -103,6 +98,15 @@ export const createMemberRaw = (
           ),
         };
       }) ?? [],
-    graduation,
+    graduation:
+      params.graduatedDate !== undefined
+        ? {
+            isGraduated: true,
+            graduatedDate: params.graduatedDate,
+          }
+        : {
+            isGraduated: false,
+            graduatedDate: '',
+          },
   };
 };

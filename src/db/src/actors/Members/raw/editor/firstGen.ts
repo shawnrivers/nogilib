@@ -16,13 +16,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: 'Instagram',
         url: 'https://www.instagram.com/manatsu.akimoto_official/',
       },
+      { title: 'profile', url: 'https://www.nogizaka46.com/s/n46/artist/7639' },
       {
         title: 'blog',
-        url: 'https://blog.nogizaka46.com/manatsu.akimoto/',
-      },
-      {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/akimotomanatsu.php',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=7639',
       },
       {
         title: '755',
@@ -340,17 +337,14 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: 'Instagram',
         url: 'https://www.instagram.com/asuka.3110.official/',
       },
+      { title: 'profile', url: 'https://www.nogizaka46.com/s/n46/artist/264' },
       {
         title: 'blog',
-        url: 'https://blog.nogizaka46.com/asuka.saito/',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=264',
       },
       {
         title: 'Weibo',
         url: 'https://weibo.com/saitoasukaofficial',
-      },
-      {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/saitouasuka.php',
       },
       {
         title: '755',
@@ -779,11 +773,11 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
       },
       {
         title: 'blog',
-        url: 'https://blog.nogizaka46.com/hina.higuchi/',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=277',
       },
       {
         title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/higuchihina.php',
+        url: 'https://www.nogizaka46.com/s/n46/artist/277',
       },
       {
         title: '755',
@@ -816,13 +810,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     bloodType: 'b',
     origin: '千葉県',
     sites: [
+      { title: 'profile', url: 'https://www.nogizaka46.com/s/n46/artist/279' },
       {
         title: 'blog',
-        url: 'https://blog.nogizaka46.com/minami.hoshino/',
-      },
-      {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/hoshinominami.php',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=279',
       },
       {
         title: '755',
@@ -980,13 +971,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: 'Instagram',
         url: 'https://www.instagram.com/wada_maaya_official/',
       },
+      { title: 'profile', url: 'https://www.nogizaka46.com/s/n46/artist/284' },
       {
         title: 'blog',
-        url: 'https://blog.nogizaka46.com/maaya.wada/',
-      },
-      {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/member/detail/wadamaaya.php',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=284',
       },
       {
         title: '755',

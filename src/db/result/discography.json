@@ -336,6 +336,18 @@
     "release": "2021-09-22"
   },
   {
+    "title": "Actually...",
+    "key": "actually",
+    "type": "single",
+    "number": "29",
+    "artwork": {
+      "sm": "/images/artworks/singles/29/A_a9edbdd7-d313-4e1d-8bcb-e56220d6ab71_@1x.jpg",
+      "md": "/images/artworks/singles/29/A_a9edbdd7-d313-4e1d-8bcb-e56220d6ab71_@2x.jpg",
+      "lg": "/images/artworks/singles/29/A_a9edbdd7-d313-4e1d-8bcb-e56220d6ab71_@3x.jpg"
+    },
+    "release": "2022-03-23"
+  },
+  {
     "title": "今が思い出になるまで",
     "key": "imagaomoideninarumade",
     "type": "album",

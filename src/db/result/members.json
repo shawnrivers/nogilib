@@ -435,9 +435,9 @@
       "graduatedDate": "2018-03-31"
     },
     "profileImage": {
-      "sm": "/images/members/others/kawamuramahiro_2021-08-03_d4b9bccf-2a36-4ee7-9221-f29283be0318_@1x.jpg",
-      "md": "/images/members/others/kawamuramahiro_2021-08-03_d4b9bccf-2a36-4ee7-9221-f29283be0318_@2x.jpg",
-      "lg": "/images/members/others/kawamuramahiro_2021-08-03_d4b9bccf-2a36-4ee7-9221-f29283be0318_@3x.jpg"
+      "sm": "/images/members/others/kawamuramahiro_2022-02-28_104d3285-5a8d-4a26-9263-8fc32b3c9bd9_@1x.jpg",
+      "md": "/images/members/others/kawamuramahiro_2022-02-28_104d3285-5a8d-4a26-9263-8fc32b3c9bd9_@2x.jpg",
+      "lg": "/images/members/others/kawamuramahiro_2022-02-28_104d3285-5a8d-4a26-9263-8fc32b3c9bd9_@3x.jpg"
     }
   },
   {
@@ -834,9 +834,9 @@
       "graduatedDate": "2022-02-10"
     },
     "profileImage": {
-      "sm": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@1x.jpg",
-      "md": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@2x.jpg",
-      "lg": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@3x.jpg"
+      "sm": "/images/members/others/shinuchimai_2022-02-17_55db71fd-b2a7-44e7-91c1-fd37721508f4_@1x.jpg",
+      "md": "/images/members/others/shinuchimai_2022-02-17_55db71fd-b2a7-44e7-91c1-fd37721508f4_@2x.jpg",
+      "lg": "/images/members/others/shinuchimai_2022-02-17_55db71fd-b2a7-44e7-91c1-fd37721508f4_@3x.jpg"
     }
   },
   {
@@ -939,9 +939,9 @@
       "graduatedDate": "2021-08-31"
     },
     "profileImage": {
-      "sm": "/images/members/singles/27/watanabemiria_6d8781be-f6bc-44b3-b3aa-31394d705fac_@1x.jpg",
-      "md": "/images/members/singles/27/watanabemiria_6d8781be-f6bc-44b3-b3aa-31394d705fac_@2x.jpg",
-      "lg": "/images/members/singles/27/watanabemiria_6d8781be-f6bc-44b3-b3aa-31394d705fac_@3x.jpg"
+      "sm": "/images/members/others/watanabemiria_2022-03-01_bf7f8525-3d63-41f5-910a-b89f4e504bb2_@1x.jpg",
+      "md": "/images/members/others/watanabemiria_2022-03-01_bf7f8525-3d63-41f5-910a-b89f4e504bb2_@2x.jpg",
+      "lg": "/images/members/others/watanabemiria_2022-03-01_bf7f8525-3d63-41f5-910a-b89f4e504bb2_@3x.jpg"
     }
   },
   {
@@ -1614,6 +1614,174 @@
       "sm": "/images/members/singles/28/yumikinao_a886f6f4-d701-4baa-b93b-8ba08c82db26_@1x.jpg",
       "md": "/images/members/singles/28/yumikinao_a886f6f4-d701-4baa-b93b-8ba08c82db26_@2x.jpg",
       "lg": "/images/members/singles/28/yumikinao_a886f6f4-d701-4baa-b93b-8ba08c82db26_@3x.jpg"
+    }
+  },
+  {
+    "name": "inouenagi",
+    "nameNotations": {
+      "lastName": "井上",
+      "firstName": "和",
+      "lastNameFurigana": "いのうえ",
+      "firstNameFurigana": "なぎ",
+      "lastNameEn": "inoue",
+      "firstNameEn": "nagi"
+    },
+    "join": "fifth",
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    },
+    "profileImage": {
+      "sm": "/images/members/others/inouenagi_2022-02-15_6e5f7be4-4925-4196-b021-add19b365922_@1x.jpg",
+      "md": "/images/members/others/inouenagi_2022-02-15_6e5f7be4-4925-4196-b021-add19b365922_@2x.jpg",
+      "lg": "/images/members/others/inouenagi_2022-02-15_6e5f7be4-4925-4196-b021-add19b365922_@3x.jpg"
+    }
+  },
+  {
+    "name": "ichinosemiku",
+    "nameNotations": {
+      "lastName": "一ノ瀬",
+      "firstName": "美空",
+      "lastNameFurigana": "いちのせ",
+      "firstNameFurigana": "みく",
+      "lastNameEn": "ichinose",
+      "firstNameEn": "miku"
+    },
+    "join": "fifth",
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    },
+    "profileImage": {
+      "sm": "/images/members/others/ichinosemiku_2022-02-15_2a236e5f-7be4-4925-a196-7021add19b36_@1x.jpg",
+      "md": "/images/members/others/ichinosemiku_2022-02-15_2a236e5f-7be4-4925-a196-7021add19b36_@2x.jpg",
+      "lg": "/images/members/others/ichinosemiku_2022-02-15_2a236e5f-7be4-4925-a196-7021add19b36_@3x.jpg"
+    }
+  },
+  {
+    "name": "sugawarasatsuki",
+    "nameNotations": {
+      "lastName": "菅原",
+      "firstName": "咲月",
+      "lastNameFurigana": "すがわら",
+      "firstNameFurigana": "さつき",
+      "lastNameEn": "sugawara",
+      "firstNameEn": "satsuki"
+    },
+    "join": "fifth",
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    },
+    "profileImage": {
+      "sm": "/images/members/others/sugawarasatsuki_2022-02-15_6c2a236e-5f7b-4449-a521-967021add19b_@1x.jpg",
+      "md": "/images/members/others/sugawarasatsuki_2022-02-15_6c2a236e-5f7b-4449-a521-967021add19b_@2x.jpg",
+      "lg": "/images/members/others/sugawarasatsuki_2022-02-15_6c2a236e-5f7b-4449-a521-967021add19b_@3x.jpg"
+    }
+  },
+  {
+    "name": "ogawaaya",
+    "nameNotations": {
+      "lastName": "小川",
+      "firstName": "彩",
+      "lastNameFurigana": "おがわ",
+      "firstNameFurigana": "あや",
+      "lastNameEn": "ogawa",
+      "firstNameEn": "aya"
+    },
+    "join": "fifth",
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    },
+    "profileImage": {
+      "sm": "/images/members/others/ogawaaya_2022-02-15_4f606c2a-236e-4f7b-a449-2521967021ad_@1x.jpg",
+      "md": "/images/members/others/ogawaaya_2022-02-15_4f606c2a-236e-4f7b-a449-2521967021ad_@2x.jpg",
+      "lg": "/images/members/others/ogawaaya_2022-02-15_4f606c2a-236e-4f7b-a449-2521967021ad_@3x.jpg"
+    }
+  },
+  {
+    "name": "tomisatonao",
+    "nameNotations": {
+      "lastName": "冨里",
+      "firstName": "奈央",
+      "lastNameFurigana": "とみさと",
+      "firstNameFurigana": "なお",
+      "lastNameEn": "tomisato",
+      "firstNameEn": "nao"
+    },
+    "join": "fifth",
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    },
+    "profileImage": {
+      "sm": "/images/members/others/tomisatonao_2022-02-15_606c2a23-6e5f-4be4-8925-21967021add1_@1x.jpg",
+      "md": "/images/members/others/tomisatonao_2022-02-15_606c2a23-6e5f-4be4-8925-21967021add1_@2x.jpg",
+      "lg": "/images/members/others/tomisatonao_2022-02-15_606c2a23-6e5f-4be4-8925-21967021add1_@3x.jpg"
+    }
+  },
+  {
+    "name": "okudairoha",
+    "nameNotations": {
+      "lastName": "奥田",
+      "firstName": "いろは",
+      "lastNameFurigana": "おくだ",
+      "firstNameFurigana": "いろは",
+      "lastNameEn": "okuta",
+      "firstNameEn": "iroha"
+    },
+    "join": "fifth",
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    },
+    "profileImage": {
+      "sm": "/images/members/others/okudairoha_2022-02-15_3d4f606c-2a23-4e5f-bbe4-492521967021_@1x.jpg",
+      "md": "/images/members/others/okudairoha_2022-02-15_3d4f606c-2a23-4e5f-bbe4-492521967021_@2x.jpg",
+      "lg": "/images/members/others/okudairoha_2022-02-15_3d4f606c-2a23-4e5f-bbe4-492521967021_@3x.jpg"
+    }
+  },
+  {
+    "name": "nakanishiaruno",
+    "nameNotations": {
+      "lastName": "中西",
+      "firstName": "アルノ",
+      "lastNameFurigana": "なかにし",
+      "firstNameFurigana": "あるの",
+      "lastNameEn": "nakanishi",
+      "firstNameEn": "aruno"
+    },
+    "join": "fifth",
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    },
+    "profileImage": {
+      "sm": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@1x.jpg",
+      "md": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@2x.jpg",
+      "lg": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@3x.jpg"
+    }
+  },
+  {
+    "name": "iokimao",
+    "nameNotations": {
+      "lastName": "五百城",
+      "firstName": "茉央",
+      "lastNameFurigana": "いおき",
+      "firstNameFurigana": "まお",
+      "lastNameEn": "ioki",
+      "firstNameEn": "mao"
+    },
+    "join": "fifth",
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    },
+    "profileImage": {
+      "sm": "/images/members/others/iokimao_2022-02-15_5f7be449-2521-4670-a1ad-d19b3659225a_@1x.jpg",
+      "md": "/images/members/others/iokimao_2022-02-15_5f7be449-2521-4670-a1ad-d19b3659225a_@2x.jpg",
+      "lg": "/images/members/others/iokimao_2022-02-15_5f7be449-2521-4670-a1ad-d19b3659225a_@3x.jpg"
     }
   }
 ]

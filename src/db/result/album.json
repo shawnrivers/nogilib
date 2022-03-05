@@ -3564,6 +3564,139 @@
     ]
   },
   {
+    "key": "actually",
+    "title": "Actually...",
+    "type": "single",
+    "number": "29",
+    "artworks": [
+      {
+        "url": {
+          "sm": "/images/artworks/singles/29/A_a9edbdd7-d313-4e1d-8bcb-e56220d6ab71_@1x.jpg",
+          "md": "/images/artworks/singles/29/A_a9edbdd7-d313-4e1d-8bcb-e56220d6ab71_@2x.jpg",
+          "lg": "/images/artworks/singles/29/A_a9edbdd7-d313-4e1d-8bcb-e56220d6ab71_@3x.jpg"
+        },
+        "type": "A"
+      },
+      {
+        "url": {
+          "sm": "/images/artworks/singles/29/B_197502a9-edbd-47d3-93de-1d8bcbe56220_@1x.jpg",
+          "md": "/images/artworks/singles/29/B_197502a9-edbd-47d3-93de-1d8bcbe56220_@2x.jpg",
+          "lg": "/images/artworks/singles/29/B_197502a9-edbd-47d3-93de-1d8bcbe56220_@3x.jpg"
+        },
+        "type": "B"
+      },
+      {
+        "url": {
+          "sm": "/images/artworks/singles/29/C_02a9edbd-d7d3-43de-9d8b-cbe56220d6ab_@1x.jpg",
+          "md": "/images/artworks/singles/29/C_02a9edbd-d7d3-43de-9d8b-cbe56220d6ab_@2x.jpg",
+          "lg": "/images/artworks/singles/29/C_02a9edbd-d7d3-43de-9d8b-cbe56220d6ab_@3x.jpg"
+        },
+        "type": "C"
+      },
+      {
+        "url": {
+          "sm": "/images/artworks/singles/29/D_7502a9ed-bdd7-4313-9e1d-8bcbe56220d6_@1x.jpg",
+          "md": "/images/artworks/singles/29/D_7502a9ed-bdd7-4313-9e1d-8bcbe56220d6_@2x.jpg",
+          "lg": "/images/artworks/singles/29/D_7502a9ed-bdd7-4313-9e1d-8bcbe56220d6_@3x.jpg"
+        },
+        "type": "D"
+      },
+      {
+        "url": {
+          "sm": "/images/artworks/singles/29/T_3d197502-a9ed-4dd7-9313-de1d8bcbe562_@1x.jpg",
+          "md": "/images/artworks/singles/29/T_3d197502-a9ed-4dd7-9313-de1d8bcbe562_@2x.jpg",
+          "lg": "/images/artworks/singles/29/T_3d197502-a9ed-4dd7-9313-de1d8bcbe562_@3x.jpg"
+        },
+        "type": "T"
+      }
+    ],
+    "release": "2022-03-23",
+    "songs": [
+      {
+        "key": "actually",
+        "title": "Actually...",
+        "type": "title",
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ]
+      },
+      {
+        "key": "fukayomi",
+        "title": "深読み",
+        "type": "coupling",
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ]
+      },
+      {
+        "key": "kachiarumono",
+        "title": "価値あるもの",
+        "type": "unit",
+        "inCdType": [
+          "A"
+        ]
+      },
+      {
+        "key": "wasurenaitoiina",
+        "title": "忘れないといいな",
+        "type": "solo",
+        "inCdType": [
+          "B"
+        ]
+      },
+      {
+        "key": "todokanakudatte",
+        "title": "届かなくたって…",
+        "type": "under",
+        "inCdType": [
+          "C"
+        ]
+      },
+      {
+        "key": "zetsubounoichibyoumae",
+        "title": "絶望の一秒前",
+        "type": "fifth generation",
+        "inCdType": [
+          "D"
+        ]
+      },
+      {
+        "key": "sukininattemita",
+        "title": "好きになってみた",
+        "type": "coupling",
+        "inCdType": [
+          "T"
+        ]
+      }
+    ],
+    "centers": [
+      {
+        "name": "nakanishiaruno",
+        "nameNotations": {
+          "lastName": "中西",
+          "firstName": "アルノ",
+          "lastNameFurigana": "なかにし",
+          "firstNameFurigana": "あるの",
+          "lastNameEn": "nakanishi",
+          "firstNameEn": "aruno"
+        },
+        "albumProfileImage": {
+          "sm": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@1x.jpg",
+          "md": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@2x.jpg",
+          "lg": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@3x.jpg"
+        }
+      }
+    ]
+  },
+  {
     "key": "imagaomoideninarumade",
     "title": "今が思い出になるまで",
     "type": "album",

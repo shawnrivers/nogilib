@@ -69,6 +69,7 @@ export const THIRD_ALBUM_SONGS: SongRaw[] = [
       lyrics: ['秋元康'],
       compose: ['ミサマサカリヲ'],
       arrange: ['遠藤ナオキ'],
+      direct: ['岡川太郎'],
     },
     center: ['oozonomomoko'],
     formations: {

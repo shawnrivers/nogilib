@@ -147,11 +147,11 @@
       },
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/manatsu.akimoto/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=7639"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/akimotomanatsu.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/7639"
       },
       {
         "title": "755",
@@ -304,12 +304,16 @@
       {
         "singleNumber": "28",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "29",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 20,
-      "selected": 25,
+      "fukujin": 21,
+      "selected": 26,
       "under": 0
     }
   },
@@ -649,6 +653,10 @@
       {
         "singleNumber": "28",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -931,6 +939,10 @@
       },
       {
         "singleNumber": "28",
+        "position": "none"
+      },
+      {
+        "singleNumber": "29",
         "position": "none"
       }
     ],
@@ -1229,6 +1241,10 @@
       },
       {
         "singleNumber": "28",
+        "position": "none"
+      },
+      {
+        "singleNumber": "29",
         "position": "none"
       }
     ],
@@ -1549,6 +1565,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -1840,6 +1860,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -2005,11 +2029,11 @@
       },
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/asuka.saito/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=264"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/saitouasuka.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/264"
       },
       {
         "title": "Weibo",
@@ -2150,12 +2174,16 @@
       {
         "singleNumber": "28",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "29",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 4,
-      "fukujin": 16,
-      "selected": 21,
+      "fukujin": 17,
+      "selected": 22,
       "under": 7
     }
   },
@@ -2446,6 +2474,10 @@
       },
       {
         "singleNumber": "28",
+        "position": "none"
+      },
+      {
+        "singleNumber": "29",
         "position": "none"
       }
     ],
@@ -2760,6 +2792,10 @@
       },
       {
         "singleNumber": "28",
+        "position": "none"
+      },
+      {
+        "singleNumber": "29",
         "position": "none"
       }
     ],
@@ -3115,6 +3151,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -3445,6 +3485,10 @@
       {
         "singleNumber": "28",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -3746,6 +3790,10 @@
       },
       {
         "singleNumber": "28",
+        "position": "none"
+      },
+      {
+        "singleNumber": "29",
         "position": "none"
       }
     ],
@@ -4080,6 +4128,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -4364,6 +4416,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -4527,11 +4583,11 @@
       },
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/hina.higuchi/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=277"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/higuchihina.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/277"
       },
       {
         "title": "755",
@@ -4672,12 +4728,16 @@
       {
         "singleNumber": "28",
         "position": "selected"
+      },
+      {
+        "singleNumber": "29",
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 1,
-      "selected": 6,
+      "selected": 7,
       "under": 22
     }
   },
@@ -4833,11 +4893,11 @@
     "sites": [
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/minami.hoshino/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=279"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/hoshinominami.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/279"
       },
       {
         "title": "755",
@@ -4974,6 +5034,10 @@
       {
         "singleNumber": "28",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -5304,6 +5368,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -5619,6 +5687,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -5784,11 +5856,11 @@
       },
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/maaya.wada/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=284"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/wadamaaya.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/284"
       },
       {
         "title": "755",
@@ -5908,6 +5980,10 @@
       {
         "singleNumber": "28",
         "position": "under"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -6164,6 +6240,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -6184,11 +6264,16 @@
       "firstNameEn": "mahiro"
     },
     "profileImage": {
-      "sm": "/images/members/others/kawamuramahiro_2021-08-03_d4b9bccf-2a36-4ee7-9221-f29283be0318_@1x.jpg",
-      "md": "/images/members/others/kawamuramahiro_2021-08-03_d4b9bccf-2a36-4ee7-9221-f29283be0318_@2x.jpg",
-      "lg": "/images/members/others/kawamuramahiro_2021-08-03_d4b9bccf-2a36-4ee7-9221-f29283be0318_@3x.jpg"
+      "sm": "/images/members/others/kawamuramahiro_2022-02-28_104d3285-5a8d-4a26-9263-8fc32b3c9bd9_@1x.jpg",
+      "md": "/images/members/others/kawamuramahiro_2022-02-28_104d3285-5a8d-4a26-9263-8fc32b3c9bd9_@2x.jpg",
+      "lg": "/images/members/others/kawamuramahiro_2022-02-28_104d3285-5a8d-4a26-9263-8fc32b3c9bd9_@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/others/kawamuramahiro_2022-02-28_104d3285-5a8d-4a26-9263-8fc32b3c9bd9_@1x.jpg",
+        "md": "/images/members/others/kawamuramahiro_2022-02-28_104d3285-5a8d-4a26-9263-8fc32b3c9bd9_@2x.jpg",
+        "lg": "/images/members/others/kawamuramahiro_2022-02-28_104d3285-5a8d-4a26-9263-8fc32b3c9bd9_@3x.jpg"
+      },
       {
         "sm": "/images/members/others/kawamuramahiro_2021-08-03_d4b9bccf-2a36-4ee7-9221-f29283be0318_@1x.jpg",
         "md": "/images/members/others/kawamuramahiro_2021-08-03_d4b9bccf-2a36-4ee7-9221-f29283be0318_@2x.jpg",
@@ -6441,6 +6526,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -6691,6 +6780,10 @@
       },
       {
         "singleNumber": "28",
+        "position": "none"
+      },
+      {
+        "singleNumber": "29",
         "position": "none"
       }
     ],
@@ -6980,6 +7073,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -7244,6 +7341,10 @@
       },
       {
         "singleNumber": "28",
+        "position": "none"
+      },
+      {
+        "singleNumber": "29",
         "position": "none"
       }
     ],
@@ -7517,6 +7618,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -7765,6 +7870,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -7961,6 +8070,10 @@
       },
       {
         "singleNumber": "28",
+        "position": "none"
+      },
+      {
+        "singleNumber": "29",
         "position": "none"
       }
     ],
@@ -8185,6 +8298,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -8394,6 +8511,10 @@
       },
       {
         "singleNumber": "28",
+        "position": "none"
+      },
+      {
+        "singleNumber": "29",
         "position": "none"
       }
     ],
@@ -8622,6 +8743,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -8837,6 +8962,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -9049,6 +9178,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -9239,6 +9372,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -9418,6 +9555,10 @@
       },
       {
         "singleNumber": "28",
+        "position": "none"
+      },
+      {
+        "singleNumber": "29",
         "position": "none"
       }
     ],
@@ -9602,6 +9743,10 @@
       },
       {
         "singleNumber": "28",
+        "position": "none"
+      },
+      {
+        "singleNumber": "29",
         "position": "none"
       }
     ],
@@ -9851,6 +9996,10 @@
       },
       {
         "singleNumber": "28",
+        "position": "none"
+      },
+      {
+        "singleNumber": "29",
         "position": "none"
       }
     ],
@@ -10128,6 +10277,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -10263,11 +10416,11 @@
       },
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/hinako.kitano/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=16454"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/kitanohinako.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/16454"
       },
       {
         "title": "755",
@@ -10420,6 +10573,10 @@
       {
         "singleNumber": "28",
         "position": "selected"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -10665,6 +10822,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -10685,11 +10846,16 @@
       "firstNameEn": "mai"
     },
     "profileImage": {
-      "sm": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@1x.jpg",
-      "md": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@2x.jpg",
-      "lg": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@3x.jpg"
+      "sm": "/images/members/others/shinuchimai_2022-02-17_55db71fd-b2a7-44e7-91c1-fd37721508f4_@1x.jpg",
+      "md": "/images/members/others/shinuchimai_2022-02-17_55db71fd-b2a7-44e7-91c1-fd37721508f4_@2x.jpg",
+      "lg": "/images/members/others/shinuchimai_2022-02-17_55db71fd-b2a7-44e7-91c1-fd37721508f4_@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/others/shinuchimai_2022-02-17_55db71fd-b2a7-44e7-91c1-fd37721508f4_@1x.jpg",
+        "md": "/images/members/others/shinuchimai_2022-02-17_55db71fd-b2a7-44e7-91c1-fd37721508f4_@2x.jpg",
+        "lg": "/images/members/others/shinuchimai_2022-02-17_55db71fd-b2a7-44e7-91c1-fd37721508f4_@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@1x.jpg",
         "md": "/images/members/singles/28/shinuchimai_fa5ab237-1557-475c-9911-fad261b99581_@2x.jpg",
@@ -10800,15 +10966,11 @@
       },
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/mai.shinuchi/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=17068"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/shinuchimai.php"
-      },
-      {
-        "title": "755",
-        "url": "https://7gogo.jp/shinuchi-mai"
+        "url": "https://www.centforce.com/profile/t_profile/shinuchimai.html"
       }
     ],
     "photoAlbums": [
@@ -10961,6 +11123,10 @@
       {
         "singleNumber": "28",
         "position": "selected"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -11091,12 +11257,16 @@
     },
     "sites": [
       {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/ayane.suzuki_official/"
+      },
+      {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/ayane.suzuki/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=17378"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/suzukiayane.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/17378"
       },
       {
         "title": "755",
@@ -11233,12 +11403,16 @@
       {
         "singleNumber": "28",
         "position": "selected"
+      },
+      {
+        "singleNumber": "29",
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 3,
+      "selected": 4,
       "under": 14
     }
   },
@@ -11494,6 +11668,10 @@
       {
         "singleNumber": "28",
         "position": "under"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -11802,6 +11980,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -11935,11 +12117,11 @@
       },
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/rena.yamazaki/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=17381"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/yamazakirena.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/17381"
       },
       {
         "title": "755",
@@ -12059,6 +12241,10 @@
       {
         "singleNumber": "28",
         "position": "under"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -12079,11 +12265,16 @@
       "firstNameEn": "miria"
     },
     "profileImage": {
-      "sm": "/images/members/singles/27/watanabemiria_6d8781be-f6bc-44b3-b3aa-31394d705fac_@1x.jpg",
-      "md": "/images/members/singles/27/watanabemiria_6d8781be-f6bc-44b3-b3aa-31394d705fac_@2x.jpg",
-      "lg": "/images/members/singles/27/watanabemiria_6d8781be-f6bc-44b3-b3aa-31394d705fac_@3x.jpg"
+      "sm": "/images/members/others/watanabemiria_2022-03-01_bf7f8525-3d63-41f5-910a-b89f4e504bb2_@1x.jpg",
+      "md": "/images/members/others/watanabemiria_2022-03-01_bf7f8525-3d63-41f5-910a-b89f4e504bb2_@2x.jpg",
+      "lg": "/images/members/others/watanabemiria_2022-03-01_bf7f8525-3d63-41f5-910a-b89f4e504bb2_@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/others/watanabemiria_2022-03-01_bf7f8525-3d63-41f5-910a-b89f4e504bb2_@1x.jpg",
+        "md": "/images/members/others/watanabemiria_2022-03-01_bf7f8525-3d63-41f5-910a-b89f4e504bb2_@2x.jpg",
+        "lg": "/images/members/others/watanabemiria_2022-03-01_bf7f8525-3d63-41f5-910a-b89f4e504bb2_@3x.jpg"
+      },
       {
         "sm": "/images/members/singles/27/watanabemiria_6d8781be-f6bc-44b3-b3aa-31394d705fac_@1x.jpg",
         "md": "/images/members/singles/27/watanabemiria_6d8781be-f6bc-44b3-b3aa-31394d705fac_@2x.jpg",
@@ -12186,6 +12377,14 @@
       {
         "title": "Instagram",
         "url": "https://www.instagram.com/miria.watanabe_official/"
+      },
+      {
+        "title": "official",
+        "url": "https://www.alligator-ltd.jp/talent/watanabe_miria/index.html"
+      },
+      {
+        "title": "fan club",
+        "url": "https://fanicon.net/fancommunities/4430"
       },
       {
         "title": "755",
@@ -12321,6 +12520,10 @@
       },
       {
         "singleNumber": "28",
+        "position": "none"
+      },
+      {
+        "singleNumber": "29",
         "position": "none"
       }
     ],
@@ -12537,6 +12740,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -12721,6 +12928,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -12891,6 +13102,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -13060,6 +13275,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -13144,11 +13363,11 @@
     "sites": [
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/riria.itou/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=36749"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/itouriria.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/36749"
       }
     ],
     "photoAlbums": [],
@@ -13264,6 +13483,10 @@
       {
         "singleNumber": "28",
         "position": "under"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -13348,11 +13571,11 @@
     "sites": [
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/renka.iwamoto/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=36750"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/iwamotorenka.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/36750"
       }
     ],
     "photoAlbums": [],
@@ -13468,12 +13691,16 @@
       {
         "singleNumber": "28",
         "position": "selected"
+      },
+      {
+        "singleNumber": "29",
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 1,
-      "selected": 6,
+      "selected": 7,
       "under": 3
     }
   },
@@ -13558,11 +13785,11 @@
       },
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/minami.umezawa/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=36751"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/umezawaminami.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/36751"
       }
     ],
     "photoAlbums": [
@@ -13695,12 +13922,16 @@
       {
         "singleNumber": "28",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "29",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 6,
-      "selected": 8,
+      "fukujin": 7,
+      "selected": 9,
       "under": 1
     }
   },
@@ -13896,6 +14127,10 @@
       {
         "singleNumber": "28",
         "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -13981,12 +14216,16 @@
     },
     "sites": [
       {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/kubo.shiori.official/"
+      },
+      {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/shiori.kubo/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=36753"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/kuboshiori.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/36753"
       }
     ],
     "photoAlbums": [],
@@ -14102,12 +14341,16 @@
       {
         "singleNumber": "28",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "29",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 5,
-      "selected": 7,
+      "fukujin": 6,
+      "selected": 8,
       "under": 1
     }
   },
@@ -14192,11 +14435,11 @@
       },
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/tamami.sakaguchi/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=36754"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/sakaguchitamami.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/36754"
       }
     ],
     "photoAlbums": [],
@@ -14312,6 +14555,10 @@
       {
         "singleNumber": "28",
         "position": "under"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -14400,11 +14647,11 @@
       },
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/kaede.satou/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=36755"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/satoukaede.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/36755"
       }
     ],
     "photoAlbums": [],
@@ -14520,6 +14767,10 @@
       {
         "singleNumber": "28",
         "position": "under"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -14608,11 +14859,11 @@
       },
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/reno.nakamura/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=36756"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/nakamurareno.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/36756"
       }
     ],
     "photoAlbums": [],
@@ -14728,6 +14979,10 @@
       {
         "singleNumber": "28",
         "position": "under"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -14816,11 +15071,11 @@
       },
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/hazuki.mukai/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=36757"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/mukaihazuki.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/36757"
       }
     ],
     "photoAlbums": [],
@@ -14936,6 +15191,10 @@
       {
         "singleNumber": "28",
         "position": "under"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -15028,11 +15287,11 @@
       },
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/mizuki.yamashita/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=36758"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/yamashitamizuki.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/36758"
       }
     ],
     "photoAlbums": [
@@ -15165,12 +15424,16 @@
       {
         "singleNumber": "28",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "29",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 1,
-      "fukujin": 7,
-      "selected": 8,
+      "fukujin": 8,
+      "selected": 9,
       "under": 0
     }
   },
@@ -15253,11 +15516,11 @@
       },
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/ayanochristie.yoshida/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=36759"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/yoshidaayanochristie.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/36759"
       }
     ],
     "photoAlbums": [],
@@ -15373,6 +15636,10 @@
       {
         "singleNumber": "28",
         "position": "under"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -15463,11 +15730,11 @@
       },
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/yuuki.yoda/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=36760"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/yodayuuki.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/36760"
       }
     ],
     "photoAlbums": [
@@ -15616,12 +15883,16 @@
       {
         "singleNumber": "28",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "29",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 1,
-      "fukujin": 9,
-      "selected": 10,
+      "fukujin": 10,
+      "selected": 11,
       "under": 0
     }
   },
@@ -15690,11 +15961,11 @@
     "sites": [
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/sakura.endou/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=48006"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/endousakura.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/48006"
       }
     ],
     "photoAlbums": [],
@@ -15810,12 +16081,16 @@
       {
         "singleNumber": "28",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "29",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 2,
-      "fukujin": 4,
-      "selected": 5,
+      "fukujin": 5,
+      "selected": 6,
       "under": 0
     }
   },
@@ -15884,11 +16159,11 @@
     "sites": [
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/haruka.kaki/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=48008"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/kakiharuka.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/48008"
       }
     ],
     "photoAlbums": [],
@@ -16004,12 +16279,16 @@
       {
         "singleNumber": "28",
         "position": "center"
+      },
+      {
+        "singleNumber": "29",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 1,
-      "fukujin": 4,
-      "selected": 5,
+      "fukujin": 5,
+      "selected": 6,
       "under": 0
     }
   },
@@ -16078,11 +16357,11 @@
     "sites": [
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/sayaka.kakehashi/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=48009"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/kakehashisayaka.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/48009"
       }
     ],
     "photoAlbums": [],
@@ -16198,12 +16477,16 @@
       {
         "singleNumber": "28",
         "position": "under"
+      },
+      {
+        "singleNumber": "29",
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 0,
+      "selected": 1,
       "under": 1
     }
   },
@@ -16272,11 +16555,11 @@
     "sites": [
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/saya.kanagawa/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=48010"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/kanagawasaya.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/48010"
       }
     ],
     "photoAlbums": [],
@@ -16392,6 +16675,10 @@
       {
         "singleNumber": "28",
         "position": "under"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -16466,11 +16753,11 @@
     "sites": [
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/yuri.kitagawa/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=48012"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/kitagawayuri.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/48012"
       }
     ],
     "photoAlbums": [],
@@ -16586,6 +16873,10 @@
       {
         "singleNumber": "28",
         "position": "under"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -16660,11 +16951,11 @@
     "sites": [
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/yuna.shibata/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=48013"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/shibatayuna.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/48013"
       }
     ],
     "photoAlbums": [],
@@ -16780,12 +17071,16 @@
       {
         "singleNumber": "28",
         "position": "under"
+      },
+      {
+        "singleNumber": "29",
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 0,
+      "selected": 1,
       "under": 1
     }
   },
@@ -16854,11 +17149,11 @@
     "sites": [
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/rei.seimiya/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=48014"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/seimiyarei.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/48014"
       }
     ],
     "photoAlbums": [],
@@ -16974,12 +17269,16 @@
       {
         "singleNumber": "28",
         "position": "selected"
+      },
+      {
+        "singleNumber": "29",
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 2,
+      "selected": 3,
       "under": 0
     }
   },
@@ -17048,11 +17347,11 @@
     "sites": [
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/mayu.tamura/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=48015"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/tamuramayu.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/48015"
       }
     ],
     "photoAlbums": [],
@@ -17168,12 +17467,16 @@
       {
         "singleNumber": "28",
         "position": "selected"
+      },
+      {
+        "singleNumber": "29",
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 3,
+      "selected": 4,
       "under": 0
     }
   },
@@ -17242,11 +17545,11 @@
     "sites": [
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/ayame.tsutsui/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=48017"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/tsutsuiayame.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/48017"
       }
     ],
     "photoAlbums": [],
@@ -17362,12 +17665,16 @@
       {
         "singleNumber": "28",
         "position": "fukujin"
+      },
+      {
+        "singleNumber": "29",
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 2,
-      "selected": 4,
+      "fukujin": 3,
+      "selected": 5,
       "under": 0
     }
   },
@@ -17436,11 +17743,11 @@
     "sites": [
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/seira.hayakawa/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=48018"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/hayakawaseira.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/48018"
       }
     ],
     "photoAlbums": [],
@@ -17556,12 +17863,16 @@
       {
         "singleNumber": "28",
         "position": "selected"
+      },
+      {
+        "singleNumber": "29",
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 2,
+      "selected": 3,
       "under": 0
     }
   },
@@ -17630,11 +17941,11 @@
     "sites": [
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/mio.yakubo/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=48019"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/yakubomio.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/48019"
       }
     ],
     "photoAlbums": [],
@@ -17750,6 +18061,10 @@
       {
         "singleNumber": "28",
         "position": "under"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -17824,15 +18139,11 @@
     "sites": [
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/haruka.kuromi/"
-      },
-      {
-        "title": "Fourth Gen Blog",
-        "url": "https://blog.nogizaka46.com/newfourth/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=55383"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/kuromiharuka.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/55383"
       }
     ],
     "photoAlbums": [],
@@ -17948,6 +18259,10 @@
       {
         "singleNumber": "28",
         "position": "under"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -18022,15 +18337,11 @@
     "sites": [
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/rika.satou/"
-      },
-      {
-        "title": "Fourth Gen Blog",
-        "url": "https://blog.nogizaka46.com/newfourth/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=55384"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/satourika.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/55384"
       }
     ],
     "photoAlbums": [],
@@ -18146,6 +18457,10 @@
       {
         "singleNumber": "28",
         "position": "under"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -18220,15 +18535,11 @@
     "sites": [
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/runa.hayashi/"
-      },
-      {
-        "title": "Fourth Gen Blog",
-        "url": "https://blog.nogizaka46.com/newfourth/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=55385"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/hayashiruna.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/55385"
       }
     ],
     "photoAlbums": [],
@@ -18344,6 +18655,10 @@
       {
         "singleNumber": "28",
         "position": "under"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -18413,15 +18728,11 @@
     "sites": [
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/miyu.matsuo/"
-      },
-      {
-        "title": "Fourth Gen Blog",
-        "url": "https://blog.nogizaka46.com/newfourth/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=55386"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/mastuomiyu.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/55386"
       }
     ],
     "photoAlbums": [],
@@ -18537,6 +18848,10 @@
       {
         "singleNumber": "28",
         "position": "under"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -18611,15 +18926,11 @@
     "sites": [
       {
         "title": "blog",
-        "url": "https://blog.nogizaka46.com/nao.yumiki/"
-      },
-      {
-        "title": "Fourth Gen Blog",
-        "url": "https://blog.nogizaka46.com/newfourth/"
+        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=55387"
       },
       {
         "title": "profile",
-        "url": "https://www.nogizaka46.com/member/detail/yumikinao.php"
+        "url": "https://www.nogizaka46.com/s/n46/artist/55387"
       }
     ],
     "photoAlbums": [],
@@ -18735,6 +19046,10 @@
       {
         "singleNumber": "28",
         "position": "under"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
       }
     ],
     "positionsCounter": {
@@ -18742,6 +19057,1318 @@
       "fukujin": 0,
       "selected": 0,
       "under": 1
+    }
+  },
+  {
+    "name": "inouenagi",
+    "nameNotations": {
+      "lastName": "井上",
+      "firstName": "和",
+      "lastNameFurigana": "いのうえ",
+      "firstNameFurigana": "なぎ",
+      "lastNameEn": "inoue",
+      "firstNameEn": "nagi"
+    },
+    "profileImage": {
+      "sm": "/images/members/others/inouenagi_2022-02-15_6e5f7be4-4925-4196-b021-add19b365922_@1x.jpg",
+      "md": "/images/members/others/inouenagi_2022-02-15_6e5f7be4-4925-4196-b021-add19b365922_@2x.jpg",
+      "lg": "/images/members/others/inouenagi_2022-02-15_6e5f7be4-4925-4196-b021-add19b365922_@3x.jpg"
+    },
+    "gallery": [
+      {
+        "sm": "/images/members/others/inouenagi_2022-02-15_6e5f7be4-4925-4196-b021-add19b365922_@1x.jpg",
+        "md": "/images/members/others/inouenagi_2022-02-15_6e5f7be4-4925-4196-b021-add19b365922_@2x.jpg",
+        "lg": "/images/members/others/inouenagi_2022-02-15_6e5f7be4-4925-4196-b021-add19b365922_@3x.jpg"
+      }
+    ],
+    "join": "fifth",
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    },
+    "birthday": "2005-02-17",
+    "height": 156,
+    "bloodType": "b",
+    "origin": "神奈川県",
+    "units": [],
+    "corps": [],
+    "glowStickColor": {
+      "left": "none",
+      "right": "none"
+    },
+    "sites": [],
+    "photoAlbums": [],
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      },
+      {
+        "singleNumber": "25",
+        "position": "none"
+      },
+      {
+        "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
+      },
+      {
+        "singleNumber": "28",
+        "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
+      }
+    ],
+    "positionsCounter": {
+      "center": 0,
+      "fukujin": 0,
+      "selected": 0,
+      "under": 0
+    }
+  },
+  {
+    "name": "ichinosemiku",
+    "nameNotations": {
+      "lastName": "一ノ瀬",
+      "firstName": "美空",
+      "lastNameFurigana": "いちのせ",
+      "firstNameFurigana": "みく",
+      "lastNameEn": "ichinose",
+      "firstNameEn": "miku"
+    },
+    "profileImage": {
+      "sm": "/images/members/others/ichinosemiku_2022-02-15_2a236e5f-7be4-4925-a196-7021add19b36_@1x.jpg",
+      "md": "/images/members/others/ichinosemiku_2022-02-15_2a236e5f-7be4-4925-a196-7021add19b36_@2x.jpg",
+      "lg": "/images/members/others/ichinosemiku_2022-02-15_2a236e5f-7be4-4925-a196-7021add19b36_@3x.jpg"
+    },
+    "gallery": [
+      {
+        "sm": "/images/members/others/ichinosemiku_2022-02-15_2a236e5f-7be4-4925-a196-7021add19b36_@1x.jpg",
+        "md": "/images/members/others/ichinosemiku_2022-02-15_2a236e5f-7be4-4925-a196-7021add19b36_@2x.jpg",
+        "lg": "/images/members/others/ichinosemiku_2022-02-15_2a236e5f-7be4-4925-a196-7021add19b36_@3x.jpg"
+      }
+    ],
+    "join": "fifth",
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    },
+    "birthday": "2003-05-24",
+    "height": 156,
+    "bloodType": "b",
+    "origin": "福岡県",
+    "units": [],
+    "corps": [],
+    "glowStickColor": {
+      "left": "none",
+      "right": "none"
+    },
+    "sites": [],
+    "photoAlbums": [],
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      },
+      {
+        "singleNumber": "25",
+        "position": "none"
+      },
+      {
+        "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
+      },
+      {
+        "singleNumber": "28",
+        "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
+      }
+    ],
+    "positionsCounter": {
+      "center": 0,
+      "fukujin": 0,
+      "selected": 0,
+      "under": 0
+    }
+  },
+  {
+    "name": "sugawarasatsuki",
+    "nameNotations": {
+      "lastName": "菅原",
+      "firstName": "咲月",
+      "lastNameFurigana": "すがわら",
+      "firstNameFurigana": "さつき",
+      "lastNameEn": "sugawara",
+      "firstNameEn": "satsuki"
+    },
+    "profileImage": {
+      "sm": "/images/members/others/sugawarasatsuki_2022-02-15_6c2a236e-5f7b-4449-a521-967021add19b_@1x.jpg",
+      "md": "/images/members/others/sugawarasatsuki_2022-02-15_6c2a236e-5f7b-4449-a521-967021add19b_@2x.jpg",
+      "lg": "/images/members/others/sugawarasatsuki_2022-02-15_6c2a236e-5f7b-4449-a521-967021add19b_@3x.jpg"
+    },
+    "gallery": [
+      {
+        "sm": "/images/members/others/sugawarasatsuki_2022-02-15_6c2a236e-5f7b-4449-a521-967021add19b_@1x.jpg",
+        "md": "/images/members/others/sugawarasatsuki_2022-02-15_6c2a236e-5f7b-4449-a521-967021add19b_@2x.jpg",
+        "lg": "/images/members/others/sugawarasatsuki_2022-02-15_6c2a236e-5f7b-4449-a521-967021add19b_@3x.jpg"
+      }
+    ],
+    "join": "fifth",
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    },
+    "birthday": "2005-10-31",
+    "height": 157,
+    "bloodType": "a",
+    "origin": "千葉県",
+    "units": [],
+    "corps": [],
+    "glowStickColor": {
+      "left": "none",
+      "right": "none"
+    },
+    "sites": [],
+    "photoAlbums": [],
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      },
+      {
+        "singleNumber": "25",
+        "position": "none"
+      },
+      {
+        "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
+      },
+      {
+        "singleNumber": "28",
+        "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
+      }
+    ],
+    "positionsCounter": {
+      "center": 0,
+      "fukujin": 0,
+      "selected": 0,
+      "under": 0
+    }
+  },
+  {
+    "name": "ogawaaya",
+    "nameNotations": {
+      "lastName": "小川",
+      "firstName": "彩",
+      "lastNameFurigana": "おがわ",
+      "firstNameFurigana": "あや",
+      "lastNameEn": "ogawa",
+      "firstNameEn": "aya"
+    },
+    "profileImage": {
+      "sm": "/images/members/others/ogawaaya_2022-02-15_4f606c2a-236e-4f7b-a449-2521967021ad_@1x.jpg",
+      "md": "/images/members/others/ogawaaya_2022-02-15_4f606c2a-236e-4f7b-a449-2521967021ad_@2x.jpg",
+      "lg": "/images/members/others/ogawaaya_2022-02-15_4f606c2a-236e-4f7b-a449-2521967021ad_@3x.jpg"
+    },
+    "gallery": [
+      {
+        "sm": "/images/members/others/ogawaaya_2022-02-15_4f606c2a-236e-4f7b-a449-2521967021ad_@1x.jpg",
+        "md": "/images/members/others/ogawaaya_2022-02-15_4f606c2a-236e-4f7b-a449-2521967021ad_@2x.jpg",
+        "lg": "/images/members/others/ogawaaya_2022-02-15_4f606c2a-236e-4f7b-a449-2521967021ad_@3x.jpg"
+      }
+    ],
+    "join": "fifth",
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    },
+    "birthday": "2007-06-27",
+    "height": 154,
+    "bloodType": "b",
+    "origin": "千葉県",
+    "units": [],
+    "corps": [],
+    "glowStickColor": {
+      "left": "none",
+      "right": "none"
+    },
+    "sites": [],
+    "photoAlbums": [],
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      },
+      {
+        "singleNumber": "25",
+        "position": "none"
+      },
+      {
+        "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
+      },
+      {
+        "singleNumber": "28",
+        "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
+      }
+    ],
+    "positionsCounter": {
+      "center": 0,
+      "fukujin": 0,
+      "selected": 0,
+      "under": 0
+    }
+  },
+  {
+    "name": "tomisatonao",
+    "nameNotations": {
+      "lastName": "冨里",
+      "firstName": "奈央",
+      "lastNameFurigana": "とみさと",
+      "firstNameFurigana": "なお",
+      "lastNameEn": "tomisato",
+      "firstNameEn": "nao"
+    },
+    "profileImage": {
+      "sm": "/images/members/others/tomisatonao_2022-02-15_606c2a23-6e5f-4be4-8925-21967021add1_@1x.jpg",
+      "md": "/images/members/others/tomisatonao_2022-02-15_606c2a23-6e5f-4be4-8925-21967021add1_@2x.jpg",
+      "lg": "/images/members/others/tomisatonao_2022-02-15_606c2a23-6e5f-4be4-8925-21967021add1_@3x.jpg"
+    },
+    "gallery": [
+      {
+        "sm": "/images/members/others/tomisatonao_2022-02-15_606c2a23-6e5f-4be4-8925-21967021add1_@1x.jpg",
+        "md": "/images/members/others/tomisatonao_2022-02-15_606c2a23-6e5f-4be4-8925-21967021add1_@2x.jpg",
+        "lg": "/images/members/others/tomisatonao_2022-02-15_606c2a23-6e5f-4be4-8925-21967021add1_@3x.jpg"
+      }
+    ],
+    "join": "fifth",
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    },
+    "birthday": "2006-09-18",
+    "height": 164,
+    "bloodType": "o",
+    "origin": "千葉県",
+    "units": [],
+    "corps": [],
+    "glowStickColor": {
+      "left": "none",
+      "right": "none"
+    },
+    "sites": [],
+    "photoAlbums": [],
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      },
+      {
+        "singleNumber": "25",
+        "position": "none"
+      },
+      {
+        "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
+      },
+      {
+        "singleNumber": "28",
+        "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
+      }
+    ],
+    "positionsCounter": {
+      "center": 0,
+      "fukujin": 0,
+      "selected": 0,
+      "under": 0
+    }
+  },
+  {
+    "name": "okudairoha",
+    "nameNotations": {
+      "lastName": "奥田",
+      "firstName": "いろは",
+      "lastNameFurigana": "おくだ",
+      "firstNameFurigana": "いろは",
+      "lastNameEn": "okuta",
+      "firstNameEn": "iroha"
+    },
+    "profileImage": {
+      "sm": "/images/members/others/okudairoha_2022-02-15_3d4f606c-2a23-4e5f-bbe4-492521967021_@1x.jpg",
+      "md": "/images/members/others/okudairoha_2022-02-15_3d4f606c-2a23-4e5f-bbe4-492521967021_@2x.jpg",
+      "lg": "/images/members/others/okudairoha_2022-02-15_3d4f606c-2a23-4e5f-bbe4-492521967021_@3x.jpg"
+    },
+    "gallery": [
+      {
+        "sm": "/images/members/others/okudairoha_2022-02-15_3d4f606c-2a23-4e5f-bbe4-492521967021_@1x.jpg",
+        "md": "/images/members/others/okudairoha_2022-02-15_3d4f606c-2a23-4e5f-bbe4-492521967021_@2x.jpg",
+        "lg": "/images/members/others/okudairoha_2022-02-15_3d4f606c-2a23-4e5f-bbe4-492521967021_@3x.jpg"
+      }
+    ],
+    "join": "fifth",
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    },
+    "birthday": "2005-08-20",
+    "height": 157,
+    "bloodType": "a",
+    "origin": "千葉県",
+    "units": [],
+    "corps": [],
+    "glowStickColor": {
+      "left": "none",
+      "right": "none"
+    },
+    "sites": [],
+    "photoAlbums": [],
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      },
+      {
+        "singleNumber": "25",
+        "position": "none"
+      },
+      {
+        "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
+      },
+      {
+        "singleNumber": "28",
+        "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
+      }
+    ],
+    "positionsCounter": {
+      "center": 0,
+      "fukujin": 0,
+      "selected": 0,
+      "under": 0
+    }
+  },
+  {
+    "name": "nakanishiaruno",
+    "nameNotations": {
+      "lastName": "中西",
+      "firstName": "アルノ",
+      "lastNameFurigana": "なかにし",
+      "firstNameFurigana": "あるの",
+      "lastNameEn": "nakanishi",
+      "firstNameEn": "aruno"
+    },
+    "profileImage": {
+      "sm": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@1x.jpg",
+      "md": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@2x.jpg",
+      "lg": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@3x.jpg"
+    },
+    "gallery": [
+      {
+        "sm": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@1x.jpg",
+        "md": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@2x.jpg",
+        "lg": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@3x.jpg"
+      }
+    ],
+    "join": "fifth",
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    },
+    "birthday": "2003-03-17",
+    "height": 157,
+    "bloodType": "a",
+    "origin": "千葉県",
+    "units": [],
+    "corps": [],
+    "glowStickColor": {
+      "left": "none",
+      "right": "none"
+    },
+    "sites": [],
+    "photoAlbums": [],
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      },
+      {
+        "singleNumber": "25",
+        "position": "none"
+      },
+      {
+        "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
+      },
+      {
+        "singleNumber": "28",
+        "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "center"
+      }
+    ],
+    "positionsCounter": {
+      "center": 1,
+      "fukujin": 1,
+      "selected": 1,
+      "under": 0
+    }
+  },
+  {
+    "name": "iokimao",
+    "nameNotations": {
+      "lastName": "五百城",
+      "firstName": "茉央",
+      "lastNameFurigana": "いおき",
+      "firstNameFurigana": "まお",
+      "lastNameEn": "ioki",
+      "firstNameEn": "mao"
+    },
+    "profileImage": {
+      "sm": "/images/members/others/iokimao_2022-02-15_5f7be449-2521-4670-a1ad-d19b3659225a_@1x.jpg",
+      "md": "/images/members/others/iokimao_2022-02-15_5f7be449-2521-4670-a1ad-d19b3659225a_@2x.jpg",
+      "lg": "/images/members/others/iokimao_2022-02-15_5f7be449-2521-4670-a1ad-d19b3659225a_@3x.jpg"
+    },
+    "gallery": [
+      {
+        "sm": "/images/members/others/iokimao_2022-02-15_5f7be449-2521-4670-a1ad-d19b3659225a_@1x.jpg",
+        "md": "/images/members/others/iokimao_2022-02-15_5f7be449-2521-4670-a1ad-d19b3659225a_@2x.jpg",
+        "lg": "/images/members/others/iokimao_2022-02-15_5f7be449-2521-4670-a1ad-d19b3659225a_@3x.jpg"
+      }
+    ],
+    "join": "fifth",
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    },
+    "birthday": "2005-07-29",
+    "height": 166,
+    "bloodType": "o",
+    "origin": "兵庫県",
+    "units": [],
+    "corps": [],
+    "glowStickColor": {
+      "left": "none",
+      "right": "none"
+    },
+    "sites": [],
+    "photoAlbums": [],
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      },
+      {
+        "singleNumber": "25",
+        "position": "none"
+      },
+      {
+        "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
+      },
+      {
+        "singleNumber": "28",
+        "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
+      }
+    ],
+    "positionsCounter": {
+      "center": 0,
+      "fukujin": 0,
+      "selected": 0,
+      "under": 0
     }
   }
 ]

@@ -11,4 +11,5 @@ export type SongType =
   | 'second generation'
   | 'third generation'
   | 'fourth generation'
+  | 'fifth generation'
   | 'special';
