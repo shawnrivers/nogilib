@@ -48137,7 +48137,9 @@
       "lg": "/images/artworks/singles/29/A_a9edbdd7-d313-4e1d-8bcb-e56220d6ab71_@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
+      "lyrics": [
+        "秋元康"
+      ],
       "compose": [],
       "arrange": [],
       "direct": []
@@ -48494,10 +48496,14 @@
       "lg": "/images/artworks/singles/29/A_a9edbdd7-d313-4e1d-8bcb-e56220d6ab71_@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
+      "lyrics": [
+        "秋元康"
+      ],
       "compose": [],
       "arrange": [],
-      "direct": []
+      "direct": [
+        "東市篤憲"
+      ]
     },
     "single": {
       "title": "Actually...",
@@ -48514,60 +48520,6 @@
     },
     "performers": [
       [
-        {
-          "name": "kuboshiori",
-          "nameNotations": {
-            "lastName": "久保",
-            "firstName": "史緒里",
-            "lastNameFurigana": "くぼ",
-            "firstNameFurigana": "しおり",
-            "lastNameEn": "kubo",
-            "firstNameEn": "shiori"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@1x.jpg",
-            "md": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@2x.jpg",
-            "lg": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
-        {
-          "name": "sakaguchitamami",
-          "nameNotations": {
-            "lastName": "阪口",
-            "firstName": "珠美",
-            "lastNameFurigana": "さかぐち",
-            "firstNameFurigana": "たまみ",
-            "lastNameEn": "sakaguchi",
-            "firstNameEn": "tamami"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/28/sakaguchitamami_3b8ba08c-82db-4677-8fb8-f9f29f263d5b_@1x.jpg",
-            "md": "/images/members/singles/28/sakaguchitamami_3b8ba08c-82db-4677-8fb8-f9f29f263d5b_@2x.jpg",
-            "lg": "/images/members/singles/28/sakaguchitamami_3b8ba08c-82db-4677-8fb8-f9f29f263d5b_@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
-        {
-          "name": "nakamurareno",
-          "nameNotations": {
-            "lastName": "中村",
-            "firstName": "麗乃",
-            "lastNameFurigana": "なかむら",
-            "firstNameFurigana": "れの",
-            "lastNameEn": "nakamura",
-            "firstNameEn": "reno"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@1x.jpg",
-            "md": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@2x.jpg",
-            "lg": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
         {
           "name": "endousakura",
           "nameNotations": {
@@ -48587,6 +48539,24 @@
           "isMember": true
         },
         {
+          "name": "kuboshiori",
+          "nameNotations": {
+            "lastName": "久保",
+            "firstName": "史緒里",
+            "lastNameFurigana": "くぼ",
+            "firstNameFurigana": "しおり",
+            "lastNameEn": "kubo",
+            "firstNameEn": "shiori"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@1x.jpg",
+            "md": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@2x.jpg",
+            "lg": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@3x.jpg"
+          },
+          "position": "center",
+          "isMember": true
+        },
+        {
           "name": "kakiharuka",
           "nameNotations": {
             "lastName": "賀喜",
@@ -48603,21 +48573,23 @@
           },
           "position": null,
           "isMember": true
-        },
+        }
+      ],
+      [
         {
-          "name": "kanagawasaya",
+          "name": "nakamurareno",
           "nameNotations": {
-            "lastName": "金川",
-            "firstName": "紗耶",
-            "lastNameFurigana": "かながわ",
-            "firstNameFurigana": "さや",
-            "lastNameEn": "kanagawa",
-            "firstNameEn": "saya"
+            "lastName": "中村",
+            "firstName": "麗乃",
+            "lastNameFurigana": "なかむら",
+            "firstNameFurigana": "れの",
+            "lastNameEn": "nakamura",
+            "firstNameEn": "reno"
           },
           "profileImage": {
-            "sm": "/images/members/singles/28/kanagawasaya_feda1f6a-7d7f-4886-b6f4-d7017baab93b_@1x.jpg",
-            "md": "/images/members/singles/28/kanagawasaya_feda1f6a-7d7f-4886-b6f4-d7017baab93b_@2x.jpg",
-            "lg": "/images/members/singles/28/kanagawasaya_feda1f6a-7d7f-4886-b6f4-d7017baab93b_@3x.jpg"
+            "sm": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@1x.jpg",
+            "md": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@2x.jpg",
+            "lg": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@3x.jpg"
           },
           "position": null,
           "isMember": true
@@ -48641,6 +48613,24 @@
           "isMember": true
         },
         {
+          "name": "kanagawasaya",
+          "nameNotations": {
+            "lastName": "金川",
+            "firstName": "紗耶",
+            "lastNameFurigana": "かながわ",
+            "firstNameFurigana": "さや",
+            "lastNameEn": "kanagawa",
+            "firstNameEn": "saya"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/kanagawasaya_feda1f6a-7d7f-4886-b6f4-d7017baab93b_@1x.jpg",
+            "md": "/images/members/singles/28/kanagawasaya_feda1f6a-7d7f-4886-b6f4-d7017baab93b_@2x.jpg",
+            "lg": "/images/members/singles/28/kanagawasaya_feda1f6a-7d7f-4886-b6f4-d7017baab93b_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
           "name": "satourika",
           "nameNotations": {
             "lastName": "佐藤",
@@ -48654,6 +48644,24 @@
             "sm": "/images/members/singles/28/satourika_db26770f-b8f9-429f-a63d-5bacf3772705_@1x.jpg",
             "md": "/images/members/singles/28/satourika_db26770f-b8f9-429f-a63d-5bacf3772705_@2x.jpg",
             "lg": "/images/members/singles/28/satourika_db26770f-b8f9-429f-a63d-5bacf3772705_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "sakaguchitamami",
+          "nameNotations": {
+            "lastName": "阪口",
+            "firstName": "珠美",
+            "lastNameFurigana": "さかぐち",
+            "firstNameFurigana": "たまみ",
+            "lastNameEn": "sakaguchi",
+            "firstNameEn": "tamami"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/sakaguchitamami_3b8ba08c-82db-4677-8fb8-f9f29f263d5b_@1x.jpg",
+            "md": "/images/members/singles/28/sakaguchitamami_3b8ba08c-82db-4677-8fb8-f9f29f263d5b_@2x.jpg",
+            "lg": "/images/members/singles/28/sakaguchitamami_3b8ba08c-82db-4677-8fb8-f9f29f263d5b_@3x.jpg"
           },
           "position": null,
           "isMember": true
@@ -48671,7 +48679,9 @@
       "lg": "/images/artworks/singles/29/B_197502a9-edbd-47d3-93de-1d8bcbe56220_@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
+      "lyrics": [
+        "秋元康"
+      ],
       "compose": [],
       "arrange": [],
       "direct": []
@@ -48722,7 +48732,9 @@
       "lg": "/images/artworks/singles/29/C_02a9edbd-d7d3-43de-9d8b-cbe56220d6ab_@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
+      "lyrics": [
+        "秋元康"
+      ],
       "compose": [],
       "arrange": [],
       "direct": []
@@ -49043,7 +49055,9 @@
       "lg": "/images/artworks/singles/29/D_7502a9ed-bdd7-4313-9e1d-8bcbe56220d6_@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
+      "lyrics": [
+        "秋元康"
+      ],
       "compose": [],
       "arrange": [],
       "direct": []
@@ -49220,7 +49234,9 @@
       "lg": "/images/artworks/singles/29/T_3d197502-a9ed-4dd7-9313-de1d8bcbe562_@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
+      "lyrics": [
+        "秋元康"
+      ],
       "compose": [],
       "arrange": [],
       "direct": []

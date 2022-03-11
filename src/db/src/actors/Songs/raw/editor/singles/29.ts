@@ -42,6 +42,9 @@ export const TWENTY_NINTH_SINGLE_SONGS: SongRaw[] = [
     title: '深読み',
     type: 'coupling',
     center: [],
+    creators: {
+      lyrics: ['秋元康'],
+    },
     formations: {
       firstRow: [
         'umezawaminami',
@@ -72,29 +75,37 @@ export const TWENTY_NINTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: '価値あるもの',
     type: 'unit',
-    center: [],
+    center: ['kuboshiori'],
+    creators: {
+      lyrics: ['秋元康'],
+      direct: ['東市篤憲'],
+    },
     formations: {
-      firstRow: [
-        'kuboshiori',
-        'sakaguchitamami',
+      firstRow: ['endousakura', 'kuboshiori', 'kakiharuka'],
+      secondRow: [
         'nakamurareno',
-        'endousakura',
-        'kakiharuka',
-        'kanagawasaya',
         'kitagawayuri',
+        'kanagawasaya',
         'satourika',
+        'sakaguchitamami',
       ],
     },
   }),
   createSongRaw({
     title: '忘れないといいな',
     type: 'solo',
+    creators: {
+      lyrics: ['秋元康'],
+    },
     solo: 'kitanohinako',
   }),
   createSongRaw({
     title: '届かなくたって…',
     type: 'under',
     center: [],
+    creators: {
+      lyrics: ['秋元康'],
+    },
     formations: {
       firstRow: [
         'itouriria',
@@ -120,6 +131,7 @@ export const TWENTY_NINTH_SINGLE_SONGS: SongRaw[] = [
     title: '絶望の一秒前',
     type: 'fifth generation',
     center: [],
+    creators: { lyrics: ['秋元康'] },
     formations: {
       firstRow: [
         'inouenagi',
@@ -137,6 +149,7 @@ export const TWENTY_NINTH_SINGLE_SONGS: SongRaw[] = [
     title: '好きになってみた',
     type: 'coupling',
     center: [],
+    creators: { lyrics: ['秋元康'] },
     formations: {
       firstRow: [
         'umezawaminami',
