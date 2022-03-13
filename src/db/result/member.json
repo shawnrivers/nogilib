@@ -1724,10 +1724,6 @@
       {
         "title": "TikTok",
         "url": "https://www.tiktok.com/@kawagohina3"
-      },
-      {
-        "title": "official",
-        "url": "https://kawagopro.com/"
       }
     ],
     "photoAlbums": [
@@ -11692,11 +11688,16 @@
       "firstNameEn": "miona"
     },
     "profileImage": {
-      "sm": "/images/members/others/horimiona_2021-07-14_45f2d4b9-bccf-4a36-8ee7-1221f29283be_@1x.jpg",
-      "md": "/images/members/others/horimiona_2021-07-14_45f2d4b9-bccf-4a36-8ee7-1221f29283be_@2x.jpg",
-      "lg": "/images/members/others/horimiona_2021-07-14_45f2d4b9-bccf-4a36-8ee7-1221f29283be_@3x.jpg"
+      "sm": "/images/members/others/horimiona_2022-03-13_89d8ee7f-b102-415d-9294-028b6f825537_@1x.jpg",
+      "md": "/images/members/others/horimiona_2022-03-13_89d8ee7f-b102-415d-9294-028b6f825537_@2x.jpg",
+      "lg": "/images/members/others/horimiona_2022-03-13_89d8ee7f-b102-415d-9294-028b6f825537_@3x.jpg"
     },
     "gallery": [
+      {
+        "sm": "/images/members/others/horimiona_2022-03-13_89d8ee7f-b102-415d-9294-028b6f825537_@1x.jpg",
+        "md": "/images/members/others/horimiona_2022-03-13_89d8ee7f-b102-415d-9294-028b6f825537_@2x.jpg",
+        "lg": "/images/members/others/horimiona_2022-03-13_89d8ee7f-b102-415d-9294-028b6f825537_@3x.jpg"
+      },
       {
         "sm": "/images/members/others/horimiona_2021-07-14_45f2d4b9-bccf-4a36-8ee7-1221f29283be_@1x.jpg",
         "md": "/images/members/others/horimiona_2021-07-14_45f2d4b9-bccf-4a36-8ee7-1221f29283be_@2x.jpg",
