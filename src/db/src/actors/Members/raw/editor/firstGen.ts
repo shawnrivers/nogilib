@@ -302,10 +302,6 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         title: 'TikTok',
         url: 'https://www.tiktok.com/@kawagohina3',
       },
-      {
-        title: 'official',
-        url: 'https://kawagopro.com/',
-      },
     ],
     photoAlbums: [
       {
