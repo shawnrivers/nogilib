@@ -47778,7 +47778,9 @@
       "compose": [
         "NAMITO"
       ],
-      "arrange": [],
+      "arrange": [
+        "APAZZI"
+      ],
       "direct": []
     },
     "single": {
@@ -48140,8 +48142,12 @@
       "lyrics": [
         "秋元康"
       ],
-      "compose": [],
-      "arrange": [],
+      "compose": [
+        "高木龍一"
+      ],
+      "arrange": [
+        "高木龍一"
+      ],
       "direct": []
     },
     "single": {
@@ -48499,8 +48505,13 @@
       "lyrics": [
         "秋元康"
       ],
-      "compose": [],
-      "arrange": [],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "杉山勝彦",
+        "谷地学"
+      ],
       "direct": [
         "東市篤憲"
       ]
@@ -48682,8 +48693,12 @@
       "lyrics": [
         "秋元康"
       ],
-      "compose": [],
-      "arrange": [],
+      "compose": [
+        "伊藤心太郎"
+      ],
+      "arrange": [
+        "伊藤心太郎"
+      ],
       "direct": []
     },
     "single": {
@@ -48735,8 +48750,12 @@
       "lyrics": [
         "秋元康"
       ],
-      "compose": [],
-      "arrange": [],
+      "compose": [
+        "外山大輔"
+      ],
+      "arrange": [
+        "外山大輔"
+      ],
       "direct": []
     },
     "single": {
@@ -48859,7 +48878,7 @@
             "md": "/images/members/singles/28/satoukaede_f6f4d701-7baa-493b-8ba0-8c82db26770f_@2x.jpg",
             "lg": "/images/members/singles/28/satoukaede_f6f4d701-7baa-493b-8ba0-8c82db26770f_@3x.jpg"
           },
-          "position": null,
+          "position": "center",
           "isMember": true
         },
         {
@@ -49058,8 +49077,12 @@
       "lyrics": [
         "秋元康"
       ],
-      "compose": [],
-      "arrange": [],
+      "compose": [
+        "ツキダタダシ"
+      ],
+      "arrange": [
+        "若田部誠"
+      ],
       "direct": []
     },
     "single": {
@@ -49237,8 +49260,12 @@
       "lyrics": [
         "秋元康"
       ],
-      "compose": [],
-      "arrange": [],
+      "compose": [
+        "youth case"
+      ],
+      "arrange": [
+        "youth case"
+      ],
       "direct": []
     },
     "single": {
