@@ -166,7 +166,6 @@ const AlbumPage: React.FC<PageProps> = props => {
                       width={130}
                       textSize="body2"
                       borderRadius="s"
-                      padding="xs"
                       css={css`
                         margin: ${commonStyles.spacing.xs};
                       `}

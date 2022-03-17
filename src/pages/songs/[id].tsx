@@ -335,7 +335,6 @@ export const SongPage: React.FC<SongPageProps> = props => {
                                 position={member.position ?? undefined}
                                 textSize="body3"
                                 borderRadius="s"
-                                padding="xs"
                               />
                             </li>
                           ))}

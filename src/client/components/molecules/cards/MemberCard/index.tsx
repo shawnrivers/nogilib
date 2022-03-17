@@ -15,9 +15,8 @@ import { AspectRatioImage } from 'client/components/atoms/image/AspectRatioImage
 
 const PositionBadge: React.FC<{
   position: 'center' | 'fukujin';
-  borderRadius: MemberCardProps['borderRadius'];
 }> = props => {
-  const { position, borderRadius } = props;
+  const { position } = props;
 
   const positionStylesKey =
     position === 'center' ? POSITION_STYLES.center : POSITION_STYLES.fukujin;
@@ -28,9 +27,7 @@ const PositionBadge: React.FC<{
       positionStylesKey.backgroundColorVariant
     );
 
-    const borderRadiusStyle = `0
-    ${commonStyles.borderRadius[borderRadius ?? 's']} 0
-    ${commonStyles.borderRadius.s}`;
+    const borderRadiusStyle = `0 0 0 ${commonStyles.borderRadius.s}`;
 
     const borderColorVarName = getColorVarName(
       positionStylesKey.foregroundColor,
@@ -40,16 +37,20 @@ const PositionBadge: React.FC<{
     return css`
       display: inline-block;
       border-radius: ${borderRadiusStyle};
-      border-width: 2px;
-      border-style: solid;
+      /* box-sizing: border-box; */
       border-color: var(${borderColorVarName});
+      border-style: solid;
+      border-top-width: 0;
+      border-bottom-width: 2px;
+      border-left-width: 2px;
+      border-right-width: 0;
       background-color: var(${backgroundColorVarName});
       width: 24px;
       height: 28px;
       text-align: center;
       box-shadow: ${commonStyles.elevations[1].boxShadow};
     `;
-  }, [positionStylesKey, borderRadius]);
+  }, [positionStylesKey]);
 
   return (
     <div css={badgeStyles}>
@@ -71,7 +72,7 @@ const PositionBadge: React.FC<{
   );
 };
 
-export type MemberCardProps = Omit<CardProps, 'children'> & {
+export type MemberCardProps = Omit<CardProps, 'children' | 'padding'> & {
   profileImage: ImageUrl;
   name: string;
   lang: string;
@@ -90,7 +91,6 @@ export const MemberCard: React.FC<MemberCardProps> = props => {
     nameElement = 'div',
     textSize = 'em2',
     borderRadius = 's',
-    padding = 's',
     position,
     ...cardProps
   } = props;
@@ -98,10 +98,10 @@ export const MemberCard: React.FC<MemberCardProps> = props => {
   return (
     <Card
       borderRadius={borderRadius}
-      padding={padding}
+      padding="none"
       accessory={
         position === 'center' || position === 'fukujin' ? (
-          <PositionBadge position={position} borderRadius={borderRadius} />
+          <PositionBadge position={position} />
         ) : undefined
       }
       aria-label={name}
@@ -118,7 +118,7 @@ export const MemberCard: React.FC<MemberCardProps> = props => {
           role="presentation"
           aspectRatio={5 / 6}
           css={css`
-            border-radius: ${commonStyles.borderRadius[borderRadius]};
+            /* border-radius: ${commonStyles.borderRadius[borderRadius]}; */
           `}
           loading="lazy"
         />
@@ -126,7 +126,7 @@ export const MemberCard: React.FC<MemberCardProps> = props => {
           variant={textSize}
           element={nameElement}
           css={css`
-            margin-top: 0.6em;
+            padding: 0.5em 0.4em 0.4em;
             overflow-x: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;

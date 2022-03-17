@@ -41,6 +41,10 @@ export const Surface: React.FC<SurfaceProps> = props => {
     mapBackgroundToForeground(colorType),
     foregroundColorVariant
   );
+  const borderColorVarName = getColorVarName(
+    mapBackgroundToForeground(colorType),
+    foregroundColorVariant
+  );
 
   return (
     <div
@@ -48,7 +52,8 @@ export const Surface: React.FC<SurfaceProps> = props => {
         position: relative;
         background-color: var(${backgroundColorVarName});
         color: var(${foregroundColorVarName});
-        box-shadow: ${commonStyles.elevations[elevation].boxShadow};
+        box-sizing: border-box;
+        border: 3px solid var(${borderColorVarName});
         z-index: ${commonStyles.elevations[elevation].zIndex};
         transition-duration: 0.3s;
         transition-timing-function: ease-out;
