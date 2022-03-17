@@ -21,39 +21,30 @@ const PositionBadge: React.FC<{
   const positionStylesKey =
     position === 'center' ? POSITION_STYLES.center : POSITION_STYLES.fukujin;
 
-  const badgeStyles = React.useMemo(() => {
-    const backgroundColorVarName = getColorVarName(
-      positionStylesKey.backgroundColor,
-      positionStylesKey.backgroundColorVariant
-    );
-
-    const borderRadiusStyle = `0 0 0 ${commonStyles.borderRadius.s}`;
-
-    const borderColorVarName = getColorVarName(
-      positionStylesKey.foregroundColor,
-      positionStylesKey.textColorVariant
-    );
-
-    return css`
-      display: inline-block;
-      border-radius: ${borderRadiusStyle};
-      box-sizing: border-box;
-      border-color: var(${borderColorVarName});
-      border-style: solid;
-      border-top-width: 0;
-      border-bottom-width: 2px;
-      border-left-width: 2px;
-      border-right-width: 0;
-      background-color: var(${backgroundColorVarName});
-      width: 24px;
-      height: 28px;
-      text-align: center;
-      box-shadow: ${commonStyles.elevations[1].boxShadow};
-    `;
-  }, [positionStylesKey]);
-
   return (
-    <div css={badgeStyles}>
+    <div
+      css={css`
+        display: inline-block;
+        border-radius: 0 0 0 ${commonStyles.borderRadius.s};
+        box-sizing: border-box;
+        border-color: var(${getColorVarName('onSurface', 'standard')});
+        border-style: solid;
+        border-top-width: 0;
+        border-bottom-width: 2px;
+        border-left-width: 2px;
+        border-right-width: 0;
+        background-color: var(
+          ${getColorVarName(
+            positionStylesKey.backgroundColor,
+            positionStylesKey.backgroundColorVariant
+          )}
+        );
+        width: 24px;
+        height: 28px;
+        text-align: center;
+        box-shadow: ${commonStyles.elevations[1].boxShadow};
+      `}
+    >
       <Typography
         variant="body2"
         element="span"
@@ -117,9 +108,6 @@ export const MemberCard: React.FC<MemberCardProps> = props => {
           alt=""
           role="presentation"
           aspectRatio={5 / 6}
-          css={css`
-            /* border-radius: ${commonStyles.borderRadius[borderRadius]}; */
-          `}
           loading="lazy"
         />
         <Typography
