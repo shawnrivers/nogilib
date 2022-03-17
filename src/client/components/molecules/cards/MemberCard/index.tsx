@@ -37,7 +37,7 @@ const PositionBadge: React.FC<{
     return css`
       display: inline-block;
       border-radius: ${borderRadiusStyle};
-      /* box-sizing: border-box; */
+      box-sizing: border-box;
       border-color: var(${borderColorVarName});
       border-style: solid;
       border-top-width: 0;

@@ -34,11 +34,7 @@ export const GlowStickBadge: React.FC<GlowStickBadgeProps> = props => {
         css={css`
           border-radius: 50%;
           background-color: var(${getGlowStickColorVarName(color)});
-          box-shadow: ${commonStyles.elevations[
-            componentElevationKey.componentOnBackground
-          ].boxShadow};
-          border: 1px solid var(${getColorVarName('onBackground', 'standard')});
-          box-sizing: border-box;
+          border: 2px solid var(${getColorVarName('onBackground', 'standard')});
           width: ${size}px;
           height: ${size}px;
         `}
