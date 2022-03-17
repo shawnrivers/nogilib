@@ -1,21 +1,21 @@
 import { css } from '@emotion/react';
-import * as React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { arrayToObject } from 'utils/array';
-import { AlbumPageData } from 'db/src/pages/album';
+import * as React from 'react';
 import { getAlbumData } from 'client/api/album';
-import { useTranslations } from 'client/i18n/hooks/useTranslations';
+import { AspectRatioImage } from 'client/components/atoms/image/AspectRatioImage';
 import { Typography } from 'client/components/atoms/Typography';
+import { PageContent } from 'client/components/layout/PageContent';
+import { PageHelmet } from 'client/components/layout/PageHelmet';
 import { HorizontalCard } from 'client/components/molecules/cards/HorizontalCard';
 import { MemberCard } from 'client/components/molecules/cards/MemberCard';
 import { TextDivider } from 'client/components/molecules/TextDivider';
-import { PageContent } from 'client/components/layout/PageContent';
 import { useIntl } from 'client/i18n/hooks/useIntl';
-import { PageHelmet } from 'client/components/layout/PageHelmet';
+import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { commonStyles } from 'client/styles/tokens';
-import { componentElevationKey } from 'client/styles/tokens/elevation';
-import { getSongUrl, getMemberUrl } from 'client/utils/url';
-import { AspectRatioImage } from 'client/components/atoms/image/AspectRatioImage';
+import { getColorVarName } from 'client/styles/tokens/colors';
+import { getMemberUrl, getSongUrl } from 'client/utils/url';
+import { AlbumPageData } from 'db/src/pages/album';
+import { arrayToObject } from 'utils/array';
 
 type PathParams = { id: string };
 
@@ -194,9 +194,8 @@ const AlbumPage: React.FC<PageProps> = props => {
                     css={css`
                       margin: ${commonStyles.spacing.s};
                       border-radius: ${commonStyles.borderRadius.m};
-                      box-shadow: ${commonStyles.elevations[
-                        componentElevationKey.componentOnBackground
-                      ].boxShadow};
+                      border: 3px solid
+                        var(${getColorVarName('onBackground', 'standard')});
                       overflow: hidden;
                       width: 160px;
                       height: 160px;

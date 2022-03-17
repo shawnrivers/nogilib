@@ -1,22 +1,22 @@
 import { css } from '@emotion/react';
-import * as React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { PageContent } from 'client/components/layout/PageContent';
+import * as React from 'react';
+import { getSongData } from 'client/api/song';
 import { Hashtag } from 'client/components/atoms/Hashtag';
-import { commonStyles } from 'client/styles/tokens';
-import { TextDivider } from 'client/components/molecules/TextDivider';
+import { AspectRatioImage } from 'client/components/atoms/image/AspectRatioImage';
+import { PageContent } from 'client/components/layout/PageContent';
+import { PageHelmet } from 'client/components/layout/PageHelmet';
 import { MemberCard } from 'client/components/molecules/cards/MemberCard';
-import { useTranslations } from 'client/i18n/hooks/useTranslations';
-import { useIntl } from 'client/i18n/hooks/useIntl';
+import { TextDivider } from 'client/components/molecules/TextDivider';
 import { InfoItemLabel } from 'client/components/molecules/typography/info/InfoItemLabel';
 import { InfoItemValue } from 'client/components/molecules/typography/info/InfoItemValue';
 import { SectionSubtitle } from 'client/components/molecules/typography/SectionSubtitle';
-import { PageHelmet } from 'client/components/layout/PageHelmet';
-import { getSongData } from 'client/api/song';
-import { SongPageData } from 'db/src/pages/song';
+import { useIntl } from 'client/i18n/hooks/useIntl';
+import { useTranslations } from 'client/i18n/hooks/useTranslations';
+import { commonStyles } from 'client/styles/tokens';
+import { getColorVarName } from 'client/styles/tokens/colors';
 import { getMemberUrl } from 'client/utils/url';
-import { componentElevationKey } from 'client/styles/tokens/elevation';
-import { AspectRatioImage } from 'client/components/atoms/image/AspectRatioImage';
+import { SongPageData } from 'db/src/pages/song';
 
 type PathParams = { id: string };
 
@@ -177,9 +177,8 @@ export const SongPage: React.FC<SongPageProps> = props => {
                 css={css`
                   margin: ${commonStyles.spacing.s};
                   border-radius: ${commonStyles.borderRadius.m};
-                  box-shadow: ${commonStyles.elevations[
-                    componentElevationKey.componentOnBackground
-                  ].boxShadow};
+                  border: 3px solid
+                    var(${getColorVarName('onBackground', 'standard')});
                   overflow: hidden;
                   width: 200px;
                   height: 200px;
