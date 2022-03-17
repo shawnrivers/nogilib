@@ -21,6 +21,7 @@ import { getColorVarName } from 'client/styles/tokens/colors';
 import { useSearchQuery } from 'client/store/search/context';
 import { BaseButton } from 'client/components/atoms/BaseButton';
 import { CloseIcon } from 'client/components/atoms/icons/CloseIcon';
+import { componentElevationKey } from 'client/styles/tokens/elevation';
 
 type PageProps = {
   docs: (
@@ -228,7 +229,10 @@ const SearchPage: React.FC<PageProps> = props => {
                   border-radius: ${commonStyles.borderRadius.xl};
                   padding: ${commonStyles.spacing.s} 3rem
                     ${commonStyles.spacing.s} ${commonStyles.spacing.s};
-                  transition: border-color 0.2s linear;
+                  box-shadow: ${commonStyles.elevations[
+                    componentElevationKey.background
+                  ].boxShadow};
+                  transition: border-color 0.2s linear, box-shadow 0.2s linear;
                   box-sizing: border-box;
                   color: inherit;
                   font-size: inherit;
@@ -248,6 +252,9 @@ const SearchPage: React.FC<PageProps> = props => {
                     border-color: var(
                       ${getColorVarName('onBackground', 'standard')}
                     );
+                    box-shadow: ${commonStyles.elevations[
+                      componentElevationKey.navigationBar
+                    ].boxShadow};
                   }
                 `}
               />
