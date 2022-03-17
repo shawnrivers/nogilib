@@ -7,18 +7,21 @@ import {
 import { SpacingKey } from 'client/styles/tokens/spacing';
 import { getColorVarName } from 'client/styles/tokens/colors';
 
-export type HashtagProps = Omit<TypographyProps, 'variant' | 'element'> & {
+const textColor: TypographyProps['textColor'] = {
+  on: 'onBackground',
+  variant: 'variant0',
+};
+
+export type HashtagProps = Omit<
+  TypographyProps,
+  'variant' | 'element' | 'textColor'
+> & {
   spacing?: SpacingKey;
   text?: string;
 };
 
 export const Hashtag: React.FC<HashtagProps> = props => {
-  const {
-    textColor = { on: 'onBackground', variant: 'variant0' },
-    spacing = 'xs',
-    text = '',
-    ...restProps
-  } = props;
+  const { spacing = 'xs', text = '', ...restProps } = props;
 
   return text !== '' ? (
     <Typography
