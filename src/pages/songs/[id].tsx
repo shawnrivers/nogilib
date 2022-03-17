@@ -297,7 +297,6 @@ export const SongPage: React.FC<SongPageProps> = props => {
                             width: 100vw;
                             max-width: 1920px;
                             box-sizing: border-box;
-                            overflow-x: hidden;
                             position: relative;
                             /* CSS hack to make child component larger than the parent's width */
                             /* @see https://stackoverflow.com/a/24895631 */
