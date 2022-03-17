@@ -8,7 +8,6 @@ import {
 import { Card, CardProps } from 'client/components/atoms/Card';
 import { Position } from 'db/src/actors/Members/types';
 import { commonStyles } from 'client/styles/tokens';
-import { BORDER_RADIUS } from 'client/styles/tokens/borderRadius';
 import { POSITION_STYLES } from 'client/styles/positionStyles';
 import { getColorVarName } from 'client/styles/tokens/colors';
 import { ImageUrl } from 'db/src/types/commons';
@@ -30,8 +29,8 @@ const PositionBadge: React.FC<{
     );
 
     const borderRadiusStyle = `0
-    ${BORDER_RADIUS[borderRadius ?? 's']} 0
-    ${BORDER_RADIUS.s}`;
+    ${commonStyles.borderRadius[borderRadius ?? 's']} 0
+    ${commonStyles.borderRadius.s}`;
 
     const borderColorVarName = getColorVarName(
       positionStylesKey.foregroundColor,
