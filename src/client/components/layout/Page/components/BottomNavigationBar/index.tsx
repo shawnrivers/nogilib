@@ -74,7 +74,7 @@ export const BottomNavigationBar: React.FC = () => {
           width: 100vw;
           box-sizing: border-box;
           background-color: var(${getColorVarName('surface', 'standard')});
-          border-top: 2px solid var(${getColorVarName('onSurface', 'standard')});
+          border-top: 3px solid var(${getColorVarName('onSurface', 'standard')});
           z-index: ${commonStyles.elevations[
             componentElevationKey.navigationBar
           ].zIndex};

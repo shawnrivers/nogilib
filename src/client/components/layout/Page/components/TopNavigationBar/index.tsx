@@ -23,7 +23,7 @@ export const TopNavigationBar: React.FC = () => {
         box-sizing: border-box;
         height: ${commonStyles.sizes.navigationBarHeight};
         background-color: var(${getColorVarName('surface', 'standard')});
-        border-bottom: 2px solid
+        border-bottom: 3px solid
           var(${getColorVarName('onSurface', 'standard')});
         z-index: ${commonStyles.elevations[componentElevationKey.navigationBar]
           .zIndex};

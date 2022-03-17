@@ -221,10 +221,10 @@ const SearchPage: React.FC<PageProps> = props => {
                 ref={searchInputRef}
                 css={css`
                   width: 100%;
-                  border-width: 2px;
+                  border-width: 3px;
                   border-style: solid;
                   border-color: var(
-                    ${getColorVarName('onBackground', 'variant1')}
+                    ${getColorVarName('onBackground', 'variant0')}
                   );
                   border-radius: ${commonStyles.borderRadius.xl};
                   padding: ${commonStyles.spacing.s} 3rem
