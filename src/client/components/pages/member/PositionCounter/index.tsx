@@ -1,7 +1,5 @@
 import { css } from '@emotion/react';
-import { commonStyles } from 'client/styles/tokens';
 import { Typography } from 'client/components/atoms/Typography';
-import { componentElevationKey } from 'client/styles/tokens/elevation';
 import { POSITION_STYLES } from 'client/styles/positionStyles';
 import { getColorVarName } from 'client/styles/tokens/colors';
 
@@ -23,9 +21,6 @@ export const PositionCounter: React.FC<PositionCounterProps> = props => {
         border-style: solid;
         border-width: 2px;
         box-sizing: border-box;
-        box-shadow: ${commonStyles.elevations[
-          componentElevationKey.componentOnBackground
-        ].boxShadow};
         display: flex;
         height: 32px;
         max-width: 480px;

@@ -1,10 +1,10 @@
 import { css } from '@emotion/react';
-import { Surface } from 'client/components/atoms/Surface';
 import { Typography } from 'client/components/atoms/Typography';
 import { SettingsMenu } from 'client/components/layout/Page/components/SettingsMenu';
 import { TextLink } from 'client/components/molecules/links/TextLink';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { commonStyles } from 'client/styles/tokens';
+import { getColorVarName } from 'client/styles/tokens/colors';
 import { componentElevationKey } from 'client/styles/tokens/elevation';
 import {
   getDiscographyUrl,
@@ -17,13 +17,16 @@ export const TopNavigationBar: React.FC = () => {
   const { getTranslation } = useTranslations();
 
   return (
-    <Surface
-      backgroundColor="standard"
-      foregroundColor="standard"
-      elevation={componentElevationKey.navigationBar}
+    <div
       css={css`
         width: 100vw;
+        box-sizing: border-box;
         height: ${commonStyles.sizes.navigationBarHeight};
+        background-color: var(${getColorVarName('surface', 'standard')});
+        border-bottom: 3px solid
+          var(${getColorVarName('onSurface', 'standard')});
+        z-index: ${commonStyles.elevations[componentElevationKey.navigationBar]
+          .zIndex};
         position: fixed;
         top: 0;
       `}
@@ -107,6 +110,6 @@ export const TopNavigationBar: React.FC = () => {
         </nav>
         <SettingsMenu />
       </div>
-    </Surface>
+    </div>
   );
 };

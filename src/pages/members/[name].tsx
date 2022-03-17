@@ -1,15 +1,14 @@
 import { css } from '@emotion/react';
-import * as React from 'react';
-import { useRouter } from 'next/router';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { MemberPageData } from 'db/src/pages/member';
+import { useRouter } from 'next/router';
+import * as React from 'react';
 import { getMemberData } from 'client/api/member';
-import { useTranslations } from 'client/i18n/hooks/useTranslations';
-import { commonStyles } from 'client/styles/tokens';
-import { useIntl } from 'client/i18n/hooks/useIntl';
-import { PageHelmet } from 'client/components/layout/PageHelmet';
 import { Card } from 'client/components/atoms/Card';
+import { Divider } from 'client/components/atoms/Divider';
+import { AspectRatioImage } from 'client/components/atoms/image/AspectRatioImage';
 import { Typography } from 'client/components/atoms/Typography';
+import { PageContent } from 'client/components/layout/PageContent';
+import { PageHelmet } from 'client/components/layout/PageHelmet';
 import { TextLink } from 'client/components/molecules/links/TextLink';
 import { TextDivider } from 'client/components/molecules/TextDivider';
 import { InfoItemLabel } from 'client/components/molecules/typography/info/InfoItemLabel';
@@ -20,16 +19,13 @@ import {
   PositionBadge,
   PositionBadgeProps,
 } from 'client/components/pages/member/PositionBadge';
-import { PageContent } from 'client/components/layout/PageContent';
+import { useIntl } from 'client/i18n/hooks/useIntl';
+import { useTranslations } from 'client/i18n/hooks/useTranslations';
+import { commonStyles } from 'client/styles/tokens';
+import { getColorVarName } from 'client/styles/tokens/colors';
 import { Position } from 'db/src/actors/Members/types';
-import { componentElevationKey } from 'client/styles/tokens/elevation';
-import { Divider } from 'client/components/atoms/Divider';
+import { MemberPageData } from 'db/src/pages/member';
 import { filterDuplicate } from 'utils/array';
-import { AspectRatioImage } from 'client/components/atoms/image/AspectRatioImage';
-
-/**
- * Local components
- */
 
 const NON_ABSENT_POSITIONS = ['center', 'fukujin', 'selected', 'under'];
 
@@ -109,10 +105,6 @@ const PositionBadgeIndicatorsGroup: React.FC<{
     </ul>
   );
 };
-
-/**
- * Page component
- */
 
 type PathParams = { name: string };
 
@@ -251,9 +243,8 @@ const MemberPage: React.FC<PageProps> = props => {
             <div
               css={css`
                 border-radius: ${commonStyles.borderRadius.m};
-                box-shadow: ${commonStyles.elevations[
-                  componentElevationKey.componentOnBackground
-                ].boxShadow};
+                border: 3px solid
+                  var(${getColorVarName('onBackground', 'standard')});
                 overflow: hidden;
                 width: 200px;
                 max-height: 240px;
@@ -536,9 +527,9 @@ const MemberPage: React.FC<PageProps> = props => {
                   css={css`
                     margin: ${commonStyles.spacing.xs};
                     border-radius: ${commonStyles.borderRadius.xs};
-                    box-shadow: ${commonStyles.elevations[
-                      componentElevationKey.componentOnBackground
-                    ].boxShadow};
+                    box-sizing: border-box;
+                    border: 3px solid
+                      var(${getColorVarName('onBackground', 'standard')});
                     width: 110px;
                     max-height: 132px;
                     overflow: hidden;

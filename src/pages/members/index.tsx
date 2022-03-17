@@ -179,7 +179,6 @@ const MembersPage: React.FC<MembersPageProps> = props => {
                       href={getMemberUrl(member.name)}
                       textSize="body2"
                       borderRadius="s"
-                      padding="xs"
                       width={130}
                       css={css`
                         margin: ${commonStyles.spacing.xs};
