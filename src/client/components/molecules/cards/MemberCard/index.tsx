@@ -114,7 +114,9 @@ export const MemberCard: React.FC<MemberCardProps> = props => {
           variant={textSize}
           element={nameElement}
           css={css`
-            padding: 0.5em 0.4em 0.4em;
+            border-top: 3px solid
+              var(${getColorVarName('onBackground', 'standard')});
+            padding: 0.3em;
             overflow-x: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
