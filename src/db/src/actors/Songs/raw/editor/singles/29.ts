@@ -103,6 +103,7 @@ export const TWENTY_NINTH_SINGLE_SONGS: SongRaw[] = [
       lyrics: ['秋元康'],
       compose: ['伊藤心太郎'],
       arrange: ['伊藤心太郎'],
+      direct: ['伊藤衆人'],
     },
     solo: 'kitanohinako',
   }),
@@ -114,6 +115,7 @@ export const TWENTY_NINTH_SINGLE_SONGS: SongRaw[] = [
       lyrics: ['秋元康'],
       compose: ['外山大輔'],
       arrange: ['外山大輔'],
+      direct: ['Hiroya Brian Nakano'],
     },
     formations: {
       firstRow: [
