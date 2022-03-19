@@ -261,6 +261,7 @@ const SearchPage: React.FC<PageProps> = props => {
               {query !== '' && (
                 <BaseButton
                   css={css`
+                    display: flex;
                     position: absolute;
                     right: 1rem;
                     top: 50%;
@@ -273,7 +274,6 @@ const SearchPage: React.FC<PageProps> = props => {
                     height={24}
                     title={getTranslation('clear')}
                     css={css`
-                      vertical-align: middle;
                       fill: var(${getColorVarName('onBackground', 'standard')});
                     `}
                   />
