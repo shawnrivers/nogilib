@@ -9,6 +9,7 @@ export const TWENTY_NINTH_SINGLE_SONGS: SongRaw[] = [
       lyrics: ['秋元康'],
       compose: ['NAMITO'],
       arrange: ['APAZZI'],
+      direct: ['黒沢清', '東市篤憲'],
     },
     center: ['nakanishiaruno'],
     fukujin: 'row-1-2',
