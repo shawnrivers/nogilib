@@ -69,13 +69,13 @@ export const PositionBadge: React.FC<PositionBadgeProps> = props => {
           `}
         >
           <Typography
+            bold
             variant="body2"
             element="span"
             textColor={{
               on: positionStyles.foregroundColor,
               variant: positionStyles.textColorVariant,
             }}
-            bold={positionStyles.bold}
             css={css`
               margin-top: 0.3em;
             `}
