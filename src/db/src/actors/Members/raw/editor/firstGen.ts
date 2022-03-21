@@ -782,7 +782,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     ],
     photoAlbums: [
       {
-        title: 'タイトル未定',
+        title: '恋人のように',
         release: '2022-04-12',
         type: 'photo album',
         sites: [

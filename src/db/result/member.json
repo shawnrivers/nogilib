@@ -4592,7 +4592,7 @@
     ],
     "photoAlbums": [
       {
-        "title": "タイトル未定",
+        "title": "恋人のように",
         "release": "2022-04-12",
         "type": "photo album",
         "sites": [
@@ -4606,9 +4606,9 @@
           }
         ],
         "cover": {
-          "sm": "/images/photo-albums/higuchihina_1_dd659aa1-fc7d-46cf-a49c-38ffa3fa92a8_@1x.jpg",
-          "md": "/images/photo-albums/higuchihina_1_dd659aa1-fc7d-46cf-a49c-38ffa3fa92a8_@2x.jpg",
-          "lg": "/images/photo-albums/higuchihina_1_dd659aa1-fc7d-46cf-a49c-38ffa3fa92a8_@3x.jpg"
+          "sm": "/images/photo-albums/higuchihina_1_a153dcde-58b0-4732-8d7e-4a32c28932ae_@1x.jpg",
+          "md": "/images/photo-albums/higuchihina_1_a153dcde-58b0-4732-8d7e-4a32c28932ae_@2x.jpg",
+          "lg": "/images/photo-albums/higuchihina_1_a153dcde-58b0-4732-8d7e-4a32c28932ae_@3x.jpg"
         }
       }
     ],
