@@ -12,7 +12,6 @@ export const POSITION_STYLES: Record<
     foregroundColor: keyof ThemeColorsForeground;
     backgroundColorVariant: keyof ThemeColorVariants;
     textColorVariant: keyof ThemeColorVariants;
-    bold: boolean;
   }
 > = {
   center: {
@@ -21,7 +20,6 @@ export const POSITION_STYLES: Record<
     backgroundColorVariant: 'variant0',
     foregroundColor: 'onPrimary',
     textColorVariant: 'standard',
-    bold: true,
   },
   fukujin: {
     text: 'F',
@@ -29,7 +27,6 @@ export const POSITION_STYLES: Record<
     backgroundColorVariant: 'variant1',
     foregroundColor: 'onSecondary',
     textColorVariant: 'standard',
-    bold: true,
   },
   selected: {
     text: 'S',
@@ -37,7 +34,6 @@ export const POSITION_STYLES: Record<
     backgroundColorVariant: 'standard',
     foregroundColor: 'onSecondary',
     textColorVariant: 'standard',
-    bold: false,
   },
   under: {
     text: 'U',
@@ -45,6 +41,5 @@ export const POSITION_STYLES: Record<
     backgroundColorVariant: 'standard',
     foregroundColor: 'onSurface',
     textColorVariant: 'standard',
-    bold: false,
   },
 };
