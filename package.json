@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@emotion/react": "^11.8.2",
-    "@fontsource/playfair-display": "^4.5.4",
+    "@fontsource/playfair-display": "^4.5.6",
     "flexsearch": "^0.6.32",
     "focus-visible": "^5.2.0",
     "framer-motion": "^6.2.8",
