@@ -3,13 +3,34 @@ import { createMemberRaw } from 'db/src/actors/Members/raw/creator';
 
 export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
   createMemberRaw({
-    name: 'inouenagi',
-    nameNotations: ['井上', '和', 'いのうえ', 'なぎ', 'inoue', 'nagi'],
+    name: 'iokimao',
+    nameNotations: ['五百城', '茉央', 'いおき', 'まお', 'ioki', 'mao'],
     join: 'fifth',
-    birthday: '2005-02-17',
-    height: 156,
-    bloodType: 'b',
-    origin: '神奈川県',
+    birthday: '2005-07-29',
+    height: 166,
+    bloodType: 'o',
+    origin: '兵庫県',
+    sites: [
+      {
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55396',
+      },
+    ],
+  }),
+  createMemberRaw({
+    name: 'ikedateresa',
+    nameNotations: ['池田', '瑛紗', 'いけだ', 'てれさ', 'ikeda', 'teresa'],
+    join: 'fifth',
+    birthday: '2002-05-12',
+    height: 159,
+    bloodType: 'unknown',
+    origin: '東京都',
+    sites: [
+      {
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55397',
+      },
+    ],
   }),
   createMemberRaw({
     name: 'ichinosemiku',
@@ -19,6 +40,57 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     height: 156,
     bloodType: 'b',
     origin: '福岡県',
+    sites: [
+      {
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55390',
+      },
+    ],
+  }),
+  createMemberRaw({
+    name: 'inouenagi',
+    nameNotations: ['井上', '和', 'いのうえ', 'なぎ', 'inoue', 'nagi'],
+    join: 'fifth',
+    birthday: '2005-02-17',
+    height: 156,
+    bloodType: 'b',
+    origin: '神奈川県',
+    sites: [
+      {
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55389',
+      },
+    ],
+  }),
+  createMemberRaw({
+    name: 'ogawaaya',
+    nameNotations: ['小川', '彩', 'おがわ', 'あや', 'ogawa', 'aya'],
+    join: 'fifth',
+    birthday: '2007-06-27',
+    height: 154,
+    bloodType: 'b',
+    origin: '千葉県',
+    sites: [
+      {
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55392',
+      },
+    ],
+  }),
+  createMemberRaw({
+    name: 'okudairoha',
+    nameNotations: ['奥田', 'いろは', 'おくだ', 'いろは', 'okuta', 'iroha'],
+    join: 'fifth',
+    birthday: '2005-08-20',
+    height: 157,
+    bloodType: 'a',
+    origin: '千葉県',
+    sites: [
+      {
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55394',
+      },
+    ],
   }),
   createMemberRaw({
     name: 'sugawarasatsuki',
@@ -35,15 +107,12 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     height: 157,
     bloodType: 'a',
     origin: '千葉県',
-  }),
-  createMemberRaw({
-    name: 'ogawaaya',
-    nameNotations: ['小川', '彩', 'おがわ', 'あや', 'ogawa', 'aya'],
-    join: 'fifth',
-    birthday: '2007-06-27',
-    height: 154,
-    bloodType: 'b',
-    origin: '千葉県',
+    sites: [
+      {
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55391',
+      },
+    ],
   }),
   createMemberRaw({
     name: 'tomisatonao',
@@ -53,15 +122,12 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     height: 164,
     bloodType: 'o',
     origin: '千葉県',
-  }),
-  createMemberRaw({
-    name: 'okudairoha',
-    nameNotations: ['奥田', 'いろは', 'おくだ', 'いろは', 'okuta', 'iroha'],
-    join: 'fifth',
-    birthday: '2005-08-20',
-    height: 157,
-    bloodType: 'a',
-    origin: '千葉県',
+    sites: [
+      {
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55393',
+      },
+    ],
   }),
   createMemberRaw({
     name: 'nakanishiaruno',
@@ -78,14 +144,11 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     height: 157,
     bloodType: 'a',
     origin: '千葉県',
-  }),
-  createMemberRaw({
-    name: 'iokimao',
-    nameNotations: ['五百城', '茉央', 'いおき', 'まお', 'ioki', 'mao'],
-    join: 'fifth',
-    birthday: '2005-07-29',
-    height: 166,
-    bloodType: 'o',
-    origin: '兵庫県',
+    sites: [
+      {
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55395',
+      },
+    ],
   }),
 ];
