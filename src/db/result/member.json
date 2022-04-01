@@ -16167,7 +16167,24 @@
         "url": "https://www.nogizaka46.com/s/n46/artist/48008"
       }
     ],
-    "photoAlbums": [],
+    "photoAlbums": [
+      {
+        "title": "タイトル未定",
+        "release": "2022-06-07",
+        "type": "photo album",
+        "sites": [
+          {
+            "title": "Twitter",
+            "url": "https://twitter.com/kakiharuka_1st"
+          }
+        ],
+        "cover": {
+          "sm": "/images/photo-albums/kakiharuka_1_3350e470-de6f-4b39-a629-88925ea0fd6b_@1x.jpg",
+          "md": "/images/photo-albums/kakiharuka_1_3350e470-de6f-4b39-a629-88925ea0fd6b_@2x.jpg",
+          "lg": "/images/photo-albums/kakiharuka_1_3350e470-de6f-4b39-a629-88925ea0fd6b_@3x.jpg"
+        }
+      }
+    ],
     "positionsHistory": [
       {
         "singleNumber": "1",
