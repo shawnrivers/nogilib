@@ -10,6 +10,12 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     height: 156,
     bloodType: 'b',
     origin: '神奈川県',
+    sites: [
+      {
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55389',
+      },
+    ],
   }),
   createMemberRaw({
     name: 'ichinosemiku',
@@ -19,6 +25,12 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     height: 156,
     bloodType: 'b',
     origin: '福岡県',
+    sites: [
+      {
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55390',
+      },
+    ],
   }),
   createMemberRaw({
     name: 'sugawarasatsuki',
@@ -35,6 +47,12 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     height: 157,
     bloodType: 'a',
     origin: '千葉県',
+    sites: [
+      {
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55391',
+      },
+    ],
   }),
   createMemberRaw({
     name: 'ogawaaya',
@@ -44,6 +62,12 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     height: 154,
     bloodType: 'b',
     origin: '千葉県',
+    sites: [
+      {
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55392',
+      },
+    ],
   }),
   createMemberRaw({
     name: 'tomisatonao',
@@ -53,6 +77,12 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     height: 164,
     bloodType: 'o',
     origin: '千葉県',
+    sites: [
+      {
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55393',
+      },
+    ],
   }),
   createMemberRaw({
     name: 'okudairoha',
@@ -62,6 +92,12 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     height: 157,
     bloodType: 'a',
     origin: '千葉県',
+    sites: [
+      {
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55394',
+      },
+    ],
   }),
   createMemberRaw({
     name: 'nakanishiaruno',
@@ -78,6 +114,12 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     height: 157,
     bloodType: 'a',
     origin: '千葉県',
+    sites: [
+      {
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55395',
+      },
+    ],
   }),
   createMemberRaw({
     name: 'iokimao',
@@ -87,6 +129,12 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     height: 166,
     bloodType: 'o',
     origin: '兵庫県',
+    sites: [
+      {
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55396',
+      },
+    ],
   }),
   createMemberRaw({
     name: 'ikedateresa',
@@ -96,5 +144,11 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     height: 159,
     bloodType: 'unknown',
     origin: '東京都',
+    sites: [
+      {
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55397',
+      },
+    ],
   }),
 ];
