@@ -20388,5 +20388,169 @@
       "selected": 0,
       "under": 0
     }
+  },
+  {
+    "name": "ikedateresa",
+    "nameNotations": {
+      "lastName": "池田",
+      "firstName": "瑛紗",
+      "lastNameFurigana": "いけだ",
+      "firstNameFurigana": "てれさ",
+      "lastNameEn": "ikeda",
+      "firstNameEn": "teresa"
+    },
+    "profileImage": {
+      "sm": "/images/members/others/ikedateresa_2022-04-01_fb7eed8c-01fc-446e-b74f-421a88328281_@1x.jpg",
+      "md": "/images/members/others/ikedateresa_2022-04-01_fb7eed8c-01fc-446e-b74f-421a88328281_@2x.jpg",
+      "lg": "/images/members/others/ikedateresa_2022-04-01_fb7eed8c-01fc-446e-b74f-421a88328281_@3x.jpg"
+    },
+    "gallery": [
+      {
+        "sm": "/images/members/others/ikedateresa_2022-04-01_fb7eed8c-01fc-446e-b74f-421a88328281_@1x.jpg",
+        "md": "/images/members/others/ikedateresa_2022-04-01_fb7eed8c-01fc-446e-b74f-421a88328281_@2x.jpg",
+        "lg": "/images/members/others/ikedateresa_2022-04-01_fb7eed8c-01fc-446e-b74f-421a88328281_@3x.jpg"
+      }
+    ],
+    "join": "fifth",
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    },
+    "birthday": "2002-05-12",
+    "height": 159,
+    "bloodType": "unknown",
+    "origin": "東京都",
+    "units": [],
+    "corps": [],
+    "glowStickColor": {
+      "left": "none",
+      "right": "none"
+    },
+    "sites": [],
+    "photoAlbums": [],
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      },
+      {
+        "singleNumber": "25",
+        "position": "none"
+      },
+      {
+        "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
+      },
+      {
+        "singleNumber": "28",
+        "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
+      }
+    ],
+    "positionsCounter": {
+      "center": 0,
+      "fukujin": 0,
+      "selected": 0,
+      "under": 0
+    }
   }
 ]

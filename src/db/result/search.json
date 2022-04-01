@@ -7497,6 +7497,26 @@
           "md": "/images/members/others/iokimao_2022-04-01_7069fb7e-ed8c-41fc-846e-f74f421a8832_@2x.jpg",
           "lg": "/images/members/others/iokimao_2022-04-01_7069fb7e-ed8c-41fc-846e-f74f421a8832_@3x.jpg"
         }
+      },
+      {
+        "id": "member-ikedateresa",
+        "field": "池田瑛紗 いけだてれさ ikeda teresa",
+        "searchType": "members",
+        "name": "ikedateresa",
+        "nameNotations": {
+          "lastName": "池田",
+          "firstName": "瑛紗",
+          "lastNameFurigana": "いけだ",
+          "firstNameFurigana": "てれさ",
+          "lastNameEn": "ikeda",
+          "firstNameEn": "teresa"
+        },
+        "join": "fifth",
+        "profileImage": {
+          "sm": "/images/members/others/ikedateresa_2022-04-01_fb7eed8c-01fc-446e-b74f-421a88328281_@1x.jpg",
+          "md": "/images/members/others/ikedateresa_2022-04-01_fb7eed8c-01fc-446e-b74f-421a88328281_@2x.jpg",
+          "lg": "/images/members/others/ikedateresa_2022-04-01_fb7eed8c-01fc-446e-b74f-421a88328281_@3x.jpg"
+        }
       }
     ]
   }

@@ -88,4 +88,13 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     bloodType: 'o',
     origin: '兵庫県',
   }),
+  createMemberRaw({
+    name: 'ikedateresa',
+    nameNotations: ['池田', '瑛紗', 'いけだ', 'てれさ', 'ikeda', 'teresa'],
+    join: 'fifth',
+    birthday: '2002-05-12',
+    height: 159,
+    bloodType: 'unknown',
+    origin: '東京都',
+  }),
 ];
