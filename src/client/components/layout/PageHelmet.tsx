@@ -2,6 +2,7 @@ import * as React from 'react';
 import Head from 'next/head';
 import { capitalizeFirstLetter, capitalizeText } from 'utils/string';
 import { useTranslations } from 'client/i18n/hooks/useTranslations';
+import { useThemeContext } from 'client/store/theme/hook/useThemeContext';
 
 const SITE_TITLE = 'NOGILIB';
 const SITE_URL = 'https://nogilib.com';
@@ -38,6 +39,8 @@ export const PageHelmet: React.FC<PageHelmetProps> = props => {
     'NOGILIB is a web app for showing the information about Nogizaka46 in a user-friendly way.'
   );
 
+  const { themeKey } = useThemeContext();
+
   return (
     <Head>
       <meta charSet="utf-8" />
@@ -67,13 +70,7 @@ export const PageHelmet: React.FC<PageHelmetProps> = props => {
       {/* Theme colors */}
       <meta
         name="theme-color"
-        content="#ffffff"
-        media="(prefers-color-scheme: light)"
-      />
-      <meta
-        name="theme-color"
-        content="#333333"
-        media="(prefers-color-scheme: dark)"
+        content={themeKey === 'light' ? '#ffffff' : '#1a1a1a'}
       />
 
       {/* Standalone app meta */}

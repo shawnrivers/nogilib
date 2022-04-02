@@ -41,6 +41,16 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=48008',
       },
     ],
+    photoAlbums: [{
+      release: '2022-06-07',
+      title: 'タイトル未定',
+      type: 'photo album',
+      cover: 'kakiharuka_1',
+      sites: [{
+        title: 'Twitter',
+        url: 'https://twitter.com/kakiharuka_1st'
+      }]
+    }]
   }),
   createMemberRaw({
     name: 'kakehashisayaka',

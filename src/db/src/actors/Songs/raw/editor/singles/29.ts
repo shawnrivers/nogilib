@@ -8,6 +8,8 @@ export const TWENTY_NINTH_SINGLE_SONGS: SongRaw[] = [
     creators: {
       lyrics: ['秋元康'],
       compose: ['NAMITO'],
+      arrange: ['APAZZI'],
+      direct: ['黒沢清', '東市篤憲'],
     },
     center: ['nakanishiaruno'],
     fukujin: 'row-1-2',
@@ -42,6 +44,11 @@ export const TWENTY_NINTH_SINGLE_SONGS: SongRaw[] = [
     title: '深読み',
     type: 'coupling',
     center: [],
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['高木龍一'],
+      arrange: ['高木龍一'],
+    },
     formations: {
       firstRow: [
         'umezawaminami',
@@ -72,47 +79,67 @@ export const TWENTY_NINTH_SINGLE_SONGS: SongRaw[] = [
   createSongRaw({
     title: '価値あるもの',
     type: 'unit',
-    center: [],
+    center: ['kuboshiori'],
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['杉山勝彦'],
+      arrange: ['杉山勝彦', '谷地学'],
+      direct: ['東市篤憲'],
+    },
     formations: {
-      firstRow: [
-        'kuboshiori',
-        'sakaguchitamami',
+      firstRow: ['endousakura', 'kuboshiori', 'kakiharuka'],
+      secondRow: [
         'nakamurareno',
-        'endousakura',
-        'kakiharuka',
-        'kanagawasaya',
         'kitagawayuri',
+        'kanagawasaya',
         'satourika',
+        'sakaguchitamami',
       ],
     },
   }),
   createSongRaw({
     title: '忘れないといいな',
     type: 'solo',
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['伊藤心太郎'],
+      arrange: ['伊藤心太郎'],
+      direct: ['伊藤衆人'],
+    },
     solo: 'kitanohinako',
   }),
   createSongRaw({
     title: '届かなくたって…',
     type: 'under',
-    center: [],
+    center: ['satoukaede'],
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['外山大輔'],
+      arrange: ['外山大輔'],
+      direct: ['Hiroya Brian Nakano'],
+    },
     formations: {
       firstRow: [
-        'itouriria',
-        'kanagawasaya',
-        'kitagawayuri',
-        'kuromiharuka',
         'sakaguchitamami',
+        'yumikinao',
         'satoukaede',
+        'kanagawasaya',
         'satourika',
-        'nakamurareno',
+      ],
+      secondRow: [
         'hayashiruna',
         'matsuomiyu',
-        'mukaihazuki',
-        'yakubomio',
         'yamazakirena',
-        'yumikinao',
+        'nakamurareno',
+        'kitagawayuri',
+      ],
+      thirdRow: [
         'yoshidaayanochristie',
+        'itouriria',
+        'mukaihazuki',
         'wadamaaya',
+        'kuromiharuka',
+        'yakubomio',
       ],
     },
   }),
@@ -120,6 +147,11 @@ export const TWENTY_NINTH_SINGLE_SONGS: SongRaw[] = [
     title: '絶望の一秒前',
     type: 'fifth generation',
     center: [],
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['ツキダタダシ'],
+      arrange: ['若田部誠'],
+    },
     formations: {
       firstRow: [
         'inouenagi',
@@ -137,6 +169,11 @@ export const TWENTY_NINTH_SINGLE_SONGS: SongRaw[] = [
     title: '好きになってみた',
     type: 'coupling',
     center: [],
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['youth case'],
+      arrange: ['youth case'],
+    },
     formations: {
       firstRow: [
         'umezawaminami',

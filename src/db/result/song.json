@@ -47778,8 +47778,13 @@
       "compose": [
         "NAMITO"
       ],
-      "arrange": [],
-      "direct": []
+      "arrange": [
+        "APAZZI"
+      ],
+      "direct": [
+        "黒沢清",
+        "東市篤憲"
+      ]
     },
     "single": {
       "title": "Actually...",
@@ -47843,9 +47848,9 @@
             "firstNameEn": "aruno"
           },
           "profileImage": {
-            "sm": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@1x.jpg",
-            "md": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@2x.jpg",
-            "lg": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@3x.jpg"
+            "sm": "/images/members/others/nakanishiaruno_2022-04-01_0dc81753-5b6d-4c2b-b4db-3d3cd3ac641f_@1x.jpg",
+            "md": "/images/members/others/nakanishiaruno_2022-04-01_0dc81753-5b6d-4c2b-b4db-3d3cd3ac641f_@2x.jpg",
+            "lg": "/images/members/others/nakanishiaruno_2022-04-01_0dc81753-5b6d-4c2b-b4db-3d3cd3ac641f_@3x.jpg"
           },
           "position": "center",
           "isMember": true
@@ -48137,9 +48142,15 @@
       "lg": "/images/artworks/singles/29/A_a9edbdd7-d313-4e1d-8bcb-e56220d6ab71_@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
-      "compose": [],
-      "arrange": [],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "高木龍一"
+      ],
+      "arrange": [
+        "高木龍一"
+      ],
       "direct": []
     },
     "single": {
@@ -48204,9 +48215,9 @@
             "firstNameEn": "aruno"
           },
           "profileImage": {
-            "sm": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@1x.jpg",
-            "md": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@2x.jpg",
-            "lg": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@3x.jpg"
+            "sm": "/images/members/others/nakanishiaruno_2022-04-01_0dc81753-5b6d-4c2b-b4db-3d3cd3ac641f_@1x.jpg",
+            "md": "/images/members/others/nakanishiaruno_2022-04-01_0dc81753-5b6d-4c2b-b4db-3d3cd3ac641f_@2x.jpg",
+            "lg": "/images/members/others/nakanishiaruno_2022-04-01_0dc81753-5b6d-4c2b-b4db-3d3cd3ac641f_@3x.jpg"
           },
           "position": null,
           "isMember": true
@@ -48494,10 +48505,19 @@
       "lg": "/images/artworks/singles/29/A_a9edbdd7-d313-4e1d-8bcb-e56220d6ab71_@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
-      "compose": [],
-      "arrange": [],
-      "direct": []
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "杉山勝彦"
+      ],
+      "arrange": [
+        "杉山勝彦",
+        "谷地学"
+      ],
+      "direct": [
+        "東市篤憲"
+      ]
     },
     "single": {
       "title": "Actually...",
@@ -48514,60 +48534,6 @@
     },
     "performers": [
       [
-        {
-          "name": "kuboshiori",
-          "nameNotations": {
-            "lastName": "久保",
-            "firstName": "史緒里",
-            "lastNameFurigana": "くぼ",
-            "firstNameFurigana": "しおり",
-            "lastNameEn": "kubo",
-            "firstNameEn": "shiori"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@1x.jpg",
-            "md": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@2x.jpg",
-            "lg": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
-        {
-          "name": "sakaguchitamami",
-          "nameNotations": {
-            "lastName": "阪口",
-            "firstName": "珠美",
-            "lastNameFurigana": "さかぐち",
-            "firstNameFurigana": "たまみ",
-            "lastNameEn": "sakaguchi",
-            "firstNameEn": "tamami"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/28/sakaguchitamami_3b8ba08c-82db-4677-8fb8-f9f29f263d5b_@1x.jpg",
-            "md": "/images/members/singles/28/sakaguchitamami_3b8ba08c-82db-4677-8fb8-f9f29f263d5b_@2x.jpg",
-            "lg": "/images/members/singles/28/sakaguchitamami_3b8ba08c-82db-4677-8fb8-f9f29f263d5b_@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
-        {
-          "name": "nakamurareno",
-          "nameNotations": {
-            "lastName": "中村",
-            "firstName": "麗乃",
-            "lastNameFurigana": "なかむら",
-            "firstNameFurigana": "れの",
-            "lastNameEn": "nakamura",
-            "firstNameEn": "reno"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@1x.jpg",
-            "md": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@2x.jpg",
-            "lg": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
         {
           "name": "endousakura",
           "nameNotations": {
@@ -48587,6 +48553,24 @@
           "isMember": true
         },
         {
+          "name": "kuboshiori",
+          "nameNotations": {
+            "lastName": "久保",
+            "firstName": "史緒里",
+            "lastNameFurigana": "くぼ",
+            "firstNameFurigana": "しおり",
+            "lastNameEn": "kubo",
+            "firstNameEn": "shiori"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@1x.jpg",
+            "md": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@2x.jpg",
+            "lg": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@3x.jpg"
+          },
+          "position": "center",
+          "isMember": true
+        },
+        {
           "name": "kakiharuka",
           "nameNotations": {
             "lastName": "賀喜",
@@ -48603,21 +48587,23 @@
           },
           "position": null,
           "isMember": true
-        },
+        }
+      ],
+      [
         {
-          "name": "kanagawasaya",
+          "name": "nakamurareno",
           "nameNotations": {
-            "lastName": "金川",
-            "firstName": "紗耶",
-            "lastNameFurigana": "かながわ",
-            "firstNameFurigana": "さや",
-            "lastNameEn": "kanagawa",
-            "firstNameEn": "saya"
+            "lastName": "中村",
+            "firstName": "麗乃",
+            "lastNameFurigana": "なかむら",
+            "firstNameFurigana": "れの",
+            "lastNameEn": "nakamura",
+            "firstNameEn": "reno"
           },
           "profileImage": {
-            "sm": "/images/members/singles/28/kanagawasaya_feda1f6a-7d7f-4886-b6f4-d7017baab93b_@1x.jpg",
-            "md": "/images/members/singles/28/kanagawasaya_feda1f6a-7d7f-4886-b6f4-d7017baab93b_@2x.jpg",
-            "lg": "/images/members/singles/28/kanagawasaya_feda1f6a-7d7f-4886-b6f4-d7017baab93b_@3x.jpg"
+            "sm": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@1x.jpg",
+            "md": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@2x.jpg",
+            "lg": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@3x.jpg"
           },
           "position": null,
           "isMember": true
@@ -48641,6 +48627,24 @@
           "isMember": true
         },
         {
+          "name": "kanagawasaya",
+          "nameNotations": {
+            "lastName": "金川",
+            "firstName": "紗耶",
+            "lastNameFurigana": "かながわ",
+            "firstNameFurigana": "さや",
+            "lastNameEn": "kanagawa",
+            "firstNameEn": "saya"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/kanagawasaya_feda1f6a-7d7f-4886-b6f4-d7017baab93b_@1x.jpg",
+            "md": "/images/members/singles/28/kanagawasaya_feda1f6a-7d7f-4886-b6f4-d7017baab93b_@2x.jpg",
+            "lg": "/images/members/singles/28/kanagawasaya_feda1f6a-7d7f-4886-b6f4-d7017baab93b_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
           "name": "satourika",
           "nameNotations": {
             "lastName": "佐藤",
@@ -48654,6 +48658,24 @@
             "sm": "/images/members/singles/28/satourika_db26770f-b8f9-429f-a63d-5bacf3772705_@1x.jpg",
             "md": "/images/members/singles/28/satourika_db26770f-b8f9-429f-a63d-5bacf3772705_@2x.jpg",
             "lg": "/images/members/singles/28/satourika_db26770f-b8f9-429f-a63d-5bacf3772705_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "sakaguchitamami",
+          "nameNotations": {
+            "lastName": "阪口",
+            "firstName": "珠美",
+            "lastNameFurigana": "さかぐち",
+            "firstNameFurigana": "たまみ",
+            "lastNameEn": "sakaguchi",
+            "firstNameEn": "tamami"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/sakaguchitamami_3b8ba08c-82db-4677-8fb8-f9f29f263d5b_@1x.jpg",
+            "md": "/images/members/singles/28/sakaguchitamami_3b8ba08c-82db-4677-8fb8-f9f29f263d5b_@2x.jpg",
+            "lg": "/images/members/singles/28/sakaguchitamami_3b8ba08c-82db-4677-8fb8-f9f29f263d5b_@3x.jpg"
           },
           "position": null,
           "isMember": true
@@ -48671,10 +48693,18 @@
       "lg": "/images/artworks/singles/29/B_197502a9-edbd-47d3-93de-1d8bcbe56220_@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
-      "compose": [],
-      "arrange": [],
-      "direct": []
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "伊藤心太郎"
+      ],
+      "arrange": [
+        "伊藤心太郎"
+      ],
+      "direct": [
+        "伊藤衆人"
+      ]
     },
     "single": {
       "title": "Actually...",
@@ -48722,10 +48752,18 @@
       "lg": "/images/artworks/singles/29/C_02a9edbd-d7d3-43de-9d8b-cbe56220d6ab_@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
-      "compose": [],
-      "arrange": [],
-      "direct": []
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "外山大輔"
+      ],
+      "arrange": [
+        "外山大輔"
+      ],
+      "direct": [
+        "Hiroya Brian Nakano"
+      ]
     },
     "single": {
       "title": "Actually...",
@@ -48743,21 +48781,57 @@
     "performers": [
       [
         {
-          "name": "itouriria",
+          "name": "sakaguchitamami",
           "nameNotations": {
-            "lastName": "伊藤",
-            "firstName": "理々杏",
-            "lastNameFurigana": "いとう",
-            "firstNameFurigana": "りりあ",
-            "lastNameEn": "ito",
-            "firstNameEn": "riria"
+            "lastName": "阪口",
+            "firstName": "珠美",
+            "lastNameFurigana": "さかぐち",
+            "firstNameFurigana": "たまみ",
+            "lastNameEn": "sakaguchi",
+            "firstNameEn": "tamami"
           },
           "profileImage": {
-            "sm": "/images/members/singles/28/itouriria_6a7d7fa8-86f6-44d7-817b-aab93b8ba08c_@1x.jpg",
-            "md": "/images/members/singles/28/itouriria_6a7d7fa8-86f6-44d7-817b-aab93b8ba08c_@2x.jpg",
-            "lg": "/images/members/singles/28/itouriria_6a7d7fa8-86f6-44d7-817b-aab93b8ba08c_@3x.jpg"
+            "sm": "/images/members/singles/28/sakaguchitamami_3b8ba08c-82db-4677-8fb8-f9f29f263d5b_@1x.jpg",
+            "md": "/images/members/singles/28/sakaguchitamami_3b8ba08c-82db-4677-8fb8-f9f29f263d5b_@2x.jpg",
+            "lg": "/images/members/singles/28/sakaguchitamami_3b8ba08c-82db-4677-8fb8-f9f29f263d5b_@3x.jpg"
           },
           "position": null,
+          "isMember": true
+        },
+        {
+          "name": "yumikinao",
+          "nameNotations": {
+            "lastName": "弓木",
+            "firstName": "奈於",
+            "lastNameFurigana": "ゆみき",
+            "firstNameFurigana": "なお",
+            "lastNameEn": "yumiki",
+            "firstNameEn": "nao"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/yumikinao_a886f6f4-d701-4baa-b93b-8ba08c82db26_@1x.jpg",
+            "md": "/images/members/singles/28/yumikinao_a886f6f4-d701-4baa-b93b-8ba08c82db26_@2x.jpg",
+            "lg": "/images/members/singles/28/yumikinao_a886f6f4-d701-4baa-b93b-8ba08c82db26_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "satoukaede",
+          "nameNotations": {
+            "lastName": "佐藤",
+            "firstName": "楓",
+            "lastNameFurigana": "さとう",
+            "firstNameFurigana": "かえで",
+            "lastNameEn": "sato",
+            "firstNameEn": "kaede"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/satoukaede_f6f4d701-7baa-493b-8ba0-8c82db26770f_@1x.jpg",
+            "md": "/images/members/singles/28/satoukaede_f6f4d701-7baa-493b-8ba0-8c82db26770f_@2x.jpg",
+            "lg": "/images/members/singles/28/satoukaede_f6f4d701-7baa-493b-8ba0-8c82db26770f_@3x.jpg"
+          },
+          "position": "center",
           "isMember": true
         },
         {
@@ -48779,78 +48853,6 @@
           "isMember": true
         },
         {
-          "name": "kitagawayuri",
-          "nameNotations": {
-            "lastName": "北川",
-            "firstName": "悠理",
-            "lastNameFurigana": "きたがわ",
-            "firstNameFurigana": "ゆり",
-            "lastNameEn": "kitagawa",
-            "firstNameEn": "yuri"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/28/kitagawayuri_263d5bac-f377-4705-8a99-7477ebf61d4e_@1x.jpg",
-            "md": "/images/members/singles/28/kitagawayuri_263d5bac-f377-4705-8a99-7477ebf61d4e_@2x.jpg",
-            "lg": "/images/members/singles/28/kitagawayuri_263d5bac-f377-4705-8a99-7477ebf61d4e_@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
-        {
-          "name": "kuromiharuka",
-          "nameNotations": {
-            "lastName": "黒見",
-            "firstName": "明香",
-            "lastNameFurigana": "くろみ",
-            "firstNameFurigana": "はるか",
-            "lastNameEn": "kuromi",
-            "firstNameEn": "haruka"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/28/kuromiharuka_b93b8ba0-8c82-4b26-b70f-b8f9f29f263d_@1x.jpg",
-            "md": "/images/members/singles/28/kuromiharuka_b93b8ba0-8c82-4b26-b70f-b8f9f29f263d_@2x.jpg",
-            "lg": "/images/members/singles/28/kuromiharuka_b93b8ba0-8c82-4b26-b70f-b8f9f29f263d_@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
-        {
-          "name": "sakaguchitamami",
-          "nameNotations": {
-            "lastName": "阪口",
-            "firstName": "珠美",
-            "lastNameFurigana": "さかぐち",
-            "firstNameFurigana": "たまみ",
-            "lastNameEn": "sakaguchi",
-            "firstNameEn": "tamami"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/28/sakaguchitamami_3b8ba08c-82db-4677-8fb8-f9f29f263d5b_@1x.jpg",
-            "md": "/images/members/singles/28/sakaguchitamami_3b8ba08c-82db-4677-8fb8-f9f29f263d5b_@2x.jpg",
-            "lg": "/images/members/singles/28/sakaguchitamami_3b8ba08c-82db-4677-8fb8-f9f29f263d5b_@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
-        {
-          "name": "satoukaede",
-          "nameNotations": {
-            "lastName": "佐藤",
-            "firstName": "楓",
-            "lastNameFurigana": "さとう",
-            "firstNameFurigana": "かえで",
-            "lastNameEn": "sato",
-            "firstNameEn": "kaede"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/28/satoukaede_f6f4d701-7baa-493b-8ba0-8c82db26770f_@1x.jpg",
-            "md": "/images/members/singles/28/satoukaede_f6f4d701-7baa-493b-8ba0-8c82db26770f_@2x.jpg",
-            "lg": "/images/members/singles/28/satoukaede_f6f4d701-7baa-493b-8ba0-8c82db26770f_@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
-        {
           "name": "satourika",
           "nameNotations": {
             "lastName": "佐藤",
@@ -48867,25 +48869,9 @@
           },
           "position": null,
           "isMember": true
-        },
-        {
-          "name": "nakamurareno",
-          "nameNotations": {
-            "lastName": "中村",
-            "firstName": "麗乃",
-            "lastNameFurigana": "なかむら",
-            "firstNameFurigana": "れの",
-            "lastNameEn": "nakamura",
-            "firstNameEn": "reno"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@1x.jpg",
-            "md": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@2x.jpg",
-            "lg": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
+        }
+      ],
+      [
         {
           "name": "hayashiruna",
           "nameNotations": {
@@ -48923,42 +48909,6 @@
           "isMember": true
         },
         {
-          "name": "mukaihazuki",
-          "nameNotations": {
-            "lastName": "向井",
-            "firstName": "葉月",
-            "lastNameFurigana": "むかい",
-            "firstNameFurigana": "はづき",
-            "lastNameEn": "mukai",
-            "firstNameEn": "hazuki"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/28/mukaihazuki_86f6f4d7-017b-4ab9-bb8b-a08c82db2677_@1x.jpg",
-            "md": "/images/members/singles/28/mukaihazuki_86f6f4d7-017b-4ab9-bb8b-a08c82db2677_@2x.jpg",
-            "lg": "/images/members/singles/28/mukaihazuki_86f6f4d7-017b-4ab9-bb8b-a08c82db2677_@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
-        {
-          "name": "yakubomio",
-          "nameNotations": {
-            "lastName": "矢久保",
-            "firstName": "美緒",
-            "lastNameFurigana": "やくぼ",
-            "firstNameFurigana": "みお",
-            "lastNameEn": "yakubo",
-            "firstNameEn": "mio"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/28/yakubomio_b8f9f29f-263d-4bac-b377-27054a997477_@1x.jpg",
-            "md": "/images/members/singles/28/yakubomio_b8f9f29f-263d-4bac-b377-27054a997477_@2x.jpg",
-            "lg": "/images/members/singles/28/yakubomio_b8f9f29f-263d-4bac-b377-27054a997477_@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
-        {
           "name": "yamazakirena",
           "nameNotations": {
             "lastName": "山崎",
@@ -48977,23 +48927,43 @@
           "isMember": true
         },
         {
-          "name": "yumikinao",
+          "name": "nakamurareno",
           "nameNotations": {
-            "lastName": "弓木",
-            "firstName": "奈於",
-            "lastNameFurigana": "ゆみき",
-            "firstNameFurigana": "なお",
-            "lastNameEn": "yumiki",
-            "firstNameEn": "nao"
+            "lastName": "中村",
+            "firstName": "麗乃",
+            "lastNameFurigana": "なかむら",
+            "firstNameFurigana": "れの",
+            "lastNameEn": "nakamura",
+            "firstNameEn": "reno"
           },
           "profileImage": {
-            "sm": "/images/members/singles/28/yumikinao_a886f6f4-d701-4baa-b93b-8ba08c82db26_@1x.jpg",
-            "md": "/images/members/singles/28/yumikinao_a886f6f4-d701-4baa-b93b-8ba08c82db26_@2x.jpg",
-            "lg": "/images/members/singles/28/yumikinao_a886f6f4-d701-4baa-b93b-8ba08c82db26_@3x.jpg"
+            "sm": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@1x.jpg",
+            "md": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@2x.jpg",
+            "lg": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@3x.jpg"
           },
           "position": null,
           "isMember": true
         },
+        {
+          "name": "kitagawayuri",
+          "nameNotations": {
+            "lastName": "北川",
+            "firstName": "悠理",
+            "lastNameFurigana": "きたがわ",
+            "firstNameFurigana": "ゆり",
+            "lastNameEn": "kitagawa",
+            "firstNameEn": "yuri"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/kitagawayuri_263d5bac-f377-4705-8a99-7477ebf61d4e_@1x.jpg",
+            "md": "/images/members/singles/28/kitagawayuri_263d5bac-f377-4705-8a99-7477ebf61d4e_@2x.jpg",
+            "lg": "/images/members/singles/28/kitagawayuri_263d5bac-f377-4705-8a99-7477ebf61d4e_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        }
+      ],
+      [
         {
           "name": "yoshidaayanochristie",
           "nameNotations": {
@@ -49008,6 +48978,42 @@
             "sm": "/images/members/singles/28/yoshidaayanochristie_7fa886f6-f4d7-417b-aab9-3b8ba08c82db_@1x.jpg",
             "md": "/images/members/singles/28/yoshidaayanochristie_7fa886f6-f4d7-417b-aab9-3b8ba08c82db_@2x.jpg",
             "lg": "/images/members/singles/28/yoshidaayanochristie_7fa886f6-f4d7-417b-aab9-3b8ba08c82db_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "itouriria",
+          "nameNotations": {
+            "lastName": "伊藤",
+            "firstName": "理々杏",
+            "lastNameFurigana": "いとう",
+            "firstNameFurigana": "りりあ",
+            "lastNameEn": "ito",
+            "firstNameEn": "riria"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/itouriria_6a7d7fa8-86f6-44d7-817b-aab93b8ba08c_@1x.jpg",
+            "md": "/images/members/singles/28/itouriria_6a7d7fa8-86f6-44d7-817b-aab93b8ba08c_@2x.jpg",
+            "lg": "/images/members/singles/28/itouriria_6a7d7fa8-86f6-44d7-817b-aab93b8ba08c_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "mukaihazuki",
+          "nameNotations": {
+            "lastName": "向井",
+            "firstName": "葉月",
+            "lastNameFurigana": "むかい",
+            "firstNameFurigana": "はづき",
+            "lastNameEn": "mukai",
+            "firstNameEn": "hazuki"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/mukaihazuki_86f6f4d7-017b-4ab9-bb8b-a08c82db2677_@1x.jpg",
+            "md": "/images/members/singles/28/mukaihazuki_86f6f4d7-017b-4ab9-bb8b-a08c82db2677_@2x.jpg",
+            "lg": "/images/members/singles/28/mukaihazuki_86f6f4d7-017b-4ab9-bb8b-a08c82db2677_@3x.jpg"
           },
           "position": null,
           "isMember": true
@@ -49029,6 +49035,42 @@
           },
           "position": null,
           "isMember": true
+        },
+        {
+          "name": "kuromiharuka",
+          "nameNotations": {
+            "lastName": "黒見",
+            "firstName": "明香",
+            "lastNameFurigana": "くろみ",
+            "firstNameFurigana": "はるか",
+            "lastNameEn": "kuromi",
+            "firstNameEn": "haruka"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/kuromiharuka_b93b8ba0-8c82-4b26-b70f-b8f9f29f263d_@1x.jpg",
+            "md": "/images/members/singles/28/kuromiharuka_b93b8ba0-8c82-4b26-b70f-b8f9f29f263d_@2x.jpg",
+            "lg": "/images/members/singles/28/kuromiharuka_b93b8ba0-8c82-4b26-b70f-b8f9f29f263d_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "yakubomio",
+          "nameNotations": {
+            "lastName": "矢久保",
+            "firstName": "美緒",
+            "lastNameFurigana": "やくぼ",
+            "firstNameFurigana": "みお",
+            "lastNameEn": "yakubo",
+            "firstNameEn": "mio"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/yakubomio_b8f9f29f-263d-4bac-b377-27054a997477_@1x.jpg",
+            "md": "/images/members/singles/28/yakubomio_b8f9f29f-263d-4bac-b377-27054a997477_@2x.jpg",
+            "lg": "/images/members/singles/28/yakubomio_b8f9f29f-263d-4bac-b377-27054a997477_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
         }
       ]
     ]
@@ -49043,9 +49085,15 @@
       "lg": "/images/artworks/singles/29/D_7502a9ed-bdd7-4313-9e1d-8bcbe56220d6_@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
-      "compose": [],
-      "arrange": [],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "ツキダタダシ"
+      ],
+      "arrange": [
+        "若田部誠"
+      ],
       "direct": []
     },
     "single": {
@@ -49074,9 +49122,9 @@
             "firstNameEn": "nagi"
           },
           "profileImage": {
-            "sm": "/images/members/others/inouenagi_2022-02-15_6e5f7be4-4925-4196-b021-add19b365922_@1x.jpg",
-            "md": "/images/members/others/inouenagi_2022-02-15_6e5f7be4-4925-4196-b021-add19b365922_@2x.jpg",
-            "lg": "/images/members/others/inouenagi_2022-02-15_6e5f7be4-4925-4196-b021-add19b365922_@3x.jpg"
+            "sm": "/images/members/others/inouenagi_2022-04-01_69fb7eed-8c01-4c84-aef7-4f421a883282_@1x.jpg",
+            "md": "/images/members/others/inouenagi_2022-04-01_69fb7eed-8c01-4c84-aef7-4f421a883282_@2x.jpg",
+            "lg": "/images/members/others/inouenagi_2022-04-01_69fb7eed-8c01-4c84-aef7-4f421a883282_@3x.jpg"
           },
           "position": null,
           "isMember": true
@@ -49092,9 +49140,9 @@
             "firstNameEn": "miku"
           },
           "profileImage": {
-            "sm": "/images/members/others/ichinosemiku_2022-02-15_2a236e5f-7be4-4925-a196-7021add19b36_@1x.jpg",
-            "md": "/images/members/others/ichinosemiku_2022-02-15_2a236e5f-7be4-4925-a196-7021add19b36_@2x.jpg",
-            "lg": "/images/members/others/ichinosemiku_2022-02-15_2a236e5f-7be4-4925-a196-7021add19b36_@3x.jpg"
+            "sm": "/images/members/others/ichinosemiku_2022-04-01_7fd47069-fb7e-4d8c-81fc-846ef74f421a_@1x.jpg",
+            "md": "/images/members/others/ichinosemiku_2022-04-01_7fd47069-fb7e-4d8c-81fc-846ef74f421a_@2x.jpg",
+            "lg": "/images/members/others/ichinosemiku_2022-04-01_7fd47069-fb7e-4d8c-81fc-846ef74f421a_@3x.jpg"
           },
           "position": null,
           "isMember": true
@@ -49110,9 +49158,9 @@
             "firstNameEn": "satsuki"
           },
           "profileImage": {
-            "sm": "/images/members/others/sugawarasatsuki_2022-02-15_6c2a236e-5f7b-4449-a521-967021add19b_@1x.jpg",
-            "md": "/images/members/others/sugawarasatsuki_2022-02-15_6c2a236e-5f7b-4449-a521-967021add19b_@2x.jpg",
-            "lg": "/images/members/others/sugawarasatsuki_2022-02-15_6c2a236e-5f7b-4449-a521-967021add19b_@3x.jpg"
+            "sm": "/images/members/others/sugawarasatsuki_2022-04-01_997fd470-69fb-4eed-8c01-fc846ef74f42_@1x.jpg",
+            "md": "/images/members/others/sugawarasatsuki_2022-04-01_997fd470-69fb-4eed-8c01-fc846ef74f42_@2x.jpg",
+            "lg": "/images/members/others/sugawarasatsuki_2022-04-01_997fd470-69fb-4eed-8c01-fc846ef74f42_@3x.jpg"
           },
           "position": null,
           "isMember": true
@@ -49128,9 +49176,9 @@
             "firstNameEn": "aya"
           },
           "profileImage": {
-            "sm": "/images/members/others/ogawaaya_2022-02-15_4f606c2a-236e-4f7b-a449-2521967021ad_@1x.jpg",
-            "md": "/images/members/others/ogawaaya_2022-02-15_4f606c2a-236e-4f7b-a449-2521967021ad_@2x.jpg",
-            "lg": "/images/members/others/ogawaaya_2022-02-15_4f606c2a-236e-4f7b-a449-2521967021ad_@3x.jpg"
+            "sm": "/images/members/others/ogawaaya_2022-04-01_d91e997f-d470-49fb-beed-8c01fc846ef7_@1x.jpg",
+            "md": "/images/members/others/ogawaaya_2022-04-01_d91e997f-d470-49fb-beed-8c01fc846ef7_@2x.jpg",
+            "lg": "/images/members/others/ogawaaya_2022-04-01_d91e997f-d470-49fb-beed-8c01fc846ef7_@3x.jpg"
           },
           "position": null,
           "isMember": true
@@ -49146,9 +49194,9 @@
             "firstNameEn": "nao"
           },
           "profileImage": {
-            "sm": "/images/members/others/tomisatonao_2022-02-15_606c2a23-6e5f-4be4-8925-21967021add1_@1x.jpg",
-            "md": "/images/members/others/tomisatonao_2022-02-15_606c2a23-6e5f-4be4-8925-21967021add1_@2x.jpg",
-            "lg": "/images/members/others/tomisatonao_2022-02-15_606c2a23-6e5f-4be4-8925-21967021add1_@3x.jpg"
+            "sm": "/images/members/others/tomisatonao_2022-04-01_1e997fd4-7069-4b7e-ad8c-01fc846ef74f_@1x.jpg",
+            "md": "/images/members/others/tomisatonao_2022-04-01_1e997fd4-7069-4b7e-ad8c-01fc846ef74f_@2x.jpg",
+            "lg": "/images/members/others/tomisatonao_2022-04-01_1e997fd4-7069-4b7e-ad8c-01fc846ef74f_@3x.jpg"
           },
           "position": null,
           "isMember": true
@@ -49164,9 +49212,9 @@
             "firstNameEn": "iroha"
           },
           "profileImage": {
-            "sm": "/images/members/others/okudairoha_2022-02-15_3d4f606c-2a23-4e5f-bbe4-492521967021_@1x.jpg",
-            "md": "/images/members/others/okudairoha_2022-02-15_3d4f606c-2a23-4e5f-bbe4-492521967021_@2x.jpg",
-            "lg": "/images/members/others/okudairoha_2022-02-15_3d4f606c-2a23-4e5f-bbe4-492521967021_@3x.jpg"
+            "sm": "/images/members/others/okudairoha_2022-04-01_d47069fb-7eed-4c01-bc84-6ef74f421a88_@1x.jpg",
+            "md": "/images/members/others/okudairoha_2022-04-01_d47069fb-7eed-4c01-bc84-6ef74f421a88_@2x.jpg",
+            "lg": "/images/members/others/okudairoha_2022-04-01_d47069fb-7eed-4c01-bc84-6ef74f421a88_@3x.jpg"
           },
           "position": null,
           "isMember": true
@@ -49182,9 +49230,9 @@
             "firstNameEn": "aruno"
           },
           "profileImage": {
-            "sm": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@1x.jpg",
-            "md": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@2x.jpg",
-            "lg": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@3x.jpg"
+            "sm": "/images/members/others/nakanishiaruno_2022-04-01_0dc81753-5b6d-4c2b-b4db-3d3cd3ac641f_@1x.jpg",
+            "md": "/images/members/others/nakanishiaruno_2022-04-01_0dc81753-5b6d-4c2b-b4db-3d3cd3ac641f_@2x.jpg",
+            "lg": "/images/members/others/nakanishiaruno_2022-04-01_0dc81753-5b6d-4c2b-b4db-3d3cd3ac641f_@3x.jpg"
           },
           "position": null,
           "isMember": true
@@ -49200,9 +49248,9 @@
             "firstNameEn": "mao"
           },
           "profileImage": {
-            "sm": "/images/members/others/iokimao_2022-02-15_5f7be449-2521-4670-a1ad-d19b3659225a_@1x.jpg",
-            "md": "/images/members/others/iokimao_2022-02-15_5f7be449-2521-4670-a1ad-d19b3659225a_@2x.jpg",
-            "lg": "/images/members/others/iokimao_2022-02-15_5f7be449-2521-4670-a1ad-d19b3659225a_@3x.jpg"
+            "sm": "/images/members/others/iokimao_2022-04-01_7069fb7e-ed8c-41fc-846e-f74f421a8832_@1x.jpg",
+            "md": "/images/members/others/iokimao_2022-04-01_7069fb7e-ed8c-41fc-846e-f74f421a8832_@2x.jpg",
+            "lg": "/images/members/others/iokimao_2022-04-01_7069fb7e-ed8c-41fc-846e-f74f421a8832_@3x.jpg"
           },
           "position": null,
           "isMember": true
@@ -49220,9 +49268,15 @@
       "lg": "/images/artworks/singles/29/T_3d197502-a9ed-4dd7-9313-de1d8bcbe562_@3x.jpg"
     },
     "creators": {
-      "lyrics": [],
-      "compose": [],
-      "arrange": [],
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "youth case"
+      ],
+      "arrange": [
+        "youth case"
+      ],
       "direct": []
     },
     "single": {
@@ -49287,9 +49341,9 @@
             "firstNameEn": "aruno"
           },
           "profileImage": {
-            "sm": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@1x.jpg",
-            "md": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@2x.jpg",
-            "lg": "/images/members/others/nakanishiaruno_2022-02-15_236e5f7b-e449-4521-9670-21add19b3659_@3x.jpg"
+            "sm": "/images/members/others/nakanishiaruno_2022-04-01_0dc81753-5b6d-4c2b-b4db-3d3cd3ac641f_@1x.jpg",
+            "md": "/images/members/others/nakanishiaruno_2022-04-01_0dc81753-5b6d-4c2b-b4db-3d3cd3ac641f_@2x.jpg",
+            "lg": "/images/members/others/nakanishiaruno_2022-04-01_0dc81753-5b6d-4c2b-b4db-3d3cd3ac641f_@3x.jpg"
           },
           "position": null,
           "isMember": true

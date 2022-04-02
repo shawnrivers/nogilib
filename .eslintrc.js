@@ -3,7 +3,6 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'prettier',
-    'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:jsx-a11y/strict',
     'plugin:import/errors',

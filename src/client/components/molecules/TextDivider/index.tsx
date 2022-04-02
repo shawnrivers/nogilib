@@ -9,18 +9,20 @@ export const TextDivider: React.FC<{
   text: React.ReactNode;
   element?: TypographyProps['element'];
 }> = props => {
-  const { element = 'span' } = props;
+  const { element: Element = 'span' } = props;
 
   const dividerLineColorVarName = getColorVarName('onBackground', 'variant1');
   const dividerLineStyles = css`
     border-top: 2px solid var(${dividerLineColorVarName});
-    height: 2px;
-    margin-top: 10px;
     width: 100%;
+    margin-top: 0.2em;
   `;
 
   return (
-    <div
+    <Typography
+      variant="h6"
+      element="div"
+      textColor={{ on: 'onBackground', variant: 'standard' }}
       css={css`
         display: grid;
         grid-template-columns: minmax(auto, 120px) minmax(max-content, auto) minmax(
@@ -29,7 +31,7 @@ export const TextDivider: React.FC<{
           );
         justify-content: center;
         align-items: center;
-        margin: 2em auto;
+        margin: 1.5em auto;
       `}
     >
       <div
@@ -38,10 +40,7 @@ export const TextDivider: React.FC<{
           justify-self: end;
         `}
       />
-      <Typography
-        variant="h3"
-        element={element}
-        textColor={{ on: 'onBackground', variant: 'standard' }}
+      <Element
         css={css`
           margin: 0 1em;
           text-align: center;
@@ -50,13 +49,13 @@ export const TextDivider: React.FC<{
         `}
       >
         {props.text}
-      </Typography>
+      </Element>
       <div
         css={css`
           ${dividerLineStyles};
           justify-self: start;
         `}
       />
-    </div>
+    </Typography>
   );
 };

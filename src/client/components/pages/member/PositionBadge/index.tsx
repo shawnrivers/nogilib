@@ -12,9 +12,6 @@ const NoneBadge: React.FC = () => {
     <div
       css={css`
         background-color: var(${getColorVarName('onBackground', 'variant1')});
-        box-shadow: ${commonStyles.elevations[
-          componentElevationKey.componentOnBackground
-        ].boxShadow};
         z-index: ${commonStyles.elevations[
           componentElevationKey.componentOnBackground
         ].zIndex};
@@ -63,16 +60,8 @@ export const PositionBadge: React.FC<PositionBadgeProps> = props => {
                 positionStyles.backgroundColorVariant
               )}
             );
-            box-shadow: ${commonStyles.elevations[
-              componentElevationKey.componentOnBackground
-            ].boxShadow};
             border: 2px solid
-              var(
-                ${getColorVarName(
-                  positionStyles.foregroundColor,
-                  positionStyles.textColorVariant
-                )}
-              );
+              var(${getColorVarName('onBackground', 'standard')});
             height: 24px;
             line-height: 24px;
             text-align: center;
@@ -80,13 +69,13 @@ export const PositionBadge: React.FC<PositionBadgeProps> = props => {
           `}
         >
           <Typography
+            bold
             variant="body2"
             element="span"
             textColor={{
               on: positionStyles.foregroundColor,
               variant: positionStyles.textColorVariant,
             }}
-            bold={positionStyles.bold}
             css={css`
               margin-top: 0.3em;
             `}
