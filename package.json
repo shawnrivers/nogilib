@@ -64,7 +64,7 @@
     "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.14",
     "@types/react-lazyload": "^3.2.0",
-    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
     "@typescript-eslint/parser": "^5.17.0",
     "babel-loader": "^8.2.4",
     "babel-preset-react-app": "^10.0.1",
