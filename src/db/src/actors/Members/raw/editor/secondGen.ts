@@ -172,10 +172,6 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/mai.shinuchi_official/',
       },
       {
-        title: 'blog',
-        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=17068',
-      },
-      {
         title: 'profile',
         url: 'https://www.centforce.com/profile/t_profile/shinuchimai.html',
       },

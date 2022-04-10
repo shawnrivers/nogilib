@@ -806,11 +806,6 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     bloodType: 'b',
     origin: '千葉県',
     sites: [
-      { title: 'profile', url: 'https://www.nogizaka46.com/s/n46/artist/279' },
-      {
-        title: 'blog',
-        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=279',
-      },
       {
         title: '755',
         url: 'https://7gogo.jp/hoshino-minami',

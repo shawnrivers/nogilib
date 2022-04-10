@@ -4888,14 +4888,6 @@
     },
     "sites": [
       {
-        "title": "blog",
-        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=279"
-      },
-      {
-        "title": "profile",
-        "url": "https://www.nogizaka46.com/s/n46/artist/279"
-      },
-      {
         "title": "755",
         "url": "https://7gogo.jp/hoshino-minami"
       }
@@ -5979,14 +5971,14 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 1,
       "selected": 2,
-      "under": 26
+      "under": 27
     }
   },
   {
@@ -10961,10 +10953,6 @@
         "url": "https://www.instagram.com/mai.shinuchi_official/"
       },
       {
-        "title": "blog",
-        "url": "https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=17068"
-      },
-      {
         "title": "profile",
         "url": "https://www.centforce.com/profile/t_profile/shinuchimai.html"
       }
@@ -12245,14 +12233,14 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 16
+      "under": 17
     }
   },
   {
@@ -13487,14 +13475,14 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 2,
-      "under": 7
+      "under": 8
     }
   },
   {
@@ -14559,14 +14547,14 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 1,
-      "under": 8
+      "under": 9
     }
   },
   {
@@ -14771,14 +14759,14 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 2,
-      "under": 7
+      "under": 8
     }
   },
   {
@@ -14983,14 +14971,14 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 9
+      "under": 10
     }
   },
   {
@@ -15195,14 +15183,14 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 9
+      "under": 10
     }
   },
   {
@@ -15640,14 +15628,14 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 9
+      "under": 10
     }
   },
   {
@@ -16696,14 +16684,14 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 1
+      "under": 2
     }
   },
   {
@@ -16894,14 +16882,14 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 1
+      "under": 2
     }
   },
   {
@@ -18082,14 +18070,14 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 1
+      "under": 2
     }
   },
   {
@@ -18280,14 +18268,14 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 1
+      "under": 2
     }
   },
   {
@@ -18478,14 +18466,14 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 1
+      "under": 2
     }
   },
   {
@@ -18676,14 +18664,14 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 1
+      "under": 2
     }
   },
   {
@@ -18869,14 +18857,14 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 1
+      "under": 2
     }
   },
   {
@@ -19067,14 +19055,14 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 1
+      "under": 2
     }
   },
   {
@@ -19963,6 +19951,175 @@
       {
         "title": "profile",
         "url": "https://www.nogizaka46.com/s/n46/artist/55394"
+      }
+    ],
+    "photoAlbums": [],
+    "positionsHistory": [
+      {
+        "singleNumber": "1",
+        "position": "none"
+      },
+      {
+        "singleNumber": "2",
+        "position": "none"
+      },
+      {
+        "singleNumber": "3",
+        "position": "none"
+      },
+      {
+        "singleNumber": "4",
+        "position": "none"
+      },
+      {
+        "singleNumber": "5",
+        "position": "none"
+      },
+      {
+        "singleNumber": "6",
+        "position": "none"
+      },
+      {
+        "singleNumber": "7",
+        "position": "none"
+      },
+      {
+        "singleNumber": "8",
+        "position": "none"
+      },
+      {
+        "singleNumber": "9",
+        "position": "none"
+      },
+      {
+        "singleNumber": "10",
+        "position": "none"
+      },
+      {
+        "singleNumber": "11",
+        "position": "none"
+      },
+      {
+        "singleNumber": "12",
+        "position": "none"
+      },
+      {
+        "singleNumber": "13",
+        "position": "none"
+      },
+      {
+        "singleNumber": "14",
+        "position": "none"
+      },
+      {
+        "singleNumber": "15",
+        "position": "none"
+      },
+      {
+        "singleNumber": "16",
+        "position": "none"
+      },
+      {
+        "singleNumber": "17",
+        "position": "none"
+      },
+      {
+        "singleNumber": "18",
+        "position": "none"
+      },
+      {
+        "singleNumber": "19",
+        "position": "none"
+      },
+      {
+        "singleNumber": "20",
+        "position": "none"
+      },
+      {
+        "singleNumber": "21",
+        "position": "none"
+      },
+      {
+        "singleNumber": "22",
+        "position": "none"
+      },
+      {
+        "singleNumber": "23",
+        "position": "none"
+      },
+      {
+        "singleNumber": "24",
+        "position": "none"
+      },
+      {
+        "singleNumber": "25",
+        "position": "none"
+      },
+      {
+        "singleNumber": "26",
+        "position": "none"
+      },
+      {
+        "singleNumber": "27",
+        "position": "none"
+      },
+      {
+        "singleNumber": "28",
+        "position": "none"
+      },
+      {
+        "singleNumber": "29",
+        "position": "none"
+      }
+    ],
+    "positionsCounter": {
+      "center": 0,
+      "fukujin": 0,
+      "selected": 0,
+      "under": 0
+    }
+  },
+  {
+    "name": "kawasakisakura",
+    "nameNotations": {
+      "lastName": "川﨑",
+      "firstName": "桜",
+      "lastNameFurigana": "かわさき",
+      "firstNameFurigana": "さくら",
+      "lastNameEn": "kawasaki",
+      "firstNameEn": "sakura"
+    },
+    "profileImage": {
+      "sm": "/images/members/others/kawasakisakura_2022-04-09_2f30142d-31c3-46a7-8cb2-bc563a39bc7e_@1x.jpg",
+      "md": "/images/members/others/kawasakisakura_2022-04-09_2f30142d-31c3-46a7-8cb2-bc563a39bc7e_@2x.jpg",
+      "lg": "/images/members/others/kawasakisakura_2022-04-09_2f30142d-31c3-46a7-8cb2-bc563a39bc7e_@3x.jpg"
+    },
+    "gallery": [
+      {
+        "sm": "/images/members/others/kawasakisakura_2022-04-09_2f30142d-31c3-46a7-8cb2-bc563a39bc7e_@1x.jpg",
+        "md": "/images/members/others/kawasakisakura_2022-04-09_2f30142d-31c3-46a7-8cb2-bc563a39bc7e_@2x.jpg",
+        "lg": "/images/members/others/kawasakisakura_2022-04-09_2f30142d-31c3-46a7-8cb2-bc563a39bc7e_@3x.jpg"
+      }
+    ],
+    "join": "fifth",
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    },
+    "birthday": "2003-04-17",
+    "height": 155,
+    "bloodType": "unknown",
+    "origin": "神奈川県",
+    "units": [],
+    "corps": [],
+    "glowStickColor": {
+      "left": "none",
+      "right": "none"
+    },
+    "sites": [
+      {
+        "title": "profile",
+        "url": "https://www.nogizaka46.com/s/n46/artist/55400"
       }
     ],
     "photoAlbums": [],
