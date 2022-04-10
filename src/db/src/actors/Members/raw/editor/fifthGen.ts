@@ -93,6 +93,21 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
+    name: 'kawasakisakura',
+    nameNotations: ['川﨑', '桜', 'かわさき', 'さくら', 'kawasaki', 'sakura'],
+    join: 'fifth',
+    birthday: '2003-04-17',
+    height: 155,
+    bloodType: 'unknown',
+    origin: '神奈川県',
+    sites: [
+      {
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55400',
+      },
+    ],
+  }),
+  createMemberRaw({
     name: 'sugawarasatsuki',
     nameNotations: [
       '菅原',

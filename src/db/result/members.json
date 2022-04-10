@@ -1743,6 +1743,27 @@
     }
   },
   {
+    "name": "kawasakisakura",
+    "nameNotations": {
+      "lastName": "川﨑",
+      "firstName": "桜",
+      "lastNameFurigana": "かわさき",
+      "firstNameFurigana": "さくら",
+      "lastNameEn": "kawasaki",
+      "firstNameEn": "sakura"
+    },
+    "join": "fifth",
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    },
+    "profileImage": {
+      "sm": "/images/members/others/kawasakisakura_2022-04-09_2f30142d-31c3-46a7-8cb2-bc563a39bc7e_@1x.jpg",
+      "md": "/images/members/others/kawasakisakura_2022-04-09_2f30142d-31c3-46a7-8cb2-bc563a39bc7e_@2x.jpg",
+      "lg": "/images/members/others/kawasakisakura_2022-04-09_2f30142d-31c3-46a7-8cb2-bc563a39bc7e_@3x.jpg"
+    }
+  },
+  {
     "name": "sugawarasatsuki",
     "nameNotations": {
       "lastName": "菅原",

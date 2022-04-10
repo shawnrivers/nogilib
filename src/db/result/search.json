@@ -7459,6 +7459,26 @@
         }
       },
       {
+        "id": "member-kawasakisakura",
+        "field": "川﨑桜 かわさきさくら kawasaki sakura",
+        "searchType": "members",
+        "name": "kawasakisakura",
+        "nameNotations": {
+          "lastName": "川﨑",
+          "firstName": "桜",
+          "lastNameFurigana": "かわさき",
+          "firstNameFurigana": "さくら",
+          "lastNameEn": "kawasaki",
+          "firstNameEn": "sakura"
+        },
+        "join": "fifth",
+        "profileImage": {
+          "sm": "/images/members/others/kawasakisakura_2022-04-09_2f30142d-31c3-46a7-8cb2-bc563a39bc7e_@1x.jpg",
+          "md": "/images/members/others/kawasakisakura_2022-04-09_2f30142d-31c3-46a7-8cb2-bc563a39bc7e_@2x.jpg",
+          "lg": "/images/members/others/kawasakisakura_2022-04-09_2f30142d-31c3-46a7-8cb2-bc563a39bc7e_@3x.jpg"
+        }
+      },
+      {
         "id": "member-sugawarasatsuki",
         "field": "菅原咲月 すがわらさつき sugawara satsuki",
         "searchType": "members",
