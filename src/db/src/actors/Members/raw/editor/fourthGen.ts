@@ -43,7 +43,7 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     ],
     photoAlbums: [{
       release: '2022-06-07',
-      title: 'タイトル未定',
+      title: 'まっさら',
       type: 'photo album',
       cover: 'kakiharuka_1',
       sites: [{

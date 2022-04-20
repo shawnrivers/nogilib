@@ -16157,7 +16157,7 @@
     ],
     "photoAlbums": [
       {
-        "title": "タイトル未定",
+        "title": "まっさら",
         "release": "2022-06-07",
         "type": "photo album",
         "sites": [
@@ -16167,9 +16167,9 @@
           }
         ],
         "cover": {
-          "sm": "/images/photo-albums/kakiharuka_1_3350e470-de6f-4b39-a629-88925ea0fd6b_@1x.jpg",
-          "md": "/images/photo-albums/kakiharuka_1_3350e470-de6f-4b39-a629-88925ea0fd6b_@2x.jpg",
-          "lg": "/images/photo-albums/kakiharuka_1_3350e470-de6f-4b39-a629-88925ea0fd6b_@3x.jpg"
+          "sm": "/images/photo-albums/kakiharuka_1_fb3a06ec-397c-456d-9273-d5761703a4a5_@1x.jpg",
+          "md": "/images/photo-albums/kakiharuka_1_fb3a06ec-397c-456d-9273-d5761703a4a5_@2x.jpg",
+          "lg": "/images/photo-albums/kakiharuka_1_fb3a06ec-397c-456d-9273-d5761703a4a5_@3x.jpg"
         }
       }
     ],
