@@ -566,6 +566,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://instagram.com/takayama.kazumi.official/',
       },
       {
+        title: 'Twitter',
+        url: 'https://twitter.com/takayama_staff',
+      },
+      {
         title: 'blog',
         url: 'https://blog.nogizaka46.com/kazumi.takayama/',
       },
