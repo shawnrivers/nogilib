@@ -12,6 +12,10 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '兵庫県',
     sites: [
       {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=40007',
+      },
+      {
         title: 'profile',
         url: 'https://www.nogizaka46.com/s/n46/artist/55396',
       },
@@ -26,6 +30,10 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     bloodType: 'unknown',
     origin: '東京都',
     sites: [
+      {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=40007',
+      },
       {
         title: 'profile',
         url: 'https://www.nogizaka46.com/s/n46/artist/55397',
@@ -42,6 +50,10 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '福岡県',
     sites: [
       {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=40007',
+      },
+      {
         title: 'profile',
         url: 'https://www.nogizaka46.com/s/n46/artist/55390',
       },
@@ -56,6 +68,10 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     bloodType: 'b',
     origin: '神奈川県',
     sites: [
+      {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=40007',
+      },
       {
         title: 'profile',
         url: 'https://www.nogizaka46.com/s/n46/artist/55389',
@@ -72,6 +88,10 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '千葉県',
     sites: [
       {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=40007',
+      },
+      {
         title: 'profile',
         url: 'https://www.nogizaka46.com/s/n46/artist/55392',
       },
@@ -87,6 +107,10 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '千葉県',
     sites: [
       {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=40007',
+      },
+      {
         title: 'profile',
         url: 'https://www.nogizaka46.com/s/n46/artist/55394',
       },
@@ -101,6 +125,10 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     bloodType: 'unknown',
     origin: '神奈川県',
     sites: [
+      {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=40007',
+      },
       {
         title: 'profile',
         url: 'https://www.nogizaka46.com/s/n46/artist/55400',
@@ -124,6 +152,10 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '千葉県',
     sites: [
       {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=40007',
+      },
+      {
         title: 'profile',
         url: 'https://www.nogizaka46.com/s/n46/artist/55391',
       },
@@ -138,6 +170,10 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     bloodType: 'o',
     origin: '千葉県',
     sites: [
+      {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=40007',
+      },
       {
         title: 'profile',
         url: 'https://www.nogizaka46.com/s/n46/artist/55393',
@@ -160,6 +196,10 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     bloodType: 'a',
     origin: '千葉県',
     sites: [
+      {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=40007',
+      },
       {
         title: 'profile',
         url: 'https://www.nogizaka46.com/s/n46/artist/55395',
