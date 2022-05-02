@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "@emotion/react": "^11.9.0",
-    "@fontsource/playfair-display": "^4.5.6",
+    "@fontsource/playfair-display": "^4.5.9",
     "flexsearch": "^0.6.32",
     "focus-visible": "^5.2.0",
     "framer-motion": "^6.3.3",
