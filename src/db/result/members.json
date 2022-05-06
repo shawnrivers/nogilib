@@ -1701,6 +1701,27 @@
     }
   },
   {
+    "name": "okamotohina",
+    "nameNotations": {
+      "lastName": "岡本",
+      "firstName": "姫奈",
+      "lastNameFurigana": "おかもと",
+      "firstNameFurigana": "ひな",
+      "lastNameEn": "okamoto",
+      "firstNameEn": "hina"
+    },
+    "join": "fifth",
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    },
+    "profileImage": {
+      "sm": "/images/members/others/okamotohina_2022-05-06_cbfbaa16-307d-4fd4-bc12-2ee72ad1e3c9_@1x.jpg",
+      "md": "/images/members/others/okamotohina_2022-05-06_cbfbaa16-307d-4fd4-bc12-2ee72ad1e3c9_@2x.jpg",
+      "lg": "/images/members/others/okamotohina_2022-05-06_cbfbaa16-307d-4fd4-bc12-2ee72ad1e3c9_@3x.jpg"
+    }
+  },
+  {
     "name": "ogawaaya",
     "nameNotations": {
       "lastName": "小川",
