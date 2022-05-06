@@ -79,6 +79,25 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     ],
   }),
   createMemberRaw({
+    name: 'okamotohina',
+    nameNotations: ['岡本', '姫奈', 'おかもと', 'ひな', 'okamoto', 'hina'],
+    join: 'fifth',
+    birthday: '2003-12-17',
+    height: 158,
+    bloodType: 'a',
+    origin: '愛知県',
+    sites: [
+      {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=40007',
+      },
+      {
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55401',
+      },
+    ],
+  }),
+  createMemberRaw({
     name: 'ogawaaya',
     nameNotations: ['小川', '彩', 'おがわ', 'あや', 'ogawa', 'aya'],
     join: 'fifth',
