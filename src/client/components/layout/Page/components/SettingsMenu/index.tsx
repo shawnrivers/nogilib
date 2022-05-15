@@ -37,7 +37,7 @@ const SettingHeading: React.FC = props => (
 
 type MenuItemRadioProps = {
   isSelected: boolean;
-} & React.ButtonHTMLAttributes<HTMLButtonElement>;
+} & React.ComponentPropsWithoutRef<'button'>;
 
 type MenuItemRadioRef = BaseButtonRef;
 
@@ -271,6 +271,7 @@ export const SettingsMenu: React.FC = () => {
             `}
           >
             <MenuItemRadio
+              lang="en"
               isSelected={locale === 'en'}
               onKeyDown={handleKeyDown}
               onClick={handleClickEnglish}
@@ -278,6 +279,7 @@ export const SettingsMenu: React.FC = () => {
               English
             </MenuItemRadio>
             <MenuItemRadio
+              lang="ja"
               isSelected={locale === 'ja'}
               onKeyDown={handleKeyDown}
               onClick={handleClickJapanese}
@@ -285,6 +287,7 @@ export const SettingsMenu: React.FC = () => {
               日本語
             </MenuItemRadio>
             <MenuItemRadio
+              lang="zh"
               isSelected={locale === 'zh'}
               onKeyDown={handleKeyDown}
               onClick={handleClickChinese}
