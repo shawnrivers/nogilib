@@ -743,7 +743,7 @@ const dictionary = {
   },
   pink: {
     en: 'pink',
-    ja: '桃',
+    ja: 'ピンク',
     zh: '粉',
   },
   orange: {
@@ -763,7 +763,7 @@ const dictionary = {
   },
   turquoise: {
     en: 'turquoise',
-    ja: '青緑',
+    ja: 'ターコイズ',
     zh: '青绿',
   },
 };
