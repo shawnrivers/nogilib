@@ -4303,7 +4303,24 @@
         "url": "https://noujo-ami-rooms.fanpla.jp/"
       }
     ],
-    "photoAlbums": [],
+    "photoAlbums": [
+      {
+        "title": "タイトル未定",
+        "release": "2022-06-30",
+        "type": "photo book",
+        "sites": [
+          {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/noujoami_photobook/"
+          }
+        ],
+        "cover": {
+          "sm": "/images/photo-albums/noujouami_1_90bc67ca-b837-4edb-96f9-f361c2be3156_@1x.jpg",
+          "md": "/images/photo-albums/noujouami_1_90bc67ca-b837-4edb-96f9-f361c2be3156_@2x.jpg",
+          "lg": "/images/photo-albums/noujouami_1_90bc67ca-b837-4edb-96f9-f361c2be3156_@3x.jpg"
+        }
+      }
+    ],
     "positionsHistory": [
       {
         "singleNumber": "1",
