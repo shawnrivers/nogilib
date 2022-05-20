@@ -755,6 +755,20 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://noujo-ami-rooms.fanpla.jp/',
       },
     ],
+    photoAlbums: [
+      {
+        title: 'タイトル未定',
+        release: '2022-06-30',
+        type: 'photo book',
+        sites: [
+          {
+            title: 'Instagram',
+            url: 'https://www.instagram.com/noujoami_photobook/',
+          },
+        ],
+        cover: 'noujouami_1',
+      },
+    ],
     graduatedDate: '2018-12-15',
   }),
   createMemberRaw({
