@@ -757,7 +757,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     ],
     photoAlbums: [
       {
-        title: 'タイトル未定',
+        title: 'カーテンコール',
         release: '2022-06-30',
         type: 'photo book',
         sites: [
