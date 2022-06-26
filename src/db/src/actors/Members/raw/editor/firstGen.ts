@@ -566,6 +566,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://instagram.com/takayama.kazumi.official/',
       },
       {
+        title: 'Twitter',
+        url: 'https://twitter.com/takayama_staff',
+      },
+      {
         title: 'blog',
         url: 'https://blog.nogizaka46.com/kazumi.takayama/',
       },
@@ -751,6 +755,20 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://noujo-ami-rooms.fanpla.jp/',
       },
     ],
+    photoAlbums: [
+      {
+        title: 'カーテンコール',
+        release: '2022-06-30',
+        type: 'photo book',
+        sites: [
+          {
+            title: 'Instagram',
+            url: 'https://www.instagram.com/noujoami_photobook/',
+          },
+        ],
+        cover: 'noujouami_1',
+      },
+    ],
     graduatedDate: '2018-12-15',
   }),
   createMemberRaw({
@@ -806,11 +824,6 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     bloodType: 'b',
     origin: '千葉県',
     sites: [
-      { title: 'profile', url: 'https://www.nogizaka46.com/s/n46/artist/279' },
-      {
-        title: 'blog',
-        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=279',
-      },
       {
         title: '755',
         url: 'https://7gogo.jp/hoshino-minami',

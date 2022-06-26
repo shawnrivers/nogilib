@@ -3,6 +3,9 @@ module.exports = {
     locales: ['ja', 'en', 'zh'],
     defaultLocale: 'ja',
   },
+  experimental: {
+    emotion: true,
+  },
   async headers() {
     return [
       {

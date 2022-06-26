@@ -116,4 +116,6 @@ export type MemberNameKey =
   | 'okudairoha'
   | 'nakanishiaruno'
   | 'iokimao'
-  | 'ikedateresa';
+  | 'ikedateresa'
+  | 'kawasakisakura'
+  | 'okamotohina';

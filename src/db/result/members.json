@@ -477,9 +477,9 @@
       "graduatedDate": "2017-12-23"
     },
     "profileImage": {
-      "sm": "/images/members/others/itoumarika_2021-05-17_8f5681a3-de4f-4734-96e9-3e71018f445f_@1x.jpg",
-      "md": "/images/members/others/itoumarika_2021-05-17_8f5681a3-de4f-4734-96e9-3e71018f445f_@2x.jpg",
-      "lg": "/images/members/others/itoumarika_2021-05-17_8f5681a3-de4f-4734-96e9-3e71018f445f_@3x.jpg"
+      "sm": "/images/members/others/itoumarika_2022-06-26_bd7e64df-0069-4e0f-9c01-f4ddf117c5f0_@1x.jpg",
+      "md": "/images/members/others/itoumarika_2022-06-26_bd7e64df-0069-4e0f-9c01-f4ddf117c5f0_@2x.jpg",
+      "lg": "/images/members/others/itoumarika_2022-06-26_bd7e64df-0069-4e0f-9c01-f4ddf117c5f0_@3x.jpg"
     }
   },
   {
@@ -788,8 +788,8 @@
     },
     "join": "second",
     "graduation": {
-      "isGraduated": false,
-      "graduatedDate": ""
+      "isGraduated": true,
+      "graduatedDate": "2022-04-30"
     },
     "profileImage": {
       "sm": "/images/members/singles/28/kitanohinako_7d7fa886-f6f4-4701-bbaa-b93b8ba08c82_@1x.jpg",
@@ -1701,6 +1701,27 @@
     }
   },
   {
+    "name": "okamotohina",
+    "nameNotations": {
+      "lastName": "岡本",
+      "firstName": "姫奈",
+      "lastNameFurigana": "おかもと",
+      "firstNameFurigana": "ひな",
+      "lastNameEn": "okamoto",
+      "firstNameEn": "hina"
+    },
+    "join": "fifth",
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    },
+    "profileImage": {
+      "sm": "/images/members/others/okamotohina_2022-05-06_cbfbaa16-307d-4fd4-bc12-2ee72ad1e3c9_@1x.jpg",
+      "md": "/images/members/others/okamotohina_2022-05-06_cbfbaa16-307d-4fd4-bc12-2ee72ad1e3c9_@2x.jpg",
+      "lg": "/images/members/others/okamotohina_2022-05-06_cbfbaa16-307d-4fd4-bc12-2ee72ad1e3c9_@3x.jpg"
+    }
+  },
+  {
     "name": "ogawaaya",
     "nameNotations": {
       "lastName": "小川",
@@ -1740,6 +1761,27 @@
       "sm": "/images/members/others/okudairoha_2022-04-01_d47069fb-7eed-4c01-bc84-6ef74f421a88_@1x.jpg",
       "md": "/images/members/others/okudairoha_2022-04-01_d47069fb-7eed-4c01-bc84-6ef74f421a88_@2x.jpg",
       "lg": "/images/members/others/okudairoha_2022-04-01_d47069fb-7eed-4c01-bc84-6ef74f421a88_@3x.jpg"
+    }
+  },
+  {
+    "name": "kawasakisakura",
+    "nameNotations": {
+      "lastName": "川﨑",
+      "firstName": "桜",
+      "lastNameFurigana": "かわさき",
+      "firstNameFurigana": "さくら",
+      "lastNameEn": "kawasaki",
+      "firstNameEn": "sakura"
+    },
+    "join": "fifth",
+    "graduation": {
+      "isGraduated": false,
+      "graduatedDate": ""
+    },
+    "profileImage": {
+      "sm": "/images/members/others/kawasakisakura_2022-04-09_2f30142d-31c3-46a7-8cb2-bc563a39bc7e_@1x.jpg",
+      "md": "/images/members/others/kawasakisakura_2022-04-09_2f30142d-31c3-46a7-8cb2-bc563a39bc7e_@2x.jpg",
+      "lg": "/images/members/others/kawasakisakura_2022-04-09_2f30142d-31c3-46a7-8cb2-bc563a39bc7e_@3x.jpg"
     }
   },
   {

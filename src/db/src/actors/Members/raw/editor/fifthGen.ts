@@ -12,10 +12,15 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '兵庫県',
     sites: [
       {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=40007',
+      },
+      {
         title: 'profile',
         url: 'https://www.nogizaka46.com/s/n46/artist/55396',
       },
     ],
+    glowStickColor: ['turquoise', 'blue'],
   }),
   createMemberRaw({
     name: 'ikedateresa',
@@ -27,10 +32,15 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '東京都',
     sites: [
       {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=40007',
+      },
+      {
         title: 'profile',
         url: 'https://www.nogizaka46.com/s/n46/artist/55397',
       },
     ],
+    glowStickColor: ['green', 'white'],
   }),
   createMemberRaw({
     name: 'ichinosemiku',
@@ -42,10 +52,15 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '福岡県',
     sites: [
       {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=40007',
+      },
+      {
         title: 'profile',
         url: 'https://www.nogizaka46.com/s/n46/artist/55390',
       },
     ],
+    glowStickColor: ['light blue', 'light blue'],
   }),
   createMemberRaw({
     name: 'inouenagi',
@@ -57,10 +72,35 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '神奈川県',
     sites: [
       {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=40007',
+      },
+      {
         title: 'profile',
         url: 'https://www.nogizaka46.com/s/n46/artist/55389',
       },
     ],
+    glowStickColor: ['red', 'white'],
+  }),
+  createMemberRaw({
+    name: 'okamotohina',
+    nameNotations: ['岡本', '姫奈', 'おかもと', 'ひな', 'okamoto', 'hina'],
+    join: 'fifth',
+    birthday: '2003-12-17',
+    height: 158,
+    bloodType: 'a',
+    origin: '愛知県',
+    sites: [
+      {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=40007',
+      },
+      {
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55401',
+      },
+    ],
+    glowStickColor: ['purple', 'blue'],
   }),
   createMemberRaw({
     name: 'ogawaaya',
@@ -72,10 +112,15 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '千葉県',
     sites: [
       {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=40007',
+      },
+      {
         title: 'profile',
         url: 'https://www.nogizaka46.com/s/n46/artist/55392',
       },
     ],
+    glowStickColor: ['white', 'white'],
   }),
   createMemberRaw({
     name: 'okudairoha',
@@ -87,10 +132,35 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '千葉県',
     sites: [
       {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=40007',
+      },
+      {
         title: 'profile',
         url: 'https://www.nogizaka46.com/s/n46/artist/55394',
       },
     ],
+    glowStickColor: ['yellow green', 'pink'],
+  }),
+  createMemberRaw({
+    name: 'kawasakisakura',
+    nameNotations: ['川﨑', '桜', 'かわさき', 'さくら', 'kawasaki', 'sakura'],
+    join: 'fifth',
+    birthday: '2003-04-17',
+    height: 155,
+    bloodType: 'unknown',
+    origin: '神奈川県',
+    sites: [
+      {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=40007',
+      },
+      {
+        title: 'profile',
+        url: 'https://www.nogizaka46.com/s/n46/artist/55400',
+      },
+    ],
+    glowStickColor: ['pink', 'green'],
   }),
   createMemberRaw({
     name: 'sugawarasatsuki',
@@ -109,10 +179,15 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '千葉県',
     sites: [
       {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=40007',
+      },
+      {
         title: 'profile',
         url: 'https://www.nogizaka46.com/s/n46/artist/55391',
       },
     ],
+    glowStickColor: ['pink', 'light blue'],
   }),
   createMemberRaw({
     name: 'tomisatonao',
@@ -124,10 +199,15 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '千葉県',
     sites: [
       {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=40007',
+      },
+      {
         title: 'profile',
         url: 'https://www.nogizaka46.com/s/n46/artist/55393',
       },
     ],
+    glowStickColor: ['turquoise', 'turquoise'],
   }),
   createMemberRaw({
     name: 'nakanishiaruno',
@@ -146,9 +226,14 @@ export const FIFTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '千葉県',
     sites: [
       {
+        title: 'blog',
+        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=40007',
+      },
+      {
         title: 'profile',
         url: 'https://www.nogizaka46.com/s/n46/artist/55395',
       },
     ],
+    glowStickColor: ['light blue', 'turquoise'],
   }),
 ];

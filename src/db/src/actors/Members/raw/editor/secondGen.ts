@@ -131,6 +131,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         cover: 'kitanohinako_1',
       },
     ],
+    graduatedDate: '2022-04-30'
   }),
   createMemberRaw({
     name: 'sasakikotoko',
@@ -170,10 +171,6 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'Instagram',
         url: 'https://www.instagram.com/mai.shinuchi_official/',
-      },
-      {
-        title: 'blog',
-        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=17068',
       },
       {
         title: 'profile',
