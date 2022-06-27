@@ -7,7 +7,7 @@ export const InfoItemLabel: React.FC<StyledTypographyProps> = props => {
   return (
     <Typography
       variant="body2"
-      element="span"
+      as="span"
       bold
       capitalize
       textColor={{ on: 'onBackground', variant: 'standard' }}

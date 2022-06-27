@@ -28,7 +28,7 @@ const Header: React.FC<HeaderProps> = props => {
       {subtitle !== undefined && (
         <Typography
           variant="h4"
-          element="p"
+          as="p"
           textColor={{ on: 'onBackground', variant: 'variant0' }}
           css={css`
             margin-bottom: 0.1em;

@@ -209,40 +209,40 @@ export const SongPage: React.FC<SongPageProps> = props => {
                 >
                   {creators.lyrics.length > 0 && (
                     <>
-                      <InfoItemLabel element="dt">
+                      <InfoItemLabel as="dt">
                         <Translation text="lyrics" />
                       </InfoItemLabel>
-                      <InfoItemValue element="dd" lang="ja">
+                      <InfoItemValue as="dd" lang="ja">
                         {formatWordsWithCommas(creators.lyrics)}
                       </InfoItemValue>
                     </>
                   )}
                   {creators.compose.length > 0 && (
                     <>
-                      <InfoItemLabel element="dt">
+                      <InfoItemLabel as="dt">
                         <Translation text="compose" />
                       </InfoItemLabel>
-                      <InfoItemValue element="dd" lang="ja">
+                      <InfoItemValue as="dd" lang="ja">
                         {formatWordsWithCommas(creators.compose)}
                       </InfoItemValue>
                     </>
                   )}
                   {creators.arrange.length > 0 && (
                     <>
-                      <InfoItemLabel element="dt">
+                      <InfoItemLabel as="dt">
                         <Translation text="arrange" />
                       </InfoItemLabel>
-                      <InfoItemValue element="dd" lang="ja">
+                      <InfoItemValue as="dd" lang="ja">
                         {formatWordsWithCommas(creators.arrange)}
                       </InfoItemValue>
                     </>
                   )}
                   {creators.direct.length > 0 && (
                     <>
-                      <InfoItemLabel element="dt">
+                      <InfoItemLabel as="dt">
                         <Translation text="direct" />
                       </InfoItemLabel>
-                      <InfoItemValue element="dd" lang="ja">
+                      <InfoItemValue as="dd" lang="ja">
                         {formatWordsWithCommas(creators.direct)}
                       </InfoItemValue>
                     </>
@@ -278,7 +278,7 @@ export const SongPage: React.FC<SongPageProps> = props => {
                       <section key={index}>
                         {performers.length > 1 && (
                           <SectionSubtitle
-                            element="h3"
+                            as="h3"
                             css={css`
                               margin-top: 0.5em;
                             `}

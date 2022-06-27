@@ -54,7 +54,7 @@ export const GlowStickBadge: React.FC<GlowStickBadgeProps> = props => {
       <Typography
         capitalize
         variant="body3"
-        element="span"
+        as="span"
         textColor={{ on: 'onBackground', variant: 'variant0' }}
         css={css`
           margin-left: ${commonStyles.spacing.xxs};

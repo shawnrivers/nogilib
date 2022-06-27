@@ -47,7 +47,7 @@ const PositionBadgeIndicator: React.FC<{
       <PositionBadge position={position} />
       <Typography
         variant="body3"
-        element="span"
+        as="span"
         textColor={{
           on: 'onBackground',
           variant: 'variant0',
@@ -273,26 +273,26 @@ const MemberPage: React.FC<PageProps> = props => {
                 align-items: center;
               `}
             >
-              <InfoItemLabel element="dt">
+              <InfoItemLabel as="dt">
                 <Translation text="join" />
               </InfoItemLabel>
-              <InfoItemValue element="dd">
+              <InfoItemValue as="dd">
                 <Translation text={('join: ' + join) as any} />{' '}
                 {graduation.isGraduated
                   ? `(${getTranslation('graduate')})`
                   : null}
               </InfoItemValue>
-              <InfoItemLabel element="dt">
+              <InfoItemLabel as="dt">
                 <Translation text="birthday" />
               </InfoItemLabel>
-              <InfoItemValue element="dd">
+              <InfoItemValue as="dd">
                 <time dateTime={birthday}>{formatDate(birthday)}</time>
               </InfoItemValue>
-              <InfoItemLabel element="dt">
+              <InfoItemLabel as="dt">
                 <Translation text="height" />
               </InfoItemLabel>
-              <InfoItemValue element="dd">{height}cm</InfoItemValue>
-              <InfoItemLabel element="dt">
+              <InfoItemValue as="dd">{height}cm</InfoItemValue>
+              <InfoItemLabel as="dt">
                 <Translation text="blood type" />
               </InfoItemLabel>
               <InfoItemValue
@@ -302,35 +302,35 @@ const MemberPage: React.FC<PageProps> = props => {
               >
                 <Translation text={bloodType} />
               </InfoItemValue>
-              <InfoItemLabel element="dt">
+              <InfoItemLabel as="dt">
                 <Translation text="birthplace" />
               </InfoItemLabel>
-              <InfoItemValue element="dd">
+              <InfoItemValue as="dd">
                 <Translation text={origin as any} />
               </InfoItemValue>
               {units.length > 0 && (
                 <>
-                  <InfoItemLabel element="dt">
+                  <InfoItemLabel as="dt">
                     <Translation text="units" />
                   </InfoItemLabel>
-                  <InfoItemValue element="dd" lang="ja">
+                  <InfoItemValue as="dd" lang="ja">
                     {formatWordsWithCommas(units)}
                   </InfoItemValue>
                 </>
               )}
               {corps.length > 0 && (
                 <>
-                  <InfoItemLabel element="dt">
+                  <InfoItemLabel as="dt">
                     <Translation text="corps" />
                   </InfoItemLabel>
-                  <InfoItemValue element="dd" lang="ja">
+                  <InfoItemValue as="dd" lang="ja">
                     {formatWordsWithCommas(corps)}
                   </InfoItemValue>
                 </>
               )}
               {glowStickColor.left !== 'none' && (
                 <>
-                  <InfoItemLabel element="dt">
+                  <InfoItemLabel as="dt">
                     <Translation text="glow stick" />
                   </InfoItemLabel>
                   <dd
@@ -356,7 +356,7 @@ const MemberPage: React.FC<PageProps> = props => {
           {sites.length > 0 ? (
             <section>
               <SectionSubtitle
-                element="h3"
+                as="h3"
                 css={css`
                   margin-top: 0.6em;
                 `}
@@ -395,7 +395,7 @@ const MemberPage: React.FC<PageProps> = props => {
           {photoAlbums.length > 0 ? (
             <section>
               <SectionSubtitle
-                element="h3"
+                as="h3"
                 css={css`
                   margin-top: 0.6em;
                 `}
@@ -438,7 +438,7 @@ const MemberPage: React.FC<PageProps> = props => {
                         />
                         <Typography
                           variant="body2"
-                          element="p"
+                          as="p"
                           css={css`
                             margin-top: 0.8em;
                             text-align: center;
@@ -482,7 +482,7 @@ const MemberPage: React.FC<PageProps> = props => {
                 >
                   <Typography
                     variant="body2"
-                    element="span"
+                    as="span"
                     textColor={{
                       on: 'onBackground',
                       variant: 'variant0',

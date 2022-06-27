@@ -53,7 +53,7 @@ const SkipLink: React.FC = () => {
         >
           <Typography
             variant="body2"
-            element="span"
+            as="span"
             textColor={{ on: 'onPrimary', variant: 'standard' }}
           >
             {capitalizeFirstLetter(getTranslation('skip to content'))}

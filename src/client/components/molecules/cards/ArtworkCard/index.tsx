@@ -13,7 +13,7 @@ import { ImageUrl } from 'db/src/types/commons';
 export const ArtworkCard: React.FC<
   Omit<CardProps, 'children'> & {
     title: string;
-    titleElement?: TypographyProps['element'];
+    titleElement?: TypographyProps['as'];
     number: string;
     type: DiscographyType;
     image: ImageUrl;
@@ -57,7 +57,7 @@ export const ArtworkCard: React.FC<
         />
         <Typography
           variant="h7"
-          element="div"
+          as="div"
           textColor={{ on: 'onBackground', variant: 'variant1' }}
           capitalize
           css={css`
@@ -71,7 +71,7 @@ export const ArtworkCard: React.FC<
         </Typography>
         <Typography
           variant="em2"
-          element={titleElement}
+          as={titleElement}
           ellipsis
           css={css`
             display: block;

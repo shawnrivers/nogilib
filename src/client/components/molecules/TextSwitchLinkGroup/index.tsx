@@ -53,7 +53,7 @@ export const TextSwitchLinkGroup: React.FC<
             </TextSwitchLink>
             <Typography
               variant={TextSwitchLinkProps.variant}
-              element="span"
+              as="span"
               textColor={{
                 on: TextSwitchLinkProps.textOn ?? 'onBackground',
                 variant: 'variant1',
