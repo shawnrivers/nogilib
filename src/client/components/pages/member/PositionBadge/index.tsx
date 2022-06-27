@@ -71,7 +71,7 @@ export const PositionBadge: React.FC<PositionBadgeProps> = props => {
           <Typography
             bold
             variant="body2"
-            element="span"
+            as="span"
             textColor={{
               on: positionStyles.foregroundColor,
               variant: positionStyles.textColorVariant,

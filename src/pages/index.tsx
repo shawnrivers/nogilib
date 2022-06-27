@@ -21,7 +21,7 @@ import { Image } from 'client/components/atoms/image/Image';
 const SubHeading: React.FC = props => (
   <Typography
     variant="h3"
-    element="h2"
+    as="h2"
     css={css`
       text-align: center;
       text-transform: capitalize;

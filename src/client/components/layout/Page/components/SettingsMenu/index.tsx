@@ -24,7 +24,7 @@ const SETTING_MENU_ITEM_RADIO_CLASS = 'setting-menu-item';
 const SettingHeading: React.FC = props => (
   <Typography
     variant="body2"
-    element="p"
+    as="p"
     bold
     css={css`
       text-transform: capitalize;
@@ -70,7 +70,7 @@ const MenuItemRadio = React.forwardRef<MenuItemRadioRef, MenuItemRadioProps>(
         />
         <Typography
           variant="body3"
-          element="span"
+          as="span"
           css={css`
             line-height: 24px;
             height: 24px;

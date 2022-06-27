@@ -111,7 +111,7 @@ export const TextLink = React.forwardRef<TextLinkRef, TextLinkProps>(
       >
         <Typography
           variant={typographyVariant}
-          element="span"
+          as="span"
           bold={bold}
           fontFamily={fontFamily}
           ellipsis={ellipsis}

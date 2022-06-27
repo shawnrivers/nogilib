@@ -7,7 +7,7 @@ import { getColorVarName } from 'client/styles/tokens/colors';
 
 export const TextDivider: React.FC<{
   text: React.ReactNode;
-  element?: TypographyProps['element'];
+  element?: TypographyProps['as'];
 }> = props => {
   const { element: Element = 'span' } = props;
 
@@ -21,7 +21,7 @@ export const TextDivider: React.FC<{
   return (
     <Typography
       variant="h6"
-      element="div"
+      as="div"
       textColor={{ on: 'onBackground', variant: 'standard' }}
       css={css`
         display: grid;

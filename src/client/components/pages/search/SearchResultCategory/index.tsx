@@ -15,7 +15,7 @@ const DEFAULT_RESULT_COUNT = 4;
 
 export type SearchResultCategoryProps = {
   title: 'members' | 'cds' | 'songs';
-  titleElement?: TypographyProps['element'];
+  titleElement?: TypographyProps['as'];
   results: {
     href: string;
     image: HorizontalCardProps['image'];
@@ -35,7 +35,7 @@ export const SearchResultCategory: React.FC<
     <section {...restProps}>
       <Typography
         variant="h6"
-        element={titleElement}
+        as={titleElement}
         css={css`
           text-transform: capitalize;
         `}
@@ -80,7 +80,7 @@ export const SearchResultCategory: React.FC<
         {results.length > DEFAULT_RESULT_COUNT && !showMore ? (
           <Typography
             variant="body2"
-            element="button"
+            as="button"
             textColor={{
               on: 'onBackground',
               variant: 'variant1',

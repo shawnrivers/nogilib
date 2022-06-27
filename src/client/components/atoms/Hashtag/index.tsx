@@ -26,7 +26,7 @@ export const Hashtag: React.FC<HashtagProps> = props => {
   return text !== '' ? (
     <Typography
       variant="body2"
-      element="span"
+      as="span"
       textColor={textColor}
       css={css`
         border-radius: ${commonStyles.borderRadius.xl};

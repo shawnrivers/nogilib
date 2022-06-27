@@ -47,7 +47,7 @@ const PositionBadge: React.FC<{
     >
       <Typography
         variant="body2"
-        element="span"
+        as="span"
         bold
         textColor={{
           on: positionStylesKey.foregroundColor,
@@ -68,7 +68,7 @@ export type MemberCardProps = Omit<CardProps, 'children' | 'padding'> & {
   name: string;
   lang: string;
   width: number;
-  nameElement?: TypographyProps['element'];
+  nameElement?: TypographyProps['as'];
   textSize?: TypographyProps['variant'];
   position?: Position;
 };
@@ -112,7 +112,7 @@ export const MemberCard: React.FC<MemberCardProps> = props => {
         />
         <Typography
           variant={textSize}
-          element={nameElement}
+          as={nameElement}
           css={css`
             border-top: 3px solid
               var(${getColorVarName('onBackground', 'standard')});

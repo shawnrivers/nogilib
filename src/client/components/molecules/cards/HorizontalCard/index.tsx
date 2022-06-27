@@ -15,7 +15,7 @@ export type HorizontalCardProps = Omit<CardProps, 'children' | 'title'> & {
     text: string;
     lang?: string;
   };
-  titleElement?: TypographyProps['element'];
+  titleElement?: TypographyProps['as'];
   tags: {
     text: string;
     lang?: string;
@@ -67,7 +67,7 @@ export const HorizontalCard: React.FC<HorizontalCardProps> = props => {
         >
           <Typography
             variant="body2"
-            element={titleElement}
+            as={titleElement}
             bold
             ellipsis
             css={css`

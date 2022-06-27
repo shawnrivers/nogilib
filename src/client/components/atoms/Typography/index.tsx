@@ -58,7 +58,7 @@ const defaultFontFamilyMapping: Record<TypographyKey, FontFamily> = {
 
 export type TypographyProps = React.HTMLAttributes<HTMLElement> & {
   variant: TypographyKey;
-  element?: React.ElementType;
+  as?: React.ElementType;
   bold?: boolean;
   fontFamily?: FontFamily;
   ellipsis?: boolean;
@@ -72,7 +72,7 @@ export type TypographyProps = React.HTMLAttributes<HTMLElement> & {
 export const Typography: React.FC<TypographyProps> = props => {
   const {
     variant,
-    element,
+    as: element,
     fontFamily,
     ellipsis = false,
     textColor = {
