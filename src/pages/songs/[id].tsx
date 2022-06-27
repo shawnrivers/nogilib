@@ -197,7 +197,7 @@ export const SongPage: React.FC<SongPageProps> = props => {
                 creators.arrange.length +
                 creators.direct.length >
                 0 && (
-                <div
+                <dl
                   css={css`
                     display: grid;
                     grid-template-columns: max-content auto;
@@ -209,45 +209,45 @@ export const SongPage: React.FC<SongPageProps> = props => {
                 >
                   {creators.lyrics.length > 0 && (
                     <>
-                      <InfoItemLabel>
+                      <InfoItemLabel element="dt">
                         <Translation text="lyrics" />
                       </InfoItemLabel>
-                      <InfoItemValue lang="ja">
+                      <InfoItemValue element="dd" lang="ja">
                         {formatWordsWithCommas(creators.lyrics)}
                       </InfoItemValue>
                     </>
                   )}
                   {creators.compose.length > 0 && (
                     <>
-                      <InfoItemLabel>
+                      <InfoItemLabel element="dt">
                         <Translation text="compose" />
                       </InfoItemLabel>
-                      <InfoItemValue lang="ja">
+                      <InfoItemValue element="dd" lang="ja">
                         {formatWordsWithCommas(creators.compose)}
                       </InfoItemValue>
                     </>
                   )}
                   {creators.arrange.length > 0 && (
                     <>
-                      <InfoItemLabel>
+                      <InfoItemLabel element="dt">
                         <Translation text="arrange" />
                       </InfoItemLabel>
-                      <InfoItemValue lang="ja">
+                      <InfoItemValue element="dd" lang="ja">
                         {formatWordsWithCommas(creators.arrange)}
                       </InfoItemValue>
                     </>
                   )}
                   {creators.direct.length > 0 && (
                     <>
-                      <InfoItemLabel>
+                      <InfoItemLabel element="dt">
                         <Translation text="direct" />
                       </InfoItemLabel>
-                      <InfoItemValue lang="ja">
+                      <InfoItemValue element="dd" lang="ja">
                         {formatWordsWithCommas(creators.direct)}
                       </InfoItemValue>
                     </>
                   )}
-                </div>
+                </dl>
               )}
             </div>
           </section>

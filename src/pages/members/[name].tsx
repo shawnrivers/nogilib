@@ -262,7 +262,7 @@ const MemberPage: React.FC<PageProps> = props => {
                 aspectRatio={5 / 6}
               />
             </div>
-            <div
+            <dl
               css={css`
                 display: grid;
                 grid-template-columns: max-content auto;
@@ -273,26 +273,26 @@ const MemberPage: React.FC<PageProps> = props => {
                 align-items: center;
               `}
             >
-              <InfoItemLabel>
+              <InfoItemLabel element="dt">
                 <Translation text="join" />
               </InfoItemLabel>
-              <InfoItemValue>
+              <InfoItemValue element="dd">
                 <Translation text={('join: ' + join) as any} />{' '}
                 {graduation.isGraduated
                   ? `(${getTranslation('graduate')})`
                   : null}
               </InfoItemValue>
-              <InfoItemLabel>
+              <InfoItemLabel element="dt">
                 <Translation text="birthday" />
               </InfoItemLabel>
-              <InfoItemValue>
+              <InfoItemValue element="dd">
                 <time dateTime={birthday}>{formatDate(birthday)}</time>
               </InfoItemValue>
-              <InfoItemLabel>
+              <InfoItemLabel element="dt">
                 <Translation text="height" />
               </InfoItemLabel>
-              <InfoItemValue>{height}cm</InfoItemValue>
-              <InfoItemLabel>
+              <InfoItemValue element="dd">{height}cm</InfoItemValue>
+              <InfoItemLabel element="dt">
                 <Translation text="blood type" />
               </InfoItemLabel>
               <InfoItemValue
@@ -302,38 +302,38 @@ const MemberPage: React.FC<PageProps> = props => {
               >
                 <Translation text={bloodType} />
               </InfoItemValue>
-              <InfoItemLabel>
+              <InfoItemLabel element="dt">
                 <Translation text="birthplace" />
               </InfoItemLabel>
-              <InfoItemValue>
+              <InfoItemValue element="dd">
                 <Translation text={origin as any} />
               </InfoItemValue>
               {units.length > 0 && (
                 <>
-                  <InfoItemLabel>
+                  <InfoItemLabel element="dt">
                     <Translation text="units" />
                   </InfoItemLabel>
-                  <InfoItemValue lang="ja">
+                  <InfoItemValue element="dd" lang="ja">
                     {formatWordsWithCommas(units)}
                   </InfoItemValue>
                 </>
               )}
               {corps.length > 0 && (
                 <>
-                  <InfoItemLabel>
+                  <InfoItemLabel element="dt">
                     <Translation text="corps" />
                   </InfoItemLabel>
-                  <InfoItemValue lang="ja">
+                  <InfoItemValue element="dd" lang="ja">
                     {formatWordsWithCommas(corps)}
                   </InfoItemValue>
                 </>
               )}
               {glowStickColor.left !== 'none' && (
                 <>
-                  <InfoItemLabel>
+                  <InfoItemLabel element="dt">
                     <Translation text="glow stick" />
                   </InfoItemLabel>
-                  <div
+                  <dd
                     css={css`
                       display: flex;
                       flex-wrap: wrap;
@@ -348,10 +348,10 @@ const MemberPage: React.FC<PageProps> = props => {
                       `}
                     />
                     <GlowStickBadge color={glowStickColor.right} size={14} />
-                  </div>
+                  </dd>
                 </>
               )}
-            </div>
+            </dl>
           </div>
           {sites.length > 0 ? (
             <section>
