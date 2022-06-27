@@ -131,7 +131,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         cover: 'kitanohinako_1',
       },
     ],
-    graduatedDate: '2022-04-30'
+    graduatedDate: '2022-04-30',
   }),
   createMemberRaw({
     name: 'sasakikotoko',
@@ -291,6 +291,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
       {
         title: 'Instagram',
         url: 'https://www.instagram.com/horimiona_official/',
+      },
+      {
+        title: 'Twitter',
+        url: 'https://twitter.com/10hori_miona15',
       },
       {
         title: 'YouTube',
