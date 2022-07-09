@@ -293,10 +293,6 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/horimiona_official/',
       },
       {
-        title: 'Twitter',
-        url: 'https://twitter.com/10hori_miona15',
-      },
-      {
         title: 'YouTube',
         url: 'https://www.youtube.com/channel/UCio44gPWhiXjC7uHhkS8W9w',
       },
