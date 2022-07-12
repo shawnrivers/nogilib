@@ -289,6 +289,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     graduatedDate: '2021-03-28',
     sites: [
       {
+        title: 'Twitter',
+        url: 'https://twitter.com/_horimionaa',
+      },
+      {
         title: 'Instagram',
         url: 'https://www.instagram.com/horimiona_official/',
       },
