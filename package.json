@@ -44,7 +44,7 @@
     "@fontsource/playfair-display": "^4.5.10",
     "flexsearch": "^0.6.32",
     "focus-visible": "^5.2.0",
-    "framer-motion": "^6.5.0",
+    "framer-motion": "^6.5.1",
     "next": "^12.2.2",
     "preact": "^10.10.0",
     "react": "^17.0.0",
