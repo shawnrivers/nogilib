@@ -12288,8 +12288,8 @@
     ],
     "join": "second",
     "graduation": {
-      "isGraduated": false,
-      "graduatedDate": ""
+      "isGraduated": true,
+      "graduatedDate": "2022-07-17"
     },
     "birthday": "1998-01-31",
     "height": 164,
