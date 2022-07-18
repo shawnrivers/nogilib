@@ -379,6 +379,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://7gogo.jp/yamazaki-rena',
       },
     ],
+    graduatedDate: '2022-07-17',
   }),
   createMemberRaw({
     name: 'watanabemiria',
