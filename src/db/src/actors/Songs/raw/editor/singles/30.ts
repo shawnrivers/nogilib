@@ -2,7 +2,7 @@ import { createSongRaw } from '../../creator';
 
 export const THIRTIETH_SINGLE_SONGS = [
   createSongRaw({
-    title: 'タイトル未定',
+    title: '好きというのはロックだぜ！',
     type: 'title',
     center: ['kakiharuka'],
     fukujin: 'row-1-2',

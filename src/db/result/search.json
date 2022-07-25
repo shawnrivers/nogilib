@@ -408,11 +408,11 @@
         }
       },
       {
-        "id": "single-untitled",
-        "field": "タイトル未定 untitled",
+        "id": "single-sukitoiunoharockdaze",
+        "field": "好きというのはロックだぜ！ sukitoiunoharockdaze",
         "searchType": "albums",
-        "key": "untitled",
-        "title": "タイトル未定",
+        "key": "sukitoiunoharockdaze",
+        "title": "好きというのはロックだぜ！",
         "number": "30",
         "albumType": "single",
         "artwork": {
@@ -4615,14 +4615,14 @@
         }
       },
       {
-        "id": "song-untitled",
-        "field": "タイトル未定 untitled",
+        "id": "song-sukitoiunoharockdaze",
+        "field": "好きというのはロックだぜ！ sukitoiunoharockdaze",
         "searchType": "songs",
-        "key": "untitled",
-        "title": "タイトル未定",
+        "key": "sukitoiunoharockdaze",
+        "title": "好きというのはロックだぜ！",
         "songType": "title",
         "single": {
-          "title": "タイトル未定",
+          "title": "好きというのはロックだぜ！",
           "number": "30"
         },
         "albums": [],

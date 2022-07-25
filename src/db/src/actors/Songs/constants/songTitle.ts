@@ -3,6 +3,7 @@ import { ArrayElement } from 'types/common';
 
 const SongsTitleKeyArray = (
   [
+    { title: '好きというのはロックだぜ！', key: 'sukitoiunoharockdaze' },
     { title: '好きになってみた', key: 'sukininattemita' },
     { title: '絶望の一秒前', key: 'zetsubounoichibyoumae' },
     { title: '届かなくたって…', key: 'todokanakudatte' },
