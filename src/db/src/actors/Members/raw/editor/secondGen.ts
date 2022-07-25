@@ -363,6 +363,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: '東京都',
     sites: [
       {
+        title: 'Twitter',
+        url: 'https://twitter.com/ymzkofficial',
+      },
+      {
         title: 'Instagram',
         url: 'https://instagram.com/rena_yamazaki.official/',
       },
