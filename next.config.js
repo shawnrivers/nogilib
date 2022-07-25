@@ -3,7 +3,7 @@ module.exports = {
     locales: ['ja', 'en', 'zh'],
     defaultLocale: 'ja',
   },
-  experimental: {
+  compiler: {
     emotion: true,
   },
   async headers() {

@@ -22,6 +22,7 @@ export type SearchResultCategoryProps = {
     heading: HorizontalCardProps['title'];
     captions: HorizontalCardProps['tags'];
   }[];
+  className?: string;
 };
 
 export const SearchResultCategory: React.FC<
