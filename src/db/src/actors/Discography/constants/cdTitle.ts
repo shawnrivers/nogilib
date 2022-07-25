@@ -7,6 +7,10 @@ const singleTitles = [
     key: 'untitled',
   },
   {
+    title: '好きというのはロックだぜ！',
+    key: 'sukitoiunoharockdaze',
+  },
+  {
     title: 'Actually...',
     key: 'actually',
   },
