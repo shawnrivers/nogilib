@@ -64,7 +64,7 @@ export const PositionCounter: React.FC<PositionCounterProps> = props => {
           >
             <Typography
               variant="body2"
-              element="span"
+              as="span"
               textColor={{
                 on: POSITION_STYLES.center.foregroundColor,
                 variant: POSITION_STYLES.center.textColorVariant,
@@ -100,7 +100,7 @@ export const PositionCounter: React.FC<PositionCounterProps> = props => {
           >
             <Typography
               variant="body2"
-              element="span"
+              as="span"
               textColor={{
                 on: POSITION_STYLES.fukujin.foregroundColor,
                 variant: POSITION_STYLES.fukujin.textColorVariant,
@@ -136,7 +136,7 @@ export const PositionCounter: React.FC<PositionCounterProps> = props => {
           >
             <Typography
               variant="body2"
-              element="span"
+              as="span"
               textColor={{
                 on: POSITION_STYLES.selected.foregroundColor,
                 variant: POSITION_STYLES.selected.textColorVariant,
@@ -173,7 +173,7 @@ export const PositionCounter: React.FC<PositionCounterProps> = props => {
           >
             <Typography
               variant="body2"
-              element="span"
+              as="span"
               textColor={{
                 on: POSITION_STYLES.under.foregroundColor,
                 variant: POSITION_STYLES.under.textColorVariant,

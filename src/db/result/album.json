@@ -3697,6 +3697,51 @@
     ]
   },
   {
+    "key": "sukitoiunoharockdaze",
+    "title": "好きというのはロックだぜ！",
+    "type": "single",
+    "number": "30",
+    "artworks": [
+      {
+        "url": {
+          "sm": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@1x.jpg",
+          "md": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@3x.jpg"
+        },
+        "type": "A"
+      }
+    ],
+    "release": "2022-08-30",
+    "songs": [
+      {
+        "key": "sukitoiunoharockdaze",
+        "title": "好きというのはロックだぜ！",
+        "type": "title",
+        "inCdType": [
+          "A"
+        ]
+      }
+    ],
+    "centers": [
+      {
+        "name": "kakiharuka",
+        "nameNotations": {
+          "lastName": "賀喜",
+          "firstName": "遥香",
+          "lastNameFurigana": "かき",
+          "firstNameFurigana": "はるか",
+          "lastNameEn": "kaki",
+          "firstNameEn": "haruka"
+        },
+        "albumProfileImage": {
+          "sm": "/images/members/singles/28/kakiharuka_da1f6a7d-7fa8-46f6-b4d7-017baab93b8b_@1x.jpg",
+          "md": "/images/members/singles/28/kakiharuka_da1f6a7d-7fa8-46f6-b4d7-017baab93b8b_@2x.jpg",
+          "lg": "/images/members/singles/28/kakiharuka_da1f6a7d-7fa8-46f6-b4d7-017baab93b8b_@3x.jpg"
+        }
+      }
+    ]
+  },
+  {
     "key": "imagaomoideninarumade",
     "title": "今が思い出になるまで",
     "type": "album",

@@ -204,7 +204,7 @@ const SearchPage: React.FC<PageProps> = props => {
           >
             <Typography
               variant="body1"
-              element="div"
+              as="div"
               css={css`
                 position: relative;
                 width: 100%;

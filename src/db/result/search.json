@@ -408,6 +408,20 @@
         }
       },
       {
+        "id": "single-sukitoiunoharockdaze",
+        "field": "好きというのはロックだぜ！ sukitoiunoharockdaze",
+        "searchType": "albums",
+        "key": "sukitoiunoharockdaze",
+        "title": "好きというのはロックだぜ！",
+        "number": "30",
+        "albumType": "single",
+        "artwork": {
+          "sm": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@1x.jpg",
+          "md": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@3x.jpg"
+        }
+      },
+      {
         "id": "album-imagaomoideninarumade",
         "field": "今が思い出になるまで imagaomoideninarumade",
         "searchType": "albums",
@@ -4598,6 +4612,24 @@
           "sm": "/images/artworks/singles/29/T_3d197502-a9ed-4dd7-9313-de1d8bcbe562_@1x.jpg",
           "md": "/images/artworks/singles/29/T_3d197502-a9ed-4dd7-9313-de1d8bcbe562_@2x.jpg",
           "lg": "/images/artworks/singles/29/T_3d197502-a9ed-4dd7-9313-de1d8bcbe562_@3x.jpg"
+        }
+      },
+      {
+        "id": "song-sukitoiunoharockdaze",
+        "field": "好きというのはロックだぜ！ sukitoiunoharockdaze",
+        "searchType": "songs",
+        "key": "sukitoiunoharockdaze",
+        "title": "好きというのはロックだぜ！",
+        "songType": "title",
+        "single": {
+          "title": "好きというのはロックだぜ！",
+          "number": "30"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@1x.jpg",
+          "md": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@2x.jpg",
+          "lg": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@3x.jpg"
         }
       },
       {

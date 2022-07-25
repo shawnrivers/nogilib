@@ -253,7 +253,10 @@ export const EmotionThemeProvider: React.FC = props => {
           p,
           ul,
           ol,
-          li {
+          li,
+          dl,
+          dt,
+          dd {
             margin-block-end: 0;
             margin-block-start: 0;
             margin-inline-end: 0;

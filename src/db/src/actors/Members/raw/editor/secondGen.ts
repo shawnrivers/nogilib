@@ -131,7 +131,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         cover: 'kitanohinako_1',
       },
     ],
-    graduatedDate: '2022-04-30'
+    graduatedDate: '2022-04-30',
   }),
   createMemberRaw({
     name: 'sasakikotoko',
@@ -289,6 +289,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     graduatedDate: '2021-03-28',
     sites: [
       {
+        title: 'Twitter',
+        url: 'https://twitter.com/_horimionaa',
+      },
+      {
         title: 'Instagram',
         url: 'https://www.instagram.com/horimiona_official/',
       },
@@ -359,6 +363,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
     origin: '東京都',
     sites: [
       {
+        title: 'Twitter',
+        url: 'https://twitter.com/ymzkofficial',
+      },
+      {
         title: 'Instagram',
         url: 'https://instagram.com/rena_yamazaki.official/',
       },
@@ -375,6 +383,7 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://7gogo.jp/yamazaki-rena',
       },
     ],
+    graduatedDate: '2022-07-17',
   }),
   createMemberRaw({
     name: 'watanabemiria',

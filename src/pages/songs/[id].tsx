@@ -197,7 +197,7 @@ export const SongPage: React.FC<SongPageProps> = props => {
                 creators.arrange.length +
                 creators.direct.length >
                 0 && (
-                <div
+                <dl
                   css={css`
                     display: grid;
                     grid-template-columns: max-content auto;
@@ -209,45 +209,45 @@ export const SongPage: React.FC<SongPageProps> = props => {
                 >
                   {creators.lyrics.length > 0 && (
                     <>
-                      <InfoItemLabel>
+                      <InfoItemLabel as="dt">
                         <Translation text="lyrics" />
                       </InfoItemLabel>
-                      <InfoItemValue lang="ja">
+                      <InfoItemValue as="dd" lang="ja">
                         {formatWordsWithCommas(creators.lyrics)}
                       </InfoItemValue>
                     </>
                   )}
                   {creators.compose.length > 0 && (
                     <>
-                      <InfoItemLabel>
+                      <InfoItemLabel as="dt">
                         <Translation text="compose" />
                       </InfoItemLabel>
-                      <InfoItemValue lang="ja">
+                      <InfoItemValue as="dd" lang="ja">
                         {formatWordsWithCommas(creators.compose)}
                       </InfoItemValue>
                     </>
                   )}
                   {creators.arrange.length > 0 && (
                     <>
-                      <InfoItemLabel>
+                      <InfoItemLabel as="dt">
                         <Translation text="arrange" />
                       </InfoItemLabel>
-                      <InfoItemValue lang="ja">
+                      <InfoItemValue as="dd" lang="ja">
                         {formatWordsWithCommas(creators.arrange)}
                       </InfoItemValue>
                     </>
                   )}
                   {creators.direct.length > 0 && (
                     <>
-                      <InfoItemLabel>
+                      <InfoItemLabel as="dt">
                         <Translation text="direct" />
                       </InfoItemLabel>
-                      <InfoItemValue lang="ja">
+                      <InfoItemValue as="dd" lang="ja">
                         {formatWordsWithCommas(creators.direct)}
                       </InfoItemValue>
                     </>
                   )}
-                </div>
+                </dl>
               )}
             </div>
           </section>
@@ -278,7 +278,7 @@ export const SongPage: React.FC<SongPageProps> = props => {
                       <section key={index}>
                         {performers.length > 1 && (
                           <SectionSubtitle
-                            element="h3"
+                            as="h3"
                             css={css`
                               margin-top: 0.5em;
                             `}

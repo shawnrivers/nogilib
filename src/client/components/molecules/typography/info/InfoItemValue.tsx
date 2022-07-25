@@ -7,7 +7,7 @@ export const InfoItemValue: React.FC<StyledTypographyProps> = props => {
   return (
     <Typography
       variant="body2"
-      element="span"
+      as="span"
       textColor={{ on: 'onBackground', variant: 'variant0' }}
       {...typographyProps}
     >

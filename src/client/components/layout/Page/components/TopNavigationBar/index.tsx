@@ -65,7 +65,7 @@ export const TopNavigationBar: React.FC = () => {
           </TextLink>
           <Typography
             variant="h6"
-            element="span"
+            as="span"
             className="large"
             css={css`
               margin: 0 ${commonStyles.spacing.xs};
