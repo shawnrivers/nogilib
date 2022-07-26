@@ -1002,6 +1002,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '埼玉県',
     sites: [
       {
+        title: 'Twitter',
+        url: 'https://twitter.com/chiharu_saito_',
+      },
+      {
         title: 'Instagram',
         url: 'https://www.instagram.com/chiharu_saito_ex/',
       },
