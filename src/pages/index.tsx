@@ -18,7 +18,7 @@ import { PageHelmet } from 'client/components/layout/PageHelmet';
 import { getColorVarName } from 'client/styles/tokens/colors';
 import { Image } from 'client/components/atoms/image/Image';
 
-const SubHeading: React.FC = props => (
+const SubHeading: React.FC<{ children: React.ReactNode }> = props => (
   <Typography
     variant="h3"
     as="h2"
@@ -34,6 +34,7 @@ const SubHeading: React.FC = props => (
 
 const SectionTextLink: React.FC<{
   to: string;
+  children: React.ReactNode;
 }> = props => (
   <TextLink
     href={props.to}
