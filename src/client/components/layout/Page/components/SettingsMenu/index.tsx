@@ -21,7 +21,7 @@ const SETTING_MENU_BUTTON_ID = 'setting-menu-button';
 const SETTING_MENU_ID = 'setting-menu';
 const SETTING_MENU_ITEM_RADIO_CLASS = 'setting-menu-item';
 
-const SettingHeading: React.FC = props => (
+const SettingHeading: React.FC<{ children: React.ReactNode }> = props => (
   <Typography
     variant="body2"
     as="p"

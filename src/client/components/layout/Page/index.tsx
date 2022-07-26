@@ -64,7 +64,7 @@ const SkipLink: React.FC = () => {
   );
 };
 
-export const Page: React.FC = props => {
+export const Page: React.FC<{ children: React.ReactNode }> = props => {
   return (
     <div
       css={css`

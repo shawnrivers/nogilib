@@ -10,7 +10,9 @@ import '@fontsource/playfair-display/700.css';
  * NOTE:
  * EmotionThemeProvider should be put used as a descendant of ThemeContextProvider.
  */
-export const EmotionThemeProvider: React.FC = props => {
+export const EmotionThemeProvider: React.FC<{
+  children: React.ReactNode;
+}> = props => {
   useDarkModeMediaQuery();
   useLocalStorageThemeMode();
 

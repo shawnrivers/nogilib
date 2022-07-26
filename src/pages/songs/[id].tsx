@@ -337,7 +337,6 @@ export const SongPage: React.FC<SongPageProps> = props => {
                               />
                             </li>
                           ))}
-                          {props.children}
                         </ul>
                       </section>
                     ))}

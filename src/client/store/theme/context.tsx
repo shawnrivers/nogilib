@@ -19,7 +19,9 @@ export const ThemeContext = React.createContext<Context>({
   setTheme: () => null,
 });
 
-export const ThemeContextProvider: React.FC = props => {
+export const ThemeContextProvider: React.FC<{
+  children: React.ReactNode;
+}> = props => {
   const [state, dispatch] = React.useReducer(
     themeReducer,
     getInitialThemeState()

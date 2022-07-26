@@ -73,7 +73,9 @@ const Header: React.FC<HeaderProps> = props => {
 
 export const PAGE_CONTENT_ID = 'page-content';
 
-export const PageContent: React.FC<HeaderProps> = props => {
+export const PageContent: React.FC<
+  HeaderProps & { children?: React.ReactNode }
+> = props => {
   return (
     <div
       css={css`
