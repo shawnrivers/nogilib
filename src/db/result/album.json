@@ -3704,11 +3704,43 @@
     "artworks": [
       {
         "url": {
-          "sm": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@1x.jpg",
-          "md": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@2x.jpg",
-          "lg": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@3x.jpg"
+          "sm": "/images/artworks/singles/30/A_9c163140-0c36-4850-9f22-7fb45a1c48d4_@1x.jpg",
+          "md": "/images/artworks/singles/30/A_9c163140-0c36-4850-9f22-7fb45a1c48d4_@2x.jpg",
+          "lg": "/images/artworks/singles/30/A_9c163140-0c36-4850-9f22-7fb45a1c48d4_@3x.jpg"
         },
         "type": "A"
+      },
+      {
+        "url": {
+          "sm": "/images/artworks/singles/30/B_0100fbea-9c16-4140-8c36-a8509f227fb4_@1x.jpg",
+          "md": "/images/artworks/singles/30/B_0100fbea-9c16-4140-8c36-a8509f227fb4_@2x.jpg",
+          "lg": "/images/artworks/singles/30/B_0100fbea-9c16-4140-8c36-a8509f227fb4_@3x.jpg"
+        },
+        "type": "B"
+      },
+      {
+        "url": {
+          "sm": "/images/artworks/singles/30/C_00fbea9c-1631-400c-b6a8-509f227fb45a_@1x.jpg",
+          "md": "/images/artworks/singles/30/C_00fbea9c-1631-400c-b6a8-509f227fb45a_@2x.jpg",
+          "lg": "/images/artworks/singles/30/C_00fbea9c-1631-400c-b6a8-509f227fb45a_@3x.jpg"
+        },
+        "type": "C"
+      },
+      {
+        "url": {
+          "sm": "/images/artworks/singles/30/D_fbea9c16-3140-4c36-a850-9f227fb45a1c_@1x.jpg",
+          "md": "/images/artworks/singles/30/D_fbea9c16-3140-4c36-a850-9f227fb45a1c_@2x.jpg",
+          "lg": "/images/artworks/singles/30/D_fbea9c16-3140-4c36-a850-9f227fb45a1c_@3x.jpg"
+        },
+        "type": "D"
+      },
+      {
+        "url": {
+          "sm": "/images/artworks/singles/30/T_ea9c1631-400c-46a8-909f-227fb45a1c48_@1x.jpg",
+          "md": "/images/artworks/singles/30/T_ea9c1631-400c-46a8-909f-227fb45a1c48_@2x.jpg",
+          "lg": "/images/artworks/singles/30/T_ea9c1631-400c-46a8-909f-227fb45a1c48_@3x.jpg"
+        },
+        "type": "T"
       }
     ],
     "release": "2022-08-30",
@@ -3718,7 +3750,11 @@
         "title": "好きというのはロックだぜ！",
         "type": "title",
         "inCdType": [
-          "A"
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
         ]
       }
     ],
