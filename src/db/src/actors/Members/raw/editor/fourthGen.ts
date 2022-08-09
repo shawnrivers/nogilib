@@ -41,16 +41,20 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=48008',
       },
     ],
-    photoAlbums: [{
-      release: '2022-06-07',
-      title: 'まっさら',
-      type: 'photo album',
-      cover: 'kakiharuka_1',
-      sites: [{
-        title: 'Twitter',
-        url: 'https://twitter.com/kakiharuka_1st'
-      }]
-    }]
+    photoAlbums: [
+      {
+        release: '2022-06-07',
+        title: 'まっさら',
+        type: 'photo album',
+        cover: 'kakiharuka_1',
+        sites: [
+          {
+            title: 'Twitter',
+            url: 'https://twitter.com/kakiharuka_1st',
+          },
+        ],
+      },
+    ],
   }),
   createMemberRaw({
     name: 'kakehashisayaka',
@@ -269,6 +273,10 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     bloodType: 'b',
     origin: '岩手県',
     sites: [
+      {
+        title: 'Instagram',
+        url: 'https://www.instagram.com/lica_sato_official/',
+      },
       {
         title: 'profile',
         url: 'https://www.nogizaka46.com/s/n46/artist/55384',
