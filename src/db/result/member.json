@@ -6068,14 +6068,14 @@
       },
       {
         "singleNumber": "30",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 1,
       "selected": 2,
-      "under": 27
+      "under": 28
     }
   },
   {
@@ -13709,14 +13709,14 @@
       },
       {
         "singleNumber": "30",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 2,
-      "under": 8
+      "under": 9
     }
   },
   {
@@ -14801,14 +14801,14 @@
       },
       {
         "singleNumber": "30",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 1,
-      "under": 9
+      "under": 10
     }
   },
   {
@@ -15233,14 +15233,14 @@
       },
       {
         "singleNumber": "30",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 10
+      "under": 11
     }
   },
   {
@@ -15449,14 +15449,14 @@
       },
       {
         "singleNumber": "30",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 10
+      "under": 11
     }
   },
   {
@@ -15902,14 +15902,14 @@
       },
       {
         "singleNumber": "30",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 10
+      "under": 11
     }
   },
   {
@@ -17180,14 +17180,14 @@
       },
       {
         "singleNumber": "30",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 2
+      "under": 3
     }
   },
   {
@@ -18190,7 +18190,7 @@
       },
       {
         "singleNumber": "30",
-        "position": "none"
+        "position": "skip"
       }
     ],
     "positionsCounter": {
@@ -18392,14 +18392,14 @@
       },
       {
         "singleNumber": "30",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 2
+      "under": 3
     }
   },
   {
@@ -18594,14 +18594,14 @@
       },
       {
         "singleNumber": "30",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 2
+      "under": 3
     }
   },
   {
@@ -18800,14 +18800,14 @@
       },
       {
         "singleNumber": "30",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 2
+      "under": 3
     }
   },
   {
@@ -19002,14 +19002,14 @@
       },
       {
         "singleNumber": "30",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 2
+      "under": 3
     }
   },
   {
@@ -19199,14 +19199,14 @@
       },
       {
         "singleNumber": "30",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 2
+      "under": 3
     }
   },
   {
