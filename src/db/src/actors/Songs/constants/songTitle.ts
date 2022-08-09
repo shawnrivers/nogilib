@@ -3,6 +3,10 @@ import { ArrayElement } from 'types/common';
 
 const SongsTitleKeyArray = (
   [
+    { title: "バンドエイド剥がすような別れ方", key: 'bandaidwohagasuyounawakarekata' },
+    { title: "ジャンピングジョーカーフラッシュ", key: 'jumpingjokerflash' },
+    { title: "僕が手を叩く方へ", key: 'bokugatewotadakuhouhe' },
+    { title: "Under's Love", key: 'underslove' },
     { title: '好きというのはロックだぜ！', key: 'sukitoiunoharockdaze' },
     { title: '好きになってみた', key: 'sukininattemita' },
     { title: '絶望の一秒前', key: 'zetsubounoichibyoumae' },

@@ -3756,6 +3756,42 @@
           "D",
           "T"
         ]
+      },
+      {
+        "key": "underslove",
+        "title": "Under's Love",
+        "type": "under",
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ]
+      },
+      {
+        "key": "bokugatewotadakuhouhe",
+        "title": "僕が手を叩く方へ",
+        "type": "third generation",
+        "inCdType": [
+          "A"
+        ]
+      },
+      {
+        "key": "jumpingjokerflash",
+        "title": "ジャンピングジョーカーフラッシュ",
+        "type": "fourth generation",
+        "inCdType": [
+          "B"
+        ]
+      },
+      {
+        "key": "bandaidwohagasuyounawakarekata",
+        "title": "バンドエイド剥がすような別れ方",
+        "type": "fifth generation",
+        "inCdType": [
+          "C"
+        ]
       }
     ],
     "centers": [

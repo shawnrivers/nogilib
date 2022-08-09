@@ -10,5 +10,36 @@ export const THIRTIETH_SINGLE = createSingleRaw({
       title: '好きというのはロックだぜ！',
       inCdType: ['A', 'B', 'C', 'D', 'T'],
     },
+    {
+      title: "Under's Love",
+      inCdType: ['A', 'B', 'C', 'D', 'T'],
+    },
+    {
+      title: '僕が手を叩く方へ',
+      inCdType: ['A'],
+    },
+    {
+      title: 'ジャンピングジョーカーフラッシュ',
+      inCdType: ['B'],
+    },
+    {
+      title: 'バンドエイド剥がすような別れ方',
+      inCdType: ['C'],
+    },
   ],
+  underMembers: [
+    'wadamaaya',
+    'itouriria',
+    'sakaguchitamami',
+    'nakamurareno',
+    'mukaihazuki',
+    'yoshidaayanochristie',
+    'kitagawayuri',
+    'kuromiharuka',
+    'satourika',
+    'hayashiruna',
+    'matsuomiyu',
+    'yakubomio',
+  ],
+  skips: ['hayakawaseira'],
 });

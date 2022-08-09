@@ -4633,6 +4633,78 @@
         }
       },
       {
+        "id": "song-underslove",
+        "field": "Under's Love underslove",
+        "searchType": "songs",
+        "key": "underslove",
+        "title": "Under's Love",
+        "songType": "under",
+        "single": {
+          "title": "好きというのはロックだぜ！",
+          "number": "30"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/singles/30/A_9c163140-0c36-4850-9f22-7fb45a1c48d4_@1x.jpg",
+          "md": "/images/artworks/singles/30/A_9c163140-0c36-4850-9f22-7fb45a1c48d4_@2x.jpg",
+          "lg": "/images/artworks/singles/30/A_9c163140-0c36-4850-9f22-7fb45a1c48d4_@3x.jpg"
+        }
+      },
+      {
+        "id": "song-bokugatewotadakuhouhe",
+        "field": "僕が手を叩く方へ bokugatewotadakuhouhe",
+        "searchType": "songs",
+        "key": "bokugatewotadakuhouhe",
+        "title": "僕が手を叩く方へ",
+        "songType": "third generation",
+        "single": {
+          "title": "好きというのはロックだぜ！",
+          "number": "30"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/singles/30/A_9c163140-0c36-4850-9f22-7fb45a1c48d4_@1x.jpg",
+          "md": "/images/artworks/singles/30/A_9c163140-0c36-4850-9f22-7fb45a1c48d4_@2x.jpg",
+          "lg": "/images/artworks/singles/30/A_9c163140-0c36-4850-9f22-7fb45a1c48d4_@3x.jpg"
+        }
+      },
+      {
+        "id": "song-jumpingjokerflash",
+        "field": "ジャンピングジョーカーフラッシュ jumpingjokerflash",
+        "searchType": "songs",
+        "key": "jumpingjokerflash",
+        "title": "ジャンピングジョーカーフラッシュ",
+        "songType": "fourth generation",
+        "single": {
+          "title": "好きというのはロックだぜ！",
+          "number": "30"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/singles/30/B_0100fbea-9c16-4140-8c36-a8509f227fb4_@1x.jpg",
+          "md": "/images/artworks/singles/30/B_0100fbea-9c16-4140-8c36-a8509f227fb4_@2x.jpg",
+          "lg": "/images/artworks/singles/30/B_0100fbea-9c16-4140-8c36-a8509f227fb4_@3x.jpg"
+        }
+      },
+      {
+        "id": "song-bandaidwohagasuyounawakarekata",
+        "field": "バンドエイド剥がすような別れ方 bandaidwohagasuyounawakarekata",
+        "searchType": "songs",
+        "key": "bandaidwohagasuyounawakarekata",
+        "title": "バンドエイド剥がすような別れ方",
+        "songType": "fifth generation",
+        "single": {
+          "title": "好きというのはロックだぜ！",
+          "number": "30"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/singles/30/C_00fbea9c-1631-400c-b6a8-509f227fb45a_@1x.jpg",
+          "md": "/images/artworks/singles/30/C_00fbea9c-1631-400c-b6a8-509f227fb45a_@2x.jpg",
+          "lg": "/images/artworks/singles/30/C_00fbea9c-1631-400c-b6a8-509f227fb45a_@3x.jpg"
+        }
+      },
+      {
         "id": "song-darekahamikata",
         "field": "誰かは味方 darekahamikata",
         "searchType": "songs",
