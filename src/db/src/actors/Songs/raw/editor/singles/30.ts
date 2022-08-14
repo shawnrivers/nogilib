@@ -88,6 +88,7 @@ export const THIRTIETH_SINGLE_SONGS = [
   createSongRaw({
     title: 'ジャンピングジョーカーフラッシュ',
     type: 'fourth generation',
+    center: ['tsutsuiayame'],
     creators: {
       lyrics: ['秋元康'],
     },
@@ -114,8 +115,10 @@ export const THIRTIETH_SINGLE_SONGS = [
   createSongRaw({
     title: 'バンドエイド剥がすような別れ方',
     type: 'fifth generation',
+    center: ['sugawarasatsuki'],
     creators: {
       lyrics: ['秋元康'],
+      direct: ['林希']
     },
     formations: {
       firstRow: [
