@@ -50717,7 +50717,7 @@
             "md": "/images/members/singles/28/tsutsuiayame_26770fb8-f9f2-4f26-bd5b-acf37727054a_@2x.jpg",
             "lg": "/images/members/singles/28/tsutsuiayame_26770fb8-f9f2-4f26-bd5b-acf37727054a_@3x.jpg"
           },
-          "position": null,
+          "position": "center",
           "isMember": true
         },
         {
@@ -50810,7 +50810,9 @@
       ],
       "compose": [],
       "arrange": [],
-      "direct": []
+      "direct": [
+        "林希"
+      ]
     },
     "single": {
       "title": "好きというのはロックだぜ！",
@@ -50986,7 +50988,7 @@
             "md": "/images/members/others/sugawarasatsuki_2022-04-01_997fd470-69fb-4eed-8c01-fc846ef74f42_@2x.jpg",
             "lg": "/images/members/others/sugawarasatsuki_2022-04-01_997fd470-69fb-4eed-8c01-fc846ef74f42_@3x.jpg"
           },
-          "position": null,
+          "position": "center",
           "isMember": true
         },
         {
