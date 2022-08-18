@@ -43,7 +43,7 @@
     npm run dev
     ```
 
-    Your site is now running at `http://localhost:8080`.
+    Your site is now running at `http://localhost:9000`.
 
 ### Other commands
 
