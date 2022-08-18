@@ -26,6 +26,10 @@ export const THIRTIETH_SINGLE = createSingleRaw({
       title: 'バンドエイド剥がすような別れ方',
       inCdType: ['C'],
     },
+    {
+      title: 'パッションフルーツの食べ方',
+      inCdType: ['D'],
+    },
   ],
   underMembers: [
     'wadamaaya',

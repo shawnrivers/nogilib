@@ -3792,6 +3792,14 @@
         "inCdType": [
           "C"
         ]
+      },
+      {
+        "key": "passionfruitnotabekata",
+        "title": "パッションフルーツの食べ方",
+        "type": "unit",
+        "inCdType": [
+          "D"
+        ]
       }
     ],
     "centers": [

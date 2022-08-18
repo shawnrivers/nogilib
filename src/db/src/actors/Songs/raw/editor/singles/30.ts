@@ -47,18 +47,13 @@ export const THIRTIETH_SINGLE_SONGS = [
       direct: ['小林慎一朗'],
     },
     formations: {
-      firstRow: [
-        'wadamaaya',
-        'itouriria',
-        'sakaguchitamami',
-        'nakamurareno',
-        'mukaihazuki',
-        'yoshidaayanochristie',
-        'kitagawayuri',
-        'kuromiharuka',
-        'satourika',
+      firstRow: ['sakaguchitamami', 'wadamaaya', 'itouriria'],
+      secondRow: ['satourika', 'nakamurareno', 'mukaihazuki', 'matsuomiyu'],
+      thirdRow: [
         'hayashiruna',
-        'matsuomiyu',
+        'kitagawayuri',
+        'yoshidaayanochristie',
+        'kuromiharuka',
         'yakubomio',
       ],
     },
@@ -66,15 +61,16 @@ export const THIRTIETH_SINGLE_SONGS = [
   createSongRaw({
     title: '僕が手を叩く方へ',
     type: 'third generation',
+    center: ['kuboshiori'],
     creators: {
       lyrics: ['秋元康'],
     },
     formations: {
       firstRow: [
+        'kuboshiori',
         'itouriria',
         'iwamotorenka',
         'umezawaminami',
-        'kuboshiori',
         'sakaguchitamami',
         'satoukaede',
         'nakamurareno',
@@ -94,21 +90,25 @@ export const THIRTIETH_SINGLE_SONGS = [
     },
     formations: {
       firstRow: [
-        'endousakura',
         'kakiharuka',
-        'kakehashisayaka',
-        'kanagawasaya',
-        'kitagawayuri',
-        'kuromiharuka',
         'satourika',
-        'shibatayuna',
-        'seimiyarei',
-        'tamuramayu',
         'tsutsuiayame',
         'hayashiruna',
-        'matsuomiyu',
-        'yakubomio',
+        'endousakura',
+      ],
+      secondRow: [
+        'kitagawayuri',
         'yumikinao',
+        'matsuomiyu',
+        'kuromiharuka',
+        'yakubomio',
+      ],
+      thirdRow: [
+        'shibatayuna',
+        'kakehashisayaka',
+        'tamuramayu',
+        'seimiyarei',
+        'kanagawasaya',
       ],
     },
   }),
@@ -118,22 +118,28 @@ export const THIRTIETH_SINGLE_SONGS = [
     center: ['sugawarasatsuki'],
     creators: {
       lyrics: ['秋元康'],
-      direct: ['林希']
+      direct: ['林希'],
     },
     formations: {
-      firstRow: [
-        'iokimao',
-        'ikedateresa',
-        'ichinosemiku',
-        'inouenagi',
-        'okamotohina',
+      firstRow: ['kawasakisakura', 'sugawarasatsuki', 'inouenagi'],
+      secondRow: ['tomisatonao', 'ichinosemiku', 'iokimao'],
+      thirdRow: [
         'ogawaaya',
         'okudairoha',
-        'kawasakisakura',
-        'sugawarasatsuki',
-        'tomisatonao',
         'nakanishiaruno',
+        'okamotohina',
+        'ikedateresa',
       ],
+    },
+  }),
+  createSongRaw({
+    title: 'パッションフルーツの食べ方',
+    type: 'unit',
+    creators: {
+      lyrics: ['秋元康'],
+    },
+    formations: {
+      firstRow: ['umezawaminami', 'endousakura', 'kuboshiori', 'yodayuuki'],
     },
   }),
 ];

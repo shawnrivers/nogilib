@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "next build",
-    "dev": "next dev -p 8080",
+    "dev": "next dev -p 9000",
     "serve": "next start -p 9000",
     "type-check": "tsc",
     "type-check:server": "tsc -b tsconfig-server.json",
