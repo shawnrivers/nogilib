@@ -132,4 +132,14 @@ export const THIRTIETH_SINGLE_SONGS = [
       ],
     },
   }),
+  createSongRaw({
+    title: 'パッションフルーツの食べ方',
+    type: 'unit',
+    creators: {
+      lyrics: ['秋元康'],
+    },
+    formations: {
+      firstRow: ['umezawaminami', 'endousakura', 'kuboshiori', 'yodayuuki'],
+    },
+  }),
 ];

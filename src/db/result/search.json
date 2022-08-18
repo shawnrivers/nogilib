@@ -4705,6 +4705,24 @@
         }
       },
       {
+        "id": "song-passionfruitnotabekata",
+        "field": "パッションフルーツの食べ方 passionfruitnotabekata",
+        "searchType": "songs",
+        "key": "passionfruitnotabekata",
+        "title": "パッションフルーツの食べ方",
+        "songType": "unit",
+        "single": {
+          "title": "好きというのはロックだぜ！",
+          "number": "30"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/singles/30/D_fbea9c16-3140-4c36-a850-9f227fb45a1c_@1x.jpg",
+          "md": "/images/artworks/singles/30/D_fbea9c16-3140-4c36-a850-9f227fb45a1c_@2x.jpg",
+          "lg": "/images/artworks/singles/30/D_fbea9c16-3140-4c36-a850-9f227fb45a1c_@3x.jpg"
+        }
+      },
+      {
         "id": "song-darekahamikata",
         "field": "誰かは味方 darekahamikata",
         "searchType": "songs",

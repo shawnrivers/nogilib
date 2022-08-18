@@ -51043,6 +51043,113 @@
     ]
   },
   {
+    "key": "passionfruitnotabekata",
+    "title": "パッションフルーツの食べ方",
+    "type": "unit",
+    "artwork": {
+      "sm": "/images/artworks/singles/30/D_fbea9c16-3140-4c36-a850-9f227fb45a1c_@1x.jpg",
+      "md": "/images/artworks/singles/30/D_fbea9c16-3140-4c36-a850-9f227fb45a1c_@2x.jpg",
+      "lg": "/images/artworks/singles/30/D_fbea9c16-3140-4c36-a850-9f227fb45a1c_@3x.jpg"
+    },
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [],
+      "arrange": [],
+      "direct": []
+    },
+    "single": {
+      "title": "好きというのはロックだぜ！",
+      "number": "30"
+    },
+    "albums": [],
+    "otherCds": [],
+    "performersTag": {
+      "name": "",
+      "album": {
+        "type": "single",
+        "number": "30"
+      }
+    },
+    "performers": [
+      [
+        {
+          "name": "umezawaminami",
+          "nameNotations": {
+            "lastName": "梅澤",
+            "firstName": "美波",
+            "lastNameFurigana": "うめざわ",
+            "firstNameFurigana": "みなみ",
+            "lastNameEn": "umezakwa",
+            "firstNameEn": "minami"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/umezawaminami_1f6a7d7f-a886-46f4-9701-7baab93b8ba0_@1x.jpg",
+            "md": "/images/members/singles/28/umezawaminami_1f6a7d7f-a886-46f4-9701-7baab93b8ba0_@2x.jpg",
+            "lg": "/images/members/singles/28/umezawaminami_1f6a7d7f-a886-46f4-9701-7baab93b8ba0_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "endousakura",
+          "nameNotations": {
+            "lastName": "遠藤",
+            "firstName": "さくら",
+            "lastNameFurigana": "えんどう",
+            "firstNameFurigana": "さくら",
+            "lastNameEn": "endo",
+            "firstNameEn": "sakura"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/endousakura_3d5bacf3-7727-454a-9974-77ebf61d4e1c_@1x.jpg",
+            "md": "/images/members/singles/28/endousakura_3d5bacf3-7727-454a-9974-77ebf61d4e1c_@2x.jpg",
+            "lg": "/images/members/singles/28/endousakura_3d5bacf3-7727-454a-9974-77ebf61d4e1c_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "kuboshiori",
+          "nameNotations": {
+            "lastName": "久保",
+            "firstName": "史緒里",
+            "lastNameFurigana": "くぼ",
+            "firstNameFurigana": "しおり",
+            "lastNameEn": "kubo",
+            "firstNameEn": "shiori"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@1x.jpg",
+            "md": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@2x.jpg",
+            "lg": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "yodayuuki",
+          "nameNotations": {
+            "lastName": "与田",
+            "firstName": "祐希",
+            "lastNameFurigana": "よだ",
+            "firstNameFurigana": "ゆうき",
+            "lastNameEn": "yoda",
+            "firstNameEn": "yuki"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/yodayuuki_017baab9-3b8b-408c-82db-26770fb8f9f2_@1x.jpg",
+            "md": "/images/members/singles/28/yodayuuki_017baab9-3b8b-408c-82db-26770fb8f9f2_@2x.jpg",
+            "lg": "/images/members/singles/28/yodayuuki_017baab9-3b8b-408c-82db-26770fb8f9f2_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        }
+      ]
+    ]
+  },
+  {
     "key": "darekahamikata",
     "title": "誰かは味方",
     "type": "unit",
