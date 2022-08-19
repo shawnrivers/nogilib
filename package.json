@@ -20,7 +20,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook -s ./public"
+    "build-storybook": "build-storybook -s ./public",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "src/client/**/*.{ts,tsx}": [

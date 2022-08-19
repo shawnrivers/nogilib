@@ -50276,7 +50276,9 @@
       ],
       "compose": [],
       "arrange": [],
-      "direct": []
+      "direct": [
+        "伊藤衆人"
+      ]
     },
     "single": {
       "title": "好きというのはロックだぜ！",
@@ -50293,42 +50295,6 @@
     },
     "performers": [
       [
-        {
-          "name": "kuboshiori",
-          "nameNotations": {
-            "lastName": "久保",
-            "firstName": "史緒里",
-            "lastNameFurigana": "くぼ",
-            "firstNameFurigana": "しおり",
-            "lastNameEn": "kubo",
-            "firstNameEn": "shiori"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@1x.jpg",
-            "md": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@2x.jpg",
-            "lg": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@3x.jpg"
-          },
-          "position": "center",
-          "isMember": true
-        },
-        {
-          "name": "itouriria",
-          "nameNotations": {
-            "lastName": "伊藤",
-            "firstName": "理々杏",
-            "lastNameFurigana": "いとう",
-            "firstNameFurigana": "りりあ",
-            "lastNameEn": "ito",
-            "firstNameEn": "riria"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/28/itouriria_6a7d7fa8-86f6-44d7-817b-aab93b8ba08c_@1x.jpg",
-            "md": "/images/members/singles/28/itouriria_6a7d7fa8-86f6-44d7-817b-aab93b8ba08c_@2x.jpg",
-            "lg": "/images/members/singles/28/itouriria_6a7d7fa8-86f6-44d7-817b-aab93b8ba08c_@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
         {
           "name": "iwamotorenka",
           "nameNotations": {
@@ -50348,6 +50314,60 @@
           "isMember": true
         },
         {
+          "name": "yodayuuki",
+          "nameNotations": {
+            "lastName": "与田",
+            "firstName": "祐希",
+            "lastNameFurigana": "よだ",
+            "firstNameFurigana": "ゆうき",
+            "lastNameEn": "yoda",
+            "firstNameEn": "yuki"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/yodayuuki_017baab9-3b8b-408c-82db-26770fb8f9f2_@1x.jpg",
+            "md": "/images/members/singles/28/yodayuuki_017baab9-3b8b-408c-82db-26770fb8f9f2_@2x.jpg",
+            "lg": "/images/members/singles/28/yodayuuki_017baab9-3b8b-408c-82db-26770fb8f9f2_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "kuboshiori",
+          "nameNotations": {
+            "lastName": "久保",
+            "firstName": "史緒里",
+            "lastNameFurigana": "くぼ",
+            "firstNameFurigana": "しおり",
+            "lastNameEn": "kubo",
+            "firstNameEn": "shiori"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@1x.jpg",
+            "md": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@2x.jpg",
+            "lg": "/images/members/singles/28/kuboshiori_8c82db26-770f-48f9-b29f-263d5bacf377_@3x.jpg"
+          },
+          "position": "center",
+          "isMember": true
+        },
+        {
+          "name": "yamashitamizuki",
+          "nameNotations": {
+            "lastName": "山下",
+            "firstName": "美月",
+            "lastNameFurigana": "やました",
+            "firstNameFurigana": "みづき",
+            "lastNameEn": "yamashita",
+            "firstNameEn": "mizuki"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/yamashitamizuki_9f263d5b-acf3-4727-854a-997477ebf61d_@1x.jpg",
+            "md": "/images/members/singles/28/yamashitamizuki_9f263d5b-acf3-4727-854a-997477ebf61d_@2x.jpg",
+            "lg": "/images/members/singles/28/yamashitamizuki_9f263d5b-acf3-4727-854a-997477ebf61d_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
           "name": "umezawaminami",
           "nameNotations": {
             "lastName": "梅澤",
@@ -50361,6 +50381,44 @@
             "sm": "/images/members/singles/28/umezawaminami_1f6a7d7f-a886-46f4-9701-7baab93b8ba0_@1x.jpg",
             "md": "/images/members/singles/28/umezawaminami_1f6a7d7f-a886-46f4-9701-7baab93b8ba0_@2x.jpg",
             "lg": "/images/members/singles/28/umezawaminami_1f6a7d7f-a886-46f4-9701-7baab93b8ba0_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        }
+      ],
+      [
+        {
+          "name": "nakamurareno",
+          "nameNotations": {
+            "lastName": "中村",
+            "firstName": "麗乃",
+            "lastNameFurigana": "なかむら",
+            "firstNameFurigana": "れの",
+            "lastNameEn": "nakamura",
+            "firstNameEn": "reno"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@1x.jpg",
+            "md": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@2x.jpg",
+            "lg": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "itouriria",
+          "nameNotations": {
+            "lastName": "伊藤",
+            "firstName": "理々杏",
+            "lastNameFurigana": "いとう",
+            "firstNameFurigana": "りりあ",
+            "lastNameEn": "ito",
+            "firstNameEn": "riria"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/itouriria_6a7d7fa8-86f6-44d7-817b-aab93b8ba08c_@1x.jpg",
+            "md": "/images/members/singles/28/itouriria_6a7d7fa8-86f6-44d7-817b-aab93b8ba08c_@2x.jpg",
+            "lg": "/images/members/singles/28/itouriria_6a7d7fa8-86f6-44d7-817b-aab93b8ba08c_@3x.jpg"
           },
           "position": null,
           "isMember": true
@@ -50402,24 +50460,6 @@
           "isMember": true
         },
         {
-          "name": "nakamurareno",
-          "nameNotations": {
-            "lastName": "中村",
-            "firstName": "麗乃",
-            "lastNameFurigana": "なかむら",
-            "firstNameFurigana": "れの",
-            "lastNameEn": "nakamura",
-            "firstNameEn": "reno"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@1x.jpg",
-            "md": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@2x.jpg",
-            "lg": "/images/members/singles/28/nakamurareno_8ba08c82-db26-470f-b8f9-f29f263d5bac_@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
-        {
           "name": "mukaihazuki",
           "nameNotations": {
             "lastName": "向井",
@@ -50438,24 +50478,6 @@
           "isMember": true
         },
         {
-          "name": "yamashitamizuki",
-          "nameNotations": {
-            "lastName": "山下",
-            "firstName": "美月",
-            "lastNameFurigana": "やました",
-            "firstNameFurigana": "みづき",
-            "lastNameEn": "yamashita",
-            "firstNameEn": "mizuki"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/28/yamashitamizuki_9f263d5b-acf3-4727-854a-997477ebf61d_@1x.jpg",
-            "md": "/images/members/singles/28/yamashitamizuki_9f263d5b-acf3-4727-854a-997477ebf61d_@2x.jpg",
-            "lg": "/images/members/singles/28/yamashitamizuki_9f263d5b-acf3-4727-854a-997477ebf61d_@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
-        {
           "name": "yoshidaayanochristie",
           "nameNotations": {
             "lastName": "吉田",
@@ -50469,24 +50491,6 @@
             "sm": "/images/members/singles/28/yoshidaayanochristie_7fa886f6-f4d7-417b-aab9-3b8ba08c82db_@1x.jpg",
             "md": "/images/members/singles/28/yoshidaayanochristie_7fa886f6-f4d7-417b-aab9-3b8ba08c82db_@2x.jpg",
             "lg": "/images/members/singles/28/yoshidaayanochristie_7fa886f6-f4d7-417b-aab9-3b8ba08c82db_@3x.jpg"
-          },
-          "position": null,
-          "isMember": true
-        },
-        {
-          "name": "yodayuuki",
-          "nameNotations": {
-            "lastName": "与田",
-            "firstName": "祐希",
-            "lastNameFurigana": "よだ",
-            "firstNameFurigana": "ゆうき",
-            "lastNameEn": "yoda",
-            "firstNameEn": "yuki"
-          },
-          "profileImage": {
-            "sm": "/images/members/singles/28/yodayuuki_017baab9-3b8b-408c-82db-26770fb8f9f2_@1x.jpg",
-            "md": "/images/members/singles/28/yodayuuki_017baab9-3b8b-408c-82db-26770fb8f9f2_@2x.jpg",
-            "lg": "/images/members/singles/28/yodayuuki_017baab9-3b8b-408c-82db-26770fb8f9f2_@3x.jpg"
           },
           "position": null,
           "isMember": true
@@ -50509,7 +50513,9 @@
       ],
       "compose": [],
       "arrange": [],
-      "direct": []
+      "direct": [
+        "大久保拓朗"
+      ]
     },
     "single": {
       "title": "好きというのはロックだぜ！",

@@ -64,20 +64,23 @@ export const THIRTIETH_SINGLE_SONGS = [
     center: ['kuboshiori'],
     creators: {
       lyrics: ['秋元康'],
+      direct: ['伊藤衆人'],
     },
     formations: {
       firstRow: [
-        'kuboshiori',
-        'itouriria',
         'iwamotorenka',
+        'yodayuuki',
+        'kuboshiori',
+        'yamashitamizuki',
         'umezawaminami',
+      ],
+      secondRow: [
+        'nakamurareno',
+        'itouriria',
         'sakaguchitamami',
         'satoukaede',
-        'nakamurareno',
         'mukaihazuki',
-        'yamashitamizuki',
         'yoshidaayanochristie',
-        'yodayuuki',
       ],
     },
   }),
@@ -87,6 +90,7 @@ export const THIRTIETH_SINGLE_SONGS = [
     center: ['tsutsuiayame'],
     creators: {
       lyrics: ['秋元康'],
+      direct: ['大久保拓朗'],
     },
     formations: {
       firstRow: [
