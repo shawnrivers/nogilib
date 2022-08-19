@@ -64,6 +64,7 @@ export const THIRTIETH_SINGLE_SONGS = [
     center: ['kuboshiori'],
     creators: {
       lyrics: ['秋元康'],
+      direct: ['伊藤衆人'],
     },
     formations: {
       firstRow: [
@@ -87,6 +88,7 @@ export const THIRTIETH_SINGLE_SONGS = [
     center: ['tsutsuiayame'],
     creators: {
       lyrics: ['秋元康'],
+      direct: ['大久保拓朗'],
     },
     formations: {
       firstRow: [
