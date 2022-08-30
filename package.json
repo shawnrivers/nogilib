@@ -40,7 +40,7 @@
     ]
   },
   "dependencies": {
-    "@emotion/react": "^11.10.0",
+    "@emotion/react": "^11.10.4",
     "@fontsource/playfair-display": "^4.5.11",
     "flexsearch": "^0.6.32",
     "focus-visible": "^5.2.0",
