@@ -3,6 +3,7 @@ import { ArrayElement } from 'types/common';
 
 const SongsTitleKeyArray = (
   [
+    { title: "夢を見る筋肉", key: 'yumewomirukinniku' },
     { title: "パッションフルーツの食べ方", key: 'passionfruitnotabekata' },
     { title: "バンドエイド剥がすような別れ方", key: 'bandaidwohagasuyounawakarekata' },
     { title: "ジャンピングジョーカーフラッシュ", key: 'jumpingjokerflash' },

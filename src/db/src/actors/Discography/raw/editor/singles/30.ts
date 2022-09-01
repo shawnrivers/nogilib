@@ -30,6 +30,10 @@ export const THIRTIETH_SINGLE = createSingleRaw({
       title: 'パッションフルーツの食べ方',
       inCdType: ['D'],
     },
+    {
+      title: '夢を見る筋肉',
+      inCdType: ['T'],
+    },
   ],
   underMembers: [
     'wadamaaya',

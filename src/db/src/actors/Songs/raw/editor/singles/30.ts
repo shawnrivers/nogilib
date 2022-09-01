@@ -7,6 +7,8 @@ export const THIRTIETH_SINGLE_SONGS = [
     center: ['kakiharuka'],
     creators: {
       lyrics: ['秋元康'],
+      compose: ['野村陽一郎'],
+      arrange: ['野村陽一郎'],
       direct: ['神谷雄貴'],
     },
     fukujin: 'row-1-2',
@@ -44,6 +46,8 @@ export const THIRTIETH_SINGLE_SONGS = [
     center: ['wadamaaya'],
     creators: {
       lyrics: ['秋元康'],
+      compose: ['amazuti'],
+      arrange: ['amazuti'],
       direct: ['小林慎一朗'],
     },
     formations: {
@@ -64,6 +68,8 @@ export const THIRTIETH_SINGLE_SONGS = [
     center: ['kuboshiori'],
     creators: {
       lyrics: ['秋元康'],
+      compose: ['藤谷一郎'],
+      arrange: ['藤谷一郎'],
       direct: ['伊藤衆人'],
     },
     formations: {
@@ -90,6 +96,8 @@ export const THIRTIETH_SINGLE_SONGS = [
     center: ['tsutsuiayame'],
     creators: {
       lyrics: ['秋元康'],
+      compose: ['Kuboty'],
+      arrange: ['Kuboty'],
       direct: ['大久保拓朗'],
     },
     formations: {
@@ -122,6 +130,8 @@ export const THIRTIETH_SINGLE_SONGS = [
     center: ['sugawarasatsuki'],
     creators: {
       lyrics: ['秋元康'],
+      compose: ['A-NOTE', 'S-TONE'],
+      arrange: ['A-NOTE', 'S-TONE'],
       direct: ['林希'],
     },
     formations: {
@@ -141,9 +151,30 @@ export const THIRTIETH_SINGLE_SONGS = [
     type: 'unit',
     creators: {
       lyrics: ['秋元康'],
+      compose: ['杉山勝彦', '岡嶋かなた'],
+      arrange: ['杉山勝彦'],
     },
     formations: {
       firstRow: ['umezawaminami', 'endousakura', 'kuboshiori', 'yodayuuki'],
+    },
+  }),
+  createSongRaw({
+    title: '夢を見る筋肉',
+    type: 'unit',
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['月光テツヤ'],
+      arrange: ['あらケン']
+    },
+    formations: {
+      firstRow: [
+        'itouriria',
+        'hayashiruna',
+        'matsuomiyu',
+        'mukaihazuki',
+        'yakubomio',
+        'wadamaaya',
+      ],
     },
   }),
 ];
