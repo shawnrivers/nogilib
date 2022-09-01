@@ -4723,6 +4723,24 @@
         }
       },
       {
+        "id": "song-yumewomirukinniku",
+        "field": "夢を見る筋肉 yumewomirukinniku",
+        "searchType": "songs",
+        "key": "yumewomirukinniku",
+        "title": "夢を見る筋肉",
+        "songType": "unit",
+        "single": {
+          "title": "好きというのはロックだぜ！",
+          "number": "30"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/singles/30/T_ea9c1631-400c-46a8-909f-227fb45a1c48_@1x.jpg",
+          "md": "/images/artworks/singles/30/T_ea9c1631-400c-46a8-909f-227fb45a1c48_@2x.jpg",
+          "lg": "/images/artworks/singles/30/T_ea9c1631-400c-46a8-909f-227fb45a1c48_@3x.jpg"
+        }
+      },
+      {
         "id": "song-darekahamikata",
         "field": "誰かは味方 darekahamikata",
         "searchType": "songs",

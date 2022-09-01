@@ -49634,8 +49634,12 @@
       "lyrics": [
         "秋元康"
       ],
-      "compose": [],
-      "arrange": [],
+      "compose": [
+        "野村陽一郎"
+      ],
+      "arrange": [
+        "野村陽一郎"
+      ],
       "direct": [
         "神谷雄貴"
       ]
@@ -50017,8 +50021,12 @@
       "lyrics": [
         "秋元康"
       ],
-      "compose": [],
-      "arrange": [],
+      "compose": [
+        "amazuti"
+      ],
+      "arrange": [
+        "amazuti"
+      ],
       "direct": [
         "小林慎一朗"
       ]
@@ -50274,8 +50282,12 @@
       "lyrics": [
         "秋元康"
       ],
-      "compose": [],
-      "arrange": [],
+      "compose": [
+        "藤谷一郎"
+      ],
+      "arrange": [
+        "藤谷一郎"
+      ],
       "direct": [
         "伊藤衆人"
       ]
@@ -50511,8 +50523,12 @@
       "lyrics": [
         "秋元康"
       ],
-      "compose": [],
-      "arrange": [],
+      "compose": [
+        "Kuboty"
+      ],
+      "arrange": [
+        "Kuboty"
+      ],
       "direct": [
         "大久保拓朗"
       ]
@@ -50822,8 +50838,14 @@
       "lyrics": [
         "秋元康"
       ],
-      "compose": [],
-      "arrange": [],
+      "compose": [
+        "A-NOTE",
+        "S-TONE"
+      ],
+      "arrange": [
+        "A-NOTE",
+        "S-TONE"
+      ],
       "direct": [
         "林希"
       ]
@@ -51061,8 +51083,13 @@
       "lyrics": [
         "秋元康"
       ],
-      "compose": [],
-      "arrange": [],
+      "compose": [
+        "杉山勝彦",
+        "岡嶋かなた"
+      ],
+      "arrange": [
+        "杉山勝彦"
+      ],
       "direct": []
     },
     "single": {
@@ -51148,6 +51175,153 @@
             "sm": "/images/members/singles/28/yodayuuki_017baab9-3b8b-408c-82db-26770fb8f9f2_@1x.jpg",
             "md": "/images/members/singles/28/yodayuuki_017baab9-3b8b-408c-82db-26770fb8f9f2_@2x.jpg",
             "lg": "/images/members/singles/28/yodayuuki_017baab9-3b8b-408c-82db-26770fb8f9f2_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        }
+      ]
+    ]
+  },
+  {
+    "key": "yumewomirukinniku",
+    "title": "夢を見る筋肉",
+    "type": "unit",
+    "artwork": {
+      "sm": "/images/artworks/singles/30/T_ea9c1631-400c-46a8-909f-227fb45a1c48_@1x.jpg",
+      "md": "/images/artworks/singles/30/T_ea9c1631-400c-46a8-909f-227fb45a1c48_@2x.jpg",
+      "lg": "/images/artworks/singles/30/T_ea9c1631-400c-46a8-909f-227fb45a1c48_@3x.jpg"
+    },
+    "creators": {
+      "lyrics": [
+        "秋元康"
+      ],
+      "compose": [
+        "月光テツヤ"
+      ],
+      "arrange": [
+        "あらケン"
+      ],
+      "direct": []
+    },
+    "single": {
+      "title": "好きというのはロックだぜ！",
+      "number": "30"
+    },
+    "albums": [],
+    "otherCds": [],
+    "performersTag": {
+      "name": "",
+      "album": {
+        "type": "single",
+        "number": "30"
+      }
+    },
+    "performers": [
+      [
+        {
+          "name": "itouriria",
+          "nameNotations": {
+            "lastName": "伊藤",
+            "firstName": "理々杏",
+            "lastNameFurigana": "いとう",
+            "firstNameFurigana": "りりあ",
+            "lastNameEn": "ito",
+            "firstNameEn": "riria"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/itouriria_6a7d7fa8-86f6-44d7-817b-aab93b8ba08c_@1x.jpg",
+            "md": "/images/members/singles/28/itouriria_6a7d7fa8-86f6-44d7-817b-aab93b8ba08c_@2x.jpg",
+            "lg": "/images/members/singles/28/itouriria_6a7d7fa8-86f6-44d7-817b-aab93b8ba08c_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "hayashiruna",
+          "nameNotations": {
+            "lastName": "林",
+            "firstName": "瑠奈",
+            "lastNameFurigana": "はやし",
+            "firstNameFurigana": "るな",
+            "lastNameEn": "hayashi",
+            "firstNameEn": "runa"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/hayashiruna_f4d7017b-aab9-4b8b-a08c-82db26770fb8_@1x.jpg",
+            "md": "/images/members/singles/28/hayashiruna_f4d7017b-aab9-4b8b-a08c-82db26770fb8_@2x.jpg",
+            "lg": "/images/members/singles/28/hayashiruna_f4d7017b-aab9-4b8b-a08c-82db26770fb8_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "matsuomiyu",
+          "nameNotations": {
+            "lastName": "松尾",
+            "firstName": "美佑",
+            "lastNameFurigana": "まつお",
+            "firstNameFurigana": "みゆ",
+            "lastNameEn": "matsuo",
+            "firstNameEn": "miyu"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/matsuomiyu_27054a99-7477-4bf6-9d4e-1c2806aaf0e7_@1x.jpg",
+            "md": "/images/members/singles/28/matsuomiyu_27054a99-7477-4bf6-9d4e-1c2806aaf0e7_@2x.jpg",
+            "lg": "/images/members/singles/28/matsuomiyu_27054a99-7477-4bf6-9d4e-1c2806aaf0e7_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "mukaihazuki",
+          "nameNotations": {
+            "lastName": "向井",
+            "firstName": "葉月",
+            "lastNameFurigana": "むかい",
+            "firstNameFurigana": "はづき",
+            "lastNameEn": "mukai",
+            "firstNameEn": "hazuki"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/mukaihazuki_86f6f4d7-017b-4ab9-bb8b-a08c82db2677_@1x.jpg",
+            "md": "/images/members/singles/28/mukaihazuki_86f6f4d7-017b-4ab9-bb8b-a08c82db2677_@2x.jpg",
+            "lg": "/images/members/singles/28/mukaihazuki_86f6f4d7-017b-4ab9-bb8b-a08c82db2677_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "yakubomio",
+          "nameNotations": {
+            "lastName": "矢久保",
+            "firstName": "美緒",
+            "lastNameFurigana": "やくぼ",
+            "firstNameFurigana": "みお",
+            "lastNameEn": "yakubo",
+            "firstNameEn": "mio"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/yakubomio_b8f9f29f-263d-4bac-b377-27054a997477_@1x.jpg",
+            "md": "/images/members/singles/28/yakubomio_b8f9f29f-263d-4bac-b377-27054a997477_@2x.jpg",
+            "lg": "/images/members/singles/28/yakubomio_b8f9f29f-263d-4bac-b377-27054a997477_@3x.jpg"
+          },
+          "position": null,
+          "isMember": true
+        },
+        {
+          "name": "wadamaaya",
+          "nameNotations": {
+            "lastName": "和田",
+            "firstName": "まあや",
+            "lastNameFurigana": "わだ",
+            "firstNameFurigana": "まあや",
+            "lastNameEn": "wada",
+            "firstNameEn": "maya"
+          },
+          "profileImage": {
+            "sm": "/images/members/singles/28/wadamaaya_7727054a-9974-47eb-b61d-4e1c2806aaf0_@1x.jpg",
+            "md": "/images/members/singles/28/wadamaaya_7727054a-9974-47eb-b61d-4e1c2806aaf0_@2x.jpg",
+            "lg": "/images/members/singles/28/wadamaaya_7727054a-9974-47eb-b61d-4e1c2806aaf0_@3x.jpg"
           },
           "position": null,
           "isMember": true
