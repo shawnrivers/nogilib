@@ -93,6 +93,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/kitanohinako_official/',
       },
       {
+        title: 'Twitter',
+        url: 'https://twitter.com/kitanohinako___',
+      },
+      {
         title: 'profile',
         url: 'https://www.nogizaka46.com/s/n46/artist/16454',
       },
