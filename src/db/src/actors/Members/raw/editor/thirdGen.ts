@@ -13,6 +13,10 @@ export const THIRD_GEN_MEMBERS: MemberRaw[] = [
     origin: '沖縄県',
     sites: [
       {
+        title: 'Instagram',
+        url: 'https://www.instagram.com/riria.ito_official/',
+      },
+      {
         title: 'profile',
         url: 'https://www.nogizaka46.com/s/n46/artist/36749',
       },
