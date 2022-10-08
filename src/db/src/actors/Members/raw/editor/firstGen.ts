@@ -1071,6 +1071,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
     origin: '広島県',
     sites: [
       {
+        title: 'Instagram',
+        url: 'https://www.instagram.com/himekanakamoto/',
+      },
+      {
         title: 'official',
         url: 'https://nakamotohimeka.com/',
       },
