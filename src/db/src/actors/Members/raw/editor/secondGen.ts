@@ -97,6 +97,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://twitter.com/kitanohinako___',
       },
       {
+        title: 'YouTube',
+        url: 'https://www.youtube.com/channel/UCokamkLpcxCYx97NR8en7rA',
+      },
+      {
         title: 'profile',
         url: 'https://www.nogizaka46.com/s/n46/artist/16454',
       },
