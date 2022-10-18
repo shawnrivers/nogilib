@@ -101,14 +101,6 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.youtube.com/channel/UCokamkLpcxCYx97NR8en7rA',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/s/n46/artist/16454',
-      },
-      {
-        title: 'blog',
-        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=16454',
-      },
-      {
         title: '755',
         url: 'https://7gogo.jp/kitano-hinako',
       },
