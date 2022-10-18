@@ -97,12 +97,12 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://twitter.com/kitanohinako___',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/s/n46/artist/16454',
+        title: 'YouTube',
+        url: 'https://www.youtube.com/channel/UCokamkLpcxCYx97NR8en7rA',
       },
       {
-        title: 'blog',
-        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=16454',
+        title: 'official',
+        url: 'https://www.kitanohinako-fc.jp/',
       },
       {
         title: '755',
