@@ -101,6 +101,10 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.youtube.com/channel/UCokamkLpcxCYx97NR8en7rA',
       },
       {
+        title: 'official',
+        url: 'https://www.kitanohinako-fc.jp/',
+      },
+      {
         title: '755',
         url: 'https://7gogo.jp/kitano-hinako',
       },
