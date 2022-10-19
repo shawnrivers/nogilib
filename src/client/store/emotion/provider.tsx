@@ -246,6 +246,10 @@ export const EmotionThemeProvider: React.FC<{
             );
           }
 
+          html {
+            color-scheme: light dark;
+          }
+
           h1,
           h2,
           h3,
