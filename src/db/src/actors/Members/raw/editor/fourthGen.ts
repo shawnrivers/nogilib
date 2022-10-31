@@ -94,6 +94,10 @@ export const FOURTH_GEN_MEMBERS: MemberRaw[] = [
     origin: '北海道',
     sites: [
       {
+        title: 'Instagram',
+        url: 'https://www.instagram.com/saya.kanagawa_official/',
+      },
+      {
         title: 'profile',
         url: 'https://www.nogizaka46.com/s/n46/artist/48010',
       },
