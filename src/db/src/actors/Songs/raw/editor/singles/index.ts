@@ -28,6 +28,7 @@ import { TWENTY_SEVENTH_SINGLE_SONGS } from './27';
 import { TWENTY_EIGHTH_SINGLE_SONGS } from './28';
 import { TWENTY_NINTH_SINGLE_SONGS } from './29';
 import { THIRTIETH_SINGLE_SONGS } from './30';
+import { THIRTY_FIRST_SINGLE_SONGS } from './31';
 import { SongRaw } from 'db/src/actors/Songs/models';
 
 export const SINGLE_SONGS: SongRaw[] = [
@@ -61,4 +62,5 @@ export const SINGLE_SONGS: SongRaw[] = [
   ...TWENTY_EIGHTH_SINGLE_SONGS,
   ...TWENTY_NINTH_SINGLE_SONGS,
   ...THIRTIETH_SINGLE_SONGS,
+  ...THIRTY_FIRST_SINGLE_SONGS,
 ];
