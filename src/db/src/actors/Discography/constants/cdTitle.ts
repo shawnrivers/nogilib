@@ -3,8 +3,8 @@ import { arrayToObject } from 'utils/array';
 
 const singleTitles = [
   {
-    title: 'タイトル未定',
-    key: 'untitled',
+    title: 'ここにはないもの',
+    key: 'kokonihanaimono',
   },
   {
     title: '好きというのはロックだぜ！',

@@ -29,6 +29,7 @@ import { TWENTY_EIGHTH_SINGLE } from './28';
 import { TWENTY_NINTH_SINGLE } from './29';
 import { THIRTIETH_SINGLE } from './30';
 import { DiscographyRawArray } from 'db/src/actors/Discography/models';
+import { THIRTY_FIRST_SINGLE } from 'db/src/actors/Discography/raw/editor/singles/31';
 
 export const singlesRawArray: DiscographyRawArray = [
   TWENTY_SIXTH_SINGLE,
@@ -61,4 +62,5 @@ export const singlesRawArray: DiscographyRawArray = [
   TWENTY_EIGHTH_SINGLE,
   TWENTY_NINTH_SINGLE,
   THIRTIETH_SINGLE,
+  THIRTY_FIRST_SINGLE,
 ];
