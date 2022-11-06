@@ -786,6 +786,10 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://www.instagram.com/higuchi_hina_official/',
       },
       {
+        title: 'Twitter',
+        url: 'https://twitter.com/hina_and_staff',
+      },
+      {
         title: 'blog',
         url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=277',
       },
