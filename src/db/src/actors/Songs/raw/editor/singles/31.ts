@@ -11,7 +11,30 @@ export const THIRTY_FIRST_SINGLE_SONGS = [
     center: ['saitouasuka'],
     fukujin: 'row-1-2',
     formations: {
-      firstRow: ['saitouasuka'],
+      firstRow: [
+        'kakiharuka',
+        'endousakura',
+        'saitouasuka',
+        'yamashitamizuki',
+        'yodayuuki',
+      ],
+      secondRow: [
+        'tamuramayu',
+        'kuboshiori',
+        'umezawaminami',
+        'akimotomanatsu',
+        'suzukiayane',
+        'kanagawasaya',
+      ],
+      thirdRow: [
+        'shibatayuna',
+        'iwamotorenka',
+        'sakaguchitamami',
+        'tsutsuiayame',
+        'hayakawaseira',
+        'hayashiruna',
+        'yumikinao',
+      ],
     },
   }),
 ];
