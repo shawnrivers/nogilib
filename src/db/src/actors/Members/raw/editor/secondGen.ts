@@ -371,12 +371,8 @@ export const SECOND_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://instagram.com/rena_yamazaki.official/',
       },
       {
-        title: 'profile',
-        url: 'https://www.nogizaka46.com/s/n46/artist/17381',
-      },
-      {
-        title: 'blog',
-        url: 'https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct=17381',
+        title: 'official',
+        url: 'https://lit.link/yamazakirena',
       },
       {
         title: '755',
