@@ -53,4 +53,16 @@ export const TWENTY_NINTH_SINGLE = createSingleRaw({
     'kuromiharuka',
     'yakubomio',
   ],
+  trainees: [
+    'iokimao',
+    'ikedateresa',
+    'ichinosemiku',
+    'inouenagi',
+    'okamotohina',
+    'ogawaaya',
+    'okudairoha',
+    'kawasakisakura',
+    'sugawarasatsuki',
+    'tomisatonao',
+  ],
 });
