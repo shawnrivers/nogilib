@@ -50,4 +50,17 @@ export const THIRTIETH_SINGLE = createSingleRaw({
     'yakubomio',
   ],
   skips: ['hayakawaseira'],
+  trainees: [
+    'iokimao',
+    'ikedateresa',
+    'ichinosemiku',
+    'inouenagi',
+    'okamotohina',
+    'ogawaaya',
+    'okudairoha',
+    'kawasakisakura',
+    'sugawarasatsuki',
+    'tomisatonao',
+    'nakanishiaruno',
+  ],
 });

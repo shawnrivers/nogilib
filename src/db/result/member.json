@@ -315,13 +315,13 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 22,
-      "selected": 27,
+      "fukujin": 23,
+      "selected": 28,
       "under": 0
     }
   },
@@ -11770,13 +11770,13 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 0,
-      "selected": 5,
+      "fukujin": 1,
+      "selected": 6,
       "under": 14
     }
   },
@@ -13936,14 +13936,14 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 2,
-      "under": 9
+      "under": 10
     }
   },
   {
@@ -14152,13 +14152,13 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 2,
-      "selected": 8,
+      "selected": 9,
       "under": 3
     }
   },
@@ -14391,13 +14391,13 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 8,
-      "selected": 10,
+      "fukujin": 9,
+      "selected": 11,
       "under": 1
     }
   },
@@ -14826,13 +14826,13 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 7,
-      "selected": 9,
+      "fukujin": 8,
+      "selected": 10,
       "under": 1
     }
   },
@@ -15048,13 +15048,13 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 1,
+      "selected": 2,
       "under": 10
     }
   },
@@ -15268,14 +15268,14 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 3,
-      "under": 8
+      "under": 9
     }
   },
   {
@@ -15488,14 +15488,14 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 11
+      "under": 12
     }
   },
   {
@@ -15708,14 +15708,14 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 11
+      "under": 12
     }
   },
   {
@@ -15949,13 +15949,13 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 1,
-      "fukujin": 9,
-      "selected": 10,
+      "fukujin": 10,
+      "selected": 11,
       "under": 0
     }
   },
@@ -16169,14 +16169,14 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 11
+      "under": 12
     }
   },
   {
@@ -16424,13 +16424,13 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 1,
-      "fukujin": 11,
-      "selected": 12,
+      "fukujin": 12,
+      "selected": 13,
       "under": 0
     }
   },
@@ -16630,13 +16630,13 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 2,
-      "fukujin": 6,
-      "selected": 7,
+      "fukujin": 7,
+      "selected": 8,
       "under": 0
     }
   },
@@ -16853,13 +16853,13 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 2,
-      "fukujin": 6,
-      "selected": 7,
+      "fukujin": 7,
+      "selected": 8,
       "under": 0
     }
   },
@@ -17059,7 +17059,7 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "skip"
       }
     ],
     "positionsCounter": {
@@ -17269,13 +17269,13 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 0,
-      "selected": 1,
+      "fukujin": 1,
+      "selected": 2,
       "under": 2
     }
   },
@@ -17475,14 +17475,14 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 3
+      "under": 4
     }
   },
   {
@@ -17681,13 +17681,13 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 2,
+      "selected": 3,
       "under": 1
     }
   },
@@ -17887,7 +17887,7 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "skip"
       }
     ],
     "positionsCounter": {
@@ -18093,13 +18093,13 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "fukujin"
       }
     ],
     "positionsCounter": {
       "center": 0,
-      "fukujin": 1,
-      "selected": 5,
+      "fukujin": 2,
+      "selected": 6,
       "under": 0
     }
   },
@@ -18299,13 +18299,13 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 4,
-      "selected": 6,
+      "selected": 7,
       "under": 0
     }
   },
@@ -18505,13 +18505,13 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 3,
+      "selected": 4,
       "under": 0
     }
   },
@@ -18715,14 +18715,14 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 3
+      "under": 4
     }
   },
   {
@@ -18921,14 +18921,14 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 3
+      "under": 4
     }
   },
   {
@@ -19131,14 +19131,14 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 3
+      "under": 4
     }
   },
   {
@@ -19337,13 +19337,13 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 0,
+      "selected": 1,
       "under": 3
     }
   },
@@ -19538,14 +19538,14 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "under"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
       "selected": 0,
-      "under": 3
+      "under": 4
     }
   },
   {
@@ -19744,13 +19744,13 @@
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "selected"
       }
     ],
     "positionsCounter": {
       "center": 0,
       "fukujin": 0,
-      "selected": 1,
+      "selected": 2,
       "under": 2
     }
   },
@@ -19917,15 +19917,15 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "trainee"
       },
       {
         "singleNumber": "30",
-        "position": "none"
+        "position": "trainee"
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "trainee"
       }
     ],
     "positionsCounter": {
@@ -20098,15 +20098,15 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "trainee"
       },
       {
         "singleNumber": "30",
-        "position": "none"
+        "position": "trainee"
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "trainee"
       }
     ],
     "positionsCounter": {
@@ -20279,15 +20279,15 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "trainee"
       },
       {
         "singleNumber": "30",
-        "position": "none"
+        "position": "trainee"
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "trainee"
       }
     ],
     "positionsCounter": {
@@ -20460,15 +20460,15 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "trainee"
       },
       {
         "singleNumber": "30",
-        "position": "none"
+        "position": "trainee"
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "trainee"
       }
     ],
     "positionsCounter": {
@@ -20641,15 +20641,15 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "trainee"
       },
       {
         "singleNumber": "30",
-        "position": "none"
+        "position": "trainee"
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "trainee"
       }
     ],
     "positionsCounter": {
@@ -20822,15 +20822,15 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "trainee"
       },
       {
         "singleNumber": "30",
-        "position": "none"
+        "position": "trainee"
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "trainee"
       }
     ],
     "positionsCounter": {
@@ -21003,15 +21003,15 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "trainee"
       },
       {
         "singleNumber": "30",
-        "position": "none"
+        "position": "trainee"
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "trainee"
       }
     ],
     "positionsCounter": {
@@ -21184,15 +21184,15 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "trainee"
       },
       {
         "singleNumber": "30",
-        "position": "none"
+        "position": "trainee"
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "trainee"
       }
     ],
     "positionsCounter": {
@@ -21365,15 +21365,15 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "trainee"
       },
       {
         "singleNumber": "30",
-        "position": "none"
+        "position": "trainee"
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "trainee"
       }
     ],
     "positionsCounter": {
@@ -21546,15 +21546,15 @@
       },
       {
         "singleNumber": "29",
-        "position": "none"
+        "position": "trainee"
       },
       {
         "singleNumber": "30",
-        "position": "none"
+        "position": "trainee"
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "trainee"
       }
     ],
     "positionsCounter": {
@@ -21731,11 +21731,11 @@
       },
       {
         "singleNumber": "30",
-        "position": "none"
+        "position": "trainee"
       },
       {
         "singleNumber": "31",
-        "position": "none"
+        "position": "trainee"
       }
     ],
     "positionsCounter": {
