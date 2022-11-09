@@ -3837,11 +3837,43 @@
     "artworks": [
       {
         "url": {
-          "sm": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@1x.jpg",
-          "md": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@2x.jpg",
-          "lg": "/images/artworks/artwork_no_image_bb926f1c-261d-4649-a127-cfce7f4d93c7_@3x.jpg"
+          "sm": "/images/artworks/singles/31/A_3e0c5b67-0d59-4705-a732-1751ba1fadcd_@1x.jpg",
+          "md": "/images/artworks/singles/31/A_3e0c5b67-0d59-4705-a732-1751ba1fadcd_@2x.jpg",
+          "lg": "/images/artworks/singles/31/A_3e0c5b67-0d59-4705-a732-1751ba1fadcd_@3x.jpg"
         },
         "type": "A"
+      },
+      {
+        "url": {
+          "sm": "/images/artworks/singles/31/B_0c5b670d-5987-4527-b217-51ba1fadcd2c_@1x.jpg",
+          "md": "/images/artworks/singles/31/B_0c5b670d-5987-4527-b217-51ba1fadcd2c_@2x.jpg",
+          "lg": "/images/artworks/singles/31/B_0c5b670d-5987-4527-b217-51ba1fadcd2c_@3x.jpg"
+        },
+        "type": "B"
+      },
+      {
+        "url": {
+          "sm": "/images/artworks/singles/31/C_5b670d59-8705-4732-9751-ba1fadcd2c8b_@1x.jpg",
+          "md": "/images/artworks/singles/31/C_5b670d59-8705-4732-9751-ba1fadcd2c8b_@2x.jpg",
+          "lg": "/images/artworks/singles/31/C_5b670d59-8705-4732-9751-ba1fadcd2c8b_@3x.jpg"
+        },
+        "type": "C"
+      },
+      {
+        "url": {
+          "sm": "/images/artworks/singles/31/D_b83e0c5b-670d-4987-8527-321751ba1fad_@1x.jpg",
+          "md": "/images/artworks/singles/31/D_b83e0c5b-670d-4987-8527-321751ba1fad_@2x.jpg",
+          "lg": "/images/artworks/singles/31/D_b83e0c5b-670d-4987-8527-321751ba1fad_@3x.jpg"
+        },
+        "type": "D"
+      },
+      {
+        "url": {
+          "sm": "/images/artworks/singles/31/T_670d5987-0527-4217-91ba-1fadcd2c8bc4_@1x.jpg",
+          "md": "/images/artworks/singles/31/T_670d5987-0527-4217-91ba-1fadcd2c8bc4_@2x.jpg",
+          "lg": "/images/artworks/singles/31/T_670d5987-0527-4217-91ba-1fadcd2c8bc4_@3x.jpg"
+        },
+        "type": "T"
       }
     ],
     "release": "2022-12-07",
@@ -3851,7 +3883,11 @@
         "title": "ここにはないもの",
         "type": "title",
         "inCdType": [
-          "A"
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
         ]
       }
     ],

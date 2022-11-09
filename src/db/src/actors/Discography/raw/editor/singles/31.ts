@@ -4,8 +4,8 @@ export const THIRTY_FIRST_SINGLE = createSingleRaw({
   title: 'ここにはないもの',
   number: '31',
   release: '2022-12-07',
-  cdTypes: ['A'],
-  songs: [{ title: 'ここにはないもの', inCdType: ['A'] }],
+  cdTypes: ['A', 'B', 'C', 'D', 'T'],
+  songs: [{ title: 'ここにはないもの', inCdType: ['A', 'B', 'C', 'D', 'T'] }],
   underMembers: [
     'itouriria',
     'satoukaede',
