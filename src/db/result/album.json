@@ -3889,6 +3889,58 @@
           "D",
           "T"
         ]
+      },
+      {
+        "key": "waruiseibun",
+        "title": "悪い成分",
+        "type": "under",
+        "inCdType": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "T"
+        ]
+      },
+      {
+        "key": "korekara",
+        "title": "これから",
+        "type": "solo",
+        "inCdType": [
+          "A"
+        ]
+      },
+      {
+        "key": "sentourhapsody",
+        "title": "銭湯ラプソディー",
+        "type": "unit",
+        "inCdType": [
+          "B"
+        ]
+      },
+      {
+        "key": "atonomatsuri",
+        "title": "アトノマツリ",
+        "type": "unit",
+        "inCdType": [
+          "C"
+        ]
+      },
+      {
+        "key": "amaievidence",
+        "title": "甘いエビデンス",
+        "type": "unit",
+        "inCdType": [
+          "D"
+        ]
+      },
+      {
+        "key": "17funkan",
+        "title": "17分間",
+        "type": "fifth generation",
+        "inCdType": [
+          "T"
+        ]
       }
     ],
     "centers": [

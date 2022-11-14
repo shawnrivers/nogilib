@@ -4773,6 +4773,114 @@
         }
       },
       {
+        "id": "song-waruiseibun",
+        "field": "悪い成分 waruiseibun",
+        "searchType": "songs",
+        "key": "waruiseibun",
+        "title": "悪い成分",
+        "songType": "under",
+        "single": {
+          "title": "ここにはないもの",
+          "number": "31"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/singles/31/A_3e0c5b67-0d59-4705-a732-1751ba1fadcd_@1x.jpg",
+          "md": "/images/artworks/singles/31/A_3e0c5b67-0d59-4705-a732-1751ba1fadcd_@2x.jpg",
+          "lg": "/images/artworks/singles/31/A_3e0c5b67-0d59-4705-a732-1751ba1fadcd_@3x.jpg"
+        }
+      },
+      {
+        "id": "song-korekara",
+        "field": "これから korekara",
+        "searchType": "songs",
+        "key": "korekara",
+        "title": "これから",
+        "songType": "solo",
+        "single": {
+          "title": "ここにはないもの",
+          "number": "31"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/singles/31/A_3e0c5b67-0d59-4705-a732-1751ba1fadcd_@1x.jpg",
+          "md": "/images/artworks/singles/31/A_3e0c5b67-0d59-4705-a732-1751ba1fadcd_@2x.jpg",
+          "lg": "/images/artworks/singles/31/A_3e0c5b67-0d59-4705-a732-1751ba1fadcd_@3x.jpg"
+        }
+      },
+      {
+        "id": "song-sentourhapsody",
+        "field": "銭湯ラプソディー sentourhapsody",
+        "searchType": "songs",
+        "key": "sentourhapsody",
+        "title": "銭湯ラプソディー",
+        "songType": "unit",
+        "single": {
+          "title": "ここにはないもの",
+          "number": "31"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/singles/31/B_0c5b670d-5987-4527-b217-51ba1fadcd2c_@1x.jpg",
+          "md": "/images/artworks/singles/31/B_0c5b670d-5987-4527-b217-51ba1fadcd2c_@2x.jpg",
+          "lg": "/images/artworks/singles/31/B_0c5b670d-5987-4527-b217-51ba1fadcd2c_@3x.jpg"
+        }
+      },
+      {
+        "id": "song-atonomatsuri",
+        "field": "アトノマツリ atonomatsuri",
+        "searchType": "songs",
+        "key": "atonomatsuri",
+        "title": "アトノマツリ",
+        "songType": "unit",
+        "single": {
+          "title": "ここにはないもの",
+          "number": "31"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/singles/31/C_5b670d59-8705-4732-9751-ba1fadcd2c8b_@1x.jpg",
+          "md": "/images/artworks/singles/31/C_5b670d59-8705-4732-9751-ba1fadcd2c8b_@2x.jpg",
+          "lg": "/images/artworks/singles/31/C_5b670d59-8705-4732-9751-ba1fadcd2c8b_@3x.jpg"
+        }
+      },
+      {
+        "id": "song-amaievidence",
+        "field": "甘いエビデンス amaievidence",
+        "searchType": "songs",
+        "key": "amaievidence",
+        "title": "甘いエビデンス",
+        "songType": "unit",
+        "single": {
+          "title": "ここにはないもの",
+          "number": "31"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/singles/31/D_b83e0c5b-670d-4987-8527-321751ba1fad_@1x.jpg",
+          "md": "/images/artworks/singles/31/D_b83e0c5b-670d-4987-8527-321751ba1fad_@2x.jpg",
+          "lg": "/images/artworks/singles/31/D_b83e0c5b-670d-4987-8527-321751ba1fad_@3x.jpg"
+        }
+      },
+      {
+        "id": "song-17funkan",
+        "field": "17分間 17funkan",
+        "searchType": "songs",
+        "key": "17funkan",
+        "title": "17分間",
+        "songType": "fifth generation",
+        "single": {
+          "title": "ここにはないもの",
+          "number": "31"
+        },
+        "albums": [],
+        "artwork": {
+          "sm": "/images/artworks/singles/31/T_670d5987-0527-4217-91ba-1fadcd2c8bc4_@1x.jpg",
+          "md": "/images/artworks/singles/31/T_670d5987-0527-4217-91ba-1fadcd2c8bc4_@2x.jpg",
+          "lg": "/images/artworks/singles/31/T_670d5987-0527-4217-91ba-1fadcd2c8bc4_@3x.jpg"
+        }
+      },
+      {
         "id": "song-darekahamikata",
         "field": "誰かは味方 darekahamikata",
         "searchType": "songs",
