@@ -3,6 +3,12 @@ import { ArrayElement } from 'types/common';
 
 const SongsTitleKeyArray = (
   [
+    { title: "17分間", key: '17funkan' },
+    { title: "甘いエビデンス", key: 'amaievidence' },
+    { title: "アトノマツリ", key: 'atonomatsuri' },
+    { title: "銭湯ラプソディー", key: 'sentourhapsody' },
+    { title: "これから", key: 'korekara' },
+    { title: "悪い成分", key: 'waruiseibun' },
     { title: "ここにはないもの", key: 'kokonihanaimono' },
     { title: "夢を見る筋肉", key: 'yumewomirukinniku' },
     { title: "パッションフルーツの食べ方", key: 'passionfruitnotabekata' },

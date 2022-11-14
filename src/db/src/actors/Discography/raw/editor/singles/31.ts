@@ -5,7 +5,15 @@ export const THIRTY_FIRST_SINGLE = createSingleRaw({
   number: '31',
   release: '2022-12-07',
   cdTypes: ['A', 'B', 'C', 'D', 'T'],
-  songs: [{ title: 'ここにはないもの', inCdType: ['A', 'B', 'C', 'D', 'T'] }],
+  songs: [
+    { title: 'ここにはないもの', inCdType: ['A', 'B', 'C', 'D', 'T'] },
+    { title: '悪い成分', inCdType: ['A', 'B', 'C', 'D', 'T'] },
+    { title: 'これから', inCdType: ['A'] },
+    { title: '銭湯ラプソディー', inCdType: ['B'] },
+    { title: 'アトノマツリ', inCdType: ['C'] },
+    { title: '甘いエビデンス', inCdType: ['D'] },
+    { title: '17分間', inCdType: ['T'] },
+  ],
   underMembers: [
     'itouriria',
     'satoukaede',
