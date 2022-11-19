@@ -8,6 +8,7 @@ export const THIRTY_FIRST_SINGLE_SONGS = [
       lyrics: ['秋元康'],
       compose: ['ナスカ'],
       arrange: ['the Third'],
+      direct: ['小林啓一'],
     },
     center: ['saitouasuka'],
     fukujin: 'row-1-2',
