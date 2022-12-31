@@ -137,8 +137,8 @@
     },
     "join": "first",
     "graduation": {
-      "isGraduated": false,
-      "graduatedDate": ""
+      "isGraduated": true,
+      "graduatedDate": "2022-12-31"
     },
     "profileImage": {
       "sm": "/images/members/singles/31/saitouasuka_8062b55f-0c18-4c57-a9d8-b93c6abe6e8d_@1x.jpg",
