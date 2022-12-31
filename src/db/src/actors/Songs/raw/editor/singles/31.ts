@@ -42,6 +42,13 @@ export const THIRTY_FIRST_SINGLE_SONGS = [
   createSongRaw({
     title: '悪い成分',
     type: 'under',
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['若林充'],
+      arrange: ['若林充'],
+      direct: ['東市篤憲'],
+    },
+    center: ['nakamurareno'],
     formations: {
       firstRow: [
         'itouriria',
@@ -61,10 +68,21 @@ export const THIRTY_FIRST_SINGLE_SONGS = [
     title: 'これから',
     type: 'solo',
     solo: 'saitouasuka',
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['浦島健太', '菊池博人'],
+      arrange: ['菊池博人'],
+      direct: ['山岸聖太'],
+    },
   }),
   createSongRaw({
     title: '銭湯ラプソディー',
     type: 'unit',
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['本田正樹'],
+      arrange: ['本田正樹'],
+    },
     formations: {
       firstRow: [
         'umezawaminami',
@@ -78,6 +96,11 @@ export const THIRTY_FIRST_SINGLE_SONGS = [
   createSongRaw({
     title: 'アトノマツリ',
     type: 'unit',
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['藤田卓也'],
+      arrange: ['藤田卓也'],
+    },
     formations: {
       firstRow: [
         'endousakura',
@@ -91,6 +114,11 @@ export const THIRTY_FIRST_SINGLE_SONGS = [
   createSongRaw({
     title: '甘いエビデンス',
     type: 'unit',
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['坂本麗衣'],
+      arrange: ['ツタナオヒコ'],
+    },
     formations: {
       firstRow: [
         'itouriria',
@@ -104,6 +132,13 @@ export const THIRTY_FIRST_SINGLE_SONGS = [
   createSongRaw({
     title: '17分間',
     type: 'fifth generation',
+    creators: {
+      lyrics: ['秋元康'],
+      compose: ['姫野博行'],
+      arrange: ['APAZZI'],
+      direct: ['横堀光範'],
+    },
+    center: ['kawasakisakura'],
     formations: {
       firstRow: [
         'iokimao',

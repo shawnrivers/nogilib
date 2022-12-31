@@ -995,6 +995,7 @@ export const FIRST_GEN_MEMBERS: MemberRaw[] = [
         url: 'https://7gogo.jp/wada-maaya',
       },
     ],
+    graduatedDate: '2022-12-04',
   }),
   createMemberRaw({
     name: 'saitouchiharu',
