@@ -55,7 +55,7 @@
     "@commitlint/cli": "^17.6.1",
     "@commitlint/config-conventional": "^17.6.1",
     "@storybook/addon-essentials": "^7.0.6",
-    "@storybook/addon-links": "^7.0.5",
+    "@storybook/addon-links": "^7.0.6",
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/react": "^6.5.16",
     "@types/jest": "^27.5.0",
