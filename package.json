@@ -52,7 +52,7 @@
     "react-lazyload": "^3.2.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.6.1",
+    "@commitlint/cli": "^17.6.3",
     "@commitlint/config-conventional": "^17.6.1",
     "@storybook/addon-essentials": "^7.0.7",
     "@storybook/addon-links": "^7.0.8",
