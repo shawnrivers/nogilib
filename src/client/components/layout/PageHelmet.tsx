@@ -5,7 +5,7 @@ import { useTranslations } from 'client/i18n/hooks/useTranslations';
 import { useThemeContext } from 'client/store/theme/hook/useThemeContext';
 
 const SITE_TITLE = 'NOGILIB';
-const SITE_URL = 'https://nogilib.com';
+const SITE_URL = 'https://nogilib.vercel.app';
 
 type PageHelmetProps = {
   title?: string;

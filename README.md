@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://nogilib.com">
+  <a href="https://nogilib.vercel.app">
     <img alt="NOGILIB" src="https://raw.githubusercontent.com/shawnrivers/nogilib/main/public/images/design/preview.jpg" width="800" style="border-radius: 8px" />
   </a>
 </p>
@@ -7,15 +7,15 @@
   NOGILIB
 </h1>
 
-**[App link](https://nogilib.com)**
+**[App link](https://nogilib.vercel.app)**
 
 **NOGILIB** is a web application for showing the information about [Nogizaka46](http://www.nogizaka46.com/) in a user-friendly way.
 
 ## Multi-language Support
 
-- [🇯🇵 Japanese](https://nogilib.com)
-- [🇬🇧 English](https://nogilib.com/en)
-- [🇨🇳 Simplified Chinese](https://nogilib.com/zh)
+- [🇯🇵 Japanese](https://nogilib.vercel.app)
+- [🇬🇧 English](https://nogilib.vercel.app/en)
+- [🇨🇳 Simplified Chinese](https://nogilib.vercel.app/zh)
 
 ## Technology Stack
 
