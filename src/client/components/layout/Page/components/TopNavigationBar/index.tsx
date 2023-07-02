@@ -27,7 +27,7 @@ export const TopNavigationBar: React.FC = () => {
           var(${getColorVarName('onSurface', 'standard')});
         z-index: ${commonStyles.elevations[componentElevationKey.navigationBar]
           .zIndex};
-        position: fixed;
+        position: sticky;
         top: 0;
       `}
     >
