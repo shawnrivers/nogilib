@@ -46,7 +46,7 @@
     "flexsearch": "^0.6.32",
     "focus-visible": "^5.2.0",
     "framer-motion": "^6.5.1",
-    "next": "^12.2.4",
+    "next": "^13.5.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -56,7 +56,7 @@
     "@storybook/addon-essentials": "^6.5.9",
     "@storybook/addon-links": "^6.5.9",
     "@storybook/preset-typescript": "^3.0.0",
-    "@storybook/react": "^6.4.22",
+    "@storybook/react": "^7.4.6",
     "@types/jest": "^27.5.0",
     "@types/node": "^18.0.6",
     "@types/react": "^18.0.15",
