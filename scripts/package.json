@@ -10,7 +10,7 @@
     "@types/imagemin": "^7.0.0",
     "@types/imagemin-mozjpeg": "^8.0.0",
     "@types/sharp": "^0.28.1",
-    "axios": "^1.6.0",
+    "axios": "^1.7.4",
     "cli-progress": "^3.9.0",
     "imagemin": "^7.0.1",
     "imagemin-mozjpeg": "^9.0.0",
