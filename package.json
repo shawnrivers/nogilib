@@ -54,7 +54,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1",
-    "@storybook/addon-essentials": "^8.5.5",
+    "@storybook/addon-essentials": "^8.5.8",
     "@storybook/addon-links": "^8.5.3",
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/react": "^6.5.16",
